@@ -1,0 +1,50 @@
+Independent count-adaptive076 checker scope
+==========================================
+Only frozen independent075 source/shape/Meter routines and frozen independent073
+bounded exact rational/root primitives are reused. No producer is imported, no
+scientific source-scale run, prior suite, hash, or agent is used. Tiny synthetic
+fixtures reconstruct ordinary mu independently for source-admission tests.
+Initial review glob exposed075 postreview saved numerical discussion; none of
+those numerical findings is used by this implementation or its tests.
+
+API verify_program(program,data,meter=None,scales=None) returns INVALID,
+REFUTED, UNRESOLVED_ROUNDING or VERIFIED_ON_FINITE_DOMAIN; failures, exact
+worst_innovation intervals, scales_checked, ops, peak_bytes, complete_base,
+conditional_induction_verified and universal_correlation_proved. Flags
+uniform_source_bound_proved and RH_proved always remain False. Program source
+spec and row shape are bound; runner MUST separately require frozen075 verify_data
+VERIFIED on the exact same payload before treating finite checks as authoritative.
+
+Each atom uses its literal source column count max(1,n)^gamma with arbitrary
+canonical nonnegative rational gamma subject4096-bit input and100000-bit power
+limits. Atoms are unique/sorted by(column,rational gamma); repeated columns with
+other gamma remain separate signed terms. Certified denominator root enclosures
+produce signed rational L intervals; their square and residual-square intervals
+include zero whenever the interval crosses zero. Innovation/correlation pass
+only certified upper comparisons and refute only certified lower comparisons;
+straddles remain explicitly unresolved. Structural Cauchy proves correlation
+when every active prime atom has gamma>=1/2 and the per-source-column absolute
+coefficient sums A obey support(beta>0) and sum A^2/beta<=1. Direct counts1
+admit every gamma. When a separately proved structural theorem tightens a
+rounding interval to its exact energy threshold, the explicit
+correlation_theorem_tightenings output records it. Arithmetic mode otherwise
+retains the unpaid correlation premise and tests actual finite intervals.
+
+Static conditional admission independently checks conservative075 prices,
+sum beta H<=rho<=r^2,0<=r<1, paid base/residual budgets and every integer1..U.
+The complete-base cache stores only its exact upper/witness keyed(U,q,precision),
+not an enormous U-element tuple. Count roots cache by(count,gamma,precision).
+Both caches are explicit, bounded and prospectively priced. Sieve, program rows,
+atoms, indexing, decimal witnesses and root scratch allocations are reserved
+before allocation under4GiB; default work cap is3e11. Runner must enforce the
+aggregate16GiB process gate and already decoded input memory. Resource rejection
+returns INVALID with resource_limit=True and a reason. No denominator whitelist
+or unproved root approximation is used. Returned base summaries are copies so
+callers cannot mutate the private exact cache.
+
+Complete-base admission and a uniform structural correlation theorem still leave
+all-scale innovation unproved. Empty/zero operator is the baseline. Finite passes
+and conditional certificates do not prove an unconditional source bound or RH.
+Ten distinct tests pass. Every attempt, including affected-test-only reruns after
+resource-accounting changes, is retained in the development receipt with final
+status PASS.

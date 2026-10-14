@@ -1,0 +1,20 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "in-process unittest loader for test_mobius_fractional_flow_061 via ../.venv/bin/python -B",
+      "returncode": 0,
+      "tests": 8,
+      "stdout": "test_bad_kernel_conservation_or_positivity_rejected (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_cutoff_search_uses_proved_powers (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_empty_band_empty_source_and_rational_cuts (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_exact_prefixes_and_distinct_root_ratios (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_fractional_primal_dual_and_nonterminal_leftover (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_independent_compiled_certificate_admission (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_inferred_columns_and_positive_kernel_cone (test_mobius_fractional_flow_061.FlowTests) ... ok\ntest_piecewise_quadrature_against_independent_scalar_integral (test_mobius_fractional_flow_061.FlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.425s\n\nOK\n",
+      "operations": 169766,
+      "elapsed_seconds": 0.44351030298275873,
+      "peak_rss_KiB": 75520
+    }
+  ],
+  "operations": 169766,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false
+}

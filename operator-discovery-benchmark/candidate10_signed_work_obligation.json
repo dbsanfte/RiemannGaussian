@@ -1,0 +1,2829 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_control_proved": false,
+  "broader_cofinal_frontier": "degree3 or higher may pay the diagonal directly, but full termwise absolute bounds still lose a power ofX",
+  "completed_search_report": {
+    "RH_proved": false,
+    "all_scale_signed_control_proved": false,
+    "all_scale_signed_work_recurrences_proved": 0,
+    "checked_source_horizon": 524287,
+    "compared_vector_entries": 5767168,
+    "elapsed_seconds": 515.7575912729953,
+    "final_counterexamples": 0,
+    "final_reselection": false,
+    "final_survivors": 10,
+    "main_operations": 261053924,
+    "main_peak_rss_kib": 562172,
+    "preadmitted_hypotheses": 567,
+    "preparation_operations": 9868142,
+    "prime_bank": {
+      "RH_proved": false,
+      "absolute_residual_bound": "2^-65",
+      "all_actual_primes_and_powers": true,
+      "all_scale_signed_control_proved": false,
+      "all_unit_cofactors": true,
+      "coefficient_comparisons": 524288,
+      "prefix_comparisons": 524288,
+      "verified": true,
+      "whole_signed_bound_proved": false
+    },
+    "prior_prefix_comparisons": 2883584,
+    "programs": 117,
+    "proved_recovery": {
+      "additional_block_log_loss": 0,
+      "cutoff": 1024,
+      "gap_lower": "4/5",
+      "history_mass_upper": "2/5"
+    },
+    "raw_hypotheses": 1170,
+    "selected_bounds": 10,
+    "selection_status_counts": {
+      "critical_pole_degree_obstruction": 243,
+      "finite_survivor_open_uniform_premise": 567,
+      "unpaid_inverse_power": 360
+    },
+    "status": "SIGNED_PRIME_WORK_SEARCH_AND_INDEPENDENT_VERIFICATION_COMPLETE",
+    "total_operations": 1158966607,
+    "universal_reference": "gamma1/logpower2 only",
+    "whole_signed_bound_proved": false,
+    "worker_resources": {
+      "checker": {
+        "elapsed_seconds": 401.4665725650266,
+        "operations": 556495958,
+        "peak_cells": 14159872,
+        "peak_rss_kib": 961640,
+        "status": "COMPLETE"
+      },
+      "producer": {
+        "elapsed_seconds": 69.13719586702064,
+        "operations": 331548583,
+        "peak_cells": 9441280,
+        "peak_rss_kib": 758872,
+        "status": "COMPLETE"
+      }
+    }
+  },
+  "degree2_frontier": "negative cubic off-diagonal credit must compensate the complete positive diagonal increment",
+  "fresh_data_policy": "all current numerical values are observed; next adapted final test needs a new declared range",
+  "generated_pair_obligations": [
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "1/2"
+        }
+      },
+      "program_id": 69,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-1",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "-1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 1,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "1",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "-1/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 2,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "1/2",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "0",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 0,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "0",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 6,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-1",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "1/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 4,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-1/2",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "1/3",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 3,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-1/3",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 8,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-2",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "2/3",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 5,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-2/3",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_ordered_pairs_and_diagonal_retained": true,
+      "constant": "1",
+      "diagonal_step_log_degree": 3,
+      "exact_pair_kernel": {
+        "critical": "d_X(m)=max(0,1/max(X,m)-1/(2X))",
+        "full": "K_eta,X(h,k)=(1-eta)*d_X(max(h,k))+eta*log(h*k)*ell_X(max(h,k))/2",
+        "logarithmic": "ell_X(m)=integral_max(X,m)^(2X) dx/(x^2 log x), zero whenm>=2X"
+      },
+      "full_termwise_absolute_proof_ruled_out": true,
+      "generated_old_pair_energy_cancelling_rho": "1/2",
+      "log_power": 2,
+      "must_group_signed_products_before_absolute_majorization": true,
+      "program": {
+        "cutoff": 1024,
+        "eta": "3/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "program_id": 7,
+      "reduced_obligation": {
+        "boundary": [
+          "multiply",
+          "-3/2",
+          "a_X",
+          "G(X)",
+          "B_G(X)"
+        ],
+        "boundary_coefficient": "a_X=(log2/2)*integral_X^(2X) dx/(x^2 log x log(2x))>0",
+        "boundary_independently_paid": false,
+        "boundary_sign_known": false,
+        "dependency": "exact equivalent signed covariance obstruction; neither term is separately assumed bounded",
+        "domain": "all dyadic X>=1024; complete unit/cofactor/valuation support",
+        "fresh_sum": [
+          "sum_ordered_pairs",
+          {
+            "condition": "max(h,k)>X",
+            "h": "1..4X-1",
+            "k": "1..4X-1"
+          },
+          [
+            "multiply",
+            "g(h)",
+            "g(k)",
+            [
+              "subtract",
+              [
+                "K_eta",
+                "2X",
+                "h",
+                "k"
+              ],
+              [
+                "multiply",
+                "1/2",
+                [
+                  "K_eta",
+                  "X",
+                  "h",
+                  "k"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "required": [
+          "less_equal",
+          [
+            "add",
+            "fresh_sum",
+            "boundary"
+          ],
+          [
+            "multiply",
+            "1",
+            [
+              "power",
+              "1+log2X",
+              2
+            ]
+          ]
+        ]
+      },
+      "rho": "1/2",
+      "separate_diagonal_payment_insufficient": true,
+      "signed_candidate_disproved": false,
+      "uniform_required_bound_proved": false,
+      "whole_signed_bound_proved": false
+    }
+  ],
+  "new_uniform_proof_rules": [
+    "signed shell recovery with strict smaller-scale history mass below2/5",
+    "actual squared-coefficient mass c_a*x*log^3x+O(xlog^2x), c_a>0",
+    "actual absolute coefficient mass d_a*x*logx+O(x), d_a>0",
+    "exact fresh-pair support reduction with explicit unproved-sign old-head product"
+  ],
+  "next_priority": "generate source-specific signed pairings for the complete fresh-leg kernel, retaining old-head product, all prime valuations and bounded-mode prefix crosses; expose every residual as a new obligation",
+  "original_generated_obligations": [
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 4,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "1",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 1,
+              "theta": "1/2"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "1",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 1,
+                "theta": "1/2"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[2.4977015073169908201957407103501620328821316703831 +/- 1.98e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[6.8657965025733323100430046536595648981856310302791 +/- 7.70e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[7.3798779703943165778731642184269428562289774411674 +/- 7.85e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_69_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "1/2"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "-1",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "-1",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.7952530947045443548340999216953197614926941768357 +/- 4.91e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5287978771291023442377832714731901996930397692545 +/- 9.27e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.277925707428554409310306895539539395093903627922 +/- 2.04e-49]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_1_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "-1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "-1/2",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "-1/2",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.79060955632126621135001491430788959565812879180680 +/- 9.49e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.52571953737260661451253923976307395215859570237871 +/- 8.30e-51]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.2804360167786544776068709760211287977611093387290 +/- 3.18e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_2_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "-1/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "0",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "0",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.785966017937988067865929906920459429823563406777863 +/- 8.79e-52]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.522641197616110884787295208052957704624151635502920 +/- 5.48e-52]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.28294632612875454590343505650271820042831504953586 +/- 3.02e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_0_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "0",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "1",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "1",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.77667894117143178089775989214559909815443263671999 +/- 9.34e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5164845181031194253368071446327252095552635017513 +/- 5.75e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.2879669448289546824965632174658970057627264711496 +/- 7.56e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_6_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "1",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "1/2",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "1/2",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.78132247955470992438184489953302926398899802174892 +/- 5.21e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.51956285785961515506205117634284145708970756862713 +/- 8.03e-51]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.28545663547885461419999913698430760309552076034270 +/- 7.01e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_4_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "1/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "1/3",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "1/3",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.78287032568246930554320656866217265260051981675857 +/- 2.34e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5205889711117803983037991869128802062678555909191 +/- 4.08e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.28461986569548792476781111015711113553978552340709 +/- 7.43e-51]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_3_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "1/3",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "2",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "2",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.7673918644048754939295898773707387664853018666621 +/- 1.43e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5103278385901279658863190812124927144863753679998 +/- 6.36e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.292987563529154819089691378429075811097137892763 +/- 3.31e-49]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_8_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "2/3",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "2/3",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.7797746334269505432204832304038858753774762267393 +/- 3.91e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5185367446074499118203031657728027079115595463352 +/- 2.12e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.2862934052622213036321871638115040706512559972783 +/- 5.59e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_5_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "2/3",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "coefficients_and_primes_not_replaced_by_random_model": true,
+      "conditional_core_log_degree": 2,
+      "conditional_filtered_log_degree": 2,
+      "domain": "every dyadic X>=1024; fixed constant; complete signed prime-power bank and exact interval weights",
+      "equivalent_growth_presentation": true,
+      "expression": [
+        "subtract",
+        [
+          "signed_shell_work",
+          {
+            "cutoff": 1024,
+            "eta": "3/2",
+            "target_filter": {
+              "kind": "delay",
+              "sign": 0,
+              "theta": "0"
+            }
+          },
+          "2X"
+        ],
+        [
+          "multiply",
+          "1/2",
+          [
+            "signed_shell_work",
+            {
+              "cutoff": 1024,
+              "eta": "3/2",
+              "target_filter": {
+                "kind": "delay",
+                "sign": 0,
+                "theta": "0"
+              }
+            },
+            "X"
+          ]
+        ]
+      ],
+      "fresh_final_score": {
+        "all_probe_failures": 0,
+        "decisions": [
+          {
+            "X": 65536,
+            "drift": "[0.7720354027881536374136748847581689323198672516910 +/- 5.06e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "289.0000000000000000000000000000000000000000000000000000"
+          },
+          {
+            "X": 98304,
+            "drift": "[2.5134061783466236956115631129226089620208194348756 +/- 5.47e-50]",
+            "inside_claimed_domain": false,
+            "status": "passed",
+            "upper_bound": "[309.2309061517692588155344558662728485760271555952108233 +/- 4.11e-53]"
+          },
+          {
+            "X": 131072,
+            "drift": "[3.2904772541790547507931272979474864084299321819564 +/- 9.25e-50]",
+            "inside_claimed_domain": true,
+            "status": "passed",
+            "upper_bound": "324.0000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "failed": 0,
+        "uniform_premise_proved": false
+      },
+      "id": "signed_work_7_1/2_2",
+      "program": {
+        "cutoff": 1024,
+        "eta": "3/2",
+        "target_filter": {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        }
+      },
+      "proof_chain": [
+        "all-prime logarithmic identity: exact",
+        "signed shell history recovery: strict smaller-scale contraction",
+        "uniform signed work recurrence: OPEN",
+        "conditional upper recurrence induction",
+        "paid delay inverse and original recovery"
+      ],
+      "recurrence_is_stronger_sufficient_lemma": true,
+      "required_bound": {
+        "constant": "1",
+        "log_power": 2,
+        "power": "0"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    }
+  ],
+  "prior_input": "candidate10_core_bound_obligation.json",
+  "proof_route_guards": {
+    "full_termwise_absolute_majorant": "reject for cofinal claims: actual majorant growsTheta(X log^2X)",
+    "selective_grouping_then_absolute": "allowed only with exact coverage and paid complements",
+    "separate_diagonal_log_squared_payment": "reject for the selected strict contractions: positive cubic forcing remains",
+    "signed_candidate_itself": "open, neither proved nor refuted"
+  },
+  "ranking_feedback": "all fixed polylog degrees supply the same cofinal goal; do not require logdegree2. Prefer proof closure and signed source pairings over smaller fitted constants or a denser eta grid.",
+  "schema": "signed-fresh-pair-obligations-v1",
+  "source_horizon_now_observed": 524287,
+  "source_log_bank": {
+    "RH_proved": false,
+    "all_arguments_smaller": true,
+    "coefficient_identity": "f(n)*log(n)=sum_(d|n,d>=2) Lambda(d)*sum_i c_i*lambda_i(d)*nu_i(n/d)",
+    "prefix_identity": "B_F(x)=sum_(d<=x,d>=2) Lambda(d)*sum_i c_i*lambda_i(d)*A_i(x/d)",
+    "prime_power_tail_truncated": false,
+    "rows": [
+      {
+        "lambda_terms": [
+          {
+            "multiplier": "-2",
+            "shift": "0"
+          },
+          {
+            "multiplier": "1",
+            "shift": "1/3"
+          }
+        ],
+        "mode": "nu0",
+        "source_scalar": "beta"
+      },
+      {
+        "lambda_terms": [
+          {
+            "multiplier": "-1",
+            "shift": "0"
+          },
+          {
+            "multiplier": "1",
+            "shift": "1/3"
+          },
+          {
+            "multiplier": "-1",
+            "shift": "2/3"
+          }
+        ],
+        "mode": "nu1",
+        "source_scalar": "-beta"
+      },
+      {
+        "lambda_terms": [
+          {
+            "multiplier": "-1",
+            "shift": "0"
+          }
+        ],
+        "mode": "mu",
+        "source_scalar": "-beta"
+      },
+      {
+        "lambda_terms": [
+          {
+            "multiplier": "1",
+            "shift": "1/3"
+          },
+          {
+            "multiplier": "-1",
+            "shift": "2/3"
+          }
+        ],
+        "mode": "nu2",
+        "source_scalar": "-R_u"
+      }
+    ],
+    "rule": "logarithmic_derivation_of_complete_euler_product",
+    "scope": "all actual primes and every positive valuation; exact unit cofactors; no coprimality restriction",
+    "supplies_signed_bound": false,
+    "whole_signed_bound_proved": false
+  },
+  "source_mass_profile": {
+    "RH_proved": false,
+    "absolute_coefficient_mass": "sum_(n<=x)|g(n)|=d_a*x*log x+O_a(x), d_a=beta*J_a(1)>0",
+    "bounded_companion_modes": true,
+    "comparable_pair_kernel_lower": "K_eta,Y(h,k)>=3/(20Y) forY>=8 andh,k in[Y,5Y/4]; useY=2X for the step",
+    "complete_work_diagonal": "D_eta(X)=c_a*log(2)*(log X)^3+O_a((log X)^2), uniformly|eta|<=2",
+    "complete_work_diagonal_log_degree": 3,
+    "dominant_absolute_first": [
+      [
+        0,
+        "2"
+      ],
+      [
+        2,
+        "-1"
+      ]
+    ],
+    "dominant_absolute_ratio_power": 2,
+    "dominant_absolute_tail": [
+      [
+        0,
+        "1"
+      ],
+      [
+        2,
+        "-2"
+      ],
+      [
+        4,
+        "1"
+      ]
+    ],
+    "dominant_absolute_zeta_order": 2,
+    "dominant_mode": "B",
+    "dominant_square_zeta_order": 4,
+    "finite_prime_delay_extension": "g(n)=f(n)-a*1_(2 divides n)*f(n/2); replace only the dominant local factor at2; its unit keeps H_a(1),J_a(1)>0",
+    "full_termwise_absolute_step_growth": "Theta_a(X*(log X)^2), uniformly|eta|<=2,0<=rho<=1",
+    "global_proof_dependencies": [
+      "exact complete Euler tails",
+      "absolute convergence of regular Euler products forRe(s)>2/3",
+      "elementary divisor summation for d2/d4 and absolutely summable convolution",
+      "Abel summation on exact shells"
+    ],
+    "hadamard_pairs": [
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "4"
+          ],
+          [
+            2,
+            "-4"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "B",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-4"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "B",
+        "tail_at_valuation2": [
+          [
+            0,
+            "1"
+          ],
+          [
+            2,
+            "-4"
+          ],
+          [
+            4,
+            "6"
+          ],
+          [
+            6,
+            "-4"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "zeta_order": 4
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "2"
+          ],
+          [
+            2,
+            "-3"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "B",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-3"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "U",
+        "tail_at_valuation2": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "4"
+          ],
+          [
+            6,
+            "-6"
+          ],
+          [
+            8,
+            "4"
+          ],
+          [
+            10,
+            "-1"
+          ]
+        ],
+        "zeta_order": 2
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "2"
+          ],
+          [
+            2,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "B",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "V",
+        "tail_at_valuation2": [],
+        "zeta_order": 2
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "B",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "power",
+        "tail_at_valuation2": [
+          [
+            4,
+            "1"
+          ],
+          [
+            6,
+            "-3"
+          ],
+          [
+            8,
+            "3"
+          ],
+          [
+            10,
+            "-1"
+          ]
+        ],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "2"
+          ],
+          [
+            2,
+            "-3"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "U",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-3"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "B",
+        "tail_at_valuation2": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "4"
+          ],
+          [
+            6,
+            "-6"
+          ],
+          [
+            8,
+            "4"
+          ],
+          [
+            10,
+            "-1"
+          ]
+        ],
+        "zeta_order": 2
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "1"
+          ],
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "U",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "U",
+        "tail_at_valuation2": [
+          [
+            4,
+            "1"
+          ],
+          [
+            6,
+            "-4"
+          ],
+          [
+            8,
+            "6"
+          ],
+          [
+            10,
+            "-4"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "zeta_order": 1
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "1"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "U",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "V",
+        "tail_at_valuation2": [],
+        "zeta_order": 1
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "U",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "power",
+        "tail_at_valuation2": [
+          [
+            6,
+            "-1"
+          ],
+          [
+            8,
+            "3"
+          ],
+          [
+            10,
+            "-3"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "2"
+          ],
+          [
+            2,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "V",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "B",
+        "tail_at_valuation2": [],
+        "zeta_order": 2
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            0,
+            "1"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "V",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "U",
+        "tail_at_valuation2": [],
+        "zeta_order": 1
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "1/2",
+        "first_valuation": [
+          [
+            0,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "V",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "V",
+        "tail_at_valuation2": [],
+        "zeta_order": 1
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "V",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "power",
+        "tail_at_valuation2": [],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "power",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-2"
+          ],
+          [
+            4,
+            "3"
+          ],
+          [
+            6,
+            "-1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "B",
+        "tail_at_valuation2": [
+          [
+            4,
+            "1"
+          ],
+          [
+            6,
+            "-3"
+          ],
+          [
+            8,
+            "3"
+          ],
+          [
+            10,
+            "-1"
+          ]
+        ],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "power",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "2"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "U",
+        "tail_at_valuation2": [
+          [
+            6,
+            "-1"
+          ],
+          [
+            8,
+            "3"
+          ],
+          [
+            10,
+            "-3"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "2/3",
+        "first_valuation": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": null,
+        "left": "power",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            2,
+            "-1"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "V",
+        "tail_at_valuation2": [],
+        "zeta_order": 0
+      },
+      {
+        "absolute_convergence_Re_s_greater_than": "1/2",
+        "first_valuation": [
+          [
+            4,
+            "1"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "geometric_ratio_power": 4,
+        "left": "power",
+        "local_identity": "1+first(x)*z+tail(x)*z^2/(1-x^ratio*z); tail zero means omit that term",
+        "regular_linear_term": [
+          [
+            4,
+            "1"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            8,
+            "1"
+          ]
+        ],
+        "regularization": "multiply the complete local identity by(1-z)^zeta_order; x=p^-1/6,z=p^-s",
+        "right": "power",
+        "tail_at_valuation2": [
+          [
+            8,
+            "1"
+          ],
+          [
+            10,
+            "-2"
+          ],
+          [
+            12,
+            "1"
+          ]
+        ],
+        "zeta_order": 0
+      }
+    ],
+    "schema": "complete-core-Hadamard-mass-profile-v1",
+    "signed_work_upper_bound_proved": false,
+    "squared_coefficient_mass": "sum_(n<=x) g(n)^2=c_a*x*(log x)^3+O_a(x*(log x)^2), c_a=beta^2*H_a(1)/6>0",
+    "whole_signed_bound_proved": false
+  },
+  "status": "open",
+  "target": {
+    "equivalent_goal": "||F||_sigma<infinity for every sigma>1/2, or its cofinal dyadic moment",
+    "expression": "F(x)=sum_(n<=x) f(n), complete signed four-mode core",
+    "open_sectors": [
+      "unsuppressed nu0 tensor nu0 below rho=1/3",
+      "all first valuations and remaining common-prime interactions",
+      "joint signed cross terms after any paid union decomposition"
+    ],
+    "separately_bounding_modes_required": false,
+    "uniformity": "all dyadic scales; constants may depend on epsilon/sigma, not on X or omitted primes",
+    "whole_signed_bound_proved": false
+  },
+  "unresolved": "an independently proved all-scale signed fresh-pair/covariance estimate",
+  "whole_signed_bound_proved": false
+}

@@ -1,0 +1,143 @@
+DETECTOR-SYNTHESIZED RECOVERY ESTIMATES AND COMMON-MODE AUDIT
+
+Current input: candidate10_frame_bound_obligation.json
+Verified run: core-frame-bound-results/pilot-001/report.json
+Generator: core_frame_bounds.py
+Independent checker: check_core_frame_bounds.py
+Runner: run_core_frame_bounds.py
+Pre-experiment protocol: core_frame_bound_protocol.txt
+
+Previous turn: verified progress. It generated1023 signed cutoff frames
+and tested finite recovery conditioning. This turn consumes those emitted
+bound obligations and performs exact bound synthesis; it does not repeat
+numerical scores or generate arithmetic source observations.
+
+The detector now derives a simpler sufficient arithmetic estimate
+----------------------------------------------------------------
+For every saved frame, S=sum_j s_j^2, W_i=sum_j s_j*v_(j,i),
+lambda_i=W_i/S where S>0, and K=sum_i lambda_i^2. The executable forms
+the quartic P=sum_i W_i^2 and tries exact multivariate division P/S.
+It nominates no quotient coefficients. If the remainder is zero, the
+generated quadratic B satisfies P=S*B, hence K=B/S on the stated domain.
+
+Otherwise it computes A=sum_(j,i) v_(j,i)^2 and generates every nonzero
+square in the exact identity
+
+ A*S-P = sum_(i,j<k) (s_j*v_(k,i)-s_k*v_(j,i))^2 >=0.
+
+It uses B=A and obtains K<=B/S. The Lagrange/Cauchy proof rule is supplied;
+the polynomial numerator, exact division result, witnesses and resulting
+arithmetic condition are executable outputs. No numerical values, fitted
+constants, model calls or nominated candidate coefficients select them.
+
+The emitted cofinal arithmetic goal is now concrete:
+
+ S(d(N))>0,
+ S(d(N)) >= c*(1+log2X)^(-q)*B(d(N)), N=4X-1,
+
+for one fixed c>0, one fixed q>=0, and EVERY dyadic X beyond one fixed
+finite dyadic threshold X0. This would prove K<=c^(-1)*(1+log2X)^q.
+The arithmetic lower bound and eventual positivity remain OPEN. The
+constant-cost case q=0 is a special case, not a restriction to it.
+Neither finite evidence nor this universal conditional implication proves
+the required actual-source estimate.
+
+Results of the symbolic search
+-------------------------------
+All1023 catalogue candidates were processed exactly once. The search
+found26 exact quadratic quotients and997 Cauchy quotients. The independent
+checker recomputed polynomial division and all37920 nonzero SOS witness
+squares. These are instances of reusable algebraic proof rules, not
+thousands of new arithmetic theorems.
+
+Among the five previously selected constructions,31 and511 have exact
+quotients;9,20,898 use the Cauchy certificate. For any generated two-drift
+frame with active coordinates a,b, the output specializes to
+
+ K=(d_a^2+d_b^2)/(d_a-d_b)^2.
+
+Thus the actual lower-bound problem is relative signed drift separation,
+not just a separate upper bound for each drift. The special generic
+calibration d_b=-d_a!=0 recovers K=1/2 over its entire stated domain.
+That calibration is separate from actual Mobius arithmetic.
+
+For the five selected constructions, the program expands S and B through
+the COMPLETE saved drift polynomials into eight actual finite Mobius
+moment variables plus the common source scalar R_u. Equal a moments with
+the same cutoff exponent are identified across geometries; the a and b
+families remain distinct. The a weights are n^(-2/3), the b weights are
+n^(-4/3). All units, prime powers, signed cross terms and source scalars
+remain. Unsupported c_U terms are rejected rather than omitted. The
+independent checker reconstructs every substitution. The resulting
+polynomials are generally quartic in these underlying moment variables.
+Exact substitution is proved; none of their arithmetic inequalities is.
+
+Automatic equivalence audit: conditioning does not bound the core
+------------------------------------------------------------------
+The complete representation remains G=P_i+R_i+d_i*J. Expanding the
+generated frame before division gives
+
+ sum_i W_i*R_i = S*G - sum_i W_i*P_i,
+
+with the J coefficient exactly zero. The normalized residual therefore
+retains the ENTIRE original common mode G with coefficient1. Once the
+recovery cost is controlled, this is an equivalent signed target modulo
+the bounded paid vector. It is not independent information bounding G.
+The machine-readable search policy assigns zero new signed-control
+credit to this equivalence while retaining the open arithmetic lemmas.
+
+For every candidate the detector also finds a rational weak-fact model
+with S>0, fixed finite K, and a satisfied sufficient recovery condition.
+It first tries d_i=i+1, then coordinate unit vectors if necessary. In the
+model P_i=0, J=H, R_i=(T-d_i)H for a unit abstract Hilbert vector H.
+The weighted residual equals T*H for arbitrary real T and has energyT^2.
+Thus the frame identities plus even UNIFORM conditioning cannot imply
+a residual bound. The model does NOT satisfy the actual arithmetic source
+AST. It is not a counterexample to the real core bound, Mobius arithmetic
+or RH. All corresponding source/RH disproof flags stay false.
+
+Next search input and required work
+------------------------------------
+The five generated arithmetic obligations preserve every parent
+construction, all144 inherited channel/transport routes, all720 source
+representation bindings, every paid recovery cost, the exact transport
+error, finite-head requirement and full signed residual. An acyclic
+dependency graph separates the proved algebra, open arithmetic lower
+bound, conditional uniform recovery and OPEN independent residual bound.
+No earlier fixed-constant recurrence has been discharged.
+
+Two concrete searches remain necessary:
+* Prove the emitted moment separation inequality (or control the exact
+  weighted paid energy by another construction), with the stated uniform
+  constants and positivity domain.
+* Find independent signed arithmetic information for the complete core
+  residual, for example an actual-source correlation bound or a valid
+  recurrence across scales. Reusing only cutoff-frame identities cannot
+  close this obligation, even after recovering good conditioning.
+
+Unknown arithmetic lemmas remain legitimate discovery targets. The
+equivalence test must not be misread as a rejection of all such routes;
+it prevents re-expression alone from being counted as a new bound.
+The original all-scale signed-control/RH research goal remains active.
+
+Validation and resources
+--------------------------
+All28 frozen tests passed:9 generator/semantics,16 independent checker,
+3 runner/source-binding tests. Root's initial7 owned tests passed, then
+only the two added source-substitution tests ran during development.
+Checker and runner owned suites each passed once. No failed or repeated
+actual search run occurred, and no old suites were rerun.
+
+The independent Sol6.1 checker imports no generator. It audits division,
+SOS crosses, countermodel scope, common-mode retention, exact source
+substitution, condition quantifiers, and false arithmetic-closure flags.
+The runner reuses the prior byte-verified proof/source chain and rechecks
+the saved frame catalogue, without rerunning numerical work.
+
+Runtime20.924seconds, inclusive charged work53231854 under300million,
+main peakRSS704032KiB under4GiB. Zero new source evaluations and zero
+numerical candidate scores. Direct-byte snapshots, no hashes, no edits
+to earlier frozen files. Session54678 is terminal with exit0.
+
+Full signed arithmetic control and RH remain OPEN. These exact bound
+reductions and obstruction certificates do not complete the goal.

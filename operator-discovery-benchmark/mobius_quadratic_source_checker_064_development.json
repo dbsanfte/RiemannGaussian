@@ -1,0 +1,28 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_quadratic_source_064.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 14,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_quadratic_source_064 operations=352382\n",
+      "stderr": "test_K_radius_mu_coverage_and_strict_types (__main__.QuadraticSourceTests) ... ok\ntest_all_fill_rules_source_entries_and_complete_repair (__main__.QuadraticSourceTests) ... ok\ntest_arbitrary_rational_order_and_source_parameters (__main__.QuadraticSourceTests) ... ok\ntest_canonical_fraction_and_resource_guards (__main__.QuadraticSourceTests) ... ok\ntest_charge_only_pipeline_meter (__main__.QuadraticSourceTests) ... ok\ntest_forged_flags_expression_and_extra_fields (__main__.QuadraticSourceTests) ... ok\ntest_independent_mu_includes_registered_primes_and_squares (__main__.QuadraticSourceTests) ... ok\ntest_linked_fill_rule_primes_H_and_coefficients (__main__.QuadraticSourceTests) ... ok\ntest_matrix_entry_sign_endpoint_or_unit_mutation (__main__.QuadraticSourceTests) ... ok\ntest_missing_column_row_or_linear_term (__main__.QuadraticSourceTests) ... ok\ntest_raw_noncoprime_residual_binding_even_when_zero_fill_ignores_it (__main__.QuadraticSourceTests) ... ok\ntest_source_N_y_H_and_parameter_swaps (__main__.QuadraticSourceTests) ... ok\ntest_source_factorization_does_not_prove_uniform_growth (__main__.QuadraticSourceTests) ... ok\ntest_zero_K_and_virtual_boundary_case (__main__.QuadraticSourceTests) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.038s\n\nOK\n",
+      "operations": 352382,
+      "elapsed_seconds": 0.10358693002490327,
+      "peak_rss_KiB": 25924
+    }
+  ],
+  "operations": 352382,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "scientific_LP_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true
+}

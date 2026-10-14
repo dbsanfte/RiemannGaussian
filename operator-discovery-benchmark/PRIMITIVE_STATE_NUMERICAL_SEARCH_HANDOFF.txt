@@ -1,0 +1,188 @@
+PRIMITIVE STATE NUMERICAL SEARCH HANDOFF — publication011
+
+This stage tests a numerical reformulation of EXACTLY the arithmetic cone
+and target in publication010. That publication recorded the complete
+210-localizer expansion and an inconclusive full search: both numerical
+solvers failed before producing an admissible result. Its evidence and
+all earlier publications remain immutable.
+
+Mathematical language and scope
+
+The state remains the complete full15 affine state. There are 366 scalar
+square groups, 613 signed relation groups (including all 210 primitive
+family/state products), and full child, parent and storage PSD matrices.
+All sources, targets, dictionary positions, shared coefficients and
+signed storage transport are unchanged. The numerical system still has
+5641 moment coordinates and 1957 complete source columns on historical
+development scales 1,2,3,5 plus the gamma-zero auxiliary, q=6, C=32.
+No actual signed arithmetic response table is an input.
+
+These new relations vanish at the actual Mobius sequence at every scale.
+Their added scalar contribution has the explicit O_beta(X^2) bound given
+in PRIMITIVE_STATE_LOCALIZER_SEARCH_HANDOFF.txt. That exact arithmetic
+fact does not supply a uniform innovation estimate. Gamma-zero necessity
+retains its recorded conditional scope. Signed storage recovery, actual
+initial cost, all-scale matching and the required q/analytic bridge
+obligations remain unchanged.
+
+Equivalent numerical equations
+
+The new proposal module creates the complete original equality system
+and compresses exact AUGMENTED rows (coefficient row together with RHS).
+The first representative of each nonzero proportional class is retained.
+Every original row records its representative and exact rational factor.
+An identically zero augmented row can be removed. A zero coefficient row
+with nonzero RHS is retained as an explicit inconsistency diagnostic;
+no numerical proposal or infeasibility theorem is manufactured from a
+solver status. Including the RHS prevents dropping contradictory parallel
+equations. Negative proportional factors are valid for equalities.
+
+Each retained equation is divided by the positive exact maximum absolute
+entry of its augmented row. Float conversion rejects overflow, underflow
+of nonzero entries and nonfinite values. No numerical rank cutoff is used.
+Every scalar variable, sign constraint, signed moment/slack coordinate and
+PSD upper-triangle coordinate keeps its original position and meaning.
+Thus row compression and scaling preserve the original feasible set.
+The objective and PSD constraints are unchanged. There is one declared
+HiGHS attempt for the dual and one CLARABEL attempt for the primal.
+
+Final proof admission still reconstructs the ENTIRE ORIGINAL system.
+The dual's existing removal of 105 redundant storage cross equations is
+separately verified coefficientwise; all original scalar and Gram columns
+remain in exact admission. Native leaf restoration, rational correction,
+complete PSD checks and independent arithmetic source reconstruction
+retain their prior roles. A floating proposal alone proves no estimate.
+
+Independent verification and resources
+
+check_primitive_state_numerical_proposals.py imports neither the numerical
+producer nor a solver. It rebuilds the original primal or dual system,
+reconstructs every augmented proportional class, validates complete
+retained indices, signed factors, positive scales, hashes and variable
+layout, and checks explicit successful/failed proposal diagnostics.
+The root whole-stage checker replays these transformations separately.
+
+New numerical assembly, exact row compression, source hashing, scaled
+sparse construction and independent replay have a deterministic charged
+work reserve. This reserve is added to compilation before any native
+reconstruction allowance is computed. The total backend allowance stays
+450000000. Producer source-cell limits and the independent auditor's
+cumulative replay-cell limit are recorded separately; counting several
+replayed representations is not an increase in the producer source cap.
+
+The run keeps one numerical worker/thread, 6 GiB per worker and total,
+360 cooperative seconds and 1200 external seconds. Existing user
+authorization for higher memory when limiting and longer runtime persists.
+Complete numerical diagnostics are retained on unsuccessful proposals.
+If numerical replay is interrupted, an already returned candidate is
+retained with an explicit pending flag and cannot enter native admission.
+Such partial records can only receive a nonadmission audit.
+
+Workflow
+
+Sol 6.1 subagents developed the substantial numerical producer and
+independent transformation checker in parallel. Main-thread integration
+added versioned exact solver wrappers, charged accounting, interrupted
+replay retention, frozen runner/auditor and publication. All changes use
+new files. Existing frozen source files were not edited.
+
+primitive-state-scaled-search-001 froze 97 sources and passed 52 prescore
+tests before research scoring. Tests include exact augmented-row
+equivalence, contradictory/zero rows, signed factors, complete PSD layout,
+bad source hashes/scales, resource receipt tampering, unsuccessful solvers,
+interrupted numerical replay, exact primal/dual calibration, complete
+native restoration and fixed-candidate transfer behavior.
+
+The previous failed run is retained in publication010. The new publication
+compares source/target and complete arithmetic archive hashes directly
+between attempts. The same historical grid was reused to investigate
+numerical behavior, so no unseen-data generalization is claimed.
+
+Execution result
+
+The dual compression reduced 1853 equations to 1193, preserving all 11698
+split-moment/slack variables. Its receipt records 1686091 source cells and
+3372182 exact compression operations. HiGHS again returned status4, with
+unknown model status and infeasible primal status, and no support vector.
+The worker then reached the cooperative deadline while starting the
+independent transformation replay. The recorded status is missing_resource,
+with reason "numerical transformation audit deadline". The raw numerical
+diagnostics and exact transformation receipt remain in the job record with
+numerical_verification_pending=True. No native reconstruction ran.
+
+The dual worker used 382.2995 elapsed seconds and peaked at 1167180 KiB
+(about 1.11 GiB), with one numerical thread. The cooperative clock starts
+inside the proposal backend; this worker total also includes prior source
+construction and archive preparation. The 1200-second external limit was
+not reached. The initial compilation reserve was 35367503; no completed
+worker numerical-audit reserve or native charge is falsely claimed for
+this interrupted verification.
+
+The deterministic protocol then ran the primal. Exact compression reduced
+5641 equations to 4029 on the same 1957 original scalar/matrix coordinates.
+Its receipt records 956589 source cells and 1913178 exact compression
+operations. CLARABEL again raised SolverError with no candidate vector.
+This time the worker independently completed the exact transformation
+replay. Its numerical reserve was 16026858, including source assembly
+3828313, compression 1913178, scaled sparse construction 3650552, source
+hashing 1913178, independent replay 4721636 and overhead 1.
+
+The primal status is uncertified. It used 122.1841 elapsed seconds and
+peaked at 980608 KiB (about 0.94 GiB), with one numerical thread. It ran
+no native correction. No candidate was admitted, so final transfers at
+8 and 13 did not run. There is no new exact separator either. Feasibility
+of this enlarged arithmetic cone remains UNKNOWN.
+
+The reformulation reduced equation counts but did not resolve the solver
+failures or reduce observed total worker cost. It should not be described
+as a successful speedup or as evidence against the arithmetic target.
+
+Versioned audit correction
+
+The original frozen whole-stage auditor stopped at a checkpoint-format
+bug: the prepared-domain checkpoint has an empty numerical_diagnostics
+dictionary before the completed proposal is attached. The original audit
+mistook this empty placeholder for a completed numerical receipt and
+rejected it for missing thread metadata. The checkpoint correctly made
+no admission claim; the separate job record retained the failed solver's
+diagnostics and interrupted replay flag.
+
+check_primitive_state_scaled_search_v2.py corrects ONLY that handling rule.
+Absent/None/empty diagnostics are allowed only at prepared_domain, with
+no support, no numerical transformation declaration and no numerical work
+reserve. Later phases and partial nonempty receipts remain subject to the
+full strict audit. The original frozen auditor is preserved. Ten tests
+exercise the corrected auditor, including valid prepared checkpoints and
+rejection of attempts to promote placeholders to later-stage evidence.
+Their results and both new audit-source hashes are bound in the independent
+review. The new files are checked for changes during the complete replay.
+
+The revised whole-stage review passed. It reconstructed the complete
+original arithmetic instances and exact transformations, including the
+dual replay that the worker could not finish. It admitted these as correctly
+recorded NONCERTIFIED outcomes; it proves no cone feasibility, infeasibility,
+uniform inequality or RH statement. The publisher requires that review to
+pass, binds the versioned audit sources as well as the original frozen
+source closure, and directly compares original-system hashes with the
+publication010 attempts before updating latest.json.
+The separate completed dual replay computed a numerical work reserve of
+25307939. This is a replayed accounting value, not a claim that the original
+worker completed that verification or ran a native reconstruction.
+
+Next task
+
+Obtain more informative numerical termination diagnostics before adding
+another arithmetic family. The current failure records have no candidate
+or support to send to exact reconstruction. Capture solver iteration and
+residual information in a fresh frozen protocol, investigate additional
+exactly justified simplification, and use the already authorized runtime
+extension where it is actually needed. The primal's early SolverError
+shows that extra time alone is not an established remedy. Memory remained
+far below 6 GiB. Keep source semantics, unknown feasibility and the exact
+admission requirements intact.
+
+Only an admitted finite template should proceed to the analytic attempt
+at uniform matching and a critical scalar budget with the required q and
+boundary quantifiers. No such template has been found in these two expanded
+searches. global_bound_proved=False; RH_proved=False; the research goal
+remains active.

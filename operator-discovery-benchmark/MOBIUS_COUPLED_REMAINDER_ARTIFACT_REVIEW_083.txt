@@ -1,0 +1,35 @@
+STAGE083 SEPARATE COMPLETE RESIDUAL REVIEW
+
+The new target is R=A-O-G, with O the corrected RAW physical whole-outer
+block and G all positive Gram additions. Since divisor corrections evaluate
+zero on actual mu, DeltaE=mu^T O mu+mu^T R mu exactly. Partition before
+prime-anchor congruence preserves this identity. In particular R retains
+negative G even on outer coordinates; neither subtracting effective anchor
+blocks nor subtracting previously computed absolute prices is valid.
+
+Producer and independent checker construct this target independently. The
+checker retains every cross entry before exact anchor projection and checks
+all Boolean row prices. Signed trace may be negative; off-diagonal absolute
+prices are nonnegative. The anchor constant, composite trace, anchor-composite
+absolute price and composite-composite absolute price expose the complete
+remaining target rather than a selected subblock.
+
+Saved-artifact audit binds the same two frozen matched winners and all six
+previously drawn parents, twelve complete independent admissions and exact
+outer-plus-residual drift prices. It does not replay full matrix arithmetic
+or query unknown composite signs. Saved admissions are trusted only with
+source snapshot, exact certificate correspondence and complete roster binding.
+The finite residual prices do not establish a uniform residual estimate.
+
+SAVED RESIDUAL RUN AUDIT: ATTEMPT002 PASS
+All12 independently admitted complete residual rows bind to two previously
+frozen matched winners and six previously drawn parents. Constructor work
+916884512 operations and independent checker work1266408519 operations bind
+exactly to saved rows. Reported time and memory lie within the resource envelope.
+All598 older,19 main and6 residual source snapshots remain byte-identical.
+The initial immutable INVALID receipt records an audit implementation error:
+it assumed asynchronous pool results followed task order. Attempt002 uses an
+exact identifier bijection, checks all rows/outcomes and preserves that first
+attempt. The corrected PASS receipt is
+saved_remainder_artifact_admission_083_attempt002.json. Neither this audit nor
+the residual experiment proves uniform residual growth or the RH objective.

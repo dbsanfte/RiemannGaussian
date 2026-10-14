@@ -1,0 +1,43 @@
+{
+  "RH_proved": false,
+  "fitted_constants": 0,
+  "hashes": false,
+  "input": "candidate10_signed_primitive_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "numerical_source_observations": 0,
+  "operation_cap": 1000000000,
+  "runtime_model_calls": 0,
+  "runtime_seconds": 900,
+  "schema": "core-bound-argument-run-v1",
+  "spec": {
+    "depth_limit": 12,
+    "node_limit": 4096,
+    "numerical_fit": false,
+    "rules": [
+      "bounded_sawtooth",
+      "mean_from_supremum",
+      "sawtooth_fourier",
+      "absolute_cofactor",
+      "complete_divisor_inverse",
+      "coprime_dilation_inverse",
+      "parseval_uniform_cofactor",
+      "parseval_keep_cutoff",
+      "parseval_inverse",
+      "weighted_Abel",
+      "interval_from_supremum",
+      "finite_dilation_spacing",
+      "source_prefix_auxiliary"
+    ],
+    "runtime_model_calls": 0,
+    "selection": "exponent, logs, assumptions, constant, proof size",
+    "window_powers": [
+      "0",
+      "1/2",
+      "1",
+      "2",
+      "3",
+      "6"
+    ]
+  },
+  "whole_signed_bound_proved": false
+}

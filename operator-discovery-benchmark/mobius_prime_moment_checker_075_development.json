@@ -1,0 +1,61 @@
+{
+  "schema": "prime-moment-checker-development-v1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command_interpreter": "python",
+      "tests_run": 0,
+      "outcome": "INTERPRETER_UNAVAILABLE",
+      "output": "/bin/bash: line 62: python: command not found\n"
+    },
+    {
+      "attempt": 2,
+      "command_interpreter": "python3",
+      "tests_run": 7,
+      "outcome": "PASS",
+      "output": "test_direct_cauchy (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_finite_counterexamples (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_limits_and_canonical (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_program_and_no_promotion (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_roots_and_denominators (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_source (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_tampering (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.170s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "command_interpreter": "python3",
+      "tests_run": 4,
+      "outcome": "PASS",
+      "output": "test_direct_cauchy (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_program_and_no_promotion (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_roots_and_denominators (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_tampering (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.079s\n\nOK\n"
+    },
+    {
+      "attempt": 4,
+      "command_interpreter": "python3",
+      "tests_run": 1,
+      "outcome": "PASS",
+      "output": "test_rounding_straddle (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+    },
+    {
+      "attempt": 5,
+      "command_interpreter": "python3",
+      "tests_run": 3,
+      "outcome": "PASS",
+      "output": "test_finite_counterexamples (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_rounding_straddle (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_program_and_no_promotion (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "attempt": 6,
+      "command_interpreter": "python3",
+      "tests_run": 9,
+      "outcome": "PASS",
+      "output": "test_direct_cauchy (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_finite_counterexamples (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_limits_and_canonical (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_program_and_no_promotion (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_prospective_memory_without_allocation (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_roots_and_denominators (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_rounding_straddle (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_source (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_tampering (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.220s\n\nOK\n"
+    },
+    {
+      "attempt": 7,
+      "command_interpreter": "python3",
+      "tests_run": 2,
+      "outcome": "PASS",
+      "output": "test_prospective_memory_without_allocation (test_check_mobius_prime_moment_075.Tests) ... ok\ntest_program_and_no_promotion (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.003s\n\nOK\n"
+    }
+  ],
+  "latest_outcome": "PASS",
+  "distinct_tests": 9,
+  "successful_test_executions": 26,
+  "scientific_data_read": false,
+  "producer_imports": false,
+  "hashes_used": false,
+  "prospective_memory_review": "base tuple and sieve/cache/row/scales working estimates checked before allocations; peak_bytes exported"
+}

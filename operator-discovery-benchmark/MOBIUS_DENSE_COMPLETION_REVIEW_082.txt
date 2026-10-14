@@ -1,0 +1,142 @@
+DENSE GEOMETRIC COMPLETION AND EXACT DUAL REVIEW082
+
+Source-independent mathematical review of the proposed finite grammar.
+No implementation or prior numerical study is executed here. The earlier
+MOBIUS_DENSE_BOUND_DESIGN_082.txt remains a separate design note.
+
+1. Primal bound is legitimate, with the positive Gram sign as proposed
+
+Group every squarefree n<=N by the complete tuple of source-delay values
+f_i(n) and geometry profiles C_j(n). Include unit and all squarefree
+coordinates, not only observed nonzero source values. Let c_g be the actual
+squarefree group population and z_g=c_g^(-1) sum_(n in g)mu(n), so |z_g|<=1.
+Empty groups are omitted. Actual source features are sum_g c_g f_i(g)z_g.
+
+For K>=1, C_K(n)=floor(K/n)-1[n=1] gives
+sum_n mu(n)C_K(n)=1-mu(1)=0; for K=0 set C0 identically0. The sum needs only
+n<=K, so min(N,floor(scale*u^eta)) stays inside the original arithmetic
+horizon. Unit subtraction is essential. Geometry, source floors and profile
+floors must be grouped exactly before counts or coefficients are used.
+
+Write A0_gh=c_g c_h f(g)^T T f(h). The symmetric Z_j,i has entries
+c_g c_h[C_j(g)f_i(h)+f_i(g)C_j(h)], and actual z^T Z z=0. A positive Gram
+addition w v v^T, w>=0, makes actual z^T A z at least the original drift.
+It therefore has the correct sign for seeking an upper bound by diagonal
+completion. The feature-normalization convention must be exact and frozen;
+normalizing a feature changes its admissible w-box and is not just notation.
+
+Let d_g=max(0,A_gg+sum_(h!=g)|A_gh|). Then diag(d)-A is symmetric diagonally
+dominant with nonnegative diagonal and hence PSD. One direct proof expands
+pair terms |A_gh|(z_g-sign(A_gh)z_h)^2 plus the remaining nonnegative diagonal.
+Thus original drift<=z^T A z<=sum_g d_g z_g^2<=B=sum_g d_g. This prices the
+FULL drift; no unlinked arithmetic remainder is omitted. It is nevertheless
+an upper price in a relaxation, and finiteB is not a uniform source bound.
+
+The group count uses mu(n)^2 only. It must be independently checked against
+squarefree counts, while LP selection must never use mu signs, actual group
+sums z, source values or savedU. Such values can be reported after selection.
+
+2. Exact finite box dual
+
+For arbitrary rational0<=lambda_g<=1 and |nu_gh|<=lambda_g+lambda_h, g<h,
+L(A)=sum_g lambda_g A_gg+sum_(g<h)nu_gh A_gh is at mostB(A). This follows
+from max(0,x)>=lambda*x and from each offdiagonal absolute value being
+counted once underlambda_g and once underlambda_h. There is no extra factor2
+in this definition ofL; ifL is obtained from z^T A z, use nu_gh=2z_gz_h.
+
+For independenttheta boxes[-16,16] and nonnegative Gramweights[0,16],
+B(A)>=L(A0)-16sum_j |L(Z_j)|+16sum_alpha min(0,L(v_alpha v_alpha^T)).
+This follows by minimizing the linearL over each actual parameter box.
+The formula is exact for these boxes and normalized features only. It is a
+lower bound for this diagonal-completion price cone, not an arithmetic
+counterexample, a lower bound on actual drift, or unrestricted SDP optimum.
+
+Rounded LP duals need exact feasibility. Clamp lambda into[0,1] rationally;
+then clamp eachnu against the NEWlambda_g+lambda_h. Recompute all dot
+products and the box penalty exactly. Record rational denominators and
+coefficient bit budgets. A finite dual certifies only the evaluated count
+geometry. Extending the conclusion to allu requires a separately proved
+construction of feasible duals and a uniform lower estimate of their value.
+
+3. Automatic uniform obstruction for every sublinear profile schedule
+
+Suppose all registeredK_j(u)<=floor(u/5) eventually. This holds for every
+fixed finite positive scale list with eta_j<1. On the entire interval
+I=(floor(u/5),floor(u/4)], the original unfolded G and G+.433G(u//3)
+source-delay vector is[-1,0,...] and everyC_j is0. Therefore all squarefree
+coordinates inI belong to one canonical group g (possibly with additional
+coordinates sharing that same tuple). Its sizec_g is at least Q(u/4)-Q(u/5),
+where Q(x)=sum_(n<=x)mu(n)^2. Here H00>=1 and A0_gg=H00*c_g^2.
+
+Take lambda_g=1, all otherlambda=0, allnu=0. EveryL(Z)=0 because C_j(g)=0.
+EveryL(vv^T)=v_g^2>=0, so the nonnegative Gram box penalty vanishes. The
+exact dual lower bound is thereforeH00*c_g^2, regardless of theta boxes,
+Gram normalization and positive Gram roster. This is not just a large-box
+artifact; even unrestrictedtheta cannot alter that diagonal through these
+zero profiles, and positive Gram cannot lower it.
+
+Elementary square-divisor inversion proves, for realx>=0,
+Q(x)=x/zeta(2)+O(sqrt(x)), with an explicit admissible error3sqrt(x) forx>=1
+and harmless small-x handling. Hence the outer interval contains at least
+u/[20*zeta(2)]-O(sqrtu) squarefree integers. For an elementary rational lower
+coefficient, zeta(2)<2 by sum_(n>=2)1/n^2<integral_1^infinity dt/t^2=1, so
+Q(u/4)-Q(u/5)>=u/40-3(sqrt(u/4)+sqrt(u/5)); an exact rational upper bound
+on square roots gives a machine-checkable finite starting scale. Eventually
+c_g>=u/80, and B>=H00*u^2/6400. Consequently no finiteC can make this price
+B(u)<=C*u^q uniformly for ANYq<2.
+
+This obstruction uses no PNT, no signed Mertens estimate and no numerical
+arithmetic. It is about the certificate grammar: actual mu may cancel inside
+the large group, but the interval relaxation|z_g|<=1 discards that cancellation.
+Adding squarefree group counts exactly does not repair the loss. A pilot
+restricted to sublinearK is uniformly doomed and should be admitted as an
+obstruction ablation rather than offered as a plausible positive route.
+At least one full-radius/linearK profile reaching into the outer interval is
+necessary to evade this PARTICULAR zero-profile dual. It is not sufficient.
+
+4. A more general route to uniform dual obstructions
+
+For any formal group vectorz with |z_g|<=1, setlambda=z_g^2 andnu_gh=2z_gz_h.
+The arithmetic-geometric mean inequality gives dual feasibility. If all
+incidence moments sum_g c_g C_j(g)z_g vanish, thenL(Z)=z^TZz=0; positive
+Gram terms obeyL(vv^T)=(v^Tz)^2>=0. If additionally all delayed source forms
+except currentf0 vanish onz, thenL(A0)=H00[sum_g c_g f0(g)z_g]^2.
+Thus an exact formal covariance with orderu current-source mass, zero
+profile moments and zero delayed-source moments obstructs everyq<2 price.
+It need not equal actual mu. This is a genuine finite-grammar obstruction.
+
+For a uniform theorem the formalz and zero moments must be constructed for
+every sufficiently largeu, not fitted once. One implementable sufficient
+certificate would use a finite collection of fixed rational fractional
+intervals on which all floor profiles are constant, solve a rational moment
+system using their exact squarefree counts, and prove the solution stays
+inside[-1,1] with an orderu source moment by explicit count-error margins.
+For linearK profiles, choose intervals away from all profile floor thresholds
+with bounded quotient values. The limiting moment matrix must have a proven
+nonzero minor and strict interior feasibility; count errors are thenO(sqrtu)
+and an explicit inverse-matrix perturbation price supplies the starting
+scale. Every selected interval's prime/squarefree population is geometric,
+not a signed source estimate. This is an analytic construction opportunity,
+not a theorem for arbitrary profile lists. If the limiting matrix is singular
+or f0 lies in the constrained span, this argument does not apply.
+
+Finite LP witnesses may suggest which intervals and moments to use. They
+must not silently assume group patterns persist, suppress floor-entry changes,
+or treat finite conditioning as a uniform bound. A certified obstruction
+should print its exact limiting rational interval/moment matrix, a minor,
+strict feasibility margins and the elementary squarefree error budget.
+
+5. Pilot disposition
+
+The finite dense completion pilot is worthwhile if it includes linear/full
+radius profiles and exact box-dual admissions, and explicitly carries the
+sublinear automatic obstruction. It directly prices the entire signed drift
+instead of081's sparse packet. It still relaxes all arithmetic not represented
+by its finitely many incidence moments. Feasible finiteB/u and poor box-duals
+are neither RH evidence nor payment of uniformB. Positive completion at all
+scales needs an actual symbolic construction and geometry-paid bound;
+negative uniform results need a proved dual family such as section3 or4.
+
+No source bound, uniform drift bound or RH result is proved in this review.
+The proved new mathematical statement is the sublinear-profile obstruction
+for the proposed completion price, plus exact finite primal/dual validity.

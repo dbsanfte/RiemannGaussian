@@ -1,0 +1,1837 @@
+{
+  "attempts": [
+    {
+      "elapsed_seconds": 2.24344612902496,
+      "errors": 0,
+      "failures": 0,
+      "fresh_draw_computed": false,
+      "frozen_sources_modified": false,
+      "full_fresh_subprocess_outcomes": [
+        {
+          "actual_loaded_pool_fault_rejected": true,
+          "after": {
+            "environment": {
+              "MKL_NUM_THREADS": "1",
+              "NUMEXPR_NUM_THREADS": "1",
+              "OMP_NUM_THREADS": "1",
+              "OPENBLAS_NUM_THREADS": "1",
+              "VECLIB_MAXIMUM_THREADS": "1"
+            },
+            "loaded_pools": [
+              {
+                "architecture": "Zen",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libopenblas",
+                "threading_layer": "disabled",
+                "user_api": "blas",
+                "version": "0.3.15"
+              },
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.29"
+              },
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.28"
+              }
+            ],
+            "pid": 1493989
+          },
+          "before": {
+            "environment": {
+              "MKL_NUM_THREADS": "1",
+              "NUMEXPR_NUM_THREADS": "1",
+              "OMP_NUM_THREADS": "1",
+              "OPENBLAS_NUM_THREADS": "1",
+              "VECLIB_MAXIMUM_THREADS": "1"
+            },
+            "loaded_pools": [
+              {
+                "architecture": "Zen",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libopenblas",
+                "threading_layer": "disabled",
+                "user_api": "blas",
+                "version": "0.3.15"
+              },
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.29"
+              },
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.28"
+              }
+            ],
+            "pid": 1493989
+          },
+          "child_exit_code": 0,
+          "direct_byte_preserved_sources": 703,
+          "elapsed_seconds": 0.6648910599760711,
+          "environment_fault_rejected": true,
+          "fresh_draw_computed": false,
+          "scientific_geometry_evaluated": false,
+          "solver_executed": false,
+          "stage": "actual_native_and_environment_fault_guards",
+          "status": "PASS",
+          "stderr": "",
+          "stdout": "",
+          "wrapper_module": "run_mobius_arithmetic_bank_retry_086"
+        },
+        {
+          "child_exit_code": 0,
+          "elapsed_seconds": 1.2498683460289612,
+          "fresh_draw_computed": false,
+          "independent_tiny_lower_admissions": 12,
+          "main_native_state": {
+            "environment": {
+              "MKL_NUM_THREADS": "1",
+              "NUMEXPR_NUM_THREADS": "1",
+              "OMP_NUM_THREADS": "1",
+              "OPENBLAS_NUM_THREADS": "1",
+              "VECLIB_MAXIMUM_THREADS": "1"
+            },
+            "loaded_pools": [
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.29"
+              },
+              {
+                "architecture": "Zen",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libopenblas",
+                "threading_layer": "disabled",
+                "user_api": "blas",
+                "version": "0.3.15"
+              },
+              {
+                "architecture": "Haswell",
+                "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                "internal_api": "openblas",
+                "num_threads": 1,
+                "prefix": "libscipy_openblas",
+                "threading_layer": "pthreads",
+                "user_api": "blas",
+                "version": "0.3.28"
+              }
+            ],
+            "pid": 1493992
+          },
+          "real_MILP_proposals": 12,
+          "scientific_geometry_evaluated": false,
+          "stage": "fresh_full_import_and_three_spawned_workers",
+          "status": "PASS",
+          "stderr": "",
+          "stdout": "{\"event\": {\"completed\": 1, \"id\": \"tiny_native_0\", \"stage\": \"independent_tiny_native_launch\", \"status\": \"VERIFIED_TINY_NATIVE_WORKER_LAUNCH\", \"total\": 3}}\n{\"event\": {\"completed\": 2, \"id\": \"tiny_native_1\", \"stage\": \"independent_tiny_native_launch\", \"status\": \"VERIFIED_TINY_NATIVE_WORKER_LAUNCH\", \"total\": 3}}\n{\"event\": {\"completed\": 3, \"id\": \"tiny_native_2\", \"stage\": \"independent_tiny_native_launch\", \"status\": \"VERIFIED_TINY_NATIVE_WORKER_LAUNCH\", \"total\": 3}}\n",
+          "unknown_Mobius_values_used": false,
+          "worker_count": 3,
+          "workers": [
+            {
+              "after": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  }
+                ],
+                "pid": 1493995
+              },
+              "before": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  }
+                ],
+                "pid": 1493995
+              },
+              "elapsed_seconds": 0.6210864239837974,
+              "fresh_draw_computed": false,
+              "id": "tiny_native_0",
+              "independent_admissions": [
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                }
+              ],
+              "pid": 1493995,
+              "scientific_geometry_evaluated": false,
+              "status": "VERIFIED_TINY_NATIVE_WORKER_LAUNCH",
+              "tiny_parent": 59,
+              "unknown_Mobius_values_used": false,
+              "witness_report": {
+                "RH_proved": false,
+                "artificial_signs_not_actual_Mobius": true,
+                "attempts": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "name": "ALL_PLUS_EXACT_START",
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    }
+                  },
+                  {
+                    "name": "TOP_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-4"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "BOTTOM_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-12"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "SEEDED_RANDOM_GRADIENT_0_EXACT_START",
+                    "residuals": [
+                      "-8"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 0,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_0",
+                    "node_limit": 1000,
+                    "objective": "ALL_PLUS_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 1,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_1",
+                    "node_limit": 1000,
+                    "objective": "TOP_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 2,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_2",
+                    "node_limit": 1000,
+                    "objective": "BOTTOM_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      -1,
+                      -1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 3,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_3",
+                    "node_limit": 1000,
+                    "objective": "SEEDED_RANDOM_GRADIENT_0",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      1,
+                      -1,
+                      -1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  }
+                ],
+                "bank_size": 1,
+                "candidates": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "origin": "ALL_PLUS_EXACT_START"
+                  }
+                ],
+                "certificate": {
+                  "lower_bound": "-15/4",
+                  "signs": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "squarefree_count": 10
+                },
+                "column_diagnostics": [
+                  {
+                    "bank_column": 0,
+                    "cut": 14,
+                    "denominator": "1",
+                    "prime_pair_count": 12
+                  }
+                ],
+                "effective_dimension": 4,
+                "elapsed_seconds": 0.009993177023716271,
+                "floating_remainder_normalizer": 7.778846153846154,
+                "global_quadratic_maximum_proved": false,
+                "highs_threads_requested": 1,
+                "local_steps": 1,
+                "milp_node_limit": 1000,
+                "milp_work_per_node": 4608,
+                "native_environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "numerical_infeasibility_is_proof": false,
+                "ops": 18467870,
+                "original_boolean_coordinates_retained": true,
+                "predeclared_objectives": [
+                  "ALL_PLUS_GRADIENT",
+                  "TOP_EIGEN_SIGN_GRADIENT",
+                  "BOTTOM_EIGEN_SIGN_GRADIENT",
+                  "SEEDED_RANDOM_GRADIENT_0"
+                ],
+                "prospective_peak_bytes": 134848312,
+                "requested_milp_attempts": 4,
+                "requested_node_limit": 1000,
+                "seed": 17,
+                "status": "EXACT_COMPATIBLE_BANK_WITNESS_PROPOSAL",
+                "time_limit_per_milp": 1,
+                "u": 59,
+                "uniform_obstruction_proved": false,
+                "uniform_remaining_bound_proved": false,
+                "unknown_composite_signs_used": false
+              }
+            },
+            {
+              "after": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  }
+                ],
+                "pid": 1493994
+              },
+              "before": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  }
+                ],
+                "pid": 1493994
+              },
+              "elapsed_seconds": 0.6154476529918611,
+              "fresh_draw_computed": false,
+              "id": "tiny_native_1",
+              "independent_admissions": [
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                }
+              ],
+              "pid": 1493994,
+              "scientific_geometry_evaluated": false,
+              "status": "VERIFIED_TINY_NATIVE_WORKER_LAUNCH",
+              "tiny_parent": 59,
+              "unknown_Mobius_values_used": false,
+              "witness_report": {
+                "RH_proved": false,
+                "artificial_signs_not_actual_Mobius": true,
+                "attempts": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "name": "ALL_PLUS_EXACT_START",
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    }
+                  },
+                  {
+                    "name": "TOP_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-4"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "BOTTOM_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-12"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "SEEDED_RANDOM_GRADIENT_0_EXACT_START",
+                    "residuals": [
+                      "-8"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 0,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_0",
+                    "node_limit": 1000,
+                    "objective": "ALL_PLUS_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 1,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_1",
+                    "node_limit": 1000,
+                    "objective": "TOP_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 2,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_2",
+                    "node_limit": 1000,
+                    "objective": "BOTTOM_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      -1,
+                      -1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 3,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_3",
+                    "node_limit": 1000,
+                    "objective": "SEEDED_RANDOM_GRADIENT_0",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      -1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  }
+                ],
+                "bank_size": 1,
+                "candidates": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "origin": "ALL_PLUS_EXACT_START"
+                  }
+                ],
+                "certificate": {
+                  "lower_bound": "-15/4",
+                  "signs": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "squarefree_count": 10
+                },
+                "column_diagnostics": [
+                  {
+                    "bank_column": 0,
+                    "cut": 14,
+                    "denominator": "1",
+                    "prime_pair_count": 12
+                  }
+                ],
+                "effective_dimension": 4,
+                "elapsed_seconds": 0.01001461799023673,
+                "floating_remainder_normalizer": 7.778846153846154,
+                "global_quadratic_maximum_proved": false,
+                "highs_threads_requested": 1,
+                "local_steps": 1,
+                "milp_node_limit": 1000,
+                "milp_work_per_node": 4608,
+                "native_environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "numerical_infeasibility_is_proof": false,
+                "ops": 18467870,
+                "original_boolean_coordinates_retained": true,
+                "predeclared_objectives": [
+                  "ALL_PLUS_GRADIENT",
+                  "TOP_EIGEN_SIGN_GRADIENT",
+                  "BOTTOM_EIGEN_SIGN_GRADIENT",
+                  "SEEDED_RANDOM_GRADIENT_0"
+                ],
+                "prospective_peak_bytes": 134848312,
+                "requested_milp_attempts": 4,
+                "requested_node_limit": 1000,
+                "seed": 18,
+                "status": "EXACT_COMPATIBLE_BANK_WITNESS_PROPOSAL",
+                "time_limit_per_milp": 1,
+                "u": 59,
+                "uniform_obstruction_proved": false,
+                "uniform_remaining_bound_proved": false,
+                "unknown_composite_signs_used": false
+              }
+            },
+            {
+              "after": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  }
+                ],
+                "pid": 1493996
+              },
+              "before": {
+                "environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "loaded_pools": [
+                  {
+                    "architecture": "Zen",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libopenblas",
+                    "threading_layer": "disabled",
+                    "user_api": "blas",
+                    "version": "0.3.15"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.29"
+                  },
+                  {
+                    "architecture": "Haswell",
+                    "filepath": "/home/dbsanfte/riemann/.venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+                    "internal_api": "openblas",
+                    "num_threads": 1,
+                    "prefix": "libscipy_openblas",
+                    "threading_layer": "pthreads",
+                    "user_api": "blas",
+                    "version": "0.3.28"
+                  }
+                ],
+                "pid": 1493996
+              },
+              "elapsed_seconds": 0.6294320659944788,
+              "fresh_draw_computed": false,
+              "id": "tiny_native_2",
+              "independent_admissions": [
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                },
+                {
+                  "RH_proved": false,
+                  "actual_signed_drift_lower_bound_proved": false,
+                  "anchor_sign_exact": true,
+                  "artificial_signs_not_actual_Mobius": true,
+                  "bank_size": 1,
+                  "complete_arithmetic_bank_compatible": true,
+                  "cuts": [
+                    14
+                  ],
+                  "effective_dimension": 4,
+                  "fixed_operator_only": true,
+                  "lower_bound": "-15/4",
+                  "observed_full_source_values_used": false,
+                  "ops": 42279,
+                  "peak_bytes": 332970,
+                  "prime_pair_counts": [
+                    12
+                  ],
+                  "proof": "V^T s=0 and s_i^2=1 imply s^T Z s=0 for both VSV^T and symmetric mixed V partners; for Q>=0, Boolean price(R+Z+Q)>=s^T R s.",
+                  "source_kernel_binding_still_required": true,
+                  "squarefree_count": 10,
+                  "status": "VERIFIED_FINITE_ARITHMETIC_BANK_LOWER_BOUND",
+                  "u": 59,
+                  "uniform_growth_proved": false,
+                  "uniform_obstruction_proved": false,
+                  "uniform_original_source_bound_proved": false,
+                  "uniform_remaining_bound_proved": false,
+                  "uniform_source_bound_proved": false,
+                  "unknown_composite_signs_used": false,
+                  "unrestricted_signed_and_mixed_zero_plus_PSD_grammars_bound": true,
+                  "zero_identity_rule_verified_for_all_u": true
+                }
+              ],
+              "pid": 1493996,
+              "scientific_geometry_evaluated": false,
+              "status": "VERIFIED_TINY_NATIVE_WORKER_LAUNCH",
+              "tiny_parent": 59,
+              "unknown_Mobius_values_used": false,
+              "witness_report": {
+                "RH_proved": false,
+                "artificial_signs_not_actual_Mobius": true,
+                "attempts": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "name": "ALL_PLUS_EXACT_START",
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    }
+                  },
+                  {
+                    "name": "TOP_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-4"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "BOTTOM_EIGEN_SIGN_GRADIENT_EXACT_START",
+                    "residuals": [
+                      "-12"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "name": "SEEDED_RANDOM_GRADIENT_0_EXACT_START",
+                    "residuals": [
+                      "-8"
+                    ],
+                    "status": "EXACT_BANK_INCOMPATIBLE"
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 0,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_0",
+                    "node_limit": 1000,
+                    "objective": "ALL_PLUS_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 1,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_1",
+                    "node_limit": 1000,
+                    "objective": "TOP_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 2,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_2",
+                    "node_limit": 1000,
+                    "objective": "BOTTOM_EIGEN_SIGN_GRADIENT",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      -1,
+                      -1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  },
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "highs_threads_requested": 1,
+                    "local_search": {
+                      "anchor_never_flipped": true,
+                      "final_lower_bound": "-15/4",
+                      "flips": [],
+                      "initial_lower_bound": "-15/4"
+                    },
+                    "max_integer_rounding_deviation": 0.0,
+                    "milp_attempt": 3,
+                    "mip_gap": 0.0,
+                    "mip_node_count": 0,
+                    "name": "MILP_3",
+                    "node_limit": 1000,
+                    "objective": "SEEDED_RANDOM_GRADIENT_0",
+                    "objective_scale": 1.0,
+                    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                    "solver_status": 0,
+                    "start_signs": [
+                      1,
+                      -1,
+                      -1,
+                      1
+                    ],
+                    "status": "EXACT_COMPATIBLE_CERTIFICATE",
+                    "time_limit": 1,
+                    "unrefined_certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "warnings": [
+                      "Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim."
+                    ]
+                  }
+                ],
+                "bank_size": 1,
+                "candidates": [
+                  {
+                    "certificate": {
+                      "lower_bound": "-15/4",
+                      "signs": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "squarefree_count": 10
+                    },
+                    "origin": "ALL_PLUS_EXACT_START"
+                  }
+                ],
+                "certificate": {
+                  "lower_bound": "-15/4",
+                  "signs": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "squarefree_count": 10
+                },
+                "column_diagnostics": [
+                  {
+                    "bank_column": 0,
+                    "cut": 14,
+                    "denominator": "1",
+                    "prime_pair_count": 12
+                  }
+                ],
+                "effective_dimension": 4,
+                "elapsed_seconds": 0.01075597299495712,
+                "floating_remainder_normalizer": 7.778846153846154,
+                "global_quadratic_maximum_proved": false,
+                "highs_threads_requested": 1,
+                "local_steps": 1,
+                "milp_node_limit": 1000,
+                "milp_work_per_node": 4608,
+                "native_environment": {
+                  "MKL_NUM_THREADS": "1",
+                  "NUMEXPR_NUM_THREADS": "1",
+                  "OMP_NUM_THREADS": "1",
+                  "OPENBLAS_NUM_THREADS": "1",
+                  "VECLIB_MAXIMUM_THREADS": "1"
+                },
+                "numerical_infeasibility_is_proof": false,
+                "ops": 18467870,
+                "original_boolean_coordinates_retained": true,
+                "predeclared_objectives": [
+                  "ALL_PLUS_GRADIENT",
+                  "TOP_EIGEN_SIGN_GRADIENT",
+                  "BOTTOM_EIGEN_SIGN_GRADIENT",
+                  "SEEDED_RANDOM_GRADIENT_0"
+                ],
+                "prospective_peak_bytes": 134848312,
+                "requested_milp_attempts": 4,
+                "requested_node_limit": 1000,
+                "seed": 19,
+                "status": "EXACT_COMPATIBLE_BANK_WITNESS_PROPOSAL",
+                "time_limit_per_milp": 1,
+                "u": 59,
+                "uniform_obstruction_proved": false,
+                "uniform_remaining_bound_proved": false,
+                "unknown_composite_signs_used": false
+              }
+            }
+          ],
+          "wrapper_module": "run_mobius_arithmetic_bank_retry_086"
+        }
+      ],
+      "old_science_replayed": false,
+      "scientific_geometry_evaluated": false,
+      "status": "PASS",
+      "tests_run": 2,
+      "tiny_development_geometry_evaluated": true
+    }
+  ],
+  "schema": "native-launch-regression-086-v1",
+  "status": "PASS"
+}

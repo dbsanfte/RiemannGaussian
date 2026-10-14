@@ -1,0 +1,26 @@
+{
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-gap-profile-results/pilot-001",
+  "source_sha256": {
+    "protocol.json": "014aea4dc7bfade751b7ea6d72b9a3628ed618587276792582760afafe84038a",
+    "seal.json": "0f714bc99b698d7ad893108b0ba406e64225ddfb0f2dc249c5602d7441ac40ed",
+    "proof_queue.json": "a5743261b09e76b3111d79ff7771156126f5c9bcb7eac2d8f1e7939d84020fe0",
+    "candidate_batch.json": "361ef5dc2f35f75c14c39863fba882602952e3adce9ab6dac126ac7b1e9026a8",
+    "validation.json": "ae2f545372a5cf0223bb679b5da58706dd0cf6e6d5516588e55bd084607006eb",
+    "final_evaluation.json": "bb7a44425f36f013b37557100590c9ba6e8bbdf4b46a3218163bd9f3348d0b86",
+    "verification.json": "a3e656ecd02f10de24122280944407cca2769330b8a6331be66fa0343cb9d0b3",
+    "analytical_review.json": "4c8efdedd56f5a22ea3fb7a12f7b2970a9cb878b35930cc4fb6bfc6f5beec124",
+    "analytical_verification.json": "a5ca71627e297266b2d8805661509626f8722a14708df64a274cb1cd9661aa07"
+  },
+  "code_sha256": {
+    "signed_gap_cofinal_audit.py": "55326bf9047f3de2305e3460f74c21c97409cac4b9ab6f887fb963faa489353e",
+    "check_signed_gap_cofinal.py": "eb1d06ce9f1839279a7363096fe7c42b0365fa695e04d4a3619784b808c353c0",
+    "signed_gap_cofinal_report.py": "8d1a34ae19b81f2b784875339606e839c2bb57cf60eb9d6612b2d5efa692dfb3",
+    "signed_gap_cofinal_proof.txt": "dbc6563bbca3ea6a3716876d4565d8b5e6184c4df81ca5f16785da651b94e126",
+    "test_signed_gap_cofinal_contracts.py": "7c4a1ef4fd1761165fd1e81c7e4e5c71ebd877456e113d8ec6ff816d6460e892"
+  },
+  "uses_original_frozen_cases_for_analytic_counterexamples": true,
+  "original_candidates_and_fits_unchanged": true,
+  "new_holdout_or_discovery_claimed": false,
+  "proof_quantifier": "one fixed dyadic scale fails for every parameter beyond an explicit finite threshold",
+  "RH_proved": false
+}

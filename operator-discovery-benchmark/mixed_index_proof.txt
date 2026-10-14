@@ -1,0 +1,315 @@
+MIXED ADDITIVE / DIVISOR INDEX SEARCH: PROOF AND SCOPE
+
+Status: written universal proofs with independent exact and Arb witnesses.
+This is not machine formalization. Historical originality of the specific
+prime-binary application is unresolved. No estimate establishing RH is
+proved, and this candidate is not on the verified-historically-new list.
+
+1. Units, index laws and finite coefficient computations
+
+All arithmetic arrays have indices n>=1, with index zero unused. D denotes
+ordinary Dirichlet convolution, with unit delta_1. To compare it with
+additive convolution, place f(n) at additive degree n-1. Thus
+
+  (f A g)(n) = sum_(i+j=n+1) f(i)g(j).
+
+Its unit is also delta_1 after this explicit reindexing; the raw additive
+unit is delta_0. A factors of augmentation degree at least one cannot
+contribute to coefficient n after n-1 factors. The D bound floor(log2 n)
+is not an A bound. Indeed LOG_A(delta_1+delta_2)(16)=1/15, whereas using
+the D termination bound gives zero. The index-offset grammar uniquely
+recovers i+j-1 when the unit is fixed at delta_1.
+
+Write S(n) for the set of occupied binary positions of n-1 and k(n)=|S(n)|.
+Let C be carry-free shifted additive convolution:
+
+  (f C g)(n) = sum_(T subset S(n)) f(1+v(T))g(1+v(S(n)\T)),
+  v(T) = sum_(j in T) 2^j.
+
+This is classical subset convolution on finite bit sets. It is associative,
+commutative and unital: a q-fold product sums over ordered disjoint
+decompositions of S(n). All decompositions involve indices at most n,
+so every coefficient of a formal LOG/EXP is finite and prefix stable.
+At coefficient n the augmentation ideal is nilpotent above k(n) factors.
+Formal LOG_C and EXP_C are mutually inverse on the normalized unit group.
+The grading k(n) is additive on allowed products, giving the Euler
+recursion used by the production implementation. Anchored set partitions
+give the independent implementation.
+
+Define the invertible diagonal map
+
+  (M f)(n)=f(n)/k(n)!.
+
+Transport C by M to a product B:
+
+  f B g = M((M^-1 f) C (M^-1 g)).
+
+An allowed split of k bits into a and k-a bits has weight
+a!(k-a)!/k!=1/binomial(k,a). B remains associative and has unit delta_1.
+The general grammar M^post EXP_C M^pre LOG_D is consequently an exact
+unit-group isomorphism from D to the product transported by M^post;
+its inverse is EXP_D M^-pre LOG_C M^-post. These facts follow from formal
+LOG/EXP and transport, rather than from agreement on finite samples.
+
+2. Selected candidate and its exact meaning
+
+The selected program is
+
+  N_beta(f) = M EXP_C(beta LOG_D(f)),       f(1)=1.
+
+N_1 is invertible with inverse EXP_D LOG_C M^-1. It satisfies
+N_1(f D g)=N_1(f) B N_1(g), and
+N_alpha(f) B N_beta(f)=N_(alpha+beta)(f). Thus N_(1/q) is a q-th root
+of N_1 under B. Neither statement identifies it as a D root or as the
+pointwise q-th root of its Dirichlet series.
+
+For the zeta input u(n)=1, put g=LOG_D(u). On Re(s)>1 its Dirichlet
+series is the normalized log(zeta(s)), and its exact coefficients are
+
+  g(n)=1/r if n=p^r for a prime p and r>=1; otherwise g(n)=0.
+
+No prime-power locations are supplied to the native-zeta decoder. Its
+finite value-set prior, however, is this classical fact, so the decoder
+is a calibrated recovery experiment and is not assumption-free learning.
+
+For n>=2 the candidate has the universal coefficient law
+
+  F_beta(n) = 1/k(n)! sum_(partitions pi of S(n))
+                  product_(T in pi) beta g(1+v(T)),
+  F_beta(1)=1.
+
+Equivalently, only partitions whose block value plus one is a prime power
+contribute, and that block contributes beta divided by its prime-power
+exponent. Expansion of EXP_C proves the formula: for l nonempty blocks,
+the l! possible orders cancel the exponential denominator l!.
+
+This operation uses actual additive prime-power locations. For example,
+F_1(7)=1 but F_1(11)=3/4, although both inputs are prime and both n-1
+have two occupied bits. Swapping the prime labels 7 and 11 fixes u but
+does not fix N_1(u), so the operation is not invariant under arbitrary
+relabeling of the free prime monoid.
+
+The ordinary-root negative control is exact. At n=6,
+F_(1/2)(6)=1/8, whereas the D half-root of F_1 has coefficient zero.
+This distinguishes the two products before any analytic inference.
+
+3. A learned v2 recurrence, now proved for all indices and parameters
+
+When n is even, bit zero lies in S(n). In an admissible partition, the
+unique block containing bit zero has an even value plus one. The only
+even prime powers are 2^r, so this block must have value 2^r-1: a prefix
+of r occupied bits. It is contained in S(n) exactly when r<=v2(n).
+Removing it leaves mask n-2^r, containing k(n)-r occupied bits. Hence
+
+  F_beta(n) = sum_(r=1)^v2(n) (beta/r)
+              ((k(n)-r)!/k(n)!) F_beta(n-2^r+1),   n even.
+
+This is a polynomial identity in complex beta. The empirical grammar
+scored 384 recurrences; 12 fitted the four training powers of two at
+beta=1, and precisely this rule survived all fresh even indices through
+1024 at beta=1/2,1/4,2/3. The partition argument supplies the universal
+proof; the finite search alone does not.
+
+When S(n) has one bit, its only partition has one block, so
+F_beta(2^j+1)=beta g(2^j+1). The separately evaluated j=0,...,20 controls
+test this exact sparsity law without pretending a finite dense array
+reaches all those indices.
+
+4. Finite ordinary-zeta roots and the carry-free root-order limit
+
+Let d_alpha=u^(D alpha), the classical fractional divisor coefficients.
+For real beta in [0,1] and positive integer q set
+
+  L_(q,beta) = M (d_(beta/q) C ... C d_(beta/q)), with q factors.
+
+At a nonunit prime power, d_alpha(p^e)=alpha(alpha+1)...(alpha+e-1)/e!
+lies between zero and alpha when 0<=alpha<=1. Multiplicativity gives
+0<=d_alpha(n)<=alpha for every n>1. A partition pi with l blocks
+contributes (q)_l product_(T in pi) d_(beta/q)(1+v(T))/k(n)!, where
+(q)_l=q(q-1)...(q-l+1). This contribution is at most beta^l/k(n)!.
+For fixed n, q*d_(beta/q)(n) tends to beta*g(n), by formal expansion of
+EXP_D((beta/q)g). Therefore L_(q,beta)(n) tends to F_beta(n).
+
+The bound just proved is uniform in q and beta in [0,1]. Section 5 gives
+a summable majorant on every Re(s)>=sigma>0. Dominated convergence
+therefore upgrades the coefficient limit to local-uniform convergence
+of Dirichlet series throughout Re(s)>0, not merely Re(s)>1. This claim
+is restricted to the stated real parameter interval. The finite q
+profiles are verification witnesses; the proof is the uniform majorant.
+
+5. Universal domain theorem for the zeta input
+
+Let B_k(lambda)=sum_(partitions of a k-element set) lambda^(number of blocks)
+be the weighted Bell polynomial. Its entire generating function is
+
+  sum_(k>=0) B_k(lambda) z^k/k! = exp(lambda(e^z-1)).
+
+This follows by the classical labelled-set partition expansion. For
+lambda>=0 and any R>0, positivity at z=R implies
+
+  B_k(lambda)/k! <= C_R/R^k,
+  C_R=exp(lambda(e^R-1)).
+
+For |beta|<=lambda the partition formula gives
+|F_beta(n)|<=B_(k(n))(lambda)/k(n)!. The same bound holds uniformly for
+the finite root lifts in section 4 with lambda=beta or lambda=1. At
+beta in [0,1], it also implies 0<=F_beta(n)<=B_k(1)/k!<=1: inject each
+set partition into a permutation by turning each increasingly ordered
+block into a cycle. This last bound alone would only give Re(s)>1;
+the entire generating function gives the stronger result below.
+
+In the mask row 2^J<=n-1<2^(J+1), exactly binomial(J,k-1) indices have
+k occupied bits. Its total coefficient majorant is at most
+
+  (C_R/R)(1+1/R)^J.
+
+For Re(s)>=sigma>0, multiplication by n^-sigma bounds this row by
+(C_R/R) Q^J, where Q=2^-sigma(1+1/R). Choose R>1/(2^sigma-1), so Q<1.
+It follows that the series
+
+  F_beta(s)=sum_(n>=1) F_beta(n)n^-s
+
+converges absolutely and locally uniformly on Re(s)>0, uniformly for
+beta in every compact complex set. Each coefficient is a polynomial
+in beta. Thus F is jointly holomorphic there and entire in beta. The
+tail after n=2^K is at most (C_R/R)Q^K/(1-Q). This proves the precise
+domain used in the analytic and actual-zero certificates. No corresponding
+growth claim for arbitrary input f, or for the raw unnormalized C transfer,
+is inferred from it.
+
+For the grammar variants with pre>=0 and post>=1, the extra factorial
+denominators only decrease this partition majorant. This proves their
+positive-half-plane certificates too; the other finite growth observations
+remain observations without a claimed universal domain theorem.
+
+The independent verifier refines the tail by summing eight exact Bell
+row masses, then bounding the remaining rows at a different radius. Its
+source calculation instead uses the simple geometric bound above.
+
+6. Two calibration transfers that expose invalid zeta bridges
+
+The unnormalized additive transfer U=EXP_A LOG_D sends u to an ordinary
+generating function
+
+  U(z)=exp(beta sum_(p prime,r>=1) z^(p^r-1)/r),  0<=z<1.
+
+For any beta>0 it has no convergent Dirichlet half-plane. To prove this,
+suppose its Dirichlet series converged at one s. Its terms would tend
+to zero, bounding the positive coefficients by C*n^K for some K>=0.
+Consequently log U(z)=O(log(1/(1-z))) as z tends to 1. At z=exp(-1/x),
+the prime terms p<=x give log U(z)>=beta*pi(x)/e. This would force
+pi(x)=O(log x). Partial summation would then make sum_p 1/p finite.
+But that sum diverges: otherwise the finite Euler products would be
+uniformly bounded, contradicting H_N<=product_(p<=N)(1-1/p)^-1 and
+H_N tending to infinity. This uses no prime number theorem.
+
+The reverse transfer V=EXP_D LOG_A has a very different domain. Since
+the additive generating function of u is 1/(1-z), its A logarithm has
+coefficient h(n)=1/(n-1), n>=2. Its Dirichlet series is
+
+  V(s)=exp B(s),
+  B(s)=sum_(n>=2) n^-s/(n-1)=sum_(k>=1)(zeta(s+k)-1),  Re(s)>0.
+
+The last equality follows from 1/(n-1)=sum_(k>=1)n^-k. The shifted-zeta
+series continues normally on compact subsets away from 0,-1,-2,...:
+its sufficiently late terms are bounded by a convergent geometric series.
+At each excluded point B has one simple pole with residue one, so V has
+an isolated essential singularity. Everywhere else V is holomorphic and
+zero-free. In particular its formal group inverse does not preserve
+actual zeta zeros. Positive coefficients give sum_n V(n)/n=exp B(1)=e,
+and the Rankin tail at sigma>1 is at most e*N^(1-sigma).
+
+For an independent native reference, rearranging one shifted term gives
+
+  B(s)=zeta(s+1)-1 + sum_(n>=2) n^-s/[n(n-1)].
+
+Its correction tail after N is at most 2*N^(-sigma-1)/(sigma+1) for
+sigma>0. This is distinct from the production reference's 48 shifted
+native zeta values and geometric tail.
+
+7. Native-zeta recovery and the two representations
+
+For s_in=2048+i*t the source begins with Arb's native log(zeta(s_in)).
+After already certified coefficients below n have been subtracted,
+multiplication by n^s_in leaves g(n) plus an unknown tail of magnitude
+at most
+
+  (n/(n+1))^2048 * (1+(n+1)/2047).
+
+This follows from 0<=g(m)<=1 and the decreasing-series integral bound.
+Distances to all values 0,1/e, e<=floor(log2 n), uniquely isolate the
+exact rational g(n), inductively. The normalized log branch is unambiguous
+at this real part because zeta is extremely close to one. The source
+recovers through 64 at 16384-bit precision; the independent decoder
+uses real part 1024, 10240 bits, cutoff 128, recomputed exact prefixes,
+reversed candidate order, and eight explicit tail terms before an integral.
+
+Applying the selected transform to these native-origin coefficients
+matches independent arithmetic coefficients through the common cutoff.
+Six fresh complex output points compare their sums with proved infinite
+Bell tails. This establishes a native-input coefficient bridge. It is
+not a claimed closed scalar formula F_beta(s)=H(zeta(s)) at those points.
+At the same six points V has a separate direct scalar shifted-zeta
+comparison. The independent checks change arithmetic cutoffs, native
+references and tail bounds; both implementations reject a perturbation
+of the n=2 coefficient, with the independent perturbation smaller.
+
+These are six comparison cases with two tested operations in each, not
+twelve newly certified zeta zeros or twelve independent scalar formulas
+for F. All coefficient uniqueness and complex comparisons use Arb balls.
+
+8. The actual zeta root issue
+
+The existing authoritative certificates isolate simple critical-line
+zeta zeros near heights 14.1347251417 and 21.0220396388. We reuse those
+certificates and run new controls for these operations on the full disks.
+The geometric Bell ratio is below one with R=4 in the source and R=3
+independently at the disks' minimum real parts. Section 5 therefore
+certifies F_beta holomorphic across both disks for every beta. No finite
+F sum there is called a converged numerical value. For V, two different
+native formulas give a strictly positive modulus lower bound over each
+disk, certifying loss of the original zeta zero directly.
+
+At a simple zeta zero rho, an ordinary fractional power zeta(s)^beta
+has monodromy exp(2*pi*i*beta). For beta not an integer, multiplication
+by a nonzero holomorphic correction on that disk cannot remove it.
+F_beta is single-valued holomorphic there and is not identically zero
+(its series tends to one as real s tends to infinity). Thus it cannot
+equal that fractional zeta power times such a correction across the disk.
+This conclusion does not require knowing whether F_beta(rho) is zero.
+The exact D/B counterexample in section 2 gives a separate algebraic
+reason to reject equating the two kinds of root.
+
+An unconditional critical-strip convergence theorem for these typed
+roots consequently supplies no RH test by itself. We prove no zero-free
+region for F and no new estimate about zeta zeros. A later construction
+would need a rigorously controlled relationship to ordinary zeta roots,
+not just an algebraic fractional-power identity in B.
+
+9. Prior art and reproducible verification
+
+Subset convolution is classical; Bjorklund, Husfeldt, Kaski and Koivisto,
+Fourier meets Mobius: fast subset convolution (2006 preprint), explicitly
+define the identical bit-set product. Bell partition generating functions
+are classical, as are formal arithmetic LOG/EXP and diagonal transport.
+The prime-binary application, its v2 recurrence and the positive-half-plane
+domain theorem are verified here as compound arithmetic consequences.
+The reviewed sources do not establish their precise publication history.
+Failure to find a match does not certify a historically new operator.
+
+Primary references used for the known components:
+https://arxiv.org/abs/cs/0611101
+https://dlmf.nist.gov/26.7.E5
+https://dlmf.nist.gov/26.7.E6
+The earlier registry sources cover arithmetic LOG/EXP and zeta zeros.
+
+Reproduce the new stage, without rerunning unchanged baselines:
+  ../.venv/bin/python mixed_index_search.py
+  ../.venv/bin/python check_mixed_index.py
+  ../.venv/bin/python mixed_index_analytic.py
+  ../.venv/bin/python check_mixed_index_analytic.py
+
+Independent checks use anchored partitions versus Euler recursions,
+full additive polynomial expansions versus graded recursions, independent
+triangular divisor algebra, and changed native-zeta/tail representations.
+Results and rejection witnesses are saved in mixed-index-results/.

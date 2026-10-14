@@ -1,0 +1,128 @@
+BOUND MECHANISM SYNTHESIS: FINITE MULTISCALE CAPABILITY AND ARITHMETIC LIMIT
+Design review, stage034. This is a new design record, not a modification of
+the accepted moment/component certificates or an RH proof.
+
+1. What this capability adds
+
+The prior bound-program searches synthesized coefficients, scales and moment
+allocations in supplied argument families. The autonomous system inferred
+sample relations and promoted structural macros, but its global proof backend
+was essentially polynomial identity checking. Neither capability demonstrated
+invention of both a missing auxiliary state and a quantified induction proof.
+The present bounded task can demonstrate that narrower missing capability.
+
+Start with an anonymous scalar source x and base b. Enumerate actual sections
+x(b^k n+r), initially x itself. Rational sample relations only propose closure.
+If a proposed relation fails at a checked index, add the index and re-expand.
+If a universally checked relation fails, its witness may trigger the same
+structural expansion. The resulting state topology is discovered, not supplied
+as an answer. A second search synthesizes a metric and rational prefix exponent.
+This remains a specific section grammar, not invention of arbitrary mathematics.
+
+2. Source and proof interfaces
+
+A recursive calibration source has rational matrices M_r, initial vector v_0
+and scalar output t, with v(bn+r)=M_r v(n). Require M_0 v_0=v_0 and row L1
+norm at most one. Thus every state coordinate is bounded by ||v_0||_infinity
+for every integer n, with no observed-value bound substituted for this proof.
+The generator sees only b, a coefficient envelope B and a callable x(n).
+The independent checker sees the complete hidden model. It proves proposed
+section relations on its entire reachable linear space, including n=0.
+Numerical fitting, validation samples and exhaustion of a finite query set
+are never universal closure certificates.
+
+After closure, write phi(bn+r)=T_r phi(n). Every phi coordinate remains a
+section of x; it is not a free auxiliary trajectory. Let A=sum_r T_r and
+P(n)=sum_{0<=k<n} phi(k). Under closure at n=0,
+ P(bn+r)=A P(n)+sum_{j<r} T_j phi(n).
+If closure is only valid for positive n, the missing unit correction is
+ e=sum_{j<b}[phi(j)-T_j phi(0)],
+and e must be added to this identity. It cannot be inferred to vanish.
+
+Coefficient-state contractivity alone proves no summatory cancellation. It is
+the block-sum A, or an exactly recoverable projection of A, that must be bounded.
+The current implementation searches the target-observable row space R with
+R A=L R, retaining the target row. It then searches rational alpha=p/q and
+positive definite Q satisfying
+ (L^q)^t Q L^q <= b^(2p) Q.
+Exact rational PSD elimination, phase costs for powers below q, the projected
+source envelope, and all digit remainders give arbitrary-integer prefixes.
+No spectral radius rounded from floating point is a proof. A singular metric
+would require a separate exact target-domination certificate; the current
+positive-definite choice avoids that additional admission condition.
+
+A simple alternative certificate illustrates the logic: if A^t Q A<=lambda^2 Q
+with lambda>1, bounded digit forcing yields ||P(n)||_Q=O(n^log_b lambda).
+All finite initial values and the geometric forcing sum are in the constant.
+At lambda=1 the nonzero forcing produces a logarithm; it cannot be discarded.
+Thus a checked block exponent alpha gives prefix energy O(X^(2alpha-1)),
+up to a paid logarithm at zero exponent. This statement concerns all integers,
+not only complete aligned blocks. The implementation's observable projection
+can retain useful cancellation even if an invisible companion has linear growth.
+
+3. Search and certificate boundary
+
+The proof object must include section ASTs, proposed and rejected relations,
+training/validation queries, universal counterexamples, exact transition rows,
+observable projection, metric, exponent and finite recovery constants. Search
+limits are explicit. A resource stop excludes no larger or parameter-dependent
+state grammar. Sample-equivalent states cannot be universally merged until the
+source checker proves their equality. CEGIS expansion is a search heuristic;
+its countermodels do not turn the eventual missing relation into a theorem.
+
+Potential generalizations are signed products through tensor closure, mixed
+outputs, parameter-dependent matrix pencils and polynomial digit moments. Each
+needs exact global source closure and appropriate source-growth accounting.
+Fractional n weights and prime predicates typically yield n-dependent updates;
+a constant-matrix fit must not be admitted for them. These are future grammar
+extensions, not silently implemented features of this experiment.
+
+4. Withheld solvable calibration
+
+Freeze the generator, independent checker and protocol before materializing
+the challenge instances. Models and expected truth labels remain private.
+Provide varied bases, coupled signed channels, nontrivial fractional growth,
+noncancelling sources and long transients. The model contract bounds dimensions
+and rational sizes. The generator receives neither companions nor a successful
+metric/exponent. Negative controls must reject false finite closures or certify
+their actual linear-prefix scale rather than invent cancellation.
+
+The benchmark author knows the grammar. Consequently successful calibration
+means implementation-level auxiliary-state and global-bound synthesis in that
+grammar. It is not analyst-blind novelty, independent discovery of an unknown
+theorem, or an estimate of the probability of solving RH. One-state ablation
+can test whether state invention, rather than a supplied scalar trick, mattered.
+Challenge creation after freeze is a procedural condition enforced by the
+runner; a function's frozen=True argument alone is not proof of a frozen run.
+
+5. Original-source attempt and complete target
+
+The actual source adapter reads only the previously verified complete archived
+core f, including the unit. It supplies x(n)=f(n+1). The four signed modes are
+ f=(9/2)K*(mu*mu)-(9/2)K*(mu*mu_(2/3))
+   -R_u K*mu_(2/3)-(9/2)mu, K(n)=n^(-1/3).
+This direct full-core route is a sufficient alternative target. It neither
+numerically isolates the stage033 residual nor discards a transport correction,
+paid term or opposite centering drift from an inherited decomposition. Parent
+links remain candidate10_moment_region_obligation.json and its complete source.
+The archived Arb enclosures are observations, not exact rational coefficients.
+The source has no supplied finite recursive model. A fitted closure is OPEN
+until an actual arithmetic proof is provided. Finite-dimensional constant
+section closure may simply be unsuitable for primes; failure is useful evidence
+about this grammar, not a disproof of any larger arithmetic mechanism.
+
+6. Adapter implementation scope
+
+New adapter APIs: validate_model(model,meter=None),
+evaluate_model(model,n,meter=None), model_source(model,meter=None), and
+load_complete_core(path,H,meter=None)->(callable,metadata). Exact recursive
+model evaluations return Fraction. Archive values return finite Arb enclosures
+at preserved precision; indices outside the declared horizon are rejected.
+create_challenges(directory,seed,meter=None,*,frozen=True) may be called only
+after the runner has frozen the proof sources. It writes model definitions and
+separate posthoc truth labels, never hidden data into the generator's spec.
+No challenge instance or new arithmetic observation was produced for this review.
+
+Status: design rules supplied by analysis; state construction, closure proposals,
+metrics and exponents searched by the executable. Universal closure/invariant
+checking supplies the global theorem. Actual-source closure and RH remain OPEN.

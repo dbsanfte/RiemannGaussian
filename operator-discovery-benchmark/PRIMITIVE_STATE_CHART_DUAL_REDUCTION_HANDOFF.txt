@@ -1,0 +1,112 @@
+Publication031: stronger exact reduction of the conic separator equations
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-reduction-001
+
+Outcome
+REDUCTION_VERIFIED, search_status UNKNOWN. The sole independent auditor
+replayed every exact step and verified the complete reduced equations and
+column dispositions. The native proposal reached250 iterations and returned
+no vector. No exact support restoration or separator verification ran.
+No primal feasibility, finite-cone infeasibility, signed arithmetic bound,
+universal operator identity or RH proof was obtained.
+
+New exact evidence
+The previously verified317-row/695-column system reduces to302 rows and
+687 columns. The606-step trace contains604 exact augmented pivots over
+two rounds, one batch of zero-row removals and one closed homogeneous
+component deletion. The removed dual column POSITIONS in the030 compressed
+system are289,290,291,292,298,299,300,301. They can be chosenzero in a
+lift because their target component is homogeneous; they are not proved
+forcedzero in every solution. No new forced-zero dual weights were found.
+
+The reducer supports exact same-sign homogeneous-row propagation, closed
+zero-target component removal, and deterministic sparse Markowitz forward
+elimination. No nonnegative variable was replaced by an unrestricted pivot
+coordinate. RHS entries participated in every row operation. The complete
+trace, final equations and original column ids are in jobs/reduction.json.
+Original030 scalar-face conclusions remain available and unchanged.
+
+fixed_point=true records the producer's unchanged-active-column stopping
+rule. The independent result proves finite equivalence of the saved steps;
+it does not certify maximal reduction, rank or irreducibility. No row with
+zero coefficients and nonzero RHS occurred. Such a row, if found later,
+would exclude only the selected851-ray target representation and would not
+prove primal-cone infeasibility.
+
+Numerical result and resources
+One old030 native helper call used the NEW reduced equations and the declared
+160m allocation, presolveFalse, highs-ds and one thread. The reduced dimensions
+fixed K=250 before scaling. Its message was Iteration limit reached, status1,
+with no vector. The unfinished primal_status=Infeasible is not a proof.
+The proposal stage took0.435167s including setup/import overhead. This is
+not a measurement of the solver's floating-point operation count.
+
+The native dimension-only reservation was159,976,588:4,431,456 preparation,
+27,543,608 initial-factorization proxy,250*506,152 pivot proxy,1,463,524
+transport proxy. Charged native work155,619,787 uses consumed preparation
+in place of its whole reservation. These are declared dense work proxies.
+Memory and wall time were not the binding restrictions.
+
+Producer13.219097s wall/13.217485s CPU, peakRSS113972KiB, one thread;
+enclosing worker stage13.350401s. Reduction11,770,271 charged operations,
+peak110080 live cells/502bits. Native peak136761 cells/540bits. Independent
+replay507,602 operations, peak167748 cells,0.774307s wall/0.774197s CPU,
+process peakRSS496896KiB. Independent input-I/O229,442 units on7,341,604bytes.
+Charged research total167,897,660 before preparation, within the combined
+450m reservation. No restoration allowance was consumed or reset.
+
+The complete allocation was40m preparation,100m exact reduction,160m native,
+70m exact restoration and80m sole independent audit. Worker and audit each
+had enforced6GiB boundaries,3600 cooperative seconds, one thread; producer
+external7200seconds. Result/temporary bit bounds4096/8193 and live-cell
+proxy6m were retained. A64MiB reduction cap allowed complete traces without
+unnecessary truncation. Actual reduction496891bytes, proposal3211bytes,
+review5940bytes; source snapshot23files/295742bytes. No hashes were generated.
+
+Testing and independent review
+The frozen combined suite passed33 tests in2.333s. Producer12 tests and
+checker11 tests use tiny generic exact systems plus one authentic full
+Farkas fixture; root10 tests cover workflow, resource and promotion rules.
+Same-sign propagation requires RHSzero. Component deletion distinguishes
+chosen zeros from forced zeros. Tests reject altered augmented pivots,
+incorrect dispositions, support lifts, negative pairing and scope claims.
+An underdetermined support of at most443 is allowed; free reconstruction
+coordinates are setzero. Final admission still needs the original851 ray
+weights,782 row multipliers and complete1224-coordinate exact identity.
+
+Sol6.1 producer/checker/reviewer agents handled these substantial parallel
+work items. Development tests consumed1,403,519 metered units; the frozen
+suite consumed another1,403,519. A1m root/scaffolding reserve makes the
+cumulative synthetic charge3,807,038, explicitly bound in protocol/tests/
+independent review below the common25m test allowance. There was no duplicate
+pre-freeze combined suite, actual research retry or second independent audit.
+All geometry/trace/input/final rows remained accounted as resident during
+inherited exact certificate calls. Review found no remaining mathematical
+blocker after support-policy and residency inconsistencies were resolved.
+
+Next research action
+This exact method produced a modest reduction, and another brief native
+attempt stopped at its declared iteration bound. Do not reset or restart
+031. Repeating the same row transformations has no demonstrated benefit.
+The reusable302x687 exact system is a better input for a different numerical
+proposal method with a work model based on sparse updates.
+
+One concrete next method is bounded coordinate descent on a nonnegative
+least-squares merit function, with a frozen positive L1 schedule to encourage
+small supports. Sparse residual/Gram updates can be charged explicitly rather
+than reserving a dense factorization-sized amount for every solver pivot.
+Declare normalization, update selection, penalty schedule, iteration/work
+limits and candidate-selection rules before any new response or score.
+Keep all strictlypositive support entries; never trim numerical entries into
+an asserted proof. Permit one bounded exact restoration of the selected
+support, followed by the same full original Farkas identity check. A floating
+residual or convergence fit is only a proposal, regardless of how small.
+
+If this fixed-generator search ultimately yields an exact separator, it
+excludes this augmented finite proof template; it does not refute an RH
+bound or all operator grammars. If it fails, PSD directions outside851
+selected rays remain possible. The real objective remains a valid operator
+with signed arithmetic control at all scales, including universal identity,
+uniform scalar and initial storage bounds, cofinal parameters and the
+ordinary-zeta bridge. This reduction is a reusable proof-search capability,
+not a substitute for those unresolved requirements.

@@ -1,0 +1,56 @@
+{
+  "RH_proved": false,
+  "exact_obstruction": {
+    "actual_arithmetic_refutation": false,
+    "gate_necessity_scope": "Only where the supplied subcubic/q>1 template argument establishes gamma0; at q1 gamma0 remains an imposed restriction.",
+    "independently_verified": true,
+    "native_reconstruction_elapsed_seconds": 3.0272110599908046,
+    "new_float_proposal": false,
+    "scope": "The same separator excludes the fixed full PSD factor shared cone with gamma0 auxiliary on [1,2,3,5], for every integer q>=1 and rational C>=0, and for arbitrary rational per-scale lhs scalar padding D_X.",
+    "status": "exact_separator",
+    "support_replayed": 420
+  },
+  "factor": {
+    "groups": {
+      "relations": 319,
+      "squares": 282
+    },
+    "normalization": "degree-one kernels divided by N",
+    "original_dual_status": "missing_resource",
+    "original_failures_preserved": true,
+    "original_training_statuses": [
+      "uncertified",
+      "missing_resource"
+    ],
+    "source_scale": "N=4X-1",
+    "templates": 44
+  },
+  "global_bound_proved": false,
+  "next_action": "search complete inverse-row/gcd pair multipliers and signed divisor-energy interactions; prove any accepted full template uniformly",
+  "previous_publication": "publication-002",
+  "prior_manifest_sha256": "74ad7e9e6dc4e3abb00f73555aaac361b58cc6511269fc4b3a8376c14d3608da",
+  "schema": 3,
+  "signed_gcd_projection": {
+    "actual_signed_values_substituted": false,
+    "fixtures": 6,
+    "is_PSD_bound": false,
+    "signed_weights_retained": true,
+    "supplied_identity_calibration": true,
+    "tests": 6
+  },
+  "sparse_lp_retry": {
+    "final_statuses": [
+      [],
+      [
+        "finite_certificate",
+        "missing_resource"
+      ]
+    ],
+    "finite_critical_certificate_found": false,
+    "grams_fixed_zero": true,
+    "training_statuses": [
+      "no_certificate_found",
+      "finite_certificate"
+    ]
+  }
+}

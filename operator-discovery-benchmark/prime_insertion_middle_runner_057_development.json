@@ -1,0 +1,15 @@
+{
+  "schema": "prime-insertion-middle-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 1536677,
+      "elapsed_seconds": 0.28573474404402077,
+      "stdout": "SYNTHETIC_WORK operations=1536677\n",
+      "stderr": "test_missing_used_source_is_not_zero (test_prime_insertion_middle_runner_057.IntegrationTests) ... ok\ntest_parent_recovery_matches_independent_checker (test_prime_insertion_middle_runner_057.IntegrationTests) ... ok\ntest_real_synthetic_middle_and_independent_source (test_prime_insertion_middle_runner_057.IntegrationTests) ... ok\ntest_transport_comparison_and_final_coverage (test_prime_insertion_middle_runner_057.IntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.012s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

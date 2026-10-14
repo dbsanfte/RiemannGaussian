@@ -1,0 +1,267 @@
+Free-coordinate search calibration and uniform operator bridge, version 1
+2026-10-09. Independent analysis only. No solver, arithmetic recompilation,
+elimination, frozen/published edit, promotion, or research score.
+
+Main result
+
+There is a cheap EXACT candidate diagnostic that can distinguish an elementary
+all-scale scalar route from an unresolved weighted-density route. Require the
+multiplier-one child_rowmass norm and prime-power families to cancel POINTWISE
+between their all/head/tail descriptor coefficients. Under this optional
+stronger gate, every remaining formal scalar except the removable constant
+square has an explicit O(X^2) elementary majorant. If the candidate's complete
+NONCONSTANT polynomial identity is separately proved for every required scale,
+then dropping that nonnegative constant square yields a q-independent innovation
+bound Delta(S_R)<=M X^2, and hence E(X)<=X^2[S_R(1)+(M/4)log_2 X] on dyadics.
+No finite endpoint, gamma-zero constraint, numerical precision setting, or
+closed finite polynomial compiler supplies the missing global identity.
+This is a conditional exact deduction, not an all-scale certificate found here.
+
+1. Gradient, curvature and precision audit
+
+Reviewed current primitive_state_free_cone_search.py functions forward(:66),
+adjoint(:86), coordinate_gradient(:111), power_operator(:119), merit_gradient
+(:123), calibrate(:148), propose(:160), exact_endpoint(:197). Line references
+identify functions as read; the active implementation may evolve before freeze.
+The sparse forward/adjoint signs and descending/ascending pivot traversal are
+correct for x=c+Nf. Upper-triangle matrix gradients correctly double offdiagonal
+entries; C receives C_-+4H_-, P receives H_-, with H=P+4C. The exact convex merit
+is half squared distance of the square/slack coordinates and C,H to their cones.
+It is differentiable even at zero or repeated eigenvalues. Its gradient is
+1-Lipschitz in the stacked cone coordinates, so N^T B^T B N is an exact positive
+semidefinite curvature MAJORANT operator. It is not the local Hessian, and eight
+power iterations estimate its norm without certifying an upper bound.
+Armijo backtracking is therefore justified as a proposal heuristic, not as an
+exact convergence or infeasibility argument.
+
+The implementation is MIXED precision. Sparse affine/adjoint arithmetic uses
+80 decimal digits/269 binary bits, but merit_gradient converts C,H to binary64
+and uses numpy.linalg.eigh(:132-141). The computed negative parts are then
+converted back to80-digit numbers. Thus the gradient and Armijo merit have
+binary64 spectral errors; the whole search is not an80-digit PSD projection.
+A small negative eigenvalue relative to a large matrix norm can be hidden by
+conversion/eigensolve error. Symmetrizing the numerical negative part is fine
+for proposals and does not license an exact PSD claim. Exact endpoint checks
+remain the only admissible sign/PSD decisions.
+
+The actual-map calibration checks one known exact parent point and one forward/
+adjoint dot pairing at relative1e-40. This is useful, but does not bound the
+whole operator norm, all later cancellation, or binary64 PSD-gradient error.
+The historical roughly1e32 absolute multiplier propagation is a caution, not
+a proven lower condition number. Eighty digits may leave substantial accuracy
+at some tested points; no such accuracy can be assumed for every search point.
+
+Useful fixed tests before a costly candidate search: an exact tiny forward/
+adjoint dot identity; a2x2 spectral negative-part/offdiagonal derivative test;
+a smooth-point directional finite difference; numerical eig reconstruction
+and negative/positive-part orthogonality diagnostics. For
+C=[[1,a],[a,1]], a>1, its negative eigenvalue is1-a, merit=(a-1)^2/2 and the
+upper-triangle offdiagonal derivative is a-1. At a=2 the negative part is
+[[-1/2,1/2],[1/2,-1/2]], giving derivative2*(1/2)=1. Test H composition as
+well so a missing factor4 cannot pass. For finite differences avoid declaring
+failure at nonsmooth eigenvector choices: squared cone distance is smooth,
+but naive derivative eigenvectors are not; fixed perturbations and error
+scales must be stated. Calibration failures are UNKNOWN, not grammar refutations.
+
+2. Cheap exact scalar gate: descriptor selectors and indices
+
+Use EFFECTIVE signed beta=x_plus-x_minus, not individual nonnegative split
+coordinates. Within the unchanged613-relation descriptor list select
+family in{'norm','prime_power'}, multiplier='one', weight='child_rowmass',
+region in{'all','head','tail'}. Exact zero-based positions are:
+    norm:       all9, head21, tail33;
+    prime_power:all45,head57,tail69.
+Let b_f,a,b_f,h,b_f,t be the corresponding rational weights. Define
+    alpha_f=b_f,a+b_f,h, tau_f=b_f,a+b_f,t.
+The sufficient pointwise-cancellation gate is
+    alpha_norm=tau_norm=alpha_prime_power=tau_prime_power=0.
+This requires FOUR rational checks, no new arithmetic source generation.
+It removes the entire multiplier-one child_rowmass polynomial combination
+for each selected family, not just its formal scalar. Other norm/prime relation
+multipliers are retained. This is an OPTIONAL sufficient route and may exclude
+valid uniform candidates using more delicate signed density cancellation; it
+is not a lossless reduction of all RH routes and is not imposed on the search.
+It is stronger than gamma=0, optional and explicitly not a necessity theorem
+for every legitimate all-scale proof. If it fails, preserve the candidate and
+label its weighted-density budget obligation unresolved, rather than declaring
+infeasibility. The detector can report this gate without imposing it on the
+current finite search.
+
+Proof: the complete all-region source partitions EXACTLY into head n<=2X and
+tail n>2X, using the same rowmass r_X(n)=sum_{t=max(2X,n)}^{4X-1}t and primitive
+polynomial. Therefore the effective kernel is alpha_f*r_X(n) on the head and
+tau_f*r_X(n) on the tail. The gate cancels the ENTIRE relation polynomials,
+including constants, at every X. It is not only asymptotic main-term matching.
+The vector(b_all,b_head,b_tail)=(t,-t,-t) is a universally zero column combination.
+
+By comparison gamma=-(12*alpha_norm+(20/3)*tau_norm). The exact pair
+(alpha_norm,tau_norm)=(5,-9) has gamma0 but a nonzero head/tail kernel.
+The existing elementary squarefree-density error then only gives O(X^(5/2))
+for this rowmass remainder, which does not furnish the desired X^(13/6) q6
+bound. Prime rowmass magnitudes can be O(X^3/log X), likewise too large.
+Neither statement disproves a favorable one-sided cancellation; they identify
+why gamma0 alone does not close the scalar proof.
+
+3. Explicit elementary majorant after this gate
+
+All coefficients below are fixed rationals, independent of X. Remove the sole
+constant-square weight a0 at square position0, whose polynomial is exactly1
+and whose internal weight is Z_q(X)=X^2 ceil(X^(1/q)). Write B0(X) for the formal
+constant of the remaining scalar/Gram/storage body, without per-instance slack.
+The following entirely rational M>=0 proves |B0(X)|<=M X^2 for all integerX>=1.
+
+Base195 relations: for each descriptor with family norm or prime_power,
+multiplier one and weight w other than child_rowmass, add
+    c_w*|beta_d|, c_one=4, c_X=4, c_defect_kernel=8.
+There are at most4X indices/prime powers and |J_X(n)|<=2X; higher mu prime powers
+have zero constant, so bounding by4X remains safe. Add the absolute unit,
+multiplier-one weight. All other old homogeneous scalar squares/multipliers,
+factor squares/closures, and divisor-localizer closures have zero formal
+constant and need no scalar magnitude estimate. This is formal extraction,
+not substitution mu1=1. Fixed cut/root/mask complexity introduces no extra
+constant in those homogeneous polynomials.
+
+Divisor cells: square positions312..365 and relation positions331..402.
+Let k_parent=1,k_child=2. For each cell square descriptor add k_r*a_d/4.
+For each cell relation descriptor add |c_form*k_r*beta_d|, with
+    c_one=-1,c_prefix=0,c_contrast=1/2,c_normalization=1.
+These are the exact scalar ledger in cancellation_divisor_cell_language.py
+:123-133, because the number of regional t rows is k_r*X. Each contribution
+is O(X), hence bounded by the stated coefficient times X^2 forX>=1.
+All cell powers/cuts use the same ledger; no divisor count estimate is needed.
+
+Matrices in canonical quotient: add
+    M_matrix=|z^T H z-2*z^T C z|,
+    z=(1,0,0,0,0,0,-1/2,...,-1/2).
+The exact matrix constant is X times this signed coefficient. The negative
+storage charge is retained. The actual initial vector is different and must
+never replace z in this scalar formula.
+
+Added primitive groups: positions403..612. For each family f and region r
+form the exact scalar coefficient
+    t_f,r=sum_{i=0}^{14} z_i*beta_f,r,i.
+The family parent/child starting positions are respectively unit403/418,
+norm433/448,prime_power463/478,squarefree_zero493/508,inverse_row523/538,
+coprime_product553/568,gcd_product583/598; each block has15 atom coordinates.
+Only i=0,6..14 affect this scalar coefficient. Add
+    sum_r [k_r*|t_unit,r|+l_r*(|t_norm,r|+|t_prime_power,r|)],
+    (k_parent,k_child)=(1,2), (l_parent,l_child)=(3/2,6).
+The unit aggregate has constant-1 per t. Norm has-SF(t), prime-power has+pi(t),
+with SF(t),pi(t)<=t. Exact regional t sums are(3X^2-X)/2 and6X^2-X. The four
+remaining families have zero formal constant. Combining atom coefficients
+before taking absolute values is valid because every atom's formal constant
+is z_i and the family source scalar is shared. This tighter formula also
+retains all fifteen signed weights in the semantic check.
+
+M is the sum of these base/cell/matrix/primitive terms. It uses no PNT,
+RH-strength error, arithmetic sign sample, larger horizon or asymptotic fit.
+A detector implementation should bind exact descriptor IDs/positions, exact
+rational weights, source grammar and the formulas rather than merely trusting
+a returned M. If future source terms are added, this ledger must be extended.
+
+4. Why the q schedule and constant square can be removed conditionally
+
+Source inspection: grouped_arithmetic_templates.py:58 sets D=C*Z_q; :67 makes
+the constant-square coefficient Z_q. These are the only occurrences of the
+PROGRAM parameter q in the polynomial template body. The growing-prime square
+cutoffs in cancellation_arithmetic_templates.py:31 have descriptor-fixed root
+orders2,3, not the program q. Factor/divisor/cell/full15/primitive source maps
+are likewise independent of program q. Their signed/group/matrix coefficients
+must stay fixed acrossX; changing them in response to each scale invalidates
+this argument.
+
+Precisely the missing hypothesis is: for ONE fixed exact set of nonnegative
+square weights (excluding a0), signed relation weights and PSD C,H, the complete
+formal polynomial F_X formed from those source groups and signed storage has
+EVERY nonconstant coefficient equal to -Delta(E)(X) for every required dyadicX.
+Equivalently
+    F_X=B0(X)-Delta(E)(X)
+in the polynomial ring of all formal x_n through4X-1. All full source terms,
+endpoints, factors, prime powers, complementary cells and floor-cut changes
+must be present. This hypothesis is independent of q. Matching at1,2,3,5
+establishes it only there. A finite endpoint with exactly zero residual still
+supplies no induction or infinite-domain coefficient proof.
+
+At actual arithmetic, every primitive/signed relation vanishes at every scale,
+PSD regional squares and nonnegative scalar squares remain nonnegative, and
+F_X=Q0(X)+Delta(A_C)(X). Thus, with S_R=E+A_C and R=e_prefix e_prefix^T+C,
+    Delta(S_R)(X)=B0(X)-Q0(X)<=B0(X)<=M X^2.
+The pure constant square a0*Z_q is nonnegative and can be dropped from this
+bound. Keeping it would only give the weaker(a0+M)*Z_q bound. It is not a
+required coercivity atom or storage boundary term.
+
+On dyadicX=2^m, W=S_R/X^2 obeys
+    W(2X)<=W(X)+M/4,
+    E(X)<=S_R(X)<=X^2[S_R(1)+(M/4)*log_2 X].
+Here S_R(1)=1+u^T C u, u=(1,1,0,0,1,0,...,0), is finite and >=1.
+The canonical quotient increases the original initial cost by u^T Gchild u;
+that increase must remain explicit. The logarithm conclusion may be stronger than what RH alone supplies for this
+energy, so its hypotheses must not be treated as necessary RH conditions.
+The logarithm bound yields every
+X^(2+epsilon) energy exponent with finite epsilon-dependent constant, so
+cofinal q is automatic under this stronger uniform hypothesis. A single q6
+FINITE endpoint does not meet it. The project's ordinary-zeta/energy bridge
+still requires its separately recorded analytic premises.
+
+This derivation is compatible with the target contract as a NEW conditional
+operator statement. It does not relabel the archived C32,q6 candidate or its
+slacks. At finite scales one may algebraically set a0=0 and increase each
+ordinary slack by a0*Z_q, preserving the original target and positivity;
+the auxiliary square group is empty. For a newly proved uniform critical
+certificate choose C_q=M, allq, and slack M*Z_q-B0(X)>=0. For the sharper
+innovationMX^2 statement use slack MX^2-B0(X)>=0 instead. Existing snapshots
+and admission receipts must remain unchanged, and a newly instantiated proof
+must have new coefficient/slack/target bindings.
+
+5. All-scale operator identity remains the decisive open gap
+
+Every signed primitive relation is sound globally: unit, complete factor-
+certified norm, actual prime power, squarefree zero, complete inverse divisor
+row, coprime product and gcd product vanish for mu at every integer. See
+arithmetic_cycle_language.py:relation and grouped_arithmetic_language.py:_relation,
+and primitive_state_localizers_uniform_scope.txt. Multiplying/summing them
+with the fixed full15 state is legitimate for everyt. This validates each
+relation premise; it does NOT prove the chosen sum cancels the target's
+nonconstant coefficients universally.
+
+An actionable structural gate before expensive source expansion should return
+three separate statuses: exact finite admission; elementary scalar-readiness
+with the four checks and explicitM above; global nonconstant identity UNPROVED
+unless accompanied by a new independent structural certificate. A global
+certificate could normalize source sums into universal monomial coefficient
+functions ofX and up to four indices, then certify finite predicate/domain
+partitions and sum-reindexing identities, including divisibility/gcd/prime and
+changing root/floor boundaries. Higher-degree, linear and unused coefficient
+functions must vanish exactly; quadratic coefficients must equal the complete
+signed defect kernel. A fixed-X compiler or a handful of transfer scales
+cannot certify these universally quantified functions.
+
+Existing closed backends do not fill this gap. cancellation_arithmetic_language
+:247 compile_expression expands a given integerX under resource limits.
+autonomous_grammar.py:285 polynomial_certificate handles a closed commutative
+polynomial sort and explicitly returns unsupported for sums/maps outside it.
+signed_arithmetic_certificates.py:146 component_certificate proves one
+zero-moment weighted squarefree component and labels full_signed_bound_proved
+False; :292 positive_energy_transform_certificate supplies a CONDITIONAL
+recovery bridge, not the signed forcing premise. estimate_grammar.py:301-306
+lists restricted supplied backends and no new RH-cancellation backend.
+The actual weighted inverse-row square closures in cancellation_divisor_coupling
+are exact identities, but explicitly not critical-bound certificates.
+Unsupported global proof syntax is an open method gap, not a mathematical
+refutation of the current grammar. No theorem here excludes all fixed
+primitive/full15 templates.
+
+An elementary scalar-ready, globally matched candidate would be a substantive
+uniform operator proof rather than a tiny-grid fit. Until both parts are
+independently established, finite feasibility remains finite evidence and
+all uniform/RH proof flags must stay false.
+
+Verification and resources
+
+Bounded source reads, descriptor-only construction (366squares/613relations),
+exact identification of the six rowmass positions and primitive/cell block
+starts, tiny symbolic head/tail partition and gamma checks, and a2x2 exact
+negative-part gradient calibration. No ordinary polynomial instance rebuilt.
+A conservative25m read/algebra reservation is far below450m; no large cache,
+dense nullspace, exact elimination, native solver or new arithmetic horizon.
+Previously published notes through017 were not edited.

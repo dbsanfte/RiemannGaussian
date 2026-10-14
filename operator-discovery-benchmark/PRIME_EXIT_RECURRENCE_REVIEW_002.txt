@@ -1,0 +1,404 @@
+CENTERED FIXED-PRIME RECURRENCES, TRUE FORCING,
+AND PRODUCT-BAND RECOVERY WITHOUT GLOBAL WEIGHT LOSS
+
+Scope and conclusions
+---------------------
+This is a new analytical review of
+candidate10_occupancy_joint_forcing_obligation.json and
+PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt, including the subsequently proposed
+finite product-band stencil language. The source remains actual candidate10
+mu, u=1/3, v=2/3, beta=9/2. Only this new memo is written. No numerical
+experiments, tests, arithmetic tables, hashes, old/frozen edits or subagents
+were used. No companion RH bound or prime independence is assumed.
+
+There are two constructive facts, with different scopes.
+  * The exact fixed-prime centered recurrence has a uniformly contracting
+    delayed part for q>=3. Its floor and unit pole forcing is paid, even
+    uniformly in q. The unpaid input includes a CURRENT-scale q-free
+    source difference; removing that term or assuming its bound would
+    make the argument circular. A single-prime q-free norm is recoverably
+    equivalent to the original norm, rather than automatically easier.
+  * The new centered product-band family has a rigorous sufficient full
+    recovery theorem with at most a cubic power of log X. Closed-unit-disc
+    RECURRENCE roots give a polynomial causal inverse, and uniform signed
+    partial-band Abel summation removes the relative product weight at
+    constant cost <=2. This avoids the previous global X^(2gamma) loss.
+    The required uniform auxiliary bound has not been proved.
+
+The uncentered squarefree-product source also has a provably nonzero
+limiting bivariate pole at (s,t)=(2/3,2/3). Its residue component is
+supercritical without a product weight and critical with gamma=1/6.
+This warns against an uncentered squarefree moment premise. It does NOT
+by itself prove an unconditional asymptotic or lower bound for that
+indefinite projection, nor put literal poles in a finite Euler polynomial.
+Full centering and its nonsquarefree complement remain essential.
+
+1. Prefix states, lower rows, units and same-prime correction
+------------------------------------------------------------
+Write U=mu*n^(-u), V=mu*n^(-v), B=U*V, p=beta*(U-delta)*(V-delta),
+a=p-d, with * Dirichlet convolution and d the COMPLETE same-prime part.
+For a fixed actual prime q put t=q^(-1/3), s_q=t+t^2, v_q=t^3=q^(-1).
+Use the operator
+  D F(n)=F(floor(n/q)), D^2 F(n)=F(floor(n/q^2)),
+on actual inclusive step prefixes, zero below one. Write F_U,F_V,F_B
+for the full scalar prefixes and F_U^0,F_V^0,F_B^0 for the q-free
+coefficient prefixes. The restriction means q does not divide the
+COEFFICIENT index, not that its prefix argument is restricted.
+
+The exact local series and lower rows are
+  U_q(z)=(1-z)/(1-tz): 1, t-1, t^2-t, ...,
+  V_q(z)=(1-z)/(1-t^2z): 1, t^2-1, t^4-t^2, ...,
+  B_q(z)=(1-z)^2/[(1-tz)(1-t^2z)]:
+        1, t+t^2-2, 1-2t-t^2+t^3+t^4, ... .          (1.1)
+For e>=3 the B and combined a rows obey the two-root recurrence
+coefficient_e=s_q*coefficient_(e-1)-v_q*coefficient_(e-2).
+They are not powers of their first row.
+
+For q-free H>1,
+  sum_{e>=0}a(q^e H)z^e
+    =beta*[B(H)B_q(z)-U(H)U_q(z)-V(H)V_q(z)]-d(H).   (1.2)
+At H=1 the a chain is identically zero. In particular its e=0 prime-
+power defect cannot be inferred from a generic non-prime-power base.
+The complete chain sums at z=1 to -d(H); all local tails are absolutely
+summable. The exit identities from the prior memo are thus exact,
+including every gcd and repeated-valuation sector.
+
+The p prefix is
+  P=beta*(F_B-F_U-F_V+I_1), I_1(n)=1_{n>=1}.
+The corresponding q-free prefix P^0 has the same formula using F_i^0.
+Exactly A=P-D_same, with D_same the full d prefix; A^0=P^0-D_same^0.
+The local same-prime mass is beta, so
+  0<=D_same(n),D_same^0(n)<=beta*sqrt(n),
+  E(D_same),E(D_same^0)<=2beta^2.                    (1.3)
+All units and same-prime cross terms remain in finite identities;
+the full centered p/a goals are cofinal-equivalent by two-direction
+norm comparison. This does not separately bound an unknown mixed term.
+
+2. Exact pole deletion and paid floor forcing
+---------------------------------------------
+Set kappa_u=2/3, kappa_v=1/3. The full U,V pole-prefix coefficients are
+  c_u=1/[kappa_u*zeta(kappa_u)],
+  c_v=1/[kappa_v*zeta(kappa_v)].
+The B coefficients are
+  c_Bu=zeta(4/3)/[kappa_u*zeta(kappa_u)^2],
+  c_Bv=zeta(2/3)/[kappa_v*zeta(kappa_v)^2].
+Thus the complete p pole profiles use
+  m_u=beta*(c_Bu-c_u), m_v=beta*(c_Bv-c_v).
+The coefficient formulas are exact analytic constants, not fitted data.
+
+Removing q deletes its exact Euler factor. At a pole exponent kappa,
+put z_k=q^(-kappa). For U or V with its appropriate t_i=t or t^2,
+  c_i^0=c_i*(1-t_i*z_k)/(1-z_k)
+       =c_i*(1-q^(-1))/(1-q^(-kappa)).               (2.1)
+For B at either pole,
+  c_Bk^0=c_Bk*(1-t*z_k)*(1-t^2*z_k)/(1-z_k)^2.       (2.2)
+The q-free p coefficients are beta*(c_Bu^0-c_u^0) and
+beta*(c_Bv^0-c_v^0), respectively. It is WRONG to divide the whole
+nonmultiplicative p center by one common B Euler factor.
+
+All centers below are defined for integer n>=1, zero at n=0. Dilated
+centers use the actual floor n/q^j. Put
+  R_i=F_i-C_i, R_i^0=F_i^0-C_i^0,
+where U,V each have their single pole and B has both poles. Exact
+prefix decomposition gives
+  (I-tD)R_U=(I-D)R_U^0+Gamma_U,
+  (I-t^2D)R_V=(I-D)R_V^0+Gamma_V,
+  (I-s_qD+v_qD^2)R_B=(I-D)^2 R_B^0+Gamma_B.         (2.3)
+
+For a single U or V pole, m=floor(n/q),
+  Gamma_i=(c_i^0-c_i)*n^kappa+(t_i*c_i-c_i^0)*m^kappa
+          =(c_i^0-c_i)*[n^kappa-q^kappa*m^kappa].   (2.4)
+The continuous leading power cancels exactly because of (2.1).
+Since 0<kappa<1, concavity gives
+  0<=n^kappa-(q*m)^kappa<=q^kappa,
+and hence the UNIFORM bound
+  |Gamma_i|<=G_i:=|c_i|/(1-2^(-kappa)).              (2.5)
+This includes n<q and the n=1 unit; no unit strip is omitted.
+
+For one B pole let c=c_Bk,c0=c_Bk^0, m_j=floor(n/q^j), and
+  a1=-2c0+s_q*c, a2=c0-v_q*c.
+Its exact forcing is
+  Gamma_B,k=(c0-c)*n^kappa+a1*m_1^kappa+a2*m_2^kappa.
+Equation (2.2) implies
+  (c0-c)+a1*q^(-kappa)+a2*q^(-2kappa)=0.
+Let epsilon_j=n^kappa-q^(j*kappa)*m_j^kappa. Then
+  Gamma_B,k=-a1*q^(-kappa)*epsilon_1
+                         -a2*q^(-2kappa)*epsilon_2.           (2.6)
+Using |epsilon_j|<=q^(j*kappa), s_q<=2,v_q<=1, and
+|c0|<=|c|/(1-2^(-kappa))^2 gives the uniform constant
+  |Gamma_B|<=G_B:=sum_{k=u,v}3|c_Bk|
+                                *[(1-2^(-kappa_k))^(-2)+1].   (2.7)
+These forcing terms have dyadic cost <=G_i^2/X or G_B^2/X, and finite
+critical integral cost. Their payment is real progress, but it only
+removes the explicit pole/floor error, not the q-free arithmetic frontier.
+
+3. A constructive delayed contraction, with its exact unpaid input
+-----------------------------------------------------------------
+Use the finite-horizon norm
+  ||F||_(sigma,T)^2=int_1^T |F(x)|^2*x^(-2sigma-1) dx,
+with the actual step extension, sigma>=1/2. D has norm <=q^(-sigma).
+The U,V delayed feedbacks in (2.3) have norms at most q^(-u-sigma)
+and q^(-v-sigma). The B delayed part has norm at most
+  rho(q,sigma)=q^(-u-sigma)+q^(-v-sigma)+q^(-1-2sigma).
+For EVERY q>=3 and sigma>=1/2,
+  rho(q,sigma)<=3^(-5/6)+3^(-7/6)+1/9<17/18<1.       (3.1)
+Indeed 3^(5/6)>2 and 3^(7/6)>3. Thus there is a genuine uniform
+delayed contraction for a fixed q>=3, with smaller arguments n/q,n/q^2.
+At q=2 this particular triangle bound need not contract, although the
+factorized causal inverse in (2.3) still exists and is bounded.
+
+The indispensable B forcing is
+  G_q,B(n)=R_B^0(n)-2R_B^0(floor(n/q))
+                                  +R_B^0(floor(n/q^2)).       (3.2)
+It includes CURRENT-scale R_B^0(n). A recurrence which calls all of
+(3.2) smaller scale is false. Its value at n can contain the entire
+fresh q-free annulus; a prime-free coefficient restriction is not an
+earlier prefix argument. The analogous U,V first differences have
+the same issue. Paying Gamma does not pay these source differences.
+
+For fixed q the difference I-D is uniformly invertible at sigma>=1/2:
+  ||(I-D)^(-1)||<=1/(1-q^(-sigma)).
+The rational transfer and its inverse are also bounded uniformly over
+q>=2, because q^(-sigma)<=2^(-sigma)<1. Consequently, after the paid
+floor forcing, cofinal bounds for G_q,B and for the q-free B state are
+recoverably equivalent. Likewise a single-prime q-free/full U,V,B norm
+is comparable through their exact centered Euler operators. Selecting
+one q does not automatically create a weaker arithmetic obligation.
+The new lemma would have to estimate a genuinely restricted or coupled
+fresh forcing, not simply rename (3.2).
+
+The Mellin characteristic factor is
+  1-s_q*q^(-s)+v_q*q^(-2s)
+       =(1-q^(-u-s))*(1-q^(-v-s)).                 (3.3)
+Its roots have real parts -u,-v, with imaginary periods 2pi/log q.
+Thus local stability is not an off-line-zero or arithmetic source theorem.
+The numerators 1-q^(-s) vanish on real part zero, not at the real poles
+2/3 or 1/3. These nonzero local factors preserve the pole channels and
+require the center deletion formulas (2.1)-(2.2).
+At the opposite Mellin phase, the complete U transfer has modulus
+(1+r)/(1+t*r)>1, r=q^(-sigma), and B has modulus
+(1+r)^2/[(1+t*r)(1+t^2*r)]>1. Therefore the full arithmetic transfer
+is not a contraction on every frequency merely because its delayed
+feedback contracts. Fractional weights shift r to a smaller radius,
+but unweighting the original source carries its recorded inverse-power
+cost; phase cones need an actual arithmetic projection/closure argument.
+
+4. Simultaneous p/a recurrence, exact units and d forcing
+--------------------------------------------------------
+Let Delta_q=I-D and L=I-s_qD+v_qD^2. Define
+  J=P-m_u*n^(2/3)-m_v*n^(1/3),
+  J0=P0-m_u^0*n^(2/3)-m_v^0*n^(1/3).
+Then J=beta*(R_B-R_U-R_V+I_1), with the analogous J0 formula.
+From (2.3) one obtains exactly
+  L J=Delta_q^2 J0
+        +beta*(t^2-1)*D*Delta_q R_U^0
+        +beta*(t-1)*D*Delta_q R_V^0+Omega_q,          (4.1)
+  Omega_q=beta*[Gamma_B-(I-t^2D)Gamma_U-(I-tD)Gamma_V]
+                 +beta*[(2-s_q)D+(v_q-1)D^2]I_1.              (4.2)
+The last two terms are the literal strips n>=q and n>=q^2. Their
+sum at n>=q^2 is beta*(1-t)*(1-t^2); they cannot be dropped as zero.
+In particular
+  |Omega_q|<=beta*(G_B+2G_U+2G_V+3),                 (4.3)
+uniformly in n and q. This is paid dyadic forcing, with all lower rows,
+units and centers accounted for.
+
+For the actual a state J_a=J-D_same and J_a0=J0-D_same^0, equation
+(4.1) acquires the additional exact forcing
+  Delta_q^2 D_same^0-L D_same.                      (4.4)
+Its norm is cofinal by (1.3) and the fixed finite dilation coefficients.
+The target using only the leading center differs by the explicitly
+retained smaller n^(1/3) profile, whose dyadic energy is O(X^(-1/3)).
+Thus this is a constructive full-source recurrence with paid algebraic
+forcing, not a deletion of a=p-d or its lower pole.
+
+The smaller companion arguments in (4.1) are useful for a SAME coupled
+induction. Nevertheless J0(n) in Delta_q^2 J0 remains the unsolved
+current frontier. A filtration removing all primes eventually has a
+trivial source base, but its number of stages, prime-free centers,
+boundary forcing and inverse products grow with the horizon. The old
+local inverse cost is not made uniform by naming that filtration.
+The next input's conditional shared-prime rule and smooth compensation
+can participate in a common storage; they do not already establish it.
+
+5. Uncentered squarefree-product pole: a rigorous scoped warning
+---------------------------------------------------------------
+Let Q_sf(n)=sum_{h,k<=n,h*k squarefree}a(h)a(k). On this domain a=p.
+Put channel labels i in (delta,B,U,V), coefficients c=(1,1,-1,-1),
+and prime rows lambda_delta=0, lambda_B=-2+q^(-u)+q^(-v),
+lambda_U=-1+q^(-u), lambda_V=-1+q^(-v).
+For Re(s),Re(t)>1 the full bivariate coefficient series is exactly
+  Z_sf(s,t)=beta^2*sum_{i,j}c_i*c_j
+       *prod_q[1+lambda_i(q)q^(-s)+lambda_j(q)q^(-t)].          (5.1)
+Each q is absent or belongs to just one leg, as squarefree PRODUCT
+requires. Unit/prime-source cancellations are in the complete c sum.
+
+For each pair factor the product as
+  Z_ij(s,t)=D_i(s)D_j(t)*C_ij(s,t),
+where D_delta=1, D_U=zeta(s+u)/zeta(s),
+D_V=zeta(s+v)/zeta(s), D_B=D_U*D_V. The correction Euler factor is
+  [1+lambda_i(q)q^(-s)+lambda_j(q)q^(-t)]
+                             /[F_i,q(q^(-s))*F_j,q(q^(-t))].  (5.2)
+Its error from one is O(q^(-2Re(s))+q^(-2Re(t))+q^(-Re(s)-Re(t))).
+Thus C_ij converges absolutely in a neighborhood of (kappa,kappa),
+kappa=2/3, and provides a legitimate meromorphic continuation there.
+
+At s=t=kappa all C_ij are strictly positive and nonzero. Indeed the
+smallest numerator is the B,B one. With x=q^(-1/3), it is
+  1-4x^2+2x^3+2x^4
+       =(1-2x^2)^2+2x^3*(1-x)>0.                  (5.3)
+All other rows are >=lambda_B, and all denominator local factors
+F_i,q(q^(-kappa)) are positive. Absolute tail convergence makes their
+positive infinite product nonzero.
+Only B and U have a pole at kappa. Their residues are
+  r_B=zeta(4/3)/zeta(2/3)^2>0,
+  r_U=1/zeta(2/3)<0.
+The latter sign follows from the alternating eta representation on
+0<s<1. Hence the joint Laurent coefficient is strictly positive:
+  R_sf=beta^2*[r_B^2*C_BB-2r_B*r_U*C_BU+r_U^2*C_UU]>0.         (5.4)
+The uncentered squarefree-product projection has NOT canceled this
+simultaneous (2/3,2/3) pole merely by removing repeated-prime fibers.
+
+A valid infinite-series Perron residue decomposition crossing these
+poles contains R_sf/kappa^2 times the endpoint to power 2kappa.
+Its normalized dyadic component has power 2kappa-1=1/3. For
+0<=gamma<kappa, weighting the product by m^(-gamma) shifts BOTH poles
+to kappa-gamma; the corresponding power is 1/3-2gamma, critical at
+gamma=1/6. At gamma=kappa the shifted poles meet the Perron origin;
+the simple residue formula needs separate head/logarithmic treatment
+and is not used here. This component is a reason to retain all
+normalizers and complements in attempted recovery.
+
+There are two necessary qualifications. First Q_sf is indefinite, not
+positive energy. A nonzero local Laurent coefficient does not alone
+prove an unconditional unsmoothed asymptotic or a lower bound for its
+TOTAL diagonal moment: other contour/remainder contributions must be
+controlled to make that inference. No RH/zero-free companion estimate
+is assumed here. Second every finite cutoff Euler product is a finite
+Dirichlet polynomial and has NO literal pole. The poles in (5.4) belong
+to the limiting meromorphic source. They cannot be inserted into a
+finite low-rectangle integral as though finite-product continuation
+already supplied a uniform asymptotic theorem.
+
+Accordingly the saved O(1/X) low-contour component does not justify a
+cofinal unweighted whole squarefree projection. Its high complement
+still has to account for the limiting pole mechanism and all other
+frequencies. With gamma=1/6 the pole component is not itself a
+supercritical falsifier, but it can be order one and the unsolved high
+frequency/restoration obligations remain. For the NEW centered b source
+below, (5.1) cannot be reused unchanged: subtracting increments of the
+center destroys this simple multiplicative color source. Its full
+AA, main-cross, main-square and nonsquarefree terms must be restored.
+
+6. Exact centered product bands, head and tail
+----------------------------------------------
+Now define the actual centered coefficient sequence
+  b(n)=a(n)-[M(n)-M(n-1)], M(0)=0,
+with ALL desired complete fixed center profiles in M. Its inclusive
+prefix is exactly A(n)-M(n). In particular b(1) need NOT be zero even
+though a(1)=0. Reusing the old a unit mask for b would lose the center.
+With N=2X-1 the WHOLE centered moment is exactly
+  E_R(X)=X^(-2)*sum_{h,k<=N}b(h)b(k)W_X(h,k).         (6.1)
+This automatically includes AA, both center crosses and the center
+square, on BOTH squarefree and nonsquarefree product sectors. A separate
+SF/NS diagnostic is not a license to require each indefinite component
+to be positive or cofinal on its own.
+
+Fix gamma>=0 and J=ceil(log2(N^2)). For j=0,...,J and 1/2<=t<=1,
+define exactly
+  D_j(t)=2^(j*gamma)/X^2
+       *sum_{h,k<=N,2^(j-1)<hk<=t*2^j}
+                    b(h)b(k)W_X(h,k)*(hk)^(-gamma).           (6.2)
+Set negative-index D_j identically zero. The j=0 band contains the
+unit product m=1 at t=1; for t<1 it is zero. X=1,N=1,J=0 is covered.
+The final band retains every product through N^2 and is a plateau
+for t>=N^2/2^J. Empty upper portions are not new source terms and the
+truncated final band must not be omitted. Every product 1<=hk<=N^2
+belongs to exactly one band, with its lower endpoint strict.
+
+For each j let S_j be the corresponding UNWEIGHTED band total. Treat
+D_j as the cumulative signed atomic measure on relative rho=m/2^j
+in (1/2,1]. Signed Abel summation is exactly
+  S_j=D_j(1)-gamma*int_(1/2)^1 t^(gamma-1)D_j(t) dt.           (6.3)
+The lower boundary term is zero. Consequently
+  |S_j|<=(2-2^(-gamma))*sup_t|D_j(t)|<=2sup_t|D_j(t)|.         (6.4)
+For gamma=0 the cost is exactly one and the endpoint alone suffices.
+For gamma>0 a uniform partial-band bound is essential; an endpoint-only
+weighted signed sum can cancel while its unweighted sum is large.
+This is a finite signed-measure issue, not an assumed counterfeit mu
+source. The j=0 atom also has exact cost one for every gamma.
+
+The relative weight is bounded on each band and is undone BEFORE
+summing the bands. There is no global N^(2gamma) recovery loss.
+All formulas apply at the SAME t for all j in the filtered sequence.
+Allowing a different chosen t at each shifted band would destroy the
+causal filter identity needed next.
+
+7. Quadratic band filters and sufficient full-energy recovery
+-------------------------------------------------------------
+Take C(z)=1+c1*z+c2*z^2 and
+  E_j(t)=D_j(t)+c1*D_(j-1)(t)+c2*D_(j-2)(t).
+The real coefficients may be the fixed proposed integers, but the
+following proof is generic. The RECURRENCE characteristic polynomial
+is lambda^2+c1*lambda+c2. Its roots lie in the CLOSED unit disc iff
+  |c2|<=1 and |c1|<=1+c2.                            (7.1)
+These are not the zeros of C(z), which reciprocate the nonzero roots.
+For real roots, necessity follows from their product and the nonnegative
+values at lambda=+1,-1; sufficiency follows because any root outside
+[-1,1] with those two values would force both roots past the same
+endpoint and product>1. For complex conjugate roots their common
+modulus is sqrt(c2), giving the remaining case. Zero roots, constant
+C, first-order degeneracies and repeated unit-circle roots are included.
+
+Let g_l be the causal inverse coefficients of 1/C(z). For roots
+lambda1,lambda2 satisfying (7.1),
+  g_l=sum_{r=0}^l lambda1^r*lambda2^(l-r),
+  |g_l|<=l+1.                                       (7.2)
+The formula covers a repeated root by the same finite sum, with
+g_0=1 and the usual zeroth-power convention, including zero roots. Then
+  D_j(t)=sum_{l=0}^j g_l E_(j-l)(t),
+  sup_t|D_j(t)|<=binom(j+2,2)*U_X,
+  U_X=max_{0<=j<=J}sup_{1/2<=t<=1}|E_j(t)|.          (7.3)
+All states at negative indices are exactly zero; no missing head
+condition or unknown prehistory is assumed.
+
+Summing (6.4), using sum_j binom(j+2,2)=binom(J+3,3), gives the FULL
+centered energy recovery
+  0<=E_R(X)<= (2-2^(-gamma))*binom(J+3,3)*U_X.        (7.4)
+With the exact unit-head factor the slightly sharper bound is
+  [1+(2-2^(-gamma))*(binom(J+3,3)-1)]*U_X.           (7.5)
+Both hold with the final truncated plateau, and (7.5) has cost one
+at X=1. The dimensionless recovery cost is O((1+log X)^3), with
+no hidden X power or independent center/source premise.
+
+Thus a uniform cofinal bound on U_X for every positive exponent is a
+SUFFICIENT new full-target lemma. Absorb the displayed polynomial in
+log X by using a smaller exponent in that auxiliary bound. The stencil
+search can certify recovery without fitting arithmetic drift constants.
+It cannot certify the needed signed band bound merely by root stability.
+
+Every admitted finite C is itself equivalent, up to polynomial-in-J
+cost, to the SAME complete uniform band/partial auxiliary:
+  max_{j,t}|E_j(t)|<=(1+|c1|+|c2|)*max_{j,t}|D_j(t)|,
+and the reverse follows from (7.3). Accordingly stable stencils change
+the exact operator/argument presentation, not the cofinal equivalence
+class of that auxiliary. The full centered moment has only the proved
+ONE-WAY implication (7.4) from these uniform signed partial-band data.
+No reverse implication from the whole energy, nor a cofinal bound for
+the actual auxiliary, has been established here. Large signed band
+cancellations are not bounded just because their complete sum is small.
+
+Final audit and proof boundary
+------------------------------
+The fixed-prime recurrence is constructive with a true delayed
+contraction and fully paid floor/unit/d forcing. Its remaining current
+q-free frontier is the missing arithmetic information; the local
+characteristic roots, fractional symbols and phase cone do not provide it.
+The squarefree-source pole analysis identifies a retained limiting main
+mechanism, with explicitly stated finite-product/indefinite-projection
+limitations. The complete centered band language has a separate sound
+polynomial recovery theorem, retaining head, tail, all valuations and
+all center/SF/NS terms. It creates a precise stronger sufficient signed
+auxiliary goal, not an already proved moment or a cancellation estimate.
+
+No complete bound, closed all-source forcing recurrence or RH result
+is claimed. All earlier/frozen files remain unchanged.

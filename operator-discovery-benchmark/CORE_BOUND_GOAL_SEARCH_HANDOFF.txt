@@ -1,0 +1,149 @@
+DETECTOR SEARCH FOR AUXILIARY IDENTITIES AND MISSING BOUNDS
+
+Current input: candidate10_bound_goal_obligation.json
+Verified study: core-bound-goal-results/pilot-002/report.json
+Generator: core_bound_goal_search.py
+Independent checker: check_core_bound_goal_search.py
+Completed runner: run_core_bound_goal_isolated.py (do not restart)
+Analytical primitives: CORE_MULTIPLE_RESIDUAL_RULE_REVIEW_017.txt
+Protocol: core_bound_goal_search_protocol.txt
+Harness repair: core_bound_goal_isolated_protocol.txt
+
+What the detector does itself
+----------------------------
+The detector already searched supplied inequalities and had two verified
+partial component controls. Analysts, including Sol6.1 subagents, supplied
+much of the underlying analytic machinery. It has not independently found
+the signed cancellation needed for the complete core bound.
+
+The new stage expands the executable search. From the actual open source it
+generates intermediate bound targets, enumerates finite linear factors,
+tests exact harmonic moments and source matching, generates full auxiliary
+identities, and solves symbolic bound requirements. It then changes the next
+search task when a proposed proof route cannot meet its requested target.
+No model selects a candidate during this run. Mathematical primitives and
+the finite search language were supplied by us; this is not a general
+analytic prover, nor discovery without design assumptions.
+
+Sol6.1 agents proved/audited the reusable analytic rules and wrote the
+independent checker. The executable searches their consequences. A request
+for a strong remainder estimate remains OPEN even when the identity reducing
+to it is proved. No new paid component bound or complete core control was
+obtained in this stage.
+
+Generated constructions and estimates
+------------------------------------
+With A=mu restricted to[1,U], c=sum_(d<=U)mu(d)/d, C=c*delta,
+R=delta-One*A and E=R+c*One, the finite coefficient search finds the
+source-matching zero-moment factor T=C-A. Its harmonic moment is exactly0.
+This gives the complete identities
+ E=delta+One*T,
+ E^m=sum_(j=0..m) binom(m,j) One^j*T^j.
+Products here are Dirichlet convolutions. The unit and every j remain.
+
+The j-fold harmonic moment has a zero of order at least j. The generated
+jet certificates consequently cancel EVERY monomial x*(log x)^r with
+0<=r<j, after finite convolution with T^j. No specific coefficients for
+an asymptotic divisor polynomial are nominated by the search.
+
+For D_j(x)=sum_(n<=x)One^j(n), define the COMPLETE remainder
+Delta_j(x)=D_j(x)-x*P_(j-1)(log x), every real x>0, where P has degree
+at most j-1. Moment cancellation gives an exact reduction to
+sum_ALL_d T^j(d)Delta_j(n/d). Terms d>n are essential and retained.
+For j1, P0=1 and |floor x-x|<=1 give the known head bound3U. The j0
+delta contribution is also retained. For j>=2, finding a suitable P and
+proving a uniform remainder estimate are new OPEN search obligations.
+
+A hypothetical complete remainder estimate with exponent kappa gives
+prefix growth U^(j*(1-kappa))*n^kappa times fixed logarithms, including
+the full finite weighted mass cost. This is a conditional implication,
+not a theorem establishing such a kappa. Signed terms inside each weighted
+remainder remain available for a stronger joint estimate.
+
+The supplied generic E^m hyperbola bound is an unconditional baseline.
+For E^2 it gives30U(1+log U)*sqrt(t), every U,t>=1. For higher powers it
+gives rho=1-1/m. The machine compares ordinary and Euler-remainder kernel
+routes by deriving symbolic minimax solutions from their error lines.
+Whole-interval polynomial and convex-dual certificates verify optimality
+within this declared error language. All small-prefix cases, conditional
+infinite moment tails, finite support and Euler compensators are paid.
+The moment rule requires rho<theta; equality is not licensed.
+
+For the current alpha1/24, theta2/3 and finite factor A^2, an auxiliary
+bound |P_(E^m)(t)|<=C U^b t^rho times fixed logs would meet the requested
+CONSTANT-energy component target under the generated strict conditions
+ ordinary: b+10rho<2;
+ Euler:    b+13rho<4.
+Equality gives only a fixed logarithmic loss, not constant payment here.
+These are sufficient regions for this proof method, not necessary
+conditions for the actual arithmetic bound. For m2 the existing baseline
+produces energy powers2/7 and7/27 respectively, both unpaid.
+
+The substitution b=j*(1-kappa) is automatic. For example the j2 Euler
+leaf requires kappa<2/11 at the selected cutoff. Existence of this formal
+region is not evidence that the requested divisor estimate is true or
+even attainable. These requests still need proof or rejection. No external
+divisor theorem or numerical evidence is silently imported.
+
+Feedback actually changes the next task
+--------------------------------------
+The full signed core remains the first priority. For each generated target,
+the compiler checks BOTH proved small-j heads and every conditional
+remainder branch. If some portfolio has admissible exponents, it requests
+proofs of those complete remainder estimates. Otherwise it redirects the
+next task to JOINT WEIGHTED remainder control, retaining the entire signed
+sum and actual T^j weights instead of discarding their interaction.
+
+There are22 eligible centered multi-residual targets, powers2 through23.
+Twenty have no feasible separate-remainder portfolio for the current
+constant-energy target and cutoff. These20 therefore receive joint-control
+tasks automatically. The two remaining conditional portfolios are requests,
+not endorsements of their arithmetic plausibility. This stage emits and
+checks the next tasks; it does not yet implement a general solver for new
+joint arithmetic inequalities or assert those tasks have been executed.
+
+Complete source and proof scope
+-------------------------------
+All86 original source terms expand to980 collected signed formal terms.
+All signs, four source modes, actual units, primes, prime powers and the
+exact transport error -e remain. The source identity applies to every
+prefix n<=N=4X-1 with the common cutoffs fixed for that horizon.
+
+All144 inherited channel/transport bindings and the earlier paid-component
+join are retained verbatim. Moment drifts and every other signed component
+remain open. An explicit complete_signed_complement node prevents future
+closure of isolated targets from being mistaken for closure of the core.
+Dependencies are acyclic; proved nodes cannot depend on open estimates.
+Nonzero formal monomials do not establish arithmetic independence or lower
+growth bounds. Failure of this proof language is not an arithmetic disproof.
+
+Verification and resource record
+--------------------------------
+The verified search enumerated98 primitive linear vectors, two zero-moment
+vectors, one source match,22 targets and253 open kernel-remainder branches.
+Two symbolic bound families were also compared with62 exact rational
+minimax probes. New paid component controls0; full source and RH OPEN.
+
+All30 frozen tests passed:13 root/harness tests and17 independent-checker
+tests. Checks cover generic alternative kernels and factors, full signed
+source substitution, all-d moment cancellation, minimax duals, conditional
+costs, convergence boundaries, heads, graph cycles and automatic redirects.
+The independent checker accepted the full actual source and feedback.
+
+pilot-001 is a preserved terminal failure BEFORE source search. A standalone
+test's hard512MiB limit contaminated the combined test process. No theorem
+or code assertion failed there; recorded errors are MemoryErrors. The
+unchanged original sources remain frozen. pilot-002 repairs orchestration
+by isolating owners in separate processes. Its new harness regression test
+verifies that one owner's hard limit cannot change another owner's limit.
+
+Successful main run:2.320seconds, peak RSS704032KiB,2,468,692 charged main
+operations. Inclusive work7,480,259 includes all development checks, final
+frozen tests and2,166,939 operations from the failed attempt. Actual-source
+coefficient observations0, fitted constants0, model calls inside search0.
+Direct-byte snapshots; no hashes. Publication and root input match exactly.
+
+Next research work: extend the argument search for JOINT actual weighted
+remainders and the complete signed core. Preserve these identities and
+cost gates as reusable reductions, but do not spend another run merely
+tuning constants in a region already proved infeasible for that method.

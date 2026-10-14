@@ -1,0 +1,139 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "bridge_checker_operations": 21282,
+  "bridge_producer_operations": 1059,
+  "calibration_proof_counts": {
+    "PAID_UNIFORM_POINTWISE_CONTROL": 18,
+    "REFUTED_UNIFORM_NONNEGATIVITY": 18
+  },
+  "calibrations": 36,
+  "candidates": 3024,
+  "centered_error_bound_proved": false,
+  "conditional_rh_bridges": 5,
+  "development_operations": 4081675,
+  "discovery_candidates": 2988,
+  "discovery_proof_branch_counts": {
+    "fractional_forward": 369,
+    "negative_prime": 1494,
+    "negative_three_prime": 369,
+    "negative_two_prime_concave": 369,
+    "negative_two_prime_convex": 378,
+    "quadratic_backward": 9
+  },
+  "elapsed_seconds": 13.522795623983257,
+  "final_checker_operations": 211102315,
+  "final_producer_operations": 20897680,
+  "final_unresolved_sign_enclosures": 5,
+  "finite_archive_eligible": 378,
+  "grammar_operations": 196131,
+  "hashes_used": false,
+  "independent_final_scalar_checks": 138,
+  "largest_individual_worker_peak_rss_kib": 143792,
+  "memory_limit_bytes": 17179869184,
+  "new_frozen_source_count": 23,
+  "old_scientific_studies_or_suites_replayed": false,
+  "original_floor_energy_bound_proved": false,
+  "parent_peak_rss_kib": 704032,
+  "pointwise_certificates_independently_checked": 3024,
+  "pointwise_proof_checker_operations": 550212,
+  "pointwise_proof_producer_operations": 155396,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18
+  ],
+  "selected": [
+    {
+      "branch": "quadratic_backward",
+      "id": "fractional_prime_kernel_0167",
+      "request": {
+        "a": "0",
+        "alpha": "2",
+        "b": "1",
+        "sign": 1
+      }
+    },
+    {
+      "branch": "fractional_forward",
+      "id": "fractional_prime_kernel_2896",
+      "request": {
+        "a": "1",
+        "alpha": "1/2",
+        "b": "0",
+        "sign": -1
+      }
+    },
+    {
+      "branch": "fractional_forward",
+      "id": "fractional_prime_kernel_2882",
+      "request": {
+        "a": "1",
+        "alpha": "1/3",
+        "b": "0",
+        "sign": -1
+      }
+    },
+    {
+      "branch": "fractional_forward",
+      "id": "fractional_prime_kernel_2910",
+      "request": {
+        "a": "1",
+        "alpha": "2/3",
+        "b": "0",
+        "sign": -1
+      }
+    },
+    {
+      "branch": "fractional_forward",
+      "id": "fractional_prime_kernel_2874",
+      "request": {
+        "a": "1",
+        "alpha": "1/4",
+        "b": "0",
+        "sign": -1
+      }
+    },
+    {
+      "branch": "fractional_forward",
+      "id": "fractional_prime_kernel_2870",
+      "request": {
+        "a": "1",
+        "alpha": "1/5",
+        "b": "0",
+        "sign": -1
+      }
+    }
+  ],
+  "status": "UNIFORM_POINTWISE_KERNEL_CONTROLS_CENTERED_RH_ERROR_OPEN",
+  "stopped_after_counterexample_skips": 162756,
+  "training_cache": {
+    "artifact_hashes_used": false,
+    "atom_entries": 141435,
+    "base_entries": 4428,
+    "estimated_bytes": 167532080,
+    "factor_entries": 68,
+    "keys": "literal(n,d,(a_num,a_den),(b_num,b_den),precision,(alpha_num,alpha_den))",
+    "log_entries": 72,
+    "max_bytes": 2147483648
+  },
+  "training_counts": {
+    "cache_hits": 231984,
+    "divisor_rows": 141876,
+    "factor_divisions": 250,
+    "log_evaluations": 72,
+    "max_parameter_bits": 5,
+    "operations": 874063490,
+    "peak_bytes_estimate": 4212899840,
+    "power_evaluations": 141435,
+    "requests": 42876
+  },
+  "training_scalar_evaluations": 42876,
+  "workers": 2
+}

@@ -1,0 +1,62 @@
+Independent recovery review: point-specific cone rejection
+
+Scope: design and tiny synthetic exact algebra only; no publication026 point,
+chart, trace, source or scoring computation. No hashes or frozen-file edits.
+
+An incomplete producer endpoint is not a usable exact vector. Its reported
+4096-bit cap failure, including a observed temporary in (4096,8193], can be
+validated as bounded failure evidence without treating it as successful
+4096-bit arithmetic. All vector/diagnostic fields must remain null and the
+original protocol/job status remains UNKNOWN. Recovery is a separate audit
+result within the originally reserved150m independent stage, not a retry of
+the search or a second independently budgeted audit.
+
+The audit must verify warm premise and trace once, then recover free values
+as exact f024+D*final_z, descending all780 cached pivot equations including
+the learned row, followed by the complete1957 canonical lift. No producer
+full vector is needed. Verify all5641 original equations and the learned row.
+Then exact negativity of any licensed square or slack coordinate proves
+that this particular recovered point is outside the finite cone. This is
+sound regardless of its matrices. It does not prove that the affine system
+has no feasible point or that a different lift/search cannot succeed.
+
+On scalar rejection, explicitly mark every PSD block
+NOT_CHECKED_AFTER_SCALAR_REJECTION. Do not report PSD success, full cone
+admission, producer endpoint completion, global identity or RH. If all
+scalar signs pass, all three original PSD blocks are required for finite
+admission; a resource failure anywhere yields UNKNOWN. Persisting an exact
+rejected point for a future formal probe is useful, but is not an identity
+certificate or held-out evidence. Future work requires its own authorization.
+
+Arithmetic policy must distinguish failed-producer temporary limits from
+successful recovery limits. Keeping4096 bits in the independent budget may
+fail on the same intermediate; that is a valid UNKNOWN outcome. Any larger
+independent temporary/output limit must be declared and enforced explicitly,
+not inferred from the producer failure receipt. An8193-bit allowance for a
+failed temporary does not license successful8193-bit endpoint output.
+Shared work includes trace, exact backsubstitution/lift, source decoding,
+equations, signs, serialization, and PSD only if necessary. No duplicated
+trace audit may be hidden outside150m. Check and point bytes need explicit
+caps, and cap failures must never leave a usable partial recovery record.
+
+Final declared policy retains4096-bit successful results and8193-bit single
+operation temporaries. It has not been established that the producer failure
+arose in PSD evaluation. Scalar-first ordering can avoid that work, but
+cannot promise recovery will succeed. A failed equation/restoration/sign
+phase remains UNKNOWN even if a partial coordinate happened to be negative.
+Synthetic tests verify descending restoration with a learned row and535-bit
+center, rejection of omission, point-specific negativity despite a feasible
+alternative, strict4204-bit result rejection, and a non-reset shared budget.
+Five tests passed in0.001s; these are algebra checks, not actual recovery.
+
+Reviewed new check_primitive_state_backtracking_recovery.py: recover uses
+one CORE.Budget for cached licensing/setup/trace and exact restoration,
+source/equations/signs/conditional PSD/endpoint serialization. Its incomplete
+producer receipt accepts4096<observed failure bits<=8193 solely as diagnostics.
+scalar_first_endpoint requires full5641/1957 dimensions, verifies equations
+before returning rejection, and sets PSD data/counts unambiguously unchecked
+when any scalar is negative. With no negative scalar it invokes all three
+independent exact PSD checks. Added direct API tests mock PSD to prove bypass,
+require three calls for passing signs, and reject an equation mismatch even
+when a scalar is negative. Eight total tests passed in0.146s. No actual026
+reconstruction was performed. Owned files are ready and edits stopped.

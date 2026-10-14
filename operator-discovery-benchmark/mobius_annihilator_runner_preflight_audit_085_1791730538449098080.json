@@ -1,0 +1,271 @@
+{
+  "RH_proved": false,
+  "all_scale_flags_unpaid": true,
+  "direct_byte_preserved_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15,
+    16,
+    8,
+    10,
+    10,
+    10,
+    10,
+    14,
+    10,
+    5,
+    10,
+    10,
+    10,
+    10,
+    10,
+    12,
+    12,
+    13,
+    4,
+    10,
+    4,
+    11,
+    5,
+    11,
+    9,
+    10,
+    9,
+    10,
+    9,
+    10,
+    10,
+    10,
+    13,
+    10,
+    14,
+    13,
+    19,
+    19,
+    21,
+    14,
+    14
+  ],
+  "draw_scope": "Read-only prospective protocol audit; scientific runner will draw after bank freeze/calibration.",
+  "freeze_flow_verified": "source/operator freeze before bank selection; bank freeze before calibration/draw; all adaptive retained including failures",
+  "hashes_used": false,
+  "old_scientific_runs": false,
+  "old_tests_run": false,
+  "operators": 8,
+  "prospective_fresh_parent_draw": [
+    2187,
+    3475
+  ],
+  "saved_artificial_witness_metadata_bindings": [
+    {
+      "candidate_id": "q1_p16_inherited",
+      "file": "witness_q1_p16_inherited_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "file": "witness_q1_p16_inherited_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "file": "witness_q1_p16_inherited_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "file": "witness_q1_p16_inherited_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "file": "witness_q1_p16_cofactor_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "file": "witness_q1_p16_cofactor_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "file": "witness_q1_p16_cofactor_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "file": "witness_q1_p16_cofactor_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "file": "witness_q1_p16_reciprocal_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "file": "witness_q1_p16_reciprocal_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "file": "witness_q1_p16_reciprocal_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "file": "witness_q1_p16_reciprocal_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "file": "witness_q1_p16_fractional_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "file": "witness_q1_p16_fractional_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "file": "witness_q1_p16_fractional_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "file": "witness_q1_p16_fractional_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "file": "witness_q1_p04_inherited_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "file": "witness_q1_p04_inherited_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "file": "witness_q1_p04_inherited_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "file": "witness_q1_p04_inherited_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "file": "witness_q1_p04_cofactor_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "file": "witness_q1_p04_cofactor_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "file": "witness_q1_p04_cofactor_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "file": "witness_q1_p04_cofactor_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "file": "witness_q1_p04_reciprocal_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "file": "witness_q1_p04_reciprocal_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "file": "witness_q1_p04_reciprocal_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "file": "witness_q1_p04_reciprocal_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "file": "witness_q1_p04_fractional_1603.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1603
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "file": "witness_q1_p04_fractional_1738.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 1738
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "file": "witness_q1_p04_fractional_2651.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2651
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "file": "witness_q1_p04_fractional_2766.json",
+      "status": "VERIFIED_FINITE_FIXED_OPERATOR_SQUARE_LOWER_BOUND",
+      "u": 2766
+    }
+  ],
+  "scientific_source_values_read": false,
+  "status": "PASS",
+  "total_direct_byte_preserved": 666,
+  "training_exact_registered_prior_draw": true,
+  "uniform_remaining_bound_proved": false
+}

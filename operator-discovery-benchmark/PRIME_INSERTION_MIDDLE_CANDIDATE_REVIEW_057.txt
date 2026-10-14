@@ -1,0 +1,313 @@
+SELECTED MOVING-MIDDLE AUXILIARIES: SOURCE-ONLY CANDIDATE REVIEW 057
+
+Disposition and evidence scope
+==============================
+This NEW file does not change any frozen057 or earlier source, selection,
+constant, assessment, or review. The saved selected.json and protocol were
+read; no source arrays, arithmetic norms, numerical integrals, new tests,
+parameter search, rescoring, or hashes were performed. A failed attempt to
+invoke the unavailable command python was only a JSON-file read; python3
+then read the report's existing scope flags without evaluating sources.
+
+The verified final assessment supplied by the parent has 237 finite passes
+and three refutations. All three delta=1 selected recurrences fail at
+N=211, r=0, including the signed prime-exchange form. Each of the twelve
+selected delta<=1/2 variants passed its sixteen held-out transitions.
+These are finite facts. The archived status is
+ACTUAL_SIGNED_MIDDLE_CONTROLS_SEARCHED_UNIFORM_WORK_OPEN, with both uniform
+recurrence and RH flags false. No refuted fixed constant is rehabilitated.
+
+The parent also reports the saved diagnostic: the weaker signed form's
+drift exceeds the center-only baseline on 14/16 transitions. Against the
+same N-1 transport its auxiliary gives negative credit on 6/16 and positive
+cost on 10/16. Thus its training improvement is not a uniform mechanism or
+a general empirical improvement. No numerical inference below relies on
+finite slopes or on a presumed sign of unobserved correlations.
+
+1. Actual selected formulas and exact common-cutoff objects
+==========================================================
+Fix alpha=1/5, gamma=5/18, epsilon_N=min(1/2,N^(-gamma)), tau=1/2,
+and c_alpha=(alpha I_alpha)^(-1). For R=6,10,15 write
+
+ h_R(N,t)=sum_{2N<n<=4N}G_(Rn)(t)
+                       -2 sum_{N<n<=2N}G_(Rn)(t),
+ G_n(t)=product_{p|n}(1-p^(-t)),
+ J_R(N)=c_alpha integral_epsilon_N^tau h_R(N,t)t^(-6/5)dt.
+
+The lower-2/3 channel is precisely
+
+ u_N=epsilon_N+(2/3)(tau-epsilon_N)=1/3+epsilon_N/3,
+ L_6(N)=c_alpha integral_epsilon_N^u_N h_6(N,t)t^(-6/5)dt.
+
+It is not a fixed cutoff at 1/3 and not 2/3 of the integral's value.
+The selected weak storage for delta=0,1/7,1/3,1/2 is
+
+ A(N)=J_15(N)-L_6(N),
+ F_A(N)=[J_6(N)^2+A(N)^2/4]/N,
+ F_A(2N+r)<=F_A(N-1)+C/N^delta, all N>=3 and r=0,1.            (1)
+
+The fixed constants in order are 1/8192,1/4096,1/2048,1/1024.
+The selected delta=1 form was
+
+ B(N)=J_6(N)-J_10(N),
+ F_B(N)=[J_6(N)^2+4B(N)^2]/N,
+ F_B(2N+r)<=(2/3)F_B(N-1)+(1/3)F_B(N)+(1/128)/N.             (2)
+
+Formula (2) is already refuted as an all-integer bound. The algebraic
+identities concerning its auxiliary remain true independently of that
+failure. Both forms retain the target square and are positive coercive
+storages; their temporal auxiliary drift, not their value, can have either
+sign. F_A>=J_6^2/N and F_B>=J_6^2/N do not automatically make either
+recurrence easier than the target recurrence.
+
+2. Exact prime-exchange decomposition, without squarefree shortcuts
+===================================================================
+For every n>=1 and t>0,
+
+ G_(6n)-G_(10n)
+ =G_(2n)[5^(-t) 1_(5 does not divide n)
+                         -3^(-t) 1_(3 does not divide n)].  (3)
+
+This uses only the radical product. It retains n divisible by 3 or 5,
+both, repeated prime powers, and arbitrary other shared factors.
+If neither divides n the sign is negative; if only 3 divides n it is
+positive; if only 5 divides n it is negative; if both divide n it is zero.
+Consequently the exchange is not a single positive prime-gap factor over
+the full source. Coprime-only reasoning would omit its positive sector.
+
+For real x>0 define the INCLUSIVE unit filter
+
+ h_R^+(x,t)=sum_{n>=1}v_x(n)G_(Rn)(t),
+ v_x(n)=1_(2x<n<=4x)-2*1_(x<n<=2x).
+
+Equivalently its prefix coefficients are (2,-3,1). Its relation to the
+original n>=2 filter is
+
+ h_R^+(x,t)=h_R(x,t)+G_R(t)v_x(1),
+ v_x(1)=1_(2x<1<=4x)-2*1_(x<1<=2x), |v_x(1)|<=2.          (4)
+
+This actual unit indicator is zero for every real x>=1. It is +1 on
+1/4<=x<1/2 and -2 on 1/2<=x<1. It must not be confused with the full
+d=1 DIVISOR contribution W(x)=floor(4x)-3floor(2x)+2floor(x), which can
+be nonzero even when x>1 and |W(x)|<=1. Summing (3), and removing
+multiples by n=pm, proves the exact
+scale relation
+
+ h_6(N,t)-h_10(N,t)
+ =(5^(-t)-3^(-t))h_2^+(N,t)
+       +3^(-t)h_6^+(N/3,t)-5^(-t)h_10^+(N/5,t).             (5)
+
+No coprimality premise or simple-prime restriction is needed. Multiples
+of all orders are handled by the complete lower real-argument prefix.
+The inclusive unit convention is essential to (5). For integer N>=3
+the N/3 argument has no actual unit correction. The N/5 correction
+occurs only at N=3,4 (and at N=2 if its base is used); all N>=5 are
+unit-free. Real arguments still retain their possibly nonzero d=1
+divisor contribution W(N/p) in any factorized expansion.
+
+More generally, for distinct primes p,q not already dividing a fixed R,
+
+ h_(Rp)^+(x)-h_(Rq)^+(x)
+ =(q^(-t)-p^(-t))h_R^+(x)
+   +p^(-t)h_(Rp)^+(x/p)-q^(-t)h_(Rq)^+(x/q).                (6)
+
+This is an enumerable source-specific transport rule. It trades explicit
+q-free masks for smaller real arguments and actual Laplace attenuations.
+It is not a scalar norm contraction. The current-scale channel h_R stays
+and its multiplier does not vanish identically on the middle interval.
+
+The exact selected B is the common-cutoff integral of (5). To compare a
+lower argument x=N/p with a separately defined channel, extend its cutoff
+as epsilon(x)=min(1/2,x^(-gamma)), and keep the attenuation p^(-t):
+
+ integral_epsilon_N^tau p^(-t)h_(Rp)(x,t)t^(-6/5)dt
+ = integral_epsilon(x)^tau p^(-t)h_(Rp)(x,t)t^(-6/5)dt
+  +integral_epsilon_N^epsilon(x)
+                         p^(-t)h_(Rp)(x,t)t^(-6/5)dt.       (7)
+
+The weighted channel on the right is not an ordinary J_(Rp). Replacing
+it by J_(Rp) introduces the additional signed integral with multiplier
+p^(-t)-1. The units from (4) add
+v_x(1) integral_epsilon_N^tau p^(-t)G_(Rp)(t)t^(-6/5)dt.
+Its normalized absolute value is <=2K(Rp)/alpha<=2log(Rp)^alpha/alpha,
+so this particular head is paid uniformly. Fractional x<2 is not an
+ordinary licensed integer middle channel; it remains an explicit finite
+head rather than an invented source value or an implicit basecase. No
+uniform norm or recurrence for these real-argument weighted channels is
+inherited from the frozen integer-N>=2 theorem. Their exact definitions
+are new proof-language states, and any bounds used on them need their
+own explicit domain or a proved transfer rule.
+
+What remains unpaid in (5)-(7) is the JOINT weighted current-channel
+forcing and the actual lower-argument correlation, with their cutoff
+compensation. Separate assumed RH-scale bounds for those channels would
+be circular as an unconditional proof route. The finite exact identity
+removes a masking ambiguity but does not bound that forcing.
+
+There is no extra universal Taylor order from this exchange. On an n with
+no primes outside 2,3,5, the two forced-prime products can already differ
+at order t^2. In particular at n=2^a the coefficient is
+log2*(log3-log5), not zero. It is therefore incorrect to assign an automatic
+third-order near-zero gain to J_6-J_10.
+
+3. The selected weak auxiliary is an exchange PLUS an upper band
+===============================================================
+At the same moving cutoff,
+
+ A(N)=c_alpha integral_epsilon_N^u_N
+                       [h_15(N,t)-h_6(N,t)]t^(-6/5)dt
+       +c_alpha integral_u_N^tau h_15(N,t)t^(-6/5)dt.         (8)
+
+The first integrand has the exact full-source relation
+
+ G_(15n)-G_(6n)
+ =G_(3n)[2^(-t)1_(2 does not divide n)
+                         -5^(-t)1_(5 does not divide n)],
+ h_15-h_6=(2^(-t)-5^(-t))h_3^+(N)
+             +5^(-t)h_15^+(N/5)-2^(-t)h_6^+(N/2).          (9)
+
+Equation (9) is again valid with all prime valuations and overlaps. Its
+current-channel coefficient has the opposite coprime-sector orientation
+to (5), but the divisible sectors retain their own signs. There is no
+constant proportionality J_15=c J_6 and no termwise signed contraction.
+The second term in (8) is a genuine parameter band. Its absolute envelope
+is of order N^(2/3), not a paid square-root remainder. Thus it cannot be
+silently discarded or replaced by its width times a presumed RH bound.
+The subband auxiliary has distinct arithmetic content; distinctness alone
+is not control of the target.
+
+4. Complete subband transport and a new paid boundary power
+==========================================================
+For any integers M>N, oriented-integral algebra gives
+
+ L_6(M)-L_6(N)
+ =c_alpha integral_epsilon_N^u_N [h_6(M,t)-h_6(N,t)]t^(-6/5)dt
+  +c_alpha integral_epsilon_M^epsilon_N h_6(M,t)t^(-6/5)dt
+  -c_alpha integral_u_M^u_N h_6(M,t)t^(-6/5)dt.              (10)
+
+The spatial difference is the exact interval sum
+2 sum_(N,n<=M)G_(6n)-3 sum_(2N,n<=2M)G_(6n)
++sum_(4N,n<=4M)G_(6n), with left endpoints excluded and right included.
+The last integral is EXITING upper flux. It is absent from a full-middle
+transport and mandatory here. Equations (10) and its oriented form remain
+valid even when the cutoff is capped or the endpoint intervals overlap.
+
+Changing variables u(t)=1/3+t/3 pairs both fluxes. The total boundary
+part of A(M)-A(N), separate from its two spatial integrals, is exactly
+
+ c_alpha integral_epsilon_M^epsilon_N
+ [ (h_15(M,t)-h_6(M,t))*t^(-6/5)
+      +(1/3)h_6(M,u(t))*u(t)^(-6/5) ]dt.                    (11)
+
+This is a concrete signed low/high parameter compensation primitive. It
+retains the linked endpoint and its Jacobian 1/3. Treating each flux with
+a favorable independent sign would not be a proof.
+
+The exiting upper flux alone admits a genuine sub-square-root bound for
+children M=2N+r, r=0,1:
+
+ |c_alpha integral_u_M^u_N h_6(M,t)t^(-6/5)dt|
+                          <=144 N^(7/18), N>=2.             (12)
+
+Proof is elementary and source-free. At integer M the d=1 term in the
+finite divisor representation is zero. For 1/3<=t<=1/2,
+|h_6(M,t)|<=sum_{d<=4M}d^(-t)<=2(4M)^(1-t)<=8M^(2/3).
+Also t^(-6/5)<=9 and c_alpha<2. The width is
+u_N-u_M=(epsilon_N-epsilon_M)/3<=N^(-5/18)/3.
+Hence the bound is <=48M^(2/3)N^(-5/18). Since M<=3N and
+3^(2/3)<3, (12) follows. This proof includes a cap transition.
+For adjacent M=N+1 the same reasoning and the cutoff derivative give
+<=96 gamma N^(-11/18). These estimates are for the flux, not for the
+whole upper band in (8).
+
+An immediate growth-class consequence requires no signed covariance:
+the exiting flux divided by sqrt(N) is at most 144 N^(-1/9). Along any
+chain N_(j+1)=2N_j+r_j, r_j in {0,1}, its absolute normalized sum is at most
+
+ 144 N_0^(-1/9)/(1-2^(-1/9)) <=5184 N_0^(-1/9).             (12a)
+
+Indeed N_j>=2^j N_0, and 1-2^(-1/9)>=1/36 follows from log2>=1/2,
+log2<=1 and 1-exp(-x)>=x/2 for 0<=x<=1. Normalizing by the child sqrt(M)
+only decreases this bound. Thus a norm-level triangle/slack recurrence
+with nonexpansive recovery can absorb THIS component as a finite additive
+slack, without proving its sign or a fitted F-drift constant. This does
+not pay the spatial forcing or the lower-endpoint innovation. A more
+general propagator must state its amplification cost; arbitrary growing
+transport coefficients cannot be assigned this free summability rule.
+
+The incoming lower flux is paid at square-root amplitude by the forced
+k=2 microscopic bound. All such component bounds preserve the growth
+class. They do NOT pay the selected energy drift constant: after squaring,
+the transported parent multiplies the flux and all spatial/boundary crosses
+remain. Bounding that parent by the desired target bound would assume the
+conclusion. In particular a small upper-flux amplitude is not proof of a
+small uniform signed-work forcing.
+
+5. Exact storage work and what a distinct source lemma must do
+============================================================
+For (1) put v(N)=(J_6(N),A(N)/2)/sqrt(N). Its exact work is
+
+ F_A(M)-F_A(N-1)
+ =2 <v(N-1),v(M)-v(N-1)>+||v(M)-v(N-1)||^2.                (13)
+
+The auxiliary temporal contribution is
+[A(M)^2/M-A(N-1)^2/(N-1)]/4; it can be positive or negative.
+The differing endpoints in (8)-(11) are retained before either square.
+Naming this innovation does not supply the uniform upper bound in (1).
+
+For (2), use v(N)=(J_6(N),2B(N))/sqrt(N), and
+bar_v=(2/3)v(N-1)+(1/3)v(N). The exact work is
+
+ F_B(M)-(2/3)F_B(N-1)-(1/3)F_B(N)
+ =2<bar_v,v(M)-bar_v>+||v(M)-bar_v||^2
+                  -(2/9)||v(N)-v(N-1)||^2.                (14)
+
+The last term is real negative neighbor variance, but it is not a guaranteed
+coercive credit against the spatial innovation. The verified failure of
+(2) demonstrates this for its actual fixed coefficients and constant.
+No coefficient change or larger constant is proposed here.
+
+The distinct next proof primitive is (6), coupled with the interval
+transport and the linked flux (11). It allows a detector to enumerate
+actual prime-removal/lower-argument transports and parameter-band
+compensations with exact unit descriptors, rather than merely different
+energy coefficients. A candidate source lemma can then target, for example,
+a joined correlation between the odd-parent pairing of h_6 and the
+current single-prime forcing plus the smaller real-argument terms of (9).
+Every lower real argument, attenuation, unit, spatial entry, and moving
+cutoff must occur in the displayed source-bound expression.
+
+A valid proof schema must identify a separately provable bound on that
+joined arithmetic correlation, or an independently controlled induction
+forcing after (6). It must not just restate (13), impose unknown square-root
+bounds on h_3 or weighted companions, assume independent prime signs,
+replace a signed exchange by its coprime sector, or erase the upper band.
+Currently no such signed source lemma has been proved. The precise open
+forcing is (9)'s weighted current/lower transport together with (8)'s
+upper-band spatial contribution, correlated with the retained J_6 state.
+
+6. Recovery and scope after the failures
+=======================================
+If a surviving recurrence (1) were proved for every integer N>=3 and
+both parities, the already proved neighbor-parent induction gives
+F_A=O(log N) for delta=0 and bounded F_A for delta>0, using all bases 2..5.
+Then |J_6|<=sqrt(N F_A), and the paid microscopic and t>=1/2 endpoints
+restore the complete E_6 source with no discarded crosses. The fixed-E_6
+conditional RH bridge applies. This is an implication, not a proof of any
+of the twelve finite survivors. The positive delta versions demand bounded
+middle energy, a stronger auxiliary than the logarithmic route.
+
+A source-free base for the full selected forms is supplied by review057,
+including their proper partial-integral envelope. Its large conservative
+constant does not make the fitted small recurrence constant uniform.
+The full endpoint square identity is always
+(J+e)^2=J^2+2Je+e^2; a paid |e|<=constant sqrt(N) cannot determine its
+cross sign or preserve an old numerical drift budget.
+
+This review has established new exact exchange/lower-real-argument
+identities and a paid N^(7/18) exiting subband flux. It has not established
+a uniform middle recurrence, a source-specific signed covariance bound,
+or RH. The finite auxiliary improvement is mixed and the delta=1 claim
+is refuted. The suggested next search language should expose the exact
+new transport forcing, not retrospectively promote the finite winner or
+retune its rejected constant. All edits to this new review are stopped.

@@ -1,0 +1,47 @@
+{
+  "RH_proved": false,
+  "capabilities": [
+    "compositional signed bounded sums",
+    "two-axis signed arithmetic kernels",
+    "exact rational fractional-power cutoffs",
+    "scale-dependent actual-prime predicates",
+    "explicit complementary domain partitions",
+    "signed polarization",
+    "quadratic and higher polynomial relation multipliers",
+    "zero-cost scalar slack objective",
+    "complete prime-coboundary equality certificates"
+  ],
+  "fresh_discovery_evaluation": false,
+  "global_bound_proved": false,
+  "next_unresolved": "Frozen adaptive candidate generation and full signed estimate search using this backend; uniform all-scale arithmetic estimate remains open.",
+  "old_grouped_frozen_sources_unchanged": 20,
+  "scope": "Outcome-informed language/proof calibration; no new bound search",
+  "signed_cancellation_estimate_discovered": false,
+  "source_hashes": {
+    "CANCELLATION_LANGUAGE_HANDOFF.txt": "422bbac4530b1ae45f993f04e284e6783799f9f7454b7add6f052bf78c051946",
+    "arithmetic_cycle_controls.py": "0d7ccd21f07f2244565e9e595ccaa4538db925f4ce24fc2c756af8a9fccaa995",
+    "arithmetic_cycle_language.py": "08524016771c787269ebbf811ec52275261d1d51bfd6ed6096c9550db6723688",
+    "arithmetic_cycle_synthesis.py": "c4985ad6bc49415622f6ede2441fc28157dcb9dde4da6e4d13374a6e6ff05204",
+    "cancellation_arithmetic_language.py": "9b598c772b9d4159768f7a48371a06ab8a53f2e4a5cde3866b049618d27d37b9",
+    "cancellation_arithmetic_synthesis.py": "f123a142701a01985e57060208d8933642fa1068871f795149128861a9a02111",
+    "cancellation_language_design_review.txt": "38e863e279e1c149d8ced3fffbcc11c33b2c13aba826d2bd2fc2f89f08b48ad9",
+    "cancellation_language_independent_review.txt": "bae0288acd60435e5d381d5b7a8a70064b7b80eacd01e25cf5523c8abe3a233e",
+    "cancellation_language_independent_review_002.txt": "6577212708f14d814ec703b23edce1e263f79c10795ae892c8488a70b2734b5d",
+    "cancellation_prime_transport.py": "63ee7d71cd040e903445b3b78072a3eac49113f97d2a6ca472783a37483538c6",
+    "check_arithmetic_cycle_certificate.py": "a2efbe5e421bbe0d15e30b6be513d9fa09607abae420c16f3f9667067b5bf7e8",
+    "check_grouped_arithmetic.py": "760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e",
+    "grouped_arithmetic_language.py": "aafa824b462477852df9ceca1cdf7fb153b17ec4184575e84030dac07ac9c9df",
+    "grouped_arithmetic_synthesis.py": "d9165d156dee1d57b7d6cd4901c319792e3fe4908369e4f80a8729aeff6777ad",
+    "test_cancellation_arithmetic_language.py": "5a780bd28e9f543a2dd7519e7cbe74f6b688ca14fba1cf0e321b4a418ec3f369",
+    "test_cancellation_arithmetic_synthesis.py": "351e5078e2a074dd6ec5073f5df657d4d1383a96553e67cc5be89e422d8f6eeb",
+    "test_cancellation_language_integration.py": "84d176dc9d7ea1e90ab1bfe11da36137a3dd6b0280a190ebd73280921730f4e0",
+    "test_cancellation_prime_transport.py": "087f991ebb05a7ecb30d7ffe5bf6a8122a11a88f066996303ecc32c9b3aed218"
+  },
+  "source_snapshot_timing": "after development and tests",
+  "supplied_calibrations": [
+    "one-prime Mobius coboundary and complete defect equality",
+    "synthetic rational shared-weight recovery and no-refit transfer for mu/c",
+    "gcd quartic elimination through a quadratic norm multiplier"
+  ],
+  "tests_passed": 17
+}

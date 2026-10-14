@@ -1,0 +1,222 @@
+ACTUAL PRIME-POWER PARTIAL MATCHING AND ITS ABSOLUTE-BOUND OBSTRUCTION
+
+Status and supplied bias.
+The complete actual target is c=mu*lambda, c(n)=lambda(n)2^omega(n), c(1)=1.
+This arithmetic source is constructed from every prime coefficient2(-1)^j,
+not from fitted signs or a finite sample assumption. The pairing algorithm and
+selector dictionary are supplied proof-method bias. They do not supply a new
+critical signed estimate. No old frozen source is changed. Development tests
+use a prespecified SMALL finite grid, not an optimized selector or new holdout.
+
+1. Exact one-prime sign-reversing edges.
+Fix an ACTUAL prime p. For p not dividing m and an odd integer e>=1,
+ c(p^e m)=-2c(m), c(p^(e+1)m)=2c(m).
+Thus n=p^e m and pn are opposite signs with identical magnitude. A complete
+edge exists in [1,X] iff pn<=X. Its certificate includes the actual p-free core,
+odd exponent, both endpoints and both coefficients. At exponent0 the weight
+changes1 to2: it is NOT an equal-weight cancellation edge and cannot be silently
+matched. A positive odd top exponent with its even partner aboveX is unmatched.
+For X=0 the domain and residual are empty; for X>=1 the coefficient at1 persists.
+
+The complete single-prime residual is therefore exactly
+ R_p(X)=C_p(X)-2sum_(j>=0)[C_p(floor(X/p^(2j+1)))
+                                -C_p(floor(X/p^(2j+2)))],
+ C_p(y)=sum_(n<=y,p not dividing n)c(n).
+All sums terminate. Its unsigned charge is
+ H_p(X)+2sum_(j>=0)[H_p(floor(X/p^(2j+1)))
+                                -H_p(floor(X/p^(2j+2)))],
+ H_p=sum_(p-free n<=y)|c(n)|.
+The intervals have lower endpoint floor(X/p^(2j+2)) EXCLUDED, upper endpoint
+floor(X/p^(2j+1)) INCLUDED; this keeps all cutoff boundaries exactly. Signed
+R_p(X)=C(X) because every removed pair sums0. This is an identity, not a bound
+on the core or signed boundary intervals.
+
+2. Disjoint multprime matching, exact selectors, resource semantics.
+Choose a supplied finite ordered list of actual primes, with no duplicates.
+Process each prime once in that order, matching its odd lower n with pn ONLY
+when BOTH endpoints are still unmatched and pn<=X. Lower candidates are scanned
+in increasing n. Each edge has zero signed sum; no endpoint is reused. Matched
+endpoints define a fixed-point-free involution. Everything else stays in the
+residual, including exponent0 cores, odd top boundaries and edges blocked by a
+previous prime pass. One cannot assume the single-prime residual formula applies
+after other passes without keeping those blocked terms.
+
+Complete coverage is a partition of all1..X into edges and residual. The signed
+prefix equals the complete signed residual; the original unsigned charge equals
+matched cancelled mass plus residual charge. The implementation verifies these
+identities and returns the full residual list. Exhaustion returns missing with
+NO partial arithmetic payload. Available output never means that the residual
+is small or has a favorable sign. Fixed prime order is part of the exact program.
+
+Selectors supported here: exact fixed prime list; ALL actual primes<=X; primes
+through min(X,floor(aX/b)), a>=0,b>=1 exact integers; primes throughfloor(X^(1/k)),
+k>=1 integer. Fractional/root cutoffs are evaluated at their own scale, not held
+fixed in a child. They do not escape the following obstruction. The supplied
+set can vary deterministically withX, but this alone is not a fixed Dirichlet
+filter and cannot inherit a fixed-filter pole theorem.
+
+Every coefficient throughX is constructed by a complete sieve, even when only a
+small prime subset is matched. The evaluator charges loops, arrays, prime lists,
+edge/residual record scalar cells and coefficient bit caps. It reports complete
+selected-prime support and all pass counts, including primes too large to have
+an inside partner. Physical object bytes, serialization cost and total bit
+complexity are not represented by this scalar work proxy. Claiming large prime
+support without its source/selector cost would be false. Automatic all-prime
+passes need scan candidates only up toX/p; primesp>sqrtX have no edge at all.
+
+3. Fixed prime subsets cannot give an absolutely sublinear residual.
+For a FIXED finite set S, put P=product_(p inS)p (P=1 if S empty).
+Every n<=X coprime toP has exponent0 at every selected prime and cannot be an
+endpoint of any allowed edge, regardless of greedy order. Since |c(n)|>=1,
+ unsigned_residual >= #{n<=X:gcd(n,P)=1}
+ >= (phi(P)/P)X-2^|S|.
+Finite inclusion-exclusion proves the last inequality: replace each floor(X/d)
+byX/d with error at most1 over the2^|S| squarefree divisors. Consequently ANY
+fixed finite prime dictionary has a linear residual charge asX tends to infinity.
+This concerns absolute charge, not the signed prefix; signs within the residual
+could still cancel. Adaptive growing prime support requires its own cost and
+still faces the universal obstruction below.
+
+4. Even ALL primes cannot yield a power-saving absolute residual bound.
+Every actual prime q with sqrtX<q<=X has exponent1, partnerq^2>X, and exponent0
+at all other primes. It can never be matched by ANY same-core odd/even primepower
+edge inside[1,X], not merely by this greedy algorithm. Its |c(q)|=2. Thus every
+partial matching in this entire class satisfies
+ R_abs(X)>=2[pi(X)-pi(sqrtX)].
+We now prove an explicit prime-count lower bound without using PNT or RH.
+
+For integer n>=1, the largest binomial coefficient among the2n+1 entries of
+(1+1)^(2n) is binom(2n,n), so
+ binom(2n,n)>=4^n/(2n+1).
+For each prime p, the exponent in this binomial is
+ sum_(j>=1)[floor(2n/p^j)-2floor(n/p^j)].
+Every bracket is0 or1, and onlyj<=floor(log(2n)/logp) contributes. Hence the
+prime power dividing this binomial is at most2n. Multiplying across its primes,
+ binom(2n,n)<=(2n)^pi(2n).
+Therefore pi(2n)log(2n)>=2n log2-log(2n+1).
+For EVERY integer X>=16, take n=floor(X/2). Since2n>=X-1 and2n+1<=X+1,
+ pi(X)logX >= (X-1)log2-log(X+1) >= (log2/2)X.
+The final inequality is exact: f(x)=(x/2-1)log2-log(x+1) is positive at16,
+since2^7>17, and increasing forx>=16 because
+ f'(x)=log2/2-1/(x+1)>=1/4-1/17>0,
+using log2=Integral_1^2 dt/t>=1/2. Consequently
+ pi(X)>=(log2/2)X/logX, EVERY integer X>=16.
+As pi(sqrtX)<=sqrtX,
+ R_abs(X)>=log2*X/logX-2sqrtX, EVERY integer X>=16.
+For all real X>=4096, logX/sqrtX is decreasing (logX>=2) and its value at
+4096 is(3/16)log2 <=(1/4)log2. Thus2sqrtX<=(log2/2)X/logX, and we obtain
+ R_abs(X)>=(log2/2)X/logX, EVERY integer X>=4096.
+All constants and endpoint ranges are rigorous; no numerical log approximation
+or measured prime distribution enters the proof.
+
+For ANY theta<1, (X/logX)/X^theta=X^(1-theta)/logX tends to infinity.
+Hence NO allowed same-core partial matching can have unsigned residual
+O(X^theta), even with all actual primes and arbitrary/adaptive matching order.
+In particular an absolute residual bound at square-root strength is impossible.
+This does NOT lower-bound |C(X)| or refute RH: residual positive/negative weights
+may cancel. It decisively rules out optimizing only these matchings as a route
+to a power-saving signed-prefix bound via triangle inequality.
+
+5. Tractable cancellation classes and the remaining boundary.
+On one complete prime-power line{1,p,...,p^K}, matched pairs remove all positive
+odd/even exponent intervals. Residual charge is1 whenK even and3 whenK odd,
+while the signed sum is(-1)^K. On a complete exponent box for a FIXED finite
+prime set, sequential axis pairing leaves at most two exponents per odd-top
+axis and has unsigned charge3^(number of odd K_i), independent of box height;
+the signed sum is(-1)^(sum K_i). These are genuine bounded sparse component
+sums with huge cancelled unsigned mass. Their coefficient support is a fixed
+prime-power box, not the full ordinary prefix. The natural product cutoff gives
+incomplete boundary faces, cores and the unavoidable large primes insection4.
+Box partition/inclusion-exclusion counts and boundary coefficients must be charged.
+Neither a low-dimensional box identity nor a large list of primes implies small
+full signed boundary energy.
+
+6. Exact connection to admissible fixed pole filters.
+The p-local series is(1-z)/(1+z). Therefore the TWO-term actual filtered prefix
+ G_p(x)=C(x)+C(floor(x/p))
+       =C_p(x)-C_p(floor(x/p))
+       =sum_(x/p<n<=x,p not dividing n)c(n).
+The corresponding coefficients vanish atp-exponent>=2; this relates odd/even
+pairing to an exact signed p-free CORE SHELL, not to a small unsigned boundary.
+Its multiplier1+p^-s has simple zeros and is pole-admissible foractual
+Fc=zeta(2s)/zeta(s)^2. Critical G_p energy would preserve ordinary zeta poles;
+a generic/actual bounded floor-inverse argument also works for this coefficient1.
+No such full signed shell bound is proved. The p-freecore series itself is
+Fc(s)(1+p^-s)/(1-p^-s), a rational nonvanishing multiplier inRe(s)>0 with
+explicit geometric primepower evaluation/inverse costs. Its critical energy is
+another equivalent unknown arithmetic assertion, not an easier bound supplied
+by the pairing identity. A prime moving withX does not have this fixed-series
+bridge unless separately proved.
+
+Future filters may be numerically learned from unrelated-reference responses
+and admitted only after freeze by the actual pole budget; the method must not
+supply a winning vector. Composing a filter increases its term count/zero
+multiplicity and requires the appropriate actual target pole budget, with every
+term/coefficient/arity cost charged. Known filtered identities are calibrations,
+not ordinary critical controls.
+
+7. Generic whole-inverse counterfeit and possible next lemma.
+The positive-inverse/involution counterfeit withh2(z)=(1+2z)/(1-2z) has
+c(2^j)=2(-2)^j. Its coefficients at2,4 are-4,+8, so the purported pairing does
+NOT have equal magnitude or zero sum. It has cubic ordinary energy despite
+complete c*h=Unit andh=|c|. This remains a valid counterexample to inference
+from whole positive-inverse/involution identities; actual h(p^j)=2 is the
+extra premise that makes our local edges valid. Tests retain and reject its
+false edge instead of silently assigning it actual provenance.
+
+The next useful lemma must act on SIGNED leftovers or allow rigorously
+charged transport between DIFFERENT p-free cores. Large primes have no same-core
+partner inside the cutoff. Merely adding primes or choosing an empirical
+matching order cannot remove this structural obstacle. A cross-core weighted
+transport certificate must prove exact arithmetic edge masses and globally
+control the complete signed leftover; matching positive and negative masses
+by their observed total would only repackage the unknown C(X). Alternatively
+prove an actual cofinal critical-energy bound for the complete p-free shells
+or a full signed Lyapunov innovation with all boundary/cross terms. Sparse
+filtered targets need a checked ordinary-zeta pole budget. The absolute-count
+obstruction does not certify such a signed estimate; it identifies where new
+arithmetic information is genuinely required. No RH result is assumed or claimed.
+
+8. STRONGER LINEAR OBSTRUCTION: isolated squarefree upper-half vertices.
+This elementary strengthening supersedes the X/logX charge obstruction for the
+full matching class. The prime argument remains a separately valid actual-prime
+component lower bound; no distribution result is needed for the stronger one.
+
+EVERY squarefree integer n with X/2<n<=X is isolated under every permitted
+same-core odd-positive/even primepower move. If p divides n, its exponent is1,
+so the only possible partner ispn>=2n>X. There is no even positive exponent
+allowing a downward move. If p does not divide n, exponent0 is not an allowed
+matching edge. This reasoning applies to ALL actual primes, any order, any
+adaptive selection, and any partial matching in the stated class.
+
+For integer X>=1 the interval(X/2,X] containsceil(X/2)>=X/2 integers.
+Every nonsquarefree member has p^2 dividing it for some primep<=sqrtX.
+The number of multiples ofp^2 in that interval is exactly
+ floor(X/p^2)-floor(X/(2p^2))<=X/(2p^2)+1.
+The union bound, including all overlaps, therefore gives
+ #nonsquarefree_upperhalf <=(X/2)sum_p p^-2 +#{p<=sqrtX}
+                         <=3X/8+sqrtX.
+The reciprocal bound is elementary and exact:
+ sum_p p^-2 <=sum_(m>=2)m^-2
+             <=1/4+Integral_2^infinity t^-2 dt=3/4.
+For the last inequality, each termm^-2 withm>=3 is at most its integral over
+[m-1,m] because t^-2 is decreasing. The prime count is bounded bysqrtX simply
+by its integer support. No prime number theorem or Chebyshev bound is used.
+Thus the number of isolated squarefree vertices is at least
+ X/8-sqrtX >=X/16 for EVERY integer X>=256,
+because sqrtX<=X/16 is equivalent toX>=256. At this threshold and beyond all
+upper-half vertices are>1, so actual |c(n)|=2^omega(n)>=2. Consequently
+ UNSIGNED_RESIDUAL(X)>=X/8 for EVERY integer X>=256,
+for EVERY same-core matching in this entire class, even using all primes.
+The certificate records rationalX/16 andX/8 and checks the threshold by integer
+squares; no actual response or floating comparison enters its admission.
+
+This rules out even an unsigned residualo(X), not merely a power-saving bound.
+It decisively removes the proposed triangle-inequality route to sublinear
+ordinary-prefix control. It still does NOT lower-bound the SIGNED residual or
+|C(X)|: cancellations across the isolated squarefree cores remain possible and
+are precisely the unsolved arithmetic. Cross-core transport or a full signed
+leftover estimate is necessary for this method to progress. No actual large
+unseen data were run to establish this theorem. Development tests independently
+count upper-half squarefree vertices only on the already declared small grid
+through256 and check the exact symbolic threshold.

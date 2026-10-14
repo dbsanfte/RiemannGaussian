@@ -1,0 +1,27 @@
+SUPPLIED FACTOR CALIBRATION HANDOFF
+
+Archive: cancellation-arithmetic-results/factor-calibration-001.
+The protocol and complete source snapshot/seal were written BEFORE contracts or
+fixtures. Sources include the seven new factor compiler/checker/adapter/test/
+runner files and every dependency bound by the prior pilot source seal. Live and
+frozen hashes were checked before and after fixture evaluation. Archive creation
+refuses an existing directory. All finalized factor sources are now held fixed.
+
+Ten unit tests passed (3 producer,3 independent checker,4 adapter). Six exact
+fixtures use (q,X)=(2,8),(3,27),(6,64), each with coprime false/true, source
+horizon2X, inclusive fractional upper cuts floor((3/2)X^(1/q)), lower0, signed
+kernel(3/5)a-(2/7)b and fixed multiplier x1-x2. The complete ordered product
+domainab<=2X is retained, including kernel-zero pairs, noncoprime residual when
+applicable, inside/complement, every product collision and all relation terms.
+The independent checker directly reconstructs cutoffs, pairs and polynomials;
+it imports no producer arithmetic. Both coefficient rewrite and exact full
+partition checks pass for every fixture. Full records, protocol/test/source
+hashes and verification are stored in the archive.
+
+This is an explicitly SUPPLIED identity calibration. No discovery, regression,
+solver score, actual coefficient response, new signed estimate or RH claim is
+made. The adapter's existing integration tests establish a route into shared
+finite groups; this archive does not integrate the factor dictionary into the
+current full-Gram solver. That would need a separate frozen protocol, complete
+joint-instance binding, independent certificate audit and unchanged original
+full target. All added scalar/gamma coefficients remain zero under this adapter.

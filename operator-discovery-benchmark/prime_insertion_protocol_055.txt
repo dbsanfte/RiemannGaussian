@@ -1,0 +1,88 @@
+FROZEN055: MIXED PRIME INSERTION AND AUXILIARY DRIFT DISCOVERY
+
+Target: the actual ordinary-Mobius alpha1/5,q2,P[2,-3,1] signed filter
+t0(N)=[A(4N)-3A(2N)+2A(N)]/alpha, all integerN>=2. It survived054 finite
+testing but its uniform bound is OPEN. This experiment searches auxiliaries
+and uniformly quantified drift estimates; it does not refit that old C2.
+
+Generic new source production: compose D_p=I-E_p, E_pK(n)=K(pn), for distinct
+actual primes. On radical-invariant K these commute and are idempotent.
+For a canonical setS withR=productS, K_S=D_SK is zero when gcd(n,R)>1;
+otherwise K_S(n)=-sum_(d|n)mu(d)(log(Rd))^alpha for n>=2. It is nonnegative
+and <=K. The unitn1 is excluded from B_S(X)=sum_(2<=n<=X)K_S(n); its actual
+mixed value would be-log(R)^alpha. Arbitrary canonical rational0<alpha<1
+is supported by the implementation; this pilot binds one existing target.
+
+Pilot feature sets: empty,2,3,5,2*3,2*5,3*5. Reuse054 alpha1/5 arrays through
+128000. Recover K by prefix differences; exact signed dilation combinations
+give each insertion prefix. Common-atom cancellation allows tight errors:
+for coprime n, K_up(n) upward andK_down(n)+1_(R>1) downward. The extra unit
+uncertainty is mandatory. Shared-prime rows are exactlyzero. Every native
+integer difference, subset sum and prefix has a capacity check before use.
+No producer logarithm or Mobius atom is reevaluated. Save nonempty insertion
+prefixes for future reuse; the empty feature shares the old dense arrays.
+
+Define t_i(N) as the same alpha-normalized quadratic scale filter of B_S.
+Enumerate primitive signed integer vectors a with support1or2, nonzero
+coefficients -2..2, first nonzero positive and gcd1, omitting the scalar-only
+target auxiliary. For lambda1/4,1,4 propose
+  F(N)=[t0(N)^2+lambda*(sum_i a_i*t_i(N))^2]/N.
+Include lambda0 target-only baseline. This gives397 energy forms. All keep
+the signed companion mixture before squaring and satisfy F>=t0^2/N exactly.
+
+For each form, propose fixed both-child inequalities
+  F(2N+r)<=F(N)+C/N^delta, EVERYintegerN>=2 andr0,1,
+at delta0,1/7,1/3,1/2,1 (1985 proposals). General rational nonnegative delta
+is supported; no special denominator whitelist. ChooseC only from0 or2^k,
+k=-12..8, taking the smallest enclosing every training upper interval.
+Intervals use192-bit decay enclosures and exact rational arithmetic.
+
+Training parentN: every2..128 plus191,257,383,509 (131parents,262branches).
+Final parentN:131,193,263,389,521,769,1013, both children for each. Training
+and final TRANSITIONS are disjoint. Underlying target values were already
+observed in054, and some final parent channels also occur as training-child
+channels. Do not claim a wholly unobserved arithmetic source. New auxiliary
+drifts are evaluated under a frozen split; the selector sees training drifts
+only. Store the entire candidate archive before proof attempts/final scores.
+
+Rank larger decay exponent, then coarseC, complexity, coefficient/weight
+cost and stableid. Reserve the baseline, then one slot for each companion
+feature using the same ranking. Archive at most7 distinct forms. The search
+imports no proof provider and has no expected winning formula. Numerical
+constant improvement is evidence only, not a proof or a new exponent gain.
+
+Independently check exact Boolean algebra, common shifted atoms, prime masks
+and unit corrections. For every selected final feature/endpoint, independently
+reconstruct ordinarymu by divisor recurrence and needed shiftedlog atoms via
+192/256/384-bit exp(alpha log log(Rd)). Sum complete coprime cofactor counts,
+including the correlated unit correction BEFORE rounding. One opaque checker
+context reuses common shifted atoms within this new audit. Rebuilding overlaps
+old053 atoms; report this work, not an assertion of zero repeated source work.
+The checker uses no source-producer implementation or saved verification flag.
+
+Independently reconstruct final energy intervals from checked source values,
+and forcing intervals via256-bit rational powers. All final comparisons run;
+no parameters are refitted after a failure. A strict failed drift refutes
+only that unchanged recurrence, not the old targetC2, other recurrences orRH.
+
+Proof attempts: explicit coefficient matrices keep every signed cross term.
+Source positivity pays the base B=108/alpha^2*(1+lambda*L1(a)^2). Assuming the
+OPEN drift, both-parity halving gives F<=B+C log_2 N fordelta0, or
+F<=B+2C/delta fordelta>0. These yield RH-strength target growth conditionally;
+they do not establish the actual drift. The paid pointwise provider instead
+gives F<=4*(1+lambda L1^2)*N*(log(4N))^(2alpha)/alpha^2, whose power1 does
+not close the required drift power-delta. Keep the full joined correlation
+as the new unpaid input, with no circular use of the recovered target bound.
+
+The analytical review also bounds the large-t Laplace tail uniformly inN.
+After selecting the archive, independently check this new symbolic provider
+for all7 features at fixedcutofftau8: empty-set bound18*2^-8; nonempty bound
+12*2^|S|*R^-8. No numerical integral is evaluated. The low-t joint arithmetic
+remains OPEN, including its cross terms with the bounded tail. Tail control
+does not close the full target or the proposed drift.
+
+Freeze16 source/test/receipt/protocol/review files before scientific array
+access. Use3 process workers to score independent energy forms, with shared
+read-only training data and no repeated source construction.16GiB aggregate
+memory is authorized. Preserve167 prior frozen files by literal bytes;
+no hashes, old successful test suite or old scientific study replay.

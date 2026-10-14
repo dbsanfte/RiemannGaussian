@@ -1,0 +1,260 @@
+INDEPENDENT POST-RUN MATHEMATICAL REVIEW078
+
+Scope and evidence
+==================
+This review reads the frozen078 runner/protocol and saved
+rough_energy_followup_001 report, candidates, dependencies and witnesses.
+It makes no new Mobius/source query, reruns no scientific experiment, and
+changes no frozen file. The pre-run mathematical/static review remains
+MOBIUS_ROUGH_ENERGY_REVIEW_078.txt. This is a separate post-run review.
+
+1. Admission and experiment audit
+================================
+The runner loads discovery/adaptation/final076 rows through their existing
+independent source admissions and rejects conflicting duplicate rows. A new
+compiled077 stencil is checked against its actual admitted076 parent row;
+reused077 compiled stencils retain their source identity and stencil checks.
+Every prime fold is checked, and every signed ten-channel partition must
+recombine to the saved residual polynomial. Parent count-power tokens remain
+parent tokens inside its rough children. The dyadic recurrence's literal
+half is a separately admitted parent row, with its own tokens; these are two
+different meanings of child and must not be conflated.
+
+The runner preflights all discovery/base/validation parents and literal
+halves against known076 arithmetic before creating the experiment. There
+are167 discovery source parents and268 validation source parents,259 of
+the latter outside the discovery source set. Their union has426 parents.
+These are new rough decompositions of known arithmetic, not a fresh
+historical holdout and not a longer arithmetic horizon. Discovery has102
+recurrence parents; validation has170. The sparse phase bases are NOT a
+complete integer induction base.
+
+The floating LP proposes formulas only. Exact lambda rounding is downward;
+the rational weighted coefficient budget is restored by rescaling if
+needed. Since changing lambda can change drift in either direction, the
+subsequent exact upward recalibration of C is essential and is performed.
+Each selected formula and its C is written before validation features are
+evaluated; its bytes are checked afterward. A separately calibrated
+zero-auxiliary baseline uses the same gamma,q,tau and source. Interval drift
+certification uses parent upper minus tau times child lower; refutation
+uses parent lower minus tau times child upper. Thus the failed inequalities
+below have the correct enclosure direction, including fractional q/eta.
+
+Selection uses a floating score across gamma, so it need not select the
+best exact-calibrated score. This limits search optimality; it does not
+invalidate the selected formula's exact finite checks. The report is honest
+about complete base, uniform drift, residual/source/head/core and RH being
+unproved. Tau1's base+C score is a ranking device, not a constant normalized
+energy bound.
+
+Two pre-freeze accounting cautions were sent to root. The displayed operation
+totals charge task work but omit factor-data construction in worker
+initializers; stage wall time and sampled/conservative RSS still include
+that work. Also search initialization trusts the runner's freshly written
+feature files rather than repeating read_rows' admission-status gate.
+Selected discovery/validation rows do pass that gate before final checks.
+Neither caution supplies an arithmetic theorem or changes a failed witness.
+
+2. Actual result and strongest selected formula
+==============================================
+The saved report records459 LP proposals over3 sources and17 cutoffs,
+952 auxiliary atoms,27 frozen selected energies,10848 signed feature rows,
+79.84450295899296 seconds, and conservative summed process peaks
+2746163200 bytes. All27 selected formulas have positive auxiliary rays;
+all selected gamma exceed1/2. All27 fail validation:1813 REFUTED_FINITE,
+2777 CERTIFIED_FINITE, zero unresolved among4590 recurrence rows. Matching
+zero-ray baselines also all fail, with928 refuted rows in aggregate.
+These counts compare formulas with separately calibrated C; a larger count
+of failed auxiliary inequalities does not by itself rank arithmetic operators.
+
+The smallest exact discovery score ratio is q1_p04_q1_tau3_4:
+ gamma=3/5, q=1, tau=3/4;
+ ratio=31990120424/51010077999, approximately0.627133336762;
+ C=3998765053/137438953472;
+ observed energy base upper=
+ 4363459679071489885744929/214361296035296088193761280.
+Its three auxiliary squares are
+ (V8-V9)^2 with lambda4854879/16777216, eta0;
+ (V1-V9)^2 with lambda32910955/2097152, eta1/4;
+ V1^2 with lambda1171745/16777216, eta0.
+Indices here are zero-based: V1 is the negative terminal-prime sum;
+V8,V9 are the second and third least-prime bins. The underlying fixed076
+residual is R(u)=G(u)+(3547/8192)G(floor(u/3)), not the energy itself.
+
+This selected formula certifies102 and refutes68 validation recurrences.
+Its first saved witness is u122801, h61400, with exact drift lower
+ 1173213406391022188692319142766307452359983 /
+ 25936119581018951929479726868310815827558400
+and upper
+ 5985782686368098654773650943816475269633 /
+ 132327140728807507622365141878146754150400.
+The enclosure is approximately[0.04523473153824,0.04523473154034],
+strictly above C approximately0.02909484503471. The lower/C ratio exceeds
+1.55473. This is a physical signed-feature/token-bound witness, not a
+floating LP rejection or an l1-method obstruction. It refutes this fixed
+drift/C formula on the advertised validation domain. It does not refute
+every possible C, the residual operator, the original075 arithmetic leaf,
+or RH. There is no successful complete paid bound to report.
+
+3. A uniform obstruction to terminal-prime auxiliary squares
+===========================================================
+Unlike a finite witness, the following is an all-scale obstruction to a
+specified auxiliary-energy grammar. Its only imported arithmetic theorem
+is the unconditional prime number theorem pi(x)~x/log x. Primary reference:
+Don Zagier, Newman's Short Proof of the Prime Number Theorem, American
+Mathematical Monthly104(1997),705-708; the theorem is stated on705 and
+deduced on707. Author-hosted primary PDF:
+https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf
+All kernel/folding conclusions below are deductions from that theorem.
+
+Let a fixed finite constant rational kernel be
+ c_u(n)=sum_d b_d 1_{1<=n<=floor(u/d)},
+with fixed positive integer divisors after merging duplicates. More
+generally fixed rational endpoints work identically. Define its mass
+ m=sum_d b_d/d.
+For fixed finite distinct primes P, Q=product(P), let
+ f_P,u(n)=sum_{e|Q} mu(e)c_u(en).
+The exact floor identity floor(floor(u/d)/e)=floor(u/(de)) shows this is
+again a fixed prefix kernel. Its mass is
+ m_P=m sum_{e|Q}mu(e)/e=m delta_P,
+ delta_P=product_{p in P}(1-1/p)>0.
+No observed Mobius value enters this mass calculation.
+
+For each fixed positive endpoint v, PNT gives
+ pi(vu)=vu/log u+o(u/log u).
+Finite linear combination therefore gives
+ sum_{prime p} f_P,u(p)=m_P u/log u+o(u/log u).
+Using < versus <= at a prime endpoint changes only a bounded number of
+terms. Removing the finitely many primes in P changes only O(1).
+If H(u)=h u+O(1), h>0, and y=ceil(H(u)^gamma) with FIXED0<gamma<1,
+then the removed prime sum at p<=y is O(y)=o(u/log u), since coefficients
+are uniformly bounded. Consequently the actual terminal-prime coordinate is
+ V1(u)=-m_P u/log u+o(u/log u).
+This conclusion holds for every0<gamma<1; gamma>1/2 is not needed for the
+pure-prime coordinate. The fixed gamma, fixed P, fixed coefficient kernel
+and nonzero mass assumptions matter.
+
+For lambda>0 and a pure prime ray with eta>=0,
+ E(u)/u^q >=lambda*u^(-2eta-q)*V1(u)^2
+ ~lambda*m_P^2*u^(2-2eta-q)/(log u)^2.
+If2-2eta-q>0, this lower bound grows faster than log u. Any eventual
+all-integer normalized recurrence F(u)<=tau F(floor(u/2))+C, with a finite
+complete base and fixed C, implies bounded F for tau<1 and O(log u) for
+tau1. Hence such a recurrence is impossible for this energy, for EVERY C
+and eventual threshold. This is a proved energy-method obstruction, not
+an assumption of small R or an RH implication.
+
+For the source G, m=1/8-1/10-1/4+1/5=-1/40. For direct3 residual above,
+ m=(-1/40)*(1+3547/(8192*3))=-28123/983040.
+For P={2,3,5,7}, delta_P=8/35 and m_P=-28123/4300800.
+The strongest discovery energy contains the positive pure-prime eta0 ray,
+so q1 gives growth at least a positive multiple of u/log^2u. The selected
+direct3 tau1/2 energy likewise contains a pure-prime eta1/4 ray with
+lambda314487429/16777216; q1 gives u^(1/2)/log^2u. Both are impossible
+uniform normalized recurrences irrespective of their finite calibrations.
+For arbitrary q the exact scanner condition remains2-2eta>q.
+
+The executable certificate can contain: merged rational prefix kernel,
+fixed P, exact mass and delta, fixed gamma domain, positive ray weight,
+exact rational exponent gap, and identity of the pure-prime coordinate.
+An independent checker can verify all algebraic gates; PNT remains the
+named imported theorem. Gate failure means UNRESOLVED by this obstruction,
+never VERIFIED_DRIFT. Mass0, exponent gap<=0, moving kernels/coefficients,
+moving P, or gamma1 need different reasoning. In particular076 prime-block
+count-token predictors cannot automatically be treated as constant kernels.
+
+4. A stronger cancellation-aware ray obstruction
+===============================================
+For fixed gamma>=1/2 and gamma<1, y>=sqrt(H) eventually (indeed exactly
+when H>=1 in the equal case). Products of two primes strictly greater than
+y exceed H. Thus terminal layers r>=2 vanish. V0=f_P,u(1)=O(1), and the
+three least-prime bins sum R-V0-V1.
+
+Suppose a ray has equal coefficients b on all three bins and coefficient
+a1 on the terminal prime channel. Its other terminal coefficients r>=2
+are immaterial. Exactly,
+ a.V=bR+(a1-b)V1+(a0-b)V0=bR+J.
+For t=lambda*u^(-2eta)>0, completing the square yields
+ R^2+t(bR+J)^2
+ =(1+t b^2)[R+t b J/(1+t b^2)]^2+t J^2/(1+t b^2)
+ >=t J^2/(1+t b^2).
+If a1!=b and m_P!=0, J has a nonzero u/log u main term, while
+1+t b^2<=1+lambda b^2 for u>=1,eta>=0. The same exponent-gap obstruction
+therefore applies WITHOUT assuming any bound on R. This extends the
+pure-prime detector to many terminal/bin block contrasts. Equal a1=b
+escapes this gate because prime/composite transport cancels in that ray's
+R projection. Unequal bin weights cannot be collapsed by this identity;
+their individual arithmetic asymptotics remain unpaid.
+
+This makes the lesson more precise than forbidding primes: a positive
+auxiliary norm must respect the large prime/composite cancellation mode.
+Normalizing a pure-prime coordinate enough to escape this gate does not
+prove the remaining drift; it only removes one necessary-condition failure.
+Zero mass also is not safety. Higher inverse-log terms may obstruct a
+nonzero mass-zero fixed kernel, but that stronger theorem needs an imported
+prime-count expansion with its remainder, not just ordinary PNT. It is
+left unpaid here, as agreed with root.
+
+5. Exact flux construction and a payable next bound grammar
+=========================================================
+Let h=floor(u/2), d=(1,...,1), and write
+ M_u=dd^T+sum lambda*u^(-2eta)*aa^T,
+ F(u)=V(u)^T M_u V(u)/u^q.
+Because eta>=0 and h<=u, M_u<=M_h in PSD order. Define the exact signed
+flux D=V(u)-V(h). It must be compiled from the union of the two admitted
+token sets, not evaluated after rebinding parent tokens to child tokens.
+
+Put s=(h/u)^q. For tau>s, matrix Young and M_u<=M_h give
+ F(u)-tau F(h)
+ <= [tau/(tau-s)] * D^T M_u D/u^q.
+Proof: use (x+y)^TM(x+y)<= (1+epsilon)x^TMx+
+(1+1/epsilon)y^TMy with epsilon=tau/s-1, x=V(h), y=D.
+The child term is then at most tau F(h). The remaining exact scalar
+price is1+1/epsilon=tau/(tau-s).
+At even u,q1,tau1/2, tau=s: no finite universal Young price for an
+arbitrary flux exists. Tau3/4,q1 has price3; tau1,q1 has price2.
+At q just above1 and tau1/2 the price is large. These facts explain a
+specific contraction-margin limitation, rather than diagnosing LP failure
+as an arithmetic impossibility.
+
+An executable next detector should construct D symbolically by splitting
+the shared integer index domain at BOTH support and cutoff breakpoints.
+Cells record stable category, changed rough/least-prime category, new outer
+support, excluded-square/prime status, and exact coefficient/token changes.
+All boundary cells and signed terms remain. Search small signed quadratic
+forms on these flux cells and their interactions with V(h), preserving
+prime/composite cancellation. The separately payable leaf could be
+ D^T M_u D/u^q <= C*(tau-s)/tau,
+or a sharper signed correlation inequality retaining the cross term.
+Neither is certified by its finite fit; the outer support generally still
+contains the difficult signed Mobius arithmetic. Taking coefficient l1
+again returns the already proved077 obstruction.
+
+For a richer generic rule set z_u=V(u)/u^(q/2), z_h=V(h)/h^(q/2), and
+z_u=T z_h+W, with T specified independently and W exactly compiled from
+the signed transport cells. If an independently checked block matrix
+ [ tau M_h-T^T M_u T,  -T^T M_u ]
+ [ -M_u T,             K-M_u    ]
+is PSD, then F(u)-tau F(h)<=W^T K W. A genuine arithmetic leaf
+W^T K W<=C closes drift. Rational interval enclosures or symbolic scalar
+inequalities must pay every fractional power in the PSD certificate; a
+floating eigenvalue check is not a uniform proof. Defining W as the
+transport difference is exact, but does not itself pay its energy. Choosing
+K or a leaf by simply renaming the original drift is circular and supplies
+no progress. The useful search restricts flux cells/ranks and derives
+their identities first, then tests genuinely separate signed correlation
+leaves and records their own witnesses.
+
+6. What078 advances and what remains
+===================================
+The experiment successfully constructed and independently admitted a new
+signed rough state, searched actual auxiliary recurrences, froze formulas,
+and obtained exact failed witnesses. The prime-main-term detector gives
+an additional rigorous pruning rule for a class of auxiliary energies.
+None of this proves a uniform exponent for the residual. Its useful next
+target is a cancellation-respecting signed flux/correlation estimate with
+an exact transport certificate and an independent arithmetic leaf.
+Complete energy base, all-integer drift including count/cutoff jumps,
+original residual/correlation/source transfer, an epsilon family, and
+head/core/RH remain open. The original signed candidate is not rejected
+merely because its chosen positive-square auxiliary energy is impossible.

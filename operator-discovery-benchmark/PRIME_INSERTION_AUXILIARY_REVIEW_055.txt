@@ -1,0 +1,318 @@
+MIXED PRIME INSERTION AND ALL-INTEGER ENERGY RECOVERY: REVIEW 055
+
+Scope
+=====
+This is a new source-only analytical review. All frozen files and results are
+preserved. No scientific source values, norm observations, integrals, tests,
+or hashes were computed. The fixed target has alpha=1/5 and
+
+ t0(N)=[A(4N)-3A(2N)+2A(N)]/alpha, every integer N>=2.
+
+The general algebra below is valid for any fixed 0<alpha<1. Here K(1)=0,
+K(n)=-sum_{d|n}mu(d)(log(d))^alpha for n>=2, and A(X)=sum_{2<=n<=X}K(n).
+The paid 051 representation is
+
+ K(n)=I_alpha^-1 int_0^infinity
+              product_{p|n}(1-p^-t)*t^(-alpha-1) dt, n>=2,
+ I_alpha=int_0^infinity(1-exp(-u))*u^(-alpha-1) du>0.              (1)
+
+The new uniform source-energy recurrence remains OPEN. The implications and
+bounded tail below are actual proved rules; they do not establish that leaf.
+No converse from RH, independent-prime premise, or RH upper-bound provider
+is admitted.
+
+1. Commuting Boolean algebra, with its precise state space
+==========================================================
+For an actual prime p define E_p f(n)=f(pn). These operators commute on any
+function. They are idempotent ONLY on the radical-invariant state space:
+f(p^2 n)=f(pn) there, hence E_p^2=E_p. K is radical-invariant for n>=2;
+its insertion companions remain on the same state space. Idempotence cannot
+be imported for arbitrary functions, the b>0 kernels, or rounded source
+profiles without an additional proof.
+
+Let D_p=I-E_p. For a finite set S of DISTINCT actual primes put
+
+ R=product_{p in S}p,
+ D_S=product_{p in S}D_p,
+ D_S K(n)=sum_{U subset S}(-1)^|U|K(n*product_{p in U}p).
+
+Then D_p^2=D_p, D_S D_T=D_(S union T), and E_p D_p=0. Repeating the same
+prime does not create a higher-order gain: (I-E_p)^k=I-E_p for k>=1 on
+this state space. This is an exact canonicalization rule for the grammar.
+The empty set is the identity, R=1, D_empty K=K.
+
+For n>=2,
+
+ gcd(n,R)>1 => D_S K(n)=0,
+ gcd(n,R)=1 => D_S K(n)
+   =I_alpha^-1 int_0^infinity
+        R^-t product_{p|n}(1-p^-t)*t^(-alpha-1) dt
+   =-sum_{d|n}mu(d)*(log(Rd))^alpha >0.                         (2)
+
+Every prime-power valuation of n is retained. The external coprime mask is
+ESSENTIAL: the unmasked shifted-log expression is generally positive even
+when n shares a prime with R, whereas the actual Boolean difference is zero.
+In particular a prime product in the syntax is not a license to remove its
+mask or replace n by its prime-only part.
+
+The unit has a different exact answer. For nonempty S,
+
+ D_S K(1)=-(log R)^alpha.                                      (3)
+
+To prove it, sum the integral for all nonempty U: their integrands sum to
+R^-t-1, whose integral is -(log R)^alpha. The absent U=empty term is K(1)=0,
+not the divergent empty-product integral. At S=empty the unit is zero.
+Thus B_S(X) must start at n=2; assigning it a positive n=1 atom changes the
+filter. No unit is encountered when E_p acts on the domain n>=2 itself.
+
+2. Actual pointwise control and a complete compensation decomposition
+=====================================================================
+Equation (2) gives, for all n>=2,
+
+ 0<=K_S(n):=D_S K(n)<=K(n)<=(log n)^alpha.                      (4)
+
+For nonempty S and gcd(n,R)=1, writing k=omega(n), it also gives
+
+ K_S(n)<=min_{p|n}[(log R+log p)^alpha-(log R)^alpha],
+ K_S(n)<=alpha*product_{j=1}^{k-1}(j-alpha)
+                 *product_{p|n}log p/(log R)^(k-alpha).         (5)
+
+The denominator is positive because R>1; the empty-set case must not use it.
+Dropping factors in (2), or integrating its k-fold derivative with base
+log R, proves (5). These are pointwise source-specific bounds, not estimates
+of the signed prefix filter.
+
+There is also an exact fully compensated partition for any finite prime set S:
+
+ K=sum_{U subset S} E_U D_(S minus U) K,                        (6)
+
+obtained by expanding product_{p in S}(E_p+D_p)=I. Each component is
+nonnegative at n>=2 and at most K(n). Its masks and shifted arguments are
+inherited from (2); none may be dropped. The filter is linear, so the full
+target is the sum of the filtered components, with ALL their signed energy
+cross terms. The residual E_S component is needed for recoverability.
+Discarding it and controlling only D_S states is not a bound for K.
+
+This supplies a compositional operator+complement language for later proof
+search. It does not supply a strict contraction: the partition's integral
+weights sum to 1, and can concentrate on a remaining component. Applying
+Cauchy to the component sum introduces its dimension rather than a free
+coefficient gap. A source-specific correlation or transport rule is still
+needed after applying the signed scale filter.
+
+3. A genuine bounded all-scale Laplace-tail remainder
+=====================================================
+Let S be fixed, R its squarefree prime product, s=|S|, and
+B_S(X)=sum_{2<=n<=X}K_S(n). Define
+
+ W(y)=floor(4y)-3floor(2y)+2floor(y),  |W(y)|<=1,
+ t_S(N)=[B_S(4N)-3B_S(2N)+2B_S(N)]/alpha.
+
+Here W is the exact binary digit difference, including endpoints. Put
+
+ C_R(y)=number of positive integers k<=y with gcd(k,R)=1
+       =sum_{e|R}mu(e)floor(y/e).
+
+Finite divisor expansion inside the positive representation, followed by
+the three-term filter, gives the exact complete formula
+
+ t_S(N)=1/(alpha I_alpha) int_0^infinity R^-t H_S(N,t)
+                                     *t^(-alpha-1) dt,
+ H_S(N,t)=sum_{d<=4N, gcd(d,R)=1}mu(d)d^-t
+                              *sum_{e|R}mu(e)W(N/(de)).        (7)
+
+Explanation of every term: n=dk is coprime to R exactly when both d and k
+are. Expansion of C_R gives the cofactor divisors e. Terms de>4N have zero
+floor weight automatically. The n=1 exclusion subtracts 1 from each prefix
+integrand; its filtered correction is zero because P(1)=2-3+1=0. The mixed
+unit (3) cannot be omitted for arbitrary filters with P(1)!=0. There are no
+infinite-source rearrangements in (7), and all prime powers are retained.
+Convergence at zero follows from the original FINITE n>=2 positive products
+in (1)-(2); expansion (7) must preserve their exact cancellations.
+
+For the empty set R=1, the d=1 term in H is W(N)=0 for INTEGER N. Thus for
+all t>=2,
+
+ |H_empty(N,t)|<=sum_{d>=2}d^-t<=3*2^-t.                        (8)
+
+The last bound is elementary: the d=2 term is 2^-t and the remainder is at
+most int_2^infinity x^-t dx=2^(1-t)/(t-1). For nonempty S, including d=1,
+
+ |H_S(N,t)|<=2^s*zeta(t)<=2^(s+1), t>=2.                       (9)
+
+Here each of the 2^s cofactor terms is bounded by |W|<=1; restricting d to
+gcd(d,R)=1 only decreases the absolute upper estimate. Since R>=2, the
+external R^-t then gives exponential decay. At noninteger N, W(N) need not
+vanish, so the empty-set bound (8) must not be reused unchanged. The primary
+recurrence and target are integer-domain statements.
+
+For completeness, the normalization has the elementary uniform bound
+
+ alpha I_alpha >=1-exp(-1)>1/2, hence 1/(alpha I_alpha)<2<=3.
+
+It follows just by integrating the normalizer over u>=1; exp(1)>2 follows
+from its defining positive series. No Gamma asymptotic or RH result is used.
+Also log(2)>=1/2 follows from int_1^2 du/u>=1/2.
+
+For any FIXED INTEGER threshold tau>=2, split (7) at tau. The high-t part
+is an explicitly PAID all-N bounded remainder:
+
+ |t_empty,tail(N)| <=18*2^-tau,
+ |t_S,tail(N)| <=12*2^s*R^-tau, nonempty S,
+ every integer N>=2.                                          (10)
+
+Proof: t^-alpha-1<=1 on this tail; integrate 2^-t or R^-t, use (8)-(9),
+1/(alpha I)<=3, and 1/log R<=2 when R>=2. The displayed constants are
+deliberately conservative rational bounds; no numerical integral is needed.
+They can be made arbitrarily small by increasing a fixed tau. The missing
+arithmetic is now confined to the finite parameter interval 0<t<tau.
+
+The whole potential must retain the tail crosses. If t_i=l_i+e_i with the
+tail bounds (10), then for the form below let
+v_low=sum_i a_i l_i, e_v=sum_i a_i e_i. Exactly,
+
+ F=[l0^2+lambda*v_low^2]/N
+    +[2l0 e0+2lambda*v_low e_v+e0^2+lambda*e_v^2]/N.            (11)
+
+Only the last two squares have an unconditional O(1/N) bound. The crosses
+cannot be dropped. A rational Young allocation gives a valid target-majorant
+recovery from a proved low-t bound, with explicit tail cost; it does not
+automatically transfer the SAME drift constant or prove that low-t bound.
+This bounded tail is substantive paid source control, while the small-t
+joint source inequality remains OPEN.
+
+4. Coercive potential and a source-specific complete drift expression
+=====================================================================
+Take a finite fixed family of insertion sets, fixed signed integer a_i,
+and fixed rational lambda>=0. Each source has its actual coprime mask and
+unit exclusion. Define
+
+ v(N)=sum_i a_i t_i(N),
+ F(N)=[t0(N)^2+lambda*v(N)^2]/N>=t0(N)^2/N.                    (12)
+
+This retains the original target even when a companion vanishes, changes
+sign, or cancels another companion. The signed mixture must be formed BEFORE
+its square; replacing it by sum |a_i|t_i^2 is a different, usually larger
+auxiliary. Including i=0 inside v is algebraically allowed. lambda=0 is
+the explicit target-only control, not a new arithmetic mechanism.
+
+Write z_N=(t0(N),v(N)), Q=diag(1,lambda), M=2N+r, r in {0,1},
+and xi=z_M-z_N. The EXACT work identity is
+
+ M*[F(M)-F(N)]
+   =2<z_N,Q xi>+||xi||_Q^2-(1+r/N)||z_N||_Q^2.                (13)
+
+No odd-child denominator is replaced by 2N. The increments are actual
+source intervals:
+
+ t_i(M)-t_i(N)=1/alpha *
+ [2 sum_{N<n<=M}K_i(n)-3 sum_{2N<n<=2M}K_i(n)
+                         +sum_{4N<n<=4M}K_i(n)].             (14)
+
+All births, gcd masks, signs, units, and current-scale entries are retained.
+Equations (13)-(14) expose a concrete joint cross/innovation proof leaf for
+the detector. The identity alone is a re-expression of the energy drift;
+it pays nothing about the sign of <z_N,Q xi>. A genuine argument must bound
+those explicit arithmetic correlations, not fit a predictor and declare
+its exact work a new source theorem.
+
+5. All-integer induction, precise constants, and paid base
+=========================================================
+The proposed uniform leaf is
+
+ F(2N+r)<=F(N)+C/N^delta,
+ EVERY integer N>=2 and BOTH r=0,1,
+ fixed rational C>=0, delta>=0.                               (15)
+
+It is OPEN. Assuming it, halving any integer to 2 or 3 gives a rigorous
+recovery rule. Let B>=max(F(2),F(3)). If delta=0,
+
+ F(N)<=B+C*max(0,floor(log_2 N)-1).                            (16)
+
+If delta>0, the forward ancestor chain grows at least by a factor 2 from
+a base >=2, hence
+
+ F(N)<=B+C/(2^delta-1)<=B+2C/delta.                            (17)
+
+The latter constant is fully rational: 2^delta-1>=delta log(2)>=delta/2.
+No positivity of an innovation/work term is assumed, but F itself is the
+nonnegative quadratic majorant. If C=0 the stronger bound F<=B applies,
+regardless of the nominal decay exponent. Both parities are necessary;
+an even-only recurrence does not cover odd source chains. Finite base probes
+or selected chains do not pay the universal quantifier in (15).
+
+There is a wholly unconditional conservative base, without evaluating any
+source atom. By (4), for N=2 or 3 and all n<=4N<=12, K_i(n)<3, since log(12)<3
+and 0<alpha<1. The filter is a difference of a positive child block and twice
+a positive parent block, each at most 6N. Thus |t_i(N)|<=6N/alpha. With
+L1=sum_i |a_i|,
+
+ B_generic=108/alpha^2*(1+lambda*L1^2)                         (18)
+
+dominates both base energies. At the fixed alpha=1/5 it can be sharpened to
+600*(1+lambda L1^2): use |t_i(N)|<=2N(log(4N))^alpha/alpha and
+(log(12))^(2/5)<2. These base estimates are paid inequalities, not empirical
+normalizations or substitutes for (15). The generic base (18) is sufficient.
+
+Combining (12), (16), and (17), the conditional target growth is
+
+ delta=0: |t0(N)|<=sqrt(N)*sqrt(B+C log_2 N),
+ delta>0: |t0(N)|<=sqrt(N)*sqrt(B+2C/delta).                    (19)
+
+The first is sqrt(N) times at most a square-root logarithm; the second is
+a uniform square-root bound. Each supplies a 053 all-epsilon source premise
+and hence RH conditionally. Neither rule promises the old constant C=2 in
+the alpha-normalized target. It is the growth theorem that is recovered,
+with explicit and possibly large constants.
+
+6. Algebraic limitations and noncircular proof graph
+====================================================
+Positivity of K_i does not imply positivity or decay of its signed filter.
+Projection identities alone cannot guarantee even zero forcing in (15).
+A simple universal counterexample is a radical-invariant nonnegative source
+which equals 1 on powers of one actual prime p and zero otherwise, with its
+unit excluded. Its fresh-prime insertion operators are commuting positive
+Boolean differences: inserting p keeps its value, inserting any other prime
+annihilates it. Nevertheless a parent horizon can contain no supported term
+while its child's new block contains p, giving F_child>0=F_parent. Choose
+p>16 and N=ceil(p/4), then floor(N/2)>=2, 2N<p<=4N, and no power p^2 fits.
+This violates a universal C=0 monotonicity assertion. It does not refute the
+ordinary fractional-mu source; it shows which information the abstract
+positive insertion algebra omits.
+
+The exact projection D_S also kills all integers sharing a prime with S;
+controlling only that projection has a real nullspace. A companion alone
+cannot replace the retained t0 channel. The compensated identity (6) is an
+honest way to extend the grammar if it includes all remaining components
+and their full signed filter cross terms. No coefficient gap follows for
+free from a positive partition or a pointwise product saving.
+
+A safe obligation graph has paid nodes for source definition, distinct
+actual primes, coprime/unit masks, (2), coercivity (12), the base (18),
+bounded tail (10), and induction (16)-(19). Its principal unpaid node is
+the EXACT uniformly quantified drift (15), or a finer arithmetic estimate
+of (13)-(14) or the low-t joint expression (7) implying it. That node must
+not depend on the recovered target bound, an equivalent unknown companion
+RH theorem, or finite fitted constants. A detector may propose and falsify
+these nodes, but cannot certify a cycle by relabeling one unknown square.
+
+7. Source-only implementation review and stopped disposition
+===========================================================
+I read prime_insertion_search_055.py and check_prime_insertion_055.py without
+executing them. The search forms the full signed companion sum before its
+square, retains t0, expands every energy cross coefficient, and labels all
+uniform drifts OPEN. The independent finite evaluator retains gcd(d,R)=1,
+exact coprime cofactor inclusion-exclusion, and the correlated n=1 correction
+before its shifted-log atom enclosure. That matches the complete source.
+
+At this read, the generic search grammar checked feature entries as bounded
+integers but not itself as primes. Its default feature bank uses actual
+2,3,5, so that bank is safe. Any custom feature request must receive a
+separate actual-prime admission before using the mixed-prime theorem; the
+independent checker already performs it. This issue was sent to root, and
+is not a claim that a composite word has a paid positive source identity.
+
+The reviewed all-integer recovery and uniform tail are PAID algebra/analysis.
+The selected or generated arithmetic recurrence is still OPEN, with no RH
+conclusion until that source leaf is proved. This new memo is stopped for
+the source snapshot; all prior frozen files remain untouched.

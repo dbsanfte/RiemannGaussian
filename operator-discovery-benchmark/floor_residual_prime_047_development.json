@@ -1,0 +1,24 @@
+{
+  "schema": "floor-prime-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.2506069609662518,
+      "operations": 98045,
+      "max_rational_bits": 134,
+      "estimated_peak_bytes": 1618176,
+      "cell_rows": 43,
+      "exposure": "synthetic supplied rational profiles and exact bounded cell blocks only"
+    }
+  ],
+  "actual_scientific_candidates_evaluated": false,
+  "actual_source_arrays_read": false,
+  "actual_norm_study_run": false,
+  "frozen_files_modified": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "cumulative_operations": 98045
+}

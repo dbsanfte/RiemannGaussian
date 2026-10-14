@@ -1,0 +1,35 @@
+{
+  "distinct_tests": 5,
+  "attempts": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_mobius_annihilator_085"
+      ],
+      "time_epoch": 1791729986.7839425,
+      "tests": 5,
+      "exit_code": 0,
+      "output": "test_complete_identity_columns_independent (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_generic_bank_inference_uses_artificial_witnesses (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_prospective_and_exact_schema_guards (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_signed_cross_correction_and_factor_exact_admission (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_solver_and_exact_redundant_column_removal (test_mobius_annihilator_085.AnnihilatorTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.515s\n\nOK\n"
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_mobius_annihilator_085"
+      ],
+      "time_epoch": 1791730471.3443646,
+      "tests": 5,
+      "exit_code": 0,
+      "output": "test_complete_identity_columns_independent (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_generic_bank_inference_uses_artificial_witnesses (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_prospective_and_exact_schema_guards (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_signed_cross_correction_and_factor_exact_admission (test_mobius_annihilator_085.AnnihilatorTests) ... ok\ntest_solver_and_exact_redundant_column_removal (test_mobius_annihilator_085.AnnihilatorTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.578s\n\nOK\n",
+      "reason": "affected exact helper, empty shape, score and resource guard changes"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,318 @@
+FRACTIONAL PRIME KERNEL: INDEPENDENT EXACT REVIEW 051
+
+Scope and status
+================
+This is a source-only analytical review of the new unrounded arithmetic kernel.
+No actual-source values, numerical study, tests, or hashes were produced by this
+review. Only this new review file was written. The pointwise claims below are
+proved; a centered distribution error, the original floor-residual bound, and
+RH remain OPEN. A negative witness refutes uniform nonnegativity of that kernel,
+not RH or every possible signed use of the expression.
+
+The ordinary-zeta background used here is its meromorphic continuation, sole
+simple pole at 1 with residue 1, Euler product in Re(s)>1, alternating-series
+identity, functional equation, and usual zero location and reflection. Primary
+references are [DLMF 25.2](https://dlmf.nist.gov/25.2),
+[DLMF 25.4](https://dlmf.nist.gov/25.4), and
+[DLMF 25.10](https://dlmf.nist.gov/25.10). The kernel identities, bounds, and
+conditional bridge are derived here; these references do not supply the new
+centered error estimate.
+
+1. Complete arithmetic definition and Boolean reduction
+=======================================================
+Fix a,b>=0, a+b=1, a!=b, 0<alpha<=2 and sign sigma in {+1,-1}.
+For every ordinary integer n>=2 define
+
+ D(n)=sum_{d|n} mu(d)*(a*log(d)+b*log(n/d))^alpha,
+ K(n)=sigma*D(n),                 K(1)=0,  0^alpha=0.
+
+Let P be the DISTINCT prime divisors of n, k=|P|, L=log(n), x_p=log(p),
+c=a-b, and C=bL. Then
+
+ D(n)=sum_{S subset P} (-1)^|S|*(C+c*sum_{p in S} x_p)^alpha.       (1)
+
+Every argument in (1) is between 0 and L. Repeated prime valuations have NOT
+been discarded: they enter C=b log(n), even though mu restricts the divisor
+choice to squarefree d. In particular replacing log(n) by log(rad(n)) would
+change the kernel on prime powers.
+
+For c<0 write h=-c=b-a>0 and complement S inside P. With
+
+ C0=bL-h*log(rad(n))=aL+h*(L-log(rad(n)))>=0,
+
+equation (1) is (-1)^k times the same forward Boolean difference with positive
+step h and base C0. This complement factor is why reversing a and b does not
+simply preserve the forward positivity statement.
+
+2. Fractional normalizers and exact signs
+========================================
+For 0<alpha<1 put
+
+ I_alpha=int_0^infinity (1-exp(-u))*u^(-alpha-1) du.
+
+The integrand is O(u^-alpha) at zero and O(u^-alpha-1) at infinity. Thus the
+normalizer is finite and strictly positive. Substitution proves
+
+ x^alpha=I_alpha^(-1)*int_0^infinity
+                    (1-exp(-xt))*t^(-alpha-1) dt,
+
+including x=0. One integration by parts gives
+I_alpha=Gamma(1-alpha)/alpha, where Gamma is its positive defining integral.
+Applying the identity to the FINITE sum (1), its constant terms cancel. If c>0,
+
+ -D(n)=I_alpha^(-1)*int_0^infinity exp(-Ct)
+             product_{p|n}(1-exp(-c*x_p*t))*t^(-alpha-1) dt >0.     (2)
+
+At zero the product is O(t^k), with k>=1>alpha. At infinity the remaining
+t^-alpha-1 is integrable even if C=0. For c<0 the complement formula gives
+the sign of D as (-1)^(k+1). These are strict signs, not heuristic cancellation.
+
+For 1<alpha<2 instead use the positive finite normalizer
+
+ J_alpha=int_0^infinity (exp(-u)-1+u)*u^(-alpha-1) du
+         =Gamma(2-alpha)/(alpha*(alpha-1)).
+
+This follows by two integrations by parts. The corresponding representation
+of x^alpha is obtained by substitution. For k>=2 the constant and linear
+terms in (1) both cancel; hence, for c>0,
+
+ D(n)=J_alpha^(-1)*int_0^infinity exp(-Ct)
+             product_{p|n}(1-exp(-c*x_p*t))*t^(-alpha-1) dt >0.     (3)
+
+The origin is integrable because k>=2>alpha. For c<0 the sign in this range
+is (-1)^k when k>=2. At k=1, for either fractional range, D is the difference
+of two strictly increasing powers and has sign -sign(c).
+
+At alpha=1 direct expansion gives
+
+ D(n)=-c*Lambda(n).                                                (4)
+
+At alpha=2 it gives
+
+ D(n)=-c*Lambda(n)*log(n)+c^2*(Lambda*Lambda)(n).                    (5)
+
+Here convolution is full Dirichlet convolution. At n=p^e equation (5) equals
+-c*(2be+c)*log(p)^2; at n=p^e*q^f with distinct p,q it equals
+2c^2 log(p)log(q); at omega(n)>=3 it is zero. Exponents e,f remain unrestricted.
+
+The complete uniform-nonnegativity classification is consequently:
+
+ * 0<alpha<1: ONLY a>b and sigma=-1 is nonnegative on all n>=2.
+ * alpha=1: exactly sigma*c<0 gives c_abs*Lambda; omega>=2 is zero.
+ * 1<alpha<2: neither orientation/sign is uniformly nonnegative.
+ * alpha=2: ONLY a<b and sigma=+1 is uniformly nonnegative.
+
+If sigma*c>0, n=2 is a negative witness for every alpha. In the remaining
+unlicensed branches: forward 1<alpha<=2 with sigma=-1 is negative at n=6;
+backward alpha<1 with sigma=+1 is negative at n=6; backward 1<alpha<2 with
+sigma=+1 is negative at n=30. No sign claim depends on a table of mu values.
+
+3. Pointwise bounds, including the full omega bound
+==================================================
+In the forward concave branch K=-D, equation (2) and factors between 0 and 1
+give the exact one-factor bound
+
+ 0<K(n)<=min_{p|n} [(bL+c log(p))^alpha-(bL)^alpha]
+       <=(c log(p_min))^alpha.                                    (6)
+
+The last inequality is the concave increment bound; it can also be read from
+the same positive integral after dropping exp(-Ct). It includes b=0 and all
+prime powers. Specifically
+
+ K(p^e)=[(be+c)^alpha-(be)^alpha]*(log(p))^alpha.                    (7)
+
+At b=0 this is (log(p))^alpha for EVERY e. At b>0 it decays in e with the
+usual derivative scale, rather than being supported only at e=1.
+
+If b>0, 1-exp(-y)<=y and a positive Gamma integral give the stronger bound
+
+ K(n)<=alpha*product_{j=1}^{k-1}(j-alpha)
+        *c^k*product_{p|n} log(p)/(bL)^(k-alpha).                   (8)
+
+Indeed Gamma(k-alpha)/I_alpha=alpha*product(j-alpha), by k-1 integrations by
+parts. Alternatively (8) is the k-fold fundamental-theorem-of-calculus bound
+for the derivative of x^alpha. Its exponent alpha-k is negative, so replacing
+the base bL+c*sum(u_p) by bL increases the upper bound. This step is INVALID
+at b=0; (8) must be disabled there, while (6) remains valid.
+
+AM-GM, sum log(p)=log(rad(n))<=L, yields
+
+ K(n)/L^alpha <= alpha*product_{j=1}^{k-1}(j-alpha)
+                    *c^k*b^(alpha-k)/k^k.                       (9)
+
+There is a convenient completely elementary further bound, valid also at
+k=1 with its empty product interpreted as 1:
+
+ K(n)/L^alpha <= 2*alpha*b^alpha*(c/(2b))^k/k.                    (10)
+
+To see it, product(j-alpha)<=(k-1)! and AM-GM on 1,...,k-1 gives
+(k-1)!<=(k/2)^(k-1). This is an exponential saving in omega ONLY when c<2b,
+equivalently b>1/4. At b=1/4 it only gives 1/k; at b<1/4 this particular bound
+does not give exponential decay. It gives no prime-distribution or RH bound.
+
+For the licensed quadratic backward branch, h=b-a in (0,1], equation (5) is
+
+ K=h*Lambda*log+h^2*(Lambda*Lambda),
+ 0<=K(n)<=h*(log(n))^2.                                          (11)
+
+For p^e the coefficient is h*((1+h)e-h); comparison with h e^2 follows from
+(e-1)(e-h)>=0. For two prime divisors, 2h^2 log(p)log(q)<=h L^2; otherwise
+the kernel is zero. This proves the advertised bound without dropping powers.
+
+A useful generic absolute envelope, even on the unlicensed signed branches,
+is |D(n)|<=(log(n))^alpha. For alpha<1 use (6) after the complement rewrite.
+For 1<alpha<2 and k>=2, drop all but two factors in the positive integral (3)
+and replace its nonnegative base by zero. The resulting second difference is
+[h(x_p+x_q)]^alpha-(h x_p)^alpha-(h x_q)^alpha<=L^alpha, with h=|c|.
+For k=1 both power arguments lie in [0,L]. The alpha=2 formulas prove the
+remaining endpoint. Thus all Dirichlet series in the next section converge
+absolutely in Re(s)>1, without an RH premise.
+
+4. Exact Euler integral and justified exchanges
+===============================================
+For fixed t>=0, the complete local Euler factor, including every e>=1, is
+
+ 1+(1-p^(-ct))*sum_{e>=1} p^(-e(s+bt))
+       =(1-p^(-(s+at)))/(1-p^(-(s+bt))).                          (12)
+
+Consequently in Re(s)>1,
+
+ sum_{n>=1} n^(-s-bt)*product_{p|n}(1-p^(-ct))
+       =zeta(s+bt)/zeta(s+at).                                   (13)
+
+If c<0, use the complement rewrite: the absolute coefficient is at most
+n^(-at)<=1. If c>0 it is at most n^(-bt)<=1. This justifies the initial Euler
+product for both orientations. Integrated K is generally NOT multiplicative;
+only each fixed-t integrand in (13) is multiplicative.
+
+For 0<alpha<1 the RAW kernel has the exact series identity
+
+ sum_{n>=2} D(n)n^(-s)
+   =-I_alpha^(-1)*int_0^infinity
+             [zeta(s+bt)/zeta(s+at)-1]*t^(-alpha-1) dt.            (14)
+
+Multiply by sigma for K. In the positive forward branch the prefactor is +.
+The coefficient integrands have fixed signs by (2) and its complement, so
+their integrated absolute values are |D(n)|. The generic absolute envelope
+and sum (log(n))^alpha n^(-Re(s))<infinity justify absolute Fubini, including
+complex s. Independently, near zero the bracket is O(t); at infinity it is
+bounded and t^-alpha-1 is integrable. At b=0 the bracket tends zeta(s)-1,
+not zero; this is still integrable. At a=0 it tends 1/zeta(s)-1.
+
+For 1<alpha<2 the exact compensated identity for RAW D is
+
+ sum D(n)n^(-s)=J_alpha^(-1)*int_0^infinity
+  [zeta(s+bt)/zeta(s+at)-1-c*t*L_Lambda(s)]*t^(-alpha-1) dt,       (15)
+ L_Lambda(s)=sum Lambda(n)n^(-s)=-zeta'(s)/zeta(s).
+
+The subtracted first-order term is essential: the remaining bracket is O(t^2)
+at zero. At infinity its linear growth is integrable because alpha>1. The
+compensated coefficient representations and the same envelope pay absolute
+Fubini. Formula (15) is an analytical deduction, not an extra licensed
+nonnegativity branch in the 051 executable certificate.
+
+For alpha=1 the raw series is c*zeta'/zeta. For the positive quadratic backward
+branch it is h*(zeta'/zeta)' + h^2*(zeta'/zeta)^2. All statements here are
+initially and unconditionally in Re(s)>1; continuation into the critical strip
+does not follow merely from positivity or a pointwise upper bound.
+
+5. Real main term, abscissa, and the genuine missing bound
+========================================================
+Now restrict to the licensed forward fractional branch a>b, sign=-1,
+0<alpha<1, and write F(s)=sum K(n)n^-s. For real delta down to zero and b>0,
+
+ F(1+delta) ~ c*b^(alpha-1)*Gamma(alpha+1)*delta^(-alpha).         (16)
+
+For small t, factor zeta(1+z)=z^-1*h(z), h(0)=1. The quotient bracket is
+c*t/(delta+bt)+O(t), uniformly for positive small delta,t. Its error integral
+is O(1). Substituting u=bt/delta in the main integral gives (16); the elementary
+positive integral int u^-alpha/(1+u) du equals Gamma(alpha)Gamma(1-alpha)
+by a Laplace integral and Tonelli. Large t contributes a bounded term.
+
+For b=0 (hence a=c=1), instead there is a simple pole:
+
+ delta*F(1+delta) -> kappa>0,
+ kappa=I_alpha^(-1)*int_0^infinity
+             t^(-alpha-1)/zeta(1+t) dt.                          (17)
+
+Near zero reciprocal zeta is t+O(t^2), so the integral converges; its tail
+converges because alpha>0. The same local quotient factorization and bounded
+large-t ratio justify domination in (17). Thus the positive series has exact
+abscissa of convergence 1. Positivity plus divergence at 1 prevents convergence
+at any smaller real argument. An uncentered square-root-type summatory moment
+cannot bypass this real main term.
+
+The appropriate EXACT center, rather than just its leading asymptotic, is
+
+ m(x)=I_alpha^(-1)*int_0^infinity
+             x^(-bt)/zeta(1+ct)*t^(-alpha-1) dt,  x>=1,
+ M(x)=int_1^x m(u) du.                                           (18)
+
+It is positive and finite: reciprocal zeta is ct+O(t^2) at zero and is between
+0 and 1 for t>0. In particular 0<m(x)<=m(1), M(1)=0. At b=0,
+M(x)=kappa*(x-1) exactly. At b>0,
+m(x)~alpha*c*b^(alpha-1)*(log(x))^(alpha-1); its integral has the corresponding
+leading x(log(x))^(alpha-1) scale. Lower-order real terms are not negligible
+at a square-root target and must not be removed by fitting only a leading pole.
+
+For A(x)=sum_{2<=n<=x}K(n), the all-real, all-epsilon error premise
+
+ |A(x)-M(x)|<=C_(epsilon,a,b,alpha)*x^(1/2+epsilon)
+ for every epsilon>0 and every real x>=2                         (19)
+
+implies RH. The detailed conditional proof is in the separate new
+FRACTIONAL_PRIME_RH_BRIDGE_REVIEW_052.txt. Briefly, the Mellin transform of the
+full density is holomorphic at nonreal points off the real cut. At a rightmost
+ordinary-zeta zero at any fixed nonzero height and Re(rho)>1/2, the quotient
+integral has a nonzero negative delta^-alpha singularity along s=rho+delta.
+This holds for ANY zero multiplicity. The premise (19) would make the centered
+transform holomorphic on Re(s)>1/2, a contradiction. No converse is proved,
+and (19) itself remains OPEN. No continuation of the uncentered F throughout
+that half-plane is asserted unconditionally.
+
+6. Degeneracy and usefulness limits for discovery
+================================================
+The excluded a=b case is identically zero for n>=2. Small c can also shrink a
+finite kernel without creating cancellation: for fixed n as c down to zero,
+a=(1+c)/2, b=(1-c)/2, the forward kernel divided by c tends
+
+ alpha*(1/2)^(alpha-1)*Lambda(n)*(log(n))^(alpha-1).
+
+Higher-omega terms are higher order in c at fixed n. This fixed-n limit is not
+a uniform summatory limit. Likewise alpha tending to 1 gives c*Lambda at fixed
+n, providing the meaningful calibration endpoint, not an RH proof. Discovery
+should retain parameter/source normalization when comparing finite amplitudes.
+
+The product estimate can control kernels with many prime divisors and provides
+a genuine source-specific bound. It does not pay the prime or prime-power
+distribution error; those channels remain positive and carry the real main
+term. An all-scale signed target must keep the arithmetic sum and the entire
+center joined. Positivity does not justify dropping that cross term, and an
+absolute diagonal envelope does not bound a centered square-root remainder.
+
+The Laplace quotient integral offers exact fractional Dirichlet operators and
+local transfer identities for further argument search. These identities use
+unrounded logarithms and powers. An implementation involving the previous
+ceil-rounded moving profiles must add its actual rounding and truncation
+compensators; multiplicativity cannot be imported from this unrounded theorem.
+No norm-equivalence or quantitative recovery of the original floor target has
+been proved here. The conditional implication (19)=>RH is qualitative and
+has an explicit unproved arithmetic premise.
+
+7. Source-only executable review and final disposition
+======================================================
+I read fractional_prime_kernel_051.py and check_fractional_prime_kernel_051.py
+without running them. The producer's positive branches, negative witnesses,
+prime-power handling, disabled b=0 product bound, omega-bound exponential flag
+c<2b, and initial Re(s)>1 identities match the above deductions. The independent
+checker reconstructs the branch classifications and exact certificate payload;
+it does not pay the centered error. No material mathematical scope error was
+found in those sources at this review. I also read the finite empirical search
+source: trial factorization retains the quotient n/d and repeated valuations,
+and its sign samples are finite evidence, not a distribution theorem.
+
+The reviewed status is PAID for the displayed pointwise algebra and bounds,
+REFUTED for global nonnegativity on the stated negative-witness branches, and
+OPEN for the full centered distribution bound and original all-scale goal.
+No tests, scientific computations, saved results, or frozen sources were changed.
+This file is stopped for the source snapshot.

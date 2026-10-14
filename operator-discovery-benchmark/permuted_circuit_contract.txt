@@ -1,0 +1,169 @@
+Permuted arithmetic circuit discovery v1 -- prospective new structural study
+2026-10-09. Earlier studies and snapshots remain immutable.
+
+Purpose and required gate
+Extend candidate discovery beyond divisor-triangular observers by interleaving
+reversible integer-coordinate maps with fractional full divisor convolutions.
+The input is still the complete prefix M(n), not a transformed coefficient source.
+One fixed circuit must ultimately have cofinal subpower full dyadic moments.
+Its proved inverse recovers original critical weighted M energy. No finite test,
+operator inverse, envelope ratio or structural novelty proves that moment gate.
+
+Program: {"stages":[stage,...]}, at most7 stages, at most3 convolutions,3 signs,
+3 permutations and2 shears. Existing convolve/sign stages have exactly the v1 semantics
+and phase/index grammar in reversible_divisor_circuit_contract.txt, including
+fixed original source queries in every stage and its inverse. New stage:
+ {"op":"permute", "map":map_descriptor, "inverse":strict boolean}
+Also admit a same-block mixing stage with exact keys:
+ {"op":"shear", "coefficient":canonical rational c, "phase":old_unit_phase,
+  "direction":"even_from_odd"|"odd_from_even"}
+Here c is nonzero, |c|<=2, denominator<=6. For every even n>=2 the pair
+(n,n+1) lies in one complete dyadic block. Evaluate phi(n) at the even n,
+from the same original source. even_from_odd replaces f(n) by
+f(n)+c*phi(n)*f(n+1); odd_from_even replaces f(n+1) by
+f(n+1)+c*phi(n)*f(n). The other coordinate and the singleton n=1 remain.
+The inverse negates c, retaining direction, phase, and fixed source. Thus both
+coordinates are retained: no discarded complement or rank-deficient difference.
+
+Dyadic index conventions
+For n>=1 uniquely n=m+r, m=2^k,0<=r<m. Every map stays within this SAME block.
+All evaluators require a CLOSED positive horizon H=2^K-1, H<=131071, for every
+program (even baseline); values[0]=0 and values[1..H] are strict integers in
+{-1,0,1}. No clipping, sparse source, or unproved zero padding. Index0 stays0.
+All prime factorization and complete source oracles remain explicit.
+
+Map descriptors (exact keys, total at most15 map nodes, depth<=3):
+ {"kind":"polynomial", "coefficients":[b,a,c2,...,cJ]}
+    List length2..5; each strict integer -8..8; a odd; each c_j,j>=2 even.
+    r maps to sum_j c_j*r^j mod m. The integer difference factor is odd, so
+    this is a bijection modulo EVERY2^k. Inverse by binary lifting or a separate
+    exact complete permutation table; no floating inverse or missing residues.
+ {"kind":"xor", "mask":"all"|"top"|"alternating"}
+    all=m-1; top=0 if k0 else2^(k-1); alternating=sum_{0<=j<k,j even}2^j.
+ {"kind":"reverse_bits"}
+    Reverse exactly k low bits, including leading zero bits.
+ {"kind":"rotate_bits", "shift":strict integer -4..4, nonzero}
+    Rotate k bits to the LEFT by shift modulo k; k0 is the identity.
+ {"kind":"compose", "maps":[map1,map2,...]}
+    Length2..3, apply index map1 THEN map2, etc. Inverse reverses this order
+    and inverts each component. Every component still sees the same block.
+ {"kind":"choose", "phase":old_unit_phase, "positive":map1, "negative":map2}
+    Evaluate phase at the ORIGINAL BLOCK BASE m, using the SAME fixed source
+    values, and use that one branch on every coordinate in the block. The
+    inverse uses the same branch. A coordinate-dependent branch is inadmissible.
+All polynomial evaluation/modular steps, branch queries, index loops and
+residency are charged. Internal map caches use exact payload equality/tuples,
+not content hashes. Source-dependent choices cannot read intermediate states.
+
+Permutation stage semantics: output[n]=input[P(n)] for forward direction,
+output[n]=input[P^-1(n)] for inverse. Composition describes INDEX maps, so
+it must not silently reverse this explicit pullback convention. The whole
+circuit inverse reverses its stages, negates each convolution alpha, leaves
+each sign unchanged, and toggles each permutation's inverse boolean.
+For shear stages it negates coefficient as described above.
+
+Recovery certificate exact schema:
+ {"schema":"permuted-arithmetic-circuit-v1", "program":program,
+  "fractional_order":canonical rational sum|alpha|,
+  "recovery_power":ceil(sum|alpha|), "permutation_count":number_of_perm_stages,
+  "shear_count":number_of_shear_stages,
+  "shear_factor":canonical rational product(1+2*abs(c)),
+  "domain":"closed_dyadic_horizon_weighted_l2_half_lt_sigma_le_one",
+  "bound":"3^permutation_count*shear_factor*(1+1/epsilon)^recovery_power",
+  "coefficient_binding":"same_fixed_source_and_block_branches_in_inverse"}
+This is an UNSQUARED bound; squared energy multiplies by9^permutation_count
+and shear_factor^2 and uses exponent2*recovery_power. It follows from the fractional norm of EACH
+convolution and norm<=2^(1+epsilon)<3 for each permutation,0<epsilon<=1/2.
+The off-diagonal part of a shear has weighted norm at most
+|c|*(3/2)^(1+epsilon)<2|c| (and at most |c| in the other direction),
+so both shear and inverse have norm<=1+2|c|. No fitted constant is used.
+The sum-fractional-order rule survives as a PRODUCT OF NORMS even though a
+single divisor-supported path kernel generally does not survive permutation.
+Closed horizons exhaust all n; the previous cofinal moment/Mellin/RH bridge
+therefore applies. The full finite head1..31 is retained.
+
+Exact normalizer (proof annotations, no responses)
+Normalize until unchanged using these rules in this order while scanning:
+ - remove a polynomial map [0,1,0,...,0] stage (this is the only explicit
+   identity descriptor recognized by this version);
+ - remove adjacent opposite-direction permutations with identical descriptor;
+ - remove adjacent identical unit sign stages;
+ - merge adjacent convolution stages with identical prime_phase and sum alpha
+   within allowed [-2,2] denominator<=6; a zero sum removes both;
+ - merge adjacent shear stages with identical direction and phase and summed
+   coefficient within allowed [-2,2] denominator<=6; a zero sum removes both;
+ - remove terminal sign stages;
+ - remove terminal permutation stages, with alias domain DYADIC MOMENTS ONLY.
+Do not erase an intervening permutation/sign or assume phases multiplicative.
+Normalizer result {"program":normalized, "rewrites":[{"rule":string,
+"position":int,"before":[stages],"after":[stages]}],
+"equivalence":"dyadic_moments"}. Original raw programs remain archived.
+All finite diagnostics evaluate the normalized program; irregular blocks need
+not agree with a raw word whose final permutation was removed. Independent
+checker must reconstruct the normalizer; signatures are full payloads, no hash.
+
+Numerical cancellation diagnostic, beyond a mere finite pass
+Evaluate signed state starting at M. In parallel evaluate a complete absolute
+PATH ENVELOPE starting at |M|: signs do nothing; permutations permute the
+envelope; convolutions use absolute kernel coefficients. Thus |output|<=envelope
+pointwise and every actual mixed term remains in the signed output square.
+For a shear, the target envelope is incremented by |c| times the other
+coordinate's envelope; both coordinates are retained. An inverse pair removed
+by the normalizer supplies no artificial path-cancellation credit.
+Return evaluate(program,values,meter)->{"signed":list,"absolute":list}.
+moments(state,scales,meter) returns [{"X":int,"energy":canonical rational,
+"absolute_energy":canonical rational}], exact full [X,2X) blocks. Energy /
+absolute_energy measures retained path cancellation; if bothzero the convention
+is1 (an inactive expression is not evidence). It is not a global bound or
+proof of additional prime information. Normalize exact aliases BEFORE this
+diagnostic, so an explicit inverse pair is not rewarded for canceling itself.
+initial_cost(state,meter) uses the signed sum_{n<32}output(n)^2/n^2.
+
+Producer module permuted_arithmetic_circuits.py APIs:
+ validate(program,meter), certificate(program,meter), inverse(program,meter),
+ normalize(program,meter), evaluate(program,values,meter), moments(...),
+ initial_cost(...), source(name,H,meter) for mu,one,partial_prime_13.
+Also apply_to_state(program,values,state,meter) for synthetic exact inverse
+tests, where state is a signed exact vector of the same closed horizon; it
+returns the signed result and starts the internal envelope at abs(state).
+Both producer and checker also provide
+ decomposition(program,values,state,scales,meter).
+Here state is the already evaluated complete output for the same program and
+source (this binding is independently reconstructed in the audit). Remove all
+convolve stages WITHOUT normalizing the remaining word, and evaluate that word
+on the original M. Its signed output q is exactly the same-block diagonal
+action Q M. Set g=state.signed-q. Every proper divisor lies in a lower dyadic
+block, so these are the complete diagonal and lower-block contributions.
+For STRICT DYADIC complete scales return rows
+ {"X":int, "diagonal_energy":rational, "lower_energy":rational,
+  "mixed_energy":rational, "total_energy":rational},
+where F=sum(q^2)/X^2,G=sum(g^2)/X^2,C=2sum(q*g)/X^2,E=sum(output^2)/X^2.
+Check the exact identity F+G+C=E. This is proof-obligation accounting, not a
+new bound. A selected-final-Mobius-only diagnostic avoids duplicating every
+discovery evaluation and cannot influence selection.
+Independent module check_permuted_arithmetic_circuits.py APIs:
+ validate,verify(certificate,meter),normalize,evaluate,moments,initial_cost,source.
+Independent checker may reuse frozen check_reversible_divisor_circuits.py
+arithmetic; producer may reuse frozen reversible_divisor_circuits.py. Neither
+new checker imports either producer. Default meters optional only for verify.
+
+Research discipline
+The prospective protocol must freeze full grammar/catalogue, generation rules,
+source/scale partitions, diagnostics, selection criteria, and quotas before any
+actual candidate responses. Candidate generation has no model calls, numerical
+optimizer, fitted operator coefficients or access to final data. Discovery
+controls may inform a declared cancellation-specificity criterion; final data
+are excluded from all adaptation. Overlap with earlier research is disclosed.
+All raw and normalized candidates, aliases/rejections and missing cases stay
+in the archive. Preserve multiple structural families, and report baseline
+comparison alongside every finite pass. A missing proof is not a refutation.
+
+One new study's450m total work allowance INCLUDES all development, one frozen
+combined suite, research and one independent audit. All spent work is retained.
+The audit checkpoints each completed evaluation and may draw on a predeclared
+shared remaining total reserve; no restart or repeating completed checks to
+escape a phase allocation. Physical aggregate allowance16GiB, each of at most
+four processes4GiB; scalar-cell limit6m, rational/int bit4096, deadline7200s.
+New checkpoints/artifacts are append-only; frozen source compared as direct
+bytes. No content hashes. Reversible low-impact reporting needs no mirrored
+tests; changed numerical semantics and domain/certificate rules do.

@@ -1,0 +1,34 @@
+{
+  "schema": "core-cutoff-prime-orbits-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_cutoff_prime_orbits"
+      ],
+      "returncode": 0,
+      "operations": 9135622,
+      "elapsed_seconds": 5.015106419014046,
+      "test_count": 18,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_cutoff_prime_orbits operations=9135622 elapsed_seconds=4.934907\n",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.935s\n\nOK\n",
+      "max_rss_kib": 46456
+    }
+  ],
+  "operations": 9135622,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368
+  },
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "prior_suites_run": 0,
+  "independence": "trial factorization; exact Mertens Abel prefixes and harmonic checkpoints; counterfactual energy norms; independent per-group column variation; exact fractional prime thresholds",
+  "continuous_integral_proved": false,
+  "uniform_arithmetic_bound_proved": false,
+  "RH_proved": false
+}

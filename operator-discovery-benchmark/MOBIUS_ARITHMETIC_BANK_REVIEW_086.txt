@@ -1,0 +1,182 @@
+086 PRIME-COFACTOR ARITHMETIC BANK AND COMPATIBLE-WITNESS REVIEW
+
+Recommendation: use exact compatible Boolean witnesses as CEGIS feedback,
+append ONLY an independently allscale-valid identity which the current fake
+witness violates, and certify strict finite information gain. Prime-cofactor
+aggregates expand the candidate constraint dictionary; unrestricted mixed
+partners merely improve representation for a fixedbank. Preserve originalR,
+paidouterO, all knownprime/composite cross terms and every previous failure.
+No rank/score/finitecertificate pays the uniformprice leaf.
+
+1. All-positive-integer source identity and required guards
+For integerN=floor(u/4), define an eligibleedge (p,m) by
+ p actualprime, m>=1 squarefree, p notdividingm, pm<=N.
+Thenpm is squarefree and mu(pm)=-mu(m), INCLUDINGm1. Thus for any exactweight
+w(m) computed from admittedgeometry, not unknownmu,
+ a(u)=sum_eligible w(m)*(e_m+e_(pm)) satisfies mu^T a=0.
+Weights may be signed sourcefeatures; each edgevanishes individually, so no
+positivity assumption isrequired. Exactrationalpower cutoff K(u) mustclip to
+[0,N]; filtering eligibleedges by p<=K ORm<=K preserves the identity. An
+optional descriptorcomplement replacingK byN-K islegitimate. If 'complement'
+means the complementaryEDGEset instead, it isalsozero but must be a distinct
+schema with exact endpoints; do not conflate these conventions.
+
+p|m mustbeexcluded: otherwise mu(pm)=0 whilemu(m) neednotzero. Both endpoints
+must lie in thecompletephysicaldomain. Squarefree flags, primality, p-divisibility
+and sourceweightfeatures are admitted arithmeticgeometry and charged/provenanced;
+no Möbiusparity table isneeded. K0 emptyfilter iszero. N0/1 givesnoedges.
+All rawsum endpoints are accumulated BEFOREjointprimeanchorprojection.
+
+Each unit/prime edge e1+ep projects tozero becauseknownsigns are+1,-1.
+Do not drop otherknownprime/cofactor contributions: mprimeq withp!=q links
+known-1 to unknownsemiprimecoordinate and supplies a nonzeroanchor entry.
+Composite/composite edges carryunknownsharedsign relations. Aggregates may
+shareedges; there is no need fordisjointness because exactzero identities
+mayadd withmultiplicity, but multiplicities must be exact and certified.
+
+2. Paid uniform column costs, computable without RH or primeasymptotics
+LetW=sup|w(m)|, E=numberofeligibleedges. Rawandanchoredl1 satisfy
+ ||P^T a||_1<=||a||_1<=2W E.
+For allprimeedges,
+ E<=sum_(p<=N)floor(N/p)<=N H_N,
+ H_N=sum_(n<=N)1/n. For either p<=K or m<=K,
+ E<=N H_K forK>=1 (overcount allintegerp/m whenneeded).
+ForK0 thecolumn iszero. K1 mfilter consists onlyofunit/primeedges and its
+ANCHOREDcolumn iszero regardless ofw(1). K1 pfilter israwzero.
+For rationalepsilon>0, H_N<=(1+1/epsilon)N^epsilon, giving explicit
+2W(1+1/epsilon)N^(1+epsilon) uniformcolumncost. This may be conservative;
+no PNT orMertens estimate isimported. Onecan separately prove sharpercount
+laws later, but nofiniteprimecount fit is a uniformlemma.
+
+Signedbankcorrectionnorm remains
+ ||VSV^T||_entrywise1<=sum_(k,l)|S_kl|*||v_k||_1*||v_l||_1.
+These new densecolumns generally have Oepsilon(N^(1+epsilon)) norm; boundedS
+alone gives a quadratic-size normbudget, not the required nearlinearbound.
+Uniformcoefficientgrowth and JOINTcoefficient cancellation remain explicit
+leaves. MixedVW correctionnorm similarly costs sum||v_k||_1||w_k||_1;
+it may expose exactcrosscancellation but doesnotaddbankinformation.
+
+A sourceweighted column has a stronger elementaryO(N) cost because it uses
+only a boundedprime roster, as follows. Let the fixedintegerdivisor kernel
+have sumweights0 andlargestdivisordmax. Letf_i(m)=sum_d b_d 1[m<=floor(u/2^i)/d].
+If f_i(m)!=0, m>floor(u/2^i)/dmax. Sinceintegerchildh<=dmax*m-1,
+ u<=2^i*h+2^i-1<=2^i*dmax*m-1.
+Thus m>u/(2^i*dmax) EXACTLYincludingfloors. Frompm<=N<=u/4,
+ p<2^i*dmax/4.
+So E_nonzeroweight<=N H_P for thefixedinteger P=ceil(2^i*dmax/4), a constant
+alloweddependfixedsource/delay, andnorm<=2W N H_P. G hasdmax10: i0 onlyp2;
+i1 onlyp2,3. G+(3547/8192)G(u/3) hasdmax30: i0 primes<=7;i1 primes<=13.
+Therefore sourceweighted'allprimes' rows DO NOT use a growingprime roster
+asymptotically or atsmallu. Unweightedw1 rows genuinelyincludegrowingprimes.
+This is an exactcost/grammar scope distinction, not a reason to discardthem.
+The localprime2 edge forG connects opposite sourcecoefficients and reinforces
+that signedsource; olddisjointedge trianglecost arguments do not promisegain.
+
+3. Useful allscale cutoff collapse/saturation gates
+Every nonunit eligibleedge hasp<=N/2 andm<=N/2. Unit/primeedges vanish after
+anchor. Therefore ANY p-orm-filter thresholdK>=N/2 yields thefull ANCHORED
+unweightedrelation (and thefullweightedrelation). Complementedsublinearcut
+N-floor(a u^eta),eta<1, eventuallysaturates ratherthan adding newasymptotic
+constraints. Negativeexponents eventuallyK0 beforecomplement; a positive
+exponent sourceweightedpcut eventuallyexceeds thefixed rosterP andsaturates.
+A sublinearmcut appliedtosourceweight eventuallyfalls belowu/(2^i dmax)
+and iszero. These thresholds have exactrationalpower certificates; record
+rank/columncollapses ratherthan infer allscaleinformation fromfinite scores.
+For unweightedgrowingp/mcut, saturation neednotoccur untilK≥N/2; increasing
+scope maymatter and deservesindependent tests.
+
+4. Relation to earlierbanks and novelty scope
+Read rootMOBIUS_PRIME_ORBIT_REVIEW_072.txt: the exact mu(pm)=-mu(m) edge,
+moregeneralcoprimeratioexchange edges, globallyconsistent componentlabels
+and finiteprimetransport obstructions alreadyoccurred there. It proves that
+fixedprime dictionaries preserve outsideprimeparts, and fullcomponentpricing
+is thebest unsignedtransport price.086 is NOT a firstdiscovery of theprime
+cofactor identity. It applies completegrowingprime aggregates as learned
+linear constraints to the current prime-anchored signedresidual/PSD bank,
+with exactcompatiblewitness closure. Oldunsigned/disjointedge no-gain results
+cannot automaticallyrefute this newcompletequadraticbound grammar.
+
+Every aggregate isstill a LINEAR constraint. Its validitycomes from an exact
+multiplicativelaw plusknown mu(p)=-1; it doesnot introduce a new nonlinear
+moment relation merelybecause its indices multiply. Genuine quadraticlaws
+such asmu(ab)=mu(a)mu(b) undercoprimality wouldrequire anothercertificate
+language with explicit domains; they are notpaid by this linearbank.
+Allprefixdivisorconstraints alreadydetermine thewholeactualmu line, so new
+aggregatecolumns lie in that COMPLETE annihilatorspan. They can nevertheless
+be independentof a SMALLselectedbank, which is the relevantfinite information
+gain. Exactrank/violation tests measure that gain; noveltypriority doesnot.
+
+Fullindividualprimeedge constraints plusknownunit connectallSFindices to
+actualparity and can recoverallmu values. The proposedsmallaggregatebank
+retains only totals, notallindividualedges. Do not claimfullrecovery. If a
+futureconstraintclosure actuallydetermines every sign, discloseidentity-derived
+arithmeticrecovery and keepits allscale sourceestimate unpaid, not an automatic
+RHbound. Informationorigin matters evenwithout an explicitmu sievequery.
+
+5. CEGIS invariant: a real finiteinformation gain
+CurrentbankV isexact andcurrentfakewitness s satisfiesV^T s=0, s0=1 ands_i²=1.
+If candidatecolumn g has g^T s!=0, then g isNOTin spanV: anyVcoeffcombination
+wouldpairtozero. Appendingg thereforestrictlyincreases exactrank/information
+atthatgeometry. This is a machine-checkable nontriviality invariant requiring
+no numericalrank threshold andno observedmu signs. A parameterizeddescriptor
+whichgains atoneu neednotgain atallotheru; certify itsallscaleidentity separately.
+Bankmax16 is aresourcecap, notproof the arithmeticclosure iscomplete.
+
+Freeze genericgeneration/scoring/tiebreak/iteration/stop rules BEFOREenrichment.
+Retain allcandidateviolations, independentlyverified compatibility and appended
+identity derivations. TrainingMILP/CEGIS geometries are DEVELOPMENT feedback;
+finalbanks andoriginaloperators mustfreeze beforegenuinelynewvalidation draws.
+Compare divisor-only anduniongrammars underequaldeclaredbudgets; alladmitted
+andfailedcases remain. No anticipated winningcuts areneeded. Stop reasons
+NO_VIOLATING_COLUMN, BANK_CAP, NO_CERTIFIED_WITNESS orRESOURCE_LIMIT are all
+scoped missing/progress evidence, not allscale boundadmissions.
+
+MILPincumbents are proposals. Reconstruct exactBoolean s, enforceanchor1 and
+checkevery rationalVconstraint exactly, thenrecompute fulls^TRs independently.
+Maximizingaquadraticform isnot merelylinearMILPunlesspairproducts areproperly
+linearized; feasibilityorlinearizedsurrogate search isfine butdo notclaim a
+globalquadraticoptimum. Sinceactualmu isfeasiblefor trueconstraints, numerical
+INFEASIBLEcannot be promoted to arithmeticcontradiction orRH. Timeouts/invalid
+roundedincumbents remainfailures. Exactcoefficientintegerization/LCMbits and
+completeeffective512dimension/bank16 gates mustprecede solverallocations.
+
+6. Exact lowerbound scope: both signedS andmixedpartners
+For anycompatiblefakeBoolean s,
+ B(R+VSV^T+sym(VW^T)+Q)>=s^T R s for everyS,W andQ>=0.
+Zero terms vanishon s andallpositivecompletions have nonnegativequadraticform.
+This lowerbound concerns everyarithmeticboundcertificate fromthefixedbank at
+thefixedoperator/geometry. It doesNOT lowerboundactualmu drift, differentbank,
+differentoperator orallscales. Incompatible084fakewitnesses areobsolete as
+lowerbounds for thelargerbank; their nonzero violations are discoveryinputs.
+
+PSDdiag1dual X withXV=0 gives the samegeneral lowerboundtrace(RX). As proved085,
+unrestrictedVSV^T andmixedVW zeroideals haveidentical idealSDP values under
+strictprimalfeasibility. Mixedpartners canimprovefiniteattainment/conditioning,
+notarithmeticinformation. CEGIS appending an EXACTviolatedidentity is the
+stepwhich genuinelystrengthensbankinformation. Recheckcompatible lowerbounds
+aftereachappend, and compareadmittedprimal/lowergapbeforeblamingfactorquality.
+
+7. Concrete uniformproof target and nextmechanism
+Retain the paidhead/negativebulk rule of
+MOBIUS_ANNIHILATOR_UNIFORM_TARGET_085.txt. OncompleteRAWcoords choosehead
+n<=ceil(u^eta_j),eta_j<=1/j. Searchallscalezero controls fromthelearnedbank
+so the COMPLETEremainingbulkblock isnegativePSD with a structuredexactfactor
+identity. Addminusbulk aspositivecompletion; pay allhead/crossentries and
+zerocorrectionnorms with explicitcosts. Rawoldoperatorhasboundedentries by
+unitbalancedfloorlemma; newcofactorcolumn costs aregiven above. The newdense
+bank may remove oldcompatible modes, but coefficientgrowth andbulkPSD remain
+separateunpaid leaves. Exactnegativevectors canrefute this mechanismwithout
+claiming actualsourcefailure. Neverpriceonlyunknowncompositebulk anddrop
+anchor/knownprimecrosses; partitionraw thencongruence as083.
+
+A useful adaptive nextinput is therefore not'anotherlowerconstant': identify
+which exactcompatible witness survives thecurrentbank, appendan allscale-valid
+columnitviolates withstrictinformationgain, or certify itviolatesNONEof the
+finitegeneratedcatalog. The latter isfinitecatalogobstructiononly. Then search
+structuredmatrix/trace identities ontheenlargedbank, notjustpergeometryS/L.
+For wsource, recordfixedprimeclosure; forw1, recordgrowingprimecoverage and
+columnnorm/degreebounds. A futureallj recurrence mustkeepconstants independent
+ofu andcoverbankcollapse/conditioning, allcutendpoints andcompletecross terms.
+No uniformRH-strength matrix/pricelemma isproved by this review.
+
+No frozen686files changed, oldscience replayed, unknownmu queried, orRHclaim.

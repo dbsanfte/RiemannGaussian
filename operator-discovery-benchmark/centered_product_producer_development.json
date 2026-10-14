@@ -1,0 +1,20 @@
+{
+  "operations": 53006,
+  "runs": [
+    {
+      "elapsed_seconds": 0.08008212901768275,
+      "operations": 51576,
+      "returncode": 0,
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n",
+      "stdout": "SYNTHETIC_WORK module=test_centered_product_fibers operations=51576\n"
+    },
+    {
+      "elapsed_seconds": 0.06523467999068089,
+      "operations": 1430,
+      "reason": "new selected-pair admission test only",
+      "returncode": 0,
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "stdout": "SYNTHETIC_WORK module=test_centered_product_fibers operations=1430\n"
+    }
+  ]
+}

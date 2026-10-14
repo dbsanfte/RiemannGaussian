@@ -1,0 +1,117 @@
+INDEPENDENT FIRST PRIME-RATIO COST OBSTRUCTION (059 FOLLOWUP)
+
+Admission and authority
+-----------------------
+verify(certificate,meter=None) admits only the exact typed certificate specified
+by the post059 protocol. It imports the immutable052 canonical rational/schema
+helpers and charge-only Meter. It does not import the new miner, enumerate the
+scientific policy bank, inspect saved scientific values, evaluate a Mobius
+array, or integrate a kernel. Its synthetic cells use masks [2,5] and [2,7].
+The existing059 policy source was read only to confirm its operational meaning:
+ratio edges are sorted by (prime,smaller index,larger index), committed pairs
+are removed immediately, and subsequent scans only see remaining endpoints.
+
+Parameters are fixed 0<alpha<1, gamma>0, 0<tau<1 and a sorted distinct actual
+prime mask M containing p<q. The certificate prime r is independently proved
+to be the smallest actual prime outside that mask. There are at most8 registered
+primes, each <=1,000,000, canonical rational input components <=4096bits, and
+2500 characters per rational. Exact outputs have fixed bounded dimension;
+prospective work/time limits come from the metered primitive. No unknown
+constant or threshold is manufactured from finite observations.
+
+The exact source and floor-cell gate
+-----------------------------------
+Write W(v)=floor(4v)-3floor(2v)+2floor(v). For d=a and d=ra the source shell
+weights are the pairs (W(N/(pd)),W(N/(qd))). Every component weight is in
+{-1,0,1}. P means (A,0), Q means (0,B), D means (A,A), S means (A,-A), with
+nonzero A or B. Their kernel signs are A,-B,A,A respectively. Ordinary source
+sign is mu(d) times this kernel sign.
+
+On the positive OPEN cell v=N/a in (lo,hi), the checker verifies separately
+each of the twelve component floors. For a positive multiplier c, the minimum
+floor on the open interval is floor(c*lo), and the maximum is ceil(c*hi)-1.
+Both must coincide. Thus an integer endpoint is allowed, but a change strictly
+inside the cell is not. A midpoint sample or cancellation between changing
+floors is insufficient. Both weight pairs must be nonzero and have identical
+profile and nonzero kernel sign. Their nonzero weights also guarantee that
+both indices are within the complete source horizon floor(4N/p).
+
+The source includes d=1 and every range exit. The obstruction only selects a
+subset of its nonnegative charged costs; it never discards terms from J.
+
+Irrevocable first-pass edges
+----------------------------
+Take squarefree a coprime to r*product(M) in
+      N/hi < a < N/lo.
+Then mu(ra)=-mu(a), so the identical kernel signs produce opposite source signs.
+All such r-edges are disjoint. A nonzero squarefree endpoint divisible by r
+can only be the upper endpoint, while r^2*a has mu zero. Every smaller prime
+is registered and hence absent from the coprime source. Consequently this
+entire family is paired by the first ascending-prime pass, for either group
+all or group profile. No prior scan, descending pass, other partition, undo,
+or unsupported rescue is admitted. The optional canonical residual scan does
+not remove already charged absolute edge differences.
+
+Positive density, without prime distribution data
+-------------------------------------------------
+Let Q=r*product(M), u=1/hi, v=1/lo. The elementary identity
+      1_squarefree(n)=sum_(d^2|n) mu(d)
+and finite coprime counting give
+      # {uN<a<vN: squarefree, gcd(a,Q)=1}
+       =rho_Q*(v-u)*N+O_(Q,cell)(sqrt(N)),
+      rho_Q=(phi(Q)/Q)*product_(ell prime,ell not dividing Q)(1-ell^-2).
+Indeed only d coprime to Q contribute; the integer count for each d has bounded
+periodic error O_Q(1), there are O_cell(sqrt(N)) possible d, and the omitted
+absolute 1/d^2 tail contributes the same order. All constants here may depend
+on the fixed cell. No restriction v<=1 or numerical error constant is assumed.
+The Euler product is >=1/4: sum_primes ell^-2 <=sum_n>=2 n^-2 <=3/4, and finite
+products (1-x_i) are >=1-sum x_i. Passing to the limit proves
+rho_Q>=phi(Q)/(4Q)>0. Hence at least c_density*N edges exist eventually, for
+some fixed positive constant. There is no PNT import, finite density premise,
+or claim of a computable finite failure scale.
+
+Local positive kernel cost
+---------------------------
+The normalized source magnitudes are
+ rgamma(1-alpha)*integral_eps^tau G_M(t) f_profile(t) d^-t t^(-alpha-1) dt,
+ eps=min(tau,N^-gamma), G_M=product_(ell in M)(1-ell^-t),
+ f_P=p^-t, f_Q=q^-t, f_D=p^-t-q^-t, f_S=p^-t+q^-t.
+This is the positive normalized Laplace representation of the actual source,
+not a coefficient-envelope countermodel. Each f is positive; for D use p<q.
+The cost of an r-edge is exactly the same integral with the additional factor
+1-r^-t, since the upper index is ra and both have the same profile.
+
+Put k=|M|, delta=1 for D and0 otherwise, D_N=floor(4N/p),
+T=1/log(2qD_N). Eventually [T,2T] lies inside (eps,tau) and t<=1, since gamma
+and tau are fixed positive. On that window a<=D_N gives a^-t>=exp(-2).
+For0<t<=1, each registered factor is >=t/(2ell), the ratio factor is >=t/(2r),
+P/Q/S are >=1/q, and D is >=t/q^2 (integrate exp(-yt) over log(p)..log(q)).
+Also exp(-2)>=1/9 and rgamma(1-alpha)>=(1-alpha)/2, since Gamma(s)<=1/s+1
+for0<s<1. Thus a rational integrand lower constant is
+ (1-alpha)/(36*2^k*product(M)*r*q^(delta+1)).
+Integrating t^(k+delta-alpha) on [T,2T] gives at least this constant times
+T^(k+delta-alpha+1). Therefore the only admitted logarithmic exponent is
+      A=k-alpha+delta+1.
+Combining the density estimate and log(2qD_N) asymptotic to log(N) yields
+      B_policy(N)>=c*N/(log(N))^A
+for all sufficiently large integer N, with fixed c>0. The checker reports
+these existence quantifiers honestly, without a numerical lower c or N0.
+
+Decisive scope
+--------------
+This excludes every bound B_policy(N)<=C*N^beta*(1+log(N))^eta with fixed
+beta<1, fixed finite eta, and finite C, uniformly in all N. The exclusion is
+about an irreversible matching upper COST. It gives no lower bound for the
+actual signed J, no refutation of an arithmetic source estimate, no rejection
+of arbitrary matching policies, and no RH proof or refutation. Finite059
+successes remain unchanged. No finite counterexample scale is located here.
+
+Synthetic verification
+------------------------
+The focused owned suite checks exact open endpoints, floor-crossing mutations,
+all four profiles, signs, prime minimality, full masks, general rational orders,
+strict policy syntax, missing/extra proof fields, and explicit non-RH scope.
+It also exercises the actual charge-only pipeline Meter and capacity failures.
+The development receipt records the suite's charged operations and a
+conservative full-cap reservation for preparatory fixture work whose final
+counter was not printed. That reservation is not a measured operation count.

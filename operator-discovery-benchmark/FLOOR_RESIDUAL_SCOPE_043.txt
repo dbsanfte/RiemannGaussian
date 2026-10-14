@@ -1,0 +1,205 @@
+FLOOR RESIDUAL ARGUMENTS043: WHOLE NORMS, EXACT REFINEMENT, OPEN CONVERGENCE
+Independent proof/admission scope. Frozen earlier sources remain unchanged.
+No arithmetic coefficient archive or earlier successful suite is used.
+
+1. Known criterion context and the exact target family
+
+For integer n>=2 define, with zero extension beyond1,
+ f_n(x)=floor(1/x)/n-floor(1/(nx)), 0<x<=1.
+On the cell (1/(k+1),1/k] its exact value is (k mod n)/n. It is bounded
+between0 and(n-1)/n. A target program is a FINITE rational sum g=sum c_n f_n;
+its residual is e=1-g on(0,1]. Natural-index fractional-part approximation
+is established Nyman-Beurling-related territory, not a claim of a newly
+invented RH criterion. Primary context: Luis Baez-Duarte,
+'A strengthening of the Nyman-Beurling criterion for the Riemann Hypothesis',
+https://arxiv.org/abs/math/0202141 . Only the following elementary one-way
+zero obstruction is needed here; no converse or RH-dependent convergence
+result is imported.
+
+Indicator terms I_q=1_(x<=1/q) may appear in affine forcing programs and their
+norm certificates. They are NOT freely admissible in an RH-bearing target.
+Their Mellin response is q^-s/s, generally nonzero at a zeta zero. The checker
+requires target.steps=[]; otherwise it verifies only a forcing/diagnostic
+program, with its modified zero response explicitly exposed.
+
+2. Mellin source guard and zero response
+
+For Re(s)>1, Tonelli/absolute integration gives
+ integral_0^1 floor(1/x)x^(s-1)dx=zeta(s)/s,
+ integral_0^1 floor(1/(nx))x^(s-1)dx=n^-s*zeta(s)/s.
+Thus M(f_n)(s)=(n^-1-n^-s)zeta(s)/s. The left side is holomorphic for Re(s)>0
+because f_n is bounded and its log-weighted derivatives are locally dominated.
+Analytic continuation extends the identity there; the apparent pole at1 is
+removable because the factor vanishes. No reciprocal zeta series or ordinary
+critical Möbius moment is asserted.
+
+At an actual zero rho with sigma=Re(rho)>1/2, every finite target has
+ integral e(x)x^(rho-1)dx=1/rho.
+With the complex Hilbert inner product this is <e,x^(conj(rho)-1)>=1/rho.
+The testing function has squared norm1/(2sigma-1). Cauchy-Schwarz proves
+ ||e||_2^2 >= (2sigma-1)/|rho|^2.
+Therefore ANY actual sequence of these target norms tending to0 excludes all
+zeros to the right of1/2. The usual zeta zero symmetry would yield RH. This
+source guard survives every finite coefficient choice: a fixed finite
+projection or zero-erasing auxiliary cannot make the zero response disappear.
+No finite norm improvement proves the required sequence limit.
+
+3. Whole continuous norm admission, not a head fit
+
+A general forcing/norm program may have
+ e(x)=1-sum c_n f_n(x)-sum d_q I_q(x), q>=2.
+Its whole squared norm is the positive infinite series
+ sum_(k>=1)e(k)^2/[k(k+1)].
+The first H cells have exact rational residues. Once H>=every step q, the
+remaining pointwise absolute bound is
+ M=|1-sum d_q|+sum|c_n|(n-1)/n.
+The entire unobserved tail is between0 and M^2/(H+1), because the cell measures
+telescope exactly. This proof uses no observed tail sign or extrapolated law.
+It includes x tending to0; ignoring this part is not a global norm certificate.
+
+Independent replay uses a minimum heap of each floor term's next integer
+wrap event, not the producer's dense event sieve. It recomputes the exact
+integer lattice and accumulates with at least256-bit Arb, validates the
+producer's authoritative exact dyadic endpoints, and verifies inclusion
+of the full analytic tail range. A finite decimal display ball must overlap
+its exact interval but is diagnostic only: printing rounds its radius
+independently, so it need not contain the exact endpoints. Ranking and proofs
+use the verified exact endpoints, never this display text. Work is O(H+sum floor(H/n)log support),
+with O(support) heap memory. A supplied head/whole zero ball is rejected unless
+it truly encloses the independently priced quantities. All domain, tail,
+coefficient, support and false-convergence flags are bound to the certificate.
+The certificate is a theorem for ONE exact fixed program, not a theorem about
+support increasing, a recipe family, or the original arithmetic source.
+
+4. Exact dilation and the complete signed refinement
+
+For q integer>=2, D_q g(x)=g(qx), using zero extension. Direct floor subtraction
+proves, at every x including the jumps,
+ D_q f_n=f_(qn)-f_q/n; D_q I_s=I_(qs).
+A change of variables proves ||D_q e||_2^2=||e||_2^2/q. D_q1=I_q; it is NOT1.
+The different unit/indicator term is essential to every residual refinement.
+
+Given independently compiled target programs g_N and g_(qN), and rational b,
+let h_N=1-g_(qN)-b I_q+b D_q g_N. The checker compiles its forcing program
+with floor coefficients g_(qN)-b lift(g_N) and indicator coefficient b. Then
+ e_(qN)=h_N+b D_q e_N,
+ ||e_(qN)||^2=||h_N||^2+(b^2/q)||e_N||^2+2b<h_N,D_q e_N>.
+All mixed signs and the entire global inner product are retained. No sampled
+cross product pays this identity's forcing or its limit. b=0 gives h_N=e_(qN)
+and is an exact endpoint restatement, explicitly labeled as such.
+For b nonzero the identity is still not itself a new bound: a forcing or signed
+correlation provider must be independently proved at EVERY relevant scale.
+
+5. Conditional contraction gates and the exact missing quantifiers
+
+Put t=b^2/q. A relative-forcing proposal is the OPEN leaf
+ ||h_(N0*q^j)||^2<=tau||e_(N0*q^j)||^2, EVERY integer j>=0,
+one fixed recipe, fixed q,b,tau. Finite training/evaluation records do not
+license this quantifier. Triangle gives a contraction if sqrt(t)+sqrt(tau)<1.
+A radical-free exact gate is
+ A=1-t-tau>0 and A^2>4t*tau.
+For t,tau>0 choose Young parameter y=A/(2t). The squared contraction price is
+ rho=t+tau+A/2+2t*tau/A<1.
+For t=0 use rho=tau; for tau=0 use rho=t. Thus the OPEN leaf implies
+ ||e_(N0*q^j)||^2<=rho^j||e_N0||^2, which tends to0. It is CONDITIONAL,
+not a proved global approximation. Moreover it is EXCLUDED for pure floor
+recipe families with maxsupport<=N, as explained below, rather than a viable
+OPEN RH route. At b=0 this leaf directly states the
+endpoint contraction and is not a discovered auxiliary mechanism.
+
+An absolute-forcing gate uses fixed y>0 and rho=(1+y)b^2/q<1. If the OPEN
+all-iteration bound ||h_j||^2<=A tau^j, 0<=tau<1, were proved, then
+ E_j<=rho^j E0+(1+1/y)A sum_(i=0..j-1)rho^(j-1-i)tau^i.
+Both rates below1 imply convergence; at rho=tau the resonance factor j is
+retained rather than erasing it. More generally rho<1 and ||h_j||->0 suffice,
+by splitting the geometric convolution into a finite initial segment and
+its uniformly small tail. This needs the full epsilon/eventual-scale
+quantifier, not merely decreasing finite observations.
+
+These geometric-rate proposals are negative calibrations for the root's
+linear-support families. Jean-Francois Burnol, 'A lower bound in an
+approximation problem involving the zeros of the Riemann zeta function',
+Theorem1.3, https://arxiv.org/pdf/math/0103058 , proves an unconditional
+positive asymptotic lower bound for log(1/lambda)*D(lambda)^2. Each pure f_n
+is a combination of fractional-part functions with parameters1/n and1.
+Thus maxsupport<=N places g_N in B_(1/N), and its residual satisfies
+liminf log(N)*E_N>0. Along N=N0*q^j this excludes geometric energy decay,
+including a polynomial-in-j times geometric rate. If RH fails the distance
+remains positive, so this use is not RH conditional. It does not exclude
+slower convergence, or supergeometric support growth. The relative and
+absolute gates retain their correct logical implication but report this
+imported theorem boundary explicitly. They cannot be promoted on finite fits.
+
+The new primary conditional leaf is instead
+ ||h_N||^2<=A/L(N)^eta, L(N)=1+floor(log2 N)=N.bit_length(),
+ EVERY N=N0*q^j, integer N0>=1, eta rational in(0,1], A>=0.
+With t=b^2/q<1 and t>0, choose y=(1-t)/(2t). Young gives
+ rho=(1+t)/2<1, B=(1+1/y)A,
+ E_j<=rho^j E0+B sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta,
+since q>=2 implies L(N0*q^i)>=1+i. For b=0 use rho=0 and B=A
+(the exponent0 at the last convolution term means1). This tends to0 by
+splitting the convolution into a finite initial segment and a small tail.
+No geometric rate is claimed. eta<=1 does not contradict the imported
+1/log support lower bound. At b=0 this is an endpoint requirement, not an
+auxiliary cancellation discovery. A=0 would force the excluded geometric
+case and cannot provide actual linear-support convergence.
+
+The checker admits only OPEN provider status for these new leaves. It has no
+rule that turns a fitted ratio, finite table, bounded-coefficient norm, or
+literal caller flag into a proved global convergence result. Every output
+keeps convergence_proved and RH_proved false.
+
+6. Exact fixed-finite-stencil obstruction: three cells, not a free vector
+
+Suppose a fixed finite head dictionary {f_n} and finitely many q>=2 give
+ h=1-sum a_n f_n-sum b_q I_q, with arbitrary coefficients. Let L=lcm(head n)
+(L=1 for empty head). Choose M=L*ceil(max(2,max q)/L). On the three cells
+k=1,M,M+1, each f_n has values1/n,0,1/n, and each indicator has values0,1,1.
+Consequently
+ h(cell1)+h(cellM)-h(cellM+1)=1.
+The three cell measures are1/2,1/[M(M+1)],1/[(M+1)(M+2)]. Weighted
+Cauchy-Schwarz yields the exact coefficient-independent gap
+ ||h||^2 >=1/[2+M(M+1)+(M+1)(M+2)]
+         =1/[2(1+(M+1)^2)]>0.
+This is a source-function identity, not a counterexample that forgot the
+actual floor representation. It also proves1 is outside the finite span of
+those head and indicator functions.
+
+A fixed affine recurrence e_next=h+T e with bounded T and h nonzero cannot
+converge to0: otherwise ||h||<=||e_next||+||T|| ||e|| would tend to0. For
+coefficients varying within a fixed finite dictionary, the same positive gap
+applies uniformly; a uniformly bounded operator family still cannot drive
+the target residual to0. Signed cross terms cannot evade this exact identity.
+The root's growing-support recipes are NOT fixed dictionaries: their M and
+lower gap change with N and the lower gap may tend to0. This guard must not
+be mislabeled as a refutation of growing recipes, a universal obstruction to
+Nyman-Beurling approximation, or an RH refutation. Every guard output states
+'growing_dictionary_refuted:false'.
+
+7. Meaning of the detector experiment
+
+Searching rational corrections, dilations and logarithmic/vanishing forcing
+gates against whole continuous norm certificates is a finite proof attempt
+on the new residual. Geometric relative/absolute gates are negative
+calibrations, excluded for the chosen linear-support family by Burnol's
+lower bound. A finite logarithmic-forcing pass is only evidence for the OPEN
+all-scale leaf. Successful admission
+requires an independently verified recipe identity and a uniform argument
+for that forcing/correlation leaf. A fixed-stencil impossibility or failure
+of a finite coefficient bank is scoped to that bank. It does not choose a
+winning auxiliary by assumption or turn known criterion equivalence into a
+proof of convergence.
+
+Public independent APIs
+ verify_program(program,target=True,meter=None)
+ compile_dilation(program,q,meter=None)
+ verify_family_refinement(parent_program,child_program,q,b,meter=None)
+ verify_norm(program,certificate,meter=None)
+ fixed_stencil_guard(indices,dilations,meter=None)
+ verify_relative_forcing_gate(q,b,tau,provider_status='OPEN',meter=None)
+ verify_absolute_forcing_gate(q,b,young,constant,ratio,provider_status='OPEN',meter=None)
+ verify_vanishing_forcing_gate(q,b,provider_status='OPEN',meter=None)
+ verify_log_forcing_gate(q,b,A,eta,provider_status='OPEN',meter=None)
+None imports the producer. The source zero guard is proved symbolically in
+this memo and exposed by typed target admission; no actual zero is presumed
+or estimated. All original arithmetic-source/RH tasks remain unproved.

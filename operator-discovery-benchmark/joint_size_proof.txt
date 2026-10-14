@@ -1,0 +1,272 @@
+JOINT INTEGER-SIZE PRODUCTS: CORRELATED BASES AND A NATURAL BOUNDARY
+
+Research record, 7 October 2026. Universal written proofs are accompanied
+by exact arithmetic and actual-zeta enclosures. Historical originality
+is unresolved. No new primitive or RH estimate is asserted. This stage
+extends the grammar and identifies a stronger obstruction introduced
+by the selected products themselves.
+
+1. BOOLEAN COMPOSITION OF ASSOCIATIVE KERNELS
+
+For b>=2 let K_b(a,d) be the floor no-carry weight
+  1[floor(log_b(ad))=floor(log_b(a))+floor(log_b(d))].
+Its associative, commutative and unital divisor product was proved in
+size_carry_proof.txt. If K and J are two such kernels, their pointwise
+product K(a,d)*J(a,d) is again associative: multiply the two identities
+  K(a,d)*K(ad,e)=K(d,e)*K(a,de)
+and the corresponding identity for J. Commutativity and the unit persist.
+Thus the selected intersection K_(b,c)=K_b AND K_c is universally valid.
+The same argument applies to any floor/ceiling choices and to other
+certified kernels. This closure construction is not a new primitive.
+
+The 320-program Boolean grammar tests all truth tables on five base
+pairs and four orientation pairs. Unit normalization rejects half of
+the tables. Training through 4 has 128 fits; held-out integers through
+24 and large exact powers leave 80. Their truth tables are precisely
+AND, the first kernel, the second kernel, and the constant-one kernel.
+All four rules have universal proofs; the 80 instances are not 80 new
+operators. OR and implications require their own associativity checks.
+The complement of an intersection need not be associative, even though
+each single size kernel has an associative carry-only complement.
+check_joint_size.py records an explicit complement counterexample.
+
+For normalized arithmetic functions, coefficient-local LOG/EXP yield
+  V_(b,c)(f)=EXP_Kjoint(LOG_D(f)),
+with inverse EXP_D LOG_Kjoint and the normalized group-transfer law.
+This is the established abstract LOG/EXP construction. Its finite root
+lift L_q is the q-fold joint product of the ordinary qth root. Its
+coefficient limit as q->infinity is V. On u(n)=1, all coefficients of
+finite lifts and V lie in [0,1], since positive ordinary products dominate
+the filtered products. Hence all series converge absolutely on Re(s)>1
+and the root-order limit is locally uniform on that half-plane.
+
+The independent arithmetic checker uses Euler-degree triangular LOG/EXP,
+rising-factor roots, and a binomial evaluation of finite lifts. For sparse
+large integers it uses bivariate prime-cycle polynomials: replace each
+prime-power log term x^j/j by z^{h_b(p^j)}*w^{h_c(p^j)}*x^j/j, multiply
+ordinary local exponentials, and extract degrees (h_b(n),h_c(n)). Equality
+in both height inequalities means exactly that both carry totals vanish.
+The 27 sparse profiles include rational parameters and do not zero-pad
+unavailable input coefficients. Factorial degree clears the predicted
+rational denominators as in the one-base cycle proof.
+
+2. TWO INDEPENDENT ANGLE COORDINATES
+
+Write theta_b(n)={log_b(n)}, tau_b=2*pi/log(b). Suppose b and c are
+multiplicatively independent, meaning b^r*c^s=1 with integers r,s only
+when r=s=0. This is equivalent to log(b)/log(c) being irrational.
+For any nonzero integer pair (m,n),
+  t_(m,n)=m*tau_b+n*tau_c !=0:
+if it were zero, m*log(c)+n*log(b)=0 would give c^m*b^n=1.
+Sharing prime factors is allowed, for example b=2,c=6.
+
+For a>0 the nonnegative ordinary root coefficients d_a define a positive
+measure on the two-dimensional angle torus:
+  mu_(epsilon,a)=epsilon^a*sum_j d_a(j)*j^(-1-epsilon)
+                         *delta_(theta_b(j),theta_c(j)).
+Its mass tends to 1. Its (m,n) Fourier coefficient is
+  epsilon^a*zeta(1+epsilon+i*t_(m,n))^a.
+At every fixed nonzero mode, the zeta value is bounded near the indicated
+point, since its only pole is at 1. The modulus of the normalized real
+power is |zeta|^a, so the coefficient tends to zero. Positivity, bounded
+mass and density of finite trigonometric polynomials prove weak convergence
+to uniform torus measure. The two coordinates in that limit are independent.
+
+For any fixed q, the q-fold product measures also converge. The angle cut
+and the two simplex boundaries have measure zero under the uniform limit,
+so their bounded indicator-phase functions have convergent integrals.
+The q-fold joint floor product retains a factorization exactly when
+  sum_j theta_b(n_j)<1 AND sum_j theta_c(n_j)<1.
+Applying the product-measure lemma with a=alpha/q proves, for every
+alpha>0 and positive integer q,
+  lim_(epsilon down to 0) epsilon^alpha
+      L_(b,c,q)(u^{*alpha})(1+epsilon+i*t_(m,n))
+       =A_q(m)*A_q(n),
+where
+  A_q(0)=1/q!,
+  A_q(m)=1/(q-1)!*integral_0^1 v^(q-1)*exp(-2*pi*i*m*v) dv
+        =-sum_(r=1)^(q-1)(1/(2*pi*i*m))^r/(q-r)!, m!=0.
+The one-base proof shows A_q(m) is nonzero for every integer m when
+q>=2. For q=1, all nonconstant coefficients vanish; the natural-boundary
+conclusion below therefore expressly excludes q=1.
+
+3. RE(s)=1 IS A NATURAL BOUNDARY FOR EVERY FINITE q>=2
+
+The additive group {m*tau_b+n*tau_c} is dense in the real line. One
+elementary proof uses pigeonhole approximation of the irrational ratio:
+the group contains nonzero elements Delta of arbitrarily small modulus.
+Integer multiples of each Delta approximate any given real number to
+within |Delta|/2, and remain elements of the group.
+
+At every frequency in this dense group, the preceding Abelian coefficient
+is nonzero for q>=2. The original half-plane series is therefore unbounded
+when approaching that boundary point from the right, at rate epsilon^-alpha.
+Consider any putative holomorphic continuation across any point of the
+line Re(s)=1. A small disk on which it is holomorphic overlaps the original
+right half-plane, where the continuation agrees with the series. Inside
+a smaller disk it is bounded. A group-frequency boundary point lies in
+that smaller disk; approaching it from the right contradicts boundedness.
+Thus no such continuation exists across any point of the line.
+
+Even local meromorphic continuation is impossible. Each of the dense
+unbounded boundary points would have to be a pole of the continuation.
+Poles of a meromorphic function cannot accumulate inside its domain.
+This proves a natural boundary, rather than merely listing a finite set
+of suspected singularities. Arbitrarily small coefficients at high-index
+modes do not evade the argument: each fixed nonzero coefficient gives
+unbounded growth as epsilon->0.
+
+This is unconditional and is caused by the joint filter. Actual zeta is
+classically zero-free on Re(s)=1, and at nonzero group frequencies it is
+holomorphic. Ordinary pole cancellation at 1 cannot remove a dense family
+of other singularities. These joint finite lifts consequently cannot
+provide the proposed individual RH-half-plane holomorphy test. The earlier
+single-base paired-root identity is a different composition and is intact.
+
+Only TWO reciprocal logarithms are used. Multiplicative independence
+of three or more integer bases does not by itself prove rational linear
+independence of their reciprocal logarithms; no such extrapolation is made.
+
+4. CORRELATED BASES: THE INDEPENDENCE SHORTCUT FAILS
+
+If c=b^k for an integer k>=1, write an angle in base c as
+  theta_c=(j+u)/k, j=0,...,k-1, 0<=u<1.
+Then theta_b=u. Uniform circle measure for theta_c makes j uniform on
+these k digits and u uniform on [0,1), independently. In q factors the
+two no-carry conditions become
+  sum u_i<1, sum j_i+sum u_i<k.
+Apart from a null boundary, this is equivalent to sum u_i<1 and
+sum j_i<=k-1. The number of ordered digit tuples satisfying the latter
+condition is binomial(k+q-1,q), by stars and bars; their individual upper
+bound j_i<=k-1 is automatic. Consequently the real-pole coefficient is
+  binomial(k+q-1,q)/(k^q*q!).
+For k=2 it is (q+1)/(2^q*q!), which at q=2 is 3/8. The independent-base
+coefficient would be 1/(q!)^2=1/4, so that shortcut is exactly false.
+
+The geometry stage obtains simplex-box counts by cumulative sums and
+correlated digit counts by a separate integer recurrence. A 405-program
+grammar of binomials, factorials and powers fits the correlated formula;
+one program survives fresh q and k values. The independent checker
+recomputes box counts with binomial formulas. This confirms implementation;
+the universal law follows from the angle decomposition just proved.
+
+The actual-zeta torus control also distinguishes dependence. For (b,b^2),
+the nonconstant torus mode (1,-2) has IDENTICALLY zero scalar frequency.
+Its Fourier moment equals the total mass and tends to 1. For independent
+bases every fixed nonconstant mode tends to zero. Neither a finite set
+of samples nor near-cancellation of floating logs is used to decide the
+universal rational-dependence question.
+
+No natural-boundary theorem is asserted here for dependent bases. Their
+frequency group is discrete, and a separate continuation analysis would
+be necessary. The independent-base proof cannot be applied to them.
+
+5. AN EXACT ARITHMETIC IDENTITY FOR THE q=2 ZETA COMPARISONS
+
+Let A and B be coefficient multipliers by theta_b and theta_c; C=AB
+is their commuting pointwise composition. Write *=ordinary convolution,
+g=d_beta, P=g*g=d_(2beta), F=zeta^beta. Expanding
+  (1-theta_b(i)-theta_b(j)+theta_b(ij))
+  *(1-theta_c(i)-theta_c(j)+theta_c(ij))
+proves the following exact coefficient identity for g Kjoint g:
+  P-2*g*(Ag+Bg)+AP+BP+2*g*(Cg)+2*(Ag)*(Bg)
+       -2*A(g*(Bg))-2*B(g*(Ag))+CP.
+It holds before taking any Dirichlet series. On Re(s)>1 all terms converge
+absolutely for the tested beta=1/2, since their coefficients are bounded
+by ordinary products of nonnegative root coefficients.
+
+Let R_b keep indices b^k. Write S_b for the Fourier sawtooth multiplier
+with midpoint value 1/2 at integer angles, so A=S_b-R_b/2. A finite
+Fejer version of S_b acts on a Dirichlet series H by
+  S_b H(s)=H(s)/2-sum_(0<|m|<=M)
+                (1-|m|/(M+1))*H(s-i*m*tau_b)/(2*pi*i*m).
+Using A and B as commuting diagonal multipliers gives
+  Cg=S_b*S_c(g)-S_b(R_c g)/2-S_c(R_b g)/2+R_b R_c g/4,
+and likewise for P. The outer multiplier terms A(g*Bg) and B(g*Ag)
+require R_b(g*Bg) and R_c(g*Ag). Their coefficients are evaluated from
+actual divisor sums; no false composite-base convolution-homomorphism
+assumption is made.
+
+The common-power projection R_b R_c is delta-only for independent bases.
+For (2,4) it is R_4. Replacing it by delta-only in the exact identity
+changes the n=4 lift coefficient from 3/4 to 5/16. This is an exact
+counterexample to the shortcut, independently of spectral tail size.
+
+For a prime-power base b=p^e the root resonance series has coefficients
+d_beta(p^(e*k)). The production code uses its native hypergeometric
+representation. The independent checker uses elementary root-of-unity
+averaging of (1-p^-s)^(-beta); for e=2 this is the average of the plus
+and minus arguments. At |p^-s|<1 these are normalized analytic branches.
+The filtered-convolution resonance series is computed from prime-power
+divisor coefficients, with an explicit geometric tail.
+
+6. TWO DIFFERENT PROVED SPECTRAL ERROR BOUNDS
+
+The production code uses the corrected Fejer multiplier theta_tilde,
+which lies in [0,1], including exact zero at powers of its base. Its
+one-base weighted error is bounded by E_b(sigma,M) from
+size_carry_proof.txt, for sigma>2 and root
+coefficients d_beta,d_(2beta)<=1. The approximate no-carry kernel
+1-theta_tilde(i)-theta_tilde(j)+theta_tilde(ij) lies in [-1,2].
+For two kernels the pointwise product error is <=one kernel error plus
+twice the other, in either order. Summing positive g_i*g_j weights gives
+  joint_error <=(2*zeta(sigma)^beta+1)
+                     *min(E_b+2*E_c,E_c+2*E_b).
+The individual three-term kernel error is bounded by
+(2*zeta(sigma)^beta+1)*E_b because g*g=d_(2beta).
+Add the geometric tails of R_b(g*Bg) and R_c(g*Ag), each bounded by
+b^(-(K+1)*sigma)/(1-b^-sigma) when its multiplier lies in [0,1].
+
+The independent checker uses ordinary Fourier partial sums, without
+Fejer weights. Their corrected sawtooth multiplier has absolute bound
+  D_M=1/2+H_M/pi.
+Hence the approximate kernel has absolute bound B_M=1+3*D_M. The
+one-base error is, for sigma>2,
+  E_b^ordinary=sqrt(b)*log(b)/(2*pi*(M+1))
+               *(zeta(sigma-1)-1/(1-b^(1-sigma))).
+To obtain this bound, Abel summation bounds the omitted sawtooth sine
+tail by 1/(pi*(M+1)*|sin(pi*theta)|). At a nonresonant integer index n,
+the distance of log_b(n) to its nearest integer is at least
+1/(sqrt(b)*n*log(b)): the corresponding integer power differs from n
+by at least one and is at most sqrt(b)*n. The inequality
+sin(pi*distance)>=2*distance then gives the displayed bound after
+summing n^(1-sigma). Exact power indices have zero multiplier error
+and are subtracted as the geometric series in the formula.
+The independent joint error uses
+  (2*zeta(sigma)^beta+1)
+       *min(E_b+B_M*E_c,E_c+B_M*E_b).
+Filtered resonance tails additionally carry the bound D_M. The direct
+arithmetic truncation tail is N^(1-sigma)/(sigma-1), since actual q=2
+joint-lift coefficients lie in [0,1]. Every omitted infinite component
+has a separately stated bound.
+
+The source uses M=48, resonance cutoff 48 and arithmetic cutoff 512;
+the independent checker uses M=32, resonance cutoff 40 and arithmetic
+cutoff 768, and calculates fresh arithmetic
+coefficients directly from divisor sums. Six fresh actual-zeta points
+at Re(s)=3,4,6 include independent bases and the correlated pair (2,4).
+They reject a controlled coefficient-2 perturbation: +2 in the source
+and a smaller +1 in the independent checker. The moment controls
+use genuine root Fourier moduli at Re(s)=1+epsilon. They support the
+implementation and the independence counterexample; the natural boundary
+is established by sections 2 and 3, not numerical extrapolation.
+
+7. HISTORICAL AND RESEARCH SCOPE
+
+The general divisor-kernel framework, its associative cocycle condition,
+and LOG/EXP unit-group transfers are classical, as documented in
+novelty_audit.txt and the earlier proofs. Boolean intersection is a
+closure rule, not a newly counted primitive. The exact joint zeta
+applications and their boundary characterization have not been matched
+to a reviewed publication; this is insufficient to certify originality.
+Primary classical zeta context: NIST DLMF 25.10 (the zero-free line)
+and 25.4 (functional equation); the actual computations use Arb:
+  https://dlmf.nist.gov/25.10
+  https://dlmf.nist.gov/25.4
+The previous proofs list the reviewed primary convolution literature.
+
+These families are now rejected as unmodified individual RH-domain
+diagnostics. Their formal arithmetic laws remain valid. The next search
+must seek a stronger arithmetic consequence with a genuine domain
+through the critical strip, rather than attributing filter-created
+barriers to zeta itself. The historically-new list remains open.

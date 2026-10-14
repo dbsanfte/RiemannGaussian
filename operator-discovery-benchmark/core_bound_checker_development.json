@@ -1,0 +1,14 @@
+{
+  "operations": 515829,
+  "runs": [
+    {
+      "test": "test_check_core_bound_synthesis",
+      "returncode": 0,
+      "operations": 515829,
+      "tests": 9,
+      "runtime_seconds": 0.031,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_bound_synthesis operations=515829\n",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.031s\n\nOK\n"
+    }
+  ]
+}

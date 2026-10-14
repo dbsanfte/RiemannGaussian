@@ -1,0 +1,79 @@
+CROSS-CUTOFF SIGNED DRIFT ELIMINATION SEARCH, VERSION 1
+
+Input: candidate10_joint_power_obligation.json and immutable previous proof
+artifacts. Use the COMPLETE centering alternative for every geometry, even
+when a different subset was selected by the preceding search. That complete
+alternative was already independently checked and remains unchanged.
+At each COMMON N=4X-1, for a fixed inherited channel/transport construction,
+ g=P_i+R_i+d_i J_(2/3), i=1..5.
+Here P_i contains every already paid contribution from all three stages,
+R_i contains ALL remaining pieces and the same exact -e transport error,
+and d_i is the complete signed finite-moment drift. No partially centered
+representation may hide another finite-head drift in this search.
+
+Symbolic discovery:
+Solve the rational coefficient equations for all vector polynomials v(d)
+of degree<=1 satisfying sum_i v_i(d)d_i=0. No pairwise solution is seeded.
+Exact Gaussian nullspace computation generates a complete basis. Normalize
+each basis vector to primitive integers with first nonzero coefficient>0.
+Let s_j(d)=sum_i v_(j,i)(d). The square-and-pool grammar generates EVERY
+nonempty subset T of the basis, defining
+ W_i=sum_(j in T)s_j v_(j,i), S=sum_(j in T)s_j^2.
+Independent polynomial checks must verify sum_i W_i=S and sum_i W_i d_i=0.
+Thus S>=0 for all real d; positivity at the ACTUAL moments is a separate
+arithmetic question. Where S>0, lambda_i=W_i/S satisfies sumlambda=1 and
+sumlambda*d=0. Keep negative weights, all signs and all cross terms.
+
+Recovery:
+ g=sum_i lambda_i(R_i+P_i), K=sum_i lambda_i^2.
+The channel map is linear at this fixed N; lambda is constant in the
+prefix/cell coordinate, never a varying n-dependent weight. Consequently
+ E_g<=2 E_(sumlambda R)+2 K sum_i C_(P_i), with all R-to-R crosses.
+The alternative coarser reference2K sum_i E_Ri is available but is not
+mistaken for signed cancellation. If each paid group has energy bound C,
+combine its nonzero groups with their full Cauchy count. All original
+source units, finite heads, recovery costs and transport corrections stay.
+No claim is made at S=0. A certified all-zero drift permits identity
+recovery separately; zero-containing numerical intervals do not certify it.
+
+Every selected candidate must carry two OPEN cofinal obligations:
+1. uniformly controlled recovery K (or the exact weighted paid cost);
+2. a signed bound for the complete weighted residual sum.
+Individual upper bounds on d_i cannot imply1: d_i=1 for every i gives
+S=0 for every candidate. This is a countermodel to that weak proof route,
+not a counterexample for actual Mobius moments, the original core or RH.
+No old fixed-C recurrence is discharged.
+
+Numerical experiment (new moment observables on OLD source data):
+Read exact mu integers from each role's already verified source archive
+through its required cutoff, never regenerate the source. Two workers
+validate every divisor-inverse equation for those integers. Producer sums
+weighted coefficients using cube roots at192bits; checker uses full Abel
+summation of exact Mertens prefixes with power evaluations at224bits.
+Compute actual d_i from complete moments a_U=sum mu/d^(2/3) and
+b_V=sum mu/d^(4/3), including the unit, primes and all prime powers.
+Common effective cutoffs ending at the same last nonzero mu index are
+exact aliases. Merge those variable coefficients before evaluation; this
+certifies exact singularities without treating a small float as zero.
+
+The structure catalogue is frozen before any moments are read. Evaluate
+all candidates at discovery parents X=1,2,...,8192 (dyadic). Select one
+finite-nonsingular candidate for each active support size2,3,4,5, ranking
+by worst observed doubling exponent of K, then edge/basis count and id.
+Retain the candidate using only the two geometries whose entire centered
+finite-head remainder is paid, even if singular or not selected by rank.
+Archive all failures and all conditioning values. No constants are fitted.
+Selection precedes evaluation at X16384,32768,65536,131072. These are
+evaluation observables on already observed coefficients through524287,
+NOT fresh source holdouts or evidence of an all-scale bound. Every actual
+moment and candidate S,K is independently compared at both precisions.
+Results uncertain at the interval level remain unresolved, never retried
+unchanged or upgraded to proofs. Finite recovery passes are NOT residual
+bound passes and are NOT RH-candidate certification.
+
+Work caps: each numerical worker600million operations and1800seconds;
+main200million and3600seconds; inclusive whole run1.5billion operations,
+4GiB per process under16GiB aggregate. Independent workers run in parallel.
+One owned development suite per new module, affected tests only after edits,
+then frozen suites. Direct-byte snapshots, no hashes. Preserve all terminal
+outcomes. Original signed core/RH goal remains OPEN until actually proved.

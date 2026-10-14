@@ -1,0 +1,67 @@
+Detector synthesis of convolution identities and their bound arguments
+
+Input is candidate10_bound_argument_obligation.json, byte-identical to the
+accepted stage030 publication. Keep the complete signed core, all source
+bindings, earlier alternatives and original global Mellin requirement.
+
+What is supplied and what is searched
+Review031 supplies elementary floor normalization, discrete covariance,
+divisor envelopes, Abel summation, finite-window spacing and support rules.
+These rules are analytical inputs, not discoveries claimed for the detector.
+The executable solves for floor-rewrite coefficients in 18 reciprocal and
+denominator columns. It collects h*A-c*h before applying magnitudes, then
+compares competing divisor-bound arguments by proved exponent, logarithmic
+degree and constant. It performs the same comparison without Mobius facts.
+Rational decay parameters are supported, including 1/6, 1/3 and 1/2; tests
+check the critical logarithmic transition. The actual source has decay zero.
+
+Cutoffs are generated systematically: every reduced rational in (0,1) with
+denominator at most 6, every ordered pair alpha<=beta with 2*beta>=1.
+The last condition supplies a quadratic tail relation for the C*e^2 term in
+the complete cubic (C delta+e)^3. The strict beta<1 excludes moving the
+whole source into a finite head of the original length. This is an explicit
+grammar restriction, not a theorem that such a head cannot cancel.
+No special alpha=1/3 decomposition is
+nominated. For each pair, generate all homogeneous degree-three monomials
+with at most one unrestricted e, and all degree-compatible tail relations
+(e-t)^a*(e-r)^b with a*alpha+b*beta>=1. Solve rational linear systems at
+every distinct support-cost threshold. Retain exact primal certificates or
+left-null contradictions, then choose the least feasible threshold.
+
+These are coefficient identities for every n<=N, with fixed integer
+t=floor(N^alpha), r=floor(N^beta). The strictly larger support of each tail
+proves vanishing even when a*alpha+b*beta=1. The finite head keeps its
+product<=n indicator. This is not a global Dirichlet-series identity and
+does not permit substituting moving cutoffs into a periodic argument.
+
+Price the whole coefficient envelope, including C=O(U) and e(1)=c-C.
+Record the finite-head, short-head and all joined cross terms as unpaid.
+Rank geometries by the upper cost of a separate spacing argument; an
+expensive upper estimate is not a lower bound for arithmetic cancellation.
+Feed the exact joined-window covariance obligation back to the search.
+The original signed core remains priority zero and no route is discarded.
+
+The review also supplies a restricted actual-prime obstruction. In the
+full-period covariance of A^p*e, k=p+1 fresh primes q in (U/2,U] give
+coefficient (-1)^k k!, no higher cofactor, and variance at least
+(k!)^2/24 * binom(pi(U)-pi(U/2),k). This exact prime-count statement is
+finite and uniform. Only its asymptotic consequence imports the prime
+number theorem, explicitly linked to NIST DLMF 27.2.E3. It is not an
+obstruction for a finite physical window or for the complete signed core.
+
+Verification
+The independent checker reconstructs grammar columns and support domains,
+verifies every primal and dual witness without running the producer solver,
+recomputes all constants, logarithms, costs and selections, and checks the
+complete inherited feedback. Both owners run their new test suite once.
+Keep failed receipts and use focused tests only if an affected change is
+needed. Synthetic finite rational sequences calibrate identities and heads;
+they do not establish all-scale bounds. No source observations or fitting.
+
+Freeze source, protocol, review, receipts and current input as direct byte
+copies. Run the actual producer once and then its independent checker once.
+Preserve any failure directory. No hashes. Inclusive work cap 1 billion
+charged operations, 900 seconds and 4 GiB process memory, within the user's
+16 GiB allowance. Verify ancestry by saved publications, not prior reruns.
+Publish only after complete verification. An auxiliary bound is not a proof
+of the full component, signed core, or RH. No formal proof assistant claim.

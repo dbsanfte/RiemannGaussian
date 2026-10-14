@@ -1,0 +1,122 @@
+{
+  "schema": "mobius-convolution-scale-checker-development-v1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 42,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "charged_work_units": 2353443,
+      "elapsed_seconds": 0.4847306010196917,
+      "process_peak_rss_bytes": 720928768,
+      "unchanged_historical_suite_replayed": false,
+      "scientific_study_replayed": false,
+      "producer_imported": false,
+      "scientific_arrays_read": false,
+      "hashes_created": false
+    },
+    {
+      "attempt": 2,
+      "tests_run": 42,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "charged_work_units": 3081309,
+      "elapsed_seconds": 0.6557277549873106,
+      "process_peak_rss_bytes": 720928768,
+      "unchanged_historical_suite_replayed": false,
+      "scientific_study_replayed": false,
+      "producer_imported": false,
+      "scientific_arrays_read": false,
+      "hashes_created": false
+    },
+    {
+      "attempt": 3,
+      "tests_run": 47,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "charged_work_units": 3805520,
+      "elapsed_seconds": 0.8656056440086104,
+      "process_peak_rss_bytes": 720928768,
+      "unchanged_historical_suite_replayed": false,
+      "scientific_study_replayed": false,
+      "producer_imported": false,
+      "scientific_arrays_read": false,
+      "hashes_created": false
+    },
+    {
+      "attempt": 4,
+      "tests_run": 47,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "charged_work_units": 3805520,
+      "elapsed_seconds": 0.7579310400178656,
+      "process_peak_rss_bytes": 720928768,
+      "unchanged_historical_suite_replayed": false,
+      "scientific_study_replayed": false,
+      "producer_imported": false,
+      "scientific_arrays_read": false,
+      "hashes_created": false
+    },
+    {
+      "attempt": 5,
+      "tests_run": 48,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "charged_work_units": 3815531,
+      "elapsed_seconds": 0.7195293830009177,
+      "process_peak_rss_bytes": 720928768,
+      "rusage_peak_may_include_inherited_launcher_high_water": true,
+      "linux_current_process_peak_rss_bytes": 26435584,
+      "unchanged_historical_suite_replayed": false,
+      "scientific_study_replayed": false,
+      "producer_imported": false,
+      "scientific_arrays_read": false,
+      "hashes_created": false
+    }
+  ],
+  "runs": [
+    {
+      "command": "new independent convolution checker attempt 1",
+      "returncode": 0,
+      "tests": 42,
+      "operations": 2353443,
+      "elapsed_seconds": 0.4847306010196917
+    },
+    {
+      "command": "new independent convolution checker attempt 2",
+      "returncode": 0,
+      "tests": 42,
+      "operations": 3081309,
+      "elapsed_seconds": 0.6557277549873106
+    },
+    {
+      "command": "new independent convolution checker attempt 3",
+      "returncode": 0,
+      "tests": 47,
+      "operations": 3805520,
+      "elapsed_seconds": 0.8656056440086104
+    },
+    {
+      "command": "new independent convolution checker attempt 4",
+      "returncode": 0,
+      "tests": 47,
+      "operations": 3805520,
+      "elapsed_seconds": 0.7579310400178656
+    },
+    {
+      "command": "new independent convolution checker attempt 5",
+      "returncode": 0,
+      "tests": 48,
+      "operations": 3815531,
+      "elapsed_seconds": 0.7195293830009177
+    }
+  ],
+  "operations": 16861323,
+  "unique_new_synthetic_tests": 48,
+  "final_status": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "residual-pairing-search-development-v1",
+  "attempts": [
+    {
+      "module": "test_mobius_residual_pairing_076",
+      "tests_run": 8,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.33567129395669326,
+      "output": "test_actual_mobius_value_preserved_after_two_folds (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_complete_constructor_search_independent_certificate_and_tamper (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_fold_discovers_prime_pair_cancellation_without_mu (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_fractional_compiler_counts_units_and_independent_roots (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_input_and_prospective_resource_gates (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_prime_folds_commute_keep_coprime_domain_and_unit (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_square_energy_is_not_assumed_to_decrease (test_mobius_residual_pairing_076.ResidualPairing) ... ok\ntest_stencil_conservation_boundaries_and_symbolic_cancellation (test_mobius_residual_pairing_076.ResidualPairing) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.040s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "names": [
+        "test_mobius_residual_pairing_076.ResidualPairing.test_feedback_preserves_refuted_constant_and_other_arithmetic_leaves"
+      ],
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.29040200501913205,
+      "output": "test_feedback_preserves_refuted_constant_and_other_arithmetic_leaves (test_mobius_residual_pairing_076.ResidualPairing) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

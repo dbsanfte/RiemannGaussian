@@ -1,0 +1,232 @@
+EXECUTABLE ABSOLUTE WORK-MOMENT PROOF RULES
+
+Status: the following are unconditional, reusable upper-bound rules within
+the inherited classical moment library. They give genuine proof attempts,
+including a complete O(B^(11/2)) grouped-L1 bound. This does NOT meet the
+required B^(12/5) target. Failure of these absolute rules is not a disproof
+of actual signed arithmetic control. No source observations, numerical
+experiments, tests, hashes, or old-file edits were made.
+
+Input: candidate10_cutoff_prefix_projection_obligation.json, Review027,
+core_moment_bound_search.product_moment_search and the frozen source work
+polynomial in core_cutoff_prime_orbits.work_sectors. Existing primary-source
+moment provenance and the analytic transfers in Reviews018/020 are the
+declared trust base; no new moment theorem is imported here.
+
+1. Exact signed event, before choosing a norm rule
+
+Set sigma=9/20, delta=1-sigma=11/20, u=1/3, s=sigma+it,
+z=zeta(s), a=1/q, b=q^-s, q>=2. All state letters below are the OLD complete
+actual prefix q-1. E=1+z(c-A), |c|<=2. D is the complete deterministic head.
+For e=-1,0,1 define
+ P_e=(A+e b)^2(E+e z(a-b))^3-(c+e a)^3(D+b),
+ P_old=A^2 E^3-c^3 D.
+ J0=P_0-P_old=-c^3 b,
+ J1=(P_1-P_-1)/2,
+ J2=(P_1+P_-1)/2-P_0.
+Modulo e^3=e, P_e=P_0+e J1+e^2 J2. Thus the joined event is EXACTLY
+ j_q=mu(q) C1+mu(q)^2 C2=|P_mu(q)|^2-|P_0|^2,
+ C1=2 Re(P_0 conjugate(J1)+J1 conjugate(J2)),
+ C2=2 Re(P_0 conjugate(J2))+|J1|^2+|J2|^2.             (1.1)
+This retains every conjugate, the even work, J0, the complete head and all
+past source terms. A zero-Mobius event has j_q=0, but its deterministic
+state update is NOT deleted from later history. The unit is the initial
+state, not an event at a fictitious height H_0.
+
+An implementation may collect a formal polynomial in A,conjugate(A),
+D,conjugate(D),z,conjugate(z),b,conjugate(b),a,c, with c real and a real,
+and reduce powers of the three-valued e first. Only then may it apply an
+absolute envelope. This is a useful exact cancellation rule, not a license
+to regard the individual signed terms as independently paid components.
+
+2. Uniform finite polynomial envelope
+
+Let C=20/11, L=2+C=42/11, x=q^delta, Z=|z|. The elementary sum bound
+sum_(n<=q) n^-sigma<=q^delta/delta gives |A|,|D|<=Cx.
+Also |b|=q^-sigma, a<=q^-sigma and |a-b|<=2q^-sigma.
+Consequently |E|<=1+LxZ. The zero child has the envelope
+ N_q=C^2 x^2(1+LxZ)^3+8(C+1)x.                       (2.1)
+Let J_q be the following POSITIVE polynomial in q powers and Z:
+ sum_(0<=i<=2,0<=j<=3,i+j>=1)
+  binom(2,i)binom(3,j) C^(2-i)
+  q^[(2-i)delta-sigma(i+j)](1+LxZ)^(3-j)(2Z)^j
+ +19(C+1)q^(delta-1).                                (2.2)
+Then |P_e-P_0|<=J_q for e=+-1. For the head term, this uses
+|(c+e a)^3-c^3|<=12a+6a^2+a^3<=19a,
+and |D+b|<=(C+1)x. No actual prime coefficients have been truncated.
+Exact polarization gives the safe envelope
+ |j_q|<=W_q=2N_q J_q+J_q^2.                          (2.3)
+This saves one event increment relative to |P_e|^2+|P_0|^2.
+
+Represent a positive envelope by rows (coefficient,r,k) meaning
+coefficient*q^r*Z^k. Coefficients and exponents here are exact rationals;
+addition and multiplication use ordinary finite polynomial convolution.
+Equal (r,k) rows are combined. Squaring W keeps ALL ordered row pairs,
+including their multiplicities. Negative r is allowed, k>=0 is integral.
+In W the largest r is 9/2 and k<=6; its leading row is (r,k)=(9/2,6).
+In W^2 the corresponding row is (9,12). The event identity has a nonzero
+first-order high-degree term: differentiating A^2(c-A)^3 gives
+A(c-A)^2(2c-5A), whose highest term is -5A^4. Thus this degree is not an
+artifact that cancels merely by collecting the complete source polynomial.
+This observation does NOT lower-bound actual work or actual A on any line.
+
+3. Moment provider and complete height integration
+
+Keep the outer weight exactly once:
+ dnu=|zeta(s+u)/s|^2 dt/(2pi), H=2(2B)^(45/2),
+ I_k(H)=integral_(|t|<H) |zeta(s)|^k dnu.              (3.1)
+For k=0 use just the outer factor. For k>0 the input to the existing
+product_moment_search is (sigma,k),(sigma+u,2), not kappa squared and not
+already weighted cached work. Its returned lambda and slack coefficient e
+mean, for any fixed epsilon>0,
+ integral_T^(2T) Z^k |zeta(s+u)|^2 dt
+ <=C_epsilon T^(lambda+e epsilon), T>=1.
+Reflection, Hölder allocations, fourth/second moment transfer and convexity
+must be those actually licensed by that provider. Negative heights give the
+same bound by conjugation. Since |s|^-2<=T^-2 on this annulus, put
+ d=lambda-2+e epsilon.
+The compact integral |t|<=1 is a FINITE, strictly retained constant: neither
+line contains a zeta pole, and sigma>0 bounds 1/|s|. It is independent of B
+and q. Dyadic summation then gives
+ d<0: I_k(H)<=C_compact+2 C_epsilon/(1-2^d);
+ d=0: I_k(H)<=C_compact+2 C_epsilon(1+log_2 H);
+ d>0: I_k(H)<=C_compact+C'_d,epsilon H^d.              (3.2)
+Endpoints and the last partial height annulus are bounded by a full annulus.
+If a provider supplies T^lambda(1+ln T)^ell with NO epsilon loss, then
+d=lambda-2=0 instead costs (1+ln H)^(ell+1); d>0 retains that log. The
+existing transferred provider generally supplies arbitrarily small epsilon,
+NOT an exact critical log. Therefore lambda=2 with e>0 cannot be treated as
+merely logarithmic by setting epsilon=0. Choose a positive epsilon with
+enough remaining exponent budget, or record the exact-log premise as open.
+Likewise an equality at the final B exponent cannot absorb positive epsilon
+or positive log. Strict exponent savings can absorb logs with an explicit
+elementary supremum constant, uniform in B; constants may depend on that gap.
+
+For exponent bookkeeping H=2(2B)^tau, tau=45/2. A positive d contributes
+tau*d to the B exponent and a fixed factor 2^((1+tau)d). Negative d gives
+zero height power, NEVER a negative B power because of the compact head.
+Use rational ceilings for these fixed powers if certificates require rational
+majorants. All theorem constants are symbolic uniform constants, not fitted.
+
+4. A completed competing proof: direct grouped L1
+
+For every projection and every V<=2B, triangle gives
+ M_common(B)<=sum_(q=2)^(2B) integral |j_q| dnu
+ <=sum_rows C_row sum_q q^r I_k(H).                  (4.1)
+In particular I_k(H) is uniformly bounded for every 0<=k<=6. Here is an
+explicit admissible plan for k=6, not a nominated arithmetic candidate:
+reflect sigma to11/20, allocate the fourth moment to four zeta factors with
+Hölder weight1, convexity for the other two, and convexity for the outer two
+factors at sigma+u=47/60. It gives
+ lambda=1+3/10+9/20+13/60=59/30,
+ e=2+1+2=5.
+epsilon=1/600 gives d=-1/40, so (3.2) converges including the compact head.
+For 0<=k<=6, Z^k<=1+Z^6 gives the same conclusion. Since every row r<=9/2,
+sum_q q^r<=sum_q q^(9/2)<=C (2B)^(11/2).
+Thus M_common(B)<=C B^(11/2), and Review027 adds the paid B^(21/10) mask
+correction. This is an actual uniform theorem, but it fails the required
+12/5 exponent by31/10. No requested low bound entered its proof.
+
+5. Weighted event Cauchy and Minkowski Gram rules
+
+The source Gram is
+ Q_gamma(B,V)=integral_(|t|<H) sum_l l^gamma |Gamma_l(t)|^2 dnu,
+ Gamma_l=sum_(2<=q<=V,label(q)=l)j_q.
+Fix the label map at horizon2B. For any rational omega use reciprocal event
+weights q^-omega. Then exactly
+ |Gamma_l|^2<=S_l(omega) sum_(q in l) q^omega |j_q|^2,
+ S_l(omega)=sum_(q in l)q^-omega.                     (5.1)
+This inequality does not remove the cross terms from the SOURCE Gram; it is
+one upper-bound proof route. A universal bound is S_l<=S_N with N=2B:
+ omega<1: S_N<=[1+1/(1-omega)]N^(1-omega);
+ omega=1: S_N<=1+ln N;
+ omega>1: S_N<=omega/(omega-1).                       (5.2)
+Sharper exact structural group bounds are allowed only if proved for ALL B,V.
+Since every nonzero event label divides q, l^gamma<=q^gamma for gamma>=0.
+For a fixed-prime SMOOTH projection l in{1,p}, replace this by p^gamma,
+a scale-free constant explicitly depending on the declared fixed p.
+
+For a row (C,r,k) of W^2, (5.1) gives
+ Q_gamma<=S_N sum_rows C I_k(H) sum_(q<=N)q^(r+omega+gamma). (5.3)
+If z=r+omega+gamma, its sum has power max(z+1,0), one log at z=-1,
+and a uniform constant when z<-1, by elementary integral comparison. For
+z>-1 one may use constant 1+1/(z+1); for z<-1 use 1+1/(-z-1).
+Add the S_N power max(1-omega,0), its critical log at omega=1, and the
+height power tau*max(d,0) from (3.2), term by term. Do NOT replace all row
+moments by a favorable moment from another row. In the fixed-smooth lane
+delete gamma from z and multiply by p^gamma. All constants are uniform in
+V and prime-window specifications; only declared fixed-prime constants may
+depend on p. A structural S_l bound can improve (5.3) without changing it.
+
+A competing Hilbert-space Minkowski proof gives
+ sqrt(Q_gamma)<=sum_(q<=N) label(q)^(gamma/2)||j_q||_(L2(dnu))
+ <=sum_rows_of_W C sqrt(I_(2k)(H))
+                         sum_(q<=N)q^(r+gamma/2).     (5.4)
+The norm is taken in the direct sum over labels and the complete common
+height measure. Thus all ordered event and odd/even crosses still belong to
+the source observable. Its resulting Gram power is the maximum over rows of
+ 2 max(r+gamma/2+1,0)+tau max(d_(2k),0),
+with the corresponding doubled event-sum logs and moment logs. For fixed
+smooth labels delete gamma/2 from this power and multiply the final Gram
+constant by p^gamma. One may also use a finite row Cauchy instead of row
+Minkowski, retaining its finite coefficient constant.
+
+Combine any proved Q bound with Review027's EXACT label-mass recovery:
+ M_common^2<=K_kernel mass_labels Q_gamma, K_kernel=100/13.
+For general labels the mass power is max(1-gamma,0), with one harmonic log
+at gamma=1. Therefore test Q against 24/5 minus that power, with reciprocal
+harmonic log at gamma=1 if there is no strict power slack. Fixed-smooth mass
+is<=2. Altering weights is not a free gain: a lower label mass places a
+larger reciprocal weight inside Q. This comparison is a final proof gate,
+not a premise for deriving Q.
+
+6. Failure diagnosis and useful extensions before freeze
+
+The squared leading envelope asks for the twelfth zeta power. One explicit
+licensed plan reflects it, allocates four factors to the fourth moment and
+uses convexity for the other eight and outer two. It gives lambda=217/60,
+e=11, hence d=97/60+11epsilon. Its finite-height cost alone is
+tau*(97/60)=291/8 before epsilon. The proof engine should search ALL licensed
+moment partitions; this displayed plan is illustrative, not a claim that it
+is optimal. Compact heights must remain even if a better plan is found.
+
+There is a reusable obstruction to the present COEFFICIENT-SUP absolute
+language. Its positive leading work-envelope row is C q^(9/2)Z^6. On a fixed
+compact t interval both zeta factors are nonzero and its integral is positive.
+Summing that majorant alone costs a positive multiple of B^(11/2). Skipping
+mu(q)=0 does not alter this envelope power: in an integer annulus [M,2M),
+at most (3/4)M+sqrt(2M) integers have a square prime divisor. Indeed
+sum_(p)p^-2<=sum_(n>=2)n^-2<=3/4, and every p<=sqrt(2M) contributes at most
+M/p^2+1. For M>=128 at least M/8 are squarefree; their positive leading
+envelope already has the same power. This counts the domain, not source-sign
+cancellation. Weighted
+Cauchy/Gram recovery of the SAME nonnegative event majorants cannot bound
+their total by a smaller exponent: Cauchy bounds the actual sum of those
+majorants. This is an obstruction to claiming a saving from reweighting this
+particular envelope, NOT a lower bound for j_q or actual Mobius coefficients,
+NOT an impossibility theorem for every exact algebraic representation, and
+NOT an arithmetic disproof of the desired projection bounds. Squared-route
+height penalties can only worsen this diagnosis within this language.
+
+Useful executable extensions are: collect exact conjugate polynomials first;
+compare event-increment polarization with source-sector norm expansions;
+search all Hölder/reflection/convexity partitions for each resulting row;
+use proven exact structural group-size mass rather than N when available;
+and keep actual A,D,T inside a licensed signed Dirichlet-polynomial moment
+provider instead of replacing each by its sup norm. The last extension has
+independent length/height premises and a complete low-height head; an old
+twisted-fourth theorem cannot silently provide arbitrary work moments or
+remove that head. A phase-uniform low joint Gram is still arithmetic input.
+
+No bare triangle rule exploits opposite Mobius signs within a group. To go
+beyond the proved absolute cost, the next rule must retain at least one
+signed state correlation, exact negative cross contribution, or a genuinely
+stronger actual-source polynomial moment. It need not pay every expanded
+source mode independently. Actual source AST and all complements remain
+unchanged when an optional proof attempt fails.
+
+This memo supplies general rules and explicit failure tests; the detector
+chooses envelope representation, event weight, moment allocations, epsilon,
+projection-specific structural bound and competing proof route. Finite cache
+values supply none of their uniform constants. Full source control and RH
+remain OPEN. Finalized; no further edits or computations are planned.

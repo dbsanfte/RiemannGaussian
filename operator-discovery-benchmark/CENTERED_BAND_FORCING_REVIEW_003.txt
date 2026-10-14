@@ -1,0 +1,394 @@
+CENTERED BANDS: PAID HEAD, DIAGONAL, AND RECIPROCAL-INTERVAL FORCING
+
+Scope and outcome
+-----------------
+This new analytical memo reads centered_product_fibers.py, its protocol,
+the fixed pilot-002 selection, and the prior pole/recovery review. The
+selected stencil is C(z)=(1+z)^2 at gamma=0,1/6,1/3. No new numerical
+source evaluations, experiments, tests, hashes, subagents or prior/frozen
+edits are used. No uniform complete moment or RH theorem is proved.
+
+There are three useful source-uniform reductions. First, all three fractional
+presentations of this same relative-band filter are equivalent by constants,
+not merely logarithms. Second, the exact increment center differs from a
+pure multiplicative power by a positive l1 sequence; restoring this change
+costs only a logarithm at EVERY sharp product cutoff. Third, the complete
+low-product head and every diagonal stripe are paid polylogarithmically.
+The remaining forcing is an explicit averaged OFF-DIAGONAL reciprocal-
+interval correlation, with a full Mobius/divisor convolution presentation.
+
+A canonical gamma-zero identity presentation removes the selected stencil's
+cubic-log inverse overhead. Better still, joining ALL high product bands
+before taking an absolute value removes even the band-count loss: a
+one-sided bound for the full signed high-product off-diagonal correlation
+recovers the target with explicit polylog padding. This latter residual
+is equivalent to the original moment up to paid pieces, not an independent
+gain. The pole bracket which appears in its convolution vanishes
+analytically, not as a proved convergent coefficient tail.
+
+1. Exact band and stencil conventions
+------------------------------------
+Use u=1/3, v=2/3, kappa=2/3, beta=9/2, the old exact positive m=m_u,
+and R_u=kappa*m. Let a=p-d be the complete actual-source coefficient;
+the entire same-prime-power d is retained. Define
+  c(h)=m*[h^kappa-(h-1)^kappa], b(h)=a(h)-c(h),
+  b(1)=-m, A(n)=sum_(h<=n)a(h), B(n)=A(n)-m*n^kappa.
+Every index zero is zero, prefixes below one vanish. Coefficients are real.
+For integer dyadic X>=1 put N=2X-1, J=ceil(log2(N^2)) and
+  W_X(h,k)=max(0,2X-max(X,h,k)).
+Thus W counts the integers n in X..N with h,k<=n.
+
+For j>=0 let Y=2^j and, for t in [1/2,1], set
+  D_(j,gamma)(t)=Y^gamma/X^2
+      *sum_(Y/2<hk<=tY, h,k<=N) b(h)b(k)W_X(h,k)(hk)^(-gamma).  (1.1)
+Negative bands are zero. At j=0 the unit product appears at t=1, not
+earlier. At j=J the upper Y may exceed N^2: the actual state then has
+a terminal plateau. All formulas retain that truncated last band.
+The selected filter is
+  E_(j,gamma)(t)=D_j(t)+2D_(j-1)(t)+D_(j-2)(t),
+  U_(C,gamma)(X)=max_(0<=j<=J) sup_(1/2<=t<=1)|E_j(t)|.         (1.2)
+The SAME relative t is used on all three product bands.
+
+Every coefficient product in (1.1) is
+  aa-ac-ca+cc,
+each class further split by squarefree/nonsquarefree PRODUCT. All six
+sectors, repeated valuations, main crosses and the unit remain. Neither
+an SF sector nor a restricted product kernel is a positive complete energy.
+
+2. Why the chosen filter and gamma menu do not give an exponent gain
+-------------------------------------------------------------------
+Writing a backward band shift as z, C=(1+z)^2 has inverse
+  g_l=(-1)^l*(l+1), l>=0.
+The complete absolute recovery cost is
+  sum_(l=0)^J (J-l+1)|g_l|=binom(J+3,3).                       (2.1)
+Thus its cubic-log cost is real. It annihilates a perfectly alternating
+band mode to second order. For a real growth mode D_j=lambda^j with
+lambda>0 it multiplies the mode by (1+lambda^(-1))^2, which is nonzero.
+It does not remove any positive real-power obstruction. Mobius sign
+(-1)^omega(product) is not an identity equating it to (-1)^j.
+Any finite band cancellation, or a favorable fitted slope, cannot supply
+the missing actual arithmetic identity.
+
+The gamma variants have an even stronger exact equivalence. For fixed
+j let D_(j,0)(t) be the signed cumulative measure on relative product
+v=hk/Y in (1/2,1]. Stieltjes Abel gives
+  D_(j,gamma)(t)=t^(-gamma)*D_(j,0)(t)
+           +gamma*integral_(1/2)^t v^(-gamma-1)*D_(j,0)(v)dv.   (2.2)
+This includes all atoms, the unit at relative one, and terminal plateaus.
+The SAME causal relative-t operator acts on every j, so it commutes with
+ANY fixed constant-coefficient band stencil. Consequently (2.2) also holds
+with D replaced by E. The inverse formula is
+  E_(j,0)(t)=t^gamma*E_(j,gamma)(t)
+           -gamma*integral_(1/2)^t v^(gamma-1)*E_(j,gamma)(v)dv.
+Taking absolute values gives, uniformly in X and J,
+  U_(C,gamma)<=2^gamma*U_(C,0),
+  U_(C,0)<=(2-2^(-gamma))*U_(C,gamma).                         (2.3)
+At gamma zero both are equality. The three selected presentations are
+therefore constant-equivalent, with no distinct cofinal exponent mechanism.
+This is relative-band normalization; it is not the global weighted-prefix
+Abel operator of the earlier memo. Uniform partial control is essential.
+
+3. Actual-source divisor bounds, including prime-power removal and unit
+-----------------------------------------------------------------------
+For alpha>0, a_alpha=mu*n^(-alpha) is multiplicative with
+  a_alpha(q^e)=-(1-q^(-alpha))*q^(-(e-1)*alpha), e>=1.
+Hence |a_alpha(n)|<=1. The zero-unit factor h_alpha=(a_alpha-delta)/alpha
+has h_alpha(1)=0 and |h_alpha(n)|<=1/alpha otherwise. Complete convolution
+therefore gives |p(n)|<=beta*d2(n). At prime powers p=d exactly, because
+all its nonunit factor splits use that same prime. At every other integer
+d=0. Also a(1)=0. It follows, WITHOUT adding a second absolute d bound,
+  |a(n)|<=beta*d2(n), all n>=1.                               (3.1)
+Concavity of x^kappa gives 0<c(n)<=m, so with K=beta+m,
+  |b(n)|<=K*d2(n).                                           (3.2)
+In particular the retained b(1)=-m obeys this bound.
+
+The elementary divisor estimates used below are
+  d2*d2=d4, d2(n)^2<=d4(n),
+  sum_(n<=H)d4(n)<=H*(1+log H)^3, H>=1.                       (3.3)
+The pointwise square inequality follows primewise from
+(e+1)^2<=binom(e+3,3). The summatory estimate follows by summing the
+three free divisor indices harmonically and bounding the fourth floor.
+No prime distribution or RH estimate enters these inequalities.
+
+4. Pure-power centering with exact logarithmic restoration
+----------------------------------------------------------
+Define
+  e(n)=c(n)-R_u*n^(-u),
+  tilde_b(n)=a(n)-R_u*n^(-u)=b(n)+e(n).                        (4.1)
+For n>=2, the integral of the decreasing derivative over [n-1,n]
+is at least its endpoint value; at n=1, m>=R_u. Thus e(n)>=0, with
+  e(1)=m-R_u, b(1)=-m, tilde_b(1)=-R_u.
+Euler summation with all integer endpoints retained gives
+  sum_(n<=H)e(n)=m*H^kappa-R_u*sum_(n<=H)n^(-u),
+  E0:=sum_(n>=1)e(n)=-R_u*zeta(u)>0.                          (4.2)
+Here zeta(u)<0, and the Euler remainder tends to zero. This is an exact
+finite l1 mass including the unit, not a fitted or conditional tail.
+Also |tilde_b(n)|<=(beta+R_u)d2(n)<=K*d2(n).
+
+For ANY band and ANY partial t, its normalized kernel weight satisfies
+  Y^gamma*(hk)^(-gamma)<=2^gamma,
+while W<=X. Expanding tilde_b(h)tilde_b(k)-b(h)b(k) gives both b/e
+crosses and e/e. Equations (3.2),(3.3),(4.2) yield
+  |D_j(tilde_b)-D_j(b)|
+    <=2^gamma/X *[2E0*sum_(h<=N)|b(h)|+E0^2]
+    <=2^gamma*[4E0*K*(1+log(2X))+E0^2/X].                     (4.3)
+For stencil (1+z)^2 the cost is at most FOUR times (4.3). This is
+uniform in j,t,X and gamma, including truncated bands. It proves
+cofinal-equivalence up to logarithmic padding for the entire sharp-band
+auxiliary after pure-power centering. The original six-sector values and
+program are unchanged; all e cross/unit terms are restored analytically.
+
+This paid change simplifies the arithmetic obstruction, not its exponent.
+By contrast, a component with a paid PREFIX norm, such as the entire
+same-prime d, is not automatically removable at all sharp product cuts.
+Its prefix bound alone cannot replace the l1 argument in (4.3).
+
+5. Uniform low-product head and every diagonal stripe
+-----------------------------------------------------
+These estimates apply to b or tilde_b using the SAME K. Define L_N=1+log N.
+For every Y=2^j>=1 and partial t, absolute values and (3.3) give
+  |D_(j,gamma)|<=2^gamma*K^2*(Y/X)*(1+log Y)^3.                (5.1)
+Indeed the product kernel W/X^2 is at most 1/X, and all pairs hk<=Y
+are bounded by the complete divisor convolution d2*d2=d4. Therefore
+ALL product bands with Y<=X are paid polylogarithmically. For the selected
+filter with Y<=X, the finer explicit bound is
+  |E_(j,gamma)|<= (9/4)*2^gamma*K^2*(Y/X)*(1+log Y)^3.          (5.2)
+The factor 9/4 comes from 1+2/2+1/4; negative subbands are simply absent.
+
+At ANY Y, a diagonal pair has h=k and relative product in (1/2,1]. Its
+nonnegative contribution is at most
+  2^gamma/X *sum_(h<=N)|b(h)|^2
+     <=2^gamma*K^2*(N/X)*L_N^3
+     <=2^(gamma+1)*K^2*L_N^3.                                (5.3)
+Replace b by tilde_b with the same result. The selected stencil's complete
+diagonal cost is at most 2^(gamma+3)*K^2*L_N^3. For h>1 these diagonal
+products are nonsquarefree; h=1 and its precise center are still included.
+
+Partition each selected-filter subband ONCE: if its Y_r<=X pay the entire
+band by (5.1); if Y_r>X pay only its diagonal by (5.3). The low-piece total
+is <=4*2^gamma*K^2*L_N^3 and the high-diagonal total is
+<=8*2^gamma*K^2*L_N^3. Thus a uniform paid envelope is
+  12*2^gamma*K^2*L_N^3,                                     (5.4)
+before adding four times (4.3). These are conservative constants, not
+optimized constants. They keep the log power explicit and avoid subtracting
+overlapping diagonal/head pieces twice.
+
+6. Exact averaged reciprocal-interval correlation: the hard frontier
+--------------------------------------------------------------------
+Use tilde_b for the simplified auxiliary and write x_h=tilde_b(h)h^(-gamma),
+  I_gamma(A,B)=sum_(A<k<=B)x_k,
+with integer endpoints, zero if B<=A, and prefixes below one zero.
+For fixed n in X..N and real y>=0 define
+  Q_gamma(n,y)=sum_(h,k<=n,hk<=y)x_h*x_k.
+The COMPLETE truncated hyperbola identity is
+  Q_gamma(n,y)=2*sum_(h<=a)x_h*sum_(k<=min(n,floor(y/h)))x_k
+                 -[sum_(h<=a)x_h]^2,
+  a=min(n,floor(sqrt(y))).                                   (6.1)
+At y<1 both sides vanish. For y>=n^2 it equals the full prefix square.
+
+For a band put L=Y/2, V=tY, a0=min(n,floor(sqrt L)),
+a1=min(n,floor(sqrt V)), and k_z(h)=min(n,floor(z/h)). Then exactly
+  Q_gamma(n,V)-Q_gamma(n,L)
+    =2*sum_(h<=a0)x_h*I_gamma(k_L(h),k_V(h))
+     +2*sum_(a0<h<=a1)x_h*I_gamma(h,k_V(h))
+     +sum_(a0<h<=a1)x_h^2.                                  (6.2)
+The first two sums are disjoint off-diagonal reciprocal intervals; the last
+is the full diagonal stripe. The second sum is the root/frontier correction,
+not an optional short-side error. Derive it by expanding the difference of
+the two prefix squares in (6.1). It retains every floor and equality edge.
+
+Let the OFF-DIAGONAL band be
+  O_gamma(X,Y,t)=2*Y^gamma/X^2 *sum_(n=X)^N
+      [sum_(h<=a0)x_h*I_gamma(k_L(h),k_V(h))
+        +sum_(a0<h<=a1)x_h*I_gamma(h,k_V(h))].                 (6.3)
+This is a genuinely specified arithmetic bilinear correlation, not a new
+name for the full prefix energy. It asks whether the coefficient on the
+short leg cancels against an actual-source interval on the reciprocal leg,
+averaged over n with the exact prefix geometry. The h=k part is already paid.
+No gcd, valuation, SF/NS, main or unit contribution is omitted from x_h.
+
+The selected hard forcing is
+  sum_(r=0)^2 c_r*1_(Y_r>X)*O_gamma(X,Y_r,t),
+  (c0,c1,c2)=(1,2,1), Y_r=2^(j-r), with negative bands absent. (6.4)
+Its cofinal uniform bound is equivalent to the selected auxiliary after
+the explicit polylog padding (4.3),(5.4). It remains strictly stronger
+than the original whole moment for generic sources. Its domain is
+  X<Y_r<=2^J, t in [1/2,1],
+NOT merely Y_r<=N^2. The last Y may exceed N^2; clamps in (6.2) make its
+intervals empty or stationary exactly where required. At t=1/2 all bands
+are empty; at t=1 their lower-open/upper-closed dyadic edges remain exact.
+
+7. Full signed arithmetic in each reciprocal interval
+------------------------------------------------------
+Let delta be the Dirichlet unit, mu_gamma(n)=mu(n)n^(-gamma), and
+k_alpha(n)=n^(-alpha). The complete source, initially in Re(s)>1, has
+  tilde_b=beta*(mu*mu*k_u*k_v-mu*k_u-mu*k_v+delta)
+                  -d-R_u*k_u.                               (7.1)
+The delta term has coefficient beta, and the entire d is present. In
+particular (7.1) gives tilde_b(1)=-R_u, not zero. Weighting n^(-gamma)
+shifts every factor: convolution still preserves the product weight.
+
+An explicit interval version is as follows. Let
+  S_alpha(y)=sum_(k<=y)k^(-alpha),
+  K_gamma(y)=sum_(rs<=y)r^(-u-gamma)*s^(-v-gamma),
+zero below one, and Delta f(A,B;r)=f(B/r)-f(A/r). Then
+  I_gamma(A,B)
+    = beta*sum_(rs<=B) mu(r)mu(s)(rs)^(-gamma)
+                            *Delta K_gamma(A,B;rs)
+      -beta*sum_(r<=B)mu(r)r^(-gamma)
+            *[Delta S_(u+gamma)(A,B;r)+Delta S_(v+gamma)(A,B;r)]
+      +beta*1_(A<1<=B)
+      -sum_(A<k<=B)d(k)k^(-gamma)
+      -R_u*[S_(u+gamma)(B)-S_(u+gamma)(A)].                    (7.2)
+All sums are finite. No factor endpoint, prime-power sector, or rectangle
+has been truncated. The signed forcing (6.3) therefore includes, explicitly,
+one outer centered coefficient times a TWO-MOBIUS weighted divisor interval,
+both one-Mobius complements, the exact pole power, delta and the entire d.
+Bounding just one branch or converting every sign to an absolute value
+does not prove (6.3). The new lemma must control these terms jointly or
+pay a proved error for every removed term.
+
+There is a compact factorization exposing the pole cancellation. Put
+  g=beta*(mu*mu*k_v)-beta*mu-R_u*delta, G(s)=sum g(n)n^(-s).
+Then, for Re(s)>1,
+  tilde A(s)=zeta(s+u)*[beta*zeta(s+v)/zeta(s)^2
+                              -beta/zeta(s)-R_u]
+                 -beta*zeta(s+v)/zeta(s)+beta-mathcal D(s),
+  tilde_b=k_u*g-beta*(mu*k_v)+beta*delta-d.                   (7.3)
+By the exact definition R_u=beta*[zeta(4/3)/zeta(2/3)^2
+                                             -1/zeta(2/3)],
+the bracket G(s) has an ANALYTIC zero at real s=kappa. This cancels the
+local pole of zeta(s+u). It does NOT prove ordinary convergence of
+sum g(n)n^(-kappa), or that any finite tail is small, or convergence to
+zero. Treating the analytic zero as a convergent cancellation tail would
+insert precisely the missing source-specific signed estimate.
+
+For example, a complete outer hyperbola exposes a well-defined forcing.
+For real z>=1 choose U=z^(1/3), V=z/U, and let
+  G_gamma(y)=sum_(d<=y)g(d)d^(-gamma),
+  G_kappa(U)=sum_(d<=U)g(d)d^(-kappa),
+  A_(v,gamma)(z)=sum_(n<=z)(mu*k_v)(n)n^(-gamma),
+  D_gamma(z)=sum_(n<=z)d(n)n^(-gamma).
+Set alpha=u+gamma<1 and lambda=1-alpha=kappa-gamma. Exact hyperbola and
+Euler summation give
+  sum_(n<=z)tilde_b(n)n^(-gamma)
+    =z^lambda/lambda*G_kappa(U)+zeta(alpha)*G_gamma(U)
+      +sum_(m<=V)m^(-alpha)*G_gamma(z/m)
+      -G_gamma(U)*S_alpha(V)
+      -beta*A_(v,gamma)(z)+beta-D_gamma(z)+epsilon_(g,gamma)(z).
+The intersection rectangle is explicitly retained. The finite G_kappa(U)
+is NOT replaced by the analytic value G(kappa)=0.
+
+One component of this recurrence is uniformly subcritical. Euler's exact
+S_alpha remainder obeys |e_alpha(y)|<=y^(-alpha). Since
+  |g(d)|<=(2beta+R_u)*d3(d),
+the complete short-side error satisfies
+  |epsilon_(g,gamma)(z)|
+     <=(2beta+R_u)*z^(1/9-gamma)*(1+log(z)/3)^2.               (7.4)
+This retains all real floor endpoints. It has finite critical norm, even
+at gamma zero. HOWEVER a paid prefix error is not automatically a paid
+sharp-product error after another unrestricted signed convolution. The
+outer factor in (6.3) and its reciprocal geometry still require a bound.
+The remaining finite bracket tail, long-side G_gamma quotient sum, rectangle,
+single-source A_v and d cannot be independently assumed RH-strength. This
+is a structured smaller-scale forcing presentation, not a closed induction.
+
+8. Optional stronger partial-band recovery with off-diagonal forcing
+--------------------------------------------------------------------
+This is an analytically justified simplification for the NEXT construction,
+not a reranking or alteration of the frozen numerical pilot. Drop the
+equivalent fractional presentations and use the identity band stencil.
+Let
+  U_off(X)=max_(j: X<2^j<=2^J) sup_(t in [1/2,1])
+                       |O_0(X,2^j,t)|,
+with empty maximum zero. Head bands cost at most K^2*L_N^3. High diagonal
+stripes cost at most 2K^2*L_N^3. The center restoration costs (4.3) at gamma
+zero. At t=1 the bands partition EVERY product, including the unit and last
+plateau, so the complete positive moment obeys
+  E_R(X)=X^(-2)*sum_(n=X)^N |B(n)|^2
+    <=(J+1)*[U_off(X)+2K^2*(1+log N)^3
+                  +4E0*K*(1+log(2X))+E0^2/X].               (8.1)
+All constants are fixed old source constants; no fit occurs. In fact only
+the t=1 endpoints are needed for this particular inequality. The uniform
+partial supremum is an additional stronger premise retained for future
+sharp-band operators. Thus (8.1) is sufficient, not an equivalence of that
+premise with the original target.
+
+The ONLY open quantity in (8.1) is the explicit complete correlation (6.3),
+at gamma zero and high product scales. Low products, diagonals, and exact-
+to-pure-power centering have source-independent proved costs. The actual
+R_new=K-L0+Lu-main is still linked to R by R=R_new+Lv with the prior paid
+comparison and its full finite cross; no branch is silently deleted.
+
+This is an OPTIONAL stronger construction lemma. The next primary target
+should preserve cancellation between different high product bands, as follows.
+
+9. Full joint high-product frontier: one-sided recovery with NO band loss
+------------------------------------------------------------------------
+At gamma zero join all high products BEFORE abs and define
+  O_X=2/X^2 *sum_(n=X)^N
+                sum_(1<=h<k<=n, hk>X)tilde_b(h)*tilde_b(k).    (9.1)
+The low full support hk<=X is bounded in absolute value by
+  K^2*(1+log X)^3,
+since W=X on this support and d2*d2=d4. The remaining diagonal h=k,
+h^2>X, has cost <=2K^2*L_N^3. The full kernel b-to-tilde correction has
+the SAME bound (4.3), with gamma zero: its proof used only W<=X and
+the complete e l1 mass, not a relative-band premise. Thus EXACTLY
+  E_R(X)=O_X+P_X,
+  |P_X|<=3K^2*(1+log N)^3
+                +4E0*K*(1+log(2X))+E0^2/X=:Paid_X.            (9.2)
+All product edges, repeated valuations, main crosses and units remain.
+In particular
+  E_R(X)<=O_X+Paid_X, O_X>=-Paid_X.                            (9.3)
+Only a ONE-SIDED upper bound O_X<=C_epsilon*X^epsilon is needed. Because
+E_R is nonnegative and (9.2) is exact, such cofinal upper bounds and the
+original cofinal moment are equivalent up to these paid polylog terms.
+This is an equivalent residual obligation, not an independently proved
+prime-cancellation mechanism. It does NOT inherit the strict strengthening
+of the uniform sharp-partial auxiliary in Section 8. There is no J loss
+and no demand to pay separate high bands, SF/NS classes or arithmetic legs.
+
+The full-joint reciprocal-interval expression is also exact. Put
+  H=floor(sqrt X), T(y)=sum_(h<=y)tilde_b(h).
+Since n>=X and floor(X/h)<=X for h>=1,
+  O_X=2/X^2 *sum_(n=X)^N
+       [sum_(h<=H)tilde_b(h)*I_0(floor(X/h),n)
+         +sum_(H<h<=n)tilde_b(h)*I_0(h,n)].                   (9.4)
+The lower endpoints exclude equality hk=X and h=k. Here I_0 is the
+COMPLETE actual-source interval in (7.2), equivalently (7.3), not a
+prime-only or uncentered interval. The second term has the alternative
+exact form
+  2*sum_(H<h<=n)tilde_b(h)*I_0(h,n)
+    =[T(n)-T(H)]^2-sum_(H<h<=n)tilde_b(h)^2.                  (9.5)
+Thus an attempt to bound the large-leg triangular piece independently
+would meet a long-prefix square again. It cannot be declared stable or
+small merely because the other leg h<=sqrt X is at a smaller scale.
+The small-leg reciprocal intervals and large-leg triangular term must
+remain coupled, unless an independently proved recovery estimate is supplied.
+
+For comparison the low-product scalar is exactly
+  Q_low(X)=2*sum_(h<=H)tilde_b(h)*T(floor(X/h))-T(H)^2,
+and its complete kernel contribution is Q_low(X)/X. This quantity is
+already absolutely polylogarithmic by the divisor bound. Its negative
+credit cannot alone absorb a macroscopic long-prefix square by a generic
+positivity argument; that would assume the target. The genuine missing
+information is signed correlation in the joined high-product expression,
+not a scalar filter or a separately assumed companion moment.
+
+The concrete next search input can therefore use (9.1)/(9.4) as its PRIMARY
+forcing, with (7.2)/(7.3) specifying every signed arithmetic term and
+(9.2) supplying exact recovery. Partial-band tests such as (6.3) remain
+optional stronger auxiliaries. Any proposed joint construction must either
+bound (9.1) from above with uniform constants, or reduce it to a new
+well-founded correlation system without assuming the long-prefix square
+in (9.5). The analytic bracket zero at kappa is not such a bound.
+
+Final status
+------------
+Proved: constant-equivalence of gamma presentations; logarithmic pure-power
+center replacement; full low-product and diagonal envelopes; exact reciprocal-
+interval and convolution identities; the component short-error estimate;
+and both the optional partial-band recovery (8.1) and the full-joint,
+one-sided, no-band-loss recovery (9.2). Open: the actual-source high
+off-diagonal signed bound, complete cofinal target and RH. Only this new
+prose memo was written. No numerical or development invocation occurred.

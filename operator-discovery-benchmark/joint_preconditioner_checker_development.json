@@ -1,0 +1,14 @@
+{
+  "operations": 91055,
+  "runs": [
+    {
+      "test": "test_check_joint_preconditioner",
+      "returncode": 0,
+      "operations": 91055,
+      "tests": 8,
+      "runtime_seconds": 0.085,
+      "stdout": "SYNTHETIC_WORK module=test_check_joint_preconditioner operations=91055\n",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.085s\n\nOK\n"
+    }
+  ]
+}

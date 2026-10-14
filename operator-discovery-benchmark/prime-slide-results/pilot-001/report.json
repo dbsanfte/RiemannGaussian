@@ -1,0 +1,29 @@
+{
+  "RH_proved": false,
+  "audit_operations": 20394243,
+  "candidates": 13867,
+  "checked_candidates": 13867,
+  "cofinal_auxiliary_words": 13,
+  "cofinal_with_explicit_recovery": 9,
+  "complete_grammar_and_selection_verified": true,
+  "elapsed_seconds": 15.320791198988445,
+  "families": {
+    "distinct_prime_sparse": 272,
+    "same_prime_rectangles": 210,
+    "same_prime_sparse": 13385
+  },
+  "new_actual_source_evaluations": 0,
+  "preparation_operations": 4315618,
+  "producer_operations": 4930589,
+  "selected_ids": [
+    683,
+    10,
+    13391,
+    13412,
+    13595,
+    13769
+  ],
+  "status": "PRIME_ADJUNCTION_AUXILIARIES_INDEPENDENTLY_VERIFIED",
+  "total_operations": 29640450,
+  "whole_signed_bound_proved": false
+}

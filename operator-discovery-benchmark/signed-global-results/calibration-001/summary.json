@@ -1,0 +1,108 @@
+{
+  "status": "verified_imported_signed_global_calibration_with_independent_finite_patch",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-global-results/calibration-001",
+  "checks": {
+    "frozen_sources_and_precise_named_import_scope_checked": true,
+    "every_finite_patch_coefficient_and_sqrt_inequality_independently_checked": true,
+    "training_constant_independently_relearned_before_full_patch": true,
+    "threshold_coverage_and_concave_interpolation_proof_constants_checked": true,
+    "all_scale_signed_dilation_costs_and_positive_controls_checked": true,
+    "below_RH_strength_and_external_dependency_retained": true
+  },
+  "constant": "85/64",
+  "uniform_bound": "|M_tilde(t)|<=C*t/log(e+t) for every real t>=0",
+  "imported_dependency": {
+    "title": "From explicit estimates for the primes to explicit estimates for the Mobius function II",
+    "authors": [
+      "Olivier Ramare",
+      "Sebastian Zuniga Alterman"
+    ],
+    "version": "arXiv:2408.05969v2",
+    "url": "https://arxiv.org/pdf/2408.05969v2",
+    "pdf_path": "literature/signed-global/ramare_zuniga_2024_v2.pdf",
+    "pdf_sha256": "f8da222630beccc10dfa93272b58f9049255dc56c36217fc861cac6949717e5f",
+    "theorem": "Theorem 1.1",
+    "threshold": 1798118,
+    "coarse_constant": "418/62500",
+    "statement": "|M(x)| <= (0.006688 log x - 0.039) x/log(x)^2 for all real x>=1798118",
+    "analytic_source_proof_independently_reproved": false
+  },
+  "independent_complete_coefficient_cutoff": 1798118,
+  "operators": [
+    {
+      "program_id": "d0ba04e1c9c0e0be80035821ca74077240ec048a770a67c3e1d59397d9fa8128",
+      "constant_ball": "1.32812500000000000000000000000000000000000000",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "3d3f7dc3ecebabbd53b763036c1fee508d1575232ab5456a0d51b5bee7583726",
+      "constant_ball": "[1.89908680252647081509583785834084628531598744 +/- 1.55e-45]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "20373fc8921310f41aba9249cedd1c4b013050359980f4ca12b9a87b003f2543",
+      "constant_ball": "[1.72759707746666458030147392148196715441805763 +/- 5.83e-46]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "fdf5b84b9a9984c8c548fd8d61cc7a62bc1ea229ee3b0dc212c621faaeb8840d",
+      "constant_ball": "[1.74193355464739464677990692345117563183859622 +/- 4.83e-45]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "b9e8c65906e55b5f10e69698aaf89c3b0737035293f829b89697bbf099a4f697",
+      "constant_ball": "[2.49742306685008606123232708226218795922200628 +/- 3.26e-45]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "1340c0294ff25b662b586930fabd66bb6bbeb445ab22f55225c7d7578eac3381",
+      "constant_ball": "[2.63925849180317854322706091626771742973722673 +/- 2.28e-45]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "21c9adae86587fa044965b0efb45e382bafad0e3f124c1a60adde61abb8c4d86",
+      "constant_ball": "[4.13901387397647170508720176413955094309409202 +/- 6.62e-47]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    },
+    {
+      "program_id": "44bcb458cfe49b217439bff8cb97014a4b210db1556ceedbf4da68797b21e23a",
+      "constant_ball": "[1.87613299001170222756058700797323847288310834 +/- 3.71e-45]",
+      "uniform_bound": "|R(t)|<=K*t/log(e+t) for every real t>=0",
+      "universal_signed_control_is_imported_consequence": true,
+      "extra_filter_cancellation_proved": false,
+      "positive_and_delayed_positive_uniform_claims_false": true,
+      "RH_sufficient": false
+    }
+  ],
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "124ec228f5bbf5fd4ec8d1e1c7b7be790a7ee031374b2a44ec3c98faa0b6f0c2"
+}

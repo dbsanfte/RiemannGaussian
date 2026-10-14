@@ -1,0 +1,215 @@
+SHIFTED QUOTIENT CANDIDATE DISCOVERY -- 9 October 2026
+
+Objective and outcome
+---------------------
+The active objective remains signed arithmetic control at all scales sufficient
+for RH. It is not complete. This study changed the candidate structures and
+then attempted analytical proofs; it did not tune the old reversible circuits.
+
+Twenty-five normalized shifted-quotient programs were generated. Three fixed
+family challengers were selected. One passed both discovery admission and all
+final gates: candidate10, H_(1/3)(s) H_(2/3)(s), where
+
+ H_b(s)=(zeta(s+b)/zeta(s)-1)/b.
+
+Its complete summatory coefficient state subtracts BOTH exact real-pole main
+terms, at exponents2/3 and1/3. The full signed energy, rather than the ratio to
+an absolute envelope, determined selection. This is a verified numerical lead
+with a proved conditional RH bridge, not a proved uniform signed estimate.
+
+Archive: shifted-quotient-results/pilot-001
+Combined readout: summary.json and independent_completion.json.
+The original report.json and three original audit files remain INCOMPLETE,
+unchanged, recording their first work-cap outcome. Completion receipts add
+only unfinished checks and preserve all original spent work.
+
+No historical novelty is claimed. The grammar was designed mathematically;
+generation/selection within it used fixed rules, without model calls or
+response-fitted operator coefficients. Source/scales overlap earlier research.
+This is new-program validation, not hidden statistically independent prime data.
+
+Grammar and semantics
+---------------------
+New producer: shifted_quotient_candidates.py
+Independent divisor checker: check_shifted_quotient_candidates.py
+Runner: run_shifted_quotient_discovery.py
+Protocol: shifted_quotient_discovery_protocol.txt
+
+Program {'shifts': [...]} has1..3 distinct increasing canonical rationals,
+each0<b<1 with denominator<=24. The fixed pilot used all subsets of sizes1,2,3
+from {1/6,1/3,1/2,2/3,5/6}:5+10+10=25 programs. Products are Dirichlet-series
+products, so their coefficient operation is Dirichlet convolution.
+
+a_b=mu*n^(-b), h_b(1)=0, h_b(n)=a_b(n)/b for n>1. At prime powers,
+ a_b(p^e)=-(1-p^(-b))*p^(-b(e-1)).
+Other composites are present and essential. Fixed-cutoff b->0 recovers
+-Lambda and degree-k products recover (-1)^k Lambda^{*k}; this is not uniform
+in a growing cutoff. The factor1/b prevents a trivial vanishing-parameter win.
+
+For B={b_i}, coefficient f_B=*h_bi, the exact centered prefix is
+ J_B(x)=sum_(n<=x)f_B(n)-sum_i R_i*x^(1-b_i)/(1-b_i),
+ R_i=1/[b_i*zeta(1-b_i)]
+       *product_(j!=i)[(zeta(1-b_i+b_j)/zeta(1-b_i)-1)/b_j].
+Every residue channel is retained, even if its exponent is below1/2.
+The arithmetic input and inclusive endpoints are explicit. Unit coefficients
+are removed before products; this is not a fitted Perron constant.
+
+The matched degree-k baseline is (mu-delta_1)^{*k}. Both it and the candidate
+only use factor indices<=x/2^(k-1). Comparing to mu^{*k}-delta_1 would falsely
+reward omission of fresh coordinates. No finite-prefix inverse is claimed.
+
+Whole block energy: E(X)=X^-2 sum_(X<=n<2X)J_B(n)^2. Absolute envelopes retain
+all coefficient and main-term channels, but never determine candidate rank.
+
+Design and final results
+------------------------
+Train X=64,128,256,512; validation768,1024,1536,2048. Complete H=4095.
+Constants for E(X)<=C_q X^(1/q), q=2,3,6,12, fitted from actual-mu training
+only and written before validation. Operator coefficients and residues were
+never fitted. Admission required all16 validation growth gates plus E<=0.95
+times the matched baseline at all4 validation blocks.
+
+Within each degree the fixed rank was: fewer validation growth failures,
+smaller worst full-energy ratio, then id. One challenger was retained even
+if it failed admission; selection and successful admission are distinct.
+Twelve programs passed discovery admission:6,7,8,9,10,12,15,16,17,18,19,21.
+Only the three selected challengers received final tests. Do not call the
+other ten discovery leads refuted or independently final-validated.
+
+Final matched scales:49152,65536; complete H=131071 for all sources.
+Sources: actual mu, all ones, and squarefree coefficients negative at primes
+<=13 and positive at other primes (partial_prime_13). All controls used the
+same TRUE-zeta main terms. Their positive source poles at1 give a proved
+all-scale failure; their numerical failure also measures that mean mismatch,
+so it is not by itself new prime-specific cancellation information.
+
+id1, shifts[1/3]:
+ - discovery worst baseline ratio1.5640684577; not admitted.
+ - final actual E:0.0363942087492,0.0285525087097.
+ - final baseline ratios0.7462534176,0.6801477143; all8 growth gates pass.
+ - remains NOT admitted; final results do not retroactively alter selection.
+
+id10, shifts[1/3,2/3]:
+ - discovery worst ratio0.4529900571; all16 growth gates pass; admitted.
+ - final actual E:1.6337246927069,1.4754081241101.
+ - final baseline ratios0.2823054733,0.2235475977; all8 growth gates pass.
+ - successful numerical lead. Both controls fail all8 final growth gates.
+
+id15, shifts[1/6,1/3,1/2]:
+ - discovery worst ratio0.2212283803; all16 growth gates pass; admitted.
+ - final actual E:33.079884760386,32.559466923780.
+ - final baseline ratios0.1901820984,0.1378409591.
+ -4of8 final growth gates FAIL against frozen training constants.
+ - rejected by this strict final gate. This is not a mathematical refutation
+  of all possible uniform constants. Both controls fail all8 final gates.
+
+Verification and resources
+--------------------------
+All648 complete-block results agree independently:
+ 600 discovery candidate/source blocks +24 discovery baseline blocks
+ +18 final candidate/source blocks +6 final baseline blocks.
+Producer used128-bit Arb balls; independent checker192bits. Tight interval
+width and overlap are required. These are finite numerical checks, not a
+formal proof of a cofinal moment estimate.
+
+Single frozen combined suite:18/18 tests passed. Before it, the independent
+checker had a test-fixture deepcopy error;8tests passed, the affected test
+alone was corrected and passed, and both costs remain in its development
+receipt. Completion used3 additional meaningful tests, all passed once.
+Do not repeat any unchanged completed suite or numerical study check.
+
+Original800m operation cap reached exactly after636/648 blocks were checked.
+All discovery checks and final id1/id10 checks completed. Only final id15
+for each source and the three final actual-mu baselines remained.
+
+Under the user's earlier allowance for a small work extension around7%,
+audit_work_extension.json fixed the ceiling at856m before completion work.
+complete_shifted_quotient_audit.py checks ONLY the missing cases by an exact
+Euler-subset expansion, shared sixth roots and exact binomial baseline
+coefficients. It does not modify candidate formulas, source values, ranking,
+parameters or scales. Original unfinished partial work stays charged. Every
+previously completed study check is preserved without numerical repetition.
+
+Costs:
+ - original preparation including reserve:1,339,246
+ - discovery:54,168,660
+ - original final:230,072,152
+ - original partial independent audit:514,419,942
+ - completion calibration/reserve:230,340
+ - completion independent checks:49,431,407
+ - TOTAL:849,661,747 (6.207718375% above original; below856m)
+
+Three worker processes ran in parallel, each capped at4GiB within16GiB total.
+Observed largest producer worker RSS159324KiB; original checker130336KiB;
+completion131336KiB. The7200-second study deadline was retained. No hashes.
+Direct byte snapshots protect the original source and the new completion
+source separately; both were checked unchanged at completion.
+
+Analytical results and exact remaining target
+---------------------------------------------
+General independent reviews:
+ SHIFTED_QUOTIENT_ANALYTIC_REVIEW_001.txt
+ SHIFTED_QUOTIENT_STRUCTURE_REVIEW_001.txt
+Selected-candidate proof attempts (Sol6.1, root reviewed):
+ SHIFTED_QUOTIENT_CANDIDATE_10_REVIEW_001.txt
+ SHIFTED_QUOTIENT_CANDIDATE_15_REVIEW_001.txt
+Copies are retained in the archive's analytical_reviews directory.
+
+Proved: an all-scale complete cofinal subpower moment for any of these fixed
+centered products implies RH. Exact Mellin compensation removes the real
+poles. Any surviving off-line zeta zero would force a farther-right zero
+at the same height; positive shifts make that chain impossible past Re=1.
+All multiplicities and cross-factor zero/pole cancellations are included.
+The proof does not supply the moment premise or a finite-prefix inverse.
+
+For candidate10, write its complete prefix S=D+T+C:
+ D = factors that are powers of the SAME prime;
+ T = prime-power factors from DISTINCT primes;
+ C = all three branches with at least one non-prime-power composite factor.
+Then J=S-m_u*x^(2/3)-m_v*x^(1/3), with both exact residue coefficients.
+
+The whole per-prime overlap mass is9/2, giving D(x)<= (9/2)pi(sqrt x).
+Elementary Chebyshev bounds imply finite critical weighted L2 norm for D.
+The smaller pole term m_v*x^(1/3) also has finite critical norm. Therefore
+the precise remaining RH-sufficient estimate is, for cofinally many q,
+
+ X^-2 sum_(X<=n<2X)|T(n)+C(n)-m_u*n^(2/3)|^2 <= K_q X^(1/q)
+
+for EVERY dyadic X, with the finite head and all constants retained.
+The full cross term is essential. T(x)>=c*pi(x/2)>>x/log x; all smooth
+main terms are smaller. C must cancel this positive bulk very accurately.
+This mixed/composite signed estimate remains UNPROVED.
+
+A second exact reduction uses k(n)=n^(-2/3)sigma_(1/3)(n). Its prefix has
+the complete expansion
+ K(y)=(3/2)zeta(4/3)y^(2/3)+3zeta(2/3)y^(1/3)
+       +zeta(1/3)zeta(2/3)+Delta_K(y), |Delta_K(y)|<=19/2.
+In a complete outer hyperbola split at U=x^(1/3),V=x^(2/3), the short-side
+mu*mu error is <=(19/2)x^(1/3)(1+log x/3), with finite critical norm.
+The two single-quotient short errors are <=x^(1/9),x^(-1/9). The memo keeps
+every weighted mu/mu*mu mismatch, long-side quotient prefix and rectangle;
+none may be substituted with a conjectural RH bound. Section8 gives an
+equivalent reduced full-square target with all explicit error costs.
+
+Candidate15 has an analogous mass36 same-prime bound, a paid critical smooth
+term, and a provably large NEGATIVE mixed-prime branch. Its composite branch
+must cancel that bulk. Its squarefree surjection law shows large-prime
+coefficients approach36 times the comparator, so finite small-prime
+attenuation is a plausible cause of early scores. This does not prove a
+full-energy lower bound. Root corrected the unit n=1 domain in that formula;
+the polynomial comparator count applies to nonempty squarefree prime sets.
+
+Continue from here
+------------------
+Keep the active goal open. Preserve these frozen files and results. The
+next useful work is the candidate10 reduced signed estimate, or a structural
+grammar expansion motivated by the complete correlation terms. Do not
+resume parameter/optimizer tweaking or rerun this study to improve scores.
+Another proved structural hook is the discrete-curvature quotient
+ zeta(s+b)^2/[zeta(s)zeta(s+2b)],
+with local coefficients -e(1-p^(-b))^2 p^(-(e-1)b) and a fully explicit
+double-pole main term. It is only a proposed future grammar family, not a
+tested or bounded candidate in this study. A new protocol is needed to test it.
+
+No shell process remains from the study/completion. All selected-candidate
+review agents finished. All uniform signed-moment and RH proof flags are false.

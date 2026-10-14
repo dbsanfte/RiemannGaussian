@@ -1,0 +1,235 @@
+Sparse cyclic coordinate proposals on the licensed finite separator system
+Independent mathematical and resource design review, 2026-10-09.
+Prospective032; mathematical and implementation review complete.
+No actual source model/scaling, coordinate updates, scores, certificate
+search, tests or hashes were performed for this review. Prior030 geometry
+and031 exact reduction are immutable licensed premises, not recomputations.
+
+Coordinate objective and exact one-coordinate formula
+Let A*x=b be the retained302-row,687-column system after positive exact
+row/column infinity scaling, with x>=0 and r=A*x-b. For a fixed lambda>=0,
+the new numerical objective is
+  F_lambda(x)=1/2*||A*x-b||_2^2+lambda*sum_j x_j.
+For nonzero column a_j and a proposed coordinate change delta, the varying
+part is delta*(a_j^T*r+lambda)+1/2*delta^2*||a_j||_2^2,
+subject to delta>=-x_j. Its exact minimizer is
+  x_j_new=max(0,x_j-(a_j^T*r+lambda)/||a_j||_2^2),
+  delta=x_j_new-x_j, r_new=r+delta*a_j.
+Thus the prescribed update is the constrained coordinate minimizer in exact
+real arithmetic. Keeping the original nonnegative coordinates avoids an
+unrestricted elimination-variable interpretation. The fixed ascending
+retained-column order determines the cyclic trajectory.
+
+Positive row scaling preserves the equation system, and positive column
+scaling is an invertible nonnegative change of coordinates. In particular,
+strict support membership is unchanged under an exact positive scale.
+The unit L1 cost in scaled coordinates is a new heuristic objective; it
+need not preserve original representative L1 values or their minimizers.
+That choice is sound because the final admission concerns feasibility and
+a full exact identity, not a numerical minimum or an original objective.
+
+Penalty schedule, residual refresh and phase termination
+At x=0 the constrained gradient is -a_j^T*b+lambda. Therefore
+lambda_ref=max(0,max_j a_j^T*b) is the smallest nonnegative penalty making
+the zero vector satisfy the exact coordinate stationarity inequalities.
+The frozen schedule uses lambda_ref*2^-e for odd e=1,3,...,31, then zero:
+sixteen positive-exponent phases plus one final phase, seventeen in total.
+lambda_ref may be zero; repeated zero penalties remain prescribed phases.
+Every phase warm starts from the previous phase's complete vector.
+
+A phase may stop after a full sweep changes no stored coordinate. This is
+a floating trajectory stop condition, not a convergence, KKT or exact
+optimality theorem. Roundoff can make an update unchanged while a real
+coordinate optimum differs. Conversely, residual drift can change an update
+or apparent score without changing the exact feasibility of any rational
+support. Refresh the complete residual from A*x-b every16 completed sweeps
+and at every phase end. If a phase ends on the16th-sweep boundary, the
+periodic refresh and mandatory phase-end refresh may both be charged.
+Only after the phase-end refresh and finite metrics are complete may a
+checkpoint be appended. A partial interrupted phase is not a checkpoint.
+
+Numerical safeguards
+Use a stable Euclidean norm such as math.hypot for target, columns and
+refreshed residual. Target norm must be positive; every column norm and
+its squared denominator must be positive and finite. In the actual exact
+infinity-scaled model, a nonzero column has an entry of absolute value1,
+so its squared norm is at least1 and at most the row count. Generic tiny
+helpers still need guards against zero or underflowed squared denominators.
+Stable dot accumulation reduces avoidable cancellation but does not turn
+binary64 scores into exact evidence.
+The implemented refresh collects finite sparse products by row and uses
+math.fsum over those products and -b_i. Its nnz+m temporary entries remain
+in the numerical peak allowance. This improves cancellation handling without
+certifying the rounded products or refreshed score.
+
+Reject nonfinite input conversion, norms, penalty reference/penalties, dot
+products, update arithmetic, stored coordinates, residual updates and
+diagnostics. A clamp to zero must not conceal an infinite intermediate.
+Exact nonzero coefficients converting to floating zero must be rejected.
+Relative residual is a finite residual norm divided by a finite positive
+target norm. Neither a small residual nor a finite objective supplies an
+arithmetic error bound or interval enclosure. Resource/nonfinite interruption
+must mark the numerical trajectory incomplete and forbid restoration from
+its partial vector or an earlier checkpoint.
+
+Frozen sparse work reservation
+For dimensions m,n and exact nonzero count z, define
+  setup=8z+32(m+n)+65536,
+  sweep=8z+32n+2m+64,
+  refresh=8z+16(m+n)+256.
+Choose the largest common integer S in1..10000 satisfying
+  setup+17*(S*sweep+(ceil(S/16)+1)*refresh)<=190000000.
+An integer binary search can choose S solely from m,n,z and allocation,
+before coefficient-dependent norms, penalties or scores. If no S fits,
+return S=0 and perform no iteration. Seventeen complete phases with k_p
+completed sweeps each use at most
+  setup+sum_p k_p*sweep+sum_p(floor(k_p/16)+1)*refresh,
+which the declared ceil(S/16)+1 reserve bounds, including early phase stops.
+This deliberately conservative formula is a declared sparse work proxy;
+it is not a measured Python/BLAS operation count or convergence guarantee.
+The refresh allowance was increased from4z to8z before tests/freeze so
+stable per-row math.fsum accumulation and its sparse temporary arrays are
+explicitly paid by the frozen numerical reservation.
+
+Charge setup before setup arithmetic, a whole sweep before visiting its
+coordinates and a refresh before recomputation. Inner charge(0) calls only
+check deadlines; they do not add work beyond the frozen blocks. Counters
+must retain blocks already charged when a sweep or refresh is interrupted.
+For every outcome the exact charged numerical total is
+  setup_charged*setup+sweeps_charged*sweep+refreshes_charged*refresh.
+Completed trajectories require17 finite checkpoints, per-phase sweep caps
+and matching charged-block counts. Coordinate visits and residual-entry
+updates receive consistent bounds; all support scans, finite checks,
+checkpoint arrays and copies must fit the declared proxy allowances.
+
+Selection and one exact lift
+At a phase end, support is every strictly positive stored coordinate, with
+no epsilon threshold, trimming or deletion. Among checkpoints with1..443
+positive coordinates, choose the lexicographic minimum of
+(relative residual,support size,phase index). Preserve its complete n-vector,
+including all zeros. Selection is based on reported floating diagnostics,
+whose numerical accuracy is not independently certified. A complete
+trajectory without an eligible checkpoint is NONCERTIFIED. Incomplete
+numeric work is UNKNOWN and authorizes no restoration.
+
+For one selected support, map each retained position through031's stable
+active column id and030's original representative ray id. Then perform
+exactly one rational support solve against the complete saved851 original
+affine responses and target(0,-1). The cap is443 even if fewer reduced rows
+remain, so underdetermined supports are permitted; set free support values
+zero once. A selected positive coordinate may restore to exact zero. The
+only allowed omitted weights are explicit zeros outside this support, not
+thresholded positive coordinates. A failed zero-free-value solve is a
+method failure, not a proof that another free-value choice is impossible.
+
+Certify the restored full851-vector alpha>=0 against all782 original chart
+rows and export all782 lambda entries and all1224 functional coordinates.
+Independent admission requires, exactly,
+  A_original^T*lambda=sum_j alpha_j*g_j in every1224 coordinate,
+  b_original^T*lambda=-1, alpha>=0.
+This contradicts any point satisfying the licensed augmented equations and
+scalar/PSD cone, since every declared rational scalar/rank-one generator
+has nonnegative pairing there. Positive scaling need not be inverted from
+the selected floats because restoration uses original responses, not
+floating scaled weights as exact coefficients. Direct full checking is
+decisive; reconstruction rank is diagnostic and needs no new elimination
+replay. The checker still binds every selected positive support position,
+all original ray ids and zero weights outside the support.
+
+Independent audit and finite scope
+Treat031's completed reduction as a prior exact premise. Independently
+decode its retained ids and sparse equations to bind numerical dimensions
+and nonzero count; do not repeat geometry or reduction elimination. Check
+reservation arithmetic, counters, finite checkpoint completeness and the
+declared selection ranking without replaying numerical coordinate sweeps.
+The explicit numerical_trajectory_replayed=false and
+numerical_scores_verified=false flags are necessary: verified metadata is
+not a theorem about the reported residual. Only the optional direct original
+Farkas identity makes complete exact mathematical admission possible.
+Unsuccessful no-certificate summaries preserve UNKNOWN/NONCERTIFIED with
+verified metadata but complete=false and no finite infeasibility flag.
+
+The total450m allocation is preparation40m, model40m, numerical190m,
+restoration90m and one final independent90m. Preparation includes25m for
+ALL development plus the single frozen combined suite,10m independent I/O
+and5m other preparation. Unstarted phases have no counters. Consumed failure
+work persists; unused allocations do not license retries. Full input exports,
+decoded rows, geometry responses, model arrays, selected vectors and output
+arrays remain in the live-cell base across stage switches. Work,6m-cell,
+4096-bit result,8193-bit temporary, byte and deadline caps apply throughout.
+The one90m audit meter covers input decoding, metadata/counter checks,
+support binding and optional old029 direct full identity. A convenience
+certificate verifier creating a fresh meter would violate the allocation.
+
+This method trades dense solver iteration proxies for many sparse cyclic
+updates within one declared allocation. It may find a restorable support
+after continuation or may remain too dense, stagnate or fail exact
+restoration. None of those numerical outcomes proves a signed arithmetic
+estimate, primal feasibility or primal infeasibility. Failure of this selected
+851-generator search leaves other PSD directions open. Even a full checked
+separator concerns only the licensed augmented finite proof template,
+including its necessary formal rows, and does not prove RH or original
+unlearned-cone infeasibility. The all-scale signed identity, scalar and
+initial-storage bounds, cofinal parameter family and ordinary-zeta bridge
+remain separate proof obligations.
+
+Final implementation review
+Read the new producer, independent checker, protocol, resource scope, runner,
+outer audit, publisher and owned synthetic test modules without executing
+them. build_model preserves stable retained ids and uses the inherited
+bounded rational scaling/conversion helpers. coordinate_proposal checks
+finite gradient/candidate/delta before clamping or storing updates, rejects
+nonpositive/nonfinite squared norms and uses math.hypot/math.fsum.
+No LP, Gram factorization or new ray/geometry construction occurs.
+
+The producer charges setup, each sweep and each refresh before computation.
+Its block counter helper retains a charged block even when the deadline
+check raises after charging. Additional live/deadline checks use charge(0),
+so reported work agrees exactly with the frozen numerical proxy formula.
+Every phase checkpoint follows a completed refresh; the selected full
+vector is copied and retained across later warm-start phases. Completion
+requires all17 phases. Exceptions clear selected, while preserving completed
+checkpoint diagnostics and charged partial work; search cannot restore from
+an earlier checkpoint in an interrupted trajectory.
+
+The independent checker uses its own integer reservation calculation and
+checks reported work against exact block counts. For complete trajectories
+it reconciles all17 phase sweep counts, periodic/end refreshes and complete
+coordinate visits. For incomplete trajectories it bounds partial charged
+work to the single interrupted next phase. It checks every finite penalty,
+checkpoint, selected-vector coordinate and strictly positive support id,
+plus reported lexicographic ranking, without a numerical replay or score
+accuracy claim. An explicitly incomplete memory failure can retain its
+recorded over-cap peak without promoting mathematical admission. Positive
+scaling diagnostics remain producer declarations; the original full exact
+identity is checked independently regardless of those numerical declarations.
+
+The original851 representative-only lift and all selected positive entries
+are bound before admission. Full old029 chart/ray/identity routines run
+under the same90m resident-aware meter used for metadata/source decoding.
+The source031 reduction is licensed without any reduction replay. Global
+or original-unlearned-cone theorem flags remain false. Outer audit and
+publisher require a complete exact negative-pairing witness for mathematical
+success; ordinary UNKNOWN/NONCERTIFIED metadata verification stays
+complete=false and never becomes finite infeasibility or a scalar bound.
+
+Actual search uses the full190m numerical allocation. The generic numerical
+helper/checker supports smaller declared budgets for tiny systems. The root
+workflow now binds actual numerical.max_operations to190m so its common
+S is demonstrably chosen from the fixed allocation; this is frozen-method
+metadata binding, not an additional premise of the exact Farkas theorem.
+
+Owned tests were read for exact scaling/conversion, maximal dimension-only
+reservation,17-phase warm starts, periodic/end refresh accounting, zero
+reference, unchanged-sweep stopping, tiny strictly positive support entries,
+nonfinite/norm guards, charged interrupted phases and single restoration
+binding. The checker test module uses tiny metadata counterexamples and one
+authentic synthetic full witness for original support/identity binding and
+shared-meter failure. The reviewer ran no tests and consumed zero synthetic
+test operations. Root protocol receipts bind development, the single frozen
+combined suite and scaffolding reserve to the25m preparation subreserve.
+
+No remaining mathematical blocker was found. This review approves the
+bounded proposal/admission method and reports no new actual model values,
+trajectory, score, support or certificate. Owned memo finalized; edits
+stopped before the single frozen combined suite.

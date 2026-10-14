@@ -1,0 +1,194 @@
+VALUATION-COMPLETE PRIME TRANSFER ALGEBRA DETECTOR 058
+
+Disposition
+===========
+This producer discovers the exact rational nullspace of a declared finite
+prime-transfer signature. Every returned relation has been replayed against
+all signature rows. The resulting algebraic identity holds for the complete
+inclusive-unit source at every x>0,t>0. No norm bound, integrated moving-middle
+bound, RH conclusion, numerical candidate score or source array is supplied.
+No existing/frozen file was changed. The only development matrices have one
+or two primes; no three-prime scientific signature or RREF was computed.
+
+Source and atoms
+================
+Fix a finite universe U of distinct actual primes and
+
+ v_x(n)=1_(2x<n<=4x)-2*1_(x<n<=2x),
+ G_m(t)=product_(p|m)(1-p^-t), G_1(t)=1,
+ H_S(x,t)=sum_(n>=1)v_x(n)G_(product(S)*n)(t).
+
+The sum includes n1 and is finite for every x>0. The atom schema is exactly
+
+ {primes:[sorted actual subset S of U],divisor:d,attenuation:a},
+
+where positive integers d,a have no factors outside U. Its meaning is
+
+ a^-t H_S(x/d,t).
+
+Repeated valuations in d and in the summation variable are fully retained.
+Attenuation is a prime monomial, not a fitted scalar. All outside-prime
+factors remain present through a common factor, as proved below.
+
+Generic detector API
+====================
+ grammar(universe,meter=None,max_attenuation_degree=2)
+ prepare_context(meter=None,max_bytes=256MiB)
+ signature(universe,atoms,meter=None,context=None)
+ discover(universe,atoms,meter=None,context=None)
+
+The universe is a canonical sorted nonempty actual-prime list. Atom columns
+are supplied as a distinct ordered list and retain that order in all outputs.
+The default grammar enumerates every S subset, d in[1]+U, and every
+attenuation prime monomial of total degree<=2. Enumeration is subset bit-mask,
+then divisor order, then attenuation degree/exponent lex order. The degree
+is configurable under prospective resource guards. It supplies no target
+identity, winner operator, norm or anticipated source-order improvement.
+For three primes the declared default grammar has8*4*10=320columns. This
+is a prospective grammar count; that scientific matrix was not run here.
+
+Complete finite signature
+=========================
+For an atom factor d=product p^e_p and a=product p^b_p. Pull its finite sum
+back by n=d*m. The interval endpoints give exactly
+
+ v_(x/d)(m)=v_x(n),
+ a^-t H_S(x/d,t)=sum_(n>=1)v_x(n)1_(d|n)*a^-t
+                                      G_(product(S)*(n/d))(t).
+
+Put z_p=p^-t. For a valuation tuple nu_p=v_p(n), the U-dependent coefficient
+is zero if any nu_p<e_p; otherwise it is the integer polynomial
+
+ product_(p in U) z_p^b_p
+   *product_(p in S OR nu_p>e_p)(1-z_p).                        (1)
+
+Every p outside U divides n/d exactly when it divides n, since d is supported
+on U. Such primes therefore supply the SAME common product outside every
+atom. Multiplying (1) by that common factor retains all ordinary prime
+factors. There is no independent-prime probabilistic assumption.
+
+For each p let cap_p=max_column e_p+1. Enumerate ALL tuples
+nu_p=0,...,cap_p, including the allzero unit state. The last label denotes
+every true valuation>=cap_p, not merely one endpoint sample. Once a
+valuation is above every divisor exponent, both presence and the predicate
+nu_p>e_p are constant. Thus these finite cases exhaust all actual n>=1.
+For a default three-prime grammar cap=2 at each prime, so there are27cases,
+not the8squarefree cases. Arbitrary higher divisor powers are admitted
+within resource limits and require their additional intermediate cases.
+
+The producer expands (1) into exact signed integer monomials. Each row is
+one (valuation tuple,monomial exponent tuple), ordered lexicographically.
+Public rows are
+
+ {valuations:[...],monomial:[...],entries:[{column:int,value:int}]}.
+
+Only nonzero entries/rows are emitted. Their absence is exact zero, and the
+metadata records the complete valuation case count and high-state semantics.
+A relation is admitted by the detector only when its rational column weights
+annihilate every emitted row. It then vanishes in every case of (1), including
+unit and arbitrarily high powers, so the pulled-back coefficient at EACH n
+is exactly zero. Summing the finite v_x(n) sum proves the identity for all
+x>0,t>0. No interchange of infinite sums/integrals is needed.
+
+Rational discovery and certificate scope
+=======================================
+The source code performs sparse Fraction forward elimination, exact backward
+elimination to RREF, and the canonical free-column nullspace construction.
+For each free column f its basis vector has coefficient1 at f,0 at every
+other free column, and minus the RREF entry at each pivot. Every vector is
+then independently replayed by the producer against the original integer
+signature. All scalar output strings are canonical rationals.
+
+Discovery output schema prime-transfer-discovery-v1 includes the original
+universe/atoms, rank/nullity,pivot_columns/free_columns, exact rref_rows,
+relations[{coefficients:[...],free_column,nonzero_count}], signature_summary,
+and measured counters. signature schema prime-transfer-signature-v1 includes
+the full sparse rows. grammar schema prime-transfer-grammar-v1 contains atoms
+and the declared complexity metadata. Public JSON lists are newly constructed
+from immutable cached tuples, avoiding mutation of cached signatures.
+
+The basis is complete for the DECLARED finite signature and columns. It is
+not claimed to enumerate all arithmetic identities, all useful combinations,
+all smaller formula representations, or all improved source bounds. Root
+may combine basis vectors and inspect the current d1 channel and weighted
+lower channels. That classification is a separate step. The producer neither
+selects a favored current channel nor discards any lower weighted term.
+Prime-universe changes preserve the abstract exponent matrix for the same
+ordered grammar; they change actual source interpretation, not the formal
+RREF. Repeating identical abstract searches would not add algebraic evidence.
+
+Unit convention and the unpaid integral
+=======================================
+This is the inclusive H source. If h_S denotes the n>=2 version, exactly
+
+ H_S(x,t)=h_S(x,t)+v_x(1)G_(product(S))(t).
+
+For lower arguments x/d, v_(x/d)(1) may be nonzero even when v_x(1)=0.
+These lower unit corrections must be retained before transferring an
+identity to the unit-removed source. No detector relation silently deletes
+n1. With S empty G_1=1; an isolated unit integral against t^-alpha-1 diverges
+at0, so one cannot infer integrability from a formal H relation alone.
+The exact complete unit counterterms/source-order cancellation are necessary
+for such an integrated application. This detector supplies only the exact
+pointwise identity. Complete weighted lower terms, sign cancellations,
+normalizers, finite band endpoints, and head/tail estimates remain separate
+obligations. No identity is a paid all-scale signed norm bound or RH premise.
+
+Resources and accounting
+========================
+Operational domains: at most4 universe primes, each<=1,000,000;
+at most512 distinct atoms; atom integers<=4096bits; exponent<=16 at each
+universe prime; configurable grammar attenuation degree0..8. Complete states
+are capped at4096, sparse signature terms at2,000,000, rows at20,000,
+intermediate rational numerator/denominator bits at8192. These are evaluator
+resources, not mathematical restrictions on the identity theorem.
+
+Default Meter permits5billion proxy operations and7200seconds. Callers may
+set a larger explicitly declared work cap. Meter.operations and counts are
+public; primality/factor divisions, grammar atoms, valuation-column cases,
+polynomial terms, pivot checks, Fraction operations, row updates, original
+signature replay terms and cache hits are counted. Fraction charges depend
+on actual operand bit lengths; these are work proxies, not CPU instruction
+counts. Native integer/Fraction operations are bounded by the stated bit
+caps, including every partial original-row replay sum. Timing is checked at
+charged operation boundaries.
+
+Contexts cache immutable signatures keyed by the literal validated prime
+universe and entire ordered atom tuple. There are no artifact hashes. The
+persistent cap is256MiB and prospective working cap2GiB. Signatures are
+preflighted before polynomial allocation; RREF is preflighted using a
+conservative full rows*columns Fraction-cell envelope at the complete8192bit
+numerator/denominator cap, plus the serialized RREF/nullspace output envelope.
+Root retains aggregate
+16GiB responsibility and runs no worker pool in this producer. Distinct
+source-universe jobs require no hidden shared scientific arrays. The actual
+three-prime pilot, if later frozen and run, can reuse one context for its
+signature and discovery. No scientific RREF has occurred during development.
+
+Development receipt and stopped files
+=====================================
+Eight focused one/two-prime tests were run once. Seven passed; one guard test
+incorrectly expected18^2 states to exceed the4096state cap. The failed native
+invocation is preserved. Only that fixture was corrected to a temporary300
+state cap, and only its affected test was rerun, successfully. Producer code
+was unchanged by that fixture correction. Static review then strengthened
+the memory preflight to cover full rational-bit/output storage and bounded
+each partial replay sum; only the three affected replay/RREF/resource tests
+were rerun, all successfully. Total metered work across these preserved
+invocations is719,351operations, with no unresolved failure. The maximum
+prospective memory estimate is45,021,632bytes. No whole-suite replay or
+scientific matrix evaluation occurred.
+
+Tests check direct actual-n signature replay (including outside primes), a
+known one-prime identity as a span calibration, all two-prime nullspace
+vectors/RREF pivot equations, failure of a squarefree-only false relation,
+inclusive-unit lower counterterms, noninteger Fraction elimination, immutable
+functional caches, configurable complexity and adversarial resource domains.
+The calibration identity is written only in the tests and is not supplied to
+the detector. Its inference follows the general signature/nullspace pipeline.
+
+The four owned files are stopped after this scope memo and focused receipt:
+prime_transfer_algebra_058.py, test_prime_transfer_algebra_058.py,
+prime_transfer_algebra_058_development.json, PRIME_TRANSFER_ALGEBRA_SCOPE_058.txt.
+No older file was modified, no scientific source values were evaluated, and
+no uniform bound or RH result is asserted.

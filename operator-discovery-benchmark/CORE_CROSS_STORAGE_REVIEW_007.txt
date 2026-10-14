@@ -1,0 +1,403 @@
+COERCIVE CROSS STORAGE: EXACT RECOVERY, POLE GUARDS,
+AND GENERATED SIGNED PREDICTION/WORK OBLIGATIONS
+
+Scope
+-----
+This new analytical review addresses the proposed cross-storage extension
+of the complete core detector, using core_bound_synthesis.py/protocol and
+the complete identities in reviews004-006. The prioritized shell extension
+is also reviewed against the current core_signed_work.py,
+check_core_signed_work.py and CORE_SIGNED_WORK_REVIEW_007.txt, read only.
+Only this NEW file is written.
+No source evaluation, numerical experiment, test, hash, new search,
+subagent or earlier/frozen edit is performed. This is a mathematical
+schema review plus a read-only mathematical source review, not a test or
+actual-data audit receipt.
+No finite measured slope or covariance is an all-scale premise.
+
+The new cross terms are legitimate signed storage components. They can
+expose a joint drift that separate positive auxiliary energies obscure.
+Strict coercivity nevertheless makes the storage equivalent to the joint
+two-state energy. It cannot itself produce a smaller asymptotic exponent,
+remove a source pole, or pay an unproved covariance. The reusable proof
+objects below distinguish exact recovery/identity certificates from the
+missing signed forcing inequality.
+
+1. Global storage and exact constants
+------------------------------------
+Fix real r and w>r^2, independently of scale. On the SAME block/domain
+and positive weight define the bilinear pairing
+  <G,H>_X=X^(-2)*sum_(n=X)^(2X-1)G(n)H(n),
+  A(X)=E_G(X)+2r*<G,H>_X+w*E_H(X).
+The complete pointwise matrix is M=[[1,r],[r,w]]. Completion gives
+  G^2+2rGH+wH^2
+     =w*(H+rG/w)^2+(1-r^2/w)*G^2
+     =(G+rH)^2+(w-r^2)*H^2.                            (1.1)
+Consequently, with no sign assumptions on either source,
+  E_G<=w/(w-r^2)*A,  E_H<=A/(w-r^2),  A>=0.            (1.2)
+The smallest and largest eigenvalues
+  lambda_+-=(1+w +/- sqrt((1-w)^2+4r^2))/2
+also give
+  lambda_-*(E_G+E_H)<=A<=lambda_+*(E_G+E_H).             (1.3)
+These rules hold pointwise, on every finite truncation, and in every
+positive weighted integral. They retain every signed cross term.
+They do not hold if the cross uses a different support/weight from its
+two energies, unless the missing complements are explicitly restored.
+A delayed H is allowed: it is still evaluated as the declared state at
+the same n. Any source cutoffs must be recomputed at the actual child
+scale; a retained parent cutoff is a different program with extra flux.
+
+At w=r^2 the recovery fails: H=-G/r makes storage zero for arbitrary G
+(when r!=0). This singular boundary is not a coercive candidate. Small
+positive w-r^2 is legal but has the large exact cost in (1.2). Constants
+fixed for each epsilon are allowed in a cofinal theorem; parameters
+changing with X require a separate nonuniform recovery proof. A slope
+ranking must not silently disregard this conditioning cost.
+
+2. Real and complex poles survive a positive storage matrix
+----------------------------------------------------------
+If A has a cofinal or polylog bound, (1.2) supplies that bound to BOTH
+G and H. Therefore any proved supercritical pole in either prefix
+transform forbids a cofinal A, even if the scalar leading combination
+G+rH cancels. Its complementary square in (1.1) restores the pole.
+The gate must inspect both components, not only one completed square.
+
+For H(n)=n^(-alpha)J(n), J a declared mode-prefix combination or delay,
+the continuous Mellin identity is M_(x^-alpha J)(s)=M_J(s+alpha).
+The integer-floor version differs by a harmless local analytic term:
+from |J(n)|<=C_J*n*(1+log n), the error on [n,n+1) is
+O(C_J*alpha*n^(-alpha)*(1+log n)) for alpha>=0.
+Its transform is holomorphic in Re(s)>-alpha. Thus the gate's real pole
+at 2/3-alpha is genuine unless the exact row residue or exact delayed
+multiplier cancels it. At alpha=0 there is no interpolation error.
+Alpha1/6 is a critical, not supercritical, location; this distinction
+must remain explicit. All units, real-pole compensators and delays are
+part of the declared row, not assumed independently paid.
+
+Review006 proves the necessary block-energy degree
+  p>=2ell-2                                             (2.1)
+for a retained critical Mellin singularity of order ell. Applying (1.2)
+gives the SAME guard for A. The actual core has ell2 at the locally
+certified simple zero once the explicit shifted-nonvanishing witness is
+discharged. The identity, selected nonresonant delays and log-Abel target
+preserve that order. Cross storage cannot admit degrees zero or one for
+them. Under the new recurrence domains, rho1/k>=1 and rho<1/k>=2 permit
+degree at least two, so this particular pole obstruction is removed;
+no arithmetic bound thereby follows. Higher zero multiplicities or
+additional uncancelled component poles can require larger degrees.
+
+3. A complete unconditional weak reference
+-------------------------------------------
+The previously proved coefficient envelopes imply for every integer n
+  |G(n)|<=C_t*n*(1+log n), |H(n)|<=C_h*n*(1+log n).
+One may use C_f=27/2+ceil(R_u), C_t=2C_f for the existing delays,
+C_t=C_f for complete log-Abel, and C_h=2*sum_i|v_i| for the existing
+auxiliary delays/rows with nonnegative alpha. The factor two in these
+PREFIX estimates uses the half-sized argument, not an erroneous claim
+that the delayed coefficient envelope is unchanged. Finite log-Abel
+head values also obey the displayed prefix estimate.
+
+The elementary inequality 2|GH|<=G^2+H^2 gives
+  A<=(1+|r|)E_G+(w+|r|)E_H.
+On the child block [2X,4X), summing n^2 and using
+1+log(4X)<=3*(1+log2 X) yields the safe theorem
+  A(2X)-rho*A(X)
+    <=72*[(1+|r|)C_t^2+(w+|r|)C_h^2]
+                           *X*(1+log2 X)^2             (3.1)
+for every integer X>=1 and every rho>=0. Nonnegative A permits subtracting
+rho*A(X). An alternative safe constant is
+  72*[C_t^2+2|r|C_t*C_h+w*C_h^2].
+This is a weak gamma1/logdegree2 reference, not a cofinal bound. The
+absolute proof cannot justify the conjectural gamma0 branch.
+
+4. Exact recurrence AST and its conditional recovery
+----------------------------------------------------
+A generated statement may quantify
+  A(2X)<=rho*A(X)+C*X^gamma*(1+log2 X)^k
+for EVERY dyadic X>=1, with fixed 0<=rho<=1, C>=0, k>=0, and a complete
+base bound. A is exactly the full expression in section1 at each scale.
+The signed diagnostic is A(2X)-rho*A(X); replacing the cross by its
+absolute value changes the expression and removes its proposed credit.
+For gamma0, rho<1, dyadic induction gives
+  A(2^j)<=(rho^j)*A(1)+C*(1+j)^k/(1-rho).
+For rho1 it gives
+  A(2^j)<=A(1)+C*sum_(l=0)^(j-1)(1+l)^k
+          <=A(1)+C*j*(1+j)^k.                           (4.1)
+Multiply by w/(w-r^2), then apply the exact source/filter inverse cost.
+Subcritical delays preserve this degree; critical delays add their
+proved finite-horizon log cost; larger delays retain a power loss.
+The conservative extra log for log-Abel block recovery remains valid.
+The original complete core-to-target correction/head costs remain paid.
+
+A bound at a finitely many training/holdout points is a conjecture,
+not proof of this quantified AST. Irregular non-dyadic observations
+must not be mislabeled counterexamples to a dyadic-only premise.
+Changing sign/r/w after looking at a new scale creates a new program.
+
+5. A generated child-block prediction certificate with all errors
+-----------------------------------------------------------------
+Here is an exact enumerable schema that preserves signed transport.
+Let z(n)=(G(n),H(n))^T and fix the positive matrix M in section1. For
+n in [X,2X), define the actual children
+  U(n)=[z(2n)+z(2n+1)]/2,
+  V(n)=[z(2n+1)-z(2n)]/2.
+The full child identity is
+  A(2X)=(1/(2X^2))*sum_n[U(n)^T M U(n)+V(n)^T M V(n)]. (5.1)
+Both child endpoints are exact integers; no odd child or diagonal term
+is dropped. For any fixed candidate matrix B define eta(n)=U(n)-Bz(n).
+Then
+  A(2X)-rho*A(X)
+   =(1/(2X^2))*sum_n{
+       z^T[B^T M B-2rho M]z
+       +2z^T B^T M eta+eta^T M eta+V^T M V}.             (5.2)
+This identity is independent of arithmetic and readily certifiable by
+exact coefficient expansion. A rational/algebraic matrix inequality
+  B^T M B<=(2rho-kappa)M, kappa>0,
+gives a true coefficient gap, PROVIDED the complete joint forcing
+  Phi_X=(1/(2X^2))*sum_n[2z^T B^T M eta+eta^T M eta+V^T M V]
+has an independently established bound. It suffices to prove
+  Phi_X<=C*(1+log2 X)^k
+to obtain the desired recurrence (even retaining a negative storage term).
+The signed mixed term should be retained rather than separately bounded
+by a current-scale target norm that consumes the claimed gap.
+
+This is not yet a smaller-scale recurrence: eta contains the actual
+current children unless a SOURCE identity transforms it into concrete
+lower-argument forcing plus fully paid frontier terms. Defining eta and
+conjecturing Phi_X is otherwise just an exact reexpression of the drift.
+The matrix gap is useful algebra; it does not prove Phi_X. Nullspace
+guards must check both state components and all omitted error channels.
+The detector can enumerate B and M, certify the matrix inequality, derive
+the full Phi AST, then attempt arithmetic rewrites. A finite holdout can
+falsify that AST's bound. Only an all-scale arithmetic proof closes it.
+
+6. Source-specific log-work expansion and an additional degree guard
+-------------------------------------------------------------------
+For a vector step prefix z define its EXACT coefficient increments
+q(n)=z(n)-z(n-1), its bank B_z(x)=sum_(n<=x)q(n)log n, and
+  P_z(x)=B_z(x)/log x=z(x)-H_z(x)/log x,
+  H_z(x)=int_1^x z(t)dt/t.
+The Hilbert norm induced by M has the same finite-horizon Hardy bound
+as review005. On [x0,T], x0=64, sigma>=1/2, let
+  b0=1/(sigma*log x0)<1/2,
+  c0=x0^(-sigma)/(sqrt(2sigma)*log x0),
+  h0=||H_z(x0)||_M.
+For the FULL signed work
+  W_M(T)=int_(x0)^T z(x)^T M P_z(x)*x^(-2sigma-1)dx,
+the exact coercivity proof gives
+  ||z||_(M,sigma,x0..T)^2
+       <=2*W_M(T)/(1-b0)+h0^2*c0^2/(1-b0)^2.            (6.1)
+It follows by Cauchy/Hardy in the positive M-inner product and Young;
+the finite head is retained. This supplies a signed auxiliary with a
+proved recovery map, but its complete current-scale work is still open.
+
+The core log bank has the exact all-prime-power expansion
+  B_F(x)=sum_(d<=x,d>=2)Lambda(d)
+                  *sum_i c_i lambda_i(d) A_i(x/d),
+in evaluator order (nu0,nu1,nu2,mu),
+  c=(beta,-beta,-R_u,-beta),
+  lambda=(d^-u-2, d^-u-1-d^-v, d^-u-d^-v, -1).          (6.2)
+Every cofactor argument is <=x/2; units and every power of each actual
+prime survive. A delay G=F-aF(x/q) has the essential bank correction
+  B_G(x)=B_F(x)-aB_F(x/q)-a*log(q)*F(x/q).               (6.3)
+This term cannot be removed by calling it a lower-scale contribution.
+
+For weighted H(n)=n^-alpha J(n), its exact discrete increment is
+  h(1)=j(1),
+  h(n)=n^-alpha*j(n)
+          +[n^-alpha-(n-1)^-alpha]*J(n-1), n>=2.         (6.4)
+Thus a certificate using h(n)=n^-alpha j(n) is false: it omits the
+changing-weight transport. For a delayed J, j(n) itself includes the
+divisibility mask and the source at n/q. Equation(6.4), or its complete
+equivalent Abel formula, must appear before applying the source log law.
+
+An additional reusable obstruction concerns cumulative norms. If
+  N_Q(T)=int_1^T Q(x)^2*x^-2 dx=O((1+log T)^p),
+write g(t)=exp(-t/2)Q(exp t). Stieltjes integration gives
+  int_0^infinity |g(t)|^2*exp(-delta t)dt=O(delta^-p)
+for p>=0. Weighted Cauchy then gives
+  |M_Q(1/2+delta+i*tau)|=O(delta^(-(p+1)/2)).
+A retained pole of order ell therefore requires
+  p>=2ell-1.                                           (6.5)
+This differs from the BLOCK degree2ell-2. For the double-pole core,
+cumulative coercive work/norm must allow degree at least three. In
+particular a bounded increment of W_M would imply cumulative degree
+one by telescoping and is impossible under the same local certificate
+conditions as review006. A work forcing of quadratic-log degree may
+allow cubic cumulative growth; proving it remains a signed arithmetic
+problem, not a consequence of these identities.
+
+7. Independent audit of the prioritized SIGNED SHELL-WORK family
+---------------------------------------------------------------
+The main proposed experiment now prioritizes thirteen full delay filters
+and signed work parameters |eta|<=2, rather than a static cross-storage
+rerun. The exact continuous shell quantities are
+  N_G(X)=int_X^(2X) G(x)^2/x^2 dx,
+  J_G(x)=int_1^x G(y)/y dy,
+  B_G(x)=sum_(n<=x) g(n)log n=G(x)log x-J_G(x),
+  W_eta,G(X)=int_X^(2X){(1-eta)G(x)^2/x^2
+                       +eta*G(x)B_G(x)/(x^2 log x)}dx
+            =N_G(X)-eta*int_X^(2X)G(x)J_G(x)/(x^2 log x)dx. (7.1)
+This uses the actual zero extension below one and full coefficient g,
+including the delayed unit/divisibility mask. In particular (6.3) is the
+EXACT arithmetic bank for G. Both terms in (7.1) are joined before any
+bound; B_G or the delay correction is not separately assumed paid.
+
+W is SIGNED and need not be nonnegative on a shell. Nevertheless an
+upper recurrence with rho>=0 can be iterated from a valid signed base
+upper bound: multiplying an upper inequality by rho preserves order.
+Using max(0,ceil(W(X0))) as the base upper bound and a nonnegative fitted
+forcing constant does not modify W. Replacing W by max(W,0) inside the
+recurrence, or treating its exact signed drift as an absolute drift,
+would change the conjecture and must be rejected by the AST checker.
+
+Here is an independent complete causal recovery proof. Split J_G into
+its boundary J_G(X) and local integral from X to x. On the shell, the
+local map on h(x)=G(x)/x is
+  T h(x)=x^(-1)*int_X^x h(y)dy.
+The Schur test with positive weight x^(-1/2) bounds BOTH row and column
+integrals by lambda=2-sqrt(2), so ||T||<=lambda. Explicitly they are
+2[1-sqrt(X/x)] and 2[1-sqrt(y/(2X))], respectively. Therefore the local
+work error is at most lambda*N_G(X)/log X. The constant boundary's
+weighted norm is |J_G(X)|/sqrt(2X). Put
+  g_X=1-|eta|lambda/log X,
+  b_X=|J_G(X)|/[sqrt(2X)*log X].
+When g_X>0, (7.1) and Cauchy imply
+  g_X*N_G(X)<=W_eta,G(X)+|eta|*b_X*sqrt(N_G(X)).
+Young's inequality gives the exact signed recovery inequality
+  N_G(X)<=2*W_eta,G(X)/g_X+eta^2*b_X^2/g_X^2.            (7.2)
+It is valid even when W is negative. If its right side were negative,
+the preceding exact inequality could not hold; no positivity of W has
+been presumed.
+
+For dyadic X=2^j, the entire history starts at one. Cauchy on each
+previous dyadic shell gives
+  |J_G(X)|/sqrt X<=sum_(k=1)^j 2^(-k/2)*sqrt(N_G(X/2^k)).
+A second weighted Cauchy, with A0=sum_(k>=1)2^(-k/2)=1+sqrt(2), gives
+  J_G(X)^2/X<=A0*sum_(k=1)^j2^(-k/2)*N_G(X/2^k).
+Substitution into (7.2) yields the complete memory convolution
+  N_G(X)<=2W(X)/g_X
+       +eta^2*A0/[2*g_X^2*(log X)^2]
+                       *sum_(k=1)^j2^(-k/2)*N_G(X/2^k). (7.3)
+All earlier shells, including the unit shell and pre-cutoff head, appear.
+There is no untracked prime-entry or earlier-scale source remainder.
+
+For |eta|<=2 and X>=X0=1024, elementary bounds lambda<3/5,
+log X>69/10 and A0^2<6 give g_X>4/5. The TOTAL memory mass in (7.3) is
+  eta^2*A0^2/[2*g_X^2*(log X)^2]
+       <12/[(4/5)^2*(69/10)^2]<2/5.                    (7.4)
+Define the complete finite head
+  H0=max{E_G(Y): Y dyadic, 1<=Y<1024}.
+The step-prefix comparison is N_G(Y)<=E_G(Y)<=4N_G(Y).
+If a signed upper bound W(X)<=K*(1+log2 X)^p holds at all dyadic
+X>=1024, K>=0,p>=0, strong dyadic induction in (7.3) proves
+  N_G(X)<=max(H0,5K)*(1+log2 X)^p,
+  E_G(X)<=4*max(H0,5K)*(1+log2 X)^p.                   (7.5)
+Indeed 2/g_X<5/2, earlier polynomial weights are no larger than the
+current one, and (5/2)K+(2/5)max(H0,5K)<=max(H0,5K).
+One first replaces W by its NONNEGATIVE proposed upper bound before
+enlarging 2/g_X to5/2; enlarging that coefficient on a negative W would
+be invalid.
+No extra summation log is needed: this is local causal recovery, not
+conversion through a cumulative norm. The head is finite and can be
+bounded by the existing absolute coefficient envelope if its actual
+values are not used.
+
+Unlike positive storage, a weak reference for the signed STEP must retain
+the possible negative parent: W(2X)-rho W(X) cannot be bounded by W(2X)
+alone. The current implementation does retain it. Its conservative
+coefficient ceiling Cg=3*(37/2) bounds both G(n) and its complete log bank
+by Cg*n*(1+log n) and Cg*n*(1+log n)*log n, respectively. On each cell,
+both G(x)^2/x^2 and |G(x)B_G(x)|/[x^2 log x] are therefore bounded by
+Cg^2*(1+log x)^2. Consequently, with
+  C_shell=4*(|1-eta|+|eta|)*Cg^2,
+one has |W(X)|<=C_shell*X*(1+log2 X)^2. For 0<=rho<=1,
+  W(2X)-rho W(X)<=9*C_shell*X*(1+log2 X)^2.              (7.6)
+The child costs at most eight times the parent-scale normalizer and the
+parent absolute term at most one; no signed parent is dropped. These
+weak gamma1 bounds are safe and are not a cofinal proof.
+
+For a generated signed-work step
+  W(2X)<=rho W(X)+C*(1+log2 X)^k, X dyadic>=1024,
+rho<1 yields W upper degree k; rho1 yields degree k+1. Equations(7.3)-
+(7.5), followed by the declared delay inverse, prove conditional core
+recovery with all original costs. For the actual retained double pole,
+the NECESSARY WORK degree is at least TWO, via this causal recovery and
+review006. This is distinct from the cumulative log-work degree THREE
+in section6. Thus rho1/k>=1 or rho<1/k>=2 pass this particular degree
+guard. If C=0, either rho<=1 has a bounded upper W, regardless of the
+nominal k, so (7.5) contradicts the same pole and the program must be
+analytically rejected. A supercritical pole or unpaid delay inverse is
+still governed by the complete existing component/recovery gates.
+
+The shell integral's endpoints are literal: for integer X it uses source
+values through2X-1; the value at the upper endpoint is measure zero.
+Within [n,n+1), G and B_G are step values but log(x) is variable. The
+exact work weights are int_n^(n+1)x^-2 dx and
+int_n^(n+1)[x^2 log x]^-1 dx. Replacing the latter log(x) by log(n)
+changes (7.1) and requires a separate paid quadrature/interpolation
+proof. Irregular probes remain evidence outside the dyadic-only theorem.
+
+There is also a precise conditional same-class comparison. If the FULL
+shell energies, including their head, satisfy N_G(Y)<=D*L2(Y)^p with
+L2(Y)=1+log2 Y, then the same local and history estimates give
+  |W_eta,G(X)-N_G(X)|
+     <=|eta|*[lambda+A0/sqrt(2)]*D*L2(X)^p/log X.         (7.7)
+Thus relative to a known polynomial-log envelope the work correction
+loses one log. This is conditional on that envelope, NOT a new paid
+actual-source estimate or a license to omit the correction from the
+work recurrence. An observed reduction by eta therefore should not be
+presented as a new asymptotic cancellation mechanism by itself.
+
+For eta0 this family is exactly the ordinary shell energy N_G and adds
+no arithmetic mechanism. For eta!=0 it retains a signed current-state /
+all-prime smaller-argument work, with a proved causal restoration and
+an explicit memory cost. This is a legitimate generated conjecture
+language, but not a discovered source estimate: (6.2)-(6.3) must be used
+to prove an all-scale work increment, not merely to give the open work
+another name. A certified source-specific signed bound or an exact
+paid forcing decomposition is the missing argument. The recovery proof
+and degree/head guards above are unconditional and reusable.
+
+Read-only source status: the producer's twelve-moment reconstruction of
+the full prime-log work expands G*B_G as
+  F*B_F-a*F*B_Fhalf-a*Fhalf*B_F+a^2*Fhalf*B_Fhalf
+      -a*log(2)*F*Fhalf+a^2*log(2)*Fhalf^2.
+All six terms are present. Its differences of E1(log n) values and the
+checker's differences of Ei(-log n) values give the same positive cell
+integral. The checker sums actual G and B_G cellwise and reconstructs
+the full all-prime-power log bank independently. The inspected arithmetic
+formulas, eta domain, cutoff, signed values, degree/zero-forcing gate and
+weak-reference expressions agree with this review. No test execution or
+source-table check is claimed by this reading.
+
+8. What can genuinely change the proof search
+---------------------------------------------
+The new r parameter is not an arithmetic operator by itself. For fixed
+coercive M, storage has the same joint asymptotic energy class as (G,H).
+It can make a negative covariance visible and improve an inequality
+presentation, but minimizing a measured slope does not explain that
+covariance or pay (5.2)/(6.2). Moving toward w=r^2 to obtain a small
+measurement merely sends the recovery constant to infinity.
+
+A substantive detector output can instead be a triple:
+  (i) a fixed operator/state/storage and exact coercivity/inverse costs;
+ (ii) an independently verified child identity or full log-divisor
+      rewrite with every unit, repeated prime, weight/delay flux and
+      product/prefix boundary retained;
+(iii) a proposed all-scale bound on its explicit JOINT forcing, with
+      an arithmetic proof certificate or a stated unresolved lemma.
+Schemas(5.2) and(6.1)-(6.4) make this enumerable. A compiler may search
+mixed source rows with vanishing leading prime-power differences, but
+must retain the unsuppressed symmetric mode and its boundary work;
+review005 already proves why angular statistics alone cannot recover it.
+
+An argument advances the present frontier only if it pays some retained
+forcing by a proved lower-exponent estimate, proves a strict recurrence
+gap with independently bounded forcing, or establishes a new signed
+source correlation. Merely replacing the open drift by Phi_X or W_M is
+an exact identity/recovery improvement, not a cancellation theorem.
+No such actual-source uniform covariance estimate is proved here.
+The global proofs, degree guards and full identity ASTs are available
+for the next detector protocol; all older frozen conclusions remain
+unchanged.

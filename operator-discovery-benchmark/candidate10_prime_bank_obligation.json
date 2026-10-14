@@ -1,0 +1,89 @@
+{
+  "RH_proved": false,
+  "automatic_next_production_requests": [
+    "largest_prime_partition_above_square_root",
+    "three_channel_new_prime_transfer",
+    "weighted_small_cofactor_prefixes_with_endpoint",
+    "joint_energy_and_changing_bank_boundary"
+  ],
+  "definitions": {
+    "K": "sum_{2<=n<=x, largest_prime_factor(n)<=Y} a(n)",
+    "L_b": "sum_{2<=k<=M} z_b(k)*Pi_b(x,k)",
+    "M": "floor(x/Y)",
+    "Pi_b": "sum_{Y<q<=x/k, q prime} q^(-b)",
+    "R": "sum_{n<=x} a(n)-m_u*x^(2/3)",
+    "R_new": "K-L_0+L_u-m_u*x^(2/3)",
+    "Y": "x^theta",
+    "a": "p-d",
+    "a_b": "mu * (n^(-b)), Dirichlet convolution",
+    "beta": "9/2",
+    "d": "complete same-prime prime-power coefficient branch of p",
+    "m_u": "(3/2)*(9/2)*(zeta(4/3)/zeta(2/3)^2-1/zeta(2/3))",
+    "p": "((a_(1/3)-delta)/(1/3))*((a_(2/3)-delta)/(2/3))",
+    "theta": "5/6",
+    "z_0": "2*p(k)+beta*(a_(1/3)(k)+a_(2/3)(k))",
+    "z_u": "p(k)+beta*a_(2/3)(k)",
+    "z_v": "p(k)+beta*a_(1/3)(k)"
+  },
+  "dependencies_to_preserve": [
+    "complete smooth-number K sector",
+    "unweighted and one-third-weighted actual-prime banks",
+    "joint three-channel covariance",
+    "unit correction",
+    "old-bank gains and fresh terms when the cutoff changes on a child scale",
+    "complete initial range"
+  ],
+  "disallowed_shortcuts": [
+    "assuming separate RH-strength bounds for a_b or mu*mu",
+    "dropping the smooth sector",
+    "replacing finite-prefix compensation by an unproved ordinarily convergent Dirichlet tail",
+    "using the cofinal target as its own premise"
+  ],
+  "exact_reduction": {
+    "all_repeated_prime_terms": "retained in K; q>Y>sqrt(x) occurs exactly once",
+    "completeness": "K plus all three prime banks partition every coefficient; no separate absolute bound for K is supplied",
+    "identity": "R=R_new+L_v",
+    "source_law": "a(q*k)=-z_0(k)+q^(-1/3)*z_u(k)+q^(-2/3)*z_v(k), q prime, q does not divide k, k>1",
+    "unit_terms": "k=1 excluded; selected coefficient at primes is zero"
+  },
+  "id": "candidate10_complete_prime_bank_covariance",
+  "implementation_status": "explicit next search input; these prime-bank productions are analytically reviewed but not yet implemented by this pilot",
+  "operator": {
+    "formula": "((zeta(s+1/3)/zeta(s)-1)/(1/3))*((zeta(s+2/3)/zeta(s)-1)/(2/3))",
+    "shifts": [
+      "1/3",
+      "2/3"
+    ],
+    "type": "product_of_normalized_shift_increments"
+  },
+  "origin": {
+    "kind": "analytical follow-up to checked auxiliary pilot",
+    "numerically_discovered_bound": false,
+    "review_files": [
+      "OBSTRUCTION_AUXILIARY_ANALYTIC_REVIEW_001.txt sections7-9",
+      "OBSTRUCTION_AUXILIARY_STRUCTURE_REVIEW_001.txt sections3-4"
+    ]
+  },
+  "paid_component": {
+    "critical_norm": "integral_1^infinity abs(L_v(x))^2/x^2 dx <= (9*beta)^2*(153/2)",
+    "general_threshold": "any fixed rational 3/4<theta<1 gives 1-(2/3)*theta<1/2",
+    "pointwise": "abs(L_v(x)) <= 9*beta*x^(4/9)*(1+log(x)/6), x>=1",
+    "proved_by": "elementary divisor-square/cofactor estimates and complete prime-bank upper bound; no RH premise",
+    "quantity": "L_v",
+    "status": "reviewed_analytic_bound"
+  },
+  "required_lemma": {
+    "bound": "C_epsilon*X^epsilon",
+    "every_cross_term_retained": true,
+    "expression": "X^-2 sum_{X<=n<2X}(K(n)-L_0(n)+L_u(n)-m_u*n^(2/3))^2",
+    "status": "open"
+  },
+  "schema": "candidate10-prime-bank-obligation-v1",
+  "scope": {
+    "domain": "all dyadic integers X>=1",
+    "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+    "source": "actual_mu_candidate10"
+  },
+  "status": "open",
+  "uniform_signed_bound_proved": false
+}

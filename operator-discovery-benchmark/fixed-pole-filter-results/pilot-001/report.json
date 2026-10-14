@@ -1,0 +1,4304 @@
+{
+  "RH_proved": false,
+  "actual_all_scale_signed_bound_proved": false,
+  "aliases": 24,
+  "candidate_count": 3935,
+  "candidates": [
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 0,
+        "minimum_surviving_pole_order": 2,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 1,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 1,
+          "mu_arity": 1,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 2
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "2785569/524288",
+            "2": "5/4",
+            "3": "5/4",
+            "6": "2785569/1048576"
+          },
+          "innovation": {
+            "12": "1009773/524288",
+            "2": "3/2",
+            "3": "3/2",
+            "6": "3/2"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "target": {
+          "l": 1,
+          "r": 1
+        }
+      },
+      "failures": [
+        {
+          "X": 32768,
+          "bound": "8356707/524288",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-633882375/134217728",
+          "missing": false,
+          "mode": "direct",
+          "observed": "2773199367/134217728",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 42435,
+          "bound": "8356707/524288",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-751224272171863/314700241305600",
+          "missing": false,
+          "mode": "direct",
+          "observed": "11000213201/600243075",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 65536,
+          "bound": "8356707/524288",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-4904326945/536870912",
+          "missing": false,
+          "mode": "direct",
+          "observed": "13461594913/536870912",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 3,
+            "finite_passes": 3,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "40",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "2595509753/134217728",
+                "missing": false,
+                "observed": "2773199367/134217728",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "8356707/524288",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-633882375/134217728",
+                "missing": false,
+                "observed": "2773199367/134217728",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "2773199367/134217728",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "2773199367/134217728",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "175/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "61041685321/2400972300",
+                "missing": false,
+                "observed": "11000213201/600243075",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "8356707/524288",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-751224272171863/314700241305600",
+                "missing": false,
+                "observed": "11000213201/600243075",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "11000213201/600243075",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "11000213201/600243075",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "205/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "14053039327/536870912",
+                "missing": false,
+                "observed": "13461594913/536870912",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "8356707/524288",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-4904326945/536870912",
+                "missing": false,
+                "observed": "13461594913/536870912",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "13461594913/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "13461594913/536870912",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "48",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "23401006331/536870912",
+                "missing": false,
+                "observed": "2368797445/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "3029319/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "733225211/536870912",
+                "missing": false,
+                "observed": "2368797445/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "2368797445/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "2368797445/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "105/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "91569155042/1800729225",
+                "missing": false,
+                "observed": "5938258541/3601458450",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "3029319/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "3898304408175871/944100723916800",
+                "missing": false,
+                "observed": "5938258541/3601458450",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "5938258541/3601458450",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "5938258541/3601458450",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "123/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "145576938263/2147483648",
+                "missing": false,
+                "observed": "-13506693911/2147483648",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "3029319/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "25914784535/2147483648",
+                "missing": false,
+                "observed": "-13506693911/2147483648",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-13506693911/2147483648",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-13506693911/2147483648",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "051e88e8bf420593e5528e10e493b82918a519eb33a15d74fe8e0930ac6a3066",
+      "selection_origins": [
+        {
+          "kind": "c_baseline",
+          "target": null
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 4,
+            "weight": "-182/29"
+          },
+          {
+            "divisor": 8,
+            "weight": "-307/40"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 2,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 3,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 2,
+          "mu_arity": 1,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 3
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "3582091580241/88185241600",
+            "2": "12873301/1113600",
+            "3": "12873301/742400",
+            "6": "3582091580241/176370483200"
+          },
+          "innovation": {
+            "12": "9644870764749/282192773120",
+            "2": "281666529/21529600",
+            "3": "281666529/21529600",
+            "6": "9644870764749/564385546240"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 4,
+            "weight": "-182/29"
+          },
+          {
+            "divisor": 8,
+            "weight": "-307/40"
+          }
+        ],
+        "target": {
+          "l": 2,
+          "r": 1
+        }
+      },
+      "failures": [
+        {
+          "X": 32768,
+          "bound": "10746274740723/88185241600",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-903112514420351/22575421849600",
+          "missing": false,
+          "mode": "direct",
+          "observed": "3654158848045439/22575421849600",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 42435,
+          "bound": "10746274740723/88185241600",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-3339413677547197564661/158797741762805760000",
+          "missing": false,
+          "mode": "direct",
+          "observed": "746185850704009/5222114752500",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 2,
+            "finite_passes": 4,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "12873301/23200",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "8872573939535489/22575421849600",
+                "missing": false,
+                "observed": "3654158848045439/22575421849600",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "10746274740723/88185241600",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-903112514420351/22575421849600",
+                "missing": false,
+                "observed": "3654158848045439/22575421849600",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "3654158848045439/22575421849600",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "3654158848045439/22575421849600",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "90113107/148480",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "620322948872034071/1336861376640000",
+                "missing": false,
+                "observed": "746185850704009/5222114752500",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "10746274740723/88185241600",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-3339413677547197564661/158797741762805760000",
+                "missing": false,
+                "observed": "746185850704009/5222114752500",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "746185850704009/5222114752500",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "746185850704009/5222114752500",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "527805341/742400",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1871171961974187/3113851289600",
+                "missing": false,
+                "observed": "342604091003477/3113851289600",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "10746274740723/88185241600",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "1068666695399519/90301687398400",
+                "missing": false,
+                "observed": "342604091003477/3113851289600",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "342604091003477/3113851289600",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "342604091003477/3113851289600",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "281666529/672800",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "8497151665821407/18060337479680",
+                "missing": false,
+                "observed": "-4681116753080923/90301687398400",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "28934612294247/282192773120",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "13940192687239963/90301687398400",
+                "missing": false,
+                "observed": "-4681116753080923/90301687398400",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-4681116753080923/90301687398400",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-4681116753080923/90301687398400",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "1971665703/4305920",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "19396609243358168011/38768979922560000",
+                "missing": false,
+                "observed": "-102776811046676071/2423061245160000",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "28934612294247/282192773120",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "368286307281553769167771/2540763868204892160000",
+                "missing": false,
+                "observed": "-102776811046676071/2423061245160000",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-102776811046676071/2423061245160000",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-102776811046676071/2423061245160000",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "11548327689/21529600",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "34939924654888469/72241349918720",
+                "missing": false,
+                "observed": "19049164802691479/361206749593600",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "28934612294247/282192773120",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "17987138933944681/361206749593600",
+                "missing": false,
+                "observed": "19049164802691479/361206749593600",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "19049164802691479/361206749593600",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "19049164802691479/361206749593600",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "0909db10d448e96e108f2778ed935b3f3f9fab8c82303c28abe208a456a80707",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 2,
+            "r": 1
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 6,
+            "weight": "-11/4"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 1,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 2,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 1,
+          "mu_arity": 1,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 2
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "179/128",
+            "2": "5/4",
+            "3": "5/4",
+            "6": "179/128"
+          },
+          "innovation": {
+            "12": "3/2",
+            "2": "3/2",
+            "3": "3/2",
+            "6": "3/2"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 6,
+            "weight": "-11/4"
+          }
+        ],
+        "target": {
+          "l": 1,
+          "r": 1
+        }
+      },
+      "failures": [],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "40",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "19904501137/536870912",
+                "missing": false,
+                "observed": "1570335343/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "537/128",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "682005905/536870912",
+                "missing": false,
+                "observed": "1570335343/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "1570335343/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "1570335343/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "175/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "392513101523/9603889200",
+                "missing": false,
+                "observed": "27657050977/9603889200",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "537/128",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "101074123459/76831113600",
+                "missing": false,
+                "observed": "27657050977/9603889200",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "27657050977/9603889200",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "27657050977/9603889200",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "205/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "210474682647/4294967296",
+                "missing": false,
+                "observed": "9642391273/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "537/128",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "8376338711/4294967296",
+                "missing": false,
+                "observed": "9642391273/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "9642391273/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "9642391273/4294967296",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "48",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "209078721679/4294967296",
+                "missing": false,
+                "observed": "-2920291471/4294967296",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "22247644303/4294967296",
+                "missing": false,
+                "observed": "-2920291471/4294967296",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-2920291471/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-2920291471/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "105/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "204515254861/3841555680",
+                "missing": false,
+                "observed": "-2833581661/3841555680",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "20120582221/3841555680",
+                "missing": false,
+                "observed": "-2833581661/3841555680",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-2833581661/3841555680",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-2833581661/3841555680",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "123/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1069656394637/17179869184",
+                "missing": false,
+                "observed": "-13094439821/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "90403851149/17179869184",
+                "missing": false,
+                "observed": "-13094439821/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-13094439821/17179869184",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-13094439821/17179869184",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "50ea9e46f5e673953dd1538859bf23aae264a6e4f940138f36b406ecf483762f",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 1,
+            "r": 1
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 9,
+            "weight": "-279/59"
+          },
+          {
+            "divisor": 16,
+            "weight": "-169/57"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 2,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 3,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 1,
+          "mu_arity": 2,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 3
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "1017757518631343/23718304677888",
+            "2": "62336846245/11581203456",
+            "3": "62336846245/8685902592",
+            "6": "1017757518631343/47436609355776"
+          },
+          "innovation": {
+            "12": "1030545270780437/47436609355776",
+            "2": "25/4",
+            "3": "47769577861/5790601728",
+            "6": "1030545270780437/94873218711552"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 9,
+            "weight": "-279/59"
+          },
+          {
+            "divisor": 16,
+            "weight": "-169/57"
+          }
+        ],
+        "target": {
+          "l": 1,
+          "r": 2
+        }
+      },
+      "failures": [
+        {
+          "X": 65536,
+          "bound": "1017757518631343/7906101559296",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-180037258747875773/12143771995078656",
+          "missing": false,
+          "mode": "direct",
+          "observed": "1743312807365618621/12143771995078656",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 42435,
+          "bound": "1030545270780437/15812203118592",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-1881232954814689432262851/28473496267284755251200",
+          "missing": false,
+          "mode": "innovation",
+          "observed": "1781924219891815613/13577221044199350",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 1,
+            "finite_passes": 5,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "62336846245/271434456",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "4525518844802583209/36431315985235968",
+                "missing": false,
+                "observed": "1280397009628882717/12143771995078656",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "1017757518631343/7906101559296",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "282878538988860131/12143771995078656",
+                "missing": false,
+                "observed": "1280397009628882717/12143771995078656",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "1280397009628882717/12143771995078656",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "1280397009628882717/12143771995078656",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "2181789618575/8685902592",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "702206190422160512557/5213652880972550400",
+                "missing": false,
+                "observed": "2372648122009275803/20365831566299025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "1017757518631343/7906101559296",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "522313368920827254484469/42710244400927132876800",
+                "missing": false,
+                "observed": "2372648122009275803/20365831566299025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "2372648122009275803/20365831566299025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "2372648122009275803/20365831566299025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "2555810696045/8685902592",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "5489908603567471817/36431315985235968",
+                "missing": false,
+                "observed": "1743312807365618621/12143771995078656",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "1017757518631343/7906101559296",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-180037258747875773/12143771995078656",
+                "missing": false,
+                "observed": "1743312807365618621/12143771995078656",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "1743312807365618621/12143771995078656",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "1743312807365618621/12143771995078656",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 1,
+            "finite_passes": 5,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "47769577861/180956304",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "28571315690359625/126497624948736",
+                "missing": false,
+                "observed": "14466118679272997/379492874846208",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "1030545270780437/15812203118592",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "10266967819457491/379492874846208",
+                "missing": false,
+                "observed": "14466118679272997/379492874846208",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "14466118679272997/379492874846208",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "14466118679272997/379492874846208",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "1671935225135/5790601728",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "28810260023344468063/182935188806054400",
+                "missing": false,
+                "observed": "1781924219891815613/13577221044199350",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "1030545270780437/15812203118592",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-1881232954814689432262851/28473496267284755251200",
+                "missing": false,
+                "observed": "1781924219891815613/13577221044199350",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "1781924219891815613/13577221044199350",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "1781924219891815613/13577221044199350",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "1958552692301/5790601728",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "62823018798934858295/194300351921258496",
+                "missing": false,
+                "observed": "2895104333295969737/194300351921258496",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "1030545270780437/15812203118592",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "514117681792317901/10226334311645184",
+                "missing": false,
+                "observed": "2895104333295969737/194300351921258496",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "2895104333295969737/194300351921258496",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "2895104333295969737/194300351921258496",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "5453efe3b8949236db43f32c9e5c18200f28e5dbdc32d6badc3980f42a56011a",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 1,
+            "r": 2
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 3,
+            "weight": "6"
+          },
+          {
+            "divisor": 9,
+            "weight": "9"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 2,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 3,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 1,
+          "mu_arity": 2,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 3
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "890354419/12582912",
+            "2": "104291/16384",
+            "3": "104291/8192",
+            "6": "890354419/20971520"
+          },
+          "innovation": {
+            "12": "120986429/2097152",
+            "2": "24403/4096",
+            "3": "73209/8192",
+            "6": "120986429/4194304"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 3,
+            "weight": "6"
+          },
+          {
+            "divisor": 9,
+            "weight": "9"
+          }
+        ],
+        "target": {
+          "l": 1,
+          "r": 2
+        }
+      },
+      "failures": [
+        {
+          "X": 42435,
+          "bound": "890354419/4194304",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-40894556342825357/839200643481600",
+          "missing": false,
+          "mode": "direct",
+          "observed": "52222628858/200081025",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 65536,
+          "bound": "890354419/4194304",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-70811615561/2147483648",
+          "missing": false,
+          "mode": "direct",
+          "observed": "526673078089/2147483648",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 2,
+            "finite_passes": 4,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "104291/256",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "219532444017/1073741824",
+                "missing": false,
+                "observed": "217895714447/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "890354419/4194304",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "10035016817/1073741824",
+                "missing": false,
+                "observed": "217895714447/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "217895714447/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "217895714447/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "3650185/8192",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "302524980634889/1639063756800",
+                "missing": false,
+                "observed": "52222628858/200081025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "890354419/4194304",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-40894556342825357/839200643481600",
+                "missing": false,
+                "observed": "52222628858/200081025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "52222628858/200081025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "52222628858/200081025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "4275931/8192",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "594236577975/2147483648",
+                "missing": false,
+                "observed": "526673078089/2147483648",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "890354419/4194304",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-70811615561/2147483648",
+                "missing": false,
+                "observed": "526673078089/2147483648",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "526673078089/2147483648",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "526673078089/2147483648",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "73209/256",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "523239953877/2147483648",
+                "missing": false,
+                "observed": "90881649195/2147483648",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "362959287/2097152",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "280788660693/2147483648",
+                "missing": false,
+                "observed": "90881649195/2147483648",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "90881649195/2147483648",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "90881649195/2147483648",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "2562315/8192",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "2873557266926819/14751573811200",
+                "missing": false,
+                "observed": "212460722318/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "362959287/2097152",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "208028966855424239/3776402895667200",
+                "missing": false,
+                "observed": "212460722318/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "212460722318/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "212460722318/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "3001569/8192",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "3781318531991/17179869184",
+                "missing": false,
+                "observed": "2513427899497/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "362959287/2097152",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "459934579607/17179869184",
+                "missing": false,
+                "observed": "2513427899497/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "2513427899497/17179869184",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "2513427899497/17179869184",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "624ebe59ce9db7183228671ce7f5909287a9ce32912a4dcf47378a12d5d71219",
+      "selection_origins": [
+        {
+          "kind": "composition_square",
+          "target": null
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 6,
+            "weight": "-3"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 1,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 2,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 2,
+          "mu_arity": 0,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 2
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "43209297/33554432",
+            "2": "5/4",
+            "3": "5/4",
+            "6": "5/4"
+          },
+          "innovation": {
+            "12": "3/2",
+            "2": "3/2",
+            "3": "3/2",
+            "6": "3/2"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 6,
+            "weight": "-3"
+          }
+        ],
+        "target": {
+          "l": 2,
+          "r": 0
+        }
+      },
+      "failures": [
+        {
+          "X": 32768,
+          "bound": "129627891/33554432",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-1089160777/1073741824",
+          "missing": false,
+          "mode": "direct",
+          "observed": "5237253289/1073741824",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 42435,
+          "bound": "129627891/33554432",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-123028743429890549/60422446330675200",
+          "missing": false,
+          "mode": "direct",
+          "observed": "10623141382/1800729225",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 65536,
+          "bound": "129627891/33554432",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-2296411097/4294967296",
+          "missing": false,
+          "mode": "direct",
+          "observed": "18888781145/4294967296",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 3,
+            "finite_passes": 3,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "40",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "37712419671/1073741824",
+                "missing": false,
+                "observed": "5237253289/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "129627891/33554432",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-1089160777/1073741824",
+                "missing": false,
+                "observed": "5237253289/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "5237253289/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "5237253289/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "175/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "272635048847/7202916900",
+                "missing": false,
+                "observed": "10623141382/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "129627891/33554432",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-123028743429890549/60422446330675200",
+                "missing": false,
+                "observed": "10623141382/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "10623141382/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "10623141382/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "205/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "201228292775/4294967296",
+                "missing": false,
+                "observed": "18888781145/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "129627891/33554432",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-2296411097/4294967296",
+                "missing": false,
+                "observed": "18888781145/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "18888781145/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "18888781145/4294967296",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "48",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "208218662219/4294967296",
+                "missing": false,
+                "observed": "-2060232011/4294967296",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "21387584843/4294967296",
+                "missing": false,
+                "observed": "-2060232011/4294967296",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-2060232011/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-2060232011/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "105/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "64455776419/1200486150",
+                "missing": false,
+                "observed": "-715126772/600243075",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "6832441219/1200486150",
+                "missing": false,
+                "observed": "-715126772/600243075",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-715126772/600243075",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-715126772/600243075",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "123/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1070576545971/17179869184",
+                "missing": false,
+                "observed": "-14014591155/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "9/2",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "91324002483/17179869184",
+                "missing": false,
+                "observed": "-14014591155/17179869184",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-14014591155/17179869184",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-14014591155/17179869184",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "6428caa60c2198ed7892af443b105ea6c7f1e056092998e72593475a821e07d6",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 2,
+            "r": 0
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 5,
+            "weight": "100/51"
+          },
+          {
+            "divisor": 7,
+            "weight": "159/64"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 2,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 3,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 0,
+          "mu_arity": 3,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 3
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "6863603110416799/714957435961344",
+            "2": "29/8",
+            "3": "29/8",
+            "6": "6863603110416799/1191595726602240"
+          },
+          "innovation": {
+            "12": "551110923129613/84112639524864",
+            "2": "25/4",
+            "3": "25/4",
+            "6": "25/4"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 5,
+            "weight": "100/51"
+          },
+          {
+            "divisor": 7,
+            "weight": "159/64"
+          }
+        ],
+        "target": {
+          "l": 0,
+          "r": 3
+        }
+      },
+      "failures": [
+        {
+          "X": 65536,
+          "bound": "6863603110416799/238319145320448",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-11402753384336401/2859829743845376",
+          "missing": false,
+          "mode": "direct",
+          "observed": "93765990709337989/2859829743845376",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 65536,
+          "bound": "551110923129613/28037546508288",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-79390831293061525/30504850601017344",
+          "missing": false,
+          "mode": "innovation",
+          "observed": "226333171886026823/10168283533672448",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 1,
+            "finite_passes": 5,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "116",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "59049720533492533/672901116198912",
+                "missing": false,
+                "observed": "19006808945581259/672901116198912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "6863603110416799/238319145320448",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "6337197225124949/11439318975381504",
+                "missing": false,
+                "observed": "19006808945581259/672901116198912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "19006808945581259/672901116198912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "19006808945581259/672901116198912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "1015/8",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "212462809890233737/2131602415718400",
+                "missing": false,
+                "observed": "57984246604038263/2131602415718400",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "6863603110416799/238319145320448",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "228573317083278320953693/143049416618517567897600",
+                "missing": false,
+                "observed": "57984246604038263/2131602415718400",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "57984246604038263/2131602415718400",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "57984246604038263/2131602415718400",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "1189/8",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "331276204969681019/2859829743845376",
+                "missing": false,
+                "observed": "93765990709337989/2859829743845376",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "6863603110416799/238319145320448",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-11402753384336401/2859829743845376",
+                "missing": false,
+                "observed": "93765990709337989/2859829743845376",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "93765990709337989/2859829743845376",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "93765990709337989/2859829743845376",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 1,
+            "finite_passes": 5,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "200",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "745305194771276749/3813106325127168",
+                "missing": false,
+                "observed": "17316070254156851/3813106325127168",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "551110923129613/28037546508288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "57635015291470517/3813106325127168",
+                "missing": false,
+                "observed": "17316070254156851/3813106325127168",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "17316070254156851/3813106325127168",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "17316070254156851/3813106325127168",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "875/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "3422175742542474349/15347537393172480",
+                "missing": false,
+                "observed": "-64901937785994349/15347537393172480",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "551110923129613/28037546508288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "12300243422169848374712003/514977899826663244431360",
+                "missing": false,
+                "observed": "-64901937785994349/15347537393172480",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-64901937785994349/15347537393172480",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-64901937785994349/15347537393172480",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "1025/4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "2379289483617537977/10168283533672448",
+                "missing": false,
+                "observed": "226333171886026823/10168283533672448",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "551110923129613/28037546508288",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-79390831293061525/30504850601017344",
+                "missing": false,
+                "observed": "226333171886026823/10168283533672448",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "226333171886026823/10168283533672448",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "226333171886026823/10168283533672448",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "6afbd5123799cab72f844e32e1849ce70a4e8972f4a78047bb758fa65281112e",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 0,
+            "r": 3
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 0,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 1,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 0,
+          "mu_arity": 1,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 1
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "1",
+            "2": "1",
+            "3": "1",
+            "6": "1"
+          },
+          "innovation": {
+            "12": "3/16",
+            "2": "3/16",
+            "3": "3/16",
+            "6": "3/16"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "target": {
+          "l": 0,
+          "r": 1
+        }
+      },
+      "failures": [],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "32",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "17149116507/536870912",
+                "missing": false,
+                "observed": "30752677/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "1579860059/536870912",
+                "missing": false,
+                "observed": "30752677/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "30752677/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "30752677/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "35",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "62945163157/1800729225",
+                "missing": false,
+                "observed": "80359718/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "5321827957/1800729225",
+                "missing": false,
+                "observed": "80359718/1800729225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "80359718/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "80359718/1800729225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "41",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "5497241593/134217728",
+                "missing": false,
+                "observed": "5685255/134217728",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "396967929/134217728",
+                "missing": false,
+                "observed": "5685255/134217728",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "5685255/134217728",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "5685255/134217728",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "6",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "3229237129/536870912",
+                "missing": false,
+                "observed": "-8011657/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "9/16",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "310001545/536870912",
+                "missing": false,
+                "observed": "-8011657/536870912",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-8011657/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-8011657/536870912",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "105/16",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "189114322933/28811667600",
+                "missing": false,
+                "observed": "-9438577/7202916900",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "9/16",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "16244317333/28811667600",
+                "missing": false,
+                "observed": "-9438577/7202916900",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-9438577/7202916900",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-9438577/7202916900",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "123/16",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "66180944649/8589934592",
+                "missing": false,
+                "observed": "-145822473/8589934592",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "9/16",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "4977660681/8589934592",
+                "missing": false,
+                "observed": "-145822473/8589934592",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-145822473/8589934592",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-145822473/8589934592",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "83719d4f1ec72c5a80ab10495cbc99a45f71f8f82a94c5aef1fcf969cc0262a6",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 0,
+            "r": 1
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 3,
+            "weight": "18/13"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 1,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 2,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 0,
+          "mu_arity": 2,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 2
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "1",
+            "2": "1",
+            "3": "1",
+            "6": "1"
+          },
+          "innovation": {
+            "12": "60455294225/136096776192",
+            "2": "5/26",
+            "3": "3011/13312",
+            "6": "9033/26624"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 3,
+            "weight": "18/13"
+          }
+        ],
+        "target": {
+          "l": 0,
+          "r": 2
+        }
+      },
+      "failures": [],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "32",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "2751246451117/90731184128",
+                "missing": false,
+                "observed": "152151440979/90731184128",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "120042111405/90731184128",
+                "missing": false,
+                "observed": "152151440979/90731184128",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "152151440979/90731184128",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "152151440979/90731184128",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "35",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "10330886668948/304323239025",
+                "missing": false,
+                "observed": "320426696927/304323239025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "592543020148/304323239025",
+                "missing": false,
+                "observed": "320426696927/304323239025",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "320426696927/304323239025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "320426696927/304323239025",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "41",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "3463384336179/90731184128",
+                "missing": false,
+                "observed": "256594213069/90731184128",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "15599339315/90731184128",
+                "missing": false,
+                "observed": "256594213069/90731184128",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "256594213069/90731184128",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "256594213069/90731184128",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "3011/416",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "276133896899/45365592064",
+                "missing": false,
+                "observed": "52221386045/45365592064",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "60455294225/45365592064",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "2058477045/11341398016",
+                "missing": false,
+                "observed": "52221386045/45365592064",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "52221386045/45365592064",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "52221386045/45365592064",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "105385/13312",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "416694482707801/62325399352320",
+                "missing": false,
+                "observed": "149818604827/121729295610",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "60455294225/45365592064",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "1664410271376472069/16338229487814574080",
+                "missing": false,
+                "observed": "149818604827/121729295610",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "149818604827/121729295610",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "149818604827/121729295610",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "123451/13312",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "14630278300325/1451698946048",
+                "missing": false,
+                "observed": "-1167711699621/1451698946048",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "60455294225/45365592064",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "3102281114821/1451698946048",
+                "missing": false,
+                "observed": "-1167711699621/1451698946048",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-1167711699621/1451698946048",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-1167711699621/1451698946048",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "9bfd9f1bd153b547394c868f173624bb2d7baa950c13d83841e2e27daf8c0724",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 0,
+            "r": 2
+          }
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 2,
+            "weight": "156/49"
+          },
+          {
+            "divisor": 4,
+            "weight": "84/29"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 2,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 3,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 3,
+          "mu_arity": 0,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 3
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "2653719913029/264665956352",
+            "2": "155168423/32307856",
+            "3": "155168423/32307856",
+            "6": "2653719913029/529331912704"
+          },
+          "innovation": {
+            "12": "136187053/32307856",
+            "2": "136187053/32307856",
+            "3": "136187053/32307856",
+            "6": "136187053/32307856"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          },
+          {
+            "divisor": 2,
+            "weight": "156/49"
+          },
+          {
+            "divisor": 4,
+            "weight": "84/29"
+          }
+        ],
+        "target": {
+          "l": 3,
+          "r": 0
+        }
+      },
+      "failures": [
+        {
+          "X": 65536,
+          "bound": "7961159739087/264665956352",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-104589015579279475/8672574057742336",
+          "missing": false,
+          "mode": "direct",
+          "observed": "365460297909682291/8672574057742336",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 32768,
+          "bound": "408561159/32307856",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": true,
+          "level": 12,
+          "margin": "-4459564670878493/1238939151106048",
+          "missing": false,
+          "mode": "innovation",
+          "observed": "140889253716202955/8672574057742336",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        },
+        {
+          "X": 42435,
+          "bound": "408561159/32307856",
+          "existential_global_claim_refuted": false,
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_domain": false,
+          "level": 12,
+          "margin": "-153645435500877713/58177700496291600",
+          "missing": false,
+          "mode": "innovation",
+          "observed": "7940655845643299/519443754431175",
+          "reason": null,
+          "scope": "stored fitted constant only"
+        }
+      ],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 1,
+            "finite_passes": 5,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "310336846/2019241",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "138539445015038635/1084071757217792",
+                "missing": false,
+                "observed": "28071380524184917/1084071757217792",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "7961159739087/264665956352",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "4537529767115435/1084071757217792",
+                "missing": false,
+                "observed": "28071380524184917/1084071757217792",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "28071380524184917/1084071757217792",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "28071380524184917/1084071757217792",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "775842115/4615408",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "8414688474476213597/58177700496291600",
+                "missing": false,
+                "observed": "85305157424247658/3636106281018225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "7961159739087/264665956352",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "3154775413156346688199/476591722465620787200",
+                "missing": false,
+                "observed": "85305157424247658/3636106281018225",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "85305157424247658/3636106281018225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "85305157424247658/3636106281018225",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "6361905343/32307856",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1342300663867359117/8672574057742336",
+                "missing": false,
+                "observed": "365460297909682291/8672574057742336",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "7961159739087/264665956352",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-104589015579279475/8672574057742336",
+                "missing": false,
+                "observed": "365460297909682291/8672574057742336",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "365460297909682291/8672574057742336",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "365460297909682291/8672574057742336",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 2,
+            "finite_passes": 4,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "272374106/2019241",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1028948623831034421/8672574057742336",
+                "missing": false,
+                "observed": "140889253716202955/8672574057742336",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "408561159/32307856",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-4459564670878493/1238939151106048",
+                "missing": false,
+                "observed": "140889253716202955/8672574057742336",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "140889253716202955/8672574057742336",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "140889253716202955/8672574057742336",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "680935265/4615408",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1099129538488326841/8311100070898800",
+                "missing": false,
+                "observed": "7940655845643299/519443754431175",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "408561159/32307856",
+                "finite_pass": false,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "-153645435500877713/58177700496291600",
+                "missing": false,
+                "observed": "7940655845643299/519443754431175",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "7940655845643299/519443754431175",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "7940655845643299/519443754431175",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "5583669173/32307856",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1515065338176222311/8672574057742336",
+                "missing": false,
+                "observed": "-2315793938403489/1238939151106048",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "408561159/32307856",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "125882858588877927/8672574057742336",
+                "missing": false,
+                "observed": "-2315793938403489/1238939151106048",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-2315793938403489/1238939151106048",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-2315793938403489/1238939151106048",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "a899568d0c0e4fa1ab144ef36797a203d9243f894ff9d5d59a1699fdb47e0965",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 3,
+            "r": 0
+          }
+        },
+        {
+          "kind": "inferred",
+          "target": null
+        }
+      ]
+    },
+    {
+      "conditional_admission": {
+        "RH_proved": false,
+        "conditional_bridge_admitted": true,
+        "estimate_proved": false,
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "filter_semantics": "G(x)=sum_j w_j A(floor(x/d_j)); fixed positive integer d_j",
+        "implication": "The complete filtered critical-energy premise excludes ordinary zeta zeros with Re(s)>1/2 and implies RH.",
+        "maximum_filter_zero_multiplicity": 0,
+        "minimum_surviving_pole_order": 1,
+        "premise": "There exists integer q0>=1 such that every integer q>=q0 admits finite Kq>=0 independent of dyadic X>=1 with sum_(n=X)^(2X-1)|G(n)|^2<=Kq X^(2+1/q).",
+        "proof_mechanism": "Distinct real logarithms yield invertible derivative Vandermonde through order m-1; any zero of the nonzero filter multiplier has multiplicity at most m-1. Actual numerator zeta(2s)^l is zero-free in Re(s)>1/2.",
+        "reason": null,
+        "schema": 1,
+        "status": "admitted_conditional",
+        "support_size": 1,
+        "target": {
+          "dirichlet_series": "zeta(2s)^l/zeta(s)^(r+l)",
+          "liouville_arity": 1,
+          "mu_arity": 0,
+          "prefix": "A(x)=sum_(n<=x)a(n)",
+          "sequence": "actual complete Dirichlet convolution mu^{*r}*lambda^{*l}",
+          "total_arity": 1
+        }
+      },
+      "exact_program": {
+        "constants": {
+          "direct": {
+            "12": "1",
+            "2": "1",
+            "3": "1",
+            "6": "1"
+          },
+          "innovation": {
+            "12": "78681/524288",
+            "2": "1/8",
+            "3": "1/8",
+            "6": "1/8"
+          }
+        },
+        "filter": [
+          {
+            "divisor": 1,
+            "weight": "1"
+          }
+        ],
+        "target": {
+          "l": 1,
+          "r": 0
+        }
+      },
+      "failures": [],
+      "final_score": {
+        "global_bound_proved": false,
+        "modes": {
+          "direct": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "32",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "130076915/4194304",
+                "missing": false,
+                "observed": "4140813/4194304",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "8442099/4194304",
+                "missing": false,
+                "observed": "4140813/4194304",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "4140813/4194304",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "4140813/4194304",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "35",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "4120123451/120048615",
+                "missing": false,
+                "observed": "81578074/120048615",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "278567771/120048615",
+                "missing": false,
+                "observed": "81578074/120048615",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "81578074/120048615",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "81578074/120048615",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "41",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "43345143663/1073741824",
+                "missing": false,
+                "observed": "678271121/1073741824",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "3",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "2542954351/1073741824",
+                "missing": false,
+                "observed": "678271121/1073741824",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "678271121/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "678271121/1073741824",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          },
+          "innovation": {
+            "finite_cases": 12,
+            "finite_failures": 0,
+            "finite_passes": 6,
+            "missing_cases": 6,
+            "observations": [
+              {
+                "X": 32768,
+                "bound": "4",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "4676744303/1073741824",
+                "missing": false,
+                "observed": "-381777007/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": "236043/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "865193071/1073741824",
+                "missing": false,
+                "observed": "-381777007/1073741824",
+                "reason": null
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "-381777007/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 32768,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "-381777007/1073741824",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": "35/8",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "1311595793/320129640",
+                "missing": false,
+                "observed": "44485691/160064820",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": "236043/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "3614716586063/20980016087040",
+                "missing": false,
+                "observed": "44485691/160064820",
+                "reason": null
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "44485691/160064820",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 42435,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "44485691/160064820",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": "41/8",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 3,
+                "margin": "20556282621/4294967296",
+                "missing": false,
+                "observed": "1455424771/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": "236043/524288",
+                "finite_pass": true,
+                "global_bound_proved": false,
+                "level": 12,
+                "margin": "478239485/4294967296",
+                "missing": false,
+                "observed": "1455424771/4294967296",
+                "reason": null
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 17,
+                "margin": null,
+                "missing": true,
+                "observed": "1455424771/4294967296",
+                "reason": "unknown_level_constant"
+              },
+              {
+                "X": 65536,
+                "bound": null,
+                "finite_pass": null,
+                "global_bound_proved": false,
+                "level": 29,
+                "margin": null,
+                "missing": true,
+                "observed": "1455424771/4294967296",
+                "reason": "unknown_level_constant"
+              }
+            ]
+          }
+        }
+      },
+      "original_global_claim_disposition": "unresolved",
+      "program_id": "b707f243560d2522d0100cd233566ad122c1a66269cc77d2ba13e0d443304e27",
+      "selection_origins": [
+        {
+          "kind": "target",
+          "target": {
+            "l": 1,
+            "r": 0
+          }
+        }
+      ]
+    }
+  ],
+  "final_cases": {
+    "base_scales": [
+      32768,
+      42435,
+      65536
+    ],
+    "generated_after_seal": true,
+    "levels": [
+      3,
+      12,
+      17,
+      29
+    ],
+    "protocol_sha256": "41470af8178c12297a77848ebf5b6e1822743ce61fbbbded4f80c2b8ad31f84c",
+    "seal_sha256": "1b5b114f8b013b090dd700f3e82010ec2161da28aff00c31e1ae0c1d999add6a"
+  },
+  "final_counts": {
+    "direct": {
+      "dyadic_stored_constant_failures": 9,
+      "failures": 13,
+      "missing": 66,
+      "offdomain_finite_failures": 4,
+      "passes": 53
+    },
+    "innovation": {
+      "dyadic_stored_constant_failures": 2,
+      "failures": 4,
+      "missing": 66,
+      "offdomain_finite_failures": 2,
+      "passes": 62
+    }
+  },
+  "missing_proposals": 0,
+  "proposal_count": 3959,
+  "schema": 1,
+  "scope": "finite complete signed arithmetic; separately reviewed conditional RH bridges; no global estimate",
+  "selected_count": 11,
+  "verification_sha256": "f2cb8a9afeab5ede4738c9bd7b9a17778e3007e5d3136ff26f1c033b34c50d21"
+}

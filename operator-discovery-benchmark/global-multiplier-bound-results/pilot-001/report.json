@@ -1,0 +1,151 @@
+{
+  "RH_proved": false,
+  "actual_full_source_quadratic_implications": 2,
+  "actual_source_refuted": false,
+  "all_scale_floor_templates": 12,
+  "calibration_is_original_target": false,
+  "complete_auxiliary_constructions": 64,
+  "convolved_channel_calibrations": 4,
+  "core_cases": 3,
+  "development_receipts": {
+    "check_source_pole_guard_development.json": {
+      "edits_stopped": true,
+      "old_suites_rerun": false,
+      "operations": 3018,
+      "owner": "independent_checker",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_source_pole_guard"
+          ],
+          "elapsed_seconds": 0.0923761579906568,
+          "operations": 3018,
+          "peak_rss_KiB": 29068,
+          "returncode": 0,
+          "stderr": "test_correct_exact_normalization_and_family_obstruction_are_distinct (test_check_source_pole_guard.PoleAudit) ... ok\ntest_exact_cancellation_not_numeric_zero_containment (test_check_source_pole_guard.PoleAudit) ... ok\ntest_higher_order_is_not_treated_as_one_residue (test_check_source_pole_guard.PoleAudit) ... ok\ntest_interval_only_scalar_cannot_replace_fixed_definition (test_check_source_pole_guard.PoleAudit) ... ok\ntest_mismatching_exact_scalar_has_uncancelled_source_family_pole (test_check_source_pole_guard.PoleAudit) ... ok\ntest_multiple_poles_and_half_boundary (test_check_source_pole_guard.PoleAudit) ... ok\ntest_mutated_orders_solution_and_scope_rejected (test_check_source_pole_guard.PoleAudit) ... ok\ntest_no_parameter_and_zero_residue_are_distinguished (test_check_source_pole_guard.PoleAudit) ... ok\ntest_nonmonomial_affine_denominator_has_no_fabricated_laurent_solution (test_check_source_pole_guard.PoleAudit) ... ok\ntest_nonpositive_regular_argument_is_explicitly_unsupported (test_check_source_pole_guard.PoleAudit) ... ok\ntest_precision_restored_and_external_meter_supported (test_check_source_pole_guard.PoleAudit) ... ok\ntest_source_generated_residue_matches_hand_algebra (test_check_source_pole_guard.PoleAudit) ... ok\ntest_strict_input_and_forged_argument_guards (test_check_source_pole_guard.PoleAudit) ... ok\ntest_valuation_factors_are_combined_before_poles (test_check_source_pole_guard.PoleAudit) ... ok\ntest_whole_channel_and_unit_term_cannot_be_omitted (test_check_source_pole_guard.PoleAudit) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.022s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_source_pole_guard operations=3018 elapsed_seconds=0.022672\n",
+          "tests": 15
+        }
+      ],
+      "source_observations": 0
+    },
+    "global_multiplier_bounds_development.json": {
+      "elapsed_seconds": 0.363182332017459,
+      "focused_followups": [
+        {
+          "elapsed_seconds": 0.37025724799605086,
+          "names": [
+            "test_complete_symbolic_search_and_independent_replay",
+            "test_omitted_template_and_equivalence_coverage_rejected"
+          ],
+          "output": "test_complete_symbolic_search_and_independent_replay (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_omitted_template_and_equivalence_coverage_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.370s\n\nOK\n",
+          "producer_counts": {
+            "elapsed_seconds": 0.3702056360198185,
+            "operations": 2586402,
+            "peak_cells": 2500
+          },
+          "reason": "independent review: require complete floor and equivalence coverage",
+          "successful": true,
+          "tests_run": 2
+        }
+      ],
+      "output": "test_complete_symbolic_search_and_independent_replay (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_endpoint_and_formal_witness_scope (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_general_rational_prices_with_growth_charged (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_missing_shape_and_equivalence_debt_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_source_tail_payment_and_unit_mutations_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.363s\n\nOK\n",
+      "producer_counts": {
+        "elapsed_seconds": 0.3629648479982279,
+        "operations": 2586402,
+        "peak_cells": 2500
+      },
+      "scope": "changed-rational synthetic source; exact proof and negative controls",
+      "source_observations": false,
+      "successful": true,
+      "tests_run": 5
+    },
+    "global_multiplier_checker_development.json": {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_global_multiplier_bounds",
+        "-v"
+      ],
+      "elapsed_seconds": 0.039428847027011216,
+      "returncode": 0,
+      "scope": "synthetic rational proof admission only; no source observations",
+      "stderr": "test_exact_multiplier_bound_and_mutations (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\ntest_negative_witness_is_scoped_to_relaxation (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\ntest_singular_psd_and_indefinite_rejection (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+      "stdout": ""
+    },
+    "global_multiplier_proto_039_development.json": {
+      "cumulative_operations": 122786,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.0363916169735603,
+          "errors": 0,
+          "exposure": "synthetic floor functions/rational matrices/source AST only; no arithmetic source values or archive",
+          "failures": 0,
+          "operations": 122750,
+          "returncode": 0,
+          "tests": 6
+        },
+        {
+          "elapsed_seconds": 0.0005094859516248107,
+          "errors": 0,
+          "exposure": "synthetic floor functions/rational matrices/source AST only; no arithmetic source values or archive",
+          "failures": 0,
+          "operations": 36,
+          "returncode": 0,
+          "tests": 1
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "source_pole_guard_development.json": {
+      "arithmetic_source_observations": false,
+      "elapsed_seconds": 0.005783626984339207,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "schema": "source-pole-guard-development-v1",
+      "successful": true,
+      "tests": 5
+    }
+  },
+  "elapsed_seconds": 0.30379589198855683,
+  "exact_equivalent_endpoints": 1,
+  "exact_source_residue_cancellations": 1,
+  "family_R2_pole_obstructions": 1,
+  "finite_inverse_rejections": 12,
+  "fixed_normalization_used_in_finite_bound": false,
+  "generated_positive_real_poles": 1,
+  "independent_quadratic_checker_seconds": 0.04086348903365433,
+  "original_source_scalar_exactly_bound": true,
+  "peak_rss_kib": 704032,
+  "pole_checker_operations": 267,
+  "pole_producer": {
+    "elapsed_seconds": 0.28686323401052505,
+    "operations": 64,
+    "peak_cells": 0
+  },
+  "producer": {
+    "elapsed_seconds": 0.28472743701422587,
+    "operations": 2586486,
+    "peak_cells": 2500
+  },
+  "rational_auxiliary_coefficients": 32,
+  "real_zeta_constants_evaluated_rigorously": true,
+  "relation_checker_operations": 240,
+  "source_checker_operations": 3630,
+  "source_coefficient_observations": false,
+  "span_obstructions": 65,
+  "status": "GLOBAL_MULTIPLIERS_AND_EXACT_NORMALIZATION_VERIFIED_BOUND_OPEN",
+  "subpower_convolved_calibrations": 1,
+  "successful_full_source_bounds": 0,
+  "successful_uniform_recurrences": 0,
+  "total_coefficient_trials": 67,
+  "whole_signed_bound_proved": false
+}

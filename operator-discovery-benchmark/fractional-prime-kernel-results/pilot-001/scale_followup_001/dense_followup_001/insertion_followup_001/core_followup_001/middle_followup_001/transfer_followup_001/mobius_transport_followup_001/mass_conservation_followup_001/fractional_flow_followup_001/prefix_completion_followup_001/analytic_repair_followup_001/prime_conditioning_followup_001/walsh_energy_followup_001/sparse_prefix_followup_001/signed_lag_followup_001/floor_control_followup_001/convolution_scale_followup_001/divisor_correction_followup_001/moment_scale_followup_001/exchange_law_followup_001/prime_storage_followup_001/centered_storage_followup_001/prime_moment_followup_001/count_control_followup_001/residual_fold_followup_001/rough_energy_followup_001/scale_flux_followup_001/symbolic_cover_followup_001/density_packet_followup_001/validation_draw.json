@@ -1,0 +1,280 @@
+{
+  "all_ratio_entry_boundaries_covered": false,
+  "drawn_after_formula_freeze": true,
+  "draws": [
+    {
+      "kind": "irregular",
+      "level": 14,
+      "status": "ACCEPTED",
+      "u": 29227
+    },
+    {
+      "kind": "irregular",
+      "level": 14,
+      "status": "ACCEPTED",
+      "u": 21426
+    },
+    {
+      "kind": "irregular",
+      "level": 14,
+      "status": "ACCEPTED",
+      "u": 17443
+    },
+    {
+      "kind": "irregular",
+      "level": 15,
+      "status": "ACCEPTED",
+      "u": 53639
+    },
+    {
+      "kind": "irregular",
+      "level": 15,
+      "status": "ACCEPTED",
+      "u": 46232
+    },
+    {
+      "kind": "irregular",
+      "level": 15,
+      "status": "ACCEPTED",
+      "u": 56401
+    },
+    {
+      "kind": "irregular",
+      "level": 16,
+      "status": "ACCEPTED",
+      "u": 128872
+    },
+    {
+      "kind": "irregular",
+      "level": 16,
+      "status": "ACCEPTED",
+      "u": 107414
+    },
+    {
+      "kind": "irregular",
+      "level": 16,
+      "status": "ACCEPTED",
+      "u": 113729
+    },
+    {
+      "kind": "irregular",
+      "level": 17,
+      "status": "ACCEPTED",
+      "u": 202846
+    },
+    {
+      "kind": "irregular",
+      "level": 17,
+      "status": "ACCEPTED",
+      "u": 165352
+    },
+    {
+      "kind": "irregular",
+      "level": 17,
+      "status": "ACCEPTED",
+      "u": 145242
+    },
+    {
+      "kind": "irregular",
+      "level": 18,
+      "status": "ACCEPTED",
+      "u": 374948
+    },
+    {
+      "kind": "irregular",
+      "level": 18,
+      "status": "ACCEPTED",
+      "u": 380002
+    },
+    {
+      "kind": "irregular",
+      "level": 18,
+      "status": "ACCEPTED",
+      "u": 263763
+    },
+    {
+      "kind": "irregular",
+      "level": 19,
+      "status": "ACCEPTED",
+      "u": 583331
+    },
+    {
+      "kind": "irregular",
+      "level": 19,
+      "status": "ACCEPTED",
+      "u": 978178
+    },
+    {
+      "kind": "irregular",
+      "level": 19,
+      "status": "ACCEPTED",
+      "u": 706278
+    },
+    {
+      "kind": "irregular",
+      "level": 20,
+      "status": "ACCEPTED",
+      "u": 1420914
+    },
+    {
+      "kind": "irregular",
+      "level": 20,
+      "status": "ACCEPTED",
+      "u": 1145872
+    },
+    {
+      "kind": "irregular",
+      "level": 20,
+      "status": "ACCEPTED",
+      "u": 1549519
+    },
+    {
+      "kind": "irregular",
+      "level": 21,
+      "status": "ACCEPTED",
+      "u": 2287437
+    },
+    {
+      "kind": "irregular",
+      "level": 21,
+      "status": "ACCEPTED",
+      "u": 3585825
+    },
+    {
+      "kind": "irregular",
+      "level": 21,
+      "status": "ACCEPTED",
+      "u": 3434899
+    },
+    {
+      "kind": "irregular",
+      "level": 22,
+      "status": "ACCEPTED",
+      "u": 5116208
+    },
+    {
+      "kind": "irregular",
+      "level": 22,
+      "status": "ACCEPTED",
+      "u": 4576644
+    },
+    {
+      "kind": "irregular",
+      "level": 22,
+      "status": "ACCEPTED",
+      "u": 4802354
+    },
+    {
+      "boundary": 76347,
+      "eta": "9/52",
+      "kind": "ratio_entry",
+      "label": 7,
+      "status": "ACCEPTED",
+      "u": 76346
+    },
+    {
+      "boundary": 76347,
+      "eta": "9/52",
+      "kind": "ratio_entry",
+      "label": 7,
+      "status": "ACCEPTED",
+      "u": 76347
+    },
+    {
+      "boundary": 76347,
+      "eta": "9/52",
+      "kind": "ratio_entry",
+      "label": 7,
+      "status": "ACCEPTED",
+      "u": 76348
+    },
+    {
+      "boundary": 161051,
+      "eta": "1/5",
+      "kind": "ratio_entry",
+      "label": 11,
+      "status": "ACCEPTED",
+      "u": 161050
+    },
+    {
+      "boundary": 161051,
+      "eta": "1/5",
+      "kind": "ratio_entry",
+      "label": 11,
+      "status": "ACCEPTED",
+      "u": 161051
+    },
+    {
+      "boundary": 161051,
+      "eta": "1/5",
+      "kind": "ratio_entry",
+      "label": 11,
+      "status": "ACCEPTED",
+      "u": 161052
+    },
+    {
+      "boundary": 441310,
+      "eta": "2/7",
+      "kind": "ratio_entry",
+      "label": 41,
+      "status": "ACCEPTED",
+      "u": 441309
+    },
+    {
+      "boundary": 441310,
+      "eta": "2/7",
+      "kind": "ratio_entry",
+      "label": 41,
+      "status": "ACCEPTED",
+      "u": 441310
+    },
+    {
+      "boundary": 441310,
+      "eta": "2/7",
+      "kind": "ratio_entry",
+      "label": 41,
+      "status": "ACCEPTED",
+      "u": 441311
+    }
+  ],
+  "new_arithmetic_horizon": false,
+  "parents": [
+    17443,
+    21426,
+    29227,
+    46232,
+    53639,
+    56401,
+    76346,
+    76347,
+    76348,
+    107414,
+    113729,
+    128872,
+    145242,
+    161050,
+    161051,
+    161052,
+    165352,
+    202846,
+    263763,
+    374948,
+    380002,
+    441309,
+    441310,
+    441311,
+    583331,
+    706278,
+    978178,
+    1145872,
+    1420914,
+    1549519,
+    2287437,
+    3434899,
+    3585825,
+    4576644,
+    4802354,
+    5116208
+  ],
+  "seed": 20261011081
+}

@@ -1,0 +1,147 @@
+ACTUAL-SOURCE INVERSE SEARCH: VERIFIED COMPONENT CONTROLS, OPEN SIGNED JOIN
+
+Current input: candidate10_short_inverse_obligation.json
+Pilot: core-truncated-inverse-results/pilot-001
+Successful audit: pilot-001/comparison-audit-001/report.json
+Executable generator: core_truncated_inverse.py
+Independent arithmetic checker: check_core_truncated_inverse.py
+Numerical runner: run_core_truncated_inverse.py
+Completed saved-output audit: audit_core_truncated_inverse.py
+Analytical review: CORE_TRUNCATED_INVERSE_REVIEW_015.txt
+
+What the detector now does
+--------------------------
+The prior bound search emitted144 open signed coarse-energy obligations.
+This stage substitutes actual Mobius inverse identities into those exact
+kernels. It generates25 rational cutoff geometries and solves100 inverse
+polynomials by exact coefficient elimination. A separate checker multiplies
+each answer by its formal denominator and checks all residual supports.
+No polynomial answer or numerical source response selects the result.
+
+Analysts supplied the inverse/support, convolution norm and centering
+rules. The executable solves the polynomials, compares available bound
+costs, selects finite source decompositions and emits remaining goals.
+This is bounded mathematical proof composition, not a general autonomous
+analytic prover or a new all-scale prime-distribution theorem.
+
+Exact arithmetic identity
+-------------------------
+Use the same N=4X-1 for BOTH parent and child in a whole increment.
+ A=mu restricted to n<=U=floor(N^alpha),
+ B=mu(n)n^(-2/3) restricted to n<=V=floor(N^gamma),
+ R=delta-One*A, S=delta-(n^(-2/3))*B.
+Products here are Dirichlet convolution. Actual inverse identities give
+R(n)=0 for n<=U and S(n)=0 for n<=V. The detector solves
+ (1-r)^p(1-s)^q P(r,s)=1 modulo alpha*a+gamma*b>=1.
+Each discarded monomial R^a*S^b has support strictly>N, including the
+boundary alpha*a+gamma*b=1. It follows that, for EVERY N>=1 and n<=N,
+ mu^p*(mu n^(-2/3))^q=A^p*B^q*P(R,S).
+
+Substitute this into every row of the complete original source
+ f=beta ku*(mu*mu)-beta ku*(mu*muv)-beta mu-Ru ku*muv,
+where ku(n)=n^-1/3, muv(n)=mu(n)n^-2/3, beta9/2. Then g=f-(f-g),
+with its exact transport correction. No source row, unit, prime power,
+prefix before a cell, inverse residual or signed cross is omitted.
+Components depend on N but their join is the same fixed original source.
+
+New uniform controls actually available
+--------------------------------------
+1. Shifted residual S has GLOBAL critical weighted mass
+ sum_(n>=1)|S(n)|/sqrt(n)<=42 V^-1/6<=84 N^-gamma/6.
+This follows from S=(n^-2/3)*(muv-B), absolute convolution and the
+convergent7/6 tail. Every prime and repeated prime power is included.
+This is a true operator-coefficient control; it does not control the
+unshifted inverse or prove the full core bound.
+
+2. The exact affine coefficient c_U=sum_(d<=U)mu(d)/d gives
+ E_U=R+c_U*One,
+ prefix E_U(n)=1+sum_(d<=U)mu(d){n/d}, EVERY n>=1.
+The fixed-U sum includes d>n. Thus |prefix E_U|<=1+U. In the shared
+blocks its normalized energy is<=16 N^(2alpha-1), paid foralpha<=1/2.
+The recovery R=E_U-c_U*One retains the entire drift; its energy need not
+be paid. E_U has NO support gap. Any later centered expansion must occur
+AFTER support truncation and retain every binomial/drift cross term.
+
+3. A second proof route using ordinary l1 size, instead of only critical
+weighted l1, discovers a paid full-source component: -beta*A. Its energy
+is<=4 beta^2 N^(2alpha-1), hence uniformly paid foralpha<=1/2.
+The compiler includes the generated channel-kernel cost and projection
+contraction, then uses
+ S_full<=2 S_remaining+2 C_paid,
+ S_remaining<=2 S_full+2 C_paid.
+The unit in the short head remains fully accounted for. A new uniform
+growth bound for the remaining joined vector would suffice; none of the
+older fixed-C recurrences is marked discharged. The shifted-tail and
+ordinary-l1 routes are both retained in the cost records.
+
+The factorwise unsigned leading term contains beta*ku, forcing energy
+at least beta^2 X^1/3. Thus this absolute treatment cannot close the
+target. Review015 also proves a stronger coefficientwise-absolute prime
+obstruction. Neither refutes cancellation in a whole signed prefix or
+in the complete cross-correlated source. Paid local pieces alone do not
+supply the still-open joined arithmetic estimate.
+
+Completed experiment and scope
+------------------------------
+Proof-cost selection chose five geometries:
+ (alpha,gamma)=(1/2,1/2),(1/3,1/3),(1/3,2/3),(1/6,1/6),(1/6,5/6).
+Their exact source expansions have9,15,12,39,21 components respectively.
+These are five representations of the SAME complete source, not five
+numerically different sources or evidence for five RH solutions.
+
+Two independent192bit workers read their own prior archives throughH1023.
+The numerical representative is the inherited largest-degree polynomial
+channel and largest mesh, chosen before responses. Full parentX256 and
+child512 use commonN1023 under all four inherited transports. Workers
+verify inverse factors, every source component, original-source recovery,
+affine centering and all signed projected crosses. One uses sparse
+convolution and weighted prefixes, the other divisor convolution and
+Abel means. All100 inverse certificates and256,020 scalar comparisons
+passed. All20 complete joined probes were verified.
+
+For transport7, geometry(1/2,1/2), the child coarse energy is about1.1540;
+the component diagonal is104.6937 and signed cross is-103.5397. Other
+geometries give the same joined energy, as exact source recovery requires.
+These observations illustrate the preserved cancellation. They do not
+prove a uniform inequality or select a better exponent/constant. Source
+data were already observed through524287; there is no fresh holdout.
+
+There are720 source-reduction bindings of the144 inherited obligations
+to the five geometries. This is bookkeeping of proof routes, not720 new
+operators. Every remaining uniform signed goal is explicitly OPEN.
+All13 arithmetic tests and two comparison-order tests passed. Original
+workers took21.607s and40.817s; saved-output audit took2.756s. Sum of
+recorded main/audit and worker peak RSS is1,272,928KiB, below1.22GiB.
+Conservatively charged work upper bound1,009,280,018 operations includes
+the FULL150million original main cap because its terminal counter was
+not emitted. Do not describe that upper bound as exact work measured.
+
+Retained comparison failure and successful recovery
+---------------------------------------------------
+The original final comparator stopped with 'same component support'.
+Its positional zip incorrectly assumed the two independently generated
+term lists used the same order. The saved workers have identical complete
+component sets; geometries6 and0 order some mixed monomials differently.
+The original terminal_failure.json and every frozen source remain intact.
+
+A separately frozen audit matches each (source mode,a,b), rejects missing,
+unexpected or duplicate components, and verifies all saved coefficients
+and observables. No worker, source or numerical experiment was rerun.
+The authoritative completed report is in comparison-audit-001, not a
+nonexistent original pilot report. Publication points to that audit.
+
+Next search target
+------------------
+Use the actual short-Mobius/divisor tuple kernels in the emitted remaining
+signed energy after the paid-head reduction. The available centered
+residual permits new exact decompositions, but the compensating c_U drift
+and all its source/mode crosses must remain. The task is to discover a
+uniform bound for this joined expression, or a further useful auxiliary
+construction with its own proved recovery. Generic divisor envelopes and
+an unsigned sum of the remaining components cannot provide that bound.
+
+Do not refit or reselect on these frozen observations. Keep original
+scales, source corrections, fixed-constant claims and full RH relevance
+in the nested input. Use Sol6.1 subagents only for substantial parallel
+proof/rejection work. The full signed core bound and RH are OPEN; keep
+the original research goal active.

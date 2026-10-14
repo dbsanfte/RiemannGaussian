@@ -1,0 +1,188 @@
+{
+  "RH_proved": false,
+  "actual_all_scale_signed_bound_proved": false,
+  "ast_sampling": {
+    "count": 64,
+    "max_depth": 3,
+    "seed": 19661008
+  },
+  "ast_training_horizon": 96,
+  "ast_validation_horizon": 160,
+  "calibration_training_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "calibration_validation_indices": [
+    53,
+    61,
+    64,
+    79,
+    96,
+    127,
+    128,
+    173,
+    256
+  ],
+  "code_sha256": {
+    "check_signed_arithmetic_search.py": "88b967602c4ed604fd9f348d32e806847b595e3c4b79136458d49276f4449a6e",
+    "signed_arithmetic_certificates.py": "a7a1938ba95290180dbd3461fe52ffa2a8bd897acffee80c803fb697ab52445d",
+    "signed_arithmetic_language.py": "cc076aac70dc7756e3e77a9c09e7d74f3640b73fdf24be0488313201cb3bc7f4",
+    "signed_arithmetic_proof.txt": "8a10baa6de7002ce6f3fc453623b285b2cb216ae827691e59677599c10d1c52e",
+    "signed_arithmetic_report.py": "2abb6e92a5a85511b3d3a0b7044cee5ecec08ed47b88a3774d374212fd2408ca",
+    "signed_arithmetic_sampler.py": "6bd868384356a076b4d463bdf36165d6c717cf1be030134f0af073378e751294",
+    "signed_arithmetic_search.py": "ed94b37c5786a50d11d2fd3f7954a5e967083865e6f13eb224c7219eb0a4062e",
+    "test_signed_arithmetic_certificates.py": "2f2bcf46d0051f683cf20893bbaf6a52db0babcfa13694e2e5a74dc0f76c2589",
+    "test_signed_arithmetic_language.py": "098e2cb3062897055b2a3bb5c83bb7ec8a4c82f5ebb11b93473538e85a836c09",
+    "test_signed_arithmetic_sampler.py": "cc4544a5ae173488ac95e49c07e57fa90c264a9306054b6b1dd216bca64ef2bc",
+    "test_signed_arithmetic_search.py": "b22afcc644b6de65f5301ae767580c0a716cc30b47e9abae9dcc5ade0b27964f"
+  },
+  "coefficient_denominator_budget": 64,
+  "coefficient_grid": [
+    "-16",
+    "-8",
+    "-4",
+    "-2",
+    "-1",
+    "-1/2",
+    "1/2",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16"
+  ],
+  "coefficient_norm_budget": "64",
+  "contract_test_modules": [
+    "test_signed_arithmetic_language",
+    "test_signed_arithmetic_certificates",
+    "test_signed_arithmetic_sampler",
+    "test_signed_arithmetic_search"
+  ],
+  "dataflow_guard_is_not_adversarial_OS_sandbox": true,
+  "dependency_sha256": {
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b"
+  },
+  "every_final_response_previously_unobserved_claimed": false,
+  "failed_runs": [],
+  "final_freshness_scope": "post-seal evaluation with file-separated discovery; standard stencil outcomes may overlap historical evidence",
+  "final_rule": "seal-derived 3 distinct odd X in [1101,2401], plus2048,4096,8192; roots use seal-derived integers [3001,6000]",
+  "input_sha256": {
+    "workflow-audit-results/audit-001/integration_verification.json": "f30948adb01f3920310cf9ac86683604e0884bab31b82214175d0b2592c5c432",
+    "workflow-audit-results/mobius-language-design-001/math_design.txt": "7ee7a319691c4c26058c6190eace2c7053de21011937dc743f52a2807452a240",
+    "workflow-audit-results/mobius-language-design-001/observables_design.txt": "ef7937eec4c611232b98e762f1a4c45d656b02e2ef8c163c4c50b7ececb48a1b",
+    "workflow-audit-results/mobius-language-design-001/search_design.txt": "13f6bd1ace3d7b20df2a24767f20942c66c473fc6c469c8be0c5f5f3baa8f1b3"
+  },
+  "known_development_coupled_scales": [
+    16,
+    64,
+    256
+  ],
+  "learner_reads_proof_or_anticipated_coefficients": false,
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "model_calls_in_worker": false,
+  "moment_degrees": [
+    0,
+    1,
+    2
+  ],
+  "new_prime_coefficient_holdout_claimed": false,
+  "root_offsets": [
+    -1,
+    0,
+    1
+  ],
+  "root_orders": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    12
+  ],
+  "stencil_scales": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "supplied_bias": [
+    "piecewise linear block-energy kernels",
+    "dyadic dilation basis",
+    "zero density moments",
+    "sparse rational root/count dictionary",
+    "nonnegative critical recurrence bridge",
+    "squarefree discrepancy certificate"
+  ],
+  "support_budget": 4,
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    512
+  ],
+  "validation_scales": [
+    192,
+    256,
+    384,
+    768
+  ],
+  "version": "signed-arithmetic-v1"
+}

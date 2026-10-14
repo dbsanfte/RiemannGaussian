@@ -1,0 +1,249 @@
+TRUNCATED INVERSE REPRESENTATIONS AND SIGNED NONNEGATIVE POTENTIALS
+
+This stage separates three claims: response-inferred reconstruction weights,
+an admitted universal representation identity, and a proposed actual signed
+energy inequality. The first two do not prove the third. No global critical
+signed estimate or RH conclusion is asserted from finite numerical passes.
+
+1. UNIVERSAL REPRESENTATION AND EXACT ERROR.
+
+Let convolution mean (f*g)(n)=sum_(d|n) f(d)g(n/d), with unit delta at n=1.
+For ANY arithmetic reference h with h(1)=1, let a*h=delta. Multiplicativity
+is unnecessary. Set a_u(n)=a(n) for n<=u and zero otherwise, u>=0 integer.
+All powers below are convolution powers, with zeroth power delta; k is ANY
+positive integer. Rational references suffice for exact response learning.
+
+Let b=a_u*h and R=delta-b=(a-a_u)*h. The finite geometric identity gives
+
+ a=a_u*sum_(j=0)^(k-1) R^j+a*R^k.
+
+Consequently the universal k-column identity is
+
+ a=sum_(r=1)^k c(k,r) a_u^r*h^(r-1)
+                         +(a-a_u)^k*h^(k-1),
+
+where, AFTER analytical admission, c(k,r)=(-1)^(r-1) binom(k,r).
+One direct proof expands the last term: its r=0 term is a, while its
+r>=1 term is (-1)^r binom(k,r) a_u^r*h^(r-1), since a*h=delta.
+This is a finite formal identity at every index, not an infinite-series
+convergence argument. Summing coefficients through x gives the same exact
+prefix identity, with the full error prefix retained.
+
+The tail a-a_u is supported at indices >=u+1. Thus the error vanishes at
+EVERY index n<(u+1)^k. Reconstruction through integer x>=1 is guaranteed
+by the STRICT condition x<(u+1)^k. At n=(u+1)^k the error coefficient is
+exactly a(u+1)^k; equality at the cutoff is generally unsafe. If the first
+nonzero tail coefficient is at v>u, the first nonzero error is at v^k with
+coefficient a(v)^k. Later error coefficients may cancel; no fuller support
+set is assumed. For u=0 the identity still holds but no positive response
+index satisfies the universal safe cutoff.
+
+For x>=1, u=floor(x^(1/k)), computed by exact integer comparisons, gives
+u^k<=x<(u+1)^k. At u=1 a safe choice is k=floor(log2 x)+1. The shortcut
+k=ceil(log2 x), u=1 fails at x=2^k: for actual h(n)=1 the prefix error there
+is (-1)^k. Using the true floor root gives u=2 at that equality and restores
+safety. At x=1 the admitted arity is at least one, not ceil(log2 1)=0.
+A finite evaluation or bit budget is not a semantic upper bound on k.
+
+2. ADMISSION OF THE LEARNED COEFFICIENT RECURRENCE.
+
+The learner receives numeric prefix responses from unrelated h and numeric
+columns for a_u^r*h^(r-1), together with the declared broader dictionary.
+It is not supplied the binomial coefficients or the expected recurrence.
+Sparse exact fitting selects coefficient vectors and then a recurrence
+program from coefficient-response tables. These outputs are frozen before
+separate analytical admission and protected checks. A finite table alone
+cannot certify continuation to all arities.
+
+The root model uses c(k,0)=0 and c(k,r)=0 outside 1<=r<=k. The analytical
+backend checks seed c(1,1)=1, the declared boundaries, consistency of stored
+rows with the rule, and whether the DETECTED recurrence algebraically equals
+
+ c(k+1,r)=c(k,r)-c(k,r-1)+1_(r=1),  k>=1.
+
+This is symbolic rule admission, not a requirement that discovery match a
+supplied coefficient vector. Write P_k(z)=sum_(r=1)^k c(k,r)z^r. The admitted
+rule gives P_1(z)=z and P_(k+1)(z)=(1-z)P_k(z)+z. Therefore its error
+polynomial satisfies 1-P_(k+1)(z)=(1-z)(1-P_k(z)); induction proves
+1-P_k(z)=(1-z)^k for EVERY positive integer k. Substitute z=a_u*h and
+multiply by a to obtain the representation and error above. The binomial
+expression follows as a theorem AFTER admission and is then available for
+cost accounting. If the detected rule, seed or boundaries fail admission,
+numerical agreement at finitely many arities is not a universal certificate.
+
+Identifiability also needs evidence. For h=delta all columns coincide, so
+only the sum of weights is identified. At u=1 write h=delta+z, with z
+supported at indices >=2. Through horizon N, h^(r-1) involves only powers
+z^j with j<=floor(log2 N); hence column rank is at most floor(log2 N)+1.
+Learning k independent weights in this setting requires N>=2^(k-1).
+Distinct spike references h=delta+t*delta_2 at x=2^(k-1) give a Vandermonde
+rank witness. Rank, sparse selection and protected replay must be recorded;
+observed training coefficients are not a theorem established by tests.
+
+3. ACTUAL INFORMATION AND CHARGED REPRESENTATION COSTS.
+
+Generic inverse coefficients come from complete finite divisor inversion:
+a(1)=1 and a(n)=-sum_(d|n,d<n)a(d)h(n/d). Generic h does not imply |a(n)|<=1.
+For h(n)=1 this inversion is actual Mobius, using complete divisor rows,
+not a prime or factor oracle supplied to the learner. An independent checker
+may compare it with prime-derived arithmetic. A generic representation does
+not by itself preserve the ordinary-zeta interpretation of an arbitrary h.
+
+Only the low inverse prefix a_u is used in the columns, but the reference h
+through the evaluation horizon and the complete divisibility geometry are
+also inputs. For actual h=1, put tau_m=1^m, tau_0=delta and
+D_m(t)=sum_(n<=t)tau_m(n). A column prefix is exactly
+
+ sum_(n_1,...,n_r<=u) mu(n_1)...mu(n_r)
+                              D_(r-1)(x/(n_1...n_r)).
+
+Here D_m counts ordered positive-factor tuples, including unit factors. It
+is an evaluated arithmetic object, not a free primitive. At a fixed root
+cutoff u^k<=x, tuple enumeration uses up to sum_(r<=k)u^r<=k*x terms before
+product aggregation, and every D_m evaluation has its own cost. Fixed-order
+divisor asymptotics are not automatically uniform when the order grows.
+
+The admitted coefficient norm is sum_r |c(k,r)|=2^k-1. For u=1 the columns
+are D_(r-1)(x). If x>=2^(k-1), each is >=2^(r-1), by independently choosing
+its factors from {1,2}. The fully charged unsigned prefix sum is therefore
+at least (3^k-1)/2. On a dyadic block X=2^m, safe u=1 arity k=m+1 has this
+large unsigned cost at every index in [X,2X), despite exact signed recovery.
+Its squared unsigned block majorant grows at least on the scale
+X^(1+2*log2 3), not at critical energy strength. Moving to the finite
+nonunit-factor basis replaces large binomial weights by signs but retains
+ordered-factorization terms; at n=2^m there are 2^(m-1) such terms although
+mu(2^m)=0 for m>=2.
+
+These are representation and unsigned-proof costs, NOT an unavoidable
+exponential algorithmic lower bound. Dynamic convolution can share powers:
+compute b=a_u*h and f_(r+1)=f_r*b starting at f_1=a_u. A basic dense divisor
+implementation costs O(k*x*log x) arithmetic operations plus reference,
+inverse-prefix, storage and exact bit costs. Binomial magnitudes require
+O(k) bits, not 2^k bits. For actual h=1, tau_m(n)<=m^Omega(n)<=m^(log2 n);
+analogous bounds with 2r-1 factors bound absolute column coefficients.
+For k=O(log x), coefficient bit lengths can be O(log x*log log x), with
+prefix summation and weights adding their costs. Arbitrary rational h can
+have arbitrarily large heights and denominators. Neither a short inverse
+prefix nor a high-arity identity is an RH gain with those costs suppressed.
+
+4. THE SEPARATE NONNEGATIVE POTENTIAL TARGET.
+
+For actual M(n)=sum_(d<=n)mu(d), define
+A(X)=sum_(n=X)^(2X-1)M(n)^2 and E(X)=A(X)/X^2, at dyadic integers X>=1.
+A separate learner fits a finite potential
+
+ V(X)=sum_t lambda_t * A_(F_t)(X)/ceil(X^(p_t)),
+
+where lambda_t>=0 are rational, p_t>=0 are rational, and F_t are declared
+component-prefix functions from specified arities and cutoff rules.
+Every square, term and normalizer is retained; the normalizer is the ceiling
+of the FULL rational power, not a separately rounded fractional factor.
+Exact comparisons or certified enclosures must determine each ceiling.
+Unavailable arithmetic is missing, not a successful case or a refutation.
+
+V is a finite nonnegative scalar at every scale where its defined arithmetic
+is completed. Its rules and coefficients must be fixed independently of
+X; explicit declared scale-dependent cutoffs are permitted as part of those
+rules. For each component comparison that uses a common reconstruction of
+both blocks, choose (u+1)^k>4X-1. If a potential rule changes the cutoff
+between X and 2X, V(2X) is evaluated from that rule at 2X: it must not silently
+be identified with a child component energy computed using the cutoff at X.
+The scalar telescope below is valid for any well-defined nonnegative V;
+component-level cancellations need their own exact treatment.
+
+The still-unproved target is: there exists a finite integer q0 such that
+for EVERY integer q>=q0 there exists a finite C_q>=0, independent of X,
+with, for EVERY dyadic integer X>=1,
+
+ E(2X)+V(2X)-E(X)-V(X)<=C_q*ceil(X^(1/q)).
+
+If a candidate additionally freezes a specific C_q law, that exact law must
+satisfy these quantifiers. Fitted constants at finitely many q do not supply
+unobserved constants or prove any all-scale assertion. Individual low-q
+failures do not refute an unknown q0; persistent or unbounded-q failures
+require separate justification.
+
+5. CONDITIONAL RH BRIDGE AND THE MISSING ARITHMETIC LEMMA.
+
+ASSUME the preceding all-scale target and V(X)>=0, finite at each dyadic X.
+For fixed q>=q0 telescope at X=2^J. Since ceil(2^(j/q))<=2*2^(j/q),
+
+ E(X)<=E(1)+V(1)
+             +2*C_q*(X^(1/q)-1)/(2^(1/q)-1).
+
+Thus A(X)=O_q(X^(2+1/q)). No uniform q-growth bound on C_q is needed for this
+cofinal inference; each q is fixed before taking X to infinity. A cofinal
+sequence of admitted positive exponents also suffices. Dyadic Cauchy then
+gives absolute convergence of the unfiltered Mellin integral of M for
+Re(s)>1/2+1/(2q). Its exact identity, initially Re(s)>1, is
+
+ Integral_1^infinity M(t)t^(-s-1)dt=1/(s*zeta(s)).
+
+Analytic continuation rules out ordinary zeros in those half-planes.
+Letting q tend to infinity and using ordinary functional symmetry gives RH,
+conditionally. These are the same unfiltered recovery dependencies used in
+critical_defect_proof.txt; arbitrary generic references do not acquire them.
+
+The representation theorem proves neither nonnegativity of the signed
+innovation nor its upper bound. All cross terms between component prefixes
+remain in their energies. Full divisor inversion is an identity, not a new
+signed-cancellation inequality. Even bounded generic inverses cannot give
+such a universal critical statement: take a(n)=1 and h(n)=mu(n), so a*h=delta;
+its prefix is floor(x) and its full signed defect is (28X^3-X)/3. This is a
+counterexample to generic transfer, not to the actual h=1 target.
+
+The missing lemma is the COMPLETE actual signed innovation bound, with the
+frozen nonnegative potential, exact rational ceilings, specified component
+cutoffs and a finite scale-independent constant at every sufficiently large
+q. A learned identity, a resource-limited finite pass, an unsigned expansion,
+or a successful fit to finitely many innovations does not establish it.
+Protected evaluations and an analytical proof attempt after the queue is
+frozen keep discovery, finite evidence and global arithmetic conclusions
+separate. No global critical signed bound or RH proof is claimed here.
+
+6. SUPPLIED ACTUAL COMPONENT ENVELOPES, NOT SIGNED INNOVATION CONTROL.
+
+For actual h(n)=1 and ANY truncation u>=0, |a_u(n)|<=1 because a=mu.
+The rth component has coefficient function f_r=a_u^r*1^(r-1), r>=1.
+Taking absolute values in convolution therefore gives
+
+ |f_r(n)|<=d_(2r-1)(n),  d_m=1^m.
+
+For m>=1, its summatory function obeys
+
+ sum_(j<=n)d_m(j)<=n*H_n^(m-1)<=n*(1+log n)^(m-1),
+
+where H_n=sum_(j<=n)1/j and log is natural. To prove the first inequality,
+fix the first m-1 factors in an ordered m-tuple and bound the number of
+last factors by n divided by their product. Extending each of the first
+factor sums to 1,...,n gives H_n^(m-1). For m=1 there are no first factors
+and the bound is exactly n. Thus the component prefix F_r satisfies
+
+ |F_r(n)|<=n*(1+log n)^(2r-2).
+
+In particular r=1 is valid: |F_1(n)|<=min(u,n)<=n. No lower bound on u or
+arity-dependent cutoff assumption is needed for these envelopes. Squaring
+and summing over n=X,...,2X-1 yields, for EVERY integer X>=1,
+
+ A_(F_r)(X)<=4*X^3*(1+log(2X))^(4r-4).
+
+Since ceil(X^p)>=X^p for rational p>=0, a potential feature obeys
+
+ A_(F_r)(X)/ceil(X^p)
+              <=4*X^(3-p)*(1+log(2X))^(4r-4).
+
+For FIXED r and p>=3 this is globally subpower: for every epsilon>0 a
+finite constant K_(r,p,epsilon), independent of X and u, bounds the feature
+by K_(r,p,epsilon)*X^epsilon for all X>=1. Indeed each fixed logarithmic
+power times X^(-epsilon) is bounded on [1,infinity). A finite nonnegative
+combination of such features has the same property. This asserts neither
+a uniform constant bound at p=3 nor a particular epsilon-dependent constant
+law; r=1 is the harmless zero-log-degree boundary case.
+
+If r or the number or weights of potential terms increases with X, the
+logarithmic degree and every other growing cost must be charged. The fixed-r
+subpower statement is not uniform in an undeclared growing arity. These are
+supplied universal norm estimates, not critical estimates inferred by the
+learner. Even a nonnegative subpower potential does not bound the COMPLETE
+actual signed innovation E(2X)+V(2X)-E(X)-V(X); that arithmetic premise remains
+unproved.

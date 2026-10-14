@@ -1,0 +1,16 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_bounds_proved": 0,
+  "compiled_hadamard_pairs": 16,
+  "development_operations": 3262808,
+  "elapsed_seconds": 0.012065483024343848,
+  "generated_pair_obligations": 10,
+  "new_source_evaluations": 0,
+  "operations": 1012808,
+  "separate_diagonal_routes_ruled_out": 10,
+  "signed_candidates_disproved": 0,
+  "status": "ACTUAL_PRIME_PROOF_PROFILES_AND_PAIR_REDUCTIONS_COMPLETE",
+  "total_operations": 4275616,
+  "total_with_parent_operations": 1163242223,
+  "whole_signed_bound_proved": false
+}

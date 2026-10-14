@@ -1,0 +1,30 @@
+Complete fourteen-atom regional Gram scope
+
+The fixed atom order is prefix, half, even, mod3one, prime, followed by all
+nine divisor contrasts in theta 1/3,1/2,2/3 and power -1,0,1 order.
+Every region includes every original t block. The prefix appears once.
+Two full 14x14 PSD matrices include all formerly separate legacy and joint
+channels, and every legacy/divisor cross. There is no data-driven selection.
+
+The prior four-matrix cone embeds by summing two congruence embeddings in
+each region: legacy indices 0..4 and joint indices (0,5,...,13). Prefix
+matrix entries on coordinate0 add. Every old full formal polynomial is
+preserved, because both prefix atoms are exactly the same polynomial.
+
+The formal constant vector is five zeros followed by nine -1/2 entries.
+Thus c^T G c=(1/4) sum_{i,j=5}^{13} G_ij. This includes both orientations
+of each DD cross and is nonnegative for PSD G. Parent and child counts
+are X and 2X, so fixed matrices give an O(X) charge. Legacy/divisor
+crosses have zero formal scalar charge. Difference directions may have
+zero constants even for nonzero matrices. The old gamma=0 necessary
+q>1 gate therefore remains necessary under its established fixed-template
+scalar asymptotic hypotheses; it is not a sufficient uniform bound.
+
+A supplied exact four-group separator may fail PSD for the complete cone.
+The diagnostic must first admit that old separator, reconstruct all cross
+polynomials exactly, and use only supplied exact moments. Missing nonzero
+aggregated coordinates imply unknown, never an assumed zero. Exact negative
+quadratic directions invalidate that witness only. Even complete finite PSD
+moments do not prove a uniform signed bound, larger cone infeasibility beyond
+the admitted finite domain, or RH. Higher-degree atom/localizer completion
+would be a separate preregistered cone and requires its own full domain.

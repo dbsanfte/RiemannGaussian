@@ -1,0 +1,129 @@
+AUTONOMOUS AUXILIARY-STATE AND BOUND SYNTHESIS — stage034
+
+The user's concern and the resulting change
+The preceding moment searches selected applications of arguments supplied by
+analysts. That did not demonstrate that the detector could invent the missing
+arithmetic mechanism. This stage adds a measurable narrower capability: search
+for the auxiliary state itself, learn candidate state laws, synthesize a bound
+certificate, and check the complete all-index argument independently.
+
+Completed study: multiscale-bound-results/pilot-001
+Runner: run_multiscale_bound_discovery.py (completed once, do not restart)
+Producer: multiscale_bound_discovery.py
+Independent checker: check_multiscale_bound_discovery.py
+Source adapter: multiscale_bound_sources.py
+Protocol: multiscale_bound_discovery_protocol.txt
+Detailed scope: multiscale-bound-results/pilot-001/capability_assessment.json
+
+This capability does NOT yet establish a credible route to the joint signed
+arithmetic bound. Actual core closure remains open. The original stage033 input
+candidate10_moment_region_obligation.json remains authoritative and unchanged.
+No component, opposite drift, transport error or any of its144bindings is paid
+or replaced by this study. Whole-core and RH flags remain false.
+
+What the executable discovers
+Given only a scalar observation callable x(n) and an integer base b, it starts
+with x(n) and generates sections x(b^k*n+r). It proposes rational linear state
+laws. Validation and independently produced all-index counterexamples cause
+new sample constraints and structural state expansion. No successful companion
+state, transition matrix, metric or bound exponent is passed to the generator.
+
+From proposed transitions T_r it forms A=sum_r T_r. It automatically discovers
+the target's observable row space R and exact reduced dynamics R*A=L*R. This
+avoids demanding small sums of auxiliary coordinates invisible to the target.
+It searches rational alpha=p/q and positive definite Q satisfying
+ (L^q)^t Q L^q <= b^(2p) Q.
+Finite Gram sums and rational Stein equations construct Q. Candidate exponents
+include square, cube and sixth roots, without rounded eigenvalue proofs.
+
+For recursive benchmark definitions, a separate implementation proves the
+state laws on the COMPLETE reachable source space. It checks leading-zero/unit
+consistency, exact observable recovery, strict PD, PSD, all R^t Q R crosses,
+finite phases, and base-digit recovery of EVERY integer prefix. The general
+induction/block theorem is a supplied mathematical rule; its constructions,
+applications and certificates are searched by the executable. This is a
+specific finite-section grammar, not an unrestricted mathematical inventor.
+
+Frozen withheld experiment
+Producer, checker, adapter and protocol bytes were frozen before eleven source
+instances were materialized. The generator received anonymous source callables;
+source definitions went only to evaluation and independent proof checking.
+Expected categories were opened after all benchmark proof attempts. The source
+designer knew the grammar: this is controlled implementation-level discovery,
+not analyst-blind novelty or an estimate of RH success probability.
+
+Ten of eleven benchmark cases received checked all-integer prefix bounds.
+Eight were sublinear: two alpha0 logarithmic bounds, three square-root bounds,
+two alpha2/3 bounds and one alpha5/6 bound. All eight failed to close when
+auxiliary-state generation was disabled. Two noncancelling controls received
+linear bounds in both searches. No historical novelty is claimed.
+
+For example challenge011 generated four source sections, their transition
+matrices, a four-dimensional observable projection and the exact metric
+ Q=diag(20,20,5,5).
+The independent certificate establishes
+ |sum_(0<=n<N) x(n)|^2 <= (349056/25)*N, every integer N>=1,
+for THAT private recursive source. Neither this formula nor Q was supplied as
+an answer to the generator. It is not a bound for mu or the zeta core.
+
+The long-transient control initially aliased a simple law. Universal checking
+found four actual-index counterexamples (n6560,2186,728,242), and a later finite
+counterexample forced further structural expansion. The run then reached its
+2,000,000 source-index cap with six auxiliary states. This is explicitly
+unresolved; no false finite fit was promoted and the failure was not rerun.
+
+Actual arithmetic result and important exposure limit
+The adapter reads the previously independently verified full four-mode core
+ f=(9/2)K*(mu*mu)-(9/2)K*(mu*mu_(2/3))
+     -R_u*K*mu_(2/3)-(9/2)mu, K(n)=n^(-1/3),
+with x(n)=f(n+1). The unit and complete signed coefficients are retained.
+This is a DIRECT full-core alternative; it does not numerically isolate Z033.
+The inherited identity g=f-e, all paid terms and opposite drifts remain in the
+unchanged parent. A future successful direct bound would still need its exact
+transfer to the requested parent norm and exponent. No such transfer is claimed.
+
+Both base2 and base3 searches hit the ten-state cap without a closed state law.
+Crucially, their actual queries covered only original coefficients1..63 and
+1..71 (48 and61 distinct queries). They stopped before large-scale validation.
+The archive's horizon262143 is availability, NOT achieved scale exposure.
+The learner's rational proposal cap256 also restricts its fitted laws; a failure
+is not a certified numerical rank, arithmetic impossibility, or larger-grammar
+obstruction. All archive data were previously observed, with no fresh-range claim.
+
+Thus the run demonstrates new bound-synthesis capability on recursive sources,
+but supplies ZERO new global arithmetic relations and ZERO core bound payments.
+It would be misleading to present the benchmark count as evidence that the
+current detector is powerful enough to solve the joint remainder.
+
+Checks and resources
+Owned development suites passed once: producer8, source adapter7, checker18;
+33 distinct tests, no failures. A post-suite producer edit added observation
+logging only; proof/search logic was unchanged. Checker tests include a
+24-state long-transient alias, cubic/sixth phases, latent source aliases,
+observable quotient, zero-source span, unit errors, PSD zero-pivot crosses,
+complete projected source costs and false actual-core promotion.
+
+The frozen actual run exited0 (session71940). Exact certificates were checked
+during the run; no additional unchanged suite or study was repeated.
+Search work615560; source/checker work12841805; study total13457365 proxyops.
+Development5508045, inclusive18965410. Prior separate034 symbolic review217856
+gives stage034 work19183266 if included. These are declared work proxies.
+Run elapsed6.507s; peak704032KiB, within16GiB. No runtime model calls or hashes.
+All frozen implementation/source bytes and the accepted parent were checked
+unchanged at completion. The original arithmetic source was reused, not rebuilt.
+Two existing Sol6.1 agents handled the substantial independent adapter/design
+and mathematical-checker tasks; both completed and stopped edits.
+
+Next substantive capability target
+The bottleneck is now explicit: invent and prove arithmetic state laws that
+can retain prime/cofactor information as their parameters change. Increasing
+the same finite-section cap alone would not establish suitability for this
+purpose. Candidates may require parameter-dependent states, products, signed
+pairings or growing prime/cofactor families. These extensions must generate
+their constructions and attempt their proof obligations, with exact original
+source recovery. A primitive source identity and a numerical recurrence fit
+remain different evidence types. Further calibration cannot replace a bound
+on the actual complete arithmetic target.
+
+The current experiment and its limits are saved; the research goal remains
+active. No all-scale signed zeta bound or RH proof has been obtained.

@@ -1,0 +1,431 @@
+FINITE MOMENT EXPOSURE, CONDITIONAL HEAD COST, AND SIGNED STATE 071
+================================================================
+
+Scope and disposition
+---------------------
+This independent review reads MOBIUS_DIVISOR_CORRECTION_HANDOFF.txt,
+MOBIUS_DIVISOR_CORRECTION_REVIEW_070.txt and relevant source definitions
+in MOBIUS_CONVOLUTION_SCALE_REVIEW_069.txt. It runs no scientific array,
+optimizer, runner or historical test and writes only this prose file.
+All prior artifacts are preserved. There is no claim to have proved RH,
+an all-scale Mertens invariant, or complete signed head control.
+
+Three results are proved here. The proposed exposure frontier is an exact
+optimum of the stated affine exponent model, with explicit rational
+primal and dual certificates. Its exponent has a complete same-source
+conditional aggregate cost, including floor/ceiling constants and rank
+bases. A separate disjoint-interval argument gives a uniform conditional
+price for the two short linear terms, using a fractional source-step norm.
+The remaining signed floor state is identified exactly with a current-rank
+joined Mertens functional after a paid separable subtraction. In particular,
+the moment frontier is not a frontier for the entire source or for RH.
+
+1. Finite moment operator and explicit integer ranks
+---------------------------------------------------
+Let 0<=sigma<1, beta=1-sigma, C>=1, and
+
+ A_sigma=(2-sigma)/(1-sigma).
+
+The finite divisor argument of070 gives, for integer T>=u>=1,
+
+ |H_mu(u)| <= (u+1)/T + C A_sigma u^(-beta),
+ H_mu(u)=sum_(n<=u)mu(n)/n,                           (1)
+
+provided |M(t)|<=C t^sigma for every integer 1<=t<=T. This is a conditional
+finite lemma. Its proof uses the exact complete divisor identity through
+T, pointwise |mu|<=1, and those Mertens premises. It does not use an
+infinite reciprocal tail. Every added premise remains unpaid unless a
+separate uniform theorem or an already closed induction licenses it.
+
+For integer R>=1 and rational parameters put
+
+ u=floor(R^theta), v=floor(R^(1-theta)),
+ T_u=ceil(R^gamma_u), T_v=ceil(R^gamma_v),
+ 0<theta<1,
+ theta<=gamma_u<=rho, 1-theta<=gamma_v<=rho<1.        (2)
+
+These capacities are feasible precisely when rho>=1/2 and
+1-rho<=theta<=rho. The formulas below do not describe a feasible
+program when rho<1/2. The cuts satisfy (u+1)(v+1)>R exactly, because
+each incremented floor is strictly larger than its underlying power.
+Thus the original long-long support term vanishes with the required
+strict gate. Also T_u>=u and T_v>=v.
+
+The elementary bounds floor(x)>=x/2 for x>=1 and ceil(x)>=x give
+
+ |H_mu(u)| <= 2 R^(theta-gamma_u)
+              +2^beta C A_sigma R^(-beta theta),
+ |H_mu(v)| <= 2 R^(1-theta-gamma_v)
+              +2^beta C A_sigma R^(-beta(1-theta)).  (3)
+
+Consequently, if kappa_u and kappa_v obey the four indicated lower
+exponent constraints, a common rational upper constant is
+
+ B_sigma(C)=2+2 C A_sigma,
+ |H_mu(u)H_mu(v)|<=B_sigma(C)^2 R^(alpha-1),
+ alpha=1+kappa_u+kappa_v.                           (4)
+
+Here kappa_u>=theta-gamma_u and kappa_u>=-beta theta,
+and the analogous two inequalities hold for v. In particular every term
+of the expanded price remains present:
+
+ B_sigma(C)^2=4+8 A_sigma C+4 A_sigma^2 C^2.
+
+There is an explicit uniform rank base. Choose an integer B>=3 satisfying
+B^(1-rho)>=2. For every R>=B,
+
+ T_u,T_v <= ceil(R^rho) <= R/2+1 < R.                (5)
+
+For rho=a/b in lowest terms, the base inequality can be checked without
+floating powers by B^(b-a)>=2^b. For a rational exponent a/b, a floor
+cut is certified by u^b<=R^a<(u+1)^b; a ceiling domain is certified by
+(T-1)^b<R^a<=T^b. Bases R<B must be retained explicitly. Their declared
+arithmetic scope is not automatically smaller rank merely because the
+formula still returns a number.
+
+2. Exact optimum of the affine exponent model
+---------------------------------------------
+The objective is to minimize alpha=1+kappa_u+kappa_v subject to the
+four lower exponent constraints and the capacities in(2). Summing the
+two moment constraints gives the first dual certificate
+
+                 alpha>=1-beta=sigma.              (6)
+
+Summing the two exposure constraints and using gamma_u,gamma_v<=rho
+gives the second certificate
+
+                 alpha>=2-2rho.                    (7)
+
+These are exact linear combinations with coefficient1. More explicitly,
+the sum of the exposure facets
+
+ kappa_u-theta+gamma_u>=0,
+ kappa_v+theta+gamma_v-1>=0,
+ rho-gamma_u>=0, rho-gamma_v>=0
+
+is kappa_u+kappa_v-1+2rho>=0. No approximate dual stationarity is used.
+
+A matching rational feasible point is
+
+ theta=1/2, gamma_u=gamma_v=rho,
+ kappa_u=kappa_v=max(1/2-rho,-beta/2).
+
+It proves, rather than assumes, the exact model optimum
+
+              alpha_*=max(sigma,2-2rho),            (8)
+
+for 1/2<=rho<1 and 0<=sigma<1. A rational linear solver can discover
+the primal point; the two displayed sums independently certify its
+optimality. A checker should derive the objective from its actual input
+facets, rather than be given(8) as its expected answer.
+
+Balance is sufficient but need not be the unique optimum. If
+rho>=1-sigma/2, both moment facets can be active throughout the interval
+
+ [1-rho/(2-sigma),rho/(2-sigma)] intersect [1-rho,rho].
+
+If rho<=1-sigma/2, both exposure facets can be active throughout
+
+ [rho/(2-sigma),1-rho/(2-sigma)] intersect [1-rho,rho].
+
+With gamma_u=gamma_v=rho these intervals describe the respective
+optimal plateaus. The threshold rho=1-sigma/2 is exactly where the two
+frontier values meet. At sigma=1/2 a price with exponent1/2 needs
+rho>=3/4 within this model. This is an auxiliary arithmetic exposure
+cost, not a new proof that the premises at that exposure hold.
+
+There is also an exact secondary optimum if the program minimizes
+z=max(gamma_u,gamma_v) after fixing alpha=alpha_*. Add the facets
+z-gamma_u>=0 and z-gamma_v>=0. Their sum with the two exposure
+facets proves alpha>=2-2z, hence z>=(2-alpha_*)/2. When
+alpha_*=2-2rho this lower bound is rho and is attained at the balanced
+primary point. When alpha_*=sigma it is1-sigma/2 and is attained at
+theta=1/2,gamma_u=gamma_v=1-sigma/2. Therefore the lexicographic
+secondary optimum is
+
+                 z_*=min(rho,1-sigma/2).            (8a)
+
+This certificate uses only rational facet sums. In the moment-led case,
+secondary minimal exposure forces theta=1/2: primary optimality makes
+both moment facets equalities, and the exposure constraints require
+gamma_u>=(2-sigma)theta and gamma_v>=(2-sigma)(1-theta).
+In the exposure-led case the primary optimal theta plateau can persist.
+
+The certificates prove optimality only for the separable pricing model
+based on(1). They are not lower bounds on actual ordinary-mu values,
+not a barrier to another coupled moment identity, and not a frontier for
+the full signed remainder or another detector grammar.
+
+3. Complete aggregate separable cost for the original source
+-----------------------------------------------------------
+Keep the original joined source and its coalesced step coefficients
+
+ g(d)=sum_T a_T 1[d<=T], D=floor(4N/p),
+ M1=sum_T |a_T|T,
+ b_j=sum_T a_T[floor(T/j)-floor(T/(j+1))].
+
+For any 0<alpha<=1, exact quotient counting gives
+
+ sum_(j>=1) j^(1-alpha)
+             [floor(T/j)-floor(T/(j+1))]
+ =sum_(n<=T)floor(T/n)^(1-alpha)
+ <=T^(1-alpha) sum_(n<=T)n^(alpha-1)
+ <=T/alpha.                                        (9)
+
+For alpha=1 the same statement is the exact identity T. Absolute a_T
+are taken only after the source join. For any head subset,
+
+            sum_j j^(1-alpha)|b_j|<=M1/alpha.       (10)
+
+Let R_j=floor(D/j). On nonbase rows R_j>=B, use the cuts(2) with that
+radius. Since R_j>=D/(2j) for j<=D and alpha<=1, equations(4),(10)
+prove
+
+ sum_nonbase |b_j H_mu(u_j)H_mu(v_j)|
+ <= [2^(1-alpha)/alpha] B_sigma(C)^2
+                         D^(alpha-1) M1.           (11)
+
+A completely rational, slightly weaker coefficient is
+2 B_sigma(C)^2/alpha. The optimum(8) always lies in(0,1]: positivity
+comes from rho<1 even when sigma=0. Thus(11) covers that entire frontier.
+It is incorrect to use the earlier factor1/sigma when sigma=0; the
+quotient exponent actually being paid here is alpha>0.
+
+The same admitted six-floor source has the unconditional bound
+
+ M1<=2D+12N(1/p+r/q)(1+log(max(1,D))).               (12)
+
+Substitution in(11) gives the explicit parameter dependence. For fixed
+p,q and bounded r, D has order N, yielding
+
+ O_(sigma,rho,p,q)((1+C)^2 N^alpha log(2N))          (13)
+
+for the separable part, conditional on every finite Mertens premise
+through its T_u,T_v. If p or q vary with N, the D and parameter factors
+in(11),(12) must be retained; replacing D by N with a universal constant
+is not licensed. The source norm is M1, not core_inverse or an empirical
+coefficient norm.
+
+The auxiliary queries are generally larger than the polynomial cuts.
+For example theta=1/2, sigma=1/2, rho=3/4 uses radius about R^(3/4)
+to price factors querying about R^(1/2). A domain-T implementation does
+not inherit the result if it declares only T=u or max(u,v).
+
+There is a distinction between rank bases and finitely many N bases.
+Rows with R_j<B can occur at every large N if the head extends too far
+in j. A safe condition removing all such rows from a head j<=H is
+floor(D/H)>=B. For a fixed-p square-root head this holds for every
+sufficiently large N, so finitely many N bases suffice. With arbitrary
+parameter-dependent p or a different head, it must be checked explicitly.
+Otherwise add the complete base-row price to(11), for example the exact
+base moment values times |b_j|. Declaring a bounded row radius is not
+itself a bound on the total number or mass of those rows.
+
+4. A new uniform law for the short signed branches
+-------------------------------------------------
+The two short sums are L_j(w)=sum_(n<=w)mu(n)kappa_j(n). Their naive
+head price is of order D^(1/2)H^(1/2) at balanced cuts. There is a
+different conditional law that uses cancellation in the short branches,
+without invoking the unpaid signed floor remainder.
+
+Let w_j be any sequence of nonnegative integer cuts on consecutive
+rows j>=1. In particular both w_j=floor(R_j^theta) and
+w_j=floor(R_j^(1-theta)) are admitted for R_j=floor(D/j).
+Assume |M(t)|<=C t^sigma at all their endpoint arguments, which are at
+most W=max_j w_j. For a fixed source step T put
+
+ A_j=floor(T/j),
+ U_j=min(w_j,A_j), V_j=min(w_j,A_(j+1)).
+
+Its contribution to L_j is a_T[M(U_j)-M(V_j)]. The interval(V_j,U_j]
+is either empty or contained in the ordinary quotient interval
+(A_(j+1),A_j]. These quotient intervals are pairwise disjoint, so the
+nonempty capped intervals are disjoint even if the cuts fluctuate.
+For nonincreasing cuts one also has V_j>=U_(j+1), but that stronger
+inequality is unnecessary. The disjointness remains true across integer
+floor changes, empty intervals and arbitrary truncation of the head.
+
+For an integer splitting point J>=1, the first J intervals therefore
+cost at most
+
+ 2 C T^sigma sum_(j<=J)j^(-sigma)
+ <= [2C/(1-sigma)] T^sigma J^(1-sigma).              (14)
+
+All later intervals have total length at most floor(T/(J+1))<=T/J.
+Pointwise |mu|<=1 prices their total absolute contribution by that length.
+Consequently the source-step head variation is at most the sum of(14)
+and T/J. It is also at most T by disjointness alone.
+
+Put delta=1/(2-sigma), so 1/2<=delta<1, and
+J_*=T^((1-sigma)/(2-sigma)) C^(-delta). If J_*>=1 take
+J=ceil(J_*)<=2J_*; if J_*<1 use the bound T instead. In both cases,
+
+ sum_j |M(U_j)-M(V_j)|
+ <=K_sigma C^delta T^delta,
+ K_sigma=1+4/(1-sigma).                             (15)
+
+This rational K is a conservative upper coefficient; the direct sharper
+coefficient in the first case is 1+2^(2-sigma)/(1-sigma). In the second
+case J_*<1 implies C>T^(1-sigma), so T<C^delta T^delta exactly.
+
+Define the fractional source-step norm
+
+                  M_delta=sum_T |a_T|T^delta.
+
+Joining the source first, then applying(15), proves
+
+ sum_j |L_j(w_j)| <= min(M1,K_sigma C^delta M_delta).
+                                                               (16)
+
+Thus the two short branches cost at most twice this common bound.
+The Mertens arguments in this theorem are at most W, not T or the
+source-step horizon. They are licensed by the moment domains when
+those domains dominate the cuts. The law is uniform in all source steps,
+cut choices and head lengths.
+
+This is a genuine new conditional price for a previously unpaid part,
+but its source norm must be charged. For delta<1 one has
+T^delta>=D^(delta-1)T when T<=D. Hence it would be an error to infer
+M_delta<=D^(delta-1)M1. The true inequality goes in the opposite
+direction. An arbitrary source may place substantial mass at small T.
+
+There is a direct source-specific envelope. For integer 0<=y<D,
+the tail cutoff contributes at most2 y^delta, with 0^delta=0. For a
+single floor atom floor(Z/d), its steps above y satisfy
+
+ sum_(T>y) T^delta[floor(Z/T)-floor(Z/(T+1))]
+ =sum_(n<=floor(Z/(y+1)))floor(Z/n)^delta
+ <=Z^delta sum_(n<=floor(Z/(y+1)))n^(-delta)
+ <=[Z/(1-delta)](y+1)^(delta-1).                    (17)
+
+The exact equality is another quotient count, including endpoint floors.
+Summing the six atoms with their signed-source coefficient magnitudes
+only after the join gives
+
+ M_delta<=2 y^delta
+       +[12N(1/p+r/q)/(1-delta)](y+1)^(delta-1).    (18)
+
+For y>=D, g is identically zero and the norm is zero. Equation(18)
+is log-free and uniform, including y=0. For fixed parameters and y
+comparable with N it is O(N^delta), so(16) yields a conditional
+O_sigma(C^delta N^delta) short-branch price. At sigma=1/2 the exponent
+delta is2/3, not1/2. Moreover for a square-root head and such large y
+the short branches already vanish. There is no global square-root
+short-branch theorem hidden in this estimate: at smaller y the second
+term in(18) can dominate, and the unconditional cut-length bound may
+be better. Retain the minimum of these sound prices.
+
+A further exact localization is useful for unequal cuts. A branch
+vanishes on row j whenever (j+1)w_j<=y. On a head j<=H, the sufficient
+conditions are respectively
+
+ y>=2D^theta H^(1-theta),
+ y>=2D^(1-theta)H^theta.                            (19)
+
+Both conditions follow from (j+1)j^(-theta)<=2j^(1-theta).
+Only source steps with T<(j+1)w_j can contribute to that short branch.
+Neither branch nor this localization is allowed to remove any term from
+the independent floor remainder. Equations(16),(18),(19) are additional
+pricing choices; they do not alter the original joined identity.
+
+5. What is still in the signed floor state
+-----------------------------------------
+Keep exactly the original kernel and signed state
+
+ K_j(t)=sum_A h_(j,A)floor(A/t)=b_j/t+e_j(t),
+ E_j(u,v)=sum_(a<=u,b<=v)mu(a)mu(b)e_j(ab),
+ J_j=L_j(u)+L_j(v)-E_j(u,v),
+ c_j=d_j-b_j H_mu(u)H_mu(v)+J_j.                    (20)
+
+In particular all common-prime factors, repeated factors, units and
+pairs with ab>R_j remain. At such products the zero original kernel
+is exactly the sum of its reciprocal term and floor residual. Their
+separate deletion would change(20).
+
+There is an exact diagnostic reduction which specifies the current
+rank carried by J_j. From kappa_j(n)=sum_A h_(j,A)1[n<=A],
+
+ c_j-d_j=sum_A h_(j,A)M(A),
+ J_j=sum_A h_(j,A)M(A)+b_j H_mu(u)H_mu(v).           (21)
+
+The M(A) arguments can reach R_j, even though every arithmetic factor
+used to evaluate the bilinear polynomial is below max(u,v). Equations
+(11) and(21) imply that uniform head control of J and uniform control
+of the original joined Mertens functional are equivalent up to the
+proved separable price. This is not a bound for J; it records precisely
+what subtraction has and has not removed.
+
+For the actual admitted source N=15k,y=16k,p=3,q=5,r=1,j=1,
+
+ kappa(n)=1_(8k,10k](n)-1_(16k,20k](n), b=-2k,d=0.
+
+For fixed feasible exponents(2), both cuts are below8k for sufficiently
+large k, so both short branches vanish. The full remaining signed state
+is then exactly
+
+ J_1=-E_1
+ =M(10k)-M(8k)-M(20k)+M(16k)
+                        -2k H_mu(u)H_mu(v).        (22)
+
+All four nonzero Mertens endpoints eventually exceed the auxiliary
+domains T_u,T_v<=ceil((20k)^rho), since rho<1. Thus(22) cannot be
+priced using those finite Mertens premises by direct substitution.
+Under the paid separable rule, an O(k^alpha) remainder theorem is
+equivalent to an O(k^alpha) estimate for this current-rank interval
+combination. Boundedness |e_1|<=4 only yields the linear absolute
+price4uv. That fact leaves the desired signed cancellation untouched.
+
+This exposes a concrete failure of a proposed rank transfer: replacing
+J by a smaller-rank Mertens leaf because its two factor indices are
+small is unsound. It does not prove that an independent signed lemma
+for J is impossible. It tells such a lemma the current-rank oscillation
+it must control. The source is actual and joined, not an arbitrary
+surrogate single floor atom.
+
+The new short-branch theorem does not solve this obstruction: in(22)
+the short branches are zero already. On that source, all improvement
+after the separable frontier must come from signed floor cancellation,
+a coupled energy, or another arithmetic identity. Full local ideal
+correction of E to its exact value would again be finite target
+reconstruction, unless that value's growth is separately bounded.
+
+6. Credible proof-program use and the remaining invariant
+--------------------------------------------------------
+A uniform detector can correctly use this work as a conditional backend:
+it chooses rational theta,gamma_u,gamma_v,kappa_u,kappa_v within declared
+capacities; an independent checker verifies the literal affine facets,
+the exact cuts and domains, the support gate, the base test and the
+quotient/source prices. It must retain every required Mertens family,
+the complete C polynomial in(4), the signed J node and any base-row
+price. The displayed optimum is a theorem about this backend, not a
+value that should be supplied to the search as a target.
+
+The actual proof state now has useful paid conditional operators:
+finite reciprocal moments, aggregate separable cost, and the optional
+disjoint-interval short-branch cost. They are meaningful mathematical
+reductions, although the lemmas were supplied by the reviewer rather
+than discovered from numerical finite optimization.
+
+For a simultaneous all-scale proof, every M(t) premise through T must
+belong to an explicit state family and have smaller common rank or a
+paid base. The original source geometry, the arithmetic query radius,
+and the auxiliary pricing radius are three distinct quantities. A
+strict row-rank statement T<R_j needs reconciliation with the common
+rank used for the complete N,y,p,q,r head family, particularly if these
+parameters vary. The current-rank geometric endpoints in(21),(22)
+must remain visible.
+
+The normalization and invariant constants cannot be chosen after
+finite data. Even the separable part carries a positive quadratic term
+in C. Enlarging C worsens that term rather than automatically closing
+an induction. The short-branch price adds C^delta and its own fractional
+source norm; a rational upper envelope may be used if a polynomial
+invariant is required, but its cost must be stated. Signed J or coupled
+energy control, Mertens closure, filled-core transfer and the ordinary
+zeta/RH transfer remain separate obligations.
+
+The frontier(8) says how cheaply one supplied moment decomposition can
+be paid when the relevant finite Mertens premises are available. It
+provides no mechanism that establishes those premises. The whole
+all-scale signed goal therefore remains OPEN after the stronger partial
+cost laws proved in this review.

@@ -1,0 +1,165 @@
+PRIMITIVE STATE BALANCED CONE SEARCH — PUBLICATION021
+2026-10-09. Completed checked experiment; no uniform arithmetic bound or RH proof.
+
+Outcome
+
+Archive: cancellation-arithmetic-results/primitive-state-balanced-cone-search-001.
+The search accepted 51 steps, all on their first Armijo trial, and stopped at
+its declared work reservation boundary before step 52. The common normalized
+objective fell from 1 to 0.9763483049259043, about a 2.36517% decrease. Each of
+the three raw block penalties decreased relative to its starting value:
+
+  block                  initial                 final
+  scalar                 1304.335939201048        1273.4860750731293
+  C (storage PSD)        0.04457186946487379      0.0435176691994082
+  H (parent PSD)         3.017418173377691        2.946050801352043
+  unweighted total       1307.3979292438905       1276.4756435436807
+
+This corrects the previous experiment's tradeoff between aggregate scalar and
+matrix defects, but the progress is modest. It does not establish convergence.
+The exact endpoint satisfies all 5641 original equations and fails finite cone
+feasibility: 227 negative square weights, two negative slacks and two indefinite
+matrices. The total negative scalar count remains 229, with no negative split
+relation weights. The minimum scalar is coordinate 64, about -21.57932689860604.
+Slacks 1592 and 1595 are about -3.440435249658825 and -0.07714856472305387;
+both worsened slightly despite the smaller aggregate scalar penalty.
+
+full_child is the zero matrix and exactly PSD. full_parent and storage_K both
+fail at Schur pivot 3. Their independently checked exact rational witnesses
+have negative quadratic values about -6.613726642445214 and -14.03340615093521.
+The witnesses differ across experiments, so those unnormalized values should
+not be used to compare how far the matrices are from PSD.
+
+Candidate hash:
+664e74c28e630c274d0480fa67cf2fb6c37d52e74241462c8697eb7163136ecf
+Original candidate coefficients reach 712 bits; free coordinates reach 535 bits.
+The complete exact vectors and witnesses are retained in the archive.
+
+Purpose and method
+
+Publication020 reduced the sum of cone defects by about 99%, but its matrix
+penalty increased. This experiment instead minimizes the worst of three
+normalized penalties: the scalar nonnegativity defect, the PSD defect of C,
+and the PSD defect of H=P+4C. Each penalty is half the squared distance to
+its cone. Its fixed normalizer is the maximum of its initial numerical value
+and 2^-40. The common objective is max(p_scalar/b_scalar, p_C/b_C, p_H/b_H).
+
+Positive normalizers preserve the zero set of the exact cone-distance problem.
+A decreasing common objective does not imply each raw penalty decreases at
+every step. Every component is retained in the trace and publication report.
+Numerical penalties and gradients are proposal data, never exact cone proofs.
+
+The proximal model minimizes max_i(r_i+g_i dot d)+||d||^2/(2alpha).
+Its three-variable simplex dual is searched over three vertices, three edges
+and the interior. Numerical weights are quantized to a feasible 2^-240 dyadic
+simplex grid and re-scored. Each halved step recomputes the model. Exported
+directions, face decisions, model gaps and KKT residuals are independently
+checked as finite-record calculations. No true-gradient or QP certificate is
+claimed. The mandatory numerical gap tolerance is 1e-40 times a declared scale
+with unit floor. Numerical stationarity is not an infeasibility certificate.
+
+The initial step is the reciprocal of an eight-step weighted curvature power
+estimate, clamped to 2^-900..2^900. Up to 96 iterations use at most three trials
+and the Armijo condition F_new<=F_old-||d||^2/(8alpha). Accepted steps can only
+retain or shrink the step size. This may be conservative when one block
+dominates the curvature estimate. There is no convergence guarantee from a
+finite trial or iteration limit. Near-parallel Gram subtraction can return
+UNKNOWN under the declared numerical consistency policy.
+
+Exact seed and acceptance
+
+The affine chart remains publication017's independently licensed chart:
+1957 original variables, 1224 projected variables, rank 779 and 445 free
+coordinates. The source equations, target, descriptors and cones are unchanged.
+The publication020 positive dyadic scales are reused without computing new
+homogeneous column responses or claiming certified column norms.
+
+The warm seed is the exact publication018 base f0 plus D times publication020's
+saved z. The 535-bit free seed is never rounded into a 269-bit base coordinate.
+Affine and model arithmetic uses80 decimal digits; matrix eigensolves use
+binary64. Warm forward calibration compares with the exact publication020
+projected endpoint. The final free point is the exact rational sum f0+D*z,
+followed by exact triangular restoration and the original canonical lift.
+
+Every one of the 5641 original equations, all 1597 scalar signs and all three
+original PSD blocks must pass the independent exact endpoint checker. The
+numerical optimizer cannot override any gate. No clipping, rank choice,
+support restriction, precision retry, source rebuild or full elimination is
+part of this experiment.
+
+Resources and archival scope
+
+One jointly charged 450m work ceiling covers required preparation, worker,
+independent endpoint checking and whole-archive audit. The final audit reserves
+25m upfront. Conservative allocations are 50m for map materialization, 5m for
+warm setup, 130m for proposals and 20m for the exact endpoint. An explicit 20m
+synthetic-test allowance is included in the preparation reserve, separate from
+the byte-based binding terms and 1MiB metadata allowance. The development
+integration suite recorded 12186653 proposal operations across 14 calls; the
+additional test allowance also covers its fixture preparation and checks.
+Only independent checker counters can refine their own reservation; producer counters cannot
+reduce those allocations. Complete-step work and output space are reserved
+before starting another iteration. A budget stop exports the last completed
+point and is not convergence.
+
+One numerical worker has 6GiB memory, 1800s cooperative time and 3600s external
+time. This is within the user's 16GiB allowance. The prior scaling is reused
+to avoid duplicate work. Sol6.1 agents separately implemented the producer,
+independent checker and mathematical review. All previously published files
+remain immutable; this experiment has new modules and a new archive.
+
+Measured verification and resources
+
+The frozen closure contains 122 source files. All 57 frozen prescore tests
+passed in 16.833s; 12 publication tests also passed. The independent whole-
+archive audit passed in 25.170401938s, with 12020352 total audit operations,
+5077601 audit cells and 5055896 search/endpoint replay operations. Its seven
+input bindings use STEM keys protocol/source_seal/input/seal/tests/execution/
+receipt; append .json to obtain the corresponding files.
+
+Worker wall time was 164.207026513s, CPU time 163.41483333s, peak RSS 633604 KiB
+(about 618.8 MiB), with one numerical thread. The proposal took 73.817067584s.
+Observed producer work was: map 11758392; warm setup 236827; proposal 106949395;
+exact endpoint 2105725. No new homogeneous norm columns were computed.
+
+The preparation/binding reservation was 190312685, including the explicit 20m
+prescore allowance. Other conservative stages were map 50m, warm setup 5m,
+proposal 130m and endpoint 20m. The worker checker had 10446181 available
+operations after artifact/source overhead, used 5055896 and independently
+certified its complete 15070932 work reservation. With the full 25m archive
+reservation still present, the ledger totaled 435383617. Excluding that pending
+archive allocation, worker reserved work was 410383617; adding the measured
+12020352 final audit gives joint work 422403969, below 450m. Producer counters
+did not reduce their stage allocations.
+
+Before the next step, remaining proposal work was 31325434. The required
+worst-step reservation 6082695 plus finalization 25808288 exceeded it, so no
+partial new step was started. Final proposal peak live-cell accounting was
+3546512, within the 4m cap. Actual artifact sizes in bytes were: map 78422,
+warm 186852, proposal 8270489, endpoint 522683 and check 21488. Their respective
+caps were 131072, 262144, 16777216, 1048576 and 65536.
+
+The weighted power estimate was about 0.8750579243377852 and the accepted step
+size about 1.1427814915872763. Warm affine relative error was about 3.67e-71;
+scaled adjoint pairing error was about 7.20e-70. The largest recorded numerical
+model gap was about 6.33e-73. These are consistency diagnostics, not certificates
+of gradients, eigensolves, model optimality, convergence or infeasibility.
+
+Scientific status
+
+Even a successful finite endpoint would leave the universal nonconstant
+arithmetic identity for that fixed candidate unresolved. Publication019's
+symbolic source identities do not prove that aggregate identity. Uniform
+arithmetic bounds and the ordinary-zeta recovery premises also require proofs.
+Finite numerical evidence alone cannot establish signed control at every
+scale or RH. No global-bound, RH or infeasibility flag is promoted here.
+
+The accompanying primitive_state_uniform_identity_probe_design_v1.txt specifies
+a future way to reject a fixed candidate's nonconstant formal identity at a
+fresh scale, using an exact evaluation or modular witness without assembling
+another full SDP. It subtracts the all-zero formal evaluation to remove the
+scalar budget, retains every source family and the signed parent storage term,
+and requires independent replay. A nonzero witness refutes only that candidate's
+formal identity; zero means only that the probe did not refute it. This is a
+design, with no real candidate evaluated and no measured cost claim. It does
+not discharge the universal identity or scalar inequality obligations.

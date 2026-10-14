@@ -1,0 +1,9 @@
+Independent native factor-cone uniform scope review
+
+Independently rebuilt every complete normalized factor group and gamma auxiliary on scales1,2,3,5, matched all native case hashes, and rechecked the full original rational dual columns and both five-atom PSD dual matrices using the independent checker. All five constant dual coordinates are0 and lhs dot is−1. The witness separates the FULL shared PSD factor cone, despite its restricted diagonal-dual search construction.
+
+The new44 factor descriptors, scaleN=4X−1, fractional theta cutoffs, kernel normalization and relation closures do not depend on q orC. The old q/C dependence is confined to lhs scalar padding and the constant-square normalizer. Therefore every dual pairing is invariant under arbitrary q>=1,C>=0. More strongly, arbitrary rational per-ordinary-scale constants D_X may replace lhs constants without changing lhs dot; the constant square/slack columns are also annihilated. More constants or root orders cannot repair this fixed constrained shared cone.
+
+This is a representation obstruction, not a false actual arithmetic bound or RH result. The gamma0 constraint is necessary only in the stated subcubic/q>1 template regime where its supplied theorem applies; at q1 it is merely a constraint of the searched cone. Changing sharing, removing the auxiliary, or introducing genuinely new columns lies outside this theorem. All prior uncertified/resource statuses remain immutable; the native result is a separately sealed resource remedy.
+
+Bindings and exact recheck are in native-dual-001/uniform_scope_independent_review.json. No frozen source edited.

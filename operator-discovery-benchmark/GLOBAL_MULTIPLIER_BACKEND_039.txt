@@ -1,0 +1,225 @@
+GLOBAL FLOOR MULTIPLIERS: A WORKING SYMBOLIC PROTOTYPE AND ITS REAL FRONTIER
+=========================================================================
+
+Scope
+-----
+Read the accepted038 bound frontier and037 analytical review, not an arithmetic
+archive or new numerical source. Only new039 prototype/test/receipt/memo files
+were written. No earlier source, result, protocol or memo was edited; no hash,
+old suite or actual-source experiment was run. The prototype is not a newly
+admitted full-core proof. It establishes a reusable universal identity and
+quadratic proof capability, with complete forcing and source debts exposed.
+
+1. Exact global operator language, not individual-N row fitting
+--------------------------------------------------------------
+For any prefix V with V(0)=0 define T_d V(N)=V(floor(N/d)). For every integer
+N>=0 and positive integers d,e,
+
+ T_d T_e=T_(de).
+
+This includes floor-zero endpoints. A finite signed rational stencil
+U=sum_d u_d T_d therefore composes by Dirichlet convolution of its coefficients.
+Its domain is every N, not the handful of displayed038 finite rows.
+
+Let the source-generated complete relation be
+ D_j(T) W_j=P_j, where D_j(T)V(N)=sum_(k<=N)D_j(k)V(floor(N/k)).
+W_j is the WEIGHTED channel prefix; P_j includes its complete source weight,
+power convolution or delta RHS. Apply a finite generated U:
+
+ sum_d u_d sum_(k<=floor(N/d))D_j(k)W_j(floor(N/(dk)))
+        =sum_d u_d P_j(floor(N/d)).                         (1)
+
+The prototype generates (1) directly from the source certificate. For any fixed
+positive K it splits the inner sum at min(K,floor(N/d)); the COMPLETE remaining
+domain is K<k<=floor(N/d). When the upper endpoint is smaller than K this tail
+is empty. The unit is never removed. A changing cutoff is possible as an
+additional typed production, but needs a checked exact domain/transition rule.
+
+Thus a finite number of expression nodes can encode genuinely all-N identities
+even though their arithmetic sums have unbounded length. Naming the tail as
+one expression does not make its norm or covariance bounded.
+
+2. Exact quotient-PSD synthesis is implemented
+---------------------------------------------
+Declare a finite vector xi(N) of complete prefix, multiplied-constraint,
+head/tail, known-RHS and constant-unit expressions. Arithmetic templates prove
+L xi=0 for every N on their declared domain. All source channels, head pieces
+and inhomogeneous weights must survive the expression bridge.
+
+Given a desired quadratic comparison Q, a universal sufficient certificate is
+
+ Q=P+L^t Y+Y^t L, P>=0.                                    (2)
+
+It proves xi^t Q xi>=0 on the actual source for every N. It remains necessary
+to price all positive forcing terms in Q without the requested target bound.
+Sum (2) over the requested complete block, with its exact normalization. Parent
+and child identities are invoked at their true arguments; odd child endpoints,
+units and cutoff transitions are retained. No per-N fitting or archive rebuild
+is needed to verify this finite template.
+
+The prototype SOLVES (2), rather than requiring a nominated multiplier Y. Remove
+dependent rows of L, put G=(L L^t)^(-1), E=L^t G L and Pi=I-E. Define
+
+ P=Pi Q Pi,
+ Y=G L Q-(1/2)G L Q E.
+
+Then (2) is exact. P is PSD precisely when Q is PSD on ker L. Exhaustive exact
+rational principal minors supply the PSD witness for the small prototype.
+An independent replay function checks the full identity and every recorded
+minor. Finite dimension/work limits are explicit. This is a proof primitive;
+the root production checker still needs independent source-template binding.
+
+The forcing-grid search enumerates nonnegative rational coefficients of declared
+forcing forms. A feasible quotient with an unpaid tail is reported OPEN_forcing.
+An infeasible grid means only that this free-trajectory certificate dictionary
+failed; it does not refute the actual arithmetic source. Additional identities
+or sign restrictions may narrow the source class beyond ker L.
+
+The synthetic calibration x+y=z rediscovers x^2<=2y^2+2z^2 without being handed
+its multiplier or PSD Gram. Keeping y as an unpaid full tail leaves the result
+OPEN. Keeping only z's forcing cannot control the unconstrained y direction.
+This is deliberately an illustration of the debt gate, not evidence for RH.
+
+3. A genuine automatically generated actual-inverse calibration
+---------------------------------------------------------------
+The source matcher also recognizes a complete relation with inverse kernel One
+and delta RHS, generated from the single mu0 atom. It does not read source
+values. Enumerate affine approximations floor(x) approx x+s, rational s. Their
+universal error bound is
+
+ |floor(x)-x-s|<=max(|s|,|1+s|), x>=1.
+
+For W(n)=w mu(n), w may be an affine source parameter and is not divided out.
+The complete identity sum_(d<=N)W(d)floor(N/d)=w gives
+
+ N sum_(d<=N)W(d)/d =w-s sum_(d<=N)W(d)-sum_(d<=N)W(d)error_d.
+
+Use |mu(d)|<=1, not an unproved prefix estimate. Therefore for every N>=1,
+
+ |sum_(d<=N)W(d)/d|
+ <=|w|[1/N+|s|+max(|s|,|1+s|)].                             (3)
+
+The prototype searches s and finds the uniform ceiling2|w|. The proof includes
+all d and the unit. It proves actual-source signed harmonic control, using the
+global inversion law rather than arbitrary local ternary signs. It supplies
+no bound on the critical unweighted prefix. This input was already known in
+the earlier signed-primitive work: the NEW capability is its automatic typed
+floor-dual construction and exact proof, not a newly discovered prime theorem.
+
+The generator cannot simply reuse (3) for a shifted or repeated mu atom. Their
+kernel/RHS types fail this provider's structural premise. Other kernel-prefix
+approximations need their own complete approximation/error theorem.
+
+4. Exact source join and currently available price
+-------------------------------------------------
+For the original source write K(n)=n^(-1/3), beta=9/2, R=R_u. The four038 kernels
+are D0=One*One, D1=One*One_(2/3), D2=One_(2/3), D3=One. Every D_j(1)=1. Adding
+the complete weighted relations gives for N>=1
+
+ F(N)+sum_j sum_(2<=d<=N)D_j(d)W_j(floor(N/d))
+          =-R sum_(k<=N)K(k)-beta.                         (4)
+
+At N=0 both RHS prefix expressions are zero. The beta is the weighted delta
+prefix, not a missing constant or an omitted unit. The sum in (4) is a JOINED
+cofactor quantity: all channels and their signs remain inside it.
+
+Apply (2) at N=n,2n,2n+1 to this or the separate complete rows. This is an
+implementable finite-template attempt for the actual037 recurrence. Its kernel
+tails and deterministic RHS must be priced or remain explicitly joined in an
+open signed correlation. Independently paying that RHS at critical block scale
+already carries X^(1/3); its cancellation is not automatic.
+
+For completeness, ordinary divisor bounds give a true but weak general price.
+If a nonnegative-shift channel has k atoms, m of them mu, then
+ |W_j(t)|<=|w_j| t(1+log t)^(k-1), D_j(d)<=d_m(d).
+Ordered divisor expansion proves sum_(d<=N)d_m(d)/d <=(1+log N)^m. Hence
+
+ |sum_(2<=d<=N)D_j(d)W_j(floor(N/d))|
+ <=|w_j| N(1+log N)^(k+m-1).                               (5)
+
+When k=0 use the delta prefix separately; signed/negative shifts need their
+proper different mass provider, not (5). The actual four channels satisfy
+the nonnegative-shift premise. Formula (5) has critical energy power X,
+with explicit logarithms, so it cannot pay the desired cofinal forcing. A fixed
+finite stencil changes constants/logarithms, not this unsigned power. The
+prototype exposes this provider deficit; it does not fit a better exponent.
+
+5. Two reusable rejection gates
+--------------------------------
+Fixed finite inverse. Let D be a nonempty convolution of positive power atoms.
+If a fixed finite Dirichlet stencil U were its exact inverse, its unit would
+require U(1)=1. For every prime p beyond the support of U,
+
+ (U*D)(p)=D(p)=sum_(power factors a)p^(-a)>0,
+
+whereas delta(p)=0. This is an exact fresh-prime obstruction. It does not
+exclude moving-support inverses, approximation with a paid complete remainder,
+or jointly signed multipliers across different source channels. The prototype
+emits the positive formal prime polynomial and support-domain witness. For
+D=delta it separately requires the ENTIRE stencil U=delta; a unit coefficient
+alone is insufficient when additional stencil coefficients survive.
+
+Critical coercivity. A full operator inverse bound for kernels with zeta(s)
+factors cannot be inferred from positivity of coefficients. On a weighted
+logarithmic L2 line the Mellin multiplier is the full Dirichlet series, when
+such an operator is defined. A zero/near-zero multiplier defeats a uniform
+coercive inverse. At sigma1/2 the zeta zeros make this a direct obstruction
+to a generic-input lower bound. Actual-source inversion remains exact, but
+recovering its prefix costs the actual cofactor input or new signed constraint.
+There is no unconditional evaluation of sum mu(n)n^(-2/3) here, and no absolute
+inverse-kernel claim on that line. A truncated finite-domain multiplier cannot
+silently cross into this global operator assertion.
+
+6. Actual scalar normalization is essential, not its coarse enclosure
+---------------------------------------------------------------------
+The038 laws and coefficient envelopes hold for the ENTIRE affine family f_R.
+For Re s>1 its Dirichlet series is
+
+ beta zeta(s+1/3)/zeta(s)^2
+ -beta zeta(s+1/3)/(zeta(s)zeta(s+2/3))
+ -R zeta(s+1/3)/zeta(s+2/3)-beta/zeta(s).
+
+Near theta=2/3 the residue is
+
+ L(R)=beta/zeta(theta)^2-beta/[zeta(theta)zeta(4/3)]-R/zeta(4/3).
+
+Zeta(theta) is nonzero (the alternating-series continuation is negative for
+0<theta<1), and zeta(4/3)>0 by its convergent series. The residue has nonzero
+slope in R, so it vanishes at exactly the actual specified normalization
+
+ R_u=beta[zeta(4/3)/zeta(theta)^2-1/zeta(theta)].
+
+Consequently a claimed uniform-R cofinal critical energy bound using only
+R in[1,5] and038 laws is impossible: the family contains nonzero theta-pole
+members. A cofinal dyadic moment bound would, by Cauchy and Abel, make its
+prefix Mellin transform holomorphic Re s>1/2, contradicting that pole. This
+does NOT refute the actual fixed-R_u target. Its exact analytic normalization
+must enter a source-specific proof beyond its numerical enclosure. A symbolic
+analytic residue cancellation is not an ordinary critical coefficient moment
+or an independently priced finite remainder.
+
+The prototype's complete multiplier templates explicitly retain this formal-R
+scope. Quotient proofs require external source/normalization binding and forcing
+providers. No full-core certificate may be promoted merely because a rational
+PSD search succeeded on a weakened or different family.
+
+7. Concrete next production interface and status
+------------------------------------------------
+Search finite floor stencils, cutoff ASTs, signed storage forms and rational
+forcing coefficients; invoke the supplied exact multiplication/splitting law;
+generate expression rows for all parent/child arguments; solve the quotient
+PSD problem; replay every algebraic witness; then recursively price every
+forcing and recovery item. Carry the actual exact scalar normalization and
+all complete joined tails through the source bridge. Report either an all-scale
+proof DAG or its exact OPEN leaves, not an individual-N fit.
+
+The toy prototype has six synthetic tests: floor composition, complete tail
+templates, fresh-prime inverse gate, automatic PSD multipliers and mutation
+replay, unpaid-tail failure, and actual-inverse harmonic-dual calibration.
+No actual arithmetic source coefficients were read or generated. The sole full
+suite passed, then only the affected finite-inverse test was rerun after adding
+the complete delta-stencil rejection. Both invocations passed; charged cumulative
+development work122786 operations, with
+receipt global_multiplier_proto_039_development.json. Root production source
+binding and an independently paid full joined tail remain additional work.
+The actual global core recurrence and RH remain OPEN. Prototype/memo edits stop.

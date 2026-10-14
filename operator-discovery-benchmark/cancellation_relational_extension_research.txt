@@ -1,0 +1,93 @@
+NEXT RELATIONAL PRODUCTIONS BEYOND FULL GRAM MIXING
+
+Design note before new scores. Existing exact prime transport, primitive gcd
+partition, prime-log forcing and full atom Grams remain supplied methods. The
+following are proposals for representing and testing complete signed relations,
+not discovered arithmetic estimates or promises of progress toward RH.
+
+1. Bilinear factor blocks, with a complete factor boundary.
+Candidate schema:
+ {kind:factor_bilinear,left:actual_mu,right:actual_mu,
+  outer:[floor(X^alpha),floor(X^beta)],
+  inner_domain:{product_le:floor(c*X),coprime:true},
+  kernel:rational_piecewise_polynomial,scale_program:exact_rational}.
+Its semantic value is sum over the declared complete integer(a,b) domain of
+mu(a)mu(b)K_X(a,b), NOT a product of independently truncated sums. A factor
+split must produce the exact complement and account for collisions when mapping
+(a,b) toab. On coprime pairs mu(a)mu(b)=mu(ab); product multiplicity is retained,
+not replaced by coefficient1. A particularly useful grouped multiplier family
+is Q_(a,b)=a fixed rational kernel times a complete prefix/factor-block linear
+form, multiplied by the coprime relation xa*xb-xab. This creates signed cross
+columns that atom Grams alone cannot express. Product indices require the full
+source horizon. A signed bilinear estimate is still a separate unknown premise.
+
+2. Moving prime transport banks with exact overlap.
+Candidate schema:
+ {kind:prime_transport_bank,prime_range:[floor(X^theta1),floor(X^theta2)],
+  prime_weight:rational_kernel,source:mu,block:parent_or_child,
+  grouping:shared_coefficients,normalizer:exact_ceiled_power}.
+For EVERY prime individually M(n)=B_p(n)-B_p(floor(n/p)) is exact. Combining
+several such identities requires all cross-prime overlaps and source costs;
+it is not an average of independent random signs. Do not divide by a possibly
+zero prime count: an empty bank is explicit missing/empty, with a separate
+boundary rule. Changing the prime range at child2X leaves an exact bank-change
+residual. The prime-square complement and p-free masks remain complete.
+Fixed-P counterfeits satisfy each transport inP while having positive mean,
+so a fixed finite bank plus norms cannot give a generic critical theorem.
+Growing banks must charge their own uniform density/modulus/normalization costs.
+
+3. Two-axis coboundaries and paired forcing.
+Candidate schema:
+ {kind:paired_coboundary,maps:[integer_dilation_or_affine_maps],
+  coefficients:exact_rationals,domain:complete_pair_region,
+  arithmetic_witnesses:[whitelisted_relations],boundary:explicit_complement}.
+Mixed dilation K(a,b)-K(pa,b)-K(a,pb)+K(pa,pb) is an exact prime transport
+kernel, with signed source factors retained. Search simultaneous parent/child
+kernels, rather than favorable pieces. Prime-log forcing may reindex one or
+both axes, but log denominators, all permitted prime powers and unit pair
+exception remain. A zero unweighted kernel moment does not erase denominator
+drift or variation cost. No square-root prime error is assumed.
+
+4. Relation multipliers chosen by formal obstructions.
+A new column can be a complete sum of multiplier*norm/gcd/coprime/prime-power
+relations, grouped on exact factor/valuation/prime regions. Enumerate rational
+multiplier templates by degree and description cost. First inspect highest-
+degree matching constraints, then exact scalar contributions, then the remaining
+signed quadratic form. For example, (x_g^2-h_g)*x_u*x_v closes a gcd quartic
+relation to a lower-degree primitive pair without adding a scalar constant.
+This is representation closure, not new arithmetic information. Exact dual
+negative directions nominate columns; missing dual monomials require an extended
+dual. Invalidating one witness never proves feasibility. Jointly shared square
+and relation weights must replace free per-index encoding for a uniform proposal.
+
+5. Adverse cases and the uniform proof gate.
+Reject dropped factor complements, changed child cutoffs, uncharged product
+multiplicities, missing prime-square sources, division by empty banks, implicit
+zeros for unsupported monomials and wrong signed cross coefficients. Compare
+with squarefree partially normalized counterfeits and unsigned sequences.
+Norms, local cycles and fixed prime identities cannot distinguish all these
+positive-mean models. Complete factor information is a source specification,
+not itself a signed moment estimate; sufficiently strong alternative uniform
+arithmetic information might also exclude the models.
+
+The smallest useful expansion after the full-Gram audit is a generic exact
+factor-block relation-multiplier compiler, with complete product-domain and
+complement certificates. Add moving prime-bank coboundaries only after those
+boundaries are independently verified. Preserve every proposed coefficient,
+finite failure and resource limit. The original complete actual signed defect
+remains the recovery target. A successful finite certificate merely nominates
+a template; proving its all-scale nonconstant identity and cofinal critical
+scalar budget remains the indispensable unknown uniform step.
+
+Primary-source context, checked separately from the derived identities above.
+Tao's paper "The logarithmically averaged Chowla and Elliott conjectures for
+two-point correlations" studies logarithmically weighted correlations of
+multiplicative functions and uses small-prime multiplicativity and an entropy
+decrement argument: https://arxiv.org/abs/1509.05422 . Matomaki, Radziwill and
+Tao's "An averaged form of Chowla's conjecture" proves an averaged-shift
+correlation result: https://arxiv.org/abs/1503.05121 . These primary papers
+motivate exposing coupled arithmetic scales rather than assuming random signs.
+Their weighted/averaged conclusions are NOT imported as the complete unweighted
+critical energy estimate required here. Our finite transport, coefficient
+matching and counterfeit statements are derived within the repository proofs;
+the proposed uniform cancellation bounds remain unknown.

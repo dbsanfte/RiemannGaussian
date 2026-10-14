@@ -1,0 +1,51 @@
+Independent arithmetic-bank checker086 scope
+
+APIs: parse_bank, build_identities, quadratic_value, mixed_price,
+verify_lower(program,u,outer_certificate,bank,certificate,meter=None),
+verify_certificate (lower alias), and verify_upper with the same arguments.
+Effective coordinates retain the original complete unit/prime anchor (+1),
+followed by increasing squarefree composites. No nullspace coordinate reduction.
+
+Frozen independent083 remainder/geometry,084 square arithmetic,085 rational
+and divisor primitives are reused explicitly; no producer is imported. Prime
+roster and all eligible directed prime/cofactor pairs are rebuilt independently.
+Source-weight columns depend only on fixed source features. Units, repeated
+product multiplicities, K=0, and complete prime projection are retained.
+
+All-u zero identity admission refers ONLY to divisor identities and
+mu(pm)=-mu(m) for squarefree m with p not dividing m. The unchanged complete
+residual is P^T(A-O-Gold)P; negative old Gram removal is preserved.
+Lower certificates constrain every identity column exactly, require anchor+1,
+and evaluate an artificial Boolean witness. They lower-bound finite certificate
+grammars, not the arithmetic residual at actual unknown composite signs.
+Upper certificates use arbitrary signed mixed partners with half symmetrization
+and an independently exact dyadic PSD factor. Signed diagonals are retained.
+Neither admission proves uniform remaining/source growth, RH, or a uniform no-go.
+
+Prospective dimension, rational-bit, work, and cumulative-memory gates precede
+factor/partner native products and large residual construction. Banks<=16,
+complete effective dimension<=512; inherited raw geometry caps remain binding.
+No truncation is accepted. Tests use tiny independently factored mu only as
+calibration; no scientific pilot or old test/scientific suite was replayed.
+
+Development: 8 distinct methods, 12 method executions: 10 pass and 2 retained
+fixture-expectation failures; one retained loader error executed no method.
+All affected methods now pass. Full exact attempt outputs are in the receipt.
+
+Extension API verify_extension independently re-admits the old lower certificate,
+then reconstructs a new complete column and verifies a nonzero witness dot.
+This proves finite-geometry rank/information gain, not uniform rank gain.
+The identical or witness-compatible column is rejected. Current development:
+11 distinct methods (9 checker,2 producer integrations),15 method executions,
+13 pass and2 retained fixture failures; one retained loader error. Tiny complete
+producer comparisons cover all source delays memory1..3 and do not search.
+
+Final producer resource patch independently reviewed: grammar cardinality gates
+before expansion; catalog reserves all possible cutoff forms/prefix tables before
+columns and carries resident storage; scores reserve simultaneous catalog and
+score memory and meter work/bit growth before dot/norm arithmetic. New guard
+fixtures prove rejection precedes expansion/columns and reject exhausted score
+work, negative anchor and excessive score residency. The actually selected tiny
+grammar descriptor is independently verified as a finite rank gain. Final count:
+12 distinct methods,16 method executions,14 pass,2 retained fixture failures,
+plus one retained loader error. All affected/new tests pass; no science run.

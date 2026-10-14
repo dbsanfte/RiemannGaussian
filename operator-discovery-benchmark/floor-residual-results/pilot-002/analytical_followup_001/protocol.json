@@ -1,0 +1,20 @@
+{
+  "candidate_identifiers_whitelisted": false,
+  "cutoff_frontier_parameters": {
+    "b": "1/2",
+    "q": 2
+  },
+  "cutoff_scope": "all integers N>=257 only",
+  "data_used": "formula ASTs and frozen q,b,A,eta only",
+  "frontier_rate_work_cap": 100000000,
+  "hashing_used": false,
+  "max_index": 16,
+  "numerical_norms_evaluated": 0,
+  "numerical_trends_used_as_proofs": false,
+  "parent": "floor-residual-results/pilot-002",
+  "precision": 192,
+  "rate_replay_work_cap": 100000000,
+  "schema": "floor-analytic-feedback-protocol-v1",
+  "selected_rate_work_cap": 10000000,
+  "subsection_domains_kept_distinct": true
+}

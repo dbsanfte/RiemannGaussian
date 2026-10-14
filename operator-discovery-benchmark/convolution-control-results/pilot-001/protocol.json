@@ -1,0 +1,483 @@
+{
+  "budgets": {
+    "arithmetic_work": 30000000,
+    "bit": 1000000,
+    "feature_work": 200000000,
+    "max_n": 1048575
+  },
+  "code_sha256": {
+    "check_convolution_control_run.py": "1cfdc8373e343e1ee49aab7bba3d0b3ad7e6815588b826baf4f044c692b6c973",
+    "convolution_control_analytic.py": "6eef4a81e2cae8ac0c8aaffde6ff9d3aade9bd83dbd3d4805408f2bb54d1d329",
+    "convolution_control_arithmetic.py": "602d0f390dada7d5bf6b39b78d0d85b35f74cb6be630884df4b72ad9e8a3d17e",
+    "convolution_control_checks.py": "6e870792badb14168691c155df9a03e278eca91b6a04b1859279d4b1343c0888",
+    "convolution_control_proof.txt": "74df92369867f5b9b6300592ad07cb227ed00f1e2a36a6881b927bd0b55ef4be",
+    "convolution_control_search.py": "672fa689b5c02eed662a39c79f18179fc202b1bad78265d2aa58a13278ac2180",
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "run_convolution_control.py": "031245740d0e9a44f8cf12af9f9bede72a772b69d6d0a4fcab4ac57fb0c3fb54",
+    "test_convolution_control_analytic.py": "4e7ca04b2bcfc49ff35ff122e77d477c41286725696ba68d2eefffd485a4c2fa",
+    "test_convolution_control_arithmetic.py": "26ebe9e3514ac75f96b4df74d25c1fc15487e4c781b68b0a5a2254637c6fd066",
+    "test_convolution_control_checks.py": "bfeb977404563af8ecbc20f98e6da59d25908feb02c98236bfe3d13edea809d2",
+    "test_convolution_control_run.py": "7c0113c9ae8cbd935c0a0908cf067f7f364adae1e233d172ddbf67d0e77ea288",
+    "test_convolution_control_search.py": "90e5f6cd38677af65a59f34924486592840a0c61fd82ac3a4a408ec973ffad17",
+    "test_run_convolution_control.py": "2a4d7daf50e3495501224e570dec26fe2f3233f0b1380b16ad0e6a653ffbe90d"
+  },
+  "feature_dictionary": [
+    {
+      "base": "R_h",
+      "eta": "0",
+      "feature_id": "141505a7229b5c56e9c4344ef92cc54d993e704910e64e46d7b93515f456260a",
+      "kind": "gram"
+    },
+    {
+      "base": "R_h",
+      "eta": "1/6",
+      "feature_id": "302d0f51ac065309d8741f2c2353ee381ab4e68453ba07a2452dab7eec1c31f8",
+      "kind": "gram"
+    },
+    {
+      "base": "R_h",
+      "eta": "1/3",
+      "feature_id": "2d788f821eb4a12c25522d09303beaab2a2ec3f1331ea54c0f265c2eeed2596b",
+      "kind": "gram"
+    },
+    {
+      "base": "R_diff",
+      "eta": "0",
+      "feature_id": "063e255a7a63f6ed6b6f7932fb6f6ae80f875cf35121b4e09d1015cac64634ae",
+      "kind": "gram"
+    },
+    {
+      "base": "R_diff",
+      "eta": "1/6",
+      "feature_id": "de76b12c8fcece8d41f188556b881dafc313bbdf7b4b0756843dc6307305f554",
+      "kind": "gram"
+    },
+    {
+      "base": "R_diff",
+      "eta": "1/3",
+      "feature_id": "75aca0ff77bd2271e604cbfb4a4b91fab110ea01e674ed1c4ce6007f6810a830",
+      "kind": "gram"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "445e93c5c4fa5be402cbebe7edbb5ab68baa2245661566b00448b9cd23cd70d1",
+      "kind": "fixed",
+      "weight": "-2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "47b8f64fbb67ad1422ecec0932e14a80dc565a2f9c5e35c056bbbecc6330d070",
+      "kind": "fixed",
+      "weight": "-1"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "c15de1f7586ac92200086661daa7a53678a3a40e0dc12d5529b1a0495d95f30e",
+      "kind": "fixed",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "eb4b2977fd5e1b09a48f49ca70b92091cb221a93b97314038fd551b8e774bf2f",
+      "kind": "fixed",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "271186be512cdefbb54b5bfab6829df54fb4fe14da4196848855a4987ae499da",
+      "kind": "fixed",
+      "weight": "1"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "49ae2767f87e5dde1570f1655468c5a108c676cadd200acd1ef2df258e12c3e4",
+      "kind": "fixed",
+      "weight": "2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "ae9c70ff96637344f4f843124bcb1d308078481bdb816613054d72758f32a6bd",
+      "kind": "fixed",
+      "weight": "-2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "bac9326ddf47bb9d16524992ee8e8ba90a33f05dbdc726bca694e7a3cbc34224",
+      "kind": "fixed",
+      "weight": "-1"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "b84a1827e31005670ce6a13cee9b32d6cfd5d1609ea86fd856bb6ea5eb24d8a2",
+      "kind": "fixed",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "6914dd284fa5e6fd082e1696e8b0802c4f0a705f2241e12327a660139d94c499",
+      "kind": "fixed",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "aec0476e58f6f670a6ccd6764fe9befe98b842e71366f0200b27eab75b167fe9",
+      "kind": "fixed",
+      "weight": "1"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "a34a5d0ae315dd7b809e01e2faafac434774aff583a9c02cc6edc118d090d962",
+      "kind": "fixed",
+      "weight": "2"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "d80253b211c0dd9a952c4d54b736ce95c707e227701e475c0a020be6a38e61fb",
+      "kind": "fixed",
+      "weight": "-2"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "eaf635f2ca22e3a6894ea7859484eaa0e2b34d39c80691f9efbf733087af1b0c",
+      "kind": "fixed",
+      "weight": "-1"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "5773973d94adb1f6192281f6ab45aaedcad46c978c337a2677182a011a8a0f93",
+      "kind": "fixed",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "052db0798e410d435099ca4b6b5b7955321a9674a90a0b1c895173b9322c8a67",
+      "kind": "fixed",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "dea5890a720cff4bdb1c50a14a827b38688c4f8d8b946afae698c313d75d68c4",
+      "kind": "fixed",
+      "weight": "1"
+    },
+    {
+      "divisor": 5,
+      "feature_id": "02cb8ddba280acb2bf72c5e8acb080f4e159427a8f2eeea2f0cf9c246cf81f79",
+      "kind": "fixed",
+      "weight": "2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "97d9f3277ec1a6fc4e0f4c8a4e98ae59f04ec314ddb3fdfb9ca1c1bddcc1cdac",
+      "kind": "fixed",
+      "weight": "-2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "9995d78ff1e71fcda9e2f35dbe293b80630a1e5875df3d57c0cf63d186525219",
+      "kind": "fixed",
+      "weight": "-1"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "2926cf2335eb00c9b0d5fc3cb09843fa040ca12c48974de0f44c4b776760ad3b",
+      "kind": "fixed",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "f4208e12c15ed822419a60ee69df919e206fa9ed516836b6f55ffd179a44a213",
+      "kind": "fixed",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "32697106e2714db92583b7db5c4cb9e0871df5efd09504ccec6a807f353359af",
+      "kind": "fixed",
+      "weight": "1"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "d52babc39a3b2439744754acbe813ed24314f5a4fdc467a1610a455301e0072b",
+      "kind": "fixed",
+      "weight": "2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "3a907fdd7b2305829fee784a531a5e0924e98b6f09ef1a8f70c5aba1de3b83f7",
+      "kind": "root",
+      "weight": "-2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "c70a5ab789e01554809185585c6c5f6e50727e6fc9e9b0fcfd7bae12358915cf",
+      "kind": "root",
+      "weight": "-1"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "50f983f0313397b4f2ad57f910d25b823f7d3f22ad1fb90f4863347a7a14827f",
+      "kind": "root",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "e32ff97d23ed2c5719a0dcaf8b635eb9383c931a94ed770df4f43646427bf732",
+      "kind": "root",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "e9d86ec557230e7f9d9b15600ab6fe0864be9ab55dfebb23933a3e8ceb33ccca",
+      "kind": "root",
+      "weight": "1"
+    },
+    {
+      "divisor": 2,
+      "feature_id": "2a7e36821104d5aaee29e394eaaeaeafce94769bb8558a29c686c02a77be1f21",
+      "kind": "root",
+      "weight": "2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "3f6238ad710394326036c8fab98821d9606a46f2676298049d97b506cc324fac",
+      "kind": "root",
+      "weight": "-2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "b37504948eab3d6f015e98419a54b05a1efebc96467a71a2ed9eac62563567cc",
+      "kind": "root",
+      "weight": "-1"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "2d44aa1a7ae8c8c6e358a0966e7a313b0938113758853bfad7e70ff1d9006e09",
+      "kind": "root",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "2ab6f3bf8e63b28c8b51532d94618d5a221865921e59f3483d74cb500e476891",
+      "kind": "root",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "7ef97f13400523e6442805bf4128d3755f0e8f6323e4ef4590be3dda26e131ad",
+      "kind": "root",
+      "weight": "1"
+    },
+    {
+      "divisor": 3,
+      "feature_id": "6a656015031ee9d1b3f267d456952b085c44172b77d0a6744a62033ab5be4ab4",
+      "kind": "root",
+      "weight": "2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "0e2684fb99b0172db5303804b53ce1fbfc376c915e35263130212978922217cd",
+      "kind": "root",
+      "weight": "-2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "9568b8783f18d7e2910155d9cbae1782a18b9ebcfb1a08361a862804e35ff87a",
+      "kind": "root",
+      "weight": "-1"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "a46c9dd0031a139583f30a1945088c3bd815c4400d67112376756797979d6e1a",
+      "kind": "root",
+      "weight": "-1/2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "26d607f4d8dc89cbfedae94c03bb8de0fa6e188aa967a008c4f8148db89e6214",
+      "kind": "root",
+      "weight": "1/2"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "81cf40e04da7a8987fc237ee5d65b68392483006a24a1a6faab7f9cc57bf2bce",
+      "kind": "root",
+      "weight": "1"
+    },
+    {
+      "divisor": 6,
+      "feature_id": "f77bce662fa2040e4d2c396815841be749d0046b5640456abdd6b9e76965dead",
+      "kind": "root",
+      "weight": "2"
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "58c1de30a1eb524dbd452cdc330ea2264954b65c477da94ce27f151227ce5d81",
+      "kind": "three",
+      "weights": [
+        "-1",
+        "-1"
+      ]
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "07cfd2c917cc1b709e35fee981fe7dddb10210e5ef0bbcf13576c6e89fbe348e",
+      "kind": "three",
+      "weights": [
+        "-1",
+        "1"
+      ]
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "761a412f1862324acd8a56a4b4637e24c9af91b19c0cf214e88becba42c0f3f3",
+      "kind": "three",
+      "weights": [
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "dc5366dd6719a5b1cb1101202f6af23e7359bde9ee040f997aba315a452093dd",
+      "kind": "three",
+      "weights": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "78fd567dad21d5716837cd4887ccdeaf39a29eef7665626d03ff702e7609bddf",
+      "kind": "three",
+      "weights": [
+        "2/5",
+        "3/5"
+      ]
+    },
+    {
+      "divisors": [
+        2,
+        3
+      ],
+      "feature_id": "434ecdee9ffbfacf88f07547478256720be9aa7a815f0de618b87338c620107f",
+      "kind": "three",
+      "weights": [
+        "-2/5",
+        "-3/5"
+      ]
+    }
+  ],
+  "feature_dictionary_sha256": "0ee422a18841cb430f58362586c6f9ae128821c77dc891aa2e53b7f27d536465",
+  "final_generation": {
+    "fixed": [
+      8192,
+      16384
+    ],
+    "formula": "9001+2*(int(seal_sha256[:16],16)%1500)",
+    "odd_count": 1500,
+    "odd_min": 9001
+  },
+  "final_levels": [
+    3,
+    12,
+    13,
+    17
+  ],
+  "global_claim": "There exists an integer q0>=1 such that for every integer q>=q0 there exists finite Cq>=0 independent of X such that for every dyadic integer X>=1, E(2X)+V(2X)-E(X)-V(X)<=Cq ceil(X^(1/q)), where E(X)=A_C(X)/X^2, C is the complete prefix of actual mu*lambda, and V is the exact nonnegative potential specified by the frozen terms, with every cutoff recomputed at its own scale.",
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "lp_groups": [
+    "gram",
+    "fixed",
+    "root",
+    "three",
+    "all"
+  ],
+  "lp_penalties": [
+    "0",
+    "1/1024",
+    "1/64"
+  ],
+  "provenance": {
+    "actual_coefficients": "complete prime sieve and complete generic convolution mu*lambda",
+    "historical_coefficient_overlap": true,
+    "prime_coefficients_new_holdout": false,
+    "scope": "new finite scale/candidate evaluation only; no all-scale bound"
+  },
+  "runtime": {
+    "numpy_version": "2.2.6",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "scipy_role": "proposal only; exact rationalized refits authoritative",
+    "scipy_version": "1.15.3"
+  },
+  "selection_groups": [
+    "baseline",
+    "gram",
+    "fixed",
+    "root",
+    "three",
+    "all"
+  ],
+  "selection_rank": [
+    "missing_observations_plus_missing_constants",
+    "finite_failures",
+    "max_exact_training_constant",
+    "sum_nonnegative_weights",
+    "term_count",
+    "program_id"
+  ],
+  "singleton_weights": [
+    "1/4",
+    "1",
+    "4"
+  ],
+  "target_provenance": {
+    "ast_program_id": "43bc2c2518395be27e340edb652a8a3f7574d337d35f994f8f89a951165bcb78",
+    "path": "signed-arithmetic-results/pilot-001/proof_queue.json",
+    "scope": "unshifted convolution target motivated by frozen AST; no bound transferred",
+    "sha256": "a1d6a64bf0db2158b1294ba90b505552bec09b123d721ef9377d729193660cf1"
+  },
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "validation_scales": [
+    1535,
+    3072,
+    4096,
+    6144
+  ],
+  "version": "convolution-control-v1"
+}

@@ -1,0 +1,10 @@
+{
+  "phase": "development_receipt_admission_before_protocol_freeze",
+  "type": "KeyError",
+  "message": "checker receipt uses runs, root expected invocations",
+  "traceback": "floor_residual_044_run.stderr.txt",
+  "candidate_scores_observed": false,
+  "final_programs_evaluated": false,
+  "run_directory_created": false,
+  "resolution": "admit either existing receipt schema; still require final returncode zero; focused regression"
+}

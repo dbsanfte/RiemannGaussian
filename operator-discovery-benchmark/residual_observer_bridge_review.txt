@@ -1,0 +1,194 @@
+Residual observer: conditional bridge and structural review
+
+Scope
+Pure analytical deductions. No responses, source tables, tests, hashes or
+frozen files accessed or changed. No signed observer moment bound is proved.
+The reciprocal-zeta conclusion below is conditional on a fixed all-scale
+cofinal moment/drift estimate. NIST DLMF was consulted only for the standard
+functional equation/zero symmetry used at the final analytic step.
+
+1. Exact operator hypotheses and contraction
+Let d_j be a fixed increasing sequence of DISTINCT INTEGERS>=2, so d_j>=j+1.
+N(n) is a source-free finite nonnegative prefix count. Coefficients a(n,d_j)
+are fixed functions with modulus<=1; they may query the frozen actual Mobius
+source. Set Af(n)=N(n)^-1 sum_{j<=N(n)}a(n,d_j)f(floor(n/d_j)), empty0.
+Extend every sequence by f(x)=f(floor(x)), f=0 below1; likewise freeze N and
+coefficients at floor(x). Integer denominators ensure
+floor(x/d)=floor(floor(x)/d), so this extension agrees with the continuous
+quotient operator. Evaluating roots/counts at noninteger x instead would define
+a different operator. A divisor set depending on n is not automatically a
+prefix of one fixed denominator sequence; masks inside the fixed prefix are
+allowed, renormalizing a variable selected subset requires another proof.
+
+Write H_sigma,T(f)=integral_1^T |f(x)|^2 x^(-2sigma-1)dx. Jensen and substitution
+u=x/d_j give, for sigma>=1/2,
+ H(Af)<=sum_j d_j^(-2sigma) integral |f(u)|^2 u^(-2sigma-1)
+                 *1_{N(d_j u)>=j}/N(d_j u) du.
+All upper endpoints after substitution are<=T; no infinite-energy premise is
+needed. For j<=m the coefficient is<=1/(j*d_j); for j>m it is<=1/[j(j+1)].
+Thus H(Af)<=c_m H(f),
+ c_m=sum_{j<=m}1/(j*d_j)+1/(m+1).
+If some d_j>j+1 with j<=m, c_m<1. Bounded signs/masks or dependence on frozen
+source coefficients do not invalidate this norm proof. Fixed denominator and
+count/domain hypotheses matter for the interpretation of the grammar and inverse.
+
+For r=(I-A)f,
+ ||f||_T<=(1-sqrt(c_m))^-1 ||r||_T<=2/(1-c_m)||r||_T.
+The displayed recovery factor is for the UNSQUARED norm; the squared H factor
+is (1-sqrt(c_m))^-2, at most4/(1-c_m)^2. The norm argument takes place on each
+finite interval and can then pass to infinity monotonically. A fixed finite
+composition of admissible residual maps multiplies these norm constants; it
+must be inverted in reverse order using the same coefficient functions.
+
+An outer source mask is different: mu(n)r(n) or a coprime gate times r(n) can
+erase coordinates and is not covered by recovery. Put such masks inside A,
+or retain complementary channels with a proved lower frame bound. Likewise
+the full original E anchor can be kept as additional nonnegative storage; no
+observer simplification licenses silently replacing the actual target by a
+filtered source. Every function must be defined on all positive integers.
+
+For dense d_j=j+1 this particular critical bound is1, not a contraction.
+At each sigma>1/2 the refined sum sum_j1/[j*d_j^(2sigma)] is strictly below1,
+so a sigma-dependent bound can still suffice for the analytic bridge. Lack of
+a gap is not an impossibility theorem; the simple uniform critical certificate
+does not admit it. Finite triangular solvability alone is also not a uniform
+infinite-energy recovery estimate.
+
+2. Exact discrete-to-integral bridge
+For a step-extended observer r define
+ E_r(X)=X^-2 sum_{X<=n<2X}|r(n)|^2, dyadic X.
+On its real block the exact bounds are
+ 2^(-2sigma-1) X^(1-2sigma)E_r(X)
+ <=integral_X^(2X)|r(x)|^2 x^(-2sigma-1)dx
+ <=X^(1-2sigma)E_r(X).
+Hence E_r(X)<=B_delta X^delta implies H_sigma,infinity(r)<infinity whenever
+0<delta<2sigma-1, by a convergent geometric sum over dyadic blocks. Conversely
+finite H gives a weighted moment statement; no pointwise Mertens bound is
+implicitly inferred from it.
+
+A sufficient conditional premise is ONE fixed candidate with W_r=E_r+V,
+V>=0, finite W_r(1), and some integer q0 such that for EVERY integer q>=q0,
+ W_r(2X)-W_r(X)<=Cq ceil(X^(1/q)) for all dyadic X>=1,
+with finite Cq independent of X. Taking Cq nonnegative is harmless. Telescoping
+gives E_r(X)<=W_r(1)+2Cq(X^(1/q)-1)/(2^(1/q)-1).
+For any sigma=1/2+epsilon>1/2 choose q>=q0 with1/q<2epsilon; then the global
+H_sigma(r) is finite. No control on how Cq grows is needed for this qualitative
+bridge. The fixed candidate cannot change with q, epsilon or X. A finite set
+q=2,3,6,12 does not meet the premise. A fixed finite observer composition has
+finite sigma-dependent recovery constants, so H_sigma(M) is then finite.
+If W retains the original E_M anchor, this moment conclusion already follows
+from that anchor; recovery remains a consistency check rather than extra proof.
+
+3. Ordinary reciprocal-zeta and conditional RH consequence
+For any complex s with Re(s)>1/2 choose1/2<sigma<Re(s). Cauchy-Schwarz gives
+ integral_1^infinity |M(x)|x^(-Re(s)-1)dx
+ <=sqrt(H_sigma(M))/sqrt(2(Re(s)-sigma)).
+Thus F(s)=s integral_1^infinity M(x)x^(-s-1)dx is holomorphic on Re(s)>1/2,
+with locally uniform convergence and logarithmic derivative domination. For
+Re(s)>1, ordinary absolute Dirichlet convergence and summation by parts give
+ F(s)=sum_n mu(n)n^(-s)=1/zeta(s).
+Here actual Mobius inversion is essential; a control source does not represent
+this reciprocal.
+
+For clarity the needed zeta continuation can be obtained directly from
+ zeta(s)=s/(s-1)-s integral_1^infinity {x}x^(-s-1)dx,
+initially Re(s)>1 and then Re(s)>0 except its simple pole at1. The holomorphic
+identity (s-1)zeta(s)F(s)=s-1 extends from Re(s)>1 to Re(s)>1/2. A zeta zero
+there, different from its pole, contradicts that identity. The standard
+functional equation then reflects a nontrivial zero to1-s, so absence to the
+right forces all nontrivial zeros onto the critical line. Standard equation
+and symmetry references: https://dlmf.nist.gov/25.4.E3 and
+https://dlmf.nist.gov/25.10.i . This is the ordinary Riemann zeta function.
+
+The proof does NOT directly establish ordinary convergence of the Mobius
+Dirichlet series throughout Re(s)>1/2. The integral continuation suffices;
+ordinary partial summation there also requires M(N)N^(-s)->0, a pointwise
+boundary assertion not supplied immediately by these dyadic L2 moments.
+No such stronger assertion is needed for this forward RH implication.
+
+4. Growing-prefix degeneracy is stronger than norm equivalence
+Suppose N(n)->infinity as n->infinity. If output n is in a region with N(n)>=K,
+the same proof bounds its coefficient by1/max(K,j), yielding
+ b_K<=K^-1 sum_{j<=K}1/(j+1)+1/(K+1), b_K->0.
+For an input supported above L and L sufficiently large, every nonzero output
+is at least2L, hence ||A f_high||_T<=sqrt(b_K)||f_high||_T, uniformly in T and
+sigma>=1/2. High-input components see an asymptotically small operator; the
+residual is asymptotically the identity on those components.
+
+Split a fixed M into its finite low-input piece and high-input piece. The low
+piece has finite H and A maps it to finite H by the uniform bounded-operator
+estimate. If H_sigma,T(M) diverges as T->infinity, its fixed low-piece norm is
+negligible. The preceding high-piece bound and arbitrary K then imply
+ ||AM||_T/||M||_T->0,
+ H_sigma,T((I-A)M)/H_sigma,T(M)->1.
+This applies also at critical sigma=1/2; it is a conditional statement about
+divergent truncated energy, not a claim that actual critical energy diverges.
+It does not imply a pointwise ratio near zeros of M. Fixed bounded signs inside
+the average cannot undo the b_K estimate. Composing finitely many such residuals
+has the same high-energy near-identity limitation.
+
+Thus normalization provides certified recoverability but growing-count averaging
+alone does not produce a new critical-norm cancellation. Equivalent observers
+can nevertheless have an analytically useful exact representation. Such a
+benefit must come from an arithmetic identity or a closed signed estimate, not
+the normalization theorem itself. Fixed small banks avoid this asymptotic
+identity effect, but do not automatically make their moments easier.
+
+5. Full divisor inverse shows the normalization tradeoff exactly
+Mobius inversion gives, for every integer n>=1,
+ M(n)+sum_{d=2}^n M(floor(n/d))=1.
+The raw signed residual is identically1, but its unnormalized quotient operator
+does not have the required critical-norm recovery bound. It cannot be declared
+a successful observer merely because the residual is bounded.
+
+With N=n-1 and positive normalized coefficients, for n>=2,
+ AM(n)=(1-M(n))/(n-1),
+ (I-A)M(n)=n*M(n)/(n-1)-1/(n-1).
+With negative coefficients the residual instead equals
+ (n-2)*M(n)/(n-1)+1/(n-1).
+Normalization has turned the exact bounded raw forcing into a near-identity
+rescaling of the target. This is an explicit analytic degeneracy, not a finite
+alias inferred from scores. The initial n=1 case is handled by the empty bank.
+Truncating the divisor domain preserves its complete omitted quotient tail.
+
+Similarly the actual logarithmic identity, with Lambda(p^k)=log(p), is
+ sum_{d<=n}Lambda(d)M(floor(n/d))
+ =-M(n)log(n)+integral_1^n M(x)dx/x.
+Its raw log-normalized residual has a useful smoothing representation, but its
+weights are not the proposed bounded-coefficient prefix average: expressing
+them with a large prefix count multiplies coefficients beyond1. All prime
+powers and domain complements are essential. This cannot simultaneously be
+treated as bounded forcing and as a certified contraction without a new proof.
+
+6. Which source laws or signed factors can genuinely simplify a proof
+For each prime p, complete nonmultiple prefixes C_p(n)=sum_{k<=n,p not dividing
+k}mu(k) satisfy M(n)=C_p(n)-C_p(floor(n/p)). This supplies fresh source access
+and an exact prime-multiple compensation. A normalized mixture gives M=A-B
+and the nonnegative square of A+B diagonalizes E+V=2||A||^2+2||B||^2. Fresh
+C_p energy remains uncontrolled; the law is not a signed moment bound.
+
+On a prime domain mu(p)=-1 is a constant sign. Whole common point factors may
+be norm masks; they do not certify independent variation. mu(floor(n/d)) or
+mu(n) inside distinct summands can retain actual mixed dependencies, but only
+exact divisor and coprimality hypotheses allow multiplicative simplifications.
+Divisor-supported masks can facilitate exact inversion; variable renormalized
+selected sets must not be confused with the proved fixed-prefix operator.
+Complementary parity/coprime channels are preferable to discarding coordinates
+with an outer gate. A source-dependent phase must remain fixed through the
+entire recovery argument, and a nonunit mask must not be called an isometry.
+
+For quotient-only observers the fresh-block obstruction persists: old source
+and child observation cannot constrain a coherent new prefix solely through
+norm bounds. Near-t translates introduce fresh point interactions, but pure
+bounded point banks are bounded padding; a latest multiple can reduce exactly
+to an old quotient and a mask. Complete prime/nonmultiple source laws provide
+a stronger compensation mechanism, still requiring a genuine bound on the
+fresh correlated source component. No such bound was found here.
+
+Final disposition
+The conditional recovery-to-ordinary-zeta/RH bridge is valid with the hypotheses,
+integer step extension and norm/squared-norm constants above. Normalized growing
+prefixes are asymptotically target-like in critical norm, and full inverse
+identities expose the bounded-forcing versus recoverability tradeoff. This is
+a theorem about admission and obstruction, not a proof of the missing cofinal
+signed moment estimate. Reviewer edits to this memo stop on completion.

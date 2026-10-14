@@ -1,0 +1,134 @@
+ANALYTICAL GATES FOR AST-BACKED PRIME TRANSPORT AND CORRELATION SEARCH
+
+New pre-score scope note. No frozen source edits or score queries. The proposed
+AST can express complete signed pair transformations and common-weight groups,
+but the original full signed defect remains the target. This note derives a
+necessary scalar-charge condition for a broad forthcoming dictionary, extending
+the preceding three-rowmass coefficient test without asserting a new bound.
+
+1. Universal constant extraction survives arbitrary AST grouping.
+Expand every declared square and relation multiplier EXACTLY into formal
+polynomials before matching. For a shared square weight a_j>=0 and relation
+weight b_j, the scalar budget is
+ B(X)=sum_j a_j sum_(terms in square groupj)w_term*[P_term(0)]^2
+      +sum_j b_j sum_(terms in relation groupj)[Q_term*rho_term](0).
+Here0 means all formal variables zero, NOT actual arithmetic; constants in an
+AST linear form must be retained. For polynomial relations, constant extraction
+is just multiplication of constant coefficients. Coprime/gcd products and zero
+relations have zero constant; norms contribute minus their known h_n; local
+prime-power/unit relations have their supplied actual constants. Complete
+transport equality certificates may have nonconstant multipliers and then no
+scalar at all. Adding such zero-scalar columns can change representation and
+nonconstant cancellation, but cannot directly cancel an existing scalar charge.
+If all nonconstant coefficients are exactly-Delta, B-Delta equals the grouped
+RHS. Optional scalar slack is D-B, computed only after exact cancellation.
+No AST compression, sign pairing or grouping alters this extraction formula.
+
+2. A broad mu density-mass test: any fixed BV kernel.
+Suppose the collected norm scalar at scaleX can be written
+ -sum_(n>=1)mu(n)^2 X^2 psi(n/X),
+with compact support[0,L], fixed bounded-variation psi, and source horizon>=LX.
+Continuity is sufficient for the simplest stated integration-by-parts formula;
+for discontinuous kernels use declared one-sided atom conventions and explicit
+jump costs. Fixed rational piecewise-polynomial kernels have computable integral
+and variation certificates, encompassing prime-dilated shell-row and block
+incidence charges, not only the old head/tail rowmass groups.
+Let Q(t)=delta*t+E(t),delta=1/zeta(2), |E(t)|<=3sqrt t. Stieltjes partial
+summation for continuous BVpsi gives EXACTLY
+ sum mu(n)^2 X^2 psi(n/X)
+ =delta X^3 integral_0^L psi(u)du
+  +X^2 psi(L)E(LX)-X^2 integral_0^(LX)E(t)d[psi(t/X)].
+Thus its error is at most
+ 3 X^(5/2)*(sqrt(L)*|psi(L)|+integral_0^L sqrt(u)|dpsi|(u)).
+No PNT, RH or signed-Mobius cancellation is used. For source weights differing
+from X²psi by a uniformO(X) complete endpoint correction atO(X)indices, the
+added cost isO(X²), so the same cubic leading coefficient holds. A different
+moving kernel needs its own uniform bounds; it is not silently fixed.
+
+If the dictionary has several such norm groups, combine their SIGNED shared
+weights FIRST: gamma=-sum_j b_j integral psi_j. For fixedq>1, constant squares
+with critical normalization and unit termsO(X²), and prime-local contributions
+o(X³), one obtains B(X)=delta*gamma*X³+o(X³). Therefore gamma>0 rigorously
+rejects THIS fixed template's critical all-scale budget; gamma<=0 is a necessary
+filter, not a sufficient proof. Unlike an unsignedl1score, this test retains
+signed mass cancellation between norm groups. It can be implemented from exact
+AST kernel integrals without large target scores, provided each group's
+rescaled-weight and endpoint certificate is proved.
+
+3. Fixed divisor classes: density charges are not interchangeable.
+For a fixed squarefree d, source mask d|n gives
+ sum_(n<=y,d|n)mu(n)^2=Q_d(y/d)
+ =delta_d*y+O((2^omega(d)+2)*sqrt(y/d)),
+ delta_d=(1/zeta(2))*product_(p|d)p/(p+1)/d.
+Apply the same BV proof with delta_d in place ofdelta and its explicit error.
+For nonsquarefree d the masked norm sum is identically0. Fixed coprime masks
+useQ_d(y) and its density directly. A finite rational mixture of these masks
+therefore has a precise density-weighted norm mass, not a universaldelta copied
+to every source class. Overlapping masks/groups and all shared coefficients
+must be retained. If d or the prime set grows withX, the uniform modulus errors
+and density variation are additional obligations; this fixed-divisor test does
+not discharge them. This generalizes the gate to fixed prime-dilation source
+classes while remaining elementary and exact.
+
+4. Why zero cubic mass still does not prove a critical budget.
+Actual mu local-prime scalar sums with complete weights bounded byO(X²) have
+absolute costO(X²*pi(LX))=o(X³) by elementary Chebyshev, but this can still be
+as large asX³/logX. Likewise the norm-discrepancy error above isX^(5/2), which
+is supercritical for sufficiently largeq. Therefore gamma0 is NOT an RH-scale
+admission. A useful candidate must either cancel these scalar pieces EXACTLY,
+prove a substantially sharper signed combination bound, or have a strictly
+negative dominant cubic scalar that bounds all remaining subcubic terms above
+for largeX, with initial finite scales rigorously charged. This last scalar
+possibility alone still does not prove a nonconstant template identity.
+A strictly negative cubic budget paired with an all-scale SOS identity would
+force Delta to be eventually negative cubic; nonnegative original energy
+recurrence makes that impossible for any nonzero initial finite energy bound.
+Indeed A(2X)<=4A(X)-cX³ along all sufficiently large dyadics implies
+A(2^j)/4^j decreases byc2^j/4 without bound, contradictingA>=0. Thus if a
+proposed actual uniform identity yields such a negative dominant scalar, its
+nonconstant matching cannot persist at ALL scales. Negativegamma is a scalar
+upper-bound filter pass but also a structural uniform-identity obstruction.
+For these hypotheses, gamma=0 is therefore necessary for a sound uniform
+critical template; it leaves the exact next-order scalar estimate unresolved.
+
+5. Actionable column design and guards.
+Search paired prime-dilation/correlation columns whose nonconstant kernels can
+change the required norm charge while keeping originalDelta complete. Pure
+zero-scalar transport relations offer representational freedom, not automatic
+budget saving. Norm-gcd combinations with degree-two multipliers can lower
+quartic c relations to signed primitive pair columns; this was absent from the
+old dictionary and is a representation opportunity, not an assumed bound.
+Jointly group square AND relation coefficients by exact source/kernel regions;
+extract formal constants and exact density masses before declaring a candidate
+as potentially uniform. Enumerate broad rational coefficients without feeding
+a winning kernel, and retain witnesses against unsigned/cubic templates.
+For every surviving finite certificate the two separate missing theorems remain:
+ALL-scale nonconstant coefficient matching/nonnegative squares, and an actual
+cofinal critical scalar budget with every boundary/source/prime charge. Neither
+may be inserted as an axiom or inferred from a finite sequence of transfers.
+The fixed-BV density test concerns mu; for c norm4^omega requires a separately
+proved weighted-density asymptotic and cannot be assigned the mu coefficient.
+No such c density theorem or global signed estimate is supplied here.
+
+6. Exact generated-family applicability without a descriptor whitelist.
+For each generated square atom inspect its expanded formal constant, and for
+each relation atom inspect BOTH multiplier and relation constants. This is a
+coefficient-level algorithm independent of family names. If all added square
+atoms haveP(0)=0 and all added relation atoms haveQ(0)=0 orrho(0)=0, their
+scalar contribution is EXACTLYzero. Prime transport multipliers of typeP+B,
+signed block-correlation linear forms without offsets, paired-dilation forms,
+and degree-two gcd/norm closure multipliers satisfy this condition. For example,
+(x_g²-h_g)*x_u*x_v has zero formal scalar despiteh_g!=0; no new scalar
+arithmetic appears by reducing the gcd quartic term. This must be checked on
+expanded AST instances rather than presumed from a family label.
+In that case the enlarged dictionary's scalar MODULE is the old one: shared
+weights may change, including the old rowmass-norm coefficientgamma, but every
+new column directly has zero scalar. For the existing mu rowmass groups the
+exact cubic coefficient remains
+ gamma=-[(56/3)b_all+12b_head+(20/3)b_tail].
+All new zero-scalar columns can help find nonconstant matching withgamma0;
+they cannot make a nonzero oldgamma disappear without changing those old scalar
+weights. If a generated atom introduces a genuine constant offset, fixed source
+mask or constant multiplier, it must be added to the general extraction/density
+proof rather than silently assignedzero. This exact audit is the smallest
+pre-score analytic guard for the forthcoming AST dictionary.

@@ -1,0 +1,21 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "fitted_constants": 0,
+  "generator_model_calls": 0,
+  "hashes": false,
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_split_bound_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "runtime_limit_seconds": 1800,
+  "schema": "core-bound-goal-run-v1",
+  "spec": {
+    "diagnostic_denominator_max": 12,
+    "energy_power": "0",
+    "linear_coefficient_radius": 2,
+    "maximum_residual_degree": 32
+  },
+  "supplied_rule_review": "CORE_MULTIPLE_RESIDUAL_RULE_REVIEW_017.txt",
+  "test_memory_limit_bytes": 2147483648,
+  "whole_signed_bound_proved": false
+}

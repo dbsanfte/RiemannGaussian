@@ -1,0 +1,34 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "fitted_constants": 0,
+  "hashes": false,
+  "input": "candidate10_cutoff_prefix_projection_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "numeric_cache_values_used": false,
+  "runtime_model_calls": 0,
+  "runtime_seconds": 1800,
+  "schema": "core-work-moment-proof-run-v1",
+  "spec": {
+    "epsilon": "1/1000",
+    "event_weights": [
+      "-1",
+      "-1/2",
+      "0",
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3",
+      "1",
+      "3/2",
+      "2"
+    ],
+    "moment_orders": [
+      "2",
+      "4"
+    ]
+  },
+  "total_operation_cap": 4000000000,
+  "unchanged_development_suites_rerun": 0,
+  "whole_signed_bound_proved": false
+}

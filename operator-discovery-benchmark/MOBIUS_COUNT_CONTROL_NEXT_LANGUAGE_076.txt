@@ -1,0 +1,113 @@
+EXECUTABLE RESIDUAL-CONSTRUCTION FEEDBACK AFTER076
+
+The count-power experiment is fixed. Its51 programs include43 finite
+survivors and8 exact refutations. None improves the full conditional bound
+or the innovation-paid part over the matching zero baseline. No retained
+formula uses several count powers on the same column. Do not turn finite
+survival, a smaller fitted residual, or a paid correlation lemma into a
+uniform residual theorem. Read MOBIUS_COUNT_CONTROL_POSTREVIEW_076.txt.
+
+The new module mobius_residual_pairing_076.py targets the actual residual.
+It is separate from the frozen count-power run. Its construction search
+has passed synthetic recovery/integration tests; a scientific search over
+these constructions has NOT yet run. No new postrun arithmetic source
+query was made. postrun_next_search_input.json contains51 bound jobs with
+the exact current formulas, dispositions, witnesses and remaining leaves.
+
+1. Shared ordinary-Mobius stencil
+
+For each source G(v), retain its four signed prefixes exactly. Compile
+G(u)-L(u) into components {parent, symbolic_weight}, including all prime
+quotient multiplicities and direct collisions. Count factors n^(-gamma)
+are named real tokens with rational coefficients and certified intervals;
+arbitrary admitted rational gamma is supported. Collect prefix endpoint
+events before expanding to a bounded sparse coefficient map c_u(n).
+
+The identity is R(u)=sum_n c_u(n)mu(n). Equal tokens/endpoints combine
+symbolically before interval evaluation. Prefix endpoints, mu(1), empty
+blocks and the full upper band remain present. All present operator
+children are at most u//2; consequently c_u(n)=-1 on u//5<n<=u//4.
+This is a support obstruction to coefficientwise annihilation by the old
+operator grammar, not an impossibility of cancellation across n.
+
+The compiler requires independently admitted actual prime child groups.
+Matching multiplicity totals alone do not prove their arithmetic
+completeness. Its source_admission_supplied flag stays false. Formal
+identities plus interval bounds are not substitutes for source admission.
+
+2. Search for exact arithmetic pairings
+
+For any prime p and any finitely supported coefficient function,
+ sum_n c(n)mu(n)=sum_(p does not divide m)(c(m)-c(pm))mu(m).
+Rows divisible by p^2 vanish because mu is zero. A row with exactly one
+p factor moves to n/p with a minus sign; all other rows remain. Merge
+the complete symbolic coefficients before measuring a bound. Terms that
+move across a support boundary are retained; outside coefficients are0.
+
+Iterating distinct primes P leaves gcd(m,product(P))=1 and coefficient
+ c_P(m)=sum_(d divides product(P))mu(d)c(dm).
+The implementation folds sparse maps without enumerating all subsets.
+Fold order gives the same exact coefficients, so the beam deduplicates
+prime sets while keeping an explicit verification schedule. It searches
+short schedules with a bounded width, ranks the exact coefficient l1
+upper bound, and NEVER receives observed Mobius values to select a path.
+Default primes2,3,5,7,11,13, depth3,width4 are an explicit finite pilot;
+other bounded prime choices and depths are supported.
+
+The l1 bound uses complete signed polynomial intervals at every remaining
+index, then |mu(m)|<=1. Thus it is a proved finite constructive bound,
+not a fitted residual maximum. It cannot increase under a correct fold.
+Square energy CAN increase through collisions; the search does not use
+an unproved l2 contraction. Removing all small-prime factors can also
+become an expensive way of evaluating a finite sum, rather than providing
+a uniform mechanism. No complexity or power-saving conclusion is free.
+
+3. Independent admission and test evidence
+
+check_mobius_residual_pairing_076.py imports no new producer. It reconstructs
+prefix coefficients, independently verifies each prime fold and retained
+coprime domain, and checks full coefficient interval bounds. certify_search
+requires those checks and compares the final proposed stencil/bound. It
+still requires source/token-enclosure admission from the arithmetic runner.
+Outputs explicitly keep uniform_bound_proved and RH_proved false.
+
+Nine producer/integration tests passed in9 executions. Eight independent
+checker tests passed in10 executions. The recovery fixture finds prime7
+as a cancelling pair, from symbolic coefficients alone; a separate test
+compares two folds against a small actual Mobius sequence. Other checks
+cover arbitrary fractional count roots, signs, squareful rows, unit terms,
+boundary tampering, order independence, a counterexample to l2 monotonicity,
+complete certificates, resource gates and preservation of false old bounds.
+No unchanged historical tests or scientific scale searches were rerun.
+
+The finite stencil checker currently reconstructs prefixes directly and
+uses conservative4096-bit input/100000-bit intermediate memory allowances.
+Its4GiB per-call and200000-term limits may reject substantially smaller
+inputs through prospective checks, especially many-component stencils.
+Do not bypass these gates. Before a large scientific pairing run, implement
+a separately checked streaming/coefficient-size-aware path if needed; its
+existing direct reconstruction is a useful small-domain reference checker.
+The producer uses endpoint events and prospective sparse/beam gates.
+
+4. What must be found next
+
+Run a frozen residual-construction experiment, with matching independently
+admitted prime child groups and certified count tokens. All3360 saved076
+parents, including the final240, are now known data for future work.
+The largest known ordinary arithmetic prefix is1310720. Do not present
+these parents as fresh holdout or regenerate old source as new evidence.
+
+Seek a family of constructions for which the folded coefficient bound
+is provably O(u^(q/2)), or retain a precise stronger signed-aggregate lemma
+when l1 is too expensive. Every retained gcd restriction, unit, upper/lower
+band interaction, count jump, endpoint and induction price must be paid.
+A finite winning schedule per parent does not prove one uniform family.
+An exactly refuted old C is NOT an admissible proof target: preserve its
+witness, and require any replacement bound to come from a new verified
+construction rather than a numerical increase. Open correlation leaves
+remain open even if the residual is transformed successfully.
+
+This is a new search of auxiliary constructions and certifiable finite
+bounds. It has not supplied the missing all-scale residual lemma, an
+epsilon-cofinal family, the original joined remainder/separable price,
+the full head/core transfer, or RH.

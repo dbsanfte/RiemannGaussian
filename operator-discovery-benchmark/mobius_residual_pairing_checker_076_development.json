@@ -1,0 +1,25 @@
+{
+  "schema": "residual-pairing-checker-development-v1",
+  "status": "PASS",
+  "distinct_tests": 8,
+  "successful_test_executions": 10,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 8,
+      "status": "PASS",
+      "output": "test_actual_generic_mu_identity (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_bound_signs_complete_intervals (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_combined_stencil_cancellation (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_iterated_domains (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_memory_before_expansion (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_prime_fold_signs_squares_and_boundary (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_prime_validation_and_canonical_support (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_stencil_prefix_boundary_and_unit (test_check_mobius_residual_pairing_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 2,
+      "status": "PASS",
+      "output": "test_iterated_domains (test_check_mobius_residual_pairing_076.Tests) ... ok\ntest_memory_before_expansion (test_check_mobius_residual_pairing_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.004s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "old_suites_run": false,
+  "hashes_used": false,
+  "delegation_used": false
+}

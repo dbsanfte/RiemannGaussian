@@ -1,0 +1,35 @@
+Independent producer audit084
+
+Source/evidence audit_mobius_coupled_square_084.py. First execution retained
+FAIL in mobius_coupled_square_independent_review_084.json: public factor
+helper allowed oversized513x513 matrix to reach eigensolver. A mock prevented
+allocation. Before this final assertion, six tiny anchored/unanchored primal
+and dual integrations, native R0+sumthetaBj identities, one tiny joint SCS
+proposal exact independent primal/dual admissions, conditional RH target
+kernel binding and cumulative exactfactor allocation rejection all passed.
+No historical science or old tests replayed.
+
+Producer fixed public factor helper: strict integer bits1..48, square ndarray,
+dimension<=512 BEFORE finite check/eigh; prospective64MiB+n²2048 reserve and
+20n³ charge. Targeted affected-only regression PASS recorded in
+mobius_coupled_square_independent_review_084_postfix_1791726907667511016.json.
+Oversizedmatrix, Booleanprecision and worklimit1 all reject before eigen.
+Audit source supports --resources-only; prior math/SCS not repeated.
+
+Independent source review confirms primal exactPSD factor product and full
+primeprojection; raw outer A is zeroed THEN ALL original positive Gram
+is subtracted, including outer entries. Native base and Bj reconstruct exact
+Rtheta. Dual lambda sign and u scaling match normalized SCS Lagrangian;
+fixed original Gram moves to equality RHS and is not optimized. FloatSCS
+outputs are proposal only: affinetheta reconstructed exact, PSD primal and
+unit-diagonal dual factors dyadic exact, independent admission required.
+Positivepart rounding and zero-factor fallback may alter optimization quality
+but cannot invalidate exact admission. Unitrows are explicitly exactnorm
+checked. Cumulative solve templates/native estimates are conservative; SDP
+and basis released before exactfactor work; current512/rank/128bit/dyadic
+gates bound remaining buffers. No current blocking issue found.
+
+Known unit/primes are structural signs; unknown composite signs and observed
+full source values are unused. Finite primal/dual certificate-method bounds
+are not true signed drift lower bounds or uniform obstructions. Conditional
+RH target leaves all-j/all-u arithmetic unpaid; no source/RH proved.

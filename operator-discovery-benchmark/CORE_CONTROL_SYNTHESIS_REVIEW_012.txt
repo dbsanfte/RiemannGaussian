@@ -1,0 +1,172 @@
+COMPLETE TRANSPORTED-CORE STORAGE AND CONDITIONAL CONTROL CERTIFICATES
+
+Scope
+-----
+This review and the new independent checker/tests/development receipt are
+the owned new files. No old/frozen source, artifact or review is modified;
+no actual-source arithmetic or numerical research experiment is performed.
+The independent checker never imports the producer/control module. Tiny
+test values are unrelated signed synthetic coefficients and exact rational
+proof examples. The original complete-source binding, transport checks and
+critical-pole witness require their separate independent audit.
+
+1. Exact storage, units and all signed crosses
+---------------------------------------------
+Let G(n) be the full prefix of the complete transported coefficient g, Bg
+its FULL logarithmic bank, and D=F-G the complete transport-prefix error.
+The global bank includes all completed-window logarithmic mismatches from
+review011. Zero index is zero; g(1) and G(1) retain the original unit.
+
+Choose either no auxiliary, with mix0/reserve1, or
+ Q(n)=n^(-alpha) times one of
+       Bg(n)/log(2n), G(floor(n/2)), D(n),
+where alpha is a fixed canonical nonnegative rational. Mix m is any fixed
+canonical rational and reserve r is a fixed positive canonical rational.
+At n1 the log denominator is log2, not log1, while Bg1=0. Half delay uses
+G0=0. No old head or bank prefix is deleted when n exceeds a cutoff.
+
+Define for every dyadic X>=1
+ A(X)=X^(-2) sum_(n=X)^(2X-1) [(G(n)+mQ(n))^2+rQ(n)^2].
+This squares the COMPLETE mixed scalar before adding reserve; all its
+internal signs and target/auxiliary crosses remain. It is not replaced
+by G^2+m^2 Q^2+rQ^2. No absolute value or clipping is applied to Q.
+The null program is exactly the baseline E_G, not a new arithmetic bound.
+
+For EVERY real pair G,Q,
+ c=1+m^2/r,
+ c*[(G+mQ)^2+rQ^2]-G^2
+                          =[mG+(m^2+r)Q]^2/r>=0.        (1.1)
+Thus E_G(X)<=c A(X). This constant is sharp: equality occurs at
+Q=-mG/(m^2+r), including m0/Q0. It is independent of alpha, of the
+auxiliary's own size and of any unproved cancellation or companion bound.
+Strict r>0 is essential; a zero reserve can conceal G entirely by Q=-G/m.
+
+2. Full-source recovery and critical boundary
+---------------------------------------------
+For the fixed global transport program, review011 proves unconditionally
+ E_D(X)<=25 X^e, e=2theta-5/3,
+ E_F(X)<=2E_G(X)+2E_D(X)
+                            <=2c A(X)+50 X^e.            (2.1)
+Failed windows are kept whole, so this requires no prime-count threshold.
+The original complete F and its original corrections/recovery chain are
+retained. The storage domination is not a claim that A itself is bounded.
+
+For theta<=5/6, e<=0, a fixed-polylog or all-epsilon cofinal A bound gives
+the corresponding cofinal E_F bound. Theta5/6 is INCLUDED: its constant50
+payment introduces no positive power or extra logarithmic degree. At
+theta>5/6, (2.1) contains a positive power loss, so this certificate does
+not supply critical cofinal recovery without an additional error estimate.
+It does not analytically refute every larger-theta program.
+
+The known critical witness belongs to ORIGINAL f, not to a newly assumed
+meromorphic source g. If that independently verified witness has a surviving
+critical double pole, the prior Mellin estimate excludes E_F=O(log^p X)
+with p<2. Therefore for theta<=5/6 a proposed A=O(log^p X), p>=0, is also
+excluded when p<2, by (2.1). This applies AT theta5/6 without asserting a
+meromorphic double pole for g. It is a composition of two proved recovery
+rules with the original source-bound witness. A supplied boolean is only
+the API's external verified-witness token; this checker does not establish
+that token's source/zero/noncancellation facts. Unverified tokens cannot
+be promoted by finite storage measurements or a witness file's existence.
+
+3. Universal recurrence premise and exact log-degree consequence
+----------------------------------------------------------------
+Let rho be1/2 or1, k a fixed nonnegative rational, and C a fixed integer>=1.
+The proposed premise is
+ A(2X)<=rho A(X)+C(1+log2 X)^k for EVERY dyadic X>=1.      (3.1)
+Finite base A(1) is retained. Put X=2^j, so 1+log2 X=j+1 is an EXACT
+integer, never log(2X) with natural logarithm. Finite sampled inequalities
+are not the universal quantifier in(3.1).
+
+If rho<1, nonnegativity and induction give
+ A(2^j)<=A(1)+[C/(1-rho)](1+j)^k
+                  <=[A(1)+C/(1-rho)](1+j)^k.             (3.2)
+If rho1, summing the increments gives
+ A(2^j)<=A(1)+C j(1+j)^k
+                           <=[A(1)+C](1+j)^(k+1).        (3.3)
+Hence conditional_log_degree is k for rho1/2, k+1 for rho1.
+For cofinally paid transports the verified original pole witness rejects
+the resulting degree below2. No C0 shortcut is used: the present grammar
+fixes C>=1. A recurrence beginning after a declared finite head needs that
+head and base to be included explicitly; this API's primary domain isX>=1.
+
+These arguments are generic proof rules a detector can compose. They do
+not require hand-selecting a storage vector or prove any generated full
+core recurrence. A generated A hypothesis remains OPEN unless (3.1) is
+actually established with its complete domain and source.
+
+4. Independent implementation and interval decisions
+----------------------------------------------------
+Public APIs in check_core_control_synthesis.py:
+ validate(program,meter=None)->True;
+ measure(state,program,X,meter)->finite Arb storage;
+ certificate(program,shape,transport_program,
+             pole_witness_verified=False,meter=None)->JSON metadata;
+ check_test(storage_by_scale,parents,shape,C,meter)->decision rows.
+The optional metadata meter makes validation/certificate work accountable
+when called in the shared stage; arithmetic measurement/testing requires
+the supplied meter. Tests supply their own cumulative meter throughout.
+
+Exact input schemas are program{auxiliary,mix,reserve}, nonnull auxiliary
+{kind,alpha}, shape{rho,log_power}, and the independently specified fixed
+global transport{cofactor,theta,capacity_fraction,load_multiple,
+keep_failed_windows}. Scalar rationals must be canonical strings with
+bounded4096-bit numerator/denominator. Boolean-as-integer inputs are
+rejected. Independent arithmetic uses Arb192 precision, finite checks and
+charged power/log blocks. It does not silently clamp nonfinite values.
+
+State arrays g,G,Bg,D have matching complete zero-based shapes. Measure
+checks the required finite scalar indices and support through2X-1; it does
+not rebuild every prefix for every candidate. Complete source arithmetic,
+g/G/Bg linkage, D=F-G, horizon ownership and transport validity belong to
+the separate independent transport checker, not to a synthetic array's
+shape alone. The record must bind to that verified state before recovery
+is used. Alpha/reserve/mix are fixed program parameters, not fitted by a
+different window or changed after viewing validation responses.
+
+check_test requires a strict frozen C, increasing distinct dyadic parents
+and complete parent/child storage. For each parent it forms the full Arb
+drift A(2X)-rho A(X) and bound C(1+log2 X)^k. It reports
+ pass if the entire inequality is certified;
+ fail if its strict violation is certified;
+ unresolved if the intervals overlap the decision boundary.
+Invalid/missing/nonfinite domain is explicit failure, not a silently
+omitted test or pass. Certified-negative storage intervals are rejected;
+an interval containing nonnegative storage is not clipped to make the
+recurrence pass. Source state must be verified independently as above.
+
+Certificate metadata keeps the domination and full-target constants,
+error power, conditional log degree, cofinal gate, externally verified
+pole-token gate and explicit uniform premise separate. It never marks
+uniform_premise_established, all_scale_storage_bound_proved,
+all_scale_target_bound_proved or RH_proved true from finite tests.
+
+5. Proof provenance and unresolved arithmetic
+---------------------------------------------
+The detector can now generate full control hypotheses rather than only
+transport parameters: positive coercive storage with signed internal
+coupling, proposed recurrence shape, frozen training constant, conditional
+recovery and algebraic pole exclusions. This is genuine bound synthesis,
+but finite validation remains evidence for an OPEN all-scale premise.
+The recovery/recurrence theorem rules are supplied analytic inputs; the
+generated storage and bound ASTs need their own provenance in records.
+
+No closing inequality for the actual complete transported source is
+proved here. In particular positivity of A, a favorable cross, removal
+of large prime coefficients, a finite pass or satisfaction of necessary
+pole log degree is not a sufficient arithmetic estimate. Full prefix,
+composite/prime-power, center, unit and history interactions remain in the
+universal recurrence. All original global/RH claims stay false/open.
+
+Owned development verification
+-------------------------------
+The sole full synthetic invocation ran8 tests and consumed9,817 metered
+operations. Six passed; two stopped in test-only fixture copies because
+Python deepcopy does not support Arb scalars. Those fixture copies were
+replaced by explicitly metered Arb/list copies. The two affected tests
+alone were rerun and both passed, consuming2,681 operations. All eight
+tests are now covered successfully; unchanged tests were not rerun.
+Cumulative owned work is12,498 operations across these two invocations.
+Both return codes, work receipts and captured outputs are retained in
+core_control_checker_development.json. No actual-source experiment was
+run. Checker/test/review edits are stopped for the frozen combined suite.

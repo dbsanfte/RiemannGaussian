@@ -1,0 +1,141 @@
+FINITE PRIME OBSTRUCTION042: NEGATIVE GRAMMAR CALIBRATION, SOURCE BOUND OPEN
+
+This certificate concerns ANY FIXED FINITE set P of distinct actual primes.
+It rejects an inference to centered uniform subpower energy from only unit,
+coefficient absolute bound and the registered prime laws. It is not a
+counterexample to the actual all-prime source,041's universal source binding,
+an actual covariance proof, or RH. No actual source proof bug is claimed.
+Every all-scale leaf left OPEN by041 remains OPEN.
+
+1. Construction and retained local premises
+
+Let0<r<1/2 be rational, theta=1-r, and integer q>=2. For each p in P set
+ v=p^-r in(0,1), u_P(p^e)=(v-1)v^(e-1), e>=1.
+For every p outside P set u_P(p^e)=1, e>=1, and set u_P(1)=1.
+Extend multiplicatively. This retains EVERY valuation at each registered
+prime, including adjunction's coprime and divisible branches, and |u_P(n)|<=1.
+There is no squarefree shortcut. There is no requirement that q belong to P;
+synthetic tests include both registered q and unregistered/composite q.
+
+Let ell be the first actual prime outside P. Then u_P(ell)=1, while the actual
+local coefficient law requires ell^-r-1 in(-1,0). The signed gap is
+ 1-(ell^-r-1)=2-ell^-r>1.
+The producer certifies ell is prime and no earlier prime is missing. This
+explicitly exposes the failure to retain the universal all-prime binding.
+
+2. Exact divisor convolution and summable norm
+
+Set u_P=One*h_P. At a registered prime the formal local series are
+ U(t)=(1-t)/(1-vt), H(t)=(1-t)U(t)=(1-t)^2/(1-vt).
+The numerator multiplication is the exact rational polynomial identity
+ (1-t)*(1-t)=1-2t+t^2.
+The local h coefficients are
+ h(p^0)=1, h(p)=v-2, h(p^e)=(1-v)^2*v^(e-2), e>=2.
+At an unregistered prime U(t)=1/(1-t) and H(t)=1, so h(p^e)=0 for e>=1.
+Thus h is supported on the P-smooth integers. Its local absolute sum is
+ 1+(2-v)+(1-v)^2*sum_(e>=2)v^(e-2)=4-2v<=4.
+Finite product factorization of the absolutely summable multiplicative
+coefficients, or Tonelli for their nonnegative absolute values, gives
+ sum_d|h_P(d)|=product_(p in P)(4-2p^-r)<=4^|P|.
+For empty P, h=delta and the empty product is1.
+
+Define D_q=delta-q delta_q, g=D_q*h_P and c=D_q*u_P=One*g. Then
+ sum|g(d)|<=(q+1)*sum|h_P(d)|<=L=(q+1)4^|P|.
+All rearrangements below are absolutely justified, including the dilation
+head, since sum|h(d)|/d and sum|g(d)|/d are finite. The harmonic moment is
+ sum g(d)/d=(1-q/q)*sum h_P(d)/d=0.
+For EVERY real x>=0,
+ prefix(c)(x)=sum_d g(d)floor(x/d)
+            =sum_d g(d)(floor(x/d)-x/d).
+The first sum has only finitely many nonzero floor terms; the second includes
+ALL infinitely many d>x terms as well. Since |floor(y)-y|<=1 for y>=0,
+ |prefix(c)(x)|<=sum|g(d)|<=L.
+No divisor cutoff or missing floor tail is used to obtain this bound.
+
+3. Centering obstruction and exact threshold
+
+Retain the external analytic scalar kappa=(1-q^r)/(theta*zeta(theta)), with
+the input assumptions0<k<=kappa<=K for positive rational k and integer K.
+The generator NEVER verifies or evaluates this scalar. Root's independent
+checker must certify these assumptions separately before admission.
+Set J(x)=prefix(c)(x)-kappa*x^theta, with J(0)=0.
+Then |J(x)|>=k*x^theta-L and |J(x)|<=K*x^theta+L.
+
+Write theta=a/b in lowest terms. The generator chooses the SMALLEST dyadic
+X0=2^j, j>=0, for which
+ (k/(2L))^b*X0^a>=1,
+using only exact integer exponentiation and comparison. The certificate
+exposes the reduced ratio, a,b,powered numerator/denominator,lhs/rhs,j,X0,
+and minimality. At j>0 the previous dyadic fails. No approximate powers,
+logarithms or actual coefficient/normalization values enter this threshold.
+Monotonicity implies k*n^theta>=2L for every n>=X0. Consequently
+ |J(n)|>=k*n^theta/2.
+For EVERY integer X>=X0, all X terms in the dyadic energy satisfy that bound:
+ E_J(X)=X^-2*sum_(X<=n<2X)J(n)^2
+       >=(k^2/4)*X^(2theta-1)=(k^2/4)*X^(1-2r).
+The exponent is strictly positive. Choosing epsilon=(1-2r)/2 shows that no
+constant independent of X can give E_J(X)<=C_epsilon X^epsilon for this fake.
+This is a uniform mathematical statement about the constructed fake model,
+not a finite observed inequality, and not an actual-source energy theorem.
+
+4. Essential source/global-identity exclusion
+
+The fake has Dirichlet series
+ zeta(s)*H_P(s), H_P(s)=product_(p in P)(1-p^-s)^2/(1-p^(-(s+r))).
+After D_q it becomes (1-q^(1-s))*zeta(s)*H_P(s). The period factor cancels
+the zeta pole at1. At theta=1-r, each denominator is1-p^-1!=0 and zeta(theta)
+has no pole, so this fake periodic series has NO theta pole.
+Thus the retained external kappa is NOT this fake's own analytic residue.
+The actual centered source's global meromorphic identity/residue relation is
+not preserved. A grammar that enforces that identity already excludes this
+fake, as does041's universal all-prime coefficient binding. The obstruction
+therefore calibrates rules restricted to finitely many prime laws together
+with an externally imposed center. It must never be promoted to a refutation
+of the complete source definition, its RH bridge, or RH itself.
+
+5. API, certificate and exact-resource domains
+
+ generate_certificate(primes,r_text='1/3',q=2,k_text='1/10',K=1,meter=None)
+ dyadic_threshold(theta_text,k_text,L,meter=None)
+ validate_primes(primes,meter=None), first_missing_prime(primes,meter=None)
+
+Schema finite-prime-obstruction-v1 contains sorted distinct actual primes,
+canonical rational r,theta,k,integer q,K,scalar assumptions, exact local
+polynomial/coefficient templates, universal local norm domination, harmonic
+null/floor-tail identities,L,first missing prime and violated law,exact
+dyadic threshold,positive energy exponent and constant,explicit global
+source mismatch,and work/maximum-integer-bit counts. Literal false flags
+cover source_counterexample,covariance_bound_proved,actual_all_prime_bound_proved,
+RH_proved,RH_refuted,actual_source_values_generated and
+actual_normalization_evaluated. Actual scalar admission is an independent step.
+
+Every represented rational must be canonical, with parameter bit cap4096.
+The implementation accepts finite prime lists of at most1024 entries; this
+and8192-bit exact-result guard are resource limits, not mathematical limits
+on the ANY fixed finite P statement. It uses exact trial-division primality,
+with a charged preflight before long scans. Meter defaults to10m operations
+and60seconds. Exact exponentiation is rejected BEFORE executing a power if
+its conservative estimated integer size exceeds8192bits. Huge denominators
+may therefore return a resource rejection, rather than a float approximation
+or false certificate. Rational denominator257 is covered by focused tests.
+No nominated finite exponent/root bank is built into the proof statement.
+
+synthetic_local_h(v,e),synthetic_u(n,local_values),synthetic_h(n,local_values)
+accept only injected rational v in(0,1). They are test helpers, not actual
+p^-r evaluators. They independently factor registered prime valuations and
+never build actual source arrays. All owned test invocations are metered and
+recorded by the test file's main entrypoint.
+
+6. Focused development receipt
+
+One new owned invocation ran11 tests,0 failures/errors,80359 charged operations,
+peak estimated integer size3855bits,0.04161487001692876seconds. Tests cover
+all local valuations via exact divisor differences,geometric-tail l1 norms,
+multiplicative divisor convolution,registered adjunction with unregistered
+factors,complete periodic divisor prefixes,all-real toy bounds,harmonic-null
+identity,exact minimal dyadic thresholds including denominator257,empty P,
+missing q/composite q,first missing prime,scope flags,malformed parameters and
+resource preflight. Only injected rational locals and formal certificates were
+used. No actual source array,actual scalar,041 study,old suite or hash was run.
+Producer edits stop after this focused implementation/test/receipt cycle;
+root owns independent admission,additional global checks and publication.

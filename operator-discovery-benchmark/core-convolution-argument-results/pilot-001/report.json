@@ -1,0 +1,141 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "arithmetic_U_power_advantage": false,
+  "arithmetic_log_degree_advantage": 2,
+  "auxiliary_period_bound": {
+    "L_power": "0",
+    "U_power": "3",
+    "constant": "38519631/4",
+    "log_degree": 8
+  },
+  "bounded_weight_comparison": {
+    "L_power": "0",
+    "U_power": "3",
+    "constant": "4279959",
+    "log_degree": 10
+  },
+  "development_operations": 7827038,
+  "divisor_arguments": 8,
+  "elapsed_seconds": 17.30614683800377,
+  "fitted_constants": 0,
+  "floor_columns": 18,
+  "formal_proof_assistant_verified": false,
+  "full_component_bound_proved": false,
+  "geometries": 51,
+  "geometry_thresholds": 285,
+  "inclusive_operations": 15313316,
+  "inherited_source_bindings": 144,
+  "main_peak_rss_kib": 704032,
+  "missing": "uniform signed finite-window covariance of the COMPLETE joined hyperbola branches and outer-kernel/centering recovery; fixed-period estimates do not pay this",
+  "period_obstruction": {
+    "applies_only_to": "full-period covariance of A^p*e at decay zero with actual Mobius coefficients",
+    "asymptotic": {
+      "U_power": 3,
+      "imported_theorem": "pi(x)~x/log(x)",
+      "log_denominator_degree": 3,
+      "scope": "positive implied constant for all sufficiently large U; no effective threshold claimed",
+      "source": "https://dlmf.nist.gov/27.2.E3"
+    },
+    "coefficient": "-6",
+    "conductor": "product of k distinct primes from the declared interval",
+    "finite_window_lower_bound": false,
+    "full_core_refuted": false,
+    "higher_cofactors_zero": "a short factor containing q>U/2 cannot absorb any further integer>=2",
+    "jordan_ratio_lower": "J2(r)/r^2>=1/2 by the telescoping product over all integers>=2",
+    "lower_coefficient": "3/2",
+    "number_of_distinct_primes": 3,
+    "p": 2,
+    "prime_interval": "U/2<q<=U",
+    "uniform_lower_bound": "Var >= lower_coefficient * binom(pi(U)-pi(U/2),k)"
+  },
+  "runtime_model_calls": 0,
+  "selected_cutoffs": {
+    "alpha": "1/6",
+    "beta": "5/6"
+  },
+  "selected_finite_head": [
+    {
+      "key": [
+        "C",
+        "C",
+        "C"
+      ],
+      "value": "1"
+    },
+    {
+      "key": [
+        "C",
+        "r",
+        "r"
+      ],
+      "value": "3"
+    },
+    {
+      "key": [
+        "C",
+        "r",
+        "t"
+      ],
+      "value": "-6"
+    },
+    {
+      "key": [
+        "r",
+        "r",
+        "r"
+      ],
+      "value": "1"
+    },
+    {
+      "key": [
+        "r",
+        "t",
+        "t"
+      ],
+      "value": "-3"
+    }
+  ],
+  "selected_geometry": 5,
+  "selected_one_e_coefficient": [
+    {
+      "key": [
+        "C",
+        "C"
+      ],
+      "value": "3"
+    },
+    {
+      "key": [
+        "C",
+        "t"
+      ],
+      "value": "6"
+    },
+    {
+      "key": [
+        "t",
+        "t"
+      ],
+      "value": "3"
+    }
+  ],
+  "selected_spacing_cost": {
+    "actual_arithmetic_lower_bound": false,
+    "coefficient_U_power": 2,
+    "coefficient_amplitude": "2025/4",
+    "coefficient_divisor_depth": 7,
+    "denominator": {
+      "N_power": "1/3",
+      "U_power": 3
+    },
+    "finite_head_and_cross_paid": false,
+    "normalized_spacing_cost_power": "-11/24",
+    "optimistic_zero_amplitude_cost_power": "-5/8",
+    "outer_kernel_and_centering_paid": false,
+    "scope": "cost of separate periodic-spacing argument divided by N^2; not a core energy bound"
+  },
+  "status": "CONVOLUTION_ARGUMENT_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 7486278,
+  "whole_signed_bound_proved": false
+}

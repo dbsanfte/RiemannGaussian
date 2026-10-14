@@ -1,0 +1,57 @@
+LOCAL DIVISOR AUDIT FOR RATIONAL POWERS OF ORDINARY ZETA
+
+This is a guided analytic calibration, not an autonomous operator discovery
+or a new held-out arithmetic search. It supplies a general branch rejection
+rule to the rational-power detector. A proved local obstruction is sufficient
+to reject a claimed holomorphic continuation over an entire half-plane.
+
+Let a=p/d be reduced, d>0. For a meromorphic function f with local divisor
+order m at s0, f(s)=(s-s0)^m g(s), g nonzero and holomorphic locally. Analytic
+continuation of f^a around s0 multiplies a chosen branch by exp(2*pi*i*a*m).
+It is single-valued locally only if a*m is an integer. It extends holomorphically
+across s0 only if that integer is nonnegative. These are exact rational tests.
+
+The argument principle gives the divisor order from a certified contour:
+(2*pi*i)^(-1) integral f'(s)/f(s) ds=number of zeros-number of poles.
+The producer encloses each boundary segment with native complex balls and
+certifies f!=0 there; native rigorous integration encloses the contour integral
+and isolates one integer. The independent audit uses a different larger
+rectangle, finer boundary partition and higher precision. Known dependency:
+ordinary zeta is meromorphic with its sole pole, simple, at s=1.
+
+For the small rectangle around one the certified winding is -1. Adding the
+one known pole gives zero enclosed zeros. The larger independent rectangle
+also encloses zero zeros and contains the producer's rectangle. Thus the pole
+has local order m=-1 and zeta^a has order -a. For every noninteger rational
+a, including a=-1/2,-1/3,-1/6, this is a branch obstruction inside Re(s)>1/2.
+For integer a>0 it is an ordinary pole; for integer a<=0 there is no local
+obstruction at s=1. An integer-order single-valued holomorphic multiplier
+cannot cancel a nonintegral order. Thus a finite analytic multiplier outside
+the fractional power does not remove this branch obstruction.
+
+Taking a power AFTER combining divisors is different: ((s-1)zeta(s))^a
+has local order a*(1-1)=0 and admits a nonzero local holomorphic branch at
+s=1. This verifies only a local pole repair. It does not prove a global branch,
+signed arithmetic bounds or exclusion of ordinary zeros. The same general
+valuation addition rule works at other zeros and poles; it does not assert
+that all their locations have been found.
+
+At the already independently certified simple ordinary critical zero the
+order is m=1. All noninteger powers have nontrivial local monodromy there.
+This is not a counterexample to an RH half-plane Re(s)>1/2: the critical zero
+is on its boundary. It checks that the detector retains the original branch
+obstruction rather than discarding it through a numerical branch convention.
+
+A negative power has a singularity at EVERY ordinary zero, whatever its
+positive multiplicity. A positive fractional power need not: if d divides
+the zero multiplicity, the local order can be a nonnegative integer. Merely
+proving a positive fractional power holomorphic is therefore insufficient
+to exclude all possible ordinary zeros. Its required zero bridge must track
+all multiplicities, or prove a nonzero inverse or another stronger property.
+
+Consequently no naive zeta^(-p/d) coefficient bound may be labelled RH-sufficient
+without handling its pole-induced branch at one. The current fractional
+moment pilot instead takes signed powers of an already zero-faithful linear
+Mobius residual and recovers its original effective moment order. That pilot's
+conditional Mellin bridge is unaffected by this additional negative calibration.
+No uniform signed arithmetic estimate or RH proof is established here.

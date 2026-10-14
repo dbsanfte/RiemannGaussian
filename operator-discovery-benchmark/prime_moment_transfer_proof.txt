@@ -1,0 +1,142 @@
+ARITHMETIC MOMENTS AS PRIME-COUNT TARGETS WITHOUT A QRH-SPECIFIC TEMPLATE
+7 October 2026. Universal transfer laws and six independent audit gates pass.
+Known inequality framework. No new global prime estimate or historical novelty.
+
+1. A GENERIC SUPPORT-MOMENT CONTRACT
+
+Let I be any finite index set, w_n>=0, W=sum_I w_n, and S a marked subset.
+Suppose |b_n|=1 for n in S and |b_n|<=delta<1 for n outside S.
+For any integer k>=1 put
+
+ C=sum_(n in S) w_n, M_(2k)=sum_(n in I) w_n |b_n|^(2k),
+ beta=delta^(2k).
+
+Pointwise positivity and the gap imply
+
+ C <= M_(2k) <= C+beta*(W-C).
+
+For any independently certified enclosure M_lo<=M_(2k)<=M_hi,
+
+ max(0,(M_lo-beta*W)/(1-beta)) <= C <= min(W,M_hi).         (1)
+
+This applies to arbitrary complex scores, finite sets, nonnegative weights
+and every scale. The caller must prove the score normalization, gap,
+weight and moment-enclosure premises. Merely evaluating the right-hand
+side does not certify those premises. The API rejects delta>=1 and
+inconsistent moment/weight inputs. No prime or zeta object is needed to
+discover or prove the generic transfer.
+
+2. DISCOVERY AND UNIVERSAL AFFINE CERTIFICATION
+
+The search fits unknown homogeneous affine forms a*M+b*W from generic
+saturation cases: marked scores of modulus one, and unmarked scores of
+modulus zero or delta. It uses the existing exact rational fitting backend,
+with no QRH-specific character, exponent or theta object. Three gaps and
+four moment orders give twelve learned pairs of inequalities. Fresh
+lengths, score magnitudes and nonuniform rational weights are held out.
+
+Each fitted lower form is proved by a+b<=1 on marked scores and
+max(b,a*beta+b)<=0 on unmarked scores. Each upper form is proved by
+a+b>=1 and min(b,a*beta+b)>=0. Affineness in the per-index moment means
+that checking both endpoints proves the whole interval. Multiplication
+by every nonnegative weight and summation prove all-set scope.
+The sharp fitted lower coefficients are 1/(1-beta),-beta/(1-beta);
+the upper coefficients are 1,0. Training only on zero unmarked scores
+would fit the false equality C=M; an unmarked score 1/4 refutes it.
+These are elementary support/positivity inequalities, not novel primitives.
+
+3. AN ALL-SCALE ORDER SELECTION CERTIFICATE
+
+If epsilon=M_hi-M_lo, the width of the clipped interval (1) is at most
+
+ (epsilon+beta*W)/(1-beta).                                 (2)
+
+For an integer-valued C, a certified width strictly below one implies
+at most one integer lies in the interval. Existence follows from the
+score and moment premises. Ceil of the lower endpoint and floor of the
+upper endpoint then recover C exactly. This is not rounding the raw
+moment or extrapolating from a finite table.
+
+For desired width tau>epsilon, the strict sufficient condition is
+beta*(W+tau)<tau-epsilon. The order compiler increases k until this
+exact rational inequality holds. It terminates for every finite W
+because 0<=delta<1. The least order is verified by checking k-1 too.
+With fixed delta and error margin, k grows proportionally to log(W+1).
+Changing operator order with scale must be stated explicitly; this
+does not prove a fixed-order asymptotic estimate or critical-strip limit.
+
+4. ZETA-DERIVED SCORES AND ACTUAL PRIMES
+
+fractional_prime_proof.txt proves B_alpha(p)=1 at every actual prime
+and |B_alpha(n)|<=2^(1-alpha)-1 at every composite n. Thus the generic
+contract applies to S=actual primes on ANY finite interval, residue set,
+or nonnegative weighted window, for every scale. No prime-power term is
+silently counted as a prime. At alpha=1/2 we use the certified rational
+upper gap delta=5/12>sqrt(2)-1.
+
+The production score algorithm uses the complete constant-one zeta
+coefficient prefix, divisor inversion and perfect-power placement.
+Neither it nor the moment/count program takes prime labels as input.
+Labels are used only for scoring and independent verification. The
+coefficient computation still performs arithmetic work; no fast counting
+or new distribution theorem is asserted.
+
+Sixteen finite moment groups cover prefixes through 4096, a final block,
+and residues modulo three and seven. Eight compiler-selected moments
+give a unique integer count. For 2<=n<=4096, order two only brackets the
+count by 35..739, whereas the tenth coefficient moment certifies exactly
+564. The tested residue counts are 277 for n=1 mod 3 and 97 for n=3 mod 7.
+These energy VALUES are finite observations. The score gap, transfer and
+order-selection laws have separate universal proofs above.
+
+5. A GLOBAL FOURIER-FAMILY MOMENT TARGET, WITH ITS DOMAIN
+
+Let the support indices be distinct modulo an integer H>=1. Put
+
+ A_u^(k)=sum_I sqrt(w_n)*B_alpha(n)^k*exp(2*pi*i*u*n/H).
+
+Complete finite-character orthogonality gives
+
+ sum_(u=0)^(H-1)|A_u^(k)|^2 = H*M_(2k).                    (3)
+
+Thus an independently certified global second-moment enclosure for this
+actual arithmetic family supplies M_lo,M_hi in (1) by division by H.
+Any interval of length at most H satisfies the residue-injectivity premise.
+The modulus need not be prime. With aliases, the left side instead groups
+coefficients sharing a residue, and (3) need not hold. Four all-one scores
+at modulus two have row energy 16, versus the false diagonal value eight.
+
+Coefficient moments sum |b_n|^(2k), whereas ordinary circle even moments
+integrate |sum b_n z^n|^(2k). They differ already for 1+z at k=2: two
+versus six. The correct circle analogue of M_(2k) is the SECOND moment
+of the coefficientwise-power polynomial sum b_n^k z^n. The grammar and
+audit explicitly reject substituting the ordinary fourth moment.
+
+6. INDEPENDENT VERIFICATION AND THE REMAINING ARITHMETIC TARGET
+
+check_prime_moment_transfer.py imports only independent checkers in its
+mathematical section. It recomputes all 4095 half-order decoder coefficients
+by factor/subset differences at 512 bits, checks actual prime counts with
+complete native primality tests, and encloses every finite moment anew.
+It checks learned affine certificates on changed weighted complex inputs.
+Six complete native Fourier groups include prime and composite moduli,
+changed powers, and a shifted block near 3073. Both alias controls fail
+the inappropriate diagonal/circle substitutions as required. The separate
+public API section imports production code, verifies 38 programs, least
+order controls through weight 10^12, and thirteen invalid contracts.
+All six audit gates pass. Artifacts: prime-moment-results/.
+
+The least-prime-factor envelope now supplies an all-scale moment upper
+bound from a published rough-number theorem; see prime_roughness_moment_proof.txt.
+For B_(1/2), M4([X,2X])<=4*X/log X for every integer X>=2, and the
+injective Fourier family has second moment <=4*H*X/log X. At the critical
+envelope exponent a loglog cost remains. This is imported classical prime
+information, not a new independent distribution estimate. The next target
+is a stronger estimate, useful main term, or arithmetic cancellation
+structure beyond this envelope. The count transfer alone re-encodes
+recognition. Bounds from a different coefficient family, such as
+Rudin-Shapiro, cannot be substituted.
+The fractional decoder's two certified ordinary-zero branches do not
+automatically transfer to its coefficientwise powers or moment families.
+Ordinary-zero sensitivity and any critical-strip/global estimate require
+separate proofs. No QRH/RH proof or verified historical novelty results.

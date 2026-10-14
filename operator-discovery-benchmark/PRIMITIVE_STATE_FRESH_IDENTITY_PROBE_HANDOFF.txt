@@ -1,0 +1,101 @@
+Publication027: fresh assignments and two independent necessary equations
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-fresh-identity-probe-001
+
+Verified result
+Both fixed X9/H35 probes refute the universal formal nonconstant identity
+proposed by the exact publication026 recovered point. Independent scalar
+evaluation confirmed residuals24734 and54218 modulo65537. All denominators
+being reduced are invertible at that fixed prime; no alternate prime or
+assignment was selected after evaluation.
+
+Both exact necessary rows add independent constraints to the licensed
+publication024 rank780 chart. Sequential elimination gives coefficient and
+augmented ranks782/782, leaving442 free projected coordinates. There is no
+contradiction and no infeasibility result for the formal family. The current
+point is rejected; no repaired point, cone optimization or admitted candidate
+was produced in this job. Signed arithmetic control and RH remain unresolved.
+
+Fixed cases and exact feedback
+Case00: u_n=2n+1 for1<=n<=35. RHS=-10834581. Residual24734 mod65537.
+The row is independent: new projected pivot160, normalization2612052,
+776 elimination multipliers,100 residual terms, rank781/free443.
+Case01: u_n=(-1)^n*(n^2+1) for1<=n<=35. RHS=-2564258.
+Residual54218 mod65537. Reduced after case00, it is also independent:
+new projected pivot170, normalization=-7288090740/1961,
+777 elimination multipliers,98 residual terms, rank782/free442.
+Each original1957-coordinate row has1948 nonzero entries. Its exact zero
+complement is0,1592,1593,1594,1595,1596,1597,1717,1837.
+
+The publication saves constraint-00.json, constraint-01.json and
+affine-extension.json. The extension contains exact elimination multipliers,
+residuals and both normalized appended rows; it references the already
+verified024 chart, not a duplicate full chart. Reuse that chart's779 original
+normalized_rows plus appended_row148, then add new rows160 and170. The
+new rows are discovery data from now on, never held-out evidence.
+
+Detector changes
+The direct evaluator accepts explicit integer assignments of length4X-1,
+absolute values<=4096, for X1..9. It preserves the complete mu/q6/C32 grammar:
+366 squares,613 signed relation families, five constant slacks and360 Gram
+coordinates. Actual prime/factor structure is used throughout the finite
+domain, but actual Mobius signs are not substituted.
+
+The producer evaluates the assignment and all-zero baseline in QxQ, including
+u1=0 in the baseline. Products are evaluated before baseline subtraction.
+The independent checker instead performs two scalar passes per case. No
+primitive polynomial relation is silently set to zero; all offdiagonal Gram
+factors and the child-minus4parent storage term are retained. No symbolic
+polynomial expansion is built. Projection verifies all signed and storage
+column dependencies before restriction to1224 coordinates.
+
+The independent audit shares one meter across all four scalar passes,
+chart parsing, both projections and sequential all-pivot reductions. It
+uses the existing024 row-span license, without replaying the old elimination
+or loading the full source cache. A contradiction would add an augmented
+constant pivot, without creating a false coefficient rank or free dimension.
+Any required resource failure leaves UNKNOWN and exports no partial rows
+or rank result. An exclusive marker prevents a second final audit.
+
+Verification and resources
+All42 synthetic tests passed before freeze in8.798s and in the frozen run
+in8.363s. They cover explicit alternate assignments, complete coordinate
+agreement, multiplication before subtraction, denominator restrictions,
+signed/storage projection, sequential ranks and contradictions, shared
+budget exhaustion, late output/deadline failure and publication scope.
+One assignment-shadowing defect was caught and fixed before actual scoring.
+
+One combined450m work-proxy reservation:50m preparation/tests/I/O,100m for
+each of two producer cases,200m for the sole independent audit. The20m
+synthetic-test allowance and10m independent-I/O allowance are within the50m
+preparation reserve. No extra audit, adaptive retry or allowance reset ran.
+Actual arithmetic proxies:87871152 +87872266 +177035537 =352778955.
+Each paired producer domain reserve was85770000; the four independent
+domain reserves totaled171540000. Independent I/O used212898 proxy units
+for6812110bytes. These are declared work proxies, not instruction counts.
+
+Two concurrent workers, one thread each, used9.174530s/9.118789s wall and
+9.144015s/9.089339s CPU. Their peakRSS was32660KiB/32916KiB, about32MiB
+each. The combined parallel stage took9.274621s. Each worker had a3GiB cap;
+the total was6GiB. Independent audit:31.971575s wall,31.967655s CPU,
+574812KiB process peakRSS, within a restorable6GiB boundary. All cooperative
+3600s limits held. Result4096-bit and temporary8193-bit limits were unchanged.
+The audit used3513613 cumulative scalar cells within its shared12m cap.
+
+The one source snapshot contains59 files/624514bytes, including the fixed
+scope and mathematical review. Probe receipts are139038/144996bytes; the
+independent review is663734bytes. No hashes were created or checked. Prior
+frozen code, publications and the original026 UNKNOWN producer are unchanged.
+
+Next research action
+Incorporate both normalized equations into the affine search and construct
+an exact point satisfying all old equations and these new rows before
+further cone optimization. Do not reuse the026 point as if it satisfied the
+new chart, or blindly reuse its444-dimensional increment after dimension
+falls to442. Fix that next complete job and its resource allocation before
+scoring; this completed job's audit reserve must not be reset.
+
+Finite cone feasibility remains unresolved. A finite row sample does not
+prove the all-scale nonconstant identity. Its constant baseline also leaves
+the uniform scalar budget and initial storage cost unproved. A suitable
+cofinal parameter family and ordinary-zeta bridge remain necessary for RH.

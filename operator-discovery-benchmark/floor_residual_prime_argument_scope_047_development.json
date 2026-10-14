@@ -1,0 +1,16 @@
+{
+  "schema": "prime-argument-scope-regression-v1",
+  "reason": "independent review caught recurrence-only rejection incorrectly refuting slower target",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 0.0024292609887197614,
+      "operations": 1102
+    }
+  ],
+  "old_unchanged_tests_rerun": false,
+  "scientific_candidates_evaluated": false
+}

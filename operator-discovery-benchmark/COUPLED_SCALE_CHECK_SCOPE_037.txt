@@ -1,0 +1,258 @@
+COUPLED PRIME/CUTOFF PROOF SEARCH: INDEPENDENT ADMISSION SCOPE
+Stage037 design audit; executable checker not yet implemented.
+
+Inputs read
+PRIME_COFACTOR_BOUND_DISCOVERY_HANDOFF.txt,
+FRACTIONAL_COFACTOR_BOUND_HANDOFF.txt,
+fractional-cofactor-bound-results/pilot-001/next_search_input.json,
+PRIME_COFACTOR_BOUND_RULE_REVIEW_035.txt,
+CORE_SIGNED_PRIMITIVE_SEARCH_HANDOFF.txt,
+CORE_PREFIX_PROOF_SEARCH_HANDOFF.txt,
+OCCUPANCY_TRANSFER_HANDOFF.txt and PRIME_EXCHANGE_HANDOFF.txt.
+Only symbolic source/goal/dependency fields of the current next input were
+inspected. No actual coefficient archive, new source values, scores, tests,
+searches or old studies were evaluated. No frozen file was changed. This
+review supplies an admissible proof language, not a winning auxiliary or a
+claimed new arithmetic estimate. The complete core and RH remain open.
+
+1. What the current source requires
+
+The authoritative direct alternative is the complete original four-mode f:
+ beta*K*(mu*mu) - beta*K*(mu*mu_(2/3))
+ - R_u*K*mu_(2/3) - beta*mu, beta=9/2, K(n)=n^(-1/3).
+The current goal is X^(-2) sum_(X<=n<2X)|sum_(k<=n)f(k)|^2
+ <= C_epsilon X^epsilon for every epsilon>0 and every integer X>=1.
+Constants must be independent of all prime, scale and cutoff parameters.
+The unit is -beta-R_u; R_u has its original exact zeta definition.
+
+The accepted033 parent and every144 source/transport/channel binding survive
+as separate provenance and recovery obligations. This branch does not replace
+the parent by an isolated Z033. If a new theorem about f is transferred to
+another centered representation, replay that exact parent compiler, including
+the deterministic e, analytic centering and opposite signed drifts. A changed
+label is not a proof that this recovery has zero cost.
+
+Stage035's four generated row states are valid all-prime coefficient states.
+Stage035 proves that the original raw prime-only rough prefix has positive
+energy power at y_X=ceil(sqrt(2X)). A uniformly coercive instantaneous storage
+on (rough,composite) inherits that obstruction; singular survivors in its finite
+dictionary restate the target. Stage036 weights actual coefficients and proves
+their complete-prefix Abel inverse. Its standalone bound provider has recovered
+prefix exponent max(1-r-gamma,0)+gamma=max(1-r,gamma), hence no recovered power
+improvement. Neither result refutes a correlated multiscale proof.
+
+Stage029 already synthesized signed polynomial coboundaries and paid their
+initialized endpoints and complete remainders. Rediscovering the energy as a
+potential, without a new independent endpoint estimate, is not new payment.
+Stage-prefix already searched complete centering/binomial rewrites and all
+declared mass/prefix convolutions. A new run should not rename those rules as
+a new signed covariance mechanism.
+
+2. Exact local obstruction, including finite lag filters
+
+Let q=p^(-1/6), a=p^(-1/3), r=p^(-sigma), sigma>0. The first source local
+Euler symbol is F0(t)=(1-t)^2/(1-a*t). At phase xi=-1,
+ F0(r*xi)=(1+r)^2/(1+a*r)>1,
+because (1+r)^2-(1+a*r)=r*(2-a+r)>0. It exceeds one on an open phase arc.
+This statement is exact and uses no source observations or PNT.
+
+For any Hermitian nonnegative metric M(xi) on the full formal input space,
+testing its visible first-mode vector v in T* M T <= kappa M gives
+ |F0(r*xi)|^2 v*Mv <= kappa v*Mv.
+If root recovery ell*ell <= c M holds uniformly at every phase and ell v!=0,
+then v*Mv>0 there. Consequently kappa cannot be below one on that arc.
+The conclusion also applies to a fixed finite polynomial lag filter G(xi)
+with metric M=G*QG and complete recovery. A filter vanishing only at xi=-1
+does not remove the neighboring open arc. A polynomial filter annihilating
+that mode throughout the arc annihilates it identically and loses recovery.
+
+For sigma=1/2, the necessary squared gain is
+ 1+4p^(-1/2)+O(p^(-1)), so 1+C/p cannot dominate it for one fixed finite C.
+Different metrics on adjacent cutoffs must price their conversion and final
+normalization. Shrinking a metric can hide gain in the endpoint recovery cost;
+it does not erase the cost.
+
+Scope of this obstruction is essential. It rejects a generic-input, full-phase,
+same-norm contraction with target recovery. It does NOT reject every finite
+quadratic lag construction, all actual-source inequalities, or a recurrence
+using independently proved restrictions on the input. Formal eigenvectors need
+not be realized by arithmetic cofactor prefixes. Record a formal-input failure
+as a rule/grammar failure, never an actual-source lower bound.
+
+3. A minimally different executable proof attempt
+
+Use two variables: prefix horizon x and prime cutoff y. Define each state from
+a source-law program, not from an observed fit. A primitive state is an exact
+linear combination of the035 mode coefficients restricted by declared prime
+support, valuation and coefficient-weight predicates. Generate a bounded
+dictionary bottom-up by complete prime sections, rational coefficient twists,
+causal dilation lags and optional harmonic accumulations. Every program must
+have a unique coefficient semantics and a proved unit.
+
+The exact next-prime recurrence is
+ H(x;y_prev)=H(x;p)+sum_(e>=1)T_e(p) H(x/p^e;p),
+where p is the NEXT prime, p>y_prev, and there is no prime between them.
+For real x, only p^e<=x contribute; prefixes below one are exactly zero.
+The e=0 term has the SAME x and an increased cutoff. Every e>=1 branch has a
+smaller x. A well-founded proof must decrease a declared lexicographic or
+finite-horizon rank using both variables, not claim all branches shrink x.
+At y>=x, the rough prefix is the full signed unit, not zero.
+
+Lift a finite collection of these prefixes and their dilated versions into a
+coupled storage. Infer rational storage coefficients by solving the complete
+signed recurrence before taking absolute values. On squaring, preserve every
+e,j cross, including shared-prime/repeated-valuation terms and all moving floor
+boundaries. An all-valuation rational generating law licenses the infinite
+symbol; a finite-x proof additionally records the exact finite summation range.
+
+Actual arithmetic restrictions, rather than a new unrestricted metric alone,
+are the minimal change that can evade Section2. Candidate restriction providers:
+
+ (i) exact Dirichlet identities, notably mu*One=delta, proved from the source
+     Euler factors or full divisor inversion at every integer;
+ (ii) exact cutoff transition identities with all support boundaries;
+ (iii) bounded harmonic states derived from complete floor inversion, such as
+     |sum_(n<=N)mu(n)/n|<=2; a prime-free harmonic state needs its complete
+     prime-dilation formula and its uniform bound, not sample boundedness;
+ (iv) signed paired-kernel identities whose full boundary remainder has an
+     independent norm provider, rather than a missing correlation renamed zero.
+
+These are available proof primitives or candidate lemma types, not evidence
+that they suffice. Harmonic coordinates can be bounded while the target is not
+coercively recoverable from them. Adding a growing family of prime-free states
+requires explicit dimension, prime-product, metric and recovery costs. No fixed
+prime-set constant is silently uniform in a growing set.
+
+The producer should output the attempted joint inequality plus its exact
+unpaid residual, endpoint cost and dependency frontier. A new arithmetic
+correlation lemma is allowed as an OPEN requested input. It becomes a premise
+only after a separate proof is admitted. The search must not assume the desired
+full-energy bound to certify its storage or that new lemma.
+
+4. Concrete certificate schema and validator requirements
+
+Suggested top-level fields:
+ source_binding, inherited_parent_binding, state_programs, domain,
+ normalization, recurrence, valuation_tail, boundary_partition,
+ storage_candidates, selected_proof, dependency_graph, failure_feedback,
+ search_grammar, search_limits, whole_signed_bound_proved, RH_proved.
+Producer choices and checker rules must be distinct modules.
+
+Each state_program contains: earlier dependencies; coefficient expression;
+exact rational exponents; restrictions (next-prime/coprimality/valuation);
+unit; valid horizon/cutoff domain; and explicit recovery row. A q-root change
+is a representation alias. A coefficient twist is a new operator and must
+carry its signed Abel inverse and EVERY partial-prefix requirement.
+
+Each recurrence node contains: input/output goals and exact norm convention;
+typed variables with domains; source-law certificate; all branches and units;
+normalization factors; boundary terms; actual arithmetic restrictions used;
+their proved dependency ids; and decreasing rank. Generic and actual-source
+premises cannot share an untyped label.
+
+Each storage candidate contains: complete monomial/lag basis; rational unknown
+solution; Hermitian form; exact PSD/target-domination witness; scale/cutoff
+dependence; coefficient-change terms; initialized endpoint; forcing terms;
+complete signed expansion; and cost tuple (power,log,constant,quantifier).
+If indefinite storage is allowed, its signed endpoint and telescoping proof
+need their own price. Positivity is not manufactured by dropping cross terms.
+PSD alone bounds nothing without domination and a recurrence estimate.
+
+The validator independently reconstructs source algebra and every attempted
+column. It checks primal identities and dual infeasibility witnesses against
+ALL declared affordable columns. Failure means failure of that finite grammar.
+If the producer claims finite-search optimality, reconstruct full candidate
+coverage or verify an independent global lower certificate for that search.
+An accepted single sound proof need not claim exhaustive search optimality.
+
+For polynomial parameter inequalities, display the parameter domain, all
+nonzero denominators, substitutions and exact nonnegative certificate (PSD,
+SOS, interval Bernstein partition, or another reviewed rule). Rational
+samples are proposals, not positivity certificates. Rational exponent parsing
+is canonical and bounded by explicit resource guards; arbitrary semantic
+denominators must not become a mathematical obstruction.
+
+All proof dependencies are topological. A paid node has only admitted premises.
+OPEN arithmetic leaves cannot be counted as proved by replaying conditional
+algebra. A cycle through the full target, through its endpoint price, or through
+an equivalent changed-cutoff target is rejected. Conditional feasibility and
+unconditional payment are separate fields. Every epsilon>0 quantifier must
+carry one uniform finite head and constants independent of every searched
+cutoff; an estimate at one chosen epsilon is not the entire root goal.
+
+For logarithmic Plancherel rules, zero-extend the input below one and above the
+declared finite T, retain all phases, and restrict the output only afterward.
+Discrete whole-prefix energy uses complete step-function cells and the exact
+conversion cost (T=N+1 for prefixes through N). L2 permits no unchecked
+point sampling. A low-phase certificate leaves the complement explicitly open.
+
+5. Counterexample-guided expansion without answer leakage
+
+Separate counterexamples into three types:
+ A. algebraic source-law failure: an exact formal polynomial identity fails;
+ B. generic norm-rule failure: an admissible formal vector/phase violates the
+    proposed universal inequality;
+ C. arithmetic finite witness: a separately licensed exact source instance
+    violates a finite claim (usable after an explicitly frozen observation run).
+Only A/C reject a claimed actual identity; B rejects its generic justification.
+No absence of finite witnesses establishes an infinite arithmetic inequality.
+
+A finite-grammar dual can identify a missing transition monomial. Add only
+states generated by documented operations that can produce that monomial,
+and regenerate its complete transition and endpoint costs. Do not inject the
+desired cancelling coefficient or a known final invariant into the grammar.
+If a generic phase obstruction persists, redirect to proving an actual-input
+restriction or price the complement; do not merely refine a fitted phase mesh.
+If a storage is exactly the target energy, request an independent endpoint
+provider or mark endpoint_restatement. Do not publish it as progress in payment.
+
+6. Discovery-capability calibration design
+
+Freeze one general producer before generating private synthetic inputs. Inputs
+provide exact coefficient/Euler or recurrence definitions and the requested
+bound, but no successful states, invariant, cancellation coefficients, selected
+prime, lag length or target normalization. The checker has those source
+definitions and independently verifies the final proof. Benchmark identity
+success, new affordable endpoint/forcing success and full target success are
+reported separately. Do not credit a supplied state basis as a discovery.
+
+Useful calibration families:
+ - arithmetic polynomial primitive families with randomized exact affine
+   coordinate changes; test that a cheaper endpoint is found and recovered;
+ - finite coupled scale recurrences with hidden target-visible stable quotient
+   and unstable unobserved modes; checker proves all-scale identities and the
+   quotient norm, producer must infer the quotient from the source;
+ - paired signed transition families requiring a nonzero cross term and a
+   separately controlled boundary, including deterministic zero-event updates;
+ - fractional coefficient families where a real gain survives a proved joint
+   inverse, mixed with pure-twist controls where recovery consumes the gain;
+ - random exact bases hiding a bounded harmonic coordinate and instances where
+   that coordinate cannot recover the target; success cannot mean projection
+   onto the cheap coordinate alone.
+
+Negative controls: identical finite training prefix with a delayed unstable
+source transition; wrong fresh-prime/copimality domain; omitted repeated
+valuation; omitted e=0 branch; unit zeroed; wrong next-prime transition; missing
+one cross; moving cutoff substituted into a fixed-cutoff theorem; singular form
+that drops the target-visible direction; shrinking metric with unpriced
+inverse; paid OPEN lemma; target-energy endpoint; alpha-dependent constant
+masquerading as uniform; good endpoints but uncontrolled partial exits; a
+low-phase filter whose complementary phases carry the expanding direction.
+
+Synthetic success proves reusable certificate capability only. It neither
+proves that these calibrations cover the actual arithmetic difficulty nor
+contributes a full-core payment. The actual adapter must expose the same exact
+source/recovery checks and honestly report unresolved closure or bound leaves.
+
+7. Recommendation to the implementer
+
+Do not spend the next study only finding a smaller local multiplier on the
+same unrestricted state space: Section2 already gives a structural obstruction.
+Implement a coupled recurrence compiler with source-derived restrictions and
+explicit initialized endpoints first. Permit automatic conditional lemma
+generation from its remaining signed residual. The immediate meaningful result
+is a complete attempted uniform proof, independently replayable, with a new
+arithmetic premise or independently paid endpoint clearly identified. There is
+no guarantee this finite language closes the present full signed goal.
+
+No executable stage037 checker or tests have been started in this review.

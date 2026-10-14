@@ -1,0 +1,20 @@
+{
+  "distinct_tests": 3,
+  "attempts": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_mobius_square_witness_084"
+      ],
+      "time_epoch": 1791728175.994595,
+      "tests": 3,
+      "exit_code": 0,
+      "output": "test_independent_complete_integration_and_mutations (test_mobius_square_witness_084.WitnessTests) ... ok\ntest_literal_witness_bounds_every_tested_square (test_mobius_square_witness_084.WitnessTests) ... ok\ntest_prospective_shape_and_strict_signs (test_mobius_square_witness_084.WitnessTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.069s\n\nOK\n"
+    }
+  ],
+  "status": "PASS"
+}

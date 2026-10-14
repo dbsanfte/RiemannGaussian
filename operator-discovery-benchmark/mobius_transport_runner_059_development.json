@@ -1,0 +1,19 @@
+{
+  "schema": "mobius-transport-runner-059-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "operations": 1138702,
+      "elapsed_seconds": 0.01220796798588708,
+      "peak_rss_kib": 47596,
+      "output": "test_complete_tiny_argument_and_bound_assessment (test_run_mobius_transport_059.RunnerTests) ... ok\ntest_generic_dominance_certificate_independent_admission (test_run_mobius_transport_059.RunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.012s\n\nOK\n"
+    }
+  ],
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_evaluated": false,
+  "old_suites_or_studies_replayed": false
+}

@@ -1,0 +1,123 @@
+DETECTOR-GENERATED PREFIX BOUNDS; COMPLETE SIGNED CORE STILL OPEN
+
+Current input: candidate10_prefix_proof_obligation.json
+Verified run: core-prefix-proof-results/pilot-001/report.json
+Generator: core_prefix_proof_search.py
+Independent checker: check_core_prefix_proof_search.py
+Runner: run_core_prefix_proof_search.py
+Exact rule/proof scope: core_prefix_proof_search_protocol.txt
+
+What is automated, and what remains supplied
+-------------------------------------------
+The user's concern is valid: earlier stages generated constructions and
+some bounds, but analysts supplied the major new analytic arguments. The
+detector did not independently invent the missing uniform signed bound.
+The latest inverse stage supplied a centered residual with a bounded
+prefix, but did not search its propagation through the core convolutions.
+
+This stage fills that specific gap. For every current source monomial it
+enumerates every permitted centering depth, keeps the complete signed
+binomial expansion, and searches all convolution factor partitions using
+ordinary mass, critical weighted mass and signed prefix bounds. Dynamic
+programming selects a proof by N exponent, logarithmic degree, constant
+and proof size. Its output contains the exact proof DAG, competing
+rewrites, failures to obtain a bounded cost, and the remaining signed goal.
+No model selects individual answers; no numerical values or fits select
+the constructions. One Sol6.1 subagent wrote/audited the independent
+checker and generic tests, rather than choosing the source candidates.
+
+The primitive arithmetic facts, rewrite language and inequality rules are
+still supplied by analysts. In particular the centering identity and its
+bounded-prefix rule were already known in the previous stage. This is
+automatic composition of supplied mathematics, not unrestricted invention
+of analytic methods or discovery independent of the chosen language.
+The result below is one additional component control, not a new prime-
+distribution theorem or a bound for the whole signed arithmetic source.
+
+Concrete result selected by the executable
+------------------------------------------
+Let N=4X-1 for BOTH the parent and child block, U=floor(N^alpha),
+A=mu restricted to n<=U, R=delta-One*A, c=sum_(d<=U)mu(d)/d,
+and E=R+c*One. All products are Dirichlet convolution. The source mode
+-beta*mu has an inverse-expansion term -beta*A*R. The search selects
+
+ -beta*A*R = -beta*A*E + beta*c*A*One.
+
+From the complete fixed-U identity
+ prefix E(n)=1+sum_(d<=U)mu(d){n/d}, every n>=1,
+we already have |prefix E|<=1+U. The supplied convolution rule is
+ P(f*g)<=P(f)*M(g), where P is the maximum absolute SIGNED prefix
+up to N and M is ordinary absolute coefficient mass up to N.
+The detector chooses E as the signed-prefix factor and A as its mass
+companion. It derives
+
+ |prefix(-beta*A*E)| <= beta*U*(1+U) <= 2beta*N^(2alpha),
+ energy(-beta*A*E)(X) <= 16beta^2*N^(4alpha-1).
+
+For alpha=1/6 and beta=9/2 this is <=324*N^(-1/3), uniformly at every
+dyadic X>=1 (and the shared child block). This controls one actual signed
+component. The compensating +beta*c*A*One remains in the exact joined
+target with all other unpaid source terms and the transport error.
+No support gap of R is ever assigned to E. Every unit, prime power,
+earlier prefix and compensating cross term remains accounted for.
+
+Both inherited geometries (alpha,gamma)=(1/6,1/6) and (1/6,5/6) use this
+same control. These are two representations, not two independent new
+theorems. The other three geometries receive no newly paid component.
+
+Channel and whole-target recovery
+----------------------------------
+The previous coefficient-mass channel cost cannot simply be applied to a
+signed prefix bound. Abel summation instead supplies
+
+ C_channel=sum_i [2^ceil(eta_i)*(|a_i0|+2sum_(j>=1)|a_ij|)]^2.
+
+This includes all earlier prefixes and every varying logarithmic weight.
+Complete-cell projection is contractive. If the previously unpaid joined
+vector is Z_old=P_new+Z_new, the compiler and checker derive
+ S_old<=2*S_new+2*C_new, and conversely, with the full Cauchy term count.
+The already paid plain short-Mobius head is excluded before this new
+payment. The target log degree remains inherited and nonnegative.
+Every remaining term stays inside ONE signed quadratic energy; there is
+no assertion that separate absolute bounds can close that energy.
+
+All 720 inherited source/transport/channel bindings are carried forward.
+288 acquire the additional paid piece, because each of the two improving
+representations binds to 144 existing obligations. These counts are
+bookkeeping, not hundreds of new operators or proof candidates. All new
+joined leaves remain OPEN. No original fixed-C recurrence is discharged.
+
+Verification and resources
+---------------------------
+The completed frozen run searched 228 centering alternatives, made 705,708
+inference-rule applications, and retained 17,733 proof nodes over five
+source geometries. The independent checker verified exact source inverse
+identities, every complete centering expansion, each proof node and the
+optimum of the declared finite norm language using its own bottom-up
+enumeration. It also checked every reduction binding and paid partition.
+
+All 18 frozen tests passed. They cover generic signed nonmultiplicative
+sequences, exact binomial recovery with drift, full-history Abel costs,
+fractional exponents, floor remainders with d>n, uniform log payment,
+and rejection of omitted source/drift terms, false costs and false closure.
+The checker development suite initially had two incorrect test assertions;
+their failure and the successful affected-test correction remain recorded.
+There was no failed or repeated actual search run.
+
+Runtime: 51.266 seconds. Main peak RSS: 704,032 KiB. Main charged work:
+142,412,635 operations; inclusive work with all development and frozen
+tests: 148,945,142, within the declared 300million cap. Source snapshots
+use direct bytes. No precautionary hashes or old frozen-file edits.
+No new arithmetic-source coefficients were evaluated and no numerical
+holdout claim is made. The only scalar envelope recheck is |R_u|<5.
+
+Next work
+----------
+Continue from the emitted joined expression, including the explicit drift
+and exact transport correction. The detector should search further joint
+constructions or new proof-rule compositions when these norm rules leave
+positive powers. The current independent optimum audit records the limit
+of THIS finite grammar; it is not an obstruction to all possible proofs.
+The most difficult remaining task is still a uniform bound for the full
+signed join. Paid components and a functioning proof-search backend do
+not establish that bound. Keep the original RH research goal active.

@@ -1,0 +1,14 @@
+{
+  "actual_norms_evaluated": false,
+  "errors": 0,
+  "failed_attempts": [],
+  "failures": 0,
+  "invocations": 1,
+  "operations": 3489,
+  "schema": "floor-residual-prime-work-guard-050-development-v1",
+  "scientific_candidates_applied": false,
+  "seconds": 0.008730188012123108,
+  "source_values_evaluated": false,
+  "tests_run": 10,
+  "work_scope": "metered exact rational schema/guard/verifier algebra; bounded toy assertion scaffolding unmetered"
+}

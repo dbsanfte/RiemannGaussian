@@ -1,0 +1,806 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 2689413736,
+  "argument_operations": 10005506,
+  "certificates": [
+    {
+      "artifact": "norm_001.json",
+      "id": "compatible_0177_N257"
+    },
+    {
+      "artifact": "norm_002.json",
+      "id": "compatible_0177_N514"
+    },
+    {
+      "artifact": "norm_003.json",
+      "id": "rule_01_N257_forcing"
+    },
+    {
+      "artifact": "norm_004.json",
+      "id": "rule_01_N257_baseline_forcing"
+    },
+    {
+      "artifact": "norm_005.json",
+      "id": "rule_01_N257_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_006.json",
+      "id": "compatible_0177_N389"
+    },
+    {
+      "artifact": "norm_007.json",
+      "id": "compatible_0177_N778"
+    },
+    {
+      "artifact": "norm_008.json",
+      "id": "rule_01_N389_forcing"
+    },
+    {
+      "artifact": "norm_009.json",
+      "id": "rule_01_N389_baseline_forcing"
+    },
+    {
+      "artifact": "norm_010.json",
+      "id": "rule_01_N389_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_011.json",
+      "id": "compatible_0177_N521"
+    },
+    {
+      "artifact": "norm_012.json",
+      "id": "compatible_0177_N1042"
+    },
+    {
+      "artifact": "norm_013.json",
+      "id": "rule_01_N521_forcing"
+    },
+    {
+      "artifact": "norm_014.json",
+      "id": "rule_01_N521_baseline_forcing"
+    },
+    {
+      "artifact": "norm_015.json",
+      "id": "compatible_0149_N257"
+    },
+    {
+      "artifact": "norm_016.json",
+      "id": "rule_01_N521_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_017.json",
+      "id": "compatible_0149_N514"
+    },
+    {
+      "artifact": "norm_018.json",
+      "id": "rule_02_N257_forcing"
+    },
+    {
+      "artifact": "norm_019.json",
+      "id": "rule_02_N257_baseline_forcing"
+    },
+    {
+      "artifact": "norm_020.json",
+      "id": "rule_02_N257_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_021.json",
+      "id": "compatible_0149_N389"
+    },
+    {
+      "artifact": "norm_022.json",
+      "id": "compatible_0149_N778"
+    },
+    {
+      "artifact": "norm_023.json",
+      "id": "rule_02_N389_forcing"
+    },
+    {
+      "artifact": "norm_024.json",
+      "id": "rule_02_N389_baseline_forcing"
+    },
+    {
+      "artifact": "norm_025.json",
+      "id": "rule_02_N389_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_026.json",
+      "id": "compatible_0149_N521"
+    },
+    {
+      "artifact": "norm_027.json",
+      "id": "compatible_0149_N1042"
+    },
+    {
+      "artifact": "norm_028.json",
+      "id": "rule_02_N521_forcing"
+    },
+    {
+      "artifact": "norm_029.json",
+      "id": "rule_02_N521_baseline_forcing"
+    },
+    {
+      "artifact": "norm_030.json",
+      "id": "rule_02_N521_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_031.json",
+      "id": "compatible_0003_N257"
+    },
+    {
+      "artifact": "norm_032.json",
+      "id": "rule_03_N257_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_033.json",
+      "id": "compatible_0003_N514"
+    },
+    {
+      "artifact": "norm_034.json",
+      "id": "compatible_0003_N389"
+    },
+    {
+      "artifact": "norm_035.json",
+      "id": "compatible_0003_N778"
+    },
+    {
+      "artifact": "norm_036.json",
+      "id": "compatible_0003_N521"
+    },
+    {
+      "artifact": "norm_037.json",
+      "id": "compatible_0003_N1042"
+    },
+    {
+      "artifact": "norm_038.json",
+      "id": "rule_04_N257_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_039.json",
+      "id": "rule_04_N389_auxiliary_forcing"
+    },
+    {
+      "artifact": "norm_040.json",
+      "id": "rule_04_N521_auxiliary_forcing"
+    }
+  ],
+  "checker_operations": 16785162236,
+  "compiler_counts": {
+    "max_power_bits": 332,
+    "operations": 12987799
+  },
+  "development_receipts": {
+    "check_floor_residual_arguments_044_development.json": {
+      "edits_stopped": true,
+      "operations": 508853,
+      "owner": "check_floor_residual_arguments_044",
+      "runs": [
+        {
+          "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_044",
+          "elapsed_seconds": 0.22003802499966696,
+          "operations": 508853,
+          "peak_rss_KiB": 29096,
+          "returncode": 0,
+          "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.141s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_044 operations=508853 checker_operations=420303 fixture_operations=88550 elapsed_seconds=0.14139007398625836\n",
+          "tests": 21
+        }
+      ],
+      "scope": "signed synthetic floor/step vectors only; no earlier suite or increasing-support source search",
+      "source_observations": 0
+    },
+    "floor_residual_interval_044_development.json": {
+      "actual_new_programs_observed": false,
+      "actual_source_data_read": false,
+      "cumulative_operations": 1585611,
+      "frozen_files_modified": false,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.041165406990330666,
+          "errors": 0,
+          "exposure": "synthetic signed vectors, exact covariance/Jordan checks and analytic-tail calibrations only",
+          "failures": 0,
+          "operations": 1585611,
+          "peak_bytes_estimate": 2283776,
+          "peak_integer_bits": 762,
+          "returncode": 0,
+          "tests": 11
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "schema": "floor-signed-vector-norm-development-v1"
+    },
+    "floor_residual_runner_044_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.026537711964920163,
+          "errors": 0,
+          "exposure": "mock compiler for batch partition/dedup; rational synthetic norm96 and exact zero; artificial signed diagnostics",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 4
+        },
+        {
+          "elapsed_seconds": 0.17737284599570557,
+          "exposure": "new receipt-schema regression only; no source or norm observations",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "stdout": "",
+          "tests": 1
+        }
+      ],
+      "preflight_failure_record": "floor_residual_044_preflight_failure.json",
+      "schema": "owned-development-v1"
+    },
+    "floor_residual_search_044_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.0458482020185329,
+          "errors": 0,
+          "exposure": "typed grammar; small exact coefficient identities; rational synthetic norms128; artificial ranking only",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 10
+        }
+      ],
+      "schema": "owned-development-v1"
+    }
+  },
+  "elapsed_seconds": 417.7433047600207,
+  "family_convergence_proved": false,
+  "family_count": 581,
+  "final_bound_status_counts": {
+    "refuted_at_this_support": 0,
+    "unresolved_interval": 0,
+    "verified_at_this_support": 12
+  },
+  "final_cases": 12,
+  "fixed_index_limit_certificates": 581,
+  "independently_replayed_all_norms": true,
+  "parent_peak_rss_kib": 268964,
+  "prior_studies_rerun": 0,
+  "producer_operations": 3395458621,
+  "refinement_count": 5810,
+  "search_counts": {
+    "max_power_bits": 2927,
+    "operations": 102307632636
+  },
+  "selected_rules": [
+    {
+      "audit_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "1",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "baseline_for_compatible_0177"
+      },
+      "coefficient_limit_certificate": {
+        "RH_proved": false,
+        "all_scale_upper_bound_proved": false,
+        "auxiliary": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "0",
+          "premises": [
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "log coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            },
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "log coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            }
+          ],
+          "rule": "difference_of_limit_one_weights"
+        },
+        "base": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "1",
+          "premises": [
+            "cutoff coordinate tends to0 at every fixed n",
+            "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+          ],
+          "range": [
+            "0",
+            "1"
+          ],
+          "rule": "continuous_positive_powers_at_coordinate_zero"
+        },
+        "conclusion": "for every fixed n>=2, c_n(N)->-mu(n)",
+        "family": "compatible_0177",
+        "formula_scope": "unbounded mathematical recipe with exact rounding; evaluator can refuse at resource limits",
+        "necessary_condition_only": true,
+        "schema": "fixed-index-coefficient-limit-v1",
+        "source_scope": "ordinary primes, exact integer arithmetic channels"
+      },
+      "conditional_gate": {
+        "A": "1/4",
+        "RH_proved": false,
+        "b": "1",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "3/4",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "3/4",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/2",
+        "verified": true,
+        "young_parameter": "1/2",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "fallback_bound_policy": "A4 eta1/5 only if no training match; fixed before final norms",
+      "family": "compatible_0177",
+      "finite_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "id": "rule_01",
+      "q": 2,
+      "recipe": {
+        "auxiliary": {
+          "channel": "mu",
+          "coefficient": "1/2",
+          "envelope": {
+            "kind": "difference",
+            "left": {
+              "alpha": "1/3",
+              "coordinate": "log",
+              "gamma": "1",
+              "kind": "taper"
+            },
+            "right": {
+              "alpha": "1",
+              "coordinate": "log",
+              "gamma": "1",
+              "kind": "taper"
+            }
+          }
+        },
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "compatible_0177"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "signed_auxiliary"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "1/2",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "baseline_for_compatible_0149"
+      },
+      "coefficient_limit_certificate": {
+        "RH_proved": false,
+        "all_scale_upper_bound_proved": false,
+        "auxiliary": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "0",
+          "premises": [
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "cutoff coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            },
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "cutoff coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            }
+          ],
+          "rule": "difference_of_limit_one_weights"
+        },
+        "base": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "1",
+          "premises": [
+            "cutoff coordinate tends to0 at every fixed n",
+            "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+          ],
+          "range": [
+            "0",
+            "1"
+          ],
+          "rule": "continuous_positive_powers_at_coordinate_zero"
+        },
+        "conclusion": "for every fixed n>=2, c_n(N)->-mu(n)",
+        "family": "compatible_0149",
+        "formula_scope": "unbounded mathematical recipe with exact rounding; evaluator can refuse at resource limits",
+        "necessary_condition_only": true,
+        "schema": "fixed-index-coefficient-limit-v1",
+        "source_scope": "ordinary primes, exact integer arithmetic channels"
+      },
+      "conditional_gate": {
+        "A": "1/4",
+        "RH_proved": false,
+        "b": "1/2",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "9/28",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "9/16",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/8",
+        "verified": true,
+        "young_parameter": "7/2",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "fallback_bound_policy": "A4 eta1/5 only if no training match; fixed before final norms",
+      "family": "compatible_0149",
+      "finite_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "id": "rule_02",
+      "q": 2,
+      "recipe": {
+        "auxiliary": {
+          "channel": "mu",
+          "coefficient": "1/2",
+          "envelope": {
+            "kind": "difference",
+            "left": {
+              "alpha": "2/7",
+              "coordinate": "cutoff",
+              "gamma": "1",
+              "kind": "taper"
+            },
+            "right": {
+              "alpha": "1",
+              "coordinate": "cutoff",
+              "gamma": "1",
+              "kind": "taper"
+            }
+          }
+        },
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "compatible_0149"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "scale_refinement"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 0,
+      "b": "1/2",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "baseline_for_compatible_0003"
+      },
+      "coefficient_limit_certificate": {
+        "RH_proved": false,
+        "all_scale_upper_bound_proved": false,
+        "auxiliary": null,
+        "base": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "1",
+          "premises": [
+            "cutoff coordinate tends to0 at every fixed n",
+            "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+          ],
+          "range": [
+            "0",
+            "1"
+          ],
+          "rule": "continuous_positive_powers_at_coordinate_zero"
+        },
+        "conclusion": "for every fixed n>=2, c_n(N)->-mu(n)",
+        "family": "compatible_0003",
+        "formula_scope": "unbounded mathematical recipe with exact rounding; evaluator can refuse at resource limits",
+        "necessary_condition_only": true,
+        "schema": "fixed-index-coefficient-limit-v1",
+        "source_scope": "ordinary primes, exact integer arithmetic channels"
+      },
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "1/2",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "9/7",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "9/16",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/8",
+        "verified": true,
+        "young_parameter": "7/2",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "fallback_bound_policy": "A4 eta1/5 only if no training match; fixed before final norms",
+      "family": "compatible_0003",
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_03",
+      "q": 2,
+      "recipe": {
+        "auxiliary": null,
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "compatible_0003"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "baseline_control"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "0",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "baseline_for_compatible_0177"
+      },
+      "coefficient_limit_certificate": {
+        "RH_proved": false,
+        "all_scale_upper_bound_proved": false,
+        "auxiliary": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "0",
+          "premises": [
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "log coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            },
+            {
+              "fixed_index_only": true,
+              "global_norm_bound_proved": false,
+              "limit": "1",
+              "premises": [
+                "log coordinate tends to0 at every fixed n",
+                "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+              ],
+              "range": [
+                "0",
+                "1"
+              ],
+              "rule": "continuous_positive_powers_at_coordinate_zero"
+            }
+          ],
+          "rule": "difference_of_limit_one_weights"
+        },
+        "base": {
+          "fixed_index_only": true,
+          "global_norm_bound_proved": false,
+          "limit": "1",
+          "premises": [
+            "cutoff coordinate tends to0 at every fixed n",
+            "inner and outer dyadic errors <=2^(-4*ceil(log2N)) ->0"
+          ],
+          "range": [
+            "0",
+            "1"
+          ],
+          "rule": "continuous_positive_powers_at_coordinate_zero"
+        },
+        "conclusion": "for every fixed n>=2, c_n(N)->-mu(n)",
+        "family": "compatible_0177",
+        "formula_scope": "unbounded mathematical recipe with exact rounding; evaluator can refuse at resource limits",
+        "necessary_condition_only": true,
+        "schema": "fixed-index-coefficient-limit-v1",
+        "source_scope": "ordinary primes, exact integer arithmetic channels"
+      },
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "0",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": true,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "1",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "0",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "0",
+        "verified": true,
+        "young_parameter": null,
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "fallback_bound_policy": "A4 eta1/5 only if no training match; fixed before final norms",
+      "family": "compatible_0177",
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_04",
+      "q": 2,
+      "recipe": {
+        "auxiliary": {
+          "channel": "mu",
+          "coefficient": "1/2",
+          "envelope": {
+            "kind": "difference",
+            "left": {
+              "alpha": "1/3",
+              "coordinate": "log",
+              "gamma": "1",
+              "kind": "taper"
+            },
+            "right": {
+              "alpha": "1",
+              "coordinate": "log",
+              "gamma": "1",
+              "kind": "taper"
+            }
+          }
+        },
+        "base": {
+          "alpha": "2/7",
+          "coordinate": "cutoff",
+          "gamma": "1",
+          "kind": "taper"
+        },
+        "id": "compatible_0177"
+      },
+      "refinement_signed_needed_training": 0,
+      "stratum": "endpoint_restatement_control"
+    }
+  ],
+  "signed_mechanism_counts": {
+    "auxiliary": {
+      "no_auxiliary": 3,
+      "signed_cross_needed_against_absolute_cross": 3,
+      "signed_cross_needed_even_against_diagonal": 6
+    },
+    "refinement": {
+      "bound_survives_absolute_cross_replacement": 6,
+      "endpoint_restatement": 3,
+      "signed_cross_needed_against_absolute_cross": 3
+    }
+  },
+  "status": "COMPATIBLE_AUXILIARIES_AUDITED_UNIFORM_BOUND_OPEN",
+  "tail_provider_counts": {
+    "large_sieve": 39,
+    "pointwise": 1
+  },
+  "training_auxiliary_signed_needed_matches": 1043,
+  "training_log_matches": 5031,
+  "training_refinement_signed_needed_matches": 1092,
+  "whole_domain_norm_certificates": 40,
+  "whole_signed_core_bound_proved": false,
+  "worker_max_individual_rss_kib": 378092
+}

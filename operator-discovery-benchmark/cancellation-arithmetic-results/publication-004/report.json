@@ -1,0 +1,74 @@
+{
+  "RH_proved": false,
+  "cell_gram_diagnostic": {
+    "contexts_verified": 18,
+    "dual_sha256": "f2272fe8ccd183579274b22f28590e797365ac99e9eda713eccf4f8b5ea4cc38",
+    "feasibility_proved": false,
+    "independent_receipt_sha256": "fc9cf828c52cb91720c13a6d628b9b98909f6d7591925abf73c987f33e060e5e",
+    "non_PSD_contexts": 10,
+    "old_witness_separates_expanded_cell_gram_cone": false,
+    "protocol_sha256": "80c400808863ded91285eea5a8a4dd11945e444e84a5fe42ab8d2d7f03301da0",
+    "results_sha256": "13a9b00880a1dace621926b353625b03fda8e0dba51688e42590d01207b22c2c",
+    "simple_direction": {
+      "context": {
+        "PSD": false,
+        "determinant": "-1/4",
+        "moments": [
+          "1",
+          "1/2",
+          "0"
+        ],
+        "power": 1,
+        "region": "child",
+        "theta": "2/3"
+      },
+      "old_dual_dot": "-1",
+      "square": "(P-2D)^2"
+    },
+    "unsupported_coordinates": 0
+  },
+  "coupling_calibration": {
+    "root_receipt_sha256": "06d63b5e16810b4e9e1d1add94d8571456d8927214b9c8f0122e938d0364e692",
+    "supplied_identity_not_discovery": true
+  },
+  "global_bound_proved": false,
+  "localizer_uniform_scope": {
+    "receipt_sha256": "6c8e3a733f62856340733ccd346316395ed0163fba9007fda91f976abd140cdf",
+    "scope": "same exact separator excludes the declared shared scalar-plus-full-five-atom-PSD cone with zero-cubic auxiliary for every q>=1,C>=0 and arbitrary per-scale scalar lhs padding. Only constant lhs and old constant-square column depend on q/C; new localizer and factor groups and Gram atom blocks do not. All constant moments vanish. This is a finite template cone obstruction, not a false actual arithmetic bound or RH refutation. Necessity of the zero-cubic gate remains restricted to its supplied subcubic/q>1 theorem."
+  },
+  "next_action": "preregister expanded cell Gram interactions, search independently, and prove full accepted templates uniformly",
+  "pilots": {
+    "divisor-cell-probe-001": {
+      "followup_statuses": [
+        "exact_separator",
+        "finite_certificate",
+        "finite_certificate"
+      ],
+      "independent_receipt_sha256": "18e21b935ee76e73032ec81caafb14f2833a07591b1b13b2720263c2493abaa9",
+      "original_failures_preserved": true,
+      "training_statuses": [
+        "no_certificate_found",
+        "finite_certificate"
+      ]
+    },
+    "divisor-localizer-probe-001": {
+      "followup_statuses": [
+        "exact_separator",
+        "finite_certificate",
+        "finite_certificate"
+      ],
+      "independent_receipt_sha256": "c31b63e5eb8854a51487a2377a4568cf1562be270b9c0ae444f9988d60419552",
+      "original_failures_preserved": true,
+      "training_statuses": [
+        "no_certificate_found",
+        "finite_certificate"
+      ]
+    }
+  },
+  "previous_research_manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306",
+  "previous_resource_manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b",
+  "prior_research_publication": "publication-003",
+  "prior_resource_publication": "publication-001",
+  "schema": 4,
+  "scope": "finite declared shared proof cones and supplied exact identities; every missing/failed state retained; no actual bound refutation"
+}

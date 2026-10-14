@@ -1,0 +1,17 @@
+{
+  "runs": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "test_core_arithmetic_grouping"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_arithmetic_grouping operations=1059658\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.270s\n\nOK\n",
+      "operations": 1059658,
+      "elapsed_seconds": 0.5782693479850423
+    }
+  ],
+  "operations": 1059658
+}

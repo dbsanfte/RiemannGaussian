@@ -1,0 +1,80 @@
+EXACT SQUARE-ROOT FACTOR CONTRAST AND SIGNED DIVISOR SQUARES
+
+Post-freeze analytical note, without candidate scores or frozen source changes.
+Consider the declared ordered coprime factor domain a,b>=1,ab<=N, kernel1,
+inside a<=Y=floor(sqrt N), and complete complement a>Y. The right cut b<=N
+is redundant underab<=N. The degree-zero kernel has normalization1.
+
+1. Exact contrast by swapping axes, with all boundaries.
+Write I for the projected inside sum and O for projected complement, preserving
+product multiplicities and actual mu signs. Split the full domain into
+ box: a<=Y,b<=Y;
+ left strip: a<=Y,b>Y;
+ right strip: a>Y,b<=Y;
+ outer corner: a>Y,b>Y.
+The outer corner is EMPTY, because (Y+1)^2>N. Every box pair satisfiesab<=N
+sinceY^2<=N; both boundaries are inclusive. ThusI=box+leftstrip andO=rightstrip.
+Swapping a,b is a bijection between the complete strips: product, coprimality,
+kernel1 and mu(a)mu(b) are symmetric. Hence leftstrip=rightstrip EXACTLY, and
+ I-O=sum_(a,b<=Y,(a,b)=1)mu(a)mu(b).
+This applies to the actual projected U contrast because its colliding product
+coefficients are counted with their complete ordered multiplicities and
+mu(ab)=mu(a)mu(b) on coprime pairs. At N1,Y1 it gives1, not0. At perfect squares
+the a=Y/b=Y boundaries remain in the box. No prime-distribution or density
+estimate is involved. The same box identity holds for any coprime multiplicative
+sequence, including actualc, but the divisor-square expansion below specifically
+uses actual mu for the coprimality indicator.
+
+2. Complete signed divisor-square expansion.
+For every positive a,b,
+ 1_(gcd(a,b)=1)=sum_(d|gcd(a,b))mu(d).
+Finite interchange therefore gives
+ V(Y):=sum_(a,b<=Y,(a,b)=1)mu(a)mu(b)
+      =sum_(d<=Y)mu(d)*[sum_(a<=Y,d|a)mu(a)]^2.
+Every divisor d throughY is retained. The d1 term isM(Y)^2, since mu1=1.
+The other terms have SIGNED coefficients mu(d); they cannot be absorbed into a
+nonnegative Gram by discarding the negative d or replacing them by absolute
+values. Multiples of nonsquarefree d have mu(a)=0 and therefore contribute0;
+that is an actual arithmetic zero law, not an omitted source class. For squarefree
+d, actual multiplicativity gives
+ sum_(a<=Y,d|a)mu(a)=mu(d)*sum_(m<=floor(Y/d),(m,d)=1)mu(m).
+Thus an equivalent exact form is
+ V(Y)=sum_(d<=Y)mu(d)^3*T_d(floor(Y/d))^2
+     =sum_(d<=Y)mu(d)*T_d(floor(Y/d))^2,
+ T_d(t)=sum_(m<=t,(m,d)=1)mu(m), with nonsquarefree terms0.
+No square-root estimate forT_d, uniform modulus control or signedd cancellation
+is asserted. The existing squarefree-density lemma controls mu² counts, not
+these signed coprime prefixes or their signed divisor-weighted moments.
+
+3. A new relation production with explicit formal scope.
+The existing inverse row at n is sum_(d|n)x_d-1_(n=1)=0 for actualmu.
+For n=gcd(a,b), multiply this row byx_a*x_b and sum over the COMPLETE box:
+ sum_(a,b<=Y)x_a*x_b*[sum_(d|gcd(a,b))x_d-1_(gcd(a,b)=1)]=0.
+This is a grouped degree-three relation; the current inverse multipliers are
+constant/anchor/prefix linear, so the pair multiplier may be absent. At gcd1,
+the row isx1-1, and its multiplier isx_a*x_b; it must NOT be replaced by0
+before formal expansion. At highergcd, the full divisor row is retained.
+Formal source indicesa,b,d<=Y fit horizonY, although polynomial degree3 remains
+explicitly charged. Coprime product rewrites may additionally useab<=Y²<=N,
+so the whole contrast certificate fits original horizonN. No coefficient table,
+per-index signed-value axiom or prime oracle is required: inverse rows are
+already admitted exact arithmetic relations. Factor/divisor enumeration costs
+and all pair/divisor collisions must be charged. Formal sign-bearing x_d is a
+variable, not a supplied numericalmu(d) used as an arbitrary square weight.
+
+4. What this exposes, and what it does not prove.
+The identity connects a symmetric factor contrast to signed divisor-square
+moments. It may let the language search cancellations betweenM(Y)^2 and the
+complete d>1 coprime-prefix squares, or transport them into coupled ordinary
+block relations. This is a representational opportunity, not an estimate:
+solving forM(Y)^2 givesV(Y)-sum_(d>1)mu(d)*T_d(Y/d)^2, still containing both
+signs. Unsigned Cauchy or termwise absolute bounds lose the same cancellation.
+At Y=floor(sqrt N), even a trivial |V(Y)|<=Y² is of orderN, but the proposed
+prefix-mix square(P_N±V(Y))² still contains original unknownP_N and its cross
+moment. The small box is not a recovery bound forM(N), and observing its finite
+size cannot establish a main full-defect estimate.
+A useful future production should preserve all signed divisor coefficients,
+complete box/strip reconstruction and product horizons, then independently
+verify the resulting polynomial identity. A uniform signed moment theorem,
+nonnegative recovery recurrence and critical scalar budget remain unproved.
+No learned candidate, signed density assumption or RH conclusion follows.

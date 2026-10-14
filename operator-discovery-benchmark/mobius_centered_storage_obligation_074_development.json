@@ -1,0 +1,22 @@
+{
+  "schema": "centered-storage-obligation-development-v1",
+  "runs": [
+    {
+      "tests": 3,
+      "test_names": [
+        "test_mobius_centered_storage_obligation_074.ObligationTests.test_exact_prime_blocks_reconstruct_actual_signed_ray_with_units_and_floors",
+        "test_mobius_centered_storage_obligation_074.ObligationTests.test_later_finite_pass_never_erases_an_earlier_counterexample",
+        "test_mobius_centered_storage_obligation_074.ObligationTests.test_unknown_mixture_is_exported_without_discarding_small_coefficients"
+      ],
+      "failures": 0,
+      "errors": 0,
+      "output": "test_exact_prime_blocks_reconstruct_actual_signed_ray_with_units_and_floors (test_mobius_centered_storage_obligation_074.ObligationTests) ... ok\ntest_later_finite_pass_never_erases_an_earlier_counterexample (test_mobius_centered_storage_obligation_074.ObligationTests) ... ok\ntest_unknown_mixture_is_exported_without_discarding_small_coefficients (test_mobius_centered_storage_obligation_074.ObligationTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.079s\n\nOK\n",
+      "elapsed_seconds": 0.07930429896805435
+    }
+  ],
+  "hashes_used": false,
+  "old_suites_replayed": false,
+  "status": "PASS",
+  "distinct_tests": 3,
+  "test_invocations": 3
+}

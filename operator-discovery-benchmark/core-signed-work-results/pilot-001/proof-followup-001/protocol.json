@@ -1,0 +1,25 @@
+{
+  "RH_proved": false,
+  "development": {
+    "module": "test_core_work_pair_reduction",
+    "operations": 3262808,
+    "runs": [
+      {
+        "elapsed_seconds": 0.24722556400229223,
+        "operations": 3262808,
+        "returncode": 0,
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.157s\n\nOK\n",
+        "stdout": "SYNTHETIC_WORK module=test_core_work_pair_reduction operations=3262808\n"
+      }
+    ]
+  },
+  "metadata_reserve": 1000000,
+  "operations_limit": 8000000,
+  "proof_scope": "exact complete source local algebra plus independently reviewed008 divisor-counting theorems",
+  "refitting": false,
+  "reselection": false,
+  "schema": "signed-work-exact-pair-feedback-v1",
+  "source_parent": "joint-preconditioner-results/pilot-001/selection.json",
+  "source_rerun": false,
+  "whole_signed_bound_proved": false
+}

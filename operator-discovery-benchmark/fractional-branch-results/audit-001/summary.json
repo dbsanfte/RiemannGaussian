@@ -1,0 +1,20 @@
+{
+  "status": "independently_verified_fractional_zeta_local_branch_gate",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/fractional-branch-results/audit-001",
+  "checks": {
+    "frozen_code_and_verified_fractional_search_dependencies_checked": true,
+    "larger_independent_contour_nonzero_boundary_and_integer_winding_certified": true,
+    "unique_pole_and_zero_census_independently_confirmed": true,
+    "simple_ordinary_zero_recertified": true,
+    "rational_divisor_orders_monodromy_and_integer_controls_checked": true,
+    "pole_compensation_and_all_multiplicity_zero_obligations_separated": true
+  },
+  "rational_exponents_audited": 27,
+  "fractional_pole_branches_detected": 22,
+  "native_pole_winding": -1,
+  "native_enclosed_zero_count": 0,
+  "negative_calibration_is_guided": true,
+  "uniform_sublinear_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "1f3182cfa05fa18e08865dda5c05310fa926f03cf42723010d53e4531a8b3185"
+}

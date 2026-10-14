@@ -1,0 +1,223 @@
+Algebraic review of structural candidates16,61,67,42
+2026-10-09. New review file; published and frozen artifacts remain unchanged.
+
+Source: the exact AST payloads in
+potential-candidate-results/pilot-001/final_batch.json. Selection constants
+and final numerical responses are not premises of this review. No new source
+evaluation, score, test, experiment or hash was performed. The order below
+does not nominate a winner. Small Mobius constants used in the reductions
+follow directly from mu(1)=1, mu(prime)=-1 and mu(squareful)=0.
+
+Common notation and the complete obligation
+------------------------------------------
+M(y)=sum_{1<=n<=y}mu(n), M(0)=0. Every selected program reviewed here has one
+state with weight1. Write its state U_X(t), where X<=t<=2X-1, and retain
+  E(X)=X^-2 sum_{t=X}^{2X-1}M(t)^2,
+  V(X)=X^-2 sum_{t=X}^{2X-1}U_X(t)^2, W(X)=E(X)+V(X).
+For every program, the full signed increment is exactly
+  [sum_{t=2X}^{4X-1}(M(t)^2+U_{2X}(t)^2)
+     -4 sum_{t=X}^{2X-1}(M(t)^2+U_X(t)^2)]/(4X^2).
+The factor4 on the parent and the fresh child parameter2X are essential.
+None of the masks, factor sums or prime banks replaces E_mu.
+
+The open obligation is one fixed program and
+  exists integer q0>=1; for every integer q>=q0 there exists finite C_q>=0,
+  independent of every dyadic X>=1, such that
+  W(2X)-W(X)<=C_q*ceil(X^(1/q)).
+Constants may depend on q and the fixed program. They cannot silently depend
+on the moving modulus, root cutoff, newly admitted prime set or X. A finite
+set of q/scales does not discharge these quantifiers. An eventual uniform
+estimate can absorb finitely many initial scales into an explicitly justified
+C_q, but cannot omit them or W(1). Structural V>=0 establishes only E<=W.
+
+ID16: moving residue-zero mask
+-----------------------------
+Set a(X)=max(2,floor(X^(1/6))). The AST is exactly
+  U_X(t)=B_a(t)=sum_{i<=t,a|i}mu(i).
+This is an arithmetic subsequence, not M(floor(t/a)) without qualifications.
+If a is not squarefree, B_a is identicallyzero. If a is squarefree,
+  B_a(t)=mu(a)*C_a(floor(t/a)),
+  C_a(y)=sum_{k<=y,gcd(k,a)=1}mu(k).
+Indeed mu(ak)=mu(a)mu(k) for coprime k, and iszero for k sharing a prime
+factor with squarefree a. Consequently B_a^2=mu(a)^2*C_a^2. The sign of the
+single factor mu(a) disappears; the signed correlations within C_a remain.
+An argument that uses unrestricted M(t/a) must restore the coprime complement.
+
+There is also an exact finite target-prefix expansion. If a is squarefree,
+let S(a) be the positive integers whose prime factors all divide a, including1.
+Then
+  C_a(y)=sum_{d<=y,d in S(a)}M(floor(y/d)).
+To see this, expand the right side coefficientwise: removing all powers of
+primes dividing a cancels a coefficient whenever such a prime divides its
+index, and otherwise leaves mu(index). Squaring this expression retains every
+d/e interaction; replacing it by the sum of individual squares is incorrect.
+For the especially long a=2 regime,
+  C_2(y)=M(y)+C_2(floor(y/2)),
+  B_2(t)=-sum_{j>=1}M(floor(t/2^j)),
+with the last sum terminating at argumentzero. This is a finite identity,
+not a bound on these correlated earlier prefixes.
+
+The max2 matters: a(X)=2 for every1<=X<3^6=729, including the entire region
+where floor(X^(1/6)) is1. For k>=3, a(X)=k on k^6<=X<(k+1)^6. A child uses
+b=a(2X). Different moduli need not define nested multiple sets:2 and3 are
+already a counterexample. Let K(t)=B_b(t)-B_a(t). The exact cutoff contribution
+on the child block is
+  (4X^2)^-1 sum_{t=2X}^{4X-1}[2 B_a(t)K(t)+K(t)^2],
+in addition to the fixed-a normalized parent/child transport. K includes both
+added and removed residue-zero channels. At squareful k the entire auxiliary
+state vanishes, but a later squarefree child can restore it; those transitions
+are part of an all-scale estimate, not removable dormant intervals.
+
+The target complement R_a(t)=sum_{i<=t,a does not divide i}mu(i) satisfies
+M=B_a+R_a. Thus M^2+B_a^2=R_a^2+2R_a B_a+2B_a^2; the signed complement cross
+term is unavoidable in any such rewrite. The elementary bound |B_a(t)|<=t/a
+gives V(X)<=4X/a(X)^2, hence only an O(X^(2/3)) large-scale upper bound. It does
+not produce the cofinal signed increment estimate. The missing lemma concerns
+the full target plus correlated restricted prefixes, uniformly over moving a.
+
+At X1, a=2 and t=1 contribute no multiple: V(1)=0 and W(1)=1.
+
+ID61: coprime output mask on a signed long-tail state
+--------------------------------------------------
+Set m(X)=max(2,floor(sqrt(X))) and
+  D(t)=M(t)-M(floor(t/3))=sum_{floor(t/3)<i<=t}mu(i).
+The state is exactly U_X(t)=G_m(t)*D(t), with G_m(t)=1_{gcd(t,m)=1}.
+Only the output location t is masked; the source indices inside D are not
+restricted to coprime or prime inputs. Since G_m is0 or1,
+  U_X(t)^2=G_m(t)[M(t)^2-2M(t)M(floor(t/3))+M(floor(t/3))^2].
+The negative cross term belongs to the stored square and must remain present.
+
+G_m depends only on rad(m), not on exponents in m. For example m=2,4,8 give
+the identical odd-t mask. This is an actual arithmetic mask identity, not an
+empirical response alias. More generally the complete inclusion-exclusion is
+  G_m(t)=sum_{d|m}mu(d)*1_{d|t}.
+All divisors and signs are retained. m=2 for1<=X<9; for k>=3 it is k on
+k^2<=X<(k+1)^2. Successive parent/child moduli can gain or lose prime factors
+and are not nested coprime domains.
+
+For b=m(2X), the change of the child mask contributes exactly
+  (4X^2)^-1 sum_{t=2X}^{4X-1}(G_b(t)-G_m(t))*D(t)^2,
+in addition to fixed-mask normalized transport. This term contains positive
+gained locations and negative lost locations. Density heuristics involving
+phi(m)/m do not bound the actual weighted distribution of D(t)^2. Rewriting
+on the complement must restore (1-G_m)D^2; it cannot remove unmasked M^2 from E.
+
+The elementary |D(t)|<=t-floor(t/3) gives only V=O(X). The inequality
+D^2<=2M(t)^2+2M(floor(t/3))^2 can relate storage to target energies, but it
+supplies no independent cofinal innovation bound on those same target terms.
+The unresolved lemma must retain their signed cross correlation and uniformly
+control all moving output masks, including their gained/lost residue classes.
+
+At X1, m=2, gcd(1,2)=1 and D(1)=1: V(1)=1 and W(1)=2.
+
+ID67: truncated Mobius factor bank minus a root prefix
+----------------------------------------------------
+Let R=floor(X^(1/6)), s(t)=floor(t^(1/6)), and
+  D_d(t)=M(t)-M(floor(t/d)),
+  B_R(t)=sum_{d<=R}mu(d)*D_d(t).
+The exact state is U_X(t)=B_R(t)-M(s(t)). The d1 summand is identicallyzero:
+mu(1)*(M(t)-M(t))=0. Every squareful d also vanishes. Neither observation
+licenses dropping the remaining squarefree d/e cross terms.
+
+The small-root regimes simplify substantially by algebra alone:
+* For1<=X<64, R=1 and U=-M(s(t)). Because t<128, s(t) is1 below64 and2 from64,
+  so M(s(t)) is respectively1 and0. Thus
+    V(X)=1/X                  for1<=X<=32,
+    V(X)=(64-X)/X^2           for33<=X<=63.
+  In particular for dyadic X<=16, both parent and child lie in the first
+  branch and Delta V=-1/(2X). This is initial padding, not long-tail coupling.
+* For64<=X<729, R=2 and B_R=-D_2. Throughout this regime t<1458, s(t) is2
+  below729 and3 from729. Since M(2)=0 and M(3)=-1,
+    U=-D_2(t)+1_{t>=729},
+    U^2=D_2(t)^2-2*1_{t>=729}*D_2(t)+1_{t>=729}.
+  The boundary terms begin on a parent block at X365, not at X64. A child
+  always recomputes R at2X; it can have R3 while the parent still has R2.
+* For729<=X<4096, R=3. The only nonzero factor summands are d2,d3, and
+  s(t) is3 or4 on the whole block. M(3)=M(4)=-1, so exactly
+    U=-2M(t)+M(floor(t/2))+M(floor(t/3))+1.
+  This complete coupled square has all cross terms and its additive1. It
+  cannot be reduced to separate stored squares at the three prefix scales.
+At R4 the new d4 coefficient iszero, but the t-dependent root prefix can
+still change. For larger roots, every newly admitted squarefree factor and
+every change of M(s(t)) remains part of the fixed program.
+
+A useful general identity is
+  U=M(R)*M(t)-sum_{d<=R}mu(d)M(floor(t/d))-M(s(t)).
+The middle sum does NOT collapse to1: its full d<=t version is
+  sum_{n<=t}(mu*mu)(n),
+not sum mu(d)*floor(t/d). Any proposed full-convolution rewrite must retain
+the complement sum_{R<d<=t}mu(d)M(floor(t/d)) with its proper sign. In
+particular the inverse-divisor identity with an unweighted floor is a
+different expression and cannot supply the missing estimate here.
+
+Writing R'=floor((2X)^(1/6)), J(t)=sum_{R<d<=R'}mu(d)D_d(t), gives
+U_{2X}(t)=U_X(t)+J(t) at a common t. Its complete child cutoff correction is
+  (4X^2)^-1 sum_child[2 U_X(t)J(t)+J(t)^2].
+Expansion of B_R^2 retains mu(d)mu(e)D_d D_e for every pair; subtraction of
+M(s(t)) retains -2M(s(t))*B_R and the full root-prefix square. The simple
+bound |M(s(t))|<=s(t) makes the root-only normalized storage O(X^(-2/3)),
+whereas |B_R(t)|<=Rt yields only an O(X^(4/3)) upper bound for bank storage.
+Initial padding and a small root term therefore cannot certify the coupled
+long-tail part or its moving-factor boundary costs.
+
+At X1 the bank iszero and U=-1: V(1)=1 and W(1)=2.
+
+ID42: positive-coefficient coupled moving prime bank
+--------------------------------------------------
+Let P=floor(X^(1/3)) and F_P(t)=sum_{p<=P,p prime}M(floor(t/p)). The AST is
+U_X(t)=F_P(t), with no subtracted M(t) term and no additional mu(p) factor.
+Origin metadata saying coefficient0 does not create an absent term. Although
+mu(p)=-1 would give a common overall sign and hence the same square for this
+actual prime domain, there is no alternating sign between distinct prime
+coefficients. The signed source information is inside the different M(t/p).
+
+The complete square is
+  F_P^2=sum_p M(floor(t/p))^2
+        +2 sum_{p<q}M(floor(t/p))*M(floor(t/q)).
+Every p/q cross term belongs to V. Diagonal-only bank storage is a different
+candidate. There are no primes when X<8; for8<=X<27 the bank is just p2;
+for27<=X<125 it contains p2,p3, including the composite cutoff4 interval.
+New primes enter at X=p^3; composite cube thresholds do not add a prime.
+
+Coefficientwise one may write F_P(t)=sum_{n<=t}a_P(n), with
+  a_P(n)=sum_{p|n,p<=P}mu(n/p)
+        =-mu(n)*omega_P(n)+sum_{p<=P,p^2|n}mu(n/p),
+where omega_P counts distinct prime divisors up toP. The second term is
+important: exactly-one-squared-prime inputs can contribute even though mu(n)=0.
+Inputs with a cube or two squared primes contributezero there. Thus the bank
+does not simply equal a prime-count weight times the original mu sequence.
+Replacing the finite prime domain by all p<=t also requires its omitted
+P<p<=t complement; no full-domain identity removes that tail for free.
+
+Let P'=floor((2X)^(1/3)) and J(t)=sum_{P<p<=P',p prime}M(floor(t/p)). The
+same-bank signed transport must be supplemented by exactly
+  (4X^2)^-1 sum_child[2F_P(t)J(t)+J(t)^2].
+J^2 retains every new-prime pair, and F_P*J every old/new pair. A larger cutoff
+and positive external coefficients do not determine the sign of these actual
+prefix correlations. The elementary |F_P(t)|<=t*sum_{p<=P}1/p gives at most
+O(X*(1+log P)^2) storage. Even the elementary uniform O(t) bound for this
+root-ratio new-prime strip yields only O(X) boundary-square storage. Small
+prime denominators alone do not supply arbitrarily small power increments.
+
+At X1 the prime bank is empty: V(1)=0 and W(1)=1. Its later activation must
+be retained even though the initial stored potential iszero.
+
+Consequences for a proof queue
+-----------------------------
+These ASTs admit exact simplifications and expose concrete missing lemmas:
+restricted-prefix correlation and changing-modulus terms for16; masked
+long-tail correlation and gained/lost coprime locations for61; truncated
+Mobius-factor convolution and root/bank cross terms for67; complete old/new
+prime-prefix correlations and prime-domain complements for42. None of the
+elementary bounds above gives the required cofinal signed innovation bound.
+
+The long dormant modulus/root regimes and actual arithmetic mask aliases
+should be separated from genuinely coupled large-root formulas analytically.
+They explain what the programs ARE, without evaluating or ranking their
+responses. No finite constant is extended to another q, no per-regime constant
+is treated as uniform in X, and no omitted component is silently restored by
+an RH conclusion. The anchored costs are W1=1,2,2,1 for16,61,67,42 respectively.
+The conditional telescoping and ordinary-zeta bridge in the existing soundness
+memo remain conditional on the complete cofinal all-dyadic estimate. This
+review proves only the displayed algebraic descriptions and elementary size
+bounds, not that estimate or a new global-bound/RH claim.

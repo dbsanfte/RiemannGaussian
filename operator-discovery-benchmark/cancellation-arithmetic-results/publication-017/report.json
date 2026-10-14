@@ -1,0 +1,342 @@
+{
+  "RH_proved": false,
+  "accepted_proposal": false,
+  "candidate_hash": "a986dd6e6f8ff95c595a426ef7de14c187edb58fafea24a8597bec6c28b3a747",
+  "certified": false,
+  "clipped_free_square_indices": [
+    31,
+    32,
+    79,
+    85,
+    91,
+    93,
+    95,
+    97,
+    99,
+    101,
+    136,
+    137,
+    149,
+    164,
+    165,
+    170,
+    171,
+    189,
+    192,
+    193,
+    197,
+    218,
+    219,
+    221,
+    225,
+    228,
+    229,
+    233,
+    245,
+    256,
+    260,
+    261,
+    269,
+    281,
+    286,
+    291,
+    296,
+    301,
+    306,
+    317,
+    320,
+    326,
+    329,
+    338,
+    341,
+    344,
+    347,
+    353,
+    356,
+    365
+  ],
+  "exact_admission": false,
+  "exact_checks": {
+    "equality_complete": true,
+    "equality_mismatch_count": 0,
+    "finite_candidate_feasible": false,
+    "first_equality_mismatch": null,
+    "first_negative_scalar": {
+      "index": 0,
+      "value": "-1696168236884728758218256115867705297700064211642334950043648197828062148973/820637550289399878882500077527084698548356120127441006310551239367065600"
+    },
+    "negative_scalar_count": 117,
+    "psd_blocks": {
+      "full_child": {
+        "positive_pivots": 0,
+        "psd": true,
+        "zero_pivots": 15
+      },
+      "full_parent": {
+        "kind": "negative Schur pivot",
+        "pivot": 6,
+        "psd": false,
+        "quadratic_value": "-34306020846935021254772669150424042188116384514527357699211784150763143482346431084205026888211524342850260698455560129549/10125484587547600181211610240158535848419120409393526941039006977183492938890010568713947986973595641566626854419619119104",
+        "witness": [
+          "-16393419065596430506389504427176154263993181753847267446981048287638094681902601283497024405206457260162691/17986473799332003731186820232605569189166630667020155948845795594308137557408874174161091707044583006277042",
+          "-68672141967739876423001024458217714420332071268310913107322990914416291736050695942363813119154495094802528/8993236899666001865593410116302784594583315333510077974422897797154068778704437087080545853522291503138521",
+          "91091413174250920345248243397095258183270667513889629307791692988198617260834901816690348990361413553226096/8993236899666001865593410116302784594583315333510077974422897797154068778704437087080545853522291503138521",
+          "117554540671790294460847202820989826563617932094094715864973000096174652653548159089017013637036027351778048/8993236899666001865593410116302784594583315333510077974422897797154068778704437087080545853522291503138521",
+          "188777368862054961495764280099347765596772973827715480062058743503886579778038614648695408518729568905728/8993236899666001865593410116302784594583315333510077974422897797154068778704437087080545853522291503138521",
+          "-62902672406652836899518501299358574209067993592706994221346982904153359850419730299793462295788003217850336/8993236899666001865593410116302784594583315333510077974422897797154068778704437087080545853522291503138521",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "storage_K": {
+        "kind": "negative Schur pivot",
+        "pivot": 7,
+        "psd": false,
+        "quadratic_value": "-4282014281016642391611132166265222625394622900704508389017939830956951734881150884413254090749743868526995507735099200311208976522805/18389667324643071723798247667550601057304233442283250443556488430286691309985743842150856344025115283423233383578053931255892778418176",
+        "witness": [
+          "-532451274316154931610726943967028870789052314789372353245879975718906074263702025886164207159979625557379910606110072/1020831603950782080702977409478216023047915852599756860927620507067208960871082181873273705631506041070679279479829989",
+          "29561397416781418330038565266362557041958424660005707120650705369579696419633740814468995726952945437566795763603891712/1020831603950782080702977409478216023047915852599756860927620507067208960871082181873273705631506041070679279479829989",
+          "-571353282976086376140853513534310827293056304139181494241120873969013968047153523880027646325046811463303549721050752/1020831603950782080702977409478216023047915852599756860927620507067208960871082181873273705631506041070679279479829989",
+          "-441903964412102094465016526160172212898414081574636599005285812602481720377865046538154470491960121928205527674231168/145833086278683154386139629925459431863987978942822408703945786723886994410154597410467672233072291581525611354261427",
+          "-59338559095404465634894797914699692285618916036318019161010674596137239553990629334369832255879267213627344083718860416/1020831603950782080702977409478216023047915852599756860927620507067208960871082181873273705631506041070679279479829989",
+          "-6025456180719009924954022769334340372137531011549111853555742594579929886170957281302119695530420865882592469817933312/145833086278683154386139629925459431863987978942822408703945786723886994410154597410467672233072291581525611354261427",
+          "-925850370576329962283530562219750077662076266323896628329354461631300518507403913941342435307943668703533493406079290/1020831603950782080702977409478216023047915852599756860927620507067208960871082181873273705631506041070679279479829989",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    "scalar_signs_complete": true
+  },
+  "execution_cost": {
+    "available": 1,
+    "bounded_status_overhead_bytes": 4096,
+    "cpu_budget": {
+      "available_cpus": 8,
+      "quota_rounding": "floor with minimum one",
+      "sources": {
+        "affinity": 8,
+        "os_cpu_count": 8
+      }
+    },
+    "elapsed_seconds": 251.90637126899674,
+    "errors": 0,
+    "max_in_flight": 1,
+    "max_total_payload_bytes": 33554432,
+    "max_total_result_bytes": 33554432,
+    "memory_budget_bytes": 3221225472,
+    "missing": 0,
+    "numerical_thread_control": "spawn-inherited environment; threadpoolctl additionally if installed",
+    "numerical_threads_per_worker": 1,
+    "payload_bytes": 185,
+    "requested_workers": 1,
+    "result_bytes": 414,
+    "serial_fallback": false,
+    "start_method": "spawn",
+    "worker_memory_bytes": 3221225472,
+    "worker_memory_limit_enforced": true,
+    "workers": 1
+  },
+  "finite_candidate_feasible": false,
+  "followup_analysis": {
+    "file": "primitive_state_free_coordinate_search_analysis_v1.txt",
+    "sha256": "5d26ec2ae9d8ae4a62bdce6c32cd4c3768804705db46cea00ad6cc12bd97e6c9"
+  },
+  "free_coordinates": 445,
+  "global_bound_proved": false,
+  "handoff": "PRIMITIVE_STATE_TRIANGULAR_RESTORATION_HANDOFF.txt",
+  "independent_check_complete": true,
+  "independent_receipt_sha256": "e43f9d9532b5a307f209c3e5469c07fc13a44a5f9f084b23113401380f13200b",
+  "independent_replay_cells": 31642809,
+  "independent_replay_operations": 80835282,
+  "infeasibility_proved": false,
+  "job": {
+    "RH_proved": false,
+    "certified": false,
+    "deadline_exceeded": false,
+    "exact_admission": false,
+    "finite_candidate_feasible": false,
+    "global_bound_proved": false,
+    "independent_replay_retained": true,
+    "infeasibility_proved": false,
+    "lifecycle": {
+      "ledger": {
+        "all_stages_committed": true,
+        "pending_stages": [],
+        "total_work_reserve": 350308680
+      },
+      "outer_partial_failure": false,
+      "progress_ledger": {
+        "all_stages_committed": true,
+        "pending_stages": [],
+        "total_work_reserve": 350308680
+      },
+      "progress_retained": true
+    },
+    "restoration_verified": true,
+    "transport_status": "available",
+    "worker_status": "restoration_verified"
+  },
+  "limits": {
+    "binding_byte_multiplier": 4,
+    "cooperative_seconds": 900,
+    "max_audit_cells": 60000000,
+    "max_cache_bytes": 134217728,
+    "max_coefficient_bits": 4096,
+    "max_fill_cells": 20000000,
+    "max_live_cells": 4000000,
+    "max_metadata_bytes": 65536,
+    "max_protocol_bytes": 65536,
+    "max_receipt_bytes": 8388608,
+    "max_tape_bytes": 33554432,
+    "max_work": 450000000,
+    "metadata_work_reserve": 1048576,
+    "producer_operations": 125000000,
+    "source_byte_multiplier": 12
+  },
+  "mathematical_cone_feasibility": "UNKNOWN",
+  "new_elimination_calls": 0,
+  "new_solver_calls": 0,
+  "next_action": "search the445 free coordinates for exact cone feasibility using the licensed triangular map",
+  "one_fixed_seed": true,
+  "original_finite_equations": 5641,
+  "original_objective_preserved": false,
+  "original_variables": 1957,
+  "parent_source_rebuilds": 0,
+  "previous_research_publication": "publication-016",
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "publication-007": {
+      "bound_files": 401,
+      "manifest_sha256": "dda8d1cdcba8fbb4c0e385217ff7a66acb28cce39c4ab4819c9243a64fe855f9"
+    },
+    "publication-008": {
+      "bound_files": 294,
+      "manifest_sha256": "9314baa21704b4a09c280ac83dabc0d106006e1baa45f973246837c1a5d2053b"
+    },
+    "publication-009": {
+      "bound_files": 275,
+      "manifest_sha256": "530ee2f63f8c634c5613e499e686b2faa024475de78edcefb0e331598921e6a5"
+    },
+    "publication-010": {
+      "bound_files": 304,
+      "manifest_sha256": "bdcfd2747abf589d6fc7cc9330e7035bc0bd5d2d7442001610a144ef690c1f98"
+    },
+    "publication-011": {
+      "bound_files": 217,
+      "manifest_sha256": "efad6084163dc8a99705fe974f3d57ec967b755b61b887cba1eaef80ac28d7fb"
+    },
+    "publication-012": {
+      "bound_files": 259,
+      "manifest_sha256": "c67794133adb4d1b9645cc7003835485812a2eabada0d59f15d2dc630345f6d8"
+    },
+    "publication-013": {
+      "bound_files": 263,
+      "manifest_sha256": "ab791140b33d69b52ec7bd1cb6a15f710f8811cb793f65a71da0e22dd771f859"
+    },
+    "publication-014": {
+      "bound_files": 279,
+      "manifest_sha256": "a0b1ea1e09b63180e0905c6277e3fa8987e89c5dd378f9c984dd93a3596f1306"
+    },
+    "publication-015": {
+      "bound_files": 285,
+      "manifest_sha256": "865733dba23d10f50c9a8ad08e945550d6515210ffe600420b3e81aabd17ae81"
+    },
+    "publication-016": {
+      "bound_files": 309,
+      "manifest_sha256": "18a3b20bb9b1240abd3623badaae5ab4566981b267399240c0750de4ce671460"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "producer_counts": {
+    "fill_cells": 271124,
+    "operations": 13111727,
+    "peak_live_cells": 1628122
+  },
+  "producer_reason": null,
+  "producer_status": "restored",
+  "projected_variables": 1224,
+  "rank": 779,
+  "resources": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 3221225472,
+    "timeout_seconds": 1800,
+    "worker_memory_bytes": 3221225472,
+    "workers": 1
+  },
+  "restoration_available": true,
+  "schema": 17,
+  "source_count": 108,
+  "terminal_receipt_sha256": "fa66c4899549588b66951edfb89a79c10a83cff5149d5f420aa11a32320b7108",
+  "tests_passed": 36,
+  "total_independent_audit_cells": 32145010,
+  "total_independent_audit_operations": 83579626,
+  "uniform_innovation_bound_proved": false,
+  "worker_cost": {
+    "cpu_seconds": 251.537968209,
+    "elapsed_seconds": 251.68634162802482,
+    "observed_threads_at_completion": 1,
+    "peak_rss_kib": 445312,
+    "pid": 680923
+  },
+  "worker_ledger": {
+    "entries": [
+      {
+        "allocation": 143339417,
+        "charged_operations": 143339417,
+        "precision": "declared_compilation_reserve",
+        "reserve": 143339417,
+        "stage": "compilation"
+      },
+      {
+        "allocation": 125000000,
+        "charged_operations": null,
+        "precision": "allocated_unverified",
+        "reserve": 125000000,
+        "stage": "restoration_producer"
+      },
+      {
+        "allocation": 181660583,
+        "charged_operations": 80835282,
+        "precision": "independently_verified",
+        "reserve": 81969263,
+        "stage": "restoration_checker"
+      }
+    ],
+    "max_work": 450000000,
+    "remaining_work": 99691320,
+    "total_work_reserve": 350308680
+  }
+}

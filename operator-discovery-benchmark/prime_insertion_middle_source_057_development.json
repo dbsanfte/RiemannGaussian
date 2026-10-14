@@ -1,0 +1,31 @@
+{
+  "schema": "prime-insertion-middle-source-057-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.025281690002884716,
+      "operations": 2027219
+    }
+  ],
+  "total_primitive_counts": {
+    "prime_trial_divisions": 1,
+    "mu_sieve_entries": 728,
+    "exact_power_bits": 1325,
+    "integer_weight_entries": 452,
+    "exponential_terms": 358,
+    "log_atoms": 87,
+    "power_atoms": 127,
+    "gamma_upper_atoms": 283,
+    "signed_sum_terms": 178,
+    "cache_hits": 446
+  },
+  "peak_bytes_estimate": 130784,
+  "scope": "tiny synthetic N<=7 arithmetic and special-function calibrations only; no pilot data or old study",
+  "actual_pilot_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "checker_imported": false,
+  "all_scale_bound_claimed": false
+}

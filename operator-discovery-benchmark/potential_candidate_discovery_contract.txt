@@ -1,0 +1,138 @@
+Structural potential candidate discovery, prospective pilot001
+
+Purpose: generate and mutate parameterized arithmetic expressions, not optimize
+coefficients in a fixed finite template. No gradient, LP, separator search or
+new cryptographic hashes. Prior published/frozen files stay immutable.
+Root owns generator, selection, orchestration and workflow tests. Producer owns
+potential_candidate_language.py and its tests. Independent owner owns
+check_potential_candidate_discovery.py and its tests. Reviewer owns
+potential_candidate_discovery_soundness.txt. No actual pilot computations
+before the protocol/source snapshot is frozen. Synthetic cases remain tiny.
+
+Complete target and candidate
+Actual mu on every positive integer is the target. M(t)=sum_{1<=n<=t}mu(n),
+M(0)=0. E(X)=X^-2 sum_{t=X}^{2X-1}M(t)^2. A candidate is exactly
+  {states:[{weight:canonical_nonnegative_rational_string, tree:AST}, ...]}.
+Allow0..2 states,<=256 nodes total,depth<=24, rational/index bits<=4096.
+V(X)=X^-2 sum_{t=X}^{2X-1} sum_j weight_j*U_j(X,t)^2.
+W(X)=E(X)+V(X). Every child evaluates U with its own X=2X; the complete
+innovation is W(2X)-W(X). Always retain W(1), E and both potentials.
+An empty state list is the baseline V=0. No component or transformed energy
+replaces E. Products and signed sums INSIDE U are allowed; V weights cannot
+be negative. In particular square(sum_p state_p) retains all prime cross terms.
+
+AST semantics: use the existing cancellation_arithmetic_language syntax
+exactly for this supported subset (no digest-producing wrappers):
+indices: int,v,iadd,isub,imul,idiv,imod,gcd,min,max,root(index,a,b).
+root=floor(nonnegative_index^(a/b)),a>=0,b>=1;0th power1, including0^0.
+booleans: eq,le,lt,divides,prime,squarefree,and,or,not.
+scalars: q(canonical rational),x(index actual source),embed(index),ratio(i,j),
+add,mul,scale(rational,scalar),guard(bool,scalar),
+sum(fresh_name,inclusive_lo,inclusive_hi,scalar).
+Initial free variables are X,t. Sum variables must be fresh, not shadowing.
+N is reserved and cannot be referenced or bound, matching the legacy compiler.
+No N-dependent program. x is defined only at1..source_horizon, never clipped;
+guard short circuits scalar evaluation but does not skip syntax validation.
+Integer division uses floor. Division byzero rejects. A sum lo>hi is zero.
+False and/or short circuit like the existing compiler. Explicit endpoints,
+zero-index guards and all residuals of any claimed transform are retained.
+
+Producer APIs
+  Meter(max_operations, *,deadline=None,max_cells=6000000,max_bits=4096)
+    .charge(n=1), .live(cells), .number(exact_int_or_Fraction), .counts()
+    .operations, .max_operations. Charge before work, never reset consumed work.
+    counts returns operations,peak_live_cells,maximum_rational_bits.
+  mobius(horizon,meter)->list[int], lengthhorizon+1, index0=0.
+    Use complete divisor inversion (all proper divisors), no fitted signs.
+  control_source(name,mu,meter)->list[int]. Names: mu,one,partial_prime_2.
+    one[n]=1 for n>=1; partial_prime_2[n]=mu[n]^2*(-1 if n even else1).
+    Controls are diagnostics, not alternative arithmetic premises.
+  validate_candidate(candidate,meter)->node_count (strict full syntax/type).
+  Evaluator(values,meter), .measure(candidate,X)->{X,E,V,W}, rational strings.
+  .case(candidate,X)->{X,parent:{X,E,V,W},child:{X,E,V,W},innovation:str}.
+    Exact scalar arithmetic, shared memoization by full canonical syntax and
+    free-variable environment. No cryptographic IDs. Source never modified.
+    Cache whole subexpressions and cumulative bounded sums where semantically
+    valid; include the lower endpoint and every free dependency in cache keys.
+    Do not evaluate invalid extra terms outside a requested summation domain.
+    A resource failure emits no partial successful case. All consumed costs
+    survive. Limits/deadline apply to syntax, source, memo and scalar work.
+  potential_tree(candidate)->existing AST for complete V, lexical binder t;
+    generic Compiler directly can compile tiny cases without invoking digests.
+    Tests compare direct numerical V to exact formal compilation on tiny
+    actual and unrelated formal-value arrays, plus child/root/mask cases.
+
+Independent APIs (no producer imports)
+  Meter(same signature/attributes/counts) may have its own proxy semantics.
+  Checker(horizon,meter,*,source='mu') creates actual source independently
+    using trial factorization or an independent prime sieve; controls as above.
+  .measure(candidate,X) and .case(candidate,X) return the same exact shapes.
+  .verify_case(candidate,record) recomputes all full values and requires exact
+    equality; no imported producer result establishes a theorem.
+  .verify_measure(candidate,record) similarly checks W1 records.
+  validate_candidate(candidate,meter)->node_count using own syntax checks.
+Root compares generated AST batches by payload, and independently recomputes
+fit/selection arithmetic; the checker supplies independent finite arithmetic.
+Audit uses one shared stage meter, including every source/candidate/scalar case.
+
+Research orchestration (root)
+One450m ceiling for complete job:40m preparation (25m cumulative synthetic plus
+15m I/O/scaffolding),10m generation/selection,160m discovery,80m final evaluation,
+160m independent audit. No per-candidate resets/research retries. Separate
+stages cannot borrow unused earlier allocations. Root adds a fixed1m resident
+scalar-cell reserve to every research/audit evaluator live check. It bounds
+retained root metadata by a direct structural-cell count and reserves100000
+of those cells for external sources, transient record construction and I/O.
+Evaluator/checker instances are released before the next is constructed.
+Current frozen source bytes are compared directly once before run/audit;
+no digests or speculative unrelated archive sweeps.6GiB process cap,3600s stage
+deadlines,8MiB individual JSON artifact cap,6m live scalar-cell cap,4096bits.
+One owned development suite each when ready, then one frozen combined suite;
+no unchanged duplicate suites. Each arithmetic module prints SYNTHETIC_WORK
+module=<test_module> operations=N. Track all consumed development, including
+any justified fixes. Root/scaffolding reserved1m within25m. Reviewer runsnone.
+
+Initial generator will use cost-bounded balanced families of parameterized
+state trees: index maps, residue/coprime masks, signed mixtures, nonlinear
+products, divisor-coupled sums and moving-prime-coupled sums. Roots include
+1/2,1/3,1/6. No target winning formula/weights supplied to the selector.
+All source queries in generated programs have indices<=current t, so the
+full maximum horizon is4*max(base_scales)-1. A rejected/generated alias or
+resource-missing result is saved. Source queries beyond the horizon reject.
+Discrete small rational coefficients are syntax, not optimized parameters.
+
+Two generations: baseline plus at most48 initial programs; then at most32
+structural mutations of a diverse evidence-selected archive. Mutation changes
+state subtrees, masks or index maps, not merely coefficients. Preserve every
+parent/program/production. Identifiers are ordinal integers. Whole AST equality
+deduplicates syntactic aliases, never inferred universal response aliases.
+Training dyadic scales1,2,4,8,16,32,64. Validation96,128,192,256. Fit finite
+constants C_q=max(0,max_train innovation/ceil(X^(1/q))) for q2,3,6,12; save
+constants before validation. Keep anchored cost including W1, complexity,
+family coverage and validation failures; do not discard every unproved lead.
+Adaptation may use training and validation, never final responses. Freeze final
+batch and constants before final bases384,512,768,1024. These are unused by
+this run's selection, not claimed unseen arithmetic relative to old research.
+Irregular scales are diagnostic; dyadic flags identify the claim domain.
+Evaluate selected programs also on one/partial_prime_2 controls separately.
+
+Proof queue/scope
+Save complete AST, full signed increment, W1 and quantified obligation:
+exists integerq0>=1; for every integerq>=q0 exists finiteCq>=0 independent of
+dyadicX>=1, W(2X)-W(X)<=Cq*ceil(X^(1/q)). Stored finite constants only test
+particular proposals, not this existential all-scale statement. Missing q
+cannot inherit another constant. W>=E follows by the declared squares, but a
+universally checked compiler identity/arithmetic specialization and the missing
+uniform signed estimate remain separate. Conditional telescoping/ordinary-zeta
+bridge is explained by reviewer, not inferred by numerical growth regression.
+All RH/global_bound/universal_estimate flags remainFalse for this pilot.
+
+Development receipts before freeze
+Producer13 tests passed once,15,981 operations. Independent11-test invocation
+used5,804 operations; ten passed and a hand-calculated moving-prime expectation
+failed (p=2 is absent when floor(sqrt(3))=1). The expected value was corrected,
+the core was unchanged, and only the changed test reran successfully using827
+operations. Cumulative independent development6,631, total arithmetic22,612.
+Root10 workflow tests passed once in0.137s, within the1m root reserve.
+The single frozen combined suite is still separately charged; no extra full
+development suite, actual arithmetic pilot retry or hidden budget reset.

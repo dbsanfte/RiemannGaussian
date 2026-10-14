@@ -1,0 +1,301 @@
+FULL PRIME-PAIR DECODING: TWO PRODUCTS, SHARP DOMAINS AND HILBERT LOSS
+
+Status: universal written proofs with independent exact and Arb audits.
+The recovered product and additive convolutions are classical calibrations.
+Originality of the precise encoded application and norm hierarchy remains
+unresolved. This stage adds a consequence of the ninth candidate family,
+not a tenth primitive or an operator counted as historically verified new.
+
+1. THE PRIME-PAIR FIBRE THEOREM, INCLUDING DIAGONALS
+
+For r>=2 put Phi_r(a,b)=ab(a+b)^r. Every unordered PRIME pair p,q has
+a UNIQUE fibre among ALL prime-power input pairs a,b>=2. This is stronger
+than bounded prime-pair injectivity and weaker than injectivity on all
+prime-power inputs. The latter is neither claimed nor used.
+
+For p!=q, gcd(pq,p+q)=1. The valuations at p,q are exactly one; every
+other prime valuation is divisible by r. A competing prime-power pair
+must have two visible residue primes, hence two distinct bases with the
+same full valuations, by decode_proof.txt section 2. Its inputs are p,q.
+
+For p=q odd, N=2^r*p^(r+2). Every competing input base lies in {2,p},
+since ab divides N. Distinct bases give a sum coprime to 2p and larger
+than one, which would introduce another prime into N. Two powers of 2
+give valuation at 2 at least r+2, contradicting v_2(N)=r. Two powers
+p^e,p^f, e<=f, give v_p(N)=(r+1)e+f. Equality to r+2 forces e=f=1.
+
+For p=q=2, N=2^(2r+2). Both inputs must be powers of 2. Unequal powers
+give an odd divisor 1+2^(f-e)>1 in their sum, impossible for this N.
+Equal inputs 2^e give v_2(N)=r+(r+2)e, forcing e=1.
+
+Thus all prime-pair images have unique unordered prime-power fibres.
+The diagonal images have at most one nonzero residue prime (none at r=2),
+and do not overlap the two-visible-prime distinct-pair images.
+
+The 160-program grammar varies residue modulus, odd-prime diagonal
+exponent offset, and the pure-two diagonal exponent offset. Five training
+fits reduce to one on held-out diagonal p=2 and high-index primes. Its
+full patterns are {2:2r+2} or {2:r,p:r+2}; it validates the reconstructed
+image. These finite fits motivated the universal proof, not vice versa.
+
+2. TWO LINEAR DECODERS AND THE GENERIC CONVOLUTION BRIDGE
+
+On every formal arithmetic sequence h define
+  B_r h(pq)=h(Phi_r(p,q)), p<=q primes; zero off prime semiprimes,
+  A_r h(n)=sum_(p<=q primes, p+q=n) h(Phi_r(p,q)).
+Both maps use finitely many input coordinates for each output coordinate.
+The fibre theorem makes their encoded-index implementations unambiguous.
+B_r is a partial coordinate permutation; A_r aggregates coordinates with
+the same sum. Both send delta_1 to zero, rather than preserving the unit.
+
+For arbitrary signed rational augmentation inputs a,b supported on primes,
+the graft K_r from pair_proof.txt satisfies the universal two-product law
+  B_r K_r(a,b)=a *_D b,
+  A_r K_r(a,b)=a *_+ b.
+The second is ordinary additive convolution on positive integer indices
+(with zero outside the stated supports), not the shifted unit-group product
+of mixed_index_proof.txt. The off-diagonal encoded coefficient is
+a(p)b(q)+a(q)b(p), and the diagonal is a(p)b(p). This proves both identities.
+
+The additive map has a nonzero kernel. At r=3,
+  A_3(delta_21000-delta_25000)=0,
+since 21000=Phi_3(3,7), 25000=Phi_3(5,5), and both sums are ten.
+It has no two-sided inverse. A finite encoded prefix is also inadequate
+at the same decoded cutoff: both index-ten queries exceed a prefix 20000.
+Their absence cannot be replaced by zero in an infinite input series.
+
+3. THE ACTUAL ZETA-INPUT ARITHMETIC CALIBRATION
+
+Use g=LOG_D u, with g(p^e)=1/e, and kappa_r=K_r(g,g). The source
+enumerates the entire 182710-term bounded prime-power graft through input
+4096 before applying the prime-pair decoder. The universal fibre theorem
+ensures that ALL other prime-power inputs are excluded on queried images,
+including inputs beyond that source cutoff.
+
+The selected prime-pair image coefficients are two for p!=q and one for
+p=q. Therefore, for the actual zeta-derived correction,
+  B_r kappa_r(n)=number of ordered prime pairs with pq=n,
+  A_r kappa_r(n)=number of ordered prime pairs with p+q=n.
+These outputs do not depend on r. The sum count is the classical ordered
+Goldbach representation function, also at odd n; it does not prove the
+Goldbach conjecture. The product count is two at distinct-prime semiprimes,
+one at prime squares, and zero elsewhere.
+
+The 28303 selected queries cover sum cutoff 2048 and product cutoff 8192.
+An independent checker enumerates every integer sum S with S^r|N and
+solves the integer discriminant S^2-4N/S^r. It checks the ENTIRE resulting
+prime-power fibre on every query, without production residue algorithms.
+Independent integer sieve/convolution and total-prime-exponent counts
+confirm both recovered arrays. All 172 queried diagonal pairs are retained.
+
+On RAW zeta coefficients h=u, B_r gives only the known semiprime indicator.
+A_r gives unordered prime-sum counts, equal to (ordered count+diagonal)/2.
+This direct action is resolved as a known calibration, not novelty.
+
+4. SCALAR ZETA BRIDGES AND THEIR ABSOLUTE DOMAINS
+
+Let P(s)=sum_p p^-s be prime zeta, initially Re(s)>1. The product output
+is P(s)^2. Its exact absolute abscissa is one, with divergence at one:
+the coefficient at 2q is two for every odd prime q, and sum_p 1/p diverges.
+
+The additive output is
+  Z_+(s)=sum_(p,q primes) (p+q)^(-s), initially Re(s)>2.
+Its exact absolute abscissa is TWO, but it CONVERGES absolutely at two.
+This distinction between the abscissa and endpoint convergence matters.
+For p<=q, (p+q)^-2<=q^-2 and pi(q)<=Cq/log(q), by the unconditional
+prime number theorem. Thus the double sum is bounded by a constant times
+sum_q 1/(q log q), which converges by partial summation and the same theorem.
+For sigma<2, balanced prime blocks p,q in [X,2X] contribute at least
+c*X^(2-sigma)/(log X)^2, unbounded as X grows. No pointwise assumption
+about the number of Goldbach representations is used in either proof.
+
+For Re(s)=sigma>2, centered beta Mellin inversion gives the native bridge
+  Z_+(s)=1/(2pi)*integral_R
+    Gamma(s/2+it)*Gamma(s/2-it)/Gamma(s)
+    *P(s/2+it)*P(s/2-it) dt.
+Absolute convergence and the gamma contour majorant justify interchanging
+the sums and integral. The integrand is even in REAL t even when s is
+complex; the half-line integral has normalization 1/pi.
+
+Prime zeta is evaluated from actual native zeta by classical inversion
+  P(z)=sum_(m>=1) mu(m)/m * LOG zeta(mz), Re(z)>1.
+For a=Re(z)>1 and cutoff M its omitted tail is at most
+  delta=2^(-(M+1)a)/[(M+1)(1-2^-a)]*(1+2/((M+1)a-1)).
+Every evaluated LOG is on its Euler sheet since LOG zeta(a)<pi at these
+arguments. The analytic flag is passed to native logarithms at quadrature
+nodes. Only the finite Mobius polynomial is integrated: a real-contour
+tail ball is never assumed valid at off-contour complex evaluation nodes.
+
+For A=s/2=a+iu the whole-line L1 kernel mass is bounded by
+  Gamma(2a)/(2^(2a)*|Gamma(s)|).
+Cauchy--Schwarz reduces the numerator integral to
+integral_R |Gamma(a+it)|^2 dt=2pi*Gamma(2a)/2^(2a).
+For completeness the latter follows from Fourier Parseval applied to
+f(x)=exp(a*x-exp(x)), followed by y=exp(x). Consequently the total finite
+Mobius approximation error in the integral is at most the mass bound
+times (2*L*delta+delta^2), L=LOG zeta(a).
+
+The remaining t>T contour tail uses b=ceil(2a)/2, u=|Im(s)|/2,
+T=u+24, d=2b-1, and C=2pi/(1-exp(-2pi)). It is bounded by
+  C/(pi*|Gamma(s)|)*(Gamma(a)/Gamma(b))^2*L^2*exp(-pi*T)
+  *sum_(j=0..d) binom(d,j)*(T+u+b)^(d-j)*j!/pi^(j+1).
+The beta comparison for a<=b and exact half-integer/integer gamma modulus
+formulas give this polynomial exponential majorant, as in pair_proof.txt.
+
+Six fresh cases compare BOTH decoded outputs with native zeta references.
+Additive coefficients through 2048 have tail N^(2-sigma)/(sigma-2), since
+the ordered prime count is <=n. Product coefficients through 8192 have
+tail 2N^(1-sigma)/(sigma-1). Coefficient-four perturbations and omission of
+the diagonal are rejected. Wide initial intervals at sigma=4,5 originally
+gave finite but insufficiently narrow balls. Those failures are archived;
+uniform short starting segments resolve them without changing the points
+or gates. The two already passed cases are retained with a coefficient
+profile digest, and only failed cases are retried.
+
+The independent scalar route changes cutoffs to 3072/12288 and sums the
+entire prime square p,q<=512. Its additive missing-square tail is
+  2*(513)^(2-sigma)/[(sigma-1)(sigma-2)].
+It follows by enlarging the union to two integer quadrants and integrating
+the decreasing kernel on x>=512,y>=1. Product references use the direct
+prime sum through 512, with tail 512^(1-sigma)/(sigma-1) and its squared
+error majorant. Smaller coefficient perturbations are rejected. A separate
+native beta-only integral confirms normalization and rejects a factor two.
+
+5. PRIME-ONLY ENCODING HAS A SHARP BOUNDARY, INCLUDING ITS ENDPOINT
+
+Project kappa_r onto the prime-pair images. Its scalar series is
+  C_r(s)=sum_(p,q primes) [pq(p+q)^r]^(-s).
+This is the PRIME-ONLY component of the earlier full prime-power Gamma_r.
+For r>=2 its exact absolute abscissa is sigma0=2/(r+2), and it converges
+absolutely at sigma0. This endpoint result uses classical prime density;
+it is not inferred from an AM-GM majorant that diverges there.
+
+For fixed 0<sigma<1, partial summation with pi(x)<=Cx/log(x) gives
+sum_(p<=x) p^-sigma <= C_sigma*x^(1-sigma)/log(x) for large x.
+Splitting the double sum at p<=q then bounds C_r(sigma0) by a constant
+times sum_q q^(1-(r+2)*sigma0)/log(q)=sum_q 1/(q log q), finite.
+For 0<=sigma<sigma0, balanced prime blocks give the lower bound
+c*X^(2-(r+2)*sigma)/(log X)^2, unbounded. Negative sigma gives nondecaying
+positive terms. This proves the sharp abscissa as well as endpoint convergence.
+No maximal analytic-continuation claim is made for either encoded series.
+
+6. SHARP ABSOLUTE COEFFICIENT NORMS AND POWER WEIGHTS
+
+For A_sigma with norm sum_n |h_n|n^-sigma and sigma>0:
+  A_r:A_sigma->A_tau is bounded IFF tau>=(r+2)*sigma,
+  ||A_r||=2^((2r+2)*sigma-2*tau) when bounded.
+The norm is the supremum of column ratios because each encoded column
+appears in only one output row. Put n=p+q. The ratio is
+(pq)^sigma*n^(r*sigma-tau)<=4^-sigma*n^((r+2)*sigma-tau).
+For a nonpositive exponent, n>=4 and equality at p=q=2 gives the exact
+norm. Below threshold choose p=q along unbounded primes, so the ratio
+grows like p^((r+2)*sigma-tau). Aggregation does not improve the l1 bound.
+
+Similarly the product decoder satisfies
+  B_r:A_sigma->A_tau bounded IFF tau>=(r+1)*sigma,
+  ||B_r||=4^((r+1)*sigma-tau).
+Rewrite its column ratio as
+(pq)^((r+1)*sigma-tau)*(1/p+1/q)^(r*sigma).
+Use pq>=4 and 1/p+1/q<=1, with equality at p=q=2. For unboundedness
+below threshold use p=2, q growing through primes.
+
+For the prime-only endpoint source sigma0, the generic bounded target
+weights are exactly 2 for A_r and 2(r+1)/(r+2) for B_r. Increasing r
+does not lower the additive edge. Pure power multiplication n^-lambda
+replaces target tau by tau+lambda and shifts the scalar argument by lambda.
+Using this endpoint source at target tau=1/2 requires
+  lambda>=3/2 for A_r,
+  lambda>=(3r+2)/(2(r+2)) for B_r.
+These inclusive inequalities concern the projected prime-only component;
+the earlier strict inequalities used the full prime-power certificate.
+They are generic decoder bounds, not necessities for every special input:
+P(s)^2 already has the better zeta-specific absolute abscissa one.
+
+For B_3 the generic endpoint threshold is lambda>=11/10. Its critical
+prime-zeta branch obstruction moves to real part<=-3/5. No corresponding
+additive obstruction at an individual zeta zero is claimed: the additive
+function is different, and its critical-strip continuation is unproved here.
+
+7. THE HILBERT GATE: ADDITIVE ROW COUNTS CAUSE ADDITIONAL LOSS
+
+Let H_sigma have squared norm sum_n |h_n|^2*n^(-2sigma). Distinct output
+rows of A_r use disjoint encoded coordinates. Cauchy--Schwarz in each row,
+with equality on its weighted row vector, gives the exact formula
+  ||A_r||^2=sup_n n^(2r*sigma-2tau)
+    *sum_(p<=q, p+q=n) (pq)^(2sigma).
+For sigma>=0, this norm is finite IFF
+  tau>=(r+2)*sigma+1/2.
+Sufficiency uses at most n/2 unordered pairs and pq<=n^2/4. At equality
+it gives the universal norm upper bound 2^(-2sigma-1/2); this upper bound
+is NOT asserted to be the exact infinite norm.
+
+For necessity, PNT supplies order X^2/(log X)^2 unordered pairs with
+p,q in [X,2X]. Among at most 2X+1 possible sums there is one with at
+least cX/(log X)^2 balanced pairs. Its squared row norm is at least a
+positive constant times X^(2(r+2)*sigma+1-2tau)/(log X)^2. Below threshold
+this is unbounded. This average argument does not assume the Goldbach
+conjecture or an asymptotic for every individual even sum.
+
+In particular A_r is UNBOUNDED on unweighted l2. The product decoder's
+partial-isometry law cannot be transferred to the sum aggregation. Exact
+finite row norms at sigma=1/2 and tau=2,5/2,3 through five cutoffs support
+the implementation. They are not substituted for the universal proof or
+called exact infinite maxima.
+
+8. ORDINARY ZETA ZERO INFORMATION IS RETAINED IN THE PRODUCT OUTPUT
+
+Locally near either reused simple zeta zero, write
+  P(s)=LOG zeta(s)+sum_(m>=2) mu(m)/m*LOG zeta(ms).
+The m=2 term is locally single-valued because zeta(2s) is certified nonzero
+on the whole small disk. Every m>=3 term lies in the zero-free Euler
+half-plane; its infinite sum is locally uniform. Thus a simple-zero loop
+changes P by h=2pi*i, and changes the PRODUCT output P^2 by
+  Delta(P^2)=4pi*i*P-4pi^2.
+Every log sheet has the same real part; |Delta(P^2)|>=4pi*|Re P|.
+The source bounds Re P with native log moduli through m=48 and an infinite
+Euler tail. The independent route uses a degree-one zeta jet, changed
+radius-1/40 Cauchy remainder, a radius-1/10 whole-disk zeta(2s) variation,
+the exact sign mu(2)=-1, and real Euler norm bounds for m>=3. Both certify
+negative Re P and positive jump lower bounds at both existing zero disks.
+
+The encoded prime-only C_3 is holomorphic across these disks, since they
+lie strictly to the right of sigma0=2/5. The decoded product's branch
+information really returns, at the costs proved above. Its pole-cancelled
+version [P(s)+LOG(s-1)]^2 has single-valued holomorphic continuation on
+Re(s)>1/2 iff RH: the remainder is holomorphic there and an interior zeta
+zero creates nonconstant squared-log monodromy. This supplies no estimate
+proving the continuation. Values or monodromy of Z_+ at those zeros are
+explicitly NOT inferred from the product result.
+
+9. PRIOR ART, VERIFICATION STATUS AND OPEN REQUIREMENTS
+
+Prime factorization, the two convolutions, prime zeta/Mobius inversion,
+Goldbach representation counts, PNT, beta Mellin inversion and row-norm
+linear algebra are classical. The precise encoded bridge and sharp norm
+hierarchy have unresolved publication history. No-match searches prove
+no originality. This stage adds no separate historically-new primitive.
+
+The reviewed primary Goldbach continuation paper uses von Mangoldt weights
+on ALL integer/prime-power summands. Its conditional meromorphic and
+natural-boundary conclusions are not borrowed for our UNWEIGHTED prime
+sum Z_+. The different weights change the scalar function. Its broader
+relation between prime-pair series and zeta zeros is established context.
+  https://arxiv.org/pdf/1002.4806
+  https://dlmf.nist.gov/27.12
+  https://dlmf.nist.gov/27.5.E7
+  https://dlmf.nist.gov/5.12
+  https://arxiv.org/abs/2102.02280 (previously reviewed primary abstract)
+
+Evidence: prime-pair-results/prime_pair_search.json,
+prime_pair_verification.json, prime_pair_analytic.json,
+prime_pair_analytic_verification.json; the failed initial wide-interval
+record is preserved separately. Exact and analytic verifiers import no
+production discovery or analytic module. FLINT/Arb is a shared trusted
+kernel; these written proofs are not theorem-prover certificates.
+
+The cumulative native-zeta comparison count reaches 120 groups, with both
+prime-pair functions checked per new group. Auxiliary zero and kernel
+controls remain separate. Nine candidate families remain mathematically
+verified with their stated domains; the historically-verified-new list is
+still empty. Publication history and a new zero-sensitive quantitative
+estimate remain required before claiming the research goal achieved.

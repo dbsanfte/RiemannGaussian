@@ -1,0 +1,82 @@
+COMPLETE CENTERED PRODUCT BANDS: ACTUAL-SOURCE AUXILIARY DISCOVERY
+
+The old isolated squarefree-product target has a strictly positive local
+double residue at physical s=t=2/3. The previous finite low-contour theorem
+remains valid; it does not remove this limiting pole from the high complement.
+This protocol replaces that uncentered recovery premise with EXACT centering
+inside every kernel. Let b(n)=a(n)-m_u*(n^(2/3)-(n-1)^(2/3)), including b(1).
+Every query keeps AA, both main crosses and the main square, each split by
+squarefree/nonsquarefree PRODUCT. The six sectors always recover b(h)b(k).
+Only the full unrestricted centered moment is positive; no sector is assumed
+positive or cofinal alone. Full R=R_new+Lv is linked by the prior paid norm
+comparison, retaining the finite cross. All repeated valuations remain.
+
+The source producer is the previously verified prime-bank local recurrence,
+at160-bit Arb precision. Build one read-only table through2047 and disclose
+all its values. Each worker accesses only the prefix through2X-1 appropriate
+to its declared scale. The independent source uses direct Mobius/Dirichlet
+convolutions at192bits; the independent kernel uses weighted prefixes and
+squarefree coprime multiples inclusion-exclusion, not unordered-pair scatter.
+Finite ball agreement checks arithmetic/geometry; it is not an all-scale proof.
+
+Use W_X(h,k)=max(0,2X-max(X,h,k)), N=2X-1, J=ceil(log2 N^2).
+For gamma0,1/6,1/3 the band state is
+  D_j(t)=2^(j*gamma)/X^2 sum_(2^(j-1)<hk<=t*2^j,h,k<=N)
+                          b(h)b(k)W_X(h,k)*(hk)^(-gamma),
+with SAME t in[1/2,1] on every band, j0..J, and negative bands zero.
+The unit band and truncated final plateau are retained. Enumerate ALL exact
+rational jump locations m/2^ceil(log2 m), not just a t grid. All bands with
+the same relative jump update simultaneously BEFORE measuring the operator.
+For each product, preserve every source contribution and center sector.
+
+Enumerate all25 C(z)=1+c1*z+c2*z^2, c1,c2 integer[-2,2]. Record all stencils.
+Numerical priority goes to those whose RECURRENCE roots lambda satisfy
+|lambda|<=1: equivalently |c2|<=1 and |c1|<=1+c2. Independent audit instead
+uses discriminant/conjugate-root and real-root-radius formulas. Rejected
+stencils have an unpaid exponential inverse in this class; that is not a
+claim they are impossible with additional source-specific gain.
+
+For admitted C, the exact inverse coefficients g_l obey |g_l|<=l+1.
+Define U_X=max_j sup_t |D_j+c1 D_(j-1)+c2 D_(j-2)|. Signed Abel within each
+relative band, BEFORE summing bands, proves the sufficient complete recovery
+  E_R(X)<=(2-2^-gamma)*sum_(l=0)^J (J-l+1)*|g_l|*U_X
+        <=(2-2^-gamma)*binom(J+3,3)*U_X.
+The inverse cost is logarithmic in X; no global X^(2gamma) loss is hidden.
+For gamma>0 the uniform t requirement is essential. This auxiliary is
+strictly stronger than whole-moment control for generic bounded sources,
+as the reviewed lacunary-block countermodel proves. It is a candidate route
+for actual mu, not an equivalent reformulation of RH. All admitted stencils
+are cofinal-equivalent to this same uniform-band auxiliary up to logarithms.
+
+Discovery scales64,128,256 evaluate every admitted stencil at every gamma.
+Select one per gamma by the smallest worst adjacent dyadic log slope of U_X;
+tie-break by smaller inverse logarithmic degree, coefficient l1, then ordinal.
+Numerical slopes rank finite leads only. Save selection BEFORE larger-scale
+kernel evaluation. Validation at512,1024 evaluates selected pairs plus the
+unfiltered calibration at each gamma. No retuning from validation results.
+The source table is shared, but no larger-scale kernel response is exposed
+to the selector. Rank values, accepted/rejected grammar and all cases remain.
+
+Independent audit checks EVERY reported extremum witness via exact product
+cutoff queries, all fixed dyadic endpoints, the six-sector center identity,
+complete full-prefix moments, exact inverse coefficients and recovery costs.
+It does not independently reenumerate maximality over every breakpoint;
+that completeness is implemented by the producer and tested against literal
+small synthetic examples. All reported bounds have tight Arb enclosures.
+
+The proof backend has two other reviewed inputs. Normalized Abel recovery
+has inverse norm<=1 and forward norm<=3/2 at gamma1/6,sigma1/2, but its prime
+fractional gain cancels under normalization. Fixed-prime delayed feedback
+contracts for q>=3 with paid pole/floor/unit/d forcing, but its current-scale
+q-free frontier is still an unpaid equivalent companion. Neither is counted
+as independent signed arithmetic control.
+
+One owned producer/checker development suite, only the newly added selected-
+pair check afterwards, then one frozen combined15-test suite. Three worker
+processes,4GiB address space each plus4GiB parent, within16GiB aggregate.
+Workers have1800seconds each. Total cap3 billion proxy operations includes
+all development, frozen tests, one-million metadata reserve,50m main reserve,
+declared per-scale producer caps totalling1.6b and five200m independent caps.
+These proxies are not bit-complexity claims. One source table per precision;
+no unchanged numerical study retry. Sources frozen by direct byte snapshots
+and comparisons, no hashes. No complete signed bound or RH claim is made.

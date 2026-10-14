@@ -1,0 +1,206 @@
+ESTIMATES AS SEARCH TARGETS, WITH EXPLICIT CERTIFICATE OBLIGATIONS
+7 October 2026. This stage proves elementary and classical-theorem consequences.
+No new prime-distribution estimate, RH bound or historical novelty is claimed.
+
+1. WHAT IS SEARCHED AND WHAT COUNTS AS A PROOF
+
+An estimate program records a target, domain, constant, growth exponent,
+logarithmic cost, parameter dependence, certificate and remaining obligations.
+Numerical training proposes these fields; held-out scales can falsify them.
+A finite fit cannot quantify over all scales. Universal statements below
+come from the sound certificate templates described here, with their exact
+algebraic witnesses, not from numerical extrapolation. The independent checker
+replays the algebra and changes the arithmetic and quadrature implementations.
+This is a written mathematical proof and executable audit, not a Lean proof.
+
+The producer computes the inverse q of the constant-one arithmetic function
+by triangular Dirichlet inversion. q(1)=1 and q(n)=-sum_(d|n,d<n) q(d).
+It uses no factorization or prime oracle. Euler factors identify q with the
+classical Mobius function mu. The independent checker factors every integer
+through 131072, merges repeated factor records, reconstructs the integer and
+computes mu from squarefreeness. Prime tests are used only after discovery to
+certify multiplier partitions and in this separate independent checker.
+
+Twenty rational polynomial kernels W are generated before inspecting mu or
+any zero, with W(0)=1 and W(1)=0. Extend W by zero beyond 1. The exact target is
+
+ S_W(X)=sum_(n<=X) mu(n) W(n/X).
+
+The search scores C X^theta (log X)^b for seven rational theta and five
+integer log costs. C is a dyadic upward-rounded training maximum with margin
+5/4. Thirteen training scales end at 1024; fifteen held-out scales include
+odd scales 100003 and 131071 and end at 131072. The zero gate is applied
+after fitting, and no QRH estimate supplies a training target.
+
+2. A WEAK BUT UNIVERSAL CERTIFICATE FOR EVERY GENERATED KERNEL
+
+For W(u)=sum_(j=0)^d c_j u^j, write its Bernstein basis expansion with
+
+ b_k=sum_(j<=k) c_j binomial(k,j)/binomial(d,j).
+
+The degree-d Bernstein basis is nonnegative and sums to one on [0,1].
+Consequently |W(u)|<=C_W=max |b_k|, and |mu(n)|<=1 gives
+
+ |S_W(X)|<=C_W floor(X)<=C_W X for every real X>=1.
+
+This is a separately synthesized certificate. A smaller learned constant
+does not inherit this proof. A proposed theta>=1,b>=0 bound is certified by
+this backend only if its constant dominates C_W already at X=2, because
+X^(theta-1)(log X)^b then increases. The stage leaves better bounds as
+unproved conjectures unless another certificate applies.
+
+3. CANCELLATION IDENTITIES LEARNED FROM ACTUAL ARITHMETIC ROWS
+
+The row search tries mu(k*n)=lambda*mu(n) for gcd(k,n)=1 and zero otherwise,
+for multiple k and lambda. Local Euler factors certify the learned prime law
+
+ mu(p*n)=-mu(n) if p does not divide n, and mu(p*n)=0 otherwise.
+
+Let M(X)=sum_(n<=X)mu(n). Partition the sum into p-coprime and p-divisible
+rows, and apply this law in the divisible row. Terms up to X/p cancel:
+
+ M(X)=sum_(X/p<n<=X,p does not divide n)mu(n).             (1)
+
+For every integer X>=1 the number of terms on the right is exactly
+
+ C_p(X)=X-2*floor(X/p)+floor(X/p^2).
+
+Write X=p^2*a+r, r=p*b+c, 0<=b,c<p. The count density is (p-1)^2/p^2,
+and the residual from that density is -b/p+(2p-1)c/p^2. Its maximum is
+attained at b=0,c=p-1. Thus the count certificate supplies
+
+ |M(X)| <= ((p-1)^2/p^2)*X + ((2p-1)(p-1)/p^2).           (2)
+
+The detector selects the smallest slope among its learned prime rows. It
+recovers p=2 and |M(X)|<=X/4+3/4. This is a classical consequence of an
+Euler factor, not an RH-quality sublinear cancellation bound. The proof
+retains the boundary terms; numerical cancellation is not assumed globally.
+A composite k can obey a valid local mu(k*n) law without partitioning all
+integers into these two rows. Integers divisible by only one prime factor
+of k are missing. The certificate backend therefore requires a prime.
+
+The same partition produces a possible future weighted rewrite
+S_W(X)=sum_(p does not divide n) mu(n)[W(n/X)-W(p*n/X)].
+This rewrite alone supplies no new cancellation among the retained terms.
+The current estimate engine does not certify stronger bounds by assuming it.
+
+4. AUTOMATIC POSITIVE GLOBAL-MOMENT CERTIFICATES
+
+Let B be a previously certified unequal-shift decoder or positive finite
+mixture. Its all-integer least-prime envelope, proved in shift_ratio_proof.txt,
+is |B(n)|<=h(log(P^-(n))/log n), with
+
+ h(t)=sum_i w_i*t/[v_i+(1-v_i)t],
+ w_i>0, sum_i w_i=1, 0<v_i<=1.
+
+The certificate engine constructs h from the program, differentiates its
+qth power and searches for an exact rational/logarithmic antiderivative.
+It verifies the derivative exactly before accepting the synthesized result.
+Each atom is increasing, with derivative v_i/[v_i+(1-v_i)t]^2>0. h(0)=0,
+h(1)=1 and h has a simple zero at zero. There are no poles on [0,1].
+
+For integer X>=2 put t_n=min(1,log(P^-(n))/log X). Then |B(n)|<=h(t_n)
+on [X,2X], and finite layer-cake integration gives
+
+ sum_(X<=n<=2X)|B(n)|^q
+ <= integral_0^1 (h(t)^q)' * #{n in [X,2X]:t_n>t} dt.
+
+For t>0 the counted integers have P^-(n)>X^t. We explicitly import
+Fan/Pomerance's uniform theorem Phi(x,y)<x/log y for x>=y>=2, counting 1.
+For 1<y<2 its extension follows from Phi(x,y)<=x and log y<1. Hence the
+count is at most 2X/(t log X). For every integer q>=2 the integral converges:
+
+ sum_(X<=n<=2X)|B(n)|^q <= C_q X/log X,
+ C_q=2*integral_0^1 (h(t)^q)'/t dt.                      (3)
+
+The q and v_i are parameters retained in C_q, not hidden uniform constants.
+Near zero the integrand is of order t^(q-2). At q=1 it diverges; this backend
+reports a missing truncated integral/loglog cost instead of accepting a
+fixed constant. That limitation of this envelope does not disprove a
+stronger estimate for the actual arithmetic coefficients by another method.
+
+The source computes exact antiderivatives and native Arb integral enclosures;
+the independent checker replays the derivatives and changes variables to
+t=u^2 for the full integral. It also checks actual arithmetic moments via
+independent prime-subset coefficient formulas. Rounded rational constants
+are upper bounds for (3), with the full endpoint integral retained.
+
+For an atomic q=2 program the search recovers C_2=2(1+v)/v without that
+formula as a training target. For weights 1/3,2/3 at v=2/7,7/9 it derives
+
+ C_2=247/63+(56/31)*log(49/18) = approximately 5.7297032513.
+
+This strictly improves the supplied Jensen constant 127/21, approximately
+6.0476190476. It is an automatically derived consequence of the declared
+sieve theorem, not a newly discovered theorem about prime distribution.
+The full external sieve proof has not been independently verified here.
+Primary theorem: https://math.dartmouth.edu/~carlp/erat060523rev.pdf
+
+5. THE ORDINARY ZETA ROOT GATE AND FALSE LONG-SCALE FITS
+
+For the polynomial compactly supported kernel, its Mellin transform is
+
+ W_hat(s)=integral_0^1 W(u)u^(s-1)du = sum_j c_j/(s+j).
+
+Termwise integration, initially Re(s)>1, gives the ordinary-zeta identity
+
+ integral_1^infinity S_W(X) X^(-s-1)dX = W_hat(s)/zeta(s). (4)
+
+The term at n=1 has the same lower limit, so no n=1 term is omitted.
+The engine derives the rational transform. Strict Hurwitz leading-minor
+positivity for its numerator is a sufficient nonvanishing certificate in
+Re(s)>=0. A failed sufficient test is an unresolved gate, not a numerator
+zero. The independent checker uses a Routh array as a distinct test. For
+W=(1-u)^d, W_hat=d!/[s(s+1)...(s+d)], which has no zero in the critical strip.
+
+If a bound is stated only at integer X, it still supplies the needed real-X
+growth control: between X and Y=floor X, the coefficients in the sum agree
+and the mean value theorem bounds |S_W(X)-S_W(Y)| by a kernel-dependent
+constant using sup |W'| and sum_(n<=Y)n/(X*Y). This O(1) cost does not change
+any positive growth exponent or the obstructions below.
+
+A fresh Rouche certificate on the retained first-zero disk proves exactly
+one simple zero there. Reflection s->1-conjugate(s) preserves both zeta zeros
+and that disk, so uniqueness places the zero on Re(s)=1/2. Each generated
+Mellin transform is certified nonzero throughout the disk. At this zero rho,
+W_hat(s)/zeta(s) therefore has a nonzero simple residue. The independent
+checker changes precision and evaluates the rational numerator and denominator
+instead of the producer's sum of fractions. Zero reflection is documented at
+https://dlmf.nist.gov/25.10 ; no new zeta zero is claimed.
+
+An all-scale bound with theta<1/2 would make the left side of (4) holomorphic
+at rho, which is impossible. For theta=1/2,b<0, set s=rho+epsilon, epsilon>0.
+The bound implies epsilon times the absolute integral tends to zero: in
+u=log X coordinates this follows from epsilon integral_(log 2)^infinity
+exp(-epsilon*u)*u^b du ->0. Split at any fixed large u and then let that
+cutoff grow. The finite initial interval and integer-interpolation O(1) term
+also vanish. But epsilon*W_hat(rho+epsilon)/zeta(rho+epsilon) tends to the
+nonzero residue. Thus this negative logarithmic cost is impossible too.
+
+The d=4 kernel produces a near-constant numerical plateau: its fitted
+theta=0,b=0 bound survives every held-out scale through 131072. The detector
+rejects the global claim by this root certificate. This is a concrete
+calibration that numerical success alone cannot prove an estimate.
+
+If W_hat has the nonvanishing certificate and an actual all-scale
+X^(1/2)*(log X)^b bound with finite b were proved, (4) would extend
+W_hat/zeta holomorphically to Re(s)>1/2 and exclude all zeros there; reflection
+then gives RH. This is a sufficient route, not an estimate proved by this
+search and not a claim that the reverse implication has been established.
+Positive coefficient moments of B have a separate target and do not provide
+this signed Mobius cancellation certificate.
+
+6. SCOPE AND WHAT REMAINS TO BE DISCOVERED
+
+The stage learns candidate estimates, discovers usable local cancellation
+rows, and synthesizes the constants of positive all-scale bounds. It records
+missing uniform cancellation lemmas as search obligations. Current backends
+prove classical consequences and can reject impossible conjectures; they do
+not prove a new independent prime estimate or RH-quality cancellation.
+
+There is no completeness guarantee for a finite proof grammar. Extending it
+requires more certificate-producing operations: closure of scale recurrences,
+signed decompositions, multiscale roughness conditioning and identities with
+parameter-uniform error budgets. Numerical samples can rank such proposals;
+their quantified certificates determine whether they are theorems. Historical
+priority is a separate audit. The verified-historically-new list remains empty.

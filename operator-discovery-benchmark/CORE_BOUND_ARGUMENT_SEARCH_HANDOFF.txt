@@ -1,0 +1,148 @@
+DETECTOR-OWNED ARGUMENT SEARCH VERIFIED; SIGNED CORE STILL OPEN
+
+Current input: candidate10_bound_argument_obligation.json
+Accepted study: core-bound-argument-results/pilot-001
+Producer: core_bound_argument_search.py
+Independent checker: check_core_bound_argument_search.py
+Runner/ancestry: run_core_bound_argument_search.py, including verify()
+Rules review: CORE_RATIONAL_CONDUCTOR_BOUND_REVIEW_030.txt
+Protocol: core_bound_argument_search_protocol.txt
+
+What the detector does and what analysts supply
+----------------------------------------------
+The user asked whether bounds were being found by the detector or mostly
+supplied by analytical subagents. Both were happening: the earlier detector
+searched potential coefficients and moment arguments, while analysts chose
+new representations and inference mechanisms. The previous signed primitive
+search found the original energy as its own unpaid endpoint, not a solution.
+
+This extension makes the argument search explicit. Starting from the current
+missing component bound, the executable proposes a divisor-prefix auxiliary,
+generates its proof subgoals, explores applicable rule compositions, derives
+their constants/exponents/logs, and compares arguments across window scales.
+It also records a REQUIRED signed-convolution/Mellin recovery goal. That goal
+has no licensed proof in this grammar and remains an explicit open leaf.
+
+Analysts supplied the reusable Fourier, summation, inverse, Abel and spacing
+rules, and an independently implemented checker. The detector chooses their
+applications and combinations. It does not invent arbitrary new inference
+rules or discover Fourier analysis unaided. There are no runtime model calls.
+This is a finite argument grammar, not a general-purpose theorem prover.
+
+Implementation and reusable API
+-------------------------------
+goal()/plan() accept typed pointwise-square, spectrum, cofactor, reciprocal,
+variance and interval goals with rational decay and finite-support/mass costs.
+The current source adapter handles the verified p2,m3 component; generic
+auxiliary arguments are independent of that adapter. Exact rational decay
+permits 1/2,1/3,1/6 and other roots. Interval costs retain both U and L.
+
+Search nodes contain their goal, rule, earlier premise identifiers, complete
+bound and arithmetic assumptions. All attempted premise combinations and
+side-condition failures are reproducible. Structural memoization shares
+common subgoals; node/depth limits bound the search. Exact goal cycles and
+unsupported goals cannot create proofs. This is not a decision procedure
+for arbitrary semantic equivalence between different proposed lemmas.
+
+rank() chooses by exponent, logarithmic degree, arithmetic assumptions,
+constant, then proof size. The frozen study compares L=U^lambda at
+lambda=0,1/2,1,2,3,6; complete two-variable bounds remain in the artifact.
+Changing the allowed rules, rational decay, or window changes the selected
+argument. compile_sawtooth() separately produces exact rational means,
+combined conductors and period variance for finite rational weight arrays,
+without enumerating their enormous common period. Its scope is finite algebra.
+
+Actual result and the unsigned comparison
+-----------------------------------------
+Status: BOUND_ARGUMENT_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE.
+The actual study generated48 proof nodes from41 attempted applications
+across the source argument, its unsigned ablation and two base-prefix runs.
+All were independently replayed. The root component argument did not close.
+
+For integer U>=1, write
+ Q_U(n)=sum_(d<=U)mu(d)*({n/d}-(d-1)/(2d)).
+Exact discrete Fourier expansion combines every occurrence of the same
+reduced rational frequency before magnitudes. Its conductor coefficient uses
+ K_r(U)=sum_(k<=U/r)mu(kr)/k.
+The compiler retains the full signs; the exact period variance is
+ sum_(r=2..U) K_r(U)^2 J2(r)/(12r^2).
+
+The search compares several genuinely different bound compositions:
+ - pointwise triangle gives variance<=U^2/4;
+ - a uniform cofactor maximum gives U(1+log U)^2/12;
+ - keeping the U/r cutoff while exchanging sums gives variance<=U/2;
+ - actual complete Mobius inversion gives the competing variance<=9U.
+
+Crucially U/2 is valid for ANY bounded weight sequence. The actual Mobius
+provider loses this comparison; there is no arithmetic exponent advantage.
+This corrects the tempting but false attribution of this gain to signed
+prime cancellation. The executable confirms this by removing the arithmetic
+axioms and searching the SAME auxiliary again.
+
+Full-period variance is not simply asserted on short windows. Spacing of
+the combined rational frequencies pays every off-diagonal Gram entry and
+gives, for any interval of L positive integers,
+ sum |Q_U(n)|^2 <= min(U^2*L/4, U*L/2+U^3*(1+log U)).
+The direct route wins for sufficiently short windows; the spectral argument
+wins for longer ones. Rational decay produces other choices: weighted Abel
+wins at decay1/6, whereas the direct cofactor route keeps only one logarithm
+at the critical decay1/2. These choices are found by argument comparison.
+
+For actual h=A_U*A_U, the finite-factor rule pays supportD<=U^2 and
+sum|h|<=U^2. On intervals starting at n>=D it yields
+ sum |prefix(h*e_U)(n)|^2
+ <=min(U^6*L/4, U^5*L/2+3U^11*(1+log U)).
+Here e_U is defined below. The denominator/spacing scale U^6 is retained.
+At L=U^6 the chosen auxiliary cost is U^11*(1+log U), rather than the
+direct U^12. This too is a generic finite-factor bound, not RH control.
+
+What remains unpaid
+-------------------
+The complete E prefix has exact mean C_U=1+(M(U)-c_U)/2. M(U) is retained,
+with no critical Mertens estimate assumed. At coefficient level
+ E_U=C_U*delta+e_U,
+and prefix(e_U)(n)=Q_U(n) for n>=1, while prefix(e_U)(0)=0. The periodic
+expression at0 equals1-C_U and must not replace that unit boundary.
+
+The original A_U^2*E_U^{*3}-c_U^3*D_U remains intact. Its four mean-split
+branches, their16 ordered crosses, the head correction and all inherited
+head/source crosses and residues are retained. E^{*3} is a DIRICHLET cube;
+Q(n)^3 is not a replacement. Infinite e^2/e^3 factors cannot enter the
+finite-factor rule with fictitious support. A prefix estimate cannot be
+transferred through the outer zeta kernel or Mellin energy without proof.
+
+The generated remaining target is the complete signed reciprocal-simplex
+convolution covariance and its recovery to the original U^(12/5) Mellin
+bound, with means, units, head and all cross regions. The old11/2 bound and
+primitive failures remain in the inherited tasks. No requested component,
+whole-core or RH payment is promoted. Review030's optional analytical
+lower-mean branch suggestions are unimplemented, concern an alternative
+physical-block route, and do not pay the fixed-contour current obligation.
+
+Verification, publication and resources
+---------------------------------------
+Root's initial12 tests passed. A later input-scope guard received one new
+regression and one affected component test, both passed. The independent
+checker ran its18-test suite once, all passed. Thus31 DISTINCT tests passed,
+with32 test invocations; no failed or unchanged full suite was rerun.
+Tests include exact signed rational period sums, conductor collisions,
+fractional/log transitions, rule ablation, changing window choices, cycles,
+scope violations, and deliberate deletion of means/crosses/spacing losses.
+
+Actual session76774 completed exit0. Producer ran once, followed by one
+independent verification of the actual source and complete feedback. The
+checker imports no implementation from the new producer. Theorems remain
+an explicitly reviewed mathematical trust base, not proof-assistant objects.
+
+All144 inherited bindings and every original alternative remain. Direct
+readback confirmed11 frozen files unchanged and exact equality of both
+published copies with the saved output. No precautionary hashes, fitted
+constants or new numerical arithmetic source observations were used.
+Output is92,307,585 bytes. Prior studies and their preserved failures are
+unchanged; do not restart this completed study or any old one.
+
+New development:294,770 charged operations. Actual study:5,754,629.
+Inclusive total:6,049,399 of1b. Actual elapsed14.696s; peakRSS704,032KiB,
+within4GiB/900s and user-authorized16GiB. All agents/processes are stopped.
+The research goal remains active. Progress here is detector autonomy and
+verified auxiliary proof composition; signed full-core control remains open.

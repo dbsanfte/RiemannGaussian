@@ -1,0 +1,103 @@
+EXACT AUGMENTED EQUATION BASIS HANDOFF — publication013
+
+This stage attempts exact structural preprocessing of the unchanged
+publication012 primal arithmetic system. It does not run a numerical solver.
+The complete original system has5641 equations and1957 coefficient variables:
+366 square weights,613 signed relation pairs,5 constant slacks, and three
+full15 PSD matrices. The historical grid is1,2,3,5 plus the gamma-zero
+auxiliary, q=6,C=32. No finite critical certificate or uniform RH bound exists.
+Earlier handoffs retain the arithmetic and all-scale proof obligations.
+
+Exact preprocessing design
+
+First declare and VERIFY each of733 source-column identities:613 opposite
+signed relation pairs, and120 storage columns equal child minus four times
+parent. This yields1224 coordinates for RANK COMPUTATION ONLY. Every source
+row's omitted coordinates are determined exactly by its retained coordinates;
+including the untouched RHS makes projection injective on the augmented row
+span. The optimization problem continues to use all1957 variables, its original
+objective, scalar positivity constraints and full PSD cones.
+
+The generic basis reducer then processes projected augmented rows in increasing
+initial nonzero count, with original row index as tie-breaker. Exact rational
+elimination records each cancellation against an earlier normalized pivot row.
+The retained equations are original source equations, not transformed residuals.
+RHS-only pivots are retained as inconsistency diagnostics. Complete independent
+replay must establish the status of every source row before selected ORIGINAL
+row indices can be licensed for a later solver. UNKNOWN supplies no reduction.
+No floating rank truncation, candidate refitting or actual Mobius table is used.
+
+The frozen run primitive-state-exact-row-basis-probe-001 binds101 sources and
+passes63 tests, including exact augmented equivalence, contradictory equations,
+incorrect recipes, all source/target domains, resource-accounting tampering,
+interrupted checks, partial artifact transport and failed checkpoint writes.
+Sol6.1 subagents handled substantial producer and independent checker work;
+the main thread reviewed integration and performed the research execution.
+
+Resource contract
+
+One dependent preprocessing job runs in a3GiB worker with3GiB total allowance,
+one numerical thread,900 cooperative seconds including source construction,
+and1800 external seconds. Total charged backend work is capped at450000000.
+The ledger includes compilation, projection production and verification, basis
+production and verification. Until a COMPLETE independent replay validates a
+producer's counts, its entire allocation remains reserved. The projection
+allocation is50000000; the basis allocation is175000000. Resource-limited
+receipts are nonadmitted diagnostics even when useful progress is retained.
+
+Observed result
+
+All733 column identities passed both production and independent exact replay.
+The projected matrix has571885 nonzero coefficients and577526 source cells
+including RHS positions. Projection production used19715799 charged work units;
+independent projection verification reserved21847066 including its20301277
+audit operations and associated source/receipt costs. Compilation reserve was
+34416554. No optimization variable or cone was removed.
+
+The basis attempt returned UNKNOWN with reason "receipt byte cap". The
+8366520-byte retained receipt approaches the8388608-byte cap. It contains5253
+row transcript records out of5641 source rows (about93.1%), and231991 recorded
+cancellation steps. It also retains556 pivot-source records; this is PARTIAL
+producer progress, not an independently established rank of the full system.
+The producer reports48633769 operations and232141 attempted steps. The150-step
+difference arose inside an unfinished row and is not a completed transcript.
+These partial operation counts were not accepted as independently replayed.
+
+Accordingly, the ledger keeps the full175000000 basis-production allocation.
+The basis checker verifies only UNKNOWN/nonadmission semantics and bounded
+receipt metadata; it does not claim to replay the partial elimination tape.
+Its reserve is8497248, including130727 audit operations and the receipt byte
+cost. The total charged/reserved work is259476667, leaving190523333 unallocated.
+This conservative reserve is not a claim that175 million basis operations
+actually executed.
+
+Worker elapsed time was215.81644576697727 seconds, CPU215.699085587 seconds,
+peak memory730588KiB (about714MiB), with one observed thread. No deadline was
+exceeded. The binding limit was retained transcript size. The partial-status
+review did not authorize equation reduction; no numerical search or candidate
+admission followed it.
+
+The whole-stage independent audit passed. It rebuilt the complete original
+arithmetic once, reverified projection and original source/target hashes,
+validated conservative budget reservations and the partial outcome, and left
+equation_reduction_verified=False. The original equations remain mandatory.
+Publication013 binds all these artifacts and keeps mathematical feasibility
+UNKNOWN. No signed cancellation estimate, cone exclusion or RH result follows.
+
+Next task
+
+Run a fresh frozen protocol with32MiB instead of8MiB for retained receipts.
+Keep the arithmetic, source/target, deterministic pivot order, generic exact
+algorithms,50-million projection allocation,175-million basis allocation,
+450-million total work ceiling,900/1800-second clocks and3GiB memory fixed.
+The extra allowance is for evidence size. Generic producer/checker functions
+already take an explicit receipt cap; the new wrappers and auditor must pass
+the larger value consistently to reads, writes, verification and work reserves.
+All files from this attempt remain immutable.
+
+A completed verified basis would justify a new numerical trial on selected
+FULL1957-coordinate equations. It would not justify a smaller PSD cone or a
+uniform arithmetic theorem. A returned numerical candidate still requires
+exact restoration against ALL original equations and independent sign/PSD
+verification. The required uniform innovation inequality remains unresolved;
+global_bound_proved=False; RH_proved=False; research goal active.

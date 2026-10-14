@@ -1,0 +1,143 @@
+LATEST FOLLOW-UP: CONVOLUTION_CONTROL_HANDOFF.txt records the completed next
+pilot at convolution-control-results/pilot-001. It adds complete mixed signed
+potentials, 40 passing contracts, 16 independent audit groups, and parallel
+candidate reviews. The full signed critical bound remains unproved. The text
+below is retained as the prior stage's provenance and starting analysis.
+
+NEXT RESEARCH STEP AFTER THE VERIFIED SIGNED-ARITHMETIC PILOT
+
+The goal remains active: no complete actual signed critical bound or RH proof.
+This turn made verified progress. There is no external blocker.
+
+Frozen evidence and workflow
+
+Successful run: signed-arithmetic-results/pilot-001.
+Its protocol binds 11 source/test files, which must not be edited in place.
+There are 36 passing contracts and 16 independent audit groups. The search
+retained 268 signed stencils, 249 generation rejections, 64 sampled ASTs,
+7 stencil leads and 17 exploratory AST leads. Post-seal signed-bound tests
+produced 83 passes, one failure and 84 missing constants at unseen levels.
+The evaluated scales were 1107, 1341, 1427, 2048, 4096 and 8192.
+Historical coefficient and standard-response overlap is explicitly disclosed.
+
+Every available AST response was independently reconstructed by factorization.
+One missing training computation was retained. The same frozen worker reproduced
+all three sealed output files byte for byte. Independent replay of the AST
+sampling algorithm and independent proof of resource-missing reasons are not
+claimed. Source changes need a separate version or a preserved compatibility
+layer; do not invalidate successful source hashes.
+
+Three existing user-approved Sol 6.1 agents reviewed all seven frozen stencils.
+The planner froze exact formulas, claims and external dispatch receipts. Runtime
+model identity is not independently authenticated by receipt metadata.
+The immutable collection is pilot-001/review-collection-001. The separately
+verified analytical-review-001 has three frozen source files. Its report admits
+only the explicit component charge and independently checked stored-constant
+refutation. Other reviewer prose remains unpromoted. All seven original
+existential global signed estimates remain unresolved.
+
+Verified component reduction
+
+Let w be a zero-integral polygon kernel and let U bound its weighted variation,
+Integral sqrt(t)|dw(t)|. With ONE shared B=floor(X^(1/3)), actual arithmetic gives
+
+ |diagonal + short primitive projection|
+     <= U(11+16q^2/9) X^2 ceil(X^(1/q)), for every real q>=1 and X>=1.
+
+Integer/dyadic domains apply when identifying this with block energies. The
+proof uses the squarefree discrepancy and divisor-count lemmas, the polynomial
+difference 2(t-1)^2, max z^2 exp(-z)=4/e^2, and e^2>6. Consequently full F and
+its COMPLETE dense signed remainder R have equivalent existential cofinal upper
+estimates after an explicit constant shift. R still has no critical bound.
+
+Stencil structure: avoid spending another iteration on density filters alone
+
+Every generated zero-quadratic-moment stencil factors as P(T)=(T-4)B(T), where
+T A(X)=A(2X). There are 135 nonnegative B polynomials: 90 direct-recursion cases
+and 45 additional mixed-sign stencils with a positive transformed energy.
+Five of the seven selected stencils have this conditional recovery bridge.
+They smooth ordinary signed defects and supply no new arithmetic inequality.
+The two selected higher-moment filters annihilate cubic energy, so a small
+filtered response cannot establish an energy-only RH bridge.
+
+Exact failed stored constant: program prefix 60d29e304c,
+ c=[-128/5,-64/5,4/5,1], X=4096, q=12, C=3/5.
+ A(X),A(2X),A(4X),A(8X)=[523156,2690102,13739384,61505354].
+ F=24670762 > 100663296/5, with margin 22690514/5.
+The same fixed C extension fails for every q>=12 because the root ceiling is2.
+No claim allowing arbitrary future C_q and q0 is refuted. Keep the operator.
+
+Best new sampler lead for actual signed arithmetic
+
+AST 43bc2c2518395be27e340edb652a8a3f7574d337d35f994f8f89a951165bcb78 is
+ a(n)=(lambda*mu)(3(n-1)) for n>=2, with a(1)=0.
+Let c=lambda*mu. Prime-power algebra gives c(p^e)=2(-1)^e, hence
+ c(n)=2^omega(n)lambda(n),
+ D_c(s)=zeta(2s)/zeta(s)^2, initially for Re(s)>1.
+For d(m)=c(3m),
+ D_d(s)=-2zeta(2s)/[(1-3^(-s))zeta(s)^2].
+The local ratio follows from (1-z)/(1+z) and -2/(1+z) at prime3.
+In Re(s)>1/2 the numerator and local factor are nonzero, so ordinary zeta
+zeros remain poles with doubled multiplicity. Prefix-energy control for a
+transfers to d through a one-index shift and two adjacent block energies.
+Thus a complete cofinal critical prefix-energy bound would imply RH through
+the ordinary unfiltered Mellin argument. No such signed bound is proved.
+
+This is reviewer-derived conditional analysis; the stage registry has not yet
+admitted a dedicated analytic certificate for this AST. Certify its Euler,
+shift and recovery semantics independently before promotion. No converse from
+RH to this precise energy estimate is asserted. Finite AST semantics were also
+replayed independently through n=1024 after the frozen run.
+
+An alternative shift argument: the series
+ sum_m d(m)[(m+1)^(-s)-m^(-s)]
+is holomorphic for Re(s)>0, using |d(m)|<=2tau(m) and absolute convergence of
+sum tau(m)m^(-sigma-1) for sigma>0. Verify uniform convergence on compact sets
+if using this route. Its holomorphic correction cannot cancel an off-critical
+ordinary zeta pole.
+
+Other AST lessons
+
+The full review is pilot-001/review-plan-001/ast-review.txt. It identifies exact
+mu aliases, a summable perturbation of mu, a negative lambda alias and replicated
+lambda. None supplies a new signed estimate. The root-index sequence
+lambda(floor sqrt(n))/floor sqrt(n) has critical-looking energy for elementary
+index-thinning reasons; recovery changes the exponent and prevents an RH claim.
+Finite-support and unit sequences are controls. The observable 4lambda+2 has
+provable cubic prefix-energy drift despite a favorable finite cancellation score.
+A root-mask convolution is constant in that mask through255; its final horizon287
+crosses the first transition. Formal inversion alone has no analytic growth bound.
+
+Next implementation and proof priorities
+
+Search complete signed cross and shell moments for c=lambda*mu and actual mu,
+retaining product constraints, actual prime-power multiplicities and every
+residual. Add certified semantic normal forms and alias grouping, distinguish
+coefficients from prefixes, and charge index distortion and ordinary recovery.
+A finite net-mass ratio should not substitute for prefix-energy stability.
+
+For positive-B stencils use ONE u=floor sqrt(2SX-1) across every block. For
+X>=2S, the full expression is F=C-8X M(u)^2 B(2), where C retains the complete
+F2 energy and cross terms. Charge every smaller initial dyadic scale. Seek a
+bound on C using this credit or a nonnegative telescoping functional; separate
+absolute bounds on F2 erase the desired cancellation. No such bound exists yet.
+The dense primitive residual can also be regrouped by common g and coprime
+prefixes, retaining g=1 and every shell. Unknown signed-correlation estimates
+must remain explicit premises. Freeze new proposals before new final responses.
+
+Additional post-discovery route (reviewer analysis, not a registry promotion)
+
+The auxiliary convolution-inverse-route.txt proves h=|c|=One*mu^2=2^omega,
+c*h=Unit, and JHJ=H^(-1), where H is convolution by h and J is pointwise
+multiplication by lambda. Hence (JH)^2=I on every complete finite prefix.
+The special relation is inverse(c)=|c|; plain mu also has a positive inverse.
+Root independently checked the arrays and matrix involution through40.
+
+The route gives exact coefficient and prefix Gram identities, including
+sum_d h(d) C(floor(t/d))=1 and a complete nonpositive cross term after squaring.
+The signed cross-term innovation is still uncontrolled. Also J is an isometry
+in any diagonal weighted l2 norm, so ||JH||=||H||. The involution cannot itself
+supply a uniform critical norm bound. This is an analytically proposed relation
+following the sampled convolution, not an automatically discovered relation.
+Search convolution/pointwise-map compositions and full Gram moments next, with
+these costs and the missing signed innovation retained.

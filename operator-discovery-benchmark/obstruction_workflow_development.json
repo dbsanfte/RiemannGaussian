@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 242,
+      "stdout": "SYNTHETIC_WORK module=test_run_obstruction_auxiliary_search operations=242\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n"
+    }
+  ],
+  "operations": 242
+}

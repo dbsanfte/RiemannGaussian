@@ -1,0 +1,94 @@
+INDEPENDENT PRIME-PAIR FORCING REVIEW
+Supplied exact identities and uniform projected bound only; no full signed
+estimate, numerical success, or RH proof. All earlier sources remain frozen.
+
+1. Exact target identity and mandatory sign orientation.
+For actual f=mu takekappa1 andALLpositive prime-power exponents. Foractual
+f=c=mu*lambda takekappa2 andODDexponents only. Coefficientwise
+ f(i)logi=-kappa sum_(k=p^e|i)logp*f(i/k).
+Forij>1 apply this to BOTH factors anddivide bylog(ij). Fullsymmetry in i,j
+then gives, withN=4X-1 andJ=K_2X-4K_X,
+ Delta=J_X(1)-2kappa S,
+ S=sum_(k=p^e,ka<=N,b<=N)logp*f(a)f(b)J_X(max(ka,b))/log(kab).
+The unitpair(1,1) is exceptional andisretained asJ_X(1)=-2X. Every other
+source is covered. This is an exact REALidentity; log ratios are not fitted
+rational numbers. The independent verifier instead uses certified rational
+intervals enclosing the real identity. The originalpair loop fixesi,j and
+enumeratesprime-powerdivisorsk|i, distinct from theproducer'sk,a,b iteration.
+CRITICAL SIGN: an upperbound onDelta needs a LOWERbound onS, or equivalently
+an upperbound on-S. BoundingSfromabove proves no such energy innovation
+upperbound. The profile's normalizednegative dense remainder has the correct
+orientation; all subsequent search/adjudication must preserve it.
+
+2. Complete primitive-core split and uniform absolute bound.
+Writea=gu,b=gv withg=gcd(a,b),(u,v)=1. The thinpart retains exactlymax(u,v)<=B;
+the densepart is its exact complement overALLeligibletriples, including
+zeroactualcoefficients andzeroJweights. ForEVERYintegerX>=1,B>=1,
+ |S_B|<=8X^2 B H_B H_(4X) foractualmu,
+ |S_B|<=8X^2 B H_B^3 H_(4X)^4 foractualc,
+whereH_n=sum_(d<=n)1/d. ForB0 the thinsum is exactlyzero.
+Proof: |J_X(t)|<=2X and0<logp/log(kab)<=1. Productconstraint gives
+ g<=N/(ku), whileu,v<=B. Formu, dropcoprimality only in the upperestimate:
+ 2X * N sum_u<=B(1/u)sum_v<=B1 * sum_primepowersk<=N(1/k)
+ <=8X^2 B H_B H_N.
+Forc, |c(gu)c(gv)|<=|c(u)c(v)|d4(g), INCLUDINGsharedprimefactors ofgwithu,v,
+sinceomega(gu)<=omega(g)+omega(u) and4^omega(g)<=d4(g).
+Sum_g<=G d4(g)<=G H_G^3, sum_kprimepowers1/k<=H_N,
+sum_u<=B |c(u)|/u<=H_B^2, andsum_v<=B|c(v)|<=B H_B.
+This yields8X^2 B H_B^3 H_N^4, thenN<=4X. Allprimepowerexponents, unitcores,
+sharedprimes andsourceendpoints are charged; noPNT/RH/randomsigns are used.
+
+3. Critical cutoffs and exact certificate constants.
+LetL=1+log(4X). FixedB gives thecertificate scalar
+8B(1+bit_length(B))^s, degree r, with(s,r)=(1,1)formu,(3,4)forc.
+ForB=floor(bit_length(X)^gamma), fixedgamma>=0, m=ceilgamma,
+ bit_length(X)<=2L, B<=2^m L^m, H_B<=(1+2gamma)L.
+Thus scalar8*2^m*(1+2gamma)^s andintegerdegree m+s+r arevalid.
+ForB=floor(X^gamma), boundscalar8(1+gamma)^s X^(2+gamma)L^(s+r) isvalid;
+ifgamma>0 this ENVELOPEdoesnot establishcofinalcriticalstrength. That is
+lackofadmission, NOTa refutation of a potentially stronger actual estimate.
+Forintegerdegree d>=1, logX=t>=0 andL<=3+t. Convexity plus exponentialseries
+prove L^d<=2^(d-1)(3^d+d!*q^d)ceil(X^(1/q)) forEVERYintegerq>=1.
+These are explicit true uniform estimates for the COMPLETEthincomponent.
+They neither bound the dense signed remainder nor establishRH.
+
+4. Interval certification and full arithmetic checking.
+Logbounds areintegerendpoints atD=2^bits, bits>=8. The independentchecker
+certifies each actual logn via rationalatanh, binaryrange reduction andan
+explicit positivegeometrictail, withadaptiverefinement when needed. No
+floatingequality orproducerfunction is imported. Aftercertification the
+originalpairinnerloop uses ONLYintegerarithmetic:
+ ratio_lower=floor(D*loglo[p]/(loghi[i]+loghi[j])),
+ ratio_upper=ceil(D*loghi[p]/(loglo[i]+loglo[j])).
+These bounds enclose logp/log(ij) exactly. Signed coefficient multiplication
+swaps endpoints whennegative. The verifier reconstructs everyheightbin,
+zero-termcount, full/thin/denseinterval, coverage andhistogramhash, actual
+coefficient/prefixhash, originalA_X/A_2X/Delta, unitexception andnormalized
+NEGATIVEremainder. Itchecks theexactknownfullS=(J1-Delta)/(2kappa) lieswithin
+the certified fullinterval. Itnever substitutes thatknownfullS for a dense
+signed estimate. Sharedhistograms/logs mustcover thewholedeclaredhorizon;
+missingrows ormutable sign/count/hashfields failverification. No global
+promotion is emitted bythisfinite/identitychecker.
+
+5. Recovery route and precise open estimate.
+Forafrozenfixed/bit-length-powerB, the projected|S_B|isuniformlycritical.
+Therefore acofinalall-dyadic upperbound
+ -S_dense(X)<=Cq X^2 ceil(X^(1/q)),
+withfiniteCq independentofX andEVERYintegerq>=q0, wouldgive thedesiredDelta
+upperbound aftercharging2kappa|S_B|andtheunitterm. Normalizedenergy telescopes
+tocriticalordinaryprefixenergy; itsactualordinaryMellin/polebridge then
+excludesoffcriticalordinaryzeta zeros. The fullsigneddense estimate remains
+UNPROVED. The identityoritsboundedthinprojection cannotbe citedas that
+estimate. Positive-powercutoffs requireaseparatecriticalcomponent theorem
+beforethisrouteisadmitted. Within Delta(X), ONE shared B(X) is used for both K_2X and K_X. At the
+next independent defect Delta(2X), the program uses B(2X). Eventual-scale
+variants must charge finite initial blocks.
+
+6. Evidence scope.
+Prespecified actualsourcefixtures stopatN31; rational-only logchecks stopat32.
+Fivefocusedtests include mutatedlogenclosures, height-histogramentries,
+coveragecounts, negative-remaindersign andsourcehash. These checkimplementation
+andacceptanceboundaries, not anall-scale signed inequality. The mathematical
+proof above independently validates the suppliedcomponent constants and
+identitydomains. Searchfits, intervalpasses andunknownlevels cannotreplace
+the stillmissing uniformdense lowerbound.

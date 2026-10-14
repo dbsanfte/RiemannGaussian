@@ -1,0 +1,21 @@
+{
+  "RH_proved": false,
+  "actual_moments_are_not_universal_uppers": true,
+  "cases": 36,
+  "development_operations": 1408,
+  "diagnostic_operations": 57197844,
+  "elapsed_seconds": 8.109740699990653,
+  "hashes_used": false,
+  "new_frozen_files": 5,
+  "new_synthetic_tests": 8,
+  "new_universal_bound_proved": false,
+  "old_studies_or_test_suites_replayed": false,
+  "partition": "[2^k,min(2^(k+1)-1,H)]",
+  "peak_rss_kib": 704032,
+  "prospective_storage_bytes": 276718456,
+  "protocol_frozen_before_new_moments": true,
+  "source_065_scores_previously_observed": true,
+  "status": "EXACT_ACTUAL_AND_COMMON_SIGN_BLOCK_MOMENTS_UNIFORM_BOUND_OPEN",
+  "two_way_endpoint_energy_equalities": 144,
+  "uniform_growth_proved": false
+}

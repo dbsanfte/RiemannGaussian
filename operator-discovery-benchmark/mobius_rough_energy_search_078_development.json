@@ -1,0 +1,14 @@
+{
+  "schema": "rough-energy-search-development-v1",
+  "attempts": [
+    {
+      "tests_run": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.37756155896931887,
+      "output": "test_complete_factor_partition_and_shared_signed_tokens (test_mobius_rough_energy_078.RoughEnergy) ... ok\ntest_cutoff_and_eta_grammars_are_budgeted_not_root_whitelists (test_mobius_rough_energy_078.RoughEnergy) ... ok\ntest_detector_recovers_an_auxiliary_that_closes_a_known_drift (test_mobius_rough_energy_078.RoughEnergy) ... ok\ntest_exact_energy_keeps_cancelling_shared_tokens (test_mobius_rough_energy_078.RoughEnergy) ... ok\ntest_missing_half_and_resource_limits_are_not_counterexamples (test_mobius_rough_energy_078.RoughEnergy) ... ok\ntest_unit_and_empty_at_arbitrary_exponents (test_mobius_rough_energy_078.RoughEnergy) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.038s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

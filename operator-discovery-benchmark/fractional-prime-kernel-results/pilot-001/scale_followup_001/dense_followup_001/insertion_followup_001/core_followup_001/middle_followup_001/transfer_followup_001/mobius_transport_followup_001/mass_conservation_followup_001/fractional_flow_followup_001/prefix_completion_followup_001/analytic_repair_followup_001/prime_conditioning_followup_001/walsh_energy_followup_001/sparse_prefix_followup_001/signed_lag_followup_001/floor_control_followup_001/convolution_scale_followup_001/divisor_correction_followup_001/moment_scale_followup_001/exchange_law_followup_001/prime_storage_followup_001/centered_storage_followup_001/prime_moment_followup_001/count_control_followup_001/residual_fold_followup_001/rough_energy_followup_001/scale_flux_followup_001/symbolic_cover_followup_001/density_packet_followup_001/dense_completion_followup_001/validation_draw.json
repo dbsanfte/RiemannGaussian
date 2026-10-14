@@ -1,0 +1,63 @@
+{
+  "drawn_after_formula_freeze": true,
+  "draws": [
+    {
+      "band": [
+        1536,
+        2047
+      ],
+      "status": "ACCEPTED",
+      "u": 1722
+    },
+    {
+      "band": [
+        1536,
+        2047
+      ],
+      "status": "ACCEPTED",
+      "u": 1787
+    },
+    {
+      "band": [
+        3072,
+        4095
+      ],
+      "status": "ACCEPTED",
+      "u": 3850
+    },
+    {
+      "band": [
+        3072,
+        4095
+      ],
+      "status": "ACCEPTED",
+      "u": 3588
+    },
+    {
+      "band": [
+        6144,
+        8191
+      ],
+      "status": "ACCEPTED",
+      "u": 6444
+    },
+    {
+      "band": [
+        6144,
+        8191
+      ],
+      "status": "ACCEPTED",
+      "u": 8179
+    }
+  ],
+  "parents": [
+    1722,
+    1787,
+    3588,
+    3850,
+    6444,
+    8179
+  ],
+  "seed": 20261011082,
+  "source_signs_not_used": true
+}

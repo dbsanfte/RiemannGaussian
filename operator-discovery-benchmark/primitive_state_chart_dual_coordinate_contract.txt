@@ -1,0 +1,124 @@
+Prospective032 implementation contract for substantial parallel tasks.
+No actual source model/scaling, coordinate updates, scores or certificate
+search before freeze. Prior031 and its sources are immutable. No hashes,
+source cache rebuild, geometry assembly or reduction replay.
+
+Producer owns primitive_state_chart_dual_coordinate.py and its test module.
+Independent checker owns check_primitive_state_chart_dual_coordinate.py
+and its test module. Root owns protocol, runner, outer audit, publisher,
+workflow tests and resource scope. Design reviewer owns soundness_v1.txt.
+Budget450m:prep40m, model40m, numerical190m, restoration90m, soleaudit90m.
+Test25m covers ALL development and the single frozen combined suite. Each
+owned test module prints exactly SYNTHETIC_WORK module=<module> operations=N
+with its full invocation's metered work; report development totals. Target
+<=5m each dev invocation and do not repeat unchanged full suites. Use tiny
+numerical systems and one authentic full exact certificate fixture.
+
+Producer APIs:
+  build_model(reduction, budget) -> model
+    Decode saved031 final_rows with stable original column ids; active_columns
+    determines retained order. Every actual input is302x687. Use old029
+    scaled_model for exact positive row/column infinity scaling, then
+    finite_float to reject nonfinite or nonzero-underflowed conversion.
+    Model contains columns (list of sparse row-position->float dictionaries),
+    rhs (complete float list), rows:int, columns_count:int, nonzeros:int,
+    active_columns:list, row_ids:list, plus bounded scaling diagnostics.
+    Numerical helper should accept similarly shaped tiny synthetic models.
+  numerical_reservation(m,n,nnz,available) -> dict
+    setup=8*nnz+32*(m+n)+65536
+    sweep=8*nnz+32*n+2*m+64
+    refresh=8*nnz+16*(m+n)+256
+    phases=17; refresh_interval=16; max S10000.
+    Choose largest integer S>=1 with
+      setup+17*(S*sweep+(ceil(S/16)+1)*refresh) <= available.
+    Use integer binary search; if none fits, return S0 and do not iterate.
+    Return keys setup,sweep,refresh,phases,sweeps_per_phase,total.
+  coordinate_proposal(model, *, deadline, max_operations=190000000,
+                      resident_cells=0) -> numerical dict
+  search(chart,rays,geometry,reduction,*,deadline,checkpoint=None) -> outcome
+
+Coordinate mathematics/protocol:
+  r=A*x-b, x>=0, initially x=0. Norm_j=dot(A_j,A_j)>0.
+  lambda_ref=max(0,max_j dot(A_j,b)). Penalties lambda_ref*2^-e
+  for e=1,3,...,31, followed by0 (17 phases). New objective is unit L1
+  in scaled variables. Positive scaling preserves support and feasibility;
+  no original L1 or convergence theorem is claimed.
+  Warm start successive phases. Visit j in ascending retained position:
+    new=max(0,x_j-(dot(A_j,r)+lambda)/Norm_j), delta=new-x_j;
+    x_j=new; r+=delta*A_j, using only nonzero entries of A_j.
+  Charge the whole declared sweep proxy BEFORE visiting coordinates; check
+  deadlines within the loop. Stop a phase early if a complete sweep changes
+  no stored coordinate. Refresh r from the matrix after every16 completed
+  sweeps and at EVERY phase end. Charge refresh BEFORE computation. Use
+  math.fsum of each row's -b and all sparse x_j*a_ij terms, with nnz+m
+  temporary cells accounted, to reduce cancellation error during refresh.
+  Norms/initial setup are charged as the setup proxy. No opaque LP/Gram solve.
+  All arrays and diagnostics must remain finite. Norms use stable L2 e.g.
+  math.hypot; reject zero target norm, nonpositive/nonfinite column norm.
+  Save phase-end checkpoints with phase index, penalty, completed sweeps,
+  residual_norm, relative_residual=residual_norm/target_norm, support_size.
+  Among checkpoints with1..443 strictlypositive weights choose minimum
+  (relative_residual,support_size,phase). Keep its FULL n-vector including
+  all zeros. Do not threshold or trim coefficients into support. Numerical
+  statistics are proposal diagnostics, never proof of feasibility/infeasibility.
+  If resource or nonfinite failure interrupts the prescribed trajectory,
+  complete=False and do not attempt exact restoration from a partial result.
+
+Numerical dict schema primitive-state-chart-dual-coordinate-proposal-v1:
+  complete:bool, attempted:bool, reservation:dict, rows,columns,nonzeros,
+  penalty_reference:float, checkpoints:list,
+  selected:{phase,scaled_vector:list,support:list,relative_residual:float}orNone,
+  sweeps_charged:int,refreshes_charged:int,setup_charged:bool,
+  coordinate_visits:int,nonzero_updates:int,counts:Budget.counts(),
+  reason/resource_failure if any, elapsed_seconds, globalflagsfalse.
+  A full phase-end checkpoint is added only AFTER its refresh and metrics.
+  Meter operations exactly setup_charged*setup+sweeps_charged*sweep+
+  refreshes_charged*refresh; use charge(0) only for additional deadline checks.
+  Every support/cardinality/metadata/finite scan is covered by these declared
+  proxy blocks. Save counters after failures, including charged partial work.
+
+Outcome schema primitive-state-chart-dual-coordinate-search-v1:
+  status:CERTIFICATE_PROPOSED/NONCERTIFIED/UNKNOWN,
+  route:'coordinate_descent', numerical:dictorNone, model_stats:dict,
+  certificate:old029 full Farkas certificate orNone,
+  restoration_stats if attempted, stage_counts:model/numerical/restoration,
+  policy,limits,globalflagsfalse. Report only stages actually started.
+  Incomplete numeric -> UNKNOWN, complete no eligible checkpoint -> NONCERTIFIED.
+  Otherwise translate ALL selected positive positions through active_columns
+  and030 column_representatives to original851 ray ids. One old029 exact
+  support solve against saved complete030 responses (target{1224:-1}), free
+  support variableszero, then old029 certify against all782 original chart
+  rows. Exact ValueError rejection is NONCERTIFIED; resource limits UNKNOWN.
+  All original input/export/array residency must survive stage switches.
+
+Independent core API:
+  verify_outcome(chart,chart_review,rays,geometry,reduction,reduction_review,
+                 outcome,*,deadline=None,max_operations=90000000,
+                 max_cells=6000000,max_bits=4096,
+                 max_certificate_bytes=8388608) -> summary
+  May expose verify_numerical(numerical,rows,columns,nnz,budget) helper.
+  Treat licensed031 reduction as a prior exact premise, not something to
+  replay. Check actual retained ids and reported model dimensions/nonzeros
+  against saved equations. Independently recompute reservation and reconcile
+  all charged numerical work with blocks/counters/caps. No numerical replay.
+  Check17 complete finite checkpoints for completed trajectories, common S
+  caps, selected support/vector completeness, and prescribed ranking using
+  reported diagnostics (diagnostics remain unverified numerical values).
+  Full exact certificate uses SAME90m budget and direct old029 parsing/
+  check_identity, never a separate convenience verifier budget. Validate
+  all851 alpha and782 lambda, every1224 coordinate, alpha>=0,pairing=-1;
+  bind alpha to all selected strictlypositive native support ids with zeros
+  outside, and original representative-only lift. Reconstruction rank stays
+  producer metadata; free positions must be valid and carry zero weights.
+  Reject premature producer theorem flags. On NONCERTIFIED/UNKNOWN with no
+  certificate, return verified=True,complete=False,certificate_verified=False
+  and the unchanged disposition; do not label finite math proved.
+
+Summary schema primitive-state-chart-dual-coordinate-independent-check-v1:
+  verified,complete,status,certificate_verified,
+  finite_augmented_cone_infeasibility_certified,certificate_check,
+  numerical_trajectory_replayed:false,numerical_scores_verified:false,
+  audit_operations,audit_cells,peak_live_cells,independent_audit_work_reserve,
+  globalflagsfalse. Only complete exact witness gets FINITE_CONE_INFEASIBLE.
+  Failure of this fixed851-generator search leaves other PSD directions open;
+  even its success would exclude only the augmented finite proof template.

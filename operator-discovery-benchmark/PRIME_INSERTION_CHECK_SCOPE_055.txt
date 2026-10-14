@@ -1,0 +1,141 @@
+055 INDEPENDENT PRIME INSERTION / FINITE SOURCE / CONDITIONAL RECOVERY
+
+All frozen051–054 files are unchanged. No saved scientific source arrays,
+selected candidate values or old studies/tests are read in this development.
+Only tiny synthetic prefixes are used in new owned tests. New055 producer
+functions are never called by the checker as proof or source oracles.
+
+1. Exact arithmetic primitive.
+Fix rational0<alpha<1 and K(n)=-sum_{d|n}mu(d)(log d)^alpha, withK(1)=0.
+The Mobius function is ordinary and universally defined. K depends only on
+rad(n), because the nonzero Mobius divisors are exactly squarefree divisors.
+For E_p f(n)=f(pn), on radical-invariant states E_p^2=E_p. D_p=I-E_p is therefore
+idempotent on those states. All E_p commute. These operator identities are not
+claimed for arbitrary sequences. For a canonical distinct actual prime setS,
+R=prodS, define D_S=prod_(p∈S)D_p, including the empty-set identity operator.
+The exact subset expansion has coefficient(-1)^|U| atE_(prodU).
+
+If a prime ofS dividesn, E_p K(n)=K(n), hence D_S K(n)=0. Ifgcd(n,R)=1,
+expand every divisor ofn*prodU asd*e, where d|n ande|prodU. The coefficient of
+(log(de))^alpha collapses by
+ mu(e) sum_(U⊇prime_support(e))(-1)^|U|.
+This iszero except whene=R, where mu(R)*(-1)^|S|=1. Thus
+ D_S K(n)=-sum_{d|n}mu(d)(log(Rd))^alpha, ifgcd(n,R)=1.
+The coprime mask is essential; this shifted formula must not be applied on the
+shared-prime branch. The same subset-union reduction proves D_S^2=D_S on
+radical states and all insertion operators commute.
+
+2. Positivity, domination and the excluded unit.
+For coprime n>=2, the fractional-power integral gives
+ D_S K(n)=I_alpha^-1 integral_0^infinity
+           R^-t prod_(p|n)(1-p^-t)t^-alpha-1dt >0.
+The constant I_alpha isfinitepositive. Atzero the product isO(t^omega(n)),
+soalpha<1 pays integrability; at infinityalpha>0 pays it. SinceR^-t<=1,
+0<=D_S K(n)<=K(n) for alln>=2, including the exactzero mask case.
+For the unit, however, D_S K(1)=-(logR)^alpha, negative for nonemptyS; for
+emptyS it is0. No positivity atn1 is asserted. Prefix B_S(x) includes ONLY
+2<=n<=x. Commutation/idempotence are exact source identities, not estimates for
+cancellation, energies, or RH.
+
+3. Exact complete cofactor prefix and unit correction.
+Let C_R(t)=#(1<=m<=t:gcd(m,R)=1)
+          =sum_(U⊆S)(-1)^|U|floor(t/prodU).
+Then for every integerX>=1,
+ B_S(X)=-sum_(d<=X,gcd(d,R)=1)mu(d)(log(Rd))^alpha*C_R(floor(X/d))
+        +(logR)^alpha.
+The last term removes the negative n1 insertion. It is not an optional drift.
+For a finite filter sum_j c_j B_S(q^jN)/alpha, letP1=sum_j c_j. Its coefficient
+at the shifted atom log(Rd)^alpha is
+ h_d=-mu(d) sum_j c_j C_R(floor(q^jN/d))+1_(d=1)*P1.
+This combines the unit correction with the very same atom before rounding.
+ForR1,d1 the atom isexact0. Every remaining d is retained, including squarefree
+composite signs, every scale, and the full shifted indexR*d.
+
+4. Independent finite admission.
+The source is rebuilt for a selected NEW finite request, without trusting an
+archive Boolean or caller-made source object. A checker-created opaque context
+stores a complete ordinary-Mobius divisor-recurrence array and new shifted
+atoms. The frozen053 independent atom primitive certifies the32-bit dyadic
+floor of(log(Rd))^alpha with192/256/384-bit interval refinement. Reuse is only
+within this new audit. Some shifted indices can overlap atoms already evaluated
+in an older study; that overlap is disclosed, not represented as new arithmetic
+or as untouched old atoms. The old sample bank is not rerun.
+For each h_d, accumulate the exact integer centerh_d*flooratom and assign its
+rounding uncertainty upward ifh_d>0 and downward ifh_d<0. Divide the complete
+interval by the fixed positivealpha. Every signed coefficient and shared
+source error is preserved before taking magnitudes. The new independent
+interval must be contained in the supplied producer interval. This licenses
+one finite unrounded arithmetic value, never a uniform bound.
+
+The conditional producer correlated-error rule is also sound: for coprimen>=2,
+all archived floor(log(d*e)^alpha) terms cancel except e=R. Nonunit signs have
+exactly the originalK(n) divisor uncertainty counts. The new d1 atom contributes
+one extra downward uncertainty whenR>1; forR1 it isexact0. The shared-prime
+branch hascenter/error exactlyzero. This error rule requires the actual
+all-index log/Mobius source premise; our direct reconstruction supplies that
+premise at each requested finite horizon instead of trusting metadata.
+
+5. Source-free base and energy domination.
+The conditional energy rule fixes t_i(N)=[B_(S_i)(4N)-3B_(S_i)(2N)+2B_(S_i)(N)]/alpha
+and requires S_0 empty, so t_0 is the original053 target. ForintegerN2,3,
+allneededn<=12. Pointwise domination andlog12<3 give0<=D_S K(n)<=3.
+The numerator is the difference between sum_(2N<n<=4N)D_S K(n) and
+2sum_(N<n<=2N)D_S K(n), each nonnegative and at most6N. Its absolute value is
+therefore at most6N, not12N. Consequentlyt_i(N)^2/N<=108/alpha^2.
+For anyfixed integer vectora andlambda>=0,
+ F(N)=[t_0(N)^2+lambda*(sum_i a_i t_i(N))^2]/N
+     >=t_0(N)^2/N,
+withQ=e0e0^T+lambda*a*a^T positive semidefinite by its explicit two squares.
+The complete polynomial matrix keeps diagonalQ_ii and doubled offdiagonalQ_ij,
+including all negative crosses. Cauchy/triangle at the two base scales yields
+ B=108/alpha^2*(1+lambda*(sum_i|a_i|)^2),
+the squared L1 norm, which the implementation prices explicitly.
+
+6. Conditional all-integer recovery, not payment of the recurrence.
+The leafF(2N+r)<=F(N)+C/N^delta must hold for EVERYintegerN>=2 and BOTHr0,1.
+It remainsOPEN; finite fits or pointwise insertion identities cannot pay it.
+Repeatedfloor-halving of anyintegerN>=2 ends at2 or3. For delta0, the chain
+has at mostfloor(log2N)-1 transitions, soF(N)<=B+C log2N (a safe larger bound).
+For delta>0, parents along a reversed chain are at least2,4,8,..., hence
+F(N)<=B+C/(2^delta-1)<=B+2C/delta,
+using2^delta-1>=delta*log2>=delta/2. No fixed parity, dyadic-only restriction,
+endpoint-only interpolation, omitted seed, or unpriced recovery is allowed.
+The serialized logarithm_base is explicitly2 (inactive in the bounded case).
+These conclusions are conditional on that exact uniform leaf. Recurrence,
+uniform target bound andRH remain unproved. The request's coefficients and
+parameters are fixed across allscales; noconstant fitting is proof.
+
+7. Paid uniform high-t Laplace tail, with low-t signed core OPEN.
+The exact q2P[2,-3,1] filtered source integral is
+ 1/(alpha I_alpha) integral R^-t sum_(d<=4N,gcd(d,R)=1)mu(d)d^-t
+   sum_(e|R)mu(e)W(N/(de)) t^(-alpha-1)dt,
+ W(y)=floor4y-3floor2y+2floory.
+P(1)=0 cancels the excluded unit correction; no separate unit main is dropped.
+W has quarter-cell values0,1,-1,0, so|W|<=1 andW(N)=0 atintegerN.
+For emptyS this removes d1; the remaining mass is at most3*2^-t for t>=2.
+For nonemptyS all d including1 remain, but cofactor sum has at most2^|S|
+terms and sum_d d^-t<=2. The externalR^-t pays its exponential tail.
+The elementary normalizer bound1/(alpha I_alpha)<=3 andlogR>=log2>=1/2,
+together with t^(-alpha-1)<=1, give forfixedinteger2<=tau<=256
+ |t_empty,tail(N)|<=18*2^-tau,
+ |t_S,tail(N)|<=12*2^|S|*R^-tau (S nonempty),
+uniformly forEVERYintegerN>=2. The empty-unit gate must not be extended to
+nonintegerN. There is no source distribution assumption or numerical integral.
+The remaining0<t<tau contribution staysOPEN. This pays a genuine full-source
+remainder, not the complete target or a recurrence. Splitting a quadratic
+potential into low and tail pieces must retain both tail squares AND all
+low/tail signed cross terms; the tail estimate cannot erase those crosses or
+transfer the same fitted drift constant automatically.
+
+8. Executable capacity and trust limits.
+Inputs use canonical rational strings (4096bits/2500characters), alpha strictly
+between0 and1, bounded distinct sorted actual primes and exact integer scales.
+Prime product and complete shifted source indices are capped at2,000,000,
+with additional prospective bounds on global atom/mu caches and live contexts.
+Integer accumulations (8192bits) and derived interval outputs (16384bits,
+10000characters) are separately guarded; inputs retain their4096bit cap. No denominator
+whitelist, hash, saved source flag, floating score or new producer function is
+used as proof authority. The universal symbolic theorem extends mathematically
+beyond those resource caps; an execution capacity failure is not its refutation.
+The admitted rules are independently reviewed elementary/analytic identities,
+not proof-assistant formalization. No new distribution orRH theorem is imported.

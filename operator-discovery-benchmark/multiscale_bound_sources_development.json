@@ -1,0 +1,15 @@
+{
+  "module": "test_multiscale_bound_sources",
+  "operations": 1199,
+  "runs": [
+    {
+      "elapsed_seconds": 0.008711061032954603,
+      "errors": 0,
+      "failures": 0,
+      "operations": 1199,
+      "peak_cells": 4121,
+      "returncode": 0,
+      "tests": 7
+    }
+  ]
+}

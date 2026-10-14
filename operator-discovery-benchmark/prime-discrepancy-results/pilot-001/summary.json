@@ -1,0 +1,1054 @@
+{
+  "status": "independently_verified_floor_density_and_signed_prime_correlation_search",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-discrepancy-results/pilot-001",
+  "checks": {
+    "frozen_parent_all_programs_and_sealed_fresh_case_provenance_checked": true,
+    "discovery_isolation_and_deterministic_selection_replay_checked": true,
+    "all_floor_proposals_and_full_period_universal_certificates_checked": true,
+    "factorial_trace_and_elementary_dyadic_prime_density_certificates_checked": true,
+    "complete_prime_density_finite_patch_and_monotone_tail_checked": true,
+    "actual_prime_power_support_and_all_coefficient_square_certificates_checked": true,
+    "complete_quadratic_window_energies_and_independent_ramp_Gram_diagonals_checked": true,
+    "all_learned_constants_validation_and_final_comparisons_checked": true,
+    "bounded_interpolation_error_and_logarithmic_ordinary_zero_bridge_checked": true,
+    "rho_threshold_actual_zero_and_pole_logarithm_obstructions_checked": true,
+    "support_controls_excluded_from_actual_prime_density_certificates_checked": true,
+    "unsigned_all_scale_results_separated_from_unproved_signed_correlation_premises": true
+  },
+  "programs": 228,
+  "estimates": 32357,
+  "archived": 24,
+  "carry_proposals": 16807,
+  "universal_floor_certificates": 16,
+  "full_period_cells_checked": 129,
+  "carry_statuses": {
+    "nonzero_linear_drift": 16767,
+    "negative_period_cell": 24,
+    "proved_nonnegative_periodic_carry": 16
+  },
+  "selected_prime_density_certificate": {
+    "coefficients": [
+      "1",
+      "-2",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "certificate": {
+      "status": "proved_nonnegative_periodic_carry",
+      "coefficients": [
+        "1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "period": 2,
+      "period_cells": [
+        "0",
+        "1"
+      ],
+      "entropy_ball": "[0.693147180559945309417232121458176568075500134 +/- 3.61e-46]",
+      "coefficient_cost": "3",
+      "unit_interval_coverage": [
+        "1",
+        "2"
+      ],
+      "universal_domain": "every real u>=0",
+      "proof": "period drift is exactly zero and all half-open unit cells are nonnegative"
+    },
+    "id": "57ac71c8b36b8b284b75a050c6d2bf0d3119461b52a592b4e76eb1cc1928e536",
+    "density": {
+      "constant": "359/128",
+      "tail_index": 14,
+      "initial_cutoff": 8192,
+      "tail_constant_ball": "[2.80436867364070686907352176198740910664572399 +/- 2.32e-45]",
+      "initial_maximum_ball": "[1.03882057760912989300815556273824652693361121 +/- 1.55e-45]",
+      "uniform_prime_weight_bound": "psi(x)<=C*x for every real x>=1",
+      "uniform_prime_weight_bound_proved": true,
+      "RH_sufficient": false,
+      "imported_prime_distribution_estimate": false
+    }
+  },
+  "all_scale_prime_density_bound_proved": true,
+  "all_scale_prime_density_bound_is_signed": false,
+  "all_scale_coefficient_density_certificates": {
+    "0": {
+      "beta": "0",
+      "constant": "899/512",
+      "initial_cutoff": 2048,
+      "tail_majorant_ball": "[1.75495070915943370071330924198605038974127013 +/- 3.73e-45]",
+      "initial_maximum_ball": "[1.42369641805455135513491428391430716182753990 +/- 3.45e-45]",
+      "uniform_coefficient_square_bound": "sum_(n<=N) a(n)^2 <= C*N/log(e+N), every integer N>=1",
+      "all_scale_coefficient_square_bound_proved": true,
+      "signed_pair_bound_proved": false
+    },
+    "1/2": {
+      "beta": "1/2",
+      "constant": "1189/256",
+      "initial_cutoff": 2048,
+      "tail_majorant_ball": "[4.64438171168464355055219512639087624764178547 +/- 3.51e-45]",
+      "initial_maximum_ball": "[0.857197011730949917578397115102953008065779714 +/- 3.43e-46]",
+      "uniform_coefficient_square_bound": "sum_(n<=N) a(n)^2 <= C*N/log(e+N), every integer N>=1",
+      "all_scale_coefficient_square_bound_proved": true,
+      "signed_pair_bound_proved": false
+    },
+    "1": {
+      "beta": "1",
+      "constant": "13633/1024",
+      "initial_cutoff": 2048,
+      "tail_majorant_ball": "[13.3126747192602731000688527796053538213433315 +/- 3.53e-44]",
+      "initial_maximum_ball": "[0.977351385243194567703862347291968611559414954 +/- 4.20e-46]",
+      "uniform_coefficient_square_bound": "sum_(n<=N) a(n)^2 <= C*N/log(e+N), every integer N>=1",
+      "all_scale_coefficient_square_bound_proved": true,
+      "signed_pair_bound_proved": false
+    },
+    "3/2": {
+      "beta": "3/2",
+      "constant": "28427/1024",
+      "initial_cutoff": 2048,
+      "tail_majorant_ball": "[27.7598297318863223492632822016294831108459081 +/- 2.87e-44]",
+      "initial_maximum_ball": "[2.24961490087064420539959432811834630839940579 +/- 4.86e-45]",
+      "uniform_coefficient_square_bound": "sum_(n<=N) a(n)^2 <= C*N/log(e+N), every integer N>=1",
+      "all_scale_coefficient_square_bound_proved": true,
+      "signed_pair_bound_proved": false
+    }
+  },
+  "all_scale_diagonal_bound_proved": true,
+  "imported_prime_distribution_estimate": false,
+  "prime_density_finite_patch_values_checked": 131072,
+  "coefficient_density_finite_patch_values_checked": 15872,
+  "exact_coefficients_checked": 25618,
+  "complete_coefficient_cutoff": 16384,
+  "complete_actual_windows_checked": 2896,
+  "complete_support_control_windows_checked": 192,
+  "polynomial_integration_cells_checked": 1787462,
+  "independent_ramp_Gram_entries_checked": 3429912,
+  "finite_archived_passes": 22,
+  "RH_sufficient_obligations_passing_fresh_windows": 19,
+  "finite_passes_nevertheless_globally_ruled_out": 0,
+  "finite_support_control_passes": 2,
+  "support_controls_are_actual_prime_density_inputs": false,
+  "surviving_uniform_proof_obligations": [
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "beta": "1",
+        "id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "origins": [
+          "unfiltered"
+        ],
+        "multiplier_at_one": "1"
+      },
+      "candidate": {
+        "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "41571/1024",
+        "observed_rho": -0.966432239240548,
+        "positive_residual_growth_slope": -0.4722782689782299,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "0",
+          "constant": "41571/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "40899/1024",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "ec44a417d6ea3aaf24f2b64e3b6c20b6e647292f44243af2de315014f1fecacb",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-2"
+          ]
+        ],
+        "beta": "1",
+        "id": "915d022466aae525d2421bfd9b794ac222794aae94712689e61fedf0a1070714",
+        "origins": [
+          "finite_differences"
+        ],
+        "multiplier_at_one": "0"
+      },
+      "candidate": {
+        "program_id": "915d022466aae525d2421bfd9b794ac222794aae94712689e61fedf0a1070714",
+        "rho": "-1",
+        "gamma": "2",
+        "constant": "373/512",
+        "observed_rho": -0.9218635168592414,
+        "positive_residual_growth_slope": 1.431794600009554,
+        "transfer": {
+          "rho": "-1",
+          "gamma": "2",
+          "constant": "373/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "368091/1024",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "c269f83c6e49e174e97519481b4bb36753ec0b78ac92b1e488eb27120d4aed91",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "beta": "1",
+        "id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "origins": [
+          "unfiltered"
+        ],
+        "multiplier_at_one": "1"
+      },
+      "candidate": {
+        "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "7349/512",
+        "observed_rho": -0.966432239240548,
+        "positive_residual_growth_slope": -0.4722782689782299,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/4",
+          "constant": "7349/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "40899/1024",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "2bd3082b8619e07dfaa92ee2b893a985e09e2e19b959d413142644bff0ae7ae9",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "beta": "1",
+        "id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "origins": [
+          "unfiltered"
+        ],
+        "multiplier_at_one": "1"
+      },
+      "candidate": {
+        "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "rho": "0",
+        "gamma": "0",
+        "constant": "147/512",
+        "observed_rho": -0.966432239240548,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "0",
+          "gamma": "0",
+          "constant": "147/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "40899/1024",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "04c8bba84ce411943c54f8c4a0a9fb13bd6d6c43d188d8ed7b5fda3021744383",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-1/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "cba5101eead6ca1632175a6cfd5e30abb9b1364cffd44c34fb37d779982a6672",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "63/64"
+      },
+      "candidate": {
+        "program_id": "cba5101eead6ca1632175a6cfd5e30abb9b1364cffd44c34fb37d779982a6672",
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "39315/1024",
+        "observed_rho": -0.9663721751164402,
+        "positive_residual_growth_slope": -0.40648213366823055,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "0",
+          "constant": "39315/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "44539011/1048576",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "95ca4a3b0068246df11f2f6283348c24fcc5fd80c4761963f290ab421dd23e4e",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-1/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "cba5101eead6ca1632175a6cfd5e30abb9b1364cffd44c34fb37d779982a6672",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "63/64"
+      },
+      "candidate": {
+        "program_id": "cba5101eead6ca1632175a6cfd5e30abb9b1364cffd44c34fb37d779982a6672",
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "3475/256",
+        "observed_rho": -0.9663721751164402,
+        "positive_residual_growth_slope": -0.40648213366823055,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/4",
+          "constant": "3475/256",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "44539011/1048576",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "7e65b3f1230c8a4dbe47ee0df80bc6fb40441cd5c60460c42b87677c300e0262",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-1/16"
+          ]
+        ],
+        "beta": "1",
+        "id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "31/32"
+      },
+      "candidate": {
+        "program_id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "18593/512",
+        "observed_rho": -0.966286467241085,
+        "positive_residual_growth_slope": -0.3338231278573686,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "0",
+          "constant": "18593/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "11819811/262144",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "d9b87cf6006c589a6e23c0d723f18a034f04922145d35324ab48aa3c1591c703",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-1/16"
+          ]
+        ],
+        "beta": "1",
+        "id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "31/32"
+      },
+      "candidate": {
+        "program_id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "3287/256",
+        "observed_rho": -0.966286467241085,
+        "positive_residual_growth_slope": -0.3338231278573686,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/4",
+          "constant": "3287/256",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "11819811/262144",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "66abc5eb3a880547955525fcc62baafd912c734a2c92a8fc8078fb3e85e2432f",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "5",
+            "-53/64"
+          ]
+        ],
+        "beta": "1",
+        "id": "859f8e032b03659a8a7c7502de95ecfc70602f84a25047ae700daf40a8f494bb",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "267/320"
+      },
+      "candidate": {
+        "program_id": "859f8e032b03659a8a7c7502de95ecfc70602f84a25047ae700daf40a8f494bb",
+        "rho": "-63/64",
+        "gamma": "0",
+        "constant": "47451/1024",
+        "observed_rho": -0.9766729077632286,
+        "positive_residual_growth_slope": 2.491156444909382,
+        "transfer": {
+          "rho": "-63/64",
+          "gamma": "0",
+          "constant": "47451/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "559866411/4194304",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "0c968fc5fdf913c1f330e459e36d30df1608efffe85a42dede772ac24e2523d7",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "5",
+            "-53/64"
+          ]
+        ],
+        "beta": "1",
+        "id": "859f8e032b03659a8a7c7502de95ecfc70602f84a25047ae700daf40a8f494bb",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "267/320"
+      },
+      "candidate": {
+        "program_id": "859f8e032b03659a8a7c7502de95ecfc70602f84a25047ae700daf40a8f494bb",
+        "rho": "-63/64",
+        "gamma": "1/4",
+        "constant": "3527/256",
+        "observed_rho": -0.9766729077632286,
+        "positive_residual_growth_slope": 2.491156444909382,
+        "transfer": {
+          "rho": "-63/64",
+          "gamma": "1/4",
+          "constant": "3527/256",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "559866411/4194304",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "9b9f40aaf9bce76a3867dd88836be59dd4cf0c1edb91372e776d127140d26b5c",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3/2",
+            "-75/64"
+          ],
+          [
+            "3",
+            "-1/64"
+          ],
+          [
+            "9/2",
+            "7/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "25897520791a2fd1f74577170fa075a70951f8536cf3c789800ca510392ce1fb",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "151/576"
+      },
+      "candidate": {
+        "program_id": "25897520791a2fd1f74577170fa075a70951f8536cf3c789800ca510392ce1fb",
+        "rho": "-1",
+        "gamma": "2",
+        "constant": "439/1024",
+        "observed_rho": -0.9440592279245755,
+        "positive_residual_growth_slope": 1.7472158816823629,
+        "transfer": {
+          "rho": "-1",
+          "gamma": "2",
+          "constant": "439/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "242490171/1048576",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "3de11813a897a18546952e85cebdfe69427cae0ef23cdb507a3143a9151225c7",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3/2",
+            "-63/64"
+          ],
+          [
+            "2",
+            "-7/64"
+          ],
+          [
+            "5/2",
+            "-7/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "9c7302ee09c222f1a0668fc532aab9279e60c2700c5294ea6e15cf1946a84d8d",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "129/640"
+      },
+      "candidate": {
+        "program_id": "9c7302ee09c222f1a0668fc532aab9279e60c2700c5294ea6e15cf1946a84d8d",
+        "rho": "-1",
+        "gamma": "2",
+        "constant": "481/1024",
+        "observed_rho": -0.9455793919539602,
+        "positive_residual_growth_slope": 1.6132727252136339,
+        "transfer": {
+          "rho": "-1",
+          "gamma": "2",
+          "constant": "481/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "55990731/262144",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "aa20b1cd11e80e25a6caf288a178085c395cc2d627e3a66a51216eeb65fd095f",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-3/4"
+          ]
+        ],
+        "beta": "1",
+        "id": "7cc13629fddb5ac0e847b55b20e8b2f07cfa65c90070e1cc24d70850dffd9133",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "3/4"
+      },
+      "candidate": {
+        "program_id": "7cc13629fddb5ac0e847b55b20e8b2f07cfa65c90070e1cc24d70850dffd9133",
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "4201/1024",
+        "observed_rho": -0.971269705569186,
+        "positive_residual_growth_slope": 1.2908562205090413,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "0",
+          "constant": "4201/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "2004051/16384",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "6dac286dc26f51789f9e4efeeffd3051fce079160c004799073c0864cdbf81b0",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-3/4"
+          ]
+        ],
+        "beta": "1",
+        "id": "7cc13629fddb5ac0e847b55b20e8b2f07cfa65c90070e1cc24d70850dffd9133",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "3/4"
+      },
+      "candidate": {
+        "program_id": "7cc13629fddb5ac0e847b55b20e8b2f07cfa65c90070e1cc24d70850dffd9133",
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "3533/1024",
+        "observed_rho": -0.971269705569186,
+        "positive_residual_growth_slope": 1.2908562205090413,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/4",
+          "constant": "3533/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "2004051/16384",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "25f07bbab67deff7b708d93f09be13f96c48f8b2441c593a7f784b147d4a5ec9",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-23/32"
+          ],
+          [
+            "9",
+            "-7/64"
+          ]
+        ],
+        "beta": "1",
+        "id": "50dfe4837d44f0421ef90079ed11135d1275194ff5d7526572eba0c6682495c5",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "431/576"
+      },
+      "candidate": {
+        "program_id": "50dfe4837d44f0421ef90079ed11135d1275194ff5d7526572eba0c6682495c5",
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "4219/1024",
+        "observed_rho": -0.9734490137207591,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "0",
+          "constant": "4219/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "559866411/4194304",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "4d71c366be5a3e74cdb9f5bfdc57e046f2a17e13d1718e24c5df929324d02efd",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-23/32"
+          ],
+          [
+            "9",
+            "-7/64"
+          ]
+        ],
+        "beta": "1",
+        "id": "50dfe4837d44f0421ef90079ed11135d1275194ff5d7526572eba0c6682495c5",
+        "origins": [
+          "least_squares"
+        ],
+        "multiplier_at_one": "431/576"
+      },
+      "candidate": {
+        "program_id": "50dfe4837d44f0421ef90079ed11135d1275194ff5d7526572eba0c6682495c5",
+        "rho": "-31/32",
+        "gamma": "1/8",
+        "constant": "3869/1024",
+        "observed_rho": -0.9734490137207591,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/8",
+          "constant": "3869/1024",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "559866411/4194304",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "559939625d98f70cf65631cea6274870b2099ef10f0e5912277e275b550bf943",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-29/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "5280354dd790e7912ca9e7f97c36e7aeb24a169bbdd8a6f422571c16dcd782cf",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "67/96"
+      },
+      "candidate": {
+        "program_id": "5280354dd790e7912ca9e7f97c36e7aeb24a169bbdd8a6f422571c16dcd782cf",
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "27/8",
+        "observed_rho": -0.9700319804242089,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/4",
+          "constant": "27/8",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "152185179/1048576",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "2775730854aaef9d1262eac4486678f345d13b6c98e67f28cd94c8d58e00220b",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-29/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "5280354dd790e7912ca9e7f97c36e7aeb24a169bbdd8a6f422571c16dcd782cf",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "67/96"
+      },
+      "candidate": {
+        "program_id": "5280354dd790e7912ca9e7f97c36e7aeb24a169bbdd8a6f422571c16dcd782cf",
+        "rho": "-31/32",
+        "gamma": "1/2",
+        "constant": "1453/512",
+        "observed_rho": -0.9700319804242089,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "-31/32",
+          "gamma": "1/2",
+          "constant": "1453/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "152185179/1048576",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "9be0af8a7a77a64a2fce6db4cbd6095f27a29c3b5580d3d3acaf424515ac2aff",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-5/8"
+          ]
+        ],
+        "beta": "1",
+        "id": "97093f8dca92a7faac4d94f6704edb3ee435c77968236fb1247b8c1ae4adc8a2",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "11/16"
+      },
+      "candidate": {
+        "program_id": "97093f8dca92a7faac4d94f6704edb3ee435c77968236fb1247b8c1ae4adc8a2",
+        "rho": "-61/64",
+        "gamma": "0",
+        "constant": "1269/512",
+        "observed_rho": -0.9571284500915772,
+        "positive_residual_growth_slope": 0.0,
+        "transfer": {
+          "rho": "-61/64",
+          "gamma": "0",
+          "constant": "1269/512",
+          "mellin_exponent": "1/2",
+          "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+          "diagonal_coefficient": "6911931/65536",
+          "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+          "all_scale_diagonal_bound_proved": true,
+          "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+          "RH_sufficient_if_uniform": true,
+          "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+          "uniform_signed_correlation_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "id": "89606b3c6c17d56eb146dbc695c3fc209e2445a756b8b4d266851b767bb7ff37",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    }
+  ],
+  "statuses": {
+    "uniform_claim_ruled_out_by_actual_critical_zero": 1101,
+    "RH_sufficient_signed_correlation_obligation_missing_uniform_proof": 4710,
+    "signed_correlation_obligation_above_RH_threshold": 4484,
+    "uniform_claim_ruled_out_by_pole_logarithm": 22062
+  },
+  "input_programs_selected_by_prior_final_outcomes": false,
+  "analytic_proof_is_machine_formalized": false,
+  "historical_priority_is_acceptance_gate": false,
+  "uniform_signed_correlation_premise_proved": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "cb91938f6fc4a4d668064733edf07fa8d0528f65ede25bd7880ba467f48d1dd8"
+}

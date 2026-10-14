@@ -1,0 +1,40 @@
+GLOBAL SIGNED MOMENT RECURRENCES WITH LOGARITHMIC LOSS
+
+An exact fitted power-law constant is not a necessary form of an RH proof.
+Fix an even q>=2 and define A_q(X)=integral_X^(2X)|R(t)|^q dt for a signed
+operator with the independently proved ordinary-zeta multiplier bridge.
+Let d=q/2+1 and L=2^d. Suppose for EVERY dyadic X>=1,
+ A_q(2X)-rho*A_q(X)<=B*X^gamma,
+where B>=0, rho<=L and gamma<=d. Negative rho is allowed because A_q>=0.
+The premise implies A_q(2X)<=L*A_q(X)+B*X^d. Induction gives, for X=2^j,
+ A_q(X)<=X^d*(A_q(1)+B*j/L).
+Indeed multiplying the preceding scale bound by L and adding B*X^d
+increments the normalised constant by B/L. To use this certificate at EVERY
+dyadic scale, its recurrence premise must be verified across those scales;
+finite sampled defect values cannot prove it.
+
+Holder's inequality on each dyadic block gives, for sigma>1/2,
+ integral_X^(2X)|R(t)|t^(-sigma-1)dt
+ <= [A_q(1)+B*j/L]^(1/q)*2^(j*(1/2-sigma))
+ <= [A_q(1)+B/L]^(1/q)*(1+j)*2^(j*(1/2-sigma)).
+The sum is bounded by [A_q(1)+B/L]^(1/q)/[1-2^(1/2-sigma)]^2.
+Uniform convergence on compact subsets proves holomorphy on Re(s)>1/2.
+A multiplier nonzero throughout that half-plane then excludes every ordinary
+zero to its right, proving RH by the classical functional equation.
+Thus a single fixed-order recurrence can suffice, even with the accumulated
+X^d*log X loss. This is conditional, not a proved arithmetic recurrence.
+
+If both max(rho,0)<L and gamma<d, choose epsilon>0 with
+max(rho,0)<2^(d-epsilon) and gamma<d-epsilon. The same induction yields a
+moment majorant O(X^(d-epsilon)*log X). Its Mellin half-plane crosses the
+critical line. A known critical zero with nonzero multiplier therefore rules
+out such a uniform recurrence. This falsification does not assume RH.
+
+For q=2 the defect operator is A_2(2X)-4*A_2(X). Using the exact correlation
+decomposition A_2=D+C_off from signed_correlation_proof.txt, its arithmetic
+content is
+ [C_off(2X)-4*C_off(X)]+[D(2X)-4*D(X)].
+The diagonal terms are explicit and have an all-scale O(X^2) bound. The
+signed off-diagonal defect still needs arithmetic control over every scale.
+The generic positive sequence has A_2(X)=7*X^3/3 and fails any such
+rho<=4, gamma<=2 recurrence with a fixed finite B at sufficiently large X.

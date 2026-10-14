@@ -1,0 +1,14 @@
+{
+  "schema": "fractional-prime-proof-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "operations": 1116,
+      "elapsed_seconds": 0.017531420977320522
+    }
+  ],
+  "scope": "synthetic proof schemas, abstract prime-log polynomial cubes, gates; no actual candidate table"
+}

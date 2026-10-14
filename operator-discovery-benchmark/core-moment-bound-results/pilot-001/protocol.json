@@ -1,0 +1,72 @@
+{
+  "RH_proved": false,
+  "fitted_constants": 0,
+  "hashes": false,
+  "imported_theorems": {
+    "analytic_bridge": {
+      "channel_transfer": "global weighted Hardy/Abel; orthogonal cell projection",
+      "contour": "Gaussian Perron, cross only theta, then Mellin Plancherel",
+      "formal_proof_assistant_verified": false,
+      "integer_correction": "complete J_theta and weighted integer cells, including n=1",
+      "review": "JOINT_REMAINDER_MOMENT_REVIEW_018.txt"
+    },
+    "convexity": {
+      "power_per_factor": "(1-real_part)/2+epsilon",
+      "real_part_domain": "(0,1)"
+    },
+    "imported_fourth_moment": {
+      "constant": "fixed finite B4; no numerical value asserted",
+      "dyadic_power": "1",
+      "logarithmic_power": 4,
+      "order": "4",
+      "original_source": "https://doi.org/10.1112/plms/s2-27.1.273",
+      "real_part": "1/2",
+      "source": "https://arxiv.org/html/1609.02539v1",
+      "status": "unconditional_import"
+    },
+    "moment_transfer": {
+      "derivation": "Gaussian pole-removed L2 three-lines; lower moments by Holder",
+      "orders": [
+        "2",
+        "4"
+      ],
+      "power": "1+epsilon",
+      "real_part_domain": "[1/2,1)"
+    },
+    "reflection": {
+      "power_per_factor": "1/2-real_part",
+      "source": "https://dlmf.nist.gov/25.4.E2"
+    }
+  },
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_bound_goal_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "owner_suites": [
+    {
+      "modules": [
+        "test_core_moment_bound_search"
+      ],
+      "owner": "root"
+    },
+    {
+      "modules": [
+        "test_check_core_moment_bound_search"
+      ],
+      "owner": "checker"
+    }
+  ],
+  "runtime_limit_seconds": 1800,
+  "schema": "core-moment-bound-run-v1",
+  "source_observations": 0,
+  "spec": {
+    "moment_orders": [
+      "2",
+      "4"
+    ],
+    "sigma_denominator_max": 24,
+    "target_energy_power": "0"
+  },
+  "test_memory_limit_bytes": 2147483648,
+  "whole_signed_bound_proved": false
+}

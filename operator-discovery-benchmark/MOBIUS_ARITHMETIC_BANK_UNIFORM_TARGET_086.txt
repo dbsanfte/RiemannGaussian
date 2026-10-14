@@ -1,0 +1,209 @@
+NEW086 analytical followup: symbolic arithmetic columns and uniform targets
+PAUSED WORKING DRAFT: user requested a retrospective. The global bank freeze
+was confirmed immediately before the pause; the full final census/remaining
+exact thresholds have not yet been completed. No further results are awaited.
+
+Checkpoint: frozen_candidates.json contains all eight fixed operators and both
+arms. Four operators append rows; four append none. There are31 appended
+arm rows, comprising23 divisor rows and8 prime-pair rows. All8 selected prime
+rows use source weights, so all have bounded source-dependent prime rosters.
+The earlier4076 saturation and37038 zero certificates below are complete.
+Still unfinished: the added(3/2)*u^(3/4) complemented cofactor rows,
+(4/3)*u^(3/5) noncomplement cofactor row, p04 source-i0(5/3)*u^(2/3)
+cofactor row, and source-i1 prime cutoff u^(1/4), plus the exhaustive initial
+and final column cost census. Their generic rules are present below, but no
+new exact threshold claims are made for them at this checkpoint.
+
+This review retains the original complete residual R=A-O-Gold and paid outer
+block. It does not change the running086 search, the fixed heldout band or any
+frozen source. Reading discovered formulas is not a new source-value query.
+
+1. Exact cost rules, separate from the unpaid full remainder.
+
+Let N=floor(u/4), P be the complete unit/prime anchoring map, and v=P^T d a
+raw annihilator column. Congruence preserves the complete physical geometry;
+||P^T d||_1<=||d||_1. For Z=sym(vw^T)=(vw^T+wv^T)/2,
+||Z||_entrywise1<=||v||_1||w||_1, with signed coefficients charged in absolute
+value. This prices every anchor/prime/composite cross, not only an unknown
+composite subblock. A finite W does not provide an all-u formula for w.
+
+For balanced divisor D_(N-L),0<=L<N,N>=2, the previously paid elementary rule
+is ||P^T D_(N-L)||_1<=Aeps*L*N^eps, where
+Aeps=2(1+1/eps)+Ceps and tau(n)<=Ceps*n^eps has an explicit finite small-prime
+product certificate. D0 and DN are both zero. N<2 is a separate zero base.
+The exact short-increment identity, for n>1, is
+D_(N-L)(n)=L/(N-1)*floor(N/n)-[floor(N/n)-floor((N-L)/n)],
+and its unit row vanishes. Thus each discovered short complement carries a
+literal interval of divisibility events, not an assumed cancellation estimate.
+If L<=a*u^eta, its column exponent is beta=eta+eps, with constants depending
+on eps and a. For a small noncomplement divisor cutoff K the paid rule is
+||P^T DK||_1<=K*H_K+K+2K*H_N when balanced; omit the last term if raw.
+H_x<= (1+1/eps)*x^eps. Exact cutoff/base saturation must be recorded.
+
+For a prime-cofactor column with |w(m)|<=B, every eligible edge contributes
+at most2B to raw l1 norm. Thus
+||v||_1<=2B*N*H_N, or2B*N*H_K if the selected prime/cofactor is at most K.
+Known unit-prime edges cancel individually under anchoring and may be removed
+before estimating; in particular cutoff K<=1 gives the zero anchored column
+for both cutoff domains. These are computable elementary bounds without PNT.
+For a source delay i, coefficient sum zero and largest literal kernel divisor
+dmax imply f_i(u,m)!=0 => m>u/(2^i*dmax), including floors. Hence eligible
+pm<=N gives p<2^i*dmax/4. The prime roster is fixed, so the sharper bound is
+2B*N*sum_(p in that complete roster)(1/p)<=2B*N*H_Pmax. A source-weighted
+prime column is O(u), not automatically a growing-prime arithmetic control.
+
+For each proposed all-u mixed partner, export ||w_k(u)||_1<=b_k*u^alpha_k,
+column certificate ||v_k(u)||_1<=a_k*u^beta_k, and any coefficient exponent
+lambda_k. The sufficient absolute correction budget for target j is
+alpha_k+beta_k+lambda_k<=1+1/j, with explicit constants and complete bases.
+This pays the correction cost only; it does not pay B(R+Z+LL^T).
+
+A useful implementable normalization avoids inverse-Gram conditioning:
+for a bounded raw geometry profile |phi(n)|<=Bphi, define
+w=P^T phi/(1+L) for a balanced short-complement column. Then
+||w||_1<=Bphi*N/(1+L), so ||sym(vw^T)||_1<=Aeps*Bphi*N^(1+eps).
+This is an all-u nearlinear COST lemma for any L, without numerical rank or
+matrix inversion. Bounded rational coefficients preserve it. Choosing
+eps<=1/j makes it fit the target exponent. Profiles may be literal source
+features, prime/composite filters or rational bands. Similarly phi/(1+N)
+gives O(N^(1+eps)) cost for a general prime-pair column, and O(N) for its
+fixed-prime source-weighted subclass. These normalizations are generic search
+constructors, not anticipated winning controls or a remainder proof.
+
+Charging every zero correction separately in l1 can prohibit needed joint
+large cancellations. If a complete raw-price mode is PROVED superlinear,
+nearlinear-cost corrections alone cannot remove it by triangle inequality.
+No such all-scale mode is asserted here from finite086 data. A signed combined
+matrix identity/bulk factorization is a distinct proof route and may avoid
+that conservative absolute budget; its complete trace/cross costs remain due.
+
+2. Exact asymptotic classifier for rational cutoff descriptors.
+
+Every descriptor is evaluated by the exact clipped floor rule, including its
+N-complement. For exponent e<0, floor(a*u^e) is eventually0; a complement is
+then exactly N. For e=0 it is eventually floor(a). For0<e<1 it is sublinear;
+a complement is near N. For e>1 the uncomplemented cutoff is eventually N
+and the complemented cutoff exactly0. At e=1 its linear fraction matters;
+a>=1/4 gives N/0. Exact thresholds are integer-power inequalities after
+clearing rational denominators, plus explicit low bases, not fitted scales.
+
+For BALANCED divisor identities, full-radius DN=0; negative-exponent complements
+thus become zero, and positive superlinear noncomplements become zero. Raw
+full-radius dN is NOT zero and instead retains its dense harmonic cost. Raw
+and balanced d0 are zero. A short
+complement and a small noncomplement can have related cost exponents but are
+not the same arithmetic column. Balanced/raw flags are retained explicitly.
+
+For prime-pair columns, K>=floor(N/2) contains every eligible cofactor, and
+every nonunit eligible prime (large unit-prime edges cancel under anchoring).
+Thus near-N complements of sublinear cutoffs eventually SATURATE the full
+anchored prime-pair column, instead of becoming a useful short divisor row.
+For e=1, a>=1/8 is sufficient for the uncomplemented cutoff to saturate;
+a<=1/8 is sufficient for its N-complement to saturate. A source-weighted
+small cofactor cutoff with e<1 is eventually zero, since it lies below the
+strict source-support lower bound. A source-weighted increasing prime cutoff
+eventually covers its fixed complete prime roster. Weight-one rows can retain
+genuinely growing prime information even when the cofactor cutoff is fixed
+at an integer>=2. Neither possibility implies an all-scale scalar bound.
+
+Observed q1_p16_inherited union round1 has source delay i1, cofactor cutoff
+K=N-floor(2*u^(2/3)). Exact sufficient saturation threshold is u>=4076.
+Set t=ceil(N/2)>=510. Then u<=8t+3, and
+(t+1)^3-8(8t+3)^2=t^2(t-509)-381t-71>=t^2-381t-71>0.
+Hence floor(2*u^(2/3))<=t and K>=floor(N/2). For original G its source i1
+roster is precisely a subset of {2,3}. This relation is therefore a fixed
+full two-prime source-weighted aggregate at every u>=4076. The frozen heldout
+band3600..4095 crosses this sufficient structural regime; it is not changed.
+A finite improvement below saturation would not establish a persistent new
+growing-prime mechanism.
+
+Observed q1_p16_cofactor union round1 is source delay i1, cofactor cutoff
+K=floor((5/3)*u^(2/3)), noncomplement. Its column is exactly zero for every
+u>=37038: the source support is strictly m>u/20, whereas K<=u/20 when
+u>=1000000/27. This threshold uses the original G source and must not be
+silently transferred to a different largest kernel divisor. These two selected
+prime rows therefore have different eventual regimes: saturation versus zero,
+both with the same bounded source-dependent prime roster. Other learned
+formulas will be tabulated after the actual global bank freeze.
+
+3. A useful exact cofactor recurrence, with its actual truncation kept.
+
+For a literal real-scale kernel f(X,n)=sum_d b_d*1[d*n<=X], define F(X),
+O_p(X), E_p(X) by summing mu(n)f(X,n) respectively over all SF n, p not
+dividing n, and p dividing n. With p prime and squarefree endpoint guards,
+f(pX,pm)=f(X,m) and mu(pm)=-mu(m), so
+E_p(pX)=-O_p(X), F(X)=O_p(X)-O_p(X/p).
+All sums are finite, real X/floors and endpoints are exact; no quantitative
+Mertens input is needed for this identity. The inverse
+O_p(X)=sum_(k>=0) F(X/p^k) is locally finite. A bound for either fixed-p
+version transfers to the other with explicit geometric constants. Therefore
+simply declaring O_p small would hide essentially the same scalar difficulty.
+
+The selected086 source-i1 pair is additionally capped by pm<=N. Its cofactor
+profile is f(u/2,m)*1[4*p*m<=u]. Compile this cap into every source term by
+min(1/(2*d),1/(4*p)), then merge equal rational endpoints exactly. The cap
+is redundant for p2, but not for p3. For original G, the p3 capped profile
+is exactly1[16m<=u]-1[20m<=u]: the two terms capped at u/12 cancel. For
+G+cG(u/3), add the untouched cG(u/6) profile. Dropping this cap/tail would
+silently change the discovered arithmetic relation. Applying the exact pair
+map to the capped profile produces its p-scaled window and prime-exclusion
+filter. These can require rational scales such as3/2 beyond binary memory.
+
+Concrete next auxiliary grammar: generate capped/merged rational step kernels
+and their p-dilations mechanically from the discovered prime-cofactor rows;
+include geometric prime-exclusion predicates. Search positive joint energy on
+these literal channels, with complete signed cross terms, exact source
+domination and exact drift/source binding. Seek a structured raw negative-bulk
+factor identity and pay its head/trace/innovation costs with the column/partner
+rules above. This is an auxiliary mechanism for the unchanged R target, not a
+replacement source target or a claim that an Euler-product identity proves RH.
+The operator, recurrence, universal PSD/trace inequality, complete bases and
+all-j exponent family remain explicit obligations. Finite W cannot discharge
+any of those universal matrix/trace leaves.
+
+4. A typed complete-price proof opportunity, without hiding the scalar target.
+
+Keep a raw matrix representation of the SAME fixed R. Its literal source,
+bounded coupled cuts/weights, fixed coefficients and outer restriction give a
+computable all-u entry bound |R_mn|<=CR. Choose head indices n<=h(u), with
+h<=a*u^eta, eta<=1/j. The raw entries touching the head have absolute price
+at most2*CR*h*N, hence O(u^(1+1/j)). All anchor and known-prime interactions
+are included by partitioning before congruence. No unknown composite signs
+enter this geometric head estimate.
+
+Seek a symbolic mixed correction Z from exact annihilators and prove the
+COMPLETE bulk block (R+Z)_CC is nonpositive as a real quadratic form for every
+u, with an exact structured negative-Gram/factor identity. Set Q to minus that
+bulk block, zero elsewhere. Q is PSD, the completed kernel is head-supported,
+and its price is bounded by the head estimate plus the paid mixed-correction
+costs above. This is a sufficient uniform remainder bound with explicit base,
+constant and exponent. Its bulk identity is a genuine unpaid matrix leaf,
+stronger than a scalar bound only on actual mu; no finite eigenvalue or fitted
+L is accepted as its proof. The detector can search source/floor/carry/prime
+incidence factor patterns and exact entry identities, then synthesize a
+nonnegative coefficient certificate. Failure of this strong proof language
+does not refute the actual arithmetic target.
+
+Another concrete extension is a literal cofactor-orbit congruence for a chosen
+prime roster P. Strip a squarefree physical n to r by removing its P-prime
+factors; the exact relation is mu(n)=(-1)^(number removed)*mu(r). The resulting
+transport matrix E has one signed unit entry per physical row. Quotient labels
+are therefore genuine Boolean Mobius labels, rather than falsely assumed
+Boolean coordinates in an orthonormal nullspace basis. Full E^T R E, followed
+by the complete known-prime/unit anchoring, retains all signed quadratic
+interactions. This imposes every individual prime-cofactor relation for P,
+which is stronger information than a few aggregate columns. Do not price
+each orbit/source term separately in l1; that would reproduce the earlier072
+transport limitation. Growing rosters need complete resource/norm analysis;
+at full coverage they recover all mu signs and this must be disclosed. Neither
+fixed nor growing orbit congruence alone supplies a uniform signed estimate.
+
+The next machine input should consequently carry: the exact capped transport
+identity AST; descriptor/eventual-regime/cost certificates; an all-u structured
+partner or orbit-map AST; a complete joint bulk/trace obligation for the same R;
+and an exact compatible PSD/Boolean lower-certificate family to distinguish
+coefficient-search failure from missing arithmetic information. An ordinary
+floating per-u W/S/L success has none of these universal meanings by itself.
+
+No frozen sources edited, unknown Mobius signs queried, old science replayed,
+new scientific-scale numeric values evaluated, or positive RH bound claimed.

@@ -1,0 +1,144 @@
+Exact auxiliary-face analysis, version 1
+2026-10-09. Scope: unchanged primitive-state-localizers/full15 finite cone.
+No arithmetic compilation, numerical research search, scoring, source freezing,
+or modification of an existing file was performed for this analysis.
+
+Derived result
+
+The gamma-zero auxiliary alone forces exactly two scalar equations:
+    gamma = 0,
+    auxiliary constant slack = 0.
+It does not force any of the 366 shared nonnegative square weights to vanish,
+and it does not force a null direction in any of the three 15 by 15 PSD
+matrices. No facial reduction of those coordinates is justified by this gate
+alone. Faces caused by the combined ordinary coefficient identities remain
+an additional, unresolved question requiring an exact exposing witness.
+
+Source references (current source functions; no files modified)
+
+cancellation_cubic_gate.py:20 coefficients and :44 build_constraint (:47
+constructs the empty target/square groups).
+cancellation_primitive_state_localizers.py:316 auxiliary (210 empty additions).
+cancellation_complete_gram_program.py:65 auxiliary (empty regional blocks).
+cancellation_affine_storage.py:81 auxiliary and :22 formal vector; :138
+scalar_budget, especially :141 matrix transport factors.
+grouped_arithmetic_synthesis.py:67 _add_slacks (one positive constant column
+per instance); cancellation_shared_gram_synthesis.py:15 prepare (slack
+insertion followed by complete Gram coordinates).
+
+Source semantics and exact coefficient derivation
+
+cancellation_cubic_gate.build_constraint supplies zero target, empty square
+groups and relation c_j*(mu_1-1). The only nonzero coefficients are at old
+signed relation positions 9,21,33:
+    c_9 = -56/3, c_21 = -12, c_33 = -20/3.
+All remaining coefficients are zero. The primitive extension retains the old
+403 relation groups and appends 210 empty groups, hence 613 total. All 366
+auxiliary square groups are empty. cancellation_complete_gram_program and
+cancellation_affine_storage keep both regional Gram-block lists empty;
+both transported storage-block lists are empty too. The 15-dimensional
+formal vector z does not become an auxiliary Gram row.
+
+Let r_j denote the effective signed relation coefficient and s_aux >= 0 the
+per-instance constant slack added by grouped_arithmetic_synthesis._add_slacks.
+Define gamma = -(56/3)*r_9 - 12*r_21 - (20/3)*r_33.
+The complete auxiliary polynomial equation is
+    0 = gamma*(mu_1-1) + s_aux.
+With five instances ordered ordinary X=1,2,3,5 followed by auxiliary,
+the unchanged 1957-coordinate layout has squares 0..365, signed splits
+366..1591, slacks 1592..1596 and Gram coordinates 1597..1956. The forced
+auxiliary slack is coordinate 1596 (zero-based), or coordinate 1597 in
+one-based notation. Its value is zero independently of other slack values.
+
+The coefficient of mu_1 gives gamma=0. The constant coefficient gives
+-gamma+s_aux=0, so s_aux=0. Every shared square and every regional/storage
+matrix coordinate has coefficient zero in both auxiliary rows.
+
+An exact exposing functional exists, but exposes only the auxiliary slack:
+set y=1 on the auxiliary constant coefficient and y=1 on its mu_1
+coefficient; set y=0 on every ordinary-instance coefficient. This evaluates
+an auxiliary polynomial at mu_1=1. Every signed relation column has pairing
+c_j*(-1+1)=0; every square and every PSD coordinate has pairing zero;
+the auxiliary slack column has pairing 1; all other slack columns and the
+complete target have pairing zero. Thus the cone-dual scalar entries are
+nonnegative, every dual PSD block is the zero matrix, and target pairing
+is exactly zero. This certifies s_aux=0 for every full feasible certificate.
+It supplies no other vanishing nonnegative term.
+
+Exact counterexample to any stronger auxiliary-only face claim
+
+Assign every shared square weight 1, all three Gram/storage matrices I_15,
+and all effective signed coefficients zero. Assign s_aux=0. These values
+satisfy the complete auxiliary equation and every relevant positivity
+constraint, while all shared square weights are strictly positive and all
+three PSD blocks are positive definite. In the numerical nonnegative
+positive/negative split for signed coefficients, take BOTH split coordinates
+1 for every relation; their difference remains zero, so neither split is
+forced to vanish. Ordinary per-instance slacks can also be positive because
+they do not occur in the auxiliary equations.
+
+This example is deliberately an auxiliary-only example. It makes no claim
+that the ordinary-scale polynomial identities are satisfied. It proves that
+no logical consequence of the auxiliary equations and cone constraints alone
+can force any shared square, signed split, or PSD direction to zero. The
+auxiliary-only cone slice has interior in those coordinates, after removing
+the single zero auxiliary slack and imposing the signed linear gamma equality.
+
+The formal vector and signed storage do not rescue the proposed inference
+
+The actual formal state vector is
+    z = (1,0,0,0,0,0,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2).
+Its exact squared norm is 13/4. For ordinary scale X the formal matrix scalar
+ledger is
+    X*(2*z^T G_child z + z^T G_parent z - 2*z^T K z).
+The negative storage term is essential: storage columns are child-4*parent,
+so their formal block counts are 2X-4X=-2X. K is PSD, but its transported
+polynomial is not a nonnegative square contribution.
+
+Even if the entire displayed matrix ledger were separately set equal to zero,
+this would not force any z-null direction. An exact strictly positive-definite
+example is
+    G_child = I_15, G_parent = I_15, K = (3/2)*I_15.
+Then z^T G_child z = z^T G_parent z = 13/4,
+z^T K z = 39/8, and 2*(13/4)+(13/4)-2*(39/8)=0.
+All three matrices have full rank. The associated linear functional has dual
+matrix blocks (2*zz^T, zz^T, -2*zz^T); its negative storage block prevents it
+from belonging to the dual of the product PSD cone. It therefore cannot be
+used as a nonnegative exposing identity. In the actual full problem, signed
+relation contributions and ordinary target/slack terms must also be retained.
+
+What an additional rigorous reduction would require
+
+For the unchanged complete ordinary-plus-auxiliary equality system A*x=b,
+a facial argument needs an exact functional y with y^T b=0, annihilating each
+effective signed column, nonnegative pairing against every scalar nonnegative
+column, and a PSD dual matrix H for every primal PSD block. Offdiagonal
+upper-triangle coefficient pairings must be divided by 2 to obtain H entries
+under the trace pairing. Exact equality and exact PSD verification are required.
+Then positive scalar pairings force the corresponding coordinates to zero,
+and trace(H*G)=0 for PSD H,G implies H*G=0, equivalently range(G) lies in
+ker(H). The storage dual block must be formed from the complete signed
+child-4*parent columns; it cannot be treated as a positive child block.
+No such additional exposing witness is established in this analysis. Solver
+errors, floating negative square weights/diagonals, and nonzero residuals are
+not witnesses of a face. A consistent exact linear basis alone also does not
+establish cone feasibility or forced faces.
+
+All-scale and theorem scope
+
+The gamma gate is a conditional necessary restriction for unchanged fixed
+mu templates, q>1 and the proved scalar-growth assumptions. This finite
+cone calculation is neither an all-scale identity nor an arithmetic bound,
+and proves no RH statement. Additional facial constraints, if later derived
+from the finite sample equations, must still be checked against the original
+complete equations and separately interpreted under the all-scale grammar.
+
+Verification performed
+
+Inspected the named builder/checker sources and independently expanded only
+the tiny auxiliary unit relations using exact Fraction arithmetic. Confirmed:
+366 empty square groups; 613 relation groups with nonempty positions 9,21,33;
+zero regional and storage block counts; empty target; each nonempty relation
+has equal and opposite constant and mu_1 coefficients, so exposing pairing
+is exactly zero. The two positive-definite examples and 13/4 norm are elementary
+exact calculations. No ordinary instance was rebuilt or searched.

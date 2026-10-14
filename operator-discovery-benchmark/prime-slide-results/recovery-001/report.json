@@ -1,0 +1,49 @@
+{
+  "RH_proved": false,
+  "all_reduce_to_weighted_first_prime_actions": true,
+  "checked_candidates": 13,
+  "combined_operations": 29846793,
+  "elapsed_seconds": 0.3735415800183546,
+  "local_recovery_obstruction": {
+    "RH_proved": false,
+    "candidate_ids": [
+      13390,
+      13391,
+      13412,
+      13418,
+      13438,
+      13452,
+      13461,
+      13465,
+      13466,
+      13467,
+      13468,
+      13474,
+      13594
+    ],
+    "excluded_class": "finitely many filters with uniformly bounded scalar recovery coefficients",
+    "necessary_coefficient_growth": "max_j abs(c_j(q)) >= q^(4/3)/85",
+    "not_excluded": [
+      "q-dependent coefficients with recorded growth",
+      "additional arithmetic relations",
+      "signed integrated cancellation",
+      "changed kernels and complete domain compensation",
+      "well-founded coupled scale recurrences"
+    ],
+    "polynomial_l1_sum": 85,
+    "premise": "sum_j c_j(q)*O_j=I on all source tensor components at the same prime and base pair",
+    "prime_weight": "4/3",
+    "status": "bounded_local_linear_recovery_excluded",
+    "whole_signed_bound_proved": false,
+    "witness_tensor": "B(h)*B(k)"
+  },
+  "new_actual_source_evaluations": 0,
+  "original_target_recovered": false,
+  "peak_rss_kib": 517060,
+  "preparation_operations": 168918,
+  "selected_candidate_id": 13391,
+  "status": "EXACT_RECOVERY_REDUCTIONS_VERIFIED",
+  "total_operations": 206343,
+  "whole_signed_bound_proved": false,
+  "work_operations": 37425
+}

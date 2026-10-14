@@ -1,0 +1,285 @@
+SELECTED ARITHMETIC GROUPINGS: TWO COUNTERCERTIFICATES AND A PAID HEAD
+
+Scope and status
+----------------
+Only this new memo is written. Read-only inputs are the frozen grouping
+protocol/source, core-arithmetic-grouping-results/pilot-001/selection.json,
+the handoff and reviews007-009. No arithmetic source evaluation, test,
+experiment, retry, rescore, hash or prior/frozen edit is performed. The
+running study is not restarted or changed.
+
+Actual selections:
+117: remove every valuation at primes<=floor(sqrt X), then divide the
+     residual by its SMALLEST prime once.
+110: remove pairs of valuations at primes<=floor(X^(1/3)), then take
+     the floor sixth root of the residual.
+37: remove every power of2, then take the residual modulo3.
+All target the complete identity-filter eta1 half-scale work increment.
+
+Results:117 and37 grouped absolute majorants are analytically incapable
+of any fixed-polylog/all-epsilon cofinal bound. These are proof-route
+refutations, not refutations of the original complete signed target.
+For110, a polylog-growing collection of low cells has a rigorously paid
+complete low-by-low sector; the exact signed complementary sector is
+OPEN. No positive-semiprime sub-sector is misrepresented as a whole110
+cell. All valuations, units, center crosses and finite support remain.
+
+1. Common exact matrix and support convention
+----------------------------------------------
+Use H=4X-1, f the unchanged complete four-state core, and
+ Phi_X(h,k)=K_1,2X(h,k)-K_1,X(h,k)/2,
+ K_1,Y(h,k)=log(h*k)/2*integral_max(Y,h,k)^(2Y)
+                                      dx/(x^2 log x),
+zero for max(h,k)>=2Y. For the selected label map L_X,
+ Q_rs(X)=sum_(h,k<=H,L_X(h)=r,L_X(k)=s)f(h)f(k)Phi_X(h,k),
+ M_L(X)=sum_(r,s)|Q_rs(X)|,
+                    Delta W(X)=sum_(r,s)Q_rs(X).          (1.1)
+The label vector is computed with THIS_X cutoff throughout the parent
+and child kernel. It is not replaced by L_(2X) in the child.
+All ordered crosses and the diagonal are present. Exact full-cell weights
+and the old-head product are the frozen ones; no pointwise approximation
+or sign of that head is presumed.
+
+For h,k in[2X,5X/2], the parent kernel is zero and, as009 proves,
+                        Phi_X(h,k)>=3/(40X).             (1.2)
+For ANY h,k>2X inside H, Phi_X is nonnegative. That broader sign plus
+complete class membership, rather than a favorable subset alone, is
+what makes the117 lower bound valid.
+
+2. Candidate117: complete positive fresh-semiprime classes
+----------------------------------------------------------
+Put S=floor(sqrt X). Strip all powers of primes<=S, leaving r whose
+prime factors are strictly greater than sqrt X. For sufficiently large
+X, r<=4X-1 has at most TWO prime factors counted with multiplicity:
+three such factors would give r>X^(3/2)>4X.
+
+Choose a prime key q in[(41/20)sqrt X,(21/10)sqrt X]. A residual equal
+to one prime maps to key1, so a residual with selected key q must be
+r=pq with p<=q and p>sqrt X. The original n=d*pq, with d S-smooth.
+But pq>(41/20)X>2X. Any d>=2 gives n>(41/10)X>H, so d=1. Also q^2
+>4X, so p=q is IMPOSSIBLE. Finally p<=H/q<q. This completely describes
+every member of these classes; there are no small-smooth multiples,
+hidden unit branches, three-rough-factor terms or prime squares.
+
+For distinct primes p,q both>sqrt X, let t_p=p^-1/3,t_q=q^-1/3. Exact
+multiplicativity in the complete four-mode source gives
+ f(pq)=beta*(t_p-2)*(t_q-2)
+       -beta*(t_p-1-t_p^2)*(t_q-1-t_q^2)
+       -R_u*(t_p-t_p^2)*(t_q-t_q^2)-beta.
+Thus uniformly over ALL members of these complete classes,
+                   f(pq)=2beta+O(X^-1/6)>beta>0          (2.1)
+for sufficiently large X. Since every member is>2X, their entire
+class-pair matrices Q_qr are nonnegative. No adverse terms elsewhere
+inside those same Q_qr blocks can undo a favorable sub-sector.
+
+Now restrict to primes
+ p in[(101/100)sqrt X,(21/20)sqrt X],
+ q in[(41/20)sqrt X,(21/10)sqrt X].
+Their products lie strictly between2X and5X/2. The proved PNT gives
+Omega(X/log^2 X) such distinct indices; the two prime intervals are
+disjoint, so their representation and labels are unique. By(1.2),(2.1),
+ summing the COMPLETE positive class-pair blocks dominates
+ (3/(40X))*[sum_(restricted p,q) f(pq)]^2
+                             >=c*X/log^4 X, c>0.         (2.2)
+Hence M_117(X) has a positive-power lower bound and cannot prove ANY
+fixed-polylog or all-epsilon cofinal bound. This holds at every sufficiently
+large dyadic X, not just a sampled sequence. It does not refute Delta W,
+which can cancel these blocks against different label pairs.
+
+The imported theorem is only the classical PNT on fixed-ratio intervals;
+a primary formalization/proof reference is Carneiro(2016),
+https://arxiv.org/abs/1608.02029. No RH remainder, prime table or numerical
+coefficient fit is needed. Without this import, the lower bound is a
+generic conditional guard with the explicit interval prime-count premise.
+
+A reusable largest-delete analogue is also valid. Choose key p in
+[(29/20)sqrt X,(3/2)sqrt X]. Every class member is n=pq with q>=p,
+d=1 and n>2X; no third rough prime is possible. Squares p^2 ARE now
+present and must remain. Their exact coefficients satisfy
+ f(p^2)=beta*(1-t_p)^2+beta*t_p*(1-t_p)^2
+                                   -R_u*(1-t_p)*t_p^2
+                         =beta+O(X^-1/6)>0.
+Distinct-prime coefficients obey(2.1). Taking q in[(31/20)sqrt X,
+(8/5)sqrt X] puts products in[2X,5X/2]. The same whole-class positivity
+and PNT lower bound apply. For largest-all deletion, squares go to key1
+instead; they are excluded by that exact map, not silently omitted.
+The reusable rule must certify complete class support and source sign
+before using a favorable semiprime rectangle to lower-bound a block.
+
+3. Candidate37: a fixed masked sequence has an uncanceled real pole
+--------------------------------------------------------------------
+Removing powers of2 preserves divisibility by3. Thus label0 is EXACTLY
+the set3 divides n. Let b(n)=f(n)*1_(3 divides n), with its complete
+prefix F_b and logarithmic bank B_b. Q_00(X) is precisely the signed
+eta1 half-scale work increment of this SINGLE FIXED sequence b. Its
+unit is zero; all other finite-head terms remain.
+
+The nonzero pole can be proved algebraically, without an assumed
+asymptotic for its prefix. Put kappa=2/3, t=3^-1/3, z=t^2 and
+ A0=1/zeta(kappa)^2>0,
+ A1=1/[zeta(kappa)*zeta(4/3)]<0,
+ A2=1/zeta(4/3)>0.
+The full core pole cancels exactly:
+                   R_u*A2=beta*(A0-A1).                  (3.1)
+At prime3 its local factors for the first three modes are
+ L0(z)=(1-z)^2/(1-tz),
+ L1(z)=(1-z)*(1-t^2 z)/(1-tz),
+ L2(z)=(1-t^2 z)/(1-tz).
+The fourth mu mode is analytic at kappa. Removing the local factor gives
+the3-free source series a residue
+ R_no3=beta*A0/L0-beta*A1/L1-R_u*A2/L2
+ =beta*t^2*(1-t^3)*(2A0-A1)/[(1-t^2)^2*(1+t^2)]>0.        (3.2)
+All denominators are nonzero. Since the full series has canceled that
+real pole, the mask3 divides n has residue -R_no3!=0 at kappa.
+This is a genuine analytic simple pole; no cofactor coefficient series
+is claimed to converge there. Real zeta signs used above follow from
+the positive alternating eta series and the absolutely convergent
+zeta(4/3) series, as009 explains.
+
+Suppose M_37(X) had a uniform fixed-polylog upper bound. Then
+ Q_00(X)<=|Q_00(X)|<=M_37(X) gives a universal signed recurrence for
+the masked sequence with rho1/2. Signed upper iteration and the generic
+007 causal Volterra recovery give fixed-polylog complete E_b(X), with
+its own unit/head retained. Mellin/Cauchy then makes its Dirichlet series
+holomorphic for Re(s)>1/2, contradicting(3.2). The same argument rejects
+all-epsilon subpower upper bounds: choose an exponent below1/3 to put
+the resulting Mellin half-plane to the left of kappa.
+
+Therefore37's grouped absolute proof route is FALSE at every cofinal
+class of this type, irrespective of its finite curve. There is no
+contradiction for the original f: its main pole cancels only in the
+complete cross-class sum. Taking absolute values of Q blocks reinstates
+an unpayable masked channel by forcing each diagonal block controlled.
+
+This compiles to a generic residue-prime mask rule. If stripping does
+not contain q, zero modulo q is exactly q divides n, and(3.2) holds
+with t=q^-1/3. If step1 stripping contains q, the zero class is empty,
+so that rule does NOT apply. If step2 stripping contains q, zero modulo
+q is the FIXED odd-v_q mask. With z=t^2, its exact kappa residue is
+ -beta*[(1-t^3)/(1+t^3)]*z
+       *[A0*(2+z+z^2)-A1*(1+z^2)]/[(1-z)^2*(1+z)]<0.    (3.3)
+Derivation: use the odd local factor(L_i(z)-L_i(-z))/2, divide by
+L_i(z), and invoke(3.1). Thus it also yields the masked-pole guard once
+q is included. Multi-prime residue masks require their actual local
+product computation; no generic nonzero claim is inferred without it.
+
+4. Candidate110 exact square-lift cells and repeated-prime complement
+----------------------------------------------------------------------
+Let Y=floor(X^(1/3)). Each n has a UNIQUE decomposition
+ n=d^2*r,
+ d supported on primes<=Y,
+ v_p(r) in{0,1} for primes<=Y,
+with arbitrary valuations of primes>Y retained in r. Label j means
+                   j^6<=r<(j+1)^6, j>=1.                 (4.1)
+The lowest cell contains residuals1 through63, not only r1. Large-prime
+squares and higher valuations are NOT deleted from the residual.
+
+A semiprime sub-sector does not prove positivity of a complete110 cell:
+its sixth-root interval mixes many other residuals and signs. Nor can
+the dynamically Y-dependent cells be treated as one fixed masked
+Dirichlet series when applying the37 pole argument. No complete class
+sign or fixed-pole countercertificate for110 is established here.
+
+The unremoved-square set can be bounded explicitly but is not thereby
+critically paid. With H=4X-1 and |f(n)|<=K0*d2(n),
+ sum_(n<=H,exists prime p>Y with p^2 divides n)|f(n)|
+ <=3K0*sum_(p>Y)sum_(m<=H/p^2)d2(m)
+ <=3K0*H*(1+log H)/(Y-1), Y>=2.                          (4.2)
+Here d2(p^2 m)<=3d2(m), including p dividing m; union overcounting is
+an upper bound and excludes no valuations. It is O(X^(2/3)log X), above
+the critical prefix scale. It is neither an actual lower obstruction
+nor a signed tail bound; further joint correlation is needed before
+discarding or separately paying this complement.
+
+5. Uniform paid low-cell theorem, including a polylog-growing head
+------------------------------------------------------------------
+There is a useful complete-source payment which DOES hold. For integers
+J>=1, sum all label cells1 through J, and set R=(J+1)^6. Since
+ d2(r d^2)<=d2(r)*d2(d^2)<=d2(r)*d3(d),
+ sum_(d<=y)d3(d)<=y*(1+log y)^2,
+their absolute coefficient prefix is bounded for every real x>=1 by
+ sum_(j<=J)|F_(j,X)(x)|
+ <=K0*sqrt x*(1+log x)^2*sum_(r<R)d2(r)/sqrt r
+ <=A_J*sqrt x*(1+log x)^2,
+ A_J=2K0*(J+1)^3*[1+6log(J+1)].                           (5.1)
+The first bound allows ALL d and r, so is uniform in Y and includes
+common primes between d and r. The second follows from
+sum_(r<=R)d2(r)/sqrt r<=2sqrt R*(1+log R), by expanding r=ab and
+the elementary sum of b^-1/2. Every original n belongs to just one
+canonical cell; allowing extra representations only increases this
+absolute majorant.
+
+The source constant can be any K0>=3beta+R_u. The frozen residue
+enclosures certify R_u<5, so K0=37/2 is a valid rational instance.
+This is a previously verified constant, not a new source calculation.
+The unit and all fixed low residuals are present in(5.1).
+
+Let B_(j,X)(x) be the logarithmic bank of the SAME_X masked coefficient
+sequence. Since log n<=log x for n<=x,
+ sum_(j<=J)|B_(j,X)(x)|/log x
+                           <=A_J*sqrt x*(1+log x)^2       (5.2)
+for x>1. For the exact eta1 matrix each ordered block is the symmetrized
+integral of(F_j B_k+B_j F_k)/(2x^2 log x), with child minus half parent.
+Consequently the ENTIRE low-by-low sector obeys
+ sum_(j,k<=J)|Q_jk(X)|
+ <=(3/2)*A_J^2*log2*(1+log(4X))^4.                       (5.3)
+This pays all its internal units, valuations, source-mode crosses and
+both parent/child intervals. It is stronger than paying each fixed cell
+separately, and has no current-scale source-bound premise.
+
+The theorem is pointwise in arbitrary J=J(X). In particular any declared
+polylog-growing J, for example J<=C*(1+log X)^tau with fixed C,tau,
+gives an explicit cofinal head envelope of order
+ (1+log X)^(4+6tau)*(1+loglog(4X))^2,
+with fixed constants from(5.3). Its loglog factor is retained, not hidden
+as an exponent gain. Changing X changes the partition and J, but BOTH
+parts of each Q_jk step still use its original SAME_X partition.
+
+For a generic floor kth-root post-map with the same square-lift base,
+replace R by(J+1)^k and A_J by
+ 2K0*(J+1)^(k/2)*[1+k log(J+1)].
+The same proof and(5.3) compile mechanically. It is a genuine reusable
+paid-sector rule, not a hand-selected bound for the remaining target.
+Step1 stripping is not a square lift and cannot use this critical rule
+by changing a name: its coefficient-lift exponent and norm cost differ.
+
+6. Exact signed remainder for110 and required proof feedback
+-------------------------------------------------------------
+Define, with this SAME_X matrix,
+ L_J(X)=sum_(j,k<=J(X))Q_jk(X),
+ R_J(X)=sum_(max(j,k)>J(X))Q_jk(X).
+Then exactly
+ Delta W(X)=L_J(X)+R_J(X)
+ <=(3/2)*A_J^2*log2*(1+log(4X))^4+R_J(X).                 (6.1)
+Both ordered low/high crosses and high/high are present ONCE in R_J.
+They are not covered by(5.3). The signed remainder may be negative; only
+a ONE-SIDED cofinal upper bound is needed for the broader cofinal goal.
+If a fixed-polylog R_J upper estimate is independently proved at every
+dyadic scale, (6.1), signed work recurrence iteration and007 recovery
+give the complete cofinal f target with its existing original recovery.
+No separately assumed RH-strength companion bound is used in the head.
+
+This does not preserve the old fitted degree2 constant1: the paid head
+may have a higher fixed log degree, which is still sufficient for the
+cofinal objective. A stronger degree2 proof would need the exact L_J
+and additional signed compensation; it cannot substitute(5.3) for that
+budget and silently discard its larger log degree.
+
+The new detector may enumerate rational log cutoff powers tau, generic
+root degree k and exact square-lift label ASTs, compile(5.1)-(5.3), then
+emit the complete signed R_J as its explicit residual obligation. It
+must not call that obligation solved because the head is paid. Additional
+prime/cofactor/valuation transports apply to R_J only with complete exit
+and assignment certificates. Repartitioning child labels or assuming
+fixed masks at varying X adds new differences that must be accounted for.
+
+Summary of analytical proof status
+-----------------------------------
+117: grouped absolute majorant refuted by complete positive fresh-semiprime
+classes; largest-delete analogue also certified, including its squares.
+37: grouped absolute majorant refuted by the fixed divisibility3 masked
+real pole; generic odd-valuation residue extension proved.
+110: all fixed/polylog-growing low-by-low cells uniformly paid; complete
+signed remainder including low/high crosses and unremoved large-square
+sectors remains OPEN. No claim of a full majorant proof or refutation.
+Original signed target and RH remain OPEN. Only this new memo was written.

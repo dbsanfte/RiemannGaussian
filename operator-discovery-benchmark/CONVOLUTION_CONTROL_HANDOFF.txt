@@ -1,0 +1,160 @@
+SIGNED CANCELLATION LANGUAGE: COMPLETE CONVOLUTION POTENTIALS
+
+Objective and present limit
+
+The objective remains a proved actual signed bound at every scale with cofinal
+exponents, sufficient for ordinary RH. No such bound has been proved here.
+This stage follows the sampled c=mu*lambda candidate from the prior immutable
+signed-arithmetic pilot. It is a guided expansion, with the target, feature
+families, coefficient grids and scoring rule supplied explicitly. It does not
+claim neutrality, autonomous language invention, or historical novelty.
+
+The new language
+
+Let c=mu*lambda, C(x)=sum_(n<=x)c(n), A_C(X)=sum_(X<=n<2X)C(n)^2,
+and E_C(X)=A_C(X)/X^2. Search fixed nonnegative rational combinations V(X)
+of 54 features, while keeping the complete signed innovation
+
+  E_C(2X)+V(2X)-E_C(X)-V(X).
+
+Six features come from COMPLETE divisor-diagonal energies: R_h=S_h-A_C or
+R_diff=S_tau-S_h, normalized by X^2 ceil(X^eta), eta=0,1/6,1/3.
+Here h=|c|=2^omega and tau=One*One. Forty-two features are normalized squares
+of C(t)+k*C(floor(t/d_X)), with signed rational k and either a fixed divisor
+or max(2,floor(X^(1/r))), r=2,3,6. Six more use three coupled prefix terms.
+Every child scale recomputes its own floors, divisors and normalizers. The
+underlying rational-power evaluator has broader semantics than this finite
+pilot grid. Future grammars need new frozen protocols, not edits to a sealed run.
+
+LP is a proposal mechanism for the nonnegative weights, not a certificate.
+Proposed weights are rationalized and all constants refitted with exact
+arithmetic. Every alias, failed proposal, missing computation and unknown
+exponent constant is retained. The producer uses an explicit prime sieve;
+prior coefficient prefixes overlap. No unseen-prime holdout is claimed.
+
+Why this is a valid RH-directed language
+
+If V is finite and nonnegative, an ALL-dyadic innovation bound
+
+  exists q0>=1; for every integer q>=q0 there is a finite Cq>=0;
+  for every dyadic X>=1: innovation <= Cq ceil(X^(1/q))
+
+telescopes to A_C(X)=O_q(X^(2+1/q)), with the finite initial value and
+2/(2^(1/q)-1) cost charged. The complete Mellin continuation of
+sum c(n)n^-s=zeta(2s)/zeta(s)^2 then excludes ordinary zeta zeros to the right
+of 1/2; symmetry gives RH. Finitely many q or scales do not prove the premise.
+The proof text supplies this conditional argument, not a formal machine proof
+or an admission of the missing inequality to the legacy theorem registry.
+
+The mathematical audit also proves that critical C energy makes every one of
+the 54 features subpower. Thus every fixed candidate's existential cofinal
+innovation assertion is equivalent to critical C energy. These coordinates
+may expose an easier proof; introducing them does not add prime information.
+No converse RH=>this precise C-energy condition is asserted here.
+
+Actual arithmetic facts and counterexamples
+
+Actual coefficients satisfy c(p^j)=2(-1)^j at EVERY prime, c*h=Unit,
+c*tau=IndicatorSquares, and tau=h*IndicatorSquares. The second full divisor
+forcing is consequently dependent on the first. Exact square-root control of
+the filtered sum is real but leaves recovery of ordinary C uncontrolled.
+Complete prime-exponent boxes have signed sum +/-1, but converting the
+n<=x boundary to boxes returns sum lambda(n)M(floor(x/n)); its signed boundary
+still needs a bound. All intermediate remainders and forcing costs survive.
+
+Generic h=|c|, positive inversion and sign involution do not suffice: the
+one-prime sequence c(2^j)=2(-2)^j has cubic prefix energy while obeying them.
+Changing one prime beyond any finite observed horizon preserves those generic
+identities and matches the finite prefix, yet can introduce an off-critical
+pole. Actual prime-power normalization is essential to any universal proof.
+Pure root-index thinning also needs its dimensional recovery cost; retaining
+the unthinned E_C prevents it from masquerading as ordinary cancellation.
+
+New general admission rule from the analytical reviews
+
+The separate arithmetic_filter_pole_budget.py extension defines an actual
+target a=mu^{*r}*lambda^{*l}, k=r+l>=1, and a sparse fixed filter
+G(x)=sum_(j=1)^m w_j A(floor(x/d_j)). Its Dirichlet series is
+
+  P(s)*zeta(2s)^l/zeta(s)^k,  P(s)=sum_j w_j*d_j^(-s).
+
+Merge duplicate divisors and remove zero weights first. A nonzero m-term P
+has zero multiplicity at most m-1, by the derivative Vandermonde matrix on the
+distinct log(d_j). Every ordinary zeta zero in Re(s)>1/2 produces a pole of
+order at least k in the actual target. Thus m<=k guarantees that filtering
+cannot erase it. A cofinal critical energy bound for the COMPLETE filtered
+prefix G alone would imply RH, even without a controlled inverse recovering
+the original A energy. The estimate is still an unproved premise.
+
+This is a general coefficient-independent grammar rule: c=mu*lambda admits
+every nonzero two-term fixed filter; mu*mu*lambda admits every three-term one.
+The gate rejects zero filters, moving divisors and unsupported m>k cases. An
+unsupported case is not a mathematical refutation; other proofs may admit it.
+The example (1-3*4^(-s))^k has k+1 terms and a k-fold zero in 1/2<Re(s)<1,
+showing why the uniform multiplicity allowance cannot simply be increased.
+It does not assert an actual zeta zero at that point.
+
+The proof has an independent analytical review, and five focused contracts
+passed. Sources, tests, calibration examples and review are preserved at
+convolution-control-results/pole-budget-001. This is a conditional semantic
+certificate, not a formal machine proof or an automatically discovered bound.
+It was added AFTER the potential pilot; it did not affect that pilot's selection.
+The next frozen search can use this gate to admit more aggressive filtered
+energies without keeping an unthinned base term when the gate applies. Root-
+dependent moving filters still need another bridge, such as the verified W>=E
+potential construction. A family varying with q requires an explicit per-q
+admission and the original complete cofinal quantifiers.
+
+Classical input: ordinary Dirichlet convolution and Mobius identities,
+https://dlmf.nist.gov/27.5 ; Euler products and Dirichlet series,
+https://dlmf.nist.gov/27.4 . The multiplicity argument is supplied in the new
+proof text; no historical novelty is claimed.
+
+Research priority after the focused pilot
+
+Alongside the fixed-filter admission rule, a useful extension is a grammar for arithmetic pairings and
+their exact leftover sums: prime-power exponent moves, coprime masks, common
+divisor regroupings, and scale-dependent partitions. Search for a signed
+boundary or mixed-moment inequality, not merely another filtered identity.
+For example, nonzero adjacent c(p^(2j-1)m) and c(p^(2j)m) terms cancel when
+p does not divide m; a cutoff leaves a precisely enumerable boundary. A
+program must carry that entire boundary and its cost through composition.
+This pairing grammar is a proposed next extension, not implemented in this pilot.
+
+Require a certificate of nonnegativity or exact reconstruction for each new
+production, an ordinary-energy recovery statement with all costs, and a
+separate unproved estimate obligation. Keep algebraic identities, conditional
+bridges, observed finite successes and proved global inequalities distinct.
+
+Run status
+
+Successful immutable pilot: convolution-control-results/pilot-001. Its
+protocol freezes 16 source/test/proof files. Forty contracts and 16 independent
+audit groups passed; the worker reproduced all three sealed outputs byte for
+byte. All 178 proposals were retained, yielding 167 distinct programs and 11
+aliases. All 15 LP attempts succeeded. Five distinct programs were selected.
+Final base scales were 8192,11083,16384, with complete coefficients through
+65535. There were 27 finite passes, three failures and 30 missing constants at
+unseen q=13,17. All three failures were in the dyadic claim domain X=8192,q=12.
+All profile/feature calculations completed within the declared proxy budgets.
+
+The three-square potential (19/16)*sum[C(t)+C(floor(t/2))+C(floor(t/3))]^2/X^2
+failed its stored C12, as did the selected two-feature learned combination and
+the fixed-half square with weight1/4. These are failures of fitted constants,
+not refutations of their existential global claims allowing new constants.
+The baseline and weight1/4 square using d_X=max(2,floor(sqrt(X))) passed all
+six available final observations each. None has a proved critical bound.
+The Gram selection chose the zero-weight baseline: no Gram improvement was
+selected by this finite protocol. Every original global claim stays unresolved.
+
+Use ../.venv/bin/python -B run_convolution_control.py run NEW_DIRECTORY for a
+new run. System Python lacks SciPy; the venv supplies the numerical proposer.
+Verified results are in report.txt/report.json and verification.json. The
+independent checker checks exact arithmetic and archive completeness, not LP
+optimality, OS isolation, or formal analytic proofs. Reporting is a separate
+stage outside the search freeze; the prior 31-stage root registry is unchanged.
+All five candidates received parallel reviews, now preserved in
+review-collection-001 with actual dispatch receipts. Their mathematical
+arguments require separate adjudication and never promote RH through the
+generic review collector. The general filter bridge above received its own
+separate proof review and tests; no original global claim was promoted.

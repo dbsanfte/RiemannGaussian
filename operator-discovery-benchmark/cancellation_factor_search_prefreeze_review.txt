@@ -1,0 +1,64 @@
+INDEPENDENT PREFREEZE FACTOR-SEARCH LANGUAGE REVIEW
+
+Read-only source review and focused tiny identity checks; no bound-search scores.
+The fixed catalog contains all44 reduced0<theta<1 fractions of denominator<=6
+crossed with kernels1,a,b,a-b. Catalog ordering is symbolic, not response-driven;
+there are no omitted catalog entries. Descriptors bind theta/kernel, coprime
+source domain and factor scaleN=4X-1. Total groups are282 squares/319 relations;
+with two full5x5 Grams and five scalar slacks the declared count is955 variables.
+
+The complete source is ORDERED positive pairsab<=N withgcd(a,b)=1. This is an
+explicit coprime-only domain, not a claim that the full noncoprime pair target
+was partitioned. The original full signed defect and every old group remain
+unchanged. Product indicesab<=N fit the same horizon. Each fractional cut is
+floor(N^theta), evaluated at factor scaleN rather than original blockX; inside
+and exact complement exhaust this declared source, with all collisions and
+zero-kernel pairs counted. The noncoprime residual is exactly0 by this explicit
+source predicate. The supplied kernel and cuts contain no signed-value oracle.
+
+For each cell, B is the weighted bilinear polynomial, U=C+R the complete
+projected polynomial, andT=B-U the complete relation sum. Both cells contribute
+to shared groupsB² andU². Relation closure usesT(B+U) andT², expanded over
+EVERY coprime relation with the complete multiplier. Thus B²-U²=T(B+U) is
+exact with all cross terms, andT² is a null relation square. The two new prefix
+mixes are(P_N+U_inside-U_complement)² and(P_N-U_inside+U_complement)².
+These are genuine nonnegative squares with original prefix signs retained;
+they do not presume a bound on the contrast. The plus/minus groups retain their
+complete mixed prefix terms rather than replacing them by an unsigned charge.
+
+All added atoms and multipliers have zero FORMAL constant. Coprime relation
+constants are0. Therefore every added scalar coefficient is exactly0; the old
+scalar module and mu cubic-gamma necessary condition persist. Extra columns may
+enable different matching weights on old scalar groups, not directly supply a
+new critical scalar saving. Norm/prime next-order charges remain unproved even
+when gamma0 is imposed. Closure improves representation; it is not new actual
+arithmetic information or an automatically uniform template.
+
+Focused independent check: four representative theta1/2 blocks, one per kernel,
+at factor scale7/horizon7 were passed through check_cancellation_factor_blocks.
+Every complete ordered source, fractional endpoint, complement, projection and
+relation polynomial check passed, with15 ordered coprime source pairs each.
+No complete main search or coefficient-response evaluation was run by reviewer.
+
+The source has explicit horizon/column/work/term limits and no silent partial
+factor archive. The main solver/checker must extend the gamma auxiliary with
+empty factor groups, bind every descriptor/order, and reconstruct all factor
+columns independently. Full-Gram PSD and nonnegative scalar slack remain
+mandatory exact gates. A failed finite search or a separated cone says nothing
+about actual RH. No blocking mathematical/source issue found in this bound
+producer version; independent whole-run verification remains required.
+
+Normalization revision independently reviewed before scores: the descriptor now
+binds exact kernel_degree (0 for one,1 for a,b,a-b) and normalizerN^-degree.
+The complete source archive remains explicitly unnormalized. Builder B,U,T and
+primitive relation multipliers are scaled by the SAME exact Fraction1/N^degree.
+Thus square closure terms scale by its square, and the prefix mixes use the
+normalized contrast while the original prefix remains intact. Multiplicity
+counts/source boundaries are unchanged, and every polynomial coefficient is
+normalized consistently. Six existing focused tests passed, including the new
+normalization check. This is scale conditioning, not a signed estimate or a
+claim that all atoms have equal asymptotic norm. Scalar-zero/gamma obligations
+and full original target remain unchanged.
+cancellation_factor_search_language.py SHA256 b157d80433001fad069528f5c878120b2927e19419234b8223b1d2b16815ac46
+cancellation_factor_blocks.py SHA256 364c5443fc9c02d8f84798f725f69b5e9253404f88d706bee7d52a8d271fd0c2
+check_cancellation_factor_blocks.py SHA256 fa483c714c5412dcff6b91940ec2651f09dc2b1b45e0c4f2d13f3a79d5f8e004

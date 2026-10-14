@@ -1,0 +1,375 @@
+{
+  "RH_proved": false,
+  "certified": false,
+  "compiler_limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 2048,
+    "max_degree": 12,
+    "max_horizon": 80,
+    "max_monomials": 100000,
+    "max_operations": 200000000
+  },
+  "exact_admission": false,
+  "expected_shape": {
+    "omitted_columns": 733,
+    "original_columns": 1957,
+    "original_rows": 5641,
+    "projected_columns": 1224
+  },
+  "global_bound_proved": false,
+  "gram_specs": {
+    "full_child": 15,
+    "full_parent": 15,
+    "storage_K": 15
+  },
+  "historical_development_scales": true,
+  "infeasibility_proved": false,
+  "language": {
+    "added_relation_groups": 210,
+    "added_square_groups": 0,
+    "aggregation": "equal primitive specs summed coefficientwise across every source t",
+    "atoms": [
+      "unit",
+      "prefix",
+      "half",
+      "even",
+      "mod3one",
+      "prime",
+      {
+        "power": -1,
+        "theta": "1/3"
+      },
+      {
+        "power": 0,
+        "theta": "1/3"
+      },
+      {
+        "power": 1,
+        "theta": "1/3"
+      },
+      {
+        "power": -1,
+        "theta": "1/2"
+      },
+      {
+        "power": 0,
+        "theta": "1/2"
+      },
+      {
+        "power": 1,
+        "theta": "1/2"
+      },
+      {
+        "power": -1,
+        "theta": "2/3"
+      },
+      {
+        "power": 0,
+        "theta": "2/3"
+      },
+      {
+        "power": 1,
+        "theta": "2/3"
+      }
+    ],
+    "auxiliary_relation_groups": "210 empty groups; new cubic coefficients zero",
+    "base_program": {
+      "actual_initial_vector": [
+        "1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "anchor": "prefix",
+      "anchor_index": 1,
+      "atoms": [
+        "unit",
+        "prefix",
+        "half",
+        "even",
+        "mod3one",
+        "prime",
+        {
+          "power": -1,
+          "theta": "1/3"
+        },
+        {
+          "power": 0,
+          "theta": "1/3"
+        },
+        {
+          "power": 1,
+          "theta": "1/3"
+        },
+        {
+          "power": -1,
+          "theta": "1/2"
+        },
+        {
+          "power": 0,
+          "theta": "1/2"
+        },
+        {
+          "power": 1,
+          "theta": "1/2"
+        },
+        {
+          "power": -1,
+          "theta": "2/3"
+        },
+        {
+          "power": 0,
+          "theta": "2/3"
+        },
+        {
+          "power": 1,
+          "theta": "2/3"
+        }
+      ],
+      "auxiliary_storage_blocks": "empty",
+      "base_program": {
+        "atoms": [
+          "prefix",
+          "half",
+          "even",
+          "mod3one",
+          "prime",
+          {
+            "power": -1,
+            "theta": "1/3"
+          },
+          {
+            "power": 0,
+            "theta": "1/3"
+          },
+          {
+            "power": 1,
+            "theta": "1/3"
+          },
+          {
+            "power": -1,
+            "theta": "1/2"
+          },
+          {
+            "power": 0,
+            "theta": "1/2"
+          },
+          {
+            "power": 1,
+            "theta": "1/2"
+          },
+          {
+            "power": -1,
+            "theta": "2/3"
+          },
+          {
+            "power": 0,
+            "theta": "2/3"
+          },
+          {
+            "power": 1,
+            "theta": "2/3"
+          }
+        ],
+        "auxiliary_blocks": "empty for every Gram group",
+        "constant_vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2"
+        ],
+        "dimension": 14,
+        "matrix_sharing": "one exact PSD matrix per region, shared across every t and X",
+        "regions": [
+          "parent",
+          "child"
+        ],
+        "scalar_language": {
+          "normalizer": "unit_constant",
+          "partition": "d<=floor(t^theta)",
+          "powers": [
+            -1,
+            0,
+            1
+          ],
+          "regions": [
+            "parent",
+            "child"
+          ],
+          "relation_forms": [
+            "one",
+            "prefix",
+            "contrast",
+            "normalization"
+          ],
+          "source_domain": "all 1<=a<=t, d|a; inside and complete complement",
+          "source_scale": "N=4X-1",
+          "square_forms": [
+            "contrast",
+            "prefix_plus",
+            "prefix_minus"
+          ],
+          "thetas": [
+            "1/3",
+            "1/2",
+            "2/3"
+          ],
+          "version": "divisor-cells-v1",
+          "weights": "a^power"
+        },
+        "selection": "union of every prior regional atom; identify shared prefix; retain every pair",
+        "version": "complete-regional-grams-v1"
+      },
+      "child_multiplier": "1",
+      "constant_vector": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2"
+      ],
+      "dimension": 15,
+      "formal_storage_scalar": "-2 X z^T K z",
+      "gamma_zero_scope": "necessary gate conditional on unchanged fixed-template scalar-growth assumptions",
+      "matrix_sharing": "one fixed K shared across every t and X",
+      "parent_multiplier": "-4",
+      "selection": "prepend constant unit to every regional and storage state; retain all 120 upper pairs",
+      "storage_matrix": "R=e_prefix e_prefix^T+K; K PSD",
+      "target_identity": "D-Delta(E)=nonnegative_proof_terms+Delta(S_K)",
+      "transport_kind": "signed_storage_increment",
+      "version": "affine-anchored-full15-storage-v1"
+    },
+    "coefficient_sharing": "one fixed signed coefficient per family, region and atom across every t and X",
+    "dimension": 15,
+    "formal_added_budget": "O(X^2) for fixed signed coefficients",
+    "formal_relation_constants": {
+      "coprime_product": "0",
+      "gcd_product": "0",
+      "inverse_row": "0",
+      "norm": "-SF(t)",
+      "prime_power": "pi(t)",
+      "squarefree_zero": "0",
+      "unit": "-1"
+    },
+    "formal_state_vector": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2"
+    ],
+    "group_form": "sum_{t in region} U_i(t) R_f(t)",
+    "primitive_families": [
+      "unit",
+      "norm",
+      "prime_power",
+      "squarefree_zero",
+      "inverse_row",
+      "coprime_product",
+      "gcd_product"
+    ],
+    "primitive_order": "grouped_arithmetic_templates order filtered to anchor<=t",
+    "regions": [
+      "parent",
+      "child"
+    ],
+    "relation_domain": "complete canonical primitive domains up to t",
+    "selection": "all seven primitive families, both regions and all fifteen state atoms",
+    "source_scale": "N=4X-1",
+    "state_source": "complete cancellation_affine_storage regional rows",
+    "version": "primitive-state-localizers-v1"
+  },
+  "limits": {
+    "basis_operations": 175000000,
+    "cooperative_seconds": 900,
+    "max_audit_cells": 60000000,
+    "max_coefficient_bits": 4096,
+    "max_fill_cells": 20000000,
+    "max_live_cells": 4000000,
+    "max_metadata_bytes": 65536,
+    "max_receipt_bytes": 8388608,
+    "max_source_cells": 4000000,
+    "max_work": 450000000,
+    "projection_operations": 50000000
+  },
+  "no_refit_or_source_selection": true,
+  "parallel": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 3221225472,
+    "timeout_seconds": 1800,
+    "worker_memory_bytes": 3221225472,
+    "workers": 1
+  },
+  "parent_publication": "publication-012",
+  "phases": [
+    "primal_preprocessing"
+  ],
+  "program": {
+    "C": 32,
+    "allow_constant_slack": true,
+    "claim": "critical",
+    "constraint": "zero_cubic",
+    "dictionary_mode": "extended",
+    "q": 6,
+    "target": "mu"
+  },
+  "scales": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "schema": "primitive-state-exact-row-basis-probe-v1",
+  "solver_called": false,
+  "strategy": "verify full15 column identities, exact augmented row basis, independent replay; no solver",
+  "tests": [
+    "test_primitive_state_equation_projection",
+    "test_check_primitive_state_equation_projection",
+    "test_primitive_state_exact_row_basis",
+    "test_check_primitive_state_exact_row_basis",
+    "test_run_primitive_state_exact_row_basis_probe",
+    "test_check_primitive_state_exact_row_basis_probe"
+  ]
+}

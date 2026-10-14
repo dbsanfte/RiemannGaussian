@@ -1,0 +1,85 @@
+OCCUPANCY TRANSFER AND FRACTIONAL PRODUCT AUXILIARIES
+
+This is an exact auxiliary-construction search driven by the outstanding
+whole-moment recovery obligation from prime-exchange-results/pilot-001.
+It changes squarefree product parity by adjoining a fresh actual prime.
+The supplied representation has four bins hu,hv,ku,kv, with exactly occupied
+mask M in 0..15. All16 masks, including the unit, remain in the language.
+The complete all-four-bin projection represents the squarefree-product part
+of the source quadratic expression after multiplication by beta^2.
+This projection is indefinite. Repeated valuations, gcd sectors and the
+main-term square/cross are mandatory complements, not absent source terms.
+
+For z=q^(-1/6), a u bin has weight1-z^2 and a v bin1-z^4. Prime adjunction
+unions its bit with M, flips the product's Mobius sign and dilates the
+corresponding kernel argument by q. The prefix kernel is
+  W_X(h,k)=max(0,2X-max(X,h,k)).
+Its complete two exits are W-W(qh,k) and W-W(h,qk). The producer compiles
+every potential at every mask into bulk, left exit and right exit; checker
+uses literal prefix counts on fixed tiny synthetic fixtures. The algebraic
+identity is formal in z and applies at every scale; the fixtures test code
+and endpoint semantics, not the desired global inequality.
+
+Construct the two union-sum matrices from primitive assignments, without
+seeding eigenvectors. Search every pair of rational proposed eigenvalues
+from {-2,-11/6,...,11/6,2} by exact nullspace elimination. Archive rejected
+pairs and every basis vector found. The target is recovered by exact linear
+combination using all16 coordinates. Separate independent coordinate
+recompositions test completeness of the discovered basis. A basis spanning
+all16 states also certifies that the enumerated eigenmodes exhaust this
+finite representation; no anticipated mode count or winner is asserted by
+the selector. Scalar envelopes and inability to recover from stable modes
+have only the recorded finite algebraic scope.
+
+Search product weights m^(-gamma) for gamma=0,1/6,1/3,1/2,2/3,1. For a mode
+with union eigenvalues a,b the zero-frequency bulk polynomial is
+  1-(a+b)z^(6gamma)+a*z^(6gamma+2)+b*z^(6gamma+4).
+For each distinct eigenvalue pair and weight, try uniform partitions of
+[0,9/10] with 1,2,4,8,16 pieces, in that order. Exact monomial-to-Bernstein
+conversion proposes a certificate that all polynomial values lie in[-1,1].
+Independent literal Bernstein-basis expansion verifies every successful
+certificate and complete domain coverage. The root domain follows from
+2*(9/10)^6>1. No numerical fitting, response table or prime-location sample
+is used. Missing a certificate in this dictionary is not a counterexample.
+
+Archive every fractional construction. Retain all weights whose bulk
+certificate covers every discovered mode as potential joint auxiliaries;
+order by increasing pointwise inverse-weight power, then gamma. This is
+an auxiliary priority only. For h,k<2X the inverse weight m^gamma is at most
+(2X)^(2gamma), but this pointwise fact does NOT bound an unweighted signed
+sum by a weighted signed sum. Such recovery needs its own signed argument,
+summation-by-parts control, or explicitly paid variation. It stays open.
+
+The actual prefix transport also has two independent dilation directions.
+Its scalar spectral multiplier has phases
+  1-q^(-gamma)*(R*exp(i*xi*log q)+S*exp(i*eta*log q)).
+Absolute zero-frequency control does not control those phases or the two
+exit correlations. Independently check each discovered row against ALL four
+individual union generators before admitting scalar two-leg transport.
+For phase half-width delta in{1/8,1/4,1/2,1}, search the same Bernstein
+certificates for (bulk-delta^2/2)/(1-delta^2/2). The implication is exact:
+rho=1-bulk>=0, rho<=2-delta^2, and cos(phi)>=1-delta^2/2 give
+  |1-R'exp(i*phi)-S'exp(i*psi)|^2
+     <=1-2rho*(1-delta^2/2)+rho^2<=1
+when R',S'>=0, R'+S'=rho, and |phi|,|psi|<=delta. Archive all successes
+and failures; prioritize smaller inverse power then wider certified cone.
+This is a formal dilation-symbol bound. Moving q-free/smooth arithmetic
+projections can mix frequencies, so no arithmetic operator norm follows
+without further recovery. Do not label a successful bulk/phase certificate
+an energy contraction. Static occupancy diagonalization was suggested analytically
+before this pilot; the unseeded finite search tests discovery capability
+within those supplied primitives, not freedom from design assumptions.
+
+Next obligations retain the exact birth and boundary correlations, all
+nonsquarefree sectors, source d recovery and the complete original center.
+New analytical reviews may identify paid subregions, with their scope
+explicit. No scalar stability or a lemma equivalent to RH closes the goal.
+
+Resources: 100 million proxy operations including development, one frozen
+combined19-test suite, complete search/checking and250k metadata reserve;
+900seconds,4GiB process memory within16GiB aggregate. Small exact search is
+serial; substantial independent mathematical/checker work uses Sol6.1
+agents. One owned development suite each, affected checks after fixes only,
+one frozen combined suite. Sources are frozen and compared directly by
+bytes, without hashes. No unchanged retry. Prior results remain immutable.
+Whole-target, energy-contraction and RH proof flags remain false.

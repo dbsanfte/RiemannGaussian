@@ -1,0 +1,411 @@
+PRIME/COFACTOR STATE DISCOVERY AND COMPLETE-PREFIX BOUND RULES
+Stage035 independent analytical review. All earlier files remain unchanged.
+No source values, scores, numerical experiments, old tests or hashes were used.
+
+Status
+------
+The prime-jet grammar can discover globally valid arithmetic states that finite
+base sections did not close. It does not inherit the radix block-sum induction
+from stage034. This review gives an executable local-operator bound search,
+complete prime-cutoff recurrences and recovery/cost rules. It also proves an
+actual-source obstruction to uniformly paying every rough companion separately.
+The original full signed core and RH remain open. No successful new arithmetic
+formula is supplied as an output for the detector.
+
+1. Authoritative source schema
+------------------------------
+Inputs are MULTISCALE_BOUND_DISCOVERY_HANDOFF.txt, OCCUPANCY_TRANSFER_HANDOFF.txt,
+CORE_SIGNED_PRIMITIVE_SEARCH_HANDOFF.txt and the accepted moment-region parent.
+The source is the ORIGINAL full core, not the old prime-power-zero a sequence:
+
+ u=1/3, v=2/3, beta=9/2,
+ nu0=K*(mu*mu), nu1=K*(mu*mu_v), nu2=K*mu_v,
+ K(n)=n^-u, mu_v(n)=mu(n)n^-v,
+ f=beta nu0-beta nu1-R_u nu2-beta mu.
+
+All four modes have unit one. Thus f(1)=-beta-R_u, not zero. R_u is the
+existing fixed positive source scalar beta[ zeta(4/3)/zeta(2/3)^2
+ -1/zeta(2/3) ]. Source binding carries its exact definition and already
+verified sign/bounds; a fitted decimal value is not a rational source identity.
+No transport error or inherited opposite drift is silently deleted: this is a
+direct alternative bound on f. Transfer to the accepted parent is separate.
+
+For p prime set z=p^-1/6, a=z^2, and use t to count the p valuation. The
+four local generating functions are
+ F0=(1-t)^2/(1-at), F1=(1-t)(1-a^2 t)/(1-at),
+ F2=(1-a^2 t)/(1-at), Fmu=1-t.                         (1.1)
+These follow directly from the supplied Dirichlet-factor ASTs. They are the
+source verifier's primitive semantics, not proposed discovered companions.
+All denominators are nonzero for |t|<=1, since 0<a<1.
+
+At valuation e=0 each coefficient is one. At e=1 they are
+ a-2, a-1-a^2, a-a^2, -1.
+At e>=2 they are respectively
+ a^(e-2)(1-a)^2,
+ a^(e-2)(a-1)(a-a^2),
+ a^(e-1)(a-a^2), 0.                                  (1.2)
+The first three coefficients obey ell_(e+1)=a ell_e only for e>=2.
+The exceptional first/repeated transition cannot be replaced by powers of the
+fresh-prime multiplier. Units, squares and all higher valuations are included.
+
+The selected source normalization w=(beta nu0,-beta nu1,-R_u nu2,-beta mu)
+has output row (1,1,1,1), unit (beta,-beta,-R_u,-beta). Local multiplication
+is diagonal with (1.2), unchanged by the constant source weights.
+
+2. Discoverable state and universal closure interface
+-----------------------------------------------------
+Start with the source output row. Generate a prime-section jet by taking a
+declared coefficient of z in the row multiplied by the local valuation-e
+diagonal. Rows are added only after exact independence checking. Samples may
+propose a rational polynomial dependence; they never certify it for all primes
+and cofactors. Record states as ('prime_jet', valuation, degree, parent), with
+the full original scalar in their ancestry, rather than naming a successful
+companion in the generator specification.
+
+After a basis B is found, certify B and its inverse, target recovery and unit.
+The complete valuation law is
+ T(z,t)=B diag(F0,F1,F2,Fmu) B^-1.                      (2.1)
+It includes the infinite tail, not merely the finitely observed jets.
+The law means v(p^e m)=T_e(z)v(m) on the EXACT domain p prime, p not dividing m.
+Repeated adjunction to the same prime uses the valuation history in (1.2),
+or the complete generating function. A fresh-prime law cannot be applied to
+p-divisible m. An AST with several distinguished primes retains distinctness,
+each local valuation and its coprimality predicates.
+
+An independent verifier recompiles the original factor ASTs and compares
+rational functions after clearing denominators, with their nonzero domain.
+Equality of all underlying mode-coordinate coefficients is a sufficient
+universal proof even if the scalar mode basis has additional unknown relations.
+Sample rank is not an arithmetic independence proof. Treat R_u symbolically,
+or prove every needed specialization side condition. Do not assume it rational
+or algebraically independent. Denominator cancellation is valid only with
+the displayed side conditions. Coefficient equality extends to every valuation
+because the rational series agree, not because an arbitrarily large finite jet
+was inspected.
+
+Suggested proof object fields: source AST and constant bindings, state DAG,
+jet provenance, basis/recovery, unit, local rational matrix, fresh-prime domain,
+valuation-tail recurrence, denominator nonvanishing, search limits, rejected
+closures, and independent identity verdict. These are source-law certificates.
+They do not set any whole-prefix or RH payment flag.
+
+3. Exact complete-prefix and moving-cutoff semantics
+----------------------------------------------------
+For fixed p define H_p(x)=sum_(m<=x,p not dividing m) v(m), zero for x<1.
+Then exactly, including real x and all integer endpoints,
+ F(x)=sum_(e>=0)T_e(p) H_p(x/p^e).                    (3.1)
+Only e<=floor(log_p x) contribute. This is not a digit partition into equal
+blocks. Its e=0 term has the SAME argument x and an unpaid p-free source.
+
+For a fixed finite prime set P, let H_P be the full prefix restricted to
+numbers having no prime factor in P. Unique factorization gives
+ F(x)=sum_(d<=x,d P-smooth)T(d)H_P(x/d),
+ T(d)=B diag(nu0(d),nu1(d),nu2(d),mu(d))B^-1.           (3.2)
+There is no requirement that two cofactors on a quadratic pair be coprime.
+All common prime powers, repeated valuations, units and output crosses remain.
+
+An executable growing-cutoff recursion is also exact. Let H(x;y) restrict
+every prime factor of m to exceed y. If p is the next prime after y, then
+ H(x;y)=H(x;p)+sum_(e>=1)T_e(p)H(x/p^e;p).             (3.3)
+The base is H(x;y)=v(1) for x>=1 and y>=x, and zero for x<1. This is
+well founded: e>=1 decreases x; the e=0 branch increases the cutoff and
+reduces the remaining number of primes<=x. The initial full prefix is H(x;1).
+An induction certificate must give a potential/ranking for BOTH variables.
+An omitted e=0 branch, all-prime frontier, valuation tail or finite unit is
+a changed target. A fixed finite P does not represent the full source beyond
+the first excluded prime. The argument must state when its cutoff covers the
+entire evaluated horizon.
+
+For prefix-square energy, expand (3.1) before any magnitude:
+ E_Q(F;X)=X^-2 sum_(n=X..2X-1) sum_(e,j>=0)
+     H_p(n/p^e)^t T_e^t Q T_j H_p(n/p^j).              (3.4)
+Both argument endpoints and EVERY inter-valuation cross occur. Replacing this
+by sum_e ||T_e H_p||^2 is false without a proved comparison cost. A chosen
+metric, a changing basis and a moving prime cutoff cannot erase these crosses.
+Equivalent formulas hold for (3.2) with all d,d' labels. Their full Gram is PSD;
+that fact alone gives no small upper bound on its target quadratic form.
+
+4. A genuine executable operator-bound attempt
+---------------------------------------------
+The detector can search a rational Hermitian Q, exact target-domination cost c,
+and scalar rational envelope kappa(z) for the complete transfer (2.1).
+Fix sigma>0 and define ||F||_(sigma,T,Q)^2 as integral_1^T
+ F(x)^*QF(x) x^(-2sigma-1) dx. Put r=p^-sigma=z^(6sigma).
+Under logarithmic Fourier transform, causal dilation F(x/p^e) has symbol
+r^e xi^e, |xi|=1. A sufficient all-phase operator certificate is
+ T(z,r xi)^*Q T(z,r xi)<=kappa(z)Q for EVERY |xi|=1.    (4.1)
+The polynomial/rational identity, real/imaginary xi constraint and denominator
+positivity can be checked by exact SOS, Bernstein subdivision or a conservative
+coefficient majorant. The search is on Q/envelopes and complete local matrices,
+not on fitted observed prefix slopes. Clear fractional exponents with a common
+denominator and state the exact positive z range.
+
+Proof of the truncated rule: extend H_p*1_(x<=T) by zero also below one.
+Its causal dilation sum agrees with F on x<=T. Global logarithmic Plancherel
+and (4.1), followed by restricting the output back to x<=T, give
+ ||F||_(sigma,T,Q)^2<=kappa(p)||H_p||_(sigma,T,Q)^2.    (4.2)
+There is no unproved pole crossing here. The input is a finite step function.
+The operator constant, target recovery and norm convention are explicit.
+
+This is a paid COMPONENT implication, not a bound on its input H_p.
+Metrics Q_p changing between prime steps require comparison Q_next<=c_p Q_old
+or the corresponding exact transport of forms. Product c_p/kappa_p costs and
+the final frontier norm are in the certificate. Singular Q is allowed only
+with exact target recovery on the entire admitted space; dropping a target-
+visible eigenmode is invalid. One can certify target recovery as a PSD block
+matrix or ell ell^t<=cQ, rather than an observed-value comparison.
+
+For step-extended integer prefixes and coefficients bounded on [1,N], take
+T=N+1. On each cell [n,n+1), the weight is at least
+(N+1)^(-2sigma-1). Thus sum_(n=1..N)|ell F(n)|^2
+ <=c(N+1)^(2sigma+1)||F||_(sigma,N+1,Q)^2.
+Divide by the declared block X^2 and retain the full unit/head. The discrete
+conversion is not a free equality between the logarithmic and block norms.
+
+Inverse removal is also searchable. For example the full-mode inverse symbols
+are (1-at)/(1-t)^2, (1-at)/[(1-t)(1-a^2t)],
+(1-at)/(1-a^2t), and 1/(1-t). At r=p^-sigma<1 their absolute coefficient
+mass is finite. It gives a rigorous inverse bound, but the prime product of
+these costs is never treated as one. Partial sums and infinite tails must be
+distinguished: the prefixes below one vanish, whereas absolute norm majorants
+sum the complete local series.
+
+5. Exact failure gates for local-only contraction
+-------------------------------------------------
+For every positive-definite coefficient metric, fresh adjunction has the
+nu0 eigenvalue a-2, tending to -2. A uniform contraction below one fails by
+testing that eigenvector. This is a formal-state obstruction; it is not a
+lower bound on the actual source prefix.
+
+The stronger full-valuation norm attempt (4.1) also has an exact obstruction.
+At xi=-1 the nu0 eigenvalue is
+ (1+r)^2/(1+ar)>1,
+since (1+r)^2-(1+ar)=r(2-a+r)>0. Thus no strictly contractive Q recovering
+that visible mode can satisfy (4.1). At sigma=1/2 its squared modulus is
+1+4p^-1/2+O(p^-1). In particular kappa(p)<=1+C/p for a fixed finite C is
+impossible for all large p in this grammar. A weighted coefficient probability
+model may instead have factors 1+O(1/p), but that is a different norm and
+does not identify actual integer-prefix covariance. This distinction is the
+reason occupancy spectra and finite-state block spectra cannot be copied here.
+
+Low-phase certificates are meaningful restrictions of (4.1), not full norms.
+They leave the high-frequency complement, inverse/prime-cutoff product and all
+domain kernels unpaid. A metric with target-root recovery alone cannot bypass
+the omitted complement. An exactly rediscovered energy potential may still
+be an endpoint restatement; require an independent endpoint price.
+
+6. Actual-source obstruction to separate rough-companion payment
+---------------------------------------------------------------
+There is a stronger arithmetic guard than the formal eigenvalue test.
+From (1.2), retaining all four source terms,
+ f(p)=-R_u p^-1/3+(beta+R_u)p^-2/3.                   (6.1)
+For p>=P0=[2(beta+R_u)/R_u]^3, f(p)<=-(R_u/2)p^-1/3.
+At cutoff y=sqrt(x) the rough source has ONLY its unit and primes, since any
+product of two primes>sqrt(x), including a square, exceeds x. Its prefix is
+ H_f(x;sqrt(x))=f(1)+sum_(sqrt(x)<p<=x)f(p).
+These terms eventually all have the same negative sign.
+
+The needed prime lower count is elementary, not an unstated short-interval PNT.
+For integer n, the central binomial coefficient is at least4^n/(2n+1).
+For each p<=2n its valuation is sum_j[floor(2n/p^j)-2floor(n/p^j)], a sum of
+zeros and ones. Hence p^valuation<=2n and binom(2n,n)<=(2n)^pi(2n).
+For n>=8 this gives pi(2n)>=n log2/log(2n). With n=floor(x/2), a safe bound
+ pi(x)>=c x/log x, c=log2/8, for all real x>=16 follows by monotonicity.
+
+For the WHOLE energy block fix ONE cutoff y_X=sqrt(2X). Then for every
+n in[X,2X-1] the rough support consists only of unit and primes>y_X.
+For sufficiently large X with y_X>=P0 and sqrt(2X)<=cX/(2log X), the count
+is at least cX/(2log X). Formula (6.1) yields uniformly on that block
+ |H_f(n;y_X)|>=c R_u X^(2/3)/(4*2^(1/3)log X),
+ E(H_f;X)>=c^2 R_u^2 X^(1/3)/(16*2^(2/3)(log X)^2).  (6.2)
+The negative unit cannot reduce the lower bound. All valuations are covered
+by the support argument; no omitted square or composite contributes there.
+
+Therefore an induction demanding a cofinal critical bound on EVERY rough
+companion is FALSE even for the actual source. The smooth/composite complement
+must cancel macroscopic rough forcing, or its countercenter must remain joint.
+This does not refute a cofinal bound for the full f. A detector must reject
+separate-payment rules by this structural source guard before ranking their
+finite observations. It must not reject a jointly coercive storage that retains
+the compensating branch and exact recovery.
+
+7. Reusable bound providers and calibration scopes
+--------------------------------------------------
+Actual divisor inversion supplies a nonlocal bounded harmonic state:
+c(U)=sum_(n<=U)mu(n)/n, with |c(U)|<=2, all integers U.
+If P is finite, coefficientwise prime-factor removal gives exactly
+ C_P(U)=sum_(n<=U,gcd(n,prod P)=1)mu(n)/n
+       =sum_(d<=U,d P-smooth)c(U/d)/d.
+Thus |C_P(U)|<=2 product_(p in P)(1-1/p)^-1.           (7.1)
+The finite prefix truncates naturally, while the bound uses the complete
+positive geometric mass. This is a source-specific cancellation provider
+that a local-factor/inverse compiler can apply after discovering the relevant
+observable and proving the inverse identity. It is not a square-root prefix
+bound for f; moving P pays its explicit product or a separately proved estimate.
+It also does not resurrect a fixed-prime frontier omitted from the source.
+
+A generic calibration of complete prime-prefix rules is finite-prime centering.
+Define a multiplicative model agreeing with the given local factors at a finite
+P and having coefficient one at all other primes. Its divisor kernel g has local
+symbol (1-t)F_i(t) at P and one elsewhere. Here sum_d|g(d)| is finite, by (1.1).
+Let lambda=sum_d g(d)/d. Then for ALL real x>0,
+ F_P(x)-lambda x=sum_d g(d)[floor(x/d)-x/d],
+ |F_P(x)-lambda x|<=sum_d|g(d)|.                       (7.2)
+The d>x terms are included, not dropped. The mean, unit and complete tail can
+be compiled from local symbols, so a search may discover a centering/metric
+and receive a genuine global bound. The finite-P constants and mean are not
+constants for growing P. At P empty the complete scalar is simply
+f_P(n)=-beta-R_u, with a nonzero linear prefix. This rejects any rule claiming
+that finitely validated prime laws alone imply a critical full-source bound.
+Calibration outcomes should be withheld and evaluated only after freeze; a
+rule provider is not a successful formula supplied to the state search.
+
+Coefficient bounds are another valid baseline: |nu0(n)|<=d2(n), while
+|nu1(n)|,|nu2(n)|,|mu(n)|<=1. With the inherited R_u<5,
+|f(n)|<=(3beta+5)d2(n)=(37/2)d2(n). Their absolute prefix consequences
+have a positive X energy power. They are reference bounds, not signed savings.
+
+8. A richer complete arithmetic recurrence, not a sign proof
+-----------------------------------------------------------
+The local compiler can also take a logarithmic derivative. Universally,
+nu_i(n)log n=sum_(p^e|n)lambda_i(p^e)nu_i(n/p^e), with
+ lambda0=(a^e-2)log p,
+ lambda1=(a^e-1-a^(2e))log p,
+ lambda2=(a^e-a^(2e))log p, lambda_mu=-log p.
+Hence B_i(x)=sum_(p^e<=x)lambda_i(p^e)F_i(x/p^e).
+All primes, powers and cofactors remain; no extra p-free restriction belongs
+inside this divisor recurrence. In the discovered basis it is a matrix law.
+
+Negative generator coefficients are not coercivity. The logarithmic dilation
+pair <F,D_pF> has Fourier real symbol p^-sigma cos(t log p), of both signs.
+So a signed work certificate must prove the complete quadratic/kernel identity
+or its phase/cone restriction and price its complement. Applying magnitude to
+each generator returns the known absolute envelope. A claimed negative energy
+credit based only on the sign of lambda is an invalid inference.
+
+9. Recommended executable bound-search interfaces
+--------------------------------------------------
+(a) discover_prime_states(source,jet_limits): proposed state DAG/basis/relations;
+    verifier(source,proposal): all-prime/all-cofactor closure or exact failure.
+(b) compile_valuation_operator(verified_basis): rational T and complete history.
+(c) search_operator_form(T,sigma,Q_dictionary,envelope_dictionary): exact
+    all-phase Q/envelope/target-domination certificate, or algebraic obstruction;
+    no prefix payment unless its input/frontier is independently available.
+(d) compile_rough_induction(T): equation (3.3), two-variable ranking, unit,
+    finite valuation endpoints and target root. Search coupled forms/weights
+    with every cross, metric conversion and rough/smooth countercenter included.
+(e) inverse_mass/finite_prime_center/log_generator: generic proof primitives
+    with typed norm domains, complete tails and explicit cutoff-dependent costs.
+(f) recover_target(proof_DAG): original root, full integer block, all centers,
+    units and inherited transfers. Reject cycles, endpoint restatements,
+    unpriced prime products and unsupported whole-prefix leaves.
+
+An exact conditional bound output is useful even when it fails: retain the
+discovered source law, successful component operator estimate, precise unpaid
+frontier/correlation and structural rejection witness. A local spectrum never
+sets the global flag. Finite arithmetic covariance measurements can test a
+generated joined hypothesis on preserved data, but cannot supply its all-scale
+constant or recovery. Larger archive coverage is not proof exposure.
+
+The next genuinely different arithmetic target is a coupled rough/smooth
+recurrence that cancels the forced sector (6.2) BEFORE absolute pricing, while
+keeping every valuation and the two-leg prefix kernel. The current grammar
+can compile/search such certificates; neither its feasibility nor an RH bound
+is asserted here. This review supplies reusable rules and failure gates, not
+a nominated winning construction or an isolated omitted-complement theorem.
+
+10. Detector-generable prime-frontier rejection certificate
+----------------------------------------------------------
+The source f in section6 is one application, not a hardcoded detector gate.
+Input a discovered real scalar state's EXACT prime-value polynomial
+ P(z)=sum_(d>=0)c_d z^d, z=p^-1/6,
+its exact unit u, and its full prime-factor support semantics. The following
+algorithm produces a reusable obstruction certificate for an uncompensated
+rough prefix on a horizon N=2X-1:
+
+ 1. Prove each preceding coefficient zero and select the first coefficient
+    c_d0 proved nonzero. Provide its sign and a rational lower bound L>0 for
+    |c_d0|, plus rational upper bounds B_d for |c_d|, d>d0. Existing beta/R_u
+    identities, sign domains or verified enclosures may provide these facts.
+    An enclosure containing zero is NOT a nonzero certificate. If an earlier
+    coefficient is unresolved, selection is unresolved. If P is identically
+    zero, this gate proves no obstruction.
+ 2. Let r=d0/6, S=sum_(d>d0)B_d. For S>0 choose rational
+    z0=min(1,L/(2S)); for S=0 use z0=1. On 0<z<=z0,
+    |P(z)-c_d0 z^d0|<=S z z^d0<=L z^d0/2.
+    Thus P has that constant sign and |P(p^-1/6)|>=L p^-r/2
+    for p>=max(2,ceil(z0^-6)). Integer ceiling and all floors are exact.
+ 3. Fix the SAME cutoff y_X=sqrt(2X) for the complete energy block. For
+    sufficiently large X it exceeds the sign threshold. The support rule
+    proves that only unit and primes occur at every prefix n<=N. The explicit
+    binomial proof in section6 gives at least cX/(2log X) such primes at n>=X,
+    once sqrt(2X)<=cX/(2log X), c=log2/8. No PNT or RH is imported.
+ 4. If r<1 and |u|<=J, enlarge the finite head until
+    J<=cL X^(1-r)/(8*2^r log X). Then uniformly for n in[X,N],
+    |H(n;y_X)|>=cL X^(1-r)/(8*2^r log X),
+    E(H;X)>=c^2 L^2 X^(1-2r)/(64*2^(2r)(log X)^2).     (10.1)
+    If the unit has the same sign, the factor-two unit loss is unnecessary.
+    The constant contains only certified parameter domains, not fitted data.
+
+For r<1/2 this refutes any claimed cofinal subpower energy bound for this
+UNCENTERED rough auxiliary. More generally it refutes a proposed power below
+1-2r; at equal power logarithms must be compared carefully. At r>=1/2 it
+does not refute the usual cofinal objective. For r>=1 the unit may dominate;
+this recipe does not claim a diverging frontier. A unit-zero source needs no
+unit head cost. Histories whose support is not prime-only at this cutoff
+cannot use this gate without a separate exact support proof.
+
+The output certificate contains the prime-value polynomial, source-state DAG,
+zero/nonzero/sign proofs, L/B_d/z0, support proof, binomial count rule, unit
+bound, finite-head inequalities and lower exponent 1-2r. The arithmetic
+algorithm derives P from the discovered state and compiled local coefficient;
+it is not given (6.1) as its desired answer. Truthful outcomes include
+nonzero_lower_bound, no_obstruction and unresolved_coefficients.
+
+Centering is explicit. Subtracting the exact prime-only profile makes this
+rough branch zero, but adds that profile to the complementary branch. A
+deterministic countercenter with a proved equal leading profile is also a
+possible construction, with its exact residue/floor/error debts. Neither
+operation pays the complete joined target. The gate does not apply to an
+already compensated state without first checking its full prime/center support.
+
+11. Infinite valuation tails and centered p-free transformation
+-------------------------------------------------------------
+In any verified constant basis, the full local matrix has the compact form
+ T(z,t)=I+t T1(z)+t^2 T2(z)/(1-a t), a=z^2.           (11.1)
+The mu entry of T2 is zero before change of basis, and T_e=a^(e-2)T2 for
+every e>=2. This is a generic tail compiler result from the rational series,
+not an extrapolation of observed prime powers. For a norm exponent sigma>0,
+the complete absolute matrix-coefficient bound is
+ 1+||T1||p^-sigma+||T2||p^-2sigma/(1-a p^-sigma),
+with each indicated induced norm proved in the admitted metric. A singular
+metric needs kernel invariance as well. Changing basis/metric costs remain.
+
+Let H_p^c=H_p-C_p and let C be the selected full-source center, both defined
+also for x<1 according to their stated convention. The exact centered rule is
+ F-C=T H_p^c+D_p, D_p=T C_p-C.                        (11.2)
+Consequently (4.2) gives, for eta>0,
+ ||F-C||^2 <=(1+eta)kappa ||H_p^c||^2
+              +(1+1/eta)||D_p||^2.
+The entire deterministic defect D_p is an output obligation. An eigenvector
+or local pole cancellation does not license D_p=0 on integer cells.
+
+For illustration of the required bookkeeping, take C_p(x)=m x^kappa for
+x>=1 and zero below one, kappa>0. Let E=floor(log_p x) for x>=1. Then
+ T C_p(x)=x^kappa[ T(z,p^-kappa)m
+                     -sum_(e>E)T_e p^(-e kappa)m ].
+For E>=1 the tail matrix is exactly
+ T2 p^-2kappa (a p^-kappa)^(E-1)/(1-a p^-kappa).
+For E=0 add T1 p^-kappa and use T2 p^-2kappa/(1-a p^-kappa).
+Thus even matching the infinite Euler/main coefficient leaves a finite-prefix
+tail, including the head x<p. If the target center is a staircase rather than
+x^kappa, its floor discrepancy is an additional retained term. Moving prime
+cutoffs multiply these transforms and their defects; only a verified joint
+identity may cancel them. Exact infinite tail cost, finite support and original
+source recovery are separate certificate fields.
+
+Final status: the proposed search can discover actual arithmetic closure,
+attempt complete operator/coupled-induction bounds, and automatically reject
+false separately paid rough states. No full signed estimate is established by
+this review. Source-law and local component successes remain distinct from the
+OPEN joined rough/smooth covariance and from the original RH goal.

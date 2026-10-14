@@ -1,0 +1,64 @@
+{
+  "owner": "/root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_transport_059.py",
+        "-v"
+      ],
+      "returncode": 1,
+      "tests": 18,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_transport_059 operations=5719990\n",
+      "stderr": "test_assess_claim_pass_refuted_unresolved_and_general_beta (__main__.TransportCheckerTests) ... ok\ntest_charge_only_meter_and_precision_restore (__main__.TransportCheckerTests) ... ok\ntest_claim_and_context_forgery_gates (__main__.TransportCheckerTests) ... ok\ntest_direct_joined_W_formula_no_token_sign_swap (__main__.TransportCheckerTests) ... ok\ntest_evaluate_many_one_table_signed_bounds_and_triangle (__main__.TransportCheckerTests) ... ok\ntest_exact_powered_zero_band_general_tau (__main__.TransportCheckerTests) ... ok\ntest_exact_rational_pair_interval_and_absolute_values (__main__.TransportCheckerTests) ... ok\ntest_generic_fractional_parameters_and_functional_cache (__main__.TransportCheckerTests) ... ok\ntest_half_alpha_erfc_integral_and_monotone_difference (__main__.TransportCheckerTests) ... ok\ntest_missing_duplicate_wrong_sign_and_foreign_tokens (__main__.TransportCheckerTests) ... ok\ntest_monotone_profile_optimum_flux_and_zero_dummy (__main__.TransportCheckerTests) ... ok\ntest_ordinary_mu_tokens_all_weights_and_profiles (__main__.TransportCheckerTests) ... ok\ntest_phi_independent_integrated_taylor_calibration (__main__.TransportCheckerTests) ... ERROR\ntest_plan_cross_profile_pairs_and_reversal (__main__.TransportCheckerTests) ... ok\ntest_prime_parameters_types_and_canonical_aliases (__main__.TransportCheckerTests) ... ok\ntest_profile_dominance_exact_policy_scope_and_mutations (__main__.TransportCheckerTests) ... ok\ntest_unit_and_q_range_exit_remain (__main__.TransportCheckerTests) ... ok\ntest_work_memory_power_and_precision_guards (__main__.TransportCheckerTests) ... ok\n\n======================================================================\nERROR: test_phi_independent_integrated_taylor_calibration (__main__.TransportCheckerTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_transport_059.py\", line 156, in test_phi_independent_integrated_taylor_calibration\n    lo,hi=Taylor_phi(a,r,m)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_transport_059.py\", line 78, in Taylor_phi\n    lo=C._dyadic(total.lower()-error.abs_upper(),m)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_mobius_transport_059.py\", line 159, in _dyadic\n    man,exponent=value.man_exp();man,exponent=int(man),int(exponent)\n  File \"flint/types/arb.pyx\", line 252, in flint.types.arb.arb.man_exp\nValueError: man_exp requires an exact, finite value\n\n----------------------------------------------------------------------\nRan 18 tests in 0.043s\n\nFAILED (errors=1)\n",
+      "operations": 5719990,
+      "elapsed_seconds": 0.13212813099380583,
+      "peak_rss_KiB": 36944,
+      "stdout_artifact": "check_mobius_transport_059_suite_001.stdout.txt",
+      "stderr_artifact": "check_mobius_transport_059_suite_001.stderr.txt"
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_transport_059.py",
+        "-v",
+        "TransportCheckerTests.test_phi_independent_integrated_taylor_calibration"
+      ],
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_transport_059 operations=539259\n",
+      "stderr": "test_phi_independent_integrated_taylor_calibration (__main__.TransportCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.016s\n\nOK\n",
+      "operations": 539259,
+      "elapsed_seconds": 0.10899587598396465,
+      "peak_rss_KiB": 36448,
+      "stdout_artifact": "check_mobius_transport_059_affected_002.stdout.txt",
+      "stderr_artifact": "check_mobius_transport_059_affected_002.stderr.txt",
+      "affected_only": true
+    }
+  ],
+  "operations": 6259249,
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "edits_stopped": true,
+  "synthetic_only": true,
+  "scientific_source_arrays_read": false,
+  "scientific_N64plus_values_evaluated": false,
+  "prior_studies_or_suites_replayed": false,
+  "producer_imported_by_checker": false,
+  "public_APIs": [
+    "verify_plan",
+    "prepare_context",
+    "evaluate",
+    "evaluate_many",
+    "assess_bound",
+    "verify_bound",
+    "verify_profile_dominance"
+  ],
+  "proof_scope": "exactordinarymu finite tokens/plans; rigorousGamma finite costs; profile-only costdominance; uniformsignedgrowth/RHOPEN",
+  "correction": "IndependentTaylor fixture endpoint subtraction produced a roundedArb ball; selected .lower()/.upper() after subtracting/adding the rigorous remainder before exactdyadic conversion. Production evaluator already extracts exactendpoints and was unchanged. Only affectedcalibration test rerun.",
+  "distinct_tests": 18,
+  "test_invocations": 19,
+  "post_test_metadata_addition": "Atrootrequest expose already reconstructedcanonicaltokens in evaluate_many and charge5*token_count+1 for serialization. Source/kernel/plan mathematics unchanged. Rootnewintegrationtest covers required metadata; unchangedownedtests notrerun."
+}

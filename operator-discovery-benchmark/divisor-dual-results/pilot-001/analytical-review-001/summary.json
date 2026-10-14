@@ -1,0 +1,51 @@
+{
+  "status": "verified_separate_analytical_dispositions_on_frozen_detector_leads",
+  "review_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/divisor-dual-results/pilot-001/analytical-review-001",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/divisor-dual-results/pilot-001",
+  "candidate_count": 12,
+  "proved_uniform_critical_candidates": 0,
+  "disproved_uniform_matrix_candidates": 6,
+  "unresolved_uniform_matrix_candidates": 6,
+  "proved_arithmetic_subclaims": [
+    "complete actual inverse forces C_N*mu=e_1 for every N",
+    "nonunit divisor Gram annihilates mu at every N",
+    "ordinary q=1 row-norm energy power three"
+  ],
+  "positive_density_uncovered_tail_obstruction_proved": true,
+  "quadratic_Gram_coefficient_obstruction_proved": true,
+  "exact_actual_signed_nullspace_gap_explicit": true,
+  "conditional_Schur_buffer_not_arithmetic_proof": true,
+  "source_candidates_and_selection_unchanged": true,
+  "polynomial_level_constant_limits_current_grammar": true,
+  "next_run_feedback": [
+    {
+      "change": "test or prune positive-density uncovered tail rows for this particular universal PSD certificate",
+      "kind": "proved_structural_obstruction",
+      "original_run_modified": false
+    },
+    {
+      "change": "expand Gram coefficient profiles beyond the proved tail-vector obstruction",
+      "kind": "candidate_language_feedback",
+      "larger_coefficients_prove_PSD": false,
+      "original_run_modified": false
+    },
+    {
+      "change": "separate cofinal exponent decay from the permitted finite constant growth law",
+      "kind": "coverage_limitation",
+      "RH_implies_current_polynomial_constant_family": false,
+      "original_run_modified": false
+    }
+  ],
+  "verified_checks": 5,
+  "independent_exact_counts": {
+    "exact_large_dyadic_obstruction_witnesses": 18,
+    "direct_public_quadratic_witnesses": 15,
+    "congruence_nullspace_entries": 18
+  },
+  "source_queue_sha256": "bc474b571acb73661879e38b055badbc0278c8c17fd3d0f8950fe373a0bf55e6",
+  "verification_sha256": "f2188944f3e95964dc9848cd423f4b3d93cbe32fdc07b48e2c9461f13087c1f7",
+  "machine_formalized": false,
+  "global_full_signed_defect_proved": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

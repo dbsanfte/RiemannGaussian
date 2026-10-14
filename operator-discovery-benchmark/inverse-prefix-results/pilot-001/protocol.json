@@ -1,0 +1,356 @@
+{
+  "grammar_version": "anonymous-truncated-inverse-polynomial-and-signed-potential-v1",
+  "code_sha256": {
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "inverse_prefix_search.py": "30f61ce6fbd70cdab06a845019a91d32f3eaf8f63a79eb33553144046392a0f9",
+    "inverse_prefix_analytic.py": "a12e1ae1501ee08ef1ccf7e13735e7ef7aeaa956f3167e4492924ded98a5b36d",
+    "inverse_prefix_report.py": "fa426dcde932ead54d16963b9806580509ad0fc51264622f701c74b1f16d5ba8",
+    "inverse_prefix_proof.txt": "59c040bd070e35a5139f1899b1284c8ea8f06c3cd76ee39b96dbecc396ec72ec",
+    "check_inverse_prefix_math.py": "451eb5e6d851d79810a044b7fd2a4242fe5504825c3baea4a6d3cba992fb3a0b",
+    "check_inverse_prefix_search.py": "e9b07693099ba15a9b0b1f50358fa3ae253c914edb4008dbff78010e1d282647",
+    "check_inverse_prefix_analytic.py": "542fee0d896b3b0879e1006c6d94f0617e08ffea95cee259f5ed8d26e1f260df",
+    "test_inverse_prefix_contracts.py": "9beed8a05c99cf03aecba724ad60d0d8e6f2c4fd7aea821aa47a16a5e2cb5b8e",
+    "plot_inverse_prefix.py": "e3f6c5b362c1dd6968e82d56812022644f30d617c9c2e9b20ff22a55cc55b883"
+  },
+  "source_sha256": {
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001/manifest.json": "a8b4b32d2245fd71079a9b517cc875ce2d0c04c3a0c53e94d0276efa20ea11d4",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001/verification.json": "75f6b579b07716005d29bad8aa153b6b42a8540086921b2fa8998c25db13befd",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001/integration_verification.json": "689b344030608f842e4436b3f9a5b1bdd6b021b7d18a7631fa35d8b22f542bef",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-proof-routes-001/route-01.json": "798de2cd2fa0dae43853fe365b6529947ba9b1a0c93d8c5d6122bf2c02a3a2bc",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-proof-routes-001/route-02.txt": "9017a284a797b3e247203abfbccbc283709d7ad2e2bfd674e94ac0ffb5a9b18f",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-proof-routes-001/route-03.json": "09ba54e902d666897a7b66c9e16a43278d7974eb7395df989c7d22e7f23d98ce",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-proof-routes-001/route-04.json": "71cc290de69891f95e77ce72af7d642438db40847a52d00c3961e4d051aa5748",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-proof-routes-001/route-05.txt": "1b3e1f90ccf2727d26db850544cbc613a23458a9eab74c3a42ffffaf3a0e87e5",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/inverse-prefix-results/development-preflight-001/record.json": "6f730c69ca76ef7b50fb504972a1a512a77ce8752581382399230239efb2d3f7",
+    "/home/dbsanfte/riemann/operator-discovery-benchmark/inverse-prefix-results/development-preflight-001/inverse_prefix_grammar.py": "34580585439b7a8103293a288aa0fe91e6628f4d7161ae9351a751f53e0ae394"
+  },
+  "source_review_round": "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001",
+  "generic_training": [
+    {
+      "seed": 92811,
+      "cutoff": 96,
+      "arities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indices": [
+        4,
+        9,
+        15,
+        27,
+        43,
+        71,
+        91
+      ]
+    },
+    {
+      "seed": 177241,
+      "cutoff": 96,
+      "arities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indices": [
+        4,
+        9,
+        15,
+        27,
+        43,
+        71,
+        91
+      ]
+    },
+    {
+      "seed": 661879,
+      "cutoff": 96,
+      "arities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indices": [
+        4,
+        9,
+        15,
+        27,
+        43,
+        71,
+        91
+      ]
+    }
+  ],
+  "generic_validation": [
+    {
+      "seed": 881921,
+      "cutoff": 160,
+      "arities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indices": [
+        6,
+        17,
+        33,
+        59,
+        101,
+        157
+      ]
+    },
+    {
+      "seed": 923711,
+      "cutoff": 160,
+      "arities": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "indices": [
+        6,
+        17,
+        33,
+        59,
+        101,
+        157
+      ]
+    }
+  ],
+  "reconstruction_arities": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "recurrence_feature_dictionary": [
+    "one",
+    "k",
+    "r",
+    "r_is_one",
+    "same",
+    "left",
+    "right",
+    "previous",
+    "previous_left",
+    "k_same",
+    "r_same"
+  ],
+  "recurrence_support_budget": 3,
+  "potential_arities": [
+    2,
+    3
+  ],
+  "training_scales": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "validation_scales": [
+    192,
+    256,
+    384
+  ],
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "potential_feature_dictionary": [
+    {
+      "arity": 2,
+      "slot": 1,
+      "normalizing_power": "1"
+    },
+    {
+      "arity": 2,
+      "slot": 1,
+      "normalizing_power": "3/2"
+    },
+    {
+      "arity": 2,
+      "slot": 1,
+      "normalizing_power": "2"
+    },
+    {
+      "arity": 2,
+      "slot": 1,
+      "normalizing_power": "5/2"
+    },
+    {
+      "arity": 2,
+      "slot": 1,
+      "normalizing_power": "3"
+    },
+    {
+      "arity": 2,
+      "slot": 2,
+      "normalizing_power": "1"
+    },
+    {
+      "arity": 2,
+      "slot": 2,
+      "normalizing_power": "3/2"
+    },
+    {
+      "arity": 2,
+      "slot": 2,
+      "normalizing_power": "2"
+    },
+    {
+      "arity": 2,
+      "slot": 2,
+      "normalizing_power": "5/2"
+    },
+    {
+      "arity": 2,
+      "slot": 2,
+      "normalizing_power": "3"
+    },
+    {
+      "arity": 3,
+      "slot": 1,
+      "normalizing_power": "1"
+    },
+    {
+      "arity": 3,
+      "slot": 1,
+      "normalizing_power": "3/2"
+    },
+    {
+      "arity": 3,
+      "slot": 1,
+      "normalizing_power": "2"
+    },
+    {
+      "arity": 3,
+      "slot": 1,
+      "normalizing_power": "5/2"
+    },
+    {
+      "arity": 3,
+      "slot": 1,
+      "normalizing_power": "3"
+    },
+    {
+      "arity": 3,
+      "slot": 2,
+      "normalizing_power": "1"
+    },
+    {
+      "arity": 3,
+      "slot": 2,
+      "normalizing_power": "3/2"
+    },
+    {
+      "arity": 3,
+      "slot": 2,
+      "normalizing_power": "2"
+    },
+    {
+      "arity": 3,
+      "slot": 2,
+      "normalizing_power": "5/2"
+    },
+    {
+      "arity": 3,
+      "slot": 2,
+      "normalizing_power": "3"
+    },
+    {
+      "arity": 3,
+      "slot": 3,
+      "normalizing_power": "1"
+    },
+    {
+      "arity": 3,
+      "slot": 3,
+      "normalizing_power": "3/2"
+    },
+    {
+      "arity": 3,
+      "slot": 3,
+      "normalizing_power": "2"
+    },
+    {
+      "arity": 3,
+      "slot": 3,
+      "normalizing_power": "5/2"
+    },
+    {
+      "arity": 3,
+      "slot": 3,
+      "normalizing_power": "3"
+    }
+  ],
+  "coefficient_grid": [
+    "1/4",
+    "1",
+    "4"
+  ],
+  "support_budget": 2,
+  "selection": "best per support size by validation passes, exact largest fitted constant, description length, stable id",
+  "generic_inputs_are_anonymous_unrelated_references": true,
+  "expected_reconstruction_or_recurrence_coefficients_supplied": false,
+  "nonnegative_potential_features_and_proof_methods_are_supplied_assumptions": true,
+  "learner_reads_analytic_candidates_or_final_cases": false,
+  "actual_coefficient_overlap_with_previous_development": true,
+  "new_actual_prime_coefficient_holdout_claimed": false,
+  "fresh_generic_reference_and_operator_responses_required": true,
+  "retained_failed_runs": [],
+  "failed_final_operator_scales_excluded": [],
+  "final_scale_retry_index": 0,
+  "final_scale_design_visible_to_worker_but_responses_withheld": true,
+  "search_resource_missingness_not_generalized_beyond_native_pilot_budget": true,
+  "full_rational_power_ceiling_semantics": true,
+  "semantic_rational_denominator_or_integer_arity_cap": false,
+  "native_rational_power_bit_budget": 1000000,
+  "final_design": {
+    "arity_calibration": [
+      2
+    ],
+    "new_arities": [
+      6,
+      7
+    ],
+    "generic_indices": [
+      11,
+      23,
+      53,
+      89,
+      131,
+      191,
+      257
+    ],
+    "generic_cutoff": 272,
+    "actual_scales": [
+      1001,
+      1024,
+      2048,
+      4096
+    ],
+    "seen_levels": [
+      3,
+      12
+    ],
+    "new_levels": [
+      13,
+      17
+    ]
+  },
+  "global_actual_signed_innovation_bound_proved": false,
+  "RH_proved": false
+}

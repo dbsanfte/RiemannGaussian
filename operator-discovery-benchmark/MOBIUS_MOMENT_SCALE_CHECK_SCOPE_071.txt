@@ -1,0 +1,54 @@
+INDEPENDENT EXACT MOMENT/SCALE CHECKER071
+
+Owned files: check_mobius_moment_scale_071.py, its new synthetic test file,
+this scope statement, and mobius_moment_scale_checker_071_development.json.
+No producer, numerical optimizer, numpy, old checker, historical test,
+scientific runner, saved scientific array or artifact hash is imported or run
+by this checker development. Existing070/071 reviews and068/069 checker
+definitions were read only to resolve the supplied mathematical contract.
+Producer071 source was inspected read-only to confirm its literal schema.
+
+verify_program independently builds every named affine facet and both
+objectives, including optional fixed-theta facets and the exact primary
+optimum constraint in secondary. Ax>=b, nonnegative y, A^Ty=c and equality
+c.x=b.y certify optimality with exact Fraction arithmetic. Nonnegative y,
+A^Ty=0 and b.y=1 certify infeasibility. No frontier exponent formula,
+special nominated balancing point or solver success flag is used for
+acceptance. Unresolved metadata certifies no optimum. Complete derivations
+recompute all rational exponents, the complete quadratic C polynomial,
+short cost and sufficient base; all uniform claim flags must remain false.
+
+verify_source independently validates the unchanged registered068 source
+parameters and both ordered ratios, regenerates signed joined g and a_T,
+M1, every complete row, six coalesced direct atoms, h_A, b and V. It checks
+all and only derived-program plans, including exact rational floors and
+ceilings, complete rectangle support, auxiliary domains, strict rank,
+integer universal-base gates and the sufficient short-zero-support gate.
+Unit rows and finite failed-rank/base rows remain in the output with their
+truthful gates; failed rank is not silently dropped or promoted to a proof.
+
+Only after geometry replay does the evaluator independently sieve ordinary
+mu. H_u and H_v are unscaled arithmetic moments. All geometry-valued
+numbers are divided by the exact endpoint denominator. K(t) is computed
+from the independently regenerated kappa by its exact divisor transpose.
+The full rectangle bilinear K sum minus b*H_u*H_v equals E; the complete
+reciprocal product retains the residual at ab>R even where K=0. Units,
+shared primes and repeated prime factors remain. J=L_u+L_v-E and the
+separable term are preserved individually. Each reconstruction is compared
+with the independent joined Mertens-prefix functional before acceptance.
+Repeated (u,v) cuts share one evaluation in first-plan appearance order.
+Rows without derived programs retain their independent actual coefficient.
+
+Resource gates: N<=65536, max_j<=min(D,4096), at most128 nonempty programs,
+canonical rational/integer inputs of at most4096 bits, explicit100000-bit
+power and rational-intermediate gates, own operation/time Meter, bounded
+JSON complexity and conservative prospective/retained2GiB memory gates.
+The larger16GiB aggregate protocol budget never overrides checker2GiB.
+Every development execution attempt is preserved in the JSON receipt,
+including an absent python executable corrected to python3. Tests are new
+small synthetic mathematical/security cases, not old suite reruns.
+
+The verified values are exact finite data, not paid prefix premises,
+universal rank bases, signed remainder cancellation, induction closure,
+uniform head control or RH. Root admission separately binds every source
+row to the preserved069 verification; this checker does not import it.

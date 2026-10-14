@@ -1,0 +1,164 @@
+082 independent dense-certificate detector design and proof boundary
+
+Disposition
+A meaningful next detector is exact quadratic completion of the COMPLETE
+joint drift using divisor identities, rather than extracting another thin
+balanced ratio packet. The detector below either returns an independently
+checkable finite upper certificate or an exact moment-relaxation obstruction.
+Both are actionable mathematical outputs. Neither is an all-scale bound.
+No historical scientific run, test, numerical mu query, or hash was made for
+this design. Frozen files were read only. A source-reading command requested
+an absent guessed066 review filename; the069 review itself contains the
+needed066 correspondence and was successfully read. No result depended on
+the absent filename.
+
+What must not be repeated
+MOBIUS_CONVOLUTION_SCALE_REVIEW_069.txt and its protocol already supply the
+mixed-cutoff mu*One identity, strict product support gate, complete smaller-
+radius polynomial, unit/diagonal accounting, and arbitrary rational cuts.
+They also expose actual-source barriers for unsigned Abel/Gram prices and
+scalar prefix-box relaxations. Merely renaming this inverse, reducing radius,
+or fitting its unsigned coefficients is not a new signed-control primitive.
+The new object must retain joint arithmetic constraints through pricing.
+
+Complete dense target
+Let f_i(n)=sum_k b_k 1[n<=floor(u/(2^i d_k))] for the ORIGINAL kernel.
+Use fixed unnormalized T=embed(H)-r shift(H), as081. Compile the entire
+quadratic F_u(x)=sum_ij T_ij (sum_n f_i(n)x_n)(sum_m f_j(m)x_m),
+including unit, diagonal, every prime/composite pair, and both endpoints.
+At ordinary mu, F_u=E(u)-r E(floor(u/2)). Use horizon equal to the maximum
+actual endpoint, not an artificial ratio cutoff. Represent off-diagonals
+with the exact factor2 convention and bind both the source kernel and all
+floor endpoints before any optimization. Interval source evaluation alone
+does not license dropping primitive prime edges.
+
+Finite exact detector primitive: divisor-constrained quadratic completion
+Coordinates z=(1,x_1,...,x_H). For n>1 use
+ r_n(x)=sum_{d|n} x_d=0; use r_1=x_1-1=0.
+Optionally use squareful-zero x_n=0 and known squarefree-diagonal
+ x_n^2=s_n, where s_n is determined by factorization, not fitted signs.
+Coprime multiplicativity x_ab-x_a*x_b=0 may be included if ab<=H;
+it is a quadratic constraint, not a rule for noncoprime products.
+
+Search for an identity
+ B-F_u(x)=z^T S z + sum_n ell_n(x) r_n(x)
+          +sum_n t_n(1-x_n^2)
+          +sum_n c_n(x_n^2-s_n)
+          +sum_(coprime a,b) h_ab(x_ab-x_a*x_b),
+where S is rational PSD, ell_n is affine with rational coefficients,
+t_n>=0, and c_n,h_ab are unrestricted rational constants.
+Squareful-zero relations may also have affine multipliers. The last two
+families are optional; all active relations must be listed and checked.
+At ordinary mu this proves F_u<=B exactly. The certificate must compare
+EVERY constant, linear, and quadratic coefficient, not evaluate the
+identity only at actual mu. PSD must be certified by exact rational LDL
+with zero-pivot compatibility, or an explicit rational Gram decomposition;
+rounded floating eigenvalues are not an admission rule.
+
+Proposed detector API
+ search_dense_completion(source,T,horizon,constraint_roster,budget)
+returns either a rational coefficient-completion certificate, an exact dual
+moment obstruction, or UNRESOLVED_RESOURCE. Its numerical optimizer is only
+a proposal generator. Independent verify_dense_completion reconstructs
+source F, divisor rosters, all multipliers and PSD exactly. Output scope:
+ VERIFIED_FINITE_DENSE_UPPER_BOUND, finite_u=u, bound=B,
+ complete_target_admitted, prime_edges_retained, active_constraint_counts,
+ multiplier_mass, Gram_trace, diagonal_budget,
+ uniform_original_source_bound_proved=False, RH_proved=False.
+Do not label a finite verified coefficient identity a uniform theorem.
+
+Practical LP-first search
+Use a fixed PSD dictionary: squares of sparse affine forms, source-delay
+forms, divisor-prefix forms, and pairs of shared cofactor forms. Their
+nonnegative coefficients make the completion search a rational linear
+program with free divisor multipliers. This is a finite restricted SOS
+cone, not the full SDP. Admit a returned LP solution only by exact replay.
+If necessary enlarge the dictionary using exact residual coefficient blocks;
+record every dictionary expansion, prior infeasibility, and resource limit.
+Do not silently treat restricted-cone infeasibility as true impossibility.
+
+Useful exact obstruction
+A dual witness is a rational moment matrix Y PSD with Y00=1, satisfying
+all admitted equalities after multiplication by each allowed affine
+coordinate, satisfying diagonal bounds and optional multiplicativity,
+and giving <F,Y> greater than proposed B. Independently verify every
+moment constraint and exact PSD. This rules out that specific certificate
+cone/constraint roster at that u. It is not a counterexample to actual mu.
+If only sparse multiplier slots are admitted, the dual must expose exactly
+those slots; it cannot claim a stronger full-ideal obstruction.
+
+Important uniqueness guard
+All complete divisor relations through H already uniquely determine x_n
+recursively. Adding all affine multipliers makes the finite quadratic
+problem essentially an exact arithmetic evaluation in disguise. A perfect
+finite certificate may therefore pay for all source signs through its
+coefficients. This is permissible finite evidence but not a new uniform
+cancellation mechanism. Log whether coefficients/solver objectives use
+actual mu, whether the multiplier grammar is geometry-only, and how the
+admitted divisor roster grows. A source-sign lookup encoded as free
+multipliers must not be presented as an all-scale discovered recurrence.
+Conversely, a deliberately partial roster has genuine freedom and can
+produce a useful dual witness; record which prime constraints are absent.
+
+Uniform proof obligation for a growing detector
+A uniform certificate requires a SYMBOLIC rule for S_u, ell_n,u, and other
+multipliers, complete coefficient equality for EVERY integer u, and a
+uniform upper bound for B(u). A finite table of certificates or stable
+rational fits proves none of these. An acceptable endpoint is B(u)<=C u^q
+with q<2, a contracting normalized child coefficient, and complete base.
+For081 r=3/2,q>=1, r*(floor(u/2)/u)^q<=3/4; this factor is paid arithmetic,
+but the dense signed upper law and source transfer are still unpaid.
+
+Avoid paying the PSD trace alone if diagonal constraints cancel signed
+terms: first coalesce the COMPLETE identity, then price the remaining
+nonnegative/known-diagonal part. The resulting trace/diagonal law needs a
+proof uniform in H and all growing divisor rosters. Do not import the
+square-root Mertens premise that the recurrence is intended to prove.
+
+Stronger shared-cofactor/count-error averaging alternative
+081 paid each pair's squarefree count error separately and summed absolute
+prices. An improved transform should retain the same square-divisor index
+across ALL pair labels. For N=ab and x=u/den,
+ Q_N(x)=sum_(d<=sqrt(x),gcd(d,N)=1) mu(d)
+           sum_(k|rad(N)) mu(k) floor(x/(d^2 k)).
+This finite equality includes unit and every coprimality divisor. Combine
+signed coefficients at a common (d,k,den) BEFORE taking absolute values.
+The result is an exact shared-cofactor residual functional rather than a
+sum of independent O(sqrt(x)) errors. A finite LP can choose balanced
+weights or zero-identity multipliers to minimize the whole coalesced
+floor-error norm while preserving the COMPLETE drift identity. Any
+removed density contribution must have an exact cancellation certificate;
+all complementary edges remain part of the target.
+
+For a growing uniform rule, prove a bound on the coalesced jump/floor-error
+budget, including the square-divisor tail. A reduced measured budget is
+finite feedback only. Coalescing by (d,k,den) also cannot arbitrarily merge
+mu(d) with label signs mu(a)mu(b): repeated/shared primes are constrained,
+not independent signs. An all-scale averaging estimate must pay their
+joint dependence. This is where divisor-multiplier completion can assist;
+it should not be replaced by independent sign boxes after coalescing.
+
+Resources and independence
+Never allocate a dense H-by-H matrix at the known million-scale horizon.
+Compile source low-rank forms and sparse constraint/multiplier incidences.
+A proposed full SDP must be rejected prospectively; use bounded blocks,
+streamed coefficient maps, or geometry-class templates with exact replay.
+Charge divisor edges, active affine-multiplier slots, square dictionary
+supports and all rational bit growth BEFORE allocation. A simple count of
+pairs or fixed bytes per Fraction is inadequate for arbitrary denominators.
+Any omitted block is an explicitly unpaid residual, not zero. Cap partial
+searches and return UNRESOLVED_RESOURCE without truncating certificates.
+The checker should reconstruct divisor incidences by its own factor logic
+and source coefficients by direct floor kernels, independently of producer
+quotient grouping. No arithmetic science is required to validate generic
+small synthetic coefficient identities or exact dual witnesses.
+
+Recommended082 deliverable
+Implement the LP-first dense completion and exact dual checker on bounded
+synthetic/fixed-source scales, preserving prime pairs; record its complete
+unpaid residual if the resource horizon is smaller than the source.
+Search geometry-only divisor/cofactor multiplier templates and retain
+useful exact dual obstructions. Promotion requires the symbolic growing
+coefficient identity and price law above, not another successful finite
+calibration. This proposal is a concrete detector specification, not an
+assertion that its uniform proof obligation can already be closed.

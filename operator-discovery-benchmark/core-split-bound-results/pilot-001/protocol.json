@@ -1,0 +1,26 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "general_analytic_prover": false,
+  "generator_model_calls": 0,
+  "hashes": false,
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_frame_bound_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "numerical_candidate_scores": 0,
+  "purpose": "machine search over splits, source applications and complete proof routes",
+  "runtime_limit_seconds": 1800,
+  "schema": "core-split-bound-run-v1",
+  "spec": {
+    "maximum_inverse_factors": 64,
+    "root_denominator_max": 24,
+    "root_denominator_min": 2,
+    "target": {
+      "energy_power": "0",
+      "log_degree": 0
+    }
+  },
+  "supplied_rule_review": "CORE_SPLIT_BOUND_RULE_REVIEW_016.txt",
+  "test_memory_limit_bytes": 2147483648,
+  "whole_signed_bound_proved": false
+}

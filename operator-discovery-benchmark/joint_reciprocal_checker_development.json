@@ -1,0 +1,14 @@
+{
+  "operations": 177523,
+  "runs": [
+    {
+      "test": "test_check_joint_reciprocal_correlation",
+      "returncode": 0,
+      "operations": 177523,
+      "tests": 7,
+      "runtime_seconds": 0.038,
+      "stdout": "SYNTHETIC_WORK module=test_check_joint_reciprocal_correlation operations=177523\n",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.038s\n\nOK\n"
+    }
+  ]
+}

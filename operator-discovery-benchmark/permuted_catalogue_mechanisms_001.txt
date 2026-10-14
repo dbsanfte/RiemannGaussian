@@ -1,0 +1,345 @@
+Fixed permuted catalogue: exact pair mechanisms and analytical attempt
+
+Scope and outcome
+Read only the fixed source catalogue in permuted_circuit_discovery.py. Its
+generator, arithmetic providers and tests were not executed; no numerical
+response artifacts, source tables, hashes or frozen files were inspected or
+modified. Ordinals below follow the source rule: baseline0, then12 words in
+each family. This new memo alone is edited. No cofinal full moment bound for
+actual M is proved.
+
+Useful proved results are exact conjugated pairings, interval-source and
+prime-complement decompositions, forced all-scale source-branch regimes,
+unconditionally bounded cyclic-translation padding, and bounded smoothness
+remainders for the direct adjacent-shear subfamily. Opposite prime phases
+have a square-supported core, but their unequal orders and the intervening
+permutation prevent a pure whole-word square fold. Every main prefix channel,
+source-domain complement and complete mixed energy remains.
+
+1. Catalogue indexing and operation order
+Let j=0,...,11 index MAPS as written in the source. Family IDs are
+ 1+j permutation_input; 13+j permutation_interleaving;
+ 25+j conjugated_convolution; 37+j shear_interleaving.
+Let U_pi f(n)=f(pi(n)), A_j be the shear, T_j the first convolution and V_j
+the final convolution defined by the catalogue's cyclic alpha/phase lists.
+For even j the shear word is exactly
+ rho=V_j U_pi^-1 A_j U_pi M.
+For odd j it is
+ rho=V_j U_pi^-1 A_j U_pi T_j M.
+The shear-family j0 explicitly REPLACES its listed translation map by the
+identity for calibration. j2's listed polynomial is already identity. There
+is no direction swap in the shear family's permutation conjugation.
+In conjugated_convolution only, j congruent1 mod3 swaps the forward/inverse
+permutation stages. These conventions matter for exact integer pairings.
+
+2. General conjugated pair and complete energy
+Fix block[m,2m), m=2^k, and original even n=m+r, r even. Put
+ a=pi(n), b=pi(n+1), t=c*phi(n).
+For even_from_odd, U_pi^-1 A U_pi changes f(a) to f(a)+t*f(b) and leaves
+f(b) unchanged. For odd_from_even it leaves f(a) and changes f(b) to
+f(b)+t*f(a). The phase is evaluated at the ORIGINAL even n, not at a or b
+after relabeling. The exact pair energy is respectively
+ f(a)^2+f(b)^2+c^2*f(b)^2+2c*phi(n)*f(a)*f(b),
+ f(a)^2+f(b)^2+c^2*f(a)^2+2c*phi(n)*f(a)*f(b).
+The positive c^2 term and untouched coordinate cannot be discarded.
+
+For f=M define the full signed interval I(a,b)=M(b)-M(a). If b>a it is
+sum_{a<l<=b}mu(l); if b<a it is minus sum_{b<l<=a}mu(l). Then the changed
+coordinate is (1+t)M(a)+t*I(a,b) in even_from_odd, or
+(1+t)M(a)+I(a,b) in odd_from_even. For arbitrary t, the former pair energy
+is exactly
+ [1+(1+t)^2]M(a)^2+2[1+t+t^2]M(a)I(a,b)
+ +(1+t^2)I(a,b)^2.
+The latter is
+ [1+(1+t)^2]M(a)^2+2(1+t)M(a)I(a,b)+I(a,b)^2.
+These formulas expose the actual complete interval correlation, rather than
+assuming anti-invariance under a reversible map.
+
+If f=T_j M, its difference has the exact additional lower-block complement
+ f(b)-f(a)=I(a,b)
+   +sum_{d|b,d>=2}u_j(d)M(b/d)
+   -sum_{d|a,d>=2}u_j(d)M(a/d).
+Every proper-divisor prefix here is below m. A short gap between a and b does
+not bound these complements by the gap; divisibility may change completely.
+
+The final V_j creates further lower-block terms. For the complete catalogue
+word the valid block identity is rho_block=Q_block M_block+G_block(M_<m),
+with Q the actual invertible conjugated pair matrix and G including ALL
+proper-divisor terms from both convolutions. The full target is
+ m^-2[||Q M_block||^2+||G||^2+2<Q M_block,G>].
+Neither a bounded interval component nor the raw pair's negative correlation
+supplies a bound for this complete output without paying these terms.
+
+3. Exact MAPS pair geometry
+All formulas below are for complete blocks, with k large enough for the
+specified bit positions. Smaller blocks use the same definitions with their
+declared identity/modulo conventions and are finite head exceptions.
+
+j0 / shear ID37: the calibration uses pi=identity, so (a,b)=(n,n+1).
+Its c=-1, phi=+1, direction even_from_odd is an adjacent difference plus
+an unchanged prefix coordinate. The translation listed in MAPS is used in
+the other families, not in this shear word.
+
+j1 / ID38: F(r)=3r+2r^2. Let s=F(r) mod m. The ordered endpoints are
+ a=m+s, b=m+(F(r+1) mod m),
+ b-a=4r+5-m*w,
+ w=floor(F(r+1)/m)-floor(F(r)/m).
+Retain the entire wrap term w. The map preserves parity of r, so a is even
+and b odd; their separation need not be1. This is an odd-j word with an
+inner T_{-1/2,constant(-1)}. Its shear is odd_from_even, c=1, phi=-1.
+The changed channel is the exact f(b)-f(a), including the displayed lower
+divisor complement; the retained channel is f(a).
+
+j2 / ID39: identity map. Adjacent pair, c=-1/2, even_from_odd, phase parity
+of floor(sqrt(n)). No inner T. Its cancellation is a variable-amplitude
+bounded-increment mechanism, with the full unchanged coordinate retained.
+
+j3 / ID40: xor all bits, pi(n)=3m-1-n. It maps an original even/odd pair
+to adjacent odd/even endpoints with a=b+1. The shear direction therefore
+flips in arithmetic even/odd coordinates. It has an inner T (alpha=-1/6,
+prime phase parity of cube root), c=1/2 and the same cube-root parity phase.
+The adjacent-M smoothness theorem cannot be applied to this inner T output.
+
+j4 / ID41: xor top bit, mask m/2. It takes an even/odd pair to an adjacent
+even/odd pair in the other half of the block, b=a+1. No inner T. Its phase
+at the original even n is the residue3 sign, c=-1/3. After conjugation this
+is still an adjacent-prefix shear, with phase relabeled by the half exchange.
+
+j5 / ID42: xor alternating bits includes bit0. It maps an even/odd pair to
+adjacent odd/even endpoints, a=b+1. Inner T has alpha=1/3 and residue5 prime
+phase. Its shear is odd_from_even, c=1/3, residue5 phase at original even n.
+The orientation flips, but no large separation is created by this conjugation.
+In general xor by mask A maps r,r+1 with r even to a pair differing by+1
+if mask bit0=0, and by-1 if mask bit0=1; every other bit is identical.
+
+j6 / ID43: bit reversal. If r=2s, then
+ a=m+rev_{k-1}(s), b=a+m/2.
+As s varies these pair the entire lower half with the upper half, at exact
+distance m/2. No inner T. The shear is even_from_odd, c=-1, and
+ phi(n)=source_sign(mu(n-floor(sqrt(n)))).
+The full pair is M(a)-phi(n)M(a+m/2), with unchanged M(a+m/2).
+Its cross term samples source sign at a bit-reversed PREIMAGE, not an endpoint
+or a multiplicative multiple of the interval. Both zero/squareful and signed
+source sectors remain: phi(n)=1-mu(h(n))^2+mu(h(n)).
+
+j7 / ID44: rotation LEFT1. Rotating bit0 moves it to bit1, so
+ b=a+2, with bit1 of a-m equal0. Pairs are the two length2 gaps inside
+each four-point group. This is short-gap, not a far-half mechanism. There
+IS an inner T (alpha=1, prime phase source sign of floor cube root). The
+shear is odd_from_even, c=1, phase source sign of floor cube root at even n.
+On phi=-1 it produces f(b)-f(a); its fresh component is the two-source sum
+mu(a+1)+mu(a+2), plus the complete lower-divisor difference. On phi=+1 it
+adds the two prefix values instead. No phase sector may be omitted.
+
+j8 / ID45: rotation LEFT(-2), equivalently right2. For k>=3, bit0 moves
+to bit k-2 and
+ b=a+m/4, with bit k-2 of a-m equal0.
+The quarter pairs connect first to second and third to fourth quarter.
+No inner T. Its c=-1/2, phi=+1, direction even_from_odd exposes the actual
+signed quarter interval I(a,a+m/4), retaining the full other prefix.
+
+j9 / ID46: compose F(r)=1+3r+2r^2 then xor alternating mask A. Put
+ s0=F(r) mod m, s1=F(r+1) mod m.
+Here s1-s0=4r+5-m*w with the same exact wrap formula as above. The actual
+pair separation is
+ b-a=(s1-s0)-2[(s1 bitand A)-(s0 bitand A)].
+This follows from z xor A=z+A-2(z bitand A). No fixed short separation
+follows. The polynomial flips parity and the xor flips it back, so a is
+even and b odd. Inner T has alpha=-1/2, prime phase constant(-1). The shear
+is odd_from_even, c=1/2, phi=-1, hence effective coefficient -1/2.
+
+j10 / ID47: choose bit reversal for positive block-base phase and xor all
+for negative phase. The branch phase is source sign of
+ h(m)=m-floor(sqrt(m)). For every EVEN k=2l with l>=2,
+ h(m)=2^l(2^l-1), divisible by4, so mu(h(m))=0 and the sign is+1.
+Thus the bit-reversal, half-block pair branch is FORCED on every even k>=4.
+On a negative branch it instead makes adjacent orientation-reversed pairs.
+Other odd k cannot be classified from this square-factor identity alone.
+The shear is c=-1/3, even_from_odd, phase parity of floor sqrt at original
+even n; there is no inner T. Adjacent-branch smoothing does not control the
+far branch, which occurs on infinitely many mandatory scales.
+
+j11 / ID48: choose rotation LEFT1 for positive phase and F(r)=1-r+2r^2
+for negative phase. The block-base phase is source sign of floor(m^(1/3)).
+If k=3l with l>=2, that argument is exactly2^l, divisible by4. Its Mobius
+value is0, so the rotation branch is FORCED for every k multiple3>=6.
+There its conjugated pairs are distance2. In the polynomial branch,
+ b-a=4r+1-m*w,
+ w=floor(F(r+1)/m)-floor(F(r)/m),
+and parity is reversed. No full-block short-gap bound follows. This is an
+odd-j word with inner T alpha=-1/6, prime cube-root parity; shear c=1/3,
+odd_from_even and cube-root parity phase. The forced short branch still
+does not remove its lower-divisor increment complement.
+
+Both source choices read indices BELOW m and are constant throughout the
+block. The square-factor deductions are symbolic source laws, not numerical
+source evaluations. Branch behavior on a finite set of scales cannot replace
+these cofinal effective-regime obligations.
+
+4. Proved direct-prefix smoothness components and their limitations
+For adjacent actual values x=M(e), y=M(e+1), w=mu(e+1), |w|<=1, a full shear
+with t=c*psi(e) has pair energy
+ kappa(t)*(x^2+y^2)+c^2*y*w-(t+c^2/2)*w^2
+in even_from_odd, or
+ kappa(t)*(x^2+y^2)-c^2*x*w-(t+c^2/2)*w^2
+in odd_from_even, where kappa(t)=1+t+t^2/2>=1/2. Summing the remainder and
+dividing by X^2 gives O_c(1), uniformly over scales, using only |M(n)|<=n.
+Orientation reversal simply swaps these two cases and relabels the unit phase.
+
+IDs37,39,41, and ID47 only on its negative xor branch, therefore have an
+exact direct-prefix amplitude-plus-bounded-channel decomposition. On a
+changed endpoint a paired with adjacent b, write
+ M(a)+t M(b)=(1+t)M(a)+t[M(b)-M(a)].
+The second term has magnitude at most |c| and the untouched endpoint remains.
+The main multiplier is positive and bounded away from0 for c=-1/2 or-1/3.
+For37, c=-1 annihilates the changed endpoint's common-prefix part but leaves
+ALL odd prefix coordinates. In particular its raw full shear energy is
+ E_M(X)/2+O(1), a relation valid for any bounded-increment prefix, not a
+special Mobius cancellation. IDs39/41 obey the analogous complete kappa
+weighting of prefix energy and its positive retained complement.
+
+There is a useful unconditional estimate even AFTER the final V_j. Each
+catalogue final convolution has |alpha|<=1, hence |a_alpha,chi(d)|<=1.
+For a bounded component b(n),
+ |V_j b(n)|<=||b||_infinity*tau(n).
+For every eta>0, tau(n)<=C_eta n^eta: for sufficiently large primes,
+l+1<=2^l<=p^(eta*l), and the finitely many smaller primes contribute a finite
+product of sup_l (l+1)/p^(eta*l). Consequently
+ E_{V_j b}(X)<=C_eta'||b||_infinity^2 X^(-1+2eta).
+This is a proved power-decaying component bound. It is NOT a bound on the
+main V_j[d(n)M(n)] channel or its mixed square with V_j b. For37 specifically,
+ rho=V_0[1_{odd}M]+V_0[-1_{even}mu(n+1)].
+The second channel has the just-proved bound. The first retains original
+prefix energy up to a bounded adjacent-source complement, and is unresolved.
+Replacing the whole output by the bounded difference channel would discard
+its recoverable target.
+
+Inner T words40/42/44/46/48 do not inherit this bounded-increment conclusion.
+Their fresh short differences, when short, are bounded source sums plus
+unbounded-as-yet lower-prefix complements. The exact difference formula in
+section2 is the honest analytical obligation. Far direct words43/45 and
+the far branch47 instead require long-interval/prefix covariance estimates.
+
+5. Full source-complement identity for every far interval
+For any prime p define C_p(t)=sum_{j<=t,p does not divide j}mu(j), with floor
+extension. The actual source law gives exactly
+ M(t)=C_p(t)-C_p(floor(t/p)).
+Hence for arbitrary integer endpoints a,b in the same dyadic block,
+ I(a,b)=[C_p(b)-C_p(a)]
+        -[C_p(floor(b/p))-C_p(floor(a/p))].
+For p>=2 the latter endpoints are below the block. The former is a complete
+FRESH p-nonmultiple interval. For p=2 it is an odd-source interval. This is
+a useful signed decomposition of bit-reversal and quarter-rotation intervals,
+but supplies no uniform small bound for the fresh nonmultiple component.
+
+Substituting it into the pair formulas yields every fresh/fresh, fresh/past
+and past/past term, as well as its mixed products with the retained endpoint
+M(a) or M(b). No nonmultiple source block is discarded, and no assumption
+of independent signs or an RH-strength bound for C_p is introduced. Polynomial
+wraps merely change the signed endpoints in this same identity; their wrap
+intervals are full original-source complements, not removable residues.
+
+There is also a useful exact source-sign refinement for ID43. Its original
+phase index is even n=2s. Write q=floor(sqrt(2s)). If q=2l is even, then
+ h(n)=2(s-l),
+ mu(h(n))=-mu(s-l)1_{s-l odd},
+ phi(n)=1-1_{s-l odd}mu(s-l)^2-1_{s-l odd}mu(s-l).
+The queried source on this sector is strictly below the current block, since
+s<=m-1. If q=2l+1 is odd, the complete complementary sector instead has
+h(n)=2(s-l)-1, an odd source index near n, which can lie in the fresh block.
+Those nonmultiple signs are not reduced by the prime2 law. This exact split may be useful
+for a signed proof, but neither its latter source correlation nor its products
+with the bit-reversed endpoints are estimated here. Counting root transitions
+or retaining only the reducible sector would omit the required complement.
+
+6. A separate proved cyclic-translation padding family
+In the other families map j0 really is r->r+1 mod m. Acting DIRECTLY on M,
+ delta(n)=M(pi(n))-M(n)
+is mu(n+1) at the m-1 nonwrap coordinates. At n=2m-1 it is the complete
+negative interval sum from m+1 through2m-1, of magnitude at most m-1.
+Therefore E_delta(m)<=(m-1+(m-1)^2)/m^2=1-1/m.
+This retains the one long wrap exactly; maximum-displacement bounds alone
+would miss this useful uniform estimate. More generally a fixed block shift
+b, 0<=b<m, has
+ E_delta(m)<=b(m-b)/m<=b,
+by summing the squared b-distance and (m-b)-distance source bounds over
+their respective m-b and b coordinates. Fixed finitely many smaller blocks
+are harmless retained head cases.
+
+Thus delta has finite H_sigma for every sigma>1/2 unconditionally. Any fixed
+admitted circuit subsequently acting on delta preserves that property. In
+particular permutation_input ID1 is
+ T_{-1,1}M+T_{-1,1}delta,
+with an unconditionally critical-class-finite padding term. This proves a
+real component estimate, but gives no bound for the first term, and no
+prime-specific mechanism for the translation. This conclusion does NOT apply
+to cyclic translation acting on T M in an interleaving or conjugation: the
+divisor-transformed sequence's increments are not bounded by1.
+
+7. Opposite-prime-phase cores and square support
+The interleaving family sets the second prime phase to -chi for j=0,3,6,9,
+namely IDs13,16,19,22. Their (alpha,beta) pairs are respectively
+ (-1,-1/6), (-1/6,1/2), (1/2,-1/2), (-1/2,1/6).
+None has alpha=beta. The local exact identity without a permutation is
+ (1-chi*z)^(-alpha)(1+chi*z)^(-beta)
+ =(1-chi*z)^(-(alpha-beta))(1-chi^2*z^2)^(-beta).
+All catalogue prime phases are unit signs, so chi(p)^2=1. The second factor
+defines a SOURCE-FREE square-supported convolution Q_beta, with coefficient
+a_beta,1(e) at denominator e^2 and zero at nonsquares. Thus
+ T_beta,-chi T_alpha,chi=T_alpha-beta,chi Q_beta.
+It is a pure source-erasing square kernel only when alpha=beta, which does
+not occur in these catalogue words. Here the remaining orders alpha-beta
+are -5/6,-2/3,1,-2/3.
+
+The square channel has a useful unconditional critical norm: its forward
+and inverse norm is <=zeta(2sigma+1)^|beta|<=zeta(2)^|beta| for sigma>=1/2.
+This uses genuine square-supported density, not a floor-quotient substitution.
+It controls that component operator uniformly at the critical endpoint but
+does not bound its input's unknown moment.
+
+The actual catalogue contains an intervening U_pi. Its exact split is
+ rho=T_beta,-chi U_pi T_alpha,chi M
+     =U_pi C+D,
+ C=T_alpha-beta,chi Q_beta M,
+ D=[T_beta,-chi,U_pi]T_alpha,chi M.
+The complete moment is E_C+E_D+2X^-2<U_pi C,D> on complete dyadic blocks.
+The commutator has both unmatched divisor domains
+ sum_{d|n}v(d)f(pi(n/d))-sum_{e|pi(n)}v(e)f(pi(n)/e).
+It can restore nonsquare path support. No square-fold identity through pi,
+vanishing defect, favorable cross sign, or full moment estimate follows.
+Identity map j2 is not among the opposite-phase cases.
+
+8. Conjugated-convolution aliases and the fixed full gate
+For every even j in the conjugated_convolution family, the final u is exactly
+the inverse of t at the same prime source. The word is a reversible group
+commutator between T_j and U_pi (with orientation changed at j congruent1
+mod3), rather than an adjacent inverse pair. Its diagonal dyadic block is
+identity, with the full lower-block defect retained. At j2/ID27 pi=identity,
+so normalization removes both permutation stages and the exact T inverse
+pair: this is a baseline alias. No corresponding identity is asserted for
+the other maps merely from their bijectivity or finite small-block coincidences.
+
+The source catalogue's normalizer removes only authorized exact inverse/merge
+aliases and terminal complete-dyadic energy aliases. Irregular diagnostic
+intervals need not agree with raw terminal-permutation words. These exact
+algebraic distinctions do not alter a selected formula or selection protocol.
+
+For one fixed complete normalized observer the actual proof gate remains:
+cofinally many q>=2, finite Cq independent of every dyadic X>=32, and
+ E_rho(X)<=Cq ceil(X^(1/q)).
+All the pair, wrap, prime-nonmultiple, proper-divisor and mixed-square terms
+above remain in this rho. Smoothness, unconditional bounded padding, critical
+square support and unit inverses do not prove that gate. Its reviewed weighted
+recovery/Mellin bridge would imply ordinary RH if it were established.
+
+Final mathematical conclusion
+The strongest proved new simplifications are the direct adjacent shear's
+amplitude-plus-power-decaying channel, translation's full-wrap bounded energy,
+forced source-choice regimes, and exact square-supported cores. The genuine
+new unresolved signed mechanisms are far-interval/prefix correlations in43/45
+and the far branch47, and proper-divisor increment complements in the odd-j
+shear words. Exact prime laws decompose those intervals into fresh nonmultiple
+source and past compensation, but do not bound the former. This identifies
+specific complete analytical obligations without an assumed cancellation law,
+an optimizer, a favorite expected outcome or a new numerical experiment.
+Reviewer numerical/test/source-probe work is zero; frozen files unchanged.

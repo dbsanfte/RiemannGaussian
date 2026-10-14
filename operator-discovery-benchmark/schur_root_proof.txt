@@ -1,0 +1,64 @@
+PROOF OF THE SCHUR DISK AND ANALYTIC TAIL CERTIFICATES
+
+This is a universal mathematical argument with implementation certificates
+computed by Arb balls; it is not a theorem-prover certificate. Each root
+correction uses the coefficients and analytic polynomial-growth tail proved
+in mixed_root_proofs.txt and carry_zero_proof.txt. The first root coefficients
+are rational and computed by two different, exactly agreeing algorithms:
+integer-binomial valuation kernels, and transported ordinary convolution.
+
+1. REAL POLYNOMIAL SCHUR STEP
+
+Let P(z)=1+a_1*z+...+a_d*z^d have real coefficients and put a=a_d.
+Define P*(z)=z^d*P(1/z), the reversed polynomial. If |a|<1, let
+  Q(z)=(P(z)-a*P*(z))/(1-a^2).
+The degree is at most d-1, and the constant is exactly 1. On |z|=1,
+P*(z)=z^d*conjugate(P(z)), so |P*|=|P|. If Q has no zeros in the closed
+unit disk, then P has none on the boundary: a boundary zero of P would
+also be a zero of P* and Q. Since |a*P*|<|P| on the boundary, Rouche's
+theorem then shows P and (1-a^2)*Q have the same number of interior zeros.
+That number is zero. Starting at the final constant polynomial and working
+back through this argument proves the certificate for the original P.
+
+The same identity gives a quantitative boundary lower bound:
+  (1-a^2)*|Q|=|P-a*P*|<=(1+|a|)*|P|,
+hence |P|>=(1-|a|)*|Q| on the unit circle. Multiplying these inequalities
+over the reduction steps yields
+  min_{|z|=1}|P(z)| >= product_steps (1-|a_step|).
+The implementation uses rigorously enclosed absolute upper bounds cap_step
+with cap_step<1 and a ball enclosure of product_steps(1-cap_step). Its
+lower endpoint is therefore a valid lower bound for the exact polynomial.
+
+2. TRUNCATION AND THE FULL LOCAL FUNCTION
+
+The local correction F(x) is analytic for |x|<1, by the coefficient-growth
+proof. For a rational r<1, let P(z) be its exact degree-m Taylor polynomial
+evaluated at x=r*z. The earlier tail theorem gives an exact rational T with
+  sup_{|z|=1}|F(r*z)-P(z)|<=T.
+If the certified Schur boundary lower bound exceeds T, Rouche's theorem
+implies F(r*z) has the same number of zeros in |z|<1 as P, namely zero.
+The strict domination also rules out boundary zeros. This certifies a
+whole complex disk, not a collection of sampled angles or numerical roots.
+
+3. ANALYTIC ZETA CONNECTION
+
+All records use r=71/100>1/sqrt(2). If Re(s)>1/2 then for every prime p,
+  |p^(-s)|<1/sqrt(p)<=1/sqrt(2)<r.
+A passing disk certificate therefore rules out zeros of every local factor
+of the correction Euler product on the entire half-plane Re(s)>1/2. The
+compactly uniform absolute product convergence proved earlier then shows
+the full correction R(s) is holomorphic and nonzero there. The corresponding
+root transform H(s)=zeta(s)*R(s) consequently has the same zeros there as
+zeta, including their multiplicities.
+
+A failed bound would remain unresolved. The approximate polynomial roots
+used during exploration were not promoted to analytic zeros. The certificate
+uses ball arithmetic and an explicit tail for the infinite function.
+
+4. ORIGINALITY LIMIT
+
+Schur reduction, Rouche's theorem, weighted-convolution transports and
+fractional divisor coefficients are classical. Their application here yields
+proved zero-preserving root transforms, but that does not establish that
+the operators or the specific analytic statements are historically new.
+The registry retains the novelty question separately.

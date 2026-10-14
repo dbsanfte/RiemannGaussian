@@ -1,0 +1,284 @@
+{
+  "RH_proved": false,
+  "byte_replay_guaranteed": false,
+  "calibration": "supplied coprime cycle x2*x3*x6; generic basis and synthesis",
+  "constants": [
+    1,
+    4
+  ],
+  "controls": {
+    "P": [
+      2
+    ],
+    "pair_limit": 8,
+    "row_limit": 64,
+    "scales": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "development_cases": [
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 1,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 2,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 1,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "atomic_local",
+      "q": 6,
+      "target": "c"
+    },
+    {
+      "C": 4,
+      "X": 2,
+      "mode": "grouped_cycles",
+      "q": 6,
+      "target": "c"
+    }
+  ],
+  "development_scales": [
+    1,
+    2
+  ],
+  "final_fixed_scale": 4,
+  "final_odd_choices": [
+    5,
+    7
+  ],
+  "final_selection_rule": "canonical ordered development case+template hashes; solver diagnostics/outcomes/time excluded",
+  "final_semantics": "fresh synthesis learns new weights from a frozen template generator at new horizons; new-instance finite feasibility ONLY, not learned-coefficient transfer or all-scale generalization",
+  "global_bound_proved": false,
+  "levels": [
+    2,
+    6
+  ],
+  "limits": {
+    "max_coefficient_bits": 2048,
+    "max_columns": 1024,
+    "max_denominator": 1000000,
+    "max_horizon": 4096,
+    "max_monomials": 10000,
+    "max_operations": 200000000,
+    "time_limit": 10
+  },
+  "modes": [
+    "atomic_local",
+    "grouped_cycles"
+  ],
+  "schema": 1,
+  "targets": [
+    "mu",
+    "c"
+  ],
+  "template_generator": "complete symbolic D-Delta; all original coefficient variables, no actual response arrays"
+}

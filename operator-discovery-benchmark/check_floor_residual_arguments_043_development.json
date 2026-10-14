@@ -1,0 +1,44 @@
+{
+  "owner": "check_floor_residual_arguments_043",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_043",
+      "returncode": 1,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_043 operations=168204 checker_operations=147274 fixture_operations=20930 elapsed_seconds=0.08957763196667656\n",
+      "stderr": ".........E..........\n======================================================================\nERROR: test_independent_heap_head_vs_direct_rational_cells (test_check_floor_residual_arguments_043.FloorProofAdmission)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_floor_residual_arguments_043.py\", line 119, in test_independent_heap_head_vs_direct_rational_cells\n    c=fixture(p,H);out=V.verify_norm(p,c,meter=METER)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_floor_residual_arguments_043.py\", line 274, in verify_norm\n    if not _eq(certificate,expected):raise ValueError('altered norm/tail/domain/scope certificate')\nValueError: altered norm/tail/domain/scope certificate\n\n----------------------------------------------------------------------\nRan 20 tests in 0.089s\n\nFAILED (errors=1)\n",
+      "operations": 168204,
+      "elapsed_seconds": 0.1535653059836477,
+      "tests": 20,
+      "peak_rss_KiB": 28656
+    },
+    {
+      "command": "synthetic empty-program certificate diagnostic (no verification suite)",
+      "returncode": 0,
+      "stdout": "Independent producer diagnostic for H=0: exact tail upper=1; counts.operations=1797.",
+      "stderr": "",
+      "operations": 1797,
+      "elapsed_seconds": 4.2882e-05,
+      "tests": 0,
+      "purpose": "Identify integer empty-sum division producing checker float 1.0."
+    },
+    {
+      "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_043.FloorProofAdmission.test_independent_heap_head_vs_direct_rational_cells",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_043 operations=31323 checker_operations=22630 fixture_operations=8693 elapsed_seconds=0.007499116996768862\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nOK\n",
+      "operations": 31323,
+      "elapsed_seconds": 0.07656691398005933,
+      "tests": 1,
+      "peak_rss_KiB": 28372,
+      "purpose": "Only affected exact empty-program tail fix regression."
+    }
+  ],
+  "operations": 201324,
+  "edits_stopped": true,
+  "source_observations": 0,
+  "scope": "synthetic pure floor and affine forcing programs; one owned suite; no earlier-suite rerun",
+  "external_pre_suite_integration_failure": "Root preserves decimal Arb display/endpoints mismatch and corrected focused integrations in floor_residual_runner_043_development.json; not an owned-suite run.",
+  "tests_distinct": 20,
+  "test_invocations": 21,
+  "fix": "Use exact Fraction seeds for empty indicator/floor sums in M; avoid float tail in H=0 empty program."
+}

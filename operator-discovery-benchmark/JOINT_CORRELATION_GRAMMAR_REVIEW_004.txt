@@ -1,0 +1,432 @@
+ALL-VALUATION PRIME DIFFERENCES AND JOINT LOG-DIVISOR FORCING
+
+Scope and result
+----------------
+This independent analytical review takes
+candidate10_centered_reciprocal_obligation.json as its open input. Its primary
+target is the joined high-product off-diagonal covariance O_X, with a proved
+paid recovery remainder. No independent sharp-band bound is imposed. Only
+this new file is written; there are no source runs, numerical studies, tests,
+hashes, old/frozen edits or subagents. No finite observation supplies an
+asymptotic premise. The original Mobius source, all prime valuations, gcd
+overlaps, complete center and unit are retained.
+
+The useful constructions proved here are:
+  (i) exact prime insertion annihilators at ALL valuations, with a uniformly
+      paid same-prime/unit remainder;
+ (ii) a distinct-prime divided difference exposing a joint composite/center
+      state, with its actual prime-gap inverse cost;
+(iii) an all-prime logarithmic source recurrence, genuinely using smaller
+      coefficient arguments, lifted exactly to the WHOLE prefix-square
+      kernel rather than a diagonal coefficient norm;
+ (iv) an exact mixed-channel commutator splitting a true prime-power weight
+      gain from an unattenuated prefix-boundary covariance.
+These give an enumerable source-specific operator-plus-forcing language.
+They do NOT prove the remaining signed forcing estimate, a strict joint
+moment contraction, or RH. The missing symmetric mode and boundary costs
+are explicit. No source identity is admitted as a bound merely because its
+coefficient arguments are smaller.
+
+1. Full target, center and paid recovery
+----------------------------------------
+Put u=1/3, v=2/3, beta=9/2,
+  U=mu*k_u, V=mu*k_v, B=U*V, k_w(n)=n^(-w),
+  p=beta*(U-delta)*(V-delta), a=p-d,
+where * is Dirichlet convolution, delta(1)=1, and d is the COMPLETE original
+same-prime-power contribution. Thus a vanishes at the unit and every prime
+power. Neither p nor d is replaced by its squarefree restriction.
+
+The fixed leading center is m*n^(2/3), where
+  m=(3/2)*beta*[zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)]>0,
+  R_u=(2/3)*m,
+  b(n)=a(n)-m*[n^(2/3)-(n-1)^(2/3)],
+  tilde_b(n)=a(n)-R_u*k_u(n).
+The unit tilde_b(1)=-R_u is retained. Write R(n)=sum_(h<=n)b(h) and
+T(n)=sum_(h<=n)tilde_b(h), both zero at n=0. The positive summable correction
+  e(n)=tilde_b(n)-b(n), sum_n e(n)=E0=-R_u*zeta(1/3)>0
+and all its finite cross terms are part of recovery.
+
+For integer dyadic X>=1, N=2X-1,
+  O_X=(2/X^2)*sum_(n=X)^N sum_(h<k<=n,hk>X)tilde_b(h)tilde_b(k).
+Equivalently let the symmetric kernel be
+  K_X(h,k)=W_X(h,k)*1_(h!=k)*1_(hk>X),
+  W_X(h,k)=max(0,2X-max(X,h,k));
+then O_X=X^(-2)*sum_(h,k>=1)tilde_b(h)tilde_b(k)K_X(h,k).
+Its support automatically has h,k<=N. No band or arithmetic/center sector
+is required to be positive independently.
+
+With K0=beta+m, the proved exact recovery is
+  |E_R(X)-O_X|<=B0(X),
+  B0(X)=3*K0^2*(1+log N)^3
+                +4*E0*K0*(1+log(2X))+E0^2/X,
+  E_R(X)=X^(-2)*sum_(n=X)^N R(n)^2.                (1.1)
+Low products, the high-product diagonal and the complete center correction
+are the paid complement. Hence O_X>=-B0(X) unconditionally, and only the
+one-sided lemma O_X<=C_epsilon X^epsilon for every epsilon>0 remains.
+This lemma is cofinal-equivalent to the full target up to (1.1). Rebranding
+it a new auxiliary is not proof progress. The operator constructions below
+are intended to expose an independently attackable arithmetic forcing.
+
+The exact reciprocal split uses H=floor(sqrt X):
+  O_X=(2/X^2)*sum_(n=X)^N [
+       sum_(h<=H)tilde_b(h)*I(floor(X/h),n)
+          +sum_(H<h<=n)tilde_b(h)*I(h,n)],
+  I(A,B)=sum_(A<k<=B)tilde_b(k), zero for B<=A.     (1.2)
+The second triangle equals [T(n)-T(H)]^2 minus its diagonal. It retains
+current-scale T(n); it cannot be called a smaller-scale paid remainder.
+
+2. Exact fixed-prime insertion, including every valuation
+----------------------------------------------------------
+For an actual prime q, t=q^(-u), define
+  I_q f(n)=f(qn), E_q f(n)=1_(q does not divide n)*f(n).
+These are coefficient insertion and coefficient restriction, not prefix
+dilation. Their distinction matters when constructing the kernel pullback.
+The actual local Euler series are
+  U_q(z)=(1-z)/(1-tz), V_q(z)=(1-z)/(1-t^2z),
+  B_q(z)=(1-z)^2/[(1-tz)(1-t^2z)].
+The raw first U,V rows are t-1,t^2-1. The B row is t+t^2-2; its second
+row is 1-2t-t^2+t^3+t^4. At every n, WITHOUT an assumed q-free n,
+  (I_q-t)U=-E_q U,
+  (I_q-t^2)V=-E_q V,
+  (I_q-t)(I_q-t^2)B=E_q B.                        (2.1)
+For U,V, verify the initial row and the subsequent geometric ratios. For
+B, its second-order recurrence has a single residual 1 at valuation zero
+and zero at all higher valuations. Multiplicativity on the remaining
+cofactor proves (2.1). Thus gcd overlaps and repeated powers are explicit,
+not a sector silently discarded by a first-row substitution.
+
+Let L_q=(I_q-t)(I_q-t^2). Since I_q k_u=t*k_u, the smooth center is killed
+EXACTLY. Also L_q delta=t^3 delta. Therefore
+  L_q tilde_b=beta E_q(B-t^2 U-t V)+r_q,
+  r_q=beta*t^3 delta-L_q d.                       (2.2)
+The unit matters. At n=1, the q-free source part and r_q cancel consistently
+with a(q^e)=0; neither term is independently the whole source.
+
+There is a useful unconditional UNIFORM remainder. The same-prime d is
+nonnegative, its complete mass at each prime is beta, and
+D(x)=sum_(n<=x)d(n)<=beta*sqrt(x). The sequences d(qn) and d(q^2 n) are
+supported on the q-power chain and each has total mass at most beta. Thus
+  sum_(n<=x)|r_q(n)|
+      <=beta*[1+(t+t^2)+t^3+t^3*sqrt(x)]
+      <=beta*(4+sqrt(x)).                         (2.3)
+The first bound separately includes the shifted chains, the unit, and the
+unshifted d part; it does not remove other-prime d(n). For the prefix of
+r_q the dyadic squared cost is at most
+  beta^2*(4+sqrt(2))^2                            (2.4)
+for every X>=1 and every actual prime q. This is a paid source remainder
+with no companion norm hypothesis.
+
+The remaining E_q(B-t^2 U-t V) is CURRENT-scale restricted source data.
+It has not been bounded here. Furthermore L_q has a large generic kernel:
+on each q-free chain H, any t^e F(H)+t^(2e)G(H) at n=q^e H is annihilated.
+F,G may vary over all q-free H. Removing the one known global center does
+not remove every such q-free mode. A full-target recovery from (2.2) must
+retain these initial chain rows or use a separately proved joint forcing.
+No uniformly bounded inverse on arbitrary full source prefixes is claimed.
+
+3. Actual-prime divided differences and composite/center coupling
+-----------------------------------------------------------------
+Let q,r be distinct actual primes, t_q=q^(-u), t_r=r^(-u), and impose the
+EXACT domain gcd(H,qr)=1. Then
+  [tilde_b(qH)-tilde_b(rH)]/(t_q-t_r)
+     =beta*[(1+t_q+t_r)B(H)-U(H)-(t_q+t_r)V(H)]
+                                                -R_u*k_u(H). (3.1)
+This holds at H=1, where both sides are -R_u. On H>=2, qH and rH have
+at least two distinct prime factors, so d(qH)=d(rH)=0. If H itself is a
+prime power, its ORIGINAL d(H) still has to be subtracted when recovering
+tilde_b(H). No false inference about d(H) is made from d(qH)=0.
+
+Proof: the first-row factors for B,U,V are t+t^2-2,t-1,t^2-1, respectively.
+Subtract the q and r values, use t_q^2-t_r^2=(t_q-t_r)(t_q+t_r), and retain
+the pure-power center. This is an actual signed/composite identity, not
+selection of a coefficient to optimize observed data.
+
+Define the joint states
+  F=beta*(B-U)-R_u*k_u,
+  G=beta*(B-V).
+Equation (3.1) is F(H)+(t_q+t_r)G(H). It is affine in the actual-prime
+parameter. A second divided difference in that parameter isolates G;
+the intercept isolates F. The original source is exactly
+  tilde_b=F-beta*V+beta*delta-d.                   (3.2)
+All complements in (3.2) are retained. In particular V is not paid just
+because its positive real pole is at 1/3.
+
+The known analytic factorization of F is
+  F(s)=zeta(s+u)*[beta*zeta(s+v)/zeta(s)^2
+                                     -beta/zeta(s)-R_u].
+The bracket has a local analytic zero at s=2/3 by the fixed residue choice.
+It does not thereby have a convergent coefficient series at that line or
+a uniform finite reciprocal-interval remainder bound. That missing tail is
+exactly the warning in the open input, not a new hypothesis supplied here.
+
+The divided-difference inverse cost must also be preserved. For q>r,
+the mean-value theorem gives
+  (q-r)/(3*q^(4/3))<=t_r-t_q<=(q-r)/(3*r^(4/3)),
+so its reciprocal lies between
+  3*r^(4/3)/(q-r) and 3*q^(4/3)/(q-r).             (3.3)
+No prime-gap estimate is assumed. A small raw exchange numerator can be
+mere attenuation by this denominator. Normalizing it is not a free gain.
+Repeated q=r requires the all-valuation operator (2.1), not division by zero.
+Terms with q|H or r|H must use their actual valuation rows; terms with qH
+or rH outside the original prefix are separate pullback complements.
+
+There is a particularly clear dependency guard for V. If M_mu is the
+ordinary Mobius prefix, then
+  V=mu*k_v, mu=V*M_v, M_v(n)=mu(n)n^(-v).
+For the finite step-prefix norm
+  ||F||_(sigma,T)^2=int_1^T |F(x)|^2*x^(-2sigma-1)dx,
+each direction has norm at most
+zeta(v+sigma), since dilation by d costs d^(-sigma), and v+sigma>=7/6>1
+for sigma>=1/2. Thus the raw V critical prefix norm is uniformly comparable
+to the ordinary Mobius prefix norm. Subtracting its n^(1/3) pole is paid
+in that norm. Independently assuming the needed cofinal V bound would
+therefore assume an RH-equivalent companion bound; it cannot close (3.2)
+without a joint, independently justified arithmetic argument.
+
+4. All-prime log-divisor coupling with complete units
+-----------------------------------------------------
+Let L f(n)=log(n)f(n), an exact derivation for Dirichlet convolution:
+  L(f*g)=(Lf)*g+f*(Lg).
+The finite coefficient identities Lmu=-mu*Lambda and
+Lk_w=k_w*Lambda_w, where Lambda_w(d)=Lambda(d)d^(-w), give
+  LU=U*J_u, LV=V*J_v, LB=B*(J_u+J_v),
+  J_u(d)=Lambda(d)(d^(-u)-1),
+  J_v(d)=Lambda(d)(d^(-v)-1).                     (4.1)
+Lambda includes EVERY prime power; d=1 contributes zero. These can also
+be proved directly from the local Euler factors, so no infinite-series
+exchange or unproved analytic continuation is needed for finite n.
+
+Use the source state
+  Z=(p,beta U,beta V,R_u*k_u,beta delta),
+  ell=(1,0,0,-1,0), f_p=ell Z=p-R_u*k_u.
+For a prime power d let
+  l_u=d^(-u)-1, l_v=d^(-v)-1, l_B=l_u+l_v.
+Define the exact matrix
+  A_d = [l_B l_v l_u  0       -l_B]
+        [0   l_u 0    0        0  ]
+        [0   0   l_v  0        0  ]
+        [0   0   0    d^(-u)   0  ]
+        [0   0   0    0        0  ].
+Then at EVERY n,
+  log(n) Z(n)=sum_(d|n,d>=2)Lambda(d) A_d Z(n/d).   (4.2)
+The initial row is Z(1)=(0,beta,beta,R_u,beta). At n=1 both sides of
+(4.2) are zero; the initial row is not inferred by dividing by log 1.
+The -l_B unit entry in the first row retains the derivative of p's delta
+correction. It cancels the spurious prime value of p. The fourth row is
+the complete pure-power center, not a discarded deterministic forcing.
+
+All coefficient arguments n/d in (4.2) are genuinely smaller, and there
+is no current-scale q-free restriction. This is a real distinction from
+(2.2). However, after summation, there are many branches and fresh/fresh
+mixed terms. Smaller arguments alone do not prove a prefix-moment gap.
+One must lift the identity to the actual whole kernel, as in section 5.
+
+It is safer to use p and then its paid target bridge than to delete d
+inside (4.2). If one writes log(n)*a(n) directly, the extra defect is
+  (J_u+J_v)*d-Ld.
+The fact that d itself has a paid prefix norm DOES NOT pay this convolution.
+Indeed its Dirichlet factor is D(s)*[-zeta'(s+u)/zeta(s+u)
+ -zeta'(s+v)/zeta(s+v)+2zeta'(s)/zeta(s)]. At s=1 it has residue -2D(1),
+where 0<D(1)<infinity. D is analytic for Re(s)>1/2 by its prime-power
+support and mass bounds. Ld has no pole there to cancel it. Thus the
+isolated defect has a genuine linear-scale pole mechanism. It belongs
+to joint cancellation, not a paid logarithmic d remainder.
+
+For exact original recovery, define R_p(n)=sum_(h<=n)p(h)-m*n^(2/3).
+Then R_p=R+D. Since E_D<=2beta^2,
+  E_R<=2E_Rp+4beta^2, E_Rp<=2E_R+4beta^2.          (4.3)
+All finite mixed terms are retained in these two-direction inequalities.
+The smooth-center replacement and paid low/diagonal reduction apply to
+f_p as well, because |p(n)|<=beta*d_2(n). Let O_p be its complete joined
+high-product off-diagonal expression. A cofinal upper bound for O_p,
+together with its same paid remainder, gives the original target by
+(4.3). No bound on |O_p-O_X| independent of the unknown target is asserted.
+
+5. Exact lift to the whole prefix-square kernel
+------------------------------------------------
+The tensor derivation is
+  log(hk)[Z(h) tensor Z(k)]
+     =sum_(d|h)Lambda(d)[A_d Z(h/d) tensor Z(k)]
+       +sum_(d|k)Lambda(d)[Z(h) tensor A_d Z(k/d)]. (5.1)
+On the high-product kernel hk>X>=1 the denominator log(hk) is strictly
+positive. Contract (5.1) with ell on BOTH legs, retain K_X, and use its
+symmetry to obtain exactly
+  O_p=(2/X^2)*sum_(d>=2)Lambda(d)
+       *sum_(H<=N/d,k<=N)
+         [ell A_d Z(H)]*[ell Z(k)]
+         *W_X(dH,k)*1_(dH!=k)*1_(dHk>X)/log(dHk). (5.2)
+Only prime powers d<=N contribute. Unit cofactors H=1 or k=1 are retained.
+There is no gcd or coprimality assumption; d may share its prime with H
+and k. The inequality dHk>X is the exact new product birth, and dH!=k is
+the exact diagonal exit. The max cutoff and prefix cap are not replaced
+by a product-only kernel. No source above N is needed for this removal
+formula. All source/center cross channels remain in ell A_d Z(H), namely
+  l_B p(H)+l_v beta U(H)+l_u beta V(H)
+                      -l_B beta delta(H)-d^(-u)R_u k_u(H).
+
+Equation (5.2) is a concrete all-prime signed covariance rather than a
+heuristic coefficient bound. One leg H is strictly smaller; the other leg
+k is still current-scale. Summing its terms absolutely or replacing its
+kernel by a diagonal coefficient energy changes the proof obligation.
+Iterating removal on both legs is possible, but every common-prime and
+repeated-power intersection, unit boundary and moved cutoff remains.
+
+For comparison, coefficient-level Jensen with weights Lambda(d)/log(n)
+can give a cheap weighted DIAGONAL norm. That is not a prefix-square norm.
+The full prefix energy has all h!=k terms in (5.1); their signed covariance
+is precisely the open input. A factor d^(-sigma-1/2) from a discrete
+coefficient Hilbert norm cannot be silently substituted for the d^(-sigma)
+cost of step-prefix dilation. Such a substitution would manufacture a
+false critical gap.
+
+There is also no uniform fixed-positive-metric contraction for the whole
+matrix A_d based only on its entries. It has eigenvalues l_B,l_u,l_v,d^(-u),0;
+along large actual primes their first three limits are -2,-1,-1. Any induced
+positive-metric norm is at least its spectral radius, hence eventually
+exceeds one. Normalizing by the exact identity sum_(d|n)Lambda(d)=log n
+does not alter that pointwise obstruction. For two distinct primes,
+U(qr)=l_u(q)l_u(r); the two removal terms have the SAME sign and reproduce
+exactly log(qr)U(qr). The corresponding B factor behaves the same way.
+A universal strict entrywise prime-removal credit is therefore not supplied
+by the source identity. This is a limitation of a generic absolute/fixed-
+metric argument, not a proof that actual joined covariance cannot contract.
+
+6. Mixed log-divisor gain and its exact boundary commutator
+-----------------------------------------------------------
+The convolution derivation also yields the useful signed identity
+  (LU)*V-U*(LV)=B*(J_u-J_v),
+  J_u(d)-J_v(d)=Lambda(d)(d^(-u)-d^(-v))>=0.       (6.1)
+For a full product fiber m,
+  sum_(hk=m)U(h)V(k)log(h/k)=[B*(J_u-J_v)](m).
+The antisymmetric determinant multiplied by log(h/k) has twice this value:
+  sum_(hk=m)[U(h)V(k)-V(h)U(k)]log(h/k)
+                                           =2[B*(J_u-J_v)](m). (6.2)
+This exposes a genuine d^(-u) prime-power gain and an exact divisor-pair
+correlation. It is not a statement that actual Mobius signs are random.
+
+For an arbitrary finitely supported symmetric kernel K, define
+  S_K=sum_(h,k)U(h)V(k)log(h/k)K(h,k),
+  K_L=K(dH,Kc), K_R=K(H,dKc),
+where Kc is a cofactor variable, distinguished from the kernel name.
+Pulling back both terms of LU*V-U*LV gives exactly
+  S_K=sum_(d>=2)Lambda(d)*sum_(H,Kc)U(H)V(Kc)
+       *{(d^(-u)-d^(-v))*(K_L+K_R)/2
+           +(d^(-u)+d^(-v)-2)*(K_L-K_R)/2}.        (6.3)
+All repeated valuations and overlapping primes are included. There is no
+q-free assumption or prime-independence approximation.
+
+For a product-only kernel K(h,k)=phi(hk), K_L=K_R and the unattenuated
+commutator vanishes. For the actual prefix kernel W_X and product masks,
+K_L-K_R has max/prefix-exit and any diagonal-mask terms. Those are the
+missing transport covariance. Their coefficient d^(-u)+d^(-v)-2 tends
+to -2, so the positive d^(-u) gain of the first term does NOT pay them.
+
+On the flat interior dH,dKc<=X, the W part has K_L=K_R=X; their product
+mask also agrees because both products equal dH*Kc. Thus the max-kernel
+commutator is confined to a genuine prefix frontier. If K includes the
+off-diagonal mask, the unequal diagonal exclusions are retained separately.
+For this angular statistic the original h=k contribution has log(h/k)=0,
+so one may use the diagonal-inclusive kernel and then account for target
+diagonals by the already paid bound. None of this pays the moving frontier
+merely because it is called a boundary. Both orientation supports remain.
+
+The paired angular identity is a useful detector of an actual arithmetic
+mechanism. Its unattenuated commutator is a concrete next source-bound
+lemma, and its symmetric source mode is another. The original O_p is a
+joined symmetric square, not just this angular channel. Bounding (6.3)
+alone does not recover that symmetric mode. A candidate must present the
+complete reconstruction/correlation identities for both.
+
+7. Kernel insertion pullbacks and outside-source complements
+------------------------------------------------------------
+The insertion operators in sections 2/3 require their own exact domain
+descriptors. For any finite original kernel K_X,
+  sum_(h,k)f(q^a h)g(q^b k)K_X(h,k)
+   =sum_(q^a|H,q^b|Kc)f(H)g(Kc)K_X(H/q^a,Kc/q^b). (7.1)
+In particular the pulled support has H<=q^a N and Kc<=q^b N,
+  H*Kc>q^(a+b)X,
+  H/q^a != Kc/q^b,
+and the original max cutoff on the divided coordinates. The unit h=1
+becomes H=q^a. Split inside H,Kc<=N and its outside-source complement
+explicitly. Insertion cannot silently identify its new sampled horizon
+with the old full prefix, even when it kills the smooth center.
+
+By contrast removal/pushforward f(h/q)1_(q|h) gives K_X(qH,Kc), with
+smaller cofactor support and no source beyond N. Its center is correspondingly
+masked on q multiples; it is not the same operator as I_q, and cannot reuse
+the unmasked eigenlaw I_q k_u=t k_u. The distinction is also the difference
+between (7.1) and the exact all-prime lift (5.2).
+
+For two-prime divided differences, gcd(H,qr)=1 belongs to the exact
+primitive. The complementary q/r-divisible sector uses the rational local
+valuation rows (2.1). If the cofactor legs share primes, both masks are
+retained jointly. Distinct-prime exchange, repeated-prime insertion and
+unit chains are separate branches of the same complete grammar, not
+alternative definitions of the actual source.
+
+8. A constructive enumerable grammar and its proof gate
+--------------------------------------------------------
+A small language can now enumerate STRUCTURAL words rather than optimize
+drift constants. Its leaves are the actual channels p,U,V,k_u,delta,d, the
+complete reciprocal intervals and the whole max/product/diagonal kernel.
+Its exact operations can be:
+  * actual-prime insertion, removal and valuation restriction, with (2.1);
+  * distinct-prime divided difference (3.1), with the declared denominator,
+    inverse cost, domain and all complementary sectors;
+  * log-divisor derivation/removal (4.2)/(5.2), including every prime power;
+  * tensor swap, symmetric/antisymmetric decomposition and mixed-log
+    commutator (6.3), retaining both orientation kernels;
+  * reciprocal-interval grouping, signed square completion and coupled
+    lower-prefix prediction with an actually proved coefficient gap;
+  * the paid low/diagonal/center leaves (1.1), fixed-prime remainder (2.3),
+    and the two-direction p/a bridge (4.3).
+
+Bound word length, rational coefficient complexity and prime-domain syntax
+before evaluation. These operations alter source coupling and kernel
+transport; they are not a coefficient search inside a fixed numerical LP.
+Canonical equality must compare full formulas, masks, centers and recovery
+descriptors, rather than only local eigenvalues or finite scores.
+
+A useful generated candidate might compose all-prime removal with a mixed
+log difference so that its bulk uses the d^(-u) part of (6.3), and keep its
+max-kernel commutator as a separate JOINT forcing. An argument must then
+either pay that forcing independently or derive a simultaneous induction
+whose signed cross supplies a coefficient below one. It must also recover
+the symmetric O_p mode. The fact that the suppressed angular statistic is
+cheap does not imply domination of the joined target.
+
+Concretely, the remaining complete forcing in (5.2) is a weighted sum of
+source-state correlations
+  sum_(H,k) Z_i(H)Z_j(k)
+     *W_X(dH,k)*1_(dH!=k)*1_(dHk>X)/log(dHk).
+Its input channel matrix A_d and its supports are explicit. A proof can
+try to exploit actual source constraints between these correlations,
+their swapped transports, and the symmetric/commutator split (6.3).
+Simply assigning a cofinal bound to the entire displayed sum restates O_p.
+Likewise paying U,V or q-free companions separately is not permitted
+without a noncircular proof; section 3 gives an explicit RH-equivalent
+dependency for V. A metric on unconstrained free source vectors cannot
+manufacture the missing signed credit from section 5's matrix.
+
+Admission requires a complete certificate with four separate parts:
+  (a) exact source/tensor identity and all domain/center complements;
+  (b) paid components with explicit uniform constants;
+  (c) full original-target recovery, including any inversion power or
+      prime-gap cost and any future boundary condition;
+  (d) the next independently justified arithmetic forcing lemma, or an
+      actual simultaneous recurrence with a proved induction coefficient
+      gap, smaller arguments and acyclic dependencies.
+Finite numerical evidence can prioritize an argument but supplies none
+of (b)-(d). An unresolved target appearing in a q-free companion, a future
+boundary, an inverse divided difference or a renamed joined sum remains
+an unresolved target. A partial canceled projection is not the whole energy.
+
+Final boundary
+--------------
+The grammar has exact source-specific primitives, a proved uniform
+fixed-prime remainder, genuine all-prime smaller-cofactor equations, and
+a precise attenuation-versus-prefix-commutator separation. These are useful
+analytical reductions for an obligation-driven search. No strict complete
+moment contraction or independent bound for its signed symmetric/frontier
+forcing has been proved here. The all-scale bound remains open; no numerical
+constant improvement is substituted for it.

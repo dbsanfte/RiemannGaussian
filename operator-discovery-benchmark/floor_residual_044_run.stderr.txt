@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/run_floor_residual_044.py", line 331, in <module>
+    main()
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/run_floor_residual_044.py", line 207, in main
+    if not receipt['invocations'] or receipt['invocations'][-1]['returncode'] != 0:
+KeyError: 'invocations'

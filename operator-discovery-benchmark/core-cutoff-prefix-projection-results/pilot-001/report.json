@@ -1,0 +1,190 @@
+{
+  "RH_proved": false,
+  "conditional_Gram_routes": 252,
+  "development_operations": 17014108,
+  "discovery_cases": 144,
+  "elapsed_seconds": 25.374634336010786,
+  "evaluation": [
+    {
+      "B": 1024,
+      "cancellation_bits": 0,
+      "cross_scale_groups": 206,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[763.080083060785502609436170939357016989337204167308 +/- 5.85e-49]",
+      "groups_with_opposite_mu": 414,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 171,
+      "program_id": 0,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 3,
+      "cross_scale_groups": 2,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[73.9615699074239350435415840163090186959077112359 +/- 8.18e-47]",
+      "groups_with_opposite_mu": 2,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 2,
+      "program_id": 1,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 2,
+      "cross_scale_groups": 1,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[178.413917147059900369695745462984343730595789471 +/- 4.59e-46]",
+      "groups_with_opposite_mu": 1,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 1,
+      "program_id": 14,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 2,
+      "cross_scale_groups": 4,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[145.7732779078104290562342960899997304857889399937 +/- 5.09e-47]",
+      "groups_with_opposite_mu": 4,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 3,
+      "program_id": 7,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 1,
+      "cross_scale_groups": 4,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[207.4279568457629988798076469063277026371963587640 +/- 4.81e-47]",
+      "groups_with_opposite_mu": 4,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 3,
+      "program_id": 22,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 2,
+      "cross_scale_groups": 4,
+      "even_total": "[302.747586209029223175414477350044859704194809123826 +/- 6.04e-49]",
+      "grouped_peak_absolute": "[101.599550851146267823339225738354653805321060591 +/- 2.05e-46]",
+      "groups_with_opposite_mu": 4,
+      "joined_total": "[-50.952051229928004155521260040515087848955873101890 +/- 3.05e-49]",
+      "odd_total": "[-353.699637438957227330935737390559947553150682225717 +/- 5.90e-49]",
+      "prime_composite_groups": 3,
+      "program_id": 17,
+      "ungrouped_absolute": "[765.159764440494859162584641572358750385016581317242 +/- 6.71e-49]"
+    }
+  ],
+  "evaluation_cases": 6,
+  "full_component_bound_proved": false,
+  "inclusive_operations": 175162467,
+  "inherited_source_bindings": 144,
+  "main_peak_rss_kib": 704032,
+  "model_calls_in_search": 0,
+  "new_source_or_zeta_evaluations": 0,
+  "new_uniform_signed_arithmetic_estimates": 0,
+  "numeric_Gram_fitting": false,
+  "projections": 36,
+  "rejected": [],
+  "selected": [
+    {
+      "lane": "fixed:rough",
+      "program_id": 0
+    },
+    {
+      "lane": "fixed:smooth",
+      "program_id": 1
+    },
+    {
+      "lane": "prefix:rough",
+      "program_id": 14
+    },
+    {
+      "lane": "prefix:smooth",
+      "program_id": 7
+    },
+    {
+      "lane": "window:rough",
+      "program_id": 22
+    },
+    {
+      "lane": "window:smooth",
+      "program_id": 17
+    }
+  ],
+  "status": "PREFIX_PROJECTIONS_AND_CONDITIONAL_GRAM_ROUTES_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 158148359,
+  "undominated_by_lane": {
+    "fixed:rough": [
+      0
+    ],
+    "fixed:smooth": [
+      1
+    ],
+    "prefix:rough": [
+      14
+    ],
+    "prefix:smooth": [
+      7
+    ],
+    "window:rough": [
+      22
+    ],
+    "window:smooth": [
+      17
+    ]
+  },
+  "uniform_mask_recoveries": 1,
+  "whole_signed_bound_proved": false,
+  "worker_receipts": [
+    {
+      "cases": 144,
+      "elapsed_seconds": 5.081568793975748,
+      "new_source_or_zeta_evaluations": 0,
+      "operations": 34607568,
+      "peak_rss_kib": 202580,
+      "phase": "discovery",
+      "role": "producer",
+      "status": "complete"
+    },
+    {
+      "cases": 144,
+      "elapsed_seconds": 11.978790466004284,
+      "new_source_or_zeta_evaluations": 0,
+      "operations": 77856788,
+      "peak_rss_kib": 202580,
+      "phase": "discovery",
+      "role": "checker",
+      "status": "complete"
+    },
+    {
+      "cases": 6,
+      "elapsed_seconds": 1.3538136559945997,
+      "new_source_or_zeta_evaluations": 0,
+      "operations": 9068952,
+      "peak_rss_kib": 202580,
+      "phase": "evaluation",
+      "role": "producer",
+      "status": "complete"
+    },
+    {
+      "cases": 6,
+      "elapsed_seconds": 2.6813334389880765,
+      "new_source_or_zeta_evaluations": 0,
+      "operations": 17096006,
+      "peak_rss_kib": 202580,
+      "phase": "evaluation",
+      "role": "checker",
+      "status": "complete"
+    }
+  ]
+}

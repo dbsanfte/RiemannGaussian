@@ -1,0 +1,44 @@
+{
+  "drawn_after_operator_freeze": true,
+  "draws": [
+    {
+      "band": [
+        1408,
+        1791
+      ],
+      "status": "ACCEPTED",
+      "u": 1738
+    },
+    {
+      "band": [
+        1408,
+        1791
+      ],
+      "status": "ACCEPTED",
+      "u": 1603
+    },
+    {
+      "band": [
+        2304,
+        2815
+      ],
+      "status": "ACCEPTED",
+      "u": 2766
+    },
+    {
+      "band": [
+        2304,
+        2815
+      ],
+      "status": "ACCEPTED",
+      "u": 2651
+    }
+  ],
+  "parents": [
+    1603,
+    1738,
+    2651,
+    2766
+  ],
+  "seed": 20261011084
+}

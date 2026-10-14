@@ -1,0 +1,246 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_limit_bytes": 17179869184,
+  "bounds_refitted": false,
+  "candidate_status_counts": {
+    "OPEN_AFTER_DENSE_FINITE_TESTS": 6
+  },
+  "development_operations": 4942842,
+  "elapsed_seconds": 2.97183654201217,
+  "finite_pass_count": 236596,
+  "hashes_used": false,
+  "independently_verified_counterexamples": 0,
+  "largest_individual_worker_peak_rss_kib": 40240,
+  "new_frozen_source_count": 12,
+  "new_producer_atoms_evaluated": 0,
+  "new_witness_checker_operations": 0,
+  "new_word_scale_pairs_tested": 236596,
+  "old_scientific_studies_replayed": false,
+  "parent_peak_rss_kib": 704032,
+  "persistent_dense_array_bytes": 15360120,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19
+  ],
+  "producer_operations": 243807227,
+  "selected": [
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 64000,
+        "minimum": 2,
+        "new_available": 63729,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 63729,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 63729,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0000_eta_0",
+      "request": {
+        "alpha": "1/2",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          -2,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 64000,
+        "minimum": 2,
+        "new_available": 63729,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 63729,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 63729,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0286_eta_0",
+      "request": {
+        "alpha": "2/3",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          -2,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 32000,
+        "minimum": 2,
+        "new_available": 31729,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 31729,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 31729,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0146_eta_0",
+      "request": {
+        "alpha": "1/3",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 32000,
+        "minimum": 2,
+        "new_available": 31729,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 31729,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 31729,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0432_eta_0",
+      "request": {
+        "alpha": "1/4",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 32000,
+        "minimum": 2,
+        "new_available": 31729,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 31729,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 31729,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0575_eta_0",
+      "request": {
+        "alpha": "1/5",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "coverage": {
+        "maximum": 14222,
+        "minimum": 2,
+        "new_available": 13951,
+        "skipped_prior": 270,
+        "stop_at": null,
+        "tested": 13951,
+        "untested_after_stop": 0
+      },
+      "finite_pass_count": 13951,
+      "first_counterexample_N": null,
+      "id": "prime_scale_0679_eta_0",
+      "request": {
+        "alpha": "1/5",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          3,
+          -4,
+          1
+        ],
+        "q": 3
+      },
+      "status": "OPEN_AFTER_DENSE_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false,
+      "unresolved_count": 0
+    }
+  ],
+  "selected_count": 6,
+  "status": "DENSE_SIGNED_BOUND_AUDIT_COMPLETE_UNIFORM_PROOF_OPEN",
+  "uniform_arithmetic_bound_proved": false,
+  "unresolved_count": 0,
+  "untested_after_stop": 0,
+  "workers": 3
+}

@@ -1,0 +1,170 @@
+FACTOR-CERTIFIED NORMS AND GCD PRODUCTS; FINITE GROUPED PROOF SCOPE
+
+This supplied arithmetic language extends the frozen polynomial language. It
+proves exact actual relations and conditional finite SOS positivity. It proves
+no full critical energy bound, uniform scale law, formal global mathematical
+certificate or RH result. No actual coefficient evaluation is a language axiom.
+
+1. Factor witnesses and source horizons.
+A witness for n>=1 is a sorted unique list[p,e] of prime p and positive integer
+e, with exact product n. For n1 the list is empty. Strict integer types exclude
+booleans; composite, unordered, duplicate, incomplete and overlarge factors are
+rejected. Prime validation uses exact trial divisibility. The declared horizon
+bounds n,a,b and all polynomial variable indices, and a separate resource cap
+precedes generation. Before exponentiation the exponent and power bit/work proxy
+are bounded. Exact product is checked without silently ignoring surplus factors.
+The generator factor_witness uses only integer factorization, not any actual
+signed sequence input. Witnesses are independently checkable. Scalar work caps
+are explicit computation limits, not total memory/bit complexity guarantees or
+mathematical restrictions on factorization.
+
+2. Norm relations at ALL admitted indices.
+Actual mu(p)=-1 and mu(p^e)=0 for e>=2; actual c=mu*lambda has
+c(p^e)=2(-1)^e. Both multiply over coprime prime-power factors. Therefore
+ mu(n)^2=1_(n squarefree), c(n)^2=4^omega(n), including n1.
+The norm polynomial is x_n^2 minus the certified corresponding integer.
+It contains no signed coefficient value axiom. Determining the norm requires
+complete factor witnesses for the declared indices; it is not an observed
+finite norm reused as an unproved all-scale fact. The old prime_power relation
+still supplies actual signs only at its certified prime powers.
+
+3. Gcd-product relations, all zero and degenerate cases.
+Let g=gcd(a,b), u=a/g, v=b/g, so gcd(u,v)=1. Actual mu obeys
+ mu(a)mu(b)=1_(g squarefree)*1_((g,uv)=1)*mu(u)mu(v).
+Proof by each prime exponent: a shared prime whose smaller exponent>=2 makes
+both products zero. A shared prime with unequal exponents makes one left
+coefficient zero and is excluded by the compatibility mask. A shared prime
+with equal exponent1 contributes (-1)^2=1. Unshared primes are exactly the
+remaining u/v factors, including their own squarefree zeros. Thus the identity
+also holds when any coefficient vanishes. At a=b it is the norm identity;
+at g1 it is ordinary coprime multiplicativity; a=b=1 is still valid.
+The admitted polynomial is xa*xb minus that exact constant mask*xu*xv.
+
+For c, complete multiplicative lambda and the number of distinct prime supports
+give, for all positive g,u,
+ c(gu)=c(g)c(u)/2^omega(gcd(g,u)).
+Indeed parity of total prime exponents is additive, while a shared prime's
+absolute local factor2 is counted twice on the right and once on the left.
+Since u,v are coprime, their shared-prime sets with g are disjoint. Hence
+ 2^omega(gcd(g,uv))*c(a)c(b)=c(g)^2*c(u)c(v).
+This is polynomial after clearing the positive integer denominator. The overlap
+count is exactly the number of common primes whose certified exponents in a,b
+are UNEQUAL. The gcd exponents are their minima. The norm factor in the mu law
+and denominator in the c law are therefore derived from factor_a/factor_b,
+not a coefficient table. All variable indices g,u,v<=max(a,b) remain within
+the input horizon. No product index ab is introduced by this gcd relation.
+Formal polynomial multiplication xa*xb remains two variables, not xab unless a
+separate admitted coprime_product relation supplies it and charges its horizon.
+
+4. Finite compiler soundness.
+The extended compiler admits only the above factor-certified relations and the
+unchanged frozen unit/coprime-product/squarefree-zero/prime-power/inverse-row
+whitelist. Unknown shapes or custom per-index signed values are rejected.
+The canonical serialized sparse polynomial format and exact rational algebra
+are unchanged. It checks coefficientwise
+ lhs=sum_j w_j P_j^2+sum_i Q_i*rho_i, w_j>=0.
+On complete actual arithmetic each rho_i vanishes, so lhs>=0. No coefficient
+response is needed to verify this polynomial identity. Negative square weights,
+missing monomials, wrong factor constants or unmatched coefficients invalidate
+it. Both lhs and all terms require the declared variable horizon. Grouped
+proofs must expand every term before matching; positivity belongs to individual
+squares with nonnegative weights, not to an unsigned subset of cross terms.
+This establishes conditional finite nonnegativity only. Limits on scalar work,
+terms and factor predicates return explicit failure rather than partial proof.
+
+5. Norm information does not remove the sign obstruction.
+For any fixed finite prime set P,
+ f_P(n)=mu(n)^2*(-1)^omega_P(n)
+has the exact actual mu norms globally, all coprime cycles, the mu gcd-product
+law, and actual prime local values on P. The gcd law follows from its squarefree
+multiplicativity by the same local proof, independent of signs at other primes.
+It also annihilates every inverse row divisible by a prime in P. Nevertheless
+its prefix has positive linear mean and its defect has cubic leading term,
+as proved elementarily in prime_pair_forcing_next_certificate_scope.txt.
+Thus even the added norm/gcd layer and a fixed finite normalized set do not
+prove generic critical control. This is a counterfeit, not actual mu or a
+counterexample to RH. It establishes insufficiency of these listed premises,
+not necessity of every individual prime sign in every possible successful proof.
+Uniformly justified further arithmetic information must exclude such models;
+complete normalization/inverse rows are sufficient available specifications,
+and other growing/global constraints or harmless finite local modifications
+may also support a proof.
+For c, epsilon(n)*2^omega(n) with any completely multiplicative prime-sign
+choice epsilon also satisfies its norm and cleared gcd law. The all-positive
+choice has prefix>=x and noncritical energy; it illustrates the same lack of
+cancellation from norm/gcd relations alone.
+
+6. Joint grouping and the exact missing uniform theorem.
+A finite learner may share rational weights across grouped square and relation
+families, with index regions and factor premises declared. Finding such weights
+at several finite X nominates a template; it does not prove its identity or
+nonnegative weights at every X. A genuine uniform template needs a symbolic
+coefficient identity or induction over exact regions, all collisions/boundaries,
+product horizons, norm-source costs, initializer and coefficient norms charged.
+Rowwise expansion can encode the entire known finite actual sequence. Complete
+inverse rows uniquely determine mu; complete local normalization/multiplicativity
+determines c. Joint grouping changes proof representation and compression, not
+logical information. Free per-index square weights must not be advertised as a
+jointly grouped ansatz, and recomputed final weights are finite feasibility rather
+than out-of-sample transfer of one learned operator.
+The main missing premise remains a COMPLETE original signed defect upper bound:
+exists q0, every integerq>=q0, finiteCq independentX, every dyadicX>=1,
+ Delta_f(X)<=Cq X^2 ceil(X^(1/q)).
+Norm/gcd identities alone do not supply it. Given such a proved premise,
+nonnegative original energies telescope and the ordinary mu/c Mellin pole bridge
+would imply RH. No such premise, newly discovered cancellation or global proof
+is claimed in this language or its finite tests.
+
+7. Explicit unsigned uniform calibration, separate from critical search.
+Write h_i=f(i)^2 for the certified norm constants, P_t=sum_(i<=t)xi,
+N=4X-1 and
+ U_X=sum_(t=2X)^(4X-1) t*sum_(i<=t)h_i.
+The exact identity is
+ U_X-Delta_X
+ =4*sum_(t=X)^(2X-1)P_t^2
+  +sum_(i<j<=N)K_2X(max(i,j))*(xi-xj)^2
+  -sum_(i<=N)[sum_(t=max(2X,i))^(4X-1)t]*(xi^2-h_i).
+Empty inner sums are0. For each prefix lengtht,
+ sum_(i<j<=t)(xi-xj)^2=t*sum_(i<=t)xi^2-P_t^2,
+by expansion: each diagonal appears t-1 times and all distinct cross terms
+appear with coefficient-2. Sum over child-block t; K_2X(max(i,j)) counts
+exactly those child prefixes. Subtracting the complete weighted norm relations
+replaces each xi^2 by h_i, giving U_X-A_child+4A_parent. Every boundary,
+original pair and norm multiplier is retained. The shared structural weights
+are4,1,-1 for this calibration; a synthesis dictionary may contain these columns
+without supplying the coefficients to its numerical solver.
+For mu, h_i<=1, so U_X<=sum_(t=2X)^(4X-1)t^2<=32X^3.
+For c, h_i=4^omega(i)<=d4(i), and the complete divisor expansion gives
+ sum_(i<=Y)d4(i)<=Y*(1+log Y)^3.
+Thus at every child prefix, sumh<=4X*(1+log(4X))^3, t<=4X, and there are2X
+prefixes, proving U_X<=32X^3*(1+log(4X))^3. This is an unconditional
+uniform power-three unsigned calibration, NOT critical power two, RH control,
+or evidence that the actual critical template succeeds. Calibration successes
+must be recorded separately from the main lhs C X^2 ceilroot-Delta_X.
+
+8. Optional computed scalar slack with shared structural coefficients.
+A finite family may fix ALL nonconstant square/relation group weights jointly
+across its declared scales. After expanding lhs-RHS with those fixed weights,
+require EVERY nonconstant monomial coefficient to vanish EXACTLY. The remaining
+constant s_X is then uniquely COMPUTED from the exact polynomial data and the
+fixed weights. It is not a free per-index arithmetic coefficient or a measured
+signed-response input. If s_X>=0, append the constant square s_X*1^2 to obtain
+an exact certificate. If s_X<0 or any nonconstant coefficient remains, this
+particular shared template is rejected. The original prescribed lhs and its
+C,q,exactceiling remain unchanged; slack never repairs nonconstant mismatches.
+The solver can impose these constant residual inequalities while matching all
+nonconstant coefficients, then exact expansion independently computes s_X.
+This soundly broadens finite feasibility over a requirement that the same
+weights also match a different prescribed constant exactly at each scale.
+It does not by itself remove atomic encoding through other declared families.
+
+For uniform use, write a structural identity B(X)-Delta_X=RHS_X with the shared
+weights and the supplied norm constants; its scalar budget B(X) is obtained
+symbolically from the constant coefficient. The finite successful constants
+s_X=D(X)-B(X)>=0 do NOT prove B(X)<=D(X) at every X. Uniform admission needs
+both a proved complete nonconstant identity at every declared scale AND a
+proved all-scale bound on B(X), including all q, initializers, root ceilings,
+factor/source domains and group coefficient norms. No finite scalar feasibility
+is substituted for this missing theorem. Fully shared weights may nominate a
+reusable symbolic B(X), but neither its critical growth nor its nonnegativity
+relative to D is assumed from sampled scales.

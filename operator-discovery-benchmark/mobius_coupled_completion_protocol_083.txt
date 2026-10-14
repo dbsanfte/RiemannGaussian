@@ -1,0 +1,77 @@
+083 PROSPECTIVE COUPLED DIVISOR AND PRIME-ANCHOR EXPERIMENT
+
+Target: the complete original drift DeltaE(u)=E(u)-(3/2)E(floor(u/2)).
+All squarefree coordinates n<=u//4 are retained, including the unit, actual
+primes, every diagonal and all prime/composite cross terms. E contains the
+current source square plus a positive Gram of delayed source values.
+The two original kernels and three energy rosters are inherited exactly
+from082. A full uniform O(u) upper bound is still the unpaid objective.
+
+New exact zero operator:
+ C_K(m)=floor(K/m)-1[m=1] forK>=1, C_0=0,
+ D_K=C_K-max(K-1,0)/(N-1)*C_N if unit-balanced andN>=2;
+ otherwise D_K=C_K. HereN=u//4.
+ Z(m,n)=(w(n)D_{K(n)}(m)+w(m)D_{K(m)}(n))/2.
+The divisor identity sum_m mu(m)C_K(m)=0 proves mu^T Z mu=0 separately
+for every coordinate-dependent K(n)<=N. Unit balancing also preserves it.
+The grammar admits floor(s*n^eta*u^beta), capped atN, and its complement,
+with arbitrary signed rational eta,beta under prospective bit/work gates.
+There is no denominator whitelist. Root operations are exact integer roots.
+Weights include source features, products, rational interval indicators,
+and actual-prime/composite restrictions. No unknown composite signs or
+observed full-source values enter coefficient invention or selection.
+
+Prime anchor: mu(1)=1 and mu(p)=-1 for EVERY actual prime<=N are substituted
+jointly by the exact congruence Aeff=P^T A P. Coordinates are anchor1 then
+increasing squarefree composites. B=trace(Aeff)+2sum_{i<j}|Aeff_ij| bounds
+the complete drift after exact zero additions and nonnegative Grams.
+Boolean squarefree diagonals are exactly1; negative row prices are retained.
+These elementary known signs are explicitly used; unknown composite signs
+are excluded. This is not a claim that no Mobius signs at all are used.
+
+Pilot:2sources x3energies x4families=24 programs. Calibrationu1024.
+Families: raw K=n,N-n; unit-balanced K=n,N-n; balanced fractional augmentation
+with (s,eta,beta)=(1/4,3/7,4/7),(1,7/5,-2/5); and matched_certified.
+Every term has theta[-16,16]; source-square Grams have weights[0,16].
+The largest roster has120 terms, within the128 parser cap.
+Float linear optimization proposes parameters. Exact rational reconstruction
+and independent full-matrix upper and parameter-box dual checks admit them.
+LP180seconds each;3workers, native threads1;7200seconds total,16GiB aggregate.
+Prospective per-process gates4GiB; reject entire geometries, never truncate.
+
+Matched_certified also enforces exact linear coefficient equations derived
+from a proof template: equal aggregate weights for paired balanced n,N-n
+cuts, combined gain2Astar on both prime and composite outer coordinates
+u/5<n<=u/4, Astar=H00+gram0. Extra cuts2n and(1/3)n^(8/11)u^(3/11),
+and their complements, are allowed only with weights vanishing on this band.
+The LP chooses coefficients subject to these equations; exact affine
+reconstruction is checked. Coefficients are not seeded from a solution.
+Independent symbolic checking proves the WHOLE RAW OUTER BLOCK absolute
+coefficient price<=Astar*u for every integeru>=1, including endpoints.
+This theorem template was derived analytically with Sol6.1 assistance;
+the detector synthesizes its instances. It did not independently invent
+the theorem or establish the full bound. Unrestricted families remain in
+the same pilot so the hand-supplied proof template is not the only route.
+
+Select one smallest exact complete-price candidate in each source/family,
+at most8. Freeze all formulas before drawing6 fresh geometry parents,
+2 each in[1536,2047],[2560,3071],[3584,4095], seed20261011083.
+Exclude registered old parents, delays and development geometries.
+Check all selected candidates at all6, no retuning/reselection.
+This extends validation geometry, not the observed unknown-sign horizon.
+Preserve all failures and outcomes; no hashes, no old science/test reruns.
+
+Crucial remaining obligation for each paid outer block:
+ DeltaE=mu^T A_outer mu + mu^T(A-A_outer)mu - Gram_energy.
+The first term has uniform boundAstar*u. The remaining signed expression
+must itself be bounded uniformly byK*u (or a suitable exponent recurrence).
+Its crosses, primes and known anchor remain part of the target. Subtracting
+raw outer absolute price from anchored full price is INVALID: congruence
+mixes those blocks. No such subtraction or full-growth claim is permitted.
+Full source/parameter transfer to RH also remains a separate obligation.
+
+Before running: freeze all listed source and protocol files by direct bytes;
+validate598 earlier frozenfiles and preserve historical handoffs. Independent
+math/resource/checker audits and targeted tests precede the run. A separate
+saved-artifact audit binds source kernels, winners, fresh draws and exact
+admissions before publication. Numerical prices are not uniform theorems.

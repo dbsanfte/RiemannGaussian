@@ -1,0 +1,308 @@
+GLOBAL RADIX CARRY TRANSFERS: SCALE RECURSION, BRANCH LADDERS, AND A FALSE ROOT
+7 October 2026. Universal written proofs plus independent exact/Arb checks.
+Historical novelty is unresolved; no theorem-prover certificate or RH proof.
+
+1. THE GLOBAL PRODUCT AND ITS ORDINARY ROOT-TYPE LIMITATION
+
+For integer b>=2 let s_b(e) be the base-b digit sum and Omega the total
+prime-factor degree. Define on arithmetic functions
+
+ (f G_b g)(n)=sum_(ij=n) f(i)g(j)
+        * 1[s_b(Omega(i))+s_b(Omega(j))=s_b(Omega(n))].            (1)
+
+The indicator means every digit adds without a carry. For three factors,
+either parenthesization is permitted precisely when, in every digit, the
+sum of the three digits is less than b. This proves associativity.
+Commutativity and delta_1 identity are immediate. Alternatively the
+nonnegative potential V_b(n)=sum_(r>=1)floor(Omega(n)/b^r) has telescoping
+defect V_b(ij)-V_b(i)-V_b(j); it vanishes precisely for this indicator.
+For PRIME b this defect equals v_b(binomial(Omega(i)+Omega(j),Omega(i))).
+
+That last prime condition matters. Replacing the indicator by binomial
+nondivisibility modulo COMPOSITE b is wrong: at b=4 and degrees 1,1,2,
+one parenthesization has nonzero weights binomial(2,1) and binomial(4,2),
+while the other includes binomial(4,1)=0 modulo four. Its weights are
+1 and 0, respectively, so the tempting replacement is not associative.
+The true digit kernel gives zero on BOTH parenthesizations.
+
+For h(1)=0, every nonzero k-fold G_b product requires k<=s_b(Omega(n));
+this proves coefficient-local EXP and LOG. The standard nilpotent
+formal identities therefore define inverse maps
+
+ S_b(f)=EXP_(G_b)(LOG_D f),   S_b^(-1)(f)=EXP_D(LOG_(G_b) f),
+ S_b(f D g)=S_b(f) G_b S_b(g).
+
+They hold for ALL normalized formal inputs f(1)=g(1)=1. Their root law
+is TYPED: S_b(f^gamma_D)=(S_b f)^gamma_(G_b). It is not a law for
+ordinary OUTPUT roots. The exact b=3 counterexample at n=8 is
+
+ S_3(zeta^(1/2)_D)(8)=1/6,
+ ((S_3 zeta)^(1/2)_D)(8)=-1/48.
+
+To check, S_3 zeta has local coefficients f(p)=f(p^2)=1, f(p^3)=1/3.
+Its ordinary LOG at p,p^2,p^3 is 1,1/2,-1/3. The ordinary half-root
+coefficient at p^3 is -1/6+1/8+1/48=-1/48, whereas the carry transfer
+of the input root has only its prime-cube logarithm 1/(2*3).
+
+The product couples distinct primes. At b=3, S_3 zeta(4)=S_3 zeta(3)=1
+but S_3 zeta(12)=0. At 30 its three prime degrees overflow the lowest
+digit, giving zero. This fails multiplicativity. It is not the usual
+regular convolution that has historically been called "ternary".
+
+2. ZETA COEFFICIENTS AND THE EMPIRICAL POLYNOMIAL GRAMMAR
+
+LOG_D zeta is supported on p^e with coefficient 1/e. For 0<beta<=1,
+EXP_(G_b)(beta LOG_D zeta) removes nonnegative terms from ordinary EXP.
+Thus its coefficients a_(b,beta)(n) satisfy
+
+ 0<=a_(b,beta)(n)<=d_beta(n)<=1,
+
+where d_beta is the ordinary zeta^beta coefficient. Its prime coefficient
+is beta, so the ordinary series has absolute abscissa exactly one.
+Convergence to the right follows from domination; divergence at or below
+one already follows from the prime subseries. Initially on Re(s)>1 write
+
+ F_(b,beta)(s)=sum_n a_(b,beta)(n)n^-s.
+
+Grade by Omega. The grade-e primitive logarithm sum is beta P(e*s)/e,
+where P(z)=sum_p p^-z. The grade product is x^i G_b x^j=x^(i+j) if no
+base-b carry occurs, and zero otherwise. Exact graded EXP of unrelated
+rational higher-grade inputs, with an anonymous grade-one coefficient z,
+is sampled at z=0..6; held-out z=-3,7,8,11 check a fitted polynomial.
+The recovered degree at b=2,3,4,5,7 is b-1, with a 49-model linear radix
+degree fit and the scale-recursive leading coefficient checked separately.
+These finite fits are evidence. The following proves their universal law.
+
+3. LOG-ZETA POLYNOMIAL AND ITS SELF-SIMILAR LEADING COEFFICIENT
+
+On Re(s)>1/2 set
+ K=beta*sum_(e>=2)P(e*s)x^e/e, Q=sum_(e>=2)P(e*s)/e.
+Their grade l1 norms converge locally uniformly. On a chosen zero-free
+logarithmic patch put P_1=Log zeta(s)-Q(s), continuing the Euler branch.
+The primitive grade-one element x has G_b-nilpotence index b. Consequently
+
+ EXP_(G_b)(beta P_1 x)=sum_(j=0..b-1)(beta P_1)^j x^j/j!.
+
+Let E=EXP_(G_b) K and H_j=eval_1(x^j G_b E). A grade n in E contributes
+to H_j precisely when n mod b <=b-1-j. Thus
+
+ F_(b,beta)(s)=sum_(j=0..b-1) (beta P_1)^j H_j(s)/j!.         (2)
+
+All H_j are holomorphic on Re(s)>1/2. In the highest coefficient,
+H_(b-1) uses just grades divisible by b. A no-carry product with lowest
+digit zero has EVERY participating lowest digit zero. Restricting K to
+these grades and rescaling n=b*r shifts off one base-b digit, preserving
+the carry rule. Its primitive coefficients become
+
+ beta P(b*r*s)/(b*r)=(beta/b)P(r*(b*s))/r.
+
+Therefore the EXACT self-similarity identity is
+
+ H_(b-1)(s)=F_(b,beta/b)(b*s),
+ [ (Log zeta)^(b-1) ] F_(b,beta)
+    =beta^(b-1)/(b-1)! * F_(b,beta/b)(b*s).                   (3)
+
+The last coefficient has an ordinary absolutely convergent series and
+holomorphic continuation on Re(s)>1/b, a larger domain than all the
+lower coefficients together. This statement does not extend the full
+F through all zeta zeros. Replacing P_1 by Log zeta-Q makes (2) a
+degree b-1 polynomial in Log zeta with holomorphic coefficient functions.
+
+4. A HEIGHT-UNIFORM NONZERO LEADING COEFFICIENT
+
+The shifted operator in (3) has nonnegative coefficients dominated by
+the ORDINARY root coefficients d_(beta/b). For b*s of real part b*sigma>1,
+
+ |H_(b-1)(s)-1| <= zeta(b*sigma)^(beta/b)-1,
+ |H_(b-1)(s)| >= 2-zeta(b*sigma)^(beta/b).                    (4)
+
+For b>=3, 0<beta<=1 and sigma>=1/2 this lower bound is positive.
+Indeed zeta(b/2)^(beta/b)<=zeta(3/2)^(1/3)<3^(1/3)<2, using
+zeta(3/2)<1+integral_1^infinity x^(-3/2)dx=3. The Arb bound at b=3,
+beta=1 gives a stronger lower bound exceeding 0.6226 on the critical
+right half-plane. Bounds at the slightly smaller real parts of the two
+old critical-zero disks also remain positive. Unlike a finite set of
+sampled heights, (4) applies at EVERY height.
+
+5. COMPLETE MONODROMY LADDERS AND A SINGLE-LOOP BLIND SPOT
+
+Suppose a small loop surrounds a zeta zero of multiplicity m and the
+coefficient functions in (2) are single-valued there. Each loop changes
+P_1 by h=2*pi*i*m. For a polynomial of degree b-1, the (b-1)-st forward
+branch difference annihilates every lower term. Its exact value is
+
+ Delta_h^(b-1) F_(b,beta)=(beta h)^(b-1) H_(b-1)(s).          (5)
+
+The height-uniform lower bound (4) makes this nonzero in the critical
+right half-plane. Radix three requires THREE successive branch values
+F_0,F_1,F_2, giving F_2-2F_1+F_0=-(2*pi*m*beta)^2 H_2.
+
+A SINGLE pointwise branch jump is an incomplete test. At b=3, beta=1,
+write (2) as c0+c1 P+(H_2/2)P^2. Choose a basepoint value
+P_*=-c1/H_2-h/2. Then F(P_*+h)-F(P_*)=0 EXACTLY, while
+F(P_*+2h)-2F(P_*+h)+F(P_*)=h^2 H_2!=0.
+This is an algebraic obstruction to judging zero sensitivity from a
+single returned scalar value after one loop.
+
+The implemented control uses a whole zeta-zero-free disk near 3/4+1.37i
+and inserts one model zero. A nonzero constant multiplier normalizes its
+logarithm at the basepoint to this P_*. The coefficient functions are
+fixed from the zeta-derived criterion. This is NOT a claim that applying
+S_b to a different arithmetic input leaves those coefficient functions
+unchanged. The first-jump cancellation is the exact constructed-model
+identity; numerical balls illustrate it, rather than prove cancellation
+of an unspecified infinite function. The second difference is rigorously
+nonzero by (4),(5).
+
+For b>=3 and 0<beta<=1, a direct RH criterion uses
+Z=(s-1)zeta(s), Z(1)=1, on D={Re(s)>1/2}.
+Define, initially to the right of one,
+
+ Phi_(b,beta)=sum_(j=0..b-1) beta^j H_j/j! * (Log Z-Q)^j.
+
+This is a polynomial pole correction, not just multiplication by s-1,
+and is not an arithmetic transform of a claimed Dirichlet series for Z.
+RH implies Z is zero-free on simply connected D, hence Phi is holomorphic
+and single-valued there. Conversely, any zero in D gives the nonzero
+branch difference (5), forbidding that continuation. Thus this is an
+RH-equivalent continuation criterion. Its required continuation remains
+unproved. The bound on H does not itself exclude any zeta zero.
+
+6. A CERTIFIED OPERATOR ZERO WHERE ZETA HAS NO ZERO
+
+The exploratory principal-log search found a radix-three beta=1 zero
+near 0.87269+14.72004i. Its rough residual did not certify a zero of the
+infinite operator. The source refines the candidate using a different,
+rigorously controlled native approximation; that refinement is also
+only a numerical locator, not an existence proof.
+
+The accepted certificate is Rouche on a disk of radius 1e-5. The
+independent checker uses a strictly nested disk of radius 5e-6, changed
+grade and Mobius cutoffs, a different graded EXP implementation and a
+different derivative quotient. The native zeta enclosure on the entire
+containing rectangle excludes zero; the transfer of zeta's ordinary
+INPUT half-root is also nonzero there. In contrast, the true continued
+F_(3,1) has exactly one simple zero, so its ordinary OUTPUT half-root
+has spurious sign monodromy on that disk. This is a genuine failure of
+ordinary-root LOCATION fidelity, independent of RH.
+
+No new ordinary zeta zero is located. The transformed zero is in the
+analytic continuation of F_(3,1), below its ordinary coefficient-series
+convergence domain Re(s)>1. It must not be described as an absolutely
+convergent Dirichlet sum in the strip. A tiled horizontal corridor from
+Re(s)=3 to the disk certifies that zeta avoids the principal LOG cut,
+anchoring the local branch to the original Euler-normalized series.
+
+The initial coarse outer-bound certificate FAILED and is archived in
+radix-results/failed_radix_outer_bound.json. No registry entry is based
+on it. Smaller nested disks and refined candidate placement make the
+accepted comparisons positive; numerical residuals alone are never
+the zero certificate.
+
+7. NATIVE APPROXIMATIONS AND CAUCHY ERROR BOUNDS
+
+For Re(w)>1 use P_M(w)=sum_(m<=M)mu(m)LOG zeta(m*w)/m. The omitted
+complex modulus is at most
+u^(M+1)/((M+1)(1-u))*(1+2/((M+1)Re(w)-1)), u=2^-Re(w).
+This follows from the Euler logarithm and the integer integral bound.
+All numerically evaluated k>=2 arguments in these global patches have
+k*sigma>=3/2. Since |Euler LOG zeta(w)|<=log zeta(Re(w))
+<=log zeta(3/2)<log 3<pi, their principal LOG equals the Euler branch.
+The separate old-zero disks have k=2 across Re(w)=1; their continuation
+instead uses the explicitly certified Euler-to-local LOG corridors.
+
+At grade cutoff D define the finite analytic primitive series h_MD by
+ h_k=beta P_(M_k)(k*s)/k, 2<=k<=D,
+ h_1=beta LOG zeta(s)-sum_(k=2..D)h_k.
+The source uses M_k=min(32,max(1,floor(96/k))); the independent checker
+uses min(40,max(1,floor(128/k))). These cutoffs are fixed per grade,
+so each route defines ONE analytic finite approximant on the entire disk.
+The source obtains EXP by a grade Euler recurrence; the checker uses
+finite EXP powers with a Lucas-binomial-modulo-three product kernel.
+
+Let delta=sum_(k=2..D)error(P_(M_k)(k*s))/k. The higher-prime primitive
+tail is bounded by
+ Qtail=(1+2/((D+1)sigma-1))*2^(-(D+1)sigma)
+                         /((D+1)(1-2^-sigma)).
+The primitive grade l1 error is E=|beta|(2delta+Qtail); its grade-one
+error is E1=|beta|(delta+Qtail). With C0=sum_(k<=D)|h_MD,k|, the finite
+EXP error is at most E exp(C0+E) by submultiplicativity of the carry
+Banach algebra. For R>1 with R*2^-sigma<1, its true weighted primitive
+norm is at most
+
+ C_R=R(|h_MD,1|+E1)+|beta| R^2/(2(1-R*2^-sigma))
+                          *(2^(-2sigma)+2^(1-2sigma)/(2sigma-1)).
+
+The missing EXP grades have modulus at most exp(C_R) R^(-D-1).
+The source uses R=2^(sigma/2), the checker R=2^(sigma/3).
+Summing these two errors yields U for the infinite operator.
+For the leading-component controls at sigma=3/4, the missing coefficient
+grades start at D-(b-1)+1. Its weighted tail multiplies the corresponding
+EXP bound by R^(b-1)/(b-1)!, which is at most one for b>=3 and either
+chosen R. Removing grade one only decreases the primitive norm. Thus
+the displayed full-operator U also bounds those leading components.
+
+On rectangles, high-degree P_M and individual LOG zeta terms are
+enclosed by |P_M(k*s)|<=2^(-k*sigma)(1+2/(k*sigma-1))+its Mobius tail,
+and |LOG zeta(m*k*s)|<=2^(-m*k*sigma)(1+2/(m*k*sigma-1)). These are
+enclosures of the SAME finite analytic approximant, not terms set to
+zero or assumptions about interval numerics. They avoid slow native
+interval evaluation. Point and quotient values use native evaluations.
+
+To certify Rouche, let c be the candidate, r the disk radius, R0 the
+outer Cauchy radius, and M a bound for |F_MD| on that outer circle.
+The beyond-linear Taylor remainder on radius r is bounded by
+ M (r/R0)^2/(1-r/R0).
+The source estimates F_MD'(c) using a symmetric quotient at step u;
+its derivative error is at most M*u^2/(R0^3*(1-(u/R0)^2)). The checker
+uses a one-sided quotient and error M*u/(R0^2*(1-u/R0)). Therefore
+
+ (|estimated derivative|_lower-derivative_error)*r
+          -|F_MD(c)|_upper-Taylor_remainder-U >0
+
+proves one simple zero of the TRUE operator on the disk. The comparison
+linear function has its zero inside, and Rouche counts exactly one with
+multiplicity. The certificates use different r,R0,u,D,M_k and include
+rounding enclosures throughout. A finite quotient by itself is not a
+derivative certificate.
+
+Six fresh full ordinary-coefficient/native-zeta groups use producer
+cutoff 4096 and independent 6144, grade cutoffs 64/81, changed Mobius
+cutoffs and smaller wrong-coefficient controls at eight (1/11 then 1/17).
+Their coefficient tails use a(n)<=1. These are six NEW FULL comparison
+groups, bringing the cumulative count from 138 to 144. Five root-value
+groups are auxiliaries. Two old simple zeta-zero disks are reused; native
+zeta(2s) is nonzero on the whole disks and anchored along separate tiled
+corridors. This lets P(2s) and all polynomial coefficients continue
+locally across the critical line. The second branch difference is
+quantitatively nonzero for beta=1,1/2,1/4 on both disks, by (4),(5).
+
+8. PUBLICATION-HISTORY SCOPE AND THE NEXT SEARCH GATE
+
+Global b=2 extends to a radix family by a known digit-carry potential,
+formal LOG/EXP and truncated graded algebras. These ingredients do not
+establish a new primitive. The specific nonlinear global-degree transfer,
+scale recursion, native spurious-zero application and complete ladder
+criterion have unresolved historical originality.
+
+Do NOT equate this with the "ternary convolution" in Snellman, Greedy
+Regular Convolutions, arXiv:2504.02795v4 (14 August 2026), equation (6),
+https://arxiv.org/pdf/2504.02795. That known REGULAR primewise product
+requires shared-prime exponents to be even. Its delta_p times delta_p
+is zero, whereas G_3 gives delta_(p^2). Its name is not a match to the
+global radix-three kernel. This distinction also does not prove novelty.
+Nonvanishing weighted convolutions and their cocycle equation have
+prior art, e.g. Popa Fotino, Generalized convolution ring of arithmetic
+functions (1975),
+https://msp.org/pjm/1975/61-1/pjm-v61-n1-p11-s.pdf.
+That paper's classification assumes a nowhere-zero kernel. It is
+framework evidence, not a classification theorem applied directly to
+this degenerate carry indicator.
+
+This is the nineteenth verified known-kernel consequence, with ten
+candidate families retained. Verified-historically-new operators remain
+zero. The detector now rejects composite-radix binomial nondivisibility,
+misidentified regular ternary prior art, ordinary-output-root fidelity,
+and single-point/single-loop zero-sensitivity tests. Full branch ladders
+and actual-zero-free controls are required before assigning a new
+operator a root-sensitive RH role. The research objective stays active.

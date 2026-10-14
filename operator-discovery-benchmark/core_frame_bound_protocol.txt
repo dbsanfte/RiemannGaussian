@@ -1,0 +1,78 @@
+FRAME RECOVERY BOUND SYNTHESIS AND RESIDUAL EQUIVALENCE AUDIT, VERSION1
+
+Input: candidate10_cutoff_frame_obligation.json and the immutable previous
+catalogue and complete source representations. No arithmetic observations
+or fitted constants select this symbolic experiment. No previous frozen
+file changes. No old tests or search optimizers are rerun.
+
+For every admitted frame W,S, compute the exact quartic polynomial
+P=sum_i W_i^2. Attempt multivariate polynomial division P/S. If the
+remainder vanishes, save the exact quadratic quotient B and P=S*B.
+Otherwise construct A=sum_(j selected,i) v_(j,i)^2 and a universal SOS
+witness for A*S-P:
+ sum_(i,j<k) (s_j*v_(k,i)-s_k*v_(j,i))^2.
+Set B=A in that branch. All coefficients and witnesses are computed from
+the supplied frame AST, without nominated answer formulas.
+
+The selected branch proves K=P/S^2 <= B/S wherever S>0. With symbolic
+rho(X)=c*(1+log2X)^(-q), one fixed c>0 and q>=0, the new arithmetic
+target is S(d(N))-rho(X)*B(d(N))>=0 for EVERY required dyadic scale
+beyond one fixed finite threshold. It would give the UNIFORM bound
+K<=c^(-1)*(1+log2X)^q. Constant rho is the case q=0, not a restriction
+to bounded recovery when a polylogarithmic cost suffices. S>0 remains
+a separate obligation. This is an
+automatically derived sufficient quadratic arithmetic estimate, not a
+proof of that estimate for the actual Mobius moments.
+
+The checker must recompute all polynomial identities and witness squares
+without importing the generator. It also checks that exact quotient is
+chosen whenever it exists, every catalogue candidate appears exactly once,
+all cross coefficients and normalizations stay, and no open arithmetic
+condition is mislabeled proved. Complete source drifts retain their saved
+polynomials, cutoffs, units, scalar, and exact transport correction.
+
+Equivalence audit: expand sum_i W_i*(G-P_i-d_i*J) exactly. Its coefficients
+must be S on G, -W_i on P_i and0 on J. Thus the joined weighted residual
+still equals G-sum_i lambda_i P_i. It contains the original common mode
+with coefficient1. This is an exact conditional equivalence modulo the
+paid quantities, not independent information bounding that common mode.
+
+For each candidate with nonzero polynomial S, generate an exact RATIONAL
+weak-fact countermodel: try the point d_i=i+1, then each coordinate unit
+vector in order, and take the first with S>0 and B>0. A nonzero homogeneous
+sum of linear squares is positive on some coordinate unit vector; P>0
+and B>0 then follow from sum W=S and the verified quotient bound. Reject
+an identically zero S as outside this recoverable-frame protocol. Set
+P_i=0, J=H, and
+R_i=T*H-d_i*H for a unit vector H and arbitrary T. Save S,P,B,K and
+rho=S/(2B). Verify S>0, B>0, K<=1/rho and S-rho*B>=0, yet the joined
+residual is T*H and has arbitrarily large squared norm T^2. The model
+does NOT satisfy the actual arithmetic source AST and must never be
+reported as disproving that source's bound or RH. It shows that even
+proved recovery conditioning plus cutoff identities do not close the
+signed residual. New source-specific arithmetic information is required.
+
+Emit to the next search: exact quadratic recovery conditions for the
+five previously selected constructions; common-mode obstruction and
+full signed residual obligations; all144 inherited channel/transport
+bindings and all720 representation bindings. Parent obligations remain.
+Expand each selected quadratic into its actual complete moment variables,
+identifying moments with the same type and cutoff exponent exactly. The
+checker independently recomputes this substitution and every source
+coefficient. These remain OPEN arithmetic inequalities, even when their
+algebraic substitution is fully verified.
+Algebraic identity alone receives no new signed-control credit. Existing
+unknown arithmetic lemmas remain legitimate targets, not rejected merely
+because the proof backend cannot solve them.
+
+Validation uses generic dimensions, rational and signed inputs, exact
+division with nonzero remainders, corruption tests, the common-mode
+countermodel, and a calibration in which opposite symbolic drifts yield
+an unconditional recovery bound on the stated nonzero domain. Calibration
+is explicitly separate from actual-source discovery. No Mobius moments,
+full signed residual energies, or new arithmetic coefficients are evaluated.
+
+Resources: main300million inclusive charged operations,1800seconds,
+4GiB; separate independent owned development suites then one frozen run.
+Use direct-byte snapshots, no hashes. Preserve all terminal outcomes.
+Full signed arithmetic control and RH remain OPEN.

@@ -1,0 +1,73 @@
+ADMISSION RULES FOR THE GENERATED POST-MAPS
+
+Root-written proof note. The two coarsening arguments were independently
+checked in messages by the Sol6.1 transport reviewer before the run; this
+file is the root's complete proof record, not that reviewer's final memo.
+The separate CORE_ARITHMETIC_GROUPING_REVIEW_009.txt provides the first
+frontier obstruction and the complete source conventions.
+
+1. All17 base programs retain a singleton-prime frontier.
+
+For n prime in(2X,5X/2], n exceeds every permitted stripping cutoff for
+all X>=1024. The stripping step1or2 leaves n unchanged. Any other integer
+with the same stripped key would be n times a nonunit integer and would
+exceed4X-1. Thus its entire class is the singleton n. The complete source
+AST combines before expansion and gives
+ f(p)=-R_u p^(-1/3)+(beta+R_u)p^(-2/3), R_u>0.
+The actual positivity follows also from zeta(2/3)<0,zeta(4/3)>0 and the
+exact residue formula, independently of finite numerical evidence.
+The complete half-step kernel on this band is at least3/(40X), for every
+eta in[-2,2]. Weighted PNT therefore gives grouped absolute mass at least
+c X^(1/3)/(log X)^2 for all sufficiently large X. This is incompatible
+with every fixed polylogarithmic upper bound. No signed target is refuted.
+
+The implementation derives exponent1/3 and its nonzero coefficient from
+the source factor AST, not from a numerical growth fit. The proof template
+would similarly reject a nonzero first-prime term with exponent lambda<1/2
+under its singleton-support hypotheses, with power1-2lambda.
+
+2. Eventual one-bucket post-maps.
+
+Suppose the valuation step is1 and cutoff Y=floor(X^theta), theta>1/2.
+After stripping, every prime factor of r(n) is>Y. For sufficiently large
+X, (Y+1)^2>4X-1, so every residual on the COMPLETE support is1or a prime.
+Removing its largest prime once/all, or its smallest prime once, sends
+every residual to1. Thus all indices have one label and the majorant is
+exactly |Delta W(X)|. This supplies no simpler arithmetic control: it is
+the absolute version of the original full unresolved expression. Exclude
+it from claims of a reduced grouping mechanism. It is not a refuted bound.
+This argument does not apply to valuation step2.
+
+3. Prime-only coarsening by sublinear-width interval maps.
+
+Under the same theta>1/2, step1 assumptions, consider either
+ floor(r^(1/k)), k=2,3,6, or floor(r/floor(X^a)), a=1/3,1/2.
+For r comparable toX, the width of a complete key preimage is respectively
+O_k(X^(1-1/k)) or O(X^a); both are o(X). Take primes in the interior band
+ J_X=[9X/4,19X/8]. For sufficiently large X, every residual with the same
+key as such a prime lies in(2X,5X/2). It is a prime, since the only other
+possible residual is1. An original index n=d*r on that residual would
+exceed4X-1 if d>=2. Thus the ENTIRE arithmetic class contains only actual
+fresh primes in(2X,5X/2), not hidden smaller composites or old-head terms.
+
+Every complete f(p) in these classes is eventually negative. Products
+are positive and the child-minus-parent kernel has the lower bound above.
+Summing the absolute group entries for just these classes is at least
+ (3/(40X)) [sum_(p prime in J_X)|f(p)|]^2
+ >= c X^(1/3)/(log X)^2, by weighted PNT. Grouping neighboring primes
+together has not supplied opposite signs. These10 generated proof routes
+are therefore rejected for cofinal claims before numerical scores.
+
+The interior band is essential: classes touching2X must not be declared
+prime-only. All constants here are asymptotic, independent of X, for a
+fixed generated program. The result is not a prediction of finite failure
+at the exploratory scales. Step2 and theta<=1/2 do not receive this rule.
+
+4. Admitted programs remain unproved.
+
+All other generic post-maps are retained as open constructions. Their exact
+partition identity and triangle inequality neither bound their complete
+grouped absolute sum nor exclude a further proof-route obstruction.
+Actual core coefficients, all mode crosses, units, old-head terms and full
+pair endpoints are preserved. Every selected candidate receives an explicit
+uniform grouped-bound obligation with false all-scale/RH completion flags.

@@ -1,0 +1,100 @@
+INDEPENDENT PERIODIC PROFILE MASS AND FINAL COPY LEFTOVERS (060)
+
+The admitted rules are verify_identity(cert,meter=None) and
+verify_copy_bound(cert,meter=None). No discovery producer is imported, no
+scientific nullspace or winning vector is enumerated, and no scientific source
+table or kernel value is evaluated. Canonical rational/schema helpers and the
+charge-only Meter are reused from the immutable052 independent checker.
+Synthetic tests use the different prime mask [3,7], direct W expressions, and
+tiny independently factored ordinary-Mobius convolution sums.
+
+Source and finite-to-universal identity
+--------------------------------------
+Let p<q be registered actual primes. W(v)=floor(4v)-3floor(2v)+2floor(v).
+The pair (W(v/p),W(v/q)) is in {-1,0,1}^2. The signed profile indicator vector,
+ordered P,Q,D,S, has one nonzero entry: P has (A,0), entry A; Q has (0,B),
+entry -B; D has (A,A), entry A; S has (A,-A), entry A. Pair (0,0) gives zero.
+These are the complete actual source profiles and kernel signs, not fitted
+labels. Each function is a right-continuous step function whose breakpoints
+lie on the quarter grid. In coordinate z=4v their common integer period is
+L=4pq. All n=0..L profiles are reconstructed by integer floors.
+
+For canonical rational x_i and c_b on distinct positive divisors b of L,
+every jump n=1..L is checked exactly:
+ sum_i x_i*(f_i(n/4)-f_i((n-1)/4)) = sum_(b|n) c_b.
+The right side is the jump of sum_b c_b floor(4v/b). The head value is zero.
+Summing the jumps gives sum_b (L/b)c_b=0; the checker also computes this
+zero drift explicitly. Thus both sides are periodic and equal on the full
+quarter grid, on each intervening cell, and at every inclusive jump endpoint.
+Periodicity extends the identity to every real v, not just sample values.
+
+Finite ordinary-Mobius convolution and smooth count
+---------------------------------------------------
+For fixed prime mask M, put mu_M(d)=mu(d) if gcd(d,product(M))=1 and zero
+otherwise. The exact local identity mu_M*One=indicator_M_smooth follows from
+divisor summation: an outside prime contributes 1-1=0, whereas each registered
+prime has only the unit mu_M coefficient and any nonnegative valuation is
+allowed in the One factor. The integer1 is M-smooth and must be retained.
+
+Therefore, for every integer N>=2, the signed weighted profile mass is
+ sum_(d<=4N) mu_M(d)*sum_i x_i f_i(N/d)
+   =sum_b c_b*sum_d mu_M(d) floor(4N/(bd))
+   =sum_b c_b*Psi_M(4N/b).
+This is a finite exact identity. It needs no conditional Dirichlet convergence,
+analytic continuation, or cancellation theorem. The joint original source can
+be extended by zero through d<=4N: if its token is nonzero then d<=4N/p, and
+every term for d>4N also vanishes. Individual floor terms must NOT separately
+be truncated at 4N/p; they can have a longer horizon and cancel outside the
+joint token horizon. Unit d=1 and all q-range exits are included.
+
+If k=|M|, every M-smooth integer <=Y has each prime exponent at most log2(Y).
+For Y>=1, Psi_M(Y)<=(1+log2(Y))^k, while Psi_M(Y)=0 for Y<1. Since b>=1,
+the mass is bounded by sum_b |c_b|*(1+log2(4N))^k, uniformly in integer N>=2.
+This bound is on the signed weighted COUNT, not the total source matching cost.
+
+Uniform token magnitude and copy conservation
+---------------------------------------------
+The actual normalized magnitudes are
+ rgamma(1-alpha)*integral_eps^tau G_M(t)*f_profile(t)*d^-t*t^(-alpha-1) dt,
+ eps=min(tau,N^-gamma), 0<alpha<1, gamma>0, 0<tau<1.
+All source profile magnitude factors are nonnegative and <=2. For d>=1 and
+t>0, d^-t<=1, and G_M(t)<=product(M)*t^k because 1-l^-t<=t*log(l)<=t*l.
+Writing s=1-alpha in (0,1), Gamma(s)>=e^-1/s implies rgamma(s)<=e*s<3.
+The complete magnitude of every token is consequently <=6*product(M)/(k-alpha).
+Neither the unit nor any range exit requires an omitted exceptional magnitude.
+
+The copy certificate requires four positive integer weights w_i<=16 and the
+profile coefficients of the proved identity to equal exactly those weights.
+Each token of profile i becomes w_i equal signed copies of magnitude m_i/w_i.
+Every legal opposite-sign pair removes one positive and one negative copy,
+so preserves the signed copy COUNT, regardless of profile or magnitude.
+After a COMPLETE global opposite-sign residual scan, only one sign remains.
+Its count is the absolute initial signed weighted profile mass. Each remaining
+copy has magnitude <=[6*product(M)/(k-alpha)]/min_i(w_i). Hence final leftover
+cost is uniformly at most
+ [6*product(M)/(k-alpha)]*sum_b|c_b|/min_i(w_i)
+     *(1+log2(4N))^k.
+Both constants and degree are replayed exactly. Partial scans do not satisfy
+this implication. Splitting into copies preserves the original signed sum.
+
+What remains unpaid
+--------------------
+All already-paired absolute difference costs remain OPEN. The rule gives no
+bound on their sum, no full matching-cost estimate, no original signed target
+growth proof, and no RH proof. Different profile weights can worsen pairing
+costs; no dominance over the unweighted policy is inferred. For example equal
+opposite original magnitudes may cancel for weights1,1 but leave nonzero
+paired-plus-residual cost with weights1,2. The all-N paid statement concerns
+only final leftover cost under the specified complete-copy scan mechanism.
+
+Capacity and development
+--------------------------
+Prime mask2..8, actual primes<=1million, L=4pq<=4096; canonical input rationals
+<=4096bits and2500characters; exact intermediate rational components<=32768bits.
+Profiles have four coordinates; floor rows are ascending distinct divisors of
+L with nonzero coefficients. All loops and bit-size checks charge the Meter;
+time/work caps apply before a certificate can be admitted. Public claims and
+types are exact; extra forged proof fields, floats, bool integers, omissions,
+underpriced constants, wrong profile order, and shortened periods are rejected.
+The sole owned synthetic suite and every failure, if any, are preserved in the
+development receipt. No prior suites or scientific studies are replayed.

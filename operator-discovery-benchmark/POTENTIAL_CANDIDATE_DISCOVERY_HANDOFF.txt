@@ -1,0 +1,158 @@
+Structural candidate discovery: completed pilot001
+Date: 2026-10-09
+Archive: potential-candidate-results/pilot-001
+
+Research direction corrected at the user's request
+The user observed that repeated finite-template searches had become numerical
+optimization rather than operator discovery. Publication035 closes that solver
+sequence: relative residual improved to0.36595733935481395, but the exact support
+solve failed. No further optimizer variant on that fixed851-ray template is
+the next action. All prior source/results remain immutable.
+
+New implemented discovery loop
+potential_candidate_language.py evaluates exact compositional arithmetic ASTs
+on complete actual Mobius values. potential_candidate_discovery.py generates
+and structurally mutates programs. run_potential_candidate_discovery.py freezes
+the protocol, runs two generations, saves training constants before validation,
+fixes the final batch before final responses, and conducts one independent audit.
+check_potential_candidate_discovery.py uses independent AST semantics and actual
+mu from trial factorization; producer mu uses complete proper-divisor inversion.
+report_potential_candidate_discovery.py only summarizes already checked results.
+
+There is no coefficient optimizer, gradient step or LP in this new search.
+The supplied grammar/families and ranking rule remain design assumptions;
+this is automatic structural selection within a declared language, not bias-free
+mathematics. The exact identities/estimates are not nominated by expected-output
+assertions in the research path. Ordinal IDs and complete payload equality replace
+cryptographic fingerprints. No new hashes were created.
+
+Complete target and proof obligation
+M(t)=sum_{n<=t}mu(n), E(X)=X^-2 sum_{X<=t<2X}M(t)^2.
+Every program specifies nonnegative rational weights and signed state ASTs U_j:
+ V(X)=X^-2 sum_{X<=t<2X} sum_j w_j U_j(X,t)^2, W(X)=E(X)+V(X).
+Evaluate the FULL W(2X)-W(X), with every child cutoff/mask/root recomputed.
+W(1) is charged in selection. The original E survives every transformation.
+State products, signed mixtures and moving prime sums are allowed. In particular,
+square(sum_p state_p) retains its complete signed cross-prime terms.
+The grammar supports exact rational-root syntax, including square/cube/sixth roots.
+
+Each proof-queue entry explicitly requires: there exists integerq0>=1 such that
+for every integerq>=q0 a finiteCq>=0 independent of dyadicX>=1 satisfies
+ W(2X)-W(X)<=Cq*ceil(X^(1/q)).
+Conditional telescoping bounds E through W>=E, W1 and the geometric sum; the
+memo explains the subsequent ordinary-zeta implication. No universal signed
+estimate, full universal source/compiler binding or RH theorem is admitted.
+
+Actual frozen search
+Six balanced initial families: index maps, masks, signed mixtures, nonlinear
+products, divisor-coupled sums and moving-prime banks. Eight programs per family
+give48 initial structures, plus V=0 baseline. Discovery-selected parents undergo
+32 actual structural mutations spanning index remaps, moving shifts, coprime
+guards, root mixtures, source products and mixtures of parent expressions.
+All81 programs completed training and validation without missing/invalid cases.
+
+Training dyadicX=1,2,4,8,16,32,64; validation96,128,192,256; q=2,3,6,12.
+Exact constants were fitted to training only. Selection preserves family
+coverage, then uses validation failures, anchored costs includingW1, complexity
+and ordinal IDs. Baseline is excluded only from the structural slots; being
+selected does not mean a program outperforms it. No frozen constant was refitted.
+
+Final selected IDs4,16,61,73,67,42,25,26, plus baseline0. IDs61,73,67 are
+second-generation mutations. Final bases384,512,768,1024 use complete source
+through4095. These responses were excluded from this run's adaptation, but
+arithmetic overlaps earlier research; no unseen-prime holdout is claimed.
+The independent checker verified1107 complete measure/case records, recomputed
+fits and selections, and replayed generation by the same generator. It does
+not claim an independently implemented generator. All finite arithmetic passed.
+
+Six selected structures (4,16,61,42,25,26) passed all16 stored finite comparisons
+at the four final scales/four q levels. Baseline also passed all16. ID73 failed
+12 comparisons, including8 dyadic cases; ID67 failed4, including3 dyadic cases.
+Four q comparisons at one scale are not four independent arithmetic samples.
+ID73's training Cq=0 was explicitly refuted at finalX512,768,1024. The counterexample
+atX512 is exact positive innovation10329/524288. This rejects the stored zero
+bound, not every possible scale-independent constant or the operator itself.
+ID67 atX512 has innovation34651/131072, exceeding C12*ceil(512^(1/12))=1/8.
+
+All27 selected actual/control evaluations completed, without missing results.
+The one and partially normalized squarefree source mu(n)^2*(-1 if n even else1)
+each failed all144 frozen comparisons, including the baseline. These controls
+already differ at the base energy; failure alone establishes no new arithmetic
+information supplied by the potential. Irregular final scales are diagnostics;
+the dyadic claim-domain flag remains explicit in every comparison.
+
+Selected state formulas (all potentials use the complete square construction)
+4: M(floor(t/2)). Frozen Cq=3/128 for all four q; W1=1.
+16: sum_{i<=t, i mod m(X)=0}mu(i), m=max(2,floor(X^(1/6))).
+    C2=23/384, C3=C6=C12=23/256; W1=1.
+61: 1_{gcd(t,max(2,floor(sqrt(X))))=1}*(M(t)-M(floor(t/3))).
+    Cq=3/32; W1=2. Mutation of initial18 by a coprime guard.
+73: mu(t)*mu(floor(t^(1/3)))*M(floor(t/2)).
+    Cq=0 (refuted finite constants); W1=1. Mutation of26 by source product.
+67: sum_{d<=floor(X^(1/6))}mu(d)*(M(t)-M(floor(t/d)))
+      - M(floor(t^(1/6))). Cq=1/16; W1=2. Mutation of39 by root mixture.
+42: sum_{p<=floor(X^(1/3)), p prime}M(floor(t/p)).
+    Cq=3/16; W1=1. Prime sum is inside the square, not a sum of squares.
+25: mu(floor(sqrt(t)))*M(floor(t/2)); Cq=3/128; W1=1.
+26: mu(floor(t^(1/3)))*M(floor(t/2)); Cq=3/128; W1=1.
+These are generated numerical leads, not historical-novelty or RH-strength claims.
+
+Completed analytical review
+Three read-only Sol 6.1 reviews are archived in
+potential-candidate-results/pilot-001/analytical_reviews/. Their consolidated
+adjudication is analytical_review.json in the run directory. All eight selected
+states were reviewed; the reviewers did not use final response scores or run
+new arithmetic experiments. The primary agent checked their derivations and
+scope, with access to the completed numerical report. These are mathematical
+prose reviews, not formal proof certificates or a second finite audit.
+Candidate4 has exact dyadic lag identity V(X)=E(X/2)/2 for X>=2 and
+V(1)=0. The added coefficient signs of25/26/73 disappear on squaring as
+squarefree masks; signed cross terms already inside M remain. This classification
+does not prove their storage uniformly bounded. Candidate16's effective modulus
+is only2 throughout every discovery parent/child context (largest512<729=3^6),
+so discovery evidence is limited to parity. Candidate67 has an identically zero
+d=1 summand. Its small root component alone may be bounded, but the cross term
+with the larger bank cannot be discarded. Exact classifications and activation
+regimes should inform the NEXT structural protocol, without rewriting this run.
+The coupling review retains the restricted-prefix complement for16, gained and
+lost output-mask locations for61, factor-bank/root cross terms for67, and all
+old/new prime-prefix pairs for42. None of these identities supplies the required
+uniform signed estimate. No lead is promoted to a proved bound.
+
+Resources and validation
+Frozen34 tests passed in0.181s:13 producer,11 independent,10 workflow.
+Development22,612 operations (including the corrected independent fixture's
+targeted rerun), frozen21,828 plus1m root reserve:1,044,440 total synthetic work.
+Generation/selection2,264,285; discovery23,555,883; final18,413,362; independent
+audit27,028,958. Subtotal before preparation71,262,488 proxy operations.
+One450m complete reservation:40m preparation,10m generation,160m discovery,
+80m final,160m independent. No candidate/stage reset, borrowing or research retry.
+
+Whole producer90.409783s wall/90.127416s CPU,496896KiB process peakRSS.
+Audit58.933146s. Discovery peak1,862,759 counted cells, final1,845,496 and
+independent1,603,701, including the fixed1m root-resident reserve. Generation
+has no numeric-cache live counter; its zero value is not a claim of zero memory.
+Root metadata receives a separate structural-cell bound. Largest rational/index
+counter109bits in generation,20 in discovery,36 in final/audit. Enforced6GiB
+process cap and3600s stage deadlines. Snapshot12 files/145268bytes. These work
+and cell counts are declared proxies, not bit-complexity or physical-byte proofs.
+
+Next action
+The next search should generate candidates through three concrete changes:
+1. Recognize checked lag/mask/padding identities with explicit source and domain
+   scope; leave unrecognized structure unknown. These annotations must not
+   silently merge programs based only on equal finite responses.
+2. Mutate factor placement within distinct summands before squaring, alongside
+   other structural mutations. For example (A+mu(r)B)^2 retains 2mu(r)AB,
+   while (mu(r)A)^2 only adds a squarefree mask. Keep the full mixed expression
+   and its unresolved estimate; a surviving sign alone proves no cancellation.
+3. Allocate selection slots by effective mechanism as well as family, retaining
+   baseline/calibration and unknown exploration. Predeclare affordable tests
+   around effective selector changes before new responses; mark other regimes
+   unexposed. Recompute child selectors and retain every boundary term.
+These are the reviewed next implementation requirements, not features already
+added to the frozen pilot. Prioritize candidates with explicit complete signed
+lemma obligations; preserve uncertainty and exploration outside recognized forms.
+Do not replace them with more numerical solver tuning, claim that a moving
+sixth-root expression was tested beyond its actual regimes, or promote passing
+finite constants to a uniform bound. The full active goal remains unresolved.

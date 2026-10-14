@@ -1,0 +1,23 @@
+{
+  "operations": 75005,
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_signed_work"
+      ],
+      "returncode": 0,
+      "operations": 75005,
+      "elapsed_seconds": 0.08036720802192576,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_signed_work operations=75005\n",
+      "stderr": "test_conditional_history_and_paid_inverse_scope (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_finite_unit_head_and_full_support (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_fractional_delay_complete_log_bank (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_full_prime_power_logbank_and_tamper (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_signed_recurrence_zero_forcing_and_open_base (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_signed_work_not_energy_and_irregular_full_block (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_source_complete_local_rows_and_units (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_strict_program_and_precision_schema (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_weak_reference_retains_signed_parent_and_domain (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_whole_integral_weights_and_cache_accounting (test_check_core_signed_work.SignedWorkTests) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.011s\n\nOK\n",
+      "receipt_lines": 1,
+      "actual_source_max_horizon": 31,
+      "synthetic_max_horizon": 127
+    }
+  ]
+}

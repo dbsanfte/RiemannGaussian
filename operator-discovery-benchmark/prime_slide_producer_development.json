@@ -1,0 +1,14 @@
+{
+  "operations": 1625894,
+  "runs": [
+    {
+      "test": "test_prime_slide_discovery",
+      "returncode": 0,
+      "operations": 1625894,
+      "tests": 8,
+      "runtime_seconds": 0.6160667100048158,
+      "stdout": "SYNTHETIC_WORK module=test_prime_slide_discovery operations=1625894\n",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.547s\n\nOK\n"
+    }
+  ]
+}

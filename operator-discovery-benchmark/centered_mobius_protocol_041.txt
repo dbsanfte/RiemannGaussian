@@ -1,0 +1,90 @@
+CENTERED MOBIUS SIGNED-COVARIANCE SEARCH 041
+
+Purpose: search bounds for the actual OPEN linear endpoint left by040. The
+paid040 error is not optimized again. Full signed parent/child crosses are
+retained. The supplied family is Haar averaging with covariance dissipation,
+not unrestricted automatic proof invention. The new hypothesis is OPEN until
+an all-scale arithmetic argument proves it; interval observations are finite.
+
+Freeze code, exact grammar, selection rules, source binding and tests before
+the run. Do not hash. Source copies provide reproducible code provenance.
+The initial source is the independently checked040 J_q, r=1/3,q=2. Neither
+its ordinary critical Mobius moment nor its target bound may be assumed.
+
+Definitions for EVERY integer X>=1 and fixed integer m>=2:
+ A(n)=m^-1 sum_(j=0..m-1)J_q(m*n+j), I=A-lambda*J_q,
+ E_Z(X)=X^-2 sum_(X<=n<2X)Z(n)^2,
+ C_JI(X)=X^-2 sum_(X<=n<2X)J_q(n)*I(n),
+ D(X)=X^-1 sum_(k=1..2*m*X-1)a(k)^2, a(k)=J_q(k)-J_q(k-1).
+Hypothesis:
+ 2lambda*C_JI+(1+delta)*E_I <= (m*rho-lambda^2)*E_J+C*D.
+All source, analytic-center, head, mixed and child terms remain present.
+
+The generator enumerates m in[2,3,5,7], lambda in[1/2,1,3/2,m^-r],
+rho in[0,1/2,1], delta in[0,1/4,1], C in[0,1]. Constants are fixed, not fitted.
+All rational source r in(0,1/2) are supported. The m^-r option is generated
+from the exact all-prime coefficient law and is not a fitted real exponent.
+At delta0, lambda cancels algebraically. Deduplicate those coordinates before
+selection:288 raw descriptions,216 different expanded inequalities.
+
+Rank within five declared archive strata: zero forcing, positive dissipation
+with bounded-energy implication, arithmetic prime innovation, logarithmic
+implication, and plain direct moment. Rank conditional growth class first,
+then smaller rho, larger dissipation, smaller C, smaller m, rational simplicity,
+and only then the training margin. Preserve absent strata and all rejections.
+The plain m2,rho1,delta0,C0 endpoint is always retained as a named control;
+training failure does not turn it into a lead. No expected winner is asserted.
+
+Numerical separation:
+ - Float discovery constructs only indices0..14335, enough for training X=32,
+   64,128,256,512,1024 for all four m. Only those24 Grams reach selection.
+ - Serialize selected programs before independent source generation/evaluation.
+ - Independent192-bit Arb source horizon is1048575. A distinct-prime product
+   constructs coefficients, separate from the float SPF recurrence.
+ - Audit every selected program at X=2^k,k=0..16. Thus small heads and larger
+   scales cannot silently be excluded when claiming a finite survivor.
+ - After selection freeze, draw four additional irregular integers per selected
+   m from[65537,floor((H+1)/(2m))], using fixed seed410041. Sampling is without
+   replacement and excludes existing scales. Store the exact scale manifest.
+ - No archive is reused. This is separation within this run; do not claim the
+   underlying primes/Mobius coefficients were historically unseen in all other
+   project studies. A finite failure rejects the stated fixed-C hypothesis,
+   not every possible constant or every signed-correlation construction.
+
+Proof admission, independent of numerical success:
+ |K_r*mu|<=1 follows from complete all-prime local factors, every valuation.
+ A rigorous absolute kappa ceiling gives a uniform centered-increment bound B.
+ The complete Haar variance costs B^2(m^2-1)/(12mX); D<=2mB^2.
+ A TRUE generated covariance bound gives
+ E_J(mX)+(delta/m)E_I <=rho E_J(X)+(C/m)D+V_m.
+ rho<1 or rho1,C0 yields bounded energy; rho1,C>0 yields O(log X).
+ Require the hypothesis at EVERY integer X. For m>2 retain all m-1 initial
+ seed chains and the full covering factor; single m-adic windows leave gaps.
+ The positive-prefix countermodel with retained unit refutes only a proof
+ from increment-size/unit premises. It is not the actual arithmetic source.
+ Exact prime-divisibility identities retain the special valuation-one crossing
+ at q. They are identities, not an inferred bound on the prime-free remainder.
+
+The independent argument checker imports neither current source producer nor
+selector. It verifies the separate scalar ceiling and exact conditional proof
+rules. The independent interval evaluator encloses all signed moments and
+returns pass, fail or unresolved; midpoint signs never certify an inequality.
+Successful finite tests leave the universal covariance premise OPEN.
+
+Resources:16GiB address-space cap; float source cap500m operations/600s;
+Arb source and each audit shard cap1b operations/1200s. One complete Arb source
+is generated; independent(m,X) audit windows are balanced across2fork workers,
+each with a private Gram cache and meter. Read-only source arrays are inherited.
+The conservative source-memory estimate times(parent+workers) must stay below
+15GiB. No quadratic index-pair table or full float final-source vector is built.
+Only selected moments, not million-line coefficient arrays, are published.
+
+Output: centered-mobius-bound-results/recovery-001, exclusive writes. Preserve any
+failure and do not silently rerun the same directory. Preserve040 and all prior
+original-F/037 obligations. This run's completion is a completed experiment,
+never a claim that the active signed-arithmetic-control goal or RH is proved.
+
+Attempt pilot-001 stopped in analytic normalization before any coefficient or
+training observation: python-flint does not support int(arb). Recovery extracts
+the exact fmpz ceiling and adds a scalar-only integration regression. The failed
+snapshot is retained. The grammar, constants and selection rules are unchanged.

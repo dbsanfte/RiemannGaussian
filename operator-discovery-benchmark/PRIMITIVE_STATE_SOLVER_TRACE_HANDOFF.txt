@@ -1,0 +1,107 @@
+PRIMITIVE STATE SOLVER TRACE HANDOFF — publication012
+
+The arithmetic target and cone are unchanged from publication011: the full15
+affine state, 366 square groups, 613 signed relation groups including all210
+primitive/state localizers, three complete PSD matrices, signed storage, and
+q=6,C=32 on historical development scales1,2,3,5 plus gamma-zero auxiliary.
+This remains a finite template search. No uniform signed innovation estimate,
+critical finite certificate, new exact separator, or RH proof has been found.
+The all-scale, boundary, cofinal-q and analytic bridge obligations in earlier
+handoffs still apply. Every previous publication and frozen source is immutable.
+
+Completed diagnostic protocol
+
+primitive-state-solver-trace-001 froze94 sources and passed25 tests. It ran
+both solvers in parallel, one numerical thread per worker,3GiB per worker,
+6GiB total,900 cooperative seconds including source construction and1800
+external seconds. It preserved bounded native logs, termination details,
+exact original/scaled equation hashes, compression receipts, original variable
+layouts and durable progress. No exact reconstruction or proof admission ran.
+
+The dual retained1193 of1853 exact augmented equations on11698 variables.
+HiGHS stopped after5376 simplex iterations and251.74 native seconds with
+model statusUnknown. SciPy status4 returned no vector or support. In the log,
+reported primal infeasibility worsened sharply after a basis reinversion;
+this is a numerical diagnostic, not an infeasibility theorem. Matrix entries
+ranged from about3.21e-5 to1. No coefficient-deletion warning was observed.
+Worker elapsed366.5115 seconds, peak1328188KiB, completed before its deadline.
+
+The primal retained4029 of5641 exact augmented equations on1957 variables.
+Clarabel stopped with NumericalError at iteration10, zero final step, after
+2.465841288 native seconds. Native normalized primal residual was6.22536e-4
+and dual residual3.58663e-5. Original scaled coefficient range was about
+1.26777e-6 to1. Worker elapsed114.2022 seconds, peak1235960KiB, no deadline
+exhaustion. These runs show that longer runtime alone did not resolve the
+failures. They do not establish the cause or feasibility of the declared cone.
+
+check_primitive_state_solver_trace_run.py independently rebuilt the complete
+arithmetic and original equation geometry once for both jobs, verified the
+source/target bindings and exact row transformations, and checked logs,
+progress, process resources and original-coordinate numerical residuals.
+Its review passed in114.5862 seconds. The original numerical systems are
+independently rebuilt; the primal CVXPY-to-Clarabel canonical matrix is only
+recorded and hash-bound. Floating residuals have no certified rounding enclosure.
+
+Coordinate export defect and separate correction
+
+Inspection found a defect in the trace producer's interpretation of failed
+primal iterates. Its CVXPY inverse adapter applies nonnegative-attribute
+projection to scalar variables.169 negative native scalar coordinates were
+clipped to zero before the archived original_vector was produced. Thus that
+field is an attribute-projected vector, despite its producer label
+raw_failed_last_iterate. The full unmodified native canonical x was retained.
+The frozen trace is preserved without modification.
+
+primitive-state-native-coordinate-review-001 separately binds the original
+trace and independent audit. New check_primitive_state_raw_iterate.py replays
+the complete saved canonical coordinate map directly, with no projection,
+clipping, refit or solver rerun. Seven tests include actual installed CVXPY
+projection and symmetric-coordinate calibration. A separate complete exact
+arithmetic rebuild evaluates the corrected vector against all original rows.
+The recorded canonical map is checked for a bijection and its coordinate
+convention; it is not independently derived from the canonical solver matrix.
+
+The corrected native vector has maximum unscaled equality residual
+0.020195985678034146 and scaled residual0.0001022257349631465. The archived
+projected vector instead has residual128.43255688952414 and scaled0.3367442262.
+The raw minimum constrained scalar is-0.035538669432749845. Child and storage
+Gram matrices have negative diagonals, respectively-0.02844210063805478 and
+-0.03903082884632761; therefore this floating vector fails PSD even without
+relying on approximate eigenvalues. Raw objective97.580430205061 agrees with
+the native objective; projected objective98.997108473264 differs.
+
+Neither vector is an admitted certificate. Their residual difference diagnoses
+the transport defect, not a gain in arithmetic cancellation. Publication012
+requires and binds the correction, reports archived and corrected metrics
+separately, preserves both full artifacts, and retains UNKNOWN feasibility.
+
+Next exact simplification
+
+Proportional-row compression leaves general linear dependencies. Structurally,
+the613 signed relation pairs are opposite coefficient columns; the120 storage
+columns equal child minus four times parent. Hence the1957-column primal
+coefficient matrix has rank at most1224. With4029 retained equations, at least
+2805 coefficient-row dependencies remain. The AUGMENTED matrix can have rank
+1225 if the target is inconsistent; the RHS must always participate in any
+reduction. Never discard contradictory equations using coefficient rank alone.
+
+The next algorithm selects an exact basis of ORIGINAL augmented equations,
+with a rational elimination transcript replaying every discarded equation.
+It keeps all original variables, the objective, positivity constraints and
+PSD cones. Verified column identities may accelerate only the row-basis
+computation: they do not authorize dropping solver variables or changing cones.
+Any resource-limited or incomplete transcript must return UNKNOWN and must
+not produce a usable reduced system. Avoid a giant dense exact RREF whose
+work estimate exceeds the450-million charged backend ceiling. Account for
+source construction, projection, basis production and independent replay.
+
+New generic row-basis and projection modules are under development separately
+from this publication. They require their own independent checks and frozen
+protocol before arithmetic research scoring. No speedup or successful basis
+reduction has yet been demonstrated on the arithmetic instance.
+
+After a useful numerical proposal, restore and verify the entire ORIGINAL
+coefficient identity and all PSD/sign constraints exactly. Only then attempt
+uniform matching and the critical innovation budget analytically. The central
+unresolved mathematical inequality remains unresolved. The research goal stays
+active; global_bound_proved=False; RH_proved=False.

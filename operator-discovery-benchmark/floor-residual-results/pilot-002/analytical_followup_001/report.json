@@ -1,0 +1,116 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "additional_norms_evaluated": 0,
+  "advertised_bounds_refuted": 4,
+  "cutoff_operations": 6772,
+  "cutoff_replay_operations": 948,
+  "development_receipts": {
+    "check_floor_residual_rates_044_development.json": {
+      "additional_norms_evaluated": false,
+      "edits_stopped": true,
+      "old_suites_run": false,
+      "operations": 495160,
+      "owner": "independent_checker",
+      "review": "Exact recipe AST limits, complete finite-cell and all higher-support elimination, nonzero logarithmic coefficient licenses, child forcing scope, strict eta partitions, compressed supplied-witness frontier admission.",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_check_floor_residual_rates_044"
+          ],
+          "elapsed_seconds": 0.2035394370323047,
+          "operations": 495160,
+          "peak_rss_KiB": 29196,
+          "returncode": 0,
+          "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.126s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_rates_044 operations=495160 checker_operations=312053 fixture_operations=183107 elapsed_seconds=0.12618313304847106\n",
+          "tests": 20
+        }
+      ],
+      "source_arrays_read": false,
+      "tests": 20
+    },
+    "floor_residual_cutoff_guard_044_development_receipt.json": {
+      "elapsed_seconds": 0.0109758650069125,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "metered_proxy_operations": 2035,
+      "module": "test_floor_residual_cutoff_guard_044",
+      "scope": "synthetic ASTs only; no actual selected applications, source tables, or norms",
+      "tests_run": 11
+    },
+    "floor_residual_followup_044_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.013622406986542046,
+          "errors": 0,
+          "failures": 0,
+          "operations": 42041,
+          "returncode": 0,
+          "tests": 7
+        }
+      ],
+      "schema": "floor-followup-integration-v1",
+      "scope": "synthetic ASTs only; no saved candidate application, source arrays or norms"
+    },
+    "floor_residual_rate_review_044_development.json": {
+      "actual_selected_or_frontier_applied": false,
+      "additional_norms_evaluated": false,
+      "cumulative_operations": 79016,
+      "frozen_files_modified": false,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.017059512028936297,
+          "errors": 0,
+          "exposure": "synthetic typed ASTs, rational/log monomials and imported recovery witnesses only",
+          "failures": 1,
+          "operations": 39508,
+          "returncode": 1,
+          "tests": 12
+        },
+        {
+          "elapsed_seconds": 0.016991208016406745,
+          "errors": 0,
+          "exposure": "synthetic typed ASTs, rational/log monomials and imported recovery witnesses only",
+          "failures": 0,
+          "operations": 39508,
+          "returncode": 0,
+          "tests": 12
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "schema": "floor-log-rate-development-v1",
+      "source_arrays_read": false
+    }
+  },
+  "elapsed_seconds": 3.5081563380081207,
+  "families_with_licensed_target_rate_caps": 362,
+  "followup_frozen_files": 17,
+  "frontier_cutoff_refutations": 6,
+  "frontier_family_count": 581,
+  "frontier_rate_operations": 10373865,
+  "independent_rate_operations": 999221,
+  "old_studies_rerun": 0,
+  "parent_frozen_files": 18,
+  "prior_finite_bounds_verified": 12,
+  "selected_rate_operations": 53565,
+  "selected_rate_refutations": 2,
+  "selected_rule_count": 4,
+  "selected_uniform_cutoff_refutations": 2,
+  "source_arrays_read": false,
+  "status": "FLOOR_AUXILIARY_BOUND_CLAIMS_ANALYTICALLY_REVIEWED",
+  "target_rate_refutations_by_eta": {
+    "1": 142,
+    "1/2": 0,
+    "1/3": 0,
+    "1/5": 0,
+    "2/3": 0
+  },
+  "whole_signed_bound_proved": false
+}

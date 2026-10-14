@@ -1,0 +1,34 @@
+{
+  "schema": "count-control-checker-development-v1",
+  "status": "PASS",
+  "latest_outcome": "PASS",
+  "distinct_tests": 10,
+  "successful_test_executions": 14,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 9,
+      "status": "PASS",
+      "output": "test_arithmetic_refutation_and_innovation_ambiguity (test_check_mobius_count_control_076.Tests) ... ok\ntest_base_cache_independent_and_memory_gate (test_check_mobius_count_control_076.Tests) ... ok\ntest_baseline_full_base_and_flags (test_check_mobius_count_control_076.Tests) ... ok\ntest_correlation_rounding_and_zero_crossing (test_check_mobius_count_control_076.Tests) ... ok\ntest_empty_counts_units_and_signed_intervals (test_check_mobius_count_control_076.Tests) ... ok\ntest_fractional_gamma_roots_and_cache (test_check_mobius_count_control_076.Tests) ... ok\ntest_input_binding_and_tampering (test_check_mobius_count_control_076.Tests) ... ok\ntest_repeated_columns_negative_and_direct_gamma (test_check_mobius_count_control_076.Tests) ... ok\ntest_structural_rejections (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.019s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 4,
+      "status": "PASS",
+      "output": "test_arithmetic_refutation_and_innovation_ambiguity (test_check_mobius_count_control_076.Tests) ... ok\ntest_correlation_rounding_and_zero_crossing (test_check_mobius_count_control_076.Tests) ... ok\ntest_fractional_gamma_roots_and_cache (test_check_mobius_count_control_076.Tests) ... ok\ntest_base_cache_independent_and_memory_gate (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "tests_run": 1,
+      "status": "PASS",
+      "output": "test_structural_boundary_tightening_and_power_gate (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_scale_runs": false,
+  "scientific_artifact_reads": false,
+  "hashes_used": false,
+  "agents_spawned": false,
+  "reuse": "frozen independent075 source/shape/Meter and073 exact rational/root primitives",
+  "review_reads": "075 mathematical review, static feedback code; initial review glob also exposed postreview numerical discussion, not used"
+}

@@ -1,0 +1,156 @@
+SIGNED FLOOR RESIDUALS044: TARGET ROLES, COMPLETE COVARIANCE AND WHOLE TAILS
+
+Independent rule admission. Earlier043 and all preceding sources/results are
+unchanged. No original arithmetic coefficient arrays or earlier studies are
+used for development. Imported theorems are identified below; the detector
+does not discover or prove those theorems by selecting a coefficient recipe.
+
+1. General signed vectors and the target zero response
+
+A program is exactly {id,constant,coefficients,steps}, defining, with zero
+extension outside(0,1],
+ e(x)=C-sum c_n f_n(x)-sum d_q I_q(x),
+ f_n(x)=floor(1/x)/n-floor(1/(nx)), I_q=1_(x<=1/q).
+On cell k=floor(1/x), f_n=(k mod n)/n and I_q=1_(k>=q).
+Indices are sorted distinct integers2..4096; combined support<=2048.
+Coefficients and C are canonical exact rational strings, including arbitrary
+rational denominators within the stated bit/work caps. Zero coefficients are
+omitted. A signed auxiliary difference can have C=0. It is a diagnostic
+vector, not automatically an RH-bearing target. Target admission requires
+C=1 and steps=[]; a caller cannot replace this source/role guard by a flag.
+
+The initial absolutely integrated Mellin identity for Re(s)>1 is
+ M f_n(s)=(n^-1-n^-s)zeta(s)/s.
+Boundedness extends the left side holomorphically to Re(s)>0, giving analytic
+continuation of that formula; the singularity at1 is removable. An indicator
+has Mellin response q^-s/s. At an actual zeta zero rho to the right of1/2,
+the general vector response is(C-sum d_q q^-rho)/rho, whereas the admitted
+target response is1/rho. Hilbert Cauchy-Schwarz therefore gives
+ ||e||^2 >=(2Re(rho)-1)/|rho|^2
+for every finite target. A sequence of its whole norms tending to0 excludes
+all right-of-half zeros. No convergence or RH conclusion is obtained merely
+from one finite global norm, an auxiliary difference, or finite observations.
+
+2. Exact periodic covariance, including signed pairs and constant component
+
+After every step threshold has activated, e(k) is a periodic function of k.
+The period can be the enormous lcm of the floor indices; it need not be
+enumerated. Its exact period mean is
+ mu=C-sum d_q-sum c_n(n-1)/(2n).
+For g=gcd(m,n), covariance of(k mod m)/m and(k mod n)/n is
+ (g^2-1)/(12mn).
+One elementary proof conditions on k mod g: the two remaining coordinates
+are independent and uniform over a complete joint period. Their shared
+coordinate has variance(g^2-1)/12. Consequently
+ V=mu^2+sum_(m,n)c_m c_n(gcd(m,n)^2-1)/(12mn)
+is the FULL period mean-square, not just its variance. Signed cross terms
+can cancel; deleting them, taking absolute coefficients before the Gram,
+or omitting mu^2 gives a different quantity and cannot price this certificate.
+
+Choose an exact lattice D making C*D, c_n*D/n and d_q*D integers. Write
+ w_n=c_n*D/n and T=2D(C-sum d_q)-sum w_n(n-1).
+The Jordan totient identity gives a positive form while retaining all signs:
+ gcd(m,n)^2-1=sum_(d|m,n,d>1)J2(d),
+ S=sum_(d>1)J2(d)*(sum_(d|n)w_n)^2,
+ V=(3T^2+S)/(12D^2), variance=S/(12D^2).
+J2(p^a)=(p^2-1)p^(2a-2). Each SIGNED inner sum is collected before its
+square. The certificate records every d dividing at least one occupied
+index, including exact-zero inner sums. The checker independently factors
+occupied indices and enumerates their divisors; the producer uses a dense
+multiple-sum/Jordan sieve. Exact small-period and ordered-gcd calibrations
+check the mathematical identity independently of both implementations.
+
+3. Imported large sieve and a rigorous unobserved weighted tail
+
+Primary provider: H. L. Montgomery and R. C. Vaughan, 'The large sieve',
+Mathematika20(1973), Theorem1(1.4) and its matrix duality Lemma1:
+ https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf
+The original bound is length L plus inverse frequency spacing. Its '-1'
+sharpening is not used or attributed to this primary theorem.
+
+Each periodic f_n has a finite discrete Fourier expansion with rational
+frequencies of reduced denominator<=n. Equal frequencies are merged,
+including the zero frequency. If K is the largest floor index(default1),
+distinct frequencies are separated on the circle by at least1/K^2. Parseval
+over the complete period gives sum|Fourier coefficients|^2=V. The dual large
+sieve thus bounds any consecutive L integer cells by
+ sum e(k)^2 <=(L+K^2)V.
+This is a rule for the periodic state AFTER every indicator has activated.
+It is not asserted for an earlier interval crossing a step threshold.
+
+Let a=H+1, require H>=all step q, and w(k)=1/[k(k+1)]. Set
+ A_j=sum_(k=a..a+j-1)e(k)^2 <=(j+K^2)V.
+Discrete partial summation, with the terminal product tending to0, yields
+ sum_(k>=a)e(k)^2 w(k)
+ <=V sum_(j>=1)(j+K^2)[w(a+j-1)-w(a+j)]
+ =V[1/a+K^2/(a(a+1))].
+The equality uses sum j*Delta w=1/a and sum Delta w=w(a).
+The independent pointwise alternative is M^2/a, where
+ M=|C-sum d_q|+sum|c_n|(n-1)/n.
+Both cover every remaining cell to infinity. The selected upper bound is
+their exact rational minimum. No observed tail sign, empirical period,
+fitted constant or finite L stopping point is used to infer the infinite tail.
+
+The exact head is sum_(k=1..H)e(k)^2/[k(k+1)], with integer recurrence
+ R(0)=C*D,
+ R(k)-R(k-1)=-sum w_n+sum_(n|k)c_n*D-sum_(q=k)d_q*D.
+The checker scans a heap of the next wrap events and one-time steps, then
+accumulates at least256-bit Arb. The producer uses a dense event array and
+192-bit Arb. Head limits are0..8388608. Input/intermediate bit caps and
+explicit meter charges are enforced before expensive replay. Exact dyadic
+head/whole endpoints must contain the independent head interval and the
+FULL selected tail range[0,upper]. Decimal display balls are finite,
+overlapping diagnostics only; exact endpoints drive all admission/ranking.
+Cache/work counters are descriptive and cannot license a proof step.
+
+4. Dilation and signed recovery
+
+D_q f_n=f_(qn)-f_q/n and D_q I_s=I_(qs), exactly at jumps as well.
+D_q e has C=0 and a constant indicator C*I_q, so residual dilation must
+retain that unit term. The API compile_dilation lifts the subtracted floor/
+step combination; compile_residual_dilation additionally inserts-C in its
+step coefficient at q. These two meanings are explicitly separate.
+For target parent/child and rational b, compile
+ h=1-g_child-b I_q+b D_q g_parent,
+ e_child=h+b D_q e_parent.
+The whole norm identity retains the signed cross:
+ ||e_child||^2=||h||^2+(b^2/q)||e_parent||^2+2b<h,D_q e_parent>.
+The norm operator price is1/q. b=0 is an endpoint restatement. An auxiliary
+vector norm is useful only with its exact role/recovery identity; smallness
+alone cannot erase the main source, unit, forcing or required signed cross.
+
+5. Global convergence leaves and imported geometric-rate exclusion
+
+For t=b^2/q<1, an OPEN leaf||h_N||^2<=A/L(N)^eta at EVERY N=N0*q^j,
+integer N0>=1, fixed recipe and parameters, L(N)=N.bit_length(),
+0<eta<=1,A>=0 gives a legitimate CONDITIONAL convergence implication.
+If t>0 choose Young y=(1-t)/(2t), rho=(1+t)/2<1,B=(1+1/y)A.
+For b=0 use rho=0,B=A. Since L(N0*q^i)>=1+i,
+ E_j<=rho^j E0+B sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta ->0.
+No finite records discharge this all-scale leaf. All convergence/RH proof
+flags remain false; b=0 is labeled endpoint-equivalent.
+
+Burnol's unconditional Theorem1.3, https://arxiv.org/pdf/math/0103058 ,
+gives a positive lower limit for log(N)*E_N for pure targets supported<=N.
+The inclusion follows from f_n={1/(nx)}-{1/x}/n, whose fractional-part
+parameters are1/n and1. Along N=N0*q^j this excludes uniform geometric norm
+decay. Thus a strict relative forcing contraction is a negative calibration,
+not a plausible OPEN convergence provider in this linear-support family.
+This does not exclude slower logarithmic convergence or arbitrary growing
+support. The zero-forcing A=0 limit is also geometrically excluded here.
+
+A separate exact finite-dictionary gate remains: for constant-one forcing,
+take a common multiple M of all floor indices beyond all indicator indices.
+The three cells1,M,M+1 satisfy h(1)+h(M)-h(M+1)=1 and hence
+ ||h||^2>=1/[2(1+(M+1)^2)].
+Constant-zero diagnostic vectors do not have this gap. A growing dictionary
+has a moving M and a potentially vanishing gap; it is not refuted by this
+fixed-stencil rule. This gate cannot be repurposed as an RH impossibility.
+
+Public APIs: verify_program, compile_dilation, compile_residual_dilation,
+verify_family_refinement, verify_norm, periodic_energy,
+verify_log_forcing_gate, fixed_stencil_guard, geometric_rate_guard.
+No producer functions are imported into the checker. The detector searches
+recipes and exact finite refinements inside this supplied theorem language;
+finite global norms and signed auxiliary diagnostics do not establish the
+remaining global convergence assertion or a bound on the original full core.

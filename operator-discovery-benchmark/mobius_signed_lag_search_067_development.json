@@ -1,0 +1,28 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new test_mobius_signed_lag_067 suite",
+      "returncode": 0,
+      "tests": 9,
+      "stdout": "test_all_small_source_prefixes_have_complete_moment_identity (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_direct_coefficients_are_retained_separately (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_empty_head_and_full_floor_closure (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_fractional_cutoff_exact_without_root_whitelist (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_integer_polynomial_matches_direct_signed_correlations (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_missing_source_endpoint_and_mixed_raw_row_are_rejected (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_near_far_partition_and_full_cutoff_cover_every_lag (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_rational_sqrt_rounds_up_and_within_one_unit (test_mobius_signed_lag_067.SignedLagTests) ... ok\ntest_summary_preserves_every_fraction_and_all_scope_flags (test_mobius_signed_lag_067.SignedLagTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.157s\n\nOK\n",
+      "operations": 32959693,
+      "elapsed_seconds": 0.15705263998825103,
+      "peak_rss_KiB": 26112
+    },
+    {
+      "command": "new independent067 pipeline, same-source binding and precise evaluation scope flags",
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_independent_new_pipeline_and_strict_same_source_binding (test_mobius_signed_lag_067.SignedLagTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.300s\n\nOK\n",
+      "operations": 4211451,
+      "elapsed_seconds": 0.299753129016608,
+      "peak_rss_KiB": 44384
+    }
+  ],
+  "operations": 37171144,
+  "unique_new_synthetic_tests": 10,
+  "final_status": "PASS",
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false
+}

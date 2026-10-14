@@ -1,0 +1,55 @@
+Prospective035: sparse coupled face solves on the licensed separator system
+
+New method: warm-start a nonnegative active-set search from the complete032
+selected vector, recomputing every current residual. Archived scores are not
+used as new evidence. The exact031 source/scaling/851-ray family is unchanged.
+This is a new method with a new complete ledger, not an extension of032's
+coordinate trajectory. Older failed searches and frozen files stay intact.
+No actual new source/metric/score/face work before freeze; no hashes.
+
+One450m reservation:40m prep,40m model,190m proposal,90m reconstruction,
+90m sole independent audit. Prep includes25m cumulative synthetic work,
+10m independent I/O,5m other work. Development plus one frozen suite and1m
+root/scaffolding share25m. Never reset consumed costs for a retry. Worker
+and audit sequential6GiB/one thread/3600 cooperative seconds, producer
+external7200seconds. Limits4096/8193bits,6m live cells,8MiB proposal/review/
+snapshot,64KiB metadata; prior input byte caps remain including the warm seed.
+
+Full-source sparse proxies:setup=12nnz+64(m+n)+65536,
+gradient=8nnz+32(m+n)+512,commit=8nnz+48(m+n)+1024,
+final=12nnz+64(m+n)+2048. A k-column face with z nonzeros charges
+face_setup=8z+48(m+k)+1024, cg_step=12z+64(m+k)+1024,
+up to min(128,2k) CG attempts. Before every global gradient reserve the
+worst full-source face setup, its full CG cap, commit and final diagnostic.
+Only actual blocks are charged, including partial attempts on failure.
+Full/face counts, active ids and accepted checkpoints are retained and
+independently reconciled. These are work proxies, not hardware counters.
+
+All face coefficients are coupled through sparse matrix/transpose products;
+no dense factorization, implicit free optimizer work or support trimming.
+Face iterates may be signed internally. A guarded boundary interpolation
+returns a nonnegative full vector, and every strictlypositive selected weight
+reaches the same original exact reconstruction. A no-positive inactive
+correlation after approximate face solves is only diagnostic, as are gamma0,
+zero curvature, tiny residuals and the final weighted mapping norm.
+
+Exact admission remains all851 ray weights,782 row multipliers and the full
+1224-coordinate negative-pairing Farkas identity under the shared90m audit.
+An exact separator would exclude only this augmented finite template. The
+signed all-scale arithmetic estimate, universal identity, uniform scalar and
+initial-storage budgets, cofinal parameters and ordinary-zeta bridge remain
+unresolved requirements of the full active goal.
+
+Development accounting before freeze: the producer's16 tests passed once,
+charging1,214,928 proxy operations. The independent core's10 tests passed once,
+charging1,358,584. Root's12 workflow tests passed once and are covered by the
+declared1m root/scaffolding reserve. Total metered development2,573,512;
+the single frozen combined suite will add its reported cumulative receipt.
+No second prefreeze combined suite or actual-input development calculation.
+
+Research priority after this already implemented bounded experiment: structural
+candidate discovery. Another optimizer variant on this fixed851-ray template
+is not the next research action. Candidate generation must alter arithmetic
+expressions and scale relations, carry the full signed target/remainder and
+explicit uniform proof obligations, and retain evidence independently of any
+coefficient-fitting success. Better finite residuals alone are diagnostics.

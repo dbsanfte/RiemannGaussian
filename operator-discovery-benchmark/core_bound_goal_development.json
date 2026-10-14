@@ -1,0 +1,38 @@
+{
+  "operations": 328570,
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 132740,
+      "elapsed_seconds": 0.5344374880078249,
+      "stdout": "core_bound_goal_generator_operations=132740\n",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.115s\n\nOK\n",
+      "tests": [
+        "test_core_bound_goal_search",
+        "test_run_core_bound_goal_search"
+      ]
+    },
+    {
+      "returncode": 0,
+      "operations": 97915,
+      "elapsed_seconds": 0.13682026797323488,
+      "stdout": "core_bound_goal_generator_operations=97915\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.067s\n\nOK\n",
+      "tests": [
+        "test_core_bound_goal_search.BoundGoalTests.test_actual_source_generates_open_multi_residual_goals"
+      ],
+      "reason": "verify explicit known-head gates, mass premises and signed-complement dependency"
+    },
+    {
+      "returncode": 0,
+      "operations": 97915,
+      "elapsed_seconds": 0.15279689800809138,
+      "stdout": "core_bound_goal_generator_operations=97915\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.068s\n\nOK\n",
+      "tests": [
+        "test_core_bound_goal_search.BoundGoalTests.test_actual_source_generates_open_multi_residual_goals"
+      ],
+      "reason": "verify automatic feedback switches infeasible separate-remainder targets to joint signed control"
+    }
+  ]
+}

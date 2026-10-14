@@ -1,0 +1,30 @@
+045 SUPPORT-CAPACITY RECOVERY
+
+The original pilot-003 completed proof gates, training and candidate selection.
+Its final compilation stopped at the frozen checker support limit2048. No final
+norm was evaluated and no partial batch was persisted. Preserve that failure,
+all original sources, all formulas, selected bounds and final parents607,743,877.
+
+Resume from saved search.json; do not rerun proof gates or training. Recompile
+the same batch using isolated instances of the frozen044 producer and checker.
+Set only their MAX_SUPPORT to3072, which covers the maximum possible support
+at registered child2631. Index4096, input4096bit, intermediate8192bit, work,
+time and aggregate16GiB memory guards remain active. Old imported instances
+retain2048. No source text, arithmetic rule or certificate schema is changed.
+
+Three new dense synthetic regressions check support2051, independent full norm
+replay, altered-source rejection, signed refinement with its unit/indicator,
+the raised support limit, and unchanged index and bit limits. The sole focused
+suite passed3/3. Previous successful tests and scientific studies are not rerun.
+
+Freeze five recovery source/test/receipt/protocol files before application.
+Independently compile and replay the exact source programs, then generate the
+global argument queue, perform memory preflight and run the original two-worker
+whole-domain audit at H1048576. Persist each completed certificate immediately.
+Retain a failed recovery rather than replacing its outputs. All previous54
+sources are compared byte-for-byte; no hashes. Resource totals explicitly
+exclude unavailable counters from the first aborted compilation.
+
+Finite success is not an all-scale theorem. Moment/profile identities and the
+unconditional harmonic bound do not prove joint critical-line transfer and
+truncation control, the original F/centered-Mobius bounds, or RH.

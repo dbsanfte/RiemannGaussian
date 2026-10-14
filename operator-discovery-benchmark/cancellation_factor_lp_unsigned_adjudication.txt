@@ -1,0 +1,19 @@
+Exact algebraic adjudication of the supplied unsigned sparse-LP retry
+
+This is a post-outcome analysis of lp-retry-001/attempts/001.json. Original SDP/resource outcomes remain unchanged. The accepted shared coefficients are exactly: square group22 weight1 (all pair differences with child kernel), square group58 weight2 (child half-prefix atom), relation group9 weight−1 (all norm relations with child rowmass); all other coefficients zero. In particular all176 new factor square and88 new factor relation coefficients vanish. Both Gram matrices were fixed zero by this retry's protocol. There is no new factor cancellation in this accepted formula.
+
+For arbitrary integer X>=1, N=4X−1, formal P_t=sum_{i<=t}x_i, K_{2X}(j)=max(0,4X−max(2X,j)), rowmass_i=sum_{t=max(2X,i)}^{4X−1}t, and h_i=mu(i)^2, define U_X=sum_i rowmass_i h_i. The child half-prefix square group gives
+  2 sum_{t=2X}^{4X−1}P_floor(t/2)^2 = 4 sum_{n=X}^{2X−1}P_n^2,
+because every n in the parent block occurs twice, at t=2n and2n+1. This identity includes both endpoints and holds for arbitrary formal coefficients.
+
+The exact Cauchy identity at each child t is
+  t sum_{i<=t}x_i^2−P_t^2 = sum_{i<j<=t}(x_i−x_j)^2.
+Summing over t in [2X,4X) yields the full kernel-weighted pair sum, with coefficient K_{2X}(j) for every i<j. Consequently the accepted all-scale polynomial identity is
+  U_X−Delta_X = sum_{i<j<=N}K_{2X}(j)(x_i−x_j)^2
+                 +2 sum_{t=2X}^{4X−1}P_floor(t/2)^2
+                 −sum_{i<=N}rowmass_i(x_i^2−h_i).
+No original pair, diagonal, boundary or residual is omitted. On actual mu the norm relations vanish and both square sums are nonnegative, proving the supplied unsigned upper bound Delta_X<=U_X for every X, without cancellation estimates or prime signs.
+
+The norm scalar budget is U_X. With Q(t)=delta*t+O(sqrt(t)), delta=1/zeta(2), U_X=sum_{t=2X}^{4X−1}t Q(t)=(56/3)delta X^3+O(X^(5/2)). Thus the accepted gamma is exactly56/3. Even the elementary Q(t)<=t gives U_X<=sum_{t=2X}^{4X−1}t^2=O(X^3). This is an unconditional unsigned cubic calibration, not a critical/RH estimate. The all-scale polynomial identity established above does not convert its cubic scalar budget into O_q(X^(2+1/q)) for fixed q>1. It is consistent with the exact full-Gram obstruction for the gamma-zero critical cone.
+
+The original finite certificates were independently checked by the retry checker; the all-scale identity here is independently derived from the two displayed elementary identities. This note is an analytical argument, not a formal machine proof or a new discovered operator. Training scalar slacks are all zero. No final score or final transfer result is assumed in this adjudication.

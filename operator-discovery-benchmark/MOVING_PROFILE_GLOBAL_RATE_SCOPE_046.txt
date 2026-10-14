@@ -1,0 +1,126 @@
+GLOBAL MOVING-PROFILE RATE GUARD046
+Independent mathematical admission; no source arrays or norm observations.
+
+The source is ordinary Mobius, not a bounded-coefficient substitute. The
+approximation is the pure floor target g_N=sum_(2<=n<=N)-mu(n)P_N(n)f_n,
+f_n(x)=floor(1/x)/n-floor(1/(nx)),0<x<=1. It is zero outside that domain.
+P_N(n)=sum_j w_j n^(-r_j beta_N), with fixed positive rational rates, fixed
+signed rational weights summing to1, and separate exact dyadic rounding.
+beta_N=ceil(a L(N)^theta)/L(N),a>0,L(N)=N.bit_length().
+Only bare profiles are admitted here; a cutoff taper, auxiliary, product,
+N-dependent rates/weights, different source or unknown rounding is unsupported.
+
+1. Exact finite Mellin identity and off-half-zero branch
+
+Include the harmless virtual unit mu(1)P_N(1)=1 in
+ A_N(s)=sum_(n<=N)mu(n)P_rounded,N(n)n^-s.
+The finite floor identity, first obtained in an absolute-convergence
+half-plane and then continued to Re(s)>0 by boundedness of the finite
+floor vector, gives
+ E_N(s)=[1-zeta(s)(A_N(s)-A_N(1))]/s.
+No infinite series is asserted to converge at a zero or on the half-line.
+For h_N=e_(qN)-b D_q e_N, D_q f(x)=f(qx) with zero extension,
+ H_N(s)=[1-b q^-s-zeta(s){A_(qN)(s)-A_(qN)(1)
+                     -b q^-s(A_N(s)-A_N(1))}]/s.
+The harmonic compensation and both virtual units are retained exactly.
+
+If RH is false, the functional equation supplies a nontrivial zero rho
+with Re(rho)>1/2. The exact finite identity gives
+ H_N(rho)=(1-b q^-rho)/rho for EVERY N. For fixed integer q>=2 and
+rational b with b^2<q this is nonzero. Cauchy--Schwarz yields
+ ||h_N||^2 >=(2Re(rho)-1)|1-bq^-rho|^2/|rho|^2>0.
+This already excludes any forcing bound tending to0, on all integers or
+any unbounded geometric chain. Equivalently a vanishing forcing premise
+implies RH. This is a conditional implication, not a proof of RH.
+
+2. Imported RH-dependent estimate and complete finite tails
+
+Imported primary theorem: K.Soundararajan, Partial sums of the Mobius
+function, Theorem1, https://arxiv.org/pdf/0705.0723 . It assumes RH and
+bounds |M(x)| by a fixed constant times
+ sqrt(x)*exp(sqrt(log x)*(log log x)^14) for sufficiently large x.
+This estimate is a reviewed supplied theorem, not detector-discovered.
+
+Suppose RH for this branch. For T=log K, write
+ E(T)/T=T^-1/2(log T)^14. This ratio decreases once log T>28.
+For theta>1/2,
+ r_min beta_K/[T^-1/2(log T)^14] -> infinity.
+Consequently, for every sufficiently large K and EVERY t>=K,
+ |M(t)|<=C t^(1/2+r_min beta_K/2).
+The same fixed C applies; no constants depending on moving beta are
+introduced by this majorization. For z with Re(z)=1/2+r beta_K,
+r>=r_min, and bounded imaginary part, exact partial summation gives
+ sum_(n>K)mu(n)n^-z=-M(K)K^-z+z integral_K^infinity M(t)t^-z-1 dt,
+ and absolute value <=C[1+2|z|/(r_min beta_K)]
+                         *exp[-r_min beta_K log K/2]=o(1).
+The beta^-1 loss is explicit. This bound is uniform over the entire
+infinite t-tail and bounded local frequency window, separately for K=N
+and K=qN. Convergence here is justified to the RIGHT of1/2 under RH,
+then identified with1/zeta(z) by analytic continuation from Re(z)>1.
+It is never reciprocal-series convergence at the zero itself.
+
+3. Harmonic, rounding and child drift terms
+
+For the exact unrounded mixture,
+ A_N(1)=sum_j w_j/zeta(1+r_j beta_N)+finite tail.
+Absolute convergence and zeta(1+kappa)>=1/kappa give
+ |A_N(1)|<=beta_N sum_j |w_j|r_j
+          +sum_j |w_j|N^(-r_j beta_N)/(r_j beta_N)
+          +C_w N^-4(1+log N)=O(beta_N), C_w=sum|w_j|.
+The final term is rounding. Each separately rounded exponential has
+error<=2^-p, p=4ceil(log2N), and its signed mixture retains C_w.
+On Re(s)=1/2 the finite Dirichlet-polynomial rounding error is
+ <=2 C_w N^-7/2, uniformly in imaginary part. No positivity of rounded
+signed profiles is used, and no cross or unit is removed.
+
+For fixed q, L(qN)-L(N) is bounded. The exact ceiling contributes relative
+O(L^-theta), so xi_N=beta_(qN)/beta_N->1. This ratio is retained in the
+child formula until the uniform limit; equality of the two finite drifts
+is not assumed.
+
+4. Shrinking-frequency lower bound and strict rate scope
+
+Fix a nontrivial zero rho=1/2+i gamma under RH; existence of nontrivial
+zeros and their finite positive integer multiplicity are standard analytic
+zeta facts. Let d be its multiplicity and s=rho+i beta_N v. For each fixed
+bounded real v and each positive rate r,
+ zeta(s)/zeta(s+r beta_K)->(iv)^d/(r xi_N+iv)^d,
+ uniformly on compact v, because the positive real shifts keep every
+denominator away from the local zero. The complete finite-tail and
+harmonic estimates above permit this substitution in H_N(s), giving
+ H_N(rho+i beta_N v)->(1-b q^-rho)/rho
+             *[1-(iv)^d sum_j w_j/(r_j+iv)^d].
+The limit is continuous and nonzero at v=0. It follows that H_N is bounded
+away from0 on a fixed sufficiently small v-interval for all large N.
+Mellin Plancherel on Re(s)=1/2 therefore gives ||h_N||^2>=c beta_N.
+Only this shrinking interval is used; no global critical-line tail norm
+estimate is supplied or assumed.
+
+Combining the RH and RH-false branches gives an eventual positive lower
+bound c beta_N, with c and threshold EXISTENTIAL and unspecified. Since
+beta_N~a L^(-(1-theta)), a fixed finite A cannot satisfy
+ ||h_N||^2<=A L^-eta along any unbounded admitted domain when eta>1-theta.
+Equality and slower rates remain OPEN. theta<=1/2 is not licensed by this
+Mertens-tail provider, regardless of local moment cancellation order.
+The global cap uses unit normalization sumw=1, not a supplied zero
+multiplicity or an assumed successful cancellation order.
+
+This refutes the specified uniform rate premise only. It does not refute
+finite norm certificates, convergence of a different family, the floor
+representation, the original signed core, or RH. Constants and thresholds
+are not extracted from finite measurements. No taper or auxiliary is
+silently stripped in order to apply this guard.
+
+Public admission API: verify_guard(request,certificate,meter=None). Meters
+need only charge(n); the local default also exposes operations. The checker
+imports no046 producer and evaluates no zeta/Mobius source values or norms.
+It derives rational margins, exact source normalization and child-level
+bounds itself, then replays every typed field of this reviewed analytic rule.
+UNSUPPORTED certificates retain OPEN statuses and cannot license rejection.
+
+A useful exact nonzero gate, independent of the unknown zero multiplicity,
+is delta_v=r_min/(2 C_w). Since C_w>=1 and rates>=r_min,
+ |1-F_d(v)|<=C_w*(|v|/r_min)^d<=1/2
+for every integer d>=1 and |v|<=delta_v. This is a formal boundary-layer
+window only. It does not compute the actual zero's scale factor, an effective
+uniform-convergence threshold, or a numerical lower c for the source norm.

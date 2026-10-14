@@ -1,0 +1,410 @@
+RIGHT-LEG PRIME PREFIX: EXACT RECOVERY KERNELS AND LOCAL INVERSE COST
+
+Scope and conclusion
+--------------------
+This new analytical memo reviews the exact selected prime-slide word 13391:
+sum_{e=0}^6 T_(q^e)^right. I read its fixed program and algebraic/bound
+metadata in prime-slide-results/pilot-001/selected.json, the ordered-prime
+obligation, the prior pairing review, and the new post-analysis module
+prime_slide_recovery.py. No source arithmetic, numerical
+experiment, tests, hashes, new search or frozen edits were performed.
+
+Its proved complete normalized bilinear auxiliary is
+O(X^(-1/4)*(1+log(2X))^2) at theta=3/4. This statement concerns the
+complete selected auxiliary; it does not recover the original covariance.
+
+The exact integrated recovery has a useful new distinction. The e=1 right
+lift is inside the coefficient prefix and identifies its nonsmooth,
+non-prime-power sector. Every e>=2 lift is outside that prefix. The e=2
+B component tends to +1 locally and supplies an order-one outside term.
+Consequently the outside complement is not a negligible prime-power tail.
+Reexpressing it by local Euler laws gives an exact signed bank decomposition,
+but substituting this into recovery cancels the small filtered expression
+and returns the original largest-prime relation. It supplies no new bound.
+
+The local Euler rows have a two-root recurrence, verified below. Any finite
+family of filters whose every channel multiplier has positive valuation at
+t=0 cannot uniformly recover an unfiltered nonzero channel projection by
+bounded local linear coefficients. Quantitative recovery loses inverse
+prime powers. This is a local class obstruction, not an impossibility of
+global signed compensation, different source identities, or a closed
+recurrence with additional paid terms.
+
+1. Complete original source and overlap domain
+----------------------------------------------
+Use actual mu, u=1/3, v=2/3 and beta=9/2. Set
+  U=a_u=mu*(n^(-u)), V=a_v=mu*(n^(-v)), B=U*V,
+  p=beta*(U-delta)*(V-delta), a=p-d,
+where d is the COMPLETE same-prime prime-power channel. Thus a(1)=0 and
+a(p^r)=0 for all primes p and r>=1. For h>1 which is not a prime power,
+  a(h)=beta*(B(h)-U(h)-V(h)).                         (1.1)
+This non-prime-power mask is mandatory when expanding a into channels.
+Every bank cofactor is k>=2. Its transfer sequences are
+  z0(k)=beta*(2B(k)-U(k)-V(k)),
+  zu(k)=beta*(B(k)-U(k)), zv(k)=beta*(B(k)-V(k)),
+with all three zero at k=1.
+
+Let 1/2<=theta<1 and tau(q)=ceil(q^(1/theta)). Put
+  alpha(h)=max(h,tau(Pplus(h))).
+For integer dyadic X>=1 the complete ordered overlap is
+  I_X(h;q,k)=max(0,min(2X,tau(q))-max(X,alpha(h),qk)). (1.2)
+The high-smooth version also places h^2 in the upper minimum. This is
+the exact integer count of X<=n<2X with h<=n, Pplus(h)<=n^theta<q,
+qk<=n, and, in the high-smooth version, n<h^2. All powers in these
+domain statements denote exact inequalities, not rounded diagnostics.
+
+A positive count proves k<q and q>Pplus(h); hence q is coprime to both
+h and k. It does not prove gcd(h,k)=1. Every shared-prime sector remains.
+Use either full or high-smooth I consistently throughout what follows.
+Write H(n) for the corresponding smooth a-prefix (with h>sqrt(n) in
+the high-smooth case), and define
+  Q_e(X)=X^(-2)*sum_{h,q,k} a(h) z0(q^e k) I_X(h;q,k),
+  Q_C6(X)=sum_{e=0}^6 Q_e(X).                        (1.3)
+All sums are finite on their original domain h,k>=2, q prime. The
+baseline is Q_0=X^(-2)*sum_{X<=n<2X} H(n)L0(n).
+This is one signed bilinear covariance, not the square of a prefix.
+The full K,-L0,Lu,-main energy and all other mixed terms stay required.
+
+2. Exact selected local filter and its proved auxiliary bound
+-------------------------------------------------------------
+Set t=q^(-1/3). The local series in an exponent variable z are
+  U_q(z)=(1-z)/(1-tz),
+  V_q(z)=(1-z)/(1-t^2 z),
+  B_q(z)=(1-z)^2/((1-tz)(1-t^2 z)).
+For a fresh q the cumulative local rows through exponent m>=1 are
+  C_m^U=t^m, C_m^V=t^(2m),
+  C_m^B=-t^(m-1)+t^(2m-1)+t^(2m).                    (2.1)
+At m=0 all three rows are one. Thus selected m=6 has
+  F_B=-t^5+t^11+t^12,
+  F_U=t^6, F_V=t^12.                                 (2.2)
+In particular for k>=2 on the original coprime domain,
+  sum_{e=0}^6 z0(q^e k)
+       =beta*(2F_B B(k)-t^6 U(k)-t^12 V(k)).           (2.3)
+The common positive valuation is five, i.e. prime weight 5/3. The
+local polynomial l1 norms are 3,1,1. Together with the fixed original
+tensor projection, the archived constant is C=486. The earlier complete
+support proof gives explicitly
+  |Q_C6(X)| <=486*(1+3/5)*2^(3/4)
+                       *X^(-1/4)*(1+log(2X))^2       (2.4)
+at theta=3/4. For general theta the exponent is 1-5theta/3 and the
+factor 2^max(2-5theta/3,0) replaces 2^(3/4).
+This proof includes every ordered h,k,q term and all nine channel
+components. No assumption about random Mobius signs is used.
+
+3. Complete right-leg pullback, including valuations and units
+-------------------------------------------------------------
+For a fixed original q and e put m=q^e k. Since q does not divide k,
+  v_q(m)=e, k=m/q^e>=2.                              (3.1)
+For e=0 interpret v_q(m)=0. Define the pullback count
+  J_e(h;q,m)=1_{v_q(m)=e, m/q^e>=2}
+       *max(0,min(2X,tau(q))
+                -max(X,alpha(h),q*(m/q^e))).          (3.2)
+In the high-smooth case the same h^2 upper endpoint is present.
+Every quantity in the maximum is integer on its displayed valuation
+mask. Then the exact integrated recovery terms are
+  Q_e(X)=X^(-2)*sum_{h>=2,q prime,m>=1}
+                         a(h) z0(m) J_e(h;q,m).       (3.3)
+This is a bijective substitution, not an enlargement. In particular
+  Q_0=Q_C6-sum_{e=1}^6 Q_e.                           (3.4)
+In a channel expansion include the h non-prime-power mask from (1.1).
+In (3.2) exclude m=q^e, which would be the missing k=1 cofactor.
+It is incorrect to replace v_q(m)=e by v_q(m)>=e, to admit q|k, to
+drop the lower k>=2 endpoint, or to replace the original cutoff by a
+new cutoff depending on m. All h/k gcd overlap is preserved:
+gcd(h,m)=gcd(h,k) since q is coprime to h.
+
+For each positive pointwise term at integer n:
+  e=0: m=k<=n/q<q;
+  e=1: 2q<=m=qk<=n, v_q(m)=1 and Pplus(m)=q>n^theta;
+  e>=2: m=q^e k>=2q^2>2n, and m<=q^(e-1)n.             (3.5)
+The strict inequality q^2>n uses theta>=1/2, including its endpoint.
+Because k<q, Pplus(m)=q in every e>=1 case. It is not a prime power:
+k>=2 has a prime factor distinct from q. Thus (3.5) gives exact
+interior and exterior sectors, without assuming a hidden source zero.
+
+The e=1 sector is exactly the full nonsmooth non-prime-power coefficient
+prefix. Indeed a nonsmooth non-prime-power m<=n has a unique prime
+q=Pplus(m)>n^theta; q^2>n makes its exponent one, and its cofactor
+k=m/q is >=2 and <q. No repeated-prime or prime-unit exception survives
+in this equivalence. All higher lifts instead live outside the original
+prefix. No source entry outside n may be deleted from (3.3).
+
+4. Interior relation and the full order-one exterior complement
+--------------------------------------------------------------
+At a fixed n write N(n)=sum_{m<=n,Pplus(m)>n^theta}a(m). It has no
+prime-power terms, so the exact first-lift bank is
+  sum_{q>n^theta,2<=k<=n/q} z0(qk)
+       =2N(n)+beta*(U_out(n)+V_out(n)),               (4.1)
+where U_out and V_out are the same nonsmooth, non-prime-power prefix
+with coefficient U or V. This follows from z0(m)=2a(m)+beta(U(m)+V(m))
+on that domain. In particular Q_1 has a real connection to the original
+smooth/nonsmooth covariance, but also carries both companion terms.
+There is no available domination which discards them.
+
+For a transparent complete signed decomposition define, always with
+k>=2 and the ORIGINAL q cutoff and k<=n/q,
+  B_b(n)=sum q^(-b) B(k),
+  U_b(n)=sum q^(-b) U(k), V_b(n)=sum q^(-b) V(k).
+Here b=0 means an unweighted bank. The selected filtered bank is
+  F(n)=beta*(-2B_(5/3)+2B_(11/3)+2B_4-U_2-V_4).        (4.2)
+The baseline and first-lift banks are respectively
+  L0=beta*(2B_0-U_0-V_0),
+  Z1=beta*(2B_u+2B_v-4B_0-U_u+U_0-V_v+V_0).          (4.3)
+The COMPLETE outside sum from e=2 through 6 is
+  Z_ext=beta*[2(B_0-B_u-B_v-B_(5/3)+B_(11/3)+B_4)
+                         +(U_u-U_2)+(V_v-V_4)]
+       =T(n)+F(n),
+  T(n)=beta*(2B_0-2B_u-2B_v+U_u+V_v).                 (4.4)
+Consequently
+  L0+Z1+T=0, L0+Z1+Z_ext=F.                          (4.5)
+After multiplying by H(n), summing the complete dyadic block, and
+dividing by X^2, these are the exact integrated recovery identities.
+
+The outside B term has no common small prime factor. Already
+  B(q^2)=1-2t-t^2+t^3+t^4 ->1
+as q grows. Its e=2 z0 term therefore tends to 2beta*B(k). The complete
+e>=2 B multiplier is 2*(1-t-t^2+F_B), also order one. The higher
+e>=3 B tail starts at degree one, not degree five. The strong selected
+zero was produced by cancellation ACROSS the baseline, first lift and
+outside complement, not by making each recovered term separately small.
+
+The weighted F term is paid by (2.4). But inserting Z_ext=T+F into
+(3.4) cancels this paid F on both sides and leaves the exact (4.5)
+baseline relation. It does not bound H*T. Bounding the outside sum by
+the same local cancellation which proved F is therefore not an
+independent recovery argument. This diagnoses a specific route; it
+does not exclude a different genuinely signed estimate for H*T together
+with its interior and companion terms.
+
+All banks above exclude k=1. If they are rewritten with cofactor units,
+their omitted prime-count terms must be restored individually. In the
+whole filtered bank the unit correction is
+  sum_{q>n^theta,q<=n/2} beta*(-2t^5-t^6+2t^11+t^12).
+Its absolute local coefficient is at most 8beta*q^(-5/3). Since
+|H(n)|<=beta*n*(1+log n), its integrated correction is at most
+  20beta^2*2^(1-2theta/3)*X^(-2theta/3)*(1+log(2X)).   (4.6)
+For completeness, |U(k)|,|V(k)|<=1 follows from their local geometric
+Euler rows; the proper-divisor convolution for p gives |a(h)|<=beta*d2(h)
+on non-prime-powers, while the other a entries vanish. The divisor sum
+bound gives the displayed H envelope, and the elementary integer tail
+sum with exponent 5/3 proves (4.6).
+It is harmless padding for the WHOLE filter. Individual e=1 and e=2
+unit extensions have order-one local terms, so (4.6) must not be used
+to drop their units independently. No unit extension is needed for
+the exact formulas (3.2)-(4.5).
+
+5. Local two-root identity and exact recovery coefficients
+----------------------------------------------------------
+There is a useful sharper Euler identity, valid for every e>=0:
+  t*B(q^e)+U(q^e)-(1+t)*V(q^e)=0.                    (5.1)
+To prove it put the three local rational series over their common
+denominator. The numerator becomes
+  (1-z)*[t*(1-z)+(1-t^2 z)-(1+t)*(1-tz)]=0.
+This includes e=0. It is an identity among the LOCAL prime-power rows,
+not a global identity tB(k)+U(k)-(1+t)V(k)=0 for arbitrary k.
+
+Every cumulative row in (2.1) obeys
+  C_m=(t+t^2)C_(m-1)-t^3 C_(m-2), m>=2.             (5.2)
+It follows either directly from (2.1), or because each component is
+a linear combination of t^m and t^(2m), including m=0 when interpreted
+by that combination. For a fixed k, take any fixed weighted channel
+projection W_m=w_B B(k)C_m^B+w_U U(k)C_m^U+w_V V(k)C_m^V.
+The weights can also depend on the original q, provided they stay fixed
+across m. This includes the z0 projection and the original -z0+t*zu
+bank projection. Such W_m has the exact form
+  W_m=P*t^m+Q*t^(2m),                               (5.3)
+and obeys (5.2) on the original cofactor/prime domain.
+Thus
+  W_0=((t+t^2)W_1-W_2)/t^3.                         (5.4)
+Since t^3=q^(-1), this low-row recovery already includes a factor q;
+its W_1 and W_2 rows are not the cofinal selected rows.
+
+For the selected depth there is also the exact two-filter formula
+  W_0=t^(-10)*(1-t^6)/(1-t)*W_5
+                -t^(-11)*(1-t^5)/(1-t)*W_6.          (5.5)
+Solve the two equations W_5=P t^5+Q t^10 and
+W_6=P t^6+Q t^12 to obtain this identity. More generally for m>=2,
+  W_0=t^(-2m+2)*(1-t^m)/(1-t)*W_(m-1)
+                -t^(-2m+1)*(1-t^(m-1))/(1-t)*W_m.   (5.6)
+At depth six the coefficients grow like q^(10/3) and q^(11/3).
+Even though both depth-five and depth-six COMPLETE auxiliaries are
+cofinal at theta=3/4, (5.5) is a PRIME-DEPENDENT identity inside their
+kernel sums. A q-independent bound for each integrated auxiliary cannot
+be multiplied by the variable coefficients after integration. Inside
+the sum their inverse powers undo the positive-valuation envelope.
+Moving them outside the sum by a supremum costs growing powers of X.
+
+The same issue applies to all exact recurrences among these cumulative
+depths. A larger depth changes local suppression and inverse cost; the
+two-root relation does not itself create a closed scale induction.
+
+6. Scope-limited impossibility of bounded local linear recovery
+--------------------------------------------------------------
+Here is a precise statement, independent of the actual numerical source.
+Let v denote a finite formal channel-state vector. Fix finitely many
+local filters y_l=M_l(t)v. Suppose every entry of every matrix M_l is
+a polynomial (or continuous bounded function) which vanishes at t=0.
+Let L be a fixed nonzero target linear map on these formal states.
+There do not exist uniformly bounded local linear maps R_l(t), for
+t=q^(-1/3) over arbitrarily large primes q, such that
+  L=sum_l R_l(t)M_l(t).                              (6.1)
+Indeed every right-hand summand tends to zero in any finite-dimensional
+matrix norm, while L does not. A finite family is essential here.
+If these matrices obey ||M_l(t)||<=C_l t^m for m>0, then any recovery must
+satisfy the quantitative lower bound
+  sum_l ||R_l(t)|| C_l >=||L||*t^(-m).                (6.2)
+For individual exponents use instead
+||L||<=sum_l ||R_l(t)||C_l*t^(m_l).
+In the polynomial ring this says the ideal of positive-valuation
+entries has zero constant term; bounded linear combinations cannot
+produce an unfiltered constant-term identity.
+
+This formal-state theorem applies to the current finite all-channel
+positive-valuation stencil class. It does not assert that the actual
+values B(k),U(k),V(k) are arbitrary or independent random variables.
+Using an additional actual-source restriction, cross-prime identity,
+integrated compensation or different support may evade its hypotheses.
+A number of filters growing with q, or unbounded recovery coefficients,
+also falls outside the bounded finite-class assertion. None is silently
+licensed by a cofinal auxiliary bound.
+
+For the SELECTED diagonal channel filter itself,
+  |F_B|=t^5*(1-t^6-t^7),
+  1-t^6-t^7>=c0:=1-2^(-2)-2^(-7/3)>1/2.
+Thus separate B recovery costs between q^(5/3) and c0^(-1)q^(5/3);
+U recovery costs q^2, and V recovery costs q^4. Full diagonal-channel
+inversion has norm q^4 in a coordinate supremum norm: t^12 is its
+smallest absolute multiplier, since c0*t^5>t^12 for q>=2.
+For any fixed channel with selected multiplier positive valuation,
+uniformly bounded local inversion is already excluded.
+
+One observed scalar W_6 does not in general determine W_0: in (5.3)
+take Q=1,P=-t^6 to obtain W_6=0 but W_0=1-t^6!=0. Two observations can
+recover it by (5.5), at the stated growing cost. This formal example is
+not a counterfeit actual-mu source and is not a global impossibility
+proof. The exact recurrence shows why requiring recovery of all three
+separate channels can overstate the cost for a single target projection;
+the correct projection-level two-filter cost is still unbounded.
+
+7. Smaller cofactors are real; a smaller-scale target is not yet obtained
+------------------------------------------------------------------------
+All original cofactors satisfy k<=n/q<n^(1-theta). This produces true
+smaller-scale source prefixes inside each bank. It does not turn the
+whole recovery term into the same obligation at that smaller scale:
+the other coordinate remains H(n), with h potentially close to n and,
+in the high-smooth sector, h>sqrt(n). Replacing H(n) by H(floor(n/q))
+discards the entire fresh smooth complement and is not an inequality.
+
+Explicitly write n=qj+r, 0<=r<q. Then k<=j, but the smooth coordinate
+still has h<=qj+r, Pplus(h)<q, the original n^theta cutoff, and the
+original high-smooth lower boundary. The dyadic condition is
+X<=qj+r<2X, not a single common dyadic interval independent of q and r.
+All q,r-dependent entry endpoints and fresh h terms survive. This is
+an exact smaller-cofactor representation, not a decreasing-scale
+recurrence with an already bounded forcing.
+
+Conversely reindexing by the lifted m in (3.3) moves e>=2 terms to
+larger source indices, with m<=q^(e-1)n and m>n. A future-scale recurrence
+would require new estimates or a proven contraction/compensation and
+cannot be declared well founded merely because m/q^e is small.
+
+The remaining usable proof input is therefore quite explicit: bound
+or cancel the full signed H*T/interior-companion covariance in (4.1)-
+(4.5), with its exact original prime window and all gcd sectors, or
+give a closed decreasing-scale relation which includes the fresh H
+complement. The other K,bank-bank,Lu,main covariances and initial moment
+cost must also be retained. Assuming an RH-strength bound for a B or
+U companion, or feeding the original complete moment back as its own
+premise, would not close this obligation noncircularly.
+
+8. Exact low-action reduction and source-only post-analysis audit
+----------------------------------------------------------------
+The selected cumulative operator also has an exact two-action reduction:
+  C6=A(t)*I+D(t)*T_q^right,
+  A=t^5+t^6-t^11,
+  D=t^5+t^6+t^7+t^8+t^9+t^10.                       (8.1)
+Substitution of the local rows U(q)=t-1, V(q)=t^2-1 and
+B(q)=t+t^2-2 recovers all three rows (2.2). Equivalently solve for
+the two coefficients with the U,V rows and then use (5.1) to verify B.
+Here I means the baseline action; T means the actual one-prime action.
+Their q-dependent weights stay INSIDE the original kernel sum.
+
+Thus the COMPLETE selected auxiliary can be represented using only
+weighted original and first-lift interior terms. No explicit future
+source indices are needed for that alternative representation: (8.1)
+has already compensated all higher prime-power terms by exact source
+identities. The recovery issue is not a failure to perform that valid
+simplification. It is recovery of the unweighted original term.
+
+For a fixed q let V0(q),V1(q) denote the corresponding integrated kernel
+sums without summing q, and let VC6(q) be the selected one. Then
+  VC6(q)=A(q)V0(q)+D(q)V1(q),
+  V0(q)=A(q)^(-1)VC6(q)-(D(q)/A(q))*V1(q).           (8.2)
+Since A=t^5*(1+t-t^6)>0, its inverse is comparable to q^(5/3);
+D/A tends to one. Multiplying the paid auxiliary by A(q)^(-1) loses
+its proved prime suppression, and the remaining unweighted interior
+V1 carries the companions in (4.1). The integrated bound on sum_q VC6(q)
+does not bound sum_q VC6(q)/A(q). This is a genuine exact reduction to
+an interior weighted pair, but no independent signed bound for that
+unweighted pair has been established.
+
+I reviewed prime_slide_recovery.py without executing it or its tests.
+Its prefix recurrence and difference-to-raw-row conversion implement
+(5.2) on exponents 0..6. Tensoring the two per-coordinate low-action
+representations reduces a general same-prime stencil to I/I, I/T,
+T/I and T/T with polynomial weights, all under the SAME original
+coprime masks. The verifier reconstructs all nine tensor multipliers
+using independently expanded checker low rows and compares the saved
+exact polynomials. Its mathematical admission premise is that the saved
+rows belong to the already independently audited frozen study. This
+post-analysis verifies source identities, not a new source moment.
+
+The emitted pullback descriptors preserve v_q(H)=e,v_q(K)=f, the
+inverse-image h>=2 non-prime-power mask, and k>=2. Their kernel uses
+H/q^e and q*K/q^f, not the lifted smooth endpoint. The separately stated
+high-smooth upper limit (H/q^e)^2 must be included whenever that variant
+is used. A left lift is outside n on the high-smooth base; the descriptor
+does not claim it is always outside n on every small smooth base.
+These scopes agree with the exact inverse-image calculus in section 3.
+
+The local recovery routine uses B(h)B(k) as a witness. If its nonzero
+multiplier polynomials have minimum degree m>0 and total l1 norm L,
+then an all-channel scalar recovery identity forces
+  max_j |c_j(q)|>=q^(m/3)/L.
+This follows by taking just the B,B entry of the identity. Other
+components need not also vanish for that witness conclusion, although
+the current cofinal all-channel bank has positive common valuation.
+If every B,B entry is zero, the routine conservatively declines this
+particular positive-order certificate rather than issuing an unsound
+claim. Its stated exclusion is finite, bounded, same-prime LOCAL
+linear recovery; global signed/domain-compensated proofs stay open.
+
+The feedback payload also records a conditional centered shared-prime
+transfer from PRIME_TRANSFER_MARTINGALE_REVIEW_001.txt equation (9.5).
+Its premise is a coupled W0=2J+beta*(M_u+M_v) cumulative moment bound
+from the SAME closed induction, and its smaller horizon is
+T<=2X^(1-theta). The per-prime cofactor cells have at most q sample
+points; summing q^(-1-epsilon) gives the quoted transfer constant.
+The payload explicitly leaves that induction, distinct-prime and
+smooth/common-bank covariance, and deterministic/mixed pole terms
+unproved. This is a legitimate conditional proof input, not recovery
+supplied by the local recurrence. No additional mathematical blocker
+was found in these post-analysis scopes.
+
+Final status
+------------
+Proved: exact integrated pullbacks with valuation/unit/moving-cutoff
+masks; identification of the first lift with the interior nonsmooth
+sector; exterior status of every higher lift and the order-one B content
+of their complete complement; the complete signed outside-bank
+decomposition; paid whole-filter unit correction; exact two-root local
+recurrence and inverse
+coefficients; exact low-action reduction and its admission scope;
+finite bounded local recovery obstruction and its
+quantitative inverse-power loss.
+Unproved: an independent bound for the original recovered covariance,
+a closed signed decreasing-scale recurrence, the full candidate10
+moment, or RH. The local obstruction does not reject the grammar or
+preclude a genuinely global signed recovery argument. All original
+normalizers, complements and full-energy costs remain in scope.
+Only this new memo was written; all frozen files remain unchanged.

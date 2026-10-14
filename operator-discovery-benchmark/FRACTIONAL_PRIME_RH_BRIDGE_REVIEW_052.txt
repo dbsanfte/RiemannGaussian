@@ -1,0 +1,222 @@
+FULL-CENTER FRACTIONAL PRIME RH BRIDGE: INDEPENDENT REVIEW 052
+
+Disposition
+===========
+The conditional implication below is proved for one fixed forward concave
+kernel. Its all-scale centered-error premise is OPEN. Neither RH nor its
+converse implication to that premise is established here. This is an exact
+analytic argument reviewed by a human-readable certificate, not a numerical
+zero check or proof-assistant formalization. No source tables, norms, tests,
+scientific evaluations, hashes, or frozen edits were performed by this review.
+
+The imported ordinary-zeta facts are meromorphic continuation with sole pole
+1 of residue 1, Euler product and zero freedom to the right of the critical
+strip, real alternating-series identity, isolated finite-multiplicity zeros,
+and reflection under the functional equation. See
+[DLMF 25.2](https://dlmf.nist.gov/25.2),
+[DLMF 25.4](https://dlmf.nist.gov/25.4), and
+[DLMF 25.10](https://dlmf.nist.gov/25.10). The quotient-integral singularity and
+the full-center implication below are derived here, not imported from those
+references.
+
+1. Exact fixed kernel and initial identity
+==========================================
+Fix rational a>b>=0, a+b=1, 0<alpha<1, and c=a-b>0. For every integer n>=2,
+
+ K(n)=-sum_{d|n} mu(d)*(a log(d)+b log(n/d))^alpha,  K(1)=0.
+
+The source is ordinary mu on every actual divisor. Powers and logs are exact
+unrounded expressions, with 0^alpha=0. Repeated valuations remain in log(n).
+Let
+
+ I=int_0^infinity (1-exp(-u))*u^(-alpha-1) du>0,
+ A(x)=sum_{2<=n<=x} K(n), for every real x>=1.
+
+The Boolean-divisor identity proves K(n)>0 for n>=2 and
+
+ K(n)=I^-1 int_0^infinity n^(-bt)
+                  product_{p|n}(1-p^(-ct))*t^(-alpha-1) dt.
+
+In particular K(n)<=(log(n))^alpha. Absolute Fubini and the full prime-power
+Euler factors therefore give
+
+ F(s)=sum_{n>=2} K(n)n^-s
+     =I^-1 int_0^infinity
+           [zeta(s+bt)/zeta(s+at)-1]*t^(-alpha-1) dt,  Re(s)>1.   (1)
+
+Near zero the bracket is O(t). At infinity it is bounded. When b=0 it tends
+zeta(s)-1, which is still integrable against t^-alpha-1. The proof does not
+assume convergence of an infinite mu series on the critical line.
+
+2. Full real center and its continuation
+========================================
+Define for every real x>=1
+
+ m(x)=I^-1 int_0^infinity
+           x^(-bt)/zeta(1+ct)*t^(-alpha-1) dt,
+ M(x)=int_1^x m(u) du.                                           (2)
+
+At zero, 1/zeta(1+ct)=ct+O(t^2). At infinity reciprocal zeta lies in (0,1).
+Thus m(x) is positive finite, bounded by m(1), and M(1)=0, M(x)=O(x).
+This is an EXACT definition, including the initial head and all real terms;
+no fitted constant or leading asymptotic is allowed to replace M.
+
+For Re(s)>1, positive Fubini followed by absolute complex domination gives
+
+ H(s)=int_1^infinity m(x)x^-s dx
+     =I^-1 int_0^infinity
+       t^(-alpha-1)/[zeta(1+ct)*(s+bt-1)] dt.                     (3)
+
+For b>0, formula (3) is holomorphic on C minus the real cut (-infinity,1].
+On each compact subset of that domain its denominator is bounded away from
+zero on finite t intervals. Near zero the integrand is O(t^-alpha), and at
+infinity it is O(t^-alpha-2). These are uniform bounds; derivatives are also
+locally dominated, so the asserted holomorphy follows. When b=0 the t integral
+is just m(1)/(s-1), and is holomorphic away from 1. In particular H is
+holomorphic near EVERY nonreal zero considered below.
+
+Partial summation, with A(1)=M(1)=0 and the vanishing infinity boundary for
+Re(s)>1, yields the complete identity
+
+ F(s)-H(s)=s int_1^infinity (A(x)-M(x))*x^(-s-1) dx.              (4)
+
+The expression retains the whole arithmetic sum, the center, and their
+eventual mixed terms. There is no replacement by separately bounded positive
+pieces. The finite interval [1,2] is part of (4); it creates no singularity.
+
+3. Precise unproved error premise
+=================================
+Assume, only as a premise, that for this fixed kernel
+
+ for EVERY epsilon>0 there exists finite C_(epsilon,a,b,alpha) such that
+ |A(x)-M(x)|<=C_(epsilon,a,b,alpha)*x^(1/2+epsilon)
+ for EVERY real x>=2.                                           (5)
+
+No uniformity over varying kernels is required or claimed. A finite sample,
+a one-sided pointwise bound on K, or positivity cannot pay (5).
+
+For each compact subset of Re(s)>1/2, choose epsilon strictly smaller than
+the gap between that compact's minimum real part and 1/2. Equation (4) then
+converges absolutely and locally uniformly, including its derivatives after
+slightly decreasing the margin. Thus (5) supplies a holomorphic continuation
+of F-H to Re(s)>1/2. This is CONDITIONAL holomorphy of the CENTERED transform;
+unconditional holomorphy of F throughout that half-plane is not asserted.
+
+4. The rightmost-zero choice and the exact continuation path
+============================================================
+Suppose ordinary RH is false. Reflection under the functional equation gives
+a nontrivial zero with real part greater than 1/2. Such a zero has nonzero
+imaginary part: for real 0<s<1 the alternating eta series is strictly positive
+(pair consecutive terms), and zeta(s)=eta(s)/(1-2^(1-s)) is strictly negative.
+Euler-product zero freedom excludes Re(s)>1, and standard zero freedom on the
+line 1 excludes a zero there.
+
+Fix the nonzero height gamma of an off-line zero. On the compact horizontal
+segment with real part in [1/2,1], there are only finitely many zeros: otherwise
+an accumulation point would force the analytic zeta function to vanish
+identically. Choose rho=beta+i gamma RIGHTMOST at that fixed height, beta>1/2.
+This does not choose or assume a globally rightmost zeta zero.
+
+For s=sigma+i gamma with sigma>beta and every t>=0, s+at lies to the right of
+rho at the same height, so zeta(s+at) is nonzero. The numerator and denominator
+also avoid the real pole 1. Formula (1) consequently continues along this
+horizontal path from Re(s)>1 toward rho. Each compact part of the path has an
+open complex tube on which the continuation integral is holomorphic:
+
+ * on bounded t intervals, compactness and nonzero denominators give uniform
+   separation from zero;
+ * at large t, a>0 puts the denominator in an Euler-product right half-plane,
+   uniformly; the numerator tends to 1 if b>0 and remains bounded if b=0;
+ * near t=0, the quotient minus 1 is uniformly O(t) on every path compact,
+   because zeta(s) there is nonzero.
+
+This licenses the required path and its local tubes. It does NOT assert a
+zero-free half-plane to the right of beta at other heights. Possible zeros at
+other heights do not invalidate this fixed-path continuation.
+
+5. Every zero multiplicity gives a nonzero fractional singularity
+=================================================================
+Let the chosen zero have finite order d>=1. In a disk about zero,
+
+ zeta(rho+z)=z^d*g(z),  g analytic, g(0)!=0.
+
+Take positive real delta tending to zero, and a fixed small epsilon so that
+delta+at and delta+bt stay inside this disk for 0<=t<=epsilon. Then
+
+ zeta(rho+delta+bt)/zeta(rho+delta+at)
+  =[(delta+bt)/(delta+at)]^d * [1+O(t)].                          (6)
+
+The error is O(t), NOT merely O(delta+t): analyticity and a lower bound on
+g give g(delta+bt)/g(delta+at)-1=O((a-b)t) uniformly. The power ratio lies in
+[0,1] for these real delta,t. Hence its error after multiplication by
+t^-alpha-1 integrates to O(1), since alpha<1.
+
+Substitute t=delta*u in the principal term of (6), subtracting 1 as in (1):
+
+ int_0^epsilon
+  {[(delta+bt)/(delta+at)]^d-1}*t^-alpha-1 dt
+  =delta^-alpha * int_0^(epsilon/delta)
+      {[(1+bu)/(1+au)]^d-1}*u^-alpha-1 du.
+
+Extending the last integral to infinity changes the expression by O(1): its
+tail is bounded by a constant times (epsilon/delta)^-alpha before the outer
+delta^-alpha multiplication. The t>=epsilon part of (1) is also O(1), uniformly
+as delta tends to zero. On compact t intervals this follows from the rightmost
+zero choice and nonvanishing denominator; at infinity the Euler tail and
+t^-alpha-1 suffice. This remains true at b=0, when the numerator is bounded
+and need not tend to 1 as t grows.
+
+Therefore the EXACT path asymptotic is
+
+ F(rho+delta)=C_d*delta^-alpha+O(1),
+ C_d=I^-1 int_0^infinity
+           {[(1+bu)/(1+au)]^d-1}*u^-alpha-1 du <0.               (7)
+
+The coefficient is finite: the bracket is -d*c*u+O(u^2) near zero and bounded
+at infinity. It is strictly negative at every u>0 because a>b and d>=1.
+This works for simple and repeated zeros and for b=0. No zero multiplicity
+certificate, numerical zero location, or critical-line mu bound is required.
+
+Since H is holomorphic near nonreal rho, (7) contradicts the boundedness near
+rho of the centered holomorphic continuation supplied by (5). Identity on
+Re(s)>1 and uniqueness of continuation along the above path ensure it is the
+same F-H. This proves (5)=>RH, with (5) itself still OPEN.
+
+6. Why the full density is the correct real-pole subtraction
+============================================================
+Let f(z)=1/zeta(z), and let g0(z)=zeta(z)-1/(z-1). Where these expressions are
+defined and the denominator zeta is nonzero, the integrand of F-H is exactly
+
+ [f(s+at)-f(1+ct)]/(s+bt-1)
+       +g0(s+bt)*f(s+at)-1.                                    (8)
+
+At s+bt=1, the two arguments in the first numerator agree, since s+at=1+ct.
+Thus its apparent real pole is a divided difference, not an uncanceled pole.
+At t=0 the complete bracket (8) is zero, by zeta(s)f(s)=1; on a zero-free
+local tube it is O(t). Formula (8) explains the exact cancellation of the
+real-pole continuum by (2)-(3). It does not assert global continuation across
+zeros of zeta or erase the singularity (7).
+
+For b=0, m is a constant and M=m(1)*(x-1). For b>0 the leading density is
+alpha*c*b^(alpha-1)*(log x)^(alpha-1), but its lower-order real components can
+be much larger than x^1/2. A leading-pole asymptotic, fitted amplitude, or
+truncated expansion is insufficient to instantiate (5).
+
+7. Executable schema audit and exact proof scope
+================================================
+I read fractional_prime_rh_bridge_052.py without executing it. Its request
+binds the exact fixed 051 kernel, full_positive_density_integral center, all
+real x, every epsilon>0, and kernel-dependent constants. Its producer accepts
+only a>b>=0, 0<alpha<1, sign=-1 and rejects other branches. The certificate
+correctly marks the pointwise dependency as initial arithmetic/convergence
+only, keeps the centered_error leaf OPEN, and records no converse, no original
+floor-energy payment, and no unconditional critical-half-plane continuation.
+The fixed-height zero choice, arbitrary multiplicity, b=0 tail, and uniform
+O(t) local error match the proof above. No material scope issue was found in
+that source at this read-only review.
+
+The paid result is only the exact implication from the explicit unproved
+premise (5) to ordinary RH. Positive coefficients and real-pole centering are
+structural primitives for searching for a signed distribution argument; they
+do not provide that argument. Finite sign tests or successful calibration
+cannot convert the OPEN leaf into a theorem. This review file is stopped.

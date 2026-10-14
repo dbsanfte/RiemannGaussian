@@ -1,0 +1,1195 @@
+{
+  "status": "independently_verified_signed_scale_polynomial_search",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/stable-scale-results/pilot-001",
+  "objective": "RH-relevant signed arithmetic operators and full recovery costs, without triangle-contraction projection",
+  "historical_priority_is_acceptance_gate": false,
+  "generated": 249,
+  "rejected": 24,
+  "automatic_compositions": 3,
+  "all_height_certified": 151,
+  "certified_outside_triangle_domain": 46,
+  "retained_without_available_global_certificate": 98,
+  "archived": 8,
+  "exact_complete_moment_values": 352,
+  "finite_estimates_passed": 19,
+  "finite_estimates_total": 32,
+  "statuses": {
+    "numerical_lead_missing_uniform_signed_moment_proof": 329,
+    "failed_sampled_validation": 182,
+    "ruled_out_by_ordinary_zero": 253,
+    "numerical_lead_without_available_global_transfer": 232
+  },
+  "checks": {
+    "frozen_sources_batches_seal_and_recreated_fresh_final_cases": true,
+    "independent_unnormalised_Schur_recursion_and_all_height_margins": true,
+    "independent_Newton_reciprocal_and_Cauchy_inverse_costs": true,
+    "complete_actual_arithmetic_prefix_and_final_window_moments": true,
+    "full_cost_transfer_kept_conditional_and_unsupported_leads_retained": true,
+    "exact_positive_and_sampled_delayed_positive_controls": true,
+    "ordinary_zero_recomputed_and_root_erasing_polynomial_rejected": true,
+    "deterministic_generation_promotion_selection_replay_and_worker_denials": true
+  },
+  "final_cases": [
+    1,
+    2,
+    3,
+    15,
+    1105,
+    6218,
+    6641,
+    207863,
+    350593,
+    402969,
+    443677
+  ],
+  "archive": [
+    {
+      "program": {
+        "id": "d0ba04e1c9c0e0be80035821ca74077240ec048a770a67c3e1d59397d9fa8128",
+        "family": "baseline",
+        "base": 2,
+        "polynomial": [
+          "1"
+        ],
+        "method": "unfiltered cumulative signed sum",
+        "operator_certificate": {
+          "base": 2,
+          "polynomial": [
+            "1"
+          ],
+          "atoms": [],
+          "lipschitz_constant": "1",
+          "triangle_critical_cost_ball": "0",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "14485/16384",
+              "steps": [],
+              "uniform_multiplier_lower_bound": "1",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "26073/32768",
+              "steps": [],
+              "uniform_multiplier_lower_bound": "1",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "49249/65536",
+              "steps": [],
+              "uniform_multiplier_lower_bound": "1",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "188305/262144",
+              "steps": [],
+              "uniform_multiplier_lower_bound": "1",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "14485/16384",
+            "steps": [],
+            "uniform_multiplier_lower_bound": "1",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "1.0000000000000000000000000000000000"
+        }
+      },
+      "best_full_cost_log_score": 3.283084931848243
+    },
+    {
+      "program": {
+        "id": "3d3f7dc3ecebabbd53b763036c1fee508d1575232ab5456a0d51b5bee7583726",
+        "family": "polynomial_fit",
+        "base": 2,
+        "polynomial": [
+          "1",
+          "-65/128"
+        ],
+        "method": "exact weighted least squares and rational quantization; no stability projection",
+        "operator_certificate": {
+          "base": 2,
+          "polynomial": [
+            "1",
+            "-65/128"
+          ],
+          "atoms": [
+            [
+              2,
+              "65/128"
+            ]
+          ],
+          "lipschitz_constant": "321/256",
+          "triangle_critical_cost_ball": "[0.35907766232129366473480377763136865 +/- 2.77e-36]",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "14485/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-941525/2097152"
+                  ],
+                  "reflection_coefficient": "-941525/2097152",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "1155627/2097152",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "26073/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-1694745/4194304"
+                  ],
+                  "reflection_coefficient": "-1694745/4194304",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "2499559/4194304",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "49249/65536",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-3201185/8388608"
+                  ],
+                  "reflection_coefficient": "-3201185/8388608",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "5187423/8388608",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "188305/262144",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-12239825/33554432"
+                  ],
+                  "reflection_coefficient": "-12239825/33554432",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "21314607/33554432",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "14485/16384",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "-941525/2097152"
+                ],
+                "reflection_coefficient": "-941525/2097152",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "1155627/2097152",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "[1.5602570435770858294728319445537902 +/- 2.22e-35]"
+        }
+      },
+      "best_full_cost_log_score": 1.5762111948713742
+    },
+    {
+      "program": {
+        "id": "1a948a04343d6a78ac2d00364a54d7f49645caa3744687e2d897bf5648b94475",
+        "family": "unrestricted_signed",
+        "base": 9,
+        "polynomial": [
+          "1",
+          "-1/8"
+        ],
+        "method": "seeded signed rational coefficient exploration",
+        "operator_certificate": {
+          "base": 9,
+          "polynomial": [
+            "1",
+            "-1/8"
+          ],
+          "atoms": [
+            [
+              9,
+              "1/8"
+            ]
+          ],
+          "lipschitz_constant": "73/72",
+          "triangle_critical_cost_ball": "[0.041666666666666666666666666666666667 +/- 3.34e-37]",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "3415/8192",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-3415/65536"
+                  ],
+                  "reflection_coefficient": "-3415/65536",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "62121/65536",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "6147/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-6147/131072"
+                  ],
+                  "reflection_coefficient": "-6147/131072",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "124925/131072",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "11611/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-11611/262144"
+                  ],
+                  "reflection_coefficient": "-11611/262144",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "250533/262144",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "44395/131072",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-44395/1048576"
+                  ],
+                  "reflection_coefficient": "-44395/1048576",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "1004181/1048576",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "3415/8192",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "-3415/65536"
+                ],
+                "reflection_coefficient": "-3415/65536",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "62121/65536",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "[1.0434814638573545872582228700207064 +/- 2.72e-35]"
+        }
+      },
+      "best_full_cost_log_score": 1.311299865692616
+    },
+    {
+      "program": {
+        "id": "9f62c7a80ec7b875ac0e9433b54a415d232a37c705594a18bb5c7ecf56309703",
+        "family": "signed_products",
+        "base": 4,
+        "polynomial": [
+          "1",
+          "0",
+          "-1/16"
+        ],
+        "method": "composition of sampled signed scale filters",
+        "operator_certificate": {
+          "base": 4,
+          "polynomial": [
+            "1",
+            "0",
+            "-1/16"
+          ],
+          "atoms": [
+            [
+              16,
+              "1/16"
+            ]
+          ],
+          "lipschitz_constant": "257/256",
+          "triangle_critical_cost_ball": "0.015625000000000000000000000000000000",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "10245/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "0",
+                    "-104960025/4294967296"
+                  ],
+                  "reflection_coefficient": "-104960025/4294967296",
+                  "reduced": [
+                    "1",
+                    "0"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "0"
+                  ],
+                  "reflection_coefficient": "0",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "4190007271/4294967296",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "18441/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "0",
+                    "-340070481/17179869184"
+                  ],
+                  "reflection_coefficient": "-340070481/17179869184",
+                  "reduced": [
+                    "1",
+                    "0"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "0"
+                  ],
+                  "reflection_coefficient": "0",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "16839798703/17179869184",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "34833/65536",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "0",
+                    "-1213337889/68719476736"
+                  ],
+                  "reflection_coefficient": "-1213337889/68719476736",
+                  "reduced": [
+                    "1",
+                    "0"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "0"
+                  ],
+                  "reflection_coefficient": "0",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "67506138847/68719476736",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "133185/262144",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "0",
+                    "-17738244225/1099511627776"
+                  ],
+                  "reflection_coefficient": "-17738244225/1099511627776",
+                  "reduced": [
+                    "1",
+                    "0"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "0"
+                  ],
+                  "reflection_coefficient": "0",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "1081773383551/1099511627776",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "10245/16384",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "0",
+                  "-104960025/4294967296"
+                ],
+                "reflection_coefficient": "-104960025/4294967296",
+                "reduced": [
+                  "1",
+                  "0"
+                ]
+              },
+              {
+                "polynomial": [
+                  "1",
+                  "0"
+                ],
+                "reflection_coefficient": "0",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "4190007271/4294967296",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "[1.0158761280112223072558470313783995 +/- 3.84e-35]"
+        }
+      },
+      "best_full_cost_log_score": 1.0244080900340733
+    },
+    {
+      "program": {
+        "id": "427d5334b3ea2e7cb8c39a785e1e4533c4f760f7f0003d33876a59258a1a1fc6",
+        "family": "learned_compositions",
+        "base": 4,
+        "polynomial": [
+          "1",
+          "-35/16",
+          "1225/1024"
+        ],
+        "method": "automatic reuse of low training-energy polynomials",
+        "operator_certificate": {
+          "base": 4,
+          "polynomial": [
+            "1",
+            "-35/16",
+            "1225/1024"
+          ],
+          "atoms": [
+            [
+              4,
+              "35/16"
+            ],
+            [
+              16,
+              "-1225/1024"
+            ]
+          ],
+          "lipschitz_constant": "26569/16384",
+          "triangle_critical_cost_ball": "1.3928222656250000000000000000000000",
+          "triangle_certificate_available": false,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "10245/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-358575/262144",
+                    "128576030625/274877906944"
+                  ],
+                  "reflection_coefficient": "128576030625/274877906944",
+                  "reduced": [
+                    "1",
+                    "-375993139200/403453937569"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "-375993139200/403453937569"
+                  ],
+                  "reflection_coefficient": "-375993139200/403453937569",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "4017566326602434923711/110900573907281967579136",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "18441/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-645435/524288",
+                    "416586339225/1099511627776"
+                  ],
+                  "reflection_coefficient": "416586339225/1099511627776",
+                  "reduced": [
+                    "1",
+                    "-1353575301120/1516097967001"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "-1353575301120/1516097967001"
+                  ],
+                  "reflection_coefficient": "-1353575301120/1516097967001",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "110990838492859687628431/1666967343565153843019776",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "34833/65536",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-1219155/1048576",
+                    "1486338914025/4398046511104"
+                  ],
+                  "reflection_coefficient": "1486338914025/4398046511104",
+                  "reduced": [
+                    "1",
+                    "-5113506693120/5884385425129"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "-5113506693120/5884385425129"
+                  ],
+                  "reflection_coefficient": "-5113506693120/5884385425129",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "2244573460417231792201711/25879800788979826259132416",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "133185/262144",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-4661475/4194304",
+                    "21729349175625/70368744177664"
+                  ],
+                  "reflection_coefficient": "21729349175625/70368744177664",
+                  "reduced": [
+                    "1",
+                    "-78206572953600/92098093353289"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "-78206572953600/92098093353289"
+                  ],
+                  "reflection_coefficient": "-78206572953600/92098093353289",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "675675147899355958249965871/6480827170428210856534736896",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "10245/16384",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "-358575/262144",
+                  "128576030625/274877906944"
+                ],
+                "reflection_coefficient": "128576030625/274877906944",
+                "reduced": [
+                  "1",
+                  "-375993139200/403453937569"
+                ]
+              },
+              {
+                "polynomial": [
+                  "1",
+                  "-375993139200/403453937569"
+                ],
+                "reflection_coefficient": "-375993139200/403453937569",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "4017566326602434923711/110900573907281967579136",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": true,
+          "critical_weight_inverse_norm_upper_ball": "[4.8704761978289791836414536987559916 +/- 2.83e-35]"
+        }
+      },
+      "best_full_cost_log_score": 3.556933573142207
+    },
+    {
+      "program": {
+        "id": "b9b8d074a828a62a652a0083e38d39b5417a80139511c4cbf00cb67e7babd019",
+        "family": "signed_products",
+        "base": 9,
+        "polynomial": [
+          "1",
+          "5/2",
+          "99/64"
+        ],
+        "method": "composition of sampled signed scale filters",
+        "operator_certificate": {
+          "base": 9,
+          "polynomial": [
+            "1",
+            "5/2",
+            "99/64"
+          ],
+          "atoms": [
+            [
+              9,
+              "-5/2"
+            ],
+            [
+              81,
+              "-99/64"
+            ]
+          ],
+          "lipschitz_constant": "83/64",
+          "triangle_critical_cost_ball": "[1.0052083333333333333333333333333333 +/- 3.34e-35]",
+          "triangle_certificate_available": false,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "3415/8192",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "17075/16384",
+                    "1154560275/4294967296"
+                  ],
+                  "reflection_coefficient": "1154560275/4294967296",
+                  "reduced": [
+                    "1",
+                    "4476108800/5449527571"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "4476108800/5449527571"
+                  ],
+                  "reflection_coefficient": "4476108800/5449527571",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "3056931142821591191/23405542696095318016",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "6147/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "30735/32768",
+                    "3740775291/17179869184"
+                  ],
+                  "reflection_coefficient": "3740775291/17179869184",
+                  "reduced": [
+                    "1",
+                    "3222798336/4184128895"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "3222798336/4184128895"
+                  ],
+                  "reflection_coefficient": "3222798336/4184128895",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "12919411644611176187/71882787065094471680",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "11611/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "58055/65536",
+                    "13346716779/68719476736"
+                  ],
+                  "reflection_coefficient": "13346716779/68719476736",
+                  "reduced": [
+                    "1",
+                    "12175015936/16413238703"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "12175015936/16413238703"
+                  ],
+                  "reflection_coefficient": "12175015936/16413238703",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "234682091921383341019/1127909175213223313408",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "44395/131072",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "221975/262144",
+                    "195120686475/1099511627776"
+                  ],
+                  "reflection_coefficient": "195120686475/1099511627776",
+                  "reduced": [
+                    "1",
+                    "931030630400/1294632314251"
+                  ]
+                },
+                {
+                  "polynomial": [
+                    "1",
+                    "931030630400/1294632314251"
+                  ],
+                  "reflection_coefficient": "931030630400/1294632314251",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "328838069116634500630151/1423463283213526972235776",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "3415/8192",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "17075/16384",
+                  "1154560275/4294967296"
+                ],
+                "reflection_coefficient": "1154560275/4294967296",
+                "reduced": [
+                  "1",
+                  "4476108800/5449527571"
+                ]
+              },
+              {
+                "polynomial": [
+                  "1",
+                  "4476108800/5449527571"
+                ],
+                "reflection_coefficient": "4476108800/5449527571",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "3056931142821591191/23405542696095318016",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": true,
+          "critical_weight_inverse_norm_upper_ball": "[2.9538693997720838969497559437918336 +/- 2.54e-35]"
+        }
+      },
+      "best_full_cost_log_score": 2.5025337995407946
+    },
+    {
+      "program": {
+        "id": "f65f04e90e32501cac0c25db37679e5e738d946c80c82483e9bee1d0b2eab07e",
+        "family": "unrestricted_signed",
+        "base": 7,
+        "polynomial": [
+          "1",
+          "4",
+          "9/4"
+        ],
+        "method": "seeded signed rational coefficient exploration",
+        "operator_certificate": {
+          "base": 7,
+          "polynomial": [
+            "1",
+            "4",
+            "9/4"
+          ],
+          "atoms": [
+            [
+              7,
+              "-4"
+            ],
+            [
+              49,
+              "-9/4"
+            ]
+          ],
+          "lipschitz_constant": "317/196",
+          "triangle_critical_cost_ball": "[1.8332864634654803374294947163652917 +/- 2.82e-35]",
+          "triangle_certificate_available": false,
+          "schur_attempts": [
+            {
+              "certified": false,
+              "radius": "7745/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "7745/4096",
+                    "539865225/1073741824"
+                  ],
+                  "reflection_coefficient": "539865225/1073741824",
+                  "reduced": [
+                    "1",
+                    "2030305280/1613607049"
+                  ]
+                }
+              ],
+              "reason": "Schur stage does not have strict |leading|<constant",
+              "failed_leading_coefficient": "2030305280/1613607049"
+            },
+            {
+              "certified": false,
+              "radius": "13941/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "13941/8192",
+                    "1749163329/4294967296"
+                  ],
+                  "reflection_coefficient": "1749163329/4294967296",
+                  "reduced": [
+                    "1",
+                    "7309099008/6044130625"
+                  ]
+                }
+              ],
+              "reason": "Schur stage does not have strict |leading|<constant",
+              "failed_leading_coefficient": "7309099008/6044130625"
+            },
+            {
+              "certified": false,
+              "radius": "26333/65536",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "26333/16384",
+                    "6240842001/17179869184"
+                  ],
+                  "reflection_coefficient": "6240842001/17179869184",
+                  "reduced": [
+                    "1",
+                    "27612151808/23420711185"
+                  ]
+                }
+              ],
+              "reason": "Schur stage does not have strict |leading|<constant",
+              "failed_leading_coefficient": "27612151808/23420711185"
+            },
+            {
+              "certified": false,
+              "radius": "100685/262144",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "100685/65536",
+                    "91237223025/274877906944"
+                  ],
+                  "reflection_coefficient": "91237223025/274877906944",
+                  "reduced": [
+                    "1",
+                    "422303498240/366115129969"
+                  ]
+                }
+              ],
+              "reason": "Schur stage does not have strict |leading|<constant",
+              "failed_leading_coefficient": "422303498240/366115129969"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": false,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "status": "retained_without_available_all_height_certificate"
+        }
+      },
+      "best_full_cost_log_score": null
+    },
+    {
+      "program": {
+        "id": "be21f26603bfc2be5570573267ca538889bc8eba7c0f98e35cb9bb84797dca7f",
+        "family": "signed_products",
+        "base": 9,
+        "polynomial": [
+          "1",
+          "-5/8"
+        ],
+        "method": "composition of sampled signed scale filters",
+        "operator_certificate": {
+          "base": 9,
+          "polynomial": [
+            "1",
+            "-5/8"
+          ],
+          "atoms": [
+            [
+              9,
+              "5/8"
+            ]
+          ],
+          "lipschitz_constant": "77/72",
+          "triangle_critical_cost_ball": "[0.20833333333333333333333333333333333 +/- 3.34e-36]",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "3415/8192",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-17075/65536"
+                  ],
+                  "reflection_coefficient": "-17075/65536",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "48461/65536",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "6147/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-30735/131072"
+                  ],
+                  "reflection_coefficient": "-30735/131072",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "100337/131072",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "11611/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-58055/262144"
+                  ],
+                  "reflection_coefficient": "-58055/262144",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "204089/262144",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "44395/131072",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-221975/1048576"
+                  ],
+                  "reflection_coefficient": "-221975/1048576",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "826601/1048576",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "3415/8192",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "-17075/65536"
+                ],
+                "reflection_coefficient": "-17075/65536",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "48461/65536",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "[1.2631620005704910899209826510821910 +/- 5.94e-37]"
+        }
+      },
+      "best_full_cost_log_score": 1.3120634517300824
+    }
+  ],
+  "proof_scope": "all-scale signed operator identities, all-height root preservation and weighted inverse bounds; moment cancellation premises remain unproved",
+  "uniform_sublinear_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "1c01e1ee95f936c111858665be18e293fa23cade6285d0a76bce84b9ab06a893",
+  "protocol_sha256": "dbba56f4de8725ef41fcec04469c634cb1f2c90d7f71db2d9f722e10b43b62fc"
+}

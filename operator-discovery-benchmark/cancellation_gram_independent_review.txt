@@ -1,0 +1,27 @@
+Independent full shared PSD Gram pre-freeze review
+
+Exact LDL admission is sound: negative Schur pivot rejects, a zero diagonal pivot requires its entire remaining row zero, positive pivots give rational rank-one factors, and explicit reconstruction verifies every cross term. Input rational safety preflights now precede Fraction conversion; explicit reconstruction work is charged. Floating SDP status alone admits nothing. The primal proposal is followed by exact coefficient reconstruction, nonnegative scalar checks, rational PSD checks, complete original polynomial matching, and independent finite SOS certificate compilation. Signed relations remain unrestricted; optional scalar slacks are nonnegative constants. No uniform estimate is proved.
+
+The restricted dual adds twenty offdiagonal atom-product columns as free relation columns, so exact separation forces their dots zero. Both full Gram dual matrices are then explicitly rebuilt and PSD-checked. Their diagonals correspond to the old five singleton-square block columns and are nonnegative. This is sufficient for nonnegative pairing with every PSD primal Gram. It is a restricted search; its failure or floating infeasibility gives no full-cone conclusion. Full domain, original square/relation/slack dots and negative lhs dot are mandatory.
+
+Our NEW independent check_cancellation_gram.py verifies PSD by all exact principal minors, not producer LDL; reconstructs five symbolic atoms and complete blocks directly; and checks full original coefficient identities, uniquely computed scalar slacks and Gram-dual matrices without producer math imports. Small anonymous Gram blocks must be audited under their declared semantics separately from actual block grammar. Source/time/work budgets are conservative computational proxies, not complete bit complexity or OS-enforced total memory certificates.
+
+Twelve focused producer tests passed (language6, synthesis3, diagonal-dual3). No actual pilot score query was performed. No frozen sources were edited. No mathematical blocker found.
+
+Current review refresh: exact independent primal validation also binds any archived Gram polynomial, its complete SOS expansion and matrix metadata to the shared admitted matrix. Seven independent tampering/domain tests pass, including lost crosses, negative principal minors, false slacks, target/horizon mismatches and hostile rational input. Run checker includes explicit preparation missing nullshape. No actual scores queried.
+
+Final pre-freeze runner review: exact 15-source EXTRA list, six test modules, primal/dual limits and contract agree with the independent run checker. All21 tests pass, including injected training-preparation and final-transfer resource failures. The two program selection and fixed-final matrices/weights remain bound; unsigned slack permission is explicit. No actual scores queried. Sources ready for freeze.
+
+SHA256 bindings:
+run_cancellation_gram_probe.py cd17d0a6b58e0c7b03e0e29febc3bf6624ce15ceb9ae00cdfca445e71221fad5
+test_run_cancellation_gram_probe.py 8e020a21b6ebee9089a23a75d0abdaeab2127871a97e865ac3c292a8dde1e1b8
+cancellation_gram_language.py 5d62e47291be950b6c30e3ef9146c2e875683fb36b1602544611adb7fcd09584
+cancellation_gram_synthesis.py 522ebfc4ebc1ad9067682fcf026e5b750a38574cf4fc424aedb27b1f4eab9b7d
+cancellation_gram_diagonal_dual.py 49ed597d1d4911f525e78422c8c5356aa959c53e4d45967143393c976ba6ff81
+test_cancellation_gram_language.py ffdf58f779e6d54050d387339832d10c4c798ecc181eb8059e88549de167ed11
+test_cancellation_gram_synthesis.py 00dd0310371edbffafb5a5eff5f500f47032485bc7ff6c4ed7322b66e44ad122
+test_cancellation_gram_diagonal_dual.py 45c40ff736a292e0decdc94750bd6fc819c00eff2289d42f0b2c776bc2559aa7
+check_cancellation_gram.py cb9792e941591814d4007d4a9afb31567e477044c97f67855ebf2ed478e62e4b
+check_cancellation_gram_run.py 273996b5c341895b9b93f1314c5c055d86f3e2b67514c1abb3e8170addc4e1c9
+test_check_cancellation_gram.py 460cfa66c22e9bfb13a5c9197dd364e293ca7470994ab7aedd96780a65722a00
+test_check_cancellation_gram_run.py 304efa16f92c32b542437ad4bb3a6866198ff9069931f31496f7163795010e54

@@ -1,0 +1,12 @@
+{
+  "operations": 276600,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_joint_preconditioner_discovery operations=276600\n",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.349s\n\nOK\n",
+      "operations": 276600,
+      "elapsed_seconds": 0.39436475301044993
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+ORDINARY-MOBIUS SIGNED TRANSPORT: ANALYTICAL REVIEW 059
+
+Scope and disposition
+=====================
+This NEW source-only review preserves every frozen058 and earlier file.
+Current mobius_transport_source_059.py, mobius_transport_search_059.py and
+check_mobius_transport_059.py were read without execution. No source arrays,
+scientific numerical integrals, norms, tests, scores, hashes or winner
+predictions were computed. The mathematical token/plan identity is sound.
+Exact finite transport and dominance proofs do not pay an all-scale cost
+bound. The ordinary-mu uniform arithmetic estimate remains OPEN.
+
+1. Complete source, profiles, and recovery domain
+================================================
+Let N>=2 be an integer, 0<alpha<1, gamma>0 and 0<tau<1 be fixed rationals.
+Let M be a fixed product of DISTINCT actual primes containing p<q. Put
+k=omega(M), epsilon=min(tau,N^(-gamma)), and
+
+ G_M(t)=product_(l|M)(1-l^(-t)),
+ Phi_N(a)=1/Gamma(1-alpha) integral_epsilon^tau
+                              G_M(t)a^(-t)t^(-alpha-1)dt,
+ W(y)=floor(4y)-3floor(2y)+2floor(y), W in {-1,0,1}.
+
+The normalizer follows from one integration by parts:
+alpha I_alpha=Gamma(1-alpha)>0. The complete finite middle is
+
+ J(N)=sum_(1<=d<=floor(4N/p),gcd(d,M)=1)mu(d)
+           [W(N/(pd))Phi_N(pd)-W(N/(qd))Phi_N(qd)].           (1)
+
+This is the weighted exchange source from058, with all valuation sectors
+already incorporated. Non-squarefree d have mu=0; they contribute zero,
+not a discarded nonzero source. The actual cofactor unit d=1 is retained.
+It maps to source indices p and q. It is not the original source n=1,
+whose weighted-exchange coefficient is exactly zero. The q term vanishes
+when qd>4N by its COMPLETE floor weight; that exit is not another arbitrary
+cofactor cutoff or an omitted complement.
+
+For (a,b)=(W(N/(pd)),W(N/(qd))) nonzero, the profiles and kernel signs are
+
+ P: b=0, magnitude Phi(pd), sigma=a;
+ Q: a=0, magnitude Phi(qd), sigma=-b;
+ D: a=b=+/-1, magnitude Phi(pd)-Phi(qd), sigma=a;
+ S: a=-b=+/-1, magnitude Phi(pd)+Phi(qd), sigma=a.
+
+The ACTUAL token sign is mu(d)*sigma, not mu(d) alone. When epsilon<tau
+all four magnitudes are strictly positive and nonincreasing in d; D is
+positive because p<q. They share a positive Laplace representation
+
+ m_i(d)=c_alpha integral_epsilon^tau
+                G_M(t)f_i(t)d^(-t)t^(-alpha-1)dt,            (2)
+ f_P=p^(-t), f_Q=q^(-t), f_D=p^(-t)-q^(-t),
+ f_S=p^(-t)+q^(-t), c_alpha=1/Gamma(1-alpha).
+
+If epsilon=tau all magnitudes and J are zero exactly. This is a vacuous
+finite middle, not evidence of a uniform estimate. The current source
+implementation has an exact powered empty-band gate and labels quadrature
+magnitudes as FLOAT SCREENING, without certified error. The independent
+checker rebuilds ordinary mu, profiles and all units/exits, then encloses
+only the needed magnitudes and plan charges. Its finite proof scope must
+not be enlarged to uniform growth.
+
+A uniform square-root/polylog estimate for B_plan restores the COMPLETE
+RH-sensitive exchange using058 endpoints only when
+
+ gamma*(k-alpha)>=1/2 AND tau>=1/2,                          (3)
+
+or when separate stronger endpoint premises are paid. General positive
+gamma and tau alone do not guarantee this recovery. The scientific choice
+alpha=1/5, M=30, gamma=5/28, tau=1/2 satisfies (3) at equality. No actual
+candidate values or outcomes are used here. The target is the full signed
+middle; the cofactor units and inter-leg cancellation stay joined.
+
+2. Every complete opposite-sign matching is a valid positive bound
+=================================================================
+A plan pairs distinct opposite-sign tokens, uses every token at most once,
+and retains every remaining token. If signs are epsilon_i and magnitudes
+m_i>=0, its exact cost is
+
+ B_plan=sum_pairs |m_i-m_j|+sum_unmatched m_i.               (4)
+
+Each pair contributes either m_i-m_j or its negative to J. Triangle
+inequality therefore proves |J|<=B_plan. Also B_plan<=sum_i m_i for every
+legal plan. Repeated tokens, missing leftovers, same-sign cancellation,
+or pairings based on a sign without its kernel sigma invalidate this rule.
+The read producer and independent checker retain these conditions.
+
+A source-dependent algorithm is allowed to read actual mu signs, indices,
+quotients, residues, profiles and exact rational-power block thresholds.
+The algebraic bound holds for every output matching, regardless of how
+those choices are made. To make it a uniform theorem, however, the policy
+must be a TOTAL fixed program on all N in its claimed domain and its COST
+must satisfy a separately proved uniform estimate. A program defined only
+through the scientific resource ceiling is not itself a proof for larger N.
+Frozen finite calibration of C and independent fresh finite comparison
+can reject a proposed estimate; neither supplies its missing quantifier.
+
+3. Exact one-dimensional optimum, including all leftover mass
+=============================================================
+For any finite signed list of nonnegative magnitudes, augment the smaller
+sign class by zero-magnitude dummy tokens to balance counts. A pair with a
+dummy has exactly the unmatched charge. Zero is only an accounting endpoint:
+it is not a new source index, not Phi(0), and not permission to drop a tail.
+
+The minimum cost over ALL pairings and leftovers is
+
+ B_* = integral_0^infinity |sum_i epsilon_i 1_(m_i>y)|dy.     (5)
+
+Proof: each pair is a unit path between its two magnitudes, and its length
+is the integral of its threshold crossings. Every threshold must have at
+least the absolute signed count difference of crossing paths. Sorting the
+two balanced lists and matching in order attains that lower bound, by the
+usual uncrossing inequality for absolute distance on a line. Extra equal
+numbers of zero dummies do not change (5), so plans leaving both signs
+unmatched are also bounded below by it.
+
+For ONE fixed profile, order d_1<...<d_n, hence m_1>=...>=m_n, and put
+S_j=sum_(i<=j)epsilon_i, m_(n+1)=0. Then
+
+ B_profile^*=sum_(j=1)^n |S_j|(m_j-m_(j+1)).                 (6)
+
+Canonical ascending-d STACK and FIFO both attain (6) without inspecting
+magnitudes. Cancel every incoming opposite sign against any waiting token;
+otherwise enqueue it. The waiting list has only one sign and exactly |S_j|
+entries after every prefix. Each waiting token eventually goes to a lower
+magnitude or to zero. Thus exactly |S_j| paths cross each magnitude gap,
+which proves (6) directly. Choice of FIFO versus stack changes edges, not
+this optimal cost. Weak monotonicity and zero/tied magnitudes cause no gap.
+
+Scanning descending d need not be optimal with leftovers sent to zero
+at the end. For example ascending magnitudes 1-,2+,3+,4-,5- gives greedy
+cost 1+1+5=7, while the optimum is 5. If counts are balanced, reflection
+also preserves the optimum; that special case is not a generic guarantee.
+Arbitrary adjacent cancellation is likewise not the proof: the one-sign
+waiting invariant and the correct location of the zero endpoint matter.
+
+UNIVERSAL DOMINANCE RULE: any policy whose EVERY pair joins equal-profile
+tokens has cost >=sum_profiles B_profile^*(N), at every N. Arbitrary
+partitions, residues, quotient bands, block powers, reverse orders, partial
+passes, profile-restricted prime ratios and their compositions cannot beat
+the canonical ascending-d profile stack. All unmatched tokens count in
+this comparison. Hence a syntactic PRE-score gate may archive such policies
+as dominated, preserving explicit controls. It does not prove a growth
+bound for the reference. In the read grammar, every non-ALL group includes
+profile; prime_ratio/profile explicitly enforces it. ALL/cross-profile
+policies are outside this gate and can beat, equal or exceed that reference.
+
+4. The optimum is a concrete arithmetic-prefix variation
+========================================================
+For fixed N and a profile i, define the ACTUAL masked prefix
+
+ A_(N,i)(y)=sum_(d<=y,gcd(d,M)=1)
+                  mu(d)*sigma_N(d)*1_(profile_N(d)=i).
+
+With D=floor(4N/p), (6) is equivalently
+
+ B_profile^*=integral_1^D |A_(N,i)(y)|[-m_i'(y)]dy
+                                  +|A_(N,i)(D)|m_i(D),    (7)
+
+with zero cost for an empty profile. Differentiating (2) is legitimate on
+the finite parameter interval. The terminal term is the complete leftover
+mass; it cannot be deleted because there is a cofactor cutoff. Equivalently
+it is the integral of the constant final discrepancy against -m_i' from
+D to infinity, since m_i tends to zero.
+
+The signed profile sum has the SAME formula with A instead of |A|. Thus
+(7) keeps cancellation among mu signs inside each arithmetic prefix, but
+loses cancellation BETWEEN prefix discrepancies with different signs.
+It is a stronger auxiliary than |J_profile| and is equivalent to that
+signed quantity only when the relevant threshold discrepancies have one
+sign almost everywhere. A single global residual mass or an endpoint
+Mertens value does not bound this weighted variation.
+
+If m_min is the smallest positive magnitude in a complete nonempty list,
+the threshold formula also proves B_plan>=m_min*|sum_i epsilon_i|: below
+m_min every positive token is present. Equal-profile-only plans obey the
+sum of these separate profile lower bounds; unrestricted plans obey only
+the global version. Thus a uniform cost theorem constrains actual signed
+token counts as well as weighted prefix variation. A small final count
+alone is insufficient: intermediate prefix discrepancies can remain large
+even when that count is zero.
+
+A precise reusable sufficient leaf is a uniform bound on (7), summed
+across profiles, for all N and all prefix y with the displayed weights.
+It is not the norm of h renamed: it is an actual ordinary-mu discrepancy
+under N-dependent floor/profile masks. The mask depends on N/d, and no
+prime-independence or random-sign assumption is licensed. A claimed bound
+on an unrelated unmasked Mertens prefix cannot be substituted without
+proving the full interval/mask transfer and its cost.
+
+A further generic proof-language construction is possible without numeric
+magnitude choice: P and Q magnitudes share the SAME Phi function, with
+arguments pd and qd. Their merged group can be sorted by those exact integer
+arguments, and canonical cancellation is optimal for that shared-kernel
+class. This can be inferred from canonical kernel AST equality, rather
+than nominate a favorite formula or read floating magnitudes. D and S are
+positive sums/differences of two kernels and cannot be silently flattened:
+flattening changes transport constraints and can either raise or lower a
+bound. All cross-profile or multi-kernel comparisons need their own proof.
+
+5. Prime-ratio pairs add a paid local factor, but not coverage
+===========================================================
+For squarefree ordinary-mu d and an actual prime r|d, mu(d/r)=-mu(d).
+The pair is opposite in the ORIGINAL tokens exactly when their kernel
+sigmas agree. Same profile alone is insufficient to infer that sign; the
+implemented policy also checks the actual signs. Coprimality with M implies
+r is outside M, and at M=30 necessarily r>=7.
+
+Within a common profile and a legal edge (d/r,d), its cost is exactly
+
+ m_i(d/r)-m_i(d)
+ =c_alpha integral_epsilon^tau G_M(t)f_i(t)
+                  (d/r)^(-t)(1-r^(-t))t^(-alpha-1)dt>=0.   (8)
+
+This is a real elementary Möbius cancellation with one EXTRA Laplace
+factor. It is useful local structure, not an assumed sign law for unrelated
+integers. All unmatched vertices remain, and a vertex can be used once.
+Coverage or the cumulative sum of these positive edge costs is not paid
+by the identity.
+
+A route-specific unconditional obstruction can be proved. Any plan using
+ONLY same-profile prime-ratio pairs and retained leftovers has, for fixed
+M,p,q,alpha,gamma,tau and sufficiently large N,
+
+ B_plan >= c N/[log N]^(k-alpha+2), c>0.                    (9)
+
+Consequently this restricted class cannot satisfy a square-root times
+any fixed polylog estimate. This does NOT reject plans adding global or
+cross-profile matching of untouched tokens.
+
+Here is a complete non-RH proof. Put D=floor(4N/p), L=log(2qD). For large N
+the parameter interval [1/L,2/L] lies inside [epsilon,tau]. On it,
+G_M(t)>=c_M t^k, d^(-t)>=exp(-2) for d<=D,
+f_P,f_Q,f_S>=c, and f_D>=c t because p<q. All constants are positive and
+fixed; 1-exp(-z)>=z/2 for 0<=z<=1 proves the first bound. Thus every
+unmatched magnitude is >=c L^(-(k-alpha+1)). For every same-profile
+prime-ratio pair, r^t-1>=t log r>=t log2; (8), expressed with d^(-t),
+gives cost >=c L^(-(k-alpha+2)). The weaker exponent covers all profiles.
+
+There are at least c_0 N actual nonzero tokens. Indeed the P+ exit interval
+
+ max(2N/p,4N/q)<d<=4N/p
+
+has Wp=+1,Wq=0 and positive length. Squarefree d coprime to M have positive
+density rho_M=(phi(M)/M)*product_(r prime,r not dividing M)(1-r^(-2)).
+This density is elementary: expand mu(d)^2=sum_(a^2|d)mu(a), count the
+finite coprime arithmetic intervals, and pass to the limit using the
+absolutely summable a^(-2) tail; the O(sqrt(N)) endpoint count disappears.
+The Euler product is positive because sum_r r^(-2) converges. No prime gap,
+PNT, RH, or source table is used. With T>=c_0 N tokens, every plan has at
+least T/2 paired-or-unmatched charges. Their lower bounds prove (9).
+
+A same-profile ratio edge is irreversible even if followed by other
+passes. If E_N such edges were already charged, any final plan has
+B>=c E_N/log^(k-alpha+2)N. A proposed square-root/polylog bound therefore
+requires E_N=O(sqrt(N)*a fixed polylog), or an independently justified
+avoidance of a positive-density ratio pairing pass. Finite pair counts
+can diagnose this issue; they do not prove its uniform coverage rate.
+This obstruction is on a restricted proof route, not on the full grammar
+or the actual RH conjecture.
+
+6. All-positive controls require distinct scope
+==============================================
+Discarding actual token signs and setting every token sign positive makes
+B_plan=sum magnitudes: no opposite pairing remains. Replacing ordinary mu
+by |mu| while keeping the kernel sigma is a DIFFERENT control, since floor
+signs still oppose each other. It must not be mislabeled as the ordinary
+source or used as its upper provider. The latter control has a rigorous
+all-scale obstruction even after its real linear mean is removed.
+
+For this squarefree-positive cofactor control,
+
+ Q_M(s)=sum_(gcd(d,M)=1)|mu(d)|d^(-s)
+       =zeta(s)/zeta(2s)*product_(l|M)(1+l^(-s))^(-1).
+
+It has a simple positive-residue pole at s=1. Its complete normalized
+exchange Dirichlet symbol on Re(s)>1 is
+
+ F_abs(s)=c_alpha integral_0^infinity G_M(t)zeta(s)Q_M(s+t)
+                   [p^(-s-t)-q^(-s-t)]t^(-alpha-1)dt.       (10)
+
+All cofactor units and both exits are retained. The elementary Euler
+product proves this formula; standard zeta continuation/pole background
+is available at https://dlmf.nist.gov/25.2 . This source is not actual mu.
+
+Near s=1+delta, a simple scale-zero P(q0)=0 cancels the pole of zeta(s),
+but Q_M(1+delta+t) still contributes a nonzero multiple of 1/(delta+t).
+Since G_M(t) starts at order k, the Taylor-subtracted parameter integral
+contains the nonzero noninteger term delta^(k-alpha-1). The coefficient
+is a nonzero multiple of the regularized beta integral
+Gamma(k-alpha)*Gamma(1-k+alpha). Analytic amplitudes produce only higher
+noninteger orders and analytic Taylor terms. Any finite extra multiplier
+zero merely increases this noninteger exponent; it does not remove the
+branch. Thus the complete scale-filtered control is NOT holomorphic near
+s=1 and cannot have an all-integer square-root/polylog bound. This uses
+no off-line-zero hypothesis or finite observation.
+
+Under endpoint conditions (3), the positive-cofactor microscopic piece
+is O(sqrt N) directly from G_M<=t^k product log l and the finite absolute
+d sum. Its tail is O(sqrt N), retaining the p,q attenuated d=1 terms.
+Therefore a square-root/polylog bound on ANY middle matching cost for
+this |mu| control would imply the forbidden complete bound. It is
+impossible in that scope. Without paid endpoints this particular transfer
+must not be asserted. The actual ordinary-mu symbol has 1/zeta(s+t),
+not Q_M(s+t), and this real-pole-continuum obstruction is not an obstruction
+to its admissible square-root middle estimate.
+
+7. New arithmetic frontier, code scope and noncircular claims
+============================================================
+The grammar can in principle produce a valid RH-strength auxiliary: a
+proved uniform cost bound, under (3), gives |J| control, complete endpoint
+restoration, and the058 conditional RH bridge. No algebraic impossibility
+has been shown for all actual-mu cross-profile/global policies. Their hard
+leaf is the uniform ordinary-mu signed-prefix variation or an independently
+proved pairing/coverage-cost theorem. The profile optimum is not a proof
+of that leaf, and the extra factor in a prime-ratio edge is not a proof
+that enough cheaply paired vertices cover the source.
+
+The code reviewed has the correct P/Q/D/S signs, stable positive D
+integrand, ordinary squarefree-zero mu handling, d=1, complete q exit,
+once-only opposite matching and explicit leftover pricing. Producer float
+magnitudes are screening values; independent rigorous intervals and
+coverage replay are required before a finite bound is admitted. Even that
+admission proves only the listed finite cases. There is no universal
+normalization hidden in the fitted C, and no finite plan comparison pays
+an all-N bound. The floor-power resource precharge issue was reported to
+the parent before freeze; no owned code or suite was changed here.
+
+Detector feedback can now distinguish:
+ * universal token triangle and profile-dominance certificates: PAID;
+ * exact prime-ratio cancellation and source-free endpoint rates: PAID;
+ * square-root cost of an all-positive control: REFUTED in the stated scope;
+ * prime-ratio-only same-profile square-root route: REFUTED asymptotically;
+ * actual-mu global/cross-profile uniform arithmetic cost: OPEN;
+ * endpoint restoration and RH implication: CONDITIONAL on that OPEN leaf.
+
+The constructive next proof object is a bound on the weighted masked
+prefix discrepancy (7), or a stronger source-specific joint cancellation
+that bounds the cost of a fixed total policy without assuming the target
+or a companion RH bound. It retains the complete cutoff residual and
+moving parameter endpoints. No random-mu premise, independently assumed
+RH-strength Mertens bound, or observed finite cancellation pays it.
+
+Disposition: source-only review complete and edits stopped. No ordinary-mu
+uniform transport-cost estimate or RH theorem was proved.

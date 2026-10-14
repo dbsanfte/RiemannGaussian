@@ -1,0 +1,97 @@
+Independent exact posthoc audit passed.
+{
+  "RH_proved": false,
+  "cases": [
+    {
+      "attempts": 679,
+      "chosen": {
+        "cost": {
+          "degree": 1,
+          "index_sum": 1,
+          "terms": 1
+        },
+        "dual_score": "-1/2",
+        "expanded": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              4
+            ]
+          }
+        ],
+        "kind": "relation",
+        "payload": {
+          "multiplier": [
+            {
+              "c": "1",
+              "m": [
+                1
+              ]
+            }
+          ],
+          "spec": {
+            "e": 2,
+            "kind": "prime_power",
+            "p": 2
+          }
+        },
+        "status": "evaluated",
+        "unsupported_monomials": [],
+        "witness": true
+      },
+      "extension_status": "no_certificate_found",
+      "lhs_dual_dot": "-5/2",
+      "mode": "atomic_local",
+      "unsupported": 367
+    },
+    {
+      "attempts": 679,
+      "chosen": {
+        "cost": {
+          "degree": 1,
+          "index_sum": 1,
+          "terms": 1
+        },
+        "dual_score": "-1",
+        "expanded": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              4
+            ]
+          }
+        ],
+        "kind": "relation",
+        "payload": {
+          "multiplier": [
+            {
+              "c": "1",
+              "m": [
+                1
+              ]
+            }
+          ],
+          "spec": {
+            "e": 2,
+            "kind": "prime_power",
+            "p": 2
+          }
+        },
+        "status": "evaluated",
+        "unsupported_monomials": [],
+        "witness": true
+      },
+      "extension_status": "no_certificate_found",
+      "lhs_dual_dot": "-10",
+      "mode": "grouped_cycles",
+      "unsupported": 372
+    }
+  ],
+  "finite_cone_only": true,
+  "global_bound_proved": false,
+  "result_sha256": "9d6f02c233139bc0ff7a5b7a63b20717dd75f059c7e812b50118d03d379369ce",
+  "verified": true
+}
+The separators prove infeasibility only of the declared original finite cones, although the actual bound at mu X2 is true (Delta6,D8). The chosen multiplier x1 times prime-power relation x4=0 invalidates each original separator; single-column extension still produced no certificate, which is not a certified extended-cone separation. Unsupported monomials were never assigned implicit zero. No RH or uniform arithmetic bound follows.

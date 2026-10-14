@@ -1,0 +1,51 @@
+Prospective033: accelerated sparse projected-gradient proposal
+
+One new method on the licensed031302x687 source, starting at zero. This does
+not restart032 or use its selected vector. Prior032's positive residual and
+failed support motivated a method change; they supply no theorem premise.
+The algorithm and selection are fixed before any new actual source scaling,
+gradient, line test, iterate or score. No hashes are generated.
+
+Combined450m proxy:40m preparation,40m model,190m numerical,90m exact support
+restoration,90m sole independent audit. Preparation includes25m cumulative
+synthetic tests,10m independent I/O,5m other work. Development and one frozen
+combined suite are charged together, plus1m root/scaffolding. No allowance
+reset for a retry. Worker/audit each6GiB, one thread,3600 cooperative seconds;
+producer external7200seconds. Bits4096/8193, live cells6m, proposal/review8MiB,
+metadata64KiB, snapshot8MiB; prior reduction64MiB and geometry16MiB inputs.
+
+Consumed development arithmetic is2,570,292 operations:1,032,290 for the13
+producer tests and1,538,002 for the10 checker tests, each run once. The12
+root workflow tests ran once within the1m root/scaffolding reserve. The
+single frozen combined suite's module receipts are added to development;
+there is no additional pre-freeze combined invocation.
+
+Work blocks are declared sparse-operation proxies, not hardware instruction
+counts. Letm,n,nnz be source shape/sparsity. setup=8nnz+32(m+n)+65536;
+gradient=8nnz+32(m+n)+512; trial=16nnz+64(m+n)+1024;
+commit=32(m+n)+512; final=12nnz+64(m+n)+2048.
+One step reserves gradient+32trial+commit plus the final diagnostic before
+it starts, but charges only its actual blocks. At a complete accepted
+boundary, insufficient room for another worst-case step is normal bounded
+termination, not convergence. A midstep/final failure remains incomplete.
+Maximum10000 accepted steps,32 backtracking trials each, restart every64.
+
+Sparse fsum products and nonnegative projection replace serial coordinate
+updates. Every trial checks directional quadratic majorization numerically;
+the carried L starts at the maximum squared column norm and only doubles.
+All values remain finite, including candidate values before projection,
+line-test squares/products and the momentum extrapolation. Fresh residuals
+prevent accumulated incremental drift. A final projected-gradient mapping
+norm adds a stationarity diagnostic without creating a proof claim.
+
+Every accepted checkpoint competes by relative residual, support size and
+iteration. All strictlypositive selected entries are kept. Only a complete
+bounded trajectory may trigger one exact reconstruction on the original851
+ray family and the full782-row/1224-coordinate Farkas identity. Independent
+metadata validation and that full identity share90m; numerical scores are
+not replayed or independently certified. No exact witness=>no admission.
+
+The851 generators do not exhaust the PSD cone. Even a full exact separator
+would exclude only this augmented finite template. The signed all-scale
+arithmetic bound, universal identity, initial/storage estimates, cofinal
+parameters and ordinary-zeta bridge remain unresolved requirements.

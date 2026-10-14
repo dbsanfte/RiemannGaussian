@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 55977,
+      "stdout": "SYNTHETIC_WORK module=test_renewal_shift_candidates operations=55977\n",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.032s\n\nOK\n"
+    }
+  ],
+  "operations": 55977
+}

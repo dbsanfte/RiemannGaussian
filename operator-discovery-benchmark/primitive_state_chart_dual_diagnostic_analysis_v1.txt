@@ -1,0 +1,199 @@
+Exact dual diagnostics from the licensed782-row chart
+Date2026-10-09. Read-only design and tiny exact examples; no real chart response,
+LP/candidate evaluation, source compilation, elimination replay or hashes.
+
+Premise and cone
+Publication028 handoff licenses the complete782-row normalized chart and its
+finite affine span, including all three learned equations. Its235 negative
+scalars reject one point only. Let A*x=b be that chart, with augmented RHS
+column1224 read as b, not moved with the wrong sign. Quotient coordinates are
+squares0..365,613 unrestricted beta366..978, five nonnegative slacks979..983,
+C984..1103 and P1104..1223. C=Gc+K, P=Gp-4K. Feasibility is exactly s>=0,
+C>=PSD0 and H=P+4C>=PSD0. A canonical original lift is Gc=0,K=C,Gp=H,
+beta positive/negative parts. This preserves equations, not the objective or
+initial storage costs. No new original source system is needed for a dual.
+
+For lambda in Q^782, form w=lambda*A and rho=lambda*b exactly. Require all
+613 beta moments zero,371 scalar moments nonnegative, and
+S=mat(w_C-4*w_P), T=mat(w_P) positive semidefinite. Here mat reads an upper
+triangular coordinate list: diagonal unchanged and every offdiagonal divided
+by2. The chart contains linear coefficients, not matrix entries.
+Then w*x=sum_scalar w_i*s_i +tr(S*C)+tr(T*H)>=0 for every feasible x.
+If rho<0 the chart has no point in the entire declared finite cone. A positive
+rescaling gives rho=-1 without changing these conditions. The original dual
+matrix for Gc is S+4T, for Gp is T, for K is S; all are PSD. Thus this quotient
+witness also separates the full1957-coordinate original finite cone subject
+to the learned rows, not just its canonical lift.
+
+Offdiagonal and storage counterexamples
+If a diagonal P coefficient is1 and C coefficient0, the required S entry is
+-4, not+4. The equation P=-1 has the feasible point C=1,H=3, so a plus sign
+would produce a false infeasibility claim. For2x2 C, coefficients(.75,2,.75)
+define matrix[[.75,1],[1,.75]], not[[.75,.5],[.5,.75]]. C=(1,-1)(1,-1)^T is
+PSD and evaluates this functional to-.5. Dividing an offdiagonal twice can
+therefore falsely certify a feasible equation as impossible. A relation-only
+equation beta=-1 is feasible; accepting nonzero w_beta would likewise be wrong.
+
+Three restricted searches
+Scalar-only relaxation: make all240 matrix coordinates unrestricted. Its dual
+requires w_C=w_P=0 as well as w_beta=0; ignoring matrix moments is NOT sound.
+There are853 zero equations and371 nonnegative scalar moments. A strict exact
+witness separates the original cone; failure says nothing.
+Diagonal dual: require both S and T offdiagonal zero and their30 diagonals
+nonnegative. This gives823 zero equations(613+210) and401 nonnegative moments.
+It can be severely restrictive even when the finite cone is infeasible.
+Neither zero-equation rank nor a nontrivial kernel can be assumed from counts.
+
+Diagonally dominant dual is the more useful next restriction. For each block,
+M_ii>=sum_{j!=i}|M_ij| impliesPSD. In chart coefficients this is
+2*q_ii>=sum_{j!=i}|q_ij|, since q_off=2*M_off. There is an exact decomposition
+M=sum_i d_i*e_i*e_i^T +sum_{i<j}|M_ij|*(e_i+sign(M_ij)*e_j)
+*(e_i+sign(M_ij)*e_j)^T, d_i=M_ii-sum_{j!=i}|M_ij|>=0.
+This supplies a PSD proof without potentially expensive rational LDL updates.
+DD is sufficient, not necessary: [[1,2],[2,4]] isPSD but is notDD.
+
+A finite generator LP/certificate is especially clean. Each15x15 block has
+225 rays:15 e_i*e_i^T plus210(e_i+/-e_j)(e_i+/-e_j)^T. Two blocks and371 scalar
+coordinate rays give821 nonnegative alpha. An S-ray contributes vec(vv^T) to
+w_C and zero to w_P; a T-ray contributes4*vec(vv^T) to w_C and vec(vv^T) to
+w_P. vec diagonal=v_i^2, offdiagonal=2*v_i*v_j. All beta entries are zero.
+The full sparse generator matrix G has2306 nonzeros:371 scalar,645 S,1290 T.
+Search for full lambda782,alpha821 satisfying A^T*lambda=G*alpha,
+b^T*lambda=-1 and alpha>=0. This is a linear feasibility problem. A successful
+exact identity is already a DD rank-one PSD certificate, not an approximate
+matrix claim. This does not require success of a generic SDP algorithm.
+
+Tiny exact calibration
+1) s=-1: lambda=1, scalar alpha=1 proves contradiction to s>=0.
+2) C11+2*C12+C22=-1: lambda=1, the single S ray(1,1) proves contradiction.
+3)4*C11+P11=-1: lambda=1, the T ray e1 proves contradiction becauseH11>=0.
+4)P11=-1 cannot use a T ray without its4*C contribution; C11=1,H11=3 is a
+feasible counterexample. All these identities are exact rational algebra,
+not evaluation of a research candidate or the actual chart.
+
+Exact reconstruction and verification
+Floating LP output is proposal only. Rounding lambda or alpha independently
+will generally destroy613 relation zeros and1224 generator equalities.
+Exact repair/reconstruction must solve the proposed active sparse rational
+system under a separate bounded budget, or reportUNKNOWN. The normalized chart
+does not make those dual equalities automatically exact. Avoid constructing a
+dense rational nullspace or unconstrained dense1603-variable elimination.
+Support-limited exact reconstruction is permissible only if zero coordinates
+are explicit and the independent checker checks complete vectors and all
+1224 equations, not merely the selected support. Any resulting exact valid
+witness proves separation regardless of how its support was proposed.
+
+An alternative exact membership check is cheap once a candidate w is rational:
+ascending chart pivots determine lambda_p=w_p-sum_{earlier i}lambda_i*A_ip.
+Then verify every free-coordinate equation and rho exactly. This is a sparse
+triangular transpose operation, not an exact repair of arbitrary w. It avoids
+new elimination, but cannot turn a merely approximate equality into a witness.
+
+The independent checker can parse and validate the designated licensed chart,
+full782 lambda and821 alpha; accumulate every row/column and RHS; accumulate
+all821 fixed rays; compare all1224 coordinates; and require exact rho=-1 and
+alpha>=0. Typical direct combination work is linear in E+2306+782 rather than
+old5644-source generation. Bit growth still needs4096 successful-result and
+8193 temporary caps. Deadline, live/cumulative cells, input/receipt bytes and
+serialization must be charged before allocation where applicable. Retain no
+usable incomplete certificate. No missing coordinate defaults, tolerance-based
+relation zeros, eigenvalue clipping or discarded source rows are acceptable.
+
+One joint450m preregistration must reserve preparation, sparse numerical
+proposal, bounded exact reconstruction and one independent audit together.
+The independent checker suggested100m is ample in proxy terms for one sparse
+combination if bit/byte caps hold; it is not permission for an extra audit.
+Numerical LP internals cannot be advertised as mathematically certified work
+from external iteration counts alone. Use explicit sparse operation reserves,
+solver resource/iteration limits and honest declared work proxies; failUNKNOWN
+when exact reconstruction exceeds its allocation. No adaptive second solver
+or additional ray family is authorized by unspent budget. Fixed rays should
+be chosen before scoring. Stronger rational rank-one rays can later expand DD,
+but are another preregistered experiment, not a retrofit to a failed job.
+
+Scope and limitations
+A strict witness proves infeasibility of this FULL augmented finite cone,
+not merely the current endpoint. Learned formal equations are additional
+restrictions; the witness need not refute the unlearned original5641-equation
+cone. It does not refute actual Mobius arithmetic, RH, all possible grammars,
+or every uniform certificate. Conversely, failure of scalar/diagonal/DD
+search or exact reconstruction proves nothing about feasibility. Even a full
+PSD dual may lack a strict separating witness in weakly infeasible conic
+systems; no Slater/strong-duality assumption has been established here.
+The method advances finite grammar diagnosis, not an all-scale theorem.
+
+IMPLEMENTATION REVIEW ADDENDUM: final declared851-ray experiment
+The new implementation adds30 endpoint-derived dyadic vectors to the821
+fixed catalog:15 for C and15 for H, rounded at denominator2^20 with first
+nonzero component positive. Their eigenvector accuracy is not a proof premise.
+Every nonzero rational vector produces a PSD rank-one generator exactly.
+The resulting851-generator cone contains DD and may contain non-DD matrices;
+calling this entire search strictly DD would be inaccurate.
+
+Producer reduction is algebraically correct: a ray g satisfies g*x=t+r*f on
+the chart. It caches the611 scalar/C/P coordinate functionals, composes each
+ray's reduced column(r,t), and seeks nonnegative alpha with sum alpha*r=0,
+sum alpha*t=-1. Exact recombination supplies lambda and the complete1224
+functional. Positive row scaling and reciprocal positive column scaling yield
+scaled native variable x with original alpha=D*x; only its support is used
+for exact restoration, which solves ORIGINAL rational reduced columns.
+A common positive objective scale preserves minimization of original L1.
+No native floating vector, native infeasibility or approximate zero is admitted.
+
+The reduced system has443 coordinates(442 free plus constant),851 columns.
+Conic Caratheodory bounds a representable target by443 active rays, but does
+not guarantee the observed floating support is that small or that zero-free
+exact repair of this one support remains nonnegative. The declared single
+repair sets underdetermined support coordinates zero, and may reject even a
+support permitting another nonnegative solution. That is NONCERTIFIED, not
+infeasibility and not permission for another support/solver retry.
+
+Final joint450m ledger:50m preparation,100m assembly,190m native proposal,
+60m exact restoration and50m sole independent audit. For443x851 the native
+proxy m^3+100*(2mn+m^2)+2mn+1MiB is183,764,369, leaving6,235,631 native units
+for setup. This is a DECLARED proxy, not a certified count of HiGHS flops or
+refactorizations. One solver call, presolveFalse, maxiter100, one thread,
+cooperative deadline and enforced6GiB boundary remain necessary. No free
+retry is allowed. Resource failure must preserve consumed counters and
+remain UNKNOWN; a normal unsuccessful solver or failed rational support
+may remain NONCERTIFIED. Successful exact results remain4096-bit bounded.
+
+Independent checker directly reconstructs all851 generators and combines
+full782 lambda and851 alpha, verifying every1224 coordinate and exact pairing
+-1. It does not replay numerical assembly, native LP or eigenvector provenance.
+The supplied chart is the designated previously verified782-row span premise;
+its full normalized rows and partition are parsed, not silently dropped.
+Certificate admission is explicitly finite augmented cone only. Root wrapper
+binds job/outcome counters and checks stage budgets; publisher requires exact
+checker schema/status/pairing/rank before promotion. Original unlearned cone,
+actual Mobius arithmetic, global bound and RH remain unproved.
+
+Development findings reported to owners: missing primal_feasibility_proved
+false flag rejected genuine certificates; native exception counters were lost;
+workflow did not initially bind stage counters/caps; publisher read old field
+names; reported native iterations needed validation; native resource failures
+needed declared options and UNKNOWN classification rather than completed
+NONCERTIFIED result caps. Owners corrected or were finishing these before
+freeze. None permits false mathematical admission because the independent
+full exact identity remains mandatory; the issues matter for reviewable
+resource failure and genuine certificate acceptance.
+
+Owned test_primitive_state_chart_dual_soundness.py has12 tiny tests, passing
+in0.004s. They cover all-pivot functional reduction and RHS sign, offdiagonal2
+and H's4C+P generator, forbidden relation scalar ray, unannihilated relation
+rejection, negative alpha/wrong pairing, original-coordinate exact support
+solve, zero-free repair's legitimate rejection of feasible support, empty
+support preserving target, positive scaling identity, explicit native proxy,
+bit/work caps and consumed native-preflight failure counters. No actual
+licensed chart, endpoint, LP, eigensolve, source or candidate calculation.
+
+Final assembly refinement uses one shared exact reverse substitution for
+requested611 coordinates and their transitive dependencies, rather than611
+independent row reductions. For pivot j, x_j=b_j-sum_k A_jk*x_k; descending
+memoization has the correct negative signs and propagates RHS constants.
+A tiny coupled-row calibration independently compared all three responses
+to reduce_functional and agreed exactly. Native resource exceptions now
+retain declared options/attempted flag and consumed counters, and search maps
+resource/iteration-limit failures toUNKNOWN; restoration resource failures
+also remainUNKNOWN. Final review found no remaining mathematical blocker.
+Owned files are finalized; no actual inputs or solver evaluations occurred.

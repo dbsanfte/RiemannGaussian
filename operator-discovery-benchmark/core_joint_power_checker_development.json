@@ -1,0 +1,23 @@
+{
+  "schema": "core-joint-power-checker-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 1109317,
+      "tests": 16,
+      "elapsed_seconds": 0.04939234201447107,
+      "failures": 0,
+      "errors": 0,
+      "failure_details": []
+    }
+  ],
+  "operations": 1109317,
+  "success": true,
+  "peak_live_cells": 5096,
+  "maximum_rational_bits": 10,
+  "memory_limit_bytes": 536870912,
+  "operation_limit": 50000000,
+  "elapsed_limit_seconds": 180,
+  "no_source_observations": true,
+  "edits_stopped": true
+}

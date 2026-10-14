@@ -1,0 +1,11 @@
+STARTUP REPAIR ONLY
+
+The first frozen attempt, centered-product-results/pilot-001, stopped in
+verify_sources before started.json, tests, source construction or arithmetic.
+The only protocol mismatch was producer_caps: JSON writes object keys as
+strings whereas specification() returned integer keys. The v2 entry point
+canonicalizes those keys. The original runner and frozen attempt remain
+unchanged. All arithmetic, selection, test, resource and proof rules in
+centered_product_protocol.txt remain unchanged. No numerical run is repeated.
+Startup administrative work fits the existing one-million metadata reserve;
+prior arithmetic and test operation counts are zero.

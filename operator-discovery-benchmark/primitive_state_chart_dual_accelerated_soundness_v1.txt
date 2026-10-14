@@ -1,0 +1,269 @@
+Sparse accelerated projected-gradient proposals for the finite separator LP
+Independent mathematical/resource design review, 2026-10-09.
+Prospective033 mathematical and implementation review complete.
+No actual031 source model/scaling, updates, scores, research computations,
+tests, hashes or old-file edits were performed for this review.
+
+Exact objective and projected trial
+Let A*x=b be the same licensed302-row,687-column separator equations after
+exact positive row/column infinity scaling. The proposed numerical objective
+is unpenalized nonnegative least squares,
+  f(x)=1/2*||A*x-b||_2^2, x>=0.
+At an extrapolated point y, let r_y=A*y-b and g=A^T*r_y. Given L>0, the
+trial z=P_+(y-g/L), where P_+ clamps each coordinate to zero, is the exact
+minimizer over z>=0 of g^T*(z-y)+(L/2)*||z-y||_2^2. It is therefore a
+valid constrained proximal-gradient trial in exact real arithmetic.
+Extrapolated y need not be nonnegative; projected z and accepted x must be.
+Clamping y itself would alter the declared acceleration recurrence.
+
+Directional backtracking condition
+For d=z-y, the quadratic identity is
+  f(z)=f(y)+g^T*d+1/2*||A*d||_2^2.
+Consequently the trial acceptance rule
+  ||A*d||_2^2<=L*||d||_2^2
+is exactly the usual quadratic majorization condition along this direction.
+It is not a test that L bounds the curvature in every direction. The initial
+L0=max_j||A_j||_2^2 is positive for the licensed nonzero columns and no
+larger than a global spectral curvature bound, but it is not generally
+that global bound. For example two identical unit columns have L0=1 while
+their Gram matrix has largest eigenvalue2. No Gram matrix is needed to
+apply the directional check.
+
+In exact arithmetic a sufficiently large L, such as ||A||_F^2, majorizes
+every direction, so doubling L can eventually accept. This observation
+explains backtracking; it is not an admission premise, a numerical operation
+count or an authorization to retry beyond the frozen32-trial cap. Keeping
+L after accepted steps makes its sequence nondecreasing. Failed trials must
+leave y, its base residual and gradient unchanged; only L/trial data change.
+The same candidate z is used for d, A*d and its reported fresh residual.
+
+Acceleration and restart
+Start cold with x=y=0 and t=1. After accepting z, use
+  t_new=(1+sqrt(1+4*t^2))/2,
+  y_new=z+((t-1)/t_new)*(z-x), x_new=z.
+The old x is required in the extrapolation; assigning x=z first would erase
+momentum. Every64 accepted steps restart with y=z and t=1. The restart
+index is the accepted-step count, not the number of backtracking trials.
+No penalty continuation, Gram solve, new ray generation or inherited
+unchanged-coordinate stopping rule belongs to this design.
+
+The exact recurrence is a familiar accelerated projected-gradient method
+with directional backtracking and periodic restarts. This review licenses
+no convergence-rate, monotone-residual or finite optimality theorem for its
+floating implementation. Accelerated iterates can have increasing residuals;
+reported best eligible checkpoints need not be the final iterate. Restarting
+changes the trajectory without changing the exact feasibility problem.
+
+Numerical stability and finite checks
+Compute A*y-b, A*d and A*z-b as fresh sparse row sums using finite products
+and math.fsum, and gradients as finite sparse dot products. Use math.hypot
+for Euclidean norms. Stable accumulation improves cancellation behavior,
+but products, divisions and final scores remain rounded. Separate rounded
+computations of A*y, A*d and A*z need not obey the exact quadratic identity.
+Thus a passed floating direction test remains proposal machinery, not an
+independently certified majorization or arithmetic inequality.
+
+Require every input conversion, L0, L, gradient, candidate before clamping,
+stored trial coordinate, d, sparse product, squared norm, L*||d||^2,
+t recurrence, momentum term, extrapolated coordinate and diagnostic to be
+finite. L and any division denominator must be strictly positive. Check the
+candidate before max(0,candidate), so infinite arithmetic cannot hide as a
+stored zero. An overflowing right side of the acceptance test cannot imply
+automatic acceptance. Stable norms can be finite while their square is not;
+square/product checks are separate. Tiny squares may underflow in binary64,
+another reason the acceptance result is not exact evidence.
+
+Exact positive scaling preserves nonnegative feasibility and strict support.
+Every exact nonzero coefficient converting to zero or a nonfinite float
+must be rejected by the existing model builder. The unpenalized objective
+differs from032's scaled unit-L1 continuation and may produce denser
+supports. No sparsity or improvement theorem follows from faster kernels.
+
+Work accounting at accepted boundaries
+Use fixed declared setup, gradient, trial, commit and final-diagnostic
+blocks, charged before their work. With z the sparse nonzero count,
+  setup=8z+32(m+n)+65536,
+  gradient=8z+32(m+n)+512,
+  trial=16z+64(m+n)+1024,
+  commit=32(m+n)+512,
+  final=12z+64(m+n)+2048.
+Their exact numerical work sum is
+  setup_charged*setup + gradient_blocks*gradient + trial_blocks*trial
+  + commit_blocks*commit + final_charged*final.
+Proxy constants must cover sparse products/sums, vector operations, support
+and finite scans, diagnostics, checkpoint export and selected-vector copies,
+as well as temporary sparse row-product buckets. Additional deadline/live
+checks use charge(0) to preserve block reconciliation.
+
+Before beginning each iteration require available work for
+  gradient+32*trial+commit+the still-unspent final-diagnostic block.
+This is a worst-trial guard for one iteration, not a charge for all32 trials
+or a reservation for32 trials at every possible future step. Charge only
+actual trial blocks and preserve their counters even on failure. Before any
+setup, require minimum_attempt=setup+gradient+32*trial+commit+final.
+If it does not fit, return unattempted incomplete with no numerical work.
+The setup path leaves one guarded first iteration and the final allocation.
+The final
+block cannot be counted both as already spent and as reusable remaining work.
+
+If the guard fails at an accepted boundary, normal bounded search may finish
+and preserve its selected checkpoint, provided final diagnostics complete.
+This is a budget stop, not convergence. The minimum-attempt guard and full
+first commit mean every completed trajectory has at least one checkpoint.
+Stop at at most10000 accepted steps. The frozen zero_reported_residual stop
+follows immediately after a checkpoint whose floating residual norm is zero.
+This is a diagnostic stop, not an exact feasibility test; no later checkpoint
+is permitted after that zero. Failure during setup, a trial,
+commit or final diagnostics, or exhaustion of32 trials without acceptance,
+must instead leave the trajectory incomplete, clear selected and forbid
+exact restoration from any earlier best checkpoint.
+
+Completed trajectories have gradient_blocks=commit_blocks=accepted records,
+one final block, and accepted<=trial_blocks<=32*accepted. Record each
+accepted iteration's trial count to reconcile the total. Interrupted
+trajectories can have work belonging to at most one additional current
+iteration; already charged base/trial/commit work remains counted even if
+no accepted record is appended. Counter ordering and checkpoint insertion
+must make these prefixes independently checkable without numerical replay.
+Each checkpoint's cumulative_operations is after its commit and before final
+charging. After final charging, work_boundary requires
+operations+gradient+32*trial+commit>max_operations. This is the same failed
+boundary guard with final already charged, not a second final reservation.
+
+Final diagnostic and strict selection
+After normal boundary/max-step termination, compute a fresh final residual,
+gradient and projected-gradient mapping at the final accepted x, using the
+current positivefinite L. One conventional mapping is
+  G_L(x)=L*(x-P_+(x-grad f(x)/L)).
+Its norm, together with residual/support statistics, is only diagnostic.
+Even a rounded zero mapping does not certify KKT conditions or optimality;
+even an exact NNLS obstruction would concern only the selected generators,
+not primal cone infeasibility or all PSD directions.
+
+After each accepted trial has a fresh finite residual, record residual and
+strict support size. Among records with1..443 positive coordinates select
+minimum(relative residual,support size,accepted iteration index), preserving
+the full retained-coordinate vector including zeros. Include every strictly
+positive entry, however tiny; no trimming, threshold or alternate support
+trial is licensed. A complete trajectory without an eligible checkpoint is
+NONCERTIFIED. A partial trajectory is UNKNOWN and cannot restore.
+
+Original exact restoration and admission
+Map selected retained positions through031 active original compressed ids
+and030 original representative ray ids. One old029 rational support solve
+uses complete saved851 affine responses and target(0,-1), with free support
+coordinateszero. The support cap443 permits underdetermined reconstruction;
+a selected positive float can restore to exact zero. Set every original ray
+outside the selected support explicitlyzero. A failed chosen-free-value
+solve says nothing about other free choices or other supports.
+
+Certify against all782 original chart rows and export full851 alpha,782
+lambda and1224 functional coordinates. The independent mathematical
+admission condition remains
+  A_original^T*lambda=sum_j alpha_j*g_j in all1224 coordinates,
+  b_original^T*lambda=-1, alpha>=0.
+Every declared scalar/rational rank-one generator is nonnegative on the
+licensed augmented cone, so this identity contradicts an augmented feasible
+point. Restoration uses original responses, not scaled floating weights;
+no inverse scaling of approximate selected values supplies exact evidence.
+Reconstruction rank is diagnostic; direct full identity checking is decisive.
+
+Audit, scope and resource obligations
+The independent checker licenses031 as a prior exact reduction, checks
+actual retained ids/dimensions/nonzeros and verifies block formulas,
+accepted-prefix counters, trial caps, normal boundary stop and final
+diagnostic completion. Reported scores, directional acceptance and mapping
+norms are not independently numerically replayed or certified. Selection
+ranking uses the reported diagnostics, while strict full-vector/support
+binding and the optional original Farkas identity are independently checked.
+Metadata verification alone must never make complete exact admission true.
+
+Use one shared90m audit meter for source/metadata decoding, original support
+binding and direct old029 full identity, with retained input/export/numerical
+arrays in its resident base through inherited helper calls. All stage
+failures retain consumed work. Unused numerical/restoration reserves do not
+permit another proposal, support solve or audit. The450m total is
+preparation40m, exact model40m, numerical190m, restoration90m and sole
+audit90m. Preparation contains25m cumulative development plus one frozen
+combined suite,10m independent I/O and5m other work, with1m root/scaffolding
+inside the synthetic allowance. Results stay within4096 bits, two-input
+temporaries8193 bits and live-cell proxy6m. Worker/audit each have6GiB,
+one-thread and3600s boundaries. Prior input caps remain, including64MiB
+reduction and16MiB geometry; proposal/review and source snapshot caps are
+8MiB, metadata64KiB. Actual root numeric allocation is190m; generic helpers
+may expose smaller test budgets without changing the declared root method.
+
+This experiment can provide a different bounded search trajectory for the
+same finite proof-template obstruction. A residual improvement, numerical
+stationarity, failure to reconstruct or absent eligible support proves no
+signed arithmetic estimate, primal feasibility or primal infeasibility.
+Failure leaves other PSD dual directions open. A complete exact separator
+would exclude only the licensed augmented finite template, including its
+necessary formal rows, and would prove neither original unlearned-cone
+infeasibility nor RH. Signed control at all scales still requires a universal
+operator identity, scalar and initial-storage bounds, a cofinal parameter
+family and the ordinary-zeta bridge.
+
+Final implementation review
+Read the new contract, protocol, resource scope, producer, independent core,
+runner, outer audit, publisher and all three synthetic test modules without
+executing them. build_model aliases the unchanged032 exact scaling helper.
+The numerical method starts cold, uses sparse compensated products, checks
+every projected candidate before clipping and checks the finite directional
+right side before acceptance. Rejected trials leave the current y/gradient
+unchanged. Momentum uses the previous accepted x; the64-step restart index
+is the accepted count. A full commit computes metrics and momentum before
+appending its checkpoint. No partial commit can export a completed iterate.
+
+The positive minimum_attempt guard pays for setup, one full worst-case step
+and final diagnostics before any setup is attempted. Each later iteration
+reserves32 trials plus final diagnostics at its accepted boundary, while
+only actual blocks are charged. Numerical live/deadline checks use charge(0).
+Charged blocks survive post-charge deadline exceptions. All normal stop
+paths finish fresh final residual/gradient/mapping diagnostics before setting
+complete=true. Interruption clears the selected support, including failures
+in final diagnostics after a formerly eligible checkpoint.
+
+The independent checker recomputes work-model arithmetic, every checkpoint
+cumulative total, initial/start guards, per-step trial counts, carried binary
+L doubling, restart flags and normal-stop priority. Earlier zero-residual
+checkpoints cannot be followed by another accepted record. Complete records
+must have at least one accepted checkpoint and exactly one final charge at
+the last index/L. Incomplete prefixes admit only one partial gradient/trial/
+commit after the accepted prefix or one interrupted final diagnostic; they
+never propose support. A small metadata ordering gap was tightened during
+review: every charged iteration block now requires positive initialized L,
+even before the first accepted checkpoint.
+
+Reported numerical diagnostics and rank remain unverified proposal values.
+Selection is bound to the reported lexicographic ranking and every positive
+coordinate of a full finite nonnegative vector. All omitted original alpha
+entries arezero, declared free reconstruction positions carryzero and the
+full original851/782/1224 Farkas identity uses the same90m meter. The
+resident-aware Budget.live override continues through inherited source,
+chart, ray and exact identity helpers. Neither old reduction nor numerical
+trajectory is replayed for admission.
+
+Root workflow binds actual numerical.max_operations to190m, stage counters
+to started stages and numerical records to numerical-stage presence. Its
+single audit marker prevents a second attempt. Synthetic receipts bind all
+development/frozen work and scaffolding reserve to25m. The publisher saves
+summary/selected diagnostics and a link to the full checkpoint artifact,
+without promoting those scores. It admits finite-template infeasibility
+only with the separate complete/schema/status/verified/-1 exact witness
+fields, preserving false global/RH/original-unlearned-cone flags otherwise.
+
+Read tests for correlated-column backtracking, strict tiny support, cold
+start,64th restart, zero-diagnostic priority, ordinary work-boundary stop,
+nonzero residual despite zero reported projected-gradient norm, finite
+pre-projection guards, charged partial commit/final failures and one exact
+restoration. Independent tests cover10k accepted-step metadata, carried L,
+restart/cumulative/start-guard tampering, incomplete-prefix exclusion, full
+selected support/ranking and one authentic synthetic full witness with
+targeted original-support/identity mutations. Root tests bind allocation,
+counter/stage metadata, audit repeat prevention and publication scope.
+
+The reviewer ran no tests, no source computations and no hashes; reviewer
+synthetic work iszero. No actual numerical outcome has been examined or
+implied. No remaining mathematical blocker was found. Owned memo finalized;
+edits stopped before the single frozen combined suite.

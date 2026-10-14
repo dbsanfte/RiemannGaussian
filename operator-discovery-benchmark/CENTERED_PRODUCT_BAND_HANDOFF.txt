@@ -1,0 +1,136 @@
+CENTERED PRODUCT-BAND SEARCH AND THE JOINT SIGNED FRONTIER
+
+Completed numerical cycle
+-------------------------
+Results: centered-product-results/pilot-002/report.json.
+Entry point: run_centered_product_fibers_v2.py.
+The original pilot-001 stopped before tests or arithmetic because JSON cap
+keys were strings while the protocol comparison expected integers. Its
+source snapshot and failure record are preserved. The v2 entry point repairs
+only that startup comparison; no numerical run was repeated.
+
+The detector searched all 25 integer quadratic band stencils, admitting the
+nine with a proved polynomial inverse. It evaluated gamma=0,1/6,1/3, every
+partial-band breakpoint, discovery X=64,128,256 and validation X=512,1024.
+The selector chose (1+z)^2 for all three weights before validation kernels
+were evaluated. The original selection and ranks remain unchanged.
+
+All 15 frozen tests passed. There were 93 finite candidate checks, with
+independent 192-bit Mobius/Dirichlet source construction and prefix-query
+checks of all saved extrema witnesses, six center sectors and recovery
+costs. The producer enumerated every breakpoint; the independent checker
+did not reenumerate maximality. The maximum source index was 2047.
+Charged numerical/development work: 313,786,751 proxy operations.
+Study runtime: 87.573 seconds. Maximum recorded per-process RSS: 685,844 KiB.
+The enforced aggregate address-space allowance was 16 GiB.
+
+The gamma-zero values illustrate the result:
+  X       full energy     unfiltered band norm    selected filter norm
+  64      118.236790       15.397961               60.794618
+  128     104.164391       13.247738               48.866686
+  256      95.937307       12.981892               41.806886
+  512      75.411359       10.533286               33.011439
+  1024     67.193535        8.718352               26.860021
+
+The selected filter's finite reconstructed-energy bound rises from about
+41,340 to 61,778 because of its cubic-log inverse cost; the identity's bound
+changes from about 231 to 200.5. The better fitted band-norm slope is not a
+proved exponent gain and did not improve the complete finite recovery bound.
+
+Saved-witness analysis is in pilot-002/witness_analysis_001/report.json.
+It used no new arithmetic source evaluations and charged 10,680 operations,
+giving 313,797,431 combined charged operations. All 15 selected witnesses
+have same-sign contributions from their three stencil bands. At X=1024,
+gamma=0, cancellation across the six AA/cross/MM and SF/NS sectors has
+sum-of-magnitudes/joint magnitude about 44.959. These observations concern
+the saved witnesses only; no uniform arithmetic bound follows.
+
+Analytical corrections and proved simplifications
+-------------------------------------------------
+The old isolated uncentered squarefree projection has a nonzero double
+residue. The full center and nonsquarefree complement must remain jointly
+present. The earlier finite low-contour component theorem remains valid.
+The exact band experiment used b(n)=a(n)-m*[n^(2/3)-(n-1)^(2/3)], including
+b(1)=-m. All prime powers, product masks, main crosses and unit terms remain.
+
+All nine admitted stencils represent the same cofinal uniform-band auxiliary
+up to logarithmic costs. For any fixed stencil and gamma>=0,
+  U_gamma <= 2^gamma U_0,
+  U_0 <= (2-2^(-gamma)) U_gamma.
+Thus the 27 admitted stencil/weight pairs are presentations of ONE auxiliary
+class, not 27 independently improved bounds. Retain their programs and any
+future distinct arithmetic arguments; do not reward aliases as new exponent
+mechanisms or rerun their constants without a new mathematical reason.
+
+Let beta=9/2, m=m_u>0, R_u=(2/3)m, K=beta+m and N=2X-1. The pure-power source
+  tilde_b(n)=a(n)-R_u*n^(-1/3)=b(n)+e(n)
+has e(n)>=0 and exact total E0=sum e(n)=-R_u*zeta(1/3)>0. Replacing b by
+tilde_b in any unweighted product mask changes its normalized kernel by at
+most
+  B_center(X)=4E0*K*(1+log(2X))+E0^2/X.
+Both e-crosses and the e-square are retained in this bound, including n=1.
+
+The actual-source divisor bounds |b(n)|,|tilde_b(n)|<=K*d2(n), together with
+d2*d2=d4 and d2(n)^2<=d4(n), pay the entire region hk<=X and every diagonal.
+No prime-distribution theorem or unproved companion moment is used here.
+
+Primary next target: combine high products before taking any bound
+-----------------------------------------------------------------
+Define the single signed correlation
+  O_X = 2/X^2 * sum_(n=X)^(2X-1)
+                   sum_(1<=h<k<=n, hk>X) tilde_b(h)*tilde_b(k).
+This retains cancellation across ALL high product bands. It includes every
+prime/composite contribution, repeated valuation and gcd overlap.
+
+There is an exact decomposition
+  E_R(X)=O_X+H_X+D_X+C_X,
+where H_X is the complete tilde_b kernel on hk<=X, D_X its diagonal on
+h^2>X, and C_X the difference between the b and tilde_b complete energies.
+The independently proved remainder bound is
+  |H_X+D_X+C_X| <= B(X),
+  B(X)=3K^2*(1+log N)^3+B_center(X).
+Consequently E_R(X)<=O_X+B(X), and O_X>=-B(X). The primary missing lemma is
+ONLY the one-sided bound O_X<=C_epsilon*X^epsilon for every epsilon>0,
+uniformly over dyadic X. There is no band-count recovery loss in this route.
+
+This is an equivalent residual form of the original complete moment, with
+the prior paid R=R_new+Lv comparison still required. It is NOT an independent
+signed gain or a closed proof. Its value is that the remaining source and
+geometry are explicit and the removable terms are now proved bounded.
+Uniform separate sharp-band estimates remain optional stronger auxiliaries;
+they are not mandatory prerequisites for the primary target.
+
+Next language and proof checks
+------------------------------
+The two Sol 6.1 analytical reviews are:
+  CENTERED_BAND_FORCING_REVIEW_003.txt
+  CENTERED_BAND_PREDICTION_REVIEW_003.txt
+They give exact hyperbola and reciprocal-interval identities, the complete
+Mobius/divisor convolution including delta and the entire same-prime d, a
+paid short-side Euler remainder, and smaller-scale prediction recovery.
+Those proofs are analytically reviewed prose, not machine-checked theorems.
+
+Search for constructions on the actual signed reciprocal correlations:
+quotient-interval grouping, prime/divisor expansions, joint pairings,
+prediction residuals, and square completions retaining every complementary
+term. A predictor must supply a real recovery gap and an independently
+proved forcing bound. A current-scale target under a new name, an unpaid
+q-free companion, or an unproved future boundary condition does not close it.
+
+The analytic zero of a Dirichlet-series bracket at 2/3 is not a proof that
+its coefficient series converges there or that its finite tail is small.
+The complete prime-power d cannot be discarded at sharp product cuts just
+because its prefix norm was previously bounded.
+
+For economical future evaluation, the joint O_X can be computed from the
+complete tilde energy, the low Dirichlet convolution head and a diagonal
+prefix. This uses O(H log H) work and O(H) storage through horizon H, without
+storing the full table of product pairs. It is an exact diagnostic identity,
+not evidence for the missing bound. Numerical evidence used to build this
+next grammar is development evidence; new selection needs fresh validation.
+
+The refined input is candidate10_centered_reciprocal_obligation.json, copied
+from pilot-002/analytical_followup_001/next_search_input.json. Previous frozen
+sources/results and the pilot's original next_search_input.json are unchanged.
+The all-scale signed estimate and RH remain OPEN. The active goal is not
+complete; no uniform prime-information claim is made from this finite run.

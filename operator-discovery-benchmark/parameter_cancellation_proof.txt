@@ -1,0 +1,199 @@
+Parameter cancellation, logarithmic parameter jets, and adaptive Cauchy bounds
+
+Scope. This stage preserves the actual Mobius arithmetic and full fractional
+centers of the preceding stage. It strengthens the proved logarithmic losses
+and removes a spurious growth of normalization costs with the parameter level.
+The proved ordinary power remains ONE. Critical signed premises remain open.
+Probability integrals, Gamma's product, Cauchy's formula, and ordinary-zeta
+continuation and functional equation are foundational dependencies. No PNT,
+zero-density estimate or new prime-distribution theorem is imported. The
+proof is independently audited, not proof-assistant formalized.
+
+1. Entire arithmetic parameter and its actual prime-factor representation.
+For n>1 define L_a(n)=exp(a*log(log n)), with L_a(1)=0. The complete
+finite convolution lambda_a=mu*L_a is ENTIRE in complex a at each n.
+For n=product p_i^e_i, let h_i=log p_i, b=sum(e_i-1)h_i, r=omega(n).
+Let independent exponential variables have rates h_i, and let Y be their
+maximum. Its CDF is P(Y<=t)=product_i(1-exp(-h_i*t)). Actual arithmetic
+equals the iterated finite difference of (b+sum h_i)^a.
+
+If n is squarefree, integration by parts of the Bernstein integral gives
+lambda_a(n)=(-1)^(r-1)*E[Y^(-a)]/Gamma(1-a).
+Initially 0<Re(a)<1; both sides continue to Re(a)<1. The moment integral
+at zero converges because the CDF is O(t^r), and the large-t tail is
+exponential. If n is not squarefree, then b>=h_min and
+lambda_a(n)=(-1)^(r-1)*a/Gamma(1-a) *
+ integral_0^infinity exp(-b*t)*P(Y<=t)*t^(-a-1)dt,
+again analytic for Re(a)<1, including zero. At a=0 the squarefree
+coefficient is -mu(n), while every nonsquarefree coefficient is zero.
+These are statements about ALL actual integers, not a finite factor oracle.
+The producer still computes divisor inverses and convolutions without
+factorization. Prime factors belong only to the independent evaluator.
+
+2. A uniform complex-parameter bound, without divisor-count losses.
+Gamma's product gives
+1/Gamma(1-a)=exp(-gamma*a)*product_(j>=1)(1-a/j)*exp(a/j).
+For |a|<=1/2, gamma<1 and zeta(2)<2, the modulus is below exp(1)<3:
+the logarithm of its modulus is at most
+|a| + |a|^2*zeta(2)/(2*(1-|a|)) <=1.
+On 1/2<=t<=3/2, log convexity and Gamma(1/2)=sqrt(pi)<2 give
+Gamma(t)<=2; on 1<=t<=3/2 its modulus is at most one.
+
+Write L=log n. Each h_i lies between log 2 and L, r<=L/log 2,
+E[Y]<=r/h_min<=4L, and Y is at least an exponential variable of rate
+h_min. Thus for 0<=d<=1/2,
+E[Y^d]<=(4L)^d and E[Y^(-d)]<=2*max(1,L^d).
+For a center alpha in [0,A], radius delta>0 with A+delta<=1/2,
+the squarefree probability formula proves
+sup_(|a-alpha|<=delta)|lambda_a(n)| <=9*(4L)^(A+delta).
+For nonsquarefree n, use P(Y<=t)<=1-exp(-h_min*t), b>=h_min,
+and
+Integral exp(-bt)(1-exp(-ht))*t^(-d-1)dt <=Gamma(1-d)*h*b^(d-1),
+Integral exp(-bt)(1-exp(-ht))*t^(d-1)dt <=Gamma(1+d)*h*b^(-d-1).
+Combining the extremes Re(a)<=A+delta and Re(a)>=-delta, with
+|a|<=1/2 and 1/Gamma bound three, gives at most six times the same
+(4L)^(A+delta), hence the common bound nine is valid. Cauchy gives
+|partial_a^m lambda_alpha(n)| <=9*m!*delta^(-m)*(4L)^(A+delta).
+The constants and domains hold for every integer n, prime rank and scale.
+
+3. Actual parameter jets and full centers.
+The NATURAL Taylor jet is
+v_m(n)=mu * [1_(n>1)*(log(log n))^m/m!], m a nonnegative integer.
+For m=0 the bracket is one on n>1 and zero at one, so v_0=delta-mu.
+This known Mertens calibration is kept separate from inferred discoveries.
+For m>=1 the raw weight at n=2 can be negative. No positivity or
+multiplicativity of these jets is assumed. A generic unit-normalized input
+f has an analogous exact finite jet f^(-1)*(f*weight), but neither the
+actual-prime estimate nor the ordinary-zeta bridge transfers to generic f.
+
+Let V_m(x)=sum_(n<=x)v_m(n) and B_m(x)=[a^m]A_a(x), the FULL
+center coefficient. If 1/Gamma(1-a)=sum g_j*a^j, g_0=1, then
+B_0=0 and for m>=1
+B_m(x)=Integral_0^1 H_x(v)*sum_(j=1..m)
+ g_(j-1)*(-log v)^(m-j)/(m-j)! dv,
+where H_x(v)=(x^(1-v)-1)/[(1-v)*Z(1-v)] and Z=(s-1)zeta(s).
+The full Taylor-in-v integral and its Cauchy remainder give native centers;
+they are not merely leading x/log x asymptotics. A separate recurrence
+j*g_j=-gamma*g_(j-1)-sum_(r=2..j)zeta(r)*g_(j-r)
+provides an independent Gamma-coefficient evaluation.
+
+For |a|<=1/2, |c_a|<=3/2, Z(u)>=1/(4 log 2), and Re(a)<=1/2,
+the full center derivative has modulus below twelve for every real x>=1.
+Consequently |B'_m(x)|<=12*2^m, B_m(1)=0, and |B_m(x)|<=12*2^m*x.
+With V(x)=log(4*(1+log x)), ANY radius 0<delta(x)<=1/2 yields
+|V_m(x)-B_m(x)| <= x*[9*delta(x)^(-m)*exp(delta(x)*V(x))+12*2^m]
+for every real x>=1. At x<2 the coefficient sum is zero and the center
+guard alone suffices. At larger x use log n<=1+log x inside the common
+Cauchy circle. Variable radii are chosen separately at each scale; no
+finite-scale estimate is used in this universal argument.
+
+4. Cancellation BEFORE the parameter absolute envelope.
+For distinct positive rational b_i<1 and nonzero rational weights w_i,
+let p_j=sum w_i*b_i^j and m be their first nonzero moment. Put
+h(q)=p_m/q^m and A_w=sum |w_i|*b_i^m/|p_m|.
+The actual normalized family R_q=sum w_i(T_(b_i/q)-A_(b_i/q))/h(q)
+has pointwise finite-prefix limit V_m-B_m, not m! times that jet.
+This follows from the entire parameter Taylor series and moment cancellation.
+The limit is uniform on compact arithmetic scales; it is NOT an exchange
+of infinite-q and infinite-x limits and does not transfer a critical global
+estimate without a separate uniform premise.
+
+For q>=q0 with A0=b_max/q0<1/2, let rho0=1/2-A0>0. Taylor's integral
+remainder, AFTER the low moments cancel, proves
+|sum w_i lambda_(b_i/q)(n)/h(q)| <=
+ 9*A_w*delta^(-m)*(4 log n)^(b_max/q+delta)
+for any 0<delta<=rho0. The factor m! cancels against the Taylor remainder.
+There is NO q^m cost from taking each summand's absolute value first.
+The same argument for the center derivative gives
+|partial_x sum w_i A_(b_i/q)(x)/h(q)| <=K_w=12*A_w*rho0^(-m).
+More specifically, apply Cauchy pointwise to c_a*v^(-a): its modulus on
+the permitted circle is at most (3/2)*v^(-1/2). After moment cancellation,
+integration against 1/Z gives total variation at most K_w for the FULL
+center's signed cut density. Thus its Mellin modulus is at most
+K_w/(|s|*|Im(s)|). This uses a density variation bound, not an inference
+of variation from a bound on the center derivative alone. The jet density
+likewise has variation at most 12*2^m, with its Taylor factorial retained.
+For m=0 use a direct weighted envelope, giving the same formulas.
+Therefore, for every q>=q0 and EVERY real x>=1,
+|R_q(x)| <=A_w*x*[9*delta(V)^(-m)*exp((b_max/q+delta(V))*V)
+                            +12*rho0^(-m)],
+V=log(4*(1+log x)). A_w and rho0 do not grow with q. All signed
+arithmetic, normalizations and the complete center remain present.
+
+5. The detector chooses radii, rather than receiving a winning estimate.
+The admissible language has constant radii, positive rational powers of
+shifted V and integer m, and a cap by the permitted Cauchy radius. For ANY
+positive radius program whose cap is rho0, paragraph 4 is a universal bound.
+The numeric learner receives anonymous Cauchy-bound response tables and
+grid minimizers, not expected coefficients. Generic sparse monomial fitting
+can propose reusable capped inverse products; the admission backend checks
+positivity, cap, domain and exact original semantics. Rejected or unsupported
+fits are retained. Sampling an effective bound at huge V is explicitly
+optimization of a PROVED envelope, not sampling actual primes at huge x.
+
+For example, a positive reciprocal-linear radius yields a true envelope
+of order x*(1+log x)^(b_max/q)*(1+log(1+log x))^m. This is a
+smaller logarithmic loss than x*log x and is uniform in the parameter
+normalization. Fractional radius exponents give other fully declared,
+possibly stretched iterated-log envelopes. Every such bound still has
+ordinary power one. No selected radius is asserted in the discovery path.
+Promotion and equal-budget random-radius ablation use the same data and
+number of extra slots. Exact fitted formulas are frozen before validation.
+
+6. Whole continued jet observers by two different evaluations.
+Let F_a(s) be the preceding stage's WHOLE continued numerator. Its Taylor
+coefficient F_m^jet(s)=[a^m]F_a(s) is evaluated by a finite parameter
+difference of complete Euler continuations, with a rigorous Cauchy error.
+F_0(s)=zeta(s)-1 exactly. For a disk R=1/2, a native bound on zeta'
+along s+[0,1] and exponential zeta tails prove
+B_F=3*|zeta(s)-1|+(3/2)*[2*B_zeta_prime
+              +(1+2/Re(s))*2^(-Re(s)-1)/log 2]
+as an upper bound on |F_a(s)| throughout the disk. The regularized
+fractional integral proves this bound for complex a, including zero.
+For h>0, m*h<R, the m-th forward difference divided by m!*h^m differs
+from the Taylor coefficient by at most
+m*(m+1)*h*B_F/(R-m*h)^(m+1).
+Native resources scale with m; exhaustion is missing, not a counterexample.
+
+The independent checker integrates whole zeta with logarithmic kernels:
+J_k=1/k!*[Integral_0^1 (zeta(s)-zeta(s+t))*(-log t)^k/t dt
+             +Integral_1^infinity (1-zeta(s+t))*(-log t)^k/t dt].
+Then F_m^jet=g_m*(zeta(s)-1)+sum_(r=0..m-1)g_r*J_(m-1-r).
+The small-t Taylor endpoint and the exponential upper tail are enclosed
+completely. This checker imports no producer mathematical module. A
+nonzero jet numerator at one query is not an all-height nonvanishing proof.
+Every reciprocal cost includes the full jet normalization and center
+derivative guard; nonpositive Mellin gaps and uncertain numerators are missing.
+
+7. Ordinary-zero relevance and the necessary bank quantifier.
+Every finite-q parameter family retains the preceding stage's cofinal
+all-height RH implication. Compiling its limit does not preserve that
+implication for a single positive-order jet, whose numerator may mask zeros.
+This unresolved recovery gate is recorded, rather than silently inherited.
+The m=0 jet is the known recovering Mertens calibration.
+
+A NEW all-height sufficient bank statement is: for ALL integers m>=M,
+there exists finite C_m with, for EVERY real x>=1,
+|V_m(x)-B_m(x)|<=C_m*x^(1/2+eps/(m+1)^nu)*log(e+x)^d,
+where eps,nu>0 and d>=0 are fixed. No growth law for C_m is required.
+At an ordinary zero rho with beta>1/2, all sufficiently large m have
+Mellin integrals holomorphic at rho, forcing F_m^jet(rho)=0 for every
+integer in a TAIL, not merely an unbounded sampled subsequence. The entire
+function a->F_a(rho) would be a polynomial. Its positive integer values
+are (-1)^k*zeta^(k)(rho), giving zeta infinite Taylor radius and
+contradicting the actual pole at one. Functional symmetry then gives RH.
+Finite banks, finite samples or a cofinal subset of m do not supply this
+tail premise. The true proved bank envelopes are power one, not critical.
+
+8. Experimental scope.
+Search protocols, grammar, source hashes, arithmetic/validation splits,
+seeds, fitting tolerances, promotion and ablation rules precede scoring.
+Anonymous root responses can infer limiting weight features without prime
+names or an expected formula. Exact limit admission follows the fit and
+does not alter its original coefficients. Generic unrelated coefficient
+sequences test the finite analytic identities separately; their large input
+amplitudes explicitly refute transferring actual-prime norm certificates.
+Fresh actual scales, parameter levels and envelope coordinates are generated
+after sealing and are unavailable to the learning worker. Failed runs retain
+their original source and data. No historical novelty, autonomous proof
+invention, new prime-distribution estimate or RH proof is inferred.

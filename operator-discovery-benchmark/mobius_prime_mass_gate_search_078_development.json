@@ -1,0 +1,23 @@
+{
+  "schema": "prime-mass-gate-search-development-v1",
+  "attempts": [
+    {
+      "tests_run": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.3475382319884375,
+      "output": "test_constant_direct_kernel_binding_and_variable_prime_refusal (test_mobius_prime_mass_gate_078.PrimeMass) ... ok\ntest_generic_mass_fold_price_and_critical_normalization (test_mobius_prime_mass_gate_078.PrimeMass) ... ok\ntest_zero_mass_is_unpaid_and_coupled_squares_are_not_rejected (test_mobius_prime_mass_gate_078.PrimeMass) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.30938717297976837,
+      "output": "test_feedback_preserves_signed_operator_and_actual_failed_formula (test_mobius_prime_mass_gate_078.PrimeMass) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 4
+}

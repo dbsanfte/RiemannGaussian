@@ -1,0 +1,32 @@
+{
+  "schema": "core-moment-bound-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_moment_bound_search"
+      ],
+      "returncode": 0,
+      "operations": 12849508,
+      "elapsed_seconds": 5.266090709978016,
+      "test_count": 16,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_moment_bound_search operations=12849508 elapsed_seconds=5.194811\n",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 5.195s\n\nOK\n",
+      "max_rss_kib": 24452
+    }
+  ],
+  "operations": 12849508,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368
+  },
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "prior_suites_run": 0,
+  "independent_allocation_method": "all linearly independent active constraint systems over exact rationals",
+  "analytic_audit": "JOINT_REMAINDER_MOMENT_CHECK_019.txt"
+}

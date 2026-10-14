@@ -1,0 +1,34 @@
+DETECTOR WHOLE-OUTER CONTROL SYNTHESIS083
+
+New APIs equality_constraints(program,meter=None) and synthesize(program).
+The first builds exact LP equalities over theta_then_source_grams. It does
+not prescribe a winning coefficient vector. The second checks achieved exact
+equalities and emits a proposed symbolic certificate for independent admission.
+No source signs, squarefree/prime sieves, observed source values or numerical
+price maxima are queried by either API.
+
+Every control is accounted for. Controls with identically zero geometry
+weight on the wholeouter interval contribute zero there. All other controls
+must be exact unit-balanced cutsn orN-n, grouped by identical weight descriptor
+and matched equal aggregate coefficients. Constant outer weights are derived
+from one/source/product/band descriptors; partial intersecting bands reject.
+Arithmeticall/prime/composite branches remain distinct until both gain sums
+are verified equal2Astar, Astar=H00+sourceGramweight0. Source/Gram delays vanish
+onouter. Actualprime/composite cross terms remain inside the full matchedkernel.
+
+Certificates cover the whole outer coefficient block and prove the proposed
+uniform price lawB_outer<=Astar*u for every integeru>=1. Foru>=16 use the
+exact endpoint-corrected matched identity and3AstarN+4Astar<=Astaru. Below16,
+outer is empty or a singletonn=N withN<=3; paired D self-corrections vanish,
+so price<=Astar<=Astaru. Unit at u4 is included. Detector presently admits
+only the two original unfolded kernels; independentchecker may admit a
+broader exact outer signature with separate sourcebinding scope.
+
+The remaining complete cross/inner kernel is explicitly unpaid. This is no
+uniform originalsource bound and noRH proof. Other finite program prices and
+actualzero identities retain their own independent certificate requirements.
+Exact equality reconstruction after floating optimization is required; an
+independently rounded/clamped vector cannot inherit the float equalities.
+Four focused tests passed twice (8individualexecutions). They include exact
+literal outerprice at everyu1..300, class/Gramclosure, zeroouter controls and
+wholeprogram rejection guards. All development attempts are retained.

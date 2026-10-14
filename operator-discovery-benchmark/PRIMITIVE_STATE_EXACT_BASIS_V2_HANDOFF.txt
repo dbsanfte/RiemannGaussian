@@ -1,0 +1,97 @@
+EXACT ROW BASIS CONTINUATION HANDOFF — publication014
+
+The 32 MiB transcript continuation completed exact elimination of the unchanged
+5,641 by 1,957 finite primal system. Its saved basis has augmented rank 779,
+with no RHS-only inconsistent pivot. Both worker-side exact checkers completed.
+However, the worker failed while constructing terminal cost metadata: the
+frozen v2 runner calls os.getpid() without importing os. Transport status is
+error (NameError); jobs/primal.json was never written. The frozen protocol
+therefore admits no equation reduction. Saved progress cannot override that
+rule. No numerical solver ran, and no finite cone certificate or RH bound was
+found. All frozen files remain unchanged.
+
+Original mathematical scope
+
+The arithmetic, historical scales 1,2,3,5 plus the gamma-zero auxiliary,
+q=6,C=32, 366 square weights, 613 signed relation pairs, 5 constant slacks,
+and three full 15 by 15 PSD matrices match publication013. The 733 verified
+column identities permit 1,224 coordinates for rank computation only. Every
+later optimization must retain all 1,957 original coordinates, the original
+objective, and all original nonnegative and PSD constraints. Exact dependence
+of equations is not cone feasibility, signed cancellation, or a uniform bound.
+
+Evidence and resource outcome
+
+The frozen primitive-state-exact-row-basis-probe-002 protocol binds 105 source
+files and passes 90 tests. Only max_receipt_bytes changed, from 8,388,608 to
+33,554,432. Deterministic ordering, algorithms, arithmetic, target, resource
+allocations, 450,000,000 total work ceiling, one 3 GiB worker, 900 cooperative
+seconds and 1,800 external seconds remained unchanged.
+
+The projection independently verifies all 733 omitted-column identities.
+The complete basis receipt is 11,579,523 bytes, with 284,706 recorded
+cancellation steps, 443,276 cumulative fill cells and 99,983 peak private
+cells. Exact producer work is 82,424,719. The complete independent basis check
+uses 83,554,597 audit operations and 26,153,099 audit cells, with total reserve
+95,711,647 including source and receipt costs. The durable progress ledger
+holds these independently checked stage charges:
+  compilation:          34,416,554
+  projection producer:  19,715,799
+  projection checker:   21,847,067
+  basis producer:       82,424,719
+  basis checker:        95,711,647
+  total:               254,115,786
+  remaining:           195,884,214
+
+The external execution lasted 469.4575621149852 seconds. Per-worker CPU and
+peak-memory metadata were lost at the terminal wrapper error and are not
+invented. The failure was the missing import, not a reported resource limit.
+The earlier 8 MiB attempt remains immutable, and the continuation audit
+compares its 5,253 completed transcript records with the new transcript.
+
+Recovery rule for the next numerical trial
+
+Do not edit the failed runner or retrospectively promote its progress. A new
+frozen numerical-trial protocol may bind and reuse the completed proof tapes,
+rebuild the full arithmetic once, and independently replay BOTH the projection
+identities and the complete basis transcript before using selected equations.
+Only that fresh successful replay licenses reduction in the new trial. Charge
+its full independent work in the new worker ledger. Repeating the elimination
+producer is unnecessary because the full saved exact proof can be checked.
+A whole-stage independent auditor must later repeat this verification from
+its own arithmetic rebuild and verify the actual solver system separately.
+
+The next numerical backend should directly assemble the cone system in the
+original coordinates. This avoids the earlier CVXPY attribute projection,
+which clipped negative failed-iterate scalar entries. Preserve native failed
+iterates, verify all original equation residuals, and independently reconstruct
+the canonical cone rows. Add a worker lifecycle calibration through terminal
+cost metadata and artifact writing; the earlier tests missed this branch.
+Any numerical candidate still needs exact restoration against all 5,641
+original equations and exact sign/PSD verification. Finite success alone would
+leave the all-scale innovation bound and RH bridge unresolved.
+
+Independent analytical result
+
+primitive_state_auxiliary_faces_analysis_v1.txt derives the exact gamma-zero
+auxiliary equations. They force gamma=0 and only the auxiliary slack (original
+coordinate 1596) to zero. They do not force a square weight or a PSD direction
+to vanish. An exact exposing functional identifies this slack; positive
+square weights and positive definite matrices satisfy the auxiliary alone.
+Signed storage also prevents treating formal scalar cancellation as a sum of
+nonnegative matrix terms. No additional facial reduction is justified here.
+
+Whole-stage audit
+
+The independent whole-stage audit passed in 266.3831879440113 seconds.
+It rebuilt the full arithmetic and geometry once, reverified both complete
+exact proof tapes, and checked all 5,253 completed earlier transcript records.
+Independent replay operations: 104700778.
+Independent replay cells: 47156927.
+Independent replay work reserve: 133059498.
+It correctly leaves equation_reduction_verified=False because the original
+transport failed; the saved basis is evidence for a fresh verification only.
+Independent review SHA256: 5bbbb13d8db11e29c70477fde5486616e2f6c23023fc6a6d0f4721d4fe5c3111.
+Terminal receipt SHA256: 6235c740ba358cf6bb00419e6a7d22eacdc59e904ca16e865ad600129ff7f6af.
+Research goal remains active. Uniform innovation inequality unresolved;
+global_bound_proved=False; RH_proved=False.

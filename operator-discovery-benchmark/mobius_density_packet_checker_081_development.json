@@ -1,0 +1,98 @@
+{
+  "stage": "081 independent signed density packet checker",
+  "status": "PASS",
+  "distinct_tests": 14,
+  "test_executions": 21,
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081 -v",
+      "tests_run": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.007,
+      "outcome": "PASS",
+      "output": "test_certificate_mutations_and_unpaid_exponent (test_check_mobius_density_packet_081.Tests) ... ok\ntest_empty_rays_kernel_units_and_arbitrary_denominator (test_check_mobius_density_packet_081.Tests) ... ok\ntest_exact_gram_shift_and_uniform_bound_scope (test_check_mobius_density_packet_081.Tests) ... ok\ntest_omega_prime_boundary_and_independent_small_n (test_check_mobius_density_packet_081.Tests) ... ok\ntest_resource_horizon_preallocation_and_canonical (test_check_mobius_density_packet_081.Tests) ... ok\ntest_schema_domain_false_flag_and_weights (test_check_mobius_density_packet_081.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests -v",
+      "tests_run": 5,
+      "failures": 1,
+      "errors": 0,
+      "elapsed_seconds": 0.245,
+      "outcome": "FAIL",
+      "output": "test_complete_ratio_source_counts_and_signed_packet (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_finite_tamper_both_source_endpoints_and_balance (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_huge_complete_bank_rejected_before_source_allocation (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_pair_units_squareful_coprimality_and_cache (test_check_mobius_density_packet_081.FiniteTests) ... FAIL\ntest_zero_kernels_retained_in_complete_bank (test_check_mobius_density_packet_081.FiniteTests) ... ok\n\n======================================================================\nFAIL: test_pair_units_squareful_coprimality_and_cache (test_check_mobius_density_packet_081.FiniteTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_density_packet_081.py\", line 116, in test_pair_units_squareful_coprimality_and_cache\n    second=C.audit_pair(p,1,2);self.assertEqual(first['terms'],second['terms']);self.assertLess(second['ops'],first['ops'])\nAssertionError: 211 not less than 211\n\n----------------------------------------------------------------------\nRan 5 tests in 0.245s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "attempt": 3,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests.test_pair_units_squareful_coprimality_and_cache -v",
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.002,
+      "outcome": "PASS",
+      "output": "test_pair_units_squareful_coprimality_and_cache (test_check_mobius_density_packet_081.FiniteTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+    },
+    {
+      "attempt": 4,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests.test_independent_square_divisor_coprime_counts test_check_mobius_density_packet_081.FiniteTests.test_standalone_pair_integral_by_continuous_step_geometry test_check_mobius_density_packet_081.Tests.test_resource_horizon_preallocation_and_canonical -v",
+      "tests_run": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.003,
+      "outcome": "PASS",
+      "output": "test_independent_square_divisor_coprime_counts (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_standalone_pair_integral_by_continuous_step_geometry (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_resource_horizon_preallocation_and_canonical (test_check_mobius_density_packet_081.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "attempt": 5,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests.test_pair_units_squareful_coprimality_and_cache -v",
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.002,
+      "outcome": "PASS",
+      "output": "test_pair_units_squareful_coprimality_and_cache (test_check_mobius_density_packet_081.FiniteTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+    },
+    {
+      "attempt": 6,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests.test_complete_ratio_source_counts_and_signed_packet test_check_mobius_density_packet_081.FiniteTests.test_pair_units_squareful_coprimality_and_cache test_check_mobius_density_packet_081.FiniteTests.test_zero_kernels_retained_in_complete_bank test_check_mobius_density_packet_081.FiniteTests.test_huge_complete_bank_rejected_before_source_allocation -v",
+      "tests_run": 4,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.206,
+      "outcome": "PASS",
+      "output": "test_complete_ratio_source_counts_and_signed_packet (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_pair_units_squareful_coprimality_and_cache (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_zero_kernels_retained_in_complete_bank (test_check_mobius_density_packet_081.FiniteTests) ... ok\ntest_huge_complete_bank_rejected_before_source_allocation (test_check_mobius_density_packet_081.FiniteTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.206s\n\nOK\n"
+    },
+    {
+      "attempt": 7,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_density_packet_081.FiniteTests.test_generic_large_lcms_and_cached_bank_are_prospective -v",
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.669,
+      "outcome": "PASS",
+      "output": "test_generic_large_lcms_and_cached_bank_are_prospective (test_check_mobius_density_packet_081.FiniteTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.669s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_queries": false,
+  "old_suites_run": false,
+  "frozen_files_edited": false,
+  "implemented": [
+    "strict program admission",
+    "exact PSD Gram energy and shifted indefinite drift matrix",
+    "universal omega price",
+    "signed balanced packet coefficient/error budget",
+    "standalone independent max-denominator pair compiler",
+    "complete squarefree coprime ratio bank and exact density balance",
+    "independent square-divisor inclusion-exclusion counts",
+    "independent original-kernel Mertens delay state and both endpoint energies",
+    "adaptive LCM/bit prospective compiler and entire retained-bank resource gates"
+  ],
+  "pending_coordination": [],
+  "successful_executions": 20,
+  "failed_executions_retained": 1,
+  "resolved_attempt_failure": "Attempt2 cache work assertion expected strict improvement but preceding fixture had already warmed the exact key. Test uses a distinct rational program key; affected rerun passed. No checker arithmetic was wrong.",
+  "resource_audit": "Replaced fixed per-pair reservation with actual denominator/divisor LCM and numerator-bit estimates; term count<=2*dimension*kernel_count. Full bank includes retained term tuples even when bounded cache evicts. Adversarial128term/4090bit kernels,10000rays/4090bit weights and large ordinary bank all rejected before mocked source allocation."
+}

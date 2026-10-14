@@ -1,0 +1,151 @@
+Stage039: exact normalization and executable all-scale multiplier search
+
+Status: verified progress; full signed bound and RH remain OPEN.
+Authoritative continuation:
+ global-multiplier-bound-results/pilot-001/next_search_input.json
+Production exit0, symbolic phase0.3038seconds, reported peak704032KiB.
+No coefficient archive/new coefficient observations, hashes, old study reruns,
+or changes to035--038 results. Accepted033 remains untouched.
+
+What was actually implemented and run
+
+The detector constructs a complete joined all-N arithmetic relation from the
+source AST and searches rational quadratic arguments modulo that relation.
+The multiplier and PSD form are solved, not supplied as a winning argument.
+An independent Fraction/Schur checker reconstructs the whole source relation,
+checks the exact matrix identity, and retains every forcing and growth debt.
+Positive semidefiniteness alone never counts as a bound payment.
+
+For the original source beta=9/2,K(n)=n^(-1/3),weighted channel prefixes W_j,
+ F(n)=sum_j W_j(n),
+ T(n)=sum_j sum_(2<=d<=n)D_j(d) W_j(floor(n/d)),
+ P_K(n)=sum_(k<=n)K(k),
+the source compiler derives, for EVERY integer n>=1,
+ F(n)+T(n)+beta+R_u P_K(n)=0.
+All channels, signed crosses, prime/composite contributions, unit and complete
+kernel tails are retained. T is not independently paid.
+
+Write E_H(X)=X^-2 sum_(X<=n<2X)H(n)^2 for integer X>=1.
+The separately proved RHS prices are
+ E_beta=81/(4X), E_(R_u P_K)<=225 X^(1/3).
+The second price is true but too large for the required subpower target.
+Only the independently licensed coefficient interval1<R_u<5 is used for these
+elementary prices; exact normalization remains a separate source constraint.
+
+The executed search had3 core cases and64 complete auxiliary constructions,
+using32 exact rational coefficients, including denominators17 and257. These
+are auxiliary coefficients, not a new set of tested fractional power twists.
+General rational power-prefix prices are supported without a root-order list.
+
+Results
+
+65 of67 original-target cases have a checked provider-annihilating vector:
+these controls cannot work within the particular free-vector relaxation, even
+if arbitrary nonnegative forcing coefficients replace the finite grid. These
+are NOT actual arithmetic counterexamples or exclusions of richer identities.
+Of the64 auxiliary constructions,63 fail this finite template test.
+
+Two exact original-target quadratic implications survive:
+ 1. E_F <= 2 E_beta+4 E_(R_u P_K)+4 E_T
+         <=81/(2X)+900 X^(1/3)+4 E_T.
+    Both the OPEN full tail and the positive RHS growth remain explicit.
+ 2. Set C=T+R_u P_K. The solver finds E_F<=2 E_beta+2 E_C.
+    The independent endpoint check also proves C=-F-beta, so a subpower bound
+    on C is exactly the unresolved original obligation up to a paid constant.
+    This is not a discovered estimate or an independent new controlling energy.
+
+The detector also discovers/replays four bounds on complete CONVOLVED channel
+prefixes. The mu*One=delta channel has a paid subpower convolved-prefix energy;
+the other three carry X^(1/3). These are different-target positive controls,
+not four new full-source estimates. Total forcing-coefficient trials:67.
+
+Twelve source-channel/fixed-floor-stencil templates are admitted all-N, with
+their full domain and RHS, then split with an OPEN complete tail. Each of
+the12 individual positive-kernel finite-inverse proposals is excluded at a
+prime beyond its support. This excludes only FIXED FINITE EXACT inverses of
+the individual kernels, not moving-support, approximate or jointly signed ones.
+
+Source-specific gap found and automatically verified
+
+The exact arithmetic identities hold for an entire affine source family f_R.
+For Re(s)>1 its source-generated Dirichlet product is
+ zeta(s+1/3)[beta/zeta(s)^2
+             -beta/(zeta(s)zeta(s+2/3))-R/zeta(s+2/3)]-beta/zeta(s).
+The detector locates the simple numerator pole theta=2/3 and derives residue
+ beta/zeta(theta)^2-beta/[zeta(theta)zeta(4/3)]-R/zeta(4/3).
+Solving its affine cancellation condition rediscovers the actual035 scalar
+ R_u=beta[zeta(4/3)/zeta(theta)^2-1/zeta(theta)].
+This existing normalization was recovered from the source; it is not a new
+arithmetic bound. The independently admitted035 scalar definition was supplied
+separately, not taken from the proposed solution. Exact Laurent substitution
+proves zero, and Arb256 proves every regular inverse-zeta constant nonzero.
+
+For the actual arithmetic family member R=2, the pole residue is rigorously
+ 0.7063348974741493895996861394823122471... >0.
+A subpower full-prefix block energy would imply holomorphy on Re(s)>1/2
+by dyadic Cauchy-Schwarz and Abel's integral. Thus the desired theorem cannot
+hold for this family member, which still satisfies all038 divisor identities.
+An argument that forgets exact R_u and uses only R in[1,5] cannot close the
+uniform bound. This is NOT a counterexample to the correctly normalized source.
+The source-product identity at theta is meromorphic continuation only; ordinary
+sum mu(n)n^(-2/3) convergence and a summable critical inverse are NOT admitted.
+Unknown reciprocal-zeta zero poles are not enumerated or removed by this guard.
+
+Honest capability limit and next work
+
+The new engine really performs a finite all-scale quadratic proof search.
+Its current scalar joined-tail relaxation does NOT exploit a finite consequence
+of exact R_u. The successful normalization guard does not repair that gap by
+itself. Do not call the64 trials a decisive RH search, a proof of the tail, or
+evidence that the target estimate is false. All six037 recurrences remain OPEN.
+
+The failure now changes the search input: next priority is to generate a finite
+identity from the exact normalization, retaining a complete signed remainder.
+Useful grammar productions include source-generated common-power factorization,
+fractional kernel/main-term subtraction, exact cutoff/smoothing decompositions,
+and full signed finite differences across scales. Search their bounds jointly
+and retain all endpoint/recovery costs. An analytically continued scalar minus
+a finite sum may be named exactly, but its size/convergence must remain OPEN
+until independently proved. Do not pay the needed finite remainder merely
+because the infinite meromorphic residue is zero.
+
+Use the exact039 frontier as input to the next detector run. Seek an actual
+controlling argument or a concrete intermediate signed lemma; do not merely add
+more coefficients to the same span, rename C=-F-beta, or re-run old power twists.
+The next search must preserve the original complete F and the accepted033/037
+dependencies. A useful change of variables is allowed; equivalent endpoints
+become progress only after an argument proves their missing bound.
+
+Validation and independence
+
+35 distinct synthetic/adversarial tests passed across five new modules:
+5 source-pole producer,15 independent pole checker,6 multiplier prototype,
+3 independent matrix checker,6 integrated argument-search tests.
+Two focused test repetitions were justified by fixes,37 test invocations total.
+Development used exact source ASTs, changed-rational synthetic fixtures and
+adversarial mutations; no arithmetic coefficient values were observed.
+Production source checker3630 proxy ops, relation checker240, pole producer64,
+pole checker267, multiplier producer2586486. Independent bound replay0.0409s.
+No producer matrix solver is imported by the independent bound checker.
+
+Sol6.1 parallel work: dual_reduction_backend implemented the substantial
+symbolic multiplier prototype; prefix_proof_checker implemented the independent
+pole checker and mathematical scope review. A final read-only independent
+review found the mathematics sound, and two coverage gaps were fixed before
+freeze: missing floor templates and suppressed equivalence claims now reject.
+Only the new coverage test and its affected successful replay were run again.
+All root and agent edits for039 are complete; no agents are needed to finish it.
+
+Main files
+ global_multiplier_bounds.py / check_global_multiplier_bounds.py
+ global_multiplier_proto_039.py
+ source_pole_guard.py / check_source_pole_guard.py
+ run_global_multiplier_bounds.py
+ global_multiplier_bounds_protocol.txt
+ MULTIPLIER_PROOF_SCOPE_039.txt / GLOBAL_MULTIPLIER_BACKEND_039.txt
+ global-multiplier-bound-results/pilot-001/{search,verification,report}.json
+ global-multiplier-bound-results/pilot-001/source_pole_verification.json
+ global-multiplier-bound-results/pilot-001/bound_search_frontier.json
+
+The persistent goal remains ACTIVE. No complete signed arithmetic bound or
+proof of RH has been established, and there is no external/user blocker.

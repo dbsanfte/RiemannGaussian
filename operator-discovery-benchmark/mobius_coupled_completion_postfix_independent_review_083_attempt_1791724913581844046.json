@@ -1,0 +1,105 @@
+{
+  "RH_proved": false,
+  "affine_exact_equation_verified": true,
+  "affine_price": "785302775/276824064",
+  "anchor_cases": [
+    {
+      "effective_dimension": 1,
+      "lower": "1/9",
+      "memory": 1,
+      "price": "5/36",
+      "u": 1
+    },
+    {
+      "effective_dimension": 1,
+      "lower": "1/12",
+      "memory": 1,
+      "price": "7/48",
+      "u": 2
+    },
+    {
+      "effective_dimension": 2,
+      "lower": "-47/24",
+      "memory": 1,
+      "price": "-469/720",
+      "u": 6
+    },
+    {
+      "effective_dimension": 7,
+      "lower": "-86657/1188",
+      "memory": 1,
+      "price": "1217/132",
+      "u": 23
+    },
+    {
+      "effective_dimension": 1,
+      "lower": "5/36",
+      "memory": 2,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "effective_dimension": 1,
+      "lower": "31/144",
+      "memory": 2,
+      "price": "5/18",
+      "u": 2
+    },
+    {
+      "effective_dimension": 2,
+      "lower": "-367/288",
+      "memory": 2,
+      "price": "-349/288",
+      "u": 6
+    },
+    {
+      "effective_dimension": 7,
+      "lower": "-38359/528",
+      "memory": 2,
+      "price": "2785/264",
+      "u": 23
+    },
+    {
+      "effective_dimension": 1,
+      "lower": "5/36",
+      "memory": 3,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "effective_dimension": 1,
+      "lower": "31/144",
+      "memory": 3,
+      "price": "5/18",
+      "u": 2
+    },
+    {
+      "effective_dimension": 2,
+      "lower": "-1181/864",
+      "memory": 3,
+      "price": "-119/96",
+      "u": 6
+    },
+    {
+      "effective_dimension": 7,
+      "lower": "-229117/3168",
+      "memory": 3,
+      "price": "3407/352",
+      "u": 23
+    }
+  ],
+  "elapsed_seconds": 0.06852314999559894,
+  "hashes_used": false,
+  "observed_full_source_values_used": false,
+  "old_tests_run": false,
+  "resident_gates": [
+    "basis",
+    "dual"
+  ],
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "unconstrained_dual_only": true,
+  "uniform_full_price_proved": false,
+  "uniform_source_bound_proved": false,
+  "unknown_composite_signs_used": false
+}

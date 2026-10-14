@@ -1,0 +1,28 @@
+{
+  "drawn_after_bank_freeze": true,
+  "draws": [
+    {
+      "band": [
+        1872,
+        2279
+      ],
+      "status": "ACCEPTED",
+      "u": 2187
+    },
+    {
+      "band": [
+        3008,
+        3503
+      ],
+      "status": "ACCEPTED",
+      "u": 3475
+    }
+  ],
+  "no_validation_outcomes_seen_before_freeze": true,
+  "parents": [
+    2187,
+    3475
+  ],
+  "prospective_draw_values_seen_in_preflight": true,
+  "seed": 20261011085
+}

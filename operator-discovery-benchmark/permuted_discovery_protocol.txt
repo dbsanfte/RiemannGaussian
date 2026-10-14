@@ -1,0 +1,117 @@
+Prospective permuted-circuit discovery v1, 2026-10-09
+
+Freeze this protocol, the circuit contract, the entire local Python dependency
+closure, theorem review, all development receipts, and exact catalogue/selection
+source by direct byte copies BEFORE study arithmetic. No hashes. Previous
+archives remain immutable. Sources/grammar overlap earlier research; this is
+a new circuit family, not an independent dataset or a proof of the moment gate.
+
+Catalogue: baseline ID0 and exactly12 raw words in each of four ordered families:
+permutation_input, permutation_interleaving, conjugated_convolution,
+shear_interleaving. ID=1+12*family_index+map_index. Source-free fixed catalogue,
+not adaptive random search. The complete MAPS/PHASES/ALPHAS payloads and ordinal
+construction in permuted_circuit_discovery.py are part of this protocol.
+Alpha list: -1,-1/2,-1/3,-1/6,1/6,1/3,1/2,1. First alpha and phase index j%8;
+second alpha (j+3)%8 and phase (j+2)%8. Words P,T; T,P,T;
+P,T,P^-1,T; and P,H,P^-1,T for even j or T,P,H,P^-1,T for odd j.
+Interleaving j divisible by3 uses opposite prime phase in its second T.
+Conjugation even j uses exactly opposite alpha and same prime phase in last T;
+j%3=1 reverses the two permutation directions. Shear coefficients cycle
+-1,1,-1/2,1/2,-1/3,1/3; phase j%8; direction even_from_odd for even j and
+odd_from_even for odd j. Shear j0 uses explicit identity P: adjacent difference
+is a generic smoothness calibration, not additional prime information; its
+subsequent convolution is still fully evaluated. Source-block choices use
+subtract-root and fractional-root indices, not merely mu(2^k). At most2
+convolutions,2 permutations,1 shear per generated raw word. All maps/branches
+and phases bind the same original source. Raw words, certificates, inverse
+words and complete ordered normalizer rewrites are archived. Normalized exact
+duplicates alias their earliest ordinal and are evaluated once per partition.
+No rejection disappears. The normalizer's equivalence is dyadic moments only;
+EVERY diagnostic, including irregular validation blocks, uses normalized words.
+
+Discovery sources: actual mu, one, partial_prime_13. Training scales32,64,128,256
+at closed H511; validation scales384,512,768,1024 at closed H2047. All full
+blocks [X,2X) and complete paths retained. Only actual-mu training energies fit
+C_q=max E(X)/ceil(X^(1/q)), q=2,3,6,12. These constants are written before any
+validation. Controls do not fit coefficients or constants. Validation compares
+E<=C_q*ceil(X^(1/q)),16 gates; failed irregular gates are diagnostics too.
+No finite training constant is asserted uniform. Complete signed finite head
+sum_{1<=n<32} output(n)^2/n^2 is retained and checked horizon invariant.
+
+Diagnostics per matched validation scale: E, absolute path-envelope energy A,
+kappa=E/A; E=A=0 gives kappa1 and explicit inactive flag. E>0,A=0 is invalid.
+Raw ratio E_mu/E_baseline_mu; zero baseline denominator is undefined (including
+0/0). Specificity kappa_mu/min(kappa_one,kappa_partial_prime_13); denominator0
+is explicitly undefined, including0/0, and is not favorable. Signs inside
+prefix sums and all actual mixed terms remain. Neither kappa nor a small raw
+ratio certifies additional prime information or a uniform cancellation theorem.
+
+Eligibility requires complete available training AND validation for all three
+sources, baseline mu validation, canonical fixed scales and invariant finite
+heads. Undefined raw ratio/specificity at ANY validation scale excludes that
+candidate from selection; evidence remains archived. Aggregate raw ratio and
+specificity are their worst (maximum) validation values. Conditional q12 cost
+=9^P*shear_factor^2*13^(2R)*(head+48*C_12), where R=ceil(sum abs alpha).
+This is conditional on a missing full cofinal moment theorem; no fitted
+constant enters the proved inverse certificate.
+
+One lead per family plus baseline. Within each family, first sort by number
+of failed validation gates. Within each equal-failure stratum compute exact
+successive Pareto layers on (worst raw ratio,worst specificity,conditional cost),
+all minimized; domination means all <= with at least one strict <. Then sort
+by layer, specificity, raw ratio, cost, normalized JSON-byte complexity, ordinal.
+Layer0 is nondominated. Equality does not dominate. Nonbaseline words that
+normalize to baseline are ineligible with reason baseline_alias. Select families
+in the declared order, choosing the next ranked candidate whose evaluation_id
+has not already been chosen; otherwise the family is explicitly missing.
+Missing family is explicit,
+never replaced by a final-responsive favorite. Aliases inherit the evaluated
+normalized program and may satisfy a family quota; no repeated scoring arithmetic.
+
+Selection and full proof obligations are written before final computation.
+Mu-only exact fresh/lower-block/mixed decomposition is additionally recorded at
+the fixed dyadic scales8192,16384,32768 within H65535. Remove ALL convolution
+stages without normalization to define fresh q; g=full output-q. Retain all
+three terms F=sum q^2/X^2, G=sum g^2/X^2, C=2sum q*g/X^2, and E=F+G+C.
+This diagnostic is never used in selection and its scales overlap earlier work.
+Final mu scales20480,32768 at closed H65535. Final one/partial_prime_13 scales
+8192,16384 at closed H32767. The three source workers are disjoint. Each uses
+its selected candidate's frozen MU training constants; controls are controls,
+never actual-mu claims. Unmatched final scales cannot support cross-source
+specificity. Specificity conclusions use matched DISCOVERY scales only. Final
+comparisons do not adapt catalogue, normalization, fits, rank, or selected IDs.
+
+Whole-study450000000 exact/proxy operations includes ALL development invocations,
+one frozen combined suite, source construction, all generation/evaluation,
+metadata/selection and independent audit. Development receipts are read from
+permuted_producer_development.json, permuted_checker_development.json and
+permuted_workflow_development.json; cumulative receipts cannot reset. Root
+scaffolding/I/O reserve1000000; synthetic preparation cap10000000. Conservative
+generation cap3000000, discovery50000000, final140000000 disjoint source budgets
+mu:80000000, one:30000000, partial_prime_13:30000000. Unspent research allocation is available to the ONE independent
+audit: max_operations=450000000 minus actual preparation/reserve and all actual
+research counters, bound before audit starts. No new allocation addendum is
+required or permitted to escape450m. A failed charge does not execute a block.
+All missing/invalid/unattempted outcomes retained. No retry/reset/restart of
+research or audit, no repeating completed checks; exclusive start markers and
+append-only evaluation checkpoints record cumulative counters after every case.
+An exhausted audit preserves its checked prefix and UNKNOWN remainder.
+
+Independent audit: source-free catalogue reproduction shares frozen generation
+code, while independent arithmetic reconstructs normalizer, source, maps,
+kernels, envelopes, moments, head and recovery certificates. Fits, gates,
+diagnostics, Pareto layers and selection have a SEPARATE audit implementation.
+All available cases checked once; missing cases checked as missing dispositions,
+not silently filled. Finite arithmetic verification, inverse-norm checking and
+unproved universal moment/global/RH claims are separately reported (last three
+flags always false). Append one completed evaluation checkpoint with shared
+cumulative meter counts; incomplete audit is not a full admission.
+
+Physical cap16GiB aggregate, at most4 processes of4GiB each (parent plus3 final
+workers). Whole invocation deadline7200s inherited by workers, not reset per
+phase. Exact scalar-cell cap6000000 and numerator/denominator bit cap4096.
+One1000000-cell resident allowance covers retained artifacts, source vectors,
+catalogue and control metadata; arithmetic live accounting adds its own active
+state/cache. Serialized retained evidence aggregate <=8MiB; each artifact
+<=8MiB, source snapshot <=8MiB. Output copies are append-only, no content hashes.
+Development synthetic horizons <=63; no actual pilot source before freeze.

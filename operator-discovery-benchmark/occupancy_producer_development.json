@@ -1,0 +1,20 @@
+{
+  "operations": 4462,
+  "runs": [
+    {
+      "elapsed_seconds": 0.051823124988004565,
+      "operations": 4236,
+      "returncode": 0,
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.008s\n\nOK\n",
+      "stdout": "SYNTHETIC_WORK module=test_occupancy_transfer_discovery operations=4236\n"
+    },
+    {
+      "elapsed_seconds": 0.05151203699642792,
+      "operations": 226,
+      "reason": "two newly added phase-cone tests only; original seven not repeated",
+      "returncode": 0,
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+      "stdout": "SYNTHETIC_WORK module=test_occupancy_transfer_discovery operations=226\n"
+    }
+  ]
+}

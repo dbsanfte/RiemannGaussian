@@ -1,0 +1,81 @@
+Cutoff prime/cofactor orbit search, pilot 001
+
+Question and scope
+The exact input is candidate10_cutoff_work_obligation.json, byte-bound to
+core-cutoff-work-results/pilot-001/publication-001/next_search_input.json.
+The unresolved input is the complete joined work R_q=mu(q)W1(q)+mu(q)^2 W2(q)
+for P_U=A_U^2 E_U^3-c_U^3 D_U, at sigma=9/20, theta=2/3.
+The original continuous old-window integral has dt/(2*pi), H(U)=2 U^(45/2).
+Its uniform target is cumulative O(V^(12/5)). Full signed core stays priority0.
+This auxiliary component alone is insufficient for RH.
+
+Search grammar, sealed before observations
+18 programs: fixed prime 2,3,5, followed by every ordered pair of distinct
+increasing exponents in [0,1/6,1/3,1/2,2/3,1]. A pair (a,b) selects primes
+in (B^a,B^b]; a=0 denotes lower endpoint zero. Integer roots are exact.
+Squarefree q in (B,2B] has a unique cofactor after selected primes are removed.
+All q with the same cofactor form a truncated orbit, with all faces retained.
+Non-squarefree q contribute exactly zero to joined R_q; their W0/head change
+and child shell remain in the numerical energy-transition record.
+The unit is the complete initial state at U=1, P_1=0, not a recurrence event.
+Fixed-single-prime programs necessarily have only singleton groups in a strict
+dyadic block. They are retained as a declared negative structural calibration.
+
+Finite experiment
+Seven heights [0,1/2,1,2,4,8,16], positive paired-height weights [1,2,2,2,2,2,2]
+times abs(zeta(s+1/3)/s)^2. No quadrature widths or 2*pi factors are assigned.
+This finite discrete functional is NOT the continuous integral, a lower/upper
+enclosure of it, or an all-scale estimate. Finite improvement cannot prove RH.
+All polynomial crosses, current c and A coupling, complete prefix states,
+strict old/child height masks and first child shell are retained.
+Producer precision192: three increment sectors then complete energy crosses.
+Checker precision256: three counterfactual child norms and independent Abel
+prefix reconstruction, exact harmonic c and Mertens sum. Finite intervals are
+serialized with sufficient digits, compared by overlap and relative width.
+Each role reads its own preserved Mobius archive from the signed-work study.
+Producer checks every inverse-divisor equation; checker factors every integer.
+All input primes were historically observed. This is new sampled work evidence,
+not a fresh arithmetic holdout.
+
+Selection and extension
+Discovery measures q2..1024 once, with every grammar program on B64,128,256,512.
+B64,128,256 are discovery, B512 validation; all four are used in selection.
+For EVERY integer V in (B,2B], compute sum_h sum_groups abs(sum_(q<=V) R_q(h)).
+Retain the entire partial curve, its peak, endpoint, singleton cost, signed
+odd/even/joined totals, and the ungrouped full-block absolute work.
+Score is the largest integer b in [0,20] for which 2^b*peak<=ungrouped is
+certified by intervals. b=0 follows triangle inequality even if intervals
+overlap at equality. Zero/uncertain-zero denominator has no score.
+Any all-singleton or one-bucket partition at any of the four blocks is
+ineligible. Missing cases and zero baselines also exclude a program.
+In each lane fixed,prefix,window choose the largest minimum score across the
+four blocks, then the smallest program id. No fitted constants or model calls.
+Seal selection before extending each owner's OWN saved state to q1025..2048.
+Evaluate selected programs only on B1024. Never reselect using this evaluation.
+No previous numeric prefix is recomputed in phase2. Source prefixes may be
+reread for exact validation and continuation binding. No precautionary hashes.
+
+Verification, resources, and feedback
+One owned development suite per owner, affected checks only after changes.
+No passing unchanged suites are rerun in study. Independently compare every
+actual sample, every case/partial curve and the selected identifiers. Preserve
+source bytes, complete observations, all cases, exclusions and terminal errors.
+Two numeric owner subprocesses run in parallel: 4GiB each, main process4GiB,
+under the authorized 16GiB aggregate memory limit. Each worker phase has
+300000000 accounted operations/900 seconds; total including development and
+main verification is capped at1500000000 operations/1800 seconds wall time.
+Operation accounting is a conservative budget estimate, not a CPU-instruction
+counter. No source fitting, no prime regeneration, no numerical uniform C.
+The continuous counterpart integrates the sum of absolute group integrands
+over all real heights with dt/(2*pi), each event masked by its old window.
+The universal partition identity gives a conditional route: this complete
+grouped continuous work O(B^(12/5)), uniformly for all partial blocks, implies the
+inherited signed cumulative estimate by dyadic summation. This is a stronger
+sufficient target, and remains OPEN. Exact orbit identities do not pay their
+state variation, even-sector interaction, or truncated boundary contributions.
+Review025 records analytically supplied rules and their limits; it does not
+make numerical candidate selection. The numerical detector generates/ranks
+grouping programs; analytical reviewers supply and assess proof lemmas.
+Every original source binding, paid correction, drift, recovery, full-source
+priority0 and ungrouped target is retained in published feedback. No new
+uniform signed bound or component payment is asserted by this experiment.

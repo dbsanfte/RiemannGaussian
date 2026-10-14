@@ -1,0 +1,15 @@
+{
+  "schema": "owned-development-suite-v1",
+  "module": "test_core_pole_growth_obstruction",
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "elapsed_seconds": 0.06478503198013641,
+      "operations": 100000
+    }
+  ],
+  "operations": 100000,
+  "charge_basis": "fixed metadata/logic-test reserve; no arithmetic source or zeta witness computed"
+}

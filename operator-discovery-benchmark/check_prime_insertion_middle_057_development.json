@@ -1,0 +1,60 @@
+{
+  "owner": "/root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_prime_insertion_middle_057.py",
+        "-v"
+      ],
+      "returncode": 1,
+      "tests": 14,
+      "stdout": "SYNTHETIC_WORK module=check_prime_insertion_middle_057 operations=31400118\n",
+      "stderr": "test_arbitrary_fractional_parameters_normalizer_and_signed_source (__main__.MiddleCheckerTests) ... ok\ntest_band_partition_and_same_source_cache (__main__.MiddleCheckerTests) ... ok\ntest_charge_only_meter_and_precision_restoration (__main__.MiddleCheckerTests) ... ok\ntest_complete_radicals_match_cofactor_identity_and_valuations (__main__.MiddleCheckerTests) ... ok\ntest_dyadic_signed_rounding_and_taylor_remainder (__main__.MiddleCheckerTests) ... ok\ntest_exact_half_and_equal_bands_skip_source (__main__.MiddleCheckerTests) ... ok\ntest_functional_context_and_narrow_or_forged_interval (__main__.MiddleCheckerTests) ... ok\ntest_half_alpha_elementary_erfc_calibration (__main__.MiddleCheckerTests) ... ok\ntest_independent_taylor_admits_small_producer_integrals (__main__.MiddleCheckerTests) ... ok\ntest_logarithmic_and_arbitrary_delta_recovery (__main__.MiddleCheckerTests) ... ok\ntest_primes_parameters_canonical_types_and_capacity (__main__.MiddleCheckerTests) ... FAIL\ntest_recovery_exact_signed_crosses_and_source_base (__main__.MiddleCheckerTests) ... ok\ntest_recovery_invalid_source_convexity_or_unpriced_cost (__main__.MiddleCheckerTests) ... ok\ntest_recovery_omitted_parity_neighbor_seeds_and_prices_rejected (__main__.MiddleCheckerTests) ... ok\n\n======================================================================\nFAIL: test_primes_parameters_canonical_types_and_capacity (__main__.MiddleCheckerTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_insertion_middle_057.py\", line 160, in test_primes_parameters_canonical_types_and_capacity\n    with self.assertRaises(OverflowError):C.verify_middle_interval(request(gamma='100001'),{'lower':'-1','upper':'1'},m,context)\nAssertionError: OverflowError not raised\n\n----------------------------------------------------------------------\nRan 14 tests in 0.123s\n\nFAILED (failures=1)\n",
+      "operations": 31400118,
+      "elapsed_seconds": 0.21509504201821983,
+      "peak_rss_KiB": 36584,
+      "stdout_artifact": "check_prime_insertion_middle_057_suite_001.stdout.txt",
+      "stderr_artifact": "check_prime_insertion_middle_057_suite_001.stderr.txt"
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_prime_insertion_middle_057.py",
+        "-v",
+        "MiddleCheckerTests.test_primes_parameters_canonical_types_and_capacity"
+      ],
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "SYNTHETIC_WORK module=check_prime_insertion_middle_057 operations=225\n",
+      "stderr": "test_primes_parameters_canonical_types_and_capacity (__main__.MiddleCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "operations": 225,
+      "elapsed_seconds": 0.10949027200695127,
+      "peak_rss_KiB": 33708,
+      "stdout_artifact": "check_prime_insertion_middle_057_affected_002.stdout.txt",
+      "stderr_artifact": "check_prime_insertion_middle_057_affected_002.stderr.txt",
+      "affected_only": true
+    }
+  ],
+  "operations": 31400343,
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "edits_stopped": true,
+  "synthetic_only": true,
+  "scientific_source_arrays_read": false,
+  "prior_studies_or_suites_replayed": false,
+  "producer_imported_by_checker": false,
+  "static_preflight_correction": "Closed missing parenthesis in dyadic ceil branch before the sole suite invocation.",
+  "correction": "Capacity fixture gamma100001 requires only200002 poweredbits atN3, below400000. Changed only fixture to gamma200001 requiring400002bits. Production arithmetic unchanged; only affected test rerun.",
+  "distinct_tests": 14,
+  "test_invocations": 15,
+  "public_APIs": [
+    "prepare_context",
+    "verify_middle_interval",
+    "verify_parent_recovery",
+    "verify_recovery"
+  ],
+  "proof_scope": "finite ordinary-mu E_R source integrals and conditional neighbor-parent recovery only; uniform recurrence and RH remainOPEN"
+}

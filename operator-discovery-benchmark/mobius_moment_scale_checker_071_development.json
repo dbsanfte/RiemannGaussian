@@ -1,0 +1,67 @@
+{
+  "runs": [
+    {
+      "tests": 15,
+      "returncode": 0,
+      "operations": 74868,
+      "elapsed_seconds": 0.1522549910005182,
+      "invocation": "python3 new synthetic checker suite",
+      "failures": []
+    },
+    {
+      "tests": 17,
+      "returncode": 0,
+      "operations": 96083,
+      "elapsed_seconds": 0.17623239796375856,
+      "invocation": "python3 new synthetic checker suite after prospective-memory/moment hardening and fixed-theta/order coverage",
+      "failures": []
+    }
+  ],
+  "unique_new_synthetic_tests": 17,
+  "final_status": "PASS",
+  "original_attempts": [
+    {
+      "tests": 0,
+      "returncode": 127,
+      "operations": 0,
+      "elapsed_seconds": 2.9194e-05,
+      "invocation": "python synthetic checker suite",
+      "failures": [
+        "python executable absent"
+      ],
+      "correction": "Use python3 for the same intended invocation."
+    },
+    {
+      "tests": 15,
+      "returncode": 0,
+      "operations": 74868,
+      "elapsed_seconds": 0.1522549910005182,
+      "invocation": "python3 new synthetic checker suite",
+      "failures": []
+    },
+    {
+      "tests": 17,
+      "returncode": 0,
+      "operations": 96083,
+      "elapsed_seconds": 0.17623239796375856,
+      "invocation": "python3 new synthetic checker suite after prospective-memory/moment hardening and fixed-theta/order coverage",
+      "failures": []
+    }
+  ],
+  "preflight_attempts": [
+    {
+      "tests": 0,
+      "returncode": 127,
+      "operations": 0,
+      "elapsed_seconds": 2.9194e-05,
+      "invocation": "python synthetic checker suite",
+      "failures": [
+        "python executable absent"
+      ],
+      "correction": "Use python3 for the same intended invocation."
+    }
+  ],
+  "original_final_status": "passed",
+  "prior_failure_preserved": true,
+  "correction": "The first attempted launch found no python executable and ran no tests; it remains in original_attempts and preflight_attempts. Actual suite runs used python3 and passed. Test-count ledger uses only executed tests."
+}

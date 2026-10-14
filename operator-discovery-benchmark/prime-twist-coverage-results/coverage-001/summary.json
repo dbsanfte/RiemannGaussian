@@ -1,0 +1,2307 @@
+{
+  "status": "independently_audited_exhaustive_finite_prime_twist_coverage",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-twist-coverage-results/coverage-001",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-twist-results/pilot-001",
+  "checks": {
+    "sealed_verified_source_and_frozen_coverage_protocol": true,
+    "all_archived_candidates_including_rejections_tested_without_reselection": true,
+    "every_integer_point_has_a_native_interval_comparison": true,
+    "every_integer_window_has_a_complete_native_moment_comparison": true,
+    "actual_prime_power_sieve_and_strict_endpoint_semantics_used": true,
+    "higher_precision_roots_and_independent_native_kernel_integrals_checked": true,
+    "separate_cell_and_per_increment_moment_extremum_probes_checked": true,
+    "finite_coverage_retains_uniform_proof_obligations": true
+  },
+  "cutoff": 131072,
+  "archived_point_bounds": 20,
+  "complete_point_comparisons": 2621440,
+  "complete_window_starts": 65536,
+  "complete_moment_comparisons": 196608,
+  "point_bounds_passing_every_integer": 16,
+  "RH_sufficient_if_uniform_point_bounds_passing_every_integer": 15,
+  "moment_bounds_passing_every_integer_window": 3,
+  "sparse_point_survivors_lost_under_exhaustive_coverage": 0,
+  "lost_sparse_survivors": [],
+  "surviving_uniform_proof_obligations": [
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1",
+          "coefficients": [
+            "1"
+          ],
+          "normalizers": [
+            "1"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1"
+          ],
+          "id": "084c93f7c29c90311172e73b7719fbfbec8d398c78295b80ab6a763a3077715a",
+          "origins": [
+            "coupled_normalizer",
+            "enumerated",
+            "leading_normalizer",
+            "monomial"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 0,
+            "bernstein_coefficients": [
+              "1"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "5621/1024",
+            "unrounded_constant_ball": "[5.48900378838222796393971343474938649161544203 +/- 1.31e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.352016599557547475427356767736436568447115444 +/- 2.10e-46]",
+            "semantic_digest": "084c93f7c29c90311172e73b7719fbfbec8d398c78295b80ab6a763a3077715a",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "084c93f7c29c90311172e73b7719fbfbec8d398c78295b80ab6a763a3077715a",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "311/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.2723280070873928,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "311/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.44269504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[119.588284204834445413420888245034287880129279 +/- 5.21e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[116.815420899801053194560736356991518122646054 +/- 5.14e-43]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 119.58828420483445,
+          "id": "79a3b51df503260f7ded569e68f08ea5f09835a1c4dfce0132d9d5a5d1aaeba0",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "79a3b51df503260f7ded569e68f08ea5f09835a1c4dfce0132d9d5a5d1aaeba0",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "79a3b51df503260f7ded569e68f08ea5f09835a1c4dfce0132d9d5a5d1aaeba0",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.53245298642634729513545491967400814652604719493377 +/- 1.45e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "0"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "0"
+          ],
+          "id": "125994c4f196c8928584cff380124ee32e646673840cfd24a626a59a836e40fa",
+          "origins": [
+            "leading_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6139/1024",
+            "unrounded_constant_ball": "[5.99479238181888603351218702896782328588904154 +/- 2.00e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "125994c4f196c8928584cff380124ee32e646673840cfd24a626a59a836e40fa",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "57/256",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -0.3766906065406516,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "57/256",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.56769504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[113.299603615314091127055879324503854064162823 +/- 1.56e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[110.526740310280698908195727436461084306679598 +/- 1.63e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "13/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[3.96609118254168480425432640355534932767889152 +/- 1.66e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 113.2996036153141,
+          "id": "e823a2e8cda41d2c08bb83dfb41012d7e913974503a039ccf5a11d8a24f2a4b9",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "e823a2e8cda41d2c08bb83dfb41012d7e913974503a039ccf5a11d8a24f2a4b9",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "e823a2e8cda41d2c08bb83dfb41012d7e913974503a039ccf5a11d8a24f2a4b9",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 7,
+        "maximum_ratio_upper_ball": "[0.60547250260416204919821358719973041844644918527575 +/- 3.40e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "log",
+          "delta": "1",
+          "coefficients": [
+            "1"
+          ],
+          "normalizers": [
+            "1"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1"
+          ],
+          "id": "af2bdc764813c9bedbf79aba37b97b83cce05a9dc229cc9ea5e268ee342d4b3c",
+          "origins": [
+            "coupled_normalizer",
+            "enumerated",
+            "leading_normalizer",
+            "monomial"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 0,
+            "bernstein_coefficients": [
+              "1"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "487/128",
+            "unrounded_constant_ball": "[3.80468750000000000000000000000000000000000000 +/- 1e-49]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.162122933590654516439340527188764720277205053 +/- 2.76e-46]",
+            "semantic_digest": "af2bdc764813c9bedbf79aba37b97b83cce05a9dc229cc9ea5e268ee342d4b3c",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "af2bdc764813c9bedbf79aba37b97b83cce05a9dc229cc9ea5e268ee342d4b3c",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "947/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -0.15190695254688208,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "947/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 1,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[146.604528799866152620570585137861631867515932 +/- 4.80e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "logarithmic_derivative_F",
+                "conditional_transform_bound_ball": "[276.997370971046060717250730463821112977719772 +/- 3.08e-43]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "1/2",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 146.60452879986616,
+          "id": "e8c2eee3991312ac783d67e2646bda33306d4fbb301a615bfb9ff8ca67c13a02",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "e8c2eee3991312ac783d67e2646bda33306d4fbb301a615bfb9ff8ca67c13a02",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "e8c2eee3991312ac783d67e2646bda33306d4fbb301a615bfb9ff8ca67c13a02",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 1423,
+        "maximum_ratio_upper_ball": "[0.81121599290534892796990561126122146438330313098218 +/- 2.91e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/6",
+          "coefficients": [
+            "0",
+            "1"
+          ],
+          "normalizers": [
+            "0",
+            "1"
+          ],
+          "leading_index": 1,
+          "increment_shift": "1/6",
+          "leading_shift": "1/6",
+          "normalizer_exponents": [
+            "1",
+            "5/6"
+          ],
+          "id": "e87f02ddb12c4a0e1a3426616d7bf615789751d2e9d3a59c8c08546d5bbfc4f4",
+          "origins": [
+            "coupled_normalizer",
+            "enumerated_leading_shift",
+            "leading_normalizer",
+            "monomial",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "0",
+              "1"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "5/6",
+            "log_power": "0",
+            "constant": "6745/1024",
+            "unrounded_constant_ball": "[6.58680454605867355672765612169926378993853043 +/- 4.43e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.325368416126240268316464881333292053514964629 +/- 2.49e-46]",
+            "semantic_digest": "e87f02ddb12c4a0e1a3426616d7bf615789751d2e9d3a59c8c08546d5bbfc4f4",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "e87f02ddb12c4a0e1a3426616d7bf615789751d2e9d3a59c8c08546d5bbfc4f4",
+          "theta": "1/3",
+          "log_power": "0",
+          "constant": "393/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.716514046231316,
+          "transfer": {
+            "theta": "1/3",
+            "log_power": "0",
+            "constant": "393/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/3",
+            "leading_shift_recovery_cost": "1/6",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "1/6",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.44269504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[137.467808264012254778835310522694980565284759 +/- 3.72e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[134.694944958978862559975158634652210807801534 +/- 3.79e-43]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 137.46780826401226,
+          "id": "9e5533c718d563e86e17b004ef37de8c03c2074b76dce02af691bbb6e9209dc9",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "9e5533c718d563e86e17b004ef37de8c03c2074b76dce02af691bbb6e9209dc9",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "9e5533c718d563e86e17b004ef37de8c03c2074b76dce02af691bbb6e9209dc9",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.52938424621578575976020297980991431550829777987448 +/- 2.37e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/4",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-1/8"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "3/4"
+          ],
+          "id": "08a20b5f863d1264c291b0f0e66a798aa08c78478f905e899f05c5aff4b4c9fb",
+          "origins": [
+            "coupled_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "1581/256",
+            "unrounded_constant_ball": "[6.17512926193000645943217761409305980306737228 +/- 2.28e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.312966948270197046740014424342887119868461529 +/- 4.83e-46]",
+            "semantic_digest": "08a20b5f863d1264c291b0f0e66a798aa08c78478f905e899f05c5aff4b4c9fb",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "08a20b5f863d1264c291b0f0e66a798aa08c78478f905e899f05c5aff4b4c9fb",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "287/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.23316910839389887,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "287/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.74803192100008383327991526612712865460497670 +/- 1.58e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[135.727127985481023116472480450746911912376394 +/- 1.38e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[132.954264680447630897612328562704142154893169 +/- 1.31e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "7/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[77.5101546363546641029675840698716435880672205 +/- 5.89e-44]"
+              },
+              {
+                "shift_index": 2,
+                "real_part": "9/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[5.33298000930973004308506801790830562117282164 +/- 2.59e-46]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 135.72712798548102,
+          "id": "bc1286220d172b6d4ba2f618921e6144605f84aa7a8f4b627bf4e0328b5bb59d",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "bc1286220d172b6d4ba2f618921e6144605f84aa7a8f4b627bf4e0328b5bb59d",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "bc1286220d172b6d4ba2f618921e6144605f84aa7a8f4b627bf4e0328b5bb59d",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.52822422129237532394747196882050706828091337756021 +/- 4.46e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/3",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-1/8"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "2/3"
+          ],
+          "id": "19ec95817b35a2d3de70ba64a1d79b7b42cf7c31448c69cceb79b61a6c554b66",
+          "origins": [
+            "coupled_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "1581/256",
+            "unrounded_constant_ball": "[6.17512926193000645943217761409305980306737228 +/- 2.28e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.314552503762410438765705125011170747012757818 +/- 2.35e-46]",
+            "semantic_digest": "19ec95817b35a2d3de70ba64a1d79b7b42cf7c31448c69cceb79b61a6c554b66",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "19ec95817b35a2d3de70ba64a1d79b7b42cf7c31448c69cceb79b61a6c554b66",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "145/512",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.2261160544653161,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "145/512",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.74803192100008383327991526612712865460497670 +/- 1.58e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[135.116432120061480580956827554060427669780284 +/- 5.95e-44]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[132.343568815028088362096675666017657912297059 +/- 5.25e-44]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "23/24",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[70.3014208091715761332366765278598184116471719 +/- 3.28e-44]"
+              },
+              {
+                "shift_index": 2,
+                "real_part": "31/24",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[4.57075942409193760214354885890164551169545460 +/- 2.93e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 135.1164321200615,
+          "id": "b692440eb6ee05dad7db7a55d30c00536e00b26ceea525ca8f89506f56f83562",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "b692440eb6ee05dad7db7a55d30c00536e00b26ceea525ca8f89506f56f83562",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "b692440eb6ee05dad7db7a55d30c00536e00b26ceea525ca8f89506f56f83562",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.52783629298660079896791150990489033040151009150032 +/- 3.73e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/2",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-5/64"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "1/2"
+          ],
+          "id": "6c3fb205385bbf267649167c42129a5a984850be9b7301c81851a1edd89f3005",
+          "origins": [
+            "learned_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6255/1024",
+            "unrounded_constant_ball": "[6.10750293188833629971218114467109610912549825 +/- 3.18e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "6c3fb205385bbf267649167c42129a5a984850be9b7301c81851a1edd89f3005",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "7/32",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -0.8290493234864477,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "7/32",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.68040559095841367355991879670516496066310267 +/- 6.80e-46]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[116.551027848461292915691414729593481472184393 +/- 2.21e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[113.778164543427900696831262841550711714701168 +/- 2.14e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "9/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[5.33298000930973004308506801790830562117282164 +/- 2.59e-46]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 116.55102784846129,
+          "id": "17af3c31cf1048292791d5bd6782ba883f7b951b8ec318bf1945a329c7ae9aba",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "17af3c31cf1048292791d5bd6782ba883f7b951b8ec318bf1945a329c7ae9aba",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "17af3c31cf1048292791d5bd6782ba883f7b951b8ec318bf1945a329c7ae9aba",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 223,
+        "maximum_ratio_upper_ball": "[0.56301180850020850897328086860105239820317244037792 +/- 5.72e-52]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "2/3",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-3/64"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "1/3"
+          ],
+          "id": "51ffda0e5c771a8495893dd85e760e25e62348783ffbace77b65c20038a5c6c1",
+          "origins": [
+            "learned_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "97/16",
+            "unrounded_constant_ball": "[6.06241871186055619323218349838978697983091557 +/- 2.90e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "51ffda0e5c771a8495893dd85e760e25e62348783ffbace77b65c20038a5c6c1",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "213/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -1.4645004270547475,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "213/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.63532137093063356707992115042385583136851998 +/- 3.26e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[113.647733989523833255421506327687012633041433 +/- 3.03e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[110.874870684490441036561354439644242875558208 +/- 2.96e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "31/24",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[4.57075942409193760214354885890164551169545460 +/- 2.93e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 113.64773398952383,
+          "id": "086a6a7adfe3ee76928215c9b323c97399105e5188fce91fffb8472598fe09a6",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "086a6a7adfe3ee76928215c9b323c97399105e5188fce91fffb8472598fe09a6",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "086a6a7adfe3ee76928215c9b323c97399105e5188fce91fffb8472598fe09a6",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 7,
+        "maximum_ratio_upper_ball": "[0.62732531516052415687414902149707850377972935693380 +/- 4.31e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-1/64"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "0"
+          ],
+          "id": "4cdf4010d529548dc1dde48956560a7a80dfea627fe225dfca030e447d884b0c",
+          "origins": [
+            "learned_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "3081/512",
+            "unrounded_constant_ball": "[6.01733449183277608675218585210847785053633288 +/- 1.05e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "4cdf4010d529548dc1dde48956560a7a80dfea627fe225dfca030e447d884b0c",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "237/1024",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -0.4504475208271596,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "237/1024",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.59023715090285346059992350414254670207393730 +/- 2.82e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[115.141640678295812327395644247825418143708130 +/- 5.61e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[112.368777373262420108535492359782648386224905 +/- 5.54e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "13/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[3.96609118254168480425432640355534932767889152 +/- 1.66e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 115.14164067829581,
+          "id": "971b716adcc17288fdd7c6861ae3b9b35837b6db2a978d1fc38c441a1660b0f2",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "971b716adcc17288fdd7c6861ae3b9b35837b6db2a978d1fc38c441a1660b0f2",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "971b716adcc17288fdd7c6861ae3b9b35837b6db2a978d1fc38c441a1660b0f2",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 7,
+        "maximum_ratio_upper_ball": "[0.55614056251198898118644533158760515111438305952935 +/- 2.51e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "3/2",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "0"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "-1/2"
+          ],
+          "id": "d73f763c70035ff256e4bbe8d0a60b90261030db1cef10f38a2f5bc64bfd77ad",
+          "origins": [
+            "leading_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6139/1024",
+            "unrounded_constant_ball": "[5.99479238181888603351218702896782328588904154 +/- 2.00e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.231984111716199321909817550407647394307231753 +/- 6.42e-47]",
+            "semantic_digest": "d73f763c70035ff256e4bbe8d0a60b90261030db1cef10f38a2f5bc64bfd77ad",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "d73f763c70035ff256e4bbe8d0a60b90261030db1cef10f38a2f5bc64bfd77ad",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "135/512",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.02179666687482562,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "135/512",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.56769504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[118.504612844258425483863778340370073358861174 +/- 4.14e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[115.731749539225033265003626452327303601377949 +/- 4.07e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "17/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[3.58757974096049676925916534702783864188254470 +/- 4.00e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 118.50461284425843,
+          "id": "72e41afc01772d0a450dcba816519945031bdd22c1bcfcc32f38deba7cf4e68c",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "72e41afc01772d0a450dcba816519945031bdd22c1bcfcc32f38deba7cf4e68c",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "72e41afc01772d0a450dcba816519945031bdd22c1bcfcc32f38deba7cf4e68c",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.52169817860150467840970252873733808659327457161529 +/- 1.84e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/3",
+          "coefficients": [
+            "0",
+            "0",
+            "1"
+          ],
+          "normalizers": [
+            "0",
+            "0",
+            "1"
+          ],
+          "leading_index": 2,
+          "increment_shift": "2/3",
+          "leading_shift": "2/3",
+          "normalizer_exponents": [
+            "1",
+            "2/3",
+            "1/3"
+          ],
+          "id": "01caf0147620b6d0ba14eec62a9fd162fee18f53955d28f77852896f89a6823f",
+          "origins": [
+            "coupled_normalizer",
+            "leading_normalizer",
+            "monomial"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 2,
+            "bernstein_coefficients": [
+              "0",
+              "0",
+              "1"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1/3",
+            "log_power": "0",
+            "constant": "16863/1024",
+            "unrounded_constant_ball": "[16.4670113651466838918191403042481594748463261 +/- 1.40e-44]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.252301570138854062265940563239495417516029163 +/- 2.59e-46]",
+            "semantic_digest": "01caf0147620b6d0ba14eec62a9fd162fee18f53955d28f77852896f89a6823f",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "01caf0147620b6d0ba14eec62a9fd162fee18f53955d28f77852896f89a6823f",
+          "theta": "-1/6",
+          "log_power": "0",
+          "constant": "37/64",
+          "offset": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.252301570138854062265940563239495417516029163 +/- 2.59e-46]",
+            "semantic_digest": "01caf0147620b6d0ba14eec62a9fd162fee18f53955d28f77852896f89a6823f",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          },
+          "observed_growth_slope": -1.2168795673002795,
+          "transfer": {
+            "theta": "-1/6",
+            "log_power": "0",
+            "constant": "37/64",
+            "offset": {
+              "kind": "Mellin_finite_part_at_zero",
+              "value_ball": "[-0.252301570138854062265940563239495417516029163 +/- 2.59e-46]",
+              "semantic_digest": "01caf0147620b6d0ba14eec62a9fd162fee18f53955d28f77852896f89a6823f",
+              "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+            },
+            "output_mellin_exponent": "-1/6",
+            "leading_shift_recovery_cost": "2/3",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.12246204830937298143353304967917951623241111 +/- 6.15e-46]",
+            "increment_shift": "2/3",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.44269504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[200.683002822055720829444072452166845833169572 +/- 3.72e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[197.910139517022328610583920564124076075686347 +/- 3.65e-43]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 200.68300282205573,
+          "id": "a446d4c6040e4b4da7a87e73a2a275def2ce79bbb81332e5a289e81af40f55c0",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "a446d4c6040e4b4da7a87e73a2a275def2ce79bbb81332e5a289e81af40f55c0",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "a446d4c6040e4b4da7a87e73a2a275def2ce79bbb81332e5a289e81af40f55c0",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 3,
+        "maximum_ratio_upper_ball": "[0.49948267929892835993067932800151151006342665650029 +/- 2.79e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "2/3",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "0"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "1/3"
+          ],
+          "id": "ce521cee880bc4106ab3091040a68716412c4bc9d707311872875c09b60305ea",
+          "origins": [
+            "leading_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6139/1024",
+            "unrounded_constant_ball": "[5.99479238181888603351218702896782328588904154 +/- 2.00e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "ce521cee880bc4106ab3091040a68716412c4bc9d707311872875c09b60305ea",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "63/256",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.30595941962376744,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "63/256",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.56769504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[116.378674552129107355670321592289110987327108 +/- 5.23e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[113.605811247095715136810169704246341229843883 +/- 5.30e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "31/24",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[4.57075942409193760214354885890164551169545460 +/- 2.93e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 116.37867455212911,
+          "id": "6b2a682a3f3421474c201d13dfa87c8f7dc271447f50c2071d4211216e487f94",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "6b2a682a3f3421474c201d13dfa87c8f7dc271447f50c2071d4211216e487f94",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "6b2a682a3f3421474c201d13dfa87c8f7dc271447f50c2071d4211216e487f94",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 7,
+        "maximum_ratio_upper_ball": "[0.64241665687324186315959886950783784044493130601808 +/- 3.40e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "3/2",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "1/16"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "-1/2"
+          ],
+          "id": "0e58e6df946f0137926fc290afc3e5a94ddfc6a86fb18d5808977cc1c8df3afb",
+          "origins": [
+            "learned_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6231/1024",
+            "unrounded_constant_ball": "[6.08496082187444624647218232153044154447820691 +/- 1.44e-46]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.181911608602653613859767396036041611802929617 +/- 1.55e-46]",
+            "semantic_digest": "0e58e6df946f0137926fc290afc3e5a94ddfc6a86fb18d5808977cc1c8df3afb",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "0e58e6df946f0137926fc290afc3e5a94ddfc6a86fb18d5808977cc1c8df3afb",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "127/512",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": -0.09646945168451383,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "127/512",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.65786348094452362031991997356451039601581133 +/- 3.72e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[119.764176190369385380146334952327935368203947 +/- 1.26e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[116.991312885335993161286183064285165610720722 +/- 1.33e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "17/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[3.58757974096049676925916534702783864188254470 +/- 4.00e-45]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 119.76417619036938,
+          "id": "0f5e62131002aefe70b11631462685867157c24b65db6a00409383422b77b5c8",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "0f5e62131002aefe70b11631462685867157c24b65db6a00409383422b77b5c8",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "0f5e62131002aefe70b11631462685867157c24b65db6a00409383422b77b5c8",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.51507540657088014560047234100060881222511363888418 +/- 4.11e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/2",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "0"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "1/2"
+          ],
+          "id": "90f8784c5f59f3a398c6bcd48003a87bd165ed812cfe5c18eacb733ac8f96788",
+          "origins": [
+            "leading_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "6139/1024",
+            "unrounded_constant_ball": "[5.99479238181888603351218702896782328588904154 +/- 2.00e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": null
+        },
+        "candidate": {
+          "program_id": "90f8784c5f59f3a398c6bcd48003a87bd165ed812cfe5c18eacb733ac8f96788",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "77/256",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.6412350989942972,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "77/256",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.56769504088896340735992468100189213742664595 +/- 4.16e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[123.479913555478150640661998566329722730619558 +/- 4.61e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[120.707050250444758421801846678286952973136333 +/- 4.68e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "9/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[5.33298000930973004308506801790830562117282164 +/- 2.59e-46]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 123.47991355547815,
+          "id": "97f829deff64c25a6894096c111227c5df369258a29d92c8281ef4231a0f3cdc",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "97f829deff64c25a6894096c111227c5df369258a29d92c8281ef4231a0f3cdc",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "97f829deff64c25a6894096c111227c5df369258a29d92c8281ef4231a0f3cdc",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 7,
+        "maximum_ratio_upper_ball": "[0.57753356829412391350318548095807513124294017246227 +/- 3.86e-51]"
+      }
+    },
+    {
+      "source_candidate": {
+        "program": {
+          "channel": "weighted",
+          "delta": "1/2",
+          "coefficients": [
+            "1",
+            "-1/8"
+          ],
+          "normalizers": [
+            "1",
+            "-1/8"
+          ],
+          "leading_index": 0,
+          "increment_shift": "0",
+          "leading_shift": "0",
+          "normalizer_exponents": [
+            "1",
+            "1/2"
+          ],
+          "id": "22d493c3542dab1e59e2a0c5d587481e9d77bf58633e37922f59b6f808d17ebe",
+          "origins": [
+            "coupled_normalizer",
+            "random"
+          ],
+          "coefficient_range_certificate": {
+            "status": "proved_between_zero_and_one",
+            "degree": 1,
+            "bernstein_coefficients": [
+              "1",
+              "7/8"
+            ],
+            "domain": "every real z in [0,1]",
+            "strictly_positive_in_open_interval": true
+          },
+          "weak_uniform_bound": {
+            "status": "proved_all_scale_signed_output_bound_by_absolute_majorants",
+            "theta": "1",
+            "log_power": "0",
+            "constant": "1581/256",
+            "unrounded_constant_ball": "[6.17512926193000645943217761409305980306737228 +/- 2.28e-45]",
+            "domain": "every real x>=1",
+            "ordinary_zeta_exponent_after_shift_recovery": "1",
+            "uses_signed_cancellation": false,
+            "RH_sufficient": false,
+            "RH_proved": false
+          },
+          "exact_center": {
+            "kind": "Mellin_finite_part_at_zero",
+            "value_ball": "[-0.317603050223934316350006359820124012007943577 +/- 3.41e-47]",
+            "semantic_digest": "22d493c3542dab1e59e2a0c5d587481e9d77bf58633e37922f59b6f808d17ebe",
+            "semantics": "exact real expression determined by the compiled Mellin finite part; the ball is an enclosure"
+          }
+        },
+        "candidate": {
+          "program_id": "22d493c3542dab1e59e2a0c5d587481e9d77bf58633e37922f59b6f808d17ebe",
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "147/512",
+          "offset": {
+            "kind": "rational",
+            "value": "0"
+          },
+          "observed_growth_slope": 0.21758225085465874,
+          "transfer": {
+            "theta": "1/2",
+            "log_power": "0",
+            "constant": "147/512",
+            "offset": {
+              "kind": "rational",
+              "value": "0"
+            },
+            "output_mellin_exponent": "1/2",
+            "leading_shift_recovery_cost": "0",
+            "ordinary_zeta_exponent": "1/2",
+            "integer_to_real_bound_factor_ball": "[1.00000000000000000000000000000000000000000000 +/- 1e-49]",
+            "increment_shift": "0",
+            "increment_log_power": 0,
+            "uncancelled_pole_residues_in_output_half_plane": [],
+            "increment_cost_ball": "[2.74803192100008383327991526612712865460497670 +/- 1.58e-45]",
+            "ordinary_zero_recovery": "finite right-shift multiplicity chain; arbitrary isolated shifted-zero coincidences allowed",
+            "leading_coefficient": "1",
+            "all_height_nonvanishing_required": false,
+            "RH_sufficient_if_uniform": true,
+            "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+            "uniform_signed_premise_proved": false,
+            "RH_proved": false
+          },
+          "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+          "cost_sigma": "5/8",
+          "cost_height": "16",
+          "full_recovery_cost": {
+            "log_reciprocal_zeta_bound_ball": "[127.455174286232813535095486296201380009437813 +/- 2.80e-43]",
+            "recurrence_nodes": [
+              {
+                "shift_index": 0,
+                "real_part": "5/8",
+                "kind": "charged_shift_recurrence",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[124.682310981199421316235334408158610251954588 +/- 2.87e-43]"
+              },
+              {
+                "shift_index": 1,
+                "real_part": "9/8",
+                "kind": "terminal_Euler_half_plane",
+                "transform": "log_F",
+                "conditional_transform_bound_ball": "[5.33298000930973004308506801790830562117282164 +/- 2.59e-46]"
+              }
+            ],
+            "terminal_sigma": "9/8",
+            "full_shift_path_cost_charged": true,
+            "horizontal_integration_width": "0",
+            "scope": "conditional fixed-point reciprocal reconstruction bound, not a proved signed premise"
+          },
+          "log_reciprocal_cost": 127.45517428623282,
+          "id": "dd7b06b1cdc8f617f9c2d01da00c982a9beba14d58baa29702e01320cb90fafb",
+          "validation_failures": [],
+          "validation_unresolved": []
+        },
+        "final_outcome": {
+          "candidate_id": "dd7b06b1cdc8f617f9c2d01da00c982a9beba14d58baa29702e01320cb90fafb",
+          "point_comparisons": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "15": "pass",
+            "6001": "pass",
+            "6302": "pass",
+            "7496": "pass",
+            "20560": "pass",
+            "28769": "pass",
+            "32160": "pass",
+            "41120": "pass",
+            "57538": "pass",
+            "64320": "pass"
+          },
+          "finite_points_passed": true,
+          "reselected": false,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "coverage": {
+        "candidate_id": "dd7b06b1cdc8f617f9c2d01da00c982a9beba14d58baa29702e01320cb90fafb",
+        "analytic_status": "RH_sufficient_prime_twist_obligation_missing_uniform_signed_proof",
+        "comparisons": 131072,
+        "failures": 0,
+        "unresolved": 0,
+        "first_failure": null,
+        "first_unresolved": null,
+        "maximum_ratio_point": 20,
+        "maximum_ratio_upper_ball": "[0.52827370576756300193060926516973920803033235055517 +/- 3.19e-51]"
+      }
+    }
+  ],
+  "candidate_reselection_or_refitting": false,
+  "fresh_discovery_run": false,
+  "cumulative_prefixes_overlap_development_data": true,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "b7c9008c2ea7ca79ef1afaeaf6892fa64c61c1d333721f5aab0a5d71d90064d9"
+}

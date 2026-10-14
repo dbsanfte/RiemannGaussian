@@ -1,0 +1,67 @@
+Primitive-state balanced cone search001 preregistered scope
+
+One warmseed: publication020 final_z_mp over the EXACT publication018 basecenter
+and publication020 positiveD. The exact535bitfree seed remains base+D*z; do not
+convert it to a269bitcenter or reround final sums. Publication017 source/rank779,
+445free coordinates,1224projected and1957original coordinates are unchanged.
+Reuse all445 unverified columnnorm records and strictlypositive scales; no column
+responses, new elimination/rank/support/clipping/precision retry or solver.
+
+F=max(p_scalar/b_scalar,p_C/b_C,p_H/b_H), eachp half squared cone distance.
+Fixedb=max(initial numericalpenalty export,2^-40), neverupdated. Balanced
+objective zero set equals the finite cone; numericalmerit/gradients/normalizers
+are not certified. Initial b-active blocks normalize to1; below-floor blocks
+may normalize below1. Subsequent envelope descent need not decrease everyblock.
+80decimaldigits/269bits affine/free/model arithmetic; binary64 PSD eigensolves
+and negativeparts. Warmforward reference is exact020 projectedpoint, with1e-40
+relative affinecalibration plus scaledadjoint pairing. No actual affinecalibration
+or research evaluation outside the jointly metered frozen job.
+
+Eight weighted-curvature powersteps then reciprocalstep clamp2^-900..2^900.
+At most96 iterations, threealpha/2 Armijo trials, coefficient1/8; eachtrial solves
+its NEW three-block numerical proximal affine maxmodel. Enumeratevertices,
+threeedges, andinterior2x2; singular/nearsingular interior is only a numerical
+boundary proposal, never a rankfact. Interior relative determinant tolerance
+2^-160; negative curvature beyond declared rules givesUNKNOWN. Feasiblelambda
+exports are exactdyadic simplexweights on2^-240grid preserving edgefaces;
+interior floorsfirsttwo and usesexactcomplement. Re-score afterquantization;
+deterministic firsttie. Exportallfaces,lambda,aggregate direction,norm,model
+scores,gap andKKTdiagnostics. No certified modeloptimum or blockgradients.
+
+Rawgap=max(q_i)-sum(lambda_i*q_i), q_i=r_i+g_i dotd.
+Consistency abs(rawgap)<=1e-40*max(1,abs r,abs q,alpha*||gbar||²) is mandatory;
+excess ->UNKNOWN with no retry. The unitfloor weakens relativeaccuracy for tiny
+objectives; it is numericalconsistency, not theorem/infeasibility evidence.
+Actualtrial gate F_new<=F_old-||d||²/(8alpha). Initial zero numericaldefect or
+numericalmodelstationarity still require all ORIGINAL exact endpoint gates.
+Only threeaccepted adjoints recomputed; trialnegativeparts reused without
+second eigensolve. Reserve worstthreefulltrials/acceptedthreeadjoints and bounded
+trace/finalexport before starting eachiteration. Budget_stop exports last COMPLETE
+point; unexpectedmidstepcaps UNKNOWN. No convergence claim from budgetstop.
+
+Joint450000000 workunits includes requiredpreflight/freeze/licensing, fixed
+synthetic tests, worker, independentworkercheck and finalarchive audit. Full25m
+finalaudit reservation upfront; workerceiling425m. Conservative stages map50m,
+warmsetup5m, proposal130m, endpoint20m; producer counters never refine allocations.
+Binding reserve4*completeinputsizes +12*sourceclosuresizes +1048576 metadata
++20000000 explicit synthetic_test_work_reserve+1 covers
+repeated hash/read/decode, old/new licenseloaders, test/preflight work, sourceAST/
+hash and boundedoutputIO/serialization/progress. Independentworkerchecker receives
+remainingoperations after honest perartifact caps +sourcecells+1; exact check
+reserve only refined after its verified result. Finalaudit metered<=25m and
+workerreserved excludingpending25m plusactualaudit <=450m. Otherwise UNKNOWN.
+
+Caps map131072,warm262144,proposal16777216,endpoint1048576,check65536bytes;
+protocol/job/progress65536. Cache128MiB/tapes32MiB bound immutable inputs.
+Source/endpoint4096bits, reusednorm8192bits, boundedtemporary16385bits, scaleexp
+abs<=900.4mprivate/livecells,20mfill,60mauditcells. No dense nullspace/storage.
+Oneisolated worker6GiB,total6GiB (within authorized16GiB),one numericalthread;
+1800s cooperative including finalvalidation,3600s external; prescoretests300s.
+All priorpublished/frozen files immutable. No research execution before freeze.
+Initialstep only decreases after its weighted global estimate; small-normalizer
+blocks can make it conservative. No stepgrowth/globalconvergence guarantee.
+Near-parallel Gram subtraction can return UNKNOWN; no hidden alternate solver.
+All exact/global/RH/infeasibility/MU/modeloptimality/gradient certification flags
+stayFalse. Full5641 exactequations,1597 signs and three exactPSD blocks retain
+sole finite feasibility gates; positive candidate still needs later universal
+identity/analytic work.

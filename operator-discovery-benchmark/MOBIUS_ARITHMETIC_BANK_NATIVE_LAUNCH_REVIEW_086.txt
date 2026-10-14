@@ -1,0 +1,57 @@
+NEW086 confirmed import-order correction and independent launch regression
+
+The original scientific launch was an implementation failure: the full prior
+runner import chain reset OPENBLAS_NUM_THREADS and OMP_NUM_THREADS to2 after
+the086 entrypoint had set them to1. Initial witnesses were therefore rejected
+before MILP. This is neither arithmetic evidence nor a scientific rejection.
+The independent fresh-process baseline reproduces the import-order drift,
+without evaluating a source model or executing a solver. Its preserved entry
+is in mobius_arithmetic_bank_audit_086_development.jsonl.
+
+The earlier prospective audit covered metadata, direct-byte preservation,
+tiny exact arithmetic and fault orchestration, but did not cover the actual
+fresh-process full-import/native state. Its PASS did not certify that omitted
+premise. The aborted attempt must remain preserved with its failed guards,
+no bound artifacts and no validation draw. It must not be silently replaced.
+
+Independent corrected-launch regression: test_mobius_arithmetic_launch_086.py,
+supported by audit_mobius_arithmetic_native_launch_086.py. The immutable-for-
+launch development record is mobius_arithmetic_launch_086_development.json.
+Both tests PASS on their first execution,2.243 seconds total. Each test uses
+a fresh interpreter and imports the complete corrected wrapper/prior chain.
+
+The full-spawn test invokes the actual inherited pool launcher, three spawned
+workers, with tiny tasks synchronized by ready files so three distinct PIDs
+must execute. Each worker imports the corrected wrapper, checks environment
+and actual threadpoolctl library state, then constructs only tiny parent59
+geometry and performs four real HiGHS MILP proposals. All12 proposals complete
+with solver_status0 and exact compatible certificates. All12 lower values are
+independently admitted against the complete tiny residual and arithmetic bank.
+No mocked solver or numerical result is accepted as an exact arithmetic proof.
+Every worker repeats loaded-pool checks after the real solver calls.
+
+The corrected wrapper's import-time persistent threadpool limiter is exercised
+in both the fresh parent and spawned workers. The independent checks require
+actual loaded BLAS libraries and every loaded BLAS/OpenMP pool to report one
+thread, as well as the correct environment. Thus merely setting environment
+strings after native libraries were loaded cannot satisfy this regression.
+
+A separate fresh-process fault test sets OMP_NUM_THREADS=2 and verifies the
+wrapper guard rejects it. With the environment restored, it sets the actual
+loaded native pools to2 through threadpoolctl and separately verifies rejection.
+The test restores both to1 and verifies the native state again. Direct-byte
+preservation independently checks686 older plus17 aborted086 sources (703),
+and the wrapper also binds its archived abort manifest and preserved artifacts.
+
+The regression invokes neither RUN.main nor real learn_task/upper_task. It
+computes no prospective fresh draw, evaluates no scientific-scale geometry,
+queries no unknown Mobius signs and changes no frozen source. Exact costs and
+per-attempt diagnostics are retained in complete worker reports/admissions;
+the actual inherited pool's elapsed/RSS guards cover the spawned test launch.
+The test helper is a real source dependency and must be included in corrected-
+launch source provenance, not only the test driver/JSON receipt.
+
+Scope: the corrected fresh import/spawn/tiny-MILP native premise is admitted.
+Scientific trajectories, changed banks, scientific upper/lower certificates,
+actual fresh draw and report aggregates remain for the separate saved-artifact
+audit. No all-scale arithmetic bound or RH claim follows from this regression.

@@ -1,0 +1,250 @@
+DETECTOR-SELECTED COMPENSATORS: SIGNED REDUCTION AND REMAINING ARITHMETIC LEMMA
+
+Scope and inputs
+Read only the already completed stage037 search.json, interval_audit.json and
+conditional_verification.json in coupled-scale-bound-results/pilot-001, using
+the previously checked035 source/state identities. No arithmetic archive, new
+source value, search, test, old study, fit or hash was evaluated. Frozen stage037
+code and results remain unchanged. This is a mathematical review, not a new
+executable certificate publication. Full core/RH and every uniform candidate
+recurrence remain OPEN.
+
+Conclusion
+The two selected candidates reduce to exact global correlations between the
+COMPLETE source prefix and explicit negative prime-count profiles. All their
+helper energies tend to zero unconditionally; in fact every selected nonempty
+stage037 helper has this property. Thus they cannot persistently cancel a
+power-growing full endpoint. This does not refute an actual-source recurrence:
+small endpoint corrections may still change finite or all-scale increments.
+No admitted arithmetic provider currently bounds the complete signed defect.
+The precise remaining lemma is displayed below, without omitting the child
+cutoff, earlier prefixes, units, or any helper/source cross.
+
+1. Exact source states, including their units
+
+Write beta=9/2, R=R_u, u=1/3 and a=p^(-u). The complete original source is
+ f=beta*nu0-beta*nu1-R*nu2-beta*mu.
+Here all stars used to define the modes are DIRICHLET convolutions:
+ nu0=K*(mu*mu), nu1=K*(mu*mu_(2/3)), nu2=K*mu_(2/3), K(n)=n^(-u).
+The accepted035 state programs imply
+ h1=beta*nu0-(beta/2)*nu1-(beta/2)*mu,
+ h2=beta*nu0-beta*nu1-R*nu2=f+beta*mu.
+Their units are h1(1)=0, h2(1)=-R. The full source unit is -beta-R.
+
+The complete local prime laws give
+ h1(p)=-beta+(beta/2)*a+(beta/2)*a^2,
+ h2(p)=-beta-R*a+(beta+R)*a^2
+       =h1(p)-(R+beta/2)*(a-a^2).
+For every prime these are strictly negative, since 0<a<1 and R>0.
+In particular |h1(p)|<=beta. This is an exact source-specific polynomial
+fact, not a sign inferred from finite observations. The helper definition is
+always the explicit unit+prime profile, not a full rough restriction outside
+its prime-only support range.
+
+For real t define Pi_s(t;y)=sum_(y<p<=t, p prime)p^(-s), with an empty sum
+when t<=y. Define the profiles to be zero for t<1. For t>=1,
+ A1(t;y)=-beta*Pi_0+(beta/2)*Pi_u+(beta/2)*Pi_(2u),
+ A2(t;y)=-R-beta*Pi_0-R*Pi_u+(beta+R)*Pi_(2u).
+Thus A2(t;y)=A1(t;y)-R-(R+beta/2)*(Pi_u-Pi_(2u)).
+The -R is not an optional drift. It contributes at the initial block and to
+every changing-scale helper coefficient.
+
+2. The actually selected definitions and heads
+
+Set y_X=ceil(sqrt(2X)) and F(n)=sum_(k<=n)f(k), including all earlier prefixes.
+The detector selected, before its validation/final partitions were evaluated,
+
+ H02_X(n)=(1/2)X^(-9/14)A1(n;y_X)
+          +(1/2)X^(-1/2)A1(floor(n/3);y_X),
+ G02_X(n)=F(n)+H02_X(n), C02=1/64;
+
+ H03_X(n)=(1/2)X^(-5/8)A1(n;y_X)
+          +(1/2)X^(-7/10)A2(n;y_X),
+ G03_X(n)=F(n)+H03_X(n), C03=1/64.
+
+Both helpers are nonpositive at every evaluated integer. Their effect on
+energy has a favorable sign only when the full source prefix has the needed
+correlation; F has not been proved to have that sign or that correlation.
+At X=1,n=1, H02=0, so G02=-beta-R, squared head ceiling361/4 over R in[1,5].
+For03 the A2 unit gives G03=-beta-3R/2, squared head ceiling144. These agree
+with the source-bound conditional verification. They must not be replaced
+by a zero initialization.
+
+3. An unconditional new helper-decay observation, proved analytically
+
+Define E_H(X)=X^-2 sum_(X<=n<2X)|H_X(n)|^2. The already admitted helper prices
+are C1=324 for A1 and C2=2304 for A2, with prefix exponent1. Keeping the scale
+powers, rather than replacing them by their worst uniform constant, proves
+
+ E_H03(X)<=162*X^(-1/4)+1152*X^(-2/5), all integer X>=1.
+
+For02 the first term similarly contributes at most162*X^(-2/7) after the
+two-term square inequality. Its second term is at the paid power boundary,
+but the actual prime-only support supplies a logarithmic gain. Here is an
+elementary proof, requiring no PNT or short-interval prime theorem.
+
+Let theta(t)=sum_(p<=t)log p. For integer N>=3 put m=ceil(N/2). Every prime
+m<p<=N divides binom(2m,m); hence
+ theta(N)-theta(m)<=log binom(2m,m)<=2m*log2.
+Induction, with N=1,2 checked directly, gives theta(N)<=4N*log2:
+ theta(N)<=6m*log2<=3(N+1)*log2<=4N*log2.
+Therefore theta(t)<=4t*log2 for every real t>=1.
+For p>y_X, log p>=log y_X>=(1/2)log(2X), so for every t<=2X,
+ # {y_X<p<=t} <=8*(log2)*t/log(2X).
+Empty intervals and t<1 are separately zero; no finite head is omitted.
+
+Since |h1(p)|<=beta and h1 has unit0, for every X<=n<2X,
+ |(1/2)X^(-1/2)A1(floor(n/3);y_X)|
+ <=12*(log2)*X^(1/2)/log(2X).
+Its energy is at most144*(log2)^2/log(2X)^2. Consequently
+
+ E_H02(X)<=162*X^(-2/7)+288*(log2)^2/log(2X)^2,
+ for every integer X>=1.
+
+Both displayed bounds tend to zero. The same argument handles the other
+selected helpers:01 has E_H<=324*(log2)^2/log(2X)^2;04 has
+E_H<=81*X^(-2/257);05 has E_H<=324*X^(-2/257). These are source-bound
+analytical consequences, not numerical slopes. They have not been added to
+the frozen stage037 checker or reported as newly admitted executable proofs.
+
+4. What vanishing helpers do and do not establish
+
+For the normalized block inner product, the norm triangle inequality gives
+ |sqrt(E_G(X))-sqrt(E_F(X))|<=sqrt(E_H(X)) ->0.
+Thus a compensator with this decay cannot conceal a power-growing full
+endpoint. More precisely, if E_F(X_j) tends to infinity along a sequence,
+then E_G(X_j)/E_F(X_j) tends to1. This is conditional on such growth, not a
+proof that the actual E_F grows. It also does not exclude an inequality for
+increments of G: a correction small compared with endpoint energy can still
+change its scale differences.
+
+The exact relation is E_G=E_F+2<F,H>+E_H. Vanishing E_H does NOT imply
+<F,H> tends to zero without an independent bound on F. Cauchy gives only
+|<F,H>|<=sqrt(E_F*E_H). The generic coefficient estimate allows positive
+power for E_F; combined with the above decays it leaves a positive power for
+this covariance. Using the sought full-energy estimate to dispose of this
+cross would be circular. Even a subpower bound alone does not imply a
+logarithmically decaying cross for the boundary term in02.
+
+Both02/03 and the priced baseline have positive fitted C. If any of their
+uniform recurrences were proved, the present forcing provider would give the
+same log^4 growth class. Replacing1/16 by1/64 improves a conditional constant,
+not its power/logarithmic growth theorem. The17 finite checks establish no
+uniform recurrence. Conversely, no failed norm-only countermodel disproves
+the actual arithmetic recurrence.
+
+5. Exact global arithmetic correlations: no dropped history or units
+
+Put L=2X-1 and use the SAME cutoff y_X throughout each block. Define
+ Q_X(t)=sum_(max(X,t)<=n<=L)F(n), with zero when the lower endpoint exceeds L.
+For integer t this has the exact coefficient form
+ Q_X(t)=sum_(k=1..L) f(k)*(2X-max(X,t,k))_+.
+This formula retains f(1) and every coefficient before the block.
+
+Define source/profile correlations and profile Grams
+ T_(i,d)(X)=X^-2 sum_(n=X..L)F(n)*A_i(floor(n/d);y_X),
+ V_(i,d;j,e)(X)=X^-2 sum_(n=X..L)A_i(floor(n/d);y_X)*A_j(floor(n/e);y_X).
+Let u_i=h_i(1). Finite summation interchange gives exactly
+
+ T_(i,d)(X)=X^-2[ u_i Q_X(d)
+   +sum_(y_X<p<=L/d)h_i(p) Q_X(d*p) ].
+
+Define w_X(t)=(2X-max(X,t))_+. Then exactly
+ X^2 V_(i,d;j,e)=u_i*u_j*w_X(max(d,e))
+ +u_i sum_(y_X<q<=L/e)h_j(q)*w_X(max(d,e*q))
+ +u_j sum_(y_X<p<=L/d)h_i(p)*w_X(max(d*p,e))
+ +sum_(y_X<p<=L/d,y_X<q<=L/e)
+       h_i(p)h_j(q)*w_X(max(d*p,e*q)).
+
+There is NO condition p!=q and no coprimality condition on this Gram pair.
+The unit terms are particularly necessary for V involving state2. All these
+correlations are actual-source finite sums; they are not free PSD variables
+and not products of unrelated factor estimates.
+
+For02 write
+ U02_X=(1/2)X^(-9/14)T_(1,1)(X)+(1/2)X^(-1/2)T_(1,3)(X),
+ V02_X=(1/4)X^(-9/7)V_(1,1;1,1)
+       +(1/2)X^(-8/7)V_(1,1;1,3)+(1/4)X^(-1)V_(1,3;1,3).
+For03 write
+ U03_X=(1/2)X^(-5/8)T_(1,1)(X)+(1/2)X^(-7/10)T_(2,1)(X),
+ V03_X=(1/4)X^(-5/4)V_(1,1;1,1)
+       +(1/2)X^(-53/40)V_(1,1;2,1)+(1/4)X^(-7/5)V_(2,1;2,1).
+Every V on the right uses y_X. In both cases E_G(X)=E_F(X)+2U_X+V_X.
+
+6. The precise unproved source-correlated lemma
+
+With D(X)=X^-1 sum_(k=1..4X-1)f(k)^2, the selected recurrence is EXACTLY
+
+ E_F(2X)-E_F(X)+2[U_(2X)-U_X]+[V_(2X)-V_X] <= D(X)/64
+ for every dyadic integer X>=1.
+
+For02, 2[U_(2X)-U_X] is the sum of
+ (2X)^(-9/14)T_(1,1)(2X)-X^(-9/14)T_(1,1)(X), and
+ (2X)^(-1/2)T_(1,3)(2X)-X^(-1/2)T_(1,3)(X).
+For03 replace these by the5/8 state1,d1 and7/10 state2,d1 expressions.
+The exact V differences are given in Section5. Child quantities use the new
+cutoff y_(2X)=ceil(sqrt(4X)) and child block2X..4X-1. This is a transparent
+remaining lemma, not an independently paid correlation provider or a proof
+that the problem is easier. Bounding its full left side is the missing step.
+
+An unsigned bound on U alone cannot close this lemma: the E_F increment is
+still unpriced. A useful provider must bound the COMPLETE signed combination,
+or establish an independently controlled recurrence for its source coefficient
+kernel. Calling the right side a known forcing term does not pay the left.
+
+7. Exact parent/child cutoff transitions available to a proof compiler
+
+For one parent n set t=floor(n/d), v=floor((2n+epsilon)/d), epsilon=0,1,
+y=y_X and z=y_(2X). Since v>=t,
+ A_i(v;z)-A_i(t;y)
+ =u_i*(1_(v>=1)-1_(t>=1))
+  +sum_(max(z,t)<p<=v)h_i(p)
+  -sum_(y<p<=min(z,t))h_i(p).
+Empty ranges are zero. Both the entering primes and removed cutoff primes
+are required. The unit indicator change covers every d and early endpoint.
+The weighted transition is
+ (2X)^(-gamma)A_i(v;z)-X^(-gamma)A_i(t;y)
+ =X^(-gamma)[(2^(-gamma)-1)A_i(t;y)
+              +2^(-gamma)*(A_i(v;z)-A_i(t;y))].
+Changing X alone already produces a signed term; it is not just a new prime
+interval. For state2 its nonzero unit produces another explicit scale change.
+
+Let I_e(n)=sum_(n<k<=2n+e)f(k) and let J_e(n) be the complete weighted helper
+transition just displayed. Then G_(2X)(2n+e)=G_X(n)+I_e(n)+J_e(n).
+Writing W_e=I_e+J_e, the aligned defect numerator is
+ -2G_X(n)^2+2G_X(n)*(W_0+W_1)+W_0^2+W_1^2.
+Subtract4*C*X*sum_(k<=4X-1)f(k)^2 after summing the full block. This gives
+an exact starting form for a source-relation/PSD proof attempt. Dropping a
+W square or one odd/cutoff boundary would change the requested lemma.
+
+8. Actual global constraints versus the generic norm obstruction
+
+The modes satisfy the exact all-integer Dirichlet relations
+ nu0*d_2=K, nu1*(One*One_(2/3))=K,
+ nu2*One_(2/3)=K, mu*One=delta.
+Their prefix versions are complete floor sums: for example
+ sum_(d<=n)d_2(d) P_nu0(floor(n/d))=P_K(n).
+They retain the unit and every d<=n, including floor arguments near one.
+The035 basis change/recovery converts these into exact discovered-state
+constraints with its full constants. These constraints are meaningful next
+proof primitives, not new cancellation inequalities by themselves.
+
+The exact R normalization also cancels the critical2/3 residue in the full
+formal Dirichlet series:
+ beta/zeta(2/3)^2-beta/[zeta(2/3)zeta(4/3)]-R/zeta(4/3)=0.
+That supplied analytic cancellation does not bound a finite prefix remainder;
+no contour or ordinary moment convergence is licensed by this equality alone.
+
+The stage037 generic countermodel has the correct envelope and retained units
+but NOT these Euler/divisor/actual-zeta identities. It refutes only proof from
+coefficient and helper norm inequalities alone. It is not an arithmetic
+counterexample, nor an exclusion of a global-relation proof of02/03. An actual
+proof attempt should impose only independently replayed exact constraints and
+require a PSD/induction/endpoint certificate that pays the complete defect.
+
+Useful rigorous outcome of this review
+The new helper-decay bounds and exact signed correlation/cutoff reductions are
+unconditional analytical facts about the selected definitions. No complete
+uniform recurrence has been established, and no actual-source recurrence has
+been refuted. The main unresolved object is the full signed source correlation
+lemma in Section6, not another isolated prime-profile magnitude estimate.

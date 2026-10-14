@@ -1,0 +1,321 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "arithmetic_power_advantage": false,
+  "complete_geometries": 51,
+  "complete_thresholds": 249,
+  "development_operations": 6090162,
+  "elapsed_seconds": 21.72364655698766,
+  "finite_cube_bound_proved": false,
+  "formal_proof_assistant_verified": false,
+  "full_source_prefix_bound": [
+    {
+      "U_power": "1",
+      "X_power": "0",
+      "constant": "8",
+      "logU_degree": 0,
+      "logX_degree": 0
+    },
+    {
+      "U_power": "5/3",
+      "X_power": "2/3",
+      "constant": "2430",
+      "logU_degree": 0,
+      "logX_degree": 2
+    },
+    {
+      "U_power": "10/3",
+      "X_power": "1/3",
+      "constant": "81",
+      "logU_degree": 0,
+      "logX_degree": 1
+    },
+    {
+      "U_power": "5",
+      "X_power": "0",
+      "constant": "8",
+      "logU_degree": 0,
+      "logX_degree": 0
+    }
+  ],
+  "inclusive_operations": 14026502,
+  "inherited_source_bindings": 144,
+  "main_peak_rss_kib": 704032,
+  "normalizations": 51,
+  "original_global_Mellin_bound_proved": false,
+  "physical_centered_transfer_proved": true,
+  "raw_prefix_energy_N_power": "17/36",
+  "runtime_model_calls": 0,
+  "selected_generic_transfer": {
+    "alpha": "1/4",
+    "analytic_moment_not_inferred_from_local_identity": true,
+    "base": "T",
+    "beta": "3/4",
+    "certificate": {
+      "solution": [
+        {
+          "coefficient": "3",
+          "column": 0
+        },
+        {
+          "coefficient": "-2",
+          "column": 1
+        },
+        {
+          "coefficient": "-1",
+          "column": 2
+        },
+        {
+          "coefficient": "3",
+          "column": 5
+        },
+        {
+          "coefficient": "3",
+          "column": 7
+        }
+      ],
+      "status": "feasible"
+    },
+    "coefficient": "3",
+    "column": [
+      {
+        "key": [
+          "E",
+          "T",
+          "T"
+        ],
+        "value": "1"
+      },
+      {
+        "key": [
+          "R",
+          "T",
+          "T"
+        ],
+        "value": "-1"
+      }
+    ],
+    "effective_short_cutoff": "1/4",
+    "moment_defect": "A(theta)^p*J(theta)*(E(theta)^2+E(theta)*R(theta)+R(theta)^2-3*S(theta)^2)",
+    "normalized_error_energy": [
+      {
+        "N_power": "-7/36",
+        "constant": "5509980288",
+        "log_degree": 8
+      },
+      {
+        "N_power": "-3/4",
+        "constant": "34949449728",
+        "log_degree": 4
+      }
+    ],
+    "subcritical_padding": true,
+    "support_certificates": [
+      {
+        "multiplier": [
+          "E"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "R"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "T"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 3,
+        "support_power": "9/4",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "E"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [
+          "R"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [
+          "T"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 2,
+        "support_power": "7/4",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 1,
+        "support_power": "5/4",
+        "t_tail_power": 2
+      }
+    ]
+  },
+  "selected_prefix_route": 0,
+  "selected_transfer": {
+    "alpha": "1/4",
+    "analytic_moment_not_inferred_from_local_identity": true,
+    "base": "T",
+    "beta": "3/4",
+    "certificate": {
+      "solution": [
+        {
+          "coefficient": "3",
+          "column": 0
+        },
+        {
+          "coefficient": "-2",
+          "column": 1
+        },
+        {
+          "coefficient": "-1",
+          "column": 2
+        },
+        {
+          "coefficient": "3",
+          "column": 5
+        },
+        {
+          "coefficient": "3",
+          "column": 7
+        }
+      ],
+      "status": "feasible"
+    },
+    "coefficient": "3",
+    "column": [
+      {
+        "key": [
+          "E",
+          "T",
+          "T"
+        ],
+        "value": "1"
+      },
+      {
+        "key": [
+          "R",
+          "T",
+          "T"
+        ],
+        "value": "-1"
+      }
+    ],
+    "effective_short_cutoff": "1/4",
+    "moment_defect": "A(theta)^p*J(theta)*(E(theta)^2+E(theta)*R(theta)+R(theta)^2-3*S(theta)^2)",
+    "normalized_error_energy": [
+      {
+        "N_power": "-7/36",
+        "constant": "5509980288",
+        "log_degree": 4
+      },
+      {
+        "N_power": "-3/4",
+        "constant": "23702740992",
+        "log_degree": 0
+      }
+    ],
+    "subcritical_padding": true,
+    "support_certificates": [
+      {
+        "multiplier": [
+          "E"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "R"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "T"
+        ],
+        "r_tail_power": 2,
+        "support_power": "3/2",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 3,
+        "support_power": "9/4",
+        "t_tail_power": 0
+      },
+      {
+        "multiplier": [
+          "E"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [
+          "R"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [
+          "T"
+        ],
+        "r_tail_power": 1,
+        "support_power": "1",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 2,
+        "support_power": "7/4",
+        "t_tail_power": 1
+      },
+      {
+        "multiplier": [],
+        "r_tail_power": 1,
+        "support_power": "5/4",
+        "t_tail_power": 2
+      }
+    ]
+  },
+  "status": "COMPLETE_CONVOLUTION_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 7936340,
+  "subcritical_transfer_candidates": 11,
+  "transfer_trials": 102,
+  "whole_signed_bound_proved": false
+}

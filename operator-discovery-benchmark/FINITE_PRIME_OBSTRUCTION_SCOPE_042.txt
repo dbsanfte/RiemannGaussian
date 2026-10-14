@@ -1,0 +1,131 @@
+FINITE REGISTERED-PRIME OBSTRUCTION 042: SCOPE AND INDEPENDENT PROOF
+
+This is a negative capability calibration for a finite-prime-only proof
+language. It is NOT a counterexample satisfying the complete041 source
+binding, NOT an actual Möbius-source refutation, and NOT a refutation of RH.
+No arithmetic coefficient arrays, previous studies or frozen sources are used.
+The only numerical premise admitted is the independently enclosed analytic
+scalar kappa, not a coefficient observation or a fitted growth constant.
+
+1. A globally specified countermodel with all registered valuations
+
+Fix a finite set P of checked primes, 0<r<1/2 rational, theta=1-r, integer q>=2.
+Put v_p=p^-r in(0,1). Specify a multiplicative u by the complete local series
+ U_p(t)=(1-t)/(1-v_p*t) if p in P,
+ U_p(t)=1/(1-t) if p not in P.
+Thus u(1)=1, u(p^e)=(v_p-1)v_p^(e-1) for registered p,e>=1, and u(p^e)=1
+for unregistered p,e>=0. These exact formulas give |u(n)|<=1 for ALL n.
+All actual local b_r=power(-r)*mu laws and valuation recurrences hold at P.
+For each registered prime p not dividing q, c=delta-q delta_q convolved u
+has the usual c(pn)=p^-r c(n)-1_(p does not divide n)c(n) law. If q=p is a
+registered prime, its extra valuation-one crossing is also retained. For
+composite q, do not assert a prime-q local law; the exact global dilation is
+always c(n)=u(n)-q*1_(q divides n)u(n/q). In particular c(1)=1 and |c|<=q+1.
+
+No finite sample is promoted to a statement about unregistered primes.
+The first missing prime p0 explicitly violates the actual source law:
+ u(p0)=1, whereas b_r(p0)=p0^-r-1 lies strictly in(-1,0).
+The signed gap2-p0^-r is strictly greater than1. This is a formal exact
+witness independent of numerical coefficient evaluation.
+
+2. Absolute convolution and the complete floor cancellation
+
+Define h by u=One*h. At registered p its local series is
+ H_p(t)=(1-t)^2/(1-v_p*t),
+with coefficients1,v_p-2,(1-v_p)^2 v_p^(e-2) for e>=2. At unregistered primes
+h has only its unit coefficient. Therefore
+ sum_e |h(p^e)|=1+(2-v_p)+(1-v_p)=4-2v_p<4,
+ ||h||_1=product_(p in P)(4-2v_p)<=4^|P|.
+This includes the empty P case h=delta and is an absolutely convergent full
+infinite series. No tail is inferred from a finite valuation inspection.
+
+Let g=(delta-q delta_q)*h. Then ||g||_1<=(q+1)4^|P|=:L and
+ sum_(d>=1)g(d)/d=(1-q/q)*sum_(d>=1)h(d)/d=0.
+Both series converge absolutely. The cancellation is at exponent1, not an
+unproved ordinary critical Möbius moment. Since c=One*g, for EVERY real x>0,
+ P_c(x)=sum_(d<=x)g(d)floor(x/d)
+       =sum_(d>=1)g(d)[floor(x/d)-x/d].
+The second sum is absolutely convergent: each bracket has absolute value
+less than1. Every d>x is still present as -x/d. Hence |P_c(x)|<=L, including
+all subunit x, units and q-dilation terms. Omitting d>x would invalidate this
+particular floor cancellation and must be rejected by the verifier.
+
+3. Retained scalar and positive energy obstruction
+
+Independently license rational k>0 and integer K>=kappa, where
+ kappa=(1-q^r)/(theta*zeta(theta))>0.
+The checker evaluates this exact expression with256-bit Arb enclosures,
+rejecting a nonpositive or insufficiently certified k/K. It does not assert
+ordinary convergence of sum mu(n)n^-theta. Define the countermodel's
+stipulated centered quantity J(x)=P_c(x)-kappa*x^theta.
+It retains unit J(1)=1-kappa and centered increments bounded by q+1+K.
+
+Choose a dyadic integer N with k*N^theta>=2L. The producer may give the exact
+minimal dyadic power: for a=theta.numerator,b=theta.denominator and reduced
+ratio k/(2L)=u/v, verify u^b*2^(j*a)>=v^b and, when j>0, the previous power
+strictly fails. N=2^j. All powers and comparisons are exact integers; proof
+size/work caps may reject enormous certificates rather than use floats.
+A conservative square-dyadic threshold is another valid theorem, but is not
+a substitute when a certificate explicitly claims the minimal threshold.
+
+For every integer X>=N and n in[X,2X),
+ J(n)<=L-kappa*n^theta<=-(k/2)*n^theta.
+There are exactly X integer terms, so
+ E_J(X)=X^-2 sum_(X<=n<2X)J(n)^2
+       >=(k^2/4)*X^(2theta-1)=(k^2/4)*X^(1-2r).
+The power is positive. In particular the purported estimate for EVERY
+epsilon>0 is contradicted by epsilon=(1-2r)/2. This is an all-scale proof,
+not an observed finite discrepancy or an asymptotic fitted coefficient.
+
+The041 Haar/covariance implication uses only the retained centered-increment
+bound, unit, and its explicit all-integer covariance premise. Therefore this
+countermodel cannot satisfy ANY one of those rho<=1,C finite,delta>=0 programs
+uniformly: their separately proved recovery would imply bounded/logarithmic
+energy, contradicting this power lower bound. A late growth threshold by itself does not ensure finite tests pass. The
+precise finite-alias theorem is: if P contains EVERY prime<=H, then u(n)
+equals actual b_r(n) for every n<=H by factorization and the identical local
+coefficients. Therefore c(n), all centered prefixes and every test fully
+supported through H agree exactly, including its actual kappa and unit. Any
+passing actual finite-prefix tests supported there are inherited by this
+countermodel. This is a theorem for arbitrary finite P, not a promise that
+the implementation's1024-prime resource cap can cover any proposed horizon.
+It does not show the actual-source covariance programs false.
+
+4. Essential analytic-source mismatch
+
+This countermodel retains the external FORMULA for the actual kappa scalar.
+It does NOT retain the global source/analytic-residue relation that justifies
+that scalar as the source's main term. Its Dirichlet transform initially is
+ U(s)=zeta(s)*H_P(s),
+ H_P(s)=product_(p in P)(1-p^-s)^2/(1-p^(-s-r)),
+ C(s)=(1-q^(1-s))*zeta(s)*H_P(s).
+The q-factor cancels the pole at1. The finite H_P is regular for Re(s)>0;
+C is regular at theta. It has NO actual theta pole or residue kappa*theta.
+The actual source instead has
+ C_actual(s)=(1-q^(1-s))*zeta(s+r)/zeta(s),
+whose theta pole supplies that normalization. Equality of these transforms
+on their initial half-plane is already false, because the first missing
+prime coefficient differs. Analytic continuation does not repair it.
+
+Consequently a proof grammar enforcing the universal source Dirichlet identity,
+all-prime Euler laws, or the source-specific residue identity already excludes
+this model. Stage041's complete source premises include those universal laws.
+042 exposes a limitation of a PROSPECTIVE relaxation to finitely registered
+primes; it is not a caught false proof of the existing checker. It recommends
+universally quantified arithmetic constraints, not endlessly increasing a
+finite prime list. The finite set remains a sound diagnostic/calibration scope.
+
+5. Independent certificate gates
+
+Verifier must independently check strict integer primality and unique/sorted P;
+canonical rational r,k; q>=2 composite allowed; strict integer K; the exact
+source-local rational series and coefficient tails; absolute convergence and
+l1 product; harmonic zero and all-real floor-tail identity; the first missing
+prime witness; positive kappa and k/K binding; exact threshold and minimality;
+energy constants/exponents and all-integer quantifiers; explicit flags denying
+actual source/RH refutation; and the global analytic-source mismatch.
+Malformed bool/float scalars, lost units/tails, an e>=2 geometric c_q law,
+forged zero normalization, unsupported all-prime labels or false actual-source
+refutation must fail closed. No verifier may infer a theorem from a finite
+source array, a prime table without primality proof, or an interval-only guess
+for the named analytic scalar.

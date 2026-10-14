@@ -1,0 +1,92 @@
+ELEMENTARY CUBIC OBSTRUCTION FOR A FIXED MU SCALAR TEMPLATE
+
+Posthoc analytical criterion, written before reading pilot outcomes or weights.
+No frozen source, certificate or selection is changed. This criterion refutes
+only a particular fixed-weight critical SCALAR BUDGET, not actual RH, an actual
+finite certificate, or all possible q-dependent/future templates.
+
+1. Scope and exact cubic coefficient.
+Use the exact budget extraction in grouped_arithmetic_budget_scope.txt. Fix ALL
+shared structural weights and a fixed integer q>1. Put delta=1/zeta(2). Let
+b_all,b_head,b_tail be the signed relation weights for norm family, multiplier
+one, internal weight child_rowmass, in regions all, head n<=2X, tail n>2X.
+Define the exact rational
+ gamma=-(56/3)*b_all-12*b_head-(20/3)*b_tail.
+Then the actual mu scalar budget satisfies
+ B_q(X)=delta*gamma*X^3+o(X^3)
+as X tends to infinity through integers (hence dyadics). No assertion about
+nonconstant polynomial matching is needed for this scalar conclusion. It is a
+necessary budget test for a uniformly sound instance of THIS fixed template.
+If gamma>0, B_q is not O(X^(2+1/q)) for ANY fixed q>1. If gamma=0, this
+criterion is unresolved: it supplies no next-order prime cancellation theorem.
+If gamma<0 it rules out this positive cubic obstruction only; nonconstant
+matching, nonnegative square weights and the actual budget bound still require
+proof. No automatic global certificate is admitted in either case.
+
+2. Head, tail and all rowmass norm sums.
+Let Q(y)=sum_(n<=y)mu(n)^2=delta*y+O(sqrt y), with the explicit existing
+uniform error<=3sqrt y. Define r_X(n)=sum_(t=max(2X,n))^(4X-1)t.
+Exchange the COMPLETE finite sums. The all-region norm sum is
+ T_all=sum_(t=2X)^(4X-1)t*Q(t)
+      =delta*sum_(t=2X)^(4X-1)t^2+O(X^(5/2))
+      =(56/3)*delta*X^3+O(X^(5/2)).
+There are2X terms, each error at most3*t^(3/2), so the error bound follows
+uniformly. The exact polynomial sum's lower-order endpoint terms are O(X^2).
+For head n<=2X, all those indices appear in EVERY child prefix:
+ T_head=Q(2X)*sum_(t=2X)^(4X-1)t
+       =[2delta X+O(sqrt X)]*[6X^2-X]
+       =12delta X^3+O(X^(5/2)).
+Tail uses STRICT n>2X, hence exactly T_tail=T_all-T_head and
+ T_tail=(20/3)*delta*X^3+O(X^(5/2)).
+The head/tail boundary n2X is accounted for; replacing it by a different
+endpoint changes lower-order terms but is not an allowed silent rewrite.
+Multiplying by the signed weights and the minus sign in the budget yields
+precisely delta*gamma. Overlapping all/head/tail descriptors are retained.
+
+3. Other norm and normalizer terms are subcubic.
+The mu norm weights1 andX give respectively O(X) andO(X^2). Since |J_X|<=2X,
+the defect-kernel norm weight gives O(X^2); region restrictions only reduce
+absolute counts. Unit constants are O(1). Square groups with zero constant do
+not contribute at all. The sole constant-square weight gives
+ a0 X^2 ceil(X^(1/q))=O_q(X^(2+1/q))=o(X^3) for fixed q>1.
+This uses fixed finite weights. It does not assert uniformity if those weights
+or q are allowed to change with X.
+
+4. Prime-rowmass terms are o(X^3) without PNT.
+For actual mu the prime_power constant is-1 at exponent1 and0 at EVERY higher
+exponent. Thus only weighted actual prime sums contribute to its scalar budget.
+An elementary Chebyshev estimate suffices. For integer n>=1, every prime in
+(n,2n] divides binomial(2n,n); therefore
+ theta(2n)-theta(n)<=log binomial(2n,n)<=2n log2.
+For integer m, let n=floor(m/2). The interval(n,m] is controlled by the
+binomial interval(n,2n] plus, when m is odd, at most the extra prime m.
+Inductively this gives theta(m)<=4 log2*m: assuming the bound at n,
+ theta(m)<=4log2*n+2n log2+log(m) for odd m,
+while the even case has no extra term; log(2n+1)<=2(n+2)log2 for n>=1
+leaves this below4log2*m. The initial cases m1,m2 are direct. Equivalently,
+any standard elementary dyadic binomial proof of the same loose constant can
+be used. Real x follows by theta(x)=theta(floor x)<=4log2*x.
+For x>1, primes<=sqrt x are at mostsqrt x, while every larger prime has
+log p>=(1/2)log x. Hence
+ pi(x)<=sqrt x+2theta(x)/log x
+       <=sqrt x+8log2*x/log x=o(x).
+No prime number theorem, zero-free region, RH error or prime-sign hypothesis
+is imported. Each rowmass weight is at mostsum_(t=2X)^(4X-1)t<=6X^2.
+Thus any region's prime-rowmass scalar sum has absolute size
+ <=6X^2*pi(4X)=O(X^(5/2)+X^3/log X)=o(X^3).
+Other prime weights1,X,J similarly have absolute size at mostO(X^2) or smaller.
+These estimates deliberately make no claimed signed main term or cancellation.
+
+5. What an exact posthoc weight audit may conclude.
+Once the frozen training archive is available, map each shared relation weight
+to its EXACT descriptor ID, retain all programs and statuses, and compute gamma
+with Fractions. Do not choose weights from final responses or discard positive-
+gamma programs selectively. A finite certificate at development/final scales
+can remain valid even when gamma>0: the asymptotic obstruction concerns eventual
+critical scalar growth of that unchanged template, not those finite identities.
+A training failure has no fixed accepted template to adjudicate. Every inferred
+weight vector and its source hashes must be preserved in the posthoc record.
+For gamma>0 the fixed template's all-scale critical budget is disproved, but
+this does NOT refute the actual Mobius inequality or arbitrary future q-dependent
+weight families. For gamma0/negative no global proof follows. In all cases an
+all-scale nonconstant coefficient identity is a separate unproved obligation.

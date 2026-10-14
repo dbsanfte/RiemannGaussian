@@ -1,0 +1,128 @@
+{
+  "RH_proved": false,
+  "bindings_with_additional_paid_pieces": 288,
+  "centering_alternatives": 228,
+  "complete_signed_bounds_proved": 0,
+  "elapsed_seconds": 51.26570464298129,
+  "geometry_summary": [
+    {
+      "alpha": "1/2",
+      "gamma": "1/2",
+      "geometry_id": 12,
+      "new_paid_source_pieces": [],
+      "proof_artifact": "core-prefix-proof-results/pilot-001/geometry-12.json",
+      "remaining_signed_piece_count": 8,
+      "statistics": {
+        "alternatives": 12,
+        "original_terms": 9,
+        "proof_nodes": 201,
+        "rule_applications": 928,
+        "selected_centerings": 0,
+        "selected_pieces": 9,
+        "uniformly_paid_pieces": 1
+      }
+    },
+    {
+      "alpha": "1/3",
+      "gamma": "1/3",
+      "geometry_id": 6,
+      "new_paid_source_pieces": [],
+      "proof_artifact": "core-prefix-proof-results/pilot-001/geometry-6.json",
+      "remaining_signed_piece_count": 14,
+      "statistics": {
+        "alternatives": 25,
+        "original_terms": 15,
+        "proof_nodes": 765,
+        "rule_applications": 6989,
+        "selected_centerings": 0,
+        "selected_pieces": 15,
+        "uniformly_paid_pieces": 1
+      }
+    },
+    {
+      "alpha": "1/3",
+      "gamma": "2/3",
+      "geometry_id": 8,
+      "new_paid_source_pieces": [],
+      "proof_artifact": "core-prefix-proof-results/pilot-001/geometry-8.json",
+      "remaining_signed_piece_count": 11,
+      "statistics": {
+        "alternatives": 21,
+        "original_terms": 12,
+        "proof_nodes": 621,
+        "rule_applications": 5626,
+        "selected_centerings": 0,
+        "selected_pieces": 12,
+        "uniformly_paid_pieces": 1
+      }
+    },
+    {
+      "alpha": "1/6",
+      "gamma": "1/6",
+      "geometry_id": 0,
+      "new_paid_source_pieces": [
+        {
+          "depth": 1,
+          "piece": 1,
+          "source_key": {
+            "a": 1,
+            "b": 0,
+            "mode": "V"
+          },
+          "uniform_energy_constant": "324"
+        }
+      ],
+      "proof_artifact": "core-prefix-proof-results/pilot-001/geometry-0.json",
+      "remaining_signed_piece_count": 38,
+      "statistics": {
+        "alternatives": 104,
+        "original_terms": 39,
+        "proof_nodes": 10245,
+        "rule_applications": 448831,
+        "selected_centerings": 1,
+        "selected_pieces": 40,
+        "uniformly_paid_pieces": 2
+      }
+    },
+    {
+      "alpha": "1/6",
+      "gamma": "5/6",
+      "geometry_id": 4,
+      "new_paid_source_pieces": [
+        {
+          "depth": 1,
+          "piece": 1,
+          "source_key": {
+            "a": 1,
+            "b": 0,
+            "mode": "V"
+          },
+          "uniform_energy_constant": "324"
+        }
+      ],
+      "proof_artifact": "core-prefix-proof-results/pilot-001/geometry-4.json",
+      "remaining_signed_piece_count": 20,
+      "statistics": {
+        "alternatives": 66,
+        "original_terms": 21,
+        "proof_nodes": 5901,
+        "rule_applications": 243334,
+        "selected_centerings": 1,
+        "selected_pieces": 22,
+        "uniformly_paid_pieces": 2
+      }
+    }
+  ],
+  "inclusive_operations": 148945142,
+  "main_operations": 142412635,
+  "model_calls_in_search": 0,
+  "numerical_source_evaluations": 0,
+  "peak_rss_kib": 704032,
+  "proof_nodes": 17733,
+  "reduction_bindings": 720,
+  "rule_applications": 705708,
+  "selected_centerings": 2,
+  "source_geometries": 5,
+  "status": "SIGNED_PREFIX_PROOF_SEARCH_VERIFIED_WITH_OPEN_JOINED_GOALS",
+  "whole_signed_bound_proved": false
+}

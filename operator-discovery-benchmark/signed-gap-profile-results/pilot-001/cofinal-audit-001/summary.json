@@ -1,0 +1,33 @@
+{
+  "status": "verified_actual_arithmetic_cofinal_counterexamples_on_unchanged_fitted_candidates",
+  "audit_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-gap-profile-results/pilot-001/cofinal-audit-001",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-gap-profile-results/pilot-001",
+  "candidate_count": 48,
+  "disproved_uniform_actual_half_gap_candidates": 3,
+  "disproved_complete_dual_PSD_candidates": 3,
+  "disproved_fully_charged_global_defect_candidates": 2,
+  "unresolved_actual_half_gap_candidates": 45,
+  "refuted_candidate_ids": [
+    "bd522ef0becd9649554c8588d61e91bc7df2150d71a2d5f7d9f16ee9f340861d",
+    "3615e17fac8b6e42c63763561f060597e19efa803a60cde92a8ba07749df1aa6",
+    "0d42657fa48b9ac304865ef20d9b0aa52410a38d6f2cc2aba4919d3221930cd9"
+  ],
+  "bounded_constant_endpoint_candidates": 8,
+  "original_formulas_fits_and_finite_passes_unchanged": true,
+  "actual_prime_inverse_counterexamples": true,
+  "parameter_start_cannot_remove_witnesses": true,
+  "unbounded_and_existential_families_remain_unresolved": true,
+  "not_RH_counterexamples": true,
+  "verified_checks": 4,
+  "independent_native_counts": {
+    "actual_prime_inverse_coefficients": 2097152,
+    "exact_endpoint_margin_cases": 64,
+    "native_plateau_witnesses": 9
+  },
+  "verification_sha256": "69c14979e2a980a7fb29861f6cfb5beec2b00be8fb4627f365a40638638d2bc6",
+  "source_queue_sha256": "a5743261b09e76b3111d79ff7771156126f5c9bcb7eac2d8f1e7939d84020fe0",
+  "machine_formalized": false,
+  "global_actual_critical_signed_gap_proved": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

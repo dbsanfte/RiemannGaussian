@@ -1,0 +1,98 @@
+DIRECT EXACT-BASIS PRIMAL HANDOFF — publication015
+
+The new trial successfully reverified the saved exact proof and ran the
+unchanged finite cone on 779 selected original equations. Its direct solver
+and independent canonical-matrix checker completed. Clarabel returned
+NumericalError at iteration 1 before any positive step; the native original
+vector is identically zero. It fails the full polynomial equation test by
+1,600 in maximum absolute residual. This is no candidate, feasibility result,
+infeasibility theorem, signed arithmetic bound, or RH result.
+
+Unchanged problem and fresh authorization
+
+The full system has 5,641 equations and 1,957 coefficient variables: 366
+nonnegative square weights, 613 signed relation pairs, 5 constant slacks,
+and three full 15 by 15 PSD matrices (child, parent, K). The historical
+scales remain 1,2,3,5 plus the gamma-zero auxiliary; q=6,C=32. Every variable,
+objective coefficient and cone is retained, including the auxiliary slack.
+K itself is PSD; R=e_prefix e_prefix^T+K is derived. Replacing K PSD with
+R PSD would enlarge the cone and was not done.
+
+Publication014 records a failed terminal wrapper despite complete saved
+projection and basis tapes. That old run remains without equation admission.
+The new protocol rebuilt the source once and independently checked BOTH
+saved exact tapes before permitting a numerical solve. No producer elimination
+was repeated. All 733 source-column identities and all original row relations
+were replayed. This new successful verification licenses the 779 selected
+ORIGINAL equations; the full optimization has no projected variable domain.
+
+Direct numerical representation
+
+Each selected augmented row is divided by its exact positive infinity norm.
+The native matrix has 2,736 cone rows and 249,589 nonzero coefficients, with
+Zero(779), Nonnegative(1597), and three PSDTriangle(15) cones. Original Gram
+coordinates are upper-triangle row-major; PSD cone rows use column-major
+upper triangle with sqrt(2) offdiagonal scaling. Every original x coordinate
+is returned unchanged. Native x, z and s are retained. No CVXPY inversion or
+attribute projection is used. The independent checker reconstructs the full
+canonical matrix, objective, cone mapping and raw-coordinate identity, then
+computes residuals against ALL 5,641 original equations.
+
+Observed result
+
+Clarabel 0.11.1 chose the faer direct linear solver with one thread and default
+settings, including static regularization 1e-8. It stopped at iteration 1,
+step length 0, in 0.103202794 native seconds. Its reported primal residual is
+0.9779475428197137 and dual residual is 0.05856445380974462. The raw x vector
+is all zero. Independently checked maximum original equation residual is
+1600, maximum selected scaled equation residual is 1, and objective is 0.
+All scalar and matrix coordinates are zero; their nonnegativity does not
+repair the equation failure. No vector was passed to exact reconstruction.
+Solver failure is not evidence that the cone is empty.
+
+The original and canonical assembly hashes, exact selected row scales,
+bounded native log, full raw solution, deterministic worker check, and
+fresh proof-replay receipts are preserved in primitive-state-basis-primal-001.
+The frozen closure has 104 sources and 30 passing tests, including actual
+protocol construction, complete worker lifecycle to terminal serialization,
+raw negative-coordinate preservation, independent cone assembly, partial
+verification failures, source tampering and conservative work accounting.
+
+Resources and next direction
+
+One worker uses a 3 GiB address-space limit, one numerical thread, 900
+cooperative seconds including source construction, and 1,800 external seconds.
+Worker elapsed time was 326.95607619400835 seconds, CPU 326.78323338700005,
+peak resident memory 787,608 KiB. Total charged/reserved backend work was
+254,142,656 of 450,000,000, including compilation 34,416,554; conservative row
+preparation 20,000,000; projection replay 21,847,067; basis replay 95,711,647;
+conservative native producer 50,000,000; native independent check 32,167,388.
+No memory or time limit stopped the solve. Floating native iterations are
+bounded by clock and memory; the exact work counter is not a flop count.
+
+Preparation and proof verification dominate this run; native solve time was
+only 0.1 seconds. The next frozen stage should build one bounded shared source
+and canonical-matrix cache, using this newly completed exact-basis license.
+Independent audit must verify the cache against the complete original source.
+Two fixed numerical variants can then use that same cache in parallel:
+  1. qdldl direct factorization, otherwise default settings;
+  2. faer with static_regularization_constant=1e-6, otherwise defaults.
+These are numerical stability probes of the same finite mathematical problem.
+No grammar, target, candidate support or numerical rank cutoff changes.
+All raw outputs and failures must remain auditable. Any useful proposal still
+requires exact restoration/sign/PSD verification; the uniform all-scale
+innovation bound and RH bridge remain unresolved.
+
+Whole-stage independent audit
+
+The independent whole-stage audit passed in 274.9947366300039 seconds.
+It rebuilt the original arithmetic and geometry once, reverified the complete
+exact basis license, independently reconstructed the actual canonical matrix,
+and verified both worker proof receipts and the raw numerical diagnostics.
+Total independent replay operations, including the compilation reserve:
+169959982; independent replay cells: 34355868.
+Native diagnostics are available and checked; mathematical feasibility remains
+UNKNOWN and accepted_proposal=False.
+Independent review SHA256: 7c2d165b878e6ae2f610081f2acd4135c9a68918c67d88b7e10678c89d5401f7.
+Terminal receipt SHA256: 2d62c5b79f001b72e44cd199d77400dc5d0d79099dcbeeea7964e4ed6b90bf05.
+The research goal remains active; global_bound_proved=False; RH_proved=False.

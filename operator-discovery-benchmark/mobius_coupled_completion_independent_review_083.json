@@ -1,0 +1,322 @@
+{
+  "RH_proved": false,
+  "elapsed_seconds": 0.4888821200001985,
+  "hashes_used": false,
+  "old_tests_run": false,
+  "resource_issues_reported": [
+    "Cumulative resident model/input/native scratch reserve",
+    "Dense dual matrix versus edge-only reservation",
+    "Public coupled_basis should prospectively gate its own allocation"
+  ],
+  "scientific_source_queries": false,
+  "scope": "Math/integration PASS; reported generic resource issues require separate root fixes and targeted audit.",
+  "status": "PASS",
+  "synthetic_lp_proposals": [
+    {
+      "gap": "5/25165824",
+      "lower_bound": "164830321/8388608",
+      "price": "61811371/3145728",
+      "solver_status": 0,
+      "unit_balance": false
+    },
+    {
+      "gap": "251/3321888768",
+      "lower_bound": "70075172341/3321888768",
+      "price": "486633143/23068672",
+      "solver_status": 0,
+      "unit_balance": true
+    }
+  ],
+  "tiny_full_coordinate_upper_dual_cases": [
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "5/36",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "1/9",
+      "memory": 1,
+      "price": "5/36",
+      "u": 1,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "1/12",
+        "unit_offdiagonal_absolute_price": "31/72"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-425/216",
+      "memory": 1,
+      "price": "79/72",
+      "u": 5,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "2/3",
+        "unit_offdiagonal_absolute_price": "421/36"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-28225/108",
+      "memory": 1,
+      "price": "737/18",
+      "u": 23,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "5/36",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "1/9",
+      "memory": 1,
+      "price": "5/36",
+      "u": 1,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "1/8",
+        "unit_offdiagonal_absolute_price": "37/72"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-65/216",
+      "memory": 1,
+      "price": "85/72",
+      "u": 5,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "7/132",
+        "unit_offdiagonal_absolute_price": "151/72"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-113683/1188",
+      "memory": 1,
+      "price": "3395/132",
+      "u": 23,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "1/6",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "5/36",
+      "memory": 2,
+      "price": "1/6",
+      "u": 1,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "35/288",
+        "unit_offdiagonal_absolute_price": "23/36"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-275/864",
+      "memory": 2,
+      "price": "443/288",
+      "u": 5,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "73/144",
+        "unit_offdiagonal_absolute_price": "217/18"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-54515/216",
+      "memory": 2,
+      "price": "418/9",
+      "u": 23,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "1/6",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "5/36",
+      "memory": 2,
+      "price": "1/6",
+      "u": 1,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "35/288",
+        "unit_offdiagonal_absolute_price": "23/36"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-275/864",
+      "memory": 2,
+      "price": "443/288",
+      "u": 5,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "53/396",
+        "unit_offdiagonal_absolute_price": "151/72"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-74947/792",
+      "memory": 2,
+      "price": "336/11",
+      "u": 23,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "1/6",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "5/36",
+      "memory": 3,
+      "price": "1/6",
+      "u": 1,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "43/288",
+        "unit_offdiagonal_absolute_price": "5/6"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-283/864",
+      "memory": 3,
+      "price": "169/96",
+      "u": 5,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "15/32",
+        "unit_offdiagonal_absolute_price": "389/36"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-52615/216",
+      "memory": 3,
+      "price": "13345/288",
+      "u": 23,
+      "unit_balance": false,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 1,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 0,
+        "trace": "1/6",
+        "unit_offdiagonal_absolute_price": "0"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "5/36",
+      "memory": 3,
+      "price": "1/6",
+      "u": 1,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 4,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 3,
+        "trace": "43/288",
+        "unit_offdiagonal_absolute_price": "5/6"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-283/864",
+      "memory": 3,
+      "price": "169/96",
+      "u": 5,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    },
+    {
+      "coordinates": 16,
+      "diagnostics": {
+        "negative_row_prices": 0,
+        "prime_count": 9,
+        "trace": "57/352",
+        "unit_offdiagonal_absolute_price": "19/12"
+      },
+      "dual_status": "VERIFIED_FINITE_COUPLED_PRICE_LOWER_BOUND",
+      "lower_bound": "-224221/2376",
+      "memory": 3,
+      "price": "100819/3168",
+      "u": 23,
+      "unit_balance": true,
+      "upper_status": "VERIFIED_FINITE_COUPLED_UPPER_BOUND"
+    }
+  ],
+  "uniform_growth_proved": false,
+  "uniform_original_source_bound_proved": false
+}

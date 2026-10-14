@@ -1,0 +1,22 @@
+{
+  "schema": "floor-signed-vector-norm-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.041165406990330666,
+      "operations": 1585611,
+      "peak_integer_bits": 762,
+      "peak_bytes_estimate": 2283776,
+      "exposure": "synthetic signed vectors, exact covariance/Jordan checks and analytic-tail calibrations only"
+    }
+  ],
+  "actual_new_programs_observed": false,
+  "actual_source_data_read": false,
+  "frozen_files_modified": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "cumulative_operations": 1585611
+}

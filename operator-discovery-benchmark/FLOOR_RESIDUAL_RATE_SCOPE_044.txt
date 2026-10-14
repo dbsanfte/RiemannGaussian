@@ -1,0 +1,109 @@
+FIXED-INDEX LOGARITHMIC RATE OBSTRUCTIONS044
+Independent proof admission for exact recipe ASTs; frozen norm/search files
+are unchanged. No norm evaluations, source coefficient arrays or finite
+training values are premises. This is a rejection of specific overly fast
+rates, not a rejection of the floor representation or of norm convergence.
+
+1. Meaning of the mathematical recipe
+
+L(N)=1+floor(log2 N)=N.bit_length(). Exact dyadic rounding has bits
+4*ceil(log2 N). The recipe is extended mathematically to arbitrary integer
+N>=2 even when a finite compiler refuses larger N on work/bit guards.
+For fixed n>=2 write ell=log(n)/log(2)>0. Then log N=L(N)*log2+O(1), so
+(log n/log N)^alpha=ell^alpha L(N)^(-alpha)(1+O(1/L(N))).
+Every fixed positive rational power is allowed within the input caps.
+Rounding errors are exponentially small in L and are negligible compared
+with any fixed inverse log power. Taking a positive power of the inner
+coordinate preserves this statement; continuity/Taylor expansion at the
+outer base1 yields the following first corrections.
+
+ log taper(alpha,gamma): W-1=-gamma*ell^alpha*L^-alpha+o(L^-alpha).
+ twist(rate,k): W-1=-rate*log(n)*L^-k+o(L^-k).
+ unit and cutoff tapers: W-1 is flat against every inverse log power.
+ Products of limit-one weights add corrections at the smallest exponent.
+ Differences of weights subtract corrections at the smallest exponent.
+ L^-power times a bounded limit-one weight has leading coefficient1.
+ N^-power amplitudes are log-flat. A moving band with positive cutoff
+ exponent is eventually exactly zero at every fixed n.
+
+Constants are rational sums of monomials(log n)^a(log2)^b with rational
+powers a,b. Both bases are positive. A displayed zero leading polynomial
+does NOT permit jumping to the next rate without a separately established
+expansion. Such cancellation is UNRESOLVED. A nonzero formal mixed-sign
+polynomial may also evaluate to zero (especially n=2, where log n=log2);
+formal syntactic inequality is never a nonzero proof.
+
+2. Actual arithmetic coefficient binding
+
+The recipe coefficient is c_n(N)=-mu(n)W0(n,N)+lambda*a(n)V(n,N).
+Therefore its error from the necessary value-mu(n) is
+ c_n(N)+mu(n)=-mu(n)(W0-1)+lambda*a(n)V.
+The verifier derives these signs itself. Arithmetic values are calculated
+from exact trial factorization at the witness index, not copied from a
+Boolean or a frozen source array. For mu*mu the local polynomial is
+(1-t)^2, so valuations1,2,>=3 have coefficients-2,1,0. The other licensed
+channels are mu, Liouville, radical sign, constant1, and mu plus/minus half
+Liouville. A zero arithmetic multiplier annihilates its whole correction.
+
+3. Exact cell recovery and all higher-support columns
+
+For a constant-one floor/step residual E(k), a witness alpha_k on cells
+1..n must satisfy sum k*alpha_k=0 and
+ sum alpha_k*(k mod j)/j=-1_(j=n), EVERY 2<=j<=n.
+For EVERY j>n, its floor column equals k/j; the slope equation annihilates
+it exactly, regardless of growing support or coefficient size. The constant
+column must sum to mu(n), independently recalculated. Hence
+ c_n+mu(n)-sum d_q*step_response(q)=sum alpha_k E(k),
+ D_n=sum alpha_k^2*k(k+1)>0,
+ ||E||^2 >=[c_n+mu(n)-sum d_q*step_response(q)]^2/D_n.
+No cell outside this finite witness needs sampling. Missing lower columns,
+the slope equation, the unit or any step contribution invalidate the proof.
+
+Equivalently invert the differences E(k)-E(k-1), using E(0)=1, with mu on
+divisors of n. This shows step_response(q)=mu(n/q) if q divides n, else0.
+For n=3 the exact witness cells are(-1,-1,1), D_3=20. At q=2 its step
+response is0, so the forcing coefficient functional is precisely c_3(2N)-1.
+
+4. Child/parent forcing and deliberately unresolved domains
+
+For h=1-g_(qN)-b I_q+b D_q g_N and q not dividing n, the witness
+functional is the child error c_n(qN)+mu(n). Its first log-rate coefficient
+is unchanged because L(qN)/L(N)->1 for fixed q. It is independent of b.
+For b=0 the same child statement applies to all n. If q divides n and
+n/q>=2, the exact functional is child_error_n-b*parent_error_(n/q), but
+this initial checker leaves those mixed-log-index expansions UNRESOLVED.
+At n=q it also needs the full parent sum sum c_k(N)/k; no fixed-index
+expansion supplies this. Neither domain is silently dropped or declared
+paid. UNRESOLVED is not a refutation or an improved bound.
+
+5. Strict rate rejection and boundary scope
+
+If the checked functional has gap=C*L^-nu+o(L^-nu) with C!=0, then
+ liminf L^(2nu)*||E||^2 >=C^2/D_n>0.
+In particular ||E||^2 cannot be bounded by ANY fixed finite A*L^-eta
+at EVERY sufficiently large scale when eta>2nu. The strict comparison is
+exact rational arithmetic. eta=2nu is NOT rejected by this slope test; it
+would need independent constant information. eta<2nu is also not paid or
+refuted. A positive-rate obstruction can coexist with norms tending to0.
+
+Nonzero constants need either a structural sign proof (all nonzero rational
+terms share a sign) or certified high-precision interval exclusion of0.
+Mixed signs with an interval containing0 remain UNRESOLVED. Norm observations
+cannot license this nonzero gate or the source expansion. No threshold is
+fitted; the asymptotic result has an existential eventual threshold from the
+proved expansion, and rejects only this exact AST/rate claim.
+
+All convergence, full-core and RH proof/refutation flags remain false.
+The selected-rate followup changes no frozen numerical evidence or grammar.
+
+6. Public replay and compressed frontier admission
+
+verify(selected,proposal) replays all displayed source-bound coefficient rows,
+exact cell witnesses, signed forcing relations and complete declared rules.
+verify_recipe and verify_candidate expose narrower versions of the same
+independent proof admission. External meters need only charge(n).
+verify_frontier(recipes,eta_values,proposal,max_index=16,precision=192)
+replays each supplied best witness and the exact strict eta partition. The
+compressed frontier does not include every scanned witness, so the verifier
+explicitly does not certify optimality over omitted witnesses. A null best
+means no obstruction was supplied; OPEN is not a proof that a rate is valid.

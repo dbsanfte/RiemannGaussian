@@ -1,0 +1,120 @@
+CANCELLATION LANGUAGE: SIGNED COMPOSITION AND COMPLETE PRIME TRANSPORT
+
+Status: implemented finite representation/proof calibration, 2026-10-08.
+No new critical signed arithmetic estimate, global candidate or RH proof.
+This is an outcome-informed extension after the grouped pilot's unsigned collapse.
+It is not a fresh blind discovery experiment. Old frozen stages are unchanged.
+
+Why this change
+The grouped pilot's two accepted critical mu templates had cubic scalar budgets.
+Exact padding removal reduces them to the supplied unsigned Cauchy calibration.
+That is a specific failure of those templates. It motivates a language that
+can preserve and transform signed cross terms, along with a scoring correction.
+See GROUPED_ARITHMETIC_HANDOFF.txt and its separately sealed publication.
+
+Implemented entry points
+1. cancellation_arithmetic_language.compile_expression(expr, X, horizon, ...)
+   compiles a typed expression into the existing canonical rational polynomial.
+   Index variables X,N and lexical sum bindings; integer addition/subtraction,
+   product, quotient/remainder, min/max/gcd; exact floor of n^(a/b); comparisons,
+   divisibility, prime and squarefree predicates; rational constant/ratio weights;
+   sequence variables; signed sums/products; guards; nested inclusive bounded sums.
+   No signed coefficient table, analytic bound, or observed cancellation is an
+   axiom. Actual-prime predicates are supplied arithmetic functionality.
+
+   Both axes of a bilinear sum are explicit. Shifts, product indices, prime
+   dilations, residue restrictions, scale-dependent prime ranges, fractional
+   cutoffs and higher-degree relation multipliers compose in the same language.
+   No out-of-range index is silently dropped; use an explicit guard and preserve
+   its complement when claiming a decomposition. Polynomial degree/term, index
+   and coefficient bits, AST depth/nodes and scalar work have explicit caps.
+   Limits are computational proxies, not a full memory or bit-complexity proof.
+   root(base,a,b) is floor(base^(a/b)) for base>=0,a>=0,b>=1; exponent0 returns1
+   even at base0. Division/remainder use floor convention, zero divisors reject.
+
+2. partition(expr,predicate) returns BOTH pieces under all leading sum binders.
+   polarization(U,V) returns ((U+V)^2-(U-V)^2)/4 exactly. Its negative square is
+   part of a signed expression, not an allowed negative SOS certificate weight.
+   enumerate_mixes makes deterministic rational mixtures/products from declared
+   atoms with a count cap, without numerical scores or a nominated winner.
+   The grammar and its initial atoms are supplied assumptions, not bias-free.
+
+3. cancellation_arithmetic_synthesis.synthesize uses the frozen grouped exact
+   expansion/checking machinery with structural L1 costs and ZERO scalar-slack
+   costs. Thus positive scalar padding cannot lower the objective by consuming
+   slack. Exact reconstruction and the independent checker still determine
+   admission. It claims neither LP optimality nor mathematical infeasibility.
+   This is not yet an optimizer for the smallest uniform scalar budget.
+
+4. cancellation_prime_transport.build_transport(X,p) constructs two independently
+   checkable relations-only certificates for equality of the COMPLETE original
+   mu energy defect and its p-free shell representation. It uses existing
+   prime-power, coprime-product and squarefree-zero relations; no new axiom.
+
+The concrete calibration and its limit
+For prime p define B_p(t)=sum_(a<=t,p does not divide a)mu(a).
+Every positive index has p-valuation0,1,or>=2. Actual mu at valuation1 has
+opposite sign to its p-free core; valuation>=2 has coefficient0. Hence, for
+EVERY t>=1, M(t)=B_p(t)-B_p(floor(t/p)). This supplied identity is proved by
+the complete source partition, not learned by fitting its numerical outputs.
+Squaring retains both cross terms. Its parent energy kernel on p-free a,b is
+ L_X,p(a,b)=K_X(max(a,b))-K_X(max(pa,b))-K_X(max(a,pb))+K_X(max(pa,pb))
+           =max(0,min(2X,pa,pb)-max(X,a,b)),
+where K_X(t)=max(0,2X-max(X,t)). Every integer shell endpoint is retained.
+The defect uses L_2X,p-4L_X,p, over ALL ordered pairs through N=4X-1.
+The generic expression compiler reproduces this polynomial using elementary
+index arithmetic; it has no dedicated winning-shell primitive.
+
+This shell kernel still multiplies signed mu(a)mu(b). Its nonnegativity is not
+a critical arithmetic bound. For any fixed finite prime set P containing p,
+f_P(n)=mu(n)^2*(-1)^omega_P(n) has the same one-prime transport but positive
+linear mean (see earlier prime-forcing proof). Thus the transform must not be
+promoted into a signed estimate merely because its geometry simplifies.
+
+What the calibration establishes
+The full suite has 17 tests. It checks exact roots (including square/cube/sixth
+roots), moving prime ranges, product horizons, complete partitions, signed
+polarization, resource/type failures, zero-cost slack and padding, complete
+transport certificates and endpoint enumeration, wrong-sign/complement failures,
+and the partial-prime counterfeit control.
+A supplied synthetic polynomial family with signed prime-dilation blocks has
+unknown rational weights recovered at X1/2, independently checked without refit
+at X3 for mu/c axiom systems. This is a known-family recovery calibration, not
+evidence of a new actual arithmetic estimate or independent unknown-operator
+discovery. A quadratic norm multiplier also eliminates the c gcd quartic term,
+closing a documented proof-representation gap without adding arithmetic axioms.
+The refreshed independent review covers core source hashes; the calibration
+receipt records the final full test suite and dependencies separately.
+
+Next search, not implemented or claimed complete here
+A. Freeze a small balanced generator using this language to refine both axes of
+   signed kernels: additive shifts, multiplicative dilations, gcd/residue masks,
+   normalized mixed block products and growing prime ranges. Share structural
+   weights across scales. Enumerate/mutate generally; do not seed expected
+   weights or select a desired arithmetic identity as the discovery answer.
+B. Archive complete target reconstruction, all complements, full scalar budget,
+   signed numerical evidence, unsigned baseline, complexity, and failures as
+   separate fields. A better component alone is not progress on the full bound.
+C. Use exact dual obstructions and repeated subexpressions to propose additional
+   multipliers/partitions, with fixed adaptation rules and a fresh final batch.
+   The new compiler is a backend for that broader adaptive stage, not a claim
+   that this new generator/selector has already been run.
+D. For a direct prime route, explicitly center Lambda(n)-1 and retain full
+   mu*log divisor decompositions, both sides of every moving cutoff, and mixed
+   terms. Logarithmic weights require the existing rigorous interval backend
+   or a new symbolic coefficient ring; they are not rational AST constants.
+E. Prioritize evidence that complete signed bounds improve beyond the unsigned
+   cubic charge, while separating numerical leads from estimates with proof.
+   Preserve failures at new scales and partial-prime counterfeits. A genuinely
+   RH-relevant promotion still needs a uniform full signed defect estimate for
+   the cofinal family of exponents, with constants independent of X, as well as
+   a complete all-scale identity. No finite calibration supplies this estimate.
+
+Mathematical context (not imported proof assumptions)
+Prime-dilation correlations and bilinear sums have established uses in Mobius
+orthogonality; they justify testing this representation, not claiming RH control:
+https://terrytao.wordpress.com/2011/11/21/the-bourgain-sarnak-ziegler-orthogonality-criterion/
+In that criterion the auxiliary bounded sequence has small distinct-prime
+correlations; do not assume those correlations are small for mu itself. The
+conclusion is an orthogonality estimate with its own hypotheses/rates, not the
+critical uniform estimate sought here.

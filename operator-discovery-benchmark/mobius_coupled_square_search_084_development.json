@@ -1,0 +1,29 @@
+{
+  "attempts": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_square_084",
+      "time_epoch": 1791726507.8249989,
+      "tests": 6,
+      "exit_code": 0,
+      "output": "test_exact_factor_empty_and_nonzero_admitted (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_factor_projection_and_exact_unit_norm_dual (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_fixed_operator_auxiliary_reconstruction (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_joint_operator_and_square_invention_exact_admissions (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_prospective_dimension_factor_and_resident_gates (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_residual_linear_basis_matches_complete_exact_operator (test_mobius_coupled_square_084.SquareTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.217s\n\nOK\n"
+    },
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_square_084.SquareTests.test_factor_projection_and_exact_unit_norm_dual test_mobius_coupled_square_084.SquareTests.test_joint_operator_and_square_invention_exact_admissions test_mobius_coupled_square_084.SquareTests.test_fixed_operator_auxiliary_reconstruction test_mobius_coupled_square_084.SquareTests.test_prospective_dimension_factor_and_resident_gates",
+      "time_epoch": 1791726585.6127315,
+      "tests": 4,
+      "exit_code": 0,
+      "output": "test_factor_projection_and_exact_unit_norm_dual (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_joint_operator_and_square_invention_exact_admissions (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_fixed_operator_auxiliary_reconstruction (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_prospective_dimension_factor_and_resident_gates (test_mobius_coupled_square_084.SquareTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.175s\n\nOK\n",
+      "reason": "Release solver/basis allocations before exact work; cumulative native factor gate and exact native dual contraction."
+    },
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_square_084.SquareTests.test_factor_projection_and_exact_unit_norm_dual test_mobius_coupled_square_084.SquareTests.test_joint_operator_and_square_invention_exact_admissions test_mobius_coupled_square_084.SquareTests.test_prospective_dimension_factor_and_resident_gates",
+      "time_epoch": 1791726883.4881432,
+      "tests": 3,
+      "exit_code": 0,
+      "output": "test_factor_projection_and_exact_unit_norm_dual (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_joint_operator_and_square_invention_exact_admissions (test_mobius_coupled_square_084.SquareTests) ... ok\ntest_prospective_dimension_factor_and_resident_gates (test_mobius_coupled_square_084.SquareTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.170s\n\nOK\n",
+      "reason": "Audit: standalone eigensolver shape/strictprecision/prospectivework-memory admission before allocation."
+    }
+  ],
+  "distinct_tests": 6,
+  "status": "PASS"
+}

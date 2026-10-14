@@ -1,0 +1,136 @@
+PARAMETRIC SOURCE IDENTITIES — PUBLICATION019
+2026-10-09. Universal formal identity backend; no RH candidate admitted.
+
+Completed work and actual outcome
+
+New parametric_arithmetic_identity.py produces bounded symbolic proof DAGs.
+New check_parametric_arithmetic_identity.py independently replays them, without
+importing the producer. Finite parameter-sized sums remain symbolic. The kernel
+uses exact commutative ring and Boolean indicator algebra, complementary guarded
+partitions, sum linearity/congruence, and capture-free factor extraction and
+renaming. Bound variables use deBruijn slots; bounds are outside their own binder.
+Unsupported identities remain UNKNOWN, never mathematical refutations.
+
+The frozen calibration at
+cancellation-arithmetic-results/parametric-source-identities-001
+completed74 supplied recipe instances, all independently verified. These are
+instances of a few reusable laws, NOT74 newly discovered arithmetic operators:
+  72 divisor-cell state identities:18 actual(region,theta,power) combinations
+     times four laws, B=I+O, Z=B-1, D=I-1-Z/2, D=-O+Z/2;
+  2 complete norm/prime-power rowmass identities, Rall=Rhead+Rtail.
+The identities are universal in their declared integer parameterX, not inferred
+from a finite grid. They retain the complete divisor/prime source domains,
+complement terms, equality boundaries and signed coefficients in the adapted
+expressions. Primitive rho functions remain arbitrary formal polynomial-valued
+functions. Nothing in this kernel turns rho(mu)=0 into the formal equationrho=0.
+
+The actual frozen cell grammar has theta1/3,1/2,2/3. Generic kernel calibration
+also covers1/6, both floor and ceiling, with explicit rational coefficient and
+power. Sixth-root support is not silently relabelled as an existing detector
+source descriptor. Root nodes remain exact opaque index expressions; no numerical
+root approximation or threshold comparison is used to prove a partition.
+
+Source adapter and precise remaining gap
+
+primitive_state_parametric_sources.py binds18 immutable compiler hashes and the
+full366-square/613-relation descriptor digest. Its limited recipes explicitly
+retain all1<=d<=a<=t pairs with d|a, the full outside complement, and regional
+endpoints. All54 existing divisor-cell square groups match the finite compiler
+at development scales1,2 in regression tests. Those samples are NOT the proof
+of a universal identity or a universal compiler-equivalence theorem.
+
+The independent checker separately translates the expected named source trees
+to scoped DAG semantics, checking both theorem roots, parameter/function context,
+source hashes and recipe IDs. Thus a proof of an unrelated truncated expression
+cannot pass merely by copying its source label. The adapter's source formulas
+were separately reviewed, but universal equivalence with the entire finite
+compiler has NOT been formally proved. That flag remainsFalse. The full target,
+other source groups, all nonconstant coefficients, arithmetic specialization,
+positivity and signed bound still need their own proofs.
+
+The generic formal array is indexed by integers. It does not infer the detector's
+actual horizon1..4X-1 from Int typing. This adapter explicitly retains positive
+in-range source domains. Generic ratio uses exact division for nonzero denominator
+and zero otherwise; the actual reciprocal cell weights have denominatora>=1.
+Source contexts and opaque function definitions are bound separately; source
+hashes alone are not a semantic proof or an arithmetic oracle.
+
+Soundness and validation
+
+All54 frozen calibration tests passed. They include14 producer tests,16 independent
+kernel tests,11 independent mathematical/adversarial tests,4 source-adapter tests,
+4 runner tests and5 whole-archive tests. Six additional publication tests passed.
+Adversarial cases cover omitted complements, overlapping inclusive boundaries,
+changed domains/multiplicities/root conventions, binder capture, bad proof DAG
+references, polynomial/Boolean confusion and invalid Möbius-to-formal promotion.
+No false-positive formal equality was found in this bounded review. That is not
+a proof of every possible implementation execution's soundness.
+
+parametric_identity_soundness_review_v1.txt records the independent review and
+remaining semantic scope. The initial source-attribution flag issue was corrected
+before freeze by requiring the complete expected context and source roots.
+
+Thirty source files are frozen. The actual run completed in14.186882329s including
+the54-test prescore suite, with observed peak574812KiB and enforced2GiB address
+space cap. Its main-process CPU was3.201846278s (test subprocess CPU is separate).
+Producer reported262755operations across all74 statements; worker independent
+checkers used329273operations. The whole independent archive replay passed in
+0.783677929s, charging1457673operations including its source/artifact work.
+The largest proof receipt is17295bytes, below the65536byte per-proof cap.
+
+The conservative whole-experiment reserve373m includes74m producer,74m worker
+checkers,100m whole-audit allowance,100m bindings/I/O and25m tests, below450m.
+There is no budget split that hides required verification. Per-certificate
+producer/checker allowance1m; common syntax caps50000ASTnodes,4096proofnodes,
+20000ring cells,4096coefficient bits and128depth. Resource stops cannot admit a
+theorem. The run and all previous publications are now immutable.
+
+Archive APIs and bindings
+
+Producer(context,source_bindings=...,recipe_ids=...,limits=...,deadline=...)
+  .from_tree(named_tree) -> scoped DAG root ID
+  .prove(lhsID,rhsID) -> proved or UNKNOWN FORMAL_EQ receipt
+
+verify_certificate(receipt,expected_source_bindings=...,expected_recipe_ids=...,
+  expected_context=...,expected_function_bindings=...,
+  expected_lhs_tree=...,expected_rhs_tree=...,deadline=...,caps...) independently
+binds source statements and replays every proof node. Source roots/context are
+essential for attribution; a generic identity alone licenses no detector source.
+
+The completed archive review uses full filename keys in input_sha256:
+source_seal.json,recipes.json,protocol.json,seal.json,tests.json,execution.json,
+receipt.json. Unlike the older numerical reviews, DO NOT append.json to these.
+The exact terminal inventory permits only the declared root files and74 pairs
+of jobs/NNN/proof.json/check.json; nested rogue receipts cannot hide from it.
+
+Next numerical work, informed by publication018
+
+primitive_state_free_search_preconditioning_analysis_v1.txt inspected the stored
+trace without computing new candidate scores. The99.2% total merit improvement
+was scalar dominated: scalar penalty17,992,480.7626 ->137,796.0358, while PSD
+penalty0.300008506 ->0.306254837 slightly worsened. All141 negative square weights
+and two indefinite matrices remain; blindly extending the same step does not
+address disparate coordinate sensitivity.
+
+Recommended next experiment: stream all445 homogeneous column responsesNe_j of
+the licensed sparse chart, compute producer exact-rational cone-output norms,
+and choose strictly positive dyadic cone-Jacobi scalesD. Center on publication018
+as f=f018+D z, z0=0. Recompute the scaled power operator D N^T B^T B N D and use
+the z-gradient in Armijo. Any positiveD preserves the same affine/cone feasible
+set. Norms can be proposal-only calibration; do not claim an independently
+certified spectral bound without paying for a complete second norm replay.
+
+The memo proposes100m norms,110m numerical search and15m extra audit on top of
+roughly220.5m fixed work, subject to recomputing actual input/receipt reserves
+before freeze. Stream columns instead of retaining denseN. Exact endpoint export
+must compute f018+D z as a rational sum; it can exceed269 significant bits even
+though both exports are finite dyadics. Preserve the4096-bit endpoint bound and
+all5641 original equality/sign/PSD checks. No guessed face, clipping, new seed
+sweep or covert approximate fallback on exact-norm cap failure.
+
+Next analytical work should extend verified source recipes and explicit primitive
+definitions/reindexing toward the FULL candidate's nonconstant identity. These
+partition proofs provide reusable checks, not the missing positivity or prime
+estimate. Actual Möbius specialization and the global innovation inequality
+remain separate obligations. The goal of signed arithmetic control at RH strength
+remains active and unmet.

@@ -1,0 +1,62 @@
+Complete gcd projection: actual signed estimates and recovery gap
+Reviewer /root/sol61_candidate_batch03. No numerical scores or changed frozen formulas.
+
+Notation. For integer y>=1, M(y)=sum_{n<=y}mu(n),
+ U_d(y)=sum_{n<=y,d|n}mu(n),
+ T_d(t)=sum_{n<=t,(n,d)=1}mu(n).
+For squarefree d, U_d(y)=mu(d)T_d(floor(y/d)); nonsquarefree d gives0.
+The calibrated complete identity is
+ S(y)=sum_{a,b<=y,(a,b)=1}mu(a)mu(b)
+     =sum_{d<=y}mu(d)U_d(y)^2=M(y)^2+R(y),
+ R(y)=sum_{2<=d<=y}mu(d)T_d(floor(y/d))^2.
+All source pairs, including ab>y, remain. This is not a positive Gram: outer mu(d) is signed.
+
+1. A genuine unconditional auxiliary improvement, with imported PNT dependence.
+Define D(y)=sum_{d<=y}|mu(d)|U_d(y)^2. Then D(y)=o(y^2), hence |S(y)|=o(y^2).
+This uses the established actual theorem M(t)=o(t), equivalent to PNT; it is not a newly discovered proof of PNT.
+Proof: For fixed squarefree d let E_d consist of integers whose prime factors divide d (including1).
+Exact convolution removes the finitely many Euler factors:
+ T_d(t)=sum_{a in E_d,a<=t}M(floor(t/a)).
+Moreover sum_{a in E_d}1/a=product_{p|d}(1-1/p)^(-1)<infinity.
+Since |M(floor(t/a))|<=t/a and M(t)=o(t), dominated finite/infinite summation gives T_d(t)=o(t) for each FIXED d.
+Thus U_d(y)=o(y) for each fixed d. For a fixed cutoff B,
+ sum_{d>B}|mu(d)|U_d(y)^2<=y^2 sum_{d>B}d^(-2)<=y^2/B.
+Divide by y^2, first let y tend to infinity with B fixed, then B tend to infinity. The finite head tends0, proving D(y)=o(y^2).
+This is a proved signed-inner-prefix gain beyond unsigned O(y^2), but does not give a power saving or critical estimate. It provides no new uniform rate in d.
+Primary formal proof source for the imported M=o(x)/PNT equivalence:
+ https://isa-afp.org/browser_info/current/AFP/Prime_Distribution_Elementary/Moebius_Mu_Sum.html
+All remaining argument above is supplied here independently.
+
+2. Precise RH-sufficient signed recovery hypotheses.
+If some FIXED theta<1 satisfies, for every epsilon>0, constants K_epsilon,L_epsilon with
+ S(y)<=K_epsilon y^(1+epsilon),
+ R(y)>=-theta M(y)^2-L_epsilon y^(1+epsilon),
+for every sufficiently large integer y, then
+ (1-theta)M(y)^2<=S(y)+L_epsilon y^(1+epsilon)
+                    <=(K_epsilon+L_epsilon)y^(1+epsilon).
+Therefore M(y)=O_epsilon(y^(1/2+epsilon)), the ordinary RH bridge. Both missing inequalities retain actual signs. Neither is proved here. A bound for S alone does not recover M, because R may cancel its d1 term.
+This is a conditional theorem with an explicit nonnegative recovery margin1-theta, not a certificate obtained by rearranging S=M^2+R.
+
+An alternative exact block formulation uses
+ Q_d(X)=sum_{t=X}^{2X-1}U_d(t)^2,
+ P(X)=sum_{d<=2X-1}mu(d)Q_d(X),
+ R_block(X)=sum_{2<=d<=2X-1}mu(d)Q_d(X).
+Then ordinary A(X)=P(X)-R_block(X) and
+ Delta(X)=[P(2X)-4P(X)]-[R_block(2X)-4R_block(X)].
+Upper control of the first signed innovation and lower control of the second, both O_epsilon(X^(2+epsilon)) at every dyadic X, would give the original critical defect estimate. This identity is universally exact; either signed bound remains unproved. Combining them into a single target without a new argument merely rewrites Delta.
+
+3. Why simple triangular induction cannot contract.
+Removing prime2 yields exactly T_2(t)=sum_{j>=0}M(floor(t/2^j)).
+An inductive envelope |M(t)|<=C t^alpha gives
+ |U_2(y)|<=C y^alpha*2^(-alpha)/(1-2^(-alpha)),
+so the single negative d2 square costs the normalized triangle coefficient
+ [2^(-alpha)/(1-2^(-alpha))]^2.
+This coefficient is>=1 for every0<alpha<=1 (equal1 onlyalpha1), and about5.828 atalpha1/2. Thus the direct absolute-value recovery already loses contraction before any other divisor is included. This is a limitation of this estimate, NOT a proof that actual T2 attains it or that every induction is impossible. Improvement needs signed/cross-channel interaction or stronger actual arithmetic information.
+
+4. Circular/unsigned substitutes.
+The positive norm D contains M(y)^2 as d1. An all-scale critical bound D(y)=O_epsilon(y^(1+epsilon)) directly assumes ordinary critical M control; calling it a new norm certificate does not bypass the problem. Conversely under a critical M envelope, Euler-factor removal bounds T_d using product_{p|d}(1-p^(-sigma))^(-1), and absolute summation gives D(y)=O_epsilon(y^(1+epsilon)) with small epsilon losses. This equivalence makes D a useful target representation, not an unconditional proof route.
+Kernel PSD only proves positivity of each Q_d. It gives neither the sign of mu(d)Q_d nor coercivity of R. Replacing outer mu by |mu|, omitting d1, or keeping only negative prime divisors changes the claimed object. Coprime-box control at y=floor(sqrt N) does not recover M(N); all strip and noncoprime channels must be accounted for.
+
+5. Concrete next search objective.
+Use COMPLETE block P/R channels with shared own-scale kernel J_X, and seek a structured coercivity certificate for R plus a signed estimate for P. Expose d1, a small supplied prime orbit (d2,d3), and the EXACT remaining divisor sum as separate components. A finite dictionary must retain the latter; thresholding it away destroys recovery. Use norm/inverse-row/gcd relations to close cubic products, with all boundaries and common-divisor collisions. A successful finite identity is only a proposed template: uniform signed remainder and theta<1 remain analytical obligations. The exact previous cone separator dictates genuinely new columns/sharing, not more constants or root orders.
+No new mathematical global claim about the original candidates is promoted. No numerical pilot was needed for the conclusions above.

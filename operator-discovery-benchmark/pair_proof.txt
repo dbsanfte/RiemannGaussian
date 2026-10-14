@@ -1,0 +1,257 @@
+NONLINEAR PRIME-SUM COUPLINGS WITH ORDINARY-ZETA ROOT CONTROLS
+
+Status: written universal proofs with independent exact and Arb checks.
+Historical originality is unresolved. This stage supplies no new RH estimate.
+The operator is a nonlinear arithmetic map, not an associative product or
+a homomorphism of the ordinary Dirichlet unit group.
+
+1. A RESTRICTION THE EARLIER ROOT GRAMMAR IMPOSED
+
+Let D be ordinary Dirichlet convolution, with unit delta_1. Normalized
+inputs have f(1)=1; augmentation inputs have h(1)=0. LOG_D and EXP_D
+are inverse coefficient-local maps in characteristic zero.
+
+Suppose each coefficient of a normalized map P is polynomial in finitely
+many input coefficients. If P(f^(D 1/2))=P(f)^(D 1/2) for EVERY such f,
+put Q(h)=LOG_D P(EXP_D h). Then Q(h/2)=Q(h)/2. In each output coordinate,
+decompose Q into homogeneous polynomial parts Q_j. Comparison gives
+  (2^(-j)-1/2) Q_j=0.
+Only j=1 survives, including the vanishing constant term. Thus Q is linear
+and P=EXP_D L LOG_D for a coefficient-local linear L. The same argument
+works coefficientwise for a formal power series at the unit, interpreting
+the identity as a formal identity. It does not cover arbitrary nonregular
+maps that are merely homogeneous under real scaling.
+
+Consequently universal INPUT-root commutation would exclude all nonlinear
+logarithmic couplings before an empirical search. The new gate instead
+requires a separate ordinary-zeta zero/branch bridge on the selected input.
+The toy polynomial search scores 3125 programs and keeps five linear
+scalars. This is a calibration of the theorem, not its proof or new operators.
+
+2. THE BILINEAR INDEX RULE AND ITS NONLINEAR INVERSE
+
+For integer r>=0 and augmentation inputs a,b define
+  Phi_r(x,y)=xy(x+y)^r, x,y>=2,
+  K_r(a,b)(N)=sum_(Phi_r(x,y)=N) a(x)b(y),
+  P_r(f)=EXP_D(g+K_r(g,g)), g=LOG_D f.
+
+Every fibre is finite and Phi_r(x,y)>max(x,y). Hence P_r is a
+coefficient-local polynomial map with an exact inverse as a SET map:
+given h=LOG_D(output), recover
+  g(N)=h(N)-sum_(Phi_r(x,y)=N) g(x)g(y)
+in ascending N and return EXP_D g. All arguments on the right are smaller
+than N. This proves existence, uniqueness, two-sided inversion and prefix
+consistency on all normalized characteristic-zero inputs.
+
+K is commutative and bilinear. At r=0 it is classical D convolution on
+the augmentation ideal. At r>=1 it is NOT generally associative: impulses
+at 2,2,3 give indices Phi(Phi(2,2),3) and Phi(2,Phi(2,3)), which differ in
+each tested positive r and, at r=1, are 912 and 1920. No EXP_K is used.
+For all r>=1 the two values are respectively
+  12*(16*4^r+12)^r and 12*(30*5^r+10)^r.
+The second base is strictly larger, proving nonassociativity for every
+positive r, beyond the finite examples.
+
+The inverse log solves g=h-K(g,g). Its homogeneous degree-l term is
+(-1)^(l-1) times the sum over ordered full binary trees with l leaves,
+each leaf carrying h and each internal node carrying K. The recursion
+splits a tree at its root. Coefficient-local termination follows because
+every image is at least the product of its leaf indices, hence >=2^l.
+
+For h=t*delta_2, summing coefficients in degree l gives
+(-1)^(l-1) C_(l-1), with the CLASSICAL Catalan number C_j. The learned
+mass ratio is C_l/C_(l-1)=(4l-2)/(l+1): 4032 rational programs, fourteen
+training fits, one held-out survivor. The independent checker explicitly
+enumerates all ordered tree shapes rather than using the production
+coefficient recursion. At r=0 the inverse is the known expression
+  g=(sqrt_D(delta_1+4h)-delta_1)/2.
+
+At r=3 tree shapes acquire genuinely different integer labels. The
+four-leaf balanced label is 8796093022208 with coefficient -1; the comb
+label is 11954910012443774468835132966078494343168 with coefficient -4.
+Their total -5 is classical; their labelled arithmetic content is separate.
+This does not by itself establish historical originality.
+
+3. INPUT ROOTS, OUTPUT ROOTS, AND THE EXACT ANOMALY
+
+For beta in the coefficient field, keep the following families distinct:
+  I_beta(f)=P_r(f^(D beta))=EXP_D(beta*g+beta^2*K_r(g,g)),
+  O_beta(f)=P_r(f)^(D beta)=EXP_D(beta*g+beta*K_r(g,g)).
+Their ordinary D quotient satisfies the universal exact identity
+  I_beta /_D O_beta=EXP_D(beta*(beta-1)*K_r(g,g)).
+The amplitude grammar scores 625 polynomials, has four training fits and
+one fresh survivor beta^2. This confirms the nonlinear amplitude, whose
+universal proof follows from bilinearity. In particular P is neither a
+unit-group homomorphism nor universally input-root-equivariant. These
+stronger claims are explicitly rejected on generic rational inputs.
+
+4. PARITY QUOTIENT AND ACTUAL PRIME LABELS
+
+For every r>=1, Phi_r(x,y) is even: either xy is even, or x,y are both
+odd and x+y is even. Thus K_r takes values in the ideal of functions
+supported on even indices. Restriction O to odd indices is a D algebra
+homomorphism, because all divisors of an odd integer are odd. It commutes
+with coefficient-local LOG_D and EXP_D. It follows universally that
+  O(P_r(f))=O(f).
+The inverse also fixes this quotient. Both root families restrict to the
+same ordinary odd part of f^(D beta). For r=0 this statement fails.
+
+For zeta input u(n)=1 and r=3, the first coupling is at Phi(2,2)=256,
+with log-correction coefficient 1. Its exponential has no other nonunit
+divisor of 256. Therefore P_3(u)(256)=2. In contrast 6561=3^8 is odd,
+so P_3(u)(6561)=1. Swapping the labels 2 and 3 preserves u but changes
+these values, proving actual-prime-label dependence on zeta itself.
+The separate generic impulse counterexample is 256 -> 3^8=6561 versus
+Phi(3,3)=1944. Generic inversion does not require factorization labels.
+The actual zeta application is also nonmultiplicative: P_3(u)(750)=3
+while P_3(u)(2)=P_3(u)(375)=1, and gcd(2,375)=1. The mixed pair 2,3
+contributes twice at 750=2*3*5^3. These exact coefficients are included
+in both previously verified full arithmetic profiles.
+
+The odd-part Dirichlet series is (1-2^(-s))*zeta(s) at beta=1, and
+((1-2^(-s))*zeta(s))^beta for either root family initially Re(s)>1.
+This exact known-factor recovery is arithmetic structure, not an RH bound.
+
+5. ABSOLUTE CORRECTION DOMAIN AND THE SCALAR ZETA BRIDGE
+
+For zeta input g=LOG_D u, g(n)=1/e at prime powers n=p^e and zero
+otherwise. Write the NORMALIZED Euler logarithm L(z)=LOG zeta(z) on
+Re(z)>1. Define the ordinary positive-coefficient correction series
+  Gamma_r(s)=sum_(x,y>=2) g(x)g(y)/[xy(x+y)^r]^s.
+
+For sigma=Re(s)>2/(r+2), AM-GM gives
+  Phi_r(x,y)>=2^r*(xy)^((r+2)/2),
+  sum |terms| <=2^(-r*sigma)*L((r+2)*sigma/2)^2.
+This proves absolute and locally uniform convergence, hence holomorphy.
+It is a sufficient half-plane, not a claim of the exact maximal domain.
+At r=3 the half-plane is Re(s)>2/5, covering both sides of the critical
+line and the two existing simple-zero disks. The seven-r grammar selects
+r=3 as the least r with this certificate crossing Re(s)=1/2. Absence
+of that particular certificate for r=1,2 does not disprove continuation.
+
+Initially Re(s)>1 the ordinary coefficient series of the root families are
+  I_beta(u;s)=zeta(s)^beta * exp(beta^2*Gamma_r(s)),
+  O_beta(u;s)=zeta(s)^beta * exp(beta*Gamma_r(s)).
+The exponentials are holomorphic and zero-free in the correction domain
+for EVERY fixed complex beta. At beta=1 the transform preserves all zeta
+zeros and their multiplicities in that domain. Coefficients of both
+families are nonnegative for real beta>=0.
+
+For r>0, beta Mellin inversion gives, with A=rs/2 and B=(r+2)s/2,
+  Gamma_r(s)=1/(2*pi)*integral_(t real)
+    Gamma(A+it)*Gamma(A-it)/Gamma(rs)
+    *L(B+it)*L(B-it) dt.
+Indeed apply the Mellin transform of (1+v)^(-rs), supplied by Euler's
+beta integral, to (x+y)^(-rs), and interchange the double sum and integral.
+The sums become L(s+z) and L((r+1)s-z) on the contour z=rs/2+it. Their
+real parts equal Re(B)>1, and exponential gamma decay justifies Fubini.
+The integrand is even in t; integration from 0 to T uses factor 1/pi.
+
+This is a prime-power-weighted Mordell--Tornheim-type construction. The
+Tornheim kernel and beta Mellin inversion are classical, not discoveries
+of this detector. The specific formal nonlinear map and its application
+have unresolved historical status. The source evaluates native zeta in
+the contour integral; the independent bridge uses one native zeta value
+and a grouped arithmetic double sum, with different cutoffs and tails.
+
+6. EXPLICIT CERTIFIED CONTOUR AND COEFFICIENT TAILS
+
+Let a=r*sigma/2>0, U=|r*Im(s)/2|, b=ceil(2a)/2, p=2b-1>=0, and T>U+1.
+The beta integral implies |Gamma(a+iy)|<=Gamma(a)/Gamma(b)*|Gamma(b+iy)|;
+at a=b use equality. For integer or half-integer b, reflection and gamma
+recurrence give, whenever |y|>=1,
+  |Gamma(b+iy)|<=sqrt(C)*(|y|+b)^(b-1/2)*exp(-pi*|y|/2),
+  C=2*pi/(1-exp(-2*pi)).
+For |t|>=T, the product's exponential is exp(-pi*|t|). The total omitted
+contour contribution is bounded by
+  C/(pi*|Gamma(rs)|)*(Gamma(a)/Gamma(b))^2*L(Re(B))^2 * J,
+  J=exp(-pi*T)*sum_(j=0)^p binom(p,j)*(T+U+b)^(p-j)*j!/pi^(j+1).
+J is the exact integral of (t+U+b)^p*exp(-pi*t) from T to infinity.
+Arb lower-bounds |Gamma(rs)| and encloses all other factors outwards.
+
+The finite integral uses python-flint/Arb acb.integral, propagating its
+analytic flag to the native logarithm. The general formula uses the Euler
+LOG branch. At all numerical contour instances L(Re(B))<pi, so the native
+principal logarithm is that branch. The small initial segments near the
+critical line prevent indeterminate wide log enclosures. All final native
+integrals are finite; no failed integral is silently accepted.
+
+For a direct prime-power square cutoff M, put alpha=(r+2)*sigma/2,
+S=L(alpha) and tail E<=M^(1-alpha)/(alpha-1). The square's omitted terms
+have bound 2^(-r*sigma)*2*S*E. Independently, subtract the exact positive
+prime-power prefix S_M from native S and use
+  2^(-r*sigma)*(2*S_M*E+E^2), E=S-S_M.
+
+For full arithmetic coefficient cutoff N, beta in [0,1] and c=beta or
+beta^2, the baseline zeta^beta coefficients lie in [0,1]. The correction's
+positive 1-norm is exp(c*Gamma_r(1)). Hence the entire output tail at
+sigma>1 is bounded by
+  (1+1/(sigma-1))*N^(1-sigma)*exp(c*Gamma_r(1)).
+Use the proved AM-GM bound on Gamma_r(1), or independently replace L by
+zeta-1. This follows by summing the ordinary convolution and applying the
+integral bound to its baseline tail; it also covers correction indices>N.
+Source N=4096, square M=64; independent N=6144, square M=80.
+All six fresh complex cases pass. Each rejects a coefficient-2 perturbation,
+a first-kernel-coefficient perturbation, and an incorrect contour factor.
+The independent kernel-only beta integral verifies the normalization with
+a separate real positive pair and its own explicit gamma tail.
+
+7. ORDINARY-ZETA ZERO AND BRANCH SCOPE
+
+Reuse existing independently checked simple-zeta-zero certificates near
+1/2+14.1347251417i (radius 1/10000) and 1/2+21.0220396388i (radius 1/100000).
+These are operator controls at existing certified zeros, not new zeta zeros.
+Both entire disks lie in Re(s)>2/5. For their minimum real part sigma_0,
+  |Gamma_3(s)|<=8^(-sigma_0)*L(5*sigma_0/2)^2=M.
+Thus |exp(c*Gamma_3)|>=exp(-c*M)>0 for real c>=0 on the WHOLE disk.
+The independent proof replaces L by zeta-1 and obtains another positive
+whole-disk bound. Native centre integrals are additionally compared with
+arithmetic double-sum enclosures; loose boundary double-sum tails are
+explicitly recorded and are not claimed to give precise point values.
+
+Around a simple zero, BOTH root families acquire the phase exp(2*pi*i*beta).
+Their correction amplitudes differ (beta^2 versus beta), while the ordinary
+zeta obstruction survives in each. Twelve controls test beta=1/2,1/4,1
+in both families on both disks. The reported positive phase-factor bound is
+  |(exp(2*pi*i*beta)-1)*C(s)|,
+NOT the full H jump, which has the additional vanishing factor zeta^beta.
+The integer phase is exactly zero. This stage says nothing new about
+off-critical-line zeta zeros.
+
+The r=0 known composite has Gamma_0=(LOG zeta)^2. Its correction changes
+by exp(4*pi*i*LOG zeta-4*pi^2) after a loop around a simple zero. It is
+therefore not a single-valued holomorphic correction across that zero.
+A scoped toy logarithm numerically checks the nontrivial ratio; the
+universal local argument is algebraic and uses the certified simple zero.
+
+For either r=3 root family, single-valued holomorphic continuation of ALL
+pole-cancelled dyadic roots to Re(s)>1/2 is equivalent to RH, by the existing
+multiplicity/divisibility argument. The needed continuation is unproved.
+Preserved zero multiplicities, invertibility, Catalan inverse trees, parity
+and a zero-free explicit factor provide no new estimate establishing RH.
+
+8. EVIDENCE AND PRIOR ART
+
+Files: pair_search.py, check_pair.py, pair_analytic.py,
+pair_bridge_prototype.py, check_pair_analytic.py, plot_pair.py.
+Evidence: pair-results/. Seven independent exact gates and five independent
+analytic gates pass. The two implementations share trusted FLINT/Arb and
+already-audited independent divisor LOG/EXP recursions, but the independent
+checker imports no production pair operator or contour implementation.
+
+Classical Catalan formulas: https://dlmf.nist.gov/26.5
+Beta identities: https://dlmf.nist.gov/5.12.E1 and https://dlmf.nist.gov/5.12.E3
+Gamma recurrence/reflection: https://dlmf.nist.gov/5.5
+Native certified integration contract:
+https://python-flint.readthedocs.io/en/latest/acb.html
+Mordell--Tornheim framework, including modern finite analogues:
+https://arxiv.org/abs/2401.03380
+Generalized multiple-zeta Mellin--Barnes framework:
+https://www.impan.pl/shop/en/publication/transaction/download/product/81948
+(Primary search excerpt inspected; full publisher fetch returned HTTP 503.)
+
+No reviewed precise historical match establishes originality of this
+compound application. Failure to find a match is not a novelty certificate.
+This is the eighth mathematically verified candidate family, contributing
+six comparison cases to the cumulative 108. Historically verified-new
+operators: still zero. Research active.

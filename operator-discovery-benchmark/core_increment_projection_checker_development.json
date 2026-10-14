@@ -1,0 +1,42 @@
+{
+  "operations": 48743,
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_increment_projection"
+      ],
+      "returncode": 1,
+      "operations": 48561,
+      "elapsed_seconds": 0.07722341400221922,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_increment_projection operations=48561\n",
+      "stderr": "test_all_auxiliary_bound_constants_and_scope (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_global_log_history_half_head_and_error_units (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests) ... ERROR\ntest_rational_detail_payment_and_unpaid_mesh (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_singletons_exact_zero_detail_and_complete_unit (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_strict_mesh_state_and_complete_cells (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_variance_and_cauchy_path_by_all_pairs (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_weighted_delay_prepare_complete_signed_cross (test_check_core_increment_projection.IncrementProjectionTests) ... ok\n\n======================================================================\nERROR: test_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_increment_projection.py\", line 118, in test_interval_equality_is_unresolved_not_failed\n    prepared = dict(H=3, U=[arb(0), arb(0), arb('1 +/- 1/8'), arb('1 +/- 1/8')], Q=[arb(0)] * 4, weight=arb(1))\n  File \"flint/types/arb.pyx\", line 202, in flint.types.arb.arb.__init__\n  File \"flint/types/arb.pyx\", line 118, in flint.types.arb.arb_set_python\n  File \"flint/types/arb.pyx\", line 53, in flint.types.arb.arb_from_str\nValueError: invalid string for arb()\n\n----------------------------------------------------------------------\nRan 8 tests in 0.008s\n\nFAILED (errors=1)\n",
+      "receipt_lines": 1,
+      "actual_source_runs": 0,
+      "synthetic_max_horizon": 127
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_increment_projection.IncrementProjectionTests.test_interval_equality_is_unresolved_not_failed"
+      ],
+      "returncode": 0,
+      "operations": 182,
+      "elapsed_seconds": 0.06833482999354601,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_increment_projection operations=182\n",
+      "stderr": "test_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "receipt_lines": 1,
+      "actual_source_runs": 0,
+      "synthetic_max_horizon": 3,
+      "reason": "Affected-only rerun after expressing exact1/8 radius as accepted decimal0.125 in Arb fixture"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new test_mobius_sparse_prefix_066 suite",
+      "returncode": 0,
+      "tests": 8,
+      "stdout": "test_arbitrary_rational_tail_locations_and_rejections (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_direct_small_horizons_and_terminal_inverse_row (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_full_untruncated_source_contracts_to_six_floors (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_joined_interval_cancellation_and_unit (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_moments_include_every_row_without_claiming_a_rate (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_short_raw_coefficients_match_fresh_old_construction (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_source_rewrite_all_small_prefixes_and_endpoints (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\ntest_uniform_tail_telescoping_dominates_every_actual_tail (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.064s\n\nOK\n",
+      "operations": 135885,
+      "elapsed_seconds": 0.06416759901912883,
+      "peak_rss_KiB": 15272
+    },
+    {
+      "command": "new isolated same-raw-source integration test",
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_independent_admission_and_same_raw_source_binding (test_mobius_sparse_prefix_066.SparsePrefixTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.264s\n\nOK\n",
+      "operations": 24771,
+      "elapsed_seconds": 0.2641662019887008,
+      "peak_rss_KiB": 43860
+    }
+  ],
+  "operations": 160656,
+  "unique_new_synthetic_tests": 9,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false
+}

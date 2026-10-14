@@ -1,0 +1,236 @@
+TYPED LATTICE ESTIMATE SYNTHESIS AND COMPLEMENTARY FRACTIONAL DILATIONS
+
+Scope. This document gives supplied proof methods, not a proof of RH. The
+detector chooses formulas, contour parameters, estimates and complementary
+banks within a frozen bounded search. Only the unit-reference decay theorem,
+the elementary weak actual bound, the sign-loss barrier, and the conditional
+zero bridges are proved here. Actual critical uniform estimates remain open.
+Arithmetic input types are mathematical premises, not interchangeable labels.
+
+1. Exact arithmetic and complete evaluation
+
+Let K>1, ell>0, r>1 and R>0 be rational, and let
+ Q(y)=sum_m c_m (R y)^m exp(-R y),
+with finitely many nonnegative integer m and nonzero rational coefficients.
+Set g(u)=u^K Q(u^ell), G(Y)=sum_{j>=1} g(Y/j), and
+ D_mu,r(X)=sum_{d,j>=1} mu(d) g(X/(j d^r)),
+ D_1,r(X)=sum_{d,j>=1} g(X/(j d^r)).
+These sums are absolutely convergent at every positive X: each atom is
+bounded by a constant times X^(K+ell*m)(j d^r)^(-K-ell*m), and K>1, r>1.
+For integral r, the actual coefficients on integer positions are the r-free
+indicator sum_{d^r|n} mu(d). Fractional r gives a generalized signed measure
+on the positive real positions j d^r; positivity is not asserted.
+
+The exact prefix cutoff for r=p/q in lowest terms is j^q d^p<=N^q.
+Moments at w=K+ell*h>1 are zeta(w)/zeta(r*w) for the actual model and
+zeta(w)*zeta(r*w) for the unit model. The unsigned counting measure is at
+most zeta(r)*t, since sum_d floor(t/d^r)<=t*zeta(r). Consequently each tail
+moment in absolute value is at most zeta(r)*w*N^(1-w)/(w-1).
+Taylor's theorem for exp(-z), z>=0, gives a remainder at most z^L/L!.
+Combining this with the complete tail moments encloses all infinite terms;
+the finite prefix is not substituted for the arithmetic object. Ball
+precision must resolve cancellation in the small tail moments themselves.
+
+2. Mellin transform, residues and the exact signed rewrite
+
+With v=(K-s)/ell and P(v)=sum_m c_m (v)_m,
+ W(s)=integral_0^infinity g(u) u^(-s-1) du
+     =Gamma(v)*P(v)*R^(-v)/ell, Re(s)<K.
+For 1<Re(s)<K, the Mellin transforms of D_mu,r and D_1,r are respectively
+ W(s)*zeta(s)/zeta(r*s), W(s)*zeta(s)*zeta(r*s).
+Let I=W(1), A=I/zeta(r) and
+ B=zeta(1/r)*W(1/r)/r. The reference main residue is zeta(r)*I.
+Both residues vanish exactly iff P((K-1)/ell)=P((K-1/r)/ell)=0.
+For e(Y)=G(Y)-I*Y, absolute convergence gives the exact actual rewrite
+ Z_mu,r(X):=D_mu,r(X)-A*X = sum_d mu(d) e(X/d^r).
+The reference residual is
+ R_1,r(X)=D_1,r(X)-zeta(r)*I*X-B*X^(1/r).
+There is no analogous secondary residue claimed for the actual model.
+
+3. Elementary actual all-scale bound and normalization
+
+Write Q_r(x)=sum_d mu(d) floor(x/d^r). For x>=1, t=x^(1/r), a=floor(t),
+ |Q_r(x)-x/zeta(r)| <= a+x*a^(1-r)/(r-1).
+After division by t this is 1/u+u^(r-1)/(r-1), 1<=u=t/a<2.
+Its derivative is (u^r-1)/u^2>=0, so a valid constant is
+ C_r=1/2+2^(r-1)/(r-1).
+For 0<x<1 the same bound holds because Q_r(x)=0 and x<=x^(1/r).
+Partial summation against g(X/t), including both endpoints, gives
+ |Z_mu,r(X)| <= C_r*U_Q,r*X^(1/r), every real X>0,
+ U_Q,r=sum_m |c_m| R^((1/r-K)/ell) Gamma((K-1/r)/ell+m)
+        *[(K+ell*m)+ell*((K-1/r)/ell+m)]/ell.
+This is a signed true arithmetic theorem, but its ordinary-zeta exponent
+is r*(1/r)=1 for every r. Merely increasing r does not strengthen it.
+The RH target is density exponent (1/2+epsilon/q^nu)/r, with arbitrary
+positive rational nu and independent finite C_q for every integer q>=1.
+No growth law for C_q and no finite substitute for all q is imposed.
+
+4. Automatically synthesized global negative powers: UNIT model only
+
+For every rational a>0, every admissible Q has
+ |R_1,r(X)| <= C_a X^(-a), every real X>0.
+Here is an explicit certificate for C_a, including the whole height axis.
+Rotate Euler's Gamma integral by theta, |theta|<pi/2. For alpha>0,
+ |Gamma(alpha+it)|<=Gamma(alpha)*(cos theta)^(-alpha)*exp(-theta*|t|).
+This follows by Cauchy's theorem on a sector, choosing the ray sign to
+match t; the arcs vanish at infinity and at zero. No sampled height bound
+is substituted for this inequality.
+The zeta functional equation
+ zeta(s)=2^s*pi^(s-1)*sin(pi*s/2)*Gamma(1-s)*zeta(1-s)
+and |sin(pi*s/2)|<=exp(pi*|Im(s)|/2) give, for A>0 and 0<delta<pi/2,
+ |zeta(-A+it)|<=Z(A,delta)*exp(delta*|t|),
+ Z(A,delta)=2^(-A)*pi^(-A-1)*Gamma(1+A)
+            *(sin delta)^(-1-A)*zeta(1+A).
+Choose a kernel Gamma ray theta_K and a zeta complement delta such that
+ kappa=theta_K/ell-(1+r)*delta>0. At Re(s)=-a, alpha=(K+a)/ell,
+ |P(alpha-it/ell)|<=D(|t|),
+ D(t)=sum_m |c_m| product_{h=0}^{m-1}(alpha+h+t/ell).
+Writing D(t)=sum_j D_j t^j with exact nonnegative rational coefficients,
+ C_a=[Gamma(alpha)*(cos theta_K)^(-alpha)*R^(-alpha)/ell]
+      *Z(a,delta)*Z(r*a,delta)/pi
+      *sum_j D_j*j!/kappa^(j+1).
+Every supplied ray choice is valid. The detector minimizes the certified
+constant over a frozen finite ray grammar; it does not fit a global bound
+from finitely many values. Shift inverse Mellin from 1<c<K to -a. The only
+poles crossed are 1 and 1/r. Gamma poles are at K+ell*h, on the other side
+of the initial contour. Uniform exponential height decay kills the
+horizontal segments (standard functional-equation polynomial bounds on
+the compact intervening strip suffice). Thus the exact centered integral
+has the displayed all-scale bound, including X<1.
+This theorem has no RH consequence: both zeta factors are numerators.
+The actual profile has 1/zeta(r*s). Unknown denominator zeros obstruct
+the same contour shift. A certificate with arithmetic_model=unit cannot
+be applied to arithmetic_model=inverse, even if the formulas look alike.
+
+5. A proved obstruction to discarding the actual sign orientation
+
+For every nonzero common-rate Q there are positive b, b_support, Y0 and
+M0 such that, respectively,
+ sum_d |e(X/d^r)| >= b*X^(1/r), X>=Y0,
+ sum_d |mu(d)|*|e(X/d^r)| >= b_support*X^(1/r), X>=Y0*M0^r.
+This is a limitation of a particular proof method, not a counterexample
+to an actual signed estimate. It remains true after both unit residues
+vanish and after retaining the actual squarefree support of mu.
+
+If I!=0, choose Y0<=1 by halving until
+ sum_m |c_m| R^m zeta(K+ell*m) Y0^(K+ell*m-1)<=|I|/2.
+Then |e(Y)|>=|I|*Y/2 for 0<Y<=Y0; take w=1, L=|I|.
+If I=0, let m0 be the first nonzero coefficient, w=K+ell*m0 and
+L=|c_m0|R^m0*zeta(w)>0. Since |exp(-z)-1|<=z,
+the difference from the leading lattice term is at most
+ |c_m0|R^(m0+1)zeta(w+ell)Y^(w+ell)
+ +sum_{m>m0}|c_m|R^m zeta(K+ell*m)Y^(K+ell*m).
+Choose Y0 by halving until this divided by Y^w is <=L/2. Then
+|e(Y)|>=L*Y^w/2. Both halving procedures terminate mathematically;
+a finite resource exhaustion is a missing certificate, not a false bound.
+
+Set M=ceil((X/Y0)^(1/r)); for X>=Y0, M<=2*(X/Y0)^(1/r).
+The integral lower bound sum_{d>=M}d^(-r*w)>=M^(1-r*w)/(r*w-1)
+gives b=L*Y0^(w-1/r)/(2^(r*w)*(r*w-1)).
+For the actual support, the already proved squarefree count
+ |sum_{d<=x}mu(d)^2-x/zeta(2)|<=(5/2)*sqrt(x)
+implies at least M/(2*zeta(2)) squarefree d in (M,2M] once
+M/(2*zeta(2))>=(5/2)*(sqrt(2*M)+sqrt(M)). A dyadic M0 suffices.
+On this interval |e(X/d^r)|>=L*X^w/(2*(2*M)^(r*w)), so a valid
+b_support=L*Y0^(w-1/r)/(zeta(2)*2^(2*r*w+1)).
+Accordingly any backend estimating the rewritten sum by either of these
+absolute norms cannot supply a power strictly below 1/r. Signed methods
+that keep cancellation between the positive and negative mu(d) remain open.
+
+6. Operator zero preservation without an unnecessary zero-free halfplane
+
+It suffices to prove W(rho/r)!=0 for every ordinary zeta zero with
+1/2<Re(rho)<1 and Im(rho)!=0, at all heights and multiplicities.
+Gamma and R^(-v) are nonzero there. The finite polynomial P need only
+avoid the corresponding v-values. All real roots of P are safe, wherever
+their real part lies, since nontrivial ordinary zeta zeros are nonreal.
+Real-rootedness is certified exactly by the Hermite-Sylvester matrix
+H_ij=sum_roots lambda^(i+j), with multiplicities, being positive
+semidefinite. A rational Schur-complement factorization supplies the
+producer certificate; the independent checker uses exact squarefree
+polynomial division and Sturm root counting instead.
+For nonreal roots, an exact conjugate quadratic real-part test can exclude
+the ordinary strip. Otherwise finite disjoint Rouché disks cover EVERY
+distinct polynomial root. Taylor linear dominance
+ |P'(c)|*h>|P(c)|+sum_{j>=2}|P^(j)(c)/j!|*h^j
+proves one root per disk. A mapped rectangle rho=r*(K-ell*v) is safe if
+outside the right-half strip or if a native zeta ball excludes zero on
+the entire rectangle. Disk count equals the degree of the squarefree
+polynomial, so no operator root is omitted. This is not a sampled zeta
+zero grid. Failure to exclude an operator root is missing recovery,
+not a counterexample to the growth estimate. A safe operator can still
+vanish at a chosen quantitative observer, making that observer unavailable.
+
+7. Fractional dilation constraints and automatically assembled banks
+
+Suppose a zero-preserving actual operator satisfies the critical cofinal
+target in section 3 for every integer N>=1. A true uniform unit increment
+bound extends each estimate to all real X>=1. Its centered Mellin
+integral is holomorphic in Re(s)>1/(2*r). The exact pole subtraction
+removes only the ordinary s=1 pole. If rho is a right-half ordinary zero,
+holomorphy at rho/r forces a numerator zero zeta(rho/r) of at least the
+same multiplicity. When beta/r>1/2, that zero is already in the right
+half. When beta/r<1/2, functional-equation symmetry gives the next zero
+ rho_next=1-conjugate(rho)/r.
+When beta/r=1/2, cancellation by a critical-line numerator zero is allowed.
+
+For r>=2, the reflected branch is always used. Real parts contract to
+r/(r+1) and heights to zero. Infinitely many distinct zeros would
+accumulate at the nonzero real zeta value there, a contradiction.
+For 1<r<2, initially divide while beta>r/2. Unless beta equals r^j/2
+for some j>=1 with r^j<2, this reaches beta<r/2. The interval
+(1/2,r/2) is invariant under beta ->1-beta/r, since
+1-1/(2*r)<r/2 (the difference is (r-1)^2/(2*r)>0).
+The same contraction contradiction follows. Thus the exceptional set is
+ E_r={r^j/2:j>=1,r^j<2}; it is finite and computed exactly.
+An individual r<2 gives a quasi-RH constraint, not RH. A bank whose
+exact intersection of E_r is empty excludes all right-half zeros, hence
+implies RH by symmetry, provided EVERY member's cofinal actual bound is
+uniformly true. Completeness of each finite exception set is mandatory.
+The bank is assembled by the detector; the arithmetic bounds are NOT
+proved by assembling it. Resource exhaustion is not an empty set.
+
+Conversely under RH, reciprocal zeta on any fixed right-of-critical
+vertical line has polynomial height growth. For completeness, center a
+disk at 2+it with radius 3/2-delta/2, for |t|>=2 and 0<delta<1.
+RH excludes zeros in this disk and the pole is outside it. The branch
+of log(zeta) fixed by the Euler product at the center has bounded center
+value, and Re(log(zeta))=log|zeta|=O_delta(log(2+|t|)) throughout the disk,
+by the standard functional-equation polynomial growth bound on its compact
+real-part strip. Borel-Caratheodory on a smaller disk through
+1/2+delta+it gives |log(zeta)|=O_delta(log(2+|t|)). Exponentiating bounds
+1/zeta by a polynomial; the compact remaining heights cause no problem.
+Further-right lines use the Euler product directly. Zeta in the numerator
+also has polynomial growth. Exponential Gamma decay allows shifting to every fixed line
+sigma>(1/2)/r, removing the s=1 pole, and proves the requested cofinal
+bounds with free constants. The standard RH/Mertens equivalence in the
+pinned Titchmarsh is additional calibration, not a new prime bound.
+Hence a certified complementary bank has an RH-equivalent uniform
+premise. Numerical successes establish neither direction's premise.
+
+8. Conditional observer accounting and research status
+
+For each positive atom, the inherited integral-plus-two-peaks estimate
+bounds G(Y)/Y for Y>=1. For 0<Y<=1, the distinct bound
+R^m*zeta(K+ell*m) applies. Add these constants to get an all-Y majorant.
+Since the derivative is a combination of the m and m+1 atoms divided by
+Y, summing its dilations with weights d^(-r) gives a global derivative
+bound with the full zeta(r) cost. Add |A| for the centered response.
+Omitting this local guard would incorrectly apply an undilated large-Y
+bound to the small scales reached by the infinite dilation sum.
+
+For a fixed ordinary query rho=sigma+i*t, set s=rho/r. Charge all local
+integrals, the exact main pole, the actual unit increment, the true
+kernel transform denominator, the numerator zeta(s), and the positive
+distance from each tested exponent to Re(s). Free fitted C_q multiplies
+the full logarithmic integral (ceil(d) is a conservative exponent).
+Every bank member has its own premise and cost; a missing member observer
+is not silently removed. One point observer is not all-height control.
+
+Named mathematical foundations: NIST DLMF 5.9 (Euler Gamma integral),
+25.4.2 (zeta functional equation); Nathanson arXiv:1911.01745, Theorem 1
+(Hermite-Sylvester); pinned Titchmarsh for the RH converse calibration.
+They supply proof backends. The worker receives no papers, named answers,
+prior outcome tables, language-model calls or final test cases.
+All finite fitting results remain conjectural. No uniform RH-sufficient
+actual signed estimate and no new prime-distribution bound is proved.

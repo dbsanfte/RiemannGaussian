@@ -1,0 +1,122 @@
+COMPLETE PRIME-BANK SEARCH HANDOFF -- 9 October 2026
+
+Authoritative archive: prime-bank-results/pilot-001.
+Status: COMPLETE_PRIME_BANK_IDENTITIES_AND_GRAMS_VERIFIED.
+No full uniform signed moment or RH proof. The existing long-term goal remains
+active. No shell process or subagent needs to be resumed for this completed run.
+
+What was implemented
+--------------------
+The actual candidate10 source and full largest-prime partition now run through
+H=1048575. prime_bank_candidates.py uses multiplicative local coefficients,
+direct smooth admissions, and exact prime/cofactor birth/expiry events.
+check_prime_bank_candidates.py independently uses divisor coefficient rows,
+smooth dominance queries and three weighted Fenwick prime banks. All units,
+prime powers, smooth complements, cutoff entries/exits and main terms remain.
+Source construction happens once per producer/checker stage. Two Linux fork
+workers inherit it readonly, without dense-array pickling or duplicate builds.
+
+prime_bank_language.py consumes candidate10_prime_bank_obligation.json and
+constructs generic rational branch certificates, all seven nonempty branch
+subsets, common rational-power polynomial factors, exact cutoff transport,
+low smooth-prefix bounds and a general cofactor-moment-to-bank transfer.
+Analytic premises have explicit provenance and remain distinct from finite
+algebra and numerical evidence. An arbitrary cofactor moment is conditional
+until its source derivation is provided. No numerical constants were fitted.
+
+The catalogue uses theta=1/2,2/3,3/4,4/5,5/6. Before any arithmetic, symbolic
+exponent rules fixed final theta=3/4 and4/5. The full signed Gram has atoms
+(K,-L0,Lu,Lv,-main); all15 entries, five means, direct full/reduced energies,
+diagonal energy, cross contribution and complete child differences are saved.
+The numerical matrix still uses COMPLETE K, including its small-index sector.
+
+Verified run
+------------
+23 frozen tests passed. Producer development:118995; checker:899790; workflow:
+417614 (one8-test suite, then only3affected tests for the new companion rule).
+Frozen suite:1434139; metadata/symbolic reserve:1000000.
+Discovery H65535; X=1,2,4,8,64,256,1024,4096,8192,16384, every full child.
+Final H1048575; X=196608 and262144, every full child. The first final X is a
+nondyadic diagnostic. The data are not advertised as unseen historical primes.
+
+All54 cases and3510 saved scalar intervals independently agree at128/192bits,
+with the declared relative+absolute radius gate. Every complete evaluation
+also checks R=R_new+Lv at every n through its H:4849650 combined (n,theta,route)
+checks, not that many distinct integers. Source bytes matched their snapshots
+at the end. No hashes. All archive files and frozen source should stay fixed.
+
+Total charged work:1352270607/1500000000 (90.15%).
+  preparation:3870538
+  producer discovery:72255665; independent discovery:75614553
+  producer final:549385334; independent final:651144517
+Elapsed:579.213 seconds (about9.7minutes).
+Largest recorded process RSS:1925952KiB (about1.84GiB), below4GiB.
+Largest scalar-cell proxy:40506192, below48m. Aggregate limit16GiB.
+No cap reset, missing-case completion or arithmetic rerun was needed.
+
+What was proved analytically
+----------------------------
+PRIME_BANK_COVARIANCE_REVIEW_001.txt contains the complete derivations.
+For |f(k)|<=C*d_2(k), 0<b<1 and1/2<=theta<1, the WHOLE bank satisfies
+  |B_f,b(x)| <= A*x^(1-b*theta), x>=1,
+  A=C*C_psi*(1-theta)*(1+1/log2)/(b*(1-b)*theta).
+The prime input psi(t)<=C_psi*t has a self-contained binomial proof with
+C_psi=4log2. Empty small-x ranges are treated explicitly. The former log loss
+is removed. For the full Lv branch, theta3/4 therefore gives bounded block
+energy; theta>3/4 gives finite critical norm. At3/4 the full Lv finite critical
+norm is NOT claimed. Its difference-channel component has the stronger bound
+x^(1-b*theta)/log x and finite endpoint critical norm, via the positive
+convolution Delta=z_u-z_v=-beta*mu*(n^-u-n^-v). A finite harmonic Delta bound
+is also paid; no unjustified ordinary sum at the analytic zero s=1 is used.
+
+At fixed x, increasing Y1 toY2 gives
+  R_new(x;Y2)-R_new(x;Y1)=J_v(x;Y1,Y2).
+All large unweighted/u cutoff entries cancel exactly after being retained.
+Thus admitted theta choices are equivalent representations modulo paid terms.
+The complete coefficient prefix h<=sqrt(x) is cofinal logarithmic padding;
+smaller fractional prefixes have explicit finite critical costs. The remaining
+high smooth indices cannot be paired with a bank prime inside the original
+prefix, because h>sqrt(x), q>x^theta imply q*h>x. Any such pairing must pay its
+complete outside-domain compensation.
+
+What the finite data show
+-------------------------
+At theta3/4 and dyadic X262144, direct energy E_R=15.910632118, while the sum
+of the separate component energies is100978.851909944. Their signed mixed
+contribution is-100962.941277826. The largest mixed term is K against-L0:
+-90591.101363 (already includes its factor2). Child E_R=14.945081020.
+These are audited finite diagnostics, not a uniform growth estimate or a
+newly proved cancellation mechanism. E_R differs from the earlier centered
+candidate-J energy: the fixed D and smaller pole corrections were already
+paid analytically, but their finite numerical values are not interchangeable.
+Theta3/4 reaches necessary cofactors up to31 at the largest horizon; theta4/5
+reaches15. Neither finite coverage supplies primes/cofactors over all scales.
+
+Exact next search input
+-----------------------
+candidate10_ordered_prime_covariance_obligation.json is an exact copy of
+archive/next_search_input.json, schema prime-bank-overlap-obligation-v1.
+Its original full target equivalence class is preserved to prevent self-use.
+Let tau_theta(p)=min{n integer>=1:n^a>=p^b}, theta=a/b. The smooth/bank kernel
+is the COMPLETE integer intersection length
+  I=max(0,min(2X,tau_theta(q))-max(X,h,tau_theta(Pplus(h)),q*k)).
+The coefficient is a(h)*z_b(k)*q^-b/X^2, with h>=2,k>=2 and q prime.
+Positive support implies q>Pplus(h), k<q, so q is coprime to both h and k.
+It does NOT imply gcd(h,k)=1. The same-largest-prime diagonal vanishes exactly.
+After the sqrt(n) smooth-prefix peel, insert h^2 into the upper min to retain
+precisely the high-smooth intersection. Keep all other bank-bank, main and
+smooth-smooth terms, including same-prime and distinct-prime bank sectors.
+
+Next work should search auxiliary constructions/arguments for these ordered
+coprime source correlations and for the fresh dyadic transport in review(6.5).
+Old-cutoff terms are paid; fresh K/L0/Lu cancellation and its parent covariance
+remain unproved. Small-cofactor control alone does not pay the high smooth
+sector. Admit a concrete new intermediate lemma; track its complete domain,
+constants, errors and dependencies. Do not assume a separate RH-strength
+companion bound or use an equivalent cofinal moment as its own premise.
+
+Do not rerun this unchanged study or fit a new drift constant to its final data.
+The pending27-word renewal study remains unrun, as recorded in
+RENEWAL_SHIFT_PENDING.txt; it was not resumed here. Existing arithmetic-roadmap
+work and older frozen archives remain untouched. Any future substantial agent
+work should use Sol6.1 and only long parallelizable tasks, per user preference.

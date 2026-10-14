@@ -1,0 +1,168 @@
+Complete signed inverse tails and cofinal growth frontiers
+========================================================
+This is a supplied mathematical backend, not a machine-formalized proof or an
+autonomously invented proof. No RH-strength growth estimate is established here.
+The search has no access to this prose or to literature while selecting kernels.
+
+1. Grammar and actual arithmetic
+-------------------------------
+Fix rational k>1, ell>0, b>1 and a nonzero finite rational array c[m,j], with
+nonnegative integer labels m,j. Define, for y>0 and X>0,
+
+ K(y)=sum c[m,j]*(b^j*y)^m*exp(-b^j*y),
+ F_K(X)=X^k sum_{n>=1} mu(n)n^(-k) K((X/n)^ell).
+
+mu is the unique Dirichlet inverse of the constant-one sequence. The producer
+obtains each complete prefix by triangular inversion, with no prime labels.
+The independent checker obtains it by prime factorization. Absolute convergence
+follows from k>1, boundedness of each kernel atom and |mu(n)|<=1. All rational
+root denominators are legal; finite enumeration and Taylor budgets are resources.
+Common dilation and overall amplitude are normalized before a program is
+evaluated. This chooses a representative up to a fixed dilation and scalar;
+it does not assert equality of raw responses before this normalization.
+
+The complete arithmetic tail is included, not set to zero. For w>1,
+ B_w(N)=1/zeta(w)-sum_{n<=N}mu(n)n^(-w)=sum_{n>N}mu(n)n^(-w),
+ |B_w(N)|<=N^(1-w)/(w-1).
+This uses the classical absolutely convergent reciprocal Euler product, not an
+estimate about prime distribution or an assumption about zeros in the strip.
+For an atom (r*y)^m exp(-r*y), r=b^j, expand its tail exponential through L-1.
+The resulting tail is
+ (r X^ell)^m sum_{t=0}^{L-1}(-r X^ell)^t/t! * B_{k+ell(m+t)}(N).
+Taylor's real remainder is at most
+ (r X^ell)^(m+L)/L! * N^(1-k-ell(m+L))/(k+ell(m+L)-1).
+Multiply by X^k. Native Arb arithmetic encloses every prefix, real reciprocal-
+zeta moment and remainder. Precision grows with the actual cancellation needed
+in B_w(N); a fixed-precision subtraction is not treated as an exact tail.
+The checker changes the prefix, precision, Taylor order and summation algorithm.
+
+2. Generic exact Mellin factor and recovery by several kernels
+------------------------------------------------------------
+For 1<Re(s)<k, put v=(k-s)/ell and z=b^(-v). Substitution y=(X/n)^ell gives
+
+ H_K(s)=integral_0^infinity F_K(X) X^(-s-1)dX
+       =Gamma(v) P_K(v,z)/(ell*zeta(s)),
+ P_K(v,z)=sum c[m,j]*(v)_m*z^j,
+ (v)_m=v(v+1)...(v+m-1), (v)_0=1.
+
+Absolute convergence in that strip justifies exchanging integrals and sums.
+No simplicity assumption on ordinary zeros is used. Gamma is nonzero and finite
+when Re(v)>0. At any ordinary zero rho (0<Re(rho)<1), Re(v)>0 and z!=0.
+
+The certificate search solves exact rational linear systems for identities
+ sum_i A_i(v,z) P_i(v,z)=(v)_r z^h,
+with nonnegative integers r,h. The right side cannot vanish when Re(v)>0,
+z!=0. Therefore these kernels have no common numerator zero at any ordinary
+zero, at any height, including multiple zeros. A bounded failed identity search
+is missing a certificate, not a counterexample to a growth estimate.
+A separate exact certificate handles a single moment row whose constant dilation
+coefficient has absolute value at least the sum of all later absolute values:
+strict |z|<1 makes its dilation polynomial nonzero even in the equality case.
+
+If all H_i are holomorphic on eta<Re(s)<k, a zero rho with Re(rho)>eta would
+force all P_i(v(rho),z(rho)) to vanish. The identity gives a contradiction.
+Thus a recovering bank excludes every ordinary zero to the right of eta.
+
+3. Bounds approaching the critical line: the quantifiers matter
+--------------------------------------------------------------
+Set theta_q=eta+epsilon/q^nu, epsilon>0, nu>0, rational, q>=2 integer.
+The target is: FOR EVERY q THERE EXISTS a finite C_{i,q}, such that FOR EVERY
+integer N>=1, |F_i(N)|<=C_{i,q} N^theta_q log(e+N)^d.
+There is NO specified growth rate for C_{i,q} as q grows. A finite table of
+fitted constants is an illustration of this existential target, not its proof.
+Constants at a new q are calibrated only on frozen training scales, and frozen
+before evaluating either validation or final scales at that q.
+
+For eta<Re(rho)<k, theta_q<Re(rho) for every sufficiently large q. A true bound
+for even one such q continues H_i past rho; simultaneously true bounds for all
+members of a recovering bank contradict the common-numerator identity. The
+cofinal family therefore excludes all ordinary zeros with Re(rho)>eta. eta=1/2
+would imply RH by the functional equation. Finite q grids never prove this.
+Pure square-root constants and logarithmic factors of prescribed degree are
+not required. Nor is a polynomial growth law for C_q silently imposed.
+
+RH also implies these bounds for every kernel in this grammar and every q at
+eta=1/2. Use the named classical conditional consequence
+ M(t)=sum_{n<=t}mu(n)=O_delta(t^(1/2+delta)) for every delta>0
+(Titchmarsh, second edition, Theorem 14.25(C), printed p.370). For a fixed q,
+choose 0<delta<theta_q-1/2 and delta<k-1/2. Partial summation with
+ f(t)=t^(-k)(r X^ell/t^ell)^m exp(-r X^ell/t^ell)
+has vanishing boundary terms. Its derivative obeys
+ |f'(t)|<=t^(-k-1) [(k+ell*m)(r X^ell/t^ell)^m
+                              +ell*(r X^ell/t^ell)^(m+1)] exp(-r X^ell/t^ell).
+Substitution u=r X^ell/t^ell yields a finite gamma integral and
+ X^k sum mu(n) f(n)=O_delta(X^(1/2+delta)). Sum the finitely many signed atoms.
+Absorb this into X^theta_q. The M bound is imported only to identify the target
+as equivalent to RH for recovering banks; it is not used to prove a new bound.
+Nonrecovering kernels have an RH consequence, but no converse is claimed.
+The ordinary all-height bridge above is proved here without that imported fact.
+
+The same cofinal logic applies to the earlier fractional-remainder parameter
+bridge: variable theta_q->eta and freely varying C_q still imply vanishing of
+the numerators on a cofinal set. Neither its fixed-common-constant amplitude
+obstruction nor its Mertens constant obstruction may reject this new target.
+This is a scope extension; earlier frozen estimates and their rejections remain.
+
+4. True weak bounds and full observer costs
+------------------------------------------
+For an atom, the positive continuous weight in n is unimodal. Splitting at its
+maximum bounds the discrete sum by its integral over t>0 plus twice its peak.
+For every real X>=1 its signed response therefore has absolute value <=W_m X,
+ W_m=r^((1-k)/ell) Gamma((k-1)/ell+m)/ell
+     +2 r^(-k/ell) ((k+ell*m)/ell)^((k+ell*m)/ell) exp(-(k+ell*m)/ell).
+For a kernel take W=sum |c|W_m. Differentiating the absolutely convergent sum,
+ X F_atom'(X)=(k+ell*m)F_atom(X)-ell F_{m+1,j}(X).
+Thus |F_K'(X)|<=J=sum |c|[(k+ell*m)W_m+ell W_{m+1}], for real X>=1.
+This proves the unit increment bound and extends a bound on all integers to
+all reals with an additional J, without increasing the growth exponent.
+For 0<X<=1, dropping the exponential gives
+ |F_K(X)|<=sum |c| r^m zeta(k+ell*m) X^(k+ell*m).
+
+At a native observer s=sigma+it, 0<sigma<k, theta_q<sigma, d>=0, each transform
+norm is bounded by the full local integral, J/sigma, and the hypothesized tail
+ C_{i,q} integral_1^infinity X^(theta_q-sigma-1)log(e+X)^d dX.
+log(e+X)<=log(e+1)+log X; raise to integer ceiling(d) and integrate its moments
+exactly using j!/(sigma-theta_q)^(j+1). This charges approaching-line costs.
+For a Bezout certificate divide ell*sum |A_i|*norm_i by
+ |Gamma(v)*(v)_r*z^h|. For a single dominance certificate divide ell*norm by
+ |Gamma(v)*P(v,z)|. Both denominators are native lower bounds. Small response
+amplitudes are never counted as improved control without this recovery cost.
+The one finite observer is not an all-height quantitative bound.
+
+The W X estimate establishes only limiting exponent >=1. When theta_q<1,
+the absolute envelope / X^theta_q diverges. This proves that this particular
+certificate method does not close the signed gap. It does NOT disprove the
+candidate. All RH-strength uniform growth estimates remain unproved.
+
+5. Exact signed all-scale forcing and counterfeit arithmetic
+----------------------------------------------------------
+Dirichlet inversion also gives an exact operator relation at every X>0:
+ sum_{d>=1} F_K(X/d)=X^k K(X^ell).
+Both the double arithmetic sum and its rearrangement converge absolutely:
+sum_{d,n}(dn)^(-k) times a bounded kernel is finite, since k>1. The coefficient
+of each product dn is sum_{n|dn}mu(n)=delta_1. This relation retains every
+actual prime through the inverse sequence. It supplies a global signed equation,
+but no contraction at exponent 1/2 follows merely from writing the equation.
+
+A separate negative control adds +1 to every coefficient n>H, H=2^200.
+The addition is enclosed at finite X by
+ X^k sum |c|r^m X^(ell*m) H^(1-k-ell*m)/(k+ell*m-1).
+It can therefore resemble actual arithmetic at every test scale. Its Dirichlet
+series is 1/zeta(s)+zeta(s)-sum_{n<=H}n^(-s), with a simple pole at s=1.
+A recovering bank cannot cancel this pole in every member because its exact
+common-numerator identity is nonzero at v=(k-1)/ell>0. Hence a global cofinal
+bound with eta<1 is false for this control, even when every finite test passes.
+This counterfeit is explicitly not the constant-one inverse and is never used
+as actual-prime evidence. The analytic obstruction is checked separately.
+
+6. Independence limits
+----------------------
+Primitives, fitting exponents, grammar resources, certificate dictionaries and
+selection rules are supplied before outcomes. Enumeration, response fitting,
+moment nullspaces, promotion, bank assembly, and archive selection have no model
+calls, source-paper access or expected-winner assertions. Named Riesz recovery
+is a separate calibration of the grammar, not a nominated search answer. The
+detector does not invent this Mellin identity or the RH equivalence theorem.
+Complete tails encode actual inverse arithmetic at all scales using zeta in
+its known absolute-convergence region; this is not new prime-distribution data.
+Neither fresh finite success nor a proved exponent-one envelope proves RH.

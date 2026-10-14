@@ -1,0 +1,53 @@
+{
+  "RH_proved": false,
+  "conditioning": "memory-only retry; unchanged source builder, deep-copy instantiation, scalar weights and four zero Grams",
+  "failed_file": "jobs/final-002.json",
+  "global_bound_proved": false,
+  "gram_specs": {
+    "joint_child": 10,
+    "joint_parent": 10,
+    "old_child": 5,
+    "old_parent": 5
+  },
+  "grams_sha256": "9b8ff6c7a24599993ee9dd4d63dce7e0576607a99209e49647b4e135ac2e9f8a",
+  "limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 2048,
+    "max_degree": 12,
+    "max_denominator": 1000000,
+    "max_horizon": 80,
+    "max_monomials": 100000,
+    "max_operations": 200000000,
+    "time_limit": 180
+  },
+  "no_new_float_search": true,
+  "parallel": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 6442450944,
+    "timeout_seconds": 600,
+    "worker_memory_bytes": 6442450944,
+    "workers": 1
+  },
+  "program": {
+    "C": 1,
+    "allow_constant_slack": true,
+    "claim": "unsigned_calibration",
+    "constraint": "none",
+    "dictionary_mode": "extended",
+    "q": 2,
+    "target": "mu"
+  },
+  "refitted": false,
+  "same_candidate": true,
+  "scales": [
+    13
+  ],
+  "schema": 1,
+  "tests": [
+    "test_joint_gram_transfer_retry",
+    "test_check_joint_gram_transfer_retry"
+  ],
+  "training_file": "jobs/train-001.json",
+  "weights_sha256": "5b180a915eaeae798249c5ead1a9e81e204f0757b0876263a1ac7de975a5ac89"
+}

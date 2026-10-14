@@ -1,0 +1,27 @@
+{
+  "final_status": "PASS",
+  "runs": [
+    {
+      "command": "new producer synthetic suite",
+      "elapsed_seconds": 0.039790590992197394,
+      "operations": 104246,
+      "returncode": 0,
+      "tests": 9
+    },
+    {
+      "command": "new producer/checker integration",
+      "elapsed_seconds": 0.10526129399659112,
+      "operations": 442276,
+      "returncode": 0,
+      "tests": 1
+    },
+    {
+      "command": "new nullspace gate and two materially affected discovery/integration tests",
+      "elapsed_seconds": 0.1253716509672813,
+      "operations": 347374,
+      "returncode": 0,
+      "tests": 3
+    }
+  ],
+  "unique_new_synthetic_tests": 11
+}

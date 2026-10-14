@@ -1,0 +1,341 @@
+RICHER UNCONDITIONAL MOMENT REGIONS AND COMPLETE ANALYTIC CENTERING
+
+Status: the conservative moment library below is verified against primary
+research sources. Its composition proves a new uniform, decaying PHYSICAL
+energy bound for the complete p=2,m=3 component at the inherited cutoff
+U<=N^(1/24). It also pays the corresponding saved finite-cube replacement
+by the already proved032 transfer. It does NOT prove the whole original
+signed core, its old fixed-sigma low Gram with its specified U cost, ordinary
+convergence of the cubic coefficient moment, or RH. Exact source joins,
+opposite main drifts, companions and transport error remain required.
+
+Only this new review was written. No source values, studies, tests, numerical
+constants, hashes, or frozen-file edits were used. The existing018/019
+analytic bridge and032 complete-source transfer were read, together with
+core_moment_bound_search.py. Imported theorem rules and generated contour/
+allocation choices must be recorded separately in the next proof engine.
+
+1. Primary provenance and the deliberately conservative library
+
+Primary research paper independently read:
+ A. Ivic, On mean values of some zeta-functions in the critical strip,
+ Journal de Theorie des Nombres de Bordeaux15 (2003),163-178,
+ https://arxiv.org/pdf/math/0311403
+ https://arxiv.org/abs/math/0311403
+Introduction(1.3)-(1.5) gives strict-line moment asymptotics sufficient for
+the following unconditional upper-bound providers. Theorem2 supplies an
+improved error term on its stated domain. A second primary corroboration is
+the same author's On mean value results for the Riemann zeta-function in
+short intervals, section4,(4.5)-(4.7):
+ https://hrj.episciences.org/164/pdf
+
+The licensed rule is, for each FIXED listed line a and epsilon>0,
+ integral_Y^(2Y) |zeta(a+it)|^q dt <= B(q,a,epsilon)Y^(1+epsilon), Y>=2,
+with a finite constant independent of U,X,N,Y. Safe rows are
+ q=2,4: 1/2<=a<1, using the earlier classical critical moment inputs;
+ q=6:   7/12<a<1;
+ q=8:   5/8<a<1;
+ q=10:  41/60<a<1;
+ q=12:  5/7<a<1.                                    (1.1)
+The critical second/fourth logarithms are absorbed into epsilon. The old
+fourth-moment primary corroboration is Bettin--Bui--Li--Radziwill,
+ https://arxiv.org/html/1609.02539v1
+with zero shifts/constant polynomial, and Ingham's original paper
+ https://doi.org/10.1112/plms/s2-27.1.273
+The functional equation is independently available at
+ https://dlmf.nist.gov/25.4.E2
+
+No numerical theorem constant, endpoint assertion for q>=6, RH, Lindelof,
+or twisted-polynomial provider is licensed here. In particular an infimum
+definition alone does not admit its endpoint. The strict eighth row is all
+that is needed below. The more flexible expdb curve referring to Ivic's
+book Theorem8.4 is not necessary for this review's certified library; the
+explicit primary strict rows avoid importing an uninspected endpoint or
+interpolation theorem. Full proofs of these classical imported moment
+theorems are not reconstructed here.
+
+2. Exact source and pole structure before any positive majorant
+
+Fix integer U>=1. All products of coefficient states are Dirichlet
+convolutions. Let A(n)=mu(n)1_(n<=U), c=A_hat(1), T=c delta-A,
+ E=delta+One*T, D=One_[1,U], u=1/3, theta=1-u=2/3.
+Thus E_hat(s)=1+zeta(s)[c-A_hat(s)]. Its pole at1 is REMOVABLE because
+T_hat(1)=0 exactly; this is a harmonic identity, not a vanishing unit
+coefficient. The integer unit of T is c-1 and generally is nonzero.
+
+For arbitrary integer p>=0,m>=1 the raw function is
+ F_raw(s)=zeta(s+u)A_hat(s)^p E_hat(s)^m.
+For the current head-corrected component it is
+ f=A^2*E^3-c^3 D,
+ F_f(s)=zeta(s+u)[A_hat(s)^2 E_hat(s)^3-c^3 D_hat(s)]. (2.1)
+The actual inverse identity gives A^2*E^3=c^3 One on n<=U, including n=1;
+therefore f has a support gap through U. This source-specific fact must
+not be claimed for arbitrary bounded coefficients in an ablation.
+
+On a fixed strip sigma<=Re(s)<=2, 0<sigma<theta, F_raw and F_f have
+only the possible SIMPLE pole at theta. Their residue coefficients are
+ M_raw=A_hat(theta)^p E_hat(theta)^m,
+ M_f=A_hat(theta)^2 E_hat(theta)^3-c^3 D_hat(theta).   (2.2)
+Pole cancellation at1 must be applied to the WHOLE E expression before
+contour shifting. Positive triangle bounds on a non-pole vertical line
+do not license treating its separated summands as pole-free functions.
+
+E(theta) itself is an ordinary moment because the actual E has bounded
+prefixes. Multiplying this value three times defines an ANALYTIC residue;
+it does not prove ordinary convergence of the E^3 coefficient series at
+theta. Everything below uses that analytic residue explicitly. It works
+without an ordinary cubic convergence premise, so the old ordinary gate
+must not be relabeled proved merely by adding a moment order.
+
+3. Uniform finite-factor bounds, including low heights and full head
+
+Put v=1-sigma, a=1/v, d=2+a. For actual mu, every real t satisfies
+ |A_hat(sigma+it)|<=a U^v,
+ |c-A_hat(sigma+it)|<=d U^v, |c|<=2.
+Using |1+z|^6<=32(1+|z|^6) and a triangle with the finite head gives
+ |F_f(s)|^2 <= C_sigma U^(10v)
+                     |zeta(s+u)|^2(1+|zeta(s)|^6), (3.1)
+where, for example, C_sigma=64a^4(1+d^6)+128a^2 suffices. This is a
+positive upper bound on an exact complete expression. Its lower branch,
+head, unit and cross terms were present before applying the inequality.
+For the raw p,m function the corresponding U exponent is
+ b_U=2(p+m)(1-sigma).                               (3.2)
+
+Compact |t|<=2 is a separate fixed finite bound: neither sigma nor
+sigma+u is1, |s|>=sigma>0, and zeta is continuous on these compact
+vertical segments. This part has the SAME U power and is never given a
+negative height credit. No condition comparing U to a height is needed;
+the proof uses the complete finite-polynomial supremum bound for all t.
+
+Generic bounded-weight ablation: if |a_n|<=1 and c=sum_(n<=U)a_n/n,
+then c=A_hat(1) still cancels the pole at1. For 0<sigma<1,
+ |c|<=sum_(n<=U)n^(-sigma)<=a U^v,
+ |A_hat(s)|<=a U^v, |c-A_hat(s)|<=2a U^v.
+Consequently (3.2) has NO logU loss. The formal head c^3 D satisfies
+ |c^3 D_hat(s)|^2<=a^8 U^(8v), below U^(10v).
+For example 64a^4[1+(2a)^6]+2a^8 replaces C_sigma in (3.1).
+This explains precisely why the richer-library power improvement is not
+new actual-prime signed cancellation. Actual |c|<=2, the inverse source
+binding and the shorthead remain useful independent arithmetic facts.
+
+4. Generic executable product-moment grammar
+
+For a factor |zeta(a_i+it)|^(b_i), 0<a_i<1,b_i>0, the detector may
+reflect or not. A reflected factor has effective line a_i'=1-a_i and
+height exponent b_i(1/2-a_i), by the functional equation on |t|>=2.
+Choose a licensed order q_i from(1.1) at a_i', and Holder allocation
+lambda_i>=0 with lambda_i q_i<=b_i and sum lambda_i<=1.
+The unused Holder mass applies to the constant function. The remaining
+power b_i-lambda_i q_i may use convexity on the effective line, with
+height cost (b_i-lambda_i q_i)(1-a_i')/2 plus epsilon slack.
+Therefore a valid dyadic PRODUCT-INTEGRAL exponent is
+ d_integral=1+sum_i[reflection_i*b_i(1/2-a_i)
+                  +(b_i-lambda_i q_i)(1-a_i')/2].    (4.1)
+The leading1 already includes the length of the interval. Do not add a
+second interval-length factor. Allocation vertices suffice for minimizing
+this affine cost at fixed reflection/order choices; the full rational
+simplex and all licensed orders/lines can be enumerated and replayed.
+
+For F_raw the two complete positive branches are
+ |zeta(s+u)|^2 and |zeta(s)|^(2m)|zeta(s+u)|^2.
+The Perron denominator subtracts2 from EACH dyadic integral exponent.
+Every resulting exponent must be strictly negative after a fixed chosen
+epsilon allowance. At a zero exponent, an unspecified T^epsilon or
+positive critical logarithm does not yield a summable global Mellin norm.
+Convexity, reflection constants and moment constants depend on the FIXED
+contour and library choices; they are independent of all source cutoffs.
+
+The physical energy exponent is independently
+ e_X=2sigma-1+lambda_cutoff*2(p+m)(1-sigma).         (4.2)
+Strict height convergence and physical payment are separate gates.
+The finite-source/head type, analytic centering, full unit and source
+inverse bindings are additional gates. A negative exponent for one branch
+alone is insufficient. No requested target power is used to prove(4.1).
+
+5. The newly accessible cubic region
+
+For p=2,m=3,u=1/3 and 1/3<sigma<7/19, the eighth providers apply at
+ a1=1-sigma>12/19>5/8,
+ a2=sigma+1/3>2/3>5/8.
+Reflecting the six powers on sigma contributes Y^(3-6sigma). Holder
+weights3/4 and1/4 then give
+ integral_Y^(2Y)|zeta(1-sigma+it)|^6
+                     |zeta(sigma+1/3+it)|^2 dt
+ <= I8(a1,Y)^(3/4) I8(a2,Y)^(1/4)
+ <= B_sigma,epsilon Y^(1+epsilon).
+The high branch, AFTER division by |s|^2, has dyadic exponent
+ d_high=2-6sigma+epsilon.                           (5.1)
+The branch without zeta(s)^6 has exponent -1+epsilon/4 by the same
+eighth provider and the constant function. Choose any fixed
+0<epsilon<min(6sigma-2,4); both signs of the height tails then sum.
+Together with the compact head, this proves
+ (1/(2pi))integral_R |F_f(sigma+it)/s|^2 dt
+ <= C_norm(sigma) U^(10(1-sigma)), ALL integer U>=1. (5.2)
+The same statement holds for F_raw and for the bounded-weight ablation.
+
+At U<=N^(1/24), the physical exponent is exactly
+ e_X=2sigma-1+(10/24)(1-sigma)=(19sigma-7)/12.       (5.3)
+The strict interval above pays BOTH height and energy, with actual decay.
+The detector should discover admissible rational contours/allocations from
+the library rather than be supplied one numerical winner. At sigma=1/3
+the displayed tail route is not summable. At sigma=7/19 the energy has no
+negative saving; it may support a nondecaying paid bound after all its
+other gates, but is not the strict subcritical region asserted here.
+
+More generally, if m<=3, total power2m+2<=8 permits the same eighth
+allocation (with unused mass for m<3). Provided both effective lines are
+strictly above5/8, its tail exponent is m-1-2m sigma plus epsilon.
+For larger m the extra powers need other licensed orders or convexity;
+the formula cannot be extended by pretending the Holder fractions still
+sum to at most1. The richer six/ten/twelve rows give genuine additional
+enumerable choices, not an automatic conclusion for every residual power.
+
+6. Analytic-centered global norm: full Gaussian argument
+
+Let P_f(x)=sum_(n<=x)(K*f)(n), extended by0 below1, with K(n)=n^(-u).
+Use exp(e s^2), e>0, in Perron initially on Re(s)=2, where the coefficient
+series is absolutely controlled. For each FIXED U the entire finite
+polynomials and zeta have polynomial growth on the shifted strip; the
+Gaussian sends horizontal edges to zero. Shift to sigma. Only theta is
+crossed, giving the exact residue term
+ P_e(x)-(M_f/theta)exp(e theta^2)x^theta
+  =(1/(2pi i))integral_(sigma)F_f(s)exp(e s^2)x^s ds/s.
+No zero-free statement or ordinary cubic moment enters this identity.
+
+Mellin Plancherel, dominated convergence using(5.2), and the pointwise
+Gaussian Perron limit away from integers identify the complete function
+ C_f(x)=P_f(x)-(M_f/theta)x^theta.
+Thus
+ integral_0^infinity |C_f(x)|^2 x^(-2sigma-1)dx
+ <= C_norm(sigma) U^(10(1-sigma)).                  (6.1)
+Uniformity in U comes from(5.2), not from a uniform horizontal-edge limit.
+All earlier prefixes are retained. The artificial lower tail0<x<1 is
+EXACTLY -(M_f/theta)x^theta and is integrable since sigma<theta. It also
+gives |M_f|^2<=2theta^2(theta-sigma) times the left side of(6.1), without
+assuming any ordinary coefficient moment at theta.
+
+At integer n, define C_n=P_f(n)-(M_f/theta)n^theta. On n<=x<n+1,
+ C_n=C_f(x)+(M_f/theta)(x^theta-n^theta).
+For sigma<1/2 the safe integer-cell inequality of018 is
+ sum_(n>=1)|C_n|^2 n^(-2sigma-1)
+ <=8 integral_1^infinity|C_f(x)|^2x^(-2sigma-1)dx
+       +32|M_f|^2/(2+2sigma-2theta).                (6.2)
+It follows directly from the square triangle, the factor between n and
+n+1, and x^theta-n^theta<=theta n^(theta-1). The correction series
+converges, n=1 is included, and the full coefficient centering is
+ K*f-(M_f/theta)J_theta, J_theta(n)=n^theta-(n-1)^theta.
+No continuous power is silently replaced by a floor power. Abovehalf a
+generic bridge must enlarge the cell constants, e.g.16/64 for sigma<theta<1;
+that branch is not needed for(5.3).
+
+Block restriction of(6.2) gives E_C(X)<=C U^(10(1-sigma))X^(2sigma-1),
+with a fixed factor at most2^(2sigma+1). Whole-prefix energy
+N^(-2)sum_(n<=N)|C_n|^2 has the same power. For parent and child use ONE
+N=4X-1 and ONE U; converting U<=N^(1/24) costs the fixed factor
+4^((10/24)(1-sigma)). No restarted block prefix or changing residue is used.
+
+7. Finite head, complete channels, and the saved finite-cube transfer
+
+The finite head is paid independently, not erased. For ALL real y>0,
+ |sum_(k<=y)k^(theta-1)-y^theta/theta|<=1/theta.
+Therefore the actual centered K*c^3 D prefix is at most8U/theta.
+Its block energy is <=64U^2/(theta^2 X), which at the current cutoff is
+subcritical with power -11/12. Its complete global norm is also controlled:
+the base kernel norm is at most
+ B(theta,sigma)=[1/(theta-sigma)+1/sigma]/(2theta^2),
+and a finite convolution has norm at most sqrt(B) times
+sum_d|h(d)|d^(-sigma). For h=c^3 D this uses the FULL ordinary finite
+moment c^3 D(theta), including all d>x compensators. Generic bounded
+weights also have a valid head provider, with their stated larger cost.
+Thus S_f=S_raw-S_head exactly; both the raw analytic center and head center
+are available. The unit of the raw convolution is c^3; the head removes
+it exactly, but the centered coefficient unit still includes -M_f/theta.
+
+Global Hardy/Abel transfer from018 applies to these centered arrays:
+polynomial log channels retain EVERY earlier prefix and the exact J_theta.
+For polynomial q(t)=sum q_j t^j and eta>=0, a safe norm multiplier is
+ 2^ceil(eta)[sum_j|q_j|+2(1+1/sigma)sum_j j|q_j|].
+Its square, source scalars and all channel components must be included.
+Orthogonal cell projection contracts the resulting vector norm. Variable
+log weights are not pulled through the cell projection as constants.
+
+The saved032 finite-cube transfer uses F_R=A^2 R^3-c^3D, the SAME head,
+and the EXACT moment defect
+ Delta_m=A(theta)^2 J(theta)
+    [E(theta)^2+E(theta)R(theta)+R(theta)^2-3T(theta)^2],
+where J=E-R, t=floorN^(1/4),r=floorN^(3/4). Its two padding energies have
+powers -7/36 and -3/4. Hence the newly proved full S_f bound also pays
+S_R by the exact two-sided comparison. It does not remove Delta_m, or
+infer a global series identity from the coefficient identity valid only
+through N. Inner x/d<1 main terms remain in every finite lift.
+
+8. Source-recovery and detector proof-certificate requirements
+
+When a raw source term lambda_source*K*A^p E^m is replaced by its paid
+centered component, the opposite drift
+ +lambda_source*M_raw J_theta/theta
+MUST remain in the exact residual. For a head-corrected term use M_f and
+the complete head instead. One cannot change the full main coefficient
+while matching a cheaper source term. Preserve the original E/C/One modes,
+all prime/composite valuations, inverse coefficients, transport error -e,
+cross terms, units, complete history and all inherited source/channel joins.
+Paying the new component is progress in proof reduction, not a whole-core
+bound. It does not establish the former fixed-sigma9/20 U^(12/5) low-Gram
+target: a different-contour physical bound has different norms and costs.
+
+Reusable certificate nodes should record:
+ * immutable source/function identity and harmonic cancellation c=A(1);
+ * exact analytic residue, finite head, ordinary/analytic centering type;
+ * provider order, strict line domain, primary theorem URL, symbolic finite
+   constant and independent U/X/N scope;
+ * reflection, every Holder allocation and remaining convexity power;
+ * both positive branches, compact head, strict epsilon-tail certificate;
+ * finite-factor U exponent, unit-cell correction, full lower tail;
+ * physical cutoff exponent/constant and complete global Hardy transfer;
+ * source scalar/inverse binding, opposite drift and complete signed join;
+ * separately replayed032 finite-transfer premises when that consequence
+   is claimed, with the same head and scalar defect in both components.
+
+The old search syntax in core_moment_bound_search.py licenses only2/4 and
+requires ordinary convergence from the elementary prefix exponent. A new
+version must add the explicitly typed analytic-centering bridge, rather
+than merely deleting its ordinary failure flag. Failed allocations and
+source complements should remain visible. Generic-weight comparisons
+must identify whether an improvement comes from a stronger moment library
+or from actual signed arithmetic; here the new finite-U power is generic.
+
+9. An optimistic-library obstruction to further absolute-envelope payment
+
+This is a limitation of the declared proof grammar, not an arithmetic
+lower bound or a claim that the corresponding actual component is large.
+Even suppose every fixed moment order at every effective line>=1/2 were
+available with height cost1+epsilon. On a belowhalf sigma line, reflecting
+the 2m powers of zeta(sigma+it) still costs m(1-2sigma). With the native
+interval-length cost1 and /s^2 cost-2, its optimistic Mellin dyadic cost
+is m-1-2m sigma. Strict summation requires
+ sigma>L_m=(m-1)/(2m).                              (9.1)
+Ignoring all extra shifted-factor/domain costs only makes this frontier
+more favorable. Leaving part of the first factor to convexity cannot
+improve it in this grammar; neither can an extra shifted reflection.
+
+Write z=lambda_cutoff*(p+m). The full finite absolute-envelope energy is
+ e(sigma)=2sigma-1+2z(1-sigma).
+For z<1/2 its optimistic infimum over(9.1) is
+ e_inf=[-1+z(m+1)]/m.                               (9.2)
+The infimum is not an admitted strict tail endpoint. For z>=1/2 the
+same energy is nonnegative everywhere on0<sigma<1/2: its endpoint lower
+bound is min(2z-1,z)>=0. Abovehalf contours also have e(sigma)>0
+for z>0, so they do not evade this physical-cost obstruction. Thus
+positive(9.2), or z>=1/2, rejects payment
+by this whole absolute-envelope/native-moment language even with an
+unbounded moment-order catalogue. At p=2,m=4,lambda_cutoff=1/24 one
+has z=1/4 and e_inf=1/16>0; the same optimistic gate rejects m>=4.
+Stronger standalone moment orders cannot fix that power cost. A next
+rule must reduce the signed finite-factor U cost, exploit a genuinely
+joined construction, or supply a different recovery geometry. This
+obstruction never licenses rejecting an actual arithmetic bound itself.
+
+Disposition: primary-source moment recall is correct on conservative STRICT
+lines. The p2,m3 analytic-centered physical component and its saved finite
+replacement become paid by a genuinely available unconditional rule. The
+full-source residual, original fixed-cost low Gram and RH remain open.

@@ -1,0 +1,15 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "operations": 24675,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.048808364022988826,
+      "exposure": "tiny toy integer-exponent Mobius convolution only; no actual core/source archive or responses"
+    }
+  ],
+  "cumulative_operations": 24675
+}

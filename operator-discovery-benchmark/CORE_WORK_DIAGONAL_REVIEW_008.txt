@@ -1,0 +1,291 @@
+ACTUAL-SOURCE DIAGONAL CUBE AND THE NECESSITY OF SIGNED PAIR CONTROL
+
+Scope and principal results
+---------------------------
+Only this NEW analytical memo is written. The inputs are the complete
+four-mode core and signed shell/kernel definitions in reviews005-007 and
+core_signed_work.py. No source evaluation, numerical experiment, test,
+hash, parameter search, subagent or prior/frozen edit is performed. No
+finite selected response is used as an asymptotic premise.
+
+The proposed diagonal hypothesis is correct. Unconditionally, with
+C=beta^2*H(1)/6>0,
+  sum_(n<=x) f(n)^2=C*x*(log x)^3+O(x*(1+log x)^2),
+  D_eta(X)=C*log(2)*(log X)^3+O((1+log X)^2),
+uniformly for |eta|<=2. The Euler factor H is absolutely convergent in
+Re(s)>2/3, and this region is precise for absolute coefficient convergence.
+Every fixed delay changes only the prime2 factor and retains a positive
+constant of the same form. These statements use no RH or prime-gap input.
+
+A hypothetical uniform degree-two work bound consequently requires
+negative off-diagonal cancellation of the diagonal cube. This is a
+source-specific proof obligation, not a refutation of the bound. A cube
+is itself already cofinal; degree two must not be made an unnecessary
+requirement for the original goal. More strongly, a proof replacing the
+ENTIRE kernel by termwise absolute values cannot reach cofinal control:
+the actual-source absolute sum is at least a positive constant times
+X*(log X)^2. That conclusion is proved below on a complete near-comparable
+pair sector, and is not an assumed Mobius randomness statement.
+
+1. Exact local squared-coefficient Euler factors
+------------------------------------------------
+Write u=1/3,v=2/3,beta=9/2, t=p^(-1/3), z=p^(-s). The multiplicative
+mode nu0=k_u*(mu*mu) has local generating function
+  sum_(e>=0)nu0(p^e)z^e=(1-z)^2/(1-tz),
+so its actual coefficients are
+  c0=1, c1=t-2, c2=(1-t)^2,
+  ce=(1-t)^2*t^(e-2), e>=2.                            (1.1)
+Squaring COEFFICIENTS, rather than the generating function, gives
+  L_p(z)=1+(2-t)^2*z+(1-t)^4*z^2/(1-t^2*z).
+For Re(s)>1, absolute summation therefore gives the Hadamard series
+  D_(nu0^2)(s)=sum_n nu0(n)^2*n^(-s)=zeta(s)^4*H(s),
+  H(s)=product_p H_p(p^(-s)), H_p(z)=(1-z)^4*L_p(z).    (1.2)
+Its linear coefficient is
+  [z]H_p=-4t+t^2.                                      (1.3)
+The weighted sum of absolute local coefficients beyond the linear term
+is at most C_sigma*p^(-2sigma), uniformly in p for fixed sigma>2/3:
+multiply the displayed degree-four polynomial by the geometric tail;
+its denominator is bounded away from zero since
+|t^2*p^(-s)|<=2^(-2/3-sigma)<1. The linear absolute term is bounded by
+4*p^(-sigma-1/3). Thus H(s)=sum h(d)d^(-s) has
+  sum_d |h(d)|*d^(-sigma)<infinity, every sigma>2/3.      (1.4)
+At sigma2/3, (1.3) contributes at least3/p at each prime. Divergence of
+sum_p1/p shows that absolute coefficient convergence does not extend
+to that boundary. This does not rule out continuation or conditional
+behavior of H at the boundary; neither is needed here.
+
+At s1 every factor (1-1/p)^4*L_p(1/p) is strictly positive. Also
+sum_p|H_p(1/p)-1|<infinity. A product of these positive nonzero factors
+has a finite strictly positive limit: the finitely many small factors
+are nonzero, and the tail logarithms are absolutely summable. Hence
+  0<H(1)<infinity.                                     (1.5)
+No zero-free region for zeta is invoked. H(1) is a fixed exact Euler
+product, not a numerically fitted constant.
+
+2. Elementary d4 main term and full convolution error
+------------------------------------------------------
+For an explicit elementary route, put
+  H_k(y)=sum_(n<=y)d_k(n)/n.
+Inducting in k from the harmonic sum and using monotone sum/integral
+comparison gives, for each fixed integer k>=1,
+  H_k(y)=(log y)^k/k!+O_k((1+log y)^(k-1)), y>=1.
+Indeed H_k(y)=sum_(a<=y)a^-1 H_(k-1)(y/a); its leading sum differs from
+the integral of a^-1*log^(k-1)(y/a) by O((1+log y)^(k-1)), and the
+inductive error sums to the same order. The integral gives the stated
+factor1/k!. Counting the fourth coordinate by its floor now gives
+  sum_(n<=y)d4(n)
+   =sum_(abc<=y)floor(y/(abc))
+   =y*H_3(y)+O(sum_(abc<=y)1)
+   =y*(log y)^3/6+O(y*(1+log y)^2).                    (2.1)
+For the error use sum_(abc<=y)1<=y*H_2(y). This proof has no hidden
+analytic Tauberian theorem or unproved divisor-error estimate.
+
+Since the absolutely convergent identity (1.2) gives nu0^2=d4*h
+coefficientwise, (2.1) yields
+  sum_(n<=x)nu0(n)^2
+    =x/6*sum_(d<=x)h(d)/d*[log(x/d)]^3
+       +O(x*sum_(d<=x)|h(d)|/d*[1+log(x/d)]^2).
+Fix any sigma0 in(2/3,1). From (1.4), every sum
+  sum_d |h(d)|*(log d)^j/d, 0<=j<=3,
+is finite. Expanding the cubic therefore leaves H(1)*(log x)^3 in the
+leading term, with O((1+log x)^2) remaining. The truncation tail is
+at most x^(sigma0-1)*sum|h(d)|/d^sigma0, so its contribution
+x^sigma0*(log x)^3 is also O(x*(1+log x)^2). Consequently
+  sum_(n<=x)nu0(n)^2
+     =H(1)*x*(log x)^3/6+O(x*(1+log x)^2).              (2.2)
+All implied constants are finite fixed source constants; the argument
+works for every real x>=2 with the usual integer-floor summation.
+
+3. Complete core cross terms and the bounded other modes
+--------------------------------------------------------
+The other local modes satisfy |nu1(n)|,|nu2(n)|,|mu(n)|<=1. For example
+nu1's local first coefficient is -(1-t+t^2), and its later coefficients
+are -t*(1-t)^2*t^(e-2); nu2's positive coefficients for e>=1 are
+t^e*(1-t). Every absolute local coefficient is at most one, so the
+multiplicative global bounds follow. Also |nu0(n)|<=d2(n).
+
+Write the ENTIRE core as f=beta*nu0+e, with
+  e=-beta*nu1-R_u*nu2-beta*mu, |e(n)|<=C_e=2beta+R_u.
+Then pointwise
+  |f(n)^2-beta^2*nu0(n)^2|
+       <=2beta*C_e*d2(n)+C_e^2.
+The elementary sum d2(n)<=x*(1+log x) implies a complete summed error
+O(x*(1+log x)), including every scalar cross and the unit. Thus
+  S_f(x):=sum_(n<=x)f(n)^2
+       =C*x*(log x)^3+O(x*(1+log x)^2),
+  C=beta^2*H(1)/6>0.                                   (3.1)
+The O(xlog x) estimate is the change caused by the OTHER modes; the
+larger O(xlog^2 x) error in (3.1) comes from the nu0 square main-term
+calculation. No cross is simply declared zero.
+
+4. Exact complete work diagonal and its positive leading coefficient
+--------------------------------------------------------------------
+For identity G=F, g=f, the full symmetric shell kernel is
+  K_eta,X(h,k)=int_(max(X,h,k))^(2X)
+       [(1-eta)+eta*log(hk)/(2log x)]*x^-2 dx,
+with empty integral zero and h,k<=2X-1. The diagonal is
+  D_eta(X)=sum_h f(h)^2*K_eta,X(h,h).
+Interchanging this FINITE sum and integral gives exactly
+  D_eta(X)=int_X^(2X)
+       [(1-eta)S_f(x)+eta*T_f(x)/log x]*x^-2 dx,
+  T_f(x)=sum_(h<=x)f(h)^2*log h.
+Abel summation, with its actual unit log1=0, gives
+  T_f(x)=S_f(x)log x-int_1^x S_f(y)dy/y.
+Hence the complete diagonal identity is
+  D_eta(X)=int_X^(2X)
+       [S_f(x)-eta/log x*int_1^x S_f(y)dy/y]*x^-2 dx.    (4.1)
+Every cofactor/unit/diagonal endpoint remains; no asymptotic replacement
+is used to derive (4.1).
+
+From (3.1), int_1^x S_f(y)dy/y=C*x*(log x)^3+O(x*(1+log x)^2).
+The eta term in (4.1) therefore costs only O((1+log X)^2), whereas
+  int_X^(2X) (log x)^3 dx/x
+     =[(log X+log2)^4-(log X)^4]/4
+     =log2*(log X)^3+O((1+log X)^2).
+Thus, uniformly over |eta|<=2,
+  D_eta(X)=C*log2*(log X)^3+O((1+log X)^2).              (4.2)
+Individual diagonal kernel entries may have either sign when eta>1;
+this aggregate positive asymptotic does not assume otherwise. It holds
+for every large integer X, not just observed dyadic scales.
+
+5. Every fixed delay retains the same cubic diagonal mechanism
+-------------------------------------------------------------
+For g_a(n)=f(n)-a*1_(2 divides n)f(n/2), replace nu0's prime2 row by
+  c'_0=1, c'_1=t-2-a,
+  c'_2=(1-t)^2-a*(t-2),
+  c'_e=(t-a)*(1-t)^2*t^(e-3), e>=3, t=2^-1/3.
+All odd-prime rows are unchanged. Its squared prime2 factor is
+  L_(2,a)(z)=1+(t-2-a)^2*z
+       +[(1-t)^2-a*(t-2)]^2*z^2
+       +(t-a)^2*(1-t)^4*z^3/(1-t^2*z).
+Let H_a be the product in(1.2) with this sole local replacement.
+Its absolute convergence region still includes every sigma>2/3;
+its value at1 is strictly positive, since the replacement is a positive
+series with unit coefficient one. Equivalently,
+  H_a(1)=H(1)*L_(2,a)(1/2)/L_2(1/2)>0.
+The bounded other-mode error now has bound C_e*(1+|a|), so the identical
+proof gives
+  sum_(n<=x)g_a(n)^2=C_a*x*(log x)^3+O_a(x*(1+log x)^2),
+  C_a=beta^2*H_a(1)/6>0,
+  D_eta,a(X)=C_a*log2*(log X)^3+O_a((1+log X)^2).         (5.1)
+Thus the selected critical delay and all other fixed finite delay words
+do not erase this diagonal mechanism. This is not a statement that
+their full signed moment has the diagonal's asymptotic.
+
+6. Exact next signed obligation, and why cubic is already cofinal
+----------------------------------------------------------------
+Define the complete ORDERED off-diagonal
+  Q_eta,a(X)=sum_(h!=k)g_a(h)g_a(k)*K_eta,X(h,k).
+Both orientations are present, and the exact equality is
+  W_eta,a(X)=D_eta,a(X)+Q_eta,a(X).                       (6.1)
+The proposed selected identity/eta recurrences with rho1/2,k2 would
+give W_eta(X)<=K*(1+log2 X)^2 uniformly, if proved. The paid causal
+recovery in007 then gives the same bound for the full filtered energy
+and hence an absolute O(log^2 X) bound for W itself. The latter follows
+by its local/history Cauchy bound, not from its signed upper bound alone.
+Therefore their necessary signed consequence is
+  Q_eta,a(X)=-C_a*log2*(log X)^3+O_a((1+log X)^2)         (6.2)
+on dyadic scales. Before using that recovery, the direct necessary
+one-sided inequality is simply Q<=-D+K*(1+log2 X)^2.
+
+No theorem(6.2) for the actual off-diagonal is proved here. It is a
+concrete required source cancellation, retaining the whole centered
+core, all prime powers, gcd-overlap sectors, units and prefix exits.
+It must not be replaced by a conjectural cancellation of only one
+prime/composite subfamily. A detector can certify the exact source
+constant/diagonal peel and expose the retained Q inequality as an open
+obligation, rather than infer it from finite slopes.
+
+For the PRIMARY cofinal target, (4.2)/(5.1) are themselves paid: any
+fixed cube is O_epsilon(X^epsilon). There is no need to cancel it merely
+to prove cofinal growth. A degree-three work lemma is analytically
+admissible and need not have the special leading cancellation(6.2).
+Hence this result must not reject signed degree-two candidates, demand
+degree two for RH, or promote a least-slope ranking to a proof priority.
+Its obstruction is to a particular proof route, as next made stronger.
+
+7. A stronger actual-source obstruction to FULL termwise absolutes
+-----------------------------------------------------------------
+The absolute nu0 row is
+  M_p(z)=1+(2-t)z+(1-t)^2*z^2/(1-tz).
+Its Euler series has the factorization
+  sum_n|nu0(n)|n^-s=zeta(s)^2*J(s),
+  J_p(z)=(1-z)^2*M_p(z).
+The linear coefficient of J_p is -t; all subsequent absolute weighted
+coefficients are O_sigma(p^-2sigma). Thus J has absolutely summable
+Dirichlet coefficients for sigma>2/3, and J(1)>0 by the same positive
+product argument. The elementary floor formula for d2 gives
+sum_(n<=x)d2(n)=x log x+O(x). Convolving it with J as in section2 gives
+  sum_(n<=x)|nu0(n)|=J(1)*x log x+O(x).
+
+For a fixed delay, its modified prime2 ABSOLUTE row is
+  M_(2,a)(z)=1+|t-2-a|z+|(1-t)^2-a(t-2)|z^2
+                    +|t-a|*(1-t)^2*z^3/(1-tz).
+The product J_a has that sole replacement, remains absolutely summable
+for sigma>2/3 and has J_a(1)>0. The complete bounded remainder satisfies
+||g_a|-beta*|nu0,a||<=C_e*(1+|a|) pointwise. Consequently
+  sum_(n<=x)|g_a(n)|=beta*J_a(1)*x log x+O_a(x).          (7.1)
+This is an unconditional actual-source first absolute moment, not a
+random model or a substitute for its signed summatory function.
+
+For X>=8, h,k in [X,5X/4], and max(h,k)<=x<=2X, one has
+  0<=1-log(sqrt(hk))/log x<=log2/log(2X).
+Thus for every |eta|<=2 the kernel integrand multiplier is at least
+  1-2log2/log(2X)>=1/2.
+Retaining the entire interval from max(h,k) to2X yields
+  K_eta,X(h,k)>= (1/2)*int_(5X/4)^(2X)x^-2 dx
+                         =3/(20X).                     (7.2)
+The endpoint h<=2X-1 is satisfied for this sector at X>=8. Bounds use
+no prime-gap or special-support deletion; units outside this sector
+are simply not needed for a lower bound on an absolute total.
+
+Let T_abs(X)=sum_(h,k<=2X-1)|g_a(h)g_a(k)*K_eta,X(h,k)|.
+Combining(7.1),(7.2) gives
+  T_abs(X)>=3/(20X)*[sum_(X<=h<=5X/4)|g_a(h)|]^2,
+  sum_(X<=h<=5X/4)|g_a(h)|
+       =beta*J_a(1)*X*log X/4+O_a(X).
+In particular, for all sufficiently large X,
+  T_abs(X)>=3*beta^2*J_a(1)^2/1280 * X*(log X)^2.         (7.3)
+This is uniform in |eta|<=2 for fixed a. The exact onset depends on the
+fixed constants in(7.1); no numerical onset is asserted. Diagonal terms
+alone also give T_abs>=|D_eta,a|, but(7.3) is substantially stronger.
+
+The same first-absolute-moment theorem gives a matching upper order.
+For all1<=h,k<=x with x>=X, log(sqrt(hk))/log x lies in[0,1], so the
+absolute kernel integrand multiplier is at most three for |eta|<=2.
+Triangle only inside that integral therefore gives
+  T_abs(X)<=3*int_X^(2X) [sum_(h<=x)|g_a(h)|]^2*x^-2 dx
+           =O_a(X*(1+log X)^2).
+Thus this complete absolute-majorant quantity is actually of order
+X*log^2 X, bounded above and below by fixed positive constants at large
+scales. This upper estimate remains solely a weak absolute reference.
+
+A proof replacing ALL source/kernel products by their absolute values
+therefore cannot establish any cofinal bound: choose epsilon<1 in
+(7.3). This rejects only that absolute-majorant route, not a signed
+candidate, not an argument retaining covariance, and not an estimate
+on a smaller explicitly paid sector. Cancellation within the retained
+off-diagonal/source pairs is an essential proof input at cofinal scale.
+
+8. Detector feedback and remaining open lemma
+----------------------------------------------
+The grammar can attach exact certificates for the local rows(1.1),
+positive Euler-product constants, divisor-convolution main terms, and
+the full diagonal identity(4.1). These are actual-source theorems rather
+than conditional rearrangements of an unknown norm. The resulting proof
+route guards are:
+  * a degree-two work premise needs the FULL negative covariance(6.2);
+  * degree-three/cofinal control does not require cancelling the paid
+    diagonal cube itself;
+  * an all-pair termwise-absolute majorant is impossible by(7.3);
+  * selective triangle inequalities remain legal only with every other
+    signed sector and its source/frontier complements retained.
+
+A genuinely useful next argument must estimate the full off-diagonal
+or derive a signed pairing/recurrence with paid complements; it cannot
+infer such cancellation from the positivity of H, nor simply remove
+the diagonal. This memo proves no uniform off-diagonal cancellation,
+shell-work recurrence or RH-strength bound. The exact positive diagonal
+and absolute-pair lower bounds identify what the detector's conjectured
+signed lemma must accomplish, while leaving broader cofinal proof
+languages and all frozen numerical conclusions unchanged.

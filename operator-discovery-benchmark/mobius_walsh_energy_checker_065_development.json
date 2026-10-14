@@ -1,0 +1,54 @@
+{
+  "schema": "mobius-walsh-energy-checker-development-v1",
+  "distinct_tests": 26,
+  "test_invocations": 52,
+  "charged_work_units": 211841,
+  "runs": [
+    {
+      "command": "/usr/bin/time -v python3 test_check_mobius_walsh_energy_065.py -v",
+      "tests": 26,
+      "passed": true,
+      "work": 105285,
+      "wall_seconds": 0.16,
+      "rss_kib": 15104,
+      "log": "test_arbitrary_rational_weights (__main__.Tests) ... ok\ntest_cauchy_direction (__main__.Tests) ... ok\ntest_charge_only_and_work_cap (__main__.Tests) ... ok\ntest_coefficient_mutation (__main__.Tests) ... ok\ntest_conditioned_key (__main__.Tests) ... ok\ntest_cross_row_coalescing (__main__.Tests) ... ok\ntest_diagonal_unit (__main__.Tests) ... ok\ntest_exhaustive_cycle_soundness (__main__.Tests) ... ok\ntest_exhaustive_soundness (__main__.Tests) ... ok\ntest_missing_term (__main__.Tests) ... ok\ntest_missing_weight (__main__.Tests) ... ok\ntest_negative_cycle (__main__.Tests) ... ok\ntest_noncanonical_rational (__main__.Tests) ... ok\ntest_noncycle (__main__.Tests) ... ok\ntest_nonzero_row_zero_weight (__main__.Tests) ... ok\ntest_overconsumption (__main__.Tests) ... ok\ntest_parameter_mismatch (__main__.Tests) ... ok\ntest_parent_l1_mutation (__main__.Tests) ... ok\ntest_positive_cycle (__main__.Tests) ... ok\ntest_ratio_mismatch (__main__.Tests) ... ok\ntest_shared_character_factors (__main__.Tests) ... ok\ntest_shared_cycles (__main__.Tests) ... ok\ntest_squareful (__main__.Tests) ... ok\ntest_strict_bool_index (__main__.Tests) ... ok\ntest_zero (__main__.Tests) ... ok\ntest_zero_row_positive_weight (__main__.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.109s\n\nOK\ncharged_work_units=105285\n\tCommand being timed: \"python3 test_check_mobius_walsh_energy_065.py -v\"\n\tUser time (seconds): 0.14\n\tSystem time (seconds): 0.01\n\tPercent of CPU this job got: 91%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 15104\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2362\n\tVoluntary context switches: 2\n\tInvoluntary context switches: 0\n\tSwaps: 0\n\tFile system inputs: 184\n\tFile system outputs: 72\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "returncode": 0,
+      "operations": 105285,
+      "elapsed_seconds": 0.16,
+      "peak_rss_KiB": 15104
+    },
+    {
+      "command": "/usr/bin/time -v python3 test_check_mobius_walsh_energy_065.py -v",
+      "reason": "meaningful bit-cap and per-addition resource accounting change",
+      "tests": 26,
+      "passed": true,
+      "work": 106556,
+      "wall_seconds": 0.14,
+      "rss_kib": 15104,
+      "log": "test_arbitrary_rational_weights (__main__.Tests) ... ok\ntest_cauchy_direction (__main__.Tests) ... ok\ntest_charge_only_and_work_cap (__main__.Tests) ... ok\ntest_coefficient_mutation (__main__.Tests) ... ok\ntest_conditioned_key (__main__.Tests) ... ok\ntest_cross_row_coalescing (__main__.Tests) ... ok\ntest_diagonal_unit (__main__.Tests) ... ok\ntest_exhaustive_cycle_soundness (__main__.Tests) ... ok\ntest_exhaustive_soundness (__main__.Tests) ... ok\ntest_missing_term (__main__.Tests) ... ok\ntest_missing_weight (__main__.Tests) ... ok\ntest_negative_cycle (__main__.Tests) ... ok\ntest_noncanonical_rational (__main__.Tests) ... ok\ntest_noncycle (__main__.Tests) ... ok\ntest_nonzero_row_zero_weight (__main__.Tests) ... ok\ntest_overconsumption (__main__.Tests) ... ok\ntest_parameter_mismatch (__main__.Tests) ... ok\ntest_parent_l1_mutation (__main__.Tests) ... ok\ntest_positive_cycle (__main__.Tests) ... ok\ntest_ratio_mismatch (__main__.Tests) ... ok\ntest_shared_character_factors (__main__.Tests) ... ok\ntest_shared_cycles (__main__.Tests) ... ok\ntest_squareful (__main__.Tests) ... ok\ntest_strict_bool_index (__main__.Tests) ... ok\ntest_zero (__main__.Tests) ... ok\ntest_zero_row_positive_weight (__main__.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.111s\n\nOK\ncharged_work_units=106556\n\tCommand being timed: \"python3 test_check_mobius_walsh_energy_065.py -v\"\n\tUser time (seconds): 0.14\n\tSystem time (seconds): 0.00\n\tPercent of CPU this job got: 99%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 15104\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2363\n\tVoluntary context switches: 1\n\tInvoluntary context switches: 0\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 32\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "returncode": 0,
+      "operations": 106556,
+      "elapsed_seconds": 0.14,
+      "peak_rss_KiB": 15104
+    }
+  ],
+  "scientific_arrays_read": false,
+  "producer_imported": false,
+  "previous_frozen_files_edited": false,
+  "uniform_growth_proved": false,
+  "RH_proved": false,
+  "launcher_attempts": [
+    {
+      "command": "/usr/bin/time -v python -m unittest -v test_check_mobius_walsh_energy_065",
+      "exit": 127,
+      "test_execution_started": false,
+      "log": "/usr/bin/time: cannot run python: No such file or directory\nCommand exited with non-zero status 127\n\tCommand being timed: \"python -m unittest -v test_check_mobius_walsh_energy_065\"\n\tUser time (seconds): 0.00\n\tSystem time (seconds): 0.00\n\tPercent of CPU this job got: 70%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 768\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 27\n\tVoluntary context switches: 1\n\tInvoluntary context switches: 0\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 8\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 127\n"
+    }
+  ],
+  "operations": 211841,
+  "unique_new_synthetic_tests": 26,
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "correction": "Unavailable python launcher failed before tests; preserved separately. Actual suites used python3 and passed; the second followed a meaningful resource-cap change.",
+  "receipt_field_normalization": "root added standard pipeline ledger aliases and separated unstarted launch attempts without removing any original logs"
+}

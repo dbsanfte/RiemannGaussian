@@ -1,0 +1,122 @@
+{
+  "RH_proved": false,
+  "all_scale_bound_found": false,
+  "anchored_storage_diagnostic": {
+    "entire_anchored_PSD_family_preregistered": true,
+    "half_energy_identity_domain": "dyadic X>=2; half energy at X=1 is zero",
+    "half_energy_is_twice_previous_dyadic_energy": true,
+    "matrix": "H_child-4 H_parent",
+    "negative_direction": "half=P_floor(t/2)",
+    "new_prime_sign_information": false,
+    "primal_feasibility_proved": false,
+    "result_sha256": "52a58dbbaa8c9ed7bb72b871ff80cd91a9d3c68f4d22f41a7ac25f1d61ea7bbf",
+    "status": "witness_invalid_for_anchored_storage_cone",
+    "uniform_innovation_bound_proved": false,
+    "verification": "same-implementation exact replay; not independent uniform-bound admission"
+  },
+  "archives": [
+    {
+      "name": "complete-gram-moment-probe-001",
+      "source_count": 68,
+      "tests_passed": 12,
+      "verification_kind": "independent_verification.json",
+      "verification_sha256": "4c54167661bd7b439fd95d31fa80baca71b08635df83dc1edd8919e3f18b64d0"
+    },
+    {
+      "name": "complete-gram-moment-probe-002",
+      "source_count": 68,
+      "tests_passed": 15,
+      "verification_kind": "independent_verification.json",
+      "verification_sha256": "7a63a2e3f995d57dd1612b5803c46cc0ab11b151182101eca27e622fcac1c0d8"
+    },
+    {
+      "name": "complete-gram-search-001",
+      "source_count": 79,
+      "tests_passed": 44,
+      "verification_kind": "independent_verification.json",
+      "verification_sha256": "c9122294fe8e5424cb849f9bae166b8a09fbf5afcf0fc7920b5678369237d708"
+    },
+    {
+      "name": "complete-gram-storage-probe-001",
+      "source_count": 42,
+      "tests_passed": 3,
+      "verification_kind": "verification.json",
+      "verification_sha256": "61ecbe4ca7bce0ebbc7ef245e09fa6224a483d3f77bceb55079eb8fb8f079ee3"
+    }
+  ],
+  "bounded_direction_retry": {
+    "missing_coordinates": 0,
+    "new_floating_search": false,
+    "prior_witness_invalid_in_both_regions": true
+  },
+  "collaboration_policy": "Sol 6.1 subagents only for substantial long-running parallelizable work; small tasks in main thread",
+  "critical_finite_certificate_found": false,
+  "full14_search": {
+    "all_original_equations_independently_checked": true,
+    "compressed_rows": 877,
+    "constant_coordinates": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "cost": {
+      "cpu_seconds": 152.807220375,
+      "elapsed_seconds": 152.8250175580033,
+      "observed_threads_at_completion": 1,
+      "peak_rss_kib": 627896,
+      "pid": 640505
+    },
+    "final_transfers_attempted": false,
+    "native_work_proxy": 430958677,
+    "primal_attempted": false,
+    "raw_native_work_proxy": 671253766,
+    "result_sha256": "5d924c69bb4e8105d674b12bdeee3aefc4334f6111ad98e56c3fea0339e4d1c2",
+    "scope": "exact fixed shared full14 gamma-zero certificate cone; arbitrary scalar budget shifts",
+    "selected_rows": 1366,
+    "status": "exact_separator",
+    "support_size": 701,
+    "target_pairing": "-1",
+    "total_charged_work_proxy": 446048494,
+    "work_limit": 450000000
+  },
+  "future_resources": {
+    "total_charged_work_limit": 450000000,
+    "total_memory_bytes": 6442450944,
+    "worker_memory_bytes": 6442450944
+  },
+  "global_bound_proved": false,
+  "gram_group_dimensions": {
+    "full_child": 14,
+    "full_parent": 14
+  },
+  "next_action": "implement typed signed storage increment with independent coercivity, scalar-growth and recovery checks before searching the entire anchored PSD state family",
+  "original_coefficient_bit_resource_failure_preserved": true,
+  "original_scalar_sources_and_targets_preserved": true,
+  "previous_research_publication": "publication-006",
+  "prior_four_group_cone_embedded": true,
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "schema": 7
+}

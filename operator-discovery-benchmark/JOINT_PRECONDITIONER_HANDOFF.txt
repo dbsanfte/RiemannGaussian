@@ -1,0 +1,157 @@
+JOINT CORRELATION AND DIVISOR PRECONDITIONER SEARCH: VERIFIED PILOT
+
+Current state
+-------------
+The exact structural search, complete-source experiment and independent
+verification passed. The complete signed arithmetic bound remains OPEN.
+This pass supplies a recoverable operator, complete prime-power identities,
+and uniform bounds for specified shared-square contributions. It does not
+establish a new exponent for the whole target or prove RH.
+
+Authoritative artifacts:
+  joint-preconditioner-results/pilot-001/report.json
+  joint-preconditioner-results/pilot-001/selection.json
+  joint-preconditioner-results/pilot-001/next_search_input.json
+  candidate10_joint_preconditioner_obligation.json (direct publication copy)
+  joint-preconditioner-results/latest.json
+
+The old candidate10_centered_reciprocal_obligation.json and all prior frozen
+sources/results are unchanged. The old obstruction remains available in
+the new snapshot and protocol. Two Sol6.1 analytical reviews are included:
+  JOINT_CORRELATION_PAIRING_REVIEW_004.txt
+  JOINT_CORRELATION_GRAMMAR_REVIEW_004.txt
+The independent Sol6.1 implementation is check_joint_preconditioner.py,
+along with check_joint_reciprocal_correlation.py.
+
+What the detector searched
+--------------------------
+The grammar enumerates the identity and 36 operators with Dirichlet series
+zeta(s+v)^(-r), with sixth-lattice shifts and signed integer/half-integer
+powers. Every program retains all four source terms and the complete
+unit/same-prime-power correction. Twenty-five programs have a proved
+bounded or polylogarithmic two-direction recovery; twelve retain an unpaid
+power cost. Their full ASTs and costs are archived, not discarded.
+
+The algebraic ranking was fixed before actual-source generation. It favors
+fewer positive Euler factors with paid recovery, and then simpler exact
+local rational functions. It selected program23, v=2/3,r=1. This is an
+explicit grammar/ranking choice, not an exhaustive or bias-free search.
+No numerical slope or validation value selected the operator.
+
+With u=1/3,v=2/3,beta=9/2, k_w(n)=n^(-w), mu_w(n)=mu(n)n^(-w),
+the selected operator is complete Dirichlet convolution by mu_v:
+  w=tilde_b*mu_v=f+eta,
+  f=beta*nu0-beta*nu1-beta*mu-R_u*nu2,
+  nu0=k_u*(mu*mu), nu1=k_u*(mu*mu_v), nu2=k_u*mu_v,
+  eta=beta*mu_v-d*mu_v.
+The inverse is convolution by k_v. Both critical PREFIX norm costs are
+at most zeta(7/6)<=7. This is not a pointwise block-energy inequality:
+divisor convolution couples smaller scales. It preserves the required
+cofinal class without proving that the source belongs to it.
+
+The complete correction has a finite critical prefix norm. The analytical
+review proves D(x)<=beta*pi(sqrt x), using complete mass beta at each prime,
+then the elementary bound pi(y)<=10y/log y. Consequently
+  ||D||_crit<=C_D=20beta/sqrt(log4),
+  ||prefix eta||_crit<=beta*sqrt27+7*C_D.
+This pays the correction for full-prefix recovery; it does not permit
+deleting it at independent product cutoffs. The unit is explicit:
+  f(1)=-beta-R_u, eta(1)=beta, w(1)=-R_u.
+
+What is proved about primes at all scales
+-----------------------------------------
+The compiler factors exact local Euler numerators and sums the COMPLETE
+geometric valuation tails. For every actual prime q, t=q^(-1/3), e>=2:
+  nu0(q^e)=(1-t)^2*t^(e-2),
+  nu1(q^e)=-t*nu0(q^e),
+  nu2(q^e)=(1-t)*t^e,
+  mu(q^e)=0.
+The absolute tail masses are <=1,t,t^2,0 respectively. The independent
+checker reconstructs these polynomial/recurrence certificates with exact
+rationals and verifies the complete first-valuation bounds separately.
+
+These identities give uniform absolute bounds for pairs sharing q^2 with
+q>n^rho. For modes i,j in {0,1,2}, their envelope is
+  C_a*2^max(2-(3+a/3)*rho,0)
+      *X^(1-(3+a/3)*rho)*(1+log(2X))^2,
+  a=i+j, C_a=1+1/(3+a/3), n in[X,2X).
+It applies to the union counted once, includes every valuation, and remains
+valid after the joined high-product/off-diagonal restriction. Actual source
+scalar products |c_i*c_j| must multiply these unscaled-mode bounds.
+
+The thresholds for polylogarithmic payment are:
+  nu0/nu0:1/3; nu0/nu1:3/10; nu0/nu2 and nu1/nu1:3/11;
+  nu1/nu2:1/4; nu2/nu2:3/13.
+Both orientations are retained; any mu leg vanishes on a shared square.
+There are9 nonzero envelope sectors and7 exact zero sectors.
+
+This is partial progress on real arithmetic support. The unsuppressed
+common mode, first valuations and remaining interactions are NOT paid.
+In particular these results do not authorize separately bounding every
+raw multiplicative mode: their common pole cancellation stays joint.
+
+Numerical experiment and verification
+-------------------------------------
+Complete source horizon H=131071, producer160-bit Arb, checker192-bit Arb.
+Calibration scales:1,16,64,1024. Fresh scales:2048,4096,8192,16384,32768,65536.
+Selection was saved before either worker generated the source.
+
+All25 complete vectors were independently compared, including each original
+coefficient, both centers/prefixes, kernel/inverse, four transformed modes,
+core/correction and their prefixes:3,276,800 tight enclosure comparisons.
+The checker also reconstructed every original coefficient with the inverse.
+The producer uses a product convolution head and prefix tables for O_X;
+the checker evaluates reciprocal intervals and the entire upper triangle.
+Both preserve arithmetic/center crosses and all four-mode Gram entries.
+
+Selected rounded observations (finite values, not asymptotic estimates):
+  X         E_R           E_w          E_core       O_X
+  1024      67.193535      1.881194     1.721846     46.541998
+  2048      56.582642      3.340220     3.220991     35.726673
+  8192      40.009713      2.973575     2.968163     15.329887
+  32768     31.607413      6.957665     6.765782     -0.352813
+  65536     19.687951      6.061792     6.183933    -16.885949
+
+The exact identity E_w=E_core+E_eta+2<F,eta> was checked. A smaller observed
+E_w does not establish a stronger exponent after recovery. Negative O_X
+is allowed: only its one-sided upper bound is needed, and the paid head,
+diagonal and center still reconstruct the nonnegative original energy.
+
+All27 tests passed in the one combined frozen suite. The five modules each
+had one owned development suite; no failed numerical run or retry occurred.
+Total charged work:306,034,241 out of1,300,000,000.
+Runtime:156.272seconds. Producer peakRSS755044KiB, checker572472KiB,
+parent562172KiB. Each is below0.73GiB; sum of these individual peaks is
+below1.81GiB. Each process had a4GiB cap and two workers ran concurrently.
+The full joined observable uses O(H log H) work and O(H) storage; there is
+no quadratic pair table. The gzip artifacts occupy about176.5MB including
+snapshots; compression is for disk space only. No hashes were created.
+
+Next proof-driven search
+------------------------
+Keep the exact full core as the unresolved bound:
+  F(x)=sum_(n<=x)f(n), ||F||_sigma<infinity for every sigma>1/2,
+equivalently its complete cofinal dyadic energy. The paid original recovery,
+center correction, bounded inverse and eta norm remain part of the route
+back to the original target. A renamed core is an equivalent obstruction.
+
+The reviews supply concrete next constructions, not completed bounds:
+1. Valuation pairings with exact q-free cofactor defects. For example
+   nu1(q^eH)+t*nu0(q^eH)=t*l0(e)*(nu0(H)-nu1(H)).
+   The defect survives for general H; dividing by t loses the prime gain.
+2. An all-prime logarithmic recurrence whose Volterra memory is absorbable
+   on x>=64 and whose finite head is explicit. The remaining JOINT signed
+   prime-power bank is open. Separate pole compensation creates an unpaid
+   macroscopic forcing; local analytic pole cancellation is not a tail bound.
+3. A mixed log-divisor identity with a true d^(-1/3)-d^(-2/3) gain in its
+   symmetric kernel term. Its max/prefix boundary commutator is unsuppressed,
+   and the original symmetric source mode must still be recovered.
+4. All-valuation prime insertion and actual-prime divided differences, with
+   their q-free forcing, outside-source complements and inverse gap costs.
+
+The next implementation should search arguments controlling these concrete
+defects while preserving the full target. Prioritize a proved exponent gain,
+an acyclic scale recurrence with a strict gap, or a reduction to independent
+paid lemmas. Smaller constants and more reversible rewrites do not close it.
+No full signed contraction or RH proof is claimed. The research goal stays
+active.

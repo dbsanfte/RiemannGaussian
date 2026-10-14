@@ -1,0 +1,95 @@
+FRACTIONAL COEFFICIENT OPERATORS WITH A VERIFIED ORDINARY-ZERO BRIDGE
+
+This is a general construction search over a declared fractional coefficient
+and logarithmic-kernel grammar. It reuses the ordinary zeta and Dirichlet
+power semantics. It is not claimed independent of those representation choices
+or historically novel. The parameter values and fitted estimates are selected
+by the frozen numerical protocol, not a language-model choice after outcomes.
+
+1. For 0<a<=1 define nu_a=mu^{*a}, the normalized Dirichlet power of the
+constant-one inverse. The producer uses factor-free inversion and binomial
+Dirichlet powers. The evaluator independently uses the prime-power recursion
+c_0=1, c_k=c_(k-1)*(k-1-a)/k and multiplicativity. For 0<a<1 every c_k,
+k>=1, is negative and has absolute value <=1. Hence |nu_a(n)|<=1 for all n;
+nu_a(p)=-a, and its sign is (-1)^omega(n). At a=1 it is ordinary mu.
+This is a universal coefficient theorem, not a new estimate of prime counts.
+Its absolutely convergent series is zeta(s)^(-a) for Re(s)>1, with the
+Euler-product logarithm branch; absolute series <=zeta(sigma)^a.
+
+2. For 0<b<=1 and real kappa put
+K_b,kappa(u)=Gamma(b)^(-1) integral_0^u exp(kappa*v)*v^(b-1) dv,
+u>=0, and G_a,b,kappa(x)=sum_(n<=x) nu_a(n) K_b,kappa(log(x/n)).
+For b=0 use K=1 and G=sum nu_a. No coefficient beyond floor(x) contributes.
+K is positive, increasing, continuous for b>0 and K(0)=0. Its numerical
+formula is u^b/Gamma(b+1)*1F1(b;b+1;kappa*u). Independent evaluation uses
+regularized incomplete gamma, with auxiliary entire-integrand quadratures
+after u=v^d for rational b=p/d. No sampled quadrature replaces a sum over n.
+
+Fubini on Re(s)>max(1,kappa) gives the exact Mellin identity
+Mellin G(s)=zeta(s)^(-a)*(s-kappa)^(-b)/s.
+Indeed the Mellin transform of the kernel is (s-kappa)^(-b)/s. Absolute
+convergence follows from the coefficient majorant and the positive kernel.
+The coefficient tail above N is bounded by N^(-h) zeta(sigma-h)^a for
+0<h<sigma-1, with the complete Mellin tail multiplied by
+|s-kappa|^(-b)/|s|. Numerical checks of this identity retain those tails.
+
+3. At zeta's pole one the transform, after multiplying by s, has local
+order a-b if kappa=1 and b>0, otherwise a. It can be holomorphic there
+only if this order is a nonnegative integer. At a shifted point kappa!=1,
+where zeta is finite and nonzero, a positive b adds order -b. Such a point
+inside a proposed holomorphic domain is another obstruction. The pilot
+uses real shifts -1/2,0,1/2,1,3/2, where the needed real zeta facts are
+checked natively when the shifted point is inside a claimed domain.
+Matching a=b at kappa=1 removes the pole locally: the transform is
+[((s-1)zeta(s))]^(-a)/s. This supplies a new arithmetic observable,
+not the pointwise signed root of M. The shift and power grids also retain
+unmatched cases with their explicit failed continuation obligations.
+
+4. Integer bounds must cover real x. Let N>=1 and N<=t<N+1. For b>0,
+the kernel derivative is (t/n)^kappa*log(t/n)^(b-1)/(t Gamma(b)).
+For kappa<=1 it is <=log(t/n)^(b-1)/(n Gamma(b)). Split n<=N/2,
+N/2<n<N and n=N. Using log(t/n)>=(N-n)/N, the first two sums are
+bounded by [2(1+log N)+2+2/b]/Gamma(b); the endpoint term integrates
+to at most 2/Gamma(b+1). Thus the whole unit increment is at most
+[4+2 log N+4/b]/Gamma(b) <= (4+4/b)(1+log N)/Gamma(b).
+For kappa>1 multiply this by (N+1)^(kappa-1) <= (2t)^(kappa-1).
+This holds for every arithmetic input with coefficient magnitudes <=1.
+For b=0 the cumulative sum is constant between consecutive integers.
+
+If every integer N satisfies |G(N)-A|<=C*N^theta, theta>=0, the real
+function therefore satisfies |G(t)-A|<=C*t^theta+E*t^lambda*(1+log t),
+lambda=max(kappa-1,0), E=2^lambda*(4+4/b)/Gamma(b); for b=0 E=0.
+Its Mellin transform is holomorphic on Re(s)>eta=max(theta,lambda,0).
+For sigma>eta its absolute value is bounded by
+C/(sigma-theta)+E*[1/(sigma-lambda)+1/(sigma-lambda)^2].
+
+5. Let m clear the denominators of a and b. In the initial domain,
+zeta(s)^(a*m)*(s-kappa)^(b*m)*[s*Mellin(G-A)(s)+A]^m=1.
+The left side is meromorphic with integral powers, so this identity extends
+through any claimed Mellin holomorphic domain by the identity theorem.
+At EVERY nontrivial ordinary zero, whatever its multiplicity, zeta^(a*m)
+vanishes and the other factors are finite; it would yield 0=1. Consequently
+a PROVED uniform integer bound with eta<=1/2 and no local divisor
+obstruction would imply RH. A previously certified actual critical zero
+rules out eta<1/2. Local orders also reject numerically plausible bounds
+that cannot cross the pole at one or a shifted kernel singularity.
+
+The quantitative inverse cost is
+|1/zeta(s)| <= (|s|*B_sigma+|A|)^(1/a)*|s-kappa|^(b/a).
+Small a is therefore charged its full inverse-power and height costs.
+No exponent division by a is introduced into eta: this is a fractional
+DIRICHLET inverse, unlike a pointwise root of a fixed residual. Its signed
+coefficient sums are different observables. Small finite amplitudes are
+not global arithmetic cancellation proofs.
+
+6. All-positive coefficients and coefficients eventually equal to one have
+Dirichlet series with a genuine pole at one. Their kernel-weighted sums
+cannot have the same subcritical-half-plane control, since the transformed
+series has negative local order there. Finite point counterexamples are
+computed with complete sums. Claims outside that analytic contradiction
+are marked unresolved rather than incorrectly ruled out.
+
+The signed estimates across every integer or dyadic scale remain open.
+The operator identity, coefficient theorem, increment bound and conditional
+ordinary-zero implication are proved; they do not prove their arithmetic
+premise. RH remains unproved.

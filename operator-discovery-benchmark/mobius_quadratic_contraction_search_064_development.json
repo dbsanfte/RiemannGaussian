@@ -1,0 +1,49 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new test_mobius_quadratic_contraction_064 via ../.venv/bin/python -B",
+      "returncode": 0,
+      "tests": 9,
+      "stdout": "test_conditioning_monotone_and_full_evaluation_exact (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_envelope_dominates_all_remaining_sign_assignments (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_independent_source_and_contraction_composition (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_linear_and_quadratic_terms_cancel_together (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_overlapping_composite_indices_and_conditioning_parity (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_rational_conditioning_powers_and_duplicate_plans (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_shared_prime_diagonal_is_constant (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_squarefree_masks_and_overlap (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_zero_K_unit_and_invalid_conditioning (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.039s\n\nOK\n",
+      "operations": 69533,
+      "elapsed_seconds": 0.04896739200921729,
+      "peak_rss_KiB": 15836
+    },
+    {
+      "command": "selected tests after rational-plan API and sign diagnostics extension",
+      "test_names": [
+        "test_custom_rational_powers_without_denominator_whitelist",
+        "test_exact_sign_witnesses_degree_and_fourier_lower_guard",
+        "test_rational_conditioning_powers_and_duplicate_plans",
+        "test_independent_source_and_contraction_composition"
+      ],
+      "returncode": 0,
+      "tests": 4,
+      "stdout": "test_custom_rational_powers_without_denominator_whitelist (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_exact_sign_witnesses_degree_and_fourier_lower_guard (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_rational_conditioning_powers_and_duplicate_plans (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\ntest_independent_source_and_contraction_composition (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.047s\n\nOK\n",
+      "operations": 92754,
+      "elapsed_seconds": 0.047264340973924845,
+      "peak_rss_KiB": 15916
+    },
+    {
+      "command": "new isolated runner composition test with synthetic source and mutation rejections",
+      "test_names": [
+        "test_saved_whole_merge_binding_and_source_mutations"
+      ],
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_saved_whole_merge_binding_and_source_mutations (test_mobius_quadratic_contraction_064.QuadraticContractionSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.240s\n\nOK\n",
+      "operations": 32587,
+      "elapsed_seconds": 0.24053751601604745,
+      "peak_rss_KiB": 43756
+    }
+  ],
+  "operations": 194874,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false,
+  "unique_new_synthetic_tests": 12,
+  "affected_retests": 2
+}

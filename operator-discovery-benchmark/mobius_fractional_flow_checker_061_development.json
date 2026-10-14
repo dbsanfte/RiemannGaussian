@@ -1,0 +1,27 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_fractional_flow_061.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 20,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_fractional_flow_061 operations=170303\n",
+      "stderr": "test_alias_float_bool_and_invalid_source_parameters (__main__.FractionalFlowTests) ... ok\ntest_charge_only_pipeline_meter (__main__.FractionalFlowTests) ... ok\ntest_column_kernel_masses_cannot_be_swapped (__main__.FractionalFlowTests) ... ok\ntest_complete_column_coverage_and_source_binding (__main__.FractionalFlowTests) ... ok\ntest_complete_shared_carrier_column_proof (__main__.FractionalFlowTests) ... ok\ntest_empty_measure_and_nonzero_total_dummy (__main__.FractionalFlowTests) ... ok\ntest_every_small_signed_measure_matches_quantile_transport (__main__.FractionalFlowTests) ... ok\ntest_exit_cutoff_price_and_discrete_plus_one (__main__.FractionalFlowTests) ... ok\ntest_exit_underpricing_horizon_and_wrong_rho_rejected (__main__.FractionalFlowTests) ... ok\ntest_finite_measure_types_order_and_coverage (__main__.FractionalFlowTests) ... ok\ntest_general_rational_alpha_and_positive_band (__main__.FractionalFlowTests) ... ok\ntest_head_cutoff_zero_half_and_arbitrary_fraction (__main__.FractionalFlowTests) ... ok\ntest_missing_altered_or_unsorted_kernel_atoms (__main__.FractionalFlowTests) ... ok\ntest_missing_origin_or_floor_exit_cannot_pass_old_identity_rule (__main__.FractionalFlowTests) ... ok\ntest_negative_and_zero_kernel_prefixes_cannot_be_forged (__main__.FractionalFlowTests) ... ok\ntest_only_head_and_terminal_are_paid (__main__.FractionalFlowTests) ... ok\ntest_resource_guard_work_and_bit_capacity (__main__.FractionalFlowTests) ... ok\ntest_terminal_coefficient_and_degree_exact (__main__.FractionalFlowTests) ... ok\ntest_underpriced_head_and_out_of_scope_theta (__main__.FractionalFlowTests) ... ok\ntest_wrong_carrier_and_forged_global_proof_fields (__main__.FractionalFlowTests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.136s\n\nOK\n",
+      "operations": 170303,
+      "elapsed_seconds": 0.2192735020071268,
+      "peak_rss_KiB": 25520
+    }
+  ],
+  "operations": 170303,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true
+}

@@ -1,0 +1,187 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_control_proved": false,
+  "allowed_unproved_examples": [
+    {
+      "gamma": "0",
+      "log_power": 1,
+      "rho": "1"
+    },
+    {
+      "gamma": "0",
+      "log_power": 2,
+      "rho": "1/2"
+    }
+  ],
+  "completed_search": "core-bound-results/pilot-001/report.json",
+  "fresh_data_policy": "all prefixes through262143 and all final scores are now observed; a subsequent final test needs a new declared range",
+  "grammar_extension": "include forcing log power2 for strict contractions; retain rho1/logpower1 and fractional weights",
+  "next_priority": "generate signed recurrence/auxiliary proofs obeying the necessary pole degree; fixed finite fits do not discharge the all-scale increment",
+  "pole_constraint": {
+    "certified_filters": [
+      {
+        "kind": "delay",
+        "sign": 0,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/6"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/6"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/3"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/3"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/2"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/2"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "2/3"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "2/3"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "5/6"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "5/6"
+      },
+      {
+        "cutoff": 64,
+        "kind": "log_abel"
+      }
+    ],
+    "minimum_log_degree": 2,
+    "rho_below_one_minimum_forcing_log_power": 2,
+    "rho_equal_one_minimum_forcing_log_power": 1,
+    "scope": "gamma=0; nonnegative auxiliary storage dominating E_G",
+    "source_pole_order": 2
+  },
+  "preselection_gate": "core_pole_growth_obstruction.gate",
+  "prior_input": "candidate10_joint_preconditioner_obligation.json",
+  "proof_rules_available": [
+    "nonnegative square domination",
+    "conditional dyadic induction",
+    "bounded/polylog recovery",
+    "uniform weak absolute reference",
+    "retained critical pole minimum-log-degree rejection"
+  ],
+  "rejected_selected_obligations": [
+    {
+      "program_id": 6152,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1538,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 9997,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 423,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1734,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 294,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 2118,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 2022,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 2214,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1683,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1542,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1590,
+      "status": "analytic_countercertificate"
+    },
+    {
+      "program_id": 1638,
+      "status": "analytic_countercertificate"
+    }
+  ],
+  "required_execution_order": [
+    "generate expression and recurrence shapes",
+    "apply certified pole and recovery gates",
+    "evaluate/rank admitted conjectures",
+    "freeze choices and constants",
+    "evaluate genuinely fresh scales",
+    "attempt proof"
+  ],
+  "schema": "pole-admitted-core-bound-obligations-v1",
+  "search_language": "core_bound_synthesis.py",
+  "sharper_log_abel_recovery": "same block log degree, with explicit finite head and bounded floor discrepancy; review006",
+  "status": "open",
+  "target": {
+    "equivalent_goal": "||F||_sigma<infinity for every sigma>1/2, or its cofinal dyadic moment",
+    "expression": "F(x)=sum_(n<=x) f(n), complete signed four-mode core",
+    "open_sectors": [
+      "unsuppressed nu0 tensor nu0 below rho=1/3",
+      "all first valuations and remaining common-prime interactions",
+      "joint signed cross terms after any paid union decomposition"
+    ],
+    "separately_bounding_modes_required": false,
+    "uniformity": "all dyadic scales; constants may depend on epsilon/sigma, not on X or omitted primes",
+    "whole_signed_bound_proved": false
+  },
+  "whole_signed_bound_proved": false,
+  "witness": "core-bound-results/pilot-001/pole-feedback-001/pole_witness.json"
+}

@@ -1,0 +1,118 @@
+INDEPENDENT SHORT-RESIDUAL REPAIR RULE ADMISSION (063)
+
+Authority and exact scope
+-------------------------
+verify_repair(cert,meter=None) admits the exact mobius-short-repair-v1 schema:
+primes,H,rule,residuals,filled,coefficients,coefficient_l1. The three array
+fields each contain two complete canonical rational rows of length H. The
+cost field has both exact coefficient L1 values. Neither row is bound here
+to a numerical source scale or parameter endpoint. These are generic finite
+repair identities. The original joined source must be bound separately by
+the new WHOLE-candidate062 admission after long and short coefficients are
+merged, including all cancellations, horizons and exact source residuals.
+
+No producer, LP, scientific source table or candidate enumeration is imported
+or evaluated. The stopped063 source-only review and062 handoff were read as
+mathematical context. Immutable060 canonical rational/schema, prime validation,
+bit guard and charge-only Meter helpers are reused. No old suite/study is run
+and no existing source is edited. Source-free calibration is contained in the
+sole owned metered synthetic suite.
+
+Allowed primes are an ascending distinct actual mask of size2..8, each prime
+<=1million. H is a strict integer1..4096. Inputs are canonical rational strings
+<=4096bits/2500characters; intermediate rational components<=32768bits.
+Every loop and bounded rational operation charges the work/deadline Meter.
+There is no denominator whitelist, floating rounding or Boolean integer alias.
+
+The eight fill rules
+--------------------
+Let R=product(primes) and E(d) be each supplied residual row on1..H. EVERY
+coprime row is retained, including d=1 and squareful coprime rows whose ordinary
+mu is zero. At a noncoprime row d:
+ raw: retain the supplied original E(d);
+ zero: use0;
+ left/right: use E(a) or E(b) at nearest coprime nodes a<d<b;
+ linear: use (b-d)E(a)/(b-a)+(d-a)E(b)/(b-a);
+ reciprocal_linear: use a(b-d)E(a)/(d(b-a))+b(d-a)E(b)/(d(b-a));
+ core: strip ALL registered-prime factors from d, obtaining d0, and use E(d0);
+ core_inverse: use E(d0)/(d/d0).
+Node1 is always coprime and available on the left. The ONLY virtual node is
+H+1 on the right, with value0. It is used whether or not H+1 is coprime as an
+ordinary integer; its role is the boundary of the finite vector. The reciprocal
+weights are exactly interpolation in1/d, not interpolation in d. All operators
+are linear in the input row and preserve its unit value. The filled arrays are
+reconstructed independently and must match every supplied entry exactly.
+
+Independent forward floor-matrix verification
+---------------------------------------------
+For supplied coefficients c_j, j1..H, calculate suffix sums
+ A_j=sum_(l=j..H)c_l, A_(H+1)=0.
+Then the exact forward floor action is
+ sum_(j=1..H)c_j floor(j/d)
+ =sum_(m<=H/d)sum_(j>=md)c_j
+ =sum_(m<=H/d)A_(md).
+The checker replays this at EVERY d<=H, not just coprime or squarefree d.
+It uses no ordinary-Mobius inverse. Every d>H is automatically zero because
+all floor horizons are<=H. This costs O(H log H) bounded rational additions.
+The complete coefficient L1 at both rows is recomputed and matched exactly.
+
+The matrix has diagonal1 and is upper triangular under descending indices,
+so a full filled vector has a unique coefficient vector. To understand this
+inverse analytically (not as a verification oracle), ordinary finite divisor
+inversion gives
+ A_j=sum_(m<=H/j)mu(m)*filled(jm), c_j=A_j-A_(j+1).
+Indeed sum_(m<=H/d)A_(md)=filled(d) by sum_(l|n)mu(l)=1[n=1]. All sums are
+finite; no Dirichlet-series convergence is presumed. The unit row proves
+ sum_j j*c_j=filled(1)=E(1).
+Thus repairing a source with nonzero unit generally changes a long zero first
+moment. A zero-moment label cannot be retained without pricing this drift.
+
+Safe universal norm bound, and its limited benefit
+--------------------------------------------------
+The exact inverse formula yields
+ ||c||_1<=2*sum_j|A_j|
+  <=2*sum_(d<=H)tau(d)*|filled(d)|
+  <=2*H*(1+log H)*||filled||_infinity.
+The last step is the elementary identity sum_(d<=H)tau(d)=sum_(a<=H)floor(H/a)
+and the harmonic upper bound sum_(a<=H)1/a<=1+log H. This is an unconditional
+generic finite envelope, not a proved sup norm for the actual source residual.
+The numerical L1 cost is exact; no unknown analytical sup bound is fitted.
+For each positive interpolation rule the noncoprime fill is a convex combination
+of retained values (or0), and core/core_inverse only sample retained values
+with a factor<=1. Those elementary facts do not pay the residual as N grows.
+
+Masked-source invariance and full recovery
+----------------------------------------
+By complete mu_M*One convolution,
+ sum_(j<=H)c_j Psi_M(j)=sum_(d<=H)mu_M(d)*filled(d)
+                    =sum_(d<=H,gcd(d,R)=1)mu(d)*E(d).
+Every noncoprime fill is free for this masked-source identity, but it can change
+coefficient cancellation and cost. The original unit and all coprime residual
+rows are fixed. Noncoprime freedom does NOT change the arithmetic signed
+remainder, establish a lower bound for all possible fills, or prove optimality.
+
+When merged into a long completion, the short repair is zero on d>H and cancels
+the original short residual on all coprime d<=H. Merging equal horizons can
+cause signed coefficient cancellation. The root must recompute the ENTIRE
+coefficient vector/cost, then use062 to verify the ORIGINAL source at each new
+N,y, including every original and added tail horizon. This checker intentionally
+does not infer that binding from an arbitrary supplied residual array.
+
+Uniform N growth, complete joined prefix growth,061 core recovery and RH all
+remain OPEN. Restoring a generic short inverse can restore a current-scale
+Mertens interval coefficient; a small horizon does not imply a small arithmetic
+coefficient. Repair can also cost more than leaving the residual priced in062.
+Neither the finite array identity nor the positive envelope proves a uniform
+square-root/polylog repair rate. Such a theorem remains a separate all-N,
+all-prefix, whole-joined-source obligation.
+
+Synthetic verification
+----------------------
+The new suite uses mask[2,7] and a small H1 mask[3,11], all eight explicit fills,
+an independent backwards triangular fixture construction, direct full floor
+row comparison and zero beyond H. It covers reciprocal interpolation, the
+H+1 boundary, repeated prime valuations, coprime square9, unit moment, all two
+array positions, coefficient/norm mutations, source/RH false scope, arbitrary
+denominator257 inputs, strict prime/type/bit/work guards and charge-only Meter.
+Every invocation and charged operation is preserved in the development receipt;
+only genuinely affected tests would be rerun after a recorded failure.

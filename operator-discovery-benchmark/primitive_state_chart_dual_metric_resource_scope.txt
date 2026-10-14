@@ -1,0 +1,50 @@
+Prospective034: diagonal metric in the sparse proposal engine
+
+This is a cold-start method change on the same licensed031 exact source.
+No033 iterate, new arithmetic constraint or extra generator is imported.
+No actual scaling, metric, score or support is computed before protocol
+freeze. Previous numerical failure licenses no mathematical infeasibility.
+No hashes are created, and older frozen sources/results remain unchanged.
+
+The numerical metric D_j=||A_j||^2 uses positive finite guarded binary64
+values. Steps divide by L*D_j; line tests and the final mapping use the
+weighted norm ||v||_D=||sqrt(D)*v||. This is equivalent to column balancing
+in exact arithmetic; the floating implementation remains proposal machinery.
+Final weighted mapping norms have different units from033. Residuals use
+the unchanged scaled equations and remain comparable numerical diagnostics.
+
+Keep the same450m complete-job allocation for comparison:40m preparation,
+40m model,190m numerical,90m exact restoration,90m sole independent audit.
+Preparation includes25m cumulative synthetic tests,10m independent I/O,
+5m other work. All development tests and one frozen suite add to the25m
+allowance, including1m root/scaffolding. No actual research retry or second
+audit is allowed. Worker/audit each6GiB, one thread,3600 cooperative seconds;
+producer external7200seconds. Limits:4096/8193 rational bits,6m live cells,
+8MiB proposal/review/snapshot,64KiB metadata. Parent byte caps are unchanged.
+
+Development arithmetic consumed2,713,988 operations:1,175,390 for15 producer
+tests and1,538,598 for11 independent-core tests, each invoked once. The12
+workflow tests ran once within1m root/scaffolding. The one frozen combined
+suite's receipts are added to this consumed amount; no extra combined
+pre-freeze suite runs. The reviewer executed no tests or calculations.
+
+Declared numerical proxies:
+setup=8nnz+48(m+n)+65536; gradient=8nnz+32(m+n)+512;
+trial=16nnz+80(m+n)+1024; commit=32(m+n)+512;
+final=12nnz+80(m+n)+2048. Metric vectors and weighted norm temporaries are
+included in live-cell accounting. These proxies are not hardware counters.
+At each accepted boundary reserve gradient+32trial+commit+final, charging
+only actual blocks. Save exact cumulative counters and incomplete failures.
+Normal boundary completion requires the reserved final diagnostic to finish.
+
+All selected strictlypositive weights reach one exact reconstruction on
+original851 ray responses. Full782-row/1224-coordinate Farkas admission
+uses the same90m meter as metadata validation, with all source exports
+resident. No floating metric, zero residual, line acceptance or small mapping
+norm establishes a proof. Without a full exact witness there is no admission.
+
+The current finite template is only an intermediate proof-search question.
+Neither its numerical failure nor an eventual exact separator resolves the
+all-scale signed arithmetic estimate. Universal operator identity, uniform
+scalar and initial storage bounds, cofinal parameters and the ordinary-zeta
+bridge remain required before the user's objective can be marked complete.

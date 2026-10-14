@@ -1,0 +1,119 @@
+INDEPENDENT CENTERED MOBIUS INTERVAL REPLAY 041: FINITE EVIDENCE ONLY
+
+This checker preserves the centered endpoint in PERIODIC_NORMALIZATION_HANDOFF.txt.
+The uniform signed bound and RH remain OPEN. It neither modifies nor reruns040,
+imports the producer, reads prior studies, generates hashes, nor evaluates the
+actual source at import. Program discovery/selection/freezing belongs to root.
+Actual build_state may be called only after that candidate freeze.
+
+Independent source construction
+
+For canonical rational0<r<1/2, theta=1-r, arbitrary integer q>=2, use
+ b_r(n)=n^(-r)*product_(p|n)(1-p^r), b_r(1)=1, b_r(0)=0.
+Indeed each local factor at p^e is p^(-er)*(1-p^r), the coefficient of
+ (1-t)/(1-p^(-r)t). Multiplication across distinct prime divisors gives
+ K_r*mu. The checker discovers primes using a byte composite sieve, multiplies
+their distinct-prime factors across ALL multiples, and independently computes
+each n^(-r). It does not use the producer's smallest-prime-factor recursion.
+Repeated prime powers are retained by n^(-r), not discarded as squarefree.
+
+Every scalar operation is Arb at the chosen precision(default192 bits).
+The independently evaluated analytic center is
+ kappa=(1-q^(1-theta))/(theta*zeta(theta)).
+No ordinary convergence of sum mu(n)/n^theta is asserted.
+The complete c_q(n)=b_r(n)-q*1_(q|n)b_r(n/q) prefix is accumulated from n1.
+The array stores J_q(n)=B(n)-q B(floor(n/q))-kappa*n^theta for0<=n<=H.
+This is the continuous dilation center; floor(n/q) is used only in B.
+J_q(0)=0 and J_q(1)=1-kappa. The increment is exactly
+ a(n)=J_q(n)-J_q(n-1), n>=1,
+and Dprefix(n)=sum_(1<=k<=n)a(k)^2. All earlier prefixes/units remain.
+No producer floats, normalization payload, coefficient array or SPF are inputs.
+
+Public APIs
+
+ build_state(H,r_text='1/3',q=2,precision=192,meter=None)
+ audit(state,programs,scales_by_m)
+
+State contains H,r,theta,q,precision, Arb kappa,J,Dprefix, normalization,
+metadata,Meter and a private _gram_cache. b is temporary; long-term arrays
+are J,Dprefix only. The source generator does no automatic numerical study.
+independent_coefficients accepts injected local powers for toy checks;
+center_from_coefficients accepts rational toy b and injected rational/Arb kappa.
+
+Program schema is exactly
+ {id:str,m:int,lambda:{kind:'rational',value:canonical rational} OR
+  {kind:'prime_power',prime:m,exponent:canonical rational -r},
+  rho:canonical rational,delta:canonical rational,C:canonical rational}.
+The second lambda form requires actual primality of m. General rational
+lambda has no artificial scalar grid. Require m>=2,0<=rho<=1,delta>=0,C>=0.
+Scales are positive exact integers, with2mX-1<=H; incomplete children raise.
+The scale map accepts integer m keys or their decimal strings for JSON input.
+
+Complete signed moments
+
+At each(m,X), form A(n)=sum_(0<=j<m)J_q(mn+j)/m forX<=n<2X.
+Cache the base Gram E_J,E_A,C_JA with common normalization X^(-2), where
+ C_JA=X^(-2)*sum J_q(n)*A(n).
+For lambda, form I=A-lambda J_q without dropping its signed covariance:
+ E_I=E_A-2lambda C_JA+lambda^2 E_J,
+ C_JI=C_JA-lambda E_J,
+ D(X)=Dprefix(2mX-1)/X,
+ Q=2lambda C_JI+(1+delta)E_I-(m*rho-lambda^2)E_J-C*D.
+Each exact program and scale receives pass if the whole Q interval is<=0,
+fail if the whole interval is>0, otherwise unresolved. Exact zero passes.
+Signs never come from float midpoints. Finite passing rows do not constitute
+an all-scale recurrence, a uniform source bound, or an RH proof.
+
+Every child mn+j, including the first/last, is squared and also enters the
+direct variance sum
+ E_child=(mX)^(-2)*sum_(mX<=k<2mX)J_q(k)^2,
+ V=(mX)^(-2)*sum_(X<=n<2X,0<=j<m)(J_q(mn+j)-A(n))^2.
+Independently accumulated intervals check E_child-E_A/m-V contains zero.
+Thus E_J(mX)=E_A/m+V, with V retaining the full child variance sector.
+V is not inferred solely by subtracting E_A/m from E_child. The residual,
+all complete signed moments, D,lambda,Q and their exact ranges are exposed.
+
+Serialization/resource/fork scope
+
+Every output moment has a human-readable65-digit Arb ball and enclosing
+exact dyadic endpoints [decimal integer mantissa,integer exponent], denoting
+mantissa*2^exponent. This is lossless endpoint data, not a rounded float sign.
+Output includes exact program/scalar strings, exact scales, precision, source
+parameters, normalization, cached Gram count, work count and false theorem
+flags. Program/scalar coercion from float is rejected.
+
+The finite horizon resource domain is1..8388607, precision128..4096 bits,
+rational parameter bit cap4096. Meter defaults to1e9 proxy operations and
+7200seconds. It charges source sieve visits, interval powers, every prefix,
+every child and program/scalar validation. Deadline/work exhaustion raises.
+The conservative estimated source peak is(H+1)*(1500+3*ceil(precision/8))
+bytes: pilotH1048575 at192bits gives1648361472bytes(about1.535GiB), below16GiB.
+This is an allowance, not a measured process high-water RSS. Allocations
+estimated above15GiB are refused. Actual runtime was not benchmarked before
+freeze; expect minutes rather than assume float-array timing.
+
+No quadratic pair table is made. Each(m,X) base Gram is computed once and
+reused across selected programs. audit mutates only its Meter/cache and output;
+J,Dprefix remain read-only. Root may fork workers after one source generation,
+replace each worker's Meter and _gram_cache, partition by(m,X), and merge rows.
+Inherited copy-on-write J,Dprefix need not be regenerated in each worker.
+
+Synthetic development
+
+The14 new tests use rational toy coefficients, local v(p)=1/(p+1), injected
+centers and one uncertain center. They cover a separate divisor convolution,
+prime powers, periodic prefixes, unit/indexzero, continuous below-q center,
+all increment heads, complete signed covariance and child variance, finite
+pass/fail/exactzero/unresolved signs, shared Gram cache, source-lambda schema,
+malformed rational/scalar/prime/horizon/scale programs, exact dyadic output,
+resource guards and float/missing-unit rejection. The local source-lambda
+schema test evaluates3^(-1/3) only; no actual b_r coefficient is evaluated.
+
+Two owned development invocations occurred: the first exposed output exponent
+types and tests mistakenly requiring containment of a rounded rational ball;
+the implementation now serializes Python integer exponents and the tests
+compare exact rational values against enclosing dyadic endpoints. The second
+passed all14 tests. The receipt transparently records both invocations; an
+aggregate development Meter was not installed, so no fabricated cumulative
+operation total is reported. No old suite, archive or actual source/normalization
+was run by this checker before candidate freeze.

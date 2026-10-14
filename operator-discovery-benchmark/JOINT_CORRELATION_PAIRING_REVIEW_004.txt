@@ -1,0 +1,421 @@
+JOINT CORRELATION PAIRINGS: SOFT DIVISOR RECOVERY AND VALUATION DEFECTS
+
+Scope and outcome
+-----------------
+The input is candidate10_centered_reciprocal_obligation.json, whose primary
+target is the JOINED high-product off-diagonal upper bound, not separate
+sharp bands. Only this new prose file is written. No source evaluation,
+experiment, test, hash, parameter search, subagent or prior/frozen edit is
+used. No actual-source cofinal estimate or RH theorem is obtained.
+
+A concrete finite argument family is proposed. Soft divisor-Mobius filters
+have proved recovery at shifts >=1/2, with constant critical norm cost above
+the boundary and polylog cost at the boundary. For the actual v=2/3 filter,
+the complete source reduces, after independently paid PREFIX components,
+to four multiplicative states with exact rational prime-power signatures.
+The signatures give a genuinely stronger uniform bound for several mixed
+shared-square sectors, and exact pair-to-cofactor-defect identities which
+can be enumerated without pretending the defect vanishes.
+
+A proper-prime-power logarithmic recurrence supplies a second finite
+construction primitive. Its Volterra memory is paid and absorbable, but
+its joint source forcing is not proved small. Separate pole compensation
+creates macroscopic deterministic prime forcing, so that forcing must stay
+coupled. None of the reversible presentations is itself an exponent gain.
+
+1. Source, complete target, and the relevant norms
+-------------------------------------------------
+Keep u=1/3,v=2/3,kappa=2/3,beta=9/2, the old exact R_u=kappa*m_u>0,
+the entire same-prime-power coefficient d, and the Dirichlet unit delta.
+Write k_alpha(n)=n^(-alpha), mu_alpha(n)=mu(n)n^(-alpha). Distinguish
+mu_alpha from the old a_alpha=mu*k_alpha. All prefixes vanish below one.
+The pure-power-centered coefficient and prefix are
+  t_b=beta*(mu*mu*k_u*k_v-mu*k_u-mu*k_v+delta)-d-R_u*k_u,
+  T(x)=sum_(n<=x)t_b(n), t_b(1)=-R_u.                         (1.1)
+The earlier exact increment center is recovered with positive e of total
+mass E0=-R_u*zeta(1/3), including its unit. Its complete kernel correction
+and the low product head/diagonal are already paid in the input obligation.
+
+For dyadic X,N=2X-1 let W_X(h,k)=max(0,2X-max(X,h,k)). The primary joined
+off-diagonal is
+  O_X=1/X^2*sum_(h,k<=N) t_b(h)t_b(k)W_X(h,k)
+                                   *1_(hk>X)*1_(h!=k).       (1.2)
+No bandwise absolute values, SF/NS separation, or prime-only projection
+is required. All those interactions remain in the target.
+Use truncated continuous norms
+  ||F||_(sigma,H)^2=integral_1^H |F(x)|^2*x^(-2sigma-1)dx,
+with staircase extension for coefficient prefixes. Complete cofinal
+integer moments in every epsilon are equivalent to finite norms for all
+sigma>1/2, with the usual finite-head constants. This equivalence does not
+assert that either property holds for the source.
+
+2. Paid soft-divisor filters, including the critical boundary
+------------------------------------------------------------
+For a fixed arithmetic kernel k_alpha its prefix action is
+  (K_alpha F)(x)=sum_(d<=x)d^(-alpha)*F(x/d).
+Its exact inverse is
+  (M_alpha F)(x)=sum_(d<=x)mu(d)d^(-alpha)*F(x/d).              (2.1)
+All sums at a finite x are finite. Dilation obeys
+  ||F(x/d)||_(sigma,H)<=d^(-sigma)*||F||_(sigma,H).
+Therefore, if alpha+sigma>1,
+  ||K_alpha||,||M_alpha||<=zeta(alpha+sigma).                  (2.2)
+No convergent Mobius sum on the critical source line is assumed: the
+proof uses ABSOLUTE convergence on alpha+sigma>1.
+
+Finite prime words have the same uniform control. Their factors are
+  I-q^(-alpha)S_q, S_q F(x)=F(x/q),
+and each inverse has complete geometric powers. The inverse norm product
+is <=prod_q(1-q^(-alpha-sigma))^(-1)<=zeta(alpha+sigma).
+The forward absolute product is bounded by the same zeta. Thus passing
+to all primes is paid in this region; a finite source horizon uses exactly
+the primes <=H, with no omitted coefficient below H. No q-free arithmetic
+projection is inserted into this LINEAR divisor operator.
+
+More generally a fixed rational power r of each Euler factor has local
+coefficients (-1)^e*binom(r,e)*q^(-e*alpha). With L=ceil(|r|),
+  |binom(r,e)|<=binom(L+e-1,e),
+so forward and inverse coefficients are majorized by d_L(n)n^(-alpha).
+The norm cost in (2.2) is at most zeta(alpha+sigma)^L. For r=0 use the
+identity and L=0. Rational powers use the branch defined by the convergent
+Euler/Taylor expansion in the initial right half-plane; their finite
+coefficient convolution identities hold formally as well.
+
+At alpha=1/2,sigma=1/2 retain the boundary, rather than reject it:
+  sum_(n<=H)d_L(n)/n<=(1+log H)^L.                            (2.3)
+This gives a truncated polylog recovery in both directions. Equivalently
+any fixed sigma>1/2 has constant norm cost, so the complete cofinal class
+is still preserved. At alpha<1/2, a generic absolute critical bound instead
+carries H^(1/2-alpha) times a fixed log power per application. It requires
+an additional signed gain or another proved compensation. This is a cost
+classification, not a proof that every such operator is impossible.
+
+These filtered presentations must be grouped as recoverable aliases when
+counting estimates. Distinct arithmetic pairing arguments AFTER filtering
+can still be genuinely different constructions.
+
+3. Exact four-state reduction of the actual source
+--------------------------------------------------
+Apply the full v=2/3 filter to (1.1):
+  w=t_b*mu_v.
+Its prefix W is M_v T, while T=K_v W exactly. At sigma=1/2 the two
+norm costs are <=zeta(7/6)<=7; the final inequality follows from the
+integral upper bound zeta(s)<=1+1/(s-1), with no numerical evaluation.
+
+Introduce FOUR multiplicative states
+  nu0=k_u*(mu*mu), nu1=k_u*(mu*mu_v),
+  nu2=k_u*mu_v, nu3=mu,
+and their prefixes A_i. Then exactly
+  w=f+eta,
+  f=beta*nu0-beta*nu1-R_u*nu2-beta*mu,
+  eta=beta*mu_v-d*mu_v.                                    (3.1)
+Every convolution and prime power is complete. In particular
+  f(1)=-beta-R_u, eta(1)=beta, w(1)=-R_u.
+The beta*delta term of the original source has become beta*mu_v, not zero.
+
+The eta prefix is independently paid in the critical norm. The mu_v
+prefix has absolute bound <=3x^(1/3), hence squared critical norm <=27.
+Here is a SELF-CONTAINED finite critical bound for the complete d prefix,
+stronger than the insufficient bound D(x)<=beta*sqrt x alone.
+For t=q^(-1/3) and every e>=2 its exact same-prime coefficient is
+  d(q^e)=beta*(1-t^2)*t^(e-2)*(1-t^(e-1))>=0.
+The complete geometric sum, with no valuation cutoff, is
+  sum_(e>=2)d(q^e)
+    =beta*(1-t^2)*[1/(1-t)-t/(1-t^2)]=beta.
+Only q<=sqrt x can contribute, so D(x)<=beta*pi(sqrt x), and D(x)=0
+for 1<=x<4.
+
+An explicit elementary upper bound is pi(y)<=10*y/log y for y>=2.
+Indeed for integer n>=1 every prime n<q<=2n divides binom(2n,n), so
+  theta(2n)-theta(n)<=log binom(2n,n)<=2n*log2.
+Summing at dyadic n gives theta(2^k)<2^(k+1)*log2. Bounding a real y
+by the next dyadic endpoint, which is <2y, proves theta(y)<=4y.
+Splitting primes at sqrt y then gives
+  pi(y)<=sqrt y+2theta(y)/log y<=sqrt y+8y/log y.
+Finally log y<=2sqrt y follows by integrating 1/t<=1/sqrt t on [1,y],
+so sqrt y<=2y/log y, proving the stated constant ten.
+Consequently, for x>=4,
+  0<=D(x)<=20beta*sqrt x/log x,
+  ||D||_crit^2<=400beta^2*integral_4^infinity dx/(x*log^2 x)
+                  =400beta^2/log4.
+We may therefore take the explicit finite
+  C_D=20beta/sqrt(log4).
+This proof uses neither PNT nor RH, and includes every prime power.
+Soft convolution gives
+  ||prefix(d*mu_v)||_crit<=7*C_D,
+  ||prefix(eta)||_crit<=beta*sqrt(27)+7*C_D.                   (3.2)
+This is a full-prefix peel retaining the cross in the triangle inequality;
+it is NOT permission to drop eta at independent sharp product cuts.
+
+Consequently the original complete centered moment is cofinal if and only
+if the prefix F=sum f is cofinal, up to these paid components and the
+bounded divisor recovery. For all sigma>1/2 the explicit direction is
+  ||T||_sigma<=zeta(v+sigma)*(||F||_sigma+||eta_prefix||_sigma),
+  ||F||_sigma<=zeta(v+sigma)*||T||_sigma+||eta_prefix||_sigma.   (3.3)
+No claim of cofinality is inserted into this equivalence.
+Also |f(n)|<=(3beta+R_u)d2(n); therefore its OWN complete high-product
+off-diagonal has the same paid low-head/diagonal recovery as in the input.
+The remaining joined correlation can be studied in this four-state basis.
+
+The Dirichlet series of f, initially Re(s)>1, is
+  F_D(s)=zeta(s+u)*[beta/zeta(s)^2
+                -beta/(zeta(s)zeta(s+v))-R_u/zeta(s+v)]
+                            -beta/zeta(s).                  (3.4)
+The bracket vanishes ANALYTICALLY at real kappa by the old exact R_u.
+It is not asserted that its coefficient series converges ordinarily there,
+or that a finite bracket tail is small. The centered pole is canceled
+locally; possible poles at nonreal zeta zeros are retained.
+
+4. Prime-power signatures and valid cofactor pairings
+-----------------------------------------------------
+For an actual prime q put t=q^(-u), so q^(-v)=t^2. With z marking q
+valuation, the local series are
+  nu0: (1-z)^2/(1-tz),
+  nu1: (1-z)(1-t^2*z)/(1-tz),
+  nu2: (1-t^2*z)/(1-tz),
+  mu: 1-z.                                                 (4.1)
+All have unit one. Their first coefficients are respectively
+  t-2, t-1-t^2, t(1-t), -1.
+For EVERY e>=2 the coefficients are exactly
+  l0(e)=(1-t)^2*t^(e-2),
+  l1(e)=-t*l0(e), l2(e)=(1-t)*t^e, l3(e)=0.                (4.2)
+Their absolute full tails are <=1, <=t, <=t^2, and zero. Furthermore
+  |nu0(n)|<=d2(n), |nu1(n)|<=1, |nu2(n)|<=1, |mu(n)|<=1.
+These statements use all valuations and multiplicativity, not squarefree
+approximations. The extra powers in (4.2) are genuine prime-size suppression.
+
+For a q-free cofactor H, the local relation does NOT equate whole states:
+  nu1(q^e H)+t*nu0(q^e H)
+       =t*l0(e)*[nu0(H)-nu1(H)], e>=2.                       (4.3)
+Likewise
+  nu2(q^e H)-t^2/(1-t)*nu0(q^e H)
+       =t^2/(1-t)*l0(e)*[nu2(H)-nu0(H)].                    (4.4)
+Both right sides are exact cofactor DEFECTS. They vanish at H=1 but not
+for a general source cofactor. They belong in every certificate. On a
+high shared-square support H<=n/q^2 they have strictly smaller arguments;
+this is a potential induction edge, not a bound for that defect.
+
+A useful rejection test for constant scalar combinations follows. For
+a*nu0+b*nu1+c*nu2+d*mu the higher-valuation coefficient, ON UNIT COFACTOR,
+is
+  (1-t)*t^(e-2)*[a-(a+b)t+(b+c)t^2].                        (4.5)
+Retaining a nonzero nu0 coefficient prevents a higher t order. This is
+even stronger with independent arbitrary cofactors: one must expand the
+typed cofactor functions, not just this unit polynomial. The states are
+linearly independent on q-free integers, as their higher-prime-power
+signatures at infinitely many other primes give independent rational
+functions of the parameter, followed by the mu unit/prime values.
+Tensor certificates require the corresponding independent cofactor basis.
+
+To cancel nu0 against nu1 by an inverse t incurs q^u and loses the very
+prime-size gain. Raising formal order by discarding the common nu0 mode,
+or using H=1 only, does not recover the target. q-dependent combinations
+such as (4.3) remain admissible, with their exact cofactor defect and any
+inverse power explicitly charged.
+
+5. A further uniform paid piece: mixed shared-square sectors
+------------------------------------------------------------
+For i,j in {0,1,2} let a=i+j and consider the UNION of ordered pairs
+h,k<=n sharing q^2 for some prime q>n^rho, rho>0. Count the union once;
+an upper bound may sum over q, but an identity may not subtract overlapping
+q sectors repeatedly. Write h=q^e H,k=q^g K, q-free H,K,e,g>=2.
+From (4.2), complete geometric tails and the cofactor divisor bound give
+  sum_(h,k<=n, q^2 divides both)|nu_i(h)nu_j(k)|
+       <=n^2*q^(-4-a*u)*(1+log n)^2.                        (5.1)
+For example, sum_e>=2 |li(e)|<=q^(-i*u), and the cofactor range is
+bounded by n/q^e, so the complete first-leg sum is
+<=n*q^(-2-i*u)*(1+log n). No exponent cutoff is used.
+
+The elementary tail bound, valid for real y>=1, is
+  sum_(integer r>y)r^(-4-a*u)
+       <=[1+1/(3+a*u)]*y^(-3-a*u).
+Thus the whole block-normalized union has the absolute envelope
+  C_a*2^max(2-(3+a*u)*rho,0)
+      *X^(1-(3+a*u)*rho)*(1+log(2X))^2,
+  C_a=1+1/(3+a*u).                                         (5.2)
+The same bound holds after restricting to the joined high-product
+off-diagonal, since the bound is absolute. Multiply by the fixed scalar
+state coefficients when expanding f tensor f; orientations are retained.
+
+The thresholds for cofinal polylog payment are therefore
+  nu0 tensor nu0: rho>=1/3;
+  nu0 tensor nu1, either orientation: rho>=3/10;
+  nu0 tensor nu2 and nu1 tensor nu1: rho>=3/11;
+  nu1 tensor nu2: rho>=1/4;
+  nu2 tensor nu2: rho>=3/13.
+Any mu leg vanishes on a shared square. These are new actual-source mixed
+valuation envelopes in the bounded-recovery four-state basis. They do
+NOT pay the common nu0 tensor nu0 sector below its threshold, or all
+first-valuation/common-prime sectors. They improve a real part of the
+forcing ledger without assigning a whole-energy contraction.
+
+6. Complete prime-orbit kernel defects and the remaining support problem
+------------------------------------------------------------------------
+For a fixed q, set s_i=sum_(e>=0)li(e). The exact sums from (4.1) are
+  s0=s1=s3=0, s2=1+t.
+For q-free H,K and ANY complete kernel L(h,k), finite-prefix zero
+extension permits the exact orbit identity
+  sum_(e,g>=0)li(e)lj(g)L(q^e H,q^g K)
+    =si*sj*L(H,K)
+      -sum_(e,g>=0)li(e)lj(g)[L(H,K)-L(q^e H,q^g K)].        (6.1)
+The infinite coefficient sums converge absolutely at this fixed q; the
+actual prefix side is finite. Apply this to
+  L_X(h,k)=W_X(h,k)*1_(hk>X)*1_(h!=k).
+This preserves every source term in the joined off-diagonal.
+
+Its defects have BOTH prefix exits and high-product/diagonal ENTRY edges.
+They are generally signed; a nonnegative W-exit theorem alone is not a
+nonnegative theorem for L_X. Only nu2 tensor nu2 has a nonzero bulk in
+(6.1), with multiplier (1+t)^2. This deterministic positive-pole channel
+must stay coupled to the other exit/entry terms. No separate payment of
+that uncentered channel is claimed.
+
+The shared-square parts used in (5.2) have H,K<=n/q^2. But e=0 or g=0
+keeps a q-free cofactor as large as the CURRENT scale. A prime-orbit
+rewriting is not automatically a smaller-scale recurrence for the entire
+target. A certificate must list that current-scale complement and either
+prove its absorption or leave it open. A finite prime filtration with
+partial local laws does not acquire a uniform source estimate by notation.
+
+7. A proper-prime-power recurrence with paid Volterra memory
+-----------------------------------------------------------
+There is another finite construction primitive, derived directly by
+differentiating the complete Dirichlet series (or formal convolution).
+Let Lambda be the prime-power von Mangoldt coefficient, including ALL
+prime powers. The exact logarithmic coefficient equations are
+  nu_i(n)*log n=(nu_i*L_i)(n),
+  L0(r)=Lambda(r)*(r^(-u)-2),
+  L1(r)=Lambda(r)*(r^(-u)-1-r^(-v)),
+  L2(r)=Lambda(r)*(r^(-u)-r^(-v)),
+  L3(r)=-Lambda(r).                                        (7.1)
+The r=1 terms vanish. Every nonzero cofactor n/r is strictly smaller.
+Let c=(beta,-beta,-R_u,-beta), A_i=sum nu_i, F=sum_i c_i A_i.
+Summation by parts gives, for real x>=1,
+  F(x)*log x=sum_(r<=x)sum_i c_i*L_i(r)*A_i(x/r)
+                                    +integral_1^x F(y)dy/y. (7.2)
+Units determine the finite initial data; at x=1 the identity is 0=0.
+No coefficient series at kappa was summed in deriving this formula.
+
+For x>=L=64 define the JOINT proper-prime-power bank
+  P_F(x)=1/log x*sum_(r<=x)sum_i c_i*L_i(r)*A_i(x/r).
+Every arithmetic argument is <=x/2. The remaining Volterra memory splits
+into finite head C_head=integral_1^64 F(y)dy/y and a tail operator.
+For sigma>=1/2 its tail norm is <=1/[sigma*log64]<1/2, since the Hardy
+operator integral_64^x F(y)dy/y has norm <=1/sigma. The elementary lower
+bound log2>2/3 gives log64>4. Therefore, on every truncated norm,
+  ||F||_(sigma,[64,H])
+     <=(1-1/[sigma log64])^(-1)
+          *[||P_F||_(sigma,[64,H])
+             +|C_head|*64^(-sigma)/(sqrt(2sigma)*log64)].      (7.3)
+The finite head is explicit and source-uniformly bounded using
+|f|<=(3beta+R_u)d2:
+  |C_head|<=(3beta+R_u)*64*log64.
+Thus memory is a paid absorption, not an unpaid current-scale cycle.
+
+But the arithmetic bank P_F is NOT paid. Kernel L0 has limiting negative
+amplitude two; no generic positive coercive contraction for all channels
+has been proved. Other channel estimates cannot be separately assumed at
+RH scale. A usable intermediate lemma must bound the complete JOINT
+prime-power/cofactor bank, or its signed cross-prime covariance with a
+well-founded coupled state system. This is a distinct explicit source
+correlation primitive; (7.3) is recovery, not the bound for it.
+
+Separate channel centering explains a further obstruction. The kappa
+main-prefix coefficients of A0,A1,A2 are respectively
+  m0=1/[kappa*zeta(kappa)^2],
+  m1=1/[kappa*zeta(kappa)*zeta(kappa+v)],
+  m2=1/[kappa*zeta(kappa+v)],
+and m3=0. Here m0,m2>0,m1<0 and sum_i c_i m_i=0 EXACTLY.
+Replacing A_i by centered companions plus m_i x^kappa leaves the
+deterministic bank
+  D_F(x)=beta*x^kappa/log x
+       *[-(2m0-m1)*sum_(r<=x)Lambda(r)r^(-kappa)
+                    +m0*sum_(r<=x)Lambda(r)r^(-kappa-v)].    (7.4)
+The second sum converges absolutely, since kappa+v=4/3. The first is
+macroscopic: elementary Chebyshev lower theta(x)>=c*x gives magnitude
+at least a constant times x^(1-kappa). Consequently |D_F(x)| is eventually
+at least c'*x/log x; it has no separate cofinal critical-energy bound.
+This uses neither PNT nor RH. The required Chebyshev lower bound follows
+from log binom(2n,n)<=psi(2n), binom(2n,n)>=4^n/(2n+1), and the elementary
+O(sqrt x*log^2 x) prime-power difference psi(x)-theta(x).
+
+Therefore the centered companion bank and D_F must stay JOINT. The
+analytic pole-balance equation does not permit separate absolute payment
+of (7.4), nor convergence of a bracket coefficient tail at kappa. In the
+unit-cofactor prime strip there is genuine algebraic cancellation of the
+constant parts: sum_i c_i*nu_i(q)=-R_u*t+(beta+R_u)*t^2.
+It removes an order-one local term but leaves a power-weighted prime
+channel, which still is not independently RH-scale. Finite-cofactor
+pairings must retain this remaining pole channel and its composite complement.
+
+8. Small enumerable construction family and proof gates
+-------------------------------------------------------
+A bounded detector grammar can use these primitives without further
+parameter tuning:
+  * fixed rational soft shift alpha>=1/2 and fixed rational Euler power r;
+    carry the norm/log recovery certificate (2.2)-(2.3);
+  * the four typed source states, exact prime coefficients e=0,e=1 and
+    closed e>=2 tails (4.1)-(4.2), all cofactor states present;
+  * fixed rational linear/tensor combinations, and rational-in-t pairing
+    ratios as in (4.3)-(4.4), with every cofactor defect retained;
+  * high shared-square cutoff q>n^rho with rational rho and the proved
+    sector envelope (5.2), counting overlapping unions once;
+  * complete joined-kernel entry/exit defects (6.1), and full proper-
+    prime-power banks (7.1)-(7.3) with jointly retained pole compensation.
+
+The generic simple-tail compiler now proposed in
+joint_preconditioner_discovery.py has a precise sufficient certificate.
+In a local variable x=q^(-1/6), suppose a term has at most one simple
+denominator 1-x^p*z and its EXACT e>=2 tail is
+  l_e=C*x^a*(1-x^p)^m*x^(p*(e-2)),
+with p>0,a>=0,m>=1 and rational C. Then
+  sum_(e>=2)|l_e|=|C|*x^a*(1-x^p)^(m-1)<=|C|*x^a.           (8.1)
+If |C|<=1 and an exact Bernstein certificate bounds the first-valuation
+polynomial by two on x in [0,1], every higher local coefficient is at most
+one and the unit is one. Thus the full multiplicative cofactor is bounded
+by 2^omega(n)<=d2(n). This is a safe GENERIC cofactor certificate; it
+does not require the sharper |nu1|<=1 of the special reduction.
+For two such tails with exponents a_left,a_right, the sector prime weight
+is w=(a_left+a_right)/6, and (5.2) generalizes with 3+a*u replaced by 3+w
+and mass constant multiplied by |C_left*C_right|. Therefore the generic
+threshold is exactly rho>=1/(3+w). Multiply again by source scalar
+coefficient magnitudes when bounding an actual beta/R_u tensor combination.
+
+The compiler must retain unresolved cases with multiple poles, rational
+noninteger local powers, finite polynomial heads extending above the first
+valuation, or an uncertified cofactor bound. A formal simple numerator
+cannot stand in for those complete coefficients. Polynomial cancellation
+and tail division are identities; Bernstein and (8.1) are sufficient
+inequalities, not claims of optimality or whole signed control.
+For the general preconditioned correction (beta*delta-d), shifts at 1/2
+give a proved cofinal/polylog restoration, not necessarily finite critical
+norm. Only above the boundary is the constant critical-norm statement used
+in (3.2) justified by this general argument. Below the boundary retain
+the recorded power loss; calling the correction retained does not pay it.
+
+A small exact signature search should FIRST expand into the independent
+cofactor tensor basis, THEN measure the order in t. Certificates based
+only on H=K=1, or cancellations hiding an inverse t, fail this gate.
+Retaining the common nu0 projection leaves an unsuppressed signature;
+success on a stable/mixed projection is not full-target recovery.
+Once an actual mixed sector is paid, its complement remains in the joined
+word; no SF/NS or cross-band cancellation is replaced by separate bounds.
+
+For a candidate to count as more than a reversible presentation it must
+propose a source-specific intermediate lemma: for example a signed bound
+for a stated cofactor-defect entry/exit correlation, or for the JOINT
+proper-prime-power bank after the exact pole compensation in (7.4).
+The lemma must state all scales and constants, identify smaller arguments,
+and avoid assuming either the target moment or separately RH-strength
+companion moments. It may be numerically tested as a finite hypothesis;
+finite tests do not turn the norm certificate into that missing lemma.
+
+Final status
+------------
+Proved: paid soft-divisor recovery including boundary log costs; exact
+four-state source reduction and full paid-prefix restoration; all-valuation
+signatures and cofactor defects; stronger mixed shared-square envelopes;
+complete joined-kernel orbit identities; proper-prime-power recurrence
+and absorbable Volterra memory; and the obstruction to separately paying
+its deterministic centered bank. Open: common/first-valuation and complete
+joint signed forcing, the source cofinal target, and RH. Only this new
+analytical memo was written; no numerical or development invocation occurred.

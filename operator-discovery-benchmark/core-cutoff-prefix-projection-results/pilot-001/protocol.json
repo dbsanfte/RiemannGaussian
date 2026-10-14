@@ -1,0 +1,32 @@
+{
+  "RH_proved": false,
+  "cached_sources": [
+    "discovery_producer_samples.json",
+    "discovery_checker_samples.json",
+    "evaluation_producer_samples.json",
+    "evaluation_checker_samples.json"
+  ],
+  "discovery_bases": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "evaluation_bases": [
+    1024
+  ],
+  "fresh_or_unseen_arithmetic_claim": false,
+  "hashes": false,
+  "input": "candidate10_cutoff_prime_orbit_obligation.json",
+  "maximum_concurrent_memory_bytes": 12884901888,
+  "model_calls_in_search": 0,
+  "new_source_or_zeta_evaluations": 0,
+  "numeric_Gram_fitting": false,
+  "parallel_workers": 2,
+  "process_memory_bytes": 4294967296,
+  "runtime_seconds": 1800,
+  "schema": "cutoff-prefix-projection-run-v1",
+  "total_operation_cap": 2000000000,
+  "whole_signed_bound_proved": false,
+  "worker_operation_cap": 400000000
+}

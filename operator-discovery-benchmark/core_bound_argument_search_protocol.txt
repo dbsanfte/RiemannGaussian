@@ -1,0 +1,75 @@
+Detector-owned composition of bounds from the current missing estimate
+
+Input: candidate10_signed_primitive_obligation.json, identical to its accepted
+publication under core-signed-primitive-results/pilot-001/verification-001.
+Use verify_core_signed_primitive_publication.verify for source ancestry.
+The current signed core, all 144 original source bindings, centering drifts,
+unit corrections, old alternatives and failed arguments remain intact.
+
+Ownership of discovery
+Analysts supply the typed expression language and elementary inference rules.
+The executable expands a requested bound into subgoals, searches alternative
+compositions, derives exact exponents/constants/logs, records proof DAGs and
+unclosed leaves, and chooses arguments for different window scales. It does
+not use runtime model calls or claim to invent arbitrary inference rules.
+Its new arithmetic-family parser is intentionally limited to divisor-prefix
+sawtooth sums and their finite Dirichlet convolution lifts. The current full
+Mellin-energy target automatically proposes that auxiliary and a REQUIRED
+signed-convolution/Mellin bridge. This bridge has no accepted rule here;
+the complete target must remain open regardless of auxiliary successes.
+
+Objects and rule grammar
+For bounded complex w_d and rational theta>=0, let
+ Q(n)=sum_(d<=U) w_d*d^-theta*({n/d}-(d-1)/(2d)), integer n.
+Pointwise triangle, full-period mean, finite discrete Fourier expansion,
+equal-rational-frequency grouping, absolute cofactor bounds, actual Mobius
+complete inverse and coprime dilation, Parseval, retaining the cofactor's
+U/r cutoff during summation, Hilbert-space weighted Abel, and integer-window
+Gram row sums are composable rules. Fourier is a finite discrete transform;
+there is no continuous-series jump-value sampling convention to assume.
+
+Bounds use positive rational coefficients times U^a L^b (1+log U)^k.
+Rational a,b and theta allow square, cubic and sixth roots. All U,L>=1 are
+integer; finite convolution h has support D<=U^d and l1 norm<=U^h. The
+spacing rule applies to intervals starting at n>=D, and pays the full
+denominator scale UD and all off-diagonal Gram terms. The n<D head uses
+Qplus(0)=0 and is retained in the required recovery. Full-period averaging
+alone is never called a bound on every finite interval.
+
+Argument comparison
+For base theta=0, crude pointwise square costs U^2/4. Uniform cofactor maxima
+give U(1+log U)^2/12. Retaining U/r and interchanging the three finite sums
+gives U/2; the elementary proof is in Review030. This bound holds for EVERY
+bounded weight sequence. The actual Mobius inverse rule gives 9U, so it is
+not an arithmetic exponent improvement. Re-run the same inferred auxiliary
+with arithmetic axioms removed as a distinct declared ablation, and record
+whether any selected exponent/log benefit survives. No generic success is
+promoted to signed Mobius control. Constants rank after exponents, logs and
+the number of special arithmetic assumptions. The finite search tests
+L=U^lambda for lambda in 0,1/2,1,2,3,6; exact two-variable bounds are retained.
+
+Mean and recovery
+For the current E, prefix(E)=1+sum mu(d)*{n/d}, n>=1. Its mean is exactly
+C_U=1+(M(U)-c_U)/2, not a paid small quantity. E=C_U delta+e_U, with
+prefix(e_U)=Q_U(n) on n>=1 and zero at n=0. Expand E^{*m} by the Dirichlet
+binomial rule, retaining every mean branch, all ordered crosses, the actual
+A^p and -c^m D head and all inherited source residues. No pointwise Q^m
+substitution, finite-factor lift for infinite-support e^2, or automatic
+Mellin recovery is licensed. Analytical mean-branch suggestions in Review030
+are not implemented payments in this study.
+
+Verification and resources
+Independent checker reconstructs every inference, side condition, argument
+enumeration, topological dependency and selection without calling producer
+plan/apply/search. Test exact rational finite compiler identities against
+direct period sums, ablations, fractional transitions, varying window choice,
+cycle rejection, missing bridges and adversarial proof modifications. Each
+owner runs their new full suite once; preserve failures and use focused
+checks after changes. Use actual charge-only prime_bank_candidates.Meter.
+
+Freeze new source/protocol/review/receipts and exact input using direct byte
+copies before a single actual producer search followed by independent check.
+No precautionary hashes. Budget1b operations inclusive of new development,
+900 seconds, 4GiB process memory (within user-authorized16GiB). Source ancestry
+checks reuse prior publications without rerunning any prior proof search.
+Publication occurs only after verification and full inherited-state checks.

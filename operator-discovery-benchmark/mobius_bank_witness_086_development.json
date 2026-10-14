@@ -1,0 +1,120 @@
+{
+  "kind": "086 compatible Boolean witness development receipt",
+  "date": "2026-10-11",
+  "files": [
+    "mobius_bank_witness_086.py",
+    "test_mobius_bank_witness_086.py",
+    "MOBIUS_BANK_WITNESS_DEVELOPMENT_086.txt"
+  ],
+  "environment": {
+    "python_command": "../.venv/bin/python -B",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "scipy_version": "1.15.3"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B -m unittest test_mobius_bank_witness_086 -v",
+  "test_runs": [
+    {
+      "run": 1,
+      "tests": 10,
+      "passed": 9,
+      "errors": 1,
+      "seconds": 0.082,
+      "status": "FAILED",
+      "error_test": "test_fixed_thread_option_warning_schedule_and_determinism",
+      "error_type": "KeyError",
+      "error_message": "node_limit",
+      "cause": "SciPy consumes recognized keys from the options dictionary. The test inspected the mock call after delegation, when node_limit had already been popped.",
+      "correction": "Test snapshots options before delegating to real scipy.optimize.milp. Producer forwarding was unchanged."
+    },
+    {
+      "run": 2,
+      "tests": 10,
+      "passed": 10,
+      "errors": 0,
+      "seconds": 0.103,
+      "status": "OK"
+    },
+    {
+      "run": 3,
+      "tests": 11,
+      "passed": 11,
+      "errors": 0,
+      "seconds": 0.094,
+      "status": "OK",
+      "change": "Added exact equivalence of binary equations and independently reconstructed rational typed bank on every tiny Boolean vector; added large denominator resource case."
+    }
+  ],
+  "tiny_smoke_runs": [
+    {
+      "geometry_u": 53,
+      "effective_dimension": 3,
+      "bank": "divisor plus complete prime pair",
+      "milp_calls": 4,
+      "time_limit_per_call": 1,
+      "status": "EXACT_COMPATIBLE_BANK_WITNESS_PROPOSAL",
+      "best_lower_bound": "-1/24",
+      "signs": [
+        1,
+        1,
+        1
+      ],
+      "threads_forwarding_warning_recorded_on_all_calls": true
+    },
+    {
+      "geometry_u": 53,
+      "effective_dimension": 3,
+      "bank": "empty",
+      "milp_calls": 4,
+      "time_limit_per_call": 1,
+      "exhaustive_maximum": "119/24",
+      "found_lower_bound": "119/24",
+      "signs": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "geometry_u": 53,
+      "effective_dimension": 3,
+      "bank": "prime pair with prime cut 1/5",
+      "milp_calls": 4,
+      "time_limit_per_call": 1,
+      "exhaustive_maximum": "-1/24",
+      "found_lower_bound": "-1/24",
+      "signs": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "default_search": {
+    "attempts": 4,
+    "time_limit_per_milp": 10,
+    "seed": 20261011086,
+    "requested_node_limit": 1000,
+    "local_steps": 4,
+    "highs_threads": 1
+  },
+  "validations": [
+    "Tiny exhaustive feasibility and complete quadratic comparison",
+    "Independent verify_lower of every candidate",
+    "Negative incumbent retained through all four RuntimeError proposals",
+    "Numerical infeasibility preserved as unproved with no certificate",
+    "Literal parity/gcd/zero-row/interval proof checks on synthetic integer fixtures",
+    "Exact constraint-preserving pair and zero-column flips",
+    "Mutation, integer precision, denominator, native threads, dimension and cumulative work guards",
+    "Empty domain and single anchor without MILP",
+    "Fixed option forwarding, warning capture and deterministic schedule"
+  ],
+  "full_science_run": false,
+  "unknown_actual_mobius_signs_queried": false,
+  "older_sources_edited": false,
+  "completed_mixed_zero_sources_edited": false,
+  "content_digests_used": false,
+  "global_quadratic_maximum_proved": false,
+  "uniform_obstruction_proved": false,
+  "RH_proved": false
+}

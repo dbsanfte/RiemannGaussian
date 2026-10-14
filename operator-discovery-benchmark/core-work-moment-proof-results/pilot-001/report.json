@@ -1,0 +1,280 @@
+{
+  "Gram_argument_candidates": 550,
+  "Gram_proof_classes": [
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "11",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19049/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 0,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "0",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "67/6",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "57347/1200",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 1,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "1/6",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "34/3",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "57547/1200",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 2,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "1/3",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "23/2",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19249/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 3,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "1/2",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "35/3",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "57947/1200",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 4,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "2/3",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "12",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19449/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 5,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "1",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "25/2",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19649/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 6,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": false,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "1",
+        "q_power": "3/2",
+        "rule": "1 <= label <= q"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "11",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19049/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 7,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": true,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "max(1,p^gamma), p=2",
+        "q_power": "0",
+        "rule": "label in {1,p}"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "11",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19049/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 8,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": true,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "max(1,p^gamma), p=3",
+        "q_power": "0",
+        "rule": "label in {1,p}"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    },
+    {
+      "best_coefficient_cost_floor": {
+        "B_power": "11",
+        "log_degree": "0"
+      },
+      "established": {
+        "B_power": "19049/400",
+        "log_degree": "0"
+      },
+      "event_weight": null,
+      "id": 9,
+      "label_weight": {
+        "constant_may_depend_on_fixed_prime": true,
+        "constant_may_depend_on_gamma": true,
+        "multiplier": "max(1,p^gamma), p=5",
+        "q_power": "0",
+        "rule": "label in {1,p}"
+      },
+      "method": "weighted_label_Minkowski",
+      "representation": "collected_sectors",
+      "selected": 10
+    }
+  ],
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "best_direct": {
+    "bottleneck_terms": [
+      {
+        "bound": {
+          "B_power": "11/2",
+          "log_degree": "0"
+        },
+        "constant": "301112598528000/2357947691",
+        "q_power": "9/2",
+        "zeta_power": 6
+      }
+    ],
+    "bound": {
+      "B_power": "11/2",
+      "log_degree": "0"
+    },
+    "coefficient_cost_floor": {
+      "B_power": "11/2",
+      "log_degree": "0"
+    },
+    "coefficient_floor_is_not_a_bound_on_actual_work": true,
+    "method": "sum_event_L1",
+    "representation": "collected_sectors",
+    "term_count": 239,
+    "theorem": "M_common(B) <= sum_(q=2..2B) integral kappa*abs(j_q) dt/(2*pi)",
+    "uniform_in": [
+      "B",
+      "V",
+      "projection",
+      "X",
+      "N"
+    ]
+  },
+  "development_operations": 518110895,
+  "direct_grouped_bound_proved": true,
+  "direct_grouped_goal_proved": false,
+  "distinct_Gram_proof_searches": 10,
+  "elapsed_seconds": 166.2694182730047,
+  "fitted_constants": 0,
+  "full_component_bound_proved": false,
+  "inclusive_operations": 694098968,
+  "inherited_source_bindings": 144,
+  "main_peak_rss_kib": 704032,
+  "moment_products": 13,
+  "numeric_cache_values_used": false,
+  "requested_Gram_bounds": 252,
+  "requested_Gram_bounds_proved": 0,
+  "runtime_model_calls": 0,
+  "source_presentations": 5,
+  "status": "UNIFORM_WORK_MOMENT_PROOF_ATTEMPTS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 175988073,
+  "targets_excluded_even_without_height_cost": 252,
+  "whole_signed_bound_proved": false
+}

@@ -1,0 +1,10 @@
+{
+  "audit_operation_cap": 50000000,
+  "expected_keys": "every (mode,a,b) from the frozen selected source programs",
+  "failed_main_work_charge": "full declared150million cap, because its actual terminal counter was not emitted",
+  "original_frozen_files_changed": false,
+  "original_terminal_failure_retained": true,
+  "reason": "saved producer/checker component ordering differs; match exact algebraic keys",
+  "source_evaluations": 0,
+  "worker_reruns": 0
+}

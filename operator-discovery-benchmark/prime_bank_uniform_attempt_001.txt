@@ -1,0 +1,212 @@
+Uniform proof attempt001: selected prime banks31/53 and compensation families
+
+Scope and outcome
+Pure analytical continuation of semantic_candidate_review_banks.txt. No source
+tables, responses, scores, tests, hashes or frozen files were accessed or changed.
+The original target remains actual Mobius E plus nonnegative storage V. No
+Mertens/RH-strength bound is assumed. This attempt does not close the universal
+drift inequality. It proves a causal obstruction to norm-only closure, a small
+adjacent-cell bank residual bound, an exact source-specific compensation family,
+and a genuine contraction estimate for normalized frozen quotient operators.
+
+Selected states and earlier usable estimates
+R=floor(X^(1/3)), K=pi(R), B(t)=M(floor(t^(1/3))),
+A_R(t)=sum_{p<=R,prime}M(floor(t/p)), L(t)=M(floor(t/2)),
+F_R=A_R-KB, U31=F_R, U53=F_R-G_m L, m=max(2,R), G_m=1_{(t,m)=1}.
+V_U=X^-2 sum_{X<=t<2X}U^2, W=E+V_U; W(1) is retained.
+Earlier unconditional bounds were V_{KB}<=12[K/R]^2 E(R), R>=2,
+with K/R tending to zero, and child norm of a mask-jump state<=E(X)/2.
+Neither bound controls the signed main bank or produces negative credit.
+
+1. Why past storage alone cannot control a fresh coherent block
+For t in the child block[2X,4X), every admitted prime quotient and the lag
+index are <=floor(t/2)<=2X-1. The cubic root is also <=2X-1. Therefore BOTH
+child potentials31/53 are functions solely of the old source indices1..2X-1.
+Their parent potentials have even earlier source access. In contrast child E
+contains the fresh source increments2X..4X-1. Write
+ M(t)=M(2X-1)+h(t), h(t)=sum_{2X<=n<=t}mu(n).
+Its square has the positive fresh-prefix term h(t)^2 and its old/fresh cross
+term. No root transfer or mask-jump estimate determines either fresh sum.
+
+This is a rigorous obstruction to deriving source-independent negative drift
+from those lemmas. For comparison, a bounded source can have its old prefix
+zero and fresh values+1, making V_parent=V_child=0 while DeltaE is of order X.
+A stronger comparison preserves the exact even-prime recurrence and initial
+values. For dyadic X>=8, set a(1)=1,a(2)=-1, all other old a(n)=0; fresh odd
+a(n)=1 and fresh even a(n)=0. Extend odd values freely thereafter and define
+a(2n)=-a(n) for odd n, a(2n)=0 for even n. It satisfies |a|<=1 and that exact
+even law. All old prefixes queried by31/53 vanish, hence both V values vanish.
+The child prefixes on its even/odd pairs are j,j+1,0<=j<X, giving exactly
+ DeltaE=X/6+1/(12X).
+This does NOT satisfy the complete actual-Mobius prime/squarefree axioms and
+does NOT refute either selected candidate for Mobius. It proves that the stated
+norm lemmas plus the even recurrence cannot supply the desired credit.
+
+There is also one fixed bounded comparison source with the even recurrence:
+a(n)=1 on odd n,-1 on n=2 mod4,0 on multiples of4. Its prefix is t/4+O(1),
+so E is of order X. Any cofinal subpower drift of E plus nonnegative storage
+would contradict telescoping for this source. Thus access to fresh point
+queries alone cannot repair a source-independent proof: nonnegative child
+storage cannot cancel arbitrary coherent fresh target input. Actual arithmetic
+constraints on fresh odd/nonmultiple correlations are indispensable.
+
+In quadratic-form language, on an unconstrained fresh source block the new/new
+principal block of Delta(E+V) contains the positive prefix-Gram block of E.
+For past-only storage its additional block is zero; for fresh nonnegative
+square storage it is positive semidefinite. A universal negative quadratic
+certificate cannot remove that block without source-specific relations.
+
+2. Exact parity transport identifies the missing actual source component
+Let O(t)=sum_{n<=t,n odd}mu(n). The actual law mu(2n)=-mu(n) for odd n and0
+for even n gives M(t)=O(t)-O(floor(t/2)). Consequently
+ M(2u)=sum_{u<n<=2u,n odd}mu(n)=J(u),
+ M(2u+1)=J(u)+mu(2u+1).
+Hence child E equals
+ (4X^2)^-1 sum_{X<=u<2X}[2J(u)^2+2J(u)mu(2u+1)+mu(2u+1)^2].
+The one-point residual has normalized norm at most1/(4X). The principal J
+energy is an actual sliding odd-annulus correlation, not the smaller parent
+annulus. This exact transport does not bound J by parent E. It exposes the
+fresh component that a real contraction lemma would have to control.
+
+An attempted telescoping of the mixed point term uses
+ J(u+1)-J(u)=mu(2u+1)-1_{u+1 odd}mu(u+1).
+Summation by parts retains both endpoint J energies and the correlation with
+the lower odd-source point. In particular an endpoint at4X is outside the
+saved child block and cannot be discarded. This rearrangement does not create
+an unsigned forcing bound on the J energy.
+
+3. New unconditional adjacent-cell residual estimate for the centered bank
+Freeze a cutoff R<=floor((2X)^(1/3)) on the entire child block. Then
+ d_u=F_R(2u+1)-F_R(2u)
+ =sum_{p<=R,p dividing 2u+1}mu((2u+1)/p)
+  -K*1_{2u+1=k^3}mu(k).
+This uses complete quotient/root boundary increments. The number of prime
+divisors is <=log_2(4X); the number of cube events in the block is <=2X^(1/3).
+K^2<=2X^(2/3). Using (a-b)^2<=2a^2+2b^2 yields
+ (8X^2)^-1 sum_u d_u^2 <=[log_2(4X)^2+4]/(4X).
+The bound is independent of unknown prefix energies.
+
+The orthogonal pair-mean decomposition is exact:
+ F_R(2u)^2+F_R(2u+1)^2
+ =2[(F_R(2u)+F_R(2u+1))/2]^2+d_u^2/2.
+Thus the centered bank's parity-residual energy is uniformly small. Its pair
+mean remains a past-source predictor, and there is no corresponding estimate
+of the fresh J energy. Small local residual does not imply negative frozen
+transport of the large mean mode.
+
+For53, L(2u)=L(2u+1)=M(u). Its adjacent difference is exactly
+ d_u-[G_m(2u+1)-G_m(2u)]M(u).
+Its parity-residual energy is bounded by twice the preceding small residual
+plus E(X)/4. This gives a precise parent-energy mask cost. A rapidly alternating
+coprime gate cannot be treated as a small root-like point residual.
+
+4. No orthogonal-projection interpretation for the stored subtraction
+The root subtraction KB is not the root-cell conditional mean of A_R. For it
+to supply a projection credit one would need the exact orthogonality condition
+<A_R-KB,KB>=0, which has not been established and is not an algebraic identity.
+The stored coefficient K comes from counting prime rows, not that covariance.
+Completing a square with a covariance-defined coefficient would require source
+responses and would change the program; it is not a universal analytic proof.
+
+The gate IS an orthogonal multiplication projection, giving exactly
+ ||F_R-G_m L||^2=||G_m(F_R-L)||^2+||(1-G_m)F_R||^2.
+Its credit relative to ||F_R||^2 is
+ 2<G_m F_R,L>-||G_m L||^2.
+Neither idempotence nor the mask-jump bound fixes the sign of this expression.
+Adding the opposite square ||F_R+G_m L||^2 cancels the cross term but costs
+2||F_R||^2+2||G_m L||^2. That completion diagonalizes the ambiguity; it does
+not produce negative net transport. All old/new prime and changing-modulus
+terms remain as in the bank memo, including new-prime/mask covariance.
+
+5. Normalized quotient operators: a genuine finite-norm contraction
+For any function f=0 below1 define the FINITE norm
+ H_T(f)=integral_1^T |f(t)|^2 dt/t^2.
+For D_p f(t)=f(t/p), exact substitution gives
+ H_T(D_p f)=p^-1 H_{T/p}(f)<=p^-1 H_T(f).
+No assumption that an infinite target-energy integral converges is made.
+For fixed source-free nonnegative weights a_p summing to1, the frozen mixture
+K_a=sum_p a_p D_p obeys
+ ||K_a f||_{H_T}<=(sum_p a_p/sqrt(p))||f||_{H_T}
+ <=2^-1/2 ||f||_{H_T}.
+For step functions f(t)=M(floor(t)), the weighted integral on a dyadic block
+lies between E(X)/4 and E(X). This is a real uniform operator estimate, but
+it does not furnish a source identity M=controlled forcing+K_a M.
+
+The raw bank's corresponding norm is sum_{p<=R}p^-1/2, not a uniform constant.
+This upper bound is sharp as a norm uniformly over T: truncated square-root
+test functions f(t)=sqrt(t) on[1,T] give that ratio on[R,T], and the relative
+logarithmic endpoint loss tends to zero as T grows at fixed R. This is an
+analytical test function, not an actual Mobius assertion or experiment. Raw
+bank amplification is structural rather than merely an excessive inequality.
+
+Moving weights a_p(X) require their own old-weight/rescaling/new-domain terms.
+The estimate freezes coefficients; it cannot silently be applied to arbitrary
+output-dependent mixtures a_p(t), because a_p(pu) no longer sums to1 after
+the change of variables. All domain complements must stay in any such family.
+
+6. Source-specific compensation stronger than near-point translations
+For every prime p define complete nonmultiple prefixes
+ C_p(t)=sum_{n<=t,p not dividing n}mu(n), D_p(t)=C_p(floor(t/p)).
+The actual prime-multiple law proves M(t)=C_p(t)-D_p(t) exactly. Both parts of
+the source partition are complete. C_p contains fresh source indices; replacing
+it by a few latest residues loses the identity and requires the omitted prefix.
+
+For a fixed source-free normalized prime mixture, let A=sum_p a_p C_p and
+B=sum_p a_p D_p. Then M=A-B pointwise, and the nonnegative candidate storage
+V=X^-2 sum_block(A+B)^2 preserves the full target while giving
+ W=E+V=2X^-2 sum_block(A^2+B^2).
+The fresh/past covariance cancels by the parallelogram identity, not a fitted
+coefficient or an assumed sign estimate. Prime-pair correlations inside A^2
+and B^2, moving coefficients, initial costs and selector boundaries remain.
+For normalized weights on primes>=2 this family has A(1)=1,B(1)=0 and W(1)=2;
+that initial storage cost is part of every conditional telescoping argument.
+The related family V=sum_p a_p ||C_p+D_p||^2 cancels each per-prime covariance;
+neither version may drop an unrepresented source or prime-tail complement.
+
+For p=2 fixed, put F(X)=X^-2 sum_block O(t)^2. This completion has the exact
+dyadic energy law, for X>=2,
+ W(X)=2F(X)+F(X/2),
+ DeltaW=2F(2X)-F(X)-F(X/2).
+It exposes explicit parent credit and the fresh odd-prefix cost without an
+unknown covariance. No contraction of F(2X) has been proved. This is a useful
+mechanism-based storage family, not a reason to assert that odd prefixes are
+small. More primes introduce their full residue-domain transports, not extra
+unconditional cancellation.
+
+Finite-norm analysis also prevents hiding an equivalent-energy premise:
+ C_p=(I-D_p)^-1 M=sum_{j>=0}M(floor(t/p^j)), locally a finite exact sum,
+ ||C_p||_{H_T}<=(1-p^-1/2)^-1||M||_{H_T}.
+Thus the compensation energy is comparable to the original finite energy;
+this identity supplies a new accounting mechanism, not a new regularity bound.
+To close, one still needs a source-specific estimate on fresh C_p or on its
+transport that consumes less than the explicit parent credit. No bound of that
+strength is assumed here.
+
+7. Implications for the proposed generic translate/remainder mutations
+A bank of bare near-t point queries, with at most pi(R) terms and r>=2, has
+normalized square<=pi(R)^2/X<=1. It is uniformly bounded padding and its
+cofinal drift assertion is equivalent to that of E up to a constant. Coupling
+those points to unresolved prefixes can expose genuine fresh/past correlations,
+but the prefix factor and all mixed costs remain.
+
+For the latest multiple n=p floor(t/p), the actual identity is
+ mu(n)=-mu(floor(t/p))*1_{p not dividing floor(t/p)}.
+Despite the near-t index, this query reduces to a past quotient plus a mask.
+Other residues can access distinct fresh source values; being coprime to p
+does not establish any sign law for them. Separate nominal index freshness,
+arithmetically reduced dependencies, and an actual signed control lemma.
+
+The complete C_p/D_p compensation family is stronger than translations in
+one precise sense: it uses a valid prime-multiple law to eliminate a whole
+fresh/past covariance while keeping E. Its unresolved fresh norm is explicit.
+Translations can supply exploratory interactions, but a pure norm/past proof
+still misses the coherent fresh-prefix mode identified above.
+
+Final disposition
+No negative frozen-transport credit sufficient for full selected31/53 drift
+was proved. Reasonable source-independent contraction/projection claims fail
+for the comparison modes above. Useful proved additions are the small parity
+residual bound, finite normalized-dilation contraction, and exact prime-law
+parallelogram compensation. They direct future structural generation toward
+complete fresh nonmultiple-prefix/transport pairs and explicit complements,
+rather than assuming that near-point access or normalization establishes RH.

@@ -1,0 +1,388 @@
+JOINT CORE LOG RECURRENCE: COERCIVITY OBSTRUCTIONS AND COMPOSABLE RULES
+
+Scope and outcome
+-----------------
+Inputs are candidate10_joint_preconditioner_obligation.json,
+JOINT_PRECONDITIONER_HANDOFF.txt, and the two _004 analytical reviews.
+The full core is retained. Only this new memo is written; no numerical
+source run, test, hash, subagent or prior/frozen edit is used.
+
+The signed prime-log generator does NOT supply automatic whole-core
+coercivity. Its exact target polarization is indefinite, a natural Young
+square has an uncanceled real pole and cannot be separately paid, and even
+one negative prime-log channel has both signs in a prefix Hilbert space.
+These are scoped rigorous obstructions to proposed proof rules, not a
+proof that actual-source cancellation is impossible.
+
+Reusable certificate rules are derived for complete delayed filters,
+including the critical boundary; exact dyadic covariance/increment
+identities; conditional strict-gap or bounded-drift inductions with full
+constants; and a precise joint log-covariance absorption lemma. A detector
+can construct these operators, inequalities and recovery maps generically.
+The required ACTUAL-SOURCE uniform inequalities remain OPEN. Equivalent
+rewrites, stronger intermediate hypotheses and proved rules are explicitly
+distinguished. No core bound or RH theorem is claimed.
+
+1. Complete four-state source and prime-log recurrence
+------------------------------------------------------
+Use u=1/3,v=2/3,kappa=2/3,beta=9/2 and the old exact R_u>0. Define
+  nu0=k_u*(mu*mu), nu1=k_u*(mu*mu_v), nu2=k_u*mu_v, nu3=mu,
+  c=(beta,-beta,-R_u,-beta), f=sum_i c_i*nu_i,
+  A_i(x)=sum_(n<=x)nu_i(n), F(x)=sum_i c_i A_i(x).
+Here k_alpha(n)=n^(-alpha), mu_v(n)=mu(n)n^(-v), and * is COMPLETE
+Dirichlet convolution. All prefix values below one are zero. The unit is
+  f(1)=-beta-R_u.
+The paid soft-divisor inverse and complete eta prefix from the verified
+handoff remain the route back to the original centered target, including
+all unit/main/prime-power crosses. They are not discarded at sharp cuts.
+
+For every prime power r>=2 let
+  D(r)=diag(r^(-u)-2, r^(-u)-1-r^(-v), r^(-u)-r^(-v), -1).
+The exact coefficient derivation is
+  log(n)*nu_i(n)=sum_(r|n,r>=2)Lambda(r)*D_ii(r)*nu_i(n/r).
+Lambda includes ALL prime powers. Every nonzero argument n/r is smaller.
+Summation by parts gives exactly, for real x>=1,
+  F(x)*log x=Z(x)+integral_1^x F(y)dy/y,
+  Z(x)=sum_(r<=x)Lambda(r)*sum_i c_i D_ii(r)A_i(x/r).          (1.1)
+The x=1 equation is 0=0, not a recovery of the unit by dividing by zero.
+The recurrence does not sum a Dirichlet coefficient series at kappa.
+All arguments in Z are <=x/2, but they are FOUR source channels, not
+automatically the one controlled scalar F at that smaller scale.
+
+2. Actual signed polarization fails the naive positivity test
+--------------------------------------------------------------
+Set P=c c^T. A proposed pointwise whole-target dissipation certificate
+from the generator would involve
+  P D(r)+D(r) P.
+For a real state vector z its quadratic form is
+  2*(c dot z)*((D(r)c) dot z).                               (2.1)
+D(r)c is not proportional to c: the four diagonal entries of D(r)
+are distinct in the required ways and every c_i is nonzero. The two
+linear forms in (2.1) are independent; choose their signs equal or opposite
+to obtain positive or negative values. Thus the symmetric matrix is
+INDEFINITE, despite several negative entries of D(r).
+This already rejects a universal pointwise positive-form proof for the
+rank-one TARGET storage. Transported prefix/cofactor vectors are generally
+different, so their bilinear signs cannot be inferred from this failed
+same-point proxy either.
+
+A full positive coercive metric does not repair entrywise dissipation:
+D_22(r)=r^(-u)-r^(-v)>0. Its positive eigenvalue prevents
+D^T M+M D<=-delta M for positive definite M and delta>0. Also the
+common nu0 eigenvalue tends to -2; smaller arguments alone are not a
+certified prefix-moment contraction. This statement concerns a generic
+matrix inequality, not every possible arithmetic norm or coupled forcing.
+
+There is a SOURCE-SPECIFIC obstruction to a natural square completion.
+The exact kappa main-prefix coefficients of A_i are
+  m0=1/[kappa*zeta(kappa)^2],
+  m1=1/[kappa*zeta(kappa)*zeta(kappa+v)],
+  m2=1/[kappa*zeta(kappa+v)], m3=0.
+Then m0,m2>0,m1<0, c dot m=0, but
+  (D(r)c) dot m
+    =beta*[-2m0+m1+m0*r^(-v)]<0, every r>=2.                 (2.2)
+Adding ANY multiple of c leaves this pole coefficient unchanged.
+Consequently a raw auxiliary with row D(r)c+eta*c, for fixed r and eta,
+has a genuine uncanceled pole at s=kappa. It CANNOT have complete
+all-epsilon cofinal squared moments: such moments give finite weighted
+prefix norms for every sigma>1/2, and Mellin/Cauchy then makes its
+Dirichlet series holomorphic in Re(s)>1/2, contradicting that real pole.
+This contradiction uses only local nonzero real zeta values, not RH or
+a zero-free half-plane elsewhere.
+
+Thus completing (2.1) by a nonnegative square of that raw row is not an
+independently payable defect. Centering that square is allowed, but its
+deterministic main forcing must return. A zero-pole target projection is
+not an invariant subspace of D(r). The common mode and pole channel
+cannot be hidden in an alleged positive storage or a tail at kappa.
+
+3. Negative delay coefficients are not a coercivity theorem
+-----------------------------------------------------------
+On ||G||_sigma^2=integral_1^infinity |G(x)|^2*x^(-2sigma-1)dx,
+S_q G(x)=G(x/q) has norm q^(-sigma). A single-prime nu0 generator is
+  L_(0,q)=log q*sum_(e>=1)(q^(-eu)-2)S_(q^e).
+After logarithmic coordinates, its Fourier multiplier at phase theta is
+  log q*[a*t*exp(-i theta)/(1-a*t*exp(-i theta))
+                      -2a*exp(-i theta)/(1-a*exp(-i theta))],
+  a=q^(-sigma), t=q^(-u).
+Its real value at theta=0 is negative; at theta=pi it is positive,
+  log q*[-a*t/(1+a*t)+2a/(1+a)]>0.                           (3.1)
+Long logarithmic wave packets approximate these two signs. Thus even
+this finite, absolutely convergent one-prime operator has no universal
+one-sign quadratic form on arbitrary prefix Hilbert-space signals.
+Actual arithmetic F is fixed, not an arbitrary wave packet; (3.1) rules
+out a source-independent inference from negative coefficients, not a
+future source-specific signed covariance lemma.
+
+There is a useful VALID semidefinite rule. For any contraction T,
+  Re <G,(I plus-or-minus T)G>
+    =1/2*||G plus-or-minus TG||^2
+             +1/2*(||G||^2-||TG||^2)>=0.                   (3.2)
+It has no uniform coercive gap when ||T||=1: phases can approach the
+opposite sign. With ||T||<=r<1, the gap is >=1-r. A detector may compose
+this rule when it has proved a PREFIX operator-norm certificate for T.
+The coefficient identity sum_(d|n)Lambda(d)=log n does not supply that
+certificate for the lifted prefix bank: its weights and supports differ.
+Using a coefficient probability or a coefficient Hilbert norm here would
+replace the complete prefix-square covariance by a different problem.
+
+4. Exact joint log-covariance absorption certificate
+---------------------------------------------------
+Fix L=64, sigma>1/2 and H>=64. Let w_sigma(x)=x^(-2sigma-1),
+  C_head=integral_1^64 F(y)dy/y,
+  V(x)=integral_64^x F(y)dy/y,
+  Q_(sigma,H)=Re integral_64^H conjugate(F(x))*Z(x)w_sigma(x)dx.
+From (1.1), EXACTLY
+  Q=integral_64^H log x*|F(x)|^2*w_sigma(x)dx
+               -Re <F,V> -Re(C_head*<F,1>),                 (4.1)
+with complex conjugation in the conventional inner product. F is real
+for this source, so no conjugation ambiguity changes the expression.
+Also
+  2 Re <F,V>=H^(-2sigma)|V(H)|^2+2sigma*||V||^2,
+  ||V||<=||F||/sigma.
+Consequently, writing k_sigma=log64-1/sigma>0 and
+b_sigma=|C_head|*64^(-sigma)/sqrt(2sigma),
+  Q>=k_sigma*||F||_(sigma,[64,H])^2
+                         -b_sigma*||F||_(sigma,[64,H]).      (4.2)
+The finite head is explicit: |f(n)|<=(3beta+R_u)d2(n) gives
+  |C_head|<=(3beta+R_u)*64*log64.
+
+A precise CLOSING certificate input would be constants delta_sigma>0,
+A_sigma>=0, independent of H, such that for EVERY H>=64,
+  Q_(sigma,H)<=(k_sigma-delta_sigma)*||F||_(sigma,[64,H])^2
+                                                          +A_sigma. (4.3)
+Then Young's inequality applied to (4.2) gives
+  ||F||_(sigma,[64,H])^2
+       <=2A_sigma/delta_sigma+b_sigma^2/delta_sigma^2.        (4.4)
+If (4.3) were proved for every sigma>1/2, the complete core cofinal bound
+would follow, and the verified original recovery would apply. All prime
+powers, proper arguments, channel crosses and finite head are explicit.
+
+Attempted proof: replacing the signed covariance by negative generator
+entries fails (2.1),(3.1); completing squares gives the unpaid pole row
+(2.2); separately centered channels reintroduce the macroscopic bank
+of _004 section7. Those attempts therefore do not prove (4.3).
+Equation (4.3) is a falsifiable ACTUAL-SOURCE correlation lemma, not an
+automatic matrix theorem. In the all-sigma cofinal class it is a closing
+certificate form, largely equivalent to the missing bound, and must not
+be counted as an independent gain merely because Q has a new name.
+A useful generated argument must prove it from narrower source pairings
+or an acyclic coupled estimate without assuming RH-strength companions.
+
+5. Generic delayed fractional filters with full recovery classification
+----------------------------------------------------------------------
+For ANY prefix signal with zero extension below one, fixed integer q>=2
+and real or complex a, define
+  G(x)=F(x)-a*F(x/q).
+The exact finite inverse at x is
+  F(x)=sum_(k=0)^floor(log_q x) a^k*G(x/q^k).                (5.1)
+Every term has a smaller argument except the k=0 observed residual; units
+and all floors remain. On truncated weighted norm the r=|a|q^(-sigma)
+classification is
+  r<1: ||F||<=||G||/(1-r), ||G||<=(1+r)||F||;
+  r=1: inverse cost <=1+floor(log_q H);
+  r>1: inverse cost <=sum_(k=0)^floor(log_q H)r^k.           (5.2)
+At the critical scale |a|<sqrt q gives constant recovery; equality gives
+polylog recovery and preserves the cofinal class. Above sqrt q a generic
+power loss remains. In the fractional family a=q^gamma this is the gate
+gamma<1/2, gamma=1/2, or gamma>1/2 respectively.
+
+The boundary is admissible, not automatically rejected. For every fixed
+sigma>1/2 it has r<1, and the original cofinal property is equivalent to
+that of G. Negative a does not improve this SOURCE-INDEPENDENT norm gate;
+an improvement would require an actual signed source correlation.
+Oversized recovery cannot be inferred from a finite fit: the prefix
+F(x)=a^floor(log_q x) has G supported only on [1,q), but its energy has
+a positive power when |a|>sqrt q. It is a legitimate generic staircase
+prefix for integer q, not a counterexample claiming actual mu identities.
+
+Raw main cancellation with a=q^(2/3) is above the critical gate. A future
+inverse can be written only with an independently justified future boundary
+F(q^k x)/a^k ->0 and its complete tail cost. Neither local analytic pole
+cancellation nor finite source responses prove that boundary. Current-scale
+cycles cannot be replaced by an assumed future condition.
+
+These recovery rules are generic and detector-composable. They classify
+operator+auxiliary routes; they do not demonstrate that any G is cofinal.
+Within the admitted range, simply replacing F by G is an equivalent
+presentation. It becomes a useful argument only if a new source-specific
+inequality for G or its full covariance is independently proved.
+
+6. Dyadic covariance, strict-gap induction, and bounded signed drift
+-------------------------------------------------------------------
+For X=2^j define the COMPLETE energy and delayed covariance
+  E(X)=X^(-2)*sum_(X<=n<2X)|F(n)|^2,
+  C(X)=X^(-2)*sum_(X<=n<2X)Re[F(n)*conjugate(F(floor(n/2)))].
+For X>=2 each lower-block value occurs exactly twice, so
+  E_(S_2 F)(X)=E(X/2)/2,
+  E_G(X)=E(X)+|a|^2*E(X/2)/2
+                    -2 Re[a*C_complex(X)],                 (6.1)
+where C_complex uses conjugate(F(n))*F(floor(n/2)); for the real source
+and real a this is simply -2a*C(X). The two definitions agree in real part.
+These identities keep every source square and cross, not just a filtered norm.
+
+For real a and r^2=a^2/2<1, Young gives the conditional recurrence
+  E(X)<=(1+eta)*E_G(X)+(1+1/eta)*r^2*E(X/2), eta>0.
+Choosing eta=2r^2/(1-r^2) when r>0 gives
+  E(X)<=rho*E(X/2)+K_a*E_G(X),
+  rho=(1+r^2)/2<1, K_a=(1+r^2)/(1-r^2).                    (6.2)
+For a=0 use E=E_G directly. This is an AUTOMATIC certificate if the
+source inequality for E_G is supplied; it proves no such inequality.
+At the boundary |a|=sqrt2 the exact dyadic inverse gives
+  sqrt(E(X))<=sum_(k=0)^j sqrt(E_G(X/2^k)).                  (6.3)
+Bounded E_G would give E<=K(j+1)^2. For r<=1 and
+E_G(Y)<=K_epsilon Y^epsilon, the more general inverse yields
+  E(X)<=K_epsilon X^epsilon/(1-r*2^(-epsilon/2))^2.
+
+A different reusable route is a SIGNED increment. For any rho>=0,
+  Delta_rho(X)=E(2X)-rho*E(X)
+    =E_G(2X)+2a*C(2X)-(rho+a^2/2)*E(X).                    (6.4)
+It is an exact observable, including every prime/composite and main cross.
+No sign of C is inferred from a or from a prime-log coefficient.
+
+Conditional theorem: if rho<1 and EVERY dyadic X satisfies
+  Delta_rho(X)<=K*(1+log X)^p, p>=0,
+then, with j=log2 X and exact head E(1)=(beta+R_u)^2,
+  E(X)<=rho^j*E(1)+K*(1+log X)^p/(1-rho).                  (6.5)
+If rho=1, the same hypothesis gives
+  E(X)<=E(1)+K*j*(1+log X)^p.                              (6.6)
+For a constant defect this yields bounded energy with a strict gap, or
+logarithmic energy with rho=1. Only a ONE-SIDED increment bound is needed.
+If the defect is instead <=K_epsilon X^epsilon, the geometric telescoping
+constant is 1/(1-rho*2^(-epsilon)) for rho<=1, up to the finite head.
+For rho>1 a bounded increment does not close cofinal growth: E_j=rho^j
+has Delta=0. This is another automatic rejection gate.
+
+An all-epsilon subpower increment bound with rho<=1 is essentially an
+equivalent encoding of cofinality, since Delta_rho<=E(2X) already. A FIXED
+polylog or bounded increment is a genuinely stronger intermediate lemma.
+For example E(2^j)=exp(sqrt j) is cofinal subpower but its increments for
+rho<=1 exceed every fixed polynomial in j; a staircase prefix with these
+block energies realizes the logical distinction. This is not an actual
+source counterexample. Neither type of actual-source increment bound has
+been proved here. Raw bounded increments are testable hypotheses at finite
+scales, not evidence of all-scale control by themselves.
+
+7. What a detector may synthesize, and what it may certify
+---------------------------------------------------------
+For a generic supplied complete source expression, a finite language may
+enumerate q, a, rho and p, then construct G, the full covariance (6.1),
+the exact increment (6.4), and a proof DAG using (5.2),(6.2),(6.5)-(6.6).
+The head, inverse gaps, larger-than-critical costs, all smaller arguments,
+and every residual covariance are mechanically determined. No nominated
+solution or fitted constant is needed for these algebraic construction rules.
+
+Candidate ACTUAL-SOURCE lemma for this core, stated with all quantifiers:
+  choose admitted (q=2,a), rho in [0,1] and a fixed p>=0;
+  prove a finite K independent of j such that for EVERY j>=0,
+  E_G(2^(j+1))+2a*C(2^(j+1))-(rho+a^2/2)*E(2^j)
+                                     <=K*(1+j*log2)^p.     (7.1)
+Together with the exact head this would imply the complete core bound by
+(6.5) or (6.6), hence original recovery. The covariance has lower arguments
+floor(n/2), all centers and valuations remain, and no companion RH bound
+is assumed. This is a candidate inequality, not a proved lemma. Its apparent
+prime signs do not prove it; the coercivity attempts in sections2-3 fail.
+
+The log-bank candidate (4.3) can likewise be constructed automatically
+from the source Euler factors and exact c, without hardcoding a bound.
+The algebraic backend may certify ONLY its conditional absorption (4.4).
+Source-specific proof gates must separately justify the uniform covariance
+input, or reduce it to narrower independently paid pairings. Centered
+channel completions must include the deterministic forcing identified in
+(2.2); raw uncentered squares are rejected, not advertised as stable modes.
+
+Finite numerical checks can reject candidate inequalities or prioritize
+proof attempts. They cannot discharge the universal j/H premise, and a
+PROVED recovery label cannot be propagated into a PROVED source-bound
+label. Equivalent operator presentations and equivalent subpower drift
+encodings must be grouped; a proved fixed polylog drift or genuinely paid
+signed covariance would constitute new progress. No such closure is made
+in this memo.
+
+8. Composable positive auxiliary storage: coarse proof and pole gates
+---------------------------------------------------------------------
+The proposed automatic grammar has
+  A(X)=E_G(X)+w*E_H(X), w>=0,
+  H(n)=n^(-alpha)*sum_i v_i[A_i(n)-b*A_i(floor(n/2))],
+with alpha>=0, 0<=b<=2 and a delay |a|<=2, or the log-Abel target.
+All signed crosses INSIDE G and H remain. E_H is nonnegative; dropping
+it from A is a valid recovery inequality, not a signed cancellation.
+
+Here is an unconditional coarse certificate that needs no core solution.
+The exact local bounds |nu0(n)|<=d2(n), |nu_i(n)|<=1 for i=1,2,3 imply
+  |f(n)|<=K*d2(n), K=3beta+ceil(R_u),
+  |F(n)|<=K*n*(1+log n),
+since sum_(j<=n)d2(j)<=n*(1+log n). Thus
+  |G(n)|<=Ct*n*(1+log n), Ct=2K for a delay.
+For the log-Abel choice put
+  P_F(n)=F(n), n<64;
+  P_F(n)=sum_(j<=n)f(j)log j/log n, n>=64.
+Then |P_F(n)|<=K*n*(1+log n), so Ct=K. This target remains recoverable:
+on real x>=64, P_F=F-(1/log x)*integral_1^x F(y)dy/y, with staircase
+coefficients and the complete fixed head. The tail memory operator has
+norm <=1/(sigma*log64)<1 for sigma>1/2; the finite head is paid as in
+section4. For the saved integer convention, its constant-cell extension
+differs from the continuous Z(x)/log x by at most 2K for x>=64: bound
+|Z(n)|<=K*n*(1+log n)*log n and use
+|1/log n-1/log x|<=1/(n*(log n)^2) on [n,n+1).
+That bounded error has finite critical tail norm and is explicitly paid.
+Below64 the target is exactly F. Thus cofinal target recovery
+is a proved generic conditional rule, not a claim that P_F is bounded.
+
+With Ch=2*||v||_1, the same elementary estimates give
+  |H(n)|<=Ch*n*(1+log n).
+For n in [2X,4X-1], 1+log n<=2*(1+log(2X)). There are 2X terms.
+Consequently, for EVERY dyadic X>=1,
+  A(2X)<=32*(Ct^2+w*Ch^2)*X*(1+log(2X))^2.                (8.1)
+The proposed reference constant72 is therefore valid with margin. Since
+A(X)>=0, (8.1) certifies a recurrence with any rho>=0, gamma=1, k=2.
+This is a coarse positive-power reference, not an RH-strength estimate.
+
+Any proved recurrence
+  A(2X)<=rho*A(X)+C*X^gamma*(1+log(2X))^k,
+0<=rho<=1, gamma>=0, k>=0, can be telescoped exactly. Gamma=0 gives a
+fixed polylog bound by section6 and hence cofinal core recovery. Gamma>0
+gives O(X^gamma*(1+log X)^k), including its explicit geometric constant;
+it does NOT imply an all-epsilon bound. Training an upward-rounded C and
+checking finitely many blocks does not certify the universal premise.
+
+There is an exact pole rejection rule for auxiliary storage with w>0.
+Let B_v(s)=sum_i v_i times the Dirichlet series of nu_i, so its pole at
+kappa has residue kappa*(v dot m). For the continuous zero-below-one
+version of H the Mellin identity, initially in an absolutely convergent
+right half-plane, is
+  integral_1^infinity x^(-alpha)*[v dot A(x)-b*v dot A(x/2)]
+                         *x^(-s-1)dx
+     =[1-b*2^(-(s+alpha))]*B_v(s+alpha)/(s+alpha).           (8.2)
+If v dot m!=0 and b!=2^kappa, it has a genuine pole at s=kappa-alpha.
+The integer staircase convention introduces no extra floor cancellation:
+A(x) and A(x/2) are constant on each integer unit cell. Replacing x^-alpha
+there by floor(x)^-alpha changes H by O(x^-alpha*(1+log x)), using the
+coarse prefix bound, so its Mellin error is analytic for Re(s)>-alpha.
+This cannot cancel the pole in (8.2). No asymptotic for A_i is presumed.
+
+Hence alpha<1/6, v dot m!=0, b!=2^(2/3), w>0 rejects a cofinal bound
+for A: its nonnegative H square has an uncanceled supercritical pole.
+More precisely a recurrence forcing O(X^gamma polylog X) is impossible
+if gamma<1/3-2alpha, by Mellin/Cauchy holomorphy to the right of
+(1+gamma)/2. If gamma meets or exceeds this threshold, that pole alone
+does not reject the positive-power recurrence. Equality alpha=1/6 is a
+critical boundary and is NOT rejected by this test. Neither a zero pole
+coefficient nor exact b=2^kappa establishes a bound: other arithmetic
+forcing and recovery obligations remain. If w=0 the unused auxiliary
+cannot obstruct A and should not trigger this gate.
+
+These are reusable theorem/certificate rules on generated expressions.
+They justify reference bounds, recovery and rejection; none supplies the
+missing stronger actual-source inequality or independent negative credit.
+
+Final status
+------------
+Proved: exact core log recurrence and finite head; indefinite target
+polarization and pole-bearing square obstruction; scoped absence of
+generic prime-log sign coercivity; precise conditional log-covariance
+absorption; delayed-filter recovery including boundary costs; exact dyadic
+covariance and increment identities; and conditional gap/drift inductions.
+Open: every actual-source closing inequality, complete cofinal target and
+RH. Only this new prose memo was written; no numerical or development
+invocation occurred.

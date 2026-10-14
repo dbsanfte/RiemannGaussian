@@ -1,0 +1,37 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_coupled_scale_bounds"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_coupled_scale_bounds operations=9344 elapsed_seconds=0.08224144804989919\n",
+      "stderr": "test_candidate_canonical_rational_sign_and_schema_guards (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_coefficient_forcing_polynomial_witnesses_and_integer_divisor_gap (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_complete_defect_symbolic_polynomial_identity_on_free_variables (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_complete_signed_defect_has_both_children_all_crosses_and_scale_powers (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_context_and_complete_original_source_are_mandatory (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_divisor_below_one_retains_original_head (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_fractional_257_and_every_other_state_gate (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_generic_countermodel_retains_nonzero_units_and_scaled_signed_helpers (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_generic_norm_rule_countermodel_is_exact_and_scope_limited (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_open_premises_never_become_paid_and_cycles_are_rejected (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_paid_boundary_helper_and_unit_cancellation (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_positive_forcing_conditional_logs_constants_and_original_F_covering (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_publication_cannot_promote_generic_failure_or_conditional_core_to_proof (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_publication_mutations_cannot_drop_cross_cutoff_or_original_F (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_zero_forcing_is_stronger_but_still_conditional (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.082s\n\nOK\n",
+      "operations": 9344,
+      "elapsed_seconds": 0.180910219962243,
+      "tests": 15,
+      "peak_rss_KiB": 29164,
+      "operation_marker_present": true,
+      "resource_limits": {
+        "operations": 50000000,
+        "CPU_seconds": 180,
+        "wall_seconds": 200,
+        "address_space_bytes": 536870912
+      }
+    }
+  ],
+  "source_observations": 0,
+  "old_suites_rerun": 0,
+  "old_searches_rerun": 0,
+  "operations": 9344,
+  "distinct_tests": 15,
+  "test_invocations": 15,
+  "edits_stopped": true,
+  "scope": "exact synthetic helper programs and generic countermodels; one allowed frozen035 symbolic source-law replay, no coefficient archive or arithmetic observations"
+}

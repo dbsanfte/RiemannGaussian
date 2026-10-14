@@ -1,0 +1,25 @@
+{
+  "schema": "prime-scale-values-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 7,
+      "operations": 9326657,
+      "elapsed_seconds": 0.21326604700880125,
+      "stdout": "SYNTHETIC_WORK operations=9326657\n",
+      "stderr": "test_all_source_prefixes_and_mobius_mutations (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_extension_reuses_independently_verified_atoms_and_IPC_flags (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_independent_mobius_recurrence_known_values (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_joint_signed_filter_contained_in_separate_A_enclosure (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_own_immutable_source_and_resource_caps (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_source_request_and_domain_swaps (test_check_prime_scale_values_053.ValueTests) ... ok\ntest_wrong_producer_interval_and_non_annihilating_word (test_check_prime_scale_values_053.ValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.008s\n\nOK\n"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "operations": 2571958,
+      "elapsed_seconds": 0.12026100599905476,
+      "stdout": "SYNTHETIC_WORK operations=2571958\n",
+      "stderr": "test_independent_target_scope_and_exact_comparison (test_check_prime_scale_values_053.ValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "distinct_tests": 8,
+  "new_test_reason": "Added independent256-bit comparison of the actual conjectured bound, with source binding; ran only the new test."
+}

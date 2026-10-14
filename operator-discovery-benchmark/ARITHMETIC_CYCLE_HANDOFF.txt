@@ -1,0 +1,146 @@
+ARITHMETIC CERTIFICATE SYNTHESIS AND FAILURE-GUIDED LANGUAGE EXPANSION
+
+Goal status: ACTIVE. This turn made verified progress in the proof language and
+automatic expansion mechanism. No complete all-scale signed arithmetic bound,
+uniform winning operator, or RH proof exists. There is no external blocker.
+
+The immediately preceding prime-pair run is published independently at
+prime-pair-forcing-results/pilot-001 and PRIME_PAIR_FORCING_HANDOFF.txt. Preserve
+its eighteen frozen files and all earlier successful experiment bindings.
+
+1. New finite certificate language and independent implementation.
+
+arithmetic_cycle_language.py represents rational sparse polynomials in actual
+coefficient variables x_n, for targets mu and c=mu*lambda. Its only arithmetic
+relations are unit normalization, coprime products, actual prime-power local
+values, nonsquarefree zeros for mu, and complete divisor inverse rows for mu.
+Unknown relation schemas, false primes/coprimality, absent product indices,
+negative square weights and altered polynomial terms are rejected.
+
+A certificate has exact form
+ D-Delta_X = sum_j w_j P_j(x)^2 + sum_i Q_i(x)*rho_i(x), w_j>=0.
+Every rho is a proved actual relation. Delta_X is the FULL original defect
+A_f(2X)-4A_f(X), A_f(X)=sum_(X<=n<2X)(sum_(m<=n)f(m))^2, through N=4X-1.
+Finite positivity follows by evaluating the coefficient identity on actual f.
+The independent checker reconstructs Delta via direct prefix-square expansion;
+the producer uses the signed max kernel. Every original pair remains present.
+
+The language permits arbitrary finite rational polynomial multipliers, including
+nonlinear ones. Its complete ordered coprime-cycle production charges product
+horizon N^2. The pilot uses only coprime relations ab<=N, a declared subset;
+omitting relations does not omit any original target terms. Resources have
+explicit finite caps, distinct from invalid mathematics and global semantic laws.
+
+arithmetic_cycle_synthesis.py matches polynomial coefficients using a floating LP
+only to propose support. Exact rational elimination, nonnegative reconstructed
+weights, exact full matching, and independent certificate checking are mandatory.
+An unsuccessful solver is not an infeasibility proof. Time/resource failures are
+missing. No actual coefficient response table is fed to the synthesis algorithm.
+The supplied arithmetic relations nevertheless logically encode actual arithmetic;
+this is not discovery without assumptions or new independent prime information.
+
+2. Frozen pilot and what actually succeeded.
+
+Run: arithmetic-cycle-results/pilot-001. Seventeen source/proof/test files were
+frozen before scores; all33 tests passed. The independent run checker reconstructed
+the whole template generator, archive aliases, exact LP columns, certificates,
+actual arithmetic diagnostics, final-case derivation, seals and counterfeit data.
+independent_verification.json reports all_passed. No LP byte replay is asserted.
+
+Development scales1,2; final scales4,7. Final7 derives from a deterministic hash
+of development CASES AND TEMPLATES, excluding outcomes, elapsed time and solver
+diagnostics. Final cases resynthesize their weights: this is finite feasibility
+on new instances, NOT transfer of learned coefficients or an all-scale operator.
+Each target mu/c uses q2,6, C1,4 and two modes, with
+ D=C X^2 ceil(X^(1/q)) computed exactly.
+
+Atomic_local assigns free coefficients to local relation multipliers. It is a
+finite calibration that can encode the arithmetic vector. Grouped_cycles shares
+relation weights across declared kinds and index/kernel weight families, but
+still has per-index square weights. Neither is a uniform symbolic proof ansatz.
+
+There are64 attempts,20 distinct finite inequalities and40 inequality/mode
+instances. Exact synthesis found8 certificates,56 no-certificate outcomes,0
+missing. ALL8 successes are mu atX1, including duplicate finite bounds acrossq.
+The verifier independently evaluated actual arithmetic AFTER synthesis:
+8 certified true attempts;48 true bounds with no certificate;8 false stored
+bounds (all c atX1, whereDelta=6 andD=1 or4). All32 final attempts were true
+finite inequalities without certificates. These are finite diagnostics, not
+claims about existential constants, cofinal exponents or RH.
+
+The supplied coprime-cycle positivity calibration was recovered automatically
+within the generic dictionary, as
+ x2*x3*x6=(x2*x3)^2-(x2*x3)*(x2*x3-x6).
+The solver did not receive the decomposition, but did receive its target and
+allowed relations. This is calibration, not a new cancellation theorem.
+
+The squarefree counterfeit f_P forP={2} passes complete tested coprime cycles,
+norm/support and selected inverse rows, while mismatching signs at other primes.
+The independently reviewed all-scale positive-mean countermodel proof remains
+separate from its finite implementation checks.
+
+3. Exact failure diagnosis and automatic grammar enlargement.
+
+Posthoc sealed probe: arithmetic-cycle-results/separation-probe-001.
+At actualmu,X2,D8, Delta=6, so the finite bound is true. For each original mode
+the probe found an EXACT rational linear functional y on the entire declared
+monomial space with y(P_j^2)>=0, y(Q_i*rho_i)=0 and y(D-Delta)<0. Values on the
+lhs are -5/2 (atomic) and-10 (grouped). Therefore these PARTICULAR finite cones
+cannot prove the bound. This is stronger than a floating solver failure and is
+not an arithmetic counterexample.
+
+The algorithm enumerates679 possible extensions per step: declared relations
+times every degree1/degree2 monomial, plus sparse signed variable squares with
+one to three terms. All attempts, exact scores, unsupported monomials and ranks
+are retained. Unsupported dual coordinates are MISSING, never silently zero.
+It selects the first violated column by degree, term count, index sum and
+canonical payload. Both initial cones select x1 times the relation x4=0.
+That invalidates the old separator, but one addition still found no certificate.
+
+Sealed adaptive continuation: arithmetic-cycle-results/adaptive-probe-001.
+A fixed budget of16 promotions was declared BEFORE execution. At each step:
+find and exactly check a separator; enumerate the same candidate family; select
+by the frozen ordering; add the selected column; resynthesize; check any proof.
+Every transition and the complete679-candidate archive are retained each time.
+
+The atomic starting cone reached an exact certificate after7 additions. The
+grouped starting cone reached one after16 additions. All selected additions in
+these trajectories are individual relation multipliers; no new square was needed.
+Adding atomic columns to the grouped starting cone relaxes its original grouping
+restriction. Its eventual success is NOT a purely grouped-template success.
+
+Independent trajectory audit verified every dual domain and rational inequality,
+all candidate expansions/ranks, the contiguous template hashes, the exact final
+LP coefficients and both complete target certificates. Both prove ONLY
+ Delta_mu(2)<=8 (the actual value is6).
+The new capability is automatic repair of an inadequate finite proof language.
+It does not yet generalize the result to new scales or discover a uniform bound.
+These probes are explicitly development-conditioned; do not reclassify them as
+fresh evaluation of the original frozen pilot or change that pilot's failures.
+
+4. Next mathematical step, without substituting a finite goal for RH.
+
+arithmetic_cycle_uniform_extension_design.txt proposes factor-certified norm and
+gcd relations, and JOINTLY grouped square AND relation templates. For actualmu,
+x_n^2=1_(n squarefree); for actualc,x_n^2=4^omega(n). These are unconditional
+size relations with complete factorization/source charges, not signed estimates.
+The positive-mean countermodels retain such norm information, so these axioms
+alone do not solve cancellation. The note also gives correct target-specific gcd
+factors and warns against transferring the mu squarefree mask to actualc.
+
+The counterfeit obstruction proves that the listed partial premises for a FIXED
+finite normalized prime set are insufficient. It does NOT prove that every
+individual prime sign must be explicitly constrained in any successful proof.
+Complete normalization or complete inverse rows are sufficient specifications;
+other uniformly justified arithmetic information may also exclude countermodels.
+
+Use the verified adaptive mechanism to nominate reusable arithmetic motifs, then
+search shared square/relation coefficient formulas over complete arithmetic
+regions. A useful final proof needs a symbolic lattice identity or induction,
+not independently fitted weights at every finite scale. Include all boundary,
+unit, changing-domain and product-horizon charges. The missing target remains:
+for every integerq beyond someq0, finiteCq independent of dyadicX, a proved
+complete certificate for Delta_f(X)<=Cq X^2 ceil(X^(1/q)) at EVERY dyadicX>=1.
+Only that uniform premise would feed the original-energy/Mellin ordinary-zeta
+bridge. No component bound, exact finite identity, or repaired finite cone is a
+replacement for it. Keep the full objective active.

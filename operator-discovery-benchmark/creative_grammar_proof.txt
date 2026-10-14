@@ -1,0 +1,273 @@
+CREATIVE GRAMMAR: REPRESENTATIONS, DEFECTS, AND NONASSOCIATIVE PHASES
+7 October 2026. Universal mathematical controls and finite discovery leads.
+No verified historical novelty, new prime-distribution estimate, or RH proof.
+
+1. REPRESENTATIONS ARE NOW SEARCH VARIABLES
+
+creative_grammar.py extends the rational Dirichlet grammar with typed
+arithmetic sequences, residue vectors, residue maps and scalar values.
+An explicit complete coefficient prefix may be embedded into F_p by
+
+ E_(p,N)(a)(r)=sum_(1<=n<=N, n=r mod p) a(n).
+
+The cutoff is mandatory. Missing coefficients cannot be supplied as zeros.
+Residue operations declare a prime p. They include unitary Fourier F,
+F^*, residue inversion, the nonzero support projection, conjugation,
+translation, additive phases, and quadratic/cubic/quartic phases.
+Composition, sums, differences, adjoints, pointwise powers and weighted
+cyclic products allow changes of representation and higher-degree laws.
+Complex-linear and anti-linear maps are tracked separately. Their sum and
+complex Hilbert adjoint are only accepted when the declared types permit.
+
+For f in C^(F_p), use
+ (Ff)(a)=p^(-1/2)sum_x exp(-2*pi*i*a*x/p)f(x).
+Finite character orthogonality proves F^*F=FF^*=I, and F^2 is residue
+reversal, so F^4=I. Let I_inv f(x)=f(x^-1) on units, fixing the index 0.
+Then I_inv^2=I and I_inv is a self-adjoint permutation. P kills coordinate
+0 and retains every nonzero coordinate. Thus P^*=P, P^2=P, and PI_inv=I_inv P.
+
+All phase multipliers have modulus one; translations are permutations.
+Diagonal multipliers commute. Conjugation C obeys C^2=I and CF=F^*C.
+It commutes with the real permutation and mask maps. These identities
+justify every rewrite in word_normal_form. The rewriting system is
+incomplete: numerical coincidences without a rewrite remain unproved.
+
+The source enumerates all words of length at most four in ten primitives,
+including the empty word: 1+10+100+1000+10000=11,111 programs. Training
+evaluates every basis vector for p=7,13. Aliases not covered by the proof
+rules receive two generic complex-vector probes at each fresh prime.
+Those probes are empirical validation, not universal proof certificates.
+
+2. AN INVERSION/FOURIER OPERATOR WITH A PROJECTION SQUARE
+
+The search includes K=F^* I_inv P F. Its kernel is
+
+ K(a,b)=p^(-1)sum_(x!=0)exp(2*pi*i*(a*x-b*x^-1)/p).
+
+These are normalized classical Kloosterman sums. This is a recovered
+Fourier/permutation construction, not a claim of historical originality.
+The operator square is recovered numerically as a projection, then proved
+for EVERY prime by the generic identities in section 1:
+
+ K^*=K,
+ K^2=F^*I_inv P I_inv P F=F^*P F=Q,
+ Q=I-J/p,
+ K^3=K.
+
+J is the matrix all of whose entries are 1. The identity F^*(I-P)F=J/p
+follows because F^*e_0 is the normalized constant vector. Thus K has
+kernel the constant vectors, rank p-1, and exact l2 operator norm 1.
+The latter follows from ||Kf||^2=<f,Qf>, with equality on a nonzero
+vector perpendicular to constants. The proof includes p=2,3,5.
+
+For the finite zeta-inverse coefficient embedding v=E_(p,N)(mu),
+
+ ||Kv||_2^2=sum_r |v(r)|^2-|sum_r v(r)|^2/p.                 (1)
+
+Every integer in the source prefix comes from inversion of u(n)=1 by
+the divisor recurrence, not from an input prime indicator. The full
+unwindowed series sum mu(n)n^-s=1/zeta(s) initially holds on Re(s)>1.
+Embedding and projection have nonzero kernels. Equation (1) supplies no
+ordinary-zeta zero-preservation theorem and no new arithmetic cancellation
+bound as N or p tends to infinity. These missing bridges remain gates.
+
+3. DEFECTS CAN BE MORE INFORMATIVE THAN ANOTHER PRODUCT
+
+For two maps A,B the grammar can generate [A,B]=AB-BA and its Gram
+operator [A,B]^*[A,B]. Positivity of that Gram operator is automatic;
+it is not ranked as a new arithmetic positivity theorem.
+
+The calibration [F,P] has rank exactly two for every prime, since
+
+ [F,P]=(e_0 1^T-1 e_0^T)/sqrt(p)
+
+and e_0 and 1 are independent. This also gives its exact norm
+sqrt(1-1/p). It illustrates a support defect with a universal law.
+
+A less trivial discovery is [F,I_inv]. The observed rank is p-3
+at all sampled odd primes, across several residue classes. First, the
+uniform upper bound is elementary. Inversion fixes 0,1,-1 and pairs all
+other residues, so its +1 and -1 eigenspaces have dimensions (p+3)/2
+and (p-3)/2. Relative to these eigenspaces, the commutator has zero
+diagonal blocks and two off-diagonal blocks of rank at most (p-3)/2.
+Therefore rank[F,I_inv]<=p-3 for every odd prime p.
+
+The sampled equality can also be proved. Row and column 0 vanish.
+For a,b!=0 its entries are p^-1/2[e_p(-a/b)-e_p(-b/a)], a convolution
+kernel on the multiplicative group F_p^*. Its character eigenvectors
+are chi(a), with eigenvalues
+
+ lambda_chi=p^-1/2 sum_(x!=0)e_p(-x)[conjugate(chi(x))-chi(x)].
+
+The trivial and quadratic characters give zero. No other character does.
+Indeed the bracket coefficients lie in K=Q(zeta_(p-1)). Since p and p-1
+are coprime, the compositum K(zeta_p)=Q(zeta_(p*(p-1))) has degree p-1
+over K, by the standard cyclotomic degree formula. Thus the minimal
+polynomial of zeta_p over K is Phi_p=1+X+...+X^(p-1). A polynomial with
+the displayed coefficients, zero constant term, and degree at most p-1
+can vanish there only if every coefficient is zero. That would require
+chi=conjugate(chi), so chi has order one or two. These are the two
+already identified characters. Therefore rank[F,I_inv]=p-3 for EVERY
+odd prime, including p=3. Native Gauss eigenvalues independently confirm
+the spectral formula and nonvanishing at the sampled primes.
+
+This uses classical character and cyclotomic algebra. Historical priority
+for the exact stated rank application is unresolved, so it is not called
+a historically new operator. A useful uniform bound for the nonzero
+singular values and a consequence for ordinary zeta or prime distribution
+remain unproved. Algebraic nonvanishing alone supplies no scale-uniform
+lower bound.
+
+4. NONASSOCIATIVE OPERATIONS WITH EXACT HIGHER LAWS
+
+The grammar no longer requires every candidate to be an associative
+binary product. For prime p and integers a,b>=1, let
+
+ w_(a,b)(x,y)=exp(2*pi*i*x^a*y^b/p),
+ (f star g)(r)=sum_(x+y=r mod p)w_(a,b)(x,y)f(x)g(y).
+
+On a basis triple x,y,z, the ratio of the two nonzero bracketing
+coefficients is exp(2*pi*i*A_(a,b)(x,y,z)/p), where
+
+ A_(a,b)=x^a*y^b+(x+y)^a*z^b-y^a*z^b-x^a*(y+z)^b.          (2)
+
+An exact polynomial expansion certifies this for all integer x,y,z and
+every prime. Characteristic-dependent cancellations are retained: a
+coefficient may vanish modulo one prime without vanishing universally.
+For (a,b)=(1,2), (2) reduces to -2xyz. This sparse associator is a
+proved higher law despite failure of ordinary associativity at odd primes.
+It is a phase-twisted graded algebra construction, not verified novelty.
+
+There is also an ALL-INTEGER Dirichlet lift. Let Omega(i) be total prime
+multiplicity, and define
+
+ (f diamond g)(n)=sum_(ij=n)
+       exp(2*pi*i*Omega(i)*Omega(j)^2/p)f(i)g(j).
+
+Since Omega(ij)=Omega(i)+Omega(j), homogeneous basis triples have
+associator exp(-4*pi*i*Omega(i)*Omega(j)*Omega(k)/p). The unit is delta_1.
+The law applies to homogeneous components; it is not one scalar
+associator for arbitrary inhomogeneous arrays. This distinction matters.
+For the zeta coefficient input, |(u diamond u)(n)|<=d_2(n), so its
+ordinary Dirichlet series converges absolutely on Re(s)>1.
+No critical-strip continuation, ordinary-root law, or prime-distribution
+estimate is inferred from that initial convergence statement.
+
+5. CONNECTION TO THE QRH MANUSCRIPTS
+
+Pinned upstream commit: adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+The external benchmark recovers a Gauss-sum conversion on split prime
+ideals with norms 7,13 in training and 19,31,37,43,61 held out.
+Writing g_j for the unnormalized sums, it finds
+
+ -g_-1(pi)g_3(pi)conjugate(chi_pi(4))
+             =chi_pi(-1)conjugate(pi)g_2(pi).
+
+The source TeX in the alternate proof, equations (4.2)-(4.3), retains
+both conjugates. Text extraction from the PDF can lose these overbars.
+There are 432 candidate scalar conversions and exactly one survivor.
+Exact cyclotomic arithmetic and independent native complex balls agree
+on that conversion and 816 finite Fourier covariance identities.
+The executable scalar AST uses the equivalent normalized identity
+gamma_-1 gamma_3=-chi(-1)chi(4)conjugate(alpha)gamma_2,
+where alpha=pi/sqrt(N(pi)). Nonunit character values remain zero.
+
+Cube completion/inversion and the 7/8 proof's prime mark-minus-rescale
+operation are additional exact grammar calibrations. Their tests isolate
+the universal divisor, mask, scale and local rational algebra; integer
+proxy coefficient tables are not full theta probes. Source locations:
+alternate proof section 2, Appendix A; main proof sections 12 and 16.
+
+For completeness, cube inversion is a universal divisor identity.
+If w is completely multiplicative and T(X)=sum_b w(b)/N(b) P(X/N(b)^3),
+the proposed inverse has combined coefficient at b*d=k equal to
+w(k)/N(k) times sum_(d|k)mu(d). This is 1 at k=1 and 0 elsewhere.
+Both composition orders give the identity when these sums are finite,
+or in an absolute convergence region that permits rearrangement.
+Finite tests do not establish preservation of a critical-scale norm.
+
+At a fixed prime slot, write M_p for the WHOLE-index mask p|c*n^3,
+S_p for Z->ZQ_p, and R_p for (X,Y)->(X/Q_p,Y/Q_p).
+The operation is conjugate(eta(p))*M_p S_p-Q_p^(-3/2) R_p.
+For distinct fixed slots these masks and coordinate rescalings commute.
+Expanding their product therefore gives exactly the 2^K subset formula.
+Slot windows remain attached to their original scale; the finite algebra
+does not authorize moving them after each recursive rescaling. Marking
+only c fails at c=1,n=2,p=2; marking only n fails at c=2,n=1,p=2.
+
+The local rational control is explicitly a PRINCIPAL-ROW model W=Q^-w.
+Set P=Pstar+1/(1-V)+W/(1-W) and
+G=[(A-W)(1-V)(1-W)Pstar-W(1-VW)]/(1-D).
+Since (1-V)(1-W)(P-Pstar)=1-VW, direct multiplication gives
+A*Pstar-W*P=(1-D)G/[(1-V)(1-W)]. It involves no division by P,
+so it remains an algebraic identity when P=0, wherever the displayed
+denominators are nonzero. The full proof has further character and
+Euler-region structure; no global holomorphy bound is inferred here.
+An independent symbolic audit certifies this rational identity, and
+fresh exact tables change cube cutoff, prime slots and scalar weights.
+
+The original QRH contribution is described by the papers as compatible
+theta/Poisson comparisons, controlled local compensation, and uniform
+moment/scale estimates. The cited elementary Gauss identities and
+Mobius inversion already have prior art. A detector that rediscovers
+them has not independently established the new global estimates.
+The cubic-theta reflection and all-scale Hecke-family bounds are still
+unimplemented in this detector. No full QRH proof was checked locally.
+
+Primary sources:
+https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex
+https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex
+https://github.com/openai/math/blob/main/lean/docs/003.md
+
+5A. SYNTHESIZING A KERNEL FROM UNKNOWN COEFFICIENTS
+
+Instead of supplying a named product, parameterize
+P(x,y)=sum_(i,j>=1,i+j<=5)c_(i,j)x^i y^j with TEN unknown coefficients.
+The source fits associativity from 27 grade triples by rational linear
+algebra and finds a four-dimensional kernel. Its primitive basis is
+
+ xy,
+ xy^2+x^2y,
+ 2xy^3+3x^2y^2+2x^3y,
+ xy^4+2x^2y^3+2x^3y^2+x^4y.
+
+Each has identically zero polynomial associator in (2), so the finite
+fit is lifted to a universal law by symbolic verification. An independent
+symbolic constraint matrix has nullity four. The fit is exhaustive only
+within this declared degree-five polynomial space. These are recovered
+polynomial cocycles, not a novelty claim. Learned coefficient vectors
+can be executed directly by the learned_phase_product production.
+Over Q these four polynomials are respectively one-half delta(x^2),
+one-third delta(x^3), one-half delta(x^4), and one-fifth delta(x^5),
+where delta(h)=h(x+y)-h(x)-h(y). Thus they reduce to known scalar-potential
+differences. The integer polynomial certificates cover small primes
+without dividing by 2,3,5 in their residue fields.
+
+Training the functional equations only in characteristic three instead
+has nullity eight. Six basis representatives fail at a fresh prime seven,
+including x*y^3. Counterexample grades are stored. The search therefore
+retains characteristic-specific laws without mistaking them for laws over
+all integer indices or all prime fields. Search vocabulary and feature
+degree still introduce biases; empirical discovery does not remove them.
+
+6. HOW THE SEARCH PRIORITIZES CREATIVE RESULTS
+
+Operators and representations are generated before choosing one favored
+target identity. Defects, anti-linear maps, nonlinear phase products,
+singular masks and compositions are allowed with their actual domains.
+Missing inverse or associativity laws do not automatically discard them;
+the candidate must instead supply its true projection, module, defect,
+graded, norm, or support law.
+
+Acceptance remains separate from discovery. Required gates are universal
+mathematical law, analytic domain, ordinary-zeta root/zero bridge, actual
+prime observable across scales, information gain and historical priority.
+Generic transport and automatic Gram positivity receive a penalty.
+Finite coincidences, sampled ranks and new AST spellings cannot populate
+the verified-historically-new list. The next primary target is a bound or
+cancellation law for arithmetic families, with uniformly controlled scale
+loss, leading to new information about actual primes or ordinary zeta.
+The global_moment_grammar.py extension now searches mixed energy transfer
+coefficients and positive functionals, with uniform induction, support and
+forcing-cost certificates. Its unrelated calibration families and exact
+scope are documented in global_moment_proof.txt.

@@ -1,0 +1,148 @@
+DETECTOR-GENERATED PRIME ORBIT CONTROLS: FINITE SEARCH COMPLETE, BOUND OPEN
+
+Authoritative executable search
+Input: candidate10_cutoff_work_obligation.json
+Producer: core_cutoff_prime_orbits.py
+Independent checker: check_core_cutoff_prime_orbits.py
+Runner: run_core_cutoff_prime_orbits.py
+Frozen study: core-cutoff-prime-orbit-results/pilot-001
+Published next input: candidate10_cutoff_prime_orbit_obligation.json
+Status: FINITE_CUTOFF_PRIME_ORBITS_VERIFIED_WITH_OPEN_SIGNED_CORE
+Study completed successfully. Do not restart it or change its frozen files.
+No hash was created. Snapshots and publication bindings use direct bytes.
+
+What the detector did itself
+It accepted the exact unresolved joined work from the prior bound-composition
+stage, enumerated 18 prime/cofactor partition programs, measured all 72
+program/block discovery cases, rejected structurally degenerate programs,
+selected two programs by the declared rule, and extended each independent
+numerical state once to an evaluation block. There were no model calls in
+generation, numerical evaluation, scoring, selection, or feedback construction.
+It emitted precise continuous all-scale obligations for the selected controls.
+
+What remains supplied by researchers
+The grammar primitives and proof rules are supplied by us. The Sol 6.1 checker
+was independently implemented; analytical reviewers assess reductions and
+remaining lemmas. Review025 supplies prime-orbit identities and their scope.
+The numerical search did not invent a proof of a signed arithmetic estimate.
+CORE_CUTOFF_PRIME_ORBIT_CANDIDATE_REVIEW_026.txt is the completed separate
+post-study analytical review, independently read by root. It is not part of
+the frozen numerical search and is not a reason to reselect its output.
+
+Target and exact scope
+Current optional source component: centered_A2_E3, scalar 18, sigma 9/20,
+theta 2/3, head-corrected P_U=A_U^2 E_U^3-c_U^3 D_U. The exact update supplies
+R_q=mu(q)W1(q)+mu(q)^2 W2(q), using the complete old-height integral. Prior
+rules pay W0/head feedback and child height shells. The still-open estimate
+is sum_(q=2..V) R_q <=C V^(12/5) for every integer V, uniformly in all scales.
+The full signed core remains priority 0; this auxiliary component alone does
+not prove RH. All 144 original source/recovery bindings remain unchanged.
+
+Generated candidate target
+For primes P_B chosen by a program, partition squarefree q in (B,2B] by its
+P_B-free cofactor r. With
+rho_q(t)=1_(|t|<H(q-1))*|zeta(s+1/3)/s|^2
+         *[mu(q)W1(q,s)+mu(q)^2 W2(q,s)],
+seek
+sup_(B<V<=2B) integral_R sum_r |sum_(B<q<=V,cofactor(q)=r) rho_q(t)| dt/(2pi)
+ <= C B^(12/5),
+every dyadic B and every integer partial cutoff V, one scale-independent C.
+This is a STRONGER sufficient target, not a proved or easier equivalent bound.
+Every truncated face, prime singleton, zero-Mobius event, head update, unit,
+old-state dependence, even/odd cross and recovery is retained. No ordinary
+moment convergence is inferred from analytic residue centering.
+
+Observed results, with selection limitation
+The seven heights were 0,1/2,1,2,4,8,16. These form a finite weighted discrete
+functional, NOT quadrature or an enclosure of the full continuous integral.
+Actual Mobius inputs had previously been observed; no fresh arithmetic holdout
+is claimed. The new quantities are the complete sampled cutoff work.
+
+All 18 programs had minimum integer cancellation_bits=0 over B=64,128,256,512.
+Five programs were rejected as degenerate: ids 0,1,2,3,8. The 13 remaining
+programs TIED at the declared coarse score; enumeration selected ids 4 and 9.
+These selections are not evidence that ids 4/9 are numerically strongest.
+No candidate achieved a factor-of-two gain simultaneously on all four blocks.
+
+Extension block B=1024 (q=1025..2048), selected programs only:
+ id 4: primes<=B^(1/3), here {2,3,5,7}; peak grouped cost 311.9080907840,
+      baseline 315.9309616034, reduction 1.2733%; 454 groups, 329 singletons.
+ id 9: primes in(B^(1/6),B^(1/2)], here {5,7,11,13,17,19,23,29,31};
+      peak 303.4758762910, same baseline, reduction 3.9423%; 440 groups,
+      352 singletons.
+Both had 403 zero-Mobius events and no factor-of-two cancellation threshold.
+The sampled joined signed total was 3.12902254346, comprising odd total
+-77.15833330775 and even total 80.28735585120. These finite totals do not prove
+an exponent, recurrence, continuous integral bound, or uniform arithmetic law.
+
+Preserved discovery diagnostic (not an evaluation reselection): id 7, all
+primes<=B, had peak/baseline ratios .52944,.72068,.40586,.41342 on the four
+discovery blocks. The integer minimum score discarded this distinction.
+A later study should preserve meaningful finite ranking information without
+making a better numerical constant its main proof objective. Do not rerun
+or retrospectively change the frozen selection to favor id 7.
+
+Structural lessons and next search direction
+Single-prime programs are universally singleton partitions in a strict dyadic
+block. Distinct block members cannot divide each other: a larger integer
+multiple would exceed 2B. Surviving multi-prime groups involve incomparable
+prime products; equal-number prime exchanges preserve the Mobius sign.
+Common cofactor alone therefore does not guarantee opposite arithmetic signs.
+For id 7 every squarefree composite is in cofactor 1; primes in(B,2B] remain
+singletons. Its absolute-group cost prevents prime/composite cancellation
+between these groups. No global sign or asymptote for prime event work is
+known here: that work depends on the complete previous Mobius prefix.
+
+Review026 proves one useful uniform ancillary control: replace all old-window
+masks inside a block by the common H_B. Exact polarization writes joined work
+as the difference between the actual child energy and the zero-sign child
+energy. The inherited high-tail and finite-head bounds then give, for ANY
+partition and every partial cutoff,
+ |M_moving(B)-M_common(B)| <= C B^(21/10).
+This exponent is below the required 12/5, so common-window reduction has a
+paid uniform recovery cost. This lemma is analytically supplied; it has not
+yet been added as an executable new proof rule. It does not control the
+remaining actual-state correlation. The current generic grouped envelope
+is B^(11/2), leaving an exponent deficit 31/10; this is not a lower bound.
+
+The precise next leaf substitutes A_(q-1)=A_B+sum_(B<n<q)mu(n)n^-s and its
+coupled c,E,D updates into the entire work polynomial on the common window.
+It retains every old-state/shell tuple, even/odd interaction, prime singleton,
+and partial cutoff. An optional exact squared-work Gram with at most B groups
+would suffice at exponent 19/5 by Cauchy and kernel mass <=100/13. That stronger
+Gram requires new higher-moment/correlation estimates; it is not already paid.
+
+The next grammar should allow signed cross-group constructions and/or
+cross-scale pairings with explicit compensation and bounded multiplicity.
+The candidate object remains operator + auxiliary quantity + proof argument.
+Record exact state-variation/correlation and boundary obligations; do not
+replace them by a fitted constant, an assumed current target, or unsigned
+separate estimates. Keep the ungrouped target available when the stronger
+absolute-group target loses useful cancellation.
+
+Verification and resource evidence
+Producer 192-bit Arb: three polynomial increment sectors and Hermitian crosses.
+Checker 256-bit Arb: three counterfactual child norms, complete Abel prefixes,
+exact harmonic coefficients, and independent factorization. Each owner read
+its own archived Mobius vector. Producer checked every inverse-divisor row.
+Verified 2047 integer events at 7 heights per owner, all 74 cases and 19328 partial
+cutoffs per owner, strict first-shell masks, zero-Mobius head change, state
+continuation, exact selection, and complete-source feedback. No previous
+numeric prefix was recomputed in extension. Publication bytes match output.
+
+26 distinct owned unit tests passed, plus one narrow authoritative symbolic
+binding integration check. The first root suite had one assertion failure:
+it required identical Arb serialization strings across a round trip; radii
+outward-round. The assertion and continuation comparison were corrected to
+interval overlap, and only that affected test reran. All runs/failure costs
+remain in development receipts. No passing unchanged suite reran in study.
+
+Development operations 10669972; study operations 236279204;
+inclusive 246949176 out of 1500000000. Study wall time 18.563s.
+Main peak RSS 704032KiB; each numeric worker below 291000KiB. Two numeric owners
+ran in parallel, under 4GiB per process and 12GiB combined declared caps.
+There was no terminal study failure. Independent verification artifacts and
+all cases, rejected programs, source snapshots and observations are preserved.
+
+No new uniform signed arithmetic bound, component payment, full signed-core
+bound, or proof of RH was established by this numerical experiment.

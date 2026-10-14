@@ -1,0 +1,152 @@
+{
+  "RH_proved": false,
+  "audit_operations": 69624245,
+  "checked_cases": 434,
+  "elapsed_seconds": 34.77225691700005,
+  "expected_cases": 434,
+  "generated_from_unresolved_obligations": 16,
+  "generation_counts": [
+    26,
+    16
+  ],
+  "new_target_bounds_proved": 0,
+  "next_search_target": "complete remaining joint covariance; largest-prime three-channel transfer with smooth complement",
+  "preparation_operations": 1194720,
+  "producer_operations": 47979064,
+  "selected": [
+    {
+      "constant": "17745669577/536870912",
+      "family": "baseline",
+      "id": 0,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 1.77623802615454,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "283930713231/4294967296",
+      "family": "pair",
+      "id": 2,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 3.8647030714962294,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "34342065353/2147483648",
+      "family": "pair",
+      "id": 12,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 3.233879803987712,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "283930713231/4294967296",
+      "family": "pair",
+      "id": 7,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 3.679074613963386,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "283930713231/4294967296",
+      "family": "pair",
+      "id": 17,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 3.4271720439530515,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "572650251585/4294967296",
+      "family": "transport",
+      "id": 21,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 31.607413076572033,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    },
+    {
+      "constant": "17745669577/536870912",
+      "family": "transport",
+      "id": 24,
+      "score": {
+        "failed": 0,
+        "finite_drift_only": true,
+        "max_drift": 1.77623802615454,
+        "passed": [
+          true,
+          true
+        ],
+        "uniform_bound_proved": false
+      }
+    }
+  ],
+  "status": "FINITE_AUXILIARIES_AND_ARGUMENT_GRAPHS_VERIFIED",
+  "target": {
+    "RH_proved": false,
+    "bridge": "SHIFTED_QUOTIENT_CANDIDATE_10_REVIEW_001.txt sections3and5",
+    "complete_composite_branches": true,
+    "constants_may_depend_on": [
+      "epsilon"
+    ],
+    "fixed_operator": {
+      "shifts": [
+        "1/3",
+        "2/3"
+      ]
+    },
+    "formula": "X^-2 sum_{X<=n<2X}(T(n)+C(n)-m_u*n^(2/3))^2",
+    "id": "candidate10_reduced_energy",
+    "required_bound": "C_epsilon*X^epsilon",
+    "scope": {
+      "domain": "all dyadic integers X>=1",
+      "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+      "source": "actual_mu_candidate10"
+    },
+    "status": "open",
+    "uniform_in": [
+      "all dyadic X>=1"
+    ]
+  },
+  "total_operations": 118798029,
+  "uniform_signed_bound_proved": false
+}

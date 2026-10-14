@@ -1,0 +1,123 @@
+{
+  "RH_proved": false,
+  "dual_sha256": "0de884a4ad2afe05ecb75ce1d367d1f0e4d3b3660869b3fc7dddb288e7650077",
+  "exact_full_Gram_dual": {
+    "actual_bound_refuted": false,
+    "all_constant_coordinates_zero": true,
+    "dual_matrices": {
+      "child": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "parent": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "116851730888532054730533259113449130531407854386925232946719034019/4853277622716244938848290427716317039305471219994969749283972540553",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "independently_recomputed": true,
+    "lhs_dot_y": "-1",
+    "scope": "all rational C>=0 andinteger q>=1 in fixed full-Gram zero-cubic cone; gate additionalatq1, necessaryglobalforq>1"
+  },
+  "exact_reduction": {
+    "canonical_parent_prefix_weight": "4",
+    "child_half_Gram_diagonal_weight": "63/64",
+    "child_half_square_scalar_weight": "65/64",
+    "combined_child_half_weight": "2",
+    "old_norm_all_rowmass_weight": "-1",
+    "old_pair_difference_child_weight": "1",
+    "other_Gram_entries": "0"
+  },
+  "final_original_statuses": {
+    "critical": "no_candidate",
+    "unsigned_X11": "finite_PSD_certificate",
+    "unsigned_X13": "missing_resource certificate deadline"
+  },
+  "final_sha256": "13fc909927094c7a43aa257534816444203214e2eadf5a7df07db620fb105d9f",
+  "gamma": "56/3",
+  "global_bound_proved": false,
+  "new_signed_cancellation": false,
+  "original_formula_changed": false,
+  "original_status": "finite_PSD_certificate",
+  "phase": "producer Gram run complete; independent whole-run audit pending",
+  "program": {
+    "C": 1,
+    "allow_constant_slack": true,
+    "claim": "unsigned_calibration",
+    "constraint": "none",
+    "dictionary_mode": "extended",
+    "q": 2,
+    "target": "mu"
+  },
+  "proof": "65/64+63/64=2. For each integerX>=1 everyu in[X,2X) corresponds exactlyt=2u,2u+1 inchild. Hence combinedhalf-prefix contribution2sumchild P_floor(t/2)^2=4sumparentP_u^2. AllcrossGramentries vanish. This is the unsigned Cauchy certificate identically at everyX.",
+  "same_unsigned_Cauchy_all_scales": true,
+  "schema": 1,
+  "source": "cancellation-arithmetic-results/pilot-001/gram-probe-001/attempts/001.json",
+  "source_sha256": "0c0dd8c735959b2d562de8cb2424a89bc6045051790165ba22af51cf8114ab76",
+  "weights_sha256": "2a620e98df4df2396e542b8774368dc5013689dd9135e56ba97dbdce60b71b60"
+}

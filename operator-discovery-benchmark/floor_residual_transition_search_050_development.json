@@ -1,0 +1,14 @@
+{
+  "schema": "floor-transition-search-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "operations": 156272,
+      "elapsed_seconds": 0.21753322798758745
+    }
+  ],
+  "scope": "synthetic direct cells, exact rational exponents, metadata transition coverage; no actual candidate arrays or norms"
+}

@@ -1,0 +1,14 @@
+{
+  "runs": [
+    {
+      "tests": [
+        "test_prime_bank_candidates"
+      ],
+      "returncode": 0,
+      "operations": 118995,
+      "stdout": "SYNTHETIC_WORK module=test_prime_bank_candidates operations=118995\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.040s\n\nOK\n"
+    }
+  ],
+  "operations": 118995
+}

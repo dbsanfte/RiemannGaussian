@@ -1,0 +1,22 @@
+Independent exact dual support reconstruction review
+Reviewer: /root/sol61_candidate_batch03; runtime model not independently authenticated.
+
+The declared primal cone has nonnegative square weights (and optional per-instance nonnegative constant slacks) and unrestricted relation weights. Its separating functional must be nonnegative on square/constant columns, vanish on relation columns, and be negative on the lhs. The implementation uses y=y_plus-y_minus. Its equation rows impose relation_dot=0, square_dot-slack=0, and lhs_dot=-1. All LP unknowns are nonnegative. These signs are correct.
+
+A floating LP proposes support only. Exact rational support elimination then checks every equation and nonnegative reconstructed variable. Finally all original column dots and lhs dot are independently recomputed by the utility. A certificate is therefore an exact finite Farkas obstruction to the declared cone; float infeasibility, unsuccessful support, denominator limits, and resource failures establish no obstruction. Including both signs of each relation is redundant but sound. The monomial domain is complete, including optional scalar coordinates; absent coordinates are not silently assigned zero.
+
+The joint wrapper correctly classifies square columns and appended constant columns as nonnegative, and both relation signs as zero-dot columns. This incorporates the zero-cubic auxiliary instance as a supplied linear constraint, not an arithmetic observation. A separator for this constrained shared cone is not an actual arithmetic counterexample or an impossibility theorem for broader certificate languages.
+
+The probe driver binds attempt 026, all ordinary training instance hashes and auxiliary hashes, the parent training/source seal, probe source/spec seals, tests, and the produced result. It validates sources again at the end. It retains the original no_certificate_found status. Rebuilding instances outside the bounded dual call can abort the probe; it does not manufacture a certified outcome. The prescribed 60-second/work/bit limits are computational controls and proxies, not an OS-enforced total-process wall-time or memory certificate.
+
+Focused validation: ../.venv/bin/python -m unittest test_exact_dual_support_reconstruction -v; four tests passed, covering an exact separator, a feasible cone without certification, optional scalar slack, and invalid/resource cases. No main experiment scores or full checker were queried.
+
+No mathematical blocker found in the reviewed source versions. No utility or frozen source was edited.
+
+SHA256 bindings:
+exact_dual_support_reconstruction.py 74f8b1299c1da8d392a9de774653022ed8fc5f4d7baef907d65d4fd4ab285102
+test_exact_dual_support_reconstruction.py 2666ffa77bdea11571ac1e41a688339a742d6cf2ee6f6e8a880b92af0575f352
+arithmetic_cycle_synthesis.py c4985ad6bc49415622f6ede2441fc28157dcb9dde4da6e4d13374a6e6ff05204
+grouped_arithmetic_synthesis.py d9165d156dee1d57b7d6cd4901c319792e3fe4908369e4f80a8729aeff6777ad
+check_grouped_arithmetic.py 760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e
+run_cancellation_dual_probe.py 16ba9ffb2e784819468830b0d1d8e26bee99dde501386416c8833eb161ab488f

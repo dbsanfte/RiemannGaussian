@@ -1,0 +1,148 @@
+VERIFIED JOINT POWER-CENTERING CONTROLS; SIGNED DRIFT REMAINS OPEN
+
+Current input: candidate10_joint_power_obligation.json
+Completed study: core-joint-power-results/pilot-001/report.json
+Generator: core_joint_power_search.py
+Independent checker: check_core_joint_power_search.py
+Runner: run_core_joint_power_search.py
+Rule scope: core_joint_power_search_protocol.txt
+
+The preceding prefix-proof stage made verified progress. This stage moves
+from preserving a signed factor inside a convolution to combining the
+leading growth contributions of different complete source modes.
+The full signed core bound and RH remain OPEN; keep the goal active.
+
+New auxiliary language and supplied universal theorem
+------------------------------------------------------
+The grammar now includes J_theta(n)=n^theta-(n-1)^theta at rational powers
+theta1/6,1/3,1/2,2/3,5/6,1. For K_a(n)=n^-a, theta=1-a in(0,1],
+monotonicity and integral comparison prove, for ALL real t>=0,
+
+ -1/theta <= sum_(1<=n<=t)K_a(n)-t^theta/theta <= 0.
+
+For any finite SIGNED arithmetic h, define its COMPLETE moment
+ m_theta(h)=sum_d h(d)/d^theta. Then the centered operator
+
+ H=K_a*h-[m_theta(h)/theta]*J_theta
+
+has |prefix H(n)|<=sum_d|h(d)|/theta for every integer n>=1. Terms d>n
+remain in the moment and the exact remainder formula. Finite convolution
+moments multiply exactly, including their full support beyond n or N.
+No support gap is assigned to H or J. The proof applies to general signed
+finite inputs; finite Arb tests check its implementation, not its universal
+truth. Analysts supplied this elementary theorem and the norm rules.
+
+What the detector actually searched
+------------------------------------
+From each current complete remaining vector it extracts pieces with one
+actual K_(1/3) and otherwise finite factors A,B,C. It tries every allowed
+power profile, solves for the exact moment multiplier, and enumerates
+every subset of eligible pieces to center. All drifts at the same power
+are combined as SIGNED polynomials before any magnitude bound.
+The source scalar signs, actual R_u, complete units and prime powers stay.
+
+Selection minimizes the certified N exponent for the eligible subsum,
+then log degree, unpaid component count and construction complexity.
+It uses no source values, model calls, fitted constants or individually
+nominated source coefficients. This is bounded proof composition within
+a supplied language, not an unrestricted autonomous analytic prover.
+Every rejected power profile and every competing subset remain recorded.
+
+There are three eligible finite-factor pieces per representation. The
+run checked all40 subsets across five geometries and30 power-profile
+trials. Five profiles support the source's theta2/3;25 do not match its
+leading power. A mismatched profile is rejected only for this cancellation
+certificate, not as a false arithmetic operator. The search selected13
+centering applications, producing10 uniformly controlled remainders and
+five exact joint drift polynomials. These are instances of the same
+reusable rules, not ten independent new arithmetic theorems.
+
+Concrete generated result for the sixth-root cutoffs
+------------------------------------------------------
+Write beta=9/2, K(n)=n^-1/3, A=mu restricted to U=floor(N^alpha), and
+B=mu*n^-2/3 restricted to V=floor(N^gamma), COMMON N=4X-1 for parent and
+child. The three zero-residual source pieces are
+
+ K*[beta*A*A-beta*A*B-R_u*B].
+
+For alpha1/6 and gamma1/6 or5/6 the detector selects all three. It emits
+their three bounded remainders and ONE leading drift D_N*J_(2/3), where
+
+ a_N=sum_(d<=U)mu(d)/d^(2/3),
+ b_N=sum_(d<=V)mu(d)/d^(4/3),
+ D_N=(27/4)*a_N^2-(27/4)*a_N*b_N-(3/2)*R_u*b_N.
+
+The exact signed polynomial is generated from source coefficients and
+finite moment multiplicativity. It is not set equal to zero and is not
+replaced by three separate positive drifts.
+
+For (alpha,gamma)=(1/6,5/6), the three normalized complete-prefix energy
+bounds generated automatically are, respectively,
+ (729/4)*N^(-1/3), (6561/4)*N^(-1/9), 2025*N^(-4/9).
+All are uniformly paid for every required scale. For gamma1/6 the last
+two exponents improve to -5/9 and -8/9. They include full source scalars.
+The new weighted-channel payment uses the previously checked Abel cost
+and the full Cauchy count; it does not silently reuse an absolute-mass
+channel bound for signed prefixes.
+
+The available reference for D_N*J_(2/3) still has positive energy power
+5/9. The prior bound for this three-piece finite subsum had power2/3.
+That improvement is a PROVED upper-bound exponent for this subsum; it
+does not bound the whole remaining core, and5/9 is not an RH exponent.
+
+Selection in the other representations
+---------------------------------------
+ alpha,gamma     old subsum power   new power   centered pieces   paid
+ 1/2,1/2              4/3               1            2              1
+ 1/3,1/3                1             7/9            3              2
+ 1/3,2/3                1             7/9            2              1
+ 1/6,1/6              2/3             5/9            3              3
+ 1/6,5/6              2/3             5/9            3              3
+
+The selector leaves the A*B source piece unchanged in the first and third
+rows: their optimal worst-power/count score ties another option, and the
+declared rule favors fewer introduced remainders. All alternative complete
+joins remain in the archive. No postselection changes were made.
+
+Recovery and the actual next arithmetic problem
+------------------------------------------------
+Earlier paid heads and the prior A*E control remain excluded. The exact
+current vector is Z_old=P_new+Z_new. Z_new contains every untouched source
+piece, any unpaid centered remainder, the COMPLETE joint drift and the
+exact -e transport correction, e=f-g. Every cross between these terms is
+inside one signed energy. The compiler/checker prove
+ S_old<=2*S_new+2*C_new and S_new<=2*S_old+2*C_new.
+The720 existing source/channel/transport bindings are carried forward;
+they are bookkeeping of existing proof routes, not720 new operators.
+All target degrees remain inherited. All resulting uniform signed leaves
+are OPEN; no original fixed-C recurrence has been discharged.
+
+The next task is to discover control of the joint drift TOGETHER WITH the
+remaining inverse residuals. Separately demanding a sufficiently small
+D_N could discard the cancellation required by the actual source. Exact
+cutoff changes or auxiliary recurrences are possible further constructions;
+none is claimed proved here. The original RH-strength whole-source target,
+all recovery costs, units and prime-power corrections remain nested inputs.
+
+Verification and resources
+---------------------------
+The independent Sol6.1 checker imports no generator. It replays all17,733
+prior proof nodes using their inference rules, verifies every selected
+binomial/source term and paid flag, and rejects missing current source
+pieces. Actual four-mode inverse polynomials are independently authenticated.
+This reuses valid prior certificates without rerunning their expensive
+optimization. It then checks all new profiles, subsets, signed moment
+polynomials, costs, selection, complete paid/unpaid partitions and recovery.
+
+All23 frozen tests passed (seven producer/generic-semantics and16 independent
+checker tests). They include fractional powers, t<1, d>n, full product
+support beyond the observed prefix, exact signed polynomial cancellation,
+lower-N-power logarithms, source omission and false paid-flag rejection.
+No development or study failure occurred in this stage. No old source or
+test suite was rerun. All earlier frozen files remain unchanged.
+
+Study runtime1.692seconds; main peakRSS704032KiB. Charged main work1,707,529;
+inclusive work with development and frozen tests4,781,043, below200million.
+No new arithmetic source coefficients or numerical candidate scores were
+evaluated. All snapshots are direct bytes, without hashes. Publication
+retains exact certificates and every competing choice. Goal active.

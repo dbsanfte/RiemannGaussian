@@ -1,0 +1,105 @@
+UNEQUAL-SHIFT CANDIDATE: PRIMARY-SOURCE PRIORITY AUDIT
+7 October 2026. Verified-historically-new operator list: empty.
+
+The candidate is R_v(F)(s)=-integral_0^infinity F'(s+t)/F(s+v*t)dt,
+followed by B_v=sum mu(k)R_v(k*s)/k on zeta. The local signature,
+prime gap, least-prime envelope and pole-regularized RH equivalence
+are proved in shift_ratio_proof.txt. Validity does not establish priority.
+
+1. CLASSICAL ARITHMETIC LOGARITHMS: FULL PRIMARY PAPER READ
+
+Laohakosol, Pabhapote and Wechwiriyakul, "Arithmetic Functions and
+Operators", ScienceAsia 27 (2001), 199-202, four pages:
+https://thaiscience.info/Journals/Article/SCAS/10460000.pdf
+Official journal table of contents: https://www.scienceasia.org/2001.php
+The current live primary PDF was obtained and cached from the journal:
+https://www.scienceasia.org/2001.27.n3/v27_199_202.pdf
+The older ThaiScience domain now serves a landing redirect via direct
+HTTP; its indexed PDF text was useful for the initial comparison, but
+the live journal PDF is the preferred source. Its SHA256 is recorded in
+literature/shift-ratio/reference_access.json.
+
+Page 200 defines f_Dinv*(f log n), proves its convolution-to-addition
+law, triangular inverse, and prime-power support for multiplicative input.
+It credits Rearick's 1968 work. Our v=1 reduces, after division by log n,
+to this known arithmetic logarithm. The triangular-inverse method is
+therefore established. For 0<v<1 our operator has nonzero coefficients
+on mixed squarefree pq and fails the convolution/root homomorphism;
+it is not the arithmetic logarithm or its root operator from that paper.
+This distinguishes a formula, not all possible known compositions.
+
+2. FRACTIONAL ZETA CALCULUS: PARTIAL COMPARISON, EXPLICIT GAP
+
+Guariglia's 2019 "Fractional calculus, zeta functions and Shannon entropy"
+uses the fractional derivative with logarithmic coefficient powers.
+Primary article https://link.springer.com/article/10.1186/s13662-019-2202-5
+Primary PDF https://d-nb.info/1198402598/34 is cached under literature/fractional/.
+That differentiation primitive is established and not claimed new.
+
+Guariglia, "Fractional calculus, Riemann zeta function and Euler products",
+IFAC-PapersOnLine 58(12) (2024), 215-219, DOI 10.1016/j.ifacol.2024.08.192:
+https://www.sciencedirect.com/science/article/pii/S2405896324009169
+Its publisher abstract describes a logarithmic fractional derivative
+and Euler-product homomorphism. Full text was not obtained through the
+available public endpoints: publisher PDF 403, FULL API requests 401.
+Metadata and the abstract cannot determine its exact quotient/normalization.
+No access controls were bypassed and no author was contacted.
+
+Our rational kernel log b/(log b+v log a) differs from every single
+fractional normalized kernel (log b/log ab)^alpha for 0<v<1: the first
+two geometric/binomial weights cannot both agree. However its beta mixture
+is exactly that fractional family. This is a relationship to prior tools,
+not a reason to dismiss comparison of the full 2024 paper.
+
+3. KNOWN HIGHER LOGARITHMS AND THE ACTUAL CLOSURE
+
+Generalized integer von Mangoldt functions mu*(log n)^j are established;
+the prior fractional audit records Pratt's 2020 paper, section 2:
+https://link.springer.com/article/10.1007/s40687-019-0199-8
+
+For v>1/2, the full arithmetic family is the convergent geometric
+combination (1/v) sum_(j>=1)(-(1-v)/v)^(j-1) R_j(f).
+The independent checker verifies fourteen changed integer-coefficient
+examples and rejects unjustified convergence at v=1/2. Accordingly the
+compound unequal-shift definition must not be called a new primitive.
+Its rational resummation, global bound and RH-equivalent regularizer still
+require a direct priority comparison; this audit has not completed one.
+
+4. MOMENT INFORMATION AND SPECIAL-FUNCTION INPUTS
+
+The all-scale M2 bound imports Fan-Pomerance's rough-number theorem:
+https://math.dartmouth.edu/~carlp/erat060523rev.pdf, Theorem A, page 1.
+The beta-mixture identity uses Euler's hypergeometric beta integral:
+https://dlmf.nist.gov/15.6.E1 and https://dlmf.nist.gov/15.4.E6.
+Zero-free Re(s)>=1 and zero reflection are established zeta facts:
+https://dlmf.nist.gov/25.10.
+These inputs, layer-cake integration, Fourier orthogonality and local
+residue calculus are not novel primitives. The numerical audit does
+not independently verify the imported full sieve proof.
+
+The scalar kernel family also belongs to established complete-Bernstein
+functional calculus. Jacob and Schilling, "Function Spaces as Dirichlet
+Spaces", Journal for Analysis and its Applications 24(1) (2005), 3-28,
+equation (13), page 6, records positive mixtures of t/(lambda+t):
+https://ems.press/content/serial-article-files/35466
+With lambda=v/(1-v), normalization at t=1 is precisely our
+t/[v+(1-v)t] atom; v=1 is the linear term. Thus arbitrary positive
+mixtures are a known scalar function class. Applying them to this
+inverse-weighted arithmetic kernel and comparing the exact compound
+estimates still requires a separate priority review. No novelty is
+inferred from selecting an unfamiliar member of that known class.
+
+5. SEARCH SCOPE AND OUTCOME
+
+Targeted searches checked unequal-shift zeta ratios, pantograph logarithms,
+weighted arithmetic logarithms, deformed logarithms and the rational
+logarithmic divisor kernel. Most returned unrelated papers; no exact
+primary formula match has yet been identified. Search-hit absence is
+not a proof of novelty. Classical arithmetic, integer and fractional
+primitives have been identified; the compound family's historical priority
+remains unresolved, particularly with the missing 2024 full comparison.
+
+Classification: mathematically verified compound lead, ordinary-zeta zero
+sensitivity and an RH-equivalent continuation target, known-sieve moment
+bound, historical novelty unresolved. No new prime-distribution or RH
+estimate. Keep this separate from the main family/consequence counts.

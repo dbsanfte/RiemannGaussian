@@ -1,0 +1,14 @@
+{
+  "schema": "floor-capacity-recovery-tests-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.3434262659866363,
+      "operations": 5168494
+    }
+  ],
+  "scope": "new dense synthetic support and full certificate/refinement regressions; no actual candidates"
+}

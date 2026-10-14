@@ -1,0 +1,45 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-",
+        "ast.parse new checker and synthetic test sources"
+      ],
+      "returncode": 1,
+      "tests": 0,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n  File \"/usr/lib/python3.10/ast.py\", line 50, in parse\n    return compile(source, filename, mode, flags,\n  File \"<unknown>\", line 17\n    'terms':[{'rate':r,'weight':w} for r,w in (terms or [('1','2'),('2','-1')])},'auxiliary':None},\n                                                                               ^\nSyntaxError: closing parenthesis '}' does not match opening parenthesis '['\n",
+      "operations": 24255,
+      "operation_accounting": "conservative one operation per source character parsed; no test module executed",
+      "elapsed_seconds": 0.1,
+      "elapsed_source": "rounded tool-reported wall time",
+      "correction": "Added the missing closing list bracket in the synthetic request fixture before the sole unittest suite; no production math or source application changed."
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_floor_residual_global_rate_guard_046"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_global_rate_guard_046 operations=47165 checker_operations=40916 fixture_operations=6249 elapsed_seconds=0.030132275016512722\n",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.030s\n\nOK\n",
+      "operations": 47165,
+      "elapsed_seconds": 0.10074130102293566,
+      "tests": 18,
+      "peak_rss_KiB": 27216
+    }
+  ],
+  "operations": 71420,
+  "edits_stopped": true,
+  "source_values_evaluated": false,
+  "norms_evaluated": false,
+  "old_suites_run": false,
+  "tests": 18,
+  "review": "Independent reviewed-rule admission: source/rounding normalization, exact strict rational gates, complete harmonic/unit/child terms, all-infinite shifted tail, imported conditional Mertens estimate, arbitrary zero multiplicity, RH-true/false case split and existential lower-bound scope."
+}

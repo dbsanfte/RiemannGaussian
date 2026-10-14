@@ -1,0 +1,462 @@
+INDEPENDENT MATHEMATICAL/DESIGN REVIEW079
+
+Review scope
+============
+This new file reviews the agreed079 shared-index flux/covariance design.
+It preserves frozen075-078 files, performs no scientific source query or
+candidate scoring, and is not a report of a completed079 run. Static code
+and actual-result review can be added only when root supplies that schema
+and requests those checks. The main agreed design keeps preregistered
+power cutoffs and searches localized covariance leaves plus conditional
+PSD reductions, rather than another unrestricted auxiliary-energy fit.
+
+1. What the new experiment must construct exactly
+================================================
+Let h=floor(u/2). Work on the shared PHYSICAL integer n index domain,
+not on a rescaled real index and not by pairing n at u with2n at h.
+Refine the parent and half folded coefficient intervals at every endpoint,
+rough cutoff, least-prime cutoff and terminal category boundary. A canonical
+cell records its integer half-open interval, gcd(n,Q)=1 exclusion, squarefree
+domain, parent category, half category or outside-half-support, and BOTH
+coefficient/token polynomials. Unit status must be explicit. Empty cells
+and repeated cutoffs have zero contribution. Boundaries use the exact
+ceil/floor rules of the source; never discard a short endpoint cell.
+
+The cell's signed sum is sum mu(n) over its exact domain, with the two
+coefficient polynomials attached separately. From these shared cells derive
+V(u),V(h),D=V(u)-V(h) by exact linear maps. A parent coefficient token is
+never rebound to the half's count. Nevertheless the half state uses its
+own independently admitted counts/tokens. Recombination must match both
+saved076 residual polynomials and both independent078 feature partitions.
+The exact transport identity is valuable even if every subsequent growth
+leaf fails. It must receive a distinct verified-identity status.
+
+Bare Young on D is an honest conditional reduction, but d.D=R(u)-R(h)
+contains the difficult source residual. A leaf that bounds the entire
+normalized D energy may merely repackage the original missing theorem.
+The proposed no-total-D/no-original-drift leaf gate is therefore sensible.
+It is a syntactic nontriviality gate, not a proof that arbitrary combinations
+of local leaves are logically weaker than the target. Export their exact
+combined reduction so reviewers can see whether a new arithmetic fact
+has actually been supplied.
+
+2. A concrete local covariance grammar
+=====================================
+Use normalized shared cells and child channels as a vector x. Generate
+small-support rational quadratic forms A_j: one-cell squares, two-cell
+signed products/contrasts, and a cell paired with one explicitly named
+half channel. Preserve signs; A_j need not be PSD when it is a signed
+upper-correlation leaf. Exclude full all-ones source totals, full D totals,
+and the original drift polynomial as leaf definitions. Coefficient/ray
+budgets and support-size limits must be part of the frozen grammar.
+
+For each leaf state its own proposed price c_j and scale normalization,
+ x^T A_j x<=c_j.
+Finite discovery can genuinely search which LOCAL correlations persist;
+exact validation can refute a particular signed leaf without rejecting
+the residual. Price selection is still finite arithmetic discovery. A
+constant fitted to the same full drift is not a uniform primitive.
+
+For a transport z_u=T z_h+W, define the exact drift matrix on
+x=(z_h,W), with z=V/u^(q/2), by
+ J=[T^T M_u T-tau M_h, T^T M_u;
+    M_u T,            M_u],
+ M_u=dd^T+sum lambda*u^(-2eta)*aa^T.
+If nonnegative rational multipliers alpha_j obey
+ sum alpha_j A_j-J >=0 in PSD order,
+then the local leaves imply F(u)-tau F(h)<=sum alpha_j c_j.
+This is a generic independently verifiable proof rule. PSD checks may use
+exact rational matrices for a finite row, or a parameterized symbolic
+certificate valid throughout a stated uniform domain. Floating eigenvalues
+and PSD on finitely sampled u are not a uniform certificate. Fractional
+powers and inherited count tokens require valid enclosures or exact
+symbolic parameter inequalities, including every allowed count jump.
+
+An equivalent Schur form is
+ [tau M_h-T^T M_u T, -T^T M_u;
+  -M_u T,           K-M_u] >=0,
+which yields drift<=W^T K W. The remaining leaf must be a separately
+specified arithmetic estimate, not drift<=C under another name.
+
+Useful finite feedback separates: identity failure; local leaf failure;
+conditional PSD failure; interval ambiguity; resource/grammar failure;
+and success on a known finite set. A prospective resource rejection is
+not a mathematical refutation. Every failed leaf should name its physical
+cells/tokens and return an exact lower bound above its own fixed price.
+An exact Farkas dual for a finite restricted multiplier grammar can prove
+that grammar infeasible on those rows; it cannot prove no arithmetic
+certificate exists outside the grammar.
+
+3. Analytic signatures must constrain the auxiliary grammar
+=========================================================
+Frozen078 established that terminal prime V1 carries a nonzero u/logu
+main term for fixed constant-coefficient kernels with nonzero integrated
+mass and fixed finite P. A positive square with exponent gap2-2eta-q>0
+is an impossible normalized-energy direction unless its full signed ray
+annihilates the growing nuisance mode. This is a method obstruction,
+not a source residual refutation.
+
+For the usual selected gamma>1/2, terminal r>=2 vanish, but least-prime
+bins retain composites. Hence prime/composite cancellation lives in a
+direction N with d.N=0. A semidefinite energy dominating dd^T CAN vanish
+on such a nuisance direction; a positive isolated prime square cannot.
+Searching transport in this quotient is meaningful. Empirically fitting
+N does not prove it uniform, and a fixed-width rational approximation to
+an irrational nuisance coefficient does not exactly annihilate a growing
+mode. Either derive the signature, represent it with honest exact/error
+tokens, or normalize unresolved growing modes sufficiently. The threshold
+eta>=(2-q)/2 escapes this particular power-growth gate but proves no drift.
+
+There is a particularly concrete bounded-factor primitive. Set
+alpha=2gamma/3, with gamma in(1/2,3/4), so alpha in(1/3,1/2).
+The last least-prime bin has p in(H^alpha,H^gamma], with exact ceils.
+A squarefree n in that bin has at most TWO factors: three primes each
+above H^alpha would exceed H. Thus the bin is exactly its negative
+one-prime portion plus a positive DISTINCT-semiprime sum p<q,pq<=H.
+Parent interval coefficients and tokens remain attached to pq. Prime-square
+rows contribute zero; p=q must not be counted. This is a new inspectable
+arithmetic primitive rather than the total residual under a new label.
+
+For a fixed constant prefix kernel, folded mass m_P, PNT gives the last
+bin leading signature
+ V9(u)=m_P log((1-alpha)/alpha)*u/logu+o(u/logu),
+whereas V1(u)=-m_P*u/logu+o(u/logu).
+For completeness, the semiprime sum at endpoint X~c u is
+ sum_{H^alpha<p<=sqrt(X)} [pi(X/p)-pi(p)],
+up to exact endpoint/unit exclusions. Its leading term follows by PNT
+and partial summation from
+ X/logX * integral_alpha^(1/2) dt/[t(1-t)]
+ =X/logX * log((1-alpha)/alpha).
+PNT is uniform on the compact power ranges because all arguments tend
+to infinity; the subtractive sum pi(p) is O(X/log^2X), and the upper
+H^gamma cutoff exceeds sqrt(X) eventually. Removing the one-prime bin
+costs O(H^gamma), lower order. Finite fixed kernel endpoints then combine
+with mass m_P. This derivation imports only ordinary PNT, cited in078
+postreview from Zagier's primary author-hosted paper.
+
+The contrast V9+kappa V1 with kappa=log((1-alpha)/alpha) cancels the
+leading term. It does NOT imply square-root scale: its remainder may
+still be u/log^2u or larger than every desired subpower. This exact
+prime/semiprime decomposition is useful for generating local signed flux
+leaves and for rejecting inappropriate growing rays. It is not an
+automatic source bound. Variable prime-count-token kernels require a
+separate moving-coefficient analysis; the fixed-kernel mass theorem cannot
+silently be applied to them.
+
+4. Genuine multiplicative cross-term primitives and their limit
+==============================================================
+For any prime p and p not dividing m,
+ mu(pm)=-mu(m), including nonsquarefree m where both sides vanish.
+Therefore for any nonnegative interval weight w,
+ sum_{m in I,p not dividing m} w(m)[mu(pm)+mu(m)]^2=0.
+Expansion gives an EXACT negative prime/composite cross moment paired
+with diagonal squarefree terms. This identity preserves all signs and
+can be admitted independently of any observed signed sum. Domain
+intersection with both physical cells, p-coprimality, transformed floors
+and any inherited tokens must be retained. If coefficient products change
+sign, their contributions change sign too; do not select only helpful
+cross terms and drop the others.
+
+A conditional SOS experiment can multiply such zero identities by
+nonnegative rational cell weights and search a PSD remainder dominating
+the dyadic drift kernel. Diagonal squarefree counts have separate exact
+or conservative prices. A uniform advancement must produce a generated
+prime-range/multiplier rule with all count and PSD obligations paid.
+Enumerating enough factor identities to hard-code every finite mu(n)
+is just a finite evaluation, not a growth theorem.
+
+With ONLY fixed finite P pairings, squareful-zero constraints, bounded
+signs and prime/unit values, a robust subquadratic certificate is blocked.
+After folding, P-coprime squarefree COMPOSITE core variables remain free
+in the relaxation. A nonzero outer coefficient band contains linearly
+many such cores, whereas prime values contribute only o(u). Their relaxed
+signs can align with the coefficient. Positive linear squarefree density
+follows elementarily by finite prime inclusion-exclusion and the convergent
+tail sum1/p^2; the primitive constraints do not give cancellation there.
+Thus fixed-P universal SOS/box domination can disguise the old077 l1
+obstruction. The useful next ingredient is a parameterized prime-factor
+pairing rule or an explicitly unpaid signed rough-composite covariance,
+not simply another fixed small prime.
+
+5. Moving cutoff recommendation
+===============================
+Keep079's preregistered fixed-power cutoff set while testing the NEW
+shared-cell/local-covariance grammar. This isolates whether the proof
+reduction improves, instead of changing both basis and asymptotic regime.
+A later constructive variation can allow exact
+ y=ceil(H^alpha*ell(H)^beta), ell(H)=bit_length(H),
+with rational alpha,beta under explicit positive-power/reciprocal and bit
+gates. Its dyadic bit-length jumps are additional physical boundary cells.
+Degree-free terminal parity aggregation (unit; even omega>=2; odd omega)
+is exact and removes an artificial factor-count resource gate. It does
+not pay a uniform cancellation leaf.
+
+For y~log^A H, v=logH/logy grows without bound. A generalized signed
+Buchstab/Dickman main-term expression suggested by root cannot be used
+outside its proved uniform v/error regime. A small main term can coexist
+with an unacceptably large error. Moving y alone also does not remove the
+pure-prime u/logu obstruction whenever the removed prefix is lower order;
+only signed parity/composite coupling can do that. This review does not
+import or certify a uniform generalized Buchstab theorem.
+
+6. Required proof ledger
+=======================
+The experiment should report separately exact physical transport,
+multiplicative zero identities, finite local covariance admissions,
+conditional PSD/SOS reductions, and the unpaid uniform arithmetic leaves.
+A full conclusion still requires every local leaf uniformly for all
+integer scales/count/cutoff configurations; a complete base for the
+resulting energy; and the original residual/correlation/source transfers.
+Known076 rows are legitimate finite tests, not fresh historical holdout.
+Failure of a localized covariance hypothesis rejects that hypothesis;
+success supplies a concrete next arithmetic lemma, not a verified RH
+detector. No all-scale signed bound or RH theorem is asserted here.
+
+7. Audit of the concrete proper-ray cover pilot
+==============================================
+Root's concrete pilot uses only the constant fixed-dilation sources
+q1_p16 andq1_p04,17 old rational gammas, and base6300. Its local leaf is
+ S_a(u)^2 <= kappa_a*u^(q-1)*Q_a(u),
+ S_a=a.D,
+ Q_a=sum_{n squarefree,gcd(n,Q)=1}
+       [a_parentcategory*f_u(n)-a_halfcategory*f_h(n)]^2.
+Outside a horizon the corresponding coefficient is zero. This is the
+shared-index DIAGONAL Gram, not S_a^2, not a product of independent
+cofactor sums, and not an observed signed residual squared disguised as
+Q_a. Its exact mixed-token expansion must use the union of token bindings.
+
+The unconditional coefficient price is valid. For the fixed folded step
+kernel f, put I=integral f(t)^2 dt and E=sum f(t)^2 over its rational
+breakpoint bands. Each band's integer count differs from u times its
+width by less than1. Hence sum_n f_u(n)^2 <=Iu+E for EVERY integer u>0.
+With K=I+E/6300 this is <=Ku when u>=6300. Exclusions/squarefree domain
+only reduce the nonnegative sum. For h=floor(u/2)>=6300,
+ Q_a <=2 max_i|a_i|^2 (||f_u||_2^2+||f_h||_2^2)
+     <=3K max_i|a_i|^2 u.
+No Mobius sign estimate is used in this coefficient norm theorem.
+
+The folded unit coordinate vanishes for every v>=6300: all retained
+prefix divisors are <=6300, so all unit indicators are1 and their total
+weight is0. The terminal r coordinate vanishes if r*gamma>=1, since r
+primes strictly above ceil(H^gamma) have product>H. Thus the advertised
+active-coordinate target is exact, subject to the independent y^7>=H
+degree gate and h>=6300. The proposed discovery/validation scales satisfy
+the half-base domain; these are distinct from a complete all-integer base.
+
+If proper rays of support1or2 admit the EXACT rational cover
+ d_active=sum_a t_a a,
+then |d.D|<=sum|t_a||S_a| and the uniform leaves would imply
+ (R(u)-R(h))^2
+ <=[sum_a |t_a|sqrt(kappa_a*3K*max_i|a_i|^2)]^2*u^q.
+This reduction is sound. All square-root prices need positive rational
+upper enclosures, exact cover reconstruction must survive rationalization,
+and all local leaves remain independent UNPAID uniform obligations.
+Float LP feasibility or small float price is not an exact cover theorem.
+
+The two-actual-cell determinant is a useful proper-leaf admission:
+proper(cell1)*total(cell2)-proper(cell2)*total(cell1) excludes0 under
+the admitted tokens. It proves the leaf kernel is not a scalar copy of
+the total flux on that physical row. A support1or2 label alone cannot
+prove this, since source degeneracy can collapse a ray. The determinant
+does not prove a uniform cancellation estimate or independence of the
+entire collection from the final target. Source/cell/token admissions must
+precede this check; fabricated positive cells cannot serve as witnesses.
+
+8. Strong structural feedback for failed proper flux leaves
+===========================================================
+For these fixed kernels with nonzero folded mass m_P and fixed0<gamma<1,
+the primary PNT lemma yields
+ D1(u)=V1(u)-V1(h)=-m_P*u/(2logu)+o(u/logu).
+Since Q1<=3Ku, any fixed kappa in the pure-prime leaf would require
+positive const*u^2/log^2u <=kappa*3K*u^q. This is impossible for EVERY
+q<2. It is an all-scale local-leaf obstruction independent of its finite
+calibration, and rejects that leaf, not the arithmetic residual.
+
+For gamma>1/2 and alpha=2gamma/3 in(1/3,1/2), a ray supported on terminal
+prime and last bin has flux main coefficient
+ (m_P/2)*[-a1+a9 log((1-alpha)/alpha)]*u/logu.
+If an exact log enclosure proves the bracket nonzero, that leaf also
+cannot hold with any fixed kappa,q<2. Generated slopes +/-1,+/-2,+/-1/2
+can be checked by rational log enclosures, without asserting a general
+transcendence theorem. A zero or unresolved main coefficient supplies no
+uniform leaf admission. Rays involving the other bins require their own
+factor-count/correlation analysis and must not inherit this two-factor
+formula outside its domain.
+
+If all selected covers fail, the strongest finite feedback is a sparse
+leaf-refutation set: identify which proper rays actually fail, preserve
+their exact S/Q and physical-cell witnesses, and show which exact cover
+constraints cannot be met after removing those frozen failed leaves.
+An exact separating dual can certify that particular surviving-ray cover
+grammar infeasible. It cannot exclude new signed multi-bin leaves, a
+different cutoff, or a different proof rule. Do not merely recalibrate
+kappa upward, and do not claim all-scale impossibility from finite failure.
+Analytic pure-prime/main-coefficient obstructions can additionally prune
+entire leaf families uniformly when their stated fixed-kernel gates pass.
+This exposes the actual next target: a prime-bearing MULTI-bin signed
+flux correlation that cancels the growing prime/composite mode and has
+a separately payable remainder, rather than a larger constant on a
+provably impossible isolated prime flux.
+
+9. Initial independent-checker static snapshot
+=============================================
+Read check_mobius_scale_flux_079.py before producer/runner publication.
+The checker independently reconstructs sorted physical coefficient bands
+and actual joint categories, excludes squareful/P-divisible integers,
+checks every nonempty cell count and signed count, recomputes D and all55
+upper-triangular Gram polynomials, and preserves diagonal-token squares
+when bounding the quadratic form. The cross entries receive factor2 in
+the ray form. Its finite leaf interval directions are correct, including
+potentially loose/negative lower enclosures for a mathematically
+nonnegative Q. The determinant interval excludes0 before admission.
+Coefficient norm derives the rational folded step integral and floor
+error independently of signed source data.
+
+These APIs correctly leave cell/source/token binding as separate required
+admissions. The runner must actually discharge them and verify the active
+cover/unit base hypotheses. This snapshot is not yet a full producer,
+runner, calibration or resource audit. No candidate scores or science
+have been inspected for079.
+
+10. Producer and extended-checker static snapshot
+===============================================
+Read newly created mobius_scale_flux_079.py and the added independent
+verify_inactive/verify_cover APIs. Producer canonical interval union has
+correct (left,right] membership, including gaps and outside-half support.
+Joint categories use the exact cutoff boundaries; explicit unit/outside
+sentinels match the checker. Gram weights are count=positive+negative,
+whereas linear flux weights are positive-negative. This distinction is
+essential and implemented correctly.
+
+Calibration uses the square upper enclosure divided by the Gram lower
+and u^(q-1) lower, then rounds kappa upward. A nonpositive denominator
+with positive numerator makes that leaf unavailable rather than inventing
+a price. Identical root names require identical definitions and intersect
+their enclosures across parents. This preserves shared real numbers and
+rejects conflicting bindings. Producer exact RREF reconstructs the cover;
+adding calibrated/witnessed axes to recover rational feasibility changes
+the cover, not the arithmetic evidence. The exact resulting price can
+exceed the floating objective; ranking must use that exact price.
+Positive square-root dyadic upper rounding is correct in producer and
+checker, including zero and nonsquare rational inputs.
+
+The checker independently checks inactive-coordinate hypotheses on the
+already folded kernel and reconstructs every cover coefficient and price.
+Its conditional Young prices3 and2 times the flux price are safe for
+tau3/4 and1 at any q>=1, since (h/u)^q<=1/2. They remain conditional on
+all uniform leaves and their linked norm/inactive/source certificates.
+The APIs correctly do not call this a uniform R drift theorem.
+
+A specific prospective-resource issue was sent to root: the initial
+construct_cells reserves and charges after allocating position/category/
+bincount arrays and after rational Gram expansion. A proper prospective
+gate must precede those allocations and use worst-case cells/bands and
+quadratic token work. Arbitrary-rational category cutoffs also need bounded
+seventh-power comparison rather than an unmetered large integer power.
+This review records the issue before its resolution; do not infer a final
+resource admission from this snapshot. Runner admission chains, fixed-leaf
+selection and actual finite outcome classification still require review.
+
+11. Complete residual base paid without new arithmetic
+=====================================================
+Root proposed a useful unconditional improvement for these fixed kernels.
+For the already folded prefix coefficients b_d put A=sum|b_d|/d. Exact
+folding and the coprime domain give for EVERY positive integer v
+ |R(v)|<=sum_d |b_d|floor(v/d)<=A v.
+Hence F(v)=R(v)^2/v^q <=A^2*v^(2-q)<=A^2*(2base)
+for1<=v<2base and1<=q<2. This is a complete integer base price, not a
+sparse observed-source base and not a new arithmetic query. It includes
+small scales where the unit coordinate need not vanish.
+
+If all proper leaves are proved uniformly and their exact cover flux
+price is J, Young gives C<=3J for tau3/4 and C<=2J for tau1. Together
+with this paid base, the contractive case yields
+ F(u)<=max(A^2*(2base),12J) for every positive integer u.
+The tau1 case yields the paid base plus2J times the finite dyadic descent
+depth, thus O(logu) normalized growth. No finite proper-leaf calibration
+proves either conclusion. This closes the complete R-base obligation
+for the specific constant-kernel pilot; it does not prove its uniform
+covariances, its original source transfer, a full parameter family, or RH.
+
+12. Producer resource fix reinspection
+=====================================
+Re-read the corrected construct_cells: worst-case121 cells per band and
+token quadratic work are now gated/reserved before position/category/
+bincount arrays and Gram construction. The seventh-power comparison only
+forms cutoff^7 when cutoff<horizon, so its operand is bounded by the
+admitted arithmetic horizon. The specific prospective-resource issues
+reported in section10 are resolved for this API/pilot. This is static
+inspection, not a new test or source run.
+
+13. Final pre-run runner/source-binding audit
+============================================
+Read run_mobius_scale_flux_079.py with the final producer/checker APIs,
+including independent verify_kernel_row and verify_complete_base. No
+scientific candidate score or source arithmetic was queried in this review.
+Root reports6 producer tests and9 independent checker tests passing;
+this reviewer did not rerun them. No blocker to freezing/running was found.
+
+Metadata imports only the two fixed-prefix source programs from frozen077,
+checks the original G kernel binding, independently checks fixed-dilation
+compilation, computes the fixed P folded norm and independently compares
+the full folded kernel. The independent row-function check then binds
+THAT paid kernel to each actual parent and literal-half interval function,
+rather than trusting an unattached norm constant. Source compiled identity
+and stencil-admission flags are required; exact mixed-token definition
+agreement is checked. For this fixed-kernel pilot the independent row
+identity also forces the actual coefficient function to use the exact unit
+token. Independent cells recompute the arithmetic and all Gram entries;
+both endpoint residuals separately recombine to their saved source
+polynomials. Available frozen078 feature vectors are compared as an extra
+check. Thus an equal error at both endpoints cannot hide inside D.
+
+Every parent is gated by h>=6300. P is fixed and matched at both endpoints.
+The independently verified inactive-coordinate certificate defines the
+binary cover target, and the producer checks its actual flux coordinates
+vanish. Complete base is now independently paid with the fixed-kernel A
+price, including small integers where the unit does not vanish. Generic
+checker APIs retain binding prerequisites, and this runner links them.
+
+Discovery computes all preregistered gamma/ray possibilities over known
+076/078 arithmetic. The floating bank proposes only; selected ray prices
+are recalibrated exactly using conservative Q/power denominators, then
+independently certified on discovery. Actual positive cells give each
+selected ray a determinant witness distinguishing it from total flux.
+Bad or unavailable witnesses remove a ray from that finite search; they
+are not treated as an arithmetic refutation. Exact RREF/cover checking
+restores coefficient identity and recomputes the conservative square-root
+price after calibration. The cross-gamma selection uses rational exact
+price, then leaf count and rational gamma as tie breakers.
+
+The six selected covers (if all six source/q combinations are available)
+are written with fixed coefficients/kappa and byte-captured before any
+validation cell query. The candidate set is explicitly recorded with
+validation_cell_queries_started=False. Validation uses only those chosen
+gammas, independently reconstructs physical cells and tests each fixed
+leaf; candidate bytes are checked afterward. No validation calibration,
+coefficient repair or gamma reselection occurs. REFUTED_LOCAL_BOUND means
+at least one frozen leaf has an exact lower violation; it is not a
+refutation of the arithmetic residual or every possible price. Interval
+ambiguity remains separate. A finite survivor would still owe all uniform
+covariance estimates.
+
+Discovery and validation parent lists are disjoint, while their saved
+literal halves may overlap other known rows legitimately. Every required
+saved078 endpoint file is preflighted; their underlying arithmetic horizon
+is unchanged. New shared-index cells are new analysis of known arithmetic,
+not a fresh historical holdout. The source initializers now charge their
+factor-construction operations once per worker; prospective constructor
+and checker gates plus aggregate RSS/stage timeout cover this bounded
+pilot. Search operation totals are explicit conservative task estimates,
+not independently counted instruction-level costs of numerical LP work.
+The finite API grammar remains bounded (at most10 coordinates, proper
+support1or2, finite ray bank); no scalable unrestricted SOS claim is made.
+
+The report correctly distinguishes the unconditional coefficient norm
+from unpaid signed covariances and conditional cover. It keeps uniform
+residual/head/core/RH flags false. Exact conditional cover success plus
+the paid complete base would yield a uniform residual conclusion ONLY
+after all generated local leaves are independently proved for every
+integer scale. In particular finite prime-flux violations may identify a
+uniformly impossible leaf through section8's analytic gate, but finite
+validation alone cannot establish that gate or refute a whole operator.

@@ -1,0 +1,195 @@
+{
+  "status": "verified_response_inferred_inverse_prefix_identity_and_unresolved_signed_potentials",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/inverse-prefix-results/pilot-002",
+  "source_review_round": "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001",
+  "training_arities": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "learned_coefficient_rows": {
+    "1": [
+      "1"
+    ],
+    "2": [
+      "2",
+      "-1"
+    ],
+    "3": [
+      "3",
+      "-3",
+      "1"
+    ],
+    "4": [
+      "4",
+      "-6",
+      "4",
+      "-1"
+    ],
+    "5": [
+      "5",
+      "-10",
+      "10",
+      "-5",
+      "1"
+    ]
+  },
+  "selected_recurrence": {
+    "terms": [
+      [
+        "r_is_one",
+        "1"
+      ],
+      [
+        "same",
+        "1"
+      ],
+      [
+        "left",
+        "-1"
+      ]
+    ],
+    "support_size": 3,
+    "exact_response_fit": true,
+    "expected_recurrence_supplied": false
+  },
+  "retained_recurrence_fits": 1,
+  "support_fits_checked": 2087,
+  "global_all_integer_arity_reconstruction_proved": true,
+  "strict_cutoff_condition": "x<(u+1)^k",
+  "integer_arity_semantic_cap": false,
+  "rational_normalizer_semantic_denominator_cap": false,
+  "generic_final_reconstruction_cases": 84,
+  "generic_final_reconstruction_passes": 84,
+  "promotion_disabled_unseen_arity_cases_missing": 56,
+  "actual_full_block_reconstruction_cases": 32,
+  "actual_full_block_reconstruction_passes": 32,
+  "actual_reference_coefficient_cutoff": 32768,
+  "inverse_prefix_cutoffs_at_fresh_scales": [
+    {
+      "X": 1001,
+      "arity": 2,
+      "cutoff": 63
+    },
+    {
+      "X": 1001,
+      "arity": 3,
+      "cutoff": 15
+    },
+    {
+      "X": 1001,
+      "arity": 6,
+      "cutoff": 3
+    },
+    {
+      "X": 1001,
+      "arity": 7,
+      "cutoff": 3
+    },
+    {
+      "X": 1024,
+      "arity": 2,
+      "cutoff": 63
+    },
+    {
+      "X": 1024,
+      "arity": 3,
+      "cutoff": 15
+    },
+    {
+      "X": 1024,
+      "arity": 6,
+      "cutoff": 3
+    },
+    {
+      "X": 1024,
+      "arity": 7,
+      "cutoff": 3
+    },
+    {
+      "X": 2048,
+      "arity": 2,
+      "cutoff": 90
+    },
+    {
+      "X": 2048,
+      "arity": 3,
+      "cutoff": 20
+    },
+    {
+      "X": 2048,
+      "arity": 6,
+      "cutoff": 4
+    },
+    {
+      "X": 2048,
+      "arity": 7,
+      "cutoff": 3
+    },
+    {
+      "X": 4096,
+      "arity": 2,
+      "cutoff": 127
+    },
+    {
+      "X": 4096,
+      "arity": 3,
+      "cutoff": 25
+    },
+    {
+      "X": 4096,
+      "arity": 6,
+      "cutoff": 5
+    },
+    {
+      "X": 4096,
+      "arity": 7,
+      "cutoff": 3
+    }
+  ],
+  "potential_programs": 2776,
+  "potential_queue_candidates": 3,
+  "fresh_potential_finite_cases": 24,
+  "fresh_potential_finite_passes": 6,
+  "unseen_parameter_constants_missing": 24,
+  "potential_nonnegativity_and_conditional_RH_bridges_proved": 3,
+  "actual_nonnegative_component_envelope_proved": true,
+  "component_envelope_is_supplied_norm_method": true,
+  "representation_coefficient_l1_charge": "2^k-1",
+  "high_arity_unsigned_cost_is_not_RH_gain": true,
+  "actual_coefficient_overlap_with_previous_development": true,
+  "new_actual_prime_coefficient_holdout_claimed": false,
+  "generic_weights_inferred_without_expected_answer": true,
+  "proof_backend_is_separate_from_numeric_selection": true,
+  "final_scale_design_visible_to_worker_but_responses_withheld": true,
+  "search_resource_missingness_not_generalized_beyond_native_pilot_budget": true,
+  "verified_checks": 10,
+  "analytical_verified_checks": 9,
+  "independent_counts": {
+    "generic_training_response_rows": 210,
+    "generic_validation_response_rows": 120,
+    "arity_supports_checked": 2087,
+    "retained_recurrence_fits": 1,
+    "potential_programs": 2776,
+    "selected_potential_programs": 3,
+    "actual_training_profile_rows": 14,
+    "actual_validation_profile_rows": 14,
+    "generic_final_response_rows": 84,
+    "promoted_final_passes": 84,
+    "promotion_disabled_missing_cases": 56,
+    "actual_final_profile_rows": 32,
+    "actual_final_reconstruction_failures": 0,
+    "potential_final_finite_cases": 24,
+    "potential_final_finite_passes": 6,
+    "potential_final_missing_cases": 24,
+    "counterfeit_divisor_violations": 25235
+  },
+  "verification_sha256": "144f2d76f83144b4a8b5d7e47e80d13da1ff7c01c077c56513f49bc7ed0afa54",
+  "analytical_verification_sha256": "74e5ff80a82edbc773fd8b4a5d401413a6093f33cc1da9c7f3ed9f9cc4852d05",
+  "machine_formalized": false,
+  "global_actual_signed_innovation_bound_proved": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

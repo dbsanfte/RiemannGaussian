@@ -1,0 +1,65 @@
+Independent078 arithmetic rough features and finite energy/drift checker
+=======================================================================
+Only new078 checker/test/receipt/scope files written; all frozen files preserved.
+No producer imports, scientific source queries/results, old-suite runs, hashes
+or agents. Producer078 source code read for static API/contract review only.
+Frozen independent077 interval/polynomial and073 bounded rational/root helpers
+reused. New arithmetic source is independent Eratosthenes least-factor fill,
+distinct-prime sign flips and prime-square masking; producer uses Euler factors.
+Compact numpy mu(int8),least(int32),omega(uint8) arrays are cached at largest
+horizon<=4million. ensure_horizon(H,meter=None) returns readonly views; source
+unitmu1=1,least1=infinity represented by sentinel,explicit unit classification.
+
+verify_features(intervals,excluded_primes,gamma,features,
+expected_residual=None,meter=None) independently admits exact ten polynomial
+coordinates. Gamma arbitrary canonical nonnegative rational; y=ceil(H^gamma),
+subcuts=ceil(H^(gamma/3)),ceil(H^(2gamma/3)); exact y^7>=H required. If unpaid,
+INVALID/domain_unpaid=True denotes unadmitted domain, not a counterexample.
+EmptyH0 uses all cutoffs1 and zeroV. Coordinates0..6 are complete signed mu
+rough factor layers,7..9 the complete signed bins partitioning lpf<=y by subcuts.
+Only squarefree gcd(n,P)=1 coordinates enter; the unit is always degree0, even
+when gamma>1 makes y exceed sentinel/sourceH. Source residual R is the complete
+sumV. Supplied expected_residual is checked exactly, but its frozen076 row source
+admission remains external. Dense compact signed integer prefix queries provide
+interval sums, independently of producer sorted positions. Query cache keyed
+(source-cache horizon,actual y,actualsubcuts,excludedP), capped512MiB, permits
+initializer ensure_horizon(Hmax) and reuse across nearby rows sharing cutoffs.
+
+Energy program exact keys schema='rough-energy-program-v1',q,tau,rays,
+innovation_C. q in[1,2),tau in[0,1],C>=0. Rays exact a10 rationalvector,eta>=0,
+lambda>0; all-zero/proportional-allones rays reject. Empty rays allowed explicit
+R² baseline. E=R²+sum lambda*u^(-2eta)*(a.V)^2 retains shared-token polynomial
+cancellation before interval substitution. Arbitrary eta subject rational/power
+resource gates; no fixed denominator whitelist. Row exact u/features/token_intervals.
+Every feature token needs ordered exact rational enclosure. verify_energy(...,
+precision=20) returns VERIFIED_ENERGY_ENCLOSURE with unnormalized/normalized
+energy_lower/upper,residual_lower/upper,projection_verified and findings.
+
+verify_drift(program,parent,child,meter=None,precision=20) requires positive
+child.u=floor(parent.u/2), parent>=2. Exact root enclosures bound normalization
+and inverse powers; signed drift lower uses parent_lower-tau*child_upper, upper
+uses parent_upper-tau*child_lower. Return CERTIFIED_FINITE when upper<=C,
+REFUTED_FINITE when lower>C, otherwise UNRESOLVED_INTERVAL; never rounding pass.
+Projection E>=R² is universal by nonnegative squares only. It gives no uniform
+growth. tau1 permits at most logarithmic normalized growth under an eventual
+UNIFORM drift premise; it does not imply a constant bound. All outputs retain
+uniform_growth_proved=False,uniform_drift_proved=False,
+uniform_source_bound_proved=False,complete_base_proved=False,RH_proved=False.
+Energy/drift features_admission_still_required=True binds separate feature proof.
+
+Prospective source/query/program/polynomial/token memory gates before allocation
+under4GiB perchecker; default work3e11,4096-bit input/100000-bit power/intermediate
+limits. Runner owns aggregate16GiB and decoded input gates. Fixed precision8..24
+can be selected explicitly; runner may use24 to match producer normalization.
+Testing uses /home/dbsanfte/riemann/.venv/bin/python (systempython lacksnumpy).
+Nine distinct tests pass;20successful executions over5retained attempts, receipt
+statusPASS. Tests cover independent literal factor signs/squares, immutablecache,
+units/empty/ceil boundaries, arbitrary gamma53/17,17/31,1001/1000,source/residual
+mutation, projection/domain/zero-ray rejection, fractional eta/q enclosures,
+sharedtoken cancellation, zero-crossing ambiguity, finitepass/refutation,
+childbinding and memory/work rejection. Only tiny synthetic sourceH<=201 queried.
+No positive uniform drift/base, source power bound, or RH theorem is proved.
+
+Independent normalization/inverse-power enclosure cache keyed(u,exponent,precision)
+is immutable and prospectively accounted, capped64MiB; repeated energy programs
+reuse exact root bounds without rerunning certified root arithmetic.

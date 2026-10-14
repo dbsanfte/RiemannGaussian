@@ -1,0 +1,55 @@
+Primitive-state cone-Jacobi search001 preregistered resource scope
+
+One fixed seed: complete publication018 exact endpoint, unchanged publication017
+source/rank/chart and original1957-coordinate finite cone. No clipping, new rank,
+support selection, precision retry, fallback scaling or solver. Streaming exact
+rational homogeneous response for each retained free coordinate; augmented RHS
+excluded. Producer norms remain independently unverified proposal data. Positive
+power-of-two scales retain zero-norm coordinates. No certified trace bound.
+
+80 decimal digits /269bits for scaled affine actions and centered z updates;
+binary64 PSD eigensolves/negative parts remain proposal-only. Fixed eight power
+steps, at most64 gradient iterations, three Armijo trials alpha/2, coefficient1/8.
+Full three-trial work and trace-size reserve required before each iteration;
+otherwise complete last accepted point ends with explicit budget_stop. Unexpected
+mid-step exhaustion is UNKNOWN. Final exact f0+D*z is never269bit rerounded.
+Exact all5641 equations,1597 nonnegative coordinates and all three PSD blocks,
+including zero-pivot LDL handling, remain the independent endpoint gates.
+
+450000000 work units TOTAL including required preparation/preflight/freeze,
+synthetic tests, worker, independent worker checks and final whole-archive audit.
+Final archive audit reserves25000000 upfront; worker maximum425000000.
+Conservative stages: materialization50000000, norm producer100000000,
+proposal80000000, exact endpoint20000000. No refinement from producer counts.
+Binding reservation:4*complete input bytes +12*source closure bytes +1048576+1.
+This byte reservation covers repeated input hash/read/decode, shared old/new
+license loader operations, preflight/freeze licensing, actual-parent protocol
+construction, synthetic tests, immutable source AST/hash passes and metadata.
+The old published loader measurement and new loader counters are diagnostic;
+there is no extra uncharged preparation or numerical calibration outside the
+frozen job. Whole-audit work is independently metered and must fit its25m reserve;
+if it does not, retain evidence and make no final admission.
+
+Exact source/response/endpoint4096bits; norm8192bits; largest intentional rational
+operation temporary16385bits, operand bits validated before arithmetic.
+Dyadic exponent abs<=900; exponent overflow is UNKNOWN, never clipped.
+One response1224 vector at a time,445 norm records, no dense nullspace matrix.
+4m live private-cell proxy,20m cumulative fill,60m independent audit cells.
+Artifact byte caps: map131072,norms2097152,proposal8388608,endpoint1048576,
+check65536; job/progress/protocol65536. Source cache128MiB/tapes32MiB are unchanged.
+Independent worker allowance subtracts these actual declared artifact caps and
+source cells before assigning audit operations. No fourfold8MiB receipt guess.
+Producer stage conservative allocations cover bounded checkpoint/receipt writes,
+SHA passes and failure-path metadata; the binding/metadata reservation also
+covers all bounded output IO/parse/write/hash proxy passes. Scale installation
+continues the norm producer counter under the same100m ceiling; final final-archive audit has own metered
+IO/parse/replay ceiling. Joint worker reservedwork plus actual finalaudit <=450m.
+
+One isolated one-thread worker,6GiB private/total memory (below authorized16GiB),
+1800s cooperative including licensing/norms/search/check/final validation;
+3600s external kill. Frozen prescore synthetic-test subprocess has300s timeout
+for shared-host margin; this does not extend mathematical search iterations. No research run before main freezes source/test/input/protocol
+closure. Published/frozen ancestor files are immutable. Native work proxy96*15^3
+per eigensolve, two blocks per merit evaluation; accepted trials reuse negative
+parts. Scaled forward cancellation diagnostics and adjoint work explicitly metered.
+All numerical/proposal/global/MU/RH/infeasibility admission flags stay false.

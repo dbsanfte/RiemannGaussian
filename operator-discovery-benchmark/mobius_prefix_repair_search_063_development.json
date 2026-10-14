@@ -1,0 +1,29 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "in-process unittest loader for test_mobius_prefix_repair_063 via ../.venv/bin/python -B",
+      "returncode": 0,
+      "tests": 8,
+      "stdout": "test_all_recipes_create_exact_whole_source_completion (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_fill_rules_preserve_every_coprime_row_and_boundary (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_generic_long_equals_full_inverse_above_H (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_invalid_rule_and_wrong_long_support_rejected (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_inverse_arbitrary_signed_fractional_sequence (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_large_floor_residual_has_unit_repair (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_reciprocal_fill_recovers_inverse_distance (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\ntest_unit_and_moment_retained_by_repair (test_mobius_prefix_repair_063.RepairSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.051s\n\nOK\n",
+      "operations": 113336,
+      "elapsed_seconds": 0.06163297197781503,
+      "peak_rss_KiB": 15360
+    },
+    {
+      "command": "new QuadraticLiftTests only via ../.venv/bin/python -B; the eight passing repair tests were not rerun",
+      "returncode": 0,
+      "tests": 3,
+      "stdout": "test_factored_form_matches_direct_bilinear_expansion (test_mobius_prefix_repair_063.QuadraticLiftTests) ... ok\ntest_fill_operators_are_linear (test_mobius_prefix_repair_063.QuadraticLiftTests) ... ok\ntest_quadratic_replay_rejects_modified_repair (test_mobius_prefix_repair_063.QuadraticLiftTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.028s\n\nOK\n",
+      "operations": 103598,
+      "elapsed_seconds": 0.04133209597785026,
+      "peak_rss_KiB": 14976
+    }
+  ],
+  "operations": 216934,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false
+}

@@ -1,0 +1,348 @@
+SIGNED ROUGH-STATE ENERGY AND RECURRENCE REVIEW078
+===============================================
+
+Scope and settled proposed grammar
+---------------------------------
+This review reads the authoritative077 handoff and preceding mathematical
+reviews. It creates only this new078 review, preserving480 frozen files.
+No new scientific source query, candidate-score inspection, hashes,
+code edits or subagents occur. This reviews the settled design before
+implementation/science; implementation admission and actual results need
+their own checks. The full original head/core/RH goal remains open.
+
+The proposed study selects three surviving076 residuals: q1_p16 zero
+baseline, q1_p04 direct3 and q1_p00 prime operator, with their frozen077
+fold schedules. At each parent u its FULL folded coefficient function
+c_u has horizon H and original parent count tokens. Choose y=ceil(H^gamma),
+with generated rational gamma in[1/7,2/3]. Seven coordinates are signed
+terminal factor layers0..6; three coordinates are the NEGATIVE signed
+least-prime-child aggregates in bins bounded by ceil(H^(gamma/3)),
+ceil(H^(2gamma/3)),y. Their exact projection is R=sum_j V_j.
+
+1. Exact state admission precedes every fitted energy
+---------------------------------------------------
+For squarefree n retained by gcd(n,Q)=1, either all factors>y or its
+least prime belongs to exactly one small-prime bin. The terminal signed
+coordinate of factor count r is(-1)^r times its weighted coefficient
+sum. In a least-prime child n=pm, the child is restricted to factors
+STRICTLY>p, inherits gcd(m,Q)=1 and the SAME parent count tokens, and
+mu(pm)=-mu(m). Thus NEGATIVE child aggregates and signed terminal layers
+have projection d=(1,...,1). Units, empty bins and upper endpoints are
+included; prime squares are excluded by strict factor order. Do not
+introduce independent mu copies in different bins or layers.
+
+With gamma>=1/7, y^7>=H. Strict factors>y imply no product of seven
+factors can lie<=H, so the terminal degree<=6 is rigorously paid,
+including equality y^7=H. Arbitrary smaller rational gamma can remain
+an API option, but failure of the degree/resource gate is an unresolved
+construction, not an arithmetic counterexample. At H=0 the function
+and all terminal/bin coordinates are zero; a nonexistent c(1) must not
+be inserted as a unit. At small positive H, prime bins may be empty
+or cutoffs may coincide; those coordinates are exactly zero.
+
+Recombination must independently equal the saved076 G-L on the SAME
+parent. Prime groups/count roots, folded source binding and original
+G/B/Q arithmetic admission remain separate dependencies. Reusing known
+076 arithmetic for new features is legitimate; it is not a fresh holdout.
+No missing dyadic parent may be zero-filled or called admitted. The
+complete squarefree partition matters even if omitted pieces appear
+numerically small. Changing normalization at a rough child changes the
+kernel and invalidates this exact state projection.
+
+2. A universally paid projection with genuine auxiliary coordinates
+-------------------------------------------------------------------
+For rational rays a_r, nonnegative lambda_r and rational eta_r>=0 define
+
+ E(u)=R(u)^2+sum_r lambda_r u^(-2eta_r)(a_r dot V(u))^2.
+
+Every term is a complete SIGNED square, retaining all prime/composite,
+terminal/bin and same-source cross terms. Therefore E>=R^2 universally.
+The exponent weights are evaluated at the actual parent u; at child
+v=floor(u/2), its own v^(-2eta_r) is used. Fixed eta does not make the
+parent and child state equal or remove token/count changes. Universal
+positive-square domination is a real certificate, but bounds no E growth.
+
+Equivalent matrix notation is W(u)=dd^T+sum lambda_r u^(-2eta_r)a_r a_r^T.
+It is PSD and dominates dd^T by construction. This avoids energy shrinking
+or an arbitrary matrix declared to control R without a projection proof.
+More general rational PSD matrices can be admitted by exact LDL/Gram
+certificates for W-dd^T, with complete dependencies and positivity domains.
+
+One/two-coordinate rays, block sums and contrasts form a useful finite
+dictionary. Exclude a ray proportional to d if claiming a new auxiliary
+mechanism; that square merely rescales R. Reduce zero rays implied by
+EXACT transport/degree identities. A ray zero only on discovery is not
+automatically an identity and should be tagged as finite degeneracy.
+Evaluate rank modulo declared exact state relations to distinguish real
+auxiliary directions from many names for the same energy. Rank1 domination
+of R is a valid baseline, never by itself a new cancellation theorem.
+
+3. Uniform recurrence theorem and tau=1 distinction
+-------------------------------------------------
+Fix rational1<=q<2, complete base U0>=2, and rational0<=tau<=1. Write
+F(u)=E(u)/u^q, v=floor(u/2). The searched arithmetic statement is
+
+ F(u)<=tau F(v)+C for EVERY integer u>U0, C>=0.             (A)
+
+If0<=tau<1 and EVERY base integer1<=u<=U0 obeys F(u)<=B0,
+strong induction gives
+
+ F(u)<=B=max(B0,C/(1-tau)), E(u)<=B u^q, R(u)^2<=B u^q.
+
+At each step v<u, v>=1 and either its invariant or its complete base
+row is available. This proof concerns the RESIDUAL energy's OWN base,
+not merely the older G base. The residual bound can then feed the
+075/076 G transfer with its separately paid original operator correlation,
+G base and contraction budget. Changing q requires corresponding new
+normalizations/base bounds; old q1 C is not a certificate at a new q.
+
+If tau=1, induction instead gives
+F(u)<=B0+C ceil(log2(u/U0)) for u>U0 (a safe dyadic step bound).
+It gives logarithmic normalized growth, not constant B. This is a valid
+different search objective if explicitly labelled. E=O(u^q logu) can
+be converted to u^(q+epsilon) only with a separately explicit logarithm
+price for each fixed epsilon; it is not the tau<1 theorem. A proved
+q1 drift would supply a residual O(sqrt(u logu)) for this slice, while
+the full original family/head/core/RH transfers remain unpaid.
+
+Observed smallest-scale energy in discovery is NOT a complete finite
+base. Until all base integers are independently paid, B0 is an explicit
+unpaid obligation and any max(observedbase,C/(1-tau)) is a finite score.
+For tau1, C+observedbase is likewise a numerical ranking preference,
+not an extrapolation theorem. Uniform(A) remains unpaid for every fit.
+
+4. Useful finite LP and exact freeze/validation
+---------------------------------------------
+For fixed q,tau,ray dictionary and eta, each observed recurrence is
+linear in lambda_r and C:
+
+ b_i+sum_r D_ir lambda_r<=C,
+ b_i=R(u_i)^2/u_i^q-tau R(v_i)^2/v_i^q,
+ D_ir=(a_r V(u_i))^2/u_i^(q+2eta_r)
+       -tau(a_r V(v_i))^2/v_i^(q+2eta_r).
+
+Nonnegative lambdas with a declared physical coefficient budget make
+a real finite energy search. Minimizing a variable representing observed
+base energy and C/(1-tau), rather than C alone, exposes the base cost
+of added storage. Use the SAME tau,q,domain and normalization for the
+zero-auxiliary baseline. A different energy can lower observed drift
+without lowering the full eventual G transfer; report both distinctions.
+
+Scale normalization of ray coordinates affects a trace/weighted budget.
+Record the physical rays/weights so a large convenient feature scaling
+does not appear as a cheap new theorem. Fixing a finite budget defines
+the searched grammar, not the space of all possible energies. Rational
+rounding of lambda,C and any budget repair must be followed by exact
+admission of the FINAL formula and all signed recurrence terms. No
+pre-rounding LP score is a mathematical certificate.
+
+For interval admission, the UPPER normalized drift is
+E_upper(u)/power_lower(u)-tau E_lower(v)/power_upper(v).
+The LOWER normalized drift uses E_lower(u)/power_upper(u)
+-tau E_upper(v)/power_lower(v). Thus upper<=C verifies a finite row,
+lower>C refutes it, and a straddle is unresolved rounding. Each ray
+square must be bounded as a whole signed linear form before squaring;
+componentwise square sums would delete cross terms. Positive energy
+term weights use certified inverse power endpoints in the correct
+direction. The same signed comparison applies to observed base tests.
+
+Freezing before known-data validation prevents adaptation from silently
+rewriting the formula. Exact failure history is monotone: a later pass
+cannot erase an earlier witness for that same frozen energy. New gamma,
+ray or recurrence constant is a NEW candidate. Finite infeasibility of
+one grammar does not refute all energies, q values or signed residuals.
+
+5. A finite Farkas diagnostic that says more than refitting constants
+-------------------------------------------------------------------
+For the simpler fixed-tau LP minimizeC subject to the above rows,
+lambda>=0 and sum_r t_r lambda_r<=T, with positive declared costs t_r.
+Rational dual y_i>=0,z>=0 satisfying
+
+ sum_i y_i=1,
+ sum_i y_i D_ir+z t_r>=0 for every ray r
+
+proves C>=sum_i y_i b_i-zT. This follows by multiplying each row by
+y_i, using the budget and nonnegative lambdas; it requires no claim
+about unseen rows. To verify a robust certificate from exact intervals,
+use LOWER enclosures of b_i and D_ir in those inequalities. Such a dual
+can identify a finite set of signed rows/rays blocking improvement over
+the baseline. It is a useful actionable grammar diagnostic, not an
+all-scale impossibility theorem. The observed-base epigraph LP has a
+corresponding ordinary linear dual with all its constraints retained.
+
+6. Generic all-scale Farkas/SOS proof rule, with honest arithmetic leaves
+---------------------------------------------------------------------
+An eventual uniform certificate can express the drift margin
+C-F(u)+tau F(v) as a nonnegative rational combination of independently
+PAID uniform quadratic inequalities, plus a rational PSD square form,
+plus exact transport identities multiplied by linear forms. On the
+declared arithmetic/domain family, every identity vanishes and every
+paid inequality is nonnegative. Exact matrix/Gram verification then
+proves(A), preserving signed cross terms.
+
+This is a sound proof rule only if each imported inequality has its
+own all-integer theorem, complete cutoff/token domain and noncircular
+dependency. An inequality naming the desired parent energy bound is
+not an admissible paid primitive. Finite source rows or a finite dual
+do not establish those primitives. Algebraic count/root tokens can be
+handled by declared positive-root relations and exact enclosures; a
+pointwise numeric SOS is not a parameter-uniform certificate. Changing
+prime roster size requires a genuine symbolic summation/domain rule,
+not one fixed-dimensional matrix checked at selected parents.
+
+If the only primitives are PSD and |mu|<=1 with unsigned coefficient
+prices, the077 fixedP outer-band obstruction may still block the
+desired sqrt-strength price. A meaningful new primitive is an actual
+signed rough-terminal/small-prime-child correlation, a uniformly priced
+transport innovation, or a closed smaller-rank rough-state energy theorem.
+Its precise arithmetic claim must remain an explicit leaf. Smaller
+support, factor cap6 and exact partition conservation do not prove it.
+
+7. Diagnostics and next proof obligations
+----------------------------------------
+Report exact lambda/ray/eta exposure, energy rank modulo identities,
+baseline-relative observed drift and observed-base score, and all adverse
+rows. For each ray show whether it stores terminal parity interaction,
+terminal/bin cancellation or only R again; track its increase in base
+energy alongside its decrease in observed drift. Repeated known source
+rows are useful training but cannot be labelled fresh holdout. Complete
+base, uniform drift, original correlation leaves and final source/head
+transfer must have separate statuses. Do not promote on finite survival.
+
+The immediate concrete useful experiment is the settled positive-ray
+storage LP on exact signed rough states, frozen rationally and evaluated
+on new INTERACTIONS from known arithmetic. Its constructive feedback can
+be an admitted PSD projection plus surviving signed recurrence candidate,
+or an exact counterexample/finite dual pointing to a missing interaction.
+The next proof search should pursue the specific active rough correlation
+or transport inequality that pays its uniform drift, with inherited
+tokens, prime/square endpoints, state-family closure and complexity stated.
+This goes beyond renaming R^2 while remaining candid about what finite
+search and generic algebra can actually certify.
+
+8. Independent static producer/checker audit after pre-run corrections
+--------------------------------------------------------------------
+Reviewed mobius_rough_energy_078.py, check_mobius_rough_energy_078.py
+and relevant frozen077 helpers before science, with no arithmetic source
+queries or test reruns. Early issues were sent to root and the producer
+was re-read after fixes. This section describes that corrected snapshot;
+the eventual runner's admission chain still needs integration validation.
+
+Arithmetic partition: producer uses a compact Euler sieve for least prime,
+mu and distinct-factor count. Repeated-prime products leave mu zero;
+only nonzero-mu positions enter category queries, so their factor counts
+are genuine squarefree omega. Checker independently flips signs over
+prime multiples, zeroes prime-square multiples, records least prime and
+distinct omega with an Eratosthenes construction. Its source arrays are
+readonly, protecting cached admission from caller mutation.
+
+Both compute three exact CEILING power cutoffs at gamma/3,2gamma/3,gamma.
+For retained squarefree n, terminal category is its omega when least
+prime>y; otherwise it enters the unique bin with open lower/closed upper
+least-prime endpoints. Producer searchsorted side='left' places equality
+at a cutoff in the lower bin; checker explicitly uses least>lo,least<=hi.
+Thus both implement the same endpoint signatures and exclude foldedP
+primes. Unit category is explicitly terminal0. An early producer finite
+sentinel bug for gamma>1 was corrected by forcing pos==1 category0,
+which implements P^-(1)=infinity independently of cutoff size. Generated
+gamma<=2/3 was already safe, but this fix preserves the broader API.
+
+The degree6 hypothesis is checked by y^7>=H. Checker uses bounded
+power comparison, avoiding oversized seventh powers. Failure is tagged
+domain_unpaid rather than an arithmetic operator refutation. Producer
+positions may come from a larger cached source, but prefix queries stop
+at the actual interval horizon. Checker dense category prefixes likewise
+can use a larger N; higher-index data do not enter any queried endpoint.
+Its force-unit branch and degree gate are sufficient to partition every
+nonzero-mu row at or belowH. H0 has empty intervals and zero features.
+
+Feature polynomials: producer separately sums signed mu weights in each
+category against the complete interval coefficients. Checker independently
+uses dense integer prefixes with right-inclusive interval subtraction.
+Both retain parent tokens symbolically, merge shared tokens before
+evaluation and preserve each terminal/bin sign. The bin coordinate is
+the signed original-n aggregate, hence equals the NEGATIVE rough-child
+aggregate by the least-prime identity; no additional sign should be
+inserted during d=allones recombination. residual_polynomial constructs
+the literal saved076 G-L using the same atom/count token names. The
+independent verify_features can compare its complete feature sum to that
+payload. Source/compiler/fold binding is still separately mandatory.
+
+Projection and signed squares: ray_dictionary canonically normalizes
+first nonzero coefficient, removes constant all-coordinate rays (zero
+and proportionald), and emits axis, signed pair, block and contrast
+directions. Equal rays deduplicate. Zero-on-discovery atoms are filtered
+only as a numerical proposal decision; they must not be described as
+new all-scale identities. Program admission rejects zero/projection-only
+active rays and nonpositive lambda. Every admitted auxiliary square is
+nonnegative, so E>=R^2 is universal, retaining ALL signed cross terms.
+This proof requires no growth assumption and supplies no drift estimate.
+
+Exact energy routines first build the whole residual polynomial and the
+whole polynomial of each ray, then form their interval square. This
+preserves shared-token cancellation and the intended signed interactions.
+Each positive lambda term divides its lower square by the upper
+u^(2eta) endpoint, and upper square by the lower endpoint. Normalization
+by u^q uses the same safe directions. Independent drift comparison is
+parent normalized LOWER minus tau child UPPER for refutation, and parent
+UPPER minus tau child LOWER for verification. The checker enforces literal
+child u//2 and positive index. Its three statuses CERTIFIED_FINITE,
+REFUTED_FINITE,UNRESOLVED_INTERVAL correctly distinguish a threshold
+straddle. Complete base, uniform drift/growth and source proof flags
+remain false even after projection or finite drift admission.
+
+LP scope and corrected rounding: for fixed q,tau the dictionary's ray
+squares and baseline residual squares generate a linear finite minimax
+problem. The observed-base epigraph is charged alongside C/(1-tau),
+or C+observedbase for tau1. Column scaling is undone when serializing
+physical lambda; the coefficient costs use squared l1 physical ray norms.
+The corrected producer rounds nonnegative lambdas down to denominator
+2^24, computes the EXACT weighted coefficient cost, and uniformly
+rescales if that cost exceeds the budget. It then recalibrates the FINAL
+formula, rather than retaining the floating LP C. Calibration rounds C
+UPWARD to denominator2^40, preventing a valid large common-denominator
+fraction from exceeding the checker's4096-bit input format. The exact
+budget receipt is outside the small program schema; runner/integration
+checks should preserve it if claiming an admitted budget-constrained search.
+
+Numerical LP failure, terminal resource failure and an inactive/zero
+dictionary are construction/search statuses, not all-scale residual
+refutations. Only an independently admitted LOWER drift>C is a true
+finite counterexample to that frozen recurrence. Changes to rays,C,
+gamma or token normalization define a different candidate. A tau1
+program remains a logarithmic-mode finite hypothesis, never a contractive
+bound disguised by its score.
+
+Resources: producer now accepts a supplied search meter, caps nonempty
+distinct parent/base lists, reserves simultaneous dense/LP allocations
+before constructing them and charges proposal work. Fixed dimension10,
+MAX_RAYS and factor horizon cap bound numerical matrix sizes. Arithmetic
+construction/query reserves cover dense temporary arrays; feature merges
+use bounded077 rational operations. Checker caches an independently
+factored largest horizon and byte-bounds dense category queries at512MiB,
+including resident arrays in allocations. Entry-count power caches in the
+producer still require conservative accounting if arbitrary near100000-bit
+exponents are admitted; generated q/eta denominators are small. Runtime
+solver limits and prospective memory gates are separate protections.
+
+Remaining integration dependencies/cautions:
+* verify_features admits arithmetic category polynomials, not count-token
+  VALUES. verify_energy/drift accepts supplied token_intervals. Bind those
+  ranges exactly to the independently admitted077 compiled parent count-
+  root payload, and require feature admission plus saved076 residual/source
+  admission on both endpoints. Otherwise a tampered token range could
+  produce an apparently valid drift on the wrong state values.
+* Producer power enclosures currently use precision24 while checker default
+  is20. A conservative producerC can still be below the coarser checker's
+  upper drift. Use checkerprecision24 to match or calibrate using the
+  independent checker before freeze; preserve an unresolved outcome when
+  only precision prevents admission, instead of calling it refuted.
+* Observed base rows remain finitely sampled. No current code supplies a
+  complete residual-energy base or uniform recurrence theorem. A runner
+  should publish those obligations separately from the original Gbase
+  and075/076 correlation obligations, retaining all old counterexamples.
+
+The corrected exact state partition, energy projection and interval
+recurrence semantics agree with this review's theorem. This makes the
+finite signed energy search mathematically reviewable; it does not pay
+the outstanding all-integer arithmetic recurrence or original RH goal.

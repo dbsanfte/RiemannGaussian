@@ -1,0 +1,111 @@
+COUNT-ADAPTIVE SIGNED OPERATOR SEARCH076: PRE-RUN PROTOCOL
+
+Purpose and scope
+
+Search the residual obligation left by075 with new arithmetic operators,
+not by increasing the constants of the refuted075 formulas. An operator
+can use different rational count powers on different prime blocks and
+multiple powers, with signed coefficients, on the SAME block. The input
+includes every saved075 failure. No all-scale arithmetic bound is assumed.
+
+The exact source remains G(u)=M(u//8)-M(u//10)-M(u//4)+M(u//5),
+Z(t)=G(floor(80t)). At X=u//4 use adjacent prime blocks with thresholds
+theta=1/2,17/31,4/7,2/3,5/7,4/5,7/8 and direct dilations d=2,3,5,6.
+For each source column retain its signed sum B_i, moment Q_i and ACTUAL
+prime count n_i. A direct column has count1. Floors, multiplicities and
+empty blocks use the separately admitted075 arithmetic convention.
+
+New formulas and their proof cost
+
+L(u)=sum_t a_t B_i(t)(u)/max(1,n_i(t)(u))^gamma_t.
+Prime gamma values in this pilot are1/2,17/31,7/11,2/3,1,3/2. An open
+branch also offers1/3. The API admits other nonnegative rational powers
+subject to explicit work/bit/atom budgets, without a root whitelist.
+Direct atoms have gamma0 because other powers give the identical feature.
+
+Let A_i=sum_(t:i(t)=i)|a_t|. If all active prime gamma>=1/2, then
+L^2<=sum_i beta_i Q_i whenever beta_i>=0, active A_i imply beta_i>0,
+and sum_i A_i^2/beta_i<=1. This accounts for repeated source columns,
+all signs and cross terms, without an independence assumption.
+Use unconditional075 uniform child prices H_i and rational h_i>=sqrt(H_i),
+h_i>0. Set S=sum_i A_i h_i and beta_i=A_i S/h_i, with zero for A_i=0.
+Then rho=sum beta_i H_i<=S^2. This correlation theorem does not prove
+anything about the residual G-L. If a prime gamma<1/2 is active the
+same numerical proposal retains a separate UNPAID correlation leaf;
+the independent checker inspects the actual formula, not its branch name.
+
+For each q=1,33/32,129/128, an LP minimizes the maximum discovery value
+of |G-L|/u^(q/2) under a weighted l1 exposure budget. Search prime-only
+and joint prime/direct classes at structural radii1/4,1/2,3/4 and open
+radius1/2:24 new LP proposals total. Round to denominator8192 and apply
+one exact common rational rescale if needed to meet the budget. Recompute
+beta, rho and residual intervals on the final rational operator.
+Floating solver output is only a proposal. LP timeout120s is explicit.
+
+Also score all1272 actual075 feedback templates separately for every q.
+Select the residual and contraction-paid priorities in each class and
+proof mode, deduplicate, then certify their final formulas independently.
+The improved beta certificate is recomputed; no old C is inherited.
+Retain an explicit zero-operator baseline for every q. Empty learned
+operators or duplicated imports are reported honestly as such.
+
+The saved residual constant C is an upward rational enclosure of the
+complete discovery maximum (G-L)^2/u^q. Complete base1<=u<=4096 is
+checked. Choose r>=sqrt(rho), r<1, and
+B=max(Bbase,C/(1-r)^2).
+Induction is CONDITIONAL on uniform residual AND correlation estimates.
+Finite residual gain, the innovation-paid ratio and the complete B ratio
+are separate diagnostics. A smaller C can be offset by contraction cost.
+Three fixed q values are not a proof for every epsilon>0.
+
+Data boundary and order of operations
+
+1. Preserve441 prior frozen source/postrun files by direct byte comparison.
+   Freeze the11 new076 implementation, test, receipt, review and protocol
+   files before numerical candidate search. No precautionary hashes.
+2. Reuse all1680 admitted075 learning parents, including its adaptation
+   failures, as discovery. Reuse the exact stored source admission; do not
+   rerun old source science or present this as a historical holdout.
+3. Freeze EVERY selected new formula and discovery verdict before making
+   new interstitial source queries. No adaptation refits are permitted.
+4. Evaluate all discovery-eligible programs at1440 disjoint interstitial
+   parents u=80k-phase, phase0..79, with k=80,112,160,224,320,448,640,
+   896,1280,1792,2560,3584,5120,7168,10240,14336,20480,28672.
+   These are new parents for these formulas, within the previously used
+   arithmetic prefix:maximum573440 versus known655360. They are not
+   statistically or historically independent arithmetic samples. Testing
+   all80 phases at an anchor does not cover all intervening parents.
+5. Only formulas passing BOTH applicable lemmas throughout discovery and
+   interstitial domains may query final240 parents at k=40960,49152,65536,
+   phase0..79. This requires the larger arithmetic prefix1310720. If none
+   qualifies, record the skipped final phase and make no final query.
+6. Source generation and independent075 reconstruction must agree exactly
+   on the same spec and parent list before any076 program is checked.
+   The076 independent checker recomputes roots, signs, base, price and
+   contraction conditions. A lower interval above threshold REFUTES the
+   frozen formula; a straddling interval is UNRESOLVED_ROUNDING, not a
+   pass or a refutation. Historical refutations cannot become passes
+   through later successful tests. Output exact unpaid leaves and witnesses.
+
+Resources and validation
+
+Three worker processes, one native numerical thread each; aggregate16GiB,
+whole-stage7200s, per-meter work ceiling300000000000. Monitor aggregate
+RSS and retain conservative process peaks. Gates precede large allocations;
+exact count/feature caches have byte limits. Producer base/root work has
+conservative explicit allowances, not claims of cycle-accurate accounting.
+The checker owns its count/base arithmetic caches and does not import the
+new producer. Independent mathematical review uses a Sol6.1 subagent.
+Development receipts must PASS before freezing. Do not rerun unchanged
+historical tests or scientific searches. Test fixtures are separate from
+scientific candidate observations and do not inspect final scientific data.
+
+Interpretation and continuation
+
+Universal correlation certificates pay ONLY that leaf. Finite survival
+does not prove uniform innovation, a source theorem, or RH. Preserve the
+original071 joint signed remainder, separable price, parameter coverage,
+head/core transfer and RH obligations. They remain outside this source
+slice experiment. Feed failures into construction/lemma search; do not
+call a raised constant, smaller numerical residual, or shorter template
+an arithmetic cancellation theorem.

@@ -1,0 +1,355 @@
+PRIME LOGARITHMIC SHEAR WITH GAP-LAPLACIAN CANCELLATION
+2026-10-07. Written universal proofs; not theorem-prover certified.
+
+This is a known-kernel compound extension, with verified arithmetic support,
+inverse and domain consequences. It is not claimed historically new or a new
+primitive. The exact weighted application has unresolved publication history.
+
+1. FORMAL ARITHMETIC DEFINITION AND CLOSED INVERSE
+
+Use ordinary Dirichlet convolution D in characteristic zero, unit delta_1,
+normalized f(1)=1 and augmented h=LOG_D(f). Let pi retain PRIME coefficients
+only, discarding proper prime powers and other composites. For p<q prime,
+d=q-p, r>=1 integer, define the symmetric bilinear kernel
+
+  J_r(h,k) = sum_(p<q) (h(p)k(q)+h(q)k(p))/2
+      * [delta_(p^2*d^r)+delta_(q^2*d^r)-2delta_(p*q*d^r)].
+
+Only pi h and pi k are used. Put
+
+  A_t(h)=h+t J_r(h,h),
+  S_t(f)=EXP_D(A_t(LOG_D(f))).
+
+All three indices exceed both inputs. The smallest image is p^2*d^r,
+and p^2*d^r>=p^2*d>p+d=q for p>=2,d>=1. Consequently every coefficient
+is a finite polynomial in strictly smaller input coefficients. Prefix
+semantics are valid on arbitrary signed rational inputs, not just zeta.
+For a prefix N, min(p,q)<=sqrt(N) and d^r<=N/min(p,q)^2; hence all
+contributing primes are at most sqrt(N)+(N/4)^(1/r). Producer cutoffs use
+an integer upper bound on this quantity, rather than sparse zero filling.
+
+Every output index is composite, so pi J=0. Therefore
+
+  pi A_t(h)=pi h,
+  A_t(A_u(h))=A_(t+u)(h),
+  S_t S_u=S_(t+u), S_t^-1=S_(-t).
+
+This closed inverse is a quadratic shear in logarithmic coordinates.
+There is no inverse-tree recursion. The elementary-shear construction is
+known algebra; the arithmetic output-support proof makes it apply here.
+S is not an ordinary unit-group homomorphism: J(h+k,h+k) has the generally
+nonzero extra term 2J(h,k). It also fails universal input-root commutation.
+
+For ordinary input and output roots, respectively,
+
+  S_t(f^beta)=EXP_D(beta*h+t*beta^2*J(h,h)),
+  S_t(f)^beta=EXP_D(beta*h+t*beta*J(h,h)),
+  their D quotient=EXP_D(t*beta*(beta-1)*J(h,h)).
+
+Thus the logarithmic input amplitude is quadratic, although the scalar
+Laplacian cancellation is a second difference in Mellin values. These
+are distinct degrees and must not be identified. All prime coefficients
+of both LOG and f itself are fixed, since f(p)=LOG_D(f)(p).
+
+The finite support grammar also retains the ODD-input projection: two odd
+inputs have even difference, so all correction outputs are even. The same
+projection-annihilation proof gives an additive-parameter group for that
+different kernel. Its zeta domain and complete fibres are not inferred
+from the selected prime-only operator.
+
+Prime-power, squarefree, Omega<=2 and even masks fail the additive group
+test. An initial prefix through 2048 falsely retained the even mask. Full
+sparse composition catches its first failure at 59105344=4*62^4, from
+the newly created index 64 interacting with input 2. Full sparse producer
+and checker computations agree, including term counts and first failures.
+The failed prefix result is archived; passing unrelated-input and zeta
+profiles were retained when only the failed mask search was repaired.
+
+2. COMPLETE PRIME FIBRES AND SIGN SEPARATION
+
+For EVEN r, diagonal images p^2*d^r and q^2*d^r are perfect squares.
+The off-diagonal image pq*d^r is not a square: p and q do not divide d,
+so their valuations are exactly one and its squarefree part is pq.
+Positive and negative coefficient supports are disjoint. For the zeta
+input each unordered prime pair has weight one, so diagonal coefficients
+are nonnegative and nonsquare coefficients are nonpositive.
+
+An off-diagonal image uniquely determines its prime pair: factor N,
+retain primes of odd valuation, require exactly two p<q, and test
+N=pq(q-p)^r. This is a universal complete-fibre criterion, not a finite
+injectivity inference. Diagonal images aggregate edges. For a square N,
+each endpoint p must divide sqrt(N); require sqrt(N)/p=d^(r/2), and test
+the other endpoint p-d or p+d for primality. These tests recover EVERY
+diagonal fibre. No individual diagonal inverse or isometry is claimed.
+
+The first correction coefficients are +1 at 4, -2 at 6 and +1 at 9,
+from primes 2,3 with gap one, for every r. The independent checker uses
+the complete square/squarefree-part rules, FLINT primality and reconstructed
+factor products, rather than the producer's prime-pair enumeration. It
+checks all 32764 encoded indices across r=2,4,6,8 through 8192.
+
+3. ZETA BRIDGE AND TWO DIFFERENT CONVERGENCE DOMAINS
+
+For u(n)=1, h=LOG_D(u) equals 1/e at p^e. Its PRIME projection is the
+prime indicator. Thus the correction, initially on Re(s)>1, is
+
+  H_r(s)=sum_(p<q) (q-p)^(-rs) (p^-s-q^-s)^2.
+
+This grouped sum extends H holomorphically to
+
+  Re(s)>2/(r+2), r>=3,
+
+and converges absolutely AS PAIRED TERMS at its endpoint, locally uniformly
+on compact subsets of the closed half-plane. The boundary is the optimal
+right-half-plane threshold. In particular H_4 is holomorphic on Re(s)>1/3.
+
+Proof above the threshold: set sigma=Re(s)>0 and bound |s| on a compact
+set. In the balanced region q-p<=p, the fundamental theorem of calculus
+gives
+
+  |p^-s-q^-s|<=|s|(q-p)p^(-sigma-1).
+
+If u=2-r*sigma>-1, summing integer gaps d<=p bounds a dyadic block by
+O(|s|^2 X^(2-(r+2)*sigma)). If u=-1 there is a logarithm; if u<-1 the
+gap sum is bounded and the block is O(|s|^2 X^(-2*sigma-1)). These bounds
+are summable above 2/(r+2). In the unbalanced region q>2p, bound the
+summand by 4p^(-2sigma)q^(-r*sigma). Summing p<=q/2 gives the same bulk
+threshold when 2sigma<1, with a logarithm at 2sigma=1. For 2sigma>1,
+the remaining requirement r*sigma>1 is weaker for r>2. This proves
+normal absolute convergence of the PAIRED sum on the stated domain.
+
+At sigma_0=2/(r+2), r>=3, we have 2sigma_0<1 and r*sigma_0<2. PNT gives
+O(X/log X) primes in a proportional interval. For a balanced block the
+derivative estimate and d<=O(X) bound each pair by O(|s|^2 X^-2).
+The block has O(X^2/(log X)^2) pairs, so its total is O((log X)^-2),
+summable over dyadic X. In the unbalanced region, partial summation gives
+
+  sum_(p<=q/2)p^(-2sigma_0)=O(q^(1-2sigma_0)/log q),
+
+leaving sum_q 1/(q log q), which converges by PNT. This proves endpoint
+paired convergence uniformly for bounded |s|. No prime-pair conjecture
+or sieve asymptotic is used for this endpoint.
+
+Sharpness: separated proportional prime intervals have order X^2/log^2 X
+pairs. For every fixed positive real sigma, their difference has size
+at least c_sigma X^-sigma. Thus their paired contribution is at least
+c X^(2-(r+2)*sigma)/log^2 X, proving divergence for 0<sigma<2/(r+2).
+At the isolated parameter s=0 each paired term vanishes; that does not
+provide normal convergence on an open half-plane below the proved edge.
+For r=2, the fixed prime p=2 already gives divergence at sigma=1/2
+by sum_q 1/q, so its endpoint does not share the r>=3 improvement.
+
+For EVEN r>=4 the ORDINARY arithmetic coefficient series J(pi h,pi h)
+instead has exact absolute abscissa 1/2, including endpoint convergence.
+Indeed sign separation gives its absolute total exactly as
+
+  B_r(sigma)=sum_(p<q) (q-p)^(-r*sigma)(p^-sigma+q^-sigma)^2.
+
+The balanced region has the same bounds as the gap correlation and its
+diagonal parts are comparable. Near-pair Cauchy/bin-count lower bounds
+from PNT force divergence below sigma=1/2. Above it an integer majorant
+suffices. At the endpoint the uniform unconditional prime-pair sieve bound
+from gap_proof.txt section 4 gives summable balanced blocks O(log^-2 X).
+Here r/2>=2, so its gap weights have a convergent singular-series sum.
+The unbalanced part is bounded by sum_q q^(-r/2)log log q, which converges.
+
+This is a genuine cancellation-domain difference: paired H_4 extends to
+Re(s)>1/3, but its ORDINARY coefficient series is not absolutely convergent
+below 1/2. Splitting the paired square into three infinite sums in the
+smaller domain is invalid. The scalar identity is first proved where all
+ordinary series converge and then continued using the grouped H.
+
+4. SHARP WEIGHTED BILINEAR NORM AND ITS LIMIT
+
+Let A_sigma be the absolute coefficient norm sum |h(n)|n^-sigma, sigma>=0.
+The prime projection is a contraction. For an edge p<q with d=q-p, the
+weighted output absolute mass divided by the two input weights is
+
+  C(p,d)=d^(-r*sigma)[(q/p)^sigma+(p/q)^sigma+2].
+
+For sigma>0 write x=1+d/p. This bracket is
+4cosh^2((sigma/2)log x). Increasing p decreases it. At fixed p,
+
+  d/dd log C = -r*sigma/d
+               +sigma/(p+d)*tanh((sigma/2)log x)<0.
+
+Thus the maximum is attained at p=2,d=1, which is an actual prime edge.
+The half in the symmetric bilinear definition gives the EXACT norm
+
+  ||J_r||_(A_sigma x A_sigma -> A_sigma)
+       =[(3/2)^sigma+(2/3)^sigma+2]/2.
+
+The value at sigma=0 follows directly. Inputs delta_2,delta_3 attain it;
+their three images are distinct. This is a bilinear norm, not an asserted
+sharp quadratic norm on h=h. It applies even without the square/nonsquare
+separation, by triangle inequality; the extremizing single edge has no
+within-edge cancellation.
+
+For zeta's prime indicator, however, ||pi LOG_D u||_(A_sigma)=P(sigma)
+diverges for sigma<=1. The generic bounded bilinear estimate therefore
+does not transfer zeta to the critical strip. The paired cancellation proof
+supplies separate arithmetic information. Neither norm is an RH estimate.
+
+5. ORDINARY ROOTS, ACTUAL ZEROS, AND RH SCOPE
+
+With t=1 selected, the proved scalar formulas initially for Re(s)>1 are
+
+  S_1(u^beta)(s)=zeta(s)^beta exp(beta^2 H_r(s)),
+  S_1(u)(s)^beta=zeta(s)^beta exp(beta H_r(s)).
+
+For arbitrary t insert t in each amplitude. Both corrections are
+holomorphic and zero-free on Re(s)>2/(r+2), r>=3. At r=4 this includes
+whole neighborhoods of the two certified simple critical-line zeros.
+Hence at any zero rho in that domain, multiplicity m is retained in the
+ordinary fractional-root exponent m*beta. Around rho a noninteger m*beta
+has the usual nontrivial ordinary-zeta root monodromy. For beta=1 the
+transformed function is locally holomorphic with the same zero multiplicity.
+
+The positive-beta full ordinary transformed series still has exact absolute
+abscissa 1, despite signed coefficients. Absolute convergence above one
+follows from EXP_D's absolute majorant. On the real axis the formula
+diverges as s decreases to 1: zeta(s)^beta diverges while the exponential
+has a finite nonzero limit. Absolute convergence at one would contradict
+that limit by dominated convergence. This argument does not require
+nonnegative actual coefficients; at t=beta=1 the coefficient at 6 is -1.
+
+After canceling the known pole with F(s)=(s-1)zeta(s), all dyadic roots
+F^(2^-j)exp(2^(-2j)H_r), j>=1, extending single-valuedly and holomorphically
+to Re(s)>1/2 is equivalent to RH. Under RH a global LOG F exists there.
+Conversely a zero of multiplicity m in that half-plane would require
+2^j|m for every j, an impossibility. This remains an equivalent criterion,
+not a continuation estimate excluding off-line zeros. One fixed root
+order alone does not exclude multiplicities divisible by that order.
+
+6. GRAPH POSITIVITY DOES NOT REPLACE HOLOMORPHY
+
+For real s=sigma>0, H is the positive graph Dirichlet energy of the
+values x_p=p^-sigma with edge weights |p-q|^-r*sigma. The weights 1,-2,1,
+constant-vector null law and positive graph-Laplacian form are classical.
+The 49-program completion grammar recovers these weights by constant and
+first-difference annihilation; this is a known-operator calibration.
+
+For complex s the holomorphic H uses (x_p-x_q)^2 and d^-rs, without
+conjugation. The positive Hermitian expression instead uses
+
+  E_sigma(t)=sum_(p<q)d^(-r*sigma)|p^(-sigma-it)-q^(-sigma-it)|^2.
+
+It depends on both s and its conjugate and generally differs from H.
+All six actual-zeta scalar groups reject replacing H by this expression.
+Real-axis positivity cannot be carried over as complex holomorphic
+positivity. The scalar exponential factor proves no positive spectral
+operator whose eigenvalues are Riemann zeros.
+
+At sigma<=1/2 the vector x_p is not in l2, although its paired graph energy
+can be finite. This is a finite-energy configuration, not an assertion
+that it is in the domain of a self-adjoint Hilbert-space operator. The
+finite graph computations do not establish a critical-line spectral RH
+model, a determinant identity, or its required trace/domain properties.
+
+7. EXPLICIT INFINITE TAILS AND NATIVE-ZETA REFERENCES
+
+For r=4, sigma>1/3 a lower bound on Re(s), S>=|s|, prime graph cutoff N,
+and A=floor(N/2), bound missing pairs p<q,q>N as follows. Split d=q-p<=p
+from d>p. For the balanced part p>A, let u=2-4sigma, delta=6sigma-2>0.
+
+If u>-1, sum_(d<=p)d^u<=C_u p^(u+1), where C_u=1 for u>=0 and
+C_u=1/(u+1) for -1<u<0. Thus the balanced tail is at most
+
+  S^2 C_u A^-delta/delta.
+
+If u=-1, use
+S^2 A^(-2sigma-1)[(1+log A)/(2sigma+1)+1/(2sigma+1)^2].
+If u<-1, use S^2 zeta(4sigma-2) A^(-2sigma-1)/(2sigma+1); the independent
+checker replaces this zeta by 1+1/(4sigma-3).
+
+For d>p with p<=A, we have d>N-p>=A. The omitted part is at most
+
+  4 A^(1-4sigma)/(4sigma-1) sum_(p<=A)p^-2sigma.
+
+The source computes the known finite PRIME sum; the checker replaces it
+by the full integer sum. For p>A, the remaining bound is
+
+  4 A^-delta/[(4sigma-1)delta].
+
+These bounds are valid for every complex s in the chosen rectangle, using
+its minimum real part and maximum modulus. They also bound the Hermitian
+energy's tail. Finite paired values are computed by direct differences or
+by NONCONJUGATING polynomial correlations of the prime indicator, x_p and
+x_p^2. Correlation coefficients give the two diagonal terms minus twice
+the off-diagonal term, with gap zero omitted.
+
+For the main scalar reference, restore the missing edges from p=2 to q>N
+using the binomial expansion
+
+  (q-2)^-4s=q^-4s sum_(k>=0)(4s)_k (2/q)^k/k!.
+
+The three resulting prime tails have arguments 4s+k,5s+k,6s+k. Native
+prime zeta is computed by the classical Mobius sum of LOG zeta(m*arg)
+with an explicit positive-real majorant for its omitted Mobius terms.
+All real parts here exceed one. At the scalar test arguments, native
+LOG zeta(s) also equals the Euler branch since LOG zeta(sigma)<pi.
+
+For degree K, Cauchy's bound on |z|=1/2 gives the omitted binomial terms
+at z=2/q at most 2^(4S)(4/q)^(K+1)/(1-4/q). Multiplying the square's
+bound 4*2^-2sigma and summing q>N by the integer integral gives
+
+  4*2^-2sigma*2^(4S)*(4/(N+1))^(K+1)/(1-4/(N+1))
+     * N^(1-4sigma)/(4sigma-1).
+
+The other missing edges use the paired bounds above, excluding prime 2
+only in the finite small-prime sum. Mobius uncertainties stay inside the
+restored reference balls. Source parameters N=1024,K=8,M=32 change to
+1536,10,40 in the independent direct-pair reference.
+
+To bound the FULL signed EXP coefficient tail, form the nonnegative major
+EXP_D(|beta|*LOG_D u+|amplitude|*|J(pi h,pi h)|). Its scalar real total is
+exp(|beta|LOG zeta(sigma)+|amplitude|B_r(sigma)). Subtract the major's
+exact finite prefix. The bilinear norm in section 4 bounds the missing
+prime input for B. The source uses native prime-zeta tails; the checker
+uses an integer tail and P(sigma)<=log(1+1/(sigma-1)). This gives a valid
+absolute tail for the signed actual EXP, unlike a positive-coefficient
+total-minus-ACTUAL-prefix argument. Coefficient errors at index four of
+1/2 and the smaller 1/3 are rejected independently.
+
+Whole zero disks reuse the certified simple zeros at heights near
+14.134725 and 21.022040; no new zero is found. Direct finite graph N=2048
+and its uniform paired tail give Gamma modulus upper bounds less than
+0.435 and 1.845 on their entire enclosing rectangles. The independent
+direct/polynomial comparison changes to 1536/3072 and integer tails,
+giving bounds less than 0.357 and 1.674. These are rigorous whole-disk
+bounds, not claims of many-digit correction values at an exact zero.
+For beta=1,1/2,1/4, exp(-beta^2 M) is a strictly positive lower bound on
+the input-root factor everywhere on each disk. Root nonvanishing comes
+from the exponential factor, not from requiring H itself to be nonzero.
+
+8. VERIFICATION AND HISTORICAL STATUS
+
+All five independent exact and six analytic gates pass. Exact checks use
+Omega derivation EXP/LOG recurrences, complete prime fibres, signed generic
+inputs, all 32764 encoded indices, finite rational graph positivity, and
+untruncated support-mask compositions. The initial even-mask false
+positive is archived, not presented as a passing universal identity.
+
+Six fresh full native-zeta scalar groups use changed coefficient cutoffs
+4096/6144, graph references 1024/1536 and tail estimates. Five separate
+ordinary-root groups distinguish input amplitude beta^2 from output beta.
+Two whole-zero disk groups use changed graph representations and bounds.
+The cumulative full comparison count rises from 132 to 138; the root and
+zero groups are separate auxiliaries. Older passed baselines are not rerun.
+
+Primary established frameworks:
+  Weighted graph Laplacians: Krasnov and Scarinci, Weighted Laplacians,
+  cocycles and recursion relations (2013), section 1.8:
+  https://arxiv.org/pdf/1310.0653
+  Prime-pair uniform sieve bound and known correlation: Korevaar,
+  Prime pairs and Zeta's zeros (preprint 2007, arXiv 2008), (1.3),(1.5),(2.3):
+  https://arxiv.org/pdf/0806.0934
+  PNT: NIST DLMF 27.12, https://dlmf.nist.gov/27.12
+
+The graph kernel, finite differences, prime projection, Mobius inversion,
+elementary polynomial shears and Dirichlet LOG/EXP are known. The precise
+prime-index composite and combined fibre/norm/domain application have
+unresolved publication history. An absent exact search match establishes
+no historical novelty. This is the seventeenth compound consequence; no
+eleventh primitive family is counted. Verified-historically-new operators:
+zero. New RH or zero-location estimates: zero. Research remains active.

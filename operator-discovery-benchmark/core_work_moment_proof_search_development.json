@@ -1,0 +1,23 @@
+{
+  "owner": "root",
+  "modules": [
+    "test_core_work_moment_proof_search"
+  ],
+  "runs": [
+    {
+      "owner": "root",
+      "modules": [
+        "test_core_work_moment_proof_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=1339767\n",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.440s\n\nOK\n",
+      "operations": 1339767,
+      "elapsed_seconds": 0.5224923570058309
+    }
+  ],
+  "operations": 1339767,
+  "actual_arithmetic_observations": 0,
+  "edits_stopped": true,
+  "actual_numeric_cache_reads": 0
+}

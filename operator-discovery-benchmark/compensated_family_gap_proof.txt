@@ -1,0 +1,81 @@
+AUTOMATIC ALL-INTEGER GAP CERTIFICATES FOR A SIGNED OPERATOR FAMILY
+7 October 2026. This generalizes the selected-instance proof. It supplies a
+proof method, not an expected output for the candidate search.
+
+Input: rational 0<u<v<1, weights w_u=-a(v)/(a(u)-a(v)),
+w_v=a(u)/(a(u)-a(v)), a(t)=1/t-t, and the proposed positive gap gamma.
+For this run gamma is the previously inferred sharp two-distinct-prime gap.
+It is an unproved global proposal until every case below is closed.
+
+The operator is B=W(sum w_i R_(v_i)), on ordinary zeta's constant-one input.
+The common atomic sign and uniform bounds, derived in Sections 1 and 2 of
+compensated_global_gap_proof.txt, hold for EVERY 0<v_i<1:
+
+ |B_(v_i)(n)| <= U_(v_i)(m)/g, m=omega(n)>=2,
+ U_v(m)=m!/[(1-v)*prod_(j=1..m)(m*v/(1-v)+j)],
+ |B_v(p^g)| <= (1-v)/g, g>=2.
+
+U_v(m) decreases in m. Because the weights have opposite signs and the atomic
+coefficients have a common sign, define
+
+ A_m=max_i |w_i| U_(v_i)(m), m>=2,
+ A_1=max_i |w_i|(1-v_i).
+
+Then |B(n)|<=A_m/g. These are upper bounds over every prime size, every
+exponent pattern and every gcd, proved by the positive Jordan series and
+concavity of log(exp(x)-1). They are not estimated from finite data.
+
+The fixed algorithm chooses the first m0>=3 with A_m0<gamma. Monotonicity
+closes all m>=m0. For each 2<=m<m0 it chooses
+G_m=floor(A_m/gamma)+1, closing every g>=G_m. It also chooses
+G_1=floor(A_1/gamma)+1, closing the one-prime tail. Since the proposed
+gamma is no larger than the weighted atomic bound at a balanced two-prime
+product, G_1>=2 and G_2>=2 for these inputs.
+
+The remaining one-prime cases g=2..G_1-1 have exact rational coefficients
+
+ sum_(k|g)mu(k)/k * [1-h(1-k/g)],
+ h(t)=sum_i w_i*t/[v_i+(1-v_i)t].
+
+A rational failure gives an actual counterexample at n=2^g, independently
+of prime-size questions. Otherwise these cases are fully closed.
+
+For each remaining m>=2 and 1<=g<G_m, normalize the logarithm shares as
+q_i=g*log(p_i)/log(n); sum_i q_i<=1. The coefficient is exactly
+
+ B_g(q)=sum_(k|g)mu(k)/k * sum_(S subset {1..m})
+             (-1)^|S| h(1-(k/g)*sum_(i in S)q_i).
+
+For m=2,g=1 squarefree inputs, the independent rational pair identity
+proves the sharp proposed gamma. If an exponent repeats, after relabeling
+2*q_1+q_2<=1, so the algorithm uses q_1=x_1/2,q_2=x_2.
+All other remaining regions use the broader simplex sum q_i<=1.
+
+Every rational inequality +/-B_g<=gamma is homogenized in q_i and a slack
+variable. Each denominator factor v_i*T+(1-v_i)*(T-S) is strictly positive
+on T>0 and 0<=S<=T. If an exact homogeneous polynomial times a nonnegative
+power of T has only nonnegative coefficients, its inequality is universal
+on the entire closed simplex. The certificate stores the original integer
+coefficient vector and the multiplying power. The independent checker
+reconstructs every rational expression and coefficient vector separately.
+
+Resource limits can leave regions unproved. A candidate with ANY such region
+remains a numerical lead. Failure of this sufficient polynomial method is not
+a counterexample. A global theorem is recorded ONLY when every residual region,
+every finite prime-power case and every unbounded tail has been certified.
+
+The construction partitions ALL composite integers, rather than testing a
+bounded list of omega/g values. The common sign proof covers arbitrary
+factor counts by the same positive multinomial expansion. The equality
+sum_(k|g)mu(k)k^(j-1)=prod_(p|g)(1-p^(j-1)) is the finite distributive
+identity for the squarefree subsets of the prime support, for arbitrary g.
+
+The proposed gap is sharp whenever the global bound passes: the two-distinct-
+prime formula approaches it along primes with logarithm ratio tending to one.
+Bertrand's postulate supplies such a sequence. This classical dependency
+concerns sharpness only; no prime-distribution theorem enters the upper bound.
+
+The separate all-order zero-signature test and analytic representation remain
+necessary for claims about ordinary zeta. A successful global coefficient gap
+does not imply half-plane continuation, a signed cancellation bound or RH.
+Historical priority of a compound is not decided by a successful certificate.

@@ -1,0 +1,241 @@
+Free-coordinate continuation versus cone-Jacobi scaling: analysis v1
+2026-10-09. New memo only. Publication018/frozen sources and earlier notes
+remain unchanged. No research rerun, new seed metric, solver, map replay,
+source generation or heavy exact elimination was performed.
+
+Recommendation
+
+Prefer one preregistered EXACT-RATIONAL PRODUCER COLUMN-NORM cone-Jacobi
+experiment, with norms explicitly unverified numerical calibration, from the
+publication018 exact endpoint, if its explicit rational norm/bit caps complete.
+It removes the known disparity in free-coordinate cone sensitivity without
+materializing denseN, changing the merit, truncating support or guessing faces.
+Any strictly positiveD preserves the feasible set independently of whether
+the producer norms are correct. Norm correctness need not be trusted for
+proposal generation or final admission. Its projected advantage over simply
+running more iterations is plausible,
+not guaranteed: normalization does not remove near-parallel columns, PSD
+spectral approximation or a badly conditioned affine chart. A longer identity-
+scaled continuation is a useful CONTROL, not the recommended main improvement.
+Do not run a probe fallback or extra seed automatically if exact norms hit a cap.
+
+Stored evidence (not a new candidate evaluation)
+
+Source: cancellation-arithmetic-results/primitive-state-free-cone-search-001/
+jobs/proposal.json, map.json, endpoint.json, check.json and the published
+source/backend. The trace has24 accepted steps, all accepted on their first
+trial, with a fixed step4.476026435265791e-11. The eight-step power estimate
+settled near2.2341244281338097e10. Merit fell17,992,481.0626 to137,796.3421;
+the last step ratio is about0.98555. Its composition is important:
+    scalar penalty17,992,480.7626 ->137,796.0358;
+    matrix penalty0.300008506 ->0.306254837.
+Thus the impressive total decline was scalar dominated, while the PSD penalty
+slightly WORSENED. The final exact endpoint has zero equality mismatches,
+141 negative scalar coordinates (squares) and failed parent/storage PSD checks;
+canonical child0 passesPSD. This is progress in a penalty, not proximity to
+an admitted certificate and not a proof of either feasibility or infeasibility.
+
+Map:445 free coordinates,1224 projected coordinates,779 pivots,99431 sparse
+normalized entries. Recorded map work11,755,944, proposal34,859,197, endpoint
+2,106,014 and independent check work reserve6,441,711. Proposal elapsed24.26s.
+These historical measurements motivate a budget; no repeat speed is promised.
+
+Longer continuation alone
+
+Continue the SAME exact018 endpoint, identity coordinate scaling, same merit,
+80-digit sparse map/binary64 eigensolves and no new clipping or seed. The
+archived curvature operator is independent of the affine center, so its
+estimate/step can be reused as licensed proposal data or recomputed once
+under a fixed rule. At the observed one-trial work rate,128 additional steps
+would cost roughly170m proposal units and fit the nominal229.5m remaining
+allocation. At three trials per step the cost can be far larger, so iteration
+count alone is insufficient: an explicit charged budget and early termination
+rule are necessary.
+
+For perspective ONLY, extending the final local ratio unchanged for128 steps
+would multiply merit by roughly0.155; reducing it by1e6 at that same ratio would
+need about949 steps. These are illustrations of why24 more steps may merely
+continue slow contraction, NOT convergence forecasts. Eigenvalue/sign active
+sets can change, the ratio need not persist, and PSD penalty may remain or grow.
+The old step is constrained by a large global sensitivity; more iterations
+address neither that disparity nor almost dependent free directions.
+
+Exact full-column cone-Jacobi
+
+Write x=c+Nf in the licensed445-dimensional chart. Let B stack all366 square
+and five slack coordinates, C and H=P+4C with the full symmetric Frobenius
+metric. For each free coordinatej, compute the HOMOGENEOUS exact response
+    v_j=N*e_j
+by one descending-pivot sparse back-substitution with zeroRHS. The affine
+constant must NOT be included. Do not copy/normalize the basis anew for each
+column: a zeroRHS operator can skip the stored augmented target while retaining
+the same licensed coefficients. No denseN or new rank decision is required.
+
+Compute the exact rational
+    g_j=||B*v_j||^2
+       =sum_scalar v_i^2 + ||C(v_j)||_F^2 + ||P(v_j)+4C(v_j)||_F^2.
+Use diagonal squares once and upper offdiagonal squares TWICE. Every g_j>=0.
+A streaming implementation retains one1224-vector, one445-vector of norm
+records, and small15x15 blocks; it can discard each response after its norm
+and hash/count record. A complete column map is not needed by the search.
+
+For g_j>0 choose the integerk_j characterized EXACTLY by
+    2^(2*(k_j-1)) < g_j <= 2^(2*k_j),
+and set D_j=2^(-k_j). Integer comparisons of rational numerator/denominator
+suffice; no floating log or irrational square root is required. Then
+    1/4 < D_j^2*g_j <=1.
+D is strictly positive and rational. If g_j=0, choose D_j=1 and KEEP the
+coordinate. This means its affine response is invisible to the specified
+cone outputs, not that a primal coordinate or matrix direction is forcedzero.
+No zero column, signed coefficient, support or possible face is discarded.
+
+CONDITIONAL on the reported norms being the TRUE exact column norms, and
+absent exponent clipping, the exact scaled curvature K_D=D*N^T*B^T*B*N*D has
+trace<=445 and therefore largest eigenvalue<=445. This is a useful exact
+majorant after diagonal normalization, compared with the archived approximately
+2.23e10 estimate before scaling. It does not bound the smallest eigenvalue
+or the condition number. Near-parallel columns can keep the search very slow.
+The numerical PSD-gradient remains mixed precision; this curvature statement
+is about the EXACT convex merit/operator, not exactness of a binary64 eigensolve.
+Do not mark the actual scaled trace/norm bound certified unless all445 norms
+have been independently verified. In the recommended proposal-only mode,
+column_norms_independently_verified=False and scaled_trace_bound_certified=False.
+
+One may bound allowed exponents in the protocol, for example|k_j|<=900.
+Prefer returning UNKNOWN if a required exponent exceeds the range; clipping
+keeps feasibility but invalidates the unqualified trace<=445 claim. Any clipping
+policy must be declared and its changed scaled diagonal/trace recomputed exactly.
+
+Coordinate update and seed preservation
+
+Center on the LICENSED exact018 free vectorf0, and set f=f0+D*z, initiallyz=0.
+This changes no feasible polynomial or cone condition: positive diagonalD is
+invertible and the original exact chart/endpoint lift is unchanged. Forward
+linear actions become N*(D*d); reverse gradients become D*(N^T*g_x). The
+power operator becomes D*N^T*B^T*B*N*D. The squared gradient norm in Armijo
+must be measured in z coordinates; using the old f-gradient norm would be
+incorrect. Recompute the fixed eight-step power estimate for this scaled
+operator. Retain the same maximumthree Armijo trials and coefficient1/8.
+
+Both f0 and every fixed-precision z export are exact dyadic rationals; each
+D_j is a poweroftwo. For the final endpoint compute f0+D*z as an EXACT rational
+sum, then perform the original exact back-substitution, canonical lift and
+all5641 original equality/sign/PSD checks. The exact sum can require MORE than
+269 significant bits, although both summands came from269-bit records. It must
+not be silently rounded back to a269-bit number or treated as an unscaled
+seed. Enforce an explicit endpoint bit cap (existing4096 if retained), emit
+all445 coordinates and their bindings, and return UNKNOWN if the cap fails.
+An implementation may evaluate f0+D*z numerically during search, but the trace
+must distinguish that approximation from its exact endpoint interpretation.
+Initialz0 reproduces the exact018 point without new seed clipping or changed
+support. The initial backward-reference check must use that018 point, not the
+older publication017 reference by accident.
+
+Costs and bit-growth limits
+
+445 full-column homogeneous solves cost the multiply/add proxy
+    445*2*99431 =88,493,590 units,
+plus initialization,371 scalar/240 upper-triangle norm operations per column,
+H assembly, hashing and bit checks. A100m scaling allocation is plausible
+under that explicit meter, but not guaranteed. Exact rationals can grow:
+response entries fitting4096 bits do NOT ensure their squared norm fits4096.
+Declare a separate bounded norm-intermediate cap, e.g8192 bits, while keeping
+source/candidate limits4096; or retain4096 throughout and accept possible
+UNKNOWN. Norm accumulation can exceed even8192 through denominator growth.
+Do not substitute highprecision estimates silently on rational-cap failure.
+Exact proof of the scaled-diagonal/trace bound needs these exact norms.
+
+A cheaper variant computes all445 norms in80-digit arithmetic, exports each
+estimated norm and chooses D by exact integer comparisons on that finite export.
+D and the coordinate change remain exact and invertible, but g_j is then only
+an estimate: neither the true scaled diagonal nor trace<=445 is certified.
+This variant is distinct and should have its own protocol; it is not the
+recommended exact-norm experiment or an automatic fallback.
+
+Given the requested per-job base allocations input143.5m,map50m,endpoint20m,
+existing checkabout7m, the nominal remainder is229.5m. A concrete prospective
+budget is100m exact norms +110m proposal +15m additional norm/scaled-trace audit,
+for a total about445.5m. Fixed input/byte/receipt and final checker ceilings
+must be recomputed for the new artifacts; this estimate alone is not a resource
+receipt. If exact norm verification consumes more than15m, reduce the proposal
+allocation BEFORE freeze or stop; never borrow beyond450m. The recommended checker validates every strictly positive dyadicD, its declared
+rounding/exponent policy from the exported calibration records, coordinate
+bindings, finite step/trace history and exact endpoint. It does NOT replay all
+445 norm columns or trust those records as mathematical evidence. False or
+inaccurate norm estimates may impair convergence but cannot change the feasible
+set or bypass endpoint admission. This proposal-only treatment fits the stated
+100m norms+110m search+15m additional audit allowance; the claimed exactness is
+that of the producer's rational computation, not an independent certificate.
+
+If mathematical certification of the actual445 norms is requested instead,
+independently recomputing all445 responses costs roughly another89m. A simple
+exponent/norm hash cannot replace this work. Include that replay in the SAME
+450m job: e.g100m norm producer+100m norm checker+29m proposal+220.5m base
+=449.5m, subject to actual byte/overhead allocations. This leaves only a short
+search. Do not split required norm verification into separate jobs to evade
+450m. Mathematical norm certification offers a true scaled-trace bound, but
+is unnecessary for proposal-only positiveD and final exact admission.
+
+For the recommended proposal-only scaled experiment, preregister atmost
+64 gradient iterations and a110m proposal cap, one exact final endpoint and
+no new seed. Before each iteration reserve its worst three-trial work plus
+final trace/endpoint overhead; if insufficient, terminate at the last COMPLETE
+accepted point under an explicit budget-stop disposition. Unexpected mid-step
+caps remain UNKNOWN. No half-computed trial should receive a successful trace
+or endpoint export. Resource-limited completion is not a convergence status.
+
+Memory is favorable if responses are streamed. The source/map structures
+remain comparable to the existing fewGiB run; extra live storage is O1224+445
+rational/multiprecision values, rather than1224*445 values. Storing all dense
+columns would be544680 rational cells before Python big-integer overhead, and
+can consume hundreds ofMiB or more at large bit lengths without any search
+benefit. Storing allnorm exact response transcripts can similarly increase
+receipt size; enforce byte caps before allocation/serialization. Allowed16GiB
+is a maximum, not a reason to omit live-cell/source-size accounting.
+
+Deterministic probing alternative
+
+For r_k in the821-dimensional stacked cone-output space, compute
+    h_k=N^T*B^T*r_k,
+    estimated_g_j=(1/K)*sum_k h_k,j^2.
+Sixteen fixed sign probes need16 adjoint passes, approximately3,181,792 sparse
+multiply/add units plus B^T/vector work, far cheaper than445 exact forward
+columns. However fixed deterministic probes can miss a direction or severely
+misestimate sensitivity; no probabilistic confidence follows from a published
+fixed seed or incomplete Walsh/sign set. A zero estimate must use a positive
+scale floor and retain the coordinate, never justify a face. Full symmetric
+PSD-output probes must use the correct duplication/Frobenius adjoint factors.
+Probes are useful as an explicitly approximate budget-limited alternative,
+not a substitute for the exact cone-Jacobi diagnostic when that fits. No probe
+responses were calculated in this analysis.
+
+Independent checker changes
+
+Require new protocol/source hashes; exactly the same chart, source and merit;
+all445 producer norm records labeled independently unverified (or all norms
+independently replayed within the SAME job if certification is requested);
+strictly positiveD and declared exponent/zero policies; exact scale-coordinate
+bindings; a complete018 endpoint seed license; scaled forward/adjoint calibration
+and updated power identity; all trial z/f exports and Armijo quantities under
+the correct coordinate metric; one exact unscaled endpoint and existing full
+finite admission gates. Mark norm certification separately from numerical
+merit/gradient certification; no mathematical norm bound is required or claimed
+in the recommended proposal-only mode. The old checker licensed history and endpoint,
+not general spectral correctness or all new diagonal-norm claims.
+
+Parallelism is optional, not needed for the initial recommendation. Columns
+are independent, but naive workers each replicating143.5m input licensing would
+violate accounting. Any multiworker design needs one independently licensed
+read-only map shared or a serialized verified snapshot, explicit sum-of-worker
+work, shared/private memory attribution, bounded output IPC, numerical thread
+limits, and one counted parent license. More workers do not increase the450m
+per-job work budget. A serial streaming first experiment is easier to audit.
+
+Scope and analysis accounting
+
+Read only the existing approximately2MiB proposal trace and small map/check/
+endpoint metadata and local search/runner/checker sources. Parsed historical
+norm/count/penalty values and performed elementary operation-budget arithmetic;
+no new response column, sensitivity estimate, seed metric or research attempt.
+Conservative total analysis reservation10m (<25m). No claim of convergence,
+finite cone feasibility, an exposed face, a uniform bound or RH.

@@ -1,0 +1,121 @@
+PRIMITIVE STATE FREE COORDINATE SEARCH — PUBLICATION018
+2026-10-09. Research progress; no RH or uniform operator certificate.
+
+Outcome
+
+The first licensed445-free-coordinate cone-distance search completed and was
+independently checked. All24 steps were accepted on their first Armijo trial.
+Its mixed-precision numerical merit fell from17992481.062628105 to
+137796.3420930164 (ratio0.007658551458988664, about99.2341% reduction).
+The exact endpoint satisfies ALL5641 original rational equations, but fails
+finite cone feasibility:141 negative square weights, no negative split-relation
+or slack coordinates, and two indefinite matrices. Its most negative square
+weight is coordinate292, approximately-339.29938761212134. The number of negative
+square weights increased from117 in the parent; the merit reduction does not
+mean every constraint improved.
+
+The full_child matrix is zero and exactlyPSD (15 zero pivots). full_parent has
+an exact negative Schur pivot at6; storage_K has one at7. The independent checker
+retains witnesses in the ORIGINAL matrices. Direct rational quadratic evaluation
+also confirmed their negative values, approximately-7.22926583760731 and
+-0.21601806801828474 respectively. Thus the endpoint is rejected, not admitted
+as a certificate. This does not prove the finite grammar infeasible.
+
+Candidate hash:
+e6e657d74021e32829a9d17a30d583cd76799714855dc7d61cb3ae35801abba8
+Maximum exact candidate numerator/denominator size487bits.
+
+Experiment and verification
+
+Archive: cancellation-arithmetic-results/primitive-state-free-cone-search-001.
+Publication017 supplies the independently proved source/rank/normalized-map
+license. The source has1957 original coordinates,1224 aggregate coordinates,
+rank779 and445 free coordinates. One exact parent free seed; no additional
+clipping, support selection, precision retry, source rebuilding or elimination.
+Materialization replays only retained map rows and matches the licensed hash.
+
+Sparse affine/adjoint arithmetic uses a cloned80-decimal-digit/269-bit context;
+the two15x15 PSD negative parts and eigensolves use binary64. The exact initial
+affine calibration passed at relative error about2.29e-73; the adjoint pairing
+error was about6.69e-74, below the predeclared1e-40 gate. These checks concern
+the affine map, not80-digit accuracy of the PSD gradient or merit.
+
+Eight deterministic power steps set the initial step about4.4760264353e-11.
+Twenty-four gradient steps, up to three Armijo trials each, stopped at the
+declared iteration limit. The last five accepted merits continued decreasing;
+no convergence/infeasibility theorem is inferred. Every power/gradient/trial
+export and cancellation/spectral diagnostic is retained in proposal.json.
+Exact binary-rational export, descending-column back-substitution and canonical
+lift produce one endpoint. All original equalities, signs and three PSD cones
+are independently checked. Rank plus equality/free-coordinate agreement supplies
+affine uniqueness without repeating the old full elimination proof.
+
+Frozen113-source closure;35 prescore tests passed. Whole archive audit passed
+in18.661944366s with3046543 independent search/endpoint operations and8808299
+total audit operations,3946906 total audit cells. It checks bounded numerical
+trace consistency; it does not claim to reproduce/certify all numerical gradients.
+The completed independent review binds seven root inputs using STEM keys
+protocol/source_seal/input/seal/tests/execution/receipt (append.json when reading).
+
+Worker108.632935469s, CPU108.143169196s, peak574324KiB (about561MiB), one thread.
+Limits3GiB memory,900s cooperative including reads/checks,1800s external.
+Charged total work reserve319920560 of450000000, leaving130079440.
+Conservative stages: input/source binding143478849; materialization50000000;
+proposal100000000; exact endpoint20000000; independently verified checker6441711.
+Producer counters are informational, not used to shrink conservative reserves:
+materialization11755944operations; proposal34859197; exact endpoint2106014.
+
+Optional all-scale scalar diagnostic
+
+New primitive_state_uniform_scalar_diagnostic.py with9 tests binds all18 current
+grammar source hashes and the full366/613 descriptor digest. Exact semantic
+selectors extract effective signed relation weights. It checks both head and
+tail coefficients beta_all+beta_region for the norm and prime_power multiplier-one
+child_rowmass groups. Zero in all four positions cancels the ENTIRE two full
+relation combinations by complementary domain partition, at everyX.
+
+This gate is optional sufficient, not necessary for RH or imposed on this search.
+If it passes, an explicit rationalM bounds the remaining formal scalar budget
+byM X^2 using elementary bounds, including exact affine matrix/storage constants
+and combined primitive atom constants. The pure critical constant square and
+finite-instance slacks are excluded from this new derived body. Actual boundary
+cost uses u, while formal constants use z; these vectors remain distinct.
+Negative square candidates can be diagnosed with absolute majorants, but this
+never checks or supplies their missing cone feasibility.
+
+The new endpoint FAILS the optional scalar gate. Approximate effective coefficients:
+  norm: head0.4925506442623151, tail-0.8865911596721672;
+  prime_power: head1.1320675718932387, tail4.34781366533356.
+The report therefore returns majorant_M=null, not a global bound. Its computed
+non-rowmass contribution is about4265.767777461991; the weighted-density terms
+remain unresolved. Gamma-zero alone is insufficient to close that obligation.
+The diagnostic is a separate bounded analysis with2m work reserve. It cannot
+promote the finite candidate or prove the nonconstant polynomial identity.
+
+Conditional analytical route and next work
+
+primitive_state_free_search_uniform_bridge_analysis_v1.txt derives the scalar
+ledger. IF one fixed positive certificate also has a separately proved universal
+nonconstant identity and passes the scalar gate, dropping its pure constant
+square gives Delta(S_R)<=M X^2. Dyadic telescoping then gives
+E(X)<=X^2[S_R(1)+(M/4)log_2X]. This stronger sufficient route would handle all
+epsilon energy exponents, subject to the separately recorded ordinary-zeta
+recovery premises. No such certificate or universal identity is present here.
+
+primitive_state_universal_identity_backend_analysis_v1.txt specifies a next
+proof layer: typed parametric guarded sums, exact ring rules, complementary
+partitions and checked reindexing. It includes universal inside+outside and
+rowmass head+tail proofs, weighted inverse-row closures and an exact omitted-
+complement counterexample. FORMAL polynomial equality must stay separate from
+arithmetic equality obtained from primitive vanishing. The full source adapter
+and universal quartic/nonconstant coefficient cancellations remain unimplemented.
+
+Next numerical work should preregister a bounded continuation or coordinate
+preconditioner using this trace, with a new archive/version. Merit improvement
+alone is not certificate admission; keep full original endpoint verification.
+Next analytical work should implement the small universal-identity rule kernel
+and independent checker, then connect actual source recipes. Do not enlarge
+the theorem scope merely because a development grid matches exactly.
+
+All earlier frozen/published files and this completed run remain immutable.
+Global-bound, RH, exact-admission and infeasibility flags remain false.

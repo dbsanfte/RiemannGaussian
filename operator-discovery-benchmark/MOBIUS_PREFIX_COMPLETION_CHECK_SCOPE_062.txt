@@ -1,0 +1,107 @@
+INDEPENDENT FINITE PREFIX FLOOR COMPLETION (062)
+
+Admission and authority
+-----------------------
+verify_completion(cert,meter=None) checks the exact certificate and reconstructs
+every source floor locally. It imports no LP, discovery producer, scientific
+signature, source table, or numerical kernel. The frozen060 independent source
+parameter/schema/rational helpers and charge-only Meter are reused; they do
+not supply a completion or a budget. Old060/061 sources and results are intact.
+All preparation and source-free calibration live inside the one owned metered
+synthetic suite; there is no preliminary uncounted fixture search.
+
+Parameters retain the SAME ordinary-Mobius joined source:0<alpha<1,gamma>0,
+0<tau<1, distinct actual registered primes M containing p<q. The060 source
+parser enforces its fixed-mask/period capacity. For each fixed integer
+2<=N<=65536, D=floor(4N/p), the certificate must have1<=y<=D,1<=H<=D,
+ascending distinct integer horizons X_j in[1,4N], at most4096. Empty horizons
+are permitted with two empty coefficient rows: this is just a fully priced
+short residual when the tail vanishes. Coefficients are canonical rational
+strings at the EXACT ratio endpoints p/q and1. Zero coefficients are retained
+as actual aligned entries; omitted vector entries and aliases are rejected.
+Input4096bit/2500character and intermediate32768bit limits apply. Every loop,
+integer floor and bounded rational operation charges the deadline/work Meter.
+
+Exact completion, including all exits
+-------------------------------------
+For r in[p/q,1], define
+ f_d(r)=1_(d<=y)*[W(N/(p*d))-r*W(N/(q*d))],
+ W(v)=floor(4v)-3floor(2v)+2floor(v).
+At each ratio endpoint the checker independently verifies
+ f_d(r)=sum_j c_j(r)*floor(X_j/d)
+for EVERY coprime integer H<d<=max(D,max_j X_j). This includes nonsquarefree
+integers; there is no finite whitelist of unregistered prime factors and no
+special assumption about a Mobius sign. Beyond this maximum, target and all
+floors vanish identically. In particular any added horizon can introduce
+nonzero rows AFTER the original token horizon D; those are checked, not lost.
+
+For every coprime1<=d<=H, including d=1 and nonsquarefree rows with mu(d)=0,
+the exact short residual is
+ R_d(r)=f_d(r)-sum_j c_j(r)*floor(X_j/d).
+Its COMPLETE absolute cost is priced conservatively. No arbitrary short row
+is silently deleted, and H need not be at most y. The coefficient cost and
+short residual cost at endpoint r are
+ C_r=sum_j|c_j(r)|+sum_(d<=H,gcd(d,product(M))=1)|R_d(r)|.
+The certificate budget must be exactly max(C_(p/q),C_1). Underpricing is
+rejected, and a larger uncomputed budget is not substituted for exact replay.
+
+Finite arithmetic proof
+------------------------
+Let mu_M(d)=mu(d)1_(gcd(d,product(M))=1). Its complete divisor convolution with
+One is exactly the M-smooth indicator, including integer1. Consequently
+ sum_d mu_M(d)*f_d(r)
+   =sum_j c_j(r)*Psi_M(X_j)+sum_(d<=H)mu_M(d)*R_d(r).
+All floor horizons here are complete before interchanging the finite sums.
+The residual coefficient identity holds also at mu-zero coprime rows; they
+only make the absolute residual bound conservative. Since every X_j<=4N,
+Psi_M(X_j)<=(1+log2(4N))^k, k=|M|. The residual also has this upper weight
+because (1+log2(4N))^k>=1. Thus absolute signed prefix is <=C_r times that
+log weight. Unit and unequal q-range exits remain in the exact source.
+
+Parameter continuum, without numerical testing
+----------------------------------------------
+For r=(1-lambda)*(p/q)+lambda,0<=lambda<=1, interpolate EACH complete horizon
+coefficient vector affinely:
+ c_j(r)=(1-lambda)c_j(p/q)+lambda*c_j(1).
+Target f_d and its completed short residual are affine in the same r. Tail
+identities remain exact, while the sum of coefficient L1 and residual L1 is
+convex. Therefore C_r<=budget for the ENTIRE interval[p/q,1]. For0<t<1,
+r=(p/q)^t lies there and p^-t<=1. The actual shared-carrier signed prefix
+ S_N(y,t)=p^-t*sum_d mu_M(d)*f_d((p/q)^t)
+has the same budget*(1+log2(4N))^k bound, for every such real t. This is a
+finite coefficient proof, not a set of sampled parameter inequalities.
+
+Exact limits of the admission
+-----------------------------
+The proved statement has ONE fixed N and y. It is not a uniform-N theorem,
+not an all-y theorem, and does not pay the061 core. Neither finite LP scores
+nor a list of independently verified finite certificates changes that scope.
+The output marks uniform_N_growth_proved, all_y_bound_proved,
+core_bound_proved, whole_signed_target_bound_proved and RH_proved false.
+
+Useful conditional all-scale recovery (NOT discharged here)
+-----------------------------------------------------------
+Suppose a separate uniform theorem supplied budget<=U(N) for EVERY integer
+y from floor(a(N)) through floor(b(N)), and every integer N>=2, for the061
+core region1<=a<=b<=D. These bounds cover every real core prefix since the
+source sum only changes at integers. Write L=1+log2(4N). Then
+ t*integral_a^b |S_N(y,t)|*y^(-t-1)dy
+   <=t*U(N)*L^k*log(b/a)<=t*U(N)*L^(k+1).
+The positive outer source weight satisfies rgamma(1-alpha)<3 and
+G_M(t)<=product(M)*t^k for0<t<tau<1. Integration yields
+ C_core(N)<=3*product(M)/(k+1-alpha)*U(N)*L^(k+1).
+This is a conditional implication with the complete all-y/all-N budget
+provider OPEN. There is no missing squared cross or implicit target estimate,
+and no finite completion is promoted to that provider. The separately paid
+061 head/exit/terminal regions can compose only after the core premise is paid.
+
+Synthetic verification
+-----------------------
+The tests use mask[2,7], exact W floor expressions rather than LP inference,
+an empty-horizon nonzero unit residual, a nontrivial short residual containing
+the coprime square9, an added-horizon tail trap, direct tiny independently
+factored ordinary-Mobius/smooth-count equality, and a rational interior
+parameter interpolation. Mutation cases cover missing/sign-swapped rows,
+ratios, budgets, horizons, source parameters, strict types, forged all-scale
+claims and capacity. The receipt records the sole owned suite and any failure
+with only affected retests. No prior suite or scientific study is replayed.

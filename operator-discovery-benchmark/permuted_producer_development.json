@@ -1,0 +1,19 @@
+{
+  "operations": 54316,
+  "runs": [
+    {
+      "test": "test_permuted_arithmetic_circuits",
+      "operations": 53945,
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_permuted_arithmetic_circuits operations=53945\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.038s\n\nOK\n"
+    },
+    {
+      "test": "test_permuted_arithmetic_circuits.ArithmeticCircuitTests.test_full_fresh_lower_and_cross_terms_hand_example",
+      "operations": 371,
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_permuted_arithmetic_circuits operations=371\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "in-process unittest loader for test_mobius_mass_conservation_060 via ../.venv/bin/python -B",
+      "returncode": 0,
+      "tests": 5,
+      "stdout": "test_complete_period_and_inferred_identities (test_mobius_mass_conservation_060.MassTests) ... ok\ntest_copies_preserve_signed_source_and_exhaust_smaller_mass (test_mobius_mass_conservation_060.MassTests) ... ok\ntest_independent_admission_of_inferred_mass_bound (test_mobius_mass_conservation_060.MassTests) ... ok\ntest_resource_and_nonconservation_gates (test_mobius_mass_conservation_060.MassTests) ... ok\ntest_smooth_convolution_includes_units_and_small_arguments (test_mobius_mass_conservation_060.MassTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.074s\n\nOK\n",
+      "operations": 98480,
+      "elapsed_seconds": 0.08445458399364725,
+      "peak_rss_KiB": 15872
+    }
+  ],
+  "operations": 98480,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_signature_evaluated": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false
+}

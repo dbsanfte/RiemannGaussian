@@ -1,0 +1,98 @@
+SMALL-ORDER LIMIT COMPATIBILITY WITH A NAMED MERTENS EXTREMUM IMPORT
+
+The source fractional-family results and their sixteen-check audit are retained.
+This is a later compatibility gate; it supersedes plausibility counts, not
+finite computations or operator identities. The external numerical theorem
+below is imported, not independently re-proved or machine formalized.
+
+Dependency: Greg Hurst, Computations of the Mertens Function and Improved
+Bounds on the Mertens Conjecture, arXiv:1610.08551v2 (1 September 2017),
+Theorem 6.1, printed page 11; Ingham's Theorem 4.2, printed page 5.
+The published assertion is liminf M(x)/sqrt(x)<-1.837625. We use only the
+strictly weaker rational consequence limsup |M(x)|/sqrt(x)>7/4.
+Its large zero/derivative/phase computations have NOT been independently
+reproduced here. The pinned source is the author's primary paper.
+
+1. A GENERIC PARAMETER LIMIT
+
+For a compensated positive-order family with fixed rational c,b, set
+S=sum c_j, B=sum b_j, Delta=B-S. Since T_0=delta_1-mu and
+J_0(y)=y-1, its limit as a tends to zero is, at every fixed real x>=1,
+
+ V_0(x)=S-B*x*m(x)+Delta*M(x),
+ M(x)=sum_(n<=x)mu(n), m(x)=sum_(n<=x)mu(n)/n.               (1)
+
+Thus a common-constant family bound |V_(a_q)(n)|<=C sqrt(n), every
+n AND q, implies |V_0(n)|<=C sqrt(n). This deduction specifically
+requires parameter power zero and log power zero. Positive log losses,
+parameter bounds diverging as a tends to zero, and high-pass families
+with S=B=0 are not rejected by this argument.
+
+The bound at integers gives limsup |V_0(x)|/sqrt(x)<=C on the reals:
+between consecutive integers the only change in (1) is -B*(x-N)m(N),
+and |m(N)|<=sum_(d<=N)1/d<=1+log N=o(sqrt N).
+
+2. CHARGE THE EXACT INVERSE BEFORE USING THE IMPORT
+
+Assume S!=0. Exact partial summation gives xm=M+x integral_1^x M(t)/t^2 dt.
+Writing F=S-V_0, r=B/S, lambda=1-r, the Volterra inverse is
+
+ M(x)=F(x)/S-(r/S)*x^lambda integral_1^x F(t)t^(-lambda-1)dt.  (2)
+
+This follows by differentiating the integral equation, or by substituting
+and exchanging the finite-interval integrals. It retains every signed term.
+
+If B=0, (1) is V_0=S(1-M) exactly, and its normalized M bound has
+constant C/|S|. This applies to positive-degree families as well.
+
+If r>1/2, then lambda<1/2. Formula (2), the real bound on V_0, and
+the exact integral of t^(1/2-lambda-1) imply
+
+ limsup |M(x)|/sqrt(x) <= C/|S| * [1+|r|/(1/2-lambda)].       (3)
+
+The constant part of F, unit errors O(log x), and x^lambda endpoint terms
+are o(sqrt x), including lambda=0 where logarithms occur.
+
+If r<1/2 and B!=0, lambda>1/2. The uniform bound makes H_F(lambda)
+convergent. The exact Mellin identity, first in Re(s)>1, continues to
+Re(s)>1/2 and yields
+
+ H_F(s)=S*(s-lambda)/[s*(s-1)*zeta(s)].                       (4)
+
+Ordinary zeta has no real zero with real part >0; lambda!=1 since B!=0.
+Therefore H_F(lambda)=0. Replace the integral in (2) by minus its
+tail from x to infinity. The same calculation gives (3) with denominator
+lambda-1/2. This uses a checked rational multiplier identity and a
+consequence of the candidate premise, not an assumed RH estimate.
+
+In summary the generic necessary inverse constant is
+
+ K=1/|S| if B=0,
+ K=[1+|B/S|/|B/S-1/2|]/|S| otherwise, B/S!=1/2.              (5)
+
+The critical real inverse case B/S=1/2 and S=0 remain unsupported by
+this norm argument. Their missing certificate is not a counterexample.
+
+If C*K<=7/4, (3) contradicts the named Hurst consequence. The family
+bound is globally false even if every finite point and parameter tested
+passes. The gate is generic in c,b; it does not single out an archived id.
+
+3. SEALED REPAIR WITHOUT REFITTING
+
+For each rejected archived source estimate, the repair selector considers
+only estimates already frozen in the original candidate batch, with the
+same program, theta and parameter power, a positive logarithmic loss, and
+the source's conditional ordinary-zero recovery. It ranks source validation
+and fully charged source recovery costs, seals the choice, and only then
+draws fresh scales and parameters. No constant is refitted.
+
+Degree-zero repair values use the exact expression (1) and are tested at
+EVERY integer of the new interval. Higher-degree repairs, if selected,
+use complete coefficient/kernel sums at a separately declared finite set
+of new scales and parameters. No finite success is a uniform proof.
+
+The generic parameter-limit and inverse arguments above are reviewed and
+checked with independent rational algebra and native finite witnesses.
+The published oscillation constant is a named external dependency. The
+detector did not discover or independently certify Hurst's computation.
+All positive-log repaired estimates remain unproved globally; RH is open.

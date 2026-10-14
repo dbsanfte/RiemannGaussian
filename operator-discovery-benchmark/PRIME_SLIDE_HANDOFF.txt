@@ -1,0 +1,163 @@
+PRIME-ADJUNCTION DISCOVERY AND EXACT RECOVERY FEEDBACK
+9 October 2026 -- completed search and post-analysis; original goal remains open
+
+Archives
+--------
+prime-slide-results/pilot-001: exact bounded search and independent audit.
+prime-slide-results/recovery-001: exact reductions and next proof-search input.
+candidate10_integrated_prime_recovery_obligation.json: current open input copy.
+
+The original objective is an operator/auxiliary/argument giving actual-source
+signed arithmetic control across all scales sufficient for RH. This round
+does NOT establish that estimate or RH. It discovers proved transformed
+auxiliary bounds, then identifies why they do not recover the target.
+Older studies, sources, results and proof memos were not changed.
+
+Implemented and exercised
+-------------------------
+prime_slide_discovery.py enumerates integer-coefficient prime-adjunction
+stencils on the supplied candidate10 channels B=a_u*a_v,a_u,a_v, with
+u=1/3,v=2/3,beta=9/2. Its source laws are reviewed inputs, not blind
+discoveries. The input was candidate10_ordered_prime_covariance_obligation.json.
+
+The grammar contains13385 same-prime sparse words,210 rectangular prime-power
+sums, and272 distinct-prime sparse words:13867 total. Duplicates between
+families are retained as labelled words. Every word is archived, not just
+selected successes. Prime slides and cumulative prime-power sums were
+considered analytically BEFORE the run and are declared calibration families.
+There is no historical-novelty or unbiased-invention claim.
+
+check_prime_slide_discovery.py independently uses literal prime-power
+convolution; the producer uses generating-series recurrences. All nine
+tensor multipliers for EVERY word, their cancellation orders, l1 constants,
+free-prime geometry, proof scope and complete recovery terms were checked.
+The runner also independently verifies grammar membership, uniqueness and
+cardinality, and reconstructs the declared ranking. Repeated primes use
+their actual higher-power rows, not powers of a prime coefficient.
+
+Results and the strongest selected filter
+-----------------------------------------
+All13867 words passed independent audit. Thirteen words have a complete
+transformed bilinear bound within the required cofinal growth rate at
+theta=3/4; nine of those contain a baseline term and retain explicit
+recovery obligations. No original covariance or whole moment was recovered.
+
+Selected ids:683,10,13391,13412,13595,13769. The strongest baseline-containing
+selected word is13391, the RIGHT-leg cumulative stencil
+  C6=sum_(e=0)^6 T_(q^e)^right.
+On the original q-coprime cofactor domain, put t=q^(-1/3). Its local source
+multipliers are
+  B: -t^5+t^11+t^12, a_u:t^6, a_v:t^12.
+The common weight is5/3. For the FULL ordered smooth-bank bilinear auxiliary,
+with all nine channels, original masks and unit exclusions retained,
+  |Q_C6(X)|<=486*(8/5)*2^(3/4)*X^(-1/4)*(1+log(2X))^2.
+This is an all-scale auxiliary theorem, not a numerical trend or an energy
+bound for the unfiltered candidate. It follows from exact local cancellation
+and complete divisor/tail estimates; it supplies no new prime-position
+cancellation by itself.
+
+Simple distinct-prime slides improve the a_u/a_v component but leave common
+B components unsuppressed. Two independent prime weights are counted in
+their own bank-bank geometry. Repeating the SAME prime adds order-one
+defects; the independently paid fixed/polylog primitive-height part does
+not pay its whole large-primitive complement.
+
+Recovery was investigated, not assumed
+--------------------------------------
+PRIME_SLIDE_RECOVERY_REVIEW_001.txt derives the full kernel pullbacks under
+k->q^e*k, preserving v_q(k_lift)=e, k>=2, the smooth mask on the inverse
+image, every entry/exit endpoint and all cofactor gcd overlap.
+The first right lift is inside the original coefficient prefix, in its
+nonsmooth non-prime-power sector. Every higher lift lies outside that
+prefix. In particular B(q^2)->1, so the outside complement is not all small.
+
+There is also a valid exact elimination of explicit high powers. The local
+cumulative rows satisfy
+  C_m=(t+t^2)*C_(m-1)-t^3*C_(m-2), m>=2.
+This follows from their common rational generating denominator and is valid
+at every prime power, not inferred from a finite fit. The selected stencil is
+  C6=(t^5+t^6-t^11)*I
+           +(t^5+t^6+t^7+t^8+t^9+t^10)*T_q^right.
+Thus its auxiliary can be written with weighted baseline and interior terms
+only. Recovering the unweighted baseline still divides by a quantity of
+order q^(-5/3), and leaves an unweighted interior/companion covariance.
+A bound AFTER summing over q cannot be multiplied by this variable inverse
+as if it were a uniform constant.
+
+prime_slide_recovery.py reduces all thirteen cofinal words to the four
+polynomial-weighted actions I/I,I/T,T/I,T/T. It independently reconstructs
+all nine saved tensor polynomials from checker low-order rows. All thirteen
+reductions passed. This records that increasing prime-power depth alone
+adds no new local action modes for this supplied source family.
+
+A B,B witness also proves that any scalar all-channel local recovery from
+this finite bank of thirteen filters must satisfy
+  max_j |c_j(q)|>=q^(4/3)/85.
+This excludes uniformly bounded LOCAL linear recovery in that class only.
+It does not exclude actual-source relations, growing families, different
+kernels, unbounded coefficients with a paid cost, or joint signed recovery.
+The remaining lifted terms and complete target are not marked proved.
+
+Additional proof hook: centered common-bank recurrence
+-------------------------------------------------------
+CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt retains all poles, floors, unit
+strips and repeated-prime terms in a simultaneous state F=(J,M_u,M_v).
+It derives F(n)=H(n)+sum_q A_q*F(floor(n/q)), with q>n^theta and k>=2.
+The explicit matrix and complete smooth compensator are in the next input.
+This is a sufficient coupled route; equivalence to the original target is
+not asserted. H contains unpaid arithmetic and is not a bounded forcing.
+
+Conditional on the SAME closed cumulative induction at smaller arguments,
+its shared-prime centered variance at theta3/4 is bounded by
+  (93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4).
+The horizon is T<=2X^(1/4), with a fixed finite head. This pays one component
+after an induction closes; it does not provide the induction. The full
+smooth, distinct-prime, pole and cross-term forcing remains explicit.
+
+The review also proves a sharper exclusion: the isolated deterministic
+pole compensator P_theta cannot have cofinal critical energy by itself.
+Its nonzero cofactor profile yields a Mellin factor F_C(s)*P_prime(s)
+with a logarithmic branch at s=1; finite-order harmonic zeros do not remove
+it. Small-prime cutoff corrections, the weighted bank and the main term
+are analytic near1. This source-independent argument excludes standalone
+payment of P_theta, while permitting the required joint cancellation with K.
+Do not separate that deterministic correction from its smooth/cross terms.
+
+These mathematical arguments were reviewed by Sol6.1 subagents and the
+root. They are analytically established inputs, not proof-assistant
+certificates obtained by executing proof text.
+
+Verification and resources
+--------------------------
+One owned development suite per new test module passed: producer8 tests,
+independent checker8 tests, recovery5 tests. The search's frozen combined
+suite passed16; the separate recovery frozen suite passed5. No unchanged
+study was retried, and no source table or actual-source response was rebuilt.
+
+Search:29,640,450 charged proxy operations of150m,15.3208seconds.
+Recovery post-analysis:206,343 additional operations,0.3735seconds.
+Combined:29,846,793 operations. Metadata reserves and all development and
+frozen test work are included. The independent search audit used two disjoint
+worker batches; the small recovery pass ran in the main process.
+Largest recorded stage peakRSS517060KiB; symbolic peak-cell proxy9772436.
+Parent and workers had4GiB address-space limits within the16GiB aggregate
+allowance. These are metered proxies/RSS records, not bit-complexity claims.
+Sources were frozen and compared directly byte for byte; no hashes.
+
+Next work
+---------
+Read candidate10_integrated_prime_recovery_obligation.json. It preserves
+the original source/domain/quantifiers/equivalence class and the complete
+joint square K-L0+Lu-main. It carries the verified reduced actions, exact
+pullbacks, local inverse-cost obstruction, centered transfer matrix,
+conditional smaller-scale variance lemma, and all remaining signed terms.
+
+Search for a construction controlling the unweighted interior/smooth and
+distinct-prime covariance, with the deterministic compensation kept joint.
+The higher-power filters can be used as auxiliary identities, but a stronger
+local zero alone earns no recovery credit. Do not rerun this grammar at larger
+depth merely to obtain another decaying filtered quantity. Do not assume
+cofinal companion estimates, replace actual integer prefixes by independent
+prime valuations, drop outside domains, or rename the complete open forcing
+as an already established lemma. No external blocker or required user input
+exists. The original uniform signed estimate and RH remain open.

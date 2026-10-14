@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_core_joint_power_search",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_joint_power_search operations=427440\n",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.032s\n\nOK\n",
+      "elapsed_seconds": 0.09861791500588879,
+      "operations": 427440
+    }
+  ],
+  "operations": 427440
+}

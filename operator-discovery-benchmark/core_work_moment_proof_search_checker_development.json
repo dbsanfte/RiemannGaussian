@@ -1,0 +1,32 @@
+{
+  "schema": "core-work-moment-proof-search-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_work_moment_proof_search"
+      ],
+      "returncode": 0,
+      "operations": 516771128,
+      "test_count": 14,
+      "elapsed_seconds": 509.750538821012,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_work_moment_proof_search operations=516771128 elapsed_seconds=509.60660240097786\n",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 509.606s\n\nOK\n",
+      "max_rss_kib": 78700
+    }
+  ],
+  "operations": 516771128,
+  "resource_caps": {
+    "operations": 1000000000,
+    "elapsed_seconds": 600,
+    "memory_bytes": 2147483648
+  },
+  "resource_authorization": "parent explicitly expanded isolated symbolic checker limits before first suite",
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "actual_numeric_cache_reads": 0,
+  "prior_suites_run": 0
+}

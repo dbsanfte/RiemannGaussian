@@ -1,0 +1,85 @@
+INDEPENDENT EXACT UNIFORM EXCHANGE-LAW CHECKER 072
+================================================
+
+Owned artifacts are check_mobius_exchange_law_072.py,
+test_check_mobius_exchange_law_072.py,
+mobius_exchange_law_checker_072_development.json, and this note.
+Only MOBIUS_EXCHANGE_LAW_SCHEMA_072.txt and
+MOBIUS_PRIME_ORBIT_REVIEW_072.txt supplied the mathematical contract.
+No producer, optimizer, previous checker, scientific study, scientific
+result, historical test suite, artifact hash, or subagent was used.
+
+Verification independently factors every small multiplier by trial
+division. Squareful multipliers are excluded. Prime-factor sets establish
+coprimality and exact multiplier parity. Every ordered pair of profile
+bands and every admitted a<b is reconstructed in the declared order;
+positive signed gains and rational coprime densities are recomputed.
+The checker supports arbitrary sorted disjoint rational profile bands
+in the specified range with 1..16 bands; its finite evaluator
+uses the complete profile rather than the source pilot alone.
+
+Capacity verification enumerates every prime subset and every adjacent
+cell of the complete exact endpoint list. A sweep updates endpoint
+incidences using prime-factor-set intersections. Removal at a cell's
+left endpoint precedes insertion there. This gives exactly the pattern
+at every interior midpoint of that cell. The left/right arithmetic
+incidences cannot coexist for one family and one prime subset because
+a,b are coprime and b>1. All nonempty patterns are retained, deduplicated,
+sorted, and compared exactly with the entire supplied capacity list.
+This is independent of the producer's divisibility bit-mask encoding.
+The synthetic fixture generator uses literal midpoints and bit masks,
+providing an additional independent test of the endpoint sweep.
+
+Every primal entry is nonnegative and at most one, and every complete
+capacity row is checked exactly. The objective upper is the full sum
+of nonnegative dual row prices plus every positive stationarity defect,
+using the explicit primal bound lambda<=1. It is a rigorous upper price,
+not an assertion of LP optimality. Negative leading_lower is preserved.
+The baseline contains every band. Integer squares certify each rounded
+root. The error coefficient includes both endpoints of every baseline
+band and every weighted family, including the complete 2^omega(ab)+2
+count-theorem factor; no favorable finite-scale fit is used.
+
+verify_law proves only the unconditional uniform joined-profile bound
+|Z(k)| <= (6/pi^2)*leading_upper*k + sqrt_error_upper*sqrt(k), k>=1,
+using the squarefree-coprime interval theorem supplied by review072.
+Its sublinear flag is true precisely when the exact leading_upper is
+zero; a negative leading_upper is rejected. An exact positive
+leading_lower obstructs a square-root law within this precise packing
+language at the declared cap, not actual signed Z and not other proof
+languages. The source pilot is a necessary signed source slice, not a
+theorem for the uniform signed head. uniform_head_bound_proved and
+RH_proved remain false in every admitted certificate and return value.
+
+evaluate_law first performs the same exact verification. Only then does
+it construct the ordinary shared Mobius table, with mu(1)=1 and zero on
+squareful inputs, through floor(k*max_hi). It recomputes every family
+count on the full interval and its coprimality condition, then proves
+the actual absolute target is at most the complete baseline squarefree
+price minus all weighted family savings. This arithmetic is evaluator
+data and does not upgrade uniform-head or RH scope.
+
+The Meter charges enumeration, incidence entries, exact row checks,
+root certification, and evaluator arithmetic, with defaults of
+300 billion operations and 7200 seconds. Exact arithmetic bit work is
+not billed as individual bit operations. Explicit exceptions abort at
+the schema's family/row/bit caps, a conservative 1..16-band input cap,
+an 8-million distinct capacity-incidence-entry cap, and a 50-million
+finite-evaluation radius cap. The last three are prospective checks
+for the 2 GiB checker allocation, not a claim of a measured universal
+resident-memory bound. They never return truncated families or rows.
+
+Development uses only fresh synthetic mathematical fixtures and
+tampering cases. The receipt retains each executable test attempt,
+including its actual positive test count, return code, measured charged
+operations, elapsed time, and complete failure traces if any. No-test
+executable/preflight failures belong to a separate preflight_failures
+list rather than successful test runs. There were no such failures and
+no failed test attempts in this development. The first run passed all
+18 tests; two further development runs pass all 19 tests, including generic
+fractional profiles, conflicting capacity
+rows, complete pilot families, exact finite prices from independent
+trial division, positive dual defects, negative leading_lower,
+all endpoint errors, false scope flags, omitted/duplicated data,
+canonical rational inputs, explicit unit and squareful-zero checks, strict
+top-level certificate fields, and explicit resource/work/time rejection.

@@ -1,0 +1,275 @@
+Selected permuted circuits33 and42: exact reductions and a uniform attempt
+2026-10-09. Source-only mathematical review; new memo, frozen files unchanged.
+
+Scope
+Read the selected raw/normalized programs and certificates in final_batch.json,
+the new circuit contract and permuted_circuit_recovery_review.txt. No response
+file, source evaluation, numerical probe, test, rescore or hash was used. Finite
+constants and reported ranks are not premises below. The input throughout is
+the COMPLETE actual prefix M(n)=sum_{j<=n}mu(j), M(0)=0, not a convolution of
+mu followed by a prefix. All inverse coefficients use the same original source.
+
+Main proved advances
+(a)33 has an explicit four-quarter/residue commutator and exact inactive
+power-of-two chains; its prime activation criterion depends on the COMPLETE
+divisors of an inverse-rotated coordinate, not its syntactic prime appearance.
+(b)42's conjugated shear is still an adjacent shear. Its full fresh energy is
+F42(X)=(101/90)E_M(X)+O(log X), uniformly and unconditionally, with explicit
+constants below. This is amplification plus subpower padding, not a fresh
+energy contraction. Its value at every odd prime is M(p) plus a bounded offset.
+(c) A block-sup norm lemma supplies unconditional FULL E=O(X), and transfers
+a genuinely proved full X^eta moment bound through either circuit AND inverse
+with explicit constants. It does not supply the missing small eta premise.
+No complete cofinal signed moment bound for33 or42 is proved.
+
+1.33: exact four-way interleaving and complete path
+Write A=T_(1,1), B=T_(-1,1). These are divisor sum and genuine Mobius inversion:
+ Af(n)=sum_{d|n}f(n/d), Bf(n)=sum_{d|n}mu(d)f(n/d), AB=BA=I.
+Let pi rotate the k low bits right by2 within [m,2m), m=2^k, and
+ Uf(n)=f(pi(n)). The selected word acts as
+ rho33=A U^-1 B U M.
+For k>=2 and r=4a+b, 0<=b<4,0<=a<m/4,
+ pi(m+r)=m+a+b*m/4.
+For t=j*m/4+s,0<=j<4,0<=s<m/4,
+ pi^-1(m+t)=m+4s+j.
+The singleton and k=1 block use the stated rotation modulo k; k=1 is identity.
+The four quarters and all translated/wrapped residue classes remain present.
+An index permutation polynomial is not an identity for mu or M.
+
+The exact full path formula is
+ rho33(n)=sum_{d|n}sum_{e|pi^-1(n/d)}mu(e)
+                M(pi(pi^-1(n/d)/e)).                         (1)
+Since B U=U B+[B,U], it also gives
+ rho33=M+A U^-1[B,U]M,
+ [B,U]M(t)=sum_{e|t}mu(e)M(pi(t/e))
+                    -sum_{e|pi(t)}mu(e)M(pi(t)/e).           (2)
+Both divisor domains in (2) are essential. Pairing a convenient subset and
+discarding its unmatched complement would destroy the identity. The e=1
+terms cancel in this commutator. Once a proper divisor is used, the path
+enters a strictly lower dyadic block and cannot return to the original block.
+Consequently the COMPLETE fresh diagonal is I:
+ rho33(n)=M(n)+g33(n),
+ E33(X)=E_M(X)+G33(X)+C33(X),
+ G33=X^-2 sum g33^2, C33=2X^-2 sum M*g33.                 (3)
+
+Two useful exact activation facts, without a density assertion:
+* pi and pi^-1 fix each power of2. Their entire divisor chains are also
+  powers of2. Thus rho33(2^k)=M(2^k), including the low blocks, by AB=I.
+* At an odd prime p, set q=pi^-1(p)>1. The outer divisor sum has only its
+  q contribution and the singleton contribution. Since M(1)=1,
+  rho33(p)-M(p)=sum_{d|q,d>1}mu(d)[M(pi(q/d))-1].         (4)
+  If q is prime this is exactly0. The d=q term, when present, is exactly0
+  in this displayed form, not an omitted numerical complement. If q=l^a,
+  a>=2, (4) is -[M(pi(l^(a-1)))-1]. For general composite q all squarefree
+  proper divisor combinations remain. For k>=2, q=m+4s+j has parity j;
+  even quarters j=0,2 force q composite. Odd quarters merely ALLOW q prime.
+  Nothing here proves infinitely many simultaneous prime p and q.
+
+There is a bounded fixed-dilation defect worth distinguishing from the full
+divisor commutator. If n=m+j*m/4+s, then for a>=0,k>=2,
+ pi^-1(2^a*n)=2^a*pi^-1(n)-(2^a-1)j.
+Therefore |M(pi^-1(2^a*n))-M(2^a*pi^-1(n))|<=3(2^a-1).
+This is genuine bounded padding for a FIXED dilation. It does not identify
+the divisor operators: their supports include different parity/divisibility
+predicates, and pi^-1(n) need not share n's divisor set. Dropping those
+predicate complements would falsely turn (2) into a small displacement rule.
+
+2.42: the conjugated pair is exactly adjacent, with reversed direction
+Let phi5(t)=-1 for t=1,4 modulo5 and +1 otherwise. Write
+ A5=T_(1/3,phi5), D=T_(-1,xi),
+ xi(p)=source_sign(mu(floor(p^(1/3)))), extended completely multiplicatively.
+The zero-sign convention is +1. Thus for j=floor(p^(1/3)),
+ xi(p)=1+mu(j)-mu(j)^2.
+The outer kernel is exactly b(d)=mu(d)xi(d); it vanishes on nonsquarefree d.
+The dependence on actual mu occurs in both M and these fixed prime-phase
+bands. It is not an independently varying sign oracle or a character theorem.
+
+Let pi be alternating-bit xor and U its self-inverse pullback. On a block
+X=2^k,k>=1 its mask a_k has bit0=1. For every even n in[X,2X),
+ pi(n+1)=pi(n)-1.
+Let H be odd_from_even with coefficient1/3 and phase phi5. Hence
+ Q=U^-1 H U acts EXACTLY as
+ Qf(n)=f(n)+(psi_X(n)/3)f(n+1) for even n,
+ Qf(n+1)=f(n+1),
+ psi_X(n)=phi5(pi(n+1)).                               (5)
+The singleton1 is unchanged. No long-distance pair remains: only its phase
+was rearranged. However the actual input to Q is A5 M, whose adjacent
+increments are not known bounded. Applying bounded-M-increment arguments to
+the ENTIRE interior state would be unjustified. They apply below ONLY to the
+fresh diagonal Q M after complete proper-divisor terms have been separated.
+
+Put f=A5 M, q=Q M. The exact entire circuit is rho42=D Q f, or explicitly
+ rho42(n)=sum_{d|n}mu(d)xi(d) [f(n/d)
+       +(1/3)1_{n/d even>=2}psi(n/d)f(n/d+1)],
+ f(t)=sum_{e|t}a_(1/3,phi5)(e)M(t/e).                 (6)
+The shifted branch has domains d|n and e|(n/d+1), NOT e|(n/d).
+Its two divisors cannot be combined into a single divisor of n. For a proper
+outer divisor, even n/d is at most X-2 on an output block[X,2X), so even
+its shifted partner is still below X. Proper inner divisors at n+1 are also
+below X. Thus the complete g=rho42-Q M is a lower-block linear action,
+although its fixed arithmetic coefficients need not represent independent
+past randomness. All lower and shifted/wrap contributions remain in
+ rho42=q+g, E42=F42+G42+C42, C42=2X^-2 sum q*g.        (7)
+
+3. A proved uniform fresh-energy reduction for42
+Let N=X/2 and n_j=X+2j,0<=j<N. Put
+ w_j=M(n_j)^2+M(n_j+1)^2.
+Write b_k=a_k>>1. Then
+ pi(n_j+1)=X+2(j xor b_k),
+ psi_j=phi5(X+2(j xor b_k)).                          (8)
+The function h(t)=phi5(X+2t)-1/5 is periodic modulo5 with mean0 and
+|h|<=6/5. A sum over ANY consecutive interval has absolute value<=24/5:
+remove its complete periods and bound the at most4 remaining terms.
+
+Every prefix[0,J) of pair indices is a disjoint union of at most k aligned
+binary intervals. Xor by a fixed (k-1)-bit mask sends each aligned interval
+BIJECTIVELY onto another consecutive aligned interval of the same length.
+It need not preserve the order inside it. Applying the preceding interval
+bound to the whole image, and keeping every interval complement, proves
+ |sum_{j<J}(psi_j-1/5)| <=(24/5)k, 0<=J<=N.           (9)
+This is an unconditional discrepancy statement; no distribution conjecture
+about actual prefix values is used. Complete pair counts also have bounded
+residue discrepancy, but weighted prefix energy needs (9), not counts alone.
+
+Use |M(t)|<=t and |M(t+2)-M(t)|<=2. Then
+ w_(N-1)<=8X^2,
+ sum_{j<N-1}|w_(j+1)-w_j|<=(N-1)(16X+8)<=8X^2+4X.
+Discrete Abel summation with the EXACT endpoints in (9) yields
+ |X^-2 sum_j(psi_j-1/5)w_j|<=(432/5)k, X>=2.         (10)
+The loose constant uses 8+8+4/X<=18. This is a bound on the complete
+weighted correlation, not a claim that the individual signs vary freely.
+
+For each pair let x=M(n),y=M(n+1),v=mu(n+1),t=psi/3, so y=x+v.
+The full retained pair square satisfies the exact identity
+ (x+t*y)^2+y^2
+  =(1+t+t^2/2)(x^2+y^2)+(1/9)y*v-(t+1/18)v^2.       (11)
+Here 1+t+t^2/2=19/18+psi/3. Since there are X/2 pairs,
+ the normalized remainder in (11) is bounded by1/9+7/(36X).
+Combining (10) and (11), and retaining the unmodified singleton in the head,
+ |F42(X)-(101/90)E_M(X)|
+       <=(144/5)log_2 X+1/9+7/(36X), dyadic X>=2.    (12)
+Indeed 19/18+(1/3)(1/5)=101/90. This result holds for ANY prefix with source
+increments bounded by1. It is a smoothness/residue transport identity, not
+additional actual-prime information. In particular F42 is subpower for all
+small exponents if and only if the original E_M is, up to logarithmic padding.
+The full candidate may still use g to change the needed arithmetic correlation;
+(12) does not identify g or declare its signed cross harmless.
+
+4. Actual arithmetic content of42 and a prime-coordinate obstruction
+For any odd prime p the shear does not touch p and does not touch singleton1.
+Only outer divisors1,p and inner divisors1,p occur. Therefore EXACTLY
+ rho42(p)=M(p)+phi5(p)/3-xi(p),
+ |rho42(p)-M(p)|<=4/3.                               (13)
+Thus the circuit has no large cancellation of a prime endpoint's prefix value.
+This is not a lower bound on its complete moment: prime endpoints form a
+restricted set, and no unsupported inference about their energy density is
+made. It is a concrete necessary source-specific prime-prefix obligation.
+
+The inner prime phase is a fixed arithmetic character twist: for p!=5,
+ phi5(p)=-chi_5(p), where chi_5 is the quadratic character modulo5, while
+ phi5(5)=+1. On the absolutely convergent Euler domain Re(s)>1 the kernel has
+ sum_d a_(1/3,phi5)(d)d^-s
+       =zeta(2s)^(1/3)L(s,chi_5)^(-1/3)(1+5^-s)^(1/3). (14)
+This follows locally from (1+chi*x)^-1=(1-chi*x)/(1-x^2);
+the displayed5-factor is retained. Fractional powers are defined by their
+convergent Euler logarithms. Formula (14) is about a kernel acting on prefix
+coordinates, not a transformed coefficient source. The cuberoot prime phase
+is constant on each prime band[j^3,(j+1)^3), with sign given above; there is
+no proved global Dirichlet-character replacement for it.
+
+One may split the complete operator as D A5+(1/3)D N_psi A5. The first term
+is a pure divisor kernel with local factor
+ (1-xi(p)z)(1-phi5(p)z)^(-1/3).
+Its prime coefficient is phi5(p)/3-xi(p), never0; its magnitude is2/3 or4/3.
+The second term has the shifted divisor domains in (6). It cannot be dropped
+or folded into that Euler factor. The source-specific estimates required for
+these two terms and their mixed square are not supplied by (14).
+
+5. General uniform block-norm lemma: what can actually be closed
+For eta>0 define
+ B_eta(f)^2=sup_{dyadic X>=1} X^(-2-eta)sum_{X<=n<2X}|f(n)|^2.
+Use the same finite definition over complete blocks of any closed horizon.
+Set beta=2+eta, s=1+eta/2 and C_eta=sqrt(1+2^beta).
+For a single divisor dilation V_d f(n)=1_{d|n}f(n/d),
+ sum_{n in[X,2X),d|n}|f(n/d)|^2
+    =sum_{ceil(X/d)<=j<=floor((2X-1)/d)}|f(j)|^2.
+If X/d>=1, choose dyadic m<=X/d<2m. The interval is contained in the union
+of the COMPLETE blocks[m,2m) and[2m,4m). Their bound is
+ (1+2^beta)m^beta B_eta(f)^2 <= C_eta^2(X/d)^beta B_eta(f)^2.
+If X/d<1 and d<=2X-1, its only possible quotient is1. The same inequality
+holds since X/d>1/2 and C_eta^2>2^beta. If d>2X-1 the contribution is0.
+For d=1 only the original target block is needed. For d>=2 all required
+covering blocks lie within the closed horizon. No arithmetic zero-padding
+or omitted low quotient is a premise of this finite uniform estimate.
+
+Triangle inequality and the positive Euler coefficient majorant prove
+ B_eta(T_(alpha,chi)f)
+       <= C_eta*zeta(1+eta/2)^abs(alpha)*B_eta(f).     (15)
+The same holds for its inverse, with the same source. A dyadic permutation
+is an EXACT isometry of B_eta. A shear and inverse cost <=1+abs(c), using
+the full two-coordinate unweighted block norm. Thus these circuits and their
+inverses are bounded on this norm, without any9^P factor:
+ K33(eta)=C_eta^2*zeta(s)^2,
+ K42(eta)=(4/3)C_eta^2*zeta(s)^(4/3).                 (16)
+These are unsquared costs; the moment uses K^2. No frozen recovery certificate
+or finite ranking is changed by this separate analytical norm lemma.
+For33, both forward and inverse bounds can additionally divide (16) by
+zeta(2s), since |mu(d)| has Dirichlet sum zeta(s)/zeta(2s). For42 the same
+improvement is valid FORWARD for its outer negative-integer stage; its inverse
+positive stage has no such squarefree gain. The symmetric bounds (16) suffice.
+
+Since |M(n)|<=n, the exact integer square sum gives B_1(M)^2<=7/3.
+C_1=3, so a genuinely unconditional COMPLETE bound is
+ E33(X)<=189*zeta(3/2)^4*X,
+ E42(X)<=336*zeta(3/2)^(8/3)*X.                      (17)
+These include every mixed path, shifted branch and quarter complement.
+They close a uniform FIRST-power moment estimate, not the required subpower
+estimate. The very generous constants can be made elementary with
+zeta(3/2)<=3. No numerical measurements enter them.
+
+Conversely, if a full candidate moment theorem supplied E_rho(X)<=C_q
+ceil(X^(1/q)) for all dyadic X>=32, then eta=1/q and the complete head
+h=sum_{1<=n<32}rho(n)^2/n^2 give
+ B_eta(rho)^2<=max(4h,2C_q).
+The head bound uses n<2X, hence sum_block rho^2/X^(2+eta)<=4h for X<32.
+Therefore (16) applied to the full inverse proves the SAME-EXPONENT bound
+ E_M(X)<=K_candidate(1/q)^2*max(4h,2C_q)*X^(1/q).
+This strengthens block-by-block recovery accounting, but its functional
+hypothesis is exactly the as-yet-unproved full moment theorem. A tiny eta
+bound on only a discarded difference, fresh term, kernel envelope or control
+does not meet it. Both directions show that this fixed circuit cannot obtain
+a source-independent subpower theorem from bounded increments alone.
+
+For clarity, a generic obstruction is rigorous: f(n)=n has bounded increments,
+yet B_eta(f)=infinity for every eta<1. Keep ANY fixed actual-mu phases and
+apply these uniformly invertible circuits to that arbitrary input f. If their
+full output had finite B_eta, the proved inverse would force finite B_eta(f),
+a contradiction. This is an arbitrary-input countermodel to a generic proof
+rule; it is NOT a counterexample for actual M and NOT a refutation of RH.
+
+6. The full remaining signed gate, now candidate-specific
+For33, (3) requires a negative COMPLETE correlation sufficient for
+ C33(X)<=-E_M(X)-G33(X)+C_q ceil(X^(1/q)).             (18)
+For42 define R_X=F42(X)-(101/90)E_M(X), with the explicit bound (12).
+Then (7) gives the equally exact requirement
+ C42(X)<=-(101/90)E_M(X)-G42(X)-R_X
+                              +C_q ceil(X^(1/q)).    (19)
+Logarithmic R_X is harmless as subpower padding, but cannot substitute for
+the much larger signed credit in (19). Cauchy-Schwarz supplies a magnitude
+bound, not the required negative direction or payment of G. Making g small
+does not remove the fresh E term. The all-scale arithmetic question is the
+actual joint correlation of complete prefix values with the rotated divisor
+combinations (1)-(4), or the cuberoot-twisted shifted divisor combinations
+(6), including their squared lower block and every mixed product. No proved
+identity above signs these correlations strongly enough.
+
+Final status
+Proved: the exact33 quarter/path/prime/power-of-two reductions; bounded fixed
+dilation defect with its divisibility limitation; exact42 adjacent conjugation,
+XOR discrepancy and uniform F=(101/90)E_M+O(log X); exact odd-prime offset and
+inner Euler identity with exceptional prime5 retained; the finite-horizon
+uniform block-norm rule, unconditional E=O(X), and conditional same-exponent
+inverse transfer including the full head. Open: a cofinal uniform actual-mu
+full moment bound for either selected circuit, specifically (18) or (19), or
+another complete estimate paying the same retained squares. RH/global/uniform
+subpower theorem flags remain false. Analytical work only; edits stopped.

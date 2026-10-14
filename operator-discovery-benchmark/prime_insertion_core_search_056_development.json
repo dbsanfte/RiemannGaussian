@@ -1,0 +1,33 @@
+{
+  "schema": "prime-insertion-core-search-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 8,
+      "operations": 24030,
+      "elapsed_seconds": 0.06238634401233867,
+      "stdout": "SYNTHETIC_WORK operations=24030\n",
+      "stderr": "test_conditional_recovery_not_proof (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_exact_row_reduction (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_generic_cutoff_domain (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_invalid_primes_and_parameters (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_learned_relations_and_ablation (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_log_boundary_and_proof_scope (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_prime_class_matrix_retains_exceptions (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_selection_changes_with_requested_growth (test_prime_insertion_core_search_056.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.019s\n\nOK\n"
+    },
+    {
+      "returncode": 0,
+      "tests": 2,
+      "operations": 162,
+      "elapsed_seconds": 0.039965598029084504,
+      "stdout": "SYNTHETIC_WORK operations=162\n",
+      "stderr": "test_universal_recovery_without_fitted_constant (test_prime_insertion_core_search_056.SearchTests) ... ok\ntest_boolean_word_identification_and_independent_check (test_prime_insertion_core_search_056.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+      "scope": "only two newly added capabilities; previous8 passing tests not replayed"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "operations": 62358,
+      "elapsed_seconds": 0.09366025601048023,
+      "stdout": "SYNTHETIC_WORK operations=62358\n",
+      "stderr": "test_microscopic_search_general_exponents_and_order (test_prime_insertion_core_search_056.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.044s\n\nOK\n",
+      "scope": "new microscopic bound search only; previous10 passing tests not replayed"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

@@ -1,0 +1,54 @@
+INDEPENDENT SYMBOLIC COVER POSTREVIEW080
+
+Outcome and scope
+SEARCH080 completed normally in755.7948seconds:44 source/gamma/mode jobs,25994 generated frames,134 pre-existing symbolic-mode frame exclusions,12 frozen selected covers,138 fresh validation parents and552 independently reconstructed source/gamma cell rows. All12 covers failed finite validation; all24 selected leaves have at least one exact finite counterexample. Across3312 leaf-row checks,893 were REFUTED_FINITE and2419 CERTIFIED_FINITE, with0 rounding ambiguities. This refutes proposed local covariance constants; it neither refutes the original arithmetic residual nor proves a source bound or RH.
+
+This review reads the NEW080 runner, protocol, mathematical review, metadata, candidates and validation outputs. It runs no old scientific search/test and makes no new Mobius query. Frozen pre-run files are unchanged. The independent postrun reconstruction source and recorded results are audit_mobius_symbolic_cover_postrun_080.py and mobius_symbolic_cover_postrun_audit_080.json. The read-only audit completed in about5.1seconds. Its source imports no producer or checker and uses exact Fraction arithmetic on recorded admitted cells/Gram.
+
+Proof-obligation wiring
+Before science, the runner requires the inherited generic fixed-source binding, uniform coefficient norm, complete base and inactive-coordinate admissions. Discovery requires saved kernel-row bindings and complete admitted079 cells. Both affine complementary leaves receive occupied-cell determinant witnesses; both are calibrated and independently checked on all85 discovery rows. Exact shared-log identity and rounded conditional price are independently admitted. Structural exclusions are applied only when the whole leaf lies within the imported1/9 theorem, never by omitting unknown channels.
+
+Candidates are written and frozen before deterministic irregular/cutoff-entry validation draws. The fresh parents exclude the recorded known-parent inventory. On each validation parent and literal half u//2, the runner requires independent VERIFIED_CELLS and VERIFIED_SOURCE_PAIR before constructing finite rows. Source-pair admission binds both folded interval functions and recombines each endpoint against independently computed UNFOLDED Mertens-prefix residuals. The full source-program binding and complete cell roster remain separate paid prerequisites. Original-versus-folded kernel arithmetic is correct: folded coefficients represent the retained coprime domain, not an unrestricted M sum. No subtraction-only admission is used.
+
+Independent exact artifact audit
+The audit reconstructed each of3312 signed affine S polynomials and quadratic Q polynomials directly from recorded features/Gram and saved rays. They agree exactly with checker outputs. It independently checked all recorded Q/S-squared ranges by endpoint-plus-vertex extrema at the SAME log interval, all q1 difference-polynomial ranges, and status classification from lower/upper signs for every q. Fractional-q power enclosures were admitted by the frozen independent checker; this postrun audit did not independently replay its integer-root primitive. On every selected cover/row the two reconstructed S polynomials sum exactly to the independently admitted parent-minus-half residual, with zero log coefficient. Candidate files agree with the frozen manifest, targets agree with inactive admissions, and all exact upward-root conditional prices agree with independently recomputed values. No discrepancy or proof promotion was found.
+
+Actual selected constructions
+Every rational baseline, for both fixed sources and q in{1,129/128,33/32}, chose gamma5/8 and rays a=e7, b=e1+e8+e9. Every promoted cover chose gamma5/9 and rays a=L e1+(1/2)e7+e8+e9, b=(1-L)e1+(1/2)e7, with L=log((3-2gamma)/(2gamma)); at gamma5/9 this is log(17/10). These rays sum exactly to the active target e1+e7+e8+e9.
+
+Finite validation counts (certified/refuted/unresolved, each cover276 checks):
+q1_p16_q1_baseline: 181/95/0
+q1_p16_q1_promoted: 233/43/0
+q1_p16_q129_128_baseline: 182/94/0
+q1_p16_q129_128_promoted: 235/41/0
+q1_p16_q33_32_baseline: 182/94/0
+q1_p16_q33_32_promoted: 236/40/0
+q1_p04_q1_baseline: 175/101/0
+q1_p04_q1_promoted: 212/64/0
+q1_p04_q129_128_baseline: 175/101/0
+q1_p04_q129_128_promoted: 215/61/0
+q1_p04_q33_32_baseline: 175/101/0
+q1_p04_q33_32_promoted: 218/58/0
+
+For both sources, every baseline complement first fails at u22531 and every baseline e7 leaf first fails at u252384. All promoted first leaves first fail at u22531. Complement first witnesses include u98827,27116 and22531, depending on source/q. Full exact positive difference_lower rationals are retained in the validation artifacts and postrun audit evidence. A first witness is not the worst witness or an all-scale asymptotic threshold.
+
+What the symbolic mechanism achieved
+The promoted1/9 subexpression exactly satisfies -a1+L*a9=0. This is a real formal signed repair, not a numerical approximation or a PSD price fit. It is only the1/9 subexpression: bins7/8 remain active in a, and b retains the1/9 polynomial L-1 with bin7. The finite failures cannot be attributed solely to a lower-logarithmic tail while ignoring these other active signatures.
+
+Signed cancellation is visible and the separate-leaf price discards it. The exact interval for2*S_a*S_b is strictly negative on23/138 rows for each baseline source,49/138 for the promoted q1_p16 source, and66/138 for promoted q1_p04; these counts are the same across q because coefficients are unchanged. This is observed finite cross cancellation, not a uniform cross-covariance theorem. The complete signed sum stays bound to the original parent-minus-half residual on all rows.
+
+New full-channel obstruction
+The separately reviewed analytic theorem in MOBIUS_FULL_CHANNEL_MODE_REVIEW_080.txt uses exact least-prime recursion plus PNT and quantitative Mertens decay to derive the FULL signature[-1,r0,1-L-r0,L] on channels[1,7,8,9], r0=rho(3/gamma-1), for1/2<gamma<=2/3. Positive Dickman rho is bounded above by the independently certified rational rho3upper=55421005319/1099511627776<1/16. These premises are explicitly imported/reviewed, not formally theorem-prover verified. Generic fixed-kernel mass and fold delta are bound separately to the actual sources.
+
+The baselines have full signatures r0 and-r0. Strict positivity makes both nonzero despite closed enclosure[0,rho3upper] touching0; no fabricated numerical lower coefficient is necessary. The promoted signatures are1-L-r0/2 and its negative. Since L<log2<7/10 and r0<1/16, the first is>43/160. Thus BOTH promoted leaves retain opposite nonzero FULL modes. Each fixed leaf has an eventual u/logu main term while its independently paid Gram norm is O(u). No finite fixed kappa can satisfy its covariance inequality for any1<=q<2. A separate independent application of verify_full_mode to the actual24 selected leaves admitted all24 obstructions:12 by strict-rho positivity and12 by rational leading interval exclusion. These proof-rule admissions are asymptotic; no effective finite failure threshold is supplied.
+
+This explains the remaining signed mechanism: the FULL target signature is zero, so the two opposite growing modes cancel only when the leaves are recombined. Their separate covariance estimates try to bound each growing part before using that cancellation. Exact1/9 annihilation therefore did not remove the obstruction from the actual cover. It moved the burden into a broader signed split; the full-channel theorem makes that burden explicit. The original source residual remains unrefuted.
+
+The new independent postrun backend also checks a pure1/9 second-log mode after exact leading annihilation. This imports quantitative prime-counting error separately (Trudgian Theorem2), not inferred from a Mertens bound. Its generic moment coefficient tests a u/log²u obstruction. This strengthens grammar feedback but is not used to mislabel other occupied channels as zero.
+
+Next actual obligation
+Do not merely enlarge kappa or promote another isolated leading coefficient. Any current selected split already has opposite nonzero full leading modes. A new joint arithmetic control must preserve their cancellation: for example, a mathematically justified recurrence on the signed channel vector with a contractive energy, complete finite base and uniform innovation/remainder bounds. An indefinite cross-term majorant would need proved restrictions on attainable vectors and an exact certificate on that reduced domain; sampled cancellation is insufficient.
+
+Introducing a Dickman-valued coefficient could symbolically annihilate the FULL first signature in both complementary leaves, because the full target signature is already zero. That would pay only a new leading-identity obligation. It would still leave all inverse-logarithmic remainders and moving-cutoff terms unpaid; any fixed inverse-log power is too large for q<2 covariance. A finite symbolic repair, more channels, or a new fitted constant therefore cannot replace a uniform remainder proof or joint recurrence.
+
+The next search input should retain both exact signed leaves and cross terms, the complete full-channel signature and proof domain, and the unproved uniform remainder/joint-control obligation. The source/head/core/RH transfer remains open.

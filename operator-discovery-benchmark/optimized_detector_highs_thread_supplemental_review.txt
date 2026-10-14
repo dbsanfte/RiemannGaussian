@@ -1,0 +1,14 @@
+Supplemental independent HiGHS thread-control review
+
+The current sparse producer explicitly forwards threads=1 and parallel=False to HiGHS. Inspection of the installed SciPy official _linprog_highs implementation confirms its unknown options are passed verbatim via options.update(unknown_options). Warning suppression is narrowly matched to that forwarding notice; other OptimizeWarnings are not hidden. The change only controls numerical proposal execution and does not relax exact rational reconstruction, nonnegative weights, full coefficient admission or independent arithmetic verification.
+
+The new test runs the producer in a FRESH subprocess with numerical environment caps set before imports, executes a finite anonymous LP fixture and measures /proc/self/task afterwards. It observed exactly one thread and the declared native setting1. Fresh-worker isolation matters: a previously initialized incompatible global HiGHS scheduler is outside this test. Completion thread measurement does not by itself prove a peak-thread upper bound for all workloads, but explicit native options and fresh worker scheduling address the diagnosed independent scheduler. run_detector records observed_threads_at_completion in every job cost.
+
+Seven affected producer/CLI tests passed, including the fresh-process thread assertion and prior slack/seal/runtime/resource workflow protections. Prior reviews and hash snapshots were retained. No historical frozen sources or destinations were edited.
+
+SHA256:
+cancellation_sparse_synthesis.py b4ab60fa53dc96ca7bdeb3e4749fd92f41d632bc590d439d63e7196e7370cf1c
+test_cancellation_sparse_synthesis.py 270bef4bf0923c10bf82bcb33b77c5f8095b68699220cffae295354f0dfeca7c
+run_detector.py da653631344f720dad60dc7fe627140f84fd6a6e48079c5fcecad7d1bafd2c8c
+test_run_detector.py af31a47b25ffd60848c557e6836a4c83de4a9890484759e380292a8ed35cfc41
+detector_parallel.py 3ce0381e8b09e7a989864f36dcb54488d9c553f534a297269da803a2389e7260

@@ -1,0 +1,194 @@
+GLOBAL MOMENT DISCOVERY: INEQUALITIES WITH QUANTIFIERS AND SCALE COSTS
+7 October 2026. Written universal proofs; independent exact/native audit.
+Known-framework calibrations. No new prime-distribution bound or RH proof.
+
+1. THE SEARCH TARGET IS AN INEQUALITY FOR AN ARITHMETIC FAMILY
+
+The detector now represents row-indexed coefficient families, normalized
+circle moments, mixed energy states, signed scale transfers, positive
+functionals and forced recurrences. The input has a complete declared
+coefficient range. Every proposed bound must declare its scale variables,
+row domain, coefficient assumptions, recurrence, initial cost, and the
+quantifiers covered by its certificate. A fitted exponent is discovery
+data, not a uniform estimate. The finite search is restricted to its
+declared matrices, states, shifts and weight grid.
+
+The benchmarks intentionally use unrelated families: additive twists of
+the zeta inverse, generic polynomial pairs, signed recursive polynomials,
+and positive lacunary products. The QRH exponents, sextic characters and
+cubic theta function are not training targets or primitives in this search.
+These calibrations do not verify the QRH manuscript's global bounds.
+
+2. ADDITIVE-TWIST SECOND MOMENTS: ALL INTEGER SCALES
+
+For any complex coefficients a(1),...,a(D), and integers D,H>=1, define
+A_u=sum_(n<=D)a(n)e_H(u*n), 0<=u<H, and M2=sum_u|A_u|^2.
+Finite additive-character orthogonality gives exactly
+
+ M2=H sum_(r mod H)|sum_(n<=D,n=r mod H)a(n)|^2.
+
+Each bucket contains at most ceil(D/H) indices. Cauchy's inequality gives
+M2<=H*ceil(D/H)*sum_n|a(n)|^2. The squared l2 operator norm is exactly
+H*ceil(D/H): choose a(n)=1 on a largest bucket and zero elsewhere.
+The proof includes composite H and the zero residue. Numerical training
+only at D<=H cannot identify the bucket factor; a changed scale ratio
+rejects its omission. Actual mu coefficients are obtained by inversion of
+u(n)=1, then audited independently by complete integer factorization.
+The result is a generic bound, not new cancellation of mu.
+
+For e_p(u*n^d), with PRIME p and any integer d>=1, the same identity groups
+indices by n^d mod p. A nonzero polynomial X^d-r has at most d roots over
+a field. Each root residue contributes at most ceil(D/p) indices, hence
+M2<=p*d*ceil(D/p)*sum|a(n)|^2 for all D and all prime p. This retains r=0.
+Over composite moduli, that root bound can fail. At H=D=16,d=2 the zero
+bucket has four indices 4,8,12,16. Coefficients 1 only there have energy
+256, exceeding the incorrectly extended prime-field bound 128.
+An operator/modulus holdout is essential, in addition to scale holdouts.
+
+3. LEARNING A CLOSED FOURTH-MOMENT STATE
+
+Let P,R be polynomials with real rational coefficients supported on
+0,...,N-1. Integrals use normalized Haar measure on the whole unit circle.
+Define E=integral(|P|^4+|R|^4), C=integral|P R|^2; both are nonnegative.
+The grammar searches signed matrices with entries +/-1 and phase shifts
+L=k*N, k=0,1,2. There are 16*3=48 programs. It fits an UNKNOWN two-by-two
+transfer on generic constant inputs, then changes coefficient inputs and
+spans. Forty finite fits yield 24 universal transfers and 16 rejections.
+
+For opposite signed rows, U=P+z^L R, V=P-z^L R, signs/swaps permitted,
+odd phase terms cancel. In E_next and C_next the only remaining
+nonconstant phase terms contain z^(+/-2L) P^2 conjugate(R)^2 or its
+conjugate. Their unshifted frequency lies in [-2(N-1),2(N-1)]. When
+L>=N, their integral is zero, giving the LEARNED recurrence
+
+ [E_next]   [2 8] [E]
+ [C_next] = [1 0] [C].                                    (1)
+
+For proportional signed rows, both outputs are equal up to a sign.
+When L>=2N, every nonconstant phase term vanishes by the same frequency
+support bound, now also for shifts +/-L. Its different learned recurrence is
+
+ [E_next]   [2 8] [E]
+ [C_next] = [1 4] [C].                                    (2)
+
+For L=N, (2) generally fails because odd phase terms may have a constant
+coefficient. For L=0, a recurrence fitted on constant inputs need not
+hold on polynomials. Fresh dense inputs independently reject all 16
+bad fits. A failed two-state closure need not reject the operator:
+adding a missing energy state or finding a valid partial functional is
+an allowed future extension. No recurrence is promoted from a fit alone.
+
+4. FROM ONE STEP TO EVERY LEVEL
+
+The positive-functional grammar searches weights (1,c) and a rate lambda.
+For (1) it discovers (E+2C)_next=4(E+2C); for (2) it discovers
+(E+4C)_next=6(E+4C). These are exact positive left eigenfunctionals.
+Induction gives the bounds 4^j(E_0+2C_0) and 6^j(E_0+4C_0) for every
+level j, retaining the initial cost. Positive right eigenvectors at
+rates 4 and 6 also prove that a smaller positive-functional rate is
+impossible for these particular transfers. This does not exclude
+stronger bounds for a smaller arithmetic subclass by other arguments.
+
+Repeat the opposite-row transfer with L=N, starting from P_0=R_0=1.
+Its pointwise pair energy is |P_j|^2+|R_j|^2=2^(j+1), and N=2^j.
+The difference of the two next fourth moments is a constant multiple
+of integral Re(z^N R_j conjugate(P_j)), which vanishes by frequency
+support [-N+1,N-1]. Thus their fourth moments are equal at every level.
+Writing m_j=integral|P_j|^4, (1) gives
+
+ m_(j+2)=2*m_(j+1)+8*m_j,  m_0=1, m_1=6,
+ m_j=(4*4^j-(-2)^j)/3 <= (3/2)*N^2, EVERY j>=0.            (3)
+
+The scalar recurrence is also discovered from the finite observations;
+its universal proof comes from (1), rather than those observations.
+For odd j>=1 the ratio is at most (4+1/2)/3=3/2; for even j it is at
+most 4/3, and at j=0 it is 1. Equality at j=1 makes 3/2 sharp.
+This is the established Rudin-Shapiro polynomial family, a calibration.
+It is not a bound for mu, primes or zeta in the critical strip.
+Primary prior art for (3) and automatic mixed-moment recurrences:
+Ekhad and Zeilberger, arXiv:1605.06679v2, pages 2-4.
+https://arxiv.org/pdf/1605.06679
+The source attributes the formula to Littlewood; neither the recovered
+formula nor the general computer-algebra strategy is claimed novel here.
+
+Repeat proportional rows with L=2N and P_0=R_0=1. Now N=3^j and
+P_j has coefficient 1 precisely when the ternary digits of its index
+are all 0 or 2. There are 2^j coefficients. Since E=2C at each step,
+(2) gives integral|P_j|^4=C_j=6^j for every j. This is a known
+lacunary/Riesz-product framework, another unrelated calibration.
+
+5. PERSISTENT ERRORS AND CRITICAL RESONANCE
+
+A homogeneous recurrence may have a valid bound at its critical rate.
+With persistent forcing the conclusion changes. For
+U_(j+1)<=lambda U_j+q^(beta*(j+1))*B, normalize by q^(beta*j).
+The accumulated cost is a geometric series with ratio r=lambda/q^beta.
+If r<1, every horizon is bounded by B/(1-r), plus the initial cost.
+If r=1, persistent positive forcing yields j*B: a logarithm of the
+scale q^j. If r>1 the normalized cost grows geometrically. These are
+sharp for equality recurrences. Missing a strict contraction margin
+cannot be repaired by fitting a constant over finitely many levels.
+The source retains a fit through level 31 that fails at level 257.
+
+6. CONVERTING A FAMILY MOMENT INTO AN ARITHMETIC TARGET
+
+This gate abstracts the role of repeated or approximate target rows,
+without prescribing a character order, sixth powers or a number field.
+Let a row family have q-moment at most B, q an even positive integer.
+Suppose at least m rows satisfy |A_u-T|<=E for the same arithmetic target
+T. The triangle inequality and positivity give
+
+ B>=sum_(admissible u)|A_u|^q>=m*max(|T|-E,0)^q,
+ |T|<=E+(B/m)^(1/q).                                      (4)
+
+The source learns the moment and row-count exponents 1/2 and -1/2 from
+saturating second-moment replication cases, without QRH-specific data.
+Exact integer power comparisons produce a rational upper rounding of
+the root, rather than an uncertified floating-point upper bound. The
+independent audit changes to complex rows and moments q=2,4,6.
+Discarding the approximation error is explicitly rejected at T=1,
+five zero rows, E=1: the valid bound is 1, the incorrect bound is 0.
+
+For (4) to be global, THREE separate premises must be global: the
+family moment B, the admissible actual-prime/arithmetic row count m,
+and the approximation error E. Finite row counts or a finite-scale
+copying relation cannot supply those quantified premises. Applying
+certificates from a different coefficient family is disallowed.
+
+For ordinary zeta, one possible target is
+A_W(D)=sum_n mu(n)W(n/D) with smooth compactly supported W on (0,infinity).
+Initially Re(s)>1, direct Mellin transformation gives
+
+ integral_0^infinity A_W(D)D^(-s-1)dD=hatW(s)/zeta(s),
+ hatW(s)=integral_0^infinity W(y)y^(s-1)dy.                 (5)
+
+A proved all-D bound A_W(D)=O_W(D^theta) gives a holomorphic left side
+on Re(s)>theta. At a zeta zero rho there, the right side has a pole if
+hatW(rho)!=0. A bound for one W whose transform vanishes at rho may
+erase that zero information. A target-appropriate nonvanishing family
+of Mellin numerators is therefore mandatory before any zero-exclusion
+consequence. For example allowing W(y)=y^(-rho)phi(y) with fixed positive
+smooth phi yields hatW(rho)=integral phi(y)/y dy>0, but the global bound
+must actually cover such test weights. This is a conditional bridge,
+not a newly proved Mobius estimate or an RH proof.
+
+7. INDEPENDENT AUDIT AND ORDINARY-ZETA SCOPE
+
+The checker uses exact Laurent expansion and support conditions for
+every certified transfer; autocorrelations and binary/ternary coefficient
+formulas instead of the source's recursive polynomial implementation;
+and native 384-bit complex circle evaluations at changed row grids.
+A too-short grid is an explicit negative control. Native additive
+families include every row and independently factor every coefficient.
+Fresh forcing parameters, recurrence bases, positive metrics and public
+domain/missing-data controls complete the audit. These are written
+proofs and implementation audits, not theorem-prover formalization.
+
+The generic arithmetic bounds quantify all scales but supply no new
+mu or prime-distribution estimate. The recursive families have genuine
+global moment certificates, but they are different coefficient families.
+Applying their bounds to zeta requires a separately certified transfer
+that retains ordinary-zero information and controls all scale costs.
+Global Hecke-family bounds and a new prime-specific critical-scale
+cancellation estimate remain open detector targets. No new historically
+verified operator, QRH proof verification or RH proof is claimed.

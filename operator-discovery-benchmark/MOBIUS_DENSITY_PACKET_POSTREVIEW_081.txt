@@ -1,0 +1,171 @@
+INDEPENDENT POSTRUN REVIEW081: PAID PACKET AND UNPAID JOINT FRONTIER
+
+Scope and provenance
+Read081 saved report, frozen candidates, selected validation certificates,
+draw and next-obligation data under run_mobius_density_packet_081.OUT.
+No science or old tests replayed, no source/mu arithmetic queried, no hashes,
+and no frozen pre-run file changed. Only this NEW postreview is written.
+Pure Fraction calculations recombined saved values and summarized ratios.
+An initial read-only Python import failed because the system python3 lacks
+numpy; subsequent output reading used standard-library JSON/Path/Fraction
+without importing science modules. That failure changed no artifact.
+
+Actual completed experiment
+The report records55.36429608199978seconds,17 energy forms,33 proof
+schedules and1122 generated programs. All proposed uniform packet prices
+were independently checked. Six complete selected candidates were frozen
+after selected discovery admission, then checked on36 fresh parents.
+The19 reused080 discovery parents are correctly classified as discovery.
+Six*(19+36)=330 selected finite rows were independently admitted.
+All inspected validation checker statuses are VERIFIED_FINITE_PACKET.
+Sampled aggregate RSS651878400bytes; conservative process-peak sum
+1318838272bytes, below16GiB. Constructor/checker work estimates are
+9081268908 and588033506; these are proxy counters, not CPU cycles.
+No new underlying arithmetic horizon was introduced.
+
+What the detector actually constructed and proved
+The detector generated nontrivial memory cross energies and growing,
+canonically reduced-ratio packets. It retained exact prime/composite signs
+through mu(ag)mu(bg)=mu(a)mu(b)mu(g)^2, including coprimality gates and
+the exact original source at every literal delay. Its rational bucket
+weights enforce zero density identically for EVERY D=floor(u^eta), not
+only observed D. The reviewed elementary restricted-squarefree-count
+argument plus independently checked price certificate pays
+ |W(u)|<=C*u^q for every positive integer u
+for the declared all-u compiler/balancing algorithm. Finite checker rows
+independently bind the implemented bank and full source/remainder identity.
+This is real uniform signed AUXILIARY control, unlike a fitted arithmetic
+leaf. Its theorem dependency is the explicit elementary analytic argument;
+the code is not a formal proof of that general argument.
+
+It is also a proper joint construction: E(u)-(3/2)E(floor(u/2))=W(u)+U(u)
+retains signed child/current cross terms. U includes the diagonal, every
+omitted ratio and each retained ratio's fraction1-w. It is not merely the
+set of unlinked labels. All selected packets have nonzero physical values
+and both positive and negative values on validation, so zero controls did
+not win selection. Eligible-label count is not dense-pair coverage.
+
+Discovered schedules and exact prices
+Both sources' coverage track selects memory2, auxiliary(1,1),weight1/4,
+epsilon1/8,eta2/7: packet exponent1. Their cheapest-price track selects
+the SAME energy,epsilon1/2,eta1/5: packet exponent1. Thus the detector
+exposes a genuine roster-growth versus proof-price tradeoff.
+The observed-U track selects memory3,auxiliary(1,1,-1),weight1 for both.
+For p16 it selects epsilon1/3,eta9/52, with stronger packet exponent7/8.
+For p04 it selects epsilon1/8,eta2/7, with exponent1.
+
+Exact C by source and track order coverage/paid-price/observed-U:
+ p16:681988401387/1048576;
+     548563617/1048576;
+     12914307/4096.
+ p04:93980812185330715827/70368744177664;
+     75594327053265657/70368744177664;
+     219288561765771670263/35184372088832.
+Approximate magnitudes are650395,523,3153 and1335548,1074,6232556.
+The epsilon1/8 exceptional-prime product is the principal price explosion;
+the coefficient jump norm and small epsilon roster are both explicitly
+charged. The p16 exponent7/8 provides C*u^(-1/8) after q1 normalization,
+not a bound for normalized U.
+
+Every frozen finite remainder calibration is refuted
+Five candidates have1/36 validation refutations; p04 observed-U track
+has2/36. All six fail at the SAME fresh integer u1420914. The latter
+also fails at u583331. Saved exact U-K*u recombinations are strictly
+positive; no interval ambiguities are involved in the q1 pilot.
+These are refutations of the FROZEN discovery K, not a proof that every
+larger K or every joint recurrence is impossible.
+
+Detailed simple witness
+For p16 coverage candidate at u1420914, D57 and delay state[517,-168,13],
+ E=1190957/4, Ehalf=136921/4, drift=1971151/8,
+ W=120668911286051/1460360645128,
+ U=89925812334825435/365090161282,
+ K=2321495/16777216.
+The exact positive excess is
+ U-K*u=76100508757669987891425/1531299123825737728.
+That certificate refutes U<=K*u. It does not contradict the uniform W
+theorem, lower-bound R globally, or refute the original signed source.
+
+Useful magnitude diagnosis without extrapolation
+Across the36 saved validation rows, maximum|W|/u is approximately
+ p16 coverage.0010341, paid-price.0004775, observed-U.0003170;
+ p04 coverage.0008391, paid-price.0002972, observed-U.0011024.
+The observed packet values are far below their proved worst-case C.
+At the common failure, U/u minus frozen K is approximately
+ p16:.034975,.034987,.094239;
+ p04:.014701,.014705,.065314.
+The failure is therefore primarily a current/source-memory drift event,
+not a violation of packet balance or its uniform counting-error price.
+These finite magnitudes diagnose the pilot; they establish no asymptotic
+error law, probabilistic model or signed remainder theorem.
+
+What remains and how to make next search meaningful
+The exact paid packet control by itself cannot close the recurrence.
+Conditional normalized drift has multiplier at most3/4, but still requires
+U(u)<=K*u uniformly with a complete source-bound base. The output exports
+that leaf explicitly. For these actual kernels E(1)=0, so the all-positive-
+integer conditional leaf would handle the base; no uniform U proof exists.
+Original source/head/core/parameter transfer and an epsilon family remain
+separate. A fixed q1 slice is not RH, and a failed K is not an RH refutation.
+
+The next detector should consume the exact dense residual kernel, not simply
+increase K. It can seek an exact decomposition of the joint frontier into
+several paid balanced packets, paid diagonal coefficient prices and
+nonpositive forms, with every coefficient reconstructed symbolically.
+Alternatively a cofactor recurrence must isolate its g=1 current-radius
+primitive coprime-pair frontier; g>=2 shorter radius alone is not closure.
+Sparse subpower packet coverage and eligible retention cannot stand in
+for that dense arithmetic obligation. The balanced packet theorem is useful
+proof progress, but its current conservative constants and extracted finite
+size do not supply an effective source bound.
+
+Pending independent postcoverage audit
+Root is preparing a separate postrun diagnostic for actual removed absolute
+quadratic coefficient mass relative to the full squarefree pair kernel,
+plus untouched prime pairs in(u/5,u/4]. No result is asserted here yet.
+That diagnostic must identify absolute quadratic-kernel coefficient mass
+without calling it signed cancellation, preserve fractions1-w, count off-diagonal orientation
+consistently, bind the same source/T kernel and leave all frozen files intact.
+The outer prime block has only parent coefficient -1; child delays vanish.
+Its pair coefficient is therefore positive H00 (twice for canonical pairs).
+Distinct primes there reduce to(a,b)=(p,q),g=1 and cannot be selected while
+max(p,q)>D. This proves untouched positive coefficient exposure, not a
+lower bound on the full signed remainder, whose other terms can cancel it.
+
+POSTCOVERAGE INDEPENDENT AUDIT (new diagnostic, frozen search unchanged)
+
+Implemented check_mobius_density_coverage_081.py without producer imports.
+Its frozen independent arithmetic/direct max-denominator compiler reconstruct
+all floor bands and squarefree/prime populations, exact full coefficient
+geometry, complete reduced-ratio banks and density weights, and actual
+weighted physical removal via independent restricted squarefree counts.
+Three focused tests passed on their first execution: small-source integration
+including u=1, adversarial counts/weights/prime/proof-flag/type mutations, and
+prospective ratio-resource rejection. All six actual proposals at new parent
+5116208 independently admitted. Output coverage_admissions_081.json records
+19.452668528s,839547214 accounted operations,592978110 reserved peak bytes,
+80371712 observed RSS bytes. This new finite audit does not replay old science.
+
+Removed absolute offdiagonal mass percentages, in selected order:
+p16 coverage .0025724648%; paidconstant .0005880301%; observedU .0004647494%.
+p04 coverage .0027899645%; paidconstant .0007486159%; observedU .0032722178%.
+Touched nonzero physical-edge percentages respectively:
+.0026031901%,.0006434070%,.0005111163%,.0034910081%,.0009915436%,.0038180485%.
+These are exact rational geometry diagnostics before decimal display. More
+than99.9967% of absolute coefficient mass remains unremoved in every case.
+This alone neither disproves signed cancellation nor supplies its bound.
+
+All six untouched prime blocks contain18324 actual primes,167875326 unordered
+pairs. Four memory forms contribute419688315=82.0311283*u; the two depth3
+forms contribute671501304=131.2498053*u. These are actual finite positive
+contributions within U, not lower bounds for U: its complement is signed and
+may cancel them. The exact next target must retain this signed complement;
+separate positive pricing would throw away the required cancellation. The
+small graph coverage and untouched primitive frontier make the remaining
+obligation concrete rather than relabeling W's paid theorem as a source bound.
+
+The integer-divisor grammar gives no interior cutoff betweenu//5 andu//4;
+producer endpoint prime-band admission is therefore valid. Independent
+checker additionally verifies all intersecting bands. Saved U/B+V identity
+and source binding are outside this coverage API; original saved artifact
+admissions remain necessary. All source/U/RH proof flags remain false.

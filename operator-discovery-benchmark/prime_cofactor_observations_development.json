@@ -1,0 +1,45 @@
+{
+  "module": "test_prime_cofactor_observations",
+  "operations": 37734,
+  "runs": [
+    {
+      "elapsed_seconds": 0.049441403010860085,
+      "errors": 0,
+      "failures": 0,
+      "operations": 37734,
+      "peak_cells": 10624,
+      "production_archive_read": false,
+      "returncode": 0,
+      "tests": 6,
+      "tiny_actual_source_fixture_runs": [
+        {
+          "H": 15,
+          "archive_read": false,
+          "indices": [
+            1,
+            15
+          ],
+          "source": "tiny_actual_four_channel_core"
+        },
+        {
+          "H": 15,
+          "archive_read": false,
+          "indices": [
+            1,
+            15
+          ],
+          "source": "tiny_actual_four_channel_core"
+        },
+        {
+          "H": 31,
+          "archive_read": false,
+          "indices": [
+            1,
+            31
+          ],
+          "source": "tiny_actual_four_channel_core"
+        }
+      ]
+    }
+  ]
+}

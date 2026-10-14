@@ -1,0 +1,100 @@
+Prospective031 implementation contract; read before parallel implementation.
+No actual source responses, reductions, solver calls or scores before freeze.
+Prior030 is complete and immutable. No hashes or old source/tape rebuilding.
+
+Producer module primitive_state_chart_dual_reduction.py exposes:
+  search(chart, rays, geometry, *, deadline, checkpoint=None,
+         save_reduction=None) -> outcome
+  input_model(geometry, budget) -> rows, column_count
+    rows is {row_id: {column_id: Fraction, ..., column_count: rhs}}.
+    Internal row_id is its position in030 compression.row_representatives;
+    column_id is its position in030 compression.column_representatives.
+    RHS occupies column_count; sparse zero entries are absent.
+  reduce_system(rows, column_count, budget) -> artifact
+    Generic small systems supported for meaningful synthetic tests.
+
+Exact reduction steps have these canonical encodings:
+  {kind:'force_zero', row_id:int, columns:[sorted distinct column ids]}
+    Selected active row has RHSzero and nonempty strictly one-sign support;
+    columns is its full current support. Remove these columns from ALL rows
+    and active columns. Record them as forced_zero_columns, not merely chosen.
+  {kind:'drop_zero_rows', rows:[sorted distinct active row ids]}
+    Every removed row is the complete zero augmented row.
+  {kind:'discard_homogeneous_components', columns:[sorted distinct ids],
+    rows:[sorted distinct ids]}
+    Removed rows have RHSzero and coefficients only in removed columns;
+    retained rows have no coefficient in removed columns. Isolated columns
+    may also be discarded. Zero extension proves equivalence. These columns
+    are discarded_zero_target_columns, NOT inferred forcedzero.
+  {kind:'pivot', row_id:int, column:int, eliminate:[sorted distinct row ids]}
+    Nonzero pivot; divide entire augmented pivot row by its pivot value,
+    then eliminate its column from every listed OTHER active row using that
+    row's current pivot coefficient. Unlisted rows remain unchanged. Exact
+    arithmetic throughout, including RHS. This is an invertible row transform.
+
+Artifact schema primitive-state-chart-dual-reduction-v1:
+  complete:true, input_rows:int, input_columns:int, steps:[...],
+  final_rows:[{row_id:int, terms:[[column_id,rational_string],...],
+               rhs:rational_string}], sorted by original row id,
+  active_columns:[sorted original column ids],
+  forced_zero_columns:[sorted ids], discarded_zero_target_columns:[sorted ids],
+  rounds:int, fixed_point:bool,
+  status:'REDUCED' or 'RESTRICTED_SYSTEM_INCONSISTENT',
+  contradiction_row:int or null, policy:protocol.POLICY, global flags false.
+All ids refer to the initial compressed system, without in-place renumbering.
+No rank or maximality claim is licensed by fixed_point. Finite stepwise
+equivalence is the admission condition for the reduction. Generic helper
+can operate on small dimensions; actual root workflow requires317x695.
+
+Rows with zero coefficients and nonzero RHS license only a contradiction
+in this fixed-generator separator search. They do NOT prove primal cone
+infeasibility. Save/check a complete reduction even if native/restoration
+later fails. A resource-incomplete reduction is never admitted.
+
+Producer outcome schema primitive-state-chart-dual-reduction-search-v1:
+  status:CERTIFICATE_PROPOSED/NONCERTIFIED/UNKNOWN,
+  reduction_complete:bool, route:'reduced_lp' or null,
+  certificate:old029 full Farkas schema or null, native:dict or null,
+  restoration_stats:dict if attempted, reduction_stats:dict,
+  stage_counts:reduction/native/restoration, policy, limits, globalflagsfalse.
+Use old030 native_proposal with max_operations160m; its dimension-only
+reservation, one thread, presolveFalse, exact positive scaling and finite
+nonunderflowing conversion remain applicable. Translate its strictlypositive
+support through active_columns and030 column_representatives into original
+ray indices. One old029 exact_support_solve on saved complete030851 responses
+and target{1224:-1} gives fullalpha851, then old029 certify uses all782 rows.
+No new coordinate response or geometry assembly is needed.
+
+Independent core check_primitive_state_chart_dual_reduction.py exposes:
+  verify_outcome(chart, chart_review, rays, geometry, geometry_review,
+                 reduction, outcome, *, deadline=None,
+                 max_operations=80000000, max_cells=6000000,
+                 max_bits=4096, max_reduction_bytes=67108864,
+                 max_certificate_bytes=8388608) -> summary
+  verify_reduction(input_rows, column_count, artifact, budget) -> summary
+Core independently decodes prior licensed compression, replays every allowed
+step with separate exact arithmetic, and compares full final equations and
+column dispositions. It must not call the producer reducer or repeat a LP.
+Prior030 geometry is a reusable verified premise; do not redo all its forms.
+Optional full Farkas identity is checked under the SAME80m audit budget,
+using old029 direct checker routines. Certificate support must lift through
+the verified reduction and all positive native entries. Reconstruction rank
+metadata need not trigger elimination replay; final exact identity is decisive.
+Summary schema primitive-state-chart-dual-reduction-independent-check-v1:
+  verified,complete,reduction_verified,certificate_verified,
+  finite_augmented_cone_infeasibility_certified,status,certificate_check,
+  reduced_rows,reduced_columns,forced_zero_columns,
+  discarded_zero_target_columns,steps,rounds,restricted_system_inconsistent,
+  audit_operations,audit_cells,peak_live_cells,independent_audit_work_reserve.
+Status FINITE_CONE_INFEASIBLE only for independently verified full negative
+pairing witness; otherwise preserve outcome status. Global flags false.
+
+Root owns protocol, runner, outer audit, publisher, workflow tests and scope.
+Producer owns reducer/search and test_primitive_state_chart_dual_reduction.py.
+Checker owns independent core and test_check_primitive_state_chart_dual_reduction.py.
+Design reviewer owns primitive_state_chart_dual_reduction_soundness_v1.txt.
+Avoid repeated full-shape tampering: use tiny generic systems for reduction
+proof rules, one authentic full certificate fixture for end-to-end binding.
+Total synthetic reserve25m includes ALL development and frozen suite tests;
+report consumed counts and do not rerun unchanged complete suites. Only the
+frozen combined suite will be run once by root after owners stop edits.

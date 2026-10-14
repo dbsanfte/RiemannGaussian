@@ -1,0 +1,122 @@
+INDEPENDENT SOURCE BINDING OF FACTORED QUADRATIC REPAIR (064)
+
+Public admission and provenance
+-------------------------------
+verify_quadratic(lift,repair,meter=None) checks the exact stopped063 quadratic
+lift schema, rebuilding source geometry and arithmetic instead of trusting
+producer replay flags. It imports no producer, LP, scientific source table or
+saved candidate. The063 quadratic_lift function was read ONLY to identify the
+serialization/API; the source rule below is independently reconstructed.
+The stopped063 review and handoff were read as mathematical context.
+Immutable060 source-parameter/canonical/schema/bit helpers and063 independent
+fill/forward-repair rules are reused, with every call charged. No old suite or
+scientific study is replayed and no frozen source is changed.
+
+Parameters retain the complete joined ordinary-Mobius source with registered
+mask M, actual p<q,0<alpha<1,gamma>0,0<tau<1. N is integer2..65536,
+D=floor(4N/p),1<=y<=D,1<=H<=min(4096,D), and the fill is one of the eight063
+rules. K=floor(y/(H+1)), radius=max(H,K) are recalculated, not accepted as
+metadata. Both endpoint arrays at r=p/q and1, every matrix entry and every
+ordinary-Mobius value through this full radius are required. All schema flags
+and expressions are typed/normalized, but no Boolean is used as a proof premise.
+
+Source and complete unweighted generic long kernel
+--------------------------------------------------
+At short index d, the joined source is
+ f_d(r)=1_(d<=y)*[W(N/(p*d))-r W(N/(q*d))],
+ W(v)=floor(4v)-3floor(2v)+2floor(v).
+This is reconstructed by direct integer floors including the original unit,
+signed channel mixture, prefix truncation and unequal q exit.
+
+For each channel base b=p,q and each factor/weight (4,1),(2,-3),(1,2), set
+ Z=floor(factor*N/b). The exact floor indicator expansion is
+ 1_(d<=y)*floor(Z/d)=sum_(m<=Z/d)1_(d<=min(y,floor(Z/m))).
+For d>H, terms m>floor(Z/(H+1)) vanish. Thus the retained generic thresholds
+ T=min(y,floor(Z/m)), m1..floor(Z/(H+1))
+include EVERY signed original multiplicity. Terms with T<=H contribute no long
+inverse. For each T>H the generic long indicator completion is
+ sum_(ell<=T/(H+1)) mu(ell)*floor(floor(T/ell)/d).
+It equals1_(d<=T) at every d>H: the complete divisor floor identity
+sum_ell mu(ell)floor(T/(ell*d))=1_(d<=T) already has no nonzero summands after
+ell>floor(T/d)<=floor(T/(H+1)). All floors are inclusive and the nested floor
+identity holds exactly for positive integer d.
+
+The checker builds an UNWEIGHTED integer matrix G_b(d,ell), d1..H,ell1..K,
+by summing weight*floor(floor(T/ell)/d) over all these thresholds. K is enough
+since T<=y. No arithmetic sign is inserted into G, and no signed multiplicity
+or grouped threshold is discarded. The joined matrix is G_p-r*G_q. Applying
+the actual ordinary mu(ell) recovers exactly the generic long completion at
+each short row. Every long induced horizon is>H; there is no arbitrary LP base.
+
+Independent arithmetic and every saved entry
+--------------------------------------------
+A smallest-factor sieve is followed by a separate valuation factorization
+for every integer1..radius. The resulting ordinary mu values (unit1, squareful0)
+are compared to the COMPLETE saved array. Registered-prime factors are NOT
+masked here: the inverse uses ordinary mu, including registered primes. This
+is a newly charged finite arithmetic proof step through the explicitly reported
+radius, not a numerical scientific source/norm/correlation evaluation.
+
+Let P be the fixed063 fill map. Each is a linear map independent of u and the
+source parameter. The checker reconstructs Pf from the actual source arrays
+and reconstructs EVERY PG column by applying P to G_p-rG_q. Each stored
+linear_terms and long_kernels_after_fill entry is parsed and compared exactly.
+Columns are streamed when applying u, so no dense quadratic tensor is built.
+
+Both linked repair arrays are then source-bound:
+ raw residual = f-(G_p-rG_q)*u,
+ filled residual = Pf-P(G_p-rG_q)*u=P(raw residual).
+The raw comparison also covers noncoprime rows ignored by zero/interpolation
+fills. A generic valid repair whose unused raw rows were forged is not admitted
+as THIS saved source lift. Repair mask,H,rule must match exactly. The frozen063
+independent forward verifier checks every floor-matrix row, unit first moment
+and complete coefficient L1. No producer inverse is used for verification.
+
+Why the two u factors really are the same arithmetic
+---------------------------------------------------
+The unique full-row inverse is
+ A_j=sum_(m<=H/j)mu(m)*filled(jm), c_j=A_j-A_(j+1).
+The063 forward identity and matrix uniqueness independently establish that
+these are precisely the admitted coefficients. Since mu through radius>=H,K
+is independently checked, the factorization is exactly
+ c=Delta D(u)P(f-G*u), with the SAME u in both D and the long inverse.
+It is not two unrelated bounded sign vectors. The leading source term is
+linear in u and the long term is quadratic in u. No signed quadratic growth
+estimate is deduced from the formal arithmetic degree or mu's local bound.
+
+Finite completion and what remains required
+--------------------------------------------
+The generic long matches the original source on all d>H. The linked repair
+matches its short residual on all coprime d<=H and vanishes after H. Thus their
+sum is the actual masked-source completion defined by this generic primitive.
+This independently admits the saved quadratic schema's source meaning.
+The API does not receive or compare a serialized saved WHOLE062 certificate
+or its byte ancestry. Those remain the root's separate provenance/whole-source
+admission. The existing063 whole certificates stay intact; this source binding
+does not silently replace their long dictionary with an arbitrary LP completion.
+
+Uniform quadratic variation, uniform source growth,061 core bound and RH stay
+OPEN. The local contraction checker must explicitly depend on this source
+admission, and its paid algebraic/operator bound still needs a correctly bound
+all-scale forcing estimate. Neither finite matrices nor a producer flag pays
+such a rate. No source values or missing higher-index signs are supplied as
+an independent bounded-data oracle.
+
+Capacity and focused development
+--------------------------------
+H*K<=y<=D<=2N, so each two-endpoint kernel has at most4N entries, maximum262144.
+Radius<=65536. Input rationals4096bits/2500characters and intermediate32768bit
+guards are inherited. Raw G uses bounded source integers; endpoint/fill columns
+are streamed. The prospective dimensions fit well below the16GiB ceiling;
+work/deadline limits apply to every source threshold, matrix update, arithmetic
+factor and reused checker operation. No fractional denominator whitelist exists.
+
+The sole synthetic suite uses mask[2,7], small scales, and constructs its test
+G independently by finite SOURCE JUMPS Delta f(T), whereas the verifier expands
+each original floor into outer indicator indices. It tests all eight fills,
+K0 and virtual boundary, K>H, ordinary versus masked mu, squares, matrix signs,
+ratio endpoints, unit, every shape/index, unused noncoprime raw residuals,
+source parameters, general denominator257, strict flags, resources and meter.
+All charged work/failure attempts are preserved in the development receipt;
+only genuinely affected cases would be rerun. No scientific lift or source
+batch is opened before root freezes the new checker/protocol.

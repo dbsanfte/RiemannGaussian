@@ -1,0 +1,153 @@
+CENTERED MOBIUS COVARIANCE SEARCH041: FINITE LEADS, NO CANCELLATION MECHANISM YET
+
+Current result
+
+The detector now searches a complete signed parent/innovation covariance for
+the actual centered endpoint left by040. It generated216 different inequalities
+from288 descriptions, removing72 exact aliases.108 passed the six training
+scales and108 failed. Five automatically selected/control programs were frozen
+before an independent interval source was generated. Two survived all21 audited
+scales; three were rigorously refuted. No uniform covariance estimate, complete
+signed arithmetic bound or RH proof was established. The active goal stays OPEN.
+
+A further exact diagnostic is essential: both survivors pass every sampled
+inequality even when their signed cross contribution is replaced by its absolute
+magnitude. Finite success therefore does not identify a cancellation mechanism.
+Do not respond by merely tuning C or the same short coefficient grid.
+
+Authoritative artifacts
+
+  centered-mobius-bound-results/recovery-001/report.json
+  centered-mobius-bound-results/recovery-001/search.json
+  centered-mobius-bound-results/recovery-001/conditional_verification.json
+  centered-mobius-bound-results/recovery-001/interval_audit.json
+  centered-mobius-bound-results/recovery-001/mechanism_diagnostic.json
+  centered-mobius-bound-results/recovery-001/proof_search_input.json
+
+The last input includes the mechanism review. Its next_search_input.json parent
+predates that review. Subsequent042 proof-scope feedback is now included in
+finite-prime-obstruction-results/pilot-001/next_search_input.json; see
+FINITE_PRIME_PROOF_SCOPE_HANDOFF.txt for the current continuation.040 and all
+earlier original-F/037 obligations remain retained; the covariance search never
+replaces the original signed target.
+
+Source and precise open bound
+
+Let r=1/3,theta=2/3,q=2, b=K_r*mu with K_r(n)=n^-r,
+c=b-q delta_q*b, kappa=(1-q^r)/(theta*zeta(theta)),
+J_q(x)=sum_(n<=x)c(n)-kappa*x^theta, J_q(0)=0.
+Keep the complete prefix from n1, the unit1-kappa, continuous dilation center,
+all primes and all prime-power valuations. No ordinary critical Mobius moment
+is assumed. The actual analytic kappa has independently verified ceiling1,
+so |J_q(n)-J_q(n-1)|<=B=4 for every integer n>=1.
+
+The target is, for every epsilon>0, a constant C_epsilon independent of every
+integer X>=1 with E_J(X)<=C_epsilon X^epsilon,
+E_Z(X)=X^-2 sum_(X<=n<2X)Z(n)^2.040 supplies the conditional RH bridge and
+the already paid subcritical error; neither is a proof of this target.
+
+For m>=2 set
+ A(n)=m^-1 sum_(j=0..m-1)J_q(mn+j), I(n)=A(n)-lambda*J_q(n),
+ C_JI(X)=X^-2 sum J_q(n)I(n),
+ D(X)=X^-1 sum_(k=1..2mX-1)[J_q(k)-J_q(k-1)]^2.
+The searched assertion, at EVERY integer X>=1 with one fixed program, is
+ 2lambda C_JI+(1+delta)E_I <= (m*rho-lambda^2)E_J+C D.
+Its defect is E_A-m*rho E_J+delta E_(A-lambda J)-C D.
+Delta0 removes lambda exactly; aliases do not count as separate discoveries.
+
+The initial family has m2,3,5,7; lambda1/2,1,3/2,m^-r;
+rho0,1/2,1; delta0,1/4,1; C0,1. Constants are fixed before data, not fitted.
+The supplied family and ranking remain human-designed. This is an automatic
+bounded search within that family, not unrestricted autonomous proof invention.
+APIs support arbitrary canonical rational source exponents in0<r<1/2 and
+synthetic tests include denominator257; this actual experiment used only1/3.
+
+Verified conditional argument
+
+Exact complete child variance gives E_J(mX)=E_A(X)/m+V_m(X), with
+ 0<=V_m(X)<=B^2(m^2-1)/(12mX), D(X)<=2mB^2.
+Hence a TRUE covariance hypothesis implies
+ E_J(mX)+(delta/m)E_I(X)<=rho E_J(X)+(C/m)D(X)+V_m(X).
+For rho<1 the energy is bounded; for rho1,C0 the error is summable and the
+energy is also bounded; rho1,C>0 gives logarithmic growth. All implications
+remain CONDITIONAL. All m-1 seed chains and the complete factor5 window cover
+are kept when passing from m-adic chains to every integer X. The proof includes
+the possible extra child step in the logarithmic cover. No proof node marks an
+OPEN covariance premise as paid. These sufficient hypotheses may be stronger
+than the original subpower target; failure of one does not refute that target.
+
+Actual selected results
+
+haar_022: m2,lambda1,rho0,delta1,C1. Refuted at X1.
+haar_046: m2,lambda2^-1/3,rho0,delta1,C1. Refuted at X1.
+Both pass the other20 observed scales. The fixed all-integer programs are still
+refuted. A head correction would be a new program, not retroactive success.
+
+haar_018: m2,lambda1/2,rho1,delta1,C1. Passes21/21.
+The open assertion is E_A+E_(A-J/2)<=2E_J+D. If proved at every integer X,
+the independently checked consequence is E_J(X)<=660(1+ln X). Its positive
+innovation penalty is real, but its signed cross is unnecessary in all21
+finite successes: absolute-cross replacement also passes21/21, and the
+diagonal-only Young upper bound passes20/21 (the exception is X1).
+
+haar_002: m2,rho0,delta0,C1. Passes21/21.
+The open assertion is E_A<=D. It is a direct moment bound, with conditional
+consequence E_J(X)<=490. Its innovation-coordinate lambda cancels, so it is
+explicitly classified as an endpoint restatement, not a new operator mechanism.
+
+haar_013: m2,rho1,delta0,C0. Declared zero-forcing control, not a lead.
+Refuted at X=1,512,1024,8192,32768,161107,254924.
+
+Training X=32,64,128,256,512,1024 used only float coefficients through14335.
+After selection, a separate distinct-prime product constructed192-bit Arb
+coefficients through1048575. Audit parents were2^k,k0..16, plus the irregular
+integers72156,72326,161107,254924, drawn after the batch freeze. All selected
+programs happened to have m2. There were21 shared complete moment windows and
+105 rigorously signed comparisons, with no unresolved interval signs.
+The final scales are now development evidence; do not reuse them as fresh
+holdouts after adapting a subsequent search. No prior coefficient archive was
+read, but underlying primes cannot be claimed historically unseen.
+
+Independence, resources and correction record
+
+The producer uses an SPF recurrence; the interval checker uses a distinct-prime
+product and retains signed Grams, complete child variance and exact dyadic
+enclosure endpoints. The argument checker imports neither producer nor selector.
+Moment windows were divided between two fork workers sharing one source. No
+quadratic pair table or full final float source was built. No hashes were made.
+
+Run time19.75seconds. Charged operations: float source1,281,916;
+conditional checker44,295; interval source88,501,753; interval audit30,440,258.
+Conservative parent-plus-worker memory reserve4,945,084,416bytes, below16GiB.
+Reported parent high-water RSS704032KiB; workers311728 and311472KiB. These are
+individual high-water reports, not a synchronized total memory measurement.
+
+Pilot-001 stopped before generating source coefficients: int(Arb ceiling) is
+unsupported by the installed python-flint. Its failed snapshot/receipt remain.
+Recovery-001 extracts an exact fmpz before integer conversion. A focused scalar
+integration regression passed; grammar, constants and selection were unchanged.
+All45 distinct041 source/search/checker/runner tests now pass. Initial interval
+development failures and one corrected cover assertion are retained in receipts.
+Three additional mechanism-review tests pass, using synthetic exact Grams only.
+The mechanism review used saved dyadic endpoints and added no source observations.
+
+Proof feedback and next work
+
+The norm-only proof primitive is independently rejected by a unit-retaining
+positive-prefix countermodel. It does not satisfy the actual Euler source laws
+and is not an arithmetic or RH counterexample.
+
+The next proof search must invent an auxiliary and an argument using the full
+source. Source-sensitive prime identities are already available, including the
+q-prime valuation-one crossing. They remain identities with an open prime-free
+covariance. Simply adding more finite prime cases or another generous forcing
+constant is not evidence of a global mechanism. The separate042 adversarial
+scope calibration now rejects the finite-prime-only proof path. Its three
+independently admitted certificates explicitly exclude the full all-prime/global
+analytic source identity from their countermodel premises; they do not refute
+the actual source or the041 source binding. The historical prime-log identity
+and shell recovery
+already in CORE_SIGNED_WORK_HANDOFF.txt should not be rerun as new discoveries.
+
+Continue searching for constructions that supply signed arithmetic control;
+neither the two finite survivors nor these rejection certificates close it.

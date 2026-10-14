@@ -1,0 +1,93 @@
+INDEPENDENT MATHEMATICAL REVIEW — NEXT RELATIONAL LANGUAGE
+Source: critical_core_next_relational_language.txt
+Exact source SHA256: 611580b331eb408078ea2467d6ad755e066d9039cc4c208b8fbc4c3a174093d5
+Scope: approval of the listed exact identities, diagonal envelopes and
+CONDITIONAL ordinary-zeta bridges. No full actual signed bound or RH proof.
+All prior frozen sources, programs and records remain unchanged.
+
+1. Mertens kernel and diagonal innovation: verified.
+K_X(t) counts exactly n in the half-open integer block[X,2X) witht<=n.
+Expanding M(n)^2 and interchanging FINITE sums gives the displayed full pair
+kernel. The split into diagonal and twicei<j off-diagonal is complete.
+For integer evenX, J=K_2X-4K_X is positive on t=3X/2+1,...,4X-1. Its two
+positive sums are X^2/2+X (through2X) and2X^2-X (after2X), totaling5X^2/2.
+For X1, weights at2,3 are2,1, totaling3. Since0<=mu(t)^2<=1, dropping only
+negative diagonal weights gives the stated upper bound. This does not bound
+the signed off-diagonal sum. A cofinal upper estimate for that COMPLETE
+innovation, plus this diagonal charge, telescopes normalized energy and
+would reach critical M energy; the upper estimate remains unproved.
+For c, c^2=4^omega<=d4 and the harmonic tuple envelope gives even the bound
+D_c(X)<=2X^2(1+log(2X))^3, so the proposal's constant4 is safe. Primitive
+increment diagonals here are distinct from prefix-column operator diagonals.
+
+2. Gcd/coprime reindexing: verified.
+For g=gcd(i,j), a=i/g,b=j/g are coprime and uniquely determined. If any of
+these has a squared prime, the relevant mu products vanish. If g shares a
+prime withab, one left factor also vanishes. Otherwise multiplicativity
+givesmu(ga)mu(gb)=mu(g)^2mu(a)mu(b), exactly as written. The complete primitive
+sum and upperg endpoint therefore reconstruct A and itsinnovation. A cutoff
+projection requires its exact signed complement; the nonnegative energy
+kernel does not confer a sign on outermu(a)mu(b) or on innovationJ.
+
+3. Fixed-prime mu shell and window: verified including endpoints.
+The localmu coefficients are1,-1,0,... . Everyp-free core contributes
+mu(b)[1_(b<=n)-1_(pb<=n)]; this equals its upper-shell indicatorn/p<b<=n.
+For two cores the integer prefix intersections are
+[max(X,b,c),min(2X,pb,pc)), hence their exact count is the proposedL.
+Expanding the two indicator differences gives ALL fourK terms with the
+correct signs. In particular pb andpc are excluded upper endpoints, not
+included ones. No off-diagonal or boundarycore is lost. Shell recovery is
+an identity; Cauchy on that full signed core sum still leaves the required
+critical cancellation unknown.
+
+4. Actualc boundary phase: verified.
+For n>=b and(b,p)=1, letE be the largest nonnegative integer withp^E b<=n.
+The coefficient1+2sum_e1..E(-1)^e equals(-1)^E exactly. Summing over allp-free
+cores yields the displayed C(n). The phase is computed by powers withE0
+included; floatinglog rounding would not be acceptable. Squaring requires
+ALL mixed core phases. Their diagonal has phase modulus1 andcofinalcritical
+charge fromc(b)^2<=d4, but the mixed Gram has no supplied sign or bound.
+
+5. Lambda forcing and centered prime target: verified.
+From log(n/d)=logn-logd andmu*One=unit one obtainsLambda=mu*log. Its prime
+power coefficients arelogp andall other positive non-prime-power indices
+have coefficient0, includingn1. Summing the complete divisor split gives
+log(floor(x/d)!) in BOTH ranges; the tail is neither small nor omitted.
+Formal prime-log coefficients provide an exact stronger verification than
+floating equality. mu(n)logn=-(mu*Lambda)(n) follows coefficientwise from
+logarithmic differentiation of the complete actual Euler product.
+P(n)=psi(n)-n has incrementsLambda(n)-1. The absolute increment boundlogn+1
+makes its kernel diagonal O(X^2(1+log(2X))^2). For innovation the positiveJ
+charge similarly gives O(X^2(1+log(4X))^2), absorbable into every positive
+power; the full centered off-diagonal still needs signed control.
+For realt, psi(t)-t minusP(floort)=floort-t has magnitude<1. Thus the claimed
+step-versus-continuous recovery charge is valid and near-critical.
+
+6. Ordinary pole bridge: correct with the stated guards.
+The Dirichlet series ofLambda-1 is -zeta'/zeta-zeta inRe(s)>1. The apparent
+pole at1 cancels: both displayed terms have opposite simple residues there,
+as required by subtraction of the ordinary main term. At an ordinary-zeta
+zero withRe(s)>1/2, the logarithmic derivative has a genuine simple pole;
+the term-zeta is analytic andcannot cancel it. Complete critical centered
+prefix energy implies holomorphy of its ordinary Mellin transform in this
+half-plane by dyadic blockCauchy. A fixed single nonzero dilation multiplier
+never vanishes; more general fixedfilters need separately proved bank or
+zero-multiplicity recovery, as the proposal says. Forc, m<=2 protects poles
+of orderatleast2; formu the generic sufficient bound isone nonzero term.
+A block-dependent transformed prefix must recover this original ordinary
+sequence before using the argument. No Mellin transform of an arbitrary
+moving kernel, partial projection or sampled sequence is licensed here.
+
+7. Checks and actionable limitation.
+Independent actuallocalfactor coefficients through32 verified thegcd law,
+fixed-prime mu shell andc phase forp2,3,5. Pure integer endpoint checks verified
+thefour-term window identity and positiveJ sums, with no floating arithmetic.
+These tests corroborate implementation details; the all-scale identities
+above are proved algebraically andnot by tests. No mathematical flaw was
+found within the stated domains. The proposed grammar is acceptable as an
+exact relational certificate language, subject to strict domain/remainder
+checks. Its strongest unproved premise remains complete actual SIGNED
+mixed-pair innovation or equivalentcriticalprefixenergy. Gcd reindexing,
+prime forcing, phase cancellation and already-critical diagonals establish
+no such upper estimate. Supplying that premise circularly from another
+unknown correlation bound must be rejected.

@@ -1,0 +1,36 @@
+{
+  "schema": "core-cutoff-work-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_cutoff_work_search"
+      ],
+      "returncode": 0,
+      "operations": 17805202,
+      "elapsed_seconds": 10.775935916986782,
+      "test_count": 22,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_cutoff_work_search operations=17805202 elapsed_seconds=10.696858\n",
+      "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 10.696s\n\nOK\n",
+      "max_rss_kib": 24248
+    }
+  ],
+  "operations": 17805202,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368
+  },
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "prior_suites_run": 0,
+  "independence": "ordinary three-sign polynomial specialization and interpolation; full source inverse replay; Laurent head grammar; centered kernel and maximum-energy envelopes",
+  "analytic_reviews": [
+    "CORE_CUTOFF_TRANSITION_RULE_REVIEW_022.txt",
+    "CORE_CUTOFF_TRANSITION_SCOPE_REVIEW_023.txt",
+    "CORE_CUTOFF_AUTOMATIC_CONTROL_REVIEW_024.txt"
+  ]
+}

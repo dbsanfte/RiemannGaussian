@@ -1,0 +1,70 @@
+Stage036: adaptive rational exponents with priced arithmetic recovery
+
+Motivation and scope
+The user requested exploration beyond square/cubic/sixth roots. Existing
+rational_power_grammar.py already defines arbitrary exact rational powers;
+some recent search defaults and proof providers used narrower finite lists.
+The new reusable exponent scheduler has no semantic denominator ceiling.
+It supports exact signed intervals and resumable reduced-rational height
+enumeration. A finite work/candidate budget limits each batch. Explicit exact
+requests pay their bit work and do not become duplicate later shell candidates.
+This stage does not rerun the old fractional-moment or recursive studies.
+
+Actual new construction
+For each035machine-generated arithmetic state h and rational gamma>=0,
+ h_gamma(n)=n^(-gamma)h(n).
+This changes the arithmetic operator; replacing q=p^-1/6 by p^-1/12 alone
+does not. Generalized prime powers are stored as exact rational exponents,
+not expanded into an increasingly large least-common-multiple root polynomial.
+The inherited valuation-e transfer multiplies by p^(-gamma*e), including
+e=0 and the complete infinite valuation tail. The unit is unchanged.
+An independent checker replays the035source certificate before admitting
+any weighted estimate. Fractional branch choices on negative values are not
+needed here because the weight's base n is positive. The scheduler also
+constructs explicitly signed-power ASTs; those do not receive bounds from
+this coefficient-weight proof provider merely by being syntactically valid.
+
+Bound and recovery rules
+Let the unweighted prime polynomial have leading power p^-r, magnitude
+coefficient ceiling D and unit ceiling J. The weighted exponent is r+gamma.
+On EVERY real partial prefix through2X, at the SAME y=ceil(sqrt(2X)), the
+rough support is just unit and primes. Integer power summation gives
+ |A_gamma(t;y)|<=K t^a (1+log t)^ell:
+ r+gamma<1: a=1-r-gamma,ell=0,K=J+D/(1-r-gamma);
+ r+gamma=1: a=0,ell=1,K=J+D;
+ r+gamma>1: a=0,ell=0,K=J+D*(1+1/(r+gamma-1)).
+For a zero prime polynomial use a=ell=0,K=J.
+Complete-block energy is at most
+ K^2*2^(2ceil(a)+2ell) X^(2a-1)(1+log X)^(2ell).
+The035constant-sign and elementary prime-count lower rule also applies with
+r replaced by r+gamma, retaining its sign threshold and updated unit head.
+
+Undoing the weight is part of admission:
+ A_0(n;y)=n^gamma A_gamma(n;y)
+           -gamma integral_1^n A_gamma(t;y)t^(gamma-1)dt.
+It uses every partial prefix, not merely an energy estimate at a few endpoints.
+For gamma>0 the resulting upper bound costs at most2K, exponenta+gamma,
+and the same log power. For gamma=0 the factor is one. Dyadic conversion
+then gives the recovered UNWEIGHTED component energy exponent.
+For r+gamma<1 this elementary route has exactly its original power1-2r;
+for r+gamma>=1 it gives no better power. This is a scope/result check, not
+an imposed expected winner. The checker recomputes all powers and constants.
+No root-amplitude or fractional-weight shrinkage alone pays the joined core.
+
+Frozen pilot
+Four resumable batches of up to32exponents on[0,1], work budget100000per
+batch; first batch explicitly requests1/257 to test a larger denominator.
+This is a finite pilot budget, not a mathematical cutoff or exhaustive search
+of all rational exponents. Freeze new code/tests/receipts before these batches.
+Apply each emitted exponent to every035generated state. Check every resulting
+candidate and its source/recovery separately. No arithmetic archive is reread;
+this is exact symbolic proof search on the verified source-state certificate.
+Record complete cursors, admitted requests, coverage and actual work. Peak RSS,
+wall time and declared proxy work accompany the result. Memory16GiB,900seconds.
+No hashes, old studies, old suites or model-generated winning exponents.
+
+Interpretation
+The scheduler can support richer fractional constructions in the joined-bound
+search. This pilot covers coefficient weights plus exact Abel recovery only.
+It does not refute nonlinear mixed potentials, fractional moments or other
+operators. Accepted033 and035 obligations remain authoritative and unpaid.

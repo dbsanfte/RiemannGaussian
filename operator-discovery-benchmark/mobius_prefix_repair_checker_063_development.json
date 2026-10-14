@@ -1,0 +1,28 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_prefix_repair_063.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 17,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_prefix_repair_063 operations=663236\n",
+      "stderr": "test_H_one_arbitrary_fraction_and_general_mask (__main__.RepairCheckerTests) ... ok\ntest_all_eight_rules_and_exact_full_floor_replay (__main__.RepairCheckerTests) ... ok\ntest_all_two_endpoint_array_shapes (__main__.RepairCheckerTests) ... ok\ntest_charge_only_pipeline_meter_and_work_cap (__main__.RepairCheckerTests) ... ok\ntest_coprime_fill_mutation_cannot_be_hidden (__main__.RepairCheckerTests) ... ok\ntest_core_inverse_prices_full_factor (__main__.RepairCheckerTests) ... ok\ntest_core_removes_all_registered_valuations (__main__.RepairCheckerTests) ... ok\ntest_dropped_coefficient_or_underpriced_norm (__main__.RepairCheckerTests) ... ok\ntest_forged_original_source_or_uniform_flags_rejected (__main__.RepairCheckerTests) ... ok\ntest_non_coprime_floor_rows_are_also_replayed (__main__.RepairCheckerTests) ... ok\ntest_reciprocal_interpolation_is_not_linear_in_d (__main__.RepairCheckerTests) ... ok\ntest_source_binding_and_uniform_growth_remain_unpaid (__main__.RepairCheckerTests) ... ok\ntest_strict_rational_and_horizon_capacity (__main__.RepairCheckerTests) ... ok\ntest_unit_and_squareful_coprime_rows_are_retained (__main__.RepairCheckerTests) ... ok\ntest_unknown_rule_and_prime_schema (__main__.RepairCheckerTests) ... ok\ntest_virtual_H_plus_one_boundary (__main__.RepairCheckerTests) ... ok\ntest_wrong_non_coprime_fill_rule_rejected (__main__.RepairCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.073s\n\nOK\n",
+      "operations": 663236,
+      "elapsed_seconds": 0.1369113769615069,
+      "peak_rss_KiB": 25308
+    }
+  ],
+  "operations": 663236,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "scientific_LP_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true
+}

@@ -1,0 +1,88 @@
+FACTOR-BLOCK SQUARE CLOSURE AND THE ACTUAL REPRESENTATION GAIN
+
+Pre-score analytical advice for the new factor language. Existing sources and
+calibrations remain fixed. No numerical scores, expected winning operator or
+critical signed estimate is supplied.
+
+1. Exact factor decomposition in formal polynomial space.
+For a complete declared ordered product domain and exact numeric kernel weights,
+let B=sum_(a,b)w_ab*x_a*x_b. Let C=sum_(coprime a,b)w_ab*x_(ab), with EVERY
+product multiplicity retained, and R=sum_(noncoprime a,b)w_ab*x_a*x_b.
+Define T=B-C-R=sum_(coprime a,b)w_ab*(x_a*x_b-x_(ab)).
+This is a COMPLETE relation sum; every inside/complement part has its own exact
+B,C,R,T and their full sums reconstruct the original domain. In the actual
+arithmetic quotient T=0. Formal B andR are quadratic, C is linear, andT has
+both degrees2 and1. The supplied compiler proves this identity, not a bound.
+A nonconstant external multiplier is applied to EVERY relation and to the
+full difference, not only its favorable terms.
+
+2. Minimal degree-four closure for new squares.
+The exact identity
+ B²-(C+R)²=T*(B+C+R)
+is the essential square transport. Its RHS is a sum of admitted coprime
+relations with COMPLETE multiplier w_ab*(B+C+R). This closes the degree4
+part of B² while retaining C²+2CR+R², including signed mixed terms. Using C²
+alone drops R²+2CR and is false unless R is identically absent by the declared
+source domain. A coprime-only domain has R=0, simplifying the identity to
+B²-C²=T*(B+C). Empty/zero-kernel domains are harmless exact zero cases.
+No actual signed coefficients are needed for these polynomial identities.
+
+For any declared polynomial U, polarization closure is
+ B*U-(C+R)*U=T*U.
+Choose U from COMPLETE B,C,R, original prefix/block linear forms and fixed
+rational mixtures, with shared coefficients. These generate degree3/4 relation
+columns that the unmultiplied coprime bank lacks. Relation multipliers require
+all source/product horizons and every polynomial term; budgets cannot silently
+truncate the multiplier. T² itself is a relation multiple, sinceT=Σwρ:
+T²=Σwρ*T. It is a nonnegative square that is identically0 on actual arithmetic,
+so it may aid certificate conditioning/closure but supplies no arithmetic bound.
+Similarly (B-C-R)² is a null square, not an observed cancellation estimate.
+
+3. Quotient equivalence and the genuine opportunity.
+With full square closure present, B² and(C+R)² represent the same quadratic
+observable on actual arithmetic. This does NOT mean they are redundant in a
+restricted finite cone: adding a grouped multiplier may express a relation that
+was inaccessible to the previous shared basis. The gain is exact compressed
+proof representation and new sign-bearing product-index interactions, not
+new arithmetic information. If closure is unrestricted per index, it can simply
+encode known finite coefficients; grouping must be specified before fitting.
+For coprime-only domains, C is a weighted product-index linear form. Its norm
+square can be placed in a general Gram atom bank, with exact collision weights.
+This is more varied than the old five prefix/residue atoms, but its ordinary
+energy estimate remains unknown. For full domains, R remains a signed bilinear
+polynomial, so(C+R)² contains quartics and complete dense cross correlations;
+it is not automatically an old linear-atom Gram square.
+
+4. Minimal generic dictionary advice.
+Declare factor kernels/cutoffs by a broad complexity-ordered rational grammar,
+not one chosen from observed response values. For each declared part retain
+B,C,R andT, with complete source complement. Start with shared square groups
+B² and(C+R)² and optional nullT². Add closure relation columns T*U with U from
+{B,C,R,B+C+R} and complete parent/child prefix or contrast linear forms, and
+allow rational sparse mixtures. B,C,R individually span the square-transport
+multiplier; a single supplied combined B+C+R column is the smallest calibration,
+while independent shared coefficients leave room to discover other exact matches.
+Multipliers need degree up to2, permitting degree4 expansion; linear multipliers
+alone cannot generically cancel a bilinear-square degree4 term.
+Keep a highest-degree exact nullspace/matching guard before target fitting,
+and formalconstant extraction for every added column. These objects have zero
+formalconstant, so their squares and relation products do not directly alter
+the existing scalar budget module. They can only enable different matching
+weights on old scalar groups. Norm-density gamma0 and sharper scalar-budget
+obligations therefore still apply when their stated hypotheses hold.
+
+5. Counterexample-driven boundaries and the uniform gate.
+A generic coprime multiplicative positive sequence satisfies B=C+R while having
+noncritical prefix growth; relation closure alone supplies no sign estimate.
+The squarefree partially normalized counterfeit further satisfies actual mu
+norm/gcd relations and a fixed prime bank. Any finite bound-search claim must
+retain sufficient actual arithmetic information to exclude those models;
+no theorem requires every individual prime sign in every possible proof.
+A dual witness may be invalidated by a new factor column, but feasibility still
+needs resynthesis and exact shared certificate verification. Unexpected monomials
+require a complete extended dual rather than implicit zeros.
+The full original signed target remains unchanged. A useful finite factor
+certificate merely nominates a symbolic template; uniform admission requires
+ALL-scale nonconstant identity, nonnegative shared squares and a proved critical
+scalar budget with every initial/source/product/boundary charge. The factor
+closure identities themselves prove none of those missing signed estimates.

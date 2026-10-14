@@ -1,0 +1,14 @@
+{
+  "operations": 110651,
+  "runs": [
+    {
+      "test": "test_permuted_circuit_discovery",
+      "operations": 110651,
+      "returncode": 0,
+      "tests": 10,
+      "runtime_seconds": 0.084,
+      "stdout": "SYNTHETIC_WORK module=test_permuted_circuit_discovery operations=110651\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.084s\n\nOK\n"
+    }
+  ]
+}

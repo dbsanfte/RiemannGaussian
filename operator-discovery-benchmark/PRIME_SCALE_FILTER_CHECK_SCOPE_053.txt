@@ -1,0 +1,119 @@
+053 INDEPENDENT PRIME-SCALE FILTER BRIDGE AUDIT
+
+This is an exact conditional implication, not an estimate for the arithmetic
+sum. Frozen051/052 proofs and files are unchanged; no scientific source arrays,
+zero computations, old tests or candidate scoring are used in this audit.
+
+1. Fixed arithmetic object and full center.
+For one fixed rational 0<alpha<1, take the051 forward b=0,a=1,sign=-1 kernel
+ K_alpha(n)=-sum_{d|n}mu(d)*(log d)^alpha, n>=2, K_alpha(1)=0.
+Set A_alpha(x)=sum_{2<=n<=x}K_alpha(n), for every real x>=1. Frozen051 gives
+0<K_alpha(n)<= (log n)^alpha. Frozen052 supplies the exact full positive center
+m_alpha(x)=m_alpha(1), M_alpha(x)=m_alpha(1)(x-1), with
+ m_alpha(1)=I_alpha^-1 integral_0^infinity
+           [1/zeta(1+t)]t^-alpha-1dt,
+ I_alpha=integral_0^infinity(1-exp(-u))u^-alpha-1du.
+No truncated arithmetic moment, fitted scalar, leading-only asymptotic, or
+ordinary-series convergence at a zero is substituted for this center.
+
+2. The finite filter.
+Fix integer q>=2 and one nonzero finite real rational polynomial
+P(z)=sum_{j=0}^d c_j z^j. Define T_P(x)=sum_j c_j A_alpha(q^j x).
+The exact identity P(q)=0 removes the growing linear center, leaving
+ sum_j c_j M_alpha(q^j x)=-m_alpha(1)P(1).
+P(1)=0 is optional: otherwise this fixed constant is harmless for a square-root
+bound. Coefficients, degree and q are fixed, not fitted as functions of x.
+The proposed arithmetic premise is a uniform bound for every epsilon>0 at all
+integer scales (or all real scales if explicitly requested). This premise is
+OPEN. Neither P(q)=0 nor pointwise positivity proves it.
+
+3. Integer scales imply real scales.
+For real x>=2 let N=floor x. In each term, the integers between q^j N and q^j x
+number at most q^j. Their kernel values are at most
+[log(q^d(N+1))]^alpha. Consequently
+ |T_P(x)-T_P(N)| <= (sum_j |c_j|q^j)*[log(q^d(N+1))]^alpha.
+For a fixed finite filter this is O((1+log x)^alpha), hence absorbed into every
+x^(1/2+epsilon) bound. Any finite initial interval is priced as a compact head.
+No interpolation from finite observations is used. q being an integer and the
+known all-integer kernel bound are essential for this particular step.
+
+4. Complete Mellin identity, including finite heads.
+Let F_alpha(s)=sum_{n>=2}K_alpha(n)n^-s. Initially Re(s)>1 only,
+ F_alpha(s)=I_alpha^-1 integral_0^infinity
+           [zeta(s)/zeta(s+t)-1]t^-alpha-1dt.
+Stieltjes integration and change of variable give exactly
+ s integral_1^infinity T_P(x)x^-s-1dx
+ =P(q^s)F_alpha(s)
+  -s sum_j c_j q^(js) integral_1^(q^j) A_alpha(u)u^-s-1du.
+Every finite-head term on the right is entire in s. The j=0 head is zero.
+The left becomes holomorphic on Re(s)>1/2 under the all-epsilon real-scale
+bound, by locally uniform integral domination. Hence the same premise implies
+P(q^s)F_alpha(s) holomorphic there. Alternatively, the full center's transform
+is m_alpha(1)/(s-1); multiplying by P(q^s) removes its simple pole at s=1
+because P(q)=0. No critical-strip reciprocal Dirichlet series is asserted.
+
+5. The annulus guard was sufficient but is unnecessary.
+The first proposed guard excluded roots of P in sqrt(q)<|z|<q. That condition
+would ensure P(q^rho) nonzero at any off-half-plane zero rho and directly
+preserve052's divergence. It is a valid sufficient condition, but it excludes
+filters unnecessarily. The following finite-order argument admits EVERY
+nonzero finite P, regardless of roots in that annulus.
+
+Assume an off-line ordinary zero exists. As in052, reflection gives one to the
+right of1/2. Choose a rightmost zero rho at its fixed nonzero imaginary height.
+This does not assume a globally rightmost zero. Frozen052 proves along the
+zero-free horizontal ray, for delta>0 tending to0,
+ F_alpha(rho+delta)=C_m delta^-alpha+O(1), C_m<0,
+for every multiplicity m>=1 of zeta at rho. It retains all local and far-tail
+terms; its uniform local remainder is O(t), not an unprocessed O(delta+t).
+
+Let the analytic multiplier P(q^s) have zero order k>=0 at rho. Its order is
+finite because P is a nonzero finite polynomial and q^s has nonzero derivative
+(log q)q^s. Thus P(q^(rho+delta))=h delta^k+O(delta^(k+1)), h!=0. Multiplication
+of the exact local estimate yields
+ P(q^(rho+delta))F_alpha(rho+delta)
+ =h C_m delta^(k-alpha)+O(delta^k).
+Indeed the next multiplier term contributes O(delta^(k+1-alpha)), which is
+O(delta^k) because 0<alpha<1, and the bounded remainder contributes O(delta^k).
+If k=0 this diverges and cannot be holomorphic. If k>=1, k-alpha lies strictly
+between k-1 and k. Were this product holomorphic at rho, its Taylor coefficients
+of degrees0 through k-1 would all vanish: any first nonzero such term would
+contradict its O(delta^(k-alpha)) behavior on positive delta. The holomorphic
+product would then be O(delta^k), contradicting the nonzero h C_m term.
+Hence a polynomial zero cannot erase this fractional singularity. This proof
+does not need differentiation of the O(1) remainder or a global branch analysis.
+The strict range 0<alpha<1 is essential; integer powers are not covered.
+
+6. Conclusion and admission scope.
+A uniform all-epsilon square-root bound for a fixed nonzero finite filter with
+P(q)=0 would exclude every ordinary zeta zero to the right of1/2; reflection
+therefore implies RH. The filter need not pass an annulus test. The finite
+polynomial identity and this conditional implication may be admitted. The
+arithmetic estimate remains OPEN, and no convergence theorem, converse, root
+energy bound, numerical proof, or actual RH result follows from the certificate
+alone. Every finite-head and full-center term is retained. Proof scope is an
+independently reviewed typed analytic argument, not proof-assistant formalization.
+
+Standard primary background was independently checked in052 and remains the
+same imported trust base: DLMF25.2 https://dlmf.nist.gov/25.2 (series, Euler
+product and continuation),25.4 https://dlmf.nist.gov/25.4 (reflection), and25.10
+https://dlmf.nist.gov/25.10 (ordinary zero strip and symmetries). The fractional
+kernel, filter, head, integer-to-real and finite-order arguments above are
+derived explicitly. No new arithmetic distribution theorem is imported.
+
+7. Definitive executable053 grammar.
+The admitted request fixes alpha, integer q2..64, and primitive integer
+ascending coefficients with nonzero constant, positive leading coefficient,
+exact P(q)=0 and degree1..16. Coefficients are capped at1024 bits. Its missing
+inequality is |T_P(N)|/alpha<=C sqrt(N)(1+logN)^eta for EVERY integerN>=2,
+where C is one fixed positive canonical rational and eta one fixed nonnegative
+canonical rational. Since alpha is fixed positive, multiplying by alpha is a
+fixed cost. Since eta is finite, (1+logN)^eta=O_epsilon(N^epsilon) for every
+positive epsilon. This definitive leaf therefore implies the all-epsilon
+premise used above. No finite samples discharge it. The checker reuses only
+frozen052 rational/type/meter primitives, independently derives P(q),P(1),
+primitive normalization and integer jump cost, and replays all source,head,
+Taylor and claim fields. Inputs have4096-bit rational capacity, with explicit
+work/deadline accounting and no denominator whitelist. Numerical observations,
+rounding-as-an-exact-source, varying coefficients withN, unsupported alpha
+endpoints and any paid error/RH/converse claim are rejected.

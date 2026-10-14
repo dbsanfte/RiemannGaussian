@@ -1,0 +1,32 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B new test_mobius_walsh_energy_065 suite",
+      "returncode": 0,
+      "tests": 12,
+      "stdout": "test_arbitrary_fractional_and_negative_weight_orders (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_degree_four_energy_keeps_overlap (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_energy_cross_row_cancellation (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_exact_power_boundaries_and_small_scales (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_frustrated_cycle_is_discovered_and_pays_energy (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_full_source_to_energy_composition (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_linear_quadratic_constants_and_shared_prime_square (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_overlapping_cycles_respect_capacities (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_rational_square_root_ceiling (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_tiny_exhaustive_common_sign_soundness (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_weight_deduplication_and_zero_polynomials (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\ntest_weight_power_validation_and_work_guards (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.153s\n\nOK\n",
+      "operations": 915675,
+      "elapsed_seconds": 0.15282677399227396,
+      "peak_rss_KiB": 16192
+    },
+    {
+      "command": "new isolated same-parent runner composition test",
+      "test_names": [
+        "test_runner_reuses_same_source_parent_and_rejects_swaps"
+      ],
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_runner_reuses_same_source_parent_and_rejects_swaps (test_mobius_walsh_energy_065.WalshEnergySearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.249s\n\nOK\n",
+      "operations": 36347,
+      "elapsed_seconds": 0.2493572779931128,
+      "peak_rss_KiB": 43716
+    }
+  ],
+  "operations": 952022,
+  "unique_new_synthetic_tests": 13,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false
+}

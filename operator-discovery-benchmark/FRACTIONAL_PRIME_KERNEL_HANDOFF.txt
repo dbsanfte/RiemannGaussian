@@ -1,0 +1,209 @@
+FRACTIONAL PRIME KERNEL SEARCH051 / CONDITIONAL RH BRIDGE052
+
+Authoritative continuation input:
+  fractional-prime-kernel-results/pilot-001/next_search_input.json
+Report, complete finite observations, selection, proofs and final values:
+  same directory/report.json, training.json, selected.json, proofs.json,
+  final_values.json, conditional_rh_bridges.json, protocol.json, grammar.json
+Reviewed mathematical arguments:
+  FRACTIONAL_PRIME_KERNEL_REVIEW_051.txt
+  FRACTIONAL_PRIME_RH_BRIDGE_REVIEW_052.txt
+  FRACTIONAL_PRIME_RH_BRIDGE_CHECK_SCOPE_052.txt
+Previous050 status and counterexample are preserved at:
+  floor-residual-results/pilot-004/mechanism_followup_001/base_followup_001/transition_followup_001/HANDOFF.txt
+
+STATUS: progress; persistent all-scale signed-control research goal ACTIVE.
+The detector surfaced kernels with genuine uniform pointwise arithmetic
+bounds. Their centered summatory error, the original floor-residual norm,
+and RH remain OPEN. The052 theorem is a conditional implication, with an
+explicit unproved arithmetic premise. It is not an RH proof or a converse.
+
+1. What the actual detector did
+
+New arithmetic grammar, with exact unrounded logarithms and real powers:
+  K(n)=sign*sum_(d|n)mu(d)*(a log(d)+b log(n/d))^alpha, n>=2; K(1)=0.
+  a,b>=0; a+b=1; a!=b; 0<alpha<=2; sign is +1 or -1; 0^alpha=0.
+Rational parameters are not restricted to square/cube/sixth roots. The pilot
+enumerated ALL reduced a denominators<=7 and alpha denominators<=11, producing
+3024 entries:2988 discovery entries plus36alpha1 calibration entries. General
+bounded exact rational requests remain accepted outside those pilot ceilings.
+
+The search evaluated2..64 plus81,125,210,231,385 at192-bit Arb precision.
+Each candidate stopped at its first strict negative upper bound, retaining
+the witness and untested numbers. This used42,876 scalar evaluations and
+skipped162,756 after refutation. All repeated prime valuations stay in n/d;
+ordinary mu comes from actual integer factorization, not a simulated ensemble.
+
+The numerical selector imports no proof provider. Its rules, full bank,
+training/final partitions and all source files were saved BEFORE observation.
+It selected6 candidates BEFORE symbolic proof attempts or final observations,
+using full training coverage, no certified negative, two distinct positive
+prime responses, positive multiprime response, rational complexity and
+exponent diversity. Calibration entries are excluded from discovery ranking.
+Unresolved intervals are retained as unresolved, never promoted to positivity.
+
+The resulting6 selected requests were:
+  0167: a0,b1,sign+1,alpha2 (quadratic backward branch);
+  2896: a1,b0,sign-1,alpha1/2;
+  2882: a1,b0,sign-1,alpha1/3;
+  2910: a1,b0,sign-1,alpha2/3;
+  2874: a1,b0,sign-1,alpha1/4;
+  2870: a1,b0,sign-1,alpha1/5.
+IDs have prefix fractional_prime_kernel_. No kernel was hand-picked or refit
+after these observations. This selector favors simple b0 representatives;
+it did not separately optimize the centered-error exponent.
+
+Fresh final integers were67,71,97,101,121,143,169,187,221,247,289,323,361,
+437,499,512,625,729,1001,2310,30030,510510,9699690. These include primes,
+prime powers and up to8 distinct prime factors. All138 final192-bit values
+passed independent256-bit reconstruction by enumerating ALL positive divisors
+and using exp(alpha*log(base)), with exact dyadic containment for the value,
+absolute divisor sum, normalized value and signed/absolute ratio. The checker
+imports no numerical producer. Arb is their shared trusted interval library.
+
+Five numerical sign intervals remain unresolved: the quadratic kernel at
+the5 integers with3 or more distinct prime factors. Its separately proved
+identity gives exact zero there. No unresolved ball was relabeled a finite
+strictly positive observation. No fresh negative value occurred.
+
+2. What was proved after numerical selection
+
+Every one of3024 grammar entries received an independently checked symbolic
+rule instance after the finite archive was saved. In discovery:
+  369 forward fractional kernels: uniform pointwise control;
+  9 quadratic backward kernels: uniform pointwise control;
+  1494 negative-prime,369 negative-three-prime,369 negative-two-prime-concave,
+  378 negative-two-prime-convex entries: exact sign refutations at2,6,30.
+All378 finite-archive eligible entries matched a licensed positive branch.
+The36alpha1 calibration entries split18positive vonMangoldt multiples and
+18negative orientations, exactly as expected.
+
+For a>b>=0, sign-1,0<alpha<1 and c=a-b, let
+  I_alpha=int_0^infinity(1-exp(-u))*u^(-alpha-1)du>0.
+The proved identity and all-integer bounds are
+  K(n)=I_alpha^-1 int_0^infinity n^(-bt)
+          product_(p|n)(1-p^(-ct))*t^(-alpha-1)dt>0,
+  K(n)<=min_(p|n)[(b log(n)+c log(p))^alpha-(b log(n))^alpha]
+       <=(c log(p_min))^alpha, for EVERY ordinary integer n>=2.
+In particular each selected fractional kernel satisfies
+  0<-sum_(d|n)mu(d)*(log d)^alpha<=(log p_min(n))^alpha.
+These include every prime power and every possible prime-factor count.
+
+For b>0 a stronger product bound retains EVERY distinct ordinary prime:
+  K(n)<=alpha*product_(j=1..k-1)(j-alpha)
+      *c^k*product_(p|n)log(p)/(b log(n))^(k-alpha), k=omega(n).
+It gives K/log(n)^alpha<=2alpha*b^alpha*(c/(2b))^k/k. Exponential decay
+in omega is licensed ONLY if c<2b, equivalently b>1/4; at b0 the derivative
+bound is disabled. Those b>0 branches were proved across the full bank but
+were not among the6 selected final representatives.
+
+For the selected quadratic kernel,
+  K=Lambda*log+Lambda*Lambda (second star is Dirichlet convolution),
+  0<=K(n)<=log(n)^2, with exact zero at omega(n)>=3.
+The alpha1 endpoint recovers |a-b|Lambda(n).
+
+These are reviewed exact calculus/divisor identities, not proof-assistant
+formalization. The detector supplied candidates; the analytic proof rules
+and RH bridge were developed and independently reviewed in this workflow.
+It has NOT autonomously synthesized a proof of the hard summatory estimate.
+Negative witnesses refute uniform NONNEGATIVITY of those specific kernels,
+not their possible use inside signed auxiliaries or an RH argument. Preserve
+them as available signed grammar expressions; do not blacklist them globally.
+
+3. Exact RH-relevant bound now recorded for the next search
+
+For each selected fractional kernel the initial Dirichlet identity is
+  F(s)=sum K(n)/n^s
+      =I_alpha^-1 int_0^infinity[zeta(s+bt)/zeta(s+at)-1]
+                  *t^(-alpha-1)dt, Re(s)>1.
+This initial identity alone proves no continuation into the critical strip.
+Use the FULL positive-density center, not a fit or leading asymptotic:
+  m(x)=I_alpha^-1 int_0^infinity x^(-bt)/zeta(1+ct)
+                  *t^(-alpha-1)dt,
+  M(x)=int_1^x m(u)du,
+  A(x)=sum_(2<=n<=x)K(n).
+The explicit OPEN premise is
+  |A(x)-M(x)|<=C_(epsilon,a,b,alpha)*x^(1/2+epsilon)
+  for every epsilon>0 and ALL real x>=2, for one fixed admitted kernel.
+
+All5 selected forward fractional kernels have a1,b0,c1, so this simplifies:
+  kappa_alpha=I_alpha^-1 int_0^infinity
+                 t^(-alpha-1)/zeta(1+t)dt>0,
+  M(x)=kappa_alpha*(x-1).
+The full constant is exactly this convergent integral, never an empirical fit.
+The finite arithmetic sum also has the exact rearrangement
+  A(N)=-sum_(d<=N)mu(d)*(log d)^alpha*floor(N/d), for integer N>=2.
+This rearrangement supplies a computable source for the new target, not a
+bound for its centered remainder.
+
+The independently reviewed052 theorem proves this exact premise IMPLIES RH.
+Its reason: F-H has a Mellin integral of the centered error, which the premise
+would make holomorphic in Re(s)>1/2. H is holomorphic off the real cut. At a
+rightmost zero rho at one fixed nonzero height, with Re(rho)>1/2 and arbitrary
+multiplicity m>=1, the exact quotient integral has
+  F(rho+delta)=C_m delta^-alpha+O(1), delta>0 tending to0,
+  C_m=I_alpha^-1 int_0^infinity
+       [((1+bu)/(1+au))^m-1]*u^(-alpha-1)du<0.
+The local analytic-factor error is O(t), giving bounded integrated remainder.
+This contradicts the conditional centered holomorphy. The proof includes
+b0 and every multiplicity, and does not assume a globally rightmost zero.
+Functional-equation reflection completes the implication. No converse is
+claimed. Every052 certificate keeps its arithmetic error premise OPEN.
+
+4. What to search for next, and what would count as progress
+
+Start new files at053; do not edit these23 frozen051/052 sources or113 prior
+sources. Use the explicit next_targets in next_search_input.json. The current
+pilot searched POINTWISE divisor control; it did not yet run a bound search
+on A-M. Recording the leaf is the input for that next implementation, not
+evidence that the centered bound has been obtained.
+
+Prioritize discovery of an auxiliary plus an argument controlling A-M itself:
+exact telescoping, prime/composite pairings, coupled energies with signed
+cross terms, correlation reductions, or recurrences whose genuinely new
+source lemmas can be independently proved. Allow new testable intermediate
+lemmas, but track source dependencies to exclude circular restatements.
+Pointwise positivity and separate absolute bounds on A and M cannot pay the
+centered cancellation. The square-root target is for every epsilon and every
+real scale; a fixed exponent above1/2 or a finite table is insufficient.
+Numerical changes in constant rank below proved exponent/scale improvement.
+
+The selector's preference for nonnegative individual kernels was an explicit
+pilot target. It must not become a universal restriction on signed auxiliary
+constructions. A useful final centered bound could use components that change
+sign. Broad rational exponents remain available under measured resource caps.
+
+The previous050 recurrence remains refuted atN683,child1366. Its finite base
+and the tested energy target survive, but no unchanged reuse of that recurrence
+is permitted. The new unrounded kernels do not automatically transfer their
+identities to separately rounded moving floor profiles. No original energy
+norm or quantitative bridge to those profiles was proved here.
+
+5. Validation, resources and reproducibility
+
+67 distinct new focused tests pass:12 numerical search,8 pointwise producer,
+18 pointwise checker,6 independent finite-value checker,5 runner and18 RH
+bridge checker. Receipts preserve two fixture corrections: the finite-value
+mutation initially left the first factor unchanged; the RH checker fixture
+used a meter without the producer's required number() method. Only affected
+tests were rerun, including16 fixture-affected bridge tests. No scientific
+run failed or was repeated; no successful old suite/study was replayed.
+
+Actual application elapsed13.522796seconds with2 final-audit worker processes.
+Training cache167,532,080estimated bytes; prospective search reserve
+4,212,899,840bytes, below8GiB search and16GiB aggregate budgets. Parent peak
+704,032KiB, largest individual worker143,792KiB; these are individual peaks,
+not measured aggregate RSS. Saving complete observations used approximately
+176.5MB before this handoff. No precautionary hashes were created.
+
+Metered work proxies:training874,063,490; grammar196,131;
+pointwise producer155,396/checker550,212; final producer20,897,680 and
+checker211,102,315; bridge producer1,059/checker21,282;
+development4,081,675 including preserved failures. These are work-accounting
+proxies, not CPU instruction counts. The actual search finished far below
+the authorized runtime and operation caps.
+
+The113 previous sources and23 new051/052 sources are preserved byte-for-byte
+without hashes:136 frozen files total. The root MOVING_FLOOR_BOUND_HANDOFF.txt
+now points here by carrying the same current continuation text. This archived
+handoff is a result artifact. The persistent research goal remains ACTIVE.

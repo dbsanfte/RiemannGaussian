@@ -1,0 +1,113 @@
+Publication029: direct dual search on the augmented finite cone
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-search-001
+
+Outcome
+UNKNOWN. The exact assembly completed, but the single HiGHS dual-simplex
+proposal reached its fixed100-iteration limit. It returned no vector, so
+exact support restoration and witness checking did not run. The recorded
+native primal_status=Infeasible describes the unfinished numerical solve;
+it is not a proof about this cone or actual arithmetic.
+
+The sole independent review completed its nonadmission checks:
+workflow_verified=true, all_passed=false, certificate_verified=false,
+finite_augmented_cone_infeasibility_certified=false. Its core check is
+verified=true, complete=false, statusUNKNOWN. No exact witness exists for
+it to verify, and it did not replay numerical assembly or the LP. The
+producer's assembly figures below remain producer diagnostics. No primal
+feasibility, cone infeasibility, signed bound or RH result was obtained.
+
+New capability
+The detector can now seek an exact contradiction to every point in the
+licensed028 finite cone, rather than only reject a particular point. For
+the782-row chart A*x=b it seeks A^T*lambda=G*alpha and b^T*lambda=-1,
+with alpha>=0. The complete851-generator catalog includes371 scalar units,
+450 fixed rational rank-one matrix generators, and30 dyadic directions
+derived from both endpoint matrices. The rank-one construction proves
+positivity algebraically; numerical eigenvector accuracy is not a premise.
+
+The quotient geometry remains s>=0, C PSD and H=P+4C PSD, with613 free
+relation coefficients. H generators include the required4C contribution;
+upper-triangle offdiagonals have factor2. Every generator has zero relation
+coefficients. A successful exact witness would separate the FULL original
+1957-coordinate cone with the three learned rows, not merely a diagonal
+matrix restriction or the current canonical point. Failure of this finite
+generator search says nothing about existence of another PSD separator.
+
+Assembly shares exact reverse substitution across coordinate dependencies,
+then combines611 requested coordinate responses into851 generator columns.
+This avoids611 separate complete elimination passes. All782 existing chart
+rows are used, without source rebuilding or old basis replay. The reduced
+LP has443 rows and851 columns, but only8992 nonzeros (about2.4% density).
+The producer's maximum assembly rational size was800bits.
+
+One native proposal uses positive exact row/column scaling and a common
+positive normalization of the original L1 objective. The fixed policy is
+presolve=False, methodhighs-ds, maxiter100, one thread, no fallback. Any
+successful native support would receive one exact rational reconstruction,
+with free support variables setzero, followed by complete independent
+verification of all1224 coordinates and exact negative pairing. Neither
+native status nor numerical residuals can admit a certificate.
+
+Resources and verification
+All44 synthetic tests passed before freeze in3.687s and inside the frozen
+run in3.698s. They cover authentic producer/checker certificate integration,
+all851 generators, storage and offdiagonal signs, missing/negative weights,
+unrestricted relation rejection, exact support restoration, shared reverse
+substitution, scaling, strict work/bit bounds, native failure retention,
+one audit, late deadline revocation and publication scope. Sol6.1 agents
+implemented producer and independent core and reviewed the mathematics in
+parallel; actual research scoring was performed only after freeze.
+
+Single450m work-proxy allocation:50m preparation/tests/I/O,100m assembly,
+190m native proposal,60m restoration and50m independent audit. The20m
+synthetic allowance and10m independent I/O allowance are inside preparation.
+Actual charged proxies:4254692 assembly +183853859 native +3158 independent
+=188111709, plus151046 independent input-I/O units within preparation.
+No restoration allowance was consumed. Unspent reservations do not authorize
+another solve or resetting this job's ledger.
+
+The native charge includes the fixed conservative183764369 reservation:
+443^3 initial factorization,100*(2*443*851+443^2) pivot work and1802562 input/
+transport units. This is a declared dense proxy, not observed HiGHS flops.
+The native solve itself used0.006920s and stopped at exactly100 iterations.
+Worker total13.545433s wall,13.541066s CPU,119312KiB peakRSS, one thread.
+The enclosing stage took13.683747s. The binding limit was the fixed iteration
+policy, not measured elapsed time or memory. The equations' observed sparsity
+justifies investigating a smaller exact equivalent LP before another solve.
+
+Independent nonadmission review:0.044685s wall,0.044689s CPU; process
+peakRSS574812KiB. Both sequential processes had enforced6GiB boundaries and
+3600s cooperative limits; producer external limit7200s. Producer live-cell
+peaks234059 assembly and254182 native, below6m. Native maximum rational
+size448bits;4096-bit results and8193-bit temporary caps were unchanged.
+The source snapshot contains15 files/163912bytes. Proposal101048bytes;
+independent review2665bytes. No hashes, adaptive retry or second audit ran.
+
+Next research action
+Do not extend this completed job under a reset allowance. A useful next
+method is exact redundancy and face detection before further optimization.
+The851 reduced columns and443 rows were not archived as a reusable exact
+LP; only the ray catalog and assembly statistics were retained. Any new
+construction must therefore be explicitly charged, not assumed free.
+
+First identify exact zero generator responses and zero/proportional
+AUGMENTED LP rows with their full RHS. Removing genuinely redundant rows
+or zero columns can shrink the native problem without a floating rank
+threshold. A nonzero constant row must never be discarded. Any compression
+must restore the complete original851 coefficient vector for exact checks.
+
+There is a stronger possible use for a zero generator response: an exact
+w=A^T*lambda with b^T*lambda=0 proves w*x=0 on the chart. If w is a scalar
+unit, it can expose a forced zero coefficient. If w represents v^T*C*v or
+v^T*H*v, positivity then forces C*v=0 or H*v=0 at every feasible point.
+These are potential exact face constraints, not evidence that any such
+nontrivial directions have already been found. Verify the full zero-pairing
+identity independently before imposing them. This can address conditioning
+and geometry, rather than merely increasing the numerical iteration cap.
+
+The028 chart and exact endpoint remain the latest verified finite affine
+state. All three learned rows remain discovery data. The all-scale formal
+identity, scalar budget, initial storage cost, cofinal parameter family and
+ordinary-zeta bridge remain outstanding. This stage supplies a reusable
+proof diagnostic, not the signed arithmetic control sought by the goal.

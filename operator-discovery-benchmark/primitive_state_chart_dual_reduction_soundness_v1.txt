@@ -1,0 +1,212 @@
+Exact conic reduction of the licensed finite-generator separator system
+Independent mathematical and resource design review, 2026-10-09.
+Prospective031; mathematical and final implementation review complete.
+No new chart/ray responses, reductions, native calls, research scores, hashes,
+source rebuilds or tests were performed for this review. Prior030 is an
+immutable, independently verified premise, not an invitation to repeat it.
+
+Problem and equivalence notion
+Write each saved generator response as h_j=(r_j,t_j), with
+g_j*x(f)=r_j*f+t_j on the complete licensed affine chart. The separator
+search is sum_j alpha_j*h_j=(0,-1), alpha_j>=0. Prior030's positive-only
+column and complete augmented-row compression supplies an equivalent
+317-row,695-column system E*z=d, z>=0. The new reduction acts only on
+this already licensed system, retaining original compressed row/column ids.
+The constant equation is a genuine equation throughout; it is never an
+implicit zero or an optional coordinate.
+
+The required equivalence is existence of a nonnegative target
+representation, with a checked lift of any reduced solution. It need not
+preserve every original solution or the minimum representative L1 cost.
+In particular, discarded homogeneous components can carry nonzero feasible
+weights. The archive must distinguish this choice from forced zeros.
+
+Homogeneous same-sign propagation
+If an active equality has RHS zero and every nonzero coefficient a_j has
+one strict sign, then sum_j a_j*z_j=0 and z_j>=0 imply z_j=0 for every
+member of its entire support. Multiplying a negative row by -1 gives the
+same argument. Delete precisely that full support from every active row;
+the equality system restricted to the remaining weights is equivalent.
+An empty row forces nothing. A mixed-sign row licenses no such inference.
+A nonzero RHS cannot be treated by this rule: z1+z2=1 allows positive
+weights. The reasoning concerns nonnegative separator weights, not primal
+scalar or PSD coordinates, and does not by itself expose a new primal face.
+
+Closed zero-target components
+Partition an active system into rows/columns I,J and retained rows/columns
+I',J'. For safe discard require RHS_i=0 for all i in I, support(row_i)
+contained in J, and no retained row coefficient in J. Then restriction of
+an original solution solves the retained system, and extension of any
+retained solution by z_J=0 solves every removed equality. Isolated columns
+also admit zero extension. This proves equivalence of feasibility.
+Closure must be checked on the CURRENT exact equations after previous
+steps. A target-zero row alone does not suffice when its variables also
+occur in a retained target-bearing row. A component containing any nonzero
+RHS cannot be removed by this rule. Positive costs make zero extension a
+convenient objective choice for a detached homogeneous component; this is
+not the justification for equivalence or for calling its weights forcedzero.
+
+Exact augmented row operations and repeated reduction
+A pivot a!=0 permits dividing the complete augmented pivot row by a.
+For each listed different active row, subtract its current pivot coefficient
+times that normalized augmented row, including RHS. Each such operation
+is invertible over the rationals and leaves variables and nonnegativity
+unchanged. Unlisted rows remain unchanged; soundness does not require
+eliminating the pivot from every row. Deleting a row requires its entire
+augmented row to be exactly zero. A zero coefficient row with nonzero RHS
+must instead be retained and reported as a contradiction.
+
+Exact arithmetic, sparse nonzero canonicalization and result/temporary bit
+caps are necessary. A floating rank decision, tolerance-based deletion or
+coefficient-only elimination does not preserve this proof. Sparse Markowitz
+pivot selection changes resource use, not the theorem. Recording every
+step with stable original ids lets a separate checker replay equivalence
+without trusting producer rank, component enumeration or final equations.
+
+Every finite prefix of valid steps is sound. Stopping when active columns
+are unchanged or after eight rounds therefore preserves equivalence, even
+if later row combinations could reveal further zero weights or dependencies.
+The fixed_point field is a policy stopping diagnostic. It proves neither a
+maximal cone face, complete sign propagation, minimal row basis, rank nor
+exhaustion of all useful exact reductions. A resource-incomplete artifact
+does not receive admission merely because its recorded prefix looks valid.
+
+Full original Farkas lift and scope
+A reduced coordinate corresponds first to an active original compressed
+column id and then to prior030's ORIGINAL representative ray index. Put
+that weight there and zero on every omitted original ray: forced, discarded,
+zero-response and nonrepresentative positive-proportional members. Original
+representatives need no extra rescaling; native positive row/column scaling
+is proposal machinery, and exact restoration must solve with saved original
+responses. All strictly positive finite successful native coordinates are
+included, without a threshold, then one exact support solve sets its free
+support values zero. An exact restored weight may be zero without violating
+the declared all-positive-native-support policy. No additional support trial
+or native retry is licensed by unused allocation.
+The frozen support cap is443, even if the reduced system has fewer rows.
+Underdetermined support is permitted. A single exact solve with free values
+zero can fail to find a nonnegative solution even when another free-value
+choice would succeed; that is a limitation of this proposal method, not an
+infeasibility proof. No reduced-row minimum or floating support trimming is
+part of the031 policy.
+
+The restored full851-vector alpha>=0 must yield the target on all saved
+442 free coordinates plus constant. Prior029 certification then constructs
+all782 row multipliers lambda against the complete original chart. The
+independent mathematical admission condition is the full identity
+  A^T*lambda=sum_j alpha_j*g_j in all1224 quotient coordinates,
+  b^T*lambda=-1, alpha_j>=0.
+For any feasible x, the left pairing is -1 while every generator pairing
+on the right is nonnegative, a contradiction. Saved combined-functional
+arrays, all851 alpha entries and all782 lambda entries remain explicit.
+Zero coordinates do not excuse truncated identity or pairing checks.
+The independent checker binds this witness to the saved rays, chart,
+verified reduction and every positive native support coordinate. It need
+not repeat support-elimination rank statistics: the exact full identity
+is decisive, while reconstruction rank/free-position metadata is diagnostic.
+
+Conversely, inconsistency of E*z=d,z>=0 says only that the selected851
+generators cannot make this separator. It does not establish feasibility
+or infeasibility of the primal augmented PSD/scalar cone. The finite ray
+catalogue omits other PSD directions. A restricted contradictory equality,
+unsuccessful native status or failed exact reconstruction never substitutes
+for the negative-pairing identity. Complete reduction remains reusable
+evidence when optimization/restoration is UNKNOWN or NONCERTIFIED.
+Even a checked separator has only the licensed finite augmented-cone scope,
+including its necessary formal rows. It does not prove original unlearned
+cone infeasibility, actual Mobius signs, a universal signed scalar budget,
+an all-scale operator identity, primal feasibility or RH.
+
+One resource allocation
+The declared450m total is exactly:
+  preparation40m, exact reduction100m, native160m,
+  exact restoration70m, sole independent audit80m.
+Preparation includes ALL synthetic development/frozen-suite work in25m,
+independent input/output in10m and remaining preparation in5m. Actual
+consumed work, including resource failures, must accumulate without resets.
+Unused restoration/native reserves do not authorize another attempt or audit.
+The one80m checker meter covers independent compressed-input decoding,
+all reduction replay, support binding and optional old029 direct full
+Farkas checking. Calling a convenience verifier that constructs a fresh
+50m budget would violate this shared-meter requirement.
+
+The inherited native policy reserves from reduced dimensions alone before
+exact scaling: a fixed preparation allowance, initial dense-factorization
+proxy, per-iteration proxy and transport allowance, at most10000 iterations,
+one thread, highs-ds and presolveFalse. The fixed160m allocation is supplied
+without outcome-dependent extension. These are declared work proxies, not
+measured HiGHS operation counts. A no-fit reservation results in UNKNOWN
+without a native call, while a complete reduction can still be audited.
+Conversion must be finite and non-underflowing for every nonzero exact
+coefficient; scale signs must be positive. Work/cell/bit/byte/deadline caps
+apply during parsing, copying, graph construction, pivot search, rational
+elimination, step export, final-equation export and full certificate checking,
+not only during successful arithmetic or after large objects are built.
+
+Utility for signed arithmetic proof search
+This experiment can remove exactly impossible or irrelevant separator
+weights and redundant equalities before spending the single native budget.
+Unlike another solve of prior030, it supplies independently reusable finite
+equivalence even when the final search returns UNKNOWN. Fewer equality rows
+can reduce the declared dense-factorization and iteration proxies; exact
+elimination may also grow coefficients or fill the sparse matrix, so practical
+gain is an observed resource outcome, not a theorem of the design. A smaller
+LP does not certify a stronger arithmetic statement by itself.
+
+Successful finite separation can identify an obstruction to this signed
+arithmetic proof template and guide a later explicitly new template. Failure
+to separate is compatible with missing generator directions and does not
+validate an operator. The enduring RH-facing obligations remain a universal
+signed identity, a proven scalar budget and initial-storage bound, a cofinal
+parameter family and the ordinary-zeta bridge. This reduction assists that
+proof search while keeping those obligations explicit.
+
+Final implementation review
+Read the new producer, independent core, protocol, resource scope, runner,
+outer audit, publisher and owned synthetic test modules without executing
+them. The producer preserves original nonnegative variables during forward
+elimination rather than solving pivot variables as unrestricted coordinates.
+Its component graph excludes RHS edges but marks any nonzero target row,
+and its sign propagation requires absent/exactzero RHS. Every final row and
+all retained/forced/discarded ids are exported. The checker independently
+replays each allowed elementary operation and compares every exact final
+coefficient and RHS. It never calls the producer reducer, geometry rebuild
+or numerical optimizer as an audit.
+
+Two integration discrepancies were identified and resolved before freeze.
+The root scope and initial checker had inherited a reduced-row support cap;
+they now agree with031's maximum443 and underdetermined one-solve policy.
+Stage residency now includes retained prior geometry, decoded input,
+reduction trace/final arrays and reduced LP data in native/restoration
+allowances. Independent residency includes retained geometry, trace, outcome,
+decoded input and replay final rows. Its Budget.live override preserves that
+resident base even inside inherited direct chart/ray/certificate helpers.
+Thus a phase helper cannot silently erase the live-state allowance.
+
+The independent certificate path invokes the existing direct full-identity
+routines with the same80m meter used for reduction replay. All positive
+native coordinates map through stable compressed ids and original030 ray
+representatives, and every original alpha outside that support is zero.
+Reconstruction rank/free-position metadata receives structural and zero
+binding checks without another exact support elimination. Full negative
+pairing and all1224 coordinate identities remain the admission condition.
+The outer audit and publisher distinguish REDUCTION_VERIFIED from an optional
+FINITE_CONE_INFEASIBLE witness; restricted inconsistency cannot promote
+either primal feasibility or cone infeasibility. Producer stage counts now
+contain only phases actually started, so an unused restoration allocation
+does not look like a restoration attempt.
+
+Owned tests were reviewed for proof-rule counterexamples, whole augmented
+row handling, zero versus forced dispositions, stable support lifting,
+complete reduction survival after search failure, underdetermined support,
+strict maximum443 and resource/shared-meter guards. The checker uses tiny
+generic systems for elementary tampering and one authentic synthetic full
+certificate fixture for lift/identity binding. The reviewer ran no tests and
+consumed zero synthetic-test operations; the root's cumulative development
+plus single frozen combined-suite ledger remains responsible for the25m
+preparation subreserve. Native reservation remains a declared proxy.
+
+No remaining mathematical blocker was found. This approval concerns exact
+reduction equivalence and the bounded admission workflow; it reports no new
+research reduction dimensions, scores, numerical status or certificate.
+Owned memo finalized; edits stopped before the single frozen combined suite.

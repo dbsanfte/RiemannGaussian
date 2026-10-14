@@ -1,0 +1,65 @@
+074: CONSUME PROVED BULK OBSTRUCTIONS BEFORE LEARNING
+
+This changes the actual search language, not the saved073 constants.
+Source, signed state semantics and ordinary candidate certificates are
+unchanged. Reuse frozen073 source construction/checking and normalization.
+The new independent checker admits the proof-grammar conditions separately.
+The full joined head/core/RH goal remains open.
+
+The supplied073 reviews exclude nonbalanced fixed-factor-count rays at
+every q<2. Balanced sectors reduce exactly to another copy of Z, and the
+unit is zero for this profile. Generate the equivalent representatives
+with all five non-Z factor/unit coefficients zero to remove redundant
+search directions. The arithmetic expression is preserved exactly.
+This does change the coordinate norm used by the finite trace budget;
+equivalence of the two trace-constrained optimization problems is not
+claimed. The budget is a search restriction, not a mathematical premise.
+
+Two branches:
+ centered_high: only theta>=1/2 smooth coordinates may be active, and
+ their physical coefficients must sum to zero in every positive ray.
+ open_mixed: retain unknown theta<1/2 contributions. If none is active
+ in a ray, require its smooth coefficient sum to be zero. If any unknown
+ coefficient is active, do NOT force the known subset to sum to zero.
+
+Unlike the deliberately conservative073 postrun analyzer,074 registers
+theta=1/2 using the same review's explicit endpoint proof: y^2=20k is at
+least each source endpoint. Thus a pure S_(1/2) ray is also rejected.
+These are profile-specific rules for fixed rational exponents. They do
+not justify assertions for a moving theta(k) approaching a boundary.
+
+Generate exact rational nullspaces from the supplied mode equations.
+The open branch includes the centered branch's initial directions, so
+unequal numerical feature scaling cannot hide exact physical centering.
+Check every generated/rounded direction before LP scoring, and check
+every active physical ray independently after fitting. Dual pricing is
+numerical guidance only. Passing this filter is not a growth theorem.
+Complete nonlinear conditional filtering preserves an unresolved mixed
+branch rather than pretending its unproved coefficients are zero.
+
+Pilot tasks: both branches at q=1 and65/64, three workers, one native
+thread each,16GiB aggregate,7200s. Generic code retains rational exponent
+support under the inherited explicit bit/work bounds; no root whitelist.
+q65/64 is one fixed loss, not an epsilon-cofinal argument.
+
+073 discovery data2..512 remain discovery; all existing073 data through
+16384 are now available for adaptation. This deliberately feeds saved
+counterexamples into the new search. It is not a new holdout claim for
+those values. Three adaptation rounds add up to32 exact failing scales
+per round; the numerical trace budget128 and objective formula are
+retained in the reduced coordinates. All four formulas are fixed before generating the new
+final child domain16385..32768. Both floor-parent parities are included.
+
+Retain target-only baselines using each formula's actual training domain.
+They are controls, not new operators. Final evaluation uses the frozen
+independent073 arithmetic/normalization checker. Record all counterexamples
+and ambiguities. A finite survivor needs analytical proof; a finite failure
+does not exclude every drift constant unless a separate proof says so.
+
+The numerical learner discovers directions, weights and conjectural
+controls, while the mathematical rules remain supplied. Future work must
+pay the complete signed drift, not only remove the first known bulk term.
+Alternative exact compensators, correlations and recurrences remain open.
+Keep071's full conditional price and head/core/RH transfer obligations.
+Preserve all frozen files and attempts; use no hashes and replay no
+unchanged historical science or suites.

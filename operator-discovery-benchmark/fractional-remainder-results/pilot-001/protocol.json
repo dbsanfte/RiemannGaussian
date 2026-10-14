@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "grammar_version": "fractional-discrete-continuous-remainders-and-parameter-pole-recovery-v1",
+  "precision": 288,
+  "seed": 2026100831,
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-oscillation-results/audit-001",
+  "source_sha256": {
+    "protocol.json": "5a278175a850f72aaaf380e7156735a2ce8a7d24b0a2c9532e22fc99364c21c1",
+    "verification.json": "877d40b275a6c9d41ccdbf45709507351466e4cabd2b9011e2907eee1ff1393a",
+    "summary.json": "e17850cbae96c20e50ee1ee386a3009c2a93cf4f7f2b9cefbcecc2344df3a66b"
+  },
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+    "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+    "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+    "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+    "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+    "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+    "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+    "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+    "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95",
+    "prime_discrepancy_grammar.py": "2a5abf9701638454b2b0f25b867cb7e1e7a7925a3f6c362b6346b75bee9762b2",
+    "prime_discrepancy_search.py": "515ccda5fa5fd7d984f1fc4c3a61119853d19acde249df9f03e814249afb07ad",
+    "check_prime_discrepancy.py": "aa8d0c7b6903e219cd74d4d79b82b721bece99bc0107e495426b65e23b9378d2",
+    "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+    "prime_discrepancy_proof.txt": "71d9a276d9a8ca0d630e740ba800e57a3ab6e74570931bb2f3b3d277266550c1",
+    "prime_twist_grammar.py": "992e865811765faaf1be90564114f5f5684a5593bf6970491681edb0b78806b0",
+    "prime_twist_search.py": "1b34b84399b4fb6445d7cf523697c11827552187aa58522ddfbc73e9b12f507d",
+    "check_prime_twists.py": "88e510e84454c89eac85482869df5cf0569e900bc4fe601c92ce3157b0632e22",
+    "prime_twist_report.py": "584ce2639c4fde755b3c1e78a302a2a1c912c2865a011eba27e3071ed2305d53",
+    "prime_twist_proof.txt": "1c20d07625889c07f9e64849f5e3bf03ef057dc27804ec30df7841e0e9385618",
+    "prime_oscillation_audit.py": "b4d7b446e9f299d832cb7d55c457327a3b7c450847f77ca051349cf3adb366a7",
+    "check_prime_oscillation.py": "f03c512d2cb96c9a0d1e652a1cff00e69157f407ee6e68708c6c2d61f021d2b0",
+    "prime_oscillation_report.py": "5c85bc3a5ef007d0f541fb10b6c19bb6deff7c4d3fff5e178c6fedcd137c1501",
+    "prime_oscillation_proof.txt": "24a04fa8521bd173b5702bfc5ceca4aa3c53f8b93e6bf1fa60b3b4a99e7dfa49",
+    "fractional_remainder_grammar.py": "88dd30c7c2964ed9c341d86c5b272a7a13d5317c2d6b4a0e8752a05318220585",
+    "fractional_remainder_analytic.py": "233712d46b354a839e11c6b7fb79e97188d143cabe74bc031e4e6e4829a0ca58",
+    "fractional_remainder_search.py": "e957101d07b2ea67b28f59475f7ade34e16c2b22cb42c5b3e310b5ef93717829",
+    "check_fractional_remainders.py": "026e8beae0d90068107f17987fd29a8e3cabcb6e03cbd9566bc9b40856e01d2c",
+    "fractional_remainder_report.py": "f4792629f99e132810c1e56be38fe45309726472ac9bc867f3106484dceb6c59",
+    "fractional_remainder_proof.txt": "1ed7453f5bf3dc00b10caf31dfeee9d63aff0685266201b3f81bd6673280cd08",
+    "fractional_prime_grammar.py": "16ae66e9e706d1aeaa11a30486e12b493996cfe480afff819ddc201b0724d3e2",
+    "fractional_prime_proof.txt": "3f1bc5fb25473e55df7564e333a5eb521b398a5106105ab703a896ccb4291828"
+  },
+  "this_stage_source_files": [
+    "fractional_remainder_grammar.py",
+    "fractional_remainder_analytic.py",
+    "fractional_remainder_search.py",
+    "check_fractional_remainders.py",
+    "fractional_remainder_report.py",
+    "fractional_remainder_proof.txt"
+  ],
+  "known_critical_zero_dependency": {
+    "verification_sha256": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "source_sha256": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "centre": [
+      "1/2",
+      "14.13472514173469379046"
+    ],
+    "radius": "1/20000",
+    "scope": "previously certified simple critical-line zero; reflection and uniqueness"
+  },
+  "fixed_baseline": {
+    "maximum_degree": 3,
+    "enum_coefficients": [
+      -1,
+      0,
+      1
+    ],
+    "enum_per_degree": 12,
+    "random_budget": 24,
+    "product_budget": 24,
+    "normalizer_mutation_budget": 12,
+    "coefficient_resource_cap": 16
+  },
+  "adaptive_mode": {
+    "least_squares_rounding_denominator": 64,
+    "moment_nullspaces": true,
+    "promotion_budget": 12,
+    "promotion_pool": 4,
+    "promotion_rule": "take four low training-energy compensated programs per degree after dividing by their exact parameter order; sample degree-admissible products; preserve dependency expressions",
+    "ablation": "same baseline and learned fits; replace the 12 promotion proposal slots by frozen-seed random proposals"
+  },
+  "training_points": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024
+  ],
+  "validation_points": [
+    1536,
+    1793,
+    2048,
+    2561,
+    3072,
+    4096
+  ],
+  "training_q": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "validation_new_q": [
+    5,
+    10,
+    17
+  ],
+  "growth_grid": [
+    "0",
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "parameter_grid": [
+    "0",
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2",
+    "3",
+    "7/2"
+  ],
+  "log_grid": [
+    "0",
+    "1/2",
+    "1",
+    "2"
+  ],
+  "fitted_exponents": "two-feature OLS on log(n), log(a); theta rounded upward to 1/16 with 1/16 margin; kappa nearest 1/16; exact vanishing order also admitted",
+  "constant_rule": "training interval maximum, factor 3/2, upward 1/1024 quantization; minimum 1/1024",
+  "certificate_radii": [
+    "1/4",
+    "1/2",
+    "3/4"
+  ],
+  "certificate_mesh": 8,
+  "cost_query": [
+    "5/8",
+    "16"
+  ],
+  "native_numerator_parameters": {
+    "K": 80,
+    "U": 64,
+    "terms": 16
+  },
+  "archive_size": 12,
+  "selection": "baseline; best RH-compatible full-cost candidate per generation family and exact parameter order; fill by validation failures and charged cost; retain above-threshold numerical lead",
+  "final_cases": {
+    "integer_count": 4,
+    "integer_range": [
+      4097,
+      8192
+    ],
+    "fresh_q_count": 3,
+    "fresh_q_range": [
+      19,
+      97
+    ],
+    "boundary": [
+      1,
+      2,
+      3
+    ],
+    "real_offset": "1/3",
+    "generic_unit_count": 6,
+    "generic_cutoff": 24
+  },
+  "analytic_scope": "bounds require every n>=1 AND every q>=2; finite order grids never supply the universal premise",
+  "coefficient_source": "constant-one triangular logarithm and Dirichlet inversion; no prime labels or index-factor oracle",
+  "final_freshness_scope": "new observables, points and order parameters; Mobius coefficients overlap prior research data",
+  "development_before_freeze": "implementation preflight exercised the training generator and scalar enclosures; preflight overlaps are development, not fresh final evidence; no archive or actual full-cost outcome was inspected",
+  "supplied_backends": [
+    "fractional discrete/continuous Mellin identity",
+    "parameter-pole identity-theorem bridge",
+    "exact parameter rate",
+    "reciprocal-gamma Cauchy cover",
+    "weak signed parameter and unit bounds"
+  ],
+  "not_autonomous_proof_invention": true,
+  "generator_model_literature_network_access": false,
+  "historical_priority_is_acceptance_gate": false,
+  "imported_prime_distribution_estimate": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

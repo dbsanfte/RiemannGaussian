@@ -1,0 +1,15 @@
+{
+  "schema": "prime-scale-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 44,
+      "elapsed_seconds": 0.26631438796175644,
+      "stdout": "SYNTHETIC_WORK operations=44; status/partition metadata only\n",
+      "stderr": "test_finite_passes_cannot_pay_uniform_lemma (test_prime_scale_runner_053.RunnerTests) ... ok\ntest_fresh_partition_and_all_integer_training (test_prime_scale_runner_053.RunnerTests) ... ok\ntest_strict_finite_counterexample_refutes_only_fixed_bound (test_prime_scale_runner_053.RunnerTests) ... ok\ntest_unresolved_interval_and_missing_coverage (test_prime_scale_runner_053.RunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

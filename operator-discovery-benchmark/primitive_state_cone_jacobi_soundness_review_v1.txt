@@ -1,0 +1,137 @@
+Cone-Jacobi scaled search: independent soundness review v1
+2026-10-09. New review and synthetic tests only. All published/frozen sources
+and preceding analysis notes remain unchanged. No actual arithmetic source
+replay, response-column research calculation, new endpoint search, or solver run.
+
+Result and scope
+Sixteen synthetic tests pass:
+ ../.venv/bin/python -B -m unittest test_primitive_state_cone_jacobi_soundness
+The complete suite runs in about0.17s. Fixtures are tiny triangular maps and a
+synthetic full15 symmetric layout with only two free coordinates, not the real
+779pivot/445free research chart. Exact endpoint arithmetic is separately tested
+with lift/cone-diagnostics mocked; no mocked check represents cone admission.
+The review found and communicated cap/receipt/reserve issues during development;
+the reviewed final implementations fix the issues listed below. No remaining
+mathematical false-positive finite-admission route was found. This is a bounded
+adversarial review, not an exhaustive implementation proof.
+
+Exact coordinate change
+For the licensed chart x=c+Nf and positive diagonal D, f=f0+D*z is bijective
+on all free coordinates. The finite feasible set is unchanged for ANY such D.
+Norm reports may therefore be heuristic producer data: correctness of the
+reported norms is unnecessary to preserve signed relations or cones. Independent
+checker flags column_norms_independently_verified=False and
+scaled_trace_bound_certified=False are essential. A verified scale-rounding rule
+from reported norms does not independently verify the actual column responses.
+Zero reported norm retains the coordinate with D=1; it declares no forced face.
+The unchanged finite endpoint gates still decide every original equality,
+nonnegative scalar weight and exact PSD constraint. No uniform/RH claim follows.
+
+Homogeneous response and metric
+primitive_state_cone_jacobi_search.py homogeneous_response (line60 onward) starts
+all coordinates at0, sets one licensed free coordinate to1, descends pivots and
+skips both pivot and augmented RHS entries. Synthetic RHS999 is deliberately
+ignored. Including the affine RHS would measure columns of the affine center,
+not N, and give incorrect sensitivity data even if its resulting D stayed positive.
+cone_norm (line79 onward) stacks all prescribed scalar coordinates and symmetric
+C and H=P+4C. Diagonal terms count once; offdiagonals count twice. Our exact
+calibration has scalar4, offdiagonal C2 and H32, yielding38; omitting duplication
+would incorrectly yield21. In coordinate_gradient, C contributes Cnegative plus
+4Hnegative and P contributes Hnegative, each with offdiagonal factor2.
+
+For scaled linear actions the operator is N*D and its adjoint is D*N^T.
+scaled_forward(line131) suppresses both f0 and the augmented RHS in linear mode;
+scaled_adjoint multiplies the old adjoint byD. Exact dyadic pairing tests pass.
+The power operator is D*N^T*B^T*B*N*D. A hand-derived calibration produces
+ [[69/64,-16],[-16,512]]*[2,3] = [-1467/32,1504].
+That test exercises the implemented operator rather than reusing its output as
+an expectation. Armijo uses ||gradient_z||². Using the original-coordinate
+norm can accept an invalid declared Armijo decrease: with D=2, gradient_f=1,
+alpha=1/2, before1 and reported after17/20, correct threshold3/4 rejects while
+wrong threshold15/16 accepts. Native PSD eigensolves remain binary64 proposal
+calculations; neither gradient nor merit correctness is independently certified.
+
+Exponent and exact endpoint boundaries
+For g>0 the least k satisfies4^(k-1)<g<=4^k; at g=4^r, k=r exactly.
+Tests cover r=-900,-3,-1,0,1,3,900, values just above boundaries, zero and negative
+norms, and values requiring out-of-range exponents. No exponent clipping is used.
+An initially unvalidated public exponent_abs_cap permitted an enormous shift;
+it now requires integer1..900 BEFORE shifts. Fixed response/norm bit policies
+also reject attempts to enlarge their caps through public helper parameters.
+The actual endpoint test uses f0=1,D=1,z=2^-1000. The final rational is
+ (2^1000+1)/2^1000,
+whose numerator has1001 significant bits despite both summands being exactly
+representable fixed269-bit records. exact_endpoint preserves that sum and exact
+back-substitution; it rejects a rounded final export1 and an insufficient999-bit
+cap. This protects against silently discarding tiny scaled adjustments.
+
+Seed, trace and claim binding
+check_primitive_state_cone_jacobi_search.py load_verified_license(line41 onward)
+binds publication018 manifest/report/review/receipt and explicit endpoint, with
+publication017 used only as the earlier exact chart ancestry. The new parent
+vector is the complete018 projected endpoint, not017's starting point. This
+review inspected loader logic but did not repeat actual large source loading.
+Synthetic tests reject wrong seed hashes/centers, missing scale positivity,
+negative or zero scales, incorrect boundary/zero policies, altered norm hashes,
+false norm-certification or exact-admission flags, altered final free coordinates,
+and inconsistent gradient squared norms. An altered approximate_free_mp trial
+must fail its independent f0+D*z binding even if the z and other trace exports
+remain unchanged. The checker correctly distinguishes approximate trial
+coordinates from the unrounded final rational endpoint.
+
+64 iterations /3 trials: work and byte reserves
+64 is a maximum, not a promise that all64 iterations fit. Before starting an
+iteration the producer reserves three forward/diagnostic/merit/eigensolve trials,
+one accepted adjoint, gradient/vector arithmetic, serialization and finalization.
+The native proxy alone is3*2*96*15^3=1,944,000 per worst complete step.
+Both iteration_work_reserve implementations now use the FULL licensed normalized
+entry count E as a conservative bound, including pivot/RHS entries. An earlier
+mismatch used full entries in checker and only offpivot/non-RHS entries in
+producer, which would reject real receipts; this was fixed before completion.
+For widthw, freecountn, pivotcountp, scalarcountsc and120 Gram pairs:
+ Fwd=4E+2p+w+2n;
+ Merit=2*96*15^3+7*120+sc+3*(sc+450);
+ Adj=2E+w+n;
+ Work=3*(2n+Fwd+Merit+32n+4096)+Adj+2n+8n+4096+2048n+65536.
+The term2048n+65536 conservatively covers per-step serialized metadata/vectors.
+The checker independently reconstructs this expression from licensed dimensions.
+The fixed80m proposal budget is part of the agreed joint job, not an additional
+80m job after a separate expensive run.
+
+Worst64*3 histories can exceed8MiB even when arithmetic work fits. The producer
+now separately reserves next-entry bytes16384+7*96n and finalization4096+3000n,
+tracks encoded retained-prefix bytes incrementally, and checks actual entry bytes
+against the reserve. The seven vectors cover three trial z/free pairs plus the
+gradient. The mp mantissa/exponent serialization caps make96bytes per value a
+conservative bound. Final free rationals can have4096-bit numerator/denominator,
+so the larger3000n final reserve is justified. The independent budget-stop
+checker reconstructs exact retained-prefix byte counts, work/byte reserves and
+actual remaining-resource shortfall. A forged worst-step reserve1 is rejected.
+Our nonzero-step fixture stops on the byte reserve at its last complete accepted
+point. No half trial is exported as a completed step. A hard cap can still raise
+rather than return UNKNOWN when diagnostic serialization itself exceeds the
+remaining charge; the caller must record this as resource failure, never as
+finite admission or infeasibility.
+
+Bit-growth and memory
+Response operands are checked4096bits BEFORE multiply/subtract; resulting term
+and coordinate are immediately checked4096bits. Single multiply temporaries are
+bounded8192bits, and the subsequent subtraction by8193. Norm inputs are checked
+4096bits before forming squares/H. Accumulator and accepted norm term are capped
+8192bits, yielding a conservative16385-bit addition temporary. SCALING explicitly
+records temporary_bits=16385. H=P+4C can create a larger temporary than4096bits
+before its output check, but remains below that16385 global temporary allowance.
+The tests reject oversized response/source operands before they can be silently
+cancelled or multiplied by zero. Streaming retains one response plus445 norm
+records, not a dense1224x445 nullspace. Resident-cell accounting includes the
+licensed map/source resident footprint and the response; real source memory/time
+and joint450m work remain runner responsibilities, not proved by these tiny tests.
+
+Remaining limitations
+The checker licenses numerical history and exact finite endpoint reconstruction;
+it does not reproduce all rational norms, gradients, power curvature, PSD
+projections, or every intermediate affine equation. Any conditional trace<=445
+bound based on true norms remains uncertified. Numerical scaling cannot remove
+near-parallel columns, prove convergence, expose a forced face, prove infeasibility,
+or supply the missing all-scale nonconstant operator identity. The original
+signed arithmetic/RH goal remains open irrespective of finite search progress.

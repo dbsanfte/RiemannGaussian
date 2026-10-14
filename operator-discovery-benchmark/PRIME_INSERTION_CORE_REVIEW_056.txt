@@ -1,0 +1,409 @@
+PRIME INSERTION: PAID PARAMETER TAIL, EXACT JETS, AND CORE REVIEW 056
+
+Scope and disposition
+=====================
+This new review preserves every frozen 055 and earlier file. No scientific
+source values, numerical integrals, tests, final scores, tables, or hashes
+were computed. The results are exact source identities, unconditional tail
+bounds, conditional recovery rules, and a separately scoped conditional RH
+bridge. The intermediate-parameter signed source estimate remains OPEN.
+No full original bound or converse from RH is claimed.
+
+Fix 0<alpha<1, a finite set S of distinct actual primes, s=|S|, and
+R=product_{p in S}p, with empty product 1. For n>=2 let
+
+ K(n)=-sum_{d|n}mu(d)(log d)^alpha,
+ K_S(n)=D_S K(n),
+ D_S=product_{p in S}(I-E_p), E_p f(n)=f(pn),
+ B_S(X)=sum_{2<=n<=X}K_S(n),
+ t_S(N)=[B_S(4N)-3B_S(2N)+2B_S(N)]/alpha, integer N>=2.
+
+These are unrounded ordinary-mu sources. The 055 algebra gives
+
+ K_S(n)=0 if gcd(n,R)>1;
+ otherwise K_S(n)=I_alpha^-1 int_0^infinity
+       R^-t product_{p|n}(1-p^-t)*t^(-alpha-1) dt>0,
+ I_alpha=int_0^infinity(1-exp(-u))*u^(-alpha-1) du.               (1)
+
+The external coprime mask is mandatory. The unit is excluded from B_S;
+its actual mixed difference is -(log R)^alpha for nonempty S. Idempotence
+and commuting Boolean identities apply to radical-invariant states, not
+arbitrary functions. Repeated primes do not generate a new difference order.
+
+A. Arbitrary rational parameter cutoff and complete tail
+========================================================
+Define the exact binary weight
+
+ W(y)=floor(4y)-3floor(2y)+2floor(y), |W(y)|<=1,
+ H_S(N,t)=sum_{d<=4N, gcd(d,R)=1}mu(d)d^-t
+                           *sum_{e|R}mu(e)W(N/(de)),
+ h_S(N,t)=R^-t H_S(N,t).
+
+Finite divisor expansion and coprime cofactor counting prove
+
+ t_S(N)=1/(alpha I_alpha) int_0^infinity
+                              h_S(N,t)t^(-alpha-1) dt.          (2)
+
+Equivalently h_S is the filter of R^-t product_{p|n}(1-p^-t), over n>=2
+coprime to R. The n=1 correction cancels because 2-3+1=0. Formula (2)
+includes every d, cofactor e, prime power, gcd mask, and floor endpoint.
+Near zero its finite exact cancellations must be kept; an absolute infinite
+Dirichlet series is not being used there.
+
+For the empty S, d=1 contributes W(N)=0 at INTEGER N. For nonempty S,
+d=1 need not vanish: its cofactor sum is bounded by 2^s, and the external
+R^-t must be kept when integrating it. Dropping that factor before the d=1
+integration would lose a uniform-in-alpha bound.
+
+Let tau>0 be a fixed rational cutoff and
+
+ M_tau=max(tau^-1,tau^-2),
+ E_S(N;tau)=1/(alpha I_alpha) int_tau^infinity
+                              h_S(N,t)t^(-alpha-1) dt.
+
+For t>=tau, t^-alpha-1<=M_tau, uniformly 0<alpha<1. The elementary
+normalizer inequality alpha I_alpha>=1-exp(-1)>1/2 implies
+1/(alpha I_alpha)<2<=3. Also log 2>=1/2. For an individual denominator d,
+integrating the retained exponential (Rd)^-t gives (Rd)^-tau/log(Rd).
+Thus the exact mask/unit handling above gives the common valid bound
+
+ |E_S(N;tau)|
+ <=6 M_tau 2^s R^-tau sum_{1<=d<=4N}d^-tau.                   (3)
+
+For empty S, the real sum starts at d=2; the displayed d=1 term is only an
+enlargement AFTER its zero contribution has been treated. For nonempty S,
+log(Rd)>=log2 pays the true d=1 term. There is no use of convergence of an
+infinite mu series for tau<=1. The finite denominator horizon is essential.
+
+Dropping R^-tau<=1 gives conservative R-independent rational constants:
+
+ 0<tau<1:
+ |E_S|<=24 M_tau 2^s*(2-tau)/(1-tau)*N^(1-tau).                (4a)
+
+ tau=1:
+ |E_S|<=18*2^s*(1+log N).                                    (4b)
+
+ tau>1:
+ |E_S|<=6*2^s/(tau-1).                                      (4c)
+
+Proof: sum_{d<=D}d^-tau<=1+int_1^D x^-tau dx. Below 1 this is at most
+[(2-tau)/(1-tau)]D^(1-tau); use D=4N and 4^(1-tau)<=4. At 1, the sum
+is at most 1+log(4N)<=3(1+log N). Above 1 it is at most
+1+1/(tau-1)=tau/(tau-1), while M_tau=1/tau. All constants are rational
+functions of rational tau and the integer 2^s, and are uniform in alpha.
+The sharper factor R^-tau in (3) can be retained if its enclosure is licensed;
+none is required for (4).
+
+In particular the entire interval t>=1/2 has an unconditional square-root
+bound
+
+ |E_S(N;1/2)|<=288*2^s*sqrt N.                                (5)
+
+For tau>1/2 its bound is smaller than sqrt N asymptotically; at 1 it is
+logarithmic, and above 1 it is bounded. Therefore a square-root or cofinal
+subpower source proof only has to solve the joined low-parameter integral
+0<t<1/2. The constants in (5) are not the old selected constant C=2.
+This is a paid reduction of the difficult parameter range, not that stronger
+fixed-budget statement.
+
+At noninteger N, W(N) may be nonzero, so the empty-set d=1 step in (3)
+needs a separate treatment. The primary theorem here deliberately uses all
+integers N>=2; the subsequent source bound can use the paid 053 jump transfer.
+
+B. Recovery of the whole target and all energy crosses
+======================================================
+Write t_i=l_i+e_i, with l_i the 0<t<tau integral and e_i the tail above.
+For fixed signed companion coefficients a_i and lambda>=0 put
+
+ v_low=sum_i a_i l_i, e_v=sum_i a_i e_i,
+ F=[t0^2+lambda*(sum_i a_i t_i)^2]/N.
+
+The full exact expression is
+
+ F=[l0^2+lambda v_low^2]/N
+   +[2l0 e0+2lambda v_low e_v+e0^2+lambda e_v^2]/N.             (6)
+
+A tail estimate controls e0 and e_v, not the sign of either cross. For any
+fixed rational u>0 the positive quadratic identity gives
+
+ F <=(1+u)F_low+(1+1/u)F_tail,
+ F_low<=(1+u)F+(1+1/u)F_tail,
+ F_tail=[e0^2+lambda e_v^2]/N.                                (7)
+
+This is a valid recovery rule, with constants. At tau=1/2, (5) makes F_tail
+uniformly bounded. Thus bounded or polylogarithmic normalized energy of the
+full and low-core states is equivalent up to paid constants and additive
+bounded forcing. Above 1/2, F_tail decays: for tau<1 its power is
+N^(1-2tau); at tau=1 it is O(log(N)^2/N); above 1 it is O(1/N).
+Neither direction of (7) preserves the SAME drift constant or automatically
+transfers a candidate recurrence; all crosses in (6) remain part of that
+separate proof task.
+
+For the scalar target alone, a low-core bound
+|l0(N)|<=A sqrt N*(1+log N)^eta, eta>=0,
+at tau=1/2 implies the full bound with constant A+288. The same rule for a
+different S uses 288*2^s. These are conditional implications from a specific
+unpaid low-core bound. Conversely a proved full bound gives the same growth
+class for its low core by subtracting the paid tail. No assumption about
+unknown companion RH bounds enters this reduction.
+
+C. Exact first Taylor row and finite-prime exceptions
+====================================================
+Let G_n(t)=product_{p|n}(1-p^-t). At t=0, G_n(0)=0 for n>=2. Its first
+derivative is log p when n=p^e and zero when n has at least two distinct
+prime factors. Therefore
+
+ h_S(N,0)=0,
+ h'_S(N,0)=J_S(N)
+   =psi_S(4N)-3psi_S(2N)+2psi_S(N),                           (8)
+
+where psi_S(x)=sum_{p^e<=x, p not in S}log p, with every e>=1. The derivative
+of R^-t contributes nothing because the original product vanishes at zero.
+These first Taylor rows do not depend on alpha; alpha enters the integral.
+
+Write Psi(N)=psi(4N)-3psi(2N)+2psi(N), and
+
+ V_p(N)=log p*[floor(log_p(4N))-3floor(log_p(2N))
+                                        +2floor(log_p N)].
+
+Then J_S=Psi-sum_{p in S}V_p exactly. Each dyadic shell (N,2N] or (2N,4N]
+contains at most one p-power for every prime p>=2. Hence
+
+ |V_p(N)|<=2 log p, uniformly all real N>=1,
+ V_2(N)=-log2 EXACTLY, uniformly all real N>=1.                 (9)
+
+The last identity uses floor(log_2(2N))=floor(log_2 N)+1. The p=2 column
+is thus a known constant, not a generic fluctuating prime-power mode.
+No primality distribution or RH estimate is used in (9).
+
+For any fixed signed mixture a_S,
+
+ sum_S a_S J_S
+  =(sum_S a_S)Psi-sum_p A_p V_p,
+ A_p=sum_{S containing p}a_S.                                 (10)
+
+If sum_S a_S=0, the common ordinary-prime mode disappears and the remaining
+first row has uniform bound 2 sum_p |A_p|log p. If every A_p also vanishes,
+the first row is identically zero. A_p at p=2 contributes the explicit
+constant +A_2 log2. A compiler can represent rows exactly as integer incidence
+vectors (1,-1_{p in S}), plus the licensed constant-column simplification.
+Exact nullspace computation then gives real uniform identities. A finite
+sample nullspace is not an exact row certificate, and further relations
+among unproved prime modes must not be inferred from data.
+
+D. Remainder scope: jet cancellation is not fixed-cutoff integral control
+========================================================================
+For a fixed N the integrand is a finite analytic exponential sum. Taylor
+expansion is exact locally, but its derivatives grow with log N and its
+source horizon. On a fixed interval such as 0<t<1/2, t log N is not small.
+Canceling the first row alone does not pay the higher-jet remainder.
+
+There is a useful explicit, coarse unconditional remainder. Put L=log(4N).
+For all t>=0,
+
+ |G_n(t)-t Lambda(n)|<=t^2*(log n)^2/2, n>=2.
+
+For a prime power this is the second-order exponential remainder; otherwise
+choose two distinct prime factors, bound their product by t^2(log n)^2/4,
+and keep the other factors at most 1. Also 1-R^-t<=t log R. The filter has
+absolute coefficient count 4N across its two disjoint shells. Consequently
+
+ |h_S(N,t)-t J_S(N)|
+       <=2N*t^2*L*(L+2 log R).                               (11)
+
+After normalized integration over 0<t<epsilon,
+
+ |core_micro-J_S*epsilon^(1-alpha)/[(1-alpha)alpha I_alpha]|
+ <=6N*L*(L+2 log R)*epsilon^(2-alpha)/(2-alpha).                (12)
+
+For a zero-sum mixture, substitute the paid bounded row (10) and sum (11)
+with absolute a_S. Taking epsilon_N=min(1/2,N^(-1/(2-alpha))) makes its
+remainder only O(log(N)^2), with explicit finite-prime constants. This pays
+a shrinking microscopic interval. The interval epsilon_N<t<1/2 remains
+OPEN; a local nullspace must not be presented as control of that interval.
+The common first row for the retained original target is still Psi. Dropping
+it by changing to an auxiliary without a recovery theorem drops the target.
+
+E. Boolean faces E_R: exact higher-jet source and microscopic bound
+=================================================================
+For a nonempty fixed squarefree prime product R, k=omega(R),
+
+ E_R K(n)=K(nR)=sum_{S subset primes(R)}(-1)^|S|D_S K(n).        (13)
+
+For k>=2 this is a complete first-row nullspace face; for k=1 its first
+row is V_p. More generally its pointwise product G_(nR)(t) has a zero of
+order at least k at t=0, because all k primes of R occur. Thus every Taylor
+row below order k vanishes EXACTLY, not merely numerically. The compensating
+Boolean face must be complete; omitting one subset changes these statements.
+
+Let h_E(N,t) be the full same quadratic filter of G_(nR)(t), n>=2. Then
+
+ |h_E(N,t)|<=4N*t^k*product_{p|R}log p,
+ |normalized integral over 0<t<epsilon|
+ <=12N*product_{p|R}log p*epsilon^(k-alpha)/(k-alpha).           (14)
+
+Choosing epsilon_N=min(1/2,N^(-1/(k-alpha))) pays this microscopic integral
+by a constant depending only on the fixed R and alpha. Its high parameter
+tail t>=1/2 is paid by applying (4)-(5) to the complete finite combination
+(13). Hence only epsilon_N<t<1/2 remains as this new source's open parameter
+range. These are unconditional bounds; no source observations were used.
+
+A weaker microscopic target is sufficient for square-root recovery and can
+be compiled with exact rational exponents. For any fixed rational gamma>0,
+take epsilon_N=min(1/2,N^-gamma). Since product_{p|R}log p<=R, (14) gives
+
+ |normalized microscopic integral|
+ <=[12R/(k-alpha)]*N^[1-gamma*(k-alpha)].                       (14g)
+
+All constants and the exponent test are rational when alpha and gamma are
+rational. The piece is paid at square-root scale exactly when
+gamma*(k-alpha)>=1/2. Equality is allowed. A finite denominator limit for
+gamma is a resource constraint on enumeration, not a stronger analytic
+condition. The O(1) choice above corresponds to gamma=1/(k-alpha), but
+the detector need not insist on that stronger paid component.
+
+The complete Boolean-face tail has the explicit convenient bound
+288*3^k*sqrt N, since sum_{S subset primes(R)}2^|S|=3^k. Therefore a genuine
+all-integer bound for the middle integral, with constant C_middle and
+growth sqrt N*(1+log N)^eta, eta>=0, yields the full bound with constant
+12R/(k-alpha)+288*3^k+C_middle whenever the rational exponent test holds.
+This triangle recovery retains the complete integrand before splitting;
+for squared potentials the crosses still require (6)-(7). The NEW middle
+inequality remains the unpaid source hypothesis, not an implication of the
+near-zero exponent test or the high-tail certificate.
+
+This E_R source is pointwise no larger than K for n>=2. That fact gives
+no upper recovery of the original K from E_R: the insertion projection has
+a nullspace. A separate conditional RH bridge for E_R is nevertheless
+available, as proved next. It licenses a new RH-sensitive source goal, not
+the original fixed-constant bound or a norm inverse.
+
+F. Separately scoped conditional RH implication for fixed E_R
+=============================================================
+The only imported zeta background is the same meromorphic/Euler/zero/
+reflection facts used in frozen 052:
+[DLMF 25.2](https://dlmf.nist.gov/25.2),
+[DLMF 25.4](https://dlmf.nist.gov/25.4),
+[DLMF 25.10](https://dlmf.nist.gov/25.10).
+The following singular-integral argument is derived here.
+
+Fix a NONEMPTY finite R once and for all, k=omega(R)>=1. Define
+A_R(x)=sum_{2<=n<=x}K(nR). For Re(s)>1 its complete Dirichlet transform is
+
+ F_R(s)=I_alpha^-1 int_0^infinity
+          [U_R(s,t)*zeta(s)/zeta(s+t)-G_R(t)]*t^(-alpha-1) dt,
+ U_R(s,t)=product_{p|R}(1-p^-t)/(1-p^(-(s+t))),
+ G_R(t)=product_{p|R}(1-p^-t).                                (15)
+
+The local factor follows from the full p-adic orbit: n=p^e contributes
+G_(nR) the inserted p factor for EVERY e>=0, replacing the original factor
+(1-p^(-(s+t)))/(1-p^-s) by (1-p^-t)/(1-p^-s). The subtraction G_R is the
+actual n=1 term, K(R), not zero. Absolute Fubini follows from K(nR)<=K(n)
+for n>=2 and the finite inserted unit. This identity is initially Re(s)>1.
+
+The real pole at 1 has positive residue
+I_alpha^-1 int U_R(1,t)/zeta(1+t)*t^(-alpha-1)dt. It is finite at zero
+and infinity; a fixed scale filter P with P(q)=0 removes this real pole.
+No fitted residue is needed for the numerical arithmetic statistic.
+
+If ordinary RH is false, choose rho with Re(rho)>1/2, nonzero imaginary
+part, RIGHTMOST at its fixed height, as in 052. All ordinary denominator
+zeta(rho+t), t>0, then avoid zeros. The factors 1-p^(-(s+t)) also avoid
+zero along this ray, since Re(rho)>0. Compact separation plus Euler tails
+provides the needed continuation tubes; no global rightmost zero is assumed.
+
+Let rho have any finite multiplicity d>=1 and write
+zeta(rho+z)=z^d g(z), g(0)!=0. Near delta=0, t=0,
+
+ U_R(rho+delta,t)=t^k u(delta,t),
+ u(0,0)=product_{p|R}log p/(1-p^-rho)!=0,
+ zeta(rho+delta)/zeta(rho+delta+t)
+     =[delta/(delta+t)]^d*g(delta)/g(delta+t).
+
+The combined amplitude u*g(delta)/g(delta+t) is analytic near (0,0).
+Put beta=k-alpha, so k-1<beta<k. The elementary singular integral is
+
+ J_(d,beta)(delta)=delta^d int_0^epsilon
+                             t^(beta-1)/(delta+t)^d dt.
+
+If d>=k, substitution t=delta v immediately gives the noninteger term
+delta^beta times the strictly positive finite integral
+int_0^infinity v^(beta-1)(1+v)^-d dv, with remainder O(delta^k).
+
+If d<k, subtract the integrable analytic terms l=0,...,k-d-1 inside the
+integral. The remaining coefficient of delta^beta is
+
+ B_(d,beta)=int_0^infinity v^(beta-1)*
+ [(1+v)^-d-sum_{l=0}^{k-d-1}(-1)^l binom(d+l-1,l)v^(-d-l)]dv. (16)
+
+At zero the worst power is v^-alpha; at infinity the remainder is
+O(v^-alpha-1). Thus (16) is absolutely convergent. Its bracket has STRICT
+sign (-1)^(k-d), by the Taylor remainder for (1+z)^-d at z=1/v. It is
+therefore nonzero. No assumption of simple zeros enters this argument.
+If desired its value is Gamma(beta)Gamma(d-beta)/Gamma(d), with negative
+Gamma arguments interpreted solely via finitely many Gamma recurrences;
+the positive/finite integral proof (16) already establishes the needed sign.
+
+Analytic amplitude corrections do not erase that term. Expand the amplitude
+in delta and t to finite order k. A monomial delta^a t^b with a+b>=1 shifts
+the fractional exponent to beta+a+b>k, apart from analytic Taylor terms.
+The t^k remainder has k uniformly integrable delta derivatives: its bound
+after differentiation is a constant times t^(beta-1), which is integrable.
+The delta^k remainder is O(delta^k). Hence, after subtracting an actual
+polynomial of degree at most k-1, the complete local expansion is
+
+ F_R(rho+delta)=Q_(k-1)(delta)+C_R,rho*delta^(k-alpha)
+                                        +O(delta^k),           (17)
+ C_R,rho=u(0,0)*B_(d,beta)/I_alpha!=0.
+
+The part t>=epsilon is analytic near rho by the fixed-height ray argument;
+the unit subtraction is a constant. They only alter Q and analytic higher
+terms. There is NO additional factor (-1)^d: the local zero ratio is
+delta^d/(delta+t)^d. The sign in the finite-part integral already accounts
+for d<k.
+
+Now suppose a fixed nonzero polynomial scale filter of A_R, with P(q)=0,
+satisfies an all-integer square-root/polylog bound. The exact finite-head
+Mellin identity and integer-to-real transfer from 053 apply because
+K(nR)<=K(n)<=log(n)^alpha for n>=2. They make P(q^s)F_R(s)/s holomorphic
+on Re(s)>1/2. At rho its analytic multiplier has finite order j>=0.
+Subtract the analytic product with Q in (17); a nonzero term
+delta^(k+j-alpha)+O(delta^(k+j)) remains. Holomorphy would force all Taylor
+coefficients through k+j-1 to vanish, hence O(delta^(k+j)), a contradiction.
+Thus this precise NEW source-bound premise implies RH. Annulus exclusion
+of polynomial roots is again unnecessary; their integer orders cannot erase
+a noninteger branch. The strict fixed range 0<alpha<1 is indispensable.
+
+This implication neither proves the source premise nor its converse from RH.
+It does not recover the original K target norm or its selected constant.
+R must be fixed: a scale-dependent inserted prime set is not a single
+Dirichlet source and is not licensed by this continuation proof.
+
+G. Detector frontier and final scope
+===================================
+A reusable argument language can now certify:
+
+ * exact masked source and unit binding;
+ * arbitrary rational-cutoff tails (3)-(5), uniformly in alpha;
+ * signed cross-aware recovery (6)-(7);
+ * exact first-row incidence/nullspace identities (8)-(10), including p=2;
+ * coarse Taylor remainders and paid microscopic intervals (11)-(14);
+ * the separately scoped fixed-E_R conditional RH implication (15)-(17).
+
+The new hard leaf is a JOINT uniform estimate on the intermediate parameter
+range. For the original target it is the whole signed low core 0<t<1/2;
+for a complete E_R face it can be narrowed to epsilon_N<t<1/2 after the
+paid microscopic and high tails. This is a genuine source-bound expression
+with masks, endpoints, units, and all crosses retained. It has not been
+bounded at square-root scale. First-row cancellation, finite Taylor depth,
+or finite passes cannot pay it.
+
+The detector can synthesize these exact rows and complete Boolean faces,
+then propose a uniform arithmetic inequality with an acyclic proof graph.
+It must not eliminate the common prime mode from an auxiliary and claim
+the retained t0 disappeared, assume an unknown companion RH theorem, or
+read a finite row cancellation as a global integral estimate. The paid tail
+and microscopic controls identify where a new proof is actually needed;
+they do not declare that proof complete. The independent source-only memo
+PRIME_INSERTION_EULER_BRIDGE_AUDIT_056.txt separately checks the all-multiplicity
+branch expansion and reaches the same conditional scope. This review is stopped.

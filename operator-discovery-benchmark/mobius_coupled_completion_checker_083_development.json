@@ -1,0 +1,99 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "failed": 1,
+      "output": "test_boolean_negative_rows_are_not_clamped (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_complement_zero_and_empty_horizon_unit (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_complete_physical_model_and_exact_upper (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_coupled_zero_identity_and_actual_full_drift (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_discriminated_schema_booleans_and_canonical (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_dual_feasibility_shapes_negative_lower_and_parameter_independence (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_dual_offdiagonal_factor_half_sign_and_full_templates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_fractional_and_negative_exponents_exact_boundaries (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_huge_horizon_before_allocation_and_physical_count_gate (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_nu_prospective_memory_and_scope (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_prime_composite_masks_and_unit (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_prospective_matrix_power_and_work_gates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_source_weight_cut_and_unit_balance_tampering (test_check_mobius_coupled_completion_083.Tests) ... FAIL\ntest_unit_balance_cancels_all_unit_columns_and_K0 (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n======================================================================\nFAIL: test_source_weight_cut_and_unit_balance_tampering (test_check_mobius_coupled_completion_083.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_coupled_completion_083.py\", line 115, in test_source_weight_cut_and_unit_balance_tampering\n    self.assertEqual(C.verify_certificate(bad,19,data['cert'])['status'],'INVALID')\nAssertionError: 'VERIFIED_FINITE_COUPLED_UPPER_BOUND' != 'INVALID'\n- VERIFIED_FINITE_COUPLED_UPPER_BOUND\n+ INVALID\n\n\n----------------------------------------------------------------------\nRan 14 tests in 0.170s\n\nFAILED (failures=1)\n",
+      "passed": 13,
+      "reason": "Initial full new suite.",
+      "status": "FAIL",
+      "tests": 14
+    },
+    {
+      "attempt": 2,
+      "failed": 0,
+      "output": "test_source_weight_cut_and_unit_balance_tampering (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.087s\n\nOK\n",
+      "passed": 1,
+      "reason": "Corrected inactive arithmetic-mutation fixture to active partialcut; affected test only.",
+      "status": "PASS",
+      "tests": 1
+    },
+    {
+      "attempt": 3,
+      "failed": 0,
+      "output": "test_prospective_matrix_power_and_work_gates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_huge_horizon_before_allocation_and_physical_count_gate (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_nu_prospective_memory_and_scope (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.029s\n\nOK\n",
+      "passed": 3,
+      "reason": "Added persistent vector resident memory to matrix/dual prospective sum; affected resource tests only.",
+      "status": "PASS",
+      "tests": 3
+    },
+    {
+      "attempt": 4,
+      "failed": 0,
+      "output": "test_prospective_matrix_power_and_work_gates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_huge_horizon_before_allocation_and_physical_count_gate (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_nu_prospective_memory_and_scope (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.017s\n\nOK\n",
+      "passed": 3,
+      "reason": "Added actual parsed program rational resident budget; affected resource tests only.",
+      "status": "PASS",
+      "tests": 3
+    },
+    {
+      "attempt": 5,
+      "failed": 0,
+      "output": "test_anchor_shapes_scope_empty_unit_and_explicit_false (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_anchor_wrong_uncollapsed_cert_and_dual_rejected (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_prime_anchor_joint_composite_cross_and_all_templates (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_prime_anchor_negative_known_block_exact_signs (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_complete_physical_model_and_exact_upper (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_dual_offdiagonal_factor_half_sign_and_full_templates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_complement_zero_and_empty_horizon_unit (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_boolean_negative_rows_are_not_clamped (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_nu_prospective_memory_and_scope (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.235s\n\nOK\n",
+      "passed": 9,
+      "reason": "Four new prime-anchor tests plus five affected default/raw/dual tests only.",
+      "status": "PASS",
+      "tests": 9
+    },
+    {
+      "attempt": 6,
+      "failed": 0,
+      "output": "test_anchor_shapes_scope_empty_unit_and_explicit_false (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_anchor_wrong_uncollapsed_cert_and_dual_rejected (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_prime_anchor_joint_composite_cross_and_all_templates (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_prime_anchor_negative_known_block_exact_signs (test_check_mobius_coupled_completion_083.PrimeAnchorTests) ... ok\ntest_dual_offdiagonal_factor_half_sign_and_full_templates (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.138s\n\nOK\n",
+      "passed": 5,
+      "reason": "Affected anchor/template tests after independent native/integer contraction implementation.",
+      "status": "PASS",
+      "tests": 5
+    },
+    {
+      "attempt": 7,
+      "failed": 0,
+      "output": "test_native_arbitrary_denominator_and_zero_terms (test_check_mobius_coupled_completion_083.NativeContractionTests) ... ok\ntest_native_vs_literal_varied_complete_geometry (test_check_mobius_coupled_completion_083.NativeContractionTests) ... ok\ntest_prospective_matrix_power_and_work_gates (test_check_mobius_coupled_completion_083.Tests) ... ok\ntest_nu_prospective_memory_and_scope (test_check_mobius_coupled_completion_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.392s\n\nOK\n",
+      "passed": 4,
+      "reason": "Two new literal-oracle native crosschecks and two affected resource tests after prospective allocation refinement.",
+      "status": "PASS",
+      "tests": 4
+    },
+    {
+      "attempt": 8,
+      "failed": 0,
+      "output": "test_native_vs_literal_varied_complete_geometry (test_check_mobius_coupled_completion_083.NativeContractionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.287s\n\nOK\n",
+      "passed": 1,
+      "reason": "Cached identical cut vectors before repeated root construction; affected duplicate-cut oracle test only.",
+      "status": "PASS",
+      "tests": 1
+    }
+  ],
+  "diagnostic_after_attempt1": {
+    "arithmetic": "VERIFIED_FINITE_COUPLED_UPPER_BOUND",
+    "balance": "INVALID",
+    "cut": "INVALID",
+    "explanation": "Arithmetic mutation did not change zero/inactive term; accepted certificate was correctly identical. No checker bug.",
+    "source": "INVALID"
+  },
+  "distinct_tests": 20,
+  "failed_executions": 1,
+  "hashes_used": false,
+  "known_prime_signs_optionally_anchored": true,
+  "latest_outcome": "PASS",
+  "observed_full_source_values_used": false,
+  "old_tests_run": false,
+  "passed_executions": 39,
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 40,
+  "uniform_growth_proved": false,
+  "uniform_source_bound_proved": false,
+  "unknown_composite_signs_used": false
+}

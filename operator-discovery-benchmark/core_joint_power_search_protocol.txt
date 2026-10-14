@@ -1,0 +1,83 @@
+JOINT POWER-KERNEL CONTROL SEARCH, VERSION 1
+
+Use candidate10_prefix_proof_obligation.json and its verified proof artifacts.
+Do not edit or rerun older frozen studies. Search identities and bounds for
+the COMPLETE current remaining vector, including exact transport error.
+
+Primitive theorem supplied to the search:
+For rational 0<=a<1, theta=1-a, K_a(n)=n^-a, J_theta(n)=n^theta-(n-1)^theta,
+and ALL real t>=0,
+ -1/theta <= sum_(1<=n<=t)K_a(n)-t^theta/theta <= 0.
+For t>=1 this follows by the lower integral from1 to floor(t)+1 and the
+upper integral from0 to floor(t), using monotonicity. For0<=t<1 the sum
+is empty and the same bound holds. Thus for any finite SIGNED h, with its
+COMPLETE finite moment m_theta(h)=sum_d h(d)/d^theta,
+ H=K_a*h-(m_theta(h)/theta)*J_theta
+has |prefix H(n)|<=M(h)/theta for every integer n>=1, where M=sum_d|h(d)|.
+Terms d>n remain in the moment and in the remainder identity. No cutoff
+or gap is assigned to J or H. Moment multiplication for finite Dirichlet
+convolution is exact, even when its support extends beyond the observed N.
+
+The supplied grammar permits prefix increments J_theta at rational powers
+theta1/6,1/3,1/2,2/3,5/6,1. The compiler matches asymptotic power profiles
+and solves the coefficient equation. Incompatible powers are recorded as
+unsupported cancellation profiles. A rejected profile is not a disproof
+of a different operator or an all-scale arithmetic bound.
+
+Eligible current source pieces contain exactly one K (shift read from
+the original source mode) and otherwise only FINITE factors A,B,C:
+A=mu restricted to U=floor(N^alpha), B=mu*n^-2/3 restricted to V=floor(N^gamma),
+C=c*delta with c=sum_(d<=U)mu(d)/d and |c|<=2 already proved.
+All their scalar signs (beta=9/2 and the actual -R_u) are retained.
+Enumerate every subset of eligible pieces to center, including no change.
+Every centered piece is represented by its signed remainder H_i and a
+symbolic drift polynomial. Combine ALL drifts with the same theta BEFORE
+taking any bound. Its symbolic variables are m_theta(A),m_theta(B),c,R_u.
+No observed moments or fitted constants select a subset or a coefficient.
+
+Finite factor mass costs are A:N^alpha, B:3N^(gamma/3), C:2.
+The remainder energy on parentX or child2X under COMMON N=4X-1 is
+ <=4*(M(h)/theta)^2/N. Include exact source scalar magnitudes and every
+summand. Uniform constants may be paid; positive powers remain open.
+
+For a finite moment sum of n^-s with n<=floor(N^r), use:
+s<1: N^(r*(1-s))/(1-s); s=1:1+ln N; s>1:s/(s-1).
+These are absolute bounds on moments, never a claim about their actual
+signed sizes. For A use s=theta,r=alpha; B uses s=theta+2/3,r=gamma;
+C uses2 and R_u uses5. This gives a reference bound for the retained
+JOINT drift D_theta*J_theta. Its exact polynomial and all cross terms
+remain in the emitted goal even when the reference has positive power.
+
+Selector: minimize the largest certified N exponent of the eligible
+subsum's unpaid energy, then log degree, then the number of unpaid
+auxiliary components, then number of introduced remainders and mask.
+Uniformly paid pieces contribute exponent0 and degree0 to this comparison.
+Keep every competing subset and profile rejection. The score is a bound
+for the modified subsum, not a bound for the full remaining source; all
+other current terms remain untouched and fully signed.
+
+Use the previously verified Abel channel constant
+sum_i[2^ceil eta_i*(|a_i0|+2sum_(j>=1)|a_ij|)]^2 for bounded signed prefixes.
+Pay newly controlled remainders, and any uniformly bounded drift certified
+by the same rules, with the complete Cauchy term count. The actual source's
+theta2/3 drift reference bounds have positive powers and stay unpaid.
+The exact vector identity is Z_old=P_new+Z_new. Both norm comparisons
+S_old<=2S_new+2C_new and its converse retain the same current target degree.
+Old paid heads and earlier centered pieces are already absent from Z_old.
+No original fixed-C recurrence is discharged. The exact transport error
+and all remaining inter-mode/drift crosses stay in Z_new.
+
+Independent checker imports no generator, reconstructs profile equations,
+finite moment polynomials, every subset and bound cost, and the full
+remaining/paid partition. Generic high-precision finite checks cover the
+power remainder for fractional exponents and t<1, arbitrary signed finite
+sequences, moments beyond n, complete convolution moments and source signs.
+Finite checks test implementation; the supplied integral theorem and exact
+proof certificates establish the stated universal scope.
+
+One owned development suite per module, then one frozen combined suite;
+only affected tests after edits. One immutable symbolic source study, no
+new source coefficient generation or unchanged numerical retries. Direct
+byte snapshots, no hashes. One process4GiB below authorized16GiB aggregate,
+900seconds and200million inclusive charged operations. Preserve failures.
+All complete signed core bounds and RH remain open pending a real proof.

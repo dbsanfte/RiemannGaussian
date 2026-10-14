@@ -1,0 +1,86 @@
+CURRENT CONTINUATION: ADAPTIVE EXACT ARITHMETIC IDENTITIES085
+
+The RH objective remains active and unfinished. Authoritative machine input:
+stage085/published_next_search_input.json, beside published_results.json.
+No all-scale signed remainder bound or RH proof has been obtained.
+
+The detector now learns symbolic identities from its earlier bound obstructions.
+For each of eight frozen084 operators, it enumerated7740 generic rational
+cutoff rules and1184 distinct training cut/balance forms, then selected eight.
+Training uses exact normalized violations by saved artificial witnesses,
+without querying unknown composite Mobius signs or complete source values.
+Root exponents include arbitrary rationals within prospective bit budgets;
+the finite enumeration heights12/8 are resource bounds, not a root whitelist.
+
+For complete exact annihilator columns V, actual V^T y=0. The bound grammar
+allows arbitrary symmetric signed S plus positive LL^T, giving
+ y^T R y <= B(R+VSV^T+LL^T), B=trace+2sum_abs_offdiagonal.
+R=P^T(A-O-Gold)P retains every physical composite and cross term. Paid
+outer O is unchanged. Exact independent verification checks every entry.
+Earlier divisor-Gram controls are acknowledged; no historical novelty claim.
+
+All banks/operators froze before calibration and new geometry outcomes.
+Preflight predicted the seeded parent VALUES; outcomes remained held out.
+Calibration: 16/16 admitted, including grammar-order baselines.
+New parents: [2187, 3475]; admitted 16/16.
+New S and L were synthesized at each geometry. These are new auxiliary
+searches, not an all-scale construction or fixed-factor validation.
+Baseline comparison covers calibration only; saved084 used a different
+solver budget. All failures, warnings and outcomes remain saved.
+
+Calibration exact bound/u (decimal display):
+q1_p16_inherited: saved084=0.839783, adaptive=0.9169084, baseline=0.8064367
+q1_p16_cofactor: saved084=0.8025035, adaptive=0.6966077, baseline=0.8809845
+q1_p16_reciprocal: saved084=0.7916273, adaptive=0.8040681, baseline=0.7745763
+q1_p16_fractional: saved084=0.7240002, adaptive=0.6443657, baseline=0.71629
+q1_p04_inherited: saved084=0.922013, adaptive=1.057228, baseline=0.9856195
+q1_p04_cofactor: saved084=0.5974823, adaptive=7.536863, baseline=0.5652956
+q1_p04_reciprocal: saved084=0.7612763, adaptive=0.7548838, baseline=0.7453984
+q1_p04_fractional: saved084=0.6302019, adaptive=0.5810122, baseline=0.6000315
+
+Adaptive banks beat the grammar-order baseline in 3/8 calibration cases.
+This is mixed evidence; large opposing identity/square traces can give
+poor exact prices even when the floating objective looks favorable.
+Exact coefficient/trace amplification diagnostics are saved for every
+admitted row. Do not promote floating objectives or overwrite worse trials.
+Fresh growth tests retain084 constants without fitting: [{'j': 1, 'passes': 16, 'tested': 16}, {'j': 3, 'passes': 12, 'tested': 16}, {'j': 7, 'passes': 0, 'tested': 16}, {'j': 15, 'passes': 0, 'tested': 16}, {'j': 31, 'passes': 0, 'tested': 16}]
+Old artificial witnesses which violate V no longer lower-bound this
+unrestricted signed grammar. No new085 grammar dual has been supplied.
+
+The unpaid target is a symbolic construction with, for EVERY j>=1,u>=1,
+ B(R+V_j S_j V_j^T+L_j L_j^T)<=C_j*u^(1+1/j), C_j independent of u.
+The paid outer term, energy recurrence and fixed-source dilation inverse
+then supply the conditional RH route. Finite fits do not pay that leaf.
+See MOBIUS_ANNIHILATOR_UNIFORM_TARGET_085.txt for the next proof-search
+construction and explicit residual obligations. Preserve all signed costs.
+
+Concrete next language: mixed zero products (V W^T+W V^T)/2. Unlike
+V S V^T alone, these can cancel cross terms between constrained modes
+and their complement exactly. With P=V(V^T V)^(-1)V^T on independent
+columns, (I-P)R(I-P)-R is such a product. All pricing must still use
+the original Boolean coordinates. This extension has not yet been run;
+its complete uniform price bound and any inverse-conditioning costs
+remain unpaid. Both unrestricted zero-control SDPs have the SAME ideal
+finite optimum: their exact dual requires X>=0, diag(X)=1, X V=0.
+Mixed controls alone add no arithmetic information. Their purpose is a
+finite, structured proof construction. Also search exact compatible duals
+or Boolean witnesses, so an information limitation triggers new arithmetic
+constraints rather than repeated coefficient or precision tuning.
+
+An elementary auxiliary lemma controls balanced near-endpoint identity
+norms by2*L*H_N+sum_(N-L<t<=N)(tau(t)-1). Its all-scale divisor bound
+is proved in the review. This pays an identity-column norm estimate;
+it does not pay the complete arithmetic remainder or coefficient growth.
+
+Verification: 11 distinct focused tests, 17 executions, 17 passed.
+Preflight found an empty-matrix shape bug and witness-status mismatch;
+both were fixed before science. Initial failed audit and passing follow-up
+are retained. Exact scoring/resource/helper guards were strengthened.
+Independent saved-artifact audit admitted the complete new experiment.
+Main elapsed 938.957s; sampled aggregateRSS 1718120448B;
+conservative process-peak sum 3578994688B.
+Three workers, one native thread each; limits16GiB and7200 seconds.
+Counters cover instrumented geometry/matrix/scoring work, not solver
+instructions or symbolic exponent comparisons. No hashes or old reruns.
+All 666 previous frozen files, 11 scientific and 9 postrun sources preserved.
+Sol6.1 agents performed substantial mathematical and independent reviews.

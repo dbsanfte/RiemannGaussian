@@ -1,0 +1,29 @@
+Factor search, exact obstruction, and the signed divisor-energy bridge
+
+The full objective remains an all-scale signed arithmetic estimate strong enough for RH. No such estimate or RH proof has been obtained. The previous goal turn made progress; this turn added and tested a larger arithmetic language, resolved an exact-arithmetic bottleneck, and proved a new limitation of that language.
+
+The sealed factor-probe-001 adds all 44 combinations of eleven reduced cut exponents 0<theta<1 with denominator at most six and kernels 1,a,b,a-b. Degree-one kernels are divided by N=4X-1 exactly. The declared ordered coprime domain ab<=N is partitioned into a<=floor(N^theta) and its complete complement. Every product multiplicity is retained. Original noncoprime target terms are unchanged: this is an added coprime-domain operator, not a replacement of the full target.
+
+Each template contributes squared factor and projected sums, both prefix-plus/minus-factor-contrast squares, and the complete relation closures T(B+U) and T^2, where T=B-U is a sum of coprime-product relations. Thus B^2-U^2=T(B+U) retains every cross term. There are 282 square groups, 319 signed relation groups and two shared five-atom PSD Grams. The critical program includes the necessary zero-cubic constraint and uses the original signed defect. All added formal scalar contributions vanish, so the old scalar-budget obligations remain.
+
+Original run outcomes are preserved: critical SDP uncertified after numerical failure; unsigned SDP missing_resource at the exact reconstruction work cap; dual missing_resource at the exact Fraction elimination deadline. No final candidate was admitted by that run. Its eleven tests and independent whole-run audit passed. These are computational outcomes, not arithmetic refutations.
+
+A separate sealed native-dual retry replayed the SAME saved 420-element support with no new floating proposal. FLINT rational elimination reconstructed it in approximately three seconds. Every original coefficient pairing and both full Gram dual matrices were independently checked twice. The lhs pairing is -1; all relation pairings are zero; every square/slack pairing is nonnegative; both Gram dual matrices are PSD. This separates the full declared factor-plus-Gram cone, not just a diagonal primal subcone.
+
+All five constant dual coordinates vanish. The same witness therefore applies to every rational C>=0 and integer q>=1, and even arbitrary rational per-scale scalar padding, with the same nonconstant target and gamma=0 shared dictionary. Trying more target constants or exponents cannot repair this template. The necessary-gate argument applies only in its proved subcubic/q>1 regime; gamma=0 at q=1 is an additional restriction. Changed relations, atoms, sharing rules or coefficient programs remain outside this obstruction. The actual arithmetic inequality is not refuted.
+
+A separately sealed sparse-LP retry fixes the Gram matrices to zero. It finds no critical certificate and recovers the unsigned calibration exactly. Its only nonzero weights are old pair-difference square 1, old child-half-prefix square 2 and old norm-rowmass relation -1. Every new factor weight is zero. The identity 2 sum_child P_floor(t/2)^2=4 sum_parent P_t^2 proves its exact all-scale reduction to the old Cauchy bound. Its scalar budget is cubic, with gamma=56/3, so this is calibration success only. Same-weight transfer verified X=7; X=11 remains missing_resource (expansion work/time). These outcomes do not modify the original SDP failures.
+
+The analytic review identifies a concrete next bridge. For kernel 1 and theta=1/2, swapping a and b cancels the two hyperbolic strips. The factor contrast becomes the complete coprime square box with a,b<=Y=floor(sqrt(N)). Möbius inversion gives
+
+  sum_(a,b<=Y, gcd(a,b)=1) mu(a)mu(b)
+    = sum_(d<=Y) mu(d) [sum_(a<=Y, d|a) mu(a)]^2
+    = sum_(d<=Y) mu(d) [sum_(m<=Y/d, gcd(m,d)=1) mu(m)]^2.
+
+The d=1 term is retained; all other divisor signs and all prime-core interactions remain. No density estimate or norm bound controls this signed sum by itself. Bounding only the coprime box would also leave recovery of the original full target unresolved.
+
+NEW cancellation_gcd_inverse_projection.py compiles a generic complete H by H rational pair kernel into this signed divisor projection and its complete noncoprime complement. Its exact cubic bridge uses inverse_row(gcd(a,b))*x_a*x_b, with the gcd-one unit row included. No product index ab is required for this identity, so pairs with ab>H remain in the source. Optional PSD kernel decomposition certifies the inner squares only; the outer weights x_d stay signed, and the full expression is never admitted as an SOS bound. Six tests and six sealed supplied-identity fixtures passed the independent checker and root integrity recheck. This production is calibrated, not yet a successful bound-search operator.
+
+Next action: search these complete inverse-row/gcd pair multipliers and signed divisor-energy interactions against the unchanged full target, with native exact reconstruction and separate numerical proposal/verification stages. Before adding more families, check highest-degree closure and retain every boundary and noncoprime remainder. Sparse primal verification can eventually avoid expanding groups with exactly zero shared weight after validating the source and weight bindings; a dual obstruction must still check every cone generator. This is a computational optimization, not permission to drop target terms or nonzero residuals. Any accepted finite template still needs an all-scale structural proof and a uniform critical scalar/remainder estimate. The objective stays active.
+
+Artifacts: cancellation-arithmetic-results/pilot-001/factor-probe-001 (original, native-dual-001, lp-retry-001); cancellation-arithmetic-results/gcd-projection-calibration-001. All earlier publications remain unchanged.

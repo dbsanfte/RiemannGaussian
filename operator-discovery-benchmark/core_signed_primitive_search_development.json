@@ -1,0 +1,23 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_signed_primitive_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=656698\n",
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.368s\n\nOK\n",
+      "operations": 656698,
+      "elapsed_seconds": 0.44434815598651767
+    }
+  ],
+  "operations": 656698,
+  "actual_arithmetic_observations": 0,
+  "numeric_cache_reads": 0,
+  "edits_stopped": true
+}

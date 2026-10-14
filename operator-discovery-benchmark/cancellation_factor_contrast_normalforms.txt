@@ -1,0 +1,41 @@
+POSTHOC FACTOR CONTRAST NORMAL FORMS
+Read-only derivation after the frozen factor search started. No scores or source edits.
+
+Let N=4X-1, L=floor(N^theta), and let the complete ordered coprime factor domain be a,b>=1, ab<=N. For any formal coefficients x_n define
+  D_w = sum_domain (2*1_{a<=L}-1) w(a,b) x_ab.
+This is exactly the normalized projected contrast U_inside-U_complement used by the new prefix squares. The collision weights in x_ab must remain: several ordered factors can have the same product.
+
+1. Exact symmetry reductions, valid for arbitrary formal x_n.
+Partition the factor domain into SS (a,b<=L), SL (a<=L<b), LS, LL. For a symmetric kernel w,
+  D_w = sum_SS w*x_ab - sum_LL w*x_ab,
+because SL and LS cancel under a<->b. This is an identity of complete polynomials, not cancellation of actual Mobius signs.
+For theta>=1/2, (L+1)^2>N, so LL is empty. At theta=1/2, L^2<=N, and SS is the entire coprime square box 1<=a,b<=L. For theta>1/2, SS must still retain ab<=N; dropping that hyperbolic boundary is invalid.
+
+Write D_a,D_b for kernels a/N,b/N. Then D_{a+b}=D_a+D_b has the symmetric reduction above. The antisymmetric kernel has full projected sum zero, and
+  D_{a-b}=D_a-D_b
+           = (2/N) sum_{a<=L<b,ab<=N,gcd(a,b)=1} (a-b) x_ab.
+Thus a and b are not independent mechanisms: their sum is a weighted symmetric square-box/hyperbolic operator, and their difference is a boundary-crossing operator. In the latter, every geometric coefficient a-b is negative, but the actual x_ab signs remain; this does not prove a signed numerical bound. Both full B forms for a-b vanish under complete ordered exchange, while inside and complement forms are opposite. The frozen builder keeps both cells and their squares, so none of these cancellations licenses discarding a cell.
+
+For kernel 1, the full product-projection coefficient at n is 2^omega(n), including coefficient1 at n=1. Hence
+  U_full = sum_{n<=N} 2^omega(n) x_n.
+For a/N and b/N the full coefficients are identical, equal to N^-1 sum_{d|n,gcd(d,n/d)=1} d. Every ordered unitary divisor is retained. No coefficient1 replacement is valid. These counts depend only on actual factor arithmetic, not sampled sign responses.
+
+2. A genuinely signed actual-Mobius square-box identity.
+At theta=1/2, actual coprime multiplicativity gives
+  D_1 = sum_{a,b<=L,gcd(a,b)=1} mu(a)mu(b).
+Use the COMPLETE divisor identity 1_{gcd(a,b)=1}=sum_{d|a,d|b} mu(d). Define the p-free core prefix
+  R_d(Y)=sum_{m<=Y,gcd(m,d)=1} mu(m).
+Squarefree support and multiplicativity imply the exact identity
+  D_1 = sum_{d<=L} mu(d) R_d(floor(L/d))^2.
+There is no random-sign or independence assumption. The d=1 term is M(L)^2; the terms with mu(d)<0 carry genuine negative credit, and those with mu(d)>0 carry positive credit. Treating this as a sum of nonnegative squares destroys the mechanism. This is a useful NEXT relational coordinate, not an estimate established by the frozen factor search.
+
+For T_d(Y)=sum_{m<=Y,gcd(m,d)=1} m*mu(m), the symmetric degree-one kernel gives, again at theta=1/2,
+  D_{a+b} = (2/N) sum_{d<=L} d*mu(d) T_d(floor(L/d))*R_d(floor(L/d)).
+The derivation expands the weighted square box, retains both ordered axes, and uses mu(d)^2=1 for squarefree d. A single a/N square-box term is half this expression; D_a additionally contains its SL/LS boundary term. For theta>1/2, the hyperbolic restriction ab<=N prevents separating the two core prefixes; the complete restricted pair kernel must be kept.
+
+3. What is gained, and the remaining theorem.
+The swap aliases above explain representational degeneracy; they do not erase the actual signed square-box/divisor-core correlation. The new identity exposes signed interactions ACROSS different primitive prime cores through mu(d), rather than only same-core exponent matching. A natural generic multiplier family is the complete inverse row sum_{e|g} x_e times x_a*x_b, with exact coprime and noncoprime complements. This derives the gcd-indicator rewriting from supplied inverse relations without importing a sign table or assigning one learned coefficient per d.
+
+Absolute expansion only gives |D_1|<=L^2<=N and similarly O(N) for the normalized degree-one square box. Bounding R_d by L/d gives a still linear charge after summing d^-2. Those bounds do not yield a critical prefix-energy innovation for the original full Mertens target. A meaningful next lemma must control the SIGNED remainder sum_{d>=2} mu(d) R_d(floor(L/d))^2 together with the d=1 square and the complete hyperbolic/boundary terms, uniformly in the changing cutoffs. Estimating each positive piece separately or proving only the displayed exact identity leaves that lemma open.
+
+Complete actual inverse rows already fix the arithmetic coefficients; the proposed rewrite adds proof coordinates, not independent prime information. Any eventual critical certificate must still match the FULL original signed defect at every scale and prove its scalar budget for every cofinal q, with all initial scales and modulus/core costs. This note supplies normal forms and a tractable exact relational route; it proves no RH-strength cancellation estimate.

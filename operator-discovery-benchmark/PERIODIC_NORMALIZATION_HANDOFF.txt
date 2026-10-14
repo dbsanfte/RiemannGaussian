@@ -1,0 +1,169 @@
+PERIODIC NORMALIZATION 040: VERIFIED REDUCTION, SIGNED BOUND OPEN
+
+Current continuation:
+ periodic-normalization-results/pilot-001/next_search_input.json
+Exact new target and dependency graph:
+ periodic-normalization-results/pilot-001/bound_search_frontier.json
+Actual result and independent replay:
+ periodic-normalization-results/pilot-001/report.json
+ periodic-normalization-results/pilot-001/verification.json
+Proof:
+ PERIODIC_NORMALIZATION_SCOPE_040.txt
+ periodic_normalization_protocol_040.txt
+
+The persistent goal remains ACTIVE. Neither RH nor the original full-source
+signed energy bound has been proved. All six037 recurrence obligations and
+the earlier complete original-F target are preserved in the continuation.
+
+What changed
+
+039 exposed that the exact source scalar cancels a real pole but its scalar
+quadratic grammar could not use that cancellation to pay a finite remainder.
+040 now uses the exact normalization inside a complete physical prefix bound.
+The supplied grammar allows periodic preconditioning, analytic centering and
+reviewed uniform kernel bounds. The detector solves a mean equation, compiles
+all signed modes, solves a rational hyperbola split and searches operator copy
+counts subject to preserving an RH-relevant pole. This is a search within that
+grammar, not an unrestricted invention of analytic proof rules.
+
+No new arithmetic coefficient observation or archive study was needed. The
+result is a proved reduction with an OPEN signed endpoint, not a numerically
+fitted claim of cancellation. The alternating operator is familiar; historical
+novelty is not a criterion for admission.
+
+Actual exact source and selected operator
+
+All products below are Dirichlet convolution. Set
+ beta=9/2, r=1/3, theta=2/3, v=2/3,
+ K(n)=n^(-1/3), mu_v(n)=mu(n)n^(-2/3), L=K*mu_v,
+ R=beta[zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)], 1<R<5.
+The complete original source is
+ f=beta*K*mu*mu-beta*K*mu*mu_v-R*L-beta*mu.
+
+For integer q>=2, the mean equation1+c/q=0 gives
+ A_q(n)=1-q*1_(q divides n), D_q=delta-q*delta_q,
+ A_q=One*D_q, mu*A_q=D_q,
+ prefix(A_q)(x)=floor(x)-q*floor(x/q) in[0,q-1].
+The search selected q=2 and one copy. Thus A_2 is1,-1,1,-1,... .
+
+Define the analytic-centered real prefix
+ J(x)=prefix(K*mu)(x)-x^theta/[theta*zeta(theta)],
+ J_q(x)=J(x)-q*J(x/q).
+J(x/q) includes its nonzero continuous main when x/q<1. It must never be
+replaced by J(floor(x/q)) or discarded as an empty uncentered prefix.
+
+The independent checker admits the exact complete identity
+ prefix(A_q*f)(x)=beta*J_q(x)+Z_q(x),
+ Z_q(x)=-beta*[S_L(x)-q*S_L(x/q)]-R*S_LA(x)-beta*prefix(D_q)(x),
+ S_L(x)=prefix(L)(x)-x^theta/[theta*zeta(theta+v)],
+ S_LA(x)=prefix(L*A_q)(x)-A_q(theta)*x^theta/[theta*zeta(theta+v)],
+ A_q(theta)=(1-q^(1-theta))*zeta(theta).
+The theta main cancels by the separately admitted exact definition of R.
+An interval-only R bound does not suffice for that identity's centering.
+No ordinary convergence of sum mu(n)n^(-theta) is asserted.
+
+Uniform cost found by the bound search
+
+The all-real periodic hyperbola argument has exponent envelope
+ max(alpha,theta*(1-alpha)),0<alpha<=theta.
+Its generated minimizer is alpha=theta/(1+theta)=2/5. A convex-combination
+dual certificate independently verifies the global minimum. The shifted
+convolution is absolutely payable because v+2/5=16/15>1.
+
+The complete costs are
+ |S_L(x)| <= (21/2)*x^(1/3),
+ |S_LA(x)| <=168(q-1)*x^(2/5), every real x>0.
+The complete finite D_q prefix has bound q-1. At selected q=2,
+ |Z_2(x)| <= (3945/4)*x^(2/5), every real x>=1.
+Consequently, using E_H(X)=X^-2 sum_(X<=n<2X)H(n)^2,
+ E_Z2(X) <= (15563025/4)*X^(-1/5), every integer X>=1.
+This bound covers the entire preconditioned error, including all units,
+dilations, tails and triangle costs. It is independent of the OPEN J_2 norm.
+
+The verified energy implications are
+ E_(prefix(A_2*f)) <= (81/2)*E_J2+2*E_Z2,
+ E_J2 <= (8/81)*E_(prefix(A_2*f))+(8/81)*E_Z2.
+These compare the new target and the PRECONDITIONED source. No bounded inverse
+of A_2, nor an original-F energy bound, is inferred from them.
+
+Why the remaining target is still RH-relevant
+
+Required OPEN estimate:
+ For every epsilon>0 there is C_epsilon, independent of integer X>=1, with
+ E_J2(X)<=C_epsilon*X^epsilon.
+The paid error and energy implication would transfer this estimate to the
+step prefix of A_2*f. Dyadic Cauchy-Schwarz and Abel integration would then
+make its Dirichlet transform holomorphic for Re(s)>1/2.
+
+If off-half zeta zeros exist, choose one close enough to the supremum of their
+real parts that its positive-shift factors cannot vanish. A single remaining
+inverse-zeta factor creates a nonremovable pole there. The multiplier
+1-2^(1-s) vanishes only on Re(s)=1. Thus that holomorphy would imply RH.
+This argument does not assume that a shifted numerator is nonzero at EVERY
+zeta zero, or that the supremum is attained. It selects a suitable zero.
+The classical premises about zeta continuation and zero location are stated
+in the independent memo; primary references:
+ https://dlmf.nist.gov/25.2
+ https://dlmf.nist.gov/25.10
+Möbius inversion reference:
+ https://dlmf.nist.gov/27.5
+The new reduction and its constants are derived in the local proof, not
+claimed to be the content of those references.
+
+Search result and negative controls
+
+The sole actual run searched q in[2,3,5,7,11,17] and j in[0,1,2]:18 programs.
+ - j0: three full source channels remain OPEN.
+ - j1: exactly one full centered inverse channel remains OPEN; the complete
+       remaining error has negative energy power. Six eligible reductions.
+ - j2: the registered inverse-zeta pole is erased. Its multiple-periodic
+       channel also remains OPEN in this grammar. Six pole-loss controls.
+Selection first preserves RH relevance and demands a subcritical complete
+error, then minimizes open modes, error exponent and period. It never treats
+j2 as an RH theorem or silently pays the new J_q target.
+
+Fractional parameters are no longer restricted to selected roots. General
+rational source shifts and exact minmax exponents are supported. If the
+minimax exponent fails the strict v+sigma>1 test and v>1/2, the code solves
+the available interval using its rational midpoint below1/2. No denominator
+bank is needed. At v<=1/2 this provider stays OPEN. Synthetic tests include
+genuine source denominator257 and a strict-margin case v=59/100.
+
+Verification and resources
+
+Producer:4 new tests,1438 charged proxy operations, all passed once.
+Independent checker:19 new tests,37697 operations, all passed once. Challenges
+include wrong normalization, source/unit changes, omitted divisors/subunit
+terms, wrong split, lost heads/dilations, false closure and false RH claims.
+Actual search:18 programs independently replayed; producer3641 operations,
+checker1207 operations, original-source admission3630 operations;0.0417s total.
+Reported process high-water RSS704032KiB; the run stayed inside16GiB.
+All pre-run frozen source bytes still match their current files.
+
+The separate generic finite-normalization backend has6 distinct development
+tests plus1 focused followup after a metadata correction; all7 invocations
+passed,62146 operations. It supports arbitrary rational factor quotients and
+complete finite bridges. Those generic bridges have NOT all been independently
+admitted by this periodic run. Their prototype receipt is retained separately.
+No previous successful study or old test suite was rerun. No hashes were made.
+
+Next experiment
+
+Use centered_mobius_energy as the next detector input. Search complete signed
+correlation reductions, cross-scale storage, weights and telescoping arguments
+that can price its growth. The bound attempt must act on this actual remaining
+endpoint. The full original-F obligations remain available as an alternative
+route; this reduction does not discharge them.
+
+One allowable intermediate lemma is E_J2(2X)<=E_J2(X)+C, with C independent
+of dyadic X. It would give logarithmic dyadic energy and all-integer subpower
+energy by covering. This is an untested illustrative target, not a discovered
+or proved recurrence and not a required search shape. Permit the detector to
+invent other intermediate lemmas and retain their complete proof dependencies.
+
+Absolute shifted-contraction rules explain their own current failure on the
+new endpoint: an unshifted mu factor has shift0, so no subcritical sigma can
+make0+sigma>1. Further inverse erasure also loses this RH bridge. Useful next
+progress therefore requires signed control, a new auxiliary with a paid
+recovery, or a new argument for the bound. Better finite constants alone do
+not resolve this obstruction.

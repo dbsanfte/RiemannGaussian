@@ -1,0 +1,160 @@
+NORMALIZED ROOT ARITHMETIC AND SIGNED PROFILE CANCELLATION
+
+Scope. The stage supports positive rational arithmetic roots and searches
+actual inverse-coefficient operators. It can prove rapid signed cancellation
+when an exact arithmetic profile collapses. That case erases ordinary zeta
+zeros and cannot prove RH. Noncollapsing critical estimates remain unproved.
+Numerical successes never supply an all-scale premise.
+
+1. Semantics and honest ordinary arithmetic scale
+Take rational r>0, ell>0, K>max(1,1/r), R=K/ell, and signed rational c_m
+on nonnegative integer moments. Let
+ g(u)=exp(R)*sum_m c_m*u^(K+ell*m)*exp(-R*u^ell),
+ D_r(X)=sum_{j,d>=1}mu(d)*g(X/(j*d^r)),
+ V_r(M)=D_r(M^r)-A*M^r.
+The unsigned reference replaces mu(d) by 1. All sums converge absolutely
+since K>1 and r*K>1. The peak of the moment-zero kernel is at u=1, so
+changing ell or K does not silently move the scale most sensitive to the
+arithmetic. The primary coefficient basis is u^(ell*m), not (R*u^ell)^m.
+Using X=M^r compares arithmetic index coverage at comparable d scales.
+M is exact positive rational and X is its exact positive real rational
+power; rounding X to an integer is not part of the operator definition.
+
+2. A complete global moment series, not a truncated lattice
+For w=K+ell*h>max(1,1/r), the full moments are
+ inverse: zeta(w)/zeta(r*w); unit: zeta(w)*zeta(r*w).
+Expanding exp(-R*(X/u)^ell), each atom at M has
+ exp(R)*M^(r*(K+ell*m))*sum_{h>=0}(-R*M^(r*ell))^h/h!
+                 *moment(K+ell*(m+h)).
+Taylor's remainder for exp(-y), y>=0, is at most y^L/L!. Therefore the
+complete error is at most
+ exp(R)*M^(r*(K+ell*m))*(R*M^(r*ell))^L/L!
+                 *zeta(K+ell*(m+L))*zeta(r*(K+ell*(m+L))).
+All zeta arguments in this bound exceed 1; no RH or prime-distribution
+estimate is used. Dynamic precision pays for the exp(z) cancellation
+in the alternating series as well as exp(R) normalization and scale powers.
+Numerical resource exhaustion is a missing evaluation, not a counterexample.
+
+The independent evaluator subtracts an explicitly factorized rectangular
+prefix j<=J, d<=D from the complete moments, evaluates that prefix by
+exponentials, and evaluates only its remaining tail by reverse Horner sums.
+Its Taylor length and precision differ. The prefix is genuine actual mu
+from an independent prime-factor sieve; both evaluators retain every tail.
+
+3. Mellin transform and exact centering
+With v=(K-s)/ell, P(v)=sum_m c_m*R^(-m)*(v)_m,
+ W(s)=exp(R)*Gamma(v)*P(v)*R^(-v)/ell.
+The ordinary-index Mellin transform of the raw observable is
+ (1/r)*W(z/r)*zeta(z/r)/zeta(z), initially Re(z)>max(1,r).
+Its known main residue at z=r is A=W(1)/zeta(r) for r!=1.
+When r=1 the arithmetic ratio cancels exactly and A=0; substituting an
+infinite value for zeta(1) is not a numerical centering operation.
+Thus subtract A*M^r. The local Mellin part at M<1 has an absolute bound
+sum_m exp(R)*|c_m|*zeta(w)*zeta(r*w)*M^(r*w).
+
+4. A true weak bound, normalized exponent one, for 0<r<1
+Write p=1/r>1. Summing unsigned positions over j gives
+ #{(j,d): j*d^r<=t} <= sum_j(t/j)^p <= zeta(p)*t^p.
+Partial summation and an absolute derivative envelope for each g_m yield
+ |D_{r,m}(X)|<=B_m*X^p for every X>0,
+ B_m=zeta(p)*exp(R)*R^(-beta_m)*Gamma(beta_m)
+             *((K+ell*m)+ell*beta_m)/ell,
+ beta_m=(K-p)/ell+m>0.
+Consequently |V_r(M)|<=(sum_m|c_m|B_m+|A|)*M, M>=1.
+The ordinary-zeta exponent remains 1 regardless of r; this is not RH strength.
+The exact derivative X*D'_{r,m}(X)=(K+ell*m)D_{r,m}(X)
+                         -R*ell*D_{r,m+1}(X)
+implies a bounded derivative in M:
+ |V'_r(M)|<=r*(sum_m|c_m|*((K+ell*m)B_m+R*ell*B_{m+1})+|A|).
+The factor M^(r-1) from differentiation is exactly balanced by X^(p-1).
+Integer-M estimates therefore extend to real M with this charged increment.
+
+5. Single-operator RH bridge for roots below one
+The critical target is, for every q, some free finite C_q, for every real
+M>=1, |V_r(M)|<=C_q*M^(1/2+epsilon/q^nu)*log(e+M)^d,
+where nu>0 is arbitrary rational. There is no growth restriction on C_q.
+Assume also W(rho/r)!=0 for every right-half ordinary zero rho, all
+heights and multiplicities. This finite-operator condition is certified
+by the preceding frozen Hermite/Rouche backend with the converted P above;
+the independent checker uses its separately coded Sturm and disk checks.
+
+Cofinality makes the centered Mellin integral holomorphic in Re(z)>1/2.
+At a hypothetical ordinary zero rho=beta+i*T with beta>1/2, denominator
+holomorphy forces zeta(rho/r) to vanish with at least the same multiplicity.
+For 0<r<1 its real part beta/r is larger than beta. Applying the same
+argument repeatedly, after finitely many divisions it reaches Re>=1,
+where zeta has no zeros. An exact power r^J<=1/2 gives a worst-case
+certificate for every beta>1/2: beta/r^J>1. No zero height is sampled.
+Heights increase; no accumulation argument or critical-line exception is
+needed. Kernel preservation at every right-half zero remains mandatory.
+For r extremely close to 1, a finite certificate budget may be exhausted;
+that is not evidence against the estimate. At r>1 the preceding stage's
+reflection/exception-set argument applies. At r=1 it does not apply.
+
+Under RH the converse follows by shifting the same Mellin contour to
+every fixed ordinary line sigma>1/2, using polynomial reciprocal-zeta
+growth there and exponential Gamma decay. The pole at r is subtracted
+exactly; a pole to the left of the new line need not be crossed. The usual
+local/main-term split proves the identity in both cases. Thus the critical
+uniform premise for a recovering root operator is RH-equivalent, not proved.
+
+6. A supplied signed-cancellation proof grammar and behavioral recovery
+Arithmetic profiles are finite ledgers of zeta(slope*w)^integer powers,
+with exact positive rational slopes. Add exponents at equal slopes and
+remove zero exponents. An empty ledger gives moment 1 at every argument
+in the absolute-convergence halfplane. Generalized Dirichlet-series
+uniqueness gives a unit point mass at position 1. Here it is the familiar
+mu*1=delta_1 identity, proved also by the defining divisor inverse.
+This cancellation happens BEFORE taking an absolute envelope and retains
+the actual mu signs. The collapsed actual response is exactly g(M), r=1.
+
+For any rational a>0, every positive real M has
+ |g(M)|<=C_a*M^(-a),
+ C_a=sum_m exp(R)*|c_m|*R^(-alpha_m)*alpha_m^alpha_m*exp(-alpha_m),
+ alpha_m=(K+a)/ell+m>0.
+This is a genuine signed actual-arithmetic all-scale theorem. It does not
+control ordinary zeta: the arithmetic profile cancels its zeros identically,
+even when the kernel preserves them. A kernel-only RH gate would be wrong.
+The detector records strong cancellation and absent ordinary-zero recovery
+as separate facts. It never counts this as achieved RH-strength information.
+
+The anonymous learner receives moment values only, not r or arithmetic
+names. It infers short linear recurrences by rational least squares on
+Hankel rows, rounds coefficients under a declared resource budget, and
+checks independent held-out moments. A universal recurrence is admitted
+only when a supplied exact profile certificate proves it. Otherwise it
+remains a numerical lead. The learner is not required to return a nominated
+recurrence, shape or dilation to make the discovery run succeed.
+Actual-response least squares separately proposes signed shapes with small
+training centered response. It receives no pole locations or named answers.
+Automatic Euler derivatives and an equal-slot random-shape ablation are
+frozen before data. The exact profile grammar is supplied, not invented.
+
+7. False tails and zero-erasure controls
+Replace mu(d) by mu(d)+1_{d>H}, H=2^B. At each finite M the signed shape
+change is enclosed by
+ sum_m |c_m|*exp(R)*M^(r*w)*zeta(w)*H^(1-r*w)/(r*w-1), w=K+ell*m.
+This comes from the full positive tail integral, not a finite fake prefix.
+The counterfeit Dirichlet profile adds
+ (1/r)*W(z/r)*zeta(z/r)*(zeta(z)-sum_{d<=H}d^(-z)).
+At ordinary z=1 it has an uncancelled simple pole for r!=1, or double
+pole for r=1, whenever P((K-1/r)/ell)!=0. The top coefficient is
+ W(1/r)*zeta(1/r)/r, or W(1) at r=1. The finite polynomial term cannot
+remove that top pole. A cofinal half-power uniform bound is therefore false.
+If the kernel exactly masks the pole, this particular control is inapplicable.
+No counterfeit arithmetic theorem is attributed to the actual coefficients.
+
+Separately, true r=1 rapid certificates deliberately fail an RH inference
+that uses kernel preservation alone. This control has a TRUE arithmetic
+bound and a FALSE proposed zero-recovery inference. Arithmetic-type aliases
+are likewise rejected; neither is mislabelled a growth counterexample.
+
+8. Independent scope and status
+Certificates charge the normalized Mellin factor 1/r, Gamma, R normalization,
+kernel polynomial, local integrals, the exact pole at r, unit increments,
+numerator zeta(z/r), and every positive approach-to-line gap. All point costs
+are conditional on the signed uniform estimate. A finite q grid is not proof.
+All frozen and fresh cases, failures, promotions and equal-slot ablations
+are retained. Fresh-q constants are trained before final scales are created.
+The known signed collapse is reported as calibration; no historical novelty,
+new prime-distribution estimate, or proof of RH is claimed.

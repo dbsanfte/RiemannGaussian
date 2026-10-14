@@ -1,0 +1,14 @@
+{
+  "operations": 50169,
+  "runs": [
+    {
+      "test": "test_prime_exchange_discovery",
+      "tests": 6,
+      "returncode": 0,
+      "operations": 50169,
+      "runtime_seconds": 0.07157320500118658,
+      "stdout": "SYNTHETIC_WORK module=test_prime_exchange_discovery operations=50169\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.028s\n\nOK\n"
+    }
+  ]
+}

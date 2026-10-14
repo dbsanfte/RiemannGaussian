@@ -1,0 +1,101 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 2359536040,
+  "base_status": "PAID_FINITE_EXACT",
+  "base_status_counts": {
+    "refuted": 0,
+    "unresolved_interval": 0,
+    "verified": 32
+  },
+  "base_supports": 32,
+  "elapsed_seconds": 24.777302163944114,
+  "largest_individual_worker_rss_kib": 40280,
+  "new_frozen_source_count": 1,
+  "norm_certificates": 64,
+  "norm_checker_operations": 1087561217,
+  "norm_producer_operations": 311857707,
+  "parent_peak_rss_kib": 58564,
+  "prime_checker_operations": 4584056,
+  "prime_operations": 5350625,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4
+  ],
+  "request": {
+    "argument": {
+      "base": {
+        "minimum": 32
+      },
+      "gram": [
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "recurrence": {
+        "C": "1/32",
+        "forcing": "L_parent^-eta",
+        "parities": [
+          0,
+          1
+        ],
+        "rho": "3/4"
+      },
+      "state": "prime_split_H_A"
+    },
+    "original_forcing_b": "-1",
+    "prime": 3,
+    "rounding": {
+      "bits_multiplier": 4,
+      "drift": "round_each_exponential_before_signed_sum",
+      "kind": "dyadic_power_floor",
+      "product": "multiply_rounded_children_exactly",
+      "scale": "ceil_log2_N"
+    },
+    "source_recipe": {
+      "auxiliary": null,
+      "base": {
+        "a": "1",
+        "kind": "drift_mixture",
+        "terms": [
+          {
+            "rate": "1",
+            "weight": "4"
+          },
+          {
+            "rate": "2",
+            "weight": "-6"
+          },
+          {
+            "rate": "3",
+            "weight": "4"
+          },
+          {
+            "rate": "4",
+            "weight": "-1"
+          }
+        ],
+        "theta": "6/11"
+      },
+      "id": "prime_profile_024"
+    },
+    "target": {
+      "A": "1/4",
+      "eta": "5/11"
+    }
+  },
+  "selected_argument": "prime_argument_022728",
+  "source_operations": 111931216,
+  "status": "COMPLETE_FINITE_BASE_PAID_UNIFORM_RECURRENCE_OPEN",
+  "uniform_recurrence_proved": false
+}

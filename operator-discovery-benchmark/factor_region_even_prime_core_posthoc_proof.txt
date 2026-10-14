@@ -1,0 +1,135 @@
+POST-HOC PROOF ATTEMPT: ACTUAL c EVEN SMALL-PRIME/SMALL-CORE REGION
+New analytical extension; all frozen sources/reviews remain unchanged. Native
+admission and independent mathematical review are required separately.
+
+Statement. Fix theta>=1/3, phi=1/2, c=mu*lambda, z=floor(X^theta),
+u=floor sqrtX. Let F_X(y) sum c(m) over all m<=y with leastprime p<=z,
+core b=m/p^e<=u, and positive EVEN valuatione. For any fixed0<a<b<infinity,
+ F_X(vX)=-64 sqrt(v) X^(3/4)/(logX)^2+o(X^(3/4)/(logX)^2)
+uniformly v in[a,b], with integer thresholds interpreted by floors. This is
+an asymptotic for component2 in the frozen order, not the total c prefix.
+For a fixed finite filter, source cutoffs stay atX, and filtered component2
+is sum_d w_d F_X(floor(n/d)). Its leading multiplier isP(1/2)=sum w_d/sqrt d.
+If this is nonzero, its normalized block square is asymptotic to
+6144 P(1/2)^2 X^(1/2)/(logX)^4. Thus a positive fixed singleton weight with
+additional normalizerceil(X^eta), eta<1/2, contradicts any cofinal subpower
+nonnegative-potential innovation claim. This refutes that full potential
+claim, not direct critical target energy or RH. Other potential terms must
+be nonnegative, and the asserted feature must be precisely this singleton.
+
+Imported theorem. Only the unconditional classical PNT pi(t)~t/logt is used:
+NIST DLMF https://dlmf.nist.gov/27.2.E3 and https://dlmf.nist.gov/27.12 .
+The proof imports PNT, not RH, a fitted prime-correlation law, or new arithmetic
+information. All implied constants may depend on[a,b],theta and fixed filter.
+Thresholds below are existential sufficiently-large thresholds; none is claimed
+numerically explicit. WriteH=logX, L=X^(1/4)/H^8, U=X^(1/4)H. Uniformly in
+v in[a,b], floor effects below are negligible, and eventually U<z.
+
+1. Exact least-prime partition and local weights.
+Every source m=p^e b has b=1 or leastprime(b)>p, hence(p,b)=1. Its coefficient
+is c(p^e)c(b)=2c(b) for evene. The special source e=2,b=q prime>p has coefficient
+-4. The source set is a disjoint union: no multiplicities or missing boundary
+terms can be hidden in this split. We bound absolutely every remaining class.
+Use the unconditional tuple envelope sum_{n<=y}|c(n)|<=y(1+logy), since
+|c|<=d2. The exact number of positive even exponents at anyp isO(H).
+
+2. Small p, including ALL exponents and cores.
+For p<L, discard the source-product restriction only for an upper bound:
+ sum_{p<L} sum_{even e>=2,p^e<=bX} 2 sum_{core<=u}|c(core)|
+ <=O(L * H * sqrtX * H)=O(X^(3/4)/H^6).
+The bound uses number of primes<=L<=L, so no prime estimate is needed here.
+It includes unit cores, nonsquarefree cores and arbitrarily high even exponents.
+Its ratio to the proposed main scaleX^(3/4)/H^2 tends to zero uniformly.
+
+3. Large p, high even exponents.
+For p>=L and e>=4, core<=bX/p^e<=bX/L^4=bH^32. A positive core bound demands
+p<= (bX)^(1/4). There areO(X^(1/4)) such integerp andO(H) exponents. Applying
+the tuple envelope atbH^32 bounds their total absolute contribution by
+O(X^(1/4) H^33(1+logH)), negligible againstX^(3/4)/H^2. This deliberately
+loose polylogarithmic bound avoids any assumed signs or exponent cancellation.
+
+4. Large p, e2, unit or composite cores.
+The total absolute unit-core contribution isO(sqrtX), sincep^2<=bX.
+For p>=L, any core<=sqrtX has at most TWO prime factors counted with
+multiplicity, eventually: L^3=X^(3/4)/H^24>sqrtX. Thus a nonprime/nonunit
+core is q1*q2, both prime>L. Its coefficient magnitude is<=4, including
+q1=q2. Its leastprime condition is retained in the source definition, but may
+be dropped for an upper bound.
+Because p^2*q1*q2<=bX andq1,q2>p, any suchp is<=(bX)^(1/4). PNT gives
+O(X^(1/4)/H) possible primesp. For EACHp, the number of candidate composite
+cores<=sqrtX is at most
+ sum_{L<q<=sqrtX/L prime} pi(sqrtX/q).
+All quotient arguments are>=L, so PNT's eventual boundpi(t)<=C t/logt gives
+ <=C sqrtX/H * sum_{L<q<=sqrtX/L prime}1/q.
+Partial summation withpi(t)<=Ct/logt bounds this prime reciprocal sum by
+O(logH/H): logL=H/4-8logH andlog(sqrtX/L)=H/4+8logH, whose log ratio is
+O(logH/H); the endpoint contributions areO(1/H). Therefore the total absolute
+composite-core error, including all p and c weights, is
+ O(X^(3/4) logH/H^3)=o(X^(3/4)/H^2).
+This controls the potentially positive two-prime cores without assuming
+cancellation and is the essential dominance check.
+
+5. Prime cores outside the central p window.
+Smallp was already covered. For p>U, the exact e2 prime-core condition requires
+p<q<=Y_p=min(u,vX/p^2), so necessarilyp^3<vX andp<=O(X^(1/3)). For all such
+nonempty intervals Y_p>=p>=U, hencepi(Y_p)<=C X/(p^2 H). The prime reciprocal
+square tail, again by partial summation and PNT upper bounds, is
+ sum_{p>U}p^-2<=C/(U logU).
+The entire upper tail is consequentlyO(X/(H U logU))=O(X^(3/4)/H^3), uniform.
+This bound also covers any loss from the cutoffp<=z: U<z eventually, and all
+omitted p are in this already negligible tail. Endpoint equalityq=p never
+belongs to the prime-core class and is subtracted explicitly below.
+
+6. Central prime-core main term and uniformity.
+For L<=p<=U, Y_p=min(floor sqrtX,floor(vX/p^2)) has logarithmH/2+O(logH)
+uniformly v in[a,b]. Moreover Y_p>=p eventually throughout this window,
+since its minimum is of orderX^(1/2)/H^2 whereasU=X^(1/4)H. Thus the exact
+count is sum_{L<=p<=U}(pi(Y_p)-pi(p)). The subtraction is at most
+pi(U)^2=O(X^(1/2)H^2), negligible compared withX^(3/4)/H^2. PNT applies
+uniformly toY_p because its minimum tends to infinity, yielding
+ pi(Y_p)=(2/H)(1+o(1)) min(sqrtX,vX/p^2).
+PNT also givespi(t)=(4t/H)(1+o(1)) uniformlyt in[L,U]. For the positive
+monotone weight f_v(t)=min(sqrtX,vX/t^2), Stieltjes partial summation therefore
+replaces sum_{L<=p<=U}f_v(p) by(4/H)(1+o(1))int_L^U f_v(t)dt. This does not
+assume uniform short-interval PNT: uniform error in the cumulativepi(t),
+combined with monotonicity, suffices. Boundary/variation terms in the error
+areO(X^(3/4)) uniformly, whereas the main integral has a positive uniform
+constant timesX^(3/4).
+Aftert=X^(1/4)s,
+ int_0^infinity min(sqrtX,vX/t^2)dt
+ =X^(3/4)int_0^infinity min(1,v/s^2)ds
+ =2sqrt(v)X^(3/4).
+The omitted lower integral is<=sqrtX*L=X^(3/4)/H^8; the omitted upper integral
+is<=bX/U=bX^(3/4)/H. Floors alter eachY_p byO(1), contributingO(pi(U)) before
+the harmless logarithmic factor, also negligible. Hence the prime-core count
+is(16sqrt(v)+o(1))X^(3/4)/H^2. Multiplying its exact coefficient-4 and adding
+all absolute error bounds from sections2–5 proves the stated-64 asymptotic.
+
+7. Fixed filtered prefix, energy, and cofinal contradiction.
+For n in[X,2X), each fixed divisor argument floor(n/d)/X lies in a fixed compact
+subinterval of(0,infinity), up toO(1/X). The established uniformity therefore
+implies S2(n)=(-64 P(1/2)sqrt(n/X)+o(1))X^(3/4)/H^2 uniformly across the block.
+The normalizing X and cutoffs are still the original blockX for EVERYterm.
+A Riemann sum then gives
+ X^-2 sum_[X,2X)S2(n)^2
+ =(4096P(1/2)^2 int_1^2 v dv+o(1))X^(1/2)/H^4
+ =(6144P(1/2)^2+o(1))X^(1/2)/H^4.
+For c baselineP(1/2)=1. For C-(11/4)Cfloor(n/6),
+P(1/2)=1-11/(4sqrt6)!=0: equality would imply96=121. No floating comparison
+is needed. A positive singleton potential coefficient and0<=eta<1/2 therefore
+force W>=V>=constant X^(1/2-eta)/H^4 at all sufficiently large dyadicX.
+An all-cofinal innovation estimate implies W=O_q(X^(1/q)). Chooseq>=q0 with
+1/q<1/2-eta; the lower bound contradicts it along dyadicX. The same conclusion
+holds if fixedeta<0 were allowed, but the stage's admittedeta are0 and1/3.
+No single finite failure or finite-fit constant is used in this contradiction.
+
+8. Admission limits.
+This derivation certifies only the exact singleton component2, phi1/2,
+theta>=1/3, actualc, a fixed finite filter withP(1/2)!=0, positive potential
+weight andeta<1/2. A signed linear combination of components may cancel this
+leading term and needs separate analysis; P(1/2)=0 removes the leading term
+and is outside this proof. This posthoc theorem is not an edit to frozen
+candidate formulas or a promotion of any prose-only result. The independent
+review must confirm candidatefeature membership and all remainder estimates
+before marking an original global claim refuted. Dense signed total-prefix
+correlation and RH-strength critical energy remain unproved.

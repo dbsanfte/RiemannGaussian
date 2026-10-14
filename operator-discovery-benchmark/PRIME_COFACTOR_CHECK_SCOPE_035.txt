@@ -1,0 +1,301 @@
+INDEPENDENT PRIME/COFACTOR CLOSURE AND BOUND-ADMISSION SCOPE — stage035
+
+Disposition
+
+Actual prime/cofactor states address a real mismatch exposed by034: digit
+sections closed for recursive benchmarks but did not close for the complete
+arithmetic source. A detector may generate scalar prime-power sections,
+infer parameterized relations, and submit them to an exact Euler-factor
+verifier. This is a meaningful new arithmetic identity capability.
+
+It does not convert coefficient closure into prefix cancellation. An honest
+implementation needs separate admission boundaries for exact source laws,
+prefix recovery, local operator estimates, and a complete uniform bound.
+No source-dependent successful state list, relation, metric, exponent or
+winner is nominated in this memo. Source Euler primitives are definitions;
+the detector must produce the useful construction and proof certificate.
+
+Read-only inputs: MULTISCALE_BOUND_DISCOVERY_HANDOFF.txt and034 protocol;
+OCCUPANCY_TRANSFER_HANDOFF.txt, OCCUPANCY_TRANSFER_REVIEW_001.txt;
+PRIME_EXCHANGE_HANDOFF.txt, PRIME_EXCHANGE_KERNEL_REVIEW_001.txt;
+CORE_SIGNED_PRIMITIVE_SEARCH_HANDOFF.txt and Review029. I inspected the
+source-only034 archive adapter, not its archive or any sample values.
+This memo is the sole new file for this audit. No tests, source scoring,
+numerical observations, old suite/study, hash or frozen edit was performed.
+
+1. Exact original source, unit and distinct meanings of multiplication
+
+The source is the COMPLETE positive-integer coefficient sequence
+ f=(9/2)K*(mu*mu)-(9/2)K*(mu*mu_(2/3))
+                       -R_u*K*mu_(2/3)-(9/2)mu,
+ K(n)=n^(-1/3), mu_(2/3)(n)=mu(n)n^(-2/3).
+Every star above is DIRICHLET convolution. Pointwise multiplying a channel
+by K(n), or taking a pointwise cube, changes the source.
+
+Each of its four primitive channels is multiplicative. Their signed sum
+is not generally multiplicative. A cofactor proof must retain all four
+channel contributions and the exact inherited constant R_u. If observations
+use x(n)=f(n+1), the actual source index is one greater: the cofactor unit
+is f(1)=-(9/2)-R_u. It is not zero and must not be discarded.
+
+Older exchange/occupancy reviews use a decomposed coefficient a with its
+same-prime contribution removed. Statements a(1)=a(p^e)=0 and their fresh-
+prime transfer multipliers do NOT become laws for the current full f.
+The corresponding signed centers, removed component, exits and recovery
+would have to be restored explicitly before such an alternative is admitted.
+
+The original source, g=f-e, the inherited paid components and opposite
+analytic drifts, all144 channel/transport bindings and their constants/log
+budgets remain authoritative. A direct f bound is an alternative route,
+not a silently changed residual Z033 or a free transfer to every old norm.
+
+2. Neutral exact source compiler; no supplied successful state basis
+
+Let p be an actual prime and q=p^(-1/6). The verifier can independently
+compile the source AST into local formal power series in z, with q and
+R_u treated symbolically. The neutral atom definitions are
+ mu: 1-z;
+ mu_(2/3): 1-q^4 z;
+ K: 1/(1-q^2 z);
+ delta: 1.
+Dirichlet convolution multiplies local series; rational scalar addition
+and the inherited signed R_u term remain separate source operations.
+This compiler belongs to proof checking. It need not expose a successful
+scalar-state decomposition to the discovery routine.
+
+For p not dividing m, a multiplicative atom/channel satisfies its exact
+Euler cofactor decomposition. Thus any detector-generated scalar expression
+f(p^e m) can be compiled to a row acting on complete p-free cofactor data.
+An identity whose FULL row difference is identically zero is sufficient
+for every allowed m and every actual prime. It is stronger than equality
+only on the actual cofactor values; failure of this strong row test means
+not proved in this verifier, not automatically an arithmetic counterexample.
+
+All-prime identity admission must be a polynomial/rational identity, or a
+proved recurrence for the entire valuation series. Checking finitely many
+primes, finitely many e, or a long numerical training range is insufficient.
+Generating-function clearing of denominators must preserve the formal
+series' unit and all low-valuation coefficients. A rational local factor
+with denominator constant coefficient1 defines its complete formal series;
+the checker must not truncate its nonzero valuation tail as if mu itself
+were the whole channel.
+
+If additional relations between actual cofactor rows are needed, provide
+their own complete source proof. They cannot be assumed from sample rank.
+An exact generic-row rejection or coefficient mismatch is a formal witness.
+Only a certified admissible prime/cofactor/valuation with unequal actual
+values is an arithmetic counterexample. R_u remains the exact source
+constant; a fitted rational approximation cannot supply either conclusion.
+
+3. Parameter and valuation domains
+
+Every law states p prime, p>=2, m>=1 and gcd(p,m)=1. If a source index is
+already divisible by p, its ACTUAL valuation must be folded into e.
+Fresh-prime, valuation-one and arbitrary-valuation laws are different types.
+When another prime is introduced, retain distinctness and every coprime
+guard that the local law requires. Cofactors may be squareful and may share
+other primes; this cannot be replaced by an undocumented squarefree model.
+
+q is positive with q^6=1/p and q<=2^(-1/6). The rational outer interval
+0<q<=9/10 safely contains all actual primes, since (9/10)^6>1/2.
+The endpoint q=0 is only a limiting parameter, not an actual prime. It is
+useful for uniform polynomial certification, but cannot make q^(-a) bounded.
+
+Every normalization/division needs a licensed nonzero denominator on the
+entire domain. Source formal-series denominators are distinct from numerical
+denominators used in a norm estimate. For the latter, check positivity or
+nonvanishing explicitly and pay any deterioration as p or the cutoff grows.
+Do not divide by R_u or a candidate state value without an inherited proof
+that it cannot vanish. Avoid replacing the exact parameter relation by an
+arbitrary polynomial interpolation convention.
+
+The search may propose rational/polynomial laws from observations, but each
+coefficient and each inferred zero must be admitted exactly. Interval overlap
+is an observation check, not equality. Approximate least squares, rational
+denominator caps and finite failures establish only discovery limits.
+
+4. Prefix recovery is a separate complete identity
+
+For a fixed prime, decompose the complete prefix into every valuation with
+the cofactor boundary floor(N/p^e), including e=0 and the m=1 unit. The
+p-free prefix state is part of the identity, not a proved smaller remainder.
+Its smooth/rough restriction and every floor remain explicit.
+
+To sum across primes, give an exact allocation of every integer coefficient:
+a canonical prime choice, or a complete multiplicity correction and any
+unallocated complement. A coefficient with several allowable labels must
+not be counted repeatedly. Restricting to valuation-one labels does not
+cover powerful numbers. Multiple prime valuations in convolution channels
+can survive even when the underlying mu at that index is zero.
+
+For energy, expand the entire prefix square or licensed equivalent norm.
+Keep equal-prime and distinct-prime pairs, both orientations, all higher
+valuations, all cofactor overlaps, all center crosses and the deterministic
+center square. A local cofactor identity does not preserve prefix membership.
+The transformed index has its own indicator; differences create actual
+moving faces and exits, including terms outside the old orientation.
+
+For a largest-prime allocation, the cofactor's largest prime must be smaller
+than the label, not merely coprime. For a free-label allocation the changed
+support/multiplicity must be carried. Neither convention gives independent
+prime/cofactor samples or an unconditional cancellation estimate.
+
+Retain EVERY partial integer cutoff required by the target. An endpoint
+orbit, a fixed prime-set Euler product, a weighted signed sum or an aligned
+prime-power chain does not pay its unweighted or arbitrary-prefix target.
+Undoing variable weights requires the exact signed Abel identity and all
+partial cutoffs, with its complete amplification and head costs.
+
+5. Viable local norm interface, with a precise remaining input
+
+One sound supplied norm rule is a fixed-prime dilation operator in weighted
+logarithmic L2. Let H(x) be the complete p-free vector prefix, zero below1,
+and let T_e(p) be the admitted valuation matrices in a discovered basis.
+The exact full vector prefix is
+ F(x)=sum_(e>=0) T_e(p) H(x/p^e).
+For fixed sigma>0 and fixed Hermitian Q>=0, a complete circle certificate
+ T(p,p^(-sigma)*xi)^* Q T(p,p^(-sigma)*xi)<=kappa(p) Q,
+ EVERY |xi|=1,
+admits the associated operator bound in the measure x^(-2sigma) dx/x.
+All coefficients and tails of T are included. A zero-phase scalar test is
+not this circle inequality.
+
+For a finite T0, first extend H*1_(x<=T0) by zero above T0. Its causal
+dilation convolution agrees with the original F on x<=T0. Global Fourier/
+Plancherel gives the bound for this full convolution, and restricting the
+output to x<=T0 only decreases its positive norm. This justifies finite
+prefix use without incorrectly asserting the truncated input identity at
+x>T0. The ENTIRE p-free input norm remains a proof dependency.
+
+For discrete whole-prefix energy through N, take T0=N+1 so the last integer
+cell is retained. Since the prefix is constant on [n,n+1),
+ sum_(1<=n<=N)|F(n)|^2
+ <=(N+1)^(2sigma+1)*integral_1^(N+1)|F(x)|^2 x^(-2sigma)dx/x.
+The original N^-2 normalization and all subsequent Hardy/Abel channels
+then have their explicit powers and constants. A continuous norm on the
+wrong horizon cannot silently become a discrete endpoint estimate.
+
+Target recovery is separate: prove row domination r^*r<=C Q on the proved
+state domain. A singular Q can be sound when it still dominates the target;
+it cannot ignore a target-visible mode for free. Positive definiteness alone
+does not bound the unproved input norm or its base value.
+
+This is a component operator theorem, not a full-source payment. It can be
+useful output even when the p-free input, its uniformity or multi-prime
+recovery remains OPEN. Report the missing dependency precisely.
+
+6. Important norm obstructions and changing-state gates
+
+The current primitive channels have divisor-growth envelopes, not the
+row-contractive recursive-source bound used by034. New scalar sections do
+not inherit |x|<=one fixed constant merely because their laws are exact.
+A coefficient envelope and every weight/divisor cost must be proved first.
+
+Review028/029's endpoint debt also remains: an identity yielding the desired
+energy as its own potential endpoint is an exact restatement. The endpoint,
+unit height integral and residual all require independent paid providers.
+Cheap bounded harmonic coordinates do not dominate an unrelated critical
+Dirichlet-polynomial state without an actual recovery/coercivity proof.
+
+A per-prime zero-phase contraction need not hold for all logarithmic
+frequencies. The rational local operators possess target-visible modes
+whose opposing phase has amplification rather than contraction. The backend
+is separately certifying that local operator obstruction. It excludes the
+specified full formal-state contraction shape, not the actual arithmetic
+correlation or every coupled signed argument.
+
+If the metric Q(p), basis B(p), or observable quotient R(p) changes with
+the prime, retain the exact OLD/NEW metric and coordinate conversion.
+Individual inequalities in separately normalized coordinates do not chain
+without paying their conversion. A changing potential coefficient also
+has a drift; it is not fixed storage merely because each isolated prime
+admits a nice formula.
+
+A fixed common observable quotient can be generated from the target row
+under all coefficient matrices of the parameterized family. The verifier
+may accept it by exact simultaneous invariance. This controls algebraic
+visibility; it still does not prove prefix cancellation. The034 single
+matrix phase argument must not be copied onto noncommuting or changing
+operators without its full product proof.
+
+Removing a growing prime set pays EVERY local factor and every remaining
+input norm. Fixed-prime boundedness is not a uniform growing-set constant.
+Products of inverse factors, branch counts, path/congestion weights and
+cutoff faces stay in the final exponent/log cost. A PNT estimate, if used,
+is an explicit theorem premise, not implied by the Euler identities.
+
+7. Proposed exact checker schema and status separation
+
+Input source_binding:
+ immutable parent reference; exact original signed AST; four source scalars;
+ K and shifted-mu definitions; positive-integer/unit convention; R_u source
+ provenance; original target norm/quantifiers; all inherited recovery routes.
+
+Candidate state_program:
+ detector-generated state ASTs; source index maps; parameter ring and domain;
+ fresh/valuation/cofactor guards; complete valuation initialization and tails;
+ observations and rejection trace stored separately from proof evidence.
+
+Coefficient-law certificate:
+ declared lhs/rhs ASTs and all domains; compiled source rows or full rational
+ local series; exact cleared numerator identities; denominator/series gates;
+ low-valuation/unit recovery; topological premises with no open dependencies.
+
+Prefix-recovery certificate:
+ exact every-index allocation; valuation sums and all floors; all prime-set
+ restrictions/multiplicities; every transported mask/exit and complement;
+ explicit complete signed center/error identity; original target recovery.
+
+Uniform-bound certificate:
+ typed observable (coefficient, prefix, positive norm, signed work or energy);
+ exact metric/target domination; circle/interval polynomial witnesses;
+ endpoint/state/source providers; all parameter changes and product costs;
+ complete uniform quantifiers, constants, exponents/logs and proof DAG.
+
+Possible APIs, independent of producer search:
+ verify_laws(source_binding,state_program,law_certificate,meter);
+ verify_recovery(parent,laws,prefix_certificate,meter);
+ verify_bound(parent,recovery,proof_DAG,meter);
+ verify_feedback(parent,result,output,artifact,meter).
+The root may combine these APIs, but their statuses must stay distinct.
+
+Law success: all_prime_coefficient_closure_proved=true, and no automatic
+prefix/energy/core payment. A valid local norm transfer has a separately
+typed component_operator_bound_proved flag and explicit unpaid input.
+Uniform target success requires a complete original-source proof DAG with
+no open premise and no circular use of the target, its equivalent endpoint
+or its requested correlation. Failed finite search is OPEN/UNSUPPORTED,
+not a proof of impossibility. Formal norm/linear-language exclusions are
+explicitly scoped to their domains.
+
+8. Meaningful adversarial tests for the later implementation
+
+Source mutations: dropped signed channel, fitted R_u, wrong K multiplication,
+erased unit, prime-power tail truncated, old decomposed-a law relabeled as f.
+Domain mutations: composite label, already-divisible cofactor, repeated prime
+miscalled fresh, omitted lower valuation, unlicensed parameter division.
+Identity controls: finite-prime interpolation aliases and long valuation
+aliases; false generic-row claim without an admissible actual counterexample.
+Recovery mutations: duplicate prime labels, missing powerful complement,
+missing equal-label pair or reverse orientation, omitted moving face,
+endpoint-only partial recovery, weight inversion without signed Abel cost.
+Norm mutations: zero-phase in place of the complete circle, singular metric
+losing target recovery, ignored basis change, unpaid p-free input, dropped
+unit integral or final discrete cell, growing prime-set constant declared fixed.
+Dependency mutations: target-as-endpoint, cyclic graph, paid node depending
+on an open norm, and synthetic closure relabeled as actual core/RH proof.
+
+These tests should use tiny synthetic arithmetic definitions and symbolic
+laws. Actual observations begin only in the frozen runner; withheld numerical
+functionals are still observations, not universal proof premises.
+
+Conclusion
+
+The next detector can genuinely propose and certify all-prime coefficient
+laws, with their successful states and relations produced by execution.
+It should then attempt explicitly licensed prefix/norm arguments on those
+states and save complete unsuccessful costs and missing signed controls.
+Learning local arithmetic laws is a worthwhile mechanism extension, but
+calling that closure a cancellation bound would repeat the exact gap that
+the034 arithmetic attempt exposed. The complete signed core remains open
+until its global correlations and recovery are independently paid.

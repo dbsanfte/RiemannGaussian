@@ -1,0 +1,1349 @@
+{
+  "rho_certificate": {
+    "mesh": 64,
+    "bits": 40,
+    "log_terms": 32,
+    "lower_log_three": "75496061613/68719476736",
+    "upper_riemann_summands": [
+      "66073773/549755813888",
+      "130129987/549755813888",
+      "384489447/1099511627776",
+      "126245221/274877906944",
+      "621872379/1099511627776",
+      "735295601/1099511627776",
+      "26418005/34359738368",
+      "952233951/1099511627776",
+      "527991735/549755813888",
+      "289183529/274877906944",
+      "1254590467/1099511627776",
+      "1349652541/1099511627776",
+      "1442016039/1099511627776",
+      "1531772571/1099511627776",
+      "1619009875/1099511627776",
+      "851906005/549755813888",
+      "1786259549/1099511627776",
+      "933214877/549755813888",
+      "1944396741/1099511627776",
+      "2020231637/1099511627776",
+      "2094002725/1099511627776",
+      "2165775585/1099511627776",
+      "2235613221/1099511627776",
+      "2303576187/1099511627776",
+      "1184861349/549755813888",
+      "2434108745/1099511627776",
+      "1248394097/549755813888",
+      "1278906443/549755813888",
+      "2617232727/1099511627776",
+      "1337547889/549755813888",
+      "1365724167/549755813888",
+      "2786335007/1099511627776",
+      "2839798795/1099511627776",
+      "2891881155/1099511627776",
+      "2942622071/1099511627776",
+      "1496030057/549755813888",
+      "380029063/137438953472",
+      "3087175167/1099511627776",
+      "783230697/274877906944",
+      "3177508863/1099511627776",
+      "3220965749/1099511627776",
+      "1631662355/549755813888",
+      "1652307981/549755813888",
+      "3344868711/1099511627776",
+      "3384111201/1099511627776",
+      "3422370745/1099511627776",
+      "1729836883/549755813888",
+      "1748022915/549755813888",
+      "1765755839/549755813888",
+      "3566095263/1099511627776",
+      "1799909887/549755813888",
+      "908176917/274877906944",
+      "3664780697/1099511627776",
+      "115501873/34359738368",
+      "3726565807/1099511627776",
+      "939079525/274877906944",
+      "3785336003/1099511627776",
+      "3813638119/1099511627776",
+      "3841242487/1099511627776",
+      "1934083303/549755813888",
+      "1947213725/549755813888",
+      "3920041491/1099511627776",
+      "493128089/137438953472",
+      "1984696315/549755813888"
+    ],
+    "rho_three_upper": "55421005319/1099511627776"
+  },
+  "admissions": [
+    {
+      "candidate": "q1_p16_q1_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-55421005319/384829069721600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q1_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "55421005319/384829069721600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q1_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-1/350",
+            "1/350",
+            "0"
+          ],
+          [
+            "-2143602250233/769658139443200",
+            "1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "leading_upper": "-184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q1_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "1/350",
+            "-1/350",
+            "0"
+          ],
+          [
+            "2143602250233/769658139443200",
+            "-1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "leading_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q129_128_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-55421005319/384829069721600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q129_128_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "55421005319/384829069721600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q129_128_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-1/350",
+            "1/350",
+            "0"
+          ],
+          [
+            "-2143602250233/769658139443200",
+            "1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "leading_upper": "-184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q129_128_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "1/350",
+            "-1/350",
+            "0"
+          ],
+          [
+            "2143602250233/769658139443200",
+            "-1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "leading_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q33_32_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-55421005319/384829069721600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q33_32_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "55421005319/384829069721600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "55421005319/384829069721600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57173,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q33_32_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-1/350",
+            "1/350",
+            "0"
+          ],
+          [
+            "-2143602250233/769658139443200",
+            "1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "leading_upper": "-184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p16_q33_32_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-1/40",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "1/350",
+            "-1/350",
+            "0"
+          ],
+          [
+            "2143602250233/769658139443200",
+            "-1/350",
+            "0"
+          ]
+        ],
+        "leading_lower": "184040588863317240425564394807975672540632100988014605617075920697697548824467677836124464421154410992682789271994512657281721/145021777809888704439894746018364007818931453683755144348694665106772895555822040291359925617773279937733988610913636313989120000",
+        "leading_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/5072943790760945741143962830754949832538402415025482568639908483586234893658143297053844071964329204923020111713750",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "33870938349156569862233140520659737445035600853142356057275363659045444016586543788393223973950698472237149436749283394534854890337171370663150273446745781216964303974717977143683491677404291168825359307500455902182731712674837671924331849564760721841/84125264156562911344489460401699335141752111475296938482649375002515742373875442359593997267525474346083402084647768161991454933037298275691471564209804271527091849476410102683170270443385879211891101689883548712679389046825627208344103479229913497600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57183,
+        "peak_bytes": 393984,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q1_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-1558604932586237/9457559217478041600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q1_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "1558604932586237/9457559217478041600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q1_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-28123/8601600",
+            "28123/8601600",
+            "0"
+          ],
+          [
+            "-20094842027767553/6305039478318694400",
+            "28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "-191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "leading_upper": "-5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q1_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "28123/8601600",
+            "-28123/8601600",
+            "0"
+          ],
+          [
+            "20094842027767553/6305039478318694400",
+            "-28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "leading_upper": "191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q129_128_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-1558604932586237/9457559217478041600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q129_128_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "1558604932586237/9457559217478041600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q129_128_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-28123/8601600",
+            "28123/8601600",
+            "0"
+          ],
+          [
+            "-20094842027767553/6305039478318694400",
+            "28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "-191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "leading_upper": "-5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q129_128_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "28123/8601600",
+            "-28123/8601600",
+            "0"
+          ],
+          [
+            "20094842027767553/6305039478318694400",
+            "-28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "leading_upper": "191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q33_32_baseline",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "-1558604932586237/9457559217478041600",
+        "leading_upper": "0",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "1",
+        "rho_multiplier_upper": "1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q33_32_baseline",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1558604932586237/9457559217478041600",
+            "0",
+            "0"
+          ]
+        ],
+        "leading_lower": "0",
+        "leading_upper": "1558604932586237/9457559217478041600",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "strict_positive_rho_reason": true,
+        "numerical_nonzero_lower_bound_supplied": false,
+        "rho_multiplier_lower": "-1",
+        "rho_multiplier_upper": "-1",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Nonzero fixed leading coefficient from rho(s)>0, although closed enclosure touches0; total signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "formal_theorem_prover_checked": false,
+        "ops": 57269,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q33_32_promoted",
+      "leaf": 0,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "-28123/8601600",
+            "28123/8601600",
+            "0"
+          ],
+          [
+            "-20094842027767553/6305039478318694400",
+            "28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "-191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "leading_upper": "-5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    },
+    {
+      "candidate": "q1_p04_q33_32_promoted",
+      "leaf": 1,
+      "admission": {
+        "uniform_covariance_leaf_obstructed": true,
+        "mass": "-28123/983040",
+        "delta": "8/35",
+        "rho_three_upper": "55421005319/1099511627776",
+        "rho_endpoint_polynomials": [
+          [
+            "28123/8601600",
+            "-28123/8601600",
+            "0"
+          ],
+          [
+            "20094842027767553/6305039478318694400",
+            "-28123/8601600",
+            "0"
+          ]
+        ],
+        "leading_lower": "5175773480603070752488147475184699838860196576085934753769026117781348165590504503785328312916125500347218082696301679460733839683/3564055211455824800314853278147313856158059405731966427513520089664050681179882462200461531982396127749750504101813526052596613120000",
+        "leading_upper": "191324505287815544547201352614659830758261287820194200270594849468355825341174058598395713271738777080660676235119047/124672666601741002534354030528633647084463777751666259606894390892615308746542529668395271912595354540188142265477120000",
+        "status": "VERIFIED_FULL_MODE_OBSTRUCTION",
+        "eventual_square_lower_coefficient": "26788631122514025614947289765286475489597122231145358888131188332551930825912625381535714723395421913427881119565595825245358232328620702066704356266236853232046495894911585015489756153304512483451043930851383741962840441322058074292029511055126543040345540489/50809958201221696123752603127779234458264368536376874438236349400559457515446997928248493920584648069841199668403492053379530664369962412197321240461807200920776113178187891102718178912255624007961044135049087217569185756318595832355176950306103806779824537600000000",
+        "q_scope": "every1<=q<2 and every fixed finite kappa",
+        "conclusion": "Full fixed-log covariance leaf impossible on all integers; signed residual unrefuted",
+        "source_kernel_binding_still_required": true,
+        "coefficient_norm_admission_still_required": true,
+        "imported_theorems": [
+          {
+            "name": "Classical Prime Number Theorem",
+            "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+          },
+          {
+            "name": "Quantitative Mertens decay",
+            "url": "https://arxiv.org/abs/2208.06141v5"
+          }
+        ],
+        "reviewed_analytic_derivation": "A(x,x^(1/U))~-rho(U-1)*x/logx; fixedP coprime total=o(x/logx); signature[-1,r0,1-L-r0,L] on[1,7,8,9], r0=rho(3/gamma-1)",
+        "formal_theorem_prover_checked": false,
+        "ops": 57279,
+        "peak_bytes": 660992,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_bound_proved": false,
+        "RH_proved": false,
+        "source_admission_still_required": true,
+        "arithmetic_residual_refuted": false,
+        "residual_lower_bound_proved": false,
+        "finite_u_threshold_supplied": false
+      }
+    }
+  ]
+}

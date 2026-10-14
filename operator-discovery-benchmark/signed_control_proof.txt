@@ -1,0 +1,98 @@
+SIGNED ARITHMETIC CONTROL THROUGH LEARNED SCALE OPERATORS
+User-directed target: RH via provable cancellation. Historical priority is
+an annotation. No sublinear uniform estimate or RH proof is asserted here.
+
+1. THE SIGNED ARITHMETIC TARGET AND ITS ORDINARY-ZETA BRIDGE
+
+Let mu be the Dirichlet inverse of the constant-one arithmetic sequence,
+M(n)=sum_(j<=n)mu(j), and M_tilde the linear interpolation with M_tilde(0)=0.
+The elementary prime-factor expansion of the inverse gives |mu(n)|<=1,
+so M_tilde is 1-Lipschitz and |M_tilde(t)|<=t. Coefficient production by
+triangular divisor inversion does not require a prime/factor oracle.
+
+For rational coefficients a_d and integer divisors d>=2, define
+ R_a(t)=M_tilde(t)-sum_d a_d M_tilde(t/d).
+It is L-Lipschitz, L=1+sum|a_d|/d, and |R_a(t)|<=L*t. This is a signed
+sum before any absolute value is taken. Moments of R_a measure cancellation
+in the cumulative arithmetic target, not only individual coefficient size.
+
+For the step cumulative sum, absolutely convergent integration gives
+ integral_1^infinity M_step(t)t^(-s-1)dt=1/(s*zeta(s)), Re(s)>1.
+The interpolation error is bounded by one, so its Mellin transform is
+holomorphic on Re(s)>0. Substituting t/d introduces additional integrals on
+[1/d,1], which are entire functions of s. Thus
+ Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s),
+ F_a(s)=1-sum_d a_d*d^(-s), H_a holomorphic for Re(s)>0.
+If kappa_(1/2)=sum|a_d|/sqrt(d)<1, the triangle inequality proves
+ |F_a(s)|>=1-kappa_(1/2)>0 for EVERY complex s with Re(s)>=1/2.
+This is an all-height obstruction-preservation certificate, not a check at
+only a finite list of zeros. Unknown zeros retain their ordinary-zeta poles.
+
+2. A MOMENT PREMISE IMPLIES A POINTWISE SIGNED BOUND
+
+Fix even q>=2. Suppose, for EVERY dyadic X>=1,
+ A_q(X)=integral_X^(2X)|R_a(t)|^q dt <= C*X^beta.
+For any T in [X,2X], let h=|R_a(T)|. Since h<=2L*X, h/(4L)<=X/2.
+At least one direction from T has room X/2 inside [X,2X]. Along the first
+h/(4L) in that direction, Lipschitz continuity gives |R_a(t)|>=3h/4>=h/2.
+Consequently
+ A_q(X)>=h^(q+1)/(2^(q+2)*L),
+ |R_a(T)|<=(2^(q+2)*L*C)^(1/(q+1))*X^(beta/(q+1)).
+This includes interval endpoints using the available inward direction.
+Dyadic intervals cover all T>=1. All constants and parameter costs remain.
+
+3. TRANSFER THE RESIDUAL BOUND BACK TO THE ORIGINAL SIGNED SUM
+
+Write theta=beta/(q+1), 0<theta<=1. If
+ kappa_theta=sum|a_d|/d^theta<1,
+the identity M_tilde(t)=R_a(t)+sum a_d M_tilde(t/d) gives, by induction on
+the dyadic scale and the initial bound |M_tilde(t)|<=t<=t^theta for 0<t<=1,
+ |M_tilde(t)| <= max(1,C_R/(1-kappa_theta))*t^theta,
+ C_R=(2^(q+2)*L*C)^(1/(q+1)).
+Indeed each recursive argument t/d lies in the preceding dyadic range.
+The triangle inequality gives C_R+kappa_theta*B<=B whenever
+B>=C_R/(1-kappa_theta). The finite induction proves the bound at every t.
+The step function differs by at most one. Its Mellin integral then continues
+holomorphically to Re(s)>theta. Hence 1/zeta(s) is holomorphic there, excluding
+ordinary-zeta zeros in that region. The zero-free Re(s)>1 and reflection of
+nontrivial zeros are classical dependencies already audited by this project.
+
+Alternatively the direct nonvanishing F_a bridge suffices to reject a uniform
+moment claim with theta<1/2 when a certified critical-line zero is visible.
+This rejection does not require kappa_theta<1 below the critical line.
+
+4. WHAT WOULD PROVE RH, AND WHAT A FINITE PILOT CANNOT PROVE
+
+For example, uniform bounds beta_q=q/2+1+epsilon at arbitrarily large even q
+yield theta_q=1/2+(1/2+epsilon)/(q+1)->1/2. With certified inverse costs for
+each q, they exclude every zero strictly right of 1/2. Reflection then gives
+RH. Constants may depend on q and epsilon, but must be finite and valid at
+every scale. A fixed finite set q=2,4,6,8 cannot establish this limiting family.
+Other inferred exponent families may work; the search does not assert this
+example as an expected numerical answer. Exponents are fitted from data.
+
+The available unconditional elementary certificate is only
+ A_q(X)<=L^q*(2^(q+1)-1)/(q+1)*X^(q+1).
+Its transferred exponent is one. Learning a smaller exponent from finite
+windows leaves an explicit missing uniform signed-cancellation premise.
+Search success, fresh held-out windows and unusual coefficients do not
+discharge that premise. The main completion count for sublinear controls
+remains zero until an independently verified all-scale proof exists.
+
+5. FINITE SEMANTICS AND INDEPENDENT VERIFICATION
+
+Integer d means every R_a breakpoint is an integer. On [n,n+1] it is linear.
+After clearing one common denominator D, endpoints are integers x,y and
+ integral_n^(n+1) R_a(t)^q dt
+ =sum_(j=0..q)x^(q-j)*y^j/[(q+1)*D^q], even q.
+Production uses the divided difference (y^(q+1)-x^(q+1))/(y-x), with its
+continuous value at x=y. The independent checker uses the homogeneous
+recurrence h_0=1,h_1=x+y,h_q=(x+y)h_(q-1)-x*y*h_(q-2).
+Every unit interval of the reported final windows is included.
+
+Development uses declared random sampled cells; those estimates are labelled
+sampled, not exact window integrals. Candidate batches are frozen before
+validation, archives sealed before evaluator-owned fresh final cases, and no
+final outcome changes selection. Generic positive and delayed-positive
+controls test false finite-pattern extrapolation. No prime labels or historical
+novelty scores are supplied to the learner.

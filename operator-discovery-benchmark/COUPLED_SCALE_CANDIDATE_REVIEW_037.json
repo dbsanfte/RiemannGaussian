@@ -1,0 +1,680 @@
+{
+  "schema": "coupled-scale-candidate-analytical-review-v1",
+  "source_binding": {
+    "channels": [
+      {
+        "atoms": [
+          {
+            "kind": "power",
+            "shift": 2
+          },
+          {
+            "kind": "mu",
+            "shift": 0
+          },
+          {
+            "kind": "mu",
+            "shift": 0
+          }
+        ],
+        "weight": [
+          "9/2",
+          "0"
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "kind": "power",
+            "shift": 2
+          },
+          {
+            "kind": "mu",
+            "shift": 0
+          },
+          {
+            "kind": "mu",
+            "shift": 4
+          }
+        ],
+        "weight": [
+          "-9/2",
+          "0"
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "kind": "power",
+            "shift": 2
+          },
+          {
+            "kind": "mu",
+            "shift": 4
+          }
+        ],
+        "weight": [
+          "0",
+          "-1"
+        ]
+      },
+      {
+        "atoms": [
+          {
+            "kind": "mu",
+            "shift": 0
+          }
+        ],
+        "weight": [
+          "-9/2",
+          "0"
+        ]
+      }
+    ],
+    "lattice": 6
+  },
+  "state_programs": [
+    {
+      "program": {
+        "op": "source"
+      },
+      "row": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "program": {
+        "degree": 0,
+        "op": "jet",
+        "parent": 0,
+        "scale": "-1/2",
+        "valuation": 1
+      },
+      "row": [
+        "1",
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "program": {
+        "degree": 2,
+        "op": "jet",
+        "parent": 0,
+        "scale": "1",
+        "valuation": 1
+      },
+      "row": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "program": {
+        "degree": 4,
+        "op": "jet",
+        "parent": 0,
+        "scale": "-1",
+        "valuation": 1
+      },
+      "row": [
+        "0",
+        "1",
+        "1",
+        "0"
+      ]
+    }
+  ],
+  "beta": "9/2",
+  "R_u_definition": "(9/2)*(zeta(4/3)/zeta(2/3)^2-1/zeta(2/3))",
+  "R_u_envelope": [
+    "1",
+    "5"
+  ],
+  "helper_definition": "A_i(t;y)=0 for t<1; otherwise h_i(1)+sum_(y<p<=t,p prime)h_i(p)",
+  "cutoff": "y_X=ceil(sqrt(2X))",
+  "prime_profiles": [
+    {
+      "state": 1,
+      "unit": {
+        "beta": "0",
+        "R": "0"
+      },
+      "prime_polynomial": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1/3",
+          "1/2",
+          "0"
+        ],
+        [
+          "2/3",
+          "1/2",
+          "0"
+        ]
+      ],
+      "coefficient_variables": [
+        "beta",
+        "R_u"
+      ],
+      "prime_sign": "strictly_negative",
+      "prime_absolute_bound": "beta"
+    },
+    {
+      "state": 2,
+      "unit": {
+        "beta": "0",
+        "R": "-1"
+      },
+      "prime_polynomial": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1/3",
+          "0",
+          "-1"
+        ],
+        [
+          "2/3",
+          "1",
+          "1"
+        ]
+      ],
+      "coefficient_variables": [
+        "beta",
+        "R_u"
+      ],
+      "prime_sign": "strictly_negative"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate": {
+        "id": "compensator_02",
+        "program": [
+          {
+            "coefficient": "1/2",
+            "divisor": 1,
+            "exponent": "9/14",
+            "state": 1
+          },
+          {
+            "coefficient": "1/2",
+            "divisor": 3,
+            "exponent": "1/2",
+            "state": 1
+          }
+        ],
+        "recurrence_C": "1/64"
+      },
+      "helper_decay": {
+        "theorem_status": "PROVED_IN_ANALYTICAL_REVIEW",
+        "executable_certificate_admitted": false,
+        "definition": "X^(-2)*sum_(n=X..2X-1)abs(H_X(n))^2",
+        "upper_terms": [
+          {
+            "coefficient": "162",
+            "X_power": "-2/7",
+            "log2_constant_power": 0,
+            "log_2X_power": 0
+          },
+          {
+            "coefficient": "288",
+            "X_power": "0",
+            "log2_constant_power": 2,
+            "log_2X_power": -2
+          }
+        ],
+        "domain": "every integer X>=1",
+        "limit": "0",
+        "constant_independent_of_X_and_cutoffs": true,
+        "dependencies": [
+          "accepted035_source_state_laws",
+          "accepted037_helper_magnitude_prices",
+          "elementary_binomial_prime_upper_bound"
+        ]
+      },
+      "correlation_residual": {
+        "status": "OPEN",
+        "domain": "every dyadic integer X>=1",
+        "left_terms": [
+          {
+            "kind": "full_source_energy",
+            "scale": 2,
+            "coefficient": "1"
+          },
+          {
+            "kind": "full_source_energy",
+            "scale": 1,
+            "coefficient": "-1"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 2,
+            "state": 1,
+            "divisor": 1,
+            "coefficient": "1",
+            "X_power": "-9/14",
+            "scale_power": "-9/14"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 1,
+            "state": 1,
+            "divisor": 1,
+            "coefficient": "-1",
+            "X_power": "-9/14",
+            "scale_power": "-9/14"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 2,
+            "state": 1,
+            "divisor": 3,
+            "coefficient": "1",
+            "X_power": "-1/2",
+            "scale_power": "-1/2"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 1,
+            "state": 1,
+            "divisor": 3,
+            "coefficient": "-1",
+            "X_power": "-1/2",
+            "scale_power": "-1/2"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 1
+            },
+            "coefficient": "1/4",
+            "X_power": "-9/7",
+            "scale_power": "-9/7"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 1
+            },
+            "coefficient": "-1/4",
+            "X_power": "-9/7",
+            "scale_power": "-9/7"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 3
+            },
+            "coefficient": "1/2",
+            "X_power": "-8/7",
+            "scale_power": "-8/7"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 3
+            },
+            "coefficient": "-1/2",
+            "X_power": "-8/7",
+            "scale_power": "-8/7"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 1,
+              "divisor": 3
+            },
+            "right": {
+              "state": 1,
+              "divisor": 3
+            },
+            "coefficient": "1/4",
+            "X_power": "-1",
+            "scale_power": "-1"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 1,
+              "divisor": 3
+            },
+            "right": {
+              "state": 1,
+              "divisor": 3
+            },
+            "coefficient": "-1/4",
+            "X_power": "-1",
+            "scale_power": "-1"
+          }
+        ],
+        "right": {
+          "kind": "complete_coefficient_square_forcing",
+          "coefficient": "1/64",
+          "definition": "X^(-1)*sum_(k=1..4X-1)f(k)^2"
+        },
+        "target_prefix_is_complete": true,
+        "units_retained": true,
+        "all_source_helper_and_helper_helper_crosses": true,
+        "each_scale_uses_its_own_cutoff": true,
+        "child_odd_endpoint_retained": true,
+        "no_independent_provider_for_complete_left_side": true
+      },
+      "recurrence_proved": false,
+      "consequence": {
+        "helper_norm": "vanishes",
+        "sqrt_energy_distance": "abs(sqrt(E_G)-sqrt(E_F))<=sqrt(E_H)",
+        "conditional_endpoint_obstruction": "if E_F(X_j) tends to infinity then E_G(X_j)/E_F(X_j) tends to1",
+        "actual_source_endpoint_growth_proved": false,
+        "actual_source_recurrence_refuted": false
+      },
+      "finite_C_improvement": {
+        "baseline_C": "1/16",
+        "candidate_C": "1/64",
+        "same_positive_forcing_log_growth_class": true,
+        "uniform_C_validity_proved": false
+      }
+    },
+    {
+      "candidate": {
+        "id": "compensator_03",
+        "program": [
+          {
+            "coefficient": "1/2",
+            "divisor": 1,
+            "exponent": "5/8",
+            "state": 1
+          },
+          {
+            "coefficient": "1/2",
+            "divisor": 1,
+            "exponent": "7/10",
+            "state": 2
+          }
+        ],
+        "recurrence_C": "1/64"
+      },
+      "helper_decay": {
+        "theorem_status": "PROVED_IN_ANALYTICAL_REVIEW",
+        "executable_certificate_admitted": false,
+        "definition": "X^(-2)*sum_(n=X..2X-1)abs(H_X(n))^2",
+        "upper_terms": [
+          {
+            "coefficient": "162",
+            "X_power": "-1/4",
+            "log2_constant_power": 0,
+            "log_2X_power": 0
+          },
+          {
+            "coefficient": "1152",
+            "X_power": "-2/5",
+            "log2_constant_power": 0,
+            "log_2X_power": 0
+          }
+        ],
+        "domain": "every integer X>=1",
+        "limit": "0",
+        "constant_independent_of_X_and_cutoffs": true,
+        "dependencies": [
+          "accepted035_source_state_laws",
+          "accepted037_helper_magnitude_prices"
+        ]
+      },
+      "correlation_residual": {
+        "status": "OPEN",
+        "domain": "every dyadic integer X>=1",
+        "left_terms": [
+          {
+            "kind": "full_source_energy",
+            "scale": 2,
+            "coefficient": "1"
+          },
+          {
+            "kind": "full_source_energy",
+            "scale": 1,
+            "coefficient": "-1"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 2,
+            "state": 1,
+            "divisor": 1,
+            "coefficient": "1",
+            "X_power": "-5/8",
+            "scale_power": "-5/8"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 1,
+            "state": 1,
+            "divisor": 1,
+            "coefficient": "-1",
+            "X_power": "-5/8",
+            "scale_power": "-5/8"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 2,
+            "state": 2,
+            "divisor": 1,
+            "coefficient": "1",
+            "X_power": "-7/10",
+            "scale_power": "-7/10"
+          },
+          {
+            "kind": "source_profile_correlation",
+            "scale": 1,
+            "state": 2,
+            "divisor": 1,
+            "coefficient": "-1",
+            "X_power": "-7/10",
+            "scale_power": "-7/10"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 1
+            },
+            "coefficient": "1/4",
+            "X_power": "-5/4",
+            "scale_power": "-5/4"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 1,
+              "divisor": 1
+            },
+            "coefficient": "-1/4",
+            "X_power": "-5/4",
+            "scale_power": "-5/4"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 2,
+              "divisor": 1
+            },
+            "coefficient": "1/2",
+            "X_power": "-53/40",
+            "scale_power": "-53/40"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 1,
+              "divisor": 1
+            },
+            "right": {
+              "state": 2,
+              "divisor": 1
+            },
+            "coefficient": "-1/2",
+            "X_power": "-53/40",
+            "scale_power": "-53/40"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 2,
+            "left": {
+              "state": 2,
+              "divisor": 1
+            },
+            "right": {
+              "state": 2,
+              "divisor": 1
+            },
+            "coefficient": "1/4",
+            "X_power": "-7/5",
+            "scale_power": "-7/5"
+          },
+          {
+            "kind": "profile_Gram",
+            "scale": 1,
+            "left": {
+              "state": 2,
+              "divisor": 1
+            },
+            "right": {
+              "state": 2,
+              "divisor": 1
+            },
+            "coefficient": "-1/4",
+            "X_power": "-7/5",
+            "scale_power": "-7/5"
+          }
+        ],
+        "right": {
+          "kind": "complete_coefficient_square_forcing",
+          "coefficient": "1/64",
+          "definition": "X^(-1)*sum_(k=1..4X-1)f(k)^2"
+        },
+        "target_prefix_is_complete": true,
+        "units_retained": true,
+        "all_source_helper_and_helper_helper_crosses": true,
+        "each_scale_uses_its_own_cutoff": true,
+        "child_odd_endpoint_retained": true,
+        "no_independent_provider_for_complete_left_side": true
+      },
+      "recurrence_proved": false,
+      "consequence": {
+        "helper_norm": "vanishes",
+        "sqrt_energy_distance": "abs(sqrt(E_G)-sqrt(E_F))<=sqrt(E_H)",
+        "conditional_endpoint_obstruction": "if E_F(X_j) tends to infinity then E_G(X_j)/E_F(X_j) tends to1",
+        "actual_source_endpoint_growth_proved": false,
+        "actual_source_recurrence_refuted": false
+      },
+      "finite_C_improvement": {
+        "baseline_C": "1/16",
+        "candidate_C": "1/64",
+        "same_positive_forcing_log_growth_class": true,
+        "uniform_C_validity_proved": false
+      }
+    }
+  ],
+  "elementary_prime_upper_bound": {
+    "status": "PROVED_IN_ANALYTICAL_REVIEW",
+    "theta_bound": "theta(t)<=4*t*log(2), every real t>=1",
+    "induction": "m=ceil(N/2); theta(N)-theta(m)<=log binom(2m,m)<=2m log2; induction plus N=1,2 base",
+    "same_cutoff_count": "# {y_X<p<=t}<=8*log(2)*t/log(2X), t<=2X",
+    "PNT_imported": false
+  },
+  "correlation_definitions": {
+    "source_profile": "T_(i,d)(X)=X^(-2)*sum_(n=X..2X-1)F(n)*A_i(floor(n/d);y_X)",
+    "profile_Gram": "V_(i,d;j,e)(X)=X^(-2)*sum_(n=X..2X-1)A_i(floor(n/d);y_X)*A_j(floor(n/e);y_X)",
+    "complete_history_kernel": "Q_X(t)=sum_(k=1..2X-1)f(k)*(2X-max(X,t,k))_+",
+    "exact_source_profile_reduction": "T_(i,d)=X^(-2)*(u_i*Q_X(d)+sum_(y_X<p<=(2X-1)/d)h_i(p)*Q_X(d*p))",
+    "exact_profile_Gram_reduction": "all unit/unit,unit/prime,prime/unit,prime/prime terms with kernel(2X-max(X,d*p,e*q))_+",
+    "no_distinctness_or_coprimality_assumption_on_Gram_pair": true
+  },
+  "transition": {
+    "unit_indicators_retained": true,
+    "parent_child_cutoffs_retained": true,
+    "profile_difference": "A_i(v;z)-A_i(t;y)=u_i*(1_(v>=1)-1_(t>=1))+sum_(max(z,t)<p<=v)h_i(p)-sum_(y<p<=min(z,t))h_i(p)",
+    "weighted_difference": "X^(-gamma)*((2^(-gamma)-1)*A_i(t;y)+2^(-gamma)*(A_i(v;z)-A_i(t;y)))",
+    "domain": "t=floor(n/d),v=floor((2n+epsilon)/d),epsilon=0,1;y=y_X,z=y_(2X)"
+  },
+  "proposed_next_proof_search": {
+    "priority": "actual_source_relation_multiplier_search",
+    "finite_C_tuning": "lower_priority_same_growth_class",
+    "independently_proved_global_relations": [
+      "nu0*d2=K",
+      "nu1*(One*One_(2/3))=K",
+      "nu2*One_(2/3)=K",
+      "mu*One=delta"
+    ],
+    "relations_alone_prove_requested_inequality": false,
+    "multiplier_or_recurrence_certificate_still_required": true
+  },
+  "generic_norm_countermodel_scope": "rejects envelope-only rule; does not satisfy actual source Euler/divisor/zeta identities",
+  "observations": {
+    "new_arithmetic_observations": 0,
+    "old_studies_rerun": 0,
+    "new_tests_or_searches_run": 0,
+    "read_existing_artifacts": [
+      "search.json",
+      "interval_audit.json",
+      "conditional_verification.json"
+    ]
+  },
+  "review_text": "COUPLED_SCALE_CANDIDATE_REVIEW_037.txt",
+  "whole_signed_bound_proved": false,
+  "RH_proved": false
+}

@@ -1,0 +1,1229 @@
+{
+  "RH_proved": false,
+  "development": {
+    "obstruction_auxiliary_development.json": {
+      "operations": 125748,
+      "runs": [
+        {
+          "operations": 64874,
+          "returncode": 1,
+          "stderr": "F.....\n======================================================================\nFAIL: test_complete_arithmetic_branch_split_independent_reconstruction (test_obstruction_auxiliary_search.AuxiliaryChecks)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_obstruction_auxiliary_search.py\", line 23, in test_complete_arithmetic_branch_split_independent_reconstruction\n    self.assertTrue(a['atoms']['T'][5].is_zero())\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 6 tests in 0.028s\n\nFAILED (failures=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=64874\n"
+        },
+        {
+          "operations": 60874,
+          "returncode": 0,
+          "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.025s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=60874\n",
+          "tests": [
+            "test_obstruction_auxiliary_search.AuxiliaryChecks.test_complete_arithmetic_branch_split_independent_reconstruction",
+            "test_obstruction_auxiliary_search.AuxiliaryChecks.test_full_quadratic_and_transport_values_match_distinct_evaluators"
+          ]
+        },
+        {
+          "operations": 0,
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=0\n",
+          "tests": [
+            "test_obstruction_auxiliary_search.AuxiliaryChecks.test_feedback_uses_open_joint_expression_and_preserves_scope"
+          ]
+        }
+      ]
+    },
+    "obstruction_certificate_development.json": {
+      "operations": 1807,
+      "runs": [
+        {
+          "operations": 1807,
+          "returncode": 0,
+          "runtime_seconds": 0.007,
+          "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.007s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_obstruction_bound_certificates operations=1807\n",
+          "test": "test_obstruction_bound_certificates",
+          "tests": 11
+        }
+      ]
+    },
+    "obstruction_workflow_development.json": {
+      "operations": 242,
+      "runs": [
+        {
+          "operations": 242,
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_run_obstruction_auxiliary_search operations=242\n"
+        }
+      ]
+    }
+  },
+  "feedback": "all four shift/average x cube/square-root productions on one unresolved joint state per lane",
+  "final": [
+    8192,
+    16384
+  ],
+  "final_adaptation": false,
+  "hashes": false,
+  "initial_programs": [
+    {
+      "family": "baseline",
+      "generation": 0,
+      "id": 0,
+      "lane": "baseline",
+      "terms": [
+        [
+          "atom",
+          "R"
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "1"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "0",
+      "family": "pair",
+      "generation": 0,
+      "id": 1,
+      "lane": "shift_T",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-1",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "0",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "0",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/6",
+      "family": "pair",
+      "generation": 0,
+      "id": 2,
+      "lane": "shift_T",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-2/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/6",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/6",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 3,
+      "lane": "shift_T",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/2",
+      "family": "pair",
+      "generation": 0,
+      "id": 4,
+      "lane": "shift_T",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "0",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/2",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/2",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "2/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 5,
+      "lane": "shift_T",
+      "mode": "shift",
+      "padding_polylog_proved": false,
+      "padding_power": "1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "2/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "2/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "0",
+      "family": "pair",
+      "generation": 0,
+      "id": 6,
+      "lane": "average_T",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-1",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "0",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "0",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/6",
+      "family": "pair",
+      "generation": 0,
+      "id": 7,
+      "lane": "average_T",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-2/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/6",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/6",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 8,
+      "lane": "average_T",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "1/2",
+      "family": "pair",
+      "generation": 0,
+      "id": 9,
+      "lane": "average_T",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "0",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/2",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/2",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "T",
+      "exponent": "2/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 10,
+      "lane": "average_T",
+      "mode": "average",
+      "padding_polylog_proved": false,
+      "padding_power": "1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "2/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "2/3",
+            [
+              "atom",
+              "T"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "0",
+      "family": "pair",
+      "generation": 0,
+      "id": 11,
+      "lane": "shift_V",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-1",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "0",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "0",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/6",
+      "family": "pair",
+      "generation": 0,
+      "id": 12,
+      "lane": "shift_V",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-2/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/6",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/6",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 13,
+      "lane": "shift_V",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "-1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/2",
+      "family": "pair",
+      "generation": 0,
+      "id": 14,
+      "lane": "shift_V",
+      "mode": "shift",
+      "padding_polylog_proved": true,
+      "padding_power": "0",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "1/2",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "1/2",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "2/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 15,
+      "lane": "shift_V",
+      "mode": "shift",
+      "padding_polylog_proved": false,
+      "padding_power": "1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "shift",
+            "2/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "shift",
+            "2/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "0",
+      "family": "pair",
+      "generation": 0,
+      "id": 16,
+      "lane": "average_V",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-1",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "0",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "0",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/6",
+      "family": "pair",
+      "generation": 0,
+      "id": 17,
+      "lane": "average_V",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-2/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/6",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/6",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 18,
+      "lane": "average_V",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "-1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "1/2",
+      "family": "pair",
+      "generation": 0,
+      "id": 19,
+      "lane": "average_V",
+      "mode": "average",
+      "padding_polylog_proved": true,
+      "padding_power": "0",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "1/2",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "1/2",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "bound_equivalence_only": true,
+      "channel": "V",
+      "exponent": "2/3",
+      "family": "pair",
+      "generation": 0,
+      "id": 20,
+      "lane": "average_V",
+      "mode": "average",
+      "padding_polylog_proved": false,
+      "padding_power": "1/3",
+      "remaining": "joint_energy_and_full_majorant_drift",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [
+        [
+          "add",
+          [
+            "atom",
+            "T"
+          ],
+          [
+            "average",
+            "2/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ],
+        [
+          "sub",
+          [
+            "atom",
+            "V"
+          ],
+          [
+            "average",
+            "2/3",
+            [
+              "atom",
+              "V"
+            ]
+          ]
+        ]
+      ],
+      "uniform_bound_proved": false,
+      "weights": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "a0": "0",
+      "a1": "0",
+      "family": "transport",
+      "generation": 0,
+      "id": 21,
+      "lane": "transport",
+      "remaining": "complete_signed_transport_defect",
+      "rho": "0",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [],
+      "uniform_bound_proved": false,
+      "weights": []
+    },
+    {
+      "a0": "1",
+      "a1": "1",
+      "family": "transport",
+      "generation": 0,
+      "id": 22,
+      "lane": "transport",
+      "remaining": "complete_signed_transport_defect",
+      "rho": "1/2",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [],
+      "uniform_bound_proved": false,
+      "weights": []
+    },
+    {
+      "a0": "4/3",
+      "a1": "4/3",
+      "family": "transport",
+      "generation": 0,
+      "id": 23,
+      "lane": "transport",
+      "remaining": "complete_signed_transport_defect",
+      "rho": "8/9",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [],
+      "uniform_bound_proved": false,
+      "weights": []
+    },
+    {
+      "a0": "2",
+      "a1": "0",
+      "family": "transport",
+      "generation": 0,
+      "id": 24,
+      "lane": "transport",
+      "remaining": "complete_signed_transport_defect",
+      "rho": "1",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [],
+      "uniform_bound_proved": false,
+      "weights": []
+    },
+    {
+      "a0": "0",
+      "a1": "2",
+      "family": "transport",
+      "generation": 0,
+      "id": 25,
+      "lane": "transport",
+      "remaining": "complete_signed_transport_defect",
+      "rho": "1",
+      "source_obligation": "candidate10_reduced_energy",
+      "terms": [],
+      "uniform_bound_proved": false,
+      "weights": []
+    }
+  ],
+  "memory_bytes": 17179869184,
+  "prior_arithmetic_overlap": true,
+  "process_memory_bytes": 4294967296,
+  "ranking": [
+    "reviewed padding availability",
+    "positive correction power loss",
+    "validation failures",
+    "complexity",
+    "ordinal id"
+  ],
+  "schema": "obstruction-auxiliary-pilot-v1",
+  "seconds": 7200,
+  "target": {
+    "RH_proved": false,
+    "bridge": "SHIFTED_QUOTIENT_CANDIDATE_10_REVIEW_001.txt sections3and5",
+    "complete_composite_branches": true,
+    "constants_may_depend_on": [
+      "epsilon"
+    ],
+    "fixed_operator": {
+      "shifts": [
+        "1/3",
+        "2/3"
+      ]
+    },
+    "formula": "X^-2 sum_{X<=n<2X}(T(n)+C(n)-m_u*n^(2/3))^2",
+    "id": "candidate10_reduced_energy",
+    "required_bound": "C_epsilon*X^epsilon",
+    "scope": {
+      "domain": "all dyadic integers X>=1",
+      "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+      "source": "actual_mu_candidate10"
+    },
+    "status": "open",
+    "uniform_in": [
+      "all dyadic X>=1"
+    ]
+  },
+  "train": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    64,
+    256,
+    1024
+  ],
+  "uniform_signed_bound_proved": false,
+  "validation": [
+    2048,
+    4096
+  ],
+  "work_limit": 350000000
+}

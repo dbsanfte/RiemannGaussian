@@ -1,0 +1,543 @@
+{
+  "aggregate_memory_limit_bytes": 17179869184,
+  "betas": [
+    "1/3",
+    "2/5",
+    "1/2",
+    "3/5",
+    "2/3",
+    "1"
+  ],
+  "constant_grid": [
+    "1/1073741824",
+    "1/536870912",
+    "1/268435456",
+    "1/134217728",
+    "1/67108864",
+    "1/33554432",
+    "1/16777216",
+    "1/8388608",
+    "1/4194304",
+    "1/2097152",
+    "1/1048576",
+    "1/524288",
+    "1/262144",
+    "1/131072",
+    "1/65536",
+    "1/32768",
+    "1/16384",
+    "1/8192",
+    "1/4096",
+    "1/2048",
+    "1/1024",
+    "1/512",
+    "1/256",
+    "1/128",
+    "1/64",
+    "1/32",
+    "1/16",
+    "1/8",
+    "1/4",
+    "1/2",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16",
+    "32",
+    "64",
+    "128",
+    "256"
+  ],
+  "explicit_extra_block_exponents": [
+    "1/257",
+    "2/11",
+    "3/11"
+  ],
+  "final_Arb_precision": 256,
+  "final_scale_rule": "4096,8192,16384 plus two seeded odd integers in[4500,7500),[10000,15000); generated afterselection",
+  "final_seed": 590059,
+  "grammar_max_denominator": 8,
+  "hashes_used": false,
+  "kernel_expression_dictionary": {
+    "D": [
+      [
+        3,
+        "1"
+      ],
+      [
+        5,
+        "-1"
+      ]
+    ],
+    "P": [
+      [
+        3,
+        "1"
+      ]
+    ],
+    "Q": [
+      [
+        5,
+        "1"
+      ]
+    ],
+    "S": [
+      [
+        3,
+        "1"
+      ],
+      [
+        5,
+        "1"
+      ]
+    ]
+  },
+  "native_threads_per_worker": 1,
+  "new_frozen_files": 16,
+  "no_magnitude_oracle_in_pair_generation": true,
+  "old_suites_or_studies_replayed": false,
+  "previous_goal_turn": "PROGRESS:058 exact search ran and established new signed target plus grammar obstruction",
+  "prior_frozen_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15
+  ],
+  "seconds_per_module": 7200,
+  "source_binding": {
+    "RH_proved": false,
+    "conditional_bridge_review": "PRIME_TRANSFER_REVIEW_058.txt section4",
+    "endpoint_program": {
+      "id": "transfer_operator_0047",
+      "program": {
+        "RH_proved": false,
+        "microscopic": {
+          "C": "7200/7",
+          "N_power": "1/2"
+        },
+        "middle_status": "OPEN",
+        "request": {
+          "alpha": "1/5",
+          "gamma": "5/28",
+          "operator": {
+            "atoms": [
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 5,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "attenuation": 3,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              }
+            ],
+            "coefficients": [
+              "1",
+              "-1",
+              "-1",
+              "1"
+            ],
+            "universe": [
+              2,
+              3,
+              5
+            ]
+          },
+          "tau": "1/2"
+        },
+        "schema": "prime-transfer-endpoints-v1",
+        "source_order": {
+          "RH_proved": false,
+          "cases": [
+            {
+              "envelope": "0",
+              "order": null,
+              "presence": [
+                0,
+                0,
+                0
+              ],
+              "terms": []
+            },
+            {
+              "envelope": "180",
+              "order": 3,
+              "presence": [
+                0,
+                0,
+                1
+              ],
+              "terms": [
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "envelope": "120",
+              "order": 3,
+              "presence": [
+                0,
+                1,
+                0
+              ],
+              "terms": [
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    2,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "envelope": "240",
+              "order": 4,
+              "presence": [
+                0,
+                1,
+                1
+              ],
+              "terms": [
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    2,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "envelope": "0",
+              "order": null,
+              "presence": [
+                1,
+                0,
+                0
+              ],
+              "terms": []
+            },
+            {
+              "envelope": "180",
+              "order": 3,
+              "presence": [
+                1,
+                0,
+                1
+              ],
+              "terms": [
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            {
+              "envelope": "120",
+              "order": 3,
+              "presence": [
+                1,
+                1,
+                0
+              ],
+              "terms": [
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    2,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "envelope": "240",
+              "order": 4,
+              "presence": [
+                1,
+                1,
+                1
+              ],
+              "terms": [
+                {
+                  "coefficient": "1",
+                  "powers": [
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "coefficient": "-1",
+                  "powers": [
+                    1,
+                    2,
+                    1
+                  ]
+                }
+              ]
+            }
+          ],
+          "envelope": "240",
+          "order": 3,
+          "request": {
+            "atoms": [
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 5,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "attenuation": 3,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              }
+            ],
+            "coefficients": [
+              "1",
+              "-1",
+              "-1",
+              "1"
+            ],
+            "universe": [
+              2,
+              3,
+              5
+            ]
+          },
+          "schema": "prime-transfer-source-order-v1",
+          "scope": {
+            "N_minimum": 2,
+            "N_type": "integer",
+            "t_lower_exclusive": "0",
+            "t_upper": "1"
+          },
+          "whole_bound_proved": false,
+          "zero_source": false
+        },
+        "tail": {
+          "C": "512",
+          "N_power": "1/2"
+        },
+        "uniform_full_source_bound_proved": false
+      },
+      "verification": {
+        "RH_proved": false,
+        "RH_refuted": false,
+        "both_end_region_bounds_proved": true,
+        "coefficient_L1": "4",
+        "current_zero_on_unregistered_sector": true,
+        "domain": "everyintegerN>=2; epsilon=min(tau,N^-gamma); exactfullsource",
+        "microscopic": {
+          "C": "7200/7",
+          "N_power": "1/2"
+        },
+        "middle_status": "OPEN",
+        "pointwise_order": 3,
+        "producer_imported": false,
+        "request": {
+          "alpha": "1/5",
+          "gamma": "5/28",
+          "operator": {
+            "atoms": [
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 5,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "attenuation": 1,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "attenuation": 3,
+                "divisor": 1,
+                "primes": [
+                  2,
+                  5
+                ]
+              }
+            ],
+            "coefficients": [
+              "1",
+              "-1",
+              "-1",
+              "1"
+            ],
+            "universe": [
+              2,
+              3,
+              5
+            ]
+          },
+          "tau": "1/2"
+        },
+        "source_arrays_read": false,
+        "tail": {
+          "C": "512",
+          "N_power": "1/2"
+        },
+        "uniform_full_source_bound_proved": false,
+        "verified": true
+      }
+    },
+    "full_source_RH_implication_conditional_on_missing_uniform_transport_cost_bound": true,
+    "operator_id": "transfer_operator_0047",
+    "uniform_bound_proved": false
+  },
+  "source_degree": 64,
+  "source_parameters": {
+    "alpha": "1/5",
+    "gamma": "5/28",
+    "p": 3,
+    "primes": [
+      2,
+      3,
+      5
+    ],
+    "q": 5,
+    "tau": "1/2"
+  },
+  "training_scales": [
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048,
+    3072
+  ],
+  "workers": 3
+}

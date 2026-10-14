@@ -1,0 +1,388 @@
+TWO-PRIME EXCHANGE: DIAGONAL VANISHING, COMPLETE KERNEL TRANSPORT,
+AND A PAID BOUNDED-DEGREE EDGE CORRECTION
+
+Scope and conclusion
+--------------------
+This is a new source-only analytical review. All earlier memos, frozen
+sources and study results remain unchanged. No arithmetic evaluations,
+numerical study, tests, hashes, search or additional agents were used.
+I use the actual candidate10 coefficients and the exact prefix-square
+kernel. The proposed two-distinct-prime word was already in the archived
+distinct-prime grammar; this review proves a simultaneous/diagonal
+factorization which coordinatewise valuations need not detect. It does
+not claim a new numerical candidate or rerank archived words.
+
+The all-channel exchange determinant DOES have a common small factor:
+  D(q,r)=(1-q^(-1/3))(1-r^(-1/3))
+                               *(r^(-1/3)-q^(-1/3)), q>r.
+The complete actual-source exchange reduces exactly to one wedge between
+the common and difference transfer states. This removes the unsuppressed
+B/u and B/v determinants encountered with a single-prime slide.
+
+There is an unconditional new paid statement for a fixed bounded-degree
+graph of actual-prime edges, with both primes above n^theta: its FULL
+symmetric-kernel exchange correction is cofinal at theta=3/4. No prime
+gap estimate is needed. Using the actual bounded difference coefficient
+improves the envelope to one logarithm. However the symmetric core of
+that edge family remains, and full independent-prime covariance is not
+a bounded-degree graph. Complete exchange sums and prime telescoping
+retain the common/constant mode and growing path or multiplicity costs.
+Neither an all-scale moment bound nor RH follows.
+
+1. Actual source laws and the exact determinant
+-----------------------------------------------
+Let u=1/3, v=2/3, beta=9/2, U=mu*n^(-u), V=mu*n^(-v), B=U*V,
+where * is Dirichlet convolution. Put
+  a=beta*(U-delta)*(V-delta)-d,
+with d the COMPLETE same-prime prime-power component. Thus a(1)=0,
+a(p^e)=0 for all e>=1, and for other n>1,
+  a(n)=beta*(B(n)-U(n)-V(n)).                         (1.1)
+Every prime power in U,V,B, including higher exponents, is retained.
+The actual local multipliers at a fresh prime p are
+  lambda_u(p)=p^(-u)-1,
+  lambda_v(p)=p^(-v)-1,
+  lambda_B(p)=lambda_u(p)+lambda_v(p).               (1.2)
+
+Take DISTINCT actual primes q>r, both coprime to H*K. H,K may have a
+common factor; neither is assumed squarefree or a non-prime-power.
+Set x=q^(-u), y=r^(-u), so 0<x<y<1. For any channels i,j in (B,U,V),
+  S_i(qH)S_j(rK)-S_i(rH)S_j(qK)
+    =[lambda_i(q)lambda_j(r)-lambda_i(r)lambda_j(q)]
+                                                     *S_i(H)S_j(K).
+The u/v determinant is
+  (x-1)(y^2-1)-(y-1)(x^2-1)
+       =(1-x)(1-y)(y-x)=:D(q,r)>0.                   (1.3)
+The complete determinant matrix, in order B,U,V, is
+  D(q,r)*[[0,-1,1],[1,0,1],[-1,-1,0]].               (1.4)
+Thus every nonzero channel is suppressed, including the B sectors.
+Coordinatewise valuations can be zero because the factor y-x vanishes
+only on the diagonal or when both variables go to zero together. A
+common linear-factor analysis detects it without changing the source.
+
+Define the actual transfer coefficients on H>=1 by
+  zu=beta*(B-U), zv=beta*(B-V), z0=zu+zv,
+  Delta=zu-zv=beta*(V-U).
+All four vanish at H=1 where appropriate (in particular zu=zv=z0=Delta=0).
+For a fresh q and H>=1,
+  a(qH)=lambda_u(q)zu(H)+lambda_v(q)zv(H).            (1.5)
+For H>1, qH has at least two distinct prime factors, so d(qH)=0;
+for H=1 the formula is zero and correctly retains a(q)=0. It is
+INCORRECT to impose an additional non-prime-power mask on H: a prime
+power H>=2 is a legitimate base for the non-prime-power qH.
+
+The complete exchange is therefore
+  F-G:=a(qH)a(rK)-a(rH)a(qK)
+    =D(q,r)*Z(H,K),
+  Z(H,K)=zu(H)zv(K)-zv(H)zu(K)
+        =[Delta(H)z0(K)-z0(H)Delta(K)]/2.             (1.6)
+This is an actual signed common/difference decomposition, not separate
+assumed bounds for the common state. H/K gcd overlap remains unrestricted.
+The coprime guards are essential: if q or r already divides H or K,
+the exact higher-valuation Euler rows must replace (1.2).
+
+The prime factor admits the unconditional bounds
+  0<D(q,r)<=y-x<=r^(-u),
+  y-x<=u*(q-r)*r^(-u-1).                             (1.7)
+The second uses only integration of u*t^(-u-1) between r and q.
+It imports no assertion about the size of an actual prime gap.
+
+2. Complete prefix-square pullbacks and all sector boundaries
+-------------------------------------------------------------
+For integer X>=1 the coefficient prefix-square kernel is exactly
+  W_X(s,t)=max(0,2X-max(X,s,t))
+          =sum_{X<=n<2X}1_{s<=n}1_{t<=n}.            (2.1)
+Consequently the two pullbacks are
+  W_A=W_X(qH,rK), W_B=W_X(rH,qK).                    (2.2)
+The source pairs n1=qH,n2=rK have v_q(n1)=v_r(n2)=1,
+v_r(n1)=v_q(n2)=0, with H,K>=1 and both primes coprime to H*K.
+The inverse map for the exchanged pair is n1'=rH,n2'=qK. These exact
+valuation and unit masks must be kept. In particular the two pairs
+have the same product qrHK but can have different maxima and prefix
+membership. Product conservation does not conserve W_X.
+
+At a given n define A-support by qH<=n,rK<=n, and B-support by
+rH<=n,qK<=n. Their intersection, A-only and B-only sectors are ALL
+included in (2.2); the latter two are genuine exterior-prefix terms
+for one orientation. Their union lies in the two rectangles
+  H<=n/q,K<=n/r, or H<=n/r,K<=n/q.                   (2.3)
+Discarding either orientation outside its own prefix destroys the
+exchange identity.
+
+The old smooth/bank cutoff also has to be applied to original or
+exchanged indices as appropriate. For Y=n^theta, classify each qH,
+rH,qK,rK by its ACTUAL largest prime: Pplus(qH)=max(q,Pplus(H)),
+and similarly for the other three values. Without further hypotheses
+these assignments can include smooth/smooth, smooth/bank, bank/smooth
+and bank/bank sectors. An exchange does not preserve an asymmetric
+sector mask. Writing chi_A and chi_B for those masks, the actual weights
+are chi_A*1_A and chi_B*1_B; their difference contains both the prefix
+transport and the changed sector membership. All these complements
+remain. One cannot infer Pplus(H)<r merely from the coprime guard.
+
+There is a useful clean subdomain: BOTH q,r>n^theta, theta>=1/2, and
+at least one orientation is inside the prefix. Then both H,K<r, by (2.3),
+so the coprime guards are automatic and the actual largest primes are
+q and r respectively. Both inside terms are nonsmooth non-prime-powers
+unless a unit base makes them zero. This bank/bank cutoff has the exact
+common upper boundary n<tau(r), since r<q, where
+tau(p)=ceil(p^(1/theta)). Its integrated edge kernels are
+  W_A^theta=max(0,min(2X,tau(r))-max(X,qH,rK)),
+  W_B^theta=max(0,min(2X,tau(r))-max(X,rH,qK)).         (2.4)
+If a fixed prime pool or any other selection is used, its full endpoint
+and inverse-image masks must also be carried. Nothing below extends the
+bank/bank edge result to an unretained smooth-sector complement.
+
+3. Symmetric core versus suppressed exchange correction
+--------------------------------------------------------
+Set P=(F+G)/2, V=(W_A+W_B)/2, and deltaW=W_A-W_B. Then exactly
+  F W_A-G W_B=D*Z*V+P*deltaW,                        (3.1)
+  (F W_A+G W_B)/2=P*V+D*Z*deltaW/4.                 (3.2)
+The second identity is the pertinent full energy-pair decomposition.
+Its first term P*V is an UNSUPPRESSED symmetric core. As both primes
+grow, a(qH) tends to -z0(H) and a(rK) to -z0(K), so that core includes
+the common z0(H)z0(K) mode. It is not made small by (1.3).
+
+On a complete swap-invariant H,K domain, W_A(K,H)=W_B(H,K),
+G(K,H)=F(H,K), Z is antisymmetric, and deltaW is antisymmetric.
+Thus the raw exchange difference in (3.1) sums to zero: it is the
+H/K-reindexing identity, not negative credit against the square.
+The two terms in (3.1) also sum to zero separately by antisymmetry.
+In contrast D*Z*deltaW in (3.2) is symmetric and is a real correction
+to the original pair energy. The identities hold equally with (2.4)
+or other common exchange-invariant masks. For asymmetric masks include
+their changed-domain term instead of assuming this symmetry.
+
+The correction has no universal favorable sign. For H<K,
+  deltaW>=0,
+and for H>K it is <=0. On distinct prime cofactors H=p<K=s,
+  zu(p)=beta*lambda_v(p), zv(p)=beta*lambda_u(p),
+  Z(p,s)=beta^2*D(s,p)>0.                            (3.3)
+Take q,r distinct from p,s and retain any nonempty relevant prefix
+boundary. This actual-source sector has nonnegative correction, and
+strictly positive correction when the boundary and source wedge are
+nonzero. It is not an automatic dissipative transport. H=K has Z=0
+and deltaW=0 exactly; this special diagonal cannot represent the full
+common mode.
+
+For completeness, if H>=K then
+  max(qH,rK)=qH,
+  max(rH,qK)<=qH,
+  |deltaW|=max(0,min(2X,qH)-max(X,rH,qK)).            (3.4)
+For H<=K reverse the sign and exchange H,K. Hence
+  |deltaW|<=min(X,(q-r)*max(H,K),q*|H-K|).            (3.5)
+The same bound holds with the clipped upper endpoint in (2.4).
+These are exact paid LENGTHS, not yet paid signed source covariances.
+
+4. A cofinal full correction for bounded-degree actual-prime edges
+------------------------------------------------------------------
+Fix a graph of distinct actual primes, edges r<q, such that each r has
+at most d outgoing q, with d a scale-independent finite integer. It can
+be the consecutive-prime graph (d=1); no prime-gap hypothesis is needed.
+Use BOTH primes>n^theta and the complete kernels (2.4). Define its full
+symmetric exchange correction by
+  C_G(X)=1/(4X^2)*sum_{edges r<q,H,K>=1}
+                D(q,r)*Z(H,K)*(W_A^theta-W_B^theta).  (4.1)
+Unit entries vanish by (1.6). All higher prime-power cofactors remain.
+This is a signed correction to (3.2), not the original whole square.
+
+An actual-source improvement is available: the local geometric laws
+give |U(H)|,|V(H)|<=1 and |B(H)|<=d2(H), whence
+  |Delta(H)|<=2beta, |z0(H)|<=4beta*d2(H),
+  |Z(H,K)|<=4beta^2*(d2(H)+d2(K)).                   (4.2)
+The determinant has removed the B*B component, leaving only one divisor
+sum in this envelope. This is stronger than treating all channel
+tensors separately with d2(H)d2(K).
+
+At a fixed n, the absolute correction mask is bounded by the union
+in (2.3). On its first rectangle the sum of |Z| is at most
+  8beta^2*n^2/(qr)*(1+log n),
+using sum_{j<=T}d2(j)<=T*(1+log T). The second rectangle doubles this
+bound. The divisor estimate is used for T>=1; empty rectangles contribute
+zero. The factor 1/4 in (4.1) leaves 4beta^2. From (1.7), q>=r,
+and the outdegree hypothesis,
+  sum_{edges,both>n^theta} D(q,r)/(qr)
+    <=d*sum_{integer r>n^theta}r^(-2-u)
+    <=d*(1+1/(1+u))*n^(-theta*(1+u)).                (4.3)
+The integer tail bound is its first term plus the integral. It is
+valid even at small n; empty rectangles contribute zero. With u=1/3,
+the pointwise absolute correction is therefore at most
+  7beta^2*d*n^(2-4theta/3)*(1+log n).
+Summing exactly X integer points in the dyadic block proves
+  |C_G(X)|<=7beta^2*d*2^(2-4theta/3)
+              *X^(1-4theta/3)*(1+log(2X)).           (4.4)
+In particular at theta=3/4,
+  |C_G(X)|<=14beta^2*d*(1+log(2X)).                  (4.5)
+This is cofinal padding for every epsilon>0. For theta>3/4 it even
+has a decaying power with its full logarithm retained. For smaller
+theta this proof gives a positive power and does not declare it paid.
+
+The core sum P*V in (3.2) remains UNPAID even for this bounded-degree
+family. The result is an exact useful exchange-correction envelope,
+not a bound on the edge family's source products or their mean.
+It requires fixed d. If d grows with the horizon, its growth stays
+in (4.4); it cannot be silently normalized out of the original target.
+
+5. Complete prime-order telescoping and the multiplicity obstruction
+--------------------------------------------------------------------
+For an ordered chain p_1<...<p_M of actual primes put t_j=p_j^(-u).
+For its adjacent edges,
+  sum_j D(p_(j+1),p_j)<=sum_j(t_j-t_(j+1))
+                               =t_1-t_M.           (5.1)
+No bound for an individual gap is needed. At fixed H,K, the adjacent
+kernel transport intervals in (3.4) are disjoint: for H>=K the interval
+for p_j,p_(j+1) is contained in [p_j H,p_(j+1)H), and for H<=K use
+[p_j K,p_(j+1)K). Clipping to the dyadic block, or to the common upper
+boundaries, only reduces them. Hence
+  sum_j |deltaW_j|<=X.                              (5.2)
+These are genuine total-variation statements for fixed cofactors.
+Forbidden primes dividing H*K can be removed from the chain; ordered
+adjacent intervals still do not overlap. They do not assert a bound
+after freely summing all cofactor pairs without their source costs.
+
+Complete independent-prime pairs are different. For H>K at point n,
+the negative transport occurs EXACTLY when
+  r<=n/H<q<=n/K.                                    (5.3)
+Include the coprime allowed-prime pool and any retained lower cutoff.
+If R and Q are the primes in the two disjoint ranges in (5.3), set
+  P0(A)=sum_{p in A}(1-p^(-u)),
+  P1(A)=sum_{p in A}(1-p^(-u))*p^(-u).
+Then the COMPLETE nonnegative prime-weight boundary magnitude is
+  sum_{r in R,q in Q} D(q,r)
+       =P1(R)P0(Q)-P0(R)P1(Q).                     (5.4)
+For H<K exchange their roles and the transport sign. This exact formula
+retains all outside-prefix complements. It is a cross-product of prime
+counts/weighted counts, not the bounded adjacent total variation (5.1).
+Every interval crossed by many pairs is counted with its multiplicity.
+
+One can telescope a difference t_r-t_q through consecutive primes,
+but summing all pairs then gives the intermediate edge its number of
+crossing pairs. That multiplicity is up to order M^2, not a fixed d.
+No statement about actual prime gaps removes it. The crude complete
+high-bank envelope correspondingly retains a positive power: using
+D<=r^(-u) and the extra independent q harmonic sum gives a bound of
+  16beta^2*2^(2-theta/3)*X^(1-theta/3)
+                                  *(1+log(2X))^2
+for the full correction. Indeed sum_{q>r,q<=n}1/q<=1+log n, while
+sum_{integer r>n^theta}r^(-1-u)<=4n^(-theta/3); combine these with
+the same union-of-rectangles bound used in section 4. This is not a
+lower bound or an impossibility result; it shows why this particular
+absolute-count proof for all pairs does not reach the edge threshold.
+
+The source family itself is affine after a harmless normalization:
+  a(pH)/(1-p^(-u))=-z0(H)-p^(-u)*zv(H).               (5.5)
+Prime-order differences probe the varying second component. They do
+not estimate the common z0 component. In particular all-channel
+determinant cancellation is compatible with a large shared symmetric
+core. Telescoping its variation is not estimating its initial value.
+
+There is also a precise finite-graph recovery obstruction, stated on
+formal states rather than claimed for actual mu. For M prime vertices
+with values b_p, the complete sum square has a constant mode of order
+M^2 when b_p=1. An edge sum with fixed outdegree d and bounded weights
+has only O(dM) terms, and edge differences are zero on that constant
+mode. Neither represents the full square with a uniform coefficient
+bound. A coupled mean/compensation state must be retained.
+On a path, even zero-mean norm recovery has a growing cost: take
+b_j=j-(M+1)/2. Then
+  sum_j b_j^2=M*(M^2-1)/12,
+  sum_{j<M}(b_(j+1)-b_j)^2=M-1,
+so a uniform Poincare constant is impossible; its required size is at
+least M*(M+1)/12. This is exact finite algebra, not a prime-gap assertion.
+Moreover
+  sum_j b_j=M*b_1+sum_{j<M}(M-j)*(b_(j+1)-b_j),        (5.6)
+retains both the initial mean and growing path weights. An actual
+arithmetic identity could constrain those states, but has not been
+supplied by the exchange determinant.
+
+6. Complete coefficient coverage: a paid powerful complement
+-------------------------------------------------------------
+An actual full-square decomposition must address which source indices
+are represented by a fresh prime label. Let omega1(m) be the number of
+primes whose valuation in m is exactly one. Indices with omega1=0 are
+powerful: every nonzero prime exponent is >=2. They are not all prime
+powers, and their non-prime-power a coefficients must not be discarded.
+They do have an unconditional cofinal prefix envelope.
+
+Every powerful m>=1 has the unique representation A^2 B^3 with B
+squarefree, assigning each odd exponent to B. Thus its count through x
+is at most sqrt(x)*sum_{B>=1}B^(-3/2)<=3sqrt(x). For every eta>0,
+  d2(m)<=C_eta*m^eta
+with a fixed finite C_eta: for primes p>=2^(1/eta), use e+1<=2^e<=p^(eta e),
+and absorb the finite smaller-prime maxima (e+1)/p^(eta e) into C_eta.
+The proper-divisor convolution defining p gives |a(m)|<=beta*d2(m)
+on non-prime-powers, and the other a entries are zero. Consequently
+  |A_power(x)|<=3beta*C_eta*x^(1/2+eta),
+  X^(-2)*sum_{X<=n<2X}|A_power(n)|^2
+       <=9beta^2*C_eta^2*2^(1+2eta)*X^(2eta).         (6.1)
+This is cofinal padding, not a claimed finite critical norm. All
+prime-power/unit conventions have been retained in deriving it.
+
+Let A_eligible be the prefix with omega1>=1. Exactly A=A_eligible+A_power.
+For any fixed retained complete center M(n), the norm triangle proves
+  E(A-M) is cofinal iff E(A_eligible-M) is cofinal.    (6.2)
+Every mixed powerful term is accounted for by this explicit norm
+comparison; none is silently set to zero or assumed favorable.
+
+An exact no-multiplicity allocation of the eligible prefix is
+  A_eligible(n)=sum_{q prime,H<=n/q,q coprime H}
+                         a(qH)/(1+omega1(H)).        (6.3)
+Each original coefficient is allocated equally among its valuation-one
+prime factors. H=1 contributes zero, and prime-power H>=2 is retained.
+In the free-distinct-prime exchange sector, the product denominator is
+  (1+omega1(H))*(1+omega1(K)),
+which is invariant under q/r exchange. It is bounded by one as a weight
+and therefore also preserves the paid edge estimate (4.4).
+
+Equation (6.3) still has two mandatory pair-sector complements:
+  (i) the same label q=r in its full square;
+  (ii) distinct labels with r|H or q|K.
+These are not the powerful complement and are not eliminated by (6.1).
+They require exact higher-valuation/source-overlap laws and all their
+kernel weights. Even in the free-distinct sector gcd(H,K) may be nontrivial.
+The proposed exchange must not be advertised as covering these remaining
+sectors or the full independent-pair covariance solely by adjacency.
+
+7. Centers, initial costs, and the next honest proof obligation
+-------------------------------------------------------------
+All real-pole normalizers, unit corrections and initial/head costs of
+the original candidate remain. The exchange acts on coefficient-pair
+prefixes. For a deterministic complete center M(n), its full moment is
+  X^(-2)*sum_{m,l} a(m)a(l) W_X(m,l)
+  -2X^(-2)*sum_m a(m)*sum_{X<=n<2X,n>=m}M(n)
+  +X^(-2)*sum_{X<=n<2X}M(n)^2.                     (7.1)
+No exchange proof may omit the last two terms. The interior bank/smooth
+partition introduces its own moving prime and largest-prime boundaries,
+as specified in section 2. Paid older components remain paid through
+their proved norm comparisons; they are not premises for unpaid companions.
+
+There is a clean next operator+auxiliary+argument production: use the
+simultaneous determinant factor and a FIXED bounded-degree actual-prime
+edge graph to replace its edge-pair energy by the symmetric core plus
+the proved padding (4.4). Couple that core to a retained common/mean
+state and the full source-overlap/powerful allocation in section 6.
+The exact next unresolved lemma is a noncircular bound or decreasing-
+scale recurrence for that common symmetric core and the complete
+independent-pair remainder, including its same-label, cross-divisibility,
+smooth/bank, deterministic-center and initial terms. A bounded mean-
+recovery estimate must be proved; it cannot be inferred from prime
+variation, a graph Laplacian, or determinant suppression alone.
+
+This is not a rejection of an actual signed global recovery argument.
+It distinguishes a genuinely paid exchange correction and coefficient
+complement from the unsolved observability and signed-covariance steps.
+No favorable source randomness, prime-gap bound, or RH-strength companion
+moment was assumed. The all-scale target and RH remain open.
+
+Final status
+------------
+Proved: all-channel distinct-prime determinant and common/difference
+wedge; exact complete prefix pullbacks, valuation/unit/sector masks;
+symmetric-core/correction identity; paid bounded-degree high-prime
+exchange correction with explicit one-log constants; exact adjacent
+total variation and complete-pair multiplicity formulas; unconditional
+cofinal powerful-prefix complement and valuation-one allocation.
+Unproved: bounded recovery of the complete independent-pair covariance,
+the symmetric common/mean state, all remaining overlapping/centered
+sectors, a closed full signed recurrence, the original uniform moment,
+or RH. Formal graph/local obstructions have only their stated scope.
+Only this new memo was written. All older files remain immutable.

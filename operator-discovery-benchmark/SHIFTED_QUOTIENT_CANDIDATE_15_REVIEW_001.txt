@@ -1,0 +1,226 @@
+Candidate15: complete degree-three shifted quotient, analytical attempt
+
+Scope and current disposition
+The fixed candidate is P(s)=H_{1/6}(s)H_{1/3}(s)H_{1/2}(s), with the complete
+frozen real-pole centering and original actual-Mobius source. The frozen
+structural memo is unchanged. This new memo uses pure algebra, the previously
+proved source identities, and source definitions in shifted_quotient_candidates.py.
+No new arithmetic evaluations, numerical tests, parameter search, rescoring,
+source tables or hashes are performed.
+
+The parent reports that candidate15 fails4of8 actual final growth comparisons
+against its frozen training constants. It is therefore rejected by the strict
+final numerical-lead gate, despite smaller lag-matched baseline energies.
+The parent subsequently reports independent agreement on all648 study blocks,
+including verification of this final rejection and the baseline comparisons.
+The authorized audit extension and all spent work remain in the study receipt.
+Neither the initial finite attraction nor a final fitted-gate failure decides the existence
+of other all-scale constants. No formula is altered or retrospectively promoted.
+
+No cofinal full signed moment bound is found. The positive results below are
+a sharper same-prime peel, a paid critical smooth-term peel, exact factor/shift
+identities and an exact squarefree attenuation formula. The strongest negative
+result is that its MIXED-PRIME prime-power skeleton alone is unconditionally
+too large: it has magnitude at least a constant times x/log x. Thus a proof
+must establish cancellation with the composite-factor complement, not just
+bound prime tuples or invoke a small diagonal.
+
+1. Exact selected arithmetic and all main terms
+Write delta=1/6, b_i=i*delta, i=1,2,3, and
+ D_i(s)=zeta(s+b_i)/zeta(s), H_i(s)=(D_i(s)-1)/b_i,
+ h_i(1)=0, h_i(n)=a_{b_i}(n)/b_i for n>1,
+ a_b=mu*n^(-b), p=h_1*h_2*h_3, S(x)=sum_{n<=x}p(n).
+Thus P=36(D_1-1)(D_2-1)(D_3-1). All convolutions are Dirichlet convolutions.
+At a prime power, with q=p^(-delta),
+ h_1(p^e)=-6(1-q)q^(e-1),
+ h_2(p^e)=-3(1-q^2)q^(2(e-1)),
+ h_3(p^e)=-2(1-q^3)q^(3(e-1)).
+For n>1 each atom h_i(n) has sign (-1)^omega(n) and every
+composite factor is retained; these atoms are not prime-power-supported.
+
+Put r_1=5/6,r_2=2/3,r_3=1/2 and z_i=zeta(r_i). The exact residues are
+ R_1=36/z_1 *[zeta(7/6)/z_1-1]*[zeta(4/3)/z_1-1],
+ R_2=36/z_2 *[zeta(5/6)/z_2-1]*[zeta(7/6)/z_2-1],
+ R_3=36/z_3 *[zeta(2/3)/z_3-1]*[zeta(5/6)/z_3-1].
+Let N_i(x)=(R_i/r_i)x^(r_i). The fixed complete state is
+ J(x)=S(x)-N_1(x)-N_2(x)-N_3(x).
+For Re(s)>1,
+ s*integral_1^infinity J(x)x^(-s-1)dx
+ =P(s)-sum_i (R_i/r_i)*s/(s-r_i).
+This retains the constant pieces of the pole compensators. No numerical fit
+or rounded residue is substituted. The first two smooth terms are genuinely
+supercritical; their omission/mismatch introduces poles inside Re(s)>1/2.
+
+All h_i(1)=0, so S(x)=0 for x<8. In particular the early state is the FULL
+negative smooth sum, not a zero observer. The fixed head1..31 and J(1)=-sum_i
+R_i/r_i remain part of the arithmetic definition. There is no finite-prefix
+inverse: through x these tuple coefficients query mu only through x/4.
+The matched comparator (mu-delta_1)^{*3} has the same coefficient-access lag.
+
+2. Exact prime-power, mixed-prime and composite-factor split
+Let u_i be the restriction of h_i to prime powers, and v_i=h_i-u_i, supported
+on integers with at least two distinct prime factors. Define
+ U=u_1*u_2*u_3.
+Its coefficients are all nonpositive: each tuple has three negative factors.
+Split its complete summatory function into
+ D(x): tuples with all three factors powers of the SAME prime;
+ T(x): tuples with at least TWO distinct prime bases.
+Thus sum_{n<=x}U(n)=D(x)+T(x), both nonpositive. Define the remaining complete
+composite-factor branch
+ C(x)=sum_{empty != A subset {1,2,3}}
+       sum_{n<=x} [(*_{i in A}v_i)*(*_{i not in A}u_i)](n).
+Every term with at least one genuinely composite factor is included, whether
+or not other factor primes overlap it. Its signs can vary. Exactly,
+ J(x)=D(x)+T(x)+C(x)-N_1(x)-N_2(x)-N_3(x).
+All squares and cross terms in this identity must be accounted for; C is
+not a small error merely because fixed-index small-shift derivatives erase it.
+
+3. Sharper same-prime component bound and paid smooth-term peel
+For every prime p and every b in the selected set,
+ sum_{e>=1}|h_b(p^e)|=(1-p^(-b))/b *sum_{e>=1}p^(-b(e-1))=1/b.
+Consequently the TOTAL three-factor same-prime mass at each p is exactly36,
+independent of p. Only primes p<=x^(1/3) can occur in its prefix. Therefore
+ |D(x)|<=36*pi(x^(1/3))<=36*x^(1/3).
+The exact local generating function is
+ -36(1-q)(1-q^2)(1-q^3)z^3/[(1-qz)(1-q^2z)(1-q^3z)].
+Its absolute value at z=1 gives that same mass36. This retains every repeated
+exponent, without a logarithmic-loss truncation.
+Thus E_D(X)<=1296*2^(2/3)*X^(-1/3), where
+ E_f(X)=X^-2 sum_{X<=n<2X}f(n)^2.
+The continuous critical H of this component is finite, bounded by
+1296*integral_1^infinity x^(-4/3)dx=3888.
+
+Also N_3(x)=2R_3 sqrt(x) has the exact block cost
+ E_{N_3}(X)=2R_3^2*(3-1/X)<=6R_3^2.
+It has bounded dyadic energy, although its H at the EXACT critical exponent
+diverges; do not call that stronger norm finite. Define the precise reduced
+analytical obligation
+ F(x)=T(x)+C(x)-N_1(x)-N_2(x).
+Then J=F+D-N_3, and
+ E_J<=3(E_F+E_D+E_{N_3}), E_F<=3(E_J+E_D+E_{N_3}).
+With the explicit costs above, J has cofinal subpower dyadic moments if and
+only if F does. This is a legitimate analytical peel, not a change to the
+frozen candidate, its finite scores or head. The two remaining power main
+terms and the entire mixed-prime/composite remainder remain indispensable.
+
+4. A proved obstruction to a prime-tuple-only bound
+Every tuple in T is negative, so there is no cancellation internal to this
+prime-power-only branch. Fix the factors n_1=2,n_2=3,n_3=p with p>=5 prime.
+Its absolute weight is at least the positive fixed constant
+ a=36(1-2^(-1/6))(1-3^(-1/3))(1-5^(-1/2)).
+Thus |T(x)|>=a[pi(x/6)-2]. This lower bound uses a subset of the full tuples;
+it omits none from the actual state.
+
+An elementary lower bound pi(y)>>y/log y is enough here and needs no PNT:
+the central binomial coefficient is at least4^N/(2N+1), while its p-adic
+valuation is at most floor(log(2N)/log p). Therefore
+ 2N log2-log(2N+1)<=log binom(2N,N)<=pi(2N)log(2N).
+Taking N=floor(x/12) gives |T(x)|>>x/log x for every sufficiently large x.
+Hence E_T(X)>>X/(log X)^2, incompatible with cofinal subpower moments.
+The same-prime D is small, and each full smooth main term is O(x^(5/6)),
+which is o(x/log x). Those terms cannot supply the required cancellation.
+
+This does NOT refute the actual full J. It proves that the composite-factor
+branch must cancel a large negative mixed-prime contribution. In block norm,
+if the full gate holds, ||C-N_1-N_2||_block must be essentially as large as
+||T||_block and its full cross correlation with T sufficiently negative.
+Bounding T, or its prime diagonal, by square root would be false. This is a
+precise signed arithmetic mechanism still needed, beyond norm/recovery facts.
+
+There is an exact Euler-half-plane version of this balance. For real s->1+,
+the prime-power restriction has series
+ U_i(s)=-sum_p [(1-p^(-b_i))/b_i]*p^(-s)/(1-p^(-s-b_i))
+       =-(1/b_i)log(1/(s-1))+O(1).
+The difference from -(1/b_i)sum_p p^(-s) is absolutely bounded near1, and
+sum_p p^(-s)=log(1/(s-1))+O(1) follows from the Euler product and its
+convergent higher-prime-power tail. Thus U_1U_2U_3=-36 log^3(1/(s-1))+
+O(log^2(1/(s-1))). The full P(s) instead tends to -36 at1, because D_i(1)=0.
+The composite-factor series must cancel that cubic logarithmic divergence.
+This is a proved signed structural identity near the Euler boundary, not
+an x-uniform remainder bound or critical-half-plane growth estimate.
+
+5. Squarefree partition law and finite prime attenuation
+For squarefree n>1 let Q be its prime set, with size l>=1. A tuple of three
+nonempty factors is an ordered surjection kappa:Q->{1,2,3}. Therefore
+ p(n)=36*mu(n)*sum_{surjections kappa}
+                  product_{p in Q}(1-p^(-b_{kappa(p)})).
+The matched comparator has coefficient
+ (mu-delta_1)^{*3}(n)=mu(n)[3^l-3*2^l+3],
+the number of these surjections. Both vanish when1<=l<3 and have the
+same sign otherwise. The unit n=1 has coefficient zero separately; the
+displayed comparator polynomial does not apply to the empty prime set.
+When l>=3 and all p in Q are at least Y,
+ 0<=|p(n)|/[36*|(mu-delta_1)^{*3}(n)|]<=1,
+and the ratio is at least1-l*Y^(-1/6) when that lower bound is positive.
+This follows from product(1-t_p)>=1-sum t_p, with every t_p<=Y^(-1/6).
+
+Thus on integers with only sufficiently large prime factors the coefficient
+approaches36 times its comparator, rather than retaining a uniformly tiny
+coefficient. Small primes are genuinely attenuated, and the slow p^(-1/6)
+scale can make finite data preasymptotic. This supplies a concrete possible
+explanation of early finite gains. It is not a lower bound on the full signed
+energy, because weighted sums of opposite mu signs can cancel differently.
+Nonsquarefree and cross-factor repeated-prime branches do not obey this simple
+squarefree sign law and remain in C and the full moment. Their density is
+not negligible merely because prime-square labels occur.
+
+6. Equal shift spacing: exact cocycle coincidences, not telescoping
+Let A=D_delta(s), B=D_delta(s+delta), C0=D_delta(s+2delta). Then D_2=AB,
+D_3=ABC0, so P=36(A-1)(AB-1)(ABC0-1). This does not telescope.
+Writing L_j=H_delta(s+j*delta), exact normalized identities give
+ H_2=(L_0+D_1 L_1)/2,
+ H_3=(L_0+D_1 L_1+D_2 L_2)/3,
+ P=(1/6)L_0(L_0+D_1 L_1)(L_0+D_1 L_1+D_2 L_2).
+The shifted L_j corresponds to multiplying its coefficients by n^(-j*delta).
+All D_i factors are still signed full arithmetic kernels. These equalities
+can expose factor placement and exact complements; they do not give positive
+summands or remove the composite cancellation task. The largest internal
+twist here is1/3, too small to make its prefix absolutely O(sqrt x): the
+elementary absolute bound still permits x^(2/3). No such branch is discarded.
+
+One complete three-dimensional hyperbola identity is also available. Let
+U=x^(1/3), A_i(t)=sum_{n<=t}h_i(n), and S_ij their full pair summatory.
+Every tuple has at least one coordinate<=U, so inclusion-exclusion yields
+ S(x)=sum_i sum_{n_i<=U}h_i(n_i)S_jk(x/n_i)
+     -sum_{i<j}sum_{n_i,n_j<=U}h_i(n_i)h_j(n_j)
+                                  A_k(x/(n_i*n_j))
+     +A_1(U)A_2(U)A_3(U).
+This includes every intersection and integer cutoff. Substituting centered
+single/pair channels retains their exact power terms and boundary products.
+Even hypothetical square-root point bounds for S_jk's remainder, followed
+only by |h_i|<=1/b_i, cost x^(1/2)sum_{n<=U}n^(-1/2)=O(x^(2/3)). Thus this
+naive absolute hyperbola bootstrap does not close the desired square-root
+remainder. It would need additional signed convolution estimates; finite
+success of an individual channel is not that missing premise.
+
+7. What is still required for an all-scale proof
+For this ONE fixed complete candidate and cofinally many q>=2, prove finite
+Cq independent of every dyadic X>=32 such that E_J(X)<=Cq ceil(X^(1/q)),
+with finite head retained. By the paid peel in section3, this is equivalently
+the full F=T+C-N_1-N_2 moment, with explicit component costs added.
+No bound for F has been established here. In particular the small-prime
+attenuation, small same-prime mass, exact harmonic prime-tuple estimates
+from the frozen review, and global holomorphic equivalence do not control
+this unweighted mixed-prime/composite correlation.
+
+If the premise held, the centered Mellin function would be holomorphic in
+Re(s)>1/2. At an ordinary zero rho, absence of all farther zeros at
+rho+1/6,rho+1/3,rho+1/2 would give an uncanceled order3m(rho) pole in P.
+More generally cross-factor cancellations still force at least one farther
+zero with multiplicity at least m(rho). Repeating rightward must reach the
+Euler zero-free region. This is the reviewed conditional RH bridge, not a
+signed moment proof. No finite-prefix or bounded quantitative product norm
+recovery is claimed. Integer-to-real/head transfer remains as in the frozen
+structural review, with every declared smooth term present.
+
+Current mathematical conclusion
+There are provably small same-prime and bounded-energy critical smooth
+components. There is also a provably LARGE mixed-prime skeleton, forcing
+genuine cancellation by the full composite-factor complement. The squarefree
+surjection formula identifies exact attenuation and its asymptotic comparator
+limit, while the equally spaced shifts yield only the stated cocycle, not
+a hidden Euler inverse. These are useful structural reductions and a concrete
+failure of a prime-tuple-only bound. They do not settle the complete uniform
+signed remainder. Candidate15 is not promoted after its frozen final-gate
+failure; that finite decision is distinct from a mathematical refutation.
+No RH-strength theorem, parameter refit or new arithmetic calculation occurs.

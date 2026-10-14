@@ -1,0 +1,50 @@
+{
+  "runs": [
+    {
+      "command": [
+        "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_increment_projection"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=12120\n",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n",
+      "operations": 12120,
+      "elapsed_seconds": 0.06718476300011389
+    },
+    {
+      "command": [
+        "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_increment_projection.Projection.test_mean_zero_guard_and_scoped_weak_fact_countermodels"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=11949\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "operations": 11949,
+      "elapsed_seconds": 0.06550120198517106,
+      "reason": "Only the new Mellin/scope-gate test after adding those two rules"
+    },
+    {
+      "command": [
+        "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_increment_projection.Projection.test_source_specific_analytic_lane_keeps_energy_scope_separate"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=2160\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "operations": 2160,
+      "elapsed_seconds": 0.06645858302363195,
+      "reason": "Only new analytic-source bridge and selection-scope test"
+    }
+  ],
+  "operations": 26229,
+  "actual_source_evaluations": 0
+}

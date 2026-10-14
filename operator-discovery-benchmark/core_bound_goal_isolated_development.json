@@ -1,0 +1,15 @@
+{
+  "operations": 0,
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 0,
+      "elapsed_seconds": 0.4241455300070811,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.070s\n\nOK\n",
+      "tests": [
+        "test_run_core_bound_goal_isolated"
+      ]
+    }
+  ]
+}

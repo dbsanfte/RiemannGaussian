@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "missing": [],
+  "prior_frozen_files": 686,
+  "grammar_size": 18576,
+  "source_files": [
+    "mobius_arithmetic_bank_086.py",
+    "mobius_mixed_zero_086.py",
+    "mobius_bank_witness_086.py",
+    "check_mobius_arithmetic_bank_086.py",
+    "test_mobius_arithmetic_bank_086.py",
+    "test_mobius_mixed_zero_086.py",
+    "test_mobius_bank_witness_086.py",
+    "test_check_mobius_arithmetic_bank_086.py",
+    "mobius_arithmetic_bank_checker_086_development.json",
+    "mobius_mixed_zero_development_attempts_086.json",
+    "mobius_bank_witness_086_development.json",
+    "MOBIUS_MIXED_ZERO_DEVELOPMENT_086.txt",
+    "MOBIUS_BANK_WITNESS_DEVELOPMENT_086.txt",
+    "MOBIUS_ARITHMETIC_BANK_CHECK_SCOPE_086.txt",
+    "MOBIUS_ARITHMETIC_BANK_REVIEW_086.txt",
+    "mobius_arithmetic_bank_protocol_086.txt",
+    "run_mobius_arithmetic_bank_086.py"
+  ],
+  "scientific_queries": false,
+  "fresh_parent_values_predicted": false,
+  "hashes_used": false
+}

@@ -1,0 +1,44 @@
+{
+  "RREF_processes": 1,
+  "aggregate_memory_limit_bytes": 17179869184,
+  "alphas": [
+    "1/5",
+    "2/7",
+    "3/11"
+  ],
+  "gamma_max_denominator": 64,
+  "hashes_used": false,
+  "isomorphic_prime_matrices_repeated": false,
+  "max_attenuation_degree": 2,
+  "new_frozen_source_count": 15,
+  "old_suites_or_studies_replayed": false,
+  "operator_archive_limit": 512,
+  "previous_goal_turn": "PROGRESS:057 executed, refuted fixed claims and changed the search input",
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16
+  ],
+  "proof_selection_limit": 16,
+  "seconds_per_module": 7200,
+  "source_arrays_evaluated": false,
+  "tau": "1/2",
+  "universe": [
+    2,
+    3,
+    5
+  ],
+  "workers_for_independent_candidates": 3
+}

@@ -1,0 +1,46 @@
+{
+  "owner": "independent_prime_insertion_checker_055",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_prime_insertion_055"
+      ],
+      "returncode": 0,
+      "tests": 24,
+      "stdout": "SYNTHETIC_WORK module=test_check_prime_insertion_055 operations=2738931\n",
+      "stderr": "test_arbitrary_fractional_exponent_and_normalization (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_binary_floor_weight_and_empty_unit_gate (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_both_children_open_quantifier_and_false_claims (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_charge_only_pipeline_meter_and_no_hidden_source_reads (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_complete_tail_signs_not_dropped (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_derived_output_capacity_is_separate_from_input (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_empty_and_complete_three_prime_boolean_algebra (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_energy_bound_request_types_source_and_parameter_binding (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_energy_complete_signed_crosses_and_fractional_decay (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_energy_negative_cross_cannot_be_omitted (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_energy_seed_and_recovery_cost_cannot_be_underpriced (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_forged_interval_profile_or_source_authority_rejected (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_fresh_empty_single_and_joint_interval_admission (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_independent_formal_shift_and_shared_prime_mask (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_independent_mu_and_coprime_counts (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_log_boundary_and_bounded_zero_C (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_missing_atoms_and_incorrect_idempotence_rejected (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_nonzero_P_one_and_excluded_unit (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_numeric_type_and_capacity_guards_before_rebuild (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_prime_and_exact_rational_parameter_guards (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_private_cache_extension_and_alpha_key (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_source_unit_and_radical_state_restrictions (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_tail_requires_integer_scope_full_source_and_open_core (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\ntest_uniform_laplace_tail_source_bound (test_check_prime_insertion_055.PrimeInsertionTests) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.047s\n\nOK\nPEAK_RSS_KIB=42212\n",
+      "operations": 2738931,
+      "operations_marker_present": true,
+      "elapsed_seconds": 0.23052992497105151,
+      "peak_rss_KiB": 42212
+    }
+  ],
+  "operations": 2738931,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "edits_stopped": true,
+  "scientific_arrays_read": false,
+  "actual_source_study_run": false,
+  "prior_suites_replayed": false,
+  "new_checker_imports_new_producer": false,
+  "distinct_tests": 24,
+  "total_test_invocations": 24,
+  "failures": 0,
+  "admitted_scope": "Exact ordinary-mu insertion identities and pointwise sign; fresh selected finite intervals; uniform high-t Laplace tail; all-integer target recovery CONDITIONAL on an OPEN both-parity recurrence.",
+  "reused_immutable_primitives": [
+    "check_fractional_prime_rh_bridge_052.Meter/_rational/_expect",
+    "check_prime_scale_values_053._mobius/_atom"
+  ],
+  "available_apis": [
+    "verify_insertion(request,certificate,meter=None)",
+    "prepare_context(meter=None)",
+    "verify_filter_interval(request,proposal,meter=None,context=None)",
+    "verify_energy_recovery(request,certificate,meter=None)",
+    "verify_tail_bound(request,certificate,meter=None)"
+  ]
+}

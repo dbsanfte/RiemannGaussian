@@ -1,0 +1,187 @@
+AUTOMATIC CORE BOUND SYNTHESIS AND CERTIFIED PROOF FEEDBACK
+
+Current result
+--------------
+The detector now generates auxiliary constructions AND complete recurrence
+hypotheses for the unresolved signed core. A new run evaluated10,766
+constructions and86,128 bound hypotheses. It selected13 before fresh source
+generation, and an independent implementation verified all arithmetic.
+All13 passed the declared final finite tests. Subsequent proof review and
+rigorous complex-ball certificates show that every selected ALL-SCALE
+premise is false: its own filtered energy would have logarithmic degree
+below the minimum imposed by a surviving critical double pole.
+
+This is a completed detector -> candidate -> proof attempt -> new rejection
+rule loop. It establishes no uniform critical bound and no RH proof. The
+finite observations remain valid, and the original frozen results remain
+unchanged. The new rule rejects32,298 enumerated bound shapes independently
+of their fitted constants. There are still6,340 finite-surviving hypotheses
+with conditional cofinal recovery not excluded by the available gates;
+these are open conjectures, not established estimates or fresh selections.
+
+Authoritative artifacts
+-----------------------
+  core-bound-results/pilot-001/report.json
+  core-bound-results/pilot-001/selection.json
+  core-bound-results/pilot-001/final_bounds.json
+  core-bound-results/pilot-001/pole-feedback-001/report.json
+  core-bound-results/pilot-001/pole-feedback-001/pole_witness.json
+  core-bound-results/pilot-001/pole-feedback-001/selected_feedback.json
+  core-bound-results/pilot-001/pole-feedback-001/next_search_input.json
+  candidate10_core_bound_obligation.json (direct copy of the last file)
+  core-bound-results/latest.json
+
+The main pilot's older next_search_input.json predates the new rejection
+rule. Continue from the published candidate10_core_bound_obligation.json,
+which supersedes those13 open proof obligations with countercertificates
+and carries the ORIGINAL unresolved full-core target forward.
+
+No prior joint-preconditioner artifact or frozen source was edited. Current
+root files named by either frozen manifest also remain byte-identical.
+New snapshots use direct bytes, without hashes. New proof reviews are:
+  CORE_BOUND_POLE_ORDER_REVIEW_006.txt
+  CORE_BOUND_CANDIDATE_REVIEW_006.txt
+Both are Sol6.1 reviews of detector-generated outputs and reusable rules.
+
+What is searched automatically
+-------------------------------
+Implementation: core_bound_synthesis.py; orchestration:
+run_core_bound_synthesis.py; independent scalar checker:
+check_core_bound_synthesis.py.
+
+The source is the already verified complete four-mode signed core
+  f=beta*nu0-beta*nu1-R_u*nu2-beta*mu, beta=9/2,
+  nu0=k_(1/3)*(mu*mu),
+  nu1=k_(1/3)*(mu*mu_(2/3)),
+  nu2=k_(1/3)*mu_(2/3),
+with k_a(n)=n^(-a), mu_a(n)=mu(n)*n^(-a). Every actual prime, prime power,
+unit, center and signed cross is retained to the declared source horizon.
+The prior bounded convolution inverse and complete correction cost remain
+in the route back to the original signed target; see the parent handoff.
+
+Before any source responses are read, the generator enumerates:
+-13 delays G(n)=F(n)-a*F(floor(n/2)), where a=0 or +/-2^theta,
+ theta in{0,1/6,1/3,1/2,2/3,5/6};
+-one exact log-Abel filter, G(n)=F(n) below64 and
+ G(n)=sum_(k<=n) f(k)log(k)/log(n) at n>=64;
+-positive storage A(X)=E_G(X)+w*E_H(X), or no extra storage;
+-H(n)=n^(-alpha)*v.[mode_prefix(n)-b*mode_prefix(floor(n/2))],
+ v any single coordinate or signed pair, alpha in{0,1/6,1/3,1/2},
+ b=0 or2^theta with theta in{1/3,1/2,2/3}, w in{1/3,1,3}.
+Here E_Q(X)=X^-2 sum_(X<=n<2X) Q(n)^2. Full squares include all cross terms.
+There are14*(1+16*4*4*3)=10,766 constructions.
+
+For each, the generator conjectures
+  A(2X)<=rho*A(X)+C*X^gamma*(1+log2 X)^k, every dyadic X>=1,
+with rho in{1/2,1}, gamma in{0,1/6}, k in{0,1}. The integer C is fixed by
+training, using the ceiling of5/4 times the largest nonnegative normalized
+drift. It is never refitted on validation or final observations. The code
+also generates the exact next obligation, its uniform domain, domination,
+conditional recurrence consequence and recovery cost. No model chooses
+each expression, bound exponent, or fitted constant.
+
+The grammar and admissible proof rules remain human-specified. This is not
+an unrestricted autonomous theorem prover. Its current proof backend can
+establish domination, conditional iteration/recovery, a weak all-scale
+reference bound, and several impossibility rules. Establishing a new
+RH-strength signed increment still requires a new argument or a successful
+composition of proof rules; a numerical pass never supplies that argument.
+
+Proof rules and the new discovery
+---------------------------------
+For all generated programs, the independent checker verifies an instance
+of a universal absolute-prefix reference bound
+  A(2X)-rho*A(X)<=C_ref*X*(1+log2 X)^2, rho>=0.
+This follows from the complete arithmetic coefficient majorants. There are
+10,766 INSTANCES of one rule, not10,766 independent new theorems. The power
+X is too large to supply the required critical signed control.
+
+The new critical-pole rule is core_pole_growth_obstruction.py. It has two
+parts: a checked local analytic witness and a generic Mellin growth theorem.
+The exact complete source Dirichlet series is
+  D(s)=zeta(s+1/3)*[beta/zeta(s)^2
+       -beta/(zeta(s)*zeta(s+2/3))-R_u/zeta(s+2/3)]-beta/zeta(s).
+The unique term of order2 at a simple ordinary zero has nonzero coefficient
+beta*zeta(rho+1/3)/zeta'(rho)^2. All other terms have smaller order.
+
+Fresh rigorous enclosures use the rational disk centered at
+  1/2+14.13472514173469379046*i, radius1/100000.
+A256-bit Rouche criterion and a320-bit Newton contraction criterion each
+certify one simple zero. Reflection symmetry places it on Re(s)=1/2.
+Whole-rectangle evaluations bound zeta(s+1/3) away from zero by more than
+0.2315, and zeta(s+2/3) by more than0.4087. All13 delay multipliers are also
+bounded away from zero on the disk. These are geometric enclosures, not
+sampled center values or estimates inferred from finite arithmetic data.
+
+For log-Abel the exact identity M_G'(s)=D'(s)/s plus an entire finite head
+preserves the leading pole order. The integer-cell discrepancy is bounded
+and has a Mellin transform holomorphic for Re(s)>0. Dividing by log(n)
+therefore does not remove the core's original double pole.
+
+Generic theorem: a surviving leading order d at a critical-line point
+forces any complete dyadic energy bound O((log X)^p) to satisfy p>=2d-2.
+For this witness d=2, so p>=2. With gamma=0, the recurrence implies p=k
+when rho<1 and p=k+1 when rho=1. Positive added storage cannot evade this
+restriction because A>=E_G. The test concerns the actual filtered target;
+extra logs in a conservative inverse bound do not rescue a false premise.
+
+Every selected hypothesis had rho1/2,gamma0. Twelve had k0; the log-Abel
+candidate had k1. Thus all13 are analytically false for EVERY fixed finite
+C, despite their final finite passes. No failure scale is asserted. The
+rule leaves rho1,k1 and rho<1,k>=2 open. Positive powers gamma>0 and filters
+whose noncancellation is uncertified are not rejected by this rule.
+This is fully consistent with RH and proves no bound at the log-squared
+boundary. Fractional zeta powers require a separate branch theorem; the
+integral-pole compiler explicitly refuses to assume one.
+
+Numerical scope, resources and checks
+-------------------------------------
+Training parents:1,2,...,1024 (powers of2).
+Validation parents:2048,4096,8192,16384.
+Final parents:32768,49152,65536; the49152 case is an irregular probe outside
+the dyadic claim. Final32768 overlaps older data. Final65536 uses a wholly
+fresh child block, ending at H=262143. All13 choices and constants were
+saved before either fresh worker generated that source.
+
+The160-bit producer uses a streaming signed Gram representation; the192-bit
+checker reconstructs the source via direct Dirichlet convolutions and
+literally evaluates the expressions. All12 complete arrays agree through
+H:3,145,728 tight scalar enclosure comparisons, including all four mode
+coefficients/prefixes, f,F,log-prefix and log-Abel. All candidate block
+energies, training decisions and validation decisions also agree.
+
+The main run used1,220,959,613 charged operations out of3.2billion and
+466.661seconds. Sum of parent and worker peak RSS is below1.93GiB; the
+aggregate limit was16GiB. No quadratic pair table was constructed.
+The postanalysis used20,198,600 charged operations including its development
+reserve,11.749seconds, and no new arithmetic source evaluation. Total
+charged work for both is1,241,158,213. No numerical retry or refit occurred.
+The main frozen combined suite passed15tests; the new rejection module's
+owned development suite passed5tests. The rigorous local certificates are
+saved separately and use distinct existence criteria and precisions.
+
+Next search input and admission order
+-------------------------------------
+The new gate is executable as core_pole_growth_obstruction.gate and was
+applied to every archived hypothesis by run_core_pole_feedback.py. It must
+run BEFORE ranking in the next pilot; the old pilot and its selection are
+immutable. The published next input specifies that order explicitly.
+
+Retain the full source, all inverse/correction costs, and nonnegative
+storage with internal signed crosses. Admit rho1,k1,gamma0 or expand to
+rho<1,k2,gamma0; these respect the necessary degree but remain unproved.
+The sharper006 log-Abel block-recovery lemma has no extra log loss and can
+be compiled into a future recovery registry with its finite head intact.
+Do not interpret fixed gamma1/6 as control for every epsilon>0.
+
+The unresolved task is still a uniform signed increment/correlation bound.
+Search for constructions and proof-rule compositions that establish it,
+including genuinely signed work or scale-dependent mechanisms. Agents may
+help invent and verify reusable rules; the detector should enumerate their
+applications and supply its own candidate hypotheses. Repeatedly failing a
+premise must change the admissible search or become a new explicit target.
+
+All data through262143 and all final scores are now observed. Any later
+adaptation may use them as training, but a new final test needs a newly
+declared range. Do not relabel another fit on these scales as unseen
+validation. No all-scale signed control or RH proof is claimed. Goal active.

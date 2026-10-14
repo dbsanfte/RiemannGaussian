@@ -1,0 +1,118 @@
+ACTUAL SIGNED NULLSPACE GAPS WITH INDEPENDENT CONSTANT AND EXPONENT LAWS
+
+The target is the full actual defect Delta(X)=A(2X)-4A(X), not an unsigned
+proxy or a selected part. Q(N)=sum_(n<=N)mu(n)^2 and N=4X. The fitted family
+is D(X,q)=C(q)*X*ceil(X^epsilon(q))*ceil(ell(X)^L), ell=1+floor(log_2 X).
+Ceilings use the original integer/fraction split for powers above one.
+L is a nonnegative rational. Numerical fits propose the HALF-GAP
+Delta(X)<=D(X,q)*Q(4X)/2 at every dyadic X and every sufficiently large q.
+It is stronger than merely positive nullspace gap; it is not proved.
+Q<=4X makes this an RH-sufficient full signed defect bound when
+epsilon(q)>0 tends to zero. Every finite C(q) may depend on q but never X.
+No positivity assertion for a complete dual matrix is made from this scalar
+test. It isolates the missing arithmetic premise before a Schur comparison.
+
+1. CONSTANTS AND EXPONENTS ARE INDEPENDENT.
+Exponent schedules use 1/ceil(q^a), 1/(2^ceil(q^a)), and 1/q!, with positive
+rational a; fixed rational epsilons are separate noncofinal calibrations.
+Constant programs include 1, 1+ceil(q^r), exponentials, factorials and
+powers of the exponent denominator. There is also the fully quantified
+family: every sufficiently large q has SOME finite C_q working at all X.
+Only finitely sampled constants are fitted for that family. A new q has
+no prediction; its required finite constant can be reported as a diagnostic
+but must not be turned into a successful extrapolation.
+
+For each fixed q, factorial and exponential constants remain finite and
+scale-independent. Their growth as q increases changes the candidate claim,
+not the ordinary X exponent. No collection of finite growth templates is
+claimed to cover all RH-compatible constant laws. The existential per-level
+family removes that unnecessary uniform growth restriction but still has
+an unproved all-scale arithmetic premise.
+
+2. SLOWLY GROWING CONSTANTS CAN STILL FORCE ZERO SIMPLICITY.
+Suppose a full signed-defect family satisfies, for every small positive
+epsilon and every dyadic X,
+Delta(X)<=B_epsilon*X^(2+epsilon)*ell(X)^L,
+where B_epsilon=O(epsilon^(-kappa)) as epsilon decreases to zero. Dyadic
+induction, summing a geometric series and bounding the earlier log weights
+by the final one, gives
+A(X)<=K*epsilon^(-kappa-1)*X^(2+epsilon)*ell(X)^L.
+Here K is independent of epsilon for epsilon in (0,1], after adding A(1).
+
+Set sigma=1/2+h and choose epsilon comparable to h, with epsilon<=h.
+Cauchy on each block and a convergent geometric moment sum yield
+|1/((sigma+it)*zeta(sigma+it))|
+ <=K_t*h^(-(kappa+L+3)/2), 0<h<=h0.
+Indeed the energy coefficient contributes h^(-(kappa+1)/2), and summing
+ell(2^j)^(L/2)*2^(-j*h/2) contributes h^(-L/2-1). This uses the exact
+unfiltered Mertens Mellin identity, already proved in the source stage.
+A critical-line zero of multiplicity m has reciprocal magnitude comparable
+to h^(-m) at its fixed height; hence m<=(kappa+L+3)/2.
+If kappa+L<1, this forces m=1. Unbounded constants alone do NOT remove
+that restriction. For epsilon=1/ceil(q^a) and C(q)=O(q^r), kappa=r/a.
+Power ceiling schedules have bounded relative gaps near zero, so q can be
+chosen with epsilon between two fixed positive multiples of h. The declared
+exponential schedules have this property too. For factorial schedules the
+nearest smaller epsilon can lose a factor q+1. This factor is subpolynomial
+in 1/h, so the same LIMITING pole exponent and integer multiplicity bound
+hold; a plain Big-O with that exact exponent is not asserted there. A
+subpolynomial constant law similarly uses every positive kappa and then
+takes the limiting exponent. Reports label this limiting-power scope.
+For constant laws that are powers of the reciprocal epsilon, kappa is that
+exact power along the schedule, with the above gap qualification.
+This is a conditional CONSEQUENCE of the proposed global bound, not a
+claimed fact about actual critical zeros or a disproof of a candidate.
+
+For example, the previous detector's positive powers r=1/6,1/3,1/2,
+epsilon=1/q and L=0 STILL impose critical-zero simplicity if proved.
+Its positive r allowed unbounded constants, but did not necessarily avoid
+the stronger simplicity consequence. The original unrestricted cofinal
+B_epsilon criterion has no such imposed constant-growth premise.
+
+3. ANONYMOUS GLOBAL BOUND INFERENCE IN A SEPARATE PROOF QUEUE.
+The detector receives integer responses: the minimum prefix-square energy
+over binary vectors of length m with mass J. Its declared dictionary is
+monomials in J and m, with sparse exact rational fitting. It is not given
+an expected polynomial, antiderivative or known coefficient vector. The
+selected polynomial is frozen before fresh response dimensions and before
+its analytical proof attempt.
+
+For any binary vector with J ones, the ith occupied position is at most
+m-J+i. Therefore every prefix through t has at least
+max(0,t-(m-J)) ones. Prefix-square energy, summed for t=0,...,m-1,
+is at least sum_(k=0)^(J-1) k^2. Equality is attained by placing all ones
+in the last J positions. The generic admission backend checks whether the
+DETECTED polynomial has boundary P(0,m)=0 and symbolic difference
+P(J+1,m)-P(J,m)=J^2. If so induction proves it equals that sum for all
+integer J>=0. The exchange argument then proves the global minimum bound.
+This is an inferred universal estimate, not an RH-strength prime estimate.
+
+Applied to any boolean divisor-row mask at N=4X, the indicator of omitted
+rows in (2X,4X] obeys C*z=z and G_w*z=0. If there are J omitted rows,
+z^T H z>=P(J) and z^T S z<=D*J-P(J). This quantitative obstruction
+does not assume that omissions are periodic or distributed in either half
+of the tail. Any positive tail density fails when D=o(X^2). More generally
+J of power alpha fails when 2alpha exceeds the ordinary power of D.
+For cofinal epsilon approaching zero and D of power 1+epsilon, omitting
+substantially more than square-root many tail rows obstructs this universal
+PSD route. Other representations of an arithmetic operator are not excluded.
+
+4. CALIBRATION AND COUNTERFEIT CONTROLS.
+The elementary H row-norm is <=8X^2. Thus D=16X^2 gives
+Delta<=D*Q/2 at ALL integer X for the actual inverse. Its energy exponent
+is THREE. It is the unconditional generic calibration, not the RH bound.
+The exact full signed defects and Q counts at new large and irregular
+scales are checked against independently factor-derived arithmetic.
+
+A counterfeit vector that agrees with actual mu through every development
+coefficient and is one thereafter has cumulative sum n+c eventually.
+Its exact full defect is (28X^3-X)/3-2(c^2-c)X once X is beyond the shared
+prefix. Thus it fails every cofinal fixed-q family of exponent <3, whatever
+finite constant law or logarithmic factor is used. It is not the actual
+inverse; complete divisor constraints distinguish it. A finite successful
+fit can still miss this future tail, so numeric success is not global proof.
+
+All exact candidate formulas and learned constants are frozen. Analytical
+dispositions are written afterwards; no final-case correction of constants
+is made. The guided grammar, generic proof methods and inherited identities
+are explicit. No global critical arithmetic gap or RH conclusion is claimed.

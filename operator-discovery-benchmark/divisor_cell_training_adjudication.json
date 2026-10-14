@@ -1,0 +1,67 @@
+{
+  "RH_proved": false,
+  "active_weights": {
+    "relation_weights": [
+      {
+        "descriptor": {
+          "family": "norm",
+          "id": "f2f2dfc5a13d5162e5d1514861b62690932e63687c8f381832b7106d7e4d0521",
+          "multiplier": "one",
+          "region": "all",
+          "weight": "child_rowmass"
+        },
+        "index": 9,
+        "weight": "-1"
+      }
+    ],
+    "square_weights": [
+      {
+        "descriptor": {
+          "domain": "all",
+          "family": "pair",
+          "id": "10f0d9b361d5eceafc47593df6588a184a0b7bb89ec87af4d34a25c431bff464",
+          "sign": -1,
+          "weight": "child_kernel"
+        },
+        "index": 22,
+        "weight": "1"
+      },
+      {
+        "descriptor": {
+          "contrast": "half",
+          "family": "signed_block",
+          "id": "21b57de94da4b7e48ca0cb6cfa0143891c49c5a384baae7f170ec0b997b0c53f",
+          "region": "child",
+          "weight": "one"
+        },
+        "index": 58,
+        "weight": "2"
+      }
+    ]
+  },
+  "all_factor_additions_weights_zero": true,
+  "all_new_cell_weights_zero": true,
+  "all_old_localizer_weights_zero": true,
+  "constant_slacks": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "critical_failure_scope": "Floating support failure gives no exact infeasibility theorem.",
+  "critical_source_sha256": "fe59511f889786f78d118c401a3b503b8cdb9d452f75be14bda704a406b60d45",
+  "critical_status": "no_certificate_found",
+  "dictionary_sha256": "4fb096f93789ecce1417a60e70a9aee7d7a273ede93b91226fd4dbcd0f11819a",
+  "formal_machine_proof": false,
+  "global_actual_signed_bound_proved": false,
+  "half_prefix_reindexing": "2 sum_{t=2X}^{4X-1} P_floor(t/2)^2=4 sum_{n=X}^{2X-1}P_n^2",
+  "identity": "U_X-Delta=4 sum_{n=X}^{2X-1} P_n^2 + sum_{i<j<=4X-1} K_2X(max(i,j)) (x_i-x_j)^2 - sum_i child_rowmass(i)(x_i^2-sf(i))",
+  "independent_math_review": true,
+  "leading_cubic_coefficient": "(56/3)/zeta(2)",
+  "mu_gamma": "56/3",
+  "scalar_budget": "U_X=sum_{t=2X}^{4X-1} t Q(t)",
+  "schema": 1,
+  "source_checkpoint": "cancellation-arithmetic-results/divisor-cell-probe-001/jobs/train-001.json",
+  "source_sha256": "0b71440bffa07fd9dbb7f45724754379db0745c105c651572558ef0ac79da2d0",
+  "uniform_scope": "Supplied unsigned identity holds at all integer X>=1; no critical signed estimate follows."
+}

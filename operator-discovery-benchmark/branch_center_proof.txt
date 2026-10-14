@@ -1,0 +1,204 @@
+Complete fractional branch centers, retained arithmetic, and cofinal recovery
+
+Scope. Classical complex analysis, Euler summation, the Gamma reflection
+formula, analytic continuation of ordinary zeta with its simple pole at one,
+and its functional equation are foundational dependencies. No prime number
+theorem, zero-density estimate, RH assumption, or new prime-distribution
+estimate is used in a proved arithmetic bound. Numerical fits are finite
+evidence only. These arguments are independently audited, not formalized in
+a proof assistant. The supplied all-scale power is ONE, not one half.
+
+1. Actual coefficients and the Bernstein bound.
+For 0<a<1 put c_a=a/Gamma(1-a)>0, L_a(1)=0, and L_a(n)=(log n)^a
+for n>1. Let lambda_a=mu*L_a and T_a(x)=sum_{n<=x}lambda_a(n).
+The producer computes the divisor inverse of the constant-one sequence, then
+the complete finite convolution. It has no prime or factorization oracle.
+Independent factorization is used only by the evaluator.
+
+t^a=c_a integral_0^infinity (1-exp(-ut))u^(-a-1)du. Integration by
+parts proves this formula; both endpoints vanish. For
+n=product p_j^e_j, r=omega(n)>0, b=sum(e_j-1)log p_j, the exact divisor
+difference gives
+lambda_a(n)=(-1)^(r-1)c_a integral_0^infinity
+ exp(-bu) product_j(1-p_j^(-u)) u^(-a-1)du.
+All integrands have their asserted sign. At zero the product is O(u^r),
+and at infinity u^(-a-1) is integrable even when b=0. Bounding all factors
+except the smallest-prime factor by one proves
+|lambda_a(n)| <= (log p_min)^a <= (log n)^a.
+Thus |T_a(x)| <= x*(log x)^a <= x*(1+log x), for EVERY real x>=1.
+This supplies all-index signed structure; it is not a cancellation bound
+of RH strength or a prime-distribution estimate.
+
+2. Whole continued numerator, including the exponent parameter.
+F_a(s)=sum_{n>=2}(log n)^a*n^(-s), initially Re(s)>1.
+There D_a(s)=F_a(s)/(s*zeta(s)) is the Mellin transform of T_a.
+Euler summation at any integer N>=2 gives the COMPLETE continuation
+F_a(s)=sum_{n=2}^N f(n)+Integral_N^infinity f(t)dt - f(N)/2
+       -sum_{k=1}^M B_{2k} f^(2k-1)(N)/(2k)! + R,
+where f(t)=t^(-s)(log t)^a. The integral denotes its analytic continuation
+(s-1)^(-a-1)*Gamma(a+1,(s-1)log N) off the cut s<=1 on the real axis.
+The periodic Bernoulli remainder has modulus at most
+2*zeta(2M)/(2*pi)^(2M)*Integral_N^infinity |f^(2M)(t)|dt.
+If f^(r)(t)=t^(-s-r)sum_j d_{r,j}(log t)^(a-j),
+d_{0,0}=1 and d_{r+1,j}=-(s+r)d_{r,j}+(a-j+1)d_{r,j-1}.
+For real a>0 an explicit remainder bound is
+[2*zeta(2M)/(2*pi)^(2M)] *
+Gamma(a+1,(Re(s)+2M-1)log N)/(Re(s)+2M-1)^(a+1) *
+sum_j |d_{2M,j}|/(log N)^j.
+The incomplete Gamma term has a positive lower integration endpoint; it is
+ENTIRE in its order. On compact sets of complex a the periodic remainder
+converges locally uniformly for Re(s)>0 once 2M+Re(s)>1. Consequently,
+for each fixed nonreal s with Re(s)>0, F_a(s) is ENTIRE in complex a.
+F_0(s)=zeta(s)-1, and F_k(s)=(-1)^k zeta^(k)(s), k>=1.
+
+An independent numerical evaluation uses
+F_a(s)=c_a integral_0^infinity [zeta(s)-zeta(s+t)]t^(-a-1)dt
+for nonreal s, Re(s)>0, 0<a<1. The identity holds by absolute summation
+on Re(s)>1 and then analytic continuation. A Taylor endpoint, a native
+finite integral, and the exact extracted tail (zeta(s)-1)/a give a whole
+continuation. The remaining tail beyond B is bounded by
+2^(-Re(s)-B)*(1+2/(Re(s)+B-1))*B^(-a-1)/log 2.
+Neither evaluation replaces F by a finite Dirichlet prefix.
+
+3. Complete real cut center.
+For 0<u<1 the paired integral for eta(u) is positive and >=1/2:
+each integral over [2k-1,2k] of u*t^(-u-1) is at least the next one,
+so their total is at least half the full integral over [1,infinity).
+Since zeta(u)=eta(u)/(1-2^(1-u)), zeta(u)<0 and
+|1/zeta(u)|<=2*(2^(1-u)-1)<=4*log(2)*(1-u).
+Z(u)=(u-1)zeta(u) has the removable value Z(1)=1, Z(0)=1/2,
+and Z(u)>=1/(4*log 2) throughout [0,1].
+
+A_a(x)=c_a integral_0^1 (x^u-1)/(u*Z(u))*(1-u)^(-a)du,
+x>=1, is the FULL branch center, not just a leading asymptotic term.
+The apparent singularity at u=0 is removable. The singularity at u=1
+is integrable because a<1. A_a(1)=0 and
+0<=A'_a(x)<=K_a=4*log(2)*c_a/(1-a), for every real x>=1.
+Its Mellin transform is
+M_a(s)=c_a/s integral_0^1 (1-u)^(-a)/[Z(u)*(s-u)]du,
+s outside [0,1], initially Re(s)>1. In particular M_a is holomorphic
+at EVERY nonreal ordinary zeta zero and at all positive ordinary heights.
+
+Euler summation writes F_a(s)=Gamma(a+1)(s-1)^(-a-1)+G_a(s),
+where G_a is holomorphic on Re(s)>0. Thus the sole branch contribution
+to D_a is Gamma(a+1)(s-1)^(-a)/[s*Z(s)]. Gamma reflection gives
+c_a=Gamma(a+1)sin(pi*a)/pi. Across 0<s<1, the upper-minus-lower jump
+of this contribution is -2*pi*i*c_a*(1-s)^(-a)/[s*Z(s)], exactly
+the Cauchy-transform jump of M_a. Local Cauchy deformation also cancels
+the integrable endpoint singularity at one, with no residual pole.
+Therefore D_a-M_a continues meromorphically to Re(s)>0, with no
+positive-real cut and with ordinary nonreal zeta zeros retained as possible
+poles. The subtraction never divides out or erases those ordinary zeros.
+
+For native evaluation write v=1-u and
+H_x(v)=(x^(1-v)-1)/[(1-v)Z(1-v)]; its apparent singularity at v=1
+is removable. Z is ENTIRE. Its first 64 deflated-zeta coefficients and
+a native upper bound on |v|<=2 bound |Z(1-v)-1| strictly below one
+on |v|<=5/4. The omitted Z coefficients have a geometric Cauchy bound.
+Rouche therefore gives a uniform positive lower modulus on that disk,
+without assuming any ordinary zero-free region. On its boundary,
+|H_x(v)| <= (x^(1+R)+1)/[(R-1)*Z_lower], R=5/4.
+If H_x=sum h_j v^j, then
+A_a(x)=c_a sum_{j=0}^{L-1} h_j/(j+1-a) + error,
+|error|<=c_a H_upper R^(-L)/[(L+1-a)*(1-1/R)].
+The producer uses 448..1024 terms with an explicit accuracy/resource check.
+The independent checker uses formal coefficient division at higher native
+precision, 640 terms, and a separately certified disk of radius 6/5.
+Every source center must CONTAIN that sharper independent enclosure.
+The smallest and largest protected final roots also receive direct
+original-variable quadrature anchors at x=32, with a separate Taylor
+endpoint, an exponential/sinc integrand, and bounded omitted tail.
+No point sample substitutes for either analytic remainder bound. Resource
+exhaustion is a missing observation, not countergrowth.
+
+4. Finite signed parameter families and normalization.
+Take ANY finite nonzero weights w_i in Q, with distinct b_i in Q cap(0,1).
+Let p_m=sum_i w_i*b_i^m. A Vandermonde matrix shows some p_m!=0
+with m<=number_of_atoms-1. Let m0 be the first such index, and define
+h(q)=p_m0/q^m0 !=0 for every positive integer q.
+E_a=T_a-A_a; R_q(x)=sum_i w_i E_{b_i/q}(x)/h(q).
+The normalization exposes the first nonvanishing parameter response. It
+is part of the operator, and ALL its arithmetic and observer costs are
+charged. A high-pass combination cannot gain credit just by tending to
+zero with increasing q. Signs of h are kept in arithmetic semantics.
+
+For every fixed q the following TRUE all-real-scale bound holds:
+|R_q(x)| <= C_q*x*(1+log x),
+C_q >= sum_i |w_i|*(1+K_{b_i/q})/|h(q)|.
+The certified ordinary power is one. The bound constant may grow with q.
+On n<=x<n+1, T_a(x)=T_a(n). Therefore an integer estimate extends to
+reals with the additional derivative guard
+K_q=sum_i |w_i|K_{b_i/q}/|h(q)|. No uncharged interpolation is allowed.
+
+5. Cofinal RH recovery, INCLUDING sum_i w_i=0 combinations.
+Suppose a family as in paragraph 4 satisfies
+for ALL q>=1, there exists a finite C_q such that for EVERY real x>=1,
+|R_q(x)|<=C_q*x^(1/2+eps/q^nu)*log(e+x)^d,
+with eps>0, nu>0 and d>=0 fixed. No bound on the dependence of C_q
+on q is required. A cofinal subsequence of q is also sufficient.
+
+If an ordinary zero rho has beta=Re(rho)>1/2, then for all sufficiently
+large q the centered Mellin integral is holomorphic at rho. Since M_a
+is holomorphic there and s!=0, this forces sum_i w_i F_{b_i/q}(rho)=0,
+regardless of multiplicity. Define the ENTIRE parameter function
+J(t)=sum_i w_i F_{b_i*t}(rho). Its zeros at t=1/q accumulate at zero,
+so J is identically zero. Its Taylor coefficients imply
+p_m*(partial_a^m F_a(rho) at a=0)=0 for every m.
+
+Let b_* be the largest base, with w_*!=0. An exact rational certificate
+finds M with |w_*|b_*^M>sum_{b_i<b_*}|w_i|b_i^M. Because all ratios
+b_i/b_* lie in (0,1), the inequality holds for EVERY m>=M. Thus
+p_m!=0 for every m>=M, and the entire function a -> F_a(rho) is a
+polynomial of degree <M (zero polynomial allowed). At positive integers
+k, |zeta^(k)(rho)|=|F_k(rho)| is at most polynomial growth in k.
+Hence the Taylor series of zeta at rho has INFINITE radius. Identity
+continuation would remove zeta's actual simple pole at one, a contradiction.
+There are no zeros with beta>1/2. The functional equation then gives RH.
+This is a conditional implication, not a proof of its signed premise.
+Finite sampled q and finite sampled x do not supply that premise.
+
+6. Charged point observers.
+At a query s=sigma+it, sigma>theta_q, t!=0, put
+F_q=sum w_i F_{b_i/q}/h(q), M_q=sum w_i M_{b_i/q}/h(q).
+|M_q(s)|<=K_q/(|s|*|t|). If an integer signed premise with constant
+C_q is supplied, its full Mellin norm is at most C_q I(sigma-theta_q,d)
++K_q/sigma, where I=Integral_1^infinity x^(-gap-1)log(e+x)^d dx.
+Therefore, when the COMPLETE F_q enclosure excludes zero,
+|1/zeta(s)| <= |s|*(K_q/(|s|*|t|)+C_q I+K_q/sigma)/|F_q(s)|.
+To bound I for a rational d, take D=ceil(d), log(e+x)<=log(e+1)+log x,
+and sum binomial(D,j)*log(e+1)^(D-j)*j!/gap^(j+1).
+All small parameter factors, centers, and interpolation costs are included.
+The observer lower modulus is recomputed from the SERIALIZED complex ball,
+then rounded downward on a 160-bit dyadic grid with an additional grid unit
+of guard. The checker verifies the strict margin against that exact printed
+enclosure; a floating point-endpoint reconstruction is not used as equality.
+An unresolved denominator is missing evidence. This conditional cost is
+not itself a new global estimate.
+
+7. Negative control: leading-only centering is mathematically false.
+Subtracting only a*x*(log x)^(a-1) (with any compact initial patch) has
+Mellin leading term Gamma(a+1)(s-1)^(-a). But
+1/[s*Z(s)]=1-(1+EulerGamma)*(s-1)+O((s-1)^2).
+The remaining branch coefficient is
+-Gamma(a+1)*(1+EulerGamma)*(s-1)^(1-a), which is nonzero and not
+holomorphic at one. No power strictly below one can bound the resulting
+error over all scales, even if RH is assumed. For distinct parameter
+bases the largest base gives the unique smallest residual exponent;
+finite signed combinations cannot remove it. Full-center candidates are
+not rejected by this obstruction. A finite fit may miss this false control.
+
+8. Discovery and promotion scope.
+The generator sees only declared arithmetic constructions; the coefficient
+fit sees anonymous real response columns without operator names, prime
+labels, analytic constants, or expected answers. Features and budgets
+are supplied assumptions. An inferred combination remains a numerical
+proposal until independent proof admission. A frozen rule can annihilate
+its first nonzero parameter moment: P(t)-2^m0 P(t/2). This creates a
+NEW signed family; it is not a semantics-preserving abbreviation. The
+universal recovery argument is rechecked on the new family and all q
+normalization costs change accordingly. Equal random slots are evaluated
+with the same discovery and validation resources. Adaptive batches are
+frozen before validation; private final cases are generated after sealing.
+
+No historical novelty, new distribution theorem, uniform critical bound,
+or RH proof follows merely from this expanded language or its finite tests.

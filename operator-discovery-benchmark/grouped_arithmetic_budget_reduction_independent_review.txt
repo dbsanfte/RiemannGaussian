@@ -1,0 +1,67 @@
+Independent posthoc algebraic reduction audit passed.
+{
+  "RH_proved": false,
+  "accepted_programs": [
+    {
+      "finite_verified": 5,
+      "observations": 6,
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 2,
+        "target": "mu"
+      },
+      "reduction_rules": 1,
+      "remaining_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f"
+    },
+    {
+      "finite_verified": 4,
+      "observations": 6,
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 6,
+        "target": "mu"
+      },
+      "reduction_rules": 1,
+      "remaining_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f"
+    },
+    {
+      "finite_verified": 6,
+      "observations": 6,
+      "program": {
+        "C": 1,
+        "allow_constant_slack": false,
+        "claim": "unsigned_calibration",
+        "q": 2,
+        "target": "mu"
+      },
+      "reduction_rules": 0,
+      "remaining_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f"
+    },
+    {
+      "finite_verified": 6,
+      "observations": 6,
+      "program": {
+        "C": 1,
+        "allow_constant_slack": false,
+        "claim": "unsigned_calibration",
+        "q": 2,
+        "target": "c"
+      },
+      "reduction_rules": 0,
+      "remaining_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f"
+    }
+  ],
+  "all_programs_retained": true,
+  "global_bound_proved": false,
+  "input_sha256": {
+    "results.json": "42b9e3be7fa51efce3fd42a2d9f14400d6c7785084b4a5ab1a42543fea43427c",
+    "spec.json": "daa96c5bf9bd2fdb991eb782ff8b47a91426a9c20cc110b8cfba3cf6d94b7f52"
+  },
+  "universal_rule_scope": "nonnegative scalar padding removal only; full signed critical estimate unproved",
+  "verified": true
+}
+All four accepted vectors reduce to the same unchanged unsigned calibration weights (coordinate indices are independently matched to descriptors). This removes known nonnegative scalar padding; it does not lower the unavoidable retained cubic calibration budget to a critical bound. All six failed original programs remain unchanged. No original selection or finite certificate is overwritten.

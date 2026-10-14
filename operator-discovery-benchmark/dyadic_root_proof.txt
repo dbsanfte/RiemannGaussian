@@ -1,0 +1,316 @@
+DYADIC COEFFICIENT EXTRACTION AND FRACTIONAL ZETA TRANSFERS
+
+Scope: written universal mathematics with independently recomputed rational
+witnesses and Arb implementation checks. No theorem-prover formalization,
+historical originality, global analytic continuation, or RH proof is claimed.
+This extends the candidate T; it is not counted as a third independent new
+operator merely by naming a parameterized composition of known operations.
+
+1. THE TYPED FAMILY
+
+Let delta be the arithmetic identity concentrated at 1. Ordinary Dirichlet
+convolution is denoted *. Infinitary convolution is
+
+ (a A b)(n)=sum_{ij=n} a(i)b(j) prod_p 1[v_p(i)&v_p(j)=0],
+
+where & is binary AND. Its associativity follows from the no-carry condition:
+an iterated product is allowed exactly when the exponent bit sets in all
+factors are mutually disjoint at each prime. Both algebras are commutative
+and filtered by integer index. For h(1)=0, every k-fold product vanishes at
+n whenever 2^k>n, so formal EXP and LOG terminate coefficientwise.
+
+For f(1)=1 and rational beta define
+
+ T_beta(f)=EXP_A(beta LOG_*(f)).
+
+The definition also has coefficientwise complex parameter semantics. The
+usual finite-at-each-coefficient formal identities give
+
+ T_beta(f*g)=T_beta(f) A T_beta(g).
+
+For beta!=0 the explicit normalized-group inverse is
+EXP_*(beta^(-1) LOG_A(f)). At beta=0 the output is delta.
+None of these abstract group identities is asserted to be historically new.
+
+2. CLASSIFYING THE INDEX OPERATION
+
+For an integer m>=1 define E_m(f)(n)=f(n^m). This operation needs lookahead:
+an output cutoff N needs input values through N^m. Finite implementations
+must either provide those coefficients or reduce their output cutoff.
+
+Claim: E_m is an endomorphism of the entire infinitary convolution algebra
+if and only if m is a power of 2, including m=1.
+
+Suppose m=2^k. If ij=n^m contributes to the infinitary product, put a=v_p(i)
+and b=v_p(j). Their addition has no binary carries and a+b=m*v_p(n).
+Every one of the lowest k binary digits of a+b is zero. Hence those digits
+of a and b are zero individually, so both are divisible by m. Thus i=r^m,
+j=t^m with rt=n. Conversely, an allowed pair r,t gives an allowed pair
+r^m,t^m because shifting all exponent bits preserves disjointness. This
+bijection proves E_m(a A b)=E_m(a) A E_m(b), on ALL arithmetic inputs.
+It preserves delta, so also commutes coefficientwise with EXP_A and LOG_A.
+
+If m is not a power of 2, split its set bits into two nonempty disjoint
+parts: m=a+b with a&b=0 and 0<a,b<m. For any prime p,
+delta_(p^a) A delta_(p^b)=delta_(p^m). Applying E_m gives delta_p, whereas
+both separately extracted impulses are zero. This disproves the law.
+The same operation already fails for ordinary convolution when m=2:
+E_2(delta_p*delta_p)=delta_p but E_2(delta_p)*E_2(delta_p)=0.
+
+The implementation checks unrelated rational local and integer-index
+inputs, including nonmultiplicative inputs. It supplies every non-dyadic
+impulse counterexample among 2<=m<=32. These are checks of implementations;
+the bit argument proves the classification for every m>=1.
+
+3. THE DISCOVERED PARAMETER LAW
+
+Let u(n)=1. The ordinary logarithm has coefficients
+
+ LOG_*(u)(p^e)=1/e, e>=1,
+
+and is zero at 1 and at integers with multiple distinct prime factors.
+This follows coefficientwise from -log(1-x)=sum_{e>=1}x^e/e at each prime.
+Consequently E_m(LOG_*(u))=(1/m) LOG_*(u) for every positive integer m.
+Combining this fact with section 2, for EVERY k>=0 and every parameter beta,
+
+ T_beta(u)(n^(2^k))=T_(beta/2^k)(u)(n), n>=1.              (1)
+
+The search supplied all integer multipliers 2 through 32, with an exact
+scalar c fitted only from exponent 1 at beta=1. Each model therefore fits
+that training datum. Exponents 2 through 12 and parameters -1/2,2/3,3/2,5/7
+were withheld. Only m=2,4,8,16,32 survive, with c=1/m. Input lookahead is
+prime exponent 384; no unavailable coefficients were treated as zero.
+An independent partition computation reproduces all 26 false fits and all
+five survivors. This is an explicitly enlarged, factor-aware secondary
+grammar, not a claim that its primitives were inferred from raw samples.
+
+The parameter-halving law is special to u, not all normalized inputs. For
+f=delta_1+delta_2, E_2(T_1(f))(2)=-1/2 while T_(1/2)(f)(2)=+1/2.
+LOG_*(f)(2^e)=(-1)^(e+1)/e and repeated factors of delta_2 cannot contribute
+under A, giving this exact counterexample. The implementation checks it.
+The E_m endomorphism classification itself still holds on ALL inputs.
+
+For reference, the local coefficient h_e(beta)=T_beta(u)(p^e) is
+
+ h_e(beta)=sum_{partitions pi of the set bits of e}
+                 beta^(number of blocks) prod_{B in pi} 1/(sum_{b in B}b).
+
+Here bit values are 1,2,4,...; h_0=1. Ordered partitions appear in EXP_A and
+the factorial divides out their order. This proves the formula independently
+of the production local convolution polynomial generator. Examples:
+h_1=beta, h_2=beta/2, h_3=beta/3+beta^2/2, h_4=beta/4.
+
+4. A REAL PARAMETER THEOREM, NOT ONLY SAMPLED ROOT ORDERS
+
+For every real beta in [0,1], all h_e are nonnegative. Term by term the
+no-carry exponential is bounded by the ordinary exponential of the same
+nonnegative source. Its ordinary coefficient is (beta)_e/e!<=1. Thus
+
+ 0<=h_e(beta)<=1 for ALL e and beta in [0,1].
+
+Set H_beta(x)=sum h_e(beta)x^e, analytic for |x|<1, and
+
+ R_beta(x)=(1-x)^beta H_beta(x),                          (2)
+
+using the analytic logarithm of 1-x that vanishes at x=0. Its constant
+coefficient is 1 and its linear coefficient is zero. If g_e denotes the
+coefficient of (1-x)^beta, then g_e<=0 for e>=1 and sum_{e>=1}|g_e|<=1.
+The latter assertion follows by letting real x increase to 1 in the binomial
+series; at beta=0 every nonconstant coefficient vanishes. Therefore each
+coefficient r_e of R_beta obeys |r_e|<=2, uniformly in e and real beta.
+
+For e<=48 the r_e are rational polynomials in beta, recomputed in two ways:
+generic no-carry exponential versus independent bit-set partitions, and
+FLINT polynomial multiplication versus standard-library rational arrays.
+For each r_e the exact Bernstein coefficients on [0,1] bound its absolute
+value by their maximum absolute value C_e. The convex hull property of the
+Bernstein basis proves that bound throughout the interval.
+
+At the exact radius r=71/100, the stored rational witness gives
+
+ sum_{e=2}^{48} C_e r^e + 2*r^49/(1-r)
+                  = 0.658980751510... < 1.              (3)
+
+The decimal is only a display. Every coefficient, Bernstein bound, head
+sum, tail and strict inequality is independently checked as a Fraction.
+The tail uses the universal coefficient bound, not extrapolation from the
+first 48 polynomials. Consequently |R_beta(x)-1|<1 on |x|<=71/100 for EVERY
+real beta in [0,1]. In particular R_beta has no zeros in that closed disk.
+This parameter beta differs from alpha=1/q in the finite root-lift detector;
+the present theorem covers the full continuous real interval [0,1].
+
+5. THE ANALYTIC ZETA BRIDGE
+
+The arithmetic coefficients of T_beta(u) are multiplicative: EXP_A of a
+prime-power-supported source factors over primes. They lie in [0,1], so
+
+ mathcal H_beta(s)=sum_{n>=1}T_beta(u)(n)n^(-s)
+
+converges absolutely for Re(s)>1. The product of (2) over primes gives
+
+ mathcal H_beta(s)=zeta(s)^beta mathcal R_beta(s),         (4)
+
+initially Re(s)>1, with the zeta logarithm normalized by its absolutely
+convergent Euler expansion. The correction product is
+
+ mathcal R_beta(s)=prod_p R_beta(p^(-s)).
+
+Since r_1=0 and |r_e|<=2,
+|R_beta(p^(-s))-1|<=2*p^(-2sigma)/(1-p^(-sigma)), sigma=Re(s)>1/2.
+This is summable locally uniformly in that half-plane. Every individual
+factor is nonzero there by (3), since p^(-sigma)<2^(-1/2)<71/100. Standard
+convergent-product estimates, or locally summing the normalized factor
+logarithms after a finite number of primes, show that mathcal R_beta is
+holomorphic and nowhere zero on Re(s)>1/2. This statement holds for every
+real beta in [0,1]. It does not assert that zeta^beta is single-valued there.
+
+6. REPEATED EXTRACTION AND THE RH OBSTRUCTION
+
+Put Z(s)=(s-1)zeta(s), holomorphic on Re(s)>1/2, with Z(1)=1. Its zeros in
+that half-plane are exactly zeta's zeros there. Let beta_k=1/(2^k), k>=1,
+and initially on Re(s)>1 define the pole-cancelled function
+
+ Phi_k(s)=(s-1)^beta_k mathcal H_beta_k(s)
+         =Z(s)^beta_k mathcal R_beta_k(s).                (5)
+
+The branch in this initial half-plane is log Z=log(s-1)+log zeta, with both
+logs normalized to their real values at real s>1. Equation (1) realizes
+the coefficient family by k repeated square-index extractions from T_1(u).
+
+Claim: RH holds if and only if EVERY Phi_k, k>=1, admits a single-valued
+holomorphic extension to Re(s)>1/2.
+
+If RH holds, Z has no zeros there. The half-plane is simply connected, so
+Z has a holomorphic logarithm matching the initial normalization. Equation
+(5) then supplies every extension because mathcal R_beta_k is holomorphic.
+
+Conversely, suppose all those extensions exist. Divide each by the nowhere
+zero correction to obtain a holomorphic G_k throughout the half-plane.
+The identity theorem applied to the initial half-plane gives G_k^(2^k)=Z
+everywhere. If Z has a zero of finite positive order m, then m must be
+divisible by 2^k for EVERY k. Choosing 2^k>m is a contradiction. Hence Z
+is zero-free in Re(s)>1/2. The classical functional reflection of the
+nontrivial zeros makes that equivalent to RH.
+
+A SINGLE root order cannot make this deduction: a double zero is compatible
+with a holomorphic square root locally, and a quadruple zero is compatible
+with both square and fourth roots. The next sufficiently large dyadic root
+detects their branching. This criterion is equivalent to RH; there is no
+proof here that the required extensions exist. Nor is coefficient extraction
+asserted to preserve analytic continuation for an arbitrary input series.
+
+Classical zeros/reflection references: https://dlmf.nist.gov/25.10 and
+https://dlmf.nist.gov/25.4. The index classification and rational correction
+witness are the distinct arithmetic content of this investigation.
+
+7. INDEPENDENT NUMERICAL BRIDGES AND BRANCH CONTROLS
+
+dyadic_analytic_probe.py computes T_beta(u) through 512 using generic
+ordinary LOG and infinitary EXP for beta=1/2,1/4,1/8. The independent
+partition route agrees coefficient by coefficient. Twelve fresh actual
+Arb zeta comparisons use sigma=3,4,6, local degree 48 and primes <=257.
+For these sigma, |log zeta(s)|<=log zeta(sigma)<pi, so the principal Arb
+log is the normalized Euler logarithm used in (4).
+
+The Dirichlet tail is bounded by N^(1-sigma)/(sigma-1). For the Euler
+truncations put a=2/(1-2^(-sigma)), P=257, M=48. Then valid bounds are
+
+ E=exp(a*(2^(-2sigma)+2^(1-2sigma)/(2sigma-1))),
+ B=a*P^(1-2sigma)/(2sigma-1),
+ K=a*(2^(-sigma(M+1))+2^(1-sigma(M+1))/(sigma(M+1)-1)).
+
+The product error is <=E*(exp(B)-1+K); multiply by |zeta^beta| and add the
+Dirichlet tail. These follow from |r_e|<=2, telescoping finite products,
+and bounding omitted primes by the corresponding positive integer sums.
+All comparisons use outward-rounded Arb balls. Adding 1/7 to coefficient
+4 is rejected in all twelve comparisons by a lower error bound larger than
+the proved permissible error.
+
+For the root criterion, Arb encloses actual zeta on the rectangle
+Re(s)=0.75+/-0.01, Im(s)=1+/-0.01 and certifies its modulus bounded away
+from zero. Thus Z is nonzero on the disk centered at 3/4+i, radius 1/200.
+The controlled analytic model (s-(3/4+i))^m Z(s) has exactly a zero of order
+m there. The nonzero correction cannot change root monodromy. A circuit
+multiplies its order-2^k root by exp(2*pi*i*m/2^k), which equals 1 exactly
+when 2^k divides m. Arb certifies every nonzero jump factor; exact integer
+arithmetic establishes the no-jump cases. Independently sampled, unwrapped
+phases agree for m=0,1,2,4,8 and k=1,2,3,4. Sampling is diagnostic; the
+whole-region zeta enclosure and explicit model factor justify the winding.
+
+These models test the DERIVED root-continuation criterion. They are not
+asserted to be T_beta of altered arithmetic inputs, and give no conclusion
+about actual off-line zeta zeros outside that certified test disk.
+
+8. A CONTROL USING AN ACTUAL CRITICAL-LINE ZETA ZERO
+
+The actual-zero control does not assume RH or merely use a numerical root.
+Its rational-decimal centre is c=1/2+14.13472514173469379046*i, radius
+r=1/10000. Arb supplies zeta(c), zeta'(c), and an enclosure for zeta''/2
+throughout the enclosing rectangle c+[-r,r]+i[-r,r]. The rectangle excludes
+the pole. Complex Taylor's integral remainder gives, on the whole circle,
+
+ |zeta(s)-zeta'(c)(s-c)| <= |zeta(c)|+r^2 sup_rectangle |zeta''/2|.
+
+This upper bound is strictly smaller than r*|zeta'(c)| by Arb's outward
+rounded bounds. Rouche's theorem therefore certifies exactly ONE zero,
+counting multiplicity, in the disk; it is simple. The disk is invariant
+under s->1-conjugate(s), which reflects nontrivial zeta zeros. Uniqueness
+then forces that zero's real part to be exactly 1/2. Z=(s-1)zeta has the
+same single zero there. The claim does not require a global count proving
+that this is the first zero; it is an actual certified zero at this height.
+
+The correction from section 5 is initially defined to the right of the
+critical line. To justify its role throughout this crossing disk, cancel
+its quadratic coefficient rather than assuming extension:
+
+ r_2(beta)=-beta^2/2, a=beta^2/2,
+ U_beta(x)=R_beta(x)*(1-x^2)^(-a),
+ mathcal R_beta(s)=zeta(2s)^(-a) prod_p U_beta(p^(-s)).    (6)
+
+The coefficients of U at degrees 1 and 2 vanish. For 0<=beta<=1, a<=1/2,
+the coefficients of (1-x^2)^(-a) are nonnegative and <=1 at even degrees.
+Using |r_e|<=2 therefore bounds |[x^e]U| by 2*(floor(e/2)+1)<=e+2. In
+particular |U_beta(x)-1|<=5*|x|^3/(1-|x|)^2. The prime product in (6)
+converges locally uniformly for Re(s)>1/3. Each factor is nonzero wherever
+|p^(-s)|<71/100, by section 4 and the nonzero factor (1-x^2)^(-a).
+Thus the product is holomorphic and nonzero for sigma greater than both
+1/3 and -log(71/100)/log(2), approximately 0.4941.
+
+The actual control certifies 2^(-0.4999)<71/100. Arb also certifies zeta(2s)
+nonzero on the entire enclosing rectangle. Its logarithm therefore extends
+to this simply connected disk from the overlapping Re(s)>1/2 part. Formula
+(6) proves that EVERY real-beta correction extends holomorphically and
+without zeros to the full test disk. This is a local extension theorem;
+it does not assume global zero-freeness of zeta(2s) to the left of Re(s)=1/2.
+
+Consequently the actual simple zero makes Phi_k in (5) acquire the factor
+exp(2*pi*i/2^k) after a circuit, for k=1,2,3,4. Arb certifies each nonzero
+root-of-unity jump, and independent unwrapped phase samples show winding
+one and the expected endpoint jumps. The rigorous zero count and correction
+extension justify the obstruction; phase sampling is only a diagnostic.
+
+An additional 13 cases use ACTUAL arithmetic inputs u^{*m}, m=1,2,4,8,
+whose Dirichlet series are zeta(s)^m. Generic LOG/EXP computes
+T_(1/q)(u^{*m})=T_(m/q)(u) through n=128, for q=2,4,8,16 with m<=q.
+The identity holds universally because LOG_*(u^{*m})=m LOG_*(u).
+Here the effective parameter m/q lies in the entire certified interval.
+The pole-cancelled transformed function is Z(s)^(m/q) R_(m/q)(s).
+Our certified simple zero of Z is a zero of multiplicity m in Z^m, so its
+order-q root branches exactly when q does not divide m. Exact root-of-unity
+decisions, generic arithmetic coefficient routes, and sampled winding m
+all agree. In particular the square-root transfer of zeta^2 has no branch
+jump at this zero, while its fourth-root transfer does; the fourth-root
+transfer of zeta^4 has no jump, while its eighth-root transfer does.
+These particular controls are arithmetic transfers of the stated actual
+zeta-power inputs, rather than models of the derived criterion alone.
+
+This circle crosses the critical line. Branching at the certified boundary
+zero is compatible with RH: the RH criterion asks for extension on the
+OPEN half-plane Re(s)>1/2. The check confirms sensitivity to actual zeta
+zeros without implying an off-line zero or a resolution of RH.
+
+Historical status: ordinary fractional powers, infinitary convolution,
+formal LOG/EXP, binary exponent shifting, Taylor/Rouche bounds and Euler
+counterterms have established frameworks. The exact compound law,
+full-parameter correction theorem and zeta-root application need
+publication-history review before originality is claimed.

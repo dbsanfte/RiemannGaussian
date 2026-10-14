@@ -1,0 +1,29 @@
+{
+  "schema": "prime-ratio-obstruction-miner-059-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "operations": 7245,
+      "elapsed_seconds": 0.005880985001567751,
+      "peak_rss_kib": 15744,
+      "output": "test_cells_keep_all_twelve_floors_constant (test_mine_prime_ratio_obstruction_059.MinerTests) ... ok\ntest_first_missing_prime_uses_actual_primes (test_mine_prime_ratio_obstruction_059.MinerTests) ... ok\ntest_no_prior_or_reverse_prime_pass_is_admitted (test_mine_prime_ratio_obstruction_059.MinerTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.006s\n\nOK\n"
+    }
+  ],
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_evaluated": false,
+  "old_suites_or_studies_replayed": false,
+  "preflight_failures": [
+    {
+      "command": "../.venv/bin/python -B mine_prime_ratio_obstruction_059.py",
+      "returncode": 1,
+      "error": "ValueError: positive test count",
+      "phase": "development receipt admission before directory creation and scientific floor-cell evaluation",
+      "correction": "Move the disclosed zero-test preparatory invocation to a separate preserved receipt field; account for its reserve separately."
+    }
+  ],
+  "scientific_cells_evaluated_during_failed_preflight": false
+}

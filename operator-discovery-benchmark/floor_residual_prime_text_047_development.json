@@ -1,0 +1,15 @@
+{
+  "schema": "prime-large-rational-output-regression-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 0.07296191103523597,
+      "operations": 187458
+    }
+  ],
+  "scientific_source_or_norms_evaluated": false,
+  "python_integer_decimal_limit_changed": false
+}

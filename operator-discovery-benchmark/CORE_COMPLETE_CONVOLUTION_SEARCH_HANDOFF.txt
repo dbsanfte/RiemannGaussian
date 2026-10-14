@@ -1,0 +1,128 @@
+COMPLETE EXPRESSION SEARCH AND CENTERED TRANSFER VERIFIED; CORE STILL OPEN
+
+Current input: candidate10_complete_convolution_obligation.json
+Accepted study: core-complete-convolution-results/pilot-001
+Producer: core_complete_convolution_search.py
+Independent checker: check_core_complete_convolution_search.py
+Runner/ancestry: run_core_complete_convolution_search.py, including verify()
+Rules review: CORE_COMPLETE_CONVOLUTION_BOUND_REVIEW_032.txt
+Protocol: core_complete_convolution_search_protocol.txt
+
+Progress and limitations
+Stage031 chose a cheap periodic branch while leaving its full head unpaid.
+This stage prices every term, removes artificial centering costs by exact
+whole-expression algebra, and searches a separate COMPLETE centered transfer.
+The last goal turn made verified progress. The original objective is active:
+neither the full signed core nor RH has been proved. Do not substitute the
+paid remainder or the generic prefix bound for that objective.
+
+Analysts supplied elementary inference rules. The executable synthesized
+their identities and compositions, searched rational scales, and produced
+exact certificates. No runtime model calls, source observations or fitting.
+The arithmetic/generic comparison shows no new prime-specific power gain.
+
+What the detector searched
+All51 inherited cubic geometries underwent exact affine normalization:
+ e=E-C delta, t_e=T-C delta, r_e=R-C delta.
+The complete expression AND its vanishing remainder are collected; their
+tail ideals are independent of C. No genuine mean/head is simply deleted.
+The formerly selected expression becomes E^3=R^3+3T^2(E-R) belowN.
+
+The proof language builds uniform prefix theorems inductively for powers1,
+2 and3 of any f with bounded prefix and a divisor coefficient envelope.
+It solves hyperbola coefficients over rational cutoffs through denominator6,
+retains every product indicator, and prices exact rectangles only in their
+valid domain. A truncated R^3 can use this independently proved generic
+theorem; it never assumes a target-specific cube estimate.
+
+Complete-geometry search used51 geometries and249 cost thresholds, with an
+exact primal or dual certificate at every threshold. Every finite head is
+priced. The chosen complete raw prefix route is the universal cube rule:
+ |prefix(A^2 E^3-c^3 One_U)(x)|
+ <=2430 U^(5/3)x^(2/3)(1+log x)^2
+   +81 U^(10/3)x^(1/3)(1+log x)+8U^5+8U,
+for all integer U>=1 and real x>=1. Lower-scale terms and the full head
+remain. Before applying outer K, its normalized energy cost at U<=N^(1/24)
+is N^(17/36) times logs, which is insufficient. Its prefix exponent2/3
+does not prove ordinary moment convergence at theta2/3, or the global
+Mellin bound at sigma9/20. Failure of this upper estimate is not a lower
+bound for the actual arithmetic energy.
+
+Selected centered operator and its proved control
+Let A(n)=mu(n)1_(n<=U), c=sum A(d)/d,
+ E=delta-One*A+c One, theta=2/3, K(n)=n^(-1/3), D=One_[1,U].
+Fix ONE integer N and integer1<=U<=N^(1/24). The detector selected
+ t=floor(N^(1/4)), r=floor(N^(3/4)),
+ T=E restricted to1..t, R=E restricted to1..r, J=E-R.
+It solved the coefficient3 in
+ E^3-R^3=3T^2*J on all coefficients n<=N.
+Strict support is certified by the tail ideals; perfect-power boundaries
+are included. Both cutoffs contain1..U.
+
+Define the COMPLETE source and finite replacement
+ F=A^2 E^3-c^3 D, F_R=A^2 R^3-c^3 D,
+ S_F(n)=prefix(K*F)(n)-m_F n^theta/theta,
+with m_F=A(theta)^2 E(theta)^3-c^3 D(theta), an ANALYTIC moment.
+The finite replacement has its complete finite moment m_R. The ordinary
+E(theta) moment exists, but ordinary convergence of E^3 at theta is not
+assumed. At integer n this continuous-main expression equals the declared
+discretely centered source prefix. Any later real-x/Mellin conversion must
+retain the unit-cell correction described in Review032.
+
+The exact join is
+ S_F=S_R+S_(hJ)-Delta_m n^theta/theta,
+ h=3A^2 T^2,
+ Delta_m=A(theta)^2 J(theta)
+          [E(theta)^2+E(theta)R(theta)+R(theta)^2-3T(theta)^2].
+This moment difference is generally NONZERO despite the local identity.
+All centered finite lifts retain d>n through their all-real inner main.
+The SAME finite -c^3D head remains in both source and replacement.
+
+For energy_N(H)=N^(-2)sum_(1<=n<=N)|S_H(n)|^2, the proved error is
+ energy_N(F-F_R)
+ <=5509980288 N^(-7/36)(1+log N)^4
+   +23702740992 N^(-3/4).
+Both terms are subcritical uniformly in all the declared U,N. They include
+floor constants, complete analytic centering and the cross between the two
+error contributions. Consequently
+ energy_N(F)<=2 energy_N(F_R)+2 error_bound,
+and conversely with F,F_R exchanged.
+This is a physical integer-prefix transfer; it does not pay the independent
+fixed-U global low-height Mellin Gram or every other original core channel.
+
+The search examined102 transfer arguments per profile, found11 with both
+padding powers strictly negative, and minimized the remaining cube cutoff
+beta. It selected beta3/4 and alpha1/4, improving the earlier beta5/6.
+No claim is made that an exponent0 with logarithms is subcritical.
+
+Generic comparison
+Repeating the transfer for arbitrary bounded weights produces the SAME
+selected cutoffs and powers -7/36,-3/4. Its logarithmic degrees are8,4,
+with constants5509980288 and34949449728. Actual Mobius facts remove logs
+and improve constants; this is not a new arithmetic exponent advantage.
+Do not relabel the proved truncation remainder as the required signed-prime
+cancellation of the complete finite cube.
+
+Next exact target
+Priority0 remains the ORIGINAL signed core. Priority1 is now the complete
+centered finite cube A^2*(E restricted<=floor(N^(3/4)))^3-c^3D, at fixedN
+throughout each window, including its FULL finite moment and all crosses.
+Seek a uniform subpower energy estimate for that exact target. The detector
+should search joint constructions/correlations/recurrences that pay this
+whole bound; merely making the already-paid tail smaller is not the goal.
+All144 original bindings, original Mellin obligation and older routes remain.
+The reduction is rigorous; it does not itself establish that the finite
+cube is easier or prove new cancellation. Any new argument must connect
+back through the saved original source and transport obligations.
+
+Verification and resources
+Status: COMPLETE_CONVOLUTION_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE.
+Root12 distinct tests/13 invocations (one full11-test suite and2 focused
+tests after adding the generic transfer profile). Checker18 distinct tests
+in its sole full suite. All30 distinct tests passed; no failures or old
+suite/study reruns. Actual study ran once, session4003, terminal exit0.
+Development6,090,162 operations; study7,936,340; inclusive14,026,502.
+Runtime21.724s; peak704032KiB. All11 frozen sources match direct byte copies.
+Published input and both saved copies are identical,113,371,543 bytes.
+No hashes, numerical source observations, fitted constants, or formal
+proof-assistant claim. Finite cube, global Mellin, full core and RH remainOPEN.

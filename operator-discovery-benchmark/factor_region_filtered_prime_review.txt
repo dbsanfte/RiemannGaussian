@@ -1,0 +1,97 @@
+POST-FREEZE ANALYTICAL EXTENSION — FILTERED PRIME REGIONS
+Read-only with respect to all frozen stage sources. This file supplies a proof
+extension for later independently checked adjudication; no pilot scores or
+selected coefficients are changed.
+
+1. Imported theorem and scope.
+The only imported distribution theorem is the classical Prime Number Theorem,
+pi(y)~y/log y as y tends to infinity. Official source: NIST DLMF equation27.2.3,
+https://dlmf.nist.gov/27.2.E3 ; theorem context and provenance:
+https://dlmf.nist.gov/27.12 . This is an unconditional established theorem,
+not RH, random-sign modelling, or newly discovered prime information. The
+argument below provides an existential sufficiently-large threshold, not a
+numerically explicit threshold from PNT alone.
+
+2. Exact filtered singleton and endpoints.
+Use the frozen source partition theta=phi=1/2, z=u=floor sqrtX, and component5:
+prime-small FALSE, core-small TRUE, odd. For integerX>=16 this source class
+consists EXACTLY of primes p>z throughout the complete horizon2X-1. A nonunit
+core has a prime factor strictly greater than the leastprime p>z and therefore
+cannot be <=u; odd exponent>=3 implies p^3>X^(3/2)>=4X. For target
+mu^{*r}*lambda^{*l}, k=r+l>=1, its coefficient at every prime is -k.
+For a fixed finite rational filter with positive integer divisors,
+ S5(n)=-k sum_d w_d max(0,pi(floor(n/d))-pi(z)), X<=n<2X.
+This equality retains the event endpoint d*p<=n and the source cutoff p>z.
+For sufficiently largeX, floor(n/d)>=z for every retained divisor and every
+n in the block. For example X>=4 dmax^2 suffices: n/d>=X/d>=2sqrtX, so
+floor(n/d)>=floor sqrtX. Thereafter the max is unnecessary. The classification
+always uses z(X), including the floor arguments; it does NOT use sqrt(n/d).
+
+3. Uniform PNT and exact fixed c filter.
+For fixed finite divisors, the PNT asymptotic is uniform for n in[X,2X): all
+arguments floor(n/d) tend to infinity uniformly, and the defining error
+sup_{y>=X/(2dmax)}|pi(y)log(y)/y-1| tends to zero. Also
+log(n/d)/log n=1+O(1/logX), uniformly, and rounding changes the scale byO(1).
+The subtraction pi(z)sum_d w_d is O(sqrtX), hence negligible compared with
+X/logX. With P(1)=sum_d w_d/d,
+ S5(n)=-k P(1) n/log n + o(X/logX), UNIFORMLY over the whole block.
+For frozen c filter C(n)-(11/4)C(floor(n/6)), k=2 andP(1)=13/24.
+Once floor(n/6)>=z,
+ S5(n)=-2[pi(n)-pi(z)]+(11/2)[pi(floor(n/6))-pi(z)],
+and consequently S5(n)~-(13/12)n/log n uniformly. No fitted direct or
+innovation constant appears in this derivation.
+For any fixed filter with P(1)!=0, a block Riemann sum gives
+ X^-2 sum_[X,2X) S5(n)^2 ~ (7/3)k^2 P(1)^2 X/(logX)^2.
+For this c filter the leading constant is1183/432. This positive asymptotic
+also gives an eventual lower bound with any smaller positive coefficient,
+without specifying its numerical starting scale.
+
+4. Refutation quantifiers and boundary of the theorem.
+If a frozen program includes a positive FIXED weightv on the square of this
+singleton divided by X^2 ceil(X^eta), with fixed0<=eta<1, then its potential
+is asymptotic to v*(7/3)k^2P(1)^2 X^(1-eta)/(logX)^2. The ceiling is1 foreta0
+and asymptotic toX^eta foreta>0. All other potential terms must be nonnegative.
+Thus W=E_G+V is eventually at least a positive constant times that expression.
+The proposed all-cofinal dyadic innovation premise would telescope to
+W(X)<=W(1)+2Cq(X^(1/q)-1)/(2^(1/q)-1) for every integerq>=q0. Choose suchq
+with1/q<1-eta. Along dyadicX the lower bound contradicts this upper bound.
+Therefore the ORIGINAL existential global POTENTIAL-INNOVATION claim is
+refuted for these exact programs, even with unknownCq andunknownq0. This
+is stronger than a finite fitted-constant failure. It does not refute the
+ordinary direct critical filtered-energy claim, or RH: the full signed Gram
+may cancel a large singleton diagonal against other components.
+If P(1)=0, PNT alone only gives S5=o(X/logX); it does not give a nonzero
+next term, a lower bound, or a critical energy estimate. A stronger controlled
+prime asymptotic is required for that singular case. Moving filters, growing
+numbers of divisors, eta>=1, negative potential weights, and signed sums of
+unsquared components are outside this rejection proof.
+
+5. Existing contrasts with the same obstruction.
+For UNFILTERED mu, component6 (prime-large/core-small/even) is identically
+zero: its source is at most prime squares, and mu(p^2)=0. Therefore the
+existing basis contrast e5-e6 equals the prime singleton exactly; its
+eta0/eta1/3 positive singleton potentials are globally refuted by the
+already supplied elementary thresholded prime-count proof, without PNT.
+For UNFILTERED c, component6 is the nonnegative prefix sum over p^2 withp>z,
+coefficient2; only even exponent2 can lie in2X-1 forX>=16. Component5 is
+nonpositive. Hence |S5-S6|>=|S5| at every point in the block, so the SAME
+elementary lower bound rejects its positive contrast-square potentials too.
+More generally all actual targets here have a(p^2)=binom(r,2)+r*l+binom(l+1,2)
+>=0, giving the same unfiltered contrast argument. This uses actual local
+coefficients, not a generic positive-inverse premise.
+For an arbitrary FIXED filtered target, component6 has magnitudeO(sqrtX):
+it is a finite weighted sum of prime-square counts, and the local p^2
+coefficient is fixed. Therefore S5-S6 has the SAME leading PNT asymptotic
+as S5 wheneverP(1)!=0. Thus the frozen filtered c e5-e6 contrast admits the
+same eventual global rejection, though the elementary sign comparison no
+longer applies to its negative filter coefficient. No such inference is
+made for other basis contrasts: additional core/prime components need their
+own exact estimate and can cancel the leading term.
+
+6. Interpretation for discovery.
+These arguments explain why uncentered large-prime singleton/contrast
+potentials cannot be Lyapunov corrections of subpower size. They are useful
+postselection rejection certificates with real arithmetic scope. They do
+not replace the still-missing uniform signed cross-core correlation bound.
+The theorem does not remove these productions from a frozen dictionary or
+silently center, normalize, or retune an original candidate.

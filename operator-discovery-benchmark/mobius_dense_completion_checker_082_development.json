@@ -1,0 +1,55 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "project venv python -m unittest test_check_mobius_dense_completion_082 -v",
+      "diagnosis": "Test wrongly required rejection of exponent denominator100001 with scale1. Exact root computation has no large integer power for basis1, so checker correctly admitted it. Test changed to scale2, whose denominator-power does exceed100000bit budget.",
+      "failed": 1,
+      "output": "test_canonical_rationals_schema_and_boolean (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_complete_model_and_exact_price (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_empty_horizon (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_factor_two_and_count_normalization_mutations (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_fractional_scale_roots_and_zero_profile (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_grammar_and_false_proof_flags (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_huge_horizon_before_allocation (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_prime_edges_and_squarefree_support (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_prospective_power_gate (test_check_mobius_dense_completion_082.Tests) ... FAIL\ntest_source_endpoint_and_positive_gram_tampering (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_work_and_matrix_memory_gate (test_check_mobius_dense_completion_082.Tests) ... ok\ntest_zero_identity_unit_and_actual_full_drift (test_check_mobius_dense_completion_082.Tests) ... ok\n\n======================================================================\nFAIL: test_prospective_power_gate (test_check_mobius_dense_completion_082.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_dense_completion_082.py\", line 93, in test_prospective_power_gate\n    with patch.object(C,'squarefree_prefix',side_effect=AssertionError('must not allocate'))as sieve:r=C.verify_certificate(p,100,{})\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_mobius_dense_completion_082.py\", line 172, in verify_certificate\n    model=build_model(program,u,m)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_mobius_dense_completion_082.py\", line 120, in build_model\n    prefix=squarefree_prefix(N,m);counts={}\n  File \"/usr/lib/python3.10/unittest/mock.py\", line 1114, in __call__\n    return self._mock_call(*args, **kwargs)\n  File \"/usr/lib/python3.10/unittest/mock.py\", line 1118, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n  File \"/usr/lib/python3.10/unittest/mock.py\", line 1173, in _execute_mock_call\n    raise effect\nAssertionError: must not allocate\n\n----------------------------------------------------------------------\nRan 12 tests in 0.109s\n\nFAILED (failures=1)\n",
+      "passed": 11,
+      "status": "FAIL",
+      "tests": 12
+    },
+    {
+      "attempt": 2,
+      "command": "project venv python -m unittest test_check_mobius_dense_completion_082.Tests.test_prospective_power_gate -v",
+      "failed": 0,
+      "output": "test_prospective_power_gate (test_check_mobius_dense_completion_082.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "passed": 1,
+      "status": "PASS",
+      "tests": 1
+    },
+    {
+      "attempt": 3,
+      "command": "project venv python -m unittest test_check_mobius_dense_completion_082.DualTests -v",
+      "failed": 0,
+      "output": "test_dual_feasibility_and_shape (test_check_mobius_dense_completion_082.DualTests) ... ok\ntest_dual_lower_bounds_every_tiny_grammar_choice (test_check_mobius_dense_completion_082.DualTests) ... ok\ntest_dual_price_tampering_and_grammar_parameter_independence (test_check_mobius_dense_completion_082.DualTests) ... ok\ntest_dual_prospective_nu_memory_before_rational_parse (test_check_mobius_dense_completion_082.DualTests) ... ok\ntest_dual_zero_and_empty_geometry (test_check_mobius_dense_completion_082.DualTests) ... ok\ntest_independent_dual_offdiagonal_sign_factor_and_templates (test_check_mobius_dense_completion_082.DualTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.103s\n\nOK\n",
+      "passed": 6,
+      "status": "PASS",
+      "tests": 6
+    },
+    {
+      "attempt": 4,
+      "command": "project venv python -m unittest test_check_mobius_dense_completion_082.DualTests.test_dual_prospective_nu_memory_before_rational_parse -v",
+      "failed": 0,
+      "output": "test_dual_prospective_nu_memory_before_rational_parse (test_check_mobius_dense_completion_082.DualTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.012s\n\nOK\n",
+      "passed": 1,
+      "reason": "Strengthened synthetic memory gate so setup is admitted and inflated nu strings specifically trigger prospective parse gate.",
+      "status": "PASS",
+      "tests": 1
+    }
+  ],
+  "distinct_tests": 18,
+  "dual_api": "verify_price_dual(program,u,certificate,meter=None)",
+  "failed_executions": 1,
+  "hashes_used": false,
+  "latest_outcome": "PASS",
+  "old_tests_run": false,
+  "passed_executions": 19,
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 20,
+  "uniform_original_source_bound_proved": false
+}

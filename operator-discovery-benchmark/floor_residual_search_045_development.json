@@ -1,0 +1,23 @@
+{
+  "schema": "drift-search-integration-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.07512479496654123,
+      "operations": 303985
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.004180645977612585,
+      "operations": 7068,
+      "scope": "only new cache/released-certificate regression; no old tests repeated"
+    }
+  ],
+  "exposure": "synthetic profiles/arithmetic up to15, artificial ranking; no actual saved candidate or new study"
+}

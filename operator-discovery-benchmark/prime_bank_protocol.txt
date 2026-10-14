@@ -1,0 +1,75 @@
+COMPLETE ACTUAL-PRIME BANKS, PILOT001 -- 9 October 2026
+
+Input: candidate10_prime_bank_obligation.json, the exact unresolved complete
+signed energy of the product of the 1/3 and 2/3 normalized zeta increments.
+The source is actual Mobius arithmetic. All repeated-prime coefficients and
+the complete smooth-number complement remain. The other arithmetic roadmap
+and the unrun renewal-source sweep are separate, unchanged investigations.
+
+At each integer n use Y=n^theta, with strict q>Y and k>=2. Independently
+construct K, L0, Lu, Lv and the original main term. R=K-L0+Lu+Lv-main.
+Producer uses multiplicative local rational coefficients and prime/cofactor
+birth/expiry events, with K built from independent smooth admissions. Checker
+uses divisor coefficient rows and independent weighted Fenwick dominance
+queries. Neither obtains K from the proposed recombination. Source is built
+once per stage and inherited readonly by two explicit Linux fork workers.
+
+The symbolic language derives complete branch bounds for arbitrary rational
+b in [0,1), not just the selected 2/3 branch. Reviewed analytic premises are
+explicit: the all-scale divisor envelope and elementary Chebyshev bound.
+It verifies exponent arithmetic, enumerates all seven nonempty branch subsets,
+discovers common (1-q^-r) polynomial factors, and cancels complete cutoff
+transport rows exactly. It also derives low smooth-prefix bounds for
+eta=1/6,1/3,1/2,2/3 when eta<=theta, identifying eta<=1/2 as cofinal padding.
+An additional generic rule transfers a proved absolute cofactor moment to a
+weighted bank. The reviewed positive convolution for Delta=z_u-z_v supplies
+one such premise, proving an endpoint finite-critical difference component.
+An arbitrary supplied moment remains conditional until its source proof is paid.
+These are component results. No full uniform target
+is discharged by a finite score or an equivalent restatement.
+
+Cutoff menu: 1/2, 2/3, 3/4, 4/5, 5/6. Discovery H=65535, parent blocks
+X=1,2,4,8,64,256,1024,4096,8192,16384; include each complete child block.
+There are no fitted constants, training thresholds, or numerical rankings.
+Before any arithmetic, select the critical paid regime and the smallest
+strictly decaying paid regime in the menu, giving theta=3/4 and 4/5.
+Final H=1048575; X=196608 and 262144 with complete child blocks through 4X-1.
+196608 is a nondyadic diagnostic, not a new target-domain base case. All
+arithmetic is labelled as potentially overlapping earlier research. Finite
+cofactor exposure is reported and is not advertised as all-scale coverage.
+
+Store the complete five-atom Gram matrix of (K,-L0,Lu,Lv,-main), every signed
+cross term, each mean, direct full/reduced energies, diagonal energy, and
+complete parent/child differences. No absolute-value substitution of mixed
+terms. Every point through each H must satisfy the original source identity.
+Independently recompute and compare every saved numerical scalar at128/192
+bits, requiring overlap and radius<=2^-65*(1+abs(midpoint)). Full matrices
+are reporting diagnostics, not a discovered positive-definite argument.
+
+Analytical results to preserve: the Chebyshev refinement removes the former
+log loss, including bounded Lv block energy at theta=3/4. Fixed-scale cutoff
+transport cancels the unweighted and 1/3 entries jointly and leaves only the
+paid 2/3 entry. The exact smooth/bank intersection kernel forces q>Pplus(h)
+and k<q; its same-largest-prime diagonal is zero. The signed sum over the
+remaining ordered coprime correlations, and fresh-scale energy, remain open.
+The whole coefficient prefix h<=sqrt(n) is separately bounded logarithmic
+padding; it can be peeled to restrict the next smooth target to h>sqrt(n).
+The finite matrices here still include that prefix in the complete K atom.
+The next input retains that kernel, all energy terms, complete initial
+range, and the same target equivalence class. No circular proof promotion.
+
+Work limit1.5 billion charged proxy operations, including development,
+frozen suite, all sources, all evaluations, all reporting and audits. One
+million units reserves bounded metadata/symbolic work. Runtime7200s,
+aggregate16GiB, each process4GiB, scalar-cell cap48m. Four processes at most:
+small conductor, source parent, two workers. Discovery stage caps150m producer
+and180m audit; final producer cap600m; final audit gets remaining total budget.
+Workers partition their stage's unspent allowance equally before launch.
+No cap reset or unchanged rerun. Preserve partial per-case checkpoints.
+
+One owned development suite per module; affected tests after fixes only;
+one combined frozen suite. Freeze direct source bytes, input, proof and tests
+after owners stop editing. No hashes. Old archives remain immutable. A failed
+or interrupted stage records its spent work and unresolved cap; completion
+must use missing work only. No RH proof, historical novelty or complete
+uniform signed-control claim is made by this study.

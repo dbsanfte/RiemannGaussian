@@ -1,0 +1,40 @@
+{
+  "owner": "root",
+  "operations": 1024340,
+  "edits_stopped": true,
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_moment_region_search"
+      ],
+      "returncode": 0,
+      "tests": 10,
+      "operations": 1018100,
+      "elapsed_seconds": 1.3468984990031458,
+      "log": "core_moment_region_root_suite_001.txt",
+      "kind": "sole_full_suite"
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core_moment_region_search.MomentRegionTests.test_generic_parameters_cannot_change_the_actual_source_binding",
+        "test_core_moment_region_search.MomentRegionTests.test_cube_composition_pays_head_and_both_tail_errors"
+      ],
+      "returncode": 0,
+      "tests": 2,
+      "operations": 6240,
+      "elapsed_seconds": 0.0772851450019516,
+      "log": "core_moment_region_root_focused_002.txt",
+      "kind": "focused_source_binding_guards"
+    }
+  ]
+}

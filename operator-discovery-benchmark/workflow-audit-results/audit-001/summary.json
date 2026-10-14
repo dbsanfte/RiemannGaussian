@@ -1,0 +1,50 @@
+{
+  "status": "verified_workflow_contracts_and_generic_signed_bound_calibration",
+  "audit_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/workflow-audit-results/audit-001",
+  "contract_test_cases": 36,
+  "generic_signed_bound_certificates": 4,
+  "unseen_signed_generator_instances": 4,
+  "delayed_finite_passing_control_candidates_rejected": 4,
+  "calibration_withheld_dimensions": [
+    4241,
+    4332,
+    4593,
+    4899
+  ],
+  "witness_derived_exclusions": {
+    "round_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/candidate-review-results/sol-6.1-round-001",
+    "new_refuted_candidate_ids": [
+      "055400d8c28f1af939b1123e16d547d11cc5ff8ffb0c2ece6f60bc0f917d950d",
+      "0b383823a2e1da3fb307fcb460f92d1e20ddd74f658101760e1bfee36100326a",
+      "68ca2201e4e32c0accadafb8c5bde1184eb6c2ea4b2d1d55f922f440cebc0c69",
+      "db09f33ad2bab15186049b533dbd9ad3d7bcbd4d696306e380b170f16a520fa7",
+      "dda0bcb3369c4750cc4633eec0ad1c1f73239de5e1d6ab34e3097c5ef56c2866"
+    ],
+    "all_refuted_candidate_ids": [
+      "055400d8c28f1af939b1123e16d547d11cc5ff8ffb0c2ece6f60bc0f917d950d",
+      "0b383823a2e1da3fb307fcb460f92d1e20ddd74f658101760e1bfee36100326a",
+      "0d42657fa48b9ac304865ef20d9b0aa52410a38d6f2cc2aba4919d3221930cd9",
+      "3615e17fac8b6e42c63763561f060597e19efa803a60cde92a8ba07749df1aa6",
+      "68ca2201e4e32c0accadafb8c5bde1184eb6c2ea4b2d1d55f922f440cebc0c69",
+      "bd522ef0becd9649554c8588d61e91bc7df2150d71a2d5f7d9f16ee9f340861d",
+      "db09f33ad2bab15186049b533dbd9ad3d7bcbd4d696306e380b170f16a520fa7",
+      "dda0bcb3369c4750cc4633eec0ad1c1f73239de5e1d6ab34e3097c5ef56c2866"
+    ],
+    "independently_rechecked_witnesses": 5,
+    "remaining_uniform_half_gap_claims": 40,
+    "RH_proved": false
+  },
+  "new_safety_wrappers_preserve_frozen_native_experiments": true,
+  "safe_wrappers_required_outside_declared_native_pilot": true,
+  "new_planner_requires_external_collaboration_dispatch": true,
+  "runtime_model_identity_independently_authenticated": false,
+  "single_process_calibration_not_adversarial_sandbox": true,
+  "calibration_generator_class_and_proof_method_supplied": true,
+  "general_purpose_estimate_discovery_demonstrated": false,
+  "actual_all_scale_signed_bound_proved": false,
+  "RH_discovery_probability_established": false,
+  "machine_formalized": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "verification_sha256": "758d174fca9d175acfc37d82b70e83c9b3f55a09666fc9d41ae1c31b13ccef34",
+  "RH_proved": false
+}

@@ -1,0 +1,474 @@
+MULTIPLICATIVE SHIFT DIFFERENCES AND POSITIVE LOCAL RENEWAL
+
+Scope and conclusions
+---------------------
+This new memo alone is written. All earlier studies, code, tests and reviews
+are preserved. This is algebra and proof review, with no new source-table
+computation, numerical experiment, test, hash, rescore, or parameter search.
+The earlier fixed-shift quotient, inverse-curvature, prime-twist and selected
+candidate reviews are retained as prior mechanisms, not rediscovered results.
+
+The proposed renewal proof is correct. For every NONEMPTY finite multiset B
+of positive shifts, every actual prime-power coefficient of Q_B is strictly
+negative, its absolute prime-local mass is one, and the full multiplicative
+coefficient has sign (-1)^omega and absolute value at most one. The empty
+word is mu, whose higher prime-power coefficients are zero. The logarithmic
+kernel and fixed-index small-shift limit are exactly as proposed. Repeated
+shifts and colliding subset sums must be merged; they do not invalidate the
+renewal proof, but they change pole orders and can remove pole locations.
+
+After exact real-pole compensation, a complete cofinal signed-square moment
+would imply RH for any finite integer-exponent stencil with c_0=-1 and all
+other shifts positive. The pilot's sum(B)<1 and simple-positive-exponent
+restriction cleanly give explicit nonzero simple residues. No complete
+uniform candidate moment is proved here. Proved useful components include
+local coefficient/tail bounds, a higher-prime-power critical-norm peel, a
+signed harmonic prime-kernel estimate, and a centered positive-inverse mean.
+A fractional-branch countermodel shows that local renewal positivity alone
+cannot prove the desired moment. All actual cofinal/global/RH flags stay false.
+
+1. Grammar, commutation and the compiled stencil
+------------------------------------------------
+Start with Q_empty(s)=1/zeta(s) and append b>0 by
+  Q_(B+b)(s)=Q_B(s)/Q_B(s+b).
+Let T_b denote the real translation s->s+b. The difference operators commute:
+  (1-T_b)(1-T_c)=(1-T_c)(1-T_b).
+Consequently for a finite multiset B=(b_1,...,b_k),
+  Q_B(s)=product_(S subset {1,...,k})
+                    zeta(s+sigma_S)^((-1)^(|S|+1)),
+  sigma_S=sum_(i in S)b_i.
+Subsets are of the INDEX set: repeated entries remain distinct occurrences.
+Merge coincident shifts into integers
+  eta_sigma=sum_(S:sigma_S=sigma)(-1)^|S|,
+  c_sigma=-eta_sigma,
+  Q_B(s)=product_sigma zeta(s+sigma)^(c_sigma).
+Here eta_0=1 and c_0=-1 because shifts are strictly positive. Zero merged
+coefficients are removed. Composition order and permutation of B give the
+same operator. Identical compiled stencils in a larger grammar are exact
+aliases, including centering: pole terms are computed AFTER merging.
+
+For rational shifts choose any common unit delta with b_i=m_i*delta,
+integers m_i>0. The exact compilation polynomial is
+  E_B(t)=product_i(1-t^(m_i))=sum_sigma eta_sigma*t^(sigma/delta).
+This provides a finite hash-free algebraic alias/cancellation certificate.
+Equal two shifts give c=(-1,2,-1), exactly the earlier inverse-curvature
+family; a single shift gives the earlier zeta quotient. Arbitrary two shifts
+are not an unshifted product of the earlier normalized H atoms:
+  Q_(b,c)=zeta(s+b)zeta(s+c)/[zeta(s)zeta(s+b+c)].
+The recursive quotient itself is an exact factor-placement identity, not a
+license to drop the shifted denominator or its signed arithmetic complement.
+
+Distinct shifts do not preclude subset collisions. Repeats do not always
+force rejection by the simple-pole pilot. For example the symbolic word
+{delta,2delta,3delta,3delta} has compilation polynomial
+  1-t-t^2-t^3+2t^4+2t^5-t^6-t^7-t^8+t^9.
+Every positive zeta exponent is one although two negative exponents are -2.
+This is a formal example, not a source evaluation or proposed selection.
+If the MINIMUM shift repeats, however, its positive zeta exponent equals
+that repetition count: no larger subset can sum to the minimum. Such a word
+fails the simple-positive-exponent restriction. No pre-merge pole count is
+valid for either case.
+
+2. Prime-local renewal theorem, including convergence
+-----------------------------------------------------
+At an actual prime p put q_i=p^(-b_i), z=p^(-s). The local factor is
+  Q_(B,p)(z)=product_S(1-p^(-sigma_S)*z)^((-1)^|S|).
+For the empty word it is 1-z. Suppose inductively Q=1-P, where
+  P(z)=sum_(e>=1)r_e*z^e, r_e>=0, sum_e r_e=1.
+Append q=p^(-b) in (0,1). Exact algebra gives
+  Q_new(z)=(1-P(z))/(1-P(qz)),
+  P_new(z)=[P(z)-P(qz)]/[1-P(qz)]
+          =[sum_e r_e(1-q^e)z^e]*sum_(j>=0)P(qz)^j.                 (2.1)
+Every coefficient is nonnegative. Since P(q)<=q<1, the geometric expansion
+converges absolutely and uniformly for |z|<=1. Its sum at z=1 is
+  P_new(1)=(1-P(q))/(1-P(q))=1.
+Thus the proof gives both coefficient positivity and exact unit mass; it
+is not a purely formal evaluation at an unverified boundary. There is no
+exchange of conditionally convergent prime products here: this is ONE prime.
+
+Initially P=z. Its coefficient at z remains strictly positive after every
+append, multiplying by (1-q). After the first append, every r_e is strictly
+positive, using the numerator's z term and the (e-1)st geometric power's
+positive z^(e-1) term. Induction preserves strict positivity. Hence for
+NONEMPTY B,
+  Q_(B,p)(z)=1-sum_(e>=1)r_(B,p)(e)z^e,
+  r_(B,p)(e)>0, sum_e r_(B,p)(e)=1,
+  r_(B,p)(1)=product_i(1-p^(-b_i)).                 (2.2)
+For B empty only r(1)=1 is nonzero. That exception is required.
+
+Each local factor is rational. For nonempty B its first possible pole has
+radius R_p=p^(b_min). In fact it is a genuine pole: the merged exponent at
+the minimum shift is positive, and no other factor has that same unmerged
+location after compilation. All other possible poles are farther away;
+the unshifted zero at z=1 is harmless for the Taylor-series radius.
+Thus P is analytic for |z|<R_p, in addition to its unit-circle convergence.
+For any 1<rho<R_p, its nonnegative coefficients give the rigorous tail bound
+  sum_(e>E)r_(B,p)(e)<=rho^(-E)*P_(B,p)(rho).        (2.3)
+The right side is a finite exact evaluation of the displayed rational local
+factor. Choosing rho=p^(b_min/2) yields polynomial higher-power tails; every
+shifted denominator is bounded away from zero since
+p^(-sigma)*rho<=2^(-b_min/2)<1 for sigma>=b_min. Constants depend on the
+complete merged stencil and b_min. This is automatic local attenuation,
+not a uniform signed prefix estimate.
+
+3. Full arithmetic, logarithm and the overlap recurrence
+---------------------------------------------------------
+In Re(s)>1 all Euler factors and Dirichlet series converge absolutely. Let
+  Q_B(s)=sum_(n>=1)a_B(n)n^(-s), gamma_B=product_i b_i,
+  h_B=(a_B-delta)/gamma_B for nonempty B.
+Multiplicativity and (2.2) prove
+  a_B(1)=1,
+  a_B(n)=(-1)^omega(n)*product_(p^e||n)r_(B,p)(e), n>1,
+  |a_B(n)|<=1.
+Every n>1 has strict sign for nonempty B, including nonsquarefree integers.
+This is sign (-1)^omega, NOT the Liouville sign (-1)^Omega. For example all
+prime powers are negative, while a product of two distinct prime powers
+is positive. Actual prime signs across every prime are part of the input.
+The global absolute tail in a Dirichlet half-plane obeys, for integer N>=1,
+  sum_(n>N)|a_B(n)|n^(-sigma)<=N^(1-sigma)/(sigma-1), sigma>1.
+Normalization costs the fixed factor gamma_B^(-1), never a reset per term.
+
+The exact local logarithm is
+  log Q_(B,p)(z)=-sum_(e>=1)d_e*z^e/e,
+  d_e=product_i(1-p^(-e*b_i)).
+Thus define the nonnegative actual-prime-power kernel
+  ell_B(p^e)=d_e/e, ell_B(n)=0 off prime powers and at one.
+Then
+  Q_B=exp_*(-ell_B), Q_B^(-1)=exp_*(ell_B),          (3.1)
+  log Q_B(s)=-sum_(n>=1)ell_B(n)n^(-s), Re(s)>1.
+Here 0<=ell_B(p^e)<=1/e, so its absolute Dirichlet norm is at most
+log zeta(sigma), sigma>1. Each fixed coefficient/horizon has only finitely
+many convolution orders because ell_B(1)=0. Omitting higher orders changes
+the arithmetic, even though the logarithmic generator is positive.
+
+There is a useful EXACT overlap recurrence. From
+z*P'(z)=(1-P(z))*sum_e d_e*z^e,
+  e*r_e=d_e-sum_(j=1)^(e-1)r_j*d_(e-j).            (3.2)
+Renewal positivity therefore gives
+  0<r_e<=d_e/e=ell_B(p^e),
+  r_e/gamma_B<=Lambda(p^e)*(log(p^e))^(k-1).       (3.3)
+The last inequality uses 1-exp(-t)<=t. The nonnegative subtraction in
+(3.2) is the complete prime-power overlap deficit; it is not discarded.
+
+For two shifts q_1,q_2 the recurrence/rational factor reduces explicitly to
+  r_e=(1-q_1)(1-q_2)*sum_(j=0)^(e-1)q_1^j*q_2^(e-1-j).
+For equal q this is e*(1-q)^2*q^(e-1), agreeing with the earlier
+inverse-curvature law. Equal shifts and collisions are thus covered both
+analytically and arithmetically.
+
+4. Small-shift limit: fixed indices only
+----------------------------------------
+Let k>=1 be fixed and let ALL b_i tend to zero through positive values,
+without requiring equal rates. For each fixed prime power,
+  ell_B(p^e)/gamma_B -> e^(k-1)*(log p)^k
+                       =Lambda(p^e)*(log(p^e))^(k-1).
+In the finite coefficient expansion (3.1), every convolution order >=2
+is O_n(gamma_B^2). Therefore at every fixed integer n,
+  (a_B(n)-delta(n))/gamma_B
+                      ->-Lambda(n)*(log n)^(k-1).                  (4.1)
+The same statement holds for each fixed finite inclusive prefix. A composite
+with at least two distinct primes vanishes in this normalized limit. There
+is no assertion of a uniform limit as x increases, nor any subtraction of
+its finite-shift signed composite complement. For primes with b_i*log p
+large the linear approximation to 1-p^(-b_i) fails. In fact at large primes
+  h_B(p)->-1/gamma_B,
+so normalization does not create a uniformly small prime coefficient.
+The fixed-index limit is a familiar log-weighted prime channel, not an
+all-scale moment proof. The empty word does not use formula (4.1).
+
+5. Pilot real poles and exact simple compensation
+-------------------------------------------------
+The specified pilot has sorted rational multisets, lengths one through four,
+sum(B)<1, and merged positive zeta exponents exactly one. The sum restriction
+ensures every nonzero subset shift is in (0,1). Rejected words still exist
+mathematically but need their complete higher-order pole compensation.
+Rational-denominator or grid limits do not enter the following proof.
+
+At a positive merged shift sigma with c_sigma=1, put kappa_sigma=1-sigma.
+Every other factor at s=kappa_sigma has positive real argument
+1-sigma+tau, differs from one, and is finite/nonzero. This uses sum(B)<1
+and positive shifts. The normalized increment (Q_B-1)/gamma_B has residue
+  R_sigma=gamma_B^(-1)*product_(tau!=sigma)
+                                  zeta(1-sigma+tau)^(c_tau).       (5.1)
+It is nonzero, even if negative. The complete centered prefix is
+  G_B(x)=[sum_(n<=x)a_B(n)-1]/gamma_B
+                  -sum_(sigma:c_sigma=1)(R_sigma/kappa_sigma)
+                                                   *x^kappa_sigma. (5.2)
+There are no extra fitted constants. Initial value
+G_B(1)=-sum R_sigma/kappa_sigma and every lower-exponent term are retained.
+At a merged c_sigma<0 the zeta pole produces a zero, not a real main pole.
+At c_sigma=0 there is no factor or pole at all. These distinctions precede
+any numerical residue evaluation.
+
+For Re(s)>1 the complete Mellin identity is
+  (Q_B(s)-1)/gamma_B
+       =s*H_(G_B)(s)+sum_sigma(R_sigma/kappa_sigma)
+                                      *s/(s-kappa_sigma).          (5.3)
+Subtracting only a residue fraction instead of the full Perron term's
+Mellin transform changes the constants and is not this program.
+
+For a generic merged integer stencil with c_sigma=h>1 and kappa>0,
+write the exact principal Laurent part of Q as
+sum_(j=1)^h L_(sigma,j)/(s-kappa)^j. Its COMPLETE Perron term is
+  T_sigma(x)=x^kappa*sum_(j=1)^h L_(sigma,j)
+           *sum_(r=0)^(j-1)(-1)^(j-1-r)*(log x)^r/[r!*kappa^(j-r)].
+Its derivative simplifies to
+  T_sigma'(x)=x^(kappa-1)*sum_(j=1)^h
+                              L_(sigma,j)*(log x)^(j-1)/(j-1)!.
+All logarithmic and constant complements must be included. If arbitrary
+shifts beyond one are allowed, the positive-target-half-plane bridge only
+needs poles inside that half-plane. Claims about every nonpositive real
+pole additionally require actual Laurent analysis of shifted trivial-zero
+collisions; a blind positive-pole template is insufficient there.
+
+6. Whole-square moments, unit cells and explicit costs
+------------------------------------------------------
+For the simple-pole pilot let delta=min_(sigma>0:c_sigma!=0)sigma=b_min and
+L=sum_(sigma:c_sigma=1)|R_sigma|. For n<=t<n+1 the arithmetic prefix is
+EXACTLY constant, so
+  |G_B(t)-G_B(n)|<=sum_sigma|R_sigma|n^(-sigma)
+                                  <=L*n^(-delta).                 (6.1)
+The jump at an integer has magnitude |a_B(n)|/gamma_B<=1/gamma_B.
+Thus a complete interval including a jump costs that amount plus its smooth
+increment. Formal integer samples cannot replace the declared inclusive
+step extension or an incomplete final block.
+
+A sufficient cofinal premise is: for an unbounded set of positive q there
+are finite C_q such that for EVERY dyadic integer X>=1,
+  X^(-2)sum_(n=X)^(2X-1)|G_B(n)|^2<=C_q*X^(1/q).   (6.2)
+Every signed cross term is inside this square. For sigma>1/2 choose q with
+1/q<2*sigma-1. Whole unit cells give
+  integral_X^(2X)|G_B(t)|^2dt
+      <=2*C_q*X^(2+1/q)+2*L^2*X^(1-2*delta),
+and summing dyadic blocks yields
+  ||G_B||_sigma^2:=integral_1^infinity|G_B(t)|^2t^(-2*sigma-1)dt
+     <=2*C_q/[1-2^(1-2*sigma+1/q)]
+                  +2*L^2/[1-2^(-2*sigma-2*delta)].                (6.3)
+For Re(s)>sigma,
+  |H_(G_B)(s)|<=||G_B||_sigma/sqrt(2*(Re(s)-sigma)).                 (6.4)
+Uniform compact domination also proves holomorphy on Re(s)>1/2. Initial
+blocks are part of these bounds. For higher-order poles the derivative
+formula in section 5 adds known n^(-sigma_shift)log(n+1)^(h-1) cell costs;
+they are summable in the same target half-plane. A generic nonrenewal stencil
+can use |a_c(n)|<=d_C(n), C=sum_sigma|c_sigma|, instead of |a_B|<=1:
+each shifted positive or negative integer zeta power is bounded absolutely
+coefficientwise by the matching divisor sequence, and positive shifts only
+decrease the weights. Its usual fixed-C subpower bound then costs a declared
+constant for the jump transfer; the renewal family needs no such expansion.
+
+7. RH bridge for arbitrary integer-exponent stencils
+----------------------------------------------------
+Consider ANY finite integer stencil
+  Q_c(s)=zeta(s)^(-1)*product_(tau>0)zeta(s+tau)^(c_tau),
+with positive real tau, not necessarily rational, commensurate, or renewal
+compiled. Remove every exact real pole part INSIDE the target half-plane.
+A cofinal complete moment proving Mellin holomorphy there makes the centered
+Q_c holomorphic for Re(s)>1/2.
+
+At an ordinary nonreal zero rho of order m>0,
+  ord_rho Q_c=-m+sum_(tau>0)c_tau*m(rho+tau).        (7.1)
+No shifted pole at one occurs at this nonreal point. Holomorphy requires
+the displayed order to be nonnegative, so some POSITIVE c_tau must have
+m(rho+tau)>0. More exactly its positive weighted orders must cover m plus
+all negative weighted orders. Thus a farther-right same-height zero is
+forced. Repeat at that zero. Each step increases the real part by at least
+the minimum positive-exponent shift, and after finitely many steps Re>1,
+where the Euler product has no zeros. If there is no positive c_tau, the
+initial uncanceled denominator pole is already a contradiction.
+
+This handles every multiplicity, coincident shifted zeros, and exact subset
+cancellations. It does not assume simple zeros, a global rightmost zero,
+or an unspecified nonzero numerator factor. Ordinary positive-real zeta
+values are nonzero, so real pole compensation cannot conceal this argument.
+Functional-equation symmetry gives RH. Conversely under RH, none of the
+shifted zero poles lies in Re>1/2; exact real-pole removal makes Q_c
+holomorphic there. This is an ANALYTIC equivalence, not a proof of (6.2).
+
+There is finite conditional analytic recovery. Let F(s)=(s-1)zeta(s),
+F(1)=1, and
+  E_c(s)=F(s)^(-1)*product_(tau>0)F(s+tau)^(c_tau)
+        =Q_c(s)*(s-1)^(-1)*product_(tau>0)(s+tau-1)^(c_tau).
+The real apparent singularities are removable after the complete identities
+are used. Then
+  |1/F(s)|<=|E_c(s)|
+       *product_(c_tau>0)|1/F(s+tau)|^(c_tau)
+       *product_(c_tau<0)|F(s+tau)|^(-c_tau).        (7.2)
+The moment supplies Q_c bounds with every real-pole term retained; removable
+points require the actual limiting derivatives. For Re(s)>0 a direct
+Euler-summation formula gives the finite bound
+  |F(s)|<=|s|+|s|*|s-1|/Re(s).
+Recursion of the positive-exponent reciprocals terminates at Re>=R>1,
+where |1/F(s)|<=zeta(R)/|s-1|. Depth is at most
+max(0,ceil((R-Re(s))/delta_+)), with delta_+ the smallest positive-exponent shift.
+A direct multiplicity-expanded tree has at most 1+C_++...+C_+^depth nodes,
+C_+=sum_(c_tau>0)c_tau. Negative exponents incur the forward F bounds,
+not free cancellations. These finite conditional costs are explicit; they
+are not a bounded all-height inverse moment or finite-prefix recovery.
+
+8. Components which can actually be peeled
+------------------------------------------
+Let U_pp(x) be the literal higher-prime-power part of the normalized
+coefficient prefix, including every p^e with e>=2. It is nonpositive and
+  |U_pp(x)|<=gamma_B^(-1)*pi(sqrt x),              (8.1)
+because the complete mass at a prime is one and p<=sqrt x. The previously
+proved elementary Chebyshev bound pi(y)<=C_pi*y/log y implies
+  ||U_pp||_crit^2<=4*C_pi^2/[gamma_B^2*log 4],
+  X^(-2)sum_(X<=n<2X)|U_pp(n)|^2
+          <=6*C_pi^2/[gamma_B^2*(log X)^2], X>=4.                  (8.2)
+This is a full component theorem, with its finite head; no higher-prime-power
+tail has been silently truncated.
+
+Every simple main term with sigma>1/2 also has finite critical norm:
+  ||(R_sigma/(1-sigma))*x^(1-sigma)||_crit^2
+           =(R_sigma/(1-sigma))^2/(2*sigma-1).     (8.3)
+At sigma=1/2 its complete block energy is bounded, so it remains cofinal-
+admissible padding, but its critical norm is NOT finite. Higher-order poles
+at that boundary give polynomial logarithmic energies, also cofinal-admissible
+rather than finite critical norm. All supercritical poles sigma<1/2 remain
+in the reduced arithmetic obligation. Peeling always uses triangle bounds
+in BOTH directions, retaining costs and the original signed cross terms.
+
+This does NOT peel all nonsquarefree integers. Fixing a small prime square
+and varying a second prime yields a positive composite branch of bulk size
+x/log x: r_(B,2)(2)>0 and r_(B,p)(1) is bounded below for all primes. The
+single-prime restriction in (8.1) is essential. Polynomial attenuation at
+large repeated primes is no bound on repeated SMALL primes attached to a
+large moving prime.
+
+If b_min>1/2, an additional classification is available. Write
+Q_B=mu_series*G_+(s), G_+=product_(sigma>0)zeta(s+sigma)^(c_sigma).
+Both G_+ and its reciprocal act by bounded divisor-dilation convolution
+on the critical norm, with absolute cost at most
+  product_(sigma>0)zeta(1/2+sigma)^(|c_sigma|).
+All real main terms then lie below the critical exponent. Thus this region
+is bounded critical-norm preconditioning of M plus declared subcritical
+padding, not a new source-cancellation theorem. The prospective small-shift
+pilot is not covered by that easy region.
+
+9. Two genuine all-scale estimates, and their exact limitation
+--------------------------------------------------------------
+First, the inverse Q_B^(-1) has NONNEGATIVE coefficients t_B, since each
+prime-local inverse is sum_(j>=0)P_(B,p)^j. Write
+  Q_B^(-1)=zeta(s)*G_-(s),
+  G_-(s)=product_(sigma>0)zeta(s+sigma)^(-c_sigma).
+Choose max(0,1-b_min)<theta<1. Its coefficients g satisfy
+  sum |g(n)|n^(-theta)<=C_theta,
+  C_theta=product_(sigma>0)zeta(theta+sigma)^(|c_sigma|)<infinity.
+Floor summation and an absolutely convergent tail prove for every real x>=1
+  |sum_(n<=x)t_B(n)-x*G_-(1)|<=2*C_theta*x^theta,   (9.1)
+  G_-(1)=product_(sigma>0)zeta(1+sigma)^(-c_sigma)>0.
+This is an unconditional centered signed estimate with explicit constants.
+It also exhibits a positive inverse with LINEAR mean, not a small critical
+averaging kernel. Its positive absolute divisor-dilation cost diverges at
+the critical exponent. It is not the inverse map from A_B to M, which
+instead uses the reciprocal of G_+, with its own shifted costs.
+
+Second, the supplied actual-prime harmonic theorem in prime_twist_proof.txt
+is reusable with the COMPLETE polynomial, not just a fitted density:
+  ell_B(n)=lambda(n)*sum_sigma eta_sigma*n^(-sigma),
+  lambda(p^e)=1/e, zero off prime powers.
+Use its proved bound on
+sum_(n<x)lambda(n)/n-log log x-gamma_Euler, whose error is at most
+(C_psi+1)/log x. For each sigma>0, the supplied shifted tail estimate and
+E1(sigma log x)<=x^(-sigma)/(sigma log x) give
+  |sum_(n<x)lambda(n)n^(-1-sigma)-log zeta(1+sigma)|
+       <=[1/sigma+C_psi+1]*x^(-sigma)/log x.
+Therefore for EVERY real x>=2,
+  |sum_(n<x)ell_B(n)/n-log log x-C_B|
+   <=[C_psi+1+sum_(sigma>0)|eta_sigma|
+             *(1/sigma+C_psi+1)*x^(-sigma)]/log x,                 (9.2)
+  C_B=gamma_Euler+sum_(sigma>0)eta_sigma*log zeta(1+sigma)
+     =gamma_Euler+log G_-(1).
+The strict arithmetic endpoint matches the imported theorem. Moving to
+inclusive endpoints costs at most 1/x, since ell_B(n)<=1 at each n.
+Normalization divides the complete expression and costs gamma_B^(-1).
+All stencil terms, even those with negative eta, are retained.
+
+This is useful actual-prime signed cancellation at harmonic weight and
+identifies the inverse's exact constant. It is NOT a new prime theorem or
+a full coefficient-prefix moment. Exponentiating a centered harmonic log
+estimate does not bound the signed partial sums of exp_*(-ell_B). Passing
+from this reciprocal-weight estimate to the native prefix loses the very
+critical exponent needed for RH, as already documented for prime twists.
+No ordinary convergence assertion for sum a_B(n)/n is inferred merely
+from its Abelian value Q_B(1)=0.
+
+10. Compulsory bulk cancellation and a precise reduced obligation
+----------------------------------------------------------------
+The literal first-prime branch is
+  U_p(x)=-gamma_B^(-1)*sum_(p<=x)product_i(1-p^(-b_i)).
+For nonempty fixed B,
+  |U_p(x)|>=[product_i(1-2^(-b_i))/gamma_B]*pi(x).
+Elementary Chebyshev lower bounds therefore make it at least c*x/log x
+for all sufficiently large x. Every positive real main pole has exponent
+1-sigma<1. Such finitely many polynomial-log main terms are smaller than
+x/log x eventually. Thus the composite complement must cancel a large
+negative prime branch before RH-scale control is possible. A coefficient
+bound |a_B|<=1, local mass one, and prime-power attenuation do not prove
+that source-specific correlation.
+
+For the pilot let V_comp(x) be the COMPLETE normalized coefficient prefix
+on integers with at least two distinct primes. Retain all such integers,
+including fixed small prime powers times moving primes. After peeling the
+higher-prime-power branch and lower-pole padding, one explicit next target is
+  R_B(x)=U_p(x)+V_comp(x)
+       -sum_(sigma<1/2:c_sigma=1)
+                        [R_sigma/(1-sigma)]x^(1-sigma).
+The original G_B equals R_B plus the fully costed padding of section 8,
+including any sigma=1/2 term. The precise remaining sufficient theorem is
+  for cofinal q>0, finite K_q exist such that for EVERY dyadic X>=1,
+  X^(-2)sum_(X<=n<2X)|R_B(n)|^2<=K_q*X^(1/q).       (10.1)
+This retains the entire signed composite/prime correlation and is equivalent
+to the original cofinal theorem by the explicit component bounds. It is
+unproved. Negative-control mean/pole failure and finite source agreement
+cannot prove it for actual mu.
+
+11. Exact local-law obstruction: unit-mass renewal is not enough
+----------------------------------------------------------------
+A simple broader renewal model separates local laws from the fixed-stencil
+hypothesis. At EVERY prime choose the same q=1/2, rather than q=p^(-b) for
+one fixed positive b. Take
+  Q_p^*(z)=(1-z)/(1-z/2)=1-sum_(e>=1)2^(-e)z^e.
+All prime-power coefficients are strictly negative, the absolute mass is
+one, the full coefficients have sign (-1)^omega, and |a^*(n)|<=1. The
+same local renewal proof applies perfectly. This lies OUTSIDE the fixed
+positive-rational-shift grammar and is not a counterexample to its theorem.
+
+Nevertheless its global product has, near s=1 from Re(s)>1,
+  Q^*(s)=zeta(s)^(-1/2)*H(s),
+  H(s)=product_p [(1-p^(-s))^(1/2)/(1-p^(-s)/2)].
+The logarithm of each H factor has zero linear term and is O(p^(-2Re(s))).
+Thus H extends holomorphically and nonvanishingly to a neighborhood of one,
+indeed on Re(s)>1/2 with consistent local logarithms. Since zeta has a
+simple pole at one, Q^* has an unavoidable half-order zero/branch there.
+Indeed (Q^*)^2=zeta^(-1)*H^2 has a simple zero there; the square of a
+meromorphic function can only have an even zero/pole order. Thus Q^*
+cannot be a holomorphic or meromorphic function at one. No finite
+ordinary Perron-pole compensation can remove that fractional singularity.
+
+A cofinal complete moment, with any finite usual real-pole main terms,
+would make the Mellin numerator holomorphic and hence Q^* meromorphic at
+one, a contradiction. This proves a concrete NO-GO for a proof relying only
+on prime-local renewal positivity, mass one, and coefficient signs/norms.
+The actual fixed-shift stencil supplies additional global information:
+r_(B,p)(1)=product_i(1-p^(-b_i))->1 at a fixed polynomial rate and c_0=-1
+is an INTEGER leading exponent. The countermodel has prime weight 1/2,
+and its branch records that bias. This is not an actual-prime improvement
+claim or a reason to change the frozen source; it explains exactly which
+structural hypothesis local renewal reasoning cannot replace.
+
+Final status
+------------
+Verified: renewal positivity/unit mass and strictness exception; actual
+multiplicative signs and coefficient/tail bounds; logarithmic overlap
+recurrence and fixed-index derivative limit; commutation/compiled-stencil
+aliases; repeated/colliding-shift handling; exact simple and higher-order
+pole compensation; complete cell/moment costs; and the all-multiplicity
+conditional RH bridge and finite analytic recovery.
+Proved useful component/control estimates: finite-critical higher-prime-power
+peel; exact lower-pole padding costs; centered positive-inverse mean; full
+signed harmonic logarithmic-kernel estimate; and a fractional-branch no-go
+for local renewal laws alone.
+Unproved: the complete signed native-prefix inequality (10.1) or its original
+form (6.2). No full uniform moment, new actual RH estimate, or RH conclusion
+has been established. All such flags remain false.

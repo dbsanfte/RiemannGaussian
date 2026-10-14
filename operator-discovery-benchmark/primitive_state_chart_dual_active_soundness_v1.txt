@@ -1,0 +1,231 @@
+Coupled active-face PCGLS proposals for the finite separator system
+Independent mathematical/resource review, 2026-10-09.
+Prospective035 design and implementation reviewed; no admission blocker found.
+No actual source/seed/model/metric/score/face/Krylov/reconstruction
+calculations, tests, hashes or old-file edits were performed for this review.
+
+Warm seed and objective
+The objective remains f(x)=1/2*||A*x-b||_2^2,x>=0 on the licensed031
+302-row,687-column system with unchanged032 positive exact infinity scaling.
+The full selected032 scaled vector is a finite nonnegative starting point,
+not a theorem premise or a new exact feasible solution. Its old scores
+are not imported: fresh setup recomputes r=b-A*x and checkpoint0. Strict
+positive seed positions define the initial face P; zero positions are
+inactive. Initial checkpoint0 can compete for selection and can itself
+trigger the diagnostic floating-zero-residual stop.
+
+The current vector haszero outside committed P. A newly entered coordinate
+temporarily enlarges the working face with current weightzero; this working
+face need not equal strict support until commit. Every committed face again
+uses all strictlypositive stored positions, with no coefficient threshold.
+The declared initial-face solve precedes entry when the seed support is
+nonempty. A damped face with surviving support schedules one refinement at
+the next outer step; empty survivors instead lead to entry mode.
+
+Entry and approximate stationarity
+With r=b-A*x,w=A^T*r and fixed positive D_j=||A_j||_2^2, a positive inactive
+w_j is an exact descent direction along its nonnegative coordinate, since
+the derivative of f there is -w_j. Maximizing w_j/sqrt(D_j) chooses the
+largest normalized positive correlation, with smaller retained index breaking
+ties. This is a heuristic choice, not a support-completeness theorem.
+
+NNLS KKT conditions would require w_j=0 on strictlypositive coordinates
+and w_j<=0 on zero coordinates. Capped approximate face solves need not
+satisfy the first condition. Therefore no-positive inactive correlation is
+only a declared diagnostic stop, even if the reported active weights are
+positive. It does not prove NNLS optimality, exact cone feasibility or primal
+infeasibility. The final weighted projected-gradient mapping supplies another
+diagnostic rather than repairing that missing exact premise.
+
+Coupled face solve and PCGLS recurrence
+For a fixed working face P, solve the unrestricted least-squares problem
+in z_P starting at current x_P. Negative internal z values are permitted;
+nonnegativity is restored only in the outer commit. Set
+  r=b-A_P*z, s=A_P^T*r, h=D_P^-1*s, p=h, gamma=s^T*h.
+The normal-equation gradient has sign -s. For q=A_P*p,delta=||q||_2^2,
+the declared iteration is
+  a=gamma/delta, z_new=z+a*p,
+  r_new=b-A_P*z_new, s_new=A_P^T*r_new,
+  h_new=D_P^-1*s_new, gamma_new=s_new^T*h_new,
+  beta=gamma_new/gamma, p_new=h_new+beta*p.
+This is the standard diagonally preconditioned CGLS/normal-equation CG
+recurrence in exact arithmetic. Fixed positive D is a valid positive
+preconditioner even when the active normal matrix is singular; no dense
+Gram matrix, rank cutoff or exact normal-equation solve is required.
+
+Fresh compensated residual recomputation limits incremental drift, but
+floating directions need not retain exact conjugacy or orthogonality. The
+cap min(128,2*|P|) licenses no exact face optimum or convergence theorem.
+gamma0 is a floating zero-normal-residual diagnostic. delta0 with gamma>0
+is a diagnostic Krylov breakdown; it is not a certificate about rank or
+infeasibility. A finite current internal z can still be feasibly committed
+after breakdown, followed by normal termination and full final diagnostics.
+
+Gamma/products, division ratios, p/z updates, matrix/transpose products,
+norms/squares and beta must be finite. gamma is nonnegative; a and beta
+use strictlypositive denominators whenever computed. Stable math.fsum and
+math.hypot are not interval enclosures. Underflowed gamma/delta or rounded
+zero values remain diagnostics, never arithmetic conclusions. A nonfinite,
+resource or deadline failure interrupts the trajectory and clears selection.
+
+Nonnegative boundary commit
+If every unconstrained z_j on P is strictlypositive, accept it directly.
+Otherwise for each z_j<=0 form x_j/(x_j-z_j), with bothzero interpreted
+aszero. For x_j>=0 and z_j<=0, every exact ratio lies in[0,1]. The minimum
+alpha therefore makes x+alpha*(z-x) nonnegative on the whole face and hits
+at least one boundary coordinate. Explicitly zero every ratio-minimizer,
+including ties, then keep every remaining strictlypositive coordinate.
+Outside-face coordinates stayzero. This is the usual boundary interpolation
+argument in exact arithmetic; floating interpolation/clamping is heuristic.
+
+Check denominators, ratios, differences, products and candidate values before
+clipping. Any finite negative rounded candidate can be clamped tozero to
+preserve stored nonnegativity, without proving exact interpolation or an
+objective decrease. Additional rounded zeros may disappear, but positive
+stored entries must never be thresholded. A boundary event with alpha=1
+still removes exact-zero candidate positions and sets dampedTrue; survivor
+refinement depends on removal/damping, not merely on alpha<1. A newly
+entered zero coordinate with nonpositive candidate can cause alpha0 and
+drop immediately. Empty surviving support is a valid nonnegative state.
+
+One boundary correction is one outer commit, not an authorization for an
+unmetered inner face solve. Compute fresh full residual, support, metrics
+and state before appending a complete checkpoint and marking the face
+complete. A partial commit is not an accepted face. Approximate face solves
+and finite clamping may stall or revisit a coordinate; the1000-face cap is
+a bounded search rule, not a finite-termination theorem.
+
+Full-source guards and face-specific charges
+For full rows m,columns n,nonzeros z, the frozen proxies are
+  setup=12z+64(m+n)+65536,
+  gradient=8z+32(m+n)+512,
+  face_setup_full=8z+48(m+n)+1024,
+  cg_step_full=12z+64(m+n)+1024,
+  commit=8z+48(m+n)+1024,
+  final=12z+64(m+n)+2048,
+  cg_limit_full=min(128,2n).
+iteration_reserve is gradient+face_setup_full+cg_limit_full*cg_step_full+
+commit; minimum_attempt adds setup and final. A working face with k columns
+and z_P nonzeros instead charges setup_P=8z_P+48(m+k)+1024 and
+cg_step_P=12z_P+64(m+k)+1024, at most min(128,2k) times.
+These are declared sparse work proxies, not hardware instruction counts.
+
+Before any setup require the complete minimum_attempt to fit. Before every
+global gradient reserve one full-source worst-case face solve, commit and
+the still-unspent final diagnostic. Charge only actual blocks before work,
+including charged attempts interrupted by deadline or nonfinite failures.
+Live/deadline checks use charge(0). Exact reported work is
+  setupbool*setup + gradient_blocks*gradient
+  +sum_faces(setupbool_P*setup_P+cg_blocks_P*cg_step_P+commitbool_P*commit)
+  +finalbool*final.
+Partial consumed work is retained, without resetting unused phase reserves.
+
+Face active ids and actual saved-source column nonzero counts determine
+z_P independently. Face-size or self-reported nonzero counts alone would
+not bind the resource claim. Save each mode/entry/active list before setup
+charging, including an incomplete final face if interrupted. A normal
+zero_curvature stop has cg_blocks=cg_steps_completed+1; other complete face
+stops have equal counts. Iteration-limit face solves attain their declared
+cap; gamma0 can complete without any CG step.
+
+Completed gradient count equals face count except a no-positive inactive
+stop, which uses one additional charged terminal gradient and no face setup
+or commit. Initial floating-zero stop can have checkpoint0 and no gradients
+or faces. A work-boundary stop occurs before another gradient. Post-face
+stop priority is zero reported residual, then committed Krylov breakdown,
+then1000-face limit. All normal stops finish the reserved final diagnostic;
+any midstep/final failure clears selected and remains UNKNOWN/incomplete.
+At most one incomplete final face or interrupted/terminal gradient is
+permitted after the complete prefix. No step follows a zero/breakdown stop.
+
+Selection, final diagnostic and original lift
+Initial and complete committed checkpoints compete by(relative residual,
+support size,iteration) among1..443 strictlypositive positions. Preserve
+the whole selected n-vector and all positive indices. The selected support
+must equal the corresponding initial support or recorded surviving face,
+not merely have the same cardinality. No earlier partial result survives
+an interrupted trajectory. A completed ineligible search is NONCERTIFIED.
+
+The final unit-step metric mapping is
+  p=max(0,x+w/D), norm=||sqrt(D)*(x-p)||_2,
+with a fresh last-state residual/correlation and finite guards. It concerns
+the last committed x, which may differ from the selected earlier point.
+Its zero or small value, like correlations and face residuals, is not an
+independently certified error bound or KKT statement.
+
+Lift every selected position through031 stable active columns and030
+original representative ray ids. Exactly one old029 rational support solve
+uses all851 saved original affine responses,target(0,-1),free support
+valueszero. Supports up to443 may be underdetermined and selected positive
+floats may restore to exactzero. Putzero on all original rays outside the
+selected support; retain every selected positive coordinate without trimming.
+Metric/preconditioner and approximate weight sizes play no role in the exact
+algebra. A failed chosen-free-value solve is method failure, not a proof
+against other supports, free choices or PSD directions.
+
+Full mathematical admission remains all851 alpha>=0,782 original multipliers
+lambda and the exact identity
+  A_original^T*lambda=sum_j alpha_j*g_j in all1224 coordinates,
+  b_original^T*lambda=-1.
+Every declared scalar/rational rank-one generator is nonnegative on the
+licensed augmented cone. The identity therefore contradicts an augmented
+feasible point. Bind selected original support, zeros outside and declared
+free positions carryingzero. Reconstruction rank is diagnostic; no second
+support elimination or separate verifier budget is needed for admission.
+
+Independent audit, resource ledger and scope
+The checker can validate source dimensions, initial-vector/metric shape,
+mode/entry/support carry, face nonzeros/costs, block-prefix/stop guards,
+checkpoint ranking and strict full-vector support without replaying numerical
+entry ranking, CG equations, damping values or scores. Those remain explicit
+unverified numerical diagnostics. The complete032 seed binds only the initial
+vector. Licensed031 geometry/reduction are reused without arithmetic replay.
+Metadata verification alone stays complete=false and proves no theorem.
+
+The450m total is preparation40m,model40m,numerical190m,reconstruction90m,
+sole audit90m. Preparation includes25m shared by ALL development, one frozen
+suite and1m root/scaffolding;10m independent I/O and5m other work. Actual numeric
+cap is190m. Inputs, warm-seed export, metric/model/current/CG arrays, all
+faces/checkpoints and selected vectors remain in live-cell bases across
+stages;6m cells,4096/8193-bit and8MiB export limits remain. Worker/audit each
+use6GiB,one thread,3600s limits,producer external7200s. The SAME90m meter
+covers source/seed/metadata checking and optional full Farkas identity.
+No unused allowance licenses another reconstruction, numerical run or audit.
+
+This coupled method can propose different supports by solving several
+coordinates together. It may improve a trajectory or fail/stall; no such
+outcome is promised by the design. Neither numerical success/failure nor
+exact obstruction of this finite template resolves all-scale signed control.
+Even a complete exact separator excludes only the licensed augmented finite
+template, not original unlearned-cone infeasibility,every grammar or RH.
+A universal operator identity, uniform scalar/initial-storage bounds,
+cofinal parameters and ordinary-zeta bridge remain separate requirements.
+
+Implementation and test-source review
+Read the035 producer, independent core, protocol, contract, resource scope,
+runner, audit wrapper, publisher and all three test modules without executing
+them. The producer implements the stated PCGLS recurrence and fresh sparse
+compensated products, retains actual charged-block counters even when a
+deadline fails after charging, and marks a face complete only after its full
+nonnegative commit/checkpoint. Diagnostic curvature breakdown commits before
+normal stopping; every exceptional incomplete path clears selection.
+
+The independent core derives its own full/face work formulas, actual per-column
+sparsity and selected original-ray mapping. It rejects altered mode/support
+carry, consumed counters, start guards, stop priority and incomplete selection.
+The root audit binds the actual numerical allowance to190m, one declared
+trajectory/restoration and one90m audit. Source/seed/metadata parsing and the
+optional original Farkas identity consume that same90m meter. Publication
+requires the complete original exact witness and labels numerical trajectory
+and scores unreplayed/unverified; no numerical disposition promotes a theorem.
+
+Read-only test inspection covers coupled negative-face damping and surviving
+refinement, alpha1 zeros, tiny positive entries, initial checkpoint selection,
+terminal correlation gradients, underflowed curvature diagnostics, partial
+CG/commit/final charges, seed and full851 support plumbing, metadata mutations,
+and an original-coordinate witness with targeted support/identity mutations.
+These are meaningful synthetic checks of implementation and admission scope;
+they do not establish convergence or any actual research outcome. Reviewer
+synthetic operations arezero. No further optimizer improvement is warranted
+by this soundness review: useful progress toward signed all-scale control must
+also address candidate arithmetic structure and its explicit proof obligations.

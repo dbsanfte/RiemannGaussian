@@ -1,0 +1,56 @@
+{
+  "schema": "prime-transfer-algebra-058-development-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "elapsed_seconds": 0.2281066169962287,
+      "operations": 271988
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0011565600289031863,
+      "operations": 1097,
+      "scope": "only corrected cap-fixture test; no suite replay"
+    },
+    {
+      "returncode": 0,
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.2635073410347104,
+      "operations": 446266,
+      "scope": "only affected exact replay/RREF/resource tests after static bounded-resource hardening"
+    }
+  ],
+  "total_primitive_counts": {
+    "prime_trial_divisions": 12,
+    "factor_divisions": 1281,
+    "grammar_atoms": 288,
+    "valuation_atom_cases": 1880,
+    "polynomial_terms": 3740,
+    "pivot_checks": 3902,
+    "fraction_operations": 33329,
+    "row_updates": 1445,
+    "relation_replay_terms": 39708,
+    "cache_hits": 5
+  },
+  "peak_bytes_estimate": 45021632,
+  "scope": "one/two-prime exact synthetic signatures only; no three-prime scientific pilot matrix",
+  "scientific_pilot_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "checker_imported": false,
+  "norm_bound_or_rh_claimed": false,
+  "initial_failure_retained": true,
+  "correction": "Test expected 18^2 valuation states to exceed 4096; corrected boundary fixture sets temporary MAX_STATES300 and exercises genuine preflight rejection. Producer unchanged.",
+  "final_focused_status": "PASSED_AFTER_FIXTURE_CORRECTION_AND_RESOURCE_HARDENING",
+  "static_hardening": "Bound every partial Fraction replay sum; preflight full 8192bit numerator/denominator storage and serialized nullspace output, preserving mathematics.",
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "root_preflight_note": "Normalize receipt status keys for the existing ledger reader; all original invocations and counts preserved."
+}

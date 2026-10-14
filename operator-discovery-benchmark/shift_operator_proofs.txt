@@ -1,0 +1,86 @@
+PROOFS FOR THE COEFFICIENT-SHIFT OPERATOR RECOGNIZER
+
+Let b_alpha=P_alpha(u), alpha in Q, u(n)=1, using the coefficient-local
+power program proved in root_proofs.txt. It is multiplicative, with
+  b_alpha(p^e)=c_alpha(e)=alpha(alpha+1)...(alpha+e-1)/e!, c_alpha(0)=1.
+This formula is used ONLY by the proof audit, not by the learner.
+
+For any e>=0 and k>=0, direct cancellation of finite products gives
+  [product_{j=1}^k(e+j)]*c_alpha(e+k)
+    =[product_{j=0}^{k-1}(e+alpha+j)]*c_alpha(e).
+This is a polynomial identity in alpha, so it holds even if a coefficient
+vanishes. The proof never divides by c_alpha(e).
+
+For m=product_p p^k_p define nonzero integer A_m(n) and polynomial B_m:
+  A_m(n)=product_{p^k||m} product_{j=1}^k(v_p(n)+j),
+  B_m(alpha,n)=product_{p^k||m} product_{j=0}^{k-1}(v_p(n)+alpha+j).
+Multiplicativity and the local polynomial identity prove, for ALL n>=1,
+ALL m>=1 and ALL rational alpha,
+  A_m(n)*b_alpha(m*n)=B_m(alpha,n)*b_alpha(n).
+No convergence assumption, cutoff, nonzero-coefficient assumption or
+restriction to the training parameters is involved.
+
+The proof may contain counts for composite bases. Counts that merely multiply
+a known law can be left as arbitrary scalar indeterminates: no primality
+hypothesis on that multiplier is necessary. For a prime-power base p^k,
+the bounded count equals floor(v_p(n)/k). For each involved prime let L be
+the least common multiple of its count exponents k. Write v_p(n)=L*u+r,
+0<=r<L. Every count for p^k then equals (L/k)*u+floor(r/k). Substituting
+these expressions into the candidate cross-polynomial and checking it is
+identically zero for EVERY finite remainder r proves it for every integer
+u>=0, hence every n. This is a universal quotient/remainder proof, not
+extrapolation from tested exponents. Counts for other composite bases may
+be treated as free scalar values only when the stronger polynomial identity
+already holds irrespective of them.
+
+The discovered candidate is a relation
+  L(alpha,n,v)*b_alpha(m*n)+R(alpha,n,v)*b_alpha(n)=0.
+When each count base in v is prime, its bounded count is exactly v_p(n).
+The proof recognizer treats these valuations as independent indeterminates
+and expands L*B_m+R*A_m. If this polynomial is identically zero, substitution
+at the actual n proves the candidate. Since A_m(n)>0, cancellation of this
+integer is legitimate. A candidate failing this symbolic criterion remains
+unproved even if its finite numerical validations passed. Nonmultiplicative
+index maps are also left unproved by this particular recognizer.
+
+For prime p the simplest result is
+  (v_p(n)+1)*b_alpha(p*n)-(v_p(n)+alpha)*b_alpha(n)=0.
+Define the prime-basic derivation D_p f(n)=(v_p(n)+1)*f(p*n), and the
+valuation multiplication operator N_p f(n)=v_p(n)*f(n). This becomes
+  (D_p-N_p)b_alpha=alpha*b_alpha.
+D_p is a classical derivation of the Dirichlet-convolution algebra; it is
+not a historically new operator. The standard interpretation identifies
+arithmetic functions with formal series in the prime variables, where
+D_p is partial differentiation and N_p is x_p*d/dx_p. The equation is
+the familiar local differential equation (1-x_p)F'=alpha F for the factor
+(1-x_p)^(-alpha).
+
+The algorithm may recover scalar/polynomial multiples of this equation.
+Such variants are duplicate laws, not distinct mathematical discoveries.
+Additive shifts and floor/remainder maps are genuinely included in discovery;
+their rejection provides evidence about the searched finite grammar, not
+a theorem that no richer mixed arithmetic identity exists.
+
+VALIDITY LIMITS AND ZETA BRIDGE
+
+The shift operator has explicit lookahead: output coefficients through N
+may need inputs through m*N. It is an operator on infinite arithmetic
+functions, not a cutoff-consistent map requiring only the first N inputs.
+The output identity implies an absolutely convergent series identity in a
+right half-plane for b_alpha. For the recovered positive roots alpha=1/q,
+|b_alpha(n)|<=1, and powers of valuations grow at most powers of log n;
+the sums converge for Re(s)>1. This does not establish a holomorphic
+global qth root through zeta's zeros or a new RH implication.
+
+PRIOR ART
+
+Wai Yan Pong, Applications of differential algebra to algebraic independence
+of arithmetic functions, Acta Arithmetica 172.2 (2016), section 2, defines
+D_p f(n)=f(np)*v_p(np), describes its correspondence to prime-variable
+partial differentiation, and discusses valuation multiplication derivations.
+https://www.impan.pl/shop/publication/transaction/download/product/91275
+
+The proof criterion is an exact polynomial identity checked by SymPy.
+It is supported by this universal argument, but is not a theorem-prover
+certificate. Independent large-cutoff/new-parameter checks audit its
+implementation rather than serving as substitutes for the proof.

@@ -1,0 +1,366 @@
+EXACT DILATION COVARIANCE AND COMPLETE CONVOLUTION GEOMETRIES
+
+Status: proved exact floor elimination, signed conductor/GCD covariance,
+explicit logarithmic divisor and coefficient-l2 variance providers, and
+complete pair/cube hyperbola identities. The finite A^2*e variance cost
+improves from U^5 to U^3 times explicit logarithms. That improvement is
+generic coefficient collection, not a new actual-prime cancellation theorem.
+The whole centered core remains OPEN. No source observations, tests, hashes,
+experiments, or earlier/frozen-file edits were made for this review.
+
+Scope: the accepted bound-argument handoff and obligation retain complete
+A_U^2 E_U^3, its source unit/head, outer K(n)=n^(-1/3), all mean branches,
+and analytic or ordinary residues with their declared domains. This memo
+supplies reusable rules for the next executable proof search. It does not
+promote an old illustrative contour or a fixed-sigma global low leaf.
+
+1. Exact source and physical versus periodic prefix
+
+Fix an INTEGER U>=1. A(d)=mu(d)1_(d<=U), c=sum A(d)/d. Dirichlet convolution
+is denoted *. The actual inverse facts give |c|<=2. Define
+ E=delta-One*A+c One, C=1+(M(U)-c)/2, e=E-C delta.
+For integers n>=1, the COMPLETE prefix of e is
+ Q^+(n)=Q(n)=sum_(a<=U)A(a)B_a(n),
+ B_a(n)={n/a}-(a-1)/(2a).
+The physical Q^+(0)=0 differs from the periodic Q(0)=1-C. B_1=0.
+Every B_a is discretely centered on an a-period. Hence |Q(n)|<=U/2
+on ALL integers, including zero; its period divides lcm(1,...,U).
+This enormous period is never needed as a computational object.
+
+For a finite real or complex h supported in 1..D put
+ F_h(n)=sum_(d<=D)h(d)Q(floor(n/d)), all integer n>=0.
+The actual convolution prefix is EXACTLY
+ P_(h*e)(n)=F_h(n)-(1-C)sum_(d>n)h(d).                 (1.1)
+The correction is supported at n<D. No argument at zero, unit, previous
+prefix, or shorthead can be discarded. In particular n>=D is a sufficient
+certificate for equality with the periodic expression, not an assumption
+that can be inferred from a long-looking numerical block.
+
+2. Floor elimination and coefficient collection BEFORE magnitudes
+
+For positive integers a,d and integer n>=0,
+ {floor(n/d)/a}={n/(ad)}-{n/d}/a,
+ B_a(floor(n/d))=B_(ad)(n)-B_d(n)/a.                 (2.1)
+Write n=ad k+d j+r, 0<=j<a,0<=r<d, to verify both fractional parts;
+the centering constants give the second equality exactly.
+Consequently
+ F_h(n)=sum_(m<=UD)v(m)B_m(n), v=h*A-c h=-h*T,
+ T=c delta-A.                                       (2.2)
+All floor-lift frequency collisions have become ordinary signed coefficient
+collection. The formula is valid at n=0 as well. It does NOT remove (1.1).
+Its complete harmonic null is
+ sum_m v(m)/m=hat(h)(1)[hat(A)(1)-c]=0.               (2.3)
+Here hat(h)(1)=sum h(d)/d, not the unit coefficient h(1).
+
+For h=A^p, v=A^(p+1)-c A^p, maximum denominator H=U^(p+1).
+In particular h=A^2 gives v=A^3-cA^2 and H=U^3. The compiler can derive
+the power and support from convolution nodes rather than nominate U^3.
+Arbitrary finite signed h, weighted factors, and finite linear combinations
+use the same identity. Collect the entire h or v before applying triangle.
+
+3. Exact signed covariance: conductor and gcd descriptions agree
+
+For a common-period average denoted by < >,
+ <B_m B_l>=(gcd(m,l)^2-1)/(12ml).                    (3.1)
+One proof uses the discrete Fourier coefficients
+ -1/[m(1-exp(-2pi i j/m))], 1<=j<m. Only equal reduced frequencies
+survive averaging. The reduced denominator r contributes J_2(r)/12,
+where J_2(r)=r^2 product_(p|r)(1-p^(-2)); summing r|gcd(m,l), r>1,
+uses sum_(r|g)J_2(r)=g^2. This also proves the identity for m or l=1.
+Equivalently it follows by averaging integer residues on the common period.
+
+For finite v,w, the exact covariance is
+ (1/12)[sum_(m,l)v(m)conj(w(l))gcd(m,l)^2/(ml)
+              -hat(v)(1)conj(hat(w)(1))].           (3.2)
+The subtraction is NOT zero for an arbitrary coefficient state. For (2.2)
+it vanishes by the certified harmonic null. Positivity of the remaining
+GCD Gram does not make its individual signed cross terms nonnegative.
+
+Let K_r(v)=sum_(k<=floor(H/r))v(rk)/k. Orthogonality also gives
+ Var(F_h)=sum_(r=2)^H |K_r(v)|^2 J_2(r)/(12r^2).      (3.3)
+This is an exact finite arithmetic Gram, retaining every prime/composite,
+gcd and repeated-valuation sector. Its bilinear version, or a block matrix
+for v_1,...,v_j, preserves every cross between generated proof branches.
+Different supports may be embedded in their common maximum H. Equal
+frequency coefficients must be collected before any squared magnitude.
+
+4. Explicit divisor-envelope provider; no n^epsilon constant
+
+For integer k>=1 let d_k be the ordered k-fold divisor function. Two
+elementary rules are
+ d_k(ab)<=d_k(a)d_k(b), d_k(n)^2<=d_(k^2)(n).         (4.1)
+Both reduce to prime powers. With f_k(e)=binom(e+k-1,k-1), the ratios
+f_k(e+1)/f_k(e)=(e+k)/(e+1) decrease, proving submultiplicativity.
+For the square inequality compare consecutive ratios:
+ (e+k)^2<=(e+1)(e+k^2), whose difference is e(k-1)^2>=0;
+both sides start at1. Multiplying over primes proves (4.1).
+Also sum_(n<=x)d_k(n)<=x(1+ln x)^(k-1), x>=1, by eliminating one
+factor in the ordered product count and using harmonic sums for the rest.
+
+Define R_j=j! sum_(i=0)^j 1/i!, an INTEGER; R_0=1,R_6=1957.
+For integer j>=0 and H>=1, Stieltjes summation gives
+ sum_(r<=H)d_k(r)(1+ln(H/r))^j
+ <=R_j H(1+ln H)^(k-1).                              (4.2)
+Indeed, writing D_k(t)<=t(1+ln t)^(k-1), the terminal contribution is
+H(1+ln H)^(k-1). The remaining positive integral is bounded by the same
+quantity times j int_0^infinity e^(-y)(1+y)^(j-1)dy=R_j-1.
+This proof includes r=1,H=1, all floors, and nonintegral integration limits.
+
+If |v(n)|<=C0 d_k(n) and support<=H, then
+ |K_r(v)|<=C0 d_k(r)(1+ln(H/r))^k.
+Applying (4.1),(4.2) to (3.3) yields the reusable rule
+ Var <=[C0^2 R_(2k)/12] H(1+ln H)^(k^2-1).           (4.3)
+An empty spectrum, in particular H=1, has variance0; the positive bound
+remains safe. C0 can itself be an explicitly paid cutoff/log envelope.
+
+Actual h=A^2 has |v|<=d_3+2d_2<=3d_3. Thus
+ Var(F_(A^2))<=(5871/4)U^3(1+3ln U)^8.              (4.4)
+The constant5871/4 belongs to THIS logarithm. Replacing it by (1+ln U)^8
+requires the extra factor3^8. More generally h=A^p uses k=p+1,C0=3
+(d_0 means delta if p=0). This is a proved two-U-power improvement over
+the old variance bound U^5/2, though its logarithmic constant is larger.
+
+For ANY weights |w|<=1, c=hat(A)(1) only satisfies |c|<=1+ln U, and the
+same bound uses C0=2(1+ln U). It has the SAME U power with two extra logs.
+The actual complete-inverse fact |c|<=2 saves logs; it does not create the
+power improvement. The improvement comes from exact floor/cofactor
+collection and cutoff-sensitive summation, not new Mobius cancellation.
+
+5. Genuine coefficient-l2 providers and their limitations
+
+Cofactor Cauchy in (3.3), using sum k^(-2)<=2, gives
+ Var <=(1/6)sum_(n<=H)d_2(n)|v(n)|^2.                (5.1)
+All input coefficients may remain exact signed source coefficients until
+this last square. This is a real alternative to ||h||_1^2. It is not a
+uniform constant times ||h||_2^2: the merge v=h*A-c h still has a cost.
+For example the safe weighted Dirichlet-Young estimate is
+ ||v||_(l2(d2))<=[sum_(a<=U)|A(a)|sqrt(d2(a))+|c|]
+                         ||h||_(l2(d2)).            (5.2)
+Each dilation obeys d2(an)<=d2(a)d2(n), and Minkowski proves the formula.
+For actual source the bracket is <=U sqrt(1+ln U)+2. Applying this to
+h=A^2 is usually worse than (4.4); the planner should compare costs.
+
+An actual-source counterexample to a U-independent constant times ||h||2^2
+is h=delta. For every squarefree r in (U/2,U], K_r(A)=mu(r); each such
+conductor contributes >=1/24 to Var(Q). There are at least
+U/8-sqrt U-1 such squarefree integers: count the interval and subtract all
+multiples of k^2, k>=2, using sum_(k>=2)k^(-2)<=3/4. For U>=256 this
+count is >=U/32. Hence Var(Q)>=U/768 whereas ||delta||2^2=1. The cutoff
+or the merged-coefficient cost cannot simply disappear in an l2 lift.
+
+An unweighted l2 rule is possible with an explicit loose logarithmic cost:
+ Var <=[3^28/12](1+ln H)^2 sum_(n<=H)|v(n)|^2,
+ H>=2.                                               (5.3)
+Here is a self-contained proof, with no external GCD-sum import. The positive
+GCD kernel in (3.2) equals product_p p^(-|v_p(m)-v_p(l)|). The single-prime
+Toeplitz row sum is <=(1+1/p)/(1-1/p). A finite prime-tensor Schur bound
+therefore gives operator norm <=product_(p<=H)(1-1/p)^(-2).
+
+To bound that product elementarily, let vartheta(x)=sum_(p<=x)ln p.
+Every prime n<p<=2n divides binom(2n,n), so dyadic summation gives
+vartheta(x)<=4 ln2*x for x>=2. Partial summation implies
+sum_(p<=H)(ln p)/p <=4 ln2*(1+ln H). Set s=1+1/ln H. The logarithmic
+Euler-factor difference at1 and s is bounded by
+2 sum_(p<=H)(p^(-1)-p^(-s))
+ <=(2/ln H)sum_(p<=H)(ln p)/p <=8 ln2+8<14.
+The factors at s multiply to at most zeta(s)<=1+ln H, by positive geometric
+expansion and the integral test. Thus product_(p<=H)(1-1/p)^(-1)
+ <=e^14(1+ln H)<3^14(1+ln H), proving (5.3).
+The harmonic subtraction in (3.2) can only decrease the quadratic, so this
+provider is safe even without null; equality with the positive kernel still
+requires null. Infinite exponent boxes are only a proof device, not an
+allocation or actual-source computation.
+
+Actual mu enters the exact v, its support, complete harmonic null and
+possibly a better finite coefficient Gram. A generic covariance inequality
+does not supply an actual-source bound for that Gram. Squaring v removes
+signs between different indices; (3.3), unlike (5.1), can still exploit them
+inside each conductor. These are distinct search routes.
+
+6. Finite windows, head recovery and proof costs
+
+All reduced frequencies now have denominator<=H. Their circular separation
+is at least H^(-2). The elementary geometric-kernel row bound from Review030
+therefore proves, for ANY integer window of length L>=1,
+ sum_window |F_h(n)|^2
+ <=[L+H^2(1+2ln H)] Var(F_h).                         (6.1)
+The proof counts neighbors at distances j/H^2 on the two circle directions
+and sums the harmonic bound on the kernel. It does not assume a complete
+period or random sample. The period/GCD providers compete with direct
+pointwise |F_h|<=(U/2)||h||_1. For h=A^2 the latter gives U^6 L/4.
+
+Combining (4.4),(6.1) has costs U^3 L times log^8 and U^9 times log^9,
+rather than the old U^5 L and U^11 log costs. Both comparisons retain
+the physical shorthead (1.1). If a window includes n<D, a separate safe
+correction bound is |1-C| ||h||_1<=(3U/2)||h||_1 and its squared sum
+is <=(9/4)U^2||h||_1^2 min(L,D). Triangle can add twice each squared cost,
+or the exact head cross can remain in the proof target. For h=A^2 and
+physical scales X with X>=U^2 the correction is identically absent.
+
+The spacing term is a proved upper cost, NOT a lower bound for the actual
+window norm. A failure to pay its exponent is a proof-language failure;
+it is not a counterexample to arithmetic cancellation or RH.
+
+7. Complete hyperbola geometries for e^2 and e^3
+
+For sequences f_i with prefixes P_i, integer cutoffs t_i>=1 and n>=0,
+if product_i(t_i+1)>n, inclusion-exclusion covers every tuple with product
+<=n by at least one coordinate <=t_i. Explicitly the complete prefix of
+f_1*...*f_j equals the sum over nonempty coordinate sets S, coefficient
+(-1)^(|S|+1), of
+ sum_(a_i<=t_i,i in S) product_(i in S)f_i(a_i)
+       P_(product of remaining f_i)(floor(n/product_(i in S)a_i)).        (7.1)
+The empty remaining convolution is delta, whose prefix is1_(argument>=1).
+Thus a fully finite intersection STILL has its product<=n indicator unless
+product t_i<=n. This is the complete reciprocal region, with no tail lost.
+
+For t=floor(sqrt n), n>=1,
+ P_(e^2)(n)=2 sum_(a<=t)e(a)Q^+(floor(n/a))-Q^+(t)^2. (7.2)
+For t=floor(n^(1/3)),
+ P_(e^3)(n)=3 sum_(a<=t)e(a)P_(e^2)(floor(n/a))
+            -3 sum_(a,b<=t)e(a)e(b)Q^+(floor(n/(ab)))
+            +Q^+(t)^3.                              (7.3)
+The squares/cube here are rectangle intersections of prefixes. They are NOT
+an identity e^3(n)=Q(n)^3, nor a pointwise replacement of convolution.
+At n=0 use the literal empty physical prefix. For unequal thresholds retain
+the literal finite-intersection indicator in (7.1).
+
+For machine search on a WHOLE parent/child range n<=N, fixed thresholds
+are preferable: prove support gaps, not a different period at every n.
+Let e_t=e 1_[1,t]. If (r+1)^2>N, coefficientwise on 1..N,
+ e^2=2 e_r*e-e_r^2.
+If also (t+1)^3>N, substitution in the complete cube cover gives
+ e^3=(6 e_t*e_r-3 e_t^2)*e + e_t^3-3 e_t*e_r^2.     (7.4)
+This equality is exact on EVERY coefficient <=N, hence on every prefix
+<=N, and after convolution by any positive-support state for coefficients
+<=N. The general asymmetric pair rule is
+ e^2=(e_r+e_s)*e-e_r*e_s if (r+1)(s+1)>N.             (7.5)
+Combining (7.1),(7.5) provides selectable split geometries with exact finite
+supports. All thresholds use exact integer roots and strict support tests.
+An n-dependent threshold is allowed in the literal arithmetic identity,
+but its whole-window covariance is a NEW target, not (6.1) for fixed v.
+
+For A^2*e^3 define, using (7.4),
+ h=A^2*(6 e_t*e_r-3 e_t^2),
+ k=A^2*(e_t^3-3 e_t*e_r^2).
+Then P_(A^2*e^3)(n)=sum_d h(d)Q^+(floor(n/d))+P_k(n), n<=N. (7.6)
+The first term floor-collects to v=h*A-c h with head (1.1). The second is
+a COMPLETE finite prefix; it may be supported beyond N and must keep the
+condition d<=n. Do not replace it by a full mass or a constant endpoint.
+Collect the coefficients6,-3 BEFORE bounds, and retain the cross between
+the two terms. This is a useful exact finite arithmetic reduction, not
+independent payment of either component.
+
+8. Honest unsigned control and geometry-specific failure
+
+A simple unconditional source envelope, valid for real x>=1, is
+ sum_(a<=x)|e(a)| <=2U+(3+ln U)x,
+ |P_e(n)|<=U/2.                                     (8.1)
+For the mass rule write e=(1-C)delta-One*A+c One and use
+|1-C|<=3U/2, sum |A(d)|/d<=1+ln U, |c|<=2.
+Coefficient-envelope synthesis must ALSO preserve the unit:
+ e(1)=c-C=Q(1), |e(1)|<=U/2;
+ |e(n)|<=d2(n)+2 for n>1.
+A safe all-n bound is 3d2(n)+(U/2)delta(n). Thus the finite cube/pair
+factors cannot silently be assigned an O(1)d_k envelope independent of U.
+Put L0=3+ln U. Abel summation gives
+ sum_(a<=t)|e(a)|a^(-1/2)<=2U+2L0 sqrt t.
+Equations (7.2),(8.1) imply |P_(e^2)(n)|<=2L0 U sqrt n for n>=U^2.
+Using (7.3) and the preceding weighted bound, for n>=U^6,
+ |P_(e^3)(n)|<=24 L0^2 U n^(2/3).                   (8.2)
+For detail: the first term is <=12L0 U^2 sqrt n+12L0^2 U n^(2/3),
+the second <=6L0^2 U n^(2/3), and the last <=U^3/8; n>=U^6,L0>=3
+put their sum below24L0^2 U n^(2/3). For smaller n the literal finite
+mass and hyperbola formulas supply the head, never an infinite asymptotic.
+Convolving actual A^2 uses sum |A^2(d)|d^(-2/3)<=9U^(2/3), hence
+ |P_(A^2*e^3)(n)|<=216 L0^2 U^(5/3)n^(2/3), n>=U^8. (8.3)
+This is useful unsigned control, but unpaid at critical prefix-energy scale.
+Its exponent equals theta=2/3, so it does NOT itself justify ordinary
+convergence of the theta-moment or subtraction of an analytic residue.
+
+For fixed-N symmetric cube plus pair elimination (7.4), the smallest
+power choices have t~N^(1/3),r~N^(1/2). The one-e finite coefficient
+support reaches U^2 t r and its collected denominator reaches H~U^3 N^(5/6).
+If the planner prices a d_k-envelope variance by H times logarithms and
+then (6.1) on a length~N window, the spacing contribution divided by N^2
+has N power3*(5/6)-2=1/2 BEFORE further U/unit factors. Unequal pair
+thresholds with reciprocal product>N cannot lower their largest exponent
+below1/2; in this two-level family they do not fix that cost. Thus this
+particular unsigned support/spacing proof family cannot pay the full target.
+This is NOT a lower bound on actual variance, a general no-go for all
+hyperbola rules, or an arithmetic disproof. Source cancellation can reduce
+actual support, conductor coefficients or joined branch covariance; those
+are exactly the signed leaves lost by the selected majorants.
+
+9. Where actual Mobius interactions remain, and the next complete leaf
+
+For squarefree n, A^j(n)=mu(n) N_j(n;U), where N_j counts ordered j-factor
+allocations of the prime factors with each factor<=U. All allocations have
+the SAME mu(n) sign. Thus within-product prime permutations do not cancel
+the leading A^3 branch. Repeated prime valuations are at most j in A^j
+and have their complete signed binomial/allocation contributions; none is
+discarded by the floor identity. For v=A^3-cA^2,
+ v(n)=mu(n)[N_3(n;U)-c N_2(n;U)] on squarefree n.
+This does allow exact branch cancellation at a fixed product, but generic
+divisor counting does not prove it quantitatively. The conductor sum mixes
+DIFFERENT products r k, so its signed offdiagonal correlations are a genuine
+arithmetic opportunity not already decided by parity in one allocation fiber.
+
+There is also a source-specific obstruction to lowering the U POWER of the
+FULL-PERIOD norm for h=A^2. For U>=5 let P_U be the primes in (U/2,U]. For
+three distinct members p1,p2,p3 put r=p1p2p3. Each of the three short A
+factors must contain exactly one of these primes: two such primes in one
+factor exceed U. Thus A^3(r)=-6, A^2(r)=0. No additional integer k>=2 can
+be absorbed by any of the three already occupied factors, so v(rk)=0 for
+every k>=2. Therefore K_r(v)=-6 EXACTLY. Different unordered triples have
+different r. Since J2(r)/r^2>=1/zeta(2)>=1/2, (3.3) proves the all-U rule
+ Var(F_(A^2)) >=(3/2) binom(|P_U|,3).                (9.1)
+This exact finite prime-count lower certificate requires no asymptotic input.
+
+If an explicit prime-number-theorem import is permitted, |P_U|~U/(2ln U)
+and hence (9.1) is Omega(U^3/(ln U)^3). One primary proof/formalization
+reference for the imported statement pi(x)~x/ln x is Mario Carneiro,
+Formalization of the prime number theorem and Dirichlet's theorem (2016),
+https://arxiv.org/abs/1608.02029 ; the identical statement is recorded in
+the official NIST formula https://dlmf.nist.gov/27.2.E3 . Both were opened
+read-only for this review. No effective threshold or fitted constant is
+asserted. For example PNT eventually gives |P_U|>=U/(4ln U), and (9.1)
+then gives >=U^3/[1024(ln U)^3] once |P_U|>=4.
+
+Thus even complete actual-sign conductor cancellation cannot yield a
+full-period bound O(U^(3-delta)) for any fixed delta>0. This is a genuine
+scoped obstruction, not merely failure of an upper provider. It does NOT
+exclude smaller physical-window norms, useful logarithmic improvements,
+crosses with the mean/finite boundary/other hyperbola branches, or the
+outer centered K transform. No conclusion about the original core or RH
+follows from this period lower bound.
+
+A detector-enumerable next construction is the full vector of finite
+coefficients from (7.1),(7.4),(7.5), followed by signed floor elimination,
+common-conductor collection, and exact finite-window covariance. It should
+compare: direct divisor triangle, generic period envelope, weighted and
+unweighted coefficient-l2, and the signed common-conductor Gram. Each
+application records U,N, thresholds, cutoff support certificates, head and
+mean states, and whether it is a period norm, a finite window, or a moving
+threshold arithmetic kernel. A failure of one route feeds its exact remaining
+joined Gram back to search instead of assigning an unavailable provider.
+
+For a fixed geometry the concrete complete finite leaf is the quadratic of
+ [sum_d h(d)Q^+(floor(n/d)) + P_k(n)]
+over the physical window, with h,k in (7.6), the FULL mean expansion
+ A^2E^3=A^2e^3+3C A^2e^2+3C^2 A^2e+C^3 A^2,
+and the outer K and complete main/residue compensation still present.
+The period diagonal (3.3) is one rigorously controlled part of this leaf.
+The finite k branch, its cross with the Q branch, moving reciprocal-window
+intersections, and K/centering transfer are separate typed operations. The
+lower-mean moment route in Review030 may be paid ONLY by an applicable
+existing independently checked proof compiler, with its own searched
+contour and complete residue. Nothing here pays the old sigma9/20 global
+work leaf, changes ordinary into analytic centering, or certifies RH.
+
+No usable uniform actual signed bound for that final joined quadratic is
+proved here. The advancement is a substantial exact reduction and generic
+two-power variance saving, plus a falsifiable source-specific covariance
+frontier and explicit exponent failure for the natural unsigned geometry.
+The detector chooses the composable construction and proof route; these
+Fourier/GCD/hyperbola providers are analytically supplied theorem rules.

@@ -1,0 +1,27 @@
+test_arbitrary_fractional_parameters_normalizer_and_signed_source (__main__.MiddleCheckerTests) ... ok
+test_band_partition_and_same_source_cache (__main__.MiddleCheckerTests) ... ok
+test_charge_only_meter_and_precision_restoration (__main__.MiddleCheckerTests) ... ok
+test_complete_radicals_match_cofactor_identity_and_valuations (__main__.MiddleCheckerTests) ... ok
+test_dyadic_signed_rounding_and_taylor_remainder (__main__.MiddleCheckerTests) ... ok
+test_exact_half_and_equal_bands_skip_source (__main__.MiddleCheckerTests) ... ok
+test_functional_context_and_narrow_or_forged_interval (__main__.MiddleCheckerTests) ... ok
+test_half_alpha_elementary_erfc_calibration (__main__.MiddleCheckerTests) ... ok
+test_independent_taylor_admits_small_producer_integrals (__main__.MiddleCheckerTests) ... ok
+test_logarithmic_and_arbitrary_delta_recovery (__main__.MiddleCheckerTests) ... ok
+test_primes_parameters_canonical_types_and_capacity (__main__.MiddleCheckerTests) ... FAIL
+test_recovery_exact_signed_crosses_and_source_base (__main__.MiddleCheckerTests) ... ok
+test_recovery_invalid_source_convexity_or_unpriced_cost (__main__.MiddleCheckerTests) ... ok
+test_recovery_omitted_parity_neighbor_seeds_and_prices_rejected (__main__.MiddleCheckerTests) ... ok
+
+======================================================================
+FAIL: test_primes_parameters_canonical_types_and_capacity (__main__.MiddleCheckerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_insertion_middle_057.py", line 160, in test_primes_parameters_canonical_types_and_capacity
+    with self.assertRaises(OverflowError):C.verify_middle_interval(request(gamma='100001'),{'lower':'-1','upper':'1'},m,context)
+AssertionError: OverflowError not raised
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.123s
+
+FAILED (failures=1)

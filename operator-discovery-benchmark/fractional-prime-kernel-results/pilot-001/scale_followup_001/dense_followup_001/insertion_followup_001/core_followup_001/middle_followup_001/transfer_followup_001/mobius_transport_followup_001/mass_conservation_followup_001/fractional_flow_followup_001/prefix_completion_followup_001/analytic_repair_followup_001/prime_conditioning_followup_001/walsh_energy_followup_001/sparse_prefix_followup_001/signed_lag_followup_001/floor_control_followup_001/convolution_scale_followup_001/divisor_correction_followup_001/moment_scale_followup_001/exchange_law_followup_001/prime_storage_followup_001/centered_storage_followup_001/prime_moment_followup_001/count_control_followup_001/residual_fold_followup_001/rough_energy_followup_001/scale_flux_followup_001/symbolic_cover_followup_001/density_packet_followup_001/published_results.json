@@ -1,0 +1,1729 @@
+{
+  "RH_proved": false,
+  "coverage_resources": {
+    "constructor_operations": 2193997650,
+    "diagnostic_parent": 5116208,
+    "elapsed_seconds": 1.4590408889926039,
+    "peak_rss_bytes": 720928768
+  },
+  "details": [
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "2321495/16777216",
+      "coverage_admission": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_mass": "299863005131/4",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p16_packet_0",
+        "ops": 152240375,
+        "peak_bytes": 254803520,
+        "prime_block_verified": true,
+        "removed_mass": "49383990088512808895355/25607892508586056",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/8",
+      "eta": "2/7",
+      "finite_packet_negative": 18,
+      "finite_packet_positive": 18,
+      "finite_unlinked_refutations": 1,
+      "id": "q1_p16_packet_0",
+      "memory": 2,
+      "physical_coverage": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "2546571/8",
+        "absolute_offdiagonal_coefficient_mass": "299863005131/4",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 11980,
+            "right": 127905,
+            "squarefree": 77763,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 7830,
+            "right": 255810,
+            "squarefree": 58316,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 14827,
+            "right": 511620,
+            "squarefree": 116618,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 980,
+        "fraction_absolute_mass_removed": "49383990088512808895355/1919714900674059242970763334",
+        "fraction_nonzero_edges_touched": "1008359/38735512116",
+        "nonzero_ratio_labels": 518,
+        "remaining_absolute_coefficient_mass": "1919665516683970730161867979/25607892508586056",
+        "removed_absolute_coefficient_mass": "49383990088512808895355/25607892508586056",
+        "retained_nonzero_physical_pairs": 1008359,
+        "retained_nonzero_ratio_labels": 518,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 38735512116,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "5/2",
+          "prime_count": 18324,
+          "signed_contribution": "419688315",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "1632368581903835167/3200986563573257",
+        "weighted_physical_pairs": "6356281400297006026907/6401973127146514"
+      },
+      "proved_packet_constant": "681988401387/1048576",
+      "proved_packet_exponent": "1",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ],
+      "refutation_parents": [
+        1420914
+      ],
+      "selection_tracks": [
+        "largest_growing_roster"
+      ],
+      "source_id": "q1_p16",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "2321843/16777216",
+      "coverage_admission": {
+        "D": 21,
+        "RH_proved": false,
+        "absolute_mass": "299863005131/4",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p16_packet_1",
+        "ops": 128000344,
+        "peak_bytes": 145990366,
+        "prime_block_verified": true,
+        "removed_mass": "739660072607/1677914",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/2",
+      "eta": "1/5",
+      "finite_packet_negative": 15,
+      "finite_packet_positive": 21,
+      "finite_unlinked_refutations": 1,
+      "id": "q1_p16_packet_1",
+      "memory": 2,
+      "physical_coverage": {
+        "D": 21,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "2546571/8",
+        "absolute_offdiagonal_coefficient_mass": "299863005131/4",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 11980,
+            "right": 127905,
+            "squarefree": 77763,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 7830,
+            "right": 255810,
+            "squarefree": 58316,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 14827,
+            "right": 511620,
+            "squarefree": 116618,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 73,
+        "fraction_absolute_mass_removed": "1479320145214/251572167195688367",
+        "fraction_nonzero_edges_touched": "249227/38735512116",
+        "nonzero_ratio_labels": 35,
+        "remaining_absolute_coefficient_mass": "251570687875543153/3355828",
+        "removed_absolute_coefficient_mass": "739660072607/1677914",
+        "retained_nonzero_physical_pairs": 249227,
+        "retained_nonzero_ratio_labels": 35,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 38735512116,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "5/2",
+          "prime_count": 18324,
+          "signed_contribution": "419688315",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "7743837/239702",
+        "weighted_physical_pairs": "750075581365/3355828"
+      },
+      "proved_packet_constant": "548563617/1048576",
+      "proved_packet_exponent": "1",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ],
+      "refutation_parents": [
+        1420914
+      ],
+      "selection_tracks": [
+        "smallest_paid_constant"
+      ],
+      "source_id": "q1_p16",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "527277/4194304",
+      "coverage_admission": {
+        "D": 14,
+        "RH_proved": false,
+        "absolute_mass": "145246694537",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p16_packet_2",
+        "ops": 128278532,
+        "peak_bytes": 142195382,
+        "prime_block_verified": true,
+        "removed_mass": "1059127051/1569",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/3",
+      "eta": "9/52",
+      "finite_packet_negative": 16,
+      "finite_packet_positive": 20,
+      "finite_unlinked_refutations": 1,
+      "id": "q1_p16_packet_2",
+      "memory": 3,
+      "physical_coverage": {
+        "D": 14,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "675489",
+        "absolute_offdiagonal_coefficient_mass": "145246694537",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 6411,
+            "right": 63952,
+            "squarefree": 38881,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 63952,
+            "primes": 1419,
+            "right": 79940,
+            "squarefree": 9708,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 79940,
+            "primes": 4150,
+            "right": 127905,
+            "squarefree": 29174,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 7830,
+            "right": 255810,
+            "squarefree": 58316,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 14827,
+            "right": 511620,
+            "squarefree": 116618,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 36,
+        "fraction_absolute_mass_removed": "1059127051/227892063728553",
+        "fraction_nonzero_edges_touched": "37059/7250600795",
+        "nonzero_ratio_labels": 19,
+        "remaining_absolute_coefficient_mass": "227891004601502/1569",
+        "removed_absolute_coefficient_mass": "1059127051/1569",
+        "retained_nonzero_physical_pairs": 222354,
+        "retained_nonzero_ratio_labels": 19,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 43503604770,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "4",
+          "prime_count": 18324,
+          "signed_contribution": "671501304",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "9101/523",
+        "weighted_physical_pairs": "327764635/1569"
+      },
+      "proved_packet_constant": "12914307/4096",
+      "proved_packet_exponent": "7/8",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "weight": "1"
+        }
+      ],
+      "refutation_parents": [
+        1420914
+      ],
+      "selection_tracks": [
+        "smallest_observed_unlinked"
+      ],
+      "source_id": "q1_p16",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "362187/4194304",
+      "coverage_admission": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_mass": "26349594852961558007/268435456",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p04_packet_0",
+        "ops": 146340160,
+        "peak_bytes": 479728262,
+        "prime_block_verified": true,
+        "removed_mass": "1253690683576585489120405441460245782449/457780891655000829582174744215552",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/8",
+      "eta": "2/7",
+      "finite_packet_negative": 21,
+      "finite_packet_positive": 15,
+      "finite_unlinked_refutations": 1,
+      "id": "q1_p04_packet_0",
+      "memory": 2,
+      "physical_coverage": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "45393638771403/134217728",
+        "absolute_offdiagonal_coefficient_mass": "26349594852961558007/268435456",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 4455,
+            "right": 42635,
+            "squarefree": 25919,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 42635,
+            "primes": 981,
+            "right": 53293,
+            "squarefree": 6483,
+            "vector": [
+              "0",
+              "0",
+              "3547/8192"
+            ]
+          },
+          {
+            "left": 53293,
+            "primes": 2867,
+            "right": 85270,
+            "squarefree": 19434,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 85270,
+            "primes": 1853,
+            "right": 106587,
+            "squarefree": 12968,
+            "vector": [
+              "0",
+              "3547/8192",
+              "-3547/8192"
+            ]
+          },
+          {
+            "left": 106587,
+            "primes": 1824,
+            "right": 127905,
+            "squarefree": 12959,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 869,
+            "right": 170540,
+            "squarefree": 6481,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 170540,
+            "primes": 3514,
+            "right": 213175,
+            "squarefree": 25919,
+            "vector": [
+              "3547/8192",
+              "-3547/8192",
+              "0"
+            ]
+          },
+          {
+            "left": 213175,
+            "primes": 3447,
+            "right": 255810,
+            "squarefree": 25916,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 1681,
+            "right": 341080,
+            "squarefree": 12963,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 341080,
+            "primes": 6603,
+            "right": 426350,
+            "squarefree": 51809,
+            "vector": [
+              "-3547/8192",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 426350,
+            "primes": 6543,
+            "right": 511620,
+            "squarefree": 51846,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 980,
+        "fraction_absolute_mass_removed": "5014762734306341956481621765840983129796/179742888011586107329080499416931097914456501",
+        "fraction_nonzero_edges_touched": "2403736/68855067605",
+        "nonzero_ratio_labels": 870,
+        "remaining_absolute_coefficient_mass": "179737873248851800987124017795165256931326705/1831123566620003318328698976862208",
+        "removed_absolute_coefficient_mass": "1253690683576585489120405441460245782449/457780891655000829582174744215552",
+        "retained_nonzero_physical_pairs": 2403736,
+        "retained_nonzero_ratio_labels": 870,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 68855067605,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "5/2",
+          "prime_count": 18324,
+          "signed_contribution": "419688315",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "11162692504998661454993791527/13642933716028953480189286",
+        "weighted_physical_pairs": "30740308435318830362434034979949/13642933716028953480189286"
+      },
+      "proved_packet_constant": "93980812185330715827/70368744177664",
+      "proved_packet_exponent": "1",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ],
+      "refutation_parents": [
+        1420914
+      ],
+      "selection_tracks": [
+        "largest_growing_roster"
+      ],
+      "source_id": "q1_p04",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "362295/4194304",
+      "coverage_admission": {
+        "D": 21,
+        "RH_proved": false,
+        "absolute_mass": "26349594852961558007/268435456",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p04_packet_1",
+        "ops": 128283632,
+        "peak_bytes": 174735606,
+        "prime_block_verified": true,
+        "removed_mass": "72355580677406091613528260059/98464328517582535524352",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/2",
+      "eta": "1/5",
+      "finite_packet_negative": 20,
+      "finite_packet_positive": 16,
+      "finite_unlinked_refutations": 1,
+      "id": "q1_p04_packet_1",
+      "memory": 2,
+      "physical_coverage": {
+        "D": 21,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "45393638771403/134217728",
+        "absolute_offdiagonal_coefficient_mass": "26349594852961558007/268435456",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 4455,
+            "right": 42635,
+            "squarefree": 25919,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 42635,
+            "primes": 981,
+            "right": 53293,
+            "squarefree": 6483,
+            "vector": [
+              "0",
+              "0",
+              "3547/8192"
+            ]
+          },
+          {
+            "left": 53293,
+            "primes": 2867,
+            "right": 85270,
+            "squarefree": 19434,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 85270,
+            "primes": 1853,
+            "right": 106587,
+            "squarefree": 12968,
+            "vector": [
+              "0",
+              "3547/8192",
+              "-3547/8192"
+            ]
+          },
+          {
+            "left": 106587,
+            "primes": 1824,
+            "right": 127905,
+            "squarefree": 12959,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 869,
+            "right": 170540,
+            "squarefree": 6481,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 170540,
+            "primes": 3514,
+            "right": 213175,
+            "squarefree": 25919,
+            "vector": [
+              "3547/8192",
+              "-3547/8192",
+              "0"
+            ]
+          },
+          {
+            "left": 213175,
+            "primes": 3447,
+            "right": 255810,
+            "squarefree": 25916,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 1681,
+            "right": 341080,
+            "squarefree": 12963,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 341080,
+            "primes": 6603,
+            "right": 426350,
+            "squarefree": 51809,
+            "vector": [
+              "-3547/8192",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 426350,
+            "primes": 6543,
+            "right": 511620,
+            "squarefree": 51846,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 73,
+        "fraction_absolute_mass_removed": "72355580677406091613528260059/9665247663509878266705321174683819",
+        "fraction_nonzero_edges_touched": "682728/68855067605",
+        "nonzero_ratio_labels": 66,
+        "remaining_absolute_coefficient_mass": "604073456745575053788356727901485/6154020532348908470272",
+        "removed_absolute_coefficient_mass": "72355580677406091613528260059/98464328517582535524352",
+        "retained_nonzero_physical_pairs": 682728,
+        "retained_nonzero_ratio_labels": 66,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 68855067605,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "5/2",
+          "prime_count": 18324,
+          "signed_contribution": "419688315",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "21668800031294421/366808207771117",
+        "weighted_physical_pairs": "223884732013726297884/366808207771117"
+      },
+      "proved_packet_constant": "75594327053265657/70368744177664",
+      "proved_packet_exponent": "1",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ],
+      "refutation_parents": [
+        1420914
+      ],
+      "selection_tracks": [
+        "smallest_paid_constant"
+      ],
+      "source_id": "q1_p04",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "calibrated_unlinked_K": "330439/4194304",
+      "coverage_admission": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_mass": "12763526134063571335/67108864",
+        "arithmetic_cancellation_bound_proved": false,
+        "finite_geometry_verified": true,
+        "id": "q1_p04_packet_2",
+        "ops": 156404171,
+        "peak_bytes": 592978110,
+        "prime_block_verified": true,
+        "removed_mass": "18238268441526142174757827871216864550131/2930560012324236226623635862847488",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false
+      },
+      "epsilon": "1/8",
+      "eta": "2/7",
+      "finite_packet_negative": 19,
+      "finite_packet_positive": 17,
+      "finite_unlinked_refutations": 2,
+      "id": "q1_p04_packet_2",
+      "memory": 3,
+      "physical_coverage": {
+        "D": 82,
+        "RH_proved": false,
+        "absolute_diagonal_coefficient_mass": "12040983369607/16777216",
+        "absolute_offdiagonal_coefficient_mass": "12763526134063571335/67108864",
+        "arithmetic_cancellation_bound_proved": false,
+        "bands": [
+          {
+            "left": 0,
+            "primes": 2393,
+            "right": 21317,
+            "squarefree": 12962,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 21317,
+            "primes": 528,
+            "right": 26646,
+            "squarefree": 3238,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "3547/8192"
+            ]
+          },
+          {
+            "left": 26646,
+            "primes": 1534,
+            "right": 42635,
+            "squarefree": 9719,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 42635,
+            "primes": 981,
+            "right": 53293,
+            "squarefree": 6483,
+            "vector": [
+              "0",
+              "0",
+              "3547/8192",
+              "-3547/8192"
+            ]
+          },
+          {
+            "left": 53293,
+            "primes": 975,
+            "right": 63952,
+            "squarefree": 6479,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 63952,
+            "primes": 1419,
+            "right": 79940,
+            "squarefree": 9708,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "left": 79940,
+            "primes": 473,
+            "right": 85270,
+            "squarefree": 3247,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 85270,
+            "primes": 1853,
+            "right": 106587,
+            "squarefree": 12968,
+            "vector": [
+              "0",
+              "3547/8192",
+              "-3547/8192",
+              "0"
+            ]
+          },
+          {
+            "left": 106587,
+            "primes": 1824,
+            "right": 127905,
+            "squarefree": 12959,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 127905,
+            "primes": 2697,
+            "right": 159881,
+            "squarefree": 19432,
+            "vector": [
+              "0",
+              "0",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "left": 159881,
+            "primes": 869,
+            "right": 170540,
+            "squarefree": 6481,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 170540,
+            "primes": 3514,
+            "right": 213175,
+            "squarefree": 25919,
+            "vector": [
+              "3547/8192",
+              "-3547/8192",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 213175,
+            "primes": 3447,
+            "right": 255810,
+            "squarefree": 25916,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 255810,
+            "primes": 5084,
+            "right": 319763,
+            "squarefree": 38894,
+            "vector": [
+              "0",
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "left": 319763,
+            "primes": 1681,
+            "right": 341080,
+            "squarefree": 12963,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 341080,
+            "primes": 6603,
+            "right": 426350,
+            "squarefree": 51809,
+            "vector": [
+              "-3547/8192",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 426350,
+            "primes": 6543,
+            "right": 511620,
+            "squarefree": 51846,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 511620,
+            "primes": 9620,
+            "right": 639526,
+            "squarefree": 77775,
+            "vector": [
+              "1",
+              "-1",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 639526,
+            "primes": 28175,
+            "right": 1023241,
+            "squarefree": 233272,
+            "vector": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "left": 1023241,
+            "primes": 18324,
+            "right": 1279052,
+            "squarefree": 155491,
+            "vector": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        ],
+        "complete_ratio_labels": 980,
+        "fraction_absolute_mass_removed": "18238268441526142174757827871216864550131/557367195259661238974055514742961225190855320",
+        "fraction_nonzero_edges_touched": "1476305/38666480967",
+        "nonzero_ratio_labels": 924,
+        "remaining_absolute_coefficient_mass": "557348956991219712831880756915090008326305189/2930560012324236226623635862847488",
+        "removed_absolute_coefficient_mass": "18238268441526142174757827871216864550131/2930560012324236226623635862847488",
+        "retained_nonzero_physical_pairs": 2952610,
+        "retained_nonzero_ratio_labels": 924,
+        "u": 5116208,
+        "uniform_unlinked_bound_proved": false,
+        "unordered_nonzero_offdiagonal_pairs": 77332961934,
+        "untouched_prime_block": {
+          "admitted": true,
+          "all_pairs_have_gcd_one": true,
+          "all_reduced_labels_exceed_D": true,
+          "interpretation": "positive actual-prime block remains insideU and must cancel jointly with its complement",
+          "lower_exclusive": 1023241,
+          "packet_removes_none_of_these_pairs": true,
+          "per_pair_signed_coefficient": "4",
+          "prime_count": 18324,
+          "signed_contribution": "671501304",
+          "unordered_prime_pairs": 167875326,
+          "upper_inclusive": 1279052
+        },
+        "weighted_label_count": "18681264008588276454029022829/21834373565943809051987796",
+        "weighted_physical_pairs": "9902521598457375602596080933645/3639062260990634841997966"
+      },
+      "proved_packet_constant": "219288561765771670263/35184372088832",
+      "proved_packet_exponent": "1",
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "weight": "1"
+        }
+      ],
+      "refutation_parents": [
+        583331,
+        1420914
+      ],
+      "selection_tracks": [
+        "smallest_observed_unlinked"
+      ],
+      "source_id": "q1_p04",
+      "uniform_auxiliary_packet_bound_proved": true,
+      "uniform_unlinked_bound_proved": false
+    }
+  ],
+  "independent_artifact_audit": "PASS",
+  "independent_coverage_resources": {
+    "RH_proved": false,
+    "elapsed_seconds": 19.45266852801433,
+    "operations": 839547214,
+    "peak_reserved_bytes": 592978110,
+    "peak_rss_bytes": 80371712,
+    "status": "VERIFIED_FINITE_DENSITY_COVERAGE",
+    "uniform_source_bound_proved": false,
+    "uniform_unlinked_bound_proved": false
+  },
+  "proved_scope": "Reviewed elementary all-scale auxiliary packet bound; independent exact certificate and finite source/compiler checks.",
+  "science": {
+    "RH_proved": false,
+    "all_generated_uniform_packet_prices_independently_checked": true,
+    "checker_operations": 588033506,
+    "conservative_sum_process_peaks_bytes": 1318838272,
+    "constructor_operations": 9081268908,
+    "discovery_parents": 19,
+    "elapsed_seconds": 55.36429608199978,
+    "fresh_validation_parents": 36,
+    "generated_energy_forms": 17,
+    "generated_programs": 1122,
+    "hashes_used": false,
+    "independently_checked_finite_rows": 330,
+    "new_arithmetic_horizon": false,
+    "new_frozen_files": 10,
+    "prior_frozen_counts": [
+      18,
+      17,
+      19,
+      5,
+      13,
+      18,
+      4,
+      1,
+      18,
+      23,
+      19,
+      12,
+      16,
+      13,
+      16,
+      15,
+      16,
+      8,
+      10,
+      10,
+      10,
+      10,
+      14,
+      10,
+      5,
+      10,
+      10,
+      10,
+      10,
+      10,
+      12,
+      12,
+      13,
+      4,
+      10,
+      4,
+      11,
+      5,
+      11,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      10,
+      10,
+      13
+    ],
+    "proof_schedules": 33,
+    "results": [
+      {
+        "RH_proved": false,
+        "checker_operations": 21236414,
+        "constructor_operations": 190502660,
+        "elapsed_seconds": 1.5894397119991481,
+        "finite_unlinked_certified": 35,
+        "finite_unlinked_refutations": 1,
+        "first_refutation": {
+          "certificate": {
+            "D": 11,
+            "drift": "312499",
+            "energy": "380185",
+            "half_energy": "45124",
+            "negative_mass": "211/15360",
+            "nonzero_pairs": 12,
+            "packet": "-10385/317",
+            "pair_count": 23,
+            "positive_mass": "317/23040",
+            "state": [
+              "517",
+              "-168",
+              "13",
+              "-25"
+            ],
+            "unlinked": "99072568/317",
+            "weighted_density": "0",
+            "weighted_pairs": 12
+          },
+          "u": 1420914,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p16_packet_2",
+        "maximum_observed_unlinked_over_u": "49536284/225214869",
+        "negative_packet_rows": 16,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 20,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 138900
+      },
+      {
+        "RH_proved": false,
+        "checker_operations": 22196576,
+        "constructor_operations": 243221280,
+        "elapsed_seconds": 1.7248388279695064,
+        "finite_unlinked_certified": 35,
+        "finite_unlinked_refutations": 1,
+        "first_refutation": {
+          "certificate": {
+            "D": 17,
+            "drift": "1971151/8",
+            "energy": "1190957/4",
+            "half_energy": "136921/4",
+            "negative_mass": "19169/1935360",
+            "nonzero_pairs": 25,
+            "packet": "20518337/561308",
+            "pair_count": 53,
+            "positive_mass": "140327/11612160",
+            "state": [
+              "517",
+              "-168",
+              "13"
+            ],
+            "unlinked": "276564669703/1122616",
+            "weighted_density": "0",
+            "weighted_pairs": 25
+          },
+          "u": 1420914,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p16_packet_1",
+        "maximum_observed_unlinked_over_u": "276564669703/1595140791024",
+        "negative_packet_rows": 15,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 21,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 140232
+      },
+      {
+        "RH_proved": false,
+        "checker_operations": 7002576,
+        "constructor_operations": 149156050,
+        "elapsed_seconds": 1.3361205900437199,
+        "finite_unlinked_certified": 35,
+        "finite_unlinked_refutations": 1,
+        "first_refutation": {
+          "certificate": {
+            "D": 17,
+            "drift": "77123627749667/536870912",
+            "energy": "42861507787201/268435456",
+            "half_energy": "2866462608245/268435456",
+            "negative_mass": "8049939273199/389639433093120",
+            "nonzero_pairs": 49,
+            "packet": "50714480905962281435787/2160889119573482143744",
+            "pair_count": 53,
+            "positive_mass": "12371349860081/779278866186240",
+            "state": [
+              "764415/2048",
+              "-720061/8192",
+              "-85085/4096"
+            ],
+            "unlinked": "620739090951812673331403159/4321778239146964287488",
+            "weighted_density": "0",
+            "weighted_pairs": 49
+          },
+          "u": 1420914,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p04_packet_1",
+        "maximum_observed_unlinked_over_u": "620739090951812673331403159/6140875204899269613591724032",
+        "negative_packet_rows": 20,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 16,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 141384
+      },
+      {
+        "RH_proved": false,
+        "checker_operations": 48617723,
+        "constructor_operations": 846593540,
+        "elapsed_seconds": 6.250932577997446,
+        "finite_unlinked_certified": 35,
+        "finite_unlinked_refutations": 1,
+        "first_refutation": {
+          "certificate": {
+            "D": 57,
+            "drift": "1971151/8",
+            "energy": "1190957/4",
+            "half_energy": "136921/4",
+            "negative_mass": "72612625273/2038630809600",
+            "nonzero_pairs": 235,
+            "packet": "120668911286051/1460360645128",
+            "pair_count": 461,
+            "positive_mass": "338673619/9455616000",
+            "state": [
+              "517",
+              "-168",
+              "13"
+            ],
+            "unlinked": "89925812334825435/365090161282",
+            "weighted_density": "0",
+            "weighted_pairs": 235
+          },
+          "u": 1420914,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p16_packet_0",
+        "maximum_observed_unlinked_over_u": "29975270778275145/172920573809283916",
+        "negative_packet_rows": 18,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 18,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 161568
+      },
+      {
+        "RH_proved": false,
+        "checker_operations": 85750998,
+        "constructor_operations": 1095806280,
+        "elapsed_seconds": 13.207907093979884,
+        "finite_unlinked_certified": 35,
+        "finite_unlinked_refutations": 1,
+        "first_refutation": {
+          "certificate": {
+            "D": 57,
+            "drift": "77123627749667/536870912",
+            "energy": "42861507787201/268435456",
+            "half_energy": "2866462608245/268435456",
+            "negative_mass": "117509299494852243983/2052152966214844416000",
+            "nonzero_pairs": 402,
+            "packet": "130473054676952095860483852533/1971478899633826985387491328",
+            "pair_count": 461,
+            "positive_mass": "25282073548029887291/513038241553711104000",
+            "state": [
+              "764415/2048",
+              "-720061/8192",
+              "-85085/4096"
+            ],
+            "unlinked": "9058568333615454442397748047722605/63087324788282463532399722496",
+            "weighted_density": "0",
+            "weighted_pairs": 402
+          },
+          "u": 1420914,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p04_packet_0",
+        "maximum_observed_unlinked_over_u": "274502070715619831587810546900685/2716414030733866314778067251232768",
+        "negative_packet_rows": 21,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 15,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 180244
+      },
+      {
+        "RH_proved": false,
+        "checker_operations": 123201409,
+        "constructor_operations": 969766350,
+        "elapsed_seconds": 20.591557501000352,
+        "finite_unlinked_certified": 34,
+        "finite_unlinked_refutations": 2,
+        "first_refutation": {
+          "certificate": {
+            "D": 44,
+            "drift": "1550338758293/33554432",
+            "energy": "4310271376861/67108864",
+            "half_energy": "403197953425/33554432",
+            "negative_mass": "4418207782601806717/42753186796142592000",
+            "nonzero_pairs": 294,
+            "packet": "-15926410984955624836206295351/593001810412732426250878976",
+            "pair_count": 312,
+            "positive_mass": "1479901381404670673/18001341808902144000",
+            "state": [
+              "675845/4096",
+              "-222965/8192",
+              "-223547/4096",
+              "24977/1024"
+            ],
+            "unlinked": "27414801481222371282804873711675/593001810412732426250878976",
+            "weighted_density": "0",
+            "weighted_pairs": 294
+          },
+          "u": 583331,
+          "unlinked_calibrated_bound_holds": false
+        },
+        "id": "q1_p04_packet_2",
+        "maximum_observed_unlinked_over_u": "10425368646492328974647250741862985/72349875898715531298184261237997568",
+        "negative_packet_rows": 19,
+        "original_source_head_core_RH_transfer_still_required": true,
+        "packet_control_scope": "reviewed all-u algorithm plus independent exact certificate prices; finite compiler/source checked here",
+        "positive_packet_rows": 17,
+        "uniform_unlinked_bound_proved": false,
+        "worker_peak_rss_kib": 194632
+      }
+    ],
+    "reviewed_analytic_proof_is_not_a_formal_theorem_prover": true,
+    "sampled_parallel_rss_peak_bytes": 651878400,
+    "selected_candidates": 6,
+    "selected_tracks": 6,
+    "status": "GROWING_SIGNED_DENSITY_PACKET_SEARCH_COMPLETE",
+    "uniform_original_source_bound_proved": false,
+    "uniform_unlinked_bound_proved": false
+  },
+  "status": "PUBLISHED_GROWING_SIGNED_PACKET_RESULTS",
+  "tests": {
+    "additional_recorded_real_kernel_integration": true,
+    "distinct_tests": 27,
+    "failed_attempts": 1,
+    "readonly_audit_environment_failures_are_separately_retained": true,
+    "successful_test_executions": 41,
+    "test_executions": 42
+  },
+  "uniform_original_source_bound_proved": false,
+  "uniform_unlinked_bound_proved": false
+}

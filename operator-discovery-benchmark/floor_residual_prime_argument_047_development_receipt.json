@@ -1,0 +1,14 @@
+{
+  "actual_candidates_applied": false,
+  "errors": 0,
+  "failed_attempts": [],
+  "failures": 0,
+  "invocations": 1,
+  "norms_evaluated": false,
+  "operations": 3786,
+  "schema": "floor-residual-prime-argument-047-development-v1",
+  "seconds": 0.009532954019960016,
+  "source_values_evaluated": false,
+  "tests_run": 12,
+  "work_scope": "metered exact schema/rational algebra; bounded unittest assertion scaffolding unmetered"
+}

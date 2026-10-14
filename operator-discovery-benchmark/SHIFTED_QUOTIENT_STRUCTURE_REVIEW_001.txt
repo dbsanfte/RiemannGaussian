@@ -1,0 +1,293 @@
+Centered fixed-shift quotients: independent structural and RH-bridge review
+
+Scope and conclusion
+Pure analytical review of the proposed quotients/products, prime_twist_proof.txt,
+and the related prime_twist_grammar.py, shift_ratio_grammar.py and
+compensated_shift_grammar.py source. No numerical study, source-table probe,
+test, response artifact, hash or frozen edit is performed. This new memo alone
+is edited. Statements below are algebraic proofs or explicitly conditional
+analytic implications, not an actual signed RH-strength moment estimate.
+
+The exact single/product pole compensation and global rightward-zero bridge
+are sound. Products of distinct normalized increments expose new arithmetic
+factor/overlap channels, rather than merely rescaling one shift. Fixed-b
+coefficients are NOT supported on prime powers. Subcritical preconditioning,
+the small-shift prime-error limit, same-prime tuple bounds and centered harmonic
+tuple estimates supply useful classifications and component theorems. Their
+mixed-prime/composite/full-centering remainder remains unresolved.
+
+1. Single quotient, arithmetic coefficients and exact centering
+For fixed rational 0<b<1 put r=1-b and
+ D_b(s)=zeta(s+b)/zeta(s), a_b=mu*n^(-b),
+ A_b(x)=sum_{n<=x}a_b(n), c_b=1/[r*zeta(r)],
+ G_b(x)=[A_b(x)-1-c_b*x^r]/b.
+Here * is DIRICHLET convolution; a_b is not pointwise mu(n)n^(-b).
+For p prime, e>=1,
+ a_b(p^e)=-(1-p^(-b))*p^(-b(e-1)).
+Thus a_b is multiplicative, nonzero at all positive integers, and its sign
+for n>1 is (-1)^omega(n), including nonsquarefree n. Also |a_b(n)|<=1.
+The identity a_0=delta_1 explains the subtraction1 exactly.
+
+zeta(r)<0 for0<r<1, by the positive paired alternating eta series and its
+factor1-2^(1-r)<0. In particular the prescribed real constant is finite and
+negative. The pole of D_b at s=r has residue1/zeta(r)=r*c_b. For Re(s)>1,
+ b*s*integral_1^infinity G_b(x)x^(-s-1)dx
+ =D_b(s)-1-c_b*s/(s-r).
+The prescribed subtraction cancels the real pole exactly. A rounded fitted
+coefficient is not the same expression; if r>1/2 its mismatch itself prevents
+an RH-strength centered holomorphy/moment claim.
+
+The constant1 is the delta-channel subtraction, not a fixed-b Perron finite
+part. Indeed D_b(0)=zeta(b)/zeta(0), and the displayed centered Mellin numerator
+at0 is D_b(0)-1. Additional decay-through-zero claims would require their
+own exact constant compensation. For the proposed half-plane Re(s)>1/2 this
+constant distinction does not invalidate the gate. Initial/head costs remain.
+
+2. Small-shift limit and endpoint conditioning
+For every FIXED finite x, as b decreases to0,
+ (A_b(x)-1)/b -> -psi(x), c_b/b -> -1,
+ G_b(x) -> x-psi(x).
+At a prime power a_b(p^e)/b tends to -log p. At an integer with two or more
+distinct primes, a_b(n)/b tends to0. All sums at fixed x are finite, so this
+derives the limit directly. The 1/b normalization prevents a trivial scalar
+win from shrinking the unnormalized numerator, but recovers a familiar
+prime-error channel in the limit. This is not a uniform limit as x grows:
+b*log n can become large, and the composite remainders are then non-negligible.
+Near b=1 the prescribed c_b behaves as -2/(1-b), creating a large constant
+centering/head cost; endpoint tuning must not hide that cost either.
+
+3. Prefix preconditioning and the actual fresh term
+There is an exact ordinary-quotient representation
+ A_b(x)=sum_{m<=x}m^(-b)M(floor(x/m))=L_b M(x).
+The m=1 term is M(x). For x in[X,2X), every m>=2 term uses a prefix below X;
+the centered output still has this complete fresh prefix with coefficient1/b.
+Absolute past/envelope bounds do not prove a negative correlation sufficient
+to control its full square after centering.
+
+On the continuous norm H_sigma(f)=integral_1^infinity |f(x)|^2*x^(-2sigma-1)dx,
+with f=0 below1, quotient dilation f(x/d) has norm d^(-sigma). Therefore
+ ||L_b||, ||L_b^-1||<=zeta(b+sigma), when b+sigma>1,
+ L_b^-1 f(x)=sum_{d<=x}mu(d)d^(-b)f(x/d).
+The inverse follows from n^(-b)*(mu(n)n^(-b))=delta_1. The finite sums and
+their restrictions are exact. For b>1/2 both directions have a finite uniform
+bound even at sigma=1/2. The known channels1 and x^(1-b) also have finite
+critical H, with squared norms1 and1/(2b-1), respectively. Thus a single
+G_b for b>1/2 is bounded critical-norm preconditioning of M plus explicitly
+subcritical padding. It supplies no new cancellation class by itself.
+At b=1/2 the critical cost diverges; below1/2 the pole channel is supercritical
+and requires the exact compensation. These distinctions should be visible.
+
+Do not confuse this prefix inverse with the positive DIRICHLET inverse of a_b:
+ t_b(n)=prod_{p|n}(1-p^(-b)), t_b(1)=1,
+ a_b*t_b=delta_1.
+Its summatory function has the unconditional estimate
+ T_b(x)=x/zeta(1+b)+O_b(x^(1-b)),
+obtained from T_b(x)=sum_{d<=x}mu(d)d^(-b)floor(x/d), bounding the floor
+error and the absolutely convergent tail at1+b. Thus t_b has positive mean,
+and its ordinary quotient absolute sum at critical exponents diverges.
+The exact positive renewal identity
+ sum_{d<=x}t_b(d)A_b(x/d)=1
+is not a bounded critical-H recovery theorem for A_b from this kernel.
+
+4. Hyperbola splitting with the complete signed error
+Let S_b(y)=sum_{m<=y}m^(-b), and define exactly
+ e_b(y)=S_b(y)-y^r/r-zeta(b).
+Integral/Euler summation gives |e_b(y)|<=C_b y^(-b) for y>=1, with a finite
+constant depending on the fixed b. Consequently
+ A_b(x)-c_b*x^r
+ =x^r/r[sum_{d<=x}mu(d)d^(-r)-1/zeta(r)]
+   +zeta(b)M(x)+sum_{d<=x}mu(d)e_b(x/d).
+The weighted Mobius mismatch here is an exact finite expression. It is NOT
+an ordinary convergent tail at r<1 imported from the analytic value1/zeta(r).
+The final error has an absolute bound O_b(x), which is insufficient.
+
+For positive U,V with UV=x the exact hyperbola identity is
+ A_b(x)=sum_{d<=U}mu(d)S_b(x/d)
+       +sum_{m<=V}m^(-b)M(floor(x/m))-M(U)S_b(V).
+The intersection rectangle and all integer endpoints are retained. Expanding
+only the first S_b leaves error
+ |sum_{d<=U}mu(d)e_b(x/d)|<=C_b' x^(-b)U^(b+1).
+At U=sqrt(x) this is O_b(x^((1-b)/2)), genuinely below square root. But the
+other exact terms include the centered weighted Mobius mismatch, all quotient
+prefix terms and the intersection cost. This proves a useful local component
+bound, not the full remainder. Omitting those signed terms is circular.
+
+5. Prime-power flow, positivity and exact cocycle
+Define the nonnegative prime-power kernel
+ ell_b(p^e)=(1-p^(-be))/e, zero off prime powers and at1.
+Then D_b=exp_*(-ell_b), t_b=exp_*(ell_b), so
+ h_b=(a_b-delta_1)/b
+    =sum_{j>=1}(-1)^j ell_b^{*j}/(b*j!).
+At each n or finite horizon only finitely many terms occur because ell_b(1)=0.
+This is the precise prime-power-tuple expansion of the full finite-b increment.
+All higher orders, repeated-prime overlaps and composite coefficients remain;
+retaining only its first logarithmic term changes the quotient.
+
+The exact shift cocycle is D_b(s)D_c(s+b)=D_{b+c}(s). Thus, where total shifts
+are in the declared domain,
+ (b+c)H_{b+c}=b H_b+c H_c(s+b)+bc H_b H_c(s+b),
+ H_b=(D_b-1)/b.
+The shifted second factor corresponds to multiplying its coefficients by
+n^(-b). This is a genuine factor-placement identity and an alias rule;
+unshifted H_b H_c does not telescope this way.
+Also partial_b a_b=-a_b*(Lambda(n)n^(-b)). The positive generator explains
+the alternating convolution trees, but does not make A_b or G_b positive
+or provide a stable norm contraction closing the unknown centered moment.
+
+6. Products of distinct increments: exact arithmetic and real poles
+For a fixed set B={b_1,...,b_k}, distinct positive rationals below1, k<=3,
+put P_B(s)=product_i H_{b_i}(s), p_B=h_{b_1}*...*h_{b_k}, and
+ J_B(x)=sum_{n<=x}p_B(n)-sum_i [R_i/(1-b_i)]x^(1-b_i),
+ R_i=1/[b_i*zeta(1-b_i)]
+     *product_{j!=i}[(zeta(1-b_i+b_j)/zeta(1-b_i)-1)/b_j].
+These are exactly its simple real-pole residues; an exact zero residue is
+allowed, not replaced by an empirical coefficient. Distinct shifts avoid
+coincident higher-order poles and logarithmic main terms in this catalogue.
+For Re(s)>1,
+ s*H_{J_B}(s)=P_B(s)-sum_i [R_i/(1-b_i)]s/[s-(1-b_i)].
+There is no additional delta subtraction: every h_b(1)=0, so p_B(1)=0.
+
+The full summatory product is a sum over ordered arithmetic FACTOR tuples
+ n_1*...*n_k<=x, n_i>=2, with weight product_i h_{b_i}(n_i).
+Each h_b is nonzero at composites as well as prime powers. For fixed finite
+x and all b_i->0, the coefficient limit is (-1)^k Lambda^{*k}, but exchanging
+this limit uniformly with x is not justified. Coalescing pole main terms
+likewise requires their complete combined limit; separate large residues can
+cancel. The product degrees genuinely change arithmetic overlap structure,
+whereas merely sweeping b within one degree need not introduce a new mechanism.
+
+Every factor index is <=x/2^(k-1). Thus through horizon x, these coefficients
+query mu only through that smaller horizon. For k>=2 no finite-prefix inverse
+recovers the fresh source coordinates at x. The correct same-degree comparator
+is (mu-delta_1)^{*k}, with the same nonempty-factor lag, not mu^{*k}-delta_1.
+The proof bridge below is GLOBAL holomorphy, not finite-horizon Hilbert recovery.
+No quantitative all-height inverse cost for these products is established here.
+
+7. Two proved actual-prime component estimates
+First partition each h_b into its literal prime-power restriction plus its
+remaining composite part. In the product of the prime-power restrictions,
+separate tuples whose prime is the SAME in every factor from mixed-prime
+tuples. On a prime power,
+ |h_b(p^e)|=(1-p^(-b))p^(-b(e-1))/b<=log p.
+For fixed p, the number of ordered positive exponent tuples with total at
+most L=floor(log(x)/log(p)) is binom(L,k). Therefore the complete one-prime
+k-tuple summatory D_k(x) satisfies
+ |D_k(x)|<=pi(x^(1/k))*(log x)^k/k!
+         <=x^(1/k)*(log x)^k/k!.
+For k=2 this is an unconditional square-root-times-log bound; for k=3 it
+is below square root. Its entire dyadic energy is respectively O(log^4 X)
+or O(X^(-1/3)log^6 X), hence subpower for every desired positive exponent.
+For k=2,3 this channel can be peeled analytically WITH its explicit cost: if
+J_B=D_k+F_k, then E_{J_B}<=2E_{D_k}+2E_{F_k}, and the reverse inequality
+for F_k is identical. The cofinal moment problem is therefore equivalently
+the FULL remainder F_k, which includes mixed-prime tuples, every composite
+factor branch and the complete real-pole normalizer. A bounded diagonal is
+not a bound for that remainder or for its signed cross term.
+This cofinal peeling equivalence is NOT asserted for k=1, whose one-prime
+channel has psi-scale size rather than the proved square-root component bound.
+
+Second, the already-proved actual-prime harmonic estimate from
+prime_twist_proof.txt gives A(x)=sum_{n<=x}Lambda(n)/n=log x+O(1), with
+an all-scale constant (changing strict to closed endpoints is bounded).
+For each fixed integer k>=1, positive Stieltjes convolution proves
+ sum_{n<=x}Lambda^{*k}(n)/n
+ =(log x)^k/k!+O_k((1+log x)^(k-1)).
+To see this, convolve the induction hypothesis against dA(t). Replacing
+dA by d(log t) in its polynomial leading term costs O((1+log x)^(k-1)) by
+integration by parts and the bounded A(t)-log t. The leading integral is
+(log x)^k/k!. Integrating the positive induction-error envelope against dA
+costs the same order, by the same integration and monotonicity. This includes
+the full prime tuples and overlaps, not just a diagonal. It is genuine signed
+centering at harmonic weight, derived from a supplied proved prime theorem.
+Its logarithmic remainder and reciprocal weight do not imply the proposed
+unweighted square-root remainder. For finite b, every further alternating
+ell_b tree/composite branch still has to be controlled. No RH-strength
+estimate or unproved Selberg/PNT remainder is imported to close that gap.
+
+8. Independent rightward-zero-chain proof, including product cancellations
+Suppose the prescribed centered single quotient is globally holomorphic in
+Re(s)>1/2. At an ordinary zero rho in that half-plane, rho is nonreal;
+the real pole compensator is analytic there. Quotient holomorphy forces
+m(rho+b)>=m(rho). Repeat at that right-shifted zero. Each step adds the SAME
+fixed positive b, so in finitely many steps the real part exceeds1, contradicting
+Euler-product zero-freeness. Hence no such rho exists.
+
+For a product, allow arbitrary zero/pole cancellations between its factors.
+At rho of multiplicity m, let nu_i be the order of
+ zeta(s+b_i)-zeta(s) at rho. Each denominator has order m. Holomorphy of
+P_B forces sum_i nu_i>=k*m. Thus at least one nu_i>=m, which implies that
+rho+b_i is a zeta zero of multiplicity at least m: otherwise the numerator
+order is smaller than m. This argument also handles a zero H factor cancelling
+another factor's pole. Some right shift of size at least min_i b_i is therefore
+forced at EVERY right-half-plane zeta zero. Repeating must again reach Re>1.
+No assumption that individual factors are holomorphic, no all-height scalar
+nonvanishing claim and no independence of shifted zeros is needed.
+
+A complete all-scale moment premise yielding finite continuous H_sigma(J_B)
+for every sigma>1/2 makes its Mellin integral holomorphic in Re(s)>1/2 by
+Cauchy-Schwarz. The exact formula then supplies the required centered-product
+holomorphy, and the ordinary-zeta functional equation gives RH. Integer-to-real
+transfer is legitimate: |a_b(n)|<=1; product coefficients are bounded by a
+fixed constant times d_k(n), hence by C_eta n^eta for every eta>0. Smooth
+normalizer increments are O_B(n^(-min b_i)). These cell errors have finite
+H_sigma when eta<sigma. Finite tested exponents/scales are not that premise.
+
+General signed LINEAR mixtures of these products do not inherit this proof:
+their top pole coefficients at a zero can cancel without any shifted zeta
+zero. Such mixtures need a separate all-order noncancellation certificate.
+Fixed distinct products or nonnegative complete energy stacks retaining a
+proved product channel are a safe small language for this qualitative bridge.
+Repeated shifts would need the exact higher-order real-pole/log main terms;
+the proposed distinct-shift catalogue avoids this extra schema requirement.
+
+9. Structural language and principled adverse controls
+A small useful language consists of normalized fixed-shift increments,
+distinct-factor Dirichlet products of degrees1,2,3, exact pole-centering, and
+complete source-bound factor/overlap annotations. Proof transformations should
+include the hyperbola rectangle complement, the shift-cocycle alias, positive
+logarithmic-flow trees, and the proven same-prime diagonal peel. These change
+or expose arithmetic coupling instead of fitting coefficients. Arbitrary
+truncation of composite/overlap branches is inadmissible unless its complete
+remainder is paid for. The old prime-twist grammar's linear logarithms recover
+by multiplicity recurrences; these products require the distinct quotient
+argument above. They must not borrow its shifted costs without proof.
+
+Retain the original prime-error limit and the matched-lag same-degree
+(mu-delta_1) comparator. Coherent positive or finite-prime-sign controls have
+a principled failure explanation. For example the squarefree source negative
+only on a finite set S of primes has Dirichlet series
+ F_S(s)=zeta(s)/zeta(2s)*product_{p in S}(1-p^(-s))/(1+p^(-s)),
+with a positive simple pole at1. The coefficient-defined h_b control has
+series [F_S(s)zeta(s+b)-1]/b; its k-fold product has a nonzero pole of order k
+at1. The actual quotient's main terms at1-b_i do not remove this pole, so
+its centered all-scale RH moment must fail. A finite agreement patch adds an
+entire Dirichlet polynomial and cannot remove the underlying source mean.
+
+For the protocol's one source specifically Q(s)=zeta(s), also with positive
+residue1 at its simple pole1. For partial_prime_13 use the displayed F_S with
+S={p prime:p<=13}. In either case the substituted atom's residue at1 is
+ Res_{s=1}Q(s)*zeta(1+b)/b>0.
+The degree-k product's leading pole coefficient is the product of these
+positive residues, hence nonzero. Actual-zeta compensation at1-b_i<1 is
+analytic at1 and cannot cancel it. A cofinal full moment premise would make
+the centered Mellin function holomorphic there and contradict this pole.
+Thus BOTH protocol controls fail the all-scale premise regardless of any
+finite gates; no observed response score is used in this falsifier.
+
+This is an honest obstruction control, but its failure also measures mean/
+pole mismatch. It is not by itself proof that a new product exploits actual
+prime-specific signed information. If a control is given its own different
+pole normalizers, it becomes a different program and the comparison must
+say so; source-specific normalization cannot be silently transferred. The
+rightward bridge applies to the actual ordinary-zeta quotient, not to an
+arbitrary control whose inverse source is no longer ordinary zeta.
+
+Final status
+Proved: exact coefficients and centering; small-shift limit; subcritical
+single-shift preconditioning; complete hyperbola/cocycle/renewal identities;
+simple product residues; fixed-horizon lag; same-prime tuple and full harmonic
+tuple component bounds; and the conditional global product zero-chain/RH
+bridge even with cross-factor cancellations. Unproved: the full centered
+mixed-prime/composite remainder moment for every proposed actual candidate.
+No source-specific RH-strength signed bound or quantitative product inverse
+norm is claimed. Reviewer numerical/test/source-probe work is zero.

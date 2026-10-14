@@ -1,0 +1,157 @@
+Exact response geometry, forced faces and lossless dual compression
+Design review2026-10-09. No actual chart/ray responses, LP, candidate, scoring,
+source rebuild or hashes. Licensed028 chart is the affine-span premise;
+029 UNKNOWN supplies only the same fixed851 rational rays, not a proof of
+its former assembly. Numerical eigenvector provenance is irrelevant to each
+saved exact nonzero rank-one ray's positivity.
+
+Let x(f) be the complete782-pivot,442-free affine chart. For every licensed
+nonnegative ray g, write g*x(f)=h_g*fbar with fbar=(f,1), h_g=(r_g,t_g).
+The constant is essential. A zero r alone says g is constant on the chart,
+not that it vanishes. A response certificate can verify complete coordinate
+forms using every chart row and free unit coordinate; then compose each of
+all851 generators exactly. This avoids separate full-row lambda replay for
+851 rays. Missing forms/dependencies or truncated free coordinates are not
+licensed implicit zeros. Successful rationals keep4096-bit result limits.
+
+Exposure theorem
+If h_g=0, then g*x=0 for every affine point. If h_b=-c*h_a with c>0, then
+(c*g_a+g_b)*x=0 for every affine point. Since each functional is nonnegative
+on the primal cone, each must individually vanish at every FEASIBLE point.
+All members of an exact line class containing both signs are exposed: each
+can pair with a member of opposite sign using exact positive coefficients.
+A class having only one sign gives no exposure merely from proportionality.
+This theorem remains conditional when the feasible set is empty and proves
+no existence or infeasibility by itself.
+
+For scalar unit g, exposure forces its scalar0. For matrix ray vv^T,
+exposure forces v^T C v=0 or v^T H v=0. PSD then implies C v=0 or H v=0:
+for any y, PSD of (v+t*y)^T M(v+t*y) for both signs of smallt forces y^T Mv=0.
+Thus the span of exposed vectors lies in the matrix kernel. Numerical zero
+eigenvalues, nearly proportional columns, negative search coefficients or
+low penalties do not license any such face. For the original lift,
+C=Gc+K and H=Gp+4Gc, with allthree PSD, so a C-kernel vector lies in both
+Gc/K kernels; an H-kernel vector lies in Gp/Gc kernels. No whole child block
+is forcedzero just because the canonical lift chooses itzero.
+
+Counterexample to residual-only exposure: the affine equation s1+s2=1 has
+s1=f,s2=1-f. Their residuals1 and-1 oppose, but full responses(1,0),(-1,1)
+do not. Feasible s1=s2=.5 violates either alleged forcedzero. Constants must
+be included in every line classification and pair certificate.
+
+Column compression
+Drop exact zero response columns. For h_j=c_j*h_rep with c_j>0, replace the
+class by one ORIGINAL representative column. Original alpha>=0 maps to
+alpha_rep'=sum_j c_j*alpha_j>=0. A compressed solution lifts by setting only
+the representative alpha to alpha_rep' and all other memberszero. Thus the
+feasible conic target representation is exactly preserved, although an L1
+cost on representatives changes the objective. A representative normalized
+by a positive scale needs its inverse scale in the lift; normalizing by a
+negative first coefficient is not a positive column scaling.
+
+Opposite-sign columns MUST remain distinct in the LP. Identifying them by
+signed line changes the nonnegative generated cone. Opposite classes can be
+used for exposure while positive-oriented classes separately define lossless
+compression. Zero-response rays may matter for faces but not the target-1 LP.
+No near-zero cutoff, numerical rank truncation or support dropping is exact.
+
+Row compression
+Operate on the COMPLETE AUGMENTED row(coefficients,RHS) of the compressed
+column system. Drop only exact allzero augmented rows. Arbitrary nonzero
+proportional augmented rows may merge using signed rational factors because
+these are equations, not inequalities. A row with zerocoefficients but
+nonzero RHS must remain as a contradiction or explicit inconsistency branch.
+Equal coefficient rows with opposite/incompatible RHS are not proportional
+augmented rows and cannot merge. Check every original row under the returned
+representative/scales before declaring compression verified.
+
+An inconsistent compressed LP means the selected851-ray system cannot
+represent the target; it is NOT a primal-cone infeasibility certificate.
+Conversely a floating successful LP is not a witness. One exact support
+restoration and complete851 alpha/782 lambda Farkas recombination must verify
+all1224 original quotient coordinates and pairing-1. Geometry may be fully
+verified and archived as reusable even if this later step isUNKNOWN.
+
+Certificate and cost requirements
+Require all851 response records, a complete source-ray-to-retained-column
+map with positive multipliers or explicitzero markers, complete original-
+augmented-row map with signed factors/contradiction treatment, full retained
+matrix and target, unchanged variable/cone layout, and exact full-lift check.
+For exposures include zero ids and exact signed class members/multipliers;
+positive two-ray coefficients verify cancellation of BOTH r andt. A complete
+coordinate form certificate with every row identity proves h universally
+on the licensed affine chart; finite sampling is not a substitute.
+
+Current proposed one450m ledger:80m preparation,70m exact geometry,
+150m native solve,80m exact restoration and70m sole independent audit.
+Choose native iteration cap solely from reduced m,n and declared dense proxy,
+with hardmaximum10000 and no tuning after seeing scores. The proxy remains a
+work declaration rather than HiGHS flop certification. Keep one attempt,
+thread/memory/deadline enforcement and consumed failure counters. If even
+initial native reservation does not fit, leave verified geometry usable and
+report nativeUNKNOWN without a call. No second audit or solver retry is paid
+by unspent reserves. Audit geometry, compression and any separator under the
+SAME70m budget; do not reset it for each component or phase.
+
+Faces may guide a later exact primal parameterization or a stronger frozen
+ray family, but those are new experiments. This method does not establish
+actual Mobius signs, a universal scalar budget, an all-scale operator identity,
+global cone infeasibility, or RH. Its valid new evidence is conditional exact
+faces and exact equivalence of one finite-generator dual system, plus a full
+finite augmented-cone separator ONLY if independently checked at the end.
+
+Final code review
+New producer and independent core agree on complete1224 coordinate forms,
+851 responses, full(r,t) line signatures, zero/opposite exposures, positive-
+only column representatives and signed augmented-row representatives. The
+independent verifier checks every normalized chart row as an affine identity,
+recomposes all generators, then independently rebuilds classes, compression,
+forced scalar coordinates and exact canonical RREF kernel spans. Kernel rank,
+not exposed-ray count, gives remaining conditional matrix dimension.
+
+Native iteration policy was corrected to use only reducedm,n and the fixed
+150m allocation. A declared16mn+64(m+n)+1MiB setup reservation bounds exact
+scaling/cost construction before native work is charged. Positive common
+cost division now uses bounded rational arithmetic. A no-fit unattempted
+resource failure retains counters/options and can leave complete geometry
+usable. No actual native call is made in that branch. Canonical line/row
+key Fraction copies, export arrays and maps now receive explicit phase live
+allowances; unused retained row copies were removed. One70m independent
+Budget covers geometry and any final fullFarkas check without reset.
+
+There is one explicitly frozen shortcut: a ray with zero free response and
+negative constant already gives an exact separator. Normalize its positive
+weight to make pairing-1 and independently check the full identity; no native
+LP is needed. This is a separator, unlike zero/opposite-ray exposures.
+Ordinary nativeUNKNOWN with complete geometry is independently reported as
+GEOMETRY_VERIFIED/search_statusUNKNOWN when its geometry audit succeeds.
+An outer incomplete worker may conservatively leave geometry unlicensed.
+The publisher separately requires complete geometry and, for infeasibility,
+complete/schema/status/verified/pairing fields from the exact certificate
+check. Native statuses never promote either global or finite infeasibility.
+
+The final checker additionally binds a compressed-LP certificate to every
+strictly positive successful native support coordinate and its representative
+lift, including zero-free exact reconstruction diagnostics. A valid exact
+identity is the mathematical admission condition; this binding also enforces
+the declared one-support method. Signed relation and full1224 coordinates
+remain present in the fullFarkas identity even though geometry compression
+uses only442 free coordinates plus constant.
+
+Eleven owned tests passed in0.087s. Counterexamples cover opposing residuals
+with noncancelling constant, true zero/opposite exposure for all class members,
+positive-only merging and changedL1, retained contradictory augmented rows,
+PSD necessity for kernel inference, all-form constant/freeunit tampering,
+producer/checker class and compression agreement, exact kernelspan rank,
+dimension-only iteration reservation and unattempted preflight failure, and
+work-cap failure. No actual chart/ray responses, scores, source or solver
+calculations occurred. No remaining mathematical blocker was found. Owned
+memo/tests finalized; edits stopped before combined freeze suite.
+
+Integration follow-up
+A native exception now retains its attempted-call flag, reduced dimensions
+and dimension-only reservation. This allows a complete geometry artifact
+to be audited after an unsuccessful native call. The independent Farkas
+identity is the admission evidence; support-system rank and free-position
+statistics remain producer reconstruction diagnostics. Their support and
+zero-value binding is checked without a second exact elimination replay.

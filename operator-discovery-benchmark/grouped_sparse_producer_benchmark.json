@@ -1,0 +1,99 @@
+{
+  "RH_proved": false,
+  "global_bound_proved": false,
+  "input_sha256": {
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/attempts/001.json": "5f2ac43f96c8b94f85c606f09ef979722c4c1fb2af713fa66aed6ffb774d2c8a",
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/final.json": "7eaf18fa62f748280c4a2ef4bf5f2c5b4326f9b6379cf766a888ed6cfa23976c"
+  },
+  "observations": [
+    {
+      "X": 7,
+      "certificate_sha256": "5e7b1c41c2b6cdd8e5dca82fd597701f0e2d08974ce4ebe078a605e31206e48a",
+      "complete_certificate_matches_prior_digest": true,
+      "details_diagnostics": {
+        "elapsed_seconds": 2.075241245009238,
+        "expanded_products": 392,
+        "operations": 454478,
+        "skipped_zero_groups": 598,
+        "validated_unique_relations": 532
+      },
+      "independent_audit": {
+        "RH_proved": false,
+        "active_relation_atoms": 27,
+        "active_square_atoms": 365,
+        "charged_operations": 447163,
+        "elapsed_seconds": 3.998969181004213,
+        "finite_only": true,
+        "global_bound_proved": false,
+        "instance_sha256": [
+          "7492d6009d830ac0b2fc1878fe2ba095babe4e03d8b7e57ad3e8aa9737af042b"
+        ],
+        "instances": [
+          {
+            "constant_slack": "0",
+            "finite_identity_verified": true,
+            "horizon": 27,
+            "target": "mu"
+          }
+        ],
+        "scope": "full original primal identity and active arithmetic premises; all source polynomial schemas and arithmetic premises validated; zero groups hash-bound without products; not dual verification",
+        "shared_weights_verified": true,
+        "skipped_zero_groups": 598,
+        "source_binding_checked": true,
+        "verified": true
+      },
+      "matches_archived_certificate": true,
+      "original_transfer_status": "finite_certificate",
+      "source_build_seconds": 11.03637869299564,
+      "sparse_producer_seconds": 2.07548044899886
+    },
+    {
+      "X": 11,
+      "certificate_sha256": "f928e30befb9fb7b0e16063713a2e737b13955f70e54f1ed173a08d115d9d14f",
+      "complete_certificate_matches_prior_digest": true,
+      "details_diagnostics": {
+        "elapsed_seconds": 6.063120696999249,
+        "expanded_products": 968,
+        "operations": 1344917,
+        "skipped_zero_groups": 598,
+        "validated_unique_relations": 1202
+      },
+      "independent_audit": {
+        "RH_proved": false,
+        "active_relation_atoms": 43,
+        "active_square_atoms": 925,
+        "charged_operations": 1323262,
+        "elapsed_seconds": 11.719937981994008,
+        "finite_only": true,
+        "global_bound_proved": false,
+        "instance_sha256": [
+          "47620c38ec0917f69df6a3f4ee91d364d5e658cb97970d0f6363dd2714e0b25b"
+        ],
+        "instances": [
+          {
+            "constant_slack": "0",
+            "finite_identity_verified": true,
+            "horizon": 43,
+            "target": "mu"
+          }
+        ],
+        "scope": "full original primal identity and active arithmetic premises; all source polynomial schemas and arithmetic premises validated; zero groups hash-bound without products; not dual verification",
+        "shared_weights_verified": true,
+        "skipped_zero_groups": 598,
+        "source_binding_checked": true,
+        "verified": true
+      },
+      "matches_archived_certificate": false,
+      "original_transfer_status": "missing_resource",
+      "source_build_seconds": 31.73025248500926,
+      "sparse_producer_seconds": 6.063427854998736
+    }
+  ],
+  "schema": 1,
+  "scope": "fixed accepted weights; producer and independent verification benchmark; no refit, no frozen result mutation",
+  "source_sha256": {
+    "check_grouped_arithmetic_sparse.py": "731c1aa7147c77f8df16dd7be63d4a88e7aa61cc1e28e4ab12d8b7e363570492",
+    "grouped_arithmetic_sparse.py": "8523765d9724233c5ac12d25e157aae85978a8b3baafc8751208771710efcd3d",
+    "test_grouped_arithmetic_sparse.py": "bef9e4d23e6762324b6a130886ebfb17533acf3e070ee82a587ad05a20e91351"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "mobius-divisor-correction-publication-integrity-v1",
+  "scientific_run_exit_code": 0,
+  "postprocessing_exit_code": 0,
+  "inherited_frozen_files_byte_verified": 360,
+  "new_frozen_files_byte_verified": 10,
+  "total_frozen_files_byte_verified": 370,
+  "prior069_root_equal_to_archive_before_pointer_update": true,
+  "prior069_archive_unchanged": true,
+  "root070_handoff_equal_to_archive": true,
+  "mutable_continuation_pointers_updated": [
+    "PRIME_TRANSFER_HANDOFF.txt",
+    "MOBIUS_TRANSPORT_HANDOFF.txt",
+    "MOBIUS_MASS_CONSERVATION_HANDOFF.txt",
+    "MOBIUS_FRACTIONAL_FLOW_HANDOFF.txt",
+    "MOBIUS_PREFIX_COMPLETION_HANDOFF.txt",
+    "MOBIUS_PREFIX_REPAIR_HANDOFF.txt",
+    "MOBIUS_QUADRATIC_CONTRACTION_HANDOFF.txt",
+    "MOBIUS_WALSH_ENERGY_HANDOFF.txt",
+    "MOBIUS_SPARSE_PREFIX_HANDOFF.txt",
+    "MOBIUS_SIGNED_LAG_HANDOFF.txt",
+    "MOBIUS_FLOOR_CONTROL_HANDOFF.txt",
+    "MOBIUS_CONVOLUTION_SCALE_HANDOFF.txt"
+  ],
+  "all12_scientific_certificates_retained": true,
+  "postrun_additional_scientific_queries": 0,
+  "extra_unchanged_suite_or_study_runs": 0,
+  "hashes_created": false,
+  "uniform_head_bound_proved": false,
+  "RH_proved": false,
+  "research_goal_complete": false
+}

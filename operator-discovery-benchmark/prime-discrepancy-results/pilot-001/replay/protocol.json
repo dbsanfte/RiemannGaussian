@@ -1,0 +1,5493 @@
+{
+  "schema": 1,
+  "grammar_version": "floor-density-and-signed-prime-discrepancy-energy-v1",
+  "seed": 2026101101,
+  "precision": 384,
+  "objective": "Prove arithmetic prime-density inputs from discovered floor certificates; independently search the missing signed pair bound",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-error-results/pilot-001",
+  "source_verification_sha256": "f9aa6e75bebaf79f482bde544b9f988ede2a07729d170348d517c67652613a09",
+  "source_batch_sha256": "d1fdcda14ff3df5c15dc18ffec87fca7e0d71d7df5e9a8b85f843541b08fd88d",
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+    "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+    "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+    "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+    "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+    "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+    "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+    "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+    "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95",
+    "prime_discrepancy_grammar.py": "2a5abf9701638454b2b0f25b867cb7e1e7a7925a3f6c362b6346b75bee9762b2",
+    "prime_discrepancy_search.py": "515ccda5fa5fd7d984f1fc4c3a61119853d19acde249df9f03e814249afb07ad",
+    "check_prime_discrepancy.py": "aa8d0c7b6903e219cd74d4d79b82b721bece99bc0107e495426b65e23b9378d2",
+    "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+    "prime_discrepancy_proof.txt": "71d9a276d9a8ca0d630e740ba800e57a3ab6e74570931bb2f3b3d277266550c1"
+  },
+  "known_zero_dependency": {
+    "verification_sha256": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "source_sha256": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "centre": [
+      "1/2",
+      "14.13472514173469379046"
+    ],
+    "radius": "1/20000",
+    "scope": "previously certified simple critical-line zero; reflection and uniqueness"
+  },
+  "input_programs": [
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "3/16"
+        ],
+        [
+          "9",
+          "-6"
+        ],
+        [
+          "27",
+          "15/2"
+        ],
+        [
+          "81",
+          "15/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "00140c2c4033b9877b245b8d1b4a82aa481c4429629f74045d44267426039f1d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/54"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-16"
+        ],
+        [
+          "9",
+          "29/16"
+        ],
+        [
+          "27",
+          "-31/8"
+        ],
+        [
+          "81",
+          "23"
+        ]
+      ],
+      "beta": "0",
+      "id": "01026cc5111199e177b3fa0947abbcc2a1f941ed4b7083735939e55b174aa4e2",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-5173/1296"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "9",
+          "12"
+        ],
+        [
+          "27",
+          "7"
+        ]
+      ],
+      "beta": "0",
+      "id": "01036e4bf131414a36a06bc181a8332173c9f82ed50117c0c784bc68d3b6fdea",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "70/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "5/16"
+        ],
+        [
+          "9",
+          "1/16"
+        ],
+        [
+          "27",
+          "-25"
+        ]
+      ],
+      "beta": "0",
+      "id": "01f161b95afb59a9364621943eeefc49b225045afc30f799b6b7fdd03a7e13a3",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "7/16"
+        ],
+        [
+          "9",
+          "-12"
+        ],
+        [
+          "27",
+          "9/2"
+        ]
+      ],
+      "beta": "0",
+      "id": "02c5be3383675960996477c943fb2db620322da385d4cc1b1f2df1c83fb1a504",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-1/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-151/64"
+        ],
+        [
+          "4",
+          "23/16"
+        ],
+        [
+          "8",
+          "-21/64"
+        ],
+        [
+          "16",
+          "-9/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "02d4b7d23b62b430efa67773d20bd0989fa0ccdcef24b9574e9b8f4456e04603",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "133/1024"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-131/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "051d40ccb2ff1602acf60ee096fef0ff831b8eaa94987447a53ea0868b37b7cb",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "61/192"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-25/16"
+        ],
+        [
+          "2",
+          "3/32"
+        ],
+        [
+          "5/2",
+          "15/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "069ea2895774fc4f1cb2c8e956f16f77c612e4eaf27f634632d6c29a2fde826c",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "19/192"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "0751dcda87f706b0295e807c46edde6a13e2a9848baf2c8b6f5d942b46c07270",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "63/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-151/64"
+        ],
+        [
+          "4",
+          "93/64"
+        ],
+        [
+          "8",
+          "-7/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "0a8866494927776bf91f26f020f40b3f36732172e07e1282c228ab9ef4c15f30",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "33/256"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-12"
+        ],
+        [
+          "9",
+          "54"
+        ],
+        [
+          "27",
+          "-108"
+        ],
+        [
+          "81",
+          "81"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "0b3d06f8fb99e42939cc96f42ff4ec50b9f236e871b46e1a8d99ec1c89330477",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-8"
+        ],
+        [
+          "4",
+          "24"
+        ],
+        [
+          "8",
+          "-32"
+        ],
+        [
+          "16",
+          "16"
+        ]
+      ],
+      "beta": "1",
+      "id": "132f0f807c2af46c35d29c50ba1c36f281863cdd0943609fe8ce48fc4ed17d79",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1/8"
+        ],
+        [
+          "4",
+          "-17/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "134407b04e086ddabe6e909e455be3ba616e97dc533a3624b3d99da79e313b25",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "25/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "152849f622f87880568e01faf9179c66d808c04558af00f6342756469df4a593",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-9"
+        ],
+        [
+          "9",
+          "27"
+        ],
+        [
+          "27",
+          "-27"
+        ]
+      ],
+      "beta": "0",
+      "id": "1639c7c5191c9b3f8960161ce86a6f8c7dcfb08c49e160144e319d0424ba1474",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-16"
+        ],
+        [
+          "9",
+          "29/16"
+        ],
+        [
+          "27",
+          "-31/8"
+        ],
+        [
+          "81",
+          "23"
+        ]
+      ],
+      "beta": "1",
+      "id": "1877d726437506820f2177646103a4853dfd26cd6c2cb3fd70339ef8ae092295",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-5173/1296"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-10"
+        ],
+        [
+          "25",
+          "25"
+        ]
+      ],
+      "beta": "1",
+      "id": "19313009f50e55f87e51417abd6b1f27395fb3cef57322a8d677b75d87baa525",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "1"
+        ],
+        [
+          "25",
+          "27/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "1961c0c47555be8a1b84cc4a5b94d33c5652bd3f87a0f62b6ea127025b7971c4",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "147/100"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-6"
+        ],
+        [
+          "25",
+          "9/32"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "9"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "19629b9d74e0562832b73e78c08a35d14148b840d7c4ae6e747ef3f07dca42bd",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-3717/20000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-6"
+        ],
+        [
+          "9",
+          "9"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "1a1536a6ccf26e1e24fddbed239e4f796330f31353140c3767ae9e2a958a99d3",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-3/16"
+        ],
+        [
+          "25",
+          "29/8"
+        ],
+        [
+          "125",
+          "19/2"
+        ],
+        [
+          "625",
+          "3"
+        ]
+      ],
+      "beta": "0",
+      "id": "1a49e0be20a12ef39ddff056aa7f4d276a27d2f01eec178cfdc9ba031d67df29",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11883/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1"
+        ]
+      ],
+      "beta": "1",
+      "id": "1cc1864939652969cb6a86f15a788fc7d295afbd2ee109276117b585917831c0",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "1/2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-123/64"
+        ],
+        [
+          "4",
+          "39/64"
+        ],
+        [
+          "8",
+          "-1/8"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "1e37dc7c85cefd4132b3cbfe2da3aac7bb5339ac266adae92a343928045f9101",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "45/256"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-51/32"
+        ],
+        [
+          "4",
+          "1/32"
+        ],
+        [
+          "8",
+          "1/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "1f58bb0b38f5776f1f3c6af41797b048c9be48e86b9fdd9d03edf69dda892206",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "7/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "beta": "1",
+      "id": "1fcd9c74c0b1195ccfc430344ede5919ce8a9f069649ee011628e122dac8ee76",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "beta": "0",
+      "id": "2358ce64da734208526ce78016e7c18947568f78acac0183e936f0a8b85af137",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-15"
+        ],
+        [
+          "25",
+          "75"
+        ],
+        [
+          "125",
+          "-125"
+        ]
+      ],
+      "beta": "1",
+      "id": "2466c2845bb2c0c14bf79539d834e5d57f81017d2a1e168f8cb894167d0f75fb",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-3/16"
+        ],
+        [
+          "25",
+          "29/8"
+        ],
+        [
+          "125",
+          "19/2"
+        ],
+        [
+          "625",
+          "3"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "2579785cfa0b76381716071d728b9c7ffc9c6dc093a07435f123785ee97a5fee",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11883/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-75/64"
+        ],
+        [
+          "3",
+          "-1/64"
+        ],
+        [
+          "9/2",
+          "7/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "25897520791a2fd1f74577170fa075a70951f8536cf3c789800ca510392ce1fb",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "151/576"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "beta": "0",
+      "id": "2632b0f3dadf295a907861db5f322a6e857a2e74b1082f93d3e06bebea60f4a8",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-6"
+        ],
+        [
+          "25",
+          "9/32"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "9"
+        ]
+      ],
+      "beta": "1",
+      "id": "265cd3e1fd5f625eaeb2afde0899304a06e568b2fdb1d46f688e760fff061eef",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-3717/20000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/32"
+        ],
+        [
+          "9",
+          "5/64"
+        ],
+        [
+          "27",
+          "-13/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "279b1094450d72ce533517779a5ab157ba9977902e4a29cbc0e502324f334bff",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "1277/1728"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1/8"
+        ],
+        [
+          "4",
+          "-17/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "29c94e74ce6d6f0332d9f79fb26851c0fdcb184fb08307232148f6f65a148d35",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-9"
+        ],
+        [
+          "9",
+          "27"
+        ],
+        [
+          "27",
+          "-27"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "2a09b6cc5da859f251105b7ee9976e739f80fdaffcac99159d9cbce5ec8796a2",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "31/2"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "2b3449ddead5718dd19fbfbd1b76513615dda336095f36dced4719e9a80a4c45",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "4",
+          "23/32"
+        ],
+        [
+          "8",
+          "-7/8"
+        ],
+        [
+          "16",
+          "-11/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "3014cdfddd0d5eacb7dac49c6ea03a7ae693ebd147b71db968e876681148694c",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3865/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "31/16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "3196c64625f3cdabe2b7e082b32900ac9112faf91f1b53d81c39008ca3b8e703",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "79/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-10"
+        ],
+        [
+          "25",
+          "25"
+        ]
+      ],
+      "beta": "0",
+      "id": "32c55eb9b014e6de85f4d983d2fd20180715f73ae40fd5103d55321a7e6b6bb7",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "15"
+        ],
+        [
+          "25",
+          "-26"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "1/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "3338cedf7c3f570751f3861719195bf45e7a9b71077fa14b9737d8321d230e34",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "29489/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-25/8"
+        ]
+      ],
+      "beta": "0",
+      "id": "335f9d8d0e80021dcac3c3a06e218f18335b2a8c12fd9235df465612ab911eaa",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "15"
+        ],
+        [
+          "25",
+          "-26"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "1/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "34f22704c59988e7b4c50b01200527fe2214e8f392908bdcdbf8607691c017e2",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "29489/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "4",
+          "16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "350234b518b19cdde0681360bf69d4222e014f654c7467c62afe8e03a87ec114",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "5/2"
+        ],
+        [
+          "4",
+          "-25/2"
+        ],
+        [
+          "8",
+          "17"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "37bf88531dc906190651a812478ca19114b0463756bf168cf90a0a95ea8a557f",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/4"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "32"
+        ]
+      ],
+      "beta": "1",
+      "id": "381800c8542629724fc9560d223f8827f35dd1d0146aa82814ec554373cd17f0",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "17"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-7/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "382368f08754b7e8e40d5ab4999b7aa5084335dbdceefa0b78ae58515418409a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "1/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "38d12e8521c6aa9e4f2a918ab3d9702ec8a46b7486ceab3416ed6424958d6862",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "17"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-113/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "39f0be68534e8762cda2f33a282283d05e9be83f01a7684b7b93bfd9ee30cb39",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "47/160"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1/8"
+        ],
+        [
+          "4",
+          "-17/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "3ba4b1d7dae7704baff34208751c8a7381bb3d410d98d114687b71b12b1c2311",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-65/64"
+        ],
+        [
+          "4",
+          "1/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "3cc743ffa59097a113d683ba77aed6b6e7931516cd4e1b56bdacf98b221b1290",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "65/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-10"
+        ],
+        [
+          "25",
+          "25"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "3e1ce423ac17ae05ca5c468352a1467741ff441a1667f9c8602a7ed69300bdf8",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "beta": "1",
+      "id": "3eefdf440c3284e927b15d657d364f237d68e71f8d50cfbd6020877d31035124",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-5/8"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "4008ff924c17cfe6051474ec3124fe1ce664abc06ce5b9fdd3fd0d70663c29bf",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/16"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "3/16"
+        ],
+        [
+          "9",
+          "-6"
+        ],
+        [
+          "27",
+          "15/2"
+        ],
+        [
+          "81",
+          "15/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "421122f05eaf5e46428dba55e09204d24193e7f15935f28a98a4b054440c7f59",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/54"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3/4"
+        ],
+        [
+          "9",
+          "1/8"
+        ],
+        [
+          "27",
+          "-5"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "43378f44f63a3a81b1ca95881dd4e6f34f0e4f4316309eb738e37166c81db70b",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "125/216"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-3/16"
+        ],
+        [
+          "25",
+          "29/8"
+        ],
+        [
+          "125",
+          "19/2"
+        ],
+        [
+          "625",
+          "3"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "43f778e7a610e448aff1a4d31dac1435036050670c04d7a586f6522f9b12533c",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11883/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-20"
+        ],
+        [
+          "25",
+          "150"
+        ],
+        [
+          "125",
+          "-500"
+        ],
+        [
+          "625",
+          "625"
+        ]
+      ],
+      "beta": "0",
+      "id": "46a209db3f038db6219ae3defdf8489a14cce79f5ab281b86480559ff96fce41",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "beta": "0",
+      "id": "473dd064a7d923991689af688fa4ec46fc2d9e7404c0c4d08e35e134342d4430",
+      "origins": [
+        "unfiltered"
+      ],
+      "multiplier_at_one": "1"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-12"
+        ],
+        [
+          "9",
+          "54"
+        ],
+        [
+          "27",
+          "-108"
+        ],
+        [
+          "81",
+          "81"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "474a39655dc17025111fa12c232f4182d770313f2876f8b6c7afd69d19b4d6a0",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-15"
+        ],
+        [
+          "25",
+          "75"
+        ],
+        [
+          "125",
+          "-125"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "491162fcc67323f6c38a05bd4a25d8f9890edee5511d4f9b56f9bd645aa01256",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "4",
+          "23/32"
+        ],
+        [
+          "8",
+          "-7/8"
+        ],
+        [
+          "16",
+          "-11/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "4913795b998ee67ab342dbc3b37e8af64830b78fa26a18f5c49a888dbdb49ecf",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3865/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-153/64"
+        ],
+        [
+          "9",
+          "11/16"
+        ],
+        [
+          "27",
+          "-7/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "4fc530ab868ce1799dda0aade5ecd4d5ee47a3d321500434d0e78a6b779ec8ba",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "455/1728"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/32"
+        ],
+        [
+          "9",
+          "-7/64"
+        ]
+      ],
+      "beta": "1",
+      "id": "50dfe4837d44f0421ef90079ed11135d1275194ff5d7526572eba0c6682495c5",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "431/576"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-151/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "5106ef690f08106acb9b5bcfa26bad22cf61ee27831ffd1deb30c7bba7b59ad1",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "41/192"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "11/8"
+        ],
+        [
+          "25",
+          "-6"
+        ],
+        [
+          "125",
+          "-17"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "51fe8386a5766e63ea80a96ac13560680bc6df34cebfb8c2764cfcb0f0c7b4b8",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "899/1000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-8"
+        ],
+        [
+          "4",
+          "24"
+        ],
+        [
+          "8",
+          "-32"
+        ],
+        [
+          "16",
+          "16"
+        ]
+      ],
+      "beta": "0",
+      "id": "525f9f9c3d1e60bda173136726493e96917c7ac615ab9aac47de815c732e3223",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3/4"
+        ],
+        [
+          "9",
+          "1/8"
+        ],
+        [
+          "27",
+          "-5"
+        ]
+      ],
+      "beta": "1",
+      "id": "526082eac66c49fd8738a4011393c855d13cccf00dcb66bedd580f9cae881f9b",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "125/216"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-29/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "5280354dd790e7912ca9e7f97c36e7aeb24a169bbdd8a6f422571c16dcd782cf",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/96"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-7/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "529056cd009c9112d583e87f1a7abb891fa3a69280c03d2b2f799bfc5d5b495d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "1/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-9/8"
+        ],
+        [
+          "3",
+          "25/64"
+        ],
+        [
+          "5",
+          "-3/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "52d1c2410c56b6dfe6ecc531721e710a543946eacee2bde685aa4849adbb83ec",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "509/960"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "5"
+        ],
+        [
+          "25",
+          "7/4"
+        ],
+        [
+          "125",
+          "-15/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "55339e93a93cd3785276ba2ef1a5b9aae3aa39c9f8e556a65eb6d768a810d645",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "51/25"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-103/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "558bc6b887278524b04de11b60b8d5bf8fe309be90d758a5e3802b50ecb94441",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "25/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-209/64"
+        ],
+        [
+          "25",
+          "47/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "57fce027344483f36d3c424f8e7ba1fae9f630f5b8c336ce0f0f19a87b05f8d5",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "301/800"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "58c70a4b219a91846ba0394a916f7883a082367115b23bab8b437cacbfb2dc59",
+      "origins": [
+        "unfiltered"
+      ],
+      "multiplier_at_one": "1"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-23/4"
+        ],
+        [
+          "25",
+          "9/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "59b1b0b1c27d828cfd802f5f56355de0157a59b13c06fd5e05407f1a6200f684",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-51/400"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-29/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "5a1e69df992d68375c107a8d22be73363fe648f4dfef533c5725e76db72ec81d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/96"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1/8"
+        ],
+        [
+          "4",
+          "-17/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "5a75f6007f46166451af413853525fb98ac1339a234565959e4fc76804db3479",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "3/16"
+        ],
+        [
+          "9",
+          "-6"
+        ],
+        [
+          "27",
+          "15/2"
+        ],
+        [
+          "81",
+          "15/16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "5b0a9f5b1c7cba4a8894309da02f5de94fd799eb5be31274b0bfcbf223d92004",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/54"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-9"
+        ],
+        [
+          "9",
+          "27"
+        ],
+        [
+          "27",
+          "-27"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "5ce4820c3e9b9fb0dd70e5f55d0058c988943e3b1b2026345594b8bea388afea",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "7/16"
+        ],
+        [
+          "4",
+          "5/4"
+        ],
+        [
+          "8",
+          "-3/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "5d48f34d3045fa6647e2065971adcdb3722f2af5812be114d6e3e1981fc92f5a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "193/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-69/64"
+        ],
+        [
+          "3",
+          "-41/64"
+        ],
+        [
+          "5",
+          "-17/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "5e8ac38dcc1810c922bf4f01596843bb6ac5ae9b326c974c03923e42ee3b9cd9",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "373/1920"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "5f8439fe8f3af025d37d256ff58a13bbf60a66ef2583ee560397dc804b5f1372",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "31/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "605803f6a23b6051958a986e4417435e67a293739aee17c2b7c16f106f35711c",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "31/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "60834c5ed18d2c13a40587f030718db032c5c28507bde362a1e80c2293bc7c16",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "79/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "5/16"
+        ],
+        [
+          "9",
+          "1/16"
+        ],
+        [
+          "27",
+          "-25"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "60c0d557482978d379e16d0706f1d4545fc4c3b679f4342e0240a7d4a884a8dc",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-23/4"
+        ],
+        [
+          "25",
+          "9/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "6109f314e7b4eec531261360ea68ad9f030118bf4c334cb3916a77aa0b3dd266",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-51/400"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "5"
+        ],
+        [
+          "25",
+          "7/4"
+        ],
+        [
+          "125",
+          "-15/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "6121235fb1f27a4cfde1350c8de41129ea87e03aa2104570c229121371807631",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "51/25"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "1"
+        ],
+        [
+          "25",
+          "27/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "63f3754bdabc90a5dded792b18e168932d41f42c70bfeafbc9e57bd4bd1a7389",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "147/100"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-65/64"
+        ],
+        [
+          "4",
+          "3/32"
+        ],
+        [
+          "8",
+          "-3/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "6440bec76b14a8ef5752c78c5e64e1a8f2a56228e112403166cbd4eeaeb69ca4",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "129/256"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "25/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "644b89dd9c2351d964c7402c4c01b42a5b4fa0dc9f6399154d3fa4f7ed596704",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-183/64"
+        ],
+        [
+          "25",
+          "-3/8"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "64d37b52a9c60c6b4aa249d29e3ce406eb2a74b442d06869d23ac05bfe0eff77",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "661/1600"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-29/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "6660c0da2a0ff30a2b5196e0fcffa3c7cb9f012bddf3826afdd41368a4c79c12",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/96"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-123/64"
+        ],
+        [
+          "4",
+          "17/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "672472b6a24d8c52331485baef521acb355f44519747105c7f54d41c94997234",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "11/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-6"
+        ],
+        [
+          "9",
+          "9"
+        ]
+      ],
+      "beta": "0",
+      "id": "69785913ead223bf024978f0a67c1808cc6c93b5e2f77a7c64f46dd369b41630",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "31/2"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "6a3ce9237aec77bcdbe10e7c124abae4e47398e8d83c38fb97a8308d1860d92a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-123/64"
+        ],
+        [
+          "4",
+          "19/32"
+        ],
+        [
+          "8",
+          "-3/64"
+        ],
+        [
+          "16",
+          "-5/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "6b74829f405ef818cccef100a5c06fb398d0be3d965a3a7ab8ebe4d493577c0e",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "11/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "4",
+          "23/32"
+        ],
+        [
+          "8",
+          "-7/8"
+        ],
+        [
+          "16",
+          "-11/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "6b8399527943ecc80ab0ab79f820ad54420d6f7c4c06dad5060bea6525b5e68d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3865/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-5/8"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "6da187a8cb07883fc8fe08ae12048796037752f9b2d078f0ce6cdf2b26755ca3",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/16"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "15"
+        ],
+        [
+          "25",
+          "-26"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "1/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "6dfa9af969b536e6cc00dcc6acf21c4460e00a2ff663751b157964d29fa0beac",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "29489/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-11/2"
+        ],
+        [
+          "4",
+          "-29"
+        ]
+      ],
+      "beta": "1",
+      "id": "70e4ab52dfbb40fa90174bc9b8a1310a65892bc7742978fd0e9843e375afef1a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-9"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-103/64"
+        ],
+        [
+          "3",
+          "33/64"
+        ],
+        [
+          "9/2",
+          "-5/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "7399bd77f937f0c755ec8091637c09ca226d3df99e41f77dc7fb8eb78bca78ec",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "47/576"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-5/8"
+        ]
+      ],
+      "beta": "0",
+      "id": "7539fa92bf794ef35f458e3cc11203fea5534da3cca4f8342bca2c027907d715",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/16"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-187/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "761699ae59524cdc268c5f7124b9a4e7287c94e5458799e102734e6fb73e36d4",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "133/320"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "9",
+          "12"
+        ],
+        [
+          "27",
+          "7"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "788dcd0449c9863eba21f5a98484fc399a22783649225b61c74b5b9ee31ff3a2",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "70/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "11/8"
+        ],
+        [
+          "25",
+          "-6"
+        ],
+        [
+          "125",
+          "-17"
+        ]
+      ],
+      "beta": "0",
+      "id": "7b19560bb8a422cd24ecdc75670712a98f46a120ffa945205bddc37f9df2744a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "899/1000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "7cc13629fddb5ac0e847b55b20e8b2f07cfa65c90070e1cc24d70850dffd9133",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "3/4"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "31/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "7d486f3ad21175b7e9cd97c8438675fc3ce863b3de1926fc22ae4ed442a878c6",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "79/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "7/16"
+        ],
+        [
+          "4",
+          "5/4"
+        ],
+        [
+          "8",
+          "-3/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "7ddd3d8bfd41534fc8cb5c23b5a52b177761d7539867fc858dd7327ed9f539b0",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "193/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-15"
+        ],
+        [
+          "25",
+          "75"
+        ],
+        [
+          "125",
+          "-125"
+        ]
+      ],
+      "beta": "0",
+      "id": "7fcd60c99696c3f2551dfdc3b6ac924ae6d653d4443aba4ea75c1f7831d7fc14",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-15"
+        ],
+        [
+          "25",
+          "75"
+        ],
+        [
+          "125",
+          "-125"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "8381444acef3d7c195fcf3da4246fbaf97bfa4d8516f309d753749b4f6fed05e",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3"
+        ]
+      ],
+      "beta": "0",
+      "id": "83ccf2a7cb65a0b1a1ec3e234ccb498a2fb3f63e708b39f9dd88c045a5205880",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-51/32"
+        ],
+        [
+          "4",
+          "3/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "8588e13d056d6ec8f8b663689f3cd66fcb0e894434953f50bb22ee8066324f23",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "55/256"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-53/64"
+        ]
+      ],
+      "beta": "1",
+      "id": "859f8e032b03659a8a7c7502de95ecfc70602f84a25047ae700daf40a8f494bb",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "267/320"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-11/2"
+        ],
+        [
+          "4",
+          "-29"
+        ]
+      ],
+      "beta": "0",
+      "id": "85c74c4a2e80ff9aa354b8c09bf945b210d392cc4a3e16f2fd12ff3d0e132215",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-9"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "4",
+          "16"
+        ]
+      ],
+      "beta": "1",
+      "id": "85fddedbfd5028161affcac3c7d040ba2b32773809d4d1b22c9ae096a74dbe18",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-6"
+        ],
+        [
+          "4",
+          "12"
+        ],
+        [
+          "8",
+          "-8"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "8707dc4de276e16a7fe2b1e6d870257c70a136868c11ecb595d37f847fcec112",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-20"
+        ],
+        [
+          "25",
+          "150"
+        ],
+        [
+          "125",
+          "-500"
+        ],
+        [
+          "625",
+          "625"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "876dac05b7cd30e68601cab2e34ba07f54257725a7d62ccc95e593e4ad4b7d57",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "25/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "898ea37daa3c1ddd722d51721b3b34ba6df376704bf64ca4f238c758557458ea",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-23/4"
+        ],
+        [
+          "25",
+          "9/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "8b331c45ba3a0a6db1b59ba92e35190eb429cdc5547d8dd6f507fa4d670718e8",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-51/400"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "8c09f4f20db3a86cb76d25717418224ecc0fe117daa8d2191f750594fc224c37",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "5/16"
+        ],
+        [
+          "9",
+          "1/16"
+        ],
+        [
+          "27",
+          "-25"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "8dc09d18dd30aa566fd5de29c1020fd3e3ea4219c185bd2aaf8a9d505bc5a439",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-2"
+        ]
+      ],
+      "beta": "0",
+      "id": "8e5bbe15f3cb3691040e0143deb2d053c043722bfc08379dd74f90173fa28bd4",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-16"
+        ],
+        [
+          "9",
+          "29/16"
+        ],
+        [
+          "27",
+          "-31/8"
+        ],
+        [
+          "81",
+          "23"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "8ea29f17a79dd0562f3e3613506c2b094162437cb0553a5d1b5878a58e9c5490",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-5173/1296"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-25/8"
+        ]
+      ],
+      "beta": "1",
+      "id": "8faf4621ae8ede962b78bef725cc7dda359dc77036627eb0ab44b7f0b57c03e9",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-25/16"
+        ],
+        [
+          "3",
+          "1/4"
+        ],
+        [
+          "9/2",
+          "13/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "90075edf73237a6906b765ee26ca485baef473a8ef594c260b6e2683159143b4",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "25/288"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "31/2"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "beta": "0",
+      "id": "90385d61e602040ce0af18a3577510654b4e5d5aebe6e69e720ea6ceb4a26a08",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "beta": "0",
+      "id": "903f13626b7f7b29e4898940beaae374f5525b7e9fabb6a0199cb2c82344f8f5",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "11/8"
+        ],
+        [
+          "25",
+          "-6"
+        ],
+        [
+          "125",
+          "-17"
+        ]
+      ],
+      "beta": "1",
+      "id": "90a23109f4ad00fbf7d1fbc07ee12bb26881402e5aa2444f83bec32064797e11",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "899/1000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-20"
+        ],
+        [
+          "25",
+          "150"
+        ],
+        [
+          "125",
+          "-500"
+        ],
+        [
+          "625",
+          "625"
+        ]
+      ],
+      "beta": "1",
+      "id": "910c52a850dd1f8caf55760d3d1db57c972c2768359d377ff77481cb724bd616",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-2"
+        ]
+      ],
+      "beta": "1",
+      "id": "915d022466aae525d2421bfd9b794ac222794aae94712689e61fedf0a1070714",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-2"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "95439e0f0407b1fcab2e670614018cec439bd78913b42a7544210a7efe5b4ace",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-135/64"
+        ],
+        [
+          "9",
+          "5/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "9626c6cdeb393fdc2cfd6d5997921e82ee735163da28a409e87e1ba38c5cc4c4",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "181/576"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-51/32"
+        ],
+        [
+          "4",
+          "3/64"
+        ],
+        [
+          "8",
+          "-3/16"
+        ],
+        [
+          "16",
+          "45/32"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "96c0d799f40ce5a97bfc8ef334f9fb9d4da4b7c7176a108255d46ec110915f46",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "143/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-5/8"
+        ]
+      ],
+      "beta": "1",
+      "id": "97093f8dca92a7faac4d94f6704edb3ee435c77968236fb1247b8c1ae4adc8a2",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/16"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "11/8"
+        ],
+        [
+          "25",
+          "-6"
+        ],
+        [
+          "125",
+          "-17"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "97c2f9e81c74df5909bf22d6ed9223507597f77a66829ed65f4aa790b268598a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "899/1000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-8"
+        ],
+        [
+          "4",
+          "24"
+        ],
+        [
+          "8",
+          "-32"
+        ],
+        [
+          "16",
+          "16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "98e2b3b6d4319973764bf37396131a9a62cb2cd1377844663ca0345f3f289023",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "9a6e8f48b6cc08e40d1a37670ff575b130f52a15a531adb6bc755af17458b4e4",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "17"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-153/64"
+        ],
+        [
+          "3",
+          "65/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "9ab639470cd4920c34b91618ddde571a0979892567b5bda88d9fbd7a94c595f8",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "55/384"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "9ac71a723f064763bc8f44b877c41ac9c5a6b601abf4241d13634507a8bef8ae",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "63/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-63/64"
+        ],
+        [
+          "2",
+          "-7/64"
+        ],
+        [
+          "5/2",
+          "-7/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "9c7302ee09c222f1a0668fc532aab9279e60c2700c5294ea6e15cf1946a84d8d",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "129/640"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3/4"
+        ],
+        [
+          "9",
+          "1/8"
+        ],
+        [
+          "27",
+          "-5"
+        ]
+      ],
+      "beta": "0",
+      "id": "9daafa077254fe7ab7fcae4c52c7db56fc0b75c5b374048ce95080e3f322478d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "125/216"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-63/32"
+        ],
+        [
+          "3",
+          "5/8"
+        ],
+        [
+          "5",
+          "-13/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "a173db9cdc776c17fcf29c16f5ca4d48b4a4729b83747640c08572f21a4d5433",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "11/60"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-201/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "a1af7f68b2e90ea1275868420d108c3c6eaae310acb49dca0bc081846d00bddb",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "119/320"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "7/16"
+        ],
+        [
+          "9",
+          "-12"
+        ],
+        [
+          "27",
+          "9/2"
+        ]
+      ],
+      "beta": "1",
+      "id": "a213854b6da1b92b8347200bb9eefb91a2e43255ed930acdfd64fe7d55f01c07",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-1/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-33/16"
+        ],
+        [
+          "2",
+          "51/64"
+        ],
+        [
+          "5/2",
+          "1/8"
+        ]
+      ],
+      "beta": "0",
+      "id": "a2a8029404f5762b3dc86b5816e20ea344614254f8a2df6c719b76dc74dea880",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "47/640"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "a40b24bdac9b7f3a3bbd26ebf9e40ad9e30f3a0eb55f0d4898229c690b480766",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-7/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "a471fba3cb3b201e1ead6287ee9419fcd28c0c346a6fda2b8093962153cdaa67",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "1/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-8"
+        ],
+        [
+          "4",
+          "24"
+        ],
+        [
+          "8",
+          "-32"
+        ],
+        [
+          "16",
+          "16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "a5acbee70aedf180edd414fc249218162ce5334cf55e659b40c5c63aee274e4b",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-2"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "a68d4ebd52320ddc2b21cd6dc6c53986eda049fc16e4ae91c0e2b759b0c7f5ef",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "1"
+        ],
+        [
+          "25",
+          "27/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "a87ef346fb851e1cc200fb9f9791b8c31644fc23f8471ddb0b63879b450bb2e7",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "147/100"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "15"
+        ],
+        [
+          "25",
+          "-26"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "1/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "a9f00210863d5ce6043c31c2c03efef6a6cfd0ca045859e9557ef7929402235b",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "29489/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-6"
+        ],
+        [
+          "4",
+          "12"
+        ],
+        [
+          "8",
+          "-8"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ab328caa82e3ca07cc9856f4570a76f2c3a8dc5a7b23eedc57726272e70e7038",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "beta": "1",
+      "id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+      "origins": [
+        "unfiltered"
+      ],
+      "multiplier_at_one": "1"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "1"
+        ],
+        [
+          "25",
+          "27/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "ae2e3d002b65ebdfda95e22c5f86c3d1afc8eafb6c53046c95cbbd95420dc501",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "147/100"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "5/2"
+        ],
+        [
+          "4",
+          "-25/2"
+        ],
+        [
+          "8",
+          "17"
+        ]
+      ],
+      "beta": "1",
+      "id": "ae4cf9da580452784cea46490663c390d5361844068c87edba1e957cbf8970e0",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/4"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-117/32"
+        ],
+        [
+          "25",
+          "83/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ae50a99c0b294bea02b1f90a5b8bd01256080b4ae481aacf3cfdd83beba064a6",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "513/1600"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "5/16"
+        ],
+        [
+          "9",
+          "1/16"
+        ],
+        [
+          "27",
+          "-25"
+        ]
+      ],
+      "beta": "1",
+      "id": "ae5ee759c55a0df413bd5172be52d9c3325d243b1291103b02352b671c08104a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "4",
+          "-3/2"
+        ],
+        [
+          "8",
+          "15/16"
+        ],
+        [
+          "16",
+          "-3"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ae7585020a18c57b8278d466b24dad8284371cc4d405ac3f1aa9f895dee96627",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "7/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-11/2"
+        ],
+        [
+          "4",
+          "-29"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "b07a5442295ea98a40d66ee0e108503a972880ef02220536efe72f6aed6a2013",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-9"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-71/32"
+        ],
+        [
+          "9",
+          "-61/64"
+        ],
+        [
+          "27",
+          "365/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "b2ca6d3564856cb0a4f1bd1b3699afaf6b801d262c61bc781c86988e9a4c2953",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "79/216"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-9"
+        ],
+        [
+          "9",
+          "27"
+        ],
+        [
+          "27",
+          "-27"
+        ]
+      ],
+      "beta": "1",
+      "id": "b2d7dc6d91b23cf61951f0374fe464058ad08a9a1079b95892389350c9af5b4c",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "b3638f1f05124ead841115189381314c81523612479ead482e759eaaae9fd3bb",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/8"
+        ],
+        [
+          "9",
+          "-31/4"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "b4c6493d088de140039e4618985e874ff03e5cfaa9dd2359d0f32ef69eca411c",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-59/72"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "b746723e3e5cb947c643a199d3f5a3a78541e75fbf9877172fdbc328131ee571",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "5"
+        ],
+        [
+          "25",
+          "7/4"
+        ],
+        [
+          "125",
+          "-15/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "b96041da48ad22350b3d64b826e634bbce7ce9adc56522801a098d2abcb9d309",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "51/25"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "9",
+          "12"
+        ],
+        [
+          "27",
+          "7"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "ba8ca6a221c2ec419c2686bc2a925e93432ce4de92e53e95b393bd223aaa0469",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "70/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-133/64"
+        ],
+        [
+          "9",
+          "-15/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "baea961c01f1b69ec2209af753739f5dc0152d1be1744168c5967255cb12636c",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "13/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-29/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "bd1632c264198292d9d62d6da5c61a5dc84d46f71f3261afe268b516fcff2ca0",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/96"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "becb3f045777c0d7b6f12c29deee3b0b9c3ea651ce4323e5a746276765334623",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "4",
+          "16"
+        ]
+      ],
+      "beta": "0",
+      "id": "bef160cdae97c594d98e9b14fbb9f65cea297e4416acdc027a206e55bd8563c4",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-6"
+        ],
+        [
+          "25",
+          "9/32"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "9"
+        ]
+      ],
+      "beta": "0",
+      "id": "c020b297f9198b408a088485b511051679b642b6dd90f78723ec10e48042d765",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-3717/20000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3"
+        ]
+      ],
+      "beta": "1",
+      "id": "c112bde3ed32a0e4df089ed63cc6941d6324ff3e08835bee0f4c521de1e46666",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-12"
+        ],
+        [
+          "9",
+          "54"
+        ],
+        [
+          "27",
+          "-108"
+        ],
+        [
+          "81",
+          "81"
+        ]
+      ],
+      "beta": "0",
+      "id": "c15dfe91387887a9bd070346528a9a0ec12c9ceec469ba130396475896177006",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "4",
+          "-3/2"
+        ],
+        [
+          "8",
+          "15/16"
+        ],
+        [
+          "16",
+          "-3"
+        ]
+      ],
+      "beta": "0",
+      "id": "c3381a31b371a8506f99f89cf80df76d31d55c84eb1d26d692a52068617aedf9",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "7/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-6"
+        ],
+        [
+          "9",
+          "9"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "c5ea4d320eb8849cef80bc426f5c9adfa240506542e8898b184ae53b2a245af9",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/32"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "c7b40e7f7f0c48eab8594494be954ce2e3990640cd44e6262919d44265aee3b1",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "63/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-3/16"
+        ],
+        [
+          "25",
+          "29/8"
+        ],
+        [
+          "125",
+          "19/2"
+        ],
+        [
+          "625",
+          "3"
+        ]
+      ],
+      "beta": "1",
+      "id": "c801f6f62732716b5b3084388525b41e3c1eb24e147c0f322cf0049e2edfd705",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11883/10000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "c855ad53b3f4d4bc93011b774c892e984dfad3dfbbeb2caab08c7ad7c5847911",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "31/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "c9608d02785be9c14cec0f1788322a6c23df0675d65c766b2f9e13a73c71878d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-6"
+        ],
+        [
+          "4",
+          "12"
+        ],
+        [
+          "8",
+          "-8"
+        ]
+      ],
+      "beta": "0",
+      "id": "ca27578e37ad854479c5fc6582bd8eea31d27d79f061916d23cf8cdf55ca33d0",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "5/2"
+        ],
+        [
+          "4",
+          "-25/2"
+        ],
+        [
+          "8",
+          "17"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "ca33013091b5252307b52d8126328ac5ff80204480d5b1e04b6f0aeb6d74a0a1",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/4"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-6"
+        ],
+        [
+          "4",
+          "12"
+        ],
+        [
+          "8",
+          "-8"
+        ]
+      ],
+      "beta": "1",
+      "id": "ca98fd4a104069e129c791ead2bad7b34422a9e4d3ee825a0571fb621bde72c9",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-7/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "caa947ee9d75725bea920532669a3170744266873443d2040eaa06e96322c3c5",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "1/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-16"
+        ],
+        [
+          "9",
+          "29/16"
+        ],
+        [
+          "27",
+          "-31/8"
+        ],
+        [
+          "81",
+          "23"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "cae1649aafda7492ef4d202c62d32ebdd4deea068b89c626f7c032bd23a30c5e",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-5173/1296"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-65/64"
+        ],
+        [
+          "3",
+          "-13/64"
+        ],
+        [
+          "9/2",
+          "-39/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "cb6c76be803f06387176651881eec2eb2da34d8e4f4377a864e67c768cda8199",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "23/192"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "cba5101eead6ca1632175a6cfd5e30abb9b1364cffd44c34fb37d779982a6672",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "63/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "31/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "31/2"
+        ],
+        [
+          "4",
+          "-3/2"
+        ]
+      ],
+      "beta": "1",
+      "id": "cfcd47c228e4970b1679ef118a67a0d2417845300630746c98597de46e292ee1",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "67/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "9",
+          "12"
+        ],
+        [
+          "27",
+          "7"
+        ]
+      ],
+      "beta": "1",
+      "id": "d24cc60adfed25f4a8c361583d7e940ac560ce734df2ab60dc2e5ad247f9d60a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "70/27"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "32"
+        ]
+      ],
+      "beta": "0",
+      "id": "d2a58d24e3dfcc2da003be865afdda5c7af864d6fe8f7d3afd906e62989a0b05",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "17"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "5"
+        ],
+        [
+          "25",
+          "7/4"
+        ],
+        [
+          "125",
+          "-15/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "d3285bcf7591b2b6f9afe0df1ac713f59528f1c06e7ba6ff3e925a43be672ce8",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "51/25"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "4",
+          "16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "d4a47f0c8abd51024ecbe5a7da52a751ec6125692326c4b7afd276d14bc96f5a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "11/2"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-25/8"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "d4ef6b4017f983bded0ef392315b3d95d99bdb6b989d720dd7ec0fbc6ef8665d",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "7/16"
+        ],
+        [
+          "9",
+          "-12"
+        ],
+        [
+          "27",
+          "9/2"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "d6ae9b248db1b51e666b312c27d6e6464dc2ad8fca761b36b42be1ea3be05a86",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-1/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "4",
+          "-3/2"
+        ],
+        [
+          "8",
+          "15/16"
+        ],
+        [
+          "16",
+          "-3"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "d76880ee2b78edb691cc042c9ce445eb468726110c30e2f96299ef81ec6fb37f",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "7/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-35/16"
+        ]
+      ],
+      "beta": "0",
+      "id": "d8dff2b7f49b4d9916a774827ad2d8f9bd417701f9c9f1047c93de4d390b34cb",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "13/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-6"
+        ],
+        [
+          "9",
+          "9"
+        ]
+      ],
+      "beta": "1",
+      "id": "d944218ff6b2d53a9098aa534193565a9be339eb1abd2fa5581284f75a1666e8",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3/2",
+          "-61/64"
+        ],
+        [
+          "2",
+          "-3/32"
+        ],
+        [
+          "5/2",
+          "-33/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "d9af21c27a19b652d55afd78d80c95b5c31bb1dcd449feb961e1c52b93930ab6",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "107/960"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "3/16"
+        ],
+        [
+          "9",
+          "-6"
+        ],
+        [
+          "27",
+          "15/2"
+        ],
+        [
+          "81",
+          "15/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "d9d6c24aec68acfbb7d454097e27c1f6a2a38c0829836e023834f8934040b971",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/54"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-19/8"
+        ],
+        [
+          "9",
+          "35/64"
+        ]
+      ],
+      "beta": "0",
+      "id": "daf2a8c5a563335774b666ea798560662a15ac71a690b288f49193be706029c2",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "155/576"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "5/2"
+        ],
+        [
+          "4",
+          "-25/2"
+        ],
+        [
+          "8",
+          "17"
+        ]
+      ],
+      "beta": "0",
+      "id": "dca5b44e37fd39d59d794935600a53692380b19a8924a4bcd205e9df0b94499b",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "5/4"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/8"
+        ],
+        [
+          "9",
+          "-31/4"
+        ]
+      ],
+      "beta": "1",
+      "id": "dd3a0f6df8491a9a056ae1fafd98d5ada786d8ea543b07d3839d44dda84e7885",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-59/72"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-3/4"
+        ],
+        [
+          "9",
+          "1/8"
+        ],
+        [
+          "27",
+          "-5"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ddce6267ac72bc53cfc7838c32afc78ba7fa352817c5e8fede19dc21db92bf31",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "125/216"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "7/16"
+        ],
+        [
+          "4",
+          "5/4"
+        ],
+        [
+          "8",
+          "-3/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "de1acfd6d2f4f3c82b440b4949acd950adcabcea91eacc83c10dfb861e410246",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "193/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "4",
+          "23/32"
+        ],
+        [
+          "8",
+          "-7/8"
+        ],
+        [
+          "16",
+          "-11/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "df618945173e173c3614901492bf3c3a8bae14ffed5ffb3625cf56ea2283b80f",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3865/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-23/4"
+        ],
+        [
+          "25",
+          "9/16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "dfe62173e232022f3acf275257fbdf7afbb6962b1cd1fffa38ce9c6a02636d7b",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-51/400"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-6"
+        ],
+        [
+          "25",
+          "9/32"
+        ],
+        [
+          "125",
+          "-23/16"
+        ],
+        [
+          "625",
+          "9"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "dffeb81f452ea989384bc851a31083e13b650e5bbcbee36a0797c4c923035b56",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-3717/20000"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "7/16"
+        ],
+        [
+          "4",
+          "5/4"
+        ],
+        [
+          "8",
+          "-3/16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "e07b86ba4f4987b99bc7bed5faa5558a382d772364756e67d726f02fa952dc53",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "193/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "4",
+          "-3/2"
+        ],
+        [
+          "8",
+          "15/16"
+        ],
+        [
+          "16",
+          "-3"
+        ]
+      ],
+      "beta": "1",
+      "id": "e0c2969bb58e19889a979890e4cc0a095eba7cd502562dc57eab3dde569051d9",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "7/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-10"
+        ],
+        [
+          "25",
+          "25"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "e10e9e281b6b94625ee2944be09e7d3724c71ac7c71f31d06898e0579f28fec3",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-20"
+        ],
+        [
+          "25",
+          "150"
+        ],
+        [
+          "125",
+          "-500"
+        ],
+        [
+          "625",
+          "625"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "e4e80d60c2c1f6b0806727d6c48a9fb4f1f5616debd1df9846e4c362422b6716",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "31/16"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "e6e5af95e9ef0a46e03a0f20b2c7dddc6d1975c48ef541a48365866a8614a45a",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "79/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ea752337ae4b4984874fc4abad2d34ad6bd31f2af618598780d869e9c2411e7c",
+      "origins": [
+        "unfiltered"
+      ],
+      "multiplier_at_one": "1"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-11/2"
+        ],
+        [
+          "4",
+          "-29"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "ebdea906e3dc8e0c2fe9f277b93049731074cd7c5fa430270b76b166776affa8",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-9"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-1/16"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "f084744f8fe52bd1245a5bcfa0ed82a13fe2ce761d56ae34136eec89cff85eca",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "31/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/8"
+        ],
+        [
+          "9",
+          "-31/4"
+        ]
+      ],
+      "beta": "0",
+      "id": "f13604af99fd5af190bfd2f2bbfd4cc81edf0086193913ee73bc449b9ca3c582",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-59/72"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-12"
+        ],
+        [
+          "9",
+          "54"
+        ],
+        [
+          "27",
+          "-108"
+        ],
+        [
+          "81",
+          "81"
+        ]
+      ],
+      "beta": "1",
+      "id": "f260af5d1d6ae74b374e1e6e11b6be008eb6fafaebbc341d750c7ecef137d10e",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-53/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "f2eca6f0d5ddf17769df767b05b86cfd618bd1792f119dde1e4eefcad6a30c79",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "11/64"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-25/8"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "f380ee201484a569d019079b1efcc8a959cacb471f55e226b94c7638c471fd0c",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "3/8"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-17/8"
+        ],
+        [
+          "9",
+          "17/32"
+        ],
+        [
+          "27",
+          "-73/64"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "f41cdeb08d0db787254772ca17c139474d4e66a0027dc752b8decd76ab2a4345",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "533/1728"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-47/64"
+        ],
+        [
+          "25",
+          "-15/16"
+        ]
+      ],
+      "beta": "1",
+      "id": "f614497109cf1002a583044065e33e83b7db45664d587e569e040e15099d3cd2",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "261/320"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-23/8"
+        ],
+        [
+          "9",
+          "-31/4"
+        ]
+      ],
+      "beta": "1/2",
+      "id": "f7582807532cdb3e9d02dfb60c62c907292f4a691546d78f2c78a0a0508e2070",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-59/72"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-65/64"
+        ],
+        [
+          "4",
+          "3/32"
+        ],
+        [
+          "8",
+          "-15/64"
+        ],
+        [
+          "16",
+          "3/8"
+        ]
+      ],
+      "beta": "1",
+      "id": "f95c83c19e0953fa275747595f8ca7cd6b1e068485fc27560b58722ad0312c53",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "261/512"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "7/16"
+        ],
+        [
+          "9",
+          "-12"
+        ],
+        [
+          "27",
+          "9/2"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "fa2d5b6b51283ae9c88d7f22a6ad3fa48826d6541e05ed2d69a0c0b3b338a24e",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "-1/48"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "beta": "1",
+      "id": "fab2af7ca6db980d3a748c8919c4b033e9ebb38e66fd2cab2e1931479d98fbde",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "25/32"
+        ]
+      ],
+      "beta": "1",
+      "id": "fd94bbb18b4c40e2e5d0cf5c57484c3e5e5b4fa531e37f162f840c9e9db9c199",
+      "origins": [
+        "unrestricted_rational"
+      ],
+      "multiplier_at_one": "37/32"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-5"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "fdda43cc5c6c8a5452d97a933a43bac1ebc5915a0254e6d91d2b4d66e740bec8",
+      "origins": [
+        "finite_differences"
+      ],
+      "multiplier_at_one": "0"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-73/32"
+        ],
+        [
+          "4",
+          "35/32"
+        ]
+      ],
+      "beta": "0",
+      "id": "fe3aa9585a1fbb1b50b1dc3efe707aab35eb39fc398e7e12a4e19892e2a75038",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "17/128"
+    },
+    {
+      "atoms": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "-101/64"
+        ]
+      ],
+      "beta": "3/2",
+      "id": "fe77d1c270580c0ddbb2e00f8d2a1b281872d179122083098c68b5c919e7dfe2",
+      "origins": [
+        "least_squares"
+      ],
+      "multiplier_at_one": "27/128"
+    }
+  ],
+  "carry_grammar": {
+    "delays": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "unit_coefficient": "1",
+    "free_integer_range": [
+      -3,
+      3
+    ],
+    "certificate": "exact zero drift and nonnegative cells of the full integer period; every real input, not sampled inputs",
+    "tail_index": 14,
+    "selection": "least proved global psi constant, then coefficient cost, then lexicographic coefficients"
+  },
+  "factorial_trace_points": [
+    1,
+    2,
+    3,
+    7,
+    16,
+    31,
+    64,
+    127,
+    257,
+    521,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "coefficient_density_thresholds": [
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "validation_scales": [
+    193,
+    257,
+    389,
+    521
+  ],
+  "rho_inference": "OLS C_off versus D, no intercept, at X>=16; clipped to [-2,2], rounded to 1/64, with 0,1/16,1/8 margins; union generic grid",
+  "rho_grid": [
+    "-2",
+    "-1",
+    "-1/2",
+    "0",
+    "1/2",
+    "1",
+    "2"
+  ],
+  "gamma_inference": "OLS positive residual C_off-rho*D at X>=16; upward 1/32 rounding with 0,1/8,1/4 margins; union quarter powers zero through three",
+  "constant_inference": "twice the positive part of the largest training ratio, rounded upward to 1/1024, minimum 1/1024",
+  "archive_size": 24,
+  "score_anchor": 1024,
+  "selection": "baseline for every beta; actual-zero and pole-log diagnostic; multiplier-zero coverage; negative-association and bounded-off-diagonal coverage; fill by validation, ordinary-zeta relevance and total conditional energy bound, at most two fill entries per program",
+  "final_cases": {
+    "dyadic_exponents": [
+      10,
+      14
+    ],
+    "dyadic_count": 3,
+    "irregular_range": [
+      2049,
+      8191
+    ],
+    "irregular_count": 3,
+    "boundary": [
+      1,
+      2,
+      3,
+      15
+    ]
+  },
+  "delayed_support_cutoff": 128,
+  "observables": "zero-centered piecewise linear interpolation of li(n)-beta*sum_(m<n)lambda(m); complete A2, same-increment Gram diagonal D, and signed C_off=A2-D",
+  "moment_scope": "every polynomial cell in each full window [X,2X]; no sampled quadrature",
+  "diagonal_proof_scope": "actual prime-power increments only; never applied to positive-support controls",
+  "coefficient_producer": "factor-free Dirichlet logarithm; no prime or factor oracle",
+  "prior_final_data_is_development_only": true,
+  "input_programs_selected_by_prior_final_outcomes": false,
+  "generator_model_literature_network_calls": false,
+  "historical_priority_is_acceptance_gate": false,
+  "imported_prime_distribution_estimate": false,
+  "uniform_signed_correlation_premise_proved": false,
+  "RH_proved": false,
+  "remaining_assumptions": [
+    "floor-carry certificate template, integer coefficient/delay budget and unit-delay normalization",
+    "all parent finite first-jet filters; no new filter coefficients are generated in this stage",
+    "quadratic ramp Gram representation; rho*D plus a pure power defect",
+    "written elementary factorial, monotonic tail and logarithmic Mellin proofs; not machine-formalized",
+    "finite scale and archive budgets; learned cancellation is conjectural"
+  ]
+}

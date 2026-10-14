@@ -1,0 +1,39 @@
+{
+  "RH_proved": false,
+  "analyst_supplied": [
+    "centered residual identity",
+    "primitive norm inequalities",
+    "convolution and Abel summation rules",
+    "finite grammar and selection policy"
+  ],
+  "checker": "independent exact recovery and bottom-up proof optimum audit; no generator import",
+  "detector_generated": [
+    "centering applications",
+    "factor partitions",
+    "prefix-carrying factor",
+    "proof trees",
+    "uniform costs",
+    "paid versus remaining partition"
+  ],
+  "general_analytic_prover": false,
+  "geometry_ids": [
+    12,
+    6,
+    8,
+    0,
+    4
+  ],
+  "grammar": "every centering depth and every multiset convolution partition; mass, critical mass and signed prefix norms",
+  "hashes": false,
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_short_inverse_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "numerical_scores_used": false,
+  "parent_obligation_count": 720,
+  "runtime_limit_seconds": 900,
+  "schema": "core-prefix-proof-run-v1",
+  "selection": "partial reduction by proved exponents and paid pieces; no source responses or fitted constants",
+  "source_evaluations": 0,
+  "whole_signed_bound_proved": false
+}

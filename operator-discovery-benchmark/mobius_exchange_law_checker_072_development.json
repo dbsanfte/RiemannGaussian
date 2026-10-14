@@ -1,0 +1,48 @@
+{
+  "component": "independent exact exchange-law checker 072",
+  "runs": [
+    {
+      "attempt": 1,
+      "command": "../.venv/bin/python -B: unittest test_check_mobius_exchange_law_072",
+      "test_count": 18,
+      "tests": 18,
+      "returncode": 0,
+      "ops": 15520,
+      "elapsed_seconds": 0.16050295700551942,
+      "failures": [],
+      "status": "PASS",
+      "operations": 15520
+    },
+    {
+      "attempt": 2,
+      "command": "../.venv/bin/python -B: unittest test_check_mobius_exchange_law_072",
+      "test_count": 19,
+      "tests": 19,
+      "returncode": 0,
+      "ops": 15566,
+      "elapsed_seconds": 0.1634118789806962,
+      "failures": [],
+      "status": "PASS",
+      "reason": "Added explicit known-unit, squareful-zero, and closed-rational-endpoint evaluation assertions.",
+      "operations": 15566
+    },
+    {
+      "attempt": 3,
+      "command": "../.venv/bin/python -B: unittest test_check_mobius_exchange_law_072",
+      "test_count": 19,
+      "tests": 19,
+      "returncode": 0,
+      "ops": 15567,
+      "operations": 15567,
+      "elapsed_seconds": 0.16739564604358748,
+      "failures": [],
+      "status": "PASS",
+      "reason": "Match declared 1..16 profile cap, reject extra top-level claims, and preflight input incidence storage."
+    }
+  ],
+  "preflight_failures": [],
+  "final_status": "PASS",
+  "failure_preservation": "All test attempts are retained; no failed attempts occurred.",
+  "corrections": [],
+  "unique_new_synthetic_tests": 19
+}

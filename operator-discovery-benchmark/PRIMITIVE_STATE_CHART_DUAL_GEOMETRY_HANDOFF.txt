@@ -1,0 +1,119 @@
+Publication030: exact cone geometry and compressed dual search
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-geometry-search-001
+
+Verified result
+GEOMETRY_VERIFIED, search_status UNKNOWN. The sole independent audit
+verified all1224 affine coordinate forms against all782 licensed chart
+equations, all851 rational generator responses, every exposure and every
+compression map. There is no separating certificate, primal feasibility
+proof, signed arithmetic bound, universal operator identity or RH proof.
+
+Five scalar generator responses are identically zero. Four nonzero response
+lines containing both signs expose another10 scalar generators. All15
+projected scalar coordinates forcedzero on any feasible point are:
+3,9,11,17,48,49,50,51,297,300,301,307,310,311,983.
+These are14 square coefficients and the fifth scalar slack. The zero rays
+are48,49,50,51,370; ray370 is projected coordinate983.
+
+The complete affine forms make the new conditions particularly simple:
+x3=-x9; x11=-x17; x297=-2*x301; x300=x301;
+x307=-2*x311; x310=x311. Each member is nonnegative in the cone.
+Thus the four free coordinates x9,x17,x301,x311 must vanish. Coordinates
+48,49,50,51,983 already vanish throughout the affine chart. These are
+conditional necessary constraints; they do not establish a feasible point.
+
+No C or H rank-one generator was exposed. Both verified kernel spans have
+rankzero and both matrix dimensions remain15. The run found no negative
+constant ray and no contradictory compressed equality row. This method
+searched exact zero responses and opposite proportional responses; it did
+not search all positive combinations capable of exposing a cone face.
+
+Exact positive column compression and signed augmented-row compression
+reduced the separator LP from443 rows/851 columns to317 rows/695 columns.
+Constants were retained in every response and augmented row. Opposite
+column signs remained distinct. The objective is the declared new L1 cost
+on original representative columns; feasibility is preserved, old objective
+values are not. Complete geometry is saved in jobs/geometry.json and can
+be reused under this completed independent review.
+
+Numerical disposition
+The one compressed HiGHS dual-simplex proposal reached its207-iteration
+limit. It returned no vector; no exact restoration ran. The reported
+unfinished numerical primal_status=Infeasible is not a proof of cone
+infeasibility. No native status was promoted to mathematical evidence.
+The reduced dimensions fixed the iteration allowance before scaling; there
+was no outcome-dependent extension, second native call or second audit.
+
+The declared native reservation was149,994,236:4,638,384 preparation,
+31,855,013 initial dense-factorization proxy,207*541,119 iteration proxy,
+and1,489,206 input/transport proxy. Actual charged native proxy145,437,408
+uses consumed exact preparation instead of the whole preparation reserve.
+These figures are work proxies, not measured HiGHS floating-point counts.
+The native proposal stage took0.503742s including setup/import overhead;
+the worker took13.130497s wall and13.129062s CPU, peakRSS125740KiB,
+one observed thread. The enclosing worker stage took13.253239s.
+
+Verification and resource accounting
+The frozen combined suite passed44 tests in10.168s. It covers authentic
+synthetic singleton and multi-ray exact certificates, full coordinate and
+pairing checks, underdetermined support reconstruction, positive-only
+compression, augmented-row constants, geometry and certificate corruption,
+one shared audit meter, native exception metadata and publication scope.
+Repeated outcome-only tampering reuses synthetic geometry already checked
+independently; genuine geometry tampering and both successful integration
+routes still exercise the full path. Reconstruction rank/free-position
+statistics are producer diagnostics, not independently replayed elimination.
+
+One Sol6.1 agent finalized the substantive independent checker integration
+work in parallel with root workflow review. Its two development executions
+consumed29,849,297 synthetic work units. The final frozen checker module
+consumed5,133,990 (producer1,221,956 and independent3,912,034). No work was
+reset. Before any actual research response was computed, the450m combined
+allocation was redistributed to80m preparation,70m geometry,150m native,
+80m exact restoration and70m sole independent audit. Synthetic preparation
+reserves20m for earlier/root checks plus29,849,297 consumed checker work
+plus15m for the frozen combined suite, totaling64,849,297 inside65m.
+Independent input/output reserves10m and other preparation5m complete80m.
+The combined suite ran once after freeze, without an identical pre-freeze
+combined repetition. The previous029 research job was not restarted.
+
+Actual charged research proxies:3,775,304 geometry +145,437,408 native
++3,141,074 independent =152,353,786, plus213,834 independent input-I/O
+units within preparation. Exact geometry peak343224 live cells/510bits;
+native323258 cells/448bits; independent359464 cells. The independent
+audit took10.356582s wall/10.355397s CPU, process peakRSS496896KiB.
+Worker and audit each had enforced6GiB boundaries,3600s cooperative
+limits and one thread; producer external limit7200s. Result/temporary bit
+limits remain4096/8193; rational live-cell proxy remains6m. Geometry is
+1,997,999bytes; proposal2775bytes; independent review3413bytes. The
+source snapshot has19 files/227448bytes. No hashes were generated.
+
+Next research action
+The binding restriction was again the numerical iteration policy, not
+measured memory or elapsed time. Do not reset this completed job's budget
+or simply restart its solve. A useful new method is stronger exact reduction
+of the saved generator system before optimization. Proportional rows are
+only a small subset of linear dependence.
+
+For a fresh, fully charged experiment, consider a generic sequence:
+1. Iteratively exploit homogeneous equality rows whose nonzero coefficients
+   all have one sign: nonnegative dual weights in those positions mustzero.
+2. Remove disconnected components with zero target by setting their weights
+   zero, retaining the component containing the nonzero target coordinate.
+3. Select an exact sparse row basis, retaining an independently checkable
+   transformation for every original augmented equality. Repeat safe sign
+   propagation if elimination reveals further constraints.
+4. Solve only the resulting equivalent nonnegative generator system, then
+   lift into the complete original851 weights and verify the full782-row,
+   1224-coordinate Farkas identity as before.
+
+These are generic conic/equality reductions, not nominated operator answers.
+A reduced separator search may still fail to find a witness; that failure
+must not exclude PSD generators absent from the finite851-ray catalogue.
+The verified four primal free-coordinate zeros could alternatively support
+an exact primal face parameterization, but their small dimension reduction
+does not by itself promise a solution. Neither route addresses all scales
+without the separate universal identity, scalar budget, initial storage
+bound, cofinal parameter family and ordinary-zeta bridge. Those remain the
+research objective; the finite cone is one proof-search template.

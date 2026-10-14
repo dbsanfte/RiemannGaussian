@@ -1,0 +1,74 @@
+AUTOMATIC INTEGRAL-REGION AND PRIME-CLASS RELATION SEARCH056
+
+Purpose: reduce the unpaid055 joint arithmetic source with independently
+checked bound programs and learned exact relations. This is a symbolic
+proof search, not a new numerical validation of the full energy recurrence.
+
+Source: fixed alpha1/5, q2, coefficients[2,-3,1], ordinary Mobius, integer
+N>=2. Reuse the seven already defined Boolean insertion words from055.
+All new sources and this protocol are frozen before running the search.
+No scientific source arrays, final scores or logarithm atoms are read.
+Prior runs are not replayed. Literal source comparisons only; no hashes.
+
+Bound-program grammar: enumerate every reduced rational cutoff0<tau<=2
+with denominator<=12. This is a resource bound, not an exponent whitelist.
+For each source, compose finite divisor expansion, cofactor absolute sum,
+integer unit cancellation (or R>=2 at the unit), normalizer and logarithm
+bounds, exponential integration, and a finite power-sum estimate. The
+independent checker admits each theorem on its complete stated domain.
+Choose the smallest cutoff whose resulting growth fits the input target
+N^(1/2), so that the unresolved integral interval is as small as this
+provider permits. The winning cutoff is not supplied to the selector.
+
+Relation grammar: form exact coefficient rows for every generator prime
+and for the universal outside-prime class in the first Taylor jet of the
+complete integrand. Generic rational row reduction finds relations that
+annihilate the outside row and relations annihilating every row. Promote
+these inferred basis vectors into reusable signed mixtures; enumerate sums
+and differences of pairs of the complete-nullspace basis. No particular
+winning mixture is supplied. Retain singleton controls and an ablation
+with relation promotion disabled. Both branches use the same feature
+family and work cap; actual work is reported separately. This ablation
+shows exactly what inferred compositions enable in this restricted grammar,
+not a claim about every possible alternative search or an equal-time race.
+
+Identify resulting operator words by enumerating all products of unused,
+E_p andD_p generators, expanding their Boolean coefficients, and matching
+the inferred vector. An independent truth-table evaluation checks every
+Boolean assignment;055's verified commuting-idempotent source semantics
+then pays the operator identity. This does not grant a bound for its
+complete signed filter. A learned relation need not match a single word.
+
+For a learned pureE_R word, the independently checked near-zero rule uses
+the actual product over primes dividingRn. Its k forced prime factors give
+|h_E_R(N,t)|<=4N*t^k*product_(p|R)logp. Enumerate every reduced rational
+0<gamma<=2 with denominator<=24; the cutoff is
+epsilon_N=min(1/2,N^-gamma). Integrating the paid product envelope gives
+12R/(k-alpha)*N^(1-gamma*(k-alpha)). Select the smallest gamma meeting the
+input growth target, so its bounded near-zero interval is as large as this
+provider permits. Combine all signed Boolean-tail terms with triangle
+inequality. The remaining moving middle interval is an explicit new bound
+obligation, with no fitted constant or assumed Taylor remainder.
+
+Each proposed relation receives a fresh independent algebraic check. The
+common ordinary-prime contribution and every finite prime-power exception
+remain explicit. A bounded or identically zero FIRST JET does not pay the
+integral over any fixed parameter interval. Higher derivatives and their
+uniform remainder remain in the next search input. No finite Taylor
+truncation is assumed to control all scales. The full original t0 source
+is retained in the pending obligation; a companion cannot silently replace
+it, even if its first jet vanishes.
+
+Recovery: independently check a conditional triangle-inequality implication
+from a low-core square-root bound times(1+logN)^eta, plus the proved tail.
+No cross term is thrown away and the low-core premise remains OPEN. Only
+the empty insertion source directly recovers the original target through
+this rule. A separate analytic bridge for any other source requires its
+own proof; it is not part of this executable certificate family.
+
+Pilot ceilings:16GiB aggregate memory,600seconds per module,100million
+search-work proxy operations. This small symbolic phase runs in one process;
+independent implementation and analytical review are substantial parallel
+Sol6.1 tasks. No anticipated scientific output is asserted in the runner.
+Synthetic tests alone may assert known calibration answers. This phase
+must never set low_core_bound_proved,complete_target_bound_proved orRH_proved.

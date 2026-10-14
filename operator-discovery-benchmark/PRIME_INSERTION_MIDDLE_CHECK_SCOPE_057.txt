@@ -1,0 +1,147 @@
+INDEPENDENT 057 FINITE SOURCE AND CONDITIONAL TRANSPORT ADMISSION
+
+This checker creates new finite source-specific enclosures. It reads no saved
+source arrays, previous candidate values, archived VerifiedSource objects or
+Boolean verification flags as arithmetic authority. It imports only the frozen
+052 charge-only Meter, canonical rational parser and exact typed comparison.
+It does not import the 057 producer. The synthetic tests import that producer
+solely to construct fixtures, and count that work separately.
+
+The public interfaces are prepare_context(meter=None),
+verify_middle_interval(request,{lower,upper},meter=None,context=None), and
+verify_parent_recovery(request,certificate,meter=None). verify_recovery aliases
+the last interface. A context is a live checker-created object with private
+functional caches. Persisted dictionaries and user-supplied source tables are
+not contexts and cannot establish arithmetic authority.
+
+FINITE OBJECT AND COMPLETE SOURCE
+
+For integer N>=2, R the product of distinct checked primes, and 0<alpha<1,
+the source is the ordinary unrounded kernel E_R K(n)=K(R*n). It is not the
+masked Boolean difference D_S K(n). For every n>=2,
+
+ K(R*n) = I_alpha^(-1) integral_0^infinity
+              product_(p|R*n)(1-p^(-t)) t^(-alpha-1) dt.
+
+The q=2 polynomial [2,-3,1] has cumulative weights zero for n<=N,
+-2 for N<n<=2N, and +1 for 2N<n<=4N. The n=1 contribution is zero.
+The integral object admitted here is
+
+ J_band(N) = 1/Gamma(1-alpha) integral_a^b h(N,t)t^(-alpha-1)dt,
+ h(N,t) = sum_(N<n<=4N) w(n,N)
+                         product_(p|R*n)(1-p^(-t)).
+
+There is no extra alpha in this normalization: alpha*I_alpha=Gamma(1-alpha).
+The source compiler trial-factors each n, unions its radical with the registered
+primes, then expands every subset of that full radical with its signed Mobius
+coefficient. Repeated powers are retained through radical invariance and shared
+registered primes are unioned once; sharing a prime does not delete n. This
+differs from the producer's p-free cofactor/sieve compiler and matches it by
+the exact finite identity
+
+ h(N,t)=product_(p|R)(1-p^(-t))
+    sum_(d<=4N,gcd(d,R)=1) mu(d) W(N/d)d^(-t),
+ W(y)=floor(4y)-3floor(2y)+2floor(y).
+
+All equal exponential arguments are merged before integration. The exact
+coefficient sum and the d=1 coefficient must both be zero. Every original
+product has at least |S| simple zeros at t=0; even for empty S it has at least
+one, because n>=2. Therefore derivatives of orders below max(1,|S|) vanish
+exactly, independently of cancellation-prone numerical evaluation.
+
+MOVING BAND AND INDEPENDENT NUMERICS
+
+epsilon=min(1/2,N^(-gamma)), gamma a positive canonical rational, is decided
+exactly at the half boundary: N^(gamma numerator)<=2^(gamma denominator).
+Affine fractions 0<=l<=u<=1 define
+ a=epsilon+(1/2-epsilon)*l and b=epsilon+(1/2-epsilon)*u.
+An exact half cutoff or l=u has zero band and needs no source reconstruction.
+Otherwise a,b>0, so this is a finite nonsingular integral.
+
+For each exponential argument lambda=log(d), the checker uses
+
+ exp(-lambda*t)=sum_(k=0)^M (-lambda*t)^k/k! + remainder,
+ |remainder|<=(lambda*t)^(M+1)/(M+1)!, t>=0.
+
+This bound follows from the Taylor Lagrange remainder, since the absolute
+derivative of exp(-x) on x>=0 is at most 1. Exact signed source moments are
+computed as Arb enclosures after retaining all source coefficients; the
+remainder sums absolute coefficients only after the signed polynomial has
+been evaluated. Its integrated absolute enclosure is
+
+ [sum_d |c_d| log(d)^(M+1)]/(M+1)!
+       * (b^(M+1-alpha)-a^(M+1-alpha))/(M+1-alpha).
+
+Every polynomial term integrates by
+ integral_a^b t^(k-alpha-1)dt=(b^(k-alpha)-a^(k-alpha))/(k-alpha),
+where k>=1 and alpha<1. The implementation uses an expm1 form to avoid a
+near-zero denominator/near-equal-powers loss. Both the signed polynomial and
+the absolute remainder are multiplied by the positive rgamma(1-alpha).
+
+Initial replay uses 256-bit Arb and degree 128, with outward 160-bit dyadic
+conversion. If its full interval is not contained in the supplied interval,
+one 384-bit/degree-160 replay is permitted. Failure after that is a failure
+to admit the interval at these resource limits, not an arithmetic refutation.
+The producer uses upper incomplete gamma and an outward 80-bit output grid;
+the checker does not reuse that integration routine. Exact rational outward
+endpoints are authoritative, not rounded decimal display radii.
+
+Private caches keyed by the full mathematical arguments share factorization,
+source coefficients, log atoms and signed Taylor moments. In particular
+moments do not depend on alpha, gamma or the affine band fractions. Precision
+and Taylor degree are part of their cache keys. Fresh source-specific work,
+including overlap with earlier source primitives if any, is charged here.
+
+CONDITIONAL NEIGHBORING-PARENT RECOVERY
+
+Each feature must have a nonempty registered prime set of size k. The complete
+positive-product envelope gives |h(N,t)|<=4*N*R*t^k for 0<t<=1. The bound
+1/Gamma(1-alpha)<=3 follows from Gamma(s)>=integral_0^1 exp(-t)dt>1/3 for
+0<s<1. Integrating the envelope over 0..1, hence over every admitted band,
+gives |J_i(N)|<=b_i*N, b_i=12*R_i/(k_i-alpha).
+
+For a fixed integer vector a and rational lambda>=0,
+ F(N)=[J_0(N)^2+lambda*(sum_i a_i J_i(N))^2]/N
+is nonnegative and dominates the literal feature-0 energy. The certificate
+replays the complete exact matrix, including doubled signed off-diagonal
+terms. The source-free base B=5*(b_0^2+lambda*(sum|a_i|b_i)^2) pays EVERY
+integer seed N=2,3,4,5. No finite fitted values are used to reduce this base.
+
+The recurrence leaf remains OPEN:
+ F(2N+r)<=sum_(s=-1,0,1) w_s F(N+s)+C/N^delta,
+for every integer N>=3 and BOTH r=0,1; fixed nonnegative weights sum to one.
+All three offset domains and both children are retained even when some
+weights are zero. If this uniform leaf is supplied, convexity reduces it
+to the largest previous envelope. With child M=2N+r and shifted index M-2,
+the largest parent obeys
+ (N+1)-2=N-1<=floor((M-2)/2).
+Thus five seeds, not two, are necessary, and the relevant halving index is
+M-2, not M. Each path is finite and the positive forcing can be bounded by
+the dyadic ancestor sum. For delta>0 it is at most
+ C/(2^delta-1)<=2*C/delta, using log(2)>=1/2 and exp(x)-1>=x.
+This yields F(M)<=B+2*C/delta for every M>=2.
+
+For delta=0, seeds2..5 have F<=B. Every subsequent child can add at most one
+C and at most max(0,floor(log2(M-2))-1) such additions are needed. Hence
+ F(M)<=B+C*max(0,floor(log2(M-2))-1).
+The certificate records logarithm base2, argument shift2 and base maximum5.
+It licenses only this conditional implication: no finite recurrence samples
+discharge the all-integer leaf, and no dependency makes it already PROVED.
+
+LIMITS AND CLAIMS
+
+Request capacities: N<=32768, <=8 distinct actual primes, prime product<=1m,
+canonical rational inputs<=4096bits, exact cutoff powered comparison<=400kbits,
+at most2m generated radical-subset terms per source. Private live contexts<=16;
+their aggregate prospective cache capacity is4GiB. Endpoint rationals<=16384bits,
+conditional rational intermediate results<=32768bits. Runtime and work caps
+are enforced through charge-only metering; the default finite verifier is
+200bn operations/7200seconds. These are explicit admission capacities, not
+mathematical denominator restrictions. No module-level process limits affect
+other owners' suites. A caller may impose additional process memory limits.
+
+The admitted finite output is one source-specific integral enclosure. Conditional
+recovery targets the literal feature0 middle band, not original K, the full
+original signed source, or all unpaid end regions. Uniform recurrence, uniform
+middle bound, RH and RH refutation flags remain false. The analytic rule replay
+is independently reviewed mathematics, not a proof-assistant formalization.

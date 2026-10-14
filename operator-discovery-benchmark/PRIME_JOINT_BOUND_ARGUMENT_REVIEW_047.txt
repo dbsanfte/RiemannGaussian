@@ -1,0 +1,283 @@
+PRIME JOINT BOUND ARGUMENT REVIEW 047
+Reusable conditional potential/recurrence proof production
+
+1. What has been proved, and what has not
+
+The new executable argument grammar searches a FULL signed-state potential
+and an all-integer recurrence. Its mechanically checked conclusion is:
+if the stated complete base and uniform recurrence are proved for the
+actual rounded source, then the whole forcing has the target logarithmic
+bound. Rational coercivity, source split, level arithmetic and induction
+are PAID universal algebra. The actual BASE and RECURRENCE leaves remain
+OPEN. A finite successful recurrence experiment, fitted rational C, or
+holdout cannot pay those leaves. No uniform arithmetic bound or RH result
+has been obtained by this review.
+
+This production is different from merely optimizing a coefficient in h:
+it enumerates a joint signed storage functional and a proof implication.
+It can propose a genuine stronger arithmetic lemma. Nevertheless, storage
+alone is reversible conditioning: a smaller constant or slope in a finite
+potential is not a new all-scale cancellation theorem. The main next leaf
+is a signed transport-work inequality, with predictable source transport,
+complete innovation and both parities. Its forcing is neither assumed
+small nor estimated from a numerical constant.
+
+2. Exact source binding and prime split without division
+
+Fix the actual ordinary Mobius source, a prime p, the full bare drift AST
+with fixed rational a>0, 0<theta<1, positive distinct rates r_j and signed
+weights w_j summing to one. Let
+  beta_N=ceil(a L(N)^theta)/L(N), L(N)=1+floor(log_2 N),
+  U_N(n)=sum_j w_j floor_dyadic(n^(-r_j beta_N)),
+with each exponential separately rounded at 4 ceil(log_2 N) bits. Let
+V=U_(pN), recomputed with the actual child level and precision. Every
+recipe payload, rounding policy and prime is bound in the argument.
+
+Using f_n(x)=floor(1/x)/n-floor(1/(nx)) on (0,1], zero elsewhere, put
+  e_N=chi+sum_(n=2)^N mu(n)U_N(n)f_n,
+  h_N=e_(pN)+D_p e_N, D_p f(x)=f(px).
+The direct conversion auxiliary is
+  A_N=D_p[(1-V(p))chi
+             +sum_(n=2)^N mu(n)(U_N(n)-V(pn))f_n].                 (1)
+Define H_N=h_N-A_N. Then, equivalently,
+  H_N=e_(pN)+D_p[V(p)chi+sum_(n=2)^N mu(n)V(pn)f_n],
+  H_N+A_N=h_N                                                        (2)
+for every integer N, with all prime powers and units present. This is
+universal finite algebra; it needs no nonzero lambda or quotient. If
+V(p)=0, (1)-(2) remain defined and exact. There is no assumption that the
+profile at p is independent of N, or that child beta equals parent beta.
+An independently computed finite source implementation still needs its
+own replay; it cannot establish a uniform bound by verifying (2) once.
+
+The source split is therefore a PAID definition/identity, not an unpaid
+arithmetic estimate. The original full h is retained. Bounding only H,
+only A or a quotient-normalized H does not supply the requested bound.
+Because h is unchanged, the reviewed 046 bare-source global rate barrier
+continues to apply when theta>1/2. Prime matching does not evade it by
+renaming or conditioning the state.
+
+3. Complete spatial energy and the truncated divisor tail
+
+All basis breakpoints, including those of D_p, become integer points
+under y=1/x. The whole state is constant almost everywhere on [k,k+1).
+Consequently, with z_N(k)=(H_N(1/k),A_N(1/k)), the exact complete energy is
+  P_N=sum_(k>=1) z_N(k)^T Q z_N(k)/(k(k+1)).                       (3)
+It includes every k, not merely k<=N or k<=pN. Endpoint choices have no
+effect on the integral. The displayed sum is exactly the L^2(dx)
+potential; no fitted N normalization or change of source is hidden in it.
+
+For clarity the complete floor/divisor target can also be written
+explicitly. Define the finite harmonic scalar
+  S_N=sum_(n<=N) mu(n)U_N(n)/n, U_N(1)=1.
+Then for y>0
+  e_N(1/y)=1_(y>=1)+S_N floor(y)
+                         -sum_(n<=N) mu(n)U_N(n)floor(y/n).
+For k>=1 the target's exact increment is
+  h_N(1/k)-h_N(1/(k-1))
+   =1_(k=1)+1_(k=p)+S_(pN)+S_N 1_(p|k)
+       -sum_(n<=pN,n|k) mu(n)V(n)
+       -sum_(n<=N,pn|k) mu(n)U_N(n),                              (4)
+where the previous value at k=1 means the y<1 zero function. The harmonic
+and unit terms in (4) are indispensable. For k>pN the source remains
+truncated, but its eligible divisors still contribute. New k is not a
+new unrestricted source coefficient, and finite source support does not
+make this floor-energy tail zero.
+
+There is an unconditional, explicit tail certificate available. Write
+C_w=sum |w_j|. Since |U_N(n)|,|V(n)|<=C_w and |f_n|<=1,
+  |h_N|<=2+C_w(p+1)N,
+  |A_N|<=B_A=1+2 C_w N,
+  |H_N|<=B_H=3+C_w(p+3)N.
+For any PSD Q and any integer K>=0,
+  tail_(k>K) P_N
+    <=[|Q00|B_H^2+2|Q01|B_H B_A+|Q11|B_A^2]/(K+1).               (5)
+The last factor is the exact telescoping sum of 1/(k(k+1)). Thus a finite
+base proof can use an exact certified head plus (5), choosing K large
+enough to pay its actual budget. The cost before division is quadratic in
+N: (5) alone is not a uniform decaying logarithmic bound. Both base and
+recurrence proofs must include this tail or a stronger genuine signed
+tail certificate. In particular, k>N cannot be erased from an induction
+argument merely because coefficient generation was finite.
+
+4. Enumerated joint quadratic potentials and exact recovery
+
+Let l=(1,1)^T. A rational symmetric matrix Q is admissible if
+  Q-l l^T is PSD.                                                    (6)
+For two dimensions this is checked by its two nonnegative diagonal
+entries and nonnegative determinant, all in exact rational arithmetic.
+It follows pointwise and after integration that
+  ||h_N||^2<=P_N.                                                    (7)
+Q itself is PSD as a consequence. No statistical or source-sign premise
+is needed for recovery. An H-only Gram fails (6); the diagonal Gram I
+also fails, because it would silently drop 2HA. The Gram 2I is a valid
+but usually lossy majorant; its loss is explicit.
+
+A concrete generated family is
+  P_N=||h_N||^2+tau ||h_N-d A_N||^2, tau>=0,
+  Q=[[1+tau,1+tau(1-d)],
+     [1+tau(1-d),1+tau(1-d)^2]].                                    (8)
+The full signed cross is retained before the square. Its difference from
+l l^T is the exact rank-one PSD matrix tau(1,1-d)(1,1-d)^T. For tau>0 and
+d!=0, det Q=tau d^2>0, so the entire two-state potential is coercive.
+Tau=0 or d=0 is explicitly flagged as a target-only control. Such a
+control helps compare experiments but is not a new source mechanism.
+General rational majorants are also admitted; rational denominators and
+exponents are bounded by explicit algebra/bit resource guards rather
+than by a small handpicked analytic exponent list.
+
+5. Exact all-integer induction with noninteger logarithmic exponents
+
+Take M=2^(L0-1), L0>=2; positive rational target A_* and eta; fixed
+rational 0<=rho<1 and C>=0. The required arithmetic premises are
+  BASE: P_N<=A_*/L0^eta for EVERY N in [M,2M-1];
+  STEP: P_(2N+r)<=rho P_N+C/L(N)^eta
+                     for EVERY N>=M and BOTH r=0,1.                (9)
+They concern the full energy (3), including the infinite floor tail.
+The exact sufficient budget condition is
+  rho+C/A_* <= (L0/(L0+1))^eta.                                   (10)
+
+For every child, L(2N+r)=L(N)+1. Since (L/(L+1))^eta increases in L,
+(10) and the inductive parent bound imply
+  rho P_N+C/L^eta <= (rho A_*+C)/L^eta
+                  <= A_*/(L+1)^eta.
+Descending by floor(child/2) eventually reaches exactly the base interval
+[M,2M-1], so (9)-(10) prove
+  ||h_N||^2<=P_N<=A_*/L(N)^eta for EVERY integer N>=M.              (11)
+No continuum interpolation, even-only shortcut or unproved odd-child
+regularity is used. A recurrence proved only for N->2N would yield a
+chain theorem, not the advertised all-integer theorem. A few probes such
+as three base supports do not cover the complete base interval.
+
+For eta=u/v>0, (10) is decided with positive rationals by
+  (rho+C/A_*)^v <= (L0/(L0+1))^u.                                 (12)
+This avoids floating-point fractional powers. Exponentiation is charged
+and bit-preflighted before work. The condition is sufficient, not
+necessary: failure returns INVALID_ARGUMENT for this particular induction
+budget, without refuting the underlying arithmetic target or all other
+possible recurrences. Different supplied A_*, base scale or proof schema
+can be explored. Constants selected from finite data remain hypotheses
+in (9); exact arithmetic checking of (10) does not make (9) true.
+
+6. A constructive next arithmetic leaf: joint predictable transport work
+
+The strongest useful extension found here is a reusable proof composition
+that exposes signed covariance rather than separately bounding H and A.
+Generate a fixed rational two-by-two predictor B. If exact matrix algebra
+proves
+  B^T Q B <= rho Q,                                                  (13)
+put, at the same quotient index k,
+  xi_(N,r)(k)=z_(2N+r)(k)-B z_N(k).
+With the complete inner product from (3), the exact identity is
+  P_child-rho P_parent
+   =<z_parent,(B^T Q B-rho Q)z_parent>
+       +2<B z_parent,Q xi>+<xi,Q xi>.                              (14)
+Therefore the single source-specific signed-work lemma
+  2<B z_parent,Q xi>+<xi,Q xi> <= C/L(N)^eta                         (15)
+for all N, both parities and all spatial k implies STEP. The negative
+covariance in (15) can compensate the innovation energy. It is not legal
+to call the first term positive, to suppress it, or to assume its sign
+from a finite witness. Rational B is enumerable, (13) is an exact PSD
+test, and xi is the original full source difference including rounding,
+cutoff births, divisor truncation and the tail. This is a concrete next
+proof leaf for detector-generated source identities to attack.
+
+There is also a sufficient positive route with a quantified loss. If
+B^T Q B<=sigma Q and choose delta>0 with (1+delta)sigma<=rho, Young's
+inequality gives
+  P_child<=rho P_parent+(1+1/delta)||xi||_Q^2.
+Thus a genuine uniform innovation bound
+  ||xi||_Q^2<=C delta/(1+delta) L(N)^(-eta)
+would prove STEP. This route loses negative signed work and is generally
+stronger than (15), but is a valid proof schema with a distinct full
+source-difference leaf. No such innovation bound is proved here. B=0
+turns (15) into P_child<=C/L^eta and is explicitly an endpoint restatement.
+Calling it a predictor would not add an arithmetic mechanism.
+
+The current root pilot enumerates storage, not predictors; (13)-(15) are
+an analytically proved proposed next production, NOT implemented predictor
+search or an asserted source estimate. The executable certificate exposes
+the identity and its open leaf so unresolved signed work can feed future
+structural generation. A future all-scale proof admission must replay an
+actual source-bound lemma or exact recurrence proof, not a paid boolean.
+
+7. Counterexamples and proof-route gates
+
+Universal linear algebra cannot supply the required source correlation.
+For arbitrary Hilbert states let A_N=0 and H_N=v for a fixed nonzero v.
+Then the completed-square storage is positive and constant, while a
+decaying bound is false and a recurrence with rho<1, logarithmically
+decaying forcing fails eventually. Even a positive quadratic majorant
+and fixed source identity do not create a contraction. Taking unrelated
+states at different N similarly defeats a predictor innovation estimate.
+These examples refute an algebra-only proof route, not this actual source.
+
+For the ACTUAL bare source and theta>1/2, the 046 reviewed theorem gives
+eventual ||h_N||^2>=c beta_N. Since every admissible Q retains (7), an
+argument claiming eta>1-theta is analytically refuted. Zero forcing C=0
+with rho<1 is also refuted in this scope: (9) along a fixed dyadic chain
+would give P_N<=rho^j times a finite base, faster than every logarithmic
+power, contradicting the same lower bound. The executable rule therefore
+returns REFUTED_ARGUMENT for those cases after validating the algebra.
+For C=0 alone at eta<=1-theta, only the recurrence/storage argument is
+refuted; target_status remains OPEN. A slower logarithmic target bound
+does not require this impossible geometric recurrence. Only eta>1-theta
+licenses refuting the advertised target rate itself.
+This is a bound rejection, not a new RH assertion or a rejection of all
+prime auxiliaries. For theta<=1/2, the 046 finite-tail rule supplies no
+such gate; their arithmetic leaves remain OPEN.
+
+There is no hidden workaround through tau,d or smaller apparent lambda.
+The prime auxiliary changes the joint potential while (2) keeps h fixed.
+The profile ceiling and separate rounding remain in its actual source at
+every scale. Fixed-parameter primitive comparisons and finite cancellation
+ratios cannot establish a uniform bound on (15), including tail sectors.
+
+8. Executable API, statuses, scope and verification
+
+New file: floor_residual_prime_argument_047.py.
+APIs:
+  evaluate_argument(request,meter=None)
+  verify_argument(request,certificate,meter=None)
+  completed_square_gram(tau,d,meter=None)
+  enumerate_potentials(tau_values,d_values,meter=None)
+  Meter.operations
+
+Exact request fields are source_recipe, rounding, prime,
+original_forcing_b='-1', target={A,eta}, and argument={state,gram,recurrence,
+base}. State is prime_split_H_A; recurrence binds rho,C,
+forcing='L_parent^-eta', parities=[0,1]; base binds minimum M, a power of
+two. All rationals use canonical exact strings. The recipe contains the
+complete bare drift AST and auxiliary=null. Unknown proof flags, changed
+rounding, composite dilation, nonunit profiles, wrong forcing or missing
+parities are UNSUPPORTED. Resource failures propagate.
+
+OPEN means the algebraic implication is paid but at least BASE/RECURRENCE
+is unpaid. INVALID_ARGUMENT identifies failure of the chosen majorant or
+induction budget; it does not analytically refute the target. The scoped
+046 cases are REFUTED_ARGUMENT. No supported return claims that an actual
+uniform bound is proved. SOURCE_SPLIT is PAID_UNIVERSAL_ALGEBRA by the
+direct definition (1)-(2), while finite compiler replay remains separate.
+
+verify_argument strictly rebuilds the exact request-bound output and
+rejects any changed dependency, interval, matrix or proof flag. This is
+producer replay, explicitly not an independent arithmetic verifier or
+proof-assistant formalization. Root independently checks source and matrix
+rules and the finite numerical implementation. Verification of a numerical
+source vector must not be conflated with verifying the global recurrence.
+
+The sole owned focused development suite passed 12/12 tests in 0.009
+seconds, charging 3,786 exact-algebra proxy operations. Receipt:
+floor_residual_prime_argument_047_development_receipt.json. Tests cover
+signed completed squares, target-dropping and diagonal-matrix failures,
+exact induction equality and overrun, rational exponents, both parities,
+whole base interval, paid-flag/tail tampering, signed predictor work,
+telescoping tail, source/rounding strictness, 046 preservation and resource
+failures. The toy tests generated no actual source arrays, zeta values or
+norm observations and applied no scientific candidate. Test scaffolding
+is bounded and is not claimed as instruction-level metering. There were
+no failed suite attempts or repeated unchanged suites.
+
+All owned new source/test edits are stopped. No old/frozen files or saved
+observations were modified. This memo finalizes the current universal
+rules and identifies the exact next unpaid arithmetic frontier (15),
+without pretending the root's impending finite ranking pays it.

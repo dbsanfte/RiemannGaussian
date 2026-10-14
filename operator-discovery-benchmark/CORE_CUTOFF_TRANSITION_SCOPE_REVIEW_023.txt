@@ -1,0 +1,478 @@
+CORE CUTOFF TRANSITION SCOPE REVIEW 023
+Independent mathematical audit; 2026-10-10
+Only this new review is written. No source observations, numerical runs,
+tests, hashes, or edits to frozen studies.
+
+1. Findings that should change the next search
+
+The current global low-height leaf is mathematically sufficient, but is a
+substantial arithmetic assertion. Its fixed-height portion already implies
+a uniform power-saving Mertens estimate and a fixed zero-free half-plane.
+It should not be presented as a routine finite-polynomial calibration.
+
+There are two useful executable alternatives. First, generate finite inverse
+heads for every residual degree, center those finite heads completely, and
+pay their storage by a bounded-prefix rule. This uses actual mu*One=delta
+and is a genuine reusable arithmetic construction. Second, search localized
+physical storage or cutoff-transition bounds at the SAME physical horizon,
+rather than automatically requiring an all-x global Mellin norm. A global
+recurrence which closes the current leaf inherits its strong arithmetic
+consequences; changing its notation does not weaken the goal.
+
+None of these observations closes the tail, the complete signed core, or RH.
+The existing low leaf remains a valid optional sufficient route. The new
+languages should retain its history instead of silently replacing an open
+goal by a weaker claim with the same certificate name.
+
+2. Current authoritative target and quantifiers
+
+From CORE_WEIGHTED_HEIGHT_SEARCH_HANDOFF.txt, put
+
+ A_U(s)=sum_(n<=U)mu(n)n^(-s), c_U=A_U(1), T_U=c_U-A_U,
+ E_U(s)=1+zeta(s)T_U(s), theta=2/3, u=1/3,
+ F_U(s)=zeta(s+u)A_U(s)^2 E_U(s)^3,
+ sigma=9/20, H_U=2U^(45/2).
+
+The exact missing assertion is
+
+ I_U=(1/(2pi)) integral_(|t|<H_U)|F_U(sigma+it)/(sigma+it)|^2 dt
+       <=C U^(12/5), EVERY integer U>=1, one fixed finite C.       (2.1)
+
+The reviewed high rule gives the complementary norm <=C_high U^(-1/16).
+The full expression E_U is holomorphic across 1 because T_U(1)=0. Its
+analytic residue M_U=A_U(theta)^2 E_U(theta)^3 is used in complete centering.
+Ordinary coefficient-moment convergence for E^3 has not been proved and is
+not needed by the analytic-residue route. No conversion between these two
+types is allowed merely because both have the same formal value.
+
+The physical source uses U=floor((4X-1)^(1/24)) on dyadic X, with the SAME
+N=4X-1 and the SAME cutoff coefficients for parent and child storage. This
+is a prescribed lacunary sequence of cutoffs. Assertion (2.1) deliberately
+asks for all integers U, a stronger quantifier. The implications below use
+that quantifier; samples or bounds only on that lacunary sequence do not
+automatically extend to all U.
+
+3. Fixed-height coercivity: the low leaf implies a Mobius L10 bound
+
+Choose a fixed small t0<=1 such that both zeta(sigma+it) and
+zeta(sigma+u+it) have positive modulus lower bounds on |t|<=t0. This is
+possible without a zero-free region: zeta(a)<0 for real 0<a<1 by its
+alternating eta representation, and continuity supplies the small interval.
+The fixed lines are sigma=9/20 and sigma+u=47/60. On this compact set zeta
+also has a finite upper bound. The inherited |c_U|<=2 is uniform in U.
+
+Since E_U=1+zeta(s)c_U-zeta(s)A_U, there is a fixed threshold B such that
+|E_U(s)|>=C_0|A_U(s)| whenever |A_U(s)|>=B. The shifted zeta lower bound
+and the fixed upper bound on |s| then give, for ALL complex A_U values,
+
+ |A_U(sigma+it)|^10 <=C_1[1+|F_U(sigma+it)/(sigma+it)|^2].
+
+Thus (2.1), just on this fixed compact interval, implies
+
+ integral_(-t0)^(t0)|A_U(sigma+it)|^10 dt <=C_2 U^(12/5).       (3.1)
+
+The large H_U is not the sole source of difficulty. Even the fixed-height
+head with exponent 12/5 already asks for strong actual Mobius cancellation.
+Generic harmonic cancellation alone cannot provide it, as review021 shows.
+
+4. From local vertical L10 to the actual weighted Mobius prefix
+
+A pointwise conclusion cannot be obtained by treating an arbitrary L10
+function as sampleable. The following finite-polynomial reproduction proof
+supplies the missing step, with an arbitrarily small U exponent loss.
+
+Let P_U(t)=sum_(n<=U)a_n n^(-sigma-it), |a_n|<=1. Assume its L10 norm on
+[-t0,t0] has tenth power O(U^beta), uniformly U. Fix delta>0 and set
+T=U^delta log(2U). For a fixed integer L>=0 use the Fourier multiplier
+
+ psi_(L,T)(w)=exp[-w^2/(4T^2)] sum_(k=0)^L [w^2/(4T^2)]^k/k!.
+
+Its inverse Fourier kernel K_(L,T)(t) is a Gaussian times a fixed polynomial:
+with K_T(t)=T/sqrt(pi)*exp(-T^2 t^2), it equals
+
+ sum_(k=0)^L (-1)^k/(4^k T^(2k) k!) * derivative_t^(2k) K_T(t).
+
+Consequently ||K_(L,T)||_(10/9)=C_L T^(1/10), and the integral of its
+absolute value outside any fixed t0 is bounded by a polynomial in T times
+exp(-c t0^2 T^2). Also, for 0<=w<=log U,
+
+ |1-psi_(L,T)(w)|<=C_L (log U/T)^(2L+2).
+
+Expand the finite polynomial before integrating. Its reproduction error at
+zero is at most C_L U^(1-sigma-2delta(L+1)). Choose the fixed L large
+enough that this exponent is negative. The outside-interval integral costs
+at most U^(1-sigma) times the exponentially small kernel tail. On the inside,
+Holder gives
+
+ |P_U(0)|<=C_L T^(1/10)
+                [integral_(-t0)^(t0)|P_U(t)|^10dt]^(1/10)+O(1).
+
+Given ANY epsilon>0, choose delta sufficiently small, then L sufficiently
+large, and absorb log(2U)^(1/10) into the remaining epsilon. The constants
+may depend on epsilon,t0,sigma,L but not U. Therefore
+
+ |P_U(0)|=O_epsilon(U^(beta/10+epsilon)).                       (4.1)
+
+This is an elementary finite Gaussian argument, not a new zeta moment
+import. It uses |a_n|<=1 for the reproduction error and remote tail, and a
+genuine neighborhood norm for the local term. It does not assert exact
+point sampling of an arbitrary Mellin L2 auxiliary.
+
+Apply (4.1) to (3.1), beta=12/5. We obtain the conditional implication
+
+ A_U(9/20)=O_epsilon(U^(6/25+epsilon)), EVERY U>=1.              (4.2)
+
+Partial summation, using the same actual mu at ALL cutoffs, gives exactly
+
+ Mertens(U)=U^sigma A_U(sigma)
+            -sigma integral_1^U A_t(sigma)t^(sigma-1)dt,
+
+and hence
+
+ Mertens(U)=O_epsilon(U^(69/100+epsilon)).                      (4.3)
+
+For every s with Re s>69/100, choose epsilon small enough that Abel tails
+of sum mu(n)n^(-s) converge locally uniformly. This holomorphic series equals
+1/zeta(s) on Re s>1. Analytic continuation of zeta(s) times that series is
+1 throughout the half-plane, with the usual removable product at its pole.
+Thus (2.1) implies that zeta has no zeros with Re s>69/100. This is an
+implication of a presently OPEN arithmetic hypothesis, not a newly proved
+zero-free region or an RH equivalence. It is a useful hardness diagnostic.
+
+For a GENERAL p,m version with compact coercivity degree 2(p+m), an all-U
+global leaf U^beta similarly implies a Mertens exponent
+sigma+beta/[2(p+m)]+epsilon. The detector can generate this scope annotation
+algebraically instead of mistaking the leaf for a low-cost calibration.
+
+5. Global centering can overpay the physical target
+
+The reviewed Gaussian Mellin bridge identifies F_U(s)/s with the transform
+of the COMPLETE centered staircase
+
+ C_U(x)=P_U(x)-(M_U/theta)x^theta, ALL x>0,
+ P_U(x)=sum_(n<=x)(K*A^2*E^3)(n).
+
+For 0<x<1, this is -(M_U/theta)x^theta. The global norm therefore includes
+|M_U|^2/[2theta^2(theta-sigma)] from an artificial below-unit centering tail.
+It is mathematically required by that Mellin identity, but physical storage
+on distant blocks does not need to pay it at the same U exponent. The old
+integer/history error uses the weaker residue estimate
+|M_U|^2<=C U^(10/3), then divides its storage by X; that is already paid.
+
+If one instead defines the centered function to vanish below 1, its transform
+is F_U(s)/s-M_U/[theta(s-theta)]. That subtraction is legitimate only with
+this CHANGED physical definition, all compensations explicitly restored.
+It is not a second residue subtraction from the original global bridge.
+It removes one unnecessary global cost, but does not itself establish a
+localized bound or erase compact-height arithmetic difficulty.
+
+More generally the global norm integrates all x, including prefixes near
+the finite cutoff and far beyond the actual finite source horizon N. The
+source needs storage near X about U^24, plus exactly its channel histories.
+A global bound is sufficient and convenient; it need not be necessary.
+Generic global sharpness from review021 is not a lower bound for that
+prescribed physical block, projected channels, or the joined signed core.
+
+6. A precise physical localization language
+
+Put G_U(t)=F_U(sigma+it)/(sigma+it) and
+f_U(y)=exp(-sigma*y)C_U(exp y), interpreted by the reviewed L2 Mellin limit.
+Then f_U(y)=(1/(2pi))integral G_U(t)exp(ity)dt. A continuous block storage is
+
+ X^(-2) integral_X^(2X)|C_U(x)|^2dx
+ =X^(2sigma-1) integral_0^(log2)
+       exp[(2sigma+1)v]|f_U(log X+v)|^2dv.                    (6.1)
+
+Its Mellin expression is a DOUBLE Hermitian form in G_U(t),G_U(w), with
+kernel
+
+ exp[i(t-w)log X] integral_0^(log2)exp[(2sigma+1)v]exp[i(t-w)v]dv.
+
+This is positive as a whole, retains all off-diagonal heights and source
+phases, and is different from the diagonal global integral integral|G|^2.
+Use Gaussian regulators or L2 operator limits for the double expression;
+do not assume absolute double-integral convergence merely from G in L2.
+Dropping its off-diagonal terms is not a localization theorem.
+
+The actual finite channel/cell operator can be compiled more concretely.
+For each integer n>=1 its averaged prefix kernel is
+
+ Q_n(t)=integral_n^(n+1)x^(sigma+it)dx
+       =[(n+1)^(sigma+1+it)-n^(sigma+1+it)]/(sigma+1+it).
+
+Each complete-history polynomial channel is an EXACT finite linear map on
+q_n=(1/(2pi))integral G_U(t)Q_n(t)dt, using every n up to the horizon and
+q_0=0. Compose the map with the saved cell means and parent/child storage.
+The resulting finite-rank positive kernel is a sum of products of these
+linear kernels. The separate analytic-residue averaging error is paid by
+the reviewed rule. This construction avoids unsupported L2 sampling and
+keeps all earlier prefixes, units and low/high block crosses. It also gives
+an honest executable object on which arithmetic signs can be searched.
+
+The localized kernel must use the original complete signed coefficients,
+both parent and child with the same N and cutoffs. A local restart at X,
+discarded history, or a Gaussian height diagonal substituted for this
+physical quadratic form changes the problem. A finite calibration of the
+kernel is evidence for a conjectured all-scale rule, not its proof.
+
+7. A reusable actual inverse-head construction is provably paid
+
+For all integers 1<=n<=U, actual mu*One=delta implies
+
+ (A^p*E^m)(n)=c_U^m d_(m-p)(n) if m>=p,
+               c_U^m mu^(p-m)(n) if m<p.
+
+Powers mean Dirichlet convolution, with zero power delta. Let h_head be
+this EXACT coefficient array truncated to n<=U, and h_tail=A^p*E^m-h_head.
+Then h_tail(n)=0 for n<=U. This is a finite-support identity, not a claim
+that the whole global function equals the infinite divisor function.
+
+Here is a general paid rule for ANY finite h with finite absolute mass L.
+For u=1-theta in (0,1), integral comparison gives the exact safe bound
+
+ |sum_(k<=y)k^(-u)-y^theta/theta|<=1/theta, EVERY y>0.          (7.1)
+
+For y<1 the sum is zero and the displayed bound still holds. Consequently
+the completely centered K*h prefix equals
+
+ sum_d h(d)[sum_(k<=x/d)k^(-u)-(x/d)^theta/theta],
+
+and is bounded in absolute value by L/theta for EVERY x>0, including ALL
+d>x. The analytic moment is the ordinary finite sum M_h=sum_d h(d)d^(-theta).
+No divisor or small-prefix term is omitted.
+
+For a channel polynomial p(t)=sum c_l t^l, let P0=sum|c_l|, P1=sum l|c_l|,
+eta>=0. Complete discrete Abel summation and
+sum_(k<n)1/k / log(2n)<=2 give the uniform channel bound
+
+ |channel_n|<=2^ceil(eta)(P0+2P1)L/theta.
+
+Thus its block/projected energy is O(L^2/X), with fixed explicit safe channel
+constants and unchanged history. The finite inverse heads above have
+L<=C U(1+log U)^(r-1) for fixed r=|m-p|>=1, using |c|<=2 and the elementary
+divisor mass bound; absolute mu^r coefficients are bounded by d_r. For r=0
+the head is c^m delta and its mass is bounded independently of U.
+At alpha=1/24, every fixed-degree head therefore has storage
+O(U^2 polylog(U)/X), strictly paid since 2alpha-1=-11/12. This covers all
+current residual degrees, rather than an analyst-nominated E^3 head alone.
+
+For p2,m3 specifically, h_head=c^3 One*1_(n<=U), L<=8U, and its ALL-prefix
+bound is <=12U. Its finite residue is M_head=c^3 sum_(d<=U)d^(-theta).
+The exact decomposition is
+
+ centered(K*A^2*E^3)
+   =centered(K*h_head)+centered(K*h_tail).
+
+When subtracting the newly paid centered head from a source residual, its
+opposite (M_head/theta)J_theta drift must remain in the exact signed join.
+The original scalar +18, same cutoffs and all 144 recovery bindings still
+apply. A publication needs to compile/check that bookkeeping before calling
+it a new payment; this review does not modify the existing publication.
+
+The tail support gap is useful arithmetic information, but its ANALYTIC
+centering again contributes -(M_tail/theta)x^theta below U. Therefore a
+support gap alone does not bound the low Gram or avoid all residue costs.
+Subtracting an INFINITE c^3 One instead of the finite head introduces a new
+pole at 1 and a different tail; complete finite restoration is compulsory.
+
+There is a stronger unconditional global low-norm bound for these heads.
+Let D_theta(y) be the bracket in (7.1). Direct integration gives
+
+ ||D_theta||_(x^(-2sigma-1)dx)^2 <= B_(sigma,theta)
+ :=(1/(2theta^2))[1/(theta-sigma)+1/sigma], 0<sigma<theta.
+
+The below-unit part is integrated exactly; the above-unit part uses (7.1).
+For any finite h, scaling y=x/d and Minkowski imply
+
+ ||centered(K*h)||^2 <=B_(sigma,theta)[sum_d |h(d)|d^(-sigma)]^2.    (7.2)
+
+The finite-head Gaussian Mellin identity identifies this complete norm with
+integral_R |zeta(s+u)h(s)/s|^2dt/(2pi). No twisted theorem or ordinary
+infinite coefficient moment is needed; h has finite support. For h=c^a d_l
+restricted to n<=U, l>=1, elementary divisor mass and partial summation give
+
+ sum_(n<=U)|h(n)|n^(-sigma)
+ <=[2^a/(1-sigma)] U^(1-sigma)(1+log U)^(l-1).
+
+For mu^l the same absolute divisor envelope applies; for l=0 the mass is
+just <=2^a. At sigma9/20,theta2/3, the safe B is exactly 100/13. Hence a
+general primitive head has complete global AND low-window norm bounded by
+
+ [100/13]*4^a/(1-sigma)^2 *U^(11/10)(1+log U)^(2l-2),             (7.3)
+
+with a constant bound in the delta case. For the specific c^3 One head the
+safe rational coefficient is 2560000/1573. Exponent 11/10 and any fixed log
+loss are strictly harmless relative to the desired 12/5. This rule is
+robust at every integer cutoff, including the unit and all below-support x.
+
+The difference of two such finite heads at U<=U'<=dU is bounded in complete
+norm by twice the sum of their squared norms, so its entire moving-window
+shell is paid with the same 11/10 exponent and fixed logs. This pays ONLY
+finite-head corrections, not the raw A^2 E^3 cutoff shell. It also proves
+that raw and head-corrected GLOBAL low targets with exponent12/5 are
+equivalent up to fixed constants: each is at most twice the other plus the
+paid head norm. Head subtraction changes the arithmetic representation,
+not the strength of that global goal or its Mertens consequence. A physical
+localized goal is the separate route which may be genuinely weaker.
+
+8. Exact cutoff transitions with all compensations
+
+Let U'>=U and define the actual shell polynomial
+D(s)=A_(U')(s)-A_U(s), delta_c=D(1), Q(s)=delta_c-D(s).
+Exactly
+
+ c_(U')=c_U+delta_c, T_(U')=T_U+Q, Q(1)=0,
+ E_(U')=E_U+zeta(s)Q(s).
+
+For p2,m3 the full component transition is
+
+ Delta h =sum_(0<=r<=2,0<=k<=3,(r,k)!=(0,0))
+   binom(2,r)binom(3,k) A_U^(2-r)D^r E_U^(3-k)(One*Q)^k.       (8.1)
+
+For arbitrary p,m use the same generated binomial formula. The corresponding
+F difference is zeta(s+u) times its Dirichlet function. Its residue difference
+is obtained by evaluating the SAME expression at theta, and the centered
+transition includes -(Delta M/theta)J_theta with unit 1. These identities are
+global identities of the specified COMPONENTS, not of a truncated full inverse
+word beyond its certified source horizon N.
+
+Although D has no coefficients at n<=U, Q has a unit coefficient delta_c.
+Thus One*Q starts immediately. For the actual p2,m3 head,
+Delta h(n)=(c_(U')^3-c_U^3)One(n), n<=U. A shell-only recurrence which sets
+this head to zero has dropped the compensation. The trivial shell bound
+|delta_c|<=sum_(U<n<=U')1/n is O(1) for U'/U bounded, not a negative U
+power. Any stronger shell cancellation must remain an explicit arithmetic
+premise; harmonic nullness Q(1)=0 alone does not provide it.
+
+The complete joined source is an exact identity on the common finite horizon
+n<=N. Different truncated inverse programs may discard different support
+terms beyond N. Their cutoff invariance cannot be promoted to a global
+Dirichlet-function identity without carrying those discarded terms. Other
+source modes/cutoffs, original drifts, transport -e, old paid pieces and
+correlations also have to change by their exact identities, not just (8.1).
+
+For a one-step compiler let q>=2, U=q-1, U'=q, x=mu(q), c=c_(q-1),
+Z(s)=q^(-s), L(s)=zeta(s)(q^(-1)-Z(s)). Then A'=A+xZ, E'=E+xL.
+The binomial transition (8.1) reduces, using x in {-1,0,1} and x^3=x, to
+x*J_odd+x^2*J_even. These are generated by grouping all odd and positive
+even powers of x, not by guessing a replacement polynomial.
+
+The finite-head difference is EXACTLY
+
+ H_q-H_(q-1)=c^3 delta_q
+       +x(3c^2/q+1/q^3)One_(<=q)+x^2(3c/q^2)One_(<=q).
+
+Thus the head-corrected tail transition requires
+
+ J0=-c^3 delta_q,
+ Jo=J_odd-(3c^2/q+1/q^3)One_(<=q),
+ Je=J_even-(3c/q^2)One_(<=q),
+ Delta h_tail=J0+x*Jo+x^2*Je.                                  (8.2)
+
+In particular J0 remains when mu(q)=0: the finite head boundary moved even
+though A and c did not. Omitting it falsely preserves the support-gap tail.
+Each finite-head atom in (8.2) has its own finite analytic residue; the
+corresponding J_theta compensator and opposite drift must be included.
+Formula (7.2) pays J0 at a squared-norm cost O(q^(-2sigma)); the odd head
+correction has the same order because its 1/q factor multiplies a weighted
+One head of size q^(1-sigma), while the even correction is smaller. Summing
+their norms over q<=U gives O(U^(1-sigma)), square O(U^(11/10)). This is
+another exact way to verify that head corrections are harmless. None of
+these estimates bounds J_odd,J_even of the raw unknown shell.
+
+For an arbitrary primitive c^a d_l head, the independent-of-x boundary atom
+is c^a d_l(q)delta_q; expand (c+x/q)^a-c^a on the NEW finite d_l head and
+reduce powers of x by x^3=x. A delta head (l=0) has no boundary atom for
+q>=2. The compiler must preserve this distinction instead of forcing a
+nonzero J0 for every primitive.
+
+9. Moving height boundaries and noncircular recurrence closure
+
+For the low norms H_U<H_(U'), an exact decomposition is
+
+ I_(U')=I_U
+  +(1/(2pi))integral_(H_U<=|t|<H_(U'))|F_U(s)/s|^2dt
+  +2 Re[(1/(2pi))integral_(|t|<H_(U'))(F_U(s)/s)conj(Delta F(s)/s)dt]
+  +(1/(2pi))integral_(|t|<H_(U'))|Delta F(s)/s|^2dt.             (9.1)
+
+The OLD-F annulus is paid by its old high theorem, <=C U^(-1/16). This does
+not pay the CHILD-F annulus automatically: (9.1) retains Delta F and its
+cross over the WHOLE enlarged interval. Alternatively a child high provider
+can cover that annulus after verifying its own length premise, with fixed
+cutoff-ratio constants and any needed strict-margin adjustment. One cannot
+use a new-polynomial length premise at the old threshold without checking it.
+
+Suppose a NEW, independently proved uniform transition estimate gives
+the last norm in (9.1) <=D U^beta for all U<=U'<=2U, beta=12/5. Minkowski
+then gives a genuine telescoping recurrence for sqrt(I_U), with the old
+annulus cost included. It closes I_U=O(U^beta) from a finite base because
+sum of geometric U^(beta/2) increments is O(U^(beta/2)). This shell norm
+hypothesis remains OPEN; the identity (8.1) has not proved it.
+
+Equivalently a recurrence I_(2U)<=q I_U+D U^beta closes with a fixed constant
+only when q<2^beta. Equality gives a log U loss, and q>2^beta gives a larger
+exponent. For rational beta and q, the detector can check the comparison by
+exact integer powers. A recurrence only at U=2^k does not establish (2.1)
+for every integer; require uniformly controlled intermediate cutoffs or an
+explicit arbitrary-U halving induction. Its constants and base are fixed.
+
+If the shell estimate was obtained from ||Delta F||<=||F_(U')||+||F_U|| and
+the desired original target, this is circular. A proof graph must keep the
+shell signed-Gram bound as an open leaf and reject a cycle back through I.
+Global recurrence closure, even with exact shell algebra, still implies the
+Mertens consequence in section 4. It is not an easier goal by definition.
+
+For a PHYSICAL localized recurrence, keep X fixed while changing U, with a
+state domain such as 1<=U<=C X^(1/24), using the same physical operator,
+channel history, N and coefficients. A transition norm bound
+||Delta||_storage<=D U^b X^(-eta), b>0, eta>=b/24, telescopes geometrically
+to a bounded component; strict extra saving absorbs fixed log costs. For
+b=0, plain addition incurs log U unless a genuine contraction, orthogonality
+or signed correlation rule is proved. Base U=1 must be bounded uniformly
+in X. Comparing instead X(U) with X(2U) silently moves the observed physical
+block by a factor about 2^24 and requires an additional scale rule. Exact
+cutoff transitions alone do not supply self-similarity of Mobius weights.
+
+10. Suggested executable polynomial auxiliary/recurrence contract
+
+The grammar should generate bounded-degree polynomials in old A,T,E and new
+shell D,Q, with Q=D(1)delta-D; derive their head constraints by exact inverse
+algebra; and compile the full binomial transition, residue map, finite head
+subtraction, and either global or physical localized Hermitian kernel.
+No chosen shell amplitude, cutoff or asserted cancellation is an input.
+All relation rows and discarded support terms have exact scope labels.
+
+Identity nodes are PROVED by coefficient/algebra replay. A proposed signed
+Gram inequality, contraction coefficient, or shell power gain is CONDITIONAL
+until an all-U/all-X arithmetic rule proves it. The recurrence-closing node
+depends on its genuine base, shell inequality, moving-boundary cost and exact
+strict multiplier comparison. It cannot depend on its own desired bound.
+Analytic and ordinary moments remain separate; all compensation units and
+opposite drifts remain. Existing 144 source bindings are carried unchanged
+unless a separately checked exact new recovery actually pays an auxiliary.
+
+Finite actual arithmetic calibration may rank these generated constructions
+and record complete signed values. It must include both old and new windows,
+every j,k and ordered divisor pair, all history operators and residues. It
+cannot convert a fitted scale exponent into a uniform theorem or treat
+observed positive slack as a proof of a contraction at all cutoffs. A smaller
+local target may be worthwhile even when the global low leaf does not fit.
+The detector should report which grammar it actually searched, rather than
+claiming a general recurrence or arithmetic-bound synthesizer already exists.
+
+11. Provenance and final scope
+
+This review reads the current immutable handoff and the already reviewed
+weighted/Mellin rules020/018 and sharpness021. The alternating zeta identity
+used for local coercivity is primary NIST DLMF https://dlmf.nist.gov/25.2.E3.
+The usual Mobius reciprocal Dirichlet identity is recorded at
+https://dlmf.nist.gov/27.4; its continuation consequence was derived here by
+uniform Abel tails, not borrowed from an unproved critical-strip assertion.
+Only primary DLMF pages were consulted for these background identities.
+
+The finite Gaussian reproduction lemma, exact cutoff expansions, bounded
+finite-head prefix rule, recurrence conditions and kernel formulas are proved
+above. No new moment import or actual-source bound is assumed. The low Gram,
+the localized tail and the complete signed core remain OPEN. The useful new
+proved construction is the finite inverse head and its complete centered
+storage rule, pending an executable exact-recovery publication. Edits stopped.

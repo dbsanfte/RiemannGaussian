@@ -1,0 +1,250 @@
+CORE BOUND POLE-ORDER FEEDBACK, REVIEW 006
+
+Scope and status
+----------------
+Only this new memo is written. Inputs are the frozen core-bound synthesis
+protocol and source formulas, selection.json, the preceding _005 memo,
+and the archived coupling actual-zero proof. No arithmetic source run,
+new zero evaluation, test, hash or prior/frozen edit is performed.
+
+Main result: a surviving pole of order d at a critical-line point forces
+complete dyadic prefix energy to have log degree at least 2d-2. For this
+four-mode core, a critical zeta zero of multiplicity m with the one shifted
+nonvanishing condition below gives d=2m. Every generated real delay survives
+at the archived zero height. Log-Abel also preserves d, despite its log
+division. In particular log degrees below2 are impossible when m>=1.
+
+All13 selected uniform premises imply such forbidden transformed bounds.
+This is conditional on binding the archived critical-zero witness to
+zeta(rho+1/3)!=0. The archived coupling proof already certifies a simple
+critical zero in the stated disk; it does NOT itself certify this extra
+shifted value. A separately checked shifted nonvanishing witness is needed
+before upgrading the application from conditional rejection to an actual
+analytic countercertificate. No RH assumption is used. The surviving
+log-degree2 boundary is not proved bounded by this argument.
+
+1. Complete core and the minimal witness
+---------------------------------------
+Use u=1/3,v=2/3,beta=9/2 and the fixed exact R_u. With F(x) the complete
+prefix, zero below1, its Dirichlet series is initially absolutely convergent
+for Re(s)>1 and equals
+ D(s)=zeta(s+u)*[beta/zeta(s)^2
+       -beta/(zeta(s)*zeta(s+v))-R_u/zeta(s+v)]-beta/zeta(s). (1.1)
+This is the same full four-state core as _005, including its unit. Main
+centering at the real pole2/3 has already been built into (1.1); it cannot
+remove a nonreal critical pole by a finite-head or real-pole subtraction.
+
+A sufficient minimal witness consists of:
+ (i) an actual zero rho=1/2+i*t, with 14<t<15;
+ (ii) its finite multiplicity m>=1, or simply a unique simple zero;
+ (iii) zeta(rho+u)!=0, certified on a disk containing that actual rho.
+No certification that it is globally the first zero is needed. Also
+zeta(rho+v)!=0 automatically, since its real part is7/6>1 and the
+absolutely convergent Euler product is nonzero there.
+
+Write zeta(s)=c_m*(s-rho)^m+O((s-rho)^(m+1)), c_m!=0. Then
+ D(s)=A*(s-rho)^(-2m)+O((s-rho)^(-2m+1)),
+ A=beta*zeta(rho+u)/c_m^2 !=0.                              (1.2)
+The terms with one reciprocal zeta have order at most m, and the term
+with only zeta(s+v) is analytic locally. They cannot cancel this leading
+term. Thus the exact order is d=2m, with every signed complement retained.
+
+The archived coupling_proof.txt section7 records a Rouche certificate in
+the disk centered at1/2+14.13472514173469379046*i, radius1/10000. Its
+independent Cauchy audit proves exactly one simple zero; symmetry under
+s ->1-conjugate(s) puts it on the critical line. Relevant saved evidence
+is coupling-results/coupling_analytic_probe.json and
+coupling-results/coupling_analytic_verification.json. That establishes
+(i),(ii), but its separate nonzero A from the coupling construction is
+NOT zeta(rho+u); those functions must not be conflated.
+
+An acceptable extra certificate bounds zeta away from zero on this disk
+translated by u, using rigorous analytic enclosures and a derivative/tail
+bound on the whole disk. A value at its approximate center alone is not
+the required linkage. The proof below is generic in any witness satisfying
+(i)-(iii), and all applications clearly retain this final witness gate.
+
+2. Generic pole-order versus complete dyadic moment rule
+-------------------------------------------------------
+Let G be a constant-on-integer-cells prefix signal, zero below1, and
+ E_G(X)=X^(-2)*sum_(X<=n<2X)|G(n)|^2, X=2^j.
+Suppose for EVERY dyadic X>=1, with a fixed finite K and p>=0,
+ E_G(X)<=K*(1+log X)^p.                                    (2.1)
+For s=1/2+delta+i*t, delta>0, its Mellin transform exists absolutely:
+ I_G(s)=integral_1^infinity G(x)*x^(-s-1)dx.
+It is holomorphic in Re(s)>1/2. On a dyadic block, Cauchy gives
+ |integral_X^(2X) G(x)x^(-s-1)dx|
+ <=[integral_X^(2X)|G(x)|^2*x^(-2)dx]^(1/2)
+       *[integral_X^(2X)x^(-1-2delta)dx]^(1/2)
+ <=sqrt(K*log2)*(1+log X)^(p/2)*X^(-delta).                 (2.2)
+The first integral is <=E_G(X), with EXACT integer endpoints and no
+partial final cell. Summing (2.2) yields
+ |I_G(1/2+delta+i*t)|=O_K,p(delta^(-1-p/2)), delta down to0. (2.3)
+For example with L=log2 and 0<delta<=1, the sum is bounded explicitly by
+ sqrt(K)/sqrt(L)*exp(delta*(L+1))*Gamma(1+p/2)
+                                      *delta^(-1-p/2).
+This follows by comparing each summand to the integral over its logarithmic
+cell; no global zero-free assertion or heuristic cancellation is involved.
+
+If continuation of I_G has a genuine order-d pole at rho=1/2+i*t, or more
+generally an independently proved leading behavior
+I_G(rho+delta)=B*delta^(-d)+o(delta^(-d)), B!=0,
+comparison with (2.3) requires
+                         p>=2d-2.                        (2.4)
+Analytic identification is valid without assuming RH: the Mellin transform
+under (2.1) is holomorphic to the right of1/2 and equals its known
+Dirichlet expression on the absolutely convergent half-plane. Meromorphic
+identity continues it; any earlier off-line pole would already contradict
+the hypothesis. An isolated neighborhood of rho then gives the displayed
+right-hand Laurent behavior. The argument never declares zeta zero-free
+before imposing the hypothetical moment bound.
+
+There is also a useful endpoint lower obstruction. If B is the leading
+coefficient of I_G at rho, then
+ limsup_(j->infinity) E_G(2^j)/(1+j*log2)^(2d-2)
+                       >=log2*|B|^2/[(d-1)!]^2 >0.        (2.5)
+If the limsup is finite, apply (2.2) above a finite head with K arbitrarily
+close to that limsup and use the exact asymptotic of its geometric-power
+sum; the finite head vanishes after multiplication by delta^d. If the
+limsup is infinite the conclusion is immediate. This gives neither a
+pointwise lower bound at every scale nor an upper bound at the endpoint.
+
+3. Every generated real delay retains the critical pole
+------------------------------------------------------
+For G_a(x)=F(x)-a*F(x/2), exact Mellin change of variables gives
+ I_(G_a)(s)=(1-a*2^(-s))*D(s)/s.                           (3.1)
+At integers the second prefix is F(floor(n/2)), and both continuous terms
+are constant on the same integer cells. The unit and the interval[1,2)
+remain; no interpolation correction is needed for this delay.
+
+The generated a are0 and plus-or-minus2^theta for
+theta=0,1/6,1/3,1/2,2/3,5/6. For theta!=1/2 the multiplier cannot vanish
+at rho by modulus: |a*2^(-rho)|=2^(theta-1/2)!=1.
+For theta=1/2, vanishing would require t*log2 an integer multiple of pi,
+with parity determined by the sign. But 14<t<15, 69/100<log2<7/10,
+and 3<pi<22/7 give exactly
+                3pi<t*log2<4pi.
+These elementary rational bounds exclude either sign. For a=0 it is1.
+Thus all13 delay filters, including the critical and oversized
+causal-inverse cases, preserve d=2m, with Mellin leading coefficient
+ B_a=(1-a*2^(-rho))*A/rho !=0.                             (3.2)
+The pole rejection is DIRECT on E_G. It does not weaken merely because
+a conservative inverse theorem adds logs when recovering E_F, and it
+does not require that the delay inverse be cofinally admissible.
+
+4. Log-Abel also preserves order, with complete head conventions
+---------------------------------------------------------------
+Let Z(x)=sum_(n<=x)f(n)log n and define continuous g(x)=Z(x)/log x for
+x>=64, zero below64 for this Mellin calculation. Set
+ I_g(s)=integral_64^infinity Z(x)/log x*x^(-s-1)dx.
+Differentiating in an absolutely convergent half-plane gives
+ I_g'(s)=D'(s)/s+E_head(s),
+ E_head(s)=integral_1^64 Z(x)x^(-s-1)dx,                   (4.1)
+an entire function. The identity then continues on any local branch in
+the right-hand punctured disk. Substitution of (1.2) and integration along
+s=rho+delta give
+ I_g(rho+delta)=A/rho*delta^(-d)+O(delta^(-d+1)), d>=2.     (4.2)
+Lower terms may involve a logarithm of s-rho; they cannot cancel this
+leading term. Strictly, the entire local primitive need not be meromorphic
+because of these lower logarithms; the leading one-sided behavior, which
+is all the rejection rule needs, is unchanged. The division by log x
+reverses the derivative's EXTRA pole
+order; it does not reduce the original order d.
+
+The frozen integer filter equals F(n) below64 and Z(n)/log n above.
+With K0=3beta+ceil(R_u), the unconditional coefficient bound implies
+ |Z(n)|<=K0*n*(1+log n)*log n.
+On each cell[n,n+1), n>=64,
+ |Z(n)/log n-Z(n)/log x|<=2K0.
+Its Mellin difference is analytic for Re(s)>0; the below64 modification
+is an entire finite head. Neither changes (4.2), so (2.4),(2.5) apply to
+the ACTUAL saved log-Abel sequence with B_log=A/rho.
+
+There is sharper BLOCK recovery than the frozen conservative extra log.
+Put J(x)=integral_1^x F(y)dy/y. Exact summation by parts says
+ g=F-J/log x, and therefore, for x>=64,
+ F(x)=g(x)+J(64)/log64+integral_64^x g(y)/(y*log y)dy.       (4.3)
+This follows by differentiating J/log x; no unknown coefficient series is
+summed at the real pole. If E_saved-g(Y)<=K1*(1+log Y)^p on every dyadic
+Y, the continuous g has the same block bound after the paid2K0 error.
+Specifically its integral block norm is bounded by
+ sqrt(K1)*(1+log Y)^(p/2)+2K0/sqrt(Y).
+For its K1 part, blockwise Cauchy bounds the final integral in (4.3) by
+ [sqrt(K1)/(log64*(1-2^(-1/2)))]
+                          *sqrt(X)*(1+log(2X))^(p/2)
+on X<=x<2X, X>=64. The bounded-error part contributes at most
+2K0*log(log(2X)/log64); the fixed J head is explicit. Dividing its block
+square by X gives paid O(loglog(2X)^2/X) terms. Minkowski and (4.3) give
+                  E_F(X)=O((1+log X)^p).                 (4.4)
+Constants depend only on K1,p,the finite head and K0; there is NO extra
+log degree. Finite dyadic blocks below64 are part of the head. This is a
+conditional generic recovery theorem, not a proof that either energy has
+any such bound. Conversely g=F-J/log x gives the same-degree forward
+bound by the identical blockwise argument. Direct pole proof (4.1) avoids
+needing this refinement to reject the selected premise.
+
+5. Recurrence certificate composition and the actual selection
+-------------------------------------------------------------
+Let A(X)=E_G(X)+w*E_H(X)>=E_G(X), w>=0, with complete signed squares.
+For a universal proposed step
+ A(2X)<=rho_step*A(X)+C*X^gamma*(1+log2 X)^k,
+the gamma=0 induction gives the sharp log degree
+ p=k when 0<=rho_step<1,
+ p=k+1 when rho_step=1.
+It follows by ordinary geometric summation or summing the drift. Hence
+whenever G retains a pole of order d at a critical point, the following
+is a reusable REJECTION certificate:
+ gamma=0 and sharp p<2d-2 => the uniform premise is FALSE.  (5.1)
+Positive auxiliary storage cannot evade it, because A dominates E_G.
+Gamma>0 is outside this test: a positive power absorbs every fixed log
+order, so the pole alone does not refute that proposed power bound.
+
+For a simple surviving zero d=2, the frozen generated shapes imply:
+ rho_step<1,k=0: bounded energy, rejected;
+ rho_step=1,k=0: log-degree1, rejected;
+ rho_step<1,k=1: log-degree1, rejected;
+ rho_step=1,k=1: log-degree2, NOT rejected by this rule.
+Changing C, retaining a finite head, or adding a positive auxiliary cannot
+repair the first three at every scale. The last remains an open arithmetic
+estimate, not a demonstrated bound. A multiple zero would impose the
+stronger floor4m-2. These are boundary-pole facts consistent with RH,
+not a counterexample to RH.
+
+Read-only extraction of frozen selection.json gives13 selected programs:
+ 6152 baseline_critical;1538 baseline_delay;9997 baseline_log;
+ 423,1734,294,2118,2022,2214 the six paired lanes;
+ 1683,1542,1590,1638 the four single lanes.
+Every selection has rho_step=1/2,gamma=0. All except9997 have k=0;
+9997 has k=1. Thus every one violates (5.1), once witness(i)-(iii) is
+fully bound. Even6152's critical filter is directly rejected at p=0;
+its reported conservative recovered core degree2 does not save E_G.
+Likewise9997's conservative recovered degree2 does not save its direct
+transformed p=1. No discovery or validation value was used in this proof.
+Any finite passes are compatible with eventual failure of a false uniform
+premise; this result supplies no numerical failure scale.
+
+6. Detector-facing proof feedback and limits
+--------------------------------------------
+A compact generic certificate rule requires the exact source Dirichlet
+formula, a certified boundary pole/order/leading coefficient, the exact
+filter multiplier or derivative identity, its noncancellation witness,
+the nonnegative storage domination, and the sharp induction degree.
+It returns a rejected universal bound shape, rather than nominating a
+new optimizer or changing frozen responses. It needs no fitted constant
+and is reusable for other complete sources and filters.
+
+The next bound language should preserve gamma=0,degree at least2 when
+this pole survives; for example rho_step=1,k=1 is a legitimate NOT-YET-
+REJECTED shape. This alone is not evidence that it is true. Alternatively
+an exact source-specific filter may remove the nonreal leading pole, but
+its recovery must retain that removed frequency/channel and its costs;
+erasing an oscillation from the proof target is not full-target recovery.
+No assertion here excludes critical zeros, proves a zero-free half-plane,
+or proves RH. The missing shifted witness is explicitly separate from the
+analytic theorem; after it is certified, the selected thirteen premises
+can be marked analytically false despite their finite status.
+
+Final status: analytic rules and read-only selection application complete;
+shifted nonvanishing witness linkage pending root's independent certificate.
+All previous/frozen artifacts unchanged. No new arithmetic evaluation or
+development test invocation occurred.

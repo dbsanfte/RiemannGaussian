@@ -1,0 +1,61 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_control_proved": false,
+  "all_scale_signed_work_recurrences_proved": 0,
+  "checked_source_horizon": 524287,
+  "compared_vector_entries": 5767168,
+  "elapsed_seconds": 515.7575912729953,
+  "final_counterexamples": 0,
+  "final_reselection": false,
+  "final_survivors": 10,
+  "main_operations": 261053924,
+  "main_peak_rss_kib": 562172,
+  "preadmitted_hypotheses": 567,
+  "preparation_operations": 9868142,
+  "prime_bank": {
+    "RH_proved": false,
+    "absolute_residual_bound": "2^-65",
+    "all_actual_primes_and_powers": true,
+    "all_scale_signed_control_proved": false,
+    "all_unit_cofactors": true,
+    "coefficient_comparisons": 524288,
+    "prefix_comparisons": 524288,
+    "verified": true,
+    "whole_signed_bound_proved": false
+  },
+  "prior_prefix_comparisons": 2883584,
+  "programs": 117,
+  "proved_recovery": {
+    "additional_block_log_loss": 0,
+    "cutoff": 1024,
+    "gap_lower": "4/5",
+    "history_mass_upper": "2/5"
+  },
+  "raw_hypotheses": 1170,
+  "selected_bounds": 10,
+  "selection_status_counts": {
+    "critical_pole_degree_obstruction": 243,
+    "finite_survivor_open_uniform_premise": 567,
+    "unpaid_inverse_power": 360
+  },
+  "status": "SIGNED_PRIME_WORK_SEARCH_AND_INDEPENDENT_VERIFICATION_COMPLETE",
+  "total_operations": 1158966607,
+  "universal_reference": "gamma1/logpower2 only",
+  "whole_signed_bound_proved": false,
+  "worker_resources": {
+    "checker": {
+      "elapsed_seconds": 401.4665725650266,
+      "operations": 556495958,
+      "peak_cells": 14159872,
+      "peak_rss_kib": 961640,
+      "status": "COMPLETE"
+    },
+    "producer": {
+      "elapsed_seconds": 69.13719586702064,
+      "operations": 331548583,
+      "peak_cells": 9441280,
+      "peak_rss_kib": 758872,
+      "status": "COMPLETE"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+CONSTRUCTIVE RANK-ONE DUAL AND FIXED-PROFILE OBSTRUCTION082
+
+Scope
+
+This review concerns the proposed082 SDD completion price, with a fixed finite
+roster of rational floor-profile schedules eta<=1, fixed finite source memory,
+zero divisor-incidence multipliers, and nonnegative Gram additions. It does
+not impose additional prime-by-prime affine constraints. It proves no lower
+bound on the actual Mobius drift. It strengthens the sublinear-only price
+obstruction: even fixed finite FULL-RADIUS profiles retain an orderu^2
+relaxation obstruction. No numerical science or frozen file is changed.
+
+1. Finite rank-one dual LP, directly implementable
+
+For each canonical group g let F_ig=c_g f_i(g), R_jg=c_g C_j(g). Find rational
+z in[-1,1]^groups satisfying Rz=0 and F_i z=0 for every delayed i>=1, and
+maximize F_0 z. This is a linear program with geometry-only coefficients.
+The negative objective branch is obtained by z->-z; objective signs do not
+use actual mu. A nonzero exact feasible vector supplies a certificate:
+
+ lambda_g=z_g^2, nu_gh=2z_g z_h.
+
+Exact feasibility follows2|z_gz_h|<=z_g^2+z_h^2. For every incidence correction
+L(Z_j,i)=2(R_jz)(F_i z)=0. For every positive Gram L(vv^T)=(v^Tz)^2>=0.
+Hence the box-dual lower bound equals L(A0)=H00(F0z)^2, with no box penalty.
+This remains valid for arbitrary theta, including u-dependent theta, and
+any roster of nonnegative Gram features. The certificate bypasses numerical
+LP dual rounding: rationally reconstruct z, check every constraint exactly,
+then form lambda/nu. If reconstruction fails, retain the original numerical
+proposal only. Do not round and silently tolerate moment errors; their
+box penalties can dominate the purported lower bound.
+
+Streaming rank-one verification avoids storingnu for all group pairs:
+compute exact feature dot products and H/T quadratic value directly. The
+independent checker must verify this identity against its group geometry,
+not trust an asserted objective or reuse producer group counts unchecked.
+Ordinary box dual and this rank-one cone are different admissions; report
+both. Failure of the rank-one LP does not show the completion price is small.
+
+2. Linear independence lemma for rational floor profiles
+
+Let distinct positive rational kappa_1,...,kappa_J be fixed. If
+sum_j alpha_j floor(kappa_j/x)=0 for EVERY sufficiently small realx>0,
+then allalpha_j=0. Proof: choose a positive common denominatorB with
+kappa_j=A_j/B, distinct positive integerA_j. Put t=1/(Bx), so the asserted
+sumF(t)=sumalpha_j floor(A_jt) is zero for all sufficiently larget.
+F(t+1)-F(t)=sumalpha_j A_j, so that sum is0. ConsequentlyF is periodic
+of period1, and its zero tail impliesF(t)=0 for ALLt>0. OrderA_j decreasing.
+At t=1/Amax, the largest term jumps while all smaller terms remain0;
+thus its coefficient is0. Induct on the remaining largest integer.
+This proof works for realcoefficients as well as rationalcoefficients.
+Duplicate kappas are first coalesced, and kappa0 profiles are omitted.
+
+3. Current source is outside the constrained function span
+
+Write x=n/u and define limiting registered source profiles
+f_i(x)=sum_d b_d 1[x<=1/(2^i d)]. Both unfolded081 source kernels have
+sum_d b_d=0, so every f_i vanishes on a sufficiently small neighborhood
+ofx0. Their outer intervalx in(1/5,1/4] has f0=-1 and all delayed f_i=0.
+For eta1 schedules K=min(N,floor(scale*u)), the limiting geometry profile
+is floor(kappa/x), kappa=min(scale,1/dmin)>0; the unit correction is irrelevant
+on any fixed interval away fromx0. Sublinear schedules eventually vanish
+on such intervals.
+
+Suppose f0 were in the real span of these finitely many floor functions and
+delayed source functions on(0,1/dmin]. Nearx0 the source functions vanish,
+so the floor combination vanishes. Section2 kills every floor coefficient.
+The remaining delayed combination cannot equal f0 on the outer interval.
+Contradiction. Thus f0 lies outside the constrained function span.
+
+This is a pointwise statement for the two registered zero-sum source kernels.
+It is not asserted for arbitrary changed kernels, profiles depending on
+signed arithmetic, irrational/varying linear scales, growing profile rosters,
+or additional prime affine constraints. Any such extension requires a new
+span argument. It DOES permit any fixed rational positive linear scales,
+full-radiusK=N, fixed sublinear schedules, profile duplications, and any
+finite delay depth admitted by the current source grammar.
+
+4. Finite rational interval witness and all-scale formal covariance
+
+The profiles are piecewise constant with rational thresholdskappa/k and the
+source's rational thresholds. On any compact interval away fromx0 they have
+only finitely many thresholds. Because f0 lies outside the constrained span,
+there is a finite list of rational interior sample points at which the
+augmented evaluation matrix has strictly larger rank than the constrained
+matrix. Choose disjoint rational open-left/closed-right intervalsI_l around
+those points, wholly within their constant-profile cells. A finite rational
+linear-system certificate supplies rationalt_l such that
+
+ sum_l t_l h_j(I_l)=0 for every constrained profileh_j,
+ sum_l t_l f0(I_l)=1.
+
+Intervals witht_l0 can be omitted. These are finite exact data, not an
+asymptotic numerical rank inference. An implementable detector can enumerate
+rational sample points by increasing denominator, refine around floor/source
+thresholds, and seek this augmented-rank certificate. It must have a resource
+cap; existence does not imply a short certificate for every roster.
+
+Let a_l(u)=#{squarefree n: n/u inI_l}. Elementary squarefree inversion gives
+a_l(u)=rho*length(I_l)*u+O(sqrtu), rho=1/zeta2>1/2. In particular, beyond a
+computable starting scale, a_l(u)>=length(I_l)*u/4. Use rational lower margins
+on each interval and the explicit error3(sqrt(right*u)+sqrt(left*u)); literal
+floors are included by the real-x count theorem.
+
+Choose positive rationaltau<=min_l length(I_l)/(4|t_l|). Define individual
+formal values s_n=tau*u*t_l/a_l(u) on intervalI_l, and0 outside their union.
+Then|s_n|<=1. Aggregate these values into actual canonical groups:
+
+ z_g=(1/c_g)sum_(squarefree n in groupg)s_n.
+
+All source/profile features are constant on each chosen interval for all
+sufficiently largeu. For linearK=floor(kappa*u), this follows by choosing
+strict margins from the floor thresholds: its effective argument differs
+from kappa/x by at most1/(u*left(I_l)); an exact rational margin supplies a
+finite scale beyond which no profile floor can change. For sublinearK,
+require K<left(I_l)*u uniformly by exact rational power comparison.
+
+ThereforeR_j z=0 and every delayedF_i z=0 EXACTLY, whileF0z=tau*u.
+Aggregating possibly disconnected intervals with the same group tuple is
+valid because the feature values agree; convex averaging preserves|z_g|<=1.
+Unit and all unselected squarefree coordinates have formal value0. They
+are not being deleted from the actual full target or population geometry.
+
+The rank-one dual now yields for every sufficiently largeu
+
+ B(u)>=H00*tau^2*u^2.
+
+Thus no finiteC gives B(u)<=C*u^q for anyq<2 in this fixed finite geometry-
+profile completion grammar. The lower coefficient and starting scale may be
+extremely poor and depend on the roster. That affects certificate size and
+practical detection; it does not change the uniform exponent conclusion.
+
+5. Exact threshold for the easier sublinear witness
+
+If allK_j<=u/6 andu>=30, thenK_j<=floor(u/5). This holds under
+u^(1-eta_j)>=6*scale_j. For eta_j=a/b<1, compute an integer threshold via
+u^(b-a)>=(6*scale_j)^b after exact rational cross multiplication.
+The outer squarefree count is at leastu/40-3sqrtu; foru>=58081=241^2,
+this exceedsu/80. The parent's proposed extra-1/2 slack is also safe.
+The single-group exact dual then givesB>=H00*u^2/6400. No numerical
+squarefree or prime query is needed for this uniform obstruction admission.
+
+6. What this should feed back to the detector
+
+Finite geometry-only convolution moments are not enough to price actual
+signed cancellation using the independent group-box relaxation. They leave
+an explicit formal covariance with orderu source mass, even though actual
+Mobius satisfies all those moments. Increasing fixed profile counts,
+coefficient boxes, memory or positive Gram roster does not remove the proven
+fixed-roster obstruction. The LP should output a moment-null formalz and,
+when feasible, a rational interval construction certificate, rather than
+suggest tuning anotherC.
+
+A genuinely different next language must impose signed arithmetic information
+not represented by these fixed moments: for example growing profile rosters
+with independently controlled geometry/price, genuine nonseparable divisor
+incidence constraints carried jointly, or additional multiplicative/cofactor
+constraints with a proved uniform strength. Adding allprefixK=1..N recovers
+mu uniquely but is not itself a noncircular norm estimate. Prime-fixed rows
+change the feasible covariance set and require a new audit; their presence
+must be explicit, not inferred from actual-prime diagnostics.
+
+This review proves a relaxation-price obstruction for the fixed082 grammar.
+It does not refute the actual arithmetic bound, provide an RH counterexample,
+or prove infeasibility of an unrestricted arithmetic/SOS proof system.

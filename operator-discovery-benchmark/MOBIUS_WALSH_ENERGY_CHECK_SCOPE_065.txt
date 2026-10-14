@@ -1,0 +1,83 @@
+INDEPENDENT WALSH ENERGY CHECKER065: PROOF AND SCOPE
+
+verify_energy(parent,cert,meter=None) admits a finite conditional inequality.
+The exact SAME supplied contraction parent must separately be admitted by
+064's source checker and contraction checker, with its linked source lift
+and repair. This checker validates parent shape and exact row/L1 consistency,
+but does not establish that those rows arise from the arithmetic source.
+It reads no scientific result arrays and imports no discovery producer.
+
+Let chi_n(x) be the product of remaining prime signs dividing squarefree n;
+chi_1=1 and chi_a chi_b=chi_(ab/gcd(a,b)^2). For each nonzero row q_j choose
+any positive rational w_j; empty rows have weight exactly zero. Expand
+E=sum_j q_j^2/w_j. Diagonal pairs retain their constant contribution; distinct
+pairs occur twice. All rows are added before absolute values. Thus E is
+nonnegative on every sign assignment, and its constant Fourier coefficient
+is nonnegative. Write E=A_1+sum_(n>1) A_n chi_n, with zero terms removed.
+The raw bound is L=A_1+sum_(n>1)|A_n|.
+
+For a cycle C of at least three distinct nonconstant terms with product of
+indices reduced by gcd equal to1, product_(n in C) chi_n=1. If product of
+original signs sign(A_n) is -1, the preferred signed characters
+sign(A_n)chi_n cannot all be +1. Their sum is at most |C|-2. Allocate positive
+rational mass t_C to each member, with total allocations at n no larger than
+|A_n|. Split each original coefficient into these allocations plus its
+nonnegative residual capacity. Applying the cycle inequality and triangle
+inequality to residual terms gives E<=L-2 sum_C t_C. Cycles may overlap;
+capacity accounting uses every original coefficient, so shared terms cannot
+be spent twice beyond their capacity. This is a deterministic pointwise
+bound, requiring no independence or randomness of prime signs.
+
+Weighted Cauchy gives
+ (sum_j |q_j|)^2 <= (sum_j w_j)(sum_j q_j^2/w_j)
+                     <= weight_mass*energy_upper.
+A nonnegative rational variation_bound is admitted precisely when its square
+is at least this product. All-zero rows require every aggregate and bound
+zero. The checker reports both raw and cycle-improved energy bounds and
+common all-free-plus/all-free-minus row-L1 witnesses. Witnesses are lower
+bounds for any envelope valid for all remaining signs; their arithmetic
+interpretation requires SAME-parent064 admission.
+
+For fixed sign assignment, the parent's rows are affine in ratio r by064's
+source/contraction proof. Their sum of absolute values is convex, hence its
+maximum over the interval is bounded by the maximum of the two endpoint
+variation bounds. We do not assert E(r) affine: squares and endpoint weight
+choices need not extend as an affine energy. Endpoint convexity is applied
+to the row-L1 norm itself. The parent's ratio interval, source binding and
+actual Mobius interpretation remain conditional on064 admission.
+
+A useful sufficient UNIFORM obligation would be: for a declared admitted
+fill, cutoff H(N,y), conditioning S(N,y), and endpoint weights/cycle packings,
+prove for every kappa>0 a constant C_kappa independent of required N,y such
+that at BOTH endpoints
+ (sum_j w_j)*(A_1+sum_(n>1)|A_n|-2 sum_C t_C)
+       <= C_kappa^2 N^(1+2*kappa).
+Then short variation <= C_kappa N^(1/2+kappa) uniformly; combine the paid
+long price at the SAME endpoint before taking the endpoint maximum, with
+any required logarithmic normalization in the earlier bridge. It also
+suffices to prove the complete long-plus-short budget uniformly at that
+rate. This is an obligation, not an established theorem. Finite accepted
+certificates, optimised weights, cycle gains, and witnesses do not pay it.
+No uniform N-growth, whole signed target bound, or RH is asserted here.
+
+RESOURCE AND TEST RECORD
+Input rational strings are canonical, length<=2500, bits<=4096; arithmetic
+intermediates and character products are capped at32768 bits. Default Meter
+caps charged work at50000000 and wall time at180 seconds; supplied charge-only
+meters are supported for pipeline aggregate metering. Each entry, pair,
+character product and rational multiplication is charged. Prospective
+conservative cumulative object/bit storage is checked against512MiB, with
+250000 allocated-entry cap; whole-workspace16GiB remains the runner's scope.
+The charge-only caller is responsible for its external work/time budget.
+
+26 distinct new synthetic tests passed, including64 tiny polynomial families
+exhaustively checked on all four assignments, coalescing, overlaps, diagonal
+units, arbitrary rational weights, frustrated/shared cycles, overconsumption,
+Cauchy direction, omissions/mutations, conditioning and all-zero handling.
+Initial launch used unavailable `python` and failed before test execution
+(exit127); log preserved in development receipt. First python3 run passed
+26 tests,105285 charged units,0.16s wall,15104KiB RSS. A subsequent meaningful
+resource-cap edit bounded integer character intermediates and made every
+L1 addition prospective; the affected full new suite then passed26 tests,
+106556 units,0.14s wall,15104KiB RSS. Total52 test invocations,211841 units.
+No historical suite replay or scientific search was performed.

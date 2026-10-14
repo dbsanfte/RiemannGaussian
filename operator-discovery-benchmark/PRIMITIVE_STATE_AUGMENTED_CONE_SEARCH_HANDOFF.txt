@@ -1,0 +1,118 @@
+Publication028: learned constraints incorporated and cone search resumed
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-augmented-cone-search-001
+
+Verified result
+The independent audit completed successfully. It licenses the augmented
+rank782 chart, exact repaired center, bounded proposal trace and exact final
+point. Both center and endpoint satisfy all5641 original finite equations
+and all3 learned equations:5644 each. The final point is SCALAR_REJECTED:
+235 of1597 scalar coefficients are negative, comprising234 square weights
+and slack1592. The repaired center had243 negative scalar coefficients.
+This rejects these points only. Neither family infeasibility nor a usable
+signed arithmetic bound has been established; RH remains unresolved.
+
+All exact matrix diagnostics were skipped after scalar rejection, with
+PSD_blocks_checked=0 and PSD_failures=null. The numerical zero C penalty
+does not constitute an exact positive-semidefinite certificate.
+
+Construction and reusable outputs
+The complete024 rank780 chart was composed with the two independently
+verified027 necessary rows, pivots160 and170. The new chart has782 pivots
+and442 free coordinates in the1224-coordinate quotient. Its canonical
+original lift has1957 coordinates. Exact descending backsubstitution
+repairs the independently recovered026 point while preserving all442
+surviving free coordinates. No old444-dimensional increment is reused.
+The old026 producer remains UNKNOWN; only its independently licensed
+recovery and map metadata are premises here.
+
+New files under jobs/:
+chart.json: complete782-row reusable chart,4712923bytes.
+center.json: exact repaired center and canonical lift,486885bytes.
+map.json: new map, calibration and positive dyadic scales,582574bytes.
+proposal.json: complete47-iteration proposal trace,11777807bytes.
+endpoint.json: exact free/projected/original vectors,548436bytes.
+search-job.json: terminal endpoint_complete and stage costs.
+The independent_verification.json is9539bytes and has all_passed=true,
+chart_verified=true, center_verified=true, endpoint_verified=true,
+candidate_equations_verified=true and finite_candidate_feasible=false.
+
+Setup recomputed approximate80-digit cone norms for all98 affected free
+columns, evaluated through the complete new chart. It retained the344
+unaffected positive dyadic scales from026 and the original025 objective
+normalizers. Coupled new pivots are handled by full substitution. The
+auditor verified the new-row reductions, exact repair, positive dyadic
+scales, calibration and trace, without replaying the old elimination.
+Exported norm estimates, gradients, eigensolver results, model optimality
+and numerical merits remain uncertified proposal heuristics.
+
+Numerical behavior
+Search uses the exact rational center for endpoint construction and its
+80-decimal-digit approximation for numerical proposals. New-map power
+iteration uses alternating normalized signs, up to8 steps with zero-norm
+early stop. Each iteration permits12 recomputed model/Armijo trials.
+All47 recorded iterations were accepted; the next iteration was declined
+by the fixed worst-case work reservation. Stop reason is budget_stop,
+not convergence, stationarity, infeasibility or a precision failure.
+
+Using the same original025 normalizers, the maximum normalized penalty
+fell from119.000884215866 to0.10257184656915311.
+Initial raw half-squared penalties, scalar/C/H:
+262302.230871388,0.001378850908691013,0.2485364306749762.
+Final raw half-squared penalties, scalar/C/H:
+226.0892795626762,0,0.2993559907102537.
+Final normalized blocks:
+0.10257184656915311,0,0.1016126370166017.
+These are numerical diagnostics, not rigorous bound values. The repaired
+starting penalty is much larger than026's previous endpoint penalty
+because the previous endpoint violated the newly imposed equations.
+Comparing negative counts alone does not measure distance to feasibility.
+
+Verification and resources
+All38 synthetic tests passed before freeze in8.390s and in the actual
+frozen run in8.411s. Coverage includes coupled-row repair, exact center
+preservation, full homogeneous substitution, scale validation, matching
+power rules, all learned equations, scalar-first rejection, mandatory
+exact matrix tests after scalar success, resource failures and publication
+scope. Actual scoring began only after the source and protocol freeze.
+
+One combined450m work-proxy reservation:
+50m preparation/tests/I/O,30m map setup,195m proposal,25m exact endpoint,
+150m for the sole final independent audit. Synthetic allowance20m and
+independent I/O allowance10m are inside the50m preparation reservation.
+Actual charged arithmetic:24289965 setup +147671792 proposal +9991604
+endpoint +25388376 independent =207341737. Independent I/O adds1433434
+proxy units for45869005bytes within preparation. These are declared work
+proxies, not processor instruction counts. Unspent reservations did not
+authorize additional iterations, a second audit or an adaptive retry.
+
+One worker/thread:160.714050s wall,159.956095s CPU,483848KiB peakRSS.
+The enclosing producer stage took160.884861s. Independent audit:
+96.245918s wall,96.235224s CPU,574812KiB process peakRSS, one thread.
+Each sequential process had an enforced6GiB boundary; cooperative3600s
+limits held. Setup/endpoint maximum rational bits were1073/1071, below
+the fixed4096-bit result cap and8193-bit temporary cap. Producer peak
+live-cell proxy1666606; audit peak2481379 with1424157 cumulative audit
+cells, all within the6m cap. No memory or runtime increase was needed.
+The one source snapshot has62 files/863435bytes. No hashes were created
+or checked. Existing frozen code/publications were left unchanged.
+
+Next research action
+Use the verified782-row chart and exact endpoint as the available finite
+state; do not rebuild the old elimination or silently drop any learned
+row. All023/027 feedback rows are discovery data, not held-out evidence.
+Do not rerun or extend this completed job under a reset450m ledger.
+
+The next method should address the remaining scalar and matrix-cone
+obstruction, with a separately specified complete work allocation. A
+useful direction is a primal/dual diagnostic that seeks either an exact
+feasible point or a verified separating witness for this finite slice.
+Single-point rejection and slow numerical progress cannot justify a
+claim that the entire grammar is infeasible. Any proposed separator must
+be checked exactly before it guides a change to the grammar.
+
+Even a finite feasible certificate would leave the universal nonconstant
+formal identity, uniform scalar budget and initial storage cost unproved.
+A cofinal parameter family and an ordinary-zeta recovery bridge remain
+necessary. Formal integer assignments are not actual Mobius signs, and
+finite fitting alone supplies no all-scale signed prime cancellation.

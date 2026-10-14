@@ -1,0 +1,25 @@
+{
+  "fresh_both_parities": true,
+  "fresh_parents": [
+    227,
+    251,
+    293
+  ],
+  "hashes_used": false,
+  "memory_limit_bytes": 17179869184,
+  "original_search_and_selection_changed": false,
+  "previous_heldout_scores_used_to_select": false,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18
+  ],
+  "ranking": "finite pass; larger eta; more helpful auxiliary increments; rho; complexity; A; ordinal",
+  "schema": "prime-mechanism-promotion-v1",
+  "training_norms_rerun": false,
+  "training_source": "floor-residual-results/pilot-004/search.json",
+  "workers": 2
+}

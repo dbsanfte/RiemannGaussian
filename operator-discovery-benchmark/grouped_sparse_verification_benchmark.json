@@ -1,0 +1,101 @@
+{
+  "RH_proved": false,
+  "actual_X7_tamper_checks": [
+    {
+      "kind": "negative_weight",
+      "reason": "negative shared square weight",
+      "rejected": true,
+      "seconds": 0.31670624698745087
+    },
+    {
+      "kind": "certificate_omission",
+      "reason": "exact expanded certificate binding",
+      "rejected": true,
+      "seconds": 4.007518761005485
+    },
+    {
+      "kind": "source_change",
+      "reason": "original source instance hash binding",
+      "rejected": true,
+      "seconds": 0.3259049420012161
+    }
+  ],
+  "global_bound_proved": false,
+  "input_sha256": {
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/attempts/001.json": "5f2ac43f96c8b94f85c606f09ef979722c4c1fb2af713fa66aed6ffb774d2c8a",
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/final.json": "7eaf18fa62f748280c4a2ef4bf5f2c5b4326f9b6379cf766a888ed6cfa23976c"
+  },
+  "observations": [
+    {
+      "X": 7,
+      "audit": {
+        "RH_proved": false,
+        "active_relation_atoms": 27,
+        "active_square_atoms": 365,
+        "charged_operations": 447163,
+        "elapsed_seconds": 3.975401872987277,
+        "finite_only": true,
+        "global_bound_proved": false,
+        "instance_sha256": [
+          "7492d6009d830ac0b2fc1878fe2ba095babe4e03d8b7e57ad3e8aa9737af042b"
+        ],
+        "instances": [
+          {
+            "constant_slack": "0",
+            "finite_identity_verified": true,
+            "horizon": 27,
+            "target": "mu"
+          }
+        ],
+        "scope": "full original primal identity and active arithmetic premises; all source polynomial schemas and arithmetic premises validated; zero groups hash-bound without products; not dual verification",
+        "shared_weights_verified": true,
+        "skipped_zero_groups": 598,
+        "source_binding_checked": true,
+        "verified": true
+      },
+      "build_seconds": 11.209203033009544,
+      "certificate_provenance": "archived accepted certificate",
+      "certificate_sha256": "5e7b1c41c2b6cdd8e5dca82fd597701f0e2d08974ce4ebe078a605e31206e48a",
+      "matches_archived_full_checker_instance_audit": true,
+      "original_status": "finite_certificate"
+    },
+    {
+      "X": 11,
+      "audit": {
+        "RH_proved": false,
+        "active_relation_atoms": 43,
+        "active_square_atoms": 925,
+        "charged_operations": 1323262,
+        "elapsed_seconds": 11.97033080100664,
+        "finite_only": true,
+        "global_bound_proved": false,
+        "instance_sha256": [
+          "47620c38ec0917f69df6a3f4ee91d364d5e658cb97970d0f6363dd2714e0b25b"
+        ],
+        "instances": [
+          {
+            "constant_slack": "0",
+            "finite_identity_verified": true,
+            "horizon": 43,
+            "target": "mu"
+          }
+        ],
+        "scope": "full original primal identity and active arithmetic premises; all source polynomial schemas and arithmetic premises validated; zero groups hash-bound without products; not dual verification",
+        "shared_weights_verified": true,
+        "skipped_zero_groups": 598,
+        "source_binding_checked": true,
+        "verified": true
+      },
+      "build_seconds": 32.33500919600192,
+      "certificate_provenance": "separate posthoc active-weight expansion, no refit; original missing retained",
+      "certificate_sha256": "f928e30befb9fb7b0e16063713a2e737b13955f70e54f1ed173a08d115d9d14f",
+      "original_status": "missing_resource"
+    }
+  ],
+  "schema": 1,
+  "scope": "posthoc verification benchmark, no fit/search; originals retained",
+  "source_sha256": {
+    "check_grouped_arithmetic_sparse.py": "731c1aa7147c77f8df16dd7be63d4a88e7aa61cc1e28e4ab12d8b7e363570492",
+    "test_check_grouped_arithmetic_sparse.py": "90ad611de681362d8bd9398cfa3b71913992f893a05bb67eea6eaac10a029fc9"
+  }
+}

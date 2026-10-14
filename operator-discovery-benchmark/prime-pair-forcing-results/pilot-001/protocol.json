@@ -1,0 +1,159 @@
+{
+  "budgets": {
+    "arithmetic_work": 2000000000,
+    "bit": 1000000,
+    "bits": 80,
+    "max_n": 4095
+  },
+  "code_sha256": {
+    "arithmetic_filter_pole_budget.py": "e1b730dec869117f8e654712744bc7b72ebaa6d6771e8d87774fe5c48f96bd4d",
+    "arithmetic_filter_pole_budget_proof.txt": "0f32e43a7ceb851dd29a1218424cfa4e77daa8c62f5e5ee57b69b275e4dc6403",
+    "check_prime_pair_forcing_run.py": "bdffe5715c0e2404b98c66f8861a4a4c44f405f562ed35e5d35045dbfe722fd9",
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "prime_pair_forcing.py": "8ce7fad894e6ba2dc515d3ffa7c427047499ae674e586ff9ae107e6f07d0cad6",
+    "prime_pair_forcing_checks.py": "3698b2663f00f17af0fa05d4619e4ff5787cf2a1165da7dde139e3537820facf",
+    "prime_pair_forcing_proof.txt": "11b04556158e433d3774a909b2002b409dcf424a2f810a16d19476808d8302dd",
+    "prime_pair_forcing_review.txt": "1a44904b31ac33c603aade6eb62702b125091a4edfbb9c2b5227f58116a2f710",
+    "prime_pair_forcing_search.py": "b8048db11c55cf2cf5fb7e92f91edab266cc57e07b5690b35ae5b23cf2273819",
+    "run_prime_pair_forcing.py": "d6583376b2f4dcff4154d8b5a400587a0e7f0ddc9d8ba76eb30a02d5b1cb1fde",
+    "test_arithmetic_filter_pole_budget.py": "2af4abce1e4495f6bb36ab133b7fc02abf15954ba9685fa5b3788bf218945b12",
+    "test_check_prime_pair_forcing_run.py": "43bc3ddb609674d4e554d03892ef79101c4650a918ab73bd3e46aaf8d53f40f0",
+    "test_prime_pair_forcing.py": "4d1fcdddf0e4b10183904b759babd2afbee7e4d0d0a736c1bb238c97cbe2d72e",
+    "test_prime_pair_forcing_checks.py": "0778af307c9edbfc0e4deb79d85f3fb42d1d06efd6e7f9c400f9337e33dca991",
+    "test_prime_pair_forcing_search.py": "89358b8db9d57bce695ae156c985dbbff5537402d904aee3ad4c8b47f4156b76",
+    "test_run_prime_pair_forcing.py": "5a344ec2692e93edbab875d0db232fd75f03e8281f5446d86ea3ed7595810238"
+  },
+  "cutoffs": [
+    {
+      "kind": "fixed",
+      "value": 0
+    },
+    {
+      "kind": "fixed",
+      "value": 1
+    },
+    {
+      "kind": "fixed",
+      "value": 2
+    },
+    {
+      "kind": "fixed",
+      "value": 3
+    },
+    {
+      "kind": "fixed",
+      "value": 4
+    },
+    {
+      "kind": "fixed",
+      "value": 8
+    },
+    {
+      "kind": "power",
+      "power": "1/12"
+    },
+    {
+      "kind": "power",
+      "power": "1/6"
+    },
+    {
+      "kind": "power",
+      "power": "1/3"
+    },
+    {
+      "kind": "power",
+      "power": "1/2"
+    },
+    {
+      "kind": "bit_length_power",
+      "power": "1/2"
+    },
+    {
+      "kind": "bit_length_power",
+      "power": "1"
+    },
+    {
+      "kind": "bit_length_power",
+      "power": "3/2"
+    },
+    {
+      "kind": "bit_length_power",
+      "power": "2"
+    }
+  ],
+  "dictionary_sha256": "cc7446daaa1d50a6f9c95a1180d14cba58ada5e610b77f9a40e4fb541a30d79c",
+  "final_generation": {
+    "fixed": [
+      512,
+      1024
+    ],
+    "formula": "769+2*(int(seal_sha256[:16],16)%50)",
+    "odd_count": 50,
+    "odd_min": 769
+  },
+  "final_levels": [
+    3,
+    12,
+    17,
+    29
+  ],
+  "global_claim": "For the exact actual target f=mu or c=mu*lambda and cutoff B(X) in this program, there exists integer q0>=1 such that every integer q>=q0 admits finite Cq>=0 independent of X, and every dyadic integer X>=1 satisfies -R_B(X)<=Cq X^2 ceil(X^(1/q)). R_B is the COMPLETE prime-pair forcing sum over prime powers k=p^e with ka,b<=4X-1 and max(a,b)/gcd(a,b)>B(X), weighted by log(p)*f(a)*f(b)*J_X(max(ka,b))/log(kab). All e>=1 occur for mu; only odd e occur for c. J_X(t)=K_2X(t)-4K_X(t), K_X(t)=max(0,2X-max(X,t)). The exact full identity is Delta_f(X)=J_X(1)-2*kappa*(S_B(X)+R_B(X)), with kappa=1 for mu and2 for c. The selected cutoff has a supplied uniform cofinal critical bound on |S_B|; this recovers the full original signed defect before the ordinary-zeta argument. Stored constants are finite conservative fits, not assertions about unknown existential constants. Interval or finite success is never a uniform proof.",
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "provenance": {
+    "complete_actual_prime_source": true,
+    "full_signed_bound_proved": false,
+    "global_bound_proved": false,
+    "historical_coefficient_overlap": true,
+    "prior_verifications": {
+      "critical-core-results/pilot-001/verification.json": "4aa0c1032acab8271d593a7770eb557d16a2ccba8b7bba3f1909843a8316f062"
+    },
+    "supplied_bias": "exact prime-log pair forcing, primitive-core partition and harmonic envelope rules; finite cutoff dictionary supplied before scores; only numerical cutoff choice learned",
+    "unseen_prime_holdout": false
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "scipy": "1.15.3"
+  },
+  "schema": 1,
+  "selection_groups": [
+    "baseline",
+    "fixed",
+    "bit_length_power",
+    "all_admitted"
+  ],
+  "selection_rank": [
+    "missing_observations_plus_missing_constants",
+    "unresolved_intervals",
+    "validation_failures",
+    "sum_normalized_remainder_upper_plus_uniform_auxiliary_cost",
+    "max_training_constant",
+    "program_id"
+  ],
+  "targets": [
+    "mu",
+    "c"
+  ],
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "validation_scales": [
+    96,
+    128,
+    192
+  ],
+  "version": "prime-pair-forcing-v1"
+}

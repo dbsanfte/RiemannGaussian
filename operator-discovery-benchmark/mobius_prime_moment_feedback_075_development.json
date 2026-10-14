@@ -1,0 +1,27 @@
+{
+  "attempts": [
+    {
+      "modules": [
+        "test_mobius_prime_moment_feedback_075"
+      ],
+      "tests_run": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.34136369702173397,
+      "output": "test_count_normalization_recovers_multiplicity_cost (test_mobius_prime_moment_feedback_075.Feedback) ... ok\ntest_feedback_changes_generated_operators_and_keeps_open_branch (test_mobius_prime_moment_feedback_075.Feedback) ... ok\ntest_general_fractional_count_powers_independently (test_mobius_prime_moment_feedback_075.Feedback) ... ok\ntest_merged_weights_keep_same_child_cross_terms (test_mobius_prime_moment_feedback_075.Feedback) ... ok\ntest_pairing_conservation_with_nonzero_anchor (test_mobius_prime_moment_feedback_075.Feedback) ... ok\ntest_unsupported_weight_is_not_an_arithmetic_impossibility (test_mobius_prime_moment_feedback_075.Feedback) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "names": [
+        "test_mobius_prime_moment_feedback_075.Feedback.test_unsupported_weight_is_not_an_arithmetic_impossibility"
+      ],
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.3085169810219668,
+      "output": "test_unsupported_weight_is_not_an_arithmetic_impossibility (test_mobius_prime_moment_feedback_075.Feedback) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

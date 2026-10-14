@@ -1,0 +1,31 @@
+{
+  "schema": "core-cutoff-prefix-projections-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_cutoff_prefix_projections"
+      ],
+      "returncode": 0,
+      "operations": 15007543,
+      "test_count": 17,
+      "elapsed_seconds": 10.767167042999063,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_cutoff_prefix_projections operations=15007543 elapsed_seconds=10.673776575014926\n",
+      "stderr": ".................\n----------------------------------------------------------------------\nRan 17 tests in 10.673s\n\nOK\n",
+      "max_rss_kib": 54016
+    }
+  ],
+  "operations": 15007543,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368
+  },
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "prior_suites_run": 0,
+  "proof_scope": "complete source replay, finite projection calibrations and conditional Gram certificates; no new uniform signed estimate"
+}

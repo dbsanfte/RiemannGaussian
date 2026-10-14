@@ -1,0 +1,513 @@
+INDEPENDENT JOINT RECURRENCE DESIGN081
+
+Scope
+Read-only review of073 prime storage/source and prime-block/asymptotic
+reviews,074 centered storage/source/obligation and exact centered reduction,
+078 rough energy/source and its pre/post mathematical reviews, together with
+the080 full first/second-mode review. No implementation, old science/tests,
+hashes, subagents or edits to frozen artifacts. This is a design for a
+finite invention experiment, not a paid uniform arithmetic theorem.
+
+What has already been tried and must not be renamed
+073 already admits PSD storage domination, exact bulk nullspaces and
+signed common-prime/cofactor Gram identities. Its exact smaller-cofactor
+recurrences reconstruct arithmetic without proving contraction or state-family
+closure.074 already generates centered high-smooth states: their exact
+prime-dilation block form removes every fixed inverse-log bulk order, but
+prime-by-prime triangle transfer amplifies every sublinear power invariant.
+078 already searches PSD auxiliary-square energies, including scale-decaying
+weights; its postreview gives both an exact signed flux inequality and a
+generic transfer block-PSD/innovation rule.079/080 tried pricing proper
+local leaves separately and encountered full first and second logarithmic
+mode obstructions. Another fixed-ray PSD energy plus Young innovation
+bound is therefore not a new mechanism.
+
+Growing folds do not repair the absolute-price barrier. The080 orbit
+normalization lemma controls coefficients for arbitrary rosters, but a
+roster covering the support concentrates the original target into its unit
+orbit. Static mode projection removes only finitely many inverse-log terms.
+Exact074 centering is stronger, yet still leaves its signed power-scale
+remainder unpaid. These are restrictions on method, not evidence against RH.
+
+One concrete next pilot: delay memory and multiplicative pair extraction
+Use only the two fixed source kernels already source-bound, initially q=1.
+Let R(v)=sum_n mu(n) f_v(n), R(0)=0, with the FULL fixed folded coefficient
+and its fixed excluded-prime condition incorporated in f. For memory depth
+ell in{1,2,3}, set
+ X_j(u)=R(floor(u/2^j)), j=0..ell.
+At h=floor(u/2), child Y_j=X_j(h)=R(floor(u/2^(j+1))) exactly, including
+odd u; floor(floor(u/2)/2^j)=floor(u/2^(j+1)). Every component is the SAME
+source at a strictly smaller integer scale, not an interpolated value or
+an unrelated category. Preserve empty/unit prefixes at small scales.
+
+Generate rational predictor rows a, with declared small denominator/l1
+budgets, and the companion transfer matrix A: first row a, lower rows the
+shift Y_(j-1). Define exact innovation I(u)=R(u)-a.Y. Then
+ X=A Y+e0 I
+is an exact source identity. It is not an innovation bound. Exclude a=0
+when claiming a predictive mechanism; require a.Y physically nonzero and
+I not a scalar copy of R(u), by two occupied coefficient-band witnesses.
+Any arithmetic interpretation of a must remain fixed before validation.
+
+Generate energy matrices
+ H=e0 e0^T+sum_r lambda_r b_r b_r^T, lambda_r>=0,
+with rational memory rays b and budgets. E(u)=X(u)^T H X(u) universally
+dominates R(u)^2. Negative off-diagonal H entries are allowed because the
+matrix is supplied by an exact Gram certificate. Require at least one
+nontrivial memory cross term and positive auxiliary exposure after quotienting
+exact zero dependencies; report the baseline H=e0e0^T separately.
+
+Keep the FULL normalized signed drift
+ J(u)=E(u)/u^q-tau E(h)/h^q,
+initially tau in{3/4,1}. Equivalently,
+ u^q J=Y^T[A^T H A-tau*(u/h)^q H]Y
+           +2 I e0^T H A Y+H00 I^2.
+Do not replace the child-by-innovation term by its absolute value or price
+I^2 separately. The negative child term and ALL source products stay joint.
+For q=1 every normalization is rational and exact. Later q>1 needs
+directed power enclosures or a uniform symbolic inequality, as before.
+
+The genuinely new arithmetic extraction
+Expand the drift using the common physical integer n:
+ J(u)=sum_(m,n) mu(m)mu(n) K_u(m,n),
+ K_u(m,n)=fvec_u(m)^T H fvec_u(n)/u^q
+                -tau*gvec_u(m)^T H gvec_u(n)/h^q,
+where fvec lists all parent delay coefficient functions and gvec their
+literal child shifts. This is an indefinite pair kernel, not a covariance
+matrix required to be PSD. Its signed sum is the exact drift itself.
+
+Generate squarefree multiplicative labels d>=2 in a declared finite roster,
+with canonical orientation n=d*m and gcd(m,d)=1. On every retained pair,
+ mu(m)mu(d*m)=mu(d)*mu(m)^2 EXACTLY.
+Units, squareful zeros and fixed-prime restrictions must be included. For
+distinct canonical integer ratios, edges do not duplicate. Extract the
+diagonal and these edges before fitting a correlation price:
+ B(u)=sum_n mu(n)^2 K_u(n,n)
+       +2 sum_(d,m eligible) mu(d)*mu(m)^2 K_u(m,d*m),
+ C(u)=sum_(unlinked ordered m!=n) mu(m)mu(n)K_u(m,n),
+so J=B+C EXACTLY. For more ambitious motifs, squarefree coprime ratios
+(d,e) with n=d*m,n'=e*m satisfy
+mu(n)mu(n')=mu(d)mu(e)mu(m)^2 when gcd(m,de)=gcd(d,e)=1.
+Use gcd(n,n')=m to make that enlarged partition canonical. A ratio roster
+that grows with u needs a symbolic summation/domain certificate; it is not
+one larger finite matrix. Begin with small fixed labels, not a huge cube.
+
+This identity does not assume independent signs. It supplies known signed
+pair contributions, often negative, that can offset diagonal/current-scale
+energy. Search their coefficient geometry jointly with H/a; do not grant
+every edge a negative sign. For example opposite source bands can make
+the product negative and a prime sign flip then yields a POSITIVE edge.
+Every edge sign follows the exact coefficient pair kernel.
+
+Paid algebra and uniform coefficient price
+For fixed ell,H,tau and a finite label roster, the diagonal plus linked
+edge contribution has a uniform absolute O(u^(1-q)) price, hence bounded
+for q>=1. This follows from the paid source coefficient L2 bound, Cauchy
+on f(m),f(d*m), and finite matrix/label coefficient budgets. It can be
+certified more sharply by exact floor-band decomposition: combine the
+terms multiplying the SAME mu(m)^2, check their coefficient signs and
+bound only the positive part using0<=mu(m)^2<=1. This preserves arithmetic
+edge cancellation before taking a norm. Explicit integration/floor-error
+certificates can produce a finite all-integer C_B for u above the base.
+Negative pieces may be discarded for an upper bound only after their
+pointwise sign has been proven; numerical negative sums are not sufficient.
+This pays a genuine new signed pair-extraction obligation, not the remainder.
+
+The decisive new uniform arithmetic leaf is
+ C(u)<=C_C for every u>U0,
+or a stronger signed inequality combining C with a retained negative part
+of B. It remains unpaid. The detector must export the exact residual pair
+kernel, its scale/source family, every removed edge and an independent
+nonproportionality witness against the original drift kernel. No residual
+may simply be labelled zero because it was small on discovery. No paid
+primitive may mention the desired R(u) power bound or the same drift under
+a new name. The extracted exact identities and their coefficient bounds
+are paid; the unlinked correlation is an honest arithmetic conjecture.
+
+Complete base and drift theorem
+The base can be paid without querying every arithmetic value. If the fixed
+unfolded prefix source has A0=sum_d |b_d|/d, then |R(v)|<=A0*v for ALL
+integers v>=0. Thus, for all1<=u<=U0,
+ E(u)/u^q<=A0^2*U0^(2-q)*sum_(i,j)|H_ij|/2^(i+j).
+This is conservative but complete, including every delay unit/empty prefix.
+Sharper exact base arithmetic is optional, not essential for closure.
+If B<=C_B and C<=C_C uniformly, F(u)<=tau F(h)+C_B+C_C.
+For tau<1, the full base gives F<=max(B0,(C_B+C_C)/(1-tau)); tau=1 gives
+only logarithmic normalized growth. Negative summed constants can safely
+be replaced by a nonnegative one. Each q needs its own complete constants.
+This closes only the fixed residual slice; original source/head/core/RH
+transfer and an epsilon family remain separate obligations.
+
+Detector invention loop and finite resource realization
+For fixed ell,a,q,tau the observed drift and extracted contribution are
+linear in H or its nonnegative Gram weights. Fit a finite minimax LP
+charging base size, coefficient budget and correlation remainder together.
+Use delayed signed products, not raw prime/bin auxiliary squares. Allow
+dual violations to generate new rational memory rays and new multiplicative
+motifs whose EXACT signs and coefficient kernels affect those rows. Round
+and independently recheck the final H, a, edge partition, source identities
+and full signed drift. Predictor optimization can use an outer small grid;
+do not silently treat its bilinear interaction with H as an LP.
+
+Compute full J from the few source values. Compute B by streaming eligible
+m and d*m using the existing bounded sieve and exact coefficient bands.
+Then observed C=J-B; no dense N-by-N matrix is required. Independently
+verify linked counts/signed relations with another sieve and band routine.
+The formal K and removed edge map reconstruct C exactly. Memory is
+O(N+number_of_rows*ell^2), not O(N^2). Prospectively gate rows, label count,
+bands and coefficient bits; charge construction and independent checks,
+use three workers/native threads1, sampled aggregate16GiB and a global
+7200s watchdog including final serial checks. No need for a new mu horizon.
+Freeze before drawing new irregular parents; inventory every historical
+parent and preserve all rejection/duplicate/boundary records. Every delay
+source uses independent fixed-kernel/Mertens binding, not only recurrence
+recombination. Finite fitting is invention only.
+
+Strong limitations and noncircularity audit
+The companion state by itself is a finite-filter repackaging of the target;
+it is not a number-theoretic gain. The pair extraction is what adds paid
+arithmetic structure. Even then the remainder is RH-strength for this
+slice once enough algebra/base is paid, because proving its constant
+bound would prove the displayed power recurrence. Physical nonproportionality
+is necessary for a distinct leaf, but not sufficient to make it easier.
+
+A finite dilation relation set plus arbitrary-sign pricing of all unlinked
+pairs is intrinsically inadequate. In the outer parent band, every child
+delay coefficient vanishes and K has a positive rank-one parent block.
+There are many unlinked pairs there; arbitrary signs can align to make
+their sum quadratic in the band size. Linked finite integer dilations
+cannot absorb a dense set of pairs from a short multiplicative interval.
+Thus the detector must seek an actual signed unlinked-correlation identity
+or theorem, not apply absolute values after extracting a few easy edges.
+Shared-cofactor ratios can link all primes through m=1, but their sign is
+then positive and their large contribution still needs composite cancellation.
+Expanding enough ratios to encode all pairs can reconstruct the entire
+original target; that is exact but supplies no price or contraction.
+
+The pilot therefore has two honest possible outcomes: a finite joint
+recurrence hypothesis with explicit proper remainder and newly paid linked
+coefficient control, or an exact dual/witness showing that this finite
+memory/motif grammar cannot improve the remainder. It must not count a
+fitted C_C as a proved control. A credible next analytic target is a
+closed signed cofactor-pair summation rule for the residual kernel with a
+uniform budget; that would supply real arithmetic progress. Current PNT,
+Mertens zero-free bounds, finite first/second-mode centering and coefficient
+norm estimates do not furnish it.
+
+Recommendation
+Implement only if081's stated objective is invention and diagnosis of
+joint signed drift with exact multiplicative pair extraction. This is
+distinct from080 separate-leaf prices and078 positive innovation norms,
+and it exposes an inspectable arithmetic remainder. Do not implement a
+plain delay-energy fit without the extraction: that would mostly rename
+the already studied storage recurrence. No route audited here currently
+pays the remaining square-root-scale signed theorem.
+
+Continuation: generalized ratios and an actual signed auxiliary certificate
+Root requests generalized unique reduced ratios and growing schedules,
+rather than a fixed integer-multiplier whitelist. This is appropriate:
+for any squarefree pair n!=n', write g=gcd(n,n'), n=a*g,n'=b*g,
+gcd(a,b)=1, a<b. Then a,b,g are squarefree, gcd(g,ab)=1, and
+mu(n)mu(n')=mu(a)mu(b)mu(g)^2. This is a canonical disjoint pair partition.
+With fixed excluded P, eligible a,b,g are coprime to P. All prime-prime
+pairs occur in g=1 packets; their positive sign is retained, not removed.
+Ratios a,b may range through D(u)=floor(u^eta), eta rational with its own
+work/exponent gate. This is not restricted to integer n'/n or small primes.
+
+Unbalanced growing extraction has a real cost. There are O(D^2) labels,
+and each contributes roughly u/max(a,b) pairs. Even crude coefficient
+pricing grows like u*D before normalization. Fixed label removal contributes
+only O(u) and usually changes a constant in the RH-strength remainder.
+Neither a larger graph nor exact ratio reconstruction itself gives a power
+bound. Telescoping from u to h also includes label entry/exit: D(u)!=D(h).
+The entry labels cannot silently inherit a child count or vanish.
+
+A machine-generatable density-balanced packet lemma
+There is nevertheless an actual uniform signed auxiliary control available,
+not just another fitted C. For squarefree g coprime to N=ab*product(P),
+Q_N(x)=#{g<=x:mu(g)^2=1,gcd(g,N)=1} satisfies
+ Q_N(x)=c_N*x+O((2^omega(N)+2)*sqrt(x)),
+ c_N=(1/zeta(2))*product_(p|N) p/(p+1).
+An explicit absolute constant can be supplied without any PNT/RH input.
+Proof: expand squarefreeness by sum_(d^2|g)mu(d), restrict gcd(d,N)=1,
+and expand gcd(g/d^2,N)=1 by its squarefree-divisor inclusion/exclusion.
+There are at most2^omega(N) floor errors per d<=sqrt x. The tail of
+sum d^-2 costs at most2sqrt x. The Euler product gives c_N. This elementary
+counting lemma is stronger and more explicit than assuming random mu signs.
+
+For fixed delay depth and coefficient kernel, define the unnormalized
+parent pair step kernel k_ab,H(t)=fdelay(a*t)^T H fdelay(b*t), t=g/u.
+All floor boundaries have exact form floor(u/(a*2^j*s)); nested floors
+commute, so its continuous step integral I_ab(H)=integral k_ab,H(t)dt
+is rational and linear in H. No parent/half extrapolation is needed.
+The step coefficient variation is bounded by a fixed source/H budget,
+uniformly in a,b. Therefore
+ sum_g mu(g)^2 1[gcd(g,N)=1] k_ab,H(g/u)
+     =c_N*u*I_ab(H)+O(C_kernel,H*(2^omega(N)+2)*sqrt u).
+The sum includes g=1 and its units exactly; the count error bound covers it.
+
+SEARCH can synthesize rational weights0<=w_ab(D)<=1 satisfying the EXACT
+rational bulk balance
+ sum_(a,b<=D eligible) w_ab(D)*mu(a)*mu(b)*r_N*I_ab(H)=0,
+ r_N=product_(p|N)p/(p+1).
+The common1/zeta(2) cancels; no approximate pi or floating rho enters.
+These weights select partial edges, with the remaining fraction explicitly
+left in the unlinked remainder. A constructive symbolic balancing rule is
+to split the displayed summands into positive/negative totals Pplus,Pminus;
+give each positive summand weight Pminus/(Pplus+Pminus), and each negative
+one weight Pplus/(Pplus+Pminus). If either sign is absent, use the zero
+packet and record the degeneration. This rule is fixed before source
+evaluation and depends only on H, rational endpoint geometry and arithmetic
+of the smaller labels a,b<=D, not on R(u). More selective nonnegative
+linear balancing can be searched with exact rational certificates.
+
+Define W(u) as the sum of these weighted linked pair contributions.
+Its u-sized density main term is exactly zero FOR EACH D(u). Since
+2^omega(ab*product(P))<=C_P*D (use2^omega(n)<=2sqrt n and ab<=D^2),
+there are at most D^2 labels and
+ |W(u)|<=C_kernel,H,P*sqrt u*D(u)^3.
+Thus eta<=1/6 pays |W(u)|<=C*u uniformly; eta<1/6 even supplies a
+sublinear auxiliary error. This is a conservative gate; sharper label
+summation/variation bounds can permit other exponents, but must be proved.
+This is a genuine signed all-scale packet estimate with an explicit finite
+constant and complete finite base. It does not bound the full target.
+
+The generated program can incorporate W as a bounded indefinite correction:
+ Etilde(u)=E_H(u)+lambda*W(u)+lambda*C*u^q, lambda>=0,
+where the paid |W|<=C*u^q ensures Etilde>=R(u)^2. Its drift contains
+lambda*[W(u)/u^q-tau*W(h)/h^q] and lambda*C*(1-tau). This gives universal
+domination without pretending an indefinite quadratic form is globally PSD.
+Both W(u) and W(h) use their OWN D and weights, so entry/exit terms stay
+exact. A bounded correction changes constants, not the growth exponent;
+its benefit must come from an exact useful joint drift cancellation.
+
+Concrete synthesis opportunity and honest stopping point
+The detector can invent balanced label packets and delay H/predictor,
+prove their rational zero-density identities and uniform squarefree-count
+error budgets, then search whether their coboundaries cancel a structured
+part of the full signed drift. That is more than fitting a recurrence C:
+new candidate auxiliary controls can actually be paid by elementary counting.
+Demand an exact symbolic coefficient/pair partition for any claimed drift
+cancellation, not agreement on sample values. A residual certificate could
+express the remaining drift as a bounded combination of these paid packet
+controls, paid diagonal coefficient bounds and nonpositive square forms,
+plus exact identities. Independent symbolic reconstruction would then close
+the recurrence if no unsigned/RH-strength leaf remained.
+
+There is no reason yet to expect that last representation to exist. Bounded
+or subpower ratio graphs leave a dense unlinked outer-band kernel. Under
+arbitrary-sign pricing it cannot be controlled by O(u); sparse linked
+packet coboundaries cannot represent every dense pair. If the detector
+cannot generate an exact cancellation/control identity for that frontier,
+its uniform correlation remains explicitly unpaid, and fitting its maximum
+is only invention. The balanced-packet theorem pays an auxiliary mechanism
+and its domination/base cost; it does NOT conceal or discharge the original
+square-root-scale signed obligation. This is the strongest concrete081
+pilot extension identified by this audit without claiming a new RH proof.
+
+Settled081 sharper packet theorem: independent confirmation
+Root now chooses fixed unnormalized delay drift E(u)-r E(h),1<=r<=2,
+with T=embed(H)-r*shift(H), h=floor(u/2). This removes variable u/h
+coefficients from T. Its normalized child multiplier is r*(h/u)^q<=r/2^q;
+r=3/2 is a strict contraction for q>=1. The source uses its original
+UNFOLDED kernel, P empty. All prefix divisors s are>=1. The refined proof
+below supersedes the preceding conservative D^3 error gate for this pilot.
+
+Let B=sum_s|b_s| and J=2*||T||_entrywise1*B^2. For a<b, the factor2
+accounts for both off-diagonal orientations. Prefix-product expansion gives
+ f_i(a*g) f_j(b*g)=sum_(s,t) b_s b_t
+   1[g<=u/max(a*2^i*s,b*2^j*t)].
+Thus each pair term is a finite linear combination of Q_ab(x) at REAL
+x=u/denominator, denominator>=b, with absolute coefficient sum<=J.
+One should use this prefix expansion, rather than charging total variation
+again and accidentally adding another factor2. H/T and delays are fixed;
+their exact entrywise budget is an admission premise.
+
+REAL-x squarefree counting constant
+For x>=1, expand mu(g)^2 by d^2|g and gcd(g,ab)=1 by squarefree-divisor
+inclusion/exclusion. The total floor error is at most
+ 2^omega(ab)*floor(sqrt x)<=2^omega(ab)*sqrt x.
+The missing Euler-product tail is at most
+ x*sum_(d>sqrt x)1/d^2<=2sqrt x,
+since sum_(d>sqrt x)1/d^2<=1/floor(sqrt x)<=2/sqrt x.
+For0<=x<1, Q_ab(x)=0 and c_ab*x<=x<=sqrt x, since0<=c_ab<=1.
+Hence the stated ALL-REAL bound is valid without flooring x in its main term:
+ |Q_ab(x)-c_ab*x|<=(2^omega(ab)+2)*sqrt x.
+This preserves every literal endpoint, including x<1 unit/empty regimes.
+
+Uniform epsilon omega certificate
+For rational epsilon=num/den>0, define the exceptional prime set
+ p^num<2^den and Cepsilon=product_exceptional (2/p^epsilon).
+Every nonexceptional prime has2<=p^epsilon, hence
+ 2^omega(N)<=Cepsilon*N^epsilon for ALL positive integers N.
+Equality p^num=2^den requires no exceptional factor. A finite independent
+certificate must verify primality and COMPLETENESS below2^(1/epsilon),
+with exact integer power comparisons. Cepsilon^den is an exact rational
+product, so a directed positive-root enclosure can supply a rational upper
+constant. Tiny epsilon can create an enormous exceptional roster/bit price;
+gate it prospectively rather than accepting an unbounded finite loop.
+
+Because ab<=D^2, each pair error is bounded by
+ J*(Cepsilon*D^(2epsilon)+2)*sqrt(u)/sqrt(b).
+Weights are<=1. Summing over a<b<=D and using
+ sum_(a<b)1/sqrt(b)=sum_(b=2)^D (b-1)/sqrt(b)<=D^(3/2),
+gives, after exact rational density balancing,
+ |W(u)|<=J*(Cepsilon+2)*sqrt(u)*D^(3/2+2epsilon)
+        <=J*(Cepsilon+2)*u^(1/2+eta*(3/2+2epsilon)).
+This is an actual uniform signed packet bound for the fixed T/source.
+Require1/2+eta*(3/2+2epsilon)<=q to pay normalized packet price at exponent
+q. Arbitrary rational eta may be generated, but outside this gate the
+specific proof is unsupported, not false or automatically safe. The all-real
+count proof includes the complete small-scale base of this packet estimate.
+
+Root's maximal-retention balancing rule is correct: for positive bulk P
+and absolute negative bulk N, use positive weight min(1,N/P), negative
+weight min(1,P/N). The weighted positive/negative totals agree exactly,
+and weights lie in[0,1]. If a bucket is empty, zero the nonzero bucket;
+zero-bulk labels may retain weight1, but must be tracked separately.
+
+Guards and metrics
+Report both bulk buckets, exact balance, total eligible label count, weighted
+retention, nonzero physical packet edges and zero-bulk labels. Reject a
+claimed new control when T/packet kernel is identically zero or the packet
+is zero on every admitted physical row; mark finite degeneracy separately
+from an all-scale identity. Require a nonzero proper packet witness and
+a dense unlinked residual witness. Balanced weights depending on H/D must
+follow the frozen symbolic rule; they may not depend on observed R(u).
+Do not let epsilon/Cepsilon, J or weight rounding silently exceed budgets.
+
+Weighted edge counts and exact coefficient magnitude removed describe
+coverage among eligible ratio graphs. They are NOT global dense-pair
+coverage. A subpower ratio graph has O(u*D) pairs versus O(u^2) possible
+source pairs; report residual outer-parent-by-outer-parent coefficient
+exposure as well. Exact moment/density balance and this signed packet bound
+are real proof progress, but an improved observed drift score alone is not.
+
+An explicit next residual target is the unlinked canonical-ratio sum with
+max(a,b)>D, retaining SAME full T kernel and all child terms. It can also
+be exported by gcd g: g>=2 terms use strictly smaller coefficient horizon
+u/g, while g=1 retains a current-radius primitive coprime-pair frontier.
+This split is exact and useful for identifying what a future recurrence
+would have to close. A claim of smaller-radius closure must expose that
+g=1 frontier and the growing exclusion gcd(ab,g)=1; suppressing either
+would reintroduce circularity. No bound for that frontier is currently paid.
+
+Initial independent producer/pilot source review
+Read mobius_density_packet_081.py and its focused test source after root
+reported8/8 tests PASS on first attempt. This reviewer did not execute them.
+The event sweep compiles the same prefix-product max-denominator kernel as
+the proof, including simultaneous endpoints and both off-diagonal orientations.
+Canonical coprime squarefree labels, mu(a)mu(b) signs, restricted squarefree
+counts, exact rational densities, maximal-retention balancing and full shared
+delay drift/remainder identities agree with the mathematical design. The
+omega product is rounded upwards using lower power bounds; its certificate
+is a proposal until an independent checker binds exceptional-prime completeness
+and enforces the packet exponent<=q. A program outside that proof gate is
+unsupported even if finite evaluation succeeds.
+
+The settled pilot has21 structural energy forms, proof-generated epsilon/eta
+schedules, separate baseline controls and three predeclared selection tracks.
+This is an invention search among static memory matrices and parametric
+ratio packets, not a claim to synthesize the presently missing dense
+correlation theorem. Paid packet constants and observed unlinked maxima
+must remain distinct selection metrics/statuses.
+
+Actionable issues sent to root before runner/science:
+1. weighted_pairs currently counts retained NONZERO LABELS via indicator
+   weights, not the sum of rational weights or physical integer pairs.
+   Rename it or export the true weighted label sum separately. Actual pair
+   count and extracted coefficient magnitude need their own scoped metrics.
+2. Generic resource reserve16384 bytes per pair can undercount a1024-event
+   Fraction kernel admitted by the128-term/depth3 API. The10000-ray/4096-bit
+   input domain can also create huge intermediate LCMs before work gates.
+   The small one-ray/four-or-eight-term pilot is safe, but generic API claims
+   need prospective event/rational-bit reserves and gates.
+3. All21 energy forms share the same squarefree-coprime prefix queries.
+   Looping energy then all parents can thrash the128MiB position cache.
+   Universal denominator/count vectors per parent/ratio, reused across H,
+   avoid roughly21-fold rescanning. Dominant scanning work is about uD
+   per full label bank before the proof schedules, not merely label count.
+4. Small eta may produce only D<=4 in the entire current horizon, leaving
+   missing density-sign buckets and a forced zero packet. Selection must
+   require two nonzero density-sign witnesses AND actual nonzero physical
+   packet/extraction on admitted discovery. Otherwise low paid-constant
+   selection can promote a vacuous graph. Density-zero but physically
+   nonzero kernels are distinct from identically zero kernels and should
+   retain an explicit status.
+
+The irregular validation draw is formula-independent and retains every
+rejection. It covers one interior roster-entry boundary per selected eta,
+not every ratio entry. That limited coverage is explicitly exported. The
+boundary is the exact first integer u with u^eta>=b, including irrational
+root cases. Freshness/exclusion, source binding and global budget enforcement
+still require runner inspection once its implementation appears.
+
+Independent settled runner/protocol review before081 freeze
+Read run_mobius_density_packet_081.py, mobius_density_packet_protocol_081.txt
+and revised producer/checker resource sections by source inspection only.
+The final17-form grammar removes zero-padded duplicates;33 proof schedules
+produce1122 programs across two sources. Discovery reuses19 declared080
+parents. This is correctly declared discovery, not a preserved holdout.
+The runner checks inherited exact fixed-source bindings, uses the original
+unfolded kernels/P empty and independently reconstructs every selected
+discovery row before candidate freeze. Every uniform packet price proposal
+is independently checked; every selected source/delay/ratio/count/packet/
+remainder identity is independently checked before held-out evaluation.
+
+All candidate files and their byte copies precede validation_draw. Freshness
+inventory includes080 parent and actual half queries plus older registered
+parents/halves. Validation recomputes the same exact source delays and every
+eligible label with the independent checker. The frozen finite discovery K
+is tested but never promoted to a uniform residual theorem. Metadata/program
+source binding and finite compiler admission remain distinct dependencies.
+
+Selection excludes baseline, missing-sign packets and zero observed packets,
+and requires memory cross terms. Three declared tracks are deterministic and
+deduplicate identical selected energy/schedule programs. Structural witnesses
+are currently exported at the largest bank D, possibly larger than a selected
+schedule's D; their role is bank-level algebra. Selected finite rows separately
+verify that schedule's own bucket masses and nonzero packet. Do not call an
+out-of-schedule bank witness a selected-roster witness without that distinction.
+
+The next-obligation export correctly includes the diagonal, omitted ratios
+and fractions1-w in U. Its normalized contraction3/4 is valid at q=1 even
+for odd u. For these fixed kernels E(1)=0 because their minimum divisor>=4,
+so the displayed base-free bound4*max(0,C_W+K) is valid IF the exported
+all-positive-integer U inequality holds. A more general kernel with unit
+exposure would need an explicit complete base; this shortcut is source-bound.
+
+Resource corrections inspected: exact intermediate4096-bit and common-LCM
+gates now bound generic rational growth. Pair reserve uses actual integer
+bit sizes and prospective event count, fixing the earlier fixed16KiB
+per-pair underestimate. The protocol explicitly calls weighted_pairs a
+retained nonzero LABEL count, resolving its semantic ambiguity. It does
+not claim global dense-pair coverage. Cross-energy count-query sharing is
+a performance recommendation; sampled aggregate RSS and global watchdog
+provide the operative pilot runtime/memory gates.
+
+One final orchestration fix sent to root: the initial settled runner's last
+watchdog call preceded final feedback/report serialization. Add a gate after
+those writes before emitting successful completion, as required by the
+protocol's inclusive7200-second stage. This does not affect mathematical
+packet claims. Subject to that small fix, no blocking mathematical, source,
+freeze, freshness or conditional-proof issue was found in the inspected
+runner/protocol. The dense uniform U inequality remains explicitly unpaid.
+
+Final pre-run confirmation and freeze disposition
+Reinspected root's final runner fixes: watchdog now runs after feedback
+serialization and report writing, with elapsed/RSS refreshed before report.
+Selected structural witnesses are filtered by that candidate's maximum D.
+Known-parent inventory additionally registers development real-kernel parent
+1103 and its actually queried delay endpoints551,275. Thus development
+arithmetic cannot silently become fresh scientific validation. Root reports
+updated standalone bound/finite/two-pair integration receipts; this reviewer
+did not replay them. Intermediate bit/term resource fixes remain in place.
+
+No remaining blocking issue found in the pre-run mathematics or inspected
+compiler/checker/runner/protocol. This review file is COMPLETE and STABLE
+for freeze; later scientific outcome review must use a separate new file.
+The cleared objective is a finite invention experiment with a paid uniform
+balanced-packet auxiliary theorem. It is not a paid U recurrence, original
+source/head/core/parameter bound or RH theorem. Planned postrun coefficient
+coverage diagnostics must likewise remain separate from arithmetic signed
+cancellation claims and preserve all frozen pre-run artifacts.

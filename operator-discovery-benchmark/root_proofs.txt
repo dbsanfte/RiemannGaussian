@@ -1,0 +1,155 @@
+UNIVERSAL LAWS FOR THE EXPANDED GRAMMAR
+
+These are mathematical proofs, not machine-checked Lean certificates. The
+accompanying exact rational tests audit implementations of the laws. Finite
+tests alone do not prove any universal statement. All arithmetic functions
+below have domain the positive integers and values in Q (or C when explicitly
+stated). delta means delta(1)=1 and delta(n)=0 for n>1; u means u(n)=1.
+
+1. COEFFICIENT-LOCAL RATIONAL POWERS
+
+Write (f*g)(n)=sum_{ij=n}f(i)g(j). This is a commutative associative Q-algebra
+with identity delta: associativity follows by reindexing both parenthesizations
+as the finite sum over triples ijk=n. If h(1)=0, a nonzero term in h^{*k}(n)
+has all k indices at least 2, hence n>=2^k. Therefore h^{*k}(n)=0 for 2^k>n.
+
+For f(1)=1 and a in Q define
+  P_a(f)=sum_{k>=0} binom(a,k) (f-delta)^{*k}.
+The preceding bound makes every coefficient a FINITE sum. It also establishes
+prefix consistency and termination without analytic convergence assumptions.
+
+Work temporarily in the finite quotient of arithmetic functions retaining
+n<=N. In this quotient h=f-delta is nilpotent, h^{*k}=0 for 2^k>N. Substitution
+of h into identities of formal power series over Q is therefore legitimate:
+no infinite sums survive. The binomial identity
+(1+x)^a(1+x)^b=(1+x)^{a+b} yields P_a(f)*P_b(f)=P_{a+b}(f).
+The formal identity ((1+x)^a)^b=(1+x)^{ab}, with both powers normalized at 1,
+gives P_b(P_a(f))=P_{ab}(f). One proof of these formal identities is the
+coefficient recurrence k*c_k=(a-k+1)*c_{k-1} obtained from
+(1+x)F'(x)=a F(x), F(0)=1; products and compositions satisfy the same
+equations and constant terms. This holds for every N, hence at every n.
+
+P_{1/q}(f)^{*q}=f for every integer q>=2. Uniqueness of the normalized root:
+in coefficient n>1 of r^{*q}, exactly q factorizations have one index n and
+all other indices 1; their contribution is q*r(n). All other nonzero terms
+involve indices <n. Thus r(n) is forced by f(n) and earlier coefficients.
+For q=2 this becomes
+  r(n)=(f(n)-sum_{d|n,1<d<n}r(d)r(n/d))/2, r(1)=1.
+Strong induction proves this recurrence defines the unique normalized root.
+These statements fail without a normalization/constant-term choice, so the
+implementation rejects f(1)!=1 rather than silently choosing another branch.
+
+2. FORMAL LOGARITHM AND EXPONENTIAL
+
+For f(1)=1 and h(1)=0 define
+  LOG(f)=sum_{k>=1}(-1)^{k+1}(f-delta)^{*k}/k,
+  EXP(h)=sum_{k>=0}h^{*k}/k!.
+The same 2^k bound makes these coefficient-local. Substitution into the
+formal identities exp(log(1+x))=1+x and log(exp(x))=x gives inverse laws.
+Similarly LOG(f*g)=LOG(f)+LOG(g), EXP(h+k)=EXP(h)*EXP(k), and
+P_a(f)=EXP(a*LOG(f)). These are classical formal arithmetic operations;
+recovery by a search is not evidence of mathematical novelty.
+
+3. ANALYTIC BRIDGE FOR ZETA ROOTS
+
+The Euler product for zeta holds absolutely on Re(s)>1. The unique normalized
+local power (1-x)^(-a) has coefficients
+  c_a(e)=a(a+1)...(a+e-1)/e!, c_a(0)=1.
+Take a=1/q with q>=2. Then 0<c_a(e)<=1. Define the multiplicative sequence
+  b_a(n)=product_{p^e||n}c_a(e).
+Consequently 0<b_a(n)<=1, so its Dirichlet series is absolutely convergent
+on Re(s)>1. Finite local coefficient identities show b_a^{*q}=u. Uniqueness
+from section 1 identifies b_a with P_a(u), so the grammar's root is exactly
+this sequence, with no factorization assumption needed in its construction.
+
+Absolute convergence justifies multiplying series, giving
+  B_q(s)^q=zeta(s), B_q(s)=sum_n b_(1/q)(n)n^(-s), Re(s)>1.
+The normalized analytic logarithm of zeta on this half-plane is the absolutely
+convergent Euler logarithm, which tends to zero as Re(s) tends to infinity.
+Thus B_q=exp(Log(zeta)/q) for this branch. A pointwise principal log need not
+agree with it throughout the half-plane; the numerical checks use Re(s)>=4,
+where |zeta(s)-1|<=zeta(4)-1<1 and the principal log agrees.
+
+For sigma>1, the omitted series tail after N is bounded by
+  sum_{n>N}|b_a(n)n^(-s)| <= sum_{n>N}n^(-sigma)
+                            <= integral_N^infinity x^(-sigma)dx
+                            =N^(1-sigma)/(sigma-1).
+root_probe.py checks Arb ball differences against this bound, with both the
+finite sum and the numerical zeta root independently evaluated by Arb.
+
+No globally single-valued qth root across all zeta zeros is asserted. On a
+region containing a zero of order m, a holomorphic qth root can exist locally
+only if q divides m: orders in B^q=zeta would satisfy q*ord(B)=m. RH concerns
+the locations of zeros, not this divisibility requirement. These arithmetic
+root identities therefore do not by themselves imply RH.
+
+4. DENOMINATORS REVEAL DIGITAL ARITHMETIC
+
+For a=1/q the local coefficient is
+  c_(1/q)(e)=product_{j=0}^{e-1}(q*j+1)/(q^e*e!).
+If ell is a prime dividing q, every numerator factor is 1 mod ell, so
+  v_ell(denominator(c_(1/q)(e)))=e*v_ell(q)+v_ell(e!).
+If ell does not divide q, each block of ell^k consecutive j contains exactly
+one solution to q*j+1=0 mod ell^k. Hence the numerator contains at least
+floor(e/ell^k) such factors for every k. Summing over k proves its ell
+valuation is at least v_ell(e!), so ell does not survive in the denominator.
+Multiplicativity then gives, for EVERY positive integer n,
+  D_(q,ell)(n)=v_ell(denominator(b_(1/q)(n)))
+             =v_ell(q)*Omega(n)+sum_{p^e||n}v_ell(e!).
+There is no cancellation against ell within individual or multiplied factors
+when ell divides q; this explains why the denominator valuations add.
+
+Legendre's formula follows by counting multiples of ell^k in e!:
+  v_ell(e!)=sum_{k>=1}floor(e/ell^k)=(e-s_ell(e))/(ell-1),
+where s_ell is the base-ell digit sum. The last equality follows by expanding
+e=sum_j d_j*ell^j and interchanging the two finite sums. In particular,
+  D_(2,2)(n)=2*Omega(n)-sum_{p^e||n}s_2(e).
+The detector is permitted to fit these expressions only AFTER it observes
+the exact root coefficients. The proof interprets, and is separate from,
+that empirical fit. This is a consequence of classical binomial valuations,
+not a claim that the formula is a newly discovered theorem.
+
+5. CARRY-WEIGHTED CONVOLUTION AND ITS REAL LIMITATION
+
+Let G_ell(n)=sum_{p^e||n}v_ell(e!), and set
+  C_ell(i,j)=G_ell(ij)-G_ell(i)-G_ell(j)
+           =sum_p v_ell(binomial(v_p(i)+v_p(j),v_p(i))).
+It is a nonnegative integer. Legendre's formula expresses it as
+  sum_p [s_ell(v_p(i))+s_ell(v_p(j))-s_ell(v_p(i)+v_p(j))]/(ell-1).
+This counts carries, including propagated carries, in the corresponding
+base-ell exponent additions. The linear Omega term in D_(q,ell) cancels,
+so C_ell is also the defect D(ij)-D(i)-D(j), independently of q with ell|q.
+
+For any rational t define
+  (a *_ell,t b)(n)=sum_{ij=n}t^{C_ell(i,j)}a(i)b(j),
+with t=0 interpreted by 0^0=1 and 0^k=0 for k>0. The defect telescopes:
+  C(i,j)+C(ij,k)=G(ijk)-G(i)-G(j)-G(k)
+                =C(j,k)+C(i,jk).
+Expanding triple convolution therefore proves associativity for every n and
+all inputs, including t=0. Symmetry proves commutativity, and C(1,n)=0
+proves delta is the identity. These constitute a universal operator proof.
+
+For t!=0 it is a transport of ordinary Dirichlet convolution:
+  a *_ell,t b = W_t^{-1}((W_t a)*(W_t b)),
+where (W_t a)(n)=t^{-G_ell(n)}a(n). Therefore this family at nonzero t is an
+algebra isomorphism, not independent arithmetic algebra in the abstract.
+At ell=2,t=0 the surviving factorizations have disjoint binary exponent
+digits; this is classical infinitary convolution. Other prime bases similarly
+retain no-carry exponent splits. Numerical recovery is interesting evidence
+of structure in zeta roots, but does not establish historical novelty.
+
+The superficially similar weight t^{Omega(gcd(i,j))} is generally NOT
+associative: at i=j=2,k=4, the exponent sums on the two sides are 3 and 2.
+Indeed min(1,1)+min(2,2)=3 but min(1,2)+min(1,3)=2. At t=2 the two impulse
+products at n=16 have weights 8 and 4. A finite negative control checks that
+the detector rejects this tempting candidate instead of assuming associativity.
+
+NOVELTY AND PROOF STATUS
+
+All proofs above are reusable explanations with stated domains. They certify
+the defined laws mathematically, not via a theorem prover. Their programs are
+also checked on unrelated rational inputs. Rational powers, formal LOG/EXP,
+Legendre/Kummer valuation arithmetic and infinitary convolution all have
+prior art. The carry family is reducible to a known weighted transport for
+nonzero t. A candidate may be new to the detector without being new to
+mathematics; none is counted as historically new on that basis.

@@ -1,0 +1,569 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "alpha": "1/24",
+  "collected_signed_terms": 980,
+  "elapsed_seconds": 2.3199261279951315,
+  "gamma": "1/2",
+  "generated_bound_targets": 22,
+  "inclusive_operations": 7480259,
+  "independent_rational_split_probes": 62,
+  "inherited_bindings": 144,
+  "kernel_remainder_branches": 253,
+  "linear_candidates": 98,
+  "main_operations": 2468692,
+  "model_calls_in_search": 0,
+  "new_component_bounds_proved": 0,
+  "original_source_terms": 86,
+  "peak_rss_kib": 704032,
+  "prior_failure_cost": {
+    "frozen_test_operations": 166939,
+    "startup_operations": 2000000,
+    "total_operations": 2166939
+  },
+  "representative_target": {
+    "auxiliary_identity": {
+      "all_j_including_zero_retained": true,
+      "anchor": "delta",
+      "base": "E=delta+One*T",
+      "identity_proved": true,
+      "terms": [
+        {
+          "coefficient": "1",
+          "finite_factor": "T^j",
+          "j": 0,
+          "kernel": "One^j"
+        },
+        {
+          "coefficient": "2",
+          "finite_factor": "T^j",
+          "j": 1,
+          "kernel": "One^j"
+        },
+        {
+          "coefficient": "1",
+          "finite_factor": "T^j",
+          "j": 2,
+          "kernel": "One^j"
+        }
+      ]
+    },
+    "complete_source_bound_proved": false,
+    "component_bound_proved": false,
+    "generic_prefix_rule": {
+      "U_power": "1",
+      "combined_log_degree": 1,
+      "constant": "30",
+      "rho": "1/2"
+    },
+    "id": "centered_A2_E2",
+    "m": 2,
+    "moment_drift_status": "conditional on ordinary convergence; never discarded",
+    "original_moment_drift_retained": true,
+    "p": 2,
+    "remainder_branches": [
+      {
+        "U_power": "0",
+        "coefficient": "1",
+        "complete_remainder_for_all_positive_arguments": true,
+        "constant": "1",
+        "j": 0,
+        "mass_bound": {
+          "U_log_degree": 0,
+          "constant": "1",
+          "t_log_degree": 0,
+          "t_power": "1"
+        },
+        "prefix_rule": "delta",
+        "rho": "0",
+        "status": "proved",
+        "uniform_quantifiers": "fixed finite constants and log degrees; EVERY U,t>=1"
+      },
+      {
+        "U_power": "1",
+        "coefficient": "2",
+        "complete_remainder_for_all_positive_arguments": true,
+        "constant": "3",
+        "j": 1,
+        "mass_bound": {
+          "U_log_degree": 1,
+          "constant": "3",
+          "t_log_degree": 0,
+          "t_power": "1"
+        },
+        "prefix_rule": "complete_floor_remainder",
+        "rho": "0",
+        "status": "proved",
+        "uniform_quantifiers": "fixed finite constants and log degrees; EVERY U,t>=1"
+      },
+      {
+        "U_power": "2*(1-kappa_j)",
+        "coefficient": "1",
+        "complete_remainder_for_all_positive_arguments": true,
+        "constant": "C_j*(2+1/(1-kappa_j))^2",
+        "j": 2,
+        "mass_bound": {
+          "U_log_degree": 2,
+          "constant": "9",
+          "t_log_degree": 1,
+          "t_power": "1"
+        },
+        "prefix_rule": "complete_kernel_remainder",
+        "rho": "kappa_j",
+        "status": "open",
+        "uniform_quantifiers": "fixed finite constants and log degrees; EVERY U,t>=1"
+      }
+    ],
+    "routes": [
+      {
+        "all_remainder_branches_feasible": false,
+        "conditional_auxiliary_route_has_feasible_exponents": false,
+        "current_generic_bound": {
+          "C_power": "6/7",
+          "energy_N_power": "2/7",
+          "prefix_N_power": "9/14",
+          "rho": "1/2",
+          "split": {
+            "active": [
+              0,
+              1
+            ],
+            "domain": "scale ratio R>=1; analytic error inequality checked separately",
+            "dual_slope": "0",
+            "dual_weights": [
+              "1/7",
+              "6/7"
+            ],
+            "parameter": "4/7",
+            "power": "4/7",
+            "problem": {
+              "lower": "0",
+              "terms": [
+                {
+                  "intercept": "0",
+                  "slope": "1"
+                },
+                {
+                  "intercept": "2/3",
+                  "slope": "-1/6"
+                }
+              ],
+              "upper": "1"
+            },
+            "tie_rule": "smallest parameter among minimizers",
+            "vertices": [
+              {
+                "parameter": "0",
+                "power": "2/3"
+              },
+              {
+                "parameter": "4/7",
+                "power": "4/7"
+              },
+              {
+                "parameter": "1",
+                "power": "1"
+              }
+            ]
+          },
+          "status": "proved exponent with fixed polylogarithmic losses",
+          "strictly_meets_target": false
+        },
+        "family_reference": "ordinary",
+        "missing_prefix_bound_region": {
+          "b_coefficient": "1",
+          "b_lower": "0",
+          "bound_schema": "exists fixed C,k: |P_(E^m)(t)|<=C U^b t^rho (1+log(2Ut))^k; all U,t>=1",
+          "critical_prefix_power": "1/2",
+          "equality_scope": "fixed polylogarithmic energy only; no constant payment at equality",
+          "finite_factor_U_cost": "2*(1-rho)",
+          "relation": "<",
+          "rho_coefficient": "10",
+          "rho_domain": {
+            "lower": "0",
+            "upper": "2/3",
+            "upper_excluded": true
+          },
+          "rhs": "2",
+          "target_energy_power": "0"
+        },
+        "proved_head_branches": [
+          {
+            "C_power": "3/5",
+            "b": "0",
+            "energy_N_power": "-1/10",
+            "j": 0,
+            "prefix_N_power": "9/20",
+            "rho": "0",
+            "split": {
+              "active": [
+                0,
+                1
+              ],
+              "domain": "scale ratio R>=1; analytic error inequality checked separately",
+              "dual_slope": "0",
+              "dual_weights": [
+                "2/5",
+                "3/5"
+              ],
+              "parameter": "2/5",
+              "power": "2/5",
+              "problem": {
+                "lower": "0",
+                "terms": [
+                  {
+                    "intercept": "0",
+                    "slope": "1"
+                  },
+                  {
+                    "intercept": "2/3",
+                    "slope": "-2/3"
+                  }
+                ],
+                "upper": "1"
+              },
+              "tie_rule": "smallest parameter among minimizers",
+              "vertices": [
+                {
+                  "parameter": "0",
+                  "power": "2/3"
+                },
+                {
+                  "parameter": "2/5",
+                  "power": "2/5"
+                },
+                {
+                  "parameter": "1",
+                  "power": "1"
+                }
+              ]
+            },
+            "strictly_meets_target": true
+          },
+          {
+            "C_power": "3/5",
+            "b": "1",
+            "energy_N_power": "-1/20",
+            "j": 1,
+            "prefix_N_power": "19/40",
+            "rho": "0",
+            "split": {
+              "active": [
+                0,
+                1
+              ],
+              "domain": "scale ratio R>=1; analytic error inequality checked separately",
+              "dual_slope": "0",
+              "dual_weights": [
+                "2/5",
+                "3/5"
+              ],
+              "parameter": "2/5",
+              "power": "2/5",
+              "problem": {
+                "lower": "0",
+                "terms": [
+                  {
+                    "intercept": "0",
+                    "slope": "1"
+                  },
+                  {
+                    "intercept": "2/3",
+                    "slope": "-2/3"
+                  }
+                ],
+                "upper": "1"
+              },
+              "tie_rule": "smallest parameter among minimizers",
+              "vertices": [
+                {
+                  "parameter": "0",
+                  "power": "2/3"
+                },
+                {
+                  "parameter": "2/5",
+                  "power": "2/5"
+                },
+                {
+                  "parameter": "1",
+                  "power": "1"
+                }
+              ]
+            },
+            "strictly_meets_target": true
+          }
+        ],
+        "remainder_branch_regions": [
+          {
+            "has_strictly_feasible_exponent": false,
+            "j": 2,
+            "kappa_coefficient": "8",
+            "kappa_domain": {
+              "lower": "0",
+              "upper": "2/3",
+              "upper_excluded": true
+            },
+            "relation": "<",
+            "rhs": "0",
+            "status": "conditional; the complete remainder estimate has not been proved",
+            "substitution": {
+              "b_constant": "2",
+              "b_rho_coefficient": "-2"
+            },
+            "threshold": "0"
+          }
+        ],
+        "rule": "ordinary"
+      },
+      {
+        "all_remainder_branches_feasible": true,
+        "conditional_auxiliary_route_has_feasible_exponents": true,
+        "current_generic_bound": {
+          "C_power": "8/9",
+          "energy_N_power": "7/27",
+          "prefix_N_power": "17/27",
+          "rho": "1/2",
+          "split": {
+            "active": [
+              0,
+              1
+            ],
+            "domain": "scale ratio R>=1; analytic error inequality checked separately",
+            "dual_slope": "0",
+            "dual_weights": [
+              "1/9",
+              "8/9",
+              "0"
+            ],
+            "parameter": "2/3",
+            "power": "5/9",
+            "problem": {
+              "lower": "0",
+              "terms": [
+                {
+                  "intercept": "-1/3",
+                  "slope": "4/3"
+                },
+                {
+                  "intercept": "2/3",
+                  "slope": "-1/6"
+                },
+                {
+                  "intercept": "1/2",
+                  "slope": "0"
+                }
+              ],
+              "upper": "1"
+            },
+            "tie_rule": "smallest parameter among minimizers",
+            "vertices": [
+              {
+                "parameter": "0",
+                "power": "2/3"
+              },
+              {
+                "parameter": "5/8",
+                "power": "9/16"
+              },
+              {
+                "parameter": "2/3",
+                "power": "5/9"
+              },
+              {
+                "parameter": "1",
+                "power": "1"
+              }
+            ]
+          },
+          "status": "proved exponent with fixed polylogarithmic losses",
+          "strictly_meets_target": false
+        },
+        "family_reference": "euler_remainder",
+        "missing_prefix_bound_region": {
+          "b_coefficient": "1",
+          "b_lower": "0",
+          "bound_schema": "exists fixed C,k: |P_(E^m)(t)|<=C U^b t^rho (1+log(2Ut))^k; all U,t>=1",
+          "critical_prefix_power": "1/2",
+          "equality_scope": "fixed polylogarithmic energy only; no constant payment at equality",
+          "finite_factor_U_cost": "2*(1-rho)",
+          "relation": "<",
+          "rho_coefficient": "13",
+          "rho_domain": {
+            "lower": "0",
+            "upper": "2/3",
+            "upper_excluded": true
+          },
+          "rhs": "4",
+          "target_energy_power": "0"
+        },
+        "proved_head_branches": [
+          {
+            "C_power": "2/3",
+            "b": "0",
+            "energy_N_power": "-2/9",
+            "j": 0,
+            "prefix_N_power": "7/18",
+            "rho": "0",
+            "split": {
+              "active": [
+                0,
+                1
+              ],
+              "domain": "scale ratio R>=1; analytic error inequality checked separately",
+              "dual_slope": "0",
+              "dual_weights": [
+                "1/3",
+                "2/3",
+                "0"
+              ],
+              "parameter": "1/2",
+              "power": "1/3",
+              "problem": {
+                "lower": "0",
+                "terms": [
+                  {
+                    "intercept": "-1/3",
+                    "slope": "4/3"
+                  },
+                  {
+                    "intercept": "2/3",
+                    "slope": "-2/3"
+                  },
+                  {
+                    "intercept": "0",
+                    "slope": "0"
+                  }
+                ],
+                "upper": "1"
+              },
+              "tie_rule": "smallest parameter among minimizers",
+              "vertices": [
+                {
+                  "parameter": "0",
+                  "power": "2/3"
+                },
+                {
+                  "parameter": "1/4",
+                  "power": "1/2"
+                },
+                {
+                  "parameter": "1/2",
+                  "power": "1/3"
+                },
+                {
+                  "parameter": "1",
+                  "power": "1"
+                }
+              ]
+            },
+            "strictly_meets_target": true
+          },
+          {
+            "C_power": "2/3",
+            "b": "1",
+            "energy_N_power": "-1/6",
+            "j": 1,
+            "prefix_N_power": "5/12",
+            "rho": "0",
+            "split": {
+              "active": [
+                0,
+                1
+              ],
+              "domain": "scale ratio R>=1; analytic error inequality checked separately",
+              "dual_slope": "0",
+              "dual_weights": [
+                "1/3",
+                "2/3",
+                "0"
+              ],
+              "parameter": "1/2",
+              "power": "1/3",
+              "problem": {
+                "lower": "0",
+                "terms": [
+                  {
+                    "intercept": "-1/3",
+                    "slope": "4/3"
+                  },
+                  {
+                    "intercept": "2/3",
+                    "slope": "-2/3"
+                  },
+                  {
+                    "intercept": "0",
+                    "slope": "0"
+                  }
+                ],
+                "upper": "1"
+              },
+              "tie_rule": "smallest parameter among minimizers",
+              "vertices": [
+                {
+                  "parameter": "0",
+                  "power": "2/3"
+                },
+                {
+                  "parameter": "1/4",
+                  "power": "1/2"
+                },
+                {
+                  "parameter": "1/2",
+                  "power": "1/3"
+                },
+                {
+                  "parameter": "1",
+                  "power": "1"
+                }
+              ]
+            },
+            "strictly_meets_target": true
+          }
+        ],
+        "remainder_branch_regions": [
+          {
+            "has_strictly_feasible_exponent": true,
+            "j": 2,
+            "kappa_coefficient": "11",
+            "kappa_domain": {
+              "lower": "0",
+              "upper": "2/3",
+              "upper_excluded": true
+            },
+            "relation": "<",
+            "rhs": "2",
+            "status": "conditional; the complete remainder estimate has not been proved",
+            "substitution": {
+              "b_constant": "2",
+              "b_rho_coefficient": "-2"
+            },
+            "threshold": "2/11"
+          }
+        ],
+        "rule": "euler_remainder"
+      }
+    ],
+    "source_term": {
+      "coefficient": "27/2",
+      "powers": [
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "status": "open",
+    "target": "P_(K*A^p*E^m - m_theta(A^p*E^m)*J_theta/theta)",
+    "theta": "2/3"
+  },
+  "source_matched_factors": 1,
+  "status": "AUXILIARY_IDENTITIES_AND_BACKWARD_BOUND_REQUIREMENTS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "symbolic_bound_families": 2,
+  "targets_redirected_to_joint_control": 20,
+  "whole_signed_bound_proved": false,
+  "zero_moment_candidates": 2
+}

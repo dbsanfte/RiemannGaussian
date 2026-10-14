@@ -1,0 +1,27 @@
+{
+  "owner": "independent checker",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_core_moment_region_search",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_moment_region_search operations=16748071 elapsed_seconds=4.284222605987452\n",
+      "stderr": "test_analytic_cubic_center_does_not_claim_ordinary_convergence (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_charge_only_meter_and_bounded_input_guards (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_complete_ast_coverage_scalar_kernel_and_inherited_paid_status (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_feedback_preserves_full_parent_and_new_mechanism_frontier (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_finite_cube_composition_keeps_head_moment_and_both_padding_terms (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_fractional_absolute_moments_and_four_factor_budget (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_fractional_kernel_cells_and_energy_zero_vs_strict_height (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_generic_ablation_not_arithmetic_gain_and_source_context_cannot_change (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_height_boundary_epsilon_and_lower_branch_cannot_be_dropped (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_independent_active_constraints_cover_degenerate_and_slanted_vertices (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_missing_channels_changed_transport_and_cycle_are_rejected (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_moment_library_ablation_changes_component_feasibility (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_optimistic_moment_floor_is_only_a_grammar_obstruction (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_proof_graph_is_acyclic_and_paid_nodes_have_no_open_dependency (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_recovery_retains_opposite_drift_hardy_cost_and_correct_reverse (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_reflection_cost_and_optimum_cannot_be_forged (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_strict_primary_provider_domains_and_unknown_imports (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\ntest_three_synthetic_targets_all144_bindings_and_cube_are_independently_verified (test_check_core_moment_region_search.MomentRegionCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 4.284s\n\nOK\n",
+      "operations": 16748071,
+      "elapsed_seconds": 4.4122535760106985,
+      "tests": 18,
+      "peak_rss_KiB": 36072
+    }
+  ],
+  "operations": 16748071,
+  "distinct_tests": 18,
+  "test_invocations": 18,
+  "failed_attempts": 0,
+  "resource_caps": {
+    "operations": 150000000,
+    "seconds": 310,
+    "address_space_bytes": 1073741824
+  },
+  "actual_source_observations": 0,
+  "old_search_and_suite_reruns": 0,
+  "edits_stopped": true
+}

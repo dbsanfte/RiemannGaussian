@@ -1,0 +1,247 @@
+Uniform divisor-complement transport: an exact rule and its remaining gate
+2026-10-09. New analytical file; frozen pilot sources/results remain unchanged.
+
+Starting point: pilot002 ID39 and the source-free algebra in
+semantic_candidate_review_index_switch.txt. No numerical source table, response,
+probe, test, fitted coefficient or hash is used. Statements below are direct
+mathematical derivations. They bound components and identify a possible new
+two-state construction; they do not certify an original-Mobius all-scale drift.
+
+1. A general interval/quotient-cap L2 certificate
+------------------------------------------------
+Let A,B be integers with 1<=A<=B, I=[A,B], and length L=B-A+1. Let K be a
+nonnegative integer and C,a>=0. Let f(k) be real or complex and satisfy the
+FUNCTIONAL hypothesis
+ |f(k)|<=C*k for every positive k<=K.
+For every t in I choose an arbitrary subset D(t) of its positive divisors,
+and arbitrary coefficients c(t,d) satisfying |c(t,d)|<=a. Require
+ 1<=t/d<=K for every admitted pair (t,d).
+No nesting, multiplicativity, independence, fixed sign, or common subset among
+different t is assumed. Define
+ F(t)=sum_{d in D(t)}c(t,d)f(t/d).
+The all-pairs absolute bound, with k=t/d, gives
+ |F(t)|<=a*C*sum_{k<=K,k|t}k.
+Counting multiples of lcm(k,j) in the exact inclusive interval yields
+ A^-2 sum_{t=A}^B |F(t)|^2
+ <=(a*C)^2/A^2 *[L*sum_{k,j<=K}gcd(k,j)+(sum_{k<=K}k)^2]
+ <=(a*C)^2*[L*K^2*H_K/A^2 + K^2*(K+1)^2/(4A^2)],                 (1)
+ H_K=sum_{n=1}^K1/n.
+The first inequality uses count<=L/lcm(k,j)+1 and k*j/lcm=gcd. The second
+uses sum gcd(k,j)<=sum_{g<=K}g*floor(K/g)^2<=K^2 H_K. Thus EVERY mixed pair
+is included and bounded; this is not a diagonal-only identity. If K=0 and
+the divisor subset is empty, the bound and output are bothzero.
+
+This rule also covers arbitrary hyperbolic bands D0<d<=D1, d|t, provided
+K is an exact integer upper bound for B/D0. The lower quotient constraint
+coming from D1 can be kept in the state, although discarding it only enlarges
+the positive bound. Strict endpoints require k<B/D0 when d>D0; a safe larger
+K is permitted. In the square-root applications below an integer root of
+4A or16A supplies a safe K without an irrational cutoff comparison.
+To conclude a logarithmic bound uniformly, L/A and K^2/A must be bounded by
+fixed constants independent of A. A general band with no such aspect bounds
+only receives formula(1), not an automatically logarithmic certificate.
+
+For implementation, H_K need not be enumerated or fitted. The elementary
+dyadic grouping bound H_K<=1+ceil(log2 K) gives a purely integer upper bound
+using (K-1).bit_length() for the ceiling when K>=1. The certificate data are
+the exact interval, denominator A^2, coefficient envelope a, source envelope
+C*k, and quotient cap K. A
+sound AST rule must independently establish each hypothesis for all its
+claimed contexts, keep original guards/endpoints, and not infer them from
+finite responses. A fixed numerical upper bound on some saved cases is not
+this uniform certificate. No component certificate changes the target E.
+
+2. Full large-divisor complements, not just a new-cutoff strip
+-------------------------------------------------------------
+Write M(k)=sum_{n<=k}mu(n), M(0)=0, so |M(k)|<=k. Define R=floor(sqrt(X))
+and the FULL complement on t in[X,2X-1]
+ C_R(t)=sum_{d|t,d>R}mu(d)M(t/d).
+Since integer d>R implies d>sqrt(X), its quotient satisfies
+ k=t/d<2sqrt(X). Put K=floor(sqrt(4X)), so K<=2sqrt(X). Rule(1), a=C=1,
+gives the explicit unconditional bound
+ ||C_R||_X^2:=X^-2 sum_{t=X}^{2X-1}C_R(t)^2<=4H_K+9.             (2)
+The constant9 follows from K+1<=3sqrt(X). The same bound holds for EVERY
+t-dependent subset of this full complement and every coefficient of modulus
+at most1. It does not depend on an asserted sign variation of mu(d).
+
+The root integer is only an upper bound: if the strict quotient cutoff is
+smaller, the state still keeps its exact d/t domain. Complements can include
+d=t and quotient1. At X1 the actual complement is empty, though(2) remains
+a harmless positive upper bound. The output is never clipped or extended to
+nondivisors. Each term of the complement is a smaller prefix, but its whole
+sum includes all their correlations.
+
+The frozen parent complement also has a logarithmic bound on the CHILD
+block. If its threshold remains R=floor(sqrt(X)) while t in[2X,4X-1], use
+K0=floor(sqrt(16X)), A=2X,L=2X in(1), obtaining
+ (4X^2)^-1 sum_child C_R(t)^2<=8H_K0+25.                         (3)
+Here K0<=4sqrt(X), K0+1<=5sqrt(X). The fresh child threshold
+R'=floor(sqrt(2X)) instead satisfies(2) at scale2X. Thus both complements
+and every difference formed by deleting some of their divisor indices have
+unconditional logarithmic normalized squares. The previously proved new-strip
+bound32H_R' is another valid, more specialized estimate; it is not necessary
+to restrict the full-complement rule to that strip.
+
+3. Exact truncation exchange and the open mixed correction
+----------------------------------------------------------
+Let the cutoff-INDEPENDENT arithmetic function be
+ H(t)=sum_{d|t}mu(d)M(t/d)=(mu*M)(t)
+as a Dirichlet convolution of the function M with mu. ID39 is
+ U_R(t)=H(t)-C_R(t).
+The full transform is not1: sum_{d|t}H(d)=M(t), and at a prime p,
+H(p)=M(p)-1. The inversion identity for an unweighted floor kernel cannot
+be substituted for this M kernel.
+
+With R' the child threshold, put Knew=C_R-C_R'. On the child block
+U_R'=U_R+Knew, so the complete cutoff correction is
+ 2<U_R,Knew>_{2X}+||Knew||_{2X}^2
+ =2<H,Knew>_{2X}+||C_R'||_{2X}^2-||C_R||_{2X}^2.                (4)
+Formula(4) is the exact complement exchange, retaining every old/new and
+new/new term. Its last two terms are individually logarithmically bounded
+by(2),(3). The ONLY unrestricted critical factor in this decomposition is
+the correlation <H,Knew>. Magnitude Cauchy-Schwarz bounds it by
+||H||_{2X}*O(sqrt(log X)); an independent norm bound for H or a signed
+transport absorption is still needed. The elementary norm of the old bank
+only gives a positive-power bound here. Small complement norm alone never
+licenses dropping its cross term with a large state.
+
+This identifies a general certificate gate: the complement theorem can
+discharge the C squares in a transport proof, while the proof must separately
+discharge the signed H/Knew correlation (or absorb it by a proved negative
+term from full original-energy transport). Both its coefficient and its exact
+child interval remain in the gate. No unknown original energy on the right
+has been replaced by a constant.
+
+4. A new structural state can cancel the cutoff mixed term exactly
+-----------------------------------------------------------------
+There is a purely algebraic two-state completion. Take states
+ Uminus=H-C_R (the old bank), Uplus=H+C_R=Uminus+2C_R,
+with equal nonnegative weights1/2. The resulting potential is EXACTLY
+ Vpair(X)=||H||_X^2+||C_R||_X^2.                                (5)
+This is the parallelogram identity. All H/C mixed terms cancel between the
+two complete squares; they have not been discarded inside either square.
+The general compensation rule requires the same cutoff-independent H(t) in
+both states and a proved quotient-cap envelope for C_X on parent and child.
+If H also depends on X, its fresh-child change remains a separate unresolved
+core transport; the parallelogram identity does not control that change.
+If retaining the old state's weight1 is required, use weight1 for both and
+the right side is2||H||^2+2||C_R||^2 instead. These are new programs, not
+an asserted identity replacing ID39's original single-state potential.
+
+The actual cutoffs, complements and queries admit finite AST expressions:
+H is the sum over1<=d<=t with the divisor guard, and C is the sum over
+R+1<=d<=t with that guard. M(t/d) has a positive endpoint on a true divisor
+term. The source index d and prefix indices never exceed t. Empty sums retain
+their original domain behavior. No implementation or research computation is
+performed here; future implementation must still meet its own syntax/work caps.
+
+For the paired program, the moving-cutoff contribution is just the difference
+of C squares, logarithmically bounded without any H correlation. Hence its
+full cofinal signed drift is equivalent, up to q-dependent constants, to the
+cutoff-independent condition for
+ E(X)+||H||_X^2.
+Indeed the extra C energy is O(1+log X), and either direction of the increment
+comparison loses at most its parent or child value. For every fixed q this
+is bounded by a finite constant times ceil(X^(1/q)). The original E is fully
+present. The construction closes cutoff compensation; it does NOT close the
+remaining signed drift of E+H energy. At X1, H=1,C=0, so Vpair(1)=1 and
+Wpair(1)=2 with weights1/2. The weight1 pair has Wpair(1)=3. These anchors
+cannot be omitted in a later telescoping argument.
+
+More generally, adding nonnegative squares can cancel an H/C mixed monomial
+but cannot algebraically remove its unresolved H diagonal. Starting with
+(H-C)^2 and adding w*(aH+bC)^2, w>=0, cancelling the cross requires wab=1;
+the H diagonal is then1+w*a^2>=1. A new source relation or signed estimate,
+rather than positivity alone, must control that remaining energy.
+
+5. Exact block operator laws: where contraction is, and is not, available
+------------------------------------------------------------------------
+For an arbitrary input f, define its ORIGINAL exact quotient-window energy
+ B_f(y)=y^-2 sum_{integer n, y<=n<2y}|f(n)|^2, y>0.
+For integer y this is the usual original block energy. The real-window
+notation is only explicit endpoint bookkeeping, not a transformed source.
+Let D_d f(t)=1_{d|t}f(t/d). Exact integer endpoints imply
+ ||D_d f||_X=d^-1*sqrt(B_f(X/d)).                               (6)
+In particular its squared energy is B_f(X/d)/d^2, NOT B_f(X/d)/d.
+The latter factor would belong to floor-lag repetition without a divisor guard.
+
+Minkowski thus gives
+ ||sum_d a_d D_d f||_X<=sum_d |a_d|/d *sqrt(B_f(X/d)).            (7)
+Every term in(7) refers to the original input f at its explicit quotient
+window. A claimed rule using only integer dyadic energies must first justify
+coverage of those possibly noninteger/non-dyadic windows. A covering loss
+cannot silently be omitted from a proposed contraction constant.
+
+For the unweighted Mobius bank, the magnitude coefficient is H_R. This grows
+with its cutoff, so(7) is not a cutoff-independent contraction. Furthermore
+ANY full bank containing d1 fails a generic STRICT same-block contraction:
+choose a formal input supported inside[X,2X-1] and zero below X. All d>=2
+contributions to that output block vanish, and its output equals the input.
+Thus a uniform constant<1 against that original block norm is impossible for
+generic inputs. This does not rule out a signed rule specialized to actual M;
+it says what extra functional information that rule must use.
+
+Reciprocal DIVISOR weighting does give a precise generic tail contraction.
+For P f=sum_{d>=2,d|t}a_d/d*f(t/d), |a_d|<=1, and the functional norm
+ ||f||B=sup_{y>0}sqrt(B_f(y)) assumed finite, (7) gives
+ ||P f||B<=kappa*||f||B,
+ kappa=sum_{d>=2}1/d^2<=1/4+integral_2^infinity u^-2 du=3/4<1.
+This contraction is on the original f quotient windows. It does not bound
+||M||B without an additional bounded-forcing equation M=g+P M or another
+valid source identity. No such equation is supplied by the unweighted ID39
+bank. Local finite-window versions remain true but do not imply a uniform
+bound as their horizon increases.
+
+There is also an exact reciprocal normalization of convolution inversion.
+Set m(t)=M(t)/t and h(t)=H(t)/t. Then
+ h(t)=sum_{d|t}mu(d)/d*m(t/d),
+ m(t)=sum_{d|t}1/d*h(t/d).
+Their nonidentity tails satisfy the preceding contraction law, but it acts
+on m,h rather than the original M,H energies. The scaling is decisive:
+ E_M(X)/(4X^2)<=B_m(X)<=E_M(X)/X^2.
+Recovering E_M multiplies by X^2. A contraction after this normalization is
+not a uniform estimate in the critical original target units.
+
+Reciprocal QUOTIENT weighting is a different operation:
+ Q f(t)=sum_{d|t}mu(d)*f(t/d)/(t/d).
+For |f(k)|<=k, |Q f(t)|<=tau(t), the full divisor count. If
+J=floor(sqrt(2X-1)), divisor pairing gives tau(t)<=2*tau_J(t) on the block,
+and exact multiple counts give
+ ||Q f||_X^2<=4[H_J^3+2]/X=O((1+log X)^3/X).                   (8)
+One uses sum_{h,j<=J}1/lcm(h,j)<=H_J^3 and J^2<=2X in the count remainder.
+Thus this FULL quotient-weighted state, or any subset with bounded coefficients,
+has uniformly bounded, decaying storage by a source-envelope rule alone.
+It is bounded padding: adding it as its own square changes a cofinal E drift
+only by a bounded error, without proving that drift. Mixing it inside an
+unresolved square again retains its cross term with that square's core.
+
+For its restricted bank1<=d<=R, an alternative exact original-energy bound is
+ ||Q_R f||_X<=X^-1 sum_{d<=R}sqrt(B_f(X/d))
+             <=R/X*sup_{d<=R}sqrt(B_f(X/d)).
+The reciprocal quotient attenuates the original signal; it is not the ID39
+operator with a new proof of contraction. It must not be substituted into
+the original AST or target without explicitly creating a different state.
+
+6. What a general full-drift certificate still needs
+----------------------------------------------------
+Rules(1),(2),(3),(8) are unconditional under their explicit envelope/support
+hypotheses and suitable for a restricted symbolic rule library. The exact
+paired-state construction(5) is a complete cutoff-compensation rule. Neither
+requires fitted constants, an independent sign hypothesis or unknown E bounds.
+
+A generic signed-drift theorem based ONLY on |f(k)|<=k, bounded divisor
+coefficients and nonnegative potentials cannot close the original target.
+Those magnitude hypotheses also permit the formal input f(k)=k, for which
+E_f(X)>=X. Any nonnegative potential with a finite initial anchor satisfying
+the cofinal drift condition would imply E_f(X)=O_q(X^(1/q)) by dyadic
+telescoping, a contradiction for q>1. This is a functional obstruction,
+not an experiment on another source and not a refutation for actual M.
+Actual-Mobius information beyond that envelope must enter a successful theorem.
+
+For ID39 itself the main remaining correlation is <H,Knew> in(4), together
+with the signed frozen-core E/H transport. For the paired replacement the
+cutoff correlation is genuinely removed, leaving exactly the signed drift
+of E+||mu*M||^2. Reciprocal weights can prove different contractive or bounded
+operators, but do not resolve that original critical-energy gate. All original
+endpoints, complements, complete parent/child squares and initial W1 remain
+part of the obligation. No RH/global/universal estimate is asserted.

@@ -1,0 +1,330 @@
+GROWING PRIME CONDITIONING: JOINED SOURCE AND CORE_INVERSE AUDIT 065
+=================================================================
+
+Source-only scope and conclusion
+-------------------------------
+This review reads MOBIUS_QUADRATIC_CONTRACTION_HANDOFF.txt,
+MOBIUS_QUADRATIC_CONTRACTION_REVIEW_064.txt,
+MOBIUS_PREFIX_REPAIR_REVIEW_063.txt, mobius_prefix_repair_063.py and
+mobius_prefix_completion_062.py. No scientific results array, candidate,
+optimizer, sign table or numerical study was read or executed. No prior
+file was changed. All identities below are finite algebraic identities;
+no RH, Mertens estimate, prime-distribution asymptotic or statistical
+prime-sign hypothesis is invoked.
+
+The fixed-finite-set, raw single-indicator obstruction in064 does not
+settle growing conditioning for the joined W source with core_inverse.
+This audit proves a sharper reconstruction-defect identity for the
+actual formal domain, and an exact source-truncated harmonic-profile
+separation which core_inverse preserves. It does NOT prove that the
+partially conditioned envelope has square-root growth, and does NOT
+prove an all-scale lower obstruction to that growth for this source.
+The exact residual lemmas required for either conclusion are given
+below. In particular, an O(N) floor error cannot be used to support an
+N/log(N)^2 lower witness.
+
+1. Exact source dictionary, including the prefix and both channels
+----------------------------------------------------------------
+Fix integers N,y,H and p=3,q=5, registered primes R0={2,3,5}.
+Write R=30, r in[p/q,1], and
+
+ w_b(d)=floor(4N/(bd))-3floor(2N/(bd))+2floor(N/(bd)),
+ f(d,r)=1[d<=y]*(w_p(d)-r*w_q(d)),  1<=d<=H.
+
+For every d, w_b(d) is one of -1,0,1. Indeed writing N/(bd)=k+t
+reduces it to floor(4t)-3floor(2t), whose four quarter-interval
+values are 0,1,-1,0. Thus |f|<=1+r<=2.
+
+For b=p,q, let a_(b,T) be the exact integer threshold dictionary:
+for (v,c)=(4,1),(2,-3),(1,2), and each integer
+1<=k<=floor(floor(vN/b)/(H+1)), add c to the threshold
+T=min(y,floor(floor(vN/b)/k)), provided T>H.
+Duplicate thresholds are combined with their signs. Set
+
+ a_T(r)=a_(p,T)-r*a_(q,T),
+ K_T=floor(T/(H+1)), K=floor(y/(H+1)), B=max(H,K).
+
+Zero dictionary entries may be retained. The formal long expression
+on each short row is EXACTLY
+
+ G_chi(d,r)=sum_(T>H) a_T(r)
+                   sum_(ell<=K_T) chi(ell)*floor(T/(ell*d)).       (1)
+
+This is the source-free G times the SAME chi used in the inverse.
+It retains source truncation, threshold multiplicities, units and the
+joined p/q signs. No untruncated W channel has replaced (1).
+If y<=H the long dictionary is empty; all formulas use empty sums.
+The common conservative K may exceed the largest actually used K_T.
+
+Let rho(d) be d with all factors 2,3,5 stripped, and s(d)=d/rho(d).
+The declared core_inverse fill is the fixed linear map
+
+ (Pv)(d)=v(rho(d))/s(d), 1<=d<=H.                              (2)
+
+In particular P(1/d)=1/d EXACTLY, on every row including d=1.
+Set E_chi=P(f-G_chi), A_chi(j)=sum_(m<=H/j)chi(m)E_chi(jm),
+A_chi(H+1)=0, and c_chi(j)=A_chi(j)-A_chi(j+1).
+This is precisely the formal evaluation of the063/064 quadratic lift.
+For chi=ordinary mu it is the licensed short repair. For other chi it
+is a polynomial evaluation; its floor reconstruction need not equal E.
+
+2. What the all-free-plus assignment actually implies
+----------------------------------------------------
+Let C=floor(B^xi). Assume the registered primes are conditioned, either
+because C>=5 or by explicitly adjoining them. Define the squarefree
+multiplicative function on all positive integers
+
+ chi_C(n)=mu(n)^2*(-1)^(number of prime divisors of n <=C),       (3)
+
+with the evident modification if extra registered primes are adjoined.
+All primes outside the conditioned set receive the COMMON sign +1.
+This is a permitted assignment for every row and both occurrences of
+chi. Extension beyond B is for proving identities, not a new query or
+an assertion that large ordinary-mu values are available.
+
+For a prime power p^e with e>=1, the divisor sum of chi is
+1+chi(p): it is zero for conditioned p and two for free p. Therefore
+
+ h_C(n):=(chi_C*One)(n)
+       =2^omega(n)*1[n has no conditioned prime divisor].      (4)
+
+The formula includes prime powers: no squarefree indicator belongs
+on its right side. Its value at n=1 is one. This proves the hypothesis
+in the task exactly, without prime counting. Actual mu instead has
+mu*One=delta_1. Equation (4) describes information that the free-sign
+relaxation discards, not a replacement source law for ordinary mu.
+
+For ANY finite vector E and ANY multiplicative squarefree-sign chi,
+let c=Delta D(chi)E. Telescoping the floor basis gives
+
+ sum_(j<=H)c(j)*floor(j/d)
+   =sum_(k<=H/d)A(kd)
+   =sum_(n<=H/d)(chi*One)(n)*E(dn).                            (5)
+
+Thus for the all-free-plus evaluation of the actual joined polynomial,
+
+ F_H c_C(d)=E_C(d)+sum_(2<=n<=H/d)h_C(n)E_C(dn).              (6)
+
+Here F_H denotes the ORIGINAL unweighted floor reconstruction. Its
+extra term remains even on rows coprime to30. Formal signs do not
+preserve the old exact repair admission; that admission was established
+at ordinary mu. Nevertheless every universally valid free-sign upper
+bound must bound c_C. There is no contradiction between these facts.
+
+3. A stronger exact simplification at the square-root conditioning gate
+------------------------------------------------------------------------
+Suppose every prime <=floor(sqrt(B)) is conditioned. Two free primes,
+counted with multiplicity, have product>B. Hence on 1<=n<=B,
+
+ h_C(n)=delta_1(n)+2*1[n is a free prime].                     (7)
+
+In particular the reconstruction defect is now exactly
+
+ F_H c_C(d)-E_C(d)=2*sum_(free primes P<=H/d)E_C(dP).          (8)
+
+This is a growing-set statement, substantially sharper than treating
+(4) as an unrestricted rough-number sum. Products of two free primes
+can still occur at the composite scale HK; (7) cannot be used there.
+
+Convolving (7) with actual mu gives, for every n<=B,
+
+ chi_C(n)=mu(n)+2*v_C(n),
+ v_C(n)=sum_(free primes P|n)mu(n/P).                         (9)
+
+At most one summand survives. In fact n/P<=C when C>=floor(sqrt(B)), so that
+cofactor contains only conditioned primes. This matches the direct
+prime-parity expansion, including nonsquarefree n (for n containing a
+conditioned square, the summand is zero). The forbidden case P^2<=B
+cannot occur. Equation (9) is a short-index identity, not a current-scale
+Mertens estimate.
+
+For a general free-sign assignment x_P, the exact version is
+
+ u_x(n)=mu(n)+sum_(free primes P|n)(x_P+1)*mu(n/P), n<=B.       (10)
+
+Consequently h_x(n)=delta_1(n)+(x_P+1) at n=P and zero at all
+other n<=B. This is an exact linear dictionary for short-index inputs;
+the repair itself remains quadratic because both D and G use u_x.
+
+Define L(u)=Delta D(u)Pf and Q(u,v)=Delta D(u)PG(v), with G
+as in (1), retaining source parameters. Then
+
+ c_C=c_mu+2L(v_C)-2Q(v_C,mu)-2Q(mu,v_C)-4Q(v_C,v_C).         (11)
+
+No term in (11) can be dropped merely because it has degree two.
+The two unequal cross terms are necessary: core_inverse and the source
+matrix do not make Q symmetric. An expansion in x_P+1 from (10),
+followed by x_P^2=1, gives a compact exact degree-two next-search input.
+An estimate for c_mu is itself unpaid; using (11) does not pay it.
+
+4. Harmonic-profile separation which core_inverse preserves
+----------------------------------------------------------
+Put S_C(x)=sum_(ell<=floor(x))chi_C(ell)/ell and define
+
+ M_C(r)=sum_(T>H)a_T(r)*T*S_C(K_T),
+ R_C(d,r)=sum_(T>H)a_T(r)
+                  sum_(ell<=K_T)chi_C(ell)*{T/(ell*d)}.        (12)
+
+Braces mean the exact fractional part. The floor identity in (1) gives
+
+ G_chi(d,r)=M_C(r)/d-R_C(d,r),
+ E_C(d,r)=Pf(d,r)-M_C(r)/d+PR_C(d,r).                        (13)
+
+Because (2) fixes 1/d, there is NO approximation or smooth-row error
+in (13). This propagates the harmonic profile through the declared fill
+and includes every truncated threshold and both channels. The resulting
+repair identity is
+
+ c_C=Delta D(chi_C)Pf-M_C*t_C+Delta D(chi_C)PR_C,
+ t_C(j)=S_C(H/j)/j-S_C(H/(j+1))/(j+1).                       (14)
+
+The virtual last row gives t_C(H)=1/H. Neither t_C nor PR_C has a
+known sign. The defect (4), the degree-two gate and profile invariance
+alone do not bound their combined variation or prevent cancellation.
+
+The f-only contribution IS paid, uniformly over every formal sign:
+
+ ||Delta D(chi)Pf||_1<=2*sum_(d<=H)tau(d)|Pf(d)|
+                    <=4H*(1+log H).                        (15)
+
+This follows by counting divisors and using |chi|<=1 and |Pf|<=2.
+At H of order sqrt(N), this is an admissible square-root/polylog cost.
+Thus the exact unpaid all-free-plus expression has been isolated as
+
+ Z_C(r)=Delta D(chi_C)[PR_C(r)-M_C(r)/d].                    (16)
+
+Writing separate norms for its two terms loses the cancellation that
+the audit is supposed to test.
+
+5. Exact residual lemmas for an upper estimate or a lower witness
+----------------------------------------------------------------
+Let E_S(r)=sum_(j,U)|b_(j,U)(r)| denote064's fully coalesced conditioned
+Fourier coefficient L1. Let c_x be the common-sign evaluation from(10).
+The following are different obligations:
+
+ (A) A Fourier-envelope theorem requires, at both r=p/q and r=1,
+     sum_(j,U)|Fourier_U(Delta D(u_x)[PR_x-M_x/d])|
+          =O_epsilon(N^(1/2+epsilon)).                      (17)
+
+Here M_x,R_x are defined by (12) with u_x. The paid Pf polynomial has
+Fourier L1 bounded by the SAME bound (15): each individual u_x(m) is
+one conditioned sign times a single character, so termwise divisor
+counting applies. Equation(17) is therefore an exact sufficient leaf
+for the original envelope, with the existing paid long budget added.
+It concerns Fourier coefficient norm, not merely worst-case evaluation.
+
+ (B) An improved universal common-sign bound can instead prove
+     sup_x ||Delta D(u_x)[PR_x-M_x/d]||_1
+          =O_epsilon(N^(1/2+epsilon)).                      (18)
+
+This pays a different, potentially sharper universal construction.
+It does not imply (17) and must not be reported as the original
+coefficient-L1 theorem without an additional comparison. Actual mu
+is one of these assignments; (18) would suffice to control its repair.
+
+ (C) To rule out ANY free-sign square-root envelope, it suffices to
+     find an infinite admissible N,y sequence and one endpoint r with
+     ||Z_C(r)||_1 >= c*N/log(N)^A,
+     where c>0 and A is fixed, H=O(sqrt(N)*polylog(N)).        (19)
+
+The reverse triangle inequality and(15) then prove the same lower
+order for ||c_C||_1. This is an obstruction to the formal relaxation,
+not a lower bound for ordinary-mu repair or a refutation of RH.
+No such lower lemma is proved here.
+
+A particularly clean coefficient test, retaining EXACT floor errors,
+is for any chosen block 1<=a<=b<=H:
+
+ sum_(j=a)^b Z_C(j)
+  =sum_(m<=H/a)chi_C(m)*[PR_C(am)-M_C/(am)]
+   -sum_(m<=H/(b+1))chi_C(m)*[PR_C((b+1)m)-M_C/((b+1)m)].    (20)
+
+The second sum is empty for b=H. A lower estimate on the absolute
+value in(20) directly lower-bounds ||Z_C||_1. It does not require
+separately pricing every row or pretending independent row signs.
+For a=1,b=H it is simply the exact signed core-filled residual inverse
+at the unit. Formula(20), together with(12), is a useful source-bound
+residual lemma to encode in the next search.
+
+6. Why a leading N/log(N)^2 heuristic is currently insufficient
+--------------------------------------------------------------
+For a growing C the constant and error terms of064's fixed-prime-set
+squarefree-density argument depend on the whole changing set. Its
+positive harmonic constant is not uniform. Reusing that proof with S
+silently replaced by primes<=B^xi is invalid.
+
+For xi>=1/2, equations(9)-(10) reduce short-index harmonic sums to
+actual-mu cofactor sums over primes in moving intervals. Even a valid
+prime-counting asymptotic for one such sum would leave the joined
+weighted floor remainder in(12), and its correlation with the other
+chi factor. A large M_C is not a large c_C. Core_inverse's exact
+profile invariance makes the correct candidate visible but does not
+remove this remainder.
+
+A crude explicit remainder budget illustrates the issue. Set
+A_abs(r)=sum_(T>H)|a_T(r)|. Then
+
+ A_abs(r)<=sum_(b=p,q)lambda_b*
+     [floor(4N/(b(H+1)))+3floor(2N/(b(H+1)))
+                                +2floor(N/(b(H+1)))],
+ lambda_p=1, lambda_q=r,
+ |R_C(d,r)|<=A_abs(r)*K.                                   (21)
+
+At H,K of order sqrt(N), the last bound is O(N), already larger
+than a proposed N/log(N)^2 leading term before the inverse is applied.
+It cannot be labeled negligible. Source cancellation may improve it,
+but that improvement needs a joint proof. Keeping the fractional parts
+in(12) or the exact block in(20) avoids introducing this invalid error.
+Replacing floor(T/(ell*d)) by T/(ell*d) with an unsigned O(1) per pair
+has the same problem. Passing to an untruncated full channel, using
+mu*One=delta for chi, or ignoring one source channel also changes the
+object and does not resolve the remainder.
+
+A simple identity also warns against treating a large harmonic moment
+as a universal lower bound: if a formal residual happens to have
+PR_C=M_C/d, its entire term(16) vanishes. This is a logical cancellation
+example, not a claim that the actual source has that property. A lower
+argument must exploit the actual exact kernels rather than profile
+invariance alone.
+
+7. Boundaries and detector-facing disposition
+--------------------------------------------
+If C>=B there are no free variables. Then chi_C=mu on every queried
+input, and the conditioned envelope is exactly the actual finite repair
+L1. Any growing-conditioning impossibility claim must exclude this
+boundary. No elementary argument here proves its uniform growth.
+For fixed xi<1, an all-scale theorem still needs explicit quantifiers
+for H(N,y), B(N,y), every required prefix and both affine endpoints.
+The empty-long case y<=H is already paid by(15), regardless of signs.
+Any claimed lower obstruction must use a genuinely nonempty long part.
+
+When extra registered primes are conditioned and C is small, use the
+actual conditioned set in(3)-(10). The prime-only defect(7) requires
+all primes through sqrt(B), regardless of labels. At large balanced
+scales xi>=1/2 automatically includes2,3,5. Floors and strict prime
+cutoffs matter: two free primes exceed floor(sqrt(B)), and their
+product is strictly greater than B.
+
+The strongest new unconditional facts are the exact formal floor
+reconstruction defect(5)-(8), the short-index one-free-prime expansion
+(9)-(11), and the core-preserved, fully truncated joined decomposition
+(12)-(16). They establish where the actual divisor-inverse law is lost
+and provide a compact residual kernel to inspect. They do not establish
+that the loss is asymptotically fatal, nor that degree two restores an
+RH-strength rate. The residual Fourier lemma(17), universal norm lemma
+(18), and witness lemma(19)/(20) remain OPEN and have distinct scopes.
+
+Recommended next exact search input: retain the threshold dictionary,
+K_T and both endpoint weights; represent each u_x(m) by(10); apply
+core_inverse as(2); coalesce constants, linear and quadratic terms
+including shared primes; encode either the complete residual norm in
+(17) or exact block functional(20), with(12)'s fractional parts retained.
+The defect(8) is a separate consistency diagnostic, not a substitute
+repair law. Do not condition additional primes merely to infer a rate
+from finite contraction, and do not use current-scale source bounds to
+pay the same residual circularly.
+
+Disposition: source-only mathematical review complete. A stronger exact
+defect decomposition is proved; no new general growth theorem or actual
+joined-source lower witness has been established. RH and the uniform
+variation leaf remain open. No scientific search or prior-file change.

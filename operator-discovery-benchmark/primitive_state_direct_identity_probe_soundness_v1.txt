@@ -1,0 +1,157 @@
+Direct exact formal identity probe: independent soundness review v1
+Scope: complete grammar/formula inspection and explicitly recorded tiny tests.
+No fixedX7 source construction, saved candidate evaluation, research run,
+archive sweep or precautionary hashing is part of this review.
+
+Mathematical basis
+For an integer assignment u=(u1,...,uH), evaluation ev_u:Q[x1,...,xH]->Q is a
+ring homomorphism. Consequently evaluating native factors then adding,
+multiplying, squaring and rationally scaling gives exactly the same answer as
+expanding their complete symbolic polynomials and then evaluating. There is
+no requirement to construct a symbolic degree4 column. This equivalence applies
+only when every original factor, weight, index domain, group position and shared
+coefficient is retained. Homomorphism does not justify deleting terms, changing
+cuts, interpreting primitive relations as zero, or evaluating integer predicates
+in a finite field. The actual proof obligation is both algebra and imperative
+source-domain correspondence, rather than merely use of exact Fraction.
+
+Required exact row
+For original column j, a_j=ev_u(column_j)-ev_0(column_j), and
+rhs=ev_u(L_X)-ev_0(L_X)=-Delta_X(u). The complete1957-coordinate row is a
+necessary constraint on a universal NONCONSTANT FORMAL identity. Coordinates
+0..365 are scalar squares;366+2i,367+2i are the613interleaved signedrelation
+pairs;1592..1596 are fivezero slacks;1597..1716 child,1717..1836 parent,
+1837..1956 K upperGramcoordinates. Offdiagonal factor2 is essential. K columns
+are child-4parent. Under lossless quotient C=Gc+K,H=Gp+4Gc, the same body is
+C*child+(H-4C)*parent; this does not authorize replacing the original endpoint
+vector or silently zeroing child coordinates in its1957-coordinate dotproduct.
+Baseline cancels all constant slacks and the target budget, but not primitive
+relation/state constants before they multiply. Evaluate the whole product at
+zero before subtraction, not each factor's difference separately.
+
+Primitive formulas over Q
+unit:u1-1;norm:u_n²-SF(n);primepower:u_(p^e)+1 whene1, elseu_(p^e);
+squarefreezero:u_n;inverse:sum_{d|n}u_d-[n=1];coprime:ua*ub-u_(ab).
+GCD:ua*ub-c*u_(a/g)*u_(b/g), whereg=gcd(a,b) andc=1 preciselywhenall
+sharedprimeexponents areequalbetweena,b AND gcdg issquarefree. For example
+gcd(4,6) hasc0 despiteg2squarefree;gcd(4,4) hasc0 becauseg4nonsquarefree.
+Constants atzero:unit-1,norm-SF,primepower+1 fore1;otherlistedrelationszero.
+These are formal arithmetic relation POLYNOMIALS. They must not be replaced
+by zero merely because they hold on actual Mobius signs.
+
+Complete imperative inventory to audit
+Legacygroupcounts52/195 ->106/231 ->282/319 ->312/331 ->366/403,
+then210primitive groups produce366/613. Grouporder remains fixed including
+empties and zero-weight positions. Basepair domainsa<b;GCDrelationsa<=b;
+divisorinverseALLorderedpairs;factorclosureorderedcoprimeab<=H includes1.
+BaseJ=K(2X,i)-4K(X,i);rowmass=sumt frommax(2X,i)..4X-1. Headincludes2X.
+Masks prefix,half,even,mod3one,prime must retain originaldomains. Growingprime
+upperboundceil(X^(1/k)),k2,3, and gcd(j,p)=1;duplicatesj acrossp accumulate.
+Factor44fixedorder;inclusivecutfloor(H^theta),completecomplement;normalized
+B,C and relationmultipliernormal*q*(B+C) ornormal*q*(B-C) preserveboth
+normalization factors. Signedkernel a-b is not absolutevalue.
+Divisor weights(a/t)^power;normclosure p_d²;orderedinverse weights[a]*weights[b].
+Cellweightsa^power;alld|a with1<=d<=a<=t;cutfloor(t^theta);
+D=(inside-outside-1)/2,Z=inside+outside-1;relationa1 multiplier(u1+1)*U,
+not(u1-1)*U. Full15statesunit, fivelegacy masks, nineD thetaouter/powerinner.
+Primitive210familyouter/regionmiddle/atominner; alleligibleprimitive specs
+anchor<=t; exactsuffixsum orforwardaccumulation of eachstateatom.
+ParentrowsX..2X-1,child2X..4X-1. Source predicates/cuts/factors remaininteger.
+
+Rejection and licensing
+A nonzero residue modulo65537 of rhs-a dotcandidate refutes only this fixed
+formal identity, provided every evaluatedsource and candidate denominator is
+invertiblemod65537, primecheckis exact, and the full row is independently
+licensed from these completefixedgrammar formulas. Exactrow is useful for a
+future affinechart constraint, not a universalcertificate. Zeroneverproves an
+identity:65537*x1 is invisiblemod65537. Scalarbudget/RH/allscaleinequality
+obligations remain separate. Candidate arithmetic sign samples are irrelevant.
+Independent audit must rebuild exactrow from its own evaluator, bind complete
+candidatecoordinates and fixedassignment, and reject tampered domain/layout/
+coefficients/claims. Producer row alone cannot issue an identity-refuted theorem.
+
+Independent direct checker code review and tests
+Reviewed check_primitive_state_direct_identity_probe.py:evaluate_pass,exact_row,
+Budget, integer factor/root helpers. Source definitions preserve the complete
+inventory above. The GCD shared-prime predicate requires both valuations equal1,
+exactly equivalent to equalsharedvaluations AND squarefreegcd. Factor closure
+uses normalized relation_sum times normalized(B+C) ornormalized(B-C), which
+retains the two source normalization factors. Cell primitive sum multiplied by
+U is legitimate distributivity, including its unit(u1+1) multiplier. Two scalar
+passes compute assignment and baseline independently; Gram offdiagonal2 is
+applied only when exporting the upper-triangle row. SignedK is child-4parent.
+No symbolicsource polynomial, actualsign substitution, optionalhash or nested
+sourcebuilder is needed by these evaluator formulas.
+
+Initial explicit work counts missed rejected indices inside filtered generators
+and some bounded integer/predicate/weight work. This was reported to checker.
+It now reserves1000H³+10000 before EACH scalarpass on the SAME shared budget,
+then charges exact rational arithmetic separately. For actualH<=27 this is a
+conservative control-work reserve: repeated7families*15atoms domain declarations
+contribute at most105H*(H²/2+3H/2) index iterations; inverse/divisor scans,
+44orderedfactor partitions, cell pair tests and localizer orderedpairs are also
+bounded fixedmultiples ofH³. Sharedprime tests have at most5primes atH27.
+The reserve is explicit rather than pretending accepted-term counters cover all
+rejected terms. It provides bounded stopping, not a convergence or performance
+claim. Two checkerpasses use one budget; no nested reset or separatejob escape.
+Bit guards apply to rational operands and immediate results; fixedsourceinteger
+parameters have boundedH. Jointjob must separately account candidate parsing,
+outputtext/I/O/tests and producerstage, not solely directsource arithmetic.
+
+NEW test_primitive_state_direct_identity_probe_soundness.py:8 tests passed in
+0.183s before this additional reserve; no tests rerun after stable owner update.
+Fixtures evaluate only syntheticX1 assignment(3,0,0) and zero; no savedcandidate.
+They verify366/613/three120coverage; norm group differs fromunit;factor(1,1)
+relation retainsu1²-u1; factorclosure R*(B+C) equalsB²-C²; cellD baseline-1/2
+and relationu1+1 produce baselinecross terms; signedstorage; rootboundary
+floor8^(2/3)=4 versusfloor7^(2/3)=3; ceilroot3 at8/9; work/bit/deadline caps.
+Owner separately reportsX1exact1957-row oracle equality with actual native row,
+rhs-253. That is finite regression evidence, not universal identity proof.
+
+Producer and complete checker binding review
+Reviewed primitive_state_direct_identity_probe.py in full, including column_pairs,
+Algebra, primitive cache, suffix contraction, probe and rational/modular export.
+Its paired evaluation in QxQ preserves constants until complete factor products
+are evaluated. Primitive GCD uses sf(g)*sharedvaluationcompatibility, matching
+the independent sharedvaluation-equals1 implementation. Complete original1957
+coordinates, five zero slacks, doubled offdiagonals and child-4parentK are
+present. Producer still returns UNVERIFIED_COUNTEREXAMPLE; independent
+verify_probe rebuilds both scalarpasses, every exact column value/baseline,
+complete exact row/zero coordinates/rhs, target, regional states/factors,
+modular dotproducts and coverage, rather than trusting producer's row.
+No false-positive formal rejection found in this actual code review.
+
+Producer probe reserves2*(1000H³+10000) before column_pairs; standalone
+column_pairs does not reserve that domain allowance itself, so standalone
+helper counts must not be called whole-job counts. All paired rational adds/
+products share the same producer budget. Cache hits never remove a source
+contribution; they reuse the same primitive value. Fixedsource integer/rational
+normalizers and predicates are bounded byH27 and covered by domain allowance.
+Budget operands/results are4096bits; ordinary rational arithmetic temporaries
+can reach8193bits and are immediately checked. Cumulative cell counters count
+charged arithmetic allocations, not every Python object; boundedH data domains
+and process memory limits remain separate from those counters.
+
+Joint resource recommendation: reserve200m producer,200m independent checker,
+andatmost50m TOTAL preparation, input/output serialization, tests and metadata.
+These are fixed worststagecaps, not a sum of mutable producer diagnosticcounts.
+The independent checker validates producer count ranges but does not replay
+producer's literal operation trace, so those numbers are diagnostics only.
+A second retry/replay cannot escape the same450m job. Producer currently encodes
+receipt twice while its local bytecharge covers one pass; both passes must be
+covered by the explicit remaining serialization reservation. Budget/deadline
+failure yieldsUNKNOWN, never a usable partialrow or generic infeasibility claim.
+
+One minor resource-hardening issue sent to checker: parse converted decimal
+components toint before checking bitlength, with textlimit2*bits+3. Add a
+sign-stripped decimaldigit cap1+floor(bits*log10(2)) beforeint, as producer does;
+otherwise "preallocationcap" describes a postallocation check. This does not
+cause a false theorem but matters for truthful temporary-bit accounting.
+
+Two more synthetic paired-ring tests were added and passed in0.170s:
+unit=(2,-1),plus=(4,1),D=(4,-1/2) yield completeproduct(32,1/2),difference63/2;
+separately subtracting each factorbaseline would give the wrong result.
+A too-large operand is rejected before paired multiplication. Together the
+NEW testmodule contains10 tests. No savedcandidate orX7 evaluation was used.
+This finishes mathematical/direct-accounting review, subject to owners'
+combined integration checks and the explicitly noted resource fix/reservations.

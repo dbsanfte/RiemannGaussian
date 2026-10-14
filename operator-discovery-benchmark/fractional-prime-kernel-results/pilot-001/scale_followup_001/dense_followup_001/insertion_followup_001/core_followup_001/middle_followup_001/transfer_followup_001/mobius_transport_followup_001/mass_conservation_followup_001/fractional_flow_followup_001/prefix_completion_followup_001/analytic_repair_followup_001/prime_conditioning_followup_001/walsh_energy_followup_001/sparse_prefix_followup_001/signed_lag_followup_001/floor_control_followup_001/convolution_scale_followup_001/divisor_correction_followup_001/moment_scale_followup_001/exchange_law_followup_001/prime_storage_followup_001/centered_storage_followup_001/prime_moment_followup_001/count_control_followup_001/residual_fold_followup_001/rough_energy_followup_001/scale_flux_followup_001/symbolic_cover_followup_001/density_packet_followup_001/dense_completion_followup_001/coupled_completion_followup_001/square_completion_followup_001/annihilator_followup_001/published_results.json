@@ -1,0 +1,4746 @@
+{
+  "RH_proved": false,
+  "artifact_audit": {
+    "RH_proved": false,
+    "banks": {
+      "independent_ops": 230915141,
+      "scope": "NEW085 cut/identity/score reconstruction only; no old084 source values, certificates or solver replay",
+      "summaries": [
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p16_inherited",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p16_cofactor",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p16_reciprocal",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p16_fractional",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p04_inherited",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p04_cofactor",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p04_reciprocal",
+          "generated": 7740,
+          "representatives": 1184
+        },
+        {
+          "aliases": 6556,
+          "all_complete_cut_columns_scores_and_selections_verified": true,
+          "candidate_id": "q1_p04_fractional",
+          "generated": 7740,
+          "representatives": 1184
+        }
+      ],
+      "unique_complete_columns": 2278
+    },
+    "calibration_price_comparisons": [
+      {
+        "adaptive_below_grammar_order": false,
+        "adaptive_below_saved084": false,
+        "adaptive_price": "12969787457244266169966860299798627647172991/13813602078232233059058388213385763225600",
+        "candidate_id": "q1_p16_inherited",
+        "grammar_order_price": "59425438837206926342893241/71961821825258414407680",
+        "saved084_price": "20574332957386696529/23925373020405760"
+      },
+      {
+        "adaptive_below_grammar_order": true,
+        "adaptive_below_saved084": true,
+        "adaptive_price": "32529620257314147941579147170998846464124979/45602721507317363041127057440248283791360",
+        "candidate_id": "q1_p16_cofactor",
+        "grammar_order_price": "197578905890291859301455671/219014240337743000371200",
+        "saved084_price": "29491499648750602229/35888059530608640"
+      },
+      {
+        "adaptive_below_grammar_order": false,
+        "adaptive_below_saved084": false,
+        "adaptive_price": "5232635158703686973/6355177208545280",
+        "candidate_id": "q1_p16_reciprocal",
+        "grammar_order_price": "95129466009049026418767139/119936369708764024012800",
+        "saved084_price": "58183613452500249293/71776119061217280"
+      },
+      {
+        "adaptive_below_grammar_order": true,
+        "adaptive_below_saved084": true,
+        "adaptive_price": "213153972866752242565509456548574257922716977/323043534845284590509782673293982669209600",
+        "candidate_id": "q1_p16_fractional",
+        "grammar_order_price": "738956814749844515802854941/1007465505553617801707520",
+        "saved084_price": "6651638572943683937/8972014882652160"
+      },
+      {
+        "adaptive_below_grammar_order": false,
+        "adaptive_below_saved084": false,
+        "adaptive_price": "22991723763489112370709383/21237476988428274892800",
+        "candidate_id": "q1_p04_inherited",
+        "grammar_order_price": "484194826773108698319920063/479745478835056096051200",
+        "saved084_price": "9035572850272083597/9570149208162304"
+      },
+      {
+        "adaptive_below_grammar_order": false,
+        "adaptive_below_saved084": false,
+        "adaptive_price": "699233544820715907724243157028883933961567969259559/90600721506378452204990253779865391285980364800",
+        "candidate_id": "q1_p04_cofactor",
+        "grammar_order_price": "66649621904076996687815069/115138914920413463052288",
+        "saved084_price": "8782839294504067373/14355223812243456"
+      },
+      {
+        "adaptive_below_grammar_order": false,
+        "adaptive_below_saved084": true,
+        "adaptive_price": "28296335898612670558571/36605820721220812800",
+        "candidate_id": "q1_p04_reciprocal",
+        "grammar_order_price": "854429203724642179043989223/1119406117281797557452800",
+        "saved084_price": "37301903590375062113/47850746040811520"
+      },
+      {
+        "adaptive_below_grammar_order": true,
+        "adaptive_below_saved084": true,
+        "adaptive_price": "2465570042647043681600615310517413598798684067/4144118399251257823427120237357102530560000",
+        "candidate_id": "q1_p04_fractional",
+        "grammar_order_price": "3095096371524717697789103219/5037327527768089008537600",
+        "saved084_price": "771984154973044737/1196268651020288"
+      }
+    ],
+    "complete_outcome_count": 32,
+    "elapsed_seconds": 181.70691029302543,
+    "freshness": {
+      "complete_rng_history_verified": true,
+      "geometry_seen_in_preflight": true,
+      "new_S_and_L_each_geometry": true,
+      "outcomes_held_out": true,
+      "parents": [
+        2187,
+        3475
+      ]
+    },
+    "growth_counts": [
+      {
+        "j": 1,
+        "passes": 16,
+        "tested": 16
+      },
+      {
+        "j": 3,
+        "passes": 12,
+        "tested": 16
+      },
+      {
+        "j": 7,
+        "passes": 0,
+        "tested": 16
+      },
+      {
+        "j": 15,
+        "passes": 0,
+        "tested": 16
+      },
+      {
+        "j": 31,
+        "passes": 0,
+        "tested": 16
+      }
+    ],
+    "hashes_used": false,
+    "independent_admissions": [
+      {
+        "candidate_id": "q1_p16_inherited",
+        "elapsed_seconds": 1.6906497199670412,
+        "id": "q1_p16_inherited_grammar_order_1024",
+        "independent_ops": 1188318167,
+        "independent_peak_bytes": 152910630,
+        "price": "59425438837206926342893241/71961821825258414407680",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "elapsed_seconds": 1.7300267160171643,
+        "id": "q1_p16_inherited_adaptive_1024",
+        "independent_ops": 1210052375,
+        "independent_peak_bytes": 158213278,
+        "price": "12969787457244266169966860299798627647172991/13813602078232233059058388213385763225600",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "elapsed_seconds": 3.0132932100095786,
+        "id": "q1_p16_cofactor_adaptive_1024",
+        "independent_ops": 1211556844,
+        "independent_peak_bytes": 165824774,
+        "price": "32529620257314147941579147170998846464124979/45602721507317363041127057440248283791360",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "elapsed_seconds": 2.765744281001389,
+        "id": "q1_p16_reciprocal_adaptive_1024",
+        "independent_ops": 1222317506,
+        "independent_peak_bytes": 156127854,
+        "price": "5232635158703686973/6355177208545280",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "elapsed_seconds": 3.0307685789885,
+        "id": "q1_p16_cofactor_grammar_order_1024",
+        "independent_ops": 1211547631,
+        "independent_peak_bytes": 159755446,
+        "price": "197578905890291859301455671/219014240337743000371200",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "elapsed_seconds": 2.749305698031094,
+        "id": "q1_p16_reciprocal_grammar_order_1024",
+        "independent_ops": 1200581337,
+        "independent_peak_bytes": 159191878,
+        "price": "95129466009049026418767139/119936369708764024012800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "elapsed_seconds": 1.6942154240095988,
+        "id": "q1_p04_inherited_adaptive_1024",
+        "independent_ops": 1199183506,
+        "independent_peak_bytes": 153580936,
+        "price": "22991723763489112370709383/21237476988428274892800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "elapsed_seconds": 3.2201039039646275,
+        "id": "q1_p16_fractional_adaptive_1024",
+        "independent_ops": 1211673561,
+        "independent_peak_bytes": 165239390,
+        "price": "213153972866752242565509456548574257922716977/323043534845284590509782673293982669209600",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "elapsed_seconds": 3.252727346960455,
+        "id": "q1_p16_fractional_grammar_order_1024",
+        "independent_ops": 1200800877,
+        "independent_peak_bytes": 159699358,
+        "price": "738956814749844515802854941/1007465505553617801707520",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "elapsed_seconds": 1.6913597279926762,
+        "id": "q1_p04_inherited_grammar_order_1024",
+        "independent_ops": 1188310980,
+        "independent_peak_bytes": 153809064,
+        "price": "484194826773108698319920063/479745478835056096051200",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "elapsed_seconds": 3.1937232150230557,
+        "id": "q1_p04_cofactor_adaptive_1024",
+        "independent_ops": 1222415086,
+        "independent_peak_bytes": 168951986,
+        "price": "699233544820715907724243157028883933961567969259559/90600721506378452204990253779865391285980364800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "elapsed_seconds": 3.1773414800409228,
+        "id": "q1_p04_cofactor_grammar_order_1024",
+        "independent_ops": 1222405944,
+        "independent_peak_bytes": 161301226,
+        "price": "66649621904076996687815069/115138914920413463052288",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "elapsed_seconds": 3.0565828940016218,
+        "id": "q1_p04_reciprocal_adaptive_1024",
+        "independent_ops": 1222413608,
+        "independent_peak_bytes": 157519978,
+        "price": "28296335898612670558571/36605820721220812800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "elapsed_seconds": 3.006274430954363,
+        "id": "q1_p04_reciprocal_grammar_order_1024",
+        "independent_ops": 1211541072,
+        "independent_peak_bytes": 160732778,
+        "price": "854429203724642179043989223/1119406117281797557452800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "elapsed_seconds": 3.32270229596179,
+        "id": "q1_p04_fractional_adaptive_1024",
+        "independent_ops": 1222530213,
+        "independent_peak_bytes": 166759842,
+        "price": "2465570042647043681600615310517413598798684067/4144118399251257823427120237357102530560000",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "elapsed_seconds": 3.2804704410373233,
+        "id": "q1_p04_fractional_grammar_order_1024",
+        "independent_ops": 1211657306,
+        "independent_peak_bytes": 161047506,
+        "price": "3095096371524717697789103219/5037327527768089008537600",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "elapsed_seconds": 7.983977438998409,
+        "id": "q1_p16_inherited_adaptive_2187",
+        "independent_ops": 12626655752,
+        "independent_peak_bytes": 789839952,
+        "price": "271957717047784012625324002294742880039600720936972890667/32716167362066123046596411064744993852704299868487680",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "elapsed_seconds": 13.766646966978442,
+        "id": "q1_p16_cofactor_adaptive_2187",
+        "independent_ops": 13456156921,
+        "independent_peak_bytes": 822514446,
+        "price": "2245374208199567624460722036851512977503988478002307052763024785759/188217338523845684546311874667565713926936328185753692494888960",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "elapsed_seconds": 20.227321390004363,
+        "id": "q1_p16_inherited_adaptive_3475",
+        "independent_ops": 55180150731,
+        "independent_peak_bytes": 2049385118,
+        "price": "28593344109285951466173894704469316610698585789070717598302286135601/1780312200602387190046409434174664008730735423009313438516117504",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "elapsed_seconds": 12.656071646953933,
+        "id": "q1_p16_reciprocal_adaptive_2187",
+        "independent_ops": 13119280853,
+        "independent_peak_bytes": 777590534,
+        "price": "6015479633533098810714714634302208509/796984994268150900480717168312320",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "elapsed_seconds": 34.924481233989354,
+        "id": "q1_p16_cofactor_adaptive_3475",
+        "independent_ops": 5799329797,
+        "independent_peak_bytes": 1921637172,
+        "price": "17819873549091476312668760484613741976014357743461083124634225739677913576930151/514239721325510489973846035148308785921860302419804942665156970936270848000",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "elapsed_seconds": 15.21256820805138,
+        "id": "q1_p16_fractional_adaptive_2187",
+        "independent_ops": 1962063672,
+        "independent_peak_bytes": 739173422,
+        "price": "94542805336060127627971354735128356197296678709800738745999273/35556152348308000150388870415844074316444787923998474240",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "elapsed_seconds": 8.082752975984477,
+        "id": "q1_p04_inherited_adaptive_2187",
+        "independent_ops": 12570550397,
+        "independent_peak_bytes": 765139164,
+        "price": "4638619808687661258749646942533251305191/654210825294970724880314407017512960",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "elapsed_seconds": 31.518880557036027,
+        "id": "q1_p16_reciprocal_adaptive_3475",
+        "independent_ops": 54408596910,
+        "independent_peak_bytes": 1869808364,
+        "price": "4540737551927874908346913/211581643768656297984",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "elapsed_seconds": 14.52170738199493,
+        "id": "q1_p04_cofactor_adaptive_2187",
+        "independent_ops": 13680401779,
+        "independent_peak_bytes": 812471374,
+        "price": "3410959161702534924927048559470589136078119293195434889023/2844108406195504765504850168411136958167924919500800",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "elapsed_seconds": 19.89656570396619,
+        "id": "q1_p04_inherited_adaptive_3475",
+        "independent_ops": 54306796046,
+        "independent_peak_bytes": 1916341876,
+        "price": "224450662120820745683777444866835/7408319745442946207163875328",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "elapsed_seconds": 37.150622446031775,
+        "id": "q1_p16_fractional_adaptive_3475",
+        "independent_ops": 54555748096,
+        "independent_peak_bytes": 2073578372,
+        "price": "115095180271930271538757187894886611274837289250577350817389211894485/541708973575786270425606874297680565354913985559212272318939136",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "elapsed_seconds": 13.802396395010874,
+        "id": "q1_p04_reciprocal_adaptive_2187",
+        "independent_ops": 13287907877,
+        "independent_peak_bytes": 776553726,
+        "price": "5418727200159852009982500101092411137/646772936524933984063583200215040",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "elapsed_seconds": 15.56735500600189,
+        "id": "q1_p04_fractional_adaptive_2187",
+        "independent_ops": 13624614223,
+        "independent_peak_bytes": 821913534,
+        "price": "55816995601078409607054335531013469048707441439734461516575969/1992371357266391546025299633858998527765819388870126469120",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "elapsed_seconds": 36.98650054895552,
+        "id": "q1_p04_cofactor_adaptive_3475",
+        "independent_ops": 56301628118,
+        "independent_peak_bytes": 2077551280,
+        "price": "13071535318062871041568107133921513277965557137223913538619536361901/2783802067867349318180346456093968861702834318743005818781696",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "elapsed_seconds": 34.1445949600311,
+        "id": "q1_p04_reciprocal_adaptive_3475",
+        "independent_ops": 54700682608,
+        "independent_peak_bytes": 1879204248,
+        "price": "3338547881567379781698467/141054429179104198656",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "elapsed_seconds": 34.4103936169995,
+        "id": "q1_p04_fractional_adaptive_3475",
+        "independent_ops": 54264546920,
+        "independent_peak_bytes": 2027826872,
+        "price": "7286194406989305192358280237543007821983984152265775/303587047379015540690898749775973976634990526464",
+        "status": "VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND"
+      }
+    ],
+    "independent_exact_certificate_count": 32,
+    "old_science_replayed": false,
+    "old_tests_run": false,
+    "retained_outcomes": [
+      {
+        "id": "q1_p16_inherited_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_inherited_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_cofactor_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_cofactor_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_reciprocal_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_reciprocal_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_fractional_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_fractional_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_inherited_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_inherited_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_cofactor_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_cofactor_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_reciprocal_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_reciprocal_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_fractional_adaptive_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_fractional_grammar_order_1024",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_inherited_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_inherited_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_cofactor_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_cofactor_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_reciprocal_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_reciprocal_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_fractional_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p16_fractional_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_inherited_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_inherited_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_cofactor_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_cofactor_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_reciprocal_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_reciprocal_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_fractional_adaptive_2187",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      },
+      {
+        "id": "q1_p04_fractional_adaptive_3475",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL"
+      }
+    ],
+    "sampled_audit_aggregate_peak_bytes": 1157050368,
+    "scope": "All NEW085 identities/scores/certificates independently replayed; original084 scientific certificates/SCS never replayed; saved old comparison metadata only",
+    "source_byte_preservation": {
+      "hashes_used": false,
+      "inherited": 666,
+      "new_frozen": 11
+    },
+    "status": "VERIFIED_ANNIHILATOR_ARTIFACT_BINDING",
+    "uniform_remaining_bound_proved": false,
+    "uniform_source_bound_proved": false
+  },
+  "calibration_comparisons": [
+    {
+      "adaptive_beats_baseline": false,
+      "adaptive_exact_reduction_from_saved084": "-2181897384779627572679883034423148842542877/27627204156464466118116776426771526451200",
+      "adaptive_improves_saved084": false,
+      "adaptive_price_over_u": "12969787457244266169966860299798627647172991/14145128528109806652475789530507021543014400",
+      "baseline_price_over_u": "59425438837206926342893241/73688905549064616353464320",
+      "id": "q1_p16_inherited",
+      "saved084_price_over_u": "20574332957386696529/24499581972895498240"
+    },
+    {
+      "adaptive_beats_baseline": true,
+      "adaptive_exact_reduction_from_saved084": "168131177259111703062439268449025847807694303/1550492531248790343398319952968441648906240",
+      "adaptive_improves_saved084": true,
+      "adaptive_price_over_u": "32529620257314147941579147170998846464124979/46697186823492979754114106818814242602352640",
+      "baseline_price_over_u": "197578905890291859301455671/224270582105848832380108800",
+      "id": "q1_p16_cofactor",
+      "saved084_price_over_u": "29491499648750602229/36749372959343247360"
+    },
+    {
+      "adaptive_beats_baseline": false,
+      "adaptive_exact_reduction_from_saved084": "-3108904355720732167/244038804808138752",
+      "adaptive_improves_saved084": false,
+      "adaptive_price_over_u": "5232635158703686973/6507701461550366720",
+      "baseline_price_over_u": "95129466009049026418767139/122814842581774360589107200",
+      "id": "q1_p16_reciprocal",
+      "saved084_price_over_u": "58183613452500249293/73498745918686494720"
+    },
+    {
+      "adaptive_beats_baseline": true,
+      "adaptive_exact_reduction_from_saved084": "79028475772045584364887422820606416753669479/969130604535853771529348019881948007628800",
+      "adaptive_improves_saved084": true,
+      "adaptive_price_over_u": "213153972866752242565509456548574257922716977/330796579681571420682017457453038253270630400",
+      "baseline_price_over_u": "738956814749844515802854941/1031644677686904628948500480",
+      "id": "q1_p16_fractional",
+      "saved084_price_over_u": "6651638572943683937/9187343239835811840"
+    },
+    {
+      "adaptive_beats_baseline": false,
+      "adaptive_exact_reduction_from_saved084": "-5881090434936892914943591/42474953976856549785600",
+      "adaptive_improves_saved084": false,
+      "adaptive_price_over_u": "22991723763489112370709383/21747176436150553490227200",
+      "baseline_price_over_u": "484194826773108698319920063/491259370327097442356428800",
+      "id": "q1_p04_inherited",
+      "saved084_price_over_u": "9035572850272083597/9799832789158199296"
+    },
+    {
+      "adaptive_beats_baseline": false,
+      "adaptive_exact_reduction_from_saved084": "-643802045642140420232673084178468274021124902592409/90600721506378452204990253779865391285980364800",
+      "adaptive_improves_saved084": false,
+      "adaptive_price_over_u": "699233544820715907724243157028883933961567969259559/92775138822531535057910019870582160676843893555200",
+      "baseline_price_over_u": "66649621904076996687815069/117902248878503386165542912",
+      "id": "q1_p04_cofactor",
+      "saved084_price_over_u": "8782839294504067373/14699749183737298944"
+    },
+    {
+      "adaptive_beats_baseline": false,
+      "adaptive_exact_reduction_from_saved084": "119810174012125978937/18302910360610406400",
+      "adaptive_improves_saved084": true,
+      "adaptive_price_over_u": "28296335898612670558571/37484360418530112307200",
+      "baseline_price_over_u": "854429203724642179043989223/1146271864096560698831667200",
+      "id": "q1_p04_reciprocal",
+      "saved084_price_over_u": "37301903590375062113/48999163945790996480"
+    },
+    {
+      "adaptive_beats_baseline": true,
+      "adaptive_exact_reduction_from_saved084": "208740395752944693566050323900231381000318433/4144118399251257823427120237357102530560000",
+      "adaptive_improves_saved084": true,
+      "adaptive_price_over_u": "2465570042647043681600615310517413598798684067/4243577240833288011189371123053672991293440000",
+      "baseline_price_over_u": "3095096371524717697789103219/5158223388434523144742502400",
+      "id": "q1_p04_fractional",
+      "saved084_price_over_u": "771984154973044737/1224979098644774912"
+    }
+  ],
+  "certificate_quality_diagnostics": [
+    {
+      "exact_price_over_u": "699233544820715907724243157028883933961567969259559/92775138822531535057910019870582160676843893555200",
+      "float_objective_over_u": -0.02930900289486059,
+      "id": "q1_p04_cofactor_adaptive_1024",
+      "max_absolute_signed_coefficient": "933788555984049/11214848",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "2167335484851366985192626053317089645450923618653884971/1887515031382884420937296953747195651791257600",
+      "trace_magnitude_over_max_one_absolute_price": "104032103272865615289246050559220302981644333695386478608/699233544820715907724243157028883933961567969259559",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "66649621904076996687815069/117902248878503386165542912",
+      "float_objective_over_u": 0.5635012688491995,
+      "id": "q1_p04_cofactor_grammar_order_1024",
+      "max_absolute_signed_coefficient": "523770453/3211264",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "18158454932810368787420047537/592626767972716353945600",
+      "trace_magnitude_over_max_one_absolute_price": "617387467715552538772281616258/11663683833213474420367637075",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "2465570042647043681600615310517413598798684067/4243577240833288011189371123053672991293440000",
+      "float_objective_over_u": 0.5229283454520441,
+      "id": "q1_p04_fractional_adaptive_1024",
+      "max_absolute_signed_coefficient": "31756753068057/729432064",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "16864246267664204702578412542990680248582850541/41859781810618765893203234720778813440000",
+      "trace_magnitude_over_max_one_absolute_price": "1669560380498756265555262841756077344609702203559/2465570042647043681600615310517413598798684067",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "3095096371524717697789103219/5158223388434523144742502400",
+      "float_objective_over_u": 0.5924339449030265,
+      "id": "q1_p04_fractional_grammar_order_1024",
+      "max_absolute_signed_coefficient": "587056111/3211264",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "18997386828754791157144400851/592626767972716353945600",
+      "trace_magnitude_over_max_one_absolute_price": "322955576088831449671454814467/6190192743049435395578206438",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "22991723763489112370709383/21747176436150553490227200",
+      "float_objective_over_u": 0.7676796778396856,
+      "id": "q1_p04_inherited_adaptive_1024",
+      "max_absolute_signed_coefficient": "5421763697/16384",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "79326516035875980993035595823/86719697702748789145600",
+      "trace_magnitude_over_max_one_absolute_price": "951918192430511771916427149876/1126594464410966506164759767",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "484194826773108698319920063/491259370327097442356428800",
+      "float_objective_over_u": 0.8104759478130346,
+      "id": "q1_p04_inherited_grammar_order_1024",
+      "max_absolute_signed_coefficient": "1520161947/1605632",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "15091988352656966382911039829/65847418663635150438400",
+      "trace_magnitude_over_max_one_absolute_price": "769691405985505285528463031279/3389363787411760888239440441",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "28296335898612670558571/37484360418530112307200",
+      "float_objective_over_u": 0.7392922222952332,
+      "id": "q1_p04_reciprocal_adaptive_1024",
+      "max_absolute_signed_coefficient": "179958229/8192",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "81770925997220652777521/762621265025433600",
+      "trace_magnitude_over_max_one_absolute_price": "3925004447866591333321008/28296335898612670558571",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "854429203724642179043989223/1146271864096560698831667200",
+      "float_objective_over_u": 0.7401034662566847,
+      "id": "q1_p04_reciprocal_grammar_order_1024",
+      "max_absolute_signed_coefficient": "225914707/1605632",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "2830743515220493755811574789/98771127995452725657600",
+      "trace_magnitude_over_max_one_absolute_price": "96245279517496787697593542826/2563287611173926537131967669",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "32529620257314147941579147170998846464124979/46697186823492979754114106818814242602352640",
+      "float_objective_over_u": 0.6869411496957188,
+      "id": "q1_p16_cofactor_adaptive_1024",
+      "max_absolute_signed_coefficient": "4339135622079/3215343616",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "1521703734482386008935924831229303808101507661/30401814338211575360751371626832189194240",
+      "trace_magnitude_over_max_one_absolute_price": "4565111203447158026807774493687911424304522983/65059240514628295883158294341997692928249958",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "197578905890291859301455671/224270582105848832380108800",
+      "float_objective_over_u": 0.7188151137812311,
+      "id": "q1_p16_cofactor_grammar_order_1024",
+      "max_absolute_signed_coefficient": "1158789979/3211264",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "18412193530006297605350058779/148156691993179088486400",
+      "trace_magnitude_over_max_one_absolute_price": "626014580020214118581901998486/4544314835476712763933480433",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "213153972866752242565509456548574257922716977/330796579681571420682017457453038253270630400",
+      "float_objective_over_u": 0.627161533582855,
+      "id": "q1_p16_fractional_adaptive_1024",
+      "max_absolute_signed_coefficient": "3864319477497/3665575936",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "129673203198309132078181517308093745569947221437/1938261209071707543058696039763896015257600",
+      "trace_magnitude_over_max_one_absolute_price": "129673203198309132078181517308093745569947221437/1278923837200513455393056739291445547536301862",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "738956814749844515802854941/1031644677686904628948500480",
+      "float_objective_over_u": 0.6635871578175744,
+      "id": "q1_p16_fractional_grammar_order_1024",
+      "max_absolute_signed_coefficient": "981431275/1605632",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "31922297000514307910037791153/296313383986358176972800",
+      "trace_magnitude_over_max_one_absolute_price": "542679049008743234470642449601/3694784073749222579014274705",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "12969787457244266169966860299798627647172991/14145128528109806652475789530507021543014400",
+      "float_objective_over_u": 0.6537855820798465,
+      "id": "q1_p16_inherited_adaptive_1024",
+      "max_absolute_signed_coefficient": "24855290195/16384",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "59942939879292473096070627435660819746314489/383711168839784251640510783705160089600",
+      "trace_magnitude_over_max_one_absolute_price": "2157945835654529031458542587683789510867321604/12969787457244266169966860299798627647172991",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "59425438837206926342893241/73688905549064616353464320",
+      "float_objective_over_u": 0.7878422793874362,
+      "id": "q1_p16_inherited_grammar_order_1024",
+      "max_absolute_signed_coefficient": "70706235/458752",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "6806580324668315060028599/211652417133112983552",
+      "trace_magnitude_over_max_one_absolute_price": "2314237310387227120409723660/59425438837206926342893241",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "5232635158703686973/6507701461550366720",
+      "float_objective_over_u": 0.7341101569785785,
+      "id": "q1_p16_reciprocal_adaptive_1024",
+      "max_absolute_signed_coefficient": "42684441/2048",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "21720778537991836935317/254207088341811200",
+      "trace_magnitude_over_max_one_absolute_price": "21720778537991836935317/209305406348147478920",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "95129466009049026418767139/122814842581774360589107200",
+      "float_objective_over_u": 0.7688870230932765,
+      "id": "q1_p16_reciprocal_grammar_order_1024",
+      "max_absolute_signed_coefficient": "80600335/458752",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "calibration",
+      "sum_identity_and_factor_trace_magnitudes": "213905428016743234931300041/7055080571103766118400",
+      "trace_magnitude_over_max_one_absolute_price": "3636392276284634993832100697/95129466009049026418767139",
+      "u": 1024
+    },
+    {
+      "exact_price_over_u": "3410959161702534924927048559470589136078119293195434889023/6220065084349568922159107318315156527513251798948249600",
+      "float_objective_over_u": 0.27781263286909486,
+      "id": "q1_p04_cofactor_adaptive_2187",
+      "max_absolute_signed_coefficient": "124238112434011285875/2409896083456",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "4493740397349666082974515361854741049019572505427902935793947/4977189710842133339633487794719489676793868609126400",
+      "trace_magnitude_over_max_one_absolute_price": "17974961589398664331898061447418964196078290021711611743175788/23876714131917744474489339916294123952546835052368044223161",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "13071535318062871041568107133921513277965557137223913538619536361901/9673712185839038880676703934926541794417349257631945220266393600",
+      "float_objective_over_u": 0.3484537398245493,
+      "id": "q1_p04_cofactor_adaptive_3475",
+      "max_absolute_signed_coefficient": "29795193564764517275/382537302016",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "2967136296471777361614557368506949449364950368769747876346830345184693/2783802067867349318180346456093968861702834318743005818781696",
+      "trace_magnitude_over_max_one_absolute_price": "2967136296471777361614557368506949449364950368769747876346830345184693/13071535318062871041568107133921513277965557137223913538619536361901",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "55816995601078409607054335531013469048707441439734461516575969/4357316158341598311157330299249629780223847003458966587965440",
+      "float_objective_over_u": 0.5726183565049915,
+      "id": "q1_p04_fractional_adaptive_2187",
+      "max_absolute_signed_coefficient": "465339301275727104975/56677529288704",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "242815357795935431263270084442339659806470643424404055977315043/8355948025232572670092999775031186486042754972980871168",
+      "trace_magnitude_over_max_one_absolute_price": "926340589991493670269375372147525802161685504664101473553456889045/893071929617254553712869368496215504779319063035751384265215504",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "291447776279572207694331209501720312879359366090631/42198599585683160156034926218860382752263683178496",
+      "float_objective_over_u": 0.7611858909166898,
+      "id": "q1_p04_fractional_adaptive_3475",
+      "max_absolute_signed_coefficient": "80201926556059775/56063950848",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "9403198795602062621148219725971969153498329867115933/2363566977864307842749211719709139956500791296",
+      "trace_magnitude_over_max_one_absolute_price": "10870097807715984390047342003223596341444069326386018548/65575749662903746731224522137887070397855857370391975",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "4638619808687661258749646942533251305191/1430759074920100975313247608147300843520",
+      "float_objective_over_u": 0.46406619992136244,
+      "id": "q1_p04_inherited_adaptive_2187",
+      "max_absolute_signed_coefficient": "45113475818029275/4848615424",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "369649812415091887501539038692942157969143/3601160506210848026864116001931264",
+      "trace_magnitude_over_max_one_absolute_price": "201459147766225078688338776087653476093182935/13915859426062983776248940827599753915573",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "44890132424164149136755488973367/5148782223082847613978893352960",
+      "float_objective_over_u": 0.7776984159951359,
+      "id": "q1_p04_inherited_adaptive_3475",
+      "max_absolute_signed_coefficient": "1680165548294325/16777216",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "3648925178005734665850247621903209677/5556239809082209655372906496",
+      "trace_magnitude_over_max_one_absolute_price": "14595700712022938663400990487612838708/673351986362462237051332334600505",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "1806242400053284003327500033697470379/471497470726676874382352152956764160",
+      "float_objective_over_u": 1.2244779855516532,
+      "id": "q1_p04_reciprocal_adaptive_2187",
+      "max_absolute_signed_coefficient": "1993989545531150625/18567412056064",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "778836536148904108405741918798601019/593369666536636682627140550656",
+      "trace_magnitude_over_max_one_absolute_price": "282977274800768492720752897163491703570/1806242400053284003327500033697470379",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "3338547881567379781698467/490164141397387090329600",
+      "float_objective_over_u": 1.1957610201669429,
+      "id": "q1_p04_reciprocal_adaptive_3475",
+      "max_absolute_signed_coefficient": "1993588196375/16777216",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "61581859441132389855445055/70527214589552099328",
+      "trace_magnitude_over_max_one_absolute_price": "123163718882264779710890110/3338547881567379781698467",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "2245374208199567624460722036851512977503988478002307052763024785759/411631319351650512102784069897966216358209749742243325486322155520",
+      "float_objective_over_u": 1.0990860463100436,
+      "id": "q1_p16_cofactor_adaptive_2187",
+      "max_absolute_signed_coefficient": "100971448688051202375/261170422349824",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "1463978911550031668569808004498592436951238781441390814575935216857/345352914722652632195067659940487548489791427863768243109888",
+      "trace_magnitude_over_max_one_absolute_price": "797868506794767259370545362451732878138425135885557993943884693187065/2245374208199567624460722036851512977503988478002307052763024785759",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "17819873549091476312668760484613741976014357743461083124634225739677913576930151/1786983031606148952659114972140373031078464550908822175761420474003541196800000",
+      "float_objective_over_u": 1.0264688555999253,
+      "id": "q1_p16_cofactor_adaptive_3475",
+      "max_absolute_signed_coefficient": "430392049928479254825/7049249359396864",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "584519230573189734517816915992360950869643636451612972337571584389953849930062507/8896880991790838926883149397029563770274399695844376170677456244572160000",
+      "trace_magnitude_over_max_one_absolute_price": "168926057635651833275649088721792314801327010934516149005558187888696662629788064523/89099367745457381563343802423068709880071788717305415623171128698389567884650755",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "94542805336060127627971354735128356197296678709800738745999273/77761305185749596328900459599450990530064751189784663162880",
+      "float_objective_over_u": 0.5471179191592057,
+      "id": "q1_p16_fractional_adaptive_2187",
+      "max_absolute_signed_coefficient": "606799407053360679525/9283706028032",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "12434452860557336612083854364465790471683502806966556056982279/65240646510656881009887835625401971222834473255043072",
+      "trace_magnitude_over_max_one_absolute_price": "6776776809003748453585700628633855807067509029796773051055342055/94542805336060127627971354735128356197296678709800738745999273",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "23019036054386054307751437578977322254967457850115470163477842378897/376487736635171457945796777636887992921665219963652529261662699520",
+      "float_objective_over_u": 0.3285400642023055,
+      "id": "q1_p16_fractional_adaptive_3475",
+      "max_absolute_signed_coefficient": "5010733074553225/16777216",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "21624512831173587433305403546659947946096072197975866368793462471453717511/26543739705213527250854736840586347702390785292401401343628017664",
+      "trace_magnitude_over_max_one_absolute_price": "21624512831173587433305403546659947946096072197975866368793462471453717511/5639663833324583305399102206849443952467027173278290190052071382829765",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "90652572349261337541774667431580960013200240312324296889/23850086006946203700968783666199100518621434604127518720",
+      "float_objective_over_u": 0.8325525431196696,
+      "id": "q1_p16_inherited_adaptive_2187",
+      "max_absolute_signed_coefficient": "12357899721938475/237582155776",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "245287358412572058826738005204745175234237739984651201701/13852999588736537634409207225721239457743528525824",
+      "trace_magnitude_over_max_one_absolute_price": "1737860934353073036787438766875619566534574387791253764051585/815873151143352037875972006884228640118802162810918672001",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "28593344109285951466173894704469316610698585789070717598302286135601/6186584897093295485411272783756957430339305594957364198843508326400",
+      "float_objective_over_u": 1.6147586272727399,
+      "id": "q1_p16_inherited_adaptive_3475",
+      "max_absolute_signed_coefficient": "12169416727984081/2551413997568",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "2810825375129235567339989958033141849255953955462202231891828094200685/12462185404216710330324866039222648061115147961065194069612822528",
+      "trace_magnitude_over_max_one_absolute_price": "2810825375129235567339989958033141849255953955462202231891828094200685/200153408765001660263217262931285216274890100523495023188116002949207",
+      "u": 3475
+    },
+    {
+      "exact_price_over_u": "2005159877844366270238238211434069503/581002060821482006450442815699681280",
+      "float_objective_over_u": 0.7958326029165967,
+      "id": "q1_p16_reciprocal_adaptive_2187",
+      "max_absolute_signed_coefficient": "52035016014547875/559461957632",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "431518171204377628645194238795064805489/247138466112509178314204039348224",
+      "trace_magnitude_over_max_one_absolute_price": "78392467768795269203876953381103439663835/338872019355697899670262257732357746007",
+      "u": 2187
+    },
+    {
+      "exact_price_over_u": "4540737551927874908346913/735246212096080635494400",
+      "float_objective_over_u": 1.1630901934039775,
+      "id": "q1_p16_reciprocal_adaptive_3475",
+      "max_absolute_signed_coefficient": "516298455125/8388608",
+      "scope": "representation and certificate quality diagnostic only; no optimum, obstruction or coefficient-growth theorem",
+      "stage": "validation",
+      "sum_identity_and_factor_trace_magnitudes": "139079696401591759270862041/211581643768656297984",
+      "trace_magnitude_over_max_one_absolute_price": "139079696401591759270862041/4540737551927874908346913",
+      "u": 3475
+    }
+  ],
+  "finite_bound_diagnostics": [
+    {
+      "active_identity_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "bound_q1_p04_cofactor_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          256,
+          252,
+          113,
+          204,
+          244,
+          176,
+          243,
+          135
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "20200214353162040714985/35184372088832",
+        "identity_only_entrywise_price": "117815911815798399187601680731329995758643622700518919829/30200240502126150734996751259955130428660121600",
+        "identity_trace": "-504621597692326465489845515364153185094692977/878942679326461824093617942997811200",
+        "original_entrywise_price": "585601591383421867771/143552238122434560",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": -0.02930900289486059,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_adaptive_1024",
+      "identity_rank": 7,
+      "mode": "adaptive",
+      "price_over_u": "699233544820715907724243157028883933961567969259559/92775138822531535057910019870582160676843893555200",
+      "price_over_u2": "699233544820715907724243157028883933961567969259559/95001742154272291899299860347476132533088147000524800",
+      "rejected_square_price": null,
+      "solver_seconds": 11.371359097000001,
+      "solver_status": "optimal",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "bound_q1_p04_cofactor_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "4542657544011428073/281474976710656",
+        "identity_only_entrywise_price": "1715664951487352531437286117363/20149310111072356034150400",
+        "identity_trace": "-4001982887206509869/275963343667200",
+        "original_entrywise_price": "585601591383421867771/143552238122434560",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 0.5635012688491995,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "66649621904076996687815069/117902248878503386165542912",
+      "price_over_u2": "66649621904076996687815069/120731902851587467433515941888",
+      "rejected_square_price": null,
+      "solver_seconds": 35.286429502,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "bound_q1_p04_fractional_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          234,
+          245,
+          243,
+          224,
+          235,
+          246,
+          244,
+          225
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "56915685235966615447/281474976710656",
+        "identity_only_entrywise_price": "7750626977244881459356185248650545940337413287163/2762745599500838548951413491571401687040000",
+        "identity_trace": "-1955773564839428354018140595269601471/9746239942176911489386864640000",
+        "original_entrywise_price": "22563907969647008179/5981343255101440",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.5229283454520441,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_adaptive_1024",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "2465570042647043681600615310517413598798684067/4243577240833288011189371123053672991293440000",
+      "price_over_u2": "2465570042647043681600615310517413598798684067/4345423094613286923457916030006961143084482560000",
+      "rejected_square_price": null,
+      "solver_seconds": 39.285040904,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "bound_q1_p04_fractional_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "4737539343412285051/281474976710656",
+        "identity_only_entrywise_price": "886797564824287491098799018499/10074655055536178017075200",
+        "identity_trace": "-4201575224469360587/275963343667200",
+        "original_entrywise_price": "22563907969647008179/5981343255101440",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.5924339449030265,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "3095096371524717697789103219/5158223388434523144742502400",
+      "price_over_u2": "3095096371524717697789103219/5282020749756951700216322457600",
+      "rejected_square_price": null,
+      "solver_seconds": 33.475095249,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "bound_q1_p04_inherited_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          204,
+          254,
+          255,
+          253,
+          255,
+          254,
+          255,
+          253
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "32237018210352597615/70368744177664",
+        "identity_only_entrywise_price": "9501067990779568544028659727667/1040636372432985469747200",
+        "identity_trace": "-2304957669183040747/5047750758400",
+        "original_entrywise_price": "82412212526927713169/17944029765304320",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.7676796778396856,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_adaptive_1024",
+      "identity_rank": 4,
+      "mode": "adaptive",
+      "price_over_u": "22991723763489112370709383/21747176436150553490227200",
+      "price_over_u2": "22991723763489112370709383/22269108670618166773992652800",
+      "rejected_square_price": null,
+      "solver_seconds": 35.12125506100001,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "bound_q1_p04_inherited_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "32471420009152923349/281474976710656",
+        "identity_only_entrywise_price": "207783222553616597267424489233/395084511981810902630400",
+        "identity_trace": "-3490467070690476673/30662593740800",
+        "original_entrywise_price": "82412212526927713169/17944029765304320",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.8104759478130346,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "484194826773108698319920063/491259370327097442356428800",
+      "price_over_u2": "484194826773108698319920063/503049595214947780972983091200",
+      "rejected_square_price": null,
+      "solver_seconds": 33.282348323,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        2,
+        5
+      ],
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "bound_q1_p04_reciprocal_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          254,
+          254,
+          253,
+          253,
+          254,
+          252,
+          254,
+          253
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "1922767154872592019/35184372088832",
+        "identity_only_entrywise_price": "2734295270579416791358591/7321164144244162560",
+        "identity_trace": "-9335332530401/177561600",
+        "original_entrywise_price": "200521281566692950243/47850746040811520",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 0.7392922222952332,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_adaptive_1024",
+      "identity_rank": 3,
+      "mode": "adaptive",
+      "price_over_u": "28296335898612670558571/37484360418530112307200",
+      "price_over_u2": "28296335898612670558571/38383985068574835002572800",
+      "rejected_square_price": null,
+      "solver_seconds": 30.161755705,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "bound_q1_p04_reciprocal_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "2162673978454539735/140737488355328",
+        "identity_only_entrywise_price": "125479939119631132368398552407/1679109175922696336179200",
+        "identity_trace": "-76424037428036471/5749236326400",
+        "original_entrywise_price": "200521281566692950243/47850746040811520",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 0.7401034662566847,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "854429203724642179043989223/1146271864096560698831667200",
+      "price_over_u2": "854429203724642179043989223/1173782388834878155603627212800",
+      "rejected_square_price": null,
+      "solver_seconds": 30.179603716000003,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "bound_q1_p16_cofactor_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          198,
+          204,
+          192,
+          196,
+          196,
+          192,
+          176,
+          186
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "3643708364853777209/140737488355328",
+        "identity_only_entrywise_price": "4061881791692008474999357496073476991947/9241655655198039671172618585636864",
+        "identity_trace": "-171036824135424975220888238822936121/7078474000611243620689812029440",
+        "original_entrywise_price": "2872399389187/713031680",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 0.6869411496957188,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_adaptive_1024",
+      "identity_rank": 6,
+      "mode": "adaptive",
+      "price_over_u": "32529620257314147941579147170998846464124979/46697186823492979754114106818814242602352640",
+      "price_over_u2": "32529620257314147941579147170998846464124979/47817919307256811268212845382465784424809103360",
+      "rejected_square_price": null,
+      "solver_seconds": 31.861844266,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "bound_q1_p16_cofactor_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "4434588252581087619/70368744177664",
+        "identity_only_entrywise_price": "11957006976378786881161/75062029477478400",
+        "identity_trace": "-4226092288190211973/68990835916800",
+        "original_entrywise_price": "2872399389187/713031680",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 0.7188151137812311,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "197578905890291859301455671/224270582105848832380108800",
+      "price_over_u2": "197578905890291859301455671/229653076076389204357231411200",
+      "rejected_square_price": null,
+      "solver_seconds": 30.864992135,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "bound_q1_p16_fractional_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          204,
+          254,
+          192,
+          189,
+          176,
+          254,
+          196,
+          198
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "4821549481096565087/140737488355328",
+        "identity_only_entrywise_price": "815551741618843810998863289171090573535/1540391611315176918553269735784448",
+        "identity_trace": "-58924764142298201935078340126687845813/1805146419509972951429612971622400",
+        "original_entrywise_price": "2787407854021/713031680",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.627161533582855,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_adaptive_1024",
+      "identity_rank": 7,
+      "mode": "adaptive",
+      "price_over_u": "213153972866752242565509456548574257922716977/330796579681571420682017457453038253270630400",
+      "price_over_u2": "213153972866752242565509456548574257922716977/338735697593929134778385876431911171349125529600",
+      "rejected_square_price": null,
+      "solver_seconds": 33.771911802000005,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "bound_q1_p16_fractional_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "7697365078707413481/140737488355328",
+        "identity_only_entrywise_price": "1155739132406421254497/4003308238798848",
+        "identity_trace": "-14636673795849997097/275963343667200",
+        "original_entrywise_price": "2787407854021/713031680",
+        "rank": 99
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.6635871578175744,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "738956814749844515802854941/1031644677686904628948500480",
+      "price_over_u2": "738956814749844515802854941/1056404149951390340043264491520",
+      "rejected_square_price": null,
+      "solver_seconds": 33.107397815,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "bound_q1_p16_inherited_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          176,
+          204,
+          196,
+          255,
+          189,
+          70,
+          180,
+          171
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "2772748632669700717/35184372088832",
+        "identity_only_entrywise_price": "1594753761882771976126841057482888922731/823354844941629949751996291481600",
+        "identity_trace": "-442625571675588834501473684188249101/5717741978761319095499974246400",
+        "original_entrywise_price": "4508824933063/1069547520",
+        "rank": 102
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.6537855820798465,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_adaptive_1024",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "12969787457244266169966860299798627647172991/14145128528109806652475789530507021543014400",
+      "price_over_u2": "12969787457244266169966860299798627647172991/14484611612784442012135208479239190060046745600",
+      "rejected_square_price": null,
+      "solver_seconds": 38.797529573,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "bound_q1_p16_inherited_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "296314537637655569/17592186044416",
+        "identity_only_entrywise_price": "161711083882497288857/2144629413642240",
+        "identity_trace": "-24151848223555177/1576933392384",
+        "original_entrywise_price": "4508824933063/1069547520",
+        "rank": 100
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.7878422793874362,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "59425438837206926342893241/73688905549064616353464320",
+      "price_over_u2": "59425438837206926342893241/75457439282242167145947463680",
+      "rejected_square_price": null,
+      "solver_seconds": 28.097207344999998,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        6
+      ],
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "bound_q1_p16_reciprocal_adaptive_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          254,
+          255,
+          254,
+          254,
+          254,
+          255,
+          253,
+          253
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "1537420773620237117/35184372088832",
+        "identity_only_entrywise_price": "1804715979795725/7272923136",
+        "identity_trace": "-2471011469277/59187200",
+        "original_entrywise_price": "2241127469281/534773760",
+        "rank": 101
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 0.7341101569785785,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_adaptive_1024",
+      "identity_rank": 3,
+      "mode": "adaptive",
+      "price_over_u": "5232635158703686973/6507701461550366720",
+      "price_over_u2": "5232635158703686973/6663886296627575521280",
+      "rejected_square_price": null,
+      "solver_seconds": 31.674274156,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        4,
+        5
+      ],
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "bound_q1_p16_reciprocal_grammar_order_1024.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          255,
+          256,
+          255,
+          2,
+          254,
+          32,
+          254,
+          3
+        ],
+        "effective_dimension": 103,
+        "factor_trace": "1136486953959243093/70368744177664",
+        "identity_only_entrywise_price": "175542046813704646559/2042504203468800",
+        "identity_trace": "-186195029008492493/13141111603200",
+        "original_entrywise_price": "2241127469281/534773760",
+        "rank": 99
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 0.7688870230932765,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_grammar_order_1024",
+      "identity_rank": 3,
+      "mode": "grammar_order",
+      "price_over_u": "95129466009049026418767139/122814842581774360589107200",
+      "price_over_u2": "95129466009049026418767139/125762398803736945243245772800",
+      "rejected_square_price": null,
+      "solver_seconds": 30.658679825,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "calibration",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 1024
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "bound_q1_p04_cofactor_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          479,
+          540,
+          243,
+          437,
+          530,
+          430,
+          531,
+          239
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "63534623135223128193861/140737488355328",
+        "identity_only_entrywise_price": "33242808017036699826680514630069101032020493097162448353228103/4355040996986866672179301820379553467194635032985600",
+        "identity_trace": "-8570993965912691400733010203532395394222423540230953363/18986471980446370466741515330198248583960985600",
+        "original_entrywise_price": "6856343979878705420333/306807724614615040",
+        "rank": 233
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 0.27781263286909486,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_adaptive_2187",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "3410959161702534924927048559470589136078119293195434889023/6220065084349568922159107318315156527513251798948249600",
+      "price_over_u2": "3410959161702534924927048559470589136078119293195434889023/13603282339472507232761967705155247325671481684299821875200",
+      "rejected_square_price": null,
+      "solver_seconds": 90.051458634,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "bound_q1_p04_cofactor_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          678,
+          860,
+          386,
+          695,
+          850,
+          721,
+          851,
+          339
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "150013249504693174889549/281474976710656",
+        "identity_only_entrywise_price": "27514944830620237384293724789888422457587333083199854342882047770815537/2783802067867349318180346456093968861702834318743005818781696",
+        "identity_trace": "-2829546938605757907334271843788710053994707284043335852077771743/5309681068167399059639637863338411067395847928510676992",
+        "original_entrywise_price": "939409361568022284317/15252425300508672",
+        "rank": 376
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 0.3484537398245493,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_adaptive_3475",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "13071535318062871041568107133921513277965557137223913538619536361901/9673712185839038880676703934926541794417349257631945220266393600",
+      "price_over_u2": "13071535318062871041568107133921513277965557137223913538619536361901/33616149845790660110351546173869732735600288670271009640425717760000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.796536563,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "bound_q1_p04_fractional_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          516,
+          528,
+          528,
+          509,
+          522,
+          530,
+          529,
+          510
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "4090133541415198473469/281474976710656",
+        "identity_only_entrywise_price": "957621261595554243067443995330095984288662802679509937198967031817/4553991673751752105200684877391996634893301460274574786560",
+        "identity_trace": "-57885391176181439755807336232171332120776504456101648193/3984426510444914183660983932033150904675843702784",
+        "original_entrywise_price": "6084193591665532623579/306807724614615040",
+        "rank": 232
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.5726183565049915,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_adaptive_2187",
+      "identity_rank": 7,
+      "mode": "adaptive",
+      "price_over_u": "55816995601078409607054335531013469048707441439734461516575969/4357316158341598311157330299249629780223847003458966587965440",
+      "price_over_u2": "55816995601078409607054335531013469048707441439734461516575969/9529450438293075506501081364458940329349553396564759927880417280",
+      "rejected_square_price": null,
+      "solver_seconds": 90.238026995,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "bound_q1_p04_fractional_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          832,
+          843,
+          847,
+          828,
+          843,
+          846,
+          846,
+          830
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "280693671509265683735/140737488355328",
+        "identity_only_entrywise_price": "224232630078977961597068381085588391542401125134872041/10045159655923308331684149808763844815128363008",
+        "identity_trace": "-35775651545176778465980045324983246352104163379/18032584975161040060037320859597320224768",
+        "original_entrywise_price": "27708988557219089815139/488077609616277504",
+        "rank": 362
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.7611858909166898,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_adaptive_3475",
+      "identity_rank": 6,
+      "mode": "adaptive",
+      "price_over_u": "291447776279572207694331209501720312879359366090631/42198599585683160156034926218860382752263683178496",
+      "price_over_u2": "291447776279572207694331209501720312879359366090631/146640133560248981542221368610539830064116299045273600",
+      "rejected_square_price": null,
+      "solver_seconds": 90.300420323,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "bound_q1_p04_inherited_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          437,
+          543,
+          545,
+          542,
+          544,
+          543,
+          544,
+          543
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "14446882260150482590667/281474976710656",
+        "identity_only_entrywise_price": "127324574560831006918151546535400823643959663/140188033991779441045781658646609920",
+        "identity_trace": "-44064035009745604692879392134237405/858583571007453924861935616",
+        "original_entrywise_price": "1464429129535813363427/61361544922923008",
+        "rank": 215
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.46406619992136244,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_adaptive_2187",
+      "identity_rank": 5,
+      "mode": "adaptive",
+      "price_over_u": "4638619808687661258749646942533251305191/1430759074920100975313247608147300843520",
+      "price_over_u2": "4638619808687661258749646942533251305191/3129070096850260833010072519018146944778240",
+      "rejected_square_price": null,
+      "solver_seconds": 90.215113703,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "bound_q1_p04_inherited_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          695,
+          865,
+          866,
+          864,
+          866,
+          864,
+          866,
+          865
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "23106771003715951361493/70368744177664",
+        "identity_only_entrywise_price": "33529181539712741417629615502892994217/4938879830295297471442583552",
+        "identity_trace": "-54372536282408398021941942625/165588850053614665728",
+        "original_entrywise_price": "30273485646684113612893/488077609616277504",
+        "rank": 364
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.7776984159951359,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_adaptive_3475",
+      "identity_rank": 4,
+      "mode": "adaptive",
+      "price_over_u": "44890132424164149136755488973367/5148782223082847613978893352960",
+      "price_over_u2": "44890132424164149136755488973367/17892018225212895458576654401536000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.162083023,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        2,
+        6
+      ],
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "bound_q1_p04_reciprocal_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          543,
+          543,
+          542,
+          543,
+          543,
+          542,
+          544,
+          542
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "185205692936807568267/281474976710656",
+        "identity_only_entrywise_price": "2602627849467021300192675042503264494047/323386468262466992031791600107520",
+        "identity_trace": "-92604041648953389150268516713/141470352777632876068864",
+        "original_entrywise_price": "5804160077461546299419/153403862307307520",
+        "rank": 226
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 1.2244779855516532,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_adaptive_2187",
+      "identity_rank": 3,
+      "mode": "adaptive",
+      "price_over_u": "1806242400053284003327500033697470379/471497470726676874382352152956764160",
+      "price_over_u2": "1806242400053284003327500033697470379/1031164968479242324274204158516443217920",
+      "rejected_square_price": null,
+      "solver_seconds": 90.03012551100001,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "bound_q1_p04_reciprocal_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          865,
+          865,
+          864,
+          865,
+          864,
+          864,
+          866,
+          863
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "124041659221278313685/281474976710656",
+        "identity_only_entrywise_price": "70978219619990222754535453/17631803647388024832",
+        "identity_trace": "-454509395087826725/1050937393152",
+        "original_entrywise_price": "32071025362237581391537/488077609616277504",
+        "rank": 365
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 1.1957610201669429,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_adaptive_3475",
+      "identity_rank": 4,
+      "mode": "adaptive",
+      "price_over_u": "3338547881567379781698467/490164141397387090329600",
+      "price_over_u2": "3338547881567379781698467/1703320391355920138895360000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.119793,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p04",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "bound_q1_p16_cofactor_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          450,
+          437,
+          453,
+          445,
+          440,
+          446,
+          430,
+          456
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "597096323346644608339/281474976710656",
+        "identity_only_entrywise_price": "604892930137135542926740581486794892782157934004402600093499967/11218627603283267292160503546450478668626328002557378560",
+        "identity_trace": "-348747984964344628320894982941002856666736958532168616212805/164677102433515850160154180498355650181670869762310144",
+        "original_entrywise_price": "100347659214759/4571791360",
+        "rank": 229
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 1.0990860463100436,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_adaptive_2187",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "2245374208199567624460722036851512977503988478002307052763024785759/411631319351650512102784069897966216358209749742243325486322155520",
+      "price_over_u2": "2245374208199567624460722036851512977503988478002307052763024785759/900237695422059669968788760866852115175404722686286152838586554122240",
+      "rejected_square_price": null,
+      "solver_seconds": 90.163081913,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "bound_q1_p16_cofactor_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          737,
+          695,
+          751,
+          731,
+          718,
+          735,
+          721,
+          762
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "9248200999745666936651/281474976710656",
+        "identity_only_entrywise_price": "3389059301477198586752768021420412360768274214234078539552304357927820124919/2357775070692532291659236115438703325720293257877482554844512256000",
+        "identity_trace": "-34833125903282936744168393387055954091997398280267233082409166656946523279/1060590862249235978947061228398032637867259942989871045431787520000",
+        "original_entrywise_price": "108701514178585/1818230784",
+        "rank": 29
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "cofactor",
+      "float_objective_over_u": 1.0264688555999253,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_adaptive_3475",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "17819873549091476312668760484613741976014357743461083124634225739677913576930151/1786983031606148952659114972140373031078464550908822175761420474003541196800000",
+      "price_over_u2": "17819873549091476312668760484613741976014357743461083124634225739677913576930151/6209766034831367610490424528187796282997664314408157060770936147162305658880000000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.387961969,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "bound_q1_p16_fractional_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          437,
+          544,
+          453,
+          434,
+          430,
+          543,
+          440,
+          450
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "26903563982236831505693/281474976710656",
+        "identity_only_entrywise_price": "19729316805263517424745350489265554994976822915169960992529/16954494642404556346125064094469105871412652933120",
+        "identity_trace": "-5911549399725265296769801525496340788714919749854045013/62218328962952500352752528787042590353807900672",
+        "original_entrywise_price": "92076568395197/4571791360",
+        "rank": 24
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.5471179191592057,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_adaptive_2187",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "94542805336060127627971354735128356197296678709800738745999273/77761305185749596328900459599450990530064751189784663162880",
+      "price_over_u2": "94542805336060127627971354735128356197296678709800738745999273/170063974441234367171305305143999316289251610852059058337218560",
+      "rejected_square_price": null,
+      "solver_seconds": 90.01308343100001,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "bound_q1_p16_fractional_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          695,
+          866,
+          751,
+          716,
+          721,
+          865,
+          718,
+          737
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "57328354140594553809493/140737488355328",
+        "identity_only_entrywise_price": "8241969136048357392831054172452274388609243799547050750303843703835/1582130176139684155634327938591620189093994217658126434304",
+        "identity_trace": "-1288905228554829591678808724319612150675287753626716657310576578319/3164260352279368311268655877183240378187988435316252868608",
+        "original_entrywise_price": "198532609212547/3636461568",
+        "rank": 364
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "fractional",
+      "float_objective_over_u": 0.3285400642023055,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_adaptive_3475",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "23019036054386054307751437578977322254967457850115470163477842378897/376487736635171457945796777636887992921665219963652529261662699520",
+      "price_over_u2": "23019036054386054307751437578977322254967457850115470163477842378897/1308294884807220816361643802288185775402786639373692539184277880832000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.877727081,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "bound_q1_p16_inherited_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          430,
+          437,
+          440,
+          545,
+          434,
+          90,
+          425,
+          422
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "2492642963015970517827/281474976710656",
+        "identity_only_entrywise_price": "4221888364128216819698245440407052812499343334033076631/23400426408338157925555523203428979291465973760",
+        "identity_trace": "-58465045743926328781395846233979330669742162558009/6605624956482189957813838589535350540992512",
+        "original_entrywise_price": "20741657052323/914358272",
+        "rank": 216
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 0.8325525431196696,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_adaptive_2187",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "90652572349261337541774667431580960013200240312324296889/23850086006946203700968783666199100518621434604127518720",
+      "price_over_u2": "90652572349261337541774667431580960013200240312324296889/52160138097191347494018729877977432834225077479226883440640",
+      "rejected_square_price": null,
+      "solver_seconds": 90.11827421299999,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "bound_q1_p16_inherited_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          721,
+          695,
+          718,
+          866,
+          716,
+          106,
+          709,
+          711
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "2084437025777914215/17592186044416",
+        "identity_only_entrywise_price": "12451076921188581731096993781978014326791999998119791425665207453/1980811024382386260084289874906960814971152617305945407488",
+        "identity_trace": "-2544830910559751900944445099319101870455839405136711082437908805/23769732292588635121011478498883529779653831407671344889856",
+        "original_entrywise_price": "35833890080113/606076928",
+        "rank": 370
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "inherited",
+      "float_objective_over_u": 1.6147586272727399,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_adaptive_3475",
+      "identity_rank": 8,
+      "mode": "adaptive",
+      "price_over_u": "28593344109285951466173894704469316610698585789070717598302286135601/6186584897093295485411272783756957430339305594957364198843508326400",
+      "price_over_u2": "28593344109285951466173894704469316610698585789070717598302286135601/21498382517399201811804172923555427070429086942476840590981191434240000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.709642838,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "bound_q1_p16_reciprocal_adaptive_2187.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          543,
+          545,
+          544,
+          543,
+          545,
+          544,
+          542,
+          543
+        ],
+        "effective_dimension": 234,
+        "factor_trace": "123038865860535753249/140737488355328",
+        "identity_only_entrywise_price": "13486943217536090964495140371266597/1310722818484768596778024960",
+        "identity_trace": "-102738818341151551481437676266461/117844803863768185765363712",
+        "original_entrywise_price": "22350397292523/571473920",
+        "rank": 223
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 0.7958326029165967,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_adaptive_2187",
+      "identity_rank": 4,
+      "mode": "adaptive",
+      "price_over_u": "2005159877844366270238238211434069503/581002060821482006450442815699681280",
+      "price_over_u2": "2005159877844366270238238211434069503/1270651507016581148107118437935202959360",
+      "rejected_square_price": null,
+      "solver_seconds": 90.19722713899999,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 2187
+    },
+    {
+      "active_identity_columns": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "bound_q1_p16_reciprocal_adaptive_3475.json",
+      "diagnostics": {
+        "bank_size": 8,
+        "cuts": [
+          865,
+          866,
+          866,
+          865,
+          867,
+          866,
+          864,
+          865
+        ],
+        "effective_dimension": 377,
+        "factor_trace": "93695724510830026769/281474976710656",
+        "identity_only_entrywise_price": "17009441124297295129/6305624358912",
+        "identity_trace": "-1022959514554894675/3152812179456",
+        "original_entrywise_price": "41395879892803/606076928",
+        "rank": 363
+      },
+      "error": null,
+      "factor_fallback": null,
+      "family_id": "reciprocal",
+      "float_objective_over_u": 1.1630901934039775,
+      "frozen_growth_tests": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "passes": true,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "passes": false,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_adaptive_3475",
+      "identity_rank": 4,
+      "mode": "adaptive",
+      "price_over_u": "4540737551927874908346913/735246212096080635494400",
+      "price_over_u2": "4540737551927874908346913/2554980587033880208343040000",
+      "rejected_square_price": null,
+      "solver_seconds": 90.502077227,
+      "solver_status": "optimal_inaccurate",
+      "source_id": "q1_p16",
+      "stage": "validation",
+      "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+      "u": 3475
+    }
+  ],
+  "learned_banks": [
+    {
+      "bank": [
+        {
+          "complement": true,
+          "scale": "5/2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "1/5",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/3",
+          "u_exponent": "3/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/3",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "7",
+          "u_exponent": "1/3",
+          "unit_balance": false
+        },
+        {
+          "complement": true,
+          "scale": "6/5",
+          "u_exponent": "3/5",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "8/3",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a01651",
+        "a00458",
+        "a02311",
+        "a02939",
+        "a01669",
+        "a01626",
+        "a07647",
+        "a04619"
+      ],
+      "generated": 7740,
+      "id": "q1_p16_inherited",
+      "prospective_score_fraction_bits": 573,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": true,
+          "scale": "4/7",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "1/5",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3/5",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/3",
+          "u_exponent": "3/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1",
+          "u_exponent": "3/5",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "5/2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a06211",
+        "a00458",
+        "a00250",
+        "a03809",
+        "a02311",
+        "a01660",
+        "a01651",
+        "a02952"
+      ],
+      "generated": 7740,
+      "id": "q1_p16_cofactor",
+      "prospective_score_fraction_bits": 693,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": true,
+          "scale": "1",
+          "u_exponent": "1/7",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2",
+          "u_exponent": "0",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/4",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "7",
+          "u_exponent": "-1/6",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/3",
+          "u_exponent": "1/7",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3/5",
+          "u_exponent": "1/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3",
+          "u_exponent": "0",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a01569",
+        "a02939",
+        "a00049",
+        "a01104",
+        "a05280",
+        "a03651",
+        "a03705",
+        "a00114"
+      ],
+      "generated": 7740,
+      "id": "q1_p16_reciprocal",
+      "prospective_score_fraction_bits": 363,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": false,
+          "scale": "1/5",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2",
+          "u_exponent": "0",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/3",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "5/2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/4",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/3",
+          "u_exponent": "3/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "4/7",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a00458",
+        "a00049",
+        "a00250",
+        "a01669",
+        "a01651",
+        "a01104",
+        "a02311",
+        "a06211"
+      ],
+      "generated": 7740,
+      "id": "q1_p16_fractional",
+      "prospective_score_fraction_bits": 612,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": false,
+          "scale": "1/5",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/4",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3/5",
+          "u_exponent": "1/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/3",
+          "u_exponent": "1/7",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/6",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3",
+          "u_exponent": "0",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a00458",
+        "a01104",
+        "a02939",
+        "a03705",
+        "a03651",
+        "a03723",
+        "a02231",
+        "a00114"
+      ],
+      "generated": 7740,
+      "id": "q1_p04_inherited",
+      "prospective_score_fraction_bits": 429,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": false,
+          "scale": "3/2",
+          "u_exponent": "3/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/7",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "1/9",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "1/5",
+          "u_exponent": "1",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "5/4",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "5/2",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "7/3",
+          "u_exponent": "1/4",
+          "unit_balance": true
+        },
+        {
+          "complement": false,
+          "scale": "3/4",
+          "u_exponent": "3/4",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a02314",
+        "a02263",
+        "a02321",
+        "a00458",
+        "a03731",
+        "a01651",
+        "a05387",
+        "a03829"
+      ],
+      "generated": 7740,
+      "id": "q1_p04_cofactor",
+      "prospective_score_fraction_bits": 648,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": true,
+          "scale": "1",
+          "u_exponent": "1/7",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/4",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3/5",
+          "u_exponent": "1/4",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3",
+          "u_exponent": "0",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2/7",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "4",
+          "u_exponent": "0",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "2",
+          "u_exponent": "0",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/3",
+          "u_exponent": "1/3",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a01569",
+        "a01104",
+        "a03705",
+        "a00114",
+        "a03723",
+        "a00228",
+        "a00049",
+        "a00711"
+      ],
+      "generated": 7740,
+      "id": "q1_p04_reciprocal",
+      "prospective_score_fraction_bits": 339,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    },
+    {
+      "bank": [
+        {
+          "complement": true,
+          "scale": "7/5",
+          "u_exponent": "2/5",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/9",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "5/6",
+          "u_exponent": "2/5",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "8",
+          "u_exponent": "1/5",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "8",
+          "u_exponent": "1/7",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "1/10",
+          "u_exponent": "2/3",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "3/8",
+          "u_exponent": "1/2",
+          "unit_balance": true
+        },
+        {
+          "complement": true,
+          "scale": "10",
+          "u_exponent": "1/6",
+          "unit_balance": true
+        }
+      ],
+      "descriptor_ids": [
+        "a07636",
+        "a05461",
+        "a07346",
+        "a05364",
+        "a06764",
+        "a06208",
+        "a04610",
+        "a07331"
+      ],
+      "generated": 7740,
+      "id": "q1_p04_fractional",
+      "prospective_score_fraction_bits": 542,
+      "scope": "exact violations disqualify these old witnesses as lower bounds for unrestricted signed identity controls; no new dual supplied",
+      "training_representatives": 1184,
+      "training_witnesses_violating_bank": [
+        1603,
+        1738,
+        2651,
+        2766
+      ]
+    }
+  ],
+  "report": {
+    "RH_proved": false,
+    "bank_selection": [
+      {
+        "elapsed_seconds": 1.4263474580366164,
+        "generated": 7740,
+        "id": "q1_p16_inherited",
+        "ops": 20325231,
+        "prospective_catalog_bytes": 110391072,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.6144070139853284,
+        "generated": 7740,
+        "id": "q1_p16_cofactor",
+        "ops": 20747721,
+        "prospective_catalog_bytes": 122904096,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.692782117985189,
+        "generated": 7740,
+        "id": "q1_p16_reciprocal",
+        "ops": 20851473,
+        "prospective_catalog_bytes": 122904096,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.66801394399954,
+        "generated": 7740,
+        "id": "q1_p16_fractional",
+        "ops": 21429679,
+        "prospective_catalog_bytes": 122904096,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.5238204739871435,
+        "generated": 7740,
+        "id": "q1_p04_inherited",
+        "ops": 20325231,
+        "prospective_catalog_bytes": 110915360,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.7759238969883882,
+        "generated": 7740,
+        "id": "q1_p04_cofactor",
+        "ops": 20747721,
+        "prospective_catalog_bytes": 123428384,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.7801792009850033,
+        "generated": 7740,
+        "id": "q1_p04_reciprocal",
+        "ops": 20851473,
+        "prospective_catalog_bytes": 123428384,
+        "representatives": 1184
+      },
+      {
+        "elapsed_seconds": 1.7795440750196576,
+        "generated": 7740,
+        "id": "q1_p04_fractional",
+        "ops": 21429679,
+        "prospective_catalog_bytes": 123428384,
+        "representatives": 1184
+      }
+    ],
+    "bank_selection_operations": 166708208,
+    "baseline_scope": "calibration only; no fresh-baseline comparison",
+    "calibration_admitted": 16,
+    "calibration_rows": 16,
+    "conservative_process_peak_sum_bytes": 3578994688,
+    "constructor_operations": 18733768286,
+    "elapsed_seconds": 938.9565972079872,
+    "fixed_operators_and_banks": true,
+    "growth_hypotheses_by_j": [
+      {
+        "j": 1,
+        "passes": 16,
+        "tested": 16
+      },
+      {
+        "j": 3,
+        "passes": 12,
+        "tested": 16
+      },
+      {
+        "j": 7,
+        "passes": 0,
+        "tested": 16
+      },
+      {
+        "j": 15,
+        "passes": 0,
+        "tested": 16
+      },
+      {
+        "j": 31,
+        "passes": 0,
+        "tested": 16
+      }
+    ],
+    "hashes_used": false,
+    "independent_operations": 503202416713,
+    "known_unit_and_all_prime_signs_used": true,
+    "new_auxiliary_admitted": 16,
+    "new_auxiliary_coefficient_searches": true,
+    "new_auxiliary_rows": 16,
+    "new_geometry_parents": [
+      2187,
+      3475
+    ],
+    "observed_full_source_values_used": false,
+    "operation_accounting_scope": "instrumented geometry, exact identity and matrix work, bounded exact scalar scoring; excludes solver instructions and symbolic growth comparisons",
+    "operators": 8,
+    "outcomes": [
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "id": "q1_p04_cofactor_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 16.614090089977253,
+        "u": 1024,
+        "worker_peak_rss_kib": 185424
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "id": "q1_p04_cofactor_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 40.306392655998934,
+        "u": 1024,
+        "worker_peak_rss_kib": 164392
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "id": "q1_p04_fractional_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 44.50279270397732,
+        "u": 1024,
+        "worker_peak_rss_kib": 191656
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "id": "q1_p04_fractional_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 38.22576906095492,
+        "u": 1024,
+        "worker_peak_rss_kib": 185424
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "id": "q1_p04_inherited_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 37.748113695997745,
+        "u": 1024,
+        "worker_peak_rss_kib": 164392
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "id": "q1_p04_inherited_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 35.93451725097839,
+        "u": 1024,
+        "worker_peak_rss_kib": 181968
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "id": "q1_p04_reciprocal_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 35.040055126009975,
+        "u": 1024,
+        "worker_peak_rss_kib": 185424
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "id": "q1_p04_reciprocal_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 35.08089644298889,
+        "u": 1024,
+        "worker_peak_rss_kib": 181968
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "id": "q1_p16_cofactor_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 36.550698220031336,
+        "u": 1024,
+        "worker_peak_rss_kib": 157020
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "id": "q1_p16_cofactor_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 35.58141759800492,
+        "u": 1024,
+        "worker_peak_rss_kib": 157020
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "id": "q1_p16_fractional_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 39.05459963204339,
+        "u": 1024,
+        "worker_peak_rss_kib": 181968
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "id": "q1_p16_fractional_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 38.12642406800296,
+        "u": 1024,
+        "worker_peak_rss_kib": 157616
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "id": "q1_p16_inherited_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 41.46669272199506,
+        "u": 1024,
+        "worker_peak_rss_kib": 164392
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "id": "q1_p16_inherited_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 30.616383362037595,
+        "u": 1024,
+        "worker_peak_rss_kib": 157020
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "id": "q1_p16_reciprocal_adaptive_1024",
+        "mode": "adaptive",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 35.94395716500003,
+        "u": 1024,
+        "worker_peak_rss_kib": 157020
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "id": "q1_p16_reciprocal_grammar_order_1024",
+        "mode": "grammar_order",
+        "stage": "calibration",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 34.93083778698929,
+        "u": 1024,
+        "worker_peak_rss_kib": 164392
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "id": "q1_p04_cofactor_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 114.4657919940073,
+        "u": 2187,
+        "worker_peak_rss_kib": 631980
+      },
+      {
+        "candidate_id": "q1_p04_cofactor",
+        "id": "q1_p04_cofactor_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 153.36371000000509,
+        "u": 3475,
+        "worker_peak_rss_kib": 930360
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "id": "q1_p04_fractional_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 114.77047317899996,
+        "u": 2187,
+        "worker_peak_rss_kib": 930360
+      },
+      {
+        "candidate_id": "q1_p04_fractional",
+        "id": "q1_p04_fractional_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 147.0248717860086,
+        "u": 3475,
+        "worker_peak_rss_kib": 631940
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "id": "q1_p04_inherited_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 103.19953137898119,
+        "u": 2187,
+        "worker_peak_rss_kib": 631980
+      },
+      {
+        "candidate_id": "q1_p04_inherited",
+        "id": "q1_p04_inherited_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 122.12084710301133,
+        "u": 3475,
+        "worker_peak_rss_kib": 443052
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "id": "q1_p04_reciprocal_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 113.0725613659597,
+        "u": 2187,
+        "worker_peak_rss_kib": 443052
+      },
+      {
+        "candidate_id": "q1_p04_reciprocal",
+        "id": "q1_p04_reciprocal_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 146.10560692095896,
+        "u": 3475,
+        "worker_peak_rss_kib": 631980
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "id": "q1_p16_cofactor_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 113.57417107501533,
+        "u": 2187,
+        "worker_peak_rss_kib": 360436
+      },
+      {
+        "candidate_id": "q1_p16_cofactor",
+        "id": "q1_p16_cofactor_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 149.27393133199075,
+        "u": 3475,
+        "worker_peak_rss_kib": 824440
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "id": "q1_p16_fractional_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 114.97623875999125,
+        "u": 2187,
+        "worker_peak_rss_kib": 438552
+      },
+      {
+        "candidate_id": "q1_p16_fractional",
+        "id": "q1_p16_fractional_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 154.5103703479981,
+        "u": 3475,
+        "worker_peak_rss_kib": 924960
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "id": "q1_p16_inherited_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 103.34153658500873,
+        "u": 2187,
+        "worker_peak_rss_kib": 336236
+      },
+      {
+        "candidate_id": "q1_p16_inherited",
+        "id": "q1_p16_inherited_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 124.60308210097719,
+        "u": 3475,
+        "worker_peak_rss_kib": 631980
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "id": "q1_p16_reciprocal_adaptive_2187",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 110.68830292404164,
+        "u": 2187,
+        "worker_peak_rss_kib": 360436
+      },
+      {
+        "candidate_id": "q1_p16_reciprocal",
+        "id": "q1_p16_reciprocal_adaptive_3475",
+        "mode": "adaptive",
+        "stage": "validation",
+        "status": "EXACT_ANNIHILATOR_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 139.47994964697864,
+        "u": 3475,
+        "worker_peak_rss_kib": 631980
+      }
+    ],
+    "prior_frozen_files": 666,
+    "sampled_aggregate_peak_rss_bytes": 1718120448,
+    "source_bytes_preserved": true,
+    "status": "COMPLETE_ADAPTIVE_ANNIHILATOR_SEARCH",
+    "uniform_remaining_bound_proved": false,
+    "uniform_source_bound_proved": false,
+    "unknown_composite_signs_used": false
+  },
+  "status": "PUBLISHED_ADAPTIVE_ANNIHILATOR_BOUNDS_AND_UNIFORM_TARGETS",
+  "tests": {
+    "distinct_tests": 11,
+    "failed_test_executions": 0,
+    "passed_test_executions": 17,
+    "test_executions": 17
+  },
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false
+}

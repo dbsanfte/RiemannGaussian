@@ -1,0 +1,42 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "hashes": false,
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_split_bound_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "only_change": "run test owners in separate processes",
+  "previous_failed_attempt": "core-bound-goal-results/pilot-001",
+  "prior_failure_cost": {
+    "frozen_test_operations": 166939,
+    "startup_operations": 2000000,
+    "total_operations": 2166939
+  },
+  "runtime_limit_seconds": 1800,
+  "schema": "core-bound-goal-isolated-run-v1",
+  "spec": {
+    "diagnostic_denominator_max": 12,
+    "energy_power": "0",
+    "linear_coefficient_radius": 2,
+    "maximum_residual_degree": 32
+  },
+  "suites": [
+    {
+      "modules": [
+        "test_core_bound_goal_search",
+        "test_run_core_bound_goal_search",
+        "test_run_core_bound_goal_isolated"
+      ],
+      "owner": "root"
+    },
+    {
+      "modules": [
+        "test_check_core_bound_goal_search"
+      ],
+      "owner": "checker"
+    }
+  ],
+  "test_memory_limit_bytes": 2147483648,
+  "whole_signed_bound_proved": false
+}

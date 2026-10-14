@@ -1,0 +1,240 @@
+INDEPENDENT MATHEMATICAL DESIGN REVIEW080
+
+Scope
+Read MOBIUS_SCALE_FLUX_HANDOFF.txt and MOBIUS_SCALE_FLUX_POSTREVIEW_079.txt.
+This review makes no new arithmetic queries, runs no scientific search or old
+tests, and changes no frozen artifact. It audits the root's settled next search.
+The signed all-scale bound and original RH transfer remain unpaid.
+
+Resolved alternative: growing prime/composite folds
+For a finite prime roster P_y, every squarefree n has a unique decomposition
+n=d*m, d|product(P_y), gcd(m,product(P_y))=1. For a finitely supported real
+coefficient f, define g_y(m)=sum_d mu(d) f(d*m). Then exactly
+ sum_n mu(n)f(n)=sum_m mu(m)g_y(m).
+Let L_y(m) count the occupied squarefree entries in this orbit. Cauchy gives
+ sum_(L>0) g_y(m)^2/L_y(m) <= sum_n mu(n)^2 f(n)^2,
+uniformly even when y grows. This is a useful coefficient-normalization lemma;
+streaming squarefree n and removing selected prime factors avoids enumerating
+the full divisor cube. It requires every smooth factor, not a degree-six
+truncation. Parent and half must use the same roster, or an exact prime-entry
+transport identity must be included.
+
+This does not pay signed cancellation. Since sum_m L_y(m) equals the occupied
+squarefree support size, weighted Cauchy only recovers the trivial O(u) price
+when coefficient energy and support size are both O(u). A roster containing
+all primes in support reduces the entire signed target to g_y(1); treating
+that coefficient as bounded is circular unless a new arithmetic proof bounds it.
+
+A separate disjoint-matching obstruction applies whenever f has a nonzero
+macroscopic prime band inside (X/2,X], X=max physical support. A prime p there
+cannot be the lower endpoint of p<->q*p inside support; its only downward
+partner is 1. A matching can remove at most one such prime. Thus an absolute
+terminal price retains Omega(u/log u) mass by PNT. G has outer band
+(u/5,u/4], coefficient -1, with X=u/4; fixed prime folds preserve that outer
+band. Allowing partners outside support with coefficient zero does not reduce
+the resulting absolute difference price. This obstruction is specifically to
+disjoint matching plus absolute terminal pricing, not every growing fold.
+
+Settled SEARCH080 construction
+Consume 079's exact mode constraints. Generate rational proper rays of
+support one through three, and generic promoted rays a1=L, a9=1 where
+L=log((1-alpha)/alpha), alpha=2*gamma/3, in the independently supported
+domain 1/2<gamma<3/4. Use exact polynomial coefficients in Q[L], with
+positive rational logarithm argument and rational series/tail enclosures.
+For each primitive a, define b=d_active-a. This exact polynomial identity
+preserves all channels of the full target. An anchor a_i=1 at an active
+coordinate makes b_i=0, but does not alone prove either leaf noncircular.
+Require separate physical witnesses for a and b showing that their coefficient
+functions are not scalar copies of the full flux. Nonzero determinant
+witnesses must bind the same physical integer n and full source/half kernels.
+If b=0, a=0, a is the full flux, or the witness cannot be certified, reject.
+
+Conditional validity
+For each leaf the proposed local inequality is S_a^2<=kappa*u^(q-1)*Q_a.
+Exact reconstruction and Q_a<=3K*u*max_i|a_i|^2 give the existing conditional
+cover price by triangle/Cauchy. This is legitimate also for symbolic a,b if
+all coefficient/log enclosures and kappa rounding are directed outward.
+The equality d=a+b is polynomial-exact and must not rely on interval overlap.
+Intervals certify sign/nonzero/enclosure claims; zero-leading-mode claims
+must be proven symbolically from the exact imported mode expression.
+The arithmetic leaf inequalities are still conjectures. A finite selected
+cover, or a log-annihilation certificate, is not a paid uniform bound.
+
+The promotion a1=L,a9=1 exactly annihilates the proven first signature
+(-1,L), since -a1+L*a9=0. For that same restricted signature the full target
+has entries d1=d9=1 and value L-1. Its complement carries that entire
+restricted contribution: (-1,L).b=L-1. This does not prove b has a nonzero
+full leading mode: b contains other channels whose signatures have not been
+derived. It proves that cancellation has moved into b and depends on those
+other channels, rather than disappearing from the cover. Do not apply the
+two-coordinate obstruction to b while silently ignoring its other channels.
+
+Second-obligation diagnostics
+1. Export the exact supported-mode residual of both leaves. For promoted a
+record polynomial zero; for b record L-1 on coordinates {1,9}, plus an explicit
+list of every channel with unknown signature. This makes the remaining
+joint-cancellation obligation reviewable without inventing asymptotics.
+2. Export signed S_a and S_b separately as well as their sum, local prices,
+and cross term 2*S_a*S_b. Show how much the cover's triangle price discards
+observed cancellation. This is a diagnostic, not a uniform covariance claim.
+3. For promoted a, inspect scale-stratified signed residuals using the
+heuristic normalizations (log u)^j*S_a/u, j=2,3, and the proposed power
+normalization. Label logarithmic plots/fits as model probes only. A drifting
+finite constant is not proof of a logarithmic asymptotic, and a flat value
+is not evidence of power saving.
+4. Require every surviving construction to state its next actual lemma:
+a uniform signed remainder inequality for promoted a and a full-channel
+inequality for b, or a separately justified contractive energy recurrence.
+No fitted kappa, zero first mode, or larger channel support discharges them.
+
+Why the second obligation is real
+Already the elementary smooth model Li(u)-2Li(u/2) cancels its u/log u term
+but has expansion -log(2)*u/log^2 u+O(u/log^3 u). This follows directly by
+expanding the logarithmic integral; it is an illustration, not an imported
+second-order asymptotic for these arithmetic channels. Every fixed finite
+inverse-log power remains larger than u^(q/2) for q<2. Endpoint logarithmic
+moments, moving-cutoff offsets and parent/half shifts can create such terms.
+The single equation -a1+L*a9=0 says nothing about their coefficients. Ordinary
+PNT as imported in 079 supplies no quantified error suitable for this bound.
+Deriving further channel signatures would be new mathematics and needs its
+own hypotheses and proof; unsupported channels cannot be treated as zero.
+
+Fresh validation row binding
+Freeze formulas, selection, prices, schedules and symbolic constants before
+generating fixed-seed irregular validation u values. Preserve the complete
+validation draw, including duplicates/rejections and the deduplication rule.
+Generate h=floor(u/2) literally. Both coefficients must be reconstructed on
+one physical integer universe, including gaps, outer support, literal tokens,
+factor categories and cutoff entry/exit effects. Bind each fresh u/h kernel
+independently to fixed-source floor coefficients and the preserved prime fold.
+An independent sieve within the existing horizon supplies mu and squarefree
+status; no old feature row should be extrapolated to a new u. Check all
+required physical arguments lie within the available arithmetic horizon.
+The validation certificate must recompute signed counts, diagonal Gram data,
+each symbolic leaf evaluation and the exact full residual independently.
+Price Q is coefficient energy, not a substitute for arithmetic cancellation.
+
+Keep rational baseline and feedback promotion ablations separate, use the
+same declared row budgets, and report empty/newly occupied channels and
+cutoff-boundary coverage. Fresh irregular u improves held-out coverage but
+is not an extended arithmetic horizon or an all-scale test. Exact outward
+root/log/power enclosures must classify ambiguity separately from pass/fail.
+Apply proven nonzero-mode exclusions before fitting only when every occupied
+channel of that leaf lies within the imported rule's scope.
+
+Indefinite-cross-moment caution
+An unrestricted quadratic majorant dd^T<=H forces H positive semidefinite.
+An indefinite majorant needs independently proved restrictions on attainable
+channel vectors, such as exact linear identities and a reduced-space PSD
+certificate. Asymptotic cancellation and sampled relations are insufficient.
+SEARCH080's explicit two-leaf cover avoids claiming such a missing theorem.
+
+Assessment
+The settled grammar is a meaningful automated test of feedback-driven
+symbolic cancellation and complement preservation. It can close exact
+construction, noncircularity and conditional price obligations and produce
+new honest finite refutations. It does not yet supply a mechanism controlling
+all lower logarithmic remainders or the signed full-channel complement.
+Those uniform arithmetic leaves remain the decisive next obligations.
+
+Unfrozen implementation review: producer and independent checker
+Reviewed mobius_symbolic_cover_080.py and check_mobius_symbolic_cover_080.py
+by source inspection only. Affine S and quadratic Q construction, endpoint
+and vertex extrema, conservative calibration, symbolic complements and
+occupied-cell determinant witnesses implement the conditional mathematics
+above. Float ranking is proposal-only. The checker evaluates the difference
+polynomial at the SAME logarithm rather than independently combining S/Q
+intervals, and retains explicit unpaid source/cell/noncircularity premises.
+Mode obstruction is appropriately restricted to leaves supported in {1,9};
+the annihilator checker explicitly distinguishes whole-ray annihilation from
+annihilation of that restricted subexpression. Source-pair admission binds
+both coefficient rows and recombines their original unfurled M combinations
+using independent arithmetic, while still requiring complete cell admission.
+
+Actionable specification points communicated to root:
+* Promotion may insert coordinate1 into a support-three primitive lacking it,
+  producing a support-four promoted ray. This is valid, but the grammar must
+  declare primitive support<=3 and promoted support<=4, or constrain it.
+* A promoted ray containing other channels must never be labelled as having
+  a proven zero FULL leading mode. The current checker distinguishes this.
+* validation_draw's default maximum 5242880 is a PARENT-u limit. Its physical
+  arithmetic horizon is 1310720 because these kernels end at u/4. These two
+  meanings of horizon must be explicit in the protocol/report.
+* The draw supplies first-cutoff prime entry/exit witnesses, not every event
+  at all three moving cutoffs. Its narrower coverage claim is appropriate;
+  the other cutoff obligations remain visible rather than implicitly paid.
+
+The runner was not yet present at this inspection; formula-freeze chronology,
+complete historical-parent exclusion, budget enforcement and orchestration of
+all independent row admissions require a subsequent runner review.
+
+Independent orchestration review: initial runner/protocol
+Read run_mobius_symbolic_cover_080.py and mobius_symbolic_cover_protocol_080.txt
+after they appeared; no runner execution or scientific/test replay performed.
+The protocol now declares promoted support-four, restricted-mode scope, the
+parent-versus-arithmetic horizon distinction and first-cutoff-only coverage.
+
+Freeze chronology is correct by source inspection. Ten file snapshots are
+written before construction; every selected candidate and frozen-candidate
+manifest is written before validation_draw is called. Candidate bytes are
+checked after their validation. The draw itself receives no discovery values
+and preserves rejection/duplicate records. The fixed seed is declared before
+search, but no validation row is queried before freeze.
+
+The known-parent inventory reads independently admitted076 discovery,
+adaptation and final rows and all078/079 saved source parent filenames,
+including saved half rows. It excludes those parent integers from every
+draw, including boundary probes. Freshness is of u: h=floor(u/2) can still
+be a historically seen endpoint. The current fresh-parent protocol is honest;
+do not upgrade this to a claim that both endpoint scales are unseen.
+
+Independent premises are orchestrated correctly: inherited fixed-kernel,
+coefficient norm, complete base and inactive-coordinate admissions are
+required; inherited discovery rows require kernel bindings and complete
+cell admission; every fresh u gets complete independent cell verification
+and an independent source-pair check of BOTH original unfurled endpoint
+Mertens combinations. Thus finite symbolic checks are not run on merely
+subtracted or extrapolated source values. The fresh maximum u/4 is bounded
+by the declared existing arithmetic horizon. Source lineage remains fixed.
+
+Generated banks, all structural obstruction checks, approximate rankings,
+exact shortlisted calibrations and independent discovery checks are retained.
+Selection is explicitly exact only within the four-frame shortlist and
+then across gamma; no global optimality claim is made. Promotions with other
+channels retain the checker's whole_ray_mode_annihilated=false distinction.
+Finite refutation/survival and uniform/RH claims remain separated correctly.
+
+Resource issue reported promptly to root before science: initial runner's
+7200s/16GiB enforcement covered worker pools and search loops, but did not
+cover main-process final leaf validation, diagnostics, byte comparisons or
+serialization. A shared stage-deadline/RSS gate is needed during row checks
+and before final success; report peak must include main-process postpool RSS.
+This is an orchestration defect rather than a mathematical leaf defect.
+Prospective frame and array work gates are now present. They bound grammar
+to ten coordinates, discovery rows<=512 and frames<=8192; scientific pilot
+is substantially smaller. Individual checker operations remain explicit
+implementation estimates, not CPU-cycle or all-scale proof certificates.
+
+Final pre-freeze resource re-review
+Inspected the revised runner after root's resource fix. check_stage now
+checks the global stage deadline and aggregate RSS in worker pools, after
+initial metadata/inventory work, throughout serial row loading and every
+finite-leaf row check, before final success and around final report writing.
+The report includes sampled main-process RSS. Gate, witness and calibration
+construction work is charged prospectively. The initially reported blocking
+resource-enforcement gap is resolved. These are sampled/cooperative resource
+gates, with the usual possibility of a transient peak between samples; the
+report correctly calls the RSS peak sampled rather than a hard continuous
+operating-system cap.
+
+Root reports two focused runner tests PASS (synthetic independently bound
+source/cell/promoted-search roundtrip and serial-watchdog propagation). This
+reviewer did not execute or independently reproduce those tests; the claim
+is reported provenance, separate from the source-inspection conclusion.
+
+Final assessment before freeze: no remaining blocking mathematical or
+orchestration issue found in inspected producer/checker/runner/protocol.
+This clears a finite detector experiment with conditional cover algebra,
+not an all-scale arithmetic proof. Both signed uniform leaves, lower-log
+remainders, unknown-channel cancellations and source/head/core/RH transfer
+remain unpaid exactly as the protocol states.

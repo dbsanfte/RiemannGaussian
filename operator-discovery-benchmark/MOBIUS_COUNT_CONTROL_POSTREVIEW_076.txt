@@ -1,0 +1,359 @@
+COUNT-CONTROL RESIDUAL GRAMMAR POSTREVIEW076
+=========================================
+
+Scope
+-----
+This is a new postreview; all076 pre-run sources and reviews are frozen
+and unchanged. It makes no arithmetic source query, scientific rerun,
+candidate refit, test rerun, hash or subagent call. Mathematical rules
+below are independent of whether076 numerical formulas succeed. Outcome
+analysis uses only saved, independently admitted phase/candidate records.
+
+1. Same-column signed count envelopes
+------------------------------------
+At each parent, combine atoms on column i BEFORE interpreting prediction:
+
+ b_i(N)=sum_{t:i(t)=i}a_t N^(-gamma_t), N=max(1,n_i),
+ L=sum_i b_i(N_i)B_i.
+
+This signed envelope is the actual source-column coefficient. The
+structural A_i=sum|a_t| certificate safely discards its cancellation;
+multiple nonzero atoms do not by themselves demonstrate useful signed
+prediction. For a column with rational exponents gamma_t, choose the
+LCM D of their reduced denominators and write x=N^(-1/D). Then
+b_i(N)=P_i(x)=sum_t a_t x^(D gamma_t), an exact rational polynomial.
+For a prime column with min gamma>=1/2 one can instead factor
+b_i(N)=N^(-1/2)P_i(N^(-1/D)), choosing D to include denominator2.
+The remaining exponents D(gamma_t-1/2) are nonnegative integers.
+Thus sqrt(N)b_i(N) is exactly a rational polynomial on0<x<=1.
+
+An executable structural envelope rule can certify |P_i(x)|<=k_i on
+the whole closed interval[0,1], for example using exact Bernstein
+coefficients: convert P to degree m Bernstein basis and use that the
+basis weights binomial(m,r)x^r(1-x)^(m-r) are nonnegative and sum1.
+Then min c_r<=P(x)<=max c_r, so k_i=max|c_r| is a rational universal
+bound. Degree elevation or a declared finite rational subdivision can
+sharpen the bound, with every segment and endpoint retained. Resource
+gates on D, degree, coefficients and subdivision count are essential:
+arbitrary rational exponents can generate an impractically large degree.
+
+For prime columns this yields |b_i(N)B_i|<=k_i sqrt(Q_i), because
+|B_i|<=sqrt(N Q_i); direct columns have exact coefficient sum_t a_t
+and use its absolute value as k_i. Empty blocks vanish. Replacing A_i
+by these certified k_i in the h-budget/beta construction pays all
+correlation cross terms and may reward actual same-column cancellation.
+It is a sound NEW certificate, not a smaller observed-count maximum.
+An active gamma<1/2 produces a negative exponent after factoring; unless
+the corresponding coefficients cancel exactly, no finite polynomial
+bound at x=0 follows. Keep such a branch arithmetic/unpaid, or require
+a separately verified rational-function envelope on its full count domain.
+
+This rule alone can still move the whole problem into the residual.
+The next construction below targets that residual exactly.
+
+2. Residual ordinary-Mobius coefficient stencil
+---------------------------------------------
+For any integer v>=0 define the finite prefix stencil
+
+ s_v(n)=1[n<=v//8]-1[n<=v//10]-1[n<=v//4]+1[n<=v//5], n>=1.
+
+Then G(v)=sum_n mu(n)s_v(n), including mu(1)=1. At parent u merge
+literal prime quotient multiplicities m_ij and direct collisions into
+
+ v_j(u)=sum_i b_i(N_i(u))m_ij(u)+sum_d a_d 1[j=u//d].
+
+The residual has the EXACT identity
+
+ R(u)=G(u)-L(u)=sum_n mu(n)c_u(n),
+ c_u(n)=s_u(n)-sum_j v_j(u)s_j(n).
+
+The parent and all prime/direct interactions use ONE shared mu sequence.
+Expanding the square therefore retains both diagonal c_n^2 mu(n)^2
+and2 sum_{n<m}c_n c_m mu(n)mu(m). Neither term family may be discarded.
+Count-power coefficients can be algebraic; keep their symbolic rational
+power expressions or full certified intervals, rather than replacing
+them by floats. Merged equal endpoints can cancel symbolically before
+interval evaluation, improving both the grammar and numerical enclosure.
+
+Every child j<=u//2. Thus every child prefix ends at most at u//8.
+For every integer u//5<n<=u//4, the child stencil vanishes and the
+parent stencil is -1. Consequently c_u(n)=-1 on this complete top
+source band for EVERY operator of the present prime/direct grammar.
+No count normalization or extra coefficient can annihilate these high
+ordinary-Mobius coefficients pointwise. A successful residual estimate
+must bound this signed band and/or its correlation with lower terms.
+This support fact is not an asymptotic lower bound on R, nor an
+impossibility theorem: sums at different n can cancel arithmetically.
+
+3. Recommended executable construction: exact endpoint-event residual
+----------------------------------------------------------------------
+Represent a prefix M(e) as an endpoint event(e,coefficient). Build the
+parent events(e,+1) for e=u//8,u//5 and(e,-1) for e=u//10,u//4.
+For every merged child j subtract v_j times its SAME four events.
+Drop events at e=0 because M(0)=0, and combine all equal endpoints
+symbolically, preserving coefficient signs and direct/prime collisions.
+Sort remaining endpoints0=e0<e1<...<em. If d_r is the combined
+coefficient of M(e_r), then
+
+ R=sum_r d_r M(e_r)
+  =sum_{r=1}^m c_r [M(e_r)-M(e_(r-1))],
+ c_r=sum_{h=r}^m d_h.
+
+Proof: an ordinary mu(n) in(e_(r-1),e_r] occurs in exactly the
+prefixes with endpoints e_h>=e_r, giving the displayed suffix sum.
+This is finite telescoping with the M(0)=0 boundary paid exactly.
+Empty segments contribute zero; coefficient-zero segments may be
+removed or joined. There is no dropped terminal event or interpolation.
+The construction is executable and can be independently tested on
+arbitrary synthetic mu vectors, rational coefficients and quotient-count
+maps, without any Mobius scientific query or candidate success.
+
+Return endpoints, signed symbolic coefficients, their conserved prefix
+expansion, all count variables, and the untouched top-band segment.
+The desired new arithmetic leaf is the UNIFORM signed interval estimate
+
+ [sum_r c_r(u)(M(e_r(u))-M(e_(r-1)(u)))]^2<=C u^q
+ for every integer u>U0.
+
+It is precisely the residual target, now expressed as shared arithmetic
+intervals rather than an opaque fitted maximum. A proof may regroup
+these intervals into signed pairings or establish paid cross-correlations;
+it must not assume this target or the parent G bound to price them.
+The generic unconditional fallback |mu(n)|<=1 pays
+|R|<=sum_r |c_r|(e_r-e_(r-1)), including all endpoint costs. It is
+safe but may be far too large. A finite small interval sum is not its
+uniform price, and an imported Mertens/RH-strength bound would itself
+be a separate arithmetic premise, not a free theorem of this stencil.
+
+4. Exact count-jump residual evolution
+------------------------------------
+Let P_i=P_i(u), P'_i=P_i(u+1), and retained/entering/exiting sets be
+I=P_i intersect P'_i, E=P'_i minus P_i, F=P_i minus P'_i. Then
+
+ B'_i-B_i=sum_{p in I}1[p divides u+1] Delta G(u//p)
+           +sum_{p in E}G((u+1)//p)-sum_{p in F}G(u//p),
+ n'_i-n_i=#E-#F,
+ Delta G(j)=G(j+1)-G(j).
+
+This uses the exact integer floor jump, including child units and the
+open lower/closed upper cutoff membership. Both cutoff boundaries can
+move; an exited prime cannot be treated as retained. For direct d,
+B'_d-B_d=1[d divides u+1]Delta G(u//d). Coefficients a_d are fixed.
+Write b_i=b_i(N_i), b'_i=b_i(N'_i). Product subtraction gives
+
+ R(u+1)-R(u)=Delta G(u)
+ -sum_i [b'_i(B'_i-B_i)+(b'_i-b_i)B_i]
+ -sum_d a_d 1[d divides u+1]Delta G(u//d).
+
+The normalization-change term(b'_i-b_i)B_i is essential. Freezing
+counts between anchors omits it. Its exact signed size can be enclosed
+from rational power bounds at both integer counts. For gamma>=0,
+mean-value gives |(N')^-gamma-N^-gamma|
+<=gamma |N'-N| min(N,N')^(-gamma-1), with all min counts>=1;
+this is a safe auxiliary bound, not a claim of small all-scale cost.
+Count0 to1 has N=N'=1 and zero normalization change despite membership
+changes. At any child Delta G is the four exact divisibility/mu jumps
+recorded in the075 postreview, with no lost boundary correction.
+
+Telescoping R over parents must retain R(U0+1), every floor crossing,
+cutoff event and normalization event. A weighted difference-energy
+bound can pay the resulting square via Cauchy, but its complete number
+of increments/weights and anchor cost must enter C. Merely observing
+small residual increments or adding a free count-jump feature is not
+such a proof. This offers a second independently testable conservation
+rule alongside the endpoint-event stencil.
+
+5. Prime-toggle folding: an exact arithmetic residual construction
+----------------------------------------------------------------
+Let c(n) be any finitely supported coefficient stencil (real, algebraic
+or formal symbolic coefficients are allowed), extended by zero outside
+its support. For a prime p, split the sum into v_p(n)=0,1,>=2. The
+last part has mu(n)=0. Write n=pm in the middle part; p does not divide
+m and mu(pm)=-mu(m), including squareful m where both sides vanish.
+Therefore the EXACT identity is
+
+ sum_n c(n)mu(n)=sum_{m:p does not divide m}[c(m)-c(pm)]mu(m).
+
+No positivity, independence, large-scale hypothesis or cutoff approximation
+is involved. c(pm) means the complete SAME residual stencil, including
+upper/lower parent bands and all direct/prime/count-power interactions.
+Removing one band before folding would change the residual. Extend c by
+zero so support endpoints are paid exactly even when pm exits a band.
+
+Iterate over a finite set P of DISTINCT primes and Q=product_{p in P}p.
+The transformations commute and give
+
+ R=sum_{m:gcd(m,Q)=1} c_P(m)mu(m),
+ c_P(m)=sum_{d|Q}mu(d)c(dm).
+
+Proof by induction: after a previously folded set, split its restricted
+sum by the next p. Multiplication by p preserves coprimality with the
+previous product, and the two coefficient pieces combine with a minus
+sign. The divisors of squarefree Q have signs mu(d)=(-1)^omega(d),
+which exactly enumerate the combined subset signs. Repeating a prime
+adds no new identity and should be canonicalized away. The unit m=1
+is retained, with mu(1)=1 and complete folded coefficient c_P(1).
+
+A sparse implementation need not enumerate all2^|P| divisors: for each
+original supported n, if any p in P has p^2|n drop the row because its
+actual mu value is zero; otherwise divide by every selected p dividing
+n, multiply its coefficient by(-1) for each division, and merge equal
+remaining m. Every retained m is coprime to Q. This implements the
+same divisor formula. It can be independently checked by formal
+coefficient conservation using these Mobius relations, or by synthetic
+squarefree-factor sign models; arbitrary unconstrained mu vectors do
+NOT satisfy the fold identity. Canonical symbolic expressions should
+be combined before numerical interval enclosure, to preserve cancellation.
+
+The new support is within the old horizon; it need not be strictly
+smaller because original n coprime to all P are retained. The complete
+arithmetic leaf is now
+
+ [sum_{m:gcd(m,Q)=1}c_P,u(m)mu(m)]^2<=C u^q, every integer u>U0.
+
+This is equivalent to the residual estimate, with explicit local prime
+relations applied. It does not assume a bound on the parent G. A
+coefficient-only universal fallback is
+|R|<=sum_{m:gcd(m,Q)=1}|c_P,u(m)|,
+since |mu(m)|<=1, or one may retain a paid squarefree indicator.
+Any stronger cancellation/energy bound needs an independent proof on
+this restricted ordinary-Mobius sum. Removing the gcd restriction or
+assuming restricted mu samples independent changes the target.
+
+Folding has a useful genuinely universal coefficient guarantee:
+
+ sum_{p does not divide m}|c(m)-c(pm)|
+ <=sum_{p does not divide m}|c(m)|+|c(pm)|<=sum_n|c(n)|.
+
+Iterated sparse coefficient l1 therefore never increases. This does
+NOT guarantee strict reduction or a power-saving uniform envelope.
+Coefficient square energy can INCREASE: take c(1)=1,c(p)=-1 and zero
+otherwise; initial sum c(n)^2=2, while folded coefficient at1 is2,
+with energy4. A proposed weighted-energy compression rule must pay its
+collision factor or prove its exact quadratic comparison separately.
+
+For the raw parent G stencil, p=2 maps its negative upper band
+(u/5,u/4] onto the positive band(u/10,u/8]. The subtraction c(m)-c(2m)
+can reinforce their signs, rather than cancel them. This explains why
+simply choosing the smallest prime is no general residual improvement
+theorem. The full residual may contain lower interaction coefficients
+that change that conclusion; schedule selection should inspect its
+symbolic coefficients, never observed mu signs to choose a fit.
+
+Recommended executable extension: generate a bounded finite list of
+prime-toggle schedules, fold the residual endpoint/sparse coefficient
+stencil exactly, and retain a coefficient-only l1 certificate plus any
+separately verified weighted-energy certificate. Export original-to-folded
+conservation, vanished prime-square rows, gcd restriction, unit coefficient,
+support horizon, symbolic count dependence and an all-integer residual
+proof leaf. Selection may use provable coefficient costs, not observed
+Mobius residuals. Uniform improvement still requires a compression/jump
+lemma valid for every u with fixed or explicitly controlled schedule.
+
+Q and its divisor vocabulary can grow exponentially with schedule length;
+sparse implementation work instead depends on stencil support and schedule
+length, but support expansion from prefix intervals can be source-sized.
+Budget product bit length, factor/divisibility work, symbolic-expression
+growth and live memory before construction. A moving P(u) needs an exact
+per-parent schedule rule, uniform complexity/price and paid changes in
+the folded stencil between parents. One successful finite schedule or
+coefficient reduction is not an all-scale arithmetic theorem, whole-head
+bound or RH result.
+
+6. Actual076 outcomes and signed prediction diagnosis
+----------------------------------------------------
+The completed report records51 frozen programs,47 reaching the1440
+independently admitted interstitial parents and43 reaching the240
+independently admitted fresh final parents. There are43 finite survivors
+and8 exact refutations;36 programs have a universal correlation certificate.
+Among survivors34 have that certificate (including the THREE zero
+baselines), and9 retain an unpaid uniform arithmetic correlation leaf.
+Every surviving nonzero program still owes its uniform residual theorem.
+No uniform source/head/core bound or RH result was established.
+
+All075 known failure rows were included in076 discovery. Therefore the
+transition from075's18 refutations to076's43 finite survivors cannot be
+read as validation of a uniform exponent improvement. It combines new
+formulas, larger known training coverage and, for many formulas, a safely
+paid structural correlation. Interstitial and final tests are useful new
+finite evaluations of frozen formulas; phase coverage around designated
+anchors is not coverage of every intervening integer parent.
+
+The LP grammar allowed multiple fractional count powers at one source
+column, but NONE of the51 retained programs has repeated source columns.
+The generated degrees of freedom were real; the selected formulas did
+not exploit same-column mixed-power cancellation. The nine prime-only
+structural LP proposals use gamma1/2 on two columns (at the radii across
+each q; their prime-only residual improvements are modest). The joint
+LP proposals instead select a SINGLE direct3 atom, gamma0. Thus the
+strongest observed residual reductions are direct-dilation prediction,
+not evidence that mixtures of count powers learned an arithmetic law.
+
+For q1, radius1/4 joint q1_p04 is L=-(3547/8192)G(u//3); radius1/2
+q1_p05 doubles its coefficient, and radius3/4 q1_p06 has coefficient
+-196608/151349. Their discovery residual ratios to zero baseline are
+approximately0.712,0.472,0.282. These are nonzero exposures, not merely
+operators tending to zero. At saved final u=5242805, G=633 and
+G(u//3)=-244. q1_p04 predicts L=216367/2048>0, giving an exact
+positive signed gain2*633*L-L^2 and residual normalized square
+1166436720289/21989917982720, less than zero baseline400689/5242805.
+This is real signed prediction at that row, with no irrational rounding.
+
+It is not uniform or uniformly strong prediction. At saved final
+u=3276760, G=406 but G(u//3)=-7, so q1_p05 predicts only24829/4096
+while the residual stays large. Its final worst normalized square is
+2683525593609/54974910300160. At u=3276765, G=405 and the direct child
+is -6; q1_p06 predicts1179648/151349. These examples expose a substantial
+remaining arithmetic residual even when a fitted global maximum improves.
+
+No NONZERO program has complete_bound_ratio<1 relative to the matching
+zero baseline's saved paid B. Some equal1 because both are dominated by
+the complete finite base. For q1_p04 and p05, B=1/2 equals baseline;
+for the stronger raw residual improvement q1_p06,
+B=63811593237/68719476736>1/2, so its full bound ratio is
+63811593237/34359738368>1. The radius3/4 residual reduction is more than
+offset by contraction cost. The same no-improvement conclusion holds
+across all three fixed q choices by the exact recorded ratio comparisons.
+These B remain conditional all-scale bounds, not proved results.
+
+Prime-only q1_p00 uses two negative gamma1/2 coefficients, exposure1/4,
+discovery residual ratio218991986833/226292605096 (about0.968), and
+base-dominated B=1/2. Its final worst row u=5242805 has predicted
+L in the strictly NEGATIVE saved interval
+[-721191076734702219952128/196619232317609096076937,
+ -5463568435034294583296/1489539761432542128413], while G=633.
+Thus its prediction worsens the raw square at that particular row,
+even though the discovery MAXIMUM residual is slightly smaller than
+the baseline maximum. This is why a per-row2G L-L^2 diagnostic and
+adverse rows matter; a reduced finite maximum is not uniform useful sign.
+
+The8 refutations split into SIX open-branch correlation failures and
+TWO structural direct3 innovation failures. Four fail on discovery,
+four on interstitial adaptation; no evaluated final program is refuted.
+For example q1_p14's open correlation at u409530 has EXACT L=115/12,
+L^2=13225/144, exceeding721772613367909/7915296012096. This is a real
+counterexample, not interval straddling. For q129_128_p06, innovation
+at u143345 has a rational LOWER normalized enclosure
+98023283046744588288/1888842808060726287473 exceeding the saved
+C=14262035419/274877906944. Its upper enclosure differs because
+u^q is irrational, but the lower>C test certifies refutation. Similarly
+q33_32_p06 is refuted at u143288. Failed frozen formulas are not cured
+by a later finite pass or by raising their constants in this report.
+
+All reported dispositions are either finite-verified or genuinely refuted;
+none here is an unresolved-rounding verdict. The nine open survivors
+pass finite correlation tests but their all-scale correlations are still
+unpaid. The36 structural proofs are algebraic and genuinely unconditional
+within this source grammar; they are not arithmetic residual cancellation.
+
+Recommendation
+--------------
+Use the endpoint-event residual construction and prime-toggle folding
+as the next executable detector rule. Search bounded schedules by
+symbolic coefficient costs, with exact conservation and optional
+Bernstein count-envelope certificates, rather than enlarging the same
+coefficient dictionary or refitting C. Propose a specific uniform folded
+residual/compression leaf, including gcd restriction, untouched high-band
+interaction, count transitions, complete base and implementation cost.
+The observed076 prediction is useful finite evidence for diagnostics,
+while its whole-head/core/RH objective remains open.

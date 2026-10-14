@@ -1,0 +1,35 @@
+{
+  "owner": "quadratic_contraction_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_quadratic_contraction_064.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_quadratic_contraction_064 operations=67952\n",
+      "stderr": "test_actual_distinct_bounded_conditioned_primes (__main__.ContractionCheckerTests) ... ok\ntest_both_endpoint_prices_and_maximum_budget (__main__.ContractionCheckerTests) ... ok\ntest_both_ratios_and_affine_endpoint_coverage (__main__.ContractionCheckerTests) ... ok\ntest_canonical_rational_caps_at_all_boundaries (__main__.ContractionCheckerTests) ... ok\ntest_charge_only_pipeline_meter_work_memory_and_intermediate_caps (__main__.ContractionCheckerTests) ... ok\ntest_complete_source_and_claimed_array_shapes (__main__.ContractionCheckerTests) ... ok\ntest_conditioned_bound_all_remaining_sign_assignments (__main__.ContractionCheckerTests) ... ok\ntest_conditioning_shared_diagonal_does_not_flip_constant (__main__.ContractionCheckerTests) ... ok\ntest_empty_conditioning_and_two_prime_parity (__main__.ContractionCheckerTests) ... ok\ntest_exact_schema_and_forged_scope_flags (__main__.ContractionCheckerTests) ... ok\ntest_gcd_overlap_six_times_ten_gives_fifteen (__main__.ContractionCheckerTests) ... ok\ntest_independent_floor_inverse_all_prime_signs_and_intermediate_ratios (__main__.ContractionCheckerTests) ... ok\ntest_linear_quadratic_cancellation_inside_absolute_value (__main__.ContractionCheckerTests) ... ok\ntest_missing_extra_zero_and_signed_terms (__main__.ContractionCheckerTests) ... ok\ntest_parameter_copy_and_strict_horizon_capacities (__main__.ContractionCheckerTests) ... ok\ntest_recorded_mu_values_and_producer_flags_do_not_pay_source (__main__.ContractionCheckerTests) ... ok\ntest_shared_prime_diagonal_is_constant_not_mu_of_four (__main__.ContractionCheckerTests) ... ok\ntest_squareful_duplicate_unsorted_and_boolean_indices (__main__.ContractionCheckerTests) ... ok\ntest_squareful_inner_index_zero (__main__.ContractionCheckerTests) ... ok\ntest_squareful_outer_index_zero_without_deleting_squareful_d (__main__.ContractionCheckerTests) ... ok\ntest_unit_zero_kernel_and_fractional_endpoints (__main__.ContractionCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.051s\n\nOK\n",
+      "operations": 67952,
+      "elapsed_seconds": 0.1402228309889324,
+      "peak_rss_KiB": 25992,
+      "tests": 21,
+      "test_failure_count": 0
+    }
+  ],
+  "operations": 67952,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "scientific_LP_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true,
+  "prospective_local_storage_cap_bytes": 536870912,
+  "metered_suite_runs": 1,
+  "source_binding": "conditional on check_mobius_quadratic_source_064.verify_quadratic(lift,repair)",
+  "artifact_hashes_used": false,
+  "uniform_N_growth_proved": false,
+  "RH_proved": false
+}

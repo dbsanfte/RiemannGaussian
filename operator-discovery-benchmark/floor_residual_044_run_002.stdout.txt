@@ -1,0 +1,56 @@
+{"event": "protocol_frozen", "families": 581, "refinements": 5810}
+{"event": "training_progress", "families": 50, "total": 581, "operations": 31480197814}
+{"event": "training_progress", "families": 100, "total": 581, "operations": 38149487985}
+{"event": "training_progress", "families": 150, "total": 581, "operations": 44818763148}
+{"event": "training_progress", "families": 200, "total": 581, "operations": 51488005548}
+{"event": "training_progress", "families": 250, "total": 581, "operations": 58157247948}
+{"event": "training_progress", "families": 300, "total": 581, "operations": 64826490348}
+{"event": "training_progress", "families": 350, "total": 581, "operations": 71495732748}
+{"event": "training_progress", "families": 400, "total": 581, "operations": 78164975148}
+{"event": "training_progress", "families": 450, "total": 581, "operations": 84834217548}
+{"event": "training_progress", "families": 500, "total": 581, "operations": 91503459948}
+{"event": "training_progress", "families": 550, "total": 581, "operations": 98172702348}
+{"event": "training_progress", "families": 581, "total": 581, "operations": 102307632636}
+{"event": "selection_frozen", "log_matches": 5031, "signed_auxiliary_matches": 1043, "signed_refinement_matches": 1092, "rules": [{"stratum": "signed_auxiliary", "family": "compatible_0177", "q": 2, "b": "1", "finite_log_bound": {"A": "1/4", "eta": "1"}, "auxiliary_signed_needed_training": 3, "refinement_signed_needed_training": 3}, {"stratum": "scale_refinement", "family": "compatible_0149", "q": 2, "b": "1/2", "finite_log_bound": {"A": "1/4", "eta": "1"}, "auxiliary_signed_needed_training": 3, "refinement_signed_needed_training": 3}, {"stratum": "baseline_control", "family": "compatible_0003", "q": 2, "b": "1/2", "finite_log_bound": {"A": "1", "eta": "1"}, "auxiliary_signed_needed_training": 0, "refinement_signed_needed_training": 3}, {"stratum": "endpoint_restatement_control", "family": "compatible_0177", "q": 2, "b": "0", "finite_log_bound": {"A": "1", "eta": "1"}, "auxiliary_signed_needed_training": 3, "refinement_signed_needed_training": 0}]}
+{"event": "whole_domain_audit_started", "distinct_programs": 40, "workers": 2, "H": 1048576, "aggregate_memory_reserve_bytes": 2689413736}
+{"event": "whole_domain_norm_verified", "completed": 1, "total": 40, "id": "compatible_0177_N257", "norm_squared_decimal": [0.019026817097937507, 0.019027423834789958], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 2, "total": 40, "id": "compatible_0177_N514", "norm_squared_decimal": [0.010676494743704103, 0.010677806812961977], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 3, "total": 40, "id": "rule_01_N257_forcing", "norm_squared_decimal": [0.018935931471874383, 0.018938305720938336], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 4, "total": 40, "id": "rule_01_N257_baseline_forcing", "norm_squared_decimal": [0.037278957248338934, 0.037280518209327665], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 5, "total": 40, "id": "rule_01_N257_auxiliary_forcing", "norm_squared_decimal": [0.018310333377832496, 0.018310419272494907], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 6, "total": 40, "id": "compatible_0177_N389", "norm_squared_decimal": [0.013088806573483842, 0.013089741912620667], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 7, "total": 40, "id": "compatible_0177_N778", "norm_squared_decimal": [0.008762659058934084, 0.008765106101975435], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 8, "total": 40, "id": "rule_01_N389_forcing", "norm_squared_decimal": [0.017523129818377507, 0.017527519179101947], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 9, "total": 40, "id": "rule_01_N389_baseline_forcing", "norm_squared_decimal": [0.03150941790427536, 0.03151236343527496], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 10, "total": 40, "id": "rule_01_N389_auxiliary_forcing", "norm_squared_decimal": [0.018124644414264875, 0.01812478959495632], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 11, "total": 40, "id": "compatible_0177_N521", "norm_squared_decimal": [0.010596811133837173, 0.010598148225944268], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 12, "total": 40, "id": "compatible_0177_N1042", "norm_squared_decimal": [0.008340579745330019, 0.008344763641323234], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 13, "total": 40, "id": "rule_01_N521_forcing", "norm_squared_decimal": [0.01720879475936959, 0.017216242393710248], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 14, "total": 40, "id": "rule_01_N521_baseline_forcing", "norm_squared_decimal": [0.028368707371496032, 0.028373770467575835], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 15, "total": 40, "id": "compatible_0149_N257", "norm_squared_decimal": [0.03252657005223622, 0.03252754694232048], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 16, "total": 40, "id": "rule_01_N521_auxiliary_forcing", "norm_squared_decimal": [0.017989159337473724, 0.017989391392026037], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 17, "total": 40, "id": "compatible_0149_N514", "norm_squared_decimal": [0.0232963331166116, 0.023298513201594605], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 18, "total": 40, "id": "rule_02_N257_forcing", "norm_squared_decimal": [0.02066305157889137, 0.020665820633139303], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 19, "total": 40, "id": "rule_02_N257_baseline_forcing", "norm_squared_decimal": [0.03785785862633165, 0.0378589571971797], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 20, "total": 40, "id": "rule_02_N257_auxiliary_forcing", "norm_squared_decimal": [0.009356628231052403, 0.009357092405862756], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 21, "total": 40, "id": "compatible_0149_N389", "norm_squared_decimal": [0.026496845540883326, 0.02649839020428703], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 22, "total": 40, "id": "compatible_0149_N778", "norm_squared_decimal": [0.019895800437720775, 0.019899955112031197], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 23, "total": 40, "id": "rule_02_N389_forcing", "norm_squared_decimal": [0.018217344304514417, 0.018222604194455753], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 24, "total": 40, "id": "rule_02_N389_baseline_forcing", "norm_squared_decimal": [0.031477893553477056, 0.031479983444763056], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 25, "total": 40, "id": "rule_02_N389_auxiliary_forcing", "norm_squared_decimal": [0.007544568632343436, 0.007545432768820651], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 26, "total": 40, "id": "compatible_0149_N521", "norm_squared_decimal": [0.02319622087212824, 0.02319844414835161], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 27, "total": 40, "id": "compatible_0149_N1042", "norm_squared_decimal": [0.018822958314503847, 0.018830238501248157], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 28, "total": 40, "id": "rule_02_N521_forcing", "norm_squared_decimal": [0.017885044750322158, 0.017894212983593987], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 29, "total": 40, "id": "rule_02_N521_baseline_forcing", "norm_squared_decimal": [0.028173005869904406, 0.028176657954539205], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 30, "total": 40, "id": "rule_02_N521_auxiliary_forcing", "norm_squared_decimal": [0.006598651486111324, 0.006600126269517231], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 31, "total": 40, "id": "compatible_0003_N257", "norm_squared_decimal": [0.08888751928179081, 0.0888880026056301], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 32, "total": 40, "id": "rule_03_N257_auxiliary_forcing", "norm_squared_decimal": [0.0, 0.0], "tail_provider": "pointwise"}
+{"event": "whole_domain_norm_verified", "completed": 33, "total": 40, "id": "compatible_0003_N514", "norm_squared_decimal": [0.06065852600541315, 0.06065944640263932], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 34, "total": 40, "id": "compatible_0003_N389", "norm_squared_decimal": [0.0708909418132403, 0.07089163426689546], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 35, "total": 40, "id": "compatible_0003_N778", "norm_squared_decimal": [0.04916895299519358, 0.04917066493999752], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 36, "total": 40, "id": "compatible_0003_N521", "norm_squared_decimal": [0.06023944135782854, 0.060240379201449534], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 37, "total": 40, "id": "compatible_0003_N1042", "norm_squared_decimal": [0.043036977782211557, 0.04303997751173356], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 38, "total": 40, "id": "rule_04_N257_auxiliary_forcing", "norm_squared_decimal": [0.03561384487281564, 0.035613935406827474], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 39, "total": 40, "id": "rule_04_N389_auxiliary_forcing", "norm_squared_decimal": [0.035483386444351304, 0.03548351927146238], "tail_provider": "large_sieve"}
+{"event": "whole_domain_norm_verified", "completed": 40, "total": 40, "id": "rule_04_N521_auxiliary_forcing", "norm_squared_decimal": [0.03528621309895606, 0.035286396990431415], "tail_provider": "large_sieve"}
+{"event": "completed", "status": "COMPATIBLE_AUXILIARIES_AUDITED_UNIFORM_BOUND_OPEN", "elapsed_seconds": 417.7433047600207, "certificates": 40, "final_bound_status_counts": {"verified_at_this_support": 12, "refuted_at_this_support": 0, "unresolved_interval": 0}, "signed_mechanism_counts": {"auxiliary": {"no_auxiliary": 3, "signed_cross_needed_against_absolute_cross": 3, "signed_cross_needed_even_against_diagonal": 6}, "refinement": {"bound_survives_absolute_cross_replacement": 6, "endpoint_restatement": 3, "signed_cross_needed_against_absolute_cross": 3}}}

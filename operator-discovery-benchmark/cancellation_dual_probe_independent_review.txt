@@ -1,0 +1,19 @@
+Independent posthoc dual-probe adjudication
+
+Both probe receipts have been independently checked by check_cancellation_dual_probe.py. Probe001 retains missing_resource from its denominator cap; retry002 is a distinct sealed resource retry and produces an exact separator. All ordinary training instances and the zero-cubic auxiliary were reconstructed from our independent dictionary implementation, with original target polynomials unchanged. Full stacked monomial coverage and every original square, relation and constant-column dot were checked by the independent rational checker. No absent monomial was assigned zero.
+
+Retry002 has lhs dot -1, nonnegative square/constant-column dots, and zero relation-column dots. Therefore the declared shared cone with its supplied zero-cubic auxiliary has no certificate for this training family. This is a statement about that finite constrained cone, not false actual arithmetic or an impossibility result for other proof languages.
+
+Keeping q=6, the scales, dictionary, auxiliary constraint and shared-weight rules fixed, changing C changes only each original lhs constant C*X^2*ceil(X^(1/6)). Independently rebuilding C=0 and C=1 gives total dual slope zero and intercept -1. Since every per-instance scalar-column dual weight is nonnegative and these positive scaling coefficients are positive, the ordinary scalar-coordinate weights individually vanish. Thus the same separator remains valid for every C; increasing C cannot repair this particular constrained shared cone. This does not rule out scale-dependent weights or a broader generator, and does not refute any actual cofinal estimate.
+
+The independent receipt binds probe/source/spec/parent input hashes and repeats source/input checks at the end. Original failed attempt status and the first probe's missingness remain unchanged. No frozen sources were edited.
+
+Bindings:
+result.json 2de80a980f8dbd25ac58c2903f57a1cd1bb647aecdc0811a697786174c8622a4
+spec.json 8711e46bbe49dbfb87668e3b3c15ea2823821f35f335a4fcb2e019796e889388
+source_seal.json ad3bb81f47edf6180a87ad3916a07abf712f2aed9cd0422749af1ffe04c94be2
+seal.json ea4ac80cdb7707850c311a7961f1f98835a1eff722b9c5b9ab45fd467981930e
+producer_receipt.json 13119df3d303647e6ecd77f0eab37474caf4bf48f48813f076137b45e48aa86e
+independent_verification.json 3005f8cc4aef28efa830202f0c1504ee042d4a58c979c476b5cf800bcb0f2273
+checker 46afe5d8c976f15ead1a62bf5ee69405d8bac727630f2a16508abdbf16f48db7
+Per-instance constant dual coordinates: [(0, '0'), (1, '0'), (2, '0'), (3, '0'), (4, '0')]

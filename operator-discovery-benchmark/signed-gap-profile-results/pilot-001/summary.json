@@ -1,0 +1,88 @@
+{
+  "status": "verified_independent_constant_profiles_actual_signed_gaps_and_separate_analytical_attempts",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-gap-profile-results/pilot-001",
+  "program_count": 384,
+  "exponent_schedule_count": 8,
+  "constant_law_count": 16,
+  "log_powers": [
+    "0",
+    "1/6",
+    "1"
+  ],
+  "existential_per_level_constants_supported": true,
+  "unseen_level_constants_are_missing_not_fitted_predictions": true,
+  "exponent_and_constant_growth_decoupled": true,
+  "proof_queue_candidates": 48,
+  "fresh_scales": [
+    60026,
+    65536,
+    77416,
+    524288
+  ],
+  "fresh_dyadic_scales": [
+    65536,
+    524288
+  ],
+  "fresh_new_levels": [
+    13,
+    17
+  ],
+  "fresh_actual_coefficient_cutoff": 2097152,
+  "fresh_positive_actual_defects": 1,
+  "fresh_actual_observations": 768,
+  "fresh_half_gap_passes": 704,
+  "fresh_missing_constants": 64,
+  "fresh_new_level_observations": 384,
+  "fresh_new_level_passes": 320,
+  "delayed_counterfeit_half_gap_failures": 609,
+  "counterfeit_shared_prefix_through": 131072,
+  "anonymous_minimum_bound_terms": [
+    [
+      1,
+      0,
+      "1/6"
+    ],
+    [
+      2,
+      0,
+      "-1/2"
+    ],
+    [
+      3,
+      0,
+      "1/3"
+    ]
+  ],
+  "anonymous_sparse_fits_retained": 378,
+  "global_binary_prefix_minimum_bound_proved": true,
+  "quantitative_tail_obstruction_has_no_position_assumption": true,
+  "critical_tail_omission_power_ceiling": "1/2",
+  "new_independent_prime_distribution_estimate": false,
+  "unresolved_global_actual_signed_gap_candidates": 48,
+  "conditional_simplicity_restricting_candidates": 17,
+  "positive_r_can_still_impose_critical_zero_simplicity": true,
+  "critical_multiplicity_scope_is_conditional": true,
+  "global_generic_energy_power": "3",
+  "global_actual_critical_signed_gap_proved": false,
+  "verified_checks": 7,
+  "analytical_verified_checks": 4,
+  "independent_native_counts": {
+    "independent_actual_prime_inverse_coefficients": 2260992,
+    "exact_signed_gap_observations": 13696,
+    "unseen_level_constants_retained_as_missing": 128,
+    "anonymous_sparse_fits_checked": 378,
+    "fresh_minimum_responses_checked": 31
+  },
+  "independent_analytical_counts": {
+    "exact_polynomial_differences": 30,
+    "profile_growth_consequences": 48,
+    "direct_binary_prefix_exchange_checks": 2046
+  },
+  "verification_sha256": "a3e656ecd02f10de24122280944407cca2769330b8a6331be66fa0343cb9d0b3",
+  "analytical_verification_sha256": "a5ca71627e297266b2d8805661509626f8722a14708df64a274cb1cd9661aa07",
+  "guided_target_features_and_proof_methods_supplied": true,
+  "semantic_denominator_cap": false,
+  "machine_formalized": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

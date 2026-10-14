@@ -1,0 +1,129 @@
+DIVISOR PRECONDITIONING, LOGARITHMIC ROOTS AND RETAINED SIGNED ARITHMETIC
+
+Scope. The supplied proof methods establish true all-scale signed bounds
+of ordinary exponent one for integer logarithmic jets, universal identities,
+and an all-index signed support law for positive rational log roots. They do
+not establish an RH-strength bound. Historical priority is not a gate.
+
+1. Arithmetic and exact inverse preconditioning
+Let u(n)=1, mu*u=delta, and L_a(n)=(log n)^a for n>1, L_a(1)=0, a>0.
+Define lambda_a=mu*L_a and T_a(x)=sum_(n<=x)lambda_a(n). These finite point
+sums include every term; the producer uses divisor inversion, no prime oracle.
+For integer k, the logarithmic derivation Df(n)=log(n)*f(n) obeys Leibniz
+under Dirichlet convolution. Consequently lambda_1 is the actual Mangoldt
+sequence and lambda_(k+1)=D(lambda_k)+lambda_1*lambda_k. The Bell polynomial
+is supplied by this generic differential algebra, not a nominated answer.
+An anonymous feature fit may infer the same relation; numeric inference is
+not universal proof. The evaluator checks prime-power support independently.
+
+For any h(x), zero on x<1, put (u h)(x)=sum_(n<=x)h(x/n). Finite divisor
+rearrangement gives mu(u h)=h for every real x>=1. If
+ S_k(x):=sum_(n<=x)log^k(n)=(u h_k)(x)+R_k(x),
+then EXACTLY T_k(x)=h_k(x)+sum_(d<=x)mu(d)R_k(x/d).
+Only the preconditioned component collapses. The residual still carries the
+actual mu signs and the ordinary-zeta denominator; zeta is not erased.
+
+2. A general harmonic approximation grammar
+Let gamma_j be Stieltjes constants, defined by
+ zeta(1+w)-1/w=sum_(j>=0)(-1)^j*gamma_j*w^j/j!.
+Euler summation gives, for every real x>=1,
+ sum_(n<=x)log^j(n)/n = log^(j+1)(x)/(j+1)+gamma_j+e_j(x),
+ |e_j(x)|<=B_j*(1+log x)^j/x,
+ B_j=2*j!*sum_(h=0)^j 1/h!.
+Indeed the error from the limiting Euler constant is bounded by f_j(x)
+plus integral_x^infinity |f'_j(t)|dt. Expanding the integer incomplete-Gamma
+integrals bounds this by 2*j!*sum_(h=0)^j log^h(x)/h!/x. The same argument
+handles noninteger x and j=0.
+
+For H_r(x)=sum_(n<=x)log^r(x/n)/n, the binomial expansion therefore yields
+ H_r(x)=log^(r+1)(x)/(r+1)
+       +sum_(j=0)^r (-1)^j*binom(r,j)*gamma_j*log^(r-j)(x)+E_r(x),
+ |E_r(x)|<=C_r*(1+log x)^r/x, C_r=sum_(j=0)^r binom(r,j)*B_j.
+
+The integral polynomial for S_k is
+ I_k(t)=sum_(j=0)^k (-1)^(k-j)*k!/j!*t^j,
+ |S_k(x)-x*I_k(log x)|<=log^k x+k!.
+Choose h_k(x)=x*P_(k-1)(log x)+b for x>=1. Solve descending powers of t
+so sum_r p_r[ t^(r+1)/(r+1)+sum_j (-1)^j*binom(r,j)gamma_j*t^(r-j)]+b=I_k(t).
+This triangular polynomial completion works for EVERY integer k>=1 and
+has leading coefficient k. It does not depend on candidate outcomes.
+For example k=2 gives P(t)=2t-2(1+gamma_0); this is known Selberg calibration.
+The added constant b removes the last unmatched harmonic constant; its
+Mellin pole is at zero and has no effect in the right-half ordinary domain.
+
+The exact retained residual satisfies
+ |R_k(y)|<=C_R*(1+log y)^k,
+ C_R>=k!+1+|b|+sum_r |p_r| C_r.
+The implementation rounds upward with a strict extra guard. This proves
+the bound at EVERY real y>=1, not just at fitted or checked scales.
+
+3. A true global signed error, and its limit
+Let J_k=sum_(j=0)^k binom(k,j)*j!. A decreasing-integral comparison gives
+ sum_(d<=x)(1+log(x/d))^k <= (1+log x)^k+x*J_k <=2*J_k*x.
+The last inequality follows termwise from log^j(x)/x<=j! for x>=1.
+Applying the exact inverse BEFORE this envelope proves
+ |T_k(x)-h_k(x)|<=2*J_k*C_R*x, every real x>=1.
+This is a genuine signed actual-prime coupled estimate. It is NOT a bound
+for the unit-reference arithmetic and cannot be transferred to that input.
+It saves logarithms over an unreduced convolution estimate; its ordinary
+power remains one. Reaching square-root scale would require controlling
+the SIGNED residual beyond this supplied absolute-envelope method.
+
+4. All-scale arithmetic information in fractional logarithmic roots
+Factor n=prod_(i=1)^r p_i^e_i, with distinct actual primes. Write
+ b=sum_i(e_i-1)log p_i>=0 and h_i=log p_i>0. Exact Mobius divisor inversion
+gives lambda_a(n)=Delta_(h_1)...Delta_(h_r) t^a evaluated at b.
+For every real a>0 this equals
+ (a)_r * integral_[0,h_1]...integral_[0,h_r](b+u_1+...+u_r)^(a-r)du,
+where (a)_r=a(a-1)...(a-r+1). For b=0 the positive integral is finite:
+near the corner the volume is O(t^r) and the radial integral is O(t^a).
+One may first prove the identity for Re(a)>r, then continue analytically
+to Re(a)>0; the integral is locally dominated there. Integer factors that
+vanish make the finite difference exactly zero. This includes all prime
+powers and all distinct-prime counts, without a finite scale restriction.
+
+Thus for integer a=k, lambda_k(n)>0 when 1<=omega(n)<=k and equals zero
+when omega(n)>k. For noninteger a in (m,m+1), it is positive through
+omega=m+1 and thereafter alternates with sign (-1)^(omega-m-1).
+Square, cube and sixth roots (a=1/2,1/3,1/6) have alternating support over
+ALL distinct-prime counts. They are not truncated almost-prime indicators.
+This is signed prime-factor information, not a prime-distribution bound.
+The detector fits sign signatures anonymously and checks them against this
+supplied universal finite-difference certificate. Unsupported fits survive
+as numerical leads. A generic sequence cannot inherit the actual-mu premise.
+
+5. Ordinary-zeta information and the correct recovery gate
+For Re(s)>1 the integer jet series is (-1)^k*zeta^(k)(s)/zeta(s), and the
+summatory Mellin transform has the additional factor 1/s. The completed
+h_k removes the main pole at one exactly. At k=1, the logarithmic derivative
+has a nonzero pole of residue minus the multiplicity at EVERY ordinary zero.
+Any proved cofinal bound with limiting exponent 1/2 for T_1-h_1 would imply
+RH. The true supplied bound has exponent one and does not imply RH.
+For k>=2 a numerator derivative can mask a simple zero. No generic automatic
+gate may assume otherwise: y(z)=z+z^(K+1) is an explicit local counterexample
+for all derivative ratios of orders 2 through K at zero. These higher coupled
+prime estimates retain arithmetic information, but have missing zero recovery.
+
+Fractional a has a branch at s=1: integral_1^infinity log^a(t)*t^-s dt
+=Gamma(a+1)*(s-1)^(-a-1). Dividing by zeta leaves a fractional singularity.
+A finite logarithmic polynomial center does not remove that whole branch.
+The pilot does NOT pretend integer completion or a first-jet zero gate applies
+to a fractional order. A full branch center and a verified ordinary-zero
+bridge remain separate tasks. The coefficient sign certificates hold anyway.
+
+6. Provenance and independent scrutiny
+Source arithmetic, native constants, generic behavior fits, exact completion
+and the retained remainder have separate artifacts. Discovery has no model,
+literature, parent outcomes, final-data or prime-oracle access. New final scales
+and generic difference inputs are evaluator-owned after archive sealing.
+The independent checker factors actual integers, evaluates harmonic constants
+by Cauchy contour integrals rather than native zeta Taylor series, independently
+solves the triangular identities, and checks complete finite sums and rewrites.
+Producer replay is a separate process. Neither finite tests nor a supplied
+completion rule are represented as autonomous proof invention or an RH proof.
+
+Named calibration reference, not an imported new arithmetic estimate:
+https://terrytao.wordpress.com/2014/10/25/a-banach-algebra-proof-of-the-prime-number-theorem/
+Its Selberg discussion checks the interpretation of k=2. The explicit constants
+and every-real-scale estimates above are derived here, not imported from a
+numerically evaluated asymptotic O-symbol.

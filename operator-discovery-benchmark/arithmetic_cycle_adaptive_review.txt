@@ -1,0 +1,31 @@
+Independent complete adaptive trajectory audit passed.
+{
+  "RH_proved": false,
+  "finite_calibration_only": true,
+  "global_bound_proved": false,
+  "input_sha256": {
+    "results.json": "fa4c635b239529918179602004407ff952a543b8c41d96c396a1109511508d57",
+    "seal.json": "f9c6c0ee4e7713b710772e8fa7e306cd0e8142b264c4a0b22a62978886ad042d",
+    "spec.json": "324dc6038133f06f3d9f5bbcbe7d9c4156670c418c5a3cf0b2773860c90c1486"
+  },
+  "trajectories": [
+    {
+      "finite_bound_verified": true,
+      "iterations": 7,
+      "mode": "atomic_local",
+      "promotions": 7,
+      "terminal": "finite_certificate",
+      "uniform_bound_proved": false
+    },
+    {
+      "finite_bound_verified": true,
+      "iterations": 16,
+      "mode": "grouped_cycles",
+      "promotions": 16,
+      "terminal": "finite_certificate",
+      "uniform_bound_proved": false
+    }
+  ],
+  "verified": true
+}
+These certificates prove only actual mu Delta(2)<=8, already arithmetically Delta(2)=6. Seven and sixteen promotions repaired inadequate finite cones. No reusable all-scale template, RH-strength estimate or unseen-coefficient generalization was inferred.

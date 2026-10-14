@@ -1,0 +1,23 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "fitted_constants": 0,
+  "hashes": false,
+  "input": "candidate10_work_moment_proof_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "numeric_cache_values_used": false,
+  "runtime_model_calls": 0,
+  "runtime_seconds": 900,
+  "schema": "core-signed-primitive-run-v1",
+  "spec": {
+    "basis": "real conjugate orbits inferred from source monomials",
+    "free_variables": "zero",
+    "inverse_increment_depth": 1,
+    "numerical_samples": false,
+    "potential_coefficients": "rational",
+    "search": "all endpoint/residual cost thresholds plus requested cost"
+  },
+  "total_operation_cap": 1000000000,
+  "unchanged_development_suites_rerun": 0,
+  "whole_signed_bound_proved": false
+}

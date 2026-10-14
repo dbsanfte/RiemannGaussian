@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "started": 1791724950.376519,
+  "checks": [
+    {
+      "source": "q1_p16",
+      "energy": "current",
+      "family": "raw_index",
+      "terms": 28
+    },
+    {
+      "source": "q1_p16",
+      "energy": "current",
+      "family": "balanced_index",
+      "terms": 28
+    },
+    {
+      "source": "q1_p16",
+      "energy": "current",
+      "family": "balanced_fractional",
+      "terms": 84
+    },
+    {
+      "source": "q1_p16",
+      "energy": "current",
+      "family": "matched_certified",
+      "terms": 44,
+      "equations": 12
+    },
+    {
+      "source": "q1_p16",
+      "energy": "two_delay",
+      "family": "raw_index",
+      "terms": 34
+    },
+    {
+      "source": "q1_p16",
+      "energy": "two_delay",
+      "family": "balanced_index",
+      "terms": 34
+    },
+    {
+      "source": "q1_p16",
+      "energy": "two_delay",
+      "family": "balanced_fractional",
+      "terms": 102
+    },
+    {
+      "source": "q1_p16",
+      "energy": "two_delay",
+      "family": "matched_certified",
+      "terms": 62,
+      "equations": 12
+    },
+    {
+      "source": "q1_p16",
+      "energy": "three_delay",
+      "family": "raw_index",
+      "terms": 40
+    },
+    {
+      "source": "q1_p16",
+      "energy": "three_delay",
+      "family": "balanced_index",
+      "terms": 40
+    },
+    {
+      "source": "q1_p16",
+      "energy": "three_delay",
+      "family": "balanced_fractional",
+      "terms": 120
+    },
+    {
+      "source": "q1_p16",
+      "energy": "three_delay",
+      "family": "matched_certified",
+      "terms": 80,
+      "equations": 12
+    },
+    {
+      "source": "q1_p04",
+      "energy": "current",
+      "family": "raw_index",
+      "terms": 28
+    },
+    {
+      "source": "q1_p04",
+      "energy": "current",
+      "family": "balanced_index",
+      "terms": 28
+    },
+    {
+      "source": "q1_p04",
+      "energy": "current",
+      "family": "balanced_fractional",
+      "terms": 84
+    },
+    {
+      "source": "q1_p04",
+      "energy": "current",
+      "family": "matched_certified",
+      "terms": 44,
+      "equations": 12
+    },
+    {
+      "source": "q1_p04",
+      "energy": "two_delay",
+      "family": "raw_index",
+      "terms": 34
+    },
+    {
+      "source": "q1_p04",
+      "energy": "two_delay",
+      "family": "balanced_index",
+      "terms": 34
+    },
+    {
+      "source": "q1_p04",
+      "energy": "two_delay",
+      "family": "balanced_fractional",
+      "terms": 102
+    },
+    {
+      "source": "q1_p04",
+      "energy": "two_delay",
+      "family": "matched_certified",
+      "terms": 62,
+      "equations": 12
+    },
+    {
+      "source": "q1_p04",
+      "energy": "three_delay",
+      "family": "raw_index",
+      "terms": 40
+    },
+    {
+      "source": "q1_p04",
+      "energy": "three_delay",
+      "family": "balanced_index",
+      "terms": 40
+    },
+    {
+      "source": "q1_p04",
+      "energy": "three_delay",
+      "family": "balanced_fractional",
+      "terms": 120
+    },
+    {
+      "source": "q1_p04",
+      "energy": "three_delay",
+      "family": "matched_certified",
+      "terms": 80,
+      "equations": 12
+    }
+  ],
+  "prior_byte_preserved_files": 598,
+  "missing_files": []
+}

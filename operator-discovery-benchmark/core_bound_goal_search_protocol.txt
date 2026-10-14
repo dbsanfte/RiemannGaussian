@@ -1,0 +1,136 @@
+BOUND-GOAL AND AUXILIARY-IDENTITY SEARCH, VERSION 1
+
+Input: candidate10_split_bound_obligation.json, previously published and
+verified. Never modify its sources, prior results or terminal failures.
+This stage answers whether the detector can work backwards from a missing
+bound, generate an auxiliary identity, and derive the missing estimates.
+It does not claim a general analytic prover or any new full core bound.
+
+Supplied primitives are documented in CORE_MULTIPLE_RESIDUAL_RULE_REVIEW_017.txt.
+Analysts supply convolution algebra, harmonic moments, hyperbola errors and
+the meaning of a complete kernel remainder. The executable enumerates
+finite linear factors, tests exact moment cancellation and source matching,
+expands auxiliary identities, solves error minimax problems symbolically,
+and compiles conditional exponent requirements. No model calls, fitted
+constants, actual coefficient observations or expected answer assertions
+occur in candidate generation or selection. Calibration expectations belong
+only in tests. This deliberately records the design assumptions; it is not
+an assertion of discovery without bias.
+
+Freeze before execution: integer coefficient radius2; max residual degree32;
+diagnostic rational denominators<=12; requested energy power0 with STRICT
+power slack to absorb unspecified fixed logarithms. All failures survive.
+No hashes. Preserve direct source bytes. One owned development suite per
+owner, only affected checks after changes, then one frozen suite.
+
+Source preservation: expand EVERY original R^a as (E-C*One)^a, retaining
+all binomial signs, actual beta=9/2, symbolic R_u, A,B,K,S and compensators.
+Collect formal terms exactly. Include the exact transport error -e. The
+inherited paid-component join and ALL144 original channel/transport bindings
+remain verbatim. A nonzero formal monomial is not proof of arithmetic
+independence or of growth. Target every pure K*A^p*E^m, m>=2, q=0, which
+survives full collection. Everything else remains in the complete join.
+
+Auxiliary factor search: use generic basis A,C,delta with symbolic harmonic
+moment map c,c,1. Enumerate all primitive integer coefficient vectors in
+the declared box. Select an exact match to the finite convolution tail of
+E=delta+One*(C-A) with identically zero harmonic moment. The source determines
+that tail; a named auxiliary or expected coefficient vector does not decide
+selection. Record all accepted/rejected primitive vectors and their moments.
+The successful finite factor is named T only AFTER matching.
+
+For EVERY eligible m generate the entire binomial identity
+ E^m=sum_(j=0..m) binom(m,j) One^j*T^j.
+Both j0 and j1 remain. The finite harmonic moment of T vanishes. Product
+jets therefore have order at least j, so every moment of T^j at1 involving
+(log d)^r, 0<=r<j, vanishes. Expand every arbitrary main monomial
+x*(log x)^r under the finite convolution and verify this cancellation.
+No special coefficients for a divisor asymptotic polynomial are supplied.
+
+Define D_j(x)=sum_(n<=x)One^j(n), zero for0<x<1. For an ARBITRARY fixed
+polynomial P of degree<=j-1 define the COMPLETE remainder
+Delta_j(x)=D_j(x)-x*P(log x), for ALL real x>0. The exact moment identity
+replaces a finite T^j convolution with this remainder. Every d in the
+finite support remains, including d>n and hence x=n/d<1. The j1 branch
+uses P=1 and the proved |floor x-x|<=1, giving prefix<=3U. The j0 branch
+is delta. For j>=2, a uniform remainder estimate and its polynomial
+coefficients are OPEN. They are not silently supplied by divisor theory.
+
+The conditional schema |Delta_j(x)|<=C_j*x^kappa_j*(1+|log x|)^ell_j
+requires one finite constant, polynomial and log degree independent of x,U,
+EVERY x>0, 0<=kappa_j<theta. Complete finite weighted mass gives
+sum_all_d |T^j(d)|/d^kappa <=(2+1/(1-kappa))^j U^(j*(1-kappa)).
+Thus branch b=j*(1-kappa), rho=kappa. Costs in U and all logarithms remain.
+For these branches the mass premise is also paid: positive divisor
+convolution has mass<=t*(1+log t)^(j-1), and the finite harmonic mass
+of T is <=2+H(U)<=3H(U). Thus mass_(One^j*T^j)(t) is at most
+3^j*H(U)^j*t*H(t)^(j-1). The j0 delta branch has mass<=t.
+The compiler explicitly checks the known j0 and j1 HEAD branches through
+both kernel routes before calling a conditional auxiliary route feasible.
+The conditions are sufficient per-branch conditions only; their failure
+is NOT a counterexample to the joint signed arithmetic estimate.
+
+An independently supplied elementary multiple-hyperbola rule gives
+|P_(E^m)(t)|<=2(2m+1)3^(m-1)U(1+log U)^(m-1)
+                 *t^(1-1/m)*(1+log t)^(m-2), m>=2, every U,t>=1.
+It is tested as an unconditional baseline. It does not exploit a support
+gap for E. Ordinary moment convergence is licensed only if rho<theta.
+Failure of this sufficient criterion does not assert actual divergence.
+
+Generic prefix schema |P_h(t)|<=C*t^rho*(1+log t)^ell and
+mass_h(t)<=L*t*(1+log t)^k, 0<=rho<theta<1, feeds TWO supplied error rules.
+Center by the COMPLETE conditional moment m_theta(h)*J_theta/theta.
+Ordinary error powers: t, theta+(rho-theta)*t.
+Euler-remainder powers: theta-1+(2-theta)*t,
+                       theta+(rho-theta)*t, rho.
+The third Euler power pays the retained exact compensation c_theta*h,
+|c_theta|<=1/theta. Never erase that term. For n>=T0=C^(1/(1-rho)),
+use D=ceil(T0*(n/T0)^t). The supplied analytic theorem includes all n<T0,
+ceilings and full infinite Abel tails. The C exponent is (1-r)/(1-rho).
+Logarithms involving T0 become fixed logarithmic losses in U,n.
+
+The symbolic optimizer receives error lines affine in rho and t. Enumerate
+active pairs; compute their intersection and dual weights; check all
+polynomial upper-envelope gaps, split endpoints and dual signs on the
+entire rho interval by an exact degree<=2 sign checker. A complete dual
+certificate proves the optimum for this supplied error language. Exact
+polynomial division derives the C power. Neither minimizer nor resulting
+bound exponent is an input. Compare against the older generic rational
+minimax solver on every reduced rational in the declared diagnostic grid.
+
+Finite A^p contributes b+p*(1-rho) to the U power before centering and
+only harmonic mass logarithms. With U=floor(N^alpha), N=4X-1 fixed for
+every prefix in both blocks, generated power is
+ e=r+alpha*((1-r)/(1-rho))*(b+p*(1-rho)).
+Normalized energy has power2e-1. Clear the positive symbolic denominator
+to derive an EXACT affine region in b,rho for the requested target. Strict
+slack absorbs fixed logs; equality is only a fixed polylogarithmic estimate,
+not a constant payment. Substitute b=j*(1-kappa) mechanically to derive
+new complete-remainder obligations. Never treat these requests as facts.
+
+Proof dependencies are acyclic. A proved node cannot depend on an open
+node. The complete signed core, all compensators and original recovery
+remain open. This pilot publishes zero new paid component bounds; if a
+changed grammar finds one it fails closed pending complete payment and
+recovery implementation. Backwards requirements are not theorem counts.
+
+Adaptive feedback is mechanical: put the whole signed core first. For
+each component, if a conditional remainder portfolio passes all head and
+exponent gates, request proofs of its COMPLETE remainder estimates. If
+none can pass, redirect its next task to a JOINT WEIGHTED remainder bound
+retaining all signed binomial terms and T^j weights. This is failure of
+the declared separate-magnitude language at the current cutoff, not a
+disproof of the target. Do not keep tuning constants in an infeasible
+power region. These are emitted next SEARCH TASKS, not evidence that the
+new joint estimate has already been found or that a new solver exists.
+
+Independent checker imports NO new generator. It verifies the full source,
+factor search, polynomial/jet identities, minimax duals, all costs and
+domains, open statuses, graph, target completeness and feedback bindings.
+Mutation checks cover false closure, lost drift/tail/term, impossible
+moment use, fabricated remainder estimates, circular proofs and wrong
+costs. No unchanged prior suite or old numeric experiment is rerun.
+
+New study limit: main4GiB, frozen tests2GiB, runtime1800s, inclusive charged
+operations300million, aggregate within authorized16GiB. Immutable output
+core-bound-goal-results/pilot-001. Full signed core and RH remain OPEN.

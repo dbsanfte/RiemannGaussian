@@ -1,0 +1,688 @@
+SIGNED PRIME BLOCKS, CENTERED STENCILS, AND THEIR UNPAID COSTS 073
+================================================================
+
+Scope and conclusion
+--------------------
+This analytical review reads MOBIUS_EXCHANGE_LAW_HANDOFF.txt,
+MOBIUS_EXCHANGE_PRIME_SURVIVOR_072.txt, and the relevant exact identities
+and rank cautions in MOBIUS_PRIME_ORBIT_REVIEW_072.txt and the displayed
+prior reviews. It reads no scientific candidate outcomes, runs no study,
+uses no hashes, and writes only this file. All new universal statements
+below have direct proofs. In addition, 49 new synthetic exact-rational
+checks verified the largest/smallest decompositions and common-prime
+Gram identity on overlapping fractional bands and arbitrary finite atom
+profiles through horizon24, including empty/inverted blocks, units,
+prime endpoints and squareful zeros. They evaluated no actual source
+or scientific candidate values. A broader synthetic invocation was
+stopped before completion; the completed49 checks are the sole claimed
+mechanical validation. No external prime-distribution theorem is added.
+Where the existing072 PNT obstruction is mentioned, it remains an imported
+premise already identified in that handoff.
+
+The positive result is an exact signed prime-block rule. Largest-prime
+decomposition pools primes from distinct rough components into signed
+prime-count stencils, using ordinary mu only at explicitly shorter
+cofactors, while retaining the full signed smooth complement. A common-
+prime Gram matrix gives a computable energy with every cross term. There
+is also an exact strictly smaller-radius smooth-state recurrence.
+
+These are supplied analytical rules, not detector discoveries or bounds
+of RH strength. Centering creates two explicit unpaid leaves, not a paid
+error term. A prime-only energy priced separately from its complement
+still has a prime-survivor barrier. The smaller-radius recurrence has
+neither a proved contraction nor a licensed invariant for its enlarged
+state family. Full joined head, conditional separable cost, core and RH
+remain open.
+
+1. General profile, floors and endpoints
+----------------------------------------
+Let w be any real or rational finitely supported profile on positive
+integers. For computable interval formulas write
+
+ w(n)=sum_(a=1..J) c_a 1_(A_a,B_a](n),
+ 0<=A_a<B_a<=X,                                  (1)
+
+where X>=1 is real; coefficients may have either sign and intervals may
+overlap. Every finite profile has such a representation, for example
+using (n-1,n]. All interval arithmetic below is exact; rational endpoints
+can have arbitrary denominators. Nothing assumes square-, cube- or other
+restricted root denominators in source parameters or cutoff choices.
+The zero profile or X<1 is an empty-support base. Put
+
+ Z(w)=sum_(n>=1) mu(n)w(n).
+
+Define pi(t)=#{primes p:p<=t}; thus pi(t)=pi(floor(t)) and pi(t)=0 for
+t<2. Define the CLOSED-upper, OPEN-lower count
+
+ Pi(L,U)=pi(U)-pi(L) if U>L, and 0 otherwise.      (2)
+
+The zero branch is necessary: an inverted interval must not produce a
+negative count. A p exactly at L is excluded and a p exactly at U included.
+P+(1)=1; P+(m) is the largest prime factor for m>1. For the smallest-prime
+formula below set P-(1)=infinity. Squareful cofactors may be retained:
+their mu coefficient is zero and every identity remains exact.
+
+Only the algebraic identities below are universal over arbitrary w.
+A square-root bound uniform over all arbitrary finite profiles, even
+with |w|<=1, is false: choosing w(n)=mu(n) through X gives the squarefree
+count. Indeed squareful integers are covered by d^2 multiples for d>=2,
+whose total count is at most X sum_(d>=2)d^(-2)<=3X/4; there are at least
+X/4-1 squarefree integers through X. Any growth theorem must specify a
+structured source family and
+its coefficient/variation constants, rather than use (1) alone as an
+admission theorem.
+
+The actual necessary source is always
+
+ w_k(n)=1_(8k,10k](n)-1_(16k,20k](n), X=20k,
+ Z(k)=M(10k)-M(8k)-M(20k)+M(16k), k>=1 integer.   (3)
+
+It is the admitted original-source slice, not an arbitrary inverse-filled
+branch. Its exact joined remainder is
+
+ J_1=Z(k)-2k H_mu(u)H_mu(v).                       (4)
+
+A Z theorem transfers to J only with the entire071 conditional separable
+price, its Mertens premises, parameter domains and invariant constants.
+This review pays none of those additional obligations.
+
+2. Exact largest-prime pooling, including the smooth complement
+---------------------------------------------------------------
+Fix a real y>=1 and put M=floor(X/y). Define
+
+ S_y(w)=sum_(P+(n)<=y) mu(n)w(n),
+ L_m=max(y,P+(m)),
+ T_m(w;y)=sum_(prime p>L_m) w(pm)
+         =sum_a c_a Pi(max(L_m,A_a/m),B_a/m).      (5)
+
+Then, with no asymptotic assumption,
+
+ Z(w)=S_y(w)-sum_(1<=m<=M) mu(m)T_m(w;y).          (6)
+
+Proof. Nonzero nonsmooth terms have n squarefree and a unique largest
+prime p=P+(n)>y. Write n=pm. Then p>P+(m), gcd(p,m)=1, and
+mu(n)=-mu(m). Conversely a squarefree m and p>max(y,P+(m)) create
+exactly one such n, without repetition. Since p>y and pm<=X, m<X/y;
+including m=M even when X/y is integral simply includes a zero stencil.
+Squareful n and m contribute zero. The unit is in S_y because y>=1.
+Substituting (1) proves the precise count expression in (5).
+
+Known prime anchors are exactly the m=1 stencil, with mu(1)=1:
+
+ T_1=sum_a c_a Pi(max(y,A_a),B_a).
+
+Thus every prime above y has its exact sign -1 before any norm. The
+different prime anchors, composite cofactors, and smooth complement
+are present in ONE signed state (6). Taking |T_1| separately, or taking
+absolute values of all m stencils, changes its proof price and discards
+the sought interaction. Formula (6) is outside the unsigned component
+transport language excluded072 because pi can pool primes with distinct
+outside-S parts.
+
+If y>=sqrt(X), all contributing cofactors satisfy m<=X/y<=y, hence
+P+(m)<=y. The factor gate disappears:
+
+ T_m=sum_a c_a Pi(max(y,A_a/m),B_a/m).             (7)
+
+Every n<=X has at most one prime factor >y, counted with multiplicity,
+because a product of two such factors is >y^2>=X. This includes exclusion
+of large prime squares. Choosing y=sqrt(X), or any exact algebraic cutoff
+whose comparison with endpoints is certified, is a clean shorter-mu
+radius decomposition. The identity does NOT say S_y is a shorter-radius
+sum: its integers and source geometry still extend through X.
+
+For (3), the exact stencil is
+
+ T_m=Pi(max(L_m,8k/m),10k/m)
+     -Pi(max(L_m,16k/m),20k/m).                   (8)
+
+All prime endpoints, even when one of 8k/m,10k/m,16k/m,20k/m is itself
+prime, are handled by (2). No boundary correction is implicit.
+
+3. Smallest-prime alternative and its different complement
+-----------------------------------------------------------
+The dual decomposition is useful for checking that a changed factor gate
+has not silently deleted composites. Define
+
+ R_y(w)=sum_(n=1 OR P-(n)>y) mu(n)w(n).
+
+For m>1 let q=P-(m), which is prime, and define
+
+ Pi_<q(L,U)=Pi(L,min(U,q))-1[L<q<=U].             (9)
+
+For m=1 set Pi_<infinity(L,U)=Pi(L,U). Formula (9) counts p in (L,U]
+with p<q. Its subtraction is required when q is an included upper
+endpoint. In particular Pi_<q(L,U)=0 when L>=q. Then
+
+ V_m(w;y)=sum_a c_a Pi_<P-(m)(A_a/m,min(y,B_a/m)),
+ Z(w)=R_y(w)-sum_(m<=floor(X/2)) mu(m)V_m(w;y).    (10)
+
+Proof. A squarefree n with smallest prime p<=y has n=pm with
+p<P-(m), hence mu(n)=-mu(m); the representation is unique. The p>=2
+gate gives m<=X/2. The strict p<P-(m) gate excludes repeated factors.
+R_y includes its unit and every rough composite; none can be discarded.
+
+For y>=sqrt(X), R_y=w(1)-sum_(p>y)w(p), since no n<=X can have two
+prime factors both >y. This makes the known large-prime anchors explicit
+in R_y, but the other cofactors in (10) extend to X/2. Letting y>=X
+also gives the all-largest-radius-prime stencil identity
+
+ Z(w)=w(1)-sum_(m<=floor(X/2))mu(m)
+              sum_a c_a Pi_<P-(m)(A_a/m,B_a/m).  (11)
+
+It uses shorter cofactor signs and known prime signs throughout, but
+still has current-radius prime-count geometry. It is finite arithmetic
+reconstruction until a uniform price is established.
+
+4. Centered signed prime stencils: exact leaves and quantifiers
+--------------------------------------------------------------
+Choose a deterministic cumulative function F on the real line, with
+F(t)=0 for t<=1, fixed before arithmetic evaluations at the source scale.
+It may be zero, an explicitly defined logarithmic-density integral, or
+a separately certified prime-count approximant. No estimate for pi-F
+is assumed here. Define its interval functional with the SAME emptiness
+convention:
+
+ F[L,U]=F(U)-F(L) if U>L, and 0 otherwise,
+ Delta[L,U]=Pi(L,U)-F[L,U].
+
+For each m put
+
+ B_m=sum_a c_a F[max(L_m,A_a/m),B_a/m],
+ E_m=sum_a c_a Delta[max(L_m,A_a/m),B_a/m],
+ H_y=S_y(w)-sum_(m<=M)mu(m)B_m,
+ D_y=sum_(m<=M)mu(m)E_m.
+
+The exact signed state is
+
+                       Z(w)=H_y-D_y.             (12)
+
+Every prime-count, smooth, composite and boundary term is in (12).
+There are two unpaid leaves: H_y and D_y, or a direct coupled theorem
+for H_y-D_y. A prime-discrepancy estimate alone does not pay H_y. A bound
+on S_y alone does not pay the potentially large centered main sum either.
+
+A sufficient detector-search target for the actual source is: for every
+epsilon>0 there exist explicitly parameterized constants C_H(epsilon),
+C_D(epsilon) and a base K_epsilon such that for EVERY integer k>=K_epsilon,
+using one declared y(k), one declared F, and all terms in (12),
+
+ |H_y(k)|<=C_H(epsilon) k^(1/2+epsilon),
+ |D_y(k)|<=C_D(epsilon) k^(1/2+epsilon).          (13)
+
+All k<K_epsilon are paid bases. Constants may not depend on k, its mu
+values, or a finite observed maximum. If a coupled theorem is used,
+it must instead prove its complete price uniformly; separate large H,D
+can cancel, so (13) is sufficient and not necessary.
+
+Taking F=pi sets E=0 and H=Z: it is an exact tautological reconstruction,
+not a zero-cost theorem. More generally allowing F, coefficients or a
+claimed constant to encode the evaluated target has the same defect.
+A admissible center must have a source-independent definition and a
+separate uniform cost law. Even a perfectly legitimate deterministic
+center leaves H unpaid; precommitment alone does not pay a bound.
+
+For comparison, suppose as an explicit CONDITIONAL hypothesis that
+|pi(t)-F(t)|<=C t^alpha L(X) for every 0<=t<=X, with 0<alpha<1.
+Write A=sum_a|c_a|. Every nonempty interval in E_m has both endpoints
+<=X/m, so
+
+ |D_y|<=2 C A L(X) X^alpha sum_(m<=M)m^(-alpha)
+       <=2 C A L(X) X^alpha M^(1-alpha)/(1-alpha). (14)
+
+This includes the m=1 term and all interval endpoints. A zero lower
+endpoint causes no error because F=pi=0 there. At alpha=1/2 and
+y=X^theta, the price is of order X^(1-theta/2), up to constants and
+L(X). Thus even a hypothetical square-root prime-count error, taken
+termwise, does not deliver a square-root Mobius bound for theta<1.
+Taking M bounded avoids that inflation but leaves an almost full-radius
+smooth/composite complement. Equation (14) is not an imported prime
+error theorem; it diagnoses the cost of THAT conditional triangle rule.
+
+5. Common-prime Gram energy with all cofactor cross terms
+---------------------------------------------------------
+Partition (y,X] into finitely many disjoint open-left/closed-right blocks
+B=(l_B,u_B]; dyadic prime blocks are permitted. Let
+
+ a_m(p)=1[p>max(y,P+(m))] w(pm),
+ A(p)=sum_(m<=M)mu(m)a_m(p),
+ N_B=Pi(max(y,l_B),u_B),
+ Q_B=sum_(p in B, p>y)A(p),
+ E_B=sum_(p in B,p>y)A(p)^2.
+
+Then Z=S_y-sum_B Q_B and, exactly,
+
+ E_B=sum_(m,n<=M)mu(m)mu(n)G_B(m,n),             (15)
+ G_B(m,n)=sum_(p in B,p>y)a_m(p)a_n(p).
+
+The Gram matrix is positive semidefinite, because it is the Gram matrix
+of the real vectors (a_m(p))_p. Its exact count-stencil formula is
+
+ G_B(m,n)=sum_(a,b) c_a c_b
+  Pi(max(l_B,y,P+(m),P+(n),A_a/m,A_b/n),
+     min(u_B,B_a/m,B_b/n)).                      (16)
+
+This formula applies to overlaps, coinciding endpoints and inverted
+intervals. No independent mu copies are introduced. Ordered pairs m,n
+are used, so the off-diagonal expression has both orientations:
+
+ D_B=sum_m mu(m)^2 G_B(m,m),
+ C_B=sum_(m!=n)mu(m)mu(n)G_B(m,n),
+ E_B=D_B+C_B>=0.                                (17)
+
+Discarding C_B, declaring it nonpositive without proof, or replacing
+it by random-sign expectation is unsound. C_B can have either sign.
+
+Cauchy gives the computable common-prime rule
+
+ |Q_B|<=sqrt(N_B E_B),
+ |sum_B Q_B|<=sum_B sqrt(N_B E_B).                (18)
+
+For weighted deterministic prime functions b(p)>0 one may instead use
+|Q_B|^2<=sum_(p in B)b(p) times sum_(p in B)A(p)^2/b(p).
+The weighted Gram retains every cross term and every weight cost.
+The unweighted diagonal has the elementary bound
+
+ D_B<=A^2 sum_(p in B,p>y)floor(X/p),             (19)
+
+because |w|<=A and mu(m)^2<=1. This is a genuine paid geometry bound,
+but (19) and N_B normally lead to a much larger price than square root.
+A useful detector must exploit C_B with a proved signed law or exploit
+correlation between the prime aggregate and S_y. Merely computing a
+smaller finite E_B has no all-scale consequence.
+
+There is a sharp source-specific limitation. If y<=16k and B is the
+top interval (16k,20k], then X/p<5/4 for every p in B, so the only
+contributing cofactor is m=1. On this block A(p)=w_k(p)=-1. Consequently
+
+ N_B=pi(20k)-pi(16k), Q_B=-N_B, E_B=D_B=N_B,
+ C_B=0, sqrt(N_B E_B)=N_B.                       (20)
+
+Even cofactor cross-term energy has nothing to cancel on that block.
+If the remaining state is separately bounded by triangle, the existing
+imported PNT lower bound on N_B again excludes a square-root price.
+This is a limitation of separate-block prices, not a lower bound on
+actual |Z|. Aggregating prime bands BEFORE a norm can permit their signed
+interaction; interacting with S_y still requires a joint signed rule.
+
+6. Centered common cells: an efficient exact correlation target
+--------------------------------------------------------------
+A common-cell representation exposes what a centered energy must retain.
+Collect all distinct active interval endpoints in section4, including y,
+P+(m) when active, and A_a/m,B_a/m. Sort them and retain cells
+C=(l_C,u_C] within (y,X]. There are O(JM+M+1) endpoints, before removal
+of duplicates. Every interval (L,U] is an exact disjoint union of cells
+with the same endpoint conventions. Define
+
+ delta_C=Pi(l_C,u_C)-F[l_C,u_C],
+ h_(m,C)=sum_a c_a 1[C subset (max(L_m,A_a/m),B_a/m]],
+ H_C=sum_m mu(m)h_(m,C).
+
+Then, EXACTLY,
+
+ E_m=sum_C h_(m,C)delta_C,
+ D_y=sum_C H_C delta_C.                          (21)
+
+For arbitrary declared weights rho_C>0,
+
+ |D_y|^2<= (sum_C rho_C delta_C^2)
+              (sum_C H_C^2/rho_C),              (22)
+
+and the second factor equals
+
+ sum_(m,n)mu(m)mu(n)
+                 sum_C h_(m,C)h_(n,C)/rho_C.    (23)
+
+This is a positive-semidefinite COMMON-CELL Gram energy, including every
+ordered m,n cross term. It is not the common-PRIME Gram in (16): its
+measure consists of geometry cells and weights, while the first factor
+is a prime-count discrepancy energy. Conflating those measures would
+lose the centering corrections. Cells of zero prime count can still
+have nonzero delta_C and must not be deleted.
+
+Equations (12),(21)-(23) give a concrete auditable correlation target:
+prove a uniform bound for H_y and for the product of the two factors
+in (22), or prove a joint bound keeping H_y and D_y correlated. All
+rho, all endpoints, the number of cells, and the chosen F have costs.
+Neither small individual discrepancies nor positive semidefiniteness
+alone supplies the required product estimate. The exact equality
+D_y^2=sum_(m,n)mu(m)mu(n)E_m E_n is merely a rank-one rewriting of
+the same scalar target; it is not, by itself, an independently smaller
+correlation obligation. The cell construction avoids falsely calling
+that rank-one identity a general common-prime variance theorem.
+
+For a full joined head, use the SAME ordinary mu values in every row
+and apply these identities rowwise before any head norm. In particular
+sum_j(S_j-sum_B Q_(j,B))^2 includes, within every row j, the smooth/prime
+cross terms and all ordered prime-block cross pairs. There are no
+cross-row pairs in this sum of row squares. If a different operator
+squares a sum over rows, its cross-row terms must also be retained.
+A theorem for the chosen complete energy must pay all those
+terms; a theorem only for sum_j Q_(j,B)^2 is insufficient. Cauchy then
+costs sqrt(number_of_rows times complete_energy). Scale-averaged energy
+does not automatically give a pointwise k bound, either.
+
+7. Exact smaller-radius recurrence and the missing contraction
+--------------------------------------------------------------
+Define the enlarged smooth state
+
+ Phi(w,z)=sum_(P+(n)<=z)mu(n)w(n), z>=1,
+ w_p(m)=w(pm),
+ Phi(w,p^-)=sum_(n=1 OR P+(n)<p)mu(n)w(n).
+
+The notation p^- is an exact strict cutoff, not a numerical perturbation.
+For an arbitrary z, writing p<=z means primes through floor(z). Unique
+largest-prime factorization proves
+
+ Phi(w,z)=w(1)-sum_(p<=min(z,X))Phi(w_p,p^-).      (24)
+
+Every child has support horizon X/p<=X/2. The boundary convention in
+Phi(w_p,p^-) enforces p coprime to the cofactor and excludes p^2.
+If no primes occur, Phi=w(1). Thus (24) is a genuinely well-founded
+COMPUTATIONAL recurrence, with finite bases and no current-radius mu
+query in a child. It also exactly evaluates S_y in (6).
+
+It is not a closed bound recurrence for the original head family.
+The child includes a smooth-factor mask, rescaled source endpoints and
+a prime-dependent strict cutoff. Its state must be explicitly admitted
+to the simultaneous invariant. Calling a masked child an ordinary
+Mertens prefix or an original-source row changes the family and is
+unlicensed. Prime enumeration in the parent still reaches min(z,X).
+
+Even assuming the much stronger hypothetical invariant
+
+ |Phi(w_p,p^-)|<=C A (X/p)^sigma,
+
+with the same A and constant for all children, triangle transfer gives
+
+ |Phi(w,z)|/(A X^sigma)
+ <=|w(1)|/(A X^sigma)+C sum_(p<=min(z,X))p^(-sigma). (25)
+
+For 0<sigma<=1, the contribution of just p=2,3,5,7 is at least
+1/2+1/3+1/5+1/7=247/210>1. Thus this price has no scalar contraction
+once those primes are present. A prime cutoff that decreases along a
+branch does not turn (25) into a proved contraction at its parent.
+For arbitrary w the hypothetical square-root invariant is itself false
+by the profile counterexample in section1. Restricted source families
+need new mask-dependent envelopes and signed sibling cancellation.
+
+An auditable next target is a signed block transfer for the actual
+children, for example a uniform price for
+
+ sum_(p in (L,U]) Phi(w_p,p^-),                   (26)
+
+with all child domains <X, together with a simultaneous smooth/prime-
+discrepancy invariant having explicit coefficient dependence. The
+unpaid difficulty is the signed sibling aggregation, not the smaller
+support gate. The root price must satisfy its actual invariant
+inequality, including powers of all auxiliary constants and every base.
+Defining (26) as a new exact constant at each scale simply reconstructs
+Phi; a uniform operator/correlation law is required.
+
+Dyadic prime blocks can reduce representation costs and can guide a
+search for (26). They do not make the remaining analytic obligation
+strictly smaller rank: endpoints and primes still have radius X, and
+the aggregate of all blocks is the current parent. Only the CHILD mu
+arguments in (24) are strictly smaller. Rank must record at least source
+geometry horizon, cofactor-sign horizon, prime-query horizon and admitted
+mask/profile family. A proof claiming one rank must explicitly justify
+why all its other horizons are licensed at that rank.
+
+8. Computation, arithmetic access and certificate costs
+------------------------------------------------------
+These are theoretical evaluation bounds, not claimed runtimes or reruns.
+Let M=floor(X/y), A=sum|c_a|, and H=number of squarefree y-smooth integers
+<=X (including1). A conservative exact finite implementation can use:
+
+ (a) Prime list through floor(X), with exact pi endpoint queries.
+     Elementary Eratosthenes costs O(X log X) marking operations and
+     O(X) flags: sum_(p<=X)floor(X/p)<=X sum_(n<=X)1/n. A prefix pi
+     array costs O(X) words; a sorted prime list instead allows binary
+     search in O(log X) comparisons per count endpoint. No PNT is needed
+     for these conservative costs. The prime-query horizon remains X.
+
+ (b) Ordinary mu and P+ through M, costing O(M log M) elementary sieve
+     operations and O(M) words. This is actual arithmetic access, even
+     though its radius is short. Formula (7) removes the P+ gate but
+     does not remove the mu access. Exact rational stencils (5) take
+     O(JM) interval queries and coefficient operations, in addition to
+     count-query lookup cost.
+
+ (c) S_y by enumerating increasing sequences of distinct primes
+     <=min(y,X)
+     whose product is <=X. Each squarefree smooth integer appears once,
+     with sign (-1)^sequence_length; evaluate w at it with (1). Sorted
+     primes allow a child loop to stop at its first overflowing product.
+     Successful extensions give exactly H-1 edges and there is at most
+     one failed comparison per node, so traversal uses
+     O(H+pi(min(y,X))) such
+     product/comparison steps and O(JH) direct profile checks. Memory
+     is the prime list plus O(log X) recursion depth. Exact quotient
+     comparisons avoid overflow. This computes current-radius signs
+     by factor certificates instead of a full mu array; it is still
+     source-scale reconstruction, and H can be of order X. It supplies
+     no small growth price for S_y.
+
+ (d) A full stored Gram matrix for b prime blocks using (16) takes
+     O(b J^2 M^2) count queries and coefficient operations, with
+     O(b M^2) storage if all matrices are kept. Ordered cross terms or
+     an exactly doubled symmetric convention must be replayed. This
+     quadratic cost is optional, not an inherent lower bound.
+
+ (e) The signed energy itself can be evaluated without storing a Gram
+     matrix. Loop over primes p>y and m<=floor(X/p), using the P+ gate,
+     and sum mu(m)w(pm) into A(p). Let
+       I=sum_(p>y,p<=X)floor(X/p).
+     Direct work is O(JI), plus O(pi(X)) block/energy accumulation and
+     the preceding arithmetic tables; I<=X(1+log(max(1,X/y))) is a
+     conservative all-integer harmonic bound. Streaming primes and
+     cofactors computes E_B,Q_B,D_B and hence C_B exactly with small
+     extra storage. It keeps every cross term because it squares the
+     complete A(p); it must not square each m separately. Evaluating
+     these quantities is finite target/energy reconstruction, not a
+     uniform estimate.
+
+ (f) The common cells in section6 need O(JM+M) endpoint records and
+     O((JM+M)log(JM+M)) exact sorting comparisons. An event sweep
+     updates H_C when an interval starts/ends, using the same mu(m)
+     signs, and evaluates (21),(22) in O(JM+M) subsequent operations.
+     Direct explicit Gram storage in (23) is unnecessary. Endpoint
+     multiplicities must be merged, with open-left/closed-right event
+     incidence handled as stated. All delta_C require pi and F queries,
+     including cells with no primes.
+
+Every displayed operation count suppresses bit-operation factors rather
+than claiming unit-cost unbounded rationals. For J input rationals of
+height at most h, a common denominator can have O(Jh) bits; sums add
+O(log X+log H+log M) further count-size bits, and Gram squares multiply
+coefficient heights. Endpoint ratios add O(log M) bits. Algebraic cutoffs
+need exact comparison certificates; analytic F needs an explicit exact
+definition or certified enclosures with all enclosure errors added to
+the final price. Weights rho and growing block/cell counts also have
+representation costs. A statement with y=y(k), J=J(k), or a growing
+prime dictionary must charge all of these dependencies, not reuse a
+fixed-scope constant.
+
+An identity certificate should expose the admitted w, its original-source
+binding, y, floor/cutoff gates, interval lists, smooth-state obligation,
+prime stencils, chosen center, complete cross terms and final price
+dependencies. A checker can independently reconstruct (5),(9),(16),
+(21) and (24) from these data without trusting finite target scores.
+Synthesis should not inspect current-scale mu/prime discrepancies to
+choose a purported uniform price unless the adaptive selection has its
+own proved theorem. Finite values may validate algebra or pay specified
+bases, but cannot select an unexplained all-scale envelope.
+
+9. Review of the root's proposed normalized quadratic candidate search
+----------------------------------------------------------------------
+After the initial review the root described a proposed genuine candidate
+discovery search. This section reviews that EXACT conditional grammar;
+it inspects no candidate outcomes and does not certify any recurrence.
+Let x(k) be a fixed-dimensional vector of exact signed source states,
+with x_0(k)=Z(k). Its proposed additional coordinates include the complete
+squarefree sectors omega(n)=1,2,3,>=4 and S_(X^theta)(w_k), with rational
+theta and X=20k. Theta denominators need no special restriction. The
+>=4 sector keeps its actual ordinary-mu signs; its sign is not constant
+across the sector. Every coordinate retains the difference of both
+source bands. The sectors are disjoint, while smooth states overlap them.
+
+On this source the unit does not contribute, so exactly
+
+ Z=U_1+U_2+U_3+U_(>=4),
+ U_r=sum_(squarefree n in sector r)mu(n)w_k(n).   (27)
+
+The sign mu(n)=(-1)^r is known within a fixed omega=r sector. This fact
+does not permit deleting its signed source-band imbalance, nor assigning
+one sign to the >=4 aggregate. Smooth thresholds at rational powers
+require exact algebraic comparisons or certified enclosures with a rule
+that settles EVERY boundary. They are not rounded floating cutoffs.
+
+Freeze rational directions v_j, nonnegative rational lambda_j, and a
+rational q>0 independent of k. Define
+
+ P(k)=Z(k)^2+sum_j lambda_j (v_j.x(k))^2,
+ H=e_0 e_0^T+sum_j lambda_j v_j v_j^T,
+ F(k)=P(k)/k^q.                                 (28)
+
+H is positive semidefinite and H-e_0e_0^T is positive semidefinite.
+Consequently P(k)>=Z(k)^2 for actual arithmetic and indeed every real x.
+This is the complete universal domination rule. Expanding a direction
+square retains the signed cross terms 2 lambda_j v_(j,a)v_(j,b)x_a x_b;
+individual off-diagonal entries can be negative although the whole added
+square is nonnegative. Replacing the expansion by only its diagonal
+would change the candidate. The signs of x remain the actual shared
+ordinary-mu signs, not free signs or independent copies.
+
+Suppose the following still-UNPAID hypothesis is proved:
+
+ F(k)-F(floor(k/2))<=C for EVERY integer k>=2,    (29)
+
+with one finite constant C independent of k, and the actual states (28).
+Let B=F(1), which is a paid finite base, not an unspecified fitting
+intercept. The chain k_i=floor(k/2^i) reaches 1 after exactly
+h=floor(log_2 k) transitions. Every preceding k_i is at least2, so
+telescoping (29) and using domination proves
+
+ 0<=F(k)<=B+C floor(log_2 k),
+ |Z(k)|<=k^(q/2) sqrt(B+C floor(log_2 k)).        (30)
+
+This checks the root's supplied conditional transfer. Bounds only at
+dyadic k do NOT imply (30) for other k; every integer in (29) is needed.
+If all-scale (29) held with C<0, taking k=2^h would contradict F>=0 for
+large h. Thus C>=0 is necessary for a genuine uniform theorem (or use a
+verified nonnegative upper bound). B>=0 is exact. The k=1 base costs all
+coordinate evaluation and every lambda/direction coefficient; its size
+cannot be suppressed while optimizing C. Rescaling auxiliary directions
+does not remove their lambda-weighted base and recurrence costs.
+
+If the recurrence is instead proved only from k>=K_0, pay
+
+ B_0=max_(1<=t<K_0)F(t).
+
+The chain eventually reaches a t<K_0 and gives the safe bound
+F(k)<=B_0+C floor(log_2 k), for C>=0. A sharper bound may count only
+transitions while k_i>=K_0. Without the complete finite base set, the
+restricted recurrence has a gap. Certified rational/algebraic enclosures
+for F and B_0 are sufficient if every enclosure error is charged.
+
+For q=1, (30) gives sqrt(k) times a paid sqrt(log k) factor. It therefore
+implies O_epsilon(k^(1/2+epsilon)) for every epsilon>0: for example
+log k<=k^(2epsilon)/(2epsilon) for k>=1, so a sufficient constant is
+sqrt(B+C/(2epsilon log 2)). This is conditional on (29), not a proof
+of it and not a proof of the whole RH dependency graph.
+
+For one q>1 and C>0, (30) supplies only exponent q/2 with the stated
+logarithmic factor; it gives a power bound k^(1/2+epsilon) when
+epsilon>(q-1)/2. At equality the logarithmic factor remains. If C=0,
+the equality case is allowed with constant sqrt(B). The proposed
+q=18/17 and q=258/257 are individual positive-loss candidates. They
+do not establish the every-epsilon target. A cofinal theorem requires
+that for EVERY epsilon>0 a q_epsilon with 1<=q_epsilon<1+2epsilon
+has a proved recurrence, paid finite base, finite constants and a
+complete original-source/head transfer. Candidate-specific constants
+may depend on epsilon but not on k. A finite set of q values is not
+cofinal. A q=1 proof would avoid that particular cofinal-q obligation.
+
+All coordinates described above satisfy |x_a(k)|<=6k by the total
+source-band mass. Thus the elementary universal cost is
+
+ P(k)<=36 k^2 [1+sum_j lambda_j ||v_j||_1^2],
+ F(k)-F(floor(k/2))
+ <=36 [1+sum_j lambda_j ||v_j||_1^2] k^(2-q).    (31)
+
+For q<2 this does not pay a constant C. For q>=2 it gives a trivial
+constant recurrence, whose resulting growth bound has no exponent gain
+over linear. Therefore (29) at the proposed near-critical q needs new
+signed cross-scale information, not merely domination, known sector
+signs, squarefreeness, or total mass. One must prove cancellation in
+the difference of the COMPLETE quadratic states at the two scales.
+This difference is generally indefinite and has every within-scale
+cross term; it is not a free-sign robust quadratic form.
+
+The child source radius is 20 floor(k/2)<20k, so the scale graph in
+(29) is well-founded. However its left side still contains the unknown
+current-radius state x(k). A verified inequality (29) would be exactly
+the new analytic transfer needed; a finite search that proposes H and C
+has not paid that inequality. Prime/cofactor decompositions (6),(24)
+can expose the correlations in it, but their exact identities do not
+automatically prove an upper bound for its indefinite quadratic form.
+Smooth masks also change with scale: y(k)=(20k)^theta differs from
+y(floor(k/2)), and the crossing primes/composites are genuine terms.
+
+An exact null direction from (27), such as Z-U_1-U_2-U_3-U_(>=4), has
+zero square at every scale and cannot improve (28) or (29). Such
+directions should be recorded as identities and quotiented out, or
+flagged as vacuous rather than presented as a cancellation mechanism.
+Other overlaps among smooth/sector states are actual correlations and
+must not be silently treated as independent coordinates.
+
+An LP over frozen direction-square features can propose nonnegative
+lambda and a finite C. Adding rational approximations to negative
+eigenvectors of a numerical dual can propose additional directions.
+Neither operation establishes a uniform recurrence. The exact checker
+must reconstruct the fixed H, replay every tested inequality including
+non-dyadic k, and distinguish exact finite validation from (29). q has
+arbitrary rational denominator, so k^q needs exact algebraic comparison
+or correctly rounded certified bounds. A numerical eigenvector becomes
+a rational candidate direction, with no algebraic or theorem status
+inherited from the floating eigensolver. Freezing larger-scale tests
+before evaluation prevents one form of selection leakage; surviving
+them still leaves all untested integers and all-scale (29) open.
+
+Computing the proposed states by factoring/sieving through 20k costs
+current-radius arithmetic even though a candidate formula is short.
+Computing all complete omega sectors includes the composite >=4 tail;
+omitting it destroys (27). Smooth states may be computed with the exact
+prime-block rules above, with all those costs and boundaries. A proof
+certificate for (29) needs a finite, scale-independent rule and its
+uniform analytical cost, rather than one new exact difference value or
+new C for each k. No scientific candidate outcomes are assumed here.
+
+10. Recommended073 grammar and exact disposition
+------------------------------------------------
+Add a source-preserving SIGNED_PRIME_STENCIL operator implementing (6),
+with the m=1 prime-anchor signs fixed and the smooth complement retained.
+For y>=sqrt(X), use the especially transparent rule (7). Admit arbitrary
+rational profiles and exact boundary comparisons, not a root whitelist.
+Add optional CENTERED_STENCIL (12), COMMON_PRIME_GRAM (15)-(17), and
+COMMON_CELL_DISCREPANCY (21)-(23) operators. Register their proved algebra
+and conservative computational costs as supplied rules; leave (13),
+the signed cross-term prices, and the smooth/composite main cost visible
+as unpaid analytical leaves.
+
+If the detector searches a recurrence, use (24) with an explicit enlarged
+smooth-mask family, strict smaller-support certificates for every child,
+current-radius prime access and the complete invariant inequality. A
+detector-chosen dyadic block or centered surrogate is a construction,
+not an automatic analytic lemma. Its useful discovery would be a uniform
+signed sibling/correlation price that closes with all constants and bases.
+
+The substantial distinction from072 is exact cross-component interaction:
+the prime stencils and common-prime kernels permit cancellation between
+different rough anchors before a norm. The substantial limitation is
+equally exact: unsigned block pricing still leaves (20), termwise prime
+error pricing has the inflation (14), and the elementary smaller-radius
+recurrence has the noncontraction (25). No part of this review supplies
+RH-strength signed control. It identifies concrete next obligations and
+prevents target-valued constants, dropped complements or missing cross
+terms from being mistaken for that control.

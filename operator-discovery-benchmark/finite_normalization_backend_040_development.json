@@ -1,0 +1,24 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "operations": 61903,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.02771852700971067,
+      "exposure": "synthetic source AST, arbitrary finite signed arrays and power kernels only; no actual source or archive"
+    },
+    {
+      "returncode": 0,
+      "operations": 243,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.001133861020207405,
+      "exposure": "synthetic source AST, arbitrary finite signed arrays and power kernels only; no actual source or archive"
+    }
+  ],
+  "cumulative_operations": 62146
+}

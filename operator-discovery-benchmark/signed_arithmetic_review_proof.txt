@@ -1,0 +1,65 @@
+POST-SEAL ANALYTICAL REVIEW: COMPLETE RESIDUAL AND EXACT STORED COUNTEREXAMPLE
+
+This extends the successful signed-arithmetic pilot without changing its frozen
+sources, formulas, fitted constants, decisions or outcomes. Reviewer prose is
+retained separately from the exact certificates checked here. No full signed
+critical inequality or RH proof is admitted.
+
+1. Explicit cofinal charge for already-proved components.
+Use the actual complete Mobius sequence, a continuous rational polygon kernel
+w of zero integral, W_X(t)=Xw(t/X), and U>=Integral sqrt(t)|dw(t)| as certified
+by signed_arithmetic_certificates.py. Fix X>=1, B=floor(X^(1/3)), and the
+COMPLETE diagonal D and primitive-pair projection P with the SAME B throughout
+the full kernel. The frozen component proof gives
+ |D|<=3U X^(3/2),
+ |P|<=6U X^(3/2) B^(3/2)(1+log B)^2.
+All modulus dependence has been summed with the proved divisor-count bound;
+there is no hidden dependence on X in U for a fixed candidate.
+Writing t=log X>=0, B<=X^(1/3), so
+ |D+P| <= U X^2 [3+6(1+t/3)^2]
+         <= U X^2 [11+(8/3)t^2].
+The second polynomial difference equals 2(t-1)^2 and is nonnegative.
+For every real q>=1, set z=t/q. Differentiating z^2 exp(-z) gives its
+maximum 4/e^2 at z=2; exp(2)>1+2+2+8/6>6. Therefore
+ t^2 <= (2/3)q^2 exp(t/q).
+As exp(t/q)>=1,
+ |D+P| <= U [11+16q^2/9] X^(2+1/q)
+        <= U [11+16q^2/9] X^2 ceil(X^(1/q)).
+All logarithms are natural. The root floor and ceiling bounds hold also at
+X=1; the pair projection is empty when B=1. This is an all-scale ACTUAL
+component theorem derived from supplied elementary discrepancy lemmas, not
+a new full Mobius cancellation estimate. No floating inequality is used to
+admit its rational coefficient K_q=U[11+16q^2/9].
+
+For the exact full decomposition F=D+P+R, this supplies the precise reduction:
+a bound F<=C_q X^2 ceil(X^(1/q)) implies
+ R<=(C_q+K_q)X^2 ceil(X^(1/q)), and conversely a bound for R implies the
+corresponding bound for F with K_q charged. Thus the cofinal existential
+full-stencil bound is equivalent to its COMPLETE dense signed remainder
+bound, with different finite constants. Only candidates with an admitted
+ordinary-energy recovery bridge imply RH from such a bound. The remainder
+has not been bounded by this argument.
+
+2. Exact finite refutations are narrower than the existential global claim.
+A stored candidate supplies rational coefficients c_s and constants only at
+its explicitly fitted levels q. The verifier independently reconstructs mu
+by prime factorization through 2 max(s) X-1, computes all prefix energies
+A(sX), and checks F=sum c_s A(sX) > C_q X^2 ceil(X^(1/q)). A dyadic X is
+required to refute the stored DYADIC-domain inequality. Non-dyadic probes
+remain diagnostics; a missing C_q has no numerical truth value.
+
+For a witness X=2^k>1 and ANY integer q>=k, 1<X^(1/q)<=2, hence its ceiling
+is exactly2. If the stored C is hypothetically continued unchanged to every
+large q, the same exact positive margin refutes that extra constant-extension
+hypothesis. The actual source claim instead allows arbitrary finite C_q and
+an eventual q0; one failed stored C does NOT refute that existential claim.
+
+3. Review authority and evidence.
+The generic planner binds exact formulas and precise claims to three externally
+dispatched review tasks and checks complete response coverage. That tool does
+not mathematically adjudicate reviewer conclusions or authenticate model
+identity. The domain audit below admits only: previously verified kernel and
+conditional recovery facts; the explicit component coefficient proved in
+section1; and independently recalculated stored finite counterexamples. Any
+other analytic proposal remains unresolved. No historical novelty or RH
+success probability is inferred from these results.

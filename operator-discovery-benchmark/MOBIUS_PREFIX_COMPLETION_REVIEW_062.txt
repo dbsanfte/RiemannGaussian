@@ -1,0 +1,318 @@
+MOBIUS PREFIX FLOOR COMPLETION REVIEW 062
+=======================================
+Scope
+-----
+This source-only review reads the061 handoff and one archived061 feedback
+JSON. No scientific arrays, LPs, candidate enumeration, integrals, source
+calls, norms or tests were evaluated. All061 and earlier files remain
+unchanged. The review establishes exact reconstruction/majorization rules
+and a useful uniform coefficient-cost construction. It does NOT establish
+the missing short-residual or full joint-interior bound.
+
+The active source remains the actual ordinary Mobius prefix
+
+ S_N(y,t)=sum_d mu_M(d)f_d(t),
+ f_d(t)=1_(d<=y)[p^-t W(N/(pd))-q^-t W(N/(qd))],
+ mu_M(d)=mu(d)1_(gcd(d,R)=1), W(x)=floor4x-3floor2x+2floorx.
+
+Here p<q are registered primes, R=product(M), k=|M|>=2, alpha in(0,1),
+eps=min(tau,N^-gamma), gamma>0 and tau in(0,1). All actual outside prime
+factors, cofactor1, inclusive boundaries, p/q exits and signed cross terms
+remain. The source f is zero after D0=floor(4N/p). Its prefix depends on
+y only through the integer Y=floor y. This does not eliminate the real-y
+weight in061's variation integral.
+
+1. A reusable exact floor-completion certificate
+------------------------------------------------
+Choose a finite positive floor list X_j, integer short cutoff H>=0, and
+exact rational coefficient columns a_j,b_j. Keep
+
+ r=(p/q)^t, c_j(t)=p^-t(a_j-r b_j),
+ C_d(t)=sum_j c_j(t)floor(X_j/d).
+
+Define rational short residual columns u_d,v_d by
+
+ 1_(d<=Y)W(N/(pd))=sum_j a_j floor(X_j/d)+u_d,
+ 1_(d<=Y)W(N/(qd))=sum_j b_j floor(X_j/d)+v_d.             (1)
+
+A complete exact certificate verifies(1) for ALL integer
+1<=d<=D*=max(D0,max_j floor X_j), with u_d=v_d=0 for d>H.
+For d>D* the target and every floor are zero, so this finite check proves
+the identities on the whole positive source domain. If H>D*, the residual
+is simply zero after D*, but a large H does not by itself give an
+admissible residual-cost rate. H=0 means complete exact reconstruction.
+
+No extra source horizon is silently truncated to D0 or y. An X_j>D0
+requires verification of the newly created region D0<d<=floor X_j,
+where the target is zero and completion columns must cancel. Individual
+floors may not be convolved at a smaller horizon. A column with X_j<1
+is exactly zero, including its smooth count. For integer d the floor
+action depends only on floor X_j; rational X_j are still useful for
+moment certificates, but cannot encode unverified fractional source rows.
+
+The two exact rational column checks in(1) imply every t in the band:
+
+ f_d(t)=C_d(t)+p^-t(u_d-r v_d), residual supported d<=H.   (2)
+
+Checking finitely many numerical t values does not replace this algebra.
+Checking only the old quarter-grid geometry in v=N/d also does not
+verify the new cutoff at Y. A prefix can split one of those cells: if
+two source rows d=Y,Y+1 have identical columns but different target
+values, exact completion with H<Y is impossible for that basis. This
+identical-row obstruction is exact and source-free; the basis needs a
+new distinguishing floor or must keep that row in the priced residual.
+
+2. Complete convolution and an exact joint price
+------------------------------------------------
+Let Psi_M(X) count M-smooth positive integers <=X, including1, and be
+zero below1. The elementary mu_M*One law gives, with full horizons,
+
+ S_N(y,t)=sum_j c_j(t)Psi_M(X_j)
+                  +p^-t sum_(d<=H)mu_M(d)(u_d-r v_d).    (3)
+
+This is exact even if added horizons exceed the original source. It is
+not a new assumed Mobius Dirichlet-series bound. Its universally valid
+positive route is
+
+ |S_N(y,t)|<=p^-t [sum_j Psi_M(X_j)|a_j-r b_j|
+                                  +sum_(d<=H)|u_d-r v_d|]. (4)
+
+One may omit residual rows proved to have mu_M(d)=0, but must never
+drop d=1 or unregistered primes merely because M is finite. Bounding
+by all short rows is always safe. Formula(4) retains the p/q affine
+dependence INSIDE each absolute value. Replacing it by separate channel
+prices is a weaker optional rule and must disclose the lost cancellation.
+
+For fixed N,y and fixed columns the bracket in(4) is convex in r. Thus
+its maximum on any certified interval [r_lo,r_hi] occurs at an endpoint.
+The actual interval is [(p/q)^tau,(p/q)^eps]. A safe rational enclosure
+may be used; [0,1] is a generic conservative one. This supplies an exact
+uniform-in-t price without trusting sampled t values. Alternatively
+the finitely many rational roots of the affine factors partition r into
+exact sign intervals. Measurability is then immediate. These finite
+rules are NOT proofs that the coefficients or residuals have an
+admissible rate as N varies.
+
+There is also a valid endpoint-construction variant. Because 0<t<1,
+r lies in [r_0,1], with rational r_0=p/q. At each endpoint s=r_0,1
+one may independently find an exact completion of
+
+ g_s(d)=1_(d<=Y)[W(N/(pd))-s W(N/(qd))]
+       =sum_j c_(s,j)floor(X_j/d)+e_(s,d),
+
+with e_(s,d)=0 for d>H. Take the UNION of the two floor lists, pad
+missing columns by zero, and check every row through the largest
+union horizon. If the endpoint residual cutoffs differ, use their
+maximum and price every resulting short row. For
+lambda=(1-r)/(1-r_0), exact affine interpolation gives
+
+ g_r=lambda g_(r_0)+(1-lambda)g_1,
+ c_j(r)=lambda c_(r_0,j)+(1-lambda)c_(1,j),
+ e_d(r)=lambda e_(r_0,d)+(1-lambda)e_(1,d).
+
+Multiplying by p^-t recovers the actual source. The full price is at
+most lambda times the first endpoint price plus (1-lambda) times the
+second, hence at most their maximum. Both floor identities, not merely
+their objective values, must be verified exactly. Different endpoint
+optimizers are allowed: this need not optimize W_p and W_q separately.
+It is equivalent to a common affine coefficient a_j-r b_j, where
+a_j=(c_(r_0,j)-r_0 c_(1,j))/(1-r_0) and
+b_j=(c_(r_0,j)-c_(1,j))/(1-r_0). Balanced first moments at both
+endpoints imply balance throughout the band. This is a uniform-in-t
+algebraic certificate at a fixed N,y; its all-N coefficient and residual
+rates remain separate source-bound obligations.
+
+If all X_j<=C_X N^nu for fixed C_X,nu, then
+Psi_M(X_j)<=[1+log_2(max(1,C_X N^nu))]^k. Consequently a uniform
+coefficient-L1 rate O(N^delta polylog N) and residual-L1 rate
+O(N^beta polylog N), with delta,beta<=1/2, pay an admissible
+square-root/polylog PREFIX bound via(4). The statement must hold for
+every integer N>=2 and every prefix in061's active interior, including
+small-source/base exceptions, not merely the finite LP requests.
+
+A uniform prefix bound C sqrtN*(1+log_2(4N))^A implies the061 core
+bound with coefficient at most3R C/(k-alpha): integrate y^(-t-1)
+to at most1/t and then G_M(t)<=R t^k. Thus this route has explicit
+recovery with no hidden derivative or parameter loss. More general
+weighted budgets may be integrated directly if their complete domains
+and finite heads are proved. Existing058 endpoint requirements remain.
+
+3. A concrete generic completion with paid coefficient mass
+-----------------------------------------------------------
+The following constructive rule does not use scientific source values.
+For an integer threshold T>=1 and K>=0 define
+
+ I_K(T,d)=sum_(ell<=K)mu(ell)floor(T/(ell d)).              (5)
+
+The coefficient is ORDINARY mu(ell), not mu_M(ell). Complete ordinary
+mu*One convolution proves
+
+ I_K(T,d)=1_(d<=T) whenever floor(T/d)<=K.                 (6)
+
+In particular for T>H and K=floor(T/(H+1)), (6) holds for every
+integer d>H. Each added floor has horizon at most T. Replacing mu by
+mu_M in(5) would produce a smooth-count function rather than the
+indicator; it is not an interchangeable primitive.
+
+Now expand a single truncated W channel. Let Y=floor y. For b in{4,2,1}
+take coefficients A_b=1,-3,2 respectively and Z_b=bN/p. Since
+floor(Z_b/d)=sum_(m>=1)1_(d<=floor(Z_b/m)),
+
+ 1_(d<=Y)W(N/(pd))
+    =sum_b A_b sum_(m>=1)1_(d<=min(Y,floor(Z_b/m))).       (7)
+
+For d>H retain only thresholds T=min(Y,floor(Z_b/m))>H.
+There are at most floor(Z_b/(H+1)) such m. Replace each retained
+indicator by(5), with its own K=floor(T/(H+1)); collect identical
+floor columns before pricing if useful. This gives exact completion
+for every d>H. All residuals are computed by(1) on EVERY d<=H.
+The construction also works if Y<=H: then there are no completion
+terms and the whole target is a short residual.
+
+Using |mu|<=1, K<=Z_b/[m(H+1)], and the harmonic estimate
+sum_(m<=L)1/m<=1+log(max(1,L)), the coefficient L1 of the p channel
+is bounded by
+
+ C_p <=12N/[p(H+1)]
+              *[1+log(max(1,4N/[p(H+1)]))].              (8)
+
+The factor12 is 4+3*2+2*1 from the three W floors. The analogous
+q bound has q in place of p. For the joined coefficient at each t,
+L1<=p^-t C_p+q^-t C_q. Coalescing columns can only improve this
+conservative bound, and every new X_j is <=D0. No added horizon is
+ignored or licensed by an approximate pattern.
+
+More generally, fix any rational eta in [0,1] and choose H=floor(N^eta).
+Then H+1>N^eta, and(8) proves coefficient mass
+O(N^(1-eta)(1+log N)) and smooth-count charge
+O(N^(1-eta)(1+log N)^(k+1)), uniformly in every prefix Y.
+The constants depend only on the fixed primes and eta, not on a
+scientific source table. Thus eta>=1/2 pays the coefficient part at
+square-root/polylog scale. It does not pay the joined short defect.
+
+For H=floor sqrtN, H+1>sqrtN, so(8) supplies a PROVED
+O(sqrtN logN) coefficient-mass bound. Its smooth-count charge is
+O(sqrtN log^(k+1)N), uniformly for every prefix Y and N>=2.
+This is useful paid progress for a real completion family, independently
+of the unresolved residual. It is not a full signed-core theorem.
+
+4. Why a short support is not a paid short cost
+----------------------------------------------
+The indicator completion can be large on d<=H. The elementary bound
+
+ |I_K(T,d)|<=T/d*(1+log(max(1,K)))                        (9)
+
+does NOT imply O(H) residual L1. Already K=1 gives
+I_1(T,d)=floor(T/d), and indicator residual at d=1 is1-T for T>=1.
+The defect has no long support, but its unit can be large. For larger
+K the coefficient cancellations require actual arithmetic estimates;
+they may not be assumed merely from mu*One's complete identity.
+The signed p/q combinations in(7) may cancel some defects, but those
+combinations must be retained and priced, not presumed to cancel.
+
+For a generic full interpolation there is no existence obstruction:
+floors floor(j/d), 1<=j<=D*, form a triangular integer matrix in
+descending j,d, with unit diagonal. They reconstruct any finite target
+exactly, with H=0. Their coefficient mass can be expensive. Alternatively
+matching only d>H leaves the short rows free; adding small-horizon
+columns can repair them, but those columns have a price too. Existence
+of a solution, zero long residual or a low finite LP objective is not
+a uniform coefficient/residual-rate certificate.
+
+The actual difficulty can be exposed without a norm restatement. For
+one indicator, (5) gives the exact finite convolution
+
+ sum_d mu_M(d)I_K(T,d)=sum_(ell<=K)mu(ell)Psi_M(T/ell).
+
+When (6) holds outside H,
+
+ sum_(d<=H)mu_M(d)[1_(d<=T)-I_K(T,d)]
+ =M_M(T)-sum_(ell<=K)mu(ell)Psi_M(T/ell),                 (10)
+
+where M_M(T)=sum_(d<=T)mu_M(d). Thus a SHORT signed kernel may encode
+a CURRENT-SCALE Mertens remainder. Assuming it is small just because
+its support is short would be circular. In the illustrative M-empty
+case, Psi is the constant unit count on arguments>=1 and, for the
+constructed K<=T, (10) is M(T)-M(K). This
+example is not a change to the licensed k>=2 source; it makes the
+hidden recovery loss explicit. For the actual joined W source all
+corresponding p/q threshold terms stay signed together.
+
+5. Cheap bounded bases, moment guards and the correct trade-off
+--------------------------------------------------------------
+A bounded elementary atom is
+
+ B_X(d)=floor(X/d)-2floor(X/(2d)) in{0,1}.
+
+It equals1_(d<=X) for d>X/2, has floor-coefficient mass3 and zero
+linear first moment. It is a cheap indicator completion only with
+short horizon at least X/2. For X of order N this does not yield a
+sqrtN residual horizon. A multiscale Boolean OR of its digits could
+represent an indicator, but products of floors are a NEW basis and
+do not inherit the mu_M*One smooth-count rule without another proof.
+No free linear completion is obtained by calling that OR a sum.
+
+More generally, for any completion let
+L_c(t)=sum_j|c_j(t)| and M_1(t)=sum_j c_j(t)X_j. Since
+floor(X_j/d)=X_j/d-frac(X_j/d),
+
+ |C_d(t)|<=|M_1(t)|/d+L_c(t).
+
+As |f_d(t)|<=2, this yields the conservative EXACT residual rule
+
+ sum_(d<=H)|f_d(t)-C_d(t)|
+ <=H[2+L_c(t)]+|M_1(t)|[1+log H],                       (11)
+
+for H>=1, with zero for H=0. In particular a balanced moment M_1=0
+pays the residual by H[2+L_c]. To bind this for the whole t band it
+suffices to check sum a_j X_j=sum b_j X_j=0. Joint affine price
+may also certify an approximate moment without splitting p/q signs.
+
+This is a reusable positive route, but its exponent must be priced:
+if H=O(N^eta) and L_c=O(N^delta polylogN), the balanced-moment route
+requires eta+delta<=1/2 for an RH-strength residual, in addition to
+delta<=1/2 for the smooth part. With H near sqrtN and the generic
+coefficient bound(8), this coarse rule gives power1, not power1/2.
+For the entire generic indicator trade-off delta=1-eta, the same
+coarse moment-balanced rule has eta+delta=1. Hence that bound alone
+never closes the square-root residual requirement, for any eta in
+[0,1]. This is a limitation of this particular positive estimate, not
+an impossibility theorem for exact indicator combinations, better
+short-defect control, or other floor completions.
+A detector must improve the actual short defect or discover a different
+completion trade-off; it cannot hide this product in an asymptotic constant.
+
+6. Next source-bound leaf and noncircular proof gate
+---------------------------------------------------
+The062 construction genuinely changes the interior proof coordinates:
+it can move the complete large-cofactor prefix into priced smooth counts
+and an exact SHORT kernel, with a uniform coefficient bound available
+from(7)-(8). The remaining source-bound leaf is the joined residual
+variation in(4), or a separately proved signed residual estimate with
+complete recovery. It is not the original norm renamed, but it can
+still contain an equivalent current-scale correlation as(10) shows.
+
+Useful detector certificates are: exact two-channel reconstruction on
+all integer source/addition rows; origin/unit retention; complete floor
+horizons; exact joint affine price; convex endpoint admission for t;
+uniform coefficient mass; balanced/approximate first moment; every
+short residual and its bound; and explicit all-N/all-prefix quantifiers.
+Finite counterexamples can reject a recipe. Finite LP success or
+numerical scaling can only propose its remaining rate, not pay it.
+
+The061 reciprocal-interval tail identity is another exact presentation
+of the same frontier. Floor completion can attempt to cancel those
+tail intervals, but must either retain every induced short row as
+above or establish a new signed divisor/reciprocal correlation lemma.
+Assumed RH-strength bounds on M_M or a companion are not providers.
+
+No generic impossibility for all completions with admissible total cost
+was proved. The explicit generic completion pays its coefficient part,
+but the short residual part remains OPEN. A uniform proof of both parts
+would imply the061 interior bound, then the already-paid058 source/RH
+bridge with its original endpoint scope. Those are conditional
+implications, not a new RH assertion.
+
+Disposition: source-only review complete; edits stopped. No actual
+completion winner was enumerated, no scientific source was evaluated,
+and no frozen file was changed.

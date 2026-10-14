@@ -1,0 +1,38 @@
+{
+  "owner": "independent Sol6.1 checker /root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_prime_scale_filter_053",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 18,
+      "stdout": "SYNTHETIC_WORK module=test_check_prime_scale_filter_053 operations=123049\n",
+      "stderr": "test_annulus_roots_do_not_prevent_admission (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_arbitrary_fractional_alpha_and_log (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_basic_conditional_only (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_boundary_roots_and_repeated_mean_root (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_capacity_and_pipeline_meter (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_degree_capacity_and_zero_order (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_error_remains_open (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_exact_bound_scope_and_normalization (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_exact_primitive_mean_neutrality (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_finite_divisor_rewrite_as_formal_identity (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_finite_order_and_taylor_scope (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_fractional_exponent_never_integer (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_full_center_retained (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_jump_budget_and_unit_head (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_linear_center_and_jump_budget_symbolic (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_prime_and_composite_scales (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_source_and_parameter_binding (test_check_prime_scale_filter_053.FilterTests) ... ok\ntest_strict_types_and_canonical_rationals (test_check_prime_scale_filter_053.FilterTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.010s\n\nOK\n",
+      "operations": 123049,
+      "elapsed_seconds": 0.0821121979970485,
+      "peak_rss_KiB": 25052,
+      "operations_marker_present": true
+    }
+  ],
+  "operations": 123049,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "edits_stopped": true,
+  "distinct_tests": 18,
+  "test_invocations": 18,
+  "scientific_source_observations": 0,
+  "old_test_suites_run": 0,
+  "reused_primitives": "frozen052 rational/type/meter helpers only",
+  "proof_scope": "finite arithmetic reduction and conditional RH implication; missing uniform arithmetic bound OPEN",
+  "resource_caps": {
+    "operations": 50000000,
+    "seconds": 180,
+    "address_space_bytes": 1073741824
+  }
+}

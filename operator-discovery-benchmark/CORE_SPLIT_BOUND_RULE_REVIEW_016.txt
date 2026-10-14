@@ -1,0 +1,313 @@
+A GENERIC CENTERED HYPERBOLA RULE AND TWO FINITE-FACTOR PROOF ROUTES
+
+Scope and disposition
+---------------------
+This is an analytically proved reusable inequality primitive for subsequent
+machine synthesis of splits, finite factors and joined source bounds.
+Only this new memo is written. No old/frozen source or result is changed;
+no numerical source evaluation, experiment, test, rescore or hash occurs.
+The generic theorem and both fully centered finite-factor routes below
+are PROVED, with explicit constants. Neither route discards complementary
+source terms or proves the full current core/RH target. Those remain OPEN.
+
+All convolutions are Dirichlet convolutions. One(n)=1 and delta is their
+unit. All logarithms in this memo are natural. Real prefix arguments use
+the unit-cell step convention: P_h(t)=sum_(d<=floor t)h(d), zero for t<1.
+The coefficient mass is M_h(t)=sum_(d<=floor t)|h(d)|. Parameters are fixed
+for each identity; in a parent/child source reduction use the SAME cutoff
+and moment coefficients throughout the shared horizon.
+
+1. The actual finite inverse error, including its unit and head
+-------------------------------------------------------------
+Fix integer U>=1, A(d)=mu(d)1_(d<=U),
+ c=sum_(d<=U)mu(d)/d,
+ E=delta-One*A+c One.
+The complete actual identity mu*One=delta gives at integer n>=1
+ P_E(n)=1-sum_(d<=U)mu(d)floor(n/d)+cn
+       =1+sum_(d<=U)mu(d){n/d}.                        (1.1)
+At n<=U, the coefficient E(n)=c, since all its divisor factors are
+present. In particular E(1)=c; its unit is not silently replaced by1.
+Using(1.1) at nU yields |c|<=1+1/U<=2. At every integer n,
+ |P_E(n)|<=1+U<=2U; the same holds at all real t>=1.
+
+The proposed complete mass bound is also valid:
+                      M_E(t)<=3t(1+log U).             (1.2)
+To see this without a spurious extra unit, write A=delta+Aproper.
+Then delta-One*A=delta-One-One*Aproper, whose first coefficient is0.
+For t>=1 its mass is at most
+ floor t-1+sum_(d=2)^U |mu(d)|floor(t/d)
+ <=t H_U-1, H_U=sum_(d=1)^U1/d.
+Adding c One costs at most2t. Since H_U>=1,
+ M_E(t)<=t(H_U+2)<=3t H_U<=3t(1+log U).
+This proof covers U1, where c1 and E=delta exactly. For t<1 the mass
+and prefix vanish. No partial-prime counterfeit replaces actual mu.
+
+2. Conditional moments and the COMPLETE infinite tail
+-----------------------------------------------------
+Let 0<theta<1 rational. A bounded prefix sequence has the convergent
+ordinary conditional moment
+ m_theta(h)=sum_(d>=1)h(d)d^(-theta)
+           =theta int_1^infinity P_h(t)t^(-theta-1)dt.  (2.1)
+The equality follows by finite summation by parts and a vanishing endpoint.
+The integral is absolutely convergent as an integral of the bounded
+prefix, even when the coefficient series is not absolutely convergent.
+At every integer D>=1 its exact tail is
+ sum_(d>D)h(d)d^(-theta)
+ =-P_h(D)D^(-theta)+theta int_D^infinity P_h(t)t^(-theta-1)dt.
+Consequently a prefix bound |P_h|<=C gives
+                 |tail_D|<=2C D^(-theta).              (2.2)
+The entire d>D tail, including d>n for an evaluation at n, remains here.
+
+For E, split the moment at U. Its head is c sum_(d<=U)d^(-theta),
+bounded by2 U^(1-theta)/(1-theta), and(2.2) bounds its tail by
+4 U^(1-theta). Therefore
+ |m_theta(E)|<=[2/(1-theta)+4]U^(1-theta).              (2.3)
+This is a rigorous tail/head bound for all U>=1; no numerical zeta is
+required by the bound rule. The exact symbolic value can be checked as
+ m_theta(E)=1-zeta(theta)[A(theta)-c],
+ A(s)=sum_(d<=U)mu(d)d^(-s).
+Initially this identity follows by absolutely convergent convolution
+in Re(s)>1. The bounded-prefix Abel integral is holomorphic in Re(s)>0;
+the real pole at1 on the displayed right side is removable because
+A(1)=c. Analytic agreement then establishes the expression at theta.
+This is not an assertion of ordinary convergence for an unrelated
+full-source canceled bracket at2/3. U1 gives m_theta(E)=1 as required.
+
+3. A generic centered hyperbola theorem, with a free integer split
+----------------------------------------------------------------
+Assume an arbitrary real sequence h satisfies, for every real t>=1,
+ |P_h(t)|<=C, M_h(t)<=L t, C>=1,L>=1.                  (3.1)
+Define
+ K(n)=n^(theta-1), Jtheta(n)=n^theta-(n-1)^theta,
+ Ztheta(y)=sum_(a<=floor y)a^(theta-1), zero for y<1,
+ T_h(n)=sum_(k<=n)(K*h)(k)-(m_theta(h)/theta)n^theta.
+Because sum_(k<=n)Jtheta(k)=n^theta EXACTLY, T_h is the full prefix of
+ K*h-(m_theta(h)/theta)Jtheta, with the actual Jtheta(1)=1 unit.
+
+For any real y>=1, decreasing-kernel integral comparisons give
+               0<=y^theta/theta-Ztheta(y)<=1/theta.    (3.2)
+Indeed Ztheta(y)<=floor(y)^theta/theta<=y^theta/theta,
+while Ztheta(y)>=((floor(y)+1)^theta-1)/theta.
+This includes all noninteger quotient/floor cases.
+
+For ANY integer D in[1,n], the exact complementary hyperbola identity is
+ sum_(k<=n)(K*h)(k)
+ =sum_(d<=D)h(d)Ztheta(n/d)
+  +sum_(a<=floor(n/(D+1)))a^(theta-1)[P_h(n/a)-P_h(D)]. (3.3)
+Every lattice pair ad<=n occurs once: d<=D in the first row, d>D in
+the second. The second row is empty if D=n. There is no dropped overlap
+or fictitious final cell. Subtract the complete moment, use(3.2) on the
+first row and(2.2) on its infinite moment complement. The result is
+ |T_h(n)|<=M_h(D)/theta+(4C/theta)(n/D)^theta
+          <=L D/theta+(4C/theta)(n/D)^theta.            (3.4)
+For the complementary finite row, |P_h(n/a)-P_h(D)|<=2C and
+Ztheta(n/(D+1))<=theta^(-1)(n/D)^theta. Its bound contributes2C;
+the full conditional-moment tail contributes the other2C. Both terms
+are present; eliminating the infinite tail is unsound.
+
+The detector can use(3.4) as TWO explicit error monomials and synthesize
+an admissible split. Balancing the powers D and C(n/D)^theta yields
+ a=1/(1+theta), r=theta/(1+theta), T=C^a n^r.
+If n>=C, then1<=T<=n and the integer D=ceil T is admissible, satisfies
+T<=D<=2T, and gives
+                    |T_h(n)|<=6L T/theta.              (3.5)
+No constant has to be optimized to prove this rule. If powers in C or
+the proposed split are rational, integer inequalities can be verified
+after raising their exact rational denominators. Floating rounding at
+an integer boundary is not a certificate. The free-split form(3.4)
+also permits the machine to generate alternative cutoffs and compare
+their bound exponents; the stated balancing is an algebraic consequence
+of the errors, not a nominated source-specific candidate.
+
+4. The all-n head case and one rational uniform constant
+-------------------------------------------------------
+For n<C, do not use a split larger than n. First, since L>=1,
+ |P_h(t)|<=L min(C,t).
+Formula(2.1) then gives the useful general moment bound
+ |m_theta(h)|<=L C^(1-theta)/(1-theta).                (4.1)
+More explicitly the two integrals on[1,C] and[C,infinity) sum to
+L C^(1-theta)/(1-theta)-theta L/(1-theta), a still smaller quantity.
+The raw complete convolution satisfies
+ |sum_(k<=n)(K*h)(k)|
+ <=sum_(a<=n)a^(theta-1)M_h(n/a)
+ <=L n sum_(a<=n)a^(theta-2)
+ <=L[(2-theta)/(1-theta)]n.                            (4.2)
+The final estimate uses the full convergent positive series majorant.
+
+When n<C, n<=C^a n^r, and
+ C^(1-theta)n^theta<=C^a n^r,
+since their second ratio is(n/C)^(theta^2/(1+theta))<=1.
+Thus (4.1)-(4.2) give |T_h(n)| at most
+ L[(2-theta)/(1-theta)+1/(theta(1-theta))]C^a n^r.
+Combining with(3.5), the following SIMPLE rational constant works in
+EVERY case, including n1 and C1:
+
+ |T_h(n)|<=Ctheta L C^a n^r,
+            Ctheta=6/[theta(1-theta)].                 (4.3)
+
+The small-n coefficient is at most2/[theta(1-theta)], while6/theta
+is at most Ctheta. This proves the proposed generic rule with all
+heads, floors and tails retained. C,L need not be integers, but must
+be certified upper bounds satisfying(3.1), not fitted observations.
+
+For E, C=2U and L=3(1+log U). Since2^a<=2, a convenient specialization is
+ |T_E(n)|<=[36/(theta(1-theta))](1+log U)U^a n^r,
+                         every integer n>=1.          (4.4)
+No separate n<U exception is needed after this proof; that case was
+explicitly covered in Section4. The sharper moment(2.3) is still useful
+for the second proof route below.
+
+5. Route I: apply the theorem to the full finite-factor error
+------------------------------------------------------------
+Let B(d)=mu(d)d^(-2/3)1_(d<=V), V>=1 integer, and let
+ h0=A^p*B^q, h=h0*E, p,q nonnegative integers (currently at most2).
+Both A and B, and therefore h0, have finite support. From(1.1),
+ |P_h(t)|<=2U ||h0||_1
+ <=2*3^q U^(p+1)V^(q/3)=C0 W,
+ C0=2*3^q, W=U^(p+1)V^(q/3).                          (5.1)
+Here sum_(d<=V)d^(-2/3)<=3 V^(1/3). The formula holds for all real t,
+because prefixes below1 vanish. Similarly(1.2) gives
+ M_h(t)<=3(1+log U)t sum_d |h0(d)|/d
+ <=3(5/2)^q(1+log U)^(p+1)t=L t,                     (5.2)
+using sum_(d<=U)1/d<=1+log U and sum_(d>=1)d^(-5/3)<=5/2.
+These constants satisfy the generic C,L>=1 hypotheses.
+
+The complete conditional moment factors EXACTLY:
+ m_theta(h)=m_theta(E)m_theta(h0),
+ m_theta(h0)=A(theta)^p B(theta)^q.                    (5.3)
+Finite support of h0 justifies passage to the limit in each of its
+shifted conditional E sums; absolute convergence of E itself is not
+claimed. Applying(4.3) DIRECTLY to h therefore proves the fully centered
+prefix of K*A^p*B^q*E, with main coefficient m_theta(h)/theta, bounded by
+ [36(15/2)^q/(theta(1-theta))]
+ (1+log U)^(p+1)U^((p+1)a)V^(q a/3)n^r.              (5.4)
+The conservative simplification C0^a<=C0 makes its numerical constant
+rational; leaving C0^a symbolically is also valid if certified.
+This route automatically includes every centering commutator. It is
+one reusable bound rule, not an assertion about an uncentered component.
+
+6. Route II: centered E convolution PLUS the complete J commutator
+-----------------------------------------------------------------
+The following initially tempting equality is FALSE in general:
+ h0*[K*E-(m_theta(E)/theta)Jtheta]
+  =K*h0*E-[m_theta(E)m_theta(h0)/theta]Jtheta.
+The correct complete identity is
+ K*h0*E-[m_theta(E)m_theta(h0)/theta]Jtheta
+ =h0*[K*E-(m_theta(E)/theta)Jtheta]
+ +(m_theta(E)/theta)[h0*Jtheta-m_theta(h0)Jtheta].      (6.1)
+For a simple counterexample take U1, so E=delta and m_theta(E)=1,
+and finite h0(2)=1 with every other coefficient0. At n1 the prefix of the
+bracket in the second row is -2^(-theta), not0. Erasing it changes the
+actual coefficient/unit and is not a harmless main-term convention.
+
+There is, however, an explicit bound that PRESERVES the exponent. For
+ANY finite signed h0 and integer n>=1, the commutator prefix is exactly
+ C_h0(n)=sum_(d<=n)h0(d)floor(n/d)^theta
+                                      -n^theta m_theta(h0)
+ =sum_(d<=n)h0(d)[floor(n/d)^theta-(n/d)^theta]
+                       -n^theta sum_(d>n)h0(d)d^(-theta). (6.2)
+Its full d>n finite-support tail is essential. Concavity gives
+ |floor y^theta-y^theta|<=1 for y>=1. Because0<r<theta,
+ 1<=(n/d)^r for d<=n,
+ (n/d)^theta<=(n/d)^r for d>n.
+Therefore, writing M_h0(r)=sum_ALL_d|h0(d)|d^(-r),
+                   |C_h0(n)|<=n^r M_h0(r).            (6.3)
+The simpler all-n bound |C_h0(n)|<=||h0||_1 is also valid, but(6.3)
+is better aligned with the generated split exponent.
+
+Convolving the actual centered E bound(4.4) with finite h0 yields a
+prefix at most [36/(theta(1-theta))](1+log U)U^a n^r M_h0(r).
+By(2.3) and U>=1, U^(1-theta)<=U^a. Adding(6.3) to this bound via
+(6.1), and using(2/(1-theta)+4)/theta<=6/[theta(1-theta)], proves
+ the FULL centered K*h0*E prefix
+ <=[42/(theta(1-theta))](1+log U)U^a n^r M_h0(r).      (6.4)
+The commutator has been paid, not identified with0. The moment and all
+tails are complete, including finite factors larger than n.
+
+7. Finite-factor weighted masses: every threshold case
+-----------------------------------------------------
+For h0=A^p*B^q, positive weighted convolution gives
+ M_h0(r)<=M_A(r)^p M_B(r)^q,
+ M_A(r)<=U^(1-r)/(1-r)=(1+theta)U^a.
+Put t=2/3+r. The following exact case distinction is mandatory:
+ t>1: M_B(r)<=1+1/(t-1);
+ t=1: M_B(r)<=1+log V;
+ t<1: M_B(r)<=V^(1-t)/(1-t).                          (7.1)
+Each inequality follows from the corresponding decreasing-series
+integral comparison and is valid at V1. Here t>1 is equivalent to
+theta>1/2, t1 to theta1/2, and t<1 to theta<1/2. The constants are
+rational functions of the fixed rational parameter theta; no numerical
+zeta is needed. If q0, the B factor is1 and no threshold cost occurs.
+
+Combining(6.4)-(7.1), the second fully centered route is
+ [42/(theta(1-theta))](1+theta)^p(1+log U)
+                  U^((p+1)a) M_B(r)^q n^r.            (7.2)
+For theta>1/2 this has no V power; at the boundary it carries the stated
+log V, and below the boundary it has the explicit V power. Thus Route II
+can improve the log/finite-factor cost relative to Route I without
+discarding the J commutator. Neither is universally the better constant;
+the detector can compare BOTH certified bounds on the SAME completely
+centered object, rather than compare differently centered presentations.
+
+For the core kernel theta2/3, a3/5,r2/5, the B mass in(7.1) is at most16.
+For p2,q0, Route II specializes to the simple full bound
+                      525(1+log U)U^(9/5)n^(2/5).      (7.3)
+Route I instead has the same U power and a log-cubed cost. The exponent
+U9/5 is therefore valid after full centering; it was not justified by
+an uncorrected convolution identity. Its source moment is the exact
+m_theta(E)A(theta)^2, not a fitted replacement.
+
+8. Cofinal accounting when the detector grows cutoffs
+----------------------------------------------------
+A bound of the form B(U,V)n^r gives complete dyadic prefix energy at most
+ 2 B(U,V)^2 X^(2r-1), since r in(0,1/2).
+This follows by bounding every n in[X,2X) by(2X)^r and using2^(2r)<=2.
+It is an upper certificate, not an actual asymptotic. If a shared horizon
+N is comparable to X, U<=N^alpha,V<=N^gamma, the rational exponents and
+all logarithmic factors must be propagated AFTER squaring.
+
+For Route II with theta>1/2, the energy power in X is
+ [theta-1+2alpha(p+1)]/(1+theta).
+It is cofinally paid if alpha<=(1-theta)/[2(p+1)]; equality pays the
+remaining explicit log-squared cost. At theta2/3,p2 this requires
+alpha<=1/18. A fixed U gives a decaying power, but allowing U to grow
+can destroy that gain. No certificate may omit the U9/5 cost.
+At theta1/2 the same power condition applies, with additional log(V)^(2q).
+For theta<1/2 Route II's energy exponent is
+ [theta-1+2alpha(p+1)+(2gamma q/3)(1-2theta)]/(1+theta).
+Route I's energy exponent is
+ [theta-1+2alpha(p+1)+(2gamma q/3)]/(1+theta),
+and its log U degree is2(p+1). These formulas distinguish coefficient
+prefix errors from energy errors. Exact N/X factors and constants must
+be retained when compiling an actual certificate; these power tests
+alone are not numerical estimates for a small scale.
+
+9. What this primitive does NOT erase from the full source
+--------------------------------------------------------
+The source-specific finite inverse identity is exact, and the added
+compensation gives R=E-c One. Any substitution into an inverse polynomial
+must retain the complete One terms, every binomial companion and every
+source/transport cross. One terms can contain macroscopic real-pole
+contributions that cancel only after the full source join. Paid centered
+E components are not permission to discard those complements or their
+own main coefficients. The present theorem applies to ONE bounded-prefix
+error with a FINITE convolution factor; it does not automatically cover
+E^2 or an arbitrary additional infinite factor by repeating the rule.
+Such an extension needs separately certified prefix and mass hypotheses.
+
+All centering coefficients in a same-N parent/child decomposition must
+be carried exactly. At different N the individual short-factor moments
+and components can change, even though their joined source is global.
+A component recurrence therefore needs uniform parameters or a fresh
+same-horizon identity; it cannot borrow a mismatched smaller-horizon
+center. The apparent gain here is a valid payment for particular complete
+error components, not a closing bound on their remaining signed join.
+
+The theorem is an analyst-supplied primitive. The detector can generate the
+inverse expansions, free split/error monomials, admissible integer split
+certificates and the two centering routes; compare exact exponent/log/
+constant costs; pay qualifying components; and feed the FULL residual
+arithmetic leaves onward. This is genuine proof-route synthesis once
+implemented, while the unpaid joined all-scale bound remains an OPEN
+premise. Finite numerical validation does not establish it. No RH claim,
+source experiment or test is made; only this new review file was written.

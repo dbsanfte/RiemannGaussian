@@ -1,0 +1,11 @@
+{
+  "RH_proved": false,
+  "elapsed_seconds": 0.001984303002245724,
+  "hashes_used": false,
+  "old_tests_run": false,
+  "scientific_source_queries": false,
+  "status": "FAIL",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/audit_mobius_annihilator_085.py\", line 58, in <module>\n    if '--guards-only'not in sys.argv:r.update(integration())\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/audit_mobius_annihilator_085.py\", line 23, in integration\n    S=[[Q(-1)if i==j else Q(2,3)for j in range(3)]for i in range(3)];rows=[[(-1)**i]for i in range(E)];cert,diag=P.certificate(model,bank(),S,4,rows)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/mobius_annihilator_085.py\", line 61, in certificate\n    base=B.project_native(model,SQUARE.R.raw_remainder(model));Z=correction(model,V,identity_matrix)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/mobius_annihilator_085.py\", line 48, in correction\n    if len(identity_matrix)!=m or any(len(row)!=m for row in identity_matrix):raise ValueError('complete signed identity matrix')\nValueError: complete signed identity matrix\n",
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false
+}

@@ -1,0 +1,90 @@
+Publication022: math-only formal identity probe, outcome UNKNOWN
+Date: 2026-10-09. Archive: cancellation-arithmetic-results/primitive-state-uniform-identity-probe-001.
+
+The user's latest instruction is to avoid hashes unless required by the actual
+algorithm. It overrides older handoff/design requests for precautionary hashes.
+The new research path creates no cryptographic digests, source-body hashes,
+candidate/plan/row fingerprints, manifest chains or repeated archive sweeps.
+It saves the actual candidate vector, protocol, results and a one-time source
+snapshot. Independent verification compares the mathematical data directly.
+
+Completed implementation
+primitive_state_uniform_native_source.py constructs every legacy366 square
+group,403 relation groups and complete15-dimensional regional state directly.
+It omits optional metadata and polynomial expansions used only for hashes or
+archive comparisons. Required output algebra remains, including factor closure
+normalizations, complete ordered divisor pairs, divisor norm squares, exact
+rational-root cuts and the cell unit multiplier u1+1.
+check_primitive_state_uniform_native_source.py reconstructs these definitions
+with its own sparse polynomial arithmetic, factorization and root routines.
+The fixed44-entry factor declaration preserves the original coefficient order;
+legacy ordering is checked by a functional calibration, not recomputed using
+hashes during research. Tiny legacy-oracle tests necessarily exercise the old
+API; those are compatibility tests, not an integrity sweep.
+
+primitive_state_uniform_identity_probe.py adds all210 primitive-state groups
+using suffix aggregation. check_primitive_state_uniform_identity_probe.py uses
+forward aggregation for its independent reconstruction. Both retain the complete
+seven families, two regions and15 atoms. The source declares three matrices,
+with two regional state arrays and signed child-minus4parent storage. A review
+caught and corrected two integration defects: treating the declaration as two
+matrices, and sorting mixed-degree monomials by degree rather than tuple order.
+The full helper review is primitive_state_math_only_source_review_v1.txt.
+
+The implemented output is an exact sparse1957-coordinate necessary row a*v=rhs,
+where a_j=column_j(u)-column_j(0), rhs=-Delta E(u). Five constant slack columns
+vanish. Signed relation columns are interleaved positive/negative pairs; Gram
+offdiagonals count twice. A modular candidate dot avoids constructing one giant
+rational weighted sum. A nonzero independently checked residual would reject
+only this fixed universal NONCONSTANT FORMAL identity. It would not refute RH
+or an arithmetic-only inequality. A zero residue would remain inconclusive.
+
+Actual fixed run and result
+Candidate: the complete original1957 exact vector from publication021.
+Fixed X7,H27,q6,C32; u_n=2n+1 for every n1..27; zero baseline including u1;
+prime65537 with all relevant rational denominators required invertible.
+No actual Mobius sign substitution, alternative scale/prime or candidate retry.
+
+All45 combined integration tests passed in7.896s. After the small publication
+failure-reporting change, its3 targeted tests passed. The frozen45 prescore tests
+then passed in7.846s. Authentic tiny source-to-probe-to-independent-check tests
+also pass with hashlib.sha256 replaced by an exception: the research computation
+does not call it, including through helper functions. These tests establish
+functional calibration; they are not a universal source-equivalence theorem.
+
+The actual producer stopped UNKNOWN during source construction at its150m
+Python LINE_EVENTS cap, before any candidate evaluation or feedback row export.
+It took102.308701s wall/102.272469s CPU and peaked at204652KiB (about200MiB).
+It stayed within its3600s cooperative deadline and6GiB memory boundary.
+The source guard does not retain a completed source or detailed failure stack,
+so no completed source count or subroutine-specific timing is claimed.
+
+The independent archive audit confirmed this incomplete outcome in0.027686s.
+It used4548 evaluation/preflight proxy units and28712 I/O proxy units, and
+attempted ZERO independent source builds. Its all_passed=True refers to checking
+the protocol, fixed input, tests and incomplete lifecycle. There is no checked
+mathematical witness: independent_probe_check=null and constraint=null.
+No formal identity, candidate, scalar bound, infeasibility or RH result was admitted.
+
+Resource declaration
+One450m joint reservation:50m preparation (including20m test allowance),150m
+producer source LINE_EVENTS,50m producer evaluation,150m independent source
+LINE_EVENTS and50m independent evaluation. The450m figure is a conservative
+reservation, not measured arithmetic operations or actual total work. Source
+line events and rational/I/O counters are distinct runtime proxies. No unused
+stage reservation was repurposed for an undeclared retry. Snapshot73 files,
+660905bytes; plan195467bytes. Published and frozen files remain immutable.
+
+Next implementation direction
+The remaining bottleneck is constructing complete symbolic polynomial sources,
+not memory or hashing. Investigate exact evaluation directly at the assigned
+formal vector and zero baseline, retaining one rational coefficient per original
+operator column. Preserve the complete arithmetic domains, factor witnesses,
+root cutoffs, group order, signed storage and independent reconstruction. This
+can avoid materializing polynomials that the current probe immediately evaluates.
+Prototype and check the new representation against tiny full-source cases before
+another research run; any new version needs its own declared combined work budget.
+Do not treat this incomplete run as evidence against the candidate or grammar.
+
+The active research goal remains unresolved: signed arithmetic control across
+all scales, with a uniform proof and an ordinary-zeta/RH bridge.

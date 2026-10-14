@@ -1,0 +1,46 @@
+{
+  "owner": "independent_prime_insertion_core_checker_056",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_prime_insertion_core_056"
+      ],
+      "returncode": 0,
+      "tests": 26,
+      "stdout": "SYNTHETIC_WORK module=test_check_prime_insertion_core_056 operations=60113\n",
+      "stderr": "test_actual_primes_and_products_beyond_old_array_cap (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_auxiliary_recovery_is_not_original_target_recovery (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_charge_only_meter_and_strict_boolean_flags (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_common_prime_term_nonzero_is_retained_not_priced (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_exact_zero_first_jet_keeps_zero_exception_rows (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_exception_sign_bound_and_full_rows_cannot_change (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_first_jet_bounds_and_exact_prime_two_identity (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_first_jet_zero_does_not_cancel_full_kernel (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_full_formal_first_jet_and_zero_jet_source_identity (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_generic_rational_signed_jet_mixture (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_generic_recovery_constant_quantifier (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_generic_recovery_missing_tail_or_numeric_fit_rejected (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_generic_recovery_provider_insufficient_not_arithmetic_refutation (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_generic_recovery_source_and_eta_binding (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_integer_unit_gate_and_full_cofactor_weight (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_jet_features_and_coefficient_schema_guards (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_microscopic_constant_power_and_nonempty_gate (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_microscopic_full_E_R_source_and_arbitrary_denominators (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_microscopic_signed_mass_and_unit_filter (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_numeric_open_core_never_promoted_by_tail_or_first_jet (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_numeric_recovery_strict_boundary_and_log_weight (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_rational_types_and_cutoff_resource_guards (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_recovery_underprice_and_plain_log_at_small_N_rejected (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_tail_domain_normalization_and_signed_source_binding (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_tau_one_cannot_use_bounded_or_subcritical_provider (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\ntest_three_tail_regimes_and_critical_log (test_check_prime_insertion_core_056.CoreRulesTests) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.062s\n\nOK\nPEAK_RSS_KIB=25856\n",
+      "operations": 60113,
+      "operations_marker_present": true,
+      "elapsed_seconds": 0.1435830850386992,
+      "peak_rss_KiB": 25856
+    }
+  ],
+  "operations": 60113,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "edits_stopped": true,
+  "scientific_arrays_read": false,
+  "actual_source_study_run": false,
+  "prior_suites_replayed": false,
+  "new_checker_imports_new_producer": false,
+  "distinct_tests": 26,
+  "total_test_invocations": 26,
+  "failures": 0,
+  "admitted_scope": "Uniform finite-cutoff tails; exact complete signed first jets and their scoped bounds; shrinking microscopic E_R endpoint; conditional square-root recovery with an OPEN low-core premise.",
+  "reused_immutable_primitives": [
+    "check_fractional_prime_rh_bridge_052.Meter/_rational/_expect"
+  ],
+  "available_apis": [
+    "verify_tail_bound(request,certificate,meter=None)",
+    "verify_first_jet(request,certificate,meter=None)",
+    "verify_low_core_recovery(request,certificate,meter=None)",
+    "verify_recovery(request,certificate,meter=None)",
+    "verify_low_core_recovery_schema(request,certificate,meter=None)",
+    "verify_microscopic_bound(request,certificate,meter=None)"
+  ]
+}

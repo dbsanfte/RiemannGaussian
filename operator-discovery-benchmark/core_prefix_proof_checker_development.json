@@ -1,0 +1,39 @@
+{
+  "schema": "core-prefix-proof-checker-development-v1",
+  "tests": 2,
+  "success": true,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 0.02015300199855119,
+  "charged_operations": 18215,
+  "peak_live_cells": 6646,
+  "maximum_rational_bits": 13,
+  "memory_limit_bytes": 536870912,
+  "operations_limit": 50000000,
+  "elapsed_limit_seconds": 180,
+  "no_numerical_source_or_study_read": true,
+  "edits_stopped": true,
+  "operations": 108857,
+  "runs": [
+    {
+      "returncode": 1,
+      "operations": 90642,
+      "tests": 12,
+      "elapsed_seconds": 0.09775335001177154
+    },
+    {
+      "returncode": 0,
+      "operations": 18215,
+      "tests": 2,
+      "elapsed_seconds": 0.020155446021817625
+    }
+  ],
+  "initial_failures_retained": {
+    "failures": 2,
+    "errors": 0,
+    "descriptions": [
+      "Expected15 expanded pieces, initially asserted18",
+      "Atom-size tamper initially assigned correct size1"
+    ]
+  }
+}

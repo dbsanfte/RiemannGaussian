@@ -1,0 +1,90 @@
+RENEWAL SHIFT STRUCTURAL CANDIDATE STUDY -- 9 October 2026
+
+Objective: find full signed arithmetic estimates with a rigorous RH bridge.
+The previous complete product candidate remains a numerical lead, not a
+theorem. This study changes the operator language, not its fitted constants.
+
+Start Q_empty(s)=1/zeta(s); append a positive rational b by replacing Q(s)
+with Q(s)/Q(s+b). The word is a nondecreasing multiset of1..4 shifts, each
+canonical rational, total<1, and common denominator<=24. Compile every
+subset shift and merge its exact integer zeta exponent. Reordering commutes.
+The local prime recurrence is Q_p=1-P_p,
+ P_new(z)=[P_p(z)-P_p(p^(-b)z)]/[1-P_p(p^(-b)z)].
+Positivity/unit mass are theorem-backed local properties; neither implies
+the global moment premise. Prime and composite coefficients remain complete.
+
+Enumerate all125 words of lengths1..4 over
+{1/12,1/6,1/4,1/3,5/12}, including repeats. Store every compiled stencil,
+normalization and rejection. Pilot numerical eligibility requires total<1
+and every merged positive zeta exponent exactly1, giving simple real poles.
+There are27 eligible words (5,10,9,3 by length); rejected words retain their
+exact reasons. An admitted repeat/collision word can have negative exponent
+of magnitude2; no negative factors or canceled-subset provenance are dropped.
+
+For L=product b_i, evaluate (Q_B-1)/L. The zero-shift normalization prevents
+trivial scalar shrinkage. Its fixed-index derivative limit is
+-Lambda(n)*(log n)^(length-1), not a prime-tuple convolution. At finite
+positive shifts, all composites and repeated prime powers are retained.
+
+For every merged positive exponent at shift t, subtract its exact smooth
+term R_t*x^(1-t)/(1-t), where
+ R_t=L^-1 product_{r!=t} zeta(1-t+r)^(c_r).
+All main terms, their signs, and the index1 subtraction are exact. Repeated
+or higher real poles are rejected by this numerical backend, not mislabeled
+as false operators. No numerical fit supplies any operator coefficient or
+main term. No historical novelty claim is made.
+
+The whole energy is X^-2 sum_{X<=n<2X}J_B(n)^2. The fixed baseline is the
+complete prefix of mu-delta1 for every word: all words have unshifted zeta
+pole order1 and no zero-unit product delay. Absolute envelopes include every
+coefficient and main-term channel, but their ratios do not drive selection.
+
+Train X=96,192,384,640. Validation X=896,1280,1792,2560. Horizon5119.
+Fit rational ceilings for E(X)<=C_q X^(1/q), q=2,3,6,12, on actual-mu
+training only, recording constants before validation. Numerical admission
+requires all16 validation growth gates and E<=0.95 E_baseline on all4
+validation blocks. Interval-uncertain inequalities fail admission.
+
+Select one challenger per word length by fewer failed growth gates, lower
+worst full-energy ratio, then id. A challenger is not automatically an
+admitted numerical lead. Retain all measurements and rejections.
+
+Final fixed scales X=73728,114688, complete horizon229375 for all sources.
+These blocks extend beyond the previous shifted-quotient study's complete
+horizon. Source data overlap prior research and are not called concealed
+or statistically independent data. No final outcome changes this study.
+
+Apply the SAME shift word to three base Dirichlet sources:
+ mu: F=1/zeta;
+ one: F=zeta;
+ partial_prime_13: multiplicative squarefree coefficient, prime sign negative
+ for p<=13, positive otherwise; F=zeta(s)/zeta(2s) times finite Euler factors.
+This is a different control substitution from the old increment-product
+study. Every source keeps the actual-zeta normalizer. Both controls retain
+a simple positive pole at1, which proves all-scale failure regardless of
+finite success. Their failure is not by itself new prime-specific information.
+
+Producer:128-bit Arb, logarithmic local coefficient recurrence followed by
+multiplicative reconstruction. Cache at most4 complete positive root arrays
+per source workspace, with all allocations and computations charged.
+Checker:192-bit Arb, independent compiled rational Euler-factor expansion
+and factorization. It must retain every local factor and all smooth terms.
+An n^(1/common_denominator) root supplies all exact monomial powers within
+an evaluation; shared arithmetic is charged once when actually computed.
+
+One complete owned development suite per implementation, affected tests
+after fixes only, then one combined frozen suite. Independent checker verifies
+all discovery and final blocks, baselines, and exact normalizer channels.
+Required interval radius<=2^-70*(1+abs(midpoint)) and overlap; no loose-ball
+acceptance. Frozen source bytes are compared directly, with no hashes.
+
+Resource limits:1000 million charged operations including development,
+calibration, discovery, final work and audit;7200 seconds;16GiB aggregate,
+at most4 processes with4GiB per process;3 source workers in parallel.
+Real roots/powers cost64 units, zeta evaluations256, ordinary arithmetic
+is additionally charged. Keep every spent operation and every checkpoint.
+No retries, unchanged-suite reruns or cap resets. Preserve incomplete work.
+
+All numerical leads go to analytical review with complete signed remainder
+terms. Uniform signed bound, RH, finite-prefix inverse, and novelty flags
+stay false unless their actual full proofs are established and reviewed.

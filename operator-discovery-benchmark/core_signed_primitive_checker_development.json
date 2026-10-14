@@ -1,0 +1,66 @@
+{
+  "schema": "core-signed-primitive-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_signed_primitive_search"
+      ],
+      "returncode": 0,
+      "operations": 13499826,
+      "operations_kind": "measured_meter",
+      "test_count": 13,
+      "elapsed_seconds": 10.864228021993767,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_signed_primitive_search operations=13499826 elapsed_seconds=10.722314451006241\n",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 10.722s\n\nOK\n",
+      "max_rss_kib": 38924
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_signed_primitive_search.IndependentSignedPrimitiveTests.test_prime_bank_meter_compatibility_preserves_rational_size_guard"
+      ],
+      "returncode": 0,
+      "operations": 1706,
+      "operations_kind": "measured_meter",
+      "test_count": 1,
+      "elapsed_seconds": 0.17245653900317848,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_signed_primitive_search operations=1706 elapsed_seconds=0.004806414013728499\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.004s\n\nOK\n",
+      "max_rss_kib": 34912,
+      "scope": "focused prime-bank meter interface and rational size regression"
+    }
+  ],
+  "operations": 13501532,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368,
+    "termination_grace_seconds": 20
+  },
+  "edits_stopped": true,
+  "actual_numeric_source_reads": 0,
+  "prior_suites_run": 0,
+  "wrapper_tests": "synthetic ancestry boundary isolated; real algebra, costs, rational certificates and full feedback preservation audited",
+  "external_failures": [
+    {
+      "artifact": "core-signed-primitive-results/pilot-001/terminal_failure.json",
+      "RH_proved": false,
+      "development_operations": 14156524,
+      "error": "'Meter' object has no attribute 'number'",
+      "error_type": "AttributeError",
+      "operations": 14802301,
+      "status": "incomplete",
+      "whole_signed_bound_proved": false,
+      "accounting": "preserved root pilot accounting; not added again to owned development operations",
+      "correction": "replace mandatory meter.number with local bit-length validation and common meter.charge"
+    }
+  ],
+  "correction_audit": "new checker uses only charge; inherited rational parser has an optional number() capability check"
+}

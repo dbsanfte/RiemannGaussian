@@ -1,0 +1,196 @@
+INDEPENDENT AUDIT OF JOINT REMAINDER MOMENT REVIEW 018
+
+Disposition
+-----------
+The proposed below-half-line Mellin/L2 component rule is sound under the
+explicit unconditional fourth-moment provider and the centering premises
+listed below. The proof gives a uniform finite constant, without evaluating
+that constant or any actual arithmetic coefficient. It supplies no estimate
+for the complete signed core and no RH conclusion.
+
+Only this new audit is written. No frozen source, checker, result or receipt
+is changed. No tests, arithmetic experiments, source tables or hashes are run.
+The next executable stage must distinguish supplied analytical rules from
+generated parameter choices, bound certificates and exact source partitions.
+
+1. Moment provider and independently checked exponent budget
+-----------------------------------------------------------
+The imported fact is the unconditional fourth-moment upper bound
+ integral_0^Y |zeta(1/2+it)|^4 dt <= B4*Y*(1+log Y)^4,
+with one fixed finite B4 and every Y>=2. The primary research source read
+for this audit is Bettin, Bui, Li and Radziwill, A quadratic divisor problem
+and moments of the Riemann zeta-function:
+ https://arxiv.org/html/1609.02539v1
+Its introduction records the classical fourth-moment result; Theorem 1.1
+with constant Dirichlet polynomials and zero shifts also supplies a stronger
+smoothed statement. Ingham's original bibliographic reference is
+ https://doi.org/10.1112/plms/s2-27.1.273
+The original full proof was not accessible here. No twisted short-polynomial
+length theorem, conjectural higher moment, RH or Lindelof premise is imported.
+The functional equation reference used by the reviewed proof is
+ https://dlmf.nist.gov/25.4.E2
+
+Off-critical fourth moments follow without an additional arithmetic theorem:
+remove the entire principal part of zeta(s)^2 at1, multiply by a Gaussian
+centered on the dyadic height, and apply the analytic L2 three-lines theorem
+between real parts1/2 and2. The left boundary is controlled by the provider
+and all Gaussian tails; the right by the absolutely convergent series. The
+Gaussian is bounded below on the requested dyadic interval. Restoring the
+principal part changes a fixed constant only. This is a strip-Hardy argument,
+not pointwise interpolation of already integrated quantities.
+
+Let m>=2,p>=0 be fixed integers, 0<u<1, theta=1-u and
+ 0<sigma<min(1/2,theta).
+On a height interval[Y,2Y], the functional equation contributes
+ Y^(m*(1-2sigma)) to |zeta(sigma+it)|^(2m). The off-critical
+fourth moment contributes Y*(1+log Y)^4. Elementary convexity for
+the extra2m-4 factors on real part1-sigma contributes
+ Y^((m-2)*sigma+(m-2)*epsilon).
+Convexity for |zeta(sigma+u+it)|^2 contributes
+ Y^(1-sigma-u+epsilon), and division by |s|^2 costs Y^(-2).
+The resulting DYADIC INTEGRAL exponent is therefore exactly
+ d=m-u-(m+3)*sigma+(m-1)*epsilon.
+The term with no zeta(sigma+it) factor has exponent
+ d0=-sigma-u+epsilon and must also be checked. These are integral
+exponents; an extra dyadic-length factor must not be added afterward.
+Strict d<0 and d0<0 absorb the fixed height-log degree and pay every
+positive and negative dyadic tail. Equality does not establish this rule.
+
+For1/2<=sigma<theta, the separate direct-fourth-moment branch has
+ d=(m-2)-u-(m-1)*sigma+(m-1)*epsilon.
+The below-half formula must not be extrapolated into this domain. All
+provider, convexity, functional-equation and compact-line constants depend
+only on fixed parameters and the imported B4, never on U or X.
+
+2. Full finite weights and removable-pole audit
+---------------------------------------------
+For A(n)=mu(n)1_(n<=U), c=sum_(d<=U)mu(d)/d and T=c*delta-A,
+ |A(sigma+it)|<=U^(1-sigma)/(1-sigma),
+ |T(sigma+it)|<=[2+1/(1-sigma)]U^(1-sigma).
+These bounds include the actual unit. In particular T(1)=c-1 as a
+coefficient need not vanish; it is the Dirichlet value T_hat(1)=0 that
+removes the pole of E(s)=1+zeta(s)T(s) at1.
+
+For the complete function
+ F_U(s)=zeta(s+u)A(s)^p E(s)^m,
+the vertical squared finite-weight cost is
+ U^a, a=2*(p+m)*(1-sigma).
+Using |1+z|^(2m)<=2^(2m-1)*(1+|z|^(2m)) and rounding the smaller
+finite-weight power up to a is valid for every U>=1. This does not erase
+any signed term in the operator: the pole is removed in the FULL E factor
+before this upper bound. Expanding zeta powers and contour-shifting their
+individual principal parts independently would require further compensators.
+
+In sigma<=Re(s)<=2 the only possible remaining pole is the simple one
+at theta from zeta(s+u), with residue
+ M=A(theta)^p E(theta)^m.
+It may be removable if that residue vanishes. Division by s introduces
+no crossed pole because sigma>0. No reciprocal zeta factor, zero-free
+region or claim about individual source-term independence is needed.
+
+For m2 the earlier all-real-prefix hyperbola estimate
+ |P_(E^2)(t)|<=30U(1+log U)*sqrt(t)
+proves ordinary conditional convergence at theta2/3 after any fixed finite
+A^p convolution. Abel continuation identifies the value with
+A(theta)^p E(theta)^2; its whole tail is included. For m>=3 an analytic
+value E(theta)^m alone does NOT establish ordinary coefficient convergence.
+An executable certificate must either prove that separate premise or label
+its centering explicitly as an analytic residue. The current paid m2 case
+has the ordinary-moment premise.
+
+3. Gaussian Perron and global Mellin norm
+----------------------------------------
+Start on Re(s)=2, where the original coefficient Dirichlet series and
+Gaussian Perron integral are absolutely controlled. For fixed e>0 the
+multiplier exp(e*s^2) decays as exp(-e*t^2) on every vertical strip.
+Fixed-U polynomial growth makes both horizontal contour edges tend to zero.
+Crossing theta yields exactly
+ P_e(x)-(M/theta)*exp(e*theta^2)*x^theta
+   =(1/(2pi*i))integral_(sigma) F_U(s)exp(e*s^2)x^s ds/s.
+The point1 is removable;0 is not crossed. The multiplier is Gaussian
+smoothing of the COMPLETE staircase prefix in log x, not a prefix begun
+at the current block.
+
+The proved vertical L2 bound allows Mellin Plancherel. The multiplier
+converges to1 in that vertical L2 space by dominated convergence; inverse
+Mellin functions therefore converge in the physical weighted L2 space.
+Their almost-everywhere Gaussian limit identifies the limiting function
+ C(x)=P(x)-(M/theta)x^theta.
+Consequently the full integral over0<x<infinity with weight
+x^(-2sigma-1) is bounded by a fixed constant times U^a.
+Uniformity in U comes from the vertical norm, not from interchanging U
+with the fixed-U contour-height limit.
+
+For0<x<1 the function C(x) is explicitly -(M/theta)x^theta.
+This entire lower tail is integrable precisely because sigma<theta.
+It is already included in the global norm. The original coefficient
+sequence still vanishes below its actual unit; no fictional coefficient
+or deleted lower tail is introduced.
+
+4. Integer staircase, history-preserving channels and recovery
+-------------------------------------------------------------
+The discrete centered prefix is
+ C_n=P(n)-(M/theta)n^theta,
+whose coefficient subtraction is exactly (M/theta)*J_theta,
+ J_theta(n)=n^theta-(n-1)^theta, J_theta(1)=1.
+On[n,n+1), its difference from C(x) is bounded by
+2|M|x^(theta-1). Comparing the cell weights gives the safe constants8/32
+in Review018 for sigma<1/2. For the generic above-half domain sigma<theta<1
+use16/64 instead; this clarification has been incorporated into Review018.
+The correction is globally summable, including n1, because
+2+2sigma-2theta>0.
+
+Also |M|^2 is bounded by a fixed multiple of
+U^(2*(p+m)*(1-theta)), which is at most U^a because sigma<theta.
+Thus the integer weighted norm has the same U exponent as the contour norm.
+Restricting the GLOBAL sum to[X,2X) gives normalized block energy
+ O(U^a*X^(2sigma-1)), EVERY integer U,X>=1.
+The same fixed U applies to the child2X; its coefficient array and residue
+must not be rebuilt using a different cutoff inside one recovery identity.
+
+For a polynomial channel q(t)=sum_j q_j*t^j and eta>=0, discrete Abel
+summation of the centered coefficient retains every earlier C_k. With
+L_n=log(2n), the internal difference is bounded by
+ P1/(k*L_n), P1=sum_j j*|q_j|, while the endpoint costs
+ P0=sum_j |q_j|. In weighted l2(n^(-2sigma-1)), Schur's test bounds
+the positive Hardy operator sum_(k<n)|C_k|/k by1+1/sigma.
+The resulting valid rational channel norm factor is
+ 2^ceil(eta)*[P0+2*(1+1/sigma)*P1].
+Its square must be summed over the full channel vector. Orthogonal cell
+averaging contracts the block l2 norm, so arbitrary complete cell partitions
+are covered. There is no restarted history and no uncharged log-degree loss.
+
+The exact source still has its opposite J_theta drift, every other E/C/One
+binomial companion, the inherited paid vector, all channel and transport
+routes, and the exact -e. A newly paid centered component does not prove any
+bound on those remaining signed terms or their correlations. Source scalar
+and inverse coefficient multiply the component constant through their square.
+
+5. What the executable search may legitimately conclude
+------------------------------------------------------
+After vertical convergence and centering are proved, the generated energy
+exponent at U<=N^alpha, N=4X-1<4X, is
+ 2sigma-1+2alpha*(p+m)*(1-sigma).
+The fixed comparison factor4^(alpha*a) must stay in the symbolic constant.
+For the actual p2,m2,alpha1/24,u1/3, the simultaneous strict conditions
+reduce to1/3<sigma<2/5, with an additional positive epsilon smaller than
+the vertical convergence margin. This is a feasibility region derived from
+the supplied rules, not a nominated detector choice.
+
+For m3 the below-half vertical threshold is sigma>4/9, where the recovered
+energy is already positive; m>=4 has no below-half admissible line. The
+separate above-half family does not rescue the actual growing-cutoff target.
+An open ordinary moment for higher powers must never be changed to proved
+merely because their analytic residue is easy to write.
+
+The detector may now enumerate exact rational lines and epsilon margins,
+compare moment-provider branches and certified costs, select a valid paid
+component, and rebuild the COMPLETE signed residual obligation. Analysts
+have supplied the theorem language and external moment provider. The
+machine-generated selection and certificate remain subject to an independent
+schema, arithmetic, source-partition and proof-status checker.
+
+No numerical universal constant is supplied here. The proof establishes
+existence of one fixed finite constant uniformly in U,X. A later numeric
+constant, source experiment or claim that the full core is bounded requires
+its own evidence. This audit supports the reusable component theorem only.

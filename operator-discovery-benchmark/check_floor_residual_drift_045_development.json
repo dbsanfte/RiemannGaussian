@@ -1,0 +1,28 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_floor_residual_drift_045"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_drift_045 operations=731899 checker_operations=698665 fixture_operations=33234 elapsed_seconds=0.042064793000463396\n",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.042s\n\nOK\n",
+      "operations": 731899,
+      "elapsed_seconds": 0.124699866049923,
+      "tests": 18,
+      "peak_rss_KiB": 28908
+    }
+  ],
+  "operations": 731899,
+  "edits_stopped": true,
+  "source_arrays_read": false,
+  "additional_norms_evaluated": false,
+  "old_suites_run": false,
+  "tests": 18,
+  "review": "Independent signed moments, exponential-convolution numerator identity, exact integer ceiling and dyadic twist replay, all-index scalar remainder bounds, ordinary-Mobius source sign and complete cell-column rate admission; no whole residual norm or convergence inference."
+}

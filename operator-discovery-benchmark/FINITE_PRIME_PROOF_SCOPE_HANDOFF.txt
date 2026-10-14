@@ -1,0 +1,95 @@
+FINITE PRIME PROOF-SCOPE CALIBRATION042: VERIFIED REJECTION, ACTUAL BOUND OPEN
+
+Authoritative continuation
+
+  finite-prime-obstruction-results/pilot-001/next_search_input.json
+  finite-prime-obstruction-results/pilot-001/report.json
+  finite-prime-obstruction-results/pilot-001/proof_scope_feedback.json
+
+This follows CENTERED_MOBIUS_BOUND_HANDOFF.txt and retains its full041/040 and
+earlier original-F obligations. The active signed-control goal and RH remain
+OPEN. No actual covariance hypothesis has acquired a uniform proof.
+
+What changed
+
+The041 detector generated216 covariance programs. Two of five selected/control
+programs survived21 finite interval tests each, but both also passed after
+replacing their signed cross contributions by absolute magnitudes. The saved
+mechanism diagnostic therefore records no observed need for their cross-term
+signs. It does not discard the leads or change their frozen selection.
+
+042 adds an automatic certificate generator and independent verifier for a
+supplied adversarial construction. It rejects proof rules using only a fixed
+finite set of prime laws, coefficient magnitude, unit and an externally imposed
+center. It is a negative calibration supplied by the programmer, not an operator
+or proof independently invented by the detector. No new source array was built.
+
+The verified obstruction
+
+For any finite prime set P, let u be multiplicative, with u(1)=1 and
+ u(p^e)=(p^-r-1)p^(-r(e-1)) for p in P,e>=1;
+ u(p^e)=1 for p outside P,e>=1.
+Every registered valuation law and |u(n)|<=1 holds. Put theta=1-r,
+c=(delta-q delta_q)*u and J=prefix(c)-kappa*x^theta, using the actual positive
+scalar formula kappa=(1-q^r)/(theta*zeta(theta)). Its lower/upper bounds are
+checked separately, not fitted to observations.
+
+Exact local algebra gives u=One*h, with registered h generating function
+(1-t)^2/(1-p^-r t). Its infinite local absolute sum is4-2p^-r<=4, so
+||h||1<=4^|P|. For g=(delta-q delta_q)*h, the harmonic sum sum g(d)/d vanishes
+and ||g||1<=L=(q+1)4^|P|. The FULL identity
+ prefix(c)(x)=sum_(d>=1)g(d)[floor(x/d)-x/d]
+includes all d>x terms and proves |prefix(c)(x)|<=L for every real x>=0.
+Thus J has an uncancelled negative main term. For a certified0<k<=kappa,
+ E_J(X)>=k^2/4 * X^(1-2r)
+for every integer X beyond an exact dyadic threshold k X^theta>=2L.
+The positive exponent contradicts the fake model's purported subpower bound.
+
+The published pilot binds r1/3,q2,k1/10,K1 to041. Independent admission gave:
+ registered P        L       threshold X       first missing prime
+ {2}                12           4096                    3
+ {2,3}              48          32768                    5
+ {2,3,5,7,11}     3072       16777216                   13
+All three yield E_J(X)>=X^(1/3)/400 in their declared all-integer range.
+These are exact negative-model theorems, not simulated coefficient fits.
+
+Scope that must remain explicit
+
+This fake differs from the real source at the first unregistered prime. Its
+global Dirichlet series after periodic dilation is
+ (1-q^(1-s))*zeta(s)*H_P(s),
+where H_P is a finite product. It has NO theta pole. It therefore does not
+retain the true source's global identity or the residue relation that makes
+the analytic centering scalar its genuine main term. Stage041 already includes
+the complete universal source laws;042 is no counterexample to that binding,
+no caught false proof in041, and no refutation of zeta or RH.
+
+When P contains every prime<=H, fake and actual coefficients and centered
+prefixes agree exactly through H. Therefore finite checks supported there
+cannot distinguish them. A late growth threshold alone would not imply such
+agreement. The arbitrary finite-P theorem is separate from executable resource
+limits on how many primes or bits one certificate can contain.
+
+A finite symbolic argument using an arbitrary prime or the complete source
+identity is not a finite-prime-only argument. That is the kind of arithmetic
+information the next bound search must actually use. Merely attaching the
+correct source definition to a numerical inequality does not prove the bound.
+Nor does this obstruction rule out scale-dependent prime partitions with a
+uniformly controlled remainder: its countermodel set P is fixed across scales.
+The existing all-prime logarithmic bank and its open signed forcing are already
+recorded in CORE_SIGNED_WORK_HANDOFF.txt; do not rerun them as new discoveries.
+
+Validation and resource record
+
+The producer and independent verifier have28 distinct focused tests, all passed
+on their sole owned runs. They cover exact infinite local tails, complete floor
+tails, finite-prefix aliasing, parameter denominator257, composite periods,
+minimal exact thresholds, resource guards, and forged source/RH claims.
+Producer tests:80,359 operations. Independent checker tests plus fixtures:
+488,497 operations. No old suite or numerical source experiment was repeated.
+
+The published042 pilot took0.0126seconds:2,962 producer and29,176 checker
+operations, zero coefficient observations. Source snapshots are direct copies,
+with no hashes. The independent checker uses Arb only to license the scalar.
+The report keeps actual-source-bound, actual-source-refutation and RH flags
+false. Conditional041 recovery and finite numerical leads remain unchanged.

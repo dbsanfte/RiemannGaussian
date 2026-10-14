@@ -1,0 +1,74 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "development_operations": 345184,
+  "discovery_operations": 210578,
+  "elapsed_seconds": 2.8215274490066804,
+  "exact_conservation_dimension": 2,
+  "finite_constants_refitted": false,
+  "fresh_source_tables_or_kernel_integrals": false,
+  "hashes_used": false,
+  "independent_checker_operations": 26432,
+  "independently_verified_basis_identities": 2,
+  "new_frozen_source_count": 10,
+  "old_suites_or_studies_replayed": false,
+  "operations_are_instrumentation_units_not_cpu_instructions": true,
+  "peak_rss_kib": 704032,
+  "positive_copy_certificates": 5,
+  "primitive_vectors_examined": 1199,
+  "prior_frozen_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15,
+    16,
+    8
+  ],
+  "prospective_algorithm_bytes": 15824896,
+  "saved_concrete_plans_audited": 30,
+  "saved_copy_diagnostic_operations": 10218147,
+  "saved_scales": [
+    4096,
+    7249,
+    8192,
+    13803,
+    16384
+  ],
+  "selected_weights": [
+    [
+      2,
+      1,
+      1,
+      3
+    ],
+    [
+      3,
+      1,
+      2,
+      4
+    ],
+    [
+      3,
+      2,
+      1,
+      5
+    ]
+  ],
+  "status": "UNIFORM_FINAL_COPY_LEFTOVERS_PROVED_PAIRED_COST_OPEN",
+  "uniform_final_copy_leftover_bound_proved": true,
+  "uniform_full_source_bound_proved": false,
+  "uniform_paired_cost_bound_proved": false,
+  "weight_vectors_examined": 1296
+}

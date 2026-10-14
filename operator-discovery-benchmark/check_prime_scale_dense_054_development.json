@@ -1,0 +1,38 @@
+{
+  "owner": "independent Sol6.1 checker /root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_prime_scale_dense_054",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 18,
+      "stdout": "SYNTHETIC_WORK module=test_check_prime_scale_dense_054 operations=4849898\n",
+      "stderr": "test_actual_parent_scope_only (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_arbitrary_fractional_denominator (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_charge_only_pipeline_meter (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_context_incremental_new_audit_cache (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_drop_or_forge_divisor_source_atom (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_exact_square_and_normalization (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_external_verified_flag_or_dataclass_not_authority (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_finite_pass_not_a_counterexample (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_independent_actual_atom_admission (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_ordinary_mu_and_full_floor_identity (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_prospective_coverage_and_work_guards (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_raw_term_endpoint_and_signed_crosses (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_request_and_index_binding (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_source_availability_not_authority (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_typed_flags_and_no_rh_claim (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_unit_and_complete_support (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_unnormalized_source_interval_divided_by_alpha (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\ntest_wrong_rounding_lattice (test_check_prime_scale_dense_054.DenseWitnessTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.016s\n\nOK\n",
+      "operations": 4849898,
+      "elapsed_seconds": 0.15572676598094404,
+      "peak_rss_KiB": 41840,
+      "operations_marker_present": true
+    }
+  ],
+  "operations": 4849898,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "edits_stopped": true,
+  "distinct_tests": 18,
+  "test_invocations": 18,
+  "scientific_source_observations": 0,
+  "old_test_suites_run": 0,
+  "reused_primitives": "frozen053 independent mu/atom/source primitives, request/type helpers; fresh new-witness source prefixes only",
+  "proof_scope": "strict finite counterexample to one registered C2 eta0 inequality; no RH refutation or all-other-rate result",
+  "resource_caps": {
+    "operations": 50000000,
+    "seconds": 180,
+    "address_space_bytes": 1073741824
+  }
+}

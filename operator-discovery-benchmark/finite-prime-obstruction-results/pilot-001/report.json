@@ -1,0 +1,180 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "actual_source_bound_proved": false,
+  "actual_source_coefficient_observations": 0,
+  "actual_source_refuted": false,
+  "certificates": [
+    {
+      "checker_operations": 9496,
+      "path": "certificate_001.json",
+      "primes": [
+        2
+      ],
+      "producer_counts": {
+        "operations": 750,
+        "peak_integer_bits": 25
+      },
+      "verification": {
+        "RH_proved": false,
+        "RH_refuted": false,
+        "actual_source_refuted": false,
+        "all_041_covariance_programs_fail_for_this_model": true,
+        "analytic_scalar_bounds_independently_verified": true,
+        "covariance_failure_scope": "conditional Haar implications use retained increments/unit; actual-source laws not satisfied",
+        "existing_041_source_binding_refuted": false,
+        "fake_energy_lower": {
+          "constant": "1/400",
+          "domain": "EVERY integer X>=threshold",
+          "log_power": 0,
+          "power": "1/3"
+        },
+        "finite_prime_only_rule_obstructed": true,
+        "first_missing_prime": 3,
+        "registered_prime_count": 1,
+        "retains_actual_source_global_residue_identity": false,
+        "schema": "finite-prime-obstruction-verification-v1",
+        "source_coefficient_observations": 0,
+        "subpower_counterexample_epsilon": "1/6",
+        "threshold": "4096",
+        "uniform_fake_prefix_bound": "12",
+        "verified": true
+      }
+    },
+    {
+      "checker_operations": 9633,
+      "path": "certificate_002.json",
+      "primes": [
+        2,
+        3
+      ],
+      "producer_counts": {
+        "operations": 888,
+        "peak_integer_bits": 31
+      },
+      "verification": {
+        "RH_proved": false,
+        "RH_refuted": false,
+        "actual_source_refuted": false,
+        "all_041_covariance_programs_fail_for_this_model": true,
+        "analytic_scalar_bounds_independently_verified": true,
+        "covariance_failure_scope": "conditional Haar implications use retained increments/unit; actual-source laws not satisfied",
+        "existing_041_source_binding_refuted": false,
+        "fake_energy_lower": {
+          "constant": "1/400",
+          "domain": "EVERY integer X>=threshold",
+          "log_power": 0,
+          "power": "1/3"
+        },
+        "finite_prime_only_rule_obstructed": true,
+        "first_missing_prime": 5,
+        "registered_prime_count": 2,
+        "retains_actual_source_global_residue_identity": false,
+        "schema": "finite-prime-obstruction-verification-v1",
+        "source_coefficient_observations": 0,
+        "subpower_counterexample_epsilon": "1/6",
+        "threshold": "32768",
+        "uniform_fake_prefix_bound": "48",
+        "verified": true
+      }
+    },
+    {
+      "checker_operations": 10047,
+      "path": "certificate_003.json",
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "producer_counts": {
+        "operations": 1324,
+        "peak_integer_bits": 49
+      },
+      "verification": {
+        "RH_proved": false,
+        "RH_refuted": false,
+        "actual_source_refuted": false,
+        "all_041_covariance_programs_fail_for_this_model": true,
+        "analytic_scalar_bounds_independently_verified": true,
+        "covariance_failure_scope": "conditional Haar implications use retained increments/unit; actual-source laws not satisfied",
+        "existing_041_source_binding_refuted": false,
+        "fake_energy_lower": {
+          "constant": "1/400",
+          "domain": "EVERY integer X>=threshold",
+          "log_power": 0,
+          "power": "1/3"
+        },
+        "finite_prime_only_rule_obstructed": true,
+        "first_missing_prime": 13,
+        "registered_prime_count": 5,
+        "retains_actual_source_global_residue_identity": false,
+        "schema": "finite-prime-obstruction-verification-v1",
+        "source_coefficient_observations": 0,
+        "subpower_counterexample_epsilon": "1/6",
+        "threshold": "16777216",
+        "uniform_fake_prefix_bound": "3072",
+        "verified": true
+      }
+    }
+  ],
+  "checker_operations": 29176,
+  "development_receipts": {
+    "check_finite_prime_obstruction_042_development.json": {
+      "edits_stopped": true,
+      "old_suites_rerun": false,
+      "operations": 488497,
+      "owner": "/root/prefix_proof_checker",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_finite_prime_obstruction_042"
+          ],
+          "elapsed_seconds": 0.14824746700469404,
+          "operations": 488497,
+          "peak_rss_KiB": 28016,
+          "returncode": 0,
+          "stderr": "test_actual_source_and_RH_refutation_claims_fail_closed (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_composite_period_and_genuine_denominator257 (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_energy_cost_quantifier_and_ordinary_series_scope_protected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_exact_finite_alias_and_explicit_missing_prime_failure (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_exact_minimal_threshold_and_positive_power_near_boundary (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_external_meter_requires_only_charge (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_forged_exact_power_witness_and_boolean_exponent (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_full_floor_identity_and_essential_d_greater_x_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_harmonic_cancellation_unit_and_full_real_floor_domain_protected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_local_convolution_coefficients_and_exact_infinite_l1_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_malformed_parameters_and_composite_registered_value (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_missing_prime_witness_must_be_checked_and_first (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_registered_and_empty_models_have_correct_limited_scope (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_underpriced_and_nonminimal_thresholds_rejected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_underpriced_norm_and_wrong_infinite_local_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_unit_and_global_One_convolution_from_independent_factorization (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_wrong_scalar_lower_upper_rejected_independently (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.084s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_finite_prime_obstruction_042 operations=488497 elapsed_seconds=0.084719 checker_operations=456533 fixture_operations=31964\n",
+          "tests": 17
+        }
+      ],
+      "scope": "synthetic rational local parameters and analytic scalar certificate arithmetic; no actual coefficient arrays",
+      "source_coefficient_observations": 0
+    },
+    "finite_prime_obstruction_042_development.json": {
+      "actual_normalization_evaluated": false,
+      "actual_source_generated": false,
+      "cumulative_operations": 80359,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.04161487001692876,
+          "errors": 0,
+          "failures": 0,
+          "operations": 80359,
+          "peak_integer_bits": 3855,
+          "returncode": 0,
+          "source_exposure": "synthetic injected rational locals and formal exact certificates only",
+          "tests": 11
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "schema": "finite-prime-obstruction-development-v1"
+    }
+  },
+  "elapsed_seconds": 0.012574610998854041,
+  "existing_041_source_binding_refuted": false,
+  "independent_scalar_normalization_checked": true,
+  "parent_covariance_bounds_proved": 0,
+  "producer_operations": 2962,
+  "source_studies_rerun": 0,
+  "status": "FINITE_PRIME_PROOF_SCOPE_OBSTRUCTION_VERIFIED_ACTUAL_BOUND_OPEN",
+  "uniform_scope_obstruction_verified": true
+}

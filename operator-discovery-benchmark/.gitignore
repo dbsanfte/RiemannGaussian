@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.py[cod]
+*.log
+/*-results/
+/results/
+/literature/
+/*_obligation.json
+/mobius_arithmetic_bank_086_pause.json

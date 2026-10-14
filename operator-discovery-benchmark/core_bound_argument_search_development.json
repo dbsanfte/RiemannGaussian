@@ -1,0 +1,39 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_bound_argument_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=22202\n",
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.028s\n\nOK\n",
+      "operations": 22202,
+      "elapsed_seconds": 0.12490060200798325
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_bound_argument_search.BoundArgumentTests.test_external_goal_dictionary_cannot_bypass_scope_validation",
+        "test_core_bound_argument_search.BoundArgumentTests.test_actual_component_generates_useful_auxiliary_and_unpaid_bridge"
+      ],
+      "returncode": 0,
+      "stdout": "operations=700\n",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n",
+      "operations": 700,
+      "elapsed_seconds": 0.09622063499409705,
+      "reason": "new input-scope guard; regression plus affected complete-component expansion"
+    }
+  ],
+  "operations": 22902,
+  "actual_arithmetic_observations": 0,
+  "numeric_cache_reads": 0,
+  "edits_stopped": true
+}

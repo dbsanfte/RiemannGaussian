@@ -1,0 +1,352 @@
+HIGHER PRIME MOMENT SHEARS: UNIFORM HEIGHT, ROOTS, AND A LIMIT TRAP
+7 October 2026. Written mathematical proofs with independent exact/Arb
+checks. These are not theorem-prover certificates or established historical
+novelty. This is a compound extension of the prime logarithmic shear.
+
+1. THE GRAMMAR AND THE ARITHMETIC OPERATOR
+
+Use ordinary Dirichlet convolution *, with unit delta_1. For f(1)=1 let
+h=LOG_* f. LOG and EXP are coefficient-local: a product of k indices
+>=2 cannot contribute at n if 2^k>n. For a prime p, h(p)=f(p).
+
+The expanded grammar permits an order m, m+1 multiplicative faces,
+integer weights, and exact moment constraints. Set w_0=1 and require
+sum_(j=0..m) w_j j^k=0, k=0,...,m-1. The Vandermonde system has one
+solution, w_j=(-1)^j binomial(m,j). It is uniquely determined by the
+zero of order m at z=1 of the polynomial sum w_j z^j. The first nonzero
+moment is (-1)^m m!. The detector searches bounded integer weights at
+m=2,4, holds out the final constraint, and checks higher orders 6..16
+with exact rational elimination versus independently generated Pascal
+rows. Recovery of these weights calibrates a known operation.
+
+A separate six-model mask grammar tests q-p>=g, g=1,...,6. Finite
+half-line edge envelopes through primes 127, with held-out cutoff 251,
+select g=2 as the least restrictive mask whose envelope is below one.
+This selection uses floating discovery values, independently rechecked
+with Arb for every eligible edge. Unselected masks have no universal
+domain certificate from those finite observations. Section 4 supplies
+the separate universal theorem for the selected g=2. A 240-model
+index-scale grammar A*B^m, A=1..16 and B=2..16, trains on the actual
+minimal images at m=2,4,6 and uniquely selects A=4,B=6; held-out orders
+8,12,16 pass. The universal minimum-image proof below is what licenses
+the resulting coefficientwise limit, not the fit itself.
+
+For EVEN m>=2 put r=m+2 and define the symmetric bilinear prime kernel
+
+ J_m(h,k)=sum_(p<q prime, d=q-p>=2) (h(p)k(q)+h(q)k(p))/2
+             * sum_(j=0..m) (-1)^j binomial(m,j)
+                        delta_(p^(m-j) q^j d^(m+2)).
+
+The condition d>=2 is an arithmetic predicate. It removes just the prime
+edge (2,3), because all primes greater than two are odd. No zero ordinate
+is used to choose this mask. Every image is composite. Its minimum face
+p^m d^(m+2) is larger than q: when d=1 in the unmasked version, p^m>p+1;
+when d>=2, d^(m+2)p^m>p+d. Thus only finitely many input primes can
+contribute at any fixed coefficient, including for infinite formal inputs.
+
+Define A_(m,t)(h)=h+t J_m(h,h) and S_(m,t)=EXP_* A_(m,t) LOG_*.
+Prime projection pi satisfies pi J_m=0. Consequently
+
+ A_(m,t) A_(m,u)=A_(m,t+u),   S_(m,t) S_(m,u)=S_(m,t+u),
+ S_(m,t)^(-1)=S_(m,-t).
+
+These identities hold on all normalized formal inputs, not just zeta.
+They also follow directly from
+
+ S_(m,t)(f)=f * EXP_*(t J_m(pi f,pi f)),
+
+since multiplying by EXP of a composite-supported logarithm fixes the
+prime coefficients. The map is generally not a homomorphism for *.
+
+The smallest possible regularized image is n_0=4*6^m. Indeed, for p=2
+one has d>=3, hence p d>=6 and d^2>=9. For odd p>=3 one has d>=2,
+hence p d>=6 and d^2>=4, with equality only at p=3,d=2,q=5.
+Each subsequent face multiplies that image by (q/p)^j>1. Hence
+
+ S_(m,t)(f)(n_0)=f(n_0)+t f(3)f(5),
+ S_(m,t)(f)(n)=f(n) for n<n_0.
+
+In particular, S_(m,t) tends coefficientwise to the identity as even
+m tends to infinity, on every formal input. The sparse exact audit
+checks the first EXP coefficient by an independent Omega recurrence.
+It never truncates the second composition to a convenient index prefix.
+
+For an ordinary input root f^beta=EXP_*(beta h), the correction scales
+by beta^2, independently of the cancellation order m. For an OUTPUT
+root, the correction scales by beta. Thus
+
+ S_(m,t)(f^beta)=EXP_*(beta h+t beta^2 J_m(h,h)),
+ (S_(m,t)f)^beta=EXP_*(beta h+t beta J_m(h,h)).
+
+Mellin cancellation degree m must not be confused with input degree two.
+The exact ordinary EXP/LOG and root test at m=2 uses a full prefix of
+256; higher-order exact EXP tests are sparse coefficient queries.
+
+2. COMPLETE PRIME FIBRES AND SIGN SEPARATION
+
+For a prime pair p<q, gcd(p,d)=gcd(q,d)=1. At an interior face 0<j<m,
+the two endpoint valuations are exactly m-j and j, both smaller than
+r=m+2. Every prime divisor of d has valuation a multiple of r. Reducing
+the prime valuations of N modulo r therefore recovers the two endpoints
+and j; require their valuations to sum to m, take the exact r-th root
+of N/(p^(m-j)q^j), and check that it equals q-p>=2.
+
+At a diagonal face j=0 or m there is exactly one nonzero valuation
+residue, namely m, at an endpoint x. Require its FULL valuation to be m.
+Take d=(N/x^m)^(1/r); check both x-d and x+d for primality. These are all
+possible fibres. Diagonal fibres can aggregate; they must not be discarded
+as a failed unique-edge decoder. Any other residue pattern has no image.
+
+Because m and r are even, j even gives a square index and positive
+weight; j odd gives a nonsquare index and negative weight. All contributions
+at a fixed index have the same sign. Thus the absolute coefficient mass
+of the zeta-input correction, at real sigma in its convergence domain, is
+
+ B_m(sigma)=sum_(p<q,d>=2) d^(-(m+2)sigma)
+                                      (p^-sigma+q^-sigma)^m.
+
+The checker obtains coefficients by complete valuation reconstruction,
+not by importing the forward kernel. The finite prime-input profiles
+through 43 are explicitly finite-input profiles. Separate all-input
+prefixes through 8192 at m=2,4 check every encoded integer, including
+zero coefficients. Factorization sums repeated prime entries and checks
+reconstruction, including encoded indices greater than 2^64.
+
+3. THE ANALYTIC BRIDGE AND ITS TWO DOMAINS
+
+On zeta, pi LOG_* zeta has prime coefficients one. Therefore its
+correction is the ordinary Dirichlet series, initially on Re(s)>1/m,
+
+ R_m(s)=sum_(p<q,d=q-p>=2) d^(-(m+2)s)(p^-s-q^-s)^m.             (1)
+
+The identity follows from the finite binomial theorem, justified by
+absolute summability. Indeed B_m(sigma) is at most
+2^m (zeta(m sigma)-1)(zeta((m+2)sigma)-1) when sigma>1/m.
+This proves ordinary correction absolute convergence there.
+
+The PAIRED expression (1) has locally normal convergence on the larger
+domain Re(s)>1/(m+1). To prove this, on a compact set write sigma=inf Re(s)
+and T=sup |s|. For d<=p the integral identity gives
+
+ |p^-s-(p+d)^-s| <= T d p^(-sigma-1).
+
+The term is bounded by T^m p^(-m sigma-m) d^(m-(m+2)sigma).
+Summing integer d<=p and integer p in dyadic blocks gives the bound
+O(X^(2-(2m+2)sigma)) if the exponent of d is greater than -1.
+At exponent -1 there is just an extra logarithm; below -1 the d sum
+is bounded and the p sum already converges. For d>p, use
+2^m p^(-m sigma) q^(-(m+2)sigma); the same dyadic estimate works when
+m sigma<1, with a logarithm or bounded inner sum when m sigma>=1.
+These estimates are summable for sigma>1/(m+1), uniformly on compacts.
+The paired continuation equals the ordinary series on their overlap.
+
+Do not call paired continuation below 1/m ordinary coefficient
+convergence. The strict domains stated in the JSON need no prime-pair
+conjecture, PNT, sieve theorem, or endpoint evaluation. For context,
+their lower edges are sharp: a pair of separated prime intervals gives
+the paired obstruction below 1/(m+1) by PNT; a positive proportion of
+consecutive prime gaps are O(log X), giving the ordinary obstruction
+below 1/m. Neither sharpness statement is a numerical convergence test.
+
+On Re(s)>1, positive beta and any real fixed t have the full ordinary
+transform and output-root identities
+
+ S_(m,t)(zeta^beta)(s)=zeta(s)^beta exp(t beta^2 R_m(s)),
+ (S_(m,t)zeta)^beta(s)=zeta(s)^beta exp(t beta R_m(s)).           (2)
+
+Here LOG zeta is the Euler branch on Re(s)>1. The full ordinary series
+has absolute abscissa exactly 1, for positive beta: the convolution
+exponential absolute majorant proves convergence to the right; the
+nonzero correction, holomorphic at s=1, preserves the zeta^beta pole
+growth on approaching 1 from the right. Absolute convergence at 1
+would bound that approach, contradicting the pole. Analytic continuation
+of a factor in (2) is not convergence of the full ordinary series.
+
+4. A UNIFORM-HEIGHT BOUND ON THE WHOLE CRITICAL RIGHT HALF-PLANE
+
+For any sigma>0 put theta_(p,q)(sigma)=(p d)^-sigma+(q d)^-sigma.
+Among the regularized prime edges the UNIQUE maximum is (3,5), giving
+
+ rho(sigma)=6^-sigma+10^-sigma.                               (3)
+
+For p=2, q>=5, the maximum is (2,5), giving 6^-sigma+15^-sigma.
+For odd p>=3, d>=2 and both p d, q d increase with p,d, so (3,5)
+maximizes. Among all remaining edges the maximum is (2,5): for p=3,
+q>=7 one has p d>=12,q d>=28; for p>=5 the maximal edge is (5,7),
+giving 10^-sigma+14^-sigma < 6^-sigma+15^-sigma. The last inequality
+follows by comparing integrals of sigma*x^(-sigma-1) on [6,10] and
+[14,15]. Denote this next envelope by rho_2(sigma).
+
+For EVEN m>=4, all heights t, and sigma=Re(s)>1/4,
+
+ |R_m(s)| <= C(sigma) rho(sigma)^(m-4).                       (4)
+
+Proof: each absolute term is d^(-2sigma) times
+|d^-s(p^-s-q^-s)|^m. Peel off m-4 powers and bound them by rho^(m-4).
+The remaining sum is at most
+
+ C_I(sigma)=16 (zeta(4sigma)-1)(zeta(6sigma)-1).
+
+A smaller PRIME-specific majorant uses parity. For odd p the gap is
+even; for p=2 the regularized gap is odd and at least three. Since
+(p^-sigma+q^-sigma)^4<=16p^-4sigma, with P(x)=sum_p p^-x,
+
+ C_P(sigma)=16[(P(4sigma)-2^-4sigma)2^-6sigma zeta(6sigma)
+       +2^-4sigma((1-2^-6sigma)zeta(6sigma)-1)].                (5)
+
+All quantities in (3)-(5) decrease with sigma. At sigma=1/2,
+rho=0.7244760564807009495661033668... <1,
+C_P<0.693425, whereas C_I<2.085015. Thus (4) holds UNIFORMLY for
+every height and every Re(s)>=1/2. It is independent of zeta zero
+positions. For t=1, m=64, for example,
+
+ |R_64(s)| < 2.770e-9,
+ |exp(R_64(s))-1| < 2.770e-9,   Re(s)>=1/2.
+
+For arbitrary amplitude a the relative factor error is bounded by
+|a| M exp(|a| M), or exp(|a| M)-1, with M from (4). This is a
+uniform bound on the CORRECTION FACTOR, not a uniform absolute bound
+on S_(m,t)zeta-zeta; the latter includes the height-dependent |zeta|.
+
+The native prime bound in (5) uses
+P(x)=sum_(k>=1) mu(k) LOG zeta(kx)/k, x>1, entirely on the positive
+real axis. For cutoff M the tail is bounded by
+u^(M+1)/((M+1)(1-u))*(1+2/((M+1)x-1)), u=2^-x.
+This follows from log zeta(kx)<=zeta(kx)-1 and the integer tail
+zeta(y)-1<=2^-y(1+2/(y-1)). The independent checker changes M from
+40 to 48, computes mu from its own factor routine, and also checks
+the looser integer-only majorant. All bounds use Arb enclosures.
+
+5. A SHARP HEIGHT-UNIFORM LIMIT THRESHOLD AND A FALSE POSITIVE
+
+Let sigma_* be the unique positive solution of
+
+ 6^-sigma_*+10^-sigma_*=1,
+ sigma_*=0.34043184416498216969663367317... .
+
+Strict monotonicity proves uniqueness. Independent rational bisections
+bracket it; decimal printing is not the certificate. Above sigma_*,
+(4) proves R_m tends to zero uniformly over ALL heights. To show
+the threshold cannot be lowered, set t_*=pi/log(5/3). The 3/5 prime
+phases are opposite, so the (3,5) term has modulus
+
+ 2^(-2sigma) rho(sigma)^m.
+
+All other edges together have modulus at most
+C_I(sigma) rho_2(sigma)^(m-4), sigma>1/4. Because rho_2<rho, the
+dominant edge cannot be canceled by this remainder. At sigma_* the
+leading modulus is constant and the remainder tends to zero; below
+sigma_*, within sigma>1/4, the modulus grows without bound. The numeric
+controls certify separated sides sigma_* +/- 0.01 at m=128,256,512;
+the statement exactly at the threshold is the analytic dominant-edge
+argument, not evaluation of a rounded threshold. If desired, the same
+argument extends to any sigma>0 by replacing the base order four with
+an even m_0 such that m_0 sigma>1. Its finite integer majorant is
+2^m_0(zeta(m_0 sigma)-1)(zeta((m_0+2)sigma)-1).
+
+WITHOUT the d>=2 mask, the only additional edge is (2,3):
+
+ H_m(s)=R_m(s)+(2^-s-3^-s)^m.
+
+At sigma=1/2 and t_0=pi/log(3/2), this edge has modulus
+(1/sqrt(2)+1/sqrt(3))^m, whose base is 1.284457... >1.
+Equation (4) bounds every other edge by a quantity tending to zero.
+Hence |H_m(1/2+i t_0)| tends to infinity, even though its arithmetic
+correction vanishes at every fixed index for all sufficiently large m
+(the first unmasked index is 2^m). Each fixed sufficiently large m has
+an ordinary absolutely convergent correction there. This is an explicit
+failure of interchanging an operator-parameter limit and an infinite
+Dirichlet evaluation. Coefficientwise convergence alone is insufficient.
+
+6. ORDINARY ROOTS AND WHOLE ZETA ZERO DISKS
+
+The correction (1) is holomorphic near a zero rho with real part near
+one half. For m>=4 its ordinary coefficient series already converges
+absolutely there, rather than requiring just paired continuation.
+Write locally zeta(s)=(s-rho)^ell u(s), u(rho)!=0. On a chosen punctured
+branch, the INPUT root in (2) is
+
+ (s-rho)^(ell beta) u(s)^beta exp(t beta^2 R_m(s)).
+
+The exponential is holomorphic and nonzero on the ENTIRE zero disk.
+It preserves the exponent ell beta and fractional monodromy. The
+OUTPUT root instead uses amplitude t beta. Increasing m makes these
+correction factors tend uniformly to one wherever rho(Re(s))<1; it
+does not remove the branch point or change the zeta multiplicity.
+
+The two disk controls reuse the existing simple-zero certificates near
+0.5+i14.13472514... (radius 1e-4) and 0.5+i21.02203964... (radius 1e-5).
+Use sigma_min=1/2-radius in (4),(5); rho(sigma_min)<1. For m=8,16,32,64
+and beta=1,1/2,1/4 the whole-disk factor modulus lies between
+exp(-beta^2 M) and exp(beta^2 M), with relative error exp(beta^2 M)-1.
+The bounds are valid on the containing rectangle, hence on the disk.
+No new zeta zero is located; no many-digit R_m(rho) value is asserted.
+
+For the direct RH connection, let D={Re(s)>1/2} and Z(s)=(s-1)zeta(s),
+where Z(1)=1. Z is holomorphic on the simply connected D. For every
+k>=1 let beta=2^-k and normalize Z^beta at a positive real basepoint.
+The initially defined functions
+
+ Z(s)^beta exp(t beta^2 R_m(s))
+
+have holomorphic continuations to D for every k IF AND ONLY IF RH.
+If RH holds, Z is zero-free on D and has a holomorphic logarithm there.
+Conversely, a zero of finite multiplicity ell in D would force
+ell/2^k to be an integer for every k, which is impossible. The nonzero
+correction changes neither direction. One fixed dyadic root is not
+enough: zeros whose multiplicity is divisible by its denominator remain
+compatible. This criterion does not prove the required continuation.
+
+7. NUMERICAL SCOPE, INFINITE TAILS, AND HISTORICAL STATUS
+
+For prime input cutoff N, omitted pairs have q>N. Set A=floor(N/2).
+Using the order-four bound 16 p^-4sigma d^-6sigma, split into p<=A
+and p>A. The first part has d>A, the second has p>A and d>=2. Integer
+integral tails give the uniform bound
+
+ E_4 <=16(zeta(4sigma)-1) A^(1-6sigma)/(6sigma-1)
+       +16(zeta(6sigma)-1) A^(1-4sigma)/(4sigma-1).
+ E_m <=rho(sigma)^(m-4) E_4, sigma>1/4.
+
+These are circle-modulus bounds, independent of height. The source
+uses exact encoded coefficients through prime input 256 versus paired
+differences through 512, at six fresh points with real parts 3/4,1,5/4.
+The independent route decodes fibres through 192 and uses polynomial
+NONCONJUGATING correlations through 384. It changes the split to
+(N-2)//2, making the tail slightly larger. Both reject deliberately
+changed first coefficients, with errors 1/2 and then 1/3. Multiplying
+the finite exponential corrections by native zeta gives rigorously
+bounded factored scalar comparisons, including below Re(s)=1.
+
+Those six groups are correction/factored-zeta AUXILIARIES. They are
+NOT six new full transformed EXP coefficient-prefix comparisons.
+Consequently the cumulative full comparison count stays 138. Five
+ordinary-root scalar controls use Re(s)=2 and the verified Euler LOG
+branch. The below-one groups use beta=1 and no principal LOG zeta
+anchor. Whole-zero groups use the already certified disks and analytic
+factor bounds, rather than numerically assuming a zeta branch through
+a zero. The thresholds, kernels, source, and independent checker are
+all executable; all checks must pass before the registry includes this
+consequence. Exact checks are finite evidence supporting the universal
+proofs, not substitutes for those proofs.
+
+Known ingredients: the binomial theorem / finite differences are in
+NIST DLMF, https://dlmf.nist.gov/1.2.E2. Higher graph p-energies
+sum_edges w_ij |x_i-x_j|^p and graph p-Laplacians are established,
+e.g. Tudisco and Hein, A nodal domain theorem and a higher-order
+Cheeger inequality for the graph p-Laplacian (2016 preprint),
+https://arxiv.org/abs/1602.05567. The real positive-axis energy here
+uses that known form; its complex continuation uses powers without
+conjugation, not the Hermitian energy. Elementary shears and formal
+arithmetic LOG/EXP are also known (see laplacian_proof.txt).
+
+The specific multiplicative face encoding, edge regularization and
+uniform-height arithmetic application have not been assigned historical
+priority. No-match searching cannot establish originality. This is a
+verified known-kernel compound consequence, not an eleventh primitive
+or a verified historically-new operator. Its bounds control an explicitly
+zero-free correction; they do not exclude any off-line zeta zero or prove
+RH. The objective of finding historically new, verified operators remains
+open. An expanded numerical grammar still carries the bias of its chosen
+primitives and selection targets; recovery of known operations is one
+calibration, not a proof of empirical neutrality.

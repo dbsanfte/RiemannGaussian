@@ -1,0 +1,150 @@
+UNIVERSAL PROOFS AND DOMAIN AUDIT FOR MIXED ZETA-ROOT PROGRAMS
+
+These proofs are mathematical arguments, not machine-checked certificates.
+root_proofs.txt supplies the coefficient-local root construction. Let
+b_q=P_(1/q)(u), where u(n)=1 and q is an integer >=2.
+
+1. DIFFERENT PRODUCTS ARE OPERATORS, NOT JUST MATCHED PROFILES
+
+An exponent kernel w(a,b) gives an arithmetic product
+  (f *_w g)(n)=sum_{ij=n}f(i)g(j)*product_p w(v_p(i),v_p(j)).
+All sums are finite. A normalized symmetric kernel satisfying
+  w(a,b)w(a+b,c)=w(b,c)w(a,b+c), w(0,a)=1
+gives a commutative associative product with identity delta. The proof is to
+expand both products into ijk=n and use the kernel identity for each prime.
+
+Ordinary w=1 obeys the law. Unitary w(a,b)=[a=0 or b=0] obeys it: both
+triple weights are 1 precisely when at most one of a,b,c is nonzero. The
+binomial kernel w(a,b)=(a+b)!/(a!*b!) obeys it by cancellation of factorials.
+For carry kernels, w=t^(F(a+b)-F(a)-F(b)), F(a)=v_ell(a!), telescoping
+proves the law, even at t=0 with 0^0=1, as shown in root_proofs.txt.
+The programs therefore define operations on ALL rational arithmetic inputs.
+
+Multiplicative functions are preserved: factorizations ij=n split independently
+over prime powers, so their finite product formula equals the product of the
+local exponent convolutions. This justifies the local interpreter in
+mixed_root_search.py; direct arithmetic unitary folds audit it independently.
+
+2. SHARED FIRST COEFFICIENT AND SQUAREFULL CORRECTION
+
+For each of these products define H_(q,w)=b_q *_w ... *_w b_q (q factors).
+The local root series starts 1+x/q+O(x^2). Because w(0,a)=1, the q-fold
+local product starts 1+x+O(x^2): exactly one of q factors contributes x/q.
+Call its local coefficients h_w(e). The ordinary Dirichlet quotient
+  R_(q,w)=H_(q,w)*u^{-1}
+is multiplicative, with local coefficients r(0)=1 and
+  r(e)=h_w(e)-h_w(e-1), e>=1.
+Thus r(1)=0. Every nonzero R_(q,w)(n) for n>1 has all positive prime
+exponents at least 2: its support is squarefull. This is a universal law,
+not an inference from the finite support observed at n<=2048.
+
+The multiplicativity hypothesis matters. On arbitrary normalized f, the
+same product of P_(1/q)(f) need not have a squarefull quotient by f.
+The negative control f=u+delta_6 in mixed_root_search.py exhibits this
+failure and prevents extending the zeta theorem to a larger false domain.
+
+3. UNITARY ROOT LIFT: A CONCRETE ANALYTIC IDENTITY
+
+For the unitary kernel, at a fixed prime a positive exponent must be placed
+entirely in one of the q factors. Therefore
+  H_q(n)=q^omega(n)*b_q(n),
+and the local generating series is
+  1+q*((1-x)^(-1/q)-1)=q*(1-x)^(-1/q)-(q-1).
+Here omega counts DISTINCT prime factors. The coefficient-local program is
+the q-fold unitary product; the closed formula interprets its output.
+
+Since c_(1/q)(e) decreases from c(1)=1/q for e>=1, each nonconstant local
+coefficient q*c(e) is in (0,1]. Hence 0<H_q(n)<=1 and its Dirichlet series
+converges absolutely for Re(s)>1. Its exact Euler factorization is
+  H_q(s)=zeta(s)*R_q(s),
+  R_q(s)=product_p [q*(1-p^(-s))^(1-1/q)-(q-1)*(1-p^(-s))], Re(s)>1,
+where all local powers use the analytic log on |x|<1 with log(1)=0.
+
+The local correction is
+  R_q(x)=1+q*sum_{e>=2}(c(e)-c(e-1))*x^e.
+All nonconstant coefficients are negative and their absolute sum is
+  q*sum_{e>=2}(c(e-1)-c(e))=q*c(1)=1,
+because c(e)->0 for 0<1/q<1 (for example its logarithm is bounded above
+by -(1-1/q)*sum_{j=1}^e 1/j plus a constant). Thus
+  |R_q(x)-1| <= |x|^2, |x|<1.
+For sigma>1/2 the sum over primes of p^(-2*sigma) converges. The product
+therefore converges uniformly on compact subsets and defines a holomorphic
+function on Re(s)>1/2. Each factor is nonzero there. Indeed, put
+z=exp(Log(1-x)/q). The factor equals z^(q-1)*(q-(q-1)*z).
+z is nonzero. If it were q/(q-1), then
+  x=1-(q/(q-1))^q,
+whose absolute value is >1, since the binomial expansion of
+(1+1/(q-1))^q is already >1+q/(q-1)>2.
+This contradicts |x|<1. An absolutely convergent product of nonzero factors
+with summable deviations is nonzero. Consequently R_q is holomorphic AND
+nonzero throughout Re(s)>1/2, without any assumption of RH.
+
+Multiplying this R_q by the meromorphic continuation of zeta extends H_q
+meromorphically to Re(s)>1/2. In this region its zeros have exactly the same
+locations and multiplicities as zeta's zeros. This addresses a root's
+arithmetic transformation, but DOES NOT make zeta's zeros disappear and
+does not prove they lie on Re(s)=1/2. Positivity of coefficients gives no
+zero-free theorem at complex s in that region.
+
+4. RIGOROUS NUMERICAL TAILS FOR THE UNITARY CASE
+
+The coefficient bound 0<H_q(n)<=1 gives a series tail after N bounded by
+  N^(1-sigma)/(sigma-1), sigma>1.
+For an Euler correction truncated to primes <=P, put
+  T=P^(1-2*sigma)/(2*sigma-1), sigma>1/2.
+The omitted deviations sum to at most T, using |R_q(p^(-s))-1|<=p^(-2*sigma)
+and bounding primes by all integers >P. Expanding the omitted product gives
+  |omitted_product-1|<=exp(T)-1.
+Thus its absolute error is at most |finite_product|*(exp(T)-1).
+The numerical test compares an Arb finite Dirichlet sum with Arb
+zeta(s)*finite_product(s), allowing the series tail plus |zeta(s)| times
+the product tail. These are ball arithmetic checks backed by explicit
+mathematical bounds, rather than unqualified floating-point residuals.
+
+5. OTHER KERNELS: WHAT IS PROVED, WHAT IS NOT
+
+For a fixed q, prime ell and finite t, the carry family ALSO has a correction
+product holomorphic on Re(s)>1/2. This growth argument alone does not establish
+NONVANISHING. The subsequent carry_zero_proof.txt and exact disk certificates
+resolve nonvanishing for selected instances and two whole parameter families.
+In a q-fold local product, the total carry exponent is
+  K=v_ell(e!)-sum_{j=1}^q v_ell(e_j!), sum e_j=e.
+It is nonnegative and the digit-sum formula bounds it by
+  q*(1+log_ell(e+1)).
+Put M=max(1,|t|). The weight magnitude is at most
+  M^q*(e+1)^(q*log_ell(M)).
+There are binom(e+q-1,q-1) compositions and 0<c_(1/q)(e_j)<=1, so the
+absolute local coefficients grow at most polynomially in e. The local
+series has radius at least 1. Its correction starts 1+O(x^2), with a bound
+uniform for |x|<=r<1. Summing over primes proves compactly uniform absolute
+product convergence for sigma>1/2. Local zeros could add zeros beyond
+zeta's for instances outside those certified families; they require a separate
+audit. No unconditional nonvanishing assertion for arbitrary t is made.
+The multiplicative Dirichlet series itself converges absolutely for sigma>1:
+its local series converges at every p^(-sigma), and for sufficiently large p
+its sum of nonconstant absolute terms is p^(-sigma)+O(p^(-2*sigma)).
+
+The binomial kernel demands DIFFERENT growth analysis. Its multinomial
+weights can grow exponentially with the exponent, so a formal squarefull
+support law alone does not prove a product analytic on sigma>1/2. In the
+implemented family the local root coefficients satisfy c(e)>=(1/q)/e for
+e>=1: compare each product factor (j+1/q)/(j+1)>=j/(j+1).
+For e>=q, the sum of multinomial weights over compositions in which every
+part is positive is at least q^e-q*(q-1)^e. Each product of root coefficients
+is at least q^(-q)*e^(-q). Therefore the local q-fold binomial product has
+coefficients at least [q^e-q*(q-1)^e]/(q^q*e^q), and at most q^e. Its
+radius of convergence is EXACTLY 1/q. The positive-coefficient local series
+has a singularity at x=1/q. In particular the factor at prime 2 reaches this
+boundary at real s=log_2(q). This invalidates an automatic analytic bridge
+to Re(s)>1/2. The detector excludes it from that proposed bridge.
+
+6. HISTORICAL NOVELTY IS A SEPARATE QUESTION
+
+Unitary, binomial, infinitary and general weighted transport convolutions
+have prior art. The programs above produce exact root applications and
+useful corrections. Their correctness and analytic domains are proved here;
+their definitions as compositions of known primitives do not by themselves
+establish mathematical novelty. The registry therefore distinguishes known
+operators, applications under literature review, proven laws, and genuinely
+verified new operators. The last list remains empty unless a novelty audit
+and independent verification warrant promotion.

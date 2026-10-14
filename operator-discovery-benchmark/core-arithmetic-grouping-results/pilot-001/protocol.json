@@ -1,0 +1,121 @@
+{
+  "RH_proved": false,
+  "adaptive_rule": "proved baseline obstruction -> enumerate every fixed post-map; no model calls or score-driven mutations",
+  "aggregate_memory_limit": 17179869184,
+  "all_scale_signed_control_proved": false,
+  "coefficient_horizon": 4095,
+  "development": {
+    "core_arithmetic_grouping_checker_development.json": {
+      "operations": 41205,
+      "runs": [
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_arithmetic_grouping"
+          ],
+          "elapsed_seconds": 0.08256816101493314,
+          "operations": 40306,
+          "receipt_lines": 1,
+          "returncode": 1,
+          "stderr": "test_adversarial_single_bucket_is_exact_target_alias (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_complete_signed_groups_fractional_irregular_cells (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_exact_power_cutoffs_and_log_boundaries (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_full_unit_head_and_incomplete_schema_rejection (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_hand_arithmetic_labels_and_complete_removals (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... FAIL\ntest_label_bijection_and_index_permutation_are_distinct (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_positive_and_signed_negative_groups_and_diagonal (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\ntest_unknown_asts_and_shared_resource_caps (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\n\n======================================================================\nFAIL: test_hand_arithmetic_labels_and_complete_removals (test_check_core_arithmetic_grouping.ArithmeticGroupingTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_arithmetic_grouping.py\", line 130, in test_hand_arithmetic_labels_and_complete_removals\n    self.assertEqual([removed[i] for i in (1, 4, 6, 8, 12, 15)], [1, 1, 2, 1, 3, 3])\nAssertionError: Lists differ: [1, 1, 2, 1, 4, 3] != [1, 1, 2, 1, 3, 3]\n\nFirst differing element 4:\n4\n3\n\n- [1, 1, 2, 1, 4, 3]\n?              ^\n\n+ [1, 1, 2, 1, 3, 3]\n?              ^\n\n\n----------------------------------------------------------------------\nRan 8 tests in 0.010s\n\nFAILED (failures=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_arithmetic_grouping operations=40306\n",
+          "synthetic_max_horizon": 31
+        },
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_arithmetic_grouping.ArithmeticGroupingTests.test_hand_arithmetic_labels_and_complete_removals"
+          ],
+          "elapsed_seconds": 0.06307827899581753,
+          "operations": 899,
+          "reason": "Affected-only rerun after correcting remove_largest_all(12) hand expectation to4",
+          "receipt_lines": 1,
+          "returncode": 0,
+          "stderr": "test_hand_arithmetic_labels_and_complete_removals (test_check_core_arithmetic_grouping.ArithmeticGroupingTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_arithmetic_grouping operations=899\n",
+          "synthetic_max_horizon": 15
+        }
+      ]
+    },
+    "core_arithmetic_grouping_producer_development.json": {
+      "operations": 1059658,
+      "runs": [
+        {
+          "command": [
+            "-m",
+            "unittest",
+            "test_core_arithmetic_grouping"
+          ],
+          "elapsed_seconds": 0.5782693479850423,
+          "operations": 1059658,
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.270s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_arithmetic_grouping operations=1059658\n"
+        }
+      ]
+    }
+  },
+  "exact_scope": "selected complete matrices atX1024, after exploratory selection; this is verification on known data",
+  "grammar": "17 valuation-stripping bases; failed prime-frontier proof routes activate11 generic post-maps each",
+  "hashes": false,
+  "main_limit": 1200000000,
+  "main_seconds": 14400,
+  "metadata_reserve": 4000000,
+  "new_source_observations": 0,
+  "numerical_methods": [
+    "float streaming symmetric row updates for discovery",
+    "Arb streaming row updates",
+    "independent literal all ordered Arb pairs and scalar prefix work"
+  ],
+  "numerical_scope": "exploratory observables on previously verified coefficients; no fresh holdout, no fitted bound constant",
+  "partition_reuse": "only identical canonical partitions at these finite scales share evaluation; no uniform alias claim",
+  "per_worker_memory_limit": 4294967296,
+  "post_maps": [
+    "remove_largest_once",
+    "remove_smallest_once",
+    "remove_largest_all",
+    "roots2,3,6",
+    "quotientsX^(1/3),X^(1/2)",
+    "residues2,3,6"
+  ],
+  "proof_gates": [
+    "complete prime exponent singleton frontier",
+    "eventual one-bucket restatement",
+    "prime-only sublinear-width coarsening"
+  ],
+  "ranking": [
+    "nontrivial complete partition on every observed scale",
+    "worst observed doubling growth of grouped absolute sum",
+    "complexity",
+    "ordinal"
+  ],
+  "scales": [
+    256,
+    512,
+    1024
+  ],
+  "schema": "obstruction-driven-arithmetic-grouping-v1",
+  "selection": "one per prime-cofactor/fractional-interval/residue lane; no ties selected by constants",
+  "source_horizon_already_observed": 524287,
+  "target": {
+    "eta": "1",
+    "filter": "identity",
+    "parent_program_id": 6,
+    "rho": "1/2"
+  },
+  "whole_signed_bound_proved": false,
+  "work_limit": 6000000000,
+  "worker_limit": 1500000000,
+  "worker_seconds": 3600,
+  "workers": 2
+}

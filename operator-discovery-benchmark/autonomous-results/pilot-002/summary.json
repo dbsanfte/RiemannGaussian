@@ -1,0 +1,200 @@
+{
+  "status": "bounded_independence_pilot_independently_verified",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/autonomous-results/pilot-002",
+  "protocol_sha256": "30eab4e1ee4f1f14f473a5645ce3fabc7f72493c7a6ec1d182b9d4034acd79ff",
+  "verification_sha256": "21b38dac86aab798456d3cf7bcb99425c42fe0af883314dd6605dcb8cd0a6046",
+  "final_evaluation_sha256": "7486427de5d49fa0c639de2a0e8f4cda3803ace57d80fe47abea4854dd9100e8",
+  "counts": {
+    "baseline": {
+      "generated_programs": 4146,
+      "generation_rejections": 0,
+      "families": {
+        "sequence_leaf": 2,
+        "nonlinear_norm": 2,
+        "scalar_sequence": 5,
+        "signed_weight": 10,
+        "nonlinear_product": 4,
+        "signed_sum": 4,
+        "scalar_kernel": 3915,
+        "finite_matrix_inverse": 24,
+        "bilinear_predicate": 180
+      },
+      "archive_size": 40,
+      "automatic_promotions": 3,
+      "relation_status_counts": {
+        "universal_arithmetic_theorem_proved": 16,
+        "finite_identity_verified": 32
+      },
+      "final_relation_status_counts": {
+        "finite_identity_verified": 47,
+        "unresolved_comparison": 1
+      },
+      "final_domain_survivors": 31
+    },
+    "adaptive": {
+      "generated_programs": 127,
+      "generation_rejections": 65,
+      "families": {
+        "composition": 20,
+        "matrix_inverse": 20,
+        "nonlinear_norm": 13,
+        "index_mutation": 22,
+        "point_product": 20,
+        "signed_sum": 18,
+        "bounded_sum": 9,
+        "matrix_composition": 5
+      },
+      "archive_size": 40,
+      "automatic_promotions": 6,
+      "relation_status_counts": {
+        "universal_arithmetic_theorem_proved": 7
+      },
+      "final_relation_status_counts": {
+        "finite_identity_verified": 7
+      },
+      "final_domain_survivors": 31
+    },
+    "ablation": {
+      "generated_programs": 116,
+      "generation_rejections": 76,
+      "families": {
+        "composition": 18,
+        "nonlinear_norm": 13,
+        "index_mutation": 22,
+        "point_product": 19,
+        "matrix_inverse": 15,
+        "signed_sum": 18,
+        "bounded_sum": 9,
+        "matrix_composition": 2
+      },
+      "archive_size": 40,
+      "automatic_promotions": 0,
+      "relation_status_counts": {
+        "universal_arithmetic_theorem_proved": 7
+      },
+      "final_relation_status_counts": {
+        "finite_identity_verified": 7
+      },
+      "final_domain_survivors": 31
+    }
+  },
+  "audit": {
+    "independently_replayed_exact_coefficients": 96943,
+    "universal_polynomial_zero_certificates": 30,
+    "validated_relations_without_proof_method": 32,
+    "programs_using_automatically_promoted_macros": 34,
+    "named_calibration": [
+      4,
+      4
+    ],
+    "independently_sampled_synthetic": [
+      2,
+      2
+    ],
+    "promotion_ablation": {
+      "baseline": {
+        "generation_attempts": 4146,
+        "admitted_programs": 4146,
+        "generation_rejections": 0,
+        "final_domain_survivors": 31,
+        "distinct_final_behaviors": 31,
+        "maximum_validated_expanded_cost": 9,
+        "total_declared_final_operations": 51581703
+      },
+      "adaptive": {
+        "generation_attempts": 192,
+        "admitted_programs": 127,
+        "generation_rejections": 65,
+        "final_domain_survivors": 31,
+        "distinct_final_behaviors": 31,
+        "maximum_validated_expanded_cost": 15,
+        "total_declared_final_operations": 30299635
+      },
+      "ablation": {
+        "generation_attempts": 192,
+        "admitted_programs": 116,
+        "generation_rejections": 76,
+        "final_domain_survivors": 31,
+        "distinct_final_behaviors": 31,
+        "maximum_validated_expanded_cost": 15,
+        "total_declared_final_operations": 33563269
+      }
+    }
+  },
+  "checks": {
+    "frozen_protocol_code_batches_and_final_provenance": true,
+    "independent_integer_and_complex_program_semantics": true,
+    "universal_polynomial_certificates_separate_from_finite_relations": true,
+    "promotion_expansion_and_equal_attempt_ablation": true,
+    "anonymous_calibration_random_targets_and_false_controls": true,
+    "unproved_leads_retained_and_no_analytic_or_novelty_promotion": true,
+    "private_and_final_data_network_and_process_access_denied": true,
+    "deterministic_generator_selector_and_fit_replay": true
+  },
+  "named_calibration": [
+    4,
+    4
+  ],
+  "independently_sampled_synthetic": [
+    2,
+    2
+  ],
+  "false_controls_accepted": 0,
+  "promotion_ablation": {
+    "baseline": {
+      "generation_attempts": 4146,
+      "admitted_programs": 4146,
+      "generation_rejections": 0,
+      "final_domain_survivors": 31,
+      "distinct_final_behaviors": 31,
+      "maximum_validated_expanded_cost": 9,
+      "total_declared_final_operations": 51581703
+    },
+    "adaptive": {
+      "generation_attempts": 192,
+      "admitted_programs": 127,
+      "generation_rejections": 65,
+      "final_domain_survivors": 31,
+      "distinct_final_behaviors": 31,
+      "maximum_validated_expanded_cost": 15,
+      "total_declared_final_operations": 30299635
+    },
+    "ablation": {
+      "generation_attempts": 192,
+      "admitted_programs": 116,
+      "generation_rejections": 76,
+      "final_domain_survivors": 31,
+      "distinct_final_behaviors": 31,
+      "maximum_validated_expanded_cost": 15,
+      "total_declared_final_operations": 33563269
+    }
+  },
+  "archive_behavior_comparison": {
+    "shared_final_behaviors": 30,
+    "promotion_only_final_behaviors": 1,
+    "ablation_only_final_behaviors": 1,
+    "net_final_behavior_count_change": 0,
+    "scope": "finite archived behaviors under paired proposals; admission gains alone do not establish better discovery"
+  },
+  "assumptions": [
+    "finite typed ASTs and supplied integer predicates restrict the search",
+    "scalar weights are rational; complex values arrive through generic inputs",
+    "finite matrix inverses have a declared dimension limit",
+    "small polynomial templates initialize nonlinear exploration",
+    "empirical prime contrast is not independent prime-distribution information",
+    "no analytic zeta/zero preservation primitive or convergence theorem is supplied",
+    "random synthetic targets are independently sampled within this language, not an external mathematical novelty benchmark"
+  ],
+  "boundaries": {
+    "worker": "Python audit-hook read/write allowlist; deny network/process launches; enforcement prevents accidental leakage, not a hostile-code security sandbox",
+    "producer_prime_or_factor_queries": false,
+    "prime_labels": "evaluator only; discovery summary metrics available to selector",
+    "adaptive_final_access": false,
+    "literature_access": false,
+    "model_calls": false
+  },
+  "ordinary_zeta_zero_bridge_proved": false,
+  "new_independent_prime_distribution_estimate_proved": false,
+  "historical_novelty_established": false,
+  "verified_new_operators": []
+}

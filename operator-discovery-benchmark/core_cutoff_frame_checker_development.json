@@ -1,0 +1,23 @@
+{
+  "schema": "core-cutoff-frame-checker-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 1989925,
+      "tests": 13,
+      "elapsed_seconds": 1.1829749399912544,
+      "failures": 0,
+      "errors": 0,
+      "failure_details": []
+    }
+  ],
+  "operations": 1989925,
+  "success": true,
+  "peak_live_cells": 10096,
+  "maximum_rational_bits": 0,
+  "memory_limit_bytes": 536870912,
+  "operation_limit": 50000000,
+  "elapsed_limit_seconds": 180,
+  "no_source_observations": true,
+  "edits_stopped": true
+}

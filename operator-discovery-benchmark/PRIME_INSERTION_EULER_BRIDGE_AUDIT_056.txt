@@ -1,0 +1,305 @@
+PRIME INSERTION EULER BRIDGE: INDEPENDENT ANALYTICAL AUDIT 056
+
+Disposition and scope
+=====================
+The conditional bridge is sound for the fixed ordinary-mu concave kernel,
+fixed nonempty prime insertion, and fixed nonzero finite scale polynomial
+specified below. A whole square-root-plus-fixed-log estimate for that exact
+filtered insertion prefix implies ordinary RH. The estimate itself remains
+OPEN. No recovery of the original K prefix, converse from RH, numerical bound,
+source-table admission, or executable 056 proof checker follows from this
+review. All existing files were preserved. No scientific data, tests, source
+atoms, or norm observations were evaluated.
+
+The principal new requirement is sharper than the old divergent-branch test:
+the insertion makes the branch tend to zero. One must retain an analytic
+polynomial plus an O(delta^k) remainder, rather than an undifferentiated O(1).
+An analytic amplitude correction is shown below to have bounded kth right
+derivative. This supplies precisely the remainder needed for the implication.
+
+Imported facts are the standard meromorphic continuation, Euler product,
+functional equation and zero-location properties of ordinary zeta, and the
+Euler beta integral and gamma recurrence. Primary references are NIST DLMF
+https://dlmf.nist.gov/25.2 , https://dlmf.nist.gov/25.4 ,
+https://dlmf.nist.gov/25.10 , https://dlmf.nist.gov/5.12.E3 ,
+https://dlmf.nist.gov/5.2 and https://dlmf.nist.gov/5.5.E1 .
+The insertion transform, regularized singular-integral calculation and
+conditional implication are derived here, not imported upper-bound theorems.
+
+1. Exact source and the unit
+===========================
+Fix 0<alpha<1 and a fixed squarefree integer R>1, with k=omega(R)>=1.
+Let ordinary mu apply to every actual integer divisor, and define
+
+ K(n)=-sum_(d|n)mu(d)*(log d)^alpha, K(1)=0,
+ I_alpha=int_0^infinity (1-exp(-u))*u^(-alpha-1)du>0,
+ a_R(n)=K(Rn), n>=2,
+ A_R(x)=sum_(2<=n<=x)a_R(n), x>=1.
+
+These are unrounded mathematical expressions. Rounded archived coefficients
+are finite numerical enclosures, not the analytic source of this bridge.
+The source integral is
+
+ K(n)=I_alpha^-1 int_0^infinity
+                   product_(p|n)(1-p^-t)*t^(-alpha-1)dt, n>=2.    (1)
+
+Repeated valuations remain in the arithmetic argument but do not repeat
+factors. In particular for every integer n>=2,
+
+ 0<K(Rn)<=K(n)<=(log n)^alpha.                                  (2)
+
+The upper inequality follows by multiplying the integrand in (1) by the
+additional factors for primes dividing R but not n; these lie in (0,1).
+This insertion is E_R K(n)=K(Rn), not the defect D_R K. It has NO shared-prime
+zero or external coprime mask. Those features of D_R must not be transferred.
+
+If extended to n=1, E_R K(1)=K(R)>0. The n>=2 transform therefore removes
+K(R), not the negative -(log R)^alpha unit of the nonempty defect D_R.
+Here K(R)=I_alpha^-1 int product_(p|R)(1-p^-t)t^(-alpha-1)dt.
+
+2. Initial full Euler transform
+==============================
+For Re(s)>1, absolute convergence, positive integral domination and the
+prime-power Euler factors give
+
+ F_R(s)=sum_(n>=2)K(Rn)n^-s
+       =I_alpha^-1 int_0^infinity
+          [U_R(s,t)*zeta(s)/zeta(s+t)-G_R(t)]t^(-alpha-1)dt,      (3)
+ U_R(s,t)=product_(p|R)(1-p^-t)/(1-p^(-(s+t))),
+ G_R(t)=product_(p|R)(1-p^-t).
+
+For clarity, summing the integral integrand over ALL n>=1 gives
+zeta(s)/zeta(s+t)*U_R(s,t). At each p|R its Euler factor is
+(1-p^-t)/(1-p^-s); at p not dividing R it is
+(1-p^(-(s+t)))/(1-p^-s). Removing n=1 subtracts G_R(t).
+Near t=0 both terms in (3) are O(t^k), locally uniformly for Re(s)>1.
+At infinity the bracket is bounded and t^(-alpha-1) is integrable.
+No reciprocal-zeta Dirichlet series on the critical line is used.
+
+Equivalently, where the integral exists,
+
+ F_R(s)=zeta(s)*H_R(s)-K(R),
+ H_R(s)=I_alpha^-1 int_0^infinity
+                    U_R(s,t)/zeta(s+t)*t^(-alpha-1)dt.           (4)
+
+At s=1 this H_R is holomorphic in a sufficiently small disk. Reciprocal zeta
+has a removable zero at 1, the ray 1+t is zero-free, and the finite prime
+denominators do not vanish. Near t=0 the integrand and its locally bounded
+s derivatives are dominated by a constant times t^(k-alpha-1); at large t
+Euler-product separation gives uniform bounds. The compact middle interval
+has a common zero-free neighborhood. Thus the real pole is simple, with
+
+ kappa_R=H_R(1)
+ =I_alpha^-1 int U_R(1,t)/zeta(1+t)*t^(-alpha-1)dt >0,            (5)
+ F_R(s)=kappa_R/(s-1)+holomorphic near 1.
+
+3. Fixed-height continuation; no globally rightmost zero
+=======================================================
+If RH is false, reflection supplies a nontrivial zero with real part>1/2.
+Choose its nonzero imaginary height gamma. The real interval 0<s<1 has no
+zero by the alternating-series identity; Euler-product and line-1 zero
+freedom put the chosen zero inside the strip. Isolated zeros are finite on
+the compact horizontal segment at that height. Choose a RIGHTMOST zero
+rho=b+i gamma at that fixed height, 1/2<b<1, with multiplicity d>=1.
+This does not presume any globally rightmost zeta zero.
+
+For s=sigma+i gamma, sigma>b, and t>=0, zeta(s+t) is nonzero. The finite
+prime denominators are also nonzero, because Re(s+t)>0 implies
+|p^(-(s+t))|<1. Every compact part of this horizontal path has a complex
+tube on which (3) is holomorphic: bounded t gives compact separation, large
+t gives uniform Euler separation, and small t is uniformly O(t^k).
+This continues the initial transform from Re(s)>1 toward rho. Zeros at
+other heights require no zero-free half-plane assertion.
+
+For any sufficiently small fixed epsilon>0, the t>=epsilon contribution in
+(3) is holomorphic in a full disk about rho. On bounded t this follows from
+rightmostness and compactness; at large t from Euler separation. The
+-G_R contribution is independent of s and finite, so it is holomorphic too.
+
+4. Elementary principal singular integral for every d and k
+==========================================================
+Put beta=k-alpha, so k-1<beta<k. Factor zeta(rho+z)=z^d g(z), with g analytic
+and g(0)!=0. Take delta>0 small and 0<=t<=epsilon within the factorization
+disk. Because the finite Euler denominators are nonzero there,
+
+ U_R(rho+delta,t)=t^k u(delta,t),
+ zeta(rho+delta)/zeta(rho+delta+t)
+       =[delta/(delta+t)]^d*g(delta)/g(delta+t),
+ u(0,0)=u_0=product_(p|R)log(p)/(1-p^-rho)!=0.                 (6)
+
+The principal model is
+
+ J_(beta,d)(delta)=delta^d int_0^epsilon
+                         t^(beta-1)/(delta+t)^d dt.
+
+It has the exact asymptotic
+
+ J_(beta,d)(delta)=Q_(k-1)(delta)+B_(beta,d)*delta^beta
+                       +O(delta^k),                          (7)
+ B_(beta,d)=Gamma(beta)*Gamma(d-beta)/Gamma(d)!=0,
+
+where Q has degree<=k-1. In particular Q=0 when d>=k.
+
+For d>=k, substitute t=delta*v. The integral extended to infinity is
+Euler's beta integral, since beta>0 and d-beta>0. Its omitted tail produces
+O(delta^d), hence O(delta^k). This proves (7) in that case.
+
+For d<k let r=k-d>=1 and c_l=(-1)^l binom(d+l-1,l). Subtract the first r
+large-v terms. The finite coefficient is the absolutely convergent integral
+
+ B_(beta,d)=int_0^infinity v^(beta-1)
+                [(1+v)^(-d)-sum_(l=0)^(r-1)c_l*v^(-d-l)]dv.    (8)
+
+At zero, the strongest subtracted power has exponent -alpha>-1; at infinity
+the Taylor remainder has exponent -alpha-1<-1. Integrating the subtractions
+up to epsilon/delta creates exactly the analytic terms
+
+ sum_(l=0)^(r-1) c_l*epsilon^(beta-d-l)/(beta-d-l)*delta^(d+l).
+
+All their degrees are<=k-1. The remaining tail is O(delta^k), proving (7).
+The integrand in brackets in (8) has strict sign (-1)^r for all v>0:
+apply the integral Taylor remainder of (1+z)^(-d) at z=1/v. Thus the
+coefficient is nonzero even without any gamma identity.
+
+For completeness its gamma value is not a formal use of a divergent beta
+integral. Regularize the tail at v=1 by subtracting the r powers and adding
+sum c_l/(d+l-beta). The result is analytic for 0<Re(beta)<d+r, excluding
+the integer poles d,...,d+r-1, and equals the ordinary beta integral when
+0<Re(beta)<d. The Euler beta recurrence therefore continues to this
+regularized expression. Iterating it from d to k gives
+
+ B_(beta,d)=product_(j=0)^(r-1)(d+j)/(d+j-beta)*B(beta,k)
+           =Gamma(beta)*Gamma(d-beta)/Gamma(d).
+
+For beta=k-alpha the regularized tail equals (8), including the integrable
+subtractions on (0,1). No denominator is zero. Each recurrence factor is
+negative in the d<k case, agreeing with the strict sign above.
+
+5. Why the variable amplitude pays the sharper remainder
+=======================================================
+In the small-t integral of (3), write
+
+ A(delta,t)=u(delta,t)*g(delta)/g(delta+t)
+          =u_0+delta*B(delta,t)+t*C(delta,t),                   (9)
+
+where B,C are analytic with all derivatives bounded on a smaller closed
+bidisk. Its constant term contributes u_0*J_(beta,d). The remaining integral
+has bounded kth derivative along delta>0, uniformly as delta decreases to0.
+Here is an explicit bound that avoids an unsupported O(1) remainder.
+
+After k differentiations and the product rule, the delta*B term is a finite
+sum bounded by constants times
+
+ int_0^epsilon t^(beta-1)
+          delta^(d+1-i)/(delta+t)^(d+j-i) dt,
+ 0<=j<=k, 0<=i<=min(j,d+1),
+
+and the t*C term by the same expression with t^beta and delta^(d-i),
+0<=i<=min(j,d). Derivatives falling on B,C only reduce j. Substitute
+ t=delta*v. The respective scale factors are delta^(beta+1-j), positive
+powers because beta+1-k=1-alpha>0. If the v integral grows at its upper
+endpoint, its growth instead leaves delta^(d+1-i) or delta^(d-i), both
+nonnegative powers. The borderline logarithmic exponent cannot occur:
+beta is noninteger and all other exponents are integers. Hence each term
+is uniformly bounded. Differentiation is legitimate for each delta>0 by
+compact domination. A bounded kth derivative yields finite lower right
+derivative limits and a Taylor polynomial of degree<=k-1 with remainder
+O(delta^k), by repeated integration along the real segment.
+
+Combining (7), (9), the analytic large-t part and the unit contribution gives
+
+ F_R(rho+delta)=Q_(k-1)(delta)+C_R*delta^(k-alpha)+O(delta^k),
+ C_R=(u_0/I_alpha)*Gamma(k-alpha)*Gamma(d-k+alpha)/Gamma(d)!=0.   (10)
+
+Q here is a generally complex polynomial, not a known zero polynomial.
+The nonzero coefficient includes every finite multiplicity d, including
+d<k. Its sign for d<k is accounted for by Gamma(d-k+alpha); there is no
+extra (-1)^d factor. Formula (10) is a positive-real approach asymptotic,
+which is sufficient for the holomorphy contradiction below.
+
+6. Whole finite scale filters and the head terms
+===============================================
+Fix an integer q>=2 and a NONZERO finite polynomial P(z)=sum_(j=0)^J c_j z^j,
+with fixed real coefficients, and define
+
+ T_P(x)=sum_(j=0)^J c_j A_R(q^j*x), x>=1.
+
+A fixed division by alpha is harmless. The mean-neutral compatibility
+condition is P(q)=0; P(1)=0 is optional. For Re(s)>1 exact partial summation
+and changes of variables give
+
+ int_1^infinity T_P(x)x^(-s-1)dx
+  =P(q^s)*F_R(s)/s-E_P(s),                                   (11)
+ E_P(s)=sum_j c_j*q^(js)*int_1^(q^j) A_R(y)y^(-s-1)dy.
+
+E_P is entire. This retains the n>=2 convention and every finite head.
+Equation (5) shows P(q)=0 cancels the actual real pole; if P(q)!=0, an
+all-epsilon square-root premise would already contradict that positive
+pole. There is no inferred or fitted mean. No condition on P(1) is needed
+for the off-critical argument.
+
+Suppose P(q^s)/s has a zero of order h>=0 at nonreal rho. This order is finite:
+P is nonzero, q^s is locally invertible, and rho!=0. Write its leading
+coefficient a_h!=0. Multiplying (10), and subtracting the analytic product
+with Q and the entire head E_P, gives a nonzero term
+
+ a_h*C_R*delta^(k+h-alpha)+O(delta^(k+h)).                    (12)
+
+Higher multiplier terms give delta^(k+h+1-alpha)=o(delta^(k+h)). If the
+transform in (11) were holomorphic at rho, its Taylor coefficients through
+degree k+h-1, after that analytic subtraction, would have to vanish by
+successive division along delta>0. It would then be O(delta^(k+h)), which
+contradicts (12). A finite polynomial zero cannot remove this fractional
+branch. Annulus-root exclusions and simple-zero assumptions are unnecessary.
+
+7. Integer-to-real extension and the conditional conclusion
+==========================================================
+Assume, as the unpaid whole-source premise, that for fixed finite C and
+fixed B>=0,
+
+ |T_P(N)|<=C*sqrt(N)*(log(e*N))^B for every integer N>=2.       (13)
+
+For x in [N,N+1), A_R(q^j*x)-A_R(q^j*N) contains at most q^j-1 terms.
+Equation (2) bounds each by (log(q^j*x))^alpha. Thus
+
+ |T_P(x)-T_P(N)|<=sum_j |c_j|*(q^j-1)*(log(q^j*x))^alpha,
+
+with the j=0 contribution zero. This is a fixed O((log(e*x))^alpha) error.
+Consequently (13) supplies an all-epsilon bound on the whole real T_P:
+for every epsilon>0, |T_P(x)|<=C_epsilon*x^(1/2+epsilon).
+The finite initial interval is harmless. Its Mellin integral converges
+absolutely and locally uniformly, with all local s derivatives, throughout
+Re(s)>1/2. It is therefore holomorphic there. Uniqueness of continuation from
+Re(s)>1 along the tubes in section3 makes it the same transform as (11).
+The contradiction (12) excludes every off-critical right-hand zero. Zeta's
+reflection then yields ordinary RH.
+
+Paid result: (13) for one fixed exact nonempty inserted source and one fixed
+nonzero mean-neutral scale polynomial implies RH. It does not require a
+bound on the original K prefix. It does require the exact ordinary-mu kernel
+on all integers and the full signed filtered prefix. Positivity, finite
+sample success, jet nullspaces, and small-t suppression pay none of (13).
+The assertion remains valid for any fixed finite logarithmic power; no
+uniformity over R, alpha, q, P, or their changing complexities is claimed.
+
+8. Audit caveats for detector and publication
+============================================
+- E_R and D_R are different. The new E_R words suppress the transform's
+  small-t numerator by k factors but remain nonzero on shared-prime n.
+- The removed unit is K(R), not the defect's -(log R)^alpha. Finite heads
+  in (11) and optional P(1) constants remain in the complete transform.
+- The branch tends to zero for k>=1. O(1) control alone cannot exclude a
+  holomorphic continuation; the polynomial and O(delta^k) argument above
+  is essential, including arbitrary zero multiplicity.
+- Repeated insertion of the same prime is idempotent on this radical source;
+  it does not increase k. R is fixed and squarefree in this theorem.
+- The real pole is an exact positive kappa_R. A mean-neutral grammar must
+  enforce P(q)=0, or else its proposed square-root premise is impossible.
+- Neither first-jet nullspace membership nor source small-t suppression
+  establishes the whole signed bound. No quantitative inversion from this
+  filtered insertion to the old uninserted source is supplied.
+- The theorem is separately reviewed analytic mathematics. It is not an
+  executable 056 admission, formal proof, actual all-scale estimate, RH
+  proof, or claimed RH converse. No scientific data or old tests were used.
+
+This owned audit file is stopped after the independent derivation above.

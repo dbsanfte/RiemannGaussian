@@ -1,0 +1,204 @@
+Centered cached-chart cone search: independent soundness review v1
+Scope: mathematical review, bounded code inspection and tiny synthetic tests
+recorded below. No actual publication024 map/seed merit, norm, score, source
+replay, saved endpoint computation, research run or hashing was performed.
+
+Exact affine geometry
+The published augmented chart consists of779 old normalized equations plus the
+independent feedback equation with pivot148. All780 pivots and444 surviving
+free coordinates must be present. For an exact center x0 satisfying the chart,
+let N map free directions into homogeneous chart solutions. Then every exact
+point is x=x0+N(Dz), where D is any strictly positive diagonal on the surviving
+free coordinates. Conversely every solution of the chart has this representation.
+No equation or free direction is removed by positive scaling. Directions obey
+zero RHS, even when normalized rows contain nonzero augmented RHS entries.
+Center plus an INHOMOGENEOUS solve would double-count affine constants.
+
+Descending pivot-column order computes N's forward map. Ascending pivot order
+computes its adjoint by propagating each pivot's gradient to its later columns
+with the negative row coefficient. Multiplication by D occurs on free inputs
+for forward application and free outputs for adjoint application. The appended
+pivot participates in both passes; omitting it searches the old chart and can
+silently violate the learned feedback equation.
+
+Reused diagonal scales
+Publication020 scales are numerical heuristics, not mathematical norm evidence.
+The new homogeneous directions differ after eliminating pivot148, so old
+column norms or old condition bounds do not certify the new map. Any positive
+finite scale preserves the exact solution set. Select each scale by its saved
+free_index, the PROJECTED coordinate, not by the old record's enumeration index
+or by blindly deleting list position148. Require exact surviving-coordinate
+coverage, strict positivity and finite positive dyadic representation. No full column-response sweep or certified curvature/norm bound is claimed.
+The approved selective numerical adaptation is described below.
+
+Exact center and fixed precision
+Publication024 center fractions may exceed269 significant bits. Converting
+these fractions to the fixed80-decimal MP context necessarily approximates some
+coordinates. The numerical model may use this approximation, but its diagnostic
+must say so and compare with the exact full center under a declared tolerance.
+No equality claim between an arbitrary exact fraction and its MP export is
+valid. In particular the exact final free coordinates are
+f_final[j]=f024[j]+D[j]*Fraction(serialized269-bit z[j]).
+They are NOT a rounded MP sum or a rerounded copy of f024. Combine these exact
+fractions before descending exact back-substitution, then canonical lift into
+all1957 original coordinates. A sum may retain535 or more significant bits.
+Bit/resource failure isUNKNOWN, not permission to truncate or omit a coordinate.
+At z0=0 the exact endpoint must reproduce the full exact center; numerical
+calibration alone is neither exact affine restoration nor cone admission.
+
+Cone metric and gradient contracts
+All366 square coordinates and five slacks enter the scalar negative-part norm.
+The two matrix cones are C PSD and H=P+4C PSD. P itself need not be PSD.
+For half squared Frobenius cone distance, an upper-triangle offdiagonal has
+coordinate derivative twice the corresponding negative-part entry. The H block
+adds four times this derivative to C coordinates and once to P coordinates.
+Apply the scaled adjoint D*N^T to these full projected-coordinate gradients.
+The unit/constant affine state remains inside the full15 matrices.
+
+Three normalized penalties p_i/b_i use positive frozen normalizers
+b_i=max(initial exported numerical p_i,2^-40). The maximum objective has the
+same zero set as all three exact distances if computed exactly, but binary64
+eigenpairs/negative parts and fixed MP arithmetic remain numerical proposals.
+The floor can prevent a small block from normalizing toone. Decrease of the
+maximum does not require or imply decrease of each raw block penalty.
+
+For each trial alpha, solve the numerical simplex model again using all three
+gradients: max_lambda r.lambda-alpha/2*norm(sum lambda_i*g_i)^2. The direction
+is -alpha*sum lambda_i*g_i. Seven-face enumeration and dyadic feasible weights,
+model-gap consistency and actual Armijo checks are proposal safeguards, not
+exact optimality or gradient certificates. The Euclidean Armijo metric is in
+z coordinates: F_trial<=F_old-norm(d_z)^2/(8*alpha). Using the unscaled free
+increment D*d_z changes the metric and is incorrect for this model. Numerical
+zero-defect/model stationarity cannot prove feasibility or infeasibility.
+
+Cached map license
+Reuse of a previously independently licensed exact sparse chart avoids an old
+tape replay; it does not license arbitrary row arrays supplied by a producer.
+Bind all saved normalized old rows, the appended feedback row, combined pivots,
+final444-free partition, retained original-coordinate map, and the exact center
+through the published mathematical cache contract and explicit consistency
+checks. Validate strict triangular rows and nonzero canonical sparse entries.
+The scope is the fixed finite affine chart. No source grammar equivalence,
+fresh-scale identity, all-scale bridge, initial-storage bound or RH result is
+created by numerical search on it. The learned X7 point is no longer heldout.
+
+Work and containment
+The joint450m allocation is50m preparation,25m setup,200m proposal,25m exact
+endpoint and150m independent audit. Counts share their stage caps; repeated
+trace, endpoint or map checks cannot reset these budgets or escape to new jobs.
+All initialization, eight power steps, calibration, up to128 iterations, three
+trial metrics/model solves, three accepted block adjoints and final export must
+be covered by reservations before allocation/iteration. At coefficient96,
+three two-matrix eigensolves alone reserve1,944,000 units per complete iteration;
+128 worst-case iterations require248,832,000 units before map work. Thus128 is
+an upper iteration limit, not guaranteed completion under200m proposal.
+Require explicit budget_stop before an incomplete step and retain finalization
+space/work. 6GiB/3600s perstage are separate containment bounds. Frozen source
+norm labels do not certify map conditioning, and approximate conversion can
+suffer cancellation despite small individual conversion errors.
+
+Selective adaptation approved before freeze
+Write the normalized appended equation as f148+sum_j b_j*f_j=c after all old
+pivots are removed. An increment of surviving free coordinate j changes the
+eliminated coordinate by -b_j. Therefore newN_j=oldN_j-b_j*oldN148 exactly.
+Only surviving j with nonzero b_j have changed homogeneous columns. Parent
+reports82 old-free coefficients including pivot148, giving81 changed and363
+unchanged surviving coordinates. Derive this partition from exact appended-row
+support, never from rounded coefficients or a guessed enumeration position.
+
+Computing fixed80d approximate cone-column norms only for these81 changed
+columns is a credible preconditioning improvement. Keep publication020 D for
+unchanged363 and choose a strictly positive dyadic D from the approximate
+norms for changed81. This is a numerical heuristic, not a norm certificate,
+rank test or forced-face discovery. Numerical zero, cancellation, underflow or
+small norm must not authorize dropping a column; use the declared positive
+fallback or stopUNKNOWN. Any positive finite D still preserves exact chart
+feasibility. Changed columns should be measured on the new homogeneous map,
+including the appended row, scalar371 and both C/H Frobenius contributions.
+RHS and exact center are excluded from these responses.
+
+Conditional work calculation from the supplied sparse-entry bound99513:
+81*2*99513=16,121,106 forward units. Conservative scalar/matrix norm work is
+under~0.5m at fixed444/1224/full15 geometry; if loading/conversion/calibration
+remain~4m, the total is below25m setup. These are supplied metadata and planning
+bounds, not observations from an actual map computation in this review. Validate
+actual sparse entries and reserve the entire81-response/norm/calibration work
+before beginning; include repeated row traversals and MP serialization. If the
+real charges exceed25m stopUNKNOWN, not a fresh setup job or uncharged partial
+adaptation. No source replay, exact rational norm sweep or old-D norm proof is
+needed or claimed. A checker can validate the exact coordinate partition and
+strict positive dyadic D without treating approximate norm values as theorem
+premises; proposal trace consistency and exact endpoint remain independently
+checked within their declared stages.
+
+Final implementation review
+Reviewed primitive_state_feedback_cone_search.py and
+check_primitive_state_feedback_cone_search.py, including selective_setup,
+centered_forward, exact_endpoint, proposal control, validate_chart, verify_setup,
+trace recurrence and full original endpoint verification. Actual centeredforward
+always invokes the homogeneous old forward solve with linear=True, then adds
+MP(center024); exact endpoint instead uses exact center fractions plus exact
+exported dyadic increments, solves all780 equations and lifts1957 coordinates.
+Selective response measurement uses unit free directions on the unscaled NEW
+homogeneous map; no center or augmented RHS participates. Approximate norms use
+all371 scalar coordinates and both full C/H Frobenius norms. Exact appended
+support determines81 changed and363 unchanged coordinates. The independent
+checker validates support, complete positive dyadic scale records and the exact
+rounding rule from exported approximate norms; it deliberately does not repeat
+81 numerical responses or certify their values as exact norm evidence.
+
+Initially calibration-tail reserve12E understated the explicit traversal charge:
+exact homogeneous backsub about8E, zero-center MP diagnostics4E, MP direction
+with diagnostics4E and adjoint2E. Reported to owner; final tail20E plus fixed
+coordinate/export allowances makes the reservation transparent. Map byte cap
+is8MiB. No partial scaling fallback is permitted after a setup cap failure.
+Forward diagnostics now state they concern the homogeneous delta, not a proof
+of cancellation control for adding the center. A final live-cell accounting nit
+was reported: count both normalized rational and converted MP row arrays (2E),
+not only one E, plus the other simultaneously resident coordinate arrays.
+
+The checker explicitly documents its premise: the archive wrapper supplies the
+designated immutable publication024 chart/center/review. Arbitrary caller booleans
+are not a fresh source-span proof. Structural checks alone cannot authenticate
+a different old chart. Full endpoint checks still reconstruct all5641 original
+equations and the learned feedback row and diagnose every scalar/PSD failure.
+No universal identity, RH, norm, gradient or numerical model certificate is
+asserted. Reused frozen modules supply arithmetic helpers only; this path does
+not call their hash, archive, source-compilation or old-tape replay functions.
+
+Fixed accepted-step expansion
+The final preregistered rule carries alpha_next=min(2^900,2*accepted_alpha).
+First alpha remains the eight-power estimate. Each next iteration still tries
+alpha_next,alpha_next/2,alpha_next/4 with a fresh simplex model and the same
+actual max-objective Armijo test. Every accepted step obeys the same descent
+condition; the worst three-trial work reservation is unchanged apart from a
+small explicit multiplication/cap charge. This is a credible proposal improvement
+when the old estimate is conservative, not a convergence guarantee. The trials
+now reach only half the previous accepted alpha, so an abrupt curvature change
+or eigenprojection noise requiring quarter that alpha can cause an earlier
+line_search_failed stop. No hidden continuation or parameter retry is allowed.
+The independent trace checker binds the capped recurrence to accepted step
+exports and subsequent trial steps. Numerical step metadata remains proposal
+consistency, not a smoothness or optimality theorem.
+
+Synthetic test evidence and readiness
+NEW test_primitive_state_feedback_cone_search_soundness.py contains15 tests,
+all tested cases passed in bounded targeted runs. No actual publication data was
+used. The fixture's779 identity rows, one148 feedback row and a535-bit rational
+center are constructed locally with explicit toy source equations. Checks cover:
+exact center versus rounded MP center; appended-row homogeneous response;
+augmented RHS exclusion; scaled forward/adjoint pairing; exact81/363 support;
+strict positive scale and coordinate mapping; omitted/changed appended row;
+exact endpoint sum exceeding269 significant bits; setup cap without partial
+result; offdiagonal Frobenius derivative; H gradient's four C contributions;
+fixed2x step cap and an actual tiny one-dimensional accepted/stationary trace;
+independent cached-chart checks; rejection of promoted norm-certification flags.
+The fixture supplies a synthetic prior-license premise solely for helper tests;
+it is not a research chart or new proof about the actual operator grammar.
+Parents will run one combined suite after owners stop editing. No full suite,
+actual024 map, real seed merit/norm/score, source reconstruction or hashing was
+performed in this review. This memo and test file are ready to freeze.
+Final owner readback: the live proxy now counts2E exact/MP chart arrays,
+adds the homogeneous calibration map and coordinate workspace transient, and
+counts2E chart residency during endpoint source checks. The reported live-cell
+issue is resolved. No further edits or test runs are needed for this review.

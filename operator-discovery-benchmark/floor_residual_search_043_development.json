@@ -1,0 +1,25 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.18396666797343642,
+      "exposure": "synthetic rational floor programs; arithmetic sieve values<=64; one exact syntax fixture; no recipe scores"
+    },
+    {
+      "returncode": 0,
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0019623079570010304,
+      "exposure": "synthetic selection and logarithmic coordinates only; pre-data rate obstruction correction",
+      "test_names": [
+        "test_selection_is_closed_to_final_data_and_no_expected_winner",
+        "test_log_rate_coordinates_and_impossible_contraction_not_ranked"
+      ]
+    }
+  ]
+}

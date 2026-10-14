@@ -1,0 +1,16 @@
+Independent divisor-cell design review. No uniform signed bound is proved.
+
+
+cancellation_cross_divisor_search_design.txt SHA256 f49914b1d9bfc9d13c4d7c5565721345cfc1263457244056e245e0e4a09abff6
+
+cancellation_divisor_cells.py SHA256 8f144731d76bb35a5807378d0c83727b17fef6c909b33d37046bcfda0831baad
+
+cancellation_divisor_cell_language.py SHA256 c748bb2786d6e4e0adebe2603339e79dede4d47941771b606ff415fe69b56f85
+
+The complete divisor domain includes zero-weight sources and the unit endpoint. B-1 is exactly a sum of the unit relation with multiplier x1+1 and inverse rows a>=2 with multiplier a^j xa. D=(I-O-1)/2 equals I-1=-O only modulo those complete relations; it retains an unknown partial arithmetic channel. Squaring the whole B alone would be tautological calibration.
+
+All primitive multipliers and both complements remain explicit. The three squares have formal constant 1/4 per t. The four complete relation groups have formal constants -1,0,1/2,1 per t. Their summed costs are O(X), so they introduce no new cubic scalar term: old mu gamma=0 remains necessary and is not sufficient. Normalization weights a^j are an explicitly new program; no subpower estimate for its partial channels is assumed.
+
+There are 366 square groups and 403 relation groups, preserving the full target, the preceding archives and every dual column. Shared finite coefficients do not prove either all-scale polynomial matching or a critical scalar budget. Sparse primal verification may omit only exactly-zero products after admission; a dual must evaluate all columns.
+
+Independent checker rebuilds source pairs by full Cartesian membership and derives the scalar archive from actual formal constants. Producer construction_operations is deliberately not independently verified. Resource counters are proxies; generic checker uses conservative polynomial/allocation preflights, coefficient and term bounds, and exact rational floor comparison before expansion. No target scores were queried.

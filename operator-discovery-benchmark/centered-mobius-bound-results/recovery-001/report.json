@@ -1,0 +1,370 @@
+{
+  "RH_proved": false,
+  "aggregate_audit_memory_reserve_bytes": 4945084416,
+  "argument_checker_operations": 44295,
+  "assessments": [
+    {
+      "conditional_bound": {
+        "constant": "490",
+        "cover_factor": "5",
+        "epsilon_conversion": "log_power0: C; log_power1: C*(1+1/epsilon), EVERY epsilon>0",
+        "log_power": 0,
+        "madic_bound_constant": "98",
+        "requires_open_covariance": true,
+        "rule": "geometric contraction with every seed1..m-1",
+        "scope": "EVERY integer X>=1",
+        "seed_bound": "64",
+        "seed_count": 1
+      },
+      "endpoint_equivalent": false,
+      "failure_scales": [
+        1
+      ],
+      "generic_norm_rule": "GENERIC_INCREMENT_RULE_REJECTED",
+      "genuine_innovation_dissipation": true,
+      "program": {
+        "C": "1",
+        "delta": "1",
+        "id": "haar_022",
+        "lambda": {
+          "kind": "rational",
+          "value": "1"
+        },
+        "m": 2,
+        "rho": "0"
+      },
+      "role": "selected_covariance_hypothesis",
+      "status": "REFUTED_ON_OBSERVED_SCALE",
+      "tested_scales": 21,
+      "uniform_covariance_bound_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "conditional_bound": {
+        "constant": "490",
+        "cover_factor": "5",
+        "epsilon_conversion": "log_power0: C; log_power1: C*(1+1/epsilon), EVERY epsilon>0",
+        "log_power": 0,
+        "madic_bound_constant": "98",
+        "requires_open_covariance": true,
+        "rule": "geometric contraction with every seed1..m-1",
+        "scope": "EVERY integer X>=1",
+        "seed_bound": "64",
+        "seed_count": 1
+      },
+      "endpoint_equivalent": false,
+      "failure_scales": [
+        1
+      ],
+      "generic_norm_rule": "GENERIC_INCREMENT_RULE_REJECTED",
+      "genuine_innovation_dissipation": true,
+      "program": {
+        "C": "1",
+        "delta": "1",
+        "id": "haar_046",
+        "lambda": {
+          "exponent": "-1/3",
+          "kind": "prime_power",
+          "prime": 2
+        },
+        "m": 2,
+        "rho": "0"
+      },
+      "role": "selected_covariance_hypothesis",
+      "status": "REFUTED_ON_OBSERVED_SCALE",
+      "tested_scales": 21,
+      "uniform_covariance_bound_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "conditional_bound": {
+        "constant": "660",
+        "cover_factor": "5",
+        "epsilon_conversion": "log_power0: C; log_power1: C*(1+1/epsilon), EVERY epsilon>0",
+        "log_power": 1,
+        "madic_bound_constant": "132",
+        "requires_open_covariance": true,
+        "rule": "linear iteration; log(m)>=(m-1)/m",
+        "scope": "EVERY integer X>=1",
+        "seed_bound": "64",
+        "seed_count": 1
+      },
+      "endpoint_equivalent": false,
+      "failure_scales": [],
+      "generic_norm_rule": "GENERIC_INCREMENT_RULE_REJECTED",
+      "genuine_innovation_dissipation": true,
+      "program": {
+        "C": "1",
+        "delta": "1",
+        "id": "haar_018",
+        "lambda": {
+          "kind": "rational",
+          "value": "1/2"
+        },
+        "m": 2,
+        "rho": "1"
+      },
+      "role": "selected_covariance_hypothesis",
+      "status": "FINITE_SURVIVOR_UNPROVED",
+      "tested_scales": 21,
+      "uniform_covariance_bound_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "conditional_bound": {
+        "constant": "490",
+        "cover_factor": "5",
+        "epsilon_conversion": "log_power0: C; log_power1: C*(1+1/epsilon), EVERY epsilon>0",
+        "log_power": 0,
+        "madic_bound_constant": "98",
+        "requires_open_covariance": true,
+        "rule": "geometric contraction with every seed1..m-1",
+        "scope": "EVERY integer X>=1",
+        "seed_bound": "64",
+        "seed_count": 1
+      },
+      "endpoint_equivalent": true,
+      "failure_scales": [],
+      "generic_norm_rule": "GENERIC_INCREMENT_RULE_REJECTED",
+      "genuine_innovation_dissipation": false,
+      "program": {
+        "C": "1",
+        "delta": "0",
+        "id": "haar_002",
+        "lambda": {
+          "kind": "rational",
+          "value": "1/2"
+        },
+        "m": 2,
+        "rho": "0"
+      },
+      "role": "selected_covariance_hypothesis",
+      "status": "FINITE_SURVIVOR_UNPROVED",
+      "tested_scales": 21,
+      "uniform_covariance_bound_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "conditional_bound": {
+        "constant": "340",
+        "cover_factor": "5",
+        "epsilon_conversion": "log_power0: C; log_power1: C*(1+1/epsilon), EVERY epsilon>0",
+        "log_power": 0,
+        "madic_bound_constant": "68",
+        "requires_open_covariance": true,
+        "rule": "summable Haar error with every seed1..m-1",
+        "scope": "EVERY integer X>=1",
+        "seed_bound": "64",
+        "seed_count": 1
+      },
+      "endpoint_equivalent": true,
+      "failure_scales": [
+        1,
+        512,
+        1024,
+        8192,
+        32768,
+        161107,
+        254924
+      ],
+      "generic_norm_rule": "GENERIC_INCREMENT_RULE_REJECTED",
+      "genuine_innovation_dissipation": false,
+      "program": {
+        "C": "0",
+        "delta": "0",
+        "id": "haar_013",
+        "lambda": {
+          "kind": "rational",
+          "value": "1/2"
+        },
+        "m": 2,
+        "rho": "1"
+      },
+      "role": "declared_endpoint_control",
+      "status": "REFUTED_ON_OBSERVED_SCALE",
+      "tested_scales": 21,
+      "uniform_covariance_bound_proved": false,
+      "unresolved_scales": []
+    }
+  ],
+  "audit_workers": [
+    {
+      "counts": {
+        "operations": 15219889,
+        "peak_bytes_estimate": 1648361472
+      },
+      "elapsed_seconds": 2.246999758994207,
+      "peak_rss_kib": 311728
+    },
+    {
+      "counts": {
+        "operations": 15220369,
+        "peak_bytes_estimate": 1648361472
+      },
+      "elapsed_seconds": 2.2024817869532853,
+      "peak_rss_kib": 311472
+    }
+  ],
+  "conditional_arguments_verified": 5,
+  "coverage": {
+    "aliases": 72,
+    "canonical_programs": 216,
+    "raw_programs": 288,
+    "training_passes": 108,
+    "training_refuted": 108,
+    "training_unresolved": 0
+  },
+  "development_receipts": {
+    "centered_mobius_backend_041_development.json": {
+      "cumulative_operations": 294889,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.007784356013871729,
+          "errors": 0,
+          "failures": 0,
+          "operations": 287606,
+          "returncode": 0,
+          "source_exposure": "synthetic local p-parameter1/2 and injected rational centers only; no selected-source coefficient/normalization or archive reads",
+          "tests": 6
+        },
+        {
+          "elapsed_seconds": 0.0013479809858836234,
+          "errors": 0,
+          "failures": 0,
+          "operations": 7283,
+          "reason": "regression for pilot-001 exact Arb-to-integer conversion failure",
+          "returncode": 0,
+          "source_exposure": "analytic scalar normalization only; no arithmetic coefficients or search observations",
+          "tests": 1
+        }
+      ],
+      "schema": "centered-mobius-development-v1"
+    },
+    "centered_mobius_interval_041_development.json": {
+      "RH_proved": false,
+      "actual_normalization_evaluated": false,
+      "actual_source_generated": false,
+      "cumulative_operations": null,
+      "development_operations_aggregated": false,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "elapsed_seconds_reported_by_unittest": 0.005,
+          "errors": 3,
+          "failures": 2,
+          "operations": null,
+          "returncode": 1,
+          "source_exposure": "toy rational coefficients, synthetic prime local powers, injected centers, source-lambda schema only; no actual source coefficients or normalization",
+          "tests": 14
+        },
+        {
+          "elapsed_seconds_reported_by_unittest": 0.009,
+          "errors": 0,
+          "failures": 0,
+          "operations": null,
+          "returncode": 0,
+          "source_exposure": "toy rational coefficients, synthetic prime local powers, injected centers, source-lambda schema only; no actual source coefficients or normalization",
+          "tests": 14
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "schema": "centered-mobius-interval-development-v1",
+      "uniform_signed_bound_proved": false
+    },
+    "centered_mobius_runner_041_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.033713393029756844,
+          "errors": 0,
+          "exposure": "toy prime parameter1/2, injected center1/4, finite independent Gram cases only",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 2
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "centered_mobius_search_041_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.05305848002899438,
+          "errors": 0,
+          "exposure": "synthetic signed/positive integer prefixes and exact rational program syntax only",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 5
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "check_centered_mobius_arguments_041_development.json": {
+      "distinct_tests": 17,
+      "edits_stopped": true,
+      "old_suites_rerun": false,
+      "operations": 283911,
+      "owner": "/root/prefix_proof_checker",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_centered_mobius_arguments_041"
+          ],
+          "elapsed_seconds": 0.1368497569928877,
+          "operations": 264711,
+          "peak_rss_KiB": 28636,
+          "returncode": 1,
+          "stderr": "test_actual_meter_only_requires_charge (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_all_integer_cover_requires_all_seed_chains (test_check_centered_mobius_arguments_041.IndependentArguments) ... FAIL\ntest_all_proof_flags_and_dependencies_keep_covariance_open (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_arbitrary_fractional_source_and_composite_haar (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_canonical_endpoint_alias_and_damping_are_distinct (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_covariance_expansion_preserves_signed_cross_terms (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_covering_chain_cost_retains_the_extra_child_step (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_exact_boundary_and_forcing_prices (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_forged_ceiling_and_lost_centering_or_unit (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_global_coefficient_gf_and_valuation_one_crossing (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_haar_identity_and_sharp_variance_for_arbitrary_signed_increments (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_invalid_program_parameters_and_forged_proof_graph (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_prime_lambda_is_an_all_prime_law_not_float_fit (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_q_prime_full_prefix_identity_including_fractional_below_unit (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_recurrence_implication_is_exact_with_full_child_variance (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_summable_boundary_not_log_when_C_zero (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\ntest_unit_retaining_generic_countermodel_rejects_norm_only_rule (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\n\n======================================================================\nFAIL: test_all_integer_cover_requires_all_seed_chains (test_check_centered_mobius_arguments_041.IndependentArguments)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_centered_mobius_arguments_041.py\", line 106, in test_all_integer_cover_requires_all_seed_chains\n    self.assertLessEqual(2*X,2*Y2);self.assertLess(Y2,2*X)\nAssertionError: 2 not less than 2\n\n----------------------------------------------------------------------\nRan 17 tests in 0.076s\n\nFAILED (failures=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_centered_mobius_arguments_041 operations=264711 elapsed_seconds=0.076615\n",
+          "tests": 17
+        },
+        {
+          "affected_reason": "cover permits Y2=2X at a seed endpoint; repaired overly strict test assertion",
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_centered_mobius_arguments_041.IndependentArguments.test_all_integer_cover_requires_all_seed_chains"
+          ],
+          "elapsed_seconds": 0.06963950698263943,
+          "operations": 19200,
+          "peak_rss_KiB": 25540,
+          "returncode": 0,
+          "stderr": "test_all_integer_cover_requires_all_seed_chains (test_check_centered_mobius_arguments_041.IndependentArguments) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.006s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_centered_mobius_arguments_041 operations=19200 elapsed_seconds=0.006850\n",
+          "tests": 1
+        }
+      ],
+      "scope": "synthetic exact rational identities and analytic scalar verification; no actual coefficient arrays",
+      "source_coefficient_observations": 0,
+      "test_invocations": 18
+    }
+  },
+  "dissipative_finite_survivors": 1,
+  "elapsed_seconds": 19.748038526042365,
+  "final_cases_generated_after_selection": true,
+  "finite_inequalities_checked": 105,
+  "finite_survivors": 2,
+  "float_source_counts": {
+    "operations": 1281916,
+    "peak_cells": 129152
+  },
+  "independent_moment_windows": 21,
+  "interval_audit_operations": 30440258,
+  "interval_source_counts": {
+    "operations": 88501753,
+    "peak_bytes_estimate": 1648361472
+  },
+  "no_archived_numerical_source_read": true,
+  "parent_peak_rss_kib": 704032,
+  "source_horizon": 1048575,
+  "status": "CENTERED_MOBIUS_COVARIANCE_CANDIDATES_AUDITED_UNIFORM_BOUND_OPEN",
+  "training_horizon": 14335,
+  "uniform_covariance_bounds_proved": 0,
+  "whole_signed_bound_proved": false
+}

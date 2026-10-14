@@ -1,0 +1,124 @@
+{
+  "RH_proved": false,
+  "continuous_integral_control": false,
+  "development_operations": 10669972,
+  "discovery_cases": 72,
+  "elapsed_seconds": 18.563199344003806,
+  "evaluation": [
+    {
+      "B": 1024,
+      "cancellation_bits": 0,
+      "even_total": "[80.287355851204195580107365255476493817521232496524 +/- 4.99e-49]",
+      "grouped_peak_absolute": "[311.908090784023647283163073018150552434907201382625 +/- 5.17e-49]",
+      "joined_total": "[3.129022543458070958287084300037860172157691516833 +/- 2.45e-49]",
+      "nontrivial_partition": true,
+      "odd_total": "[-77.158333307746124621820280955438633645363540979691 +/- 4.53e-49]",
+      "program_id": 4,
+      "singleton_absolute": "[149.666074848000820329117295281581466905278082066201 +/- 3.37e-49]",
+      "ungrouped_absolute": "[315.930961603369580279446351652834634126153879601877 +/- 3.05e-49]"
+    },
+    {
+      "B": 1024,
+      "cancellation_bits": 0,
+      "even_total": "[80.287355851204195580107365255476493817521232496524 +/- 4.99e-49]",
+      "grouped_peak_absolute": "[303.475876290994932443393778822577968419340668335740 +/- 6.98e-49]",
+      "joined_total": "[3.129022543458070958287084300037860172157691516833 +/- 2.45e-49]",
+      "nontrivial_partition": true,
+      "odd_total": "[-77.158333307746124621820280955438633645363540979691 +/- 4.53e-49]",
+      "program_id": 9,
+      "singleton_absolute": "[157.297275005743291250250296385394699087499790462064 +/- 4.01e-49]",
+      "ungrouped_absolute": "[315.930961603369580279446351652834634126153879601877 +/- 3.05e-49]"
+    }
+  ],
+  "evaluation_cases": 2,
+  "fitted_constants": 0,
+  "grammar_programs": 18,
+  "inclusive_operations": 246949176,
+  "main_peak_rss_kib": 704032,
+  "model_calls_in_search": 0,
+  "new_component_bounds_proved": 0,
+  "new_uniform_signed_arithmetic_estimates": 0,
+  "original_source_bindings_retained": 144,
+  "rejected": [
+    {
+      "program_id": 0,
+      "reason": "degenerate_partition"
+    },
+    {
+      "program_id": 1,
+      "reason": "degenerate_partition"
+    },
+    {
+      "program_id": 2,
+      "reason": "degenerate_partition"
+    },
+    {
+      "program_id": 3,
+      "reason": "degenerate_partition"
+    },
+    {
+      "program_id": 8,
+      "reason": "degenerate_partition"
+    }
+  ],
+  "sampled_heights": 7,
+  "sampled_integer_events_per_owner": 2047,
+  "selected": [
+    {
+      "lane": "prefix",
+      "minimum_cancellation_bits": 0,
+      "program_id": 4
+    },
+    {
+      "lane": "window",
+      "minimum_cancellation_bits": 0,
+      "program_id": 9
+    }
+  ],
+  "source_history": "previously observed Mobius coefficients; new sampled cutoff-work observables",
+  "status": "FINITE_CUTOFF_PRIME_ORBITS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 236279204,
+  "whole_signed_bound_proved": false,
+  "worker_receipts": [
+    {
+      "cases": 72,
+      "elapsed_seconds": 3.510412492993055,
+      "operations": 62187415,
+      "peak_rss_kib": 278316,
+      "phase": "discovery",
+      "records": 1023,
+      "role": "producer",
+      "status": "complete"
+    },
+    {
+      "cases": 72,
+      "elapsed_seconds": 6.55476088100113,
+      "operations": 63201490,
+      "peak_rss_kib": 289884,
+      "phase": "discovery",
+      "records": 1023,
+      "role": "checker",
+      "status": "complete"
+    },
+    {
+      "cases": 2,
+      "elapsed_seconds": 2.3767925900174305,
+      "operations": 55049220,
+      "peak_rss_kib": 279080,
+      "phase": "evaluation",
+      "records": 1024,
+      "role": "producer",
+      "status": "complete"
+    },
+    {
+      "cases": 2,
+      "elapsed_seconds": 3.078076758014504,
+      "operations": 42396224,
+      "peak_rss_kib": 290180,
+      "phase": "evaluation",
+      "records": 1024,
+      "role": "checker",
+      "status": "complete"
+    }
+  ]
+}

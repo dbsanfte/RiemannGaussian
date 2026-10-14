@@ -1,0 +1,340 @@
+GENERIC PRIME-VALUATION TRANSFER: ANALYTICAL REVIEW 058
+
+Scope
+=====
+This NEW review preserves every frozen057 and earlier artifact. Producer
+prime_transfer_algebra_058.py and independent check_prime_transfer_058.py
+were read without execution. No scientific source values, tests, numerical
+integrals, tables, candidate scores, or hashes were computed. Exact identities
+and endpoint rules below are paid algebra. The whole signed middle bound
+remains OPEN. A separately proved conditional RH implication is not an
+upper-bound provider or an executable admission of a source estimate.
+
+Fix 0<alpha<1, a finite universe P of distinct actual primes, and for a
+subset S let R_S=product S and G_S(t)=product_(p in S)(1-p^(-t)). For n>=1
+let G_n(t)=product_(p|n)(1-p^(-t)), including G_1=1. The inclusive kernel is
+
+ H_S(x,t)=sum_(n>=1) v_x(n)G_(R_S n)(t),
+ v_x(n)=1_(2x<n<=4x)-2*1_(x<n<=2x), x>0,t>0.                (1)
+
+Its equivalent prefix coefficients are (2,-3,1). Actual K(1)=0 is NOT the
+integral of G_1. Inclusive kernels are legitimate formal finite-t states;
+normalized integration additionally requires convergence of the WHOLE
+combination and correct units.
+
+1. Exact signatures cover every valuation and outside-prime factor
+=================================================================
+An atom is a^(-t)H_S(x/d,t), with a,d positive integers supported on P.
+Change n=d*m. Its coefficient at the common index n is zero unless d|n;
+otherwise it is a^(-t)G_(R_S(n/d))(t). Put z_p=p^(-t), e_p=v_p(n), and
+f_p=v_p(d). The registered polynomial is exactly
+
+ 1_(e_p>=f_p for all p) * product_p z_p^(v_p(a))
+                    * product_(p in S or e_p>f_p)(1-z_p).   (2)
+
+The factor for every prime OUTSIDE P is G_(n_outside)(t), common to all
+atoms, because neither d nor S changes that outside cofactor. It is positive
+for t>0 and bounded by one. Its arbitrary prime powers are retained.
+
+For divisors d in {1} union P, the complete states are e_p=0,1,>=2. In the
+middle state division by p removes its last occurrence; in the last it
+leaves a p factor. Using only presence/absence for this grammar would be
+wrong. For more general divisors, the sufficient states are
+0,...,m_p,>=m_p+1, m_p=max_atom v_p(d). Both reviewed implementations use
+this correct threshold and the residual test e_p>f_p.
+
+A rational nullspace of all coefficients of (2), across all states,
+proves an identity for EVERY real x>0 and t>0. Finite summation retains
+all floor endpoints automatically. A polynomial identity is sufficient
+without treating actual prime phases as independent random variables.
+Conversely, a nonzero formal polynomial cannot vanish identically under
+z_p=p^(-t): distinct integer prime monomials are distinct integers by
+unique factorization, and their finitely many exponentials in t are
+linearly independent. The finite nullspace is complete for this declared
+valuation-polynomial signature. It is not a classification of all
+arithmetic identities, all integral aliases, or all signed bounds.
+
+The producer's signature and independent checker's literal polynomial
+construction agree on these mathematical scopes. Exact RREF and independent
+recomposition pay the identity, not a norm bound or RH. Current-only order
+uses presence classes 0/1 because no division is then performed; that
+smaller state set is correct in that restricted API.
+
+2. Real units and divisor constants are different quantities
+============================================================
+Let h_S exclude n=1. Then
+
+ H_S(x,t)=h_S(x,t)+G_S(t)v_x(1),
+ v_x(1)=2*1_(x>=1)-3*1_(2x>=1)+1_(4x>=1).                  (3)
+
+The unit is +1 on 1/4<=x<1/2, -2 on 1/2<=x<1, and zero elsewhere.
+It is zero at ALL real x>=1, not just integer x. This is distinct from
+
+ W(x)=floor(4x)-3floor(2x)+2floor(x), |W(x)|<=1,
+
+which is the entire d=1 DIVISOR/cofactor contribution after factorization.
+W(x) can be nonzero at a real x>1. For integer N, W(N)=0, so the common
+tail rule below has no d=1 denominator. For lower atoms x=N/d neither
+quantity can be deleted without checking its own condition.
+
+An empty-S atom at a lower scale can have a nonzero constant t=0 source
+unit and a divergent normalized integral there. Exact finite-t identities
+do not allow integration of those atoms separately through zero. A whole
+combination may cancel that row and become integrable; the cancellation
+must precede integration. Individual geometric chains and new real-argument
+norms are not licensed by old all-integer source statements.
+
+3. Weighted exchange is exact complete lower-scale transport
+===========================================================
+Let p,q be distinct actual primes outside S, R=R_S. With a=p^(-t),b=q^(-t)
+prime insertion gives
+
+ H_(Rp)=(1-a)H_R+a H_(Rp)(x/p),
+ H_(Rq)=(1-b)H_R+b H_(Rq)(x/q).
+
+Inserting the other prime in the lower terms cancels the joint x/(pq)
+state, and proves
+
+ C_R,p,q(x,t)=(1-q^(-t))H_(Rp)(x,t)-(1-p^(-t))H_(Rq)(x,t)
+             =p^(-t)H_(Rpq)(x/p,t)-q^(-t)H_(Rpq)(x/q,t).   (4)
+
+This is valid for every real x>0,t>0, including all units and all repeated
+valuations. It does not assume gcd(n,pq)=1. At the coefficient level C
+vanishes on n avoiding p,q; if only p divides n its coefficient is
+p^(-t)(1-q^(-t))G_(Rn); if only q divides n it is the negative of
+q^(-t)(1-p^(-t))G_(Rn); if both divide n it is
+(p^(-t)-q^(-t))G_(Rn). The full both-prime sector is mandatory.
+The unit coefficient C(1,t) is exactly zero. The lower atom units in (4)
+map to the ACTUAL source indices n=p and n=q, not to a removable n=1.
+
+For complete normalization define
+
+ f_p(k)=(alpha I_alpha)^(-1) integral_0^infinity
+                         p^(-t)G_(Rpq k)(t)t^(-alpha-1)dt,
+ f_q analogously, and A_C(x)=sum_(n<=x)C_normalized(n).
+
+Both f_p,f_q are finite and nonnegative, including k=1. When p<q,
+f_p>=f_q and (4) gives the exact positive prefix/complement decomposition
+
+ A_C(x)=sum_(k<=x/q)(f_p(k)-f_q(k))
+                      +sum_(x/q<k<=x/p)f_p(k)>=0.           (5)
+
+This is a genuine paid signed transport property: common-cofactor
+cancellation is performed before positivity, and the outside-domain
+complement is retained. It does NOT give a small centered error. For k>=2,
+f_p(k)<=K(Rpq*k)/alpha<=K(k)/alpha<=log(k)^alpha/alpha;
+the k=1 term is at most K(Rpq)/alpha. Thus (5) has an unconditional
+linear-times-logarithmic envelope. Its positive real linear main term
+must be removed by the scale filter before a square-root premise is even
+possible. Summatory positivity cannot bound that signed scale difference.
+
+4. A conditional RH bridge for this complete exchange source
+============================================================
+This paragraph proves an implication, not a source bound or converse.
+For Re(s)>1 put
+
+ U_M(s,t)=product_(l|M) (1-l^(-t))/(1-l^(-s-t)), M=Rpq.
+
+The exact Dirichlet symbol of C_normalized is
+
+ F_C(s)=(alpha I_alpha)^(-1) integral_0^infinity
+ U_M(s,t)*zeta(s)/zeta(s+t)
+                 *[p^(-s-t)-q^(-s-t)]*t^(-alpha-1)dt.       (6)
+
+To verify it, the Dirichlet series of G_(Mn) is
+U_M(s,t)zeta(s)/zeta(s+t); multiply by (1-q^(-t)) or
+(1-p^(-t)) in the two current terms and subtract. The numerator difference
+is exactly p^(-s-t)-q^(-s-t). Equivalently reindex both lower states in
+(4). C(1,t)=0, so no fictitious unit subtraction is inserted into (6).
+For n>=2 its normalized coefficient is bounded in absolute value by
+2K(n)/alpha. This pays absolute initial Dirichlet convergence and finite
+Fubini on Re(s)>1. Near t=0 the registered order is ell=|S|+2; at infinity
+the bracket decays. All integrals in (6) are consequently well defined.
+
+The real pole at s=1 has strictly positive residue for p<q: every factor
+of its integral, including p^(-1-t)-q^(-1-t), is positive. No claim of a
+Tauberian asymptotic is required to see that an unfiltered square-root
+bound for A_C would contradict this pole. Our intended prefix operator
+already uses P(z)=z^2-3z+2 with P(2)=0, canceling this real linear mode.
+
+For the nonreal obstruction, suppose RH is false and choose a zero rho
+with Re(rho)>1/2, rightmost at its FIXED imaginary height. Standard zeta
+continuation, zero location, isolation, and functional equation are the
+imported background from NIST DLMF25.2,25.4,25.10:
+https://dlmf.nist.gov/25.2 ; https://dlmf.nist.gov/25.4 ;
+https://dlmf.nist.gov/25.10 . They do not assert our exchange bridge.
+The finite compact-ray and Euler-tail argument licenses continuation to
+rho+delta along delta>0; it does not assert a zero-free half-plane.
+Let the zero have any integer multiplicity d>=1. Locally
+zeta(rho+z)=z^d g(z), g(0)!=0, and U_M(s,t)=t^ell u(s,t).
+The smooth amplitude at (rho,0) contains
+
+ u(rho,0)*[p^(-rho)-q^(-rho)] !=0.                           (7)
+
+The first factor is nonzero because Re(rho)>0; the bracket cannot vanish
+because |p^(-rho)| and |q^(-rho)| differ. Thus the same fully
+Taylor-subtracted integral argument of review056 gives
+
+ F_C(rho+delta)=Q_(ell-1)(delta)
+                    +c_rho delta^(ell-alpha)+O(delta^ell),
+ c_rho!=0.                                                 (8)
+
+For d>=ell the coefficient uses the convergent positive beta integral.
+For d<ell the finite part after subtracting powers through ell-d-1 has
+coefficient Gamma(ell-alpha)*Gamma(d-ell+alpha)/Gamma(d),
+which is finite and nonzero, with sign (-1)^(ell-d). Analytic amplitudes
+shift subsequent noninteger powers above ell; the kth right-derivative
+remainder is integrable because 1-alpha>0. Zero simplicity is unnecessary.
+
+A fixed nonzero finite scale polynomial P with P(q0)=0 removes the real
+linear mode. A hypothetical all-integer square-root times fixed-polylog
+bound on its complete prefix filter extends to all real x by the bound
+2log(n)^alpha/alpha on source jumps. Its Mellin transform is
+P(q0^s)F_C(s)/s minus exact finite heads, which are entire. It would be
+holomorphic on Re(s)>1/2. Even if P(q0^rho) has a finite zero of order j,
+(8) leaves a noninteger power ell+j-alpha after analytic subtraction.
+That contradicts holomorphy. Consequently this hypothetical COMPLETE
+source-bound implies RH. No such bound has been proved; positivity (5)
+or exact transfer (4) does not supply it. Moving-middle variants additionally
+need paid endpoint restoration before this complete-source implication.
+
+5. The unregistered sector is a local recovery obstruction
+=========================================================
+At a coefficient n avoiding ALL registered primes, every d>1 atom
+vanishes. Current atoms have the polynomial
+
+ P_free(z)=sum_(current atoms) c_atom z^(v(a))*G_S(z).        (9)
+
+If this is nonzero, the current combination cannot have an exact
+representation solely in lower-scale atoms in this finite grammar.
+Conversely P_free=0 is only a necessary condition; all other valuation
+rows must also vanish for a proposed identity. It is NOT target coercivity.
+A family of operators annihilating this sector cannot algebraically
+recover a target whose P_free is nonzero. This is a scoped finite-prime
+linear recovery obstruction, not a theorem that global signed recovery
+or a source-specific arithmetic proof is impossible.
+
+There is also an adversarial guard against paying a bound from finite
+valuation identities plus positivity alone. Replace the common outside
+factor by any orbit-invariant psi(n_outside) in [0,1]. All identities (2)
+remain true, and the row endpoint bounds remain true. Choose psi to be one
+on registered-prime-free cofactors g in (2N,4N] and zero elsewhere. At this
+N, no registered-prime multiple of such a g fits below 4N, and none lies
+in the negative block. The target current H_S with nonempty S is then
+G_S(t) times the number of those g. Finite inclusion-exclusion gives at
+least 2N*product_(p in P)(1-1/p)-2^(|P|+1) such g. On any fixed parameter
+interval inside (0,1/2), its positive normalized middle mass is linear
+in N, exceeding a source-free square-root bound for large N.
+This is not the ordinary-mu source and is not a counterexample to RH.
+It proves that a universal upper provider using only this local information
+is insufficient. It must use an additional property of the actual outside
+arithmetic. A vanishing P_free certificate is an identity/support fact,
+not that missing property.
+
+6. Finite prime removal is conditional norm equivalence, not closure
+===================================================================
+For fixed t>0 define D_S(x,t)=H_S(x,t)/G_S(t). When p not in S,
+
+ D_(Sp)(x,t)=D_S(x,t)+p^(-t)D_(Sp)(x/p,t).                   (10)
+
+All real heads are included. Since H_S(x)=0 for x<1/4, iterating (10) is
+an EXACT finite sum at every finite horizon:
+D_(Sp)(x)=sum_(j>=0)p^(-jt)D_S(x/p^j), stopping when x/p^j<1/4.
+No infinite mu series at the critical line is assumed.
+
+For either weighted sup norm sup |f(x)|/x^beta or weighted L2 norm
+(integral_0^T |f(x)|^2 x^(-2beta-1)dx)^(1/2), dilation by p has norm
+at most p^(-beta) on a finite horizon. If t+beta>0 set c=p^(-t-beta)<1.
+Then the universal operator bounds are
+
+ ||D_(Sp)|| <=(1-c)^(-1)||D_S||,
+ ||D_S|| <=(1+c)||D_(Sp)||.                                (11)
+
+In critical beta=1/2 these constants are uniform as t decreases to zero;
+this is useful conditional equivalence of fixed finite-prime removal.
+At t+beta=0 the inverse costs horizon depth; below it no such uniform
+contraction holds. Dividing by G_S itself loses its near-zero vanishing,
+and replacing fixed-t states by moving-cutoff integrals requires complete
+flux and unit descriptors. One cannot integrate (11) as if it paid an
+unknown source norm or preserved signed parameter crosses. The unregistered
+cofactor forcing remains; (10) is not an RH proof from a norm identity.
+
+7. Current-only endpoint certificates are sound and deliberately limited
+=======================================================================
+For a CURRENT-ONLY combination sum c_atom a^(-t)H_S(N,t), substitute
+z_p=1-y_p exactly in each valuation/presence row. Let k be the minimum
+nonzero total y degree over ALL rows, and
+
+ B=max_rows sum_y |c_y| product_p p^(y_exponent_p),
+ L=sum_atoms |c_atom|.
+
+For 0<t<=1, 0<=y_p=1-p^(-t)<=t log p<=tp. The common outside factor is
+bounded by one. Hence each point coefficient is bounded by B t^k, and
+integer-N filter absolute mass is 4N. Thus
+
+ |h_combo(N,t)|<=4NB t^k, N integer>=2, 0<t<=1.              (12)
+
+The unit row can make this conservative: an empty registered sector
+could still have a nonempty outside radical at actual n>=2. The certificate
+does not get to assume that extra gain without a separate proof.
+If the combination is identically zero, it has its own zero-source
+certificate. Otherwise k>alpha is required to integrate through zero.
+For epsilon=min(1/2,N^(-gamma)), gamma>0,
+
+ |normalized microscopic piece|
+ <=12B/(k-alpha)*N^[1-gamma(k-alpha)].                       (13)
+
+For current atoms at integer N, factoring the forced primes gives the
+finite mu polynomial with d=1 contribution W(N)=0. Attenuations satisfy
+a^(-t)<=1. The source-free tail is consequently
+
+ |normalized t>=1/2 piece|<=128 L sqrt(N).                   (14)
+
+More generally 0<tau<1 gives
+16L/[tau^2(1-tau)]*N^(1-tau), matching the independent checker schema.
+The normalizer bound (alpha I_alpha)^(-1)<2, log2>=1/2, and finite sum
+sum_(d<=4N)d^(-tau)<=(4N)^(1-tau)/(1-tau) prove it. No source data enter.
+
+These endpoint rules do not automatically apply to LOWER atoms, where
+W(N/d) may be nonzero, or to individually divergent empty-S components.
+The whole row cancellation and real-head treatment must be established.
+At the weighted exchange (4), the exact current order is ell=|S|+2:
+p-only and q-only classes attain it, the both-prime class has extra order,
+and the avoiding class is zero. This is a paid endpoint gain with an
+unpaid middle, not a guarantee that the complete source has small energy.
+
+8. Concrete next arithmetic leaf and proof-language guard
+=========================================================
+The weighted exchange has a full ordinary-mu cofactor expression, with
+M=Rpq, p<q:
+
+ A_C(x)=c_alpha integral_0^infinity G_M(t)
+  sum_(d<=x/p,gcd(d,M)=1)mu(d)d^(-t)
+       [p^(-t)floor(x/(pd))-q^(-t)floor(x/(qd))]
+                                     t^(-alpha-1)dt.       (15)
+
+Both range exits and the d=1 cofactor are retained. At fixed t>0 its
+exact linear mean uses the absolutely convergent density
+G_M(t)/[zeta(1+t)*product_(l|M)(1-l^(-1-t))]
+times x[p^(-1-t)-q^(-1-t)]. Subtracting it exposes a JOINED mu-weighted
+fractional-floor term and the complete d>x/p Dirichlet tail. They may
+be defined exactly at t>0; no critical mu-series convergence is assumed.
+Splitting and bounding those pieces separately can lose cancellation.
+The scale-filtered form keeps them joined automatically through its
+complete floors. A new all-scale signed estimate on that joined cofactor
+error, or a genuine arithmetic recurrence that controls it, is the leaf
+needed to close the full bound. Finite-prime transport, positive complements,
+local valuation nullspaces, and small endpoint powers do not pay it.
+
+A detector can now infer universal transfers, synthesize complete weighted
+exchange sources, learn exact vanishing orders, and isolate an explicit
+signed middle with paid endpoints. It must keep its proof graph acyclic:
+source identities and endpoint inequalities are paid; actual uniform
+middle/source norms and target coercivity are not. No companion RH-strength
+bound may be imported as an unconditional provider. The added conditional
+RH bridge makes a proved bound useful, but does not make it proved.
+
+Disposition: this source-only review is complete and edits are stopped.
+The generic inference and endpoint rules are sound in their stated scopes;
+the positive exchange transport and conditional bridge are genuine additional
+structural deductions. Full signed arithmetic control remains OPEN.

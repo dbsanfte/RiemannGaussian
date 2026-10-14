@@ -1,0 +1,155 @@
+Exact formal feedback row incorporation: independent soundness review v1
+Scope: mathematical analysis, bounded source inspection and tiny synthetic
+fixtures only. No actual source-cache reduction, saved seed repair, fresh probe,
+research run, archive sweep or hashing was performed for this review.
+
+Projection and cones
+For each signed relation, beta=x_plus-x_minus and column_minus=-column_plus.
+For the three original matrices, define C=Gc+K and P=Gp-4K. Since the storage
+column is A_K=A_child-4*A_parent, the matrix contribution is exactly
+A_child(C)+A_parent(P). Define H=P+4C=Gp+4Gc. If Gc,Gp,K are PSD then C,H
+are PSD. Conversely C,H PSD lift as Gc=0,K=C,Gp=H. Signed coefficients lift
+as x_plus=max(beta,0),x_minus=max(-beta,0). Squares and five slacks retain their
+values. Thus the correct projected cone is C PSD and P+4C PSD, not P PSD.
+The quotient removes representation freedoms, not forced faces or equations.
+It changes storage boundary cost/objective, so a later uniform proof must check
+actual initial storage cost for the chosen lift separately.
+
+A new original-coordinate necessary row can be projected by retaining its
+positive signed coefficients and its child/parent coefficients precisely when
+row_minus=-row_plus and row_K=row_child-4*row_parent hold entrywise. Offdiagonal
+factor2 already belongs to each original column; no additional rescaling occurs
+here. The canonical lift then obeys exactly the same row. Checking these row
+identities is mandatory: an arbitrary row from1957 coordinates does not define
+a well-defined functional on the quotient. Its RHS is unchanged by projection.
+These are coefficient identities; no square sign or PSD feasibility follows.
+
+Exact elimination and restoration
+Let old normalized equations be x_p+sum_{j>p} B_pj*x_j=b_p. Their insertion
+order may differ from pivot-column order. To reduce a new equation a*x=r,
+process EVERY old pivot p in ASCENDING column order, replacing
+(a,r) by (a-a_p*B_p,r-a_p*b_p). Never stop when the smallest remaining index
+is an old free coordinate: later old pivots can still occur. Ascending order
+prevents an eliminated old pivot being reintroduced. Source insertion order
+is insufficient. This operation preserves the new equation modulo old ones.
+After elimination all old pivot coefficients must vanish exactly.
+
+If all variable coefficients vanish and reduced RHS iszero, the row is
+redundant. If all variable coefficients vanish and RHS isnonzero, it contradicts
+the licensed old affine equations over Q. This is an affine inconsistency,
+not generic cone infeasibility or an RH obstruction. Otherwise choose the
+SMALLEST nonzero OLD-FREE coordinate q as the new pivot and divide the full
+row and RHS by its coefficient. The augmented RHS coordinate is never a
+variable or eligible pivot. Rank rises byone and old-free dimension falls
+byone. The old rows need not be rewritten because the appended row has only
+free coefficients and is upper triangular with pivot q.
+
+Back-substitute the combined old and new equations in DESCENDING pivot-column
+order. Retain the seed value at EVERY other old-free coordinate; recompute the
+new pivot and old pivot coordinates exactly. For a redundant row the original
+free coordinates are unchanged and ordinary old restoration suffices. A
+contradictory row has no repaired endpoint. Missing/implicit coordinates,
+truncated coefficient support and approximate row tests are forbidden.
+Verify all complete original equations and the independently licensed new row
+on the canonical original1957-coordinate lift, not merely the selected basis.
+Exact restoration does not imply cone admission; square signs, all slacks,
+C and H PSD remain separate exact checks and failures are explicit diagnostics.
+
+Tiny adversarial examples to require
+(1) Old x2+3*x3=5, new x1+2*x2=7: the leading x1 isfree but oldpivot2 must
+still be eliminated, giving x1-6*x3=-3. With retained seedx3=2, solution is
+x1=9,x2=-1,x3=2. This shows exact affine repair can worsen nonnegative signs.
+(2) Old rows stored as pivots[2,0], x2+x3=4 and x0+2*x2=9; new x1+x0=8.
+Ascending elimination gives x1+2*x3=7. Stored-order elimination reintroduces
+x2. With seedx3=3, the valid restoration is(x0,x1,x2,x3)=(7,1,1,3).
+(3) New twice an old equation isredundant; changing its RHS byone is an affine
+contradiction. Changing a projected storage coefficient breaks row license.
+(4) Complete signed-pair/storage maps must reject a missing coordinate, altered
+minus sign, doubled RHS, wrong parent factor or a free variable accidentally
+marked as an old pivot. Decimal near-equality is not exact equivalence.
+
+Usefulness and limits
+One new independent row cuts one dimension from the old445-free affine chart,
+so it is an exact, structurally different response to a finite formal failure.
+It may be redundant or inconsistent; an independent row may force the repaired
+seed farther outside the cone. Preserving all other free coordinates is a
+deterministic repair rule, not a nearest-point projection in a cone metric.
+The X7 feedback is now a learned constraint and cannot remain labelled heldout
+for the next repaired candidate. Passing it proves only that one point's formal
+row. Prime arithmetic information, universal nonconstant identity, scalar budget,
+initial storage control and all-scale/RH conclusions remain open. A later fresh
+scale/probe needs a separate preregistration rather than silently reuse this row.
+
+Exact cache evidence and aggregate work
+A sparse normalized chart cache is useful only if its license binds the complete
+source equations/RHS, coordinate projection, all normalized rows/pivots and
+free-coordinate partition through mathematical reconstruction/checks. A cache
+file or a claimed rank alone is not evidence. Once this exact data is verified
+and retained as publication evidence, future fixed-row incorporations can use
+the licensed normalized sparse chart without repeating dense elimination.
+It still does not authorize skipping full endpoint-equation verification.
+No precautionary hash/archive sweep belongs to this protocol.
+
+One joint job reserves50m preparation including20m tests,150m producer and250m
+independent audit, total450m. Every stage must use one cumulative budget across
+loading/parsing, projection checks, row elimination, descending substitution,
+full equation reconstruction, cone checks and output/serialization. The audit
+must not reset the250m between source/chart replay and endpoint checks. Bounds
+on4096-bit operands/results imply at most8193-bit rational operation temporaries;
+row fill and rational denominator growth need checks before large allocations.
+A resource failure isUNKNOWN and no partial repaired vector/cache is licensed.
+6GiB memory and3600s deadlines are separate containment limits, not completion
+or feasibility guarantees. Source-cache replay is forbidden in this review.
+
+Actual implementation review and corrections
+Reviewed NEW primitive_state_feedback_affine.py and
+check_primitive_state_feedback_affine.py, including full final verify_feedback.
+Producer reduction sorts all old pivots ascending; both substitution routines
+sort all combined pivots descending. Independent replay checks every original
+source row and each exact multiplier, including omitted augmented rows reducing
+to zero, before licensing the old chart. Complete endpoint checks use original
+1957 columns and the new full row, followed by all scalar signs and PSD blocks.
+Rank branches are correctly distinct: redundant coefficient/augmented779/779,
+independent780/780 with444free, inconsistent779/780 with no usable chart or
+endpoint and no new free-dimension claim. All global/admission flags remainfalse.
+Core verification assumes the necessary-row input was already independently
+licensed as the fixed publication023 row by the whole audit/input contract;
+its reduction checks alone do not prove a supplied row came from the grammar.
+
+Concrete issues reported during code review:
+- Producer passed cached original.specs list-of-pairs to a helper requiring a
+  dict. Frozen cache constructor explicitly uses a list; strict conversion is
+  needed before full15 geometry validation.
+- Chart free_indices initially retained all445 old free coordinates after an
+  independent new pivot was appended. Final free_indices must exclude that
+  pivot (444); retain old_free_indices under a separate explicit name.
+- Producer live-cell checks omitted decoded original columns while projected
+  rows and normalized chart were retained. Carry combined resident mapping
+  cells across phases. Independent decoder initially also omitted its second
+  column/row mapping copy; owner corrected that live proxy.
+- Reusing frozen PSD helper could allocate an unchecked triple-product temporary
+  of12288bits. Independent owner replaced it with bounded pairwise add/mul;
+  producer PSD witness should likewise use budgeted operations, including its
+  zero-pivot cross-direction division.
+These fixes are required for faithful schema/resource semantics; none implies
+that a numerical or exact candidate is feasible.
+
+NEW test_primitive_state_feedback_affine_soundness.py:10 tiny tests passed in
+0.180s. Tests cover leading free coefficient with later old pivot, unsorted
+old pivot insertion order, redundancy/contradiction without RHS-as-variable,
+complete signed/storage projection and canonical lift, altered storage/pair
+signs, missing zero-coordinate partition, wrong matrix geometry, changed old
+and new RHS at endpoint, exact zero-pivot nonzero-cross PSD failure, and work/
+bit caps. No actual cache, stored seed, necessary publication row or fresh probe
+was evaluated. Owners will run one combined integration suite after corrections;
+this review does not duplicate the real replay before the parent freezes it.
+
+Final bounded readback
+Producer now strictly converts source.specs to the expected dict representation;
+chart records have old_free_indices separately, combined pivots and final
+free_indices excluding the new pivot; combined resident-column/projected/chart
+counts are carried through phases; zero-cross witness division is budgeted.
+Independent chart expectation uses the same explicit old/final partitions.
+The reported implementation issues are resolved by inspected source changes.
+The new memo and synthetic tests are ready to freeze. No further test runs or
+research computations were performed for this final readback.

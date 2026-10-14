@@ -1,0 +1,21 @@
+{
+  "schema": "mobius-divisor-correction-development-v1",
+  "runs": [
+    {
+      "tests": 10,
+      "returncode": 0,
+      "operations": 5840189,
+      "elapsed_seconds": 0.04256902198540047,
+      "failures": []
+    },
+    {
+      "tests": 1,
+      "returncode": 0,
+      "operations": 1051128,
+      "elapsed_seconds": 0.29521241900511086,
+      "failures": []
+    }
+  ],
+  "unique_new_synthetic_tests": 11,
+  "final_status": "PASS"
+}

@@ -1,0 +1,121 @@
+Independent finite dense-divisor completion082 checker scope
+
+Owned checker: check_mobius_dense_completion_082.py.
+Tests: test_check_mobius_dense_completion_082.py.
+Receipt: mobius_dense_completion_checker_082_development.json.
+18 distinct tests,20 executions,19 passed executions and one retained failed
+expectation. The test expectation was corrected; only the affected test reran.
+Final status PASS. No frozen file, producer import, science query, old test,
+subagent or hash was used. Frozen073 rational arithmetic and integer-root
+primitives are reused explicitly; source/group/SDD reconstruction is new.
+
+Schema is exact dense-divisor-completion-v1. Kernel is normalized sorted
+unique positive integer divisors with nonzero canonical rational weights.
+Memory1..3; rays have positive weights and memory-dimensional coefficients.
+Drift multiplier1..2. Each profile has scale>0 and0<eta<=1. Arbitrary
+canonical rational denominators are admitted subject to4096 input bits and
+100000 intermediate/power bits; there is no gamma denominator whitelist.
+Theta has one(memory+1) row per profile and entries[-16,16]. Gram weights
+have memory+1+profile_count entries in[0,16]. Metadata/proof flags in the
+program are rejected. Source binding to original historical kernel remains
+an external required admission, never inferred from an artifact label.
+
+build_model(program,u,meter=None) is a raising exact mathematical helper.
+It returns program,u,N,cuts,features,counts,squarefree_count,T,group_count,
+normalization. N=u//minimum_kernel_divisor. Coordinates are ALL squarefree
+positive n<=N including1. An independent Eratosthenes square-strike sieve
+constructs squarefree prefixcounts; no mu signs or factor-source cache is
+read. Quotient breakpoint/source endpoint unions partition all coordinates.
+Identical complete feature tuples are globally merged and sorted rational
+lexicographically. Counts are exact; zero-count classes are omitted.
+
+For each source coordinate i, f_i(n)=sum b_d1[n<=u//(2^i d)].
+Each profile cutoff K=min(N,floor(scale*u^eta)), decided by certified
+integer powers/root. C_K(n)=floor(K/n)-1[n=1] forK>=1, and zero forK0.
+By sum_{n<=K}mu(n)floor(K/n)=1, its ordinary-mu linear form is exactlyzero.
+The complete cofactor unit is retained; squareful mu coordinates vanish.
+H=e0e0^T+sum weight*a*a^T and T=embedH-rshiftH retain the original
+unnormalized joint drift with all memory/half delays, floor endpoints and
+prime/composite pairs. No thin ratio bank is substituted for the target.
+
+corrected_matrix(model,meter=None) computes A directly, independently of a
+producer lowrank or LP expansion. For groups g,h with feature tuples x,y,
+A_gh=count_g count_h [f_g^T T f_h
+ +sum_ji theta_ji(C_j(g)f_i(h)+f_i(g)C_j(h))
+ +sum_t gram_weight_t feature_t(g)feature_t(h)].
+The factor2 on identical mixed terms is therefore explicit. Normalization
+z_g=(sum of mu in group)/count_g gives |z_g|<=1. Theta terms vanish at
+ordinary mu and nonnegative Gram terms are ADDED, so corrected quadratic
+is an upper bound for the full original drift, rather than a subtraction
+of a positive form.
+
+verify_certificate(program,u,certificate,meter=None) independently checks
+EXACT keys group_count,squarefree_count,price,row_prices. Each row price
+is max(0,A_gg+sum_{h!=g}|A_gh|). The total price is their exact sum.
+D-A is symmetric diagonally dominant with nonnegative diagonal and hence
+PSD: its quadratic is the sum over g<h of |A_gh|(z_g-sign(A_gh)z_h)^2,
+plus any remaining nonnegative diagonal slack. Consequently the full
+ordinary-mu drift<=z^TAz<=sum d_g z_g^2<=price. Admission status is
+VERIFIED_FINITE_DENSE_UPPER_BOUND. Malformed/tampered inputs return INVALID;
+resource rejection returns INVALID with resource_limitTrue. No silent
+truncation or unresolved rounding can produce an admission.
+
+Meter reports ops and peak_bytes, with prospective4GiB/work3e11 gates.
+Horizon<=4000000, groups<=1024, profiles<=32,kernel<=128,rays<=10000 are
+explicit finite resource grammar limits. The huge horizon gate precedes
+sieve allocation. Matrix work/memory is gated before construction using
+actual common denominator/numerator bit sizes and full term counts, not
+fixed bytes per pair. No per-profile dense Z tensor is retained. Independent
+root gates precede source allocation. All resource failures are explicit.
+
+Tests cover independent pointwise feature/count enumeration, full exact
+matrix/price, unit correction, actual tiny full drift, prime/squarefree
+support, fractional17/31 roots, arbitrary scale and K0, factor-two/count
+mutations, source endpoints, positive Gram sign and theta mutation, empty
+horizon, grammar/false proofflags, canonical rationals, bool rejection,
+huge-memory/power rejection before mocked sieve allocation and work/matrix
+memory gates. Finite μ appears only in tiny generic test fixtures.
+
+The profile identities and algebraic SDD rule apply at every u where the
+complete construction is admitted. Fixed program coefficients thus define
+a genuine growing operator. NO uniform upper growth price is proved by a
+finite certificate or by this checker: a separate uniform law for row
+prices and complete base/source transfer are still required. Outputs
+always keep uniform_growth_provedFalse,uniform_original_source_bound_proved
+False,uniform_source_bound_provedFalse,RH_provedFalse. Complete target and
+prime-edge flags mean algebraic retention, not verified cancellation or
+uniform recurrence closure. Current module does not certify LP optimality. An exact finite grammar-price
+dual lower bound is supplied as described below.
+
+Exact finite grammar-price dual extension
+verify_price_dual(program,u,certificate,meter=None) accepts EXACT lambda,nu,
+lower_bound keys. Lambda length is G with0<=lambda<=1; nu lengthG(G-1)/2
+is ordered lexicographically g<h, with |nu_gh|<=lambda_g+lambda_h.
+Complete source grouping is independently reconstructed. L(A)=sum lambda_g
+A_gg+sum_(g<h)nu_gh A_gh uses each offdiagonal ONCE. Thus L(A) is no greater
+than sum_g max(0,A_gg+sum_h!=g|A_gh|).
+
+All template functionals are computed via small feature contractions; no
+dense per-template matrix is constructed. The symmetrized contraction has
+nu*count_g*count_h/2 times(fg_i fh_j+fg_j fh_i), guaranteeing correct
+offdiagonal and mixed factor2 conventions. L(A0), every L(Z_ji), and every
+L(vvT) are computed separately. Independent minimization over theta[-16,16]
+and Gram weights[0,16] gives EXACT
+ LB=L(A0)-16 sum|L(Z_ji)|+16 sum min(0,L(vvT)).
+The supplied lower_bound must equal LB, including negative bounds. This
+certifies a lower bound for the best finite SDD PRICE over the entire box
+grammar, independent of the program's current theta/Gram parameters. It is
+not a lower bound for actual ordinary-mu drift or a claim of LP optimality.
+Status VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND; source binding external,
+uniform_price_lower_bound_provedFalse,actual_signed_drift_lower_bound_proved
+False, all original/source/RH growth flags remain false.
+
+Raw nu/lambda strings are prospectively memory-admitted before Fraction
+parsing. Further work/intermediate/common-denominator gates cover exact
+contractions. Six new distinct tests independently reconstruct all matrix
+template functionals and factor/sign conventions, feasibility/array shapes,
+price tampering, grammar parameter independence, validity against several
+box corners, zero/empty/negative lower bounds, and nu parsing memory gates.
+The memory regression was strengthened and only that test reran; all four
+attempts and the original failed expectation remain in the development
+receipt. Final combined development status PASS.

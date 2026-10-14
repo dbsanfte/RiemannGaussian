@@ -1,0 +1,189 @@
+DENSE DIVISOR-INCIDENCE DUAL CERTIFICATE DESIGN082
+
+Disposition
+
+One implementable next pilot is exact quadratic dual-certificate synthesis,
+with divisor-incidence zero relations as dense signed multipliers and a
+geometry-priced diagonal remainder. It must search for an actual algebraic
+certificate, not calibrate another maximumU/u. A successful all-scale
+certificate would prove a new source drift estimate. There is presently no
+reason to predict feasibility at RH strength. An honest082 outcome may be
+an exact infeasibility witness for a bounded grammar. This is a different
+proof obligation from081's paid sparse auxiliary packet; the proof target
+is the whole signed drift and its dense prime/composite interactions.
+
+This review read066 complementary convolution,069 mixed-cutoff convolution,
+073 asymptotic/candidate storage reviews, and074 centered-storage reduction,
+without old scientific replay, tests, hashes or frozen edits. It derives new
+algebra below; no additional external analytic theorem is needed.
+
+1. Precise target and exact zero relations
+
+Let Y=floor(u/dmin), f_i(n;u)=sum_d b_d 1[2^i d n<=u], n<=Y.
+Let T=embedH-r shiftH be the fixed081 drift matrix. On actual X_n=mu(n),
+D(u)=sum_nm K_u(n,m)X_nX_m, K=f(n)^T T f(m), equals literal
+E(u)-r E(floor(u/2)). Keep ordered sums here; physical unordered coefficients
+are2K(n,m) for n<m. Introduce X_0=1 and X_1=1. The exact linear rows are
+
+ C_t(X)=sum_(d|t) X_d-delta_(t,1)X_0=0, 1<=t<=Y.
+
+Every row uses indices insideY. These rows encode all ordinary mu values
+recursively: X_t=delta_(t,1)-sum_(d|t,d<t)X_d. They do not encode a norm
+estimate. For actual primes, R_p(X)=X_p+X_0=0 is a valid explicit row,
+and squareful X_n=0 can be admitted when independently factored. These
+facts must not be replaced by free independent signs after substitution.
+
+Given multiplier linear forms L_t(X)=sum_m ell(t,m;u)X_m, the quadratic
+Z=sum_t L_t C_t is exactly zero. This has dense prime/composite cross terms
+when ell is a rectangle kernel, including arbitrary m independent of t.
+It is valid without t*m<=Y: the row arithmetic horizon is t, the multiplier
+index horizon is m, and the monomial product needs no mu(t*m) query.
+A construction using a NEW divisor row at t=pq instead does need horizon
+pq, potentiallyY^2. That is a distinct, expensive extension and must not
+be silently admitted using the original horizon.
+
+2. Certificate which would actually pay the desired obligation
+
+Search for the following coefficient identity, as a polynomial in ALL
+formal coordinates X_0,...,X_Y, before actual arithmetic substitution:
+
+ D(X)=c(u)X_0^2+sum_(n=1..Y)h(n;u)X_n^2
+       -sum_alpha w_alpha(u)[A_alpha(X)]^2
+       +sum_t L_t(X)C_t(X)+sum_p B_p(X)R_p(X).
+
+Require h>=0, w>=0, independently exact rational coefficients and a paid
+geometric price c(u)+sum_n h(n;u)<=C*u^q. The sign of c alone need not be
+positive; its upper price must be proved. All SOS factors are subtracted,
+so their actual values require no upper estimate. Substitute actual mu,
+use mu(n)^2<=1, and obtain D(u)<=C*u^q. The finite base and H>=source square
+then close the usual normalized recurrence when r/2^q<1. This certificate
+pays whole drift; there is no residual calledU left outside the identity.
+If the identity contains a remaining signed kernel, it is CONDITIONAL and
+must be exported explicitly as an unpaid kernel, not assigned a fittedC.
+
+A rational Gram matrix can replace explicit squares only with exact PSD
+admission (LDL with nonnegative pivots, including singular consistency).
+Floating eigenvalues are proposal-generation data. All coefficient signs,
+ordered/unordered factors, constant/linear X0 terms and unit conventions
+must be independently checked. A certificate at one finiteu proves only
+that oneu; uniformity needs a finite symbolic construction valid forallu.
+
+3. One concrete bounded search grammar
+
+Use the current original kernel, r=3/2, q=1 and a small fixedH roster.
+Define scale profiles phi_j(t;u) as rational step functions supported on
+fractional intervals (a_j u,b_j u], with all endpoints interpreted by
+integer comparisons. Include literal kernel/delay profiles and their
+cutoff complements. Their divisor-incidence feature is
+
+ V_j(n;u)=sum_(k>=1,kn<=Y) phi_j(kn;u),
+ gamma_j(u)=phi_j(1;u).
+
+Thus Z_j(X)=sum_n V_j(n;u)X_n-gamma_j(u)X0 is EXACTLY
+sum_t phi_j(t;u)C_t(X). CountsV_j are finite sums of floors; no arithmetic
+source values enter their coefficients. Let psi_l(m;u) be a separate
+finite step dictionary containing the full source delay profiles. Candidate
+multipliers are ell(t,m;u)=sum_jl theta_jl phi_j(t;u)psi_l(m;u),
+with rational theta to be synthesized. This is a genuine dense rectangle:
+Z=sum_jl theta_jl Z_j(X)Psi_l(X), retaining signed cross terms jointly.
+Allow one nonseparable next layer ell(t,m)=phi_j(t)psi_l(m)1[m<=t]
+only if the checker supports its exact divisor coefficient formula; do
+not assume it is covered by the separable compiler.
+
+For the first pilot, use separable rectangles, diagonal h from a nonnegative
+rational step dictionary and SOS factors from the joint feature list
+{X0,source-delay forms,Z_j,Psi_l}. Unknown coefficients are finite-dimensional.
+A finite exact SDP/LP proposal can be generated on multiple small quotient
+cells. Convert rational candidates into a symbolic coefficient certificate
+and check it on the full all-scale grammar; otherwise retain only FINITE
+CERTIFICATE status. Primitive equalities among templates should be quotiented
+before searching, to avoid awarding identity-only factors a control score.
+
+This is implementable with streaming divisor-incidence arrays in O(Y logY)
+work, compressed feature matrices of O(JY), and a small Gram SDP. There is
+no reason to materialize the Y-by-Y dense drift/rectangle matrices. A finite
+coefficient check can stream pairs or verify the equivalent factored matrix
+identity; its prospective gate must account for whichever algorithm is used.
+A 16GiB/7200s pilot should start below the existing million-scale horizon,
+with perhaps <=16 profiles and <=32 Gram features, not promise an unrestricted
+all-pairs exact SDP. Exact bit growth and Gram rationalization are independent
+resource gates. Fresh validation concerns finite certificates only.
+
+4. What is genuinely new and what merely repeats066/069
+
+For separable ell, the zero relation is the familiar complete convolution
+sum_n mu(n)V_j(n)=phi_j(1). This is precisely the arithmetic contraction
+mechanism already reviewed066. Writing that scalar identity once more is
+not a082 achievement.069 already supplied mixed-cutoff polynomial identities
+and showed unsigned Cauchy/Gram/Abel prices can retain linear-scale barriers.
+074 already shows exact centered prime-dilation children do not supply a
+power gain or contraction under their growing positive triangle price.
+
+The proposed new experiment must therefore search a signed quadratic dual
+identity for the COMPLETE indefinite drift before any norm, and require its
+only surviving upper-price term to be a geometry-paid diagonal. The useful
+new output would be such a certificate, or an exact dual witness excluding
+it in this grammar. Merely finding dense Z, a smaller coefficient norm,
+a finite successfuldrift, or a new representation of the same source is not
+payment. Negative SOS terms are retained algebraically rather than replaced
+by norms; that distinguishes the target from069's failed unsigned backend.
+
+5. Strong obstructions and noncircularity guards
+
+The full incidence matrix on1..Y is triangular with unit diagonal. Therefore
+its linear equalities have the UNIQUE solution mu. In principle any quadratic
+can be reduced to its actual scalar using these equations. A certificate
+whose multiplier coefficients are obtained by solving against the actual
+mu vector or its target value has merely encoded the answer. Disallow source
+prefixes, Mertens values, fitted maxima, savedU, and arbitrary per-n coefficients
+in multiplier/SOS/diagonal templates. Only rational fixed coefficients,
+integer divisor geometry, registered profiles and explicitly fixed prime/
+squareful facts may determine them. A coefficient construction may be
+algorithmic in u, but its complexity and price require independent uniform
+proofs. Finite SDP discovery is legitimate invention; it is not that proof.
+
+The explicit prime rows also do not cancel the actual positive frontier.
+For distinct primesp,q, XpXq=1. The divisor identity atpq gives
+1+Xp+Xq+Xpq=0 and merely identifies Xpq=1. The prime pair contribution
+2H00 persists under this substitution. Any successful certificate must
+create compensating composite interactions elsewhere in the full quadratic,
+not claim that a prime row makes a positive constant disappear. The actual
+18324-prime081 frontier is the simplest concrete check of this requirement.
+
+At n>Y/2 there is only one multiplekn<=Y, henceV_j(n)=phi_j(n).
+Eliminating that top band through a convolution profile transfers its source
+coefficient into smaller n with floor/multiple weights. Those transferred
+coefficients and their signed correlations are the cost. Absolute pricing
+usually recreates the066/069 boundary or a macroscopic tail; source radius
+reduction alone supplies no gain. A certificate generator should print the
+transferred lower-band coefficient geometry rather than hide it in a solver.
+
+An all-scale q1 source drift estimate would imply an RH-strength bound for
+this registered source. It is therefore a major new arithmetic theorem,
+not an expected consequence of divisor inversion. This review neither proves
+it impossible nor supplies it. A uniform feasibility claim must exhibit the
+identity, positive Gram admission and diagonal price, not cite arithmetic
+uniqueness as a bound. With finite identities only, no RH statement follows.
+
+6. Recommended detector outcome and next decision
+
+Implement the bounded dual-certificate compiler/admission pilot, with an
+initial exact finite feasibility branch and a separate all-scale certificate
+branch. Search controls should be synthesized coefficients of multiplier,
+Gram and diagonal templates, not constants calibrating an unlinked remainder.
+Require nonzero full-source target, at least one genuinely cross-channel
+rectangle, exact coverage of the whole target kernel, and diagonal cost with
+proved q exponent. Baseline no-incidence feasibility is a useful ablation.
+
+If finite proposals succeed but no symbolic diagonal/PSD proof is available,
+report FINITE_ONLY and the exact remaining symbolic coefficient condition.
+If the bounded SDP is infeasible, export a rational dual witness and explain
+which admissible covariance violates the requested drift, without claiming
+it is the actual Mobius covariance. A relaxation can be infeasible for a
+valid actual bound. This still improves search: it identifies which additional
+nonseparable divisor/cofactor relation the current rectangle span lacks.
+
+Do not launch another full large-scale numerical drift study before this
+certificate grammar exists. The meaningful082 opportunity is a signed dense
+algebraic proof search with an honest obstruction channel, not one more
+sparse paid packet or a numericalC on the same unpaid dense frontier.

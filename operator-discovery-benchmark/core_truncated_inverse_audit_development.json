@@ -1,0 +1,14 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_audit_core_truncated_inverse",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+      "elapsed_seconds": 0.3916564350074623,
+      "operations": 1000,
+      "accounting": "conservative fixed reservation for two small exact-key comparison tests"
+    }
+  ],
+  "operations": 1000
+}

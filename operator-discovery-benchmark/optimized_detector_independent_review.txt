@@ -1,0 +1,21 @@
+Independent optimized default pipeline final review
+
+The NEW run_detector.py preserves historical sources and provides explicit search/transfer/legacy routing. Freeze snapshots its static local source closure and binds protocol/input/source seals before jobs. Workers recheck live/frozen hashes at entry/exit and reject unexpected imported local modules. Search preserves explicit boolean per-program slack policy, seals accepted training receipts and exact attempt hashes before final jobs, binds candidate-seal SHA in each final job and checks it before/after transfer and dispatch. Final weights are unchanged and full original polynomial identities receive independent sparse arithmetic validation. Runtime Python/scipy/numpy/python-flint versions and canonical dictionary hash are recorded. No global estimate or RH is promoted.
+
+Construction is SHARED with the previously calibrated independent factor builder, rather than two independent rebuilds. The sparse arithmetic verifier remains separate from floating proposal/native reconstruction and validates all source schemas, relation premises, complete original residual and exact expanded certificate. Exact-zero primal group products may be skipped, but source/weight dimensions and premises stay checked. Duals still require every generator. ColumnCache hashes full structural groups and resource limits, revalidates lhs, returns copied columns and binds per-process bounded reuse; adding scalar slack does not mutate cached structure.
+
+Bounded spawn parallelism uses default4/max8 workers, CPU affinity/quota clamps, optional per-worker address-space plus aggregate concurrency budget, single numerical threads, bounded job/results/inflight buffers and deterministic ordered outcomes. Aggregate receipt-cap preflight reserves the whole declared batch and returns all ordered missing if insufficient, avoiding scheduling-dependent survivor selection. Process timeouts terminate/kill/join; no serial fallback. Resource limits remain operation/byte proxies where stated and native elimination is not independently interruptible inside a call.
+
+Eighteen focused tests passed. Added actual subprocess tests use fresh tempfile destinations and tiny development scales only: Python -O rejects; false slack is retained; missing/nonboolean slack rejects before freeze; two training jobs keep deterministic order; candidate-seal mismatch is rejected; reused destination leaves receipt unchanged; protocol seal mutation rejects. No old frozen destination or source was changed. No mathematical/admission blocker remains in these reviewed versions. Source held stable for root's new freeze/run.
+
+SHA256:
+run_detector.py eaee9f2365ed420210083cb056778b3b9729f21701661963facd9d075e089bb5
+test_run_detector.py af31a47b25ffd60848c557e6836a4c83de4a9890484759e380292a8ed35cfc41
+detector_parallel.py 3ce0381e8b09e7a989864f36dcb54488d9c553f534a297269da803a2389e7260
+test_detector_parallel.py 13afc5551481f313a99dcb7b98899fdb6830327f1c44efe161da52c5551870ad
+cancellation_sparse_synthesis.py f6282e6a522df6a5fc746b376eafa4a97a9d01e43ed68c02ce5b3e977c68021b
+test_cancellation_sparse_synthesis.py 073a357044e1c0418d649d78fd8ba312804cee9a2cc1557dc6da5d06ccafdb8d
+exact_polynomial_column_cache.py 8d568486c2050359d3801ab0c3f2cc9059920d20b6734257370bf5e0716b5a50
+test_exact_polynomial_column_cache.py 6dfcd3ea956e76edbfe5fd5a62cb73c2332f105f044b5dcf2e3cdad434a88ea7
+check_grouped_arithmetic_sparse.py 731c1aa7147c77f8df16dd7be63d4a88e7aa61cc1e28e4ab12d8b7e363570492
+test_check_grouped_arithmetic_sparse.py 90ad611de681362d8bd9398cfa3b71913992f893a05bb67eea6eaac10a029fc9

@@ -1,0 +1,21 @@
+{
+  "owner": "root",
+  "modules": [
+    "test_core_weighted_height_search"
+  ],
+  "runs": [
+    {
+      "owner": "root",
+      "modules": [
+        "test_core_weighted_height_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=1864376\n",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 1.359s\n\nOK\n",
+      "operations": 1864376,
+      "elapsed_seconds": 1.5426505299983546
+    }
+  ],
+  "operations": 1864376,
+  "actual_source_observations": 0
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "prime-insertion-core-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 14222,
+      "elapsed_seconds": 0.3273889650008641,
+      "stdout": "SYNTHETIC_WORK operations=14222\n",
+      "stderr": "test_partial_proof_admission (test_prime_insertion_core_runner_056.IntegrationTests) ... ok\ntest_program_builders_match_independent_rules (test_prime_insertion_core_runner_056.IntegrationTests) ... ok\ntest_relations_discover_complete_insertion_words (test_prime_insertion_core_runner_056.IntegrationTests) ... ok\ntest_signed_tail_includes_every_word_term (test_prime_insertion_core_runner_056.IntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.005s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

@@ -1,0 +1,145 @@
+SIGNED ENERGY DEFECT: THE RH TARGET AND A CONTROLLED COMMON-FACTOR PART
+
+This is a targeted bound-decomposition audit. The common-factor construction
+and squarefree density argument are supplied analytic methods, not an operator
+selected without mathematical assumptions. All numerical outcomes stay finite.
+The FULL RH inequality remains unproved; no power saving is credited to it.
+The frozen earlier sources are unchanged. Only ordinary-zeta continuation,
+its Euler identity on Re(s)>1 and functional symmetry are needed for recovery.
+The arithmetic density proof below is elementary, with no PNT, sieve estimate,
+zero-density theorem, prime oracle or imported uniform sign-cancellation bound.
+
+1. THE TARGET, INCLUDING ITS QUANTIFIERS.
+Let M(x)=sum_(n<=x)mu(n), x>=1, with its step-function convention, and
+A(X)=Integral_X^(2X) M(t)^2 dt. For integer X, A is an exact integer
+sum of M(n)^2, X<=n<2X. Put Delta(X)=A(2X)-4*A(X).
+
+The RH-sufficient target is:
+for EVERY epsilon>0 there exists finite B_epsilon>=0 such that
+for EVERY dyadic X>=1, Delta(X)<=B_epsilon*X^(2+epsilon).
+A cofinal sequence epsilon_j>0 tending to zero suffices. Constants may
+depend arbitrarily on j, but NOT on X. Only an UPPER bound on the signed
+defect is required; negative defects do not have to be small.
+
+Indeed, with X=2^j, induction gives
+A(2^j)<=4^j*A(1)+B_epsilon*4^(j-1)*
+                 (2^(epsilon*j)-1)/(2^epsilon-1).
+Consequently A(X)=O_epsilon(X^(2+epsilon)). Holder on each dyadic block
+implies absolute Mellin convergence for Re(s)>1/2+epsilon/2. The identity
+Integral_1^infinity M(x)*x^(-s-1)dx=1/(s*zeta(s)), initially Re(s)>1,
+then rules out ordinary zeros in that half-plane. Letting epsilon tend to
+zero and using ordinary functional symmetry proves RH. This covers every
+off-critical multiplicity and height. A finite list of epsilons is insufficient.
+
+At epsilon=0 the same recurrence yields A(X)=O(X^2*log(eX)). For the
+UNFILTERED M this is stronger than necessary: Holder and a dyadic sum give
+1/zeta(1/2+h+i*t)=O_t(h^(-3/2)) as h->0+, so a critical-line zero of
+integer multiplicity >=2 would be impossible. Thus the fixed critical
+recurrence would also imply simple critical zeros. This is NOT an assumed
+fact about actual zeros and NOT an obstruction to its truth. The cofinal
+positive-epsilon target avoids requiring that extra statement. The earlier
+fixed-critical conditional recurrence theorem remains valid and unchanged.
+
+2. THE EXACT KERNEL, DIAGONAL AND OFF-DIAGONAL.
+K_X(n,m)=max(0,2X-max(X,n,m)). This equals the integral on [X,2X]
+of 1_(n<=t)*1_(m<=t). Therefore
+A(X)=D(X)+C(X),
+D(X)=sum_n mu(n)^2*K_X(n,n),
+C(X)=2*sum_(n<m)mu(n)*mu(m)*K_X(n,m).
+Let W_X(m)=K_(2X)(m,m)-4*K_X(m,m). The exact defect is
+Delta(X)=sum_n mu(n)^2*W_X(n)
+             +2*sum_(n<m)mu(n)*mu(m)*W_X(m).
+All contributing indices are at most 4X, with the final endpoint weight zero.
+No positivity of W or of the off-diagonal sum is asserted.
+
+3. A DENSITY BOUND AT EVERY SCALE AND MODULUS.
+For k>=1 and y>=0 let Q_k(y)=sum_(g<=y, gcd(g,k)=1)mu(g)^2.
+Write tau_rad(k)=2^omega(k), including tau_rad(1)=1. Then
+c_k=(1/zeta(2))*product_(p|k) p/(p+1), and
+|Q_k(y)-c_k*y| <=(tau_rad(k)+2)*sqrt(y).
+For y<1, Q_k=0 and c_k<=1, giving the same bound. For y>=1,
+mu(g)^2=sum_(d^2|g)mu(d), with gcd(d,k)=1 when g is coprime to k.
+The inner coprime count is phi(k)*Y/k plus an error at most tau_rad(k),
+by finite divisor inclusion-exclusion. There are at most sqrt(y) outer d.
+Replacing the main d sum by its infinite absolutely convergent value has
+error at most 2*sqrt(y); its Euler product is exactly c_k. This proves
+the bound uniformly in k and y without any prime-distribution assumption.
+The producer can evaluate c_k from divisor inverse coefficients alone:
+c_k=[sum_(d|k)mu(d)/d]/[zeta(2)*sum_(d|k)mu(d)/d^2].
+
+In particular, Q_1(t)=t/zeta(2)+O(3*sqrt(t)). Put
+J0=(2/3)*(2^(3/2)-1). The full diagonal obeys
+|D(X)-(3/(2*zeta(2)))*X^2|<=3*J0*X^(3/2),
+and hence
+|D(2X)-4*D(X)|<=3*J0*(2^(3/2)+4)*X^(3/2)
+for EVERY real X>=1. The leading X^2 term cancels exactly. This is a
+proved component bound, not a proof of the full energy defect.
+
+4. PRIMITIVE COMMON-FACTOR PROJECTION.
+For every n<m write n=g*a, m=g*r with gcd(a,r)=1 and a<r. Actual
+arithmetic satisfies
+mu(g*a)*mu(g*r)=mu(a)*mu(r)*mu(g)^2*1_(gcd(g,a*r)=1).
+Zero factors are retained. A divisor or coprimality relation is not a new
+independent distribution theorem. For an integer B>=1, let C_B(X) retain
+exactly the pairs with r=max(n,m)/gcd(n,m)<=B. Then
+C_B(X)=2*sum_(1<=a<r<=B, gcd(a,r)=1)mu(a)*mu(r)*
+                                      Integral_X^(2X)Q_(a*r)(t/r)dt.
+Define its continuous leading coefficient
+L_B=3*sum_(a<r<=B, gcd(a,r)=1)mu(a)*mu(r)*c_(a*r)/r,
+and the explicitly positive cost
+S_B=sum_(a<r<=B, gcd(a,r)=1)|mu(a)*mu(r)|*
+                                      (tau_rad(a*r)+2)/sqrt(r).
+The every-scale density estimate proves
+|C_B(X)-L_B*X^2|<=2*J0*S_B*X^(3/2),
+|C_B(2X)-4*C_B(X)|<=2*J0*(2^(3/2)+4)*S_B*X^(3/2).
+
+Since tau_rad(a*r)<=tau(a)*tau(r), and sum_(n<=B)tau(n)<=B*(1+log B),
+S_B<=3*B^(3/2)*(1+log B)^2. Thus with
+C0=6*J0*(2^(3/2)+4),
+|C_B(2X)-4*C_B(X)|<=C0*X^(3/2)*B^(3/2)*(1+log B)^2.
+This remains true when B is chosen separately at each X, provided the
+SAME B is used in BOTH terms of that scale's defect. Using B(2X) for
+the first term and B(X) for the second adds uncancelled leading terms.
+Changing the cutoff silently is not an admitted rewrite.
+
+For any rational 0<=beta<=1, B=floor(X^beta), the component power is
+gamma(beta)=3/2+3*beta/2, with a log^2(eX) loss. Any beta with gamma<=2
+therefore controls that component at every cofinal positive-epsilon RH
+scale. A frozen rational grammar may select the largest such coverage
+automatically; no expected cutoff is passed to the selector. For example,
+the power balance permits cube-root-growing primitive cutoffs. This is
+squarefree-density information applied to actual signed pairs; it does
+not establish a new prime-sign-cancellation estimate.
+
+5. THE REMAINING SUM IS NOT DROPPED.
+Define R_B(X)=C(X)-C_B(X), retaining EVERY primitive pair with r>B.
+For each scale and chosen shared B,
+Delta(X)=[D(2X)-4D(X)]+[C_B(2X)-4C_B(X)]
+                              +[R_B(2X)-4R_B(X)].
+For an RH-admissible cutoff power, the first two brackets have proved
+O_epsilon(X^(2+epsilon)) bounds. The EXACT remaining proof obligation is
+for every cofinal epsilon>0, a finite K_epsilon independent of X bounds
+R_(B(X))(2X)-4*R_(B(X))(X) from ABOVE by K_epsilon*X^(2+epsilon)
+at EVERY dyadic X. The shared parameter B(X) stays fixed within each pair.
+Proving this would prove the full target. It has NOT been proved here.
+
+Full expansion has about X^2 pair terms, each kernel weight O(X).
+Taking their absolute values gives power THREE, not the required power two.
+Common-factor subfamilies are sparse, so counting them alone gives better
+powers; it does not control the dense residual. A positive-coefficient
+control has full Delta of order X^3 while its fixed-B projection still has
+power two and a cancelled leading X^2 term. It explicitly disproves any
+inference from a controlled projection to a controlled full signed sum.
+
+6. EXPERIMENTAL HONESTY.
+The protocol, proof, code, cutoff grammar, training and validation scales,
+resource ceilings and selection rule are frozen before outcomes. The target
+is unfiltered actual Mertens energy: this is a recovering calibration, not
+a historically new operator. Every common-factor cutoff is retained, with
+resource exhaustion recorded as missing. Final dyadic scales and generic
+geometry cases are generated after selection is sealed and withheld from
+the worker. Independent prime arithmetic checks the producer's full divisor
+inverse prefix, then primitive factor identities, exact whole energies,
+diagonal defects, signed projections, density costs and the residual.
+Selected finite residual fits are conjectural, never global certificates.
+No source outcome is mutated and no failed pilot is reused as fresh data.

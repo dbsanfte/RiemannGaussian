@@ -1,0 +1,98 @@
+{
+  "status": "verified_finite_divisor_dual_candidates_frozen_for_separate_analytical_review",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/divisor-dual-results/pilot-001",
+  "program_count": 72,
+  "anonymous_kernel_exact_admission": true,
+  "learned_zero_forcing_masks": [
+    {
+      "kind": "above",
+      "threshold": 1
+    }
+  ],
+  "adaptive_mask_promotion_exercised": true,
+  "equal_slot_ablation_preserved": true,
+  "ablation_comparison": [
+    {
+      "mode": "primary",
+      "best_program_id": "bf2896763051737e1eb78847a99d979ac3c0926b9190cbd473d883720e81711b",
+      "best_validation_score": {
+        "program_id": "bf2896763051737e1eb78847a99d979ac3c0926b9190cbd473d883720e81711b",
+        "positive_matrix_cases": 6,
+        "total_cases": 6,
+        "maximum_charged_bound_over_generic": "200/7347",
+        "cofinal_matrix_family_ruled_out": false,
+        "global_critical_PSD_proved": false
+      },
+      "extra_profiles_per_mask": 12,
+      "extra_mask_slots": 1,
+      "same_response_and_scalar_profile_budget": true,
+      "global_critical_PSD_proved": false
+    },
+    {
+      "mode": "promotion_disabled",
+      "best_program_id": "1fdbfb4461f52c2bb2420da4078aa784f8387dc12d2ca3e16a82d75aa0f20e95",
+      "best_validation_score": {
+        "program_id": "1fdbfb4461f52c2bb2420da4078aa784f8387dc12d2ca3e16a82d75aa0f20e95",
+        "positive_matrix_cases": 6,
+        "total_cases": 6,
+        "maximum_charged_bound_over_generic": "5920/7347",
+        "cofinal_matrix_family_ruled_out": true,
+        "global_critical_PSD_proved": false
+      },
+      "extra_profiles_per_mask": 12,
+      "extra_mask_slots": 1,
+      "same_response_and_scalar_profile_budget": true,
+      "global_critical_PSD_proved": false
+    }
+  ],
+  "proof_queue_candidates": 12,
+  "proof_queue_frozen_before_final": true,
+  "analytical_results_must_not_change_frozen_candidates": true,
+  "fully_charged_whole_signed_defect_retained": true,
+  "actual_prime_inverse_arithmetic_independently_checked": true,
+  "fresh_scales": [
+    30,
+    32,
+    64
+  ],
+  "fresh_levels": [
+    9,
+    10
+  ],
+  "fresh_matrix_cases": 49,
+  "fresh_positive_matrices": 32,
+  "fresh_negative_matrix_directions": 17,
+  "fresh_missing_certificates": 0,
+  "global_generic_energy_power": "3",
+  "global_critical_matrix_PSD_proved": false,
+  "global_full_defect_bound_proved": false,
+  "negative_matrix_witnesses_are_not_RH_counterexamples": true,
+  "finite_dual_can_reexpress_existing_finite_signed_bound": true,
+  "new_independent_prime_distribution_estimate": false,
+  "arbitrary_rational_exponents_have_semantics": true,
+  "semantic_denominator_cap": false,
+  "guided_features_and_certificate_methods_supplied": true,
+  "negative_controls": {
+    "generic_inverse_norm_does_not_transfer": true,
+    "generic_model_not_actual_zeta": true,
+    "selected_prime_row_constraints_are_not_complete_inverse": true,
+    "finite_PSD_is_not_global_PSD": true,
+    "negative_matrix_direction_is_not_actual_RH_counterexample": true
+  },
+  "independent_native_counts": {
+    "exact_matrix_cases": 1346,
+    "exact_positive_Sylvester_minors": 29488,
+    "missing_native_certificates": 0,
+    "finite_positive_matrices": 628,
+    "exact_negative_quadratic_witnesses": 718,
+    "actual_signed_defect_finite_bounds": 32,
+    "independent_prime_inverse_coefficients": 256
+  },
+  "verified_checks": 10,
+  "verification_sha256": "e642a816c2eb0ef81a16a0abe53b84f19d0d7719db754913bca07ae7596a7736",
+  "proof_queue_sha256": "bc474b571acb73661879e38b055badbc0278c8c17fd3d0f8950fe373a0bf55e6",
+  "mathematical_audit_imports_production_code": false,
+  "machine_formalized": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

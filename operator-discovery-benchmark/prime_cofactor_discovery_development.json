@@ -1,0 +1,22 @@
+{
+  "module": "prime_cofactor_discovery.py",
+  "command": "../.venv/bin/python -B -m unittest -v test_prime_cofactor_discovery",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "unittest_elapsed_seconds": 0.125,
+  "synthetic_sources_only": true,
+  "actual_core_discovery_run_before_freeze": false,
+  "old_studies_or_suites_rerun": false,
+  "hashes_created": false,
+  "integration_correction": {
+    "finding": "Independent checker identified a SymPy boolean that must be a native JSON boolean.",
+    "change": "Explicit bool conversion for the frontier rejection flag.",
+    "affected_test_command": "../.venv/bin/python -B -m unittest -v test_prime_cofactor_discovery.Discovery.test_frontier_leading_sign_and_fractional_exponent",
+    "tests_run": 1,
+    "failures": 0,
+    "errors": 0,
+    "unittest_elapsed_seconds": 0.030,
+    "unrelated_tests_rerun": false
+  }
+}

@@ -1,0 +1,193 @@
+Semantic structural discovery, prospective pilot002: independent soundness review
+
+Review scope
+This memo reviews the new contract and, when available, the implementation as
+source. It performs no arithmetic research evaluation, score computation,
+synthetic test execution, hash calculation or modification of frozen pilot001
+files. The reviewer owns only this new memo. Review of code and test source is
+not a second development or independent arithmetic run. Sources reviewed are
+semantic_potential_discovery.py, run_semantic_potential_discovery.py,
+potential_candidate_semantics.py and check_potential_candidate_semantics.py,
+along with the unchanged arithmetic interfaces and the new test source when
+available. All three new test modules have now been reviewed as source. Owned
+implementation sources were reported stable before this memo was finalized.
+
+Target and admission boundary
+The target is the complete original actual-Mobius energy E, with W=E+V and V
+a sum of nonnegative weighted exact squares. The finite interpreter evaluates
+each complete parent and child program in its own context, including W(1).
+Its exact rational output and an independent matching output certify only the
+saved finite cases. Mechanism annotations, successful finite inequalities and
+selector exposure do not certify the cofinal-q universal inequality.
+
+Conditional telescoping has a clear premise: one fixed program, some q0, and
+for every integer q>=q0 a finite constant Cq independent of every dyadic X>=1
+such that W(2X)-W(X)<=Cq*ceil(X^(1/q)). For X=2^K this implies
+ E(X)<=W(1)+2*Cq*(X^(1/q)-1)/(2^(1/q)-1).
+Thus nonnegative V and the initial W(1) must both be retained. A finite search
+over q=2,3,6,12 neither establishes the cofinal quantifier nor permits choosing
+a different program as X or q changes. Stored-constant failures refute the
+stored finite claim; they do not rule out all future constants or programs.
+
+What the new grammar contributes
+The declared mutations change argument maps and factor placement in complete
+ASTs. They can produce actual coupled signed states rather than another
+coefficient fit to a fixed feature list. For example mu(floor(t/p)) inside a
+prime sum is not the constant prime-domain factor mu(p)=-1. Nevertheless a
+syntactic odd factor is not evidence of cancellation: coinciding arguments,
+common factors, zero summands and source/domain restrictions can remove the
+claimed variation. Unknown reductions must remain unknown. Top-level mechanism
+labels describe syntax and proved elementary norm laws, not a solved analytic
+mechanism. Finite grammar choices and mechanism quotas remain design bias.
+In particular a top-level mask label can contain a coupled_sum, coupled_bank
+or nonlinear core. The final selection rule uses that recognized core for its
+structural slot and retains the mask annotation. Unclassified masks stay
+conservative; the label never proves absence or presence of useful cancellation.
+
+Candidate-generic analytic obligations
+For U=sum_a c_a F_a, every diagonal c_a^2 F_a^2 and every pair term
+2*c_a*c_b*F_a*F_b belongs to U^2. Placing a source factor inside one summand
+changes these pair terms; separate diagonal estimates do not control them.
+Products of unresolved states require the corresponding higher correlations
+or a valid alternative estimate. Coincident Mobius indices can reduce squares
+to squarefree gates, but cannot justify independence of the surviving terms.
+A whole-state point factor has a norm-mask interpretation on actual Mobius
+data while the other state can retain its original signed prefix correlations.
+
+For a moving bank, use the union of the parent and child index sets. Separate
+common indices with changed coefficients/arguments, added indices, and removed
+indices. A nested prime bank still has old/new and new/new pair contributions;
+an entry count alone does not bound them. A changed modulus generally gives
+nonnested residue or coprime domains, requiring both gained and lost terms.
+Source convolution or full-domain identities require their exact truncation
+complements; a familiar identity with a different kernel supplies no bound.
+
+One useful exact bookkeeping device is a parent-parameter extension Ubar_X(t)
+to the entire child block, whose source/domain validity must be established.
+Write K_X(t)=U_{2X}(t)-Ubar_X(t). Then the contribution of this square to DeltaV
+is its frozen-parameter transport
+ T_X=(4X^2)^-1 sum_child Ubar_X(t)^2-X^-2 sum_parent U_X(t)^2
+plus (4X^2)^-1 sum_child [2*Ubar_X(t)*K_X(t)+K_X(t)^2].
+This includes moving cutoffs, masks and argument maps; multiple states and
+weights require their corresponding terms. It is an identity, not an estimate.
+
+A prospective proof must close a signed drift estimate, for example by showing
+DeltaE+T_X<=-A_X+F_q(X) and the complete transition correction<=A_X+G_q(X),
+with A_X>=0 and F_q+G_q<=Cq*ceil(X^(1/q)) uniformly in dyadic X. Other valid
+proof forms are possible, but an unknown energy on the right must be absorbed
+with justified constants or supplied with an independent bound. Cauchy-Schwarz
+against the desired target energy alone merely reintroduces the unresolved
+estimate. A modulus/prime-count dependent constant is not Cq independent of X.
+A fixed positive power loss is insufficient for all cofinally large q.
+
+Standalone root-prefix squares with root exponent at most 1/2 are uniformly
+bounded using |M(n)|<=n and the block normalization. Adding such bounded V
+changes a cofinal DeltaE inequality only by a constant shift; that equivalence
+does not prove either inequality. A root prefix mixed inside an unresolved
+square retains its cross term, whose bound does not follow from bounded padding.
+Pointwise ordering of potentials does not order their signed innovations.
+
+Exposure and selection review
+The fixed common validation set and separate candidate-specific diagnostics
+prevent unequal diagnostic counts from changing the common failure ranking.
+AST-only scale choice precedes responses. Effective exposure must respect both
+parent X and fresh child 2X, and the complete t ranges in both blocks. Integer
+root endpoint computations are appropriate; a clipped root may remain dormant
+through several raw changes. Prime banks change at prime entry, not at every
+raw integer cutoff. Coprime masks can depend only on the radical; other residue
+masks need their own exact semantics. Zero or norm-zero bank terms can make a
+raw bank entry ineffective. Unsupported semantics must be marked unknown,
+and exhausted generation/exposure allowance must be marked unexposed.
+
+Two extra bases can diagnose a first later regime within the declared horizon.
+They do not cover every later selector transition, every prime, or cofinal X.
+Even an exact effective-selector signature need not imply a different complete
+candidate function or a new arithmetic estimate. Diagnostics should disclose
+the syntactic/selector scope of their effectiveness claim. The separately
+reported cases can inform subsequent analytic review without retrospectively
+changing this run's training fits, shared ranking or final scale declaration.
+
+Calibration quotas and exploration slots prevent small bounded or target-copy
+states from occupying the entire batch. They do not establish that a selected
+state beats the baseline or carries useful signed control. Baseline comparison,
+unknown cases, aliases and bounded-padding status must remain visible. The
+initial W(1) anchoring prevents selection from silently discarding initial cost.
+Some validation/final bases are not dyadic. Their records correctly identify
+this; using their failures in finite ranking is an additional design preference,
+not a refutation of the exported dyadic claim.
+
+Resources and independent scope
+The complete reservation is 450m: 40m preparation,15m generation/annotation/
+selection/exposure,145m discovery,100m final,150m sole independent audit. All
+work for annotation and exposure, including exact selector arithmetic, must be
+charged within its stage; synthetic receipts accumulate across permitted
+targeted repairs and the sole frozen combined suite. Caps are 6GiB,6m live
+cells including the fixed1m wrapper reserve,4096 exact bits,8MiB artifacts and
+3600s per stage. No failed audit licenses a second actual independent run.
+
+Independent arithmetic and independent semantic reconstruction establish the
+saved finite values and annotation agreement within their declared scopes.
+Generation and exposure replay share root logic, an explicit limitation which
+targeted boundary test source and this review can inspect but cannot erase.
+Source-byte equality protects frozen scripts without a hash dependency. Neither
+these resource checks nor annotation agreement proves universal signed control.
+
+Concrete source review
+The generator contains genuine factor-in-summand, signed-pair, gcd-conditioned
+and quotient-commutator mutations with full AST payloads and ordinal IDs. It
+keeps the parent program intact, validates generated syntax, preserves attempts
+and uses declared complexity/quota limits. The root runner evaluates original
+complete E through the unchanged exact evaluator; it does not use annotations
+to simplify arithmetic or drop components. Training files precede validation,
+diagnostics remain outside common selection scores, and final programs and
+constants are saved before final responses. All source controls are named and
+the actual-Mobius scope of the semantic notes is explicit.
+
+The independent semantic implementation uses its own factor, additive-term,
+literal-common-point, prefix/root-envelope and prime-guard reconstruction. It
+imports the independent unchanged validator, not producer semantic routines.
+Lag identities state the divisibility domain; root envelopes are limited to
+the unmasked or component square; source products and common masks preserve
+mixed obligations. Metadata comparison is type-strict, so a Boolean cannot
+replace an ordinal integer or false proof flag. Retained supplied metadata is
+carried through reconstruction on the same meter. Agreement does not supply
+an independent universal compiler or analytic proof.
+
+Issues raised in review and resolved in root source before freeze:
+- Radical signatures now apply only to an enclosing gcd(...,m)==1 predicate;
+  numerical gcd values retain the full modulus.
+- Exact root powers and multiplication have allocation preflights. A local
+  selector-domain cap gives explicit unexposed coverage, while globally spent
+  work/deadline limits propagate to the stage disposition.
+- A planned regime must appear among actual diagnostic selector signatures;
+  an observed context must also lie at or after its nominated transition. A
+  transient skipped regime is not declared exposed from its threshold alone.
+- Moving X roots outside recognized banks/masks and nested unsupported roots
+  are recorded as raw or unknown maps, rather than silently disappearing.
+- Recognized masked mixed cores retain their structural selection slots and
+  mixed obligations instead of being reduced to calibration by the mask label.
+- A complete CANDIDATE_LEADS receipt requires generation, discovery and final
+  stage counters; an incomplete run retains only actually started stages.
+
+Exposure remains a finite source-free signature plan. Prime entry and squareful
+Mobius coefficients are accounted for, while further state cancellation is
+explicitly unknown; a d=1 difference can still vanish. Outer max/min and exact
+root endpoint ranges are evaluated. Generation/planner audit shares root code,
+as declared; independent arithmetic and annotation replay do not remove that
+limitation. Reviewed workflow/checker tests address these boundaries and false
+component-to-whole promotions without executing them here.
+
+Final review disposition and receipts
+No unresolved mathematical admission or current source blocker was found after
+the fixes above. The method supplies a bounded finite structural search with
+honest semantic annotations and a useful analytic proof queue; it establishes
+no signed all-scale estimate. Generic bank correlation, transition complement
+and energy-absorption obligations above remain the substantive universal gate.
+
+Owners report their sole development invocations: producer10 tests,10,845 work;
+independent semantics12 tests,7,987 work; root workflow12 tests,2,307,838 work.
+The cumulative2,326,670 is recorded in runner and contract, plus the declared1m
+root reserve. The sole frozen combined suite is still separately charged to
+the preparation allowance, including unchanged arithmetic modules. Reviewer
+synthetic work and actual research work are both zero. This memo is finalized;
+reviewer-owned edits stop before freeze.

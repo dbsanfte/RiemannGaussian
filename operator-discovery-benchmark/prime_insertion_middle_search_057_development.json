@@ -1,0 +1,15 @@
+{
+  "schema": "prime-insertion-middle-search-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 7,
+      "operations": 4415,
+      "elapsed_seconds": 0.07120326097356156,
+      "stdout": "SYNTHETIC_WORK operations=4415\n",
+      "stderr": "test_actual_feature_semantics_and_general_transports (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_all_neighbor_and_child_arguments_are_present (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_archive_keeps_weak_growth_and_different_control_families (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_bad_transport_and_insufficient_pointwise_provider (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_finite_training_does_not_prove_new_scale (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_grammar_retains_signed_auxiliaries_and_moving_band_sources (test_prime_insertion_middle_search_057.SearchTests) ... ok\ntest_recovery_coercivity_all_bases_and_shifted_tree (test_prime_insertion_middle_search_057.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

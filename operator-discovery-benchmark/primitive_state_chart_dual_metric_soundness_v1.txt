@@ -1,0 +1,241 @@
+Diagonal-metric accelerated sparse proposals for the finite separator system
+Independent mathematical/resource review, 2026-10-09.
+Prospective034 mathematical, code and resource review complete.
+No actual031 model/scaling/metric values, updates, scores, research
+computations, tests, hashes or old-file edits were performed for this review.
+
+Positive diagonal metric and exact projected step
+The objective remains unpenalized nonnegative least squares on the same
+licensed302-row,687-column positively scaled separator equations,
+  f(x)=1/2*||A*x-b||_2^2, x>=0.
+Use a fixed positive diagonal D and the metric ||v||_D^2=sum_j D_j*v_j^2.
+For g=A^T*(A*y-b) and L>0, minimizing
+  g^T*(z-y)+(L/2)*||z-y||_D^2 over z>=0
+separates by coordinate and gives
+  z_j=max(0,y_j-g_j/(L*D_j)).
+This is the proposed update in exact real arithmetic. Positive diagonal
+weighting does not alter the componentwise projection onto the nonnegative
+orthant. Extrapolated y remains unrestricted, while projected z and every
+accepted x remain nonnegative. Clamping y would change the frozen method.
+
+The transformation w=D^(1/2)*x yields the equivalent NNLS problem with
+matrix B=A*D^(-1/2). Its ordinary Euclidean projected-gradient step is the
+diagonal-metric step above. Exact positive D preserves strict support and
+nonnegative feasibility. The proposed D_j=||A_j||_2^2 gives unit-norm
+columns of B in exact arithmetic and rescales column directions without a
+Gram matrix or new generator catalogue. Floating D is used only to propose
+a trajectory; its entries are not exact mathematical premises of admission.
+
+Directional line test and carried step factor
+For d=z-y the unchanged quadratic identity is
+  f(z)=f(y)+g^T*d+1/2*||A*d||_2^2.
+Thus ||A*d||_2^2<=L*||d||_D^2 is exactly the diagonal quadratic majorization
+condition along the current trial direction. In transformed coordinates it
+is the033 directional test for B and D^(1/2)*d. L starts at exactly1 and
+only doubles after rejected trials, carrying its accepted value forward.
+Metric D stays fixed throughout; updating it per step would be a different
+method and would change the interpretation of the recorded L sequence.
+
+Unit column norms do not imply a global Lipschitz factor1. Two identical
+unit columns still have Gram eigenvalue2, despite unit diagonal. Correlated
+columns can require backtracking. For positive exact D, some sufficiently
+large L bounds every direction, but this explains the method rather than
+licensing extra attempts or an exact convergence theorem. At most32 trials
+are permitted per iteration. Rejected trials must leave y and its fresh
+base gradient unchanged. Their varying L, trial vector and direction are
+proposal data rather than new equation reductions.
+
+Acceleration and numerical diagnostics
+Start cold at x=y=0,t=1. After a fully accepted trial use the033 recurrence
+  t_new=(1+sqrt(1+4*t^2))/2,
+  y_new=z+((t-1)/t_new)*(z-x), x_new=z,
+with a restart y_new=z,t_new=1 every64 accepted iterations. The old accepted
+x is used before assignment. Trial count does not determine restart timing.
+The scalar recurrence applies equally in the fixed transformed coordinates;
+positive D does not call for a separate coordinate-dependent momentum.
+
+For the final accepted x, let p_j=max(0,x_j-g_j/(L*D_j)). The declared
+final mapping norm L*||x-p||_D is the Euclidean gradient-mapping norm in
+w coordinates. Equivalently, with G=L*D*(x-p), it is ||G||_(D^-1).
+This has different units from033's L*||x-p||_2 and should not be interpreted
+as a directly comparable numerical error bound. It is a stationarity
+diagnostic. A rounded zero mapping or residual does not establish KKT
+conditions, exact feasibility, a signed arithmetic bound or optimality.
+
+Finite arithmetic and stable weighted norms
+Compute D_j once using math.hypot(column_j)^2; require every diagonal entry
+and its square root positive and finite. Save the whole finite positive
+metric_diagonal vector in retained-column order, with no truncation or
+implicit ones. Initial L is exactly1. Stored floating metrics describe the
+method and have no independently certified exactness claim.
+
+Before dividing, check L*D_j is positive and finite. Check the ratio and
+candidate before max(0,candidate), so overflow cannot hide as a clamped
+zero. For line testing, form every finite sqrt(D_j)*d_j, use math.hypot
+on those weighted entries, then separately check its square and the finite
+product L*weighted_square. A finite norm alone does not imply its square
+or its scaled product is finite. Compute fresh A*d and A*z-b with guarded
+sparse products and math.fsum. The same finite protections apply to all
+momentum intermediates and final projected-gradient differences/products.
+
+These stable kernels reduce cancellation drift but do not make the metric,
+quadratic line test or score exact. Binary64 squared values can underflow,
+and separately rounded A*y, A*d and A*z need not obey the exact quadratic
+identity. Exact positive infinity scaling and nonzero-underflow rejection
+remain inherited from032's model builder. Metric weighting occurs only in
+the numerical proposal and does not change original response restoration.
+
+Blocks, guards and interrupted work
+For source rows m, columns n and nonzeros z, the frozen proposed proxies are
+  setup=8z+48(m+n)+65536,
+  gradient=8z+32(m+n)+512,
+  trial=16z+80(m+n)+1024,
+  commit=32(m+n)+512,
+  final=12z+80(m+n)+2048.
+Extra dense-vector allowances pay for metric/square-root construction,
+checked weighted denominators and weighted direction/mapping norms. Sparse
+row product buckets retain an explicit z+m temporary live-cell allowance.
+Metric arrays and selected vectors remain live across the numerical stage
+and returned metric diagnostics remain resident through exact restoration.
+
+iteration_reserve=gradient+32*trial+commit. Before any setup require
+minimum_attempt=setup+iteration_reserve+final; otherwise return unattempted
+incomplete without work. Every iteration start requires remaining allowance
+at least iteration_reserve+final. Charge only actual blocks before their
+work, preserving each block charged before a deadline exception. Live and
+additional deadline checks use charge(0), keeping operations exactly
+  setup_charged*setup+gradient_blocks*gradient+trial_blocks*trial
+  +commit_blocks*commit+final_charged*final.
+
+Normal accepted-boundary work stop preserves the best eligible checkpoint
+only after final diagnostics complete. At most10000 accepted steps and32
+trials per step are permitted. Zero_reported_residual stops immediately
+after a floating-zero accepted residual; it is a diagnostic stop, preceding
+the iteration-limit and next-budget guard, not an exact proof. Every
+completed run has at least one checkpoint and one final diagnostic. Any
+midstep/final failure or exhausted32-trial rejection instead clears selected
+and remains incomplete. Charged partial work is not reset or discarded.
+
+Independent block reconciliation uses each accepted checkpoint's trial count
+and cumulative_operations after its complete commit. Completed gradient and
+commit counts equal checkpoint count; trial counts equal their sum. Every
+prior start must satisfy its32-trial/final guard. Post-final work_boundary
+requires operations+iteration_reserve>cap. Incomplete prefixes can contain
+only one partial next gradient/trial/commit or one partial final diagnostic,
+and never a selected support. Initial metric/L setup precedes iteration work.
+
+Strict support, exact lift and finite admission
+Rank reported checkpoints by(relative residual,support size,iteration) among
+those with1..443 positive coordinates. Preserve the full selected retained
+vector and every strictly positive position; no threshold or trimming is
+licensed. A full floating metric does not authorize dropping small selected
+weights. Ineligible completed runs are NONCERTIFIED and incomplete runs
+UNKNOWN, neither implying any theorem about the primal cone.
+
+Map selected positions through031 active original compressed ids and030
+original representative ray ids. Perform exactly one old029 rational solve
+against all851 saved original affine responses and target(0,-1), with free
+support valueszero. Underdetermined supports up to443 are allowed; selected
+positive floats may restore to exactzero. Putzero on all original rays
+outside that support. This original-response reconstruction is unaffected
+by the floating numerical metric or approximate selected weight sizes.
+
+Certification and independent admission require full851 alpha>=0, all782
+original chart multipliers lambda and the complete identity
+  A_original^T*lambda=sum_j alpha_j*g_j in all1224 coordinates,
+  b_original^T*lambda=-1.
+Every declared scalar/rational rank-one generator is nonnegative on the
+licensed augmented cone, so this identity contradicts an augmented feasible
+point. Direct full checking remains decisive; reconstruction rank is only
+diagnostic. Bind every positive selected original ray, zeros outside support
+and declared free positions carryingzero, without replaying the producer's
+support elimination or trusting any numerical metric/line/score claim.
+
+Resource allocation and scope
+The450m total remains preparation40m, exact model40m, numerical190m,
+restoration90m and one independent90m audit. Preparation includes25m ALL
+development plus one frozen suite,10m independent I/O and5m other work.
+Root/scaffolding reserve remains inside synthetic accounting. Actual runs
+bind numerical.max_operations to190m; generic helper tests may use less.
+Keep source/export/metric/model arrays in resident bases through stage
+switches and inherited direct checker calls. Use the SAME90m meter for
+metadata/source parsing and optional full identity, without a nested reset.
+Existing4096/8193-bit,6m-cell, byte, one-thread,6GiB and deadline caps remain.
+No unused reserve licenses another numerical or restoration attempt.
+
+The checker can validate the complete positive metric vector and initialL1,
+counter/guard/stop/ranking metadata and full strict support without replaying
+the trajectory. It must retain numerical_scores_verified=false and
+numerical_trajectory_replayed=false. No-certificate metadata verification
+stays complete=false. Only the separate original full negative-pairing
+witness can admit finite augmented-template infeasibility.
+
+This is a bounded numerical method comparison on one proof template. It
+may improve conditioning or produce a different restorable strict support,
+but neither follows from diagonal normalization alone. Failure leaves other
+supports and PSD dual directions open. Even a checked separator excludes
+only the licensed augmented finite template, not original unlearned-cone
+infeasibility, every grammar or RH. All-scale signed control still requires
+a universal operator identity, scalar and initial-storage bounds, a cofinal
+parameter family and the ordinary-zeta bridge.
+
+Final implementation review
+Read the final contract, protocol, resource scope, producer, independent
+checker, runner, outer audit, publisher and all three test modules without
+executing them. The numerical implementation computes and exports the full
+positive finite D once, with guarded roots, and starts L at exactly1. D is
+never changed after setup. Its20n live-vector allowance includes the metric,
+roots and weighted-norm arrays; returned metric diagnostics also remain
+resident during exact restoration.
+
+Projection checks each finite positive L*D denominator, ratio and candidate
+before clamping. Weighted line tests check each sqrt(D)*d product, stable
+norm, squared norm and finite L product separately. Fresh sparse fsum
+matrix/transpose kernels and all033 finite momentum protections remain.
+The final projection uses the same fixed D and carried L, and its reported
+mapping norm is explicitly labeled diagonal column curvature. No original
+coordinate weight interpretation is replaced by a transformed approximate
+weight during restoration.
+
+The dimension-only block formulas match independently in producer/core,
+including increased setup/trial/final dense-vector allowances. Positive
+minimum_attempt and every32-trial/final boundary reserve remain enforced.
+Only actual blocks are charged; charged partial work persists through
+exceptions. Full commit precedes checkpoint insertion, zero reported
+residual has immediate stop priority,64-step restarts use accepted count
+and completion requires successful final diagnostics. Incomplete output
+clears selected and cannot run exact reconstruction.
+
+Independent numerical checks require initialL1 and a full finite positive
+metric vector before any iteration block. They do not recompute D from
+source coefficients or certify floating norms. Counter/cumulative/start
+guard, carried-L, restart, zero/limit/boundary and reported-ranking checks
+remain separate from score accuracy. Every positive selected coordinate
+in a full finite nonnegative vector is bound to the original851 support.
+Direct original chart/ray/Farkas routines still share the same90m meter
+with source/metadata checks, including its resident base inside inherited
+live calls. No geometry or031 reduction is replayed.
+
+Root workflow binds actual numerical.max_operations to190m and numerical
+record presence/counters to started stages; only complete eligible output
+allows restoration. Cumulative development/frozen receipts remain within
+the25m preparation subreserve, including root/scaffolding. One audit marker
+blocks repetition. Publication keeps summary/metric/selected diagnostics and
+the full proposal artifact link; only a complete/schema/status/verified/-1
+original Farkas witness can promote finite augmented-template infeasibility.
+All global, RH and original-unlearned-cone flags stay false.
+
+Read meaningful tiny tests for unequal orthogonal column metrics, the
+weighted final mapping, correlated-column backtracking, fixed initialL,
+full positive metric corruption, strict tiny support and original support
+lifting. Existing accepted-prefix,64-restart, charged partial commit/final,
+pre-clipping finite guards, normal bounded stop, no-score-proof, shared-meter
+and full original-identity counterexamples remain. Checker tests use one
+authentic synthetic full certificate with targeted support/identity mutations;
+no full actual source computation is needed for this review.
+
+No mathematical, code or accounting blocker was found. The reviewer ran
+no tests, no source/model/metric/score calculations and no hashes; reviewer
+synthetic work iszero. This review reports no actual trajectory or method
+improvement. Owned memo finalized; edits stopped before the single frozen
+combined suite.

@@ -1,0 +1,28 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_floor_residual_rates_044"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_rates_044 operations=495160 checker_operations=312053 fixture_operations=183107 elapsed_seconds=0.12618313304847106\n",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.126s\n\nOK\n",
+      "operations": 495160,
+      "elapsed_seconds": 0.2035394370323047,
+      "tests": 20,
+      "peak_rss_KiB": 29196
+    }
+  ],
+  "operations": 495160,
+  "edits_stopped": true,
+  "source_arrays_read": false,
+  "additional_norms_evaluated": false,
+  "old_suites_run": false,
+  "tests": 20,
+  "review": "Exact recipe AST limits, complete finite-cell and all higher-support elimination, nonzero logarithmic coefficient licenses, child forcing scope, strict eta partitions, compressed supplied-witness frontier admission."
+}

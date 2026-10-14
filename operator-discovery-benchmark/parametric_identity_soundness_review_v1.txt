@@ -1,0 +1,98 @@
+PARAMETRIC IDENTITY SOUNDNESS REVIEW v1
+Scope: independent bounded read/AST-algebra review of the new local FORMAL_EQ
+kernel and partial primitive-state adapter. No solver, arithmetic recompilation,
+parameter-horizon experiment, or frozen-file modification. This is a review,
+not a proof that every possible implementation execution is sound.
+
+Result
+No false-positive FORMAL_EQ was found in the reviewed rules. Eleven independent
+adversarial/local calibration tests pass in test_parametric_identity_soundness.py:
+../.venv/bin/python -B -m unittest test_parametric_identity_soundness
+Tests build checker ASTs directly, with no producer import. These are regression
+checks of rule side conditions, not sampling evidence for a universal theorem.
+
+Binder and linearity semantics
+check_parametric_arithmetic_identity.py AST and shifted_key (approximately
+lines79-149) compute free slots separately for sum bounds and body. Only body
+slot0 is discharged; body outer slots decrease by1. A sum cannot bind a variable
+occurring in its own bounds. Nested shifts increase the cutoff for the nested
+body only, preserving references in nested bounds. Named translation in
+translate_named_tree uses nearest enclosing same-name binder, and translates
+bounds before adding the new binder. Shadowing calibration passes.
+SUM_CONGRUENCE requires equal bounds and a body premise at scope+1. SUM_PULL
+requires absence of body free-slot0 in the factor and compares the exact shifted
+external factor. The tests reject a dependent factor and incorrect outer-slot
+shift, while accepting the correct shifted factor.
+SUM_LINEAR (_linear_sums and replay_rule) retains every inclusive domain and
+rational multiplicity, rejects changed bounds and nonzero standalone constants.
+These rules remain valid for empty finite ranges, with sum=0. No commutation of
+unequal/conditional domains or arithmetic reindexing is currently licensed.
+
+Boolean and ring semantics
+Normalizer treats integer comparisons, divisibility, and coprimality as opaque
+Boolean atoms, with their indicators idempotent. It expands NOT/AND/OR and uses
+the valid total-order complement lt(a,b)=NOT le(b,a). PARTITION requires same
+bounds and summand in both pieces and exact indicator sum1. Two inclusive cuts
+le(i,c) and le(c,i) are rejected: they overlap at equality. Polynomial atoms are
+not idempotent; x*x=x is rejected even under GUARD_BOOL. Opaque sums are not
+silently evaluated or distributed by RING; sum(1..2,1)=2 is rejected by RING.
+This conservatism permits fewer identities than the intended arithmetic model,
+not additional false identities. Equality/coprime/divides atoms need no deeper
+arithmetic rules to justify complementary partition.
+Root floor versus ceiling and coefficient/power/negative-extension fields remain
+in semantic hashes; their embedded values are not conflated. Tests reject the
+floor/ceiling square-root identity at2. The kernel does not prove any inequality
+or evaluate a cut, so arbitrary rational-root cuts are licensed only as shared
+exact index expressions and complementary predicates. A later arithmetic/root
+backend must define its floor/ceiling and zero-power conventions explicitly.
+
+Source substitution and residual gaps
+primitive_state_parametric_sources.py divisor_state (line58 onward) retains all
+1<=d<=a<=t pairs and guards divisibility plus complementary d<=floor(t^theta).
+For reciprocal weight1/a, denominator a>=1 follows directly from this domain.
+The adapter identities I+O=B and their contrast/normalization rearrangements are
+universal algebra/partition identities. Rowmass recipes (line121 onward) keep
+1<=n<=4X-1 and max(2X,n)<=t<=4X-1; head n<=2X and its complement retain all
+multiplicity and the equality boundary. The opaque rho functions are arbitrary
+polynomial-valued functions for these identities. Substituting actual norm or
+prime-power definitions is valid when independently bound, but never implies
+rho=0 as a FORMAL_EQ. The adversarial x1=1 test is rejected; a Möbius/arithmetic
+specialization cannot be promoted through ring normalization.
+
+An initially observed attribution gap was reported promptly: expected source
+hashes and semantic root hashes alone did not bind opaque function definition
+hashes/context, yet set source_semantics_independently_bound. The checker now
+requires independently expected_context as well as both-root binding (or complete
+named source trees). Opaque function definitions remain deliberately outside
+ring atoms' semantic keys; exact context binding is therefore essential for
+source attribution, although a generic arbitrary-function formal identity itself
+is sound independently of the function's chosen interpretation.
+
+The generic ratio node accepts denominator0 without a domain proof. Producer
+calls it a total ratio. Under an explicitly fixed total extension it is a valid
+opaque coefficient atom, and the reviewed ring rules are sound; without such an
+extension it must not be described as universally defined ordinary rational
+division. The present adapted reciprocal domains are positive and avoid the
+issue. Any new source adapter using ratio must independently prove denominator
+nonzero or explicitly bind a totalization. This is a semantic/domain obligation,
+not evidence of a discovered false ring identity.
+
+The source adapter explicitly sets universal_compiler_equivalence_formally_proved
+False (recipes, line152 onward). Its finite compiler regression tests cannot fill
+that gap. Generic FORMAL_EQ plus hash-bound recipe coverage therefore proves the
+adapted expressions' identities, not complete symbolic equivalence with every
+finite compiler operator, not all613 relations' Möbius validity, not a candidate
+operator's universal target equality, and not an all-scale inequality/RH claim.
+A full candidate gate still needs complete descriptor/operator reconstruction,
+independent source-to-compiler semantics, all required identity coverage, and a
+separate arithmetic/MU layer where arithmetic cancellation is invoked.
+
+Resources and remaining review scope
+The local test suite takes about0.002s. No dense elimination or source-wide
+arithmetic generation occurred. Resource-count declarations are producer reports;
+the checker separately bounds and reports its own replay work. This review did
+not independently certify producer operation counts or exhaust all malicious
+resource-shape cases. Hash collision resistance is the usual assumption for
+semantic DAG hashing. Re-run these tests after further kernel/schema edits;
+source-attribution and domain flags must never substitute for a full universal
+operator proof.

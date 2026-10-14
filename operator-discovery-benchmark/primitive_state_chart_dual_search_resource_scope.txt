@@ -1,0 +1,76 @@
+Direct dual diagnostic on the licensed publication028 chart
+
+This is a new method, not a continuation or retry of publication028 descent.
+Its mathematical inputs are the complete verified rank782 chart (width1224),
+the exact028 endpoint, the published028 report and its independent review.
+The chart includes all5641 original equations and the three learned necessary
+rows. No arithmetic source compilation, old elimination replay or hashes run.
+
+One combined450m work-proxy reservation covers the complete job:
+50m preparation/tests/I/O,100m exact assembly,190m native LP,60m exact support
+restoration and50m sole independent audit. Synthetic tests20m and independent
+I/O10m are inside preparation. Unused reservations do not permit retries or
+extra stages. Exact rational results are bounded4096bits; bounded two-input
+temporaries8193bits; live rational-cell proxy6m. Native work is a declared
+dense linear-algebra proxy, not a hardware instruction or elapsed-time bound.
+
+The primal quotient has371 nonnegative scalar coefficients,613 unrestricted
+relation coefficients and matrices C and H=P+4C, each PSD. The complete fixed
+dual ray catalog comprises371 scalar units, plus two sets of225 PSD rays:
+15 coordinate vectors and210 vectors e_i+e_j/e_i-e_j for each matrix. A PSD
+matrix ray QK contributes w_C=vec(QK), w_P=0; a ray QH contributes
+w_C=4vec(QH), w_P=vec(QH). The upper-triangle vector doubles offdiagonals.
+Every ray is zero on all613 unrestricted relation coordinates.
+
+Thirty extra rays use all15 eigenvectors of each endpoint C/H matrix,
+rationalized with dyadic denominator2^20 and a fixed sign convention. These
+vectors are numerical proposals only. Their resulting rank-one rational
+outer products are exactly PSD even without certifying eigenvector accuracy.
+No eigenvector is selected after evaluating a certificate score. No test of
+this finite ray cone can rule out all PSD dual witnesses when unsuccessful.
+
+Assembly computes required coordinate functionals by shared reverse
+substitution through the full triangular chart, then combines611 requested
+coordinate responses into all851 generator responses. For a functional
+w, ascending pivot reduction gives w*x=t+r*x_free. A separator therefore
+requires nonnegative alpha, sum(alpha*r)=0 and sum(alpha*t)=-1. The equality
+LP has443 rows and851 nonnegative variables. Positive exact row/column
+infinity scaling and a common positive normalization of the L1 objective
+precede binary64 conversion, with explicit nonzero underflow checks. Native
+rounding and internal solver tolerances carry no
+proof authority. The numerical proposal is one scipy HiGHS dual-simplex call,
+presolve disabled, at most100 iterations, one thread, no fallback or restart.
+Its reservation includes a443^3 initial factorization proxy,100 dense pivot
+proxies2*443*851+443^2, and bounded preparation/serialization overhead.
+
+The strictly positive native support is retained without a threshold and
+must have at most443 entries. One exact sparse elimination solves that support,
+setting remaining free support variables to zero. Inconsistency, a negative
+solution or failed original exact equations does not certify infeasibility.
+Successful restoration recombines the complete1224-coordinate functional
+and recovers all782 exact chart multipliers. The proposed certificate stores
+the full851-ray catalog, all851 alpha values and all782 multipliers.
+
+The independent checker directly recomputes both sides of A^T*lambda=G*alpha
+in all1224 coordinates and verifies b^T*lambda=-1, alpha>=0 and complete ray
+semantics. Nonnegative scalar and rank-one matrix sums establish the dual
+cone without exact matrix elimination. The prior028 chart license is the
+row-span premise; the numerical LP, support choices and eigenvectors need
+not be independently reproduced to prove this exact witness. The augmented
+finite cone alone is separated on success. It would not refute RH, an actual
+Mobius estimate, the unaugmented historical cone, a different target budget,
+another dictionary, or an arithmetic-only certificate outside this language.
+
+Missing witnesses remain NONCERTIFIED; required resource failures remain
+UNKNOWN. Neither disposition implies primal feasibility or absence of a
+separator. A partial or invalid witness cannot promote any theorem flag.
+Only a completed independent exact check may set the specifically named
+finite_augmented_cone_infeasibility_certified flag. RH, global signed bounds,
+universal identity and primal admission remain false.
+
+One sequential producer and final audit, each within6GiB and3600 cooperative
+seconds; the producer also has7200 external seconds. The worker has one
+numerical thread. Proposal/certificate and independent review caps are8MiB,
+metadata/protocol64KiB and one source snapshot8MiB. Inputs have explicit byte
+caps. One exclusive audit-start marker prevents consuming a second allowance.
+Source snapshots are copied once without hash creation or integrity sweeps.

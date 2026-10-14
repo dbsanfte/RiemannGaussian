@@ -1,0 +1,61 @@
+{
+  "RH_proved": false,
+  "conditioning": "sealed before pending exact native retry dual weights inspected",
+  "full_source": "all nine complete divisor channels per region, original scalar cone and legacy Grams retained",
+  "global_bound_proved": false,
+  "missing_policy": "unknown; no implicit zero moments",
+  "parent_protocol_sha256": "3f2b1c6bbe866efc39898a8efcdc6aee83f8790922d4a3351b0c3d2769ac4750",
+  "required_witness": "independently verified exact 20-group separator",
+  "spec": {
+    "atoms": [
+      "prefix",
+      {
+        "power": -1,
+        "theta": "1/3"
+      },
+      {
+        "power": 0,
+        "theta": "1/3"
+      },
+      {
+        "power": 1,
+        "theta": "1/3"
+      },
+      {
+        "power": -1,
+        "theta": "1/2"
+      },
+      {
+        "power": 0,
+        "theta": "1/2"
+      },
+      {
+        "power": 1,
+        "theta": "1/2"
+      },
+      {
+        "power": -1,
+        "theta": "2/3"
+      },
+      {
+        "power": 0,
+        "theta": "2/3"
+      },
+      {
+        "power": 1,
+        "theta": "2/3"
+      }
+    ],
+    "dimensions": {
+      "child": 10,
+      "parent": 10
+    },
+    "regions": [
+      "parent",
+      "child"
+    ],
+    "scope": "diagnostic of supplied witness in larger finite cone; no feasibility or uniform theorem",
+    "selection": "all nine divisor channels; all complete t blocks; no fitted choices",
+    "version": "cell-joint-grams-v1"
+  }
+}

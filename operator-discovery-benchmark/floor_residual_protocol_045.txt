@@ -1,0 +1,101 @@
+045 PROTOCOL: GENERATED SIGNED MOVING PROFILES AND BOUND ARGUMENTS
+
+Authoritative parent: pilot-002/analytical_followup_001/next_search_input.json.
+Previous goal turn was progress:044 numerical and analytic feedback completed.
+Original F, centered-Mobius, whole signed residual and RH goals remain OPEN.
+
+Formula and proof synthesis
+Generate beta_N=ceil(a*L(N)^theta)/L(N), L=1+floor(log2N), a>0,0<theta<1.
+Enumerate rational rate sets by height and term budget, then solve exact
+linear moment constraints for signed weights w_j on distinct positive r_j:
+sumw=1, sumw*r^k=0 throughk=m-1. Do not hardcode binomial coefficients.
+The public grammar accepts arbitrary rational parameters under bit/work caps.
+The finite pilot uses a1/3 or1, all rationaltheta denominators through7,
+nine rate sets of orders1..4, and bare/cutoff/log products. The moment
+polynomial and exponential-convolution identity are independently replayed.
+Raw maximal profiles have0<=P<=1 and a simplex bound. Each exponential is
+rounded down at4ceil(log2N) bits BEFORE the signed sum. The rounded profile
+is not clamped or assumed positive. Product children multiply exactly.
+
+The old581 formulas and their saved TRAINING observations remain controls.
+No old training norm or held-out study is rerun. One new numerical Gram is
+needed to score new vectors on the old training partition48,96,144, H65536.
+Exact-vector caching shares equal profiles across distinct formula ASTs;
+the formulas still keep their different all-scale definitions and proofs.
+Training retains coefficient values and shared root atoms, releasing large
+per-index compilation certificates. The separate final compiler retains
+certificates for independent source replay. No artifact hashes are used.
+
+Proof checks precede every new training score
+Check source-bound fixed-index error expansions at indices2..16. A
+nondivisible q-index with zero step response, or any index for b0, gives a
+forcing-rate obstruction. Reject eta>2nu. At eta=2nu, a certified nonzero
+leading coefficient and exact cell denominator also reject A smaller than
+the licensed lower constant. Equality stays OPEN. For each rule include
+its derived rate boundary in the eta proposals if0<eta<=1. Do not retain
+a false exponent just because it looked best in earlier observations.
+Apply the frozen all-integer convex-cutoff guard to its supported ASTs;
+unsupported moving profiles are not refuted and receive no success theorem.
+
+Ranking and held-out evidence
+All proof-admitted A/eta choices are frozen before the new scores. Rank
+training matches, stronger eta, counts requiring signed auxiliary and
+refinement crosses, observed worst slopes, last proxy, stable ordinal.
+Select signed drift, a different drift family, a legacy control and a b0
+control. No per-support coefficient/exponent fitting is allowed. For a
+drift mixture, the auxiliary comparison uses its first-rate single twist
+with the same a/theta/taper; h-h0 retains the whole signed correction.
+Old external auxiliaries keep their old baseline. Fallback bounds, if
+needed, must have survived the same proof gates; no fallback overrides one.
+
+Freeze selected formulas and bounds before new final parents607,743,877,
+q2/3, children up to2631. Compile all programs before evaluating any norm.
+Independently replay exact drift powers and ordinary mu, products and signed
+source coefficients. Old exact taper/log primitives are frozen reused
+dependencies, not advertised as newly independent root checks. Independently
+replay full dilation, unit and indicator terms and h=h0+v. Targets have
+constant1/no indicators; auxiliary diagnostics have constant0.
+Reuse the certified044 exact-event/Arb192 producer and independent heap/Arb256
+norm checker, Jordan-2 signed periodic energy and imported large-sieve tail.
+H1048576 except exact zero. Complete cell/tail inequalities are finite
+certificates, not all-N estimates. Report cross-replacement tests explicitly.
+
+Whole-bound argument language
+Instantiate source-bound finite-Dirichlet and Mellin identities before final
+norms. Each supported profile generates signed critical-line transfer,
+truncation/rounding/taper discrepancy, and harmonic components. The comparison
+sum w_j/zeta(s+r_j beta_N) is meromorphic, not an assumed convergent critical
+mu series. All unit, dilation and child-scale terms remain present.
+Enumerate rational three-way Young budgets with denominators through6 and
+check exact target-constant recomposition. Bias/truncation integrability and
+their uniform budgets remain unpaid. Their joint form retains cancellation
+and introduced poles may cancel only jointly; the joint-plus-harmonic energy
+is identified as an endpoint restatement, not a new recurrence.
+
+For bare/cutoff profiles an unconditional harmonic envelope follows from
+Euler's integral near the pole1, local reciprocal-zeta Taylor coefficients,
+the generated moment cancellations and absolutely convergent harmonic tails.
+Factorial exponential bounds produce explicit rational constants and level
+constraints for all sufficiently large L. These scalar/energy component
+estimates do not discharge the selected fixed A/eta domain by themselves.
+Earlier levels and exact target-budget matching remain explicit obligations.
+Log taper harmonic discrepancy is not silently paid. Rounding error keeps
+its positive rational Hölder exponent and the child q factor, including for
+small powers where an absolute norm-error estimate need not decay.
+
+Resources, checks, stop rules
+16GiB aggregate limit, two norm workers and two training BLAS threads.
+Search cap300b proxy operations/3600s. Drift compile5b/3600s with shared
+exact root atoms; independent final source replay20b. Each fixed norm uses
+producer1b/3600s and checker3b as in044. Root power/rational caps and norm
+index4096/support2048/intermediate8192bit guards stay active.
+Proxy operations are not CPU instruction counts. Preflight aggregate memory
+reserves precede norm workers; per-worker RSS is not aggregate peak usage.
+
+Run only new focused tests, recording each attempt. Freeze19 new source,
+test,memo,protocol/receipt files before candidate application. Reuse all35
+prior frozen source files by reference and compare bytes; do not change
+completed studies. Keep partial outputs/failures if a run stops. A finite
+counterexample rejects only the stated all-integer bound; finite success,
+coefficient moment cancellation and a paid harmonic component cannot close
+the remaining joint signed arithmetic estimate or establish RH.

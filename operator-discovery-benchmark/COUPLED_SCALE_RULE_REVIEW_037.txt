@@ -1,0 +1,243 @@
+COUPLED SCALE/CUTOFF PROOF SEARCH: EXACT RELATIONS, RECURRENCE CERTIFICATES
+AND THE LIMIT OF RECOVERABLE LOCAL FILTERS
+
+Stage037 independent analytical review. No source observations, old studies,
+tests, hashes or edits of earlier files were performed. The complete original
+core remains the target. No uniform core estimate or RH conclusion is obtained.
+
+1. What the new search must change
+----------------------------------
+PRIME_COFACTOR_BOUND_DISCOVERY_HANDOFF.txt records universally checked
+arithmetic state closure, separately obstructed rough auxiliaries, and a search
+of instantaneous quadratic forms. FRACTIONAL_COFACTOR_BOUND_HANDOFF.txt proves
+that isolated coefficient twists lose their apparent gain on signed Abel
+recovery. CORE_SIGNED_PRIMITIVE_SEARCH_HANDOFF.txt records an unrestricted
+energy antiderivative whose endpoint is the original open target. The older
+CORE_PREFIX_PROOF_SEARCH_HANDOFF.txt paid one convolution component but kept
+its compensating drift and the complete signed remainder.
+
+The useful new capability would be generation and checking of a recurrence
+whose forcing and recovery are genuinely priced. Neither an exact source
+identity nor an enlarged unpriced quadratic endpoint is such a recurrence.
+The following interface keeps those distinctions machine checkable.
+
+Use the stage035 verified source basis, with weighted modes
+w=(beta nu0,-beta nu1,-R_u nu2,-beta mu), beta=9/2. The complete source is
+f=sum w, f(1)=-beta-R_u. All units and repeated prime powers survive.
+The accepted033 full source/drift/transport obligations are unchanged; this is
+a direct complete-f alternative, not a numerical replacement of their join.
+
+2. Primitive exact prefix and cutoff relations
+----------------------------------------------
+Let v(n) be the vector of verified discovered states, F(n)=sum_(k<=n)v(k).
+For x<1 every prefix is zero. Let H(n;y) restrict every prime factor of k
+to be greater than y, retaining the unit. Use the COMPLETE valuation matrix
+T_e(p), derived from the rational Euler transfer, not the fresh multiplier^e.
+Unique factorization by the LEAST prime gives the exact finite identity
+
+ F(n)=H(n;y)+sum_(p<=y,p prime) sum_(e>=1,p^e<=n)
+                  T_e(p) H(floor(n/p^e);p).                 (2.1)
+
+The cofactor in the right side has all primes>p, hence is coprime to p.
+Its unit is retained. No common-prime or repeated valuation is excluded from
+the full coefficient: the least prime's exact valuation is simply selected
+once. Every integer contributes once, and no global analytic moment or pole
+identity is inferred from this finite equality.
+
+For y<=z the exact crossing rule is
+
+ H(n;y)-H(n;z)=sum_(y<p<=z) sum_(e>=1,p^e<=n)
+                    T_e(p) H(floor(n/p^e);p).               (2.2)
+
+Scale changes are also exact but have a real boundary:
+ F(2n)=F(n)+sum_(n<k<=2n)v(k),
+ F(2n+1)=F(2n)+v(2n+1).                                    (2.3)
+The analogous H identity includes its cutoff predicate on every coefficient.
+Do not assign signed cancellation to these new interval sums by naming them
+an auxiliary. Their absolute divisor bounds remain available, with their
+positive power cost. Full prefixes are not restarted at interval boundaries.
+
+For a fixed p, F=sum_e T_e H_p(x/p^e) remains another exact relation.
+The basis/unit/recovery and coprimality conditions are inherited checked
+premises. If a program changes the cutoff with the scale, (2.2) supplies its
+crossing term; this term does not disappear under a quadratic projection.
+Parent and child use one source horizon N=4X-1. Any source truncation, finite
+factor or support rewrite must be valid on that WHOLE horizon. Ceil/floor
+root cutoffs and n=1 are part of the instance, not asymptotic conventions.
+
+3. Concrete coupled recurrence certificate interface
+-----------------------------------------------------
+A generated state AST may contain full prefix, rough prefix, scale/floor
+composition, verified prime-section states and signed linear combinations.
+All scale/cutoff maps, parameters and source rows are declared. Their values
+are not free trajectories. The certificate records exact expression DAGs,
+units, domains and target recovery, not merely fitted covariance matrices.
+
+Generate a real quadratic storage A(X) from these expressions, normalized by
+X^-2 over X<=n<2X. Include every mixed term. A PSD form with an exact target
+domination witness proves E_f(X)<=c A(X)+paid(X). Any variable weights remain
+inside the sums; any additional recovery power/log is stated explicitly.
+An indefinite storage requires its own proved recovery inequality and finite
+lower/head bound. Calling signed work a positive energy is not admissible.
+
+Align the child block with the parent by m=2n and m=2n+1. Child normalization
+is 1/4 times the parent's. For each common n form a vector xi of ALL parent,
+child, cutoff-crossing, valuation/cofactor and boundary expressions. Let M be
+the exact symmetric form for A(2X)-rho A(X) in this common vector. Exact
+arithmetic identities produce L xi=0. Inhomogeneous units can be included
+by a constant-one coordinate, with its cost kept. Relations with varying
+coefficients retain their n,X,p dependence and exact domain branches.
+
+A sufficient certificate has
+
+ D-M=P+L^t Y+Y^t L,        P positive semidefinite.          (3.1)
+
+Here D contains ONLY forcing forms with independently checked all-scale
+prices. Then xi^t M xi<=xi^t D xi on the actual source, for every admitted
+n. Sum over the complete block. The detector may enumerate storages, exact
+cutoff/scale stencils, rational rho, multiplier matrices Y and prices D;
+an exact rational or polynomial PSD verifier checks the witness. No desired
+source-bound value is supplied as an input matrix.
+
+An aggregate version may use exact SUMMED relations and an explicitly stated
+inner-product inequality rather than pointwise (3.1). Its measure, all index
+domains and every residual boundary must be verified. A numerical covariance
+or sample nullspace can propose a witness, never supply its universal relation.
+
+This is a genuine proof rule if D is paid without using the requested root
+bound. If D includes the original A, its complete endpoint, an unbounded rough
+prefix or an unpaid cross, the result is an OPEN implication/restatement.
+A positive term cannot be silently discarded; a negative term may be dropped
+only after an exact sign or PSD certificate on its full domain. Arithmetic
+relations must be proved before imposing them as zero constraints.
+
+Finite infeasibility/dual witnesses exclude only the searched certificate
+dictionary. The source may obey extra relations absent from L. A static
+dictionary that merely restates the target does not become stronger because
+more scales were added. In particular the search must expose which actual
+arithmetic constraints, rather than PSD alone, supplied a signed gain.
+
+4. Induction and exact all-scale recovery costs
+----------------------------------------------
+Suppose the proof DAG certifies, on every dyadic X>=X0,
+ A(2X)<=rho A(X)+C X^gamma (1+log2 X)^k,
+with A nonnegative, rho>=0, C finite independent of every auxiliary cutoff,
+and a proved finite head A(X0). Standard geometric induction gives power
+max(log2 rho,gamma,0), with the appropriate logarithm at resonance; rho=0
+is interpreted separately, not through log0. For the cofinal objective:
+rho<1 and gamma=0 give O(log^k X); rho=1 gives O(log^(k+1) X).
+Nonpositive forcing power is also paid with the finite head. Positive forcing
+power or positive recovery power is not paid merely because a finite curve
+looks flat. If the target is all integer X, dyadic-to-integer comparison must
+be proved for the relevant storage; full-prefix energy can use covering
+dyadic blocks with an explicit constant, whereas a changing auxiliary cutoff
+may require its separate crossing term (2.2).
+
+A family depending on epsilon can recover a cofinal estimate only when its
+construction, constants, resource/source domain and inverse bounds are proved
+uniform in X for EACH fixed epsilon. Constants may depend on epsilon and
+declared finite parameters. They may not depend on the current prime frontier
+unless that dependence is priced. Base and cutoff induction have two distinct
+well-founded rankings: smaller argument, or fewer remaining primes<=N.
+The e=0 cutoff step does not count as a smaller-scale induction.
+
+5. A rigorous no-go for the tempting lagged local norm variant
+--------------------------------------------------------------
+The complete fixed-p Euler transfer in original mode coordinates is diagonal.
+For nu0 its symbol is
+ F0(t)=(1-t)^2/(1-a t), a=p^-1/3.
+In weighted logarithmic L2 at exponent sigma>0, dilation by p has Fourier
+symbol t=r exp(-i omega log p), r=p^-sigma. At phase minus one,
+ |F0(-r)|=(1+r)^2/(1+ar)>1.                            (5.1)
+The strict inequality is elementary: (1+r)^2-(1+ar)=r(2-a+r)>0.
+
+Now form ANY finite bank of fixed scalar dilations/linear filters of the
+source states, and a positive storage on that bank. The filters commute with
+the fixed-p dilation operator. Even with constant mode mixing, on a pure nu0
+input the full bank after adjunction equals F0(t) times the same bank before.
+Its Fourier energy weight is consequently multiplied by |F0(t)|^2.
+If target recovery is uniform, that weight is nonzero at every neighborhood
+of this target-visible mode/phase. Hence a strictly contractive full-phase
+certificate is impossible. Adding a lag dimension or a recoverable polynomial
+filter does not change this fact. A zero at the bad phase removes recovery;
+an unbounded inverse is a debt, not a solution. The phase is not a loophole
+of measure zero: continuity gives an open neighborhood with multiplier>1.
+
+At sigma=1/2 the squared ratio is 1+4p^-1/2+O(p^-1). Thus even the proposed
+per-prime envelope 1+C/p with a finite constant cannot hold in this uniform
+all-phase operator grammar. This is a statement about formal operator norms,
+NOT a lower bound on the actual cofactor source. Its arithmetic prefixes may
+occupy a much smaller class; proving and using that restriction is precisely
+an additional arithmetic inference required by a useful coupled construction.
+
+The obstruction does not cover n-dependent cutoff projections, signed summed
+constraints, nonlinear states or restricted-phase estimates with paid
+complements. Those constructions generally do not commute with dilation and
+need all their new boundary/metric/kernel costs. They are not automatically
+successful. The old occupancy phase certificate alone does not prove that
+their arithmetic domain is frequency closed.
+
+6. Moving-cutoff forcing makes a new coupling genuinely necessary
+----------------------------------------------------------------
+The already proved prime-only rough lower bound excludes independently
+bounding every H_f at critical scale. On the same child horizon, retaining
+the parent's cutoff y=ceil(sqrt(2X)) has a further concrete change: for large
+X and n<=4X-1 its rough coefficients include semiprimes p q with p,q>y
+(and squares), as well as unit and primes. A third rough prime factor is
+impossible once y^3>4X-1. Raising the cutoff to ceil(sqrt(4X)) removes those
+semiprimes through EXACT (2.2), with their full valuations and source weights.
+This crossing is not simply another copy of the old negative prime profile.
+
+The source has opposite eventual signs in these sectors. Writing
+a=p^-1/3,b=q^-1/3 for distinct p,q, the local formulas show
+ f(pq)>=2beta-4beta epsilon-(beta+R_u)epsilon^2
+whenever a,b<=epsilon. With epsilon=1/8 and R_u<=5 this is at least beta.
+For a square,
+ f(p^2)=(1-a)[beta-(beta+R_u)a^2]>=beta/2 for a<=1/8.
+In contrast f(p) is eventually negative, as stage035 proves. These are exact
+source sign envelopes; no all-scale short-prime count or saving is inferred.
+The number and placement of admissible pairs stay in the forcing kernel.
+
+This explains a concrete need for coupled arithmetic: a cutoff change can
+expose positive composite mass against negative prime mass, and the full
+small-prime complement must remain joined. Independently bounding each
+crossing by its absolute mass may recreate the old positive power cost.
+Exact signed relation (2.2) plus a generated quotient certificate (3.1) is a
+way to TRY to retain that compensation. Declaring either sector zero or paid
+from an observed cancellation would fail source binding.
+
+7. A supplied all-scale arithmetic provider, with its real limitation
+--------------------------------------------------------------------
+Complete Mobius divisor inversion gives |c(U)|<=2 for
+c(U)=sum_(n<=U)mu(n)/n. For finite P,
+ C_P(U)=sum_(n<=U,gcd(n,prod P)=1)mu(n)/n
+       =sum_(d<=U,d P-smooth)c(U/d)/d,
+ |C_P(U)|<=2 product_(p in P)(1-1/p)^-1.                (7.1)
+It is a genuine nonlocal actual-source provider that can be bound after a
+discovered row is identified with the Mobius mode. Its exact prime-removal
+identity, full positive geometric tail and growing-P product are checked.
+The source weights/basis must be inverted with their full cost; a bounded
+harmonic observable is not identified with a critical unweighted prefix.
+
+One may add (7.1) as a bounded auxiliary in the new proof dictionary, retaining
+its exact transitions/crosses. It supplies endpoint control for some harmonic
+primitives, but no bound on the full nu0 mode or the joined prefix energy.
+All-scale closure needs an additional coercive/recovery identity, not just
+a bounded companion. This avoids repeating the signed-primitive search's
+unpriced degree-ten energy endpoint in a differently named state.
+
+8. Recommended machine-checkable result classification
+-------------------------------------------------------
+Emit: generated state/cutoff/scale programs; source-law proof; exact common-n
+relations and domain partitions; storage/recovery witness; recurrence matrix
+or summed-work certificate; independently priced forcing DAG; finite heads;
+cutoff/metric/weight conversion costs; induction exponent/log result; residual
+OPEN leaves; and restatement/commuting-obstruction witnesses where applicable.
+
+The detector may discover the construction and certificate inside this grammar.
+The identity, PSD, induction, source and cost primitives are supplied theorem
+rules. Finite numerical validation can falsify proposed recurrences; it does
+not prove them. Success must report the actual arithmetic premise responsible
+for the saving, not only a larger state dimension or finer fractional lattice.
+No such complete saving is established in this analytical review. Edits stop
+with the reviewed interface and the precise remaining signed forcing.

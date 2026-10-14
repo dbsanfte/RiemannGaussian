@@ -1,0 +1,244 @@
+Interleaved reversible circuits 42 and 34: signed analytical attempt
+
+Scope and disposition
+This is a pure analytical review. Only program, certificate and obligation
+payloads for IDs42/34 in reversible-circuit-results/pilot-001/proof_queue.json
+were read. No discovery/training/final numerical responses, source tables,
+tests, hashes or frozen files were read or changed. The original fixed source
+is the actual Mobius function; M(n)=sum_{j<=n}mu(j), with mu(0)=0 for the phase
+syntax. No cofinal transformed moment bound is proved here.
+
+The useful positive result is a stronger uniform forward AND inverse norm
+theorem for this class of interleaved fractional circuits. The useful negative
+result is that even extremely sparse adjacent phase boundaries cannot imply a
+small divisor commutator. Exact shifted-Mobius identities leave signed mixed
+correlations unresolved. The stronger recovery theorem is separate from these
+unresolved cancellation estimates; the frozen conservative certificates and
+candidate ordering are not changed.
+
+1. Fixed programs and notation
+Let T_{alpha,chi}f(n)=sum_{d|n}a_{alpha,chi}(d)f(n/d), where the multiplicative
+kernel has local series (1-chi(p)z)^(-alpha). All coefficients and phases are
+fixed for all stages and their inverses. Let
+ h(n)=n-floor(sqrt(n)),
+ S(n)=-1 if mu(h(n))=-1, and +1 otherwise.
+This is a unit phase, including the zero-source case.
+
+ID42 applies, in order, T_{-1/2,chi3}, S, T_{1/3,chi3}, where chi3(p)=-1 for
+p congruent1 mod3, and +1 otherwise, including p=3. ID34 applies
+T_{-1/2,1}, S, T_{1/6,chi5}, where chi5(p)=-1 for p congruent1 or4 mod5,
+and +1 otherwise, including p=5. Their saved recovery powers are both2.
+
+Write the generic circuit as O=BSA, with
+ A=T_{-a,chi1}, B=T_{b,chi2}, 0<b<a<1,
+ u(d)=a_{-a,chi1}(d), v(d)=a_{b,chi2}(d), c=u*v.
+For these candidates, a=1/2 and b=1/3 or1/6. Let C=BA M and
+ D=[B,S]A M. Then, exactly,
+ O M=S C+D.
+For42, C=T_{-1/6,chi3}M. For34 the two coefficient sources differ, so
+C=T_{1/6,chi5}T_{-1/2,1}M remains a two-source convolution; these convolution
+nodes commute but cannot be merged by adding their exponents at one source.
+
+2. Exact arithmetic commutator and the complete square
+For every input f and integer n,
+ [B,S]f(n)=sum_{d|n}v(d)[S(n/d)-S(n)]f(n/d).
+Consequently the defect in the complete circuit is
+ D(n)=sum_{de|n}v(d)u(e)[S(n/d)-S(n)]M(n/(de))
+     =sum_{k|n}delta(n,k)M(n/k),
+ delta(n,k)=sum_{d|k}v(d)u(k/d)[S(n/d)-S(n)].
+The k=1 term is zero. Multiplying by the unit phase yields the exact gate
+ S(n)delta(n,k)
+ =-2 sum_{d|k}v(d)u(k/d)1_{S(n/d) != S(n)}.
+This retains signed kernel weights and every divisor-pair complement. The gate
+does not make the expression nonnegative because u and v are signed.
+
+Equivalently, the complete output has an output-dependent divisor kernel
+ K(n,k)=sum_{d|k}v(d)u(k/d)S(n/d),
+ (O M)(n)=sum_{k|n}K(n,k)M(n/k).
+At k=1, K(n,1)=S(n): the original prefix remains with full unit diagonal.
+Every other input is a proper-divisor prefix at most n/2. On a dyadic block,
+ D_O(X)=X^-2 sum_{X<=n<2X}(O M)(n)^2
+       =E_C(X)+E_D(X)+2X^-2 sum_{X<=n<2X}S(n)C(n)D(n).
+There is no orthogonality or favorable sign established for the last term.
+Expanding the full square instead gives every k,l divisor pair, with factors
+ v(d)u(k/d)v(e)u(l/e)S(n/d)S(n/e)M(n/k)M(n/l),
+summed over k,l|n and d|k,e|l. Neither the same-chi merger nor any phase gate
+authorizes discarding these mixed terms. The exact proof gate concerns this
+complete square, not just C or D separately.
+
+3. A uniform order-one majorant theorem
+Suppose also a+b<=1, and allow arbitrary fixed prime coefficients
+|chi1(p)|,|chi2(p)|<=1 and any intervening fixed phase S(n) in{-1,+1}.
+Both O and O^-1
+have weighted norm at most zeta(1+epsilon) for sigma=1/2+epsilon>1/2.
+This improves the generic product bound zeta(1+epsilon)^2 for the present
+two stages without relying on cancellation in S or on any bound for M.
+
+Here is the coefficient proof. For 0<a<1 all nonconstant coefficients of
+(1-z)^a are negative. The absolute local majorant for T_{-a} is therefore
+ 2-(1-z)^a.
+For T_b it is (1-z)^(-b). Their positive convolution majorant is
+ H(z)=[2-(1-z)^a](1-z)^(-b)
+     =2(1-z)^(-b)-(1-z)^(a-b).
+For k>=1 its coefficient is
+ H_k=2 U_b(k)+V_{a-b}(k),
+ U_beta(k)=(beta)_k/k!, V_gamma(k)=|(-gamma)_k|/k!.
+When 0<beta,gamma<1 both U_beta(k) and V_gamma(k) decrease with k>=1:
+their successive ratios are (k+beta)/(k+1) and (k-gamma)/(k+1).
+Thus H_k<=H_1=2b+(a-b)=a+b<=1, and H_0=1.
+Prime coefficients of modulus at most1 can only reduce this majorant. By
+multiplicativity, the global positive convolution majorant H(k) is a product
+of numbers <=1. It follows that |K(n,k)|<=H(k)<=1 for every n,k|n,
+including phases depending on the same fixed actual source as M.
+
+The inverse is O^-1=T_{a,chi1} S T_{-b,chi2}. Its positive local majorant is
+ G(z)=(1-z)^(-a)[2-(1-z)^b]
+     =2(1-z)^(-a)-(1-z)^(-(a-b)).
+Its k>=1 coefficients are G_k=2U_a(k)-U_{a-b}(k)>0. They satisfy
+ G_{k+1}-G_k
+ =[-2(1-a)U_a(k)+(1-a+b)U_{a-b}(k)]/(k+1)<=0,
+because U_a(k)>=U_{a-b}(k) and 2(1-a)>=1-a+b follows from a+b<=1.
+Therefore G_k<=G_1=a+b<=1; G_0=1. The same multiplicative argument bounds
+the inverse's output-dependent divisor kernel by1 as well.
+
+For completeness, use the norm with square
+ H_{sigma,T}(f)=sum_{n<=T}|f(n)|^2/n^(2sigma+1).
+For fixed k, multiplication of 1_{k|n}f(n/k) by any coefficient bounded by1
+has norm at most k^(-sigma-1/2)||f||_{sigma,T}. Triangle inequality over the
+divisors, with no omitted finite tails, proves
+ ||O f||_{sigma,T}, ||O^-1 f||_{sigma,T}
+ <=zeta(sigma+1/2)||f||_{sigma,T}
+ <=(1+1/epsilon)||f||_{sigma,T}.
+These are UNSQUARED norm factors; the corresponding H recovery factor is
+(1+1/epsilon)^2. Invertibility is the exact finite triangular inverse using
+the same chi and S, not merely the majorant argument. Passing to infinity
+uses monotone limits. Both selected circuits satisfy the exponent conditions.
+
+Also |delta(n,k)|<=2H(k)<=2 for k>=2, so
+ ||D f||_{sigma,T}<=2[zeta(1+epsilon)-1]||f||_{sigma,T}.
+This is an unconditional component estimate, but its right side is the
+unknown weighted norm of the original input. It is not a subpower moment
+bound, negative transport credit, or contraction sufficient to close RH.
+
+4. What the phase geometry actually gives
+At consecutive integers, h(n+1)-h(n)=1 except when n+1 is a square, when it
+is0. The O(sqrt(X)) square crossings in a long block are duplication events;
+at all other locations the phase queries a NEW actual Mobius source value.
+The root's slow change is not the phase's slow change. No sparse adjacent
+phase-boundary assertion follows from it.
+
+More importantly, even sparse adjacent boundaries would not suffice. Consider
+the comparison unit phase S0(n)=(-1)^floor(log2(n)). It has only O(log X)
+adjacent jumps up to X, but S0(2n)=-S0(n) for every n. For an input impulse
+f=1_{n=N}, the exact defect at2N is
+ D_f(2N)=v(2)[S0(N)-S0(2N)]=-2b chi2(2) S0(2N).
+For |chi2(2)|=1 and T>=2N,
+ ||D_f||_{sigma,T}/||f||_{sigma,T}>=2b*2^(-sigma-1/2).
+This lower bound is independent of N. Thus the commutator need not become
+small on arbitrarily late input supports even with logarithmically many
+ordinary phase boundaries. This is a rigorous comparison-operator obstruction,
+not a counterexample for the actual shifted-Mobius phase and not a claim about
+its uncomputed sign-mismatch density. An actual-input cancellation could still
+occur among other divisor terms, and would need proof.
+
+5. Exact squarefree/source decomposition and its remaining correlations
+For the actual source, the complete phase identity is
+ S(n)=1-mu(h(n))^2+mu(h(n)).
+It separates squareful/zero values from squarefree signed ones without
+discarding either. If Q(u)=1-mu(u)^2, then
+ S(i)S(j)=Q(h(i))Q(h(j))+mu(h(i))Q(h(j))
+          +Q(h(i))mu(h(j))+mu(h(i))mu(h(j)).
+On the sector where both arguments are squarefree the last term is their
+signed correlation, rather than a nonnegative density. On the one-zero
+sectors a signed term remains. Squarefree counting alone controls neither
+these correlations nor their products with M(n/k)M(n/l) in the full square.
+
+The actual prime law mu(pk)=-mu(k)1_{p does not divide k} does not directly
+relate the arguments of a phase under divisor scaling. Indeed
+ h(dk)-d h(k)=d floor(sqrt(k))-floor(sqrt(dk)).
+For fixed d>1 this equals (d-sqrt(d))*sqrt(k)+O(d), not0. Replacing mu(h(dk))
+by a multiplicative multiple of mu(h(k)) would omit an unbounded shifted
+source complement. The squarefree identities do not repair that omission.
+The resulting object is a divisor-weighted shifted-source/prefix correlation,
+with the squarefree and root-transition sectors retained. No unconditional
+subpower estimate for it is obtained here. This is a limitation of the
+available identities and norm/boundary argument, not an impossibility theorem
+for an arithmetic proof using additional structure of the actual source.
+
+6. Exact residue-kernel simplifications, without a hidden analytic premise
+The residue sources have a useful formal Euler description. Let eta3 and
+eta5 be the real quadratic Dirichlet characters mod3 and5. For p!=q,
+chiq(p)=-etaq(p), while chiq(q)=1. In the absolutely convergent half-plane
+Re(s)>1, or as formal local series, the coefficient series is
+ sum_n a_{alpha,chiq}(n)n^(-s)
+ =[zeta(2s)(1+q^(-s))/L(s,etaq)]^alpha.
+This follows locally from 1+eta(p)x=(1-x^2)/(1-eta(p)x), with the exceptional
+prime-q factor kept. It uses only the defining Euler products and fractional
+powers fixed by their convergent logarithms; it assumes no zeros or bounds
+for L in a critical half-plane.
+
+Thus42's merged core coefficient series is
+ [L(s,eta3)/(zeta(2s)(1+3^(-s)))]^(1/6).
+For34 the core coefficient series is
+ zeta(s)^(-1/2)[zeta(2s)(1+5^(-s))/L(s,eta5)]^(1/6).
+These are exact coefficient identities, not moment estimates. The input is
+the PREFIX SEQUENCE M, whose ordinary Dirichlet series is not 1/zeta(s).
+Consequently one cannot multiply these series by the source series 1/zeta(s)
+and call the result the observer on M. Nor do these identities remove S or
+the commutator correlations in the complete output. They can identify known
+Euler cores while keeping the genuinely nonmultiplicative defect visible.
+
+7. Whole-target obstruction and the precise proof still needed
+The unit diagonal K(n,1)=S(n) retains each fresh prefix M(n). Proper-divisor
+terms use earlier prefixes, but the actual phase also queries near-n source
+values. For an unrestricted input vanishing below a dyadic block, the circuit
+on that block is just S(n)f(n) and preserves its entire energy there. Hence
+no input-independent norm/past argument gives a subpower bound for arbitrary
+fresh blocks. On the actual input, the dependence between the fresh source,
+these phases and divisor prefixes is available arithmetic information, not
+already proved cancellation. The obstruction does not replace that arithmetic
+problem with an artificial independent-source assumption.
+
+The required estimate is: for this ONE fixed circuit and cofinally many
+positive integers q, there exists finite Cq, independent of every dyadic
+X>=32, such that the COMPLETE D_O(X)<=Cq ceil(X^(1/q)). Finite head energy
+must remain. Proving E_C alone, bounding phase boundaries, or proving a
+favorable sign for only some mixed terms does not satisfy this gate.
+For every epsilon>0, the existing dyadic bridge and exact recovery imply
+ H_{1/2+epsilon}(O M)<infinity iff H_{1/2+epsilon}(M)<infinity.
+The new majorant improves constants in this equivalence and does not change
+the target class. A cofinal moment estimate would therefore give the reviewed
+ordinary-zeta/RH implication. Such an estimate has not been found here.
+
+One sufficient but still unproved route is cofinal moment bounds for BOTH
+C and D, using the complete cross term via Cauchy-Schwarz. A genuinely signed
+route could instead control the full divisor-pair sum directly and absorb
+E_D plus the mixed term into a proved complement/credit identity. Either
+route must supply new source-specific correlation estimates; applying the
+component norm bound to unknown H(M) is circular for this purpose.
+
+8. Consequences for future structural generation
+Maintain separate annotations for an exactly mergeable Euler core and the
+nonmultiplicative divisor-phase defect, including the zero/squareful sectors.
+For a proposed analytically simple phase, require a proved law for S(n)S(n/d)
+on the relevant divisor domains, rather than a count of adjacent jumps.
+Completely multiplicative phases fold into prime coefficients and are aliases
+at this level; periodic phases can have persistent dilation mismatches. A
+shifted source query is not a multiplicative law merely because its source is.
+
+The condition 0<b<a<1, a+b<=1 defines a generic interleaving family with the
+proved order-one recovery guarantee above; it does not select a favorable
+moment result. Real analytic progress would come from an exact compensation
+or a bound for the signed shifted-source/prefix correlations exposed here,
+with every discarded-domain complement paid for. A future nontriangular
+dyadic permutation could change the proper-divisor dependency pattern and
+would require a new expansion; its own energy isometry supplies no moment
+cancellation. No such primitive or new experiment is reviewed or run here.
+
+Final status
+Proved: exact complete commutator/full-square decomposition, order-one uniform
+forward and inverse majorants for both selected circuits, and insufficiency of
+adjacent-boundary sparsity for a tail-small divisor commutator. Unproved: the
+actual shifted-Mobius defect's cofinal subpower moment and the complete fixed
+observer moment. No RH, global signed bound or arithmetic cancellation theorem
+is claimed. Reviewer research/test work is zero; this new memo alone is edited.

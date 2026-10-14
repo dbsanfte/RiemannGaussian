@@ -1,0 +1,70 @@
+SHIFTED QUOTIENT STRUCTURAL CANDIDATE STUDY -- 9 October 2026
+
+Purpose: search complete signed arithmetic-factor interactions, not improve
+the optimizer on previously selected reversible circuits. No historical
+novelty claim. Twenty-five fixed programs, with no fitted coefficients.
+
+Atom H_b(s)=(zeta(s+b)/zeta(s)-1)/b; distinct rational shifts in
+{1/6,1/3,1/2,2/3,5/6}; all products of one, two or three atoms.
+General parser allows rational denominators up to24. At finite positive b
+these coefficients include composites, not only prime powers. The pointwise
+zero-shift limit has coefficients (-1)^k Lambda^{*k}; no uniform interchange
+in x is asserted. Every overlap and composite complement is retained.
+
+Summatory outputs subtract every simple real-pole residue term, including
+terms whose exponent is below one half. No regression fits these terms.
+The normalizer always uses true zeta, including for negative controls.
+The subtraction of delta_1 is exact. It is not a Perron constant fit.
+
+Complete signed energy E(X)=X^-2 sum_{X<=n<2X} G(n)^2. Absolute envelope
+retains cumulative absolute coefficient values plus every absolute main
+term. Its cancellation ratio is diagnostic only and never selects a lead.
+
+Comparator for degree k is (mu-delta_1)^{*k}, with its complete summatory
+energy. This has the same Dirichlet pole order and the same factor-index
+lag as the candidate; comparison to mu^{*k} would falsely reward removing
+fresh coordinates. Neither comparison establishes a quantitative inverse.
+
+Training X=64,128,256,512; discovery-validation X=768,1024,1536,2048.
+Discovery horizon4095. Training only fits rational ceilings for hypothetical
+E(X)<=C_q X^(1/q), q=2,3,6,12. Validation uses those frozen constants.
+At every validation block an admitted numerical lead must have E<=0.95
+times its same-degree comparator and pass every training-constant growth
+test. Interval-indeterminate comparisons fail admission conservatively.
+
+Within each degree select exactly one challenger by (number of failed
+validation growth tests, maximum validation E/E_comparator, candidate id).
+This ranking concerns the full energy, never internal cancellation alone.
+Keep admission status separate: a challenger can fail the numerical-lead
+gate and remains a diagnostic challenge, not a successful RH candidate.
+Rank uses floating midpoints only to order finite interval results; every
+inequality claim/admission decision uses rigorous interval comparisons.
+
+Final fixed blocks X=49152,65536, complete horizon131071, for all three
+sources at matched scales. Parameters/selection are frozen before final
+evaluation. Sources: actual mu; all ones; squarefree sign with negative
+sign for primes<=13 and positive sign for all other primes. The latter
+agrees with mu through13 but has a positive mean. Source values/scales
+overlap earlier research; this is new-program validation, not concealed
+or statistically independent arithmetic data. No final result adapts this
+study. All rejected programs and measured values remain in the archive.
+
+Independent checker: own divisor-row coefficient construction at192bits,
+versus multiplicative prime-power and multiples convolution at128bits.
+Check every discovery result and every selected final result; compare
+interval enclosures and normalizers. Require an interval width tolerance
+of2^-70*(1+abs(midpoint)) before accepting any recorded result. Overlap of
+certified tight enclosures is numerical consistency, not a proof of a
+cofinal estimate. Check all three baselines independently as well.
+
+Resource total:800 million charged operations,7200 seconds per study,
+aggregate16GiB with maximum four processes of4GiB. Conservatively charge
+64units per real power and256per zeta evaluation. Count all development,
+frozen calibration, discovery, final and independent checks in one ledger.
+No automatic retries or cap resets. Preserve partial checkpoints. One
+owned development suite per implementation, affected tests after fixes,
+then one combined frozen suite. No hashes; direct source-byte snapshots.
+
+Uniform signed bound, RH, finite-prefix inverse, and novelty flags remain
+false. A rigorous holomorphic RH bridge belongs to the analytical review;
+it does not establish the uniform arithmetic premise being investigated.

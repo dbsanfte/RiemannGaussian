@@ -1,0 +1,34 @@
+{
+  "owner": "independent prefix_proof_checker Sol6.1",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_fractional_prime_kernel_051",
+      "returncode": 0,
+      "tests": 18,
+      "stdout": "SYNTHETIC_WORK module=test_check_fractional_prime_kernel_051 operations=95182\nSYNTHETIC_SPLIT checker=93096 fixture=2086\n",
+      "stderr": "test_all_strict_negative_witness_families (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_arbitrary_rational_parameters_and_omega_decay_gate (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_b_zero_has_no_derivative_denominator_provider (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_charge_only_meter_alias_and_capacity (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_dirichlet_initial_domain_and_missing_unit_subtraction (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_false_global_distribution_and_rh_claims (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_forward_normalized_laplace_and_pointwise_bounds (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_linear_and_quadratic_zero_scope_mutations (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_linear_exact_formula_for_both_orientations (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_negative_prime_can_have_zero_base (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_negative_witness_and_numerical_boolean_mutations (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_normalizer_orientation_and_one_factor_mutations (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_product_bound_sign_and_domain_mutations (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_product_factor_count_bound_exact_rational_inequality (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_quadratic_a_zero_endpoint (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_quadratic_full_mangoldt_convolution_and_prime_powers (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_source_swaps_and_strict_canonical_parameter_guards (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\ntest_source_unit_prime_power_and_full_scope_guards (test_check_fractional_prime_kernel_051.FractionalKernelTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.015s\n\nOK\n",
+      "operations": 95182,
+      "elapsed_seconds": 0.08156146603869274,
+      "peak_rss_KiB": 24708
+    }
+  ],
+  "operations": 95182,
+  "distinct_tests": 18,
+  "suite_failures": 0,
+  "edits_stopped": true,
+  "source_values_or_candidate_tables_evaluated": false,
+  "old_suites_or_studies_rerun": false,
+  "new_producer_imported_by_checker": false,
+  "static_parse_passed": true,
+  "rules_audited": [
+    "finite squarefree inclusion-exclusion with prime-power offset",
+    "normalized positive concave Laplace integral",
+    "one-factor and k-fold derivative product bounds",
+    "AMGM omega ratio",
+    "von Mangoldt linear endpoint",
+    "positive quadratic Mangoldt convolution",
+    "strict-negative derivative witnesses",
+    "absolutely convergent initial Dirichlet-domain bridge"
+  ],
+  "scope": "Uniform pointwise arithmetic kernel sign and size only; no distribution, global Mobius/norm bound, analytic continuation or RH claim."
+}

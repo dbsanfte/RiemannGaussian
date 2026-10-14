@@ -1,0 +1,229 @@
+{
+  "status": "independently_verified_direct_signed_moment_transfer_audit",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-mellin-results/audit-002",
+  "programs_audited": 541,
+  "estimates_audited": 2164,
+  "statuses": {
+    "uniform_estimate_ruled_out_by_actual_zeta_zero": 1488,
+    "numerical_lead_missing_uniform_signed_moment_proof": 620,
+    "numerical_lead_missing_global_multiplier_and_uniform_moment_proof": 56
+  },
+  "checks": {
+    "source_code_archive_final_moment_and_previous_independent_audit_provenance": true,
+    "direct_Holder_exponent_and_dyadic_geometric_cost_checked": true,
+    "independent_actual_zero_disk_and_Horner_multiplier_obstructions": true,
+    "all_height_multiplier_cost_and_compact_interpolation_correction_checked": true,
+    "single_fixed_order_RH_sufficiency_kept_conditional": true,
+    "all_generated_estimates_reclassified_without_reselection_or_new_held_out_claim": true
+  },
+  "finite_passes_globally_ruled_out": 43,
+  "finite_passes_without_this_obstruction": 2,
+  "surviving_archived_uniform_proof_obligations": [
+    {
+      "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-control-results/pilot-001",
+      "program_id": "2b63d8cebc2b792076913321512beab1f11bdb767b5083cc3a31a681a9580db4",
+      "program": {
+        "id": "2b63d8cebc2b792076913321512beab1f11bdb767b5083cc3a31a681a9580db4",
+        "family": "random_signed",
+        "atoms": [
+          [
+            10,
+            "7/8"
+          ]
+        ],
+        "fit_method": "seeded signed rational exploration",
+        "operator_certificate": {
+          "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+          "atoms": [
+            [
+              10,
+              "7/8"
+            ]
+          ],
+          "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+          "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+          "lipschitz_constant": "87/80",
+          "critical_inverse_cost_ball": "[0.27669929526473319154990318513786287 +/- 1.71e-36]",
+          "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+          "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+          "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+          "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+          "global_signed_cancellation_estimate_proved": false,
+          "historical_priority_is_acceptance_gate": false
+        }
+      },
+      "estimate": {
+        "certificate": {
+          "order": 2,
+          "beta": "2",
+          "constant": "2447/1024",
+          "mellin_exponent": "1/2",
+          "uniform_premise": "For every dyadic X>=1, integral_X^(2X)|R(t)|^q dt <= C X^beta",
+          "holomorphic_half_plane": "Re(s)>max((beta-1)/q,0)",
+          "RH_sufficient_if_uniform_and_all_height_multiplier_nonzero": true,
+          "contradicted_if_critical_zero_multiplier_nonzero": false,
+          "uniform_signed_moment_premise_proved": false,
+          "RH_proved": false
+        },
+        "status": "numerical_lead_missing_uniform_signed_moment_proof",
+        "global_multiplier_lower_bound": "3300016514038939759330753364140379247914251594446565836108633186842998966447158754915283332738633817914938349238862441152473226059873368667480743344801124403550861529863339476983613348856166217/4562440617622195218641171605700291324893228507248559930579192517899275167208677386505912811317371399778642309573594407310688704721375437998252661319722214188251994674360264950082874192246603776",
+        "reciprocal_test_line": "3/4",
+        "conditional_reciprocal_bound_ball": "[15.14278676623573358460148172855006218117 +/- 4.30e-39]",
+        "original_final_windows_passed": true
+      }
+    },
+    {
+      "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/stable-scale-results/pilot-001",
+      "program_id": "3d3f7dc3ecebabbd53b763036c1fee508d1575232ab5456a0d51b5bee7583726",
+      "program": {
+        "id": "3d3f7dc3ecebabbd53b763036c1fee508d1575232ab5456a0d51b5bee7583726",
+        "family": "polynomial_fit",
+        "base": 2,
+        "polynomial": [
+          "1",
+          "-65/128"
+        ],
+        "method": "exact weighted least squares and rational quantization; no stability projection",
+        "operator_certificate": {
+          "base": 2,
+          "polynomial": [
+            "1",
+            "-65/128"
+          ],
+          "atoms": [
+            [
+              2,
+              "65/128"
+            ]
+          ],
+          "lipschitz_constant": "321/256",
+          "triangle_critical_cost_ball": "[0.35907766232129366473480377763136865 +/- 2.77e-36]",
+          "triangle_certificate_available": true,
+          "schur_attempts": [
+            {
+              "certified": true,
+              "radius": "14485/16384",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-941525/2097152"
+                  ],
+                  "reflection_coefficient": "-941525/2097152",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "1155627/2097152",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "26073/32768",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-1694745/4194304"
+                  ],
+                  "reflection_coefficient": "-1694745/4194304",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "2499559/4194304",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "49249/65536",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-3201185/8388608"
+                  ],
+                  "reflection_coefficient": "-3201185/8388608",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "5187423/8388608",
+              "scope": "Every |z|<=radius, including the boundary"
+            },
+            {
+              "certified": true,
+              "radius": "188305/262144",
+              "steps": [
+                {
+                  "polynomial": [
+                    "1",
+                    "-12239825/33554432"
+                  ],
+                  "reflection_coefficient": "-12239825/33554432",
+                  "reduced": [
+                    "1"
+                  ]
+                }
+              ],
+              "uniform_multiplier_lower_bound": "21314607/33554432",
+              "scope": "Every |z|<=radius, including the boundary"
+            }
+          ],
+          "inverse_prefix_length": 64,
+          "all_height_critical_multiplier_certified": true,
+          "ordinary_zeta_bridge": "F(b^(-s))/(s*zeta(s)) plus a term holomorphic for Re(s)>0",
+          "uniform_signed_arithmetic_estimate_proved": false,
+          "selected_schur_certificate": {
+            "certified": true,
+            "radius": "14485/16384",
+            "steps": [
+              {
+                "polynomial": [
+                  "1",
+                  "-941525/2097152"
+                ],
+                "reflection_coefficient": "-941525/2097152",
+                "reduced": [
+                  "1"
+                ]
+              }
+            ],
+            "uniform_multiplier_lower_bound": "1155627/2097152",
+            "scope": "Every |z|<=radius, including the boundary"
+          },
+          "outside_triangle_domain_certified": false,
+          "critical_weight_inverse_norm_upper_ball": "[1.5602570435770858294728319445537902 +/- 2.22e-35]"
+        }
+      },
+      "estimate": {
+        "certificate": {
+          "order": 2,
+          "beta": "33/16",
+          "constant": "1029/1024",
+          "mellin_exponent": "17/32",
+          "uniform_premise": "For every dyadic X>=1, integral_X^(2X)|R(t)|^q dt <= C X^beta",
+          "holomorphic_half_plane": "Re(s)>max((beta-1)/q,0)",
+          "RH_sufficient_if_uniform_and_all_height_multiplier_nonzero": false,
+          "contradicted_if_critical_zero_multiplier_nonzero": false,
+          "uniform_signed_moment_premise_proved": false,
+          "RH_proved": false
+        },
+        "status": "numerical_lead_missing_uniform_signed_moment_proof",
+        "global_multiplier_lower_bound": "1155627/2097152",
+        "reciprocal_test_line": "3/4",
+        "conditional_reciprocal_bound_ball": "[14.61226971481281414576299502254052748196 +/- 2.53e-39]",
+        "original_final_windows_passed": true
+      }
+    }
+  ],
+  "RH_sufficient_single_moment_premise": "For some fixed q>=2, certify A_q(X)<=C X^(q/2+1) at every dyadic scale, preserving every ordinary-zero pole",
+  "historical_priority_is_acceptance_gate": false,
+  "no_reselection_or_new_held_out_claim": true,
+  "uniform_sublinear_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "a7dc154348893193e43592982a7a05b6618a8c9c6b65bb72682cf62ba9472325"
+}

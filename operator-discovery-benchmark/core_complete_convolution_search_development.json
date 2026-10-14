@@ -1,0 +1,39 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_complete_convolution_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=982954\n",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.552s\n\nOK\n",
+      "operations": 982954,
+      "elapsed_seconds": 0.6334401280037127
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_complete_convolution_search.CompleteConvolutionTests.test_transfer_ablation_keeps_powers_and_pays_all_generic_logarithms",
+        "test_core_complete_convolution_search.CompleteConvolutionTests.test_transfer_search_selects_smaller_cube_only_when_all_padding_is_subcritical"
+      ],
+      "returncode": 0,
+      "stdout": "operations=695850\n",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.426s\n\nOK\n",
+      "operations": 695850,
+      "elapsed_seconds": 0.5052345040021464,
+      "reason": "New generic transfer profile and affected actual-profile regression only"
+    }
+  ],
+  "operations": 1678804,
+  "actual_source_observations": 0,
+  "numeric_cache_reads": 0,
+  "edits_stopped": true
+}

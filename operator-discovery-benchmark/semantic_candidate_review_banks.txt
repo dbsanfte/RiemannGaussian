@@ -1,0 +1,234 @@
+Pilot002 bank candidates: independent analytical review
+
+Scope
+Read only generation0_batch.json program/semantic payloads for IDs17..32 and
+final_batch.json program/semantic payload for selected mutation53. No training,
+evidence, response scores, actual source tables, numerical experiments, tests
+or hashes were read or computed. Frozen sources and soundness remain untouched.
+This new memo consists of exact identities and unconditional deductions. It is
+not an addition to frozen admission and establishes no universal target bound.
+
+Notation and complete formulas
+M(n)=sum_{a<=n}mu(a), M(0)=0, R=floor(X^(1/r)), N_d=floor(t/d),
+L(t)=M(floor(t/2)), B_theta(t)=M(floor(t^theta)). All bank states here have
+weight1 and V(X)=X^-2 sum_{X<=t<2X} U_X(t)^2; W=E+V retains original E.
+Define
+ C_R(t)=sum_{d<=R}mu(d)M(N_d),
+ P_{R,theta}(t)=sum_{d<=R}mu(d)mu(N_d)B_theta(N_d),
+ A_R(t)=sum_{p<=R,prime}M(N_p),
+ Q_{R,theta}(t)=sum_{p<=R,prime}mu(N_p)B_theta(N_p),
+ H_R(t)=sum_{p<=R,prime}mu(N_p).
+
+IDs17,19,21 (r=2,3,6): U=C_R-P_{R,1/2}.
+IDs18,20,22 (r=2,3,6): U=M(R)M(t)-C_R.
+ID23 (r=3): U=sum_{d<=R,(d,t)=1}mu(d)M(N_d).
+ID24 (r=3): U=mu(t)C_R-P_{R,1/3}.
+IDs25,27,29 (r=2,3,6): U=A_R-Q_{R,1/2}.
+IDs26,28,30 (r=2,3,6): U=L(t)H_R(t)-mu(t)A_R(t).
+ID31 (r=3): U=A_R-pi(R)B_{1/3}(t).
+ID32 (r=3): U=G_R(t)+nu_R(t)B_{1/6}(t), where
+ G_R=sum_{p<=R,prime,p not dividing t}mu(N_p)M(N_p),
+ nu_R=pi(R)-#{p<=R,prime,p dividing t}.
+ID53: U=U31-G_m(t)L(t), m=max(2,R), G_m=1_{gcd(t,m)=1}.
+
+The selected bank programs in this review are29,30,31,53. Here r labels a fixed
+program's cutoff root; it is not the independently quantified q in the target.
+Taking r=6 does not license choosing a new r as q or X increases.
+
+Factor-bank identities and retained complements
+For every R<=t,
+ C_R(t)=sum_{n<=t} sum_{d|n,d<=R}mu(d)mu(n/d).
+The full bank S(t)=C_t(t) is the prefix of mu*mu, not the Mobius inverse identity
+sum_d mu(d)floor(t/d)=1. Its prime-power coefficients are1,-2,1,0,... at
+p^0,p^1,p^2,p^3,... . That exact multiplicative description does not bound its
+signed prefix. Any full-bank rewrite retains sum_{R<d<=t}mu(d)M(N_d).
+
+For R^2<=t, generalized Dirichlet hyperbola gives
+ S(t)=2C_R(t)-M(R)^2+T_R(t),
+ T_R=sum_{a>R,b>R,ab<=t}mu(a)mu(b).
+Thus C_R=[S+M(R)^2-T_R]/2 exactly. The large/large complement is absent only
+when R=floor(sqrt(t)); the candidates use floor(X^(1/r)), not that t-dependent
+full hyperbola cutoff. Even r=2 has a generally nonempty complement across its
+block. An absolute bound counts the large/large pairs and can be of order t;
+it is not an all-scale subpower signed estimate.
+
+The difference banks also have the exact rectangle-minus-hyperbola form
+ M(R)M(t)-C_R(t)
+ =sum_{d<=R,n<=t,d*n>t}mu(d)mu(n)
+ =sum_{t/R<n<=t}mu(n)[M(R)-M(floor(t/n))].
+The d=1 summand vanishes. This is a genuine complementary bilinear region, not
+a theorem that its signed mass is small. The prefactor M(R) multiplying M(t)
+cannot be bounded independently by assuming the desired Mertens estimate.
+
+For ID23, fix the output parameter t and put mu_t(a)=mu(a)1_{(a,t)=1}.
+Its full-domain prefix is sum_{ab<=t}mu_t(a)mu(b). At primes dividing t its
+local coefficients are those of mu; at primes not dividing t they are those
+of mu*mu. It is not the inverse identity. The truncated state retains its
+a>R tail. Its asymmetric hyperbola identity is
+ full=CoprimeBank_R+sum_{b<=R}mu(b)M_t(floor(t/b))
+      -M_t(R)M(R)+sum_{a>R,b>R,ab<=t}mu_t(a)mu(b),
+where M_t(u)=sum_{a<=u}mu_t(a). The second small-variable bank is different
+from the first. Treating them as symmetric would drop a source-domain cost.
+
+No multiplicativity rule collapses mu(d)mu(floor(t/d)) to mu(t) generally.
+Such a rule needs d|t and gcd(d,t/d)=1, besides the exact factorization. The
+gate gcd(d,t)=1 in ID23 actually excludes every divisor d>1 of t. Likewise
+p not dividing t in ID32 is not a claim that p is coprime to floor(t/p).
+
+Internal point factors: proved component bounds, unresolved interaction
+For every n>=1 and 0<=theta<=1,
+ M(n)-mu(n)B_theta(n)
+ =sum_{floor(n^theta)<a<=n}mu(a)+(1-mu(n))M(floor(n^theta)).
+For the half-root states, a positive Mobius point removes the initial root
+prefix, zero leaves it unchanged, and a negative point doubles that prefix.
+This is source-conditioned subtraction, not an independent random sign.
+Its square contains M(n)^2-2mu(n)M(n)B_theta(n)+mu(n)^2 B_theta(n)^2.
+Every pair of distinct d or p adds its corresponding full mixed product.
+
+Using only |mu|<=1 and |M(n)|<=n, for 0<=theta<1,
+ |P_{R,theta}|,|Q_{R,theta}|
+ <=t^theta sum_{d<=R}d^-theta
+ <=t^theta R^(1-theta)/(1-theta).
+Consequently their normalized square is bounded by
+ 2^(2theta)/(1-theta)^2 * X^(2theta-1)R^(2-2theta).
+At theta=1/2 the exact sum of t over the block improves this to6R.
+At theta=1/3,r=3 this gives a constant times X^(1/9).
+Thus selected29 has a root-correction envelope6floor(X^(1/6)); this is a fixed
+positive-power loss, not forcing admissible for every cofinally large q.
+
+If U=A-Q, the exact norm identity is V_U=V_A-2<A,Q>+V_Q, with block inner
+product normalized by X^2. Cauchy-Schwarz gives |<A,Q>|<=sqrt(V_A V_Q), or
+epsilon V_A+epsilon^-1 V_Q for twice the absolute mixed term. This consumes
+main-bank energy credit; it does not create credit or establish a signed drift.
+Selected29 therefore needs an estimate for the main prime bank and its signed
+correlation with the quotient-point/root bank, not only a bound on the latter.
+
+Prime-bank identities
+Define kappa_R(n)=pi(min(R,floor(t/n))) for fixed t. Exact summation interchange
+gives A_R(t)=sum_{n<=t}mu(n)kappa_R(n). Its divisor-convolution coefficient is
+sum_{p|n,p<=R}mu(n/p). For squarefree n this is -omega_R(n)mu(n). For n=p^2 a
+with a squarefree and p not dividing a, it is1_{p<=R}mu(pa); with any higher
+prime exponent or two squared primes it is zero. Prime cutoff truncation and
+all corresponding tails remain. Unweighted prime banks do not become a
+logarithmically weighted von-Mangoldt identity by changing notation.
+
+H_R(t)=sum_{n>=1}mu(n)[kappa_R(n)-kappa_R(n+1)]. It is not the output-step
+derivative of A_R: that derivative is sum_{p<=R,p|t}mu(t/p).
+In selected30, exact expansion is
+ U^2=L^2 H_R^2+mu(t)^2 A_R^2-2mu(t)L H_R A_R.
+All H-pair, A-pair and H/A pair correlations remain. On a dyadic parent X>=2,
+V_L=E(X/2)/2; |H_R|<=pi(R) gives only
+ V_U<=pi(R)^2 E(X/2)+2V_A.
+The moving pi(R)^2 factor is not a uniform contraction. An induction that
+silently inserts a subpower lower-scale bound and then ignores this multiplier
+does not close. A signed compensation or a genuinely bounded transfer kernel
+is needed. Divisibility/coprimality identities apply only on their exact cases;
+off a divisor residue, the floor quotient is not a factor of t.
+
+Selected31: exact source gap and useful lower-scale root transfer
+For every admitted prime p<=R=floor(X^(1/3)) and t>=X, N_p>=floor(t^(1/3)).
+Therefore its subtraction removes the common initial source segment exactly:
+ U31=sum_{n>floor(t^(1/3))}mu(n)kappa_R(n).
+The state is a positively weighted signed source tail. This is not a bound on
+that tail or proof that its signs are independent. The original square still
+equals V_A-2pi(R)<A,B_{1/3}>+pi(R)^2 V_{B_{1/3}}.
+
+There is a noncircular component-energy estimate stronger than the trivial
+positive-power envelope. For R>=2, all n=floor(t^(1/3)) in the block lie in
+[R,2R). The exact fiber multiplicity is
+ c_n=#{t in [X,2X):n^3<=t<(n+1)^3}<=3n^2+3n+1<=12R^2.
+Since X>=R^3, the collective root component P=pi(R)B_{1/3} satisfies
+ V_P<=12[pi(R)/R]^2 E(R).
+No cancellation bound on M has been assumed: the right-hand side is explicitly
+the smaller-scale unknown energy. If Y is the largest dyadic integer<=R,
+ E(R)<=E(Y)+4E(2Y), by covering [R,2R) with [Y,2Y) and [2Y,4Y).
+For the nonexceptional scales these are strictly smaller than X.
+
+The coefficient pi(R)/R tends to zero by an elementary source-free argument.
+For any fixed N let P be the product of primes<=N. Except these finitely many
+primes, primes<=R occupy coprime residue classes modulo P, so
+ limsup_R pi(R)/R<=phi(P)/P=product_{p<=N}(1-1/p).
+The reciprocal product's geometric expansion contains every integer<=N;
+hence this product<=1/(sum_{n<=N}1/n), which tends to zero. This establishes
+a vanishing coefficient in the component transfer without PNT or RH.
+
+This is a possible ingredient in a genuine smaller-scale induction. It does
+not bound the main prime tail, its covariance with the root term, or the full
+Delta(E+V). Those remaining terms cannot be replaced by the desired energy
+estimate without an explicit closed induction and initial-scale costs.
+
+ID32: bounded collective padding and quotient-energy increments
+Its collective root component nu_R(t)B_{1/6}(t) has uniformly bounded
+normalized square<=2: nu_R<=R<=X^(1/3) and B_{1/6}^2<=t^(1/3)<=2X^(1/3).
+This bank-level bound is unconditional despite the growing number of primes.
+The square of G_R plus this component still contains their unresolved mixed
+term. A bounded component square does not make that mixed term bounded.
+
+For every n>=1 the exact identity
+ mu(n)M(n)=[M(n)^2-M(n-1)^2+mu(n)^2]/2
+rewrites each quotient point/prefix component of G_R as an energy increment
+plus a squarefree gate. For a fixed p and interval I=[a,b], put
+ c_n=#{t in I:np+1<=t<=np+p-1}.
+Then sum_{t in I,p not dividing t}mu(N_p)M(N_p)
+ =1/2 sum_n c_n[M(n)^2-M(n-1)^2+mu(n)^2].
+Interior c_n=p-1; the first and last weights retain the precise incomplete
+residue-block endpoints. Weighted summation by parts retains both endpoint
+energies and differences c_n-c_{n+1}. This gives an exact linear telescoping
+identity, not a telescoping identity for V_G, which squares the coupled bank
+and retains higher correlations and all prime pairs.
+
+Selected53: prime-row cancellation, mask jumps and uniform component cost
+Let G=G_m(t), B=B_{1/3}(t). When R>=2 the p=2 summand is present, and
+ U53=(1-G)L+sum_{3<=p<=R}M(N_p)-pi(R)B.
+On G=1 the p=2 lag cancels exactly. Its root subtraction remains: deleting a
+gated prime row outright would incorrectly lose an unmatched -B contribution.
+The original three-piece square is
+ A_R^2+pi(R)^2 B^2+G L^2-2pi(R)A_R B-2G A_R L+2pi(R)G B L.
+No term has an independent sign/correlation premise. At R=1 the bank is empty
+and the actual formula is -G_2 L, not the R>=2 rearrangement. W(1)=1 must stay.
+
+For one parent-child step let R'=floor((2X)^(1/3)), m'=max(2,R'),
+ J=sum_{R<p<=R',prime}[M(N_p)-B], deltaG=G_{m'}-G_m.
+On the child block, relative to the valid parent-parameter extension,
+ U_child=U_old+J-deltaG L.
+The complete boundary correction to its square is
+ 2U_old J+J^2-2deltaG U_old L-2deltaG J L+(deltaG)^2 L^2.
+It includes old/new prime correlations, new-prime/mask correlations and both
+gained and lost coprime sets. Equal radicals give deltaG=0. Nonnested radicals
+can give both signs; a composite cutoff jump can alter the gate without adding
+a prime to the bank. These selectors require separate boundary accounting.
+
+The mask-jump component has the useful unconditional bound
+ (4X^2)^-1 sum_child (deltaG)^2 M(floor(t/2))^2<=E(X)/2,
+because every n in [X,2X) occurs twice. This is a uniform parent-energy cost,
+not a modulus-dependent constant. Its cross terms require corresponding bank
+credit; Cauchy-Schwarz cannot discharge them without consuming that credit.
+The collective root term inherits the smaller-scale estimate for ID31.
+
+Full drift and the precise unresolved gate
+For every pure bank in this memo, its summand functions depend on t while X
+enters through R. If U_R is extended to the entire child block using the same
+parent cutoff, and J=U_{R'}-U_R, then exactly
+ DeltaV=T_R+(4X^2)^-1 sum_child[2U_R J+J^2],
+ T_R=(4X^2)^-1 sum_child U_R(t)^2-X^-2 sum_parent U_R(t)^2.
+For53 replace J by J-deltaG L as above. Frozen-cutoff transport is not zero.
+It changes quotient arguments and root-point source coordinates throughout
+both child halves; controlling only new primes misses this cost.
+
+One concrete sufficient analytic gate is to produce a nonnegative credit A_X
+such that, uniformly in dyadic X, DeltaE+T_R<=-A_X+F_q(X), while the complete
+boundary correction<=A_X+G_q(X), with F_q+G_q bounded by Cq ceil(X^(1/q)) for
+every cofinally large q and finite Cq independent of X. A closed lower-scale
+energy induction may discharge some root and mask costs using the identities
+above, provided its transfer coefficients, initial W(1), endpoints and forcing
+are all explicit. It must still handle the main coupled bank and signed mixed
+correlations. No such closing lemma was proved in this review.
+
+Proved ingredients: complementary convolution/hyperbola identities; source-gap
+rewriting and exact gated p=2 cancellation; elementary point/root envelopes;
+vanishing-coefficient lower-scale transfer for31/53 root padding; uniform
+bounded root component and quotient-energy-increment identity for32; uniform
+parent-energy mask-jump bound for53. These materially identify possible credit
+and missing correlations. They neither certify a new all-scale function nor
+close the signed target. All initial values and exceptional cutoff regimes
+remain part of any eventual proof, rather than being hidden in empirical fit.

@@ -1,0 +1,15 @@
+{
+  "schema": "prime-scale-search-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 5,
+      "operations": 389376,
+      "elapsed_seconds": 0.1367578970384784,
+      "stdout": "SYNTHETIC_WORK operations=389376\n",
+      "stderr": "test_cache_key_includes_source_precision (test_prime_scale_search_053.SearchTests) ... ok\ntest_exact_interval_sign_and_bound_status (test_prime_scale_search_053.SearchTests) ... ok\ntest_grammar_integer_mean_annihilation_and_primitivity (test_prime_scale_search_053.SearchTests) ... ok\ntest_resource_and_rational_domain_guards (test_prime_scale_search_053.SearchTests) ... ok\ntest_training_bound_construction_and_scope (test_prime_scale_search_053.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

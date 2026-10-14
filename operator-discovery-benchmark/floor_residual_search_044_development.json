@@ -1,0 +1,13 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0458482020185329,
+      "exposure": "typed grammar; small exact coefficient identities; rational synthetic norms128; artificial ranking only"
+    }
+  ]
+}

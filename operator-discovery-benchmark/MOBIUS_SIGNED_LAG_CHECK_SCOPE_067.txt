@@ -1,0 +1,121 @@
+INDEPENDENT SIGNED HEAD LAG CERTIFICATE CHECKER067
+
+Scope
+
+check_mobius_signed_lag_067.py checks finite certificates of the same RAW
+short inverse represented in066. It does not import the producer, FLINT,
+the066 checker, saved scientific results, repaired core inverses, prime-sign
+surrogates or LP code. The runner must separately bind the SAME admitted066
+certificate and its063 raw source admission; this checker explicitly reports
+that original source binding is not proved within its own call.
+
+The algebraic rules used here were supplied. Automatic generation/checking
+of a finite lag decomposition is not automatic discovery of a uniform
+arithmetic cancellation theorem. Numerical far-lag observations remain
+finite observations. Uniform far-lag control, the uniform full head bound,
+the whole signed-prefix target and RH remain OPEN.
+
+Source and arithmetic independence
+
+For each endpoint r=p/q or1, the checker evaluates the ORIGINAL source
+pointwise, with W_b(d)=floor(4N/(bd))-3floor(2N/(bd))+2floor(N/(bd)).
+It creates f_y(d)=1[d<=y]*(W_p(d)-rW_q(d)) and the tail correction
+g(d)=-1[d>y]*(W_p(d)-rW_q(d)), all through D=floor(4N/p). It reconstructs
+the coalesced step dictionary from jumps g(T)-g(T+1), bypassing the
+producer's quotient enumeration and supplied sparse intervals. Full-floor
+atoms are independently rebuilt from the six horizons floor(vN/b).
+
+An independent Eratosthenes sign sieve constructs ordinary mu through D;
+mu(1)=1 and square-divisor zeros are retained. For every checked head row
+the checker obtains kappa_j(n)=g(jn)-g((j+1)n) pointwise and replays the
+raw inverse directly as sum_n mu(n)*(f_y(jn)-f_y((j+1)n)). It verifies this
+equals the independently rebuilt direct coefficient d_j plus the joined
+tail row sum. Arithmetic outside the registered source prime mask remains
+present: ordinary mu is not a multiplicative character on that mask.
+
+Exact correlations and all finite fields
+
+For each I=[L,min(2L-1,ceil(H/2)-1)], where L runs through powers of2,
+the checker forms a_j(n)=den*mu(n)*kappa_j(n), n=1,...,floor(D/j).
+Den is the reduced endpoint denominator. It uses NumPy's direct integer
+correlation product sums, a different algorithm from the producer's exact
+FLINT polynomial multiplication. Before each native call, the rigorous
+bound length*maxabs(a)^2 <= 2^63-1 ensures every partial signed product
+sum is representable in int64. This guards negative as well as positive
+intermediate sums; no floating-point FFT or numerical tolerance is used.
+Native row results are accumulated using Python integers.
+
+Every integer correlation numerator R_I(h)*den^2 is compared, including
+h=0 and trailing zero lags, over the COMPLETE domain0<=h<floor(D/L).
+Missing, reordered or extra blocks/lags are rejected. A correlation
+mutation preserving the total signed cross sum is also rejected.
+
+The checker independently verifies all row sums, direct floor terms,
+joined kernel L1, maximum jump, diagonal, signed cross, moment, actual
+head variation, both diagonal upper bounds and rounded Cauchy bounds.
+It verifies E_I=R_I(0)+2*sum_(h>0)R_I(h) exactly. The elementary identity
+W_b(d) in{-1,0,1} proves |kappa_j(n)|<=4. Thus, with the coalesced
+M1=sum_T|a_T|T, it verifies the supplied uniform algebraic inequalities
+
+  0<=R_I(0)<=4*sum_(j in I,n)|kappa_j(n)|<=4*M1/L,
+  |R_I(h)|<=4*M1/L for every h.
+
+These uniform positive majorants do not pay the complete signed-lag sum
+at a square-root arithmetic rate.
+
+Every declared candidate is retained, including baseline cutoff0. For
+each canonical rational delta in[0,1], requested B=floor(N^delta) is
+checked by the integer inequality B^den<=N^num<(B+1)^den. This differs
+from the producer's binary search. The denominator has no whitelist;
+delta=1/257 is explicitly tested. B is clipped to the full available lag
+domain before near/far splitting. All signed near/far fields, paid moment
+(4+8B)M1/L, finite upper bound obtained by retaining positive actual far
+mass, head bounds and unpaid-risk bounds are checked exactly. Every
+square-root bound is the least point on the denominator2^24 grid whose
+square exceeds the exact rational radicand. Noncanonical rationals and
+false uniform claims are rejected, including false represented as0.
+
+Positive/negative far values are observations for these finite blocks.
+Endpoint convexity transfers endpoint bounds for the absolute raw head
+variation. A signed far-lag sum is an indefinite quadratic in r; its
+nonpositivity at both endpoints does not alone prove nonpositivity at
+every interior ratio. The endpoint convexity flag grants no such inference.
+No infinite extension bound is allowed in the strict certificate schema.
+An infinite ordinary floor series or an attractive factor-transfer rate
+cannot be substituted for these finite lag identities.
+
+Evaluation flags distinguish what actually ran: ordinary-mu lag correlations
+and unmasked original-source inverse replay are evaluated; a new masked
+scientific prefix, integral or LP is not. Root's separate new pipeline test
+checks those explicit flags and same066 source binding. It changes no
+mathematical checker rule and reruns no prior suite.
+
+Resources
+
+Checker finite limits are N<=65536, H<=4096, rational intermediates at
+most4096bits, exact-power intermediates at most100000bits, four million
+accounted entries,512MiB prospective own storage and300billion charged
+units. The default deadline is7200seconds; the runner additionally enforces
+the aggregate task caps. Full native correlation work is charged before
+execution by2*length^2 per row, including its redundant negative-lag half.
+Pointwise source/kernel work, rational validation and exact-power checks
+are separately charged. These are conservative algorithmic work units,
+not CPU instruction counts. Prospective storage explicitly includes live
+native/vector scratch; inherited process peak RSS is separately reported.
+
+Validation receipt
+
+test_check_mobius_signed_lag_067.py uses independent trial factorization,
+scalar lag product sums, scalar enumeration of rational power cutoffs,
+and full inverse contraction of the untruncated pointwise source to create
+synthetic direct-term fixtures. It runs no frozen historical suite or
+scientific source/LP replay. The first26-test invocation passed, covering
+all tiny prefix/head boundaries, exhaustive N2..10 prefix rows, every lag
+mutation, sum-preserving lag mutations, complete domains, direct floor
+atoms, units and squareful zeros, two ratio endpoints, different prime
+pairs, all candidate fields, rational/capacity gates and scope flags.
+
+Every invocation appends its receipt, test identifiers, failure/error
+tracebacks, work, timing and RSS to
+mobius_signed_lag_checker_067_development.json. Earlier attempts must be
+preserved if later repairs or additional validation require a new run.

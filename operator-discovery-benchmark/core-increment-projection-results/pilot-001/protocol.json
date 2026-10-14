@@ -1,0 +1,159 @@
+{
+  "H": 32767,
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "data_scope": "new exact projection observables on previously verified source and transports; no fresh source holdout",
+  "development": {
+    "core_increment_projection_checker_development.json": {
+      "operations": 48743,
+      "runs": [
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_increment_projection"
+          ],
+          "elapsed_seconds": 0.07722341400221922,
+          "operations": 48561,
+          "receipt_lines": 1,
+          "returncode": 1,
+          "stderr": "test_all_auxiliary_bound_constants_and_scope (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_global_log_history_half_head_and_error_units (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests) ... ERROR\ntest_rational_detail_payment_and_unpaid_mesh (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_singletons_exact_zero_detail_and_complete_unit (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_strict_mesh_state_and_complete_cells (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_variance_and_cauchy_path_by_all_pairs (test_check_core_increment_projection.IncrementProjectionTests) ... ok\ntest_weighted_delay_prepare_complete_signed_cross (test_check_core_increment_projection.IncrementProjectionTests) ... ok\n\n======================================================================\nERROR: test_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_increment_projection.py\", line 118, in test_interval_equality_is_unresolved_not_failed\n    prepared = dict(H=3, U=[arb(0), arb(0), arb('1 +/- 1/8'), arb('1 +/- 1/8')], Q=[arb(0)] * 4, weight=arb(1))\n  File \"flint/types/arb.pyx\", line 202, in flint.types.arb.arb.__init__\n  File \"flint/types/arb.pyx\", line 118, in flint.types.arb.arb_set_python\n  File \"flint/types/arb.pyx\", line 53, in flint.types.arb.arb_from_str\nValueError: invalid string for arb()\n\n----------------------------------------------------------------------\nRan 8 tests in 0.008s\n\nFAILED (errors=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_increment_projection operations=48561\n",
+          "synthetic_max_horizon": 127
+        },
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_increment_projection.IncrementProjectionTests.test_interval_equality_is_unresolved_not_failed"
+          ],
+          "elapsed_seconds": 0.06833482999354601,
+          "operations": 182,
+          "reason": "Affected-only rerun after expressing exact1/8 radius as accepted decimal0.125 in Arb fixture",
+          "receipt_lines": 1,
+          "returncode": 0,
+          "stderr": "test_interval_equality_is_unresolved_not_failed (test_check_core_increment_projection.IncrementProjectionTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_increment_projection operations=182\n",
+          "synthetic_max_horizon": 3
+        }
+      ]
+    },
+    "core_increment_projection_producer_development.json": {
+      "actual_source_evaluations": 0,
+      "operations": 26229,
+      "runs": [
+        {
+          "command": [
+            "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_core_increment_projection"
+          ],
+          "elapsed_seconds": 0.06718476300011389,
+          "operations": 12120,
+          "returncode": 0,
+          "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=12120\n"
+        },
+        {
+          "command": [
+            "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_core_increment_projection.Projection.test_mean_zero_guard_and_scoped_weak_fact_countermodels"
+          ],
+          "elapsed_seconds": 0.06550120198517106,
+          "operations": 11949,
+          "reason": "Only the new Mellin/scope-gate test after adding those two rules",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=11949\n"
+        },
+        {
+          "command": [
+            "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_core_increment_projection.Projection.test_source_specific_analytic_lane_keeps_energy_scope_separate"
+          ],
+          "elapsed_seconds": 0.06645858302363195,
+          "operations": 2160,
+          "reason": "Only new analytic-source bridge and selection-scope test",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_increment_projection operations=2160\n"
+        }
+      ]
+    }
+  },
+  "fitting": false,
+  "grammar": {
+    "coarse_operator": "orthogonal complete-cell mean of each full storage channel",
+    "mesh_powers": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3",
+      "5/6",
+      "1"
+    ],
+    "storage_inputs": "every selected open storage AST from published parent"
+  },
+  "hashes": false,
+  "independent_methods": [
+    "prefix moments including derivative moments0,1,2",
+    "literal cell means, centered squares and local edge sums"
+  ],
+  "main_cap": 150000000,
+  "main_seconds": 14400,
+  "metadata_reserve": 3000000,
+  "numerical_selection": false,
+  "parent_input": "candidate10_transport_control_obligation.json",
+  "process_memory_bytes": 4294967296,
+  "proofs": [
+    "orthogonal energy split",
+    "complete source derivative majorants",
+    "fractional mesh power accounting",
+    "nested-projection dominance",
+    "zero-mean Mellin pole preservation",
+    "weak-fact composite countermodels"
+  ],
+  "scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "schema": "proof-guided-increment-projection-v1",
+  "selection": "largest nested cell exponent paid within logdegree2; largest with any fixed polylog energy cost; largest with separately verified source-specific analytic RH bridge",
+  "source_generation": false,
+  "source_horizon_already_observed": 524287,
+  "source_scope": "verified complete source/transport supplies coefficient majorants; generic projection identity alone is conditional",
+  "total_cap": 1200000000,
+  "whole_signed_bound_proved": false,
+  "worker_cap": 500000000,
+  "worker_seconds": 3600,
+  "workers": 2
+}

@@ -1,0 +1,192 @@
+EXACT SCALE-DEPENDENT TWISTS AND MOMENT MIXTURES 045
+
+Purpose and scope
+-----------------
+This new coefficient language implements the moving rational twist proposed
+in COMPATIBLE_FLOOR_BOUND_HANDOFF.txt. Its parent continuation is
+floor-residual-results/pilot-002/analytical_followup_001/next_search_input.json.
+The implementation does not import frozen043/044 compilers, read source
+arrays, evaluate floor norms, apply actual searches, or change frozen files.
+The certificates prove scalar coefficient facts only. Whole signed norm,
+uniform forcing, convergence, original-core bounds and RH remain OPEN.
+
+Grammar and APIs
+----------------
+The exact weight specification is
+  {kind: "drift_mixture", a: canonical rational, theta: canonical rational,
+   terms: [{rate: canonical rational, weight: canonical rational}, ...]}.
+Here a>0, 0<theta<1; rates are strictly increasing, distinct and positive;
+signed weights are nonzero and sum exactly to 1. There are 1..8 terms.
+No denominator bank or coefficient sign restriction is imposed.
+
+beta(a,theta,N,meter=None) returns the exact Fraction
+  beta_N=ceil(a*L(N)^theta)/L(N), L(N)=N.bit_length(), N>=2.
+beta_certificate returns floor-drift-beta-v1 with N,L,ceiling,beta, the exact
+power-comparison data and prospective power-bit estimate. If theta=u/v and
+a=A/B in lowest terms, the ceiling z is licensed by
+  (z-1)^v B^v < A^v L^u <= z^v B^v.
+The compiler obtains z by integer bisection with upper bound ceil(a*L).
+There is no numerical approximation to this ceiling.
+
+synthesize_mixture(rates,a="1",theta="1/2",meter=None) returns the grammar
+specification. It sorts any admitted distinct positive rational input set
+and solves the full square moment system by exact Gaussian elimination:
+  sum w_j=1, sum w_j*r_j^k=0, k=1..s-1, s=number of rates.
+The solve is not a hard-coded binomial construction. Exact replay then
+checks its order. Distinct rates give a nonsingular Vandermonde matrix.
+
+mixture_certificate(spec,meter=None) accepts general normalized signed
+mixtures, not just synthesized ones. It returns
+floor-drift-mixture-certificate-v1 with full moments k=0..s, first nonzero
+order m, leading_moment, vanishing_orders, sum_abs_weights,
+weighted_abs_order_moment, signed leading_error_coefficient,
+coefficient_rate, energy_rate, and kernel_certificate. The certificate
+also explicitly denies whole signed norm, forcing, convergence and RH claims.
+
+compile_mixture(spec,n,N,meter=None), also called compilation_certificate,
+returns floor-drift-compilation-v1. It includes the exact beta certificate,
+precision_bits, every signed rate/weight/exponent and rounded_value, their
+exact rational total value, and rounding_error_bound. mixture_value returns
+only the Fraction total. Any integer n>=1 is allowed under resource guards,
+whether or not n<=N. Compilation retains every sign.
+
+CompilationContext(spec,N,meter=None) snapshots and parses the spec once,
+certifies beta once, and caches compile(n)/value(n). profile() returns values
+for n=2..N, with an explicit allocation cap. DriftCompiler(meter=None)
+owns contexts keyed by exact (a,theta,rate-weight pairs,N) tuples, and a
+shared raw-atom cache keyed by (n,precision_bits,exponent numerator,
+exponent denominator). Different finite drift recipes with equal exponents
+reuse the exact roots while retaining their own signed mixture sums. There
+are no file hashes or external coefficient observations in these caches.
+
+coefficient_error_bound(spec,n,N,meter=None) returns
+floor-drift-coefficient-bound-v1 with Taylor, optional simplex, raw,
+rounding and total rational bounds. It is valid for every admitted positive
+integer n, and explicitly remains coefficient control only.
+
+Moment order and local asymptotics
+---------------------------------
+Write M_k=sum w_j*r_j^k. The evaluator finds the first nonzero M_m exactly.
+Some m<=s must exist: if all M_1..M_s were zero, applying the annihilating
+polynomial product(x-r_j) would give its nonzero constant coefficient equal
+to zero. A synthesized s-term mixture has m=s and
+  M_s=(-1)^(s+1)*product(r_j),
+which is also checked by exact moment arithmetic in synthetic tests.
+
+Since 0<=ceil(a*L^theta)-a*L^theta<1 and theta>0,
+  beta_N/(a*L^(theta-1))->1,
+  beta_N->0,
+  beta_N*log(N)->infinity.
+For fixed n>=2, Taylor expansion of P(u)=sum w_j exp(-r_j*u),
+u=beta_N*log(n), gives
+  1-P(n,N)=C*log(n)^m*L^(-m*(1-theta))
+            +o(L^(-m*(1-theta))),
+  C=(-1)^(m+1)*M_m*a^m/m! !=0.
+All quantities except the positive log(n)^m are exact rationals. Thus the
+local coefficient rate is m*(1-theta), and the corresponding necessary
+fixed-cell energy rate is 2*m*(1-theta). This module does not itself bind a
+complete floor recipe or forcing witness. In a pure actual-Mobius wrapper,
+the coefficient gap is mu(n)*(1-P(n,N)); it vanishes at indices with mu(n)=0.
+Products with old weights may change or cancel the first local error, so
+the wrapper must analyze the combined formula and its actual bound exponent.
+
+Taylor remainder and rounding
+-----------------------------
+For x>=0 the integral remainder of exp(-x), truncated at degree m-1, has
+absolute value at most x^m/m!. Unit normalization and exact M_1..M_(m-1)=0
+therefore imply, for every u>=0,
+  |1-P(u)| <= u^m/m! * sum |w_j|*r_j^m.
+This is valid for general signed mixtures even when P leaves [0,1].
+
+The rounding policy is p=4*ceil(log2(N)), computed as
+4*(N-1).bit_length(). Each n^(-rate*beta_N) is independently rounded down
+to the dyadic lattice 2^-p. For exponent A/B>0, the returned numerator k
+satisfies
+  k^B*n^A <= 2^(pB) < (k+1)^B*n^A.
+Integer bisection proves the comparison directly. Exact boundary roots and
+the unit n=1 are retained. The signed mixture itself is not rounded again.
+Triangle inequality pays
+  |P_exact-P_rounded| <= 2^-p * sum |w_j|.
+This error is flat relative to every inverse log power at fixed n, so it
+does not change the local leading rate. Signed weights can make the rounded
+mixture slightly leave a raw certified range; no unqualified positivity
+claim is made for the rounded profile.
+
+For a completely rational instantiated error bound, the evaluator uses
+log(n)<=ceil(log2(n)), with value0 at n=1, and u_upper=beta_N*that integer.
+It pays the Taylor bound above and the rounding term. At n=1 all roots are
+exactly1 and unit normalization gives an exactly zero error, so its rounding
+allowance is zero. This elementary logarithmic upper bound follows from
+log(2)<1 and n<=2^ceil(log2(n)).
+
+Separately verified exponential-convolution range certificate
+------------------------------------------------------------
+kernel_certificate(spec,meter=None) expands exact rational polynomials
+with coefficients in ascending order. It admits the extra theorem only if
+  sum_j w_j*r_j*product_(i!=j)(s+r_i) = product_i r_i
+coefficient by coefficient. It exposes every numerator summand, full
+numerator, denominator product(s+r_i), and expected constant numerator.
+Unsupported general mixtures return NOT_CERTIFIED and no raw range claim.
+
+Here is an elementary proof of the admitted representation. Let
+K_j(t)=r_j exp(-r_j*t) for t>=0. Its convolution h=K_1*...*K_s is nonnegative
+and has integral1. For distinct rates, repeated elementary integration
+  integral_0^u exp(-r*t) exp(-R*(u-t)) dt
+    =(exp(-r*u)-exp(-R*u))/(R-r)
+shows that h is a finite sum of distinct exponentials. Its coefficients
+are the partial-fraction coefficients of product_j r_j/(z+r_j).
+The certified polynomial identity identifies those coefficients as w_j*r_j.
+Thus h(u)=sum w_j*r_j exp(-r_j*u)=-P'(u). Since P(0)=1 and P tends0,
+  P(u)=integral_u^infinity h(t) dt, 0<=P(u)<=1.
+This proof can equivalently be written with elementary Laplace integrals;
+it requires no unverified numerical transform or zero information.
+
+The positive convolution has the simplex-integral bound
+  h(u) <= product(r_j)*u^(s-1)/(s-1)!,
+because the exponential integrand is at most1 on the nonnegative simplex.
+Integrating from0 to u gives
+  0<=1-P(u)<=product(r_j)*u^s/s!.
+The exact polynomial identity forces all lower moments to vanish and m=s.
+The instantiated raw bound is the minimum of Taylor, simplex, and1; the
+same explicit absolute rounding allowance is then added. This improved
+scalar theorem still does not bound a signed floor residual norm.
+
+Why the frozen cutoff guard does not automatically apply
+-------------------------------------------------------
+This profile depends on the scale through beta_N. Its beta_N*log(N)
+diverges while beta_N tends0. It is not a fixed function w(n/N), nor a
+static convex mixture of cutoff powers. The frozen044 fixed-cutoff Mellin
+obstruction cannot be attached solely because the raw profile happens to
+lie in [0,1]. Neither failure of that old guard nor the present scalar
+certificate closes any global all-prime bound.
+
+Resources and metering
+----------------------
+Implementation rational input/intermediate/output bits are capped at4096;
+integer arguments are capped at4096 bits; terms at8. Exact power operations
+have a prospective400,000-bit cap, based on the numerator/denominator powers
+actually needed, not a rational-denominator whitelist. Huge denominators
+may honestly fail this cost guard. Explicit profile allocation is capped
+at1,048,576. These finite compilation limits do not truncate the mathematical
+formula's definition for all N. Default Meter permits200,000,000 charged
+operations and600 seconds, and may be replaced by a larger shared Meter.
+It records integer root/ceil comparisons, rational operations, atom hits,
+maximum and summed prospective power bits, and charged work. Charged work
+is a reproducible conservative proxy, not measured CPU instructions.
+
+Focused development evidence
+----------------------------
+The sole initial focused suite passed12/12 with233,491 charged operations.
+It covers exact ceiling boundaries; arbitrary rational rate sets; generated
+orders1..8; denominators257; independently replayed powered root comparisons;
+exact roots/unit; a genuinely negative general mixture; independent rational
+kernel identities and a normalized perturbation; finite scalar rounding
+payment; context reuse/snapshotting; type, normalization and cost guards.
+The parent then requested sharing raw atoms across different drift recipes.
+Only one NEW cache-collision regression was executed after that extension;
+it passed with687 charged operations and four atom hits. The unchanged suite
+was not repeated. The native receipt preserves both successful invocations,
+13 distinct tests,234,178 total charged operations, and maximum prospective
+power bits9258. There were no failed invocations, no actual searches or
+selected applications, no additional norms, no old suite/study replay and
+no hashes. Independent checker and parent publication are separate work.

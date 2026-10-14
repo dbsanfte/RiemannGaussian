@@ -1,0 +1,84 @@
+Fresh two-assignment formal identity review
+
+Scope: bounded source reading and synthetic exact tests only. No actual X9
+probe, recovered endpoint evaluation, chart reduction, score, or hashes.
+
+Evaluation at any complete integer assignment is a ring homomorphism.
+Evaluate complete source expressions at assignment v and zero separately;
+subtract only after multiplication. Delta(p*q)=p(v)q(v)-p(0)q(0), not
+Delta(p)Delta(q). Preserve formal u1 as a variable: unit u1-1 and norm
+u1^2-1 have different values; their zero baseline is -1. The alternate
+assignment (-1)^n*(n^2+1) must be used in every variable lookup, prefix,
+primitive relation and regional state, with the baseline zero including u1.
+All integer root/factor/domain predicates precede rational/modular arithmetic.
+
+A universal formal nonconstant identity implies the exact necessary equation
+sum_j Delta(column_j)*x_j=Delta(target). Since target is constant budget
+minus innovation, RHS is minus Delta(innovation). Five constant slacks vanish.
+All366 squares,613 signed families and360 original Gram coordinates remain;
+o assignment-zero columns may be silently omitted from coordinate coverage.
+Upper Gram offdiagonals carry2 and K is child minus4 parent. This is a formal
+polynomial evaluation, not actual Mobius arithmetic or prime cancellation.
+
+For prime65537, reducing exact rationals modulo prime is legitimate only
+when EVERY denominator being reduced is invertible. A nonzero modular row
+residual proves an exact rational mismatch, hence refutes the stated
+universal formal nonconstant identity for this fixed coefficient vector.
+A zero probe is NOT_REFUTED, never a universal proof. Subtracting zero
+removes constant scalar terms but does not establish the separately unproved
+all-scale scalar budget; no automatic inequality/RH rejection follows.
+
+Project a row through all signed-pair and storage dependencies. With
+C=Gc+K and P=Gp-4K, its coefficient K must equal child coefficient minus4
+parent coefficient, and each negative signed coefficient must be the negative
+of its positive partner. Only then is restriction to1224 retained coordinates
+lossless. Reduce each row against ALL currently licensed pivots ascending,
+not merely while its first nonzero coordinate is a pivot. An independent
+row is normalized at the smallest surviving free coordinate and appended
+before reducing the second row. Exact multiplier/residual records permit
+independent replay; projection and reduction are not cone repair.
+
+Starting coefficient/augmented ranks780/780, a redundant row changes neither;
+an independent row increases both by1. A contradiction increases only the
+augmented rank by1 and leaves no usable consistent chart. After contradiction
+rank bookkeeping may still classify subsequent coefficient independence,
+but must never restore chart availability or claim feasible dimension.
+The two evaluated constraints are sampled necessary rows, not a universal
+source-span proof, no matter whether final rank becomes781 or782.
+
+All four independent scalar passes share ONE200m arithmetic budget and12m
+cumulative cells. AtH35 each upfront domain reserve is42,885,000, totaling
+171,540,000;28,460,000 remains for every rational operation, projection,
+reduction, input/receipt work. Producer cases may use separate100m reservations
+only because both were declared in the single450m ledger. Strict4096 results,
+8193 two-input temporaries, deadline and bytes still apply. Cap failure must
+remain UNKNOWN without promoting partial rows, traces or joint ranks.
+
+Final new-code review: producer column_pairs uses explicit assignments in
+its paired variables; independent exact_row performs two separate scalar
+passes and multiplies within each pass. Current verify_cases creates one
+Budget for both cases and the affine extension, with12m cumulative cells.
+parse_chart checks complete779 old rows plus feedback148, ordered pivot/free
+partition, and declared024 full-span premise. project_constraint validates
+all signed/storage dependencies before restriction. reduce_row eliminates
+all sorted pivots, including an augmented constant pivot after contradiction;
+subsequent coefficient independence does not reset the inconsistency or
+restore a free_count. No source tape is replayed by this finite extension.
+
+Found and reported an assignment-shadowing error in the first checker draft:
+its1957 column-values list overwrote the assignment list in necessary rows.
+Owner fixed it; an authentic tiny alternate receipt now independently checks
+and retains its three-variable assignment. This test would reject recurrence
+of that bug rather than merely comparing local helper formulas.
+
+Thirteen owned synthetic tests passed in0.870s. They include the explicit
+alternate X1 source (square129; norm126 with baseline-3; unit-3 with baseline-1;
+target-10 with baseline32), multiply-before-subtract counterexample, all1957
+producer/checker coefficients, all signed and storage dependencies, offdiag2,
+invalid assignments, noninvertible denominator rejection, complete receipt
+assignment retention, all-pivot elimination, sequential contradiction and
+rank preservation after further coefficient independence, signed/storage
+row tampering, and non-reset work budget. No actual X9 or recovered point
+was evaluated. Remaining risk is resource exhaustion of the four passes and
+exact reduction under the joint cap; that outcome must stay UNKNOWN.
+Owned memo/tests are ready and edits stopped.

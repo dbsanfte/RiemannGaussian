@@ -1,0 +1,175 @@
+INDEPENDENT059 EXACT TOKEN PLANS AND FINITE GAMMA AUDITS
+
+Public interfaces: verify_plan(request,plan,meter=None), prepare_context,
+evaluate(request,plan,precision=256,meter=None,context=None),
+evaluate_many(request,plans,precision=256,meter=None,context=None),
+assess_bound(request,bound_interval,{C,beta},meter=None), and verify_bound.
+evaluate_many shares one independent kernel table for every supplied plan.
+verify_profile_dominance independently admits only typed profile-preserving
+policies against the canonical ascending-d profile-stack reference.
+No059 producer is imported. Immutable052 Meter and canonical rational parser
+are reused; saved arrays, float screening results and verification flags are
+not arithmetic authority. Only new tiny synthetic tests precede source freeze.
+
+EXACT ORDINARY SOURCE
+
+The strict request is {N,alpha,gamma,tau,primes,p,q}: integerN>=2, canonical
+rationals0<alpha<1,gamma>0,0<tau<1, sorted distinct checked actualprimes M
+containingp<q. LetR=productM andG_M(t)=product_(l inM)(1-l^(-t)).
+The complete source is
+
+ J=sum_(d<=floor(4N/p),gcd(d,R)=1) mu(d)
+                 [W_p(d)Phi(p*d)-W_q(d)Phi(q*d)],
+ W_l(d)=floor(4N/(l*d))-3floor(2N/(l*d))+2floor(N/(l*d)),
+ Phi(a)=1/Gamma(1-alpha)*integral_epsilon^tau
+                         G_M(t)*a^(-t)*t^(-alpha-1)dt,
+ epsilon=min(tau,N^(-gamma)).
+
+mu is independently rebuilt by trial prime factorization: one distinct prime
+factor flips the sign and any square factor setsmu=0. The d=1 unit is kept
+whenever its W pair is nonzero. The full horizonfloor(4N/p) is retained,
+including terms where q*d>4N and hence W_q=0. Only noncoprime d, zero mu,
+and an exact W pair(0,0) are omitted. W_p,W_q are each in{-1,0,1}.
+
+Every nonzero term is exactly one positive-magnitude token:
+ P: (a,b)=(+/-1,0), magnitudePhi(pd), sigma=a;
+ Q: (a,b)=(0,+/-1), magnitudePhi(qd), sigma=-b;
+ D: a=b=+/-1, magnitudePhi(pd)-Phi(qd), sigma=a;
+ S: a=-b=+/-1, magnitudePhi(pd)+Phi(qd), sigma=a.
+Its kernel_sign is sigma and source sign ismu*sigma. These signs are distinct
+fields and neither is inferred from an approximate numerical value.
+
+All Phi are positive on a nonempty band, and Phi(pd)>Phi(qd), sincep<q and
+the pointwise integrand factor p^(-t)-q^(-t)>0. They vanish on an exact empty
+band. This independently proves token-magnitude nonnegativity, includingD.
+Intersecting a numerical enclosure with this proved nonnegative half-line is
+valid; interpreting an overlapping interval as evidence of cancellation isnot.
+
+PLAN CERTIFICATE
+
+A plan is exactly {pairs:[[d_i,d_j],...],unmatched:[d,...]}. Every source
+token must appear EXACTLY ONCE; no supplied token table or source flag is
+trusted. Each pair has oppositeSOURCE signs. Pair order is irrelevant and
+cross-profile pairs are allowed. For any such complete plan,
+
+ |J|<=B_plan=sum_pairs |magnitude_i-magnitude_j|
+                         +sum_unmatched magnitude_i.
+
+This is the ordinary triangle inequality after exact opposite-sign grouping.
+It is not a uniform power bound, nor a proof that the pairing can be cheaply
+implemented or its residual cost is small at every N. In particular a source
+unit, range exit or unmatched residual cannot disappear from the bound.
+
+INDEPENDENT FINITE INTEGRATION
+
+The empty-band comparison is exact. For gamma=u/v andtau=A/B>0,
+ N^u*A^v<=B^v iffN^(-gamma)>=tau.
+It is executed only after a prospective powered-bit guard. Exact equality
+returns epsilon=tau and all kernel magnitudes are exactlyzero, retaining
+the structural token/plan coverage checks.
+
+Otherwiseepsilon>0. ExpandG_M(t)=sum_(e|R)mu(e)e^(-t) with all signs. Each
+basea*e>=2, so lambda=log(a*e)>0, and its exact antiderivative is
+
+ integral_epsilon^tau exp(-lambda*t)t^(-alpha-1)dt
+ =lambda^alpha*[Gamma(-alpha,lambda*epsilon)
+                         -Gamma(-alpha,lambda*tau)].
+
+The upper incomplete gamma formula has negative shape but strictlypositive
+real arguments, so it is a legitimate finite integral. Its derivative with
+respect to t is-exp(-lambda*t)t^(-alpha-1). The checker evaluates the signed
+finite divisor expansion using rigorous Arb arithmetic and multiplies the
+complete sum byrgamma(1-alpha). It does not reuse the producer's FLOAT
+Gauss-Legendre quadrature or archived kernel values. Outward rational160-bit
+dyadic endpoints, not decimal display radii, are authoritative.
+
+Phi andD enclosures may be wide under severe near-zero cancellation; width
+never establishes a sign or a bound. The integral sign gates are analytical.
+If the chosen precision/capacity cannot give a finite adequate enclosure,
+admission may fail or a claim may remain UNRESOLVED; no theorem is inferred
+from partial arithmetic. The finite tests also compare against independent
+integrated exponentialTaylor remainders and the alpha1/2 erfc formula.
+
+Each private context is a live checker-created object. Functional cache keys
+retainN,alpha,gamma,tau,M,a,precision forPhi; ordinarymu and token caches
+contain the exact corresponding source arguments. Context dictionaries or
+persisted source flags cannot be supplied as verified authority. Across plans
+at oneN every neededPhi is constructed once. The full signedJ interval and
+L1 magnitude sum are shared. Each opposite-sign pair cost is enclosed by
+the complete difference interval followed by its exact interval absolute
+value, preserving every component and unmatched magnitude.
+
+FINITE GROWTH CLAIMS
+
+assess_bound accepts a canonical rationalC>=0 and canonicalbeta in[0,2],
+with arbitrary admitted denominator. It rigorously enclosesC*N^beta, using
+exact integer powers whenbeta is an integer. PASS requires upperB<=lower
+allowance. REFUTED requires lowerB>upper allowance. Otherwise the result is
+UNRESOLVED. These classifications apply to THIS integerN only. A refutation
+of the plan-cost inequality is not necessarily a refutation of a bound on
+|J|, sinceB_plan is a sufficient upper cost. The claim assessor is a numeric
+comparison helper; arithmetic authority for its suppliedbound must come
+fromevaluate/evaluate_many, not from a caller's arbitrary invented interval.
+No finite pass promotes a uniform allN estimate, RH proof or RH refutation.
+
+PROVED FINITE PROFILE-TRANSPORT DOMINANCE
+
+Each ofP,Q,D,S has magnitude m(d)=integral_positive_band K_profile(t)d^(-t)dt,
+with nonnegative K_profile independent ofd. ForD the factor is
+G_M(t)*(p^(-t)-q^(-t)); forS it isG_M(t)*(p^(-t)+q^(-t)). Therefore every
+profile magnitude is nonnegative and decreases asd increases. This remains
+true on an emptyband, where every magnitude iszero.
+
+Fix one profile and sort its tokens by ascendingd, so m_1>=...>=m_l>=0.
+Let s_i be their actual source signs and S_j=sum_(i<=j)s_i, m_(l+1)=0.
+Every complete opposite-sign pairing with unmatched tokens transported to
+the dummy at0 must cross the gap(m_(j+1),m_j) at least|S_j| times. Integrating
+that required flux gives the lower cost
+ B_opt_profile=sum_j |S_j|*(m_j-m_(j+1)).
+
+The chronological ascending-d stack achieves exactly that flux: its waiting
+tokens all have one sign, whose count is|S_j| at the gap. Matching an incoming
+opposite sign removesone, otherwiseone isadded. At the end the remaining
+waiting tokens go to the zero dummy. A chronological FIFO also attains it;
+arbitrary same-profile order neednot. For example signs+,-,+ with magnitudes
+4,3,2 have optimum3, whereas reverse processing can pair3with2 and leave4,
+cost5. Hence the immutable reference in the certificate is specifically an
+ascending-d profile-stack policy, not a reverse scan.
+
+Each recognized subject policy step stays within one profile: scan grouping
+byprofile, by(profile,kernel_sign), by(profile,quotient), by(profile,residue),
+or by(profile,block); or prime-ratio edges restricted to equalprofiles.
+Any complete plan so generated costs at least the per-profile optimum,
+regardless of its within-group order, FIFO/stack choice or preliminary
+matching. Thus the canonical reference dominates that finite policy cost
+for every admittedsourceN, without a sourcevalue or fitted constant. Actual
+plan coverage and opposite signs must still be checked independently. The
+typed policy admits atmosttwo steps and exact declared group parameters;
+group'all' is rejected by this theorem. Cross-profile plans may be cheaper
+and are not excluded. This is proof-language pruning, not a growth bound.
+
+evaluate_many additionally encloses profile_optimum using the SAME finite
+kernel table and exact source prefix signs. Each successive magnitude gap
+is intersected with its analytically proved nonnegative half-line. No extra
+Phi values are needed. This is a floor on same-profile-only plan costs,
+not a lowerbound on actual|J| and not a floor on cross-profile plans.
+
+CAPACITIES AND DISCLOSURE
+
+N<=32768,2..8 registeredprimes/product<=1m, canonical inputfractions<=4096bits,
+exact powered comparison<=400kbits, <=1024 plans /8m covered tokenentries
+perfinite batch, output
+rationals<=16384bits. Precisions128,192,256,384,512 are supported. Private
+contexts<=8, aggregate prospective cache allocation<=4GiB perprocess; the
+planned three worker processes therefore cap cache allocations at12GiB,
+with the caller enforcing aggregate process memory separately. Kernel sums
+have<=256 exact divisors each. Complete token tables have atmostfloor(4N/p)
+indices. Metering counts trialdivisions, sieve-independent source work,
+powered comparisons, logs/powers/incompleteGamma, interval serialization and
+every plan residual. Defaultwork200bn/time7200seconds. These are explicit
+admission resources, not mathematical exponent-denominator restrictions.
+
+All public finite outputs retain uniform_growth_bound_proved=false,
+RH_proved=false andRH_refuted=false. The exact source identity and finite
+triangle plan lemma are paid. A full signed uniform growth estimate remains
+OPEN. Independently reviewed typed calculus is not a proof-assistant proof.

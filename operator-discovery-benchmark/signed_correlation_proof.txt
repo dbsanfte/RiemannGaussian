@@ -1,0 +1,60 @@
+EXPLICIT SIGNED CORRELATIONS: THE REMAINING ARITHMETIC TASK
+
+Let phi_n(u)=max(0,min(1,u-n+1)). Then for u>=0,
+ M_tilde(u)=sum_n mu(n) phi_n(u).
+The sum is finite at every u, and interpolation agrees with the cumulative
+sum. For a rational polynomial P(z)=sum c_j z^j, c_0=1, and integer b>=2,
+ R(t)=P(S_b)M_tilde(t)=sum_n mu(n) psi_n(t),
+ psi_n(t)=sum_j c_j phi_n(t/b^j).
+For integer X>=1 define the explicit Gram kernel
+ K_X(n,m)=integral_X^(2X) psi_n(t) psi_m(t)dt.
+Each integral is of piecewise rational affine functions, with breakpoints
+b^j(n-1),b^j n,b^j(m-1),b^j m. It is exactly computable in rationals.
+Only n,m<=2X contribute. Expanding the square gives the UNIVERSAL identity
+ A_2(X)=D(X)+C_off(X),
+ D(X)=sum_n mu(n)^2 K_X(n,n)>=0,
+ C_off(X)=sum_(n!=m)mu(n)mu(m) K_X(n,m).
+This is a signed arithmetic sum, not an absolute-value estimate.
+
+Put S=sum_j |c_j|. Since |mu(n)|<=1 and |psi_n(t)|<=S,
+ D(X)<=2*S^2*X^2
+at EVERY integer scale, with no prime cutoff. Thus the unknown premise
+ C_off(X)<=K*X^2 for EVERY dyadic X>=1, for some finite K>=0,
+would prove A_2(X)<=(2*S^2+K)*X^2. With the independently certified
+all-height ordinary-zeta multiplier bridge, the direct Holder-Mellin theorem
+in signed_mellin_proof.txt proves RH. The constant need not equal the fitted
+constant from a finite search. Any valid finite uniform K suffices.
+The diagonal estimate is proved. The required signed off-diagonal estimate
+is unproved. Expanding a square does not supply it.
+
+For comparison, discarding all signs gives a generic O(X^3) energy bound.
+Positive coefficients indeed have energy of order X^3 whenever P(1/b)!=0.
+The required improvement therefore concerns real arithmetic signs across
+all scales. A smaller residual, a finite kernel identity or a diagonal bound
+does not establish that improvement.
+
+EXACT FAST DIAGONAL FORMULA
+
+For n>=2, the ramps for consecutive scales d=b^j and e=b^(j+1) do not
+overlap: d*n<=e*(n-1). Thus for j<k,
+ phi_n(t/b^j)*phi_n(t/b^k)=phi_n(t/b^k).
+Writing s_k=sum_(j<k)c_j gives
+ psi_n(t)^2=sum_k c_k^2 phi_n(t/b^k)^2
+             +2*sum_k c_k*s_k*phi_n(t/b^k), n>=2.
+The exceptional n=1 term is integrated directly, including boundary scales.
+No disjoint-ramp claim is made for arbitrary unrelated integer dilations.
+
+Let Q(N)=sum_(n<=N)mu(n)^2 and W(N)=sum_(n<=N)n*mu(n)^2.
+For integer t=d*N+r, 0<=r<d, and h=1 or 2,
+ sum_n mu(n)^2 integral_0^t phi_n(u/d)^h du
+ = t*Q(N)-d*W(N)+d*Q(N)/(h+1)
+   +mu(N+1)^2*r^(h+1)/[(h+1)*d^h].
+The last term is zero when r=0 and needs no out-of-prefix coefficient.
+Subtract primitives at X and 2X, then apply the preceding identity and
+the direct n=1 correction. This computes D(X) exactly from complete arithmetic
+prefixes. Independent small-domain tests integrate each psi_n squared on its
+breakpoints without using Q, W or the disjoint-ramp formula.
+
+The present diagnostic uses already inspected moments from a sealed search.
+It does not select new operators or claim fresh finite evaluation. Subsequent
+correlation learning must freeze new search rules and draw new final cases.

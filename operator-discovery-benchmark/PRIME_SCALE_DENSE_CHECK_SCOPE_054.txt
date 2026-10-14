@@ -1,0 +1,62 @@
+054 INDEPENDENT DENSE INTEGER-WITNESS ADMISSION
+
+Purpose and scope.
+A witness establishes failure of one registered053 inequality at one integerN.
+The requested parameters and fixed C/log power are never refitted. A finite
+counterexample refutes that all-N inequality with those constants; it does not
+refute RH, all other constants/log powers, or the conditional053 implication.
+If there is no supplied witness, this checker supplies no all-scale theorem.
+Only synthetic source prefixes are used in owned development tests. Actual
+saved scientific arrays/witnesses are not opened until the root's frozen run.
+
+Source authority.
+An arbitrary caller-constructed VerifiedSource or a saved Boolean is not an
+admissible source premise. prepare_context creates an opaque live context whose
+arrays are private to this module. For a new witness, independently reconstruct
+ordinary mu through q^degree*N by frozen053 divisor-sum recurrence (unit1 and
+sum_{d|n}mu(d)=delta(n,1)). For each nonzero mu(d), independently certify the
+32-bit dyadic floor of (log d)^alpha through frozen053192/256/384-bit interval
+refinement. d=1 contributes exactlyzero, with no rounding uncertainty. These
+are reused immutable independent checker primitives, not new producer calls.
+A cache can reuse atoms rebuilt in this NEW witness audit; extension recomputes
+and checks ordinary mu and only computes the new atom suffix. Rebuilding may
+overlap source atoms evaluated in the older study. This is reported honestly;
+no claim is made that old atoms are never recomputed. The old sample bank is
+not rerun, and unused saved source data are not mathematically readmitted.
+
+Direct full divisor sums.
+For each scaleY=q^j*N, reconstruct Acenter=sum_(d=2..Y) [-mu(d)*flooratom(d)]
+floor(Y/d), Adown=sum_(mu(d)=1,d>=2)floor(Y/d), and
+Aup=sum_(mu(d)=-1)floor(Y/d). The exact unrounded A(Y) is enclosed by
+[Acenter-Adown,Acenter+Aup]/2^32. Positive and negative c_j reverse interval
+endpoints appropriately before summing. Every divisor, prime/composite term,
+unit-zero rule and signed cross-scale contribution remains. No absolute value
+is applied to individual arithmetic contributions before the signed sum.
+The producer's intermediate rows and complete signed interval are independently
+replayed. Per-term error intervals are safe even when wider than a joint error
+interval obtained after floor-weight cancellation; a witness must pass the
+strict inequality using its independently replayed conservative interval.
+
+Exact witness comparison.
+For eta=0, if [L,U] is the raw integer numerator interval and
+D=2^32, alpha=a_num/a_den>0, the actual target is T(N)/alpha. Define
+A=0 when0 belongs to[L,U], otherwise min(|L|,|U|). A strict certificate satisfies
+ A^2*a_den^2*C_den^2 > N*a_num^2*D^2*C_num^2.
+This is an exact comparison of nonnegative integers, not a floating sqrt or a
+rounded decimal score. It proves |T(N)|/alpha>C sqrt(N). Equality is not a
+counterexample. The current dense certificate scope is eta0; nonzero log-power
+comparisons require a separately licensed target-enclosure schema. Finite
+positive/ambiguous intervals cannot be relabeled as witnesses.
+
+Prospective resource gates.
+Requests reuse053 canonical rational/type/mean-neutral primitive-polynomial
+validation. Maximum used index is2,000,000; atom bits32. Live context count,
+exponent count and aggregate cached source indices are bounded before source
+allocation. The direct raw prefix accumulation is int64-safe by
+Y*bit_length(Y)^2*2^32, using flooratom<=bit_length(Y) and
+sum_(d<=Y)floor(Y/d)<=Y*bit_length(Y). Source cumulative capacities and every
+actual operation are charged to the caller's charge-only meter. Finite source
+availability metadata may exceed the checked endpoint, but is never represented
+as independent authority for unneeded indices. Mathematical intervals and all
+false uniform/RH scope flags are strict typed fields. No hash, file cache flag,
+old scientific-study replay, or new054 producer is used as an oracle.

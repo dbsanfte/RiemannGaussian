@@ -1,0 +1,12 @@
+Uniform signed-span identity review
+
+For formal variables x_n and P_t=sum_{n<=t}x_n, complete Delta_X=sum_{t=2X}^{4X-1}P_t²−4sum_{t=X}^{2X-1}P_t². Hence D−Delta_X=D*1²+4sum_parent P_t²−sum_child P_t² identically, with no arithmetic premises. The frozen old dictionary contains the constant critical-normalizer group, parent-prefix-one group and child-prefix-one group. Setting their shared signed weights to C,4,−1 and all other square/relation weights to0 gives this identity for every integer X>=1,q>=1 and rational C. All norm relation weights vanish, so the supplied zero-cubic gamma is0.
+
+Thus unconstrained signed linear-span membership of the original target is automatic. It does not exhibit an SOS or any upper bound: the child group has negative weight. The identity (A+cB)²=(1−c)A²+(c²−c)B²+c(A+B)² likewise proves rational-mix columns add no signed span when these three groups are already present; coefficients need not be nonnegative. Searching that membership cannot discover the missing signed arithmetic estimate. A full PSD Gram search is a different positivity problem and may enlarge the cone without enlarging signed span.
+
+Verified by direct symbolic coefficient expansion and inspection of complete frozen builder group definitions. No pilot scores were queried and no frozen sources were edited.
+
+SHA256:
+grouped_arithmetic_templates.py 9869beef394818011885fa34521467b86ccb530d3c8bcca654906ccaed4f2b8b
+check_grouped_arithmetic_run.py c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f
+cancellation_arithmetic_templates.py c06877b9b03c18bd7e4965c71632f9899680a06641d0ac0781a4e0b32da2c456

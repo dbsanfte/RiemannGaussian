@@ -1,0 +1,164 @@
+DETECTOR-GENERATED ARITHMETIC CONSTRUCTIONS AND CORE BOUND HYPOTHESES
+
+Current result and limitation
+-----------------------------
+The detector now jointly searches prime/composite transports, complete
+auxiliary energies, and their proposed uniform scale recurrences. It does
+not merely score a transport whose bound was separately selected by an
+analyst. The grammar and available proof rules are still supplied by us;
+this is bounded construction/inequality synthesis, not unrestricted
+autonomous proof invention.
+
+The completed pilot generated90 transport programs.28 have both a paid
+cofinal recovery certificate and eventual prime removal under the reviewed
+short-interval-prime import. For each it generated55 storage programs and
+16 recurrence shapes:24,640 joint hypotheses. An independent compiler
+checked all24,640 proof compositions before arithmetic responses were read.
+9,240 shapes were excluded using original-core pole growth and paid
+recovery. The other15,400 passed the finite discovery-validation tests.
+
+16 candidates were selected by a frozen rule, one per auxiliary mechanism
+and admitted window exponent, using6 distinct transports. All16 passed
+the larger-scale interval tests. Two independent implementations agreed
+on1,398,157 scalar comparisons, including every transformed coefficient,
+full prefix/log bank, complete energy/work block, selected storage, and
+recurrence verdict. The combined frozen suite passed23 tests.
+
+No complete core bound over all scales was proved. The zero numerical
+rejection count is an important limitation: the finite tests did not
+discriminate the15,400 remaining uniform conjectures. They must not be
+advertised as15,400 plausible RH mechanisms. The next search should target
+identities or estimates for the explicit signed increment, not tune C or
+extend an unchanged fit. Every selected uniform increment remains OPEN.
+
+Published continuation
+-----------------------
+ candidate10_transport_control_obligation.json
+ is a direct-byte copy of
+ core-prime-transport-results/pilot-001/publication-001/next_search_input.json
+ which preserves the full original grouped/core obligation and all its
+ recovery, head, center, prime-power and correction costs. This publication
+ adds a discrimination diagnostic to the unchanged completed main output.
+ Latest pointer: core-prime-transport-results/latest.json.
+
+Main immutable results:
+ core-prime-transport-results/pilot-001/report.json
+ core-prime-transport-results/pilot-001/protocol.json
+ core-prime-transport-results/pilot-001/transports.json
+ core-prime-transport-results/pilot-001/storage_programs.json
+ core-prime-transport-results/pilot-001/proof_compilation.json
+ core-prime-transport-results/pilot-001/hypotheses.jsonl.gz
+ core-prime-transport-results/pilot-001/selection.json
+ core-prime-transport-results/pilot-001/verified_bounds.json
+ core-prime-transport-results/pilot-001/verified_transports.json
+ Worker files retain all vectors, windows, assignments and scalar cases.
+
+Code and provenance
+---------------------
+ core_prime_transport.py: complete recoverable arithmetic maps.
+ core_control_synthesis.py: generated storage expressions, inequalities,
+   conditional proof compositions and explicit acyclic open-lemma graphs.
+ run_core_prime_transport.py: joint search, frozen selection and checking.
+ check_core_prime_transport.py, check_core_control_synthesis.py:
+   independent implementations; neither imports its respective producer.
+
+Sol6.1 analytical reviews:
+ CORE_PRIME_COMPOSITE_TRANSPORT_REVIEW_011.txt
+ CORE_CONTROL_SYNTHESIS_REVIEW_012.txt
+The analysts supplied generic theorem/grammar rules and checked scope.
+The program generated every joint expression, bound shape, training
+constant, selection, composed rejection and subsequent open obligation.
+No model call selected a favored expression during the run.
+
+The arithmetic operator
+------------------------
+The complete original source is unchanged:
+ f=beta*nu0-beta*nu1-Ru*nu2-beta*mu, beta9/2,0<Ru<5,
+ nu0=k_(1/3)*(mu*mu), nu1=k_(1/3)*(mu*mu_(2/3)),
+ nu2=k_(1/3)*mu_(2/3).
+For actual prime p, f(p)=-Ru*p^(-1/3)+(beta+Ru)*p^(-2/3).
+
+For each cofactor m2..16 and theta in1/2,7/12,2/3,3/4,5/6,1, partition
+each dyadic[A,2A) into complete windows of length2^floor(theta*log2A).
+Move negative prime mass to positive coefficients at m*q, qprime>m,
+using sorted round-robin assignment. Each load is at most4m and at most
+half the receiving coefficient. ANY failed/uncertain sign, count or
+capacity check retains the ENTIRE original window. All other terms and
+the complete unit remain. The new coefficient g is nonmultiplicative.
+
+Every accepted window preserves ordinary mass. With complete prefixes
+F,G and D=F-G, the current-window bound gives unconditionally
+ E_D(X)<=25X^(2theta-5/3),
+ E_F(X)<=2E_G(X)+50X^(2theta-5/3),
+ E_G(X)<=2E_F(X)+50X^(2theta-5/3),
+for every dyadicX>=1, including all failed/head windows. Here
+E_V(X)=X^-2 sum_(X<=n<2X)V(n)^2. Theta<=5/6 pays the correction cofinally.
+The theorem does NOT bound E_G. Completed windows generally retain
+nonzero log moments: B_G is the complete direct sum g(n)logn. The old
+multiplicative Euler log generator is not inherited by g.
+
+The complete cofactor asymptote is positive precisely when the number
+of prime factors of m with valuation exactly1 is odd. This admits
+m2,3,5,7,11,12,13, including repeated-valued cofactor12. Eventual prime
+deletion additionally uses Guth--Maynard, New large value estimates for
+Dirichlet polynomials, Corollary1.3:
+ https://arxiv.org/pdf/2405.20552
+Its short-interval theorem covers fixed theta>17/30 below.99. It is an
+import for eventual acceptance, not a detector discovery or a premise of
+the unconditional recovery payment. Theta1/2 remains outside that import;
+theta1 has an unpaid recovery power in this theorem.
+
+Fresh semiprimes whose two factors exceed16 are untouched. The earlier
+positive-semiprime obstruction to certain grouped absolute routes remains.
+All coefficient-majorant-only square-lift head payments transfer because
+|g(n)|<=|f(n)|; their full signed complements remain unpaid.
+
+The generated bound search
+----------------------------
+The generator offers the baseline A=E_G and54 mixed storages
+ A=E_(G+aQ)+wE_Q,
+ a=+/-1, w1/3,1,3,
+ Q(n)=n^-alpha times B_G(n)/log(2n),G(floor(n/2)),orD(n),
+ alpha0,1/6,1/3.
+Full signed crosses are retained. The language accepts other canonical
+rational exponents; the menu is finite for this declared run. The D
+auxiliary is a paid-perturbation calibration, not a new missing-bound
+mechanism. The null auxiliary is explicitly a baseline.
+
+For every storage the generator conjectures
+ A(2X)<=rho*A(X)+C(1+log2X)^k for EVERY dyadicX>=1,
+ rho1/2,1; k0,1/2,1,3/2,2,3,4,6.
+C is the positive integer ceiling of5/4 times the largest nonnegative
+training drift ratio, with minimum1. It is never refitted. The basic
+identity certifies E_G<=(1+a²/w)A. Conditional induction yields log
+degree k forrho1/2 and k+1 forrho1. Paid recovery transfers that same
+degree to ORIGINAL E_F. Its previously verified critical double pole
+therefore excludes degree<2 even at theta5/6; no meromorphic double pole
+of g is asserted. This is a checked composition of reusable proof rules.
+
+One detector-selected example uses m2,theta7/12 and Q(n)=G(floor(n/2)):
+ A(X)=E_(G+Q)(X)+(1/3)E_Q(X),
+ A(2X)<=A(X)/2+115(1+log2X)^2.
+The proposed recurrence passed every declared finite probe. The exact
+domination E_G<=4A and error payment are proved; the universal recurrence
+is OPEN. Its expression, fixed constant and all-scale domain are emitted
+as the next lemma. Dependency graphs distinguish the open increment from
+the conditional induction/recovery and forbid circular proof completion.
+
+Data and resource scope
+------------------------
+Training parents: powers2 from1 through512; validation1024,2048.
+All selections and constants were saved before larger transformed probes
+at parents4096,8192. Complete verification ends atH32767. Every underlying
+source coefficient was previously observed through524287, so this is
+exploratory construction discovery, not fresh independent source evidence.
+Independent192bit workers read their own previously verified source
+archives. All ordinary/log prefix histories and units remain present.
+
+The main run completed in65.214seconds, using502,165,647 charged operations
+including development, frozen tests and both workers. Sum of recorded
+main and worker peak RSS is1,128,136KiB (below1.08GiB). Workers ran in
+parallel with4GiB process limits under the authorized16GiB aggregate cap.
+No hash, source rerun, constant refit, frozen edit or numerical retry.
+All earlier studies remain byte-identical. Full signed control and RH
+remain open; leave the active research goal active.

@@ -1,0 +1,28 @@
+Pre-score analytical review: complete signed divisor-energy selector language
+
+Six fixed contexts (parent/child and j=-1,0,1) use
+ P_d(t)=sum_{1<=a<=t,d|a}(a/t)^j x_a, every1<=d<=t.
+All coefficients are exact positive rationals; t>=1, so negative j has no singularity. Full original target is unchanged. Source/product variables remain<=t<=4X-1; no ab<=horizon restriction is allowed. Ordered pair collisions and all endpoint terms must survive.
+
+Universal positivity: P_d², u_d P_d², (x_d P_d)² and ((1±x_d)P_d)² are squares with nonnegative numeric weights. Here u_d is the SUPPLIED squarefree indicator for mu, certified by complete factorization and norm relation x_d²-u_d, not a learned signed weight. Primitive mu signs are not substituted. For nonsquarefree d actual P_d is zero because all its multiples are nonsquarefree, but the formal polynomial must not be silently deleted on that basis.
+
+Uniform quartic closure:
+ (x_dP_d)²-u_dP_d²=(x_d²-u_d)P_d².
+ ((1±x_d)P_d)²=P_d²+x_d²P_d²±2x_dP_d².
+Thus modulo the norm column the last two equal (1+u_d)P_d²±2x_dP_d². Summing every d,t with SAME shared context coefficients preserves this identity: all quartics close using that context's norm column; no per-index fitted axiom is needed. The plus/minus groups genuinely expose the cubic signed divisor moment, but their sum alone is an unsigned norm.
+
+Complete cubic closure:
+ sum_{a,b<=t}((ab)/t²)^j x_a x_b [sum_{d|gcd(a,b)}x_d-1_{gcd=1}]
+ =sum_{d<=t}x_d P_d(t)²
+  -sum_{a,b<=t,gcd(a,b)=1}((ab)/t²)^j x_a x_b.
+Each bracket is inverse_row(gcd), including unit x1-1 for gcd1. The coefficient matches because the pair weight is the product of the two prefix weights. This relation retains all cubic signs and the entire coprime quadratic complement; it does not turn the signed moment into a positive square.
+
+Every added square polynomial has zero formalconstant, including the (1±x_d) product. Norm*P_d² and inverse_row*xa*xb also have zero formalconstant. Consequently the added groups cannot directly change the scalar-budget ledger or old cubic gamma coefficients. Auxiliary groups must remain explicitly empty and their gamma coefficients0; the necessary-gate scope remains the previously proved subcubic/q>1 regime. New groups might permit different old matching weights, which must be proved rather than assumed.
+
+Actual sign semantics: for squarefree d, x_d=±1 on mu, so ((1+x_d)P_d)² selects positive-mu divisor energies and ((1-x_d)P_d)² selects negative ones (factor4). This is actual sign-bearing information admitted via supplied norm/inverse axioms, not an unconditional bound on their aggregate. For d1, unit premises make the plus-selector four times the ordinary weighted prefix energy; omitting d1 would remove recovery. Existing parent/child ordinary prefix groups can split d1 at j0. New j±1 weighted d1 channels should be documented separately; finite improvements there need ordinary-energy recovery, not a relabeled weighted estimate.
+
+No structural conservation/degree-closure blocker found. The proposed six contexts give30 square and12 signed relation groups, or54 scalar LP columns, before existing per-instance slacks and30 Gram entries. Aggregate counts should be independently checked from actual source descriptors, not only asserted. Work/bit budgets must count all divisor/ordered pair loops and exact rational coefficients (especially j=-1), without truncating sources to meet them.
+
+Necessary next analytical obligation remains signed recovery: show a nontrivial comparison between positive/negative divisor selectors and the mandatory d1 ordinary energy, with a strictly positive coercivity margin and a proved critical remainder. Merely applying the displayed closures, pairing both selectors symmetrically, or replacing outer x_d by u_d erases the desired cancellation. Existing scalar-zero dual reasoning also means larger C/q alone cannot supply missing nonconstant relations.
+
+No scores queried, no old source edited, no new global bound or RH claimed.

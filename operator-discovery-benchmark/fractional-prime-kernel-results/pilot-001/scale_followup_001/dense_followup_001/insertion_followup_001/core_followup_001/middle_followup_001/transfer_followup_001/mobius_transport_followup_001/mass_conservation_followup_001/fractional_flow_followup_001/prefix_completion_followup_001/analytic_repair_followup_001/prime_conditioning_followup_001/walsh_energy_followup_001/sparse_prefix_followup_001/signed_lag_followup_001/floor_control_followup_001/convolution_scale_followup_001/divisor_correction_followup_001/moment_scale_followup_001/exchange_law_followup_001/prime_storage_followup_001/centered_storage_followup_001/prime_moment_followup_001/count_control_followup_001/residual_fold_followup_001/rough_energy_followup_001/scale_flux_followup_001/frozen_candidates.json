@@ -1,0 +1,1205 @@
+{
+  "candidates": [
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "3794915686734769/562949953421312",
+          "tau_3/4": "11384747060204307/1125899906842624"
+        },
+        "finite_identity_only": true,
+        "ops": 959,
+        "peak_bytes": 0,
+        "price": "3794915686734769/1125899906842624",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "949463/8388608",
+          "5265699/4194304",
+          "16431219/16777216",
+          "5077755/4194304"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "3794915686734769/1125899906842624"
+      },
+      "coefficients": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.8359090983867645,
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q1",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "dictionary_index": 1,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "16216985661/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "1",
+              "determinant_upper": "1",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 158,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 327601,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 2
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 14,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1995200397231/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1214210644593/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-3",
+              "determinant_upper": "-3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "dictionary_index": 38,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1855316271431/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 19
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 20470
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p16_gamma_5_8.json",
+      "proposed_leaf_count": 40,
+      "q": "1",
+      "source_id": "q1_p16",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "3479017292408025/562949953421312",
+          "tau_3/4": "10437051877224075/1125899906842624"
+        },
+        "finite_identity_only": true,
+        "ops": 959,
+        "peak_bytes": 0,
+        "price": "3479017292408025/1125899906842624",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "903511/8388608",
+          "10076129/8388608",
+          "15678383/16777216",
+          "9769255/8388608"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "3479017292408025/1125899906842624"
+      },
+      "coefficients": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.757836192846298,
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q129_128",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "dictionary_index": 1,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "14685243535/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "1",
+              "determinant_upper": "1",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 158,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 327601,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 2
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 14,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1826425284445/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1105495578269/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-3",
+              "determinant_upper": "-3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "dictionary_index": 38,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1716869803899/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 19
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 20470
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p16_gamma_5_8.json",
+      "proposed_leaf_count": 40,
+      "q": "129/128",
+      "source_id": "q1_p16",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "670763018222649/140737488355328",
+          "tau_3/4": "2012289054667947/281474976710656"
+        },
+        "finite_identity_only": true,
+        "ops": 959,
+        "peak_bytes": 0,
+        "price": "670763018222649/281474976710656",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "389287/4194304",
+          "17670465/16777216",
+          "1702573/2097152",
+          "17392841/16777216"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "670763018222649/281474976710656"
+      },
+      "coefficients": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.543706238269806,
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q33_32",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "dictionary_index": 1,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "5452355837/549755813888",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "1",
+              "determinant_upper": "1",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 158,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 327601,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 2
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 14,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "1404269390003/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 40940
+        },
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "208586365395/274877906944",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-3",
+              "determinant_upper": "-3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 144,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 3
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "dictionary_index": 38,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "680245282087/549755813888",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "3",
+              "determinant_upper": "3",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 19
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 20470
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p16_gamma_5_8.json",
+      "proposed_leaf_count": 40,
+      "q": "33/32",
+      "source_id": "q1_p16",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "2289535160641/549755813888",
+          "tau_3/4": "6868605481923/1099511627776"
+        },
+        "finite_identity_only": true,
+        "ops": 494,
+        "peak_bytes": 0,
+        "price": "2289535160641/1099511627776",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "11825661/16777216",
+          "12384275/16777216"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "2289535160641/1099511627776"
+      },
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.4430246353149416,
+      "frozen_before_validation": true,
+      "gamma": "2/3",
+      "id": "q1_p04_q1",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "746858239043/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-13935/8192",
+              "determinant_upper": "-13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 169,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81880
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 26,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "102385501829/137438953472",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "13935/8192",
+              "determinant_upper": "13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p04_gamma_2_3.json",
+      "proposed_leaf_count": 40,
+      "q": "1",
+      "source_id": "q1_p04",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "536540922202609/140737488355328",
+          "tau_3/4": "1609622766607827/281474976710656"
+        },
+        "finite_identity_only": true,
+        "ops": 493,
+        "peak_bytes": 0,
+        "price": "536540922202609/281474976710656",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "11314447/16777216",
+          "5924453/8388608"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "536540922202609/281474976710656"
+      },
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.3806434273719785,
+      "frozen_before_validation": true,
+      "gamma": "2/3",
+      "id": "q1_p04_q129_128",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "341840878059/549755813888",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-13935/8192",
+              "determinant_upper": "-13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 169,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81880
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 26,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "749797241663/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "13935/8192",
+              "determinant_upper": "13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p04_gamma_2_3.json",
+      "proposed_leaf_count": 40,
+      "q": "129/128",
+      "source_id": "q1_p04",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "admission": {
+        "RH_proved": false,
+        "conditional_cover_verified": true,
+        "conditional_on_all_uniform_local_leaves": true,
+        "conditional_on_common_q_at_least_one": true,
+        "conditional_on_inactive_coordinate_certificate": true,
+        "conditional_on_independent_noncircularity": true,
+        "conditional_on_uniform_coefficient_norm": true,
+        "conditional_young_drift_prices": {
+          "tau_1": "411575636804929/140737488355328",
+          "tau_3/4": "1234726910414787/281474976710656"
+        },
+        "finite_identity_only": true,
+        "ops": 493,
+        "peak_bytes": 0,
+        "price": "411575636804929/281474976710656",
+        "source_admission_still_required": true,
+        "sqrt_upper_bounds": [
+          "9909621/16777216",
+          "5188853/8388608"
+        ],
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "token_root_binding_still_required": true,
+        "uniform_R_drift_proved": false,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "uniform_target_bound_proved": false
+      },
+      "all_uniform_covariance_leaves_unpaid": true,
+      "certificate": {
+        "price": "411575636804929/281474976710656"
+      },
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "dictionary_rays": 40,
+      "discovery_parent_count": 85,
+      "floating_objective": 1.2092189192771912,
+      "frozen_before_validation": true,
+      "gamma": "2/3",
+      "id": "q1_p04_q33_32",
+      "leaves": [
+        {
+          "a": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "dictionary_index": 20,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "524446734265/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "-13935/8192",
+              "determinant_upper": "-13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 169,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81880
+        },
+        {
+          "a": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "dictionary_index": 26,
+          "finite_discovery_only": true,
+          "floating_proposal_only": false,
+          "kappa": "575161737551/1099511627776",
+          "noncircularity": {
+            "admission": {
+              "RH_proved": false,
+              "cell_admission_still_required": true,
+              "determinant_lower": "13935/8192",
+              "determinant_upper": "13935/8192",
+              "finite_identity_only": true,
+              "noncircularity_proved": true,
+              "ops": 202,
+              "peak_bytes": 0,
+              "source_admission_still_required": true,
+              "status": "VERIFIED_NONCIRCULARITY",
+              "token_root_binding_still_required": true,
+              "uniform_bound_proved": false,
+              "uniform_correlation_proved": false,
+              "uniform_source_bound_proved": false
+            },
+            "u": 20401,
+            "witness": {
+              "first_cell": 0,
+              "second_cell": 7
+            }
+          },
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "noncircularity_rejections": [],
+      "proposal_file": "proposal_q1_p04_gamma_2_3.json",
+      "proposed_leaf_count": 40,
+      "q": "33/32",
+      "source_id": "q1_p04",
+      "source_metadata_file": "source_metadata.json",
+      "status": "CONDITIONAL_COVER_PROPOSAL",
+      "target": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "uniform_bound_proved": false,
+      "uniform_source_bound_proved": false
+    }
+  ],
+  "validation_cell_queries_started": false
+}

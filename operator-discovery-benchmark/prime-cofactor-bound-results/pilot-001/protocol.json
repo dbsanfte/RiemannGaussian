@@ -1,0 +1,50 @@
+{
+  "RH_proved": false,
+  "archive_byte_reference": "multiscale-bound-results/pilot-001/source_snapshot/core_vectors.jsonl.gz",
+  "earlier_source_knowledge": true,
+  "hashes": false,
+  "held_out_data": false,
+  "no_new_archive_copy": true,
+  "parent": "candidate10_moment_region_obligation.json",
+  "scales": [
+    256,
+    1024,
+    4096,
+    16384,
+    65536
+  ],
+  "snapshot_precedes_actual_source_discovery": true,
+  "source_archive": "core-bound-results/pilot-001/checker_vectors.jsonl.gz",
+  "source_files": [
+    "prime_cofactor_discovery.py",
+    "check_prime_cofactor_discovery.py",
+    "prime_cofactor_observations.py",
+    "run_prime_cofactor_discovery.py",
+    "test_prime_cofactor_discovery.py",
+    "test_check_prime_cofactor_discovery.py",
+    "test_prime_cofactor_observations.py",
+    "prime_cofactor_discovery_protocol.txt",
+    "prime_cofactor_discovery_development.json",
+    "check_prime_cofactor_discovery_development.json",
+    "prime_cofactor_observations_development.json",
+    "PRIME_COFACTOR_BOUND_RULE_REVIEW_035.txt",
+    "PRIME_COFACTOR_CHECK_SCOPE_035.txt"
+  ],
+  "symbolic_spec": {
+    "lattice": 6,
+    "max_degree": 24,
+    "max_states": 12,
+    "operation_cap": 10000000,
+    "residue_interval": [
+      "1",
+      "5"
+    ],
+    "seconds": 300,
+    "valuations": [
+      1,
+      2,
+      3
+    ]
+  },
+  "whole_signed_bound_proved": false
+}

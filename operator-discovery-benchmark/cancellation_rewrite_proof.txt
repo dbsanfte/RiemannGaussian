@@ -1,0 +1,143 @@
+CERTIFICATE FEEDBACK THROUGH EXACT PRIME-DILATION REWRITES
+7 October 2026. Elementary consequences of classical Mobius Euler factors.
+No new independent prime theorem or sublinear RH cancellation is proved.
+
+1. REWRITE THE SAME ARITHMETIC TARGET
+
+Let W be a rational polynomial on [0,1], W(0)=1,W(1)=0, extended by zero
+beyond one. Let P be a nonempty product of distinct primes learned and
+certified by the preceding row-law search. Define the piecewise polynomial
+
+ F_(P,W)(u)=sum_(d|P)mu(d)W(d*u).
+
+Then for every real X>=1,
+
+ S_W(X)=sum_(n<=X,gcd(n,P)=1)mu(n)F_(P,W)(n/X).          (1)
+
+To prove this, discard original terms with a squared prime factor from P:
+their Mobius value is zero. Each remaining original index has a unique form
+d*n, d|P and gcd(n,P)=1. The Euler-factor law gives mu(d*n)=mu(d)mu(n),
+including when mu(n)=0. Regrouping the finite sum yields (1).
+
+Thus this is an exact change in representation of the original signed
+Mobius sum. Its Mellin transform W_hat(s)/zeta(s) is preserved, with the same
+nonvanishing and ordinary-zero gates proved in estimate_proof.txt. The
+search does not replace the target with a positive moment or an unrelated
+sequence. Any better bound on the right of (1) bounds the original target.
+
+2. GENERATE A POSITIVE PIECEWISE POLYNOMIAL ENVELOPE
+
+The support changes only at u=1/d for d|P. On each interval [l,r] between
+successive breakpoints, F is a polynomial of degree at most deg W=d0.
+Write its Bernstein expansion after u=l+(r-l)*t:
+
+ F(u)=sum_(k=0)^d0 b_k*binomial(d0,k)t^k(1-t)^(d0-k).
+
+Replacing each b_k by |b_k| gives a nonnegative polynomial U(u)>=|F(u)|.
+The construction uses exact rational arithmetic. The independent checker
+expands that Bernstein polynomial to recover F and verifies the absolute
+envelope coefficients, instead of repeating the production conversion.
+
+Since W(1)=0, F is continuous at every support breakpoint. The two endpoint
+Bernstein coefficients on adjacent cells are the corresponding actual
+values of F, so their absolute values agree. Therefore U is continuous
+across cells. At zero, sum_(d|P)mu(d)=0 gives F(0)=U(0)=0; at one,
+W(1)=0 gives F(1)=U(1)=0. These endpoint conditions are checked exactly.
+
+The basis integrals and derivative identity supply exact certificate costs:
+
+ I_cell=(r-l)/(d0+1)*sum_k |b_k|,
+ TV_cell <= sum_(k<d0) ||b_(k+1)|-|b_k||.
+
+Let I be the sum of the cell integrals and V the sum of the variation bounds.
+Then integral_0^1 U=I and TV(U)<=V, with no hidden breakpoint jumps.
+
+3. AN ELEMENTARY ALL-SCALE ARITHMETIC COUNT CERTIFICATE
+
+Let r0 be the number of prime factors of P and delta=product_(p|P)(1-1/p).
+The exact finite-sieve count of positive integers coprime to P is
+
+ A_P(x)=sum_(d|P)mu(d)*floor(x/d), x>=0.
+
+It follows that D_P(x)=A_P(x)-delta*x is the signed sum of fractional parts.
+Exactly 2^(r0-1) divisors have each sign, and each fractional part lies in
+[0,1). Therefore |D_P(x)|<=2^(r0-1) for every real x>=0. This elementary
+finite identity does not import a theorem on prime distribution.
+
+Use (1), |mu(n)|<=1, the positive envelope and Stieltjes integration:
+
+ |S_W(X)| <= sum_(n<=X,gcd(n,P)=1)U(n/X)
+           =delta*X*integral_0^1 U(u)du + integral_0^1 U(u)dD_P(X*u)
+           <=delta*I*X + 2^(r0-1)*V.                     (2)
+
+The last inequality is integration by parts; U(0)=U(1)=0 removes the endpoint
+terms and the discrepancy bound controls the variation integral. This proves
+(2) for every real X>=1 and every declared finite prime set. Both parameter
+costs are retained. Increasing the prime set can enlarge the boundary cost;
+the search cannot hide that cost or conclude an unproved sublinear bound.
+
+The executable grammar permits up to eight distinct prime multipliers and
+polynomial degree up to eight, to bound certificate generation size. The
+mathematical template itself applies to every finite prime set and degree.
+The public finite evaluator checks the constant-one Dirichlet inverse law
+on the complete supplied coefficient prefix. Arbitrary integer sequences
+cannot inherit the Mobius-specific identity or bound.
+
+4. AN AUTOMATICALLY RECOVERED SMOOTHING CALIBRATION
+
+For W(u)=1-u and P=2, F(u)=u on [0,1/2] and 1-u on [1/2,1]. Its Bernstein
+envelope is exact: I=1/4,V=1,delta=1/2 and the discrepancy cost is one.
+The engine therefore recovers
+
+ |sum_(n<=X)mu(n)(1-n/X)| <= X/8+1, EVERY real X>=1.      (3)
+
+This is a known-framework smoothing consequence, not an RH-quality estimate.
+The target, kernel and constants are generated from the composed row laws;
+the formula (3) is checked after synthesis as a calibration target.
+
+5. USE AFFINE CERTIFICATES TO PROVE OR REJECT LEARNED BOUNDS
+
+Every unresolved estimate from the earlier search supplies a target
+|S_W(X)|<=C*X^theta*(log X)^b for every integer X>=2. The engine searches
+the generated rewrites for a way to close that exact obligation.
+
+For theta>=1,b>=0, C*X^(theta-1)*(log X)^b is nondecreasing. If a rewrite
+has bound a*X+e and an integer threshold X0 satisfies
+
+ C*X0^(theta-1)*(log X0)^b >= a+e/X0,
+
+then it bounds the requested target at every real X>=X0. Checking each
+integer 2<=X<X0 with the exact arithmetic sum and certified inequality
+completes an all-scale proof. The independent checker replays both the
+monotone tail premise and every finite initial scale with new factorizations
+and a different precision. A comparison that is undecidable with balls is
+not called either a proof or a counterexample.
+
+Every feedback goal first checks the small scales 2 through 15. This also
+detects false hypotheses that the original training scales missed:
+training begins at 16, while the target domain begins at 2. An initial-scale
+counterexample is recorded as a disproof, even if all large held-out scales
+passed. A repair is a new proposed constant, never a proof of the rejected
+old constant. It is synthesized from a finite-data proposal plus the explicit
+affine tail cost, and accepted only after both certificate parts are verified.
+
+For theta<1 or b<0 this monotone-affine backend supplies no all-scale
+certificate. It retains the exact coprime-row subgoal and all costs as an
+open proof obligation. In particular no square-root bound is certified;
+the same original ordinary-zeta root problem remains.
+
+6. SCOPE
+
+The search composes up to three rows from its first four certified learned
+primes, creating fourteen conditioning sets. It generates and certifies
+280 affine bounds for the twenty kernels, checks exact rewritten sums at
+five changed integer scales, and feeds 360 previously unresolved estimate
+goals through these certificates. Successful proofs cover linear or weaker
+growth, with finite boundary checks. Sublinear signed cancellation, a new
+prime-distribution theorem, historical novelty and RH remain unproved.
+
+These elementary templates show that the detector can synthesize a bound
+and its certificate rather than only evaluate a supplied formula. Their
+completeness is limited. A new decomposition or recurrence proving the
+remaining signed coprime-row cancellation would be genuine further work;
+the engine records it as a subgoal instead of treating it as an assumption.

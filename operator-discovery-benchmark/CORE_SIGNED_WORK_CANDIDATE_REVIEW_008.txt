@@ -1,0 +1,285 @@
+SELECTED SIGNED WORK: FRESH-LEG PAIRING AND MANDATORY DIAGONAL CANCELLATION
+
+Scope and honest outcome
+-----------------------
+Only this new memo is written. Read-only inputs are the frozen007 recovery,
+core-signed-work-results/pilot-001/selection.json, the exact source formulas
+and the existing pole witness. No numerical source run, test, rescore,
+parameter search, hash or prior/frozen edit is performed.
+
+Selected IDs0..8 have G=F and the nine eta values; ID69 has
+G=F-sqrt2*Fhalf, eta1. Every selected step is
+ W(2X)-W(X)/2 <=(1+log_2 X)^2, every dyadic X>=1024.       (0.1)
+The saved base upper bounds are1 for the identity selections and3 for69;
+the complete energy head upper bound is82. This memo focuses on ID6 eta1,
+ID8 eta2 and ID69. All finite passes remain finite observations.
+
+No actual all-scale proof or refutation of(0.1) is obtained. Its degree2
+is the necessary pole boundary and escapes the previous degree rejection.
+There IS a further unconditional actual-source result: the complete
+coefficient diagonal has positive C*(log X)^3 work, and its selected
+increment has positive C*(log X)^3/2 work. Thus a degree2 total increment
+requires negative CUBIC off-diagonal compensation. This is proved with
+an elementary complete Euler/convolution argument, not an RH estimate.
+
+Also, the energy increment removes every old-old coefficient pair exactly.
+The work increment keeps only one explicit old-head product plus pairs
+with a fresh leg above X. The resulting exact signed fresh-pair obligation
+and the mandatory cubic compensation are useful narrower proof inputs.
+They are not a solved target under a new name: their open status and
+logical equivalence to the full step are explicit.
+
+1. Exact source, filtered coefficient and work kernel
+-----------------------------------------------------
+Use u=1/3,v=2/3,beta=9/2 and the fixed exact R_u. The complete source is
+ f=beta*nu0-beta*nu1-R_u*nu2-beta*mu,
+ nu0=k_u*(mu*mu),nu1=k_u*(mu*mu_v),nu2=k_u*mu_v.
+All convolutions, original units and real-pole compensation are retained.
+For a=0 orsqrt2 put
+ g_a(n)=f(n)-a*1_(2 divides n)*f(n/2),
+ G_a(x)=sum_(n<=x)g_a(n), B_a(x)=sum_(n<=x)g_a(n)log n.
+Hence B_a=B_F-a B_Fhalf-a*log2*Fhalf, including the final term.
+
+Define the exact weights for M=max(h,k)
+ d_X(M)=integral_(max(X,M))^(2X) dx/x^2,
+ ell_X(M)=integral_(max(X,M))^(2X) dx/(x^2 log x),
+both zero if M>=2X. For M<=X their lower endpoint is X. On integer cells
+these are the full sums of007's rational d_n and Ei-difference ell_n.
+The signed work kernel is exactly
+ K_eta,X(h,k)=(1-eta)*d_X(M)+(eta/2)*log(h*k)*ell_X(M),
+ W_eta,a(X)=sum_(h,k<=2X-1)g_a(h)g_a(k)K_eta,X(h,k).       (1.1)
+No coefficient pair, product fiber, repeated valuation or center cross
+has been removed. Set Delta K=K_eta,2X-K_eta,X/2. Then
+ Delta W_eta,a(X)=sum_(h,k<=4X-1)g_a(h)g_a(k)Delta K(h,k). (1.2)
+
+2. Exact removal of old-old energy pairs and the retained head product
+---------------------------------------------------------------------
+For the eta0 part, the increment kernel is
+ Delta d_X(M)=0,                               M<=X;
+ Delta d_X(M)=(M-X)/(2XM),                     X<M<=2X;
+ Delta d_X(M)=1/M-1/(4X),                     2X<M<4X;
+ Delta d_X(M)=0,                               M>=4X.     (2.1)
+This exact cancellation uses the selected coefficient1/2 and the weight
+x^-2. It is not a fitted arithmetic observation. The nonzero remaining
+weights are nonnegative; their products g(h)g(k) are signed, so positivity
+of the weights does not bound their full sum by a small quantity.
+
+For M<=X the logarithmic-weight difference is
+ Delta ell_X(M)=-a_X,
+ a_X=(log2/2)*integral_X^(2X)dy/[y^2 log y log(2y)]>0.     (2.2)
+Consequently the ENTIRE old-old work contribution is just
+                -eta*a_X*G_a(X)*B_a(X).                  (2.3)
+The exact bounds
+ log2/[4X log(2X)log(4X)] <=a_X
+                          <=log2/[4X log X log(2X)]
+follow directly from the denominators on that full interval.
+
+Define the complete fresh-leg sum
+ P_eta,a(X)=sum_(h,k<=4X-1,max(h,k)>X)
+                          g_a(h)g_a(k)Delta K(h,k).
+Then the exact selected arithmetic step is equivalent to
+ P_eta,a(X)-eta*a_X*G_a(X)B_a(X) <=(1+log_2 X)^2.          (2.4)
+It has strictly fresh coefficient support in P and a single specified
+old-head product. Every endpoint is explicit, including h=X in the head
+and the final4X-1 cell in the child. Eta1 and eta2 change this kernel,
+not the need for complete signed fresh-leg pairing.
+
+The apparent negative credit in(2.3) is not free: sign(G_a B_a) has not
+been proved positive at every endpoint. Replacing it by an assumed sign
+or controlling individual uncentered A_i endpoints would introduce new
+unpaid obligations. This is an exact support reduction, not a source
+independent contraction theorem.
+
+3. Reciprocal/interval form of the same complete step
+----------------------------------------------------
+For y in[X,2X) let
+ P_a(y)=sum_(y<n<=2y)g_a(n)=G_a(2y)-G_a(y),
+ Q_a(y)=sum_(y<n<=2y)g_a(n)log(n/y),
+ A_a(y)=B_a(y)/log y.
+These are complete sharp intervals with real y; all floors come from the
+prefix definitions. Exactly
+ B_a(2y)=log y*[A_a(y)+P_a(y)]+Q_a(y).
+Define
+ T_a(y)=[Q_a(y)-log2*(A_a(y)+P_a(y))]/log(2y).
+Then change of variables in the child work gives
+ Delta W_eta,a(X)=1/2*integral_X^(2X)
+ {2G_a P_a+P_a^2
+       +eta*[P_a*(A_a-G_a)+(G_a+P_a)*T_a]}/y^2 dy.         (3.1)
+For eta0 this is the full joined prefix/interval covariance, not an
+absolute short-interval norm. For eta1 the bracket is the exact extra
+log-bank part; for eta2 it is doubled. If a=sqrt2,
+ P_a(y)=sum_(y<n<=2y)f(n)-sqrt2*sum_(y/2<n<=y)f(n),
+and the corresponding log weights stay in Q_a. Neither interval is a
+free companion, and no signs or midpoint correction disappear.
+
+The prime-power identity can be substituted for B_F in(3.1) or(2.4):
+ B_F(x)=sum_(r<=x)Lambda(r)*sum_i c_i D_ii(r)A_i(x/r),
+with all four rows and all prime powers from007. This changes the
+description of the same complete covariance. It does not make its
+quadratic form negative:005 proves the rank-one polarization indefinite
+and its negative-coefficient generators can have either prefix-Hilbert
+Fourier sign. Completing them by raw companion squares retains genuine
+real poles. Thus those exact identities alone have not supplied the
+required all-scale upper bound in(2.4).
+
+4. Unconditional coefficient diagonal: a cubic logarithm is unavoidable
+------------------------------------------------------------------------
+This section supplies an actual-source estimate not assumed from the
+cofinal target. Let t=p^(-u), z=p^(-s). The exact nu0 local coefficients are
+ nu0(1)=1, nu0(p)=t-2,
+ nu0(p^e)=(1-t)^2*t^(e-2), e>=2.
+Therefore their square-coefficient Euler factor is
+ C_p(s)=1+(2-t)^2*z+(1-t)^4*z^2/(1-t^2*z).
+The complete nonnegative coefficient series factors, for Re(s)>1, as
+ C(s)=sum nu0(n)^2*n^(-s)=zeta(s)^4*E(s),
+ E(s)=product_p (1-p^(-s))^4*C_p(s).                       (4.1)
+Its local factor is1+O(p^(-Re(s)-u)+p^(-2Re(s))). All higher-degree
+absolute local tails satisfy the same summable majorant on compact
+half-planes Re(s)>2/3. Thus E has a Dirichlet coefficient expansion
+E(s)=sum e(n)n^-s absolutely convergent there. At s1 every factor is
+positive and the deviations from1 are absolutely summable, so
+                         E(1)>0.                         (4.2)
+This uses the complete actual-prime local coefficients, not truncation.
+
+An elementary convolution proof gives its unsigned summatory asymptotic.
+The repeated divisor sum obeys
+ sum_(n<=x)d4(n)=x*(log x)^3/6+O(x*(1+log x)^2).
+To see this without a Tauberian assumption, begin with the harmonic-sum
+formula for d2 and induct via sum_n D_(k-1)(x/n); monotone integral
+comparison of (log(x/t))^j/t gives its next leading coefficient1/(j+1).
+Choose any sigma0 in(2/3,1), for example3/4. Complete convolution with
+e(n), whose sum |e(n)|n^-sigma0 is finite, is justified absolutely. Expand
+(log(x/n))^3, paying all log(n) moments at weight1/n; the tail beyond x
+costs O(x^sigma0*(1+log x)^3). Hence
+ sum_(n<=x)nu0(n)^2=E(1)*x*(log x)^3/6
+                                      +O(x*(1+log x)^2). (4.3)
+All constants are finite exact source/Euler constants; none is fitted.
+
+Write f=beta*nu0+r. The other three coefficient modes have modulus<=1,
+so |r(n)|<=L=2beta+R_u. Since |nu0(n)|<=d2(n),
+ sum_(n<=x)|nu0(n)r(n)|<=L*x*(1+log x),
+ sum_(n<=x)r(n)^2<=L^2*x.
+Therefore the COMPLETE coefficient square has
+ S_(2,0)(x)=sum_(n<=x)f(n)^2=c_0*x*(log x)^3
+                                      +O(x*(1+log x)^2),
+                      c_0=beta^2*E(1)/6>0.              (4.4)
+This is coefficient second moment, not prefix second moment. Its bounded
+coefficient companions have been included; their PREFIX correlations
+are not thereby small and cannot be discarded.
+
+For critical a=sqrt2 replace nu0 by the multiplicative function
+ xi_a(n)=nu0(n)-a*1_(2 divides n)*nu0(n/2).
+It changes ONLY the prime2 Euler factor. If v_e=nu0(2^e), v_0=1, put
+ C_(2,a)(s)=1+sum_(e>=1)(v_e-a*v_(e-1))^2*2^(-es).
+Its coefficients are nonnegative, its unit is1 and its local tail is
+absolutely convergent near s1. Define E_a by replacing the prime2 factor
+of(4.1) by (1-2^-s)^4*C_(2,a)(s). Then E_a is still absolutely convergent
+for Re(s)>2/3 and E_a(1)>0. The remainder r_a is bounded by(1+|a|)L,
+and |xi_a|<=(1+|a|)d2. The identical convolution argument gives
+ S_(2,a)(x)=sum_(n<=x)g_a(n)^2=c_a*x*(log x)^3
+                                      +O(x*(1+log x)^2),
+                      c_a=beta^2*E_a(1)/6>0.             (4.5)
+There is no same-prime sector omission or assumption that a delay removes
+this dominant unsigned coefficient statistic.
+
+5. Exact diagonal payment fails at degree2; its opposite credit is open
+-----------------------------------------------------------------------
+Split the full work into coefficient diagonal and off-diagonal:
+ D_eta,a(X)=sum_h g_a(h)^2*K_eta,X(h,h),
+ O_eta,a(X)=2*sum_(h<k)g_a(h)g_a(k)*K_eta,X(h,k),
+                         W=D+O.                          (5.1)
+Let S2=S_(2,a) and U2(x)=sum_(h<=x)g_a(h)^2*log(x/h)
+                       =integral_1^x S2(y)dy/y.
+The complete diagonal is exactly
+ D_eta,a(X)=integral_X^(2X)
+                       [S2(x)-eta*U2(x)/log x]/x^2 dx.    (5.2)
+The unit in U2 is retained; this is not a prime-power-only diagonal.
+By(4.4)/(4.5), writing l=log2 and Lx=log X,
+ integral_X^(2X)S2(x)/x^2 dx=c_a*l*Lx^3+O(Lx^2),
+ integral_X^(2X)U2(x)/(x^2 log x)dx=c_a*l*Lx^2+O(Lx).
+Thus for EVERY fixed selected eta,
+ D_eta,a(X)=c_a*l*(log X)^3+O((log X)^2),
+ D_eta,a(2X)-D_eta,a(X)/2
+              =(c_a*l/2)*(log X)^3+O((log X)^2).           (5.3)
+In particular eta1 or eta2 cannot eliminate the dominant diagonal by
+their log weighting. The critical delay leaves c_a positive as well.
+
+Consequently separately paying D by O(log^2 X) is analytically FALSE,
+even though the complete proposed W step might be true. The selected
+step requires exactly
+ O_eta,a(2X)-O_eta,a(X)/2
+ <=(1+log_2 X)^2-[D_eta,a(2X)-D_eta,a(X)/2].                (5.4)
+Its right-hand side has NEGATIVE cubic leading term
+                    -(c_a*l/2)*(log X)^3+O((log X)^2).
+This is a mandatory cancellation frontier. Equivalently the compensated
+off-diagonal step plus the known positive diagonal must have a degree2
+upper bound. The exact D, not only its leading term, remains in(5.4),
+because the desired selected constant is1 and its quadratic remainder
+has not been proved to fit inside that budget.
+
+This is logically equivalent to the original full step, not a solved
+or independent sufficient estimate. Its genuine additional content is
+the rigorously proved cubic unsigned contribution and the specific
+negative off-diagonal credit that a successful arithmetic pairing must
+produce. In particular a nonnegative orbit decomposition that leaves
+the diagonal unpaired cannot close at the proposed degree.
+Crosses involving r_a remain in O; bounded coefficients do not pay their
+macroscopic centers or their prefix correlations. Prime-removal pairings
+must cross the necessary product/support sectors and retain these terms.
+
+6. What the admitted pole does and does not refute about constant1
+-----------------------------------------------------------------
+Review006's degree rule only rejects degrees below2 here. The selected
+rho1/2,k2 is at its allowed boundary. From the exact recurrence with C1,
+ limsup W_eta,a(X)/(1+log_2 X)^2<=2.
+Conditional007 recovery bounds N_a at the same degree, and its proved
+one-log-lower W-N discrepancy yields
+ limsup N_a(X)/(1+log_2 X)^2<=2.                           (6.1)
+If B_a is the surviving leading double-pole coefficient of the Mellin
+transform, blockwise Cauchy and the exact geometric-power asymptotic give
+ limsup N_a(X)/(1+log_2 X)^2 >=(log2)^3*|B_a|^2.            (6.2)
+For a0, B_0=beta*zeta(rho+u)/(rho*zeta'(rho)^2); for critical a,
+B_a=(1-a*2^-rho)*B_0. All factors remain in the saved witness.
+
+Thus an additional CONSTANT-SENSITIVE analytic necessary gate is
+                       (log2)^3*|B_a|^2<=2.
+More generally at order d and forcing degree2d-2 in a strict contraction,
+ C/(1-rho_step)>=(log2)^(2d-1)*|B_a|^2/[(d-1)!]^2.
+A linked certificate violating this would refute the actual constant,
+without needing a numerical failure scale. No such certified violation
+is established here. The admitted endpoint is not an analytic proof of
+the bound, and the diagonal obstruction is not a refutation of its full
+signed sum. No new zero evaluation or source moment was computed.
+
+7. Next arithmetic lemma and detector feedback
+-----------------------------------------------
+For ID6,ID8 and69, the exact next all-scale lemma can be recorded as(2.4),
+using the fresh-leg kernel(2.1)/(2.2) and its explicit old-head product.
+Its compulsory degree3 negative diagonal compensation is(5.4). A proof
+must supply a genuinely source-specific negative off-diagonal credit,
+not repeat the log identity, absolute Volterra bound or a nonnegative
+auxiliary inequality. Those already prove recovery but cannot create
+the required credit.
+
+Useful finite general pairing primitives are: whole fresh-leg product
+fibers with all gcd/valuation sectors; full prime-adjunction/removal
+with the exact prefix-exit terms; the complete lower-channel center
+crosses; and coefficient diagonal-to-off-diagonal transport respecting
+the signed kernel. Any claimed transport must account for its leftover
+edges and show how its combined signed weight pays the cubic forcing.
+Same-product squarefree factorizations have a fixed product-parity sign
+in the dominant nu0 sector, so merely permuting those factorizations
+does not create opposite signs. Such a rule must include a different
+arithmetic transition or the retained cross-channel coefficients.
+No complete such pairing with a proved uniform estimate has been found.
+
+All nine eta identity presentations have the same cubic diagonal leading
+term. Their differences enter at lower log order, as007 already proves
+conditionally for the whole controlled work. The fact that all567 admitted
+shapes passed finite validation is not evidence that a particular eta
+created an all-scale mechanism. The selected ceilingC1 can be loose at
+the observed scales; its universal premise is the substantive new claim.
+
+Final status: exact fresh-support reduction and unconditional complete
+coefficient/diagonal asymptotics proved; selected all-scale steps not proved
+or refuted. Full cofinal target and RH remain OPEN. No numerical/test run.

@@ -1,0 +1,110 @@
+STAGE037 COMPLETE: GENERATED RECURRENCES, UNIFORM ARITHMETIC LEMMAS OPEN
+
+Authoritative result: coupled-scale-bound-results/pilot-001/report.json.
+Next machine input: coupled-scale-bound-results/pilot-001/next_search_input.json.
+Status COUPLED_SCALE_PROGRAMS_AUDITED_UNIFORM_BOUND_OPEN; exit0.
+Full signed control and RH remain unproved. The accepted033 parent and all
+source/transport obligations are unchanged; no Z033 residual was isolated.
+
+The detector now searches actual bound hypotheses
+ G_X(n)=F(n)+H_X(n),
+ H_X(n)=sum c_i X^(-gamma_i) A_i(floor(n/d_i);ceil(sqrt(2X))),
+ A_i(t;y)=0 below1, otherwise h_i(1)+sum_(y<p<=t)h_i(p).
+The complete original F retains all integers. A_i is an explicit prime
+profile, not an unchecked rough-prefix identity outside its valid domain.
+All square, source/helper and helper/helper cross terms are retained.
+
+661248 nonempty programs were scored:1152 singles and660096 pairs. The finite
+dictionary has4 machine-generated035 states, divisors1,2,3,6 rational signed
+coefficients, and16 rational offsets from the adaptive036 exponent scheduler.
+1/257 was an explicit requested early exponent;1/7,1/5,1/8 and others were
+admitted by the general height enumeration. There is no semantic denominator
+ceiling. A program's gamma starts at its independently paid helper threshold.
+This is a restricted sparse paid-helper grammar, not an exhaustive universe
+of unconventional operators or proof methods.
+
+The recurrence hypothesis is
+ E_G(2X)<=E_G(X)+C D(X) for every dyadic integer X>=1,
+ E_G(X)=X^-2 sum_(X<=n<2X)G_X(n)^2,
+ D(X)=X^-1 sum_(1<=n<=4X-1)f(n)^2.
+The C dictionary is0,1/4096,1/1024,1/256,1/64,1/16,1/4,1,4.
+The detector chooses programs/C on fixed training blocks, then freezes them
+before the other partition checks. All observations reuse an earlier archive;
+there is no fresh-data generalization or untouched-holdout claim.
+
+Finite findings
+The five selected nonempty programs and priced empty-program baseline each
+passed all17 interval recurrence checks, parents X=1 through65536. Complete
+child energies reach X=131072, and every integer through262143 was included.
+Four selections are ordinary candidates; the fifth is a padding control whose
+helper energy exceeds the target on a training block. Its passing result is
+not credited as evidence of useful cancellation.
+No zero-forcing program passed all training scales in the float proposal scan.
+That is a finite search result, not a rigorous universal no-go theorem.
+
+The most interesting frozen programs (A indices are zero-based035 states) are:
+ 02: H_X(n)=(1/2)X^(-9/14)A_1(n;y_X)
+              +(1/2)X^(-1/2)A_1(floor(n/3);y_X), C=1/64.
+ 03: H_X(n)=(1/2)X^(-5/8)A_1(n;y_X)
+              +(1/2)X^(-7/10)A_2(n;y_X), C=1/64.
+The baseline selected C=1/16. The finite raw training thresholds were about
+0.0172588 baseline,0.0151091 for02,0.0148438 for03. Thus the fourfold change
+in the discrete C grid must not be described as a fourfold empirical gain.
+All have the same proposed logarithmic growth class. No stronger asymptotic
+growth bound has been proved or numerically established by these constants.
+Candidate04 used gamma259/514, showing that the extended fraction language
+reaches numerical candidates without special treatment of square/cube roots.
+
+Independent mathematical scope
+check_coupled_scale_bounds.py reconstructs paid helper norms from checked035
+prime profiles. For k terms, K_H=k sum c_i^2 C_i gives E_H<=K_H uniformly.
+It pays the exact unit head and proves E_F<=2E_G+2K_H.
+The all-prime source laws give |f(n)|<=(37/2)d_2(n). Local positivity witnesses,
+d_2(n)^2<=d_4(n), and the elementary divisor-tuple sum bound give
+ D(X)<=36963(1+logX)^3.
+IF the proposed recurrence is proved uniformly, dyadic induction plus positive
+block covering then give a full all-integer energy bound O((1+logX)^4).
+For02 the explicit conditional constant is3264235/16; K_H=324.
+For03 it is5435235/16; K_H=1314. Both have independently initialized heads.
+The epsilon conversion works for every epsilon>0 with an explicit constant.
+For C=0 the checker would instead use logpower0 and covering factor5.
+
+This is a conditional proof, with the arithmetic recurrence explicitly OPEN.
+The checker expands every term of the aligned even/odd child-minus-parent
+defect, retaining all moving cutoffs, factors, mixed terms and source units.
+Those exact source-bound expressions are now input lemmas for further search.
+Finite passes are never marked paid. Dependencies reject cycles and any
+promotion of an OPEN premise into a proved full-source result.
+
+The checker also generates an exact countermodel to a weaker proof strategy:
+coefficient-size and helper-norm envelopes alone. It keeps the formal units
+at R=2 but uses f(n)=1 for n>=2 and zero helper prime coefficients, obtaining
+a positive recurrence defect at an explicit large dyadic X. That model does
+NOT satisfy actual zeta/Euler/cross-state identities. It rejects only the
+generic-envelope proof rule, not these actual arithmetic conjectures, nor the
+larger arithmetic identity dictionary. The next useful change is to add those
+exact identities as proof constraints, not to tune C or refine the same grid.
+
+Resources and files
+23.0844s total; reported peak704032KiB, below16GiB limit.
+The cached13-dimensional complete Grams allowed all661248 proposals to be
+scored in2.6345s. Shared evidence+interval audit:186474227 proxy operations;
+proposal scoring:654635520; checker3950; exponent enumeration826.
+616294 interval overlap/source checks;23000 actual primes checked.
+The archive was parsed once and its decoded vectors/profile caches reused.
+No old study was rerun, no old accepted file edited, no digest created.
+
+New code: coupled_scale_bounds.py, coupled_scale_evidence.py,
+check_coupled_scale_bounds.py, run_coupled_scale_bounds.py.
+27 distinct development tests passed across the three modules,28 invocations
+because one producer algebra test was strengthened to a direct signed-vector
+oracle and only that affected test was rerun. Receipts preserve the work.
+The frozen protocol, source bytes, evidence, interval audit, conditional proofs
+and all selected programs are retained under the result directory.
+
+Next work
+Evaluate the detector-selected02/03 lemmas analytically without assuming the
+target bound. Expand the proof language using source-generated global
+Dirichlet/floor-prefix relations, and feed the complete unpaid signed defect
+to a search that uses those relations. Do not call an identity a new bound,
+assume finite passes persist, or discard the original root recovery duties.

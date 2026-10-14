@@ -1,0 +1,95 @@
+{
+  "RH_proved": false,
+  "all_partial_breakpoints": true,
+  "audit_operations": 21398570,
+  "checked_source_horizon": 2047,
+  "cofinal_inverse_stencils": 9,
+  "discovery_scales": [
+    64,
+    128,
+    256
+  ],
+  "elapsed_seconds": 87.57343329599826,
+  "finite_candidate_checks": 93,
+  "independent_source_precision_bits": 192,
+  "main_operations": 882325,
+  "original_energy": {
+    "1024": "[67.193535046182999579724330128555309585137868 +/- 5.83e-43]",
+    "128": "[104.1643905343876391700766625238763522757729922 +/- 8.50e-44]",
+    "256": "[95.937307460838503212378946287842907577367650 +/- 5.52e-43]",
+    "512": "[75.411359281637921376269891089586411464840498 +/- 3.26e-43]",
+    "64": "[118.2367896616548688121384164175335676142793655 +/- 5.89e-44]"
+  },
+  "peak_rss_kib": 685844,
+  "preparation_operations": 1594304,
+  "producer_operations": 289911552,
+  "product_counts": {
+    "1024": 1004347,
+    "128": 17577,
+    "256": 67591,
+    "512": 259767,
+    "64": 4646
+  },
+  "proof_status": "conditional polylog recovery is proved analytically; uniform source bound remains open",
+  "selected": [
+    {
+      "coefficient_l1": 4,
+      "gamma": "0",
+      "inverse_log_degree": 3,
+      "stencil_id": 23,
+      "uniform_signed_bound_proved": false,
+      "worst_discovery_slope": -0.22511065805836591
+    },
+    {
+      "coefficient_l1": 4,
+      "gamma": "1/6",
+      "inverse_log_degree": 3,
+      "stencil_id": 23,
+      "uniform_signed_bound_proved": false,
+      "worst_discovery_slope": -0.22168288596023344
+    },
+    {
+      "coefficient_l1": 4,
+      "gamma": "1/3",
+      "inverse_log_degree": 3,
+      "stencil_id": 23,
+      "uniform_signed_bound_proved": false,
+      "worst_discovery_slope": -0.21816487638196672
+    }
+  ],
+  "status": "CENTERED_PRODUCT_BAND_CANDIDATES_FINITELY_VERIFIED",
+  "stencil_grammar_size": 25,
+  "stronger_auxiliary_than_original": true,
+  "total_operations": 313786751,
+  "validation_pairs": [
+    [
+      12,
+      "0"
+    ],
+    [
+      12,
+      "1/3"
+    ],
+    [
+      12,
+      "1/6"
+    ],
+    [
+      23,
+      "0"
+    ],
+    [
+      23,
+      "1/3"
+    ],
+    [
+      23,
+      "1/6"
+    ]
+  ],
+  "validation_scales": [
+    512,
+    1024
+  ],
+  "whole_signed_bound_proved": false
+}

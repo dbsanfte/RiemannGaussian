@@ -1,0 +1,26 @@
+{
+  "owner": "independent_periodic_normalization_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_periodic_normalization_040"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_periodic_normalization_040 operations=37697 elapsed_seconds=0.241204\n",
+      "stderr": "test_all_dilation_coefficients_are_retained (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_all_real_hyperbola_calibration_including_subunit (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_changed_legal_periods_and_unrestricted_rational_source (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_changed_rational_family_and_global_minimax (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_exact_normalization_and_scalar_bound_required (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_false_closure_ordinary_moment_and_bounded_inverse_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_dictionary_coverage_and_selection (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_shifted_tail_and_subunit_cost_required (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_source_transform_is_a_coefficient_identity (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_missing_hyperbola_branch_vertex_and_wrong_optimum (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_missing_preconditioner_terms_or_mean_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_norm_recovery_beta_triangle_and_growth_costs (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_padded_exponent_proves_strict_margin_without_changing_split (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_periodic_primitive_and_real_prefix_bound (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_source_order_is_not_a_hardcoded_actual_answer (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_source_unit_sign_and_role_swap_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_strict_contraction_boundary_remains_open (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_strict_types_and_production_meter (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_two_copies_destroy_registered_rh_bridge (test_check_periodic_normalization_040.PeriodicProof) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.241s\n\nOK\n",
+      "operations": 37697,
+      "elapsed_seconds": 0.3236826590145938,
+      "tests": 19,
+      "peak_rss_KiB": 29116
+    }
+  ],
+  "operations": 37697,
+  "edits_stopped": true,
+  "source_observations": 0,
+  "old_suites_rerun": false
+}

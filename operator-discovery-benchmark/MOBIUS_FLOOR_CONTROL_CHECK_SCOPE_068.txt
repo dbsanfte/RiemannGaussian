@@ -1,0 +1,82 @@
+INDEPENDENT FULL-FLOOR AUXILIARY AUDIT 068
+
+The checker imports neither the 068 producer nor an optimizer, dense matrix
+package, historical checker, source compiler, or prime-transfer learner.
+It evaluates the original joined truncated W source pointwise at each
+required rational endpoint. Coalesced tail jumps are reconstructed as
+g(T)-g(T+1), including the final jump at the true arithmetic radius.
+Row endpoints are independently reconstructed from actual pointwise kappa
+jumps, so cancellations of row indicator coefficients are removed before
+the grammar. Endpoint1 is retained as source data but creates no floor
+horizon. For each declared rational theta in[0,1], depth=floor(N^theta)
+is replayed exactly. The complete distinct union of floor(A/k)>=2 for
+1<=k<=depth is formed using quotient blocks before any scores are read.
+When it exceeds the declared limit, sorted equally spaced integer ranks
+are selected, including both extremes; limit1 selects the maximum. The
+truncation flag reports the full-set comparison. The complete-quotient
+flag compares realized coverage against all quotients through A//2.
+Identical realized dictionaries share exactly one model in first-use order.
+Every plan, model, row, endpoint, selection, and schema field is checked.
+Unsigned squarefree support is reconstructed by removing multiples of
+every integer square. Ordinary Mobius signs are reconstructed separately
+for the post-selection actual coefficient audit; they are not inputs to
+the auxiliary grammar or to the unsigned upper-bound proof.
+
+For every raw head row let den be the reduced endpoint denominator,
+k_n=den*(g(jn)-g((j+1)n)), and d=den*d_j. All these are integers.
+The coefficient numerators x_X, unit witness eps, and squarefree-coordinate
+witness z_n use the fixed common rational grid G=2^20. The declared box
+is |x_X/G|<=C, C=4*den*max(1,number of admitted horizons). All eps/G
+and z_n/G are in [-1,1]. The complete ordinary identity
+sum_n mu(n)*floor(X/n)=1, together with mu(1)=1, gives the center
+
+ a=d+k_1+sum_X(x_X/G)*(1-X).
+
+The independently replayed upper cost is
+
+ (|a|+sum_(squarefree n>=2)|k_n-sum_X(x_X/G)*floor(X/n)|)/den.
+
+The checker reconstructs the floor-column sum using quotient-block
+interval start/end events and prefix accumulation, not the producer's
+dense dot product. Every squarefree coordinate through the full row
+radius is retained, including zero source coordinates within that radius.
+
+The boxed dual lower witness is independently replayed as
+
+ [ (eps/G)*(d+k_1)+sum_(squarefree n>=2)(z_n/G)*k_n
+   -C*sum_X|(eps/G)*(1-X)
+               -sum_(squarefree n>=2)(z_n/G)*floor(X/n)| ]/den.
+
+Weighted floor sums for the penalty use a distinct quotient-block
+partition and witness prefix sums. This formula bounds the optimum in
+the declared coefficient box even when equality dual constraints are
+inexact. Negative lower bounds are valid and retained. All source,
+center, residual, primal, lower, and gap arithmetic is exact integer or
+rational arithmetic. Solver objective tolerances do not certify a cost.
+Solver status, iteration, and message fields are bounded proposal metadata;
+their accuracy is outside the mathematical certificate. The checker's
+learner-access flag verifies the declared scope, not software isolation.
+
+These certificates establish finite bounds for the same actual raw head.
+Independent admission/source binding to the preceding source experiment
+is an external obligation. No all-scale estimate, full signed target,
+uniform sparse auxiliary rule, RH conclusion, or fresh holdout follows.
+A complete current-scale indicator/quotient span may encode the exact
+target itself; its flag is a scope warning rather than an admission of
+an independent uniform proof.
+The fixed rounding grid is also finite: no all-scale accumulation bound
+for rounding errors is supplied by the checker.
+
+Development uses fresh tiny synthetic sources, scalar floor evaluation,
+trial-factorization signs, direct full-source inversion, and meaningful
+certificate mutations. All new invocations append their complete result
+to mobius_floor_control_checker_068_development.json. No historical suite,
+scientific result, frozen snapshot, hash, or optimizer is rerun by these
+tests.
+
+Finite resource gates include N<=65536, H<=4096, 512 admitted horizons,
+100000 bits for rational-power intermediates, 4096 bits per rational,
+300 billion independently charged work units, a 7200 second deadline,
+four million accounted entries, and 512 MiB prospective checker storage.
+The experiment's larger aggregate process budget is a separate runner
+obligation; the checker does not silently bypass its local gates.

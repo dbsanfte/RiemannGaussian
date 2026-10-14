@@ -1,0 +1,413 @@
+SHIFTED ZETA QUOTIENTS: EXACT ARITHMETIC, SIGNED MOMENTS, AND RECOVERY
+
+Scope and outcome
+-----------------
+This is a proof review of the fixed rational shifts 0<b<1. It contains no
+new arithmetic evaluations, numerical experiments, or response-score review.
+The earlier shift_ratio_proof.txt, compensated_shift_proof.txt and
+prime_twist_proof.txt were read. Finite shifts, pole compensation, and
+same-height rightward zero chains are established mechanisms in this
+workspace; none is claimed here as a newly discovered primitive.
+
+The proposed prime-power law and fixed-x limit are correct. A complete,
+all-scale cofinal signed-square moment bound for the exactly centered G_b
+would imply RH for EVERY fixed b>0, including b<1/2. The shifted quotient's
+pole-regularized holomorphy in Re(s)>1/2 is in fact equivalent to RH. This
+review does not prove the required moment bound. Absolute inverse estimates
+have an explicit critical-scale obstruction, and the b->0 limit is not
+uniform in x. The proposed distinct-shift product grammar also retains every
+ordinary off-line zero after exact pole compensation; its derivative-limit
+sign must be corrected. All moment/global/RH proof flags remain false.
+
+1. Exact coefficients and their actual-prime content
+----------------------------------------------------
+Put k_b(n)=n^(-b), a_b=mu*k_b, and D_b(s)=zeta(s+b)/zeta(s).
+Dirichlet convolution is on positive integers, and all summatory functions
+below have inclusive endpoints. For Re(s)>1,
+  D_b(s)=sum_(n>=1) a_b(n)n^(-s).
+The local Euler factor, with z=p^(-s) and q=p^(-b), is
+  (1-z)/(1-qz)=1-sum_(k>=1)(1-q)q^(k-1)z^k.
+Consequently
+  a_b(1)=1,
+  a_b(p^k)=-(1-p^(-b))p^(-(k-1)b), k>=1,
+  a_b(n)=(-1)^omega(n) product_(p^k||n)
+                         (1-p^(-b))p^(-(k-1)b).
+These identities use the actual prime-power Euler factors. The sign is
+(-1)^omega(n), not mu(n): prime powers and nonsquarefree integers remain.
+In particular |a_b(n)|<=1. For distinct primes p,q,
+  a_b(pq)=(1-p^(-b))(1-q^(-b))>0.
+A prime-power-only approximation discards this and all higher complements.
+
+Two inverses must not be confused:
+  a_b^(-1)=r_b=1*(mu(n)n^(-b)),
+  r_b(p^k)=1-p^(-b)>0 for EVERY k>=1,
+  r_b(n)=product_(p|n)(1-p^(-b))>=0;
+whereas the inverse of the smoothing kernel k_b is mu(n)n^(-b), and
+  mu=a_b*(mu(n)n^(-b)).
+The first inverse recovers the convolution unit, not mu. Its positive mean
+is elementary. For integer N>=1, with R_b(N)=sum_(n<=N)r_b(n),
+  R_b(N)=sum_(d<=N)mu(d)d^(-b)floor(N/d),
+  |R_b(N)-N/zeta(1+b)|
+     <= N^(1-b)/b + 1 + N^(1-b)/(1-b).
+Indeed bound the floor error absolutely and the convergent tail of
+sum mu(d)/d^(1+b) by the corresponding positive integrals. Thus this
+positive inverse has a genuine linear mean; it is not a bounded critical
+scale averaging kernel. The exact identity sum_(m<=x)r_b(m)A_b(x/m)=1
+retains both the constant and every smooth/signed complement of A_b.
+
+2. Fixed-x small-shift limit, including its limitations
+------------------------------------------------------
+For every fixed real x>=1, only finitely many coefficients occur. At a
+prime power p^k,
+  a_b(p^k)/b -> -log p=-Lambda(p^k).
+At an integer with at least two distinct prime factors, a_b(n)/b->0.
+It follows without any limit interchange over an infinite range that
+  (A_b(x)-1)/b -> -psi(x),
+where psi(x)=sum_(n<=x)Lambda(n).
+The Laurent expansion zeta(1-b)=-1/b+gamma+O(b) gives
+  c_b=1/((1-b)zeta(1-b))
+     =-b-(1+gamma)b^2+O(b^3).
+Therefore
+  G_b(x)=(A_b(x)-1-c_b*x^(1-b))/b -> x-psi(x).
+This is valid at integers with the stated inclusive endpoint, between
+integers, and at x=1, where G_b(1)=-c_b/b->1.
+
+The first correction keeps the omitted convolution visible. For fixed x,
+  G_b(x)=x-psi(x)
+    +b*[ (1/2)sum_(n<=x){(Lambda*Lambda)(n)+Lambda(n)log n}
+          +x(1+gamma-log x) ] +O_x(b^2).
+To verify it, write log D_b=b(log zeta)' + b^2(log zeta)''/2+O(b^3)
+in an absolutely convergent Dirichlet half-plane and compare each fixed
+coefficient; alternatively expand each finite local Euler factor.
+
+The error subscript x is essential. The approximation 1-p^(-b)~b log p
+requires b log p small; it fails uniformly as p and x increase with b fixed.
+The fixed-x limit supplies neither a uniform G_b moment nor a transferable
+bound for x-psi(x). Higher-support terms cannot be dropped at an all-scale
+cutoff merely because they vanish in this finite-x derivative limit.
+
+3. Correct main term and the exact compensated Mellin identity
+--------------------------------------------------------------
+Let kappa=1-b. Ordinary zeta is negative and nonzero at every real
+0<s<1, so c_b is finite and negative. D_b has a simple pole at kappa with
+residue 1/zeta(kappa). Its Perron main term is exactly
+  c_b x^kappa, c_b=1/(kappa zeta(kappa)).
+This identifies a pole term, not an unconditional assertion that it
+dominates A_b: poles at unknown ordinary zeros may be farther right.
+The subtraction 1 removes a_b(1), as required by the normalized increment.
+
+Write H_G(s)=integral_1^infinity G_b(x)x^(-s-1)dx. For Re(s)>1,
+  b*s*H_G(s)=D_b(s)-1-c_b*s/(s-kappa).                 (3.1)
+This follows by integrating the inclusive step function; values at its
+jump points do not affect the integral. In particular the complete smooth
+term is c_b*s/(s-kappa), not just the principal fraction with its residue.
+Its residue is c_b*kappa=1/zeta(kappa), exactly matching D_b.
+Define
+  Z_b(s)=D_b(s)-1-c_b*s/(s-kappa).
+It has no pole at kappa. All constants in (3.1) are retained. For positive
+RH output exponents an additional bounded constant would not affect the
+moment threshold, but it would change this exact identity.
+
+If the main coefficient is wrong by delta, the missing term is delta
+x^kappa/b. Its own normalized block square is of order
+(delta/b)^2 X^(2*kappa-1)=(delta/b)^2 X^(1-2b).
+For b<1/2 this is incompatible with cofinal subpower bounds unless it is
+canceled by another complete term. This is why exact pole compensation,
+rather than a fitted constant or an omitted smooth part, matters. For
+b>=1/2 that single scaling test cannot enforce the coefficient; the exact
+arithmetic definition still does.
+
+4. Complete integer moments really give half-plane holomorphy
+-------------------------------------------------------------
+Use the precise sufficient premise
+  for an unbounded/cofinal set of positive q, there are finite C_q such that
+  X^(-2)sum_(n=X)^(2X-1)|G_b(n)|^2 <= C_q X^(1/q)       (4.1)
+for EVERY dyadic integer X>=1. Constants are independent of X. This is the
+whole signed square: neither diagonal energy nor a finite list of gates is
+a substitute. Fixed initial blocks can instead be explicitly absorbed into
+the constants, but cannot simply be missing.
+
+For n<=t<n+1, A_b(t)=A_b(n) exactly, hence
+  |G_b(t)-G_b(n)| <= L_b n^(-b),
+  L_b=|c_b|*(1-b)/b.
+The jump at integer n is a_b(n)/b and has absolute size at most 1/b.
+Thus an interval bound including a jump is at most 1/b+L_b(n-1)^(-b)
+for n>=2. No smoothing has changed the integer endpoint convention.
+For a complete dyadic block,
+  integral_X^(2X)|G_b(t)|^2 dt
+    <=2 C_q X^(2+1/q)+2 L_b^2 X^(1-2b).                (4.2)
+The second term comes from complete unit cells; there is no untested tail.
+
+For sigma>1/2 choose q with 1/q<2*sigma-1. Then
+  ||G_b||_(sigma)^2:=integral_1^infinity
+                              |G_b(t)|^2 t^(-2*sigma-1)dt
+    <= 2 C_q/[1-2^(1-2*sigma+1/q)]
+       +2 L_b^2/[1-2^(-2*sigma-2b)].                   (4.3)
+For Re(s)>sigma, Cauchy--Schwarz gives the explicit bound
+  |H_G(s)| <= ||G_b||_(sigma)/sqrt(2*(Re(s)-sigma)).    (4.4)
+The same domination on compact sets, with logarithmic factors, proves
+holomorphy of H_G throughout Re(s)>1/2. This avoids the incorrect inference
+that an L2 block bound automatically gives a square-root pointwise bound.
+
+5. All zero multiplicities and every positive shift
+----------------------------------------------------
+Assume the holomorphy just proved. Identity (3.1), first true to the right
+of one, continues meromorphically, so D_b has no off-real pole in
+Re(s)>1/2. Suppose an ordinary zero rho in that half-plane has order m>0.
+The real compensator is analytic at rho. If m_+=ord_rho zeta(s+b), then
+  ord_rho D_b=m_+-m.
+Holomorphy requires m_+>=m. Thus rho+b is another ordinary zero, of at
+least the same multiplicity. Repeat. All steps preserve imaginary part
+and move right by the FIXED positive amount b. After finitely many steps
+Re(rho+j*b)>1, contradicting the Euler-product zero-free half-plane.
+No simple-zero hypothesis, global rightmost-zero hypothesis, or assumed
+nonvanishing numerator is used. Coincident shifted zeros are handled by
+the exact orders. Ordinary zeta has no positive-real zero, so none of this
+can be concealed by the real main pole. Functional-equation symmetry then
+puts every nontrivial zero on Re(s)=1/2: this is RH.
+
+Conversely, RH makes the denominator nonzero in Re(s)>1/2; the sole
+numerator pole there, if kappa>1/2, is canceled exactly. Thus Z_b is
+holomorphic there. This analytic equivalence is established. This memo
+has NOT supplied the arithmetic estimate (4.1), nor derived it just from
+analytic holomorphy. Any converse growth claim needs the corresponding
+all-height bounds and inversion estimates, not just absence of poles.
+
+6. Quantitative recovery: what is bounded, and what is not
+----------------------------------------------------------
+The exact floor/divisor smoothing identity and its inverse are
+  A_b(x)=sum_(m<=x)m^(-b)M(x/m),
+  M(x)=sum_(m<=x)mu(m)m^(-b)A_b(x/m)
+      =sum_(m<=x)mu(m)m^(-b)
+       +c_b*x^kappa*sum_(m<=x)mu(m)/m
+       +b*sum_(m<=x)mu(m)m^(-b)G_b(x/m).               (6.1)
+Every term is retained. The first two truncated signed sums are not known
+small merely because the third contains a centered candidate.
+
+For f=0 below one, dilation f(t/m) has weighted-L2 norm m^(-sigma)||f||
+with measure t^(-2*sigma-1)dt (or no larger on a truncated horizon).
+An absolute triangle estimate for the smoothing inverse is bounded by
+  sum_(m>=1)|mu(m)|m^(-b-sigma),
+which is finite exactly when b+sigma>1 and is at most zeta(b+sigma).
+The exact positive-series value for u=b+sigma>1 is zeta(u)/zeta(2u).
+It diverges for u<=1: at u=1 this follows from its pole, and below one
+by comparison. Thus for b<1/2 absolute inversion cannot reach arbitrary
+sigma>1/2. This is a precise limitation of that method, not a refutation
+of the analytic zero-chain bridge. At b=1/2 the cost is finite for every
+sigma>1/2 but grows as sigma decreases to the boundary.
+
+There is also finite rightward analytic recovery. Set F(s)=(s-1)zeta(s),
+with F(1)=1, and
+  E_b(s)=F(s+b)/F(s)=(s-kappa)D_b(s)/(s-1).
+Under the moment premise, the apparent singularities at kappa and one
+are removable. At one the numerator vanishes because D_b(1)=0; equivalently
+(3.1) imposes H_G(1)=-(b+c_b)/b^2. This cancellation must be retained in
+any numerical evaluation of the formula.
+For K chosen so Re(s+K*b)>=R>1,
+  1/zeta(s)=(s-1)*[product_(j=0)^(K-1)E_b(s+j*b)]/F(s+K*b),
+  |1/zeta(s)| <= |s-1|*zeta(R)/|s+K*b-1|
+                         *product_(j=0)^(K-1)|E_b(s+j*b)|.             (6.2)
+Equations (3.1),(4.3),(4.4), plus removable-point evaluation, give finite
+conditional factors. K grows as 1/b. This is a multiplicative finite-chain
+cost; it is not a bounded all-height inverse moment operator or a new
+uniform estimate for M. Analytic zero recovery cannot be silently upgraded
+to such a quantitative norm equivalence.
+
+7. Distinct-shift products: a genuine structural grammar, with correct sign
+---------------------------------------------------------------------------
+Let B={b_1,...,b_k} be distinct fixed shifts in (0,1), k>=1. Define
+  H_b(s)=(D_b(s)-1)/b,
+  P_B(s)=product_i H_(b_i)(s),
+  h_b(1)=0, h_b(n)=a_b(n)/b for n>1,
+  h_B=h_(b_1)*...*h_(b_k), S_B(x)=sum_(n<=x)h_B(n).
+These are finite Dirichlet products, not a change of the single parameter
+b. They remove all coefficients with fewer than k factors >=2, and hence
+h_B(n)=0 for n<2^k and at every prime when k>=2.
+
+SIGN CORRECTION: H_b->+zeta'/zeta, not -zeta'/zeta. Therefore for each
+fixed integer n, as all b_i->0,
+  h_B(n)->(-1)^k Lambda^{*k}(n).
+The prime-power tuples and their convolutions are actual arithmetic, but
+this finite-index derivative limit does not erase the finite-shift dense
+complements. For k=2 and distinct primes p,q,
+  h_B(pq)=[(1-p^(-b_1))(1-q^(-b_2))
+           +(1-q^(-b_1))(1-p^(-b_2))]/(b_1*b_2)>0.
+At p^r the complete coefficient for r>=2 is
+  (1-p^(-b_1))(1-p^(-b_2))/(b_1*b_2)
+    *sum_(l=1)^(r-1)p^(-(l-1)b_1-(r-l-1)b_2).
+Other composite factorizations may have either sign. A positive tuple
+limit is not a proof of positivity of all finite-shift coefficients.
+
+Every potential real pole at kappa_i=1-b_i is simple. Its exact residue is
+  R_i=1/[b_i*zeta(kappa_i)]
+       *product_(j!=i)[(zeta(kappa_i+b_j)/zeta(kappa_i)-1)/b_j].
+The other factors are regular there, since the shifts are distinct and all
+positive real zeta arguments involved are nonzero. R_i may be zero, in
+which case the supposed pole is removable; no nonzero-residue assumption
+is necessary. Define the COMPLETE centered state
+  E_B(x)=S_B(x)-sum_i (R_i/kappa_i)x^kappa_i.
+There is no extra constant coefficient: h_B(1)=0. For Re(s)>1,
+  P_B(s)=s*H_(E_B)(s)+sum_i R_i*s/[kappa_i*(s-kappa_i)].                (7.1)
+This includes the constant parts of every compensating rational term.
+Poles to the left of the target half-plane may be unnecessary for zero
+exclusion, but their declared arithmetic complements are still retained.
+
+The same cofinal whole-square premise as (4.1), with E_B replacing G_b,
+forces H_(E_B) holomorphic in Re(s)>1/2. For n<=t<n+1,
+  |E_B(t)-E_B(n)|<=sum_i |R_i| n^(-b_i)
+                     <=L_B n^(-b_min), L_B=sum_i|R_i|.
+Thus (4.2)--(4.4) apply with L_B,b_min. To include discrete jumps as well,
+put beta=product_i 1/b_i. Then
+  |h_B(n)|<=beta*d_k(n),
+where d_k counts ordered factorizations into k positive integers.
+For every epsilon>0 this has an explicit subpower bound
+  d_k(n)<=C_(k,epsilon)n^epsilon,
+  C_(k,epsilon)=product_(prime p<k^(1/epsilon))(1-p^(-epsilon))^(-k).
+For k=1 take C=1. For larger primes use
+binomial(e+k-1,k-1)<=k^e<=p^(epsilon*e); for smaller primes bound each
+binomial(e+k-1,k-1)p^(-epsilon*e) by its generating series
+(1-p^(-epsilon))^(-k). These are symbolic finite bounds, not new prime
+computations. They provide a deterministic increment estimate including
+both all jumps and all main terms. The stronger within-cell estimate above
+is what is needed for the L2 transfer.
+
+8. Product zero retention, with all multiplicities and possible cancellations
+-----------------------------------------------------------------------------
+At an ordinary zero rho of order m>0, if every zeta(rho+b_i) is nonzero,
+then every H_(b_i) has an order-m pole with leading coefficient
+  zeta(rho+b_i)/(b_i*c_rho),
+where zeta(s)=c_rho(s-rho)^m+... . Their product has an order-km pole with
+nonzero leading coefficient. The real compensators cannot cancel it.
+Therefore holomorphy of the centered product forces at least one ordinary
+zero rho+b_i farther right. Repeating uses steps >=b_min, remains at the
+same height, and reaches Re>1 in finitely many steps: contradiction.
+
+If some right-shifted zeros coincide, their orders, and possible higher
+cancellation in zeta(s+b_i)-zeta(s), can change each factor's local order.
+There is no universal claimed order-km formula in that case. The argument
+only uses its exactly valid contrapositive: NO right-shifted zero implies
+an uncanceled order-km pole. That suffices for all multiplicities. An
+alternative is to select the rightmost zero at this fixed height within
+the compact strip; every right-shifted value is then nonzero. This is not
+the unsupported assumption that a globally rightmost zeta zero exists.
+Consequently a cofinal complete E_B moment is RH-sufficient, and RH is
+also equivalent to holomorphy of the real-pole-compensated P_B in this
+half-plane. No E_B moment has been proved here.
+
+9. Product recovery costs and a polynomial inverse inequality
+-------------------------------------------------------------
+There is no safe operation of dividing by an assumed nonvanishing numerator
+product. Away from the real shifted poles, put z=1/zeta(s), r_i=zeta(s+b_i).
+The exact relation is
+  beta^(-1)*P_B(s)=product_i(r_i*z-1),
+where beta^(-1)=product_i b_i. In particular this is a degree-k equation
+for z, with an Euler-half-plane branch condition; not a globally unique
+unqualified kth root.
+Let M_right=max_i|1/zeta(s+b_i)|. If |z|>=2M_right, every factor satisfies
+|r_i*z-1|>=|r_i*z|/2. Consequently, with Bprod=product_i b_i,
+  |1/zeta(s)|
+    <=2*M_right*[1+(Bprod*|P_B(s)|)^(1/k)].             (9.1)
+The coefficient in this expression is Bprod, NOT beta. This follows by
+applying the exact displayed polynomial; it does not assume any numerator
+has a positive lower bound other than the rightward zeta reciprocals.
+
+For |Im(s)|>=1 there are no real shifted poles; (7.1) and the moment bound
+provide explicit P_B bounds. Recurse (9.1) at all needed right shifts until
+Re>=R>1, where |1/zeta|<=zeta(R). Depth is at most
+ceil((R-Re(s))/b_min), and a direct full tree has at most
+1+k+...+k^depth nodes. Uniform slab bounds can combine maxima, but all
+factors, depth, and constants remain part of the conditional recovery cost.
+This gives a concrete finite-height majorant, not an all-height M moment.
+
+Real-pole cancellation can be expressed without singular r_i by setting
+F(s)=(s-1)zeta(s), L_i=s+b_i-1, and
+  K_B(s)=Bprod*P_B(s)*product_i L_i
+        =product_i[F(s+b_i)/zeta(s)-L_i].
+This is the exact cleared-denominator identity. The elementary analogous
+bound is
+  |1/zeta(s)| <= 2*max_i |L_i/F(s+b_i)|
+                 +2*(|K_B(s)|*product_i |1/F(s+b_i)|)^(1/k).
+Apparent singularities in K_B at the distinct real kappa_i cancel.
+At one ordinary zeta has its known pole and F(1)=1. Recovery near this
+point uses that known removable behavior, not division by a sampled small
+number. None of these finite conditional formulas supplies the missing
+uniform signed arithmetic estimate.
+
+10. A further exact compensation family, beyond changing one shift
+-------------------------------------------------------------------
+A useful generic finite-Euler-difference template is
+  Q_c(s)=product_(j=0)^J zeta(s+j*b)^(c_j),
+with integer exponents c_j, c_0<0, b>0, and all other shifts positive.
+If every real pole part inside the target half-plane is removed, holomorphy
+in Re>1/2 excludes
+ordinary off-line zeros: at a zero with no farther-right zeros its order
+is c_0*m<0. Thus cancellation requires a farther-right zero. This is a
+zero-retention rule for a family, not an estimate or novelty claim.
+
+The second difference c=(-1,2,-1) gives a particularly concrete proposed
+structural hook:
+  Q(s)=zeta(s+b)^2/[zeta(s)zeta(s+2b)].
+Unlike multiplying two adjacent ordinary ratios, it does not telescope
+to a reparameterized D. At each prime its local factor is
+  (1-z)(1-q^2*z)/(1-q*z)^2,
+and its exact prime-power coefficient is
+  v_b(p^k)=-k*(1-p^(-b))^2*p^(-(k-1)b), k>=1.          (10.1)
+All higher composites are the multiplicative products of these local
+coefficients; no prime-support truncation is licensed. In particular
+v_b(pq)=(1-p^(-b))^2(1-q^(-b))^2 for distinct primes p,q.
+For each fixed n,
+  (v_b(n)-1_(n=1))/b^2 -> -Lambda(n)log n.
+This follows either from (10.1) or
+log Q= -b^2(log zeta)''+O(b^3). It is a precise prime-level second-order
+attenuation, with all multi-prime complements, rather than a claim of new
+uniform signed cancellation. As with the product grammar, log-weighted
+prime-power convolution/difference limits are already established objects.
+
+For 0<b<1 the real main pole is the DOUBLE pole at kappa=1-b.
+There is no pole at 1-2b from the denominator's zeta pole: it creates a
+zero unless another factor is singular there. At this real location for
+0<b<1 the other factors are finite, and zeta(1-2b) is nonzero
+(its argument is in (-1,1)); so it is indeed a zero. At kappa define
+  Z=zeta(kappa)zeta(1+b),
+  C2=1/Z,
+  C1=[2*gamma-zeta'(kappa)/zeta(kappa)
+                  -zeta'(1+b)/zeta(1+b)]/Z.
+The complete Perron main term of Q is
+  x^kappa*[C2*log x/kappa + C1/kappa-C2/kappa^2].       (10.2)
+A normalized centered state must retain both terms of (10.2), its n=1
+constant, and the scale b^2. Dropping the logarithmic pole complement
+would invalidate any critical-scale test. Other nonreal poles and their
+multiplicities remain governed by the exact order
+  -m(rho)+2*m(rho+b)-m(rho+2b).
+If all right-shifted multiplicities vanish, this is negative. The same
+finite zero-chain argument therefore applies to this template, but no
+moment bound for its whole signed square is presently established.
+
+This template could expose real cancellation by comparing the complete
+attenuated prime-power sum AND its composite complements with (10.2).
+It does not obtain cancellation merely from smaller prime coefficients.
+The distinct-H product template instead exposes complete prime-power tuple
+correlations. These are explicit structural grammar/proof hooks; neither
+is endorsed through an observed score or asserted to overcome RH.
+
+11. Exact remaining estimate and the analytical obstruction
+-----------------------------------------------------------
+For the base family the required arithmetic theorem is precisely (4.1)
+with the actual a_b, exact c_b, and the whole expression
+  |sum_(n<=x)a_b(n)-1-c_b*x^(1-b)|^2/b^2.
+For the proposed product family it is the same cofinal complete moment
+with E_B=S_B-sum_i(R_i/kappa_i)x^kappa_i, including every Dirichlet-product
+coefficient and every real-pole complement. Both would settle RH, and
+neither has been proved by this review.
+
+The elementary bound |a_b(n)|<=1 only gives G_b(x)=O_b(x), hence a
+normalized block square O_b(X), not cofinal subpower. For products the
+absolute divisor bounds likewise control bookkeeping and increments,
+not RH-quality signed cancellation. Density, attenuation, a finite-x
+prime-power derivative limit, and a finite list of complete moments do
+not imply the all-scale theorem. The absolute-summation bound for the
+smoothing inverse diverges when b+sigma<=1; this alone does not establish
+unboundedness of the signed inverse operator. Positive inverse feedback
+retains signed integral constraints instead of erasing the unknown source
+information. Finite-chain zero retention establishes a valid conditional
+bridge while leaving this uniform signed estimate open.

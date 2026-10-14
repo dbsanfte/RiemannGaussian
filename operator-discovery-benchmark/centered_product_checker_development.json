@@ -1,0 +1,14 @@
+{
+  "operations": 244146,
+  "runs": [
+    {
+      "test": "test_check_centered_product_fibers",
+      "returncode": 0,
+      "operations": 244146,
+      "tests": 8,
+      "runtime_seconds": 0.036,
+      "stdout": "SYNTHETIC_WORK module=test_check_centered_product_fibers operations=244146\n",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.036s\n\nOK\n"
+    }
+  ]
+}

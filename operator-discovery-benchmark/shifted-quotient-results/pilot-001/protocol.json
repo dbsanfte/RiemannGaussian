@@ -1,0 +1,369 @@
+{
+  "RH_proved": false,
+  "adaptation_from_final": false,
+  "aggregate_memory_bytes": 17179869184,
+  "baseline": "(mu-delta_1) Dirichlet convolution power, same degree",
+  "catalogue": [
+    {
+      "degree": 1,
+      "id": 0,
+      "program": {
+        "shifts": [
+          "1/6"
+        ]
+      }
+    },
+    {
+      "degree": 1,
+      "id": 1,
+      "program": {
+        "shifts": [
+          "1/3"
+        ]
+      }
+    },
+    {
+      "degree": 1,
+      "id": 2,
+      "program": {
+        "shifts": [
+          "1/2"
+        ]
+      }
+    },
+    {
+      "degree": 1,
+      "id": 3,
+      "program": {
+        "shifts": [
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 1,
+      "id": 4,
+      "program": {
+        "shifts": [
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 5,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/3"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 6,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/2"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 7,
+      "program": {
+        "shifts": [
+          "1/6",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 8,
+      "program": {
+        "shifts": [
+          "1/6",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 9,
+      "program": {
+        "shifts": [
+          "1/3",
+          "1/2"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 10,
+      "program": {
+        "shifts": [
+          "1/3",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 11,
+      "program": {
+        "shifts": [
+          "1/3",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 12,
+      "program": {
+        "shifts": [
+          "1/2",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 13,
+      "program": {
+        "shifts": [
+          "1/2",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 2,
+      "id": 14,
+      "program": {
+        "shifts": [
+          "2/3",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 15,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/3",
+          "1/2"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 16,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/3",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 17,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/3",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 18,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/2",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 19,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/2",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 20,
+      "program": {
+        "shifts": [
+          "1/6",
+          "2/3",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 21,
+      "program": {
+        "shifts": [
+          "1/3",
+          "1/2",
+          "2/3"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 22,
+      "program": {
+        "shifts": [
+          "1/3",
+          "1/2",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 23,
+      "program": {
+        "shifts": [
+          "1/3",
+          "2/3",
+          "5/6"
+        ]
+      }
+    },
+    {
+      "degree": 3,
+      "id": 24,
+      "program": {
+        "shifts": [
+          "1/2",
+          "2/3",
+          "5/6"
+        ]
+      }
+    }
+  ],
+  "checker_bits": 192,
+  "development": {
+    "shifted_checker_development.json": {
+      "operations": 50068,
+      "runs": [
+        {
+          "error": "test_mainterm_center_and_envelope_tampering: python-flint Arb objects do not support deepcopy/pickling; TypeError: no default __reduce__ due to non-trivial __cinit__",
+          "errors": 1,
+          "operations": 47019,
+          "passed": 8,
+          "returncode": 1,
+          "runtime_seconds": 0.011,
+          "stdout": "SYNTHETIC_WORK module=test_check_shifted_quotient_candidates operations=47019\n",
+          "test": "test_check_shifted_quotient_candidates",
+          "tests": 9
+        },
+        {
+          "change": "copy only state containers and normalizer row dictionaries; replace immutable Arb fields instead of deepcopy",
+          "errors": 0,
+          "operations": 3049,
+          "passed": 1,
+          "returncode": 0,
+          "runtime_seconds": 0.002,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_shifted_quotient_candidates operations=3049\n",
+          "test": "test_check_shifted_quotient_candidates.ShiftedCheckerTests.test_mainterm_center_and_envelope_tampering",
+          "tests": 1
+        }
+      ]
+    },
+    "shifted_producer_development.json": {
+      "operations": 118575,
+      "runs": [
+        {
+          "operations": 118575,
+          "returncode": 0,
+          "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.024s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_shifted_quotient_candidates operations=118575\n"
+        }
+      ]
+    },
+    "shifted_workflow_development.json": {
+      "operations": 1820,
+      "runs": [
+        {
+          "operations": 1820,
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_run_shifted_quotient_discovery operations=1820\n"
+        }
+      ]
+    }
+  },
+  "discovery_horizon": 4095,
+  "final": [
+    49152,
+    65536
+  ],
+  "final_horizon": 131071,
+  "finite_prefix_inverse_claimed": false,
+  "flint": "0.9.0",
+  "hashes": false,
+  "historical_novelty_claimed": false,
+  "lead_gate": "all16 growth tests and all4 E<=0.95 E_same_degree_baseline",
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "process_memory_bytes": 4294967296,
+  "producer_bits": 128,
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "schema": "shifted-quotient-discovery-v1",
+  "seconds": 7200,
+  "selection": [
+    "validation_growth_failures",
+    "worst_full_energy_ratio",
+    "id"
+  ],
+  "source_overlap_with_previous_research": true,
+  "sources": [
+    "mu",
+    "one",
+    "partial_prime_13"
+  ],
+  "tests": [
+    "test_shifted_quotient_candidates",
+    "test_check_shifted_quotient_candidates",
+    "test_run_shifted_quotient_discovery"
+  ],
+  "total_work": 800000000,
+  "train": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "uniform_signed_bound_proved": false,
+  "validation": [
+    768,
+    1024,
+    1536,
+    2048
+  ],
+  "workers": 3
+}

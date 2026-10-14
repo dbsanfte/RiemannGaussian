@@ -1,0 +1,156 @@
+ACTUAL LEAST-PRIME INFORMATION AND A CLASSICAL ALL-SCALE MOMENT CERTIFICATE
+7 October 2026. Universal coefficient and moment proofs; six independent gates.
+Imported prime-distribution theorem. Historical novelty remains unresolved.
+
+1. A SHARP ARITHMETIC SCORE ENVELOPE
+
+The following statements concern the zeta input f(n)=1, not generic
+normalized units. Fix 0<alpha<1 and n>=2. Put p=P^-(n), the actual
+smallest prime factor of n, and g=gcd of its prime exponents.
+The binomial/Jordan expansion in fractional_prime_proof.txt gives
+
+ |B_alpha(n)| <= (1/g)*|R_alpha(n^(1/g))|.                  (1)
+
+Indeed, every binomial coefficient b_j and finite-difference term T_j
+is nonnegative, |J_(j-1)(g)|<=g^(j-1), and T_j is homogeneous of degree j.
+The triangle inequality and rescaling give (1), including prime powers.
+All terms have absolutely convergent expansions, even at the endpoint.
+
+The Bernstein integral for |Lambda_alpha(m)| has an exponential factor
+bounded by one and a product of positive factors 1-q^(-t), each <=1.
+Retaining only the factor belonging to P^-(m) therefore gives
+|Lambda_alpha(m)|<=(log P^-(m))^alpha. For m=n^(1/g), the smallest prime
+is still p. Divide by (log m)^alpha and apply (1):
+
+ |B_alpha(n)| <= g^(alpha-1)*(log p/log n)^alpha
+                <= (log P^-(n)/log n)^alpha.               (2)
+
+This holds for every integer and every alpha in the stated interval.
+It supplies actual prime information at all scales, although computing
+the coefficients still contains arithmetic work. It is a coefficient
+envelope, not a primality-speed claim or a zeta zero-free theorem.
+
+The exponent alpha is optimal for this envelope. At n=2*q with actual
+primes q tending to infinity, set t=log 2/log(2*q). Then
+|B_alpha(2*q)|=t^alpha+(1-t)^alpha-1=t^alpha-alpha*t+O(t^2).
+Its ratio to t^alpha tends to one. Every exponent theta>alpha would
+therefore fail eventually along actual primes. Only their elementary
+unboundedness is used; no new quantitative prime-distribution theorem.
+
+2. NUMERICAL EXPONENT SEARCH AND A FALSE HELD-OUT FIT
+
+The detector scores sixteen roughness exponents on complete prefixes,
+training through 128 and holding out every integer through 4096. Four
+alpha families have the universal certificate (2). Some larger exponents
+survive the entire finite sample but fail the unbounded-prime proof above.
+At alpha=1/2, theta=3/5 already fails at 226, while theta=11/20 survives
+through 4096 and fails at n=2*q with a certified actual prime q near 10^12.
+The large coefficient is evaluated by the universal squarefree formula,
+not by pretending to enumerate a complete prefix at that scale. It is
+a finite point control, not an all-scale numerical experiment.
+
+3. THE IMPORTED PRIME-DISTRIBUTION THEOREM AND ITS DOMAIN
+
+For x>=y>=2 let Phi(x,y) count positive integers <=x with no prime factor
+<=y, including 1. We use the published unconditional statement
+
+ Phi(x,y)<x/log y.                                        (3)
+
+Source: Kai (Steve) Fan and Carl Pomerance, An inequality related to the
+sieve of Eratosthenes, author version dated 9 August 2023, Theorem A,
+page 1. That theorem is attributed there to Fan's earlier work.
+https://math.dartmouth.edu/~carlp/erat060523rev.pdf
+The primary PDF is cached in literature/roughness/fan_pomerance_rough_numbers.pdf.
+Fan's later primary paper also explicitly states its uniform range:
+https://stvfan.github.io/files/papers/Numerically%20explicit%20estimates%20for%20the%20distribution%20of%20rough%20numbers.pdf
+
+We import the theorem as existing mathematics. Its full sieve proof was
+not independently reverified or theorem-prover formalized here. We use
+the constant one, not the sharper constant with small-case exceptions.
+For 1<y<2, (3) also holds by the trivial count Phi(x,y)<=x and log y<1.
+No RH hypothesis is imported.
+
+4. A GENUINE ALL-SCALE GLOBAL MOMENT BOUND
+
+For integer X>=2, integer k>=1 and gamma=2*k*alpha, define
+
+ M_(2k)(X)=sum_(X<=n<=2X)|B_alpha(n)|^(2k).
+
+Let v_n=min(1,log P^-(n)/log X). Since log n>=log X, (2) implies
+|B_alpha(n)|^(2k)<=v_n^gamma. The layer-cake identity for a finite sum is
+
+ sum v_n^gamma = integral_0^1 gamma*t^(gamma-1)*#{v_n>t} dt.
+
+For 0<t<1, v_n>t implies P^-(n)>X^t. The count is therefore bounded by
+Phi(2X,X^t)<2X/(t*log X), using (3) and its trivial extension. If gamma>1,
+the resulting integrable envelope yields
+
+ M_(2k)(X) <= [2*gamma/(gamma-1)]*X/log X, EVERY X>=2.      (4)
+
+In particular, for alpha=1/2 and k=2,
+
+ sum_(X<=n<=2X)|B_(1/2)(n)|^4 <= 4*X/log X.               (5)
+
+This is an all-scale upper bound for the actual arithmetic coefficient
+family, not an extrapolation from a finite fit. It uses existing
+prime-distribution information through (3), so it does not supply a new
+independent prime estimate. For example, prime counts bounded by (5)
+are a consequence of an existing sieve theorem, not a new density result.
+
+5. THE CRITICAL COST AND THE WEAKER REGIME
+
+For X>=3 put L=log X>1 and split the envelope at t0=1/L. Use the trivial
+count <=2X below t0 and (3) above it. This gives
+
+ M_(2k)(X) <= 2X*L^(-gamma)
+               +(2*gamma*X/L)*integral_(1/L)^1 t^(gamma-2)dt.
+
+At gamma=1 this is 2X*(1+log log X)/log X. For 0<gamma<1 it is at most
+2X/[(1-gamma)*(log X)^gamma]. The X=2 case is covered explicitly by
+the trivial bound 2X. The program retains these scale conditions and
+does not substitute the divergent gamma>1 formula at the endpoint.
+
+The loglog cost belongs to this positive-envelope proof. It does NOT
+prove that the actual critical moment cannot satisfy a stronger bound
+through additional arithmetic structure. A finite constant fit cannot
+justify discarding the envelope's logarithmic loss.
+
+6. FOURIER FAMILY, WEIGHTS AND ZERO INFORMATION
+
+For weights 0<=w_n<=1 on a subset of [X,2X], the weighted moment is at
+most the unweighted moment in (4). Define
+A_u=sum sqrt(w_n)*B_alpha(n)^k*exp(2*pi*i*u*n/H).
+With distinct support residues modulo H, complete orthogonality gives
+sum_u|A_u|^2=H*sum w_n|B_alpha(n)|^(2k). The simple sufficient condition
+H>=X+1 covers the complete integer doubling window, including both ends.
+Hence the alpha=1/2, k=2 family satisfies
+
+ sum_(u=0)^(H-1)|A_u|^2 <=4*H*X/log X.                     (6)
+
+Composite moduli are allowed. Repeated residues require a separate
+collision bound; the public scale compiler rejects H<X+1 for the
+complete window. The arbitrary-weight count transfer has a broader
+domain than this bounded-weight energy certificate; they must not be
+silently identified.
+
+These coefficientwise powers and Fourier energies have no certified
+ordinary-zero bridge. The two retained branches for the original B_half
+do not automatically survive taking Hadamard powers. The positive moment
+bound gives no RH error term or exclusion of off-line ordinary zeros.
+
+7. INDEPENDENT AUDIT AND NEXT RESEARCH TARGET
+
+The independent checker verifies 16380 coefficient envelopes from fresh
+factor/subset differences at 512 bits, recomputes 72 complete doubling-
+window moments across four alphas and three orders, and checks twenty
+native truncated layer-cake integrals. It retains the critical cost and
+recomputes the large actual-prime false-exponent control. Separate public
+API checks cover the scale, regime and residue requirements. The complete
+prime-moment checker now passes six gates, including its earlier affine,
+count, native Fourier and scope controls.
+
+The substantive next target is arithmetic structure beyond the known
+rough-number envelope: a useful main term, cancellation transfer or
+stronger uniform bound, together with an independently proved ordinary-
+zero bridge. Historical priority of the compound fractional family and
+specific applications remains unresolved. The verified-new list is empty.

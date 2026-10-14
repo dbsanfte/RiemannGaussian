@@ -1,0 +1,26 @@
+{
+  "RH_proved": false,
+  "algebraic_component_result": "exact factored transfer, cutoff cancellation, and ordered coprime support kernel",
+  "all_horizon_identity_points": 4849650,
+  "analytic_component_result": "Chebyshev bound removes the log loss; critical Lv block energy is bounded",
+  "checked_cases": 54,
+  "checked_scalars": 3510,
+  "elapsed_seconds": 579.2133588040015,
+  "expected_cases": 54,
+  "final_theta": [
+    "3/4",
+    "4/5"
+  ],
+  "new_complete_uniform_bounds": 0,
+  "numerical_constant_fits": 0,
+  "preparation_operations": 3870538,
+  "stage_operations": {
+    "audit_discovery": 75614553,
+    "audit_final": 651144517,
+    "producer_discovery": 72255665,
+    "producer_final": 549385334
+  },
+  "status": "COMPLETE_PRIME_BANK_IDENTITIES_AND_GRAMS_VERIFIED",
+  "total_operations": 1352270607,
+  "uniform_signed_bound_proved": false
+}

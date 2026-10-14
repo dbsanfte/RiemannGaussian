@@ -1,0 +1,210 @@
+EXACT PRIME ANCHOR AND COFACTOR CONTROL REVIEW083
+
+Disposition
+
+The proposed prime anchor is mathematically valid and substantially stronger
+than merely tagging prime-filter weights. It imposes actual known signs on
+ALL current primes and sums their interactions before absolute value. It
+preserves the complete operator and does not use unknown composite Mobius
+signs. It does not itself establish a uniform drift estimate. This review
+identifies an exact new geometry-only anchor-linear cancellation operation,
+and the remaining constant/composite cost which prevents relabeling that
+operation as a paid full bound. Earlier083 notes remain separate records.
+No frozen082 file, old science/test or raw source value is changed/queried.
+
+1. Congruence and Boolean price are exact
+
+LetI contain every squarefree physical coordinate n<=N. Known indicesK are
+unit, if present, and every actual prime<=N. Letb1=+1 andbp=-1. Remaining
+indicesJ are all squarefree composites. Define a substitution matrixP with
+one anchor column whose entries onK areb and0 elsewhere, plus one unit
+coordinate column for each j inJ. For y0=1 and yj=mu(j), actual mu=P y.
+Thus effectiveA=P^T A P has
+
+ effectiveA00=b^T A_KK b,
+ effectiveA0j=sum_(k inK)b_k A_kj,
+ effectiveAij=Aij for i,j inJ.
+
+Every yi^2=1 including anchor, so full drift<=trace(effectiveA)+
+2sum_(i<j)|effectiveAij|. The effective diagonal/anchor term may be negative;
+it is kept signed. Known-known interactions appear EXACTLY ONCE inA00,
+not both constant and ordinary offdiagonal terms. Anchor-composite entries
+combine unit/prime interactions jointly before absolute value. All composites
+and all raw operator entries remain; this is a substitution, not truncation.
+A dummy zero anchor atN0 is harmless if its convention is explicit.
+
+Zero quadratic relations and positive Grams survive congruence exactly.
+A source Gram vv^T becomes(P^Tv)(P^Tv)^T, whose anchor entry is the signed
+known partial-source sum. Its feature normalization must be recomputed from
+the transformed feature, not silently copied from old group/raw dimensions.
+Exact Boolean dual uses |nu|<=2 over EFFECTIVE offdiagonal pairs, withdiag1.
+It is a different relaxation from a raw dual, which must be transformed or
+readmitted before use. A feasible effective dual is not actual arithmetic.
+
+The raw uniform outer-control certificate is unchanged. Applying its proven
+price to that raw block and separately pricing the exact remaining operator
+is legitimate by subadditivity after congruence; actual anchor grouping can
+only further combine known interactions. A selected effective wholeprice is
+not equal to a sum of isolated raw block prices without an explicit partition.
+
+2. Honest information/provenance statement
+
+This search DOES use known Mobius signs mu(1)=1 andmu(p)=-1, as unconditional
+arithmetic facts. Flags should say no UNKNOWN/composite Mobius signs, observed
+fullsource values or savedMertens/U values are used. A literal noMobius-signs
+flag would become false. Primality/squarefreeness comes from independently
+checked complete geometry. Unit is neither prime nor composite and needs its
+own known entry. Prime squares are squareful and absent, not composite Boolean
+variables. All prime/composite cross terms survive before their joint sum.
+
+Exact prime-count or prime-prefix weighted source sums are legitimate known
+geometry. Their use should be separately declared from observed signed full
+source data. Inputs/memory access can be growing inN without importing a
+Mertens estimate. Source/kernel binding and complete prime roster are still
+required; a fixed small-prime list is not this anchor.
+
+3. Exact known divisor functional, with no unknown signs
+
+For integer0<=K<=N define
+
+ a(K)=0 forK0,
+ a(K)=K-1-sum_(p<=K,prime)floor(K/p) forK>=1.
+
+This equals sum_(k inknown)b_k C_K(k), including the unit contribution.
+The prime floor sum can be computed either directly or as
+sum_(l>=1)pi(floor(K/l)); both are exact finite prime geometry.
+ForN>=2 the known functional of a unit-balanced row is
+
+ h_N(K)=a(K)-max(K-1,0)/(N-1)*a(N).
+
+ForN<=1 allD rows vanish. Exact h values may be zero; do not divide without
+a proof/admission. At early horizons with no squarefree composites, the
+entire known functional must be zero, because known mu is already the full
+mu vector. This provides a useful independent integration test.
+
+Suppose a coupled identity has geometry weight supported ONLY on composites.
+Its known-known effective block is zero and its anchor-composite entry atj
+is w(j)*h_N(K(j))/2. This gives an implementable new control: for an existing
+exact geometry-only anchor cross coefficient t_j, choose
+
+ w(j)=-2*t_j/h_N(K(j)) whenever h_N(K(j))!=0.
+
+Then that anchor-linear coefficient is canceled exactly by a valid zero
+identity. t_j includes all known unit/prime source and prior-control sums and
+no unknown mu. A detector can enumerate K schedules, use exact knownfunctionals,
+solve these rational constraints and independently verify the resulting
+coefficient kernel. This is not yet in the bounded one/source/product/band
+weight grammar. It is a possible next LANGUAGE, with ratio denominator,
+coefficient size, zero-function branches and uniform norm obligations exposed.
+
+The operation transfers cost into the composite-composite kernel, where the
+same w(j) multipliesD_K(j)(i). Exact anchor-linear cancellation does not pay
+that transferred kernel. Nor does it remove an existing positive effective
+anchor constantA00, because composite-supported weights haveknown-known0.
+A success criterion must price the complete constant+linear+quadratic target
+jointly, not merely report a smaller anchor cross norm.
+
+4. A clean joint alternative: eliminate a known source component by a zero
+
+For a geometry zero profilev with nonzero known scalar a_v=sum_known b v,
+and source-delay featuref_i with known scalar r_i=sum_known b f_i, define
+
+ g_i=f_i-(r_i/a_v)*v.
+
+Its known scalar is0, and its actual full signed functional still equals
+that off_i because actualsum mu v=0. Thus the actual full source/delay energy
+can be written entirely on composites using g_i, with the exact same drift.
+This cancels the known constant and anchor cross terms together, rather than
+only the linear terms. The resulting quadratic difference is a sum of exact
+zero products with v, so it is independently algebraically checkable.
+
+All coefficients r_i/a_v depend only on admitted known prime/unit geometry.
+They must have uniform denominator/size control and literal branches whena_v0.
+The resulting composite coefficient norm can explode at small indices where
+v≈N/n. Even a small ratio does not pay the complete source norm. This operation
+is a noncircular exact rewrite, not an RH theorem or a guaranteed improvement.
+Using an all-prefix family to reconstruct actual composite signs would again
+need an independently proved growth/norm bound.
+
+5. Why partial cancellation alone cannot close the anchored price
+
+For the original unfolded G, its known prime source sum has nonzero leading
+coefficient: sum_d b_d/d=-1/40. The second source multiplies that coefficient
+by1+(3547/8192)/3, also nonzero. Using the PNT already imported in the earlier
+source reviews, known signed source components grow as positive constant*
+u/logu and their delayed components have leading dilation2^-i. For any fixed
+H>=e0e0^T andr<=2, the known-only drift has positive leading coefficient
+(1-r/4)*(v^THv)*constant^2*u^2/log^2u, v_i=2^-i.
+
+This is a statement about the uncorrected known-only constant, not actual full
+Mobius drift. If a scheme cancels anchor cross terms while leaves that constant
+and onlyO(u) composite diagonal correction, its Boolean price still cannot
+have any uniformq<2 bound. The corrective construction must therefore alter/
+cancel known constant and composite interactions jointly. The already paid
+matched outer motif does exactly such transfer on its outer block; the known
+constant on the other source bands remains a distinct part of the full problem.
+
+A future analytic knownfunctional bound can exploit cancellation in
+h_N(K), but ordinary positive triangle estimates may costN^2/logN across
+N composite columns. An exact small h or a finite ratio does not imply an
+O(u) total cross price. Any quantitative claim must state the schedule domain,
+complete prime/count premises, coefficient size and the composite transferred
+kernel's bound. No such full uniform bound is supplied here.
+
+6. Implementation checks and next meaningful experiment
+
+Check raw/effective quadratic equality on a small independently literal full
+vector with known signs inserted, including prime/composite/unit cross terms.
+Check congruence of EVERY zero template and Gram before optimizing. Record
+rawSFcount, knownunit/primes, remainingSFcomposites, effectivecoordinate order,
+anchorpartialsourcefeatures and full transformeddiagonal. Compare raw and
+anchored Booleanprices on the exact same frozen parameters as an ablation.
+Neither price may be compared after silently changing feature normalization.
+
+Carry the effective complete residual after the uniformouter control as a
+literal target. A next detector experiment can search cofactor K schedules
+whose exact h_N(K(j)) separates/cancels its anchor-linear component, while
+jointly searching the knownconstant/composite quadratic correction. Declare
+ratio-based geometry weights as a new grammar rather than passing per-index
+fittedunknown values into the old descriptor. A proposal must either produce
+an independently paid full target price/recurrence or export its exact unpaid
+transferred matrix. Prime anchoring is real growing arithmetic information;
+it does not itself guarantee closure of the remaining primitive composite
+correlations or the RH objective.
+
+7. Final affine prime-filter diagnostic and source audit
+
+The knownfunctional can be written uniformly as
+h_N(K)=c(K)-sum_(p<=K)floor(K/p)-c(K)/(N-1)
+       *[N-1-sum_(p<=N)floor(N/p)], c(K)=max(K-1,0),
+forN>=2, includingK0 (allterms0). ForN<2 defineh0, because allbalanced
+rows vanish. This is the same exact formula as section3, with explicitK0.
+
+If a coupled weight is supported ONLY on actual primes, then its raw
+composite-composite block is identicallyzero. Afteranchoring the zeroidentity
+is purely affine in the unknowncomposite signs: a knownconstant plus known
+anchorlinear coefficients. Such templates can change/cancel the joint
+knownconstant/linear part WITHOUT changing the unknownquadratic block.
+This is a useful separately exported diagnostic and is stronger than merely
+cancelling one anchorlinear row. Its exact affine identity still holds only
+for actual composite mu; a Boolean relaxation need not obey it unless included.
+The next machine input can identify which prime-supported controls improve
+the effective affineprice while preserving the paidouter certificate and
+printing the unchanged/transferred compositequadratic target. This is not
+a uniform affineprice theorem by itself, and cannot pay an untouched dense
+composite quadratic block.
+
+Read the current mobius_coupled_completion_083.py implementation after anchor
+addition. Native/float congruence and raw-dual lift agree with the mathematical
+substitution: known-known dualcoefficients2b_i b_j, known/compositecoefficients
+b_i nu_anchor,j, and compositepaircoefficients their effective nu. Diagonal
+remains1. The native upper certificate recomputes projection exactly and
+keeps rawunitcost as a separate diagnostic. EffectiveLP source features use
+known signed partial sums plus every composite feature. Exact affine equality
+reconstruction solves pivot variables from rounded free variables and verifies
+all boxes and equalities, rather than blindly clamping the controls.
+No blocking algebraic error was identified in these reviewed paths. Producer
+source flags now explicitly distinguish known prime signs from unknown
+composite signs/observed fullsource values. Independent checker admission,
+whole-program source binding and actual run resource/freshness/provenance
+remain required; this source-only review does not execute or replace them.

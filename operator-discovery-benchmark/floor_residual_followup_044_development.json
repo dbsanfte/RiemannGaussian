@@ -1,0 +1,14 @@
+{
+  "schema": "floor-followup-integration-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.013622406986542046,
+      "operations": 42041
+    }
+  ],
+  "scope": "synthetic ASTs only; no saved candidate application, source arrays or norms"
+}

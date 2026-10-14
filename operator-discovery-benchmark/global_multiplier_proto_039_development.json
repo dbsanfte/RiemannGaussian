@@ -1,0 +1,24 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "operations": 122750,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0363916169735603,
+      "exposure": "synthetic floor functions/rational matrices/source AST only; no arithmetic source values or archive"
+    },
+    {
+      "returncode": 0,
+      "operations": 36,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0005094859516248107,
+      "exposure": "synthetic floor functions/rational matrices/source AST only; no arithmetic source values or archive"
+    }
+  ],
+  "cumulative_operations": 122786
+}

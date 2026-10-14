@@ -1,0 +1,71 @@
+{
+  "RH_proved": false,
+  "fitted_constants": 0,
+  "hashes": false,
+  "imported_theorems": {
+    "formal_proof_assistant_verified": false,
+    "generic_sharpness": {
+      "method": "exact harmonic-null dilation and fixed small-height lower bound",
+      "review": "CORE_WEIGHTED_MOMENT_SHARPNESS_REVIEW_021.txt",
+      "scope": "generic bounded finite weights, not actual Mobius or the complete signed source"
+    },
+    "recovery": {
+      "all_source_cross_terms_and_compensations_retained": true,
+      "method": "analytic-residue Gaussian Perron, global Mellin norm, integer-cell averaging, full-history Hardy/Abel",
+      "ordinary_moment_not_inferred_from_residue": true,
+      "review": "CORE_WEIGHTED_MOMENT_RULE_REVIEW_020.txt"
+    },
+    "transfer": {
+      "below_length_threshold_licensed": false,
+      "method": "positive strip Poisson kernels for pole-removed zeta squared; phase-uniform boundary moments",
+      "polynomial_squared_normalization": "R^(1-2sigma)",
+      "review": "CORE_WEIGHTED_MOMENT_RULE_REVIEW_020.txt"
+    },
+    "twisted_fourth": {
+      "coefficient_class": "abs(alpha_n)<=C_nu*n^nu for every nu>0, uniformly in U and phases",
+      "critical_real_part": "1/2",
+      "height_power": "1+epsilon",
+      "length_premise": "R<=(Y/2)^kappa; fixed 0<kappa<1/4",
+      "original_source": "https://doi.org/10.1006/jnth.1995.1086",
+      "polynomial_power": "2",
+      "source": "https://arxiv.org/html/1609.02539v1",
+      "status": "unconditional_import",
+      "zeta_power": "4"
+    }
+  },
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_moment_bound_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "owner_suites": [
+    {
+      "modules": [
+        "test_core_weighted_height_search"
+      ],
+      "owner": "root"
+    },
+    {
+      "modules": [
+        "test_check_core_weighted_height_search"
+      ],
+      "owner": "checker"
+    }
+  ],
+  "runtime_limit_seconds": 1800,
+  "schema": "core-weighted-height-run-v1",
+  "source_observations": 0,
+  "spec": {
+    "amplitude_max": 6,
+    "dilation_max": 6,
+    "epsilon_fractions": [
+      "1/2",
+      "1/4",
+      "1/8"
+    ],
+    "kappa_denominator_max": 12,
+    "maximum_tau": "128",
+    "sigma_denominator_max": 24
+  },
+  "test_memory_limit_bytes": 2147483648,
+  "whole_signed_bound_proved": false
+}

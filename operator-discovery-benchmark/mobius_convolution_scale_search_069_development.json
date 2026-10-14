@@ -1,0 +1,37 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new support-annihilator and signed prefix polynomial suite",
+      "returncode": 0,
+      "tests": 8,
+      "stdout": "test_complete_polynomial_scalar_box_adversary_is_not_actual_mu (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_complete_signed_prefix_polynomial_matches_direct_actual_arithmetic (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_discovered_law_on_unrelated_convolution_inverses (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_exact_fractional_cutoffs_and_upward_price_weights (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_generic_elimination_and_learned_faces (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_request_reuse_scope_and_input_gates (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_support_gate_is_strict_and_complete_rectangles_are_retained (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\ntest_unit_extraction_and_conditional_majorant (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.143s\n\nOK\n",
+      "operations": 5557305,
+      "elapsed_seconds": 0.14306881302036345,
+      "peak_rss_KiB": 73188
+    },
+    {
+      "command": "new independent069 pipeline and full source/cost binding",
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_independent_pipeline_source_binding_and_all_degree_costs (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.917s\n\nOK\n",
+      "operations": 11246579,
+      "elapsed_seconds": 0.91694003198063,
+      "peak_rss_KiB": 91752
+    },
+    {
+      "command": "new exact H-power scope gate and declared exponent transfer",
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "test_independent_pipeline_source_binding_and_all_degree_costs (test_mobius_convolution_scale_069.ConvolutionScaleTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.953s\n\nOK\n",
+      "operations": 11247519,
+      "elapsed_seconds": 0.9530867119901814,
+      "peak_rss_KiB": 91808
+    }
+  ],
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false,
+  "operations": 28051403,
+  "unique_new_synthetic_tests": 9,
+  "final_status": "PASS"
+}

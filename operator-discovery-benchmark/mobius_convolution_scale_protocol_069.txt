@@ -1,0 +1,133 @@
+FROZEN MIXED-SCALE CONVOLUTION SEARCH069
+
+The full signed-prefix/RH objective remains active and unproved.068 was
+substantive: tight finite row bounds were synthesized and independently
+certified. Repeating those LPs does not establish a cost law.069 searches
+exact support-reducing signed constructions, then exposes their complete
+cost and the arithmetic constraints needed to bound it.
+
+Before science freeze the10 new files in run_mobius_convolution_scale_069.
+FILES. Preserve all development attempts and all350 inherited frozen
+sources. Compare files by bytes, not hashes. Reuse the12 admitted068
+groups and their36 H cuts. These sources are already observed development
+evidence, not a fresh final holdout. No old study or suite is rerun.
+
+Source and universal coefficient discovery
+Keep the joined ordinary-mu raw row c_j=d_j+sum_n mu(n)kappa_j(n), with
+kappa_j(n)=g(jn)-g((j+1)n), g=-1[d>y](W_p-rW_q), R=floor(D/j),
+D=floor(4N/p). Do not substitute core_inverse or independently signed
+channels. Direct atoms and the unit remain explicit.
+
+The supplied arithmetic algebra is Dirichlet convolution, its support
+product rule and mu*One=delta. At each degree k2..8 enumerate ALL
+multilinear monomials indexed by subsets. Solve the exact rational system
+h_empty=1, h_T+h_(T+i)=0 on every face x_i=1. No expected coefficient
+array is supplied. The independent checker verifies every face and the
+unique full rank. Multilinearity proves the universal factorization into
+the product of (1-x_i). Substituting x_i=mu_short(ui)*One and multiplying
+by mu yields an omitted product supported at product_i(ui+1).
+
+When that product is STRICTLY greater than R, its entire contribution on
+the row is zero. This gives an exact signed polynomial in short mu
+values through U=max ui. Every ui<R for R>1; R1 is a licensed unit base,
+not a strict decrease of the reported numerical radius1. Smaller sign
+queries still carry divisor/source geometry at the original scale R.
+
+The pilot uses balanced roots1/k,k2..8, plus mixed complementary splits
+1/257,1/17,1/9,1/5,2/7,3/11,3/7 and their complements:14 requests.
+APIs accept any canonical nondecreasing rational exponent tuple with
+2..8 entries, each in[0,1), sum>=1, subject to64 requests and100000
+intermediate integer-power bits. No denominator whitelist is imposed.
+Exact integer roots construct ui=floor(R^theta_i); the integer product
+gate is checked explicitly. Repeated realized cutoff tuples share a model.
+Degree8 is a computational cap, not a mathematical maximum order.
+
+Complete signed prefix compiler
+Set K1(v)=kappa_j(v), K_m(v)=sum_t K_(m-1)(vt), with all products<=R.
+For each nonempty subset S, its tensor is K_|S|(product ai) on the
+COMPLETE rectangle1<=ai<=ui, zero beyond the source support. Forward
+differences use zero padding at EACH rectangle boundary, not the value
+of the unrestricted kernel just outside the cut. Multidimensional
+summation by parts gives an exact polynomial in M(s)=sum_(n<=s)mu(n).
+Substitute M1=1, retain repeated/shared variables, sort monomial indices
+and combine all signed terms and the direct atom before any pricing.
+Noncoprime pairs are not deleted: mu(a)mu(b) need not equal mu(ab).
+
+The producer reads no mu signs or target values. Its NumPy integer sums
+and differences are preceded by a proved int64 bound using
+sum_(t<=R)d_m(t)<=R*(1+bit_length(R))^(m-1), source amplitude and the
+factor2^k for differences. Reject capacity overflow before the native
+operation. All coalesced coefficients are Python integers. The2m-cell
+and2m-retained-term caps cannot silently truncate any tensor or term.
+
+Independent verification
+The checker imports no producer, NumPy, SciPy, optimizer or old checker.
+It reconstructs the pointwise source. It computes ordered factor counts
+via prime exponents, scalar convolution kernels, and expands products
+of M(a)-M(a-1), rather than using the producer's tensor differences.
+It checks every monomial and price. Its final arithmetic evaluator uses
+actual mu to compare the smaller-prefix polynomial with the complete
+original inverse. Root binding compares every row against saved068
+admissions; no new target is substituted into the original proof branch.
+
+Cost language and adversaries
+The whole signed polynomial remains primary. A separate diagnostic
+price assumes |M(s)|<=C s^sigma at every smaller argument, C>=1.
+It has form A0+sum_d Ad C^d. A0 is the absolute joined constant; Ad is
+the complete weighted absolute monomial coefficient mass. For each
+monomial, round (product indices)^sigma UP on grid2^20 using exact
+integer powers. Do not round factors individually or drop positive error.
+Pilot sigma values are1/2,3/5,2/3,3/4,1; API permits32 distinct rational
+values in[0,1]. Their all-scale prefix premises remain unpaid. The
+checker separately reports whether each C1 premise holds on the actual
+finite smaller domain. A finite verified premise is not induction.
+
+Selection uses the first-sigma C1 conditional price, query radius,
+monomial count, stable index. Retain every request, signed polynomial
+and price, with a Pareto view of radius versus conditional cost. Radius
+is not a cancellation exponent. Constant-only representations can encode
+the target through divisor geometry and are not automatically promoted.
+
+Every model includes the formal scalar-box witness M1=1,Ms=0(s>=2),
+whose polynomial value is its joined constant. This is NOT actual mu.
+It satisfies all scalar prefix envelopes C>=1,sigma>=0, squareful zeros,
+unit and basic coprime multiplicativity. The review proves that for the
+actual N15k,y16k,j1 source, the full degree2 polynomial takes value
+ceil(k/2) whenever both cuts>=2. Thus even an exact coupled scalar-box
+optimizer has a linear lower cost. Higher fixed degrees have a nonzero
+linear times logarithmic leading term once all cuts contain2.
+
+The review extends the countermodel to a fixed finite prime set P,
+conditioning actual signs on P. For cuts beyond prodP and an envelope
+admitting that fake prefix, its degree2 response is
+2k*prod_(p in P)(1-1/p)^2+O_P(1). This excludes those fixed-domain
+relaxations. It does not exclude growing prime sets, growing degree,
+additional actual divisor constraints, true signed values, or RH.
+
+Universal paid component and remaining obligation
+The degree-one terms have price4 sum_i ui per row. At H<=N^h their
+summed exponent is h+(1-h)*max(theta_i), with constants depending on
+the fixed exponent tuple. For equal k cuts and h1/2 it is
+1/2+1/(2k); a cofinal mathematical family k->infinity pays arbitrarily
+small loss for this PART alone. Direct atom mass<=12 remains paid.
+Higher-degree terms and their signed interaction with lower terms are
+unpaid. The already paid067 diagonal/near-lag comparison is retained.
+
+A real induction needs the same controlled family at strictly smaller
+rank, base cases and one invariant constant including C^d terms and all
+precision/support costs. A raw-head bound cannot assume an all-scale
+Mertens bound. The next detector target is an actual-arithmetic coupled
+inequality excluding these explicit scalar countermodels, using growing
+prime information or complete local divisor relations, with its full
+cost proved uniformly. Repeating scalar fits is not that next step.
+
+Resources and failure recording
+Three fresh workers, one native numerical thread each;16GiB aggregate,
+7200s whole module;300bn work units per producer/checker group. Producer
+prospective2GiB and checker512MiB/4m input-plus-scratch capacities remain
+additional explicit gates. Check RSS during the run and conservative
+process high-water sums afterwards; inherited rusage high-water can
+overestimate current process use, so record observed aggregate RSS too.
+All failures survive in development receipts or failure.json. No hidden
+truncated certificate, fresh holdout, uniform full head/core claim or
+RH claim is permitted.

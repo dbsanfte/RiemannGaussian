@@ -1,0 +1,372 @@
+JOINT REMAINDER MOMENT REVIEW 018
+Complete signed short inverse weights, Mellin moments, and a paid E^2 component
+
+Status: a new unconditional component estimate is proved below, using an
+explicitly identified classical unconditional zeta moment theorem. The whole
+candidate10/core/RH bound is NOT proved. This is an analytical proof-rule input,
+not a source experiment, a fitted constant, or a numerical validation result.
+No old file was changed and no arithmetic table, experiment, test, or hash was
+computed for this review.
+
+1. Definitions and the useful finding
+
+All convolutions below are Dirichlet convolutions. Let U>=1 be an integer,
+ A(n)=mu(n) 1_(n<=U), c=sum_(d<=U) mu(d)/d,
+ T=c delta-A, E=delta+One*T.
+Write A(s)=sum_(d<=U)mu(d)d^(-s), T(s)=c-A(s), and
+ E(s)=1+zeta(s)(c-A(s)).
+The exact relation T(1)=0 is retained BEFORE any absolute bound. Thus E(s)
+extends holomorphically across s=1. Its value there need not be zero.
+
+For u=1/3, theta=1-u=2/3, K(n)=n^(-u), put
+ h=A*A*E*E, M=sum_(d>=1)h(d)d^(-theta),
+ P(x)=sum_(n<=x)(K*h)(n), P(x)=0 for 0<x<1,
+ C(x)=P(x)-(M/theta)x^theta.
+The sum defining M is an ORDINARY conditional coefficient sum, not an
+unjustified analytic-continuation convention; its convergence is checked in
+section 3. In particular M=A(theta)^2 E(theta)^2.
+
+There is a fixed finite constant C_* independent of U and X such that
+ for EVERY integer U>=1 and EVERY integer X>=1,
+ X^(-2) sum_(X<=n<2X) |P(n)-(M/theta)n^theta|^2
+       <= C_* U^5 X^(-1/4).                              (1.1)
+The left side is the complete centered prefix, including its unit and ALL
+earlier coefficients. It is not a prefix restarted at X.
+Equivalently its coefficient centering is (M/theta)J_theta with
+J_theta(n)=n^theta-(n-1)^theta, INCLUDING J_theta(1)=1.
+
+Consequently, with ONE N=4X-1 cutoff U=floor(N^(1/24)) for both parent and
+child, this component has energy at X bounded by
+ C_* 4^(5/24) X^(-1/24).                                (1.2)
+At the child 2X, use exactly the same U and apply (1.1) at 2X. There is no
+change of coefficients, no discarded pole compensation, and no current-scale
+cycle. Multiplying by a fixed source coefficient such as beta costs its
+square. This replaces the currently unpaid E^2 COMPONENT by a paid component;
+it does not pay the remaining higher residual powers or their full join.
+
+The mechanism is different from demanding a too-strong pointwise Delta_2:
+the joined factor T(s)^2 cancels the pole at s=1, and a global L2 contour pays
+the complete centered prefix after averaging. The cancellation is exact and
+arithmetic-bound through c=A(1). The mean-value import is unconditional.
+
+2. External theorem provenance and exactly what is imported
+
+The sole substantive external mean-value input used here is
+ I_4(Y)=integral_0^Y |zeta(1/2+it)|^4 dt
+       <= B_4 Y(1+log Y)^4, EVERY Y>=2,                  (2.1)
+for some fixed finite B_4. This is the classical unconditional fourth-moment
+theorem of Ingham; its asymptotic implies this upper bound after enlarging one
+fixed finite-head constant. Original primary publication:
+ A. E. Ingham, Mean-Value Theorems in the Theory of the Riemann Zeta-Function,
+ Proceedings of the London Mathematical Society s2-27 (1928), 273-300,
+ https://doi.org/10.1112/plms/s2-27.1.273
+The publisher exposes bibliographic metadata, not its full proof in this
+session. A directly read primary research source corroborates the precise
+unconditional fourth-moment input and gives a stronger theorem: Bettin, Bui,
+Li and Radziwill, A quadratic divisor problem and moments of the Riemann
+zeta-function, Theorem 1.1 with constant Dirichlet polynomials and zero shifts,
+ https://arxiv.org/html/1609.02539v1
+Its Introduction also states the classical k=2 result explicitly. No twisted
+polynomial theorem, short-polynomial-length premise, RH, Lindelof, or conjecture
+about higher moments is imported here. A detector may archive (2.1) as a
+provider with unspecified but fixed B_4; this memo does NOT supply a numeric
+B_4 or certify a fitted finite recurrence constant.
+
+The functional equation is used in its standard exact form
+ zeta(s)=2(2pi)^(s-1)sin(pi s/2)Gamma(1-s)zeta(1-s),
+with Stirling bounds on fixed vertical strips. Official formula source:
+ https://dlmf.nist.gov/25.4.E2
+Convexity bounds below follow from this equation, the absolutely convergent
+series to the right of 1, and the three-lines principle; no subconvexity theorem
+is required. The Mellin/Perron/Hardy arguments needed here are provided below.
+
+For a fixed a>1/2, (2.1) implies
+ integral_Y^(2Y) |zeta(a+it)|^4 dt
+       <= B_a Y(1+log Y)^4, Y>=2.                       (2.2)
+Here is a way to avoid silently importing an off-line moment theorem. Remove
+the full principal part at 1 from zeta(s)^2:
+ H(s)=zeta(s)^2-(s-1)^(-2)-2 gamma_E (s-1)^(-1).
+H is holomorphic on the strip 1/2<=Re s<=2. For each Y>=2 multiply H by
+exp((s-i*3Y/2)^2/Y^2). The resulting analytic function has integrable vertical
+L2 boundary norms and decays at vertical infinity. On Re s=1/2 its squared
+norm is O(Y(1+log Y)^4): use (2.1), dyadic subdivision of the Gaussian tails,
+and the bounded/subquadratically decaying removed principal terms. On Re s=2
+the squared norm is O(Y). The L2 three-lines theorem gives the same upper
+bound on every fixed intermediate line. The Gaussian has an absolute lower
+bound on Y<=t<=2Y, and restoring the principal terms proves (2.2).
+For completeness, the L2 three-lines theorem follows by applying the ordinary
+three-lines theorem to integrals against compactly supported L2 dual functions,
+or by the strip Poisson formula and Holder; Gaussian decay justifies all
+boundary limits. Thus the constants in (2.2) depend only on a and B_4, not U.
+
+For fixed 0<a<1 and every fixed epsilon>0, elementary convexity gives
+ |zeta(a+it)| <= Z_(a,epsilon) |t|^((1-a)/2+epsilon/2),
+ |t|>=2.                                                (2.3)
+Indeed interpolate the lines -epsilon and 1+epsilon after removing the pole;
+the functional equation bounds the former by O(t^(1/2+epsilon)) and the latter
+is bounded. The interpolated exponent is (1-a+epsilon)/2. Removing/restoring
+the pole changes only fixed constants. All constants also cover 2<=|t|<=a
+fixed finite height. Compact portions of any specified non-pole line are
+bounded by analyticity, not by source numerical evaluation.
+
+3. Full conditional moment and pole audit
+
+The earlier elementary hyperbola rule proves
+ |sum_(n<=t)(E*E)(n)| <=30 U(1+log U) sqrt(t), t>=1.
+Convolving the finite A*A preserves a sqrt(t) bound, with an explicit finite
+multiplier sum |(A*A)(d)|d^(-1/2). Therefore Abel summation proves convergence
+of sum h(d)d^(-theta) since theta=2/3>1/2. The tail is retained and tends to
+zero. For E alone its bounded-prefix rule gives ordinary convergence at every
+positive real theta. Its Dirichlet series equals 1-zeta(s)(A(s)-c) initially
+Re s>1, and Abel continuation identifies the conditional value at theta.
+Finite convolution and the same tail argument then give
+ M=A(theta)^2 E(theta)^2.
+
+The absolutely convergent Dirichlet function of K*h on Re s>1 is
+ F_U(s)=zeta(s+u) A(s)^2 [1-zeta(s)(A(s)-c)]^2.           (3.1)
+There is a simple pole at theta with residue M (possibly residue zero for a
+degenerate cutoff). There is NO pole at 1: A(1)-c=0 removes the zeta pole in
+each E factor. On the strip sigma<=Re s<=2 for any fixed sigma>0, these are
+the only possible poles of F_U; its growth is polynomial in |Im s| for each
+fixed U. There are no reciprocal zeta factors and no zero-free premise.
+
+One must NOT split (3.1) into its zeta-power terms and forget their individual
+principal parts at 1. Those parts cancel only in the full factor. Likewise
+there is no removal of finite d>n in the complete T*T weighted Delta_2 formula.
+Equation (3.1) is the exact Dirichlet function of that complete coefficient
+array, including those compensating terms.
+
+4. Uniform vertical L2 estimate
+
+Choose a fixed sigma with 1/3<sigma<1/2. The finite weights satisfy
+ |A(sigma+it)| <= U^(1-sigma)/(1-sigma),
+ |A(sigma+it)-c| <= [(1-sigma)^(-1)+2]U^(1-sigma),        (4.1)
+using the actual bound |c|<=2. Write d_sigma=(1-sigma)^(-1)+2.
+The inequality |1-z|^4<=8(1+|z|^4) gives
+ |F_U(s)|^2 <=8(1-sigma)^(-4)d_sigma^4 U^(8(1-sigma))
+               |zeta(s+u)|^2(1+|zeta(s)|^4).           (4.2)
+The U exponent has been rounded up on the term without zeta(s)^4, which is
+valid for U>=1. No signed coefficient was discarded before the pole removal.
+
+For t in [Y,2Y], Y>=2, the functional equation and (2.2) give
+ integral_Y^(2Y) |zeta(sigma+it)|^4 dt
+       <= C_sigma Y^(3-4sigma)(1+log Y)^4.             (4.3)
+Use (2.3) with a=sigma+u and divide by |s|^2. The corresponding dyadic bound is
+ integral_Y^(2Y) |F_U(s)/s|^2 dt
+ <= C_(sigma,epsilon) U^(8(1-sigma))
+    [Y^(-sigma-u+epsilon)
+     +Y^(2-u-5sigma+epsilon)(1+log Y)^4].              (4.4)
+Both exponents are negative if epsilon>0 is fixed sufficiently small and
+sigma>(2-u)/5=1/3. Sum every dyadic height, including its negative counterpart;
+the compact |t|<=2 portion satisfies the same U envelope by (4.1) and bounded
+zeta values on the chosen non-pole line. Thus
+ (1/(2pi)) integral_R |F_U(sigma+it)/(sigma+it)|^2 dt
+       <= C_sigma U^(8(1-sigma)),                     (4.5)
+uniformly EVERY U>=1. The constant is fixed once sigma and epsilon are fixed.
+An explicit symbolic constant can retain the finite compact-line bound,
+B_(1-sigma), convexity and Stirling constants, and the convergent series
+ sum_(j>=1)2^(j*(2-u-5sigma+epsilon))(1+j log2)^4.
+Nothing here fits those constants to source data.
+
+At sigma=3/8 take, for example, epsilon=1/48. The second exponent in (4.4)
+is -3/16 and the first is also negative. Then 8(1-sigma)=5, proving the
+U^5 vertical norm. More generally the detector may enumerate rational sigma
+and check the strict convergence inequalities rather than hardcode 3/8.
+
+5. Gaussian contour proof: line L2 alone is not a pole-crossing license
+
+Here are the necessary boundary arguments. Start at Re s=b=2, where the
+Dirichlet series and Perron integral are absolutely controlled. For e>0 use
+the multiplier exp(e s^2) and define
+ P_e(x)=(1/(2pi i))integral_(b) F_U(s)exp(e s^2)x^s ds/s.
+This is Gaussian smoothing in log x of the complete staircase P(x). The
+original coefficients have polynomial/divisor growth for fixed U, so the
+Gaussian convolution converges, and P_e(x)->P(x) at every non-integer x>0.
+
+For fixed e>0 shift the contour to Re s=sigma. The fixed-U polynomial growth
+on the intervening strip, multiplied by exp(-e t^2), sends both horizontal
+edges to zero. The only crossed pole is at theta. The point s=1 is removable;
+s=0 lies strictly to the left and is not crossed. It follows exactly that
+ P_e(x)-(M/theta)exp(e theta^2)x^theta
+   =(1/(2pi i))integral_(sigma)F_U(s)exp(e s^2)x^s ds/s.
+Mellin Plancherel on the right gives its global squared norm with measure
+x^(-2sigma-1)dx. Dominated convergence in (4.5) gives convergence of the
+right-hand functions in that L2 space as e downarrow0. Pointwise convergence
+of the left side off the integer set identifies the limit as the COMPLETE
+C(x) defined in section 1. Therefore
+ integral_0^infinity |C(x)|^2 x^(-2sigma-1) dx
+   =(1/(2pi))integral_R |F_U(sigma+it)/(sigma+it)|^2 dt
+   <= C_sigma U^(8(1-sigma)).                         (5.1)
+
+The artificial extension of the centering to 0<x<1 is explicit: C(x) equals
+-(M/theta)x^theta there. Its norm is finite because sigma<theta. We have not
+altered any original coefficient below 1, and (5.1) includes the cost of this
+entire lower tail. No conditionally convergent contour is shifted without the
+Gaussian regulator. Uniformity in U comes from (4.5), not an assertion that
+the horizontal fixed-U bounds are uniform before their limit.
+
+6. Integer cells, finite head, and full channel history
+
+Let C_n=P(n)-(M/theta)n^theta, C_0=0. For x in [n,n+1), n>=1,
+ C_n=C(x)+(M/theta)(x^theta-n^theta).
+The mean value theorem gives
+ |x^theta-n^theta|<=theta n^(theta-1)
+                         <=2 theta x^(theta-1).
+For 0<sigma<1/2, comparing integer weights with the cell integrals and using
+|a+b|^2<=2|a|^2+2|b|^2 yields the safe global bound
+ sum_(n>=1)|C_n|^2 n^(-2sigma-1)
+   <=8 integral_1^infinity |C(x)|^2 x^(-2sigma-1)dx
+       +32|M|^2/(2+2sigma-2theta).                    (6.1)
+The denominator is positive in the present range. It includes n=1; no finite
+head or unit is discarded. For a generic abovehalf line 1/2<=sigma<theta<1,
+replace the displayed constants 8 and 32 by 16 and 64: the same proof uses
+2^(2sigma+1)<8 instead of <4. This supplies the quantitative integer transfer
+on that branch as well. Moreover
+ |M|<= [(1-theta)^(-2) (1+|zeta(theta)|d_theta)^2]
+                   U^(4(1-theta)),
+so |M|^2 has U exponent 8(1-theta)<=8(1-sigma). Combining (5.1) and (6.1)
+proves a global weighted l2 bound with the same U exponent. Restrict it to
+X<=n<2X and use n^(2sigma+1)<=(2X)^(2sigma+1). This proves (1.1), and the
+general energy exponent 2sigma-1. In particular no endpoint floor error can
+undo the negative energy exponent.
+
+The current channel APIs use complete coefficients and logarithmic prefixes,
+not local restarts. Here is a transfer rule that respects this. For a fixed
+rational polynomial p(t)=sum_j c_j t^j and eta>=0, let
+ V_p(n)=log(2n)^(-eta)sum_(k<=n)(C_k-C_(k-1))
+                                    p(log k/log(2n)).
+Define P_0=sum|c_j| and P_1=sum j|c_j|. Discrete Abel summation gives exactly
+ sum_(k<=n)(C_k-C_(k-1))p(log k/L_n)
+ =C_n p(log n/L_n)
+   -sum_(k<n)C_k[p(log(k+1)/L_n)-p(log k/L_n)].        (6.2)
+This retains k=1 and every earlier prefix k<X. Since all polynomial arguments
+are in [0,1], the bracket is bounded by P_1/(k L_n).
+
+On l2 with weights n^(-2sigma-1), the positive Hardy operator
+ H(C)_n=sum_(k<n)|C_k|/k has norm <=1+1/sigma. To check this directly, after
+isometry to ordinary l2 its matrix is n^(-sigma-1/2)k^(sigma-1/2), k<n.
+Schur's test with h_k=k^(-1/2) has row bound <=1+1/sigma and column bound
+<=1/sigma; the claimed larger constant is safe. Thus (6.2), L_n>=log2>1/2,
+and eta>=0 imply
+ ||V_p||_(sigma,discrete)
+ <=2^ceil(eta) [P_0+2(1+1/sigma)P_1] ||C||_(sigma,discrete). (6.3)
+The coefficient is rational for rational sigma and polynomials. There is NO
+extra log-degree cost. This is a global Hardy rule, not the old pointwise
+derivative rule applied only to the block.
+
+For finitely many channels, sum their squared constants in (6.3). Orthogonal
+cell means decrease their block l2 energy, so the same paid component estimate
+transfers to the existing complete projected means for ANY cell partition.
+One must apply channels to the centered coefficient component including its
+J_theta compensator. The full source decomposition must retain the opposite
+compensator, all other components, and transport -e exactly as before. This
+theorem pays a component; it does not justify dropping any full-source cross.
+
+7. A generic moment-provider/compiler rule and its actual frontier
+
+The algebra applies more generally to F(s)=zeta(s+u)A(s)^p E(s)^m with integer
+p>=0, m>=2 and 0<u<1. For 0<sigma<min(1/2,1-u), absolute short-weight mass
+cost is U^(2(p+m)(1-sigma)) in the squared vertical norm.
+The fourth-moment provider plus functional equation and convexity for the
+EXTRA 2m-4 powers on the line 1-sigma gives
+ integral_Y^(2Y)|zeta(sigma+it)|^(2m)dt
+ <=C Y^(1+m-(m+2)sigma+(m-2)epsilon)(1+log Y)^4.
+Consequently the dyadic Mellin exponent is
+ d_m=m-u-(m+3)sigma+(m-1)epsilon.                      (7.1)
+Admit only if d_m<0; thus sigma>(m-u)/(m+3) with a strict margin. The term
+without zeta(s)^m is also tested separately. Choose epsilon below the margin.
+For sigma>=1/2 but sigma<1-u, apply fourth moment directly at sigma and
+convexity to the extra powers; the corresponding exponent is
+ d_m=(m-2)-u-(m-1)sigma+(m-1)epsilon.                  (7.2)
+This second branch must not be replaced by extrapolating (7.1) above 1/2.
+
+After a valid contour/residue audit, the centered component energy exponent
+with U<=N^alpha and N<=4X is
+ e=2sigma-1+2alpha(p+m)(1-sigma).                     (7.3)
+The detector can search rational sigma, applicable moment-provider branch,
+epsilon margin, finite-factor costs, and e. It must distinguish:
+ (a) pole removal proof, including multiplicities;
+ (b) an imported UNCONDITIONAL even-moment provider;
+ (c) convergence of the original conditional coefficient moment, if requested;
+ (d) complete analytic residue compensation;
+ (e) negative/zero/positive recovered energy exponent;
+ (f) full channel transfer and exact source join.
+These are composable rule premises, not a nominated numerical candidate.
+
+For the actual p=2, alpha=1/24, u=1/3:
+ m=2 requires sigma>1/3 and is paid when sigma<2/5. The interval is nonempty.
+ m=3 requires sigma>4/9 in the belowhalf branch; then (7.3) is already positive
+       (its infimum at 4/9 is 13/108). No paid certificate follows.
+ m>=4 has no belowhalf admitted line. Its abovehalf line, if any, has positive
+       energy exponent. For m>=5 the abovehalf threshold from (7.2) is at
+       least theta=2/3, outside the present pole-crossing domain.
+Thus all generated m=2..23 receive an honest frontier; classical fourth moment
+does NOT pay the entire residual polynomial. Failure of this provider is a
+language failure, not arithmetic disproof.
+
+For m>=3, evaluating E(theta)^m A(theta)^p analytically supplies a residue, but
+does not by itself prove convergence of sum h(d)d^(-theta). The ordinary
+moment is proved above for m=2. A compiler requiring an ordinary moment for
+other powers must provide that separate premise; it may otherwise label the
+output an analytic-residue-centered estimate, not rename it a coefficient
+moment. No extra moment premise is needed to declare those branches unpaid.
+
+Finite B=muv restricted d<=V and its residual S=delta-b_v*B can also be included
+on a line sigma+v>1: |B(s)|<=zeta(sigma+v) and
+|S(s)|<=1+zeta(sigma+v)^2, uniformly V. Their fixed powers then cost constants,
+not V powers. Their complete residues and any pole-removal identities still
+must be checked. This does not rescue the unpaid common E^m modes.
+
+8. Exact rational-frequency and gcd rules: useful but not enough alone
+
+There is a second executable signed grammar which needs no zeta theorem.
+For finite T supported d<=U with sum T(d)/d=0,
+ E(n)=delta(n)+sum_(d|n)T(d),
+ P_E(n)=1-sum_(d<=U)T(d){n/d}.
+The non-unit periodic coefficient has exact Fourier coefficients at every
+reduced nonzero frequency a/b, b<=U, (a,b)=1:
+ C_b=(1/b)sum_(j<=U/b)T(bj)/j.
+This keeps the signed weights together and has zero constant frequency.
+Complete-period averaging gives the coefficient quadratic form
+ mean |E(n)-delta(n)|^2
+       =sum_(d,e<=U)T(d)conj(T(e))*gcd(d,e)/(de).
+For the centered fractional-part prefix profile, the exact discrete covariance
+is (gcd(d,e)^2-1)/(12de); hence its variance is the corresponding signed T
+quadratic form. The full prefix mean is 1-(1/2)sum T(d) and must be retained.
+All identities hold on a complete multiple of lcm(1,...,U); they are obtained
+by enumerating common residue classes analytically, not an actual-source run.
+
+For any finite interval a<=n<a+L the Fourier Gram entries are exactly
+ sum_(n=a)^(a+L-1)exp(2pi i (nu-eta)n), including its phase and diagonal L.
+This is a detector-generable exact finite-window signed quadratic form.
+Replacing it by an asymptotic period average without its boundary error is
+unsound when the period is enormous. Likewise the additive Fourier modes of E
+do NOT propagate as independent modes through Dirichlet convolution: divisors
+introduce cofactor-dependent rational frequencies and joined boundary terms.
+The gcd/Gram rules expose possible auxiliaries, but do not themselves prove
+the K*A^2*E^2 moment bound. The Mellin rule above is the concrete propagation
+which preserves that exact joined multiplicative structure.
+
+9. Detector/search consequences and remaining obligation
+
+An executable proof search can now:
+ compile full finite T weights and prove T_hat(1)=0 exactly;
+ recognize the complete E factor and its removable pole;
+ enumerate a rational contour line and moment allocation;
+ attach provider (2.1), FE/convexity margins, Gaussian contour, and integer-cell
+ correction as proof rules;
+ optimize/test the rational recovered energy exponent (7.3);
+ propagate through the complete polynomial-log channel Hardy rule (6.3);
+ replace only the corresponding centered source component in the exact join.
+At the current cutoff this is a successful JOINT E^2 moment route, not merely
+an open target exponent put on a queue. It uses a human-reviewed generic rule
+and a classical theorem; it is not evidence that a detector independently
+invented or proved the imported fourth moment.
+
+The final joined residual still includes all unpaid E powers, finite-factor
+terms, complete pole compensations, and the transported error. Their signed
+coarse correlation remains the arithmetic input. Separate absolute treatment
+of those terms may fail even though the whole signed object could cancel.
+There is no full-core bound, no cofinal numerical inference, and no RH claim.
+
+This new memo is the only edited file. It is stable after the final audit.

@@ -1,0 +1,73 @@
+QRH MANUSCRIPTS: OPERATOR CONTENT AND DETECTOR COVERAGE
+7 October 2026. Source snapshot adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+The source claims are not a local independent verification of the full proofs.
+
+The release links to manuscripts proving fixed zero-free half-planes,
+weaker than RH's critical-line assertion. The main September-30 manuscript
+has a 7/8 conclusion; the alternate October-5 argument has an 11/12
+conclusion. The supplied Lean scope documentation states a 7/8 region for
+zeta, Dirichlet L-functions and finite-order Hecke L-functions over Q(sqrt(-3)).
+We did not run or certify those formalizations. Challenge statements are
+not substitutes for checking their referenced formal proofs.
+
+In the main proof, completed cubic-theta indices have the form c*n^3.
+Local masks must mark the whole index, since c and n can share primes.
+Section 12 defines a prime operation that subtracts a rescaled probe
+from a prime-marked probe. Composition expands over fixed, distinct prime
+slots. Section 16 combines local factors without division by a raw factor
+that may vanish. The paper describes its contribution through compatible
+comparisons, controlled compensation and uniform moment/scale margins.
+The elementary Gauss, Poisson and Mobius ingredients have cited prior art.
+Detecting the finite algebra is only one part of reproducing that argument.
+
+Primary source:
+https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex
+
+The alternate proof controls mean squares of twisted Mobius sums across
+an arithmetic row family. Sixth-power prime rows agree with the untwisted
+row except for a controlled divisibility error. An all-scale family bound
+then implies cancellation of the original Mobius sum; Mellin inversion
+links that cancellation to zero exclusion. Poisson transformation brings
+sextic Gauss sums; conversion absorbs mu into cubic-theta coefficients,
+and reflection produces quadratic twists. Cube completion is reversed by
+Mobius inversion with explicit row/scale costs. Merely dropping the cube
+terms does not preserve the needed inequality.
+
+Primary source:
+https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex
+https://github.com/openai/math/blob/main/lean/docs/003.md
+Release: https://openai.com/index/sharing-ai-progress-in-mathematics/
+
+OUR DETECTOR'S CHECKED SCOPE
+
+432 scalar conversion programs give a unique surviving Gauss identity
+after norms 7,13 train and 19,31,37,43,61 are held out. Exact cyclotomic
+arithmetic agrees with independent 384-bit native complex balls. All 816
+finite Fourier covariance identities pass with the nonunit masks retained.
+Conjugating the generator and chi(4) is essential in the source convention.
+The same normalized conversion executes through the new scalar AST.
+
+Generic divisor/cube inversion and fixed-slot prime mark/rescale composition
+have written algebraic proofs and changed-table independent controls.
+The local rational replacement control covers the principal-row case
+W=Q^-w, including a vanishing raw factor. Finite coefficient tables are
+integer proxies; they are not full number-field theta probes.
+
+The detector does not implement the full cubic-theta reflection, prove the
+global Hecke-family moment bounds, or independently verify either full QRH
+proof. These finite external calibrations add nothing to the main ordinary
+zeta root-comparison count or historically verified new-operator list.
+
+TO DISCOVER GLOBAL BOUNDS WITHOUT FITTING THIS EXACT PROOF
+
+The new global_moment_grammar.py targets quantified energies, unknown
+mixed-moment transfers, positive functionals, frequency separation and
+scale-cost recurrences. Additive Mobius families, signed recursive pairs
+and lacunary products serve as unrelated calibration families. Operator
+classes, generic coefficient inputs, scale ratios and row moduli are held
+out. A fitted recurrence requires a universal support/operator certificate;
+only then may induction promote it to a global bound. Persistent forcing
+requires a strict contraction margin or a separately retained logarithmic
+loss. QRH-specific exponents and theta primitives are not training labels.
+The next substantive target is a certified transfer for actual arithmetic
+families with a new prime/Mobius estimate and ordinary-zeta zero information.

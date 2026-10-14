@@ -1,0 +1,779 @@
+MIXED-CUTOFF CONVOLUTION AND ALL-SCALE PRICING REVIEW 069
+=======================================================
+
+Scope and disposition
+---------------------
+This is a source-only review. It reads MOBIUS_FLOOR_CONTROL_HANDOFF.txt,
+MOBIUS_SIGNED_LAG_HANDOFF.txt, the complementary-convolution review066,
+and the source constructors mobius_sparse_prefix_066.py,
+mobius_signed_lag_067.py and mobius_floor_control_068.py. It writes only
+this review. The newly landed mobius_convolution_scale_069.py was also
+read as source, without importing or executing it. No scientific result
+array, saved target value, numerical study, LP, hash, old scientific
+runner or old test was evaluated.
+
+The proposed grammar is mathematically valid for ordinary mu. Its exact
+mixed-cutoff identity represents a radius-R row using signed arithmetic
+queries only through U=max_i u_i whenever product_i(u_i+1)>R. It gives
+a genuine radius reduction when U<R and also raises the polynomial
+degree. This information reduction is not an estimate for
+the resulting signed polynomial. It does not prove RH or the raw head.
+
+Two positive pricing backends are supplied below, with exact finite
+certification procedures and all their premises exposed. A new explicit
+actual-source calculation proves that plain absolute double-Abel pricing
+and unsigned weighted Cauchy/Gram pricing have linear cost on an admitted
+joined row, even when a square-root Mertens premise is provisionally
+available. Extracting the unit and paying its center separately also has
+a linear barrier. These conclusions concern these proof prices, not the
+signed row or RH. Coupled signed contractions remain possible and unpaid.
+
+1. The same source, including joins and direct coefficients
+-----------------------------------------------------------
+For the registered p<q and N>=2, let D=floor(4N/p), r in[p/q,1], and
+
+ W_b(d)=floor(4N/(bd))-3floor(2N/(bd))+2floor(N/(bd)),
+ f_y(d)=1[d<=y]*(W_p(d)-r W_q(d)),
+ g(d)=-1[d>y]*(W_p(d)-r W_q(d)).
+
+All these functions are on positive integers, and g vanishes for d>D.
+As in the admitted source, |g|<=2. Coalesce the signed step dictionary
+
+ a_T=g(T)-g(T+1), 1<=T<=D,
+ g(d)=sum_T a_T 1[d<=T].
+
+The symbol a_T here denotes a source step coefficient; the arithmetic
+cutoff functions below are denoted A_i to avoid identifying them.
+Coalesce the signed six-floor coefficients f_Z from both channels, with
+Z=floor(vN/b), (v,c)=(4,1),(2,-3),(1,2). Then f_y is the full six-floor
+combination plus g. Applying the actual ordinary-mu inverse and taking
+the adjacent row difference gives precisely
+
+ c_j=d_j+L_j(mu),  d_j=f_j,
+ L_j(mu)=sum_(n>=1) mu(n) kappa_j(n),
+ kappa_j(n)=g(jn)-g((j+1)n),  |kappa_j(n)|<=4.           (1)
+
+For a full floor atom, the inverse is a step and its row difference is
+the atom at its horizon; this is why d_j=f_j rather than an additional
+unpriced convolution. Uniformly sum_j|d_j|<=12. The source bound can be
+smaller after joining, but 12 is a safe paid value for both endpoints.
+
+For every T add a_T at A=floor(T/j) and -a_T at
+A=floor(T/(j+1)); delete A=0 and coalesce equal A. Denote the resulting
+signed coefficients h_(j,A). Then
+
+ kappa_j(n)=sum_A h_(j,A) 1[n<=A].                      (2)
+
+The integer row radius R_j may be D//j or the smaller maximum A after
+coalescing. An empty row has L_j=0. No absolute value is taken before
+these joins. Rational r is handled with its exact common denominator.
+
+The new grammar acts on (1), not the old core_inverse fill. It must keep
+the same ordinary mu across channels, rows, factors and moments. The
+square-root raw head has H=floor(sqrt N) and
+1<=j<ceil(H/2). Endpoint convexity of its absolute norm is available;
+it does not license endpoint convexity of an indefinite correlation.
+
+2. Exact all-scale mixed-cutoff identity
+---------------------------------------
+Let delta(1)=1, delta(n)=0 for n>1, and One(n)=1 for every n>=1.
+Dirichlet convolution is
+
+ (v*w)(n)=sum_(ab=n) v(a)w(b).
+
+It is associative and commutative. The complete ordinary-mu identity is
+mu*One=delta. One^0 means delta, not the constant sequence One.
+For k>=1 and integer cuts u_i>=0, put
+
+ A_i(n)=mu(n)1[n<=u_i],
+ B_i(n)=mu(n)-A_i(n)=mu(n)1[n>=u_i+1].
+
+Write A_S=*_(i in S) A_i. Expansion gives
+
+ B_1*...*B_k*One^(k-1)
+   =mu+sum_(nonempty S subset {1,...,k})
+           (-1)^|S| A_S*One^(|S|-1).                  (3)
+
+Proof: a subset S in the expanded product has k-|S| copies of mu.
+For S empty, mu^k*One^(k-1)=mu. For |S|>=1, cancel each of the
+k-|S| copies of mu with a copy of One. There remain |S|-1 copies
+of One. This also covers S equal to the full set, with no mu left.
+All operations are finite on each coefficient; no convergence or
+analytic continuation is used.
+
+Every nonzero coefficient of B_1*...*B_k starts at
+P=product_i(u_i+1). Multiplication by One^(k-1), whose arguments are
+positive integers, cannot reduce support. Therefore, if
+
+                    P>R,                              (4)
+
+then for EVERY integer 1<=n<=R,
+
+ mu(n)=sum_(nonempty S)(-1)^(|S|+1)
+                       (A_S*One^(|S|-1))(n).           (5)
+
+The strict inequality in (4) is essential. At P=R the product of first
+long arguments is in the queried interval; it need not have zero mu.
+For example, k=2,u_1=u_2=1,R=4 leaves the coefficient B_1*B_2(4)=1.
+One may replace (4) by a separately proved stronger support gate using
+actual first nonzero long arguments. Such a replacement must identify
+and pay its additional arithmetic queries. The integer support gate
+(4) requires no signs and works even when some first arguments are
+squareful. It is sufficient, not necessary for accidental vanishing.
+
+No mu(0) is introduced. If a cut is zero, its A_i is zero, so the
+corresponding terms vanish, and (3)-(5) remain true. For k=1, (4) says
+u_1>=R, and the rule is simply the original short sequence; it gives no
+support reduction. Empty row radii require no cutoff identity.
+
+The coefficients in (3) are not arbitrary guesses: generic algebraic
+coefficient synthesis can discover these signs, but the independent
+certificate must prove the coefficient identity before the support
+gate is used. Rational linear combinations of valid identities remain
+valid with all residual supports and coefficients included. A least
+squares relation at a finite collection of mu values is not this proof.
+
+3. What the reduced-radius polynomial actually is
+-------------------------------------------------
+Let kappa have support in [1,R] and define d_r=One^r. In particular
+d_0=delta, d_1=One; for r>=1, d_r(m) counts ordered factorizations of m
+into r positive integers. For a nonempty S of size s, let
+
+ K_s(t)=sum_(m<=R/t) d_(s-1)(m) kappa(tm).
+
+For s=1 this is kappa(t), because d_0 has only its unit value. Then (5)
+gives the exact functional identity
+
+ L(mu)=sum_(nonempty S)(-1)^(s+1)
+       sum_(a_i<=u_i, i in S) [product_(i in S)mu(a_i)]
+                              K_s(product_(i in S)a_i). (6)
+
+Only mu values at indices <=U=max_i u_i are queried. The source kernels
+are evaluated at products through R. These geometry queries are not
+additional mu queries. If all cuts equal u, (6) can be grouped by size,
+with coefficients (-1)^(s+1) binomial(k,s); their absolute coefficient
+mass is 2^k-1. Grouping does not remove degree or cancellation obligations.
+
+Repeated factors are allowed and necessary. In particular,
+mu(a)mu(b) equals mu(ab) only when gcd(a,b)=1. A shared prime can give
+mu(a)mu(b)!=0 while mu(ab)=0. Deleting noncoprime pairs or imposing
+squarefreeness of the product changes (6). Squareful individual factors
+have mu(a)=0 and may be deleted; equal indices satisfy
+mu(a)^2=1[a squarefree]. More generally, repeated appearances of an
+index reduce by mu(a)^(2h)=1[a squarefree] and
+mu(a)^(2h+1)=mu(a). These are exact reductions of the polynomial, not
+independent sign replacements. All surviving signs are shared.
+
+The ordinary-mu unit mu(1)=1 must be retained. Its extraction creates
+lower-degree terms and deterministic constants. Those constants need
+not be small; pricing them separately can destroy the main cancellation.
+Sections 5 and 9 give the exact bookkeeping and an actual-source barrier.
+
+For k=2, set u=u_1,v=u_2 and K=K_2. Then
+
+ L(mu)=sum_(a<=u)mu(a)kappa(a)+sum_(b<=v)mu(b)kappa(b)
+                      -sum_(a<=u,b<=v)mu(a)mu(b)K(ab). (7)
+
+For the joined row (2),
+
+             K_j(t)=sum_A h_(j,A) floor(A/t).           (8)
+
+Equation (8) includes all floor endpoints, both source channels and the
+j,j+1 difference before any pricing. It is also equal to
+sum_m[g(jtm)-g((j+1)tm)]. A bilinear backend should bind its kernel to
+both representations, rather than optimize the channels independently.
+
+4. Rational splits, arithmetic radius and work
+----------------------------------------------
+Any nonnegative rational exponents and positive rational scale factors
+may propose cuts u_i=floor(lambda_i R^theta_i). The proof gate is still
+the exact integer product (4), not a rounded sum of exponents.
+For theta=p/q and lambda=a/b in reduced form, the integer threshold
+u<=lambda R^theta is decided by
+
+                    b^q u^q<=a^q R^p.
+
+Thus integer roots suffice; floats are unnecessary. Integer bit budgets,
+cut counts, polynomial degree, coefficient height and work caps are
+implementation restrictions, not mathematical restrictions on rational
+denominators. A fixed whitelist cannot represent a cofinal exponent
+family unless the selected family is separately shown sufficient.
+
+As a sufficient design rule, if sum_i theta_i>=1 and
+product_i lambda_i>=1, then product_i(floor(lambda_i R^theta_i)+1)>R
+for every R>=1. At equality of the exponent sum, factors below one can
+fail eventually; the exact gate is authoritative. For k=2, the pair
+floor(R^theta),floor(R^(1-theta)) always passes the gate, for any
+rational theta in[0,1]. Its query exponent is max(theta,1-theta), whose
+minimum is 1/2. A tiny split theta does not make BOTH queries tiny.
+
+For fixed k, any cuts passing (4) satisfy (U+1)^k>R. The minimum possible
+integer U is floor(R^(1/k)), attained by equal cuts. This is a real
+query-radius improvement. Ordinary mu through that smaller radius can
+be computed exactly by a sieve or reconstructed from prime factors.
+For k=2 the familiar short-factor information is enough to reconstruct
+the entire finite table through R; this does not supply a cancellation
+estimate for its sums. Full prime or multiplicative information is
+arithmetic determination, not a growth bound.
+
+A conservative streamed evaluation of a size-s term in (6) enumerates
+s short factors and s-1 unrestricted One factors, hence at most
+
+       R*(1+log R)^(2s-2)
+
+ordered positive tuples. To see this, the number of r-factor tuples of
+product <=R is at most R*(sum_(n<=R)1/n)^(r-1), by summing the final
+factor as a floor. The restrictions on short factors only reduce this
+count. One may therefore charge O(2^k R(1+log R)^(2k-2)) arithmetic
+operations per row, times declared exact coefficient/bit costs and source
+evaluation costs. This is deliberately a safe bound, not an optimized
+all-scale algorithm. Streamed space is O(U+k) plus source storage.
+
+For k=2, if E is the number of coalesced endpoints, (8) computes each
+kernel value in O(E) exact floor/rational operations. There are at most
+min(uv,R*(1+log R)) active pairs. A direct grid costs O(Euv) and can
+stream with O(v) row storage. Balanced cuts have uv<=R, so this is not
+an intrinsic quadratic-in-R job. Coalescing equal products or quotient
+events can improve cost, but must be checked independently. For many
+rows, charge the sum of their actual radii and endpoint counts; do not
+equate the maximum short query radius with total work or output size.
+
+If mu values are used only by a final evaluator, the synthesizer can
+construct (3)-(8) from source geometry alone. Prefix premises below are
+symbolic inputs and must be marked conditional until certified. Computing
+the smaller signed prefixes to evaluate a finite polynomial does not
+certify their all-scale Mertens premise.
+
+5. Unit, diagonal and deterministic center for the bilinear rule
+----------------------------------------------------------------
+For u,v>=1, split the bilinear term B in (7) as
+
+ B=K(1)+sum_(2<=a<=u)mu(a)K(a)+sum_(2<=b<=v)mu(b)K(b)
+       +D+O,
+ D=sum_(2<=a<=min(u,v))1[a squarefree] K(a^2),
+ O=sum_(2<=a<=u,2<=b<=v,a!=b)mu(a)mu(b)K(ab).
+
+Consequently the complete raw coefficient is
+
+ c=d+2kappa(1)-K(1)-D
+     +sum_(2<=a<=u)mu(a)[kappa(a)-K(a)]
+     +sum_(2<=b<=v)mu(b)[kappa(b)-K(b)]-O.              (9)
+
+The unit corner is counted once in B, not twice; each linear sum has its
+own copy of kappa(1). The diagonal limit is min(u,v), not max(u,v).
+No coprimality simplification has been assumed. If u=v the two linear
+sums combine with coefficient 2, and off-diagonal pairs may be paired
+as 2 times a<b. If cuts differ, a pair present on only one side is not
+silently doubled. If either cut is zero, use (7) directly with its empty
+sum; formula (9) presumes both contain the unit.
+
+All deterministic values in (9) can be computed without mu signs, using
+an unsigned squarefree mask. Exact computation does not establish a small
+asymptotic bound for d+2kappa(1)-K(1)-D. It is generally unsafe to pay
+that center and the signed pieces by a separate triangle inequality.
+
+The same warning applies when replacing the diagonal with a cheaper
+upper bound. In a signed expansion D is not a nonnegative energy: K(a^2)
+can have either sign. By contrast the diagonal D_I in the067 correlation
+identity is genuinely nonnegative; it is a different object.
+
+6. Exact prefix summation by parts as a conditional positive backend
+--------------------------------------------------------------------
+For a finite sequence w on 1..u, extend w(u+1)=0. Then
+
+ sum_(a<=u)mu(a)w(a)=sum_(s<=u)M(s)[w(s)-w(s+1)],       (10)
+ M(s)=sum_(a<=s)mu(a), M(0)=0.
+
+For the bilinear term define F(a,b)=K(ab) inside
+1<=a<=u,1<=b<=v, and F=0 whenever a=u+1 or b=v+1. K itself is zero
+after its true support. The rectangle padding is additional and essential:
+K((u+1)b) may be nonzero and is nevertheless outside the short sum.
+Set
+
+ Delta F(s,t)=F(s,t)-F(s+1,t)-F(s,t+1)+F(s+1,t+1).
+
+Applying (10) twice proves exactly
+
+           B=sum_(s<=u,t<=v)M(s)M(t) Delta F(s,t).      (11)
+
+This is valid at unequal cuts and with all four boundary cases. Products
+larger than R have zero source kernel, not an omitted free sign. Endpoint
+floor conventions are floor(A/t), consistent with the inclusive source
+indicator. In particular one must use the zero-padded F, rather than
+differentiate the unrestricted K(ab) at the top/right boundary.
+
+Suppose independently certified nonnegative numbers p_s bound |M(s)|,
+for all s<=U=max(u,v). Then
+
+ |B|<=V(p;F):=sum_(s<=u,t<=v)p_s p_t |Delta F(s,t)|.    (12)
+
+A transparent RH-strength-shaped premise is
+
+ |M(s)|<=C s^sigma, 1<=s<=U, sigma=1/2+eta, eta>0.     (13)
+
+Under this premise (12) becomes C^2 V_sigma(F), where
+V_sigma(F)=sum s^sigma t^sigma|Delta F(s,t)|. The two short linear
+terms in (7) have prices C times their weighted first differences.
+Thus a safe price for c is |d|+C V_sigma(w_u)+C V_sigma(w_v)
++C^2 V_sigma(F), with w_u,w_v the zero-padded short kappa sequences.
+This proves a finite implication. Neither C nor (13) is supplied by
+ordinary-mu multiplicativity or by the support gate.
+
+One may use p_s=min(s,C s^sigma), because |M(s)|<=s is unconditional.
+One may also insert independently certified exact small prefix bounds.
+Using mu(1)=1 gives the exact first prefix. If the unit has been removed,
+the prefix of mu on 2..s is M(s)-1; it is NOT M(s). A safe price is
+min(s-1,C s^sigma+1). Off-diagonal removal replaces F with its
+diagonal-deleted kernel and changes all mixed differences; it cannot
+reuse (12) for the unchanged F while dropping the diagonal contribution.
+
+For degree s in (6), repeated Abel summation gives a product of s
+prefixes multiplying the s-fold mixed difference of the zero-padded
+kernel. The premise (13) then produces C^s times its positive weighted
+variation. This is an exact generalization, but its coefficients and
+constants can grow with s and the mixed-cutoff geometry.
+
+Exact finite implementation need not evaluate irrational powers. For
+sigma=p/q>0 and an integer grid G, choose rational upper weights
+
+ w_s=ceil_root_q(s^p G^q)/G,  w_s>=s^sigma,
+ 0<=w_s-s^sigma<1/G.
+
+An integer q-th-root comparison certifies this. The price using w_s w_t
+is rational when C and source coefficients are rational. Relative to
+the ideal price, its rounding excess is at most
+
+ C^2 sum_(s,t)[(s^sigma+t^sigma)/G+1/G^2]
+                                           |Delta F(s,t)|. (14)
+
+This excess must be paid in an all-scale statement. A fixed numerical
+grid supplies exact finite bounds, but does not automatically preserve
+an unproved ideal asymptotic exponent. Use integer/bit/work caps before
+building the grid; (11)-(14) give a valid zero-optimizer backend.
+Float LPs are neither required nor an oracle for its premises.
+
+7. Weighted Cauchy and Gram alternatives
+----------------------------------------
+Let F_(a,b)=K(ab) on the short rectangle; delete squareful individual
+indices if desired. Choose positive rational weights alpha_a,beta_b,
+and define known unsigned masses
+
+ A_alpha=sum_(a<=u)alpha_a 1[a squarefree],
+ B_beta=sum_(b<=v)beta_b 1[b squarefree],
+ H=sum_(a<=u,b<=v)|F_(a,b)|^2/(alpha_a beta_b).
+
+Weighted Cauchy proves
+
+                   |B|<=sqrt(A_alpha B_beta H).        (15)
+
+This requires no Mertens premise. An exact rational square-root upper
+enclosure turns it into a finite positive price. Cauchy uses the same
+ordinary mu in the actual expression; relaxing it for the inequality
+does not imply the source identity for arbitrary independent signs.
+
+A sharper sufficient Gram certificate is
+
+ F diag(beta)^(-1) F^T <= lambda diag(alpha), lambda>=0 (16)
+
+in positive-semidefinite order. It yields
+|B|<=sqrt(lambda A_alpha B_beta). With rational data, an exact PSD
+certificate or checked rational LDL decomposition with the necessary
+zero-pivot consistency proves (16); floating eigenvalues do not.
+The matrix-size, sparsity and bit costs must be charged. It is often
+possible to stream the Frobenius sum (15), whereas a dense Gram costs
+O(u^2 v) arithmetic operations and O(u^2) storage before exact checking.
+
+When cuts overlap, an alternative is to pad to U, symmetrize the joined
+quadratic kernel and keep one common vector x_a=mu(a). A diagonal
+weight domination of both signs of that symmetric form yields a price
+based on sum w_a mu(a)^2. A tighter certificate may retain the linear
+terms and the known unit in an augmented quadratic form. Such a coupled
+certificate is legitimate only with its exact PSD and boundary proof.
+The unsigned diagonal mass is a paid quantity; a signed energy such as
+sum_a |sum_b mu(b)F_(a,b)|^2/alpha_a is an additional arithmetic leaf
+unless independently bounded. It must not be called paid merely because
+it is nonnegative or evaluated exactly.
+
+8. Universal paid pieces and the limit of the triangle price
+-------------------------------------------------------------
+The source offers the elementary radius and amplitude bounds
+
+ |sum_(a<=u_i)mu(a)kappa_j(a)|<=4 min(u_i,R_j).
+
+For equal cuts floor(R_j^(1/k)), the degree-one contribution to the
+square-root head is at most a constant depending on k times
+
+ D^(1/k) H^(1-1/k)=O_k(N^(1/2+1/(2k)))  (k>1).         (17)
+
+Indeed sum_(j<=H)j^(-1/k)<=1+H^(1-1/k)/(1-1/k).
+This is a genuine unconditional partial payment. A cofinal family
+k->infinity makes its loss arbitrarily small for any prescribed epsilon,
+with k fixed after epsilon is chosen. For k=2 its cost is N^(3/4), so
+balanced bilinear support reduction alone does not pay the full head.
+All degree>=2 terms, units created by their expansion, and their signed
+cross cancellation still require control. Constants 2^k and C^k are
+allowed to depend on epsilon for fixed k, but cannot be silently uniform
+in k or R when the search chooses growing degree.
+
+Let M1=sum_T|a_T|T, for which the admitted source has the uniform
+M1=O(N log(2N)) bound. For t>=1, the source windows imply
+
+ sum_(j in head)|K_j(t)|
+ <=sum_T|a_T| sum_j[floor(T/(jt))-floor(T/((j+1)t))]
+ <=M1/t.                                               (18)
+
+The positive differences telescope; extending the head only increases
+the majorant. Therefore an absolute bilinear factor price gives at most
+M1*(sum_(a<=u)1/a)*(sum_(b<=v)1/b), or N times logarithms rather than
+square root. Using actual unequal row cuts only reduces this upper bound.
+It does not turn it into the desired exponent. For higher degree,
+|K_s(t)|<=4*#ordered(s-1)-factor tuples of product<=R/t; positive
+factor-count prices are again of order R with logarithmic factors.
+
+The already paid067 energy diagonal and fixed near-lag envelopes remain
+valid for the same source after (6). For a dyadic row block I=[L,2L-1]
+clipped to the head, they give
+
+ D_I<=4M1/L, |R_I(h)|<=4M1/L,
+ E_I<= (4+8B)M1/L+(2 sum_(h>B)R_I(h))_+.
+
+At B=0 the paid diagonal head transfer is
+O(sqrt N log(2N)^(3/2)). The far positive part is the explicit unpaid
+leaf. Nothing in the new convolution identity changes that moment or
+removes the leaf. It is useful to retain this genuinely paid component
+as a comparator to any new positive price.
+
+9. An actual joined-source barrier for the plain new backends
+------------------------------------------------------------
+Use the admitted family p=3,q=5,r=1,N=15k,y=16k,D=20k, with integer
+k>=1, at row j=1. Directly from the joined bounded W source,
+
+ kappa(n)=1[8k<n<=10k]-1[16k<n<=20k], d_1=0.           (19)
+
+For example g itself equals -1 on (16k,20k] and zero elsewhere: on
+(16k,20k], W_3=1 and W_5=0; outside the tail g is zero. Its adjacent
+row difference gives (19), with inclusive right endpoints. Thus
+
+ K(t)=floor(10k/t)-floor(8k/t)-floor(20k/t)+floor(16k/t),
+ K(1)=-2k, K(2)=-k, K(4)=-ceil(k/2), kappa(1)=0.       (20)
+
+These are floor calculations from the source, not evaluations of mu.
+
+(a) Plain double Abel. If u,v>=2, the (1,1) mixed coefficient of the
+zero-padded rectangle is its interior coefficient
+
+ Delta F(1,1)=K(1)-2K(2)+K(4)=-ceil(k/2).
+
+Therefore V_sigma(F)>=ceil(k/2) for EVERY sigma. Under premise (13),
+C>=1 because M(1)=1, and the bound C^2 V_sigma(F) is linear in k.
+Even substituting the exact prefix bound p_1=1 leaves this linear
+contribution in (12). A square-root Mertens premise does not repair
+the plain termwise-absolute double-Abel price. The problem is a large
+signed geometric coefficient whose cancellation with other prefix
+terms is discarded. Adding the two separate linear prices cannot lower
+the bound. Any implementation claiming this plain backend has an
+all-scale square-root cost on all required joined rows is false.
+
+(b) Unsigned weighted Cauchy/Gram. In (15), squarefree unit mass gives
+A_alpha>=alpha_1 and B_beta>=beta_1, while
+H>=K(1)^2/(alpha_1 beta_1). Thus the price is >=|K(1)|=2k for EVERY
+positive choice of weights. In (16), its first diagonal entry gives
+lambda alpha_1>=K(1)^2/beta_1, so its resulting price is also >=2k.
+Likewise an absolute operator domination of the symmetric form includes
+its unit diagonal. These barriers apply to the stated unsigned prices;
+they do not rule out a coupled augmented certificate using actual
+arithmetic constraints and signed interactions.
+
+(c) Paying an extracted center separately. Formula (9) has center
+2k before extracting D. Let A=floor(10k/t)-floor(8k/t)>=0. Since
+floor(2x)=2floor(x)+e with e in{0,1},
+
+ K(t)=-A-e_(10k/t)+e_(8k/t)<=1.
+
+Writing m=min(u,v), the extracted diagonal obeys D<=m-1, hence
+
+           center=2k-D>=2k-m+1.                        (21)
+
+For balanced cuts or any m=o(k), this positive center alone is linear.
+When the right side is positive its absolute value is at least that
+quantity. If m is large the displayed lower bound may be uninformative;
+no stronger claim is made. Extracting no diagonal gives the exact center
+2k regardless of cuts. Thus the customary separated-center triangle
+price loses precisely the cancellation needed in this source family.
+
+For balanced u=v=floor(sqrt(20k)), (4) holds and u,v>=2. For k>=1
+these cuts are less than 8k, so BOTH short linear sums in (7) vanish.
+The actual signed row is exactly minus the short bilinear polynomial.
+Its raw sum is not bounded below by any of the prices above. A large
+positive price is a limitation of the proof relaxation, not evidence
+that the actual row has linear growth. The polynomial is therefore a
+real support-reduced arithmetic object, but these plain backends do not
+control it at RH strength.
+
+Exact contraction of a growing low-prefix region, a subtraction that
+keeps its resulting center coupled, or an arithmetic signed-energy
+certificate could escape the displayed coefficient barriers. Such a
+modification must state its new domain, work, precision, remaining price
+and uniform bound. It cannot inherit an all-scale rate from (12) or (15).
+
+9A. Stronger barrier after collecting the COMPLETE prefix polynomial
+--------------------------------------------------------------------
+The conclusion is not confined to pricing the subset terms separately.
+Consider compiling all of (6) into the prefix variables M(s), collecting
+equal sorted-index monomials, joining the direct atom and every subset
+term, and substituting M(1)=1 before any pricing. This is a valid exact
+compiler. Its full polynomial still has a scalar-envelope obstruction.
+
+Choose the common fake prefixes
+
+              m(1)=1, m(s)=0 for every s>=2,
+              chi(1)=1, chi(2)=-1, chi(n)=0 for n>=3.
+
+Here chi(s)=m(s)-m(s-1). They satisfy |m(s)|<=C s^sigma for every
+C>=1,sigma>=0. They also satisfy the unit, |chi|<=1, squareful zeros,
+and ordinary coprime multiplicativity. In fact
+chi=delta_1-delta_2 is the multiplicative function supported on the
+divisors of 2. It has chi(2)=-1, but chi(p)=0 for odd primes, and it
+fails chi*One=delta at every odd integer >1. These fake assignments
+are not ordinary mu; they are feasible for a relaxation retaining only
+the listed scalar/prefix constraints. Shared prefix variables and
+collection of all monomials do not exclude them.
+
+For degree 2 and BOTH cuts >=2, the short cutoff sequences on this
+assignment are identically chi. At the joined source (19),
+L(chi)=kappa(1)-kappa(2)=0. Therefore the COMPLETE polynomial evaluates
+to
+
+ 2L(chi)-L(chi*chi*One)
+       =-[K(1)-2K(2)+K(4)]=ceil(k/2).                  (24)
+
+Consequently ANY certified absolute range upper bound for the complete
+polynomial based only on the scalar envelope must be at least ceil(k/2).
+This includes an exact optimizer with all cancellations retained; it is
+not a defect of triangle pricing, tensor ordering or coefficient rounding.
+For sigma=1/2+eta, eta<1/2, (24) rules out a uniform O(k^sigma) price
+for this relaxation. The source's actual ordinary-mu value is still
+unconstrained by this lower bound on a relaxation's price.
+
+There is also an exact higher-degree expression. Let d denote the
+convolution degree, while k continues to denote the source scale in
+N=15k. Suppose ALL d cuts are >=2. All their fake A_i equal chi, even
+when the cutoffs are unequal. Define
+
+ D_r(x)=sum_(n<=x)d_r(n), with D_0(x)=1[x>=1].
+
+Since
+chi^s=sum_(ell=0)^s(-1)^ell binomial(s,ell) delta_(2^ell),
+the complete fake response is exactly
+
+ P_d(k)=sum_(s=1)^d(-1)^(s+1)binomial(d,s)
+         sum_(ell=0)^s(-1)^ell binomial(s,ell)
+          [D_(s-1)(10k/2^ell)-D_(s-1)(8k/2^ell)
+           -D_(s-1)(20k/2^ell)+D_(s-1)(16k/2^ell)].    (25)
+
+This formula involves only divisor counts and source endpoints, and
+requires no scientific mu evaluation. It holds regardless of which
+zero-padded prefix tensors were used to compile the same exact polynomial.
+For d=2 it is precisely (24).
+
+For each FIXED d>=3,
+
+ P_d(k)=(-1)^d*2^(1-d)/(d-2)! * k*(log k)^(d-2)
+                      +O_d(k*(log(2k))^(d-3)).          (26)
+
+Here and below logarithms are natural. A short elementary proof is
+available without an analytic number-theory premise. For r>=2,
+
+ D_r(x)=x*(log x)^(r-1)/(r-1)!
+                         +O_r(x*(log(2x))^(r-2)),
+
+whereas D_1(x)=floor x. The r=2 formula follows from
+sum_(n<=x)floor(x/n)=x sum_(n<=x)1/n+O(x). For the induction step,
+sum D_(r-1)(x/n) and compare the leading harmonic-log sum with
+the integral of (log(x/t))^(r-2)/t; the accumulated error is
+O_r(x(log(2x))^(r-2)). For a fixed s>=2, inserting this into the bracket
+in (25) gives leading factor -2k/(s-2)! times
+
+ sum_(ell=0)^s (-1)^ell binomial(s,ell)/2^ell=2^(-s)
+
+and power (log k)^(s-2). Only s=d contributes to the highest logarithmic
+power. Multiplying its coefficient (-1)^(d+1) proves (26). For s=2,
+floor errors are O_s(1), which also gives the exact degree-2 refinement.
+Thus every fixed degree 2..8, and indeed every fixed d>=2, has a
+linear-or-larger response on this feasible fake assignment once all cuts
+contain 2. In balanced support reduction that condition holds at all
+sufficiently large scales. The signs alternate with d, but an absolute
+range upper bound must pay either sign.
+
+Because this assignment sets every variable other than M(1) to zero,
+the deterministic constant of the FULLY collected polynomial after
+M(1)=1 substitution is exactly P_d(k). Its signed cancellation occurs
+at the actual higher prefixes, not within the collected constant. Hence
+a price |C0|+sum_(s>=1)A_s(sigma)C^s is explicitly limited by (24)-(26),
+even though the compiler correctly collected all subset cancellations.
+Keeping the constant syntactically joint does not overcome the scalar
+range obstruction. Additional feasible-set information is necessary.
+
+Anchors and arithmetic constraints change the scope. For example an
+exact anchor M(3)=-1 excludes this particular fake prefix. One should
+not infer that one more anchor proves an all-scale law. For a fixed
+finite prime set P, the truncated-prime function
+
+             chi_P=*_(p in P)(delta_1-delta_p)
+
+is again multiplicative, has unit 1 and squareful zeros, and obeys the
+ordinary prime values at every p in P. Taking P to contain all primes
+<=B makes it agree with ordinary mu through B. It has finite support,
+so its prefixes obey |m_P(s)|<=C_P s^sigma with a finite constant C_P
+independent of k. Once all cuts include its fixed support, the same
+argument as (26) gives, for fixed d>=3,
+
+ P_(d,P)(k)=(-1)^d*2/(d-2)!
+           *[product_(p in P)(1-1/p)]^d
+           *k*(log k)^(d-2)+O_(d,P)(k*(log(2k))^(d-3)).
+
+For d=2 it gives a nonzero linear leading term with O_P(1) error.
+More explicitly, write Q_P=product_(p in P)p and
+alpha_P=product_(p in P)(1-1/p). Once both cuts are >=Q_P and
+8k>=Q_P, the degree-2 fake response obeys
+
+             |P_(2,P)(k)-2k alpha_P^2|<=4*4^|P|.       (27)
+
+Indeed L(chi_P)=0, K(t)=-2k/t+e_t with |e_t|<=4, and
+sum_n chi_P(n)/n=alpha_P. There are 2^|P| nonzero coefficients,
+all of absolute value one, so the bilinear error is bounded by the
+stated finite pair count. The constant C=2^|P| is always sufficient
+for its prefix envelope when sigma>=0. This constant is fixed after
+P is chosen and independent of k; it is not uniform in growing P.
+The Euler product here is finite and strictly positive. This extended
+adversary is feasible only when the proposed scalar-envelope constant
+C also covers its finite prefix constant C_P; no claim is made for a
+smaller prescribed C. It proves that fixed finitely many prime anchors
+plus multiplicativity, as a general class of relaxations, still need
+an additional cost argument. Growing anchors or the full complete-floor
+arithmetic identities can exclude these functions. They then carry new
+work/support dependencies and may eventually encode the target; their
+mere correctness does not establish a uniform growth bound.
+
+The genuinely stronger alternatives are coupled ordinary-mu identities,
+a signed contraction using them, or a bound on an arithmetic energy that
+excludes these fake prefixes with a provable cost. Any general multiplier
+or annihilator polynomial grammar should record which extra constraints
+are used, prove their finite identities and support, and charge the
+resulting center/remainder. Identity synthesis and all-scale positive
+price synthesis remain distinct mathematical steps.
+
+10. What would make support reduction a closed induction
+---------------------------------------------------------
+Support reduction gives smaller argument indices; it is not a norm
+contraction. A valid induction must specify all of the following.
+
+* A family of propositions with its exact uniform parameters, including
+  every required source prefix, both endpoint ratios, cutoff geometries
+  and any auxiliary weighted kernels. If the price uses M(t), the
+  smaller-scale Mertens proposition is a separate lemma family unless
+  it is already proved as part of a simultaneous induction.
+* A well-founded rank. For an R-induction every unresolved arithmetic
+  query and invoked lemma must have rank <R; U<R is useful, but an
+  encoded source center, a horizon-R Mertens query, or an unbounded
+  weighted energy at current scale breaks the purported reduction.
+* A finite base interval and independently certified constants.
+* A uniform price inequality that preserves a chosen invariant, including
+  units, diagonals, direct atoms, polynomial coefficients, support,
+  rounding, coefficient height and all source/scale dependences.
+
+For example suppose the desired normalized target at scale R, under
+smaller-rank bounds with constant C, has certified price
+
+             |T_R|/R^alpha<=A_R+sum_(s=1)^k B_(s,R)C^s,
+             A_R>=0, B_(s,R)>=0.                       (22)
+
+If sup_R A_R<=A and sup_R B_(s,R)<=B_s, a sufficient invariant is
+
+                  C>=A+sum_s B_s C^s,                 (23)
+
+with that SAME C covering every base case and parameter instance.
+Then strong induction is valid if all dependencies are smaller-rank
+instances of the stated family. Formula (23) is a concrete missing
+lemma condition, not something implied by the exact identity.
+
+For a linear price with B_1<1, one may choose
+C>=A/(1-B_1), also covering the bases. If B_2>0 is present, taking C
+larger can make matters worse. With only degrees one and two,
+
+ B_2 C^2-(1-B_1)C+A<=0.
+
+It requires 1-B_1>0 and a nonnegative discriminant
+(1-B_1)^2-4B_2 A, and the admissible interval between the roots must
+contain a base-case constant. Higher-degree prices likewise require
+an invariant interval or a separate contraction argument. Merely
+observing B_2 or a finite ratio below one at a few R does not establish
+this uniform inequality. Coefficients in repeated-cut identities can
+include binomial(k,s); prefixes contribute C^s, not a single C.
+
+If the target is the raw head norm while the induction premises concern
+M, an Mertens induction and the head-transfer estimate must both close.
+Small-radius ordinary-mu information alone provides neither. Conversely,
+an induction on source head norms must show that its derived kernels
+K_s are members of the controlled smaller-scale source family or prove
+an additional norm transfer. They are generally new weighted kernels,
+not automatically the same N,y source at a smaller N.
+
+The actual-source barriers in section 9 show that (22) with
+alpha=1/2+epsilon and these plain prices has an unbounded normalized
+coefficient or center for epsilon<1/2. It cannot supply (23) uniformly.
+This identifies a specific obstacle to a closed induction, rather than
+assuming RH to bound the very leaf the construction creates.
+
+11. Recommended mathematical boundary for the next implementation
+------------------------------------------------------------------
+The mixed-cutoff grammar is a sound extension of the finite identity
+language. Admit it as an exact ordinary-mu rule with support certificate,
+coefficient replay, rational split support, source joins, query radius,
+degree and complexity metadata. Its finite evaluations are source-bound
+arithmetic, not independent uniform upper laws.
+
+The supplied Abel and Gram formulas are valid finite conditional or
+unconditional prices, respectively. Preserve their explicit barrier
+family in the analytical scope; do not promote their finite successful
+prices into a claimed RH-strength all-scale mechanism. In particular,
+an extracted unit center must remain coupled if its signed cancellation
+is used. A future signed completion must prove the coupling rather than
+label a target-valued constant paid.
+
+A substantive new discovery object would be a source-bound coupled
+pricing or contraction rule, with a uniform coefficient law and a
+well-founded lemma graph meeting (22)-(23), or a directly proved signed
+energy/head bound. The useful paid pieces are the direct six-floor mass,
+the067 diagonal/near envelope and, for growing fixed degree, the small
+linear terms in (17). The higher-degree joined polynomial remains the
+arithmetic object requiring a new theorem. The full raw head, far
+correlations, filled-core transfer and RH remain OPEN.
+
+Source-only implementation correspondence: the new069 producer builds
+K_1=kappa and K_m(v)=sum_(t<=R/v)K_(m-1)(vt). Induction shows that
+these are exactly the kernels K_m in (6). Its tensor on the full short
+rectangle, successive zero-padded forward differences, collection of
+sorted prefix indices and substitution M(1)=1 implement (10)-(11) in
+all degrees. Coalescing subset terms before or after this linear
+transformation is legitimate. Its conditional coefficients use an upper
+weight for (product of prefix indices)^sigma, which bounds the ideal
+product weight directly with additive error <1/G per coefficient.
+Consequently its rational price error is bounded by
+sum_(nonconstant monomials J)|coefficient_J| C^|J|/G,
+with the source denominator included consistently. This is tighter than
+rounding individual factors, but still needs payment for a uniform law.
+The stored fake-box value is precisely the fully collected constant
+described after (26), with an explicit non-ordinary-mu scope.
+
+The finite producer allows degrees2..8 and bounded rational requests;
+its strict exponent gate has sum theta>=1 and theta<1, and it checks
+the integer support product. These choices are finite grammar/capacity
+restrictions. R=1 is a known-unit base case, so it needs no unknown
+arithmetic query; it is not strict reduction of a declared radius equal
+to one. No numerical output from this implementation was reviewed here.
+
+All identities and barriers above were derived from the admitted source
+and exact finite algebra. No scientific numerical evaluations or LPs
+were run for this review. No historical artifact was modified and no
+hash was created.

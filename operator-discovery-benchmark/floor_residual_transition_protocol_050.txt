@@ -1,0 +1,47 @@
+050: EXACT STRUCTURAL ADVERSARIES FOR THE FIXED048/049 ARGUMENT
+
+Keep prime_argument_022728, its profile, positive potential and every constant
+unchanged. This is an adversarial test of a fixed all-integer recurrence,
+not a fitted replacement or an all-scale proof from passing observations.
+
+Generate integer preimages of power-of-two level boundaries and the adjacent
+rounding-precision boundaries in N,pN,2N+r,p(2N+r), both r0,1. Compute ceilings
+by exact rational powered comparisons. Include neighbor offsets -1,0,1.
+Use the common domain N>=32 with both children and their prime source indices
+<=5000. Rank upward ceiling events first, then larger boundary, child source
+roles before parent roles, then event kind and distance to the crossing.
+Select at most six pairs before any source arrays or norms are evaluated.
+Stop at the first rigorously verified recurrence counterexample. Every
+untested pair remains untested. This policy does not estimate a pass rate.
+
+Independently replay every actual source value, including mu0 indices, and
+reconstruct ordinary mu, h=e_(pN)+D_p e_N, the division-free matched conversion
+A, and v=h-dA. Do not replace separately rounded atoms by a rounded polynomial.
+Keep the unit, all prime valuations, scalar counterterms and indicators.
+
+Audit the complete fixed-vector norms of h and v, preserving signed columns
+before squaring and retaining all cells beyond source support. The existing
+Jordan/large-sieve proof formulas are reused in isolated044 instances with
+index5000, support4096, input4096bits, working16384bits. Only bounded decimal
+conversion/parsing calls are adapted; the native global protection remains.
+Source checker independently uses exact powered root inequalities. Producer
+norm precision192 and independentchecker256 remain unchanged.
+
+First horizon262144. Only an unresolved recurrence interval permits horizon
+1048576 for that pair. A proven pass or failure never triggers repetition.
+Norms with equal exact semantic tuples and equal H are reused. Old successful
+studies and test suites are not rerun. Two workers, prospective aggregate
+16GiB memory cap, explicit per-vector work/time budgets; failures are recorded.
+There are no precautionary hashes.
+
+Also admit a generic constant-predictor algebra guard. Whole work for B has
+canonical parent Gram R=B^TQB. If R<=rhoQ it equals the original increment
+plus nonnegative parent slack. Changing B alone does not weaken that missing
+estimate. Further discovery requires independently proved bounds for the
+actual innovations, signed correlations or pairings. The guard pays no
+arithmetic bound and does not exclude predictors with useful new lemmas.
+
+Record separately: recurrence refutation, potential-target refutation, and
+whole-h-target refutation. None entails RH refutation. Preserve the paid
+finite base as evidence for its unchanged source; do not infer a repaired
+uniform argument. Pass exact remaining obligations to the next search.

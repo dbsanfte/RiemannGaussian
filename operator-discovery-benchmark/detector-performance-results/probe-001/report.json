@@ -1,0 +1,225 @@
+{
+  "cache": [
+    {
+      "all_lhs_revalidated": true,
+      "cache_hit": false,
+      "elapsed_seconds": 3.129731498003821,
+      "entries": 1,
+      "exact_columns": true,
+      "global_bound_proved": false,
+      "structural_key": "6dd0bd759d9973f0b9faab329eda4b4f8d6274ce469b3c232cf32a1157c6b0ad"
+    },
+    {
+      "all_lhs_revalidated": true,
+      "cache_hit": true,
+      "elapsed_seconds": 0.05724913199082948,
+      "entries": 1,
+      "exact_columns": true,
+      "global_bound_proved": false,
+      "structural_key": "6dd0bd759d9973f0b9faab329eda4b4f8d6274ce469b3c232cf32a1157c6b0ad"
+    },
+    {
+      "all_lhs_revalidated": true,
+      "cache_hit": true,
+      "elapsed_seconds": 0.06168351801170502,
+      "entries": 1,
+      "exact_columns": true,
+      "global_bound_proved": false,
+      "structural_key": "6dd0bd759d9973f0b9faab329eda4b4f8d6274ce469b3c232cf32a1157c6b0ad"
+    }
+  ],
+  "cache_exact_equality_verified": true,
+  "global_bound_proved": false,
+  "no_detector_scores": true,
+  "parallel": [
+    {
+      "cost": {
+        "available": 4,
+        "cpu_budget": {
+          "available_cpus": 8,
+          "quota_rounding": "floor with minimum one",
+          "sources": {
+            "affinity": 8,
+            "os_cpu_count": 8
+          }
+        },
+        "elapsed_seconds": 7.2659382359997835,
+        "errors": 0,
+        "max_in_flight": 1,
+        "missing": 0,
+        "numerical_thread_control": "spawn-inherited environment; threadpoolctl additionally if installed",
+        "numerical_threads_per_worker": 1,
+        "requested_workers": 1,
+        "serial_fallback": false,
+        "start_method": "spawn",
+        "workers": 1
+      },
+      "results": [
+        {
+          "index": 0,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.7934386510023614,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 1,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.7946470989991212,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 2,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.7991964380053105,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 3,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.7828806350007653,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        }
+      ]
+    },
+    {
+      "cost": {
+        "available": 4,
+        "cpu_budget": {
+          "available_cpus": 8,
+          "quota_rounding": "floor with minimum one",
+          "sources": {
+            "affinity": 8,
+            "os_cpu_count": 8
+          }
+        },
+        "elapsed_seconds": 1.8922727139870403,
+        "errors": 0,
+        "max_in_flight": 4,
+        "missing": 0,
+        "numerical_thread_control": "spawn-inherited environment; threadpoolctl additionally if installed",
+        "numerical_threads_per_worker": 1,
+        "requested_workers": 4,
+        "serial_fallback": false,
+        "start_method": "spawn",
+        "workers": 4
+      },
+      "results": [
+        {
+          "index": 0,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.7944807260064408,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 1,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.777332079000189,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 2,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.8166000640048878,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        },
+        {
+          "index": 3,
+          "status": "available",
+          "value": {
+            "construction_cost": 269906,
+            "construction_seconds": 1.8042514879925875,
+            "groups": [
+              282,
+              319
+            ],
+            "instance_sha256": "57ad45c2cc13e5ce90ec55b082839333781ca879c91ef3762885117d9f8b586f",
+            "scale": 3
+          }
+        }
+      ]
+    }
+  ],
+  "spec": {
+    "jobs": [
+      {
+        "scale": 3
+      },
+      {
+        "scale": 3
+      },
+      {
+        "scale": 3
+      },
+      {
+        "scale": 3
+      }
+    ],
+    "kind": "development performance only; no detector score or actual signed responses",
+    "source_sha256": {
+      "detector_parallel.py": "7781207c4cd21ad983acec77cffd6d320cc9dccb2f3a5505a8eb85e9b87fdaca",
+      "detector_performance_probe.py": "459e4c488ee510be0d2707cc59dc82fb8095d77e393b9c91eba23422ccc89e54",
+      "exact_polynomial_column_cache.py": "8d568486c2050359d3801ab0c3f2cc9059920d20b6734257370bf5e0716b5a50"
+    },
+    "workers": [
+      1,
+      4
+    ]
+  },
+  "structural_coefficients": 54635
+}

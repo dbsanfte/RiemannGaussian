@@ -1,0 +1,38 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_convolution_argument_search"
+      ],
+      "returncode": 0,
+      "stdout": "operations=242355\n",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.140s\n\nOK\n",
+      "operations": 242355,
+      "elapsed_seconds": 0.20533816100214608
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_convolution_argument_search.ConvolutionArgumentTests.test_geometry_grid_is_generated_from_rationals_not_nominated_examples"
+      ],
+      "returncode": 0,
+      "stdout": "operations=14070\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.004s\n\nOK\n",
+      "operations": 14070,
+      "elapsed_seconds": 0.08653053600573912,
+      "reason": "Static audit excludes beta=1 whole-source head restatements; affected cutoff grammar and maximal admissible cutoff only"
+    }
+  ],
+  "operations": 256425,
+  "actual_arithmetic_observations": 0,
+  "numeric_cache_reads": 0,
+  "edits_stopped": true
+}

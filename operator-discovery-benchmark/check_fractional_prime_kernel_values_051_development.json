@@ -1,0 +1,28 @@
+{
+  "schema": "fractional-prime-values-check-development-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 6,
+      "stdout": "SYNTHETIC_WORK checker=2692463 fixture=302213\n",
+      "stderr": "test_binding_precision_and_typed_parameters (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\ntest_dyadic_and_resource_guards (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\ntest_factorization_mu_and_log_argument_mutations (test_check_fractional_prime_kernel_values_051.ValueTests) ... FAIL\ntest_fractional_zero_base_and_exact_polynomial_endpoints (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\ntest_independent_divisors_prime_powers_and_zero_unit (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\ntest_wrong_value_and_global_claim_rejected (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\n\n======================================================================\nFAIL: test_factorization_mu_and_log_argument_mutations (test_check_fractional_prime_kernel_values_051.ValueTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_fractional_prime_kernel_values_051.py\", line 33, in test_factorization_mu_and_log_argument_mutations\n    with self.assertRaises(ValueError): C.verify_value(REQUEST, 18, row, M)\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 6 tests in 0.006s\n\nFAILED (failures=1)\n",
+      "elapsed_seconds": 0.08415211900137365,
+      "operations": 2994676
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "SYNTHETIC_WORK checker=1476 fixture=63412\n",
+      "stderr": "test_factorization_mu_and_log_argument_mutations (test_check_fractional_prime_kernel_values_051.ValueTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "elapsed_seconds": 0.07403770799282938,
+      "operations": 64888
+    }
+  ],
+  "scope": "new synthetic arithmetic fixtures and mutation guards; no scientific bank evaluations",
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "correction": "The first factor of18 is2^1: mutation to exponent1 was a no-op. Changed fixture to exponent2; reran only the failed test.",
+  "distinct_tests": 6,
+  "final_status": "PASS",
+  "prior_failure_preserved": true
+}

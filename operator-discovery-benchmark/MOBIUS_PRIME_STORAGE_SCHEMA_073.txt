@@ -1,0 +1,83 @@
+SIGNED PRIME/COMPOSITE STORAGE CANDIDATES073 -- interface v1
+
+This is candidate discovery, not an unconditional recurrence prover.
+All structural identities and finite admissions are exact. Finite drift
+evidence may NEVER set uniform_recurrence_proved or RH_proved to true.
+
+Source spec keys: profile (list of [lo,hi,value] canonical rational
+strings), theta (strictly increasing canonical rationals in (0,1)).
+Profile has1..16 disjoint increasing nonzero bands, 0<=lo<hi<=100.
+Integers n belong to (lo*k,hi*k]. The endpoint X is floor(max_hi*k).
+The source is Z(k)=sum_n mu(n)w_k(n), k>=1 integer. mu(1)=1.
+Require X>=1. Source denominator D is lcm of all profile-value denominators.
+
+State labels, in exact order:
+ Z, unit, omega1, omega2, omega3, omega_ge4,
+ then smooth:<theta> in spec order.
+All entries are SIGNED sums with original w and mu. Omega sectors refer
+to squarefree n; squareful terms contribute zero. Unit is w_k(1).
+The five sectors unit,omega1,omega2,omega3,omega_ge4 sum to Z.
+smooth:theta contains all n with Pplus(n)<=floor(X^theta), Pplus(1)=1.
+The prime coordinate omega1 therefore has known mu(p)=-1. Every prime
+and composite source contribution is retained. S_theta and Z-S_theta
+give an exact signed smooth/large-prime decomposition; neither is paid
+by a finite evaluation or smaller cofactor alone.
+
+Dataset keys: schema='signed-prime-storage-data-v1', spec, labels,
+denominator (positive integer), rows (increasing distinct k), operations.
+Each row: k (positive integer), X (integer), cuts (integer list),
+state (list of integers, representing values divided by denominator).
+State generation uses no candidate coefficients. Spec and discovery /
+adaptation / final scale splits are frozen before numerical scoring.
+The learner gets no final-evaluation rows before its candidate is frozen.
+
+Candidate keys: schema='signed-prime-storage-candidate-v1', spec, labels,
+q (canonical rational in[1,2]), precision (integer8..24),
+rays (list {weight:nonnegative rational,direction:list of rational}),
+C (nonnegative rational), base_upper (nonnegative rational),
+training_scales (sorted unique integers>=2),
+training_upper (exact maximum of0 and upper drift enclosures),
+uniform_domination_proved:true, uniform_recurrence_proved:false,
+uniform_head_bound_proved:false, RH_proved:false,
+search_metadata (search-only information, not evidence of a theorem).
+Do not include zero-weight rays. At most256 positive rays and4096-bit
+rational inputs; arbitrary rational denominators subject to resource limits.
+
+For every integer k>=1 define
+ E(k)=Z(k)^2+sum_r weight_r*(direction_r dot state(k))^2,
+ F(k)=E(k)/k^q.
+The nonnegative rational weights universally prove F(k)>=Z(k)^2/k^q.
+Signed cross terms within every square are retained. This is a global
+algebraic certificate, independent of any observed arithmetic values.
+
+Exact finite normalization encloses k^q on a grid2^precision. For q=a/b,
+the integer R satisfies R^b<=k^a*2^(precision*b)<(R+1)^b. If the left
+inequality is equality, lower=upper=R/2^precision; otherwise use R andR+1.
+An exact integral power can bypass the grid. Intermediates must stay
+within100000 bits. For k>=1 the lower endpoint is positive.
+
+An upper drift enclosure is E(k)/lower(k^q)-E(floor(k/2))/upper(parent^q).
+A lower drift enclosure reverses these two endpoints. Finite outcomes:
+ VERIFIED_ON_FINITE_DOMAIN if every upper<=C;
+ REFUTED if at least one lower>C, retaining exact witness;
+ UNRESOLVED_ROUNDING otherwise. No finite outcome proves uniform drift.
+Training includes every parent and k1 for base. Require base_upper=E(1),
+and training_upper<=C. Final counterexamples must NOT be refitted away.
+
+IF the still-unpaid assertion F(k)-F(floor(k/2))<=C holds for EVERY
+integer k>=2, then F(k)<=base_upper+C*floor(log2 k). This supplies
+ |Z(k)|<=k^(q/2)*sqrt(base_upper+C*floor(log2 k)).
+Both odd/even children and the actual base must be included. A single
+q>1 does not give all RH epsilons. Even q1 covers this necessary source
+slice only, not the full head/core or the full research objective.
+
+Independent checker API:
+ verify_data(data, meter=None) -> dict including verified and operations;
+ verify_candidate(candidate, training_data, meter=None) -> dict;
+ evaluate_candidate(candidate, evaluation_data, meter=None) -> dict
+ with status, all exact violating/inconclusive scales, worst drift bounds,
+ and scope flags always retaining the open uniform recurrence.
+The evaluator must require all parents and k1. It should evaluate only
+an explicit optional scales argument (otherwise all data k>=2).
+The root runner calls source admission separately before candidate checks.
+No checker import of producer/search or old checker is permitted.

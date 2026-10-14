@@ -1,0 +1,72 @@
+MOVING COMPLETE-FLOOR RECONSTRUCTION SEARCH062
+
+The previous061 turn made substantive progress: fractional transport and
+uniform head/exit component bounds. The joined interior remains unpaid.
+062 searches constructions for that precise prefix, not old matching costs.
+
+Freeze the ten files in the runner before evaluating any scientific062
+floor dictionaries, LP candidates or budgets. Preserve all271 ancestor
+snapshot files by direct byte comparison. No artifact hashes. The ten new
+producer tests and18 independent checker tests passed on their sole runs.
+No old suite, source arithmetic table or unchanged search is replayed.
+
+Keep the061 source parameters fixed, including alpha1/5, primes2,3,5 and
+p3,q5. For r=(p/q)^t in[p/q,1], 0<t<1, the target is
+ f_d(r)=1[d<=y]*(W(N/(p*d))-r*W(N/(q*d))).
+Search coefficients c_j(r) with f_d(r)=sum_j c_j(r)floor(X_j/d) at EVERY
+coprime d>H through max(D,all X_j), D=floor4N/p. Beyond that all terms vanish.
+Do not drop extended dictionary exits or the unit. Retain nonsquarefree
+coprime rows as conservative geometry; no observed source mu signs enter.
+
+The generic constructor expands truncated floors into integer endpoint
+indicators and replaces each indicator of d<=T, T>H, by
+ sum_(ell<=floor(T/(H+1))) mu(ell)*floor(T/(ell*d)).
+This agrees for d>H. Its ordinary small-index mu coefficients form an inverse
+kernel, not mu_M and not an actual large-scale source sign table. Every short
+residual is retained and priced. Group equal quotients to avoid a long
+uncompressed indicator list. This supplies a feasible baseline, not a bound
+on the residual's growth.
+
+The search dictionary contains its horizons, every integer1..H, and reciprocal
+closures aboveH of original N/b,2N/b,4N/b (b=p,q) and min(4N,m*y) for m=1,2,3,4.
+There is no trained coefficient vector. For each ratio endpoint independently,
+minimize coefficient L1 plus complete coprime short residual L1 with a signed
+linear program. A second construction also enforces sum_j c_j*X_j=0. Whole
+endpoint coefficient vectors interpolate affinely, preserving the two source
+channels jointly. These are construction rules supplied to the detector;
+the detector chooses the coefficient vectors and finite certified budgets.
+
+LP floats only propose candidates. Rationalize with denominator budget1e6;
+exactly replay the whole tail and short residual before admission. The zero
+moment variant also replays its moment exactly. Preserve rejected candidates.
+No rigorous LP optimality is claimed. An independent implementation checks
+all admitted certificates, canonical rationals and the exact budget maximum.
+The convex complete endpoint cost controls the whole ratio continuum. Full
+floor convolution gives |S_N(y,t)|<=U*(1+log2(4N))^k at THAT fixed N,y.
+
+Predetermined scales:256,1024,4096,7249. Prefix endpoints:floor(D/3),floor(D/2),
+floor(2D/3). Short cutoffs:floor(N^eta), eta=3/7,1/2,4/7. These powers are
+ordinary exact rational inputs, not a root whitelist. Search all36 cases
+and all three constructions; select by exact total budget then sparsity.
+The original mu sums, source integrals and061 empirical prefix tables are
+neither read nor recomputed. No retrospective exponent fit, uniform claim,
+all-y coverage claim or holdout claim is made from these finite samples.
+
+Use three independent fork workers with one native thread each;7200s/module,
+300b instrumentation units per producer and checker,120s per endpoint LP,
+2GiB prospective worker algorithm storage,16GiB aggregate authorized ceiling.
+Instrumentation includes matrix shape, nonzero counts and iteration counts,
+not a claim to count every native solver CPU instruction. Record elapsed
+time and per-process RSS. Do not rerun passing work without a material change.
+
+The source-only review gives a generic O(N/H*log(4N/H)) coefficient mass.
+At H=floor sqrtN, its complete-convolution contribution has square-root times
+polylog growth. THE SHORT REMAINDER DOES NOT AUTOMATICALLY HAVE THAT GROWTH.
+Moment balance only gives residual L1<=H*(2+coefficient L1). A useful next
+grammar must control that actual residual, or prove a better coefficient
+family uniformly; it cannot rename an unpaid all-scale prefix bound.
+
+If U(N,y)<=U(N) for every required y and N, then analytical composition gives
+C_core(N)<=3R/(k+1-alpha)*U(N)*(1+log2(4N))^(k+1). That uniform premise stays
+OPEN. A few finite exact controls do not close it or the058 conditional RH
+bridge. Record the remaining dependency and leave the full goal active.

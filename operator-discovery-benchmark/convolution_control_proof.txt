@@ -1,0 +1,413 @@
+ACTUAL MU-LIOUVILLE CONVOLUTION: ORDINARY-ZETA BRIDGE AND SIGNED COMPONENTS
+
+Status: all identities below attach to complete ACTUAL arithmetic. No ordinary
+all-scale critical signed energy bound, or RH proof, is established. The new
+analytic module provides exact development arithmetic checks and component
+certificates; no prior frozen source is modified. Supplied algebra/theorems are
+separated from any future learned operator, weights, q constants or PSD family.
+
+1. Actual prime-power structure and positive inverse.
+On positive integers let mu be the complete Dirichlet inverse of One and let
+lambda(n)=(-1)^Omega(n), completely multiplicative, lambda(1)=1. Its local
+series is 1/(1+z). Define c=mu*lambda; then at EVERY prime p,
+ c_p(z)=(1-z)/(1+z)=1+2 sum_(j>=1)(-1)^j z^j.
+Thus c(1)=1, c(p^j)=2(-1)^j and
+ c(n)=lambda(n)2^omega(n), h(n)=|c(n)|=2^omega(n).
+The local positive series h_p=(1+z)/(1-z) is c_p^-1, so c*h=Unit globally.
+Also h=mu^2*One and tau=h*IndicatorSquares. Multiplication by lambda is an involution preserving Dirichlet
+convolution, because lambda(ab)=lambda(a)lambda(b); it sends h to c and c to h.
+These statements do not follow from arbitrary positive inversion alone: their
+coefficients at EVERY prime and prime power are part of actual provenance.
+All real logarithms below are natural; coefficients at n=0 are explicitly0.
+
+Absolute coefficient bound h<=tau follows locally from2<=j+1 for j>=1.
+Therefore sum_(n<=y)|c(n)|<=sum_(n<=y)tau(n)<=y(1+log y), y>=1.
+The resulting ordinary block energy is at most
+4X^3(1+log(2X))^2, integer X>=1. This actual all-scale bound is weak: its
+power is3, not the critical power2. Absolute expansion loses the signs.
+
+2. Sampling at3, shifted indexing, and ALL endpoints.
+Let C(x)=sum_(1<=m<=floor x)c(m), C(0)=0, and
+ b(m)=c(3m), T(x)=sum_(1<=m<=floor x)b(m), T(0)=0.
+Set c(0)=0 and a(n)=c(3(n-1)) for positive integers n. Then a(1)=0 and
+ S(N)=sum_(n=1)^N a(n)=T(N-1), EVERY integer N>=1, S(0)=0.
+This shift cannot be replaced by an unshifted Euler factor in the a-series.
+
+At3 not dividing m, b(m)=-2c(m); at3 dividing m, b(m)=-c(m). Hence
+ b(m)=-2c(m)+1_(3|m)c(m),
+ T(x)=-2C(x)+T(floor(x/3)), EVERY integer x>=0,
+ C(x)=[T(floor(x/3))-T(x)]/2,
+ T(x)=-2 sum_(j>=0)C(floor(x/3^j)).
+The last sum terminates because C(0)=0; at x=0 it is0. The local coefficient
+at3 is essential; a generic inverse with no3-support does not obey this rule.
+
+For Re(s)>1 the actual series converge absolutely since |c|<=tau. Write
+ Fc(s)=sum c(n)n^-s= zeta(2s)/zeta(s)^2.
+The unshifted b-series is
+ Fb(s)=-2 Fc(s)/(1-3^-s).
+Indeed the divisible-m term equals3^-s Fb(s). The multiplier is holomorphic,
+finite and nonzero for Re(s)>0. The shifted a-series need not have an Euler
+product; its analytic bridge is established through the exact prefix recovery,
+not by silently ignoring the n-1 shift.
+
+3. Critical sampled-energy bridge, cofinal q, initial scales.
+For f-prefix F with F(0)=0, write
+ E_F(X)=sum_(n=X)^(2X-1)|F(n)|^2, dyadic integer X>=1,
+ B_F(Y)=sum_(n=1)^floor(Y)|F(n)|^2.
+For every fixed beta=2+epsilon>2, an ALL-dyadic E_F(X)<=K X^beta implies
+B_F(Y)<=K Y^beta/(1-2^-beta), by the geometric sum of dyadic blocks throughY.
+The converse E_F(X)<=B_F(2X)<=K(2X)^beta is immediate. Constants are finite
+for each epsilon and independent of scale. All initial dyadic blocks are included.
+
+If sampled S has this bound, B_T(Y)=sum_(m=1)^floor(Y)|S(m+1)|^2
+<=B_S(Y+1), so T has the same exponent with a finite2^beta shift factor.
+For Y>=1, complete floor fibers have at most3 members at a positive index:
+ B_C(Y)<= [B_T(Y)+3B_T(Y/3)]/2.
+Thus sampled critical energy implies ordinary C critical energy, with exact
+floor/shift costs and C(1)=1 accounted for. No need to pretend S(1)=C(1).
+
+Conversely, if B_C(Y)<=K Y^beta, Minkowski and the terminating recovery give
+ sqrt(B_T(Y))<=2 sum_(j>=0)sqrt(3^j B_C(Y/3^j))
+ <=2sqrt(K)Y^(beta/2)/(1-3^(-(beta-1)/2)).
+Zero-index fibers contribute nothing. Hence B_T(Y)<=
+4K Y^beta/(1-3^(-(1+epsilon)/2))^2, and B_S(Y)<=B_T(Y) gives the shifted
+sample bound. These identities prove critical-energy equivalence between S
+and C for every fixed positive epsilon; they do not establish either estimate.
+
+Precise RH-strength premise: there exists integer q0>=1 such that for EVERY
+integer q>=q0 there exists finite K_q independent of X and for EVERY dyadic
+integer X>=1, E_S(X)<=K_q X^2 ceil(X^(1/q)). Since ceil(X^(1/q))<=2X^(1/q),
+this gives the preceding energy bound with epsilon=1/q. ALL such q, arbitrarily
+large, are required; fitted constants for finitely many q or a bound at one
+fixed positive exponent are insufficient. A one-sided signed innovation bound
+E_S(2X)-4E_S(X)<=K_q X^2 ceil(X^(1/q)) at all dyadic X telescopes to this
+energy premise with finite initial E_S(1) and a charged geometric factor.
+This statement is conditional; no such innovation bound is proved here.
+
+4. Ordinary-zeta Mellin bridge, without shifted-series zero substitution.
+For every sigma>1/2, choose sigma' with1/2<sigma'<sigma and an admitted q
+large enough that1/q<2sigma'-1. Ordinary C energy then gives convergence of
+Integral_1^infinity |C(t)|^2 t^(-2sigma'-1)dt. The step-function/integer
+version differs only by bounded endpoint factors and finite initial terms.
+Cauchy gives absolute convergence of Integral C(t)t^(-s-1)dt for Re(s)>=sigma,
+with local uniform convergence on half-planes separated from sigma'. Thus
+s Integral C(t)t^(-s-1)dt defines a holomorphic Fc in Re(s)>1/2, agreeing with
+zeta(2s)/zeta(s)^2 in its original absolute-convergence half-plane Re(s)>1.
+Here zeta(2s) is holomorphic and nonzero whenever Re(s)>1/2, by the ordinary
+Euler product in Re(2s)>1. A zero of ordinary zeta in Re(s)>1/2 would therefore
+force a pole of that ratio, contradicting the holomorphic Mellin continuation.
+At s=1 the zeta pole produces a zero of the ratio, not an obstruction. The
+functional equation then yields RH. This bridge uses the ordinary zeta,
+not a renamed sampled or shifted zeta. Its critical-energy premise is missing.
+
+5. Genuine signed actual bounds from the additional prime coefficients.
+Let tau=One*One and IndicatorSquares(n)=1_(n is a positive square).
+The actual local product is
+ c_p(z)/(1-z)^2=1/(1-z^2), so c*tau=IndicatorSquares GLOBALLY.
+Writing D2(y)=sum_(n<=floor y)tau(n), for EVERY integer x>=0,
+ sum_(d<=x)c(d)D2(floor(x/d))=floor(sqrt(x)).
+This proves an actual all-scale signed square-root bound for the DOUBLE-divisor
+filtered sum; it is not the ordinary C or sampled S energy. Its fully unsigned
+charge is sum h(d)D2(floor(x/d))>=D2(x)>=x, so signs are essential. At x=1024
+independent exact development arithmetic gives signed32, unsigned77648.
+The theorem is convolution/local algebra, not a theorem inferred from that test.
+
+A second exact signed component bound uses rectangular prime-power boxes.
+For any finite set of DISTINCT actual primes p_i and integers K_i>=0,
+ sum_(0<=j_i<=K_i)c(product p_i^j_i)
+ =product_i [1+2sum_(j=1)^K_i(-1)^j]=(-1)^(sum K_i).
+Its absolute value is1, while the unsigned charge is product_i(1+2K_i).
+Thus actual h(p^j)=2 supplies cancellation on complete exponent boxes. The
+ordinary cutoff n<=x is a log-simplex, not a rectangular box. Partitioning its
+boundary into boxes must charge their count and retain every incomplete face;
+no uniform critical boundary estimate follows from the box identity alone.
+
+These are nontrivial exact signed component/filter bounds using actual prime
+information beyond generic h=|c| positivity. They leave the full unsmoothed
+signed correlation estimate unresolved. The kernel/discrepancy method for
+mu^2 cannot be transferred unchanged to c common factors: for coprime u,r,
+ c(gu)c(gr)=c(u)c(r)h(g)^2/h(gcd(g,ur)).
+The remaining positive shared-g weight is4^omega(g)/2^omega(gcd(g,ur)), not
+mu(g)^2. It has different size/logarithmic moments; suppressing that distinction
+would invalidate a density certificate. Even controlling it does not control
+the outer signs c(u)c(r).
+
+6. Whole-identity countermodel and why actual local coefficients matter.
+Consider a multiplicative sequence supported only on powers2. Its local series
+h2(z)=(1+A z)/(1-A z), c2(z)=(1-A z)/(1+A z), A=2. Then
+h(2^j)=2A^j, c(2^j)=2(-A)^j for j>=1, c(1)=h(1)=1.
+Globally c*h=Unit, h=|c|, and multiplying by the actual Liouville sign is an
+involution exchanging them. Thus ALL complete inverse and positive-involution
+constraints hold, not just a finite head or selected divisor rows.
+At X=2^k, its prefix is
+ C(X)=1+2sum_(j=1)^k(-2)^j=[4(-2)^k-1]/3,
+and constant throughout [X,2X). Its exact block energy is
+ X[4(-2)^k-1]^2/9, asymptotic to(16/9)X^3.
+So the whole positive-inverse/involution identity class cannot prove the
+critical exponent2. The actual coefficient h(2)=2 blocks this A=2 model,
+which has h(2)=4, and its exponent-box sum also violates the actual bound1.
+At every prime the actual coefficients are2, not arbitrary2A^j.
+
+This restricted-support model has c(3m)=0 for all m and hence sampled S=0,
+while ordinary C has cubic energy. It additionally demonstrates why the actual
+local3 law is indispensable to the sampling bridge in sections2-3. It is not
+a counterexample to that ACTUAL bridge or to ordinary-zeta arithmetic. Adding
+actual prime3 coefficients to the model still leaves the amplified prime2
+structure forbidden by actual h(2)=2; positivity alone cannot substitute for
+these specific local laws. For A=1 the prime2 local law matches, but absent
+other prime support still fails the complete actual source condition.
+
+7. Full prefix Gram, extra forcing, and a concrete missing lemma.
+On a COMPLETE coefficient domain1<=d<=N, define the divisor rows
+D_h(n,d)=1_(d|n)h(n/d), D_tau(n,d)=1_(d|n)tau(n/d).
+Actual c obeys D_h c=e_1 and D_tau c=e_squares. For any nonnegative row weights,
+ c^T D_h^T diag(w_h)D_h c=w_h(1),
+ c^T D_tau^T diag(w_tau)D_tau c=sum_(n<=N,n square)w_tau(n).
+These are full Gram identities; the unit cost and every square forcing row
+must be charged. Taking w_h(1)=0 makes the complete nonunit h-Gram vanish.
+Testing the fixed actual tau forcing detects the A=2 counterfeit at n=2, since its
+(c*tau)(2)=-4+2=-2 instead of the required square-indicator value0.
+
+For sampled S use B_X(n,d)=1_(3|d,d<=3(n-1)), n in[X,2X), and complete
+N>=3(4X-2). Then E_S(X)=c^T B_X^T B_X c. Let
+K_X=B_(2X)^T B_(2X)-4B_X^T B_X, retaining EVERY signed cross term.
+A mathematically actionable next certificate is an ALL-scale PSD family
+ D_q(X)I-K_X+y_q(X)G_h+z_q(X)G_tau >=0,
+with y,z>=0, full nonunit h-Gram G_h, and full tau-Gram G_tau. Evaluation
+on actual c gives the exact charged inequality
+ E_S(2X)-4E_S(X)<=D_q(X)sum_(d<=N)c(d)^2
+                       +z_q(X)sum_(n<=N,n square)w_tau(n).
+Dropping cross terms or the square forcing charge is forbidden. Kernel cutoff,
+N, weights, coefficients and costs must all be frozen before an admission.
+
+Actual c(d)^2=4^omega(d)<=d_4(d), so its norm is at most
+N(1+log N)^3 by the harmonic tuple bound. Taking complete N proportional toX,
+a sufficient NEW lemma would prove such PSD with
+D_q(X)<=L_q X ceil(X^(1/(2q))) and total square forcing cost
+z_q sum_square w_tau <=L'_q X^2 ceil(X^(1/q)),
+for every dyadic X>=1 and every integer q>=q0, finite L_q,L'_q independent ofX.
+The log^3 norm cost can be absorbed by the remaining1/(2q) power with an
+explicit finite q-dependent constant. These conditions would establish the
+missing sampled innovation bound and then the ordinary-zeta bridge. Large
+Gram weights do not create this premise: their forcing costs and symbolic/bit
+costs remain explicit. Numerical PSD at finitely manyN is not the required
+all-scale/cofinal lemma. Nor is the full Gram null relation itself a bound.
+
+The complete constraints uniquely determine actual c, but that fact alone
+cannot certify a critical quadratic domination. We attempted the direct
+positive-inverse and absolute-row estimates; they yield cubic/polylog energy,
+and the whole-identity A=2 model proves why the positive-inverse/involution
+route is insufficient without the actual local2 laws. Actual box and square
+forcing give useful signed information, but the global signed Gram domination
+or log-simplex boundary/correlation estimate remains unproved. No RH claim.
+
+8. Dependent row forcing and a precise diagonal-potential certificate.
+IMPORTANT: the second complete divisor-row constraint is NOT independent.
+Actual tau=h*IndicatorSquares, so on every complete finite domain1..N,
+ D_tau=D_squares D_h.
+Thus D_h c=e_1 ALREADY implies D_tau c=e_squares. Adding these rows can
+change a numerical representation/preconditioner but supplies no additional
+arithmetic information or proof of a signed energy bound. The A=2 model fails
+the fixed actual tau relation because it fails the fixed actual h prime law;
+it does not disprove this dependence. The prior complete-null-direction barrier
+remains. One cannot infer an all-scale PSD certificate merely by increasing
+Gram weights along the same complete forcing relation.
+
+Nor is the difference of FULL row-Gram matrices generally PSD. With uniform
+row weights, in coordinates1,4, D_squares is [[1,0],[1,1]], so
+ D_squares^T D_squares-I=[[1,1],[1,0]] has determinant-1. Congruence by
+invertible D_h preserves the negative direction. Evaluation on actual c still
+has the known nonnegative value(number of positive squares<=N)-1, but that is
+a source-specific forcing evaluation, not universal matrix positivity.
+
+The ROOT SEARCH'S feature is instead the following DIAGONAL sum, which IS
+nonnegative without that invalid full-Gram subtraction. For t>=1 set
+ S_f(t)=sum_(d=1)^t f(d)^2 C(floor(t/d))^2,
+ and over t in[X,2X) let S_f(X)=sum_t S_f(t). Then
+ R_h(X)=S_h(X)-A_C(X)
+       =sum_t sum_(d>=2)h(d)^2 C(floor(t/d))^2>=0,
+ R_diff(X)=S_tau(X)-S_h(X)
+         =sum_t sum_d[tau(d)^2-h(d)^2]C(floor(t/d))^2>=0.
+The d=1 term is exactly A_C; tau(d)>=h(d) coefficientwise. These identities
+hold for every integer X>=1, including initial X=1. They remain valid for any
+identical retained d-domain in a difference, but a truncated full row then
+requires its exact omitted tail. They are PSD sums of prefix-square components,
+unlike the full row-Gram difference above.
+
+Complete prefix rows have signed sums
+ sum_d h(d)C(floor(t/d))=1,
+ sum_d tau(d)C(floor(t/d))=floor(sqrt(t)).
+Their full squares include ALL off-diagonal terms. The diagonal sums S_h,S_tau
+need not inherit these small values: cross terms can be large and negative.
+Discarding them would supply a false bound. The code independently checks these
+full-row identities and the nonnegative diagonal features at development scales.
+
+A rigorous weak envelope follows from |C(y)|<=y(1+log y):
+ S_tau(t)<=t^2(1+log t)^2 sum_d tau(d)^2/d^2
+          <=16t^2(1+log t)^2.
+Indeed tau(p^j)^2=(j+1)^2<=binom(j+3,3)=d_4(p^j), and
+sum d_4(d)/d^2=zeta(2)^4<=16 by zeta(2)<=1+Integral_1^infinity t^-2 dt=2.
+Therefore S_tau(X)<=64X^3(1+log(2X))^2. This bounds R_h and R_diff from
+above for all scales, but after dividing by X^2 ceil(X^eta), eta=0,1/6,1/3,
+it gives only O(X^(1-eta)log^2(2X)), not global critical/subpower control.
+
+They are genuinely connected to the ordinary energy, rather than harmless
+bounded auxiliaries. On dyadic X>=2, the d=2 term gives
+ R_h(X)>=8 A_C(X/2).
+On dyadic X>=4, tau(4)^2-h(4)^2=5 and four floor fibers give
+ R_diff(X)>=20 A_C(X/4).
+Thus normalized eta0 features control a fixed earlier ordinary energy from
+below. Eta>0 weakens this comparison by X^eta. Their smallness is not already
+proved by row forcing. Conversely IF B_C(Y)<=K Y^(2+epsilon), then for f=h
+or tau, complete floor-fiber counting gives
+ S_f(X)<=K(2X)^(2+epsilon) sum_d f(d)^2/d^(1+epsilon)
+       <=K(2X)^(2+epsilon) zeta(1+epsilon)^4.
+The constant is finite for each fixed epsilon>0, but this calculation relies
+on the missing critical C estimate; it cannot be used to establish that estimate.
+
+9. Generic finite nonnegative potential bridge, exact moving selectors.
+Let E_C(X)=A_C(X)/X^2. For a frozen program define a FINITE V(X)>=0 at every
+dyadic X>=1. V may depend on q if this dependence is explicit and each V_q(1)
+is finite. Its coefficients are fixed nonnegative rationals and normalizers
+are exact positive ceil(X^p), rational p>=0; mixed signed expansions are allowed
+only with an actual nonnegativity certificate. Finite numerical positivity is
+not such a certificate. A missing computation is not V=0.
+
+If there exists q0>=1 such that for EVERY integer q>=q0 there is a finite
+C_q>=0 independent of X satisfying at EVERY dyadic X>=1
+ E_C(2X)+V(2X)-E_C(X)-V(X)<=C_q ceil(X^(1/q)),
+then, with W=E_C+V, dyadic telescoping gives
+ E_C(X)<=W(X)<=W(1)+2C_q (X^(1/q)-1)/(2^(1/q)-1).
+The exact finite initial E_C(1)+V(1), geometric q-dependent cost, and every
+cofinal q are retained. Thus A_C(X)=O_q(X^(2+1/q)); section4 then excludes
+ordinary zeta zeros off the critical line. This is a conditional bridge only.
+There is NO assumption that V itself has an independently proved subpower
+bound; nonnegativity suffices for recovery. Its large growth can, however, make
+the desired innovation much harder, not easier, to prove.
+
+For the declared moving features, d_X=max(2,floor(X^(1/k))) with fixed
+k=2,3,6, child evaluation MUST use d_(2X), not d_X. Every window, floor,
+normalizer and domain is reevaluated independently at the child. Reusing the
+parent selector proves an inequality for a different program. Exact differences
+arising from selector changes cannot be dropped. Squares of
+ C(t)+a C(floor(t/d_X))
+and C(t)+a C(floor(t/2))+b C(floor(t/3)) are nonnegative for all rational
+weights a,b, including negative ones; expansions retain every signed cross
+term. The six diagonal potentials above are nonnegative by section8.
+Fixed nonnegative rational combinations preserve this property regardless of
+whether an LP proposal or postquantization selects the weights. Quantization
+changes a proposed coefficient vector and requires exact reevaluation; it
+cannot inherit an unquantized fit's bound automatically.
+
+10. Critical-boundness audit of the current program families.
+Supplied universal norms and conditional arithmetic strength are distinct:
+* Raw coefficient-square blocks h^2,tau^2,c^2 and tau^2-h^2 have an upper
+  envelope O(X log^3(2X)); normalization p>1 gives a finite global bound and
+  p=1 gives a global subpower bound, for fixed coefficients and degrees.
+* Prefix-square blocks H^2,T^2,|C|^2 and their certified positive differences
+  have an upper envelope O(X^3 log^2(2X)); p>3 gives finite global bounds and
+  p=3 global subpower bounds. Normalization p=2 is energy-comparable and is
+  not certified critical by this unsigned envelope.
+* Complete diagonal R_h,R_diff have the same weak cubic upper envelope and
+  the lower ordinary-energy comparisons in section8. Their declared p=2+eta,
+  eta0,1/6,1/3, is below3, so no unconditional globally subpower admission.
+* Every declared mixed square retains the unthinned C(t). For fixed |a|<=2,
+  d>=2, |C(t)+a C(floor(t/d))|<=2t(1+log t), giving a cubic block envelope.
+  The /X^2 normalization is energy-scale, not an already bounded auxiliary.
+  Finite three-square coefficient norms give the same exponent and charged
+  constants. Child-moving quotient changes preserve nonnegativity, not an
+  automatic signed innovation estimate.
+
+For FIXED d and coefficient a, a separate component-only critical recovery
+can be proved when |a|<=sqrt(d). In prefix L2 the floor operator has norm
+charge d^(-(1+epsilon)/2) at energy exponent2+epsilon, so the inverse geometric
+series has ratio |a|d^(-(1+epsilon)/2)<1. This recovers C critically from
+G(t)=C(t)+a C(floor(t/d)) if G critically bounded, with all q-dependent inverse
+costs. For the fixed dictionary, |a|=2 at d=2 or3 fails this sufficient condition;
+all |a|<=1 pass, and |a|=2 at d=5 or6 passes. This is not a claim that the
+failing actual features hide actual zeta zeros; it is a valid caution that an
+unproved generic inverse bridge cannot be attached. Moving d_X has no fixed
+Dirichlet multiplier, so the fixed-d proof cannot be reused verbatim.
+For fixed two quotients, |a|/sqrt(2)+|b|/sqrt(3)<=1 is a corresponding sufficient
+cofinal inverse-norm condition, with a strict ratio at each epsilon>0. Other
+coefficients require another proof. These are conditional recovery rules, not
+new critical estimates.
+
+Bad index thinning: F_k(n)=C(floor(n^(1/k))) alone has the unconditional weak
+energy O(X^(1+2/k)log^2(2X)). For k>=2 this ALREADY satisfies ordinary exponent
+2+epsilon bounds for all epsilon>0; it does NOT imply ordinary critical C.
+The powered2 countermodel has cubic C energy but its k=2 thinned energy is
+O(X^2). The correct dimensional critical exponent for a fixed k is1+1/k:
+for dyadic Y, full root fibers give
+ k Y^(k-1) A_C(Y)
+ <=sum_(n=Y^k)^((2Y)^k-1)|F_k(n)|^2.
+The latter is a sum of k dyadic blocks. Bounds at exponent1+1/k+epsilon would
+give A_C(Y)=O(Y^(2+k epsilon)), which is cofinal critical only when k is fixed
+and all arbitrarily small epsilon are admitted. Growing k carries its own
+fiber, block count, operation and inverse-exponent costs. The actual stride3
+and n-1 shift bridge in sections2-3 has exact local recovery and does not make
+this invalid thinning substitution. The BASE E_C in section9 remains unthinned.
+
+11. Box cancellation converted to boundary coefficients: exact cost/barrier.
+A complete anchored exponent box has signed sum±1 by section5. For a general
+rectangle with lower L_i>=0 and upper U_i, each local sum has magnitude1 if
+L_i=0, zero if L_i>=1 and its interval length is even, otherwise2. The whole
+box costs at most2^(number of positive lower endpoints), and vanishes whenever
+one positive-lower exponent interval has even length. Thus pairing interior
+odd/even exponent layers can cancel genuinely, but incomplete boundary faces
+retain their charges.
+
+For the finite primes p<=x and exponent order ideal D={e:product p^e<=x}, write
+its indicator as a complete principal-box decomposition with coefficients
+ alpha_K=sum_(epsilon_i in{0,1})(-1)^(sum epsilon_i)1_D(K+epsilon).
+All terms outside the finite grid are0. This is a finite multivariate telescoping
+identity, and alpha_K is supported on boundary corners. Every anchored box
+contributes (-1)^(sum K_i). Writing n=product p^K, the coefficient is exactly
+ alpha_n=sum_(d<=x/n)mu(d)=M(floor(x/n)).
+Therefore this box-boundary representation is precisely
+ C(x)=sum_(n<=x)lambda(n)M(floor(x/n)).
+It retains the full signed convolution. Its unsigned coefficient charge is
+sum_(n<=x)|M(floor(x/n))|<=sum_(n<=x)floor(x/n)<=x(1+log x).
+There is no free square-root boundary estimate. Literal all-prime Boolean
+corner expansion has exponential2^pi(x) cost; compact convolution/hyperbola
+implementations avoid that enumeration but do not improve the analytic charge.
+A useful next lemma would bound the FULL signed boundary/coupled correlations
+or certify the complete Lyapunov innovation in section9 with cofinal constants.
+Neither the exact boxes nor full dependent Gram constraints establish it.
+
+12. Exact equivalence audit for ALL54 supplied potential coordinates.
+For every fixed epsilon>0, suppose the COMPLETE ordinary prefix bound
+B_C(Y)<=K_epsilon Y^(2+epsilon) is already proved for every Y>=1. Section8
+gives S_h,S_tau<=K_epsilon(2X)^(2+epsilon)zeta(1+epsilon)^4; hence all six
+normalized diagonal features R_h,R_diff divided by X^2 ceil(X^eta), eta>=0,
+are O_epsilon(X^epsilon).
+
+For ANY moving divisor d_X>=2, complete floor fibers give
+sum_(t=X)^(2X-1) C(floor(t/d_X))^2
+ <=d_X B_C(2X/d_X)
+ <=K_epsilon(2X)^(2+epsilon)d_X^(-(1+epsilon)).
+This bound is UNIFORM in the exact moving selector. Thus
+sum_t [C(t)+a C(floor(t/d_X))]^2
+ <=2A_C(X)+2a^2 d_X B_C(2X/d_X)
+ =O_(epsilon,a)(X^(2+epsilon)),
+using the SAME d_X within that feature's parent block and the reevaluated child
+selector in its child block. No fixed-multiplier inverse or individual-feature
+comparability is assumed. The three-term squares with fixed divisors2,3 obey
+the same exponent by |u+v+w|^2<=3(|u|^2+|v|^2+|w|^2), with all rational
+coefficient norms charged. Normalization by X^2 yields O(X^epsilon). Every
+additional ceil(X^eta)>=1 weakens the potential and preserves this upper bound.
+
+Hence under critical C energy, EVERY one of the54 declared potentials and
+every fixed finite nonnegative rational combination of them is globally
+subpower, with finite epsilon/weight-dependent constants. This is conditional
+on the critical C bound and cannot be used as its proof. For such a fixed
+combination W=E_C+V>=0, critical C energy at all cofinal exponents implies
+W(2X)-W(X)<=W(2X)=O_q(X^(1/q)), using a sufficiently small admitted exponent
+and keeping every initial scale. Conversely the section9 innovation premise
+recovers critical C energy from W>=E_C. Thus EACH fixed program's existential
+cofinal all-scale innovation claim is equivalent to critical C energy. The
+potential coordinates can change the form of a possible proof, but do not
+weaken the unknown arithmetic assertion or add independent arithmetic facts.
+Fitted exact C_q values have no such equivalence to other constants: all
+transfers charge new finite constants and preserve the original program's
+unresolved disposition. No full critical estimate is established by this audit.

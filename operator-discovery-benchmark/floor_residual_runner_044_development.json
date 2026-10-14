@@ -1,0 +1,22 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.026537711964920163,
+      "exposure": "mock compiler for batch partition/dedup; rational synthetic norm96 and exact zero; artificial signed diagnostics"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "elapsed_seconds": 0.17737284599570557,
+      "stdout": "",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "exposure": "new receipt-schema regression only; no source or norm observations"
+    }
+  ],
+  "preflight_failure_record": "floor_residual_044_preflight_failure.json"
+}

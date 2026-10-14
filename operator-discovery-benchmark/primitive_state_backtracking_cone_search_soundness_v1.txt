@@ -1,0 +1,62 @@
+Publication026 backtracking continuation: independent mathematical review
+Scope: synthetic API tests and source reading only. No actual chart, candidate,
+source, norm, merit, or fresh-scale calculation; no hashes. This note is not
+finite feasibility evidence or an all-scale/RH certificate.
+
+The correct coordinate is the absolute z in x=x024+N(Dz), not an increment
+about x025. Setup retains the exact rational center024 and reconstructs saved
+z025 through all780 pivot equations including the appended learned row.
+Its exact free vector is f024+D*z025, including center bits beyond binary269.
+The producer compares the complete projected and canonical original endpoint,
+then checks its numerical forward value against that exact warm reference
+with relative tolerance1e-40. This is numerical consistency, not exact map
+certification. Exact endpoint export again uses the original rational center.
+
+The inherited positive dyadic diagonal leaves the feasible set unchanged.
+No new81-response calculation or eight-step power pass is needed. Frozen025
+normalizers must remain unchanged; calculating initial026 block penalties is
+allowed, but replacing b by those penalties changes the declared objective.
+The objective remains max(p_scalar/b_scalar,p_C/b_C,p_H/b_H), with371 scalar
+coordinates, Frobenius off-diagonal factor2, and H=P+4C. The canonical lift
+uses child=0, storage=C, parent=H. Exact tests of three original PSD blocks
+remain necessary before any finite-cone admission.
+
+The initial step is exactly half the last of three finite rejected025 trials.
+Twelve halving trials extend to initial_alpha/2048. Each trial recomputes its
+simplex model; an accepted trial carries min(2^900,2*accepted_alpha). Deeper
+backtracking is a credible response to the prior three-trial failure, but
+neither acceptance nor feasibility is guaranteed. Exact convex theory gives,
+for an optimal max-linear proximal model and gradient Lipschitz bound L,
+F_new<=F_old-||d||^2/alpha+(L/2)||d||^2. Thus alpha<=7/(4L) suffices for the
+specified 1/8 Armijo decrease in that ideal model. The actual80-digit model
+and binary64 eigenvalue calculations do not establish that hypothesis.
+Model-gap failure, numerical stationarity, exhausted trials, and budget-stop
+must remain numerical diagnostics, never infeasibility or partial admission.
+
+Resource reservation must include all twelve forward/metric/model trials,
+three next accepted gradients, serialization and finalization before starting
+a step. Producer iteration_work_reserve and independent checker agree on the
+synthetic full-layout fixture. Native eigensolver accounting alone contributes
+12*2*96*15^3=7,776,000 units to a worst-case step;128 such steps already exceed
+220m. Consequently128 is only an upper cap, with completed-step budget_stop
+essential. Setup5m, proposal220m, endpoint25m, audit150m and preparation50m
+sum450m; no duplicated setup norms or power work fits outside this ledger.
+Map8MiB, trace32MiB and endpoint2MiB limits are also independent stopping
+conditions. Reserving a full step does not promise it will be affordable.
+
+Direct review found the terminal checker line_search_failed branch still
+requiring three trials while the iteration branch required twelve. This was
+reported to its owner for correction before freeze. Other observed paths
+preserve warm absolute z, exact center, reused scales, fixed normalizers and
+complete endpoint reconstruction. Source/trace validation is still required
+by the independent whole auditor; synthetic published-premise fixtures do
+not replace that validation.
+
+Owned test_primitive_state_backtracking_cone_search_soundness.py has seven
+synthetic tests: exact high-bit warm center, nonzero warm z and learned pivot,
+frozen normalization/step, missing learned-row rejection, rounded endpoint
+rejection, incomplete prior/wrong halving rejection, zero scale rejection,
+and independent twelve-trial work-reserve agreement. Seven passed in0.382s.
+No real endpoint or research computation was performed. The learned X7 row
+is a necessary finite formal constraint; satisfying it and old5641 equations
+does not prove universal identity, actual Möbius arithmetic control or RH.

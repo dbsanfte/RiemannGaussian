@@ -1,0 +1,37 @@
+{
+  "attempts": [
+    {
+      "time_epoch": 1791723565.425906,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_completion_083",
+      "exit_code": 1,
+      "tests": 7,
+      "output": "test_balanced_unit_column_zero_with_zero_unit_weight (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_boolean_negative_row_price_is_retained (test_mobius_coupled_completion_083.CoupledTests) ... FAIL\ntest_exact_dual_and_lp_proposal (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_physical_geometry_independent_and_arithmetic_filters (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_prospective_full_geometry_and_rational_gates (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_signed_rational_power_cut_root_and_complement (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_zero_identity_all_unit_and_prime_composite_terms (test_mobius_coupled_completion_083.CoupledTests) ... ok\n\n======================================================================\nFAIL: test_boolean_negative_row_price_is_retained (test_mobius_coupled_completion_083.CoupledTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_mobius_coupled_completion_083.py\", line 77, in test_boolean_negative_row_price_is_retained\n    self.assertTrue(any(Q(v)<0 for v in certificate['row_prices']))\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 7 tests in 0.174s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "time_epoch": 1791723591.2561426,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_completion_083.CoupledTests.test_boolean_negative_row_price_is_retained",
+      "tests": 1,
+      "exit_code": 0,
+      "output": "test_boolean_negative_row_price_is_retained (test_mobius_coupled_completion_083.CoupledTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+      "reason": "Test expected negative diagonal at u6, but source/delay both vanished at unit; u5 gives exactrows\u22123/2,1."
+    },
+    {
+      "time_epoch": 1791724081.338356,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_completion_083.CoupledTests.test_exact_affine_outer_program test_mobius_coupled_completion_083.CoupledTests.test_persistent_model_memory_accounted_before_basis test_mobius_coupled_completion_083.CoupledTests.test_prospective_full_geometry_and_rational_gates test_mobius_coupled_completion_083.CoupledTests.test_exact_dual_and_lp_proposal test_mobius_coupled_completion_083.CoupledTests.test_zero_identity_all_unit_and_prime_composite_terms",
+      "tests": 5,
+      "exit_code": 0,
+      "output": "test_exact_affine_outer_program (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_persistent_model_memory_accounted_before_basis (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_prospective_full_geometry_and_rational_gates (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_exact_dual_and_lp_proposal (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_zero_identity_all_unit_and_prime_composite_terms (test_mobius_coupled_completion_083.CoupledTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.232s\n\nOK\n",
+      "reason": "Added exact affine proof-family reconstruction and cumulative persistent-model/native scratch gates; affected algebra/resource regressions."
+    },
+    {
+      "time_epoch": 1791724784.9180362,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_coupled_completion_083.CoupledTests.test_prime_anchor_preserves_signed_form_and_improves_price test_mobius_coupled_completion_083.CoupledTests.test_prime_anchor_with_exact_outer_proof_and_dual",
+      "tests": 2,
+      "exit_code": 0,
+      "output": "test_prime_anchor_preserves_signed_form_and_improves_price (test_mobius_coupled_completion_083.CoupledTests) ... ok\ntest_prime_anchor_with_exact_outer_proof_and_dual (test_mobius_coupled_completion_083.CoupledTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.240s\n\nOK\n",
+      "reason": "Known prime signs preserve the full quadratic form, strengthen price, and integrate exact outer theorem and independent dual."
+    }
+  ],
+  "distinct_tests": 11,
+  "status": "PASS"
+}

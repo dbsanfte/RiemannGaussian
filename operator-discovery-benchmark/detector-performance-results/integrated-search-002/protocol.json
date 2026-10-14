@@ -1,0 +1,48 @@
+{
+  "RH_proved": false,
+  "audit_seconds": 180,
+  "final_refit": false,
+  "final_scales": [
+    7,
+    11
+  ],
+  "global_bound_proved": false,
+  "grams_fixed_zero": true,
+  "input_source": "/home/dbsanfte/riemann/operator-discovery-benchmark/detector_resource_search.json",
+  "input_source_sha256": "0e2c86c88824bdc4537c4ed92ee0efb5bcb53a008d299234d76b038fdebbb3e6",
+  "limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 1024,
+    "max_degree": 12,
+    "max_denominator": 1000000,
+    "max_horizon": 80,
+    "max_monomials": 30000,
+    "max_operations": 200000000,
+    "time_limit": 180
+  },
+  "mode": "search",
+  "parallel": {
+    "max_jobs": 256,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 2147483648,
+    "timeout_seconds": 240.0,
+    "worker_memory_bytes": 1073741824,
+    "workers": 2
+  },
+  "runtime": {
+    "packages": {
+      "numpy": "2.2.6",
+      "python-flint": "0.9.0",
+      "scipy": "1.15.3"
+    },
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+  },
+  "schema": 1,
+  "source_builder": "calibrated checker factor builder used for construction; separate independent certificate algebra audit",
+  "training_scales": [
+    1,
+    2,
+    3,
+    5
+  ]
+}

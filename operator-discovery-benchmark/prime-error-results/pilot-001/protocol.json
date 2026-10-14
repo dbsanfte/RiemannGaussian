@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "grammar_version": "signed-first-jet-prime-errors-and-logarithmic-faithfulness-v1",
+  "seed": 2026101003,
+  "precision": 384,
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/parameter-jet-results/calibration-001",
+  "source_verification_sha256": "a603952267baf6288d471b9ff9d763a0a3c6a6b0c73745e76604fac65c07c28b",
+  "source_data_sha256": "9455ffef22bafbebe5170ffda0f30cf311221b7a892ca494a31621bb8e1f94f3",
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+    "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+    "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+    "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+    "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+    "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+    "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+    "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+    "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95"
+  },
+  "known_zero_dependency": {
+    "verification_sha256": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "source_sha256": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "centre": [
+      "1/2",
+      "14.13472514173469379046"
+    ],
+    "radius": "1/20000",
+    "scope": "previously certified simple critical-line zero; reflection and uniqueness"
+  },
+  "betas": [
+    "0",
+    "1/2",
+    "1",
+    "3/2"
+  ],
+  "bases": [
+    2,
+    3,
+    5
+  ],
+  "maximum_degree": 4,
+  "mixed_delays": [
+    [
+      "1",
+      "3/2",
+      "2",
+      "5/2"
+    ],
+    [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    [
+      "1",
+      "3/2",
+      "3",
+      "9/2"
+    ]
+  ],
+  "random_draws": 32,
+  "random_denominators": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "random_numerator_range": [
+    -32,
+    32
+  ],
+  "least_squares": "weighted complete response least squares, ridge 1/1024, coefficients rounded to 1/64 and clipped to [-16,16]",
+  "training_points": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "validation_points": [
+    193,
+    257,
+    389,
+    521,
+    769
+  ],
+  "log_powers": [
+    "0",
+    "1/2",
+    "1",
+    "2",
+    "3"
+  ],
+  "theta_inference": "OLS after subtracting log-power term; upward 1/32 quantization plus 0,1/8,1/4 margins; quarter-power grid zero through 3/2",
+  "offset_inference": "zero, mean and median of n>=16 training responses, rounded to 1/256",
+  "constant_inference": "twice maximum training ratio, rounded upward to 1/1024",
+  "archive_size": 12,
+  "selection": "unfiltered matched baseline; matched multiplier-zero-at-one filter; a known-zero-impossible and a pole-log-impossible diagnostic; fill distinct programs by validation, RH relevance, charged reciprocal logarithmic cost",
+  "final_cases": {
+    "large_count": 5,
+    "large_range": [
+      2049,
+      32767
+    ],
+    "intermediate_count": 4,
+    "intermediate_range": [
+      17,
+      127
+    ],
+    "boundary": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      15
+    ]
+  },
+  "delayed_support_cutoff": 128,
+  "native_logarithmic_bridge": {
+    "real_part": 4,
+    "heights": [
+      "0",
+      "7/3",
+      "19"
+    ],
+    "tail_h": 2
+  },
+  "native_zero_residue_calibration": {
+    "multiplier": "((s-1)zeta(s))^k, k=1,2,3; it vanishes at the actual enclosed zero",
+    "precision": 768
+  },
+  "all_height_multiplier_nonvanishing_required": false,
+  "data_scope": "complete signed point values and complete logarithmic coefficient prefixes; no complete-window moment claim",
+  "coefficient_producer": "factor-free inverse and finite Dirichlet logarithm, no prime/factor oracle",
+  "model_or_literature_calls": false,
+  "historical_priority_is_acceptance_gate": false,
+  "uniform_signed_premise_proved": false,
+  "RH_proved": false,
+  "remaining_assumptions": [
+    "first-jet li/count representation and finite dilation language",
+    "degree/delay/coefficient budgets",
+    "pure power times logarithmic point-bound models",
+    "written meromorphic residue proof backend",
+    "fixed-point quantitative cost does not certify all-height division"
+  ]
+}

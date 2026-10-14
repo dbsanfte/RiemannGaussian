@@ -1,0 +1,11 @@
+The grouped arithmetic pilot is closed and independently verified. All ten declared programs were retained. Four training vectors produced finite certificates; six produced no certificate. At final X8 andX9, the two unsigned calibrations transferred successfully (four observations), while both critical mu templates failed exact transfer at both scales (four template mismatches). All48 independent post-search actual arithmetic observations satisfied their stored scalar inequalities; polynomial-template failure is a separate result.
+
+Both accepted critical mu scalar budgets have positive cubic coefficient56/3 times1/zeta(2), so these fixed budgets cannot provide cofinal critical growth. Exact nonnegative-padding reduction collapses all four accepted vectors to the same unsigned Cauchy calibration. This establishes useful finite certificate machinery and an unsigned all-scale calibration, but no new Mobius cancellation estimate or RH proof.
+
+The actual coefficients overlap earlier stages. Algebraic relation families, factor witnesses, descriptor dictionary and calibration theorem were supplied before fitting. Final transfer used fixed structural weights, with only the exactly determined scalar residual permitted. No unsuccessful program or mismatch was dropped.
+
+Primary publication: grouped-arithmetic-results/pilot-001/publication-001/report.json
+Independent pilot receipt: grouped-arithmetic-results/pilot-001/independent_verification.json
+Independent reduction receipt: grouped-arithmetic-results/pilot-001/budget-reduction-001/independent_verification.json
+Exact cubic review: grouped_arithmetic_mu_cubic_budget_independent_review.txt
+All20 frozen sources are unchanged. Later unfinished experiments are outside this publication.

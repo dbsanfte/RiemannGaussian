@@ -1,0 +1,164 @@
+FACTOR-REGION SEARCH: COMPLETE SIGNED CORRELATIONS AND GLOBAL REJECTIONS
+
+Objective and current status
+
+The goal remains a verified actual signed arithmetic estimate at all scales
+with cofinal exponents, sufficient for ordinary RH. No complete estimate of
+that strength is proved. This turn implemented the proposed prime-factor
+language, ran a frozen search, reviewed its candidates in parallel, and proved
+that two selected inequalities are false despite passing every available final
+test. These refutations concern their full potential-innovation claims; the
+direct target energies and RH remain unresolved.
+
+Authoritative stage
+
+factor-region-results/pilot-001 is immutable. Source/protocol freezing preceded
+actual scoring; candidates, validation and queue were sealed before final case
+generation. Eighteen source/test/proof/review files are recorded in protocol.json.
+Thirty tests and fifteen independent audit groups passed. All three discovery
+worker outputs replayed byte for byte. Independent factor-local coefficients,
+source-region prefix arrays and arbitrary-precision dot products reconstruct
+all81 Gram entries, exact cutoffs, source coverage, features, fits and scores.
+
+The run generated3951 proposals,3942 distinct exact programs,9 aliases and
+no failed/missing proposals. Three targets were used: mu, c=mu*lambda, and
+G=C-(11/4)C(floor(x/6)), the filter learned in the previous sealed stage.
+There are432 supplied features from9 cutoff schemes,24 square vectors and
+2 normalization powers. Nonnegative potential weights are enumerated or
+proposed by60 LP attempts, rationalized, and fully refitted in exact arithmetic.
+LP optimality is not certified. Every proposal, alias and solver record survives.
+
+Training bases are powers of2 through4096; validation bases6144,8192,12288.
+Final bases32768,57813,65536 use complete coefficients through262143.
+Final arithmetic cost proxy1336290361 is below the declared3-billion budget.
+Selected programs have53 finite passes,1 dyadic stored-constant failure and
+54 missing observations at untrained q=17,29. The missing observations are
+not passes. Historical coefficient prefixes overlap; no unseen-prime holdout
+is claimed. The Python file guard is not an OS sandbox. All numerical data
+now constitute development evidence for any later adapted search.
+
+Nine selected programs received parallel reviews from the existing Sol6.1
+agents, with actual dispatch receipts in review-plan-001 and an immutable
+review-collection-001. Requested runtime model identity is not independently
+authenticated. The generic collector verifies provenance and coverage; it
+does not promote mathematical conclusions.
+
+Implemented representation and conditional bridge
+
+At each blockX, set z=floor(X^theta),u=floor(X^phi), theta,phi positive rational.
+Each source integer m>=2 is p^e*b with p its SMALLEST prime, e its exact
+positive valuation, and P^-(b)>p or b=1. The nine components are unit, then
+prime-small/large × core-small/large × odd/even valuation. The source indexm
+is classified; filter eventd*m is not reclassified. Every event and boundary
+is retained. Cutoffs are recomputed at each child scale.
+
+The complete Gram records sum_[X,2X)S_i(n)S_j(n)/X^2. Its sum over all81
+entries is the original filtered energyE_G. The search keeps signed cross
+terms inside each square and uses W=E_G+V with V a finite nonnegative sum
+of those full square forms divided byceil(X^eta). Every sufficiently large
+q admitting a uniform dyadic bound W(2X)-W(X)<=Cq ceil(X^(1/q)) would give
+critical E_G by telescoping. The existing fixed-filter pole-budget theorem
+then implies ordinary RH for these actual targets. The uniform inequality
+remains the missing premise.
+
+Also implemented: complete least-prime recursion for rough prefixes and
+coefficientwise symbolic log-prime forcing. Their identities are checked using
+actual arithmetic, not floating logarithms or random signs. They are calibration
+and proof coordinates, not new distribution estimates by themselves.
+
+Analytical result that changes the search
+
+Let F_X(y) be the actual c sum in component2: leastprime<=X^theta, even
+valuation, core<=sqrtX, with theta>=1/3 fixed. A separately reviewed proof gives
+
+ F_X(vX)=(-64 sqrt(v)+o(1))*X^(3/4)/(logX)^2,
+
+uniformly for v in any fixed compact subinterval of(0,infinity). Its main
+contribution is c(p^2*q)=-4 with bothp,q prime, p~X^(1/4), q~sqrtX. ALL other
+classes are bounded absolutely, including positive two-prime cores, smallp,
+high even exponents, unit cores, and the largep tail. The proof uses the
+unconditional classical prime number theorem, not an RH assumption or a
+prime-pair conjecture. It is not a claim of new independent prime information.
+
+For fixed filterP(s)=sum_d w_d d^(-s), the source cutoffs remain at the parentX.
+Consequently the full filtered component square satisfies
+
+ X^-2 sum_[X,2X) S2(n)^2
+   =(6144 P(1/2)^2+o(1))*X^(1/2)/(logX)^4.
+
+The multiplier isP(1/2), notP(3/4); this follows from the held parent cutoff.
+If P(1/2)!=0, any positive fixed weight on this singleton with eta<1/2 forces
+W to grow at least a positive power ofX divided bylog^4X. This contradicts
+the cofinal innovation telescope, even with arbitrary unknown Cq and q0.
+The asymptotic threshold is existential, not explicitly computed.
+
+factor_region_asymptotic_backend.py checks this theorem's domain for arbitrary
+matching programs in the current actual-c one/two-term fixed-filter class.
+It checks P(1/2)!=0 using exact rational squared magnitudes. Vanishing leading
+multiplier, signed component contrasts, different cutoffs and eta>=1/2 are
+unsupported by this rejection rule. All other potential weights must be
+nonnegative. Five domain tests cover these boundaries. Numerical constants
+never enter the rejection. The theorem and its independent review are frozen
+separately in asymptotic-adjudication-001, with exact source/queue bindings.
+This is reviewed mathematics plus program-domain checks, not a formal machine
+verification of the proof or PNT.
+
+The general rule rejects31 archived programs, including TWO selected programs:
+
+  095660153d4a: learned filtered-c potential, containing component2 with
+  weight4/17, eta0, and64/57, eta1/3; theta1/3,phi1/2.
+  HereP(1/2)=1-11/(4sqrt6) is nonzero because121!=96.
+
+  65c76f5dec44: learned unfiltered-c potential, containing component2 with
+  weight63/61,eta1/3; theta=phi1/2. HereP(1/2)=1.
+
+Both passed all six available final tests before analysis rejected their
+original global claims. The earlier elementary prime-singleton rule rejects
+12 other archived programs, giving43 distinct global potential refutations.
+Seven selected global claims remain unresolved. Frozen scores, formulas and
+reviews were not rewritten; the separate adjudication records the new result.
+
+Surviving auxiliary progress and remaining hard term
+
+For selected mu program679662, all even-valuation components vanish. Its
+global parity and all-nonunit vectors both yield M(n)-1. Its thin odd region
+has p<=X^(1/3), core<=X^(1/6), so every contributing m is<=sqrtX and its
+normalized squareH is<=1. The exact potential simplifies to
+
+ V=14T/R+16H(1+1/R)+(8/X)(1+1/R),
+ T=X^-2 sum_[X,2X)(M(n)-1)^2, R=ceil(X^(1/3)).
+
+Hence E<=W<=29E+76 at all integer scales. This proves auxiliary control and
+an equivalence with critical M energy, not that critical energy itself.
+The selected unit potentials are likewise bounded corrections. The remaining
+c even-core contrast ededbf6c31c4 failed its storedq12 constant atX32768;
+its existential global claim is not thereby refuted.
+
+Next work
+
+Prioritize cancellation INSIDE complete signed region combinations. The new
+theorem is a general exclusion rule for growing positive corrections; it must
+not be evaded by silently deleting a component, changing a normalization, or
+retuning the frozen candidates. Larger normalizers can create bounded
+auxiliaries, but do not supply the missing critical bound for E_G.
+
+Useful further expressivity is learned rational region vectors and exact
+prime/core counting counterterms, with full reconstruction and residuals.
+Any subtraction of a leading asymptotic leaves an explicit error whose rate
+must be proved: an o(X^(3/4)/log^2X) remainder is not a square-root bound.
+The next proof attempt should target a full signed cross-region inequality,
+using the rejected candidates to identify the necessary cancellation. Preserve
+the current positive/negative results as development evidence in a new protocol.
+
+Commands and records
+
+Use ../.venv/bin/python, not system Python. A new numerical run is
+  ../.venv/bin/python -B run_factor_region.py run NEW_DIRECTORY
+After complete candidate reviews, a new postselection adjudication is
+  ../.venv/bin/python -B factor_region_asymptotic_backend.py RUN NEW_DESTINATION
+report.txt/report.json bind the verified run and separate analytical adjudication.
+factor-region-results/latest.json binds these records and this handoff. All
+previous publications and the legacy theorem registry remain unchanged.
+
+Classical imported theorem: https://dlmf.nist.gov/27.2.E3 ; context:
+https://dlmf.nist.gov/27.12 . No historical novelty or RH proof is claimed.

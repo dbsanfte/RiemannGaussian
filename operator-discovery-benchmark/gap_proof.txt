@@ -1,0 +1,395 @@
+GAP COUPLING: EXACT LAWS, SHARP CONVERGENCE, AND ORDINARY ZETA ROOTS
+2026-10-07. Written mathematical proofs; not theorem-prover certified.
+
+This is a verified compound extension of the nonlinear logarithmic grammar,
+not an eleventh primitive family or an established historically new operator.
+The underlying additive prime-pair correlation is known. The experiments
+suggested useful parameter choices; the universal statements below require
+the proofs, including unconditional prime-density and sieve theorems. No RH,
+twin-prime conjecture, or prime-pair asymptotic is assumed.
+
+1. DEFINITIONS AND UNIVERSAL FORMAL LAWS
+
+Work over a characteristic-zero coefficient field, with Dirichlet product D,
+unit delta_1, augmented inputs h(1)=0, and normalized inputs f(1)=1. For an
+integer r>=1, exclude a=b and put
+
+  Phi^-_r(a,b)=ab|a-b|^r,  a,b>=2,
+  K^-_r(h,k)(N)=sum_{a!=b, Phi^-_r(a,b)=N}h(a)k(b),
+  P^-_r(f)=EXP_D(h+K^-_r(h,h)), h=LOG_D(f).
+
+Phi>=ab>=2 max(a,b). Therefore each coefficient uses finitely many strictly
+smaller input indices. K is a symmetric bilinear coefficient-local map.
+The logarithmic map h -> h+K(h,h) has the exact recursive inverse
+
+  h(N)=j(N)-sum_{a!=b,Phi(a,b)=N}h(a)h(b).
+
+This proves a two-sided inverse on all formal inputs, not just the tested
+prefixes. EXP_D and LOG_D then give a formal inverse for P. It does not
+prove convergence of an unrestricted analytic inverse.
+
+The index product is nonassociative: on delta_2,delta_3,delta_4, the two
+iterates are delta_(24*2^r) and delta_(24*10^r). Also K(delta_a,delta_a)=0.
+In particular a single-coordinate seed is fixed by the logarithmic inverse.
+There is no ordinary Catalan inverse-mass law for this coupling.
+
+For ordinary input and output powers, respectively,
+
+  P_in,beta(f)=EXP_D(beta*h+beta^2*K(h,h)),
+  P_out,beta(f)=EXP_D(beta*h+beta*K(h,h)),
+  P_in,beta /_D P_out,beta=EXP_D(beta*(beta-1)*K(h,h)).
+
+The maps generally fail both the ordinary unit-group homomorphism law and
+universal input-root commutation. Their separate zeta bridge is proved in
+section 5. Every Phi is even: if a,b are both odd their difference is even;
+otherwise ab is even. Hence EXP_D(K(h,h)) has no nonunit odd coefficient,
+and P(f)(N)=f(N) at every odd N. This is an exact quotient law.
+
+For a positive seed h, write the inverse of z -> z+K(z,z), applied to t*h,
+as sum_{ell>=1}t^ell G_ell, with
+
+  G_1=h, G_ell=-sum_{i+j=ell}K(G_i,G_j).
+
+Every coefficient in G_ell has sign (-1)^(ell-1), so collisions within a
+fixed leaf count do not cancel. Setting M_ell=sum_N |G_ell(N)| gives
+
+  M_ell=sum_{i+j=ell}M_i M_j
+          -sum_{i+j=ell}sum_N |G_i(N)G_j(N)|.
+
+This identity includes collisions of indices within and across leaf counts.
+It holds for every finite positive seed. A conditional colored binary-tree
+law can replace the overlap by 1_(ell even)*2^(ell/2-1)*M_(ell/2) when the
+tree hashes have the required injectivity; that hypothesis cannot be dropped.
+For seeds 2,3 at r=1,2,3, the tested masses through six leaves are
+2,2,8,32,160,800. Seeds 2,3,5 at r=1 reject the extrapolation at four leaves:
+M_2=6,M_3=36,M_4=232, whereas the simplified law predicts 240. The second-
+degree coefficients are -2 at 6 and -4 at 30, whose squared mass is 20,
+rather than 12. Indeed Phi_1(2,5)=Phi_1(3,5)=30. The complete INTEGER
+fibre of 30 also includes (5,6); the prime-power fibre contains only the
+first two pairs. Global prime-power injectivity is already false at r=1.
+
+For independent implementation checks, a complete fibre is recovered by
+enumerating d with d^r|N and testing whether d^2+4N/d^r is a square. The
+quadratic roots give a=(sqrt(d^2+4N/d^r)-d)/2>=2 and b=a+d. This is complete
+because d=b-a and ab=N/d^r for every contributing unordered pair.
+
+2. ZETA INPUT AND THE KNOWN CORRELATION REPRESENTATION
+
+Let u(n)=1. Its formal Dirichlet logarithm is
+
+  g(n)=Lambda(n)/log(n)=1/e if n=p^e, and 0 otherwise; g(1)=0.
+
+Writing PP for the prime powers, define the positive-coefficient series
+
+  Gamma^-_r(s)=sum_{a,b in PP, a!=b}g(a)g(b)/[ab|a-b|^r]^s.
+
+Absolute convergence depends only on sigma=Re(s). Rearranging positive
+terms, and then complex terms where absolute convergence is established,
+gives
+
+  Gamma^-_r(s)=2 sum_{d>=1}d^(-rs) C_d(s),
+  C_d(s)=sum_{n>=2}g(n)g(n+d)/[n(n+d)]^s.
+
+This is weighted bilinear additive correlation of logarithmic zeta
+coefficients, with the zero gap removed. Prime-pair Dirichlet correlations
+with von Mangoldt weights were studied before this experiment. Changing
+the weights to Lambda(n)/log(n), summing the power gap kernel, and composing
+with LOG_D/EXP_D requires the present bounds; prior conditional zero-
+distribution results for other weights are not imported.
+
+3. EXACT ABSOLUTE ABSCISSA
+
+For every integer r>=1,
+
+  sigma_c(r)=max(2/(r+2),1/2).
+
+Here is a proof, independent of any inference from finite FFT curves.
+
+Sufficiency above sigma_c: use g<=1, order a<b, and split a<=b/2 from
+a>b/2. In the first region the summand is at most a^-sigma b^(-(r+1)sigma).
+For sigma<1, summing a gives O(b^(1-sigma)), so convergence follows from
+(r+2)sigma>2. For sigma=1 the inner bound is O(log b), and for sigma>1
+it is bounded; both also give convergence. In the second region, on a
+dyadic block b~X the integer majorant is
+
+  O(X^(1-2sigma) sum_{1<=d<=2X}d^(-r*sigma)).
+
+This is summable in X=2^k when sigma>1/2 and (r+2)sigma>2, including the
+logarithmic case r*sigma=1. Thus Gamma is holomorphic above sigma_c by
+normal absolute convergence.
+
+The bulk lower bound: PNT gives order X/log X primes in each of two
+separated proportional intervals, for example [X,3X/2] and [7X/4,2X].
+Their pair contribution is at least
+
+  c X^(2-(r+2)sigma)/(log X)^2.
+
+Disjoint dyadic blocks prove divergence below 2/(r+2).
+
+The near-pair lower bound: let m be the prime count in [X,2X], so
+m~X/log X. Partition that interval into J bins of width D=ceil(8X/m),
+where J<=2X/D for large X. If n_j are the bin counts, Cauchy's inequality
+gives sum_j binom(n_j,2)>=(m^2/J-m)/2>=c*m. Each such pair has gap at most
+D=O(log X) and ab<=(2X)^2. Its contribution is therefore at least
+
+  c X^(1-2sigma)/(log X)^(1+r*sigma).
+
+Disjoint dyadic blocks prove divergence below 1/2, even with arbitrarily
+large fixed r. The argument averages gaps of order log X; it requires no
+assertion about infinitely many pairs of any fixed gap. These upper and
+lower bounds prove the stated sharp abscissa.
+
+4. ENDPOINT CLASSIFICATION
+
+The series converges at sigma_c for r=1 and for every r>=3, and diverges
+at sigma_c=1/2 for r=2. All claims here are unconditional.
+
+For r=2, let A(D) count unordered prime pairs in [X,2X] with gap at most D.
+The same bin argument, for 4X/m<=D<=X/2, gives
+
+  A(D)>=(m^2 D/(2X)-m)/2>=m^2 D/(8X).
+
+Layer-cake integration consequently gives
+
+  sum_{p<q in [X,2X]}1/(q-p)
+       >=integral_(4X/m)^(X/2) A(D)/D^2 dD
+       >=c X/log X.
+
+At sigma=1/2, the ordered contribution has additional weight
+2/sqrt(pq)>=1/X. Each block is at least c/log X, and summing disjoint
+dyadic blocks diverges. Slow apparent stabilization of finite prefixes
+cannot prove endpoint convergence. The finite layered certificates in
+gap_endpoint_probe.json are exact count inequalities only: each pair's
+dyadic reciprocal weights sum to at most twice its reciprocal gap, so
+their reported total is a valid finite energy lower bound.
+
+For the remaining endpoints, the weighted PP counting bound from PNT is
+
+  W(X)=sum_(p^e<=X)1/e=O(X/log X),
+  sum_(p^e<=X)g(p^e)/(p^e)^sigma
+       =O(X^(1-sigma)/log X), 0<sigma<1.
+
+Proper powers number O(sqrt(X)*log X), so they do not change the first
+bound. Partial summation gives the second. The unbalanced region a<=b/2
+at either endpoint is at most a constant times
+
+  sum_(b in PP) g(b) b^(1-(r+2)sigma)/log b.
+
+For r=1,sigma=2/3 this is sum g(b)/(b log b), which converges by W; for
+r>=3,sigma=1/2 the exponent is -r/2, which also gives convergence.
+
+It remains to bound balanced blocks, where a,b are both comparable to X.
+For r=1,sigma=2/3, the arbitrary-interval Brun--Titchmarsh upper bound
+implies uniformly in a that the number of primes within distance D is
+O(D/log D), D>=2. Partial summation, or dyadic summation in D, gives
+
+  sum_(q prime,0<|q-a|<=2X)|q-a|^(-2/3)
+       =O(X^(1/3)/log X).
+
+There are O(X/log X) choices of prime a, and (ab)^(-2/3)=O(X^(-4/3)).
+Thus the prime-prime block is O((log X)^(-2)). If at least one input is a
+proper prime power, bound the other by all integers: there are
+O(sqrt(X)*log X) choices and sum_d d^(-2/3)=O(X^(1/3)). The contribution
+is O(X^(-1/2)*log X). Both bounds sum over dyadic blocks.
+
+For r>=3,sigma=1/2, set alpha=r/2>1. A uniform unconditional sieve bound
+for even-gap prime pairs is
+
+  #{p<=2X: p,p+d prime} <= C S(d) X/(log X)^2,
+  S(d)=product_(p|d,p>2)(p-1)/(p-2),
+
+with a constant and starting X independent of d. Odd gaps between odd
+primes are absent; small exceptions do not affect convergence. To sum the
+gap weights, write
+
+  S(d)=sum_(k|d,k odd squarefree) product_(p|k)1/(p-2).
+
+Positive rearrangement gives the finite bound
+
+  sum_(d>=1) S(d)/d^alpha
+       =zeta(alpha)*product_(p>2)(1+1/((p-2)*p^alpha)) < infinity.
+
+The balanced prime-prime block is O((log X)^(-2)) after the factor
+(ab)^(-1/2)=O(1/X). Pairs with a proper prime power contribute at most
+O(X^(-1/2)*log X), since sum_d d^-alpha is finite. Summing blocks proves
+the endpoint convergence for every r>=3.
+
+Since coefficients are nonnegative, the finite endpoint total also
+majorizes all complex terms on the closed half-plane Re(s)>=sigma_c.
+The series is uniformly and absolutely convergent there, so Gamma is
+continuous on that closed half-plane and holomorphic in its interior.
+This does NOT establish holomorphy across its boundary. For the integer
+grammar, r=3 is the first choice reaching a continuous critical-line
+correction; r=2 reaches the same abscissa but has a divergent endpoint.
+
+5. ORDINARY ROOTS AND THE ACTUAL RH QUESTION
+
+Initially for Re(s)>1, the Euler LOG zeta and ordinary Dirichlet EXP give
+
+  P_in,beta(u)(s)=zeta(s)^beta exp(beta^2 Gamma^-_r(s)),
+  P_out,beta(u)(s)=zeta(s)^beta exp(beta Gamma^-_r(s)).
+
+This proves the scalar bridge from the exact operator, rather than merely
+defining its scalar output. A branch of LOG zeta continues each identity
+where appropriate. Both exponential factors are nonzero; they do not
+erase ordinary zeta roots. For beta>0 the input and output coefficient
+series are nonnegative and have exact absolute abscissa 1: their scalar
+values diverge as s decreases to 1 because zeta(s)^beta does, while Gamma
+is finite there. For arbitrary beta they converge absolutely for sigma>1
+by the EXP majorant. The correction's smaller convergence half-plane is
+not the full ordinary transformed series' abscissa.
+
+For r>=3, Gamma is holomorphic on Re(s)>1/2. At any zero rho strictly
+inside that half-plane, its factor is holomorphic and nonzero, so the
+ordinary root obstruction has exponent m*beta when zeta's multiplicity
+is m. At a critical-line zero rho, section 4 gives a finite Gamma(rho)
+and a nonzero limiting exponential. With a local branch chosen on the
+right half-neighborhood, as s approaches rho from Re(s)>1/2,
+
+  P_in,beta(u)(s) ~ c (s-rho)^(m*beta), c!=0,
+
+and similarly for the output family. A noninteger m*beta cannot be the
+vanishing order of a holomorphic extension through rho. This is one-sided
+root sensitivity, not a whole-loop monodromy claim: Gamma has not been
+proved holomorphic on a disk straddling the critical line.
+
+For precise RH relevance let F(s)=(s-1)zeta(s), removing its known pole,
+and consider J_j=F(s)^(2^-j) exp(2^(-2j) Gamma^-_r(s)), normalized on the
+real axis s>1. Then
+
+  RH iff all J_j, j>=1, extend single-valuedly and holomorphically
+        to Re(s)>1/2.
+
+If RH holds, F is nonzero on this simply connected half-plane and has
+a holomorphic logarithm, so the assertion follows. Conversely any zero
+there has finite multiplicity m. A holomorphic extension of J_j would
+require 2^j|m, since J_j^(2^j)=F*exp(2^-j Gamma). Requiring this for every
+j excludes every such zero. Zeta's functional symmetry then gives RH.
+This is a reformulation, NOT a new estimate proving the continuation.
+For a single j, multiplicities divisible by 2^j remain an obstruction to
+inferring zero-freeness from the root criterion.
+
+The new convergence proof explains a source of the arithmetic 1/2
+boundary: sufficiently close prime pairs, without referring to zero
+positions. It does not locate zeros, exclude off-line zeros, establish a
+self-adjoint RH operator, or evaluate Gamma at a critical zero by a
+certified infinite computation. The six one-sided zero groups reuse the
+two existing certified simple-zero disks near heights 14.134725 and
+21.022040; no additional zero is located in this stage.
+
+6. SPECTRAL REPRESENTATION, TAILS, AND NEGATIVE CONTROLS
+
+For sigma>1/2 and r*sigma>1, set w_n=g(n)n^-s. Then
+Q=sum |w_n|^2<=LOG zeta(2sigma)<infinity. The zero-diagonal Toeplitz kernel
+T_s(n,m)=|n-m|^-rs has l2 norm at most C=2zeta(r*sigma), by the l1 kernel
+bound. Thus the NONCONJUGATING bilinear form satisfies
+
+  Gamma=B_s(w,w), |Gamma|<=C Q<=2zeta(r*sigma)*LOG zeta(2sigma).
+
+This is classical additive correlation/Fourier convolution. The complex
+bilinear form differs from the sesquilinear Hermitian correlation; using
+both conjugated orientations produces a cosine phase and gives a different
+answer. Adding the excluded diagonal also changes the operator. Both
+mistakes, as well as small deliberate coefficient errors at index 6,
+are rejected by the numerical certificates.
+
+The zero-diagonal kernel is indefinite: at real s and h=delta_2-delta_3,
+B_s(h,h)=-2. Equivalently K(h,h) has coefficient -2 at index 6. It is not
+a positive semidefinite spectral RH operator. At sigma=1/2 the prime
+contribution to Q is sum_p 1/p, which diverges. Section 4 nevertheless
+proves finite off-diagonal Gamma for r>=3 using prime sparsity. The l2
+argument alone cannot establish this endpoint and cannot evaluate it.
+
+For numerical finite frames through N, take v_n=w_n for 1<=n<=N. On
+sigma>1 one may add the synthetic Fourier coordinate
+c_s=LOG zeta(s)-sum_(n<=N)w_n at n=0. This coordinate is an approximation
+device, not Dirichlet unit delta_1 or a new index-0 arithmetic operand.
+In both anchored and unanchored frames, putting c_s=0 for the latter,
+
+  q=sum_(n<=N)g(n)^2/n^(2sigma)+|c_s|^2,
+  epsilon^2 <= LOG zeta(2sigma)-sum_(n<=N)g(n)/n^(2sigma)+|c_s|^2,
+  |B_s(w,w)-B_s(v,v)|<=C*(2sqrt(q)*epsilon+epsilon^2).
+
+The first tail uses g^2<=g. The added coordinate contributes |c_s|^2 to
+the squared approximation error. Polynomial multiplication of W(z) and
+z^N W(z^-1) computes finite nonconjugating correlation coefficients
+exactly as Arb balls. Its diagonal is excluded.
+
+The independent reference sums pairs directly through 3072 and uses
+Gamma_N(s)+2c_s LOG zeta(4s). The exact anchored finite form instead has
+2c_s sum_(n<=N)g(n)n^(-4s); the difference is bounded by
+2|c_s|*N^(1-4sigma)/(4sigma-1). The independent Toeplitz bound uses
+C<=2(1+1/(r*sigma-1)) and the integer tail
+N^(1-2sigma)/(2sigma-1), rather than the producer's native zeta tail.
+Near critical zeros, its alternative tail majorant uses
+LOG zeta(2sigma)<=log(1+1/(2sigma-1)), with the known prefix subtracted.
+
+At the six full complex test arguments, LOG zeta(sigma)<pi, so native
+principal LOG zeta(s) equals the Euler branch. Anchoring with LOG zeta(s)
+is not used below sigma=1. Real LOG zeta(2sigma) is the positive Euler
+logarithm even when larger than pi. At s=2+7.19i, five input/output root
+groups compare exact EXP prefixes to native-zeta scalar references; a
+nonnegative real total minus the real prefix bounds the complex tail.
+
+For the reused zero centers and three positive offsets epsilon each,
+the producer certifies nonzero native zeta values and strictly positive
+bounds exp(-beta^2 M)<=|exp(beta^2 Gamma)|<=exp(beta^2 M), with
+M=2zeta(3sigma)*LOG zeta(2sigma). The checker changes the input cutoff,
+uses elementary integral bounds, and replaces direct zeta modulus checks
+by Taylor/Cauchy upper bounds from a larger holomorphic disk. These bounds
+are one-sided and grow as epsilon decreases. A nonzero BOUNDARY LIMIT
+comes from the separate endpoint theorem, not from these pointwise bounds.
+
+7. DISCOVERY AND VERIFICATION RECORD
+
+Exploration: FFT prefixes through PP input 524288, including balanced
+blocks, finite exact bin-count certificates, and a 220-program dimensional
+threshold grammar. Its training targets are derived from exact index
+homogeneity and bulk/near-pair dimensions. It is not an independent proof
+of infinite convergence, a prime-pair asymptotic, or unbiased discovery of
+the critical boundary. The finite energies are ordinary double precision.
+
+Exact source: signed rational unrelated inputs, four parameter choices,
+all formal root/inverse/quotient gates, five complete zeta prefixes through
+encoded index 8192, and a 27-program inverse-mass calibration with held-out
+collision seeds. Independent checker: difference/divisor discriminants,
+factor-product reconstruction, Omega derivation EXP/LOG recurrences,
+40,955 encoded indices, twelve finite integer-density certificates, and
+an Arb finite-energy check of the exploratory FFT. All six exact gates pass.
+
+Analytic source and checker: six fresh full native-zeta comparison groups,
+changed input/reference cutoffs and tail majorants, five ordinary-root
+scalar groups, six one-sided actual-zero groups with three input-root
+parameters apiece, and smaller coefficient-error negative controls. All
+six analytic gates pass. The checker imports none of the producer code;
+it shares its own independent exact helper and the FLINT/Arb library.
+The Hermitian negative control was refined to include both orientations;
+the actual six identity references and the other passed groups are unchanged.
+This stage raises the cumulative full comparison count from 126 to 132;
+root and zero auxiliaries are counted separately. The catalogue retains
+ten candidate families and gains its sixteenth compound consequence.
+
+8. PRIMARY SOURCES AND HISTORICAL SCOPE
+
+Jacob Korevaar, Prime pairs and Zeta's zeros, preprint dated May 15, 2007,
+arXiv submission June 5, 2008: https://arxiv.org/pdf/0806.0934
+Reviewed equations (1.3), (1.5) and (2.3). Equation (1.5) supplies a prime-
+pair sieve upper bound uniform in the gap; (2.3) is the established
+von-Mangoldt-weighted correlation. The paper's prime-pair conjectural
+and conditional zero-distribution results are not assumptions in this proof.
+
+Tomohiro Yamada, Explicit improvements of Brun--Titchmarsh theorem for
+arbitrary intervals, 2023: https://arxiv.org/pdf/2312.16090
+Reviewed Theorem 2; k=1 implies the arbitrary-interval O(D/log D) prime
+upper bound used at r=1. No explicit constant improvement is claimed here.
+
+NIST DLMF 27.12: https://dlmf.nist.gov/27.12
+Unconditional PNT supplies the proportional-interval prime counts and
+weighted prime-power counts. Toeplitz/Young/Fourier algebra and formal
+Dirichlet LOG/EXP are classical frameworks.
+
+The underlying kernel is a positive calibration of existing mathematics.
+History of this precise weighted composite and sharp endpoint application
+has not been established. A missing exact literature match is insufficient
+to certify originality. Verified-historically-new operators: zero. New
+zero-location or RH estimates: zero. The research objective remains open.

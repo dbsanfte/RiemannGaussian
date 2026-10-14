@@ -1,0 +1,22 @@
+The first complete14 moment diagnostic is retained unchanged as missing_resource.
+A direct replay of its frozen checker located the failure at
+check_complete_gram_moment_probe.py:42, P.multiply(a,a), where the resulting
+squared polynomial exceeded the existing 4096-bit coefficient limit. The
+original four-group separator was admitted before this step. No negative
+direction was admitted by that failed run.
+
+The versioned retry changes only the representation of a diagnostic negative
+direction, preserving the full fourteen-atom bank, matrix, supplied functional,
+polynomial bit limits and all source complements. It first tests exact signed
+unit pair directions, then bounded dyadic pair directions when a diagonal is
+zero. For a remaining indefinite matrix it takes the exact congruence direction,
+normalizes its largest coordinate, rounds to a predeclared dyadic denominator
+grid through exponent 256, and accepts only an exactly negative quadratic form.
+If no bounded direction is found, it returns an explicit resource failure.
+
+Every accepted direction is re-expanded as the complete sum of source squares.
+Its full polynomial pairing must equal the exact matrix quadratic form and be
+negative. Missing moments remain unknown. No eigenvalue rounding, implicit zero
+extension, relaxed coefficient limit, new floating proposal or new operator
+selection occurs. A negative diagnostic direction invalidates the supplied
+functional for the larger cone; it does not establish feasibility or a bound.

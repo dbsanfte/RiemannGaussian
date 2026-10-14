@@ -1,0 +1,67 @@
+{
+  "RH_proved": false,
+  "all_new_factor_coefficients_zero": true,
+  "all_scale_unsigned_identity_analytically_derived": true,
+  "gamma": "56/3",
+  "global_critical_bound_proved": false,
+  "input_sha256": {
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/attempts/001.json": "5f2ac43f96c8b94f85c606f09ef979722c4c1fb2af713fa66aed6ffb774d2c8a"
+  },
+  "nonzero_coefficients": [
+    {
+      "descriptor": {
+        "domain": "all",
+        "family": "pair",
+        "id": "10f0d9b361d5eceafc47593df6588a184a0b7bb89ec87af4d34a25c431bff464",
+        "sign": -1,
+        "weight": "child_kernel"
+      },
+      "index": 22,
+      "kind": "square",
+      "weight": "1"
+    },
+    {
+      "descriptor": {
+        "contrast": "half",
+        "family": "signed_block",
+        "id": "21b57de94da4b7e48ca0cb6cfa0143891c49c5a384baae7f170ec0b997b0c53f",
+        "region": "child",
+        "weight": "one"
+      },
+      "index": 58,
+      "kind": "square",
+      "weight": "2"
+    },
+    {
+      "descriptor": {
+        "family": "norm",
+        "id": "f2f2dfc5a13d5162e5d1514861b62690932e63687c8f381832b7106d7e4d0521",
+        "multiplier": "one",
+        "region": "all",
+        "weight": "child_rowmass"
+      },
+      "index": 9,
+      "kind": "relation",
+      "weight": "-1"
+    }
+  ],
+  "original_records_unchanged": true,
+  "program": {
+    "C": 1,
+    "allow_constant_slack": true,
+    "claim": "unsigned_calibration",
+    "constraint": "none",
+    "dictionary_mode": "extended",
+    "q": 2,
+    "target": "mu"
+  },
+  "proof_sha256": "78a183ce1045ac78d48d3bb1e6f98b3cc620ac8da81a854ea90c9feebbb67757",
+  "schema": 1,
+  "scope": "supplied unsigned Cauchy calibration; analytical derivation, not formal proof or discovery",
+  "training_slacks": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ]
+}

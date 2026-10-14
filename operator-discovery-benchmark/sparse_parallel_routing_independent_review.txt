@@ -1,0 +1,15 @@
+Independent sparse primal, parallel resource and workflow routing review
+
+Current sparse primal verifier is mathematically sound: zero shared weights skip only products/aggregation; all group schemas, polynomial horizons, within-group square signs and arithmetic relation premises remain validated, with memoized independent relation expansion. Complete lhs/residual and exact expanded certificate/slack matching remain mandatory. It imports only independent arithmetic checker primitives. Four focused tests passed, and five additional adversarial cases were independently rejected: missing dimensions, tiny exact nonzero weight1/1024, wrong arithmetic target, custom unsupported active axiom and boolean relation weight. Duals must verify every generator; primal zero support gives no permission to skip dual columns. Operation/time counts currently omit some rhs-copy/hash/premise-call costs and should be described as proxies or charged.
+
+Current process helper preserves original job order, returns every failure state, uses spawn without serial fallback, caps numerical thread environment before spawn and initializer, and respects available CPU affinity/cgroupquota. Three focused tests passed. Actionable resource findings sent to its owner: CPU count alone may spawn many workers; caller max_in_flight can be arbitrary; cumulative retained result bytes can grow max_jobs times max_result_bytes. Explicit worker/inflight/aggregate byte caps and a workload-derived or RLIMIT memory policy are needed to claim bounded memory. Actual CPU/memory comparisons must use the same deterministic outputs; resource outcomes cannot be suppressed as speedups.
+
+Existing main CLI run_expanded_probe.py is historically hash-bound, including compensated-shift-results/integration_verification.json. Workflow/fractional integration verifiers also bind driver_sha256 and preserve integration_snapshot copies. A NEW default dispatcher/versioned optimized runner avoids mutating sealed sources; explicit legacy route preserves historical replay. Changing live main CLI would require explicit new integration receipts with prior snapshots retained. Publish latest pointers only after independent verification; freeze new code/protocol before scores, refuse reused destinations, preserve require_verified_runtime and its Python -O prohibition.
+
+No frozen files edited. Findings reflect these source versions, pending coordinated optimization fixes.
+
+SHA256:
+detector_parallel.py 7781207c4cd21ad983acec77cffd6d320cc9dccb2f3a5505a8eb85e9b87fdaca
+check_grouped_arithmetic_sparse.py 731c1aa7147c77f8df16dd7be63d4a88e7aa61cc1e28e4ab12d8b7e363570492
+run_expanded_probe.py bb5944d9b9be19e6b52f059e13f9cd373e207eceaca912fce00311bbda7368d8
+detector_workflow_guard.py cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f

@@ -1,0 +1,14 @@
+{
+  "schema": "flux-mass-gate-search-development-v1",
+  "attempts": [
+    {
+      "tests_run": 3,
+      "status": "PASS",
+      "output": "test_coupled_prime_semiprime_signature_is_not_a_paid_bound (test_mobius_flux_mass_gate_079.FluxMass) ... ok\ntest_prime_flux_mode_binds_folded_mass_and_exponent (test_mobius_flux_mass_gate_079.FluxMass) ... ok\ntest_zero_mass_other_bins_and_cutoff_edges_remain_unpaid (test_mobius_flux_mass_gate_079.FluxMass) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK\n",
+      "elapsed_seconds": 0.4814301769947633
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 3,
+  "successful_test_executions": 3
+}

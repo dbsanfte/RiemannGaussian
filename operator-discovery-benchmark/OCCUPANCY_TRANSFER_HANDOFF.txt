@@ -1,0 +1,144 @@
+OCCUPANCY, FRACTIONAL WEIGHTS AND PRIME-PARITY RECOVERY
+
+Completed study
+---------------
+occupancy-transfer-results/pilot-001 completed successfully, with status
+OCCUPANCY_IDENTITIES_AND_FRACTIONAL_BULK_CERTIFICATES_VERIFIED.
+All sources, analytical reviews, protocol and outputs are frozen. Previous
+prime-slide and prime-exchange studies remain unchanged. No source table or
+actual-prime response experiment was rebuilt, and no hashes were created.
+
+The input was the full open recovery obligation from the prime-exchange
+study, not a request to improve its numerical constant. That previous study
+checked all272 archived distinct-prime words, selected exchange13618 and
+proved bounded-degree exchange-correction bounds. Its symmetric/full-graph
+complement was still open. The new search allows a real change of product
+parity: adjoining a fresh prime to one of four color bins hu,hv,ku,kv.
+
+What the detector now searches
+-----------------------------
+Every exactly occupied mask, including the empty/unit state, is retained.
+Generic exact nullspace elimination searches all625 rational eigenvalue
+pairs on[-2,2] with step1/6, without supplying eigenvectors. It found16
+modes in9 eigenspaces;616 proposed pairs had no mode. Literal independent
+recompositions of every coordinate certify a complete occupancy basis.
+All11 modes with scalar envelope<=1 vanish at the full-occupancy coordinate;
+they cannot alone recover the target. The complete16-mode decomposition
+does recover it algebraically, with no energy estimate inferred.
+
+For every mode the producer compiles the full parity-pairing kernel into
+bulk, left exit and right exit. An independent implementation checked1,632
+tiny fixture/mask identities using original integer prefixes, including
+units, one-orientation exits and outside support. These fixtures validate
+the exact code semantics; they are not samples establishing global growth.
+
+The fractional search considers product weights m^(-gamma),
+gamma=0,1/6,1/3,1/2,2/3,1, and searches exact piecewise Bernstein certificates.
+It checked54 weight/eigenspace constructions and certified51 scalar bulk
+envelopes. All five nonzero weights cover every mode. The lightest weight
+in this finite menu is the sixth root; no optimality over all weights is
+claimed. At the largest occupancy eigenvalues its polynomial is
+  1-4z+2z^3+2z^5, z=q^(-1/6).
+
+The search also tested216 weight/phase constructions and certified185.
+It verified individual union eigenrelations before admitting scalar
+two-leg transport, so degenerate mixtures could not hide phase mixing.
+At gamma1/6 it certifies phase half-widths1/8 and1/4 for every mode; larger
+weights admit broader cones in the declared menu. Certificates use complete
+partitions of[0,9/10], independently expanded back into monomials. They
+establish exact scalar or formal dilation-symbol inequalities, not a norm
+bound for moving arithmetic projections. All such recovery flags are false.
+
+The supplied occupancy primitives, spectrum and fractional weighting were
+analytically motivated before the run. This is automatic certificate search
+inside that recorded grammar, not a claim of bias-free or blind invention.
+Historical novelty is not a ranking condition.
+
+Analytical follow-through: a bounded actual source component
+-----------------------------------------------------------
+OCCUPANCY_TRANSFER_REVIEW_001.txt separately proves the exact finite-prime
+Euler/double-Perron representation of the weighted squarefree-product
+prefix projection. It includes each prime<=N=2X-1 zero or once, all16
+occupancy states, and half-integer Perron endpoints. Its full-contour
+integrals are conditional Perron limits, not assumed absolutely convergent.
+
+For gamma1/6, c=1/log N, X>=2, the rectangle
+  |Im(s)|,|Im(t)|<=c/4
+has absolute normalized contribution at most
+  beta^2*exp(4)/(pi^2*X), beta=9/2.
+The exact complete finite Euler product justifies this arithmetic component
+bound; bare zero-phase or formal-symbol stability alone would not. The
+high complement includes points with one OR both frequencies outside the
+rectangle. It remains unbounded. Neither component is a positive energy.
+
+Undoing the product weight is another real obligation. Pointwise
+m^gamma<=(2X)^(2gamma) does not compare two signed sums. The exact signed
+Abel identity requires weighted partial sums uniformly over every product
+cutoff T<=N^2. A fixed sixth-root weight has a generic inverse loss N^(1/3).
+A concrete sufficient refinement is cancellation on each dyadic product
+band and every partial subinterval with bound C_epsilon*X^epsilon*T^(-gamma).
+That new lemma is unproved; it has not been entered as a paid dependency.
+An analytically considered X-dependent gamma family offers subpower scalar
+bookkeeping, but has not been implemented and has the same kernel/recovery
+obligations. Do not substitute a good endpoint value for cutoff uniformity.
+
+Analytical follow-through: all valuations and a paid shared-prime sector
+------------------------------------------------------------------------
+PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt gives a complete rational local
+transition for all four color valuations. A color gets a negative factor
+at its first occupation by this prime and positive factors on subsequent
+valuation increments. Global occupancy and local prime occupancy differ.
+Exact a=p-d admission requires prime-support count states or the complete
+p/d comparison; D(n)<=beta*sqrt(n) gives a paid full norm comparison while
+retaining the finite mixed terms. The all-valuation transition itself has
+not yet been implemented in this new producer.
+
+The full quadratic union of pairs sharing q^j on both legs, q>n^rho,
+j>=2, has absolute bound
+  C_j*2^max(2-(2j-1)*rho,0)*X^(1-(2j-1)*rho)*(1+log(2X))^2,
+  C_j=beta^2*(j+1)^2*(1+1/(2j-1)).
+Thus j2,rho1/3 gives24*beta^2*(1+log(2X))^2, with ALL higher valuations,
+remaining gcd overlaps and the moving cutoff included. Subtract its union
+once. This pays a genuine repeated-prime sector; its complement and the
+main-term cross remain open. This rho is not the old bank theta3/4.
+
+For any fixed q and q-free H>1, the complete chain sums exactly to
+  sum_(e>=0)a(q^e H)=-d(H),
+and the H1 chain is identically zero. The complete source square therefore
+equals a paid q-free d-prefix square minus the signed joint exit forcing
+with Exit_(e,f)=W(H,K)-W(q^e H,q^f K). Infinite local exponent tails converge
+absolutely; both exits and their intersection are retained. The equivalent
+linear exit-plus-center target is marked an equivalent reformulation,
+not a proved reduction in difficulty. If q>N it becomes a restatement.
+
+These analytical arguments were independently developed by Sol6.1 agents
+and reviewed in the root thread. They are mathematical reviews, not formal
+proof-assistant certificates or execution of proof text.
+
+Validation and resource record
+------------------------------
+Producer:7 original development tests, then only2 newly added phase tests.
+Checker:one10-test development suite. One frozen combined suite passed all
+19 tests. No unchanged search retry or redundant full development rerun.
+Total charged proxy work4,011,100, including309,676 preparation operations;
+producer2,715,961 and independent audit985,463. Elapsed study4.3849seconds.
+Recorded symbolic peak318,464 cells; largest recorded process RSS517,060KiB;
+4GiB process limit within16GiB aggregate. These are operation/cell proxies
+and recorded RSS, not claims of bit complexity. Direct byte comparisons
+matched every frozen source and the complete parent input.
+
+Next exact input
+----------------
+Read candidate10_occupancy_joint_forcing_obligation.json, copied unchanged
+from occupancy-transfer-results/pilot-001/next_search_input.json. It retains
+the original target/source/centering/equivalence class, exact new birth and
+exit kernels, discovered mode/weight constructions, both analytical component
+theorems, signed Abel requirements and the full all-valuation complement.
+
+Priority: discover and prove a construction controlling the missing
+high-frequency/product-local correlation, or a complete all-valuation
+joint-exit recurrence with independently paid forcing. Keep centers joint,
+and require recovery to the actual whole moment. Do not deepen the same
+static mode search merely to obtain smaller multipliers. No new actual
+prime-distribution estimate, full signed bound or proof of RH was obtained.
+The research goal remains active; no external input or permission is needed.

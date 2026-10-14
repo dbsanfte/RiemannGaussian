@@ -1,0 +1,27 @@
+{
+  "schema": "fractional-prime-kernel-051-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0860330619616434,
+      "operations": 888269
+    }
+  ],
+  "counts": {
+    "factor_divisions": 33,
+    "divisor_rows": 43,
+    "log_evaluations": 47,
+    "power_evaluations": 41,
+    "cache_hits": 53,
+    "requests": 13
+  },
+  "peak_bytes_estimate": 2147786752,
+  "scope": "synthetic kernel fixtures, vonMangoldt calibrations, grammar enumeration, injected search/selection responses; no scientific candidate table",
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "proof_provider_imported": false,
+  "uniform_sign_claimed": false
+}

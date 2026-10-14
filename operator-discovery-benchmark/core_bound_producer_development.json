@@ -1,0 +1,28 @@
+{
+  "operations": 1619100,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=1296120\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.313s\n\nOK\n",
+      "operations": 1296120,
+      "elapsed_seconds": 0.39883058398845606
+    },
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=322980\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.135s\n\nOK\n",
+      "operations": 322980,
+      "elapsed_seconds": 0.22019861900480464,
+      "reason": "A numerical counterexample closes the proposed constant as false; it must not remain an open proof premise."
+    },
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=0\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "operations": 0,
+      "elapsed_seconds": 0.07739167101681232,
+      "reason": "Log-Abel block-energy recovery conservatively includes the extra log from summing dyadic energies."
+    }
+  ]
+}

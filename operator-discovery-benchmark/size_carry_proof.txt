@@ -1,0 +1,318 @@
+INTEGER SIZE CARRIES, PAIRED ZETA ROOTS, AND THE DOMAIN OF EACH CLAIM
+
+Research record, 7 October 2026. Written universal proofs below are
+supported by exact rational and Arb checks. They are not theorem-prover
+certificates. No historical originality or new RH estimate is claimed.
+
+1. EXACT INTEGER HEIGHTS AND TWO ASSOCIATIVE PRODUCTS
+
+Fix an integer b>=2. For positive integers n define
+  h(n)=floor(log_b(n)), H(n)=ceil(log_b(n)),
+  theta(n)=log_b(n)-h(n), psi(n)=H(n)-log_b(n),
+  I(n)=1[n=b^k for an integer k>=0].
+The implementation computes h and H by integer comparisons, including
+exactly at arbitrarily large powers of b; floating logarithms are not used.
+We have theta+psi=1-I. Both defects
+  c_-(a,d)=h(ad)-h(a)-h(d)=theta(a)+theta(d)-theta(ad),
+  c_+(a,d)=H(a)+H(d)-H(ad)=psi(a)+psi(d)-psi(ad)
+take values in {0,1}. Each vanishes if either argument is 1. Each satisfies
+  c(a,d)+c(ad,e)=c(d,e)+c(a,de).
+This is an exact telescoping identity, not a fitted associativity rule.
+
+For either choice of c, let
+  (f K_t g)(n)=sum_{ad=n} (1-c(a,d)+t*c(a,d))*f(a)*g(d).
+For t!=0 the weight is t^c, so the cocycle identity proves associativity.
+Both sides of associativity are polynomials in t; it therefore also holds
+at t=0. Alternatively, when t=0 the product of two weights equals 1
+exactly when the common total defect is 0. All K_t are commutative, with
+identity delta_1, and ordinary Dirichlet convolution is K_1.
+
+The carry-only product C, with weight c, is associative too: the product
+of two carry weights is 1 exactly when the total defect is 2. It has no
+identity, since delta_1 C f=0. Thus ordinary convolution splits into two
+compatible associative pieces K_0+C; their arbitrary linear pencil K_t
+is associative. This assertion includes the absence of a unit for C.
+
+The nonzero-t family is a classical change of scalar weights. In the
+floor case M_t(f)(n)=t^(-h(n))*f(n) satisfies
+  M_t(f K_t g)=M_t(f)*M_t(g).
+In the ceiling case use M_t(f)(n)=t^(H(n))*f(n). These products are instances
+of established weighted divisor convolution. The degenerate t=0 products
+are the selected candidates; a general associative-kernel framework was
+already studied by Davison and later authors. Their definition alone is
+not evidence of an undiscovered arithmetic primitive.
+
+2. TRANSFERS, ROOT LIMITS, AND WHAT IS KNOWN ANALYTICALLY
+
+Work with arithmetic functions over a characteristic-zero field, f(1)=1.
+Write *=ordinary Dirichlet convolution and delta=delta_1. For h(1)=0,
+coefficient-local EXP_K(h)=sum_{j>=0}h^{K j}/j! terminates at every n,
+because each nonunit factor contributes at least one to Omega(n).
+LOG_K is its usual formal inverse. In particular
+  U_-(f)=EXP_Kminus(LOG_*(f)), U_+(f)=EXP_Kplus(LOG_*(f))
+are normalized unit-group isomorphisms, with inverses EXP_* LOG_K. They
+satisfy U(f*g)=U(f) K_0 U(g) on every normalized input. This abstract
+LOG/EXP transfer construction is established mathematics.
+
+Let L_q(f) be the q-fold K_0 product of the ordinary normalized qth root
+f^{*1/q}. In the coefficient-local topology,
+  f^{*1/q}=delta+(1/q)*LOG_*(f)+O(q^-2),
+and q*LOG_K(f^{*1/q}) tends to LOG_*(f). Hence L_q(f) tends to U(f).
+For the special zeta input u(n)=1, the ordinary root coefficients
+  d_alpha(n)=product_{p^e||n} (alpha)_e/e!
+are nonnegative for alpha>=0. The K_0 weights are 0 or 1. The ordinary
+q-fold root product is u, so discarding terms gives 0<=L_q(u)(n)<=1 for
+every n, base b, orientation and positive integer q. Passing to the
+coefficient limit gives 0<=U(u)(n)<=1. Thus all these zeta-input series
+converge absolutely on Re(s)>1, and the q-limit is locally uniform there,
+by domination with sum n^-sigma on every closed smaller half-plane.
+
+The subsequent size_resonance_proof.txt rules out making either individual
+U holomorphic at s=1 by any finite real power of s-1. Finite-q lifts also
+create artificial singularities on Re(s)=1. Other continuations remain
+unestablished. The paired operation in section 5 has a separate, stronger
+bridge. Its bridge must not be attributed to the individual transfers.
+
+3. INTEGER VALUES MATTER, WITH A LIMIT TO THAT CONCLUSION
+
+In base 2, Kminus(2,3)=1 whereas Kminus(5,7)=0: 6 has height 2 and 35
+has height 5. This distinguishes two products of distinct primes. The
+floor transfer has U(u)(6)=1, U(u)(35)=0, U(u)(9)=1/2; the ceiling
+transfer has U(u)(6)=1, U(u)(35)=1, U(u)(9)=1. Both have coefficient 1
+at n=4. They are not invariant under arbitrary relabeling of prime values.
+The extraction f(n)->f(n^2) is not a Kminus algebra map: in base 2,
+delta_2 Kminus delta_2=delta_4, but extraction sends delta_2 to zero
+and delta_4 to delta_2.
+
+These tests establish dependence on an assigned multiplicative size.
+The height construction still makes sense on a free multiplicative monoid
+with assigned generator norms; it does not by itself single out the
+ordinary prime distribution. The integer gap used in section 7 is an
+additional fact about actual integer inputs. Neither observation supplies
+a new estimate about zeta zeros.
+
+Sparse coefficient validation avoids hiding missing arithmetic terms in
+a giant zero-padded array. For a fixed n=product p^e, define polynomials
+C_{p,0}(z)=1 and
+  e*C_{p,e}(z)=alpha*sum_{j=1}^e z^{h(p^j)}*C_{p,e-j}(z).
+These are the coefficients of
+  exp(alpha*sum_{j>=1} z^{h(p^j)}*x^j/j).
+The floor-transfer coefficient EXP_Kminus(alpha LOG_* u)(n) is the
+coefficient of z^{h(n)} in product_p C_{p,e}(z). Indeed the sum of heights
+of factors is at most h(n); equality holds exactly when all accumulated
+floor carries vanish. This yields an independent cycle-height evaluator.
+For alpha=1, C_{p,e}(1)=1. The usual labeled-permutation cycle expansion
+also shows Omega(n)! times the coefficient is an integer. For rational
+alpha=a/d, Omega(n)!*d^{Omega(n)} clears the denominator: the number of
+cycles is at most Omega(n). The checker's sparse profiles include alpha
+1/2 and 3/2 and integers far beyond the dense cutoff.
+
+4. CALIBRATION, COUNTEREXAMPLES, AND A COLLAPSING FAMILY
+
+The additive-looking condition gcd(a+d,ad)=1 is equivalent to gcd(a,d)=1:
+a prime dividing the sum and product divides both factors, and conversely.
+It rediscovers ordinary unitary convolution. This is an equivalence of
+coprimality conditions, not equality of the two gcd values.
+The shifted condition gcd(a-1,d-1)=1, with the unit forced, fails
+associativity on (2,2,4), with left/right weights 0 and 1. An additive
+residue carry modulo 5, used without changing the underlying multiplication
+of indices, fails on (2,2,6), also with weights 0 and 1. The grammar must
+respect the algebra in which a carry was derived.
+
+For m>=1 put g_m(n)=floor(n/m)-floor(1/m). It is superadditive under
+multiplication. For m>1 and a,d>=2, ad>=a+d implies
+floor(ad/m)>=floor(a/m)+floor(d/m); unit cases are exact. For m=1,
+the defect is (a-1)(d-1). If the defect is zero, then for m>1
+  ad-a-d<m, so (a-1)(d-1)<=m,
+and ad<=2m+2, since a+d<= (a-1)(d-1)+3 for a,d>=2.
+The m=1 case has no allowed nonunit split. Consequently the zero-defect
+product has no allowed nonunit split at any n>2m+2. For every normalized f,
+  EXP_K(LOG_* f)(n)=LOG_* f(n), n>2m+2.
+On the zeta input its Dirichlet series is log(zeta) plus a finite Dirichlet
+polynomial. These surviving floor-quotient kernels are recorded as a
+classical collapse, rather than more interesting new operators.
+
+5. A UNIVERSAL PAIRED IDENTITY, INCLUDING COMPOSITE BASES
+
+Let R_b(f)(n)=I(n)*f(n); it keeps exactly the coefficients at b^k,
+including k=0. From theta+psi=1-I,
+  c_minus(a,d)+c_plus(a,d)=1-I(a)-I(d)+I(ad).
+Subtracting the defects from 2 and summing divisor terms proves, on all
+inputs a,d (now arithmetic functions), the bilinear law
+  a Kminus d+a Kplus d
+    =a*d+R_b(a)*d+a*R_b(d)-R_b(a*d).
+For any normalized f and any complex beta, set g=f^{*beta}. Then
+  B_{b,beta}(f)
+    =1/2*(g Kminus g+g Kplus g-f^{*2beta}+R_b(f^{*2beta}))
+    =g*R_b(g).
+This is a universal identity; it is not merely a fit to u. It is a verified
+consequence of the two products and a projection, not an additional
+primitive counted by naming its composition.
+
+R_b is linear, unital and idempotent. It is an ordinary convolution
+homomorphism on all inputs exactly when b is prime. For prime b the
+submonoid of b-powers is divisor-closed. If b is composite, choose a
+proper factor a and d=b/a, both >1 and <b. With f=delta+delta_a,
+g=delta+delta_d, R_b(f)=R_b(g)=delta but R_b(f*g)=delta+delta_b.
+In particular b=6 gives a=2,d=3; b=4 already fails with a=d=2.
+The paired identity did not assume this false composite-base homomorphism.
+
+6. A ZERO-FREE CORRECTION BY A BETA MOMENT REPRESENTATION
+
+For u, the classical ordinary root is d_beta. Write b=product p^{e_p},
+  a_k=d_beta(b^k)=product_p (beta)_{e_p*k}/(e_p*k)!,
+  x=b^-s, R_{b,beta}(s)=sum_{k>=0}a_k*x^k.
+For 0<beta<1 choose independent random variables T_p with the probability
+density t^{beta-1}(1-t)^{-beta}/B(beta,1-beta), 0<t<1. The beta integral
+gives E[T_p^j]=(beta)_j/j!. Therefore with V=product T_p^{e_p},
+  a_k=E[V^k], R_{b,beta}(s)=E[1/(1-x*V)], Re(s)>0.
+This follows by an absolutely convergent geometric series, since 0<=V<=1
+and |x|<1. For beta=0 use V=0, and for beta=1 use V=1, with V^0=1.
+Thus the statement holds for every real beta in [0,1] and every integer
+base b>=2, not just the rational test parameters or prime bases.
+
+For any |w|<=r<1,
+  Re(1/(1-w)) >= 1/(1+r).
+This follows either by minimizing on the boundary circle or directly
+from Re(1/(1-w))=(1-Re(w))/|1-w|^2. Averaging gives
+  Re R_{b,beta}(s)>=1/(1+b^{-Re(s)})>1/2, Re(s)>0.
+The correction is holomorphic and nonzero on this entire half-plane.
+
+The explicit series is classical hypergeometric. Its coefficient ratio is
+  a_(k+1)/a_k=product_{p^{e_p}||b} product_{j=0}^{e_p-1}
+                         (beta+e_p*k+j)/(e_p*k+j+1).
+Its numerator parameters are (beta+j)/e_p; denominator parameters are
+(j+1)/e_p, with one parameter 1 removed for the hypergeometric k!.
+For b prime it is (1-b^-s)^(-beta); for b=6 it is
+2F1(beta,beta;1;6^-s). At beta=1/2 this is the classical complete elliptic
+integral (2/pi)*K(sqrt(6^-s)), using the NIST modulus convention K(k).
+The hypergeometric identity and beta moment integral are not new primitives.
+
+The paired zeta series satisfies, initially Re(s)>1,
+  B_{b,beta}(u)(s)=zeta(s)^beta*R_{b,beta}(s).
+All powers use the branch normalized on the positive real axis. This
+identity follows from the exact coefficient law and absolute convolution
+of the two factors. Put Z(s)=(s-1)*zeta(s), holomorphic on H={Re(s)>1/2}.
+The initially pole-cancelled paired series is
+  Phi_{b,beta}(s)=(s-1)^beta*B_{b,beta}(u)(s)=Z(s)^beta*R_{b,beta}(s).
+
+Fix any b>=2. RH is equivalent to every Phi_{b,2^-j}, j>=1, admitting
+single-valued holomorphic continuation to H. If RH holds, Z is zero-free
+on simply connected H and has a holomorphic logarithm, so all these powers
+exist. Conversely a zero of Z of multiplicity m in H can admit such a
+power only if m/2^j is an integer. No positive finite m has this property
+for every j. The nonzero R factor cannot remove its monodromy. The usual
+functional equation and symmetry turn absence of zeros in H into RH.
+A square-root test alone misses even multiplicities; finitely many dyadic
+orders miss sufficiently divisible multiplicities. Integer beta=1 never
+has this branch obstruction and serves as a control.
+
+A corollary for the universal real-parameter theorem: a single fixed
+irrational beta in (0,1) also gives an RH-equivalent holomorphic-continuation
+criterion, since m*beta is never an integer. The numerical scalar grammar
+in this experiment uses rational beta only; no implementation of exact
+irrational arithmetic or verification of global continuation is claimed.
+
+7. A SEPARATE VERTICAL-ZETA FORMULA FOR THE FLOOR SQUARE
+
+Let F_beta(s)=zeta(s)^beta and
+  J_beta(s)=sum theta(n)*d_beta(n)*n^-s.
+The floor kernel is 1-theta(a)-theta(d)+theta(ad), so for g=d_beta,
+  (g Kminus g)(s)=F_beta(s)^2-2*F_beta(s)*J_beta(s)+J_(2beta)(s),
+initially Re(s)>1. Put tau=2*pi/log(b). The Fourier series for the
+periodic sawtooth has midpoint value 0 for theta-1/2 at integers.
+To recover theta(n)=0 at exact b-powers one must subtract half their
+Dirichlet series. The Fejer-summed identity is
+  J_beta(s)=(F_beta(s)-R_{b,beta}(s))/2
+       -lim_{M->infinity} (1/(2*pi*i))*sum_{0<|m|<=M}
+              (1-|m|/(M+1))*F_beta(s-i*m*tau)/m.
+Fejer means of the bounded sawtooth are uniformly bounded, so absolute
+Dirichlet convergence permits dominated convergence for Re(s)>1,
+0<=beta<=1. Omitting R at exact powers gives an incorrect formula.
+
+Here is an explicit bound used for the fresh actual-zeta checks. Let
+N=M+1 and L_N=(1+2*log(N))/(4*N). The Fejer kernel on [-1/2,1/2]
+is bounded by min(N,1/(4*N*t^2)). Its first absolute moment is <=L_N;
+the mass outside [-delta,delta] is <=1/(2*N*delta). If n is not an exact
+b-power, the distance delta of log_b(n) to the nearest integer is
+  delta>=1/(sqrt(b)*n*log(b)).
+To see this, the nearest power b^k is at most sqrt(b)*n and differs from
+integer n by at least 1; the mean-value bound for log gives the assertion.
+Thus the pointwise Fejer error is at most
+  L_N+sqrt(b)*n*log(b)/(2*N).
+At exact powers, after the explicit resonance subtraction, it is zero.
+Since 0<=d_beta(n)<=1, the resulting absolute error for sigma=Re(s)>2 is
+  E(b,sigma,M)=L_N*(zeta(sigma)-1/(1-b^-sigma))
+   +sqrt(b)*log(b)/(2*N)*(zeta(sigma-1)-1/(1-b^{1-sigma})).
+For 0<=beta<=1/2 the floor-square error is <=(2*|F_beta(s)|+1)*E,
+using F_(2beta)=F_beta^2 with its normalized branch.
+
+The independent verifier uses ordinary partial Fourier sums instead,
+with a different cutoff. Abel summation bounds the sawtooth remainder
+by 1/(pi*N*|sin(pi*theta)|)<=1/(2*pi*N*delta). Hence its J error is <=
+  sqrt(b)*log(b)/(2*pi*N)
+       *(zeta(sigma-1)-1/(1-b^{1-sigma})), sigma>2.
+Both verifiers use a separate Dirichlet truncation error
+N_arith^{1-sigma}/(sigma-1) for series coefficients bounded by 1.
+
+These are proved formulas and explicit errors in their stated domains.
+An infinite sum of vertically shifted zeta roots does not automatically
+continue to H. No extension of this individual floor square, or of the
+full floor/ceiling root-limit transfers, is inferred from these formulas.
+
+8. ACTUAL ZETA CHECKS, NEGATIVE CONTROLS, AND PUBLICATION STATUS
+
+size_carry_search.py scores 447 kernels: 334 training fits, 281 finite
+held-out survivors, 60 distinct fingerprints through 1024. These numbers
+are empirical search counts, not 281 proved operators or 60 new laws.
+Only the selected floor/ceiling kernels and the controls above have the
+stated universal arguments. check_size_carry.py imports no production
+arithmetic helpers, recomputes every decision, uses triangular Euler-degree
+LOG/EXP and binomial finite lifts, and verifies the selected sparse profiles
+by independent prime-cycle polynomials. Generic input laws and the paired
+identity are tested beyond the zeta coefficient input.
+
+size_analytic_probe.py uses actual Arb zeta values at six fresh complex
+points, three bases (2,6,12) and three beta values (1/2,1/4,1/8). It
+compares both the paired identity and the individual floor-square Fourier
+formula with exact arithmetic series, using proved tails. Doubled
+coefficients and omission of the power-resonance term are rejected.
+check_size_analytic.py uses different arithmetic and spectral cutoffs,
+ordinary Fourier sums in place of Fejer means, and an exact ratio series
+with a geometric tail in place of native hypergeometric evaluation.
+
+At rho near 1/2+14.13472514173469379046*i, a Taylor/Rouche calculation
+certifies an actual unique simple zeta zero in a disk of radius 1e-4.
+Reflection puts it on the critical line. The independent verifier uses
+a Cauchy remainder bound on a larger circle. At that disk, twelve paired
+correction cases (three bases and beta=1/2,1/4,1/8,1) are certified to
+have positive real part. Nine fractional cases have strictly positive
+root-monodromy lower bounds; the three beta=1 controls have no branch
+phase. This detects a genuine zeta zero, rather than a substituted zero
+model. A critical-line boundary test is compatible with RH. It neither
+finds an off-line zero nor proves its absence.
+
+Reviewed primary sources for the frameworks and special functions:
+T. M. K. Davison, On Arithmetic Convolutions, Canadian Mathematical
+Bulletin 9 (1966), 287-296, DOI 10.4153/CMB-1966-037-x.
+  https://www.cambridge.org/core/services/aop-cambridge-core/content/view/198C74522DE4B0F126BF0231877B01A8/S0008439500052863a.pdf/on_arithmetic_convolutions.pdf
+Section 1 defines general divisor kernels. Associativity is condition
+(i) of Theorem 1. The additional condition (ii) preserves multiplicative
+functions; the size kernels need not satisfy it. His examples do not
+establish a publication match for the exact paired identity here.
+S. Porubsky, Structure of the group of quasi multiplicative arithmetical
+functions, Acta Academiae Paedagogicae Agriensis, Sectio Mathematicae 30
+(2003), 133-145; sections 3 and 4 treat generalized kernel products and
+free commutative semigroups, respectively.
+  https://real.mtak.hu/142348/1/AAPASM_30_from133to145.pdf
+NIST DLMF 5.12.1 gives the beta integral; 19.5.1 gives the elliptic
+hypergeometric identity; 25.4 and 25.10 give zeta reflection/zero context.
+  https://dlmf.nist.gov/5.12.E1
+  https://dlmf.nist.gov/19.5.E1
+  https://dlmf.nist.gov/25.4
+  https://dlmf.nist.gov/25.10
+The existing novelty_audit.txt covers the LOG/EXP and fractional-divisor
+literature used by previous stages. Failure to find an exact matching
+publication does not prove historical originality. The verified-new
+operator list therefore remains empty. Further work must resolve history
+and prove stronger domains or useful bounds for the individual transforms.

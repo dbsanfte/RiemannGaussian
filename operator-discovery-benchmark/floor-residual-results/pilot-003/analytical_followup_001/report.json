@@ -1,0 +1,97 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "additional_norms_evaluated": 0,
+  "canonical_eta1_refuted_profiles": 144,
+  "canonical_frontier_profiles": 306,
+  "canonical_frontier_unsupported_profiles": 162,
+  "checker_operations": 33699,
+  "development_receipts": {
+    "check_floor_residual_global_rate_guard_046_development.json": {
+      "edits_stopped": true,
+      "norms_evaluated": false,
+      "old_suites_run": false,
+      "operations": 71420,
+      "owner": "independent_checker",
+      "review": "Independent reviewed-rule admission: source/rounding normalization, exact strict rational gates, complete harmonic/unit/child terms, all-infinite shifted tail, imported conditional Mertens estimate, arbitrary zero multiplicity, RH-true/false case split and existential lower-bound scope.",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-",
+            "ast.parse new checker and synthetic test sources"
+          ],
+          "correction": "Added the missing closing list bracket in the synthetic request fixture before the sole unittest suite; no production math or source application changed.",
+          "elapsed_seconds": 0.1,
+          "elapsed_source": "rounded tool-reported wall time",
+          "operation_accounting": "conservative one operation per source character parsed; no test module executed",
+          "operations": 24255,
+          "returncode": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n  File \"/usr/lib/python3.10/ast.py\", line 50, in parse\n    return compile(source, filename, mode, flags,\n  File \"<unknown>\", line 17\n    'terms':[{'rate':r,'weight':w} for r,w in (terms or [('1','2'),('2','-1')])},'auxiliary':None},\n                                                                               ^\nSyntaxError: closing parenthesis '}' does not match opening parenthesis '['\n",
+          "stdout": "",
+          "tests": 0
+        },
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_check_floor_residual_global_rate_guard_046"
+          ],
+          "elapsed_seconds": 0.10074130102293566,
+          "operations": 47165,
+          "peak_rss_KiB": 27216,
+          "returncode": 0,
+          "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.030s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_global_rate_guard_046 operations=47165 checker_operations=40916 fixture_operations=6249 elapsed_seconds=0.030132275016512722\n",
+          "tests": 18
+        }
+      ],
+      "source_values_evaluated": false,
+      "tests": 18
+    },
+    "floor_residual_global_followup_046_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.002213519997894764,
+          "errors": 0,
+          "failures": 0,
+          "operations": 911,
+          "returncode": 0,
+          "tests": 3
+        }
+      ],
+      "schema": "global-moving-followup-integration-v1",
+      "scope": "toy requests and artificial finite statuses; no actual source, norms or selected application"
+    },
+    "floor_residual_global_rate_guard_046_development_receipt.json": {
+      "elapsed_seconds": 0.0042892450001090765,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "metered_proxy_operations": 1861,
+      "module": "test_floor_residual_global_rate_guard_046",
+      "scope": "synthetic ASTs and rational boundary-layer algebra; no actual source/norm/selected applications",
+      "tests_run": 10
+    }
+  },
+  "elapsed_seconds": 0.24900583398994058,
+  "new_frozen_source_count": 13,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5
+  ],
+  "producer_operations": 30347,
+  "selected_bound_rejection_counts": {
+    "OPEN": 0,
+    "finite_counterexample": 1,
+    "global_rate_obstruction": 3
+  },
+  "selected_claim_count": 4,
+  "status": "MOVING_PROFILE_BOUNDS_REVIEWED_GLOBAL_RATE_GUARD_ACTIVE",
+  "uniform_signed_upper_bound_proved": false
+}

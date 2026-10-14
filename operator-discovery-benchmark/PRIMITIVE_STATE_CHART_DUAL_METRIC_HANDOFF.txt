@@ -1,0 +1,98 @@
+Publication034: diagonal-metric sparse search for a finite-cone separator
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-metric-001
+
+Outcome
+NONCERTIFIED. A complete560-step numerical trajectory selected291 positive
+weights; the one exact support solve returned inconsistent exact native-support
+equations. No full exact witness was proposed. The independent audit verified
+the saved workflow, metric metadata, work accounting and support binding.
+It did not replay floating scores or certify the failed support as a new
+infeasibility theorem. No signed arithmetic estimate or RH result was found.
+
+Method and result
+The same licensed031302x687 exact system has7550 nonzeros. Exact positive
+infinity scaling is unchanged. The new cold-start method fixes numerical
+D_j=||A_j||^2, starts L=1, projects using z_j=max(0,y_j-g_j/(L*D_j)), and
+checks ||A*(z-y)||^2<=L*||sqrt(D)*(z-y)||^2. Sparse products use guarded
+math.fsum. The carried L doubles on rejection, and acceleration restarts
+every64 accepted steps. Full finite positive D, projection denominators,
+weighted products, squared norms and line-test RHS receive explicit checks.
+All selected positive entries are retained for original-coordinate restoration.
+
+Observed metric range1 to67.09585173347065. The search used560 gradient/
+commit blocks and565 trial blocks, hence five rejected trials; final L=32.
+Reported relative residuals were0.972577713602833 at step1,
+0.7899004407466068 at64,0.7466268993542018 at128,
+0.7182480022477787 at256,0.6976622506698201 at512, and
+0.6957015863854963 at560. The selected final point has absolute residual
+0.048266822413193355 and291 positive weights. Its final weighted mapping
+norm is0.000782562936395498, with mapping_metric=diagonal column curvature.
+This norm has different units from033 and is not a certified KKT residual.
+
+Termination was work_boundary. Another full worst-case step plus the final
+diagnostic did not fit; the reserved final diagnostic completed. There was
+no memory/deadline failure, numerical zero stop or10000-step limit. The
+residuals, metric values and line tests remain unverified floating diagnostics.
+
+Balancing improved the residual over033's0.7500829746040976 under the same
+190m numerical allowance, but did not beat032 coordinate continuation's
+0.5298381360646995. All three use the same scaled feasibility residual.
+This is evidence about these bounded trajectories, not a convergence theorem
+or a proof that the full selected-ray problem is inconsistent.
+
+Resources and validation
+Numerical7.081645s; producer8.563233s wall/8.547965s CPU, peakRSS67372KiB,
+one thread; enclosing worker8.645198s. Model107,685 operations/344442 peak
+live cells/540bits; numerical183,721,736 operations/351944cells;
+restoration199,062 operations/552596cells/497bits. Numerical blocks:
+setup173408,gradient92560,trial200944,commit32160,final171768;
+worst-step reserve6554928, minimum-attempt6900104. These are declared sparse
+work proxies, not hardware instruction counts. Memory and time did not bind.
+
+Independent39,910 operations/329034 peak cells,0.150108s wall/0.150109s CPU,
+process peakRSS496896KiB. Input-I/O234,090 units on7,490,446bytes. Total
+mathematical work before preparation184,068,393. The complete reservation
+remained450m:40m preparation,40m model,190m numerical,90m restoration,
+90m sole independent audit. No old unused budget was spent or reset.
+Process caps6GiB/one thread/3600 cooperative seconds; external producer7200s.
+Bit and cell limits remain4096/8193 and6m. Proposal146357bytes, review3142bytes,
+source snapshot28files/353906bytes. No hashes, old reduction replay, actual
+research retry or second independent audit occurred.
+
+The frozen suite passed38 tests in2.100s:15 producer,11 core,12 workflow.
+Each development suite ran once. Metered development2,713,988 and frozen
+tests2,713,988 plus1m root/scaffolding total6,427,976 within the25m synthetic
+reserve. New tests check unequal orthogonal columns, the weighted final
+mapping, metric positivity/completeness and explicit metric labeling. The
+full exact851-alpha/782-lambda/1224-coordinate witness fixture and mutation
+tests remain. Root handled localized implementation work; a Sol6.1 agent
+reviewed the full mathematics/code/accounting without executing tests. No
+remaining mathematical blocker was found in the proposal/admission method.
+
+Next research action
+Do not restart034 or infer template infeasibility from these positive
+residuals. Diagonal balancing helped this acceleration scheme modestly;
+it has not resolved the coupled near-feasibility problem. Another arbitrary
+step-size or restart choice alone has no demonstrated advantage here.
+
+The next substantive method should correct interacting active weights
+together. One concrete option is a bounded nonnegative active-set search
+with sparse least-squares/Krylov solves on its current face. Declare the
+face-entry rule, inner solver/work limits, handling of negative proposed
+weights, boundary removals, selection and stopping rules before calculation.
+Meter sparse products and vector work explicitly; avoid treating an opaque
+factorization as free. Keep all strictlypositive final selected entries and
+one original exact support restoration followed by the full identity check.
+An archived complete vector may seed a genuinely different method only
+under an explicit new protocol/allocation; it must not become a disguised
+restart under a reset old ledger. Source/model reuse should avoid redundant
+exact assembly and leave all earlier failures intact.
+
+Dynamic PSD-ray generation remains another substantive route because851
+fixed generators do not exhaust the dual cone. No numerical failure so far
+licenses a claim about every support or operator grammar. Even an exact
+separator would exclude only this augmented finite proof template. A valid
+universal operator identity, signed control at all scales, uniform scalar
+and initial-storage bounds, cofinal parameters and ordinary-zeta recovery
+are still required. The user's full objective remains unresolved and active.

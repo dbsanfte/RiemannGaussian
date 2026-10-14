@@ -1,0 +1,7 @@
+CACHED VARIANTS SUPPLEMENTAL AUDIT v2
+
+Run001 and every frozen source remain immutable. Its protocol.json is137531 bytes, above the original whole-stage auditor's65536-byte allowance. The runner wrote the full nested parent assembly and read it with its existing8MiB default; worker job/progress metadata remained capped at64KiB. The original v1 whole-stage audit therefore fails its protocol-file check. This supplemental audit does not retroactively report that contract as satisfied.
+
+This new audit permits only protocol.json up to262144 bytes. All other artifact limits, hashes, closed inventories, source rebuilds, exact basis replays, full native matrix reconstruction, options, raw coordinates, original residual/sign/PSD necessary checks,450000000 work cap,900-second audit limit and60million audit-cell limit remain unchanged. It independently rebuilds source once, replays parent basis once and verifies the shared cache once. No producer or numerical solver is rerun.
+
+The new review is independent_verification_v2.json, with original_audit_contract_satisfied=false, original and supplemental caps, actual protocol size and hash, and the new audit source hashes. A successful supplemental audit validates diagnostic evidence under this explicitly changed envelope only. Mathematical feasibility stays UNKNOWN and no proof admission changes.

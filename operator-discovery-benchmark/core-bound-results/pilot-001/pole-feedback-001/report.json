@@ -1,0 +1,63 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_control_proved": false,
+  "certified_simple_critical_zero": true,
+  "development_operations": 100000,
+  "elapsed_seconds": 11.748834648984484,
+  "hypotheses_annotated": 86128,
+  "minimum_log_degree": 2,
+  "new_arithmetic_source_evaluations": 0,
+  "operations": 20098600,
+  "peak_rss_kib": 562172,
+  "postanalysis_status_counts": {
+    "analytic_countercertificate": 32298,
+    "analytic_obstruction": 1890,
+    "finite_counterexample": 62,
+    "finite_survivor_open_uniform_premise": 51878
+  },
+  "refitting": false,
+  "reselection": false,
+  "selected_all_scale_premises_disproved": 13,
+  "selected_bounds": 13,
+  "selected_finite_final_passes": 13,
+  "shifted_numerator_nonzero": true,
+  "source_pole_order": 2,
+  "status": "CERTIFIED_POLE_GROWTH_FEEDBACK_COMPLETE",
+  "total_feedback_operations": 20198600,
+  "total_with_parent_operations": 1241158213,
+  "transitions": [
+    {
+      "after": "analytic_countercertificate",
+      "before": "analytic_obstruction",
+      "count": 5670
+    },
+    {
+      "after": "analytic_obstruction",
+      "before": "analytic_obstruction",
+      "count": 1890
+    },
+    {
+      "after": "analytic_countercertificate",
+      "before": "finite_counterexample",
+      "count": 9448
+    },
+    {
+      "after": "finite_counterexample",
+      "before": "finite_counterexample",
+      "count": 62
+    },
+    {
+      "after": "analytic_countercertificate",
+      "before": "finite_survivor_open_uniform_premise",
+      "count": 17180
+    },
+    {
+      "after": "finite_survivor_open_uniform_premise",
+      "before": "finite_survivor_open_uniform_premise",
+      "count": 51878
+    }
+  ],
+  "uniform_shapes_disproved": 32298,
+  "whole_disk_delay_nonvanishing_count": 13,
+  "whole_signed_bound_proved": false
+}

@@ -1,0 +1,234 @@
+FINITE USE OF SOURCE NORMALIZATION: RULES, RECOVERY AND REMAINING CORRELATION
+============================================================================
+
+This is an independent mathematical scope review. Only this new040 file is
+written. No frozen file, coefficient archive, numerical study or old suite is
+changed or run. The039 handoff, fixed-filter handoff and032 complete-expression
+handoff were read. The original full signed bound and RH remain OPEN.
+
+1. Exact common-power factorization and what normalization actually says
+------------------------------------------------------------------------
+Put beta=9/2, r=1/3, theta=1-r=2/3, v=2/3. Every star below is DIRICHLET
+convolution. Write mu_v(n)=mu(n)n^-v, One_v(n)=n^-v and K_r(n)=n^-r.
+
+ g=beta*mu*mu-beta*mu*mu_v-R*mu_v,
+ f=K_r*g-beta*mu.
+
+For initial Re(s)>1 the corresponding Dirichlet series identities are
+absolute Euler identities. Their values at theta are analytic continuation;
+ordinary convergence of sum g(n)n^-theta is NOT a premise.
+
+ G(theta)=0 at the separately specified actual R=R_u. A source-family member
+R different from R_u generally has a nonzero main coefficient. The039 pole
+guard licenses exact cancellation and nonzero regular zeta constants, not an
+ordinary critical series or a uniformly small finite truncation defect.
+
+For all real y>=0 set
+ e_theta(y)=sum_(k<=y)k^(theta-1)-y^theta/theta.
+The decreasing integral bounds give -1/theta<=e_theta(y)<=0, including
+0<=y<1. Consequently for x>=1,
+
+ F(x)=sum_(d<=x)g(d)e_theta(x/d)-beta*M(x)
+       -x^theta*tau_g(x)/theta,
+ tau_g(x)=G(theta)-sum_(d<=x)g(d)d^-theta.
+
+Tau is an ANALYTIC-MINUS-FINITE difference, not a convergent infinite tail.
+This exact normalization-sensitive formula does not estimate tau or the
+whole signed combination. Declaring its right hand side small is equivalent
+to the original bound until an independent argument prices it.
+
+2. A stronger source-generated shifted-kernel production
+---------------------------------------------------------
+The exact identity mu_v*One_v=delta instead permits
+
+ h=beta*mu*mu*One_v-beta*mu-R*delta,
+ L=K_r*mu_v,
+ f=L*h-beta*mu.
+
+The factorization is an all-coefficient Euler/convolution identity, not a
+finite jet match. H(theta)=R_u-R analytically; hence the actual H(theta)=0.
+The shifted inverse has an ABSOLUTELY convergent moment at theta because
+theta+v>1:
+
+ m_L=sum mu(d)d^(-theta-v)=1/zeta(theta+v).
+
+For the actual source, m_L=1/zeta(4/3). This convergence claim concerns only
+the shifted inverse, never h or the original unshifted inverse.
+
+For general rational 0<r<v<1, theta=1-r, delta=1-v, L is positive
+multiplicative with
+
+ L(p^e)=p^(-er)*(1-p^(-(v-r))) for every e>=1.
+
+It follows from exact local factors (1-p^-v t)/(1-p^-r t). Positivity alone
+does not give a coercive inverse on arbitrary source prefixes.
+
+Define e_L(x)=prefix(L)(x)-m_L*x^theta/theta. The following all-real rule
+is independently justified:
+
+ |e_L(x)|<=C x^delta, x>0,
+ C=theta^-1[(1-v)^-1+(v-r)^-1+1].
+
+Proof for x>=1: split prefix(K_r*mu_v), subtract the FULL absolutely convergent
+moment, and use the bounded K error. The finite part is at most
+theta^-1 sum_(d<=x)d^-v <=theta^-1 x^(1-v)/(1-v). For w=theta+v>1,
+
+ sum_(d>x)d^-w <= x^(1-w)[1/(w-1)+1/x].
+
+This includes the first unobserved integer before the decreasing tail
+integral. Multiplying it by x^theta/theta supplies the remaining terms. For
+0<x<1, the prefix is zero, m_L<1, and theta>delta, so the same bound holds.
+There is no removed divisor with x/d<1.
+
+Actual r=1/3,v=2/3 gives this generic C=21/2. A separately proved sharper
+actual constant10 is safe: integer x has constant9, then interpolate from
+floor(x), using m_L<1 and (x^theta-floor(x)^theta)/theta<=1 when x>=1.
+The constant9 must not simply be asserted for all real x from the integer
+tail integral. Constant tuning is not the substantive advance here.
+
+At v=1 the finite mass has one logarithm, and at v>1 it is bounded. Those
+extensions need their separate constants and scopes. At v=r the local
+kernel cancels EXACTLY to delta; this is a different rule, not an absolutely
+convergent inverse moment at exponent1. At v<r this positive-kernel provider
+does not apply. An unrestricted rational search must reject these crossings
+or use explicitly different proved rules.
+
+3. Finite centered lifts: a proved cost, not the remaining theorem
+-----------------------------------------------------------------
+For any FIXED finite h_Y, including the complete unit, its centered lift is
+
+ S_Y(x)=prefix(L*h_Y)(x)-m_L H_Y(theta)x^theta/theta
+       =sum_(d<=Y)h(d)e_L(x/d).
+
+The sum runs through ALL d<=Y, including d>x. In particular
+
+ |S_Y(x)|<=C x^delta sum_(d<=Y)|h(d)|d^-delta.
+
+For the actual source |h(n)|<=14 d3(n), using beta=9/2 and 1<R_u<5.
+Elementary ordered factorization gives
+
+ sum_(d<=Y)d3(d)d^-delta
+ <=Y^(1-delta)(1+log Y)^2/(1-delta).
+
+Using actual C=10 therefore gives
+ |S_Y(x)|<=210 x^(1/3)Y^(2/3)(1+log Y)^2,
+ E_(S_Y)(X)<=176400 Y^(4/3) X^(-1/3)(1+log Y)^4.
+
+The latter uses E=X^-2 sum_(X<=n<2X), conservative2^2 for the x^(2/3)
+factor, every integer X>=1, and the same Y throughout the window. Thus
+Y<=X^a with a<1/4 pays this finite head independently. General rational
+exponents are admitted by inequalities, not a nominated root list.
+
+This convenient cutoff is also a warning: if the head energy vanishes,
+F-S_Y differs from F by a vanishing norm. Searching a better finite constant
+on that remainder can repeat037 padding-control behaviour; it is not evidence
+of persistent cancellation. A full recurrence or signed-correlation theorem
+can still be useful, but its OPEN leaf is the actual work.
+
+4. Persistent whole moment/remainder split and exact moving boundaries
+----------------------------------------------------------------------
+The root's proposed persistent split is suitable for an honest next attempt:
+
+ A_v(x)=m_L*x^theta/theta *sum_(d<=x)h_v(d)d^-theta,
+ B_v(x)=prefix(L*h_v)(x)-A_v(x),
+ F(x)=A_v(x)+B_v(x)-beta*M(x)
+
+for the actual factorization; a generalized factor must retain its complete
+uncovered signed terms. Analytic normalization says
+A_v(x)=-m_L*x^theta*tau_h(x)/theta, but supplies no estimate on that defect.
+Both components persist, and any storage must recover their original signed
+sum with an independently checked PSD inequality, including every cross.
+
+Useful exact scale identities, rather than an assumed improvement, are
+
+ A_v(2x)-2^theta A_v(x)
+   =m_L*(2x)^theta/theta sum_(x<d<=2x)h_v(d)d^-theta,
+
+ B_v(2x)-2^theta B_v(x)
+   =sum_(d<=x)h_v(d)[e_L(2x/d)-2^theta e_L(x/d)]
+    +sum_(x<d<=2x)h_v(d)e_L(2x/d).
+
+The discrete child2n+1 has its own exact ratio and extra event; it is not
+replaced by child2n. A changing finite cutoff requires all new band terms
+and the unit. A bound on the sum of these signed bands, or an all-scale
+storage recurrence with independently paid forcing, would be an actual
+argument. No such bound follows from the kernel error alone.
+
+A machine can enumerate factor pairs and rational storage coefficients,
+form the exact parent/child quadratic defect, apply source-generated global
+relations and known kernel/forcing rules, and emit either an independently
+replayed inequality or the explicit unpriced signed band/cross-correlation.
+Finite values may rank candidates but cannot discharge this universal leaf.
+The pure norm relaxation already fails on generic envelopes; that is not an
+actual arithmetic refutation.
+
+5. Another genuine finite normalization positive control: alternating inverse
+----------------------------------------------------------------------------
+This is a proposed additional provider, not implemented in the current stage.
+Let a(n)=(-1)^(n-1), D=delta-2delta_2. Then mu*a=D coefficientwise, so
+
+ q=a*a*h=beta*D*D*One_v-beta*D*a-R*a*a.
+
+For theta>1/2, a's ordinary critical moment eta(theta) exists by alternating
+series. The critical moment of a*a also exists, by an exact hyperbola split;
+one must prove this rather than rearrange a conditionally convergent double
+series. If B_theta(x)=sum_(mn<=x)a(m)a(n)(mn)^-theta and m=floor sqrt(x),
+
+ eta(theta)^2-B_theta(x)
+  =[eta(theta)-A_theta(m)]^2
+    +2 sum_(d<=m)a(d)d^-theta[eta(theta)-A_theta(x/d)].
+
+The alternating tail yields absolute error<=6x^(1/2-theta) for all x>=1.
+The finite shifted positive power factor has an absolutely convergent moment
+when theta+v>1. Thus q's ordinary critical moment exists and is
+
+ beta*D(theta)^2*zeta(theta+v)
+  -beta*D(theta)*eta(theta)-R*eta(theta)^2.
+
+Since eta(theta)=D(theta)zeta(theta), this vanishes EXACTLY at fixed R_u.
+For actual theta=v=2/3, R<=5, finite shifts1,2,4 and the tail estimates give
+the safe normalization-sensitive bound
+
+ |sum_(n<=x)q(n)n^-theta|<= (411/2)x^(-1/6), x>=1.
+
+This contrasts with the nonzero limiting constant for nonnormalized R.
+It is a genuine finite bound derived without ordinary convergence of h or mu
+at theta. It is a bound for a CONVOLVED source, not the original F.
+
+Its recovery is expensive: inverting a*a requires mu*mu and D^-2. The fixed
+dilation D has Dirichlet multiplier1-2^(1-s), with zeros at
+s=1+2*pi*i*k/log2 and an inverse with coefficients(k+1)2^k at2^k.
+No bounded critical inverse is supplied. The original actual source cannot
+be paid by relabeling this convolved-source theorem. This is a useful positive
+control for normalization-sensitive proof discovery and a negative control
+for dropped recovery.
+
+6. Bad shortcuts and necessary checker gates
+--------------------------------------------
+* Keep the separately admitted exact R_u definition. An interval R in[1,5]
+  supports coefficient prices but cannot license normalized source bounds.
+* Initial Euler identities require the absolute convergence domain; interior
+  scalar evaluations use analytic continuation. Do not equate them with an
+  ordinary coefficient series unless a separate convergence theorem proves it.
+* Source factorization must preserve every channel, unit and uncovered term.
+  A shifted inverse insertion requires the exact matching positive inverse.
+* Kernel mass, tail and inner real-argument rules have explicit rational
+  parameter domains; equality cases/logarithms and all d>x survive.
+* Exact finite means H_Y(theta), analytic H(theta) and their difference are
+  distinct types. Zero analytic H(theta) does not set the finite mean to zero.
+* A complete source split or endpoint renaming is an identity, not a bound.
+  Rank storage only after checking original-target recovery and all costs.
+* Finite changes in Y,v or scale require complete transition bands and both
+  child parities. All signed source and mixed storage crosses are retained.
+* A dyadic filter annihilating the real theta main also has artificial complex
+  zeros theta+2*pi*i*k/log2. Scalar cancellation at the real point alone does
+  not supply a stable inverse, ordinary convergence, or all missing residues.
+* Smoothing/Perron contours require their entire remainder and any other poles;
+  local regularity at the real theta is not a global contour-shift license.
+* Norm countermodels and finite-template witnesses have their declared grammar
+  scope only. The original whole signed bound and RH remain OPEN.
+
+The credible next stage is therefore a source-normalized persistent split plus
+an actual complete signed recurrence/proof attempt. Kernel and finite-head
+costs are proved and useful, but are insufficient alone. No all-scale original
+source recurrence or whole-core estimate is established by this review.

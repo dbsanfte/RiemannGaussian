@@ -1,0 +1,60 @@
+{
+  "RH_proved": false,
+  "exact_recovery": {
+    "constant_coordinates": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "full_Gram_groups": 20,
+    "independent_receipt_sha256": "f85db700d1b286fdfc0cdf19f6d7f714cb8ee1e423b9fc7375b062d5e96707f0",
+    "new_floating_search": false,
+    "result_sha256": "c0de975ad327cc895b3030673fd43a7b40a5df0d7934e1906fa212cb547d1fbc",
+    "same_saved_support_count": 584,
+    "scope": "arbitrary scalar C_q budgets by constant-coordinate shifts within the exact fixed20group shared gamma-zero cone; no actual arithmetic bound refutation"
+  },
+  "failed_stage": {
+    "all_original_failures_preserved": true,
+    "followup_statuses": [
+      "missing_resource"
+    ],
+    "independent_receipt_sha256": "6798c61538bbe864c79b9afb9decf2a2e6a3b2a24eb4ae839c83e5bdc53646b4",
+    "tests_passed": 34,
+    "training_statuses": [
+      "uncertified",
+      "missing_resource"
+    ],
+    "transfer_certificates_verified": 0
+  },
+  "global_bound_proved": false,
+  "joint_diagnostic": {
+    "atoms_per_region": 10,
+    "both_region_matrices_non_PSD": true,
+    "independent_receipt_sha256": "55d255d476f51b8811a86852cde0370da5fa0fce08e80ad699939f022344a12b",
+    "larger_cone_feasibility_proved": false,
+    "missing_coordinates": 0,
+    "original_witness_separates_joint_cone": false,
+    "regions": 2,
+    "root_direction_receipt_sha256": "c90e2d17a78ca59758e4e3db1c024cb5c18c90f55f3730120e8d385b0bb32a75",
+    "root_direction_verifier_sha256": "858ddf8d330e4c7df8009ebb28b2bad5d6bc6c28412b44f4f5afeffd1073eeb0"
+  },
+  "next_action": "preregister full10atom joint divisor Grams mixing original prefix with all9complete divisor channels, retain legacy5atom Grams and charge every scalar budget, then conduct a new exact independently audited search",
+  "previous_research_bound_files": 343,
+  "previous_research_manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb",
+  "previous_resource_bound_files": 244,
+  "previous_resource_manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b",
+  "prior_research_publication": "publication-004",
+  "resource_policy": {
+    "archived_replay_max_work": 2000000000,
+    "equation_build_work_proxy": 10238606,
+    "future_default_max_work": 450000000,
+    "future_policy_tests_passed": 4,
+    "real_450m_arithmetic_rerun_performed": false,
+    "required_rref_work_proxy": 430412672,
+    "review_sha256": "c2ca8ab3bf7a1d8ccd1221c45e861b9babb85e80f634dd6ad75568f660602493"
+  },
+  "schema": 5,
+  "scope": "finite shared identities and independently verified separators and post-search diagnostics; gamma-zero gate necessary for fixed all-scale critical templates at q>1 only under the existing scalar-asymptotic assumptions"
+}

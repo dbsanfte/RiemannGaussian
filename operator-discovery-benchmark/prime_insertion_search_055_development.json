@@ -1,0 +1,33 @@
+{
+  "schema": "prime-insertion-search-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 6,
+      "operations": 42247,
+      "elapsed_seconds": 0.06476126500638202,
+      "stdout": "SYNTHETIC_WORK operations=42247\n",
+      "stderr": "test_cross_polynomial_retains_all_terms (test_prime_insertion_search_055.SearchTests) ... ok\ntest_energy_encloses_negative_cross_and_zero_crossing (test_prime_insertion_search_055.SearchTests) ... ok\ntest_fitted_training_recurrence_can_fail_at_a_new_scale (test_prime_insertion_search_055.SearchTests) ... ok\ntest_grammar_signed_auxiliaries_and_general_fractional_decay (test_prime_insertion_search_055.SearchTests) ... ok\ntest_interval_decay_uses_general_rational_exponent (test_prime_insertion_search_055.SearchTests) ... ok\ntest_recovery_and_pointwise_attempt_do_not_pay_the_drift (test_prime_insertion_search_055.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "operations": 0,
+      "elapsed_seconds": 0.08725532598327845,
+      "stdout": "SYNTHETIC_WORK operations=0\n",
+      "stderr": "test_zero_decay_recovery_retains_binary_logarithm_units (test_prime_insertion_search_055.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "scope": "only newly added logarithm-unit test; previous6 tests not replayed"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "operations": 0,
+      "elapsed_seconds": 0.06876416894374415,
+      "stdout": "SYNTHETIC_WORK operations=0\n",
+      "stderr": "test_tail_provider_leaves_full_target_and_small_parameter_core_open (test_prime_insertion_search_055.SearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "scope": "only new uniform-tail certificate producer test; previous7 tests not replayed"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

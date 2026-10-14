@@ -1,0 +1,132 @@
+058 INDEPENDENT PRIME TRANSFER IDENTITY / END-REGION ADMISSION
+
+New owned interfaces: verify_identity(request,meter=None),
+verify_source_order(request,certificate,meter=None), and
+verify_endpoint_bound(request,certificate,meter=None).
+The checker imports no058producer, no scientific source arrays and no stored
+signature/RREF as authority. It reuses immutable052 charge-only Meter,
+canonical rational input parsing and exact typed structural comparison.
+Its finite polynomial calculations are independent of the producer's matrix
+signature/RREF. No previous scientific study or unchanged suite is replayed.
+
+INCLUSIVE SOURCE AND VALUATION-COMPLETE IDENTITIES
+
+Let U be a sorted finite set of checked actual primes and z_p=p^(-t), t>0.
+For S subsetU and positive realx, define
+
+ H_S(x,t)=sum_(n>=1) v_x(n)*product_(p|n orp inS)(1-z_p),
+ v_x(n)=1_(2x<n<=4x)-2*1_(x<n<=2x).
+
+An atom {primes:S,divisor:d,attenuation:a} denotes a^(-t)H_S(x/d,t).
+Here d,a are positive integers supported onU, with exact valuation vectors.
+Each sum is finite at every realx>0. The n=1 term is INCLUSIVE:
+ H_S(x,t)=h_S(x,t)+G_S(t)*v_x(1), G_S=product_(p inS)(1-z_p).
+v_x(1) is not W(x). It cannot be deleted because integerN>=2 happened to
+make it zero in previous fixed-source applications; x/d can be subunit.
+
+Pull back the atom's sum by m=d*n. Its common weight is exactly v_x(m).
+At an integer m, write e_p=v_p(m), d_p=v_p(d), a_p=v_p(a). The atom is
+absent if any e_p<d_p. Otherwise its registered-prime polynomial is
+
+ product_p z_p^(a_p) * product_(p inS ore_p>d_p)(1-z_p).
+
+All outside-U prime factors of m are common across every active atom,
+because d is U-supported. Therefore, if the rational linear combination of
+these registered polynomials is exactly zero for every e, the full source
+identity holds for every realx>0,t>0. No positivity or norm argument is used.
+
+For each p, every relevant comparison is e_p<d_p or e_p>d_p. Thus it is
+enough to check e_p=0,1,...,max_d d_p+1; the last representative covers ALL
+larger valuations. The unit/cofactor-one state e_all0 is retained. The
+checker enumerates this full Cartesian product, directly accumulates the
+signed polynomials, and rejects any remaining nonzero monomial. It does not
+trust supplied rank, pivot, free-column, unit or highest-valuation flags.
+The reported valuation cap is max_d d_p+1, including the final high case.
+
+The current unregistered sector is calculated SEPARATELY using only atoms
+with d=1, at registered valuation vector0. Lower-scale atom terms cannot be
+used to report that current source as zero or paid. A universal zero relation
+may still have a nonzero current part balanced by lower-scale terms. The
+zero-on-unregistered-sector result is a polynomial identity flag only; it
+does not bound a free-prime sector or the full signed target.
+
+CURRENT-SOURCE SMALL-t ORDER
+
+The source-order request uses the same exact schema but EVERY d must be1.
+All registered-prime presence patterns e_p=0 versus e_p>=1 are checked.
+For each pattern, the exact z polynomial is rewritten by z_p=1-y_p using
+the complete signed binomial expansion. Equal powers are merged exactly.
+The case order is the least total y-degree of its nonzero monomials, orNone
+if the case polynomial is zero. The licensed uniform order k is the minimum
+over ALL nonzero presence cases, not merely the case e_all0.
+
+For 0<t<=1, 0<=y_p=1-p^(-t)<=t*logp<=p*t. Consequently a case polynomial
+sum c_e y^e has
+ |Q_case(t)|<=B_case*t^k,
+ B_case=sum_e |c_e| product_p p^(e_p),
+since every total degree>=k and t^(degree)<=t^k. The global B is the maximum
+of the exact case envelopes. Every case, all signed terms, its order and
+envelope must match the submitted certificate, including zero cases.
+An all-zero source is admitted as such but is not promoted to an original
+target bound. Ground-sector cancellation alone never pays the other cases.
+
+END-REGION BOUNDS FOR THE EXACT CURRENT SOURCE
+
+The endpoint request binds the current operator plus canonical rational
+0<alpha<1, gamma>0 and0<tau<1. A nonzero source must have k>alpha. Write
+L=sum_atom |coefficient|. For EVERYintegerN>=2 the absolute filter mass is
+4N, and v_N(1)=0. Normalized integration uses1/Gamma(1-alpha).
+
+For s=1-alpha in(0,1), Gamma(s)>=integral_0^1 exp(-t)dt>1/3, giving the
+conservative normalizer bound3. The uniform pointwise order therefore pays
+the exact small-t source integral up to epsilon=min(tau,N^(-gamma)):
+
+ |microscopic| <=12B/(k-alpha) * N^(1-gamma*(k-alpha)).
+
+For the upper tail, each current E_S atom has the exact cofactor identity
+
+ H_S(N,t)=G_S(t)*sum_(d<=4N,gcd(d,R)=1) mu(d)W(N/d)d^(-t),
+ R=productS, W(y)=floor(4y)-3floor(2y)+2floor(y).
+
+The unit d1 term is zero because W(N)=0 for integerN. The real function W
+takes only -1,0,1 (check its four fractional-quarter intervals). G_S and
+attenuation a^(-t) have absolute value<=1. This E_S tail estimate does not
+expand G_S into 2^|S| terms and hence needs no such factor. In particular
+it must not be confused with a different masked D_S source.
+
+Gamma(s)>=integral_0^1 (1-t)t^(s-1)dt=1/[s(s+1)]>=1/2, so the normalizer
+is<=2. For d>=2, using logd>=log2>=1/2 and tau<1,
+
+ integral_tau^infinity d^(-t)t^(-alpha-1)dt
+    <=2*tau^(-2)*d^(-tau).
+
+Also sum_(2<=d<=4N) d^(-tau)<=integral_1^(4N) x^(-tau)dx
+<=(4N)^(1-tau)/(1-tau). Combining these and4^(1-tau)<=4 gives
+
+ |upper_tail| <=16L/[tau^2*(1-tau)] * N^(1-tau).
+
+The submitted source-order certificate and both exact rational constants /
+powers are independently replayed. These are genuine uniform estimates on
+two end regions of this SAME complete source. The intervening moving middle
+is always OPEN. No lower-scale atom inherits the endpoint rule, no square
+crosses are silently erased by a target-energy claim, and no all-source or
+RH estimate follows from an identity or these end-region prices alone.
+
+CAPACITIES, PROOF LANGUAGE AND LIMITS
+
+Actual primes<=1m, universe<=8, literal atoms<=2048, integer d/a<=4096bits,
+registered exponents<=64, canonical rational coefficients<=4096bits. Complete
+valuation cases<=100k, sparse tables<=2m rows, rational intermediates<=16384
+bits. Every sparse table/cache also has a conservative prospective4GiB bound,
+using maximum rational size in the row estimate, before additional growth.
+Work and time are charged through a caller-compatible .charge() Meter; the
+default cap is2bn operations/7200seconds. No module-level process memory or
+time restriction is imposed on other owners. Oversized certificates fail
+admission, never acquire a theorem from a partial calculation.
+
+The rule is a finite exact valuation/polynomial certificate with elementary
+uniform end-region estimates. It does not refute any broader arithmetic
+bound method, even if a searched current-only forcing disappears or fails
+the order gate. It does not establish full signed cancellation, middle
+growth control, original-target recovery or RH. All corresponding claims
+remain false/OPEN. No proof-assistant formalization is asserted.

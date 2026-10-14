@@ -1,0 +1,346 @@
+045 INDEPENDENT WHOLE-FORCING ARGUMENT LANGUAGE
+Source-free derivations, executable conditional proof packets, and paid scalar
+compensation. Older sources/results are unchanged. No arithmetic norms or
+actual selected applications were performed in this review.
+
+1. Scope and conclusion
+
+The moving profile is
+    P_N(n)=sum_j w_j n^(-r_j beta_N),
+    beta_N=ceil(a L(N)^theta)/L(N), L(N)=1+floor(log_2 N),
+where a>0, 0<theta<1, r_j are sorted distinct positive rationals, signed
+rational weights sum to one, and their first nonzero power moment has order m.
+The generator accepts 1..8 terms. The detector's maximal-order Vandermonde
+profiles are included; the argument generator also admits nonmaximal signed
+profiles without inventing a positive-range theorem for them.
+Actual coefficients are c_n(N)=-mu(n)V_N(n), 2<=n<=N, with each exponential
+rounded separately at p(N)=4 ceil(log_2 N) dyadic bits before signed addition.
+V_N may additionally multiply one frozen044 cutoff or log taper, using the
+exact product of rounded children. Neither rounding nor optional taper is
+discarded. Child qN recomputes its level, beta, precision and taper endpoints.
+
+The new executable language supplies:
+ - the exact finite-Dirichlet/Mellin identity for the COMPLETE h_N;
+ - a meromorphic comparison with a signed moving reciprocal-zeta mixture;
+ - distinct joint bias, truncation/taper/rounding, and harmonic-compensation
+   energies, with their entire parent/child and mixture crosses inside each;
+ - a sufficient rational Young bound argument and its exact unpaid premises;
+ - an unconditional, explicit scalar bound for the bare/cutoff harmonic leaf,
+   including rational all-large-level power constants and threshold constraints.
+
+It proves NO complete uniform forcing bound, target convergence, or RH.
+The bias and truncation leaves remain OPEN, including their separate L2
+integrability. A signed mixture's coefficient Taylor order cannot pay them.
+The positive proof route can lose important cancellation between these leaves.
+An optional joint route avoids that loss but is identified as endpoint-equivalent
+when it becomes the complete current-scale energy, not a smaller-scale theorem.
+
+2. Profile identities and actual rounding
+
+Write u=beta_N log n, Cw=sum_j |w_j|, rmin=min r_j, rmax=max r_j.
+Always |P(u)|<=Cw exp(-rmin u), and moment cancellation gives
+    |1-P(u)|<=u^m/m! * sum_j |w_j|r_j^m.                 (2.1)
+For maximal order m=number of rates, exact partial fractions give
+    sum_j w_j r_j/(z+r_j)=product_j r_j/(z+r_j).          (2.2)
+The left side is the Laplace transform of -P'(u). The right side is the
+transform of the convolution of the nonnegative probability densities
+r_j exp(-r_j u) on u>=0. Thus P is their survival function:
+    0<=P(u)<=1,
+    0<=1-P(u)<=product_j r_j * u^m/m!.
+The last bound follows by bounding every exponential by one on the simplex
+in the convolution integral. This randomness is only a positive integral
+representation of the profile; actual Mobius signs are never randomized.
+The verifier checks (2.2) by independent literal rational-kernel evaluation.
+
+The raw survival range does NOT transfer automatically to signed rounded
+profiles. Each exponential floor error is at most epsilon=2^(-p)<=N^-4,
+so the bare coefficient discrepancy is at most Cw*epsilon. Rounded profiles
+can be negative; the actual compiler may not clamp or substitute the raw range.
+For optional taper parameters alpha,gamma, let C_t=max(1,t), d_t=min(1,t).
+On [0,1], |x^t-y^t|<=C_t |x-y|^d_t. These elementary Holder/Lipschitz
+inequalities price every stage of the frozen two-power taper construction.
+For cutoff coordinates n/N, define
+    d=d_gamma, Cround=Cw(2+C_gamma).
+For rounded log coordinates log n/log N, define
+    d=d_alpha*d_gamma, Cround=Cw[2+C_gamma(C_alpha+1)].
+For the bare profile, d=1 and Cround=Cw. The actual rounded product differs
+from its unrounded counterpart by at most
+    Cround*N^(-4d).                                      (2.3)
+The log rule includes coordinate rounding before the inner power floor.
+
+Since 0<=f_n<=1 for x<=1/n and f_n(x)<=1/(nx) for x>1/n,
+    ||f_n||_2^2<=2/n.
+Also sum_(n<=N)n^(-1/2)<=2 sqrt N. The triangle inequality therefore pays
+the rounding-only target error by 8 Cround^2 N^(1-8d), and the complete
+rounding-only forcing error by
+    8 Cround^2 (q+|b|)^2 N^(1-8d).                        (2.4)
+The conservative q factor is essential when d<1/8: the child's target-error
+envelope then grows with its support. A previously contemplated 1+|b|
+factor was corrected BEFORE the sole suite; the small-d regression covers it.
+If 8d<=1, this positive rounding-norm route does not prove decay. The finite
+rounding discrepancy nevertheless remains exactly inside the joint remainder.
+None of (2.1)-(2.4) proves a small full signed residual or forcing norm.
+
+3. Exact complete finite-Dirichlet identity
+
+Use the Mellin convention Mf(s)=integral_0^infinity f(x)x^(s-1)dx.
+For 0<Re(s)<1,
+    M[rho(1/x)](s)=-zeta(s)/s,
+and consequently for the original floor basis
+    M f_n(s)=-zeta(s)(n^(-s)-1/n)/s.                     (3.1)
+This follows directly by splitting the fractional-part integral at one and
+using the Euler floor integral for zeta; it does not use an infinite mu series.
+
+Include a unit term in the FINITE polynomial
+    A_N(s)=sum_(1<=n<=N) mu(n)V_N(n)n^(-s).              (3.2)
+The difference A_N(s)-A_N(1) cancels n=1 identically. This remains true when
+an optional taper changes V_N(1); no unit basis vector is inserted. Then
+    M e_N(s)=[1-zeta(s)(A_N(s)-A_N(1))]/s.              (3.3)
+The complete forcing h_N=e_(qN)-b D_q e_N has transform
+    [1-b q^(-s)
+     -zeta(s){A_(qN)(s)-A_(qN)(1)
+              -b q^(-s)[A_N(s)-A_N(1)]}]/s.             (3.4)
+In particular chi-b D_q chi is present through 1-b q^(-s). The zeta pole
+at s=1 is removable in (3.3) because its finite difference vanishes there.
+
+Mellin Plancherel on Re(s)=1/2 gives
+    ||h_N||_2^2=(1/(2pi)) integral_R |M h_N(1/2+i t)|^2 dt. (3.5)
+One can obtain this directly from ordinary Fourier Plancherel by x=exp(-y)
+and the L2 isometry f(x)->exp(-y/2)f(exp(-y)). Every actual finite program
+is in L2. No critical-line convergence of sum mu(n)n^(-s) is asserted.
+
+There is also a finite partial-summation primitive, with M(x)=sum_(n<=x)mu(n):
+    sum_(n<=N)mu(n)n^(-z)
+      =M(N)N^(-z)+z integral_1^N M(x)x^(-z-1)dx.         (3.6)
+For an unrounded weighted profile it becomes
+    M(N)V_N(N)N^(-s)-integral_1^N M(x)d[V_N(x)x^(-s)].
+The lower-end convention retains the unit; all cutoff endpoints remain.
+Actual rounded jumps are accounted for by an additional finite discrepancy,
+not silently removed from this identity. An assumed bound
+M(x)=O_epsilon(x^(1/2+epsilon)) for every epsilon would itself imply RH via
+the ordinary reciprocal-zeta Dirichlet integral. It is not an admissible paid
+companion bound, and it supplies no uniform constants as epsilon->0 anyway.
+
+4. A genuinely distinct comparison, with its dangers exposed
+
+Define meromorphically, not as an assumed convergent source sum,
+    S_N(s)=sum_j w_j/zeta(s+r_j beta_N),
+    Delta_N(s)=A_N(s)-S_N(s).
+Away from poles, define the spectral functions
+    B_N(s)=[1-zeta(s)S_N(s)]/s,
+    T_N(s)=-zeta(s)Delta_N(s)/s,
+    H_N(s)=zeta(s)A_N(1)/s.
+By exact algebra M e_N=B_N+T_N+H_N. Apply the SAME scale-difference operator
+    R_q,b Z_N=Z_(qN)-b q^(-s)Z_N
+to each, recomputing the child beta. Its three energies are E_B,E_T,E_H.
+No monotonicity of the ceiling schedule beta_N is assumed. The earlier044
+fixed-cutoff scalar obstruction has no automatic application to this moving
+N-dependent profile; it cannot be used as a blanket rejection of drift.
+
+Delta_N includes, without dropping any component,
+    rounded finite - unrounded tapered finite
+    + unrounded tapered finite - unrounded bare finite
+    + unrounded bare finite - S_N(s).
+This provides a target for structural future search: signed profile transfer
+through reciprocal zeta, and a complete cutoff remainder including both
+scale endpoints. It does not convert the third line into a freely convergent
+critical-line tail. Only on an initially absolutely convergent half-plane may
+one write the infinite Dirichlet tail directly; elsewhere its control is OPEN.
+
+S_N can introduce poles absent from the finite target. Thus E_B and E_T may
+fail to exist separately even though B+T=[1-zeta(s)A_N(s)]/s is L2. A valid
+separate positive route MUST prove integrability/pole cancellation inside each
+block. Replacing these leaves by RH or a uniform RH-strength companion moment
+would be circular. The signed joint E_(B+T) retains their compensating poles
+and crosses; with H paid at a matching rate this is an equivalent frontier,
+not proof that arithmetic cancellation is already controlled.
+
+Whenever the separate energies are finite, the exact full identity is
+    E_h=E_B+E_T+E_H
+       +2 Re(<B,T>+<B,H>+<T,H>),                         (4.1)
+where B,T,H now denote their scale-difference spectral functions. Signed
+mixture crosses and parent/child crosses are inside every term. Absolute
+allocation only loses the three inter-block crosses displayed in (4.1).
+
+5. Unconditional harmonic compensation: explicit constants
+
+This part is paid without RH. First consider the bare unrounded profile.
+For kappa_j=r_j beta_N>0 the harmonic Dirichlet series is absolutely convergent,
+so its infinite comparison is sum_j w_j/zeta(1+kappa_j), with tail bounded by
+    sum_j |w_j| N^(-kappa_j)/kappa_j.                    (5.1)
+This is a Re(s)>1 harmonic calculation, not a critical-line source assumption.
+
+The elementary Euler continuation formula
+    zeta(1+z)=1/z+1-(1+z)integral_1^infinity {x}x^(-2-z)dx
+gives, on |z|<=1/4,
+    |z zeta(1+z)-1|
+       <=1/4+(1/4)(5/4)/(3/4)=2/3.
+Hence R(z)=1/zeta(1+z) is analytic in that disk, R(0)=0, and |R(z)|<=3/4.
+For R(z)=sum d_k z^k, Cauchy gives |d_k|<=(3/4)4^k. The exact profile
+moments cancel k=1,...,m-1. If rmax beta_N<=1/8, summing the geometric
+Taylor tail gives
+    |sum_j w_j R(r_j beta_N)|<=H beta_N^m,
+    H=(3/2)4^m sum_j |w_j|r_j^m.                         (5.2)
+The proof does not require maximal order or positive profile weights.
+
+For a cutoff taper W=(1-(n/N)^alpha)^gamma, the elementary inequality
+    0<=1-W<=max(1,gamma)(n/N)^alpha
+and |P_N(n)|<=Cw n^(-rmin beta_N) give, once rmin beta_N<=alpha/2,
+the additional harmonic discrepancy bound
+    Ccut N^(-rmin beta_N),
+    Ccut=max(1,gamma) Cw(1+2/alpha).                      (5.3)
+Here sum_(n<=N)n^(p-1)<=N^p(1+1/p) for p>0: for p>=1 use N*N^(p-1),
+and for 0<p<1 use the decreasing integral bound. This includes EVERY n,
+not a selectively favorable source domain. Log tapers are not paid by (5.3).
+Their full harmonic discrepancy remains an explicit open leaf in this API.
+
+Finally add actual rounding through Cround N^(-4d)(1+log N). Thus the complete
+bare/cutoff A_N(1) is bounded by (5.1)+(5.2), plus (5.3) when present, plus
+this rounding compensation, under the stated beta constraints. Its norm
+cost follows from rho(1/x)<=1 for x<=1 and rho(1/x)=1/x for x>1:
+    ||zeta(s)/s||_critical^2=||rho(1/x)||_2^2<=2.
+Dilation has norm q^(-1/2), so
+    E_H(N)<=2[|A_(qN)(1)|+|b|q^(-1/2)|A_N(1)|]^2.       (5.4)
+This pays a distinct scalar compensation; it is not an assumed full-h estimate.
+
+6. Rational all-large-level certificate, avoiding enormous supports
+
+Let kappa=1-theta and tau=m kappa. The schedule obeys
+    a L^(-kappa)<=beta_N<=(a+1)L^(-kappa).
+For integer L>=2, log N>=L/4 and 1+log N<=2L, using log 2>=1/2.
+Thus each term of (5.1) satisfies
+    N^(-r beta_N)/(r beta_N)
+      <=(1/(ra)) L^kappa exp[-(ra/4)L^theta].
+Choose k_T=ceil((m+1)kappa/theta), at least one. Since exp(-x)<=k!/x^k,
+the complete harmonic tail is at most
+    C_T L^(-tau),
+    C_T=sum_j |w_j| k_T! 4^k_T/(r_j a)^(k_T+1).         (6.1)
+For (5.3), k_C=max(1,ceil(tau/theta)) gives the bound C_C L^(-tau), where
+    C_C=Ccut k_C! [4/(rmin a)]^k_C.
+For rounding, k_R=max(1,ceil(tau+1)) gives
+    Cround N^(-4d)(1+log N)
+       <=2 Cround k_R! d^(-k_R) L^(-tau).                (6.2)
+The local bias constant is H(a+1)^m. Adding these rational constants yields
+    |A_N(1)|<=C_scalar L^(-tau)
+whenever
+    L>=2,
+    L^kappa>=8 rmax(a+1),
+and, for the cutoff taper, L^kappa>=2 rmin(a+1)/alpha.
+These conditions also pay the child qN, since L(qN)>=L(N). Equation (5.4)
+therefore gives the explicit conservative rational certificate
+    E_H(N)<=C_energy L^(-2tau),
+    C_energy=2 C_scalar^2(1+|b|)^2.                      (6.3)
+
+The executable generator caps factorial depth at64. Larger requested depth
+does not invalidate the mathematical scalar estimate; it returns an unsupported
+explicit-level certificate while preserving the other conditional arguments.
+No gigantic N is constructed. Level constraints remain rational-power predicates
+which a later exact compiler can check at a symbolic/finite starting L0.
+
+If E_H must fit A*pi_H^2 L^(-eta), the additional exact condition is
+    L^(2tau-eta)>=C_energy/(A*pi_H^2) when 2tau>eta;
+for equality the ratio must be <=1. A negative exponent gap is not paid by
+this envelope. Earlier levels and all cases below the threshold remain unpaid.
+In particular, an eventual O(L^(-2tau)) bound does NOT automatically establish
+the frozen domain starting N>=607 or its chosen numerical A. The certificate
+and bound instantiator make this distinction explicit.
+
+7. Sufficient generated inequality and cancellation bookkeeping
+
+Choose any rational pi_B,pi_T,pi_H>0 with sum one. Weighted Cauchy gives
+    E_h<=E_B/pi_B+E_T/pi_T+E_H/pi_H.                     (7.1)
+For requested A>0 and 0<eta<=1, the following are mathematically sufficient:
+    E_i(N)<=A*pi_i^2 L(N)^(-eta), i=B,T,H,
+for EVERY N in the requested domain, and separate L2 integrability of B,T.
+The constants recombine exactly to A sum pi_i=A. The detector can enumerate
+these proof words with rational denominators; no coefficient is response-fit.
+The API returns each premise OPEN_ALL_DOMAIN_BUDGET and exact constants,
+integrability gates, and the harmonic level reduction. Even the harmonic
+leaf stays unpaid at a fixed domain until threshold and head obligations pass.
+
+This is a positive sufficient argument distinct from simply asking for the
+same complete norm bound, but may be substantially stronger: it discards
+beneficial crosses between comparison bias and finite cutoff remainder.
+If this split fails, the correct next production is a signed joint bias/tail
+auxiliary with a proved recovery rule, not a new assumption that either fake
+pole is harmless. Collapsing to B+T+H with a renamed endpoint-energy premise
+does not count as progress. Neither survival positivity, local coefficient
+rates nor finite norm success can license (7.1)'s open arithmetic leaves.
+
+8. Additional source-specific logarithmic primitive for future grammar
+
+A narrow log-taper subgrammar can be treated structurally rather than by an
+absolute source envelope. For positive INTEGERS k and g,
+    W=(1-(log n/log N)^k)^g
+is a finite polynomial in log n. Let D_N(z)=sum_(n<=N)mu(n)n^(-z).
+The unrounded harmonic sum has the exact identity
+    sum_(ell=0)^g (-1)^ell binom(g,ell)(log N)^(-k ell)
+       sum_j w_j (-1)^(k ell) D_N^(k ell)(1+r_j beta_N).   (8.1)
+All signs, units and the upper cutoff are retained. Infinite harmonic
+comparisons are absolutely convergent for every beta_N>0; their derivatives
+are locally bounded by the same analytic disk around one. For ell=0 the
+moments give beta_N^m; for ell>=1 the constant derivative term at one need
+not cancel, leaving at worst powers (log N)^(-k). Finite derivative tails
+are paid by the complete absolute sums sum_(n>N)(log n)^j/n^(1+r beta),
+which a finite integration-by-parts expansion bounds; because beta log N
+tends infinity, those tail terms decay faster than any fixed log power.
+Thus this particular harmonic subgrammar has an unconditional asymptotic
+rate min(m(1-theta),k) at the scalar level, plus rounding. It still pays no
+critical-line bias/truncation energy. General fractional log tapers are not
+covered by (8.1); the current executable language deliberately leaves their
+harmonic discrepancy open rather than inventing an integer derivative identity.
+This is a possible future typed proof primitive, not a selected or tested winner.
+
+9. Executable API, verification and receipts
+
+New owned files:
+    floor_residual_drift_arguments_045.py
+    test_floor_residual_drift_arguments_045.py
+    floor_residual_drift_arguments_045_development_receipt.json
+API:
+    build_arguments(request,meter=None)
+    verify_arguments(request,certificate,meter=None)
+    instantiate_bound(certificate,A,eta,allocation=None,meter=None)
+    enumerate_allocations(max_denominator=6)
+    Meter(...).operations
+
+Request uses recipe{id,base,auxiliary:null}, q, b, domain{kind,minimum}, and
+rounding{kind:dyadic_power_floor,bits_multiplier:4,scale:ceil_log2_N,
+drift:round_each_exponential_before_signed_sum,
+product:multiply_rounded_children_exactly}. Base is drift_mixture{a,theta,terms}
+or an exact product of one such profile and one frozen044 taper. Product child
+orientation is generic. Domains all_integer and geometric_chain are retained;
+the latter means a chain starting at the declared minimum with the saved q.
+The generator requires |b|<sqrt(q) for the RH-bearing recurrence scope and
+canonical rational strings; it returns UNSUPPORTED for legacy/control ASTs.
+Unsupported means no admitted argument, never false formula.
+
+Certificates bind the full request, finite source, meromorphic comparison,
+discrepancy stages, signed Mellin expressions, partial summation, leaf statuses,
+actual rounding/Harmonic rules, profile polynomial proof and level thresholds.
+There is no identifier whitelist. The verifier does not call build_arguments
+or its polynomial/moment constructors. It independently accumulates simultaneous
+powers and identifies numerator/denominator polynomials by enough distinct
+literal rational samples, then checks the exact source/theorem-schema payload.
+Shared parsers and reviewed static identity/inequality constructors are trusted
+code; this is an algebraic proof-packet checker, not a proof-assistant kernel.
+It returns verified True only with uniform_forcing_bound_proved False and
+whole_joint_energy_status OPEN. Any changed numerical proof flag, moment,
+harmonic constant, source payload or child-recomputation rule is rejected.
+
+Only focused synthetic tests ran: 12/12 passed in the sole invocation,0.029s,
+16,673 cumulative metered argument-API proxy operations. Static assertion/toy
+fraction scaffolding is bounded and included in elapsed time; proxy operations
+are not all CPU instructions. The receipt preserves the source-free scope.
+Tests cover literal profile polynomials/constants, arbitrary-symbol full Mellin
+and signed-square recomposition, generic nonmaximal profiles, Holder rounding,
+small-d child support, exact Young budgets, rational allocation enumeration,
+depth/domain/threshold guards, tampering and resource failures. No actual mu
+or zeta values, selected profiles, fixed-program norms, old suites, source
+sweeps, ranking changes or hashes were evaluated.
+
+The owned executable source/tests/receipt are stopped after their sole suite.
+This memo is complete and stopped for parent review. The useful achieved result
+is an unconditional scalar compensation bound plus an executable, source-bound
+language exposing the remaining signed comparison/cutoff estimate. The complete
+all-scale forcing and original RH obligations remain OPEN.

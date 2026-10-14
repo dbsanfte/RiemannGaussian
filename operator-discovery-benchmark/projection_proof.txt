@@ -1,0 +1,376 @@
+CANONICAL CARRY PROJECTION, OPERATOR INTERACTION, AND ACTUAL ZETA ZEROS
+
+These are written universal proofs with independent exact and Arb checks,
+not theorem-prover certificates. Historical originality is unresolved.
+The main operator is linear; the logarithmic maps derived from it are
+consequences, not additional discoveries created by naming compositions.
+An RH-equivalent continuation criterion is not a proof or simplification
+of RH. The full commutator's half-plane analytic bridge is still open.
+
+1. DOMAINS AND PRODUCTS
+
+Let f be a rational-valued arithmetic function on positive integers.
+delta=delta_1 is the unit, and * denotes ordinary Dirichlet convolution.
+Put e_p(n)=v_p(n), Omega(n)=sum_p e_p(n). For integer b>=2 let s_b(k)
+be the sum of the base-b digits of k. Define two zero/one kernels:
+  W_A,b(i,j)=1[e_p(i)+e_p(j) has no base-b carry for every p],
+  W_G,b(i,j)=1[Omega(i)+Omega(j) has no base-b carry].
+Their weighted divisor products are called A_b and G_b. At b=2 these
+are respectively primewise infinitary convolution A and the global
+total-degree product G already investigated by this detector.
+
+For any b, V_b(k)=sum_{r>=1}floor(k/b^r)=(k-s_b(k))/(b-1).
+The defect V_b(a+c)-V_b(a)-V_b(c) is nonnegative and zero exactly when
+the sum has no base-b carries. The corresponding defect for a product
+telescopes on triples. A product of zero/one weights is one exactly when
+the total defect is zero; hence both A_b and G_b are associative.
+They are commutative, unital, and coefficient-local. For prime b,
+V_b(k)=v_b(k!), but primality is not needed for the carry products.
+
+Define
+  D_b(n)=sum_p s_b(e_p(n))-s_b(Omega(n)) >=0,
+  chi_b(n)=1[D_b(n)=0],
+  M_b(f)(n)=chi_b(n)*f(n).
+Write M=M_2 and chi=chi_2. All these diagonal maps act on every arithmetic
+function. LOG and EXP below act only on f(1)=1 or h(1)=0 respectively.
+Only finitely many powers contribute at a fixed n: k nonunit factors
+force n>=2^k. Formal LOG/EXP identities thus need no analytic convergence.
+
+2. CANONICAL ALGEBRA INTERTWINER, INCLUDING UNIQUENESS
+
+The basis identity is
+  chi_b(ij)*W_A,b(i,j)=chi_b(i)*chi_b(j)*W_G,b(i,j).             (1)
+
+If W_A,b(i,j)=1, primewise digit sums add, and
+  D_b(ij)=D_b(i)+D_b(j)
+          +s_b(Omega(i))+s_b(Omega(j))-s_b(Omega(ij)).
+Each summand is nonnegative. It vanishes exactly when chi_b(i), chi_b(j),
+and W_G,b(i,j) all equal one, proving (1) in this case.
+
+If the right side of (1) equals one, then at each digit position all
+exponents of i together use fewer than b units, as do those of j, and
+their total-degree sum also uses fewer than b. Therefore the sum of all
+prime-exponent digit contributions from i and j is less than b at that
+position. In particular each individual prime's two exponent digits add
+without a carry. Thus W_A,b(i,j)=1. This proves (1) also when its left
+kernel is zero. By bilinearity and finite divisor sums,
+  M_b(f A_b g)=M_b(f) G_b M_b(g),                              (2)
+and M_b is a unital linear algebra homomorphism A_b -> G_b.
+Its diagonal mask also gives M_b^2=M_b and M_b M_c=M_c M_b.
+
+Suppose another diagonal A_b -> G_b homomorphism multiplies coefficient n
+by m(n) and preserves delta and every prime-power impulse. Express
+  delta_n = A_b-product_{p^e||n} delta_(p^e).
+There are no same-prime carries in this factorization. Its image must be
+the corresponding G_b product. The telescoping total-degree defect is
+zero exactly when sum_p s_b(e)=s_b(sum_p e). The image is therefore
+chi_b(n)*delta_n, forcing m(n)=chi_b(n) for every n. This proves uniqueness
+without restricting m to a zero/one or numerical search grammar.
+
+The domain/codomain in (2) matters. M is not a G -> G endomorphism:
+delta_2 G delta_6=delta_12, M(delta_12)=delta_12, while
+M(delta_2) G M(delta_6)=0. It is not an ordinary convolution endomorphism
+either: M(delta_2*delta_3)=0 but M(delta_2)*M(delta_3)=delta_6.
+
+3. INTEGER PARITY, DIRICHLET INVERSE, AND DIGIT LAYERS
+
+Let
+  W(n)=Omega(n)!/product_p(e_p(n)!).
+This is the integer number of orderings of the multiset of prime factors.
+It is classical (OEIS A008480); its definition is not claimed new here.
+For each prime ell, Legendre's formula gives
+  v_ell(W(n))=[sum_p s_ell(e_p(n))-s_ell(Omega(n))]/(ell-1).
+Hence chi_ell(n)=1[ell does not divide W(n)]. In particular
+  chi(n)=W(n) mod 2.                                         (3)
+
+The exact integer identity
+  W(ij)*product_p binomial(e_p(i)+e_p(j),e_p(i))
+    = W(i)*W(j)*binomial(Omega(i)+Omega(j),Omega(i))
+also proves (1) at b=2 by reduction modulo two: each binomial is odd
+precisely when its two lower summands add without binary carries. This
+parity fact follows directly from (1+x)^(2^r)=1+x^(2^r) in F_2[x].
+The independent verifier uses integer factorials/binomials rather than
+the production mask's digit-sum implementation.
+
+Let pi(n)=1 for primes and zero otherwise. The formal ordinary inverse
+  (delta+pi)^(-1)=sum_{k>=0}(-1)^k*pi^{*k}
+has coefficient (-1)^Omega(n)*W(n), since only k=Omega(n) contributes.
+Its coefficient parity is therefore chi. This inverse is also established
+prior art (OEIS A355939); recovering it is not historical novelty.
+
+For j>=0 let pi_j be the indicator of integers p^(2^j), p prime. In
+characteristic two Frobenius identifies pi^{*2^j} with pi_j. The finite
+geometric identity for product_j(delta+pi_j) tends coefficientwise to
+the inverse of delta+pi. Equivalently, over the ordinary integers,
+  chi = ordinary-product_{j>=0}(delta+pi_j).                  (4)
+Here coefficients actually are zero or one: at each binary digit j,
+choose no prime or exactly one prime. The resulting prime exponents
+have pairwise disjoint bit positions; each admissible n occurs uniquely.
+The independent verifier also computes (4) directly through n=4096.
+
+4. LOGARITHMIC PROJECTION AND FACTORIZATION OF THE OLD TRANSFERS
+
+For f(1)=1 set
+  P_b(f)=EXP_*(M_b(LOG_*(f))),
+  T(f)=EXP_A(LOG_*(f)), S(f)=EXP_G(LOG_*(f)).
+Since M_b is linear, idempotent, and the M_b commute, ordinary LOG/EXP give
+  P_b(f*g)=P_b(f)*P_b(g), P_b^2=P_b, P_b P_c=P_c P_b.           (5)
+Each f has the unique ordinary product decomposition
+  f=EXP_*(M_b h)*EXP_*((I-M_b)h), h=LOG_*f.
+The first factor is fixed by P_b; the second projects to delta. Uniqueness
+follows from the direct linear splitting of h into the two mask supports.
+
+Equation (2) sends the coefficient-local A-exponential to the G-exponential.
+With b=2 this proves the universal typed factorization
+  M(T(f))=EXP_G(M(LOG_*f))=S(P_2(f)).                         (6)
+Injectivity of EXP_G shows
+  S(f)=M(T(f)) iff M(LOG_*f)=LOG_*f.                         (7)
+This class includes every multiplicative f, whose ordinary logarithm is
+supported on prime powers, but it is larger. For h=delta_12 the exponential
+f=EXP_*h is fixed by P_2 and is nonmultiplicative: f(12)=1, f(4)=f(3)=0.
+For h=delta_6 its exponential projects to delta; (7) fails. Thus (6) cannot
+be simplified to S=M T on arbitrary normalized inputs. Since LOG_*u has
+coefficient 1/e at prime powers and zero elsewhere, P_b(u)=u and (6)
+recovers S(u)=M(T(u)). P_b itself has trivial action on the zeta input u;
+it is not counted as an independent new zeta operator.
+
+5. PRIME-BASE HIERARCHY AND CLASSICAL MULTIPLICATIVE COMPLETION
+
+For an integer with at least two distinct prime divisors, W(n)>1 and some
+prime ell divides it. For 1 and prime powers, W(n)=1. Consequently
+  product_{all prime ell} chi_ell(n)=1[n=1 or n is a prime power].
+Each coefficient stabilizes after finitely many projections. The commuting
+P_ell therefore converge coefficientwise to EXP_*(the prime-power part of
+LOG_*f). On a prime-power divisor chain, LOG_*f uses only the same local
+coefficients f(p^e). Exponentiating separately over primes gives the limit
+  C_mult(f)(n)=product_{p^e||n}f(p^e), with C_mult(f)(1)=1.     (8)
+This is classical multiplicative completion, not a claimed new operator.
+
+No fixed finite collection of prime bases implements (8) universally:
+choose a prime ell outside the collection and n=2^(ell-1)*3, giving
+W(n)=ell. For bases 2,3,5,7 take n=3072=2^10*3. Then W(n)=11, so all four masks
+preserve delta_n, while the base-11 mask removes it. The input
+EXP_*(delta_3072) survives those four projections and is removed by P_11.
+The finite checks through 4096 agree with (8) after bases through 11,
+but the universal claim needs all prime bases and the proof above.
+
+6. NONCOMMUTING TRANSFORMS AND THE FIRST MIXED-PRIME COEFFICIENT
+
+Let D(f)=T(S(f))-S(T(f)); subtraction is coefficientwise. At prime powers,
+all divisor indices are powers of one prime, and A and G coincide. Since
+both transfers use only divisors, their compositions agree at these indices.
+At a squarefree index, all local exponents are 0 or 1, so A and ordinary
+convolution agree throughout its divisor subalgebra. T(f) fixes every
+squarefree coefficient for all f; applying the same fact to S(f) and using
+divisor-locality of S proves D(f)=0 at squarefree indices too.
+
+For distinct primes p,q abbreviate
+  a=f(p), b=f(q), c=f(p^2), d=f(p*q), e=f(p^2*q).
+Ordinary logarithmic coefficients on this six-element divisor grid are
+  h(p)=a, h(q)=b, h(p^2)=c-a^2/2, h(p*q)=d-a*b,
+  h(p^2*q)=e-a*d-b*c+a^2*b.
+Enumerating allowed A/G exponential terms gives
+  T(f)(p^2)=S(f)(p^2)=c-a^2/2,
+  T(f)(p*q)=d, S(f)(p*q)=d-a*b,
+  T(f)(p^2*q)=e-a*d+a^2*b/2,
+  S(f)(p^2*q)=e-a^2*b/2.
+The prime coefficients remain a,b. Substitution in these same formulas gives
+  T(S(f))(p^2*q)=e-a*d+a^2*b,
+  S(T(f))(p^2*q)=e-a*d,
+  D(f)(p^2*q)=f(p)^2*f(q).                                  (9)
+An independent Sympy computation using generic formal products proves the
+symbolic identity, including cancellation at every other grid divisor.
+For u(n)=1 the first discrepancy is n=12: T S u(12)=1, S T u(12)=0.
+The detector learns the cubic from eight rational-input examples and
+retains it on eight fresh inputs/prime pairs; the universal proof is (9).
+
+A Dirichlet series for the entire commutator has a proved initial domain
+Re(s)>=2: T(u) and S(u) have coefficients in [0,1], hence their nonunit
+weighted l1 norms are <=zeta(2)-1<1. The ordinary logarithm is absolutely
+summable, and the A/G exponentials are bounded by exp(||LOG_*f||).
+This proves the composed series converge there. It does not prove an
+analytic bridge for the commutator throughout Re(s)>1/2. This operator
+interaction is recorded as a verified formal consequence with that limit.
+
+7. NONTRIVIAL RAW ZETA ACTION OF THE LINEAR PROJECTION
+
+For u(n)=1, M(u)=chi. Equation (4) and absolute convergence give
+  F_chi(s)=sum_n chi(n)*n^(-s)
+          =product_{j>=0}(1+P(2^j*s)), Re(s)>1,               (10)
+where P(z)=sum_p p^(-z). Define, on H={Re(s)>1/2},
+  C(s)=product_{j>=1}(1+P(2^j*s)),
+  Q(s)=sum_{k>=2}P(k*s)/k.
+Both converge locally uniformly and are holomorphic on H: their first
+arguments have real part >1 and the higher arguments grow without bound.
+C is not identically zero (it is >=1 on real s>1/2). It is nonzero for
+Re(s)>1, since |P(2^j*s)|<=P(2)<sum_{n>=2}n^(-2)<1, and the product's
+deviations from one are summable. Nonvanishing on all H is not asserted.
+
+The normalized Euler logarithm gives P(s)=log(zeta(s))-Q(s) on Re(s)>1.
+Thus the second independent representation is
+  F_chi(s)=C(s)*log(zeta(s))+C(s)*(1-Q(s)).                  (11)
+This is a logarithmic connection to zeta, not preservation of its zeros.
+
+Let Z(s)=(s-1)*zeta(s), including its removable value Z(1)=1. Pole cancellation
+gives the initially defined function
+  Phi_chi=F_chi+C*log(s-1)=C*log(Z)+C*(1-Q).                 (12)
+RH implies Z is zero-free on simply connected H, so its normalized logarithm
+is holomorphic there and (12) continues single-valuedly and holomorphically.
+Conversely a zero rho in H of finite positive order m changes (12) around
+a small loop by 2*pi*i*m*C(basepoint). Since C is not identically zero,
+one can choose a basepoint with C!=0. Even C(rho)=0 cannot remove the
+monodromy on its neighborhood. Such a zero obstructs the required extension.
+Functional reflection and the known critical-strip location of nontrivial
+zeros identify absence of zeros in H with RH. Therefore
+  RH iff Phi_chi has a single-valued holomorphic extension to H.           (13)
+The global continuation in (13) remains unproved; finite tests do not
+decide it. This is a reformulation with an explicit arithmetic input.
+
+8. CERTIFIED ACTUAL-ZETA COMPARISONS AND INFINITE TAILS
+
+For real a>1 put D(a)=2^(-a)+2^(1-a)/(a-1). The integral bound gives
+  |P(z)|<=D(Re(z)).
+For sigma=Re(s)>0 with a=2^(J+1)*sigma>1, omitted binary layers satisfy
+  B_J=sum_{j>J}|P(2^j*s)|<=D(a)/(1-2^(-sigma)).
+Indeed 2^(J+1+r)*sigma>=a+r*sigma, and replacing its integral denominator
+by a-1 bounds the summands by D(a)*2^(-r*sigma). If C_J is the finite
+product, its omitted-product error is at most
+  |C-C_J|<=|C_J|*(exp(B_J)-1).                               (14)
+The Q tail after k=K is bounded similarly by
+  tau_Q<=D((K+1)*sigma)/[(K+1)*(1-2^(-sigma))].
+For chi coefficients in {0,1}, the arithmetic Dirichlet tail after N is
+  tau_DS<=N^(1-sigma)/(sigma-1), sigma>1.
+
+The prime sums in the independent analytic route use actual Arb zeta
+values and Mobius inversion, not the searched arithmetic coefficients:
+  P(z)=sum_{m>=1}mu(m)*log(zeta(m*z))/m.
+The infinite tail beyond m=M, with a=M+1 and t=Re(z)>1, is bounded by
+  [(1+2/(a*t-1))*2^(-a*t)]
+  /[a*(1-2^(-a*t))*(1-2^(-t))].
+This follows from |log zeta(m*z)|<=D(m*t)/(1-2^(-m*t)) and a geometric
+majorant. On the initial tested domain log(zeta(t))<pi, ensuring the
+principal complex logarithm equals the normalized Euler branch. Every
+finite prime-zeta value includes a complex error box for its omitted tail.
+
+If epsilon_C denotes (14), finite product reference (1+P)*C_J has error
+<=|1+P|*epsilon_C, while finite affine reference C_J*(log zeta+1-Q_K)
+has error <=|C_J|*tau_Q+epsilon_C*(|log zeta+1-Q_K|+tau_Q).
+Ball arithmetic retains finite-rounding and prime-zeta errors separately.
+Adding tau_DS bounds each independent numerical comparison.
+projection_analytic_probe.py tests six fresh points with N=512, J=8, K=64.
+At each point both representations pass these proved error bounds. Adding
+1/7 to the coefficient at n=6 is rejected by each representation using
+the very same bounds; tolerances are not fitted to the observed errors.
+
+9. A CERTIFIED ACTUAL ZERO AND ITS LOGARITHMIC OBSTRUCTION
+
+Take c=1/2+14.13472514173469379046*i and r=1/10000. Let R be the rectangle
+with both component radii r. Arb Taylor coefficients at c and over R give
+  |zeta(s)-zeta'(c)*(s-c)|
+    <=|zeta(c)|+sup_R|zeta''/2|*r^2
+    < r*|zeta'(c)| on |s-c|=r.
+Taylor's remainder estimate follows by integration along the segment in R.
+Rouche therefore counts exactly one zero, with multiplicity one, in the
+disk. The reflection s->1-conjugate(s) preserves the disk; the functional
+equation forces its unique zero onto the critical line. No global rank
+(such as being the first zero) is inferred from this local certificate.
+
+To test (12) on the WHOLE disk, C must continue through its small portion
+with Re(s)<1/2. For j>=2 its prime sums still have real argument >1.9996.
+For j=1 the variable w=2s has real part at least 0.9998, so an initial
+Euler-domain principal-branch assumption would be invalid. Instead ten
+adjacent Arb rectangles cover
+  0.9998<=Re(w)<=1.5,
+  |Im(w)-28.26945028346938758092|<=0.0002.
+Each image has Re(zeta(w))>0. The principal log throughout this corridor
+is thus holomorphic and connected to the normalized Euler logarithm at
+Re(w)=1.5, where log(zeta(1.5))<pi is independently certified.
+
+Möbius inversion with that anchored m=1 logarithm, normalized m>=2 logs,
+and the same convergent tail continues P(w) holomorphically through the
+disk. Products through j=8 and the tail (14) enclose the local continuation
+of C there. Its whole-rectangle modulus lower bound after the infinite
+tail is positive. This proves C holomorphic and nonzero on the whole disk.
+Q need not be continued to this entire disk to test logarithmic monodromy:
+every term P(k*s) for k>=2 has a holomorphic local continuation there by
+the same k=2 corridor or, for k>=3, its absolutely convergent prime series.
+Their tail is locally uniform. Thus C*(1-Q) is also single-valued locally.
+
+The actual Z has winding one by the certified simple zero; therefore
+Phi_chi has monodromy 2*pi*i*C(basepoint), whose modulus is bounded below
+by 2*pi times the certified whole-disk C lower bound. A 129-point phase
+mesh agrees but supplies no proof beyond the Arb/analytic certificate.
+The circle crosses Re(s)=1/2, so this branching is fully compatible with
+RH. It tests sensitivity to a real zeta zero, not an artificial model or
+a statement about zeros elsewhere in the critical strip.
+
+10. SEARCH, INDEPENDENT VERIFICATION, AND PUBLICATION HISTORY
+
+The learner enumerates 10,260 two-feature rational/digital programs and
+accepts the basis equation m(ij)*W_A=m(i)*m(j)*W_G plus m(1)=m(p^e)=1.
+No target mask labels are supplied. Twelve programs fit the 119 training
+basis pairs through 32. Through 4096, nine fail and three equivalent
+expressions for the same unique mask survive all 34,720 basis pairs.
+These three syntactic survivors count as one operator.
+
+check_projection.py independently uses integer multinomial parity,
+binomial parity, prime-indicator inverse recursion, ordinary digit-layer
+products, triangular Omega-derivation LOG/EXP recurrences, and symbolic
+commutator algebra. It reconstructs all held-out decisions/counterexamples,
+generic rational-input laws, prime-base hierarchy and the cubic law.
+This supports the universal proofs rather than replacing them with
+finite tests or counting shared production functions as independence.
+
+The mask has known multinomial-parity ingredients and a known inverse
+sequence. Its particular canonical A->G characterization, typed nonlinear
+factorization, full prime-base projection hierarchy, cubic transfer
+interaction, and raw-zeta product must be compared with further primary
+literature. No missing search hit certifies originality. The exact verified
+historically-new list remains empty until publication history is resolved.
+See novelty_audit.txt; numerical and exact evidence is in projection-results/.
+
+11. CERTIFIED CREATED ZERO: M DOES NOT PRESERVE ZETA'S ZERO SET
+
+A diagnostic scan of 1+P(s) at Re(s)=1.1, 0<=Im(s)<=2000, followed by
+Newton iteration suggests a root near
+  c=1.153396876020314+14.016611700317199*i.
+These diagnostics alone establish no zero. A fresh certificate uses radius
+r=1/1000000, the same enclosing rectangle, and the finite analytic function
+  F_64(s)=1+sum_{m=1..64}mu(m)*log(zeta(m*s))/m.
+For minimum sigma=Re(c)-r>1, log(zeta(sigma))<pi proves all normalized
+logarithms agree with their principal branches on the disk. The omitted
+Mobius sum has the explicit uniform bound tau from section 8. Arb Taylor
+coefficients at c and over the rectangle give on the circle
+  |(1+P(s))-F_64'(c)*(s-c)|
+    <=|F_64(c)|+sup_rectangle|F_64''/2|*r^2+tau
+    <r*|F_64'(c)|.
+Rouche therefore proves exactly one simple zero of 1+P in the disk,
+including the infinite Mobius tail. C is nonzero throughout Re(s)>1 by
+section 7; a separate finite-product plus infinite-layer enclosure confirms
+a positive modulus lower bound on this same disk. Thus F_chi=C*(1+P)
+has exactly one simple zero there too.
+
+An independent actual-zeta Arb enclosure on the entire rectangle excludes
+zero. Hence this is a rigorously certified counterexample to the proposed
+automatic identity of zero sets for M(u) and zeta, in their original
+convergence half-plane. It is a created zero of the transformed function,
+not a zeta zero or an RH counterexample. The valid RH criterion is the
+single-valued logarithmic continuation in section 7; it does not say that
+the zeros of F_chi are the zeros of zeta.
+
+check_projection_analytic.py independently repeats this zero count using
+M=32 and a Cauchy estimate on the larger disk of radius R=1/100 around c.
+For the finite normalized function F_32, an Arb rectangle encloses its
+modulus on the larger circle by M_R. Cauchy's coefficient bounds imply
+  |F_32(s)-F_32(c)-F_32'(c)*(s-c)|
+     <=M_R*(r/R)^2/(1-r/R), |s-c|=r.
+Adding its own integral/geometric Mobius tail and the constant gives a
+second strict Rouche inequality. The independent tail uses the sharper
+elementary |log zeta(m*s)|<=zeta(m*sigma)-1<=D(m*sigma), hence
+  tail<=D((M+1)*sigma)/[(M+1)*(1-2^(-sigma))].
+A deliberately incorrect logarithm shifted by 2*pi*i fails this same
+certificate. The checker also recomputes every critical-zero branch
+corridor, C product and actual-zero count with different prime-sum and
+product cutoffs, importing no production helper. FLINT/Arb is the shared
+trusted numerical kernel; independence does not mean an independent
+implementation of the special-function library itself.

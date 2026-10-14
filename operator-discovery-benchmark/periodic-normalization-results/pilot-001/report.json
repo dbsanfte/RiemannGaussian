@@ -1,0 +1,148 @@
+{
+  "RH_proved": false,
+  "checker": {
+    "elapsed_seconds": 0.008602468005847186,
+    "operations": 1207,
+    "peak_cells": 0
+  },
+  "development_receipts": {
+    "check_periodic_normalization_040_development.json": {
+      "edits_stopped": true,
+      "old_suites_rerun": false,
+      "operations": 37697,
+      "owner": "independent_periodic_normalization_checker",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_periodic_normalization_040"
+          ],
+          "elapsed_seconds": 0.3236826590145938,
+          "operations": 37697,
+          "peak_rss_KiB": 29116,
+          "returncode": 0,
+          "stderr": "test_all_dilation_coefficients_are_retained (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_all_real_hyperbola_calibration_including_subunit (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_changed_legal_periods_and_unrestricted_rational_source (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_changed_rational_family_and_global_minimax (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_exact_normalization_and_scalar_bound_required (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_false_closure_ordinary_moment_and_bounded_inverse_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_dictionary_coverage_and_selection (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_shifted_tail_and_subunit_cost_required (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_full_source_transform_is_a_coefficient_identity (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_missing_hyperbola_branch_vertex_and_wrong_optimum (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_missing_preconditioner_terms_or_mean_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_norm_recovery_beta_triangle_and_growth_costs (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_padded_exponent_proves_strict_margin_without_changing_split (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_periodic_primitive_and_real_prefix_bound (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_source_order_is_not_a_hardcoded_actual_answer (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_source_unit_sign_and_role_swap_rejected (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_strict_contraction_boundary_remains_open (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_strict_types_and_production_meter (test_check_periodic_normalization_040.PeriodicProof) ... ok\ntest_two_copies_destroy_registered_rh_bridge (test_check_periodic_normalization_040.PeriodicProof) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.241s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_periodic_normalization_040 operations=37697 elapsed_seconds=0.241204\n",
+          "tests": 19
+        }
+      ],
+      "source_observations": 0
+    },
+    "finite_normalization_backend_040_development.json": {
+      "cumulative_operations": 62146,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.02771852700971067,
+          "errors": 0,
+          "exposure": "synthetic source AST, arbitrary finite signed arrays and power kernels only; no actual source or archive",
+          "failures": 0,
+          "operations": 61903,
+          "returncode": 0,
+          "tests": 6
+        },
+        {
+          "elapsed_seconds": 0.001133861020207405,
+          "errors": 0,
+          "exposure": "synthetic source AST, arbitrary finite signed arrays and power kernels only; no actual source or archive",
+          "failures": 0,
+          "operations": 243,
+          "returncode": 0,
+          "tests": 1
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "periodic_normalization_search_040_development.json": {
+      "cumulative_operations": 1438,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.008426820044405758,
+          "errors": 0,
+          "exposure": "synthetic source AST, finite generic Mobius inversion, exact rational exponent constraints only",
+          "failures": 0,
+          "operations": 1438,
+          "returncode": 0,
+          "tests": 4
+        }
+      ],
+      "schema": "owned-development-v1"
+    }
+  },
+  "elapsed_seconds": 0.04172259499318898,
+  "exact_source_normalization_replayed": true,
+  "fixed_normalization_used_in_finite_bound": true,
+  "general_finite_backend_independently_admitted": false,
+  "generated_choices": "periodic coefficient, period/copy programs, exact fractional split, complete bound costs",
+  "hyperbola": {
+    "absolute_shift_contraction": true,
+    "all_real_kernel_rule": "hyperbola_with_complete_periodic_prefix_and_ordinary_tail",
+    "critical_shift_margin": "1/15",
+    "domain": "0<alpha<=theta",
+    "envelope_minimum": "2/5",
+    "exponent_candidates": [
+      {
+        "admissible": true,
+        "power": "2/5"
+      }
+    ],
+    "kernel_constant_per_prefix_bound": "21/2",
+    "lines": [
+      {
+        "constant": "0",
+        "slope": "1"
+      },
+      {
+        "constant": "2/3",
+        "slope": "-2/3"
+      }
+    ],
+    "proof": "minimum of convex piecewise-linear exponent envelope at a vertex",
+    "selected_alpha": "2/5",
+    "selected_exponent": "2/5",
+    "subcritical": true,
+    "vertices": [
+      {
+        "alpha": "2/5",
+        "power": "2/5"
+      },
+      {
+        "alpha": "2/3",
+        "power": "2/3"
+      }
+    ]
+  },
+  "new_linear_target_bound_proved": false,
+  "numerical_source_observations": 0,
+  "original_F_bound_proved": false,
+  "paid_reductions": 6,
+  "paid_remainder": {
+    "all_signed_remainder_terms_retained": true,
+    "constant": "3945/4",
+    "domain": "every real x>=1",
+    "energy_constant": "15563025/4",
+    "energy_domain": "every integer X>=1, X^-2 sum_(X<=n<2X)",
+    "energy_power": "-1/5",
+    "power": "2/5"
+  },
+  "peak_rss_kib": 704032,
+  "prior_coefficient_archives_read": false,
+  "producer": {
+    "elapsed_seconds": 0.006934395991265774,
+    "operations": 3641,
+    "peak_cells": 0
+  },
+  "programs": 18,
+  "rejected_pole_erasure_controls": 6,
+  "selected": {
+    "power": 1,
+    "q": 2
+  },
+  "source_checker_operations": 3630,
+  "status": "PERIODIC_NORMALIZATION_REDUCTION_VERIFIED_LINEAR_SIGNED_BOUND_OPEN",
+  "supplied_grammar": "periodic preconditioning, analytic centering and reviewed kernel bound rules",
+  "whole_signed_bound_proved": false
+}

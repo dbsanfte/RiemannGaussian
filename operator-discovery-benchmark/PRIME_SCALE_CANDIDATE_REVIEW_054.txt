@@ -1,0 +1,336 @@
+SELECTED PRIME-SCALE CANDIDATES: STRUCTURAL REVIEW 054
+
+Status
+======
+I read the frozen scale_followup_001/selected.json and the relevant report
+metadata. They record six selected OPEN bounds and 66 independently checked
+finite passes, not a uniform source theorem. The main request considered here
+is alpha=1/5, q=2, coefficients [2,-3,1], C=2, eta=0 with divide_by_alpha:
+
+ |A(4N)-3A(2N)+2A(N)| <= (2/5)*sqrt(N), every integer N>=2.       (S2)
+
+The comparison request is alpha=1/2, coefficients [-2,1], C=2, eta=0:
+
+ |A(2N)-2A(N)| <= sqrt(N), every integer N>=2.                   (S1)
+
+Each A belongs to its own fixed alpha. No argument below substitutes one
+alpha for the other. Neither assertion is proved or refuted here. All
+identities and paid envelopes remain valid if further finite audits refute
+either particular constant. No source values, scientific computations,
+tests, or hashes were produced; no frozen files were edited.
+
+Notation throughout:
+ w(d)=(log(d))^alpha, w(1)=0, 0<alpha<1,
+ K(n)=-sum_{d|n} mu(d)w(d), K(1)=0,
+ A(x)=sum_{2<=n<=x}K(n),
+ T1(x)=A(2x)-2A(x), T2(x)=A(4x)-3A(2x)+2A(x).
+
+The frozen 051 proof gives positivity, K(n)<=log(n)^alpha, and
+
+ K(n)=I_alpha^-1 int_0^infinity
+            product_{p|n}(1-p^-t)*t^(-alpha-1) dt, n>=2,
+ I_alpha=int_0^infinity(1-exp(-u))*u^(-alpha-1) du>0.              (1)
+
+1. Exact digit reduction, including the constant identity
+=========================================================
+For any fixed integer q>=2, P(z)=sum_{j=0}^m c_j z^j, P(q)=0, put
+
+ digit_r(y)=floor(q^r y)-q floor(q^(r-1)y), r=1,...,m,
+ b_r=sum_{j=r}^m c_j q^(j-r).
+
+The elementary telescoping expansion of floor(q^j y) proves
+
+ sum_j c_j floor(q^j y)=sum_{r=1}^m b_r digit_r(y).              (2)
+
+Each digit is in {0,...,q-1}; all floor endpoints are exact. Also
+
+ sum_r b_r=(P(q)-P(1))/(q-1)=-P(1)/(q-1).                      (3)
+
+Thus P(1)=0 means the digit coefficients have zero sum; it does NOT mean
+their mu-weighted arithmetic contributions cancel.
+
+For the selected quadratic define
+
+ W(y)=floor(4y)-3floor(2y)+2floor(y)
+     =digit_2(y)-digit_1(y).
+
+Writing r={y}, its exact values are
+ 0 for 0<=r<1/4; +1 for 1/4<=r<1/2;
+ -1 for 1/2<=r<3/4; 0 for 3/4<=r<1.
+
+Hence the entire selected expression is
+
+ T2(N)=-sum_{d<=4N} mu(d)w(d)W(N/d).                            (4)
+
+The comparison expression is
+
+ T1(N)=-sum_{d<=2N} mu(d)w(d)digit_1(N/d).                      (5)
+
+The unit contributes zero in these formulas; all other prime powers and
+composites are retained. The bound |W|<=1 is paid, but applying it termwise
+to (4) gives only O(N log(N)^alpha), not (S2).
+
+2. Exact reciprocal-interval pairing: the missing arithmetic is visible
+=======================================================================
+For every integer k>=0 set
+
+ I_k^+(N)=(N/(k+1/2), N/(k+1/4)],
+ I_k^-(N)=(N/(k+3/4), N/(k+1/2)].
+
+Let M_alpha(I)=sum_{d integer in I}mu(d)w(d). Formula (4) becomes
+
+ T2(N)=sum_{k>=0} [M_alpha(I_k^-(N))-M_alpha(I_k^+(N))].         (6)
+
+This sum has finite actual integer support. Adjacent intervals share the
+exact boundary N/(k+1/2); one interval is open there and the other closed,
+as displayed. Their lengths differ, so replacing them by equal-length or
+normalized averages drops a complement term. Every gcd/prime-power sector
+of mu is contained in (6); the identity is not a prime-only approximation.
+
+There is a reusable fully paid small-denominator removal. For any integer
+0<=D<=4N, the d<=D contribution to (4) has magnitude at most
+
+ D*(log(4N))^alpha.                                             (7)
+
+Choose any fixed allocation 0<c0<Ctarget and
+D=floor(c0*sqrt(N)/(log(4N))^alpha). Then (7)<=c0 sqrt(N).
+A sufficient remaining source lemma is
+
+ |sum_k [M_alpha(I_k^- intersect (D,4N])
+             -M_alpha(I_k^+ intersect (D,4N])]|
+       <=(Ctarget-c0)*sqrt(N), for all integer N>=2.             (8)
+
+This is a distinct finite reciprocal-interval correlation expression with
+an explicit paid head. It is OPEN, and is equivalent to the difficult full
+frontier up to the paid head; its mere generation is not a new scale gain.
+Separate absolute estimates for its many intervals lose the useful pairing.
+Bounds on a single unweighted Mertens prefix do not automatically give (8)
+with its declared constant and exponent. An assumed RH-strength companion
+bound must be exposed as a dependency, not used as an unconditional provider.
+
+3. Actual mu(2m) pairing: one logarithmic increment is paid, not the target
+========================================================================
+For odd m, mu(2m)=-mu(m); for a denominator divisible by 4, mu is zero.
+Splitting (4) gives the exact complete cofactor formula
+
+ T2(N)=sum_{m odd, m<=4N} mu(m)
+       [w(2m)W(N/(2m))-w(m)W(N/m)].                            (9)
+
+The first term vanishes for m>2N, so the common 4N horizon adds no false
+terms. Put Delta w(m)=w(2m)-w(m)>0. Then
+
+ T2(N)=Phi(N)+R_delta(N),
+ Phi(N)=sum_{m odd, m<=4N}mu(m)w(m)
+                      [W(N/(2m))-W(N/m)],
+ R_delta(N)=sum_{m odd, m<=2N}mu(m)Delta w(m)W(N/(2m)).          (10)
+
+If digit_0(y)=floor(y)-2floor(y/2), the bracket in Phi is exactly
+2 digit_1(y)-digit_0(y)-digit_2(y). It is NOT identically zero. Thus an
+unsuppressed w(m) term survives actual prime-2 pairing. Dropping it and
+bounding only Delta w would be a false recovery argument.
+
+The unit m=1 must be kept in R_delta: w(1)=0 but w(2)>0. Its contribution
+is w(2)W(N/2), and need not vanish at odd integer N.
+
+Concavity proves for m>=2
+
+ 0<Delta w(m)<=alpha*log(2)*(log(m))^(alpha-1),
+ Delta w(m)<=log(2)^alpha, including m=1.                       (11)
+
+Splitting the sum at sqrt(N) yields the unconditional explicit envelope
+
+ |R_delta(N)|
+ <=(1+sqrt(N))*log(2)^alpha
+       +2*alpha*log(2)*N*((log(N))/2)^(alpha-1), N>=2.           (12)
+
+The count was enlarged deliberately, so no prime-count estimate is hidden.
+This proves a logarithmic improvement over the naive N log(N)^alpha envelope,
+but its second term is still larger than sqrt(N) asymptotically. It cannot
+pay (S2). Further fixed-order log differences produce more logarithmic
+savings, not a power saving by themselves. The signed joint Phi+R_delta is
+the exact frontier; bounding these pieces independently can lose cancellation.
+
+For perspective, without w the odd-divisor identity is unusually explicit:
+
+ sum_{m odd, m<=x} mu(m)floor(x/m)
+  =number of powers of 2 not exceeding x.
+
+Indeed sum_{m|n, m odd}mu(m) is 1 exactly when n has no odd prime divisor,
+and is zero otherwise. For real x>=1 the count is 1+floor(log_2 x).
+It follows that sum_{m odd}mu(m)W(x/m)=-1 for x>=1, and the corresponding
+unweighted difference in (9) is zero for x>=2. This explains a genuine
+unweighted cancellation. It does NOT extend to w(m): the weighted residual
+in (10) is precisely the information that the unweighted identity omits.
+
+4. Output prime transport: a positive defect and a full joint frontier
+======================================================================
+Unlike the general 051 kernel with b>0, this b=0 K depends only on rad(n).
+Thus for every prime p,
+
+ p|m => K(pm)=K(m),
+ p not dividing m, m>=2 => 0<K(pm)<=K(m).                       (13)
+
+The latter follows from multiplying (1)'s integrand by 1-p^-t in [0,1].
+The unit m=1 is a mandatory exception: K(1)=0 and K(p)=log(p)^alpha>0.
+For odd m>=3 define the prime-2 insertion defect
+
+ D2(m)=K(m)-K(2m)
+      =I_alpha^-1 int_0^infinity
+          2^-t product_{p|m}(1-p^-t)t^(-alpha-1) dt>0
+      =-sum_{d|m}mu(d)*(log(2d))^alpha.                         (14)
+
+This is a positive shifted-log source, with all valuations retained. It is
+not a random or independent-prime estimate, and 0<D2(m)<=K(m). Again (14)'s
+positivity excludes m=1; its formal difference there is -K(2).
+
+For integer N>=2 put
+
+ B(N)=sum_{N<m<=2N} K(m),
+ J(N)=sum_{2N<n<=4N, n odd} K(n),
+ D(N)=sum_{N<m<=2N, m odd} D2(m)>=0.
+
+Partition the child block into its even and odd terms. Its even terms are
+K(2m), N<m<=2N; when m is even they equal K(m), and when m is odd they
+equal K(m)-D2(m). Therefore
+
+ B(2N)=B(N)-D(N)+J(N),
+ T2(N)=B(2N)-2B(N)=J(N)-B(N)-D(N).                             (15)
+
+This is a source-specific joint construction. The fresh odd output block
+must match the parent block PLUS the known positive prime-2 defect. Neither
+pointwise monotonicity nor positivity determines the fresh odd block's mass.
+The resulting squared expression retains all six terms:
+
+ (J-B-D)^2=J^2+B^2+D^2-2JB-2JD+2BD.                           (16)
+
+Dropping the positive BD or either negative cross is not an exact proof.
+A detector can seek a genuine uniform prediction/transport lemma for these
+bound source states. Merely renaming J-B-D as an innovation and assuming its
+bound restates the target. The proof task is the actual fresh/parent/defect
+correlation, with prime and composite sectors joined, rather than optimizing
+an arbitrary constant predictor.
+
+The same decomposition is generic for any FIXED actual prime p. Define
+
+ B_p(N)=sum_{N<m<=pN} K(m),
+ J_p(N)=sum_{pN<n<=p^2 N, p not dividing n} K(n),
+ D_p(m)=K(m)-K(pm), for p not dividing m and m>=2,
+ D_p(N)=sum_{N<m<=pN, p not dividing m} D_p(m).
+
+Then every prime valuation and every residue not divisible by p is retained,
+and the exact source-specific identities are
+
+ D_p(m)=I_alpha^-1 int_0^infinity
+            p^-t product_{r|m}(1-r^-t)*t^(-alpha-1) dt
+       =-sum_{d|m}mu(d)*(log(pd))^alpha>0,
+ B_p(pN)=B_p(N)-D_p(N)+J_p(N),
+ A(p^2 N)-(p+1)A(pN)+pA(N)
+             =J_p(N)-(p-1)B_p(N)-D_p(N).                       (15p)
+
+Here r in the product ranges over distinct prime divisors of m. If p divides
+m, its actual defect is ZERO by radical invariance; the displayed positive
+integral must NOT be used without the p-free mask. If m=1, its actual defect
+is -log(p)^alpha; N>=2 excludes that unit from the block sums but a prefix
+version must restore it. These masks are part of the compiler contract.
+
+The positive integral gives a useful unconditional pointwise certificate:
+
+ 0<D_p(m)<=K(m),
+ D_p(m)<=min_{r|m}[(log(p)+log(r))^alpha-(log(p))^alpha],
+ D_p(m)<=alpha*product_{j=1}^{k-1}(j-alpha)
+                *product_{r|m}log(r)/(log(p))^(k-alpha),
+ k=omega(m), p not dividing m, m>=2.                            (15b)
+
+This follows by dropping factors or by the same k-fold derivative/Gamma
+argument as 051, now with strictly positive base log(p). It is not an
+estimate for the unresolved fresh residues. The full squared generic
+frontier contains -2(p-1)J_p B_p, -2J_p D_p, and +2(p-1)B_p D_p along
+with its three positive squares. A prime/residue auxiliary grammar should
+preserve that signed joint expression before applying a majorant.
+
+5. The two polynomial shapes are recoverably related at the SAME alpha
+======================================================================
+The exact polynomial factorization gives
+
+ T2(N)=T1(2N)-T1(N).                                            (17)
+
+Suppose hypothetically that |T2(N)|<=Ctarget sqrt(N) for ALL integer N>=2.
+An integer halving argument pays recovery of T1, including odd-scale jumps.
+For n>=4 write n=2m+r, m>=2, r in {0,1}. Then
+
+ T1(n)=T1(m)+T2(m)+r*Delta_m,
+ Delta_m=K(4m+1)+K(4m+2)-2K(2m+1),
+ |Delta_m|<=2*(log(4m+2))^alpha.                               (18)
+
+The last constant uses positivity: each positive or negative side has at
+most 2(log(4m+2))^alpha, so the absolute difference is bounded by their maximum.
+After halving to 2 or 3, there are at most floor(log_2 n)-1 jumps. The forcing
+sum is bounded by sqrt(n)*sum_{l>=1}2^-l/2=sqrt(n)/(sqrt(2)-1).
+The finite head obeys |T1(2)|,|T1(3)|<=5(log(6))^alpha without evaluating K.
+Hence for every integer n>=2,
+
+ |T1(n)|<=5(log(6))^alpha
+       +Ctarget*sqrt(n)/(sqrt(2)-1)
+       +2*(floor(log_2 n)-1)*(log(2n))^alpha.                  (19)
+
+In particular the recovered leading constant is Ctarget/(sqrt(2)-1), with
+an explicit O(log(n)^(alpha+1)) term. No geometric-subsequence interpolation
+or omitted rounding/jump term is hidden. Conversely, a uniform |T1(N)|<=C1
+sqrt(N) immediately yields |T2(N)|<=C1*(sqrt(2)+1)*sqrt(N).
+
+Thus these shapes do not define different square-root growth classes for a
+fixed alpha; (19) turns a uniform bound of either type into a square-root
+bound of the other, with changed constants. The quadratic removes the
+constant filtered mean of T1, which can improve early amplitudes without
+proving a new all-scale exponent. This equivalence does not compare selected
+alpha=1/5 with the comparison alpha=1/2. A proof can still be easier in one
+representation, but that ease has to come from arithmetic identities such
+as (9) or (15), not from the polynomial factorization alone.
+
+6. Why the fractional-zero bridge does not itself refute the proposed C
+======================================================================
+At a critical-line zero rho, |2^rho|=sqrt(2). Neither root 1 nor root 2 of
+the quadratic multiplier can meet it. The reverse triangle inequality gives
+
+ |(2^rho-1)(2^rho-2)| >=(sqrt(2)-1)*(2-sqrt(2))>0,
+ |2^rho-2|>=2-sqrt(2)>0.
+
+Thus neither selected shape erases the fractional singularity. However the
+053 proof only refutes holomorphy across an OFF-line zero. If a uniform
+sqrt(x) bound held and rho were ON the critical line, its Mellin estimate
+along rho+delta would permit O(1/delta), whereas the local singularity is
+only O(delta^-alpha), alpha<1. That is compatible. There is no contradiction
+for alpha=1/5 or alpha=1/2 and no deduction of a numerical lower limit on C
+from this estimate. Promoting the qualitative RH bridge to a fixed-constant
+refutation would require an additional rigorous argument not supplied here.
+
+The selected assertions still imply RH if true, but may fail at a finite
+integer because of their particular constants. Neither alternative has
+been settled by this source-only review. Critical poles are a useful exact
+scope guard; they are not a substitute for testing or proving the full
+signed source inequality.
+
+7. Concrete next proof-search primitives and unpaid leaves
+==========================================================
+Universally paid, reusable primitives supplied by this analysis are:
+
+ * base-q digit compilation (2)-(3) with all boundary masks;
+ * exact neighboring reciprocal-interval pairing (6), with the paid head (7);
+ * actual mu(2m) pairing (9), including the surviving unsuppressed source
+   and the logarithmically smaller increment with explicit envelope (12);
+ * radical invariance, monotone fresh-prime insertion, and its unit exception;
+ * the positive shifted-log defect (14) and exact child/parent identity (15);
+ * all-integer recovery between the two filter shapes with constants (19).
+
+The next source-bound objects are (8), the joined Phi+R_delta in (10), or the
+fresh-odd/parent/defect joint correlation in (15)-(16). They offer different
+places for an operator+auxiliary+argument search to attack the actual signed
+arithmetic. Their displayed identities do not pay their uniform bound.
+Independent positive bounds for every piece generally lose the needed
+correlation. No missing companion estimate is assumed, no RH upper provider
+is silently admitted, and no finite-pass status is promoted to an induction
+base or an all-scale recurrence.
+
+This review is stopped. The two selected constants remain OPEN under the
+frozen finite evidence; later counterexamples or new independent proofs must
+be recorded separately without changing that original evidence.

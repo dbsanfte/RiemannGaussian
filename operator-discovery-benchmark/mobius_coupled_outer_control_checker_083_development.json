@@ -1,0 +1,26 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "failed": 0,
+      "output": "test_changed_binding_cut_missing_class_and_certificate_tampering (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_complete_uniform_outer_and_unpaid_flags (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_exact_equality_system_and_aggregate_matching (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_generic_outer_binding_and_resources (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_literal_all_low_and_small_outer_matrices (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_negative_source_weight_and_band_constant (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_prime_composite_complete_cross_gain (test_check_mobius_coupled_outer_control_083.Tests) ... ok\ntest_source_and_gram_Astar_and_zero_weight_remainder (test_check_mobius_coupled_outer_control_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.367s\n\nOK\n",
+      "passed": 8,
+      "status": "PASS",
+      "tests": 8
+    }
+  ],
+  "distinct_tests": 8,
+  "failed_executions": 0,
+  "hashes_used": false,
+  "latest_outcome": "PASS",
+  "old_tests_run": false,
+  "passed_executions": 8,
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 8,
+  "uniform_full_completion_price_proved": false,
+  "uniform_source_bound_proved": false,
+  "uniform_whole_outer_absolute_price_proved": true
+}

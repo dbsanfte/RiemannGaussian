@@ -1,0 +1,66 @@
+Independent078 fixed-kernel prime-mass theorem gate
+==================================================
+Only four new checker/test/receipt/scope files created, all frozen files unchanged.
+No producer import, scientific source query/result, old suite, hash or agent.
+Independent frozen077 integer/prime/schema/Meter and073 bounded rational helpers
+are reused; new kernel/source and theorem certificate algebra are independent.
+
+verify_kernel(base_kernel,source_program,derived_kernel) normalizes equal generic
+positive integer divisors and sums canonical rational weights, omitting zero.
+Generic source G(u)=sum_d a_d M(floor(u/d)). Fixed-direct076 residual G-L has
+kernel plus each base coefficient times MINUS direct atom operator at divisor
+d*d_atom. Direct counts1 make count-exponent normalization exactly1. Atom gamma
+is still independently canonical/nonnegative/sorted. Active prime-block atoms
+return UNSUPPORTED; they are not quietly treated as direct. Exact compiled map
+match returns VERIFIED_FIXED_KERNEL; source_program_admission_still_required=True.
+This verifier hardcodes no originalG divisor values or expected outcome. Full076
+source programs accepted by required spec/atoms/operator subset. Every kernel is
+BEFORE excluded-prime coefficient folds; separately binding old source artifacts
+is required before attributing a theorem gate to them.
+
+verify_prime_mass_gate(kernel,excluded_primes,gamma,energy_program,certificate)
+(alias verify_gate) admits the exact certificate keys mass,delta,leading_prime,
+sigma,eventual_lower_coefficient,ray_index. Fixed sorted distinct P<=10 primes,
+each<=100000; gamma canonical0<gamma<1. Energy schema matches078 exactly with
+q in[1,2),tau in[0,1],positive lambda/nonnegative eta and nonzero/nonprojection rays.
+Selected ray must have ONLY terminalprime coordinate1 nonzero. Normalize kernel
+m=sum a_d/d, delta=product(1-1/p), leading_prime=-m*delta. Require m!=0 and
+sigma=2-2eta-q>0. Lower coefficient=lambda*(a1*m*delta)^2/4, checked exactly.
+Zero mass, missing/nonpure ray or critical/supercritical eta returns UNSUPPORTED,
+not safety, pass, or arithmetic counterexample. Negative kernel masses/operators
+are valid signs; negative/zero PSD weights reject. Missing/corrupted certificate
+fields and any finite-threshold field reject. Generic resource/input limits remain.
+
+The explicitly imported unconditional theorem is classical PNT pi(x)~x/logx.
+Primary source checked: Don Zagier, Newman's Short Proof of the Prime Number
+Theorem, American Mathematical Monthly104(1997),705-708, author PDF:
+https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf
+The paper states PNT at its beginning and derives it in stepsV/VI. No numerical
+error bound, finite u threshold, RH hypothesis or stronger theorem is imported.
+Finite-kernel scaling gives pi(u/d)~(u/d)/logu. Fixed P folds multiply first moment
+by delta, and fixed excluded primes/cutoff ceil(H^gamma)=O(u^gamma)=o(u) remove
+only lower-order terms. Thus V1~-m*delta*u/logu. Eventually |V1|>=|m*delta|u/(2logu),
+so the selected positive square implies E/u^q>=lower_coefficient*u^sigma/log²u.
+This grows faster than logu when sigma>0. Any ALL-INTEGER fixed constant drift
+N(u)<=tau*N(floor(u/2))+C with finite complete base would imply N=O(1) for tau<1
+or N=O(logu) for tau1. Those PARTICULAR energy/drift hypotheses are incompatible.
+No constructive finite threshold is supplied. Lower-cutoff/full-feature admissibility
+remains separate; the argument needs only the actual terminal-prime coordinate
+and its positive energy square, not a uniform proof for other terminal layers.
+
+Verified result status VERIFIED_PRIME_MASS_OBSTRUCTION is a genuine eventual
+negative-energy-method theorem from PNT. It is NOT a theorem that the signed
+arithmetic residual cannot cancel, that a zero-mass/mixed ray works, or that a
+source/RH theorem is refuted. Outputs preserve arithmetic_residual_refuted=False,
+uniform_source_bound_proved=False,uniform_bound_proved=False,RH_proved=False and
+finite_u_threshold_supplied=False. uniform_drift_obstructed=True has the specific
+fixed-kernel/pure-prime energy scope above. Original scientific artifacts untouched.
+
+Prospective normalized/source-derived kernel and ray allocations are gated before
+expansion under4GiB and3e11 work. At most100000 kernel/derived terms,4096-bit input
+rational/divisors and100000-bit intermediates; no numerical source/PNT sample run.
+Seven distinct tests pass;8 successful executions over2 retained attempts,
+receipt statusPASS. Tests cover normalization, signed mass, zero-mass unsupported,
+gamma1, negative PSD weight, nonpure/zero rays, strict critical eta, exact fold
+delta/certificate tampering, forbidden finite threshold, generic fixed-direct
+source binding/wrong signs/activeprime rejection and canonical/resource gates.

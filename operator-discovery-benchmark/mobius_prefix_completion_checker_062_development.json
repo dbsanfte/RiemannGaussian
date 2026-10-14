@@ -1,0 +1,27 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_prefix_completion_062.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 18,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_prefix_completion_062 operations=26359\n",
+      "stderr": "test_N_y_H_integer_and_capacity_gates (__main__.PrefixCompletionTests) ... ok\ntest_actual_prime_mask_and_parameter_gates (__main__.PrefixCompletionTests) ... ok\ntest_budget_exact_no_omitted_unit_or_underpayment (__main__.PrefixCompletionTests) ... ok\ntest_charge_only_pipeline_meter (__main__.PrefixCompletionTests) ... ok\ntest_direct_tiny_mu_convolution_and_interior_ratio (__main__.PrefixCompletionTests) ... ok\ntest_empty_horizons_and_complete_nonzero_unit_residual (__main__.PrefixCompletionTests) ... ok\ntest_every_endpoint_row_and_horizon_must_be_present (__main__.PrefixCompletionTests) ... ok\ntest_exact_full_floor_completion (__main__.PrefixCompletionTests) ... ok\ntest_forged_proof_scope_and_extra_fields (__main__.PrefixCompletionTests) ... ok\ntest_fraction_type_and_resource_guards (__main__.PrefixCompletionTests) ... ok\ntest_general_rational_source_parameters (__main__.PrefixCompletionTests) ... ok\ntest_horizon_order_duplicates_domains_and_types (__main__.PrefixCompletionTests) ... ok\ntest_nontrivial_completed_short_residual_includes_squareful_rows (__main__.PrefixCompletionTests) ... ok\ntest_pointwise_continuum_is_not_all_scale_proof (__main__.PrefixCompletionTests) ... ok\ntest_ratios_canonical_ordered_and_source_bound (__main__.PrefixCompletionTests) ... ok\ntest_tail_change_and_lost_prefix_cutoff_rejected (__main__.PrefixCompletionTests) ... ok\ntest_tail_horizon_exit_beyond_original_D_is_checked (__main__.PrefixCompletionTests) ... ok\ntest_zero_extended_added_horizon_is_valid (__main__.PrefixCompletionTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.015s\n\nOK\n",
+      "operations": 26359,
+      "elapsed_seconds": 0.08819098700769246,
+      "peak_rss_KiB": 25412
+    }
+  ],
+  "operations": 26359,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true
+}

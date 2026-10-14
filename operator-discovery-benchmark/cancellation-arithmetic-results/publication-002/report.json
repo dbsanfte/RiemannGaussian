@@ -1,0 +1,42 @@
+{
+  "RH_proved": false,
+  "factor": {
+    "bound_search_performed": false,
+    "capabilities": [
+      "complete ordered factor partitions",
+      "exact rational-power cutoffs",
+      "signed rational kernels",
+      "coprime relation multipliers",
+      "full complements and product multiplicities"
+    ],
+    "fixtures": 6,
+    "shared_group_adapter": true,
+    "supplied_calibration": true,
+    "tests": 10
+  },
+  "global_bound_proved": false,
+  "gram": {
+    "dual_status": "exact_separator",
+    "final_statuses": [
+      [],
+      [
+        "finite_PSD_certificate",
+        "missing_resource"
+      ]
+    ],
+    "independent_audit": true,
+    "missing_final_scale": 13,
+    "obstruction": "entire fixed shared full-PSD cone under gamma=0; all rational C>=0, integer q>=1",
+    "obstruction_is_arithmetic_refutation": false,
+    "tests": 21,
+    "training_statuses": [
+      "uncertified",
+      "finite_PSD_certificate"
+    ],
+    "unsigned_certificate": "exact all-scale alias of supplied Cauchy certificate, gamma=56/3; no offdiagonal gain"
+  },
+  "next_action": "new frozen factor/relation program search, then analytic proof attempts with complete residuals",
+  "previous_publication": "publication-001",
+  "prior_manifest_sha256": "fee5ed1f03bc298bc76e81ca2726e3aec2fc2f6206557b693928a22ef6fc5742",
+  "schema": 2
+}

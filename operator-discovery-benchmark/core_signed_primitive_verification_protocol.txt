@@ -1,0 +1,31 @@
+Saved-result verification after the resource-meter interface failure
+
+The original pilot producer completed and saved proof_search.json. The first
+independent check stopped at AttributeError: prime_bank_candidates.Meter has
+no number method. Its terminal_failure.json and all original source snapshots
+remain unchanged. No mathematical result was accepted or published by that
+failed check. The failed session50071 is terminal and must not be restarted.
+
+Correct only the checker's coefficient-size accounting to use the shared
+meter's charge interface. Preserve its rational-size validation. Add one
+focused regression using the actual runner meter; retain the original passed
+13-test receipt and append that regression. Do not rerun unchanged suites.
+The producer, generated dictionary, thresholds, candidates, witnesses and
+all analytic proof rules remain identical to the archived pilot.
+
+The verification follow-up reads the saved producer proof; it never calls
+the search again. Freeze the corrected checker, focused tests, updated receipt
+and follow-up runner. Declare the three permitted current-source differences
+from the failed pilot: checker, its tests, its development receipt. Every
+other pilot source must still match exactly. Save the producer proof bytes
+again, require their equality to the failed pilot, and independently verify
+every identity, affordable column, constrained row, cost and dual witness.
+Publish only after complete source and feedback verification.
+
+Limits unchanged:1b operations inclusive of ALL development, the failed
+pilot's14,802,301 charged operations, and the follow-up;900seconds and4GiB
+for the follow-up. Prior unconditional moment certificates are reused through
+their verified frozen parent publication, not recomputed. New arithmetic
+source observations0, fitted constants0, model calls0, hashes0, producer
+search reruns0. The full signed core and RH remain open unless the complete
+unchanged source obligations are actually proved, independently of tests.

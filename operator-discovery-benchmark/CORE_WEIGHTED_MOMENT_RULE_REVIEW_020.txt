@@ -1,0 +1,316 @@
+CORE WEIGHTED MOMENT RULE REVIEW 020
+Signed finite inverse weights inside moments; a complete two-height proof grammar
+
+Status: unconditional HIGH-height weighted rules are justified below by an
+explicit additional classical import. They give a paid high-Mellin auxiliary
+for E^3 at the present short cutoff. The complete LOW-height joined Gram is
+still OPEN for actual mu; therefore no complete E^3 control or full-core/RH
+bound is claimed. Analytic-residue centering is distinguished from ordinary
+coefficient-moment centering. Only this new memo was edited. No source
+evaluation, numerical experiment, test, hash, or frozen edit was performed.
+
+Authoritative context: CORE_MOMENT_BOUND_SEARCH_HANDOFF.txt and
+candidate10_moment_bound_obligation.json. The previous search paid E^2 with
+an unweighted moment provider and left 21 higher targets open. This review
+provides reusable weighted rules and an explicit compulsory low-height leaf,
+not a prescribed winning sigma or an analyst-selected numerical constant.
+
+1. Exact source factors, weights, and scope
+
+Let U>=1 be fixed, A(n)=mu(n)1_(n<=U), c=sum_(n<=U)mu(n)/n, T=c delta-A,
+E=delta+One*T. The Dirichlet polynomials obey T(s)=c-A(s), T(1)=0 and |c|<=2.
+The complete E function is E(s)=1+zeta(s)T(s), holomorphic across s=1.
+Fix nonnegative integers p,m, u=1/3, theta=2/3, and put
+ F_U(s)=zeta(s+u) A(s)^p E(s)^m,
+ B_j=A^p*T^j, r_j=p+j, 0<=j<=m.
+Thus F_U(s)=zeta(s+u)sum_j binom(m,j)zeta(s)^j B_j(s).
+This finite expansion is used only for moment upper bounds AFTER proving
+the pole at 1 removable in the complete E factor. It does not license
+discarding principal parts of the separate terms or any signed source cross.
+
+For r_j>=1, B_j has support d<=R_j=U^r_j and coefficients bounded by
+ |B_j(d)|<=3^j d_(r_j)(d).
+Indeed |A|<=One restricted <=U and |T(1)|<=3, |T(d)|<=1 for d>1.
+Replacing |T| by 3 One on [1,U] and convolving proves the displayed bound.
+For r_j=0, B_j=delta and R_j=1; treat this constant polynomial separately.
+The exact signed coefficients B_j are kept in the low-height Gram below;
+their divisor envelope supplies optional proved fallbacks and the high-height
+provider premise, rather than defining or replacing that joined low-height leaf.
+
+The centered real staircase is
+ C_U(x)=sum_(n<=x)(K*A^p*E^m)(n)-(M_U/theta)x^theta, x>0,
+ K(n)=n^(-u), the coefficient prefix is zero for x<1, and
+ M_U=A(theta)^p E(theta)^m.
+For m=2 the ordinary coefficient moment equals M_U by the previous proof.
+For m>=3 this memo does NOT claim convergence of that coefficient moment.
+The residue M_U remains a valid ANALYTIC residue: the only crossed real pole
+of F_U on a suitable line is theta. Its full J_theta compensation, including
+the unit J_theta(1)=1, and its opposite drift in the source join must remain.
+
+2. The additional high-height import and its actual premise
+
+The new provider is the unconditional twisted critical fourth-moment bound
+ integral_0^Y |zeta(1/2+it)|^4 |P(1/2+it)|^2 dt
+       <= C_(lambda,epsilon,coefficient-class) Y^(1+epsilon),
+where P(s)=sum_(d<=R)alpha_d d^(-s), alpha_d<<_nu d^nu for every nu>0
+with uniform coefficient-class constants, and
+ R<=Y^(1/4-lambda), fixed 0<lambda<1/4.                 (2.1)
+The constant is uniform over complex coefficient phases in that class.
+Do not assert this rule at heights failing its length premise.
+
+Read primary research source: Bettin, Bui, Li and Radziwill,
+ A quadratic divisor problem and moments of the Riemann zeta-function,
+ https://arxiv.org/html/1609.02539v1
+Introduction equation (1) states the needed upper bound; Theorem 1.1 gives
+the stronger asymptotic in this length range. The paper credits Watt's theorem:
+ N. Watt, Kloosterman sums and a mean value for Dirichlet polynomials,
+ Journal of Number Theory 53 (1995), 179-210,
+ https://doi.org/10.1006/jnth.1995.1086
+The original publisher's abstract was read, but its formula is not exposed as
+text there; the precise imported version (2.1) is the one directly read in
+the Bettin et al. paper. No larger polynomial-length range is imported.
+This is an additional mathematical trust primitive, not a consequence of the
+previous unweighted fourth-moment provider alone.
+
+For 0<sigma<1/2, form the normalized critical polynomial for B_j:
+ P_j(s)=R_j^(-(1/2-sigma))
+           sum_(d<=R_j)B_j(d)d^(1/2-sigma)d^(-s).
+At s=1/2+it this equals R_j^(-(1/2-sigma))B_j(sigma+it).
+Its coefficients are bounded by 3^j d_(r_j)(d), uniformly U, because
+(d/R_j)^(1/2-sigma)<=1. For each fixed r and nu, d_r(d)<=C_(r,nu)d^nu;
+this elementary divisor bound supplies the required coefficient class.
+Multiplying any coefficient by d^(iv) does not change that class.
+Consequently (2.1) gives
+ integral_Y^(2Y)|zeta(1/2+it)|^4 |B_j(sigma+it)|^2 dt
+       <= C R_j^(1-2sigma)Y^(1+epsilon)                (2.2)
+if, for example, R_j<=(Y/2)^(1/4-lambda). Constants depend on fixed
+sigma,j,p,lambda,epsilon, not U,Y or the coefficient phases.
+The normalization exponent is NOT 2(1-sigma). It is important that the
+polynomial remains inside the average.
+
+3. Exact unweighted polynomial mean and a safe all-height fallback
+
+For B(sigma+it)=sum_(d<=R)b_d d^(-sigma-it), the finite interval Gram is exact:
+ integral_a^(a+Y)|B(sigma+it)|^2 dt
+ =sum_(d,e<=R)b_d conj(b_e)(de)^(-sigma)
+                integral_a^(a+Y)exp(it log(e/d))dt.    (3.1)
+The diagonal is Y. For d!=e the entry is the full geometric integral, with
+its phase; it is bounded by min(Y,2/|log(e/d)|).
+An elementary estimate, requiring no imported Hilbert inequality, is
+ integral_a^(a+Y)|B|^2
+ <=[Y+4R(1+log R)]sum_(d<=R)|b_d|^2 d^(-2sigma).      (3.2)
+To prove it, use |log(e/d)|>=(e-d)/R for e>d, sum by h=e-d, and apply
+sum_d |v_d v_(d+h)|<=sum_d |v_d|^2. This keeps a safe factor4.
+
+For the coefficient class in section 1 and 0<sigma<1/2,
+ sum |B_j(d)|^2 d^(-2sigma)
+ <=[3^(2j)/(1-2sigma)]R_j^(1-2sigma)(1+log R_j)^(r_j^2-1). (3.3)
+Use d_r(d)^2<=d_(r^2)(d): pairs of r-bin valuations can be injected into
+nonnegative r-by-r valuation matrices via a fixed matrix with those margins.
+The usual elementary summatory bound for d_(r^2), followed by Abel summation,
+proves (3.3). A slightly larger fixed logarithmic degree is also safe.
+When Y>=R, the diagonal cost is essentially R^(1-2sigma)Y times logs.
+When Y<R, the R-term is present: its exponent is R^(2-2sigma). Thus an
+all-height Hilbert/Gram fallback does NOT eliminate the old low-height power.
+There is no unlicensed assertion that R<=Y^(1/4-lambda) at every height.
+
+4. Off-critical weighted fourth moment: a valid phase-uniform transfer
+
+Direct three-lines applied to zeta(z)^2Q(z) is NOT sufficient for the desired
+gain. Matching Q(a+it)=B(sigma+it) at a=1-sigma generally gives the wrong
+critical coefficient amplification. Instead transfer zeta alone and retain
+the finite polynomial, with phase rotations, inside each boundary average.
+
+Let H(z)=zeta(z)^2-(z-1)^(-2)-2 gamma_E(z-1)^(-1). It is holomorphic on
+1/2<=Re z<=2 and has polynomial growth at vertical infinity. In a strip of
+width l=3/2 put x=a-1/2, 0<x<l. Its two Poisson kernels are
+ K_0(x,v)=sin(pi x/l)/[2l(cosh(pi v/l)-cos(pi x/l))],
+ K_1(x,v)=sin(pi x/l)/[2l(cosh(pi v/l)+cos(pi x/l))].
+They are positive, their combined integral is 1, and they decay exponentially
+in |v| for fixed x. The strip Poisson formula holds for real and imaginary
+parts of H. It follows by exhaustion of the strip; polynomial growth kills
+the harmonic measure of the remote horizontal edges. Jensen gives
+ |H(a+it)|^2<=integral K_0(x,v)|H(1/2+i(t+v))|^2dv
+               +integral K_1(x,v)|H(2+i(t+v))|^2dv.
+At Re z=2, H is bounded. Restoring the explicit principal part only on
+Y<=t<=2Y, Y>=2, and bounding its critical-boundary part, gives
+ |zeta(a+it)|^4
+ <= C_a[1+integral K_0(x,v)|zeta(1/2+i(t+v))|^4dv].    (4.1)
+This proof also covers a=1 on the interval t>=2; no singular t=0 is integrated
+when restoring the principal part on that line.
+
+Multiply (4.1) by |B_j(sigma+it)|^2 and integrate t in [Y,2Y].
+For |v|<=Y/2 set w=t+v, so w lies in [Y/2,5Y/2]. The polynomial becomes
+ sum B_j(d)d^(iv)d^(-sigma-iw). Its normalized coefficient bounds are EXACTLY
+those of section 2, independent of v. Apply (2.1) on a covering interval of
+height comparable to Y and use R_j<=(Y/2)^(1/4-lambda). Integrating the
+positive kernel costs at most its total mass.
+For |v|>Y/2 use exponential kernel decay, the ordinary convexity bound for
+zeta on the critical line, and
+ |B_j(sigma+it)|<=C R_j^(1-sigma)(1+log R_j)^(r_j-1).
+The remote contribution is at most a fixed constant times
+ Y R_j^(2-2sigma)(1+log R_j)^C exp(-c_a Y).
+Since R_j<=Y^(1/4-lambda), it is absorbed in
+C R_j^(1-2sigma)Y^(1+epsilon), uniformly U,Y. The constant and restored-pole
+terms are paid by (3.2)-(3.3), using the same length premise to absorb fixed
+logs into Y^epsilon. Thus for each fixed a in (1/2,2),
+ integral_Y^(2Y)|zeta(a+it)|^4|B_j(sigma+it)|^2dt
+       <=C R_j^(1-2sigma)Y^(1+epsilon).                (4.2)
+This is a proved transfer from (2.1), not an unproved weighted analogue of
+the scalar three-lines rule. Complex phases and remote heights were included.
+Weighted second moment follows by Cauchy from (4.2) and (3.2), with the same
+R_j^(1-2sigma)Y^(1+epsilon) cost. Negative heights follow by conjugation and
+the same phase-uniform coefficient class.
+
+5. Complete high-tail compiler exponents, including j=0 and j=1
+
+For fixed 0<sigma<1/2, u=1/3, lambda in (0,1/4), and any fixed total
+epsilon>0, the following bounds hold at EVERY height
+ Y>=2 U^(r_j/(1/4-lambda)):
+ integral_Y^(2Y) |zeta(s+u)zeta(s)^j B_j(s)/s|^2 dt
+       <=C U^(r_j(1-2sigma))Y^(d_j+epsilon),           (5.1)
+where s=sigma+it and
+ d_0=-sigma-u,
+ d_1=1-u-3sigma,
+ d_j=j-u-(j+3)sigma, j>=2.                            (5.2)
+For j=0 use only (3.2), with the constant-polynomial branch separate.
+For j=1 reflect by the functional equation and use the weighted second
+moment from section 4. For j>=2 reflect all 2j powers, put four inside (4.2)
+at a=1-sigma, and pay the remaining 2j-4 by convexity on that same line.
+The shift zeta(s+u)^2 is paid by convexity; |s|^(-2)<=Y^(-2).
+The arbitrarily small provider/convexity/divisor slacks can be allocated to
+sum below the displayed fixed total epsilon. All constants are uniform U,Y,
+and depend only on fixed p,m,sigma,u,lambda,epsilon and the imported provider.
+
+Use a COMMON H=2U^tau, with tau>=max_j r_j/(1/4-lambda), or its dyadic ceiling
+between H and 2H. Require EVERY d_j+epsilon<0. Summing all dyadic heights
+starting at H, then using Cauchy ONLY for this high-tail upper estimate, gives
+ I_high=(1/(2pi))integral_(|t|>=H)|F_U(s)/s|^2dt
+ <=sum_j C_j U^[r_j(1-2sigma)+tau(d_j+epsilon)].        (5.3)
+Factors (m+1)binom(m,j)^2, the negative-height cost, and
+[1-2^(d_j+epsilon)]^(-1) are fixed constants. This is the exact common-cutoff
+U exponent for each branch. With its own H_j=2U^(r_j/(1/4-lambda)), branch j
+has exponent r_j[(1-2sigma)+(d_j+epsilon)/(1/4-lambda)].
+Individual branch thresholds cannot replace the common threshold in the
+definition of the complete joined low auxiliary without explicit extra bands.
+
+In particular for p=2,m=3, all d_j are negative whenever 4/9<sigma<1/2.
+Discarding the favorable negative H powers in (5.3) still gives the safe bound
+ I_high<=C U^[(p+m)(1-2sigma)].                         (5.4)
+At U<=N^alpha, N=4X-1, the high auxiliary energy exponent is at most
+ (2sigma-1)+alpha(p+m)(1-2sigma)
+       =(1-2sigma)[alpha(p+m)-1].                     (5.5)
+It is strictly negative for alpha(p+m)<1. Thus the HIGH auxiliary of E^3 is
+paid at alpha=1/24; no nominated sigma is needed, and a detector can enumerate
+the entire rational feasible region. For m>=4 this fourth-plus-convexity
+library has no belowhalf convergent high line: that is a provider limitation,
+not an arithmetic impossibility theorem. Additional joint moment providers
+must carry their own exact premises.
+
+6. The compulsory full low Gram and coercive recovery
+
+Define on the SAME contour, with the SAME U and common H,
+ I_low=(1/(2pi))integral_(|t|<H)|F_U(s)/s|^2dt.
+It is a finite Hermitian joined quadratic form. For real source weights,
+ I_low=sum_(j,k)binom(m,j)binom(m,k)
+          sum_(d,e) B_j(d)B_k(e)(de)^(-sigma) G_jk(log(d/e)),
+ G_jk(w)=(1/(2pi))integral_(|t|<H)
+   |zeta(s+u)|^2 zeta(s)^j conj(zeta(s)^k) exp(-itw)/|s|^2 dt. (6.1)
+EVERY j,k cross, d=e diagonal, shared prime, repeated valuation, and unit is
+present. Hermitian symmetry makes the whole value real and nonnegative; the
+separate j,k terms are not nonnegative. A Gaussian height mask gives the
+analogous exact rapidly convergent Gram; it must retain its full high remainder.
+The independent CORE_WEIGHTED_MOMENT_SHARPNESS_REVIEW_021.txt supplies a
+sign-sensitive Gaussian Gram and harmonic-null witness grammar in more detail.
+
+Increasing tau makes the high-tail cost smaller but expands THIS low Gram.
+There is no proof which optimizes tau and forgets that change. The elementary
+global fallback remains
+ I_low<=C U^[2(p+m)(1-sigma)]                          (6.2)
+on a contour whose full global norm exists. It is not a signed-source gain.
+For actual mu a new uniform bound I_low<=C U^b(1+log U)^k would pay the complete
+component cofinally only after testing
+ 2sigma-1+alpha*b<=0,
+with equality meaning a fixed logarithmic cost. A strict inequality pays a
+bounded component. The detector can derive this leaf by backward exponent
+search; it is an OPEN arithmetic input, not theorem (2.1) used out of range.
+
+Here is exact recovery, including the integer/head issue. By the reviewed
+Gaussian Perron argument, if the full line norm is finite then C_U is the
+inverse Mellin transform of F_U(s)/s, with the theta pole removed as written
+in section 1. Split that transform at |t|=H into real functions C_low,C_high.
+They sum to C_U on ALL x>0 and are orthogonal in the global Mellin norm.
+They need not be orthogonal on an individual block. No blockwise cross is
+erased. Global norm is exactly I_low+I_high.
+
+For n>=1 let q_low(n)=integral_n^(n+1)C_low(x)dx and likewise q_high, with
+q_low(0)=q_high(0)=0. Let C_n=P(n)-(M_U/theta)n^theta. Then
+ C_n=q_low(n)+q_high(n)+e_n,
+ e_n=(M_U/theta)[integral_n^(n+1)x^theta dx-n^theta],
+ |e_n|<=|M_U|n^(theta-1).                             (6.3)
+This averages rather than samples the Mellin auxiliaries; arbitrary L2
+functions may not be sampled at the integer points without a further rule.
+The actual integer C_n, unit, and compensator remain exact in (6.3).
+Cell averaging maps each global Mellin norm to weighted discrete l2 with a
+fixed constant (at most4 for sigma<1/2). The previous full-history Hardy/Abel
+rule then transfers q_low and q_high through every polynomial-log channel
+and orthogonal cell mean. It retains every earlier prefix, not a cell restart.
+
+The error e_n can be paid more sharply than putting its entire unit/head into
+the same global norm. For p_channel(t)=sum c_l t^l, eta>=0, discrete Abel gives
+ |channel(e)_n|<=2^ceil(eta)|M_U|
+   [sum|c_l|+2(1+1/(1-theta))sum l|c_l|], n>=1.
+Use sum_(k>=1)k^(theta-2)<=1+1/(1-theta). Hence its block and projected energy
+is <=C |M_U|^2/X. The analytic residue bound is
+ |M_U|<=C U^[(p+m)(1-theta)],
+so this error has exponent -1+2alpha(p+m)(1-theta). For p2,m3,theta2/3,
+alpha1/24 it is -31/36 and is paid. The continuous baseline floor error itself
+has an even smaller local cost; this conservative channel bound includes all
+history and the unit. No ordinary coefficient moment was assumed for m3.
+
+Thus, with explicit fixed channel constants, the full projected component
+storage is bounded by
+ C X^(2sigma-1)(I_low+I_high)+C U^[2(p+m)(1-theta)]/X.  (6.4)
+This is coercive two-regime recovery, not a statement that the high part alone
+controls the source. All opposite analytic-residue drifts, other source modes,
+previous paid pieces, and exact transport error -e remain in the full join.
+
+7. Source-specific constraints and the genuinely arithmetic next leaf
+
+The low-height power in (6.2) cannot be universally improved from only
+|a_d|<=1,a_1=1,c=A(1),|c|<=2 and T(1)=0. The independent review021 constructs
+an all-scale paired-dilation tail with harmonic mass zero, c=1, for which on
+a fixed small-height interval A(sigma+it) has size U^(1-sigma). The complete
+F_U/s then has squared mass comparable to U^[2(p+m)(1-sigma)]. This concerns
+generic signed weights, not actual mu or a prescribed distant physical block.
+No prime-parity folklore is substituted for that scoped obstruction.
+
+Actual mu has extra exact arithmetic constraints which such generic witnesses
+lack. For EVERY n<=U, A*One=delta and E(n)=c. Therefore
+ (A^p*E^m)(n)=c^m d_(m-p)(n), n<=U, m>=p,             (7.1)
+where d_0=delta and d_l=One^l for l>=1. For m<p the right side is instead
+c^m mu^(p-m)(n), a defined inverse-divisor coefficient, not d with an undeclared
+negative index. In particular the p2,m3 head equals c^3 One. This is a
+source-specific SUPPORT-GAP/HEAD identity, not a new prime distribution theorem.
+It can be compiled directly from mu*One=delta and verified with no fitted
+parameter. Subtracting this head to form another auxiliary requires restoring
+its complete finite coefficients and its analytic residue contribution.
+It does not by itself estimate the remaining low-height Gram.
+
+A concrete executable grammar can therefore keep B_j signed, generate the
+full Hermitian form (6.1) or its Gaussian version, impose (7.1) and exact
+finite inverse constraints, search rational contours/length margins/height
+cutoffs, and derive the precise missing exponent b from (6.4). It may generate
+paired finite-polynomial differences or cofactor Gram identities from those
+constraints, but they count as bounds only after an all-U signed inequality is
+proved. Coefficientwise absolute values, diagonal-only replacement, suppressing
+binomial j,k crosses, or importing (2.1) below its length threshold are not
+such proofs. A finite actual-mu Gram calibration is evidence for a proposed
+leaf, not its uniform proof. No calibration was performed in this review.
+
+The detector now has a genuine high-height gain and an exact paid auxiliary,
+plus a compulsory source-specific joined low-height obligation. Paying that
+new obligation would be meaningful progress beyond another scale-filter
+alias. It is currently OPEN. The full signed residual/core and RH remain OPEN.
+
+This memo is stable after its final analytical audit; edits stopped.

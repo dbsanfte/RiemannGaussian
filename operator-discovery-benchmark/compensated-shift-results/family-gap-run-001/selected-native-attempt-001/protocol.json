@@ -1,0 +1,43 @@
+{
+  "selected_candidate": {
+    "left": "1/3",
+    "right": "5/7",
+    "atoms": [
+      [
+        "-9/26",
+        "1/3"
+      ],
+      [
+        "35/26",
+        "5/7"
+      ]
+    ],
+    "proposed_gap": "2/39",
+    "finite_peak_index": 3599,
+    "ordinary_zero_all_order_gate": true,
+    "id": "fb406d2d9987f0b6"
+  },
+  "family_search_sha256": "cd9b54c7f1959c55aa823941b21752b792069012c71a2f0a3370b3fc8b31f751",
+  "family_verification_sha256": "8c7e3b9e9161f293d4a359d91bb3141d013c4a6f83e692d1cac7451b0abeb4d1",
+  "producer_code_sha256": "564bb780a86b85e2d1fc63b00a088d1d46a1c2eaa8cd0bbdb6018ebb6a25057b",
+  "native_backend_code_sha256": "ca9141f9f5f510d1a71574a5928e6af0482cde44e0d59afdd5df59f734d9c177",
+  "coefficient_backend_code_sha256": "b176812f619674dd45ca1d4f19352c6b78c55f849d0fb8fbfef542a60433f3fd",
+  "precision": 416,
+  "series_cap": 24,
+  "coefficient_cutoff": 384,
+  "selection_closed_before_native_cases": true,
+  "evaluation_does_not_reselect_or_adapt": true,
+  "sampling": "fresh OS entropy; two rational complex points with Re(s)>4 and Re(s)>6",
+  "flint_version": "0.9.0",
+  "evaluation_seed": "33738974207441875457947493017408293080828389989446885231824809582867703667924",
+  "cases": [
+    [
+      "67/16",
+      "1763/97"
+    ],
+    [
+      "13/2",
+      "-837/97"
+    ]
+  ]
+}

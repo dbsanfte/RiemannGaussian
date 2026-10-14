@@ -1,0 +1,184 @@
+SIGNED ARITHMETIC LANGUAGE: FIXED FILTERS AND PRIME-CORE CANCELLATION
+
+Status
+
+The objective is an actual all-scale signed arithmetic bound sufficient for
+ordinary RH. That bound remains unproved. This stage adds a verified finite
+search, conditional RH bridges and an obstruction to one proof strategy. It
+does not promote a global inequality or change the legacy theorem registry.
+Historical novelty is not an acceptance criterion.
+
+Implemented language and verified experiment
+
+The immutable run is fixed-pole-filter-results/pilot-001. Its 17 frozen
+source/test/proof files implement fixed rational dilation filters on all nine
+actual targets a=mu^{*r}*lambda^{*l}, 1<=r+l<=3. Complete ordinary Dirichlet
+convolution and actual prime coefficients define each source. Writing
+A(x)=sum_(n<=x)a(n), programs have G(x)=sum_d w_d A(floor(x/d)), with unit
+leading weight, merged distinct divisors and all signed cross terms retained.
+
+The generator enumerates sparse filters and compositions and proposes exact
+box-constrained quadratic fits, followed by rational quantization and exact
+refitting. The supplied divisor grid, arities, fitting objective and selection
+rules are explicit design assumptions. This is bounded automatic discovery
+within those rules, not an assumption-free language inventor.
+
+There were 3,959 proposals, 3,935 distinct programs, 24 aliases, no missing
+proposals and 11 selections. Thirty tests and 17 independent audit groups
+passed. An independent factor-local coefficient implementation and arbitrary-
+precision full covariance calculation checked the producer. Three sealed
+worker outputs replayed byte for byte. Training base scales run through8192;
+validation bases are12288,16384,24576; final bases are32768,42435,65536, with
+complete coefficients through262143. All numerical work uses declared finite
+budgets. The Python file-access guard is not OS isolation. Historical actual
+coefficient prefixes overlap; this is not an unseen-prime holdout.
+
+Direct tests:53 passes,13 failures,66 missing. Innovation tests:62 passes,
+4 failures,66 missing. The missing constants are at unseen q=17,29; they are
+never counted as passes. Nine direct and two innovation failures are dyadic;
+the other failures are odd-scale diagnostics. A stored-constant failure does
+not refute an existential bound that permits different constants. Three
+parallel Sol6.1 review batches cover all11 programs in review-collection-001;
+the collector checks provenance/coverage, not mathematical validity, and does
+not independently authenticate the runtime model. Every global claim remains
+unresolved after mathematical review.
+
+A concrete numerical lead
+
+For c=mu*lambda and C(x)=sum_(n<=x)c(n), the learned program50ea9e46f5e6 is
+
+  G(x)=C(x)-(11/4)C(floor(x/6)).
+
+It passed all12 available final observations, six direct and six innovation;
+six observations in each mode remain missing at untrained exponent levels.
+At q=12 its fitted direct constant is179/128. At X=65536 its normalized
+energy is9642391273/4294967296 (about2.245), against about25.074 for C itself.
+The unfiltered C baseline failed three direct tests of its fitted constants.
+The mu and lambda baselines also passed their available tests, so passing
+alone is not evidence of a new uniform arithmetic estimate.
+
+The conditional bridge permits this aggressive filter. For k=r+l and
+P(s)=sum_d w_d d^(-s), the actual Dirichlet series is
+
+  P(s) zeta(2s)^l / zeta(s)^k.
+
+A nonzero m-term fixed multiplier has zero multiplicity at most m-1 by the
+Vandermonde matrix of distinct log divisors. Thus m<=k preserves a pole at
+every possible ordinary zeta zero with real part greater than1/2. An all-dyadic
+bound sum_(X<=n<2X)|G(n)|^2 <= Kq X^2 ceil(X^(1/q)), for every sufficiently
+large integer q with Kq independent of X, would imply RH by Mellin continuation.
+This proves the implication, not its premise. A bounded inverse recovering C
+is unnecessary here; the usual absolute inverse condition fails for11/4>sqrt6.
+Moving filters do not inherit this fixed-multiplier theorem.
+
+Post-selection diagnostic, separate from scoring
+
+low-zero-response-audit.json/txt evaluates the already frozen multiplier at
+the first20 returned critical-line zeta zeros, using mpmath1.3.0 at30 and60
+decimal digits. At the first two zeros, |P| is about0.23846 and0.12747. Across
+20 zeros it ranges from0.12280 to2.09537, with RMS1.44633 (baseline1). Therefore
+the attenuation is selective. Agreement across precisions is numerical
+stability, not a certified error bound or multiplicity certificate.
+
+For a simple zeta zero rho, the leading double-pole Laurent coefficient is
+multiplied by P(rho); the simple-pole coefficient also receives a P'(rho)
+term. No actual residue, modal cross term, contour remainder or infinite tail
+was bounded. This diagnostic cannot attribute the measured energy reduction
+to those zeros or supply a uniform estimate. It changed no selection or review.
+
+What the pairing proof rules out
+
+prime_power_pairing.py certifies complete partial matchings using actual
+c(p^e m)=2(-1)^e c(m), p not dividing m, e>=1. An odd exponent and the next
+even exponent cancel exactly if both endpoints fit inside the cutoff. The
+implementation retains every unmatched core, boundary and blocked edge.
+
+Every squarefree integer in(X/2,X] is isolated in this entire same-core
+matching class. The proof gives unsigned residual>=X/8 for every integer
+X>=256, even if all primes and adaptive matching orders are allowed. Thus
+triangle inequality on these leftovers cannot yield a sublinear bound.
+This is not a lower bound for the signed C(X) and does not refute RH. It
+identifies the next task: cancellation between different cores or within the
+complete signed boundary, not simply a larger prime dictionary.
+
+Next language extension: exact prime-conditioned factor regions
+
+The following productions are PROPOSED, not implemented by this pilot.
+Existing grammars already contain signed Gram observables, coprime masks,
+fixed-filter composition and nonnegative potentials. The missing extension
+is a composable arithmetic partition that feeds its COMPLETE signed Gram
+to the detector and proof backend.
+
+1. RoughPrefix(a,x,z) = sum_(n<=x, P^-(n)>z) a(n), with P^-(1)=infinity.
+For an actual multiplicative a, integer x>=1 and y>=z>=1, an exact least-prime
+partition gives
+
+  R_a(x,z)=R_a(x,y)
+    +sum_(z<p<=y, p prime) sum_(e>=1, p^e<=x)
+       a(p^e) R_a(floor(x/p^e),p).
+
+The exponent is the exact valuation, so each n appears once. The rough
+remainder and n=1 persist. For mu, a(p)=-1 and higher prime powers vanish:
+
+  M(x)=1-sum_(p<=x, p prime) R_mu(floor(x/p),p).
+
+This exposes signed relations between prime-conditioned cores while giving
+exact recovery of the ordinary prefix. Allow cutoffs floor(x^theta) for
+positive rational theta, with exact floors and child-scale recomputation.
+Count all support, boundary and lookahead costs.
+
+2. PrimePowerForcing(a,n), preserving the exact actual identity
+
+  a(n) log n = sum_(p^e|n) [-r+l*(-1)^e] log p * a(n/p^e)
+
+for a=mu^{*r}*lambda^{*l}. For c only odd prime powers survive, with coefficient
+-2 log p. This follows from the Euler logarithmic derivative, or coefficientwise
+from the local rational Euler factor. Exact symbolic log-prime coefficients
+should be retained; finite numerical evaluation needs controlled intervals.
+Partial summation, its initial term and its integral must be charged before
+using a log-weighted bound to control an ordinary prefix. The identity alone
+does not add a prime-distribution estimate.
+
+3. FactorRegionSum and CompleteRegionGram. Partition the prime/core domain
+using product cutoffs, valuation, coprimality, quotient intervals and rational
+root scales. Search weights and compositions under frozen complexity limits.
+Emit an exact reconstruction such as M(n)=1-sum_i S_i(n)-R(n). Squaring must
+retain the constant, every region pair, and every residual interaction.
+
+For integer X, the exact full prefix-energy kernel is
+  K_X(v)=max(0,2X-max(X,v)).
+Pairs of events at products pm and p'm' carry K_X(max(pm,p'm')). A normalized
+dyadic innovation carries [K_(2X)(v)-4K_X(v)]/(4X^2), including its signs.
+Learned partitions may expose cancellation here; bounding every region
+separately can destroy the effect. Direct prime-error versions must also
+retain the deterministic main term and every prime-power contribution.
+
+Proof and search acceptance for that extension
+
+Certify identities for all inputs in their declared domain; use finite
+examples only for implementation checks and candidate ranking. Freeze new
+productions, resource rules and selection before a new evaluation. The current
+final scales and low-zero responses become development evidence if reused.
+Preserve failures and missing constants. Let the search vary partitions,
+fractional cutoffs and signed weights without supplying a desired winner.
+
+The needed output is a complete signed correlation or potential-innovation
+estimate, uniform in scale and with cofinal exponents, together with ordinary
+prefix recovery or a checked ordinary-zeta pole bridge. Keep exact identities,
+conditional implications, finite observations and global estimates separate.
+No single correlation family is assumed to be the eventual solution; retain
+unsupported but reproducible numerical leads for analytical review.
+
+Classical identity sources (not claims of newly discovered theorems):
+https://dlmf.nist.gov/27.5 (Dirichlet convolution and Mobius inversion)
+https://dlmf.nist.gov/27.4 (Euler products and Dirichlet series).
+
+Reproduction and immutable records
+
+Use ../.venv/bin/python; system Python lacks needed numerical dependencies.
+For a NEW experiment directory, run:
+  ../.venv/bin/python -B run_fixed_pole_filter.py run NEW_DIRECTORY
+The run's frozen sources, protocol, complete proposal archive, selected proof
+queue, final scores, verification and review collection remain immutable.
+report.txt/report.json are separate reporting artifacts. The new latest.json
+binds those records and this handoff; prior handoffs and frozen runs are intact.

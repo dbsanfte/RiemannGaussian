@@ -1,0 +1,26 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_source_pole_guard"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_source_pole_guard operations=3018 elapsed_seconds=0.022672\n",
+      "stderr": "test_correct_exact_normalization_and_family_obstruction_are_distinct (test_check_source_pole_guard.PoleAudit) ... ok\ntest_exact_cancellation_not_numeric_zero_containment (test_check_source_pole_guard.PoleAudit) ... ok\ntest_higher_order_is_not_treated_as_one_residue (test_check_source_pole_guard.PoleAudit) ... ok\ntest_interval_only_scalar_cannot_replace_fixed_definition (test_check_source_pole_guard.PoleAudit) ... ok\ntest_mismatching_exact_scalar_has_uncancelled_source_family_pole (test_check_source_pole_guard.PoleAudit) ... ok\ntest_multiple_poles_and_half_boundary (test_check_source_pole_guard.PoleAudit) ... ok\ntest_mutated_orders_solution_and_scope_rejected (test_check_source_pole_guard.PoleAudit) ... ok\ntest_no_parameter_and_zero_residue_are_distinguished (test_check_source_pole_guard.PoleAudit) ... ok\ntest_nonmonomial_affine_denominator_has_no_fabricated_laurent_solution (test_check_source_pole_guard.PoleAudit) ... ok\ntest_nonpositive_regular_argument_is_explicitly_unsupported (test_check_source_pole_guard.PoleAudit) ... ok\ntest_precision_restored_and_external_meter_supported (test_check_source_pole_guard.PoleAudit) ... ok\ntest_source_generated_residue_matches_hand_algebra (test_check_source_pole_guard.PoleAudit) ... ok\ntest_strict_input_and_forged_argument_guards (test_check_source_pole_guard.PoleAudit) ... ok\ntest_valuation_factors_are_combined_before_poles (test_check_source_pole_guard.PoleAudit) ... ok\ntest_whole_channel_and_unit_term_cannot_be_omitted (test_check_source_pole_guard.PoleAudit) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.022s\n\nOK\n",
+      "operations": 3018,
+      "elapsed_seconds": 0.0923761579906568,
+      "tests": 15,
+      "peak_rss_KiB": 29068
+    }
+  ],
+  "operations": 3018,
+  "edits_stopped": true,
+  "source_observations": 0,
+  "old_suites_rerun": false
+}

@@ -1,0 +1,244 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_limit_bytes": 17179869184,
+  "bound_candidates": 3575,
+  "cached_training_A_values": 7990,
+  "centered_error_bound_proved": false,
+  "development_operations": 20841132,
+  "elapsed_seconds": 19.70073878002586,
+  "final_checker_operations": 81086216,
+  "final_search_operations": 2444288,
+  "final_source_query_operations": 2382269,
+  "finite_final_statuses": {
+    "FINITE_PASS": 66
+  },
+  "grammar_operations": 259200,
+  "hashes_used": false,
+  "independent_final_bound_checks": 66,
+  "kappa_evaluated_or_fitted": false,
+  "largest_individual_worker_peak_rss_kib": 162012,
+  "metadata_preflight_operations": 259200,
+  "new_frozen_source_count": 19,
+  "old_scientific_studies_replayed": false,
+  "original_floor_energy_bound_proved": false,
+  "parent_peak_rss_kib": 704032,
+  "polynomials": 143,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23
+  ],
+  "proof_checker_operations": 23134,
+  "proof_producer_operations": 3228,
+  "selected": [
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0000_eta_0",
+      "request": {
+        "alpha": "1/2",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          -2,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0286_eta_0",
+      "request": {
+        "alpha": "2/3",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          -2,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0146_eta_0",
+      "request": {
+        "alpha": "1/3",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0432_eta_0",
+      "request": {
+        "alpha": "1/4",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0575_eta_0",
+      "request": {
+        "alpha": "1/5",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          2,
+          -3,
+          1
+        ],
+        "q": 2
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexample_scales": [],
+      "finite_status_counts": {
+        "FINITE_PASS": 11
+      },
+      "id": "prime_scale_0679_eta_0",
+      "request": {
+        "alpha": "1/5",
+        "bound": {
+          "C": "2",
+          "log_power": "0",
+          "minimum": 2,
+          "normalization": "divide_by_alpha"
+        },
+        "coefficients": [
+          3,
+          -4,
+          1
+        ],
+        "q": 3
+      },
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "uniform_arithmetic_bound_proved": false
+    }
+  ],
+  "source_checker_operations": 14425680940,
+  "source_extensions": 0,
+  "source_persistent_array_bytes": 26240205,
+  "source_producer_operations": 1819316408,
+  "source_verified_through": {
+    "1/2": 128000,
+    "1/3": 128000,
+    "1/4": 128000,
+    "1/5": 128000,
+    "2/3": 128000
+  },
+  "status": "EXPLICIT_RH_STRENGTH_FILTER_BOUNDS_TESTED_UNIFORM_PROOF_OPEN",
+  "training_scales": 259,
+  "training_search_operations": 122166880,
+  "training_signed_filter_values": 185185,
+  "training_source_query_counts": {
+    "atom_attempt_counts": {
+      "128": 0,
+      "192": 0,
+      "256": 0
+    },
+    "atom_refinement_counts": {
+      "128": 0,
+      "192": 0,
+      "256": 0
+    },
+    "max_parameter_bits": 0,
+    "operations": 78998224,
+    "peak_bytes_estimate": 0,
+    "total_primitive_counts": {
+      "directed_endpoint_floors": 0,
+      "hyperbola_blocks": 780605,
+      "integer_accumulations": 2341815,
+      "log_evaluations": 0,
+      "power_evaluations": 0,
+      "prefix_entries_written": 0,
+      "quantized_atoms": 0,
+      "sieve_candidates": 0,
+      "sieve_composite_mark_entries": 0,
+      "sieve_flip_entries": 0,
+      "sieve_prime_count": 0,
+      "sieve_square_zero_entries": 0
+    }
+  },
+  "uniform_arithmetic_bound_proved": false,
+  "words": 715,
+  "workers": 3
+}

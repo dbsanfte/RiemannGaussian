@@ -1,0 +1,45 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "diagnostics": {
+    "continuous_Gram_estimate": false,
+    "executed": false,
+    "fitted_constants": 0,
+    "fresh_arithmetic_holdout": false,
+    "heights": [
+      "0",
+      "1/2",
+      "1",
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "maximum_cutoff": 2048,
+    "positive_height_weight": "2",
+    "reason": "user prioritizes automatic bound search; numerical work deferred before observations",
+    "used_for_selection": false,
+    "zero_height_weight": "1"
+  },
+  "fitted_constants": 0,
+  "hashes": false,
+  "imported_rules": {
+    "arithmetic_head": "mu*One=delta for n<=U",
+    "automatic_control_review": "CORE_CUTOFF_AUTOMATIC_CONTROL_REVIEW_024.txt",
+    "formal_proof_assistant_verified": false,
+    "head_kernel": "complete centered power kernel, including x<1 and d>x",
+    "scope_review": "CORE_CUTOFF_TRANSITION_SCOPE_REVIEW_023.txt",
+    "shell_rule": "fixed-factor length extension with kappa_prime=(kappa+1/4)/2 and finite initial range",
+    "ternary_identity": "mu(q)^3=mu(q)",
+    "transition_review": "CORE_CUTOFF_TRANSITION_RULE_REVIEW_022.txt",
+    "uniform_signed_work_proved": false
+  },
+  "inclusive_operation_cap": 600000000,
+  "input": "candidate10_weighted_height_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "runtime_limit_seconds": 1800,
+  "schema": "core-cutoff-work-run-v1",
+  "testing": "owned development suites plus affected checks; independent frozen certificate replay",
+  "whole_signed_bound_proved": false
+}

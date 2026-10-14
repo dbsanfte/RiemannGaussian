@@ -1,0 +1,105 @@
+ANALYTICAL ATTEMPTS ON THE ALREADY FROZEN DIVISOR-DUAL PROOF QUEUE
+
+This extension begins after pilot-001's detector selection, proof queue and
+fresh evaluation have been frozen and independently audited. It does not
+change those formulas or the original search sources. A rejected uniform
+matrix claim is not a counterexample to the actual Mobius bound or RH.
+These arguments are ordinary written proofs with independent computational
+certificate checks, not machine-formalized proofs.
+
+1. A COVERAGE OBSTRUCTION THAT IS INDEPENDENT OF THE GRAM WEIGHT.
+Let N=4X and take any vector supported on 2X<n<=4X. Each such index has
+only its own multiple below N, so C_N*z=z. If z_n is one precisely on
+unselected rows in this interval and zero elsewhere, then G_w*z=0.
+Also z_1=0: there is no unit forcing cost on this witness.
+Write J=number of unselected rows in (2X,4X], and J_3=number in (2X,3X].
+The parent energy is zero and the child energy is
+z^T H_X z = sum_(t=2X)^(4X-1) #(unselected rows in (2X,t])^2
+           >= X*J_3^2.
+Consequently
+z^T S_(X,q) z <= D(X,q)*J-X*J_3^2 <= 2X*D(X,q)-X*J_3^2.
+Neither Y nor its size enters this inequality.
+
+For every FIXED integer q>=2,
+D<=2*c_D*(1+ceil(q^r))*X^(1+1/q)=o_q(X^2).
+If J_3>=kappa*X eventually for some kappa>0, the quadratic form is
+strictly negative at all sufficiently large dyadic X. This proves failure
+for EVERY fixed q>=2. The existential q0 in the frozen candidate claim
+cannot avoid this obstruction. Three exact witness levels are illustrative
+checks of the universal argument, not a substitute for its quantifiers.
+
+An unselected residue class of a fixed period m gives J_3>=X/m-1, hence
+J_3>=X/(2m) for X>=2m. Every residue mask misses such a class. A finite
+union of divisibility classes with bases >=2 misses the class 1 modulo
+their least common multiple. A constant zero mask misses every row.
+For prefix rows <=floor((4X)^beta), beta<1, all tail rows are eventually
+unselected, since (4X)^beta/(2X) tends to zero. For square rows,
+J_3>=X-sqrt(3X)>=X/2 when X>=12. Thus these pruned-row matrix families
+fail regardless of their Gram powers or coefficients.
+
+The barrier is about this universal PSD certificate. It does not say that
+the selected arithmetic identities are false or useless in other proofs.
+It does show why merely increasing their weights cannot repair this matrix.
+
+2. A GRAM-COEFFICIENT OBSTRUCTION EVEN WITH EVERY TAIL ROW.
+Take z_n=1 on (2X,4X] and zero otherwise. Again C_N*z=z and
+z^T G_w z<=2X for every boolean mask. Its exact child energy is
+T(X)=sum_(j=0)^(2X-1) j^2=(8/3)X^3-2X^2+X/3.
+Therefore
+z^T S z <= 2X*(D+Y)-T(X).
+For Y=c_Y*X^2, c_Y<4/3, and any fixed q>=2, this is eventually negative:
+the cubic leading coefficient is 2*c_Y-8/3<0 and 2X*D=o_q(X^3).
+This independent argument refutes those exact templates even when every
+divisor row is available. The threshold is a sufficient obstruction, not
+an assertion that larger coefficients suffice for positivity.
+
+3. WHAT REMAINS FOR THE FULL NONUNIT DIVISOR GRAM.
+For w(k)=1_(k>1), G_0=C^T diag(0,1,...,1) C and ker(G_0)=span(mu).
+Congruence by C^(-1) gives
+C^(-T) S C^(-1) = D*C^(-T)*C^(-1)-C^(-T)*H*C^(-1)
+                   +Y*diag(0,1,...,1).
+Its (1,1) entry is EXACTLY a_11=D*Q(4X)-Delta(X).
+Every global PSD proof must bound this actual signed arithmetic entry.
+Deleting it, fitting it on finite prefixes, or hiding it behind a large Y
+does not prove the necessary inequality. It is independent of Y.
+
+There is also an explicit conditional sufficient comparison. Normalize
+u=mu/sqrt(Q), put a=D-Delta/Q>0, h=||H||<=8X^2, and let g be the least
+positive eigenvalue of G_0 on u's orthogonal complement. The inverse
+divisor matrix has row sum <=2sqrt(N) and column sum <=N, hence
+g>=1/(2N^(3/2)). The orthogonal block is >=D-h+Y*g and its coupling
+norm is <=h. Thus
+Y*g > h+h^2/a
+is sufficient by the block Schur complement. If the arithmetic gap
+Delta<=D*Q/2 were known, a>=D/2 and the elementary D>=2*c_D*X gives
+the sufficient buffer
+Y > 128*X^(7/2)+(1024/c_D)*X^(9/2).
+The named gap remains UNPROVED for the selected templates at every scale.
+This conditional computation identifies the missing signed lemma; it does
+not supply it. High Gram powers can pay the orthogonal comparison while
+leaving the nullspace arithmetic unchanged.
+
+4. CANDIDATE DISPOSITIONS AND FEEDBACK.
+Each queue entry keeps the exact program, its sealed hash and its fresh
+finite outcome counts. Coverage or insufficient-coefficient obstructions
+produce 'disproved_uniform_matrix_claim'; full nonunit cases are
+'unresolved_uniform_matrix_claim', with the exact missing signed entry and
+conditional Schur obligations. The proved all-scale inverse identity and
+ordinary q=1 power-three calibration are recorded as subclaims, not as
+proofs of an unresolved candidate's critical family.
+
+The original D-family imposes polynomial growth on the constant as q grows.
+The generic RH-sufficient energy criterion allows an arbitrary finite
+constant for each positive epsilon. Therefore this detector family is a
+sufficient route to RH, not a search of every RH-compatible constant law.
+Fresh future grammars should separate exponent decay from constant growth,
+and include other finite growth programs or existential per-level constants.
+The r=0 template additionally forces a bounded critical constant and the
+stronger simple-critical-zero consequence; it is retained but not promoted
+over the positive-r candidates.
+
+Analytical feedback must be applied only to a NEW frozen search. In a new
+run, the universal coverage obstruction can prune this particular PSD
+family without deleting the arithmetic operator from other representations.
+The constant-law limitation is explicit, and the unresolved full nonunit
+leads must not be described as newly proved signed arithmetic control.

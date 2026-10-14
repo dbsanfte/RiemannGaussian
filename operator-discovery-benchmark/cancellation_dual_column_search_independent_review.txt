@@ -1,0 +1,14 @@
+Independent dual-guided square proposal review
+
+The new utility enumerates exactly 120 descriptors: two complete parent/child blocks, ten unordered pairs of five declared symbolic atoms, and six signed rational coefficients. For each descriptor its group is the complete sum of squares of left+c*right, with unit group-term weights. Auxiliary rows get empty groups. It computes the exact stacked dual dot and ranks negative dots by dot/(1+c^2), with canonical descriptor-ID tie order, keeping at most eight. This normalization affects proposal ranking only; generated columns are unnormalized and exact. All120 records and their group/expanded-column hashes are retained. A negative dot only invalidates the previous separator for the enlarged cone; it does not prove primal feasibility.
+
+The proposer rejects missing monomial coordinates instead of assigning zero; it does not itself reverify that its input dual is a separator. The driver binds a previously independently audited dual result and checks original training instance hashes, which supplies that premise. The independent posthoc checker will reverify it directly against regenerated original instances. Resource preflights are conservative proxies, not a complete bit-cost or OS memory certificate.
+
+Driver seals source/rule before proposal scores and the selected dictionary/case hashes before new synthesis, then seals learned weights before no-refit final tests. It regenerates the zero-cubic auxiliary for the enlarged dictionary (new squares empty there), checks exact shared gamma and scalar slacks, and preserves missing/template-mismatch outcomes. All this is explicitly outcome-conditioned posthoc basis repair, with historical coefficient overlap, not a fresh unknown-operator validation. No signed arithmetic coefficient lookup is supplied to the learner.
+
+Four focused utility tests passed. No candidate scores were queried in this pre-freeze review; no producer/frozen sources were edited. No mathematical blocker found. New independent checker check_cancellation_adaptive_probe.py reconstructs descriptors/groups/scores/selection and augmented cases without producer math imports.
+
+SHA256 bindings:
+cancellation_dual_column_search.py d50e31fb1571e4d8a82fb26691cf6fdea7f2ab5871cf8d94ad9af0f8cad05425
+test_cancellation_dual_column_search.py 870ec04d4b34f096af5f71c2a8ff07be8642cc373e0fc893020809e287b25c9b
+run_cancellation_adaptive_probe.py cf961d150372efc6f6865af32ea068e098b758faa1bfcfdf2e0cf62b203d217e

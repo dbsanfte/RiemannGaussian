@@ -1,0 +1,25 @@
+{
+  "schema": "centered-mobius-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "operations": 287606,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.007784356013871729,
+      "source_exposure": "synthetic local p-parameter1/2 and injected rational centers only; no selected-source coefficient/normalization or archive reads"
+    },
+    {
+      "returncode": 0,
+      "operations": 7283,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0013479809858836234,
+      "source_exposure": "analytic scalar normalization only; no arithmetic coefficients or search observations",
+      "reason": "regression for pilot-001 exact Arb-to-integer conversion failure"
+    }
+  ],
+  "cumulative_operations": 294889
+}

@@ -1,0 +1,268 @@
+UNEQUAL-SHIFT ARITHMETIC LOGARITHMS AND ZETA ZERO RETENTION
+7 October 2026. A candidate family; historical priority is unresolved.
+No new prime distribution estimate or RH proof is claimed.
+
+1. GENERAL COEFFICIENT DEFINITION AND INVERSE
+
+For a normalized arithmetic function f(1)=1 let q be its Dirichlet
+convolution inverse. For v>0 define R_v(f)(1)=0 and
+
+ R_v(f)(n) = sum_(ab=n,b>1) q(a) f(b) log(b)/(log(b)+v log(a)). (1)
+ B_v(f) = W R_v(f),  W=sum_(k>=1) mu(k) U_k/k.
+
+U_k places coefficients at perfect powers, with input coefficient 1 zero.
+V=sum U_k/k is the inverse of W by the divisor identity sum_(d|j)mu(d).
+The a=1 term of (1) is f(n); every other a,b is less than n. Given B,
+apply V, then solve (1) for f(n) in increasing n, updating q(n) by
+Dirichlet inversion. This proves a coefficient-local triangular bijection
+for arbitrary real or complex normalized formal units. It supplies no
+prime indicators, prime factors or prime weights to the coefficient engine.
+
+At v=1 the kernel is log(b)/log(n), so R_1=LOG_D and B_1 is the
+classical Mobius perfect-power prime decoder. For v!=1, R_v is nonlinear
+in Dirichlet products. At n=pq, p!=q, input zeta^beta multiplies its
+zeta coefficient by beta^2, rather than beta. Ordinary root commutation
+is therefore false. Formal invertibility does not assert a homomorphism.
+
+2. UNIVERSAL SIGN, SHARP PRIME GAP AND LEAST-PRIME ENVELOPE
+
+Put u(n)=1, c=1-v, 0<v<1, n=product p^e_p, m=omega(n),
+g=gcd(e_p), t_p=log(p)/log(n), and
+
+ T_j(t)=sum_(S subset primes)(-1)^(m-|S|)(sum_(p in S)t_p)^j,
+ J_(j-1)(g)=sum_(d|g)mu(d)d^(j-1)
+            =product_(ell|g,ell prime)(1-ell^(j-1)).
+
+The rational kernel h(S)=(1-S)/(1-c*S), with S=log(a)/log(n), has
+geometric weights b_j=v*c^(j-1)>0, sum b_j=1. Subset differences give
+
+ R_v(u)(n)=(-1)^(m-1) sum_(j>=m)b_j T_j(t),
+ B_v(u)(n)=(-1)^(m-1) sum_(j>=m)b_j T_j(t) J_(j-1)(g).     (2)
+
+T_j is zero for j<m and positive for j>=m by its multinomial expansion.
+All series converge absolutely, including sum t_p=1, since c<1.
+For g>1 the j=1 term vanishes and every j>1 Jordan factor has sign
+(-1)^omega(g). For g=1 it equals 1. Consequently
+
+ sign B_v(u)(n)=(-1)^(omega(n)+omega(g)-1), for every n>=2.  (3)
+
+Also |J_(j-1)(g)|<=g^(j-1), so
+
+ |B_v(n)| <= |R_v(n^(1/g))|/g.                            (4)
+
+The geometric expansion has the positive integral
+
+ |R_v(n)|=v/c integral_0^infinity
+   exp[-(1-c sum t_p)*z] product_(p|n)(1-exp(-c*t_p*z)) dz. (5)
+
+Since sum t_p<=1, the exponential is at most exp(-v*z).
+For m>=2 discard all but two factors. Their product is maximal, at
+fixed sum <=1, when both steps are 1/2. Integration gives
+
+ |R_v(n)| <= delta_v=(1-v)/(1+v),
+ |B_v(n)| <= delta_v/g, if m>=2.                          (6)
+
+For n=p^e, e>1, (2) and |J| bound give
+|B_v(p^e)| <= (sum_(j>=2)b_j)/e = (1-v)/e <= delta_v.
+For n=p, B_v(p)=1. Thus every prime has value 1 and every composite
+has modulus <=delta_v<1, at every scale. The gap is sharp: for pq
+with log p/log q tending to 1, (5) tends to its balanced two-step value.
+Bertrand's theorem supplies such prime pairs; this is established input.
+At v=1 the composite coefficients vanish, and (3) no longer asserts
+strict signs. Uniform coefficient convergence to the prime indicator
+as v tends to 1 does not imply uniform critical-strip convergence.
+
+Dropping all but the least step in (5), then using (4), gives
+
+ |B_v(n)| <= t/(v+(1-v)*g*t) <= t/(v+(1-v)*t) <= t/v,
+ t=log P^-(n)/log n.                                      (7)
+
+The exponent one is sharp: at n=2q with q prime tending to infinity,
+the magnitude is (1/v-v)*t+O(t^2). For reference the pure-power value is
+R_v(p^e)=v/(e-1+v) and B_v(p^e)=sum_(d|e)mu(d)*v/[e+(v-1)d].
+Extrapolating (3) to v>1 fails, for example at v=3/2 and n=64.
+
+3. ALL-SCALE SECOND MOMENTS, WITH A DECLARED SIEVE IMPORT
+
+We import the published theorem Phi(x,y)<x/log(y), x>=y>=2,
+where Phi includes 1 and integers whose least prime exceeds y.
+For 1<y<2 the same inequality follows from Phi(x,y)<=x< x/log(y).
+Primary source: Fan and Pomerance, Theorem A, author manuscript:
+https://math.dartmouth.edu/~carlp/erat060523rev.pdf
+The full external sieve proof has not been independently formalized here.
+
+For integer X>=2, put V_n=min(1,log P^-(n)/log X) on X<=n<=2X.
+The number with V_n>t is at most 2X/(t log X), 0<t<1.
+Boundary equalities occur at finitely many t and do not change the
+layer-cake integral. Let h(t)=t/[v+(1-v)t]. From (7),
+
+ sum_(X<=n<=2X)|B_v(n)|^2
+ <= integral_0^1 (h(t)^2)' * 2X/(t log X) dt
+ = 2(1+v)/v * X/log X.                                   (8)
+
+This includes v=1 by continuity or direct integration. For complete
+Fourier rows A_a=sum sqrt(w_n)B_v(n)exp(2pi i a n/H), H>=X+1,
+0<=w_n<=1, orthogonality gives sum_a |A_a|^2=H sum_n w_n|B_v(n)|^2.
+Thus (8) multiplies by H. Residue injectivity is necessary; H<=X is
+not certified. At v=1/2, M2<=6X/log X. This is a known-sieve
+consequence, not an independent prime-distribution or cancellation bound.
+
+4. FRACTIONAL LOGARITHMS ARE A BETA MIXTURE OF THIS FAMILY
+
+If 0<alpha<1 and V has Beta(alpha,1-alpha) density, Euler's beta
+integral gives E[1/(1+x V)]=(1+x)^(-alpha), x>=0.
+Taking x=log(a)/log(b) yields
+
+ E[log(b)/(log(b)+V log(a))]=(log(b)/log(ab))^alpha.
+
+Therefore R_alpha(f)=E R_V(f) and B_alpha(f)=E B_V(f), coefficient
+by coefficient, for every normalized formal unit. For zeta these also
+hold as absolutely convergent Dirichlet series on Re(s)>1. At alpha=1/2,
+V=sin(theta)^2 for uniform theta in [0,pi/2]. The deterministic kernel
+is distinct from every single fractional kernel for 0<v<1: its geometric
+weights have b_1=v, b_2=v(1-v), whereas the fractional weights have
+b_1=alpha, b_2=alpha(1-alpha)/2. Equality of both is impossible.
+
+A positive mixture supported on v>=epsilon>0 preserves prime value
+one and the nonzero local zero signatures below. Jensen and (8) give
+M2 <= 2(1+E[1/V])*X/log X if that inverse moment is finite.
+Every finite positive mixture has the same triangular inverse using
+its averaged kernel, since the a=1 term remains f(n). Its sharp composite
+gap is E[(1-V)/(1+V)]; its zero-order coefficient is m*E[V^(-m)]>0.
+The public grammar accepts arbitrary finite rational atoms and positive
+rational weights with exact sum one. No particular beta law, zero order
+or QRH estimate is supplied to choose the atoms. Three changed mixtures
+are checked on arbitrary real and complex units and on actual integers.
+The beta mixture has infinite E[1/V] for alpha<1; hence (8) cannot
+be averaged into a finite fractional M2 constant by this argument.
+
+The compound family also has an established-primitive expansion. Let
+R_j(f)=(f_Dinv * [(log n)^j f(n)])/(log n)^j, with j a positive integer.
+For v>1/2 and q=(1-v)/v<1, geometric expansion of t/(v+(1-v)t) gives
+
+ R_v(f)=(1/v) sum_(j>=1)(-q)^(j-1) R_j(f).                 (4a)
+
+This is coefficient-local absolute convergence: 0<=t=log b/log(ab)<=1.
+For zeta a K-term remainder is <=2^omega(n)*q^K/(2v-1).
+At v=1/2 even the prime coefficient's geometric series oscillates between
+2 and 0. Equation (4a) cannot be extrapolated there as a convergent series,
+although the rational kernel itself remains well defined. Thus this is
+a resummation/deformation built from known integer-logarithm primitives,
+not evidence for a historically new primitive. Exact historical priority
+of the full compound construction and its estimates remains unresolved.
+
+5. DIRECT NATIVE ZETA DEFINITION AND COMPLETE INFINITE TAILS
+
+For Re(s)>1, absolute Euler series and termwise integration give
+
+ R_v(s)=-integral_0^infinity zeta'(s+t)/zeta(s+v*t) dt,
+ B_v(s)=sum_(k>=1)mu(k) R_v(k*s)/k.                        (9)
+
+Equations (2) and (5) give |R_v(n)|<=1 for 0<v<=1. The native R
+integral truncated at T has error at most
+zeta(sigma+v*T)[zeta(sigma+T)-1], sigma=Re(s)>1, using
+|1/zeta(s+v*t)|<=zeta(sigma+v*t) and the differentiated Euler series.
+For B truncated after k=K, its remaining tail is at most
+
+ 2^(-(K+1)*sigma)/(K+1)/(1-2^(-sigma))
+                         *[1+2/((K+1)*sigma-1)].           (10)
+
+Here zeta(x)-1<=2^-x[1+2/(x-1)], and the geometric tail is dominated
+at its first term. A coefficient prefix through N has omitted tail
+<=N^(1-sigma)/(sigma-1), by |B_v(n)|<=1. The independent analytic
+checker changes variables to u=v*t, changes cutoffs and meshes, and
+uses factor/subset coefficients instead of the production recursion.
+
+6. LOCAL ZERO SIGNATURE WITHOUT AN UNKNOWN FRACTIONAL NUMERATOR
+
+Let F be meromorphic, normalized at right infinity, with a locally
+uniformly convergent defining integral tail in the neighbourhood under
+discussion. Let rho be an isolated zero of order m>=1 with a zero-free
+rightward corridor. These tail assumptions hold for zeta by its Euler
+series and for the rational calibration toys directly. Put
+w=s-rho. In a small initial integration segment, F(s+v*t) has a pole
+in its reciprocal at t=-w/v of order m. Subtract its partial fractions.
+The only multivalued term after integration is A_v(w)log(w), where
+A_v(w) is minus the residue of -F'(s+t)/F(s+v*t) at t=-w/v.
+At w=0, F'(rho+t)/F(rho+v*t)=m/v^m * 1/t+O(1), hence
+
+ A_v(0)=m/v^m !=0.                                       (11)
+
+The higher partial-fraction coefficients vanish to the appropriate
+orders in w: expanding F(rho+z)=z^m a(z), a(0)!=0, the coefficient
+of (w+v*t)^(-j) is divisible by w^(j-1). Its integrated term at the
+lower endpoint is therefore holomorphic. Thus the whole local form
+is A_v(w)log(w)+holomorphic, not merely an unexplained leading fit.
+For a simple zero the full analytic logarithmic coefficient is
+
+ A_v(w)=F'(rho+(1-1/v)*w)/(v F'(rho)).                     (12)
+
+This is structurally unconditional at a zero with the stated corridor;
+it needs no separate nonvanishing of a fractional numerator. For
+Re(rho)>1/2, all scaled k>=2 terms of B_v are regular near rho because
+Re(k*rho)>1. They converge normally. Hence B_v retains (11).
+The tested critical-line zeros additionally require zero-free k=2
+corridors, which are certified from earlier independently checked disks.
+No new zeta zero is located and the old disks are not a global zero audit.
+
+7. A POLE-REGULARIZED RH EQUIVALENCE, NOT AN RH PROOF
+
+Fix 0<v<1, G(s)=1/zeta(s), a(s)=v+(1-v)s. On Re(s)>1 define
+
+ T_v(s)=B_v(s)+v G'(a(s)) log(s-1),                        (13)
+
+using the real-positive branch to the right of 1. RH is equivalent to
+single-valued holomorphic continuation of T_v to Re(s)>1/2.
+
+Under RH, G is holomorphic in that half-plane and vanishes simply
+at 1. The integral in (9) is holomorphic off the slit (1/2,1], since
+the denominator has no zeros and its pole becomes a reciprocal zero.
+The only numerator pole is the double pole of -zeta' at s+t=1.
+Its t residue is v G'(a(s)). Its integrated logarithmic term is
+-v G'(a(s))log(s-1), canceled by (13). The double-pole endpoint term
+is G(a(s))/(s-1), which is holomorphic at 1 since G(a(1))=0.
+Contour deformation across the slit gives the same residue cancellation
+at every interior point. The scaled k>=2 sum is normally convergent
+and holomorphic throughout Re(s)>1/2. This proves the forward direction.
+
+Conversely suppose an off-line zero has real part >1/2. Choose a finite
+height T above its absolute ordinate and unequal to every zero ordinate.
+Among the finitely many zeros with |Im rho|<T choose one with maximal
+real part sigma>1/2. A small rightward strip at its ordinate is zero-free.
+Thus (11) applies to the branch obtained from Re(s)>1. At a(rho),
+Re a(rho)>sigma and |Im a(rho)|<T, so G'(a(s)) is holomorphic near rho.
+Also log(s-1) is holomorphic there. The k>=2 terms are holomorphic.
+They cannot cancel the nonzero logarithmic coefficient m/v^m in (11).
+This contradicts single-valued holomorphic continuation of T_v.
+Zeros with real part <1/2 are paired to those >1/2 by the functional
+equation, so the reverse direction implies RH. This argument uses a
+finite-height extremal zero, not an assumed globally rightmost zero.
+
+The same equivalence holds for EVERY finite positive mixture:
+
+ T_nu(s)=B_nu(s)+log(s-1)*sum_i w_i*v_i*G'(v_i+(1-v_i)s).
+
+Under RH this is a finite positive sum of the holomorphic T_vi.
+For the reverse direction the same finite-height extremal zero works
+simultaneously for all v_i. Every regularizer is holomorphic there,
+while the logarithmic coefficient is m*sum_i w_i/v_i^m>0. No choice
+of a particular atomic law or presumed zero multiplicity is needed.
+This conclusion cannot be transferred to the beta mixture merely by
+interchanging its local limit: E[V^(-m)] diverges for that law. The
+coefficient beta identity on Re(s)>1 remains valid, but its local zero
+asymptotics do not follow from a uniform finite-mixture logarithm limit.
+
+Equivalence (13) gives a concrete zero-sensitive target to the detector.
+The coefficient second moment (8) does not prove the required
+holomorphic continuation. That unresolved step is the root difficulty.
+
+8. PRIORITY AND VERIFICATION STATUS
+
+Validity, empirical rediscovery and historical novelty are separate.
+The primitive Dirichlet inverse, logarithmic weights, reciprocal zeta,
+perfect-power Mobius inversion, beta integral and layer-cake/sieve tools
+are established. The compound unequal-shift family and (13) require a
+primary-source priority review; absence of search hits is not evidence
+enough. The missing full 2024 fractional-calculus paper remains an
+explicit comparison gap. Numerical checks do not verify the external
+sieve proof, global RH, or historical priority.

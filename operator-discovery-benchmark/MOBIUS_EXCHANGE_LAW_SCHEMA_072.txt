@@ -1,0 +1,105 @@
+UNIFORM SIGNED EXCHANGE-LAW SYNTHESIS072: CONTRACT
+
+Generic profile: nonempty sorted list of1..16 {lo,hi,value} bands, canonical rational entries,
+0<=lo<hi<=100, nonzero value, disjoint intervals (lo,hi]. At scale integer
+k>=1, target Z(k)=sum_n mu(n)w(n/k). Source pilot is exactly
+[{lo:'8',hi:'10',value:'1'},{lo:'16',hi:'20',value:'-1'}], from original
+N15k,y16k,p3,q5,r1,j1. d1=0 and J1=Z(k)-2k H_mu(u)H_mu(v).
+This source slice is necessary for whole-head control, not sufficient.
+
+Arithmetic dictionary: all coprime squarefree integers1<=a<b<=cap, with
+cap2..23 and at most9 primes through cap. Multiplier parity is explicitly
+known from small factorization. No mu(k-scale index) enters the learner.
+For every ordered pair of profile bands I,J and a,b form
+L=max(I.lo/a,J.lo/b), U=min(I.hi/a,J.hi/b).
+If L<U and gain=abs(I.value)+abs(J.value)
+ -abs(mu(a)*I.value+mu(b)*J.value)>0, admit one family:
+ {a,b,lo:str(L),hi:str(U),left_value:I.value,right_value:J.value,
+  gain:str(gain),density_ratio:str(product_(p|ab) p/(p+1))}.
+Enumerate a, then b, then profile left index, then right index. Do not
+deduplicate or nominate a preferred pair. Every family pairs am with bm,
+Lk<m<=Uk, mu(m)^2=1 and gcd(m,ab)=1. Relation mu(am)=mu(a)mu(m)
+and mu(bm)=mu(b)mu(m) licenses its exact signed gain.
+
+Capacities valid at every scale: form sorted unique rational endpoints
+aL,aU,bL,bU from all families. For each adjacent real cell (left,right]
+use its midpoint, and all bit masks over the sorted primes<=cap. Family
+incidence is1 if midpoint in(aL,aU] and mask&mask(ab)==mask(a), plus1
+if midpoint in(bL,bU] and mask&mask(ab)==mask(b). The two cannot both
+hold for coprime a,b. Each distinct nonempty incidence pattern is a row
+sum_(family in row) lambda_family<=1. Rows are sorted unique lists of
+ascending family indices. Enumerate all cells and masks before dedup.
+This overcovers possible finite n/k but proves a uniform capacity law.
+
+LP objective maximize sum reward_i lambda_i, reward_i=
+gain_i*density_ratio_i*(U_i-L_i), lambda>=0, plus lambda_i<=1.
+Producer rounds nonnegative primal proposal down on grid2^20; denominator
+is max(grid, largest exact capacity row sum) to restore feasibility.
+Dual y>=0 on capacity rows is rounded upward on grid2^20. With weights
+y and defects d_i=max(reward_i-sum_(rows containing i)y_row,0), a valid
+objective upper is sum_rows y_row+sum_i d_i, using lambda_i<=1.
+This lower/upper pair need not be an exact optimum; never claim one.
+For zero families: empty rows/vectors, objective gain0 and upper0.
+
+Certificate schema='mobius-uniform-exchange-law-v1':
+ profile,cap,primes,candidates,capacity_rows,
+ lambda_denominator:int,lambda_numerators:[nonnegative ints],
+ dual_denominator:int (=2^20),dual_numerators:[nonnegative ints],
+ objective_gain:rational,objective_upper:rational,
+ leading_upper:rational,leading_lower:rational,
+ sqrt_error_upper:rational,selected_family_indices:[positive-lambda ids],
+ solver:metadata,
+ uniform_profile_bound_proved:true,sublinear_profile_bound_proved:bool,
+ uniform_head_bound_proved:false,RH_proved:false.
+Input/family rationals canonical <=4096bits, length<=2500; fixed grid2^20.
+Numerators/denominator <=4096bits, families<=20000, capacity rows<=200000.
+Abort explicitly at resource cap, do not silently truncate any support.
+
+Let delta1=6/pi^2. The elementary squarefree-coprime interval theorem is
+|Q_P(0,X)-delta1*product_(p|P)p/(p+1)*X|
+ <=(2^omega(P)+2)*sqrt(X), X>=0. It is supplied by review072, with
+the fixed-prime count proved from square-divisor inclusion-exclusion.
+Let root_upper(x)=ceil(2^20*sqrt(x))/2^20, certified by integer squares.
+baseline=sum_band abs(value)*(hi-lo).
+leading_upper=baseline-objective_gain;
+leading_lower=baseline-objective_upper (may be negative, retain it).
+sqrt_error_upper=
+sum_band 3*abs(value)*(root_upper(hi)+root_upper(lo))
+ +sum_family lambda_i*gain_i*(2^omega(ab)+2)
+                  *(root_upper(U)+root_upper(L)).
+Thus for every k>=1:
+ |Z(k)| <= delta1*leading_upper*k + sqrt_error_upper*sqrt(k).
+Exact finite price is baseline squarefree mass minus the full weighted
+edge-family savings, keeping all unmatched capacity. This theorem concerns
+the absolute target of the COMPLETE joined profile. Multipliers, both
+endpoints, all scale exits and shared ordinary mu remain present.
+sublinear_profile_bound_proved iff leading_upper==0; if negative reject
+(positive true mass density and valid capacities exclude it).
+leading_lower>0 proves this precise packing-price language cannot reach a
+square-root law at the given cap. This is not a lower bound on actual Z.
+
+Checker API Meter(limit=...,seconds=...), verify_law(cert,meter=None),
+evaluate_law(cert,k,meter=None). No producer/optimizer/old checker imports.
+verify_law independently rebuilds candidates, all capacity rows, roots,
+feasibility, complete primal and dual prices, full count-error constant and
+scope flags. Return verified:true, fields leading_upper,leading_lower,
+sqrt_error_upper,uniform_profile_bound_proved:true,
+sublinear_profile_bound_proved:<as above>,uniform_head_bound_proved:false,
+RH_proved:false. It can optionally add counts/work fields.
+evaluate_law first verifies and then builds actual ordinary mu through
+floor(k*max_hi). Return k,actual_signed_target:rational,
+baseline_squarefree_price:rational,certified_finite_price:rational,
+actual_absolute_target:rational,family_counts:[integer],verified:true,
+uniform_head_bound_proved:false,RH_proved:false.
+Each count uses all m in(Lk,Uk], gcd(m,ab)=1 and mu(m)^2=1.
+Require absolute target<=certified finite price. Exact evaluation does not
+upgrade uniform_head/RH flags. The learner does not read this evaluator.
+
+Pilot caps2,3,5,7,11,13,17,19,23. Same general mechanism supports arbitrary
+profiles. Freeze before solver/evaluator outcomes. Symbolic envelope
+selection precedes finite arithmetic; all caps and failures are retained.
+Finite k values1,2,3,5,11,17,31,64,101,211,257,512,769,1024 verify the
+unconditional laws; no finite slope or density fit supports the theorem.
+Independent root admission also compares original068 pointwise source on
+this new slice. No old science or unchanged old tests rerun.16GiB aggregate,
+7200s,300bn work meter,3workers,one native thread each; no artifact hashes.

@@ -1,0 +1,165 @@
+Structural potential discovery for complete signed Mobius block energy
+Independent mathematical and implementation review, 2026-10-09.
+Concrete contract, implementation and test sources reviewed.
+No unresolved mathematical or finite-admission blocker found.
+Reviewer work is read-only apart from this memo. No tests, actual arithmetic
+inputs, candidate scores, hashes or old-file edits are performed by reviewer.
+
+Fixed target and nonnegative storage
+Let M(n)=sum_{k=1}^n mu(k), with its complete declared coefficient domain,
+A_mu(X)=sum_{n=X}^{2X-1} M(n)^2, and E_mu(X)=A_mu(X)/X^2.
+The candidate object is W(X)=E_mu(X)+V(X), not a transformed or filtered
+replacement for E_mu. Generate V through finite positive-weighted sums of
+squares with positive finite normalizers. Signed state mixtures inside those
+squares are permitted. Structural nonnegativity of V gives E_mu<=W; no
+independent critical upper bound on V is required for that implication.
+
+The quantity to compare is the entire signed W(2X)-W(X). Its parent term
+has a negative coefficient; it cannot be treated as another positive square
+or dropped. Preserve the exact E_mu contribution, every signed cross term,
+every declared index and complete initial W(1). Initial storage is part of
+the resulting bound and cannot be treated as cost-free padding.
+
+Conditional dyadic telescoping
+Suppose a fixed candidate is finite and V(X)>=0 at every dyadic X>=1.
+For a fixed integer q>=1, assume a finite C_q>=0 independent of X satisfies
+  W(2X)-W(X)<=C_q*ceil(X^(1/q))
+at EVERY dyadic X>=1. For X=2^J, sum over 1,2,...,2^(J-1), retaining W(1):
+  E_mu(X)<=W(X)
+          <=W(1)+2*C_q*(X^(1/q)-1)/(2^(1/q)-1).
+This uses ceil(t)<=2t for t>=1 and the exact finite geometric-series formula.
+For X=1 the additional term iszero. A finite set of tested scales or q values
+does not discharge the premise. Critical all-scale use requires the stated
+cofinal quantifiers, including all initial scales and q-dependent costs.
+The denominator is positive; a floating approximation to it is not a proof
+enclosure or a scale-independent constant certificate.
+
+Conditional ordinary-zeta consequence
+The premise for cofinal q yields A_mu(X)<=K_q*X^(2+1/q) for dyadic X,
+with finite K_q including initial storage and the geometric factor. By
+Cauchy-Schwarz on each complete block, its sum of |M(n)| is at most
+sqrt(X*A_mu(X))<=sqrt(K_q)*X^(3/2+1/(2q)). Thus the dyadic contributions
+to integral_1^infinity M(x)*x^(-s-1)dx converge absolutely and locally
+uniformly when Re(s)>1/2+1/(2q). Cofinality provides such a q for every
+compact subset of Re(s)>1/2. Its product with s is consequently holomorphic
+there. On Re(s)>1, ordinary partial summation identifies it with1/zeta(s);
+analytic continuation therefore excludes zeta zeros in Re(s)>1/2. The usual
+functional equation then gives the conditional RH consequence for nontrivial
+zeros. This is an implication of the missing all-scale arithmetic premise,
+not a conclusion of finite sampling or a proof supplied by the candidate AST.
+
+Moving domains and coupling
+Evaluate the SAME candidate program at X and2X, recomputing all roots,
+prime-bank endpoints, masks, denominators and state maps at their own scale.
+An old parent cutoff must not silently serve as the child's moving cutoff.
+Complete auxiliary domains may require more than4X-1 coefficient coverage;
+derive the actual horizon from the AST and reject/miss insufficient coverage.
+Never clip a requested index or publish a partial sum after exhaustion.
+
+A coupled bank has the form square(sum_p state_p), whose expansion includes
+both diagonal p=p' and all signed p!=p' interactions. It differs from
+sum_p square(state_p). Both can be nonnegative candidate constructions, but
+their semantics and costs must remain distinct. Resource limits must bound
+complete bank construction and evaluation rather than dropping cross terms
+or restricting to a convenient prime subset after observing responses.
+
+Structural search and scope
+Cost-bounded composition/mutation must change actual retained state ASTs,
+maps, masks or moving banks; adjusting only coefficients of the old template
+would not implement the proposed structural search. Exact full payload equality
+and ordinal candidate IDs suffice for identity; no hash is mathematically
+needed. Record every syntax/domain/resource rejection and all consumed costs.
+Finite signed responses guide nominations, not theorem admission.
+
+The initial generator has six balanced families: mapped indices, masks,
+signed mixtures, nonlinear products, divisor-coupled sums and moving-prime
+banks. Its second generation remaps or composes selected whole state trees;
+there is no continuous coefficient optimizer. Full payload equality rejects
+syntax aliases without claiming universal equivalence from matching responses.
+Baseline V=0 remains a comparison. Deliberately excluding it from structural
+parent selection permits exploration but does not establish that the selected
+structures improve on baseline. Empty/zero-weight and behaviorally degenerate
+candidates cannot supply new arithmetic information merely by being selected.
+
+Training constants and selected candidate payloads must be fixed before their
+declared validation/final evaluations. Every available record concerns the
+complete target and stored program. Missing evidence is not a pass or zero.
+Neither structural V>=0 nor a finite inequality proves its universal all-scale
+counterpart. A formal identity alone likewise does not prove an inequality
+for actual mu or an ordinary-zeta bridge. Export those obligations explicitly.
+
+Finite improvement and future proof priorities
+The E_mu anchor prevents loss of target, but does not guarantee that a small
+new V carries useful signed cancellation. Root-index padding, universally
+bounded additions, existing identities or syntactic/behavioral aliases may
+produce competitive finite scores. Compare every selected program with the
+stored V=0 baseline, and never label selection itself a new all-scale result.
+Candidate-specific analytical review must distinguish such padding/aliases
+from an interaction that plausibly supports the complete innovation estimate.
+That distinction needs a proof or explicit unresolved lemma concerning the
+actual expression, with initial, moving-domain and normalization costs intact.
+Control-source results are diagnostic comparisons, not alternative actual-mu
+premises or proofs that a candidate uses enough signed arithmetic information.
+
+Resource scope
+The450m job reserves preparation40m, generation/selection10m, discovery160m,
+final evaluation80m and independent audit160m. Preparation includes25m for
+all development arithmetic, one frozen suite and1m root/scaffolding, with15m
+for other I/O/scaffolding. Every stage shares one meter across its sources,
+candidates, memoized values and partial failures; no per-candidate reset or
+borrowing unused phase allowances. Record consumed work after failure. The
+independent audit also accounts for all independently reconstructed finite
+arithmetic and selection calculations under its own shared stage ceiling.
+
+Complete syntax, integer powers/root comparisons, inclusive sums, source and
+memoization must be bounded before potentially large allocations. Merely
+bounding a root exponent's text to4096 bits does not bound n^exponent or its
+work. Live-cell bases include complete sources and every retained cache;
+6m cells,4096-bit numbers,8MiB artifacts,6GiB processes and3600s stage limits
+are declared boundaries, not mathematical complexity or convergence theorems.
+
+Implementation review
+Read potential_candidate_discovery_contract.txt, potential_candidate_discovery.py,
+potential_candidate_language.py, check_potential_candidate_discovery.py,
+run_potential_candidate_discovery.py and all three test modules without execution.
+The producer uses complete divisor inversion; the checker independently obtains
+mu by factorization. They have independent typed interpreters. Both compute
+the complete unfiltered E_mu, nonnegative V, parent/child W, signed innovation
+and initial W1 using exact integers/rationals. No fitted signs, numerical
+optimizer, cryptographic identity or partial successful sum enters this path.
+
+Both interpreters validate full syntax even behind false guards, reserve N,
+reject source indices outside the declared horizon and use exact guarded roots.
+Power work/bit preflights precede allocations. Source arrays remain immutable.
+Whole-subexpression cache keys include full syntax and every free environment
+dependency. Sum-prefix caches bind actual lower endpoint and every summand
+dependency, extend only through the requested upper endpoint, and do not
+evaluate nonexistent terms outside a requested sum. Child evaluation supplies
+fresh X=2X to all states. Coupled sums remain inside the square.
+
+The runner writes complete training fits before validation, retains every
+generated/mutated payload and ordinal ID, saves final selection/constants before
+final observations, and separates actual/control outcomes. The audit independently
+recomputes every saved successful finite measure/case, fitted constant, score
+and selection. Its generation replay shares the generator, a limitation stated
+in its scope; it is not an independently invented grammar. Failure reasons
+are explicit dispositions, not independently proved complexity lower bounds.
+No successful finite audit sets any universal-estimate/global-bound/RH flag.
+
+Two review findings were resolved before freeze: Evaluator's source-array base
+now includes the external source and all internal arrays; root meters add a
+fixed1m resident allowance, with structural metadata bounded below900k and100k
+reserved for external/transient data, and the audit releases each checker
+before creating another. Frozen source semantics are checked by exact byte
+equality before run/audit, without hashes. Phase counters remain shared across
+all candidates and partial failures. There is one research marker and one
+independent audit marker; no budget reset authorizes another attempt.
+
+Read-only test inspection covers actual and unrelated formal-value calibration,
+full anchored energy and signed prime cross terms, fresh child roots, masks,
+floor division, lexical/type/zero-index failures, cache lower/body dependencies,
+requested-domain-only extension, power/work/bit/live/deadline limits, exact field
+tampering, structural mutations and parent preservation, training-before-validation,
+initial-cost selection, no-hash paths and write-once artifacts. Reviewer runs
+no test suite and computes no actual source/model/candidate score. Reviewer
+synthetic arithmetic work iszero; this review makes no claim about pilot outcomes.

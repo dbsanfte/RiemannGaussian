@@ -1,0 +1,64 @@
+{
+  "ablation": "same grammar with relation promotion disabled; actual costs reported separately",
+  "aggregate_memory_limit_bytes": 17179869184,
+  "alpha": "1/5",
+  "composition": "basis promotion and pairwise sum/difference; all Boolean word factorizations",
+  "features": [
+    [],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "hashes_used": false,
+  "microscopic_exponents": {
+    "max_denominator": 24,
+    "maximum": "2"
+  },
+  "new_frozen_source_count": 13,
+  "new_numerical_study": false,
+  "old_suites_or_studies_replayed": false,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16
+  ],
+  "relation_solver": "exact RREF; outside class and full prime-class table",
+  "seconds_per_module": 600,
+  "source_values_read": false,
+  "tail_cutoffs": {
+    "max_denominator": 12,
+    "maximum": "2"
+  },
+  "target_growth": {
+    "N_power": "1/2",
+    "log_power": "0"
+  }
+}

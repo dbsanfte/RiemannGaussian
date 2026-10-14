@@ -1,0 +1,58 @@
+{
+  "kind": "development_attempt_receipt",
+  "source": "session tool console results, reconstructed without content digests",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B -m unittest test_mobius_mixed_zero_086 -v",
+  "runs": [
+    {
+      "run": 1,
+      "tests": 7,
+      "passed": 6,
+      "errors": 1,
+      "seconds": 0.054,
+      "status": "FAILED",
+      "error_test": "test_half_sum_is_exactly_zero_and_all_pairs_are_priced",
+      "error_type": "TypeError",
+      "error_message": "list indices must be integers or slices, not tuple",
+      "cause": "Test-only literal-list fixture was indexed as V[i,k] instead of V[i][k].",
+      "correction": "Changed fixture references to V[i][k] and V[j][k]; producer unchanged for this correction."
+    },
+    {
+      "run": 2,
+      "tests": 7,
+      "passed": 7,
+      "errors": 0,
+      "seconds": 0.055,
+      "status": "OK"
+    },
+    {
+      "run": 3,
+      "tests": 7,
+      "passed": 7,
+      "errors": 0,
+      "seconds": 0.06,
+      "status": "OK",
+      "change": "Made fixed-remainder cache private; added prospective partner-unscaling and corrected-sum gates."
+    },
+    {
+      "run": 4,
+      "tests": 8,
+      "passed": 8,
+      "errors": 0,
+      "seconds": 0.126,
+      "status": "OK",
+      "change": "Added tiny typed-bank integration test; independent verify_upper admitted every exact candidate."
+    },
+    {
+      "run": 5,
+      "tests": 8,
+      "passed": 8,
+      "errors": 0,
+      "seconds": 0.107,
+      "status": "OK",
+      "change": "Added conservative prospective SCS cone-work iteration budget and finite objective guard."
+    }
+  ],
+  "full_science_run": false,
+  "older_sources_edited": false,
+  "content_digests_used": false
+}

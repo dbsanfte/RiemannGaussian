@@ -1,0 +1,31 @@
+{
+  "attempts": [
+    {
+      "modules": [
+        "test_mobius_prime_moment_075",
+        "test_mobius_prime_moment_integration_075"
+      ],
+      "tests_run": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.8387875570333563,
+      "output": "test_arbitrary_rational_power_enclosures (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_exact_prices_and_positive_square_root (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_exact_rational_lattice_and_units (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_feedback_preserves_refutation_and_ambiguity (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_grid_refinement_preserves_exported_operator (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_resource_gates_precede_matrix_allocation (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_scaling_cannot_hide_a_correlation_counterexample (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_signed_lp_proposal_and_correlation_control (test_mobius_prime_moment_075.SourceAndSearch) ... ok\ntest_direct_cauchy_recovery_remains_conditional (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_independent_source_all_phases_and_multiplicities (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_invalid_negative_contraction_and_base_tampering (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_prime_correlation_counterexample_survives_valid_induction_template (test_mobius_prime_moment_integration_075.Integration) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.839s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "names": [
+        "test_mobius_prime_moment_integration_075.Integration.test_tiny_source_and_nonvacuous_evaluation",
+        "test_mobius_prime_moment_integration_075.Integration.test_joint_proposals_pay_both_training_lemmas",
+        "test_mobius_prime_moment_integration_075.Integration.test_runner_source_dependency_and_candidate_pipeline",
+        "test_check_mobius_prime_moment_075.Tests.test_prospective_memory_without_allocation"
+      ],
+      "tests_run": 4,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.6519117819843814,
+      "output": "test_tiny_source_and_nonvacuous_evaluation (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_joint_proposals_pay_both_training_lemmas (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_runner_source_dependency_and_candidate_pipeline (test_mobius_prime_moment_integration_075.Integration) ... ok\ntest_prospective_memory_without_allocation (test_check_mobius_prime_moment_075.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.652s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

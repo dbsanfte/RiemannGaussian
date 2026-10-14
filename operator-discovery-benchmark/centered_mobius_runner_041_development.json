@@ -1,0 +1,13 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.033713393029756844,
+      "exposure": "toy prime parameter1/2, injected center1/4, finite independent Gram cases only"
+    }
+  ]
+}

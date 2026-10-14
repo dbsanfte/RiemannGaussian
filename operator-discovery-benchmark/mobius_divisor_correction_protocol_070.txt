@@ -1,0 +1,161 @@
+FROZEN ADAPTIVE DIVISOR-IDENTITY CORRECTION SEARCH070
+
+069 was a substantive completed goal turn: exact support-reducing signed
+polynomials were verified and the scalar-prefix relaxation was proved
+insufficient on an actual source family. Its finite head prices were
+worse in all72 comparisons.070 implements the previously specified next
+backend: polynomial corrections using genuine local divisor identities.
+The signed all-scale objective remains active and unproved.
+
+Freeze the10 FILES in run_mobius_divisor_correction_070.py before new
+scientific correction searches. Preserve360 inherited frozen files and
+all development attempts. Compare bytes, not hashes. Use all12 admitted069
+groups, all14436 models and all36 H cuts. This is reused development
+evidence, not a fresh holdout. Do not replay old studies or test suites.
+
+Exact domain and proof language
+
+Each input contains only its complete integer polynomial, denominator,
+degree2..8 and declared smaller mu radius U. It carries no actual mu
+values, measured target, moments or saved bound scores. The source is
+the same joined raw branch, including all direct atoms and shared signs.
+Root admission binds every input literally to an accepted069 polynomial.
+No change of inverse construction or separate channel signs is allowed.
+
+Let m0=0,m1=1,x_d=m_d-m_(d-1). For n>=2,
+ G_n(m)=sum_(d|n)x_d.
+Ordinary mu satisfies G_n(M)=0. The complete polynomial is corrected as
+ Q=P+sum lambda_(n,J) [product_(s in J)m_s] G_n(m).
+Multiplier degree is at most degree(P)-1. Shared/repeated variables and
+all constant and cross terms are retained before pricing. No squarefree
+product or coprimality deletion is introduced.
+
+The scientific constraint domain is T=U. The API permits any explicit
+U<=T<=131072, so future operators can pay an expanded arithmetic domain.
+The current runner independently checks T<R on every nonunit original
+row. A larger T cannot inherit that rank property without a new check.
+R1 is a unit base. No uniform Mertens premise is assumed.
+
+Adaptive synthesis
+
+Use three rounds, adding at most16 columns per round, with48 total and
+192 retained scout candidates per round. Keep every admitted round.
+The frozen scout grammar enumerates:
+ - constant multiples of every G_n through T;
+ - every quotient of a current nonzero monomial by one of its distinct
+   variables, multiplying G_n at that variable's index and successor;
+ - current monomials of degree below the cap multiplying G_n at16
+   equally spaced ranks from2 through T (all indices if fewer than16).
+These are general index/monomial rules, not a nominated coefficient answer.
+Successive scout batches depend only on the previous residual and dual.
+
+For each candidate column, rank the exact absolute dual pairing divided
+by its weighted coefficient mass. Break ties by absolute pairing, shorter
+multiplier, lower n and lower indices. Selected columns persist. A dual
+pairing is an obstruction to stationarity; it is not necessarily an
+actual feasible prefix assignment. Do not call it an arithmetic sample.
+Candidate pool clipping is disclosed, with counts. All terms in each
+admitted column and residual are retained; no polynomial support is clipped.
+
+Optimize the UNCONDITIONAL price
+ sum_J |coefficient(Q,J)| product_(s in J)s,
+using |M(s)|<=s. The coefficient box is four times the larger of1 and
+the maximum absolute input numerator. A floating HiGHS LP proposes
+multipliers, with one native thread and2s per call. Round and clip its
+coefficients on grid2^20. Replay the exact full residual afterwards.
+A failed solver retains a valid zero-correction fallback, with the failure
+recorded. Solver success does not establish an exact optimum.
+
+For column matrix A, original integer coefficients p, denominator den,
+box B and dual z with |z_J|<=product(indices J), the robust boxed lower is
+ [z dot p-B sum_columns |z dot A_column|]/den.
+Round and clip z exactly too. The full stationarity-defect penalty is
+mandatory, including columns with zero primal coefficient and monomials
+whose residual cancels. This supplies a genuine lower on the declared
+boxed LP; it does not cover other columns, larger boxes or the whole ideal.
+
+Choose among baseline and rounds by exact unconditional upper, nonzero
+correction count and stable index. A geometry group reuses exactly equal
+input polynomials with equal degree,U and denominator. This cache uses
+ordinary algorithmic dictionary keys, not file or artifact hashes. Every
+parent model remains represented and bound to the original source.
+
+Retain separate conditional prices A0+sum_d A_d*C^d for sigma values
+1/2,3/5,2/3,3/4,1. The API permits any canonical rational sigma in[0,1],
+subject to32 requests and100000 intermediate power bits. Round
+(product of indices)^sigma upward exactly on grid2^20. Include the
+coefficient grid, denominator, constants, repeated powers and every C^d.
+These diagnostics do not influence unconditional selection. Fractional
+prefix premises remain unpaid uniformly; check their finite C1 instances
+only in the evaluator. Prior069 cutoff exponents are all retained.
+
+Countermodels and target encoding
+
+Store the original and corrected values at fake prefixes m1=1,ms=0
+for s>=2. G_n there is1 for odd n and0 for even n, so any used odd
+constraint excludes that assignment. It is not ordinary mu globally.
+At T<=2 the fake agrees with actual mu on the whole queried domain.
+Changing its polynomial value outside the corrected feasible domain is
+legitimate; it does not change the actual source value.
+
+The review proves every complete local ideal is the maximal ideal of
+the actual finite prefix point. Degree<=d-1 multipliers suffice to turn
+any degree-d target into its exact constant. Thus absence of input mu
+values does not prevent target reconstruction by algebra. Mark constant
+representatives and full used divisor scopes. They are valid finite
+bounds and possible bases, not automatically a uniform growth theorem.
+Retain the best nonconstant/incomplete choices separately when available.
+
+The review also proves a stronger fixed-scope obstruction: a finite prime
+set hitting every used divisor index gives a truncated-prime fake that
+satisfies all those relations, regardless of multiplier degree. On the
+reviewed actual source its degree2 response is2k product(1-1/p)^2+O_P(1)
+once its support fits both cuts and the source tail. The unconditional
+prefix envelope admits this fake. For fractional envelopes check the
+required constant; growing scopes require the explicit support/error
+conditions. This is not a lower bound on actual mu or RH.
+
+Positive analytical rule and its boundary
+
+The independent review supplies, rather than the detector discovering,
+a finite reciprocal-moment lemma. Under |M(t)|<=C t^sigma for t<=T,
+0<=sigma<1 and T>=u,
+ |sum_(n<=u)mu(n)/n| <= (u+1)/T
+                +C*(2-sigma)/(1-sigma)*u^(sigma-1).
+Choosing T=ceil(u^(2-sigma)) yields decay O_sigma((1+C)u^(sigma-1)).
+For u~R^theta, theta(2-sigma)<1 is the strict smaller-rank gate, with
+explicit bases and ceiling checks. T generally exceeds U. The current
+T=U numerical certificates do not inherit this conditional lemma.
+
+For joined degree2 kernels K_j(t)=b_j/t+e_j(t), the review pays the
+separable reciprocal product at O_sigma((1+C)^2 N^sigma logN), using
+exact quotient counting and a proved same-source step-mass envelope.
+The signed floor remainder, the short linear terms at arbitrary y,
+the prefix premise and a common induction invariant remain unpaid.
+Preserve this as a supplied future proof rule, with its larger auxiliary
+domain, not as autonomous discovery or a completed RH mechanism.
+
+Independent checking and resources
+
+The checker imports no producer, optimizer, numerical library or old
+checker. It expands every local divisor column independently, verifies
+the entire coefficient identity, dual feasibility/penalty, all prices,
+selection and scope flags. Its final evaluator independently constructs
+ordinary mu and compares input and corrected values. Root then compares
+every one to the saved069 raw coefficient. The learner's API has no
+access to that evaluator result; it is not an operating-system sandbox.
+
+All new synthetic gates and the new integration test must pass before
+freeze. Preserve the checker's initial erroneous fixture expectation
+and correction in its ledger. No failed invocation is erased. The study
+uses three workers, one native thread each,16GiB observed aggregate,
+7200s whole-module deadline and300bn metered work per producer/checker
+geometry group. Prospective producer/checker capacities also apply.
+Record sampled RSS and conservative process high-water sums separately.
+Preserve failures and partial outputs; do not restart a still-live handle.
+
+Completion of this experiment requires full admitted-source coverage,
+exact independent verification, resource/integrity accounting and honest
+comparison with069/068. Completion of the research goal additionally
+requires a verified all-scale signed cost theorem and every remaining
+ordinary-zeta/RH dependency; those remain OPEN here.

@@ -1,0 +1,554 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 3317214932,
+  "bound_argument_allocations": 19,
+  "capacity_development_receipt": {
+    "invocations": [
+      {
+        "elapsed_seconds": 0.3434262659866363,
+        "errors": 0,
+        "failures": 0,
+        "operations": 5168494,
+        "returncode": 0,
+        "tests": 3
+      }
+    ],
+    "schema": "floor-capacity-recovery-tests-v1",
+    "scope": "new dense synthetic support and full certificate/refinement regressions; no actual candidates"
+  },
+  "compiler_counts": {
+    "max_power_bits": 2894,
+    "operations": 57796818
+  },
+  "compiler_drift_counts": {
+    "ceil_comparisons": 192,
+    "max_power_bits": 708,
+    "operations": 99212569,
+    "rational_operations": 133500,
+    "root_cache_hits": 70664,
+    "root_comparisons": 981560,
+    "total_power_bit_estimates": 11713387
+  },
+  "development_receipts": {
+    "check_floor_residual_drift_045_development.json": {
+      "additional_norms_evaluated": false,
+      "edits_stopped": true,
+      "old_suites_run": false,
+      "operations": 731899,
+      "owner": "independent_checker",
+      "review": "Independent signed moments, exponential-convolution numerator identity, exact integer ceiling and dyadic twist replay, all-index scalar remainder bounds, ordinary-Mobius source sign and complete cell-column rate admission; no whole residual norm or convergence inference.",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_check_floor_residual_drift_045"
+          ],
+          "elapsed_seconds": 0.124699866049923,
+          "operations": 731899,
+          "peak_rss_KiB": 28908,
+          "returncode": 0,
+          "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.042s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_drift_045 operations=731899 checker_operations=698665 fixture_operations=33234 elapsed_seconds=0.042064793000463396\n",
+          "tests": 18
+        }
+      ],
+      "source_arrays_read": false,
+      "tests": 18
+    },
+    "floor_residual_drift_045_development.json": {
+      "actual_search_or_selected_application": false,
+      "additional_norms_evaluated": false,
+      "cumulative_operations": 234178,
+      "frozen_files_modified": false,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "ceil_comparisons": 161,
+          "elapsed_seconds": 0.047380754025653005,
+          "errors": 0,
+          "exposure": "synthetic rational rate sets, moments, polynomial identities and coefficient values only",
+          "failures": 0,
+          "max_power_bits": 9258,
+          "operations": 233491,
+          "returncode": 0,
+          "root_comparisons": 756,
+          "tests": 12
+        },
+        {
+          "ceil_comparisons": 12,
+          "elapsed_seconds": 0.0016000429750420153,
+          "errors": 0,
+          "exposure": "synthetic rational rate sets, moments, polynomial identities and coefficient values only",
+          "failures": 0,
+          "max_power_bits": 39,
+          "operations": 687,
+          "returncode": 0,
+          "root_cache_hits": 4,
+          "root_comparisons": 32,
+          "selected_tests": [
+            "test_new_shared_atoms_across_distinct_drift_recipes"
+          ],
+          "tests": 1
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "schema": "floor-drift-development-v1",
+      "source_arrays_read": false
+    },
+    "floor_residual_drift_arguments_045_development_receipt.json": {
+      "elapsed_seconds": 0.029548702004831284,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "metered_proxy_operations": 16673,
+      "module": "test_floor_residual_drift_arguments_045",
+      "scope": "synthetic exact-algebra ASTs/symbols; no mu/zeta values, norms, selected applications or source sweeps",
+      "tests_run": 12
+    },
+    "floor_residual_runner_045_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.08973421098198742,
+          "errors": 0,
+          "failures": 0,
+          "operations": 1612285,
+          "returncode": 0,
+          "tests": 3
+        }
+      ],
+      "schema": "drift-runner-integration-v1",
+      "scope": "synthetic source programs at7,11,13 and symbolic allocations; no final supports or norms"
+    },
+    "floor_residual_search_045_development.json": {
+      "exposure": "synthetic profiles/arithmetic up to15, artificial ranking; no actual saved candidate or new study",
+      "invocations": [
+        {
+          "elapsed_seconds": 0.07512479496654123,
+          "errors": 0,
+          "failures": 0,
+          "operations": 303985,
+          "returncode": 0,
+          "tests": 7
+        },
+        {
+          "elapsed_seconds": 0.004180645977612585,
+          "errors": 0,
+          "failures": 0,
+          "operations": 7068,
+          "returncode": 0,
+          "scope": "only new cache/released-certificate regression; no old tests repeated",
+          "tests": 1
+        }
+      ],
+      "schema": "drift-search-integration-v1"
+    }
+  },
+  "distinct_new_training_vectors": 12580,
+  "exact_vector_price_cache_hits": 41786,
+  "families": 1499,
+  "final_bound_status_counts": {
+    "refuted_at_this_support": 1,
+    "unresolved_interval": 0,
+    "verified_at_this_support": 11
+  },
+  "final_cases": 12,
+  "finite_argument_operations": 42377473,
+  "gated_rules": 14990,
+  "generation_counts": {
+    "ceil_comparisons": 0,
+    "max_power_bits": 0,
+    "operations": 120726,
+    "rational_operations": 26724,
+    "root_cache_hits": 0,
+    "root_comparisons": 0,
+    "total_power_bit_estimates": 0
+  },
+  "global_argument_operations": 102182,
+  "global_argument_supported_rules": 3,
+  "global_bound_proved": false,
+  "initial_aborted_compilation_operations": "not captured before failure; excluded from reported proxy totals",
+  "initial_attempt_elapsed_seconds": 227.50620561401593,
+  "largest_individual_worker_rss_kib": 1415680,
+  "legacy_training_rows_reused": 5810,
+  "maximum_support": 2247,
+  "new_families": 918,
+  "new_frozen_file_count": 5,
+  "norm_checker_operations": 31480643873,
+  "norm_producer_operations": 6877054145,
+  "old_training_norms_recomputed": 0,
+  "parent_peak_rss_kib": 800352,
+  "prior_frozen_file_counts": [
+    18,
+    17,
+    19
+  ],
+  "proof_gate_operations": {
+    "checker_operations": 97547311,
+    "cutoff_operations": 153780,
+    "cutoff_replay_operations": 6880,
+    "drift_certificate_operations": 76798,
+    "producer_operations": 24654737
+  },
+  "recovery_elapsed_seconds": 523.5589058009791,
+  "refuted_rules_before_scores": 60,
+  "rejected_bound_pairs_before_scores": 21080,
+  "search_counts": {
+    "max_power_bits": 272,
+    "operations": 53204249836
+  },
+  "search_drift_counts": {
+    "ceil_comparisons": 7677,
+    "max_power_bits": 636,
+    "operations": 103953967,
+    "rational_operations": 1339668,
+    "root_cache_hits": 958491,
+    "root_comparisons": 532812,
+    "total_power_bit_estimates": 4178021
+  },
+  "search_rerun": false,
+  "selected_rules": [
+    {
+      "audit_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "-1",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "1"
+            }
+          ],
+          "theta": "4/7"
+        },
+        "id": "baseline_drift_0727"
+      },
+      "conditional_gate": {
+        "A": "1/4",
+        "RH_proved": false,
+        "b": "-1",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "3/4",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "3/4",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/2",
+        "verified": true,
+        "young_parameter": "1/2",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "family": "drift_0727",
+      "finite_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "id": "rule_01",
+      "proof_gates_passed_as_necessary_conditions_only": true,
+      "q": 2,
+      "recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "4"
+            },
+            {
+              "rate": "2",
+              "weight": "-6"
+            },
+            {
+              "rate": "3",
+              "weight": "4"
+            },
+            {
+              "rate": "4",
+              "weight": "-1"
+            }
+          ],
+          "theta": "4/7"
+        },
+        "id": "drift_0727"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "signed_drift"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "-1",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "1"
+            }
+          ],
+          "theta": "3/5"
+        },
+        "id": "baseline_drift_0754"
+      },
+      "conditional_gate": {
+        "A": "1/4",
+        "RH_proved": false,
+        "b": "-1",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "3/4",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "3/4",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/2",
+        "verified": true,
+        "young_parameter": "1/2",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "family": "drift_0754",
+      "finite_log_bound": {
+        "A": "1/4",
+        "eta": "1"
+      },
+      "id": "rule_02",
+      "proof_gates_passed_as_necessary_conditions_only": true,
+      "q": 2,
+      "recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "4"
+            },
+            {
+              "rate": "2",
+              "weight": "-6"
+            },
+            {
+              "rate": "3",
+              "weight": "4"
+            },
+            {
+              "rate": "4",
+              "weight": "-1"
+            }
+          ],
+          "theta": "3/5"
+        },
+        "id": "drift_0754"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "second_drift_family"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "-1",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "kind": "vanishing_twist",
+          "level_power": 1,
+          "rate": "1/5"
+        },
+        "id": "baseline_compatible_0531"
+      },
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "-1",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "2",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 3,
+        "rho": "2/3",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/3",
+        "verified": true,
+        "young_parameter": "1",
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "family": "compatible_0531",
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_03",
+      "proof_gates_passed_as_necessary_conditions_only": true,
+      "q": 3,
+      "recipe": {
+        "auxiliary": {
+          "channel": "mu_convolution_mu",
+          "coefficient": "1/2",
+          "envelope": {
+            "kind": "power_amplitude",
+            "power": "1/7",
+            "weight": {
+              "kind": "unit"
+            }
+          }
+        },
+        "base": {
+          "kind": "vanishing_twist",
+          "level_power": 1,
+          "rate": "1/5"
+        },
+        "id": "compatible_0531"
+      },
+      "refinement_signed_needed_training": 3,
+      "stratum": "legacy_control"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "auxiliary_signed_needed_training": 3,
+      "b": "0",
+      "baseline_recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1/3",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "1"
+            }
+          ],
+          "theta": "5/6"
+        },
+        "id": "baseline_drift_0424"
+      },
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "0",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": true,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "1",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "0",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "0",
+        "verified": true,
+        "young_parameter": null,
+        "zero_forcing_excluded_for_linear_support": false
+      },
+      "family": "drift_0424",
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_04",
+      "proof_gates_passed_as_necessary_conditions_only": true,
+      "q": 2,
+      "recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1/3",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "8/3"
+            },
+            {
+              "rate": "2",
+              "weight": "-2"
+            },
+            {
+              "rate": "4",
+              "weight": "1/3"
+            }
+          ],
+          "theta": "5/6"
+        },
+        "id": "drift_0424"
+      },
+      "refinement_signed_needed_training": 0,
+      "stratum": "endpoint_restatement_control"
+    }
+  ],
+  "signed_mechanism_counts": {
+    "auxiliary": {
+      "bound_not_verified_here": 1,
+      "signed_cross_needed_even_against_diagonal": 11
+    },
+    "refinement": {
+      "bound_not_verified_here": 1,
+      "bound_survives_absolute_cross_replacement": 6,
+      "endpoint_restatement": 3,
+      "signed_cross_needed_even_against_diagonal": 2
+    }
+  },
+  "signed_profile_count": 306,
+  "source_replay_operations": 5472941519,
+  "status": "MOVING_SIGNED_PROFILES_AUDITED_JOINT_BOUND_OPEN",
+  "training_matches": 14151,
+  "whole_domain_certificates": 54
+}

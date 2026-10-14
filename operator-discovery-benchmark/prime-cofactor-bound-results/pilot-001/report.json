@@ -1,0 +1,207 @@
+{
+  "RH_proved": false,
+  "actual_scales": [
+    256,
+    1024,
+    4096,
+    16384,
+    65536
+  ],
+  "branch": "direct complete original f; stage033 residual and all144 bindings unchanged",
+  "capability_is_not_RH_success_probability": true,
+  "checker_operations": 5758,
+  "core_rough_frontier": {
+    "all_integer_blocks": true,
+    "coefficient_ceiling": "29/2",
+    "coefficient_floor": "1",
+    "energy_lower_exponent": "1/3",
+    "energy_upper_exponent": "1/3",
+    "lead_degree": 2,
+    "prime_polynomial": [
+      [
+        2,
+        "0",
+        "-1"
+      ],
+      [
+        4,
+        "9/2",
+        "1"
+      ]
+    ],
+    "q_threshold": "1/19",
+    "r": "1/3",
+    "refutes_separate_subpower_payment": true,
+    "remainder_ceiling": "19/2",
+    "scope": "raw_rough_prefix_shared_cutoff_ceil_sqrt_2X",
+    "sign": -1,
+    "state": 0,
+    "status": "two_sided_power_bound",
+    "unit_ceiling": "19/2",
+    "upper_constant": "2809",
+    "upper_log_power": 0,
+    "whole_signed_bound_proved": false
+  },
+  "current_joint_Z033_isolated": false,
+  "development_receipts": {
+    "check_prime_cofactor_discovery_development.json": {
+      "actual_core_discovery_runs": 0,
+      "analytic_constant_binding_verified_independently": true,
+      "checker_imports_producer": false,
+      "corrections": [
+        "Producer explicitly cast the frontier flag to Python bool (owned by root).",
+        "Checker atom cap aligned to finalized1..8 grammar.",
+        "Two synthetic delta fixtures use cancelling mu0*power0; only affected tests rerun."
+      ],
+      "distinct_tests": 19,
+      "edits_stopped": true,
+      "initial_failures": {
+        "cause": "three producer SymPy BooleanTrue flags failed strict boolean replay; one fixture used empty atoms outside finalized1..8 grammar",
+        "errors": 4,
+        "passed": 15
+      },
+      "limits": {
+        "address_space_bytes": 1073741824,
+        "cpu_seconds": 180,
+        "operations": 50000000,
+        "wrapper_seconds": 190
+      },
+      "old_suites_run": 0,
+      "operations": 100010,
+      "owner": "check_prime_cofactor_discovery",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_prime_cofactor_discovery"
+          ],
+          "elapsed_seconds": 0.56947486998979,
+          "operations": 71915,
+          "peak_rss_KiB": 63764,
+          "returncode": 1,
+          "stderr": "test_critical_harmonic_and_summable_upper_costs (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_denominator_and_polynomial_canonical_guards (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_frontier_coverage_boolean_types_and_scope_fail_closed (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_frontier_replay_api_requires_all_state_bounds (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_frontier_sign_lead_tail_and_head_constants_are_checked (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ERROR\ntest_generic_jet_programs_and_exact_recovery (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ERROR\ntest_hand_certificate_complete_tail_and_rough_bound (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_independent_fixed_constant_enclosure_and_precision_restore (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_joined_form_lower_premise_is_independently_source_bound (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_joined_forms_do_not_refute_multiscale_grammar_or_pay_target (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_joined_storage_all_candidates_and_singular_survivors (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_joined_storage_coverage_and_classification_mutations (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_observed_finite_valuation_alias_cannot_replace_infinite_transfer (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_prime_coprime_and_all_valuation_domains_are_mandatory (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_proper_invariant_module_is_not_forced_to_full_channel_rank (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ERROR\ntest_source_binding_guards_signed_weights_and_atom_semantics (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_unit_and_target_recovery_cannot_be_dropped (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_unknown_leading_sign_keeps_its_degree_and_only_upper_bound (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_zero_prime_polynomial_retains_constant_unit_energy (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ERROR\n\n======================================================================\nERROR: test_frontier_sign_lead_tail_and_head_constants_are_checked (test_check_prime_cofactor_discovery.PrimeCofactorTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_cofactor_discovery.py\", line 166, in test_frontier_sign_lead_tail_and_head_constants_are_checked\n    C.verify(src, cert, METER)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 393, in verify\n    bounds = _frontiers(atoms, weights, rows, certificate['frontier_bounds'], meter)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 343, in _frontiers\n    _require(_same(bounds, expected), 'all source-bound frontier coefficients, signs, constants, powers and scopes')\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 23, in _require\n    raise ValueError(message)\nValueError: all source-bound frontier coefficients, signs, constants, powers and scopes\n\n======================================================================\nERROR: test_generic_jet_programs_and_exact_recovery (test_check_prime_cofactor_discovery.PrimeCofactorTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_cofactor_discovery.py\", line 89, in test_generic_jet_programs_and_exact_recovery\n    answer = C.verify(src, cert, METER)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 393, in verify\n    bounds = _frontiers(atoms, weights, rows, certificate['frontier_bounds'], meter)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 343, in _frontiers\n    _require(_same(bounds, expected), 'all source-bound frontier coefficients, signs, constants, powers and scopes')\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 23, in _require\n    raise ValueError(message)\nValueError: all source-bound frontier coefficients, signs, constants, powers and scopes\n\n======================================================================\nERROR: test_proper_invariant_module_is_not_forced_to_full_channel_rank (test_check_prime_cofactor_discovery.PrimeCofactorTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_cofactor_discovery.py\", line 104, in test_proper_invariant_module_is_not_forced_to_full_channel_rank\n    answer = C.verify(src, cert, METER)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 393, in verify\n    bounds = _frontiers(atoms, weights, rows, certificate['frontier_bounds'], meter)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 343, in _frontiers\n    _require(_same(bounds, expected), 'all source-bound frontier coefficients, signs, constants, powers and scopes')\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_prime_cofactor_discovery.py\", line 23, in _require\n    raise ValueError(message)\nValueError: all source-bound frontier coefficients, signs, constants, powers and scopes\n\n======================================================================\nERROR: test_zero_prime_polynomial_retains_constant_unit_energy (test_check_prime_cofactor_discovery.PrimeCofactorTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_cofactor_discovery.py\", line 195, in test_zero_prime_polynomial_retains_constant_unit_energy\n    cert = generated(src)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_prime_cofactor_discovery.py\", line 24, in generated\n    result = P.discover(src)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/prime_cofactor_discovery.py\", line 176, in discover\n    local, weights = compile_source(source)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/prime_cofactor_discovery.py\", line 55, in compile_source\n    raise ValueError('one to eight source atoms per channel')\nValueError: one to eight source atoms per channel\n\n----------------------------------------------------------------------\nRan 19 tests in 0.219s\n\nFAILED (errors=4)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_prime_cofactor_discovery operations=71915 elapsed_seconds=0.219658\n",
+          "tests": 19,
+          "work_accounting": "checker and generic-fixture charged operations"
+        },
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_prime_cofactor_discovery.PrimeCofactorTests.test_frontier_sign_lead_tail_and_head_constants_are_checked",
+            "test_check_prime_cofactor_discovery.PrimeCofactorTests.test_generic_jet_programs_and_exact_recovery",
+            "test_check_prime_cofactor_discovery.PrimeCofactorTests.test_proper_invariant_module_is_not_forced_to_full_channel_rank",
+            "test_check_prime_cofactor_discovery.PrimeCofactorTests.test_zero_prime_polynomial_retains_constant_unit_energy",
+            "test_check_prime_cofactor_discovery.PrimeCofactorTests.test_joined_form_lower_premise_is_independently_source_bound"
+          ],
+          "elapsed_seconds": 0.47641968895914033,
+          "operations": 28095,
+          "peak_rss_KiB": 63512,
+          "returncode": 0,
+          "scope": "four failed tests plus source-premise test affected by delta-fixture and atom-cap alignment",
+          "stderr": "test_frontier_sign_lead_tail_and_head_constants_are_checked (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_generic_jet_programs_and_exact_recovery (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_proper_invariant_module_is_not_forced_to_full_channel_rank (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_zero_prime_polynomial_retains_constant_unit_energy (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\ntest_joined_form_lower_premise_is_independently_source_bound (test_check_prime_cofactor_discovery.PrimeCofactorTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.141s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_prime_cofactor_discovery operations=28095 elapsed_seconds=0.141946\n",
+          "tests": 5,
+          "work_accounting": "checker and generic-fixture charged operations"
+        }
+      ],
+      "source_observations": 0,
+      "test_count": 19,
+      "test_invocations": 24
+    },
+    "prime_cofactor_discovery_development.json": {
+      "actual_core_discovery_run_before_freeze": false,
+      "command": "../.venv/bin/python -B -m unittest -v test_prime_cofactor_discovery",
+      "errors": 0,
+      "failures": 0,
+      "hashes_created": false,
+      "integration_correction": {
+        "affected_test_command": "../.venv/bin/python -B -m unittest -v test_prime_cofactor_discovery.Discovery.test_frontier_leading_sign_and_fractional_exponent",
+        "change": "Explicit bool conversion for the frontier rejection flag.",
+        "errors": 0,
+        "failures": 0,
+        "finding": "Independent checker identified a SymPy boolean that must be a native JSON boolean.",
+        "tests_run": 1,
+        "unittest_elapsed_seconds": 0.03,
+        "unrelated_tests_rerun": false
+      },
+      "module": "prime_cofactor_discovery.py",
+      "old_studies_or_suites_rerun": false,
+      "synthetic_sources_only": true,
+      "tests_run": 6,
+      "unittest_elapsed_seconds": 0.125
+    },
+    "prime_cofactor_observations_development.json": {
+      "module": "test_prime_cofactor_observations",
+      "operations": 37734,
+      "runs": [
+        {
+          "elapsed_seconds": 0.049441403010860085,
+          "errors": 0,
+          "failures": 0,
+          "operations": 37734,
+          "peak_cells": 10624,
+          "production_archive_read": false,
+          "returncode": 0,
+          "tests": 6,
+          "tiny_actual_source_fixture_runs": [
+            {
+              "H": 15,
+              "archive_read": false,
+              "indices": [
+                1,
+                15
+              ],
+              "source": "tiny_actual_four_channel_core"
+            },
+            {
+              "H": 15,
+              "archive_read": false,
+              "indices": [
+                1,
+                15
+              ],
+              "source": "tiny_actual_four_channel_core"
+            },
+            {
+              "H": 31,
+              "archive_read": false,
+              "indices": [
+                1,
+                31
+              ],
+              "source": "tiny_actual_four_channel_core"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 14.405550969997421,
+  "exact_auxiliary_bound_count": 4,
+  "generated_state_count": 4,
+  "joined_storage_candidates": 275,
+  "joined_storage_counts": {
+    "endpoint_restatement": 4,
+    "refuted_by_rough_lower_bound": 55,
+    "target_not_dominated": 216
+  },
+  "new_full_core_bound_payments": 0,
+  "observation_operations": 34931518,
+  "observations_file": "arithmetic_observations.json",
+  "peak_rss_kib": 704032,
+  "reused_arithmetic_data": true,
+  "search_operations": 13086,
+  "source_archive_horizon": 262143,
+  "source_index_horizon": 131071,
+  "status": "PRIME_STATES_AND_AUXILIARY_BOUNDS_VERIFIED_JOINED_BOUND_OPEN",
+  "universal_all_prime_all_valuation_closure": true,
+  "whole_signed_bound_proved": false
+}

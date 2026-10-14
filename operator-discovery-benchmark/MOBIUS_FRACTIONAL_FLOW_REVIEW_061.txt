@@ -1,0 +1,312 @@
+MOBIUS FRACTIONAL FLOW REVIEW 061
+================================
+Scope
+-----
+This is a source-only mathematical review of transport BEFORE the t
+integral. The060 handoff was read;060 and all earlier files remain
+unchanged. No scientific arrays, costs, integrals, signatures, nullspaces,
+tests or scores were evaluated. The formulas below are exact on the stated
+domains. They establish uniform component bounds and an unconditional
+logarithmic gain, not a uniform RH-strength estimate of the remaining core.
+
+Fix distinct primes p<q in the fixed registered set M, R=product(M),
+k=|M|>=2, alpha in(0,1), gamma>0, tau in(0,1). All parameters remain
+fixed as N varies. Let eps=min(tau,N^-gamma),
+
+ W(x)=floor(4x)-3floor(2x)+2floor(x),
+ mu_M(d)=mu(d)*1_(gcd(d,R)=1),
+ G_M(t)=product_(ell in M)(1-ell^-t), c_alpha=1/Gamma(1-alpha).
+
+The complete joined middle is
+
+ J(N)=c_alpha integral_eps^tau G_M(t)t^(-alpha-1)
+       sum_d mu_M(d)[p^-t W(N/(pd))-q^-t W(N/(qd))]d^-t dt. (1)
+
+The actual ordinary Mobius source, all outside prime factors, cofactor
+d=1, both floor signs and the q-range exit are retained. All floors are
+right-continuous and inclusive. The source horizon is D=floor(4N/p).
+If D=0 there are no terms. Missing squareful terms are exact mu zeros;
+they are not discarded complements. Empty integration band gives J=0.
+
+1. Fractional conservation and exact optimal transport at fixed t
+----------------------------------------------------------------
+At each t>0 the positive profile capacities are
+
+ h(t)=(p^-t,q^-t,p^-t-q^-t,p^-t+q^-t).
+
+For each source token take actual sign epsilon_d=mu(d)*kernel_sigma and
+capacity h_profile(d)(t), with COMMON carrier a_d(t)=d^-t. This retains
+the pointwise signed source in(1): in every P,Q,D,S case,
+
+ kernel_sigma*h_profile(t)
+       =p^-t W(N/(pd))-q^-t W(N/(qd)).                    (2)
+
+In particular h(t) is a positive element of the060 conservation space,
+but the statement follows directly from the four profile cases; it does
+not require trusting a numerical nullspace or a supplied copy winner.
+For every t>0 all capacities are positive, even for D. At t=0 the D
+capacity vanishes; that endpoint is not a licensed positive-capacity
+token and causes no error in the integrable limiting estimates below.
+
+Define for real y>=1 the actual signed prefix masses
+
+ A_N(y)=sum_(d<=y)mu_M(d)W(N/(pd)),
+ B_N(y)=sum_(d<=y)mu_M(d)W(N/(qd)),
+ S_N(y,t)=p^-t A_N(y)-q^-t B_N(y).                        (3)
+
+After D the prefix is constant, since the joined source vanishes.
+Zero-capacity locations may be inserted into the ordered carrier grid.
+Then the exact optimal fractional transport cost, permitting fractional
+splits and a zero-carrier dummy to absorb the final excess mass, is
+
+ V_t(N)=sum_(j=1)^(D-1)|S_N(j,t)|[j^-t-(j+1)^-t]
+                       +D^-t|S_N(D,t)|.                 (4)
+
+When D=1 only the terminal term remains. D=0 returns zero, rather than
+evaluate a fictitious negative or zero carrier. Equivalently, for D>=1,
+
+ V_t(N)=t integral_1^D |S_N(y,t)|y^(-t-1)dy
+                         +D^-t|S_N(D,t)|.               (5)
+
+Proof of optimality: scan d ascending, so carriers descend. The waiting
+stock always has one sign. For an opposite incoming mass, cancel the
+smaller capacity, price that capacity times the carrier distance, and
+retain any excess. At each carrier cut the net signed capacity that must
+cross is S_N(j,t), so every legal flow has cost at least the corresponding
+absolute flux in(4). The one-sign-stock algorithm has no oppositely
+directed excess flux, and attains this lower bound. The dummy capacity
+is exactly the absolute final signed mass and its carrier is zero. Stack
+or FIFO choices within the stock give the same optimal total cost in
+this common-carrier ordering.
+
+This is unequal-mass one-dimensional transport, not integer-copy
+matching with an unpriced fractional residual. Without the terminal
+charge the theorem is false whenever the total signed capacity is not
+zero. For the same reason, the full source must not be truncated before
+the unequal q exit or the cofactor unit is counted.
+
+2. t-dependent flows, integration and the paid total mass
+---------------------------------------------------------
+The plan may change with t. This is mathematically harmless: (4) is a
+finite sum of continuous absolute values of analytic functions of t,
+and is measurable. Each prefix is p^-t A-q^-t B with exact integer A,B.
+Unless A=B=0, it has at most one zero for t>0; a possible crossing solves
+(q/p)^t=B/A with a positive ratio. Thus no arbitrary or nonmeasurable
+selection is needed. Direct evaluation of(4) also avoids committing to
+a finite list of plans valid simultaneously for all t.
+
+The pointwise signed carrier sum has absolute value <=V_t by signed
+Abel summation, or by the transport triangle. Finite summation and the
+nonnegative integral therefore give the SAME target bound
+
+ |J(N)|<=B_flow(N):=c_alpha integral_eps^tau
+                               G_M(t)t^(-alpha-1)V_t(N)dt. (6)
+
+This is a stronger auxiliary than the absolute joined integral: it loses
+cancellation in t and across differently directed prefix fluxes. Fractional
+capacities remove integer-copy restrictions, but there is no automatic
+uniform dominance over060's costs, which take some absolute values after
+integration. No finite observation is used to compare them.
+
+Let Psi_M(Y) count M-smooth positive integers <=Y, including1, and be
+zero for Y<1. The complete elementary convolution mu_M*One gives
+
+ A_N(D)=Psi_M(4N/p)-3Psi_M(2N/p)+2Psi_M(N/p),
+ B_N(D)=Psi_M(4N/q)-3Psi_M(2N/q)+2Psi_M(N/q).               (7)
+
+Every individual floor convolution is evaluated to its full horizon,
+or the outside-source cancellation is proved before splitting it. The
+partial prefixes in(3) do NOT equal the expressions in(7).
+For N>=2 let L_N=1+log_2(4N). Elementary exponent counting gives
+Psi_M(Y)<=L_N^k for the arguments in(7), so
+
+ |S_N(D,t)|<=12L_N^k.                                    (8)
+
+One integration by parts gives
+Gamma(1-alpha)=integral_0^infinity e^-u u^-alpha du
+             >=1-e^-1>1/2.
+Consequently c_alpha<2 and in particular c_alpha<=3. Also
+G_M(t)<=R t^k. Hence
+
+ c_alpha integral_eps^tau G_M(t)t^(-alpha-1)
+                           |S_N(D,t)|dt
+ <=36R/(k-alpha)*L_N^k.                                  (9)
+
+This bounds the terminal charge in(4). It also bounds the ENTIRE actual
+greedy leftover cost: the leftover fractional capacity is |S_N(D,t)|,
+each original carrier is <=1, and its zero-dummy charge is at most that
+mass. The terminal term alone is not the entire leftover cost. Portions
+of earlier leftover-to-zero paths also appear in the prefix terms of(4).
+Conflating those two decompositions would falsely pay part of the core.
+
+3. Paid short-cofactor head for general rational orders
+------------------------------------------------------
+For every y>=1 and t>0,
+
+ |S_N(y,t)|<=sum_(d<=y)h_profile(d)(t)<=2floor(y)<=2y.      (10)
+
+Choose any fixed rational theta in[0,1/2], with no special denominator
+restriction, and put Y=N^theta, a=min(Y,D). For D>=1 the head in(5) is
+
+ H_head=c_alpha integral_eps^tau G_M(t)t^(-alpha)
+                              integral_1^a |S_N(y,t)|y^(-t-1)dy dt.
+
+Since y^-t<=1 on[1,Y], (10) yields
+
+ H_head<=6R/(k+1-alpha)*N^theta.                          (11)
+
+This is a genuine unconditional square-root-or-smaller component bound,
+valid for every integer N>=2. It does not use complete convolution at a
+partial endpoint, a Mertens assumption, or finite data. At theta=0 the
+exact head is zero; the displayed positive bound is merely coarse.
+
+There is an optional sharper logarithmic head estimate. For a<=Y,
+0<t<=tau<1, the same proof gives
+H_head<=[6R/(1-tau)]Y*Gamma(k+1-alpha)/(log Y)^(k+1-alpha)
+when Y>=2. The Gamma factor is <=(k-1)!+k!, by splitting its elementary
+integral at1 and dominating the power by the adjacent integer powers.
+Small Y uses(11). This refinement is not needed to admit the head rule.
+
+4. Paid integer exit strip, with the floor correction retained
+--------------------------------------------------------------
+For D>=2 choose any fixed rational rho in[0,3/4] and let
+
+ K=min(floor(D/2),floor(N^rho)), b=max(a,D-K).
+
+Here K>=1, b>=D/2>=1. Decompose(5) into the exact head[1,a], core[a,b]
+and exit[b,D], followed by its terminal term. For y<=D,
+
+ |S_N(y,t)|<=|S_N(D,t)|+2(D-floor y).                    (12)
+
+The integer floor in(12) is essential: replacing it by D-y is false
+inside the last cofactor cell. The exact exit plus terminal is bounded by
+
+ |S_N(D,t)|b^-t
+       +t integral_b^D 2(D-floor y)y^(-t-1)dy.            (13)
+
+Thus ONE smooth-count bound(9) covers both its conservation term and
+the terminal. For the remaining strip, enlarging to[D-K,D] and using
+y^(-t-1)<=2/D gives
+
+ strip<=2t*K(K+1)/D<=4t*K^2/D,
+
+because integral_(D-K)^D(D-floor y)dy=K(K+1)/2. Therefore
+
+ H_exit,forcing<=12R/(k+1-alpha)*K^2/D
+                <=6pR/(k+1-alpha)*N^(2rho-1).             (14)
+
+The second step uses D=floor(4N/p)>=2N/p when D>=2. All fixed rational
+rho<=3/4 give a square-root-or-smaller forcing. The domain includes
+rho=0; no zero-width division or exception is needed. If a>D-K, the
+actual exit is narrower and the same upper bound holds. D=1 has only
+the already-paid terminal term. D=0 is empty. Thus the rule covers the
+small source horizons without a missing base range.
+
+This exit rule corrects the naive real-width estimate that omitted the
+one-cofactor floor jump. No uncorrected D-y estimate is used here.
+
+5. Exact reduced core and an unconditional logarithmic gain
+-----------------------------------------------------------
+Define the joined remaining core by
+
+ C_core(N)=c_alpha integral_eps^tau G_M(t)t^(-alpha)
+             integral_a^b |p^-t A_N(y)-q^-t B_N(y)|y^(-t-1)dy dt. (15)
+
+For D>=2, (9),(11),(14) prove the explicit all-integer recovery
+
+ |J(N)|<=B_flow(N)
+ <=C_core(N)+6R/(k+1-alpha)*N^theta
+              +6pR/(k+1-alpha)*N^(2rho-1)
+              +36R/(k-alpha)*L_N^k.                     (16)
+
+For D=0/1 omit empty head/core/exit pieces and retain the applicable
+terminal bound. In particular theta=1/2 and rho=3/4 leave only an
+interior joint prefix-variation leaf unpaid. These endpoint choices can
+be derived by searching the exact power inequalities theta<=1/2 and
+2rho-1<=1/2; they need not be supplied as favorite scientific formulas.
+
+There is also a useful unconditional baseline, proving more than an
+absolute-source restatement. For D>=2 use(10) on the ENTIRE prefix
+interval, then complete smooth-count control only at its end. One gets
+
+ B_flow(N)<=[6R*Gamma(k+1-alpha)/(1-tau)]
+                *D/(log D)^(k+1-alpha)
+                +36R/(k-alpha)*L_N^k.                   (17)
+
+Extending the positive t integral to(0,infinity) proves the first term.
+It is finite because k+1-alpha>0. If desired replace Gamma by the
+adjacent-factorial bound above, and log D by log(2D) using the explicit
+factor2^(k+1-alpha)<=2^(k+1). Equation(17) supplies an all-scale
+logarithmic improvement: the carrier variation contributes one extra
+small-t factor, while its nonvarying terminal mass is paid by conservation.
+It retains power1, so it is NOT an RH-strength estimate. At the scientific
+k=3,alpha=1/5, its denominator power is19/5. No asymptotic score or source
+observation was used in this theorem.
+
+6. Constructive arithmetic frontier and limits of recovery
+----------------------------------------------------------
+The remaining (15) preserves both source channels inside each absolute
+value. Separating A and B with triangle discards this possible signed
+control. An exact decomposition is
+
+ S_N(y,t)=p^-t[A_N(y)-B_N(y)]
+                       +(p^-t-q^-t)B_N(y),
+ 0<p^-t-q^-t<=t log(q/p).                                (18)
+
+The second channel has an extra small-t factor. This is a paid coefficient
+gain, not an estimate of its actual partial sum. The first channel is a
+joint prime-scaled floor difference, not a complete smooth count.
+
+Another concrete compiler route exposes the missing boundary divisor
+correlations. Define M_M(z)=sum_(d<=z)mu_M(d), zero below1, and
+
+ T(Z;y)=sum_(y<d<=Z)mu_M(d)floor(Z/d)
+       =sum_(m<=floor(Z/y))[M_M(Z/m)-M_M(y)], y>=1.        (19)
+
+Each summand is zero if its upper endpoint equals y, so the inclusive
+floor convention is harmless at equality. Finite hyperbola interchange
+proves(19) exactly; it assumes no estimate of M_M. Put
+
+ Q_p(y)=T(4N/p;y)-3T(2N/p;y)+2T(N/p;y),
+ Q_q(y)=T(4N/q;y)-3T(2N/q;y)+2T(N/q;y).
+
+Then the exact signed prefix transport identity is
+
+ S_N(y,t)=S_N(D,t)-[p^-t Q_p(y)-q^-t Q_q(y)].              (20)
+
+It retains ALL cutoff entries, unit terms and different p/q ranges.
+For y>=sqrt N its hyperbola sum uses only O(sqrt N) small cofactor
+indices m, but the interval endpoints M_M(Z/m) can remain at the
+current source horizon. Thus this is not a free smaller-scale recurrence.
+A proof must pay the joint reciprocal-interval forcing, including its
+largest endpoints and every subtraction of M_M(y). Assuming square-root
+Mertens bounds on the companion simply imports the missing arithmetic.
+
+Equations(18)-(20) give a detector source-bound grammar distinct from
+renaming the middle integral: exact joint prefix/tail transforms, a paid
+small-t channel factor, finite reciprocal interval correlations, and
+explicit cofactor head/exit power rules. A uniform estimate of the
+remaining joined weighted correlations is still a conjectural leaf.
+It cannot be supplied by the complete smooth-count identity or by
+calibration on saved source arrays.
+
+There is no algebraic recovery of all variation from total mass alone.
+Even two generic opposite fractional masses of the same size at distinct
+carriers have zero total mass but positive optimal transport cost.
+Scaling their capacities preserves the zero endpoint while increasing
+variation arbitrarily. This is a scope-limited counterexample to a free
+conservation-to-core rule, not a replacement source or a disproof for
+actual Mobius. No obstruction to every actual-Mobius fractional-flow
+square-root bound was established here.
+
+General gamma>0 and tau<1 suffice for all flow, conservation and component
+rules above. To recover the FULL058 RH-sensitive source also require
+gamma*(k-alpha)>=1/2 and tau>=1/2, or separately paid endpoints. Finite
+flow checks or the unconditional logarithmic bound do not meet that
+missing middle premise. Source-free controls replacing mu by |mu| are
+different convolutions and cannot inherit(7).
+
+Disposition: review complete; edits stopped. Optimal fractional flow,
+polylog terminal/leftover control, square-root head/exit control and the
+logarithmic baseline are proved on their stated domains. The remaining
+joined core variation, full RH-strength estimate and RH remain OPEN.

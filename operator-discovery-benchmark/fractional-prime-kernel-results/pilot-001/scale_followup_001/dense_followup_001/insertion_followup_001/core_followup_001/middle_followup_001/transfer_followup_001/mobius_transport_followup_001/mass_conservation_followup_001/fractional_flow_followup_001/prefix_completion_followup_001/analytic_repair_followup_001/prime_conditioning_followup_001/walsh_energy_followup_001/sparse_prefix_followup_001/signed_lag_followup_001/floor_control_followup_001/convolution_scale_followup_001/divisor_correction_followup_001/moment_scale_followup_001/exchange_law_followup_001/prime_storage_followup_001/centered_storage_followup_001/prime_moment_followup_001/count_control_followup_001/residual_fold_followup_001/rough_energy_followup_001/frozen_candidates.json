@@ -1,0 +1,2649 @@
+{
+  "candidates": [
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "84306185259/1099511627776",
+        "discovery_score": "84306185259/549755813888",
+        "observed_base_upper": "36/5041",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "84306185259/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "73455698531/1099511627776",
+        "discovery_score": "73455698531/549755813888",
+        "observed_base_upper": "115498856327524991/3682872651740610560",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "73455698531/84306185259",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q1_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "73455698531/1099511627776",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "4890071/262144"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "614623/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "188965073/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "61211333385/1099511627776",
+        "discovery_score": "61211333385/274877906944",
+        "observed_base_upper": "36/5041",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "61211333385/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "46672844451/1099511627776",
+        "discovery_score": "46672844451/274877906944",
+        "observed_base_upper": "2175852691558468079/12814600418780774400",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "15557614817/20403777795",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q1_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "46672844451/1099511627776",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "8117035/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "983007175/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "11101657/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "4776373/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_5_9.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "48307969347/1099511627776",
+        "discovery_score": "283102892078163/5542638115618816",
+        "observed_base_upper": "36/5041",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "48307969347/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "9201862671/274877906944",
+        "discovery_score": "232046787680750513815107/5475191255830439489699840",
+        "observed_base_upper": "371996247060294801/41772394224780574720",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "309395716907667351753476/372877186368164414206285",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q1_tau1",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "9201862671/274877906944",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "1606895/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "869017/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "eta": "2/3",
+            "lambda": "1068658859/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "38463171735/549755813888",
+        "discovery_score": "38463171735/274877906944",
+        "observed_base_upper": "603979776/90398766613",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "38463171735/549755813888",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "67224012823/1099511627776",
+        "discovery_score": "67224012823/549755813888",
+        "observed_base_upper": "114011696060144781/3936999625020370477",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "67224012823/76926343470",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q129_128_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "67224012823/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "154297897/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "582061/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "11882649/1048576"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "56144224713/1099511627776",
+        "discovery_score": "56144224713/274877906944",
+        "observed_base_upper": "603979776/90398766613",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "56144224713/1099511627776",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "42649721729/1099511627776",
+        "discovery_score": "42649721729/274877906944",
+        "observed_base_upper": "2125429881922021081/13698419461613786715",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "42649721729/56144224713",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q129_128_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "42649721729/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "990203/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "246582623/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "10504917/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "2341877/4194304"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_5_9.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "22101869265/549755813888",
+        "discovery_score": "2330023114724544778533/49697247513801176121344",
+        "observed_base_upper": "603979776/90398766613",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "22101869265/549755813888",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "33871411491/1099511627776",
+        "discovery_score": "5600249428461764029109256705151373/144135565875444569648504850517852160",
+        "observed_base_upper": "1055039343266627014988/131090533500759711067535",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "5600249428461764029109256705151373/6757702225871240160089437901823870",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q129_128_tau1",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "33871411491/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "1703145/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "494587/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "eta": "2/3",
+            "lambda": "1070060327/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "29215847017/549755813888",
+        "discovery_score": "29215847017/274877906944",
+        "observed_base_upper": "33554432/6132926149",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "29215847017/549755813888",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "25763139921/549755813888",
+        "discovery_score": "25763139921/274877906944",
+        "observed_base_upper": "1534631907917492845/67333226213616508201",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "25763139921/29215847017",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q33_32_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "25763139921/549755813888",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "296283151/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "971467/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "12087075/1048576"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "5414449635/137438953472",
+        "discovery_score": "5414449635/34359738368",
+        "observed_base_upper": "33554432/6132926149",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "5414449635/137438953472",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "32536522255/1099511627776",
+        "discovery_score": "32536522255/274877906944",
+        "observed_base_upper": "165050424918858717/1394393631655838330",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "6507304451/8663119416",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q33_32_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "32536522255/1099511627776",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "7377953/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "995899737/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "8781727/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "8834305/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_5_9.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "33853678829/1099511627776",
+        "discovery_score": "244515600277640902753/6743223613116985114624",
+        "observed_base_upper": "33554432/6132926149",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "33853678829/1099511627776",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "12981426225/549755813888",
+        "discovery_score": "7550853944749627443485764075504561/251501094245765821641892725295939584",
+        "observed_base_upper": "2932464312060395352722/457477825413235808158593",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "15101707889499254886971528151009122/18239330195239101029421735109632621",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p16_q33_32_tau1",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "12981426225/549755813888",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "474919/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "eta": "1/3",
+            "lambda": "189474313/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "eta": "1/2",
+            "lambda": "156972447/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p16_gamma_3_5.json",
+      "source_id": "q1_p16",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "15287913081/274877906944",
+        "discovery_score": "15287913081/137438953472",
+        "observed_base_upper": "790903129/84573945856",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "15287913081/274877906944",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "23180374585/549755813888",
+        "discovery_score": "23180374585/274877906944",
+        "observed_base_upper": "935933626570530664448977/53590324008824022048440320",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "23180374585/30575826162",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q1_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "23180374585/549755813888",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "1986963/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "90932873/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "1/4",
+            "lambda": "314487429/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "51010077999/1099511627776",
+        "discovery_score": "51010077999/274877906944",
+        "observed_base_upper": "790903129/84573945856",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "51010077999/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "3998765053/137438953472",
+        "discovery_score": "3998765053/34359738368",
+        "observed_base_upper": "4363459679071489885744929/214361296035296088193761280",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "31990120424/51010077999",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q1_tau3_4",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "3998765053/137438953472",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "4854879/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "32910955/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "0",
+            "lambda": "1171745/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "41928146495/1099511627776",
+        "discovery_score": "263192413943439/5542638115618816",
+        "observed_base_upper": "790903129/84573945856",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "41928146495/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "3052631305/137438953472",
+        "discovery_score": "462357293194787648458285029/13997511913605152254122262528",
+        "observed_base_upper": "151461131807131013695860709/13997511913605152254122262528",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "154119097731595882819428343/221557488984796441465173504",
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q1_tau1",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "3052631305/137438953472",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "224080793/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/3",
+            "lambda": "8483833/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "722055/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "69352669/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_5_8.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "55868520477/1099511627776",
+        "discovery_score": "55868520477/549755813888",
+        "observed_base_upper": "790903129/90398766613",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "55868520477/1099511627776",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "10603221621/274877906944",
+        "discovery_score": "10603221621/137438953472",
+        "observed_base_upper": "930266274544424635525283/57285553740737482418290688",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "14137628828/18622840159",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q129_128_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "10603221621/274877906944",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "1962569/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "91403933/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "1/4",
+            "lambda": "311109253/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "5819951267/137438953472",
+        "discovery_score": "5819951267/34359738368",
+        "observed_base_upper": "790903129/90398766613",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "5819951267/137438953472",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "29201584825/1099511627776",
+        "discovery_score": "29201584825/274877906944",
+        "observed_base_upper": "1087550687838569006524273/57285553740737482418290688",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "29201584825/46559610136",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q129_128_tau3_4",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "29201584825/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "597879/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "32920409/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "0",
+            "lambda": "1156605/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "38200793031/1099511627776",
+        "discovery_score": "4322911760420807585107/99394495027602352242688",
+        "observed_base_upper": "790903129/90398766613",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "38200793031/1099511627776",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "22326426739/1099511627776",
+        "discovery_score": "1057736044693938010634900556050455/34808478560758119994903424225247232",
+        "observed_base_upper": "1338665753858191640690693103/132783807986290435771573731328",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "1057736044693938010634900556050455/1513906593024789151578894001746523",
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q129_128_tau1",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "22326426739/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "13653727/524288"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/3",
+            "lambda": "113592497/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "381079/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "32511339/4194304"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_5_8.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "42599619051/1099511627776",
+        "discovery_score": "42599619051/549755813888",
+        "observed_base_upper": "790903129/110392670682",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "42599619051/1099511627776",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "16236536015/549755813888",
+        "discovery_score": "16236536015/274877906944",
+        "observed_base_upper": "3653397567999101044306191/279886083389415800082268160",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "32473072030/42599619051",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q33_32_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "16236536015/549755813888",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "7563533/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "185681217/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "1/4",
+            "lambda": "150381409/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "35400188399/1099511627776",
+        "discovery_score": "35400188399/274877906944",
+        "observed_base_upper": "790903129/110392670682",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "35400188399/1099511627776",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "22212278107/1099511627776",
+        "discovery_score": "22212278107/274877906944",
+        "observed_base_upper": "17142723493094581193423161/1119544333557663200329072640",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "22212278107/35400188399",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p04_q33_32_tau3_4",
+      "positive_auxiliary_rays": 5,
+      "program": {
+        "innovation_C": "22212278107/1099511627776",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "206259663/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "1997989/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "105714085/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "0",
+            "lambda": "798929/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "0",
+            "lambda": "1246659/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_3_5.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "14441617431/549755813888",
+        "discovery_score": "1014526155282887356747/30344506259026433015808",
+        "observed_base_upper": "790903129/110392670682",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "14441617431/549755813888",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "4326847431/274877906944",
+        "discovery_score": "13974654459154234517083359168171/590378155506492539065475880976384",
+        "observed_base_upper": "571475117239724363062634415/72067645935851140022641098752",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "251543780264776221307500465027078/355292432600878358324417706862483",
+      "frozen_before_validation": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q33_32_tau1",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "4326847431/274877906944",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "75640589/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/3",
+            "lambda": "314221145/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "36788567/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "eta": "0",
+            "lambda": "226303/2097152"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p04_gamma_5_8.json",
+      "source_id": "q1_p04",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "77616418643/1099511627776",
+        "discovery_score": "77616418643/549755813888",
+        "observed_base_upper": "33605097744613811892634775584900/4564587070948197252492109462248841",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "77616418643/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "68901835799/1099511627776",
+        "discovery_score": "68901835799/549755813888",
+        "observed_base_upper": "443075774696045066830802460825139456018591746003054326063/16286526337746560654518149995521653555289596839338348380160",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "68901835799/77616418643",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p00_q1_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "68901835799/1099511627776",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "28848975/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "95465/2097152"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "209973785/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_3_5.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "56020828855/1099511627776",
+        "discovery_score": "56020828855/274877906944",
+        "observed_base_upper": "33605097744613811892634775584900/4564587070948197252492109462248841",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "56020828855/1099511627776",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "21392868453/549755813888",
+        "discovery_score": "21392868453/137438953472",
+        "observed_base_upper": "6071030400494046582571507182671737255557833713/39003473616733193368043612363424053551379251200",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "42785736906/56020828855",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p00_q1_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "21392868453/549755813888",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "482643563/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "4190839/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "9757727/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "8974267/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_5_9.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "10533319717/274877906944",
+        "discovery_score": "57317553925069903667921146347832449437243597/1254704140125884090215082536858298797369851904",
+        "observed_base_upper": "33605097744613811892634775584900/4564587070948197252492109462248841",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "10533319717/274877906944",
+        "q": "1",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "35011039805/1099511627776",
+        "discovery_score": "12702512894388294369942497228031700936435121855657502240177067821/319424518859643065204312590867270523053308546094351105077714878464",
+        "observed_base_upper": "9656081784390501391216371778590586701191025485301357771529/1218507838667461643998384822339136211598619636895565433798656",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "12702512894388294369942497228031700936435121855657502240177067821/14591991449785285855126157918805453992203898706824909720242324052",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p00_q1_tau1",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "35011039805/1099511627776",
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "21918991/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "1/3",
+            "lambda": "180690965/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "34263/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_3_5.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "35404014975/549755813888",
+        "discovery_score": "35404014975/274877906944",
+        "observed_base_upper": "563799983562498758706102439099393638400/81855394031216694314842697064447909480013",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "35404014975/549755813888",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "63057061727/1099511627776",
+        "discovery_score": "63057061727/549755813888",
+        "observed_base_upper": "29714357958244558054416823598878771143793532792039472503173/1183902806873211558124957986778486135452248322448187754564571",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "63057061727/70808029950",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p00_q129_128_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "63057061727/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "113465627/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "350291/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "211002059/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_3_5.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "51352231925/1099511627776",
+        "discovery_score": "51352231925/274877906944",
+        "observed_base_upper": "563799983562498758706102439099393638400/81855394031216694314842697064447909480013",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "51352231925/1099511627776",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "4858688181/137438953472",
+        "discovery_score": "4858688181/34359738368",
+        "observed_base_upper": "33409154409884471119925221696637712344336997709/236263343327827262791326130650151761736940534105",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "38869505448/51352231925",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p00_q129_128_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "4858688181/137438953472",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "972080685/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "2901873/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "9974697/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "9636841/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_5_9.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "38501001947/1099511627776",
+        "discovery_score": "3771419322635211180209588655075818354181823410783711/90000957533508942123898498886717177731129395367641088",
+        "observed_base_upper": "563799983562498758706102439099393638400/81855394031216694314842697064447909480013",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "38501001947/1099511627776",
+        "q": "129/128",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "32403452999/1099511627776",
+        "discovery_score": "1162763510266897878043849364728822774088850183259389176506148643/31518811981316014215629038325605426096532607137096292232522104832",
+        "observed_base_upper": "212712519741843416479469996715551757034168127258050/28666192503184005741449289712914311254765022692569157",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "387587836755632626014616454909607591362950061086463058835382881/440257006853079983700780710675907419823408712971807128764402093",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p00_q129_128_tau1",
+      "positive_auxiliary_rays": 2,
+      "program": {
+        "innovation_C": "32403452999/1099511627776",
+        "q": "129/128",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "47397103/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "1/3",
+            "lambda": "173641249/16777216"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_3_5.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "26875668901/549755813888",
+        "discovery_score": "26875668901/274877906944",
+        "observed_base_upper": "281899991781249379353051219549696819200/49979860873090588055538449084460664119141",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "26875668901/549755813888",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "48333349063/1099511627776",
+        "discovery_score": "48333349063/549755813888",
+        "observed_base_upper": "56976299649293319397421001785246746861580011699625299755602/2892557897698810291126367748054899040520073449088205314836489",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "48333349063/53751337802",
+      "frozen_before_validation": true,
+      "gamma": "3/5",
+      "id": "q1_p00_q33_32_tau1_2",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "48333349063/1099511627776",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "216108375/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "256911/8388608"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "1/4",
+            "lambda": "53473635/4194304"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1/2"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_3_5.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "617884589/17179869184",
+        "discovery_score": "617884589/4294967296",
+        "observed_base_upper": "281899991781249379353051219549696819200/49979860873090588055538449084460664119141",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "617884589/17179869184",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "1829808507/68719476736",
+        "discovery_score": "1829808507/17179869184",
+        "observed_base_upper": "9221456071737104480822701239170020782179697755/86579241357850843844705867599399825454234982636",
+        "recurrence_mode": "contractive",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "1829808507/2471538356",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p00_q33_32_tau3_4",
+      "positive_auxiliary_rays": 4,
+      "program": {
+        "innovation_C": "1829808507/68719476736",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "988086835/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "915495/16777216"
+          },
+          {
+            "a": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "eta": "0",
+            "lambda": "10061871/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "2609095/4194304"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "3/4"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_5_9.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "baseline_calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "14680500467/549755813888",
+        "discovery_score": "888705530304722669086368359820575053747120379188447/27476719092294922514425071422504920856339359054430208",
+        "observed_base_upper": "281899991781249379353051219549696819200/49979860873090588055538449084460664119141",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "baseline_program": {
+        "innovation_C": "14680500467/549755813888",
+        "q": "33/32",
+        "rays": [],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "calibration": {
+        "complete_base_proved": false,
+        "discovery_C": "6194879735/274877906944",
+        "discovery_score": "12566559558869301311542220873315813096006255342980276280817868346407857493/426368816504418342478023950239624665720507613832853112698168128949347942400",
+        "observed_base_upper": "10759516057507713641794738852228441471473278799401972567897422/1551120718447849294454586743957860256052327218032053179552051475",
+        "recurrence_mode": "logarithmic",
+        "uniform_drift_proved": false
+      },
+      "complete_energy_base_proved": false,
+      "exact_discovery_score_ratio": "25133119117738602623084441746631626192012510685960552561635736692815714986/27580900318132420781682076534581321168963951054388214147618344581887298825",
+      "frozen_before_validation": true,
+      "gamma": "5/9",
+      "id": "q1_p00_q33_32_tau1",
+      "positive_auxiliary_rays": 3,
+      "program": {
+        "innovation_C": "6194879735/274877906944",
+        "q": "33/32",
+        "rays": [
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "26619691/4194304"
+          },
+          {
+            "a": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "2",
+              "1"
+            ],
+            "eta": "1/4",
+            "lambda": "40274199/16777216"
+          },
+          {
+            "a": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ],
+            "eta": "0",
+            "lambda": "191087/8388608"
+          }
+        ],
+        "schema": "rough-energy-program-v1",
+        "tau": "1"
+      },
+      "selected_proposal": "proposal_q1_p00_gamma_5_9.json",
+      "source_id": "q1_p00",
+      "uniform_drift_proved": false,
+      "uniform_source_bound_proved": false
+    }
+  ],
+  "validation_arithmetic_not_started": true
+}

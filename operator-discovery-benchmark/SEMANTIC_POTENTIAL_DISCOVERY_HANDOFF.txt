@@ -1,0 +1,146 @@
+Semantic structural discovery: completed pilot002
+Date: 2026-10-09
+Archive: potential-candidate-results/pilot-002
+
+Direction and implementation
+The previous goal turn made progress: pilot001 was implemented, independently
+checked and analytically classified. Its review identified concrete weaknesses
+in factor placement, mechanism diversity and effective selector exposure.
+This turn implements those changes and completes a new structural search.
+The full active goal remains unresolved: no operator has a proved all-scale
+signed zeta-control estimate, and RH is not proved.
+
+New semantic_potential_discovery.py generates complete arithmetic ASTs and
+mutates factors inside summands, signed pairs, gcd-conditioned mixtures and
+quotient commutators. potential_candidate_semantics.py records scoped lag,
+mask, root-envelope, product and complete mixed-term identities. The independent
+check_potential_candidate_semantics.py reconstructs those annotations itself.
+run_semantic_potential_discovery.py reuses the unchanged exact numerical
+evaluator and independent arithmetic checker from pilot001.
+
+Selection reserves distinct mechanism slots and limits calibration duplicates.
+A masked mixed core retains its coupled class. Unknown cases remain explicit;
+labels do not certify new arithmetic cancellation or historical novelty.
+Exposure plans account for outer clipping, prime entries, squareful divisor
+coefficients and radical-equivalent coprimality masks. Numerical gcd values
+retain the full modulus. Raw/nested root maps and unexposed later regimes are
+declared. An observed selector change is not a proved change of complete state.
+
+Actual search and complete target
+The target remains E(X)=X^-2 sum_{X<=t<2X}M(t)^2 for complete actual Mobius M.
+Each V is a nonnegative weighted sum of state squares, W=E+V. The full
+W(2X)-W(X), all mixed terms, fresh child selectors and W(1) are retained.
+The AST language includes exact square, cube and sixth roots and other rational
+root exponents; this run uses the declared2/3/6 root orders.
+
+Forty initial structures span calibration, source mixtures, factor banks,
+prime banks and index switches;24 mutations follow discovery-selected parents.
+All65 programs including baseline completed training and shared validation.
+Training bases1..128 dyadically; shared validation192,256,384,512. Candidate
+diagnostics add at most two AST-chosen bases<=1024 and do not change the shared
+validation ranking. Their plans precede responses. Training constants for
+q2,3,6,12 are fixed before validation and never refitted on final responses.
+
+Final selected IDs1,34,31,6,64,53,29,30, plus baseline0. Final bases are
+1536,2048,3072,4096, with complete actual source through16383. The final ASTs,
+constants and proof queue were saved before final responses. These responses
+were excluded from this run's adaptation; arithmetic overlaps earlier work.
+
+Finite results and independent scope
+All58 frozen tests passed. The sole independent audit verified992 saved
+measure/case records, independently reconstructed semantic annotations and
+recomputed fitting/selection arithmetic. Its status is FINITE_EVALUATION_VERIFIED.
+Generation and exposure replay share the producer implementation; this remains
+an explicit limitation. No universal source/compiler theorem is admitted.
+
+Actual-Mobius results among the eight selected structures:
+- IDs1,6,64,29,30 passed all16 final comparisons (four bases times four q).
+- ID34 failed exactly the X3072,q12 diagnostic. Its innovation1194821/37748736
+  exceeds281/16384. X3072 is not dyadic, so this does not refute the dyadic
+  claim at that scale. Its tested dyadic comparisons passed.
+- ID31 lacks its X4096 case; ID53 lacks X3072 and4096, from the live-cell cap.
+  Available earlier cases remain archived and independently checked.
+Baseline also passed all16. Selection and passing finite cases establish no
+operator advantage or all-scale estimate. Four q comparisons at one base are
+not four independent arithmetic samples.
+
+Across actual mu and two controls,17 of27 candidate/source evaluations completed;
+ten are explicitly incomplete. Whole-source1 had the same two structural cell
+failures. The later partial_prime_2 control consumed the remaining final work
+allowance, leaving six incomplete evaluations. Complete control comparisons
+failed, including baseline, so those failures alone identify no information
+added by the potential. A missing score is never counted as a passing bound.
+
+Concrete mathematical progress from Sol6.1 reviews
+Three new analytical memos are archived under analytical_reviews/, with a
+consolidated analytical_review.json. Reviewers used program/semantic payloads
+and excluded numerical response scores; root subsequently checked their
+derivations with access to the numerical report. These are mathematical prose
+proofs and deductions, not formal proof-assistant certificates or another audit.
+
+1. Selected mutation64 is the state
+   U(t)=mu(t)*1_{floor(t/2)>=1}M(floor(t/4))
+         -mu(max(1,floor(t/2)))*M(floor(t/2)).
+   Its complete even/odd paired square has a mixed coefficient
+   2[1_{n odd}mu(n)^2-mu(n(2n+1))]M(floor(n/2))M(n).
+   The coprime identity exposes a precise weighted polynomial-Mobius correlation.
+   All diagonal terms remain. This is a concrete signed lemma obligation;
+   unweighted cancellation alone would not bound its dependent prefix weights.
+
+2. For selected31/53, let R=floor(X^(1/3))>=2 and let P(t)=pi(R)M(floor(t^(1/3))).
+   Exact cubic fiber counts prove
+     X^-2 sum P(t)^2 <=12[pi(R)/R]^2 E(R).
+   E(R) is covered by two smaller dyadic energies. The coefficient pi(R)/R
+   tends tozero by elementary finite sieving and the harmonic product argument.
+   This supplies a smaller-scale induction ingredient without assuming RH.
+   Main-bank energy, covariance and full transport still need estimates.
+
+3. For53, the square of its child mask-jump state is bounded by E(X)/2.
+   Its full boundary correction retains both gained/lost coprime sets and
+   every old/new prime-mask cross term. The bound supplies a parent-energy
+   cost, not the negative transport credit needed to absorb it.
+
+4. Additional initial programs yielded proved reductions worth retaining even
+   though finite selection did not nominate them. ID38 reduces to weighted
+   perfect-sixth-power samples of M(m^6-1)^2 with an O(X^(-1/3)) remainder,
+   including the smooth/impulse mixed term. ID39's newly admitted divisor-bank
+   square is at most32 times a harmonic number, hence logarithmic. ID40's
+   small-gcd component has normalized square<=54. Their remaining large-prefix
+   and mixed terms are explicitly unresolved; none proves the complete drift.
+
+5. Same-index point mixture15 has an exact summation-by-parts identity, with
+   cubic endpoint terms and a signed sum mu(n)M(2n-1)^2. Source-gap, hyperbola,
+   prime-row cancellation and root-boundary identities retain all complements.
+   The reviews distinguish real reductions from merely assuming a target
+   energy bound on the right side of an alleged absorption argument.
+
+Resources and immutability
+Complete reservation450m proxy operations:40m preparation,15m generation,
+145m discovery,100m final,150m independent audit. No reset, borrowing, retry or
+second actual audit. New development2,326,670 operations; frozen modules
+2,348,498; root reserve1m; preparation synthetic subtotal5,675,168.
+Generation5,598,062; discovery133,632,711; final100,000,000; audit143,256,505.
+Research subtotal382,487,278; including synthetic preparation388,162,446 before
+remaining I/O/scaffolding. These are declared proxies, not bit-complexity proofs.
+
+Producer445.093366s wall/444.359271s CPU; peakRSS516276KiB. Audit246.586886s.
+Enforced6GiB address-space cap and3600s stage deadlines. Discovery peak5,255,164
+counted cells; final attempted6,000,009 exceeded the6m cell cap and was rejected;
+audit peak4,288,244. Root resident reserve1m is included. Largest observed
+number133bits in generation,42bits in final/audit. Final memory failures were
+the declared cell proxy, not exhaustion of the user's authorized16GiB ceiling.
+All frozen code/results remain immutable. Ordinal IDs/full payload comparisons
+and direct source bytes are used; no new hashes were created.
+
+Next proof work
+Prioritize a complete analytical drift decomposition for64 and31/53, using the
+proved paired-correlation, smaller-scale transfer and mask-jump lemmas. Seek
+an explicit negative transport term that pays for the complete mixed and
+cutoff corrections. If that cannot be established, retain the obstruction and
+generate a new structural compensation term rather than optimize coefficients.
+The bounded remainder and logarithmic boundary lemmas for38/39/40 should also
+feed candidate discovery; finite rank must not erase analytically useful leads.
+Record the two selected incomplete arithmetic tails. A future protocol should
+budget complex structures and controls without conflating a cache-cell cap with
+physical memory exhaustion; this run's limits and missing outcomes stay fixed.
+No global bound, universal signed estimate or RH theorem has been proved.

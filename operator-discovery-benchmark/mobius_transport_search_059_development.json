@@ -1,0 +1,38 @@
+{
+  "schema": "mobius-transport-search-059-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "operations": 8499,
+      "elapsed_seconds": 0.018571961030829698,
+      "peak_rss_kib": 15868,
+      "output": "test_bound_can_retain_cancellation_without_equaling_target (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_dominance_never_rejects_cross_profile_policies (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_fixed_claim_selection_preserves_open_uniform_status (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_general_fractional_blocks_and_grammar_budget (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_missing_duplicate_wrong_sign_and_extra_policy_fields_rejected (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_pair_choice_never_reads_magnitudes_or_input_order (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_prime_edges_are_not_a_fixed_small_prime_whitelist (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_second_pass_pairs_residuals_without_discarding_any_term (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_sorted_profile_optimum_and_reverse_can_differ (test_mobius_transport_search_059.TransportSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.018s\n\nOK\n"
+    },
+    {
+      "reason": "new shared-kernel normalization and affected grammar/selection paths only",
+      "test_names": [
+        "test_pair_choice_never_reads_magnitudes_or_input_order",
+        "test_kernel_expression_normalization_merges_scaled_arguments",
+        "test_general_fractional_blocks_and_grammar_budget",
+        "test_dominance_never_rejects_cross_profile_policies",
+        "test_fixed_claim_selection_preserves_open_uniform_status"
+      ],
+      "returncode": 0,
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "operations": 8270,
+      "elapsed_seconds": 0.03313789004459977,
+      "peak_rss_kib": 16212,
+      "output": "test_pair_choice_never_reads_magnitudes_or_input_order (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_kernel_expression_normalization_merges_scaled_arguments (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_general_fractional_blocks_and_grammar_budget (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_dominance_never_rejects_cross_profile_policies (test_mobius_transport_search_059.TransportSearchTests) ... ok\ntest_fixed_claim_selection_preserves_open_uniform_status (test_mobius_transport_search_059.TransportSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.033s\n\nOK\n"
+    }
+  ],
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_evaluated": false,
+  "old_suites_or_studies_replayed": false,
+  "distinct_tests": 10
+}

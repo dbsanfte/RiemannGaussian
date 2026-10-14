@@ -1,0 +1,37 @@
+{
+  "owner": "/root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_prime_transfer_058.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 15,
+      "stdout": "SYNTHETIC_WORK module=check_prime_transfer_058 operations=60787\n",
+      "stderr": "test_complete_primepowers_beyond_largest_divisor (__main__.TransferCheckerTests) ... ok\ntest_current_part_cannot_be_promoted_to_zero_or_bound (__main__.TransferCheckerTests) ... ok\ntest_endpoint_arbitrary_rationals_and_unpaid_middle (__main__.TransferCheckerTests) ... ok\ntest_endpoint_cheap_prices_and_reused_lower_atoms_rejected (__main__.TransferCheckerTests) ... ok\ntest_endpoint_filter_unit_and_tail_elementary_premises (__main__.TransferCheckerTests) ... ok\ntest_mutated_attenuation_divisor_coefficients_rejected (__main__.TransferCheckerTests) ... ok\ntest_real_pullbacks_inclusive_unit_and_unregistered_primes (__main__.TransferCheckerTests) ... ok\ntest_source_order_all_presence_cases_and_zero_source (__main__.TransferCheckerTests) ... ok\ntest_source_order_false_power_signed_terms_and_domain_rejected (__main__.TransferCheckerTests) ... ok\ntest_source_order_signed_y_expansion_and_attenuation (__main__.TransferCheckerTests) ... ok\ntest_two_prime_coupled_identity_and_outside_common_factor (__main__.TransferCheckerTests) ... ok\ntest_typed_prime_support_and_canonical_alias_guards (__main__.TransferCheckerTests) ... ok\ntest_unit_case_is_not_discarded (__main__.TransferCheckerTests) ... ok\ntest_universal_transfer_and_rational_scale (__main__.TransferCheckerTests) ... ok\ntest_work_capacity_and_charge_only_meter (__main__.TransferCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.022s\n\nOK\n",
+      "operations": 60787,
+      "elapsed_seconds": 0.11052823800127953,
+      "peak_rss_KiB": 32576,
+      "stdout_artifact": "check_prime_transfer_058_suite_001.stdout.txt",
+      "stderr_artifact": "check_prime_transfer_058_suite_001.stderr.txt"
+    }
+  ],
+  "operations": 60787,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "edits_stopped": true,
+  "synthetic_only": true,
+  "scientific_source_arrays_read": false,
+  "scientific_three_prime_signature_or_RREF_run": false,
+  "prior_studies_or_suites_replayed": false,
+  "producer_imported_by_checker": false,
+  "public_APIs": [
+    "verify_identity",
+    "verify_source_order",
+    "verify_endpoint_bound"
+  ],
+  "proof_scope": "universal finite valuation identities; complete current presence-order bound; two uniform endregions with middleOPEN"
+}

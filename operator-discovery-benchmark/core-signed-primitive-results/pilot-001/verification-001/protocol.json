@@ -1,0 +1,18 @@
+{
+  "corrected_source_files": [
+    "check_core_signed_primitive_search.py",
+    "test_check_core_signed_primitive_search.py",
+    "core_signed_primitive_checker_development.json"
+  ],
+  "development_operations": 14158230,
+  "failed_study_operations": 14802301,
+  "fitted_constants": 0,
+  "hashes": false,
+  "memory_bytes": 4294967296,
+  "numeric_source_observations": 0,
+  "operation_cap": 1000000000,
+  "original_study": "core-signed-primitive-results/pilot-001",
+  "producer_search_reruns": 0,
+  "schema": "core-signed-primitive-saved-verification-v1",
+  "seconds": 900
+}

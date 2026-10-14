@@ -1,0 +1,147 @@
+FLOOR RESIDUAL LOGARITHMIC RATE REVIEW 044
+
+Scope and API
+-------------
+floor_residual_rate_review_044.py reviews the exact typed 044 coefficient
+recipes at fixed integer indices. It never builds coefficient arrays, evaluates
+an N-dependent norm, imports the search compiler, or changes frozen artifacts.
+Only generate_witness from frozen floor_residual_recovery_review_043.py is
+imported. Every resulting witness is independently replayed here.
+
+audit_selected(selected, max_index=16, precision=192, meter=None) accepts
+exactly {recipes: [...], rules: [...]}. Recipe fields are id, base, auxiliary;
+rules must bind to a present unique recipe and contain exact q, b, and
+finite_log_bound {A, eta}. Repeated family rules in distinct q/b/strata are
+permitted. Each selected recipe must have a rule. Output schema is
+floor-selected-log-rate-review-v1, with full per-recipe reviews under reviews.
+
+review_recipe(recipe, rules=None, max_index=16, precision=192, meter=None,
+              witnesses=None) returns floor-log-rate-review-v1. A shared
+witness dictionary avoids repeated solves. It contains target_candidates,
+strongest_target_rate_obstruction, rule_reviews, exact rates, full cell
+witnesses, signed leading monomials, and independently checkable nonzero
+licenses. A rule review's strongest_rejection selects the smallest certified
+energy rate, breaking ties by index; this is a rate comparison, not a claim
+that its leading constant is largest.
+
+review_frontier(recipes, eta_values, max_index=16, precision=192, meter=None)
+returns floor-log-rate-frontier-v1: per-recipe necessary TARGET rate
+restrictions, without ranking, reselecting, or evaluating programs. It does
+not assert that target rate restrictions alone determine forcing rates.
+The publisher can instead call review_recipe with every declared rule.
+
+Fixed-index asymptotic algebra
+-----------------------------
+Let L(N)=N.bit_length() and fix n>=2. Then log(N)/(L(N)*log(2))->1.
+The frozen compiler's independent dyadic rounding uses at least
+4*ceil(log2(N)) bits. Errors from this rounding, including positive rational
+roots, decay faster than any inverse power of L at fixed n. Positive rational
+roots near the log coordinate's zero have only polynomial-in-L sensitivity;
+the exponentially small coordinate error therefore remains flat.
+
+For a log taper (1-(log(n)/log(N))^alpha)^gamma, its correction from 1 is
+  -gamma * log(n)^alpha * log(2)^(-alpha) * L^(-alpha)
+  + o(L^(-alpha)).
+A vanishing twist n^(-rate/L^level_power) has correction
+  -rate * log(n) * L^(-level_power) + o(L^(-level_power)).
+Unit corrections are exactly zero. Positive cutoff tapers and power
+amplitudes are flat relative to every inverse log power. A moving band
+eventually excludes every fixed index exactly. A log amplitude L^(-power)
+times a typed weight tending to 1 has leading coefficient 1 and rate power.
+
+Products of limit-one weights add their first corrections, because the
+product of corrections is of higher order. Differences retain signed first
+corrections. Exact coefficient binding is
+  c_n(N)+mu(n) = -mu(n)*(base(n,N)-1)
+                + auxiliary_scalar*arithmetic(n)*envelope(n,N).
+Arithmetic channels are independently factored at each fixed index; no
+source arrays are consulted. Exact zero arithmetic multipliers prove their
+own contribution zero.
+
+Leading constants are exact sums of monomials
+  rational * log(n)^(rational) * log(2)^(rational).
+At n=2 the two logarithms are exactly identified before simplification.
+All terms with one common nonzero rational sign certify nonzero structurally,
+since the logarithmic factors are positive. Mixed signs require an Arb
+enclosure strictly excluding zero. Exact dyadic endpoints accompany every
+finite Arb enclosure. No floating point sign or norm admission is used.
+
+Cancellation is deliberately conservative. If the first-order terms cancel,
+the status is UNRESOLVED and that rate becomes a cancellation barrier. An
+uncompiled o(L^(-a)) remainder cannot be skipped to admit a later rate b>a.
+A known term with b<=a can still dominate or survive the remainder. Neither
+the cancellation of equal ASTs nor a zero-containing Arb interval is used
+to infer flatness. This restricted algebra does not claim a complete formal
+asymptotic expansion.
+
+Independent witness and rate proof
+----------------------------------
+For f_j on cell k, f_j=(k mod j)/j. With residual e=1-sum c_j f_j-sum d_q I_q,
+the witness is a rational vector alpha supported on cells 1..n satisfying
+  sum alpha_k = mu(n),
+  sum alpha_k*k = 0,
+  sum alpha_k*(k mod j)/j = -delta(j,n), 2<=j<=n.
+The second identity annihilates every higher floor column j>n, so the proof
+is independent of later support size. The verifier checks all finite columns,
+the constant, the tail slope, and D=sum alpha_k^2*k*(k+1). Consequently
+  c_n+mu(n)-sum d_q*sum_(k>=q) alpha_k = sum alpha_k*e(cell k),
+  ||e||_2^2 >= (c_n+mu(n)-sum d_q*step_response(q))^2/D.
+Cell weights are exactly 1/(k*(k+1)); the inequality is weighted Cauchy.
+For n=3, alpha=(-1,-1,1), D=20, and step_response(2)=0.
+For n=2, alpha=(-2,1), D=14.
+
+If the coefficient error is C*L^(-nu)+o(L^(-nu)) with C certified nonzero,
+then liminf L^(2nu)*||e_N||_2^2 >= C^2/D>0. Thus a bound
+||e_N||_2^2 <= A/L^eta for ANY fixed finite A is impossible when eta>2nu.
+The exact energy_rate emitted is 2nu. Eta equal to or smaller than this
+rate remains OPEN; no upper bound is inferred.
+
+For h_N=e_(qN)-b*D_q e_N, a witness at n not divisible by q, with zero
+indicator response, binds to the child coefficient error alone. Its parent
+floor coefficient and indicator contributions vanish. Since L(qN)/L(N)->1,
+the same leading rate and constant apply, independently of b. For b=0 the
+forcing is simply the child residual and every witness is eligible. Nonzero
+b at divisible indices is explicitly UNRESOLVED here; the necessary parent
+coefficient or global sum has not been compiled. Eligible candidates whose
+leading term is unresolved retain that status; aggregate rules remain OPEN
+unless a certified strict rejection is present.
+
+Logical limits
+--------------
+This is a generic typed-recipe rate gate, with no family identifiers encoded.
+It rejects only the stated rate of the exact fixed recipe/rule. A positive
+finite-index logarithmic lower rate is compatible with norm convergence to
+zero. The outputs preserve convergence_status OPEN, RH_proved false,
+RH_refuted false, uniform_upper_bound_proved false, and explicitly deny
+additional norm/source observations. Flat fixed-index errors or unrefuted
+rates do not certify convergence, a logarithmic upper bound, or RH. Other
+global obstructions may apply independently.
+
+Resources and focused verification
+----------------------------------
+The mathematical recipes are defined for N tending to infinity; bounded
+review resources do not truncate that definition. The implementation scans
+indices 2..64 (default 16), enforces AST depth 6, canonical rational bits
+4096, twist level 1..8, and Arb precision 128..4096 (default 192). The
+default Meter caps charged operations at 50,000,000 and elapsed time at
+600 seconds; callers may provide their own shared Meter. Frontier recipe
+lists are bounded at 10,000. Imported witness construction is exact rational
+linear algebra; local replay and arithmetic binding do not trust its output.
+
+Owned test_floor_residual_rate_review_044.py contains 12 focused synthetic
+tests: denominators outside any nominated root bank, signed products and
+differences, cancellation barriers, exact zero arithmetic multipliers,
+logarithm dependence at n=2, mixed-sign Arb admission, independent full
+witness replay/tampering, strict/equal/smaller rate comparisons, indicator
+annihilation and divisible-index uncertainty, b0 and repeated rule strata,
+frontier scope, and type/resource rejection.
+
+The first run had one failure because the synthetic cancellation fixture's
+auxiliary scalar sign made the terms add. The fixture sign was corrected;
+no production algebra was changed for that failure. A separate output
+clarification preserves UNRESOLVED on eligible forcing candidates. The
+second focused run passed 12/12, no errors, with 39,508 charged operations.
+The metered receipt preserves both invocations and 79,016 cumulative charged
+operations. No old suite/study was rerun; no hashes were generated. Actual
+selected/frontier application is reserved for the separately frozen parent
+analytical followup.

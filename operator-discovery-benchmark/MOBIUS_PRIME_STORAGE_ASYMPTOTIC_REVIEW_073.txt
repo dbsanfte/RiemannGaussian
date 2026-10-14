@@ -1,0 +1,408 @@
+ASYMPTOTIC BULK MODES OBSTRUCT UNIFORM PSD STORAGE DRIFT 073
+==========================================================
+
+Scope and proved conclusion
+----------------------------
+This is a new analytical follow-up, written before scientific073
+outcomes were supplied. It does not alter the initial prime-block review,
+read candidate outcomes, rerun a study, use hashes, or write another file.
+The root's proposed states use the actual source
+
+ w_k(n)=1_(8k,10k](n)-1_(16k,20k](n), X=20k,
+ Z(k)=sum_n mu(n)w_k(n), k>=1 integer.             (1)
+
+For EVERY fixed theta>0 the signed smooth source state with cutoff
+y=(20k)^theta is o(k/log k). This includes all the proposed rational
+theta values, including theta below1/2 and theta=1/2. The proof below
+uses quantitative unconditional Mertens cancellation and a primary
+rough-count theorem; it does not assume RH or independent signs.
+
+Consequently, for any FIXED finite positive-semidefinite storage energy
+of the proposed form, and any FIXED q<2, a uniform constant drift is
+impossible if any positively weighted direction has unequal coefficients
+on one of omega=1,2,3 and omega>=4. The necessary exact constraints are
+
+             v_U1=v_Uge4, v_U2=v_Uge4, v_U3=v_Uge4. (2)
+
+They are independent of the alternating signs of the asymptotic modes.
+They are necessary, not sufficient. Directions satisfying (2) still have
+unpaid Z/smooth correlations. This excludes specified storage formulas,
+not actual Mobius cancellation, the original head goal, or RH.
+
+1. Imported primary theorems and their limited roles
+-----------------------------------------------------
+Only the following unconditional imported facts are used. They are
+analytical inputs, not detector discoveries.
+
+(i) Fixed-r squarefree almost-prime asymptotics:
+
+ Q_r(t):=#{n<=t:n squarefree, omega(n)=r}
+ ~ t (log log t)^(r-1)/((r-1)! log t),             (3)
+
+for every fixed positive integer r. The primary source is E. Landau,
+"Sur quelques problemes relatifs a la distribution des nombres premiers,"
+Bulletin de la Societe Mathematique de France28 (1900),25-38. Section4
+specifies distinct prime factors; equation(8), printed page32, states
+the asymptotic, with its induction proof continuing through page35.
+[Landau's original paper](https://www.numdam.org/article/BSMF_1900__28__25_1.pdf)
+
+(ii) A quantitative unconditional Mertens estimate. It suffices that,
+for every fixed A>0,
+
+ |M(t)|<=C_A t/(log t)^A for all sufficiently large t. (4)
+
+For a primary modern proof use E. S. Lee and N. Leong, "New explicit
+bounds for Mertens function and the reciprocal of the Riemann zeta-
+function," Theorem1.1, equation(9), and Theorem2.2. Their unconditional
+bound of order t log(t) exp(-c sqrt(log t)) implies (4). Only that
+asymptotic consequence is used; no source-scale computation is borrowed.
+[Lee and Leong's paper](https://arxiv.org/pdf/2208.06141)
+
+(iii) Let Phi(t,y) count positive y-rough integers <=t, including1,
+where rough means every prime factor is STRICTLY greater than y. Put
+u=log t/log y. Kai Fan, "Numerically explicit estimates for the
+distribution of rough numbers," Journal of Number Theory260 (2024),
+120-150, Corollary1.2, proves a uniform unconditional approximation
+
+ Phi(t,y)=t integral_(1..u) y^(s-u) omega(s) ds
+          +O(t (log y)^(-3/4) exp(-c sqrt(log y))), (5)
+
+for t>=y>=2, with an absolute c>0. Here omega is Buchstab's continuous
+function: omega(s)=1/s for1<=s<=2 and
+(s omega(s))'=omega(s-1) for s>2. Only the unconditional statement is
+used, not the RH-conditional estimate printed next to it.
+[Fan's primary paper, Corollary1.2](https://stvfan.github.io/files/papers/Numerically%20explicit%20estimates%20for%20the%20distribution%20of%20rough%20numbers.pdf)
+
+The consequences and storage obstruction below are directly proved here.
+No stronger smooth-sum asymptotic is needed or claimed.
+
+2. A compact-ratio rough-count consequence
+------------------------------------------
+Fix eta>0 and U<infinity. Uniformly when
+
+ 1+eta<=log t/log y<=U, y->infinity,
+
+(5) implies
+
+ Phi(t,y)=t omega(log t/log y)/log y
+                    +O_(eta,U)(t/(log y)^2).     (6)
+
+Here is the elementary deduction, including the endpoint issue.
+On any compact interval [1,U], omega is bounded and Lipschitz. On [1,2]
+this follows from1/s. On each successive interval it follows from the
+delay equation and continuity: away from a joining point,
+omega'(s)=(omega(s-1)-omega(s))/s is bounded. A derivative can jump at2,
+but the function is still Lipschitz there. No derivative value at2 is
+needed. Put ell=log y. Subtract omega(u) inside the integral in (5).
+The Lipschitz error is at most
+
+ K_U integral_(0..infinity) v exp(-ell v) dv=K_U/ell^2.
+
+The constant part integrates to
+omega(u)(1-exp(-ell(u-1)))/ell. Since u-1>=eta, its omitted lower-boundary
+tail is O(exp(-eta ell)/ell). The error in (5) is also O(t/ell^2) as
+y->infinity. This proves (6), uniformly on the stated compact ratios.
+Thus the following smooth proof is valid even when the ratio approaches2.
+
+3. Exact convolution for the signed smooth prefix
+--------------------------------------------------
+Define
+
+ A_mu(x,y)=sum_(n<=x, P+(n)<=y)mu(n), P+(1)=1,
+ M(t)=sum_(n<=t)mu(n),
+
+with real x,y and every upper integer boundary interpreted through floor.
+For y>=1, let r_y(d)=1[P-(d)>y], with P-(1)=infinity. The exact identity
+of arithmetic functions is
+
+ mu(n)1[P+(n)<=y]=(mu * r_y)(n).                 (7)
+
+Proof on prime powers: for p<=y the local convolution is mu(p^e),
+because r_y has only its unit at this prime. For p>y the coefficient
+is sum_(j=0..e)mu(p^j), which is0 for e>=1. The unit coefficient is1.
+Multiplying the local identities proves (7) for every integer, including
+squareful zeros. In particular r_y counts ALL rough integers, including
+rough prime powers; replacing it by squarefree rough integers changes
+(7) and would invalidate the proof.
+
+Summing (7) gives two exact finite forms:
+
+ A_mu(x,y)=sum_(a<=x)mu(a)Phi(x/a,y)
+         =sum_(d<=x, P-(d)>y)M(x/d).             (8)
+
+For any real1<=T<=x, split the first sum at a<=T. The tail equals
+
+ sum_(a>T)mu(a)Phi(x/a,y)
+ =sum_(d<=x/T, P-(d)>y)[M(x/d)-M(T)].            (9)
+
+If x/d=T, the bracket is zero, so including that equality causes no
+boundary error. The strict lower cutoff a>T and the floors in M(T)
+are literal, not an approximation.
+
+Let epsilon(T)=sup_(t>=T)|M(t)|/t. By (4), for every fixed A and large T,
+epsilon(T)<=C_A/(log T)^A. The unrestricted harmonic bound in (9) gives
+
+ |tail|<=epsilon(T)[x sum_(d<=x/T)1/d+T Phi(x/T,y)]
+       <=epsilon(T) x[2+log x].                  (10)
+
+This deliberately includes all rough d and bounds their count by x/T.
+It requires no rough-count estimate in the possibly small argument
+x/T of the tail. Thus there is no unlicensed uniformity near t=y.
+
+4. Signed smooth sums are smaller than k/log k at all fixed powers
+-----------------------------------------------------------------
+Fix theta in(0,1), and take
+
+ x=a k, y=(20k)^theta,
+ a in {8,10,16,20},
+ L=log x, T=exp(L^(1/4)).                        (11)
+
+For sufficiently large k, T<x/y. For every a_cofactor<=T, the ratio
+
+ log(x/a_cofactor)/log y
+ =1/theta+O_theta((L^(1/4)+1)/L)
+
+stays in a fixed compact subset of(1,infinity), uniformly over the FOUR
+source endpoints. This is the needed comparison for y defined from20k,
+rather than redefining y separately at each endpoint. At theta=1/2,
+the compact interval may include2, which is allowed by section2.
+
+Apply (6) to each term of the truncated sum in (8), writing
+u=log x/log y and ell=log y. Its leading part is
+
+ (x/ell) sum_(a_cofactor<=T)mu(a_cofactor)/a_cofactor
+                           omega(u-log(a_cofactor)/ell). (12)
+
+Lipschitz continuity gives the following bound for replacing omega by
+omega(u), WITHOUT assuming cancellation in an error term:
+
+ absolute error in the inner sum
+ <=K sum_(a<=T)log(a)/(a ell)
+ =O_theta((log T)^2/ell)=O_theta(L^(-1/2)).       (13)
+
+The error from (6), summed absolutely over the same cofactors, is
+
+ O_theta(x (1+log T)/ell^2)=O_theta(x/L^(7/4)).    (14)
+
+For completeness, the ordinary reciprocal sum converges and equals0:
+
+ sum_(a>=1)mu(a)/a=0.                            (15)
+
+Convergence follows by partial summation from (4) with A>1. For s>1
+its Dirichlet series is1/zeta(s), by the absolutely convergent Euler
+product. Partial summation makes its tail uniformly small as s decreases
+to1, so its value at1 is the limit1/zeta(s)=0. The elementary simple pole
+of zeta at1 suffices here; no zero-free theorem is being inferred from
+finite sums. The same partial summation gives
+
+ |sum_(a<=T)mu(a)/a|=O_A((log T)^(1-A)).          (16)
+
+Use A=16 in (10),(16). The tail in (10) is O(x/L^3). The constant-omega
+part of (12) is smaller still. Multiplying (13) by x/ell and adding
+(14) proves the explicit sufficient bound
+
+ A_mu(a k,(20k)^theta)=O_theta(k/(log k)^(3/2)),  (17)
+
+uniformly over a=8,10,16,20. Constants and the sufficiently large base
+may depend on the FIXED theta. This proof covers every fixed theta in
+(0,1), however small. It is not a statement uniform over theta(k)->0,
+theta(k)->1, a growing list of theta values, or subpower y(k).
+
+If theta>=1, y>=20k, so every source endpoint is fully smooth and
+A_mu(a k,y)=M(a k); (4) is more than enough. Taking the SAME y in the
+four prefixes gives, for every fixed theta>0,
+
+ S_theta(k)=A_mu(10k,y)-A_mu(8k,y)
+            -A_mu(20k,y)+A_mu(16k,y)
+           =o(k/log k).                         (18)
+
+For a fixed finite list of theta values the bounds may be combined by
+taking the largest of their constants and bases. No root-denominator
+restriction is required. At theta=1, S_theta=Z exactly. For theta=0 the
+unit is the only smooth squarefree integer and w_k(1)=0, so S_0=0;
+that special case also has no bulk mode.
+
+The stronger suggestion A_mu(x,x^theta)~-x/log^2x for theta>1/2 is
+unnecessary for this obstruction and is NOT established by (17).
+An exact second-order smooth expansion would require additional signed
+moment and boundary work. In particular a uniform expansion across the
+theta=1/2 transition should not be inferred by differentiating (6).
+The present result deliberately uses only the proved small-o statement.
+
+5. The fixed-sector bulk hierarchy on the actual source
+-------------------------------------------------------
+For r=1,2,3 define the complete signed squarefree sector
+
+ U_r(k)=sum_(n squarefree, omega(n)=r)mu(n)w_k(n).
+
+Because mu(n)=(-1)^r in this fixed sector, (3) gives
+
+ U_r(k)=(-1)^r[Q_r(10k)-Q_r(8k)-Q_r(20k)+Q_r(16k)]
+ ~ a_r k (log log k)^(r-1)/log k,
+ a_r=(-1)^(r+1)2/(r-1)!.                        (19)
+
+Indeed log(c k)/log k->1 and loglog(c k)/loglog k->1 for each fixed
+c>0. The leading signed band length is10-8-20+16=-2, which is nonzero.
+Each of the four asymptotic errors is little-o of the displayed scale,
+so their subtraction is licensed. No short-interval estimate is used.
+
+The complete >=4 sector has the exact identity
+
+ U_ge4=Z-U_1-U_2-U_3.                            (20)
+
+It retains actual signs across all squarefree omega>=4 integers; it is
+not granted one sign. Quantitative Mertens cancellation at the same four
+endpoints gives
+
+ Z(k)=O_A(k/(log k)^A) for every fixed A>0.        (21)
+
+Thus U_ge4 has the large deterministic compensating modes needed to
+cancel the three displayed sector contributions. Storing its square as
+an independent positive term retains those modes instead of canceling
+them. This observation concerns storage energy, not a new Z lower bound.
+
+6. Exact necessary constraints for every positively weighted ray
+-----------------------------------------------------------------
+Let the exact state vector be
+
+ x(k)=(Z,U_1,U_2,U_3,U_ge4,S_theta1,...,S_thetas).
+
+The list of theta values is FIXED and finite. Let v be a fixed real or
+rational coefficient vector and put delta_r=v_Ur-v_Uge4. By (20),
+
+ v.x=(v_Z+v_Uge4)Z+sum_(r=1..3)delta_r U_r
+                         +sum_i v_Si S_thetai.  (22)
+
+Suppose at least one delta_r is nonzero, and let R be its largest index.
+Equations (18),(19),(21) imply
+
+ v.x(k)~delta_R a_R
+                 k (loglog k)^(R-1)/log k.      (23)
+
+The higher-r terms in (22) are EXACTLY absent because their coefficients
+are zero; no higher-order asymptotic for them is needed. The lower-r
+terms have a smaller power of loglog. Even when R=1, every smooth term
+is little-o of its scale by (18). This is why proving that smooth
+small-o for ALL proposed theta values was necessary.
+
+Now fix finitely many v_j, lambda_j>=0 and q<2, all independent of k,
+and define the proposed energy
+
+ P(k)=Z(k)^2+sum_j lambda_j(v_j.x(k))^2,
+ F(k)=P(k)/k^q>=0.                              (24)
+
+If some lambda_j>0 has a nonzero delta_r, (23) and positivity give a
+constant c>0 such that for all sufficiently large k,
+
+ F(k)>=c k^(2-q) (loglog k)^(2R-2)/(log k)^2.    (25)
+
+No cancellation with another added square can remove this lower bound.
+This is the point where positive semidefiniteness is essential.
+
+If there were a finite uniform drift constant C with
+
+ F(k)-F(floor(k/2))<=C for EVERY integer k>=2,    (26)
+
+telescoping would give F(k)<=F(1)+max(C,0)floor(log_2 k). But (25)
+divided by1+log k tends to infinity for q<2: a positive power of k
+dominates all fixed logarithmic factors. This is a contradiction. It
+already holds along k=2^h, so an eventual recurrence with a paid finite
+base set is also excluded. Uniform negative C is itself impossible for
+a nonnegative F along that chain.
+
+Therefore EVERY active ray must satisfy (2). A zero-weight ray may have
+arbitrary coefficients because it contributes nothing. An arbitrarily
+small but FIXED positive lambda does not evade the theorem: it only
+changes c and the eventual contradiction scale. The result excludes
+the proposed q=1,18/17,258/257 equally; all are strictly below2.
+
+The theorem does not apply without modification to scale-dependent
+weights tending to zero, scale-dependent directions, a growing number
+of directions or theta values, variable q, or indefinite storage.
+Those would be different proof grammars and must charge their domains
+and their own recurrence. No finite score determines the asymptotic
+contradiction threshold.
+
+7. PSD matrix form, exact nullspace and what survives
+-----------------------------------------------------
+Write e_a for coordinate vectors and put
+
+ b_r=e_Ur-e_Uge4, r=1,2,3,
+ H=e_Z e_Z^T+sum_j lambda_j v_j v_j^T.
+
+These three b_r are independent rational bulk-mode vectors. Their
+alternating amplitudes a_r do not affect their nullspace. Because
+e_Z.b_r=0, positivity gives
+
+ H b_r=0 for all r
+ iff v_j.b_r=0 for all r and all lambda_j>0.      (27)
+
+For example, b_r^T H b_r=sum_j lambda_j(v_j.b_r)^2. Thus (27) is an
+exact rational necessary matrix condition. More generally any fixed
+PSD H with target domination has the same necessary annihilation of
+these bulk vectors. To see this, factor H=B^T B and use the highest
+sector whose vector B b_r is nonzero; the norm-square argument leading
+to (25) applies. If H kills the higher sectors, their full values,
+including subleading errors, are exactly annihilated.
+
+A generic rational-nullspace projection enforcing v.b_r=0 is therefore
+mathematically justified BEFORE candidate scoring for this state family.
+It is not a claim that the original source lacks the forbidden sector
+contributions. Keep every sector in exact state reconstruction and
+certificate checking; restrict only the positive quadratic directions.
+
+There is an important exact simplification after projection. By (22),
+every surviving ray becomes
+
+           v.x=(v_Z+v_Uge4)Z+sum_i v_Si S_thetai. (28)
+
+The independently stored sectors no longer add independent arithmetic
+features to an admissible ray. With eight smooth coordinates the ambient
+state has13 coordinates and the three constraints leave a10-dimensional
+coefficient space. The additional exact null direction
+Z-U_1-U_2-U_3-U_ge4 leaves at most9 effective arithmetic features.
+It should be marked as an identity or quotiented out, not presented as
+a learned cancellation mechanism. Additional dependencies among chosen
+smooth states could lower the effective dimension further.
+
+Passing the nullspace filter does NOT prove (26). Equation (18) still
+allows signed smooth coordinates as large as k times inverse powers of
+log k, which can be much larger than k^(q/2)sqrt(log k) for q<2.
+It merely says these coordinates cannot cancel a surviving fixed-sector
+k/log k mode. There may be additional smooth bulk modes and additional
+necessary annihilation conditions; this review does not assert their
+coefficients or completeness. Proving a uniform recurrence for (28)
+still requires actual Z/smooth cross-scale correlations, paid bases and
+constants. The full original-head and RH transfer obligations remain
+unchanged.
+
+8. Exact centering is a next grammar, not an automatic remedy
+------------------------------------------------------------
+The obstruction suggests replacing positive storage of raw density
+sectors by source-independent centered states whose deterministic modes
+are removed before squares are formed. Merely subtracting the leading
+equivalent in (19) is insufficient: an o(k/log k) remainder can still
+have k/log^2 k growth and obstruct q<2. Any finite asymptotic truncation
+can leave a power-of-k term divided by further logarithms. A legitimate
+center requires its exact definition, all endpoint/boundary conventions,
+and a proved residual price or another complete signed recurrence.
+
+An exact prime-count stencil, a named smooth main/composite complement,
+or a common-prime/cell correlation from the initial073 review can expose
+that residual. Taking a fitted target-valued constant as its center
+just reconstructs the finite target. Imported asymptotics justify the
+three specific raw-sector exclusions proved here; they do not turn any
+remaining centered direction into a square-root theorem.
+
+Disposition
+------------
+The fixed-r bulk hypothesis is correct, with the signs and factorials
+in (19). The required smooth small-o hypothesis is also correct for
+every fixed theta>0 in the proposed source states, including all small
+pilot theta values, by the complete direct argument (7)-(18).
+Therefore the three rational nullspace constraints (2) are theorem-
+certified necessary conditions for constant drift of ANY fixed energy
+(24) at q<2. This is stronger than finite candidate rejection and may
+be applied before the frozen search. The surviving Z/smooth recurrence,
+additional smooth-mode centering and every full-head/RH growth claim
+remain open.

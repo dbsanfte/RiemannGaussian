@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "producer operations=11546\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.014s\n\nOK\n",
+      "operations": 11546,
+      "elapsed_seconds": 0.44326104599167593,
+      "scope": "one owned producer and runner development suite"
+    },
+    {
+      "returncode": 0,
+      "stdout": "producer operations=300\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+      "operations": 300,
+      "elapsed_seconds": 0.0665548559918534,
+      "scope": "affected inherited log-budget recovery test after correction"
+    }
+  ],
+  "operations": 11846
+}

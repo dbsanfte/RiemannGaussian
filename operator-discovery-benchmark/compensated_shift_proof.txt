@@ -1,0 +1,178 @@
+SIGNED ARITHMETIC COMPENSATORS WITH SEPARATE PRIME AND ZERO GATES
+7 October 2026. A verified compound candidate, not a novelty or RH claim.
+
+1. LEARN THE CANCELLATION FROM ACTUAL COEFFICIENTS
+
+The atomic operator is R_v(f)(n)=sum_(ab=n,b>1)f_Dinv(a)f(b)
+log(b)/(log(b)+v log(a)), and B_v=W R_v with the established perfect-power
+Mobius stripper W. shift_ratio_proof.txt proves its coefficient inverse,
+absolute native integral, composite signs and local zero signatures.
+
+The new search generates the atomic complete prefixes from constant-one
+zeta input without primality labels or factoring the coefficient index.
+It then scores actual two-prime indices. For p!=q put
+t=log(p)/log(p*q), z=t(1-t). Atomic response is exactly
+
+ B_v(p*q)=1-t/[v+(1-v)t]-(1-t)/[1-(1-v)t]
+         =-a(v)*z/[1+b(v)*z],
+ a(v)=1/v-v, b(v)=v+1/v-2.                              (1)
+
+The reciprocal response -z/B_v is affine in z. Two observed pairs learn
+its rational intercept and slope; four other pairs check the fit. Seven
+shifts supply five training and two held-out rational nodes. The search
+learns the first-order feature a(v) in the basis v^j, -2<=j<=2, giving
+v^(-1)-v. This is numerical discovery followed by an exact rational
+identity certificate (1), not a numerical extrapolation of a limit.
+
+2. A SIGNED OPERATOR AND ITS UNIVERSAL COEFFICIENT INVERSE
+
+For rational 0<u<v<1 let a=a(u)>b=a(v)>0 and set
+
+ w_u=-b/(a-b), w_v=a/(a-b),
+ R_uv=w_u R_u+w_v R_v, B_uv=W R_uv.                      (2)
+
+The weights solve sum w=1, sum w*a(v)=0 and have opposite signs.
+They are inferred from the learned feature, before choosing a zero order.
+For arbitrary normalized formal units, the a=1 coefficient row remains
+f(n), and all other factors have indices below n. Applying W inverse
+and triangular coefficient inversion proves the universal inverse with
+this averaged kernel. This is a nonlinear arithmetic map, not a Dirichlet
+product homomorphism. On squarefree p*q, input zeta^beta scales its
+response by beta^2, not beta. Ordinary root commutation is false.
+
+Negative weights require an explicit new grammar sort; the earlier
+positive-mixture grammar and its contracts are unchanged.
+
+3. A PROVED TWO-PRIME ARITHMETIC ESTIMATE AT EVERY SCALE
+
+Let b_u=b(u)>b_v=b(v)>=0. Substituting (1) in (2) cancels the term
+linear in z and gives
+
+ B_uv(p*q)=-K*z^2/[(1+b_u*z)(1+b_v*z)],
+ K=a(u)*a(v)*(b_u-b_v)/(a(u)-a(v))>0.                    (3)
+
+Thus every product of two distinct actual primes satisfies
+
+ |B_uv(p*q)|<=K*[log(P^-(p*q))/log(p*q)]^2.               (4)
+
+No cutoff, prime-size ratio or presumed prime distribution is needed.
+Since z^2/[(1+b_u*z)(1+b_v*z)] is increasing for 0<=z<=1/4,
+its sharp supremum is K/[16(1+b_u/4)(1+b_v/4)]. Prime pairs whose
+logarithm ratio tends to one approach it; Bertrand's theorem supplies
+such pairs. This is a coefficient estimate, not a prime-count estimate.
+
+Every prime still has coefficient one. On EVERY composite the atomic
+coefficients have the same sign, independent of v, by the old sign theorem.
+Therefore opposite signed weights yield the uniform elementary bound
+
+ |B_uv(n)|<=max(|w_u|*delta_u,|w_v|*delta_v),
+ delta_x=(1-x)/(1+x).                                   (5)
+
+The certificate only asserts strict prime separation when this upper
+bound is below one. It does not call (5) sharp. The small finite maximum
+is a measurement, not a proof that (3)'s sharp two-prime bound holds on
+every composite.
+
+For the learned choice u=1/3,v=2/3, the weights are -5/11,16/11,
+K=140/99, b_u=4/3,b_v=1/6, the sharp two-prime supremum is 7/110,
+and the universal composite bound (5) is 16/55<1.
+
+4. THE TWO-PRIME ESTIMATE DOES NOT EXTEND TO ALL COMPOSITES
+
+For the selected operator the scalar ratio kernel is
+
+ h(t)=9*t*(9*t+2)/[11*(t+2)*(2*t+1)].
+
+For squarefree 2*p*q with p,q comparable primes tending to infinity,
+t=log 2/log(2*p*q) tends to zero, while the other two logarithm shares
+tend to 1/2. Grouping the subset formula by whether divisor 2 occurs and
+using the mean value theorem gives
+
+ B_uv(2*p*q)=t*[h'(1)+h'(0)-2*h'(1/2)]+o(t)
+           =-(261/550)*t+o(t).                          (6)
+
+The coefficient is nonzero. Thus no constant C can make the squared
+least-prime envelope hold for every squarefree triple. Unbounded actual
+prime sequences with the required ratios follow from Bertrand's theorem.
+The source also supplies a native one-coefficient counterexample with two
+actual primes near 10^12. It does not claim a complete prefix at that index.
+Even the finite prefix detects a false global envelope. These controls
+prevent transfer of the all-scale two-prime estimate to an unsupported domain.
+
+5. AN ALL-ZERO-ORDER TEST FOR SIGNED COMBINATIONS
+
+The old local theorem gives logarithmic coefficient m/v^m at a zero of
+order m, under its zero-free corridor and locally uniform integral-tail
+conditions. Finite signed linear combination gives
+
+ c_m=m*sum_i w_i/v_i^m.                                 (7)
+
+The pair in (2) has c_m=0 exactly when
+
+ (v/u)^m = a(u)/a(v).                                   (8)
+
+Both sides are positive rationals and v/u>1, so there is at most one
+positive integer solution. Factor numerator and denominator exactly and
+compare their signed prime valuation vectors. Equality in (8) holds iff
+the target vector is the same positive integer multiple of the base vector.
+Extra prime support or inconsistent exponent ratios rules it out for EVERY
+integer m, not merely a sampled range. This exact finite factor certificate
+is distinct from primality used in the coefficient engine, which has none.
+
+For u=1/3,v=2/3,
+
+ c_m=m*(3/2)^m*(16-5*2^m)/11.
+
+It is positive at m=1 and negative for every m>=2, and never zero.
+Its prime valuation test has base 2 and target 16/5, whose extra factor 5
+rules out equality. At the old simple zeta zeros c_1=9/11; the native
+audit checks the entire local analytic logarithmic coefficient on disks,
+not only this central value.
+
+A genuinely different gate outcome occurs for u=3/7,v=5/7: the arithmetic
+compensator has weights -9/16,25/16 and passes a strict prime separation
+bound, but its leading signature vanishes at m=2. The detector must not
+pass the all-order nonzero-leading gate from simple-zero samples alone.
+Vanishing of c_2 is NOT a proof that the whole logarithmic branch disappears;
+its higher analytic coefficient may remain. That deeper gate is unresolved
+for the failed-leading-signature pair, not silently equated with zero erasure.
+
+6. COMPLETE NATIVE ZETA AND A CONDITIONAL RH TARGET
+
+For Re(s)>1 the scalar is the complete signed combination of
+
+ R_x(s)=-integral_0^infinity zeta'(s+t)/zeta(s+x*t)dt,
+ B_x(s)=sum_(k>=1)mu(k)R_x(k*s)/k.
+
+Each component retains its independently proved infinite integral and
+perfect-power-index tails. Weighted absolute tail sums justify the finite
+linear combination. The complete coefficient tail through N is at most
+sum |w_i|*N^(1-sigma)/(sigma-1). The native comparison and independent
+checker change precision, variables, meshes, cutoffs and wrong-prime controls.
+This is a complete B_uv comparison, not only a numerator or integral component.
+
+For any signed pair whose all-order certificate proves c_m!=0, define
+
+ T_uv(s)=B_uv(s)+log(s-1)*sum_i w_i*v_i*(1/zeta)'(v_i+(1-v_i)s).
+
+Single-valued holomorphic continuation to Re(s)>1/2 is equivalent to RH.
+Under RH each atomic pole-regularized function continues, so their finite
+signed sum does. Conversely choose a finite-height extremal off-line zero
+as in shift_ratio_proof.txt. Every pole regularizer and scaled k>=2 term
+is holomorphic there, but (7) is nonzero. They cannot cancel its logarithmic
+branch. The sign of (7) is irrelevant. No globally rightmost zero, unknown
+fractional numerator or presumed simple-zero conjecture is required.
+
+The coefficient estimates above do not prove that continuation or any
+RH-quality signed cancellation. Mathematical validity, arithmetic scope,
+analytic scope and publication priority remain separate audit fields.
+
+7. WHAT CHANGES IN THE SEARCH GRAMMAR
+
+The detector can now learn a contamination-canceling feature, solve for
+signed weights, certify its arithmetic range and independently reject a
+zero-order failure or an overextended envelope. A selected operator lies
+outside positive Bernstein mixtures, as its ratio kernel is not concave;
+negative atomic weights nevertheless use established scalar/arithmetic
+primitives. The exact compound's historical priority is not established.
+The verified-historically-new operator list remains empty.

@@ -1,0 +1,81 @@
+RATIONAL POWER PRODUCTIONS AND FRACTIONAL SIGNED-MOMENT TRANSFER
+
+1. The exponent a=p/d is an exact reduced rational, d>0. A finite run may
+bound p and d for cost; the semantics impose no denominator catalogue.
+
+For x>=0 and a>0, x^a is the nonnegative algebraic value y with y^d=x^p.
+For x<0, the ordinary real production requires odd d and its sign is (-1)^p.
+The signed production S_a(x)=sgn(x)|x|^a is distinct. For a,b>0 it satisfies
+S_a(S_b(x))=S_(ab)(x), S_(1/a)(S_a(x))=x, and |S_a(x)|^k=|x|^(ak).
+These are universal elementary identities, not statistical discoveries.
+The absolute production loses sign. Nonpositive exponents exclude zero;
+0^0 is rejected. Numerical balls crossing zero are bounded by endpoints
+and zero where appropriate; branch-ambiguous inputs are rejected.
+
+2. On C\(-infinity,0], the declared principal complex power is
+exp(a Log z). It is holomorphic there. Fractional power composition across
+different branch domains is NOT a universal law. At a zero of multiplicity
+m a local fractional power has monodromy exp(2*pi*i*a*m). No finite branch
+evaluation proves a global ordinary-zeta continuation or excludes a zero.
+
+3. Normalized Dirichlet powers already existed in exact_arithmetic.py.
+The new language exposes them as a distinct typed production for any Q
+exponent. If f(1)=1 and h=f-delta_1, define f^a=sum_k binomial(a,k) h^{*k}.
+At index n the terms vanish for 2^k>n. The ordinary binomial formal-series
+identities imply (f^a)^b=f^(ab) and f^a*f^b=f^(a+b) coefficientwise for all
+n. No finite prefix is used to infer convergence. The independent audit
+uses a formal logarithm and exponential with its own convolution routine.
+
+For f(n)=1 the coefficients are those of zeta(s)^a on Re(s)>1, with the
+Euler-product logarithm branch. At prime powers they are (a)_k/k!; their
+absolute values are <= (|a|)_k/k!, so the absolute series is bounded by
+zeta(sigma)^|a| for sigma>1. For 0<u<sigma-1 the omitted absolute tail
+above N is <=N^(-u)*zeta(sigma-u)^|a|. This gives a genuine all-index
+coefficient/convergence theorem, but NOT RH-strength signed cancellation.
+
+4. Let R=P(S_b) M_tilde, as in the independently checked signed Mellin
+bridge. It is real, |R(t)|<=L*t, and has Lipschitz constant at most L.
+On an integer unit interval its endpoints are rational u,v. For every
+real q>0 (not only even integers), set G_q(x)=sgn(x)|x|^(q+1).
+Then integral_0^1 |u+t(v-u)|^q dt equals |u|^q if u=v, otherwise
+[G_q(v)-G_q(u)]/[(q+1)(v-u)]. The formula also handles sign crossings.
+All intervals in a declared window are included. Native real balls
+enclose these algebraic values; fractional sums are NOT exact rationals.
+
+5. Suppose A_q(X)<=C X^beta at every dyadic X>=1. For q>=1, Holder
+(or the elementary L1 endpoint) gives
+integral_X^(2X)|R(t)|t^(-sigma-1)dt
+ <= C^(1/q) X^((beta-1)/q-sigma).
+Summing dyadic blocks proves absolute Mellin convergence for
+sigma>max((beta-1)/q,0), with bound
+C^(1/q)/(1-2^((beta-1)/q-sigma)).
+The proof therefore accepts fractional q>=1 without an integer assumption.
+
+6. For 0<q<1, Holder with exponent q is unavailable. At a maximum of
+|R| in [X,2X] let H be its height. H<=2LX. One side has available length
+at least X/2. The interval of length H/(4L) on that side stays inside
+the block and has |R|>=H/2. Thus
+A_q(X)>=H^(q+1)/(2^(q+2)L),
+and H<=K X^(beta/(q+1)), K=(2^(q+2)LC)^(1/(q+1)).
+Then integral_X^(2X)|R| <=H^(1-q) A_q(X)
+ <= C K^(1-q) X^(2beta/(q+1)).
+Its Mellin transform converges for sigma>max(2beta/(q+1)-1,0),
+with bound C K^(1-q)/(1-2^(2beta/(q+1)-1-sigma)).
+This is a sufficient transfer with an explicit loss, not a claim that
+the q>=1 formula continues unchanged below one.
+
+7. If the ordinary-zeta multiplier F=P(b^(-s)) is nonzero throughout
+Re(s)>=1/2 and the resulting eta<=1/2, a PROVED uniform moment premise
+would exclude ordinary zeros right of 1/2 via the existing meromorphic
+Mellin identity, hence RH by symmetry. If an already certified actual
+critical zero has F!=0 and eta<1/2, that uniform premise is impossible.
+Neither the root's smaller amplitude nor finite window survival supplies
+the missing signed arithmetic premise. A moment of S_a(R) of order k
+must be audited at effective order a*k of R. Nonlinear sums of roots
+have no automatic linear Mellin bridge and remain unsupported leads.
+
+Proof dependencies: elementary real/complex algebra, formal binomial
+series in the locally nilpotent Dirichlet algebra, Holder for q>=1,
+the Lipschitz estimate above, and signed_mellin_proof.txt plus the
+independently checked all-height multiplier certificate. Historical
+priority does not enter acceptance. RH remains unproved.

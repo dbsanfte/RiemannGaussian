@@ -1,0 +1,24 @@
+{
+  "schema": "analytical-symbolic-development-receipt-v1",
+  "module": "review034",
+  "memo": "CORE_JOINT_FRONTIER_REVIEW_034.txt",
+  "invocations": [
+    {
+      "kind": "new_exact_symbolic_identity_check",
+      "returncode": 0,
+      "operations": 217856,
+      "formed_terms": 980,
+      "collected_terms": 980,
+      "checks": [
+        "86 inherited inverse terms expand exactly to the saved 980 formal terms",
+        "(1-r) G24(r) = 1-r^24",
+        "(1-r)^2 H24(r) = 1-25r^24+24r^25"
+      ],
+      "accounting": "64+8a before each binomial term; 20 per compared collected row; 8 per univariate coefficient multiply-add",
+      "actual_source_evaluations": false,
+      "old_studies_or_tests_run": false,
+      "hashes": false
+    }
+  ],
+  "cumulative_operations": 217856
+}

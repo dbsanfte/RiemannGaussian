@@ -1,0 +1,35 @@
+{
+  "schema": "core-weighted-height-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_weighted_height_search"
+      ],
+      "returncode": 0,
+      "operations": 15671737,
+      "elapsed_seconds": 9.946176414989168,
+      "test_count": 19,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_weighted_height_search operations=15671737 elapsed_seconds=9.879125\n",
+      "stderr": "...................\n----------------------------------------------------------------------\nRan 19 tests in 9.879s\n\nOK\n",
+      "max_rss_kib": 37720
+    }
+  ],
+  "operations": 15671737,
+  "resource_caps": {
+    "operations": 50000000,
+    "elapsed_seconds": 180,
+    "memory_bytes": 805306368
+  },
+  "edits_stopped": true,
+  "actual_source_observations": 0,
+  "prior_suites_run": 0,
+  "independence": "reflection-derived exponents; active affine minimum-tau certificate; primitive rational harmonic nullspace",
+  "analytic_reviews": [
+    "CORE_WEIGHTED_MOMENT_RULE_REVIEW_020.txt",
+    "CORE_WEIGHTED_MOMENT_SHARPNESS_REVIEW_021.txt"
+  ]
+}

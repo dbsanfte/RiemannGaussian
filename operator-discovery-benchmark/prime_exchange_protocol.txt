@@ -1,0 +1,66 @@
+JOINT PRIME FACTORS AND COMPLETE EXCHANGE KERNELS -- 9 October2026
+
+This is a new exact factor/geometry analysis of the272 independently checked
+distinct-prime words from prime-slide-results/pilot-001. It does not rerun
+their source arithmetic, candidate enumeration, or coordinatewise scores.
+All prior files and results are immutable. The original open target and its
+joint centering are input via candidate10_integrated_prime_recovery_obligation.json.
+
+Enumerate all48 normalized primitive forms a*x+b*y+c with integer coefficients
+of absolute value<=2, (a,b)!=0, gcd1, first nonzero positive. Extract every
+common factor and multiplicity across ALL9 tensor polynomials. Producer uses
+sparse long division. Independent checker uses exact rational substitution
+for divisibility/maximality and literal multiplication for reconstruction.
+Zero components are retained; they cannot hide another nonzero component.
+
+On 0<x<y<1, x=q^-1/3,y=r^-1/3 for actual primes r<q, homogeneous linear
+factors supply powers of y, and affine factors use the exact triangle-vertex
+bound. Residual monomial total degree and full l1 constants are retained.
+This admits diagonal vanishing even when both separate variable valuations
+are zero. Prime-exchange determinants were considered analytically before
+this run; their identity is a named calibration, not claimed blind invention.
+
+Only a formal prime-label antisymmetric word made entirely of cross-leg
+placements compiles into a correction of the complete paired prefix kernel.
+Its new scalar projection is p*p, rather than the old z0*z0 bank projection.
+Fresh prime on EACH leg and cofactor>=2 imply p=a on both lifted values.
+Other formal words keep their source identity but receive no such recovery
+credit. Same-prime labels and cross-divisibility require separate complete
+sectors in any eventual whole-target proof.
+
+Use the COMPLETE integer counts
+  K_A=max(0,min(2X,tau_theta(r))-max(X,qH,rK)),
+  K_B=max(0,min(2X,tau_theta(r))-max(X,rH,qK)),
+theta3/4, H,K>=2, r<q. This includes points where only one orientation is
+present. The exact averaged pair is symmetric core plus
+(P_A-P_B)*(K_A-K_B)/4. Never discard its symmetric core or infer negative
+credit from the absolute bound on the correction.
+
+The actual-prime graph menu is the next1,2,4 larger prime neighbours of each
+r, with both endpoints above the original cutoff. Their outgoing degrees
+are uniform by definition. With coefficient envelope C*d2(H)*d2(K)*r^-b,
+both orientation supports give
+  2*C*d*(2+b)/(1+b)*2^max(2-theta*(1+b),0)
+       *X^(1-theta*(1+b))*(1+log(2X))^2.
+The projected correction factor1/4 is included in C. This is a reviewed
+all-scale bound for the edge correction only. Complete all-pair recovery,
+the constant/symmetric mode, path/congestion cost and other sectors stay open.
+A stronger one-log Delta/z0 wedge bound is separately identified as an
+analytically reviewed input, never silently substituted for the generic rule.
+
+Select all admitted positive-order words, by decreasing common order,
+term count and original ordinal. Retain all272 factorizations, including
+ordinary unit factors which give no large-prime suppression.
+Proof reviews also record same-product squarefree sign invariance, paid
+small-product/primitive-height sectors, and explicit cross-product and
+valuation-allocation possibilities. No isolated squarefree projection is
+promoted to a nonnegative energy. Pole compensation remains joint with K.
+
+Work cap30m proxy operations including cumulative development, one frozen
+combined suite and250k metadata reserve;900seconds;4GiB process memory
+within the user's16GiB aggregate allowance. The small exact pass is serial;
+subagents are used only for the substantial independent code/mathematical
+reviews. One owned development suite per test module, affected tests after
+fixes only, one frozen combined suite. No unchanged retry. Direct byte
+snapshots/comparisons; no hashes. All whole-target/RH claims remain false
+unless a genuinely complete independent proof is supplied.

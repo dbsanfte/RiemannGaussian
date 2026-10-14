@@ -1,0 +1,436 @@
+SECOND-ORDER SMOOTH BULK EXCLUDES THE ACTIVE073 STORAGE RAY
+===========================================================
+
+Conclusion and scope
+----------------------
+The supplied critical q=1 candidate cannot satisfy the proposed recurrence
+uniformly across all scales, by an unconditional analytical obstruction
+independent of its finite
+counterexample and independently of the fitted constant C.  The active
+positive ray supplied by the root is
+
+ lambda=239444426752/549756346795>0,
+ R(k)=S_(2/3)(k)/4-S_(4/5)(k)/8,
+ E(k)>=lambda R(k)^2, F(k)=E(k)/k.                 (1)
+
+For the actual source
+
+ w_k(n)=1_(8k,10k](n)-1_(16k,20k](n), X=20k,
+ S_theta(k)=sum_(n<=20k)mu(n)w_k(n)
+                         1[P+(n)<=(20k)^theta],   (2)
+
+the proof below gives, for every FIXED1/2<theta<1,
+
+ A_mu(a k,(20k)^theta)
+ =-a k/(log(a k))^2+O_theta(k/(log k)^(9/4)),
+                a in {8,10,16,20},               (3)
+ S_theta(k)=2k/(log k)^2
+                  +O_theta(k/(log k)^(9/4)).      (4)
+
+Consequently
+
+ R(k)=k/(4(log k)^2)+O(k/(log k)^(9/4)),
+ F(k)>=(lambda/16+o(1))k/(log k)^4.               (5)
+
+This growth contradicts the logarithmic upper bound forced by ANY finite
+constant dyadic drift.  Increasing C or paying a larger finite base cannot
+repair this fixed formula.  The task's suggested range "theta>1/2" needs
+the upper restriction theta<1: at theta>=1 the source is fully smooth and
+A_mu=M, so the proposed negative second-order equivalent is false there.
+Both active values2/3 and4/5 lie in the proved range.
+
+This review reads only the two existing analytical reviews and the root's
+supplied exact candidate ray/outcome summary.  It does not read scientific
+datasets, candidate files or further numerical outcomes; it runs no
+source-scale queries, refits no parameter, uses no hashes, and changes no
+frozen checker, learner, producer, runner, or scientific result.  The only
+new file is this review.  The unconditional imported theorems are named
+below; all new identities, tails, expansions and exclusions are proved
+here.  No RH assumption is made.
+
+1. Unconditional analytical inputs
+-----------------------------------
+Write M(t)=sum_(n<=t)mu(n), pi(t)=#{prime p<=t}.  All upper boundaries
+mean their exact integer floors; t itself may be real.  We use:
+
+ (M) For every fixed B>0,
+     |M(t)|<=C_B t/(log t)^B for all sufficiently large t.
+
+This follows from the unconditional Mertens estimate in Ethan Simpson
+Lee and Nicol Leong, "New explicit bounds for Mertens function and the
+reciprocal of the Riemann zeta-function," Theorem1.1, equation(9), with
+its general version in Theorem2.2.  The displayed bound has order
+t log(t) exp(-c sqrt(log t)), which implies (M).  This is the same primary
+input used in MOBIUS_PRIME_STORAGE_ASYMPTOTIC_REVIEW_073.txt.
+[Lee and Leong, primary paper](https://arxiv.org/pdf/2208.06141)
+
+ (P) pi(t)=t/log t+t/(log t)^2+O(t/(log t)^3)
+     as t->infinity, uniformly for all sufficiently large real t.
+
+For a checked primary unconditional source, Tim Trudgian, "Updating the
+error term in the prime number theorem," Ramanujan Journal39 (2016),
+225-234, Theorem2, bounds |pi(t)-li(t)| by an explicit constant times
+t(log t)^(-3/4) exp(-sqrt(log t/6.455)) for t>=229.  This error is smaller
+than t/(log t)^3 eventually.  Two integrations by parts give
+li(t)=t/log t+t/(log t)^2+O(t/(log t)^3): the remaining integral of
+1/(log v)^3 is O(t/(log t)^3), as follows by splitting at sqrt(t).
+Thus (P) is an immediate sufficient consequence of that primary theorem.
+[Trudgian, primary paper, Theorem2](https://arxiv.org/pdf/1401.2689)
+
+These imported unconditional theorems do the analytical work.  They are
+not consequences of finite073 scoring.  The proof does not require the
+rough-count theorem used by the preceding weaker smooth review, nor any
+bound for primes in short intervals.  The elementary Laurent expansion
+zeta(s)=1/(s-1)+O(1) and its analytic refinement near1 are also used to
+identify reciprocal moments; no information about critical-strip zeros
+is derived from those moments.
+
+2. Exact unique-large-prime identity, with every factor gate
+-----------------------------------------------------------
+Define
+
+ A_mu(x,y)=sum_(n<=x,P+(n)<=y)mu(n), P+(1)=1,
+ U=x/y,
+
+and suppose y>=1 and y>=sqrt(x).  Every n<=x has at most one prime
+factor>y, counted with multiplicity: two such factors would have product
+>y^2>=x.  In particular a prime square p^2 with p>y is outside the domain.
+
+A nonsmooth n with nonzero mu(n) therefore has a unique representation
+n=pm with p>y prime and m<=x/p<x/y<=y.  Every prime factor of m is<=m<y,
+so p does not divide m: the coprimality and largest-prime gates hold
+automatically.  Hence mu(pm)=-mu(m).  Conversely, any integer m<=U and
+prime y<p<=x/m satisfy these gates and create exactly one nonsmooth n.
+Squareful m have mu(m)=0; their terms are retained as zeros.  Squareful n
+also contribute zero.  The unit is in A_mu and M and is never deleted.
+
+Counting the primes with the strict lower and closed upper endpoints gives
+the exact finite identity
+
+ A_mu(x,y)=M(x)+sum_(m<=U)mu(m)[pi(x/m)-pi(y)]
+         =M(x)+sum_(m<=U)mu(m)pi(x/m)-pi(y)M(U).   (6)
+
+If m=U happens to be an integer, x/m=y and its bracket is exactly zero.
+If y itself is prime, it is excluded from the large-prime sum because
+pi(y) is subtracted.  No separate prime-endpoint or square correction
+is implicit.  This is the specialization of the exact largest-prime
+identity in MOBIUS_PRIME_BLOCK_REVIEW_073.txt, equations(6)-(7).
+
+Using a real algebraic y or floor(y) in the smooth indicator gives the
+same prime mask.  We retain the real y in (6), since integer primes p>y
+are exactly the primes p>floor(y).  The cofactor cutoff U=x/y then has
+the zero-bracket convention just explained.  There is no numerical
+rounding of a cutoff anywhere in this argument.
+
+3. Fixed theta and uniformity over the four source endpoints
+-------------------------------------------------------------
+Fix1/2<theta<1 once and for all.  For each a in {8,10,16,20}, put
+
+ x=a k, y=(20k)^theta, L=log x,
+ T=exp(L^(1/4)), U=x/y.                          (7)
+
+Then log y=theta L+theta log(20/a), and
+log U=(1-theta)L-theta log(20/a).  In particular y^2/x->infinity,
+y/x->0, U->infinity, T<U and y*T<x for all sufficiently large k.
+All statements hold simultaneously over the four endpoints by taking
+the maximum of their four thresholds.  Constants may depend on fixed
+theta.  For either fixed active theta, every needed factor gate from
+section2 is therefore available before using (6).
+
+The bounds below are also uniform over any fixed compact subinterval
+of(1/2,1), or any fixed finite list within that interval, by keeping
+both endpoint gaps bounded away from zero.  They are not claimed
+uniform as theta(k)->1 or theta(k)->1/2 from below.  In the ACTUAL source,
+theta=1/2 also satisfies y^2=20k>=x for all four endpoints, so the same
+identity and proof work at that particular closed endpoint.  That fact
+does not extend the proof to theta<1/2.
+
+4. Exact truncation and payment of both cofactor/boundary tails
+--------------------------------------------------------------
+Split the bracketed sum in (6) at the real T:
+
+ H_short=sum_(m<=T)mu(m)pi(x/m)-pi(y)M(T),
+ H_tail=sum_(T<m<=U)mu(m)[pi(x/m)-pi(y)].          (8)
+
+These two terms exactly add to the complete sum in (6); in particular
+the original boundary -pi(y)M(U) has not been lost.  Reorder the finite
+tail by its primes before applying any absolute value:
+
+ H_tail=sum_(y<p<=x/T, p prime)[M(x/p)-M(T)].      (9)
+
+Proof: for a fixed p>y the inner integers are T<m<=x/p.  The condition
+m<=U follows automatically from p>y.  If x/p=T, the bracket is zero,
+so a prime at the displayed upper boundary causes no error.  The strict
+lower cutoff m>T agrees exactly with M(x/p)-M(T), including floors.
+
+Define epsilon(T)=sup_(t>=T)|M(t)|/t.  Input(M) gives
+epsilon(T)<=C_B/(log T)^B when T is sufficiently large.  Both arguments
+x/p and T in (9) lie in this domain.  A harmonic all-integer bound and
+the elementary pi(x/T)<=x/T yield
+
+ |H_tail|<=epsilon(T)[x sum_(y<p<=x/T)1/p
+                              +T pi(x/T)]
+          <=epsilon(T)x(2+log x).               (10)
+
+No prime reciprocal asymptotic, unproved cofactor independence, or M
+estimate below T is needed.  Choose B=16.  Since log T=L^(1/4),
+
+                     H_tail=O(x/L^3).           (11)
+
+The short boundary is even smaller using the trivial bound |M(T)|<=T:
+
+ |pi(y)M(T)|<=yT
+ =x exp(-(1-theta)L+L^(1/4)+theta log(20/a))
+ =O_theta(x/L^N) for EVERY fixed N>0.            (12)
+
+As an additional independent audit of the original boundary in (6),
+pi(y)<=y and input(M) at U give
+
+ |pi(y)M(U)|<=C_16 x/(log U)^16
+                     =O_theta(x/L^16).          (13)
+
+Thus no cancellation involving an unpaid pi(y)M(x/y) boundary is being
+assumed.  Equations(8)-(12) already suffice for the proof; (13) explicitly
+checks the boundary named in the task.  The residual M(x) in (6) is
+also O(x/L^16).  All these estimates are uniform over the four endpoints
+in section3.  They may begin at a large threshold; no numerical
+counterexample threshold is inferred from them.
+
+5. The two exact signed reciprocal moments and quantitative tails
+-----------------------------------------------------------------
+Input(M) proves ordinary convergence of
+
+ V_0=sum_(m>=1)mu(m)/m,
+ V_1=sum_(m>=1)mu(m)log(m)/m.                    (14)
+
+For example, partial summation bounds their tails beyond T by
+
+ |sum_(m>T)mu(m)/m|=O_B((log T)^(1-B)),
+ |sum_(m>T)mu(m)log(m)/m|=O_B((log T)^(2-B)),     (15)
+
+for B>2.  The first boundary is M(T)/T; its integral is bounded by
+C_B integral_T^infinity dt/[t(log t)^B].  For the second boundary use
+M(T)log(T)/T; the derivative of log(t)/t has magnitude at most
+(1+log t)/t^2.  The resulting integral is of order (log T)^(2-B).
+Both boundaries are included, and the estimates apply to real T.
+
+For s>1 the absolutely convergent Euler product gives
+
+ sum_(m>=1)mu(m)m^(-s)=1/zeta(s),
+ sum_(m>=1)mu(m)log(m)m^(-s)=-(1/zeta)'(s).       (16)
+
+Partial summation with input(M) makes the tails of both series uniformly
+small for1<=s<=2: replace t^(-s) by at most t^(-1), and bound its
+derivative by2t^(-2); for the logarithmic series the derivative is at
+most(1+2log t)t^(-2).  These give the same integrable majorants as in
+(15).  Consequently the s->1+ limits in (16) equal the ordinarily
+convergent sums in (14); an unsupported Abel-limit identification is
+not being substituted for convergence.
+
+The simple pole of zeta at1 implies that its reciprocal has a simple
+zero with derivative1 there.  More explicitly,
+1/zeta(s)=(s-1)+O((s-1)^2), with analytic remainder.  Thus
+
+                         V_0=0, V_1=-1.         (17)
+
+For an elementary justification of the analytic qualification, partial
+summation of sum n^(-s) gives
+zeta(s)=s/(s-1)-s integral_1^infinity {t}t^(-s-1)dt for real s>1.
+The bounded fractional-part integrand extends the integral analytically
+to Re(s)>0, since its derivatives insert only fixed powers of log t.
+Therefore zeta(s)=1/(s-1)+h(s) with h analytic near1, and its reciprocal
+is (s-1)/[1+(s-1)h(s)].  Its derivative at1 is exactly1, without a
+critical-strip zero assertion or a differentiated informal O estimate.
+
+The negative sign in the log moment is essential.  Differentiating the
+Dirichlet series for1/zeta contributes a minus sign, and the derivative
+of1/zeta at1 is+1.  With B=16 and log T=L^(1/4), the truncated sums obey
+
+ sum_(m<=T)mu(m)/m=O(L^(-15/4)),
+ sum_(m<=T)mu(m)log(m)/m=-1+O(L^(-14/4)).        (18)
+
+No absolute convergence of either series at1 is asserted or required.
+
+6. Uniform short-cofactor expansion and its absolute remainder
+---------------------------------------------------------------
+For every m<=T, put u=log m.  Then0<=u<=L^(1/4),
+log(x/m)=L-u, and x/m>=x/T->infinity.  Input(P) holds throughout this
+entire range with one constant.  Since u/L->0 uniformly,
+
+ 1/(L-u)=1/L+u/L^2+O(u^2/L^3),
+ 1/(L-u)^2=1/L^2+O(u/L^3).
+
+The geometric first expansion has a denominator bounded away from zero
+for large L; the second follows by the mean-value theorem.  Substituting
+these into(P) gives, uniformly for all m<=T,
+
+ pi(x/m)=(x/m)[1/L+(u+1)/L^2
+                              +O((u^2+u+1)/L^3)]. (19)
+
+Sum (19) against the actual mu(m).  The leading terms keep their signs;
+only the remainder is bounded absolutely.  Its total is at most
+
+ O(x/L^3)sum_(m<=T)(1+log m+(log m)^2)/m
+ =O(x(1+log T)^3/L^3)
+ =O(x/L^(9/4)).                                 (20)
+
+The elementary harmonic/log-moment bounds here follow by integration
+and hold also for a noninteger T.  There is no claim of cancellation
+inside this error.  In particular, this is why the full cofactor range
+m<=U cannot simply be Taylor-expanded and its error summed absolutely:
+log U is of order L, which would not give (20).  The signed tail was
+paid first by (9)-(11).
+
+Using (18) in the two leading terms yields
+
+ sum_(m<=T)mu(m)pi(x/m)
+ = (x/L)sum_(m<=T)mu(m)/m
+  +(x/L^2)[sum_(m<=T)mu(m)log(m)/m
+                         +sum_(m<=T)mu(m)/m]
+  +O(x/L^(9/4))
+ =-x/L^2+O(x/L^(9/4)).                          (21)
+
+For clarity, the error from the first reciprocal tail is
+O(x/L^(19/4)), and the logarithmic reciprocal tail contributes
+O(x/L^(22/4)); both are much smaller than (20).  The +1 from the
+second PNT term multiplies V_0=0 and does not change the coefficient.
+
+Combine (6), (8), (11), (12), (21) and the bound for M(x).  This proves
+
+ A_mu(x,y)=-x/(log x)^2+O_theta(x/(log x)^(9/4))  (22)
+
+in the domain(7), with complete factor gates and all boundary/tail
+terms paid.  Equation(3) is (22) at the four admitted source endpoints.
+The preceding weaker O(k/log^(3/2)k) review does not imply this equivalent;
+the new exact tail reordering and signed log moment supply the missing
+second-order information.
+
+7. Source stencil and the active ray
+-------------------------------------
+The SAME y=(20k)^theta is used in all four prefixes.  Thus exactly
+
+ S_theta(k)=A_mu(10k,y)-A_mu(8k,y)
+            -A_mu(20k,y)+A_mu(16k,y).           (23)
+
+For each fixed positive endpoint a,
+a k/(log(a k))^2=a k/(log k)^2+O(k/(log k)^3).
+Applying (3) in (23) gives the coefficient
+
+                -(10-8-20+16)=+2,
+
+which proves (4).  The subtraction does not license a missing error:
+each of its four errors is O_theta(k/(log k)^(9/4)), and their finite
+sum has that same order.  For the fixed list {2/3,4/5}, take the maximum
+of its two constants and thresholds.  Therefore
+
+ S_(2/3)(k)=2k/(log k)^2+O(k/(log k)^(9/4)),
+ S_(4/5)(k)=2k/(log k)^2+O(k/(log k)^(9/4)),
+ R(k)=(1/4-1/8)*2k/(log k)^2
+                   +O(k/(log k)^(9/4))
+     =k/(4(log k)^2)[1+O((log k)^(-1/4))].        (24)
+
+The two smooth states have the same bulk coefficient.  Their signed
+combination in the frozen ray fails to annihilate it.  For large enough
+k, R(k)>=k/(8(log k)^2), so the complete positive storage satisfies
+
+        E(k)>=lambda k^2/[64(log k)^4].          (25)
+
+This uses only the one supplied active ray.  Every other added weighted
+square, regardless of its signed internal cross terms, is nonnegative
+and cannot remove this level lower bound.  Z(k)^2 is also nonnegative.
+No independent signs or termwise absolute values of the source have
+been introduced.
+
+8. All-scale exclusion for every constant and every finite base
+----------------------------------------------------------------
+Suppose some finite real C paid the full q=1 recurrence
+
+ F(k)-F(floor(k/2))<=C for EVERY integer k>=2.    (26)
+
+Telescoping the actual floor chain to1 gives
+
+       F(k)<=F(1)+max(C,0)floor(log_2 k).         (27)
+
+Nonnegative F excludes a genuine negative C along k=2^h; replacing C
+by max(C,0) merely makes the displayed contradiction valid for every
+proposed finite real value.  But (25) divided by k gives a lower bound
+lambda k/[64(log k)^4], and its ratio to1+log k tends to infinity.
+This contradicts (27).  The stronger asymptotic lower bound is (5).
+
+The same contradiction excludes an eventual recurrence valid only for
+k>=K_0 with any fixed finite K_0 and all smaller bases paid: telescope
+to the finite base set and use its finite maximum.  Hence, for EVERY
+finite C, the complete frozen F has infinitely many positive drift
+violations above C.  Otherwise the recurrence would hold eventually.
+This last statement does not identify their numerical locations and
+does not claim that every sufficiently large complete-state drift is
+positive.  Other terms can affect individual drift differences while
+remaining unable to cancel the positive level lower bound.
+
+For the one ray alone, its normalized q=1 energy is
+lambda R(k)^2/k~lambda k/[16(log k)^4].  Its own floor-parent drift is
+therefore~lambda k/[32(log k)^4].  That observation is not an asymptotic
+formula for the full candidate's drift; (25)-(27) are the rigorous
+full-candidate exclusion that does not require such a formula.
+
+More generally the SAME fixed positive ray rules out every fixed q<2:
+E(k)/k^q is bounded below by a positive constant times
+k^(2-q)/(log k)^4, again faster than logarithmic.  This statement applies
+to another candidate only if it actually contains this ray or another
+proved nonzero bulk ray.  The supplied fact that all three finite073
+recurrences were refuted does not, by itself, establish that structural
+hypothesis for the other two frozen formulas.
+
+9. Necessary grammar change and the remaining open obligations
+----------------------------------------------------------------
+For a fixed finite list of smooth exponents in(1/2,1), a direction using
+only those coordinates and Z has
+
+ v(k)=c_Z Z(k)+sum_i c_i S_theta_i(k)
+     =2(sum_i c_i)k/(log k)^2
+                         +O(k/(log k)^(9/4)),    (28)
+
+because the same input(M) gives Z(k)=O_B(k/(log k)^B) at the four source
+endpoints for every fixed B.  If sum_i c_i is nonzero, any fixed positive
+weight on v(k)^2 excludes uniform constant drift at fixed q<2.  Thus
+sum_i c_i=0 is a proved necessary constraint in THIS restricted
+Z/high-smooth ray family.  The active ray has sum c_i=1/8 and fails it.
+
+After the preceding sector-nullspace conditions, balanced sector terms
+reduce exactly to an additional multiple of Z, so this condition also
+applies to rays of that balanced form when their remaining smooth
+coordinates all lie in the present range.  It is not asserted for an
+arbitrary ray also containing theta<1/2 coordinates: those could have
+other second-order coefficients, and their signed interaction has not
+been analyzed here.  Similarly, passing sum c_i=0 only removes THIS
+leading bulk coefficient; it does not prove a drift law.
+
+A next grammar can impose these proved, profile-specific necessary constraints
+before scoring, or use a fully specified exact centered signed stencil
+with its complete remainder price.  Retuning C is mathematically ruled
+out for the active formula.  Subtracting only2k/log^2k is not a licensed
+square-root residual price: (4) leaves an O(k/log^(9/4)k) remainder,
+far larger than sqrt(k log k), and gives no theorem that its quadratic
+dyadic drift is bounded.  Further logarithmic terms or a valid complete
+centering/correlation law may still matter.  No finite asymptotic
+truncation may be called paid merely because its first bulk term cancels.
+
+This review proves an unconditional obstruction for the specified raw
+storage ray.  It proves neither a lower bound for |Z(k)| nor an
+RH-strength upper bound for Z.  It does not disprove RH; it excludes a
+chosen positive storage formula that adds a deterministic smooth bulk
+mode before dividing by k.  The full source recurrence after a legitimate
+grammar change, the joined head/core transfer, and RH remain open.
+
+Disposition
+-------------
+The stronger smooth equivalent is PROVED for each fixed1/2<theta<1,
+with the explicit sufficient error in (3)-(4), exact large-prime and
+prime-square gates, exact truncation, both pi(y)M boundaries paid,
+ordinary reciprocal-moment convergence, the sign V_1=-1, and uniformity
+over all four original source endpoints.  It excludes the root-supplied
+positive ray in the frozen q1 candidate for ANY finite C and ANY finite
+base enlargement.  The finite first failure at3008 is consistent with
+this obstruction but is not used in its proof.  The next authorized
+change should be to the proof grammar, with all residual obligations
+kept visible, rather than a larger fitted constant for this formula.

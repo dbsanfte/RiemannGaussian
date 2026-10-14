@@ -1,0 +1,25 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "failed": 0,
+      "output": "test_bound_outer_binding_mutations_and_boundary (test_check_mobius_coupled_remainder_083.Tests) ... ok\ntest_complete_projection_partition_and_no_promotion (test_check_mobius_coupled_remainder_083.Tests) ... ok\ntest_huge_horizon_resource_preallocation_and_shapes (test_check_mobius_coupled_remainder_083.Tests) ... ok\ntest_literal_raw_identity_negative_gram_and_actual_mu (test_check_mobius_coupled_remainder_083.Tests) ... ok\ntest_wrong_full_price_and_dropped_negative_gram_rejected (test_check_mobius_coupled_remainder_083.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.094s\n\nOK\n",
+      "passed": 5,
+      "status": "PASS",
+      "tests": 5
+    }
+  ],
+  "distinct_tests": 5,
+  "failed_executions": 0,
+  "hashes_used": false,
+  "latest_outcome": "PASS",
+  "old_tests_run": false,
+  "passed_executions": 5,
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 5,
+  "uniform_remainder_bound_proved": false,
+  "uniform_source_bound_proved": false
+}

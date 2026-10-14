@@ -1,0 +1,42 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_prime_ratio_obstruction_059.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 16,
+      "stdout": "SYNTHETIC_WORK module=check_prime_ratio_obstruction_059 operations=47947\n",
+      "stderr": "test_alias_float_bool_and_large_rationals_rejected (__main__.RatioObstructionCheckerTests) ... ok\ntest_all_four_exact_profile_gates (__main__.RatioObstructionCheckerTests) ... ok\ntest_bad_profile_or_sign_and_different_endpoints (__main__.RatioObstructionCheckerTests) ... ok\ntest_both_first_pass_groups_and_canonical_residual (__main__.RatioObstructionCheckerTests) ... ok\ntest_boundary_band_parameters_rejected (__main__.RatioObstructionCheckerTests) ... ok\ntest_capacity_rejection_and_meter_cap (__main__.RatioObstructionCheckerTests) ... ok\ntest_charge_only_pipeline_meter (__main__.RatioObstructionCheckerTests) ... ok\ntest_complete_prime_mask_and_ordered_source_scales (__main__.RatioObstructionCheckerTests) ... ok\ntest_cost_exclusion_is_not_arithmetic_or_rh_refutation (__main__.RatioObstructionCheckerTests) ... ok\ntest_density_preserves_whole_fixed_interval_and_modulus (__main__.RatioObstructionCheckerTests) ... ok\ntest_general_rational_band_and_order_exponent (__main__.RatioObstructionCheckerTests) ... ok\ntest_midpoint_cannot_hide_component_floor_changes (__main__.RatioObstructionCheckerTests) ... ok\ntest_open_integer_endpoints_are_allowed (__main__.RatioObstructionCheckerTests) ... ok\ntest_prior_scan_descending_and_unsupported_rescue_rejected (__main__.RatioObstructionCheckerTests) ... ok\ntest_schema_rejects_forged_proof_or_source_flags (__main__.RatioObstructionCheckerTests) ... ok\ntest_smallest_outside_prime_is_mandatory (__main__.RatioObstructionCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.006s\n\nOK\n",
+      "operations": 47947,
+      "elapsed_seconds": 0.07450354000320658,
+      "peak_rss_KiB": 25336
+    }
+  ],
+  "operations": 50047947,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true,
+  "owned_suite_operations": 47947,
+  "preparatory_reserve_operations": 50000000,
+  "preparatory_invocations": [
+    {
+      "command": "source-free fixture calibration: exact open cells with masks [2,5], [3,5], [2,7], extent40; no producer imports",
+      "returncode": 0,
+      "tests": 0,
+      "stdout": "Tiny exact cell fixtures generated before the suite; no scientific source mask or numerical kernels.",
+      "stderr": "",
+      "operations": 50000000,
+      "operation_accounting": "conservative full50million Meter cap reserve; the preparatory command did not emit its final operation count",
+      "elapsed_seconds": 0.1
+    }
+  ],
+  "root_receipt_note": "Preserve preparatory work separately from actual tests so the existing positive-test-count reader can admit the suite; reserve remains explicitly distinguished from measured work."
+}

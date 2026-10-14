@@ -1,0 +1,14 @@
+{
+  "attempts": [
+    {
+      "tests": 2,
+      "success": true,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.14329276100033894,
+      "output": "test_actual_prime_frontier_in_original_kernel (test_mobius_density_coverage_081.CoverageTests) ... ok\ntest_exact_physical_coverage_against_dense_pairs (test_mobius_density_coverage_081.CoverageTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.143s\n\nOK\n"
+    }
+  ],
+  "distinct_tests": 2,
+  "status": "PASS"
+}

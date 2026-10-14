@@ -1,0 +1,61 @@
+{
+  "RH_proved": false,
+  "analyst_nominated_frame_coefficients": false,
+  "common_horizon": "N=4X-1",
+  "discovery_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "evaluation_scales": [
+    16384,
+    32768,
+    65536,
+    131072
+  ],
+  "fresh_source_holdout": false,
+  "generated": [
+    "generic nullspace",
+    "all signed eliminators",
+    "recovery denominator",
+    "selected construction",
+    "remaining proof obligations"
+  ],
+  "grammar": "generic degree1 polynomial kernel; exhaustive nonempty square-pool subsets",
+  "hashes": false,
+  "inclusive_operation_cap": 1500000000,
+  "input": "candidate10_joint_power_obligation.json",
+  "main_cap_seconds": 3600,
+  "main_operation_cap": 200000000,
+  "model_calls_in_search": 0,
+  "new_source_coefficients": false,
+  "per_process_memory_bytes": 4294967296,
+  "phase_worker_cap_seconds": 1800,
+  "role_operation_cap": 600000000,
+  "schema": "core-cutoff-frame-run-v1",
+  "selection": "worst finite recovery doubling exponent, then basis count, then id; separate support sizes; retain fully paid head pair",
+  "signed_residual_energy_evaluated": false,
+  "supplied": [
+    "language and resource bounds",
+    "linear and Cauchy recovery",
+    "moment semantics",
+    "selection policy"
+  ],
+  "total_memory_ceiling_bytes": 17179869184,
+  "whole_signed_bound_proved": false,
+  "worker_precision_bits": [
+    192,
+    224
+  ]
+}

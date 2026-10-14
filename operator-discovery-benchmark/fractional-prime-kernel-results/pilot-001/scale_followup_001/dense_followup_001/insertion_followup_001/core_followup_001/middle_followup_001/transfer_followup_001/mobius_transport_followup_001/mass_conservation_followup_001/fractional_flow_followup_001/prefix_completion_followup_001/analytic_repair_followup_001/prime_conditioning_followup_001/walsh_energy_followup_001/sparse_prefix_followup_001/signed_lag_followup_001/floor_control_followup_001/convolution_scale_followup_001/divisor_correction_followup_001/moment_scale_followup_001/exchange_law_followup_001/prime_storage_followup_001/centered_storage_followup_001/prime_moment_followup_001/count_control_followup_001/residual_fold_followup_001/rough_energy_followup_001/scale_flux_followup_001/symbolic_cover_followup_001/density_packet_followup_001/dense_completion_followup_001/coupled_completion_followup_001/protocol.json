@@ -1,0 +1,110 @@
+{
+  "RH_proved": false,
+  "all_physical_squarefree_coordinates_retained": true,
+  "calibration_parent": 1024,
+  "drift_multiplier": "3/2",
+  "energies": [
+    {
+      "id": "current",
+      "memory": 1,
+      "rays": []
+    },
+    {
+      "id": "two_delay",
+      "memory": 2,
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "three_delay",
+      "memory": 3,
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "weight": "1"
+        }
+      ]
+    }
+  ],
+  "families": [
+    "raw_index",
+    "balanced_index",
+    "balanced_fractional",
+    "matched_certified"
+  ],
+  "fresh_parents_per_band": 2,
+  "gram_box": [
+    "0",
+    "16"
+  ],
+  "hashes_used": false,
+  "known_unit_and_all_prime_signs_used": true,
+  "lp_seconds": 180,
+  "max_aggregate_bytes": 17179869184,
+  "module_seconds": 7200,
+  "native_threads": 1,
+  "observed_full_source_values_used": false,
+  "prime_anchor": true,
+  "prior_byte_preserved_files": 598,
+  "schema": "coupled-drift-search-protocol-v1",
+  "seed": 20261011083,
+  "selection": "smallest exact complete anchored price within each source and family; no validation selection",
+  "source_files": [
+    "mobius_coupled_completion_083.py",
+    "test_mobius_coupled_completion_083.py",
+    "mobius_coupled_completion_search_083_development.json",
+    "check_mobius_coupled_completion_083.py",
+    "test_check_mobius_coupled_completion_083.py",
+    "mobius_coupled_completion_checker_083_development.json",
+    "MOBIUS_COUPLED_COMPLETION_CHECK_SCOPE_083.txt",
+    "mobius_coupled_outer_control_083.py",
+    "test_mobius_coupled_outer_control_083.py",
+    "mobius_coupled_outer_control_083_development.json",
+    "MOBIUS_COUPLED_OUTER_CONTROL_SCOPE_083.txt",
+    "check_mobius_coupled_outer_control_083.py",
+    "test_check_mobius_coupled_outer_control_083.py",
+    "mobius_coupled_outer_control_checker_083_development.json",
+    "MOBIUS_COUPLED_OUTER_CONTROL_CHECK_SCOPE_083.txt",
+    "MOBIUS_COUPLED_CUT_REVIEW_083.txt",
+    "MOBIUS_PRIME_ANCHOR_REVIEW_083.txt",
+    "mobius_coupled_completion_protocol_083.txt",
+    "run_mobius_coupled_completion_083.py"
+  ],
+  "source_ids": [
+    "q1_p16",
+    "q1_p04"
+  ],
+  "theta_box": [
+    "-16",
+    "16"
+  ],
+  "uniform_full_growth_proved": false,
+  "uniform_original_source_bound_proved": false,
+  "unknown_composite_signs_used": false,
+  "validation_bands": [
+    [
+      1536,
+      2047
+    ],
+    [
+      2560,
+      3071
+    ],
+    [
+      3584,
+      4095
+    ]
+  ],
+  "workers": 3
+}

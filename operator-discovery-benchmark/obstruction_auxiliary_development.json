@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "returncode": 1,
+      "operations": 64874,
+      "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=64874\n",
+      "stderr": "F.....\n======================================================================\nFAIL: test_complete_arithmetic_branch_split_independent_reconstruction (test_obstruction_auxiliary_search.AuxiliaryChecks)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_obstruction_auxiliary_search.py\", line 23, in test_complete_arithmetic_branch_split_independent_reconstruction\n    self.assertTrue(a['atoms']['T'][5].is_zero())\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 6 tests in 0.028s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "tests": [
+        "test_obstruction_auxiliary_search.AuxiliaryChecks.test_complete_arithmetic_branch_split_independent_reconstruction",
+        "test_obstruction_auxiliary_search.AuxiliaryChecks.test_full_quadratic_and_transport_values_match_distinct_evaluators"
+      ],
+      "returncode": 0,
+      "operations": 60874,
+      "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=60874\n",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.025s\n\nOK\n"
+    },
+    {
+      "tests": [
+        "test_obstruction_auxiliary_search.AuxiliaryChecks.test_feedback_uses_open_joint_expression_and_preserves_scope"
+      ],
+      "returncode": 0,
+      "operations": 0,
+      "stdout": "SYNTHETIC_WORK module=test_obstruction_auxiliary_search operations=0\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+    }
+  ],
+  "operations": 125748
+}

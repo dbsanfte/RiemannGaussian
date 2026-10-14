@@ -1,0 +1,368 @@
+EXACT CUTOFF TRANSITIONS AND SIGNED LOW-HEIGHT WORK
+
+Status: reviewed analytic rules, with an OPEN actual-Mobius forcing estimate.
+This memo introduces no source observations, tests, fitted constants, hashes,
+or changes to a previous study. It consumes CORE_WEIGHTED_HEIGHT_SEARCH_HANDOFF.txt
+and candidate10_weighted_height_obligation.json. The complete signed core remains
+the first target. A bound for each separately expanded component is not required
+by the mathematics. Nothing here proves RH or closes the current core bound.
+
+1. Domain, trust base, and the present leaf
+
+Products of arithmetic sequences below mean Dirichlet convolution. The unit is
+delta(1)=1. For EVERY integer U>=1 set
+ A_U(n)=mu(n) 1_(n<=U), c_U=sum_(n<=U)mu(n)/n,
+ T_U=c_U delta-A_U, E_U=delta+One*T_U.
+Use the actual mu*One=delta identity and the established |c_U|<=2. In the
+half-plane of absolute convergence, and then by meromorphic continuation,
+ E_U(s)=1+zeta(s)T_U(s), T_U(1)=0.
+Consequently E_U is analytic at 1. Keep this harmonic-null pair atomic.
+
+Write u=1/3, theta=1-u=2/3, K(n)=n^-u, and, for fixed nonnegative integers p,m,
+ P_U=A_U^p*E_U^m,
+ F_U(s)=zeta(s+u)A_U(s)^p E_U(s)^m,
+ M_U=A_U(theta)^p E_U(theta)^m.
+Its complete analytically centered prefix, for every real x>0, is
+ C_U(x)=sum_(n<=x)(K*P_U)(n)-(M_U/theta)x^theta.
+The sum is zero below 1; the second term is NOT zero there. At integers this
+is the prefix of K*P_U-(M_U/theta)J_theta, J_theta(n)=n^theta-(n-1)^theta.
+This defines ANALYTIC-residue centering. Ordinary convergence of the coefficient
+moment at theta is not inferred, particularly for m>=3.
+
+Review020 supplies the Gaussian Perron/Mellin and integer-cell-average recovery,
+including the x<1 tail, complete earlier prefixes, and discrete averaging error.
+It also supplies the precise phase-uniform weighted-height provider under its
+short-polynomial hypothesis, ultimately using the primary twisted fourth moment
+recorded in the frozen handoff. These are inherited analytic primitives; this
+memo does not supply a new external moment theorem or cross an unproved pole.
+
+The present p=2,m=3 plan has sigma=9/20, kappa=2/9, epsilon=1/120,
+ tau=45/2, H_U=2 U^tau. With measure dt/(2pi |sigma+it|^2), put
+ L_U=integral_(|t|<H_U)|F_U(s)|^2,
+ I_U=integral_(|t|>=H_U)|F_U(s)|^2.
+The inherited theorem proves I_U<=C_high U^-1/16. The uniform leaf is
+ L_U<=C_low U^b, b=12/5, EVERY integer U>=1.                OPEN
+The required constant cannot depend on U,X,N or on a tested cutoff.
+The full 4-by-4 binomial Gram, all ordered coefficient pairs and crosses, stays
+inside L_U. A finite Gaussian Gram alone does not replace the zeta-weighted leaf.
+
+2. Exact shell transition, including unit and residue
+
+For integers V>=U define D=mu 1_(U<n<=V), delta_c=D(1), where D(1) here denotes
+the Dirichlet SERIES value sum mu(n)/n, not the coefficient at the integer 1.
+To avoid that notational ambiguity an implementation should call it eval_at_1.
+Put Q=delta_c delta-D. Then exactly
+ A_V=A_U+D, c_V=c_U+delta_c, T_V=T_U+Q,
+ E_V=E_U+One*Q, Q(1)=0.                                  (2.1)
+At an integer n>=0,
+ prefix(E_V-E_U)(n)=sum_(U<q<=V)mu(q){n/q}.                (2.2)
+For real x the staircase extension uses n=floor x in (2.2). In particular the
+unit term delta_c is indispensable: the increment is generally nonzero below
+the shell's first integer. The support of D is >U; that of One*Q is not >U.
+
+The binomial compiler can produce the exact finite polynomial
+ Delta F=zeta(s+u) sum_(0<=i<=p,0<=j<=m,(i,j)!=(0,0))
+   binom(p,i)binom(m,j) A_U^(p-i)D^i E_U^(m-j)[zeta(s)Q]^j. (2.3)
+All terms and their signed crosses are retained. Because Q(1)=0, zeta Q is
+analytic at 1, as are E_U and E_V. Expanding delta_c and D into separately
+estimated states would reintroduce real poles at 1. Such an expansion is legal
+only with every extra compensation and its opposite drift explicitly restored.
+
+The residue transition is Delta M=(Delta F/zeta(s+u)) evaluated at theta.
+Thus Delta C(x)=prefix(K*(P_V-P_U))(x)-(Delta M/theta)x^theta for ALL x>0.
+The unit-cell J drift and the lower tail are included. No coefficient-tail
+convergence at theta is needed for this finite-polynomial identity.
+
+3. A finite arithmetic head is uniformly payable in physical space
+
+The actual inverse identity gives, on 1<=n<=U,
+ P_U(n)=c_U^m d_(m-p)(n) if m>=p,
+ P_U(n)=c_U^m mu^(p-m)(n) if m<p.                         (3.1)
+Here d_j=One^j, d_0=delta, and all powers mean convolution. This is the already
+known source constraint, not a new prime-distribution theorem. It is suitable
+for automatic matching and head extraction, rather than manually nominating
+a coefficient pattern.
+
+For the open case let h_U=c_U^3 One 1_(n<=U). Its finite analytic moment is
+ M_head=c_U^3 sum_(d<=U)d^-theta. Subtracting the FULL centered K*h_U leaves
+the centered remainder with moment M_U-M_head, not M_U. For every y>0,
+ |sum_(k<=y)k^(theta-1)-y^theta/theta|<=1+1/theta.          (3.2)
+For y>=1 this follows by upper/lower integral comparisons for the decreasing
+positive power; for y<1 the left side is y^theta/theta. Therefore
+ |prefix(K*h_U)(x)-(M_head/theta)x^theta|
+ <=|c_U|^3 (1+1/theta) U <=20 U                           (3.3)
+for ALL real x>0. This includes d>x, whose prefix sum is empty but whose
+centering contribution is not. It also includes the unit.
+
+Normalized polynomial-history channels of this centered prefix are O(U), with
+explicit constants from the coefficient l1 norms of the polynomial and its
+derivative and, if present, the lower bound log(2n)>=log 2. Discrete Abel summation
+retains the entire history: the normalized polynomial derivative has total
+variation at most its coefficient derivative norm on [0,1]. Consequently the
+head's channel energy is O(U^2/X), paid for U=floor((4X-1)^(1/24)). Its positive
+norm can be paid by triangle/Cauchy with the complete remainder and then kept
+in the full source recovery. There is no claim of an orthogonal head/tail split.
+
+There is also an unconditional GLOBAL weighted-norm payment for this head,
+stronger than merely its physical-block envelope. Put
+ D_theta(y)=sum_(k<=y)k^(theta-1)-y^theta/theta.
+For y>=1, decreasing-function integral comparisons give -1/theta<=D_theta(y)<=0;
+for 0<y<1 it equals -y^theta/theta. Therefore, for 0<sigma<theta,
+ integral_0^infinity |D_theta(y)|^2 y^(-2sigma-1)dy
+ <=B_(theta,sigma)=[1/(theta-sigma)+1/sigma]/(2theta^2).    (3.4)
+The complete centered prefix for a FINITE h is sum_d h(d)D_theta(x/d), so
+Minkowski and change of variable give its weighted norm at most
+ sqrt(B_(theta,sigma)) sum_d |h(d)|d^-sigma.               (3.5)
+This includes every d>x and the entire lower tail. At theta=2/3,sigma=9/20,
+B=100/13. The current head has sum |h(d)|d^-sigma<=8 U^(1-sigma)/(1-sigma).
+By the inherited Mellin isometry its FULL spectral squared norm is at most
+ (100/13)(8/(1-sigma))^2 U^(11/10).                       (3.6)
+Consequently the raw and head-corrected low goals U^(12/5) imply one another,
+up to uniform paid constants, using the same height and complete analytic
+centering. This does not identify their signed cutoff work, nor prove either
+goal. A shell for the corrected target can be paid by twice the raw shell plus
+twice the full CHILD head norm. Its coarse exponent is 11/10, not -1/16;
+block recurrence admission remains valid against b=12/5. Do not report this
+as the unchanged raw high-tail saving.
+
+For m>=p and m-p>=1 the same proof pays the matched finite d_(m-p) head with
+O(U(1+log U)^(m-p-1)) prefix envelope; m=p has only the finite unit. For m<p
+the compiler must use the complete signed inverse-divisor head, not substitute
+One. A zero raw coefficient head does not mean a zero centered head: its residue
+creates an opposite power drift at all small x.
+
+4. Single-cutoff signed work: exact three-valued arithmetic
+
+Let q=U+1 and e=mu(q). Then D=e q^-s, Q=e(q^-1-q^-s). The identity
+ q^-1-q^-s=((s-1)/q) integral_1^q y^-s dy                 (4.1)
+proves harmonic nullness without discarding the pole compensation. For a fixed
+sigma<1 it does not reduce the low-height size below order q^-sigma.
+Expand (2.3) in e, then use e^3=e and e^4=e^2. There are exact functions J_o,J_e
+depending on the old state and q such that
+ F_q-F_U=e J_o+e^2 J_e.                                  (4.2)
+For raw P, J_o is the sum of terms i+j positive odd and J_e the positive even
+terms, with the powers of e removed. This reduction retains all repeated-prime
+and composite effects; it uses actual mu(q) in {-1,0,1} rather than a random sign.
+
+On ANY common integration interval, the exact squared-norm difference is
+ e [2 Re(F_U conjugate(J_o))+2 Re(J_o conjugate(J_e))]
+ +e^2 [2 Re(F_U conjugate(J_e))+|J_o|^2+|J_e|^2].          (4.3)
+The first bracket is a signed arithmetic correlation. The second is not known
+nonnegative, because its cross with F_U is retained. The two squares themselves
+are nonnegative. Neither bracket has a justified mean-zero/negative expectation.
+mu(q) is correlated with the previous actual-Mobius state. Harmonic nullness,
+negative local coefficients, or the three-valued alphabet cannot supply such
+an expectation or a martingale filtration.
+
+Head correction has an additional zero-sign term. For the current P'_U=P_U-h_U
+define its series F'_U=zeta(s+u)[P_U(s)-c_U^3 D_U(s)],
+ D_U(s)=sum_(n<=U)n^-s. Then
+ F'_q-F'_U=J_0+e J'_o+e^2 J'_e,
+ J_0=-zeta(s+u)c_U^3 q^-s,
+ J'_o=J_o-zeta(s+u)(3c_U^2/q+q^-3)D_q(s),
+ J'_e=J_e-zeta(s+u)(3c_U/q^2)D_q(s).                     (4.4)
+In particular e=0 does NOT give a zero corrected increment. The finite head
+advances at q even when the raw A and E stay unchanged.
+
+With P denoting the OLD corrected series F'_U, its squared-norm increment is
+ C_0+e C_1+e^2 C_2, where
+ C_0=2 Re(P conjugate(J_0))+|J_0|^2,
+ C_1=2 Re((P+J_0)conjugate(J'_o)+J'_o conjugate(J'_e)),
+ C_2=2 Re((P+J_0)conjugate(J'_e))+|J'_o|^2+|J'_e|^2.      (4.5)
+The same formulas hold pointwise before integration. Residues update by
+evaluation of each complete term after removing zeta(s+u), at theta. An automatic
+checker must compare the entire polynomial, including C_0 and all head drifts.
+
+More generally, a matched c_U^m d_(m-p) restricted head with m>=p has new-cell
+term -c_U^m d_(m-p)(q)delta_q, plus the complete change of c_U^m times the new
+head. Both can be expanded and reduced in e. For m<p the signed convolution
+coefficient at q requires its own exact source evaluation/binding; (4.4) must
+not be copied verbatim.
+
+5. The moving height shell is a real cost, but an inherited paid one
+
+Define Delta F=F_V-F_U, V>=U. Exactly
+ L_V-L_U=W_(U,V)+S_(U,V),
+ W_(U,V)=integral_(|t|<H_U)[2 Re(F_U conjugate(Delta F))+|Delta F|^2],
+ S_(U,V)=integral_(H_U<=|t|<H_V)|F_V|^2 >=0.              (5.1)
+All integrals use the measure in section 1. The shell contains the CHILD, so
+an old-F high-tail bound alone cannot bound it. An equivalent useful identity is
+ L_V-L_U=integral_(H_U<=|t|<H_V)|F_U|^2
+       +integral_(|t|<H_V)[2 Re(F_U conjugate(Delta F))+|Delta F|^2]. (5.2)
+Here the old shell is paid, but the new signed work on that shell is retained.
+Equations (5.1) and (5.2) are alternative exact rules, not two costs to add.
+
+For fixed 1<=V/U<=d, the inherited weighted theorem actually pays S_(U,V).
+The child's polynomial lengths are at most V^(p+j)<=d^(p+j)U^(p+j). The old
+height gives the length premise up to that fixed factor. Choose once a kappa'
+strictly between kappa and 1/4. Above a fixed height threshold the factor is
+absorbed in Y^(kappa'-kappa); below it there are only finitely bounded U and
+plain coefficient bounds pay a finite uniform constant. For example a threshold
+of the form 2 C^(1/(kappa'-kappa)) absorbs a fixed length factor C. The moment
+theorem permits an arbitrary fixed epsilon, so keep the already allocated
+epsilon and use the SAME height exponents from Review020.
+
+Consequently, with r_j=p+j and
+ d_0=-sigma-u, d_1=1-u-3sigma,
+ d_j=j-u-(j+3)sigma for j>=2,
+ S_(U,V)<=C_d sum_(j=0)^m U^[r_j(1-2sigma)+tau(d_j+epsilon)]. (5.3)
+Constants depend on fixed d,p,m,sigma,kappa,epsilon and the imported theorem,
+but not on U,V,X,N or observed signs. For the current plan this is
+ S_(U,V)<=C_d U^-1/16.                                   (5.4)
+This pays a moving boundary; it does NOT pay W_(U,V). The corrected-head target
+requires its own complete tail bookkeeping, or physical-space removal by (3.3).
+One must not automatically reuse (5.4) for an arbitrarily changed series.
+
+6. Executable recurrence and forcing rules, with exact coverage
+
+The raw goal L_U=O(U^b) suggests normalized J_U=U^-b L_U. For V=dU, integer d>=2,
+ J_V=d^-b J_U+V^-b W_(U,V)+V^-b S_(U,V).                 (6.1)
+A uniform upper bound W_(U,dU)<=C U^b, together with (5.3), proves a dyadic
+or fixed-ratio cutoff bound. The factor d^-b<1 is supplied by NORMALIZATION,
+not a newly proved arithmetic contraction. Conversely L_U=O(U^b) already implies
+W_(U,V)<=L_V=O(V^b). Thus an endpoint-work upper bound of this order is an
+equivalent presentation up to constants, although its exact odd/even or shell
+structure can make it a useful new arithmetic-search interface.
+
+The detector may enumerate a genuinely stronger signed recurrence
+ J_(dU)<=rho J_U+C(1+log_d U)^k, rho in [0,1], C>=0,
+ with an explicit finite base and a uniform OPEN premise.                  (6.2)
+For rho<1 the elementary iteration gives log degree k; for rho=1 it gives
+k+1; if C=0 it gives a bounded base. No sign is imposed on W. A polynomial
+auxiliary potential must be coercive for J (or have separately proved recovery),
+and its exact signed work and moving shell must be included. Changing the root
+norm instead of the squared norm does not itself prove a smaller forcing.
+
+Dyadic cutoff endpoints do NOT imply the stated EVERY-integer leaf. One sound
+bridge is a uniform one-sided bound on W_(U,V) for EVERY U<=V<=2U, with U dyadic,
+plus (5.3). A maximum-partial-shell work certificate gives that bridge without
+pretending L_U is monotone: its integrand, as well as its height, changes with U.
+Alternatively sum exact single-q work for every integer cutoff.
+
+For the current b=12/5, the stronger single-step hypothesis
+ W_(q-1,q)<=C q^(b-1)=C q^(7/5), q>=2                    (6.3)
+and (5.4) imply the all-integer leaf, because sums of q^(7/5) are O(U^(12/5))
+and sums of q^-1/16 are O(U^(15/16)). Keep the finite U=1 base. In a generic
+plan a shell exponent h sums to U^(h+1), log U, or a bounded constant according
+as h>-1, h=-1, or h<-1. Its cost must be compared with the target b explicitly.
+This single-step bound is STRONGER than L_U=O(U^b): a nonnegative sequence can
+alternate between zero and U^b while obeying the latter but violating an
+increment bound of order U^(b-1). Do not force the search to prove (6.3) if a
+joined block or auxiliary cancellation can prove the endpoint goal instead.
+
+For the head-corrected target, its shell bound from (3.6) is O(q^(11/10)) per
+consecutive cutoff. Summing these coarse shell bounds costs O(U^(21/10)), still
+strictly below U^(12/5). Thus (6.3), with the COMPLETE corrected work (4.5), also
+gives its all-integer goal. Constants can be enlarged uniformly to absorb this
+paid shell. This is not a sign bound on C_0 or on the corrected work itself.
+
+The physical cutoffs floor((4X-1)^alpha) do not license silently sampling only
+the dyadic-U leaf. A different cutoff choice can be used in the finite inverse
+identity, but then all its source terms, analytic drifts and recovery costs must
+be recompiled. It cannot be treated as the same F_U with an endpoint proof.
+
+7. What an automatic auxiliary grammar can honestly certify
+
+For a fixed list of monomials in A,E,D,zeta Q, binomial translation gives an
+exact triangular state transition. A detector can search rational Hermitian
+quadratic potentials and linear combinations of their transition work. A PSD
+matrix domination P>=v v* is a sufficient algebraic recovery of the nominated
+linear target v*Z. A more specialized indefinite potential needs its OWN valid
+coercive lower bound and finite-head term; cancellation in its coefficients
+alone is not recovery. The compiler can solve exact polynomial identities and
+nullspaces before any sign observations, then leave the resulting signed Gram
+or work inequality OPEN unless proved by an accepted theorem.
+
+Useful enumerable primitives are: complete cutoff shell; consecutive cutoff;
+matched arithmetic head removal; harmonic-null atomic Q; three-valued reduction;
+exact Gram polarization; positive square and rational PSD recovery; joined
+maximum partial work; fixed-ratio recurrence; explicit shell and head payment.
+Forces may be full odd/even work, a complete polarized auxiliary work, or a sum
+of work over a block. The grammar must allow all crosses to stay joined. This
+is construction and proof-route search, not a claim that enumeration proves
+the arithmetic premise.
+
+The old unsigned argument gives no exponent improvement: the coefficient sizes
+of A and T on sigma are O(U^(1-sigma)). Even replacing the triangle telescope
+by unproved orthogonality of consecutive increments would not settle the
+current target. Such orthogonality is not true merely because q changes: the
+finite-head Mellin phases overlap, with deterministic actual coefficients.
+There is no justified probabilistic martingale measure on those cutoffs.
+
+8. A fixed generic-sequence obstruction to automatic closure
+
+The previous generic sharpness theorem is not an actual-Mobius disproof. The
+following fixed integer-valued example additionally shows why cutoff compatibility
+and the alphabet {-1,0,1} do not cure the gap. Put a(1)=1 and
+ a(n)=(-1)^k for 2^k<=n<2^(k+1), k>=1.
+The harmonic mass of these blocks decreases with k: pair a block's terms as
+1/(2n)+1/(2n+1)<1/n to compare successive blocks. Therefore every partial cutoff
+has 1-5/6<=c_U<=1, because the first negative block has mass 1/2+1/3=5/6 and
+the following alternating blocks decrease. Thus |c_U|<=2 for ALL U, not only
+at selected endpoints. The tail signs obey the same alphabet as mu, but not
+the full actual inverse relation mu*One=delta.
+
+For U=2^(K+1)-1, on a fixed compact small-t interval and any fixed 0<sigma<theta,
+ sum_(2^k<=n<2^(k+1)) n^-s
+ =[(2^(1-s)-1)/(1-s)] 2^[k(1-s)]+O_s(2^-k sigma).
+The alternating geometric series has a nonzero leading term of order
+U^(1-sigma); its errors sum to O_s(1). The leading coefficient is nonzero near
+real s=sigma. On a sufficiently small interval, zeta(s) and zeta(s+u) are
+nonzero (and away from their poles), so for this sequence
+ integral_small_t |zeta(s+u)A_U(s)^p[1+zeta(s)(c_U-A_U(s))]^m/s|^2
+ >=c U^[2(p+m)(1-sigma)] along those cutoffs.              (8.1)
+In the present case this is U^(11/2), exceeding U^(12/5).
+
+Hence coefficient bounds, the bounded harmonic sum, atomic harmonic-null
+cutoff transitions, integer signs, and generic Gram/PSD algebra cannot imply
+the missing improved estimate. An automatic closure rule using only these
+hypotheses would be false. This does not exclude using mu*One=delta together
+with a new complete signed divisor/cofactor correlation. The payable source
+head is one such actual-source consequence, but not the missing tail estimate.
+
+9. Common finite horizon versus global cutoff algebra
+
+The truncated-inverse decomposition binds the ACTUAL core on integers n<=N,
+using one common N=4X-1 for both parent and child. It may discard monomials only
+after proving their coefficient support exceeds N. Changing U changes the
+decomposition and its components; the COMPLETE joined prefix stays the same
+on that common domain. Its cutoff transition there can be identically zero.
+That is bookkeeping invariance, not a bound for its value or for an expanded
+component. The discarded coefficient tail and all analytic compensation remain
+outside any attempted global Mellin identity for that finite-domain join.
+
+Do not promote finite inverse equality to global meromorphic equality. In
+particular it cannot cross zeros of zeta below 1/2 for the full original source.
+Global finite-polynomial F_U and its analytic center are valid objects, but their
+source recoverability is the previously certified finite-horizon rule with
+opposite drifts, complete remaining terms and all channel bindings retained.
+A coupled proof may be better than paying each component. The complete core
+should therefore have its own joined work/potential lane, not be replaced by
+a compulsory list of independent positive component bounds.
+
+10. Concrete next certificate interface and conclusions
+
+Each generated rule should record: source binding and common finite horizon;
+raw or exact matched-head-corrected word; sigma and contour trust premises;
+all cutoff endpoints; complete residue transition; old or child integration
+domain; explicit moving-shell theorem application; exact J_0,J_o,J_e or shell
+polynomial; every contracted Gram coefficient; recovery matrix and finite base;
+required ALL-integer or maximum-partial coverage; normalized exponent and log
+degree; and a precise uniform OPEN forcing inequality.
+
+Finite samples, compact-height quadrature and a sampled Gaussian Gram can check
+algebra or suggest work patterns. They cannot certify the complete |t|<H_U
+integral, its uniform U exponent, or an all-scale recurrence constant. Record
+them as diagnostics, never as theorem payment. In particular no observations
+made by a future bounded study retroactively prove (6.3).
+
+Proved here: exact full transition and residue rules; exact odd/even and head
+zero-sign work; payable complete arithmetic head; fixed-ratio moving-shell
+payment using inherited uniform imports; sound recurrence/all-integer recovery;
+and a scoped generic obstruction. Open: actual signed forcing for the joined
+tail or full core. The new head primitive removes a rigorously payable physical
+piece, while the signed work grammar gives a falsifiable arithmetic interface.
+It does not establish its missing uniform bound or RH.
+
+This review is final and stable. No numerical experiment or source evaluation
+was performed, and no prior/frozen file was edited.

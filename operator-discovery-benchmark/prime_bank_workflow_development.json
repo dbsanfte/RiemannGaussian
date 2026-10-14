@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "tests": [
+        "test_prime_bank_workflow"
+      ],
+      "returncode": 0,
+      "operations": 414406,
+      "stdout": "SYNTHETIC_WORK module=test_prime_bank_workflow operations=414406\n",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.100s\n\nOK\n"
+    },
+    {
+      "tests": [
+        "test_prime_bank_workflow.WorkflowTests.test_cofactor_moment_transfer_retains_its_proof_premise",
+        "test_prime_bank_workflow.WorkflowTests.test_obligation_drives_exhaustive_branch_selection",
+        "test_prime_bank_workflow.WorkflowTests.test_coverage_is_strict_and_feedback_preserves_open_target"
+      ],
+      "reason": "New reviewed cofactor-moment rule, generated catalogue and feedback fields only",
+      "returncode": 0,
+      "operations": 3208,
+      "stdout": "SYNTHETIC_WORK module=test_prime_bank_workflow operations=3208\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK\n"
+    }
+  ],
+  "operations": 417614
+}

@@ -1,0 +1,172 @@
+FINITE PRIME INSERTION MOVING-MIDDLE SOURCE 057
+
+Scope
+=====
+This module certifies one finite closed interval for the exact mathematical
+ordinary-mu E_R source, at a fixed finite integer N and a fixed band. It does
+not read archived scientific arrays, perform a candidate search, or establish
+any uniform upper bound. The only development evaluations use tiny synthetic
+N<=7 arithmetic/calibration fixtures. Older sources, suites and studies are
+preserved. No artifact hashes or proof-provider/checker imports are used.
+
+API and source
+==============
+ prepare_context(meter=None,max_bytes=1GiB)
+ evaluate(request,precision=192,meter=None,context=None)
+ band_decomposition(request,fractions=('0','1/3','2/3','1'),meter=None)
+
+The request has exactly alpha,primes,N,gamma,lower_fraction,upper_fraction.
+Rational strings are canonical, 0<alpha<1, gamma>0, and
+0<=lower_fraction<=upper_fraction<=1. The actual primes are supplied as a
+sorted distinct list. The empty list is also admitted as the original source.
+All integers n>=2 up to4N are retained, including shared primes and every
+valuation. This is E_R K(n)=K(Rn), not the shared-prime-masked defect D_R K.
+
+Let R=product(primes), G_R(t)=product_(p|R)(1-p^-t). The exact whole signed
+integrand is
+
+ h(N,t)=2 sum_(2<=n<=N)product_(p|Rn)(1-p^-t)
+       -3 sum_(2<=n<=2N)product_(p|Rn)(1-p^-t)
+       +  sum_(2<=n<=4N)product_(p|Rn)(1-p^-t).
+
+For t>0, finite divisor expansion and the complete prime-power geometric
+count give the alternative exact identity
+
+ h(N,t)=G_R(t)*sum_(d<=4N,gcd(d,R)=1)mu(d)*W_N(d)*d^-t,
+ W_N(d)=2 floor(N/d)-3 floor(2N/d)+floor(4N/d).
+
+Proof: primes already in R contribute the common factor G_R. Only divisors
+coprime to R remain in the n divisor sum. Every such d appears floor(X/d)
+times when n runs through1..X. Removing n1 subtracts G_R at every endpoint;
+its signed coefficient is2-3+1=0, so the unit cancels exactly. In particular
+W_N(1)=0. No approximation or missing-valution model enters this identity.
+
+The producer constructs ordinary mu by an integer Eratosthenes sieve:
+each prime flips its multiples; square multiples are zero. Expanding G_R
+produces signed integer pairs (base=d*e,weight=mu(d)*W_N(d)*mu(e)), e|R.
+Because gcd(d,R)=1, these bases are distinct. They are all>1, and their
+integer weights sum exactly0. The source compiler checks these invariants.
+The full signed exponential sum is accumulated; no absolute-term estimate
+is substituted for its value.
+
+Moving endpoints and exact zero
+===============================
+ epsilon=min(1/2,N^-gamma),
+ a=epsilon+(1/2-epsilon)*lower_fraction,
+ b=epsilon+(1/2-epsilon)*upper_fraction.
+
+For gamma=u/v>0, epsilon=1/2 exactly if N^u<=2^v. The producer checks that
+integer powered comparison under its explicit bit guard. If equality holds,
+or if the entire inequality holds, a=b=1/2 for every pair of band fractions.
+Equal band fractions also give a=b. These cases return lower=upper=0 and
+EXACT_ZERO_BAND without constructing mu or evaluating incomplete gamma.
+The source summary marks its arithmetic as skipped, with coefficient counts
+None. This is an algebraic zero, never a tolerance decision.
+
+Otherwise epsilon and the affine endpoints are rigorous Arb balls. Fraction1
+is simplified to the exact1/2 endpoint, improving caching and avoiding
+unnecessary dependency width. Fraction0 is the same epsilon ball. Arbitrary
+rational denominators are admitted subject to the resource limits below.
+
+Certified integration and normalization
+========================================
+For a nonunit integer base, lambda=log(base)>0. For every t>0 and 0<alpha<1,
+
+ d/dt [lambda^alpha Gamma(-alpha,lambda*t)]
+       =-exp(-lambda*t)*t^(-alpha-1).
+
+Consequently each source exponential has integral
+
+ lambda^alpha*[Gamma(-alpha,lambda*a)-Gamma(-alpha,lambda*b)].
+
+The upper incomplete gamma integral is defined for negative shape at a
+strictly positive argument: integral_z^infinity exp(-u)u^(-alpha-1)du.
+There is no singular endpoint0 in this numerical primitive and no divergent
+integral subtraction. The signed finite sum is multiplied by
+
+ 1/Gamma(1-alpha)>0.
+
+This is exactly the requested normalization, not1/I_alpha. Indeed elementary
+integration by parts gives I_alpha=Gamma(1-alpha)/alpha, so it also equals
+1/(alpha*I_alpha). No fitted normalizer is used.
+
+The locally installed python-flint API was inspected: arb.gamma_upper takes
+its argument as the instance and its shape as the parameter. Thus the call
+is (lambda*t).gamma_upper(-alpha), followed by lambda^alpha. All quantities
+and the final rgamma normalizer are Arb intervals. Native precision is
+restored on success and exceptions. Primary API/reference documentation:
+https://python-flint.readthedocs.io/en/latest/arb.html and
+https://dlmf.nist.gov/8.2.E2 . No quadrature truncation is used by the producer.
+The independent checker uses a separate radical source and rigorously
+integrated exponential Taylor remainders.
+
+Results and partition
+=====================
+The result schema is prime-insertion-middle-interval-v1. It includes the
+exact request, precision, output_dyadic_bits80, normalized lower/upper
+canonical rational strings, and endpoint_intervals for epsilon,a,b. All
+lower endpoints are rounded toward negative infinity to a2^-80 grid, and
+upper endpoints toward positive infinity. Rounding may widen a very small
+nonzero interval around0; that is not an exact-zero assertion. Exact-zero
+bands retain the literal pair0,0. Source summary includes support4N,
+prime_product, coefficient_count, integer_coefficient_sum, coefficient_l1,
+ordinary-mu provenance, exact source formula and skipped-zero status.
+Counts expose primitive work and prospective memory. Numerical finiteness
+is required before an interval is serialized. Local bounded decimal
+formatting does not alter Python's process-wide conversion guard.
+
+band_decomposition returns algebraic adjacent-band requests partitioning
+the same epsilon..1/2 integral, with overlap only on measure-zero endpoints.
+It also records the exact0..infinity=head+middle+tail decomposition. It
+computes no values and pays no head/tail bounds. A finite band result marks
+head_or_tail_evaluated:false, whole_source_bound_proved:false and all_scale:false.
+source_chain_replayed_here is true for a nonzero band and false for a zero
+band whose source arithmetic was unnecessary. This is finite actual-source
+reconstruction, not an all-scale source-bound certificate.
+
+Resources and functional caches
+===============================
+Operational caps: N<=32768, at most8 distinct primes, R<=1,000,000,
+2,000,000 exponential terms, rational parameter components4096bits,
+400,000 estimated bits for the epsilon powered comparison, and16384bits
+for serialized endpoint integers. These caps do not truncate or redefine
+any mathematical moving profile outside the evaluator's domain.
+
+The declared precision bank is128,192,256,384,512bits. Default Meter permits
+100billion metered proxy operations and7200seconds; callers may set their
+own cap/deadline. Source sieving and every exponential term, native log,
+power, gamma and signed-sum call are counted. Native Arb complexity is
+represented by explicit precision-dependent charges, not CPU-instruction
+counts. Time is checked at primitive boundaries. No unmeasured parallel
+worker creation is performed by this layer.
+
+A context admits at most1GiB of cached objects and checks a4GiB prospective
+working envelope before allocations. Cache exhaustion stops storing new
+entries while retaining rigorous evaluation. Three independent worker
+contexts therefore use at most3GiB of persistent cache; root orchestration
+must additionally enforce its aggregate16GiB allowance. Prospective source
+working estimates include the sieve and maximum cofactor rows. Literal keys
+bind primes/N for source kernels, base/precision for log atoms,
+alpha/base/precision for powers, and all exact endpoint parameters for gamma
+atoms. The fixed1/2 endpoint shares atoms across N and gamma. No filenames,
+artifact hashes or observed source values determine cache identity.
+
+For the declared potential pilot, 4N<=3356 and R<=15. Each signed source has
+at most2^omega(R)*4N cofactor terms before zero-weight/squarefree exclusions.
+This is a prospective worst-case cost estimate; no pilot values were evaluated.
+The root may reuse long-lived worker contexts grouped by N. Output80-bit
+rounding leaves room for independent higher-precision finite containment.
+Neither precision agreement nor successful synthetic calibration establishes
+a uniform bound, tail bound, RH, or convergence of the moving integral.
+
+Development disposition
+=======================
+The sole owned synthetic suite passed9tests, with2,027,219 inclusive metered
+operations and no failures. It checks all radical coefficient columns,
+shared-prime/p-square retention, a separate erfc half-alpha calibration,
+non-whitelisted rational exponent denominators, exact epsilon=1/2 zeros,
+cache keys/precision restoration, band additivity, signed dyadic rounding,
+long bounded decimal formatting, malformed requests and resource guards.
+The receipt preserves native results and primitive counts. All four owned
+files are stopped after this suite and scope memo; no scientific application
+has occurred and no old suite was replayed.

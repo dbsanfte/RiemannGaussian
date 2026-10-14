@@ -1,0 +1,80 @@
+FROZEN UNIFORM CONDITIONAL COST-PROGRAM SEARCH071
+
+Purpose:070 exact finite ideal corrections already reached target constants.
+This study changes the search object to uniform symbolic cost/rank programs,
+with the remaining joined signed expression exported as a new obligation.
+It does not rerun finite correction optimization or infer growth from a fit.
+
+Freeze all12 FILES in run_mobius_moment_scale_071.py after new synthetic
+and integration checks pass. Preserve370 inherited frozen source files and
+all results using byte comparisons, without hashes. Use the same12 saved069
+source groups,1032 joined rows and36 head cuts as070. This is reused
+development evidence, not a new holdout. No old studies/suites are rerun.
+
+The exact language and acceptance rules are specified in
+MOBIUS_MOMENT_SCALE_SCHEMA_071.txt. The mathematical rules and their proof
+scope are documented independently in MOBIUS_MOMENT_SCALE_REVIEW_071.txt.
+The finite reciprocal estimate and disjoint-short interval theorem are
+supplied analytic rules. The detector searches cut/exposure exponents,
+optimal symbolic prices, and exact facet combinations. Do not call the
+supplied rules autonomous discoveries. No closed-form exponent optimum is
+supplied to the search; independent reviewed formulas are calibration only.
+
+Run62 predeclared requests:42 free splits from six moment exponents and
+seven rank caps, plus20 fixed unequal splits. The pilot includes1/257,
+1/17,1/9,2/7,3/7,5/9,6/7 and256/257; API accepts arbitrary canonical
+rationals under explicit bit/work gates, without a root whitelist.
+The solver sees only affine inequalities, never mu or finite target scores.
+First minimize the conditional separable exponent; at that exact optimum
+minimize the auxiliary arithmetic exposure. Separately optimize the short
+split exponent. Retain infeasible and unresolved requests as such.
+
+HiGHS proposes solutions with one native thread and5s/call. Exact rational
+reconstruction checks every primal facet, nonnegative dual coefficient,
+stationarity equation and primal/dual objective equality. Failed proposals
+remain unresolved; a claimed impossibility requires a normalized exact
+Farkas contradiction. Generic recovery can use active-facet elimination,
+with at most2048 candidate bases. It never inserts a nominated optimum.
+Short programs shared across equal sigma are solved once and reused.
+
+Conditional costs retain the entire positive C polynomial, arbitrary source
+parameters, D and source moments. Rank is the auxiliary T, not merely the
+short factor cutoff. Universal bases are declared symbolically; every finite
+ceil/floor/rank gate is checked exactly. Near-unit exposure may need an
+enormous uniform base; a successful finite rank check does not pay it.
+Finite C=1 Mertens premises are not assumed or promoted by this study.
+The short price uses its genuine fractional source norm M_delta. It cannot
+be replaced by D^(delta-1) M1 with the inequality reversed. Source envelopes
+and parameter qualifications are proved in the review.
+
+Compile the complete joined source into b_j, its floor state, and the exact
+identity c_j=d_j-b_j H_mu(u)H_mu(v)+J_j, with J_j=L_u+L_v-E_j.
+All prime/composite cross terms, common/repeated factors and reciprocal
+rectangle terms remain. The producer sees source geometry only. The
+independent checker regenerates the source, validates each program, then
+evaluates actual ordinary mu separately and compares all reconstructions.
+Root binds every row to its saved069 original value. No source is replaced
+by an unrelated synthetic bound target. Measurements do not rank programs.
+
+Save full geometry/certificates/evaluations for every program, sharing
+identical finite (u,v) evaluations. Report exact component variations for
+three predeclared diagnostic programs: sigma1/2 free rho3/4, and sigma1/2
+rho256/257 at theta1/9 and1/257. All program rank/base/zero-support scopes
+remain available, including failures. These are finite diagnostics only.
+
+Export the literal joint J target and its current-rank identity
+J_j=sum_A h_(j,A)M(A)+b_j H_mu(u)H_mu(v). This exposes equivalent
+restatements/circular closure: endpoints may reach R_j even when factor
+queries are smaller. The next grammar must pay signed floor cancellation,
+a coupled energy or a genuine recurrence, retaining all residual leaves.
+Prefix premises, complete base prices, a common induction invariant, its
+full constant map, filled-core transfer and ordinary-zeta/RH transfer stay
+explicitly open. Optimality inside this affine language is not an obstacle
+to a stronger language and is not an optimum for RH itself.
+
+Resources: three worker processes, one native thread each,16GiB aggregate,
+7200s whole module,300bn charged units per geometry producer/checker. Source
+workers write distinct certificates directly and return compact summaries
+to avoid transferring large exact arithmetic records. Record sampled RSS
+and conservative process peak sums separately. Preserve failure outputs,
+development attempts and live session handles. No precautionary hashes.

@@ -1,0 +1,48 @@
+PRIME EXCHANGE: JOINT FACTORS, FULL EDGE CORRECTIONS, AND RECOVERY
+
+The frozen study prime-exchange-results/pilot-001 completed successfully.
+All 272 archived distinct-prime expressions were analyzed against the same
+48 primitive affine forms. Independent rational substitution and exact
+multiplication checked every factor and residual across all nine channels.
+The search selected original word 13618, the exchange
+  a(qH)a(rK)-a(rH)a(qK), r<q,
+on its fresh-prime domain. Its extra common factor is x-y, in addition to
+x-1 and y-1, where x=q^(-1/3), y=r^(-1/3). Separate x/y valuations missed
+this diagonal zero. This was an analytically nominated calibration before
+the run; it is not a claim of blind invention or historical novelty.
+
+All three declared graphs (next 1, 2, or 4 larger actual-prime neighbours)
+give a cofinal absolute bound on the complete exchange CORRECTION at theta
+3/4. Both orientation supports and the factor 1/4 in the paired energy
+identity are retained. The stronger reviewed source-specific wedge estimate
+is 14*beta^2*d*(1+log(2X)), beta=9/2, for fixed outgoing degree d.
+That bound is not a negative contribution or a bound for the full moment.
+The paired symmetric core, complete-graph recovery, constant mode, growing
+path/congestion costs and other prime-label sectors remain open.
+
+PRODUCT_FIBER_SIGNED_REVIEW_001.txt gives the next useful distinction:
+for squarefree m, every nonzero a(h)a(k) with h*k=m has sign mu(m).
+Nonnegative rearrangements within that product cannot pair opposite raw
+signs. Prime adjunction across m and qm can change the sign, but it creates
+explicit lower-occupancy terms and two prefix exits. Repeated-prime fibers
+can have opposite signs, with amplitude and outside-support costs; they
+cannot be discarded using the squarefree argument. The squarefree-product
+projection itself is indefinite and must not be called a positive energy.
+
+Next input: prime-exchange-results/pilot-001/next_search_input.json.
+It retains the original open target, centering feedback, reviewed paid
+regions, and mandatory recovery sectors. The next grammar should encode
+prime assignments to occupancy states, genuine changes of product parity,
+and both transported kernels. Recover the whole centered square before
+granting any RH-strength signed-control credit.
+
+Validation: producer development 6 tests; independent checker development
+8 tests; one frozen combined suite passed all 14. Total charged work
+1,995,337 proxy operations, including preparation/development/frozen tests;
+elapsed study time 3.5102 seconds. No actual-source table was rebuilt.
+All source snapshots match directly by bytes; no hashes. Largest recorded
+RSS 517,060 KiB, symbolic peak-cell proxy 473,536; 4 GiB process cap inside
+the user's 16 GiB aggregate allowance. The run and prior results are frozen.
+
+No complete signed bound or proof of RH has been obtained. The active goal
+remains open, and no external blocker or permission request is needed.

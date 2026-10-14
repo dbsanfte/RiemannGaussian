@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "returncode": 0,
+      "operations": 1820,
+      "stdout": "SYNTHETIC_WORK module=test_run_shifted_quotient_discovery operations=1820\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "operations": 1820
+}

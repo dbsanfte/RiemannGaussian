@@ -1,0 +1,137 @@
+NONLINEAR ARITHMETIC CYCLES: A CERTIFICATE LANGUAGE AND ITS SCOPE OBSTRUCTION
+
+Post-freeze analytical proposal. No prior frozen source, candidate, selection,
+review or score is changed. The elementary countermodel below is NOT actual mu
+and is NOT a counterexample to RH. It refutes a generic critical certificate
+based on partial prime normalization, even with complete squarefree support,
+complete coprime multiplicativity, nonnegative nonlinear cycles, and all inverse
+rows divisible by the normalized prime set.
+
+1. Exact new proof-language production; all product indices.
+For coprime positive a,b, actual mu and actual c=mu*lambda satisfy
+ x_a*x_b=x_(ab), hence x_a*x_b*x_(ab)=x_(ab)^2>=0.
+A new typed CoprimeCycle(a,b,product=ab) rewrite can certify this degree-three
+identity and a complete nonnegative weighted cycle sum. It is an algebraic
+calibration, not positivity of sum x_a*x_b*K(a,b): the factor x_(ab) cannot be
+removed or divided away, especially at zero coefficients. For c the actual
+local values are c(p^e)=2(-1)^e; for mu they are -1 at p and0 at higher powers.
+The actual prime-power normalization must be stated, not inferred from a generic
+multiplicative inverse or a few known primes.
+
+A complete ordered pair domain a,b<=N requires product variables through N^2,
+including their actual source provenance and the work/memory/bit charge. A bound
+on ab imposed for convenience creates an exact complement, not a complete pair
+certificate. Noncoprime pairs require a complete gcd decomposition and its
+actual coefficient factors. For mu with a=gu,b=gv,(u,v)=1,
+ mu(gu)mu(gv)=mu(g)^2*mu(u)mu(v)*1_((g,uv)=1).
+The cycles then involve product uv, and all g, masks, boundaries and diagonals
+must still be retained. For c the g-factor has different actual local weights;
+it must not be replaced by the mu squarefree mask.
+
+2. A complete squarefree, multiplicative counterfeit.
+Fix ANY finite prime set P, let R=product_(p in P)p (R=1 for empty P), and
+omega_P(n)=number of distinct primes in P dividing n. Define for every n>=1
+ f_P(n)=mu(n)^2*(-1)^omega_P(n).
+Then f_P(1)=1, |f_P(n)|<=1, and f_P(n)=0 for every nonsquarefree n. It is
+multiplicative on coprime arguments, with local values
+ f_P(p)=-1 if p in P, +1 otherwise; f_P(p^e)=0 for every e>=2.
+Thus ALL coprime cycle identities hold globally, and every cycle product is
+ f_P(a)f_P(b)f_P(ab)=f_P(ab)^2>=0.
+The normalized primes P have exactly the actual mu prime-power values. This
+model also satisfies complete squarefree support at EVERY unnormalized prime.
+It is stronger than a counterfeit that puts arbitrary nonzero values on prime
+squares. It differs from actual mu precisely at unnormalized prime signs.
+
+3. Elementary mean with an explicit uniform finite error constant.
+The exact finite expansion is
+ f_P(n)=mu(n)^2*product_(p in P)(1-2*1_(p|n))
+       =sum_(d|R)(-2)^omega(d)*mu(n)^2*1_(d|n).
+Every d|R is squarefree. Write n=dm. Then mu(dm)^2=mu(m)^2 if(m,d)=1,
+and is0 otherwise. Consequently for every real x>=0,
+ F_P(x):=sum_(n<=x)f_P(n)
+       =sum_(d|R)(-2)^omega(d)*Q_d(x/d),
+ Q_d(y)=sum_(m<=y,(m,d)=1)mu(m)^2.
+Use the existing elementary coprime-squarefree lemma, valid uniformly for all
+d>=1,y>=0, with no PNT or signed-cancellation hypothesis:
+ Q_d(y)=c_d*y+error,
+ c_d=zeta(2)^(-1)*product_(p|d)p/(p+1),
+ |error|<=(2^omega(d)+2)*sqrt(y).
+This lemma follows by mu(m)^2=sum_(s^2|m)mu(s), finite coprime inclusion-
+exclusion, and the absolutely convergent square-divisor tail; it is already
+proved in critical_defect_proof.txt and signed_arithmetic_proof.txt.
+Therefore the entirely explicit finite constant
+ E_P=sum_(d|R) [2^omega(d)*(2^omega(d)+2)/sqrt(d)]
+satisfies
+ |F_P(x)-c_P*x|<=E_P*sqrt(x) for EVERY real x>=0,
+ c_P=sum_(d|R)(-2)^omega(d)*c_d/d
+    =zeta(2)^(-1)*product_(p in P)(1-2/(p+1))
+    =zeta(2)^(-1)*product_(p in P)(p-1)/(p+1)>0.
+The finite product is positive, even though it can be very small. No asymptotic
+prime-distribution theorem or new numerical fit enters this calculation.
+
+4. Exact cubic leading defect and an explicit remainder charge.
+For integer X>=1 define complete step block energy
+ A_P(X)=sum_(n=X)^(2X-1) F_P(n)^2,
+ Delta_P(X)=A_P(2X)-4*A_P(X).
+Let e_n=F_P(n)-c_P*n. The mean estimate gives
+ |F_P(n)^2-c_P^2*n^2|<=2*c_P*E_P*n^(3/2)+E_P^2*n.
+Hence, using n<2X,
+ |A_P(X)-c_P^2*A_One(X)|
+ <=2^(5/2)*c_P*E_P*X^(5/2)+2*E_P^2*X^2,
+ A_One(X)=sum_(n=X)^(2X-1)n^2
+         =(7/3)X^3-(3/2)X^2+(1/6)X.
+The exact polynomial defect is
+ A_One(2X)-4*A_One(X)=(28/3)X^3-(1/3)X.
+It follows that
+ Delta_P(X)=(28/3)c_P^2*X^3+O_P(X^(5/2)).
+More explicitly, for every integer X>=1,
+ |Delta_P(X)-(28/3)c_P^2*X^3|
+ <=2^(5/2)*c_P*E_P*(2^(5/2)+4)*X^(5/2)
+   +16*E_P^2*X^2+(c_P^2/3)*X.
+Since c_P>0 is fixed, the leading term persists along arbitrarily large dyadic
+X. Thus no finite constant can bound this defect by X^(2+epsilon) when
+0<epsilon<1. In particular no cofinal epsilon(q)->0 critical bound holds.
+This conclusion concerns the counterfeit, not the actual Mobius sequence.
+
+5. Even infinitely many partially normalized inverse rows are insufficient.
+The convolution f_P*One is multiplicative. At any p in P and exponent e>=1,
+ sum_(j=0)^e f_P(p^j)=1-1=0.
+Therefore (f_P*One)(n)=0 on EVERY row n divisible by at least one prime in P,
+including all such rows at arbitrarily large scales. At primes outside P the
+local divisor sum is1+1=2, so the full inverse condition fails there. The unit
+row is1. Partial prime normalization, the associated infinite family of zero
+rows, squarefree support and nonlinear cycles all coexist with cubic growth.
+Any generic SOS/rewriting certificate claiming critical control from just these
+premises would apply to f_P and is therefore impossible. For P={2}, all even
+inverse rows vanish, while c_P=1/(3*zeta(2))>0.
+
+6. Complete actual normalization and the uniform proof gate.
+Complete prime normalization plus complete multiplicativity determines every
+actual coefficient. Likewise complete finite inverse rows C_N*x=e1 uniquely
+determine x=mu through N. On an enlarged complete product horizon N^2 the same
+statement applies. Polynomial relations vanishing at this uniquely fixed point
+are algebraically consequences of the full linear inverse ideal: translate
+x=mu+C_N^(-1)*y, then any polynomial with zero constant term is a sum of y_i
+ times polynomials. Thus the nonlinear layer changes certificate representation,
+not logical information. This is not an obstruction to discovering a simpler
+uniform proof; it prevents advertising the cycles as independent cancellation.
+
+A proposed certificate grammar may search bounded-degree SOS identities
+ D_q(X)-complete_signed_defect
+ =sum_alpha nonnegative_weight_alpha*P_alpha(x)^2
+  +sum_beta multiplier_beta(x)*exact_arithmetic_relation_beta(x),
+with charged unit/boundary terms. Relations may include coprime cycles, actual
+prime-power normalization and complete inverse rows. The finite-domain identity,
+positivity, multiplier norms, product/source horizon, cutoffs and all residuals
+must be independently checked. It is not enough to encode each known mu(n) in
+an individualized constant, invert the entire finite C_N numerically, or store
+the desired defect as a remaining scalar premise.
+
+A GLOBAL admission requires a fixed symbolic or recursive template proved at
+EVERY dyadic X, with every q>=q0 and finite scale-independent constants; all
+recurrence initialization and changing product domains must be charged. Finite
+SOS success is a finite certificate only. Missing resources are not mathematical
+refutations. No full actual bound, RH proof, or winning template is supplied.
+The first calibration should be complete cycle positivity and the counterfeit
+above; the next objective is a uniformly reusable signed-kernel decomposition,
+not another regression of already-critical additive corrections.

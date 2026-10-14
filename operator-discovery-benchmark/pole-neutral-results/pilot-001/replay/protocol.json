@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "grammar_version": "coefficient-roots-and-fractional-log-kernels-v1",
+  "seed": 2026100979,
+  "precision": 320,
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b"
+  },
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/mellin-search-results/pilot-001",
+  "source_archive_sha256": "534ce31cd3496567f992fa9c76bcaa4c49b9ec09d37f6cf6b3ce5b2d575a6228",
+  "source_verification_sha256": "805daa0cb30a232258a2715861452e03519a94be74d32d3dda2d506384748592",
+  "branch_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/fractional-branch-results/audit-001",
+  "branch_audit_sha256": "69cb709b7cf9fe9f4126044691aaf0e2537c6f02c1ace852503532333523ca4a",
+  "branch_verification_sha256": "1f3182cfa05fa18e08865dda5c05310fa926f03cf42723010d53e4531a8b3185",
+  "known_zero_dependency": {
+    "verification_sha256": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "source_sha256": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "centre": [
+      "1/2",
+      "14.13472514173469379046"
+    ],
+    "radius": "1/20000",
+    "scope": "previously certified simple critical-line zero; reflection and uniqueness"
+  },
+  "maximum_denominator": 6,
+  "coefficient_powers": [
+    "1/6",
+    "1/5",
+    "1/4",
+    "1/3",
+    "1/2",
+    "3/5",
+    "2/3",
+    "1"
+  ],
+  "kernel_powers": [
+    "0",
+    "1/6",
+    "1/5",
+    "1/4",
+    "1/3",
+    "1/2",
+    "3/5",
+    "4/5",
+    "1"
+  ],
+  "shifts": [
+    "-1/2",
+    "0",
+    "1/2",
+    "1",
+    "3/2"
+  ],
+  "objective": "Find actual signed arithmetic bounds on coefficient roots and fractional logarithmic sums with an all-multiplicity ordinary-zeta bridge",
+  "construction": "independent coefficient power, kernel power and rational shift grids; local divisor audit never assumes matching powers",
+  "training_points": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "validation_points": [
+    193,
+    257,
+    389,
+    521
+  ],
+  "data_scope": "complete arithmetic sum through every point; certified special-function values; no omitted coefficients or quadrature estimates",
+  "offset_inference": "zero, median and mean of training responses at n>=16; quantize to 1/256; no predicted constant formula",
+  "theta_inference": "OLS log absolute centered responses plus 0,1/8,1/4 margins on 1/32 grid, and generic quarter-power grid from zero to two",
+  "constant_inference": "twice maximum training response/n^theta; upward 1/1024 rounding",
+  "cost_line": "sigma=eta+1/8, height=16; charge full inverse power 1/a, shifted kernel, offset and real-interpolation bound",
+  "archive_size": 12,
+  "selection": "original Mobius baseline; best matched fractional power per denominator; kernel-only smoothing; one failed pole-compensation and one introduced-shift control; fill by RH-compatible exponent and full reciprocal cost",
+  "final_cases": {
+    "large_count": 4,
+    "large_range": [
+      2049,
+      8191
+    ],
+    "intermediate_count": 3,
+    "intermediate_range": [
+      17,
+      127
+    ],
+    "boundary": [
+      1,
+      2,
+      3,
+      15
+    ]
+  },
+  "delayed_positive_cutoff": 128,
+  "maximum_final_cutoff": 8191,
+  "kernel_quadrature_calibration": {
+    "count": 2,
+    "u_numerator_range": [
+      1,
+      63
+    ],
+    "u_denominator": 16
+  },
+  "native_Mellin_calibration": {
+    "real_part": 4,
+    "heights": [
+      "0",
+      "7/3",
+      "19"
+    ],
+    "tail_h": 2
+  },
+  "coefficient_producer": "factor-free inverse plus exact normalized Dirichlet binomial powers",
+  "checker": "independent prime-power recursion, regularized incomplete gamma and auxiliary entire-integrand quadrature",
+  "model_or_literature_calls": false,
+  "historical_priority_is_acceptance_gate": false,
+  "uniform_integer_signed_bound_proved": false,
+  "remaining_assumptions": [
+    "fractional Dirichlet inverse and logarithmic integral construction language",
+    "small independent rational parameter grids",
+    "pure-power pointwise models",
+    "available local-divisor and Mellin proof methods"
+  ]
+}

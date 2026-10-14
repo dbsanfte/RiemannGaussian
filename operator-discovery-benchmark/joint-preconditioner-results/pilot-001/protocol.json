@@ -1,0 +1,3219 @@
+{
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "all_units_valuations_and_crosses": true,
+  "all_vectors": [
+    "a",
+    "a_u",
+    "a_v",
+    "p",
+    "d",
+    "R",
+    "pure",
+    "tilde_b",
+    "tilde_R",
+    "kernel",
+    "inverse",
+    "w",
+    "prefix",
+    "core",
+    "core_prefix",
+    "correction",
+    "correction_prefix",
+    "mode:B",
+    "mode:U",
+    "mode:V",
+    "mode:power",
+    "mode_prefix:B",
+    "mode_prefix:U",
+    "mode_prefix:V",
+    "mode_prefix:power"
+  ],
+  "calibration_scales": [
+    1,
+    16,
+    64,
+    1024
+  ],
+  "development": {
+    "joint_preconditioned_source_development.json": {
+      "operations": 71399,
+      "runs": [
+        {
+          "elapsed_seconds": 0.11536455998430029,
+          "operations": 71399,
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.033s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_joint_preconditioned_source operations=71399\n"
+        }
+      ]
+    },
+    "joint_preconditioner_checker_development.json": {
+      "operations": 91055,
+      "runs": [
+        {
+          "operations": 91055,
+          "returncode": 0,
+          "runtime_seconds": 0.085,
+          "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.085s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_joint_preconditioner operations=91055\n",
+          "test": "test_check_joint_preconditioner",
+          "tests": 8
+        }
+      ]
+    },
+    "joint_preconditioner_development.json": {
+      "operations": 276600,
+      "runs": [
+        {
+          "elapsed_seconds": 0.39436475301044993,
+          "operations": 276600,
+          "returncode": 0,
+          "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.349s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_joint_preconditioner_discovery operations=276600\n"
+        }
+      ]
+    },
+    "joint_reciprocal_checker_development.json": {
+      "operations": 177523,
+      "runs": [
+        {
+          "operations": 177523,
+          "returncode": 0,
+          "runtime_seconds": 0.038,
+          "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.038s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_joint_reciprocal_correlation operations=177523\n",
+          "test": "test_check_joint_reciprocal_correlation",
+          "tests": 7
+        }
+      ]
+    },
+    "joint_reciprocal_producer_development.json": {
+      "operations": 22710,
+      "runs": [
+        {
+          "elapsed_seconds": 0.06376105599338189,
+          "operations": 22710,
+          "returncode": 0,
+          "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.003s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_joint_reciprocal_correlation operations=22710\n"
+        }
+      ]
+    }
+  },
+  "fresh_scales": [
+    2048,
+    4096,
+    8192,
+    16384,
+    32768,
+    65536
+  ],
+  "grammar_size": 37,
+  "hashes": false,
+  "horizon": 131071,
+  "independent_methods": "direct Mobius convolutions, reciprocal interval identity, independent binomial kernels and inverse reconstruction",
+  "independent_precision_bits": 192,
+  "main_cap": 150000000,
+  "main_seconds": 7200,
+  "memory_bytes_per_process": 4294967296,
+  "metadata_reserve": 2000000,
+  "no_global_estimate_from_finite_values": true,
+  "parent": {
+    "RH_proved": false,
+    "arithmetic_frontier": {
+      "H": "floor(sqrt X)",
+      "I": "I(A,B)=sum_(A<k<=B)tilde_b(k), zero if B<=A",
+      "analytic_zero": "G(s)=beta*zeta(s+2/3)/zeta(s)^2-beta/zeta(s)-R_u has a local analytic zero at s=2/3",
+      "convolution": "tilde_b=beta*(mu*mu*k_u*k_v-mu*k_u-mu*k_v+delta)-d-R_u*k_u",
+      "convolution_conventions": "*=Dirichlet convolution, k_alpha(n)=n^(-alpha), u=1/3,v=2/3,delta(1)=1",
+      "d": "entire original same-prime-power contribution, retained",
+      "factorization": "g=beta*(mu*mu*k_v)-beta*mu-R_u*delta; tilde_b=k_u*g-beta*(mu*k_v)+beta*delta-d",
+      "finite_bracket_tail_bound_proved": false,
+      "joint_reciprocal_formula": "O_X=2/X^2*sum_(n=X)^N [sum_(h<=H)tilde_b(h)*I(floor(X/h),n)+sum_(H<h<=n)tilde_b(h)*I(h,n)]",
+      "retained_triangle": "2*sum_(H<h<=n)tilde_b(h)*I(h,n)=(T(n)-T(H))^2-sum_(H<h<=n)tilde_b(h)^2",
+      "triangle_bound_independently_paid": false,
+      "unit": "tilde_b(1)=-R_u",
+      "zero_implies_coefficient_series_convergence": false
+    },
+    "centering_feedback": {
+      "RH_proved": false,
+      "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+      "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+      "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+      "isolated_payment_excluded": {
+        "conclusion": "P_theta alone has no cofinal critical-energy bound",
+        "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+        "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+        "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+      },
+      "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+      "prime_parameter": "t=q^(-1/3)",
+      "proof_status": "reviewed analytical input; proof text is not formally checked",
+      "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+      "shared_prime_rule": {
+        "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+        "horizon": "T<=2*X^(1/4)",
+        "matrix_norm_squared_upper": "93/2",
+        "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+        "premise_established": false,
+        "storage": "identity matrix on the three states"
+      },
+      "smooth_compensator": [
+        "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+        "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+        "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+      ],
+      "state": [
+        "J",
+        "M_u",
+        "M_v"
+      ],
+      "theta": "3/4",
+      "transfer_matrix": [
+        [
+          [
+            [
+              0,
+              "-2"
+            ],
+            [
+              1,
+              "1"
+            ],
+            [
+              2,
+              "1"
+            ]
+          ],
+          [
+            [
+              0,
+              "-9/2"
+            ],
+            [
+              2,
+              "9/2"
+            ]
+          ],
+          [
+            [
+              0,
+              "-9/2"
+            ],
+            [
+              1,
+              "9/2"
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              0,
+              "-1"
+            ],
+            [
+              1,
+              "1"
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              0,
+              "-1"
+            ],
+            [
+              2,
+              "1"
+            ]
+          ]
+        ]
+      ],
+      "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+      "whole_signed_bound_proved": false
+    },
+    "definitions": {
+      "E0": "-R_u*zeta(1/3)>0",
+      "K": "beta+m",
+      "N": "2X-1",
+      "R": "sum_(h<=n)b(h)",
+      "R_u": "(2/3)*m",
+      "T": "sum_(h<=n)tilde_b(h)",
+      "W": "max(0,2X-max(X,h,k))",
+      "b": "a(n)-m*(n^(2/3)-(n-1)^(2/3))",
+      "beta": "9/2",
+      "e": "tilde_b-b>=0; sum_(n>=1)e(n)=E0",
+      "m": "m_u>0, fixed original pole coefficient",
+      "tilde_b": "a(n)-R_u*n^(-1/3)"
+    },
+    "economical_future_evaluation": {
+      "diagonal": "with c=floor(sqrt X), Q(y)=sum_(h<=y)tilde_b(h)^2, Q1(y)=sum_(h<=y)h*tilde_b(h)^2: D_X=[X*(Q(X)-Q(c))+2X*(Q(N)-Q(X))-(Q1(N)-Q1(X))]/X^2",
+      "identity_is_evidence_for_missing_bound": false,
+      "implementation_status": "specified next evaluator; not yet implemented or run",
+      "low_head": "H_X=X^-1*sum_(m<=X)(tilde_b*tilde_b)(m)",
+      "storage": "O(H)",
+      "strategy": "complete tilde energy minus low Dirichlet-convolution head minus high diagonal",
+      "work": "O(H log H) scalar arithmetic through source horizon H"
+    },
+    "equivalence_class": "candidate10_complete_prime_bank_covariance",
+    "evidence": {
+      "combined_charged_operations": 313797431,
+      "finite_candidate_checks": 93,
+      "fresh_validation_required_after_this_feedback": true,
+      "numerical_selection_retuned": false,
+      "parent_report": "centered-product-results/pilot-002/report.json",
+      "saved_witness_report": "centered-product-results/pilot-002/witness_analysis_001/report.json",
+      "selected": "(1+z)^2 at gamma 0,1/6,1/3",
+      "selected_witnesses_with_same_sign_band_contributions": 15,
+      "source_horizon": 2047,
+      "tests_passed": 15
+    },
+    "exact_recovery": {
+      "C_X": "X^-2*sum_(n=X)^N (R(n)^2-T(n)^2)",
+      "D_X": "X^-2*sum_(h<=N,h*h>X) tilde_b(h)^2*W_X(h,h)",
+      "H_X": "X^-2*sum_(h,k<=N,h*k<=X) tilde_b(h)*tilde_b(k)*W_X(h,k)",
+      "band_count_loss": false,
+      "consequences": [
+        "E_R(X)<=O_X+B(X)",
+        "O_X>=-B(X)"
+      ],
+      "identity": "E_R(X)=O_X+H_X+D_X+C_X",
+      "original_target_bridge": "full leading-centered R=R_new+Lv; retain the prior paid two-direction norm comparison and its finite cross",
+      "paid_remainder": "|H_X+D_X+C_X|<=3*K^2*(1+log N)^3+4*E0*K*(1+log(2X))+E0^2/X=:B(X)",
+      "recovery_multiplier": "1",
+      "status": "analytically reviewed exact identity and uniform remainder; not a closed signed bound"
+    },
+    "next_grammar": {
+      "Gamma": "sum_(h<=c)b(h)*(R(min(n,floor(T/h)))-R(c)), c=min(n,floor(sqrt T))",
+      "finite_validation_is_not_uniform_control": true,
+      "future_boundary_condition_established": false,
+      "hyperbola_complement": "R(n)^2-Q_n(T)=V^2+2*R(c)*V-2*Gamma, with V=R(n)-R(c)",
+      "numerical_constants_secondary": true,
+      "predictor_gap": "|alpha|<sqrt(d) for R(n)-alpha*R(floor(n/d)), d>=2",
+      "preserve_full_cross_terms": true,
+      "primitives": [
+        "complete reciprocal intervals and quotient fibers",
+        "joint signed pairings and square completions",
+        "full Mobius/divisor and prime-power expansions",
+        "lower-prefix predictors with proved recovery gaps",
+        "coupled recurrences retaining current-scale forcing and all complementary terms"
+      ],
+      "prioritize": [
+        "proved arithmetic exponent improvement",
+        "proved recurrence closing a source bound",
+        "reduction to independently proved estimates or a new concrete correlation lemma"
+      ],
+      "proof_gate": [
+        "exact support and complete reconstruction",
+        "independently paid removed components",
+        "explicit induction coefficient gap and smaller arguments",
+        "remaining signed lemma and acyclic proof dependencies"
+      ],
+      "raw_mean_cancellation": "alpha=d^(2/3) has bounded floor forcing but exceeds the critical forward recovery threshold"
+    },
+    "optional_stronger_auxiliary": {
+      "J": "ceil(log2 N^2); last upper band may exceed N^2",
+      "expression": "max_(j:X<2^j<=2^J) sup_(1/2<=t<=1) |O_0(X,2^j,t)|",
+      "formula_reference": "CENTERED_BAND_FORCING_REVIEW_003.txt (6.3)",
+      "required_for_primary_target": false,
+      "sufficient_recovery": "E_R(X)<=(J+1)*[U_off+2*K^2*(1+log N)^3+4*E0*K*(1+log(2X))+E0^2/X]",
+      "uniform_bound_proved": false
+    },
+    "presentation_equivalence": {
+      "archived_presentations": [
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -2,
+            1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 3
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -2,
+            1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 3
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -2,
+            1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 3
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            0
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 7
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            0
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 7
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            0
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 7
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 8
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 8
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            -1,
+            1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 8
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            -1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 11
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            -1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 11
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            -1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 11
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 12
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 12
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 12
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 13
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 13
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            0,
+            1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 13
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 17
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 17
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 17
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 18
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 18
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            1,
+            1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 18
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            2,
+            1
+          ],
+          "gamma": "0",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 23
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            2,
+            1
+          ],
+          "gamma": "1/6",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 23
+        },
+        {
+          "auxiliary_class": "complete_centered_uniform_relative_product_bands",
+          "coefficients": [
+            1,
+            2,
+            1
+          ],
+          "gamma": "1/3",
+          "independent_exponent_gain_proved": false,
+          "stencil_id": 23
+        }
+      ],
+      "cofinal_auxiliary_classes": 1,
+      "count_aliases_as_independent_estimates": false,
+      "main_obstruction_replaced_by_stronger_auxiliary": false,
+      "retain_all_programs": true,
+      "retain_distinct_future_arithmetic_arguments": true,
+      "scope": "fixed nonnegative gamma, same complete center, same relative t and kernel; fixed admitted quadratic C",
+      "weight_comparison": [
+        "U_C,gamma<=2^gamma*U_C,0",
+        "U_C,0<=(2-2^(-gamma))*U_C,gamma"
+      ]
+    },
+    "primary_obligation": {
+      "all_valuations_and_gcd_overlaps": true,
+      "combine_all_high_bands_before_bounding": true,
+      "expression": "O_X=2/X^2*sum_(n=X)^(2X-1) sum_(1<=h<k<=n,h*k>X) tilde_b(h)*tilde_b(k)",
+      "full_prime_composite_interactions": true,
+      "id": "joined_high_product_off_diagonal_upper",
+      "independent_bounds_on_each_band_required": false,
+      "independent_signed_gain_proved": false,
+      "needed": "for every epsilon>0, exists C_epsilon independent of dyadic X>=1: O_X<=C_epsilon*X^epsilon",
+      "one_sided": true,
+      "original_target_equivalent_up_to_paid_terms": true,
+      "uniform_signed_bound_proved": false
+    },
+    "prior_obligation": {
+      "RH_proved": false,
+      "alternative_normalized_abel": {
+        "bound_proved": false,
+        "expression": "F_gamma(t)=t^gamma sum_(h<=t)b(h)h^-gamma",
+        "forward_norm": "sigma/(sigma-gamma), gamma<sigma",
+        "fractional_prime_gain": "cancels under normalized pullback; no double credit",
+        "inverse": "B=F_gamma-gamma integral_1^t F_gamma(u) du/u",
+        "inverse_norm_at_most_one": "0<=gamma<=2sigma in truncated weighted L2 norm"
+      },
+      "centering_feedback": {
+        "RH_proved": false,
+        "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+        "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+        "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+        "isolated_payment_excluded": {
+          "conclusion": "P_theta alone has no cofinal critical-energy bound",
+          "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+          "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+          "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+        },
+        "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+        "prime_parameter": "t=q^(-1/3)",
+        "proof_status": "reviewed analytical input; proof text is not formally checked",
+        "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+        "shared_prime_rule": {
+          "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+          "horizon": "T<=2*X^(1/4)",
+          "matrix_norm_squared_upper": "93/2",
+          "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+          "premise_established": false,
+          "storage": "identity matrix on the three states"
+        },
+        "smooth_compensator": [
+          "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+          "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+          "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+        ],
+        "state": [
+          "J",
+          "M_u",
+          "M_v"
+        ],
+        "theta": "3/4",
+        "transfer_matrix": [
+          [
+            [
+              [
+                0,
+                "-2"
+              ],
+              [
+                1,
+                "1"
+              ],
+              [
+                2,
+                "1"
+              ]
+            ],
+            [
+              [
+                0,
+                "-9/2"
+              ],
+              [
+                2,
+                "9/2"
+              ]
+            ],
+            [
+              [
+                0,
+                "-9/2"
+              ],
+              [
+                1,
+                "9/2"
+              ]
+            ]
+          ],
+          [
+            [],
+            [
+              [
+                0,
+                "-1"
+              ],
+              [
+                1,
+                "1"
+              ]
+            ],
+            []
+          ],
+          [
+            [],
+            [],
+            [
+              [
+                0,
+                "-1"
+              ],
+              [
+                2,
+                "1"
+              ]
+            ]
+          ]
+        ],
+        "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+        "whole_signed_bound_proved": false
+      },
+      "corrected_centering": "b(n)=a(n)-m_u*(n^(2/3)-(n-1)^(2/3)), including n=1; retain six SF/NS AA/cross/MM sectors",
+      "equivalence_class": "candidate10_complete_prime_bank_covariance",
+      "finite_results": {
+        "RH_proved": false,
+        "all_partial_breakpoints": true,
+        "audit_operations": 21398570,
+        "checked_source_horizon": 2047,
+        "cofinal_inverse_stencils": 9,
+        "discovery_scales": [
+          64,
+          128,
+          256
+        ],
+        "elapsed_seconds": 87.57343329599826,
+        "finite_candidate_checks": 93,
+        "independent_source_precision_bits": 192,
+        "main_operations": 882325,
+        "original_energy": {
+          "1024": "[67.193535046182999579724330128555309585137868 +/- 5.83e-43]",
+          "128": "[104.1643905343876391700766625238763522757729922 +/- 8.50e-44]",
+          "256": "[95.937307460838503212378946287842907577367650 +/- 5.52e-43]",
+          "512": "[75.411359281637921376269891089586411464840498 +/- 3.26e-43]",
+          "64": "[118.2367896616548688121384164175335676142793655 +/- 5.89e-44]"
+        },
+        "peak_rss_kib": 685844,
+        "preparation_operations": 1594304,
+        "producer_operations": 289911552,
+        "product_counts": {
+          "1024": 1004347,
+          "128": 17577,
+          "256": 67591,
+          "512": 259767,
+          "64": 4646
+        },
+        "proof_status": "conditional polylog recovery is proved analytically; uniform source bound remains open",
+        "selected": [
+          {
+            "coefficient_l1": 4,
+            "gamma": "0",
+            "inverse_log_degree": 3,
+            "stencil_id": 23,
+            "uniform_signed_bound_proved": false,
+            "worst_discovery_slope": -0.22511065805836591
+          },
+          {
+            "coefficient_l1": 4,
+            "gamma": "1/6",
+            "inverse_log_degree": 3,
+            "stencil_id": 23,
+            "uniform_signed_bound_proved": false,
+            "worst_discovery_slope": -0.22168288596023344
+          },
+          {
+            "coefficient_l1": 4,
+            "gamma": "1/3",
+            "inverse_log_degree": 3,
+            "stencil_id": 23,
+            "uniform_signed_bound_proved": false,
+            "worst_discovery_slope": -0.21816487638196672
+          }
+        ],
+        "status": "CENTERED_PRODUCT_BAND_CANDIDATES_FINITELY_VERIFIED",
+        "stencil_grammar_size": 25,
+        "stronger_auxiliary_than_original": true,
+        "total_operations": 313786751,
+        "validation_pairs": [
+          [
+            12,
+            "0"
+          ],
+          [
+            12,
+            "1/3"
+          ],
+          [
+            12,
+            "1/6"
+          ],
+          [
+            23,
+            "0"
+          ],
+          [
+            23,
+            "1/3"
+          ],
+          [
+            23,
+            "1/6"
+          ]
+        ],
+        "validation_scales": [
+          512,
+          1024
+        ],
+        "whole_signed_bound_proved": false
+      },
+      "fixed_prime_feedback": {
+        "delayed_contraction": "q>=3 gives rho<=17/18 at sigma>=1/2",
+        "open": "current-scale q-free source frontier; not an independently paid smaller argument",
+        "paid": "exact pole-floor, unit and same-prime forcing"
+      },
+      "new_auxiliary": {
+        "J": "ceil(log2(N^2))",
+        "N": "2X-1",
+        "band": "D_j,gamma(t)=2^(j*gamma)/X^2 sum_(2^(j-1)<hk<=t*2^j,h,k<=N) b(h)b(k)W_X(h,k)*(hk)^(-gamma)",
+        "generic_bounded_source_counterexample_to_reverse_implication": "lacunary +/- blocks in OCCUPANCY_POLE_RECOVERY_REVIEW_002.txt; not an actual-mu counterexample",
+        "inverse": "g coefficients of 1/(1+c1*z+c2*z^2); |g_l|<=l+1 for admitted roots",
+        "needed_bound": "for every epsilon>0, U_X=max_j sup_t |operator|<=C_epsilon X^epsilon uniformly in X",
+        "negative_bands": "zero",
+        "operator": "D_j+c1*D_(j-1)+c2*D_(j-2), same t on all bands",
+        "recovery": "E_R(X)<=(2-2^-gamma)*sum_(l=0)^J (J-l+1)*abs(g_l)*U_X",
+        "recovery_is_polylogarithmic": true,
+        "stencils_share_auxiliary_equivalence_class": true,
+        "stronger_than_whole_moment": true,
+        "t_domain": "1/2<=t<=1",
+        "uniform_arithmetic_bound_proved": false
+      },
+      "pole_feedback": {
+        "compensation": "only the unrestricted complete centered sum has proved pole cancellation; no separate centered-SF bound is assumed",
+        "nonzero_squarefree_double_residue": true,
+        "physical_poles": [
+          "2/3",
+          "2/3"
+        ],
+        "unconditional_diagonal_asymptotic_proved": false,
+        "weighted_sixth_root_poles": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      "prior_obligation": {
+        "RH_proved": false,
+        "centering_feedback": {
+          "RH_proved": false,
+          "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+          "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+          "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+          "isolated_payment_excluded": {
+            "conclusion": "P_theta alone has no cofinal critical-energy bound",
+            "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+            "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+            "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+          },
+          "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+          "prime_parameter": "t=q^(-1/3)",
+          "proof_status": "reviewed analytical input; proof text is not formally checked",
+          "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+          "shared_prime_rule": {
+            "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+            "horizon": "T<=2*X^(1/4)",
+            "matrix_norm_squared_upper": "93/2",
+            "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+            "premise_established": false,
+            "storage": "identity matrix on the three states"
+          },
+          "smooth_compensator": [
+            "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+            "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+            "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+          ],
+          "state": [
+            "J",
+            "M_u",
+            "M_v"
+          ],
+          "theta": "3/4",
+          "transfer_matrix": [
+            [
+              [
+                [
+                  0,
+                  "-2"
+                ],
+                [
+                  1,
+                  "1"
+                ],
+                [
+                  2,
+                  "1"
+                ]
+              ],
+              [
+                [
+                  0,
+                  "-9/2"
+                ],
+                [
+                  2,
+                  "9/2"
+                ]
+              ],
+              [
+                [
+                  0,
+                  "-9/2"
+                ],
+                [
+                  1,
+                  "9/2"
+                ]
+              ]
+            ],
+            [
+              [],
+              [
+                [
+                  0,
+                  "-1"
+                ],
+                [
+                  1,
+                  "1"
+                ]
+              ],
+              []
+            ],
+            [
+              [],
+              [],
+              [
+                [
+                  0,
+                  "-1"
+                ],
+                [
+                  2,
+                  "1"
+                ]
+              ]
+            ]
+          ],
+          "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+          "whole_signed_bound_proved": false
+        },
+        "complete_repeated_prime_transition_implemented": false,
+        "construction": {
+          "fractional_auxiliaries": [
+            {
+              "complete_occupancy_basis": true,
+              "construction_ids": [
+                1,
+                7,
+                13,
+                19,
+                25,
+                31,
+                37,
+                43,
+                49
+              ],
+              "covers_every_discovered_mode": true,
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "gamma": "1/6",
+              "pointwise_inverse_power": "1/3",
+              "signed_sum_recovery_proved": false
+            },
+            {
+              "complete_occupancy_basis": true,
+              "construction_ids": [
+                2,
+                8,
+                14,
+                20,
+                26,
+                32,
+                38,
+                44,
+                50
+              ],
+              "covers_every_discovered_mode": true,
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "gamma": "1/3",
+              "pointwise_inverse_power": "2/3",
+              "signed_sum_recovery_proved": false
+            },
+            {
+              "complete_occupancy_basis": true,
+              "construction_ids": [
+                3,
+                9,
+                15,
+                21,
+                27,
+                33,
+                39,
+                45,
+                51
+              ],
+              "covers_every_discovered_mode": true,
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "gamma": "1/2",
+              "pointwise_inverse_power": "1",
+              "signed_sum_recovery_proved": false
+            },
+            {
+              "complete_occupancy_basis": true,
+              "construction_ids": [
+                4,
+                10,
+                16,
+                22,
+                28,
+                34,
+                40,
+                46,
+                52
+              ],
+              "covers_every_discovered_mode": true,
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "gamma": "2/3",
+              "pointwise_inverse_power": "4/3",
+              "signed_sum_recovery_proved": false
+            },
+            {
+              "complete_occupancy_basis": true,
+              "construction_ids": [
+                5,
+                11,
+                17,
+                23,
+                29,
+                35,
+                41,
+                47,
+                53
+              ],
+              "covers_every_discovered_mode": true,
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "gamma": "1",
+              "pointwise_inverse_power": "2",
+              "signed_sum_recovery_proved": false
+            }
+          ],
+          "modes": [
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "1",
+                "0",
+                "0"
+              ],
+              "eigen_u": "0",
+              "eigen_v": "0",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 0,
+              "potential": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "16/25",
+              "bulk_polynomial": [
+                "0",
+                "0",
+                "1"
+              ],
+              "eigen_u": "0",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 1,
+              "potential": [
+                "1",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "16/25",
+              "bulk_polynomial": [
+                "0",
+                "0",
+                "1"
+              ],
+              "eigen_u": "0",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 2,
+              "potential": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "0",
+                "2"
+              ],
+              "eigen_u": "0",
+              "eigen_v": "2",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 3,
+              "potential": [
+                "1",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "4/5",
+              "bulk_polynomial": [
+                "0",
+                "1",
+                "0"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "0",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 4,
+              "potential": [
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "4/5",
+              "bulk_polynomial": [
+                "0",
+                "1",
+                "0"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "0",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 5,
+              "potential": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "1",
+                "1"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 6,
+              "potential": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "1",
+                "1"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 7,
+              "potential": [
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "1",
+                "1"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 8,
+              "potential": [
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "1",
+                "1"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 9,
+              "potential": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "2",
+              "bulk_polynomial": [
+                "-2",
+                "1",
+                "2"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "2",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 10,
+              "potential": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "1",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": false
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "2",
+              "bulk_polynomial": [
+                "-2",
+                "1",
+                "2"
+              ],
+              "eigen_u": "1",
+              "eigen_v": "2",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 11,
+              "potential": [
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0",
+                "1",
+                "0"
+              ],
+              "stable": false
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "1",
+              "bulk_polynomial": [
+                "-1",
+                "2",
+                "0"
+              ],
+              "eigen_u": "2",
+              "eigen_v": "0",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 12,
+              "potential": [
+                "1",
+                "1",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": true
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "2",
+              "bulk_polynomial": [
+                "-2",
+                "2",
+                "1"
+              ],
+              "eigen_u": "2",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 13,
+              "potential": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "stable": false
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "2",
+              "bulk_polynomial": [
+                "-2",
+                "2",
+                "1"
+              ],
+              "eigen_u": "2",
+              "eigen_v": "1",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 14,
+              "potential": [
+                "1",
+                "1",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0",
+                "0"
+              ],
+              "stable": false
+            },
+            {
+              "algebraic_envelope_only": true,
+              "bulk_envelope": "3",
+              "bulk_polynomial": [
+                "-3",
+                "2",
+                "2"
+              ],
+              "eigen_u": "2",
+              "eigen_v": "2",
+              "energy_contraction_proved": false,
+              "full_target_recovered": false,
+              "id": 15,
+              "potential": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+              ],
+              "stable": false
+            }
+          ],
+          "phase_cone_auxiliaries": [
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                5,
+                29,
+                53,
+                77,
+                101,
+                125,
+                149,
+                173,
+                197
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/6",
+              "phase_half_width": "1/4",
+              "pointwise_inverse_power": "1/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                4,
+                28,
+                52,
+                76,
+                100,
+                124,
+                148,
+                172,
+                196
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/6",
+              "phase_half_width": "1/8",
+              "pointwise_inverse_power": "1/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                10,
+                34,
+                58,
+                82,
+                106,
+                130,
+                154,
+                178,
+                202
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/3",
+              "phase_half_width": "1/2",
+              "pointwise_inverse_power": "2/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                9,
+                33,
+                57,
+                81,
+                105,
+                129,
+                153,
+                177,
+                201
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/3",
+              "phase_half_width": "1/4",
+              "pointwise_inverse_power": "2/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                8,
+                32,
+                56,
+                80,
+                104,
+                128,
+                152,
+                176,
+                200
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/3",
+              "phase_half_width": "1/8",
+              "pointwise_inverse_power": "2/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                15,
+                39,
+                63,
+                87,
+                111,
+                135,
+                159,
+                183,
+                207
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/2",
+              "phase_half_width": "1",
+              "pointwise_inverse_power": "1",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                14,
+                38,
+                62,
+                86,
+                110,
+                134,
+                158,
+                182,
+                206
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/2",
+              "phase_half_width": "1/2",
+              "pointwise_inverse_power": "1",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                13,
+                37,
+                61,
+                85,
+                109,
+                133,
+                157,
+                181,
+                205
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/2",
+              "phase_half_width": "1/4",
+              "pointwise_inverse_power": "1",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                12,
+                36,
+                60,
+                84,
+                108,
+                132,
+                156,
+                180,
+                204
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1/2",
+              "phase_half_width": "1/8",
+              "pointwise_inverse_power": "1",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                19,
+                43,
+                67,
+                91,
+                115,
+                139,
+                163,
+                187,
+                211
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "2/3",
+              "phase_half_width": "1",
+              "pointwise_inverse_power": "4/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                18,
+                42,
+                66,
+                90,
+                114,
+                138,
+                162,
+                186,
+                210
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "2/3",
+              "phase_half_width": "1/2",
+              "pointwise_inverse_power": "4/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                17,
+                41,
+                65,
+                89,
+                113,
+                137,
+                161,
+                185,
+                209
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "2/3",
+              "phase_half_width": "1/4",
+              "pointwise_inverse_power": "4/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                16,
+                40,
+                64,
+                88,
+                112,
+                136,
+                160,
+                184,
+                208
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "2/3",
+              "phase_half_width": "1/8",
+              "pointwise_inverse_power": "4/3",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                23,
+                47,
+                71,
+                95,
+                119,
+                143,
+                167,
+                191,
+                215
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1",
+              "phase_half_width": "1",
+              "pointwise_inverse_power": "2",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                22,
+                46,
+                70,
+                94,
+                118,
+                142,
+                166,
+                190,
+                214
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1",
+              "phase_half_width": "1/2",
+              "pointwise_inverse_power": "2",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                21,
+                45,
+                69,
+                93,
+                117,
+                141,
+                165,
+                189,
+                213
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1",
+              "phase_half_width": "1/4",
+              "pointwise_inverse_power": "2",
+              "prime_free_projection_closure": false
+            },
+            {
+              "arithmetic_operator_norm_proved": false,
+              "construction_ids": [
+                20,
+                44,
+                68,
+                92,
+                116,
+                140,
+                164,
+                188,
+                212
+              ],
+              "energy_contraction_proved": false,
+              "formal_dilation_symbol_bounded": true,
+              "full_target_recovered": false,
+              "gamma": "1",
+              "phase_half_width": "1/8",
+              "pointwise_inverse_power": "2",
+              "prime_free_projection_closure": false
+            }
+          ],
+          "target_bulk_and_both_exits": {
+            "kernel": [
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 0,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 1,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 2,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 3,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 4,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 5,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 6,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 7,
+                "right_exit": [
+                  "1",
+                  "0",
+                  "-1"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 8,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 9,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 10,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "-1",
+                  "1",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 11,
+                "right_exit": [
+                  "1",
+                  "-1",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "left_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "mask": 12,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                "left_exit": [
+                  "1",
+                  "0",
+                  "-1"
+                ],
+                "mask": 13,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "-1",
+                  "1",
+                  "0"
+                ],
+                "left_exit": [
+                  "1",
+                  "-1",
+                  "0"
+                ],
+                "mask": 14,
+                "right_exit": [
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "bulk": [
+                  "-3",
+                  "2",
+                  "2"
+                ],
+                "left_exit": [
+                  "2",
+                  "-1",
+                  "-1"
+                ],
+                "mask": 15,
+                "right_exit": [
+                  "2",
+                  "-1",
+                  "-1"
+                ]
+              }
+            ],
+            "mode_id": "target",
+            "potential": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          "target_recovery": [
+            "1",
+            "-1",
+            "-1",
+            "1",
+            "-1",
+            "-1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "-1",
+            "-1",
+            "1",
+            "-1",
+            "-1",
+            "1"
+          ]
+        },
+        "dependencies": [
+          {
+            "id": "full_centered_moment",
+            "kind": "original target",
+            "requires": [
+              "joint_squarefree_and_repeated_valuation_forcing",
+              "complete_center_and_cross"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "id": "joint_squarefree_and_repeated_valuation_forcing",
+            "requires": [
+              "birth_and_exit_correlations",
+              "all_valuation_complement"
+            ],
+            "status": "OPEN"
+          },
+          {
+            "expression": "joint signed birth and BOTH exit terms at every required scale/prime; include high-frequency and moving prime-free projection control; scalar/phase-cone bounds alone are insufficient",
+            "id": "birth_and_exit_correlations",
+            "requires": [],
+            "status": "OPEN"
+          },
+          {
+            "expression": "full rational local prime-valuation transition, shared gcds and source prime-power correction",
+            "id": "all_valuation_complement",
+            "requires": [],
+            "status": "OPEN"
+          },
+          {
+            "expression": "original smooth/pole compensation kept jointly with source square",
+            "id": "complete_center_and_cross",
+            "requires": [],
+            "status": "OPEN"
+          }
+        ],
+        "dependency_policy": "no RH-strength companion estimate is a paid leaf; a smaller-scale induction needs uniform constants and an independently bounded forcing",
+        "energy_contraction_proved": false,
+        "equivalence_class": "candidate10_complete_prime_bank_covariance",
+        "exact_new_target": {
+          "Birth": "sum_(h*k=m)[G_q(h)*gamma(k)*W_X(q*h,k)+gamma(h)*G_q(k)*W_X(h,q*k)]",
+          "Boundary": "sum_(h*k=m) gamma(h)*gamma(k)*(2*W_X(h,k)-W_X(q*h,k)-W_X(h,q*k))",
+          "G": "beta*(s_q*prod_(p|h)r_p+r_q*prod_(p|h)s_p-t_q*delta(h))",
+          "Phi": "sum_(h*k=m) gamma(h)*gamma(k)*W_X(h,k)",
+          "W": "max(0,2X-max(X,h,k))",
+          "beta": "9/2",
+          "expression": "X^-2 sum_(m squarefree,q not dividing m) mu(m)*[(1-2*t_q)*Phi_X(m)+t_q*Boundary_X,q(m)-Birth_X,q(m)]",
+          "gamma": "beta*(prod_(p|h)(r_p+s_p)-prod_(p|h)r_p-prod_(p|h)s_p+delta(h))",
+          "r_p": "1-p^(-1/3)",
+          "s_p": "1-p^(-2/3)",
+          "scope": "exact squarefree-product projection only; not positive and not the complete target",
+          "t_q": "2-q^(-1/3)-q^(-2/3)"
+        },
+        "fractional_recovery": "need uniform product-cutoff partial sums for signed Abel recovery; pointwise inverse m^gamma<= (2X)^(2gamma) is not a signed-sum estimate",
+        "new_actual_prime_distribution_estimate": false,
+        "prior_obligation": {
+          "RH_proved": false,
+          "centering_feedback": {
+            "RH_proved": false,
+            "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+            "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+            "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+            "isolated_payment_excluded": {
+              "conclusion": "P_theta alone has no cofinal critical-energy bound",
+              "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+              "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+              "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+            },
+            "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+            "prime_parameter": "t=q^(-1/3)",
+            "proof_status": "reviewed analytical input; proof text is not formally checked",
+            "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+            "shared_prime_rule": {
+              "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+              "horizon": "T<=2*X^(1/4)",
+              "matrix_norm_squared_upper": "93/2",
+              "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+              "premise_established": false,
+              "storage": "identity matrix on the three states"
+            },
+            "smooth_compensator": [
+              "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+              "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+              "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+            ],
+            "state": [
+              "J",
+              "M_u",
+              "M_v"
+            ],
+            "theta": "3/4",
+            "transfer_matrix": [
+              [
+                [
+                  [
+                    0,
+                    "-2"
+                  ],
+                  [
+                    1,
+                    "1"
+                  ],
+                  [
+                    2,
+                    "1"
+                  ]
+                ],
+                [
+                  [
+                    0,
+                    "-9/2"
+                  ],
+                  [
+                    2,
+                    "9/2"
+                  ]
+                ],
+                [
+                  [
+                    0,
+                    "-9/2"
+                  ],
+                  [
+                    1,
+                    "9/2"
+                  ]
+                ]
+              ],
+              [
+                [],
+                [
+                  [
+                    0,
+                    "-1"
+                  ],
+                  [
+                    1,
+                    "1"
+                  ]
+                ],
+                []
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    0,
+                    "-1"
+                  ],
+                  [
+                    2,
+                    "1"
+                  ]
+                ]
+              ]
+            ],
+            "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+            "whole_signed_bound_proved": false
+          },
+          "equivalence_class": "candidate10_complete_prime_bank_covariance",
+          "existing_auxiliary": "bounded-degree actual-prime edge exchange correction has a cofinal absolute envelope",
+          "full_graph_recovery_proved": false,
+          "not_a_new_source_experiment": true,
+          "product_fiber_feedback": {
+            "implication": "nonnegative prime-allocation transport within such a product cannot pair opposite signs",
+            "invariant": "on squarefree m, every nonzero a(h)*a(k) with h*k=m has sign mu(m)",
+            "not_excluded": [
+              "cross-product transitions changing prime-count parity",
+              "different valuation allocations at nonsquarefree products",
+              "signed kernel and centered/repeated-prime compensation"
+            ],
+            "paid_regions": [
+              "h*k<=X*B(X) with fixed/polylog B, retaining the full d4 bound",
+              "fixed/polylog primitive cofactor height with all gcd and valuation overlaps"
+            ],
+            "proposed_new_production": "prime adjunction across product fibers with explicit occupancy states, birth terms and both prefix exits",
+            "provenance": "PRODUCT_FIBER_SIGNED_REVIEW_001.txt",
+            "squarefree_projection_is_positive_energy": false
+          },
+          "required_bound": {
+            "all_cross_terms_retained": true,
+            "constants_uniform_in": "X",
+            "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+            "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+          },
+          "required_recovery": [
+            "retain the unsuppressed symmetric coefficient/kernel term",
+            "supply complete-graph recovery with growing path/congestion costs and its constant mode paid",
+            "retain same-prime labels, cross-divisibility, shared cofactors, units, poles and all moving supports"
+          ],
+          "schema": "prime-exchange-joint-recovery-obligation-v1",
+          "scope": {
+            "domain": "all dyadic integers X>=1",
+            "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+            "source": "actual_mu_candidate10"
+          },
+          "selected_factor_constructions": [
+            {
+              "RH_proved": false,
+              "complete_prime_graph_recovery": "OPEN",
+              "constant_for_correction_over_four": "243/8",
+              "edge_constructions": [
+                {
+                  "C": "243/8",
+                  "bound": {
+                    "both_orientation_supports_retained": true,
+                    "cofinal": true,
+                    "constant_multiplier": "7/2",
+                    "constant_power_of_two": "1",
+                    "degree": "1",
+                    "energy_upper_power": "0",
+                    "full_domain_recovery": "OPEN",
+                    "growing_degree_graphs_admitted": false,
+                    "logdegree": 2,
+                    "theta": "3/4",
+                    "weight": "1/3",
+                    "whole_signed_bound_proved": false
+                  },
+                  "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+                  "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+                  "degree_independent_of_X": true,
+                  "graph": "next_1_actual_prime_neighbours",
+                  "original_target_recovered": false
+                },
+                {
+                  "C": "243/8",
+                  "bound": {
+                    "both_orientation_supports_retained": true,
+                    "cofinal": true,
+                    "constant_multiplier": "7",
+                    "constant_power_of_two": "1",
+                    "degree": "2",
+                    "energy_upper_power": "0",
+                    "full_domain_recovery": "OPEN",
+                    "growing_degree_graphs_admitted": false,
+                    "logdegree": 2,
+                    "theta": "3/4",
+                    "weight": "1/3",
+                    "whole_signed_bound_proved": false
+                  },
+                  "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+                  "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+                  "degree_independent_of_X": true,
+                  "graph": "next_2_actual_prime_neighbours",
+                  "original_target_recovered": false
+                },
+                {
+                  "C": "243/8",
+                  "bound": {
+                    "both_orientation_supports_retained": true,
+                    "cofinal": true,
+                    "constant_multiplier": "14",
+                    "constant_power_of_two": "1",
+                    "degree": "4",
+                    "energy_upper_power": "0",
+                    "full_domain_recovery": "OPEN",
+                    "growing_degree_graphs_admitted": false,
+                    "logdegree": 2,
+                    "theta": "3/4",
+                    "weight": "1/3",
+                    "whole_signed_bound_proved": false
+                  },
+                  "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+                  "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+                  "degree_independent_of_X": true,
+                  "graph": "next_4_actual_prime_neighbours",
+                  "original_target_recovered": false
+                }
+              ],
+              "envelope": {
+                "coefficient_envelope": "each component <= component_constant*r^(-prime_weight)",
+                "common_total_order": 1,
+                "component_constants": [
+                  "0",
+                  "1",
+                  "1",
+                  "1",
+                  "0",
+                  "1",
+                  "1",
+                  "1",
+                  "0"
+                ],
+                "component_total_orders": [
+                  null,
+                  1,
+                  1,
+                  1,
+                  null,
+                  1,
+                  1,
+                  1,
+                  null
+                ],
+                "domain": "0<x<y<1; x=q^(-1/3), y=r^(-1/3), actual primes r<q",
+                "prime_weight": "1/3",
+                "whole_signed_bound_proved": false
+              },
+              "factors": [
+                {
+                  "coefficients": [
+                    0,
+                    1,
+                    -1
+                  ],
+                  "multiplicity": 1
+                },
+                {
+                  "coefficients": [
+                    1,
+                    -1,
+                    0
+                  ],
+                  "multiplicity": 1
+                },
+                {
+                  "coefficients": [
+                    1,
+                    0,
+                    -1
+                  ],
+                  "multiplicity": 1
+                }
+              ],
+              "full_kernel_correction_admissible": true,
+              "kernel_A": "max(0,min(2X,tau_theta(r))-max(X,q*H,r*K))",
+              "kernel_B": "max(0,min(2X,tau_theta(r))-max(X,r*H,q*K))",
+              "kernel_domain": "r<q primes; H,K>=2; complete union of both supports; gcd(H,K) unrestricted",
+              "original": [
+                [],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    1
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    -1
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    -1
+                  ]
+                ],
+                [],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    -1
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    1
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      0,
+                      2
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      0
+                    ],
+                    1
+                  ],
+                  [
+                    [
+                      1,
+                      2
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      0
+                    ],
+                    -1
+                  ],
+                  [
+                    [
+                      2,
+                      1
+                    ],
+                    1
+                  ]
+                ],
+                []
+              ],
+              "parent_id": 13618,
+              "prime_swap_antisymmetric": true,
+              "program": {
+                "binding": "distinct_primes",
+                "terms": [
+                  {
+                    "coefficient": 1,
+                    "left": [
+                      1,
+                      0
+                    ],
+                    "right": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "coefficient": -1,
+                    "left": [
+                      0,
+                      1
+                    ],
+                    "right": [
+                      1,
+                      0
+                    ]
+                  }
+                ]
+              },
+              "projection": "beta^2*(B-au-av) tensor (B-au-av); units excluded",
+              "quadratic_identity": "(P_A*K_A+P_B*K_B)/2 = (P_A+P_B)*(K_A+K_B)/4 + (P_A-P_B)*(K_A-K_B)/4",
+              "quotients": [
+                [],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "-1"
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "-1"
+                  ]
+                ],
+                [],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "-1"
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                [
+                  [
+                    [
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                []
+              ],
+              "same_prime_and_cross_divisibility_sectors": "OPEN",
+              "symmetric_core": "OPEN",
+              "whole_signed_bound_proved": false
+            }
+          ],
+          "signed_credit_proved": false,
+          "source": "actual_mu_candidate10",
+          "source_specific_improvement": {
+            "at_selected_theta": "14*beta^2*d*(1+log(2X))",
+            "beta": "9/2",
+            "formula": "|edge correction|<=7*beta^2*d*2^(2-4*theta/3)*X^(1-4*theta/3)*(1+log(2X))",
+            "proof_scope": "Delta/z0 wedge, both orientation supports, fixed uniform outgoing degree d; absolute envelope only",
+            "proof_status": "reviewed analytical input; no proof-text execution",
+            "provenance": "PRIME_EXCHANGE_KERNEL_REVIEW_001.txt",
+            "theta": "3/4"
+          },
+          "status": "open",
+          "whole_signed_bound_proved": false
+        },
+        "required_bound": {
+          "all_cross_terms_retained": true,
+          "constants_uniform_in": "X",
+          "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+          "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+        },
+        "reviewed_full_valuation_feedback": {
+          "complete_exit": "Exit_(e,f)=W_X(H,K)-W_X(q^e*H,q^f*K)",
+          "complete_prime_chain": "sum_(e>=0) a(q^e*H)=-d(H) for q-free H>1; zero at H=1",
+          "exit_center": "A(n)-M(n)=-[D_qfree(n)+L_exit,q(n)+M(n)]",
+          "exit_forcing_proved": false,
+          "exit_reparametrization_is_equivalent_target": true,
+          "joint_exit_identity": "sum a(h)*a(k)*W = sum_(q-free H,K) d(H)*d(K)*W - sum_(q-free H,K,e,f) a(q^e*H)*a(q^f*K)*Exit_(e,f)",
+          "local_parity": "negative at first occupation of each color at this prime; positive on its subsequent valuation increments",
+          "paid_shared_valuation_sector": {
+            "bound": "C_j*2^max(2-(2*j-1)*rho,0)*X^(1-(2*j-1)*rho)*(1+log(2X))^2",
+            "cofinal_threshold": "rho>=1/(2*j-1)",
+            "constant": "C_j=beta^2*(j+1)^2*(1+1/(2*j-1))",
+            "domain": "union of h,k<=n sharing q^j on both legs for some prime q>n^rho, j>=2",
+            "full_energy_proved": false,
+            "overlap_policy": "subtract the union once; do not subtract overlapping prime sectors repeatedly",
+            "square_example": "j=2,rho=1/3: 24*beta^2*(1+log(2X))^2"
+          },
+          "proof_status": "reviewed analytical argument; not execution of proof text",
+          "provenance": "PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt",
+          "rational_transition": "product_i [I-E_i*(1-t_i)*z_leg(i)/(1-t_i*z_leg(i))]",
+          "same_prime_correction": "0<=D(n)<=beta*sqrt(n); full centered p/a norm comparison, with finite mixed term retained",
+          "t_u": "q^(-1/3)",
+          "t_v": "q^(-2/3)"
+        },
+        "reviewed_inputs": [
+          {
+            "file": "OCCUPANCY_TRANSFER_REVIEW_001.txt",
+            "status": "analytical review; not proof-text execution"
+          },
+          {
+            "file": "PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt",
+            "status": "analytical review; not proof-text execution"
+          }
+        ],
+        "reviewed_low_contour_component": {
+          "N": "2X-1",
+          "X_minimum": 2,
+          "beta": "9/2",
+          "bound": "beta^2*exp(4)/(pi^2*X)",
+          "finite_prime_product": "Z_N(s,t)=e_full^T product_(q prime<=N)[I-r_q*q^(-gamma-s)*A_hu-s_q*q^(-gamma-s)*A_hv-r_q*q^(-gamma-t)*A_ku-s_q*q^(-gamma-t)*A_kv] e_empty",
+          "full_prefix_compilation": "finite Euler product and double Perron with n+1/2 endpoints",
+          "gamma": "1/6",
+          "high_complement": "entire conditional Perron limit minus the low rectangle; includes one or both high frequencies",
+          "high_complement_proved": false,
+          "low_rectangle": "|Im(s)|,|Im(t)|<=c/4",
+          "product_cutoff_recovery": {
+            "abel_identity": "S_0(N^2)=N^(2*gamma)*S_gamma(N^2)-gamma*integral_1^(N^2) t^(gamma-1)*S_gamma(t) dt",
+            "lemma_proved": false,
+            "required": "S_gamma(T)=beta^2/X^2 sum_(sf m<=T) mu(m)*Psi_full,X(m)*m^(-gamma), uniformly over 1<=T<=N^2",
+            "sufficient_new_lemma": "for each dyadic product band (T,2T] and every partial subinterval, weighted signed sum <=C_epsilon*X^epsilon*T^(-gamma)"
+          },
+          "projection_is_positive_energy": false,
+          "proof_status": "separate reviewed analytical component theorem, not proof-text execution or an implication of scalar certificates alone",
+          "provenance": "OCCUPANCY_TRANSFER_REVIEW_001.txt",
+          "real_line": "c=1/log(N)",
+          "source": "entire squarefree-product projection, weighted by m^(-1/6)",
+          "whole_signed_bound_proved": false
+        },
+        "schema": "occupancy-joint-forcing-obligation-v1",
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "source": "actual_mu_candidate10",
+        "status": "open",
+        "whole_signed_bound_proved": false
+      },
+      "required_bound": {
+        "all_cross_terms_retained": true,
+        "constants_uniform_in": "X",
+        "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+        "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+      },
+      "reviewed_inputs": [
+        "OCCUPANCY_POLE_RECOVERY_REVIEW_002.txt",
+        "PRIME_EXIT_RECURRENCE_REVIEW_002.txt"
+      ],
+      "schema": "centered-product-band-obligation-v1",
+      "scope": {
+        "domain": "all dyadic integers X>=1",
+        "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+        "source": "actual_mu_candidate10"
+      },
+      "selected": [
+        {
+          "coefficient_l1": 4,
+          "gamma": "0",
+          "inverse_log_degree": 3,
+          "stencil_id": 23,
+          "uniform_signed_bound_proved": false,
+          "worst_discovery_slope": -0.22511065805836591
+        },
+        {
+          "coefficient_l1": 4,
+          "gamma": "1/6",
+          "inverse_log_degree": 3,
+          "stencil_id": 23,
+          "uniform_signed_bound_proved": false,
+          "worst_discovery_slope": -0.22168288596023344
+        },
+        {
+          "coefficient_l1": 4,
+          "gamma": "1/3",
+          "inverse_log_degree": 3,
+          "stencil_id": 23,
+          "uniform_signed_bound_proved": false,
+          "worst_discovery_slope": -0.21816487638196672
+        }
+      ],
+      "source": "actual_mu_candidate10",
+      "status": "open",
+      "supersedes": "isolated uncentered SF product-band recovery premise; the earlier low-contour component theorem remains valid",
+      "whole_signed_bound_proved": false
+    },
+    "required_bound": {
+      "all_cross_terms_retained": true,
+      "constants_uniform_in": "X",
+      "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+      "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+    },
+    "reviewed_inputs": [
+      {
+        "file": "CENTERED_BAND_FORCING_REVIEW_003.txt",
+        "status": "analytically reviewed prose, not formal proof-text execution"
+      },
+      {
+        "file": "CENTERED_BAND_PREDICTION_REVIEW_003.txt",
+        "status": "analytically reviewed prose, not formal proof-text execution"
+      }
+    ],
+    "schema": "centered-reciprocal-correlation-obligation-v1",
+    "scope": {
+      "domain": "all dyadic integers X>=1",
+      "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+      "source": "actual_mu_candidate10"
+    },
+    "source": "actual_mu_candidate10",
+    "status": "open",
+    "whole_signed_bound_proved": false
+  },
+  "powers": [
+    "-2",
+    "-1",
+    "-1/2",
+    "1/2",
+    "1",
+    "2"
+  ],
+  "priority": [
+    "positive_factor_order",
+    "max_positive_factors_in_one_term",
+    "prefer_integral_local_rational_functions",
+    "numerator_factor_order",
+    "abs(power)",
+    "id"
+  ],
+  "schema": "joint-reciprocal-preconditioning-v1",
+  "selection": "exact source-factor cancellation and paid recovery, before any fresh source evaluation",
+  "selection_uses_numerical_responses": false,
+  "shifts": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6",
+    "1"
+  ],
+  "source_precision_bits": 160,
+  "storage": "gzip JSON lines, one complete vector per line; direct code byte snapshots",
+  "tail_search": "exact rational Euler numerator, simple-pole recurrence and geometric tail factorization",
+  "total_work_limit": 1300000000,
+  "whole_signed_bound_proved": false,
+  "whole_target": "one-sided joined high-product off-diagonal O_X, equivalent up to the paid remainder",
+  "worker_caps": {
+    "checker": 650000000,
+    "producer": 450000000
+  },
+  "worker_seconds": 3600,
+  "workers": 2
+}

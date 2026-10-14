@@ -1,0 +1,42 @@
+{
+  "operations": 133759,
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_prime_transport"
+      ],
+      "returncode": 1,
+      "operations": 101099,
+      "elapsed_seconds": 0.07946096200612374,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_prime_transport operations=101099\n",
+      "stderr": "test_aggregate_capacity_failure_retains_whole_window (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_all_sign_failures_empty_and_no_destination (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_congestion_guard_without_fake_window_geometry (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_formal_prime_recovery_and_explicit_eventual_import (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests) ... FAIL\ntest_global_log_bank_and_literal_signed_shell (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_sorted_round_robin_capacity_and_complete_window_mass (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_strict_program_horizon_and_precision (test_check_core_prime_transport.PrimeTransportTests) ... ok\n\n======================================================================\nFAIL: test_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_prime_transport.py\", line 106, in test_fractional_windows_disjoint_complete_support_and_q_condition\n    self.assertEqual([(p, t) for p, t, demand in result['assignments']], [(11, 10), (23, 22)])\nAssertionError: Lists differ: [(7, 6), (11, 10), (23, 22)] != [(11, 10), (23, 22)]\n\nFirst differing element 0:\n(7, 6)\n(11, 10)\n\nFirst list contains 1 additional elements.\nFirst extra element 2:\n(23, 22)\n\n- [(7, 6), (11, 10), (23, 22)]\n?  --------\n\n+ [(11, 10), (23, 22)]\n\n----------------------------------------------------------------------\nRan 8 tests in 0.017s\n\nFAILED (failures=1)\n",
+      "receipt_lines": 1,
+      "actual_source_runs": 0,
+      "synthetic_max_horizon": 31
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_prime_transport.PrimeTransportTests.test_fractional_windows_disjoint_complete_support_and_q_condition"
+      ],
+      "returncode": 0,
+      "operations": 32660,
+      "elapsed_seconds": 0.07047193800099194,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_prime_transport operations=32660\n",
+      "stderr": "test_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\n",
+      "receipt_lines": 1,
+      "actual_source_runs": 0,
+      "synthetic_max_horizon": 31,
+      "reason": "Affected-only rerun after restoring omitted7->6 assignment in fractional-window hand fixture"
+    }
+  ]
+}

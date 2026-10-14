@@ -1,0 +1,79 @@
+Resource review of frozen cell-shared-gram-probe-001
+Review only; no frozen sources changed, no new numerical search or scores.
+
+Evidence inspected: jobs/train-000.json, jobs/train-001.json,
+jobs/dual-000.json and training.json in the sealed stage directory;
+cancellation_shared_gram_synthesis.py and native_exact_support.py.
+
+Critical SDP: Clarabel failed and no proposal was admitted. This reports an
+uncertified solver failure, not cone infeasibility. Worker elapsed time was
+48.542 seconds, peak RSS 505088 KiB, and completion thread count one.
+
+Unsigned calibration: Clarabel returned optimal_inaccurate, floating objective
+4.001415720947741, 1260 columns and 3846 monomials. The obsolete preflight at
+backend line 120 compares monomials * support_size^2 to max_operations
+(default 200000000), before native exact_support_solution receives its
+separate max_exact_work (default 2000000000). Thus the native allowance cannot
+benefit this proposal. The record supplies no support_size or proposal vector,
+so its exact required native work cannot be determined retrospectively. For
+3846 rows, any support of 229 or more already exceeds the legacy 200m gate.
+Worker elapsed time was 49.729 seconds, peak RSS 507144 KiB. This result is
+missing_resource, with no exact PSD certificate and no optimality claim.
+A future NEW backend should charge expansion to max_operations and native
+RREF's dimension proxy exclusively to its explicitly declared max_exact_work,
+max_exact_cells, max_rows and max_columns, with external worker time/memory
+limits unchanged. Removing this obsolete gate requires new versioned sources
+and a new sealed protocol; it cannot repair the already frozen stage.
+
+Critical dual: the LP proposal succeeded and saved an ordered support of 584
+variables with 1262 equation rows. Native dimension work proxy is exactly
+1262 * 584^2 = 430412672, 7.60% above the 400000000 allowance used by this
+attempt. The augmented matrix cell proxy is 1262 * (584 + 1) = 738270.
+A declared native work allowance of 2000000000 and cell allowance at least
+738270 admit these dimensional proxies. They do not promise a successful
+RREF, bounded intermediate coefficient size, positive exact reconstruction,
+or PSD moment admission. The native C call remains noninterruptible internally;
+retain the external process deadline and perworker memory limit. The dual
+worker used 56.230 seconds, peak RSS 562636 KiB, completion thread count one.
+
+The immediate useful continuation is exact reconstruction on the SAME saved
+584-element support, with source and ordered-support hashes bound to the
+sealed parent job. Do not run another floating LP. Then independently verify
+all scalar column moments, arbitrary-group PSD moments including every cross
+entry, the full original target pairing, and the claimed finite scope. Report
+missing_resource or uncertified separately if any limit/admission fails. No
+result from this continuation is assumed by this review.
+
+Future generic proposal policy: try a scalar LP baseline first, instantiate
+and independently check any exact scalar candidate using zero Grams, and use
+full SDP when the scalar stage does not settle the requested finite problem.
+For known unsigned calibration, reuse its archived exact baseline rather than
+spending another SDP run solely to reproduce it. A scalar failure alone does
+not establish infeasibility of the enlarged PSD cone.
+
+Before rational reconstruction or any resource preflight, persist a bounded
+proposal checkpoint: ordered group/dimension descriptors, source/block/column
+hashes, row order, scalar and uppertriangle floating values as proposal-only
+data, active-support indices and threshold, solver status/options/objective,
+requested resource limits, worker cost, and reconstruction attempt history.
+Persist failed/inaccurate proposals as well. Exact retries can then reuse the
+saved proposal or face without refitting; checkpoint values never constitute
+a certificate. Bound total checkpoint bytes and reject nonfinite values.
+
+All observations concern finite shared identities/separators only.
+No uniform signed Mobius estimate, global bound, or RH claim follows.
+
+User-authorized future replay policy (subsequent update):
+The reusable NEW cancellation_shared_gram_replay.py now defaults to a modest
+450000000 native work allowance, not 2000000000. This admits the saved
+430412672 proxy with about 4.55% headroom; matrix cell allowance defaults to
+4000000. Its pure budget_check rejects larger cases before a native call, and
+replay performs no floating proposal. All admitted separators undergo full
+independent generic verification with source/block bindings. Four toy/unit
+tests pass, including an exact separator with constant Gram atoms. No real
+arithmetic replay was initiated for this implementation.
+The already sealed/running historical native replay retains its declared 2b
+allowance and is not altered. An external runner must still enforce the agreed
+2 GiB worker memory limit and 600-second hard timeout; the reusable helper's
+180-second time_limit is a cooperative deadline, not a native interruption
+mechanism. Increasing work allowance does not increase the memory limit.

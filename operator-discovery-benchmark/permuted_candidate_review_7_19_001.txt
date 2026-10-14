@@ -1,0 +1,324 @@
+Selected bit-reversal circuits7 and19: analytical proof attempt
+
+Scope and disposition
+
+These IDs refer to permuted-circuit-results/pilot-001. I read only the fixed
+final_batch program/certificate/normalization payloads and the circuit contract
+and recovery review. Parent supplied finite diagnostic summaries in messages;
+no numerical response file, fitted constant or source table was inspected or
+used to select a favorite. No numerical experiment, test, hash or frozen-file
+edit was performed. This new memo alone is edited.
+
+The attempt proves concrete prime-phase, bit-reversal, prime-power and complete
+commutator identities. It does not close either all-scale transformed moment.
+The main new structural reduction is that bit reversal conjugates division
+by2^j into a contiguous initial-segment copy from a lower dyadic block. The
+same-block energy remains exactly the full original M energy. For19 the
+ordinary Euler folding has a signed commutator defect with two distinct divisor
+domains; removing one domain is not a valid cancellation. The prime-specific
+phase exposes a shifted-prime Mobius product but supplies no estimate for it.
+
+moment_estimate_proved = false
+global_bound_proved = false
+RH_proved = false
+
+1. Fixed programs, input and recovery
+
+Let M(n)=sum_{j<=n}mu(j), M(0)=0. For a unit prime source chi write
+ a_alpha,chi(p^l)=chi(p)^l(alpha)_l/l!, a(1)=1,
+ (T_alpha,chi f)(n)=sum_{d|n}a_alpha,chi(d)f(n/d).
+All divisors occur. The input is M, not mu followed by prefixing.
+
+For n=m+r, m=2^k,0<=r<m, put pi(n)=m+rev_k(r), where rev reverses exactly
+k low bits including leading zeros. pi(1)=1 and pi is a block involution.
+Let U f(n)=f(pi(n)). The selected prime source is
+
+  ell(p)=floor(sqrt(p)),
+  chi(p)=-1 iff mu(p-ell(p))<0, otherwise+1.
+
+Every coefficient is bound to this SAME original actual source, including
+in the inverse. Put A=T_1/2,chi=I+L_a and B=T_-1/2,-chi=I+L_b. Then
+
+  rho7=A U M,
+  rho19=B U A M.
+
+Neither raw word has a normalizer rewrite. Both certificates have one
+permutation, no shear, recovery_power1. The admitted unsquared inverse bound
+is3(1+1/epsilon), sigma=1/2+epsilon,0<epsilon<=1/2; squared recovery is
+9(1+1/epsilon)^2. Their sharper separate fractional orders are1/2 and1,
+respectively, but the certificate's ceiling gives the same displayed bound.
+
+Initial values are rho7(1)=rho19(1)=M(1)=1. The finite head1..31 belongs to
+each complete output. One fixed circuit must have, for cofinally many integers
+q, finite Cq independent of every dyadic X>=32 such that
+ D_i(X)=X^-2 sum_{X<=n<2X}rho_i(n)^2<=Cq ceil(X^(1/q)).
+This genuine all-scale premise, with the same-source inverse and full head,
+would imply the original weighted M-energy and ordinary-zeta/RH conclusion.
+Finite passes, including baseline passes, do not establish that premise.
+
+2. Actual-prime phase: exact shifted product, with zero case retained
+
+For prime p let ell=floor(sqrt(p)), r=p-ell. One has1<=ell<p, r>=1 and
+gcd(p,r)=gcd(p,ell)=1. Since mu(p)=-1,
+
+  mu(pr)=-mu(r), mu(pr)^2=mu(r)^2.
+
+For a ternary value x, source_sign(x)=1+x-x^2. Consequently
+
+  chi(p)=1+mu(r)-mu(r)^2
+        =1-mu(r)^2-mu(p(p-floor(sqrt(p)))).            (1)
+
+The squarefree gate and the odd signed term are both required. In particular
+chi=+1 when r is nonsquarefree; replacing source_sign by mu(r) would create
+a zero-valued mask and change the reversible kernel.
+
+The root band ell^2<=p<(ell+1)^2 places r in
+[ell^2-ell,ell^2+ell], with gcd(r,ell)=1. On an odd-prime band with ell odd,
+r is even: if4 divides r then chi=+1; otherwise r=2v with v odd and
+ chi(p)=1-mu(v)-mu(v)^2.
+For ell even, r is odd and no such even-factor reduction applies. These are
+actual arithmetic restrictions, not a distribution or independence theorem.
+
+Identity (1) uses mu at a product beyond the saved finite source horizon.
+It is an all-positive-integer analytical identity, not a license to substitute
+that query into the frozen finite evaluator without its full source domain.
+The existing evaluator correctly uses the original below-p index r.
+
+Unlike a prime-domain query mu(p), this phase is not identically-1. Its global
+role concerns Mobius along a prime and variable square-root shift, together
+with the squarefree complement. No bound for the resulting weighted divisor
+correlations follows just from the coprime product law.
+
+3. Bit reversal: exact binary transport and complements
+
+For n=m+r in a dyadic block,
+ pi(2n)=m+pi(n), pi(2n+1)=2m+pi(n). Thus bit reversal exchanges low binary
+digits with the location in child half-blocks. For k>=1,
+ pi(n) is even exactly when0<=r<m/2, and an odd original n maps to the
+upper half of its block. In particular an odd prime p in[m,2m) has
+pi(p)>=3m/2, though pi(p) need not be prime or squarefree.
+
+Let D_d f(n)=1_{d|n}f(n/d). For0<=j<=k, exact bit arithmetic gives
+
+  (U D_(2^j) U f)(m+r)
+     =1_{r<m/2^j} f(m/2^j+r).                        (2)
+
+For j>k it is zero on this block. Proof: pi(n) is divisible by2^j exactly
+when the highest j bits of r are0. Dividing removes the corresponding low
+zero bits in rev_k(r); reversing within the resulting lower block gives
+m/2^j+r. The complementary part r>=m/2^j is zero because that divisor path
+is absent, not because a Mobius sum was discarded. At j=0 (2) is identity.
+
+This is a generic conjugation certificate: sparse2-adic divisibility becomes
+a contiguous same-offset embedding from a lower block. It does not identify
+mu at the two translated indices. For actual M their difference is the full
+signed interval sum between m/2^j+r and m+r, with length m-m/2^j. A trivial
+bound for that interval is macroscopic and is not subpower padding.
+
+Since chi(2)=source_sign(mu(1))=+1, the2-adic factor of A is
+ sum_{j>=0}h_j D_(2^j), h_j=binom(2j,j)/4^j>0.
+After conjugation it is the positive sum of the initial-segment copies (2).
+Odd-divisor factors and their complements remain; this2-adic decomposition
+does not erase them. B has2-adic coefficients b_0=1 and, for j>=1,
+ b_j=(-1)^(j+1)h_j/(2j-1).
+Thus19 alternates the lower-segment copies in its outer conjugated factor,
+while its inner A still uses the original divisibility paths. They cannot
+be merged through U as though both acted on the same divisor sets.
+
+4. Exact prime and prime-power effects in the selected outputs
+
+The positive kernel has
+ a(p^l)=h_l chi(p)^l,
+whereas b(p^l)=(-chi(p))^l(-1/2)_l/l!. In particular
+ a(p)=b(p)=chi(p)/2, a(p^2)=3/8, b(p^2)=-1/8,
+ a(p^3)=5chi(p)/16, b(p^3)=chi(p)/16.
+
+At a prime p,
+
+  rho7(p)=M(pi(p))+chi(p)/2,
+  rho19(p)=rho7(p)+(L_a M)(pi(p)).                    (3)
+
+The extra term is the COMPLETE proper-divisor sum at the bit-reversed
+coordinate: sum_{e|pi(p),e>1}a(e)M(pi(p)/e). If pi(p) is composite this
+includes every complementary divisor. Primality of p says nothing about
+primality of pi(p), so replacing it with a single prime contribution is false.
+The source identity (1) only controls the bounded outer prime contribution
+in (3); it does not control the fresh M(pi(p)) or this lower-prefix channel.
+
+On a prime-power output,7 has the exact formula
+ rho7(p^k)=sum_{l=0}^k h_l chi(p)^l M(pi(p^(k-l))).
+For19 the inner divisor set is that of pi(p^(k-l)), not generally another
+power of p. On powers of TWO, however, pi fixes every coordinate2^j, and
+the entire intervening permutation disappears from this chain. Hence
+
+  rho7(2^k)=sum_{l=0}^k h_l M(2^(k-l)),
+  rho19(2^k)=sum_{l=0}^k h_floor(l/2) M(2^(k-l)).      (4)
+
+For the second formula the local generating product is
+ (1-x)^(-1/2)(1+x)^(1/2)=(1-x)^(-1)(1-x^2)^(1/2);
+the coefficient at degree l is h_floor(l/2), by the elementary partial
+binomial-sum identity. All coefficients in (4) are positive. Thus there is
+no source-sign damping on this dyadic-prime chain. Actual M values may of
+course have different signs; no sign assumption is made. The chain is thin
+and neither proves nor refutes the full dyadic moment gate.
+
+5. Full same-block/lower-block decomposition, explicitly for7 and19
+
+For a block B_m=[m,2m), define q(n)=M(pi(n)). Deleting all convolutions from
+either raw program leaves precisely U, without normalizing or changing its
+moment coordinates. Therefore its diagonal energy is EXACTLY E_M(m).
+
+The complete lower-coordinate corrections are
+
+  G7=L_a U M,
+  G19=U L_a M+L_b U M+L_b U L_a M.                   (5)
+
+Every proper divisor input is below the current dyadic block, and U preserves
+that lower block. Thus both G values on B_m are linear combinations of
+prefix coordinates M(u),u<m. Their coefficients can still query fixed fresh
+source values through chi; this is not a claim of dependence only on past
+SOURCE information. Explicitly,
+
+ G7(n)=sum_{d|n,d>1}a(d)M(pi(n/d)),
+ G19(n)=sum_{e|pi(n),e>1}a(e)M(pi(n)/e)
+      +sum_{d|n,d>1}b(d)M(pi(n/d))
+      +sum_{d|n,d>1}b(d)sum_{e|pi(n/d),e>1}
+                                  a(e)M(pi(n/d)/e). (6)
+
+No path denominator is multiplied across a changed permutation index.
+Let L_i=m^-2 sum G_i(n)^2 and C_i=2m^-2 sum q(n)G_i(n). Then
+
+  D_i(m)=E_M(m)+L_i(m)+C_i(m).                       (7)
+
+Bit reversal is involutive, so changing coordinates n=pi(v) gives an
+equivalent original-coordinate correction H_i(v)=G_i(pi(v)) and
+ D_i=m^-2 sum_{v in B_m}[M(v)+H_i(v)]^2.
+In particular7's complete fresh/lower correlation is
+
+ C7=2m^-2 sum_{v in B_m,1<=u<m, pi(u)|pi(v),pi(u)<pi(v)}
+                       a(pi(v)/pi(u))M(v)M(u).       (8)
+
+This is an exact rearranged-divisibility constraint, with an actual signed
+kernel and every proper divisor retained. It is a potential proof target,
+not evidence that bit reversal respects multiplicative arithmetic of mu.
+
+For either selected candidate the precise required signed inequality is
+
+  2sum_{B_m} M(pi(n))G_i(n)
+   <=-sum_{B_m}M(pi(n))^2-sum_{B_m}G_i(n)^2
+                         +m^2 Cq ceil(m^(1/q)),      (9)
+
+uniformly over dyadic m>=32 for one fixed program and cofinally many q.
+A vanishing cross term, small G or a large absolute-path envelope cancellation
+ratio does not pay the retained fresh energy in (9). Finite C signs or ratios
+may diagnose (7) but do not establish or refute the existence of unknown
+global Cq. No supplied finite result is promoted here.
+
+6. Candidate19: ordinary Euler folding and the full commutator defect
+
+For any unit prime source chi, the generic exact identity is
+
+ T_alpha,chi T_beta,-chi=T_alpha-beta,chi Q_beta,
+ (Q_beta f)(n)=sum_{e^2|n}a_beta,1(e)f(n/e^2).        (10)
+
+It follows from (1-chi x)^(-alpha)(1+chi x)^(-beta)
+ =(1-chi x)^(-(alpha-beta))(1-x^2)^(-beta) primewise.
+Without U the selected parameters yield C=B A=T_1,chi Q_-1/2. Its local
+coefficients are c(p^l)=chi(p)^l h_floor(l/2). Square support belongs to
+Q, not the full C: C retains every squarefree prime-source contribution.
+Unlike the same-order opposite-source product, (10) does NOT erase chi here.
+
+With the actual U retained,
+
+  rho19=U C M+Delta,
+  Delta=[B,U]A M,
+  [B,U]y(n)=sum_{d|n}b(d)y(pi(n/d))
+             -sum_{e|pi(n)}b(e)y(pi(n)/e).           (11)
+
+The divisor1 contributions cancel, so Delta is strictly lower-block. The
+two proper-divisor domains can have overlaps and unmatched complements;
+both displayed sums are part of the identity. At a prime p, for y=A M,
+ Delta(p)=chi(p)/2-sum_{e|pi(p),e>1}b(e)y(pi(p)/e).
+This exactly cancels the corresponding proper B sum in U C M, returning
+the prime formula (3), while leaving its entire inner A complement.
+
+Terminally applying U preserves full dyadic energy, so the complete square
+can also be written
+ D19=m^-2 sum_{B_m}[C M+U Delta]^2.
+It contains the full C square,2(C M)(U Delta), and Delta^2. Deleting Delta
+returns the folded observer, not the selected one; adding an opposite defect
+as a separate nonnegative square leaves squared-complement costs. Neither
+operation supplies an independent subpower estimate for M.
+
+The square factor Q has norm and inverse <=zeta(2+2epsilon)^1/2, finite even
+at the critical weight. The remaining T_1,chi still costs zeta(1+epsilon),
+and the noncommutator-free19 requires its full proved stage inverse. This
+better understood square factor does not make the signed defect negligible.
+
+7. Concrete obstructions to plausible closures
+
+First, a phase prime identity cannot cancel an output's fresh M coordinate
+just by modifying the bounded contribution in (3). Prime-to-bit-reversed
+coordinate transport is not multiplication by p; the complete interval
+ M(pi(n))-M(n)=signed sum of mu between n and pi(n)
+must be kept. Bit reversal has macroscopic displacement: for r=1,
+ rev_k(r)=m/2, so |pi(m+1)-(m+1)|=m/2-1. The universal bounded-increment
+padding estimate is then only O(m), not subpower. This statement is a bound
+on available trivial reasoning, not an assertion of actual interval growth.
+
+Second, for any fixed coefficient source, an unrestricted input supported
+only in B_m has no lower-coordinate correction in (5). Its output on B_m is
+just U times that input for either circuit, with exactly the original energy.
+Thus source-free operator norms or lower-coordinate bounds alone cannot
+prove the desired moment. An actual-source argument must exploit the
+correlations between the complete fresh prefix and (6).
+
+Third, the source-one control makes7 particularly explicit: chi=+1 at every
+prime, every a(d)>0, and M_one(n)=n. Consequently rho7_one(n)>=pi(n)>0,
+and D7_one(m)>=E_one(m), which grows linearly. For19, whether or not individual
+coefficients cancel, its fixed same-source inverse forbids cofinal moments
+on that coherent input: H_sigma(n)=sum n^(1-2sigma) diverges for1/2<sigma<=1.
+These are symbolic all-scale conclusions, not numerical control evaluations.
+
+The same broad-class obstruction can agree with actual mu through any finite
+horizon. For finite primes P containing2 set f_P(p)=-1 on P,+1 outside P,
+extend multiplicatively on squarefree integers and set nonsquarefree values0.
+It matches mu whenever all prime factors lie in P. If P includes every prime
+<=H, all source queries and outputs of the selected words through closed H
+match actual mu, with their own fixed source phases consistently bound.
+But elementary squarefree counting gives
+
+  sum_{n<=N}f_P(n)=c_P N+O_P(sqrt(N)),
+  c_P=[product_{p in P}(1-1/p)]^2
+                         product_{p notinP}(1-1/p^2)>0.
+
+To derive this, count squarefree integers coprime to D=product_P p using
+sum_{k^2|n}mu(k), then sum their counts with mu(d),d|D. The absolute square
+divisor tail and finite coprimality errors are O_P(sqrt(N)); no Mertens
+estimate is used. Every fixed reversible circuit on this source must fail
+cofinal moments by inverse recovery of its linearly growing prefix.
+
+This proves a limitation of local-law/finite-calibration reasoning. It does
+not refute actual-mu estimates: f_P lacks mu(p)=-1 for EVERY prime, so an
+argument using that global law, such as (1), is outside the countermodel's
+full hypotheses. What remains missing is a uniform signed estimate using
+that source-specific information strongly enough to close (8),(9) or(11).
+
+8. Concrete generic structural/proof hooks and final status
+
+The proved identities can be parameterized rather than hardcoded to IDs:
+ - bit-reversal conjugation of2-adic dilation is exactly (2), exposing lower
+   initial-segment copy channels and their zero complements;
+ - a prime source of the form source_sign(mu(p-h(p))) with1<=h(p)<p has
+   gcd(p,p-h(p))=1 and the zero-aware product identity (1), keeping the
+   squarefree gate and any full source-domain expansion;
+ - opposite-prime-source fractional factors fold by (10) ONLY when adjacent
+   or when the full intervening commutator (11) is explicitly retained;
+ - a bit-reversal word's all-convolution-deleted diagonal is U, so (5)-(9)
+   specify the complete signed proof obligation in its actual coordinates.
+
+These are analytic reductions and obstruction certificates, not a new score,
+a ranking, or a theorem of advantageous source footprint. No cofinal bound
+has been proved for either7 or19. Their complete lower-block terms, all
+signed squares, inverse recovery, own head/initial1 and cofinal fixed-program
+quantifier remain. All moment/global/RH flags stay false.

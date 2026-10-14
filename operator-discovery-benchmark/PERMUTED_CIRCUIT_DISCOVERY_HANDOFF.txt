@@ -1,0 +1,97 @@
+PERMUTED CIRCUIT DISCOVERY — AUTHORITATIVE HANDOFF
+2026-10-09. Active RH/signed-arithmetic goal remains unresolved.
+
+Completed this turn
+New grammar and independent checker: fractional full divisor convolutions,
+closed dyadic polynomial/bit/source-branch permutations, and reversible
+same-block shears retaining both coordinates. Exact inverses and uniform
+recovery are proved; absolute-path envelopes and full fresh/lower/cross
+energy decomposition expose actual proof obligations. No optimizer or fitted
+operator coefficients. Earlier studies and the arithmetic roadmap untouched.
+
+Study: permuted-circuit-results/pilot-001
+Fixed catalogue48 raw words plus baseline;48 distinct normalized evaluations
+per source/partition. One exact baseline alias is retained and excluded from
+lead selection. Discovery uses matched mu/one/partial_prime_13 controls,
+source-free generation, predeclared Pareto/family selection and no final access.
+Selected IDs7,19,33,42; baseline0. Complete mu data through65535; controls
+through32767. All15 final cases available, no invalid or missing case.
+All303 evaluations and49 recovery certificates independently checked.39 frozen
+combined tests passed once, plus4 metadata-only continuation guards. No reruns
+of completed numerical checks. All full-moment/global/RH theorem flags false.
+
+Resource exception, explicitly preserved
+The original450m ceiling was insufficient for two final control checks.
+independent_verification.json remains UNKNOWN with301 complete evaluations;
+it is not overwritten. The user's earlier permission for a small work-limit
+increase authorizes an explicit at-most7% verification extension to481.5m.
+audit_work_extension.json revises that resource rule only, preserves the
+original protocol and all spent work, and freezes continuation code before
+its two unfinished evaluations. independent_completion.json records
+FINITE_EVALUATIONS_VERIFIED_WITH_WORK_EXTENSION. Total478229178 charged
+operations,6.273% above original450m and below revised481.5m.16GiB aggregate
+memory/4GiB per process and the original7200s invocation deadline retained.
+Do not repeat or restart this completed study or its numerical checks.
+
+Scientific result
+No selected candidate beats the full original Mobius prefix energy on the
+final tested blocks. All pass the finite mu gates, as does baseline; both
+coherent controls fail every final gate, including baseline. Thus passing
+the finite gate supplies no new prime information by itself. Path-cancellation
+specificity is a proxy and did not select a better full-energy observer here.
+Final control and mu scales are unmatched; no final cross-source specificity
+claim is made. Exact values, programs and ratios are in report.json.
+
+ID33 = T_(1,1) U^-1 T_(-1,1) U M is a four-way residue/quarter permutation
+commutator with genuine Mobius inversion; U rotates block bits right by2.
+It has the only consistently negative fresh/lower cross term among these
+leads, on X8192,16384,32768. Full energy/baseline is still1.4417,1.1423,1.0337.
+The negative term pays only part of its positive lower-block square.
+Its exact full obligation remains C33<=-E_M-G33+Cq*ceil(X^(1/q)) for all
+dyadic X and a cofinal set of q. No constant fitted here proves that premise.
+
+Proved analytical reductions (ordinary mathematics, not proof-assistant proofs)
+* All admitted map/shear inverses and same-source recovery; permutation-only
+  diagonal is a signed permutation, shear diagonal is a retained invertible
+  block, so all fresh and complementary energy must remain.
+* Bit reversal conjugates D_(2^j) into a lower-block initial-segment copy:
+  U D_(2^j) U f(m+r)=1_{r<m/2^j} f(m/2^j+r). IDs7/19 have positive
+  power-of-two-chain formulas and complete changed-divisor complements.
+* Actual prime phase source_sign(mu(p-floor sqrt(p))) equals
+  1-mu(p-floor sqrt(p))^2-mu(p*(p-floor sqrt(p))). The zero/squarefree
+  complement is essential; this identity alone gives no correlation bound.
+* ID33 has exact four-quarter maps, rho33(2^k)=M(2^k), and no correction at
+  an odd prime p when U^-1's coordinate pi^-1(p) is also prime. No assertion
+  about infinitely many such simultaneous primes is made.
+* ID42's XOR-conjugated shear is adjacent with a rearranged residue5 phase.
+  Binary-interval discrepancy and bounded source increments prove
+  F42=(101/90)E_M+O(log X), uniformly with explicit constants. Its full lower
+  cross term remains; the interior convolution cannot be silently removed.
+  At odd primes rho42(p)=M(p)+phi5(p)/3-xi(p), a bounded offset.
+* A block-sup norm lemma proves full E=O(X) unconditionally and same-exponent
+  recovery from any proved full subpower premise. It does not establish that
+  premise. No frozen certificate or ranking was changed using this lemma.
+* Catalogue-wide classification proves adjacent-XOR versus half/quarter
+  pairings, forced squareful source-branch regimes, full-wrap translation
+  padding and bounded-component estimates. Opposite-prime-phase folding
+  requires its whole commutator defect when a permutation intervenes.
+
+Next candidate work
+Use these exact structural reductions to propose new signed mechanisms and
+attempt their full inequalities. Prioritize complete fresh/lower compensation
+and actual prime-specific identities over path-envelope ratios or fitted
+constants. Keep this batch/ranking frozen; any changed scoring or expanded
+production rules belong to a separately declared future study. The half/quarter
+interval and fresh prime-nonmultiple complements remain explicit open targets.
+Use Sol6.1 subagents only for substantial parallel proof/search work. No content
+hashes; direct payload/source bytes suffice. Keep frozen artifacts immutable.
+
+Files
+permuted_arithmetic_circuits.py; check_permuted_arithmetic_circuits.py;
+permuted_circuit_discovery.py; run_permuted_circuit_discovery.py;
+permuted_circuit_contract.txt; permuted_discovery_protocol.txt;
+complete_permuted_circuit_audit.py; report_permuted_circuit_discovery.py.
+Analytical memos are copied unchanged into the study's analytical_reviews/.
+The numerical handoff is handoff.txt; this combined handoff is
+analytical_handoff.txt. Original study receipts and completion addendum both
+remain authoritative for their stated scopes.

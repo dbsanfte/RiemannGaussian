@@ -1,0 +1,625 @@
+{
+  "status": "guided_signed_family_and_automatic_gap_certificates_independently_verified",
+  "family_run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/compensated-shift-results/family-gap-run-001",
+  "dependencies": {
+    "compensated-shift-results/compensated_shift_search.json": "35d99cf4c52310f2008121bc0bba8d16e6973d130785f0e79ce6523f5c433c05",
+    "compensated_shift_search.py": "61f4563c020d062aaaa9cfc239b3990f5b33d37a3fdafcd3a3b76a59830ea435",
+    "compensated_shift_grammar.py": "b176812f619674dd45ca1d4f19352c6b78c55f849d0fb8fbfef542a60433f3fd",
+    "compensated_shift_proof.txt": "da0ba264c688b69efe8ea668e570970b77c92204fe401d536f68206e5b817d35",
+    "compensated-shift-results/compensated_shift_verification.json": "1b9b5e9e77a0f87753f756728df4f76dd3b101ac3d7877df7d4e719032f4fd32",
+    "check_compensated_shift.py": "95cd482241ea1a2402ec6e08b96e21f3e8f0e913c962b5edf848faaeb7a57c1a",
+    "check_shift_ratio.py": "b0427d8dd232312cbe780123c651e6e1215df51fd3087c7feafe134177cb40fa",
+    "compensated_operator.py": "d870af90c73c011bd99f985fc851907ad9618a3f25709d5ebf0a8528f6e66c10",
+    "compensated-shift-results/gap-certificates/global_gap_verification.json": "d303d3829d1ff3ab492d57ed457132fc82fd9fb8427ecdf4cf0c4871ce94e4b7",
+    "compensated-shift-results/gap-certificates/gap_probe.json": "3975aca410e92817de148cc6b1cea40277cf70ec0973e97bcbbbd8ee743268b6",
+    "check_compensated_global_gap.py": "ffce8e8dd979ddd09aa11d53ca80c47f3e49c8e106c2b6691814fd95628fd05d",
+    "compensated_global_gap_proof.txt": "91b3396245d3cf2e19f252ed37934685942eca8661c9db8f40e169c4b9a8bebd",
+    "compensated_global_gap_probe.py": "8997cb154c57cc1ef38be6bb39d729d95f84db4ee15d70a41864e3b98f3a1860",
+    "compensated-shift-results/compensated_shift_analytic.json": "4b17e45e223c153bb169c233ffae65025a4e274c9b31ba0c0fe81ed7ecabc9fe",
+    "compensated_shift_analytic.py": "ca9141f9f5f510d1a71574a5928e6af0482cde44e0d59afdd5df59f734d9c177",
+    "compensated-shift-results/compensated_shift_analytic_verification.json": "8abde6b790bfcbb71698115b51a67533d5bdbab7c08bb1e09b042e0359366e54",
+    "check_compensated_shift_analytic.py": "01e7a39324c73029692aa66a5d775481702ab80e145b9c833f7302a854a9b82d",
+    "check_shift_ratio_analytic.py": "af0adf8b9372294147fd6ba56661b067b816f519b66ad6bd3786c5bfde9c2b3f",
+    "shift-ratio-results/shift_ratio_analytic_verification.json": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "shift-ratio-results/shift_ratio_analytic.json": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "fractional-prime-results/fractional_prime_analytic_verification.json": "a4f389e7e536e1c505f12d6983fd44ea0a5a5059566b37240eeeb3c57469250e",
+    "fractional-prime-results/fractional_prime_analytic.json": "8545d6e119cf5759f352ba087ca71a679a1970ab41882d5f80577e29295a2028",
+    "compensated-shift-results/family-gap-run-001/family_gap_search.json": "cd9b54c7f1959c55aa823941b21752b792069012c71a2f0a3370b3fc8b31f751",
+    "compensated-shift-results/family-gap-run-001/family_gap_verification.json": "8c7e3b9e9161f293d4a359d91bb3141d013c4a6f83e692d1cac7451b0abeb4d1",
+    "check_compensated_gap_family.py": "c1b34746e7ddabf8ba1ad92955a123f8f468d908cf60ee5a5a628689bf7f1ea8",
+    "compensated_family_gap_proof.txt": "b4129b020300f3c802ac593eb208af31fd489689a0c28040ca64fb7cec9227ca",
+    "compensated-shift-results/family-gap-run-001/protocol.json": "ebe2139052278f37f07cf767f0a0fc4f6560ca0c67df8966073e594bbdc7da4f",
+    "compensated-shift-results/family-gap-run-001/candidate_batch.json": "0b82648d616237dd6c5488c965be6de33f10d2449791b6bb46e7cb2085b716b5",
+    "compensated_gap_family_search.py": "201c6ae791a8815a297ada860781f324acb2972923166cfed22e41b5286339df",
+    "compensated-shift-results/family-gap-run-001/selected-native/selected_analytic_verification.json": "bf7487fa5a0775eec0e409e65fe9f29caf323bada815668fd80f007db00bcb1c",
+    "compensated-shift-results/family-gap-run-001/selected-native/selected_analytic.json": "8256c28ca4d0889db5e961d4474720e561a7742a09e7a361a94455c374043f26",
+    "compensated-shift-results/family-gap-run-001/selected-native/protocol.json": "dfaf108f5fcb5f8e71aaa9fc4c0799063fb216a7e9213a5ad6e8ff8e3aceedaf",
+    "compensated_selected_analytic.py": "b4b75e3092a5e081d81196dc0affbc069e28fb0064088c7cabcc86a226c13890",
+    "check_compensated_selected_analytic.py": "7206f0f49e0f8c5cab8302bbdaf0641b3e70ba36318d1d65f8395b440db40f1b"
+  },
+  "discovery_origin": "guided signed family; estimates tested and selected by a frozen automatic certificate protocol",
+  "attributed_to_autonomous_generic_grammar": false,
+  "coefficient_oracle_access": "none in operator producer; explicit factor/subset evaluator queries for counterexamples",
+  "arithmetic_coefficient_checks": 85995,
+  "coefficient_cutoff": 4096,
+  "checks": {
+    "arithmetic": {
+      "independent_complete_signed_prefix_and_shared_atomic_signs": true,
+      "learned_pair_feature_and_signed_cancellation_exact_rational_identities": true,
+      "all_integer_zero_orders_by_independent_valuation_test": true,
+      "generic_nonmultiplicative_input_coefficients_and_inverses": true,
+      "false_global_square_envelopes_and_actual_large_prime_control": true,
+      "standalone_public_programs_and_invalid_contracts": true,
+      "independently_verified_sharp_global_composite_gap": true,
+      "coefficient_oracle_analytic_estimate_and_historical_scope": true
+    },
+    "analytic": {
+      "independent_complete_signed_B_integrals_and_infinite_tails": true,
+      "changed_subset_coefficients_cutoff_precision_and_wrong_prime_controls": true,
+      "changed_toy_CAS_and_signed_native_zero_order_residues": true,
+      "pole_regularization_sign_and_canceled_leading_term_scope": true,
+      "fresh_nested_actual_zero_disks_and_old_corridor_integrity": true,
+      "RH_criterion_global_estimate_and_historical_priority_separate": true
+    },
+    "representative_global_gap": {
+      "independent_rational_reconstruction_of_all_ten_simplex_certificates": true,
+      "strict_positive_denominators_and_full_closed_simplex_domains": true,
+      "unbounded_factor_count_and_exponent_gcd_tail_bounds": true,
+      "prime_power_exponents_and_complete_integer_case_partition": true,
+      "Jordan_multiplier_identity_and_sharp_two_prime_endpoint": true,
+      "prime_separation_scope_and_proof_dependency_integrity": true
+    },
+    "family_global_gaps": {
+      "frozen_protocol_candidate_batch_source_and_backend_integrity": true,
+      "all_exact_simplex_polynomial_and_positive_denominator_certificates": true,
+      "independent_equal_share_uniform_norms_and_unbounded_case_thresholds": true,
+      "all_prime_power_cases_and_complete_residual_integer_partitions": true,
+      "rigorous_actual_integer_counterexamples_and_unproved_leads_retained": true,
+      "automatic_selection_and_separate_zero_order_novelty_RH_gates": true
+    },
+    "automatic_winner_analytic": {
+      "frozen_automatic_choice_and_fresh_post_selection_cases": true,
+      "independent_rescaled_complete_integrals_and_infinite_tails": true,
+      "changed_subset_coefficients_precision_cutoff_and_wrong_prime_controls": true,
+      "signed_zero_order_and_pole_residues": true,
+      "nested_actual_zero_disks_and_corridor_dependencies": true,
+      "no_reselection_continuation_estimate_or_historical_novelty_claim": true
+    }
+  },
+  "proved_global_estimates": [
+    {
+      "left": "1/5",
+      "right": "3/7",
+      "atoms": [
+        [
+          "-25/38",
+          "1/5"
+        ],
+        [
+          "63/38",
+          "3/7"
+        ]
+      ],
+      "proposed_gap": "64/285",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "64/285",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/5",
+      "right": "1/2",
+      "atoms": [
+        [
+          "-5/11",
+          "1/5"
+        ],
+        [
+          "16/11",
+          "1/2"
+        ]
+      ],
+      "proposed_gap": "2/11",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "2/11",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/5",
+      "right": "2/3",
+      "atoms": [
+        [
+          "-25/119",
+          "1/5"
+        ],
+        [
+          "144/119",
+          "2/3"
+        ]
+      ],
+      "proposed_gap": "26/255",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "26/255",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/5",
+      "right": "5/7",
+      "atoms": [
+        [
+          "-1/6",
+          "1/5"
+        ],
+        [
+          "7/6",
+          "5/7"
+        ]
+      ],
+      "proposed_gap": "1/12",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "1/12",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/5",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-3/29",
+          "1/5"
+        ],
+        [
+          "32/29",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "14/261",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "14/261",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/3",
+      "right": "2/3",
+      "atoms": [
+        [
+          "-5/11",
+          "1/3"
+        ],
+        [
+          "16/11",
+          "2/3"
+        ]
+      ],
+      "proposed_gap": "7/110",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "7/110",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    },
+    {
+      "left": "1/3",
+      "right": "5/7",
+      "atoms": [
+        [
+          "-9/26",
+          "1/3"
+        ],
+        [
+          "35/26",
+          "5/7"
+        ]
+      ],
+      "proposed_gap": "2/39",
+      "status": "universal_arithmetic_theorem_proved",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "prime_coefficient": "1",
+      "composite_absolute_bound": "2/39",
+      "integer_or_prime_size_cutoff": null,
+      "sharp_supremum": true,
+      "proof": "compensated_family_gap_proof.txt",
+      "historical_novelty_established": false
+    }
+  ],
+  "counterexamples": [
+    {
+      "left": "1/3",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-27/133",
+          "1/3"
+        ],
+        [
+          "160/133",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "11/342",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "3/7",
+      "right": "2/3",
+      "atoms": [
+        [
+          "-7/9",
+          "3/7"
+        ],
+        [
+          "16/9",
+          "2/3"
+        ]
+      ],
+      "proposed_gap": "2/45",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "3/7",
+      "right": "5/7",
+      "atoms": [
+        [
+          "-9/16",
+          "3/7"
+        ],
+        [
+          "25/16",
+          "5/7"
+        ]
+      ],
+      "proposed_gap": "17/480",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": false,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "3/7",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-189/611",
+          "3/7"
+        ],
+        [
+          "800/611",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "46/2115",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "1/2",
+      "right": "2/3",
+      "atoms": [
+        [
+          "-5/4",
+          "1/2"
+        ],
+        [
+          "9/4",
+          "2/3"
+        ]
+      ],
+      "proposed_gap": "1/30",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "1/2",
+      "right": "5/7",
+      "atoms": [
+        [
+          "-16/19",
+          "1/2"
+        ],
+        [
+          "35/19",
+          "5/7"
+        ]
+      ],
+      "proposed_gap": "1/38",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "1/2",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-3/7",
+          "1/2"
+        ],
+        [
+          "10/7",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "1/63",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "2/3",
+      "right": "5/7",
+      "atoms": [
+        [
+          "-144/31",
+          "2/3"
+        ],
+        [
+          "175/31",
+          "5/7"
+        ]
+      ],
+      "proposed_gap": "11/930",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "2/3",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-27/23",
+          "2/3"
+        ],
+        [
+          "50/23",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "7/1035",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    },
+    {
+      "left": "5/7",
+      "right": "4/5",
+      "atoms": [
+        [
+          "-21/11",
+          "5/7"
+        ],
+        [
+          "32/11",
+          "4/5"
+        ]
+      ],
+      "proposed_gap": "1/198",
+      "status": "counterexample_found",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "counterexample_index": "2431"
+    }
+  ],
+  "numerical_leads": [
+    {
+      "left": "1/5",
+      "right": "1/3",
+      "atoms": [
+        [
+          "-5/4",
+          "1/5"
+        ],
+        [
+          "9/4",
+          "1/3"
+        ]
+      ],
+      "proposed_gap": "7/24",
+      "status": "numerical_lead",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "unproved_regions": [
+        {
+          "omega": 4,
+          "g": 1,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        }
+      ]
+    },
+    {
+      "left": "1/3",
+      "right": "3/7",
+      "atoms": [
+        [
+          "-5/2",
+          "1/3"
+        ],
+        [
+          "7/2",
+          "3/7"
+        ]
+      ],
+      "proposed_gap": "3/20",
+      "status": "numerical_lead",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "unproved_regions": [
+        {
+          "omega": 4,
+          "g": 1,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        }
+      ]
+    },
+    {
+      "left": "1/3",
+      "right": "1/2",
+      "atoms": [
+        [
+          "-9/7",
+          "1/3"
+        ],
+        [
+          "16/7",
+          "1/2"
+        ]
+      ],
+      "proposed_gap": "5/42",
+      "status": "numerical_lead",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "unproved_regions": [
+        {
+          "omega": 4,
+          "g": 1,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        }
+      ]
+    },
+    {
+      "left": "3/7",
+      "right": "1/2",
+      "atoms": [
+        [
+          "-63/17",
+          "3/7"
+        ],
+        [
+          "80/17",
+          "1/2"
+        ]
+      ],
+      "proposed_gap": "22/255",
+      "status": "numerical_lead",
+      "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+      "unproved_regions": [
+        {
+          "omega": 3,
+          "g": 6,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        },
+        {
+          "omega": 4,
+          "g": 1,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        },
+        {
+          "omega": 4,
+          "g": 2,
+          "repeated_exponent": false,
+          "status": "unsupported_by_resource_budget"
+        }
+      ]
+    }
+  ],
+  "independent_polynomial_certificates_checked": 138,
+  "automatically_selected_operator": {
+    "left": "1/3",
+    "right": "5/7",
+    "atoms": [
+      [
+        "-9/26",
+        "1/3"
+      ],
+      [
+        "35/26",
+        "5/7"
+      ]
+    ],
+    "proposed_gap": "2/39",
+    "status": "universal_arithmetic_theorem_proved",
+    "nonzero_leading_signature_at_every_positive_integer_zero_order": true,
+    "prime_coefficient": "1",
+    "composite_absolute_bound": "2/39",
+    "integer_or_prime_size_cutoff": null,
+    "sharp_supremum": true,
+    "proof": "compensated_family_gap_proof.txt",
+    "historical_novelty_established": false
+  },
+  "complete_native_zeta_audit": {
+    "left": "1/3",
+    "right": "2/3",
+    "groups": 2,
+    "parameters_audited": [
+      [
+        "1/3",
+        "2/3"
+      ]
+    ],
+    "s": [
+      [
+        "4",
+        "8.37"
+      ],
+      [
+        "6",
+        "-12.91"
+      ]
+    ],
+    "domain": "Re(s)>1, complete integral and Mobius-index tails"
+  },
+  "automatic_winner_native_zeta_audit": {
+    "status": "independently_verified",
+    "left": "1/3",
+    "right": "5/7",
+    "groups": 2,
+    "s": [
+      [
+        "19/4",
+        "1869/97"
+      ],
+      [
+        "53/8",
+        "-881/97"
+      ]
+    ],
+    "simple_zero_signature": "11/13",
+    "post_selection_fresh_cases": true,
+    "evaluation_does_not_reselect_or_adapt": true,
+    "comparison": "complete enclosure overlap, bounded radii and separated altered-prime controls",
+    "domain": "Re(s)>1, complete integral and Mobius-index tails"
+  },
+  "all_scale_bound_dependencies": {
+    "upper_bound": "elementary rational/positive-series and concavity identities",
+    "sharpness_only": "Bertrand's postulate"
+  },
+  "ordinary_zeta_status": "all-order leading signatures and a pole-regularized RH-equivalent continuation criterion; the required continuation estimate is unproved",
+  "main_registry_counts_changed": false,
+  "new_independent_prime_distribution_estimate_proved": false,
+  "new_RH_estimate_proved": false,
+  "historical_novelty_established": false,
+  "verified_new_operators": []
+}

@@ -1,0 +1,925 @@
+{
+  "RH_proved": false,
+  "actual_all_scale_signed_bound_proved": false,
+  "alias_count": 11,
+  "candidate_count": 167,
+  "candidates": [
+    {
+      "constants": {
+        "12": "6876795/4194304",
+        "2": "39/64",
+        "3": "39/64",
+        "6": "19769/16384"
+      },
+      "failures": [
+        {
+          "X": 8192,
+          "bound": "20630385/4194304",
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_claim_domain": true,
+          "level": 12,
+          "margin": "-409943571/536870912",
+          "missing": false,
+          "reason": null,
+          "refutes_existential_global_claim": false,
+          "scope": "stored fitted constant only",
+          "signed_innovation": "3050632851/536870912"
+        }
+      ],
+      "final_score": {
+        "finite_cases": 12,
+        "finite_failures": 1,
+        "finite_passes": 5,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 8192,
+            "bound": "819/64",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "3819637101/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "3050632851/536870912"
+          },
+          {
+            "X": 8192,
+            "bound": "20630385/4194304",
+            "finite_pass": false,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "-409943571/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "3050632851/536870912"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "3050632851/536870912"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "3050632851/536870912"
+          },
+          {
+            "X": 11083,
+            "bound": "897/64",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "135172849139/7861304896",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-12495873853/3930652448"
+          },
+          {
+            "X": 11083,
+            "bound": "20630385/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "4171948968392681/515198477664256",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-12495873853/3930652448"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-12495873853/3930652448"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-12495873853/3930652448"
+          },
+          {
+            "X": 16384,
+            "bound": "507/32",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "6788600467/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "1717448045/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": "20630385/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "923241235/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "1717448045/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "1717448045/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "1717448045/536870912"
+          }
+        ]
+      },
+      "global_claim_status": "unresolved",
+      "program_id": "299a52a91c1c443e946bb519f65652a8433a5dbc0de7247579d623d4d9d6f44c",
+      "selected_for": [
+        "three"
+      ],
+      "terms": [
+        {
+          "feature": {
+            "divisors": [
+              2,
+              3
+            ],
+            "feature_id": "dc5366dd6719a5b1cb1101202f6af23e7359bde9ee040f997aba315a452093dd",
+            "kind": "three",
+            "weights": [
+              "1",
+              "1"
+            ]
+          },
+          "weight": "19/16"
+        }
+      ]
+    },
+    {
+      "constants": {
+        "12": "30663179/20447232",
+        "2": "109/156",
+        "3": "109/156",
+        "6": "9511/9984"
+      },
+      "failures": [
+        {
+          "X": 8192,
+          "bound": "30663179/6815744",
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_claim_domain": true,
+          "level": 12,
+          "margin": "-40095161/27262976",
+          "missing": false,
+          "reason": null,
+          "refutes_existential_global_claim": false,
+          "scope": "stored fitted constant only",
+          "signed_innovation": "162747877/27262976"
+        }
+      ],
+      "final_score": {
+        "finite_cases": 12,
+        "finite_failures": 1,
+        "finite_passes": 5,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 8192,
+            "bound": "763/52",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "237283867/27262976",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "162747877/27262976"
+          },
+          {
+            "X": 8192,
+            "bound": "30663179/6815744",
+            "finite_pass": false,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "-40095161/27262976",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "162747877/27262976"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "162747877/27262976"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "162747877/27262976"
+          },
+          {
+            "X": 11083,
+            "bound": "2507/156",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "411036585487/19161930684",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-25773633191/4790482671"
+          },
+          {
+            "X": 11083,
+            "bound": "30663179/6815744",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "24812147185925401/2511592578613248",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-25773633191/4790482671"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-25773633191/4790482671"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-25773633191/4790482671"
+          },
+          {
+            "X": 16384,
+            "bound": "109/6",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "24933671801/1744830464",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "20292244885/5234491392"
+          },
+          {
+            "X": 16384,
+            "bound": "30663179/6815744",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "3257076587/5234491392",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "20292244885/5234491392"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "20292244885/5234491392"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "20292244885/5234491392"
+          }
+        ]
+      },
+      "global_claim_status": "unresolved",
+      "program_id": "314bb708304416a6661ba4db830977025033c6bdf798c7d6497a7e68ed298b82",
+      "selected_for": [
+        "all"
+      ],
+      "terms": [
+        {
+          "feature": {
+            "divisor": 3,
+            "feature_id": "6a656015031ee9d1b3f267d456952b085c44172b77d0a6744a62033ab5be4ab4",
+            "kind": "root",
+            "weight": "2"
+          },
+          "weight": "4/39"
+        },
+        {
+          "feature": {
+            "divisors": [
+              2,
+              3
+            ],
+            "feature_id": "dc5366dd6719a5b1cb1101202f6af23e7359bde9ee040f997aba315a452093dd",
+            "kind": "three",
+            "weights": [
+              "1",
+              "1"
+            ]
+          },
+          "weight": "1"
+        }
+      ]
+    },
+    {
+      "constants": {
+        "12": "1009773/524288",
+        "2": "3/2",
+        "3": "3/2",
+        "6": "3/2"
+      },
+      "failures": [],
+      "final_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 8192,
+            "bound": "63/2",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "908467877/33554432",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "148496731/33554432"
+          },
+          {
+            "X": 8192,
+            "bound": "3029319/524288",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "45379685/33554432",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "148496731/33554432"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "148496731/33554432"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "148496731/33554432"
+          },
+          {
+            "X": 11083,
+            "bound": "69/2",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "4728226950/122832889",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-980984559/245665778"
+          },
+          {
+            "X": 11083,
+            "bound": "3029319/524288",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "629259220707087/64399809708032",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-980984559/245665778"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-980984559/245665778"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-980984559/245665778"
+          },
+          {
+            "X": 16384,
+            "bound": "39",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "4684652485/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "549838907/134217728"
+          },
+          {
+            "X": 16384,
+            "bound": "3029319/524288",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "225666757/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "549838907/134217728"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "549838907/134217728"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "549838907/134217728"
+          }
+        ]
+      },
+      "global_claim_status": "unresolved",
+      "program_id": "5e56fba7454dd7da914adade2c1b67976a2ad1340a04f9dab5ff234d8c946c79",
+      "selected_for": [
+        "baseline",
+        "gram"
+      ],
+      "terms": []
+    },
+    {
+      "constants": {
+        "12": "6381985/4194304",
+        "2": "11/8",
+        "3": "11/8",
+        "6": "11/8"
+      },
+      "failures": [
+        {
+          "X": 8192,
+          "bound": "19145955/4194304",
+          "finite_pass": false,
+          "global_bound_proved": false,
+          "in_dyadic_claim_domain": true,
+          "level": 12,
+          "margin": "-71511973/134217728",
+          "missing": false,
+          "reason": null,
+          "refutes_existential_global_claim": false,
+          "scope": "stored fitted constant only",
+          "signed_innovation": "684182533/134217728"
+        }
+      ],
+      "final_score": {
+        "finite_cases": 12,
+        "finite_failures": 1,
+        "finite_passes": 5,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 8192,
+            "bound": "231/8",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "3191354363/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "684182533/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": "19145955/4194304",
+            "finite_pass": false,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "-71511973/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "684182533/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "684182533/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "684182533/134217728"
+          },
+          {
+            "X": 11083,
+            "bound": "253/8",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "8556086511/245665778",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-3147625127/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": "19145955/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "4002015047898571/515198477664256",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-3147625127/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-3147625127/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-3147625127/982663112"
+          },
+          {
+            "X": 16384,
+            "bound": "143/4",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "17216609615/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "1976525489/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": "19145955/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "474156751/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "1976525489/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "1976525489/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "1976525489/536870912"
+          }
+        ]
+      },
+      "global_claim_status": "unresolved",
+      "program_id": "934d5dfdd70b61995eba7c7b8fb242e6ba62c4733575f28ab16103bbb0d655ee",
+      "selected_for": [
+        "fixed"
+      ],
+      "terms": [
+        {
+          "feature": {
+            "divisor": 2,
+            "feature_id": "49ae2767f87e5dde1570f1655468c5a108c676cadd200acd1ef2df258e12c3e4",
+            "kind": "fixed",
+            "weight": "2"
+          },
+          "weight": "1/4"
+        }
+      ]
+    },
+    {
+      "constants": {
+        "12": "8534773/4194304",
+        "2": "11/8",
+        "3": "11/8",
+        "6": "11/8"
+      },
+      "failures": [],
+      "final_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 8192,
+            "bound": "231/8",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "3113621331/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "761915565/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": "25604319/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "57422643/134217728",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "761915565/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "761915565/134217728"
+          },
+          {
+            "X": 8192,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "761915565/134217728"
+          },
+          {
+            "X": 11083,
+            "bound": "253/8",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "8781220175/245665778",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-4048159783/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": "25604319/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "5267454069957095/515198477664256",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "-4048159783/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-4048159783/982663112"
+          },
+          {
+            "X": 11083,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "-4048159783/982663112"
+          },
+          {
+            "X": 16384,
+            "bound": "143/4",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "margin": "16953467297/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "2239667807/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": "25604319/4194304",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "margin": "1037685025/536870912",
+            "missing": false,
+            "reason": null,
+            "signed_innovation": "2239667807/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 13,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "2239667807/536870912"
+          },
+          {
+            "X": 16384,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "margin": null,
+            "missing": true,
+            "reason": "unknown_level_constant",
+            "signed_innovation": "2239667807/536870912"
+          }
+        ]
+      },
+      "global_claim_status": "unresolved",
+      "program_id": "dc2f508653d73c8d342391224cfc5ce371a23a53ab8c39448a28f7be0bba1e92",
+      "selected_for": [
+        "root"
+      ],
+      "terms": [
+        {
+          "feature": {
+            "divisor": 2,
+            "feature_id": "2a7e36821104d5aaee29e394eaaeaeafce94769bb8558a29c686c02a77be1f21",
+            "kind": "root",
+            "weight": "2"
+          },
+          "weight": "1/4"
+        }
+      ]
+    }
+  ],
+  "feature_count": 54,
+  "final_base_scales": [
+    8192,
+    11083,
+    16384
+  ],
+  "final_levels": [
+    3,
+    12,
+    13,
+    17
+  ],
+  "final_totals": {
+    "finite_cases": 60,
+    "finite_failures": 3,
+    "finite_passes": 27,
+    "missing_cases": 30
+  },
+  "proposal_count": 178,
+  "provenance": {
+    "actual_coefficients": "complete prime sieve and complete generic convolution mu*lambda",
+    "historical_coefficient_overlap": true,
+    "prime_coefficients_new_holdout": false,
+    "scope": "new finite scale/candidate evaluation only; no all-scale bound"
+  },
+  "schema": 1,
+  "scope": "separate research stage; no legacy theorem-registry promotion",
+  "selected_count": 5,
+  "unavailable_proposals": 0,
+  "verification_sha256": "1edc400c517e9a1ae7f18e0382715623535b5f772e8fcb8904a74a604feed2e2"
+}

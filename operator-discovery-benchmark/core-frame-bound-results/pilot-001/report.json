@@ -1,0 +1,55 @@
+{
+  "RH_proved": false,
+  "actual_moment_conditions": 5,
+  "candidates": 1023,
+  "cauchy_quotients": 997,
+  "common_mode_countermodels": 1023,
+  "elapsed_seconds": 20.924225544993533,
+  "exact_quotients": 26,
+  "inclusive_operations": 53231854,
+  "main_operations": 52461492,
+  "model_calls_in_search": 0,
+  "new_uniform_arithmetic_estimates": 0,
+  "numerical_scores_used": false,
+  "peak_rss_kib": 704032,
+  "retained_source_representation_bindings": 720,
+  "selected_branches": [
+    {
+      "branch": "cauchy_quotient",
+      "id": 9,
+      "numerator_terms": 3
+    },
+    {
+      "branch": "cauchy_quotient",
+      "id": 20,
+      "numerator_terms": 4
+    },
+    {
+      "branch": "exact_quotient",
+      "id": 31,
+      "numerator_terms": 2
+    },
+    {
+      "branch": "exact_quotient",
+      "id": 511,
+      "numerator_terms": 2
+    },
+    {
+      "branch": "cauchy_quotient",
+      "id": 898,
+      "numerator_terms": 5
+    }
+  ],
+  "selected_ids": [
+    9,
+    20,
+    31,
+    511,
+    898
+  ],
+  "shared_actual_moment_variables": 9,
+  "sos_squares": 37920,
+  "source_evaluations": 0,
+  "status": "FRAME_RECOVERY_BOUND_REDUCTIONS_AND_COMMON_MODE_OBSTRUCTION_VERIFIED",
+  "whole_signed_bound_proved": false
+}

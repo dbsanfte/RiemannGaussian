@@ -1,0 +1,84 @@
+SIGNED SCALE POLYNOMIALS BEYOND TRIANGLE CONTRACTION
+
+This certifies operators and conditional transport. It does not prove a new
+uniform signed arithmetic bound. All numerical moment estimates remain leads.
+No historical novelty criterion is imposed.
+
+1. EXACT DISK CERTIFICATE
+
+Let P(z)=1+sum_(k=1..m)c_k z^k with rational real coefficients. Fix rational
+r>0. Put p(w)=P(rw), whose constant coefficient is one. For a polynomial of
+declared degree m (zero leading coefficients are allowed), let p*(w) be its
+coefficient reversal, padded to degree m. On |w|=1, |p*(w)|=|p(w)|.
+If lambda is the leading coefficient and |lambda|<1, set
+ q(w)=[p(w)-lambda p*(w)]/(1-lambda^2).
+Its constant coefficient is one and its degree is at most m-1. Iterate this
+operation, reducing the declared degree by one each time. If every strict
+test succeeds, the final polynomial is the constant one.
+
+Backward induction proves zero exclusion and a uniform lower bound. If q is
+zero-free on the closed disk, then p=q+lambda q*, where q*
+is the reversal padded to the previous degree m. Rouché on the unit circle
+gives the same zero count as q because |lambda|<1. On the boundary,
+ |q| <= |p|/(1-|lambda|), hence |p| >= (1-|lambda|)|q|.
+The maximum modulus principle for 1/p extends this lower bound to the disk.
+Induction therefore proves |P(z)|>=delta for every |z|<=r, where
+ delta=product_(Schur stages)(1-|lambda_j|)>0.
+Every recursion, strict test and delta is checked in exact rational arithmetic.
+A failed test means this backend has not certified the polynomial; the search
+retains it. It is not a proof of an arithmetic counterexample.
+
+2. ORDINARY-ZETA FIDELITY AND A BOUNDED INVERSE
+
+For integer b>=2 define S_b f(t)=f(t/b) and R=P(S_b) M_tilde. The coefficients
+mu, cumulative M and interpolation M_tilde are as in signed_control_proof.txt.
+R is L-Lipschitz and |R(t)|<=Lt, with L=sum |c_k|/b^k and c_0=1.
+Its Mellin transform for Re(s)>1 is
+ P(b^(-s))/(s*zeta(s))+H(s), H holomorphic for Re(s)>0.
+If the certified radius satisfies b*r^2>1, then |P(b^(-s))|>=delta at every
+height for Re(s)>=1/2. This can hold even when sum_(k>=1)|c_k|b^(-k/2)>=1,
+so the triangle contraction criterion is not needed.
+
+Write 1/P(z)=sum_(k>=0)d_k z^k. Cauchy's coefficient inequality on |z|=r
+gives |d_k|<=delta^(-1) r^(-k). For 1/2<=theta<=1,
+ sum |d_k|b^(-k*theta) <= B_theta
+ = 1/[delta*(1-b^(-theta)/r)].
+The denominator is strictly positive. The reciprocal coefficient recurrence
+is exact. A sharper recorded cost adds the first K=64 exact terms and uses
+the Cauchy bound only on the remaining tail:
+ sum_(k<K)|d_k|b^(-k*theta) +
+ (b^(-theta)/r)^K/[delta*(1-b^(-theta)/r)].
+The series sum d_k R(t/b^k) converges absolutely: |R(u)|<=Lu and
+b*r>1. Interchanging its finite polynomial terms is justified absolutely.
+The coefficient convolution P*(1/P)=1 then gives precisely M_tilde(t).
+There is no missing homogeneous solution or endpoint term in this inverse.
+
+3. THE MISSING ARITHMETIC PREMISE AND TOTAL COST
+
+For even q>=2, suppose for every dyadic X>=1,
+ integral_X^(2X)|R(t)|^q dt <= C X^beta,
+with theta=beta/(q+1) in [1/2,1]. The Lipschitz argument in
+signed_control_proof.txt gives |R(t)|<=C_R t^theta for t>=1, where
+ C_R=(2^(q+2)*L*C)^(1/(q+1)).
+For 0<t<=1, |R(t)|<=Lt<=L t^theta. Thus at every t>=1,
+ |M_tilde(t)| <= B_theta*max(L,C_R)*t^theta.
+The bounded difference from M_step and its Mellin integral exclude ordinary
+zeta zeros Re(s)>theta. A sequence of proved premises with theta decreasing
+to 1/2 would prove RH using the classical reflection symmetry. An exact
+finite-window integral or a stable polynomial alone does not prove a premise.
+
+The total inverse cost must appear in numerical selection. A smaller residual
+can be a poor candidate if the inverse enlarges its bound. The baseline P=1
+is retained. Coefficients and growth exponents are learned or sampled without
+nominating a target operator. Candidates whose disk certificate is unavailable
+are retained with that status rather than discarded from discovery.
+
+4. ROOT-ERASING AND GENERIC ARITHMETIC CONTROLS
+
+For the all-positive coefficient sequence, M_tilde(t)=t and
+P(S_b) M_tilde(t)=P(1/b)*t. A certified polynomial has P(1/b)!=0, because
+1/b<1/sqrt(b)<r. Consequently any beta<q+1 moment estimate is false on
+this control at sufficiently large scales. The polynomial P(z)=1-bz makes
+the control identically zero but cannot pass the disk certificate. The exact
+bounded divisor-floor identity in signed_control_proof.txt likewise erases
+the zeta-zero poles and remains inadmissible as a proof of RH.

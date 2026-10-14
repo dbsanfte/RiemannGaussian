@@ -1,0 +1,458 @@
+PRIME ADJUNCTION, COMPENSATED FILTRATIONS, AND THE COMMON-CHANNEL FORCING
+
+Scope and result
+----------------
+This is a new analytical memo. PRIME_BANK_HANDOFF.txt,
+candidate10_ordered_prime_covariance_obligation.json,
+PRIME_BANK_COVARIANCE_REVIEW_001.txt, PRIME_PAIR_FORCING_HANDOFF.txt and the
+candidate-10 residue derivation are the inputs. No source table, arithmetic
+probe, numerical response, test, hash, parameter search or frozen-file edit
+was performed. All identities below concern the actual source mu.
+
+There is no complete uniform moment proof here. The useful additions are:
+  (i) complete prime-power transfer, including the non-small repeated-prime
+      corrections to a tensor slide;
+ (ii) an honest finite independent-valuation martingale, together with the
+      exact integer-prefix remainder that prevents identifying it with the
+      target energy;
+(iii) a proved payment of every same-bank-prime sector involving a u or v
+      weight at theta>=3/4, leaving only the unweighted common-channel square;
+ (iv) its exact pole compensation and a strictly smaller-scale centered
+      cofactor rule, suitable as one component of a closed coupled induction;
+  (v) complete prime-index recurrences and positive inverse coefficients,
+      which identify the remaining covariance forcing rather than erase it.
+
+The local coefficient variance grows at most polylogarithmically across primes.
+That is compatible with the cofinal objective. The obstruction is transferring
+that coefficient statement to the whole prefix square, with all integer-floor,
+rough-cofactor, pole and moving-cutoff terms retained. A fixed strict local
+contraction is unavailable; its failure is not a disproof of cofinal growth.
+
+1. Full multiplicative states and the unit
+-----------------------------------------
+Keep u=1/3, v=2/3, beta=9/2, a_b=mu*(n^(-b)), and B=a_u*a_v, where * is
+Dirichlet convolution. B, a_u and a_v are multiplicative, with value one at
+the unit. The coefficient of the product of normalized increments is
+  p=beta*(B-a_u-a_v+delta).                         (1.1)
+Thus p is not multiplicative. Let d be its COMPLETE same-prime prime-power
+branch and a=p-d. Then a(1)=a(q^e)=0 for every prime q and e>=1. Removing
+d is a proved critical-norm peel in the previous memo, not a deletion from
+the actual candidate. R(x)=sum_(n<=x)a(n)-m_u*x^(2/3) remains the target.
+
+For q prime put x=q^(-u), y=q^(-v), r_u=1-x and r_v=1-y. The complete local
+power series, initially for |z|<1, are
+  F_u(z)=(1-z)/(1-xz), F_v(z)=(1-z)/(1-yz),
+  F_B(z)=(1-z)^2/[(1-xz)(1-yz)].                  (1.2)
+All denominators are nonzero on this disk. In fact F_u,F_v have radius
+greater than one, and F_B also does, so all local absolute sums used here
+converge at z=1. For e>=1,
+  a_u(q^e)=-r_u*x^(e-1), a_v(q^e)=-r_v*y^(e-1),
+  B(q^e)=[r_u^2*x^(e-1)-r_v^2*y^(e-1)]/(x-y).   (1.3)
+Here x>y, so the denominator is nonzero. Formula (1.3) follows by partial
+fractions in (1.2), including the polynomial constant; that constant does
+not affect e>=1. It retains all repeated primes and permits positive as
+well as negative B(q^e). Treating B(q^e) as B(q)^e is incorrect.
+
+If q does not divide k, the three-state column f=(B,a_u,a_v)^T obeys
+  f(qk)=D_q*f(k), D_q=diag(x+y-2,x-1,y-1).        (1.4)
+For k>1 this implies the COMPLETE candidate transfer
+  a(qk)=-z_0(k)+q^(-u)z_u(k)+q^(-v)z_v(k),       (1.5)
+where z_u=p+beta*a_v, z_v=p+beta*a_u, z_0=z_u+z_v on k>=2. All three
+z channels are zero at k=1. Their naive multiplicative formulas must not
+put a unit column back into a bank. For arbitrary k coprime to q, the p
+transfer before that zero extension has the additional unit correction:
+  p(qk)=-(r_u+r_v)p(k)-beta*[r_v*a_u(k)+r_u*a_v(k)]
+                                      +beta*(r_u+r_v)*delta(k).
+It gives p(q)=0 exactly. Equation (1.5) never uses k=1.
+
+2. Tensor slide: the common channel and repeated-prime correction
+----------------------------------------------------------------
+Write t_j=f_j(q), and c_j=f_j(q^2)-t_j^2. Exact local algebra gives
+  c_u=x-1, c_v=y-1, c_B=2x+2y-3-xy.              (2.1)
+For q not dividing h or k, a single difference of adjunctions to the two
+legs of f_i(h)f_j(k) gives the factor t_i(q)-t_j(q). For distinct primes
+q,r, neither dividing h or k, the double difference gives
+  [t_i(q)-t_j(q)]*[t_i(r)-t_j(r)].                (2.2)
+This is an exact algebraic rule on its entire coprime domain. In particular
+u/v gives q^(-u)-q^(-v); B/u gives y-1; B/v gives x-1. Only the u/v
+pair has this small large-prime difference. Equal channels are annihilated
+by a single slide, but the original symmetric tensor still has to be
+recovered; annihilation of its image does not bound that original tensor.
+
+For the SAME prime applied twice, the factor is instead
+  f_i(q^2)-2t_i(q)t_j(q)+f_j(q^2)
+    =[t_i(q)-t_j(q)]^2+c_i+c_j.                  (2.3)
+For u/v it is (x-y)^2+x+y-2, tending to -2; for B/B it is
+4x+4y-6-2xy, tending to -6. These are not suppressed repeated-prime
+errors. The distinction between a coefficient h=k and a shared bank prime
+q=r also matters: the latter can retain two DIFFERENT cofactors.
+
+For any fixed positive definite matrix P, a uniform strict quadratic
+contraction D_q^T P D_q<=rho P with rho<1 is impossible. Testing the
+B-coordinate gives (x+y-2)^2<=rho, while the left side tends to four.
+Even rho=1 fails for all sufficiently large q. This excludes that specific
+local coercive-storage rule, not a compensated many-prime recurrence.
+
+3. An actual martingale on an auxiliary product probability space
+----------------------------------------------------------------
+There is a legitimate probabilistic construction; it is important to say
+which measure it uses. For a FINITE prime set P, let independent E_q have
+  Pr(E_q=e)=(1-1/q)*q^(-e), e=0,1,2,... .
+Use f_j(q^0)=1, including a fourth delta coordinate with delta(q^e)=0
+for e>=1. The local expectations, all positive, are
+  m_u(q)=(1-1/q)^2/(1-q^(-1-u)),
+  m_v(q)=(1-1/q)^2/(1-q^(-1-v)),
+  m_B(q)=(1-1/q)^3/[(1-q^(-1-u))(1-q^(-1-v))],
+  m_delta(q)=1-1/q.                              (3.1)
+Products M_j(P)=prod_(q in P)f_j(q^E_q)/m_j(q) are martingales as primes
+are revealed. They are signed martingales for the first three coordinates.
+Absolute local convergence from (1.2)-(1.3) justifies every expectation.
+
+Let S_ij(q)=E[f_i(q^E_q)f_j(q^E_q)] and
+C_ij(q)=S_ij(q)/(m_i(q)m_j(q))-1. This is a positive semidefinite covariance
+matrix. For any positive semidefinite storage P0, conditioned on old values,
+  E[M_new^T P0 M_new | old]-M_old^T P0 M_old
+    =tr(P0*diag(M_old)*C(q)*diag(M_old))>=0.       (3.2)
+There is no automatic negative martingale energy credit. A changing
+predictable weight or a compensation term can give signed cross terms,
+but those terms must themselves be established on the desired measure.
+
+The leading local covariance is explicit. With coordinate order
+(B,a_u,a_v,delta), set eta=(3,2,2,1)^T. Then as q tends to infinity,
+  C(q)=eta*eta^T/q+O(q^(-1-u)+q^(-2))             (3.3)
+entry by entry. For example
+  S_uu=(1-1/q)[1+r_u^2/q/(1-x^2/q)],
+  S_uv=(1-1/q)[1+r_u*r_v/q/(1-xy/q)],
+  S_BB=(1-1/q)*[1+q^(-1)/(x-y)^2*
+      {r_u^4/(1-x^2/q)-2r_u^2*r_v^2/(1-xy/q)
+                                      +r_v^4/(1-y^2/q)}].       (3.4)
+The apparent divided difference in (3.4) is simply the sum of squares of
+(1.3); expansion can also be obtained directly from the bounded local
+coefficients, without dividing an asymptotic error by x-y.
+In particular S_BB/m_B^2=1+9/q+O(q^(-1-u)+q^(-2)). Per-prime factors
+1+O(1/q) accumulate only a power of log of the prime cutoff, by an
+elementary Chebyshev prime harmonic bound. They do NOT contradict the
+cofinal epsilon goal, and no such contradiction is claimed.
+
+The unit coordinate is essential even in this auxiliary calculation:
+(1,-1,-1,1) dot eta=0. The first-prime local candidate cancellation at
+the empty cofactor survives. After other primes are revealed, however,
+the leading conditional projection for that FIXED-weight normalized
+martingale combination is
+  3*M_B(old)-2*M_u(old)-2*M_v(old)+M_delta(old),
+not identically zero. Also the actual candidate weights become
+beta*(prod m_B,-prod m_u,-prod m_v,prod m_delta), not constant weights
+on the normalized martingale. Its changing weights and repeated-prime
+overlap are separate pieces. A one-prime unit cancellation cannot erase
+the common sector at a general cofactor.
+
+4. Why this is not yet a martingale for actual integer-prefix energy
+-------------------------------------------------------------------
+For uniform integer n in [1,N] and a prescribed valuation vector
+a=prod_(q in P)q^e_q, its EXACT probability is
+  (1/N)*sum_(D divides Q)mu(D)*floor(N/(aD)),
+  Q=prod_(q in P)q.                              (4.1)
+It equals prod_(q in P)(1-1/q)/a plus a remainder bounded by 2^|P|/N
+for this single vector, not uniformly small after summing all vectors.
+Vectors a>N have probability zero on the actual domain and positive
+probability in the product model. These are genuine omitted tails.
+
+The full prefix energy has a further distinction. If F_j(n)=sum_(h<=n)f_j(h),
+then exactly
+  X^(-2)*sum_(X<=n<2X)F_i(n)F_j(n)
+    =X^(-2)*sum_(h,k<2X)f_i(h)f_j(k)*W_X(h,k),
+  W_X(h,k)=max(0,2X-max(X,h,k)).                  (4.2)
+This is a pair-prefix kernel, not a diagonal coefficient second moment.
+Under prime-adjunction, its weights become W_X(q^e*h,q^f*k), with all
+e,f sectors. They do not become a product of geometric weights times a
+common unchanged kernel. Domain intersections and unequal e,f remain.
+
+For a precise compensated version, define f_j^P(n) by multiplying the
+actual local factors at P and using factor ONE at primes outside P.
+This agrees with actual f_j(n) for n<=N if P contains every prime<=N,
+but for fixed P it is a different whole source. Let g_j^P=f_j^P*mu;
+g_j^P is P-smooth, with local symbol (1-z)F_j(z). Put
+  lambda_j(P)=sum_(a P-smooth)g_j^P(a)/a=prod_(q in P)m_j(q).
+All these series converge absolutely for finite P. Exact divisor inversion
+and its complete omitted tail give
+  sum_(n<=N)f_j^P(n)=N*lambda_j(P)+E_j(P,N),
+  E_j(P,N)=sum_(a<=N,P-smooth)g_j^P(a)[floor(N/a)-N/a]
+                  -N*sum_(a>N,P-smooth)g_j^P(a)/a.               (4.3)
+Both terms are mandatory. The crude absolute local masses are at most
+four for the u/v g symbols and eight for the B g symbol, hence the first
+remainder has only an exponential-in-|P| bound by this method. It is not
+critical padding. The second term is not zero just because the first
+geometric model has a known mean.
+If the fourth coordinate is used here, its processed version is the
+P-rough indicator 1_(gcd(n,Q)=1), not delta(n) on the whole infinite
+source. It agrees with delta only on [1,N] when all primes<=N are in P.
+This is another reason not to identify a finite product law with the
+actual full unit without its rough complement.
+
+There is an unconditional macroscopic example INSIDE the actual four-state
+system, requiring neither RH nor PNT. Set P_X={q prime:q<=2X}. On the
+whole block X<=n<2X the processed delta prefix is exactly one, so
+  E_delta(P_X,n)=1-n*lambda_delta(P_X),
+  lambda_delta(P_X)=prod_(q<=2X)(1-1/q)>0.        (4.4)
+The elementary Chebyshev bound makes this remainder provably large.
+For t>=4, split the primes at sqrt(t) and use Theta_prime(t)<=C_psi*t
+to obtain pi(t)<=(2*C_psi+1)*t/log t. Partial summation then gives
+sum_(q<=T)1/q<=D+(2*C_psi+1)*log log T for T>=4, for a fixed finite
+D (the finite head can be bounded by integers). Since
+log(1-1/q)>=-2/q, writing C_pi=2*C_psi+1 gives
+  lambda_delta(P_X)>=exp(-2D)*(log(2X))^(-2*C_pi).
+Eventually X*lambda_delta(P_X)>=2. Therefore
+  X^(-2)*sum_(X<=n<2X)|E_delta(P_X,n)|^2
+    >=(1/4)*exp(-4D)*X*(log(2X))^(-4*C_pi).      (4.5)
+Indeed |1-n*lambda|>=n*lambda/2 and sum n^2>=X^3 on the block.
+Thus even the genuine unit coordinate has an unbounded positive-power
+filtration correction. It is not critical padding. Formula (4.5) concerns
+the correction, not the unit's actual energy, which is 1/X. A signed
+combination of the four coordinates may cancel these artificial model
+means, but such cancellation must be established; the auxiliary independent
+martingale does not supply it. This is a sharper obstruction than merely
+observing the exponential crude bound in (4.3).
+
+Each lambda_j(P) is positive. Finite-P coefficient second-moment control
+can coexist with a prefix mean lambda_j(P)*N. This extends the logic of
+the frozen partial-prime diagnostic without asserting that finite-P laws
+determine actual mu. Complete all-prime laws DO determine the actual
+coefficients; the missing step is a reusable uniform estimate for (4.3)
+and its pair-kernel version, not extra normalization at finitely many primes.
+
+Coefficient variance does not bound this mean at the required scale:
+Cauchy gives |F_j(N)|^2<=N*sum_(n<=N)|f_j(n)|^2, losing one power of N.
+An ordinary Doob martingale of f_j(U), U uniform on [1,N], starts at the
+unknown mean F_j(N)/N. Its variance decomposition does not estimate that
+initial mean. Using two independent U,V still leaves that same squared
+mean. These are exact reasons that a coefficient martingale is not a
+proof of the prefix-square target.
+
+5. Complete finite-prime recurrences and their forcing
+------------------------------------------------------
+There are two useful, different filtrations.
+
+(A) The genuinely smooth-supported prefix
+  F_j(x;y)=sum_(n<=x,Pplus(n)<=y)f_j(n)
+obeys, when the next prime is q,
+  F_j(x;q)=sum_(e>=0,q^e<=x)f_j(q^e)*F_j(x/q^e;q-),              (5.1)
+where q- means all earlier primes, and the base is F_j(x;1)=1 for x>=1,
+zero below one. Every e>=1 uses a strictly smaller source argument; e=0
+uses a smaller prime index. Thus it is an exact well-founded recurrence.
+It retains q powers, unit and every smooth complement. Squaring (5.1)
+requires all e,f cross terms and the kernels in (4.2). The triangle
+recurrence is not a signed uniform estimate.
+
+(B) For the prime-processed source of section 4, let g_j(q^e) have symbol
+(1-z)F_j(z), including g_j(1)=1. Then
+  F_j^(P+q)(x)=sum_(e>=0,q^e<=x)g_j(q^e)*F_j^P(x/q^e).            (5.2)
+Writing E_j(P,x)=F_j^P(x)-lambda_j(P)*x for x>=0, with the prefix zero
+below one, gives an ALL-e recurrence
+  E_j(P+q,x)=sum_(e>=0)g_j(q^e)*E_j(P,x/q^e).      (5.3)
+It is absolutely convergent for finite P. The terms q^e>x equal the
+explicit below-one compensator -lambda_j(P)*x/q^e. Omitting them changes
+the mean. The empty-P head is floor(x)-x on x>=1 and -x below one.
+
+For a finite word of primes, equations (5.2)-(5.3) are exact recurrences
+with smaller prime index and smaller arguments. They are a possible proof
+grammar, not a proved critical norm recurrence. At the critical dilation
+weight, the absolute factors of g are 1+O(q^(-1/2)), whose prime product
+is not polylogarithmic. Signed cross terms are required. Moreover the
+lambda_j(P)*x centering is not the actual real-pole centering as P grows.
+The large deterministic change of centering must be kept; proving just
+small E_j(P,x) uniformly in P is not a valid route to the desired state.
+
+More explicitly, for a vector prefix and a coercive quadratic storage,
+write (5.1) as F_new=F_old+H with H=sum_(e>=1)D_q(e)F_old(. /q^e).
+The exact change of energy is
+  2*<F_old,H>_P0+||H||_P0^2.                    (5.4)
+Pole, unit and below-one corrections add their full analogous cross terms.
+A useful proposed recurrence must bound THIS signed forcing jointly, at
+the actual kernel intersections, while putting all companion states into
+the same smaller-argument induction. Replacing the cross term by zero
+through an independence assertion is not allowed by (4.1)-(4.2).
+
+6. Prime-removal inverse is positive, but its absolute critical cost diverges
+----------------------------------------------------------------------------
+The exact local inverse symbols are
+  1/F_u(z)=(1-xz)/(1-z), 1/F_v(z)=(1-yz)/(1-z),
+  1/F_B(z)=(1-xz)(1-yz)/(1-z)^2.
+The inverse coefficients at e>=1 are respectively
+  r_u, r_v, e*r_u*r_v+1-xy,                      (6.1)
+all positive. Thus the q-free coefficient prefix is exactly the original
+prefix plus the full positive-inverse sum of smaller arguments. This is
+a valid removal identity; it supplies no arbitrary negative sign.
+
+On the truncated weighted L2 norm integral_1^T |F(t)|^2*t^(-2sigma-1)dt,
+with F below one zero, dilation by q^e has norm at most q^(-e*sigma).
+The positive inverse's absolute bound is therefore its symbol at q^(-sigma).
+Multiplying over all primes yields factors 1+c*q^(-sigma)+... , c>0.
+For sigma<=1 their product diverges. In particular it is not a finite
+critical recovery constant at sigma=1/2. Positivity also shows this is
+not just an unfortunate triangle estimate for the unrestricted operator:
+long plateaux after the weighted logarithmic change of variable approach
+the sum of any finite collection of positive dilation weights. The
+supremum of those sums is infinite. This excludes a universal bounded
+positive-inverse operator on that norm, not a source-specific constrained
+subspace using additional cancellation.
+
+7. A proved diagonal payment, and what it does not pay
+------------------------------------------------------
+The true coefficient diagonal h=k in (4.2) is harmless. Since |a_b|<=1,
+|B|<=d_2, and |a|<=beta*d_2, while d_2(n)^2<=d_4(n), divisor counting gives
+  sum_(n<=T)d_4(n)<=T*(1+log T)^3.
+Consequently the diagonal contribution for the target a is at most
+  2*beta^2*(1+log(2X))^3.                        (7.1)
+For B omit beta^2; for a_u/a_v it is at most two. Every fixed bilinear
+coefficient diagonal follows by Cauchy with those constants. This is
+unconditional cofinal padding. It does not pay h!=k, even if h,k have the
+same largest prime, or the shared-prime bank sector q=r with k!=l.
+
+8. A complete payment of the weighted shared-bank-prime sectors
+----------------------------------------------------------------
+For b=0,u,v put Z_b(t)=sum_(2<=k<=t)z_b(k), and keep Z_b zero below two.
+The bank is L_b(n)=sum_(n^theta<q<=n/2,q prime)q^(-b)*Z_b(n/q).
+Its EXACT same-prime bilinear sector is
+  D_bc(n)=sum_(n^theta<q<=n/2,q prime)
+                        q^(-b-c)*Z_b(n/q)*Z_c(n/q).             (8.1)
+All distinct-prime terms remain in L_b*L_c-D_bc. This is a sector split,
+not a deletion. With C_0=4*beta,C_u=C_v=2*beta, the proved coefficient
+envelopes imply |Z_b(t)|<=C_b*t*(1+log t), so for n>=1
+  |D_bc(n)|<=C_b*C_c*(2+b+c)/(1+b+c)
+                  *n^(2-theta*(1+b+c))*(1+log n)^2.             (8.2)
+The integer sum bound used is sum_(m>Y)m^(-2-b-c)
+ <=(2+b+c)/(1+b+c)*Y^(-1-b-c), valid for every real Y>=1.
+Empty banks obey the same bound. No prime asymptotic is needed.
+
+After dyadic normalization, the power exponent in (8.2) is
+  1-theta*(1+b+c).
+For theta>=3/4 these are
+  (0,0): 1-theta,       (0,u): 1-4theta/3<=0,
+  (0,v),(u,u): 1-5theta/3<0,
+  (u,v): 1-2theta<0,    (v,v): 1-7theta/3<0.      (8.3)
+Hence every shared-prime sector except D_00 is rigorously paid by a
+polylog block envelope; those with a strictly negative exponent also
+have finite integral of |D_bc(t)|/t^2 by (8.2). At theta=3/4 D_0u has a
+log-squared endpoint envelope, not a claimed finite critical integral.
+This controls their full signed values, including all cofactor overlaps.
+It does not control the distinct-prime sector of any of these products.
+The leading shared-prime common channel D_00 is nonnegative and remains.
+
+9. The common-channel pole must be centered before smaller-scale induction
+--------------------------------------------------------------------------
+Write kappa_u=2/3,kappa_v=1/3 and
+  c_u=1/[kappa_u*zeta(kappa_u)],
+  c_v=1/[kappa_v*zeta(kappa_v)].
+For real t>=1 put S(t)=sum_(n<=t)p(n), A_b(t)=sum_(n<=t)a_b(n),
+J=S-m_u*t^kappa_u-m_v*t^kappa_v, and
+M_b=A_b-c_b*t^(1-b). These definitions retain the whole unit values.
+Then the EXACT cofactor centers are
+  C_u(t)=m_u*t^kappa_u+(m_v+beta*c_v)*t^kappa_v-beta,
+  C_v(t)=(m_u+beta*c_u)*t^kappa_u+m_v*t^kappa_v-beta,
+  C_0=C_u+C_v,
+  Z_u-C_u=J+beta*M_v, Z_v-C_v=J+beta*M_u,
+  Z_0-C_0=2J+beta*(M_u+M_v).                    (9.1)
+For t<1 the prefixes are zero; these center formulas are not silently
+continued as zero in any convolution identity.
+
+Let Z=zeta(2/3)<0 and W=zeta(4/3)>0. The leading common coefficient is
+  gamma_0=2m_u+beta*c_u
+    =beta/kappa_u*[2W/Z^2-1/Z]>0.               (9.2)
+Thus uncentered Z_0 has a nonzero x^(2/3) pole channel. A cofinal
+square-root envelope for its uncentered prefix would not even have the
+correct pole compensation. The complete deterministic column from its
+leading pole has the positive shared-prime square
+  sum_(n^theta<q<=n/2)gamma_0^2*floor(n/q)^(4/3).
+For each fixed theta<1 this is at least
+  c_theta*n^((4-theta)/3)/log n                 (9.3)
+eventually, with c_theta>0. One elementary proof uses the known two-sided
+Chebyshev bounds to choose a fixed A so that (Y,AY] contains at least
+c_A*Y/log Y primes, Y=n^theta; for large n, AY<n/2 and floor(n/q)>=n/(2AY).
+Therefore its normalized block order is at least
+X^((1-theta)/3)/log X. This is a lower bound for this deterministic
+sector, not for the full signed target. It MUST cancel jointly with
+other pole/smooth sectors; all their cross terms remain. The unit and
+the x^(1/3) channels have their own paid envelopes, but cannot erase
+the leading sector by an unproved independence argument.
+
+There is nevertheless a useful STRICTLY SMALLER-SCALE proof rule for the
+CENTERED shared-prime part. Set W_0(t)=Z_0(t)-C_0(t) and
+W_0#(t)=W_0(floor(t)), C_0#(t)=C_0(floor(t)) on the bank domain t>=2.
+Then Z_0(t)=W_0#(t)+C_0#(t) exactly; real versus integer pole arguments
+are never silently interchanged. Suppose a closed
+induction has established
+  sum_(1<=m<=T)|W_0(m)|^2<=A_epsilon*T^(2+epsilon).                (9.4)
+For a dyadic X, its centered same-prime square obeys
+  X^(-2)*sum_(X<=n<2X)sum_(n^theta<q<=n/2)|W_0#(n/q)|^2
+    <=2^(2+epsilon)*A_epsilon*(1+1/epsilon)
+                                      *X^((1-theta)*epsilon).  (9.5)
+For each q, each integer cofactor cell has at most q sample points,
+so the inner n sum is at most q times (9.4) at T=2X/q. Summing
+q>X^theta and using sum_(m>Y)m^(-1-epsilon)
+ <=(1+1/epsilon)*Y^(-epsilon) proves (9.5). All needed induction
+arguments are at most 2X^(1-theta), strictly below X once X is larger
+than the fixed head 2^(1/theta). The actual support is smaller still.
+A cumulative polylog version of (9.4) yields a polylog bound by the
+same proof and sum_(q<=X)1/q<=1+log X.
+
+This is a valid primitive rule: centered cofactor energy transports to
+the centered common-prime square with a genuinely smaller horizon.
+It is NOT a supplied auxiliary theorem. By (9.1) its state is the coupled
+triple (J,M_u,M_v). All three must enter the SAME well-founded argument;
+independently assuming cofinal bounds for M_u or M_v would import another
+RH-strength source estimate. The exact expansion
+  D_00=D_00(centered)+2*D_00(centered,pole)+D_00(pole)
+keeps both mixed and deterministic terms. Equation (9.5) pays only its
+centered square after a valid induction step; it does not authorize
+dropping the other two terms or the distinct-prime covariance.
+
+10. What a complete auxiliary proof would still have to do
+----------------------------------------------------------
+The finite-prime recurrence is computationally well founded, but an
+energy induction requires a forcing estimate in addition. The remaining
+inputs now separate into concrete pieces:
+  * common-channel distinct-bank-prime correlations, with BOTH primes
+    coprime to BOTH cofactors on the actual overlap kernel;
+  * high-smooth/common-bank correlations with q>Pplus(h), without an
+    assumption that h and k are coprime;
+  * the joint pole/smooth compensation identified in section 9;
+  * parent/fresh covariance in the complete dyadic transport;
+  * smaller-scale centered coupled states, for which (9.5) is available
+    only after their own induction step closes.
+The weighted shared-prime sectors and coefficient diagonal are paid.
+The u/v off-diagonal tensor slide of section 2 is a source-specific
+small-factor identity, but it does not span or recover the B/common
+symmetric sector. Inverting that slide on its small eigenvalue would
+incur the reciprocal power cost; placing an annihilated sector into a
+complement rather than inverting it still requires its full estimate.
+
+A valid coupled energy certificate can use a coercive storage matrix,
+conditional epsilon slack, and a strictly smaller-scale dependency graph.
+Its signed forcing must include every kernel and pole cross term listed
+above, and give a recurrence of the form E(2X)<=rho*E(X)+paid(X), or an
+epsilon-relaxed closed companion system. Nothing here proves that forcing
+has the needed sign. The positive martingale variance (3.2), analytic
+zeros at s=1, and the local cancellation at the unit do not supply it.
+
+It would be tautological to name the sum of these unpaid sectors the
+"martingale defect" and assume its desired cofinal bound without a new
+estimate. It would also be circular to invoke full-scale cofinal bounds
+for J,M_u,M_v merely to pay (9.5). The proof hook here is more limited
+and checkable: exact complete prime-index transfers, independently paid
+weighted/diagonal sectors, exact pole split, and a smaller-scale centered
+variance rule. A new signed source correlation must close the common
+and pole-complement forcing before this hook becomes a theorem.
+
+Final status
+------------
+Proved: local full prime-power formulas and repeated-prime correction;
+finite product-space martingale and its nonnegative variance increments;
+complete floor/tail compensation and prime-index recurrences; positive
+prime-removal inverse with its unrestricted critical norm obstruction;
+coefficient-diagonal padding; all weighted shared-prime sector payments
+at theta>=3/4; exact cofactor pole constants, macroscopic pole-sector cost,
+and conditional strictly smaller-scale centered variance transport.
+Unproved: a closed actual-source signed covariance recurrence, the full
+cofinal centered moment, and RH. All global/RH flags remain false. The
+root's tensor-slide search can use the distinct-prime u/v identity, but
+must preserve common, repeated-prime, pole and outside-domain complements.

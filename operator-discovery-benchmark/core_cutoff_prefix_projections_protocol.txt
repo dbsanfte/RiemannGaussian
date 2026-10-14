@@ -1,0 +1,96 @@
+Complete-prefix factor projections and weighted Gram argument search
+
+Current input: candidate10_cutoff_prime_orbit_obligation.json, exactly the
+preceding published obligation. The original signed core stays priority 0.
+No source/recovery binding, compensation, current target, or open alternative
+is removed. The source is the actual head-corrected cutoff work at sigma9/20,
+theta2/3. The required uniform cumulative work exponent remains12/5.
+
+Generation before new projection observations
+Generate36 programs: each of the prior18 prime-window definitions, followed
+by projection rough then smooth. The complete payload fixes P(B), q=ab with
+a supported on P, b P-free, and label b or a respectively. P(B) stays fixed
+as V varies. Only squarefree q contribute to joined work; retain every q in
+its inherited actual history, including mu0 head/energy effects. The unit is
+the zero recurrence event, with full initial source energy retained.
+
+Each case includes q2..V for every integer V=B+1..2B. Thus earlier events
+q<=B contribute to every measured partial sum. The grouped cost at V=B is
+recorded separately and is NOT included in the declared maximum. Both prime
+factors and complementary factors are exact; rational roots stay exact.
+Record all group sizes, zero events, complete partial curve, initial/peak/
+endpoint absolute grouped work, full-prefix ungrouped baseline, joined and
+odd/even signed totals, singleton cost, cross-scale groups, groups with both
+Mobius signs, and groups containing both prime and composite events. These
+structural counts do not imply cancellation in the work coefficients.
+
+Proof argument generation
+Review027 licenses common H_(2B) by each event's OWN old-tail bound, using
+q/(q-1)<=2, virtual coefficient norm<=1 and virtual harmonic c<=5/2. Sum the
+raw-tail q^-1/16 and full-head q^11/10 costs to B^15/16 and B^21/10. The latter
+is below the current goal12/5, uniformly for all partitions and all V.
+This is an analytically supplied rule executed by the detector, not a learned
+uniform arithmetic law. Tiny q cannot use an unjustified q~B comparison.
+
+For each program generate7 weighted Gram auxiliaries eta_label=label^-gamma,
+gamma in[0,1/6,1/3,1/2,2/3,1,3/2]. Use unweighted work polynomials inside
+Gamma_label and kappa=|zeta(s+1/3)/s|^2 exactly ONCE in the Gram integral.
+All ordered same-label q,q' and odd/even/history crosses remain. Never square
+the cached already-weighted samples as if they were these raw polynomials.
+The full continuous kernel mass is<=100/13. Elementary label-mass bounds
+derive the sufficient Gram exponent2*beta-mass_power and opposite log degree.
+gamma1 retains its reciprocal harmonic log. Fixed-prime smooth labels1,p
+give mass<=2 at every scale. Growing-window label mass cannot be inferred
+from finitely observed groups. These252 targets remain OPEN: no existing
+fourth-moment provider is relabeled a higher-moment theorem. No numerical
+Gram estimate is fitted or evaluated in this pilot.
+
+Degeneracy and ranking
+Reject every program with a one-bucket or all-singleton partition at any
+discovery block. All missing cases and zero/uncertain-zero baselines are
+explicit rejections. One-bucket controls are recognized whole-work forms,
+not new arithmetic gains. Enlarging P coarsens rough groups but refines
+smooth groups; the corresponding monotonic cost change follows from triangle
+and is not credited as a new signed estimate.
+
+Discovery uses B64,128,256,512; all four affect selection. Each program's
+score is the interval maximum of grouped_peak/ungrouped across these blocks.
+Within each of six lanes fixed:rough,fixed:smooth,prefix:rough,prefix:smooth,
+window:rough,window:smooth, eliminate a score only when another eligible
+score is provably strictly smaller. Preserve all unresolved interval ties;
+choose the smallest program id among the undominated candidates. Old integer
+cancellation_bits remain diagnostic only. There are no fitted constants or
+model calls in search. Seal selection before evaluating selected programs at
+B1024. No reselection from that stage or unrecorded additional candidates.
+
+Evidence reuse and independence
+The numeric input is the two owners' preserved prior samples q2..2048 at
+heights0,1/2,1,2,4,8,16, already using weights1 at zero and2 at positive heights.
+Read each owner's own discovery/evaluation sample files. Reuse numeric states
+and work values; no zeta re-evaluation or Mobius source regeneration. Freeze
+those cache files by direct bytes. Audit complete sample coverage and both
+owners' public intervals using the existing verified sample checker. The new
+checker reconstructs prime membership by trial primality and exact power
+comparisons, constructs full group columns, and reconstructs all partial costs.
+Producer uses a sieve and online group updates. All intervals must be finite,
+tight and overlapping. A finite projection sample is not quadrature, a bound
+for the continuous integral, or new/unseen arithmetic data. This pilot is
+development-conditioned exploration of new controls on preserved evidence.
+
+Validation and resources
+One new owned suite each; affected checks only after source changes. Do not
+rerun passing unchanged suites in the frozen study. Independently verify all
+new proof programs, cases, selection and complete-source feedback. Preserve
+every observation, rejection, source snapshot, receipt and terminal failure.
+Two numerical-transformation workers run in parallel at192/256bit precision.
+4GiB per process, main4GiB; maximum concurrent declared total12GiB within the
+authorized16GiB. Per worker phase400m accounted operations/900seconds. Total
+including recorded development is capped at2b operations and1800seconds.
+Counts are conservative operation-budget estimates, not CPU instructions.
+No precautionary hashes and no prior study restarts. There is no current
+numeric worker handle to resume from the previous completed study.
+
+Full signed-core and RH flags stay false unless an independently verified
+complete uniform arithmetic estimate actually closes the original recovery.
+This pilot does not implement Review027's optional edge covers/rectangles;
+those remain proposed productions, with mandatory exits/capacity/recovery.

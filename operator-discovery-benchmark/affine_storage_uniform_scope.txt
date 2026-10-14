@@ -1,0 +1,249 @@
+Independent analytic scope of affine full15 anchored storage
+
+This is an algebraic and conditional recovery review. It supplies no uniform
+signed arithmetic estimate, primal feasibility, or RH proof. Earlier frozen
+and published sources remain unchanged. The independent mathematical checker
+rebuilds the complete full14 source using old independent checkers, prepends
+the formal constant unit to every actual row, and never imports the new affine
+producer, synthesis, or dual proposal modules.
+
+State, source geometry, and the exact signed target
+
+Let V_t be the complete full14 state in its unchanged order: prefix, half,
+even, mod3one, prime, and all nine unit-normalized divisor contrasts. Put
+U_t=(1,V_t). There is no normalization of individual coordinates and no change
+to any underlying divisor, floor, mask, prime-power, or complementary source.
+All original scalar squares and relations, their descriptor order, the full
+target and the supplied gamma-zero auxiliary instance are unchanged. Every
+ordinary parent row t in [X,2X) and child row t in [2X,4X) has the extra unit
+coordinate. The auxiliary has no Gram rows; its unit-looking scalar constraint
+does not authorize a new regional boundary row. Every one of the 120 upper
+pairs in each of the three fifteen-dimensional matrices is retained.
+
+For a fixed q choose finite matrices G_parent,q, G_child,q, K_q PSD, all
+independent of both t and X. Define
+
+  e=e_prefix (index 1, with the unit at index 0),
+  R_q=e e^T+K_q,
+  E(X)=sum_(X<=t<2X) P_t^2,
+  A_G(X)=sum_(X<=t<2X) U_t^T G U_t,
+  S_R(X)=E(X)+A_K(X),
+  Delta(A)(X)=A(2X)-4 A(X).
+
+The target rearrangement is exactly
+
+  D(X)-Delta(E)(X)=Q(X)+Delta(A_K)(X),
+  D(X)-Delta(S_R)(X)=Q(X).
+
+Q contains the unchanged scalar square terms, the two regional PSD Gram
+polynomials, valid signed arithmetic relations, and the nonnegative scalar
+slack. On actual arithmetic input, all admitted relations vanish and Q>=0.
+Consequently Delta(S_R)<=D. The storage is the signed transport with child
+coefficient +1 and parent coefficient -4. Its negative parent part is never
+an SOS term or a nonnegative Gram weight. The independent checker expands
+the complete increment, subtracts it from the original target, and checks the
+transformed certificate using independent polynomial and PSD arithmetic.
+
+PSD of K proves R-e e^T PSD and R PSD, giving S_R(X)>=E(X)>=0 at every scale.
+PSD of R alone would not establish the declared anchor; the remainder must
+be PSD. The full15 unit diagonal cannot replace the prefix diagonal. The old
+full14 cone embeds by an exactly zero unit row and column in every matrix;
+all old polynomials, scalar charges, and the initial storage cost are then
+identical. This embedding retains the whole old cone, not merely one witness.
+
+Source completeness must also be independently checked in the enclosing
+audit. Hashing caller-supplied truncated sources does not establish their
+arithmetic semantics. The independent builder compares every scalar group,
+old source archive, full15 row, new archive descriptor, and typed transport.
+The compiler rebuilds the entire monomial domain and all scalar/Gram columns.
+Offdiagonal upper-triangle primal columns carry factor two; dual moment
+matrix entries do not. An absent required moment is unsupported and causes
+rejection, even when a caller supplies a matrix with zeros in that position.
+Only a coefficient that vanishes after exact polynomial cancellation needs
+no moment. All regional and storage dual matrices are checked exactly, with
+H_K=H_child-4 H_parent coefficientwise.
+
+Formal constants and the actual X=1 boundary
+
+Before substituting any arithmetic variable, the constant state is
+
+  z=(1,0,0,0,0,0,-1/2,...,-1/2).
+
+For any full15 matrix M its complete formal constant is
+
+  z^T M z = M_00 - sum_(j=6)^14 M_0j
+                    + (1/4) sum_(i,j=6)^14 M_ij.
+
+This formula contains both orientations of every divisor-divisor cross and
+the complete unit-divisor cross. Unit-prefix/mask crosses have zero formal
+constant but remain nonconstant columns. There are 2X child and X parent
+rows, so the exact matrix scalar charge on the original RHS is
+
+  B_matrix(X)=2X z^T G_child z + X z^T G_parent z - 2X z^T K z.
+
+The final term is nonpositive for PSD K and is signed transport. Regional
+charges are nonnegative. The combined charge can have either sign; every
+part must remain in the ledger. All of these terms are O_q(X) for fixed
+finite matrices. Pure unit storage has A_K(X)=K_00 X and Delta(A_K)=-2K_00 X;
+that contribution also requires its actual initial cost.
+
+The formal state z is not the actual unit boundary. At t=1, with the existing
+arithmetic unit premise x_1=1, the independently rebuilt complete state is
+
+  u=(1,1,0,0,1,0,0,...,0),
+  S_R(1)=1+u^T K u.
+
+Here P_0=0 in the half coordinate; all nine centered divisor contrasts
+vanish. The unit, prefix, and mod3one crosses survive in u^T K u. This value
+is finite and at least one. For example the rank-one matrix
+K=(e_unit+e_divisor)(e_unit+e_divisor)^T has z^T K z=1/4 but u^T K u=1. A zero formal scalar does not permit dropping the initial cost,
+and substituting x_1=1 before formal coefficient extraction changes the
+language. The checker reconstructs u from source polynomials rather than
+assuming the published constant vector is also an arithmetic starting state.
+
+The extracted budget and the conditional gamma-zero gate
+
+For the complete RHS without slack, write B_q(X) for its FORMAL constant
+coefficient, including unchanged scalar squares and signed relations plus
+the matrix charge above. If all nonconstant coefficients match -Delta(E),
+the exact formal identity is RHS=B_q(X)-Delta(E)(X). Its arithmetic evaluation
+therefore yields
+
+  Delta(S_R)(X)=B_q(X)-Q_no_slack(X)<=B_q(X).
+
+The exact slack in the displayed target is D(X)-B_q(X); it must be
+nonnegative in every admitted finite certificate. Formal scalar accounting
+does not itself prove nonconstant matching or an all-scale inequality.
+
+Under the unchanged mu dictionary, fixed finite weights, fixed integer q>1,
+and the previous scalar-asymptotic hypotheses, the unchanged scalar part has
+
+  B_old,q(X)=delta gamma_q X^3+o_q(X^3), delta=1/zeta(2)>0,
+  gamma_q=-(56/3)b_all-12 b_head-(20/3)b_tail.
+
+The hypotheses include complete child-rowmass norm sums, squarefree density,
+subcubic prime sums, fixed kernels/moduli, and the stated constant extraction.
+Adding B_matrix=O_q(X) leaves exactly the same cubic coefficient. Thus the
+gamma-zero auxiliary remains a necessary gate for the SPECIFIC objective
+of an all-scale fixed-template identity with nonnegative actual proof terms
+and extracted critical budget O_q(X^(2+1/q)), subject to those unchanged
+asymptotic hypotheses.
+
+Both signs are necessary. If gamma>0, the cubic scalar growth contradicts
+that critical budget because 2+1/q<3. If gamma<0, complete nonconstant
+matching and actual nonnegativity give Delta(S_R)(X)<=-a_q X^3 eventually,
+with a_q>0. For W(X)=S_R(X)/X^2>=0 this gives
+
+  W(2X)<=W(X)-(a_q/4)X
+
+at sufficiently large dyadic X. Starting from a finite such scale and
+iterating makes W negative, a contradiction. This uses no assumed upper
+growth bound for the divisor channels. Therefore gamma=0 is necessary in
+the declared objective. It is not sufficient: o(X^3) density/prime errors
+may exceed X^(2+1/q). At q=1 this argument does not require gamma=0; the
+auxiliary then remains an explicitly imposed restriction. The gate is not
+a necessity theorem for every arithmetic proof, every innovation estimate,
+or a scale-dependent matrix/weight law. Such changed laws need fresh exact
+constant and growth proofs. Finite matching alone proves neither sign
+contradiction.
+
+Conditional dyadic recovery and quantifiers
+
+Suppose separately, for a fixed q>0, finite C_q>=0 and fixed finite K_q PSD,
+that Delta(S_R)(X)<=C_q X^2 ceil(X^(1/q)) at EVERY dyadic integer X>=1.
+Put a=1/q and W=S_R/X^2. Since ceil(X^a)<=2X^a for X>=1,
+
+  W(2X)<=W(X)+(C_q/2)X^a.
+
+At X=2^m geometric summation, including the empty sum at X=1, gives
+
+  W(X)<=S_R(1)+(C_q/2)(X^a-1)/(2^a-1),
+  E(X)<=[S_R(1)+(C_q/2)/(2^a-1)] X^(2+a).
+
+The denominator is positive. The recovered constant includes the actual
+u^T K u boundary. The fixed coercivity here is one. A different fixed
+anchor R-c_q e e^T PSD with c_q>0 would divide the energy constant by c_q;
+an X-dependent or vanishing anchor does not inherit this proof. Prefix
+energy is recovered uniformly on dyadics, the scales needed by the recorded
+bridge. If a bound for every integer X is desired, bracket X between Y and
+2Y with Y dyadic. Then E(X)<=E(Y)+E(2Y) by nonnegative summands, providing
+the same exponent with a finite q-dependent constant.
+
+For the project's RH-strength objective, a single q=6 and a finite scale
+grid are insufficient. The recorded schedule requires some q0 and EVERY
+integer q>=q0, with all fixed matrices, weights, and constants permitted to
+depend on q but not X. A stated cofinal unbounded sequence of q also yields
+energy exponents 2+epsilon for every epsilon>0 by fixing one q with
+1/q<epsilon. It is a different, weaker schedule than the recorded every-q
+objective and must be identified if used. The existing prefix-energy/zeta
+bridge still requires its actual arithmetic, analytic continuation, and
+growth hypotheses. No missing bridge premise is supplied by this algebra.
+
+Child PSD redundancy survives affine completion
+
+For arbitrary complete U_t, the matrix RHS is
+
+  A_Gparent(X)+A_Gchild(2X)+A_K(2X)-4A_K(X).
+
+Set K'=K+G_child, G_parent'=G_parent+4G_child, G_child'=0. All remain PSD.
+Their RHS is coefficientwise identical at EVERY scale, including X=1, so
+the child PSD block is algebraically redundant in this anchored cone. The
+new initial cost increases by u^T G_child u and must remain explicit. The
+formal scalar charge is unchanged because
+
+  X z^T(G_parent+4G_child)z-2X z^T(K+G_child)z
+   =X z^T G_parent z+2X z^T G_child z-2X z^T K z.
+
+On the dual side H_child=H_K+4H_parent, hence the child PSD condition follows
+from parent and storage PSD. This is an exact reparameterization, not a new
+arithmetic estimate or a reason to omit any full15 pair from admission. The
+preregistered complete three-matrix compiler may retain all 360 columns;
+restricted numerical proposals still require full independent admission.
+
+What the extra unit does and what finite exclusion means
+
+The unit is an exact algebraic constant already available in the scalar
+polynomial language and consistent with its existing arithmetic unit premise.
+Adding it to the STATE enlarges affine SOS/storage closure: each rank-one
+affine square is (c+sum_i a_i V_i)^2 and supplies the previously unavailable
+unit/atom mixed moment conditions. This introduces no new observed Mobius
+sign, prime correlation, local arithmetic relation, or uniform estimate.
+It is a change in proof representation and algebraic closure. Centered
+divisor atoms already have formal constants; that fact does not automatically
+imply that the whole shared affine unit direction was previously in the cone.
+No universal redundancy of the affine completion is assumed.
+
+An old admitted functional with zero constant moment must have a zero unit
+row in every PSD affine moment matrix. A nonzero first atom moment therefore
+invalidates that extension. A fully checked negative affine direction,
+together with the old full14 admission and the zero-unit embedding, shows
+strict enlargement of that declared finite polynomial cone. It establishes
+neither feasibility of the target in the larger cone nor arithmetic progress
+on the all-scale signed bound. Missing first moments yield an unknown
+diagnostic rather than a zero-filled matrix or a feasibility conclusion.
+
+The historical joint training scales 1,2,3,5 include the non-dyadic scales
+3 and 5. A separator admitted for that entire shared cone excludes the
+template constrained on ALL those scales and its explicit auxiliary. It
+does not automatically exclude a law required ONLY on dyadic scales. Dual
+functionals use independent scale-instance copies; they are not a verified
+countermodel of one arithmetic sequence. Zero constant coordinates can
+support arbitrary scalar-budget shifts only after exact checking of the
+whole scalar domain and every full15 moment block, and within the declared
+fixed grammar/gate. Neither solver failure, work/resource failure, old
+witness invalidity, nor finite primal survival proves a uniform estimate.
+
+Outstanding promotion obligations are complete symbolic identities at all
+required scales, valid arithmetic premises for every unchanged source term,
+fixed PSD/coercivity laws, critical extracted budgets with all boundaries,
+the actual initial cost, the required q schedule, and the existing RH bridge.
+They remain unresolved. All finite outputs retain global_bound_proved=False
+and RH_proved=False; no larger-cone or uniform-innovation promotion is admitted.
+
+Reviewed independent sources: ANCHORED_STORAGE_SEARCH_HANDOFF.txt;
+check_cancellation_anchored_storage.py; check_cancellation_complete_gram_program.py;
+check_cancellation_shared_gram.py; check_cancellation_divisor_cells.py;
+grouped_arithmetic_budget_scope.txt; grouped_arithmetic_mu_cubic_budget_review.txt;
+cancellation_cubic_gate_independent_review.txt; anchored_storage_uniform_scope.txt;
+anchored_storage_cone_redundancy.txt. No new optimizer campaign or research
+score is used in this review.

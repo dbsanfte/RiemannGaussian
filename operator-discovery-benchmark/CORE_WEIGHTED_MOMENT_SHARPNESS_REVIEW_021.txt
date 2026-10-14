@@ -1,0 +1,293 @@
+CORE WEIGHTED MOMENT SHARPNESS REVIEW 021
+Independent analytic review; 2026-10-10
+Scope: proposed reusable signed finite-weight moment grammar. No source
+observations, numerical experiments, tests, or changes to frozen files.
+
+1. Conclusion and exact scope
+
+The squared U cost U^[2(p+m)(1-sigma)] cannot be uniformly decreased over
+the generic class of real finite weights |a_n|<=1, a_1=1, c=A(1), |c|<=2.
+Exact harmonic cancellation T(1)=0, where T=c-A, does not change this
+conclusion. An elementary rational two-block construction gives c=1 and
+saturates that exponent already on one fixed small t interval. It applies
+to the FULL expression
+
+ F_U(s)=zeta(s+u) A_U(s)^p [1+zeta(s)(c-A_U(s))]^m,
+ theta=1-u, 0<sigma<min(1/2,theta), p>=0, m>=1.
+
+The fixed parameters p,m,sigma,theta remain independent of U. This is a
+generic weight-class obstruction to a smaller global vertical norm cost,
+not an obstruction for actual Mobius weights. It does not prove a lower
+bound on a specified block X<=n<2X with U=floor(N^alpha), nor on the joined
+signed core after cancellations with its other terms. Actual arithmetic
+identities, source-specific Gram estimates, localization in x, and complete
+signed recurrences can evade this generic-class obstruction.
+
+The result is compatible with the previous unconditional centered A^2 E^2
+component payment: that payment uses the present U exponent and selects a
+cutoff for which its X exponent is nonpositive. No new core/RH claim follows.
+
+2. Exact paired-dilation construction
+
+Let Q>=2 be an integer and U=4Q. Set
+
+ a_1=1;
+ a_n=1/2 for Q<n<=2Q;
+ a_(2n)=-1 for Q<n<=2Q;
+ all other a_k=0, including odd k in the upper block.
+
+The lower and upper supports are disjoint. All weights are exact rationals
+in [-1,1], including the unit. Each pair has harmonic sum
+
+ (1/2)/n - 1/(2n)=0.
+
+Consequently the complete tail harmonic sum is exactly zero, A_U(1)=1,
+and c=1. This is not a numerical cancellation or an asymptotic definition
+of c. With S_Q(s)=sum_(Q<n<=2Q) n^(-s), exactly
+
+ A_U(s)=1+d(s) S_Q(s), d(s)=1/2-2^(-s),
+ T_U(s)=c-A_U(s)=-d(s) S_Q(s),
+ E_U(s)=1+zeta(s) T_U(s).
+
+In particular T_U(1)=0. Thus the apparent pole of E_U at s=1 is removable,
+and the full F_U has only the possible simple pole at theta on the positive
+strip. Expanding E_U and bounding its pieces before restoring that pole
+cancellation is not a license to cross s=1.
+
+For the fixed sigma in section 1, define delta_sigma=2^(-sigma)-1/2>0.
+Reverse triangle inequality gives |d(sigma+it)|>=delta_sigma for every t.
+Rotate S_Q by (sqrt(2)*Q)^(it). Since n/(sqrt(2)*Q) lies between 1/sqrt(2)
+and sqrt(2), for |t|<=1/(2 log 2) every rotated summand has argument with
+absolute value at most 1/4. Its real part is at least half its magnitude.
+Therefore, uniformly on that whole interval,
+
+ |S_Q(sigma+it)| >= (1/2) sum_(Q<n<=2Q)n^(-sigma)
+                   >= 2^(-sigma-1) Q^(1-sigma),
+ |T_U(sigma+it)| >= k_sigma Q^(1-sigma),
+ k_sigma=delta_sigma*2^(-sigma-1)>0.
+
+Both zeta(sigma) and zeta(sigma+u) are nonzero. Indeed for a real 0<a<1,
+the positive alternating eta series divided by 1-2^(1-a)<0 gives zeta(a)<0.
+This fact requires no zero-free strip or RH premise. Continuity therefore
+provides a fixed t0>0, t0<=1/(2 log 2), and positive z0,z1 such that
+
+ |zeta(sigma+it)|>=z0,
+ |zeta(sigma+u+it)|>=z1, for |t|<=t0.
+
+These constants depend on the fixed lines, not Q. For all sufficiently
+large Q, the unit terms cannot cancel the large tails:
+
+ |A_U(sigma+it)| >= (k_sigma/2) Q^(1-sigma),
+ |E_U(sigma+it)| >= (z0*k_sigma/2) Q^(1-sigma).
+
+It follows, with D=sqrt(sigma^2+t0^2), that
+
+ |F_U(sigma+it)/(sigma+it)|
+ >= (z1/D)(k_sigma/2)^p(z0*k_sigma/2)^m
+       Q^[(p+m)(1-sigma)], for |t|<=t0.
+
+Integrating the square gives a positive fixed constant times
+U^[2(p+m)(1-sigma)]. The same lower bound holds with any fixed positive
+Gaussian window exp(-t^2/H^2), H>0. Thus neither harmonic-nullness nor the
+exact dependence c=A(1) removes the generic low-height obstruction.
+
+The proof also works for arbitrarily large nonmultiples of four by taking
+Q=floor(U/4) and leaving all unused indices zero. A subsequence U=4Q alone
+already refutes a uniform smaller U exponent, even with fixed log losses.
+
+3. A genuine constant-on-each-block variant
+
+If a benchmark requires both complete dyadic intervals, rather than a sparse
+dilated upper interval, let
+
+ L_Q=sum_(Q<n<=2Q)1/n, H_Q=sum_(2Q<n<=4Q)1/n,
+ lambda_Q=L_Q/H_Q,
+ a_1=1, a_n=1 on (Q,2Q], a_n=-lambda_Q on (2Q,4Q].
+
+Exactly H_Q>L_Q>0: pair the upper indices 2k-1,2k for Q<k<=2Q and note
+1/(2k-1)+1/(2k)>1/k. Thus 0<lambda_Q<1, all weights satisfy the bound,
+and the complete tail harmonic sum L_Q-lambda_Q H_Q vanishes exactly.
+Again c=1. These are rational finite harmonic sums, not fitted coefficients.
+
+Elementary integral estimates imply lambda_Q=1+O(1/Q). Uniformly for t in
+a fixed compact interval and s=sigma+it,
+
+ Q^(s-1)(A_U(s)-1)
+  -> I(s)=(1-2^(1-s)) integral_1^2 x^(-s) dx.
+
+The error is O(1/Q) on the compact s set; it follows, for example, by bounding
+the derivative of x^(-s) in the Riemann sums and using the harmonic sum
+integral remainder. At t=0, I(sigma)<0 when sigma<1. Continuity gives a
+fixed small interval on which its magnitude is bounded below. Consequently
+this variant has the same low-height sharpness, including the full E and F.
+The paired-dilation family has the simpler all-Q certificate; the contiguous
+family has the simpler block description. Either may be found by a detector.
+
+4. Full centering and the integer staircase
+
+Let h have Dirichlet function A^p E^m and let M=A(theta)^p E(theta)^m.
+Write P(x)=sum_(n<=x)(K*h)(n), K(n)=n^(-u), and
+C(x)=P(x)-(M/theta)x^theta for ALL x>0. In particular the interval 0<x<1
+has C(x)=-(M/theta)x^theta. The Gaussian Perron/Mellin argument in review018
+identifies the centered transform on Re s=sigma with F_U(s)/s itself.
+One must not subtract a residue rational function a second time from that
+transform. The pole crossing already supplied the physical centering term.
+
+Whenever the complete vertical L2 norm is finite, that reviewed bridge gives
+
+ integral_0^infinity |C(x)|^2 x^(-2sigma-1) dx
+  =(1/(2pi)) integral_R |F_U(sigma+it)/(sigma+it)|^2 dt.
+
+The compact-height lower bound therefore survives FULL centering. If the
+high-height integral diverges, it cannot support a proposed finite global
+bound in the first place. A finite Gaussian-window norm and its Gaussian
+smoothed physical counterpart still exhibit the head obstruction. No
+ordinary convergence statement for M is inferred from analytic continuation:
+the supplied generic Em prefix route gives rho=1-1/m, and its Abel moment
+is licensed only when rho<theta. For m=2, theta=2/3 this condition holds.
+
+For the witness, |M|<=C U^[(p+m)(1-theta)], using the elementary finite mass
+bound on the theta line and the fixed zeta(theta). This squared exponent is
+strictly lower than 2(p+m)(1-sigma), because sigma<theta.
+Put C_n=P(n)-(M/theta)n^theta, including n=1. On each [n,n+1),
+C(x)=C_n-(M/theta)(x^theta-n^theta). Bounding the square by twice the two
+squares and integrating yields
+
+ integral_0^infinity |C(x)|^2 x^(-2sigma-1) dx
+ <=2 sum_(n>=1)|C_n|^2 n^(-2sigma-1)+C_(sigma,theta)|M|^2.
+
+Here the finite constant includes 0<x<1 and the convergent cell-error
+integral of x^(2theta-2sigma-3). Consequently the complete integer weighted
+global norm has the same asymptotic lower U exponent whenever the bridge is
+available; the full J_theta staircase correction cannot remove it. This
+argument makes no lower-bound claim for arbitrary polynomial channels or
+projected cells: some channels can kill a particular witness. It also makes
+no claim about the actual source's complete signed join, other drifts, or -e.
+
+5. Exact Gaussian Fourier/Mellin Gram identity
+
+For ANY finite complex coefficient array b_n, real sigma, and H>0, define
+B(s)=sum_n b_n n^(-s). Finite expansion and the Gaussian Fourier integral
+give exactly
+
+ integral_R exp(-t^2/H^2)|B(sigma+it)|^2 dt
+ =sqrt(pi)*H sum_(r,n) b_r conjugate(b_n)(rn)^(-sigma)
+        exp[-(H^2/4)(log(r/n))^2].
+
+For real coefficients this is the requested signed b_r b_n identity.
+The diagonal terms plus twice each r<n term must be retained with their
+actual signs. It is not equal to the same sum of absolute coefficient
+products, and it is not equal to its diagonal except in a limiting regime.
+
+For completeness, the scalar identity follows without a contour shift.
+For J(w)=integral_R exp(-t^2/H^2)exp(-iwt)dt, differentiation and integration
+by parts give J'(w)=-(H^2 w/2)J(w); J(0)=sqrt(pi)H. Thus
+J(w)=sqrt(pi)H exp(-H^2 w^2/4). Substitution w=log(r/n) proves the identity.
+
+The centered Gaussian exp[-(t-T)^2/H^2] introduces the additional phase
+exp[-iT log(r/n)]. For real weights, pairing symmetric terms gives cosine
+cos[T log(r/n)]. This supplies a sign-sensitive low-, medium-, or high-height
+finite-polynomial identity with no unmentioned polynomial-length threshold.
+
+The Gram matrix is positive definite for distinct occupied integers and
+H>0: a zero quadratic form would make the finite exponential polynomial
+zero almost everywhere, hence identically zero and all its coefficients
+zero. At fixed finite support, as H tends to infinity, the matrix divided
+by sqrt(pi)H tends to the diagonal. As H tends to zero the normalized matrix
+tends to the rank-one matrix (rn)^(-sigma). Those are limits, not exact
+diagonal licenses at finite H. Harmonic cancellation only forces B(1)=0;
+it does not force B(sigma+it)=0 on an interval for sigma<1/2.
+
+6. A detector-discoverable construction grammar
+
+The reusable input grammar can be stated before any benchmark observations:
+
+(a) Enumerate disjoint integer intervals at rational fractions of U and
+    integer dilations d in a bounded declared list. Include constant-on-block
+    templates and sparse dilation images. Include the unit as a fixed atom.
+(b) Introduce rational amplitudes, solve the exact harmonic linear equation
+    for the tail, and normalize nonzero nullspace directions to infinity
+    norm <=1. Reject overlapping assignments, lost units, or |c|>2.
+(c) For dilation pairs the equation is x+y/d=0. Its exact nullspace solver
+    generates (1,-d) and normalization generates (1/d,-1). These coefficients
+    are outputs, not nominated candidate answers. For two full blocks the
+    equation is L_Q*x+H_Q*y=0; the exact solver produces the harmonic ratio.
+(d) Compile the exact finite Mellin polynomial, including c, then compute
+    its asymptotic block profile and prove a nonzero value at a fixed real
+    sigma. An interval-stability lemma generates a fixed low-height window.
+(e) Independently check the coefficient/nullspace identity, magnitude
+    bounds, exact c, profile, remainder, and full F centering scope.
+
+Enumerating this grammar does not amount to selecting a particular Mobius
+cutoff or discovering an actual arithmetic bound. It is an adversarial
+generic calibration. A finite grammar may fail to find a witness without
+the generic class being better behaved; report only its declared coverage.
+
+A useful exact generic benchmark should provide rational source arrays and
+the unit, require recomputation of c rather than accepting a declared c,
+and ask for the FULL signed Gaussian Gram. Cases should include harmonic-null
+tails, both signs of cross terms, dilations, duplicate frequencies merged by
+exact convolution, a changed sigma/H/window center, and an unbalanced tail
+that must be rejected. A later numerical benchmark can compare direct
+certified Gaussian integration with the independently expanded Gram, using
+outward-rounded log/exp intervals and a certified tail. No such experiment
+was run in this review.
+
+7. A useful actual-weight bound language, and its limitations
+
+The finite Gram identity can be compiled for A, T=c-A, and every finite
+Dirichlet convolution B_j=A^p T^j. Its length is at most U^(p+j), not U.
+The complete source polynomial is exactly
+
+ F_U(s)=zeta(s+u) sum_(j=0)^m binom(m,j) zeta(s)^j B_j(s).
+
+To retain joint cancellations, a more capable moment grammar must estimate
+the Hermitian matrix with entries
+
+ integral w(t)|zeta(s+u)/s|^2 zeta(s)^j conjugate(zeta(s)^k)
+             B_j(s) conjugate(B_k(s)) dt,
+
+and contract it with BOTH binomial coefficient vectors. It must not pretend
+that the finite-polynomial Gaussian Gram already supplies this zeta-weighted
+matrix. Certified compact-line zeta enclosures can bound the low-height head;
+twisted moment rules or other uniform analytic providers can bound high
+height regimes. All uncovered intermediate and low-height ranges must be
+paid separately. The full E combination still removes its pole at 1 before
+the contour proof. Expanding individual branches never discards their joint
+principal-part cancellation or the complete J_theta compensator.
+
+Off-critical twisted-polynomial rules must carry the coefficient shift
+n^(1/2-sigma) and the resulting normalization exponent. A theorem restricted
+to polynomial length R<=T^delta cannot be applied at fixed T as U grows.
+Absolute/Hilbert fallback costs in that missing head can restore the generic
+U exponent just proved sharp. Thus a promising high-height gain alone does
+not pay a higher-degree actual component. Source-specific coefficient
+information or a different complete signed target is needed to beat that
+head, rather than relabeling it as negligible.
+
+Numerically small signed Gram values at several U and H are observations,
+not a uniform bound for every source cutoff. Executable discovery can propose
+and rank arithmetic inequalities from exact signed arrays, but a paid theorem
+must identify a verified all-cutoff rule, all-height coverage, complete
+centering, ordinary moment convergence where required, and a fixed uniform
+constant. If these are open, the output remains a missing-bound task. This
+review supplies no proof of a uniform Mobius Gram gain and no RH closure.
+
+8. Provenance and final status
+
+The sharpness construction, Gaussian Gram proof, finite harmonic nullspace,
+and comparison of integer cells are elementary derivations written above.
+The full Gaussian Perron/Mellin centering bridge is the explicitly reviewed
+rule in JOINT_REMAINDER_MOMENT_REVIEW_018.txt, not a newly assumed identity.
+The real-line zeta sign uses the primary NIST DLMF alternating representation
+at https://dlmf.nist.gov/25.2.E3; its meromorphic continuation and sole pole
+are stated at https://dlmf.nist.gov/25.2. These pages were consulted, without
+any source-data observation. No numerical value of a zeta lower bound is
+needed; continuity gives fixed symbolic constants, and a future numerical
+implementation would certify any chosen interval endpoints.
+
+Backend020 and this review agree that a high-height twisted rule cannot erase
+the uncovered low-height polynomial head. Stronger generic conclusions from
+the same |a_n|<=1, |c|<=2 and harmonic-null hypotheses are ruled out for the
+global norm exponent. Stronger actual Mobius conclusions remain open and
+can be legitimate next search tasks. Edits stopped after this review.

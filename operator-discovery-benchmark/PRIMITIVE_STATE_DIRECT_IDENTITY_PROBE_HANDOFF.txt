@@ -1,0 +1,97 @@
+Publication023: direct exact evaluation rejects the fixed formal identity
+Date: 2026-10-09. Archive: cancellation-arithmetic-results/primitive-state-direct-identity-probe-001.
+
+Verified result
+The complete publication021 candidate fails its proposed universal NONCONSTANT
+FORMAL identity at X7. Producer and independent checker both obtain
+  (L-B)(u) - (L-B)(0) = 34826 modulo65537,
+where u_n=2n+1 for all27 formal variables and the baseline sets all27 tozero,
+includingu1. All relevant rational reductions were checked at the fixedprime.
+This is an exact finite counterexample to that fixed formal identity. It does
+not refute RH, an arithmetic-only inequality, the whole operator grammar, or
+every possible proof using these ideas. No actual Mobius signs were substituted.
+
+The independently verified exact constraint is a*v=-3130575 in the original
+1957 coordinates, where a_j=column_j(u)-column_j(0). It has1948 nonzero entries.
+Zero coordinates are0,1592,1593,1594,1595,1596,1597,1717,1837: the constant square,
+five constant slacks and three unit-unit Gram positions. Its exact coefficients
+are saved in publication-023/constraint.json. The modular candidate dot is45912,
+the right-hand side reduces to15201, and15201-45912=34826 modulo65537.
+The target values are-3127439 and3136; body values reduce to44309 and63934;
+residuals39565 and4739 differ by34826. These are checked output values, not a
+floating-point tolerance or an extrapolation from sampled horizons.
+Changing scalar budget constants alone cannot repair this nonconstant defect:
+the baseline difference removes those constants.
+
+Implementation change
+primitive_state_direct_identity_probe.py evaluates the complete source directly
+in QxQ. Each component is ordinary exact evaluation at one assignment. Products
+are evaluated before subtracting baselines, preserving constant cross terms.
+It keeps all366square groups,613signed relation groups,360original upper-Gram
+columns and the five zero slack columns. It retains every arithmetic domain,
+factor predicate, exact fractional root cutoff and44factor-block ordering.
+Primitive-state contributions use suffix aggregation. No symbolic source or
+column polynomial, solver, Python source tracing, or cryptographic digest is built.
+
+check_primitive_state_direct_identity_probe.py instead uses two scalar passes,
+with complete forward primitive sums reused across all15state atoms. It checks
+all1957 assigned values AND all1957 baseline values, the exact sparse row,
+target, regional states, factor witnesses, coverage and modular residual.
+Signed relation pairs remain interleaved; offdiagonal matrix entries counttwice;
+K remains child-minus4parent. Unit, norm1 and coprime(1,1) remain distinct formal
+relations, and cell multipliers retainu1+1. These details were reviewed separately
+in primitive_state_direct_identity_probe_soundness_v1.txt.
+Independent computational replay and tiny symbolic-reference tests are evidence
+for this finite source evaluation, not a universal compiler correctness theorem.
+
+Protocol and validation
+The candidate, X7/H27, q6/C32, prime65537, assignment and baseline were unchanged
+from the incomplete publication022 plan. Publication022 made no candidate
+evaluation. This job changed the representation, not the candidate or test point,
+and used a new declared combined work budget. No adaptive retry or reduced source.
+The first combined37-test suite found three run-specification mismatches; after
+fixing the two predecessor metadata fields, allfive whole-audit tests passed.
+The frozen prescore suite then passed all37 tests in4.730s. This includes exact
+1957-coordinate comparison with a tiny symbolic reference, formal primitive
+distinctions, baseline products, root cuts, resource stops, modified-result
+rejection and no universal promotion from zero or incomplete output.
+
+Measured resources
+Producer:4.828143s wall,4.787138s CPU,28824KiB peakRSS (about28MiB), one thread.
+It charged40693165 work-proxy units and861394 cumulative scalar cells.
+Independent checker:7.041495s wall,7.041074s CPU,22640KiB peakRSS (about22MiB).
+It charged40838460 work-proxy units and831093 cumulative scalar cells; separate
+archive I/O cost38832 proxy units for1242306bytes. Maximum rational bit size712
+includes the saved candidate coefficients. Both stages stayed within the6GiB
+memory and3600s cooperative boundaries. No resource failure occurred.
+Publication022 had stopped before evaluation after102.3s at its symbolic-source
+line-event cap and about200MiB. The new run completes; old and new work counters
+use different metrics and must not be compared as arithmetic-operation speedups.
+
+One450m fixed reservation covers50m preparation/tests/I/O,200m producer and200m
+independent replay. The two measured evaluation proxies total81531625; this does
+not replace the450m declared reservation or count preparation asfree. Each pass
+includes the conservative1000H^3+10000 domain-control reservation plus explicit
+rational arithmetic. Actual wall time, proxy charges and reservations are distinct.
+The source snapshot contains76files/707239bytes; candidate193522bytes;
+plan195275bytes; probe130188bytes; independent review320511bytes. No hashes or
+precautionary archive sweeps were introduced. Prior published/frozen files remain
+immutable. The latest pointer now uses ordinary paths and scoped result fields.
+
+Next research action
+Feed the licensed row into the next exact affine search, while preserving the
+already checked finite equations and the original positivity/storage constraints.
+The row has the required relation-pair antisymmetry and storage transport form
+by construction; verify these when projecting it to the existing coordinate chart.
+Project the actual rational row through the existing finite affine basis, check
+consistency exactly, and search its remaining free directions. Do not merely
+retest or optimize the rejected coefficient vector without enforcing the new row.
+No such affine projection or new cone search was performed in this job.
+
+This X7/assignment case is now discovery data. After it guides a new candidate,
+use a separately fixed fresh evaluation case; satisfying a learned row is not
+held-out evidence and never proves an all-scale identity. The row is necessary,
+not sufficient. Finite cone feasibility, a universal nonconstant identity, the
+uniform scalar bound and the ordinary-zeta/RH bridge remain unresolved.
+The original research goal stays active; no qualifying all-scale operator or RH
+proof has been found.

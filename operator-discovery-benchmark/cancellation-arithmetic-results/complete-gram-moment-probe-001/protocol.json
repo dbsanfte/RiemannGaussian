@@ -1,0 +1,247 @@
+{
+  "RH_proved": false,
+  "conditioning": "complete prior atom union fixed before inspecting its cross moments",
+  "global_bound_proved": false,
+  "gram_groups": {
+    "full_child": {
+      "atoms": [
+        "prefix",
+        "half",
+        "even",
+        "mod3one",
+        "prime",
+        {
+          "power": -1,
+          "theta": "1/3"
+        },
+        {
+          "power": 0,
+          "theta": "1/3"
+        },
+        {
+          "power": 1,
+          "theta": "1/3"
+        },
+        {
+          "power": -1,
+          "theta": "1/2"
+        },
+        {
+          "power": 0,
+          "theta": "1/2"
+        },
+        {
+          "power": 1,
+          "theta": "1/2"
+        },
+        {
+          "power": -1,
+          "theta": "2/3"
+        },
+        {
+          "power": 0,
+          "theta": "2/3"
+        },
+        {
+          "power": 1,
+          "theta": "2/3"
+        }
+      ],
+      "dimension": 14,
+      "kind": "complete_arithmetic",
+      "normalizer": "unit_constant",
+      "region": "child"
+    },
+    "full_parent": {
+      "atoms": [
+        "prefix",
+        "half",
+        "even",
+        "mod3one",
+        "prime",
+        {
+          "power": -1,
+          "theta": "1/3"
+        },
+        {
+          "power": 0,
+          "theta": "1/3"
+        },
+        {
+          "power": 1,
+          "theta": "1/3"
+        },
+        {
+          "power": -1,
+          "theta": "1/2"
+        },
+        {
+          "power": 0,
+          "theta": "1/2"
+        },
+        {
+          "power": 1,
+          "theta": "1/2"
+        },
+        {
+          "power": -1,
+          "theta": "2/3"
+        },
+        {
+          "power": 0,
+          "theta": "2/3"
+        },
+        {
+          "power": 1,
+          "theta": "2/3"
+        }
+      ],
+      "dimension": 14,
+      "kind": "complete_arithmetic",
+      "normalizer": "unit_constant",
+      "region": "parent"
+    }
+  },
+  "gram_specs": {
+    "full_child": 14,
+    "full_parent": 14
+  },
+  "language": {
+    "atoms": [
+      "prefix",
+      "half",
+      "even",
+      "mod3one",
+      "prime",
+      {
+        "power": -1,
+        "theta": "1/3"
+      },
+      {
+        "power": 0,
+        "theta": "1/3"
+      },
+      {
+        "power": 1,
+        "theta": "1/3"
+      },
+      {
+        "power": -1,
+        "theta": "1/2"
+      },
+      {
+        "power": 0,
+        "theta": "1/2"
+      },
+      {
+        "power": 1,
+        "theta": "1/2"
+      },
+      {
+        "power": -1,
+        "theta": "2/3"
+      },
+      {
+        "power": 0,
+        "theta": "2/3"
+      },
+      {
+        "power": 1,
+        "theta": "2/3"
+      }
+    ],
+    "auxiliary_blocks": "empty for every Gram group",
+    "constant_vector": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2"
+    ],
+    "dimension": 14,
+    "matrix_sharing": "one exact PSD matrix per region, shared across every t and X",
+    "regions": [
+      "parent",
+      "child"
+    ],
+    "scalar_language": {
+      "normalizer": "unit_constant",
+      "partition": "d<=floor(t^theta)",
+      "powers": [
+        -1,
+        0,
+        1
+      ],
+      "regions": [
+        "parent",
+        "child"
+      ],
+      "relation_forms": [
+        "one",
+        "prefix",
+        "contrast",
+        "normalization"
+      ],
+      "source_domain": "all 1<=a<=t, d|a; inside and complete complement",
+      "source_scale": "N=4X-1",
+      "square_forms": [
+        "contrast",
+        "prefix_plus",
+        "prefix_minus"
+      ],
+      "thetas": [
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "version": "divisor-cells-v1",
+      "weights": "a^power"
+    },
+    "selection": "union of every prior regional atom; identify shared prefix; retain every pair",
+    "version": "complete-regional-grams-v1"
+  },
+  "larger_cone_feasibility_proved": false,
+  "missing_policy": "unknown; no implicit zero moments",
+  "no_new_float_search": true,
+  "numerical_response_inputs": false,
+  "parallel": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 6442450944,
+    "timeout_seconds": 600,
+    "worker_memory_bytes": 6442450944,
+    "workers": 1
+  },
+  "program": {
+    "C": 32,
+    "allow_constant_slack": true,
+    "claim": "critical",
+    "constraint": "zero_cubic",
+    "dictionary_mode": "extended",
+    "q": 6,
+    "target": "mu"
+  },
+  "resource_scope": "external 6 GiB and 600 seconds; source builder and PSD checker retain their existing local caps; full moment expansion has no global internal operation cap",
+  "scales": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "schema": 1,
+  "tests": [
+    "test_check_cancellation_complete_gram_program",
+    "test_check_complete_gram_moment_probe",
+    "test_run_complete_gram_moment_probe",
+    "test_check_complete_gram_probe_run"
+  ]
+}

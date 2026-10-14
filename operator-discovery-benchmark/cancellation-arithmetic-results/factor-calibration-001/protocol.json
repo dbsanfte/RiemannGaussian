@@ -1,0 +1,125 @@
+{
+  "RH_proved": false,
+  "cutoff_coefficient": "3/2",
+  "expected_test_count": 10,
+  "fixtures": [
+    {
+      "X": 8,
+      "coprime": false,
+      "horizon": 16,
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "X": 8,
+      "coprime": true,
+      "horizon": 16,
+      "q": 2,
+      "target": "mu"
+    },
+    {
+      "X": 27,
+      "coprime": false,
+      "horizon": 54,
+      "q": 3,
+      "target": "mu"
+    },
+    {
+      "X": 27,
+      "coprime": true,
+      "horizon": 54,
+      "q": 3,
+      "target": "mu"
+    },
+    {
+      "X": 64,
+      "coprime": false,
+      "horizon": 128,
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "X": 64,
+      "coprime": true,
+      "horizon": 128,
+      "q": 6,
+      "target": "mu"
+    }
+  ],
+  "global_bound_proved": false,
+  "kernel": [
+    {
+      "a_power": 1,
+      "b_power": 0,
+      "coefficient": "3/5",
+      "x_power": 0
+    },
+    {
+      "a_power": 0,
+      "b_power": 1,
+      "coefficient": "-2/7",
+      "x_power": 0
+    }
+  ],
+  "multiplier": [
+    {
+      "c": "1",
+      "m": [
+        1
+      ]
+    },
+    {
+      "c": "-1",
+      "m": [
+        2
+      ]
+    }
+  ],
+  "parent_source_seal": {
+    "path": "cancellation-arithmetic-results/pilot-001/source_seal.json",
+    "sha256": "4884077a770b0b23efd89b7bcf6fd47824220d62e521832b1ce21ca2340fba04"
+  },
+  "schema": 1,
+  "scope": "SUPPLIED exact factor identity calibration; no discovery or solver scores",
+  "source_sha256": {
+    "arithmetic_cycle_language.py": "08524016771c787269ebbf811ec52275261d1d51bfd6ed6096c9550db6723688",
+    "arithmetic_cycle_synthesis.py": "c4985ad6bc49415622f6ede2441fc28157dcb9dde4da6e4d13374a6e6ff05204",
+    "cancellation_arithmetic_language.py": "9b598c772b9d4159768f7a48371a06ab8a53f2e4a5cde3866b049618d27d37b9",
+    "cancellation_arithmetic_synthesis.py": "f123a142701a01985e57060208d8933642fa1068871f795149128861a9a02111",
+    "cancellation_arithmetic_templates.py": "c06877b9b03c18bd7e4965c71632f9899680a06641d0ac0781a4e0b32da2c456",
+    "cancellation_budget.py": "7b0892d18865f2755f0a6d3b19365f652c680b699c8065b598301bd143db62d8",
+    "cancellation_cubic_gate.py": "0c8773367650e80cba67fa224df4be27eed9c4f8084e5e29ec548ac5ad1b3bd4",
+    "cancellation_cubic_gate_independent_review.txt": "806cb6608861e9ef72150150b0bb35e85beaa77745348c05ba6dcf6747ddc92f",
+    "cancellation_factor_block_groups.py": "8eb1ab9310ae42f35fda8cdd9a9ddf573b151be5aa3b546c3e34cc8f02ea4f13",
+    "cancellation_factor_blocks.py": "364c5443fc9c02d8f84798f725f69b5e9253404f88d706bee7d52a8d271fd0c2",
+    "cancellation_search_analytic_scope.txt": "1745c56ba8523e7b1d6f3c916705f496a05e12edc31ed3f945fa5c622577bb2b",
+    "check_arithmetic_cycle_certificate.py": "a2efbe5e421bbe0d15e30b6be513d9fa09607abae420c16f3f9667067b5bf7e8",
+    "check_cancellation_arithmetic_run.py": "b23c0f244dfaa7d3cc1907366c4aa9853ca76c7fdcc08adc14a4d1f113f5e6ef",
+    "check_cancellation_factor_blocks.py": "fa483c714c5412dcff6b91940ec2651f09dc2b1b45e0c4f2d13f3a79d5f8e004",
+    "check_grouped_arithmetic.py": "760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e",
+    "check_grouped_arithmetic_run.py": "c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f",
+    "critical_defect_proof.txt": "14da66b203eb60e6b3f6d20e8bec0783e6a0a7b234f0f40bbe3f8d61c3f858c3",
+    "grouped_arithmetic_language.py": "aafa824b462477852df9ceca1cdf7fb153b17ec4184575e84030dac07ac9c9df",
+    "grouped_arithmetic_mu_cubic_budget_review.txt": "5858b1fdfd609d2fd2dde8167f5e6f5e05dee9230b4f0ee9c0ee3299e3002a5d",
+    "grouped_arithmetic_proof.txt": "0bcec50e20add12beb28f346e35ee31eb8a58ab407d6f18d91012a18be1a8fd0",
+    "grouped_arithmetic_synthesis.py": "d9165d156dee1d57b7d6cd4901c319792e3fe4908369e4f80a8729aeff6777ad",
+    "grouped_arithmetic_templates.py": "9869beef394818011885fa34521467b86ccb530d3c8bcca654906ccaed4f2b8b",
+    "run_cancellation_arithmetic.py": "fc2569a73ad5bf93657e708ad1d0430b407f28c4ba0e679563bf218903a08b0f",
+    "run_cancellation_factor_calibration.py": "671bcd889233f6f4e70e8ba9048ec7469429a62d3789785c5201448c32b6e41f",
+    "run_grouped_arithmetic.py": "de637d735bebe047591cd6b6fcbe15e8c6c0bd1107adc556d12984e4f49e1a5b",
+    "test_cancellation_arithmetic_synthesis.py": "351e5078e2a074dd6ec5073f5df657d4d1383a96553e67cc5be89e422d8f6eeb",
+    "test_cancellation_arithmetic_templates.py": "204fd4f44c3774042cb483ccb564308f939592cf9e025b86905c6bce8c6a9a0b",
+    "test_cancellation_budget.py": "59d199f149a3f8f8b6f164e7b8ecdd1a64102f61d8f81ba1eede781b51b47cc2",
+    "test_cancellation_cubic_gate.py": "49923b13ec31d90c32ce7b883e94358f4c9ca5d26ac94d1363de433bec241f93",
+    "test_cancellation_factor_block_groups.py": "ec394c6512a3d642504098ce50b28dc7b24431fd123da6c1d387c50e94ff670e",
+    "test_cancellation_factor_blocks.py": "6f7313447ceb7bc4818ab5a0ba4320904bc302e178d1279d6104e5f3b8e04879",
+    "test_check_cancellation_arithmetic_run.py": "e7e0b5603ca9b8f7baa21da180a6f91ecca80fec7d064cf61feeb7cb9c1e2287",
+    "test_check_cancellation_factor_blocks.py": "f72bdb582d976755acca542681e3002862af01f5bb5f9f3ccd70d1ee29a1b4c0",
+    "test_run_cancellation_arithmetic.py": "cd239c195b8bff15c6e06cda8960dedf2ff7eef7566cb3b95b62cddc5988470a"
+  },
+  "tests": [
+    "test_cancellation_factor_blocks",
+    "test_check_cancellation_factor_blocks",
+    "test_cancellation_factor_block_groups"
+  ]
+}

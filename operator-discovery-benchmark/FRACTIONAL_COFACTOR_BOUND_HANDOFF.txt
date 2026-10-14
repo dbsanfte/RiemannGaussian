@@ -1,0 +1,80 @@
+Stage036 completed: adaptive exponents with exact recovery pricing
+
+Result
+fractional-cofactor-bound-results/pilot-001/report.json
+Status ADAPTIVE_FRACTIONAL_COMPONENT_BOUNDS_VERIFIED_JOINED_BOUND_OPEN.
+128 distinct rational exponents,512 state/exponent constructions, all admitted
+by the independent source-bound checker. Denominators1..28 and257 occurred.
+The old accepted033 full signed obligation and035 results are unchanged.
+No full-core/RH estimate has been proved. Do not rerun either completed study.
+
+Language change
+adaptive_rational_exponents.next_batch enumerates reduced rationals by height
+|numerator|+denominator within any exact closed finite rational interval. Each
+batch has work/candidate limits and a transparent resumable cursor; there is
+no semantic denominator ceiling. Explicit requested rationals are separately
+metered and deduplicated against later ordinary enumeration. Larger inputs
+remain queued if their parse/bit work exceeds the current call's budget.
+Signed intervals, normalization, pause/resume and large requested denominators
+were tested. No hashes or old fractional/search imports are used.
+
+Factories distinguish coefficient_twist from signed_power; the latter also
+has an adapter to the existing rational-power AST. Signed powers are not
+ordinary even roots of negative values or Dirichlet powers. Their construction
+alone carries no estimate. The existing rational-power language was already
+semantically general; the new module broadens actual search scheduling.
+
+The proved pilot uses h_gamma(n)=n^-gamma*h(n), gamma>=0, on every035generated
+state. This is a genuinely changed coefficient operator. Merely expressing
+the same source in q=p^-1/12 instead of p^-1/6 would not add candidates.
+Prime exponents are stored as exact Fractions, avoiding a large common-root
+polynomial lattice. All valuation-e transfers acquire p^(-gamma*e), with
+the unit, coprime-cofactor domain and complete valuation tail retained.
+
+What the search proved and what it rejected
+Generic power summation bounds every partial weighted rough prefix, and the
+035prime-only support/sign/count proof gives cofinal lower bounds where valid.
+Undoing the weight is checked through the complete signed Abel identity at
+the same cutoff. It requires every partial prefix; a block endpoint estimate
+cannot silently supply that input. Recovery restores the missing X^gamma cost.
+
+89 of the128weighted versions of the original rough component have a proved
+subpower-or-better energy estimate. ZERO improve its unweighted energy power
+after recovery; no state among all512constructions improves that power either.
+Example: gamma=1/5 gives weighted energy O(X^-1/15), yet signed Abel recovery
+returns exponent1/3 for the original rough component. Gamma=1/257 yields
+weighted exponent251/771 and again recovered exponent1/3. No numerical slope
+or manually guessed winning exponent is involved.
+
+This limitation applies to the current integer-sum/Abel proof family. For a
+nonzero prime profile with leading exponent r>=0, its weighted prefix exponent
+is max(1-r-gamma,0). Recovery has exponent
+ max(1-r-gamma,0)+gamma=max(1-r,gamma)>=max(1-r,0).
+Thus more pure weights cannot improve its power within this provider. Mixed
+fractional potentials, correlations and other proof mechanisms are not refuted.
+In particular this is not an obstruction to a full joined arithmetic bound.
+
+Execution and verification
+Four resumed batches of32exponents on[0,1],100000work per batch, with explicit
+first request1/257. Cursor after128candidates: height29,offset34,818ordinary
+pairs scanned; ordinary heights through28 complete, interval not exhausted.
+The early1/257admission remains in the cursor to prevent a later duplicate.
+No arithmetic archive or old experiment was rerun. Exact035source-law
+verification was reused as an independently checked premise for the new rules.
+
+Production exited0 in0.148s. Search102400proxy operations, enumeration10209,
+checker13230. Reported process high-water RSS704032KiB;16GiB cap.
+All26new distinct tests passed once: enumerator6, producer4, checker16.
+Enumeration development173498proxy operations; checker development58878.
+Producer tests report wall time rather than an inclusive proxy count. No
+denominator restriction was disguised as a mathematical obstruction; checker
+rational-size guards remain explicit resource limits.
+
+Next work, preserving the user's main concern
+Use fractional-cofactor-bound-results/pilot-001/next_search_input.json. It keeps
+the exact035joined target/decomposition and generated state programs, adds the
+adaptive exponent cursor and typed productions, and retains all root payments
+as false. Need a coupled scale/cutoff construction with a proved recurrence or
+independently priced endpoint. Do not spend another run tuning isolated weights
+whose recovery has already consumed their exponent gain. The detector still
+has not demonstrated autonomous closure of the hard joint signed bound.

@@ -1,0 +1,89 @@
+086 compatible artificial Boolean witness development receipt, 2026-10-11
+
+New implementation: mobius_bank_witness_086.py.
+New tests: test_mobius_bank_witness_086.py.
+Machine receipt: mobius_bank_witness_086_development.json.
+Completed mixed-zero sources and all 085/earlier sources, runs and snapshots
+were kept unchanged. No Git, content digest, unknown actual Mobius-sign query,
+or full scientific run was performed.
+
+API: solve_model(model,bank,time_limit=10,attempts=4,seed=20261011086,
+node_limit=1000,local_steps=4), with search options keyword-only; also
+solve(program,bank,u,**options) and certificate(model,bank,signs).
+The model is the existing complete anchored Boolean geometry, ordered as
+anchor followed by every squarefree composite. The root-owned typed bank
+provides complete exact integer columns through integer_column. The frozen
+full projected remainder is reconstructed by mixed.original_remainder.
+Only anchor1 and the bank's known arithmetic geometry enter witness search.
+
+For a bank numerator column c, a composite binary variable xi=(si+1)/2 obeys
+sum(i>0) ci xi=(sum(i>0)ci-c0)/2. Denominators cancel from this homogeneous
+constraint. Exact parity, gcd divisibility, zero-row and binary interval
+checks precede numerical optimization and provide literal receipts if an
+integer contradiction is detected. A genuinely justified arithmetic bank
+has the actual anchored Mobius vector as a feasible witness, so a claimed
+contradiction for such a bank is an implementation inconsistency requiring
+audit. Absence of an elementary contradiction proves no feasibility.
+
+Numerical integer rows are gcd-reduced and all row absolute sums plus rhs
+are bounded below2^50 before lossless double conversion. Fixed MILP objectives
+maximize gradients R*s from all-plus, top and bottom eigen-sign starts and a
+seeded random start; further requested attempts use predeclared seeded random
+starts. The floating remainder is rescaled before eigen/gradient proposals to
+avoid overflow. Default search has four calls, each at most ten seconds and
+1000 requested branch nodes. HiGHS receives threads=1 explicitly. SciPy's
+warning that this option is passed through verbatim is captured per call.
+Numerical work requires OPENBLAS_NUM_THREADS=1 and OMP_NUM_THREADS=1 before
+process launch; other native thread environment entries must be unset or1.
+
+The branch-node cap may decrease under the model's cumulative charged-work
+budget. The common cap and prospective per-node work estimate are recorded.
+Dimension E<=512, bank size<=16, integer coefficient/denominator bits<=4096,
+cumulative exact rational bits, dense memory, exact quadratic work, and the
+full eigen-start work all receive prospective gates. Charged work is a
+conservative resource estimate rather than an exact executed-instruction
+count. The inherited memory budget remains4GiB per worker.
+
+Each numerical proposal is rounded to literal binary signs, then checked
+against every complete exact integer bank column and anchor1. Numerical
+feasibility tolerances and tiny residuals never admit a witness. Compatible
+vectors receive the full exact rational quadratic evaluation s^T R s and
+certificate keys squarefree_count, signs, lower_bound. Optional improving
+flips change zero constraint columns or identical-column opposite-sign pairs;
+the anchor is never flipped. Exact compatibility is rechecked after each move.
+The already admitted vector survives local-search failures. All candidates,
+start receipts, solver statuses, warnings, local moves and failures are kept.
+The best lower bound is retained even if negative. When no compatible vector
+is admitted, certificate=None and status NO_EXACT_COMPATIBLE_WITNESS_FOUND
+assert no bound. HiGHS numerical infeasibility is explicitly unproved.
+
+The default successful status is EXACT_COMPATIBLE_BANK_WITNESS_PROPOSAL.
+An exact elementary obstruction instead yields EXACT_BOOLEAN_BANK_INFEASIBLE
+with literal proof details, for audit rather than scientific interpretation
+when the bank is a theorem-backed arithmetic bank. No global quadratic
+maximum, actual signed-drift lower bound, all-scale obstruction or RH result
+is inferred from these finite artificial witnesses.
+
+Validation command:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B -m unittest
+test_mobius_bank_witness_086 -v
+
+Development test attempts were preserved in the machine receipt. First run:
+ten tests, nine passed and one test instrumentation error,0.082seconds.
+The error was KeyError('node_limit'): SciPy had consumed the options dictionary
+before the test inspected the mocked call. The test now snapshots options
+before delegation; producer forwarding did not need a correction. Second run:
+ten tests passed,0.103seconds. Final run: eleven tests passed,0.094seconds.
+
+Tests compare tiny exhaustive feasible Boolean sets and full quadratic maxima,
+independently admit every retained candidate with verify_lower, and prove that
+the binary equations match the independently reconstructed rational bank on
+every tiny Boolean vector. They cover a negative feasible incumbent through
+four RuntimeError failures; numerical infeasibility with no claimed proof;
+literal parity/gcd/range proof fixtures; exact pair/zero-column gains; rejected
+sign/value/count mutations; precision, denominator, dimension, work and native
+thread gates; forwarded options/warnings and deterministic schedules; empty
+geometry and a single anchor. Obstruction fixtures are explicitly synthetic
+test rows, not alleged inconsistent actual arithmetic banks. Tiny smoke runs
+also retained the exact negative bound -1/24 and matched the empty-bank tiny
+exhaustive maximum119/24. These are development checks only.

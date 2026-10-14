@@ -1,0 +1,67 @@
+FROZEN053: DIRECT SIGNED ARITHMETIC BOUND SEARCH
+
+Continue the OPEN051/052 centered-error objective. The new source is
+  T_P(N)=sum_j c_j A_alpha(q^jN)
+        =-sum_(d<=q^degree*N)mu(d)*(log d)^alpha*sum_j c_j floor(q^jN/d).
+Every integer prime and composite contribution is retained. Require P(q)=0,
+primitive integer coefficients, positive leading coefficient and nonzero
+constant coefficient. P(1)=0 is optional. This exactly cancels the unknown
+linear mean without evaluating or fitting its constant. Arbitrary locations
+of the other polynomial roots are allowed: the independently reviewed
+fractional-singularity argument proves all nonzero finite filters retain the
+conditional RH implication, even if their multiplier vanishes at a zero.
+
+Pilot language: all143 eligible polynomials onq2,3,5, degree1..3 and integer
+coefficients-6..6, combined with the5 independently selected051 exponents
+1/2,1/3,2/3,1/4,1/5. For each of715 words, propose concrete inequalities
+  |T_P(N)|/alpha <= C sqrt(N)(1+log(N))^eta, EVERYintegerN>=2,
+with eta0,1/4,1/2,1,2. C is the smallest declared power2^-8..2^4 that encloses
+EVERY training interval, otherwise that bound template is rejected. This is
+3575 bound candidates. Dividing byalpha prevents trivial small-alpha shrink;
+primitive coefficients prevent arbitrary scalar rescaling. Constants are
+coarse finite choices, not a continuously tuned proof substitute.
+
+Training: everyN2..256, then384,512,768,1024 (259scales).
+Final:263,389,521,769,1021,1531,2053,3079,4093,6143,8191 (11freshscales).
+Freeze this protocol, grammar and all19 new sources/receipts before source
+construction. Build all5 training sources to128000 with3workers; each is
+independently checked in full before use. The numeric search imports no
+analytic proof provider. Save its6-word archive before proof attempts/final
+scores. Rank lower logarithmic exponent, coarseC, then expression complexity;
+reserve alpha and filter-shape diversity. Do not refit from final results.
+
+The source producer uses an exact prime sieve and directed Arb128/192/256
+floor agreement for2^32(log d)^alpha. Integer prefixes retain the complete
+one-unit uncertainty of each nonzero atom. Grouped integer quotients give
+A(N) enclosures inO(sqrtN), shared by every word. A separate checker derives
+mu from its divisor-sum recurrence and rebuilds every atom via
+exp(alpha*log(logd)) at192/256/384bits. Every array entry is compared exactly.
+NumPy accumulators have analytic int64 bounds before allocation/arithmetic.
+
+Only selected words may extend source horizons. Both producer and checker
+reuse old atoms exactly and evaluate only new suffixes. The integer mu sieve
+may be recomputed; retained prefixes must agree. No successful prior source
+study or old test suite is replayed. Two source constructions computing the
+same formula by independent algorithms are the required new validation.
+
+At all66 selected fresh word/scale pairs, independent direct joint floor
+weights are summed BEFORE taking magnitudes. P(q)=0 gives an integer floor
+weight bound bysum|c_j|, used to pay int64 safety. Their exact source intervals
+must lie inside producer combinations of A intervals. Target comparisons use
+independent192/256bit Arb enclosures. All66 checks run, even if some fixed
+bounds are refuted. Refutation concerns the fixed proposed bound, not RH.
+
+New053 conditional proof rules include complete finite-head Mellin terms,
+integer-to-real interpolation and the noninteger Taylor-order contradiction.
+They leave the actual all-integer signed inequality OPEN. Finite passes,
+positiveK, polynomial main-term annihilation and the RH implication cannot
+pay that premise. A fitted largerC after failure is not a new cancellation
+mechanism. No converse or original floor-energy bound is asserted.
+
+Resource limits:16GiB aggregate;3process workers; source horizon<=2m;
+4GiB producer prospective build cap,30bn source proxy operations/7200seconds
+per task; checker200bn/7200seconds. The pilot uses32-bit dyadic atoms and
+declared int64 preflights. Source arrays use ordinary NumPy binary format,
+no artifact hashes. Preserve136 prior frozen files plus19 new053 files by
+literal byte comparisons. One source-free grammar metadata preflight used
+259200 proxy operations, with no actual source values or candidate scores.

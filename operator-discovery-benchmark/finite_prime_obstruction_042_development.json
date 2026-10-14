@@ -1,0 +1,20 @@
+{
+  "schema": "finite-prime-obstruction-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.04161487001692876,
+      "operations": 80359,
+      "peak_integer_bits": 3855,
+      "source_exposure": "synthetic injected rational locals and formal exact certificates only"
+    }
+  ],
+  "actual_source_generated": false,
+  "actual_normalization_evaluated": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "cumulative_operations": 80359
+}

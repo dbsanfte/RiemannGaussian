@@ -1,0 +1,229 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_globally_proved_relations": 0,
+  "actual_arithmetic_new_bound_payments": 0,
+  "arithmetic_branch": "direct complete core f; inherited Z033 and g=f-e unchanged",
+  "arithmetic_results": [
+    {
+      "base": 2,
+      "bound_proved": false,
+      "source_queries": 48,
+      "states": 10,
+      "status": "state_dimension_limit",
+      "unresolved_section": [
+        8,
+        6
+      ]
+    },
+    {
+      "base": 3,
+      "bound_proved": false,
+      "source_queries": 61,
+      "states": 10,
+      "status": "state_dimension_limit",
+      "unresolved_section": [
+        9,
+        2
+      ]
+    }
+  ],
+  "benchmark_designer_knows_grammar": true,
+  "benchmark_is_evidence_of_RH_probability": false,
+  "benchmark_results": [
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "0",
+      "counterexamples": 0,
+      "id": "challenge-001",
+      "source_queries": 88,
+      "states": 2,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "1/2",
+      "counterexamples": 0,
+      "id": "challenge-002",
+      "source_queries": 90,
+      "states": 2,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "5/6",
+      "counterexamples": 0,
+      "id": "challenge-003",
+      "source_queries": 98,
+      "states": 4,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "0",
+      "counterexamples": 0,
+      "id": "challenge-004",
+      "source_queries": 59,
+      "states": 2,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": null,
+      "counterexamples": 5,
+      "id": "challenge-005",
+      "source_queries": 244,
+      "states": 6,
+      "status": "resource_limit",
+      "verified": false
+    },
+    {
+      "ablation_alpha": "1",
+      "ablation_status": "certificate_proposed",
+      "alpha": "1",
+      "counterexamples": 0,
+      "id": "challenge-006",
+      "source_queries": 53,
+      "states": 1,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": "1",
+      "ablation_status": "certificate_proposed",
+      "alpha": "1",
+      "counterexamples": 0,
+      "id": "challenge-007",
+      "source_queries": 38,
+      "states": 1,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "2/3",
+      "counterexamples": 0,
+      "id": "challenge-008",
+      "source_queries": 160,
+      "states": 4,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "2/3",
+      "counterexamples": 0,
+      "id": "challenge-009",
+      "source_queries": 59,
+      "states": 2,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "1/2",
+      "counterexamples": 0,
+      "id": "challenge-010",
+      "source_queries": 58,
+      "states": 2,
+      "status": "certificate_proposed",
+      "verified": true
+    },
+    {
+      "ablation_alpha": null,
+      "ablation_status": "state_dimension_limit",
+      "alpha": "1/2",
+      "counterexamples": 0,
+      "id": "challenge-011",
+      "source_queries": 99,
+      "states": 4,
+      "status": "certificate_proposed",
+      "verified": true
+    }
+  ],
+  "current_joint_remainder_numerically_isolated": false,
+  "development_receipts": {
+    "check_multiscale_bound_discovery_development.json": {
+      "checker_imports_producer": false,
+      "edits_stopped": true,
+      "limits": {
+        "address_space_bytes": 805306368,
+        "cpu_seconds": 180,
+        "operations": 50000000,
+        "wrapper_seconds": 190
+      },
+      "old_suites_run": 0,
+      "operations": 5482232,
+      "owner": "check_multiscale_bound_discovery",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_multiscale_bound_discovery"
+          ],
+          "elapsed_seconds": 26.135883300972637,
+          "operations": 5482232,
+          "peak_rss_KiB": 25340,
+          "returncode": 0,
+          "stderr": "test_actual_counterexample_has_correct_index_values (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_alternating_target_quotient_discards_unobserved_growth (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_complete_quadratic_cross_cost_is_paid (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_core_numeric_identity_and_flags_never_supply_a_proof (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_endpoint_only_cancellation_does_not_bound_auxiliary_growth (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_fractional_one_sixth_bound_covers_nonaligned_prefixes (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_fractional_one_third_bound_pays_every_phase (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_general_base_and_nonscalar_seed_bound (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_long_transient_fit_is_not_global_closure (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_metric_must_be_strictly_positive_and_symmetric (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_projection_recovery_and_commutation_are_mandatory (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_reachable_subspace_accepts_true_latent_alias (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_redundant_projection_rows_remain_sound (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_row_envelope_and_complete_source_schema_are_required (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_state_domains_and_bound_parameters_fail_closed (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_unit_impulse_cannot_be_erased (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_zero_psd_pivot_cannot_hide_cross_terms (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_zero_source_closure_uses_zero_reachable_space (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 26.062s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_multiscale_bound_discovery operations=5482232 elapsed_seconds=26.062815\n",
+          "tests": 18,
+          "work_accounting": "reported charged operations"
+        }
+      ],
+      "source_observations": 0,
+      "test_count": 18
+    },
+    "multiscale_bound_discovery_development.json": {
+      "edits_stopped": true,
+      "elapsed_seconds": 0.03311044996371493,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "module": "multiscale_bound_discovery",
+      "operations": 24614,
+      "post_suite_edit": "Added observation-value logging to retained search results; proof and search logic unchanged.",
+      "tests": 8
+    },
+    "multiscale_bound_sources_development.json": {
+      "module": "test_multiscale_bound_sources",
+      "operations": 1199,
+      "runs": [
+        {
+          "elapsed_seconds": 0.008711061032954603,
+          "errors": 0,
+          "failures": 0,
+          "operations": 1199,
+          "peak_cells": 4121,
+          "returncode": 0,
+          "tests": 7
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 6.507095884997398,
+  "new_arithmetic_validation_range": false,
+  "peak_rss_kib": 704032,
+  "search_operations": 615560,
+  "source_and_checker_operations": 12841805,
+  "stage033_obligations_retained": true,
+  "status": "CAPABILITY_TEST_COMPLETE_ARITHMETIC_BOUND_OPEN",
+  "verified_benchmark_bounds": 10,
+  "verified_benchmark_sublinear_bounds": 8,
+  "whole_signed_bound_proved": false
+}

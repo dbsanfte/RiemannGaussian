@@ -1,0 +1,235 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 2744983316,
+  "distinct_training_vectors": 720,
+  "drift_training_counts": {
+    "ceil_comparisons": 3984,
+    "max_power_bits": 508,
+    "operations": 52043158,
+    "rational_operations": 632184,
+    "root_cache_hits": 439202,
+    "root_comparisons": 436036,
+    "total_power_bit_estimates": 2617572
+  },
+  "elapsed_seconds": 335.839277097024,
+  "final_recurrence_pairs": 12,
+  "final_source_operations": 2484647185,
+  "final_status_counts": {
+    "refuted_at_this_pair": 0,
+    "unresolved_interval": 0,
+    "verified_at_this_pair": 12
+  },
+  "finite_training_matches": 15003,
+  "formulas": 24,
+  "independent_source_constructions": 18,
+  "induction_parameter_rejections": 11664,
+  "largest_individual_worker_rss_kib": 568628,
+  "new_frozen_source_count": 18,
+  "noncollinear_training_matches": 13117,
+  "norm_certificates": 36,
+  "norm_checker_operations": 16436353253,
+  "norm_producer_operations": 3281218851,
+  "parent_peak_rss_kib": 473136,
+  "prime_checker_operations": 21416746,
+  "prime_compilation_counts": {
+    "cell_rows": 0,
+    "estimated_peak_bytes": 52637120,
+    "input_lattice_bits": 45,
+    "max_rational_bits": 579,
+    "operations": 28402470,
+    "program_columns": 93338,
+    "rational_operations": 305694,
+    "sieve_updates": 31436
+  },
+  "prime_training_counts": {
+    "cell_rows": 0,
+    "estimated_peak_bytes": 25148480,
+    "input_lattice_bits": 41,
+    "max_rational_bits": 202,
+    "operations": 219412932,
+    "program_columns": 1061448,
+    "rational_operations": 3442392,
+    "sieve_updates": 329712
+  },
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13
+  ],
+  "proof_gate_operations": {
+    "cutoff": 738,
+    "cutoff_checker": 0,
+    "drift": 5493,
+    "global_checker": 61347,
+    "global_rule": 77871,
+    "local": 411037,
+    "local_checker": 1995652
+  },
+  "proposed_arguments": 23328,
+  "proved_auxiliary_improvements": 0,
+  "rejected_bounds": 216,
+  "selected_arguments": [
+    {
+      "d": "-1",
+      "family": "prime_profile_023",
+      "id": "prime_argument_021735",
+      "prime": 3,
+      "request": {
+        "argument": {
+          "base": {
+            "minimum": 32
+          },
+          "gram": [
+            [
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "5"
+            ]
+          ],
+          "recurrence": {
+            "C": "1/8",
+            "forcing": "L_parent^-eta",
+            "parities": [
+              0,
+              1
+            ],
+            "rho": "1/4"
+          },
+          "state": "prime_split_H_A"
+        },
+        "original_forcing_b": "-1",
+        "prime": 3,
+        "rounding": {
+          "bits_multiplier": 4,
+          "drift": "round_each_exponential_before_signed_sum",
+          "kind": "dyadic_power_floor",
+          "product": "multiply_rounded_children_exactly",
+          "scale": "ceil_log2_N"
+        },
+        "source_recipe": {
+          "auxiliary": null,
+          "base": {
+            "a": "1",
+            "kind": "drift_mixture",
+            "terms": [
+              {
+                "rate": "1",
+                "weight": "3"
+              },
+              {
+                "rate": "2",
+                "weight": "-3"
+              },
+              {
+                "rate": "3",
+                "weight": "1"
+              }
+            ],
+            "theta": "6/11"
+          },
+          "id": "prime_profile_023"
+        },
+        "target": {
+          "A": "1/4",
+          "eta": "5/11"
+        }
+      },
+      "tau": "1"
+    },
+    {
+      "d": "-1",
+      "family": "prime_profile_024",
+      "id": "prime_argument_022706",
+      "prime": 3,
+      "request": {
+        "argument": {
+          "base": {
+            "minimum": 32
+          },
+          "gram": [
+            [
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "5"
+            ]
+          ],
+          "recurrence": {
+            "C": "1/16",
+            "forcing": "L_parent^-eta",
+            "parities": [
+              0,
+              1
+            ],
+            "rho": "1/4"
+          },
+          "state": "prime_split_H_A"
+        },
+        "original_forcing_b": "-1",
+        "prime": 3,
+        "rounding": {
+          "bits_multiplier": 4,
+          "drift": "round_each_exponential_before_signed_sum",
+          "kind": "dyadic_power_floor",
+          "product": "multiply_rounded_children_exactly",
+          "scale": "ceil_log2_N"
+        },
+        "source_recipe": {
+          "auxiliary": null,
+          "base": {
+            "a": "1",
+            "kind": "drift_mixture",
+            "terms": [
+              {
+                "rate": "1",
+                "weight": "4"
+              },
+              {
+                "rate": "2",
+                "weight": "-6"
+              },
+              {
+                "rate": "3",
+                "weight": "4"
+              },
+              {
+                "rate": "4",
+                "weight": "-1"
+              }
+            ],
+            "theta": "6/11"
+          },
+          "id": "prime_profile_024"
+        },
+        "target": {
+          "A": "1/4",
+          "eta": "5/11"
+        }
+      },
+      "tau": "1"
+    }
+  ],
+  "status": "PRIME_AUXILIARY_POTENTIALS_SEARCHED_UNIFORM_RECURRENCE_OPEN",
+  "theta_values": [
+    "2/3",
+    "3/5",
+    "4/7",
+    "5/8",
+    "5/9",
+    "6/11"
+  ],
+  "training_counts": {
+    "max_power_bits": 0,
+    "operations": 56876105591
+  },
+  "training_vector_cache_hits": 1224,
+  "uniform_signed_bound_proved": false
+}

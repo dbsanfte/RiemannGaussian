@@ -1,0 +1,290 @@
+Double-interleaved reversible circuits53 and59: exact kernels and open gate
+2026-10-09. New analytical review; frozen checker/sources/results unchanged.
+
+The only study artifact read is reversible-circuit-results/pilot-001/
+proof_queue.json, using its programs, certificates and obligations. No numerical
+response, source evaluation, test, score, hash or experimental table is used.
+These are the new circuit IDs53 and59, not identically numbered old potentials.
+
+Notation and the actual two programs
+------------------------------------
+M(n)=sum_{j<=n}mu(j), M(0)=0, mu the ACTUAL complete Mobius sequence. Write
+ rho(mu(m))=+1 unless mu(m)<0, in which case it is-1, including rho(mu(0))=1.
+On the actual three-valued source, rho(mu(m))=1+mu(m)-mu(m)^2. This is a unit
+sign, not mu itself and not a squarefree mask: squareful arguments give+1.
+
+For a prime assignment chi(p) in{+1,-1}, define its multiplicative Euler kernel
+ k_{alpha,chi}(p^e)=chi(p)^e*(alpha)_e/e!, k(1)=1,
+ (C_{alpha,chi}f)(n)=sum_{d|n}k_{alpha,chi}(d)f(n/d).
+Let S_s multiply a whole state by s(n). Prime assignments are extended through
+the Euler kernel; e.g chi(p^e) in the kernel means chi(p)^e, not reevaluation
+of a root formula at p^e. A whole-argument sign stage is a different operation.
+
+Define, for all primes p and positive integers n,
+ q(p)=(-1)^floor(sqrt(p)),
+ u(p)=rho(mu(floor(sqrt(p)))),
+ v5(p)=-1 if p mod5 is1 or4, otherwise+1,
+ s(n)=(-1)^floor(n^(2/3)),
+ r7(n)=-1 if n mod7 is1,2 or4, otherwise+1,
+ s3(n)=rho(mu(n-floor(n^(1/3)))),
+ s2(n)=rho(mu(n-floor(sqrt(n)))).
+The exact selected outputs are
+ F53=C_{-1/2,u} S_r7 C_{1/3,1} S_s C_{1/6,q} M,
+ F59=C_{-1/3,u} S_s2 C_{-1/6,v5} S_s3 C_{-1/3,v5} M.
+All phases use the same fixed source throughout the circuit AND inverse.
+Changing source therefore changes source-dependent phases; a diagnostic control
+cannot silently retain actual-Mobius phase data or be promoted to actual mu.
+
+The objective is the FULL D(X)=X^-2 sum_{X<=n<2X}F(n)^2. It is not a norm
+of convolving mu and then taking an additive prefix, and is not a sum of
+separate path squares. Neither operation is licensed by the circuit theorem.
+
+Exact full path kernel and an unavoidable tail
+---------------------------------------------
+For any circuit C_c S_t C_b S_s C_a, put A=k_a,B=k_b,C=k_c. Direct expansion
+of all three divisor sums gives
+ F(n)=sum_{d1*d2*d3*k=n} A(d1)B(d2)C(d3)
+                  *t(d1*d2*k)*s(d1*k)*M(k).
+Every ordered multiplicative path, including every prime-power allocation,
+is present. Equivalently
+ P_n(k)=sum_{d1*d2*d3=n/k}A(d1)B(d2)C(d3)
+                           *t(n/d3)*s(n/(d3*d2)),
+ F(n)=sum_{k|n}P_n(k)M(k).
+The coefficient P_n(n)=t(n)s(n) is always+1 or-1. No other path contributes
+to that coefficient, so a vanishing sum of convolution orders alone cannot
+cancel the direct M(n) channel.
+
+Expanding the additive prefix inside this identity gives another exact form:
+ F(n)=sum_{j=1}^n mu(j)W_n(j),
+ W_n(j)=sum_{k|n,k>=j}P_n(k).
+For EVERY j>floor(n/2), all proper divisors have disappeared and
+ W_n(j)=s(n)t(n).
+Thus with Dtail(n)=M(n)-M(floor(n/2)),
+ F(n)=s(n)t(n)*Dtail(n)+Bhead(n),
+ Bhead(n)=s(n)t(n)M(floor(n/2))+sum_{k|n,k<n}P_n(k)M(k).
+The complete moment contains ||Dtail||^2, ||Bhead||^2 and
+2*X^-2 sum s(n)t(n)Dtail(n)Bhead(n). Any successful estimate must bound this
+actual signed correlation or find another valid closing identity. Magnitude
+kernel bounds do not attenuate the input's final half-interval.
+
+At a prime output there are only the three single-prime allocations and k=p.
+Consequently, exactly for every prime p,
+ F53(p)=s(p)r7(p)M(p)+(1/6)q(p)s(p)r7(p)-(1/3)r7(p)-(1/2)u(p),
+ F59(p)=s3(p)s2(p)M(p)-(1/3)v5(p)s3(p)s2(p)
+                              -(1/6)v5(p)s2(p)-(1/3)u(p).
+The difference from the unit-signed M(p) is at most1 for53 and5/6 for59.
+This is an exact all-prime lemma, not a numerical fit. A cofinal bound for
+the selected output would in particular bound the prime-output M energy:
+ X^-2 sum_{X<=p<2X}M(p)^2<=2D(X)+2/X
+for53, with a smaller constant for59. That necessary condition is not the full
+target energy, and no replacement of general n by primes is justified here.
+
+Full squaring retains the Gram correlation
+ D(X)=X^-2 sum_{X<=n<2X}sum_{k,l|n}P_n(k)P_n(l)M(k)M(l).
+Its diagonals have no independently variable negative sign. If source or
+phase arguments coincide, their unit squares reduce to1; their off-diagonal
+correlations cannot be assumed independent. This full quadratic form, or the
+equivalent tail/head correlation above, is a concrete remaining proof gate.
+
+Which arithmetic information the phases actually use
+-----------------------------------------------------
+The input M uses every actual mu(j). ID59's s2,s3 also query actual mu at
+near-full shifted arguments. The terminal u queries actual mu at floor(sqrt(p))
+for EVERY prime p, not just a finite small-prime bank. It does NOT query mu(p),
+which is simply-1 at every prime. The sign u is+1 at squareful root indices.
+Its distribution among square-length prime intervals is not supplied by its
+syntax or by the inverse theorem.
+
+The q assignment is entirely geometric parity on those same root intervals.
+The v5 assignment uses fixed residue classes, and the middle assignment1 in53
+is constant. The r7 stage is a fixed residue sign on whole output arguments.
+There is no justification to call any of these an independently varying
+arithmetic prime sign. In particular q and u have different defining laws;
+neither may be identified with the other through a finite response alias.
+
+The source-dependent shifted phases in59 are NOT root-boundary impulses.
+For g_k(n)=n-floor(n^(1/k)), k=2 or3, its exact positive-index increments are
+ g_k(n)-g_k(n-1)=1-1_{n=m^k}, n>=2.
+It visits all nonnegative integers in order, with a stutter at each perfect
+power. On a root plateau, its argument advances at every n. Consequently
+s_k(n)=rho(mu(g_k(n))) can vary throughout the plateau through the actual
+source sequence. A bound counting only perfect-power events misses these
+source variations. Indeed the root event itself keeps the argument unchanged.
+
+Character structure and exact defects
+-------------------------------------
+Let psi5 be the real quadratic character mod5, zero on multiples of5.
+For p!=5, v5(p)=-psi5(p); v5(5)=+1. Its completely multiplicative prime lift
+is a Liouville factor times a unit extension of psi5 whose value at5 is-1.
+This uses the constant prime law mu(p)=-1 algebraically, not fresh source data.
+In the absolutely convergent half-plane Re(z)>1 its kernel Euler product is
+ A_{alpha,v5}(z)=zeta(2z)^alpha*(1+5^(-z))^alpha*L(z,psi5)^(-alpha).
+To check the identity, at p!=5 use
+ 1+psi5(p)p^(-z)=(1-p^(-2z))/(1-psi5(p)p^(-z));
+the exceptional local factor at5 contributes the displayed (1+5^(-z))^alpha.
+Fractional powers here mean the branch specified by the convergent Euler
+product. This formula is not a continuation across unknown zeros. Sign stages
+do not in general preserve such Euler-product factorizations of the output.
+
+Similarly let eta7 be the completely multiplicative unit extension of the
+quadratic character mod7 with eta7(7)=+1. On7-coprime n,
+ r7(n)=-eta7(n).
+On multiples of7, r7(n)=+1. With P7 the projection onto multiples of7,
+ S_r7=-S_eta7+P7*(I+S_eta7).
+The defect has support at7-multiples, not a subpower sparse set. This nevertheless
+is a structured finite-prime defect, rather than an arbitrary unknown mask.
+Since S_eta C_{alpha,chi}=C_{alpha,chi*eta}S_eta for a unit multiplicative eta,
+the outer stage of53 separates EXACTLY as
+ C_{-1/2,u}S_r7 g=-S_eta7 C_{-1/2,u*eta7}g
+                       +C_{-1/2,u}P7*(I+S_eta7)g,
+ g=C_{1/3,1}S_s C_{1/6,q}M.
+The terminal eta7 sign does not alter the bulk moment, but the defect and
+bulk/defect cross term do. Output of the defect remains supported at7-multiples.
+
+There is an exact7-adic version retaining every local factor. For7-coprime m,
+n=7^j*m, and C7(e)=k_{-1/2,u}(7^e), the outer output equals
+ sum_{e=0}^{j-1} C7(e)
+       sum_{d|m}k_{-1/2,u}(d)*g(7^(j-e)*m/d)
+ -C7(j)*eta7(m)*sum_{d|m}k_{-1/2,u*eta7}(d)*g(m/d).
+The first sum is empty for j0. These e terms coexist at the same n, so all
+their mixed products remain. Local7-power dilations have a convergent geometric
+norm majorant even at the critical boundary, since their dilation weight is
+at most7^(-e) and each local coefficient has magnitude at most1. This permits
+uniform finite-prime bookkeeping, but does not estimate the unresolved g core.
+
+Commutator reductions and the failure of boundary sparsity
+----------------------------------------------------------
+For any unit whole-argument phase sigma define the exact commutator
+ [C_{alpha,chi},S_sigma]f(n)
+ =sum_{d|n}k_{alpha,chi}(d)[sigma(n/d)-sigma(n)]f(n/d).
+It has no d1 term, but generally has many other terms. The magnitude estimate
+is at most twice the convolution norm; it gains no critical exponent by itself.
+Relative to a completely multiplicative unit candidate eta, the exact defect is
+ E_sigma,eta(n,d)=sigma(n/d)-sigma(n)eta(d),
+ C_{alpha,chi}S_sigma=S_sigma C_{alpha,chi*eta}+R_sigma,eta,
+where R is the divisor sum with that E coefficient. An EXACT multiplicative
+phase (including a global minus sign) makes Rzero. Root pseudophases require
+their actual defect, not an inferred multiplicative law.
+
+ID59 has an immediate exact simplification with its defect retained. Put
+a=-1/3,b=-1/6,c=-1/3 and tau=s2*s3. Then
+ F59=S_tau C_{c,u}C_{-1/2,v5}M
+       +[C_{c,u},S_tau]C_{-1/2,v5}M
+       +C_{c,u}S_s2[C_{b,v5},S_s3]C_{a,v5}M.
+This uses the true same-phase group law C_b C_a=C_{a+b}; it is not a claim
+that the middle arithmetic sign can be erased. The first core has a simpler
+two-kernel Euler product, while the other two terms are the precisely required
+arithmetic correlation defects. Their mutual mixed terms belong to D(X).
+The shifted-source argument law above supplies no subpower support bound for
+either defect; actual source-sign correlations are needed.
+
+ID53's purely geometric s already gives a rigorous obstruction to a generic
+"only root boundaries matter" argument. Consider d2 and n=2m, and put
+u=m^(2/3), kappa=2^(2/3), which lies strictly between1 and2. The relative
+phase is (-1)^(floor(kappa*u)-floor(u)). On every full unit interval
+u in[j,j+1), floor(u) is fixed while kappa*u spans length kappa>1. Each
+parity of floor(kappa*u) occupies at least kappa-1 of that span. Thus for
+E_sigma,eta with EITHER possible eta(2), the defect occupies at least
+(kappa-1)/kappa of each u interval before endpoint rounding.
+The map m=u^(3/2) has derivative comparable to sqrt(j) on that interval.
+Rounding its finitely many interval endpoints costs O(1) integers per cell.
+Summing the cells in a large m block loses only O(X^(2/3)) endpoints, versus
+an order-X occupied measure. Hence for some fixed positive constant c and
+all sufficiently large blocks the divisor2 defect is nonzero on at least
+cX even outputs. Its nonzero coefficient in C_{1/3,1} is1/3.
+The same conclusion holds whether eta(2) is+1 or-1: no multiplicative twist
+turns this root-parity commutator into only sparse boundary impulses.
+
+This proof counts geometric intervals only; it evaluates no actual mu or
+output. It also explains why an additive first-difference root-localization
+lemma from the old potential family cannot be transplanted into divisor
+commutators, whose arguments n and n/d are multiplicatively separated.
+It concerns one divisor coefficient, not a lower bound on the whole
+commutator output; other divisor terms can still cancel through real arithmetic.
+
+No generic compensating path swap is hidden here. Swapping d1 and d2 changes
+A(d1)B(d2)s(d1*k) to A(d2)B(d1)s(d2*k), with the same outer t factor. For
+a single prime allocation the two magnitudes are1/6 and1/3 in53, and1/3 and
+1/6 in59. Unit signs cannot cancel unequal magnitudes. Other paths must be
+kept; a universal pair-cancellation involution based on this swap is unavailable.
+ID53's formal sum of orders1/6+1/3-1/2=0 likewise does not make an identity:
+its prime phases differ and the two intervening signs have nonzero defects.
+
+Recovery, finite head, and the precise generic obstruction
+---------------------------------------------------------
+Both certificates record orders[1,1,1] and recovery_power3. Each stage kernel
+and inverse is dominated by d1=1 because its absolute alpha is at most1.
+At sigma=1/2+epsilon, a divisor dilation has unsquared norm d^(-1-epsilon),
+so forward and inverse have bound at most(1+1/epsilon)^3 uniformly in finite T.
+The corresponding squared-energy recovery cost is(1+1/epsilon)^6. Neither
+an algebraic sum of signed alphas nor a phase resemblance removes that cost.
+Exact reductions would need new justified certificates, not reuse of a smaller
+cost for the present double-interleaved programs.
+
+There is, however, a rigorously sharper GENERAL majorant worth recording for
+a future certificate version. Put beta=|alpha|. Term by term,
+ |(alpha)_e|<= (beta)_e,
+because |alpha+j|<=beta+j for every j>=0. The positive multiplicative
+generalized-divisor kernel d_beta has Euler sum
+ sum_d d_beta(d)/d^(1+epsilon)=zeta(1+epsilon)^beta.
+Thus BOTH a convolution and its inverse have finite-horizon unsquared norm
+at most zeta(1+epsilon)^|alpha|, with no source assumption. Interleaved unit
+signs do not change this estimate. The full circuit's unsquared inverse bound
+can therefore be sharpened mathematically to
+ (1+1/epsilon)^Gamma, Gamma=sum_stages |alpha|.
+Here Gamma=1 for53 and5/6 for59; squared recovery uses2Gamma. This is a
+new derived coefficient-majorant lemma, not cancellation of signed orders or
+erasure of a stage. The actual frozen certificates and their recorded power3
+remain untouched and correct. A future restricted checker could certify the
+fractional Gamma rule explicitly; current finite observations do not supply it.
+The sharper epsilon cost improves recovery constants, but still does not
+provide ANY bound for the transformed actual moments themselves.
+
+The queued condition is ONE fixed circuit and an unbounded set of integers q:
+for each such q a finite Cq independent of every dyadic X>=32 with
+D(X)<=Cq*ceil(X^(1/q)). For any epsilon>0 choose an available q with1/q<2epsilon.
+Its weighted dyadic tail is bounded by a convergent sum of
+O_q(X^(1/q-2epsilon)). The finite n1..31 head must also be retained. The
+inverse theorem then gives the full weighted L2 bound for actual M. This is
+the conditional recovery bridge, not a proof of its premise. Both circuits
+have F(1)=1 and D(1)=1 by their exact signs and k(1)=M(1)=1.
+
+A precise generic obstruction limits what the existing primitives can prove.
+Hold EVERY phase and kernel fixed, even the actual-Mobius-dependent ones,
+and consider the linear circuit on an arbitrary formal input f(n)=n. It
+satisfies the same envelope |f(n)|<=n. At, for example, epsilon=1/4 its
+weighted squared norm grows as sum n^(-1/2), so is not finite as T grows.
+Uniform inverse recovery forces its transformed weighted norm also to diverge.
+If magnitude envelopes, unit signs and the existing recovery bound alone
+proved cofinal subpower transformed moments for all such inputs, the dyadic
+argument above would make that weighted norm finite, a contradiction.
+
+This input is NOT the actual Mobius prefix and is NOT a numerical control
+evaluation with re-bound source phases. It disproves a generic argument from
+only those functional hypotheses; it neither refutes nor establishes the
+actual-Mobius moment estimate. A valid closure must use the relation
+M(n)-M(n-1)=mu(n), together with actual signed correlations beyond unit-phase
+grammar. For59 those include shifted source signs at intermediate divisor
+arguments and root-Mobius prime assignments. For53 they include the geometric
+root phase, residue-character twists/local7 defect, and root-Mobius prime lift,
+all correlated with the complete additive prefix. None is bounded by the
+certificate or the derived sparse/character bookkeeping alone.
+
+Concrete proof/search consequences
+----------------------------------
+An exact structural normalization rule can move completely multiplicative
+signs through convolutions by twisting prime phases, delete a terminal unit
+sign from the moment observer, and merge adjacent same-phase convolutions.
+It must keep root/source commutator defects and finite bad-prime corrections.
+This separates genuine interleaving from reducible sign/convolution syntax
+without reading responses or choosing a favorite circuit.
+
+For the present programs the useful next proof objects are the full P_n(k)
+Gram form, its explicit tail/head correlation, the two59 commutator residuals,
+and the53 character bulk plus local7-adic correction. The geometric positive-
+density lemma rules out treating53's root commutator as bounded padding from
+boundary counts. The prime-output lemma retains a necessary target component.
+These are concrete reductions and obstructions; none closes the required
+cofinal moment inequality for actual mu. All full mixed terms, all primes,
+the finite head and recovery cost remain. No RH/global moment theorem is
+asserted and no frozen source is changed.

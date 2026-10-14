@@ -1,0 +1,257 @@
+ACTUAL GENERATED CORE BOUNDS: A COMPLEX-POLE LOG-DEGREE BARRIER
+
+Scope and conclusion
+--------------------
+This independent postanalysis reads core_bound_synthesis.py,
+core_bound_synthesis_protocol.txt, the selected program/hypothesis payloads
+in core-bound-results/pilot-001/selection.json, and the earlier complete
+core/recovery proofs. Only this NEW memo is written. No source evaluation,
+arithmetic experiment, test, numerical rescore, hash calculation, new
+search, subagent, or alteration of a frozen artifact is performed.
+
+Every one of the thirteen selected ALL-SCALE hypotheses is false provided
+the explicit local certificate conditions in section1 are discharged.
+This is a mathematical consequence of an ordinary simple critical zeta
+zero, local shifted-nonvanishing checks, and exact Mellin identities.
+It is not a statement that a finite observed inequality
+failed, nor a claim about which first scale will violate it. The current
+finite audit, the frozen selection and its conditional recovery records
+remain separate and unchanged. The ordinary cofinal/RH-strength bound is
+still open: a critical double pole prohibits too small a fixed logarithmic
+degree, while allowing a logarithmic degree of at least two.
+
+1. Source and certified local analytic input
+--------------------------------------------
+Use u=1/3, v=2/3, beta=9/2 and the fixed original residue R_u. In the
+evaluator's order (nu0,nu1,nu2,mu), the complete coefficients are
+  f=beta*nu0-beta*nu1-R_u*nu2-beta*mu,
+  nu0=k_u*(mu*mu), nu1=k_u*(mu*mu_v), nu2=k_u*mu_v.
+Here k_w(n)=n^(-w), mu_w(n)=mu(n)n^(-w), and * is Dirichlet convolution.
+Let F(x)=sum_(n<=x) f(n), with the integer-floor step extension and F=0
+below one. The complete Dirichlet series, initially for Re(s)>1, is
+  D_f(s)= beta*zeta(s+u)/zeta(s)^2
+          -beta*zeta(s+u)/(zeta(s)*zeta(s+v))
+          -R_u*zeta(s+u)/zeta(s+v)-beta/zeta(s).          (1.1)
+Its prefix Mellin transform is D_f(s)/s. The finite unit and every mode
+are included; no separate mode bound, centering change or discarded
+correction is used in this argument.
+
+The existing local ordinary-zero certificate is recorded in
+shift-ratio-results/shift_ratio_analytic_verification.json under
+actual_zero_and_corridor_audit, and reused by
+fractional-branch-results/audit-001/protocol.json and branch_audit.json.
+It gives a simple critical zero rho=1/2+i*gamma in the disk centered at
+1/2+14.13472514173469379046*i, radius 1/20000. In particular 14<gamma<15.
+This memo uses that archived certificate; it does not rerun its arithmetic.
+
+The rejection theorem has the following directly checkable LOCAL input:
+  (i) a certified simple critical zero rho in the displayed disk;
+  (ii) a rigorous enclosure of zeta(s+1/3) on a rectangle containing
+       that disk, excluding zero;
+  (iii) a rigorous enclosure of zeta(s+2/3) there excluding zero, or
+        the standard absolutely convergent Euler-product nonvanishing
+        theorem on Re(s)>1.
+Condition(ii) is essential and is not inferred from the unshifted zero
+certificate. A separate unfrozen local witness and independent check
+are being prepared by root; their eventual receipt can instantiate this
+theorem without a finite-height RH theorem or any new source arithmetic.
+Until those conditions are independently discharged, the all13 rejection
+is stated conditionally on them. No particular numerical enclosure is
+invented in this memo. The proofs below use only these local conditions,
+not RH at arbitrary height or assumed simplicity of other zeros.
+
+Under those conditions (1.1) has a genuine double pole at rho, with leading coefficient
+  d_2=beta*zeta(rho+1/3)/zeta'(rho)^2 !=0.              (1.2)
+The other terms have pole order at most one. They cannot cancel (1.2),
+regardless of the value of the fixed real residue R_u. If a zero of
+multiplicity m has the same shifted-nonvanishing property, the identical
+argument instead gives pole order 2m.
+
+2. A block-energy theorem with no asymptotic expansion assumption
+---------------------------------------------------------------
+For a real step function Q(n), define
+  E_Q(X)=X^(-2)*sum_(n=X)^(2X-1) |Q(n)|^2,
+and M_Q(s)=int_1^infinity Q(x)*x^(-s-1) dx when it converges. Suppose
+  E_Q(2^j)<=K*(1+j)^p  for all sufficiently large j, p>=0.             (2.1)
+For s=1/2+delta+i*tau, 0<delta<=1/4, Cauchy on each dyadic block gives
+  |int_(2^j)^(2^(j+1)) Q(x)*x^(-s-1)dx|
+       <=sqrt(E_Q(2^j))*2^(-delta*j).
+Indeed its unweighted L2 integral is 2^(2j)*E_Q(2^j), while the integral
+of x^(-2Re(s)-2) is at most 2^(-j*(2Re(s)+1)). Therefore
+  |M_Q(1/2+delta+i*tau)|
+       <=K_head+sqrt(K)*sum_(j>=0)(1+j)^(p/2)*2^(-delta*j)
+       =O(delta^(-1-p/2)).                              (2.2)
+The elementary last bound follows by comparison with the exponential
+integral after substituting y=delta*t. This also proves holomorphy of
+M_Q in Re(s)>1/2 by locally uniform absolute convergence.
+
+If its analytic continuation has a nonzero leading singularity
+  M_Q(rho+delta)=c*delta^(-ell)*(1+o(1)), c!=0, ell>=1,
+then (2.2) forces
+  p>=2*ell-2.                                         (2.3)
+This is a necessary condition only. It neither proves a matching bound
+nor controls other zeros. No pointwise asymptotic, prime randomness,
+positivity of Q, or RH assumption is required. For ell=2, degrees p=0
+and p=1 are impossible. A model oscillation x^(1/2)*log(x) at frequency
+Im(rho) illustrates why degree two is compatible with the local pole;
+it is not asserted to be the complete actual-source asymptotic.
+
+3. Exact delay multipliers and the selected critical branch
+----------------------------------------------------------
+For fixed real a and q>=2,
+  G(x)=F(x)-a*F(x/q)
+has the exact Mellin identity
+  M_G(s)=(1-a*q^(-s))*D_f(s)/s.                         (3.1)
+It holds first in Re(s)>1 by substitution, including the zero extension
+below one and all integer floors. There is no missing delayed head.
+The multiplier can lower the pole order only by its actual vanishing
+order at rho. The inverse-norm threshold |a|<=sqrt(q) does not imply
+such a zero at a nonreal critical pole.
+
+Selected baseline_delay ID1538 uses a=-1, q=2, so G=F+F(x/2).
+The multiplier 1+2^(-rho) cannot vanish because |2^(-rho)|=1/sqrt(2)<1.
+Identity filters have multiplier one. Both preserve the double pole.
+
+Selected baseline_critical ID6152 uses a=-sqrt(2), so its multiplier is
+  1+exp(-i*gamma*log(2)).
+It is also nonzero at the certified rho. Here is an elementary enclosure
+requiring no new transcendental computation: 14<gamma<15 and
+0.69<log(2)<0.7 imply 3*pi<gamma*log(2)<4*pi, using 3<pi<22/7.
+The log bounds follow, for example, from
+  log(2)=2*sum_(j>=0)(1/3)^(2j+1)/(2j+1):
+the first two terms exceed 0.69, while bounding every remaining
+denominator by three gives an upper bound 25/36<0.7.
+No integer multiple of pi lies strictly between 3*pi and 4*pi, so
+neither critical sign filter vanishes at this rho. Thus the selected
+critical filter still requires filtered energy log degree at least two,
+even though its general inverse recovery permits an extra two logs.
+
+4. Log-Abel preserves the leading oscillatory pole
+-------------------------------------------------
+Put B(x)=sum_(n<=x) f(n)*log(n), and define the continuous version
+  P(x)=B(x)/log(x) for x>1, P=0 on [1,2).
+The value at x=1 is immaterial. In the absolute-convergence half-plane,
+  int_1^infinity B(x)*x^(-s-1)dx=-D_f'(s)/s,
+and hence
+  M_P'(s)=D_f'(s)/s.                                   (4.1)
+This derivative identity is exact. In particular it does not replace
+B by an approximate pointwise derivative or assume a Mertens estimate.
+
+Suppose a polylog energy claim for the actual discrete log-Abel output
+holds. The continuous and discrete transforms differ by a function
+holomorphic in Re(s)>0, as follows. The proved coefficient envelope is
+  |f(n)|<=C_f*d_2(n), C_f=3*beta+R_u,
+and the elementary divisor sum gives
+  |B(n)|<=C_f*n*(1+log n)*log n.
+For x in [n,n+1), n>=64,
+  |B(n)/log(n)-B(x)/log(x)|
+    <=C_f*(1+log n)/log n<=2*C_f.                      (4.2)
+Here B(x)=B(n), and the reciprocal-log difference is at most
+1/[n*(log n)^2]. Below64 the evaluator's G(n)=F(n) is merely a
+finite-interval modification. Its Mellin transform is entire. Explicitly,
+for dyadic X>=64 the continuous block energy satisfies
+  X^(-2)*int_X^(2X) |P(x)|^2 dx
+       <=2*E_G(X)+8*C_f^2/X.
+This uses the square triangle inequality and retains the entire difference
+rather than discarding its cross term. The proof of section2 applies
+unchanged to this continuous block energy. Thus a polylog energy bound
+for discrete G gives the same log degree for P and a finite head.
+M_P is holomorphic
+in Re(s)>1/2, and (4.1) continues there by the identity theorem (if an
+interior pole prevented this, the proposed bound would already fail).
+
+More generally let D_f(s)=d_ell*(s-rho)^(-ell)+lower terms, ell>=2.
+Integrating (4.1) along the rightward horizontal approach yields
+  M_P(rho+delta)=(d_ell/rho)*delta^(-ell)
+       +O(delta^(1-ell)*(1+|log delta|)).               (4.3)
+This follows by multiplying D_f' by the Taylor expansion of 1/s at
+rho!=0 and integrating the resulting Laurent terms. Any residue term
+produces only a lower-order logarithm, and the integration constant is
+bounded. Therefore (4.3) has exactly the same leading coefficient as
+D_f(s)/s. The bounded difference (4.2) has a transform holomorphic near
+rho and cannot cancel it. This proves the discrete output's leading
+double-pole barrier without presuming exact log-degree preservation by
+the separate Volterra inverse theorem.
+
+5. The actual selected universal premises
+-----------------------------------------
+All selected records have rho=1/2 and gamma=0 in the proposed recurrence
+  A(2X)<=rho*A(X)+C*X^gamma*(1+log2 X)^k,
+where A=E_G+w*E_H, w>0, or A=E_G without an auxiliary. The hypothesis is
+for every dyadic X>=1, with its fixed base bound. Nonnegativity and
+dyadic induction give, when k=0,
+  A(2^j)<=2^(-j)*A(1)+2*C;
+when k=1 they give
+  A(2^j)<=2^(-j)*A(1)+2*C*(1+j).                       (5.1)
+Since A>=E_G, these are directly filtered degrees zero and one.
+
+The selected payloads are:
+  ID6152, baseline_critical: G=F+sqrt(2)*F(x/2), C179, k0;
+  ID1538, baseline_delay: G=F+F(x/2), C98, k0;
+  ID9997, baseline_log: complete log-Abel output, C1, k1;
+  ID423, pair_nu0_mu: identity G=F, C13, k0;
+  ID294, pair_nu0_nu2: identity G=F, C5, k0;
+  IDs1734,2118,2022,2214,1683,1542,1590,1638:
+      G=F+F(x/2), positive paired/single auxiliary, k0.
+The saved baselines and finite fitted constants are not used to infer
+asymptotic behavior; only their finiteness, exact bound shape and target
+formula matter. Each target retains pole order two by sections3-4.
+Equation (2.3) contradicts every conclusion (5.1), under the explicit
+local certificate conditions in section1.
+
+For clarity, ID294's auxiliary is the full square of
+  H(n)=n^(-1/6)*(prefix nu0(n)+prefix nu2(n)), weight3.
+ID423's auxiliary is the full square of the positive-delay difference
+of prefix(nu0+mu), delay coefficient2^(2/3), weight3.
+Their internal cross terms are retained. Neither square can cancel E_F
+because it is ADDED nonnegatively to E_F. Likewise a mixed or weighted
+positive auxiliary in the other lanes cannot evade the obstruction.
+The source row order here is (nu0,nu1,nu2,mu), matching the evaluator.
+
+With those local conditions certified, every selected recurrence must
+have dyadic violations arbitrarily far out: if it held at every
+sufficiently late dyadic scale, its finite
+starting value and (5.1) would give the same impossible log-degree bound.
+This does not locate a violation inside any particular numerical horizon.
+It does not invalidate conditional recovery algebra or the proved weak
+gamma1/logpower2 reference instances. Those have different premises.
+
+6. General log-degree admission and future proof scope
+----------------------------------------------------
+A future postanalysis registry can retain an exact local divisor/order
+certificate for the complete prefix transform and its filter multiplier.
+If a critical prefix singularity has order ell and the multiplier has
+zero order r<ell, any claimed uniform block-energy degree must satisfy
+  p>=2*(ell-r)-2.
+For an uncancelled multiplicity-m ordinary zero in this core, p>=4m-2.
+The identity and the selected delays have r0 at the certified simple
+zero. The log-Abel output has the same leading order by (4.1), so should
+not be assigned a free pole-order reduction. In contrast a specially
+resonant delay may cancel a particular pole; it must be checked at other
+zeros and its inverse cost must still be retained. Positive auxiliaries
+can only impose additional necessary restrictions.
+
+For gamma0, rho<1 gives energy degree at most k from a forcing polynomial
+of degree k; rho1 gives degree at most k+1. Thus a retained double pole
+requires k>=2 in the former regime or k>=1 in the latter. These are
+necessary admission conditions, not sufficient arithmetic theorems.
+Positive growth powers X^gamma, gamma>0, are not rejected by this
+log-degree argument; their lack of cofinal strength is a separate matter.
+
+The earlier conservative extra-log degree for log-Abel norm recovery is
+sound: summing block energies controls the truncated critical norm with
+one extra log, and Volterra recovery plus the finite head then controls
+F. That generic sufficiency accounting does not rescue the selected
+degree-one log-Abel premise, whose own preserved pole is stronger
+information. Similarly the selected critical delay's conditional core
+degree two is compatible with a double pole, but its filtered degree
+zero premise is not. A registry must test the actual auxiliary premise,
+not just the final reported core consequence.
+
+No frozen registry, candidate, ranking, constant, evidence record or
+theorem flag is changed here. This is a new analytical rejection of the
+universal conjectures and a reusable future recovery/admission guard.
+It supplies no all-scale signed cancellation estimate for the remaining
+core. The next detector may generate log-degree-two-or-higher bounds,
+or operators with proved pole cancellations and full inverse costs,
+while keeping their genuinely open arithmetic premises explicit.

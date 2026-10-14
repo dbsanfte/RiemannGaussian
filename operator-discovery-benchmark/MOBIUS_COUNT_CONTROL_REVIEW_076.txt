@@ -1,0 +1,360 @@
+VARIABLE COUNT-POWER CONTROL REVIEW076
+=====================================
+
+Scope
+-----
+This review reads the075 handoff, next-language note and feedback code.
+It creates only this new076 review, preserving all frozen075 and earlier
+files. It runs no scientific source query, inspects no076 candidate scores,
+uses no hashes and delegates no work. The proposed mathematics below is
+sound with the positivity and zero-case conditions stated explicitly.
+Structural correlation is a universal theorem; uniform residual control
+for the actual Mobius source remains an independent arithmetic obligation.
+The necessary G source is not the complete joined head/core or RH target.
+
+1. Atom theorem with actual counts and all repeated columns
+---------------------------------------------------------
+At integer parent u use the exact075 lattice source and cutoffs. A prime
+coordinate has actual count n_i, signed sum B_i and ordinary square sum Q_i,
+both retaining repeated floor children. Put N_i=max(1,n_i). A direct
+coordinate has n_i=N_i=1, B_i=G(u//d) and Q_i=B_i^2. Each atom t selects
+a source column i(t), a fixed nonnegative rational gamma_t and a rational
+coefficient a_t. Its value is psi_t=B_i/N_i^gamma_t. An empty prime
+block has B_i=Q_i=0, so psi_t=0 even at gamma_t=0; there is no0/0.
+
+For n_i>=1, ordinary Cauchy on the n_i prime summands gives
+B_i^2<=n_i Q_i. It makes no independence assumption and counts equal
+child values once per prime. Thus
+
+ psi_t^2<=N_i^(1-2gamma_t)Q_i<=Q_i when gamma_t>=1/2.
+
+At an empty block the same inequality is0<=0. Direct atoms obey
+psi_t^2=Q_i for EVERY admitted gamma_t because N_i=1. Consequently the
+structural admission condition concerns only ACTIVE PRIME atoms with
+gamma_t<1/2; it must not reject a zero coefficient or a direct atom just
+because its gamma is small. This is a sufficient certificate, not a proof
+that every active lower-gamma arithmetic operator is impossible.
+
+Let A_i=sum_{t:i(t)=i}|a_t| and L=sum_t a_t psi_t. Apply triangle inside
+each column, then weighted Cauchy across source columns:
+
+ |sum_{t:i(t)=i}a_t psi_t|<=A_i sqrt(Q_i),
+ L^2<=(sum_i A_i sqrt(Q_i))^2
+     <=(sum_{i:beta_i>0}A_i^2/beta_i)(sum_i beta_i Q_i).
+
+Require beta_i>=0, and beta_i=0 implies A_i=0; otherwise the quotient
+condition is undefined and this universal proof fails. If
+sum A_i^2/beta_i<=1, then L^2<=sum beta_i Q_i for every child sequence.
+All repeated-column and cross-column products remain on the LEFT. They
+are bounded, not deleted. Multiple gamma values at one source column
+do not represent independent random variables or separate Q copies.
+
+Exact duplicate atoms (same column AND gamma) can be merged by adding
+their signed coefficients before defining A_i. This can sharpen the
+budget while preserving the operator. Keeping them separate is safe but
+conservative. All gamma choices on a direct column are identical atoms,
+because its count is always1; merge them if claiming distinct operator
+degrees of freedom. Different prime gamma values can give different
+functions as the actual count changes, even if discovery counts happen
+to coincide. Their finite numerical feature rank is not an all-scale
+independence or cancellation theorem.
+
+2. Rational h-budget and the complete beta certificate
+-----------------------------------------------------
+Use the075 rational uniform prices H_i>=sum_{p in block i}p^(-q)
+and direct H_d=1/d, for fixed1<=q<2 and fixed complete base U0>=16.
+They are positive for the default nondegenerate grammar. Choose fixed
+rational h_i>0 with h_i^2>=H_i. Define
+
+ S=sum_i A_i h_i,
+ beta_i=A_i S/h_i if A_i>0, and beta_i=0 otherwise.
+
+If S>0, beta_i is positive on every active column and
+
+ sum_i A_i^2/beta_i=(sum_i A_i h_i)/S=1,
+ rho=sum_i beta_i H_i
+     =S sum_i A_i H_i/h_i<=S sum_i A_i h_i=S^2.
+
+If S=0, positivity of h forces every coefficient zero, so beta=rho=0
+and correlation is trivial. Treat this case explicitly, without dividing
+by S. If a grammar ever permits H_i=h_i=0, the formula needs a separate
+zero-price coordinate rule; h_i>=sqrt(H_i) alone would allow0/0. Requiring
+h_i strictly positive is the simplest safe API condition.
+
+For a nonzero structural operator, a rational exposure budget S<=r<1
+therefore pays rho<=r^2. The price is fixed across parents even though
+the actual atom values depend on n_i(u). Parent-dependent coefficients
+N_i^(-gamma_t) do not affect smaller-child induction, because the entire
+operator is first bounded by the SAME fixed beta-weighted Q at each
+parent. Every child still has rank<u, with G(0)=0 handled separately.
+
+Given a COMPLETE base G(v)^2<=Bbase v^q for1<=v<=U0, B>=Bbase,
+and a uniform arithmetic residual
+
+ (G(u)-L(u))^2<=C u^q for EVERY integer u>U0,
+ C<=(1-r)^2 B,
+
+the075 strong-induction proof closes G(u)^2<=B u^q at all integer u.
+The structural branch has genuinely paid correlation algebraically; it
+still owes the new residual. It cannot inherit C from an unnormalized
+operator. One fixed rational q is not an epsilon-cofinal family, and
+source-family transfer leaves all separate full-head/core/RH obligations.
+
+3. The convex search and exact admission after rounding
+-----------------------------------------------------
+For fixed atoms and fixed discovery rows their numerical feature matrix
+is fixed. Minimize e>=0 subject to
+
+ |G(u)-sum_t a_t psi_t(u)|<=e u^(q/2) on discovery rows,
+ sum_t |a_t| h_(i(t))<=r.
+
+Introduce nonnegative p_t,m_t with a_t=p_t-m_t and impose
+sum_t h_(i(t))(p_t+m_t)<=r. This is a linear-program proposal problem.
+The exact signed coefficient budget is no larger than the LP split
+budget, because |p_t-m_t|<=p_t+m_t. Floating count powers and floating
+u normalization may guide the LP; they certify nothing.
+
+After rational coefficient rounding, recompute every A_i and S EXACTLY.
+If the actual rounded S exceeds the prescribed r, multiply all rounded
+coefficients by an exact rational lambda<=r/S. A downward rounded
+lambda is safe; an upward rounded lambda is not. Then recompute A_i,
+S,beta,rho and all residual constants from the corrected coefficients.
+Do not retain the LP objective or pre-rescaling C as an exact certificate.
+Scaling coefficients by lambda scales A,S by|lambda| and beta,rho by
+lambda^2, while its residual changes nonhomogeneously because G does
+not scale. The zero solution is an explicit baseline, not a theorem.
+
+Because atom values can be irrational, independent verification needs
+certified rational intervals for N_i^gamma_t and reciprocal signed
+terms. If numerator a_t B_i is negative the reciprocal endpoints swap;
+aggregate interval summation must preserve this sign. To certify the
+residual use the MAXIMUM square over its complete interval; to refute
+use the MINIMUM square (zero if the interval crosses zero). A threshold
+straddle is unresolved rounding, not success or a counterexample.
+Intermediates, exponent denominators, arrays and interval caches need
+prospective resource gates, with no floating power used in admission.
+075 source admission remains mandatory on the same rows before any
+formula result becomes authoritative.
+
+4. Open low-gamma branch and what the same budget does not prove
+-------------------------------------------------------------
+For gamma>=0 without the structural condition, each column obeys
+
+ |sum_t a_t psi_t|<=D_i(N_i)sqrt(Q_i),
+ D_i(N)=sum_{t:i(t)=i}|a_t| N^(max(0,1/2-gamma_t)).
+
+This conservative formula also covers high-gamma and direct atoms. The
+original fixed A_i and its h-budget do not bound D_i when a PRIME atom
+with gamma<1/2 is active and counts grow. Keeping the same numerical
+coefficient constraint is a legitimate search preference, not a
+universal correlation proof. Such a candidate owes separately
+L^2<=sum beta_i Q_i on finite evaluated rows AND uniformly beyond U0.
+A rational rho from beta,H is a conditional moment price only; it must
+not imply paid correlation. The checker must inspect actual active atoms
+instead of trusting branch labels, metadata or the generator's flag.
+
+Exact signed cancellation among same-column count powers can improve
+the conservative estimate, but a useful uniform bound on
+sqrt(N)|sum_t a_t N^(-gamma_t)| must be proved independently. Identical
+low-gamma duplicates that cancel exactly can be removed. A finite range
+of observed counts does not establish cancellation as N grows. Nor does
+failure of the conservative Cauchy test prove actual G-correlation false.
+
+5. Nontriviality, tautology and useful diagnostics
+------------------------------------------------
+Let ||f||_q=sup_{u>=1}|f(u)|/u^(q/2) on the all-integer domain. Extend
+the operator by L(f)(u)=0 at1<=u<=U0 for this norm argument, keeping
+its actual definition beyond U0 where H applies. Whenever the norm is
+finite, structural correlation plus H gives ||L(G)||_q<=S||G||_q.
+Reverse triangle gives ||G-L(G)||_q>=(1-S)||G||_q; the residual norm
+here includes the separately paid base. Thus a
+contraction is entirely compatible with moving all difficulty to its
+residual. Deriving the residual estimate from the desired bound on G
+would be circular. Conversely a residual estimate proved by a new
+identity or cancellation theorem without assuming the parent bound can
+be meaningful; the induction is then a legitimate transfer theorem.
+
+For coefficient scaling epsilon->0, S tends to0 and the residual tends
+to G on every fixed finite row. The selected paid B can then approach
+the zero baseline, without a new arithmetic fact. Finite residual gain,
+even if reproducible, remains finite evidence. Choosing a larger C or B
+to absorb new failures is a NEW fitted formula, not proof of the old one.
+
+Concrete diagnostics should retain, with exact enclosures:
+* The actual exposure S, active source columns/count exponents, and the
+  ratio of paid B to the matching zero baseline at the SAME q/base/domain.
+* Both residual C and transfer price C/(1-r)^2, rather than ranking only
+  raw residual gain. Record whether Bbase dominates, hiding any change.
+* Nonzero response L and signed residual reduction2G L-L^2 per row,
+  including adverse rows and phase/count changes. This is the exact
+  identity G^2-(G-L)^2, not a squared-feature importance surrogate.
+* Separate source admission, structural correlation proof, finite
+  residual verdict and uniform residual status. For open atoms add a
+  separate finite/uniform correlation verdict and counterexample history.
+* Canonical merging of duplicate/direct-equivalent atoms and feature-rank
+  diagnostics on discovery. Apparent coefficient complexity can otherwise
+  be an identical operator written many times.
+* Explicit residual identity/proof target with all count-jump and source
+  endpoint terms, coefficient/cutoff dependencies and complete base. A
+  smaller finite maximum by itself is not that target.
+
+Promising next obligations are a signed residual identity expressing
+G-L through independently controlled smaller-rank differences, a paid
+prime/cofactor cross-correlation for the residual itself, or a declared
+count-transition estimate retaining changes in N^(-gamma). Any Abel or
+pairing reduction must preserve its anchor, multiplicities, signed cross
+terms and full energy price as in the075 postreview. Counts can jump at
+cutoff boundaries; freezing normalization at old counts changes the
+operator and requires an explicit error bound. These diagnostics reward
+new arithmetic control and expose shrinking/baseline degeneracy; none
+turns a finite pass into a uniform theorem.
+
+6. Independent static implementation snapshot review
+----------------------------------------------------
+Reviewed the new mobius_count_control_076.py and
+check_mobius_count_control_076.py before any076 scientific run, against
+the theorem above and inspected frozen073/075 helpers. This is a static
+snapshot review, not a source query, test receipt or candidate-score
+assessment. Changes following the issues below require validation.
+
+The producer grammar genuinely creates several gamma atoms on each
+prime source column, with exactly one gamma0 atom per direct column.
+Atom keys are unique and sorted by exact rational gamma. Signed LP
+coefficients can combine repeated source columns; compact removes zero
+coefficients, while structural_weights adds their ABSOLUTE masses on
+the original source column. It does not invent independent moment
+coordinates. The structural mode rejects an active prime gamma<1/2,
+and direct columns retain count1 regardless of the original template's
+gamma. Empty block handling returns zero without a reciprocal singularity.
+G, cutoffs, counts, moments, floors and units are inherited from the
+separately admitted075 data rather than recomputed or approximated.
+
+LP constraints have the correct residual signs: with a=p-m,
+A a-e<=y and -A a-e<=-y. The final weighted split-budget row uses the
+rational upper roots h converted to floats only for a proposal. After
+rounding signed coefficients to denominator8192, the exact factor is
+min(1,radius/S), with zero S handled by factor1. Every coefficient is
+rescaled by that SAME rational factor and all masses/beta/rho are
+recomputed. The post-rounding budget is checked exactly. This implements
+the required safe rounding procedure; the floating objective remains
+explicitly a proposal diagnostic, not the saved C.
+
+structural_weights implements beta_i=A_i*S/h_i literally and checks
+rho<=S^2. The default positive075 H makes every h positive. make_program
+computes the new residual on the actual rounded operator, uses its
+UPPER enclosure, rounds C and complete-base bound UPWARD to denominator
+2^40, and sets B=max(base,C/(1-r)^2) for the rational upper square root
+r of rho. These directions are conservative. There is no inherited075
+residual constant. The checker independently recalculates the minimum
+prices, weighted-Cauchy sum, base rows and contraction inequalities.
+
+For every signed feature, producer feature_enclosure divides its signed
+integer B by both certified count-power endpoints, orders the endpoints,
+and then operator_enclosure orders again after multiplying by signed a.
+The checker independently takes reciprocal endpoints and scale_interval
+with the signed product a*B. Both bound the complete SUM interval.
+Both residual routines subtract the operator interval in reverse order,
+square the resulting residual interval with zero-crossing treatment, and
+divide the lower square by the UPPER u^q endpoint and the upper square
+by the LOWER endpoint. Checker REFUTED requires lower>C; upper>C with
+lower<=C is UNRESOLVED_ROUNDING. The same distinction applies to the
+open-branch correlation square relative to the exact beta moment energy.
+
+Checker structural_cauchy aggregates repeated atoms on their source
+column and refuses any active prime low-gamma atom before summing
+A_i^2/beta_i. It inspects actual atoms instead of the correlation_mode
+label. A supplied structural label is invalid unless this exact proof
+passes. If an arithmetic_claim program happens to satisfy the theorem,
+the checker can independently recognize the paid correlation. Otherwise
+it performs finite correlation tests and leaves its uniform leaf unpaid.
+It may tighten an interval's correlation upper endpoint to the exact
+energy using the independently proved structural theorem; this is sound
+on admitted arithmetic rows. A contradictory lower endpoint>energy is
+reported as a failure, rather than concealed by that tightening.
+
+imported_operators actually traverses every075 feedback control's signed
+operator coefficients, creates one atom at each nonzero source column,
+uses its exported gamma for prime columns and equivalent gamma0 for
+direct columns, and carries the originating record. select_imported
+computes predictions from those real features, not merely template names.
+It recomputes the new weighted-Cauchy beta rather than retaining the old
+template's less efficient beta; the OPERATOR is preserved, while the
+new beta certificate is an explicit recomputation. Selection separates
+structural and arithmetic-claim modes. A floating transfer_score for an
+arithmetic-claim offer remains CONDITIONAL on its unpaid correlation;
+the checker and runner must retain that distinction in reports.
+
+Zero modes are represented by empty atom/coefficient lists. Their exposure,
+beta and rho are zero, direct structural proof is vacuously true, and
+the residual is exactly G. The checker requires nonempty sorted training
+and evaluation domains above U0, so it cannot describe an empty test
+as finite success. All uniform-source/RH flags must remain false. The
+conditional_induction_verified flag is a paid numerical/template verdict,
+not a uniform arithmetic residual proof. Its meaning must remain explicit
+even when structural correlation is known.
+
+Resource/accounting findings sent to root:
+* Producer matrix gates precede allocation and are deliberately large
+  (4096/8192 bytes per row-atom), but persistent exact-power/feature caches
+  are bounded only by entry count:150000 feature entries,100000 inherited
+  count-power entries,200000 inherited u-power entries. Admitted near-
+  100000-bit rational endpoints can make these combined caches exceed
+  per-task or aggregate budgets despite the matrix gate. A byte-aware
+  owned cache/clearing policy or an enforced conservative intermediate
+  byte bound is needed; mere maximum entry count is not such a proof.
+* Producer make_program calls frozen S.base_upper, whose arithmetic sieve
+  uses a fresh Meter. That work and allocation are not covered by the
+  supplied meter's live count; the added10*base_u charge is not a full
+  accounting of sieve/root work. Reserve/account its base work explicitly
+  or retain a separate receipt, rather than treating the inherited cache
+  hit/miss as free work. The same issue arises for exact count/root work
+  through frozen helpers, which do not charge the076 supplied meter.
+* Checker076 count/base caches are BYTE bounded, and its reserve method
+  adds those cache bytes to every075 allocation request. It gates base
+  sieve memory before construction, computes the base maximum in a
+  streaming loop instead of building a full U-tuple, and charges bounded
+  root arithmetic through the supplied meter. These address the075-style
+  large-base issue without editing the frozen075 source.
+* verify_program still assumes separately admitted arithmetic data. It
+  validates row shape/cuts but does not itself independently reconstruct
+  counts/B/Q/G. The runner must require075 source admission VERIFIED on
+  the same data before any076 formula verdict becomes authoritative.
+
+Existing diagnostics expose exact exposure, finite residual ratio,
+transfer ratio, base domination and repeated-column status. They correctly
+state that finite gain is not uniform proof. The transfer_ratio is
+C/((1-r)^2*Cbaseline), which measures the innovation-paid part; it is
+not generally the FULL B/Bbaseline when either base dominates. Add that
+separate full-bound ratio if reporting a complete bound improvement.
+Signed per-row gain2G L-L^2 and active low-gamma/unpaid status would
+further distinguish prediction gain from a paid proof. No diagnostic
+should replace the two lemma dispositions or freeze counterexample history.
+
+7. Root integration response before the scientific freeze
+
+The preceding independent static review was made before final integration;
+the following is the root implementer's response, not an assertion that
+the reviewer rechecked subsequent edits.
+
+Producer count/feature caches now have64MiB byte limits each. The count
+cache bypasses the frozen075 entry-count LRU. Prospective matrix/program
+gates include a512MiB cache/normalization allowance and the source parent
+horizon is bounded before inherited u-power arithmetic. The complete-base
+helper's allocations and a conservative sieve/root work allowance are
+charged explicitly. These are implementation work estimates, not CPU
+cycle measurements. The independent checker has its own byte-bounded
+count/base caches and resource gates.
+
+Program diagnostics now report complete_bound_ratio=B/Bbaseline including
+the base as well as the innovation-only transfer_ratio. No finite ratio
+is promoted to a uniform theorem. The runner requires matching independent
+source admission before program verification, freezes every proposal
+before new interstitial arithmetic, and rejects final evaluation unless
+both applicable lemmas passed earlier domains. Failed discovery formulas
+remain recorded; they cannot advance or have their failure erased.
+
+Thirteen distinct root producer/integration tests passed in13 executions,
+including a complete tiny runner/source/admission/final-gate exercise.
+Ten independent checker tests passed in14 executions. Total23 distinct
+new tests,27 executions; all saved attempts pass. No unchanged historical
+suite or scientific scale search was rerun for these development checks.

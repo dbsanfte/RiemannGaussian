@@ -1,0 +1,17 @@
+{
+  "stage": "080 postrun full-channel/second-log obstruction producer",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "../.venv/bin/python -B -m unittest test_mobius_full_mode_gate_080 -v",
+      "status": "PASS",
+      "tests_run": 3,
+      "elapsed_seconds": 0.8596354569890536,
+      "output": "test_exact_rho_envelope_and_selected_complements (test_mobius_full_mode_gate_080.FullModes) ... ok\ntest_positive_rho_only_zero_mass_and_unsupported_domains (test_mobius_full_mode_gate_080.FullModes) ... ok\ntest_pure_annihilator_needs_and_has_second_mode (test_mobius_full_mode_gate_080.FullModes) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.462s\n\nOK\n"
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 3,
+  "test_executions": 3,
+  "no_mobius_queries": true
+}

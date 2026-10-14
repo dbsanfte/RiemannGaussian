@@ -1,0 +1,595 @@
+{
+  "status": "independently_verified_signed_prime_error_filter_search",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-error-results/pilot-001",
+  "checks": {
+    "frozen_source_parent_and_sealed_final_provenance_checked": true,
+    "isolated_discovery_and_deterministic_selection_replay_checked": true,
+    "all_exact_logarithmic_coefficients_checked_by_actual_prime_sieve": true,
+    "complete_point_values_recomputed_with_logarithmic_integral": true,
+    "all_multiplicity_meromorphic_residue_rule_and_pole_weight_obstruction_checked": true,
+    "actual_zero_and_vanishing_multiplier_calibrated_by_native_contours": true,
+    "whole_unit_prime_jumps_and_rational_activation_costs_checked": true,
+    "full_exponential_recovery_cost_and_fixed_point_scope_checked": true,
+    "native_zeta_logarithms_checked_with_proved_absolute_coefficient_tails": true,
+    "support_controls_and_no_finite_to_uniform_promotion_checked": true
+  },
+  "programs": 228,
+  "estimates": 28691,
+  "archived": 12,
+  "statuses": {
+    "uniform_claim_ruled_out_by_actual_critical_zero_even_if_multiplier_vanishes": 2143,
+    "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof": 855,
+    "signed_growth_obligation_above_RH_threshold": 12449,
+    "uniform_claim_ruled_out_by_uncancelled_pole_logarithm": 13244
+  },
+  "exact_coefficients_checked": 31001,
+  "complete_signed_point_values_checked": 4524,
+  "complete_support_control_values_checked": 120,
+  "native_logarithmic_bridge_checks": 3,
+  "complete_coefficient_cutoff": 30104,
+  "finite_archived_passes": 10,
+  "RH_sufficient_obligations_passing_fresh_points": 10,
+  "finite_passes_nevertheless_globally_ruled_out": 0,
+  "finite_support_control_passes_nevertheless_globally_ruled_out": 0,
+  "surviving_uniform_proof_obligations": [
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "beta": "1",
+        "id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "origins": [
+          "unfiltered"
+        ],
+        "multiplier_at_one": "1"
+      },
+      "candidate": {
+        "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "1385/1024",
+        "offset": "173/256",
+        "observed_growth_slope": -2.1131285354632126,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "1385/1024",
+          "offset": "173/256",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[2.44269504088896340735992468100189213742664595 +/- 4.16e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[271.958254744693021232524852392086903322410863 +/- 5.58e-43]",
+        "log_reciprocal_cost": 271.958254744693,
+        "cost_is_all_height_certificate": false,
+        "id": "2b3beecb03e338230cbd649fe5ac852fd65166fec00e33fe280f0f5e757f47c5",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "1/8"
+          ],
+          [
+            "4",
+            "-17/4"
+          ]
+        ],
+        "beta": "1",
+        "id": "29c94e74ce6d6f0332d9f79fb26851c0fdcb184fb08307232148f6f65a148d35",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "0"
+      },
+      "candidate": {
+        "program_id": "29c94e74ce6d6f0332d9f79fb26851c0fdcb184fb08307232148f6f65a148d35",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "2583/1024",
+        "offset": "0",
+        "observed_growth_slope": -1.6411352508662318,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "2583/1024",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[8.44072696188904724063983994712902079203162265 +/- 2.58e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[229.853578070548167107024724384223723599906635 +/- 4.80e-43]",
+        "log_reciprocal_cost": 229.85357807054817,
+        "cost_is_all_height_certificate": false,
+        "id": "6cf2f626dee9c1e1c84d32d4e5c089e6b33559554e67c2dca0f5dfb90828b50d",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-5/8"
+          ]
+        ],
+        "beta": "1",
+        "id": "97093f8dca92a7faac4d94f6704edb3ee435c77968236fb1247b8c1ae4adc8a2",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "11/16"
+      },
+      "candidate": {
+        "program_id": "97093f8dca92a7faac4d94f6704edb3ee435c77968236fb1247b8c1ae4adc8a2",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "15/16",
+        "offset": "49/128",
+        "observed_growth_slope": 0.13733301760906158,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "15/16",
+          "offset": "49/128",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[3.51853724116676447215990114381498343037247281 +/- 4.83e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[237.408720903350895062155354607112518629559033 +/- 2.64e-43]",
+        "log_reciprocal_cost": 237.40872090335088,
+        "cost_is_all_height_certificate": false,
+        "id": "db6a58c75b9c2db3fdc7212f06fd1a1189347604bcfce322b9d681f563b4e603",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-2"
+          ]
+        ],
+        "beta": "1",
+        "id": "915d022466aae525d2421bfd9b794ac222794aae94712689e61fedf0a1070714",
+        "origins": [
+          "finite_differences"
+        ],
+        "multiplier_at_one": "0"
+      },
+      "candidate": {
+        "program_id": "915d022466aae525d2421bfd9b794ac222794aae94712689e61fedf0a1070714",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "757/512",
+        "offset": "0",
+        "observed_growth_slope": 0.2558163771613553,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "757/512",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[5.88539008177792681471984936200378427485329191 +/- 1.70e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[253.383577449011936448863506156016250351567427 +/- 2.11e-43]",
+        "log_reciprocal_cost": 253.38357744901194,
+        "cost_is_all_height_certificate": false,
+        "id": "2860b16f505a75b34b2553e6101d07aca9490cc15157b5865f1c20b6fb8148a1",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "31/16"
+          ]
+        ],
+        "beta": "1",
+        "id": "60834c5ed18d2c13a40587f030718db032c5c28507bde362a1e80c2293bc7c16",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "79/48"
+      },
+      "candidate": {
+        "program_id": "60834c5ed18d2c13a40587f030718db032c5c28507bde362a1e80c2293bc7c16",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "1729/1024",
+        "offset": "0",
+        "observed_growth_slope": 0.09247690741824442,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "1729/1024",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[5.31193558812975227461320937081561414284802147 +/- 3.80e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[257.189557743999834482154561803195241312149943 +/- 3.78e-43]",
+        "log_reciprocal_cost": 257.18955774399984,
+        "cost_is_all_height_certificate": false,
+        "id": "e3f25474a92dfd47666fc65fdf625450f53cff036f6e0adc0252cfa7aed78214",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "5",
+            "25/32"
+          ]
+        ],
+        "beta": "1",
+        "id": "fd94bbb18b4c40e2e5d0cf5c57484c3e5e5b4fa531e37f162f840c9e9db9c199",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "37/32"
+      },
+      "candidate": {
+        "program_id": "fd94bbb18b4c40e2e5d0cf5c57484c3e5e5b4fa531e37f162f840c9e9db9c199",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "757/512",
+        "offset": "0",
+        "observed_growth_slope": 0.03266157401469604,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "757/512",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[3.44936614102786393975991291240843778389955938 +/- 4.49e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[258.747066569694282460080676120145663744410607 +/- 2.41e-43]",
+        "log_reciprocal_cost": 258.74706656969425,
+        "cost_is_all_height_certificate": false,
+        "id": "e5a498cdc67b4e9ba32d38c12bc2c1a91202251ad72dc8e2d3a63eeec87a2fc7",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-1/16"
+          ]
+        ],
+        "beta": "1",
+        "id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "31/32"
+      },
+      "candidate": {
+        "program_id": "cc849776c30e73304bfad2a2219373552706c5129ef845c97c6f1cffde578baa",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "1281/1024",
+        "offset": "5/8",
+        "observed_growth_slope": -1.792230346707345,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "1281/1024",
+          "offset": "5/8",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[2.55027926091674351383992232728320126672122864 +/- 2.21e-46]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[262.338745207670062773383120570965885391889459 +/- 3.95e-43]",
+        "log_reciprocal_cost": 262.33874520767006,
+        "cost_is_all_height_certificate": false,
+        "id": "fd0a930f4406db5cb4eeb960e66634b54e990c2ac43d8539ce1695a249870715",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "-7/4"
+          ]
+        ],
+        "beta": "1",
+        "id": "a471fba3cb3b201e1ead6287ee9419fcd28c0c346a6fda2b8093962153cdaa67",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "1/8"
+      },
+      "candidate": {
+        "program_id": "a471fba3cb3b201e1ead6287ee9419fcd28c0c346a6fda2b8093962153cdaa67",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "757/512",
+        "offset": "0",
+        "observed_growth_slope": 0.5556345986363859,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "757/512",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[5.45505320166680638879985877687854775767496116 +/- 4.04e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[264.063021849019833091377251579168743809185251 +/- 2.31e-43]",
+        "log_reciprocal_cost": 264.06302184901983,
+        "cost_is_all_height_certificate": false,
+        "id": "466b73fef9686d5fb92ac7bda50ed0eb7c8d331494e3c3d4c605b1b7ef67cac2",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "5",
+            "5"
+          ],
+          [
+            "25",
+            "7/4"
+          ],
+          [
+            "125",
+            "-15/4"
+          ]
+        ],
+        "beta": "1",
+        "id": "55339e93a93cd3785276ba2ef1a5b9aae3aa39c9f8e556a65eb6d768a810d645",
+        "origins": [
+          "unrestricted_rational"
+        ],
+        "multiplier_at_one": "51/25"
+      },
+      "candidate": {
+        "program_id": "55339e93a93cd3785276ba2ef1a5b9aae3aa39c9f8e556a65eb6d768a810d645",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "2367/1024",
+        "offset": "0",
+        "observed_growth_slope": 0.04365654354561617,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "2367/1024",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[14.5296595858668231554558418301039734885959565 +/- 3.73e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[270.623280643420312675136675839686913670187047 +/- 7.46e-44]",
+        "log_reciprocal_cost": 270.6232806434203,
+        "cost_is_all_height_certificate": false,
+        "id": "9a22479d555eab8bd04ece0cd8034efcb4fb85606c08c3323988ba038d53a537",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    },
+    {
+      "program": {
+        "atoms": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "3",
+            "-3"
+          ]
+        ],
+        "beta": "1",
+        "id": "c112bde3ed32a0e4df089ed63cc6941d6324ff3e08835bee0f4c521de1e46666",
+        "origins": [
+          "finite_differences"
+        ],
+        "multiplier_at_one": "0"
+      },
+      "candidate": {
+        "program_id": "c112bde3ed32a0e4df089ed63cc6941d6324ff3e08835bee0f4c521de1e46666",
+        "theta": "1/2",
+        "log_power": "0",
+        "constant": "757/512",
+        "offset": "0",
+        "observed_growth_slope": 0.6379912462784839,
+        "transfer": {
+          "theta": "1/2",
+          "log_power": "0",
+          "constant": "757/512",
+          "offset": "0",
+          "integer_premise": "For every integer n>=1, |R(n)-offset|<=C*n^theta*log(e+n)^log_power",
+          "real_extension": "|R(t)-offset|<=C*t^theta*log(e+t)^log_power+B for every real t>=1",
+          "increment_cost_ball": "[6.88539008177792681471984936200378427485329191 +/- 1.70e-45]",
+          "mellin_exponent": "1/2",
+          "multiplier_not_identically_zero": true,
+          "all_height_multiplier_nonvanishing_required": false,
+          "every_ordinary_zero_multiplicity_retained": true,
+          "uncancelled_pole_logarithm_at_one": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_signed_prime_error_obligation_missing_uniform_proof",
+        "cost_sigma": "5/8",
+        "cost_height": "16",
+        "conditional_log_reciprocal_bound_ball": "[272.061151486913684627820043886126712468213487 +/- 1.94e-43]",
+        "log_reciprocal_cost": 272.0611514869137,
+        "cost_is_all_height_certificate": false,
+        "id": "a123a3d5b487baf471c4ca24775db3742101ca36d91204cb631dbeaa9d7a0303",
+        "validation_failures": [],
+        "validation_unresolved": []
+      }
+    }
+  ],
+  "surviving_filters_failing_old_gate_by_zero_at_one": 3,
+  "all_height_multiplier_nonvanishing_required": false,
+  "isolated_multiplier_zeros_preserve_every_ordinary_zero_multiplicity": true,
+  "whole_unit_integer_to_real_transfer_proved": true,
+  "native_zero_calibration_scope": "guided analytic multiplier F^k vanishes at the enclosed actual zero, separate from finite-dilation discovery",
+  "analytic_proof_is_machine_formalized": false,
+  "quantitative_cost_scope": "full exponential reconstruction at one declared point; no all-height removable-division certificate",
+  "historical_priority_is_acceptance_gate": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "f9aa6e75bebaf79f482bde544b9f988ede2a07729d170348d517c67652613a09"
+}

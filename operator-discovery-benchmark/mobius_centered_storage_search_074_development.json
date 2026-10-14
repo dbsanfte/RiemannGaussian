@@ -1,0 +1,32 @@
+{
+  "schema": "centered-storage-search-development-v1",
+  "runs": [
+    {
+      "tests": 3,
+      "test_names": [
+        "test_mobius_centered_storage_074.GrammarSearchTests.test_boundary_bulk_and_unknown_mixture_are_distinct",
+        "test_mobius_centered_storage_074.GrammarSearchTests.test_catalog_obeys_physical_rules_despite_unequal_scaling",
+        "test_mobius_centered_storage_074.GrammarSearchTests.test_small_discovery_has_independently_valid_exact_candidates"
+      ],
+      "failures": 0,
+      "errors": 0,
+      "output": "test_boundary_bulk_and_unknown_mixture_are_distinct (test_mobius_centered_storage_074.GrammarSearchTests) ... ok\ntest_catalog_obeys_physical_rules_despite_unequal_scaling (test_mobius_centered_storage_074.GrammarSearchTests) ... ok\ntest_small_discovery_has_independently_valid_exact_candidates (test_mobius_centered_storage_074.GrammarSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.117s\n\nOK\n",
+      "elapsed_seconds": 0.1170715750195086
+    },
+    {
+      "tests": 1,
+      "test_names": [
+        "test_mobius_centered_storage_integration_074.StudyIntegrationTests.test_new_grammar_candidate_is_independently_admitted_and_evaluated"
+      ],
+      "failures": 0,
+      "errors": 0,
+      "output": "test_new_grammar_candidate_is_independently_admitted_and_evaluated (test_mobius_centered_storage_integration_074.StudyIntegrationTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.182s\n\nOK\n",
+      "elapsed_seconds": 0.18185171601362526
+    }
+  ],
+  "hashes_used": false,
+  "old_suites_replayed": false,
+  "status": "PASS",
+  "distinct_tests": 4,
+  "test_invocations": 4
+}

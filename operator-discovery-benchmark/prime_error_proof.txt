@@ -1,0 +1,176 @@
+SIGNED PRIME-ERROR DILATIONS WITHOUT A NONVANISHING-MULTIPLIER GATE
+
+Scope: a universal conditional zero-faithfulness theorem and a bounded
+construction/estimate search. The all-scale signed arithmetic premise is
+unproved. The analytic proof below is mathematical prose, not a formal proof
+assistant artifact. Finite audits check its arithmetic, local residue rules,
+actual-zero calibration and quantitative constants independently.
+
+1. Actual arithmetic first jet and a bounded-interval truncation
+
+Let mu be the factor-free Dirichlet inverse of the constant-one sequence.
+The negative first coefficient-power jet is lambda=-log_D(mu)=log_D(1).
+As proved in parameter_jet_proof.txt, lambda(p^k)=1/k at actual prime powers,
+and lambda(n)=0 otherwise. In particular 0<=lambda(n)<=1, lambda(1)=0.
+It is produced by finite-at-each-index Dirichlet logarithms, without primes
+or factorisation; the independent evaluator uses a prime sieve instead.
+
+For rational beta define e_beta(x)=li(x)-beta*sum_(n<x)lambda(n) for x>1.
+Its initial Mellin transform, Re(s)>1, is
+  -[log(s-1)+beta*log zeta(s)]/s.
+The branch is canonical on Re(s)>1 and real on the real axis there.
+
+The function li(x)=Ei(log x) diverges logarithmically in log x as x->1+.
+Define E_beta(x)=0 for 0<x<2 and E_beta(x)=e_beta(x) for x>=2. The strict
+endpoint at two gives E_beta(2)=li(2), with the prime-two jump immediately
+to its right. Define the ENTIRE function
+  B_0(s)=integral_1^2 li(x)*x^(-s-1)dx.
+It is entire because the log-log singularity is integrable and log x is
+bounded on this compact interval, uniformly on compact s sets. Then
+  Mellin(E_beta)(s) = -[log(s-1)+beta*log zeta(s)]/s - B_0(s).
+Changing a bounded interval supplies no new arithmetic estimate.
+
+2. General finite dilations, including multipliers with zeros
+
+Let distinct delays d_j>=1 be positive rationals, and c_j rational. The
+grammar normalizes d_0=1,c_0=1, so
+  R(t)=sum_j c_j E_beta(t/d_j),
+  D(s)=sum_j c_j*d_j^(-s).
+D is entire. As real s->infinity, D(s)->1; hence it is not identically zero.
+It may vanish at arbitrary isolated points, including inside Re(s)>1/2.
+Absolute convergence on Re(s)>1 and a change of variables give
+  H_R(s)=Mellin(R)(s)
+    =-D(s)*[log(s-1)+beta*log zeta(s)]/s-D(s)*B_0(s).
+
+The earlier 1/zeta-based bridge needs multiplier nonvanishing to prevent
+erasing a zero pole. This logarithmic bridge does not. The following
+argument applies to any non-identically-zero meromorphic multiplier on the
+claimed domain, although this arithmetic pilot supplies entire finite sums.
+
+Suppose a proved uniform signed estimate makes H_R holomorphic on the
+connected half-plane Re(s)>eta, eta>=0. The quotient
+  Q(s)=s*H_R(s)/D(s)+s*B_0(s)
+is MEROMORPHIC there; zeros of D give at worst isolated poles. In Re(s)>1,
+away from isolated D zeros, differentiate the initial identity:
+  Q'(s)=-1/(s-1)-beta*zeta'(s)/zeta(s).
+Both sides are meromorphic on the claimed half-plane, so the meromorphic
+identity theorem extends this equality through it.
+
+A derivative of any meromorphic function has residue ZERO at every point.
+Indeed a local Laurent series sum_(k=-K)^infinity a_k z^k differentiates to
+sum k*a_k*z^(k-1); its z^-1 coefficient comes only from k=0 and is zero.
+At an ordinary zeta zero of multiplicity m>=1, zeta'/zeta has residue m.
+Consequently the right-hand side has residue -beta*m at that zero. For
+beta!=0 this contradicts zero residue, irrespective of the vanishing order
+of D at that point. Multiplying a logarithmic singularity by a finite-order
+zero does not erase its information.
+
+At s=1, zeta has order -1, so the right side has residue beta-1. Therefore
+if eta<1, a uniform signed bound is impossible unless beta=1. Even a zero
+of D at one cannot repair an unmatched logarithmic residue. For beta=1,
+the pole terms cancel, Q'=-F'/F where F(s)=(s-1)zeta(s). The apparent pole
+at one is removable since F(1)=1. A PROVED uniform premise with eta<=1/2
+excludes every ordinary zero right of the critical line, regardless of its
+multiplicity and regardless of isolated D zeros. The standard zeta
+functional equation then implies RH.
+
+The independently re-certified known critical zero excludes eta<1/2 for
+beta=1. This obstruction applies even when D vanishes at that zero. It does
+not require RH or a lower bound for |D| on the critical half-plane.
+Classical dependencies: meromorphic identity theorem, Laurent series and
+residues (primary reference https://dlmf.nist.gov/1.10), the meromorphic
+continuation and simple pole of ordinary zeta (https://dlmf.nist.gov/25.2),
+and the ordinary-zeta functional equation for the RH reflection step.
+
+3. Whole-unit arithmetic increments, not sampled real interpolation
+
+For every real N<=t<N+1, integer N>=1, consider x=t/d, y=N/d, d>=1.
+Their separation is <1/d<=1. On x,y>=2, li is increasing with derivative
+1/log x<=1/log 2. The strict count of any sequence with coefficient
+magnitudes <=1 changes by at most one because the interval has length
+strictly less than one. Thus
+  |E_beta(t/d)-E_beta(N/d)|<=|beta|+1/(d*log 2).
+If both arguments are below two, the increment is zero. If activation at
+two falls inside the interval, add |li(2)|. Integer d places activation at
+the integer 2d, so it cannot fall strictly inside [N,N+1); this addition
+is needed only for noninteger rational d.
+
+Hence a proved, scale-independent increment cost is
+ B=sum_j |c_j|*(|beta|+1/(d_j log 2)
+                      +[d_j noninteger]*|li(2)|).
+For theta>=0 and ell>=0, a uniform INTEGER bound
+  |R(N)-A|<=C*N^theta*log(e+N)^ell for EVERY integer N>=1
+implies for EVERY real t>=1
+  |R(t)-A|<=C*t^theta*log(e+t)^ell+B.
+No Lipschitz continuity across prime-power jumps is asserted. Truncating at
+two avoids the earlier unbounded log-log activation singularity. This is
+a proved global transfer rule, not a proof of its signed integer premise.
+
+The real bound gives holomorphic Mellin transform on Re(s)>theta by
+dominated convergence. A constant offset contributes A/s, meromorphic
+only at zero, which is outside that open domain for theta>=0. Thus the
+residue argument above applies with eta=theta. Any finite nonnegative
+rational logarithmic power ell is allowed; it changes constants, not eta.
+
+4. Quantitative cost and isolated multiplier zeros
+
+Set p=ceil(ell). For t>=1, log(e+t)<=log(e+1)+log t and log(e+t)>=1, so
+for sigma>theta,
+ |Mellin(R-A)(s)| <= C*sum_(j=0)^p binom(p,j)*log(e+1)^(p-j)*j!
+                                     /(sigma-theta)^(j+1) + B/sigma.
+Call the right side H_sigma. For sigma>=0 the compact correction satisfies
+ |B_0(s)| <= log(2)*(2+EulerGamma-log(log 2))=:J_0.
+Proof: for 0<u<=log2<1,
+ |Ei(u)|<=EulerGamma-log u+exp(u)-1<=1+EulerGamma-log u.
+Integrate this against exp(-sigma*u)<=1 to obtain J_0.
+
+For beta=1 and a declared s with D(s)!=0, the exact initial branch and its
+conditional continuation give
+ |log F(s)| <= (|s|*H_sigma+|A|)/|D(s)|+|s|*J_0,
+ log|1/zeta(s)| <= log|s-1|+(|s|*H_sigma+|A|)/|D(s)|+|s|*J_0.
+The exponential reconstruction cost is charged. It is not the linear
+recovery cost of a direct inverse-zeta operator. At D zeros the qualitative
+argument still works, but this displayed quantitative division bound is
+unavailable. A separate removable-quotient certificate would be needed for
+an all-height quantitative bound. The pilot reports a fixed evaluation
+point and never labels its cost an all-height lower bound for |D|.
+
+5. Positive-support and delayed-support controls
+
+Replace lambda(n) by one for n>=2, or by the actual coefficients up to a
+fixed cutoff and one thereafter; lambda(1)=0 in both controls. Their
+Dirichlet series L(s) equals zeta(s)-1 plus a finite entire correction.
+Their E_beta transform contains -log(s-1)/s-beta*L(s)/s-B_0(s).
+The same meromorphic quotient would satisfy
+  Q'(s)=-1/(s-1)-beta*L'(s).
+The derivative L' has residue zero, so the right side has residue -1 at one.
+This is impossible for eta<1, for EVERY normalized finite dilation filter.
+In particular D(1)=0 can remove the control's linear pole term but cannot
+remove the li logarithm. These controls remain globally false even if an
+archived bound passes their finite points. The evaluator records both facts.
+
+6. Search scope and acceptance
+
+Frozen generation includes signed finite differences, unrestricted rational
+polynomials, mixed rational delays, and least-squares coefficient inference.
+Training-only offsets, power slopes and logarithmic powers generate bound
+proposals. Candidate estimates are frozen before validation; selection is
+sealed before evaluator-owned irregular final inputs. The worker cannot
+read final data or make network, subprocess or literature calls.
+
+The probe certifies complete point sums, exact logarithmic coefficients,
+local Laurent/residue arithmetic, native zeta logarithms with proved tails,
+and a guided actual-zero calibration using a multiplier that vanishes at
+that zero. The native contour evaluator uses a local zeta Taylor polynomial
+through degree eleven and certified remainders from its twelfth derivative
+over a convex complex box. For M>=|zeta^(12)|/12!, the errors are at most
+M*|s-centre|^12 for zeta and 12*M*|s-centre|^11 for its first derivative.
+These are enclosures of the ACTUAL zeta function, not substitutions of a
+polynomial for its zeros. Analytic quadrature receives these certified balls;
+balls outside the derivative box are rejected and subdivided.
+The failed direct-quadrature preflight is retained with its original sources
+and parameters; it consumed no discovery-final inputs.
+The probe does not certify complete window moments or prove a new
+uniform arithmetic estimate. No historical novelty is claimed. The signed
+integer premise, any all-height quantitative quotient bound, and RH remain
+unproved; universal zero-faithfulness alone does not discharge them.

@@ -1,0 +1,189 @@
+CENTERED MOBIUS ARGUMENT SEARCH 041: EXACT IMPLICATIONS, OPEN SIGNED CONTROL
+Independent scope/proof review. No coefficient archive or source experiment.
+Owner: /root/prefix_proof_checker. Frozen040 and previous files unchanged.
+
+1. The target, source and admitted unconditional inputs
+
+Let 0<r<1/2, theta=1-r, q>=2 integer, b=power(-r)*mu,
+c=b-q delta_q*b, and
+ kappa=(1-q^r)/(theta*zeta(theta)),
+ H(x)=sum_(n<=x)c(n)-kappa*x^theta, x>0; H(0)=0.
+The actual040 target has r=1/3,q=2. Its bound is still OPEN:
+ every epsilon>0 admits C_epsilon independent of every integer X>=1,
+ E_H(X)=X^-2 sum_(X<=n<2X) H(n)^2 <= C_epsilon X^epsilon.
+Neither ordinary convergence of mu(theta) nor this estimate is assumed.
+Kappa is an analytic normalization. Initial Dirichlet equality is in its
+absolute convergence half-plane, followed by analytic continuation.
+
+For every prime p, put v=p^-r in (0,1). The local b series is
+ (1-t)/(1-v*t). Its coefficients are b(p^e)=v^(e-1)(v-1), e>=1,
+so |b(n)|<=1 by multiplicativity and |c(n)|<=q+1 by the full dilation.
+For a separately certified integer K>=|kappa|, set B=q+1+K. Concavity gives
+ |a(n)|<=B, a(n)=H(n)-H(n-1)=c(n)-kappa[n^theta-(n-1)^theta].
+This includes n=1, a(1)=1-kappa. No previous prefix can be restarted.
+The independent checker computes kappa at256-bit Arb precision and rejects
+an unproved ceiling; a supplied bound certificate is replayed exactly.
+This scalar computation observes no arithmetic coefficient or cached norm.
+
+2. A construction grammar acting directly on the target
+
+For an integer branch m>=2 define the child average and innovation
+ A_m(n)=m^-1 sum_(j=0..m-1)H(m*n+j), I=A_m-lambda H.
+The detector chooses m,lambda,rho,delta,C. The initial finite grammar permits
+m=2,3,5,7, lambda rational or the source-generated prime power m^-r,
+rho=0,1/2,1, delta=0,1/4,1, C=0,1. All are proposals, not fitted uniform
+constants. Generic checker supports bounded integer m>=2, arbitrary canonical
+rational lambda, rho in[0,1], delta,C>=0. Prime-power lambda requires an actual
+prime and exactly the source exponent. No float can be a scalar premise.
+
+Use E_Z(X)=X^-2 sum_(X<=n<2X)Z(n)^2, and the full signed covariance
+ C_JI(X)=X^-2 sum H(n)I(n), retaining each sign. The searched OPEN input is
+ 2lambda C_JI+(1+delta)E_I <= (m*rho-lambda^2)E_H+C D(X),
+ D(X)=X^-1 sum_(k=1..2mX-1)a(k)^2,
+for EVERY integer X>=1 with ONE fixed program and constants. Finite checks
+at selected X do not license this quantifier or the original target bound.
+
+The equivalent expanded quadratic is
+ (1+delta)E_A-2delta*lambda C_HA+(delta*lambda^2-m*rho)E_H-C D<=0.
+For delta=0 lambda cancels completely. Thus varying lambda in that case is
+not discovery of different proofs: all are the same endpoint recurrence,
+apart from its separately paid within-cell error. Canonicalize those aliases.
+For delta>0 the condition is E_A-m*rho E_H+delta E_I<=C D. It demands an
+extra nonnegative innovation price, stronger unless I vanishes; it remains
+an arithmetic assertion, not an unconditional consequence of a chosen basis.
+
+3. The paid part is exact and small
+
+Finite variance decomposition gives the identity
+ E_H(mX)=E_A(X)/m+V_m(X),
+ V_m(X)=(m^2 X^2)^-1 sum_n sum_j[H(mn+j)-A_m(n)]^2.
+For any m real numbers z_j, sum_j(z_j-mean)^2=(1/m)sum_(j<k)(z_j-z_k)^2.
+Here |z_j-z_k|<=B|j-k| and sum_(j<k)(j-k)^2=m^2(m^2-1)/12. Hence
+ 0<=V_m(X)<=v_m/X, v_m=B^2(m^2-1)/(12m).
+The constant is sharp for a linear sequence with increments B. Counting
+all increments, including the unit, gives D(X)<=2mB^2.
+
+Consequently the OPEN covariance premise implies
+ E_H(mX)+(delta/m)E_I(X)<=rho E_H(X)+2CB^2+v_m/X.
+Dropping the nonnegative innovation is valid only because delta>=0.
+The independent checker admits this conditional implication and its paid
+forcing/error constants. It leaves the covariance and uniform target OPEN.
+
+4. Complete scale recovery, including m>2 and C=0
+
+An m-adic chain starting only at1 leaves gaps for m>2. Keep ALL m-1 chains
+X=s*m^j, s=1,...,m-1. A unconditional seed bound is
+ E_H(s)<=4B^2 s<=S=4B^2(m-1), since H(0)=0 and |a|<=B.
+Put F=2CB^2, v=v_m. Conditional chain prices are:
+ rho<1:       L=S+(F+v)/(1-rho), log_power0;
+ rho=1,C=0:  L=S+v*m/(m-1),     log_power0;
+ rho=1,C>0:  L=S+v*m/(m-1)+F*m/(m-1), log_power1.
+The middle case is genuinely bounded: sum_j v/(s*m^j) is finite. It must
+not be unnecessarily recorded as logarithmic growth.
+
+For any integer X choose j with m^j<=X<m^(j+1), s=floor(X/m^j). Then
+Y=s*m^j<=X<Y'=(s+1)*m^j, with Y' becoming the seed1 next chain if s=m-1.
+The two energy windows [Y,2Y),[Y',2Y') cover [X,2X), because Y'<=2Y.
+Their nonnegative energies give E_H(X)<=E_H(Y)+4 E_H(Y'). The factor5
+is therefore a safe all-integer recovery, not merely an endpoint statement.
+For logarithmic chains Y' can exceed X: do NOT use ln Y'<=ln X. The chain
+at Y' takes at most j+1 steps, j<=ln X/ln m. Since ln m>=(m-1)/m,
+ E_H(Y')<=S+vm/(m-1)+F+F*m/(m-1)*ln X
+          <=L*(1+ln X).
+The same L covers Y. Thus E_H(X)<=5L*(1+ln X)^log_power for all integers.
+For every epsilon>0, 1+ln X<=(1+1/epsilon)X^epsilon, X>=1. The recovered
+subpower bound is CONDITIONAL on the single all-integer covariance leaf.
+There is no promotion from observations to a recurrence theorem.
+
+5. Source-sensitive prime innovation identities
+
+For p distinct from q prime, c has the same local b multiplier at p:
+ c(pn)=p^-r c(n)-1_(p does not divide n)c(n).
+Thus with O_p(x)=sum_(n<=x,p does not divide n)c(n),
+ P_c(px)=p^-r P_c(x)+O_p(px)-O_p(x).
+This is valid for composite q also when p does not divide q; 'distinct' alone
+is insufficient for composite q. The backend certificate's other-prime law
+is explicitly under its q-prime hypothesis. No generic q is claimed prime.
+
+At the selected prime q=p the local c series is
+ (1-t)(1-p*t)/(1-p^-r*t).
+It has a valuation-one crossing:
+ c(pn)=p^-r c(n)-(p+1)1_(p does not divide n)b(n)
+                         +p 1_(valuation_p(n)=1)b(n/p).
+The geometric recurrence starts only at coefficient e>=3, not e>=2.
+With O(x)=sum_(n<=x,p does not divide n)b(n), the exact full-prefix identity is
+ P_c(px)=p^-r P_c(x)+O(px)-(p+1)O(x)+p O(x/p).
+Every fractional/subunit argument is retained. Let k_b=1/(theta*zeta(theta)),
+ k_O=k_b*(p-1)/(p-p^r), and Otilde(x)=O(x)-k_O*x^theta.
+Analytic local-factor algebra gives kappa=(1-p^r)k_b and
+ H(px)=p^-r H(x)+Otilde(px)-(p+1)Otilde(x)+p Otilde(x/p).
+No ordinary critical coefficient moment is needed for this algebra. No
+uniform bound on Otilde is supplied or follows from the algebra alone.
+
+This is a useful genuinely source-dependent second construction family:
+infer valuations from the rational local series, generate p-free prefix
+states and all scale crossings, and substitute them into I and the covariance
+matrix. It is not vanishing prime-only padding. The free p-coprime innovation
+and its parent correlation are actual arithmetic quantities. The signed
+source identity does not automatically make their quadratic form nonpositive.
+
+A subsequent finite storage search may use exact relations L z=0, select
+Q dominating the root coordinate, and certify Q_parent-Q_child-forcing =
+P+L^T Y+Y^T L with P>=0. All coefficients/root powers and complete scale domains
+must be replayed; every forcing requires a uniform independent price. Never
+price Otilde using the desired H theorem or drop the valuation-one crossing.
+A formal failure of this relation relaxation does not refute actual source
+cancellation. A theorem derived solely by renaming the endpoint defect is
+classified as a restatement, not new arithmetic control.
+
+6. Generic-rule failure and useful adversarial calibrations
+
+There is an exact unit-retaining countermodel for increment-norm-only rules:
+H(0)=0,H(n)=n-kappa for n>=1, kappa in[0,K]. It has a(1)=1-kappa and a(n)=1
+later, so all admitted centered-increment bounds hold. Its child average is
+A=mH+(m-1)(kappa+1/2). If X>=2K, H(n)>=n/2 on the parent block, whence
+ E_A-m*rho E_H+delta E_I-C D
+ >=m(m-rho)X/4-2m C B^2.
+Choose a dyadic integer X>max(2K,8CB^2/(m-rho),1), obtaining a strict rational
+positive witness independently of lambda. This rejects a proof primitive
+using only bounded centered increments and the retained unit. It does NOT
+satisfy the complete actual Euler/coefficient-source laws or actual analytic
+centering law, and does NOT refute the target or RH. Reject any stronger label.
+
+Positive controls should generate a recurrence with known signed cancellation
+from a synthetic exact recursive source; discovery must find lambda/damping
+without being told the successful representation. A negative control can
+share arbitrary finite observations but grow later. Neither becomes an
+all-prime arithmetic proof without the exact source-definition verifier.
+The owned checker suite uses arbitrary signed rational increments to verify
+the sharp Haar constant, independent covariance expansion, retained unit,
+prime-power crossing, complete rational floor identities, all seed coverage,
+resonant/C0 recovery, generic-rule witness and malformed proof/parameter guards.
+These test certificate capability. They do not show the actual signed input
+has been paid by the supplied proof library.
+
+7. Fractional weights and degree costs cannot disappear
+
+For a storage monomial of degree d in prefix quantities with only |H(n)|<=Bn,
+X^-2 summation costs O(X^(d-1)). A coefficient X^-gamma changes that to
+d-1-gamma; replacing X by mX changes it by the exact factor m^-gamma.
+A squared short innovation of length O(X^eta), eta>=0, has trivial normalized
+energy O(X^(2eta-1)). Paying that small local boundary says nothing about the
+long parent-child innovation. Telescoping approximately X^(1-eta) such pieces
+and using triangle/Cauchy restores the generic O(X) energy price. All counts,
+weights, endpoint/head and mixed terms must be retained. Odd/coprime states
+cannot be substituted for full-prefix states; a prime-only model does not
+cover composite coefficients.
+
+Independent API and proof status
+
+check_centered_mobius_arguments_041.verify_program(program,r,q,kappa_ceiling,
+coefficient_certificate,meter) admits canonical typed programs and synthesizes
+paid-input and CONDITIONAL all-scale recovery metadata. It rejects optional
+proof flags/graph fields as unverified input. Prime laws/source normalization
+are replayed independently, with no producer/backend import. Dependency nodes
+are topological; no PROVED node has an OPEN premise. The signed leaf, uniform
+J target, original full F and RH remain OPEN/false. The source and target of040
+must still be bound by the runner to the full inherited continuation, with its
+original goals and costs preserved. The checker does not replace that ancestry
+with its generic r,q parameters.

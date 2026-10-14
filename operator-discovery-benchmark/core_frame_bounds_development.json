@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_core_frame_bounds",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_frame_bounds operations=47005\n",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.016s\n\nOK\n",
+      "operations": 47005,
+      "elapsed_seconds": 0.0887979350227397
+    },
+    {
+      "command": "python -B -m unittest test_core_frame_bounds.FrameBoundTests.test_source_substitution_merges_actual_shared_moments test_core_frame_bounds.FrameBoundTests.test_source_substitution_rejects_unrepresented_correction",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_frame_bounds operations=26794\n",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.010s\n\nOK\n",
+      "operations": 26794,
+      "elapsed_seconds": 0.07210738299181685,
+      "reason": "new exact source-substitution functionality only"
+    }
+  ],
+  "operations": 73799
+}

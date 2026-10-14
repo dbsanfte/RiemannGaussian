@@ -1,0 +1,69 @@
+SIGNED LAG AUXILIARIES FOR THE RAW ARITHMETIC HEAD067
+
+Previous turn066 made substantive progress: an exact actual-Mobius sparse
+source rewrite and a uniform square-root/log terminal bound. Its head is
+still open.067 preserves that source and the full original RH objective.
+
+New supplied theorem rules are the bounded source jump, exact second-moment
+expansion, short-lag triangle inequality, dyadic Cauchy transfer and endpoint
+convexity. They are mathematical inputs; the detector does not claim to
+have invented these rules. The program compiles the source into exact
+signed correlation operators and generates rational-power lag auxiliaries.
+The generated formulas and remaining obligations are the search output.
+
+For each dyadic head block I=[L,min(2L-1,ceil(H/2)-1)], retain the same
+ordinary mu in all n, rows and channels. Put a_j(n)=mu(n)*kappa_j(n), with
+kappa_j(n)=g(jn)-g((j+1)n), g=f_y-f_full. Because |g|<=2, |kappa|<=4.
+Let R_I(h)=sum_(j in I,n>=1)a_j(n)a_j(n+h), extended by zero. Compute all
+h>=0 through the complete support, not selected favorable shifts. Then
+E_I=R_I(0)+2sum_(h>0)R_I(h) exactly. Keep full-floor direct atoms separately.
+
+The paid source first moment M1 gives R_I(0)<=4M1/L and
+|R_I(h)|<=4M1/L. Therefore for every integer cutoff B>=0,
+E_I <= (4+8B)M1/L + (2sum_(h>B)R_I(h))_+.
+The finite certificate uses B clipped to the maximum lag of its block.
+The universal rate uses B<=N^delta, not an observed effective cutoff.
+With |I|<=L and M1=O(N logN), the diagonal/near-lag budget is
+O(N^((1+delta)/2) log(2N)^1.5). Arbitrarily small positive rational delta
+are allowed. For RH strength the remaining aggregate positive far-risk
+must still be bounded uniformly at the required square-root/subpower rate.
+No fixed-lag Chowla bound is assumed and separate absolute far-correlations
+are not substituted for this joined signed expression.
+
+Before computing new scientific correlations, freeze every source, checker,
+new test/receipt, analytical scope review, this protocol and runner. Use all
+36 saved066 sources and every dyadic head row at both endpoints. These are
+previously observed sources, not fresh final holdout data. No adaptive fit
+or claim of out-of-sample prediction is made. All trials remain visible.
+
+Exponent requests are all reduced a/b in[0,1] for b<=7, augmented by
+1/(2^k+1) for k=0,...,8. The API accepts any canonical rational delta in
+[0,1], subject only to finite capacity:128 requests and100000 intermediate
+integer-power bits. The mathematical theorem has no denominator whitelist.
+An additional no-short-lag baseline B=0 is distinct from delta0 givingB1.
+The enumeration and selection use no model or literature calls or expected
+winner. Pareto priority goes to paid exponent and remaining signed-risk
+obligation, not merely an improved finite constant. This does not prove
+the remaining risk just because its evaluated value is small or zero.
+
+Producer uses exact integer polynomial multiplication inFLINT after clearing
+the rational endpoint denominator. Checker reconstructs g pointwise from
+the original six-floor source and uses a different direct integer
+correlation algorithm, with an overflow guard before native arithmetic.
+It verifies every lag, including mutations preserving the total moment,
+all source coefficients, complete near/far partitions and exact rational
+upward square roots. It must reject omitted units, direct atoms, squareful
+zeros, source fields, rows, endpoints, or inflated theorem scope.
+
+Three processes, one native thread each,16GiB aggregate,7200seconds per
+module and300billion charged units per case meter. Native polynomial work is charged by
+a declared conservative scalar/bit proxy, not claimed as exact library
+operation counting. Checker native dot products have a quadratic work
+charge and overflow proof. No hashes and no unchanged old suite/study
+replays. Every failure and cap hit must be retained, not restarted silently.
+
+The independent theoretical review also proves sparse-exception closure
+bounds for the two boundary prefix regions and obstructions to fixed-prime
+pairing/low-horizon annihilators followed by triangle. Those are analytical
+scope results, not additional implemented scientific search families.
+The uniform full head/core bound, RH and the research goal remain OPEN.

@@ -1,0 +1,14 @@
+Posthoc full-Gram adjudication
+Producer run complete; independent whole-run audit pending.
+
+The immutable unsigned attempt 001 has the old child-kernel pair-difference weight 1, the old all-region norm-rowmass relation weight -1, and the child half-prefix square weight 65/64. Its parent Gram is zero. Its child Gram has only the half-prefix diagonal 63/64; every other diagonal and cross entry is exactly zero. The combined half-prefix coefficient is therefore 65/64 + 63/64 = 2. For every integer X >= 1, each u in [X,2X) appears at exactly t = 2u and t = 2u+1 in the child block. Consequently 2 times the child half-prefix square sum equals 4 times the parent prefix square sum. This proves an exact all-scale reduction to the supplied unsigned Cauchy certificate.
+
+The SDP redistributed the same positive square between scalar and Gram coordinates. No signed off-diagonal interaction survives exact admission and no additional arithmetic relation is used. Its budget remains U(X), with gamma = 56/3. This checks the shared PSD-to-SOS machinery but provides no new critical signed estimate.
+
+Original final outcomes remain unchanged: the unsigned certificate passes exact admission at X = 11; X = 13 is missing_resource because of a certificate deadline. The analytical alias identity does not replace that missing archived evaluation. The critical proposal remains uncertified, with no final candidate.
+
+The restricted dual search found an exact separator that is valid for the FULL declared PSD cone: the independently recomputed parent dual Gram has one positive even-mask diagonal, the child dual Gram has prefix diagonal 1, and all cross entries vanish. Both dual matrices are positive semidefinite. Original nonnegative scalar columns pair nonnegatively and every signed relation column pairs to zero. The full target pairs to -1, so a certificate in this fixed shared cone is impossible.
+
+All five constant dual coordinates, including the auxiliary coordinate, are zero. Changing C or q affects only the target scalar and the constant-square normalizer; these pair to zero. Thus the SAME exact separator excludes the fixed full-Gram zero-cubic cone for every rational C >= 0 and every integer q >= 1 on the same training scales. At q = 1, the zero-cubic gate is an additional imposed restriction; its necessity for a global critical template was proved only for q > 1. This is a proof-language obstruction, not a refutation of the actual arithmetic bound, RH, or larger atom/relational dictionaries.
+
+Source hashes, exact matrices, and preserved statuses are recorded in cancellation_gram_adjudication.json. No frozen sources or original outcomes were modified. The remaining task is genuine signed arithmetic control beyond this declared cone, with a complete all-scale identity and uniform budget theorem.

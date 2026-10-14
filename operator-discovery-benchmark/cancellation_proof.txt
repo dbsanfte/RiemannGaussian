@@ -1,0 +1,271 @@
+SIGNED ORIENTATION SEARCH: UNIQUE SQUARE-ROOT CANCELLATION AND ITS LIMITS
+
+Research record, 7 October 2026. Universal written proofs accompany exact
+arithmetic fits and actual-zeta enclosures. These proofs are not theorem-
+prover certified. The corrected survivor reduces to known compositions;
+no new primitive or estimate that establishes RH is asserted.
+
+1. THE GRAMMAR AND ITS TYPES
+
+K_(b,c,FF), K_(b,c,FC), K_(b,c,CF), K_(b,c,CC) are the four intersections
+of floor/ceiling no-carry divisor kernels. For a fixed q, each root lift
+is the q-fold product in ONE chosen kernel of the ordinary qth root of
+the input. The grammar takes rational constant linear combinations of
+these FOUR LIFTS. It does not silently interchange that combination with
+taking a q-fold product in an averaged kernel.
+
+The search enumerates primitive integer vectors in [-2,2]^4, identifying
+overall sign and scalar multiples. There are 272 vectors at each q=2..8,
+or 1,904 programs. A single mixed frequency (1,1) gives 39 fits. Fresh
+axis and unequal mixed modes leave one vector: q=2, weights (1,1,1,1).
+The following arguments prove its uniqueness for ALL nonzero rational
+vectors, not merely the enumerated range. Rational polynomial coordinates represent
+the previously proved simplex Fourier law; finite fits alone are not
+the universal certificate.
+
+A second grammar learns a bilinear projection identity from 576 exact
+equations on 12 unrelated rational input pairs and four base pairs.
+The ten coefficients have a unique fit. Twelve fresh input/base records
+through 128 and six zeta-root profiles through 4,096 agree. The independent
+checker refits by a different elimination procedure and uses divisor
+coefficient sums instead of array convolution.
+
+2. THE UNIVERSAL SIGNED FREQUENCY LAW
+
+Assume b,c are multiplicatively independent, set tau_b=2*pi/log(b), and
+let the input be u^{*alpha}, alpha>0. The positive torus-root measure
+argument in joint_size_proof.txt gives the floor Fourier coefficient
+  A_q(0)=1/q!,
+  A_q(m)=1/(q-1)!*integral_0^1 t^(q-1)*exp(-2*pi*i*m*t) dt
+        =-sum_(r=1)^(q-1) (1/(2*pi*i*m))^r/(q-r)!, m!=0.
+The ceiling coordinate instead gives its conjugate. Indeed outside the
+exact-power null set, its angle is 1-theta, and the retained simplex is
+the same in that reflected coordinate. For integer frequency the factor
+exp(-2*pi*i*m*q) is one. The power-index mass of the positive measure
+vanishes in the weak limit, so its discrete exceptions cause no change.
+
+For weights w=(a,d,e,f) in FF,FC,CF,CC order, define
+  u=a+d+e+f, v=a-d-e+f, x=a+d-e-f, y=a-d+e-f.
+Put R_m=Re(A_q(m)), I_m=Im(A_q(m)). The Abelian coefficient of the signed
+lift at 1+i*(m*tau_b+n*tau_c) is exactly
+  C_q(m,n)=u*R_m*R_n-v*I_m*I_n
+                 +i*(x*I_m*R_n+y*R_m*I_n).
+Linearity is legitimate in the weak-measure limit because this is a
+finite signed combination of bounded indicator/phase integrands.
+
+At q=2, R_m=0 for m!=0, I_m=1/(2*pi*m), and R_0=1/2, I_0=0.
+All mixed nonzero modes cancel iff v=0. The first and second axis modes
+cancel iff x=0 and y=0. Hence ALL artificial nonconstant modes cancel
+iff v=x=y=0, equivalently all four weights are equal. If v!=0 there
+are nonzero coefficients at every mixed frequency, a dense set. If v=0
+but x or y is nonzero, at least one discrete axis family survives and
+still rejects unmodified holomorphy on the entire RH half-plane. No
+absence of further singularities is inferred from a vanishing leading
+coefficient. Actual continuation of the equal-weight survivor is proved
+separately by the arithmetic identity below.
+
+3. EVERY NONZERO RATIONAL COMBINATION AT q>=3 HAS A NATURAL BOUNDARY
+
+For q>=3 and m!=0, R_m>0; I_m has the sign of m and is nonzero. To see
+this, integrate cosine by parts:
+  R_m=-(q-1)/((2*pi*m)*(q-1)!)
+                         *integral_0^1 t^(q-2)*sin(2*pi*m*t) dt.
+For m>0 the latter integral is negative. In each full period, pair the
+positive half-sine with the following negative half-sine; the strictly
+increasing weight makes the latter contribution larger in modulus.
+The same pairing with t^(q-1) proves I_m>0. Cosine is even and sine odd
+in m, giving the stated signs for negative m.
+
+In particular the nonconstant-axis constraints force u=x=y=0, and a
+mixed constraint then forces v=0. Thus there is no nonzero constant
+orientation vector that cancels every artificial mode at q>=3.
+
+More strongly, the surviving modes are dense for every nonzero RATIONAL
+vector. For |m|->infinity the finite polynomial formula gives
+  R_m=d_q/m^2+O(m^-4), d_q=1/((2*pi)^2*(q-2)!)>0,
+  I_m=c_q/m+O(m^-3), c_q=1/(2*pi*(q-1)!)>0.
+Fix any bounded frequency interval. Its infinitely many group elements
+can be represented by integer pairs with |m|,|n| unbounded and
+  n/m -> -r, r=tau_b/tau_c=log(c)/log(b), an irrational positive number.
+Bounded integer pairs account for only finitely many elements, whereas
+the irrational frequency group is dense, so such unbounded pairs exist
+in EVERY interval.
+
+If v!=0, the real part -v*I_m*I_n has order m^-2 and dominates
+u*R_m*R_n of order m^-4; it is eventually nonzero. If v=0 but u!=0,
+the real part is always nonzero at mixed modes. If v=u=0, at least one
+of x,y is nonzero and the imaginary part has leading term
+  c_q*d_q/(m^2*n^2)*(x*m+y*n).
+Its leading coefficient cannot vanish since x,y are rational and r is
+irrational: x-r*y!=0. It is therefore eventually nonzero along bounded
+frequency sequences. Every interval contains nonzero Abelian modes.
+
+Each such fixed mode gives unbounded growth epsilon^-alpha from the
+right. Local holomorphic continuation across any point of Re(s)=1
+would be bounded on a smaller disk containing one of these dense modes,
+a contradiction. Meromorphic continuation would require dense poles
+inside a domain, also impossible. Thus Re(s)=1 is a natural boundary
+for every nonzero rational constant combination at q>=3.
+
+This theorem concerns the four fixed-orientation q-fold lifts. It makes
+no claim about parameter-dependent weights, singularity subtractions,
+averaged-kernel lifts, dependent bases, or infinite root order.
+
+4. THE LEARNED q=2 BILINEAR IDENTITY
+
+Let I_b(n) indicate n=b^k for k>=0, R_b the associated diagonal coefficient
+projection, and R_bc=R_b R_c their commuting composition. Write ordinary
+divisor convolution as *. For two arbitrary arithmetic functions a,d,
+set P=a*d. For one base, the exact floor and ceiling weights obey
+  K_floor+K_ceil=1+I_b(i)+I_b(j)-I_b(ij).
+This includes power indices and unit indices; the midpoint corrections
+are not discarded. Multiply this identity for the two bases and expand
+the divisor coefficient sum. The result is
+
+  sum_(four orientations) a K_joint d
+    = P
+      +a*R_b(d)+R_b(a)*d+a*R_c(d)+R_c(a)*d-R_b(P)-R_c(P)
+      +a*R_bc(d)+R_bc(a)*d
+      +R_b(a)*R_c(d)+R_c(a)*R_b(d)
+      -R_c(a*R_b(d)+R_b(a)*d)
+      -R_b(a*R_c(d)+R_c(a)*d)+R_bc(P).
+
+This proves the empirically fitted coefficients
+  (1,1,1,-1,-1,1,1,-1,-1,1)
+for the ten bundled atoms. No normalization or multiplicativity of a,d
+is required. No composite-base projection is assumed to preserve ordinary
+convolution. Its placement outside a product is kept explicit.
+
+For g=f^{*beta}, let first=g*R_b(g)+R_b(g)*g and similarly second for c;
+let cross=R_b(g)*R_c(g)+R_c(g)*R_b(g). Isolating three terms gives
+  W_(b,c,beta)(f)
+     =(sum_four_joint_squares-P+R_b(P)+R_c(P)-cross
+                          +R_c(first)+R_b(second)-R_bc(P))/6
+     =g*(R_b(g)+R_c(g)+R_bc(g))/3.
+For normalized f this W is normalized. It is an explicitly corrected
+root operation; it is NOT an assertion that a signed kernel is an
+associative algebra product. Its reduction is a sum of the already
+established paired-root/projection compositions.
+
+5. CONTINUATION AND A ZERO-FREE CORRECTION
+
+On zeta input g=d_beta, write R_(b,beta)(s)=sum_k d_beta(b^k)*b^(-k*s).
+If b and c have a common positive power, their common powers form h^k
+for the least such positive index h. R_bc corresponds to that R_h.
+If they have none, it is the unit-only projection and its series is 1.
+For example b=4,c=8 gives h=64, not 8. Primitive prime-exponent vectors
+and the least common multiple of their scalar exponents prove this rule.
+
+Every fixed-base resonance and projected convolution in section 4 is
+holomorphic on Re(s)>0. For beta>0, d_beta(p^j) grows at most polynomially
+in j: for beta>1 use product(1+(beta-1)/r)<=exp((beta-1)*sum 1/r);
+for beta<=1 its values are <=1. Fixed-base indices therefore have at
+most polynomial coefficient growth in k and a geometric Dirichlet weight.
+Projected convolution coefficients are bounded by d_(2beta)(b^k), with
+the same property. Thus the full unnormalized q=2 sum has the form
+  zeta^(2beta)+2*zeta^beta*(R_bbeta+R_cbeta+R_hbeta)+E(s),
+where E is holomorphic on Re(s)>0. Initially this holds on Re(s)>1.
+It proves continuation through every nonzero-height point of Re(s)=1,
+since actual zeta is holomorphic and zero-free there. No zero-frequency
+branch removal at s=1 is inferred for the FULL uncorrected sum.
+
+For W specifically,
+  W(s)=zeta(s)^beta*C_(b,c,beta)(s),
+  C=(R_bbeta+R_cbeta+R_hbeta)/3,
+with the unit series substituted when h does not exist. For EVERY
+beta in [0,1] this correction is nonzero on Re(s)>0. The proof uses the
+established Hausdorff-moment representation in size_carry_proof.txt:
+  R_bbeta=E[1/(1-b^-s V)], V=product_p V_p^{v_p(b)},
+  V_p independently Beta(beta,1-beta),
+with the endpoint limits V=0 or 1. The beta integral gives the required
+moments. For sigma>0,
+  Re(R_bbeta)>=1/(1+b^-sigma)>1/2.
+The average has the corresponding positive lower bound, including 1 for
+a unit-only term. Hence C is holomorphic and nonzero on Re(s)>0.
+
+It follows, exactly as for the prior paired roots, that RH holds iff
+ALL dyadic beta=2^-j, j>=1, make the pole-cancelled W single-valuedly
+holomorphic on Re(s)>1/2. If RH holds, X=(s-1)*zeta(s) is zero-free in
+that simply connected half-plane and its normalized log gives X^beta C.
+Conversely an off-line zero in that half-plane has a finite multiplicity
+m; choosing 2^j not dividing m produces nontrivial monodromy, which the
+nonzero C cannot cancel. Reflection supplies a right-half zero if an
+off-line zero were initially on the left. This is an RH-equivalent
+root criterion, not a new RH bound or a solution of RH.
+
+6. AVERAGING IS A SEPARATE ALGEBRA GATE
+
+If both bases are prime, their normalized average kernel is a classical
+nonzero weighted transport. Put
+  h(n)=2^(I_b(n)+I_c(n)-2).
+For a prime base, a product is a power of that base exactly when both
+factors are powers; hence (K_floor+K_ceil)/2 equals
+h_b(i)*h_b(j)/h_b(ij), with h_b=2^(I_b-1). Multiplying for the two bases
+gives the transported ordinary kernel h(i)*h(j)/h(ij).
+
+For composite bases, averaging need not preserve associativity. Bases
+4,8 fail at (2,2,3), with weights 0 versus 1/16; bases 2,6 fail at
+the same triple with weights 1/4 versus 0. The empirical continuation
+identity is a bilinear operation even in these cases; no invalid algebra
+is promoted merely because the sum has a useful analytic representation.
+
+Even in the valid prime-base algebra, the mean of four lifts and the
+lift in the mean kernel differ for q>=3. For bases 2,3, q=3 and n=8,
+their zeta-input coefficients are 20/27 and 3/4, a difference of 1/108.
+The independent checker obtains these from ordered divisor triples and
+the transport scalar, without production repeated-product code.
+
+7. NUMERICAL VERIFICATION AND ROOT CONTROLS
+
+Six fresh actual-zeta points at sigma=3/2,7/4,2 compare BOTH the full
+four-square sum and normalized W to native zeta-root/projection formulas.
+Coefficients of the full sum are bounded by 4*d_(2beta)<=4 for the tested
+beta<=1/2; W coefficients lie in [0,1]. The respective arithmetic tails
+are bounded by 4*N^(1-sigma)/(sigma-1) and N^(1-sigma)/(sigma-1).
+Projected convolution resonances have coefficients <=1 and a geometric
+tail. Every omitted infinite component has an explicit bound.
+
+Production uses N=4096, filtered degree 48 and native hypergeometric
+resonances. The independent checker uses N=6144, filtered degree 40,
+72 exact-ratio resonance terms, and a geometric error box. It recomputes
+arithmetic coefficients by independent divisor sums and Euler recurrences.
+All controlled coefficient-2 perturbations are rejected (+1 in production,
+the smaller +1/2 in the independent checker).
+
+A real Hardy-Z scan on [20,24] at spacing 1/8 finds one sign-change
+bracket. Its refined location is then certified directly with Arb zeta
+and a Taylor-Rouche remainder at a disk of radius 1/100000 centred on
+Re(s)=1/2. Exactly one simple zero lies in the disk; functional-equation
+reflection forces it onto the critical line. Its height is about
+21.0220396387715549926. The independent verifier replaces the derivative
+remainder with a Cauchy bound on radius 1/50.
+
+Nine candidate correction controls cover three base pairs and beta=1/2,
+1/4,1. The correction remains nonzero across the full disk. Six fractional
+cases have a positive monodromy-jump lower bound; three integer cases
+correctly have trivial phase change. The independent checker uses degree
+96 ratio corrections and a different basepoint. This boundary-zero test
+is compatible with RH and demonstrates zero sensitivity; it is not
+evidence for an off-line zero.
+
+8. RESEARCH AND HISTORICAL SCOPE
+
+The neutral finite searches are followed by universal proofs and separate
+analytic domain checks. Their survivor is a known composite after exact
+reduction. The larger q>=3 exclusion concerns only constant rational
+orientation combinations and must not close unrelated grammar directions.
+The precise signed-domain classification has not been matched to a reviewed
+publication; that leaves its historical originality unresolved.
+The verified-new operator list remains empty.
+
+Primary classical inputs: the beta integral and zeta zero-free line and
+reflection symmetry, respectively:
+  https://dlmf.nist.gov/5.12.E1
+  https://dlmf.nist.gov/25.10
+  https://dlmf.nist.gov/25.4
+The earlier novelty audit records general convolution and LOG/EXP prior art.
+Artifacts: cancellation-results/, cancellation_search.py,
+check_cancellation.py, cancellation_analytic.py,
+check_cancellation_analytic.py. The next empirical search must seek an
+arithmetic consequence beyond this projection reduction or a genuine
+new analytic estimate, while preserving these cancellation and type gates.

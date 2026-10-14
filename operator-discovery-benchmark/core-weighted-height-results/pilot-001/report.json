@@ -1,0 +1,47 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "candidate_lines": 1958,
+  "elapsed_seconds": 15.303320996987168,
+  "fitted_constants": 0,
+  "generic_witnesses": 5,
+  "height_plans": 1140,
+  "high_auxiliary_bounds_proved": 2,
+  "inclusive_operations": 42034325,
+  "inherited_bindings": 144,
+  "inherited_component_bounds_proved": 1,
+  "main_operations": 6962099,
+  "model_calls_in_search": 0,
+  "new_component_bounds_proved": 0,
+  "open_low_Gram_obligations": 1,
+  "peak_rss_kib": 704032,
+  "selected_plans": [
+    {
+      "epsilon": "5/552",
+      "generic_low_U_power": "120/23",
+      "high_U_power": "0",
+      "inherited_component_bound_proved": true,
+      "kappa": "2/9",
+      "low_status": "proved_by_generic_fallback",
+      "required_low_U_power": "168/23",
+      "sigma": "8/23",
+      "target_id": "centered_A2_E2",
+      "tau": "96/5"
+    },
+    {
+      "epsilon": "1/120",
+      "generic_low_U_power": "11/2",
+      "high_U_power": "-1/16",
+      "inherited_component_bound_proved": false,
+      "kappa": "2/9",
+      "low_status": "open_actual_Mobius_bound",
+      "required_low_U_power": "12/5",
+      "sigma": "9/20",
+      "target_id": "centered_A2_E3",
+      "tau": "45/2"
+    }
+  ],
+  "status": "WEIGHTED_HEIGHT_PROOF_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "targets": 22,
+  "whole_signed_bound_proved": false
+}

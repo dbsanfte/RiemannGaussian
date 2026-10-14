@@ -1,0 +1,23 @@
+{
+  "schema": "transition-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.005334898014552891,
+      "operations": 830
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0002960530109703541,
+      "operations": 0,
+      "purpose": "only new strict receipt adapter; existing six passing tests not rerun"
+    }
+  ],
+  "scope": "synthetic interval/scope and input tests, no actual candidate arrays or norm observations"
+}

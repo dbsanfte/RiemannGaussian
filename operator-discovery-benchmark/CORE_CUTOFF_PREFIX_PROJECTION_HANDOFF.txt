@@ -1,0 +1,145 @@
+COMPLETE-PREFIX PROJECTIONS; GENERATED MOMENT BOUNDS STILL OPEN
+
+Current input: candidate10_cutoff_prefix_projection_obligation.json
+Verified study: core-cutoff-prefix-projection-results/pilot-001
+Generator: core_cutoff_prefix_projections.py
+Independent checker: check_core_cutoff_prefix_projections.py
+Completed runner: run_core_cutoff_prefix_projections.py (do not restart)
+Analytical rule review: CORE_CUTOFF_PREFIX_PROJECTION_REVIEW_027.txt
+Protocol: core_cutoff_prefix_projections_protocol.txt
+
+The user's current question
+---------------------------
+The user asks whether the detector itself searches for bounds on the core,
+or whether subagents are doing the analytical discovery. The answer remains
+mixed, and this distinction must not be obscured by candidate counts.
+
+Earlier executable searches selected actual partial component proofs using
+contour/moment allocations and signed-prefix norm compositions. Their rules
+were supplied and reviewed analytically. See CORE_MOMENT_BOUND_SEARCH_HANDOFF
+and CORE_PREFIX_PROOF_SEARCH_HANDOFF. Neither closed the complete signed core.
+
+This new stage searches numerical controls and compiles conditional proof
+routes. It DOES NOT search for proofs of the 252 new arithmetic Gram bounds.
+The code explicitly records higher_moment_provider_available=false. Producing
+those required estimates is not equivalent to establishing them, and copying
+them into next_search_tasks does not execute another bound search.
+
+The next substantive development priority is an executable attempt to close
+generated arithmetic obligations: search auxiliary constructions and argument
+compositions against the actual requested exponent and full uniform domain,
+verify any proof, and feed the remaining precise leaf back into construction
+search. Preserve useful unsupported leads. Sol6.1 agents may supply reusable
+rules, implement substantial independent backends, and audit generated proofs;
+they should not have to nominate each candidate or act as the only solver.
+Avoid counting another catalogue of necessary estimates as bound discovery.
+
+What this completed run actually did
+------------------------------------
+For each of 18 generated prime sets P(B), squarefree events factor uniquely
+as q=a*b, with a supported on P and b P-free. The two projection choices use
+label b (rough) or label a (smooth). All events q=2..V are retained for EVERY
+integer B<V<=2B. Thus prime-multiple pairings can cross the old block boundary.
+P(B) stays fixed as V varies. The full source history, including mu=0 head
+and energy updates, remains in the inherited arithmetic input.
+
+The 36 programs were generated before new projection scores were observed.
+Discovery evaluated all programs at B=64,128,256,512: 144 cases. Selection
+used the worst certified interval ratio of peak grouped absolute work to
+the full-prefix ungrouped baseline. Each of six lanes had one strictly
+undominated winner, with no missing, zero-baseline or degenerate rejections.
+The six choices were sealed before evaluation at B=1024. Old coarse integer
+cancellation bits were retained only as diagnostics, not used for selection.
+
+At B=1024, the ungrouped sampled cost is 765.159764440495. Winners:
+
+ id  projection  P(B)                       peak / ungrouped
+  0  rough       {2}                         0.997282029876
+  1  smooth      {2}                         0.096661603687
+ 14  rough       primes <= B                 0.233172110504
+  7  smooth      primes <= B^(1/6)           0.190513517153
+ 22  rough       B^(1/6) < primes <= B       0.271091040702
+ 17  smooth      B^(1/6) < primes <= B^(1/3) 0.132782139852
+
+Every construction has the same signed sampled endpoint -50.952051229928,
+from odd -353.699637438957 plus even 302.747586209029. These signed sectors
+were joined before group absolute values. The smooth {2} winner has two
+labels, 1 and 2, with prime/composite and opposite-Mobius signs in both.
+The rough {2} construction has 414 groups containing opposite Mobius signs
+but barely reduces the cost: opposite signs alone are insufficient when
+their work coefficients differ. Structural counts are not cancellation laws.
+
+Enlarging P coarsens rough groups and refines smooth groups. The associated
+monotonicity follows from triangle inequality and is not a new arithmetic
+estimate. Coarse groups can preserve much of the already-present cancellation
+while leaving an equally difficult all-scale bound. One-bucket controls are
+explicitly classified as restatements, not independent mechanisms.
+
+All numerical work reuses the previous independently preserved samples at
+heights 0,1/2,1,2,4,8,16, through q=2048. No source or zeta evaluations were
+repeated. The 150 new projection cases contain 40,704 partial-prefix values.
+These are projections of observed data, not fresh arithmetic validation,
+continuous quadrature, estimates of the generated Gram integrals, or evidence
+for a bound at every scale. No Gram constants or exponents were fitted.
+
+Conditional analytical recovery compiled by the detector
+--------------------------------------------------------
+The exact remaining joined-work goal is sum_(q=2..V) R_q <= C V^(12/5),
+every integer V, with the actual source, weight and cross terms unchanged.
+The complete signed core itself remains the priority-zero search target;
+this is an optional sufficient route for an unresolved source component.
+
+Review027 supplies a uniform change from each old mask |t|<H(q-1) to the
+common |t|<H(2B), where H(U)=2U^(45/2). It uses each event's own tail and
+q/(q-1)<=2, never an invalid assumption that every q is comparable with B.
+Summing the raw and head costs gives B^(15/16) and B^(21/10). Both are below
+the requested exponent 12/5. This supplied analytical recovery rule is now
+executed and independently checked; it is not a discovered arithmetic law.
+
+Each projection generates seven weight exponents gamma in
+{0,1/6,1/3,1/2,2/3,1,3/2}. For eta_label=label^(-gamma), the generated Q_eta
+contains the square of the FULL UNWEIGHTED joined work within each label,
+including all ordered event pairs and odd/even/history crosses. The kernel
+kappa=|zeta(s+1/3)/s|^2 appears exactly once outside those squares, with
+measure dt/(2*pi). Already-weighted cached samples are not raw Gram data.
+
+Cauchy gives M_common^2 <= (100/13)*(uniform label mass)*Q_eta. The detector
+derives the sufficient Gram exponent and logarithmic degree from this rule.
+For general labels, the seven required powers are
+19/5,119/30,62/15,43/10,67/15,24/5,24/5. The gamma=1 case also requires the
+reciprocal factor (1+log(2B))^(-1); it cannot be silently discarded. Smooth
+fixed-prime labels are a subset of {1,p}, so their uniform mass bound is 2
+and all seven required powers are 24/5 with no logarithmic cost. No finite
+observed label count is used as a uniform bound for growing prime windows.
+
+These are 252 conditional routes, not 252 proved estimates. The available
+fourth-moment primitive cannot be relabeled as the higher moments needed
+here. There are zero new uniform signed arithmetic estimates, zero newly
+paid full components, and no full-core or RH proof.
+
+Verification, preservation and resources
+----------------------------------------
+The root owned suite passed 12 tests once; the independent Sol6.1 checker
+suite passed 17 tests once. One subsequent authoritative symbolic source,
+proof and feedback integration check also passed, with no numeric cache
+reads. No passing unchanged suites were rerun in the frozen experiment.
+
+The producer and checker generated all 150 cases independently from their
+own cached intervals, at 192 and 256 bits. Producer used online group sums
+and a sieve; checker rebuilt full group columns and used trial primality.
+The independent verifier accepted all partial prefixes, interval selection,
+source bindings, conditional proof costs and complete feedback. The inherited
+2,047 source events were audited without re-evaluating their arithmetic.
+
+All 144 original source bindings, units, corrections, compensating drifts,
+original alternatives and the priority-zero complete core target survive.
+The published input was read back and byte-matches both publication copies.
+All frozen current source bytes were rechecked after the run. No old frozen
+study was changed, no hashes were introduced, and no terminal failure occurred.
+
+Development operations: 17,014,108. Study operations: 158,148,359.
+Inclusive operations: 175,162,467 of a declared 2 billion cap.
+Study elapsed: 25.375 seconds. Main peak RSS: 704,032 KiB.
+Each worker peak RSS: 202,580 KiB. Two workers ran in parallel; the declared
+concurrent cap was 12 GiB, below the user-authorized 16 GiB. No active worker
+session remains. The overall research goal remains active and unresolved.

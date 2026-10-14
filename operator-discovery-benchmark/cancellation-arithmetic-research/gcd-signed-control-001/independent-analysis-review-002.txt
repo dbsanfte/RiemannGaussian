@@ -1,0 +1,27 @@
+Independent analytical review of complete gcd signed control
+
+Reviewed source: cancellation-arithmetic-research/gcd-signed-control-001/analysis.txt
+SHA256: 613fcd014a5419918e73446c145edc83a23f228f22678cb3c0468072daff7a1c
+Reviewer: /root/sol61_candidate_batch02. New review only; no source mutation or score query.
+
+The complete projection and notation are correct. If d is nonsquarefree then every multiple of d has mu=0, hence U_d=0. If d is squarefree, mu(db)=mu(d)mu(b) when gcd(d,b)=1 and is0 otherwise; thus U_d(y)=mu(d)T_d(floor(y/d)). Multiplying by outer mu(d) removes the extra mu(d)^2 in every nonzero contribution. The identity S=M^2+R includes all pairs, including ab>y and the a=b=1 endpoint. It does not assert positivity of the outer signed sum.
+
+The PNT-dependent auxiliary proof is valid with its stated order of limits. The imported premise is actual M(t)=o(t), attributed to the supplied primary formal theorem PNT_implies_sum_moebius_mu_sublinear:
+https://isa-afp.org/browser_info/current/AFP/Prime_Distribution_Elementary/Moebius_Mu_Sum.html
+I use that supplied theorem statement as a premise; this review does not independently formalize or reprove PNT.
+
+Finite-prime removal is exact: convolving mu with the indicator of integers supported on primes dividing d replaces each Euler factor1-z by(1-z)/(1-z)=1 at those primes. Equivalently, for each fixed n the divisor sum cancels if a prime of d divides n and equals mu(n) otherwise. Therefore T_d(t)=sum_(a in E_d)M(floor(t/a)), with terms a>t zero. The reciprocal sum over E_d is the finite product of convergent geometric series. For each fixed a the summand divided by t tends0, and its absolute value is<=1/a. Truncating this convergent majorant proves T_d(t)=o(t) for each FIXED d without any uniform-in-d rate.
+
+The tail bound is elementary and sufficient for the stated weak result: |U_d(y)|<=floor(y/d), so the absolute tail divided by y² is<=sum_(d>B)d^-2<=1/B. First take y->infinity for a fixed integer B; each finite-head contribution tends0. Then take B->infinity. This proves D(y)=o(y²), and |S(y)|<=D(y). No explicit power saving, critical O_epsilon(y^(1+epsilon)), or moving-d uniformity follows. In block form the same argument yields only sum_(t=X)^(2X-1)D(t)=o(X³), still short of the required X^(2+epsilon) energy scale. To force the crude tail below y^(1+epsilon) one needs B at least y^(1-epsilon); the fixed-d PNT argument supplies no control of that growing head. Substituting such a cutoff into the fixed-B limit would be invalid.
+
+The two signed recovery hypotheses are logically sufficient and are explicitly unproved. Combining R>=-theta*M²-L*y^(1+epsilon) with S=M²+R and S<=K*y^(1+epsilon) gives(1-theta)M²<=(K+L)y^(1+epsilon), with a strictly positive recovery margin. The epsilon rename in the resulting M bound is valid. A fixed theta<1 is sufficient, but uniformity of theta across epsilon is not logically necessary: a separate theta_epsilon<1 for each epsilon also gives a finite constant at that epsilon. Neither version supplies the missing actual estimate.
+
+The block identity is exact with each block's OWN full divisor domain. Both innovations are signed; an upper estimate for P innovation and a lower estimate for R_block innovation combine with correct signs to upper-bound Delta. Dyadic all-scale critical bounds then use the existing nonnegative A recurrence/RH bridge. These two estimates are stronger separately than a bound for their difference and have not been derived from PNT. The reformulation can guide new column design; presenting either signed estimate as an arithmetic axiom would hide the original problem.
+
+The prime2 triangle barrier is correct for this particular absolute-value envelope. Exact removal gives U_2(y)=-sum_(j>=1)M(floor(y/2^j)). The ratio2^-alpha/(1-2^-alpha) is>=1 for0<alpha<=1, with equality only at1; its square at1/2 is3+2sqrt2. Floor endpoints can only decrease the triangle majorant. This proves loss of contraction for the displayed induction, not that the actual sums saturate it or that all signed inductions fail.
+
+The claimed positive-norm circularity is sound and can be made especially precise. If actual |M(t)|<=C_sigma*t^sigma for sigma>1/2, then finite-prime removal gives |T_d(t)|<=C_sigma*t^sigma*F_d(sigma), F_d=product_(p|d)(1-p^-sigma)^-1. Consequently
+ D(y)<=C_sigma²*y^(2sigma)*sum_(d squarefree)d^(-2sigma)*F_d(sigma)².
+The latter sum is bounded by the convergent positive Euler product product_p[1+p^(-2sigma)(1-p^-sigma)^-2], since2sigma>1 and1-p^-sigma>=1-2^-sigma>0. Thus a critical M envelope gives a critical D envelope; conversely D contains M² as d1. No extra epsilon loss is essential beyond choosing sigma>1/2. This makes D an RH-strength equivalent positive representation, not an unconditional route. Under such a critical D envelope both signed hypotheses hold with theta=0 after adjusting constants, reinforcing that their conjunction has RH-strength content.
+
+Conclusion of this review: no mathematical error found. The genuine auxiliary result is a weak imported-PNT-dependent subquadratic norm result. The full critical signed estimate and coercive recovery remain unproved. The note avoids claiming that finite certificates, kernel PSD, or the exact projection already establish them. All original claims and arithmetic source files remain unchanged.

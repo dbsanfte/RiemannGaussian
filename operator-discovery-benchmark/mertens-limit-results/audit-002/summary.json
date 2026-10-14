@@ -1,0 +1,1873 @@
+{
+  "status": "independently_checked_small_order_inverse_with_named_Mertens_extremum_import",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/mertens-limit-results/audit-002",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/fractional-remainder-results/pilot-002",
+  "checks": {
+    "frozen_source_parent_and_sealed_fresh_case_integrity": true,
+    "named_external_Hurst_theorem_and_strict_rational_weakening": true,
+    "complete_batch_parameter_limit_and_rational_inverse_rejection_certificates": true,
+    "exact_Volterra_inverse_with_independent_piecewise_native_integrals": true,
+    "conditional_Mellin_cancellation_for_backward_real_inverse": true,
+    "same_source_program_positive_log_repair_without_refitting": true,
+    "complete_fresh_actual_Mobius_repair_values_and_uniform_proof_separation": true,
+    "deterministic_complete_gate_and_source_repair_replay": true
+  },
+  "complete_candidates_checked": 21784,
+  "exact_limit_rejection_certificates": 2,
+  "archived_candidates_ruled_out": 2,
+  "globally_false_original_finite_survivors": 2,
+  "known_false_original_finite_survivors": [
+    {
+      "program": {
+        "coefficients": [
+          "1"
+        ],
+        "normalizers": [
+          "0"
+        ],
+        "degree": 0,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "family": "independent_zero_normalizer",
+        "method": "independent_zero_normalizer"
+      },
+      "candidate": {
+        "program_id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "887/512",
+        "id": "db6104141cea0380b8d373d594fc1558e5d49d35e0a45e63e341bbe217e262b7",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "887/512",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": null,
+          "numerator_parameter_pole_residue": null,
+          "zero_recovery": "real rational numerator nonzero at every nonreal ordinary zeta zero",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": true,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.10126795462765653,
+          "parameter_slope": -2.1721659406596643e-18
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/2",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[1235.34270153019091363993798137544724271906414 +/- 3.35e-42]"
+            },
+            {
+              "q": 3,
+              "order": "1/3",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[1235.34270153019091363993798137544724271906414 +/- 3.35e-42]"
+            },
+            {
+              "q": 6,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[1235.34270153019091363993798137544724271906414 +/- 3.35e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[1235.34270153019091363993798137544724271906414 +/- 3.35e-42]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[1235.34270153019091363993798137544724271906414 +/- 3.35e-42]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 7.119103701686102,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.18038331454340473,
+          "maximum_ratio_case": "6:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.6665238733372906,
+        "maximum_ratio_case": "79:3",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "db6104141cea0380b8d373d594fc1558e5d49d35e0a45e63e341bbe217e262b7",
+        "program_id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "1/4",
+          "2",
+          "3/4"
+        ],
+        "normalizers": [
+          "2",
+          "1/4",
+          "2",
+          "3/4"
+        ],
+        "degree": 3,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "family": "normalizer_mutation",
+        "method": "seeded independent arithmetic/continuous normalizer mutation"
+      },
+      "candidate": {
+        "program_id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "1317/512",
+        "id": "1b5bce245871a6008358d9853872b078e3007a008d377a28ae8a1031c1ad2182",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "1317/512",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/3",
+          "numerator_parameter_pole_residue": "-1/4",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.1317877257178202,
+          "parameter_slope": -0.05197573976643033
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.223669442536038668474593 +/- 2.71e-25]",
+                "imag": "[4.346843165594162260742759 +/- 3.05e-25]"
+              },
+              "numerator_lower_rational": "657745391200438505835753/151115727451828646838272",
+              "numerator_lower_ball": "[4.35259388477687633822837890995390464250747176 +/- 3.89e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8918.91044134350920524747548239207351394638841 +/- 3.24e-42]"
+            },
+            {
+              "q": 3,
+              "order": "1/9",
+              "numerator_ball": {
+                "real": "[-0.1954762814366588824816564 +/- 7.17e-26]",
+                "imag": "[4.4426958006755522984798763 +/- 4.57e-26]"
+              },
+              "numerator_lower_rational": "5376086045409602843620803/1208925819614629174706176",
+              "numerator_lower_ball": "[4.44699414817969943646469526862879536005350445 +/- 1.51e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8729.58087020529369753665512535629124342021176 +/- 3.51e-42]"
+            },
+            {
+              "q": 6,
+              "order": "1/18",
+              "numerator_ball": {
+                "real": "[-0.1747681116211313533791378 +/- 4.46e-26]",
+                "imag": "[4.5557403539458220353474641 +/- 3.93e-26]"
+              },
+              "numerator_lower_rational": "5511603263936346723247625/1208925819614629174706176",
+              "numerator_lower_ball": "[4.55909136401213394944854997889696594120557960 +/- 2.28e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8514.94123418954793467100893686656703715899742 +/- 4.66e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/36",
+              "numerator_ball": {
+                "real": "[-0.16946631329890777579250391 +/- 8.68e-27]",
+                "imag": "[4.62077720216761859537229845 +/- 6.30e-27]"
+              },
+              "numerator_lower_rational": "5589932432649646707495027/1208925819614629174706176",
+              "numerator_lower_ball": "[4.62388373376917088100603290627895150424579718 +/- 2.82e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8395.62525379933010557260337849625923128634811 +/- 1.30e-42]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[8395.62525379933010557260337849625923128634811 +/- 1.30e-42]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 9.035466046047228,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.41641134079855985,
+          "maximum_ratio_case": "17:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.4989799262180569,
+        "maximum_ratio_case": "2:4892",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "1b5bce245871a6008358d9853872b078e3007a008d377a28ae8a1031c1ad2182",
+        "program_id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    }
+  ],
+  "original_RH_compatible_survivors_after_new_gate": 9,
+  "retained_original_proof_obligations": [
+    {
+      "program": {
+        "coefficients": [
+          "1"
+        ],
+        "normalizers": [
+          "1"
+        ],
+        "degree": 0,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [
+          "1"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "f3f3bec4dba025c6257193ed24038fd1de925db004b120e6da81f5e918e64d7e",
+        "family": "baseline",
+        "method": "supplied zero-order anchor; discovery may select other families"
+      },
+      "candidate": {
+        "program_id": "f3f3bec4dba025c6257193ed24038fd1de925db004b120e6da81f5e918e64d7e",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "817/1024",
+        "id": "bde2c73f175599190b73c066ac4bd0c7e68f9f615b727cfad4aa890a1ed2e2e5",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "817/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": null,
+          "numerator_parameter_pole_residue": null,
+          "zero_recovery": "real rational numerator nonzero at every nonreal ordinary zeta zero",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": true,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.49337384486658675,
+          "parameter_slope": 8.546397176705335e-18
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/2",
+              "numerator_ball": {
+                "real": "[-0.0427487107123893991936043662150620830140388789 +/- 1.74e-47]",
+                "imag": "[1.15762915275812045813196965272332639451277731 +/- 2.28e-45]"
+              },
+              "numerator_lower_rational": "1400441662233927954876501/1208925819614629174706176",
+              "numerator_lower_ball": "[1.15841819201144080913693233957509215741217556 +/- 4.17e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[6929.10276513658722706536484324334333490818693 +/- 3.31e-42]"
+            },
+            {
+              "q": 3,
+              "order": "1/3",
+              "numerator_ball": {
+                "real": "[-0.0427487107123893991936043662150620830140388789 +/- 1.74e-47]",
+                "imag": "[1.15762915275812045813196965272332639451277731 +/- 2.28e-45]"
+              },
+              "numerator_lower_rational": "1400441662233927954876501/1208925819614629174706176",
+              "numerator_lower_ball": "[1.15841819201144080913693233957509215741217556 +/- 4.17e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[6929.10276513658722706536484324334333490818693 +/- 3.31e-42]"
+            },
+            {
+              "q": 6,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0427487107123893991936043662150620830140388789 +/- 1.74e-47]",
+                "imag": "[1.15762915275812045813196965272332639451277731 +/- 2.28e-45]"
+              },
+              "numerator_lower_rational": "1400441662233927954876501/1208925819614629174706176",
+              "numerator_lower_ball": "[1.15841819201144080913693233957509215741217556 +/- 4.17e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[6929.10276513658722706536484324334333490818693 +/- 3.31e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.0427487107123893991936043662150620830140388789 +/- 1.74e-47]",
+                "imag": "[1.15762915275812045813196965272332639451277731 +/- 2.28e-45]"
+              },
+              "numerator_lower_rational": "1400441662233927954876501/1208925819614629174706176",
+              "numerator_lower_ball": "[1.15841819201144080913693233957509215741217556 +/- 4.17e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[6929.10276513658722706536484324334333490818693 +/- 3.31e-42]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[6929.10276513658722706536484324334333490818693 +/- 3.31e-42]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 8.843485612681578,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.34983127365028005,
+          "maximum_ratio_case": "6:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.3867811541211692,
+        "maximum_ratio_case": "79:4892",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "bde2c73f175599190b73c066ac4bd0c7e68f9f615b727cfad4aa890a1ed2e2e5",
+        "program_id": "f3f3bec4dba025c6257193ed24038fd1de925db004b120e6da81f5e918e64d7e",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-1/2",
+          "-1/2"
+        ],
+        "normalizers": [
+          "1",
+          "-1/2",
+          "-1/2"
+        ],
+        "degree": 2,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 1,
+        "parameter_moments_through_first_nonzero": [
+          "0",
+          "-3/2"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "c8f64cb3c4f1dcce1dc0e29a167be8451a5a430a3ae3e59595f4775b54822ec8",
+        "family": "signed_products",
+        "method": "composition of sampled rational two-term parameter-label polynomials"
+      },
+      "candidate": {
+        "program_id": "c8f64cb3c4f1dcce1dc0e29a167be8451a5a430a3ae3e59595f4775b54822ec8",
+        "theta": "1/2",
+        "parameter_power": "1",
+        "log_power": "0",
+        "constant": "39/32",
+        "id": "1789a4f28eecea2792119fa9d29b269d150cbe2fc9a0da825eef07db3ecde724",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "1",
+          "log_power": "0",
+          "constant": "39/32",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 1,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/2",
+          "numerator_parameter_pole_residue": "1/4",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": -0.04385936736876492,
+          "parameter_slope": 0.786846728380336
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/4",
+              "numerator_ball": {
+                "real": "[0.0194742760009448064259324 +/- 8.40e-26]",
+                "imag": "[0.1178635429034530361857172 +/- 3.88e-26]"
+              },
+              "numerator_lower_rational": "72210076738154097568459/604462909807314587353088",
+              "numerator_lower_ball": "[0.119461551017534882035545967346856896431489536 +/- 4.26e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[1109783.12451204848774519888435045902949411452 +/- 2.85e-39]"
+            },
+            {
+              "q": 3,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[0.0095456389431452891893463 +/- 5.58e-26]",
+                "imag": "[0.0855149454922279132831099 +/- 2.36e-26]"
+              },
+              "numerator_lower_rational": "26005827103514233926679/302231454903657293676544",
+              "numerator_lower_ball": "[0.0860460639737321338653833445775284119103054614 +/- 1.87e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[1027173.95175501847862251520119386189886537854 +/- 4.15e-39]"
+            },
+            {
+              "q": 6,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[0.00205987125940108916605753 +/- 6.64e-27]",
+                "imag": "[0.04713722017585166911694792 +/- 9.67e-27]"
+              },
+              "numerator_lower_rational": "57039787475957178475289/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0471822063442567752199706778330324347895535775 +/- 1.90e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[936627.19924523077704460618092633753855834558 +/- 9.78e-40]"
+            },
+            {
+              "q": 12,
+              "order": "1/24",
+              "numerator_ball": {
+                "real": "[5.982154844848268030735e-5 +/- 5.66e-27]",
+                "imag": "[0.02488730925701363323444973 +/- 6.35e-27]"
+              },
+              "numerator_lower_rational": "30086997658869846445731/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0248873811533454691704721012942195894606517426 +/- 3.71e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[887842.266531351860894559357926128341575654641 +/- 8.51e-40]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[887842.266531351860894559357926128341575654641 +/- 8.51e-40]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 13.696549378416615,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.11501518432735994,
+          "maximum_ratio_case": "17:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.7165437987342108,
+        "maximum_ratio_case": "79:2",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "1789a4f28eecea2792119fa9d29b269d150cbe2fc9a0da825eef07db3ecde724",
+        "program_id": "c8f64cb3c4f1dcce1dc0e29a167be8451a5a430a3ae3e59595f4775b54822ec8",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-2",
+          "1"
+        ],
+        "normalizers": [
+          "1",
+          "-2",
+          "1"
+        ],
+        "degree": 2,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 2,
+        "parameter_moments_through_first_nonzero": [
+          "0",
+          "0",
+          "2"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "fc492b24fabffa0927eec49b20af9ada49a901ffcb595b2a9ecea7e86dc1de90",
+        "family": "moment_nullspace",
+        "method": "exact nullspace of 2 integer-label moments; free coordinates seeded"
+      },
+      "candidate": {
+        "program_id": "fc492b24fabffa0927eec49b20af9ada49a901ffcb595b2a9ecea7e86dc1de90",
+        "theta": "1/2",
+        "parameter_power": "2",
+        "log_power": "0",
+        "constant": "2053/1024",
+        "id": "5b0ffd4f568f9bd0757904e06967f176632e7264d8ae5e33db10f7710c1fc032",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "2",
+          "log_power": "0",
+          "constant": "2053/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 2,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/2",
+          "numerator_parameter_pole_residue": "-1/2",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": -0.29018808995475437,
+          "parameter_slope": 1.588516586928594
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/4",
+              "numerator_ball": {
+                "real": "[-0.012067895107032652194313 +/- 1.12e-25]",
+                "imag": "[0.024812673554316706589509 +/- 4.96e-25]"
+              },
+              "numerator_lower_rational": "33356339400308759620621/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0275917172576740915927204789039339793716570925 +/- 4.97e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[116592595.370739531502133246773467234178138549 +/- 6.37e-37]"
+            },
+            {
+              "q": 3,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0078881355981721160100691 +/- 4.26e-26]",
+                "imag": "[0.0133947223959929540741540 +/- 7.04e-26]"
+              },
+              "numerator_lower_rational": "9396264066421633636165/604462909807314587353088",
+              "numerator_lower_ball": "[0.0155448149323452992606673475330659171290970111 +/- 1.55e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[91977505.462866777204523387741892975852287415 +/- 5.40e-37]"
+            },
+            {
+              "q": 6,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.0029636572505141057043933 +/- 1.47e-26]",
+                "imag": "[0.0041242673229578958274179 +/- 2.98e-26]"
+              },
+              "numerator_lower_rational": "3069865044424679897565/604462909807314587353088",
+              "numerator_lower_ball": "[0.00507866569580466846651821696983667786887139961 +/- 3.85e-49]",
+              "conditional_reciprocal_zeta_bound_ball": "[70381345.514636606583283952855217032687138303 +/- 5.04e-37]"
+            },
+            {
+              "q": 12,
+              "order": "1/24",
+              "numerator_ball": {
+                "real": "[-0.00091679907449414190649237 +/- 5.64e-27]",
+                "imag": "[0.00115052935339329887648517 +/- 5.12e-27]"
+              },
+              "numerator_lower_rational": "1778493146362163485161/1208925819614629174706176",
+              "numerator_lower_ball": "[0.00147113505022921589480693211886516724197504491 +/- 5.48e-49]",
+              "conditional_reciprocal_zeta_bound_ball": "[60742779.025295444803506555136561575968980549 +/- 3.82e-37]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[60742779.025295444803506555136561575968980549 +/- 3.82e-37]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 17.922158769338928,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.17321807059737845,
+          "maximum_ratio_case": "17:1793",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.7378534372752359,
+        "maximum_ratio_case": "79:2",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "5b0ffd4f568f9bd0757904e06967f176632e7264d8ae5e33db10f7710c1fc032",
+        "program_id": "fc492b24fabffa0927eec49b20af9ada49a901ffcb595b2a9ecea7e86dc1de90",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-3",
+          "3",
+          "-1"
+        ],
+        "normalizers": [
+          "1",
+          "-3",
+          "3",
+          "-1"
+        ],
+        "degree": 3,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 3,
+        "parameter_moments_through_first_nonzero": [
+          "0",
+          "0",
+          "0",
+          "-6"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "ccdffbe5947470614e3cbac15791be3b81215171d193ca2d079a0d32fa9bb0d1",
+        "family": "moment_nullspace",
+        "method": "exact nullspace of 3 integer-label moments; free coordinates seeded"
+      },
+      "candidate": {
+        "program_id": "ccdffbe5947470614e3cbac15791be3b81215171d193ca2d079a0d32fa9bb0d1",
+        "theta": "1/2",
+        "parameter_power": "3",
+        "log_power": "0",
+        "constant": "5903/1024",
+        "id": "5edae32b2a5c64c7741b21351c9ae83b9174e9a0452f5cf1bd296d7e990bd7db",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "3",
+          "log_power": "0",
+          "constant": "5903/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 3,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/3",
+          "numerator_parameter_pole_residue": "1/3",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": -0.07517784899076357,
+          "parameter_slope": 2.5967301614929634
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.004879216045697517766150 +/- 3.43e-25]",
+                "imag": "[0.004640053160695227633208 +/- 4.94e-25]"
+              },
+              "numerator_lower_rational": "8140016561719233086143/1208925819614629174706176",
+              "numerator_lower_ball": "[0.00673326388571470542890876155968509788295184304 +/- 1.90e-49]",
+              "conditional_reciprocal_zeta_bound_ball": "[6601264355.2549009276698608552739741355758150 +/- 5.35e-35]"
+            },
+            {
+              "q": 3,
+              "order": "1/9",
+              "numerator_ball": {
+                "real": "[-0.0021138689853884167036617 +/- 9.99e-26]",
+                "imag": "[0.001728415210523978570578 +/- 4.12e-25]"
+              },
+              "numerator_lower_rational": "3301023082545058331515/1208925819614629174706176",
+              "numerator_lower_ball": "[0.00273054229547130498827502040330540765238065415 +/- 1.23e-48]",
+              "conditional_reciprocal_zeta_bound_ball": "[4823142297.1681993874046316752352197638389804 +/- 1.36e-35]"
+            },
+            {
+              "q": 6,
+              "order": "1/18",
+              "numerator_ball": {
+                "real": "[-0.0003948809039370362350191 +/- 7.35e-26]",
+                "imag": "[0.0002744076379138753136078 +/- 3.53e-26]"
+              },
+              "numerator_lower_rational": "290664637158827314703/604462909807314587353088",
+              "numerator_lower_ball": "[0.000480864305225084615667264135902860249655033087 +/- 7.60e-50]",
+              "conditional_reciprocal_zeta_bound_ball": "[3423469442.52023337185807864071234347148162496 +/- 7.84e-36]"
+            },
+            {
+              "q": 12,
+              "order": "1/36",
+              "numerator_ball": {
+                "real": "[-6.09537179502147445126e-5 +/- 1.32e-26]",
+                "imag": "[3.88155919100766584069e-5 +/- 4.44e-26]"
+              },
+              "numerator_lower_rational": "1365017937837072489/18889465931478580854784",
+              "numerator_lower_ball": "[7.22634479338201775397878114191169141022896838e-5 +/- 3.33e-51]",
+              "conditional_reciprocal_zeta_bound_ball": "[2847608822.31296544085655696539829157783850730 +/- 7.52e-36]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[2847608822.31296544085655696539829157783850730 +/- 7.52e-36]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 21.769745469346578,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.1467801497904781,
+          "maximum_ratio_case": "17:1793",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.7612222747857218,
+        "maximum_ratio_case": "79:2",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "5edae32b2a5c64c7741b21351c9ae83b9174e9a0452f5cf1bd296d7e990bd7db",
+        "program_id": "ccdffbe5947470614e3cbac15791be3b81215171d193ca2d079a0d32fa9bb0d1",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        "normalizers": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        "degree": 3,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [
+          "2"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "78a999fb16443385c1d7298d011f80592e9adad1bc2e606d8b556c8905e2f06f",
+        "family": "enumerated",
+        "method": "enumerated"
+      },
+      "candidate": {
+        "program_id": "78a999fb16443385c1d7298d011f80592e9adad1bc2e606d8b556c8905e2f06f",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "1593/1024",
+        "id": "3f488102bb73c2ecb0aed0d86c2eb9606fe311ec43ac40535c0fb614ade8f50a",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "1593/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/3",
+          "numerator_parameter_pole_residue": "-1/3",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.3853754800336443,
+          "parameter_slope": 0.08341521567704245
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.115485754461716091019890 +/- 4.00e-25]",
+                "imag": "[2.166377806163075770212819 +/- 2.96e-25]"
+              },
+              "numerator_lower_rational": "2622708704416660226507633/1208925819614629174706176",
+              "numerator_lower_ball": "[2.16945379266753060582719278132145411725796580 +/- 9.52e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[7397.46960298000248295997102721757390573026636 +/- 5.27e-43]"
+            },
+            {
+              "q": 3,
+              "order": "1/9",
+              "numerator_ball": {
+                "real": "[-0.1008543185483632226430268 +/- 4.37e-26]",
+                "imag": "[2.2057032856586013499111775 +/- 6.37e-26]"
+              },
+              "numerator_lower_rational": "2669317675760798491383519/1208925819614629174706176",
+              "numerator_lower_ball": "[2.20800783013444140943044316776011515442677824 +/- 1.06e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7268.30234354312839608901093722929601469865703 +/- 3.28e-43]"
+            },
+            {
+              "q": 6,
+              "order": "1/18",
+              "numerator_ball": {
+                "real": "[-0.0892318021874849525100832 +/- 1.14e-26]",
+                "imag": "[2.2537834343894246560504814 +/- 4.05e-26]"
+              },
+              "numerator_lower_rational": "2726791635820123862725379/1208925819614629174706176",
+              "numerator_lower_ball": "[2.25554917562216241690139110426418825555532066 +/- 1.30e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7115.10467596034013791365663485643118862227991 +/- 2.53e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/36",
+              "numerator_ball": {
+                "real": "[-0.08588278318087482259644932 +/- 5.44e-27]",
+                "imag": "[2.28245873629135383824350139 +/- 7.39e-27]"
+              },
+              "numerator_lower_rational": "2761275952547061807183267/1208925819614629174706176",
+              "numerator_lower_ball": "[2.28407393385582356418311662623347858369453334 +/- 2.96e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7026.24737686829955148772622925478422401024513 +/- 5.41e-43]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[7026.24737686829955148772622925478422401024513 +/- 5.41e-43]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 8.857408040983113,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.35533090456546307,
+          "maximum_ratio_case": "17:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.4043440210275502,
+        "maximum_ratio_case": "2:4892",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "3f488102bb73c2ecb0aed0d86c2eb9606fe311ec43ac40535c0fb614ade8f50a",
+        "program_id": "78a999fb16443385c1d7298d011f80592e9adad1bc2e606d8b556c8905e2f06f",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-17/16"
+        ],
+        "normalizers": [
+          "1",
+          "-17/16"
+        ],
+        "degree": 1,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [
+          "-1/16"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "ab960535674a6ea79d0392430f574eab9e5832f5c0eee302e995dd6b93121493",
+        "family": "learned_linear_relation",
+        "method": "exact least squares on quantized anonymous remainder columns"
+      },
+      "candidate": {
+        "program_id": "ab960535674a6ea79d0392430f574eab9e5832f5c0eee302e995dd6b93121493",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "277/1024",
+        "id": "b1fee5c48b290f2484fb19ee1d972c18a79db631622cffc107998dd6240edf5a",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "277/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1",
+          "numerator_parameter_pole_residue": "17/16",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.11436300992745617,
+          "parameter_slope": 0.8645208903990084
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/2",
+              "numerator_ball": {
+                "real": "[0.034534398271270210871824 +/- 3.05e-25]",
+                "imag": "[0.0858337085153554390460670 +/- 9.26e-26]"
+              },
+              "numerator_lower_rational": "111850468733193685867483/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0925205392410664224471956401925813804742321222 +/- 4.64e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[177032.369279624335367972098588891739865408790 +/- 2.86e-40]"
+            },
+            {
+              "q": 3,
+              "order": "1/3",
+              "numerator_ball": {
+                "real": "[0.0189884976133327882214069 +/- 7.42e-26]",
+                "imag": "[0.0440503865513595106165614 +/- 6.82e-26]"
+              },
+              "numerator_lower_rational": "57990643024709869409527/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0479687356195234713768657964853770120979697955 +/- 1.22e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[341454.283865011280551756826832954729669927797 +/- 4.84e-40]"
+            },
+            {
+              "q": 6,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[0.00663957397989962620515440 +/- 8.48e-27]",
+                "imag": "[-0.0070347714751402521564490 +/- 5.11e-26]"
+              },
+              "numerator_lower_rational": "11694253356075907410859/1208925819614629174706176",
+              "numerator_lower_ball": "[0.00967325965442916875343750993032759517668839333 +/- 2.68e-49]",
+              "conditional_reciprocal_zeta_bound_ball": "[1693237.94191493749068204977965510969968650251 +/- 1.96e-40]"
+            },
+            {
+              "q": 12,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[0.00308124128537636317191839 +/- 7.15e-27]",
+                "imag": "[-0.03750227974594000823653282 +/- 5.99e-27]"
+              },
+              "numerator_lower_rational": "45490242256054871234943/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0376286464545490919979044768868405663932857896 +/- 3.70e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[435283.535607864000026982078557727777357559505 +/- 4.36e-40]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[177032.369279624335367972098588891739865408790 +/- 2.86e-40]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 12.084087872121968,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.08597782161785102,
+          "maximum_ratio_case": "2:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.6664699346113104,
+        "maximum_ratio_case": "2:2",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "b1fee5c48b290f2484fb19ee1d972c18a79db631622cffc107998dd6240edf5a",
+        "program_id": "ab960535674a6ea79d0392430f574eab9e5832f5c0eee302e995dd6b93121493",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-3/2",
+          "1/2"
+        ],
+        "normalizers": [
+          "1",
+          "-3/2",
+          "1/2"
+        ],
+        "degree": 2,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 1,
+        "parameter_moments_through_first_nonzero": [
+          "0",
+          "-1/2"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "8676d62449ac681e16177dc1f68c42d9f3515979b9c08e5aafacf72d50d1491e",
+        "family": "moment_nullspace",
+        "method": "exact nullspace of 1 integer-label moments; free coordinates seeded"
+      },
+      "candidate": {
+        "program_id": "8676d62449ac681e16177dc1f68c42d9f3515979b9c08e5aafacf72d50d1491e",
+        "theta": "1/2",
+        "parameter_power": "1",
+        "log_power": "0",
+        "constant": "495/1024",
+        "id": "5e4067a48d34a43c2a06bed00060412c0ba411bb7b793df1ea691be4e0b13728",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "1",
+          "log_power": "0",
+          "constant": "495/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 1,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/2",
+          "numerator_parameter_pole_residue": "-1/4",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": -0.1267394368064981,
+          "parameter_slope": 0.9970773966956409
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/4",
+              "numerator_ball": {
+                "real": "[-0.0015538380710401659875645 +/- 5.07e-26]",
+                "imag": "[0.0558296300040288164549115 +/- 9.14e-26]"
+              },
+              "numerator_lower_rational": "33760008401834141213253/604462909807314587353088",
+              "numerator_lower_ball": "[0.0558512488592490516027571925310041809666083967 +/- 3.01e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[3955347.89998944509008738287646856340352407448 +/- 2.41e-39]"
+            },
+            {
+              "q": 3,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0020768774177329809435973 +/- 3.90e-26]",
+                "imag": "[0.0374347967614046071438060 +/- 3.73e-26]"
+              },
+              "numerator_lower_rational": "45325488007638216121089/1208925819614629174706176",
+              "numerator_lower_ball": "[0.0374923649344230895309067462435919564165548445 +/- 4.45e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[3928108.56776854812485857814208432642451710096 +/- 4.62e-39]"
+            },
+            {
+              "q": 6,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.00128914774720904074757636 +/- 9.01e-27]",
+                "imag": "[0.0184619182739224869239279 +/- 1.09e-26]"
+              },
+              "numerator_lower_rational": "11186717978872617749743/604462909807314587353088",
+              "numerator_lower_ball": "[0.0185068724604436393071451716033448231350788671 +/- 1.77e-47]",
+              "conditional_reciprocal_zeta_bound_ball": "[3978902.43852909825785260231140509288126061889 +/- 2.22e-39]"
+            },
+            {
+              "q": 12,
+              "order": "1/24",
+              "numerator_ball": {
+                "real": "[-0.00059125886684660037755913 +/- 3.95e-27]",
+                "imag": "[0.00906278932126674366247336 +/- 7.86e-27]"
+              },
+              "numerator_lower_rational": "10979531736824265839567/1208925819614629174706176",
+              "numerator_lower_ball": "[0.00908205578761170406121648814934407627739998414 +/- 2.85e-48]",
+              "conditional_reciprocal_zeta_bound_ball": "[4053985.22561654743360535477668074108102977230 +/- 5.42e-39]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[3928108.56776854812485857814208432642451710096 +/- 4.62e-39]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 15.183668587526808,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.10813595124000504,
+          "maximum_ratio_case": "2:1793",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.6657041917463505,
+        "maximum_ratio_case": "3:2",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "5e4067a48d34a43c2a06bed00060412c0ba411bb7b793df1ea691be4e0b13728",
+        "program_id": "8676d62449ac681e16177dc1f68c42d9f3515979b9c08e5aafacf72d50d1491e",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "-3",
+          "9/4"
+        ],
+        "normalizers": [
+          "1",
+          "-3",
+          "9/4"
+        ],
+        "degree": 2,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [
+          "1/4"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "b15ec30270eaf79962e4b3723c3d43d9eddc857ae576af2ebeec7a2e8e1dca7b",
+        "family": "promoted_composition",
+        "method": {
+          "left": "0314e9c7af992fa4c1b734ed946fa3e5c6b3a833cda8345a03a680e44a246829",
+          "right": "0314e9c7af992fa4c1b734ed946fa3e5c6b3a833cda8345a03a680e44a246829",
+          "production": "parameter-label polynomial product"
+        }
+      },
+      "candidate": {
+        "program_id": "b15ec30270eaf79962e4b3723c3d43d9eddc857ae576af2ebeec7a2e8e1dca7b",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "25/128",
+        "id": "93a658d60ffedf438317bcf92e134811c90800b00361b127ba3a20e225d65752",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "25/128",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/2",
+          "numerator_parameter_pole_residue": "-9/8",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.22394846357401424,
+          "parameter_slope": 0.11249641989045564
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/4",
+              "numerator_ball": {
+                "real": "[-0.051280270116349297564381 +/- 4.07e-25]",
+                "imag": "[0.214965924006131314878915 +/- 4.12e-25]"
+              },
+              "numerator_lower_rational": "267169910892279256948785/1208925819614629174706176",
+              "numerator_lower_ball": "[0.220997770547613376454159873596344495225510252 +/- 4.21e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[224227.342964454634140391753383637254321048360 +/- 1.12e-40]"
+            },
+            {
+              "q": 3,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0340370539180438420053683 +/- 9.13e-26]",
+                "imag": "[0.227333106890289870879652 +/- 1.53e-25]"
+              },
+              "numerator_lower_rational": "277892216693989854536119/1208925819614629174706176",
+              "numerator_lower_ball": "[0.229867054028653231060116762644268635423436264 +/- 4.54e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[215575.664378517751669304052327196059197375109 +/- 2.12e-41]"
+            },
+            {
+              "q": 6,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.0179334491258981239471469 +/- 2.57e-26]",
+                "imag": "[0.2494875358288547631140258 +/- 4.09e-26]"
+              },
+              "numerator_lower_rational": "302390118938019130677531/1208925819614629174706176",
+              "numerator_lower_ball": "[0.250131243813133558961929515273728768338587503 +/- 4.38e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[198110.968208273282904988519080569937977722319 +/- 4.95e-40]"
+            },
+            {
+              "q": 12,
+              "order": "1/24",
+              "numerator_ball": {
+                "real": "[-0.0123513976069105808150701 +/- 2.54e-26]",
+                "imag": "[0.2665334053009547543323917 +/- 4.49e-26]"
+              },
+              "numerator_lower_rational": "161282454645023060049649/604462909807314587353088",
+              "numerator_lower_ball": "[0.266819439254652156911743883273720721622385144 +/- 4.11e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[185720.137293540753758788164476792704208952940 +/- 3.79e-40]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[185720.137293540753758788164476792704208952940 +/- 3.79e-40]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 12.13199618138375,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.35636480717004176,
+          "maximum_ratio_case": "2:1793",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.5098833536564336,
+        "maximum_ratio_case": "2:5120",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "93a658d60ffedf438317bcf92e134811c90800b00361b127ba3a20e225d65752",
+        "program_id": "b15ec30270eaf79962e4b3723c3d43d9eddc857ae576af2ebeec7a2e8e1dca7b",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    },
+    {
+      "program": {
+        "coefficients": [
+          "1",
+          "3/2",
+          "1/2"
+        ],
+        "normalizers": [
+          "1",
+          "3/2",
+          "1/2"
+        ],
+        "degree": 2,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [
+          "3"
+        ],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "7eb2502d2da531ee9be36d9d1a97e5893ad6037c5cfa25bd35ffeaea7c6cf1cc",
+        "family": "signed_products",
+        "method": "composition of sampled rational two-term parameter-label polynomials"
+      },
+      "candidate": {
+        "program_id": "7eb2502d2da531ee9be36d9d1a97e5893ad6037c5cfa25bd35ffeaea7c6cf1cc",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "0",
+        "constant": "2397/1024",
+        "id": "7a6f08a643460c74478d7d89d21f31930a91c39ae34c0ea9823bca748c7e765a",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "0",
+          "constant": "2397/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/2",
+          "numerator_parameter_pole_residue": "-1/4",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.3870907843906323,
+          "parameter_slope": 0.11454250338576297
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/4",
+              "numerator_ball": {
+                "real": "[-0.1566806271030653242259295 +/- 7.25e-26]",
+                "imag": "[3.2681773289171674118898774 +/- 8.47e-26]"
+              },
+              "numerator_lower_rational": "3955521755679829613824601/1208925819614629174706176",
+              "numerator_lower_ball": "[3.27193090883006893546604561545679281894284662 +/- 3.47e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7357.62508905868626495049316056078774522403603 +/- 2.30e-42]"
+            },
+            {
+              "q": 3,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.1415261518430196408930338 +/- 5.29e-26]",
+                "imag": "[3.3258976416553172008993411 +/- 5.02e-26]"
+              },
+              "numerator_lower_rational": "4024402160831745090593401/1208925819614629174706176",
+              "numerator_lower_ball": "[3.32890744455653110281729779848712311531890029 +/- 4.83e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[7231.69428571533496962347577581612874814184940 +/- 2.12e-42]"
+            },
+            {
+              "q": 6,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.13069136515266531095611121 +/- 9.41e-27]",
+                "imag": "[3.3929506688736226272585231 +/- 3.03e-26]"
+              },
+              "numerator_lower_rational": "2052433713993440412046471/604462909807314587353088",
+              "numerator_lower_ball": "[3.39546675353115929739922846964646712493093861 +/- 1.93e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7089.93569718773181516581433274620057363961707 +/- 3.19e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/24",
+              "numerator_ball": {
+                "real": "[-0.12804023502641762141249455 +/- 5.75e-27]",
+                "imag": "[3.43102509972820755271299769 +/- 5.27e-27]"
+              },
+              "numerator_lower_rational": "4150742101884184480933057/1208925819614629174706176",
+              "numerator_lower_ball": "[3.43341339438620132565498272729081555829956651 +/- 2.27e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[7011.57657969071931435234070013024654513931478 +/- 4.08e-42]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[7011.57657969071931435234070013024654513931478 +/- 4.08e-42]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 8.855317859119571,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.354757371887545,
+          "maximum_ratio_case": "17:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.4020336340656679,
+        "maximum_ratio_case": "2:4892",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "7a6f08a643460c74478d7d89d21f31930a91c39ae34c0ea9823bca748c7e765a",
+        "program_id": "7eb2502d2da531ee9be36d9d1a97e5893ad6037c5cfa25bd35ffeaea7c6cf1cc",
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "point_comparisons": 49,
+        "RH_proved": false
+      }
+    }
+  ],
+  "repairs_selected": 2,
+  "positive_log_repairs_passing_fresh_points": 2,
+  "repaired_uniform_proof_obligations": [
+    {
+      "rejected_candidate_id": "db6104141cea0380b8d373d594fc1558e5d49d35e0a45e63e341bbe217e262b7",
+      "program": {
+        "coefficients": [
+          "1"
+        ],
+        "normalizers": [
+          "0"
+        ],
+        "degree": 0,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "family": "independent_zero_normalizer",
+        "method": "independent_zero_normalizer"
+      },
+      "candidate": {
+        "program_id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "1",
+        "constant": "509/512",
+        "id": "87da9a5995436c3833dea33c5bfa15909d99186763dee85f45e82459b829a02b",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "1",
+          "constant": "509/512",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": null,
+          "numerator_parameter_pole_residue": null,
+          "zero_recovery": "real rational numerator nonzero at every nonreal ordinary zeta zero",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": true,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.10126795462765653,
+          "parameter_slope": -2.1721659406596643e-18
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/2",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[2114.94889516330318326852214992177457560265878 +/- 1.32e-43]"
+            },
+            {
+              "q": 3,
+              "order": "1/3",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[2114.94889516330318326852214992177457560265878 +/- 1.32e-43]"
+            },
+            {
+              "q": 6,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[2114.94889516330318326852214992177457560265878 +/- 1.32e-43]"
+            },
+            {
+              "q": 12,
+              "order": "1/12",
+              "numerator_ball": {
+                "real": "[-0.0442127502414566840102944168464291299243054561 +/- 1.50e-47]",
+                "imag": "[1.09516346618458297261986082578499905967473669 +/- 4.83e-45]"
+              },
+              "numerator_lower_rational": "165631232887010260384781/151115727451828646838272",
+              "numerator_lower_ball": "[1.09605555741912263715960470557365447931419400 +/- 9.27e-46]",
+              "conditional_reciprocal_zeta_bound_ball": "[2114.94889516330318326852214992177457560265878 +/- 1.32e-43]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[2114.94889516330318326852214992177457560265878 +/- 1.32e-43]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 7.656785928145092,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.0377886046123669,
+          "maximum_ratio_case": "6:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.04846365956649898,
+        "maximum_ratio_case": "2:9861",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "87da9a5995436c3833dea33c5bfa15909d99186763dee85f45e82459b829a02b",
+        "program_id": "acbbdab1eaab69522b50675e381e24ccc813f37019330c28c38622bbd6e17393",
+        "complete_point_comparisons": 1447,
+        "every_integer_checked": true,
+        "RH_proved": false
+      }
+    },
+    {
+      "rejected_candidate_id": "1b5bce245871a6008358d9853872b078e3007a008d377a28ae8a1031c1ad2182",
+      "program": {
+        "coefficients": [
+          "1",
+          "1/4",
+          "2",
+          "3/4"
+        ],
+        "normalizers": [
+          "2",
+          "1/4",
+          "2",
+          "3/4"
+        ],
+        "degree": 3,
+        "positive_orders_compensated": true,
+        "parameter_vanishing_order": 0,
+        "parameter_moments_through_first_nonzero": [],
+        "order_schedule": "a_q=1/(max(1,D)*q), every integer q>=2",
+        "zero_order_convention": "D_0(1)=0; D_0(n)=1 for n>=2; T_0=delta_1-mu",
+        "domain": "x>=1; 0<=a<=1/max(1,D); order j*a<=1",
+        "id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "family": "normalizer_mutation",
+        "method": "seeded independent arithmetic/continuous normalizer mutation"
+      },
+      "candidate": {
+        "program_id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "theta": "1/2",
+        "parameter_power": "0",
+        "log_power": "1",
+        "constant": "743/1024",
+        "id": "6a1c45d5563130ecc0da6c5bca89a47be91b529d25d8604839f2d3f7fcfa0e65",
+        "transfer": {
+          "theta": "1/2",
+          "parameter_power": "0",
+          "log_power": "1",
+          "constant": "743/1024",
+          "ordinary_zeta_exponent": "1/2",
+          "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+          "exact_parameter_vanishing_order": 0,
+          "positive_order_mismatches": [],
+          "numerator_parameter_pole_location": "-1/3",
+          "numerator_parameter_pole_residue": "-1/4",
+          "zero_recovery": "parameter identity theorem and nonzero pole residue",
+          "required_uniform_scope": "every integer n>=1 AND every integer q>=2",
+          "finite_parameter_grid_suffices": false,
+          "uniform_constant_in_q_required_for_parameter_rate_claim": true,
+          "all_height_scalar_multiplier_nonvanishing_required": false,
+          "RH_sufficient_if_uniform": true,
+          "uniform_signed_premise_proved": false,
+          "RH_proved": false
+        },
+        "analytic_status": "RH_sufficient_infinite_family_obligation_missing_uniform_proof",
+        "training_fit": {
+          "theta_slope": 0.1317877257178202,
+          "parameter_slope": -0.05197573976643033
+        },
+        "recovery_cost": {
+          "query": [
+            "5/8",
+            "16"
+          ],
+          "parameter_observers": [
+            {
+              "q": 2,
+              "order": "1/6",
+              "numerator_ball": {
+                "real": "[-0.223669442536038668474593 +/- 2.71e-25]",
+                "imag": "[4.346843165594162260742759 +/- 3.05e-25]"
+              },
+              "numerator_lower_rational": "657745391200438505835753/151115727451828646838272",
+              "numerator_lower_ball": "[4.35259388477687633822837890995390464250747176 +/- 3.89e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[9042.08475048478246972539040534894646646606652 +/- 4.55e-42]"
+            },
+            {
+              "q": 3,
+              "order": "1/9",
+              "numerator_ball": {
+                "real": "[-0.1954762814366588824816564 +/- 7.17e-26]",
+                "imag": "[4.4426958006755522984798763 +/- 4.57e-26]"
+              },
+              "numerator_lower_rational": "5376086045409602843620803/1208925819614629174706176",
+              "numerator_lower_ball": "[4.44699414817969943646469526862879536005350445 +/- 1.51e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8850.14044974721353113223242740674304101458675 +/- 3.11e-42]"
+            },
+            {
+              "q": 6,
+              "order": "1/18",
+              "numerator_ball": {
+                "real": "[-0.1747681116211313533791378 +/- 4.46e-26]",
+                "imag": "[4.5557403539458220353474641 +/- 3.93e-26]"
+              },
+              "numerator_lower_rational": "5511603263936346723247625/1208925819614629174706176",
+              "numerator_lower_ball": "[4.55909136401213394944854997889696594120557960 +/- 2.28e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8632.53654034242011336694874261297041445676037 +/- 4.44e-42]"
+            },
+            {
+              "q": 12,
+              "order": "1/36",
+              "numerator_ball": {
+                "real": "[-0.16946631329890777579250391 +/- 8.68e-27]",
+                "imag": "[4.62077720216761859537229845 +/- 6.30e-27]"
+              },
+              "numerator_lower_rational": "5589932432649646707495027/1208925819614629174706176",
+              "numerator_lower_ball": "[4.62388373376917088100603290627895150424579718 +/- 2.82e-45]",
+              "conditional_reciprocal_zeta_bound_ball": "[8511.57275066532430743717449615943731641824505 +/- 3.77e-42]"
+            }
+          ],
+          "unresolved_denominator_orders": [],
+          "best_conditional_reciprocal_zeta_bound_ball": "[8511.57275066532430743717449615943731641824505 +/- 3.77e-42]",
+          "charges_parameter_normalization_and_unit_increment": true,
+          "scope": "one native complex query; conditioned on the full infinite-family bound",
+          "height_uniform": false,
+          "uniform_signed_premise_proved": false
+        },
+        "log_reciprocal_cost": 9.049182016555855,
+        "validation": {
+          "failures": [],
+          "unresolved": [],
+          "maximum_ratio": 0.17746313967216773,
+          "maximum_ratio_case": "17:4096",
+          "finite_points_passed": true,
+          "uniform_signed_premise_proved": false
+        }
+      },
+      "final_outcome": {
+        "failures": [],
+        "unresolved": [],
+        "maximum_ratio": 0.2399397128965748,
+        "maximum_ratio_case": "134:9890",
+        "finite_points_passed": true,
+        "uniform_signed_premise_proved": false,
+        "candidate_id": "6a1c45d5563130ecc0da6c5bca89a47be91b529d25d8604839f2d3f7fcfa0e65",
+        "program_id": "554d28bc6155398a8afc90fa384bbc336b10597179a380db32ff206a3c340970",
+        "complete_point_comparisons": 12,
+        "every_integer_checked": false,
+        "RH_proved": false
+      }
+    }
+  ],
+  "fresh_integer_interval": [
+    9714,
+    11160
+  ],
+  "fresh_complete_point_values_checked": 1459,
+  "complete_coefficient_cutoff": 11160,
+  "named_external_dependency": {
+    "path": "/home/dbsanfte/riemann/operator-discovery-benchmark/mertens-limit-results/source/Hurst_1610.08551v2.pdf",
+    "sha256": "18bdf91da4578ba13e17bc57c9ef5f375e21ac723f09e2d06b47422afc3674e8",
+    "url": "https://arxiv.org/pdf/1610.08551v2",
+    "author": "Greg Hurst",
+    "theorem": "6.1",
+    "printed_page": 11,
+    "statement": "liminf M(x)/sqrt(x)<-1.837625",
+    "used_rational_weaker_consequence": "limsup |M(x)|/sqrt(x)>7/4",
+    "imported_not_independently_reproduced": true,
+    "machine_formalized": false
+  },
+  "published_numerical_extremum_theorem_is_named_import": true,
+  "imported_computation_independently_reproduced": false,
+  "derived_limit_and_Volterra_inverse_independently_checked": true,
+  "source_outcomes_modified": false,
+  "source_final_is_development": true,
+  "historical_priority_is_acceptance_gate": false,
+  "analytic_proof_is_machine_formalized": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "797e7d3b34a42980a2bd24ddd495ae74e8117381ba9ff29b598afa868b4e1ddf"
+}

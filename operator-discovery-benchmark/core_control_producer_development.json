@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "command": [
+        "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_control_synthesis"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_control_synthesis operations=81251\n",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n",
+      "operations": 81251,
+      "elapsed_seconds": 0.14526120401569642
+    }
+  ],
+  "operations": 81251,
+  "actual_source_evaluations": 0
+}

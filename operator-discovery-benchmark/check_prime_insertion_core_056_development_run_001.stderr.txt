@@ -1,0 +1,32 @@
+test_actual_primes_and_products_beyond_old_array_cap (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_auxiliary_recovery_is_not_original_target_recovery (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_charge_only_meter_and_strict_boolean_flags (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_common_prime_term_nonzero_is_retained_not_priced (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_exact_zero_first_jet_keeps_zero_exception_rows (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_exception_sign_bound_and_full_rows_cannot_change (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_first_jet_bounds_and_exact_prime_two_identity (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_first_jet_zero_does_not_cancel_full_kernel (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_full_formal_first_jet_and_zero_jet_source_identity (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_generic_rational_signed_jet_mixture (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_generic_recovery_constant_quantifier (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_generic_recovery_missing_tail_or_numeric_fit_rejected (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_generic_recovery_provider_insufficient_not_arithmetic_refutation (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_generic_recovery_source_and_eta_binding (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_integer_unit_gate_and_full_cofactor_weight (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_jet_features_and_coefficient_schema_guards (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_microscopic_constant_power_and_nonempty_gate (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_microscopic_full_E_R_source_and_arbitrary_denominators (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_microscopic_signed_mass_and_unit_filter (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_numeric_open_core_never_promoted_by_tail_or_first_jet (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_numeric_recovery_strict_boundary_and_log_weight (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_rational_types_and_cutoff_resource_guards (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_recovery_underprice_and_plain_log_at_small_N_rejected (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_tail_domain_normalization_and_signed_source_binding (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_tau_one_cannot_use_bounded_or_subcritical_provider (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+test_three_tail_regimes_and_critical_log (test_check_prime_insertion_core_056.CoreRulesTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.062s
+
+OK
+PEAK_RSS_KIB=25856

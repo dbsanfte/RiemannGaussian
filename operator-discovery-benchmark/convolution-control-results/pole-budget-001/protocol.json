@@ -1,0 +1,12 @@
+{
+  "RH_proved": false,
+  "actual_all_scale_signed_bound_proved": false,
+  "code_sha256": {
+    "arithmetic_filter_pole_budget.py": "e1b730dec869117f8e654712744bc7b72ebaa6d6771e8d87774fe5c48f96bd4d",
+    "arithmetic_filter_pole_budget_proof.txt": "0f32e43a7ceb851dd29a1218424cfa4e77daa8c62f5e5ee57b69b275e4dc6403",
+    "test_arithmetic_filter_pole_budget.py": "2af4abce1e4495f6bb36ab133b7fc02abf15954ba9685fa5b3788bf218945b12"
+  },
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "schema": 1,
+  "scope": "post-discovery conditional semantic certificate; no search scores or global bound"
+}

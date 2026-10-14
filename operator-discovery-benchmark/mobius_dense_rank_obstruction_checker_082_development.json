@@ -1,0 +1,30 @@
+{
+  "RH_proved": false,
+  "additional_independent_detector_integration": {
+    "case_count": 24,
+    "receipt": "mobius_dense_rank_obstruction_independent_audit_082.json",
+    "source": "audit_mobius_dense_rank_obstruction_082.py",
+    "status": "PASS"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "project venv python -m unittest test_check_mobius_dense_rank_obstruction_082 -v",
+      "failed": 0,
+      "output": "test_H00_energy_binding_and_parameter_independence (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_cell_boundaries_overlap_and_thresholds (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_connects_to_exact_finite_rankone_dual (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_exact_null_and_source_value_tampering (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_fractional_sublinear_profiles_and_duplicate_linear (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_generic_fullradius_uniform_witness_and_scope (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_resource_and_no_source_sieve (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\ntest_strict_schema_canonical_rationals_unit_and_empty (test_check_mobius_dense_rank_obstruction_082.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.007s\n\nOK\n",
+      "passed": 8,
+      "status": "PASS",
+      "tests": 8
+    }
+  ],
+  "distinct_tests": 8,
+  "failed_executions": 0,
+  "hashes_used": false,
+  "latest_outcome": "PASS",
+  "old_tests_run": false,
+  "passed_executions": 8,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 8,
+  "uniform_original_source_bound_proved": false
+}

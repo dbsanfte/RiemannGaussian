@@ -1,0 +1,106 @@
+CONVOLUTION ARGUMENT SEARCH VERIFIED; COMPLETE SIGNED CORE REMAINS OPEN
+
+Current input: candidate10_convolution_argument_obligation.json
+Accepted study: core-convolution-argument-results/pilot-001
+Producer: core_convolution_argument_search.py
+Checker: check_core_convolution_argument_search.py
+Runner/ancestry: run_core_convolution_argument_search.py, including verify()
+Rules: CORE_DILATION_COVARIANCE_REVIEW_031.txt
+Protocol: core_convolution_argument_search_protocol.txt
+
+Answer to the user's workflow question
+The detector now searches exact decomposition coefficients and competing
+bound arguments. Analysts still supply the elementary inference rules and
+the arithmetic facts those rules may use. This is bounded proof search,
+not autonomous invention of arbitrary inequalities. Subagents supplied a
+review and independent checker; the actual search makes no model calls.
+
+The new search derives a floor identity from 18 basis columns, compares
+eight actual/generic divisor arguments, and explores 51 rational cutoff
+pairs with 285 distinct support-threshold trials. Each linear solve supplies
+an exact primal identity or an annihilating dual contradiction. All were
+independently checked. Rational cutoffs are generated through denominator6;
+the old four hand-selected geometries were replaced, including sixth roots.
+
+The grammar uses strictly shorter cutoffs beta<1. A whole-length cutoff
+can move the source into a finite head with no reduction of the obligation.
+This is an explicit search restriction, not an impossibility theorem about
+that head. No selected decomposition is called a complete bound while its
+finite head, mean, short head, cross terms or outer transport remain unpaid.
+
+What the run found
+For A=mu restricted to 1..U, c=sum A(d)/d, e=E-C delta and
+C=1+(M(U)-c)/2, floor synthesis derives
+ B_a(floor(n/d)) = B_(ad)(n)-B_d(n)/a,
+where B_d(n)={n/d}-(d-1)/(2d).
+It collects the full signed coefficients v=h*A-c*h before magnitudes and
+keeps the harmonic null sum v(n)/n=0. The physical prefix still has correction
+ -(1-C)sum_(d>n)h(d).
+
+For h=A^2, the chosen variance argument is
+ Var(F_(A^2)) <= (38519631/4) U^3 (1+log U)^8.
+The old argument had U power5. The constant includes the conversion from
+log(U^3) to log U. General bounded weights attain the same U power with
+two additional logarithms. Therefore this power improvement does not prove
+new Mobius cancellation. Fractional-decay APIs and tests keep the logarithmic
+transition at decay1/2 explicit; the actual source run uses decay zero.
+
+The generated search unexpectedly chooses alpha=1/6,beta=5/6 (index5).
+Write t=e restricted to n<=floor(N^(1/6)), r=e restricted to
+n<=floor(N^(5/6)), with FIXED N. On all coefficients n<=N it proves
+ (C delta+e)^3 = h*e+z,
+ h=3 C^2 delta+6 C t+3 t*t,
+ z=C^3 delta+3 C r*r-6 C r*t+r*r*r-3 r*t*t.
+Every product is Dirichlet convolution. The complete source is
+ A^2*(h*e+z)-c^3 D, with its exact finite head and all mean contributions.
+This candidate makes the periodic branch inexpensive by putting substantial
+work into z. Its selection is not evidence that the whole bound is closer
+to proof; the unpaid remainder must drive the next search.
+
+Full periodic-window cost clarification
+The original geometry field normalized_spacing_cost_power records the
+OFF-DIAGONAL spacing contribution. It alone is not the whole window bound.
+The separate complete_periodic_window_cost_audit.json applies both terms
+of Review031 equations4.3 and6.1 to every saved geometry, without rerunning
+the search. It confirms the same selection after paying the diagonal term.
+For the selected branch, U<=N^(1/24) and integer window length L<=N give
+the normalized periodic bound
+ C0 [N^(-3/8)(1+log N)^48 + N^(-11/24)(1+log N)^49],
+ C0=323915428392834375/64.
+Its leading N power is -3/8, not the spacing-only -11/24. The finite head,
+physical short head, every cross term, original Mellin norm, outer kernel
+and centering remain unpaid. The coefficient identity is restricted to
+n<=N and never licensed as a global Dirichlet-series identity.
+
+Actual-prime information and scope
+The supplied review proves the finite all-U lower statement
+ Var(F_(A^2)) >= (3/2) binom(pi(U)-pi(U/2),3).
+Each conductor made of three distinct primes in (U/2,U] has coefficient-6
+and no higher cofactor. This obstructs improving the isolated full-period
+U power below3, upon importing the prime number theorem explicitly recorded
+at https://dlmf.nist.gov/27.2.E3. It supplies no finite-window lower bound
+and does not refute the full core or any joined cancellation mechanism.
+The detector did not discover this theorem; it is a supplied scoped rule.
+
+Feedback and next work
+The original signed core stays priority0. Priority1 contains the selected
+exact geometry, complete recovery and missing joined finite-window covariance.
+All144 inherited source bindings and earlier routes are preserved. Continue
+with the complete A^2*(h*e+z)-c^3 D expression: search bounds/recurrences or
+pairings that control its finite head jointly with the periodic branch.
+Do not keep optimizing the cheap branch while leaving its head unpriced.
+The original global low Mellin requirement remains unresolved.
+
+Verification and resources
+Root:13 distinct tests,14 invocations including one affected grammar check;
+checker:18 distinct tests,21 invocations including three affected checks.
+All passed. The two full suites each ran once; no old study/suite reran.
+The actual study ran once, exited0, and independent feedback verification
+passed. Development7,827,038 operations; study7,486,278; inclusive15,313,316.
+Study runtime17.306s; peak704032KiB. The subsequent full periodic-cost audit
+used17,190 operations (total including that audit15,330,506).
+All11 frozen files match direct byte snapshots. Publication copies match,
+101,988,776 bytes. No hashes, numerical source observations or fitted constants.
+Full component, whole signed core, and RH all remain unproved. Verification
+is exact executable certificate checking plus reviewed analytical rules;
+no formal proof-assistant verification is claimed.

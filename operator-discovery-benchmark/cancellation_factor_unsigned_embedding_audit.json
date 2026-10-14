@@ -1,0 +1,538 @@
+{
+  "RH_proved": false,
+  "both_Gram_matrices_unchanged": true,
+  "global_bound_proved": false,
+  "independent_check": {
+    "PSD_proofs": {
+      "child": {
+        "PSD_verified": true,
+        "RH_proved": false,
+        "dimension": 5,
+        "global_bound_proved": false,
+        "operations": 44,
+        "principal_minors": [
+          {
+            "determinant": "0",
+            "indices": [
+              0
+            ]
+          },
+          {
+            "determinant": "63/64",
+            "indices": [
+              1
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "parent": {
+        "PSD_verified": true,
+        "RH_proved": false,
+        "dimension": 5,
+        "global_bound_proved": false,
+        "operations": 0,
+        "principal_minors": [
+          {
+            "determinant": "0",
+            "indices": [
+              0
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "determinant": "0",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    "RH_proved": false,
+    "constant_slacks": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "global_bound_proved": false,
+    "verified": true
+  },
+  "input_sha256": {
+    "cancellation-arithmetic-results/pilot-001/factor-probe-001/training.json": "100cfc59a6ee3b98f1acf5781b37c57a6c7448955c68a12e953ff0930dd9a533",
+    "cancellation-arithmetic-results/pilot-001/gram-probe-001/training.json": "3a27dd72750ffbf92017cf71d8137d251b3b7d01342fb1b44dfbd6969eca7140"
+  },
+  "new_group_counts": {
+    "relations": 319,
+    "squares": 282
+  },
+  "old_group_counts": {
+    "relations": 231,
+    "squares": 106
+  },
+  "old_groups_and_original_lhs_unchanged": true,
+  "original_exact_certificates_reused": true,
+  "original_primal_statuses_preserved": true,
+  "padding": {
+    "relation_zero_weights": 88,
+    "square_zero_weights": 176
+  },
+  "schema": 1,
+  "scope": "supplied exact unsigned calibration embedded in enlarged cone; no solver, fit, discovery or critical bound",
+  "source_sha256": {
+    "cancellation_factor_search_language.py": "b157d80433001fad069528f5c878120b2927e19419234b8223b1d2b16815ac46",
+    "check_cancellation_gram.py": "cb9792e941591814d4007d4a9afb31567e477044c97f67855ebf2ed478e62e4b",
+    "run_cancellation_factor_search.py": "e14aa94c9cdbb66457aeef33cacfaad88617daad2f85e4cc399087b40148945b"
+  },
+  "training_scales": [
+    1,
+    2,
+    3,
+    5
+  ]
+}

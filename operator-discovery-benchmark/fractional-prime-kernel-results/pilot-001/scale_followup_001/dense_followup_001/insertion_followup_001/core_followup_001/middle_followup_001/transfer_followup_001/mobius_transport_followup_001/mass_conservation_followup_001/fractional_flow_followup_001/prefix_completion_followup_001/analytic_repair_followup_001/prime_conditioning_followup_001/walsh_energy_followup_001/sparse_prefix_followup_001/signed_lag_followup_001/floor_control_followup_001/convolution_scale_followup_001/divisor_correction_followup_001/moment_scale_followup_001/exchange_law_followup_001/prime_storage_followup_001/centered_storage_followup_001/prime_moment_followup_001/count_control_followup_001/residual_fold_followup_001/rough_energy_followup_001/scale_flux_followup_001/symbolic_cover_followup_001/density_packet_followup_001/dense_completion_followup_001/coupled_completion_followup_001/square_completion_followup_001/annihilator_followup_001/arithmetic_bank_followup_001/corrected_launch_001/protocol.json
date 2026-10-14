@@ -1,0 +1,68 @@
+{
+  "RH_proved": false,
+  "aborted_attempt_new_validation_draw": false,
+  "aborted_attempt_preserved": "/home/dbsanfte/riemann/operator-discovery-benchmark/fractional-prime-kernel-results/pilot-001/scale_followup_001/dense_followup_001/insertion_followup_001/core_followup_001/middle_followup_001/transfer_followup_001/mobius_transport_followup_001/mass_conservation_followup_001/fractional_flow_followup_001/prefix_completion_followup_001/analytic_repair_followup_001/prime_conditioning_followup_001/walsh_energy_followup_001/sparse_prefix_followup_001/signed_lag_followup_001/floor_control_followup_001/convolution_scale_followup_001/divisor_correction_followup_001/moment_scale_followup_001/exchange_law_followup_001/prime_storage_followup_001/centered_storage_followup_001/prime_moment_followup_001/count_control_followup_001/residual_fold_followup_001/rough_energy_followup_001/scale_flux_followup_001/symbolic_cover_followup_001/density_packet_followup_001/dense_completion_followup_001/coupled_completion_followup_001/square_completion_followup_001/annihilator_followup_001/arithmetic_bank_followup_001",
+  "arithmetic_and_search_policy_unchanged": true,
+  "diagnostic_exponent_parameters": [
+    1,
+    3,
+    7,
+    15,
+    31
+  ],
+  "divisor_scale_height": 12,
+  "exponent_height": 8,
+  "fresh_bounds": "both learned banks at new geometry, with new W and L; fixed operators and symbolic banks",
+  "fresh_parents_per_band": 1,
+  "hashes_used": false,
+  "initial_bank": "all eight adaptive085 divisor descriptors for each of all eight frozen084 operators",
+  "known_unit_and_all_prime_signs_used": true,
+  "launch_correction": "enforce environment and actual BLAS/OpenMP pools after all inherited imports in parent and spawned workers",
+  "max_aggregate_bytes": 17179869184,
+  "maximum_additions": 4,
+  "maximum_bank_size": 12,
+  "modes": [
+    "divisor",
+    "union"
+  ],
+  "module_seconds": 7200,
+  "native_threads": 1,
+  "no_scientific_validation_outcomes_seen_before_bank_freeze": true,
+  "observed_full_source_values_used": false,
+  "prime_scale_height": 8,
+  "prior_byte_preserved_files": 703,
+  "prospective_draw_values_seen_in_preflight": false,
+  "schema": "counterexample-guided-arithmetic-bank-protocol-v1",
+  "selection": "maximum exact squared violation / complete column norm; stable grammar order ties",
+  "selection_uses_upper_results": false,
+  "shared_initial_witness": true,
+  "source_files": [
+    "run_mobius_arithmetic_bank_retry_086.py",
+    "test_mobius_arithmetic_launch_086.py",
+    "mobius_arithmetic_launch_086_development.json",
+    "mobius_arithmetic_launch_correction_086.txt",
+    "audit_mobius_arithmetic_native_launch_086.py"
+  ],
+  "threadpoolctl_version": "3.7.0",
+  "training_final_upper_retains_initial": true,
+  "training_parent": 3475,
+  "trigger": "strict exact lower_bound > C*u^(1+1/j) for the frozen residual target",
+  "trigger_constant": "1",
+  "trigger_j": 31,
+  "uniform_remaining_bound_proved": false,
+  "unknown_composite_signs_used": false,
+  "upper_solver_seconds": 90,
+  "upper_work_limit": 100000000000000,
+  "upper_work_scope": "estimated conservative SCS dense-cone work charged prospectively; not an instruction bound;085 excluded solver instructions",
+  "validation_bands": [
+    [
+      3600,
+      4095
+    ]
+  ],
+  "validation_seed": 20261012086,
+  "witness_attempts": 4,
+  "witness_seconds_per_attempt": 10,
+  "witness_seed": 20261011086,
+  "workers": 3
+}

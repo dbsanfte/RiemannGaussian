@@ -1,0 +1,14 @@
+{
+  "schema": "rough-transport-search-development-v1",
+  "attempts": [
+    {
+      "tests_run": 8,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.3556545560131781,
+      "output": "test_arbitrary_rational_cutoffs_and_work_gate (test_mobius_rough_transport_077.Rough) ... ok\ntest_general_degree_and_strict_prime_order (test_mobius_rough_transport_077.Rough) ... ok\ntest_method_obstruction_routes_to_signed_search_without_claiming_proof (test_mobius_rough_transport_077.Rough) ... ok\ntest_parent_tokens_do_not_change_under_dilation (test_mobius_rough_transport_077.Rough) ... ok\ntest_terminal_keeps_signed_prime_semiprime_interaction (test_mobius_rough_transport_077.Rough) ... ok\ntest_threshold_transport_preserves_complete_signed_rough_sum (test_mobius_rough_transport_077.Rough) ... ok\ntest_transport_and_terminal_recombine_with_negative_child_weights (test_mobius_rough_transport_077.Rough) ... ok\ntest_unit_empty_domain_and_product_resource_gate (test_mobius_rough_transport_077.Rough) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.007s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

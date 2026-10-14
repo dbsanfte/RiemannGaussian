@@ -1,0 +1,216 @@
+COMPATIBLE FLOOR AUXILIARIES: NUMERICAL SEARCH AND ANALYTIC FEEDBACK 044
+
+Current status
+The detector generated581 coefficient formulas and5810 scale-refinement
+rules. All twelve held-out inequalities of four selected rules were certified
+over the whole x-domain, with forty independently replayed rational/Arb norm
+certificates. Several bounds require the signed cross terms at these scales.
+The subsequent analytic audit refutes the four selected ALL-INTEGER bound
+claims. The finite certificates remain true. No uniform signed upper bound,
+family convergence, original core bound, or proof/refutation of RH was obtained.
+
+The distinction between all integers and one geometric chain matters. Two
+selected rate claims fail on every unbounded subsequence at eta1. The other
+two fail as all-integer vanishing claims; this proof does not reject any one
+specified geometric chain. None of these statements refutes other operators.
+
+Authoritative artifacts
+  floor-residual-results/pilot-002/report.json
+  floor-residual-results/pilot-002/assessment.json
+  floor-residual-results/pilot-002/selected_families.json
+  floor-residual-results/pilot-002/analytical_followup_001/report.json
+  floor-residual-results/pilot-002/analytical_followup_001/proof_filtered_rules.json
+  floor-residual-results/pilot-002/analytical_followup_001/next_search_input.json
+
+The final path is the continuation input. Do not restart from the older raw
+pilot next_search_input or overwrite the043 handoff. The original F and
+centered-Mobius obligations remain OPEN; an alternative floor-basis route
+does not discharge them.
+
+1. New coefficient and auxiliary language
+
+Use f_n(x)=floor(1/x)/n-floor(1/(n*x)) on0<x<=1, zero beyond1. The target is
+  e_N=1-g_N, g_N=sum_(2<=n<=N)c_n(N)f_n,
+  c_n(N)=-mu(n)W0(n,N)+lambda*a(n)V(n,N).
+Here mu and every arithmetic channel refer to actual ordinary primes.
+W0 is bounded0..1 and tends1 at every fixed n; V tends0 there. This addresses
+the exact coefficient-limit obstruction from043, without declaring global
+convergence. The auxiliary can contain mu, Liouville, mu*mu, radical sign,1,
+or mu plus/minus half Liouville, with their signed contributions retained.
+
+Weights include cutoff and logarithmic tapers
+  T_(alpha,gamma)(z)=(1-z^alpha)^gamma,
+unit, vanishing twists n^(-a/L^k), and products. L(N)=1+floor(log2 N).
+Envelopes include differences of limit-one weights, N^-delta or L^-kappa
+amplitudes, and moving lower bands n>floor(N^theta). Arbitrary positive
+rational taper/amplitude exponents are accepted under work and bit caps.
+The581-formula finite bank is not a denominator whitelist. Existing twist k
+is still integer1..8; the proposed fractional-log-scale twist below is a
+further extension, not something already implemented.
+
+All coefficient powers are rounded by an exact dyadic policy with
+p=4ceil(log2 N). Log-coordinate rounding uses exact integer-power detection
+at rational boundaries and Arb interval exclusion elsewhere. Each fixed
+formula defines all integer N mathematically even though the evaluator may
+refuse a finite compilation on resource guards.
+
+Refinement is
+  h_N=e_(qN)-b D_q e_N, D_q v(x)=v(qx), ||D_q||=q^-1/2.
+The desired forcing bound is ||h_N||^2<=A/L(N)^eta. A checked conditional
+Young/contraction argument would imply convergence on a geometric chain
+if its forcing leaf were established uniformly there. That leaf remains OPEN.
+The full-pure-floor target has constant1 and no indicators. Auxiliary norm
+diagnostics may have constant0; they are not substituted for the RH target.
+
+2. Search and finite evidence
+
+Training parent supports48,96,144; q2/3, b=-1,-1/2,0,1/2,1. Exact formulas,
+scores and selected thresholds were saved before final supports257,389,521.
+All four selected rules use q2, so the final children are514,778,1042.
+Training found5031 log-bound matches;1043 needed auxiliary signed crosses
+and1092 needed refinement signed crosses under the frozen training criterion.
+
+Selected formulas, writing T_alpha for outer gamma1 and cutoff coordinate,
+and U_alpha for the same taper at log(n)/log(N):
+  compatible_0003: c_n=-mu(n)T_(2/7).
+  compatible_0149: c_n=-mu(n)(T_(2/7)+T_1)/2.
+  compatible_0177: c_n=-mu(n)T_(2/7)+mu(n)(U_(1/3)-U_1)/2.
+The displayed formulas follow the exact rounded AST convention. The table
+uses approximate decimal displays; full certified enclosures are in the
+saved norm certificates.
+
+  stratum             family  b    A     eta  h_N^2 at parent N521
+  signed auxiliary    0177    1    1/4   1    [0.01720879476,0.01721624239]
+  scale refinement    0149    1/2  1/4   1    [0.01788504475,0.01789421298]
+  baseline control    0003    1/2  1     1    [0.02817300587,0.02817665795]
+  b0 control          0177    0    1     1    [0.00834057975,0.00834476364]
+
+All12 inequalities passed,0 finite refutations and0 interval ambiguities.
+For auxiliary crosses: six cases need the signed cross even versus the
+diagonal norm sum, three further cases need it versus the absolute-cross
+replacement, and three have no auxiliary. For refinement crosses: three
+need the signed cross versus the absolute replacement, six survive that
+replacement, and three are b0 restatements. These are finite mechanism tests.
+
+Whole-domain certification retained the periodic covariance before absolute
+bounding. A Jordan-2 divisor-square formula computes the exact full-period
+mean-square V. The imported Montgomery--Vaughan large sieve yields block
+bound(L+K^2)V and Abel tail
+  V[1/(H+1)+K^2/((H+1)(H+2))].
+Its minimum with the pointwise tail is used; H=1048576 except the exact zero
+vector. Producer events use exact integers and Arb192; independent replay
+uses heap events and Arb256. Thirty-nine norms use the large-sieve tail.
+This known theorem certifies finite vectors; it is not a new RH bound.
+Primary: https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf
+
+3. First new proof gate: the required coefficient rate
+
+floor_residual_rate_review_044.py derives a leading fixed-index error from
+the typed formula. check_floor_residual_rates_044.py independently replays
+the AST algebra, actual arithmetic at the index, nonzero constants and exact
+cell witness. No numerical norms or source arrays are premises.
+
+If c_n(N)+mu(n)=C L^-nu+o(L^-nu), C!=0, an exact cell functional gives
+  liminf L^(2nu)||e_N||^2 >=C^2/D_n>0.
+All growing higher-support floor columns are annihilated exactly. Forcing
+witnesses with q not dividing n annihilate the parent and indicator terms;
+b0 can use every index. Thus eta>2nu is impossible for any fixed A. Equality
+and slower rates remain OPEN. Cancellation of the compiled leading term
+stays unresolved until a next term is proved. No heuristic sign is licensed.
+
+For0177 the cubic-log auxiliary has an L^-1/3 coefficient error, giving
+energy rate2/3. For q2,b1 the n3 witness is(-1,-1,1) on the first three
+cells, with D3=20 and zero step response. In particular
+  ||h_N||^2 >=[c_3(2N)-1]^2/20.
+This rejects the selected eta1 even on any unbounded subsequence. The b0
+claim is also rejected, using n2 and denominator14. It does not reject
+norm convergence, eta2/3, or smaller eta.
+
+Across581 formulas,362 supplied rate witnesses were independently licensed:
+  energy rate2/3:72 formulas; rate4/5:70; rate2:217; rate5/2:2; rate4:1.
+The remaining219 had no supplied nonzero leading obstruction. Of the five
+tested target eta values, only eta1 is rejected, for142 formulas. These
+frontier restrictions concern TARGET rates; a forcing-rate rejection still
+needs its own parent/indicator binding. The compressed replay does not
+certify optimality over omitted witnesses, and no supplied witness is not
+a proof that the requested upper bound holds.
+
+4. Second new proof gate: persistent cutoff transfer
+
+floor_residual_cutoff_guard_044.py recognizes convex actual-Mobius mixtures
+of fixed power cutoffs with outer power1. It constructs the exact Mellin
+kernel and separately replays polynomial cross multiplication. No candidate
+identifier is encoded in the decision. Unsupported ASTs are kept OPEN.
+
+Imported unitary U commutes with dilation and has
+  U chi=sin(2pi x)/(pi x), U f_n=(rho(nx)-rho(x))/(nx).
+Its action on0<x<1/(qN) converts vanishing h_N to a bound on the signed
+coefficient sum. Explicit rounding O(N^-3), harmonic O(log N), unit
+cancellation and a Lipschitz argument imply
+  F_w(qx)-b F_w(x)=o(sqrt x), F_w(x)=sum_(n<=x)mu(n)w(n/x),
+if h_N vanishes through all integers. For fixed convex w, Mellin transformation
+has transfer factor(q^s-b)K_w(s),
+  K_w(s)=sum_i lambda_i alpha_i/[s(s+alpha_i)].
+The compact lower-endpoint correction is retained. Positive Stieltjes real
+parts prove K_w nonzero for Re(s)>0. At a known critical-line zero rho,
+|q^rho|=sqrt(q)>|b|. An elementary Abel limit contradicts the little-o bound.
+No RH assumption or zero simplicity is used.
+Primary imported U: https://arxiv.org/pdf/math/0011254 section4, equations4.1-4.4.
+Full proof: FLOOR_RESIDUAL_CUTOFF_ARGUMENT_REVIEW_044.txt.
+
+This refutes every all-integer vanishing forcing bound for the recognized
+shape. It applies to selected0149 and0003, and six frontier formulas at the
+registered representative q2,b1/2:0003,0005,0007,0009,0149,0260. A separate
+geometric chain is not refuted. The analytic theorem and imported facts are
+reviewed mathematical dependencies, not formal-assistant proofs.
+
+5. Tests, resource use and reproducibility
+
+The numerical implementation passed47 distinct focused tests. Its first
+launch stopped at a receipt-schema preflight before data or source freezing;
+that failure and the corrective regression are preserved. The successful
+pilot took417.74s with two norm workers and two training BLAS threads.
+Conservative aggregate memory allocation was2,689,413,736bytes under16GiB.
+Largest individual worker RSS378092KiB is not an aggregate memory peak.
+Proxy counts: search102,307,632,636; compiler12,987,799;
+argument10,005,506; norm producer3,395,458,621; checker16,785,162,236.
+Proxy counts are not measured CPU instructions.
+
+Analytic development added50 passing distinct focused tests:12 rate producer,
+20 independent rate checker,11 cutoff guard/replay,7 publisher integration.
+A producer fixture-sign failure was retained before its correction. The
+cutoff suite's earlier absent python launcher executed no tests; the actual
+suite ran once with python3. No old suite or study was repeated.
+The actual selected/frontier analytic audit took3.51s and11,434,371 charged
+operations, including independent replay. It evaluated zero additional norms.
+Eighteen pilot source files and seventeen analytic-followup files remained
+byte-identical to their separate snapshots at the final check. No hashes.
+
+6. What should change in the next search
+
+Apply the rate and cutoff proof gates BEFORE expensive numerical ranking,
+with each candidate's actual bound exponent and domain. Bind every rejection
+to its exact formula; keep unsupported rules, slower exponents and distinct
+subsequence claims available. Passing a necessary gate never proves a bound.
+
+Search for auxiliary cancellations that improve the first nonzero local
+rate, and compile the next term rather than rewarding a vanished leading
+coefficient alone. Search also needs genuinely scale-dependent constructions
+whose global Mellin transfer can suppress critical-line contributions.
+Static convex power cutoffs now have a proved all-integer obstruction.
+
+One proposed production is
+  beta_N=ceil(a L(N)^theta)/L(N), rational a>0,0<theta<1,
+  W(n,N)=n^(-beta_N), possibly in a joint auxiliary/profile.
+It has beta_N->0 while beta_N log N->infinity. The exponent remains rational
+at every finite N. This is a proposal, not an implemented production, proven
+global bound, or preferred RH solution. Its local rate, rounding and global
+control would each need their own argument. Keep other moving profiles,
+pairings, correlated terms and new intermediate lemmas eligible.
+
+The detector generated the operators/auxiliaries and finite bound proposals.
+These two general analytic obstruction templates were developed by analysis
+and integrated for automatic reuse. The tool still lacks an autonomous
+argument that closes the joint signed remainder uniformly over all scales.
+This limitation remains the central research task; additional numerical
+success or a weaker necessary-condition filter must not be reported as closure.

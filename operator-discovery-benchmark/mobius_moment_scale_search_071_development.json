@@ -1,0 +1,29 @@
+{
+  "schema": "mobius-moment-scale-development-v1",
+  "runs": [
+    {
+      "tests": 11,
+      "returncode": 0,
+      "operations": 1211261,
+      "elapsed_seconds": 0.17270529101369902,
+      "failures": []
+    },
+    {
+      "tests": 1,
+      "returncode": 0,
+      "operations": 2564041,
+      "elapsed_seconds": 0.125145434984006,
+      "failures": []
+    },
+    {
+      "tests": 1,
+      "returncode": 0,
+      "operations": 2569693,
+      "elapsed_seconds": 0.12228655198123306,
+      "reason": "Checker added retained output accounting after first integration pass.",
+      "failures": []
+    }
+  ],
+  "unique_new_synthetic_tests": 12,
+  "final_status": "PASS"
+}

@@ -1,0 +1,51 @@
+{
+  "RH_proved": false,
+  "development": {
+    "operations": 953178,
+    "runs": [
+      {
+        "command": [
+          "-m",
+          "unittest",
+          "test_core_grouping_proof_feedback"
+        ],
+        "elapsed_seconds": 0.7059963160136249,
+        "operations": 945354,
+        "returncode": 0,
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.619s\n\nOK\n",
+        "stdout": "SYNTHETIC_WORK module=test_core_grouping_proof_feedback operations=945354\n"
+      },
+      {
+        "command": [
+          "../.venv/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "test_core_grouping_proof_feedback.GroupingProofFeedbackTests.test_square_lift_head_support_and_unpaid_crosses"
+        ],
+        "elapsed_seconds": 0.08736429302371107,
+        "operations": 7824,
+        "reason": "New square-lift head rule, affected new test only",
+        "returncode": 0,
+        "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n",
+        "stdout": "SYNTHETIC_WORK module=test_core_grouping_proof_feedback operations=7824\n"
+      }
+    ]
+  },
+  "full_group_matrices_already_verified": true,
+  "head_cutoff_log_powers": [
+    "0",
+    "1/6",
+    "1/3",
+    "1/2",
+    "1",
+    "2"
+  ],
+  "metadata_reserve": 1000000,
+  "new_source_runs": 0,
+  "proof_scope": "reviewed infinite arguments plus exact local-source algebra; no formal theorem prover claim",
+  "reselection": false,
+  "schema": "source-driven-grouping-proof-feedback-v1",
+  "whole_signed_bound_proved": false,
+  "work_cap": 8000000
+}

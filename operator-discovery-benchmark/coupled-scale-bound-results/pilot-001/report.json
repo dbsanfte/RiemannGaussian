@@ -1,0 +1,481 @@
+{
+  "RH_proved": false,
+  "arithmetic_recurrences_proved": 0,
+  "audited_nonempty_candidates": 5,
+  "candidate_assessments": [
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "2449525/4",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "priced_baseline",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [],
+      "recurrence_C": "1/16",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "2491645/4",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "compensator_01",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [
+        {
+          "coefficient": "1/2",
+          "divisor": 2,
+          "exponent": "1/2",
+          "state": 1
+        }
+      ],
+      "recurrence_C": "1/16",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "3264235/16",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "compensator_02",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [
+        {
+          "coefficient": "1/2",
+          "divisor": 1,
+          "exponent": "9/14",
+          "state": 1
+        },
+        {
+          "coefficient": "1/2",
+          "divisor": 3,
+          "exponent": "1/2",
+          "state": 1
+        }
+      ],
+      "recurrence_C": "1/64",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "5435235/16",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "compensator_03",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [
+        {
+          "coefficient": "1/2",
+          "divisor": 1,
+          "exponent": "5/8",
+          "state": 1
+        },
+        {
+          "coefficient": "1/2",
+          "divisor": 1,
+          "exponent": "7/10",
+          "state": 2
+        }
+      ],
+      "recurrence_C": "1/64",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "2491645/4",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "compensator_04",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [
+        {
+          "coefficient": "1/2",
+          "divisor": 2,
+          "exponent": "259/514",
+          "state": 1
+        }
+      ],
+      "recurrence_C": "1/16",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    },
+    {
+      "arithmetic_status": "FINITE_SURVIVOR_UNPROVED",
+      "conditional_bound": {
+        "constant": "2618005/4",
+        "covering_applies_to": "complete original F only",
+        "dyadic_covering_factor": "65",
+        "log_power": 4,
+        "requires_open_recurrence": true,
+        "scope": "all integer X>=1"
+      },
+      "failure_scales": [],
+      "generic_proof_attempt": "GENERIC_ENVELOPE_RULE_REJECTED",
+      "id": "compensator_05",
+      "partitions": {
+        "final": {
+          "fail": 0,
+          "pass": 2,
+          "unresolved": 0
+        },
+        "head": {
+          "fail": 0,
+          "pass": 5,
+          "unresolved": 0
+        },
+        "train": {
+          "fail": 0,
+          "pass": 6,
+          "unresolved": 0
+        },
+        "validation": {
+          "fail": 0,
+          "pass": 4,
+          "unresolved": 0
+        }
+      },
+      "program": [
+        {
+          "coefficient": "1",
+          "divisor": 1,
+          "exponent": "259/514",
+          "state": 1
+        }
+      ],
+      "recurrence_C": "1/16",
+      "uniform_recurrence_proved": false,
+      "unresolved_scales": []
+    }
+  ],
+  "checker_operations": 3950,
+  "complete_original_source": true,
+  "conditional_implications_checked": 6,
+  "coverage": {
+    "all_other_dictionary_pairs_covered": true,
+    "best_training_C_indices": {
+      "fractional": 4,
+      "mixed_divisor": 4,
+      "mixed_state": 4,
+      "overall": 4,
+      "padding_control": 4
+    },
+    "eligible_by_stratum": {
+      "fractional": 486362,
+      "mixed_divisor": 377620,
+      "mixed_state": 425724,
+      "overall": 565614,
+      "padding_control": 95634
+    },
+    "nonpadding": 565614,
+    "padded_training_fits": 95634,
+    "pair_programs": 660096,
+    "pair_same_state_divisor_exponent_excluded": true,
+    "single_programs": 1152,
+    "smaller_training_C_than_baseline": 35016,
+    "total_nonempty": 661248,
+    "training_fits": 661248,
+    "zero_forcing_training_fits": 0
+  },
+  "current_Z033_isolated": false,
+  "development_receipts": {
+    "check_coupled_scale_bounds_development.json": {
+      "distinct_tests": 15,
+      "edits_stopped": true,
+      "old_searches_rerun": 0,
+      "old_suites_rerun": 0,
+      "operations": 9344,
+      "owner": "independent_checker",
+      "runs": [
+        {
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_coupled_scale_bounds"
+          ],
+          "elapsed_seconds": 0.180910219962243,
+          "operation_marker_present": true,
+          "operations": 9344,
+          "peak_rss_KiB": 29164,
+          "resource_limits": {
+            "CPU_seconds": 180,
+            "address_space_bytes": 536870912,
+            "operations": 50000000,
+            "wall_seconds": 200
+          },
+          "returncode": 0,
+          "stderr": "test_candidate_canonical_rational_sign_and_schema_guards (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_coefficient_forcing_polynomial_witnesses_and_integer_divisor_gap (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_complete_defect_symbolic_polynomial_identity_on_free_variables (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_complete_signed_defect_has_both_children_all_crosses_and_scale_powers (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_context_and_complete_original_source_are_mandatory (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_divisor_below_one_retains_original_head (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_fractional_257_and_every_other_state_gate (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_generic_countermodel_retains_nonzero_units_and_scaled_signed_helpers (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_generic_norm_rule_countermodel_is_exact_and_scope_limited (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_open_premises_never_become_paid_and_cycles_are_rejected (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_paid_boundary_helper_and_unit_cancellation (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_positive_forcing_conditional_logs_constants_and_original_F_covering (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_publication_cannot_promote_generic_failure_or_conditional_core_to_proof (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_publication_mutations_cannot_drop_cross_cutoff_or_original_F (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\ntest_zero_forcing_is_stronger_but_still_conditional (test_check_coupled_scale_bounds.CoupledScaleTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.082s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_coupled_scale_bounds operations=9344 elapsed_seconds=0.08224144804989919\n",
+          "tests": 15
+        }
+      ],
+      "scope": "exact synthetic helper programs and generic countermodels; one allowed frozen035 symbolic source-law replay, no coefficient archive or arithmetic observations",
+      "source_observations": 0,
+      "test_invocations": 15
+    },
+    "coupled_scale_bounds_development.json": {
+      "actual_source_values_read": false,
+      "cumulative_test_invocations": 7,
+      "elapsed_seconds": 0.00856047699926421,
+      "errors": 0,
+      "exponent_offsets": [
+        "1/257",
+        "0",
+        "1",
+        "1/2",
+        "1/3",
+        "1/4",
+        "2/3",
+        "1/5",
+        "1/6",
+        "2/5",
+        "3/4",
+        "1/7",
+        "3/5",
+        "1/8",
+        "2/7",
+        "4/5"
+      ],
+      "failures": 0,
+      "focused_followups": [
+        {
+          "elapsed_seconds": 0.15163099201163277,
+          "errors": 0,
+          "failures": 0,
+          "reason": "replace isolated algebra test with complete producer comparison against direct signed-vector oracle",
+          "successful": true,
+          "tests": 1
+        }
+      ],
+      "invocations": 2,
+      "operation_accounting": "proposal searches expose primitive proxy counts; this suite wall time recorded",
+      "schema": "coupled-scale-producer-development-v1",
+      "successful": true,
+      "tests": 6
+    },
+    "coupled_scale_evidence_development.json": {
+      "cumulative_operations": 10297,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.024823371961247176,
+          "errors": 0,
+          "failures": 0,
+          "operations": 10297,
+          "returncode": 0,
+          "source_exposure": "synthetic arrays and malformed artificial archive rows only; no actual source or archive",
+          "tests": 6
+        }
+      ],
+      "schema": "owned-development-v1"
+    }
+  },
+  "elapsed_seconds": 23.08440299500944,
+  "evidence_resource": {
+    "elapsed_seconds": 23.0476842840435,
+    "maxrss_kib": 704032,
+    "operation_cap": 500000000,
+    "operations": 186474227,
+    "peak_cells": 8251440,
+    "seconds_cap": 600.0
+  },
+  "exponent_offsets": [
+    "1/257",
+    "0",
+    "1",
+    "1/2",
+    "1/3",
+    "1/4",
+    "2/3",
+    "1/5",
+    "1/6",
+    "2/5",
+    "3/4",
+    "1/7",
+    "3/5",
+    "1/8",
+    "2/7",
+    "4/5"
+  ],
+  "exponent_operations": 826,
+  "finite_survivors": 6,
+  "generic_envelope_countermodels": 6,
+  "new_data_holdout": false,
+  "no_semantic_denominator_ceiling": true,
+  "nonempty_finite_survivors": 5,
+  "peak_rss_kib": 704032,
+  "previous_accepted_obligation_unchanged": true,
+  "recovered_uniform_growth_improvements_proved": 0,
+  "reused_data": true,
+  "search_resource": {
+    "elapsed_seconds": 2.634493561985437,
+    "operation_cap": 900000000,
+    "operations": 654635520
+  },
+  "source_audit": {
+    "all_actual_primes_checked": 23000,
+    "overlap_checks": 616294,
+    "source_binding_verified": true,
+    "unit_retained": true
+  },
+  "source_exposure": {
+    "archive": "/home/dbsanfte/riemann/operator-discovery-benchmark/multiscale-bound-results/pilot-001/source_snapshot/core_vectors.jsonl.gz",
+    "archive_H": 262143,
+    "complete_source": true,
+    "decoded_H": 262143,
+    "decoded_scalar_entries": 1572864,
+    "held_out": false,
+    "new_source_data": false,
+    "parsed_scalar_strings": 3145728,
+    "reused_data": true,
+    "stage033_residual_isolated": false,
+    "structure_rows": 12
+  },
+  "status": "COUPLED_SCALE_PROGRAMS_AUDITED_UNIFORM_BOUND_OPEN",
+  "whole_signed_bound_proved": false
+}

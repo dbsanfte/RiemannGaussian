@@ -1,0 +1,345 @@
+COMPLETE PRIME/COMPOSITE MASS TRANSPORT WITH PAID PREFIX ERROR
+
+Scope and conclusion
+--------------------
+This new memo alone is written. Prior/frozen studies, source, tests and
+reviews are unchanged. No source evaluation, numerical experiment, test,
+rescore or hash is performed. The current complete candidate10 four-state
+core and its original recovery chain are retained. Primary-source browsing
+is used only to identify the uniform short-interval prime theorem below.
+
+There is a genuine, globally defined prime/composite transport with an
+UNCONDITIONAL cofinal recovery certificate. Failed windows stay unchanged;
+accepted windows preserve complete ordinary mass. Thus no assertion about
+an unknown prime-theorem threshold is needed for recovery. A separate
+import proves eventual deletion of large prime coefficients for eligible
+cofactors and window exponents. The residual complete signed moment remains
+OPEN. The transport does not eliminate the surviving critical poles or the
+positive fresh-semiprime obstruction to grouped absolute proof routes.
+
+1. Actual source and a generic cofactor sign certificate
+-------------------------------------------------------
+Use the complete multiplicative states of004/009:
+ f(n)=beta*nu0(n)-beta*nu1(n)-R_u*nu2(n)-beta*mu(n),
+ beta=9/2, 0<R_u<5, f(1)=-beta-R_u,
+ F(x)=sum_(n<=x)f(n), B_F(x)=sum_(n<=x)f(n)log n.
+Their original center, prime-power corrections and recovery costs are not
+replaced by an uncentered prime channel. Every prefix is zero below1.
+
+For an actual prime p, exactly
+ f(p)=-R_u*p^(-1/3)+(beta+R_u)*p^(-2/3).                 (1.1)
+Whenever this is negative its demand a_p=-f(p) obeys
+                     0<a_p<5*p^(-1/3).                 (1.2)
+All sufficiently large primes have this sign, for example once
+ p^(1/3)>=2*(beta+R_u)/R_u.
+
+For any fixed integer m>1 and actual prime q not dividing m, the FULL
+coefficient, not an isolated mode, is
+ f(mq)=A0(m)+q^(-1/3)A1(m)+q^(-2/3)A2(m),
+ A0(m)=beta*[-2nu0(m)+nu1(m)+mu(m)],
+ A1(m)=beta*[nu0(m)-nu1(m)]-R_u*nu2(m),
+ A2(m)=beta*nu1(m)+R_u*nu2(m).                           (1.3)
+This identity includes every valuation in m. Require q larger than every
+prime divisor of m so that no repeated q-adjunction is silently treated
+as coprime. A finite check at an exceptional q cannot replace that guard.
+
+There is an exact structural sign rule for A0, avoiding a fitted cofactor.
+Let omega_1(m) count primes with valuation EXACTLY1 in m. For a prime
+ell put t=ell^(-1/3), 0<t<1. At valuation1,
+ nu0(ell)=t-2<0,
+ nu1(ell)/nu0(ell)=(1-t+t^2)/(2-t) in(0,1).
+At EVERY valuation e>=2,
+ nu0(ell^e)=(1-t)^2*t^(e-2)>0,
+ nu1(ell^e)/nu0(ell^e)=-t in(-1,0).
+Therefore nu0(m) is nonzero with sign(-1)^omega_1(m), and
+|nu1(m)/nu0(m)|<1. If m is not squarefree, mu(m)/nu0(m)=0; otherwise this
+ratio is the positive product of(2-t)^(-1), strictly below1 for m>1.
+Consequently -2+nu1/nu0+mu/nu0 is strictly negative, giving
+             sign A0(m)=(-1)^(omega_1(m)+1).              (1.4)
+Odd omega_1 is the exact eventual-positive constant-capacity certificate.
+Even omega_1 rejects this constant-capacity route. It does not rule out
+other transports whose first nonzero capacity is at a decaying order.
+The unit cofactor is excluded: A0(1)=0.
+
+For example m2 gives A0(2)=beta*(2-t-t^2)>0, t=2^(-1/3).
+The rule also admits repeated-valued cofactors such as12: its prime3
+has valuation1 while prime2 has valuation2. Thus this grammar does not
+silently discard the repeated-prime complement. For each admitted m,
+ f(mq)>=A0(m)/2 for all sufficiently large q. One sufficient threshold
+is q^(1/3)>=2*(|A1(m)|+|A2(m)|)/A0(m), with q>=1.
+
+2. Fixed global dyadic windows and full-window fallback
+-------------------------------------------------------
+Choose a rational exponent 0<=theta<=1, a fixed integer cofactor m>1,
+reserve fraction1/2 and integer reuse bound4m. These are program parameters,
+not quantities chosen after observing moment responses. For every k>=0 set
+ A=2^k, L=2^floor(theta*k),
+ I_(k,j)=[A+jL,A+(j+1)L), 0<=j<A/L.                     (2.1)
+L divides A, so these are COMPLETE integer windows partitioning[A,2A).
+There is no truncated last window, overlap or scale-dependent redefinition.
+Both parent and child observables use the SAME global transformed source.
+
+In each window let P be its sorted actual primes p, and Q the sorted
+actual primes q with mq in the window. The source nodes p and destination
+nodes mq are disjoint because m>1. Distinct q give distinct composite
+nodes. A q can itself be a prime-demand node in some earlier window;
+this causes no collision because its capacity node is mq, not q.
+
+If Q is nonempty, assign sorted prime p_i to composite m*q_r with
+ r=i mod|Q|, using zero-based indices. This is an unsplit cyclic assignment.
+Check ALL of the following exactly on the COMPLETE window:
+ - every demand f(p)<0;
+ - every destination q exceeds the largest prime divisor of m;
+ - every destination f(mq)>0;
+ - each destination receives at most4m primes;
+ - each destination's total demand ell_q=sum_(p assigned to q)a_p
+                                             is <=f(mq)/2.
+If any required check fails, KEEP THE ENTIRE WINDOW unchanged. Empty
+demand windows may be unchanged as well. No partial acceptance, discarded
+unmatched prime or hidden capacity overflow is permitted. In an accepted
+window define
+ g(p)=f(p)+a_p=0,
+ g(mq)=f(mq)-ell_q>=f(mq)/2>0,                            (2.2)
+and leave every other coefficient unchanged. In rejected windows g=f.
+No other composite is modified. In particular units, prime powers,
+unmatched/head primes, smooth/composite coefficients and all their signed
+cross terms survive. The complete source g is generally NONMULTIPLICATIVE.
+
+This gives the exact pointwise envelope
+                         |g(n)|<=|f(n)|                 (2.3)
+and preserves total coefficient mass of every window. Thus every existing
+coefficient-only payment using |f(n)|<=(37/2)d2(n), including010's square-
+lift low-cell head, remains valid with g in place of f. Its unresolved
+signed complement does not become paid merely by that substitution.
+
+The operator can depend on the complete current window, including indices
+later than n when defining g(n). This is bounded lookahead, not a causal
+pointwise divisor map: the required horizon is at most2n. Closed dyadic
+horizons contain all their windows. A finite implementation ending inside
+a window must either obtain its whole window or leave it unchanged under
+a separately specified permanent rule; it must not silently change the
+global operator when the research horizon is extended.
+
+For a fixed m there are no destination collisions across windows. If a
+later grammar combines several m values, capacity ownership must be
+certified jointly. The single-m proof does not authorize double spending.
+
+3. Exact prefix error and uniform recovery WITHOUT prime distribution
+----------------------------------------------------------------------
+Set G(x)=sum_(n<=x)g(n), D(x)=F(x)-G(x). Each accepted pair contributes
+ d_pair(n)=a_p*(1_(n=mq)-1_(n=p)),
+ D_pair(x)=a_p*(1_(mq<=x)-1_(p<=x)).                      (3.1)
+Rejected windows contribute zero. In every completed window the two
+indicators balance exactly, so only the CURRENT window contributes D(x).
+Every integer prime in a window is >=A, and there are at most L integers.
+From(1.2), for every real x in[A,2A),
+                     |D(x)|<=5L*A^(-1/3).               (3.2)
+This bound requires no successful window, prime-count theorem, congestion
+estimate or known theorem threshold. All failures are already retained.
+
+For every dyadic X>=1 define the complete discrete moment
+ E_D(X)=X^(-2)*sum_(n=X)^(2X-1)D(n)^2.
+Exactly
+                     E_D(X)<=25X^(2theta-5/3).           (3.3)
+Hence theta<5/6 gives a decaying paid error; theta5/6 gives a bounded
+error. For theta>5/6 the same rule yields a power loss and does NOT by
+itself prove critical cofinal recovery. This is a scope rejection of
+this proof certificate, not a claim that every such transport fails.
+
+The complete equality and recovery inequalities are
+ E_F=E_G+2X^(-2)*sum GD+E_D,
+ |X^(-2)*sum GD|<=sqrt(E_G E_D),
+ E_F<=(1+lambda)E_G+(1+1/lambda)*25X^(2theta-5/3),
+ E_G<=(1+lambda)E_F+(1+1/lambda)*25X^(2theta-5/3),        (3.4)
+for every lambda>0. All prime/composite, center and valuation crosses
+are present in the equality; they are not replaced by separate sector
+bounds. Therefore for theta<=5/6 complete cofinal control of G is
+equivalent to that of F modulo an independently proved paid error.
+This is an additive recovery certificate, not a claimed multiplicative
+inverse operator norm on arbitrary unsigned coefficient arrays.
+
+For 1/3<theta<=5/6 put alpha=theta-1/3 in(0,1/2]. Globally (3.2) gives
+ |D(x)|<=5x^alpha, x>=1. Thus, whenever sigma>alpha,
+ integral_1^infinity |D(x)|^2*x^(-2sigma-1)dx
+                                    <=25/[2(sigma-alpha)]. (3.5)
+The norm triangle recovers the full weighted critical family for EVERY
+sigma>1/2. If theta<5/6, even the untruncated sigma1/2 error norm is finite,
+bounded by25/(5/3-2theta). At theta5/6 only sigma>1/2 is claimed; the
+critical norm integral of the elementary envelope diverges logarithmically.
+For theta<=1/3 the direct dyadic bound(3.3) already suffices; the alpha
+formula is not used at or below its zero denominator.
+
+The unit is unchanged, g(1)=f(1), and D(1)=0. No finite-head correction
+has been suppressed. Actual failed head windows remain in G; they do not
+produce a persistent ordinary transport-error mass after their endpoints.
+
+4. Logarithmic bank: every completed-window mismatch must remain
+----------------------------------------------------------------
+Let B_G(x)=sum_(n<=x)g(n)log n and B_D=B_F-B_G. For a completed accepted
+window I its exact residual logarithmic mass is
+             ell_I=sum_(p in I)a_p*log(mq(p)/p).          (4.1)
+This is usually NOT zero. At any x, B_D is the sum of ALL ell_I from
+completed windows plus the current partial-window pair contributions
+ a_p*[log(mq(p))*1_(mq(p)<=x)-log p*1_(p<=x)].
+Ordinary mass balance cannot be used to erase(4.1).
+
+Because both endpoints are in one width-L window,
+ |log(mq/p)|<=L/A,
+                     |ell_I|<=5L^2*A^(-4/3).            (4.2)
+Summing absolute values over a whole dyadic[A,2A) gives at most
+ 5L*A^(-1/3)<=5A^alpha.
+Completed dyadic stages therefore have at most a geometric sum of such
+costs when alpha>0; no remote head or discarded tail is concealed.
+
+An exact, simpler global accounting identity is summation by parts:
+ B_D(x)=log x*D(x)-J_D(x), J_D(x)=integral_1^x D(y)dy/y.
+For alpha>0 this yields
+ |J_D(x)|<=5(x^alpha-1)/alpha,
+                |B_D(x)|<=5x^alpha*(log x+1/alpha).       (4.3)
+This bounds the complete accumulated bank, not just its current window.
+For theta<=1/3 one uses the retained exact integral or the corresponding
+bounded/logarithmic integral envelope, not(4.3) with a nonpositive alpha.
+
+The source g has its OWN complete logarithmic bank. The old multiplicative
+prime-log generator of f is not an Euler generator for g. If it is used,
+the exact correction B_G=B_F-B_D, including(4.1), is obligatory.
+
+For shell work W_1,G(X)=integral_X^(2X)G(x)B_G(x)/(x^2 log x)dx,
+the generic007 Volterra recovery still holds with its actual unit/head.
+But the old selected recurrence for W_1,F cannot be transferred with
+E_D alone. The full difference is exactly
+ W_1,F-W_1,G=integral_X^(2X)
+       [G B_D+D B_G+D B_D]/(x^2 log x)dx.                (4.4)
+Both cross terms are retained. An open bound on G or its history cannot
+be declared paid in order to prove that same bound. The primary new target
+may be E_G directly, or a NEW signed-work recurrence for G with direct B_G
+and generic recovery. No unchanged Euler/prime-log arithmetic identity
+for the nonlinear transformed source is claimed.
+
+5. What prime information is needed for eventual deletion?
+-----------------------------------------------------------
+For one complete window, fractional transport with unrestricted splitting
+and only positive destination capacities exists exactly when total demand
+is no larger than total allowed capacity: every demand is connected to
+every destination inside the same window. For a prescribed distance graph
+the corresponding weighted Hall condition must hold for EVERY subset of
+demands. A mere nearest-prime distance statement is not such a condition.
+
+For our unsplit cyclic assignment a convenient SUFFICIENT count premise is
+ |P|<=4m|Q|, and 4m*max a_p<=min_(q in Q)f(mq)/2.         (5.1)
+It is stronger than the total-mass capacity condition, but directly
+certifies bounded reuse and the exact program's acceptance checks.
+Because max a_p<=5A^(-1/3) while f(mq) tends to A0(m)>0,
+the second inequality is automatic eventually for an admitted cofactor.
+For example f(mq)>=A0(m)/2 and A^(1/3)>=80m/A0(m) suffice.
+No assumption of cancellation in a coefficient prefix is needed here.
+
+A uniform short-interval count comparison supplies the first condition.
+The primary import is Larry Guth and James Maynard, "New large value
+estimates for Dirichlet polynomials", Corollary1.3 and proof section13.2:
+https://arxiv.org/pdf/2405.20552
+For each fixed epsilon>0 and x^(17/30+epsilon)<=y<=x^0.99,
+ pi(x+y)-pi(x)=y/log x+O_epsilon(y*exp(-(log x)^(1/4))).   (5.2)
+This is an unconditional theorem about ALL such large x, not an
+almost-all statement and not a prime table. It gives, uniformly for every
+window start z in[A,2A) and each fixed m,
+ |P|~L/log z, |Q|~(L/m)/log(z/m), |P|/|Q|->m.           (5.3)
+Endpoint conventions change the counts by at most a fixed number, which
+is negligible here. Since L lies between A^theta/2 and A^theta, fixed
+factors m and2 are absorbed by the positive exponent margin whenever
+                    17/30<theta<=5/6.
+Both interval lengths then fall in(5.2)'s range eventually. Reuse<=4m,
+positive signs and the half-capacity reserve all hold from some finite
+stage onward. Hence ALL sufficiently large prime coefficients are zero
+in G for odd omega_1(m). Its finite failed windows remain unchanged.
+
+In the detector menu theta1/2 is recoverable but not certified to achieve
+eventual deletion by this import. Theta7/12,2/3,3/4,5/6 are both recoverable
+and eligible for eventual deletion; 7/12 is strictly greater than17/30.
+Theta1 has only the power-loss recovery from(3.3); ordinary PNT can prove
+count comparison for its full dyadic windows, but does not remove that
+recovery loss. No new source estimate for this branch is asserted.
+
+The actual Baker--Harman--Pintz2001 paper also proves a positive lower
+count at exponent21/40, not just existence of one prime: its final page
+obtains pi(x+x^(21/40))-pi(x)>=(9/100)x^(21/40)/log x
+for all sufficiently large x. Primary text:
+https://www.cs.umd.edu/~gasarch/BLOGPAPERS/BakerHarmanPintz.pdf
+This stronger count could support a different, enlarged-window transport,
+with a suitable upper-count/reuse certificate. It is NOT silently imported
+as bounded congestion for the nearest-prime map. The present menu and
+eventual-success proof use(5.2), so no extra matching rule is needed.
+
+No numerical threshold for(5.2) is stipulated. Full-window fallback makes
+this harmless: the operator and recovery are valid constructively at every
+scale, and the asymptotic theorem is used solely for its eventual deletion
+property. A finite pass is not an all-scale signed-moment theorem.
+
+6. Limits, surviving poles and the complete new arithmetic obligation
+---------------------------------------------------------------------
+This is a cross-prime/composite transfer, not another partition followed
+by absolute values: an opposite signed mass at prime p is canceled against
+positive capacity at a DIFFERENT prime's cofactor composite mq, with an
+exact, uniformly paid spatial displacement. Same-prime mq would be outside
+the old fresh frontier; the new q is deliberately chosen near p/m.
+
+Nevertheless g(mq)>=f(mq)/2, and all other composites stay unchanged.
+For a finite menu m<=16, every fresh semiprime with both factors>16 is
+untouched. In particular010's complete positive semiprime classes for the
+117 partition are untouched at large X. Their grouped-absolute lower bound
+cX/log^4X persists for g. Removing the first-prime singleton frontier does
+not validate the already refuted fresh-semiprime grouping route.
+
+There is also no critical-pole exponent gain. For theta<5/6, the coefficient
+correction series sum(f(n)-g(n))n^(-s) is holomorphic for
+ Re(s)>alpha=theta-1/3<1/2, by the PROVED prefix bound(3.2) and Abel
+summation. This is justified conditional convergence of the transport
+correction; when theta<1/3 the same dyadic bound uses the harmless factor
+2^(-alpha) to compare A^alpha with x^alpha. This is not a claimed convergence
+of the old analytic bracket
+at2/3. Every surviving pole of the original core on Re(s)>=1/2 retains
+its principal part. At theta5/6 the correction is holomorphic for Re(s)>1/2
+and, on s=rho+delta at any fixed critical rho,
+ |sum(f-g)n^(-s)|<=5|s|/delta.
+It cannot cancel the certified leading double-pole growth of the core.
+Thus006's necessary degree>=2 remains when its surviving-pole conditions
+hold. No unproved zero-free assertion is used.
+
+The concrete new open lemma is a complete bound for the globally defined
+G after all flow and fallback coefficients are included. For example:
+ there exist finite C and fixed k with E_G(X)<=C(1+log2X)^k
+ for EVERY dyadic X beyond a declared head;
+or a genuinely proved signed recurrence for W_1,G with its DIRECT B_G,
+all head/memory constants, and the required critical-pole log degree.
+Either recovers the original F through(3.4)/(3.5) and the unchanged parent
+recovery chain. This is equivalent modulo a paid error, not an independently
+proved improvement to RH-strength signed control.
+
+A finite detector family can enumerate m, theta and a bounded-reuse
+assignment order; compile(1.4), exact disjoint endpoint/ownership guards,
+whole-window fallback, (2.3), (3.3), and the global bank identity(4.3).
+It then emits the complete residual g target and its OPEN arithmetic lemma.
+The residual is genuinely different coefficient support, but its equivalent
+critical difficulty is not scored as a theorem. Neither improved finite
+constants nor eventual absence of prime coefficients proves the residual
+signed moment. Arbitrary stable scale-filter aliases are unnecessary here.
+
+Proof provenance must stay explicit: the transport grammar and its recovery
+theorems are analyst-designed inputs; their instantiation, exact capacity
+checks and generated G-bound hypotheses may be detector-produced. A finite
+validation of such a hypothesis is not an automated proof of its universal
+quantifier. The paid correction theorem proves neither E_G's bound nor any
+closing signed-work recurrence. Search records should retain the generated
+bound, its source/head domain, the proved recovery rules and its OPEN status
+as distinct objects rather than rank a coefficient relocation as closure.
+
+Final proof status
+-------------------
+Full-window mass transport, pointwise coefficient domination, constant25
+prefix-error payment, cofinal recovery for theta<=5/6, complete log-bank
+accounting and the odd-omega_1 cofactor selector are PROVED.
+Eventual prime deletion in17/30<theta<=5/6 uses the explicit unconditional
+short-interval prime import and the exact full-source capacity polynomial.
+The complete transported signed target, original target and RH remain OPEN.
+Only this new memo was written; no computational source experiment or test
+was performed. The memo is intended as a proof-rule input, not a source run.

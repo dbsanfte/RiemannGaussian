@@ -1,0 +1,51 @@
+Independent finite rough-prime transport and parity-terminal checker077
+======================================================================
+Only four new rough checker/test/receipt/scope files are created. All frozen
+sources preserved. Independent frozen077 interval/rational helpers are reused;
+no producer import, scientific source query/result, old suite, hash or agent.
+Generic literal mu values appear solely in a tiny test fixture, never checker.
+
+verify_transport(intervals,payload) takes exact rough-prime-transport-v1 keys
+schema,lower_cutoff,upper_cutoff,excluded_primes,children. It independently sieves
+all primes through min(upper,H), compares the COMPLETE ascending nonexcluded
+roster, and verifies c(p*m) via floor-scaled coefficient interval FUNCTIONS.
+Normalization/splitting/merging of equal adjacent pieces is permitted. The exact
+identity is T(c,y1)-T(c,y2)=-sum_(y1<p<=y2,p not excluded) T(c(p*),p). Child p
+remains the child's strict least-prime cutoff. The unit survives every rough
+state and cancels in the difference. No parent/child mu source is queried.
+
+verify_terminal(intervals,payload) takes exact rough-factor-terminal-v1 keys
+schema,cutoff,degree,excluded_primes,layer_polynomials,layer_counts,signed_polynomial.
+It requires degree0..4 and exact cutoff^(degree+1)>=H, then independently
+sieves the prime roster and enumerates DISTINCT increasing-prime products<=H,
+excluding P and requiring each prime>cutoff. Repeated factors/p-squares do not
+enter. Layer counts include ALL such products regardless whether c(product)=0;
+layer0 is the unit and count1 whenever H>=1, even when c(1)=0. Complete formal
+polynomial coefficients are summed by each factor degree, and ALL graded signs
+are retained in signed_polynomial=sum_r(-1)^r layer[r]. This equals T(c,y).
+No cross-term removal or semiprime sign approximation is licensed.
+
+Both APIs return VERIFIED_IDENTITY or INVALID, counts, ops, peak_bytes and exact
+scope. Every result retains uniform_bound_proved=False,
+uniform_source_bound_proved=False,RH_proved=False,finite_identity_only=True and
+conditional_real_token_identity=True. Arbitrary real count-power tokens remain
+formal labels; token enclosures/compilation still require separate admission.
+H=max supplied interval right, emptyH0. Source interval limits remain frozen077
+H<=4million and100000 interval/terms. Cutoffs>=1 have4096-bit integer limit.
+Excluded primes sorted distinct,<=100000, at most10. Product enumeration is
+capped prospectively at500000 products total, with fixed-degree recursion and
+memory reserved BEFORE retaining any over-cap product or aggregating layers.
+Prime sieve/roster, all child-payload interval data, polynomial input/output and
+sorted product storage have prospective4GiB/work3e11 gates. No dense mu array
+or unrestricted product enumeration is used. External runner owns input/process
+aggregate memory admission.
+
+Eight distinct tests pass. Eleven test executions over3 retained attempts:
+10 successful,1 initial fixture boundary error (prime13 was incorrectly
+expected inside(13,16], correctedto(12,16]). Only affected tests rerun after
+fixes. Tests cover complete/excluded prime rosters, floor scaling/normalization,
+tiny literal finite mu identity, graded signs/semiprimes, missingunit, p-square
+trap, zero-coefficient productcounts, degree3/4 nonempty top layers, exact maximal
+degree boundary equality, false threshold, invalid/canonical tokens and product
+resource rejection. Receipt final status PASS. No positive all-scale bound,
+arithmetic residual refutation, or RH conclusion is claimed.

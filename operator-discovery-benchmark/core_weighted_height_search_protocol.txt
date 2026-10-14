@@ -1,0 +1,103 @@
+WEIGHTED HEIGHT PROOF SEARCH: PROTOCOL AND CHECKER CONTRACT
+
+Input: candidate10_moment_bound_obligation.json (the frozen preceding output).
+Goal: search for bounds with signed finite arithmetic weights inside moments;
+turn incomplete proofs into precise arithmetic obligations. Full signed core
+control stays first. This is a finite proof language, not a general prover.
+
+Before any new arithmetic observations, declare this grammar:
+  sigma: every reduced rational with denominator <=24, 0<sigma<min(1/2,theta);
+  kappa: every reduced rational with denominator <=12, 0<kappa<1/4;
+  epsilon: fractions 1/2,1/4,1/8 of the smallest strict height saving;
+  tau: solve the exact rational linear inequalities for a common H=2U^tau,
+       then retain plans only if tau<=128. It is not a fitted height cutoff.
+  harmonic-null tests: dilations d=2..6, integer amplitudes in [-6,6],
+       normalize nonzero exact null directions to max absolute amplitude 1.
+All targets and all rejected contour lines remain in the artifact. No winning
+target, contour, null vector, or numerical arithmetic value is an input.
+
+Rules and trust boundary
+-----------------------
+Review020 supplies the unconditional critical twisted fourth moment (primary
+provenance therein), phase-uniform strip transfer, polynomial mean estimate,
+functional equation/convexity, common-height tail summation, analytic residue
+centering, integer-cell averaging and complete-history channel recovery.
+Review021 supplies harmonic-null generic sharpness and the finite Gaussian
+Gram identity. These are reviewed mathematical rules, not formal-assistant
+proofs. The independent checker checks their exact applications and premises.
+The imported twisted theorem is forbidden below its polynomial-length range.
+
+For B_j=A^p*(c delta-A)^j, r=p+j, all j=0..m are mandatory. Record divisor
+envelope 3^j d_r, support U^r, critical coefficient normalization R^(1/2-sigma),
+and dyadic Mellin exponents d0=-sigma-u, d1=1-u-3sigma,
+dj=j-u-(j+3)sigma (j>=2), u=1-theta. The line requires all dj<0.
+For each kappa and epsilon fraction solve
+ tau >= max_j r/kappa,
+ tau >= max_j r(1-2sigma)/(-dj-epsilon).
+Each branch then has U exponent r(1-2sigma)+tau(dj+epsilon)<=0.
+The common low head expands when tau grows; it is never discarded.
+
+Each line has: sigma, branches (j,r,support_U_power,coefficient_envelope,
+height_power,weight_U_power), failed_premises, plans, selected_plan. Each plan
+has kappa, epsilon_fraction, epsilon, tau, branches (j,length_slack,
+tail_height_power,tail_U_power), high_U_power, high_energy_X_power,
+required_low_U_power, generic_low_U_power, generic_low_energy_X_power,
+integer_error_U_power, integer_error_X_power, high_auxiliary_proved,
+generic_complete_component_proved, low_obligation_status.
+Plan ranking: smallest tau, then greatest epsilon, then greatest kappa.
+Line ranking: greatest permissible low-head U exponent, then smallest tau,
+then the deterministic contour index. No observed arithmetic enters ranking.
+
+For a selected line, the missing estimate is the COMPLETE Hermitian matrix
+of zeta-weighted B_j,B_k moments on |t|<H, contracted with both binomial
+vectors. Include every (j,k) and the underlying ordered integer pairs;
+diagonal-only or unweighted Gaussian replacement is not allowed. Required
+low U exponent=(1-2sigma)/alpha. Its generic fallback costs
+2(p+m)(1-sigma). The integer averaging error costs U^[2(p+m)(1-theta)]/X.
+The low leaf is proved by that fallback only when its exact recovered
+exponent<=0. Otherwise it remains OPEN for actual Mobius weights, regardless
+of the high-tail theorem. Ordinary coefficient-moment convergence and
+analytic-residue centering are separately typed. The opposite J_theta drift,
+unit, all histories, common N=4X-1, original source and -e are compulsory.
+
+Recovery multipliers per original channel are exact safe rational bounds:
+ Hc=sum[2^ceil(eta)*(sum|c_l|+2*(1+1/sigma)*sum l|c_l|)]^2,
+ Ec=sum[2^ceil(eta)*(sum|c_l|+2*(1+1/(1-theta))*sum l|c_l|)]^2.
+Store a safe factor 64*Hc*4^ceil(alpha*b) for the low bound U^b,
+64*Hc for the nonpositive high U exponent, and
+4*Ec*4^ceil(alpha*2(p+m)(1-theta)) for the integer error. Include the squared
+source scalar. These generous factors cover averaging, the complete parent
+and child blocks, their cross terms, and the cutoff N<=4X. Uniform analytic
+constants remain symbolic, numerical_value=null.
+
+Each selected target also carries the exact source-head identity for n<=U:
+ A^p*E^m(n)=c^m*d_(m-p)(n) if m>=p, or c^m*mu^(p-m)(n) otherwise.
+This is an identity from mu*One=delta, not a proved bound for the full Gram.
+
+Generic witness search rejects non-null/zero/overlapping pairs. Accepted
+weights are a1=1, a_n=x on Q<n<=2Q, a_(dn)=y there, U=2dQ, Q>=2,
+with x+y/d=0. Its exact tail factor x+y*d^(-s) is nonzero for real sigma<1.
+Review021's fixed-height argument proves generic U exponent sharpness, with
+no claim about actual mu, a prescribed physical block, projected channels,
+or the complete signed source. This acts as a check on a proof-rule class.
+
+Publication and feedback
+------------------------
+Root module APIs: search(parent,context,spec,meter),
+ feedback(parent,result,input_file,artifact). Independent APIs:
+ verify_search(parent,context,result,meter),
+ verify_feedback(parent,result,next_input,input_file,artifact,meter).
+Context is the preceding runner's load_context(). Inherited bindings and
+complete_source_reduction remain byte-equivalent JSON values. New high
+auxiliaries are NOT new paid source components. Generic complete proofs
+may be reported as potential component bounds, but this stage does not
+alter source payments; a distinct full-recovery publication would be needed.
+No dependency from a proved node may transitively rely on an open node.
+The original full-core residual and all remaining targets are carried forward.
+
+No actual-source samples, fitting, model calls during search, or hashes.
+One development suite per owner in isolated processes; preserve its receipt.
+One frozen study with isolated owner suites, exact-byte snapshots and terminal
+failure retention. Re-run checks only for changed code or a concrete failure.
+Inclusive declared cap 300 million metered operations, 1800 seconds,
+4 GiB main process plus sequential 2 GiB test processes (<16 GiB aggregate).

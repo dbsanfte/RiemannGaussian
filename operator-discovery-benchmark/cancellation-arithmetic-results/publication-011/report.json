@@ -1,0 +1,159 @@
+{
+  "RH_proved": false,
+  "auditor_revision": {
+    "correction": "Empty or absent numerical diagnostics are permitted only at prepared_domain with no support, numerical transform or charged numerical reserve.",
+    "schema": "prepared-checkpoint-audit-revision-v2",
+    "source_sha256": {
+      "check_primitive_state_scaled_search_v2.py": "8bb0354330e08e1fd9503278f247c0b607e44f774cf13facca89fd16b03d23e4",
+      "test_check_primitive_state_scaled_search_v2.py": "b1c84d379b46db9ed57e51c32ee580012273ffe8b328f0da344e431f283a8cc9"
+    },
+    "test_returncode": 0,
+    "test_stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 1.968s\n\nOK\n",
+    "test_stdout": "",
+    "tests_passed": 10
+  },
+  "charged_reserve_includes_numerical_preprocessing_and_independent_replay": true,
+  "critical_finite_certificate_found": false,
+  "decision": {
+    "dual_status": "missing_resource",
+    "final_scales": [],
+    "primal_status": "uncertified",
+    "run_primal": true
+  },
+  "exact_primitive_state_cone_separator_found": false,
+  "full_original_equations_required_for_exact_admission": true,
+  "global_bound_proved": false,
+  "historical_development_scales": true,
+  "independent_receipt_sha256": "152ecca4042a13e322bef8e878a2843f5c4d86dc0c8cde1742ca83f7d8ad91c7",
+  "jobs": [
+    {
+      "cost": {
+        "cpu_seconds": 382.24416678,
+        "elapsed_seconds": 382.2995008190046,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 1167180,
+        "pid": 667847
+      },
+      "file": "jobs/dual-000.json",
+      "numerical_proposal": {
+        "attempts": [
+          {
+            "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+            "solver": "highs",
+            "status": 4
+          }
+        ],
+        "exact_compression_operations": 3372182,
+        "original_rows": 1853,
+        "original_system_sha256": "efb5e1cd4365e287199b2ada3fe96d457146704c2304ef58e6814be8ab218d8c",
+        "original_variables": 11698,
+        "retained_rows": 1193,
+        "source_cells": 1686091,
+        "worker_verification_pending": true,
+        "zero_rows": 0
+      },
+      "phase": "dual",
+      "reason": "numerical transformation audit deadline",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "f5783bd2d601c6492e9f8e0a318bc7ad6f0a0e9b8fb5356dc6cf6dc3aad476af",
+      "status": "missing_resource"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 122.16822180099999,
+        "elapsed_seconds": 122.18414463000954,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 980608,
+        "pid": 668190
+      },
+      "file": "jobs/primal-000.json",
+      "numerical_proposal": {
+        "attempts": [
+          {
+            "error": "Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+            "solver": "CLARABEL",
+            "status": null
+          }
+        ],
+        "charged_work_reserve": 16026858,
+        "exact_compression_operations": 1913178,
+        "original_rows": 5641,
+        "original_system_sha256": "3c21b86e0b169d6d67570e50677148fc57623c4448e01f4b1a9ce0ecbc19e35f",
+        "original_variables": 1957,
+        "retained_rows": 4029,
+        "source_cells": 956589,
+        "worker_verification_pending": false,
+        "zero_rows": 0
+      },
+      "phase": "primal",
+      "reason": "no numerical SDP proposal after exact row compression; no infeasibility theorem",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "9b01ed3fc769ed477a838f8532e3669b011cc96ac1f4a299eee253c0f63e34df",
+      "status": "uncertified"
+    }
+  ],
+  "mathematical_cone_and_target_unchanged": true,
+  "next_action": "capture detailed numerical termination and residual logs; investigate exact simplification and use authorized runtime extension where needed",
+  "numerical_rank_truncation": false,
+  "numerical_transformation": "exact augmented proportional-row compression and positive infinity scaling; identity columns",
+  "previous_research_publication": "publication-010",
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "publication-007": {
+      "bound_files": 401,
+      "manifest_sha256": "dda8d1cdcba8fbb4c0e385217ff7a66acb28cce39c4ab4819c9243a64fe855f9"
+    },
+    "publication-008": {
+      "bound_files": 294,
+      "manifest_sha256": "9314baa21704b4a09c280ac83dabc0d106006e1baa45f973246837c1a5d2053b"
+    },
+    "publication-009": {
+      "bound_files": 275,
+      "manifest_sha256": "530ee2f63f8c634c5613e499e686b2faa024475de78edcefb0e331598921e6a5"
+    },
+    "publication-010": {
+      "bound_files": 304,
+      "manifest_sha256": "bdcfd2747abf589d6fc7cc9330e7035bc0bd5d2d7442001610a144ef690c1f98"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "resources": {
+    "charged_backend_reconstruction_work": 450000000,
+    "cooperative_seconds": 360,
+    "external_seconds": 1200,
+    "total_memory_bytes": 6442450944,
+    "worker_memory_bytes": 6442450944
+  },
+  "schema": 11,
+  "source_count": 97,
+  "tests_passed": 52,
+  "uniform_innovation_bound_proved": false
+}

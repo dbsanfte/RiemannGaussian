@@ -1,0 +1,40 @@
+{
+  "attempts": [
+    {
+      "tests": 8,
+      "success": true,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.024638593022245914,
+      "output": "test_cache_growth_and_schedules_share_exact_values (test_mobius_density_packet_081.PacketTests) ... ok\ntest_complete_drift_and_odd_delay_identity (test_mobius_density_packet_081.PacketTests) ... ok\ntest_density_and_exact_signed_pair_values (test_mobius_density_packet_081.PacketTests) ... ok\ntest_empty_and_single_sign_packets_not_fake_controls (test_mobius_density_packet_081.PacketTests) ... ok\ntest_event_kernel_direct_product_including_shared_endpoints (test_mobius_density_packet_081.PacketTests) ... ok\ntest_frozen_boundary_draw_is_exact_and_excludes_known (test_mobius_density_packet_081.PacketTests) ... ok\ntest_generic_fractional_proof_gate_and_omega_price (test_mobius_density_packet_081.PacketTests) ... ok\ntest_language_and_prospective_gates (test_mobius_density_packet_081.PacketTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.024s\n\nOK\n"
+    },
+    {
+      "tests": 8,
+      "success": true,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.024251466966234148,
+      "reason": "affected resource admission and structural-bank preparation changed",
+      "output": "test_cache_growth_and_schedules_share_exact_values (test_mobius_density_packet_081.PacketTests) ... ok\ntest_complete_drift_and_odd_delay_identity (test_mobius_density_packet_081.PacketTests) ... ok\ntest_density_and_exact_signed_pair_values (test_mobius_density_packet_081.PacketTests) ... ok\ntest_empty_and_single_sign_packets_not_fake_controls (test_mobius_density_packet_081.PacketTests) ... ok\ntest_event_kernel_direct_product_including_shared_endpoints (test_mobius_density_packet_081.PacketTests) ... ok\ntest_frozen_boundary_draw_is_exact_and_excludes_known (test_mobius_density_packet_081.PacketTests) ... ok\ntest_generic_fractional_proof_gate_and_omega_price (test_mobius_density_packet_081.PacketTests) ... ok\ntest_language_and_prospective_gates (test_mobius_density_packet_081.PacketTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.024s\n\nOK\n"
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 8,
+  "integration_checks": [
+    {
+      "status": "PASS",
+      "source": "q1_p16 original G kernel",
+      "u": 1103,
+      "delay_parents": [
+        1103,
+        551,
+        275
+      ],
+      "bound_checker": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+      "finite_checker": "VERIFIED_FINITE_PACKET",
+      "direct_pair_witness_cross_checks": 2,
+      "preserved_older_files": 542,
+      "note": "one standalone development integration, no old science replay"
+    }
+  ]
+}

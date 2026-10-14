@@ -1,0 +1,29 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 3,
+      "failures": 0,
+      "errors": 1,
+      "elapsed_seconds": 0.07152656896505505,
+      "exposure": "one constant synthetic recipe compiled without norm evaluation; signed rational toy norm128; artificial diagnostics"
+    },
+    {
+      "returncode": 0,
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.08532652503345162,
+      "exposure": "one constant synthetic recipe compiled without norm evaluation; signed rational toy norm128; artificial diagnostics"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.001013384957332164,
+      "exposure": "synthetic diagnostic only; new signed-cross necessity classification"
+    }
+  ]
+}

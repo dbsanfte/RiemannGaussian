@@ -1,0 +1,176 @@
+043: WHOLE-DOMAIN BOUND SEARCH AND EXACT REJECTION OF THE SELECTED FAMILIES
+
+Current status
+The detector searched434 fixed arithmetic formula families and4340 refinement
+rules. It independently certified21 whole-continuous-domain squared norms.
+All9 selected logarithmic inequalities passed at their finite evaluation
+supports. A subsequent exact coefficient-recovery gate refuted ALL THREE
+selected families' target convergence AND their proposed vanishing forcing.
+The same gate refuted402 of the434 frozen families.32 pass this necessary
+condition only; none has a proved uniform upper bound or convergence theorem.
+The original F, centered-Mobius041 bound, and RH remain OPEN. The persistent
+goal remains active. This alternative route does not establish those earlier
+source bounds, and none of their studies was rerun.
+
+Authoritative continuation
+ floor-residual-results/pilot-001/analytical_followup_001/next_search_input.json
+Current proof feedback
+ floor-residual-results/pilot-001/analytical_followup_001/grammar_feedback.json
+Current necessary-condition frontier
+ floor-residual-results/pilot-001/analytical_followup_001/proof_filtered_frontier.json
+The raw pilot files remain frozen, including their pre-review OPEN statuses.
+The followup supersedes the selected candidates' OPEN convergence/forcing
+claims with analytically_refuted, without changing their true finite bounds.
+
+1. Why this representation is RH-relevant
+
+Define f_n(x)=floor(1/x)/n-floor(1/(nx)) on0<x<=1, zero beyond1. Its value on
+cell k, (1/(k+1),1/k], is(k mod n)/n. For pure finite programs g=sum c_n f_n,
+e=1-g has Mellin response1/rho at every ordinary zeta zero rho. Therefore
+ ||e||² >= (2Re(rho)-1)/|rho|² when Re(rho)>1/2.
+An actual sequence of these norms tending0 excludes off-half zeros. This is
+known Nyman-Beurling-related territory, not a newly discovered criterion.
+The proof uses finite bounded functions and analytic continuation, not
+unproved ordinary convergence of a reciprocal-zeta series.
+Primary context: https://arxiv.org/abs/math/0202141
+
+For D_q g(x)=g(qx), D_q f_n=f_(qn)-f_q/n and ||D_q||=1/sqrt(q). Thus
+ e_(qN)=bD_q e_N+h_N,
+ h_N=1-g_(qN)-b I_q+b D_qg_N, I_q=1_(x<=1/q).
+Indicators are admitted ONLY for forcing norms, not freely for RH-bearing
+targets. Their Mellin response does not vanish at zeta zeros. Exact identities
+retain all signed cross terms; their validity does not pay the forcing bound.
+
+2. Bound language and the pre-data rate correction
+
+The viable conditional target is
+ ||h_N||² <= A/L(N)^eta, L(N)=1+floor(log2N),0<eta<=1,
+for EVERY N on the required geometric chain, with fixed parameters. Since
+|b|/sqrt(q)<1, the independently checked Young/geometric-convolution argument
+then makes ||e_N||² tend0. Finite support tests cannot discharge this leaf.
+
+An initially contemplated fixed relative-error contraction was corrected
+BEFORE any candidate scores were computed. Burnol Theorem1.3 gives a positive
+liminf for the optimal squared error times logN in the containing fractional
+part span. Our f_n lie in that span for n<=N. Uniform geometric energy decay
+on support N=N0*q^j, and logarithmic energy exponent above1, are too strong.
+The relative-forcing probes remain negative calibrations only; all9 final
+probes failed. No asymptotic lower-bound constant is used as a finite bound.
+Imported source: https://arxiv.org/pdf/math/0103058
+
+3. Frozen search and fixed-program certificates
+
+Arithmetic atoms: actual mu,Liouville,mu*mu,(-1)^omega,1,mu+Liouville/2,
+mu-Liouville/2. Recipes use untapered coefficients or
+ c_n(N)=-a(n)*n^-beta*(1-(n/N)^alpha)^gamma,
+with each power exactly rounded downward to a dyadic rational at
+p(N)=4*ceil(log2N) bits. Optional exact correction at f_2 makes g(cell1)=1.
+No per-N fitting or gradient descent. The actual rounded formula is the
+mathematical family, not an approximation silently substituted in a proof.
+The exponent API accepts arbitrary rationals under resource caps, including
+denominator257 in tests; the pilot's finite bank is not a permanent whitelist.
+
+Training supports8,16,24 with q2/3; one shared float Gram at32768 cells and an
+analytic tail price drive numerical ranking. The selected recipe/rule batch
+is frozen before final supports40,64,80 are compiled or priced. q2 selected
+in all three strata; final child supports80,128,160. Positive b,negative b,
+and b0 restatement remain separate selection roles. Every score is archived.
+
+For EACH selected exact program, the whole integral is
+ sum_(k>=1)e(k)^2/[k(k+1)].
+Producer: exact integer divisor/indicator events,Arb192 head to1048576,complete
+analytic tail between0 and M²/(H+1). Independent checker: heap event replay
+atArb256, exact lattice/endpoint/tail checks. Exact dyadic endpoints are the
+authoritative bounds; decimal displays are diagnostics. Identical programs
+share certificates. Two workers; no signed square split across workers.
+
+4. Results and the signed-mechanism diagnostic
+
+All three selected families use a(n)=mu(n)+Liouville(n)/2, no anchoring,gamma1:
+ family0329: alpha2/7,beta0,q2,b1/2; tested forcing A1,eta1.
+ family0341: alpha1/2,beta0,q2,b-1; tested forcing A4,eta1.
+ family0343: alpha1/2,beta1/7,q2,b0; tested forcing A1,eta1.
+All9 logarithmic tests passed globally in x at the tested N. No interval was
+unresolved. Only2 of6 nonzero-rule cases had negative forcing cross terms;
+the other4 reinforced the error. All6 bounds survived replacing the cross
+by its absolute value. Thus these finite bounds do not need signed cancellation.
+
+For0329, certified target energy drops from[.08871027,.08878209] atN40 to
+[.02095647,.02178492] atN128, then rises to[.02200606,.02332213] atN160.
+This finite improvement is real, and still cannot imply convergence.
+
+5. Detector-executable coefficient recovery and analytic rejection
+
+The followup solves a rational cell system for weights alpha_k isolating a
+coefficient c_n. It independently verifies EVERY finite basis column and
+sum k*alpha_k=0, which annihilates every higher-support column at once.
+This is not a finite-support assumption or a free-vector countermodel.
+The resulting identity is
+ c_n+mu(n)-sum d_q*sum_(k>=q)alpha_k = sum alpha_k e(cell k).
+Weighted Cauchy gives the whole-norm lower bound by the square of that exact
+left side divided by sum alpha_k²*k*(k+1).
+
+Examples generated by the solver:
+ c2-1=-2e1+e2, hence E>=(c2-1)²/14;
+ c3-1=-e1-e2+e3, hence E>=(c3-1)²/20;
+ c4=e1-e2-e3+e4, hence E>=c4²/40.
+Consequently convergence forces c_n(N)->-mu(n) at EVERY fixed n. This is
+necessary, not sufficient. Exact dyadic rounding errors tend0, the fixed
+tapers tend1, and each unanchored coefficient tends-a(n)n^-beta. Rational
+power inequalities certify intervals for irrational limits. Anchored c2 is
+left unresolved when its limit would need an unproved full growing sum.
+The direct forcing witness includes the indicator and parent-dilation terms.
+
+Automated scan2..16 selected these strongest certified positive liminf bounds:
+                 target energy                   forcing energy
+ family0329      1/56                            9/640
+ family0341      1/56                            1/80
+ family0343      144772176401161/15762598695796736  same (b0)
+The third bound is about0.00918453735. These refute convergence/vanishing
+forcing for these exact fixed recipes, even though every finite log bound
+passed. They are not counterexamples to RH or to the whole representation.
+
+Applying the SAME gate to the complete frozen grammar rejects402 families.
+The32 remaining recipes have channelmu,beta0 and optional taper/anchor. They
+only pass this local test. No claim is made that they converge, are novel,
+or evade other known obstructions. No new norms or candidate reselection
+were used in this proof filtering.
+
+6. Feed the obstruction into the next grammar
+
+Do not repeat this norm study or optimize its constants. Do not blacklist
+Liouville or mixed arithmetic generally: fixed coefficient limits cause the
+failure. Future productions should preserve c_n(N)->-mu(n) while allowing
+nontrivial signed interaction at moving indices. Proposed, NOT implemented:
+ - auxiliary a(n)*(W1(n/N)-W2(n/N)) with both weights tending1 at fixed n;
+ - scale-vanishing amplitude N^-delta times a signed arithmetic correction;
+ - exact head repair through n<=floor(N^theta), with a growing cutoff;
+ - scale-dependent rational exponents tending0, rather than fixed beta>0.
+Each only repairs a necessary local condition. It does not bound the growing
+tail or the joint forcing. Search still needs an independently proved global
+upper estimate, with signed cross terms doing necessary work. Prefer new
+constructions/arguments to smaller finite constants. All final supports in
+this run are now development evidence; any new run needs a new frozen split.
+
+7. Validation and resources
+
+56 distinct focused tests ultimately passed: interval11,search9,argument20,
+runner4,recovery12. Receipts preserve a decimal-display integration failure
+and a checker empty-H0 integer/float-tail failure; both were corrected and
+the affected checks passed. Unchanged older suites/studies were not rerun.
+Pilot elapsed95.3946s. Search647784429 proxy operations;norm producer1620548988;
+independent checker6824403737 across21 certificates. Conservative aggregate
+worker allocation reserve751403210bytes under16GiB. Reported parent high-water
+RSS704032KiB, largest worker138220KiB; these are not an aggregate RSS measure.
+Analytic publication elapsed1.0391s, selected33764,frontier2034932,independent
+certificate replay55301 operations;zero new norms. Recovery development62059
+operations. Frozen pilot15 files and followup5 files match byte-for-byte.
+No precautionary hashes. All raw artifacts and independent-scope memos remain.
+
+Code entry points
+ run_floor_residual_043.py              frozen completed norm pilot; do not rerun
+ publish_floor_residual_review_043.py   frozen completed proof followup; do not rerun
+ floor_residual_search_043.py          exact rational-root recipe/refinement compiler
+ floor_residual_interval_043.py        fixed-program whole-domain norm producer
+ check_floor_residual_arguments_043.py independent norms,source/limit/recurrence gates
+ floor_residual_recovery_review_043.py automatic exact cell witnesses and recipe filter

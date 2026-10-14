@@ -1,0 +1,5 @@
+Accepted unsigned checkpoint SHA256 0b71440bffa07fd9dbb7f45724754379db0745c105c651572558ef0ac79da2d0
+
+Only square22=1, square58=2 and norm relation9=-1 are nonzero. All new cell, old localizer, and factor additions vanish; all four constant slacks are zero. The half-prefix identity pairs t=2n,2n+1 exactly, with no endpoint remainder. The complete pair Cauchy identity follows by expanding t*sum_i<=t x_i²-P_t²=sum_i<j<=t(x_i-x_j)² and summing the full child block. Subtracting the norm rows replaces x_i² by the actual squarefree indicator. Therefore the certificate is exactly the previously supplied unsigned calibration for every integer X>=1.
+
+Q(t)=t/zeta(2)+O(sqrt(t)) gives U_X=(56/(3 zeta(2)))X³+O(X^(5/2)). The scalar gamma is 56/3, not zero. This fixed unsigned certificate cannot supply a critical budget for any fixed q>1. This adjudication does not refute the actual signed target or another possible certificate. The critical job returned no_certificate_found; its floating support failure supplies no exact separation. No refits or additional scores were run.

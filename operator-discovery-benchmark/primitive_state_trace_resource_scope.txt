@@ -1,0 +1,22 @@
+The user authorized longer runtime and parallel execution. This frozen
+diagnostic uses two independent numerical jobs, each with one numerical
+thread and 3 GiB address-space allowance, within a 6 GiB total allowance.
+The cooperative limit is 900 seconds per job, including source preparation;
+the external worker limit is 1800 seconds. Memory may be raised up to the
+already authorized 16 GiB if a recorded limit makes it necessary. The
+450-million charged exact work ceiling is unchanged; this diagnostic runs
+no native exact reconstruction or proof admission.
+
+Both jobs use the same complete source grammar, historical development
+grid and target as publication011. Every arithmetic constraint and matrix
+coordinate is retained. Only exact proportional-row compression and the
+recorded positive row scaling feed the numerical solvers. Raw logs and
+finite last iterates are diagnostic evidence. A solver status or residual
+cannot establish an inequality or infeasibility. Any useful returned vector
+must undergo separate exact reconstruction against the original equations.
+
+Original and scaled-original equations are independently rebuilt. The
+primal canonical CVXPY-to-Clarabel matrix hash is recorded but is not
+independently reconstructed by this diagnostic checker. This limitation
+must remain explicit. Independent residual/sign/PSD diagnostics are computed
+in original coordinates. Unknown or nonfinite coordinates are never zero.

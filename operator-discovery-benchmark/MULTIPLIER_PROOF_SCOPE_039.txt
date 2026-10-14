@@ -1,0 +1,228 @@
+ALL-SCALE MULTIPLIER CERTIFICATES AND A DECISIVE SOURCE-SCALAR GUARD
+Stage039 independent design/math audit, with stage038/037 symbolic artifacts.
+No actual coefficient archive, new source values, numerical study, old tests,
+hashes or frozen edits were used. Full core/RH remains OPEN.
+
+Immediate conclusion
+The exact038 identities plus R in[1,5], without using the exact R_u scalar
+normalization, define a family for which the desired cofinal energy bound is
+false. A conic/PSD search whose rules extend uniformly to that family cannot
+close the actual goal. The obstruction survives all four038 identities and
+the source-defined prime helpers; it is stronger than037's generic constant
+sequence countermodel, but does not refute the correctly normalized source.
+Implement the source-pole guard before spending another search solely in that
+all-R proof grammar. A tractable exact multiplier grammar is specified below;
+its use must expose this source-specialization premise and its remainder debt.
+
+1. Read source/identity semantics, not finite matrices as a theorem
+
+Stage038 bound_search_frontier.json contains four all-N identities for weighted
+channels W_j and positive Dirichlet kernels D_j:
+ sum_(d<=N)D_j(d)W_j(floor(N/d))=weight_j*P_rhs_j(N).
+The kernels are d2=One*One, One*One_(2/3), One_(2/3), and One. The RHS is K
+for the first three and delta for mu. The generated state basis and its inverse
+convert these FULL prefixes exactly. Units, N=0, every d<=N and the complete
+inhomogeneous RHS are part of each relation. Explicit prime profiles cannot
+be substituted for these full prefixes.
+
+Stage037's coupled recurrence has both child endpoints, all parent/child helper
+crosses and the changing cutoff. The subsequent candidate review shows its
+selected helper energies tend to0; it supplies no full-source increment bound.
+The stage038 frontier correctly has multiplier_synthesis_implemented=false
+and successful_signed_defect_certificate=null. Merely multiplying these true
+identities by a chosen prefix is not yet a bound proof.
+
+2. A tractable finite-template proof search
+
+Search a conic identity over SYMBOLIC FINITE-SUM ASTs, instead of solving a
+new matrix at each concrete N. The template dimensions/work limits are finite;
+their summation variables and N domain are universal. Generate columns from:
+
+ (a) complete038 zero-relations L_j(N)=0, multiplied by degree-one full-prefix,
+     coefficient-difference, constant/RHS, or complete sum-atom templates;
+ (b) rank-one square templates with nonnegative rational multipliers;
+ (c) positive-kernel Cauchy Gram templates whose kernels come from038;
+ (d) declared exact floor/block/telescope relations retaining every boundary.
+
+Unknown rational coefficients are chosen by exact linear matching. For a
+target defect M and independently priced forcing D, seek
+ D-M = sum_g lambda_g*Gram_g + sum_j T_j*L_j,
+ lambda_g>=0. The right side is nonnegative on the actual source. A more general
+L^tY+Y^tL form is equivalent when every relation is exactly admitted and all
+inhomogeneous constants have been included in an augmented coordinate.
+The producer does real multiplier selection; the checker reconstructs every
+column, verifies the rational solution/positive cone, and replays each universal
+rewrite. No producer rule-application function is a verification oracle.
+
+The basic positive-kernel identity, valid for every finite index set, is
+ A*sum_d k_d*u_d^2-(sum_d k_d*u_d)^2
+ = (1/2)*sum_(d,e)k_d*k_e*(u_d-u_e)^2 >=0,
+ A=sum_d k_d, k_d>=0.
+All diagonal/off-diagonal terms occur. If a normalization divides by A, prove
+A>0 (for these complete kernels, d=1 gives A>=1) and keep its cost. This
+allows a finite Gram TEMPLATE with an arbitrary-size summation domain. It is
+not a finite numerical Gram standing for all N. Additional Young/Fubini bounds
+must state their actual kernel masses, floor multiplicities and inverse costs.
+
+AST atoms should include weighted_channel_prefix, generated_full_state_prefix,
+coefficient_difference, positive_kernel, positive_rhs_prefix, full_finite_sum,
+floor_argument, prime_selector, cutoff_selector, and constant. Every binder
+declares integer endpoints and positivity/domain predicates. Sum products are
+double sums, not one sum with its cross deleted. Match after reviewed exact
+Fubini/Dirichlet-floor rewrites; preserve N-dependent domains in the normal form.
+Kernel evaluation at a fixed finite list of d is not a complete all-N identity.
+
+Represent a stage037 helper through its coefficient selector if relating it to
+full states: its unit plus sum_(k<=t)1_prime(k)*1_(k>y)*h_i(k), where h_i(k)
+is the corresponding difference of full state prefixes. The035 local prime
+polynomial is an alternative exact representation on that prime domain.
+Never assert helper=full state merely because both carry the same state id.
+
+3. What a finite-template failure can prove
+
+Rational primal solutions are sound sufficient certificates when all columns
+have universal semantics and independent forcing prices. An exact separating
+dual or coefficient-unmatched monomial proves infeasibility only of the declared
+finite cone. The actual source can satisfy additional relations not represented
+by its normal form; syntactic independence is not arithmetic independence.
+Finite-horizon PSD tests may disprove the chosen universal certificate template
+at an admissible formal assignment, but do not refute the actual source bound.
+Do not call a changing sequence of solved finite-N matrices an all-scale proof.
+
+Every new paid forcing/endpoint node needs its own admitted all-scale theorem.
+The desired source energy, an equivalent changed-cutoff target or an OPEN
+correlation cannot be used as that theorem. Changing metrics and rational power
+weights retain complete target recovery. First solve/prices actual signed
+expressions; taking absolute values separately would revert to the old cost
+grammar which already leaves positive powers.
+
+4. Decisive obstruction to an all-R proof grammar
+
+Let f_R denote the actual four arithmetic modes with a FREE scalar R:
+ f_R=beta*K*(mu*mu)-beta*K*(mu*mu_(2/3))
+     -R*K*mu_(2/3)-beta*mu, beta=9/2.
+The exact038 identities, prime-valuation laws, generated basis and divisor
+coefficient envelopes hold for every such R. In particular they hold at R=2,
+which belongs to[1,5]. The source-defined stage037 helpers keep their correct
+units and prime coefficients at that R; the037 helper upper bounds remain valid.
+
+On the initial ABSOLUTE half-plane Re(s)>1 the complete Euler identity is
+ D_R(s)=zeta(s+1/3)*[beta/zeta(s)^2
+       -beta/(zeta(s)*zeta(s+2/3))-R/zeta(s+2/3)]-beta/zeta(s).
+This follows from the source Dirichlet-convolution AST. Coefficient divisor
+envelopes justify the initial absolute identity. It does not assert convergence
+of the defining Dirichlet series at s=2/3.
+
+Its analytic continuation near theta=2/3 has simple-pole residue
+ rho(R)=beta/zeta(theta)^2-beta/[zeta(theta)*zeta(4/3)]-R/zeta(4/3)
+       =(R_u-R)/zeta(4/3),
+ R_u=beta*(zeta(4/3)/zeta(theta)^2-1/zeta(theta)).
+Both displayed zeta denominators are nonzero; for the actual rational arguments
+this is independently certifiable by rigorous Arb enclosures. Correct R_u
+cancels the pole by exact algebra. R=2 does not, as a rigorous nonzero enclosure
+for (R_u-2)/zeta(4/3) can certify. No PNT or RH assumption is involved.
+
+Why this is an energy obstruction, rather than just an analytic analogy:
+Assume for every epsilon>0 the block energy of F_R is <=C_epsilon X^epsilon
+on every dyadic block. The step prefix has integral of |F_R|^2 on[X,2X) at most
+C_epsilon X^(2+epsilon). Cauchy gives, for real sigma>1/2,
+ integral_X^(2X)|F_R(x)|x^(-sigma-1)dx
+ <= const_sigma*sqrt(C_epsilon)*X^(1/2-sigma+epsilon/2).
+Choose epsilon<2sigma-1 and sum dyadic blocks. The integral is absolutely and
+locally uniformly convergent for Re(s)>1/2. Consequently
+ s*integral_1^infinity F_R(x)x^(-s-1)dx
+is holomorphic there. Abel equality on Re(s)>1 identifies it with D_R; identity
+theorem/continuation excludes a pole at theta>1/2. The nonzero residue gives
+a contradiction. A log^4 bound is an even stronger sufficient hypothesis.
+
+Thus any all-R certificate of the proposed037 recurrence is impossible:
+the paid helper/recovery and divisor forcing would give that log^4 bound for
+f_2 as well. This is an actual arithmetic SOURCE-FAMILY counterexample to
+uniform-R inference, respecting038's all-N identities, unlike the earlier
+constant-sequence countermodel. It is NOT a counterexample to the correctly
+normalized original source, and gives no finite violating X without further
+work. Do not label it an RH refutation or a fixed-R impossibility theorem.
+
+5. Immediate executable source-pole guard
+
+The detector can extract each channel's zeta-product exponents from its factor
+AST: mu_shift contributes a denominator, power_shift contributes a numerator.
+Candidate positive poles are generated from numerator shifts, theta=1-shift.
+At a SIMPLE pole, remove the zeta(1) factor and compile its residue into a
+sparse Laurent polynomial/rational expression in named zeta constants and R.
+Collect the exact affine R expression, solve its cancellation condition, and
+compare it with the original supplied source-scalar definition. This discovers
+the required normalization from the source rather than importing a nominated
+winning auxiliary. Initial absolute domain and continuation scope are explicit.
+
+Independent checker requirements:
+ - reconstruct every zeta-product exponent, all signed weights and the unit;
+ - use only the initial absolute Euler identity, never ordinary convergence at
+   theta or an unproved critical coefficient moment;
+ - certify all inverse zeta constants nonzero before rational simplification;
+ - prove actual fixed-R residue zero by exact symbolic substitution, not by an
+   Arb interval that merely contains zero;
+ - prove a family witness nonzero by a strict rigorous enclosure;
+ - higher-order poles need the COMPLETE Laurent principal part; canceling only
+   its top coefficient does not prove removability;
+ - denominators and net zeta exponent cancellations occur before deciding pole
+   order; zeros introduced by inverse zeta(1) may remove a putative pole;
+ - negative/complex/zero arguments or unknown inverse zeros are separate
+   unsupported cases, never implicitly regular;
+ - root/actual-source flags stay false; holomorphy is a NECESSARY implication,
+   not a sufficient bound theorem when all visible poles cancel.
+
+Fixed-R specialization supplies a real missing source constraint. It still
+does not price finite remainder: analytic cancellation is not convergence of
+ordinary sums of mu(n)n^(-theta), and it is not a floor-prefix error estimate.
+The next multiplier engine must either represent and pay an admissible finite
+version of this normalization/cancellation, or report that bridge OPEN.
+
+6. Proposed certificate fields for actual multiplier search
+
+schema, source_binding, inherited_binding, admitted_relations, scalar_binding,
+source_pole_guard, parameter_domain, target_defect, forcing_provider,
+template_dictionary, unknowns, solution, nonnegative_gram_terms,
+zero_relation_multipliers, exact_residual, universal_rewrite_trace,
+endpoint_and_recovery, dependency_graph, finite_cone_failure, scope_flags.
+
+The domain names EVERY n,X,d,e and prime/cutoff variable, including integer
+floors and odd child endpoint. Constants are independent of X/cutoffs. RHS
+weight*prefix(K) is retained as an actual variable/explicit paid function.
+A generic positive kernel mean is not the actual finite K remainder.
+Forcing has its common horizon4X-1 and the exact global coefficient-square
+normalization. Core target and state bridge cannot be changed by the solver.
+
+After admitted all-scale recurrence, independently replay the finite head,
+dyadic induction, helper recovery and integer covering. Never apply original-F
+block covering to a moving-cutoff G without its crossing terms. OPEN nodes
+cannot precede PROVED conclusions; cycles through a desired endpoint are errors.
+
+7. Meaningful controls for a first finite-template implementation
+
+Positive control: an exact source-generated convolution prefix has relation
+Y=b with independently bounded RHS. Allow complete degree-one multiplier
+templates in Y and b; discovery of -(Y+b)*(Y-b)=b^2-Y^2 should establish the
+joined bound without separately pricing Y's summands. Hide rational state
+coordinates by independently generated invertible changes after generator
+freeze; do not supply the successful multiplier or storage basis. The actual
+mu*One=delta channel can test this signed-cancellation mechanism, while its
+convolved prefix is explicitly a different target from the full f prefix.
+Report implementation capability only, not a new core theorem.
+
+Positive kernel control: independently check the universal Cauchy Gram for
+random positive exact weights/domains with full d,e cross terms and all unit
+values. Random rational basis changes test actual multiplier coefficient
+selection, not a hardcoded square pattern.
+
+Negative controls: omit inhomogeneous RHS; truncate a complete d sum; change
+full state into prime profile; substitute a moving cutoff; drop child odd
+endpoint; change one signed mode/unit; count PSD alone as an upper bound; divide
+by an unproved kernel mass; use an OPEN price/cycle; fit one finite-N solution
+as universal; ignore a pole's lower Laurent terms; infer zero from ball overlap;
+classify R=2 family witness as actual-R counterexample; accept actual residue
+cancellation as sufficient full energy control.
+
+These controls do not provide an answer bank of successful actual-source
+auxiliaries. The actual target remains the complete original signed f and its
+preserved parent recovery, even when every finite-template trial fails.

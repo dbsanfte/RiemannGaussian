@@ -1,0 +1,103 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "actual_source_argument_closed": false,
+  "applications": 41,
+  "arguments": 48,
+  "auxiliary_exponent_advantage_over_unsigned": false,
+  "auxiliary_selection": [
+    {
+      "L_equals_U_power": "0",
+      "arithmetic_assumptions": 0,
+      "exponent": "6",
+      "leading_constant": "1/4",
+      "log_degree": 0,
+      "selected": 1
+    },
+    {
+      "L_equals_U_power": "1/2",
+      "arithmetic_assumptions": 0,
+      "exponent": "13/2",
+      "leading_constant": "1/4",
+      "log_degree": 0,
+      "selected": 1
+    },
+    {
+      "L_equals_U_power": "1",
+      "arithmetic_assumptions": 0,
+      "exponent": "7",
+      "leading_constant": "1/4",
+      "log_degree": 0,
+      "selected": 1
+    },
+    {
+      "L_equals_U_power": "2",
+      "arithmetic_assumptions": 0,
+      "exponent": "8",
+      "leading_constant": "1/4",
+      "log_degree": 0,
+      "selected": 1
+    },
+    {
+      "L_equals_U_power": "3",
+      "arithmetic_assumptions": 0,
+      "exponent": "9",
+      "leading_constant": "1/4",
+      "log_degree": 0,
+      "selected": 1
+    },
+    {
+      "L_equals_U_power": "6",
+      "arithmetic_assumptions": 0,
+      "exponent": "11",
+      "leading_constant": "3",
+      "log_degree": 1,
+      "selected": 12
+    }
+  ],
+  "development_operations": 294770,
+  "elapsed_seconds": 14.695821342989802,
+  "fitted_constants": 0,
+  "full_component_bound_proved": false,
+  "inclusive_operations": 6049399,
+  "inherited_source_bindings": 144,
+  "main_peak_rss_kib": 704032,
+  "open_frontier": [
+    {
+      "goal": {
+        "kind": "signed_convolution_mellin_bridge",
+        "m": 3,
+        "p": 2,
+        "required": {
+          "U_power": "12/5",
+          "constant": "C_low",
+          "log_degree": 0,
+          "quantifier": "every integer U>=1, one fixed finite C_low independent of U,X,N"
+        },
+        "sigma": "9/20",
+        "theta": "2/3"
+      },
+      "reason": "no_closed_argument_in_enabled_grammar"
+    },
+    {
+      "goal": {
+        "kind": "component_mellin",
+        "m": 3,
+        "p": 2,
+        "required": {
+          "U_power": "12/5",
+          "constant": "C_low",
+          "log_degree": 0,
+          "quantifier": "every integer U>=1, one fixed finite C_low independent of U,X,N"
+        },
+        "sigma": "9/20",
+        "theta": "2/3"
+      },
+      "reason": "no_closed_argument_in_enabled_grammar"
+    }
+  ],
+  "status": "BOUND_ARGUMENT_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 5754629,
+  "supplied_rules": "CORE_RATIONAL_CONDUCTOR_BOUND_REVIEW_030.txt",
+  "whole_signed_bound_proved": false
+}

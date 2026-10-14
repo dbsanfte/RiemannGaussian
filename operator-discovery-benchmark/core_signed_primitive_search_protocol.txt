@@ -1,0 +1,83 @@
+Exact signed discrete primitive discovery
+
+Input: candidate10_work_moment_proof_obligation.json, byte-identical to the
+verified preceding publication. Full signed core stays priority zero. This
+stage attacks the original cumulative joined-work goal, every integer cutoff,
+using a common height window and the preserved paid change-of-window rule.
+It does not establish a sum of absolute group works or one of the252 Gram
+bounds merely by controlling the absolute value of the complete signed sum.
+
+Source and generated primitive grammar
+Canonicalize the complete joined polynomial x*W1+x^2*W2 with v=1 and
+E=1+z(c-A), retaining every conjugate and exact signed coefficient. Use
+x^3=x. The state increments are A:+x*b, Abar:+x*bbar, c:+x*a, D:+b,
+Dbar:+bbar; z,zbar are fixed. D changes even when mu=0. State at cutoff1
+is A=Abar=c=D=Dbar=1; invariant zeta factors are not set to1.
+
+Infer potential monomials by reversing one declared increment inside each
+source monomial, admitting the result only when all remaining factors are
+state or invariant symbols. Close under conjugation. The basis is m+mbar
+for a nonreal monomial, m for a real monomial, with rational coefficients.
+No target-energy potential or its coefficients are inserted by hand. This
+finite source-inferred dictionary is a declared limitation of the search.
+
+Compute every full DeltaF under the SAME state transition and ternary
+relation, including all higher increment terms. Never treat current a,b
+as fixed potential coefficients. An exact result is W=DeltaF+R. At fixed
+height and measure, its signed cumulative sum telescopes to
+F(state_V)-F(state_1)+sumR. The complete common window H=2(2B)^(45/2) is
+held fixed for every q; varying original masks are recovered separately.
+
+Uniform proof and rational feasibility search
+Use the independently verified parent height library without recomputing
+its passed proof searches. Every used zeta power retains its own cost, with
+outer zeta weight and |s|^-2 once, compact heights, epsilon and logs. The
+source reciprocal bound |c_N|<=2 follows for actual mu from
+N*c_N=1+sum_(d<=N)mu(d)*{N/d}; it is not a sampled or prime-truncated bound.
+Other state majorants are |A|,|D|<=U^(1-sigma)/(1-sigma), 0<sigma<1.
+
+For each potential basis element, calculate the endpoint cost of F-F(unit),
+including the moment cost of the unit polynomial on the growing window.
+For each residual monomial, calculate its complete q-sum and height cost.
+Sum_q q^r costs B^max(r+1,0), with a log at r=-1. Endpoints have no q-sum
+factor. Costs retain exact rational exponents and logarithmic degrees.
+
+Enumerate every distinct endpoint/residual cost threshold, the requested
+threshold and zero. At a threshold admit only basis columns whose endpoint
+cost fits, and require all residual monomials with larger costs to vanish.
+Solve these coefficient equations over rationals. A feasible certificate
+contains its potential coefficients; an infeasible certificate is a complete
+left-null combination y with y*M=0 and y*source nonzero. The independent
+checker reconstructs every column and verifies these witnesses directly.
+Select the smallest feasible cost and price its full endpoint and remainder.
+
+Separately attempt to cancel every row containing x using all columns. This
+shows exact telescoping possibilities even when their endpoints are too large.
+After discovery compare the endpoint to the original energy; mark an exact
+restatement explicitly. Neither this comparison nor an unknown energy bound
+participates in the coefficient solve or an available payment provider.
+
+Infeasibility concerns ONLY this finite dictionary with these endpoint and
+residual absolute majorants. It does not lower-bound actual signed work,
+refute its requested bound, exclude other primitives, or establish RH.
+Negative residual signs are retained but this initial backend uses absolute
+residual costs; a future one-sided sign rule must be independently proved.
+The prime-filtered bounded-state extension in Review029 is not implemented
+in this study. It remains a concrete possible grammar extension.
+
+Development, preservation and limits
+Run each owner's new development suite once, retaining all failures and
+using only affected checks after changes. Do not rerun unchanged old suites.
+Generic calibrations include rational polynomials h in work x*a*h(c), the
+complex/Hermitian transition, ternary powers, nonzero unit and mu0 heads,
+fractional contour exponents, infeasible duals and endpoint restatements.
+No finite actual arithmetic samples enter the proof search.
+
+Freeze source, protocol, reviews, receipts and exact input before the actual
+run. One producer execution followed by the dependent independent verifier.
+Budget:1b operations including development,900seconds,4GiB main memory,
+within the user-authorized16GiB. Reuse shared columns within each solve.
+Keep complete proof witnesses, all original targets, source/drift bindings
+and every inherited alternative. Publish only after exact source/feedback
+verification. Preserve terminal failures and never restart an unchanged
+completed study. No precautionary hashes or runtime model calls.

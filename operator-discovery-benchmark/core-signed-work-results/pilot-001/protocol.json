@@ -1,0 +1,353 @@
+{
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "all_scale_signed_control_proved": false,
+  "all_source_crosses_and_units": true,
+  "all_vectors": [
+    "core",
+    "F",
+    "log_prefix",
+    "mode:nu0",
+    "mode:nu1",
+    "mode:nu2",
+    "mode:mu",
+    "prefix:nu0",
+    "prefix:nu1",
+    "prefix:nu2",
+    "prefix:mu"
+  ],
+  "constant_fit": "integer ceil of5/4 times maximum nonnegative signed training ratio; no validation/final refit",
+  "development": {
+    "core_signed_work_checker_development.json": {
+      "operations": 75005,
+      "runs": [
+        {
+          "actual_source_max_horizon": 31,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_signed_work"
+          ],
+          "elapsed_seconds": 0.08036720802192576,
+          "operations": 75005,
+          "receipt_lines": 1,
+          "returncode": 0,
+          "stderr": "test_conditional_history_and_paid_inverse_scope (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_finite_unit_head_and_full_support (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_fractional_delay_complete_log_bank (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_full_prime_power_logbank_and_tamper (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_signed_recurrence_zero_forcing_and_open_base (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_signed_work_not_energy_and_irregular_full_block (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_source_complete_local_rows_and_units (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_strict_program_and_precision_schema (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_weak_reference_retains_signed_parent_and_domain (test_check_core_signed_work.SignedWorkTests) ... ok\ntest_whole_integral_weights_and_cache_accounting (test_check_core_signed_work.SignedWorkTests) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.011s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_signed_work operations=75005\n",
+          "synthetic_max_horizon": 127
+        }
+      ]
+    },
+    "core_signed_work_producer_development.json": {
+      "module": "test_core_signed_work",
+      "operations": 3232442,
+      "runs": [
+        {
+          "elapsed_seconds": 0.18070523400092497,
+          "operations": 1090714,
+          "returncode": 1,
+          "stderr": "...F\n======================================================================\nFAIL: test_streamed_signed_crosses_match_exact_literal_cells (test_core_signed_work.SignedWorkTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_core_signed_work.py\", line 66, in test_streamed_signed_crosses_match_exact_literal_cells\n    if sign==0:self.assertTrue(P.measure(p,1,t,m)['work']<0)\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 4 tests in 0.104s\n\nFAILED (failures=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_signed_work operations=1090714\n"
+        },
+        {
+          "elapsed_seconds": 0.1366707840061281,
+          "operations": 2141728,
+          "returncode": 0,
+          "scope": "affected signed-cell test after correcting zero-unit synthetic fixture",
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.056s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_signed_work operations=2141728\n"
+        }
+      ]
+    }
+  },
+  "discovery_horizon": 262143,
+  "final": [
+    65536,
+    98304,
+    131072
+  ],
+  "final_fresh_child": "[262144,524288), from final dyadic parent131072",
+  "finite_head": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "gates_before_source_responses": [
+    "critical pole minimum degree after signed history recovery",
+    "paid delay inverse"
+  ],
+  "grammar": {
+    "etas": [
+      "0",
+      "-1",
+      "-1/2",
+      "1/3",
+      "1/2",
+      "2/3",
+      "1",
+      "3/2",
+      "2"
+    ],
+    "forcing_log_powers": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "preadmitted_hypotheses": 567,
+    "program_count": 117,
+    "raw_hypotheses": 1170,
+    "rhos": [
+      "1/2",
+      "1"
+    ],
+    "target_filters": "13 full signed sixth-exponent delays"
+  },
+  "hashes": false,
+  "irregular_probe": "parent98304 is outside the dyadic theorem domain",
+  "main_cap": 750000000,
+  "main_seconds": 14400,
+  "metadata_reserve": 4000000,
+  "models_in_generator_or_selection": false,
+  "observable": "complete signed shell W_eta=(1-eta)*N_G+eta*integral G B_G/(x^2 log x)",
+  "parent": {
+    "RH_proved": false,
+    "all_scale_signed_control_proved": false,
+    "allowed_unproved_examples": [
+      {
+        "gamma": "0",
+        "log_power": 1,
+        "rho": "1"
+      },
+      {
+        "gamma": "0",
+        "log_power": 2,
+        "rho": "1/2"
+      }
+    ],
+    "completed_search": "core-bound-results/pilot-001/report.json",
+    "fresh_data_policy": "all prefixes through262143 and all final scores are now observed; a subsequent final test needs a new declared range",
+    "grammar_extension": "include forcing log power2 for strict contractions; retain rho1/logpower1 and fractional weights",
+    "next_priority": "generate signed recurrence/auxiliary proofs obeying the necessary pole degree; fixed finite fits do not discharge the all-scale increment",
+    "pole_constraint": {
+      "certified_filters": [
+        {
+          "kind": "delay",
+          "sign": 0,
+          "theta": "0"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "0"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "0"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "1/6"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "1/6"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "1/3"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "1/3"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "1/2"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "1/2"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "2/3"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "2/3"
+        },
+        {
+          "kind": "delay",
+          "sign": 1,
+          "theta": "5/6"
+        },
+        {
+          "kind": "delay",
+          "sign": -1,
+          "theta": "5/6"
+        },
+        {
+          "cutoff": 64,
+          "kind": "log_abel"
+        }
+      ],
+      "minimum_log_degree": 2,
+      "rho_below_one_minimum_forcing_log_power": 2,
+      "rho_equal_one_minimum_forcing_log_power": 1,
+      "scope": "gamma=0; nonnegative auxiliary storage dominating E_G",
+      "source_pole_order": 2
+    },
+    "preselection_gate": "core_pole_growth_obstruction.gate",
+    "prior_input": "candidate10_joint_preconditioner_obligation.json",
+    "proof_rules_available": [
+      "nonnegative square domination",
+      "conditional dyadic induction",
+      "bounded/polylog recovery",
+      "uniform weak absolute reference",
+      "retained critical pole minimum-log-degree rejection"
+    ],
+    "rejected_selected_obligations": [
+      {
+        "program_id": 6152,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1538,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 9997,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 423,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1734,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 294,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 2118,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 2022,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 2214,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1683,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1542,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1590,
+        "status": "analytic_countercertificate"
+      },
+      {
+        "program_id": 1638,
+        "status": "analytic_countercertificate"
+      }
+    ],
+    "required_execution_order": [
+      "generate expression and recurrence shapes",
+      "apply certified pole and recovery gates",
+      "evaluate/rank admitted conjectures",
+      "freeze choices and constants",
+      "evaluate genuinely fresh scales",
+      "attempt proof"
+    ],
+    "schema": "pole-admitted-core-bound-obligations-v1",
+    "search_language": "core_bound_synthesis.py",
+    "sharper_log_abel_recovery": "same block log degree, with explicit finite head and bounded floor discrepancy; review006",
+    "status": "open",
+    "target": {
+      "equivalent_goal": "||F||_sigma<infinity for every sigma>1/2, or its cofinal dyadic moment",
+      "expression": "F(x)=sum_(n<=x) f(n), complete signed four-mode core",
+      "open_sectors": [
+        "unsuppressed nu0 tensor nu0 below rho=1/3",
+        "all first valuations and remaining common-prime interactions",
+        "joint signed cross terms after any paid union decomposition"
+      ],
+      "separately_bounding_modes_required": false,
+      "uniformity": "all dyadic scales; constants may depend on epsilon/sigma, not on X or omitted primes",
+      "whole_signed_bound_proved": false
+    },
+    "whole_signed_bound_proved": false,
+    "witness": "core-bound-results/pilot-001/pole-feedback-001/pole_witness.json"
+  },
+  "per_process_memory": 4294967296,
+  "ranking": [
+    "finite failure count",
+    "conditional full-core log degree",
+    "expression complexity",
+    "program ordinal",
+    "rho",
+    "forcing degree"
+  ],
+  "required_bound": "W_eta(2X)<=rho W_eta(X)+C(1+log2X)^k for every dyadic X>=1024",
+  "schema": "core-signed-work-search-v1",
+  "selection": "best admitted per eta plus an eta1 critical-delay lane; deduplicate; freeze before new source",
+  "signed_work_methods": [
+    "stream12 complete moment sums, E1 cell integrals",
+    "literal scalar cells, Ei integrals"
+  ],
+  "source_bank": "independent all-prime-power coefficient/prefix identity for every n throughH",
+  "source_horizon": 524287,
+  "source_methods": [
+    "complete prime-local Euler coefficients",
+    "independent complete direct Mobius convolutions"
+  ],
+  "total_operations_limit": 4000000000,
+  "training": [
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "validation": [
+    32768,
+    65536
+  ],
+  "whole_signed_bound_proved": false,
+  "worker_caps": {
+    "checker": 1600000000,
+    "producer": 800000000
+  },
+  "worker_seconds": 3600,
+  "workers": 2,
+  "zero_constant_gate": "after training, C0 implies bounded work and is rejected before ranking"
+}

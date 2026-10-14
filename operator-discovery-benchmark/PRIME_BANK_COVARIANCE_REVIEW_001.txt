@@ -1,0 +1,486 @@
+COMPLETE PRIME BANKS: PAID BRANCHES, CUTOFF TRANSPORT, AND THE OPEN COVARIANCE
+
+Scope and outcome
+-----------------
+This is a new pure analytical review of candidate10_prime_bank_obligation.json.
+It preserves all frozen code, results and previous analytical files. I read
+OBSTRUCTION_AUXILIARY_ANALYTIC_REVIEW_001.txt and
+prime_bank_uniform_attempt_001.txt to avoid repeating a norm-only or past-only
+argument. No arithmetic run, numerical response evaluation, test, hash, or
+parameter search was performed. The source is actual mu throughout.
+
+No closed all-scale signed recurrence is obtained. Several concrete reductions
+are proved, however:
+  * the existing Chebyshev trace removes the logarithm from the full weighted
+    branch envelope, with explicit constants and an empty small-x range;
+  * theta=3/4 makes the entire v branch bounded dyadic-energy padding;
+    theta>3/4 gives finite critical norm;
+  * all changing-cutoff terms cancel jointly except a paid v-weighted term;
+  * an entire small-index component of K is paid independently of RH;
+  * the companion difference has a stronger no-log-cofactor bound, yielding
+    finite critical norm for its v-bank even at theta=3/4;
+  * the complete integer covariance kernel restricts K/bank overlap to a
+    new prime strictly greater than every prime of the smooth coefficient.
+The remaining obligation is an explicit high-smooth/cofactor source correlation,
+with full bank-bank and mainterm covariances retained. Finite Abelian zeros at
+one do not supply the needed finite-prefix rate. No RH theorem is claimed.
+
+1. Fixed arithmetic, domains, and coefficient envelopes
+------------------------------------------------------
+Keep u=1/3, v=2/3, beta=9/2, and
+  a_b=mu*(n^(-b)), h_b=(a_b-delta)/b,
+  p=h_u*h_v, a=p-d,
+where d is the COMPLETE same-prime prime-power overlap. Prefixes use inclusive
+real endpoints and vanish below one. The reduced original target is
+  R(x)=sum_(n<=x)a(n)-m_u x^(2/3).
+The frozen centered candidate equals R+D-m_v x^(1/3); those two complete
+components already have paid critical-norm costs. They are not removed from
+the frozen program or its output.
+
+Let d_2(n) be the divisor count. Actual local a_b prime-power coefficients are
+nonpositive with complete absolute mass one, so |a_b(n)|<=1. Therefore
+  |p(n)|<=beta*d_2(n).
+Every coefficient at a prime power belongs to the same-prime branch, hence
+  a(1)=a(p^e)=0 for every prime p and e>=1.
+Away from prime powers a=p. Thus |a|<=beta*d_2 is valid; the previous, more
+conservative |a|<=2*beta*d_2 also remains valid and is used in the component
+constants below. No pointwise divisor bound is imported from data.
+
+For k>=2 define
+  z_u(k)=p(k)+beta*a_v(k),
+  z_v(k)=p(k)+beta*a_u(k),
+  z_0(k)=z_u(k)+z_v(k),
+  Delta(k)=z_u(k)-z_v(k)=beta*[a_v(k)-a_u(k)].       (1.1)
+All these transfer sequences are ZERO at k=1. The naive displayed formulas
+involving a_b(1)=1 must not reinstate a unit bank term. Safely,
+  |z_u|,|z_v|<=2*beta*d_2,
+  |z_0|<=4*beta*d_2,
+  |Delta|<=2*beta.
+
+For a prime q not dividing k>1, actual multiplicativity gives
+  a(qk)=-z_0(k)+q^(-u)z_u(k)+q^(-v)z_v(k).         (1.2)
+It holds because qk has at least two distinct primes, so d(qk)=0. It must
+not be applied to k=1: a(q)=0, and the unit corrections have already been
+removed by zero extension of the transfer sequences.
+
+Let theta be rational with 1/2<=theta<1, Y=x^theta and M=floor(x/Y).
+For x>=1 define
+  Pi_b(x,k)=sum_(Y<q<=x/k, q prime)q^(-b),
+  L_b(x)=sum_(2<=k<=M)z_b(k)Pi_b(x,k), b=0,u,v,
+  K_theta(x)=sum_(2<=h<=x,Pplus(h)<=Y)a(h).
+The roots here are positive REAL powers and the prime cutoff is strict on
+the bank side. For every large prime q>Y, q^2>x and k<=x/q<q; the cofactor
+is coprime to q automatically. Every coefficient is partitioned exactly:
+  R=K_theta-L_0+L_u+L_v-m_u x^(2/3),
+  R_new,theta=K_theta-L_0+L_u-m_u x^(2/3),
+  R=R_new,theta+L_v.                              (1.3)
+Every repeated-prime and smooth-number term remains in K. At theta=1/2 the
+strict q>sqrt(x) condition still makes this argument valid. At theta>=1
+all banks are empty and K is the full coefficient prefix; that case is an
+exact empty-bank representation, not a better signed estimate.
+
+2. Exact unconditional prime input, with a standalone fallback
+-------------------------------------------------------------
+The existing all-real estimate is
+  psi(t)=sum_(p^e<=t)log p <= C_psi*t, t>=1.
+Its repository proof is prime_discrepancy_proof.txt, section 1, equations
+(1)--(4) and the finite-head paragraph immediately after (4). It derives
+the estimate from the factorial trace and a universal periodic-floor
+certificate. prime_twist_proof.txt, Scope and section 2, inherits and uses
+this same proved C_psi. No PNT, RH, or unproved prime-error estimate is used
+below. C_psi can be the existing certified all-scale constant.
+
+For complete self-contained validity, C_psi=4*log 2 is also an elementary
+fallback without computing any source values. For an integer N>=1,
+  psi(2N)-psi(N)<=log binom(2N,N)<=2N log 2.
+Indeed each prime-power index in (N,2N] contributes one to its prime's
+valuation of the central binomial coefficient, and all other valuation
+summands are nonnegative. Sum this at N=2^(j-1) to obtain
+  psi(2^j)<=(2^(j+1)-2)log 2.
+For 2^(j-1)<t<=2^j, monotonicity gives psi(t)<=4(log 2)t. The t=1 head
+is zero. This is a symbolic factorial proof, not an arithmetic experiment.
+
+Write Theta_prime(t)=sum_(q<=t,q prime)log q<=psi(t). Partial summation gives,
+for 0<b<1 and T>=1,
+  sum_(q<=T)log(q)q^(-b)
+    =Theta_prime(T)T^(-b)
+       +b integral_1^T Theta_prime(t)t^(-b-1)dt
+    <=[C_psi/(1-b)]T^(1-b).                       (2.1)
+For x>1 every bank prime has log q>theta log x, hence
+  Pi_b(x,k)<=[C_psi/(theta*(1-b)*log x)](x/k)^(1-b).              (2.2)
+This is the source of the logarithmic prime-count saving. It applies to
+the whole declared bank, not only its newest members.
+
+3. Safe general branch power rule and all endpoints
+---------------------------------------------------
+Consider any transfer sequence f, zero at one, satisfying |f(k)|<=C*d_2(k),
+and its full b-weighted bank B_f,b(x)=sum_(2<=k<=M)f(k)Pi_b(x,k).
+Ordered divisor counting and the decreasing-integral bound give
+  sum_(k<=M)d_2(k)k^(b-1)
+    <=(M^b/b)sum_(r<=M)1/r
+    <=M^b(1+log M)/b.                             (3.1)
+Combining (2.2), (3.1), M<=x^(1-theta), and log M<=(1-theta)log x gives
+  |B_f,b(x)|
+    <=[C*C_psi/(b*(1-b)*theta)]x^(1-b*theta)
+                                      *[1/log x+(1-theta)].     (3.2)
+The bank is EMPTY for
+  1<=x<=x_0(theta):=2^(1/(1-theta)).
+Below that value M<2. At equality M=2, but its only possible interval
+requires x^theta<q<=x/2=x^theta, so it is empty too. Thus for every
+nonempty bank log x>log 2/(1-theta), and uniformly for ALL x>=1,
+  |B_f,b(x)|<=A_b,theta*x^(1-b*theta),
+  A_b,theta=
+    C*C_psi*(1-theta)*(1+1/log 2)/[b*(1-b)*theta].                 (3.3)
+For empty banks the bound is automatic, including x=1 where (3.2) is
+not used. It is safe for every 0<b<1 and 1/2<=theta<1. At theta>=1 use
+the exact zero bank rule instead of the expression in (3.3).
+
+The older integer-envelope rule also remains valid independently of the
+Chebyshev saving:
+  |B_f,b(x)|<=C/[b*(1-b)]*x^(1-b*theta)
+                                  *[1+(1-theta)log x].          (3.4)
+The compiler may keep both derivations. The no-log rule is an optional
+proved improvement, not a numerical fit. There is no b=0 limit to (3.3);
+the unweighted bank needs its own rule, and no critical envelope for it
+is supplied here.
+
+Put alpha=1-b*theta. For every integer dyadic X>=1, (3.3) implies
+  E_(B_f,b)(X)<=2^(2alpha)*A_b,theta^2*X^(2alpha-1).               (3.5)
+For b*theta>1/2 the critical integral is finite, with the safe cost
+  ||B_f,b||_crit^2
+    :=integral_1^infinity |B_f,b(x)|^2/x^2 dx
+    <=A_b,theta^2/(2b*theta-1).                   (3.6)
+At b*theta=1/2 the block energy is at most 2*A_b,theta^2, hence is cofinal
+padding with NO logarithmic loss. Equation (3.3) alone does not prove a
+finite critical integral at this endpoint. For b*theta<1/2, it leaves the
+positive energy exponent 1-2b*theta; that is not cofinal padding.
+
+For the full L_v use C=2*beta, b=2/3. At theta=3/4,
+  A_v,3/4=3*beta*C_psi*(1+1/log 2),
+  |L_v(x)|<=A_v,3/4*sqrt(x),
+  E_Lv(X)<=2*A_v,3/4^2.                            (3.7)
+The bank is empty through x=16. With the standalone C_psi=4 log 2,
+A_v,3/4=12*beta*(1+log 2). These are exact analytic constants.
+At theta=5/6,
+  A_v,5/6=(9/5)*beta*C_psi*(1+1/log 2),
+  |L_v(x)|<=A_v,5/6*x^(4/9),
+  ||L_v||_crit^2<=9*A_v,5/6^2.                    (3.8)
+This strengthens the older log-containing envelope but leaves its existing
+certificate valid. All mixed terms with L_v are kept in the exact square;
+both-direction Young/triangle bounds pay them with these costs.
+
+4. Joint channel identities and one stronger companion component
+---------------------------------------------------------------
+For k>=2, z_0=z_u+z_v and Delta=z_u-z_v. Therefore the FULL bank combination
+can also be written
+  -L_0+L_u+L_v
+    =-(1/2)sum_k z_0(k)[2Pi_0-Pi_u-Pi_v]
+       +(1/2)sum_k Delta(k)[Pi_u-Pi_v].            (4.1)
+The common and difference channels have different arithmetic content.
+The positive weights in (4.1) do not give a sign to z_0 or Delta.
+After the v peel the exact remaining expression is
+  R_new=K_theta-sum_k z_0(k)[Pi_0-(1/2)Pi_u]
+                  +(1/2)sum_k Delta(k)Pi_u-m_u x^(2/3).         (4.2)
+Neither channel can be discarded. In particular eliminating p from Delta
+does not eliminate the unresolved common-channel bank.
+
+There is a genuine companion improvement without any missing cancellation.
+Let g(n)=n^(-u)-n^(-v)>=0, g(1)=0. Then
+  Delta=-beta*(mu*g),
+  G:=sum_n g(n)/n=zeta(1+u)-zeta(1+v)>0.
+This series converges absolutely. For every 0<b<1,
+  sum_(k<=M)|Delta(k)|k^(b-1)
+    <=beta sum_(d<=M)g(d)d^(b-1)
+                             sum_(r<=M/d)r^(b-1)
+    <=(beta/b)M^b G.                              (4.3)
+This removes the divisor-count logarithm before the prime saving. Thus
+  |B_Delta,b(x)|<=D_b,theta*x^(1-b*theta)/log x,
+  D_b,theta=beta*C_psi*G/[b*(1-b)*theta],          (4.4)
+for x>x_0(theta), and the bank is zero before then. It gives a logarithmic
+gain beyond the single-branch no-log envelope. At b=2/3, theta=3/4,
+  ||B_Delta,v||_crit^2
+       <=(6*beta*C_psi*G)^2/log 16.               (4.5)
+So the DIFFERENCE part of the endpoint v bank has finite critical norm;
+the entire endpoint L_v has only the bounded-block conclusion (3.7)
+from the proved bounds. The remaining u-weighted difference still has
+pointwise exponent 1-theta/3>1/2 for theta<1. The gain does not by itself
+peel that term or establish the full target.
+
+A finite signed harmonic bound is also legitimate here. Actual divisor
+inversion gives sum_(d<=y)mu(d)floor(y/d)=1. Hence
+  |sum_(d<=y)mu(d)/d|<=1+1/y<=2,
+and the finite convolution for Delta yields
+  |sum_(2<=k<=M)Delta(k)/k|<=2*beta*G.             (4.6)
+This is a proved finite-prefix statement. It is a bounded harmonic
+component, not a decay rate, square-root prefix bound, or a proof that
+its weighted bank mean vanishes at a useful rate.
+
+5. Paid smooth-sector reduction and its precise limitation
+---------------------------------------------------------
+For any 0<r<=1/2 and theta>=1/2, all h<=x^r automatically satisfy
+Pplus(h)<=h<=x^theta. Therefore K contains the ENTIRE component
+  K_small,r(x)=sum_(2<=h<=x^r)a(h).
+Using the conservative envelope |a|<=2*beta*d_2 and divisor counting,
+  |K_small,r(x)|<=2*beta*x^r(1+r log x).           (5.1)
+For r<1/2 it has the explicit finite critical cost
+  ||K_small,r||_crit^2
+    <=(2*beta)^2*[1/(1-2r)+2r/(1-2r)^2
+                                      +2r^2/(1-2r)^3].         (5.2)
+For r=1/2 its integer block energy is at most
+  8*beta^2*(1+(1/2)log(2X))^2,
+which is cofinal log padding, not a finite-critical conclusion.
+
+Choosing r=1-theta is natural because it includes every possible bank
+cofactor. For theta=5/6 its critical cost in (5.2) is 39*beta^2/4;
+for theta=3/4 it is 20*beta^2. These are exact symbolic evaluations of
+the integral, not actual-source calculations. Thus K can be replaced
+in the proof obligation by its complete high-index smooth complement,
+with K_small paid in both directions and its mixed terms retained.
+
+Choosing r=1/2 exposes a sharper pairing obstruction: every retained
+smooth coefficient h>sqrt(x) and every bank prime q>x^theta>=sqrt(x)
+satisfy qh>x. A naive prime-multiplication pairing of these coefficients
+therefore leaves the original pointwise coefficient prefix. An argument
+may use a larger source domain, but must retain its whole outside-domain
+complement and its endpoint costs. The new component bound is not a
+norm-only proof of the high smooth sector; that sector still has large
+indices and cannot be controlled by small-cofactor moments alone.
+
+6. Exact changing-cutoff cancellation, with every old/fresh boundary
+-------------------------------------------------------------------
+First fix x and two cutoffs sqrt(x)<=Y_1<Y_2. Define K(x;Y), L_b(x;Y)
+with that cutoff, and
+  J_b(x;Y_1,Y_2)
+    =sum_(Y_1<q<=Y_2,q prime)q^(-b)
+                               sum_(2<=k<=x/q)z_b(k).           (6.1)
+Empty cofactor ranges are zero. Every newly smooth coefficient has unique
+largest prime q in this interval, to exponent one. Thus the full source
+law, including all cofactors, proves
+  K(x;Y_2)-K(x;Y_1)=-J_0+J_u+J_v,
+  L_b(x;Y_1)-L_b(x;Y_2)=J_b.                     (6.2)
+Consequently, with the main unchanged,
+  R_new(x;Y_2)-R_new(x;Y_1)=J_v.                 (6.3)
+The large unweighted and u-weighted entry corrections cancel JOINTLY.
+They were not dropped or independently declared small. At cutoffs
+Y_1=x^(theta_1), theta_1>=3/4, the absolute bound for J_v is at most
+the full absolute envelope proved for L_v with that lower cutoff.
+For theta_1>3/4 it is finite-critical; at theta_1=3/4 it is bounded-block
+padding. Thus admitted theta choices in this range are equivalent proof
+representations modulo a paid component. Increasing theta shifts burden
+into K; it is not a new cancellation mechanism by itself.
+
+For dyadic transport x->2x, let Y=x^theta, Y'=(2x)^theta and retain the
+old coefficient prefix h<=x separately. Its gained smooth terms are
+  G_old=sum_(h<=x,Y<Pplus(h)<=Y')a(h)
+       =-J_0,old+J_u,old+J_v,old,
+where J_b,old is (6.1) at the parent x. This is valid already from
+Y>=sqrt(x), including theta=1/2. The new bank difference is EXACTLY
+  L_b(2x;Y')-L_b(x;Y)
+    =F_b,new-J_b,old,
+  F_b,new=sum_(q>Y',x<qk<=2x,k>=2)q^(-b)z_b(k).   (6.4)
+The child cutoff guarantees uniqueness in F_b,new. Let
+  K_fresh=sum_(x<h<=2x,Pplus(h)<=Y')a(h).
+Then the complete reduced transport is
+  R_new(2x)-R_new(x)
+    =K_fresh-F_0,new+F_u,new
+       -m_u[(2x)^(2/3)-x^(2/3)]+J_v,old.          (6.5)
+For the full R, F_v,new is added and J_v,old cancels against the change
+of L_v, leaving the exact full fresh coefficient sum. Equations (6.4)-(6.5)
+retain old-bank gains, newly born domains, unit exclusion and every main
+increment. J_v,old is paid by the parent branch envelope; the analogous
+absolute bound for F_v,new follows from the complete child envelope.
+
+What remains unresolved in (6.5) is the joint F_0/F_u/K_fresh signed
+transport, including its covariance with the parent when squared. The
+old-cutoff cancellation supplies no bound for that fresh low-frequency
+mode. The previous within-pair and smoothing lemmas still do not imply
+the missing negative credit.
+
+7. Full integer covariance kernels and the coprime support reduction
+-------------------------------------------------------------------
+For rational theta>0 define the exact integer threshold
+  B_theta(q)=ceil(q^(1/theta)),
+equivalently the least integer N with N^theta>=q. At rational theta=A/B,
+the comparison is the exact integer N^A>=q^B; floating root rounding is
+unnecessary. A prime q is a bank prime at integer n exactly when
+  n<B_theta(q).
+The equality boundary belongs to the smooth side. For a coefficient
+h>=2 set
+  A_theta(h)=max(h,B_theta(Pplus(h))).
+Then its K contribution is active exactly for integer n>=A_theta(h).
+
+For a dyadic integer X, coefficient h>=2, cofactor k>=2 and prime q,
+the COMPLETE K/bank intersection count is
+  I_(X,theta)(h;q,k)
+    =max(0,min(2X,B_theta(q))-max(X,A_theta(h),qk)).                (7.1)
+Every endpoint is integer. It counts n in [X,2X) satisfying simultaneously
+h<=n, Pplus(h)<=n^theta, qk<=n, and q>n^theta. It includes moving-cutoff
+entry boundaries; there is no unsupported common-domain replacement.
+Thus exactly
+  <K,L_b>_X
+    =X^(-2)sum_(h>=2,k>=2,q prime)
+                   a(h)z_b(k)q^(-b)I_(X,theta)(h;q,k).           (7.2)
+The finite kernel automatically kills indices outside the block horizon.
+No k=1 term is admitted. If the small-index K peel is used, add its exact
+activation restriction rather than dropping its covariance by sign.
+
+If I is positive, some counted integer n satisfies
+  Pplus(h)<=n^theta<q.
+Therefore q>Pplus(h), and q does NOT divide h. This proves the coprime
+support reduction from the actual positive intersection, rather than
+assuming coprimality from a formal label. The same-largest-prime diagonal
+q=Pplus(h), and every q<Pplus(h), is exactly zero. Also
+  k<=n/q<n^(1-theta)<=n^theta<q,
+so q does not divide k. The source pair retains every possible overlap
+between h and k; gcd(h,k)=1 is NOT implied. A generator may partition
+that overlap, but must retain its other sector.
+
+The complete bank/bank count is
+  J_(X,theta)(q,k;r,l)
+    =max(0,min(2X,B_theta(q),B_theta(r))
+                                      -max(X,qk,rl)),            (7.3)
+and
+  <L_b,L_c>_X
+    =X^(-2)sum_(q,r prime,k,l>=2)
+          z_b(k)z_c(l)q^(-b)r^(-c)J_(X,theta)(q,k;r,l).          (7.4)
+For a positive count BOTH large primes exceed BOTH cofactors: k,l<=
+n^(1-theta)<=n^theta<min(q,r). Hence both primes are coprime to both
+cofactors. The q=r common-prime sector and q!=r sector are both retained;
+there is no independence or cancellation assertion for either.
+
+For completeness the K/K count is
+  max(0,2X-max(X,A_theta(h),A_theta(g))),
+and the K/main or bank/main kernels replace the count on their exact
+intersection interval by the sum of n^(2/3) on that interval. The main
+square is m_u^2*X^(-2)sum_(X<=n<2X)n^(4/3). These retain the main as a
+separate atom; putting it inside K must not conceal its mixed costs.
+
+The root's five-atom representation
+  (K,-L_0,L_u,L_v,-m_u*n^(2/3))
+therefore has a complete explicit Gram interpretation. After the paid
+L_v peel, four atoms remain. Equations (7.1)-(7.4) are a substantive
+source-domain reduction of the cross kernels, not a proof of their sign
+or size. They expose a distinct-next-prime/smooth-coefficient correlation
+with source overlap h,k still present; this can be the next named AST
+obligation without merely copying the total target square.
+
+8. Finite Abelian zeros versus actual finite-prefix remainders
+-------------------------------------------------------------
+Let D_b(s)=zeta(s+b)/zeta(s) and P(s)=H_u(s)H_v(s). Over k>=2,
+  Z_u(s)=beta*D_u(s)[D_v(s)-1],
+  Z_v(s)=beta*D_v(s)[D_u(s)-1],
+  Z_0=Z_u+Z_v,
+  Z_Delta=beta*(D_v-D_u).                         (8.1)
+They are first Dirichlet identities on Re(s)>1, then analytic continuations.
+All have analytic value zero at s=1 because D_u(1)=D_v(1)=0. Their
+derivatives need not be zero: this is not an unlimited vanishing-moment
+certificate. In particular (8.1) alone neither proves ordinary convergence
+of sum z(k)/k nor a rate for its finite prefixes.
+
+There is a safe exact way to expose the missing terms. For any eta>0,
+  H_z(M):=sum_(2<=k<=M)z(k)/k
+    =Z(1+eta)
+       +sum_(2<=k<=M)z(k)/k*[1-k^(-eta)]
+       -sum_(k>M)z(k)/k^(1+eta).                  (8.2)
+The last series is absolutely convergent. If |z|<=C*d_2, elementary bounds
+give
+  |finite correction|<=C*eta*(1+log M)^3,
+  |last tail|<=C*(1+eta)*M^(-eta)
+                         *[(1+log M)/eta+1/eta^2].              (8.3)
+The tail bound follows by partial summation of
+sum_(k<=t)d_2(k)<=t(1+log t). Taking eta to zero removes Z(1+eta), but
+does not justify removing either remainder. No useful signed rate follows
+by replacing these finite prefixes with the analytic value zero.
+The bounded finite Delta harmonic statement (4.6) is separately proved
+and can be used; it still supplies no decay.
+
+The exact smaller-cofactor representation is
+  L_b(x)=sum_(q>x^theta,q prime)q^(-b)
+                                     F_zb(floor(x/q)),
+  F_zb(t)=sum_(2<=k<=t)z_b(k).                    (8.4)
+Its finite Abel expansion retains
+  F_zb(M)Pi_b(x,M)
+    +sum_(k=2)^(M-1)F_zb(k)[Pi_b(x,k)-Pi_b(x,k+1)].              (8.5)
+The first endpoint need not vanish when M is floored. A proposed cofactor
+moment must control the weights in (8.5), not just an unweighted norm of
+F_zb at one sampled scale. The complete K sector and kernels (7.2)-(7.4)
+still remain after that control.
+
+Even a separate square-root cofactor prefix envelope, if hypothetically
+supplied, would not make the unweighted bank or u bank subcritical by
+absolute summation: the upper end q of order x yields powers x and
+x^(2/3), respectively, up to prime-count logarithms. This failure is
+visible without a conjecture in actual fixed columns. At k=2,
+  z_0(2)=-beta*[(1-2^(-u))+(1-2^(-v))],
+  z_u(2)=-beta*(1-2^(-v)),
+both are nonzero. The elementary prime-count lower bound already proved
+in the earlier candidate review gives, for theta<1, their separate
+Pi_0(x,2) and Pi_u(x,2) columns of orders at least x/log x and
+x^(2/3)/log x eventually. This is a statement about separate columns,
+not a lower bound for the full signed banks. The other cofactor columns
+and K must cancel them. Treating each small column independently cannot
+close the target, despite the zero in (8.1).
+
+9. Exact Mellin boundary compensation, not a missing-tail shortcut
+-----------------------------------------------------------------
+The moving cutoff has an analytic boundary too. In any initial region
+where the sums are absolutely convergent, for a generic coefficient
+bank B_f,b,
+  s integral_1^infinity B_f,b(x)x^(-s-1)dx
+    =sum_(q prime,k>=2,qk<q^(1/theta))
+         f(k)q^(-b)[(qk)^(-s)-q^(-s/theta)].       (9.1)
+The strict product condition is equivalent to a nonempty bank interval.
+For K,
+  s integral_1^infinity K_theta(x)x^(-s-1)dx
+     =sum_(h>=2)a(h)*max(h,Pplus(h)^(1/theta))^(-s).              (9.2)
+The delayed smooth admission and the negative bank endpoint terms match
+coefficientwise through (1.2). Their sum recovers the original coefficient
+Dirichlet series and all complete main fractions. Replacing a truncated
+Z by Z(1)=0 while omitting q^(-s/theta) in (9.1) removes precisely this
+boundary compensation. Equations (9.1)-(9.2) are complete identities,
+not a new holomorphic bound for the original target.
+
+10. Exact next signed input and limits of the present reduction
+--------------------------------------------------------------
+At the input obligation's theta=5/6, the obligation remains, for every epsilon>0,
+  exists C_epsilon<infinity, independent of dyadic X>=1, such that
+  X^(-2)sum_(X<=n<2X)
+       |K_theta(n)-L_0(n)+L_u(n)-m_u*n^(2/3)|^2
+       <=C_epsilon*X^epsilon.                    (10.1)
+Initial n=1 and every pole-center value remain. This bound is equivalent
+to the original candidate-10 cofinal moment by the full paid components.
+No individual RH-strength bound for A_u, A_v, M, or mu*mu is assumed.
+
+A more structurally resolved version replaces K by
+K_high=K-K_small,1-theta using (5.2), and splits the u correction by
+(4.2). Its unresolved pieces are the high smooth coefficient sector, the
+common z_0 bank, the u-weighted companion-difference bank, and the larger
+main. The weighted cross between the first two is explicitly (7.2),
+supported only on q>Pplus(h), with BOTH q-coprime cofactors and all
+h/k overlap retained. The bank-bank kernels and main kernels in section 7
+remain alongside it. This gives a precise NEXT SOURCE-CORRELATION input
+different from a request to bound R under another name. A bound for just
+one such component is useful only if its full error and exponent are paid
+and its use does not assume (10.1) or an equivalent source moment.
+
+For a closed dyadic argument, the fresh transport in (6.5) must yield
+a joint energy recurrence with parent credit and smaller-scale companions
+that themselves belong to a closed well-founded system. The old-cutoff
+terms are now paid; their cancellation is proved. The fresh K coefficient
+sector is not controlled by the small-cofactor envelopes, and no sufficient
+signed covariance estimate for it is supplied here. Positive Gram/coercive
+matrices do not decide the defect's sign. Adding nonnegative storage without
+an actual source estimate cannot provide that decision either.
+
+Final status
+------------
+Proved new reductions: no-log Chebyshev branch power rule including all
+small-x domains and theta=3/4 bounded-block endpoint; stronger companion
+difference bound and its endpoint critical peel; finite actual harmonic
+Delta bound; complete small-index K peel; paid joint changing-cutoff
+transport; and exact coefficient covariance support/coprimality kernels.
+Unproved: a closed fresh low-frequency recurrence, the high-smooth/common-
+bank signed cancellation at all scales, the full cofinal moment, and RH.
+All old/new banks, smooth complements, repeated-prime terms, unit exclusions,
+head values, mixed terms and pole normalizers are retained. No arithmetic
+run, test, hash, new parameter study, or frozen-file edit was performed.

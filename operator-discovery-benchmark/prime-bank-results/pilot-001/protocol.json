@@ -1,0 +1,1967 @@
+{
+  "RH_proved": false,
+  "development": {
+    "prime_bank_checker_development.json": {
+      "operations": 899790,
+      "runs": [
+        {
+          "operations": 899790,
+          "returncode": 0,
+          "runtime_seconds": 0.077,
+          "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.077s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_prime_bank_candidates operations=899790\n",
+          "test": "test_check_prime_bank_candidates",
+          "tests": 8
+        }
+      ]
+    },
+    "prime_bank_producer_development.json": {
+      "operations": 118995,
+      "runs": [
+        {
+          "operations": 118995,
+          "returncode": 0,
+          "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.040s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_prime_bank_candidates operations=118995\n",
+          "tests": [
+            "test_prime_bank_candidates"
+          ]
+        }
+      ]
+    },
+    "prime_bank_workflow_development.json": {
+      "operations": 417614,
+      "runs": [
+        {
+          "operations": 414406,
+          "returncode": 0,
+          "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.100s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_prime_bank_workflow operations=414406\n",
+          "tests": [
+            "test_prime_bank_workflow"
+          ]
+        },
+        {
+          "operations": 3208,
+          "reason": "New reviewed cofactor-moment rule, generated catalogue and feedback fields only",
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_prime_bank_workflow operations=3208\n",
+          "tests": [
+            "test_prime_bank_workflow.WorkflowTests.test_cofactor_moment_transfer_retains_its_proof_premise",
+            "test_prime_bank_workflow.WorkflowTests.test_obligation_drives_exhaustive_branch_selection",
+            "test_prime_bank_workflow.WorkflowTests.test_coverage_is_strict_and_feedback_preserves_open_target"
+          ]
+        }
+      ]
+    }
+  },
+  "discovery_horizon": 65535,
+  "discovery_scales": [
+    1,
+    2,
+    4,
+    8,
+    64,
+    256,
+    1024,
+    4096,
+    8192,
+    16384
+  ],
+  "final_cutoffs": [
+    "3/4",
+    "4/5"
+  ],
+  "final_horizon": 1048575,
+  "final_scales": [
+    196608,
+    262144
+  ],
+  "hashes": false,
+  "language": {
+    "complete_cutoff_transport": [
+      "0",
+      "0",
+      "0"
+    ],
+    "finite_evidence_cannot_discharge_uniform_premises": true,
+    "programs": [
+      {
+        "RH_proved": false,
+        "bounds": {
+          "L0": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "integer_majorant_and_two_harmonic_sums",
+            "b": "0",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "18",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [],
+              "rational_factor": "18"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 4,
+            "energy_power": "1",
+            "pointwise_log_degree": 2,
+            "pointwise_power": "1",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "1/2",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lu": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "1/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/2"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "2/3",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "5/6",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "1/2",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lv": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "2/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/2"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "1/3",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "2/3",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "1/2",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          }
+        },
+        "complete_uniform_bound_proved": false,
+        "cutoff_transport_coefficients": [
+          "0",
+          "0",
+          "0"
+        ],
+        "difference_channel_bounds": [
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "3"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "2/3",
+              "finite_critical_integral": false,
+              "moment_power": "1/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "5/6",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "1/2"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/2"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "1/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          },
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "6"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "1/3",
+              "finite_critical_integral": false,
+              "moment_power": "2/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "2/3",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "1/2"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/4"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "2/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          }
+        ],
+        "elimination_search": [
+          {
+            "branches": [
+              "L0"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "2/3",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1/3",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "2/3",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          }
+        ],
+        "paid_branches": [],
+        "remaining_atoms": [
+          "K",
+          "-L0",
+          "Lu",
+          "Lv",
+          "-main"
+        ],
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "smooth_prefix_search": [
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "39/16",
+            "energy_log_degree": 2,
+            "energy_power": "-2/3",
+            "eta": "1/6",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "1/2"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "15",
+            "energy_log_degree": 2,
+            "energy_power": "-1/3",
+            "eta": "1/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "1/2"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "0",
+            "eta": "1/2",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "1/2"
+          }
+        ],
+        "source_obligation_id": "candidate10_complete_prime_bank_covariance",
+        "theta": "1/2"
+      },
+      {
+        "RH_proved": false,
+        "bounds": {
+          "L0": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "integer_majorant_and_two_harmonic_sums",
+            "b": "0",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "18",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [],
+              "rational_factor": "18"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 4,
+            "energy_power": "1",
+            "pointwise_log_degree": 2,
+            "pointwise_power": "1",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "2/3",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lu": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "1/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/4"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "5/9",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "7/9",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "2/3",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lv": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "2/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/4"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "1/9",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "5/9",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "2/3",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          }
+        },
+        "complete_uniform_bound_proved": false,
+        "cutoff_transport_coefficients": [
+          "0",
+          "0",
+          "0"
+        ],
+        "difference_channel_bounds": [
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "9/4"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "5/9",
+              "finite_critical_integral": false,
+              "moment_power": "1/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "7/9",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "2/3"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/2"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "1/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          },
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "9/2"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "1/9",
+              "finite_critical_integral": false,
+              "moment_power": "2/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "5/9",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "2/3"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/4"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "2/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          }
+        ],
+        "elimination_search": [
+          {
+            "branches": [
+              "L0"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "5/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "5/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          }
+        ],
+        "paid_branches": [],
+        "remaining_atoms": [
+          "K",
+          "-L0",
+          "Lu",
+          "Lv",
+          "-main"
+        ],
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "smooth_prefix_search": [
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "39/16",
+            "energy_log_degree": 2,
+            "energy_power": "-2/3",
+            "eta": "1/6",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "2/3"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "15",
+            "energy_log_degree": 2,
+            "energy_power": "-1/3",
+            "eta": "1/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "2/3"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "0",
+            "eta": "1/2",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "2/3"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "1/3",
+            "eta": "2/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "2/3"
+          }
+        ],
+        "source_obligation_id": "candidate10_complete_prime_bank_covariance",
+        "theta": "2/3"
+      },
+      {
+        "RH_proved": false,
+        "bounds": {
+          "L0": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "integer_majorant_and_two_harmonic_sums",
+            "b": "0",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "18",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [],
+              "rational_factor": "18"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 4,
+            "energy_power": "1",
+            "pointwise_log_degree": 2,
+            "pointwise_power": "1",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "3/4",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lu": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "1/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "27/2"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "1/2",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "3/4",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "3/4",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lv": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "2/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "27/2"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "0",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "1/2",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "bounded_block_energy",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "3/4",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          }
+        },
+        "complete_uniform_bound_proved": false,
+        "cutoff_transport_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "difference_channel_bounds": [
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "2"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "1/2",
+              "finite_critical_integral": false,
+              "moment_power": "1/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "3/4",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "3/4"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/2"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "1/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          },
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "cofinal_padding": true,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "4"
+              },
+              "endpoint_critical_integral": "A^2*(1-theta)/log(2)",
+              "energy_power": "0",
+              "finite_critical_integral": true,
+              "moment_power": "2/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "1/2",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "3/4"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/4"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "2/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          }
+        ],
+        "elimination_search": [
+          {
+            "branches": [
+              "L0"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1/2",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lv"
+            ],
+            "cofinal_padding": true,
+            "energy_power": "0",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1/2",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          }
+        ],
+        "paid_branches": [
+          "Lv"
+        ],
+        "remaining_atoms": [
+          "K",
+          "-L0",
+          "Lu",
+          "-main"
+        ],
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "smooth_prefix_search": [
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "39/16",
+            "energy_log_degree": 2,
+            "energy_power": "-2/3",
+            "eta": "1/6",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "3/4"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "15",
+            "energy_log_degree": 2,
+            "energy_power": "-1/3",
+            "eta": "1/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "3/4"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "0",
+            "eta": "1/2",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "3/4"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "1/3",
+            "eta": "2/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "3/4"
+          }
+        ],
+        "source_obligation_id": "candidate10_complete_prime_bank_covariance",
+        "theta": "3/4"
+      },
+      {
+        "RH_proved": false,
+        "bounds": {
+          "L0": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "integer_majorant_and_two_harmonic_sums",
+            "b": "0",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "18",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [],
+              "rational_factor": "18"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 4,
+            "energy_power": "1",
+            "pointwise_log_degree": 2,
+            "pointwise_power": "1",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "4/5",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lu": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "1/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/8"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "7/15",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "11/15",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "4/5",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lv": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "2/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/8"
+            },
+            "critical_integral_factor": "15",
+            "energy_log_degree": 0,
+            "energy_power": "-1/15",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "7/15",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "finite_critical_integral",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "4/5",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          }
+        },
+        "complete_uniform_bound_proved": false,
+        "cutoff_transport_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "difference_channel_bounds": [
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "15/8"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "7/15",
+              "finite_critical_integral": false,
+              "moment_power": "1/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "11/15",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "4/5"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/2"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "1/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          },
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "cofinal_padding": true,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "15/4"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "-1/15",
+              "finite_critical_integral": true,
+              "moment_power": "2/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "7/15",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "4/5"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/4"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "2/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          }
+        ],
+        "elimination_search": [
+          {
+            "branches": [
+              "L0"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "7/15",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lv"
+            ],
+            "cofinal_padding": true,
+            "energy_power": "-1/15",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "7/15",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          }
+        ],
+        "paid_branches": [
+          "Lv"
+        ],
+        "remaining_atoms": [
+          "K",
+          "-L0",
+          "Lu",
+          "-main"
+        ],
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "smooth_prefix_search": [
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "39/16",
+            "energy_log_degree": 2,
+            "energy_power": "-2/3",
+            "eta": "1/6",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "4/5"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "15",
+            "energy_log_degree": 2,
+            "energy_power": "-1/3",
+            "eta": "1/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "4/5"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "0",
+            "eta": "1/2",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "4/5"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "1/3",
+            "eta": "2/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "4/5"
+          }
+        ],
+        "source_obligation_id": "candidate10_complete_prime_bank_covariance",
+        "theta": "4/5"
+      },
+      {
+        "RH_proved": false,
+        "bounds": {
+          "L0": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "integer_majorant_and_two_harmonic_sums",
+            "b": "0",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "18",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [],
+              "rational_factor": "18"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 4,
+            "energy_power": "1",
+            "pointwise_log_degree": 2,
+            "pointwise_power": "1",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "5/6",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lu": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "1/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/10"
+            },
+            "critical_integral_factor": null,
+            "energy_log_degree": 0,
+            "energy_power": "4/9",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "13/18",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "positive_power_remaining",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "5/6",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          },
+          "Lv": {
+            "RH_proved": false,
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "analytic_rule": "Chebyshev_weighted_prime_sum_and_divisor_prefix",
+            "b": "2/3",
+            "block_constant": "A^2*2^(2*alpha)*(1+log(2))^(2*log_degree)",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "constant": {
+              "factors": [
+                "C_psi",
+                "(1+1/log(2))"
+              ],
+              "rational_factor": "81/10"
+            },
+            "critical_integral_factor": "9",
+            "energy_log_degree": 0,
+            "energy_power": "-1/9",
+            "pointwise_log_degree": 0,
+            "pointwise_power": "4/9",
+            "pointwise_template": "A*x^alpha*(1+log(x))^log_degree",
+            "premises": [
+              "complete bank, k>=2, strict q>x^theta",
+              "|z(k)|<=C*d_2(k) for all k>=2",
+              "psi(t)<=C_psi*t for all t>=1"
+            ],
+            "regime": "finite_critical_integral",
+            "schema": "prime-bank-exponent-certificate-v1",
+            "theta": "5/6",
+            "verification_scope": "exact consequences of reviewed analytic premises"
+          }
+        },
+        "complete_uniform_bound_proved": false,
+        "cutoff_transport_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "difference_channel_bounds": [
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "cofinal_padding": false,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "9/5"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "4/9",
+              "finite_critical_integral": false,
+              "moment_power": "1/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "13/18",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "5/6"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/2"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "1/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "1/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          },
+          {
+            "bank_transfer": {
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "cofinal_padding": true,
+              "complete_target_proved": false,
+              "conditional_on_cofactor_moment": true,
+              "constant": {
+                "factors": [
+                  "B",
+                  "C_psi"
+                ],
+                "rational_factor": "18/5"
+              },
+              "endpoint_critical_integral": null,
+              "energy_power": "-1/9",
+              "finite_critical_integral": true,
+              "moment_power": "2/3",
+              "nonempty_domain": "x>2^(1/(1-theta)); bank zero otherwise",
+              "pointwise_log_degree": -1,
+              "pointwise_power": "4/9",
+              "premise": "sum_(2<=k<=M)|f(k)|*k^(b-1)<=B*M^gamma for all M>=1",
+              "theta": "5/6"
+            },
+            "cofactor_derivation": {
+              "B": {
+                "factors": [
+                  "G"
+                ],
+                "rational_factor": "27/4"
+              },
+              "G": "zeta(1+u)-zeta(1+v)=sum_(d>=1)g(d)/d>0",
+              "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+              "b": "2/3",
+              "beta": "9/2",
+              "finite_harmonic_bound": "abs(sum_(2<=k<=M)Delta(k)/k)<=2*beta*G",
+              "full_signed_source_bound_assumed": false,
+              "moment_power": "2/3",
+              "proof": "|mu|<=1; sum_(r<=M/d)r^(b-1)<=(M/d)^b/b; positive g, absolute convergent G",
+              "source": "Delta=-beta*(mu*g), g(n)=n^(-u)-n^(-v)>=0, g(1)=0",
+              "u": "1/3",
+              "v": "2/3"
+            }
+          }
+        ],
+        "elimination_search": [
+          {
+            "branches": [
+              "L0"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "4/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lv"
+            ],
+            "cofinal_padding": true,
+            "energy_power": "-1/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "4/9",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          },
+          {
+            "branches": [
+              "L0",
+              "Lu",
+              "Lv"
+            ],
+            "cofinal_padding": false,
+            "energy_power": "1",
+            "proof": "complete triangle inequality using every listed branch",
+            "target_discharged": false
+          }
+        ],
+        "paid_branches": [
+          "Lv"
+        ],
+        "remaining_atoms": [
+          "K",
+          "-L0",
+          "Lu",
+          "-main"
+        ],
+        "scope": {
+          "domain": "all dyadic integers X>=1",
+          "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+          "source": "actual_mu_candidate10"
+        },
+        "smooth_prefix_search": [
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "39/16",
+            "energy_log_degree": 2,
+            "energy_power": "-2/3",
+            "eta": "1/6",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "5/6"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": "15",
+            "energy_log_degree": 2,
+            "energy_power": "-1/3",
+            "eta": "1/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "5/6"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": true,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "0",
+            "eta": "1/2",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "5/6"
+          },
+          {
+            "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+            "coefficient": "9",
+            "cofinal_padding": false,
+            "complete_target_proved": false,
+            "critical_integral_factor": null,
+            "energy_log_degree": 2,
+            "energy_power": "1/3",
+            "eta": "2/3",
+            "expression": "sum_{2<=h<=x^eta} a(h)",
+            "pointwise_bound": "C*x^eta*(1+eta*log(x))",
+            "premises": [
+              "|a(h)|<=C*d_2(h) for every h>=2"
+            ],
+            "support_reason": "Pplus(h)<=h<=x^eta<=x^theta",
+            "theta": "5/6"
+          }
+        ],
+        "source_obligation_id": "candidate10_complete_prime_bank_covariance",
+        "theta": "5/6"
+      }
+    ],
+    "schema": "complete-prime-bank-language-v1",
+    "source_factorization": {
+      "factor": "1-q^(-step)",
+      "identity_verified": true,
+      "multiplicity": 1,
+      "quotient": [
+        [
+          "0",
+          "zu",
+          "-1"
+        ],
+        [
+          "0",
+          "zv",
+          "-1"
+        ],
+        [
+          "1/3",
+          "zv",
+          "-1"
+        ]
+      ],
+      "source": [
+        [
+          "0",
+          "zu",
+          "-1"
+        ],
+        [
+          "0",
+          "zv",
+          "-1"
+        ],
+        [
+          "1/3",
+          "zu",
+          "1"
+        ],
+        [
+          "2/3",
+          "zv",
+          "1"
+        ]
+      ],
+      "step": "1/3",
+      "uniform_improvement_proved": false
+    },
+    "source_obligation": {
+      "RH_proved": false,
+      "automatic_next_production_requests": [
+        "largest_prime_partition_above_square_root",
+        "three_channel_new_prime_transfer",
+        "weighted_small_cofactor_prefixes_with_endpoint",
+        "joint_energy_and_changing_bank_boundary"
+      ],
+      "definitions": {
+        "K": "sum_{2<=n<=x, largest_prime_factor(n)<=Y} a(n)",
+        "L_b": "sum_{2<=k<=M} z_b(k)*Pi_b(x,k)",
+        "M": "floor(x/Y)",
+        "Pi_b": "sum_{Y<q<=x/k, q prime} q^(-b)",
+        "R": "sum_{n<=x} a(n)-m_u*x^(2/3)",
+        "R_new": "K-L_0+L_u-m_u*x^(2/3)",
+        "Y": "x^theta",
+        "a": "p-d",
+        "a_b": "mu * (n^(-b)), Dirichlet convolution",
+        "beta": "9/2",
+        "d": "complete same-prime prime-power coefficient branch of p",
+        "m_u": "(3/2)*(9/2)*(zeta(4/3)/zeta(2/3)^2-1/zeta(2/3))",
+        "p": "((a_(1/3)-delta)/(1/3))*((a_(2/3)-delta)/(2/3))",
+        "theta": "5/6",
+        "z_0": "2*p(k)+beta*(a_(1/3)(k)+a_(2/3)(k))",
+        "z_u": "p(k)+beta*a_(2/3)(k)",
+        "z_v": "p(k)+beta*a_(1/3)(k)"
+      },
+      "dependencies_to_preserve": [
+        "complete smooth-number K sector",
+        "unweighted and one-third-weighted actual-prime banks",
+        "joint three-channel covariance",
+        "unit correction",
+        "old-bank gains and fresh terms when the cutoff changes on a child scale",
+        "complete initial range"
+      ],
+      "disallowed_shortcuts": [
+        "assuming separate RH-strength bounds for a_b or mu*mu",
+        "dropping the smooth sector",
+        "replacing finite-prefix compensation by an unproved ordinarily convergent Dirichlet tail",
+        "using the cofinal target as its own premise"
+      ],
+      "exact_reduction": {
+        "all_repeated_prime_terms": "retained in K; q>Y>sqrt(x) occurs exactly once",
+        "completeness": "K plus all three prime banks partition every coefficient; no separate absolute bound for K is supplied",
+        "identity": "R=R_new+L_v",
+        "source_law": "a(q*k)=-z_0(k)+q^(-1/3)*z_u(k)+q^(-2/3)*z_v(k), q prime, q does not divide k, k>1",
+        "unit_terms": "k=1 excluded; selected coefficient at primes is zero"
+      },
+      "id": "candidate10_complete_prime_bank_covariance",
+      "implementation_status": "explicit next search input; these prime-bank productions are analytically reviewed but not yet implemented by this pilot",
+      "operator": {
+        "formula": "((zeta(s+1/3)/zeta(s)-1)/(1/3))*((zeta(s+2/3)/zeta(s)-1)/(2/3))",
+        "shifts": [
+          "1/3",
+          "2/3"
+        ],
+        "type": "product_of_normalized_shift_increments"
+      },
+      "origin": {
+        "kind": "analytical follow-up to checked auxiliary pilot",
+        "numerically_discovered_bound": false,
+        "review_files": [
+          "OBSTRUCTION_AUXILIARY_ANALYTIC_REVIEW_001.txt sections7-9",
+          "OBSTRUCTION_AUXILIARY_STRUCTURE_REVIEW_001.txt sections3-4"
+        ]
+      },
+      "paid_component": {
+        "critical_norm": "integral_1^infinity abs(L_v(x))^2/x^2 dx <= (9*beta)^2*(153/2)",
+        "general_threshold": "any fixed rational 3/4<theta<1 gives 1-(2/3)*theta<1/2",
+        "pointwise": "abs(L_v(x)) <= 9*beta*x^(4/9)*(1+log(x)/6), x>=1",
+        "proved_by": "elementary divisor-square/cofactor estimates and complete prime-bank upper bound; no RH premise",
+        "quantity": "L_v",
+        "status": "reviewed_analytic_bound"
+      },
+      "required_lemma": {
+        "bound": "C_epsilon*X^epsilon",
+        "every_cross_term_retained": true,
+        "expression": "X^-2 sum_{X<=n<2X}(K(n)-L_0(n)+L_u(n)-m_u*n^(2/3))^2",
+        "status": "open"
+      },
+      "schema": "candidate10-prime-bank-obligation-v1",
+      "scope": {
+        "domain": "all dyadic integers X>=1",
+        "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+        "source": "actual_mu_candidate10"
+      },
+      "status": "open",
+      "uniform_signed_bound_proved": false
+    },
+    "source_relation": "z0=zu+zv; exact substitution in p,a_u,a_v",
+    "target_equivalence_class": "candidate10_complete_prime_bank_covariance"
+  },
+  "max_scalar_cells": 48000000,
+  "memory_bytes": 17179869184,
+  "numeric_fitting": false,
+  "prior_arithmetic_overlap": true,
+  "process_memory_bytes": 4294967296,
+  "processes": "isolated source parent plus two fork workers; root conductor remains small",
+  "schema": "complete-prime-bank-pilot-v1",
+  "seconds": 7200,
+  "selection": "critical paid regime and smallest strictly decaying paid regime; symbolic only",
+  "uniform_signed_bound_proved": false,
+  "work_limit": 1500000000
+}

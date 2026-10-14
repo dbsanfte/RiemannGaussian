@@ -1,0 +1,138 @@
+INDEPENDENT SHARED-CARRIER FRACTIONAL FLOW (061)
+
+Authority and exact admission
+------------------------------
+verify_fractional_flow(cert,meter=None) validates the actual joined P,Q,D,S
+source, two complete kernel-base mass columns, and exact head/exit/terminal
+prices. It reuses the frozen060 independent verify_identity as a logical rule,
+charging every replay. No new discovery producer is imported and no scientific
+signature, source table, profile winner, or kernel integral is evaluated.
+Canonical rational parsing, exact schema validation, charge-only Meter and
+bit guards are inherited from the same stopped060 checker. Its capacities
+remain: prime mask2..8, primes<=1million, period4pq<=4096, rational input4096bits
+and2500characters, intermediate32768bits, prospective work/deadline limits.
+
+The certificate has exactly the agreed fractional-flow fields, including
+head_theta/head_coefficient and exit_rho/exit_coefficient/horizon. It requires
+0<alpha<1, gamma>0, 0<tau<1, actual p<q in the registered prime mask, rational
+0<=head_theta<=1/2, rational0<=exit_rho<=3/4, and full source horizon
+D=max(1,floor(4N/p)). All claims concern every integer N>=2.
+
+Exact shared carrier and kernel positivity
+------------------------------------------
+The magnitudes before the common G_M and Mellin weight are
+ h_P(t)=p^-t, h_Q(t)=q^-t, h_D(t)=p^-t-q^-t, h_S(t)=p^-t+q^-t.
+Their primitive bases are p and q in increasing order. The checker binds
+every signed kernel coefficient exactly; it does not approximate exponentials.
+For any bases a_1<...<a_m and coefficients c_j with nonnegative cumulative
+prefixes C_j and some positive prefix,
+ sum c_j*a_j^-t
+  =sum_(j<m) C_j*(a_j^-t-a_(j+1)^-t)+C_m*a_m^-t >0 for every t>0.
+This licenses all four kernels, including D whose last prefix is zero.
+All h_i are <=2. Their source carrier is d^-t, shared across every profile.
+No shifted profile-specific carrier may be substituted.
+
+For each base a=p,q the complete column identity has profile coefficients
+equal to that base's signed coefficients in h_P,h_Q,h_D,h_S. Its parameters
+must match the parent exactly. The frozen060 verifier checks zero origin,
+all inclusive quarter-grid jumps through the full period, zero period drift,
+and the complete finite mu_M*One smooth-count convolution. Missing columns,
+sign-swapped masses, floor range exits or a smaller period are rejected.
+
+Exact fractional transport and the signed source
+------------------------------------------------
+Sort actual nonzero ordinary-Mobius source tokens by integer index d_j.
+For fixed t>0 put b_j(t)=mu(d_j)*kernel_sign_j*h_profile_j(t), x_j=d_j^-t,
+and S_j=sum_(l<=j)b_l. Append terminal carrier x_(last+1)=0. Finite Abel gives
+ sum b_j*x_j =sum S_j*(x_j-x_(j+1)); hence absolute source <=
+ V_t=sum |S_j|*(x_j-x_(j+1)).
+V_t is exactly the one-dimensional fractional transport optimum between the
+positive and negative source masses, after adding a balancing dummy of signed
+mass -sum b_j at carrier0. For each interval between carrier locations, the
+net mass crossing the cut must equal S_j, so any coupling has cost at least
+|S_j| times that interval's length. The monotone quantile coupling, equivalently
+complete ascending fractional cancellation with the balancing dummy, has no
+oppositely directed crossing and attains each cut lower bound simultaneously.
+Masses need not be integral and may depend on t. This is not an equality with
+the060 fixed integer-copy cost or with a single transport plan independent of t.
+
+The normalized joined arithmetic source is the integral of this exact source
+with positive weight rgamma(1-alpha)*G_M(t)*t^(-alpha-1), eps<t<tau,
+eps=min(tau,N^-gamma). All sums are finite; no ordinary infinite moment
+convergence or random-sign premise is used. Integrating V_t therefore gives
+an unconditional upper envelope for the source. Its full growth is not paid.
+
+Four-region split and conserved terminal charge
+------------------------------------------------
+For the full horizon D=max(1,floor(4N/p)), let S_N(y,t) sum actual token masses
+with d<=y, and S_D be their total. Empty sources have S_N=0. Finite Abel also
+gives V_t=t*integral_1^D |S_N(y,t)| y^(-t-1)dy+D^-t|S_D|, including any final
+interval after the last occupied token. Define
+ Y=N^head_theta, K=min(floor(D/2),floor(N^exit_rho)),
+ a=min(Y,D), b=max(a,D-K).
+The integral splits into short[1,a], core[a,b], exit[b,D], with no overlap.
+If D=1 then K=0 and every integral interval is empty. Original floor horizon0
+means the source is empty and is harmless under effective D=1.
+
+Each base-column total is a signed sum of M-smooth counts with coefficient
+l1 equal to its verified floor coefficient l1. Write H for the sum of these
+two l1 values and k=|M|. Since base a>=1 and t>0,
+ |S_D(t)|<=H*(1+log2(4N))^k.
+This includes unit d=1 and every range exit, via the complete060 convolution.
+The terminal contribution is not generally the literal greedy unmatched cost.
+
+On the exit region write S_N(y)=S_D-(tail after y). The global-mass part of
+its bound integrates to |S_D|*(b^-t-D^-t), which combines with the terminal
+term to exactly |S_D|*b^-t. Since b>=1 this is <=|S_D|. It is priced ONCE,
+not once for exit and again for terminal. For0<t<tau<1,
+G_M(t)<=product(M)*t^k and rgamma(1-alpha)<3; integrating the combined
+conserved term proves the exact conservative coefficient
+ C_terminal=3*product(M)*H/(k-alpha)
+with log weight (1+log2(4N))^k for every integer N>=2.
+
+Paid short region
+------------------
+There is at most one token at each positive integer d and every h_i<=2, so
+|S_N(y,t)|<=2floor(y)<=2y. Since y>=1,
+ H_short<=2t*integral_1^a y^-t dy<=2t*Y.
+With the same positive outer weight this gives
+ integrated H_short<=[6*product(M)/(k+1-alpha)]*N^head_theta.
+Theta0 has Y1 and an empty short interval; the same conservative coefficient
+is valid. The primitive is elementary cardinality, not a cancellation result.
+
+Paid discrete exit remainder (the +1 is essential)
+--------------------------------------------------
+The source tail after real y has at most D-floor(y) token indices. Thus
+ |S_N(y,t)-S_D(t)|<=2*(D-floor(y)).
+For D>=2, K>=1 and b>=D-K>=D/2. Therefore
+ t*integral_b^D 2*(D-floor(y))*y^(-t-1)dy
+   <=(4t/D)*integral_(D-K)^D(D-floor(y))dy
+   =2t*K*(K+1)/D <=4t*K^2/D.
+The full integer-cell integral is K(K+1)/2, not K^2/2; a continuous D-y
+replacement would underprice the final cell. Since D=floor(4N/p)>=2 implies
+D>=2N/p, K<=N^exit_rho, the integrated residual is bounded by
+ C_exit*N^(2*exit_rho-1), C_exit=6*p*product(M)/(k+1-alpha).
+D1 has K0 and no exit remainder, so no small-horizon division gate is lost.
+Rho<=3/4 ensures this component has at most square-root growth. All constants
+are independently reconstructed and compared exactly with the certificate.
+
+Remaining proof obligation and scope
+-------------------------------------
+The core prefix integral over[min(Y,D),b] remains OPEN. Neither a conserved
+global mass nor paid endpoint strips implies a bound for its absolute prefix
+variation. The certificate pays head, exit residual, and the conserved
+exit-plus-terminal component only. Full flow growth, original signed target
+growth and RH remain unproved. Finite source observations cannot discharge
+the all-N core obligation, and a transport plan depending on t is not silently
+identified with a fixed archived discrete plan.
+
+Development
+-------------
+All focused tests are new synthetic tests: mask[2,7], exact simple W identities,
+small rational signed measures and independent quantile transport, empty/nonzero
+total measures, missing/sign-swapped columns, strict positivity prefixes,
+arbitrary denominator257 parameters, underpriced head/exit/terminal constants,
+the discrete exit +1, wrong horizons, fake global claims and charge-only Meter.
+No scientific source or kernel table, previous suite, signature/winner search,
+hash, or unchanged scientific study is run. The receipt preserves every owned
+invocation and charged operation before stopped status.

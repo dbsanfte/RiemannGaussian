@@ -1,0 +1,131 @@
+POSTRUN REVIEW079: SIGNED LOCAL BOUNDS AND GROWING ARITHMETIC MODES
+
+Provenance and scope
+Root reviewed the completed outputs and the new postrun producer/checker.
+The independent Sol6.1 pre-run review already derived the semiprime
+signature and pure-prime flux obstruction, audited the complete-base rule
+and cleared the source/cover/freeze workflow. Its later requested postrun
+turns failed with stream disconnects; do not count those as completed
+independent outcome reviews. A separate Sol6.1 agent wrote and tested the
+independent postrun mass checker. Neither postrun module queries arithmetic.
+
+Actual search results
+Science079 completed normally in110.0114536070032seconds. It built3570
+shared-index source/half cell rows over the existing arithmetic prefix,
+searched102 conditional covers and froze6 before validation. All6 fail:
+790 local inequalities refuted,2270 certified,zero interval ambiguities.
+The18 selected leaf occurrences were tested at170 validation parents each.
+No original arithmetic residual is refuted by these outcomes.
+
+For q1_p16, all three q choose gamma5/8 and the exact cover
+ d=e7+(e1+e8)/2+(e1+e9)/2+(e8+e9)/2.
+The q1,129/128,33/32 covers have187,170,168 finite local refutations.
+For q1_p04, all three choose gamma2/3 and
+ d=(e1+e9)+(e7+e8),
+with91,89,85 finite local refutations. These are detector outputs, not
+hand-specified covers. Both sets retain prime/composite cross terms, yet
+each requires a bad two-channel arithmetic estimate.
+
+Exact finite witness
+For q1_p04,q1,gamma2/3 at u245681, the selected ray e1+e9 has
+ S=905431/8192, Q=1030232073959/67108864,
+ kappa=746858239043/1099511627776.
+S^2-kappa Q=131948142638925745276299/73786976294838206464>0.
+This is a direct rational refutation of that frozen covariance price.
+It does not on its own exclude every larger price.
+
+Why a larger price cannot fix the shared prime/semiprime leaf
+Write the original fixed prefix kernel as sum b_d 1_(n<=u//d),
+m=sum b_d/d, and fixed excluded prime fold mass
+mP=m*product_(p in P)(1-1/p). For fixed0<gamma<1, the terminal-prime
+coordinate V1(u)~ -mP*u/logu by the ordinary prime number theorem:
+the removed prefix p<=ceil(H^gamma) costs O(H^gamma)=o(u/logu).
+The finite fixed endpoints each contribute their coefficient timesu/d.
+
+For1/2<gamma<3/4, put alpha=2gamma/3, so1/3<alpha<1/2. The last
+least-prime bin contains at most two distinct prime factors, since three
+factors strictly aboveceil(H^alpha) have product>H. Its upper cutoff
+H^gamma exceeds sqrtH eventually, so the distinct semiprime contribution
+at each fixed endpoint X~c*u is
+ sum_(ceil(H^alpha)<p<=sqrtX) [pi(X/p)-pi(p)].
+Its leading term follows from ordinary PNT and partial summation:
+ X/logX * integral_alpha^(1/2) dt/[t(1-t)]
+ =X/logX * log((1-alpha)/alpha).
+PNT is uniform here because the moving prime arguments remain in compact
+positive power ranges. The subtraction sum pi(p)=O(X/log^2X); one-prime
+terms in this short bin are O(H^gamma), both lower order. Fixed excluded
+primes are below the lower cutoff eventually. Hence
+ V9(u)~mP*log((1-alpha)/alpha)*u/logu.
+
+Subtracting the literal half, h=floor(u/2), preserves half the leading
+coefficient because h/logh~u/(2logu). A ray supported in{1,9} therefore has
+ a.D ~ L*u/logu,
+ L=mP*(-a1+a9*log((1-alpha)/alpha))/2.
+If L!=0, its square eventually exceeds a positive constant*u^2/log^2u.
+The independently paid coefficient rule gives Q_a<=3K max|a|^2 u.
+Thus S_a^2<=kappa*u^(q-1)*Q_a with ANY fixed finite kappa is impossible
+for q<2. This is an eventual local-bound method obstruction, without an
+effective finite threshold or a lower bound on the full signed residual.
+
+For gamma5/8, alpha5/12, the relevant logarithm islog(7/5). For gamma2/3,
+alpha4/9, it islog(5/4). Both differ from1, so all six selected e1+e9
+leaves have nonzero L. Generic checked rational log bounds establish this
+without trusting a floating logarithm. Let z=1-2alpha in(0,1/3):
+ log((1-alpha)/alpha)=2 sum_(k>=0) z^(2k+1)/(2k+1).
+After32 terms the positive tail is at most
+ 2*z^65/[65*(1-z^2)].
+The checker independently rebuilds the rational sum/tail, applies both
+coefficient signs, checks fixed mass/fold factor and exponent gap2-q,
+and requires the entire L interval to exclude0. Its eventual lower square
+coefficient is min(|Llower|,|Lupper|)^2/4. Zero mass, zero-containing
+intervals, other channels and unsupported cutoff ranges are not declared
+safe or bounded. No asymptotic error threshold is invented.
+
+Imported theorem: classical prime number theorem pi(x)~x/logx.
+Primary reference used in078 and the existing independent review:
+D. Zagier, Newman's short proof of the prime number theorem (1997),
+https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf
+The deduction above is an explicit mathematical proof-rule argument;
+Python independently checks its rational hypotheses/certificate, not a
+formal theorem-prover encoding of PNT or of the partial summation proof.
+
+Finite coverage diagnostic
+The p16 gamma5/8 ray e7 obtained a noncircularity witness only at
+u327601, the largest discovery anchor. Its first validation refutation
+u491441 has S=-21,Q2519,kappa16216985661/1099511627776. This channel is
+empty until its lower cutoff admits a prime outsideP2357: the first is11.
+For discovery H=floor(u/4), ceil(H^(5/24)) reaches11 only at the largest
+anchor; earlier anchors have cutoff<=10. Thus most discovery rows cannot
+test this channel's future prime entries. This is a finite coverage
+limitation, not a further impossibility theorem. It motivates explicit
+prime entry/exit boundary obligations in the next search, rather than
+regarding an initially absent channel as intrinsically small.
+
+What is now paid and what remains
+Exact shared-index transport, each source/half fixed-kernel binding,
+diagonal Gram identities, unconditional uniform coefficient norm, inactive
+coordinates, complete small-scale R-energy base, and the conditional
+triangle/Young reduction are checked. The missing all-scale arithmetic
+leaves remain the actual target. Original separable correlation price,
+full parameter family and entire head/core/RH transfer remain open.
+
+Next search input must change the construction
+All six selected covers are ruled out by a growing prime/semiprime mode,
+independently of their finite fitted constants. Export the exact failed
+leaf, proof gate and supported-coordinate mode equation. Permit contrasts
+of three or more arithmetic channels, parameterized prime/composite
+pairings, and exact coefficient functions such as logarithms of rational
+cutoff expressions when a proved identity requires them. The detector
+should generate and check mode-annihilation constraints before spending
+resources fitting that branch. Do not assume signatures of other bins
+from this two-coordinate rule, and do not discard those signed bins.
+
+Setting a1=a9*log((1-alpha)/alpha) removes ONLY the leading u/logu term.
+An unpaid u/log^2u or other lower-order remainder is still much larger
+than square-root scale. The next construction must therefore expose its
+remainder and an argument/recurrence/cross-moment identity controlling it.
+Merely adding logarithmic tokens, increasing support or retuning constants
+is not evidence of a uniform signed estimate. The new feedback records
+these obligations and the moving prime boundary issue explicitly.
+
+No signed all-scale residual bound or RH proof has been obtained.

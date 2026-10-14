@@ -1,0 +1,44 @@
+FROZEN PROTOCOL051/052: FRACTIONAL PRIME KERNELS
+
+K(n)=sign sum_(d|n) mu(d)(a logd+b log(n/d))^alpha, n>=2; K(1)=0.
+Exact rational parameters, a+b=1, a,b>=0,a!=b, sign+/-1,0<alpha<=2.
+All reduced a denominators<=7 and alpha denominators<=11 are enumerated.
+This is a finite resource ceiling, not a restriction to square/cube/sixth roots.
+General exact parameters up to4096bits remain admissible to the evaluators and
+the licensed proof branches. No mathematical claim of novelty is required.
+
+3024 entries include36alpha1 calibrations;2988 discovery entries. Training
+uses2..64 and81,125,210,231,385. Stop each entry after its first rigorous
+negative upper interval; preserve all skipped entries and unresolved signs.
+The numeric backend imports no symbolic proof provider. Its fixed selector
+chooses6 by full coverage, no negative witness, two distinct positive prime
+responses, then positive multiprime response, rational complexity and exponent
+diversity. An unresolved interval remains unresolved. Calibration never ranks.
+
+Freeze all implementation, reviews, receipts, grammar, limits and both integer
+sets before training values. Save the finite archive before symbolic proofs.
+Attempt independent pointwise theorem checking for every bank entry, including
+strict analytic negative witnesses2,6,30. Every such integer is in training.
+No candidate or selector is retuned from proofs or final values.
+
+Fresh final integers:67,71,97,101,121,143,169,187,221,247,289,323,361,437,
+499,512,625,729,1001,2310,30030,510510,9699690. All are disjoint from training.
+Evaluate6selected kernels at192bits; independently reconstruct all divisors
+and Mobius values at256bits, requiring exact dyadic containment, including
+normalized values and signed/absolute ratios. Two process workers. Both use
+Arb as trusted ball arithmetic; their divisor enumeration and power evaluation
+differ. Numerical certificates concern these integers only.
+
+The051 reviewed theorem templates prove all-integer arithmetic pointwise
+bounds. The052 independently reviewed analytic implication connects an exact
+centered summatory error to RH. The error bound is an OPEN premise in every
+certificate. Positivity, small observed values, and a conditional implication
+cannot pay this premise. The main term is the full positive-density integral,
+not a fitted or leading asymptotic expression. The theorem is one-way only.
+
+Search limits20bn proxy operations/7200seconds;2GiB exact-tuple cache,
+8GiB prospective search cap; aggregate user budget16GiB. Final jobs have
+100m proxy operations per producer/checker. Discard training cache before
+forking. Track actual individual peak RSS, not an invented aggregate peak.
+No artifact hashes. Preserve all prior113 frozen files by literal comparison;
+prior050 recurrence stays refuted and its underlying energy target stays open.

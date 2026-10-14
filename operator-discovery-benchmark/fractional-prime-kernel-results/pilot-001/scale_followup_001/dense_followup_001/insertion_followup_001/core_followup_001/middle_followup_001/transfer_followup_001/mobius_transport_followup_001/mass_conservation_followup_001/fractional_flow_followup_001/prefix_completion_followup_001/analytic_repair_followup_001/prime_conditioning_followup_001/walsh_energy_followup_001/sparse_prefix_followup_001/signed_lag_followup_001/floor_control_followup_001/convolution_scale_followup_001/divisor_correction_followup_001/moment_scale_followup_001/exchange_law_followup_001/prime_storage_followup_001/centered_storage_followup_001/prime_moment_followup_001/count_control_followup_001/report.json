@@ -1,0 +1,6494 @@
+{
+  "RH_proved": false,
+  "candidate_programs": 51,
+  "candidates": [
+    {
+      "checker_operations": 43290854,
+      "discovery_eligible": 16,
+      "elapsed_seconds": 19.32629536796594,
+      "file": "candidates_1.json",
+      "imported_operators_scored": 1272,
+      "lp_proposals": 8,
+      "producer_operations": 198601419,
+      "programs": 17,
+      "q": "1",
+      "worker_peak_rss_kib": 178784
+    },
+    {
+      "checker_operations": 84325308,
+      "discovery_eligible": 16,
+      "elapsed_seconds": 67.32658936898224,
+      "file": "candidates_129_128.json",
+      "imported_operators_scored": 1272,
+      "lp_proposals": 8,
+      "producer_operations": 205928557,
+      "programs": 17,
+      "q": "129/128",
+      "worker_peak_rss_kib": 155256
+    },
+    {
+      "checker_operations": 75052020,
+      "discovery_eligible": 15,
+      "elapsed_seconds": 30.9154094819678,
+      "file": "candidates_33_32.json",
+      "imported_operators_scored": 1272,
+      "lp_proposals": 8,
+      "producer_operations": 217504171,
+      "programs": 17,
+      "q": "33/32",
+      "worker_peak_rss_kib": 154888
+    }
+  ],
+  "checker_operations": 428118727,
+  "conservative_sum_process_peaks_bytes": 1272512512,
+  "development_receipts": [
+    {
+      "attempts": [
+        {
+          "elapsed_seconds": 1.5038164560100995,
+          "errors": 0,
+          "failures": 0,
+          "modules": [
+            "test_mobius_count_control_076",
+            "test_mobius_count_control_integration_076"
+          ],
+          "output": "test_byte_cache_does_not_retain_oversized_entries (test_mobius_count_control_076.Producer) ... ok\ntest_exact_signed_intervals_match_independent_checker (test_mobius_count_control_076.Producer) ... ok\ntest_feature_cache_bypasses_unbounded_inherited_lru (test_mobius_count_control_076.Producer) ... ok\ntest_grammar_has_variable_fractional_powers_without_duplicate_directs (test_mobius_count_control_076.Producer) ... ok\ntest_imported_feedback_really_changes_atoms_and_proof_mode (test_mobius_count_control_076.Producer) ... ok\ntest_lp_learns_signed_control_and_preserves_exact_budget (test_mobius_count_control_076.Producer) ... ok\ntest_rational_cauchy_budget_with_repeated_signed_atoms (test_mobius_count_control_076.Producer) ... ok\ntest_small_budget_rescale_is_exact (test_mobius_count_control_076.Producer) ... ok\ntest_learned_mixed_power_program_independently_admitted (test_mobius_count_control_integration_076.Integration) ... ok\ntest_low_gamma_requires_arithmetic_lemma (test_mobius_count_control_integration_076.Integration) ... ok\ntest_old_failure_cannot_be_overwritten_by_new_finite_pass (test_mobius_count_control_integration_076.Integration) ... ok\ntest_repeated_column_arbitrary_power_program (test_mobius_count_control_integration_076.Integration) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.163s\n\nOK\n",
+          "status": "PASS",
+          "tests_run": 12
+        },
+        {
+          "elapsed_seconds": 2.005346044956241,
+          "errors": 0,
+          "failures": 0,
+          "names": [
+            "test_mobius_count_control_integration_076.Integration.test_complete_runner_pipeline_and_final_gate"
+          ],
+          "output": "test_complete_runner_pipeline_and_final_gate (test_mobius_count_control_integration_076.Integration) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 1.666s\n\nOK\n",
+          "status": "PASS",
+          "tests_run": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "agents_spawned": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "output": "test_arithmetic_refutation_and_innovation_ambiguity (test_check_mobius_count_control_076.Tests) ... ok\ntest_base_cache_independent_and_memory_gate (test_check_mobius_count_control_076.Tests) ... ok\ntest_baseline_full_base_and_flags (test_check_mobius_count_control_076.Tests) ... ok\ntest_correlation_rounding_and_zero_crossing (test_check_mobius_count_control_076.Tests) ... ok\ntest_empty_counts_units_and_signed_intervals (test_check_mobius_count_control_076.Tests) ... ok\ntest_fractional_gamma_roots_and_cache (test_check_mobius_count_control_076.Tests) ... ok\ntest_input_binding_and_tampering (test_check_mobius_count_control_076.Tests) ... ok\ntest_repeated_columns_negative_and_direct_gamma (test_check_mobius_count_control_076.Tests) ... ok\ntest_structural_rejections (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.019s\n\nOK\n",
+          "status": "PASS",
+          "tests_run": 9
+        },
+        {
+          "attempt": 2,
+          "output": "test_arithmetic_refutation_and_innovation_ambiguity (test_check_mobius_count_control_076.Tests) ... ok\ntest_correlation_rounding_and_zero_crossing (test_check_mobius_count_control_076.Tests) ... ok\ntest_fractional_gamma_roots_and_cache (test_check_mobius_count_control_076.Tests) ... ok\ntest_base_cache_independent_and_memory_gate (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n",
+          "status": "PASS",
+          "tests_run": 4
+        },
+        {
+          "attempt": 3,
+          "output": "test_structural_boundary_tightening_and_power_gate (test_check_mobius_count_control_076.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "status": "PASS",
+          "tests_run": 1
+        }
+      ],
+      "distinct_tests": 10,
+      "hashes_used": false,
+      "latest_outcome": "PASS",
+      "producer_imports": false,
+      "reuse": "frozen independent075 source/shape/Meter and073 exact rational/root primitives",
+      "review_reads": "075 mathematical review, static feedback code; initial review glob also exposed postreview numerical discussion, not used",
+      "schema": "count-control-checker-development-v1",
+      "scientific_artifact_reads": false,
+      "scientific_scale_runs": false,
+      "status": "PASS",
+      "successful_test_executions": 14
+    }
+  ],
+  "dispositions": [
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "437983973666/254579180733",
+        "exact_weighted_exposure": "1/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "218991986833/226292605096",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p00",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "3779571220480/41782542101093",
+            "0",
+            "0",
+            "0",
+            "60129542144/4150689301301",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "218991986833/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-43253760/153394039",
+            "-6422528/153394039"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "216839897295/137438953472",
+        "complete_transfer_ratio": "216839897295/56573151274",
+        "exact_weighted_exposure": "1/2",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "216839897295/226292605096",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p01",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "917267575472128/3509874745998417",
+            "0",
+            "0",
+            "0",
+            "47416438947840/271189278189487",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "216839897295/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1749549056/4295205897",
+            "-361758720/1431735299"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "35782807174/5728283427",
+        "complete_transfer_ratio": "2458975785142466904064/162033522428009067999",
+        "exact_weighted_exposure": "1610534399/2147483648",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "53674210761/56573151274",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p02",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "1757093029309/3427421650944",
+            "0",
+            "0",
+            "0",
+            "1528397144651/3177822814208",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "53674210761/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1091/2048",
+            "-949/2048"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "210456239655/137438953472",
+        "complete_transfer_ratio": "210456239655/56573151274",
+        "exact_weighted_exposure": "1/2",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "210456239655/226292605096",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p03",
+      "last_domain": "discovery",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "1",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "462069761572864/1754926104757599",
+            "0",
+            "0",
+            "0",
+            "23398981828608/135593768457889",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "210456239655/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-881328128/2147589159",
+            "-178520064/715863053"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "462069761572864/1754926104757599",
+            "0",
+            "0",
+            "0",
+            "23398981828608/135593768457889",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "723861617678241239700375933493205400064884736/4028277210284399118592126857839957232063241",
+            "operator_lower": "26904676502018031878144/2007056852778316072829",
+            "operator_upper": "23541586063406919581696/1756173784433421602167",
+            "status": "REFUTED",
+            "threshold": "19414076269031843692544/110801939426817033129",
+            "u": 122801,
+            "upper": "554206274380794904675598270551663647618236416/3084146361131205966477780265081009219095889"
+          },
+          "innovation_C": "210456239655/1099511627776",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-881328128/2147589159",
+            "-178520064/715863053"
+          ],
+          "q": "1",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "22138081930137437208576/17495304441946699430837",
+        "exact_weighted_exposure": "536834903/2147483648",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "161075745783/226292605096",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p04",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/67108864",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "161075745783/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/8192"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "14694724973463074766848/7776392862214488680573",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "106918196059/226292605096",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p05",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "106918196059/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "63811593237/34359738368",
+        "complete_transfer_ratio": "127623186474/28286575637",
+        "exact_weighted_exposure": "3/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "63811593237/226292605096",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p06",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "38654705664/22906519801",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "63811593237/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-196608/151349"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "14694724973463074766848/7776392862214488680573",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "106918196059/226292605096",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p07",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "106918196059/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "437700812386/379467088081",
+        "complete_transfer_ratio": "30078570794088027652096/10733824488755347682597",
+        "exact_weighted_exposure": "1730267/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "218850406193/226292605096",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p08",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0254",
+            "innovation_score": 0.19904328471715016,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.5767309283236716
+          },
+          "template": "import_0254"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 2,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "1730267/13074576",
+            "1730267/14609696",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "218850406193/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1935298492718448115712/1067811720113080568813",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "225298396861/226292605096",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p09",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1082",
+            "innovation_score": 0.2049076982152402,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.3730128648957186
+          },
+          "template": "import_1082"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/2"
+            },
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 2,
+              "gamma": "1/2"
+            },
+            {
+              "column": 3,
+              "gamma": "1/2"
+            },
+            {
+              "column": 4,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "225298396861/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "431000972920/379467088081",
+        "complete_transfer_ratio": "29618161331769305989120/10733824488755347682597",
+        "exact_weighted_exposure": "1730267/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "53875121615/56573151274",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p10",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0252",
+            "innovation_score": 0.19599654843097106,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.5679029638475905
+          },
+          "template": "import_0252"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "1730267/13074576",
+            "1730267/14609696",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "53875121615/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "1730267/13074576",
+            "1730267/14609696",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "53875121615/274877906944",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1923672729118257971200/1067811720113080568813",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "111972489925/113146302548",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p11",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1080",
+            "innovation_score": 0.20367677188906463,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.37077209327317073
+          },
+          "template": "import_1080"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "111972489925/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "111972489925/549755813888",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "1",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "389148349184637665280/212220166352345661893",
+        "exact_weighted_exposure": "1422557/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "181211321235/226292605096",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p12",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0374",
+            "innovation_score": 0.16481073640900262,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.3773975504176284
+          },
+          "template": "import_0374"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "181211321235/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "3/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "29570457584798131027968/16438443752852785758125",
+        "exact_weighted_exposure": "12370605975/45315260416",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "215153396019/226292605096",
+        "nonzero_atoms": 10,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p13",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1246",
+            "innovation_score": 0.19568087374714238,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.37022682326447764
+          },
+          "template": "import_1246"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "3/2"
+            },
+            {
+              "column": 1,
+              "gamma": "3/2"
+            },
+            {
+              "column": 2,
+              "gamma": "3/2"
+            },
+            {
+              "column": 3,
+              "gamma": "3/2"
+            },
+            {
+              "column": 4,
+              "gamma": "3/2"
+            },
+            {
+              "column": 5,
+              "gamma": "3/2"
+            },
+            {
+              "column": 6,
+              "gamma": "0"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            },
+            {
+              "column": 8,
+              "gamma": "0"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "1374511775/68916036608",
+            "202053230925/508716132399872",
+            "22601097116325/1705337452929536",
+            "13298401423125/731427332693888",
+            "26327187075/1947463524544",
+            "789951552975/50536001448704",
+            "46516372175/4049005918208",
+            "27598821930225/1130651285451776",
+            "31829569173675/875799233059328",
+            "982226114415/79949190658048"
+          ],
+          "first_witness": null,
+          "innovation_C": "215153396019/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/16",
+            "-49/43216",
+            "-1827/43216",
+            "-1075/21608",
+            "415/10804",
+            "447/10804",
+            "-643/21608",
+            "-2231/43216",
+            "-2573/43216",
+            "-397/21608"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "376587280651718230016/212220166352345661893",
+        "exact_weighted_exposure": "1422557/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "43840529473/56573151274",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p14",
+      "last_domain": "adaptation",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0372",
+            "innovation_score": 0.1594909151695984,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.3652157742290405
+          },
+          "template": "import_0372"
+        }
+      ],
+      "q": "1",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "43840529473/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "13225/144",
+            "operator_lower": "115/12",
+            "operator_upper": "115/12",
+            "status": "REFUTED",
+            "threshold": "721772613367909/7915296012096",
+            "u": 409530,
+            "upper": "13225/144"
+          },
+          "innovation_C": "43840529473/274877906944",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "1",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "28369887941570439675904/16002255897853634065013",
+        "exact_weighted_exposure": "296433/1048576",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "103209051091/113146302548",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p15",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0997",
+            "innovation_score": 0.1877361701283502,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.36487738307835726
+          },
+          "template": "import_0997"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "296433/3030608",
+            "0",
+            "0",
+            "0",
+            "296433/1712320"
+          ],
+          "first_witness": null,
+          "innovation_C": "103209051091/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "1/4"
+          ],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "296433/3030608",
+            "0",
+            "0",
+            "0",
+            "296433/1712320"
+          ],
+          "first_witness": null,
+          "innovation_C": "103209051091/549755813888",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "1/4"
+          ],
+          "q": "1",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1",
+        "exact_weighted_exposure": "0",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "1",
+        "nonzero_atoms": 0,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q1_p16",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "baseline",
+          "method": "zero_operator_baseline"
+        }
+      ],
+      "q": "1",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "28286575637/137438953472",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [],
+          "q": "1",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "3153189276112/1820768777091",
+        "exact_weighted_exposure": "1/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "197074329757/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p00",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "9552007266304/125365757471547",
+            "0",
+            "0",
+            "0",
+            "6322191859712/203413194633257",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "197074329757/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-36438016/153416227",
+            "-96468992/1073913589"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "53638993997603188768768/37172700946294705513327",
+        "complete_transfer_ratio": "53638993997603188768768/13903429914600871841691",
+        "exact_weighted_exposure": "2147409193/4294967296",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "195137523397/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p01",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "3193197469991/13709686603776",
+            "0",
+            "0",
+            "0",
+            "5284774023973/25422582513664",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "195137523397/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1487/4096",
+            "-2461/8192"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "42487064502600711798784/7438057188864380639235",
+        "complete_transfer_ratio": "42487064502600711798784/2782001420224408824255",
+        "exact_weighted_exposure": "6441869103/8589934592",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "193208800295/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p02",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "8595600673103/18279582138368",
+            "0",
+            "0",
+            "0",
+            "26959222196055/50845165027328",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "193208800295/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-4003/8192",
+            "-4185/8192"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "757460065980/540896851903",
+        "complete_transfer_ratio": "252486688660/67435880633",
+        "exact_weighted_exposure": "1/2",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "63121672165/67435880633",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p03",
+      "last_domain": "discovery",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "129/128",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "441728796459008/1755042342641205",
+            "0",
+            "0",
+            "0",
+            "75694503624704/406808248615265",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "189365016495/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-842530816/2147731405",
+            "-577503232/2147731405"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "441728796459008/1755042342641205",
+            "0",
+            "0",
+            "0",
+            "75694503624704/406808248615265",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "6613989096680522590341094554880404194867544064/36259297699137586179463484588858036680537225",
+            "operator_lower": "81326435411128911659008/6021569371778223247165",
+            "operator_upper": "14232122514037155037184/1053774062974405163659",
+            "status": "REFUTED",
+            "threshold": "20056519680588825755648/110809278415566187555",
+            "u": 122801,
+            "upper": "202553311254563270278431207617940144422649856/1110439775797585619634903848681322574268281"
+          },
+          "innovation_C": "189365016495/1099511627776",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-842530816/2147731405",
+            "-577503232/2147731405"
+          ],
+          "q": "129/128",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "52777721427545303285760/41709229039441268617433",
+        "exact_weighted_exposure": "536834903/2147483648",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "48001058010/67435880633",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p04",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/67108864",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "72001587015/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/8192"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "9554339690006815178752/5056120557693379525161",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "8689621327/18391603809",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p05",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "95585834597/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "912770266816/540896851903",
+        "complete_transfer_ratio": "912770266816/202307641899",
+        "exact_weighted_exposure": "3/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "57048141676/202307641899",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p06",
+      "last_domain": "adaptation",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "129/128",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "38654705664/22906519801",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "innovation",
+            "lower": "98023283046744588288/1888842808060726287473",
+            "operator_lower": "11403264/151349",
+            "operator_upper": "11403264/151349",
+            "status": "REFUTED",
+            "threshold": "14262035419/274877906944",
+            "u": 143345,
+            "upper": "21782951788165464064/419742846233171783905"
+          },
+          "innovation_C": "14262035419/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-196608/151349"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "9554339690006815178752/5056120557693379525161",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "8689621327/18391603809",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p07",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "95585834597/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "215923034673191558578176/205252553343811313468143",
+        "complete_transfer_ratio": "71974344891063852859392/25589697255982413035273",
+        "exact_weighted_exposure": "1730267/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "65460285342/67435880633",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p08",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0254",
+            "innovation_score": 0.1786073477362791,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.5175174917945753
+          },
+          "template": "import_0254"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 2,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "1730267/13074576",
+            "1730267/14609696",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "98190428013/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "13841395277259668979712/7637066920381159303251",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "201418810717/202307641899",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p09",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1082",
+            "innovation_score": 0.18318934114163518,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.33347688521600993
+          },
+          "template": "import_1082"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/2"
+            },
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 2,
+              "gamma": "1/2"
+            },
+            {
+              "column": 3,
+              "gamma": "1/2"
+            },
+            {
+              "column": 4,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "201418810717/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "214771411597259115069440/83111139459062555161299",
+        "exact_weighted_exposure": "815253/2097152",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "195333460940/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p10",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0300",
+            "innovation_score": 0.17765474625771174,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.47547719571662606
+          },
+          "template": "import_0300"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "271751/2179096",
+            "0",
+            "0",
+            "271751/2168920",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "48833365235/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "271751/2179096",
+            "0",
+            "0",
+            "271751/2168920",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "48833365235/274877906944",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "13758246972241966268416/7637066920381159303251",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "200208843631/202307641899",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p11",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1080",
+            "innovation_score": 0.18208888183898303,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.3314736150570126
+          },
+          "template": "import_1080"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "200208843631/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "200208843631/1099511627776",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "129/128",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "2783217159281473224704/1517814031967780364411",
+        "exact_weighted_exposure": "1422557/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "162004560656/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p12",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0374",
+            "innovation_score": 0.14734228944085204,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.3373968244999923
+          },
+          "template": "import_0374"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "10125285041/68719476736",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "3/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "211490052907447743414272/117568942766580206281875",
+        "exact_weighted_exposure": "12370605975/45315260416",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "192349082597/202307641899",
+        "nonzero_atoms": 10,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p13",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1246",
+            "innovation_score": 0.1749404715123605,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.3309861295493981
+          },
+          "template": "import_1246"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "3/2"
+            },
+            {
+              "column": 1,
+              "gamma": "3/2"
+            },
+            {
+              "column": 2,
+              "gamma": "3/2"
+            },
+            {
+              "column": 3,
+              "gamma": "3/2"
+            },
+            {
+              "column": 4,
+              "gamma": "3/2"
+            },
+            {
+              "column": 5,
+              "gamma": "3/2"
+            },
+            {
+              "column": 6,
+              "gamma": "0"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            },
+            {
+              "column": 8,
+              "gamma": "0"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "1374511775/68916036608",
+            "202053230925/508716132399872",
+            "22601097116325/1705337452929536",
+            "13298401423125/731427332693888",
+            "26327187075/1947463524544",
+            "789951552975/50536001448704",
+            "46516372175/4049005918208",
+            "27598821930225/1130651285451776",
+            "31829569173675/875799233059328",
+            "982226114415/79949190658048"
+          ],
+          "first_witness": null,
+          "innovation_C": "192349082597/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/16",
+            "-49/43216",
+            "-1827/43216",
+            "-1075/21608",
+            "415/10804",
+            "447/10804",
+            "-643/21608",
+            "-2231/43216",
+            "-2573/43216",
+            "-397/21608"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "82536310386051776512/45994364605084253467",
+        "exact_weighted_exposure": "1422557/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "4804245568/6130534603",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p14",
+      "last_domain": "adaptation",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0372",
+            "innovation_score": 0.14419138330205356,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.3301816133779003
+          },
+          "template": "import_0372"
+        }
+      ],
+      "q": "129/128",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "2477189121/17179869184",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "13225/144",
+            "operator_lower": "115/12",
+            "operator_upper": "115/12",
+            "status": "REFUTED",
+            "threshold": "721772613367909/7915296012096",
+            "u": 409530,
+            "upper": "13225/144"
+          },
+          "innovation_C": "2477189121/17179869184",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "202903497546787968778240/114449295570599566920651",
+        "exact_weighted_exposure": "296433/1048576",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "184539655990/202307641899",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p15",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0997",
+            "innovation_score": 0.16783783925063153,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.32620369066561933
+          },
+          "template": "import_0997"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "296433/3030608",
+            "0",
+            "0",
+            "0",
+            "296433/1712320"
+          ],
+          "first_witness": null,
+          "innovation_C": "92269827995/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "296433/3030608",
+            "0",
+            "0",
+            "0",
+            "296433/1712320"
+          ],
+          "first_witness": null,
+          "innovation_C": "92269827995/549755813888",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "1/4"
+          ],
+          "q": "129/128",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1",
+        "exact_weighted_exposure": "0",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "1",
+        "nonzero_atoms": 0,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q129_128_p16",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "baseline",
+          "method": "zero_operator_baseline"
+        }
+      ],
+      "q": "129/128",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "202307641899/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [],
+          "q": "129/128",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "157891876008809105195008/90078626559002994428815",
+        "exact_weighted_exposure": "1073621885/4294967296",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "143601824683/145635541015",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p00",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "458436544895/13709686603776",
+            "0",
+            "0",
+            "0",
+            "293405523715/3631797501952",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "143601824683/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-427/4096",
+            "-1913/8192"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "6514175318394746699776/5901373357000244929545",
+        "complete_transfer_ratio": "13028350636789493399552/3336584804662134662445",
+        "exact_weighted_exposure": "134206001/268435456",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "142190590524/145635541015",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p01",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "7918154059/53553463296",
+            "0",
+            "0",
+            "0",
+            "30464762227/99306962944",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "35547647631/274877906944",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-59/256",
+            "-227/512"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "1126282417352/257583652715",
+        "complete_transfer_ratio": "2252564834704/145635541015",
+        "exact_weighted_exposure": "3/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "140785302169/145635541015",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p02",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "602601091497984/1754923374895085",
+            "0",
+            "0",
+            "0",
+            "827365320032256/1220342017823915",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "140785302169/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-2298740736/6442757455",
+            "-4208197632/6442757455"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "369900445097913221120/345402763967278053423",
+        "complete_transfer_ratio": "30331836498028884131840/8006795588920478244003",
+        "exact_weighted_exposure": "4294860491/8589934592",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "27586644590/29127108203",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p03",
+      "last_domain": "discovery",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "33/32",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "11901058420561/54838746415104",
+            "0",
+            "0",
+            "0",
+            "1438778264485/6355645628416",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "68966611475/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-2771/8192",
+            "-335/1024"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "11901058420561/54838746415104",
+            "0",
+            "0",
+            "0",
+            "1438778264485/6355645628416",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "77980609984338492601728761856/384675854512797545275783921",
+            "operator_lower": "279250085021184/19613155139161",
+            "operator_upper": "471706091136/33130311481",
+            "status": "REFUTED",
+            "threshold": "523291552779650959049/2596792868681023488",
+            "u": 122856,
+            "upper": "222506636414804337770496/1097617538828080413361"
+          },
+          "innovation_C": "68966611475/549755813888",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-2771/8192",
+            "-335/1024"
+          ],
+          "q": "33/32",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "113135169730422247522304/90075877699817179585015",
+        "exact_weighted_exposure": "536834903/2147483648",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "102895837454/145635541015",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p04",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/4"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/67108864",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "51447918727/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/8192"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "75096397657797759598592/40037337716920740113935",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "68299775792/145635541015",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p05",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "1/2"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "4268735987/68719476736",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": false,
+        "complete_bound_ratio": "326104829424/257583652715",
+        "complete_transfer_ratio": "652209658848/145635541015",
+        "exact_weighted_exposure": "3/4",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "40763103678/145635541015",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p06",
+      "last_domain": "adaptation",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "structural_cauchy",
+          "radius": "3/4"
+        }
+      ],
+      "q": "33/32",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "38654705664/22906519801",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "innovation",
+            "lower": "93731327511940825088/2493850453771644606419",
+            "operator_lower": "11403264/151349",
+            "operator_upper": "11403264/151349",
+            "status": "REFUTED",
+            "threshold": "20381551839/549755813888",
+            "u": 143288,
+            "upper": "187462655023881650176/4987700907520382693037"
+          },
+          "innovation_C": "20381551839/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-196608/151349"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "75096397657797759598592/40037337716920740113935",
+        "exact_weighted_exposure": "536834903/1073741824",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "68299775792/145635541015",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p07",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "mixed_count_power_LP",
+          "mode": "arithmetic_claim",
+          "radius": "1/2"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12581209/16777216",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "4268735987/68719476736",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-3547/4096"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "157861504181522862702592/51043980270375081676935",
+        "exact_weighted_exposure": "456553/1048576",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "143574201667/145635541015",
+        "nonzero_atoms": 1,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p08",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0434",
+            "innovation_score": 0.13057997569317786,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.40963707021537843
+          },
+          "template": "import_0434"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 2,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "143574201667/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/2"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1981165379440953262080/1099541631030169971347",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "28829750655/29127108203",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p09",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1082",
+            "innovation_score": 0.13110252720252275,
+            "kind": "prime_only",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.23865833100869163
+          },
+          "template": "import_1082"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/2"
+            },
+            {
+              "column": 1,
+              "gamma": "1/2"
+            },
+            {
+              "column": 2,
+              "gamma": "1/2"
+            },
+            {
+              "column": 3,
+              "gamma": "1/2"
+            },
+            {
+              "column": 4,
+              "gamma": "1/2"
+            },
+            {
+              "column": 5,
+              "gamma": "1/2"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "144148753275/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "2401105502586229751808/975888596914620059215",
+        "exact_weighted_exposure": "1574813/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "139762734912/145635541015",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p10",
+      "last_domain": "discovery",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0324",
+            "innovation_score": 0.12711346543599705,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.32589563343423256
+          },
+          "template": "import_0324"
+        }
+      ],
+      "q": "33/32",
+      "status": "REFUTED",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "1574813/13074576",
+            "0",
+            "0",
+            "0",
+            "1574813/12122432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "2183792733/17179869184",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "0",
+            "1574813/13074576",
+            "0",
+            "0",
+            "0",
+            "1574813/12122432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": {
+            "lemma": "correlation",
+            "lower": "44143329365463100461043154944/384675854512797545275783921",
+            "operator_lower": "210103139827712/19613155139161",
+            "operator_upper": "354903851008/33130311481",
+            "status": "REFUTED",
+            "threshold": "1134921591803539/9905978655552",
+            "u": 122856,
+            "upper": "125956743460308662616064/1097617538828080413361"
+          },
+          "innovation_C": "2183792733/17179869184",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "33/32",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "FINITE_COUNTEREXAMPLE"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "9830800406611161513984/5497708155150849856735",
+        "exact_weighted_exposure": "4205668477/16248733696",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "143056974144/145635541015",
+        "nonzero_atoms": 6,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p11",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "prime_only",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1080",
+            "innovation_score": 0.1301095595413931,
+            "kind": "prime_only",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.2368507380521903
+          },
+          "template": "import_1080"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "2235265221/17179869184",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            }
+          ],
+          "beta": [
+            "3183691037089/215395917864192",
+            "3183691037089/196221615360576",
+            "4205668477/113195924608",
+            "5185589232141/188083744678336",
+            "4205668477/13020352965568",
+            "895807385601/181931956274432",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "2235265221/17179869184",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-757/15496",
+            "-757/15496",
+            "-1/8",
+            "-1233/15496",
+            "-15/15496",
+            "213/15496"
+          ],
+          "q": "33/32",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "17/31"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "10814161694897471488/5906115293784266591",
+        "exact_weighted_exposure": "1422557/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "23290281109/29127108203",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p12",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0376",
+            "innovation_score": 0.10591193606704571,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.24252610055996418
+          },
+          "template": "import_0376"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 1,
+              "gamma": "17/31"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "1422557/13074576",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1422557/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "116451405545/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/4",
+            "-1/4"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "3/2"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "151117822600922187956224/84634551743332409209375",
+        "exact_weighted_exposure": "12370605975/45315260416",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "137440858999/145635541015",
+        "nonzero_atoms": 10,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p13",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1246",
+            "innovation_score": 0.12500173306627077,
+            "kind": "joint",
+            "mode": "structural_cauchy",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.2365023911099307
+          },
+          "template": "import_1246"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "3/2"
+            },
+            {
+              "column": 1,
+              "gamma": "3/2"
+            },
+            {
+              "column": 2,
+              "gamma": "3/2"
+            },
+            {
+              "column": 3,
+              "gamma": "3/2"
+            },
+            {
+              "column": 4,
+              "gamma": "3/2"
+            },
+            {
+              "column": 5,
+              "gamma": "3/2"
+            },
+            {
+              "column": 6,
+              "gamma": "0"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            },
+            {
+              "column": 8,
+              "gamma": "0"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "1374511775/68916036608",
+            "202053230925/508716132399872",
+            "22601097116325/1705337452929536",
+            "13298401423125/731427332693888",
+            "26327187075/1947463524544",
+            "789951552975/50536001448704",
+            "46516372175/4049005918208",
+            "27598821930225/1130651285451776",
+            "31829569173675/875799233059328",
+            "982226114415/79949190658048"
+          ],
+          "first_witness": null,
+          "innovation_C": "137440858999/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/16",
+            "-49/43216",
+            "-1827/43216",
+            "-1075/21608",
+            "415/10804",
+            "447/10804",
+            "-643/21608",
+            "-2231/43216",
+            "-2573/43216",
+            "-397/21608"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "32481842146976804634624/17530271390022104020375",
+        "exact_weighted_exposure": "1418741/4194304",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "118168253346/145635541015",
+        "nonzero_atoms": 2,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p14",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_0829",
+            "innovation_score": 0.10747340011172367,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "innovation_score"
+            ],
+            "transfer_score": 0.24542542850667173
+          },
+          "template": "import_0829"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1418741/13013520",
+            "0",
+            "0",
+            "1418741/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "59084126673/549755813888",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "-1/4"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1418741/13013520",
+            "0",
+            "0",
+            "1418741/9686336",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "59084126673/549755813888",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "1/4",
+            "-1/4"
+          ],
+          "q": "33/32",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [
+          "0",
+          "1/3"
+        ],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "151225014811948767772672/84634551743332409209375",
+        "exact_weighted_exposure": "12370605975/45315260416",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "137538349747/145635541015",
+        "nonzero_atoms": 10,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p15",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "joint",
+          "method": "075_feedback_template",
+          "selection": {
+            "id": "import_1236",
+            "innovation_score": 0.1250904001264612,
+            "kind": "joint",
+            "mode": "arithmetic_claim",
+            "selected_by": [
+              "transfer_score"
+            ],
+            "transfer_score": 0.2366701485580343
+          },
+          "template": "import_1236"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": false,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 6,
+              "gamma": "0"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            },
+            {
+              "column": 8,
+              "gamma": "0"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "1374511775/68916036608",
+            "202053230925/508716132399872",
+            "22601097116325/1705337452929536",
+            "13298401423125/731427332693888",
+            "26327187075/1947463524544",
+            "789951552975/50536001448704",
+            "46516372175/4049005918208",
+            "27598821930225/1130651285451776",
+            "31829569173675/875799233059328",
+            "982226114415/79949190658048"
+          ],
+          "first_witness": null,
+          "innovation_C": "137538349747/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/16",
+            "-49/43216",
+            "-1827/43216",
+            "-1075/21608",
+            "415/10804",
+            "447/10804",
+            "-643/21608",
+            "-2231/43216",
+            "-2573/43216",
+            "-397/21608"
+          ],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        },
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [
+            {
+              "column": 0,
+              "gamma": "1/3"
+            },
+            {
+              "column": 1,
+              "gamma": "1/3"
+            },
+            {
+              "column": 2,
+              "gamma": "1/3"
+            },
+            {
+              "column": 3,
+              "gamma": "1/3"
+            },
+            {
+              "column": 4,
+              "gamma": "1/3"
+            },
+            {
+              "column": 5,
+              "gamma": "1/3"
+            },
+            {
+              "column": 6,
+              "gamma": "0"
+            },
+            {
+              "column": 7,
+              "gamma": "0"
+            },
+            {
+              "column": 8,
+              "gamma": "0"
+            },
+            {
+              "column": 9,
+              "gamma": "0"
+            }
+          ],
+          "beta": [
+            "1374511775/68916036608",
+            "202053230925/508716132399872",
+            "22601097116325/1705337452929536",
+            "13298401423125/731427332693888",
+            "26327187075/1947463524544",
+            "789951552975/50536001448704",
+            "46516372175/4049005918208",
+            "27598821930225/1130651285451776",
+            "31829569173675/875799233059328",
+            "982226114415/79949190658048"
+          ],
+          "first_witness": null,
+          "innovation_C": "137538349747/1099511627776",
+          "lemma": "correlation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [
+            "-1/16",
+            "-49/43216",
+            "-1827/43216",
+            "-1075/21608",
+            "415/10804",
+            "447/10804",
+            "-643/21608",
+            "-2231/43216",
+            "-2573/43216",
+            "-397/21608"
+          ],
+          "q": "33/32",
+          "requested_construction": "an all-scale arithmetic comparison including the count-power price",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    },
+    {
+      "diagnostics": {
+        "active_gammas": [],
+        "base_dominated": true,
+        "complete_bound_ratio": "1",
+        "complete_transfer_ratio": "1",
+        "exact_weighted_exposure": "0",
+        "finite_residual_gain_is_not_a_uniform_proof": true,
+        "finite_residual_ratio": "1",
+        "nonzero_atoms": 0,
+        "repeated_source_columns": false,
+        "transfer_ratio_assumes_required_correlation": true
+      },
+      "id": "q33_32_p16",
+      "last_domain": "final",
+      "origins": [
+        {
+          "kind": "baseline",
+          "method": "zero_operator_baseline"
+        }
+      ],
+      "q": "33/32",
+      "status": "VERIFIED_ON_FINITE_DOMAIN",
+      "uniform_source_bound_proved": false,
+      "universal_correlation_proved": true,
+      "unpaid_leaves": [
+        {
+          "all_integer_domain_above": 4096,
+          "atoms": [],
+          "beta": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_witness": null,
+          "innovation_C": "145635541015/1099511627776",
+          "lemma": "innovation",
+          "must_not_assume_parent_source_bound": true,
+          "operator": [],
+          "q": "33/32",
+          "requested_construction": "signed residual identity or a independently paid residual energy",
+          "status": "UNIFORM_PROOF_REQUIRED"
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 116.45213369099656,
+  "finite_refutations": 8,
+  "finite_survivors": 43,
+  "fresh_final_programs": 43,
+  "hashes_used": false,
+  "interstitial_programs": 47,
+  "largest_worker_peak_rss_kib": 179552,
+  "new_frozen_files": 11,
+  "old075_failures_used_for_new_operator_training": true,
+  "old_science_replayed": false,
+  "parent_peak_rss_kib": 704032,
+  "prior_frozen_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15,
+    16,
+    8,
+    10,
+    10,
+    10,
+    10,
+    14,
+    10,
+    5,
+    10,
+    10,
+    10,
+    10,
+    10,
+    12,
+    12,
+    13,
+    4,
+    10,
+    4,
+    11,
+    5
+  ],
+  "producer_operations": 674182677,
+  "sampled_parallel_rss_peak_bytes": 554663936,
+  "source_phases": [
+    {
+      "checker_operations": 10689574,
+      "elapsed_seconds": 4.183409274031874,
+      "producer_operations": 24326439,
+      "prospective_bytes": 27522600,
+      "scales": [
+        6321,
+        6322,
+        6323,
+        6324,
+        6325,
+        6326,
+        6327,
+        6328,
+        6329,
+        6330,
+        6331,
+        6332,
+        6333,
+        6334,
+        6335,
+        6336,
+        6337,
+        6338,
+        6339,
+        6340,
+        6341,
+        6342,
+        6343,
+        6344,
+        6345,
+        6346,
+        6347,
+        6348,
+        6349,
+        6350,
+        6351,
+        6352,
+        6353,
+        6354,
+        6355,
+        6356,
+        6357,
+        6358,
+        6359,
+        6360,
+        6361,
+        6362,
+        6363,
+        6364,
+        6365,
+        6366,
+        6367,
+        6368,
+        6369,
+        6370,
+        6371,
+        6372,
+        6373,
+        6374,
+        6375,
+        6376,
+        6377,
+        6378,
+        6379,
+        6380,
+        6381,
+        6382,
+        6383,
+        6384,
+        6385,
+        6386,
+        6387,
+        6388,
+        6389,
+        6390,
+        6391,
+        6392,
+        6393,
+        6394,
+        6395,
+        6396,
+        6397,
+        6398,
+        6399,
+        6400,
+        8881,
+        8882,
+        8883,
+        8884,
+        8885,
+        8886,
+        8887,
+        8888,
+        8889,
+        8890,
+        8891,
+        8892,
+        8893,
+        8894,
+        8895,
+        8896,
+        8897,
+        8898,
+        8899,
+        8900,
+        8901,
+        8902,
+        8903,
+        8904,
+        8905,
+        8906,
+        8907,
+        8908,
+        8909,
+        8910,
+        8911,
+        8912,
+        8913,
+        8914,
+        8915,
+        8916,
+        8917,
+        8918,
+        8919,
+        8920,
+        8921,
+        8922,
+        8923,
+        8924,
+        8925,
+        8926,
+        8927,
+        8928,
+        8929,
+        8930,
+        8931,
+        8932,
+        8933,
+        8934,
+        8935,
+        8936,
+        8937,
+        8938,
+        8939,
+        8940,
+        8941,
+        8942,
+        8943,
+        8944,
+        8945,
+        8946,
+        8947,
+        8948,
+        8949,
+        8950,
+        8951,
+        8952,
+        8953,
+        8954,
+        8955,
+        8956,
+        8957,
+        8958,
+        8959,
+        8960,
+        12721,
+        12722,
+        12723,
+        12724,
+        12725,
+        12726,
+        12727,
+        12728,
+        12729,
+        12730,
+        12731,
+        12732,
+        12733,
+        12734,
+        12735,
+        12736,
+        12737,
+        12738,
+        12739,
+        12740,
+        12741,
+        12742,
+        12743,
+        12744,
+        12745,
+        12746,
+        12747,
+        12748,
+        12749,
+        12750,
+        12751,
+        12752,
+        12753,
+        12754,
+        12755,
+        12756,
+        12757,
+        12758,
+        12759,
+        12760,
+        12761,
+        12762,
+        12763,
+        12764,
+        12765,
+        12766,
+        12767,
+        12768,
+        12769,
+        12770,
+        12771,
+        12772,
+        12773,
+        12774,
+        12775,
+        12776,
+        12777,
+        12778,
+        12779,
+        12780,
+        12781,
+        12782,
+        12783,
+        12784,
+        12785,
+        12786,
+        12787,
+        12788,
+        12789,
+        12790,
+        12791,
+        12792,
+        12793,
+        12794,
+        12795,
+        12796,
+        12797,
+        12798,
+        12799,
+        12800,
+        17841,
+        17842,
+        17843,
+        17844,
+        17845,
+        17846,
+        17847,
+        17848,
+        17849,
+        17850,
+        17851,
+        17852,
+        17853,
+        17854,
+        17855,
+        17856,
+        17857,
+        17858,
+        17859,
+        17860,
+        17861,
+        17862,
+        17863,
+        17864,
+        17865,
+        17866,
+        17867,
+        17868,
+        17869,
+        17870,
+        17871,
+        17872,
+        17873,
+        17874,
+        17875,
+        17876,
+        17877,
+        17878,
+        17879,
+        17880,
+        17881,
+        17882,
+        17883,
+        17884,
+        17885,
+        17886,
+        17887,
+        17888,
+        17889,
+        17890,
+        17891,
+        17892,
+        17893,
+        17894,
+        17895,
+        17896,
+        17897,
+        17898,
+        17899,
+        17900,
+        17901,
+        17902,
+        17903,
+        17904,
+        17905,
+        17906,
+        17907,
+        17908,
+        17909,
+        17910,
+        17911,
+        17912,
+        17913,
+        17914,
+        17915,
+        17916,
+        17917,
+        17918,
+        17919,
+        17920,
+        25521,
+        25522,
+        25523,
+        25524,
+        25525,
+        25526,
+        25527,
+        25528,
+        25529,
+        25530,
+        25531,
+        25532,
+        25533,
+        25534,
+        25535,
+        25536,
+        25537,
+        25538,
+        25539,
+        25540,
+        25541,
+        25542,
+        25543,
+        25544,
+        25545,
+        25546,
+        25547,
+        25548,
+        25549,
+        25550,
+        25551,
+        25552,
+        25553,
+        25554,
+        25555,
+        25556,
+        25557,
+        25558,
+        25559,
+        25560,
+        25561,
+        25562,
+        25563,
+        25564,
+        25565,
+        25566,
+        25567,
+        25568,
+        25569,
+        25570,
+        25571,
+        25572,
+        25573,
+        25574,
+        25575,
+        25576,
+        25577,
+        25578,
+        25579,
+        25580,
+        25581,
+        25582,
+        25583,
+        25584,
+        25585,
+        25586,
+        25587,
+        25588,
+        25589,
+        25590,
+        25591,
+        25592,
+        25593,
+        25594,
+        25595,
+        25596,
+        25597,
+        25598,
+        25599,
+        25600,
+        35761,
+        35762,
+        35763,
+        35764,
+        35765,
+        35766,
+        35767,
+        35768,
+        35769,
+        35770,
+        35771,
+        35772,
+        35773,
+        35774,
+        35775,
+        35776,
+        35777,
+        35778,
+        35779,
+        35780,
+        35781,
+        35782,
+        35783,
+        35784,
+        35785,
+        35786,
+        35787,
+        35788,
+        35789,
+        35790,
+        35791,
+        35792,
+        35793,
+        35794,
+        35795,
+        35796,
+        35797,
+        35798,
+        35799,
+        35800,
+        35801,
+        35802,
+        35803,
+        35804,
+        35805,
+        35806,
+        35807,
+        35808,
+        35809,
+        35810,
+        35811,
+        35812,
+        35813,
+        35814,
+        35815,
+        35816,
+        35817,
+        35818,
+        35819,
+        35820,
+        35821,
+        35822,
+        35823,
+        35824,
+        35825,
+        35826,
+        35827,
+        35828,
+        35829,
+        35830,
+        35831,
+        35832,
+        35833,
+        35834,
+        35835,
+        35836,
+        35837,
+        35838,
+        35839,
+        35840,
+        51121,
+        51122,
+        51123,
+        51124,
+        51125,
+        51126,
+        51127,
+        51128,
+        51129,
+        51130,
+        51131,
+        51132,
+        51133,
+        51134,
+        51135,
+        51136,
+        51137,
+        51138,
+        51139,
+        51140,
+        51141,
+        51142,
+        51143,
+        51144,
+        51145,
+        51146,
+        51147,
+        51148,
+        51149,
+        51150,
+        51151,
+        51152,
+        51153,
+        51154,
+        51155,
+        51156,
+        51157,
+        51158,
+        51159,
+        51160,
+        51161,
+        51162,
+        51163,
+        51164,
+        51165,
+        51166,
+        51167,
+        51168,
+        51169,
+        51170,
+        51171,
+        51172,
+        51173,
+        51174,
+        51175,
+        51176,
+        51177,
+        51178,
+        51179,
+        51180,
+        51181,
+        51182,
+        51183,
+        51184,
+        51185,
+        51186,
+        51187,
+        51188,
+        51189,
+        51190,
+        51191,
+        51192,
+        51193,
+        51194,
+        51195,
+        51196,
+        51197,
+        51198,
+        51199,
+        51200,
+        71601,
+        71602,
+        71603,
+        71604,
+        71605,
+        71606,
+        71607,
+        71608,
+        71609,
+        71610,
+        71611,
+        71612,
+        71613,
+        71614,
+        71615,
+        71616,
+        71617,
+        71618,
+        71619,
+        71620,
+        71621,
+        71622,
+        71623,
+        71624,
+        71625,
+        71626,
+        71627,
+        71628,
+        71629,
+        71630,
+        71631,
+        71632,
+        71633,
+        71634,
+        71635,
+        71636,
+        71637,
+        71638,
+        71639,
+        71640,
+        71641,
+        71642,
+        71643,
+        71644,
+        71645,
+        71646,
+        71647,
+        71648,
+        71649,
+        71650,
+        71651,
+        71652,
+        71653,
+        71654,
+        71655,
+        71656,
+        71657,
+        71658,
+        71659,
+        71660,
+        71661,
+        71662,
+        71663,
+        71664,
+        71665,
+        71666,
+        71667,
+        71668,
+        71669,
+        71670,
+        71671,
+        71672,
+        71673,
+        71674,
+        71675,
+        71676,
+        71677,
+        71678,
+        71679,
+        71680,
+        102321,
+        102322,
+        102323,
+        102324,
+        102325,
+        102326,
+        102327,
+        102328,
+        102329,
+        102330,
+        102331,
+        102332,
+        102333,
+        102334,
+        102335,
+        102336,
+        102337,
+        102338,
+        102339,
+        102340,
+        102341,
+        102342,
+        102343,
+        102344,
+        102345,
+        102346,
+        102347,
+        102348,
+        102349,
+        102350,
+        102351,
+        102352,
+        102353,
+        102354,
+        102355,
+        102356,
+        102357,
+        102358,
+        102359,
+        102360,
+        102361,
+        102362,
+        102363,
+        102364,
+        102365,
+        102366,
+        102367,
+        102368,
+        102369,
+        102370,
+        102371,
+        102372,
+        102373,
+        102374,
+        102375,
+        102376,
+        102377,
+        102378,
+        102379,
+        102380,
+        102381,
+        102382,
+        102383,
+        102384,
+        102385,
+        102386,
+        102387,
+        102388,
+        102389,
+        102390,
+        102391,
+        102392,
+        102393,
+        102394,
+        102395,
+        102396,
+        102397,
+        102398,
+        102399,
+        102400,
+        143281,
+        143282,
+        143283,
+        143284,
+        143285,
+        143286,
+        143287,
+        143288,
+        143289,
+        143290,
+        143291,
+        143292,
+        143293,
+        143294,
+        143295,
+        143296,
+        143297,
+        143298,
+        143299,
+        143300,
+        143301,
+        143302,
+        143303,
+        143304,
+        143305,
+        143306,
+        143307,
+        143308,
+        143309,
+        143310,
+        143311,
+        143312,
+        143313,
+        143314,
+        143315,
+        143316,
+        143317,
+        143318,
+        143319,
+        143320,
+        143321,
+        143322,
+        143323,
+        143324,
+        143325,
+        143326,
+        143327,
+        143328,
+        143329,
+        143330,
+        143331,
+        143332,
+        143333,
+        143334,
+        143335,
+        143336,
+        143337,
+        143338,
+        143339,
+        143340,
+        143341,
+        143342,
+        143343,
+        143344,
+        143345,
+        143346,
+        143347,
+        143348,
+        143349,
+        143350,
+        143351,
+        143352,
+        143353,
+        143354,
+        143355,
+        143356,
+        143357,
+        143358,
+        143359,
+        143360,
+        204721,
+        204722,
+        204723,
+        204724,
+        204725,
+        204726,
+        204727,
+        204728,
+        204729,
+        204730,
+        204731,
+        204732,
+        204733,
+        204734,
+        204735,
+        204736,
+        204737,
+        204738,
+        204739,
+        204740,
+        204741,
+        204742,
+        204743,
+        204744,
+        204745,
+        204746,
+        204747,
+        204748,
+        204749,
+        204750,
+        204751,
+        204752,
+        204753,
+        204754,
+        204755,
+        204756,
+        204757,
+        204758,
+        204759,
+        204760,
+        204761,
+        204762,
+        204763,
+        204764,
+        204765,
+        204766,
+        204767,
+        204768,
+        204769,
+        204770,
+        204771,
+        204772,
+        204773,
+        204774,
+        204775,
+        204776,
+        204777,
+        204778,
+        204779,
+        204780,
+        204781,
+        204782,
+        204783,
+        204784,
+        204785,
+        204786,
+        204787,
+        204788,
+        204789,
+        204790,
+        204791,
+        204792,
+        204793,
+        204794,
+        204795,
+        204796,
+        204797,
+        204798,
+        204799,
+        204800,
+        286641,
+        286642,
+        286643,
+        286644,
+        286645,
+        286646,
+        286647,
+        286648,
+        286649,
+        286650,
+        286651,
+        286652,
+        286653,
+        286654,
+        286655,
+        286656,
+        286657,
+        286658,
+        286659,
+        286660,
+        286661,
+        286662,
+        286663,
+        286664,
+        286665,
+        286666,
+        286667,
+        286668,
+        286669,
+        286670,
+        286671,
+        286672,
+        286673,
+        286674,
+        286675,
+        286676,
+        286677,
+        286678,
+        286679,
+        286680,
+        286681,
+        286682,
+        286683,
+        286684,
+        286685,
+        286686,
+        286687,
+        286688,
+        286689,
+        286690,
+        286691,
+        286692,
+        286693,
+        286694,
+        286695,
+        286696,
+        286697,
+        286698,
+        286699,
+        286700,
+        286701,
+        286702,
+        286703,
+        286704,
+        286705,
+        286706,
+        286707,
+        286708,
+        286709,
+        286710,
+        286711,
+        286712,
+        286713,
+        286714,
+        286715,
+        286716,
+        286717,
+        286718,
+        286719,
+        286720,
+        409521,
+        409522,
+        409523,
+        409524,
+        409525,
+        409526,
+        409527,
+        409528,
+        409529,
+        409530,
+        409531,
+        409532,
+        409533,
+        409534,
+        409535,
+        409536,
+        409537,
+        409538,
+        409539,
+        409540,
+        409541,
+        409542,
+        409543,
+        409544,
+        409545,
+        409546,
+        409547,
+        409548,
+        409549,
+        409550,
+        409551,
+        409552,
+        409553,
+        409554,
+        409555,
+        409556,
+        409557,
+        409558,
+        409559,
+        409560,
+        409561,
+        409562,
+        409563,
+        409564,
+        409565,
+        409566,
+        409567,
+        409568,
+        409569,
+        409570,
+        409571,
+        409572,
+        409573,
+        409574,
+        409575,
+        409576,
+        409577,
+        409578,
+        409579,
+        409580,
+        409581,
+        409582,
+        409583,
+        409584,
+        409585,
+        409586,
+        409587,
+        409588,
+        409589,
+        409590,
+        409591,
+        409592,
+        409593,
+        409594,
+        409595,
+        409596,
+        409597,
+        409598,
+        409599,
+        409600,
+        573361,
+        573362,
+        573363,
+        573364,
+        573365,
+        573366,
+        573367,
+        573368,
+        573369,
+        573370,
+        573371,
+        573372,
+        573373,
+        573374,
+        573375,
+        573376,
+        573377,
+        573378,
+        573379,
+        573380,
+        573381,
+        573382,
+        573383,
+        573384,
+        573385,
+        573386,
+        573387,
+        573388,
+        573389,
+        573390,
+        573391,
+        573392,
+        573393,
+        573394,
+        573395,
+        573396,
+        573397,
+        573398,
+        573399,
+        573400,
+        573401,
+        573402,
+        573403,
+        573404,
+        573405,
+        573406,
+        573407,
+        573408,
+        573409,
+        573410,
+        573411,
+        573412,
+        573413,
+        573414,
+        573415,
+        573416,
+        573417,
+        573418,
+        573419,
+        573420,
+        573421,
+        573422,
+        573423,
+        573424,
+        573425,
+        573426,
+        573427,
+        573428,
+        573429,
+        573430,
+        573431,
+        573432,
+        573433,
+        573434,
+        573435,
+        573436,
+        573437,
+        573438,
+        573439,
+        573440,
+        819121,
+        819122,
+        819123,
+        819124,
+        819125,
+        819126,
+        819127,
+        819128,
+        819129,
+        819130,
+        819131,
+        819132,
+        819133,
+        819134,
+        819135,
+        819136,
+        819137,
+        819138,
+        819139,
+        819140,
+        819141,
+        819142,
+        819143,
+        819144,
+        819145,
+        819146,
+        819147,
+        819148,
+        819149,
+        819150,
+        819151,
+        819152,
+        819153,
+        819154,
+        819155,
+        819156,
+        819157,
+        819158,
+        819159,
+        819160,
+        819161,
+        819162,
+        819163,
+        819164,
+        819165,
+        819166,
+        819167,
+        819168,
+        819169,
+        819170,
+        819171,
+        819172,
+        819173,
+        819174,
+        819175,
+        819176,
+        819177,
+        819178,
+        819179,
+        819180,
+        819181,
+        819182,
+        819183,
+        819184,
+        819185,
+        819186,
+        819187,
+        819188,
+        819189,
+        819190,
+        819191,
+        819192,
+        819193,
+        819194,
+        819195,
+        819196,
+        819197,
+        819198,
+        819199,
+        819200,
+        1146801,
+        1146802,
+        1146803,
+        1146804,
+        1146805,
+        1146806,
+        1146807,
+        1146808,
+        1146809,
+        1146810,
+        1146811,
+        1146812,
+        1146813,
+        1146814,
+        1146815,
+        1146816,
+        1146817,
+        1146818,
+        1146819,
+        1146820,
+        1146821,
+        1146822,
+        1146823,
+        1146824,
+        1146825,
+        1146826,
+        1146827,
+        1146828,
+        1146829,
+        1146830,
+        1146831,
+        1146832,
+        1146833,
+        1146834,
+        1146835,
+        1146836,
+        1146837,
+        1146838,
+        1146839,
+        1146840,
+        1146841,
+        1146842,
+        1146843,
+        1146844,
+        1146845,
+        1146846,
+        1146847,
+        1146848,
+        1146849,
+        1146850,
+        1146851,
+        1146852,
+        1146853,
+        1146854,
+        1146855,
+        1146856,
+        1146857,
+        1146858,
+        1146859,
+        1146860,
+        1146861,
+        1146862,
+        1146863,
+        1146864,
+        1146865,
+        1146866,
+        1146867,
+        1146868,
+        1146869,
+        1146870,
+        1146871,
+        1146872,
+        1146873,
+        1146874,
+        1146875,
+        1146876,
+        1146877,
+        1146878,
+        1146879,
+        1146880,
+        1638321,
+        1638322,
+        1638323,
+        1638324,
+        1638325,
+        1638326,
+        1638327,
+        1638328,
+        1638329,
+        1638330,
+        1638331,
+        1638332,
+        1638333,
+        1638334,
+        1638335,
+        1638336,
+        1638337,
+        1638338,
+        1638339,
+        1638340,
+        1638341,
+        1638342,
+        1638343,
+        1638344,
+        1638345,
+        1638346,
+        1638347,
+        1638348,
+        1638349,
+        1638350,
+        1638351,
+        1638352,
+        1638353,
+        1638354,
+        1638355,
+        1638356,
+        1638357,
+        1638358,
+        1638359,
+        1638360,
+        1638361,
+        1638362,
+        1638363,
+        1638364,
+        1638365,
+        1638366,
+        1638367,
+        1638368,
+        1638369,
+        1638370,
+        1638371,
+        1638372,
+        1638373,
+        1638374,
+        1638375,
+        1638376,
+        1638377,
+        1638378,
+        1638379,
+        1638380,
+        1638381,
+        1638382,
+        1638383,
+        1638384,
+        1638385,
+        1638386,
+        1638387,
+        1638388,
+        1638389,
+        1638390,
+        1638391,
+        1638392,
+        1638393,
+        1638394,
+        1638395,
+        1638396,
+        1638397,
+        1638398,
+        1638399,
+        1638400,
+        2293681,
+        2293682,
+        2293683,
+        2293684,
+        2293685,
+        2293686,
+        2293687,
+        2293688,
+        2293689,
+        2293690,
+        2293691,
+        2293692,
+        2293693,
+        2293694,
+        2293695,
+        2293696,
+        2293697,
+        2293698,
+        2293699,
+        2293700,
+        2293701,
+        2293702,
+        2293703,
+        2293704,
+        2293705,
+        2293706,
+        2293707,
+        2293708,
+        2293709,
+        2293710,
+        2293711,
+        2293712,
+        2293713,
+        2293714,
+        2293715,
+        2293716,
+        2293717,
+        2293718,
+        2293719,
+        2293720,
+        2293721,
+        2293722,
+        2293723,
+        2293724,
+        2293725,
+        2293726,
+        2293727,
+        2293728,
+        2293729,
+        2293730,
+        2293731,
+        2293732,
+        2293733,
+        2293734,
+        2293735,
+        2293736,
+        2293737,
+        2293738,
+        2293739,
+        2293740,
+        2293741,
+        2293742,
+        2293743,
+        2293744,
+        2293745,
+        2293746,
+        2293747,
+        2293748,
+        2293749,
+        2293750,
+        2293751,
+        2293752,
+        2293753,
+        2293754,
+        2293755,
+        2293756,
+        2293757,
+        2293758,
+        2293759,
+        2293760
+      ],
+      "source_admission": {
+        "RH_proved": false,
+        "ops": 10689574,
+        "peak_bytes": 17549336,
+        "rows_checked": 1440,
+        "status": "VERIFIED",
+        "uniform_source_bound_proved": false
+      },
+      "source_spec": {
+        "grid": 80,
+        "multipliers": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "theta": [
+          "1/2",
+          "17/31",
+          "4/7",
+          "2/3",
+          "5/7",
+          "4/5",
+          "7/8"
+        ]
+      }
+    },
+    {
+      "checker_operations": 18829448,
+      "elapsed_seconds": 5.948810497997329,
+      "producer_operations": 27822091,
+      "prospective_bytes": 53193000,
+      "scales": [
+        3276721,
+        3276722,
+        3276723,
+        3276724,
+        3276725,
+        3276726,
+        3276727,
+        3276728,
+        3276729,
+        3276730,
+        3276731,
+        3276732,
+        3276733,
+        3276734,
+        3276735,
+        3276736,
+        3276737,
+        3276738,
+        3276739,
+        3276740,
+        3276741,
+        3276742,
+        3276743,
+        3276744,
+        3276745,
+        3276746,
+        3276747,
+        3276748,
+        3276749,
+        3276750,
+        3276751,
+        3276752,
+        3276753,
+        3276754,
+        3276755,
+        3276756,
+        3276757,
+        3276758,
+        3276759,
+        3276760,
+        3276761,
+        3276762,
+        3276763,
+        3276764,
+        3276765,
+        3276766,
+        3276767,
+        3276768,
+        3276769,
+        3276770,
+        3276771,
+        3276772,
+        3276773,
+        3276774,
+        3276775,
+        3276776,
+        3276777,
+        3276778,
+        3276779,
+        3276780,
+        3276781,
+        3276782,
+        3276783,
+        3276784,
+        3276785,
+        3276786,
+        3276787,
+        3276788,
+        3276789,
+        3276790,
+        3276791,
+        3276792,
+        3276793,
+        3276794,
+        3276795,
+        3276796,
+        3276797,
+        3276798,
+        3276799,
+        3276800,
+        3932081,
+        3932082,
+        3932083,
+        3932084,
+        3932085,
+        3932086,
+        3932087,
+        3932088,
+        3932089,
+        3932090,
+        3932091,
+        3932092,
+        3932093,
+        3932094,
+        3932095,
+        3932096,
+        3932097,
+        3932098,
+        3932099,
+        3932100,
+        3932101,
+        3932102,
+        3932103,
+        3932104,
+        3932105,
+        3932106,
+        3932107,
+        3932108,
+        3932109,
+        3932110,
+        3932111,
+        3932112,
+        3932113,
+        3932114,
+        3932115,
+        3932116,
+        3932117,
+        3932118,
+        3932119,
+        3932120,
+        3932121,
+        3932122,
+        3932123,
+        3932124,
+        3932125,
+        3932126,
+        3932127,
+        3932128,
+        3932129,
+        3932130,
+        3932131,
+        3932132,
+        3932133,
+        3932134,
+        3932135,
+        3932136,
+        3932137,
+        3932138,
+        3932139,
+        3932140,
+        3932141,
+        3932142,
+        3932143,
+        3932144,
+        3932145,
+        3932146,
+        3932147,
+        3932148,
+        3932149,
+        3932150,
+        3932151,
+        3932152,
+        3932153,
+        3932154,
+        3932155,
+        3932156,
+        3932157,
+        3932158,
+        3932159,
+        3932160,
+        5242801,
+        5242802,
+        5242803,
+        5242804,
+        5242805,
+        5242806,
+        5242807,
+        5242808,
+        5242809,
+        5242810,
+        5242811,
+        5242812,
+        5242813,
+        5242814,
+        5242815,
+        5242816,
+        5242817,
+        5242818,
+        5242819,
+        5242820,
+        5242821,
+        5242822,
+        5242823,
+        5242824,
+        5242825,
+        5242826,
+        5242827,
+        5242828,
+        5242829,
+        5242830,
+        5242831,
+        5242832,
+        5242833,
+        5242834,
+        5242835,
+        5242836,
+        5242837,
+        5242838,
+        5242839,
+        5242840,
+        5242841,
+        5242842,
+        5242843,
+        5242844,
+        5242845,
+        5242846,
+        5242847,
+        5242848,
+        5242849,
+        5242850,
+        5242851,
+        5242852,
+        5242853,
+        5242854,
+        5242855,
+        5242856,
+        5242857,
+        5242858,
+        5242859,
+        5242860,
+        5242861,
+        5242862,
+        5242863,
+        5242864,
+        5242865,
+        5242866,
+        5242867,
+        5242868,
+        5242869,
+        5242870,
+        5242871,
+        5242872,
+        5242873,
+        5242874,
+        5242875,
+        5242876,
+        5242877,
+        5242878,
+        5242879,
+        5242880
+      ],
+      "source_admission": {
+        "RH_proved": false,
+        "ops": 18829448,
+        "peak_bytes": 32095256,
+        "rows_checked": 240,
+        "status": "VERIFIED",
+        "uniform_source_bound_proved": false
+      },
+      "source_spec": {
+        "grid": 80,
+        "multipliers": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "theta": [
+          "1/2",
+          "17/31",
+          "4/7",
+          "2/3",
+          "5/7",
+          "4/5",
+          "7/8"
+        ]
+      }
+    }
+  ],
+  "status": "COUNT_ADAPTIVE_OPERATOR_SEARCH_COMPLETE_UNIFORM_INNOVATION_OPEN",
+  "uniform_core_bound_proved": false,
+  "uniform_correlation_certificates": 36,
+  "uniform_head_bound_proved": false,
+  "uniform_innovation_proved": false,
+  "uniform_source_bound_proved": false
+}

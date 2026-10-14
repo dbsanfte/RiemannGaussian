@@ -1,0 +1,67 @@
+EXACT POSTHOC DUAL DIRECTIONS AND THE SCOPE OF THE OBSTRUCTION
+
+Outcome-conditioned analytical query of sealed dual-probe-002 only. No main
+artifact, frozen source or selection changed. Matrices/directions and hashes
+are preserved in cancellation_dual_directions_data.json. Numerical eigenvectors
+were proposals only; every reported violation is evaluated EXACTLY with rational
+arithmetic. No new certificate synthesis or target score was run.
+
+1. The same witness separates all C and all integerq>1 on this finite domain.
+The exact separator from the retry has lhs dot-1. Its monomial functional has
+constant-coordinate value0 at EACH of the four ordinary training instances
+X1,2,3,5 and at the auxiliary cubic-constraint instance. Thus changing prescribed
+critical budgetC X²ceil(X^(1/q)) changes its lhs dot by0. In the current fixed
+extended dictionary the ONLY q-dependent structural column is the constant
+critical-normalizer square, also annihilated because every constant coordinate
+is0. The growing-prime atoms use fixed root orders2/3, not programq. Other
+columns and the gamma0 auxiliary encoding are q-independent. Consequently the
+EXACT SAME y satisfies every square/slack nonnegativity and signed relation
+annihilation for every rationalC>=0 and every integerq>1, and still y(lhs)=-1.
+This proves infeasibility of THIS shared finite cone with the zero-cubic gate,
+not a false actual arithmetic bound or failure of a richer dictionary. The
+allC conclusion includes large finiteC: this is a nonconstant representation
+obstruction that constants cannot repair. It is not an allscale/RH theorem.
+
+2. Five-atom Gram query on the complete witness domain.
+For each region parent or child, define linear atoms at t:
+ prefix=sum_(n<=t)xn; half=sum_(n<=floor(t/2))xn;
+ even=sum_(n<=t,2|n)xn; mod3one=sum_(n<=t,n=1 mod3)xn;
+ prime=sum_(p<=t,p prime)xp.
+Form H_ij=sum_(ordinary traininginstancesX)sum_(t in regionblock)
+ y_X(P_i,t*P_j,t). The auxiliary encoding contributes nothing: it has no
+ordinary block interpretation. EVERY product monomial was checked present in
+this separator's complete domain; none was assigned an implicit zero. The
+5x5 matrices are exact symmetric rational matrices in the companion data.
+The original dictionary contains individual atom squares and ±1 pair-mix
+squares, which ensure only Hii>=0 and Hii+Hjj±2Hij>=0. Those conditions do
+NOT imply H PSD on arbitrary rational mixtures.
+
+3. Two exact small integer directions escape this witness.
+In atom order[prefix,half,even,mod3one,prime], the parent direction
+ v=(0,0,1,0,-2)
+corresponds to the grouped new square sum_(t in parent)(even_t-2prime_t)^2.
+Its exact dual value is
+ -31024751189958137134587043397195513866842544937479704949589 /
+ 2372619565185516511823250570368040745059651046703908201566580 <0.
+The child direction
+ v=(1,0,0,-2,0)
+corresponds to sum_(t in child)(prefix_t-2mod3one_t)^2.
+Its exact dual value is-1. These are complete shared region groups across all
+four ordinary training instances, with no contribution from the auxiliary row.
+Each square is nonnegative on EVERY real coefficient assignment; adding it
+would therefore invalidate this particular separator. It does not assume a
+Mertens, prime-distribution or character-correlation bound.
+The mod3 mixture is a concrete residue-sensitive signed interaction that the
+existing ±1 pair dictionary did not cover. It is not identified as a character
+sum theorem, and its finite dual value does not prove actual cancellation.
+
+4. Honest next step.
+Preserve these posthoc templates as witness-guided proposals, not original blind
+productions or learned allscale laws. A new independently frozen expansion may
+enumerate rational pair-mixture ratios generically (including coefficient2)
+rather than nominate just these winners. After addition, resynthesize and exact-
+check the FULL original target with shared weights; another separator may still
+exist. No finite feasibility follows merely from invalidating the old dual.
+New source/scale/product boundaries and any auxiliary-group empties remain
+explicit. Every resulting scalar budget still needs its exact asymptotic gate
+and uniform proof; no global critical control or RH progress is claimed here.

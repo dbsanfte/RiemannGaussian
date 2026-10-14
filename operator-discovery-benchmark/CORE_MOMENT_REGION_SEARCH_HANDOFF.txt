@@ -1,0 +1,133 @@
+DETECTOR SEARCH OVER MOMENT REGIONS AND ANALYTIC CENTERING, STAGE033
+
+Accepted input for next work: candidate10_moment_region_obligation.json
+Completed study: core-moment-region-results/pilot-001 (do not restart)
+Authoritative results: report.json, proof_search.json, verification.json
+Producer: core_moment_region_search.py
+Independent checker: check_core_moment_region_search.py
+Runner/ancestry: run_core_moment_region_search.py
+Analytic rules and audit: CORE_MOMENT_REGION_REVIEW_033.txt,
+ CORE_MOMENT_REGION_CHECK_033.txt
+
+What the detector actually did
+The prior turn paid the discarded tail and left a complete finite-cube
+obligation. This stage supplies a general unconditional moment-region
+library and a typed analytic-residue bridge. The detector itself searched
+all22 inherited pure A^p*K*E^m targets,1958 rational contours and199825
+moment/reflection/Holder allocations. Neither a preferred contour nor an
+allocation was supplied. Agents supplied and independently audited reusable
+rules; there were no runtime model calls, source observations or fitted
+constants inside the search.
+
+Imported moment orders are2,4,6,8,10,12. The first two work at fixed real
+parts>=1/2; the higher orders require, respectively, strict real parts
+>7/12,>5/8,>41/60,>5/7. Endpoints are not inferred from an infimum.
+Primary provenance: Ivic, On mean values of some zeta-functions in the
+critical strip, equations(1.3)-(1.5), https://arxiv.org/pdf/math/0311403.
+The2/4 rows retain the earlier fourth-moment import and reviewed transfer.
+Rational absolute powers (including halves, thirds and sixths) are supported.
+All Holder polytope vertices are enumerated exactly; the independent checker
+reconstructs them from active constraints.
+
+The new all-scale component bound
+All coefficient products below are Dirichlet convolution. Let
+ A=mu restricted to[1,U], c=sum_(d<=U)mu(d)/d,
+ E=delta+One*(c delta-A), K(n)=n^(-1/3), theta=2/3,
+ M=A_hat(theta)^2 E_hat(theta)^3,
+ H=K*A^2*E^3-(M/theta)J_theta,
+ J_theta(n)=n^theta-(n-1)^theta INCLUDING its unit.
+M is explicitly an ANALYTIC residue; ordinary cubic coefficient convergence
+is not asserted. E_hat(s)=1+zeta(s)(c-A_hat(s)) has a removable pole at1
+because c=A_hat(1). The complete function is used before contour shifting.
+
+The detector chose sigma=8/23 and epsilon=1/46. It reflected the six zeta
+powers to15/23 and used eighth moments at15/23 and47/69 with Holder weights
+3/4 and1/4. The dyadic Mellin powers before epsilon are-1 and-2/23; after
+paying epsilon they are-183/184 and-3/46. All height tails converge.
+Compact heights, the complete0<x<1 tail, every integer-cell correction,
+full source units and global Hardy channel history are retained.
+
+The resulting global discrete norm is
+ sum_(n>=1)|P_H(n)|^2*n^(-39/23) <= C_region*U^(150/23),
+with one fixed finite C_region independent of U,N,X. No numeric value is
+claimed. Hence, for EVERY integer U,N>=1 with U<=N^(1/24),
+ N^(-2) sum_(1<=n<=N)|P_H(n)|^2 <= C_region*N^(-3/92).
+This is a whole prefix, not a prefix restarted at the block edge.
+The already-paid E^2 component also obtains a stronger candidate bound
+(sigma6/23, exponent-16/69), but is not paid twice in source recovery.
+
+Full head and the saved finite cube
+The actual complete source before outerK is F=A^2*E^3-c^3D,
+D=One_[1,U], with analytic moment M_F=M-c^3D_hat(theta).
+Its centered prefix energy is bounded by
+ 2*C_region*N^(-3/92)+288*N^(-11/12).
+The complete One_U head and its finite residue are present.
+
+For the accepted032 cutoff r=floor(N^(3/4)), R=E restricted to[1,r],
+F_R=A^2*R^3-c^3D has normalized centered prefix energy bounded by
+ 4*C_region*N^(-3/92)
+ +576*N^(-11/12)
+ +11019960576*N^(-7/36)*(1+log N)^4
+ +47405481984*N^(-3/4).
+The same fixed N and r apply across the entire prefix1..N. Both padding
+terms and their cross, the nonzero analytic moment defect and all inner
+x/d<1 main terms are retained. This is O(N^(-3/92)) after absorbing the
+faster decaying logarithmic term into a fixed constant. Its proof depends
+on the independent full component norm and the prior transfer, not on a
+circular assumption that the finite cube was already bounded.
+
+Connection to the actual signed core
+The exact source scalar for the newly paid raw component is18. All144
+original channel/transport bindings are retained and independently checked.
+In the first binding the channel square1373/8, local/cutoff factor8 and
+source square18^2 give444852*C_region as the new paid constant.
+The full source decomposition is
+ g=P_old+P_033+Z033, Z033=Z_previous-P_033.
+The opposite18*M*J_theta/theta remains in Z033, along with every other
+source companion, original unit, prime/composite contribution and exact-e.
+The two recovery directions are explicitly
+ S_g<=8*S_Z033+8*C_033+4*C_prev+2*C_old,
+ S_Z033<=8*S_g+8*C_old+4*C_prev+2*C_033.
+The original sufficient logarithmic target remains unchanged. Historical
+ancestor statuses stay in the input; current payments are recorded under
+moment_region_search.source_reduction, which is the current residual.
+
+This physical component proof does NOT establish the old fixed-sigma9/20
+low Mellin Gram bound with its particular U^(12/5) cost. That separate
+obligation remains open. The entire signed core, ordinary cubic moment and
+RH remain unproved. No formal proof-assistant verification is claimed.
+
+Why the next search must change mechanism
+The same raw component U power holds for arbitrary complex |a_n|<=1 with
+c=sum a_n/n: |A(s)|<=U^(1-sigma)/(1-sigma) and
+|c-A(s)|<=2U^(1-sigma)/(1-sigma). Thus this progress comes from a stronger
+proof language, not a new Mobius-specific exponent gain. No generic
+mu*One=delta support identity is inferred.
+
+The detector also computes an optimistic limitation of this proof language.
+Even if all moment orders at all effective lines>=1/2 were granted, the
+reflected high branch requires sigma>(m-1)/(2m). With the current absolute
+finite-factor cost U^(2(p+m)(1-sigma)), the quartic case p2,m4 has best
+possible energy infimum1/16, already positive. All20 remaining m4..23
+targets fail this optimistic gate. This is NOT an arithmetic lower bound
+or impossibility theorem. It says that merely importing more standalone
+moments cannot close those targets in this grammar.
+
+Next priority0 is still the complete signed residual. Search for joint
+constructions, signed finite-factor control, correlations or a different
+recovery that preserves the cross terms and opposite drifts. The new input
+records explicit per-target mechanism requests and an acyclic proof graph.
+A separate preliminary034 analytical review explores support quotients and
+global pole/moment defects; it is not part of this accepted033 certificate.
+
+Validation and resources
+Actual study ran once: session21647, terminal exit0.
+Status: MOMENT_REGION_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE.
+Root11 distinct tests/12 invocations: sole10-test suite plus2 focused tests
+for the added actual-source guards. Checker18 distinct tests/18 invocations
+in its sole suite. All29 distinct tests/30 invocations passed; no failures.
+No old study or old full test suite was rerun.
+Development17,772,411 charged operations; study51,066,189;
+inclusive68,838,600. Runtime48.835497seconds; peak704032KiB.
+The runtime cap is1800seconds, memory16GiB, inclusive work cap1,000,000,000.
+All13 frozen inputs/sources use direct byte snapshots; no hashes.

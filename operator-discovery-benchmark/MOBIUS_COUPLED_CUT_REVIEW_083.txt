@@ -1,0 +1,200 @@
+BOOLEAN COUPLED-CUT PRICE AND ALL-SCALE OUTER MOTIF REVIEW083
+
+Scope and disposition
+
+The Boolean trace price is valid on the full physical squarefree coordinates;
+it genuinely strengthens082's independent group-box price. The old082 dual
+cannot be transferred merely by deleting its clamp. Coupled cut profiles also
+genuinely exceed the fixed homogeneous moment language. This review supplies
+one constructive new paid O(u) coefficient-price motif: a matched pair of
+unit-balanced cuts n and N-n removes the quadratic-price outer block jointly,
+including all actual prime/composite pairs. The remaining full signed cross
+kernel is unpaid. No original source bound or RH conclusion follows.
+No frozen082 file is changed, and no old science/tests or raw source values
+are queried. This is a mathematical review for the proposed083 grammar.
+
+1. Boolean price and exact dual
+
+Every retained physical coordinate is squarefree, including unit, so actual
+mu(n)^2=1. For symmetric A, actual mu^T A mu<=B(A), where
+B(A)=trace(A)+2sum_(m<n)|A_mn|. Diagonal entries may be negative. This is a
+correct finite upper price, not an entrywise/PSD upper bound for arbitrary
+vectors of norm<=1. An implementation which groups coordinates and substitutes
+a group mean must restore within-group Boolean variance exactly; old082
+aggregate groups cannot use this trace formula unchanged.
+
+Incidence zero additions have actual quadratic form0; positive Gram additions
+have actual quadratic form>=0. Thus A=A0+sumthetaZ+sumpositiveGram satisfies
+actual original drift<=actual mu^T A mu<=B(A). A negative finite B is allowed;
+it simply bounds a potentially negative drift. It is not a negative energy.
+
+For arbitrary rational |nu_mn|<=2, L(A)=trace(A)+sum_(m<n)nu_mn A_mn<=B(A).
+Minimizing L independently over theta in[-16,16] and Gramweights[0,16] gives
+LB=L(A0)-16sum|L(Z)|+16sum min(0,L(vv^T)). The diagonal coefficient is fixed1,
+not a variablelambda. Ordered/unordered factors2 must be checked exactly.
+Feasible LP dual rounding uses exact clipping to[-2,2]. This lower bound
+concerns this certificate price cone, not actual arithmetic drift or a
+counterexample to the desired bound.
+
+2. Correct cut identity and explicit unit balancing
+
+C_K(m)=floor(K/m)-1[m=1] forK>=1, C0=0. For integer0<=K<=N,
+sum_(squarefree m<=N)mu(m)C_K(m)=0. At K0 the unit subtraction is absent.
+For index-dependent K(n), geometry weightw(n), symmetrization gives
+Z_mn=[w(n)C_K(n)(m)+w(m)C_K(m)(n)]/2 with actual zero quadratic form.
+No mu(mn) query or product horizonN^2 is required for this algebraic identity;
+complete physical pair geometry is nevertheless quadratic to materialize.
+
+ForN>=2 define c(K)=max(K-1,0) and
+D_K(m)=C_K(m)-c(K)/(N-1) C_N(m).
+Every D row has actual zero moment and D_K(1)=0 exactly. ForN1 allC rows are
+already0, so defineD=C without division. Ifw(1)=0, the entire symmetric unit
+row/column is zero. Otherwise Z_1n=w(1)D_K(1)(n)/2 remains and must be priced.
+This is not the former rawunit edge, which contained w(n)(K(n)-1)/2 and could
+alone cost orderu^2. Unit-balanced identities remove that real cost without
+an unknown arithmetic normalization.
+
+Fixed source or source-product weights havew(1)=0 for sufficiently largeu:
+u>=30 makesf0(1)=0 for both unfolded source kernels. Prime-filter weights
+also vanish atunit when primality is conventionally restricted ton>=2.
+Composite filters must explicitly define whetherunit is included; unit is
+neither prime nor composite in ordinary arithmetic. Weight1 requires pricing
+the residual symmetric unit row rather than silently discarding it.
+
+3. Exact matched-cut lemma, including the n=N endpoint
+
+UseN=floor(u/4), outerI=(floor(u/5),N], andu>=30 (a finite smaller base remains
+separate). Both original unfolded kernels have f(n)=[-1,0,...] onI. Therefore
+A0_mn=H00 for allouterm,n, H00>=1. Use two unit-balanced cut templates
+K1(n)=n andK2(n)=N-n, with the SAME geometry weightw=f0^2. OnI w=1;
+atunitw0 foru>=30. LetZpair be the SUM of their symmetric kernels.
+
+For m,n inI, m!=n, their ratio is<2 andm+n>N. Hence
+floor(n/m)+floor(m/n)=1,
+floor((N-n)/m)=floor((N-m)/n)=0.
+Write e_n=1[n=N]. Then c(n)+c(N-n)=N-2+e_n. Since C_N(m)=1 onI,
+
+ Zpair_mn=-1/2+(2-e_m-e_n)/(2(N-1)), m!=n;
+ Zpair_nn=(1-e_n)/(N-1).
+
+The endpoint correction followsC0=0 whenn=N; assigning c(0)=-1 would be wrong.
+Choose equal constant coefficients theta1=theta2=2H00. The corrected block is
+
+ A_mn=H00*(2-e_m-e_n)/(N-1), m!=n,
+ A_nn=H00+2H00*(1-e_n)/(N-1).
+
+All offdiagonal coefficients are betweenH00/(N-1) and2H00/(N-1). Forc squarefree
+outer coordinates, the whole block Boolean price is at most
+H00*c+2H00*c/(N-1)+2H00*c(c-1)/(N-1)
+<=3H00*N+4H00 forN>=2.
+Thus this FULL outer block has uniform O(u) coefficient price, independent
+of prime counts, signed arithmetic cancellation or PNT. All actual prime,
+prime/composite and composite/composite outer pairs participate. It removes
+the previous untouched positiveprime block at the level of the complete
+corrected coefficient kernel. The zero identities transfer its cost into
+other coordinates/cross terms; their remaining price is still unpaid.
+
+For the current energies H00 is1,5/4 or2, so requiredcoefficients2,5/2 or4
+lie inside[-16,16]. They should be discovered by ordinary LP/search. Do not
+inject these coefficients as a winning proposal. The lemma is an independently
+checkable semantic proof rule after an exact proposed control is selected.
+
+4. Detector-recognizable proof condition, not a hardcoded source value
+
+A generic motif certificate can contain two descriptors, exact common weight
+profile, scalar theta, and intervalI with certified source vectorv0 and
+weightconstantw0. Require cut1(n)=n and cut2(n)=N-n symbolically, both balanced,
+both actual coefficients equaltheta, and theta*w0=2Astar, whereAstar is the
+registered target's constant outer coefficient (H00 here). Coefficients and
+weights can be arbitrary rationals; theta may be negative whenw0<0. E.g.
+w=f0 onouter givesw0=-1 andtheta=-2H00, also valid for this block.
+
+The checker independently verifies outer floor inequalities, unit convention,
+source/kernel binding, equality of the two controls, exacttheta*w0 identity,
+endpoint formula and count-price bound. It can report VERIFIED_UNIFORM_OUTER
+COEFFICIENT_PRICE_MOTIF. This is a finite symbolic all-scale pattern with a
+geometry-paid bound; it does not fit a constant from evaluated source values.
+
+If the selected program contains additional controls/Grams, the rule must
+account for ALL their outer contributions. Either prove them identicallyzero
+onI or include their exact symbolic contribution inAstar and verify the final
+block formula. Otherwise admit only the isolated motif and export the other
+outer contribution as an explicit residual kernel. A motif relation alone
+cannot certify the whole selected program's outerprice or full drift.
+
+Split the complete corrected target exactly as outerblock+crossblock+inner
+block+unit/base terms. Print the literal remaining coefficient kernel after
+the selected controls, and keep signed cross terms in the arithmetic identity.
+The paid outer price can be subtracted from the full finite price accounting;
+never label its complement paid merely because that finite remainder shrank.
+LPs may prefer another control due to transferred cross costs. Failure to
+select this motif is not a refutation of its lemma; discovering it requires
+a grammar/diagnostic rewarding its independently paid block coverage as well
+as optimizing the whole price, with both criteria declared before selection.
+
+5. Why this is growing joint information and where the cost moves
+
+The coordinate-dependent pair n,N-n uses a growing family of complete divisor
+identities, and its exact carry kernel depends jointly onm andn. For m>1,
+letR_N(n,m)=floor(N/m)-floor(n/m)-floor((N-n)/m), which is in{0,1}. Then
+
+ D_n(m)+D_(N-n)(m)=(1-e_n)/(N-1)*floor(N/m)-R_N(n,m).
+
+The unit term is separately0. R is a genuine index-dependent floor carry,
+not a fixed separable profile. Onouterpairs both ordered carries are1,
+which supplies the negative signed correction that cancels the positive
+outer target. Elsewhere R varies, and the small prefactor multiplies the
+large floorN/m. These lower/cross coefficients need their own joint price.
+
+Even on the original G source, the inner positive band(u/10,u/8] has delay
+vector[1,-1,0,...], not simply+e0. Its target coefficient is
+H00-2H01+H11-rH00 (interpreting absentH entries as0). A correction scaled
+only byH00 must NOT be described as paying that inner block. The delayed
+negative energy and memory cross terms remain insideT. The second unfolded
+kernel adds further small fractional bands; they also remain joined.
+
+On a cross pair m inpositiveband,n inouterband, the raw carry changes at
+n=2m. This suggests a concrete next growing arithmetic control: matched
+balancedcuts min(N,2n) and its complement, with a geometry weight restricted
+to the innerband, distinguish the cross regions n>2m andn<=2m. Equality
+n=2m is a separate multiplicative boundary with onlyO(u) physicalpairs;
+it must be checked/paid, not ignored as measurezero. This exposes a genuine
+cofactor threshold the detector can synthesize, rather than increasing a
+fixed floor-moment roster. It supplies a new cross-control direction, not a
+proved complete uniform estimate. It may simply transfer cost farther inward.
+
+6. Conservative obstruction diagnostics which remain useful
+
+A PSD formal covariance M=zz^T+diag(1-z_n^2), |z_n|<=1, hasdiag1 and supplies
+Boolean dualnu_mn=2z_mz_n. Unlike082's covariance, its diagonal correction
+must be included. L(A)=z^TAz+sum_n(1-z_n^2)A_nn. For coupledzero templates,
+L(Z) need not vanish, even if aggregate fixed floor moments vanish. This is
+exactly how the coupled language can escape the old witness. Never import
+an082 rank witness as a083 obstruction without recomputing these functionals.
+
+For rawcuts whoseK(n)<=floor(u/5) on allouter coordinates, choosez=1 onouter
+and0 elsewhere. Their outeroffZ iszero; L(Z)=traceZ. Its absolute price is
+bounded by W*Kmax*(1+ceil(log2N)) for boundedweightW. Source diagonal costs
+onlyO(u), so fixed coefficient boxes leave an orderu^2 price obstruction
+when these trace/penalty terms are lower order. For balanced globally
+sublinearcuts, the subtractedC_N term has coefficientO(Kmax/N), hence the
+additional outer functional costs at mostO(u*Kmax); stilllower order if
+Kmax=o(u). Full/linear coupledcuts, complements nearN and prime/composite
+filters need separate analysis; no generic impossibility is assumed here.
+
+Actualprime/composite filters preserve physical coordinates and signed target
+cross terms; they are arithmetic descriptors, not additional proof that a
+formal sign equalsmu. If a dual countermodel is required to fix actualprime
+signs, add those affine/covariance constraints explicitly. Simply labeling
+weights prime does not impose them. Conversely actual primal arithmetic
+identities remain valid for filteredgeometry weights without any sign fit.
+
+Disposition
+
+The new Booleanprice and unit-balanced coupledcut grammar are mathematically
+legitimate. The matchedn/complement motif pays an actual all-scale wholeouter
+coefficient block with no unpaid local arithmetic leaf. The complete remaining
+joint cross/inner kernel is explicit and unpaid. A successful next pilot should
+measure discovered motif coverage, recompute old-witness separation in the
+correct Boolean dual, and search cofactor/carry controls on the exported
+remaining kernel. No source/RH conclusion is authorized by this partial lemma.

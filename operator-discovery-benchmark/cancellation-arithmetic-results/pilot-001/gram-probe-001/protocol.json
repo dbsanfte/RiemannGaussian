@@ -1,0 +1,91 @@
+{
+  "RH_proved": false,
+  "arithmetic_provenance": "actual factor and prime predicates; supplied arithmetic relations; no signed response table in learner",
+  "atoms": [
+    "prefix",
+    "half",
+    "even",
+    "mod3one",
+    "prime"
+  ],
+  "calibration": "extended supplied unsigned bound, constant slack allowed explicitly",
+  "conditioning": "posthoc language response to prior cone obstruction; no independent discovery claim",
+  "dual_limits": {
+    "max_denominator": 1044388881413152506691752710716624382579964249047383780384233483283953907971557456848826811934997558340890106714439262837987573438185793607263236087851365277945956976543709998340361590134383718314428070011855946226376318839397712745672334684344586617496807908705803704071284048740118609114467977783598029006686938976881787785946905630190260940599579453432823469303026696443059025015972399867714215541693835559885291486318237914434496734087811872639496475100189041349008417061675093668333850551032972088269550769983616369411933015213796825837188091833656751221318492846368125550225998300412344784862595674492194617023806505913245610825731835380087608622102834270197698202313169017678006675195485079921636419370285375124784014907159135459982790513399611551794271106831134090584272884279791554849782954323534517065223269061394905987693002122963395687782878948440616007412945674919823050571642377154816321380631045902916136926708342856440730447899971901781465763473223850267253059899795996090799469201774624817718449867455659250178329070473119433165550807568221846571746373296884912819520317457002440926616910874148385078411929804522981857338977648103126085903001302413467189726673216491511131602920781738033436090243804708340403154190336,
+    "max_horizon": 80,
+    "max_rows": 1200,
+    "max_variables": 40000,
+    "max_work": 30000000,
+    "time_limit": 60
+  },
+  "dual_rule": "if critical primal is not accepted, one sufficient dual search forces all 20 Gram offdiagonal moments zero",
+  "final": "fixed learned scalar weights and both matrices, no refit; complete original target",
+  "final_scales": [
+    11,
+    13
+  ],
+  "global_bound_proved": false,
+  "historical_coefficient_overlap": true,
+  "limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 1024,
+    "max_degree": 12,
+    "max_denominator": 1000000,
+    "max_horizon": 80,
+    "max_monomials": 30000,
+    "max_operations": 200000000,
+    "time_limit": 120
+  },
+  "objective": "structural scalar L1 plus shared Gram traces, scalar slack cost zero",
+  "parent_source_seal_sha256": "4884077a770b0b23efd89b7bcf6fd47824220d62e521832b1ce21ca2340fba04",
+  "parent_training_sha256": "4f42b6afc8f4dbb9eefb106f09ed0ed9440b4f93b0bdbd4a6ec85eab1c2c543c",
+  "parent_verification_sha256": "53ec1cd258e26501ea23540445b71a67e65f935c4a771ad06579ff2ece5f4eeb",
+  "programs": [
+    {
+      "C": 32,
+      "allow_constant_slack": true,
+      "claim": "critical",
+      "constraint": "zero_cubic",
+      "dictionary_mode": "extended",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "allow_constant_slack": true,
+      "claim": "unsigned_calibration",
+      "constraint": "none",
+      "dictionary_mode": "extended",
+      "q": 2,
+      "target": "mu"
+    }
+  ],
+  "regions": [
+    "parent",
+    "child"
+  ],
+  "representation": "two common 5 by 5 rational PSD matrices, fixed across all ordinary scales; auxiliary Gram blocks empty",
+  "runtime": {
+    "clarabel": "0.11.1",
+    "cvxpy": "1.7.5",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "scipy": "1.15.3"
+  },
+  "schema": 1,
+  "solver_byte_replay_guaranteed": false,
+  "tests": [
+    "test_cancellation_gram_language",
+    "test_cancellation_gram_synthesis",
+    "test_cancellation_gram_diagonal_dual",
+    "test_check_cancellation_gram",
+    "test_check_cancellation_gram_run",
+    "test_run_cancellation_gram_probe"
+  ],
+  "training_scales": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "unseen_prime_holdout": false
+}

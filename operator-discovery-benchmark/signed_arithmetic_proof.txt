@@ -1,0 +1,291 @@
+SIGNED ARITHMETIC KERNEL CERTIFICATES: SUPPLIED LEMMAS AND UNKNOWN REMAINDER
+
+Status and provenance.
+This new backend supplies universal algebra and elementary actual-arithmetic
+lemmas. A numerical learner selects frozen rational kernel parameters; these
+lemmas do not infer those parameters or supply a nominated winning vector.
+Numerical tests verify implementations, not global estimates. No unsmoothed
+critical Mobius bound or RH proof is claimed. Previous frozen stages are
+unchanged. The coprime-squarefree theorem and its usual dyadic defect instance
+were already available in the critical-defect stage; the reusable arbitrary
+kernel certificate and explicit obligations generalize that component method.
+
+1. Kernel syntax, exact moments, and radical certificates.
+A kernel w is a continuous polygon with rational knots (a_i,y_i),
+0=a_0<a_1<...<a_m=L, y_m=0, and w(t)=0 for t>=L. Its domain is t>=0.
+The left value y_0 can be nonzero; this creates no discrepancy boundary cost
+because E_k(0)=0. The certificate records whether BOTH endpoint values vanish,
+but only the compact-support/right endpoint must vanish. Zero extension to
+negative t is not part of this kernel's declared domain.
+
+Integral w = sum_i (a_(i+1)-a_i)(y_i+y_(i+1))/2, exactly rational.
+For homogeneous W_X(t)=X w(t/X), every real X>0 is allowed.
+Define V(w)=Integral_0^L sqrt(t)|dw|(t). For slope m_i on [a,b], its
+contribution is |m_i|(2/3)(b sqrt(b)-a sqrt(a)). The backend encloses each
+radical using integer squares, never floating comparisons: for v=p/q>=0 in
+lowest terms and B=2^bits, j=isqrt(p q B^2),
+ j/(qB) <= sqrt(v) <= (j+1)/(qB),
+with identical bounds if j^2=p q B^2. Consequently substituting the upper
+radical at b and the lower radical at a is a rigorous rational upper bound
+U(w)>=V(w). Precision bits belongs to the certificate; it changes the valid
+upper constant, not the theorem. AST and all segment evidence are recomputed
+on verification, so altering a moment, slope or cost cannot be admitted.
+
+Dilate syntax is arbitrary rational positive s and rational c:
+ w(t)=sum_s c_s K_s(t), K_s(t)=(2s-max(s,t))_+.
+Knots are the union of 0,s,2s. Its exact integral is
+ (3/2)sum_s c_s s^2.
+Learned rational zero-moment combinations are admitted without sign restrictions.
+No particular vector is required for the component theorem. General polygons
+can be admitted by their rational integral even when they have no dilate form.
+Nonzero-integral kernels have a density main term and are not admitted as
+zero-moment cancellation components. Identity/zero kernels remain valid but
+provide no information about the dense arithmetic remainder.
+
+2. Actual coprime-squarefree discrepancy, uniform with an explicit charge.
+Mu is the COMPLETE Dirichlet inverse of One on positive integers, so
+sum_(d|n) mu(d)=1_(n=1). Finite induction or factorization gives its usual
+squarefree values and multiplicativity. A matching finite array cannot
+establish this all-scale provenance. The backend's finite evaluations verify
+complete divisor constraints through the entire required endpoint.
+For integer k>=1 and real y>=0, define
+ Q_k(y)=sum_(1<=g<=y,(g,k)=1) mu(g)^2,
+ c_k=(1/zeta(2))*product_(p|k) p/(p+1), A_k=2^omega(k)+2.
+Then |Q_k(y)-c_k y|<=A_k sqrt(y).
+Proof: mu(g)^2=sum_(d^2|g)mu(d). Only (d,k)=1 contributes. Inclusion-exclusion
+counts integers j<=y/d^2 coprime to k as (phi(k)/k)y/d^2 with error at most
+2^omega(k). There are at most sqrt(y) d. Extending the main sum to infinity
+costs at most 2sqrt(y), since for y>=1 the absolute d^-2 tail beyond floor
+sqrt(y) is at most 2/sqrt(y). The absolutely convergent Euler product gives
+c_k above. For 0<=y<1, Q_k=0 and c_k<=1 complete the claim. No prime number
+theorem, random signs or zero-free region is used. Distinct-prime count and
+trial-factorization operation count are exposed; growth of k never disappears
+into a fixed uniform constant.
+
+For a continuous BV f on [0,Y], E_k=Q_k-c_k t obeys
+ sum_(g<=Y,(g,k)=1)mu(g)^2 f(g)-c_k Integral_0^Y f(t)dt
+ =f(Y)E_k(Y)-Integral_0^Y E_k(t)df(t).
+This uses right-value integer atoms, continuous f, and E_k(0)=0, so there are
+no unspecified jump corrections. Polygon weights satisfy all these conditions.
+Put Y=L X/r and f(g)=X w(rg/X), integer r>=1. If Integral w=0, f(Y)=0,
+the density term vanishes exactly. The substitution t=rg/X gives
+ Integral_0^Y sqrt(g)|df(g)| = X^(3/2) V(w)/sqrt(r).
+Therefore for EVERY real X>0, EVERY positive integer k,r, actual Mu,
+ |sum_(g>=1,(g,k)=1)mu(g)^2 X w(rg/X)|
+ <= A_k U(w) X^(3/2)/sqrt(r).
+This is the global component theorem. The backend also supplies an entirely
+rational upper coefficient by enclosing sqrt(1/r). It does NOT bound the
+signed combination over all primitive pairs. Its global flag is conditional
+only on the checked kernel conditions and declared actual Mu provenance;
+the always-false full-signed-bound flag has a different scope.
+
+3. Exact full coupled Mobius energy and partition.
+Write M(n)=sum_(j<=n)mu(j), M(0)=0 and
+ A(N)=sum_(n=N)^(2N-1)M(n)^2, integer N>=1.
+K_N(m) counts exactly the n in [N,2N) with n>=m, at every integer m>=1;
+its value at 2N is zero. Expanding the COMPLETE square gives
+ A(N)=sum_(a,b>=1)mu(a)mu(b)K_N(max(a,b)).
+Thus if sX are integers,
+ F(X)=sum_s c_s A(sX)
+     =sum_(a,b>=1)mu(a)mu(b) X w(max(a,b)/X).
+All cross terms are present; these expressions do not treat the signs as
+independent. If scales are arbitrary rationals and sX is not integer, the
+quadratic polygon expression remains well-defined but must not be relabeled
+as an integer block energy A(sX). The learner/root must declare this domain.
+
+For arbitrary polygon w, X a positive integer, let T=floor(LX) and
+W(n)=X w(n/X). Then an O(T) independent evaluation is
+ F_w(X)=sum_(n=1)^T M(n)^2 [W(n)-W(n+1)].
+This follows by telescoping the increments M(n)^2-M(n-1)^2; W(T+1)=0.
+It is valid even when T is a zero-weight endpoint and when slopes change at
+noninteger locations. The arithmetic evaluation cost is not a cancellation
+estimate.
+
+For every a<b, the UNIQUE substitution a=g u,b=g r has gcd(u,r)=1,u<r.
+Squarefreeness gives exactly
+ mu(gu)mu(gr)=mu(u)mu(r)mu(g)^2 1_((g,ur)=1).
+Hence for any ONE shared integer cutoff B>=0,
+ F_w(X)=D_w(X)+P_(w,B)(X)+R_(w,B)(X),
+ D=sum_n mu(n)^2 W(n),
+ P=2sum_(u<r<=B,(u,r)=1)mu(u)mu(r)
+                  sum_(g>=1,(g,ur)=1)mu(g)^2 W(gr),
+ R=2sum_(u<r,(u,r)=1,r>B)mu(u)mu(r)
+                  sum_(g>=1,(g,ur)=1)mu(g)^2 W(gr).
+All sums have gr<=LX; larger terms vanish. No pair is lost, no independent
+cutoff is applied per dilate, and no sign is asserted for R. Finite R can be
+computed EXACTLY as F-D-P; this avoids dense pair enumeration and does not
+replace its mathematical obligation by a presumed sign. Tests independently
+enumerate dense pairs and compare every residual at small endpoints.
+
+For a zero-moment kernel the already-proved component theorem yields
+ |D|<=3 U(w) X^(3/2),
+ |P|<=2 U(w) X^(3/2) S_B,
+ S_B=sum_(u<r<=B,(u,r)=1)|mu(u)mu(r)|[2^omega(ur)+2]/sqrt(r)
+     <=3 B^(3/2)(1+log B)^2 for B>=1.
+Indeed 2^omega(ur)+2<=3 tau(u)tau(r),
+sum_(u<r)tau(u)<=r(1+log r), and
+sum_(r<=B)tau(r)<=B(1+log B) prove this bound. B=0 or 1 has empty P.
+B=floor(X^(1/3)) gives O_w(X^2(1+log X)^2); every fixed positive epsilon
+absorbs its logarithm with a finite epsilon-dependent constant. If w or its
+term count/coefficients vary with X or q, U(w) and all costs must be charged.
+The dense signed R remains entirely unbounded at critical strength here.
+
+4. Conditional positive dyadic stencil bridge; not an admitted inequality.
+After merging equal scales and removing zero coefficients, check scales are
+integer powers of two, S=max s>1, c_S=1, lower c_s<=0 and sum c_s s^2=0.
+Then p_s=(-c_s)s^2/S^2>=0 and sum_(s<S)p_s=1. IF there is a finite C>=0
+independent of X such that for EVERY dyadic integer X>=1,
+ sum c_s A(sX)<=C X^(2+epsilon), epsilon>0,
+then E(n)=A(n)/n^2 obeys, at n=SX,
+ E(n)<=sum p_s E(sn/S)+(C/S^(2+epsilon))n^epsilon.
+Every argument sn/S is a smaller dyadic integer. Keeping
+H=max_(dyadic 1<=n<S) E(n), a running-maximum induction gives the safe bound
+ E(n)<=H+C n^epsilon/[S^2(1-2^(-epsilon))]
+for every dyadic n>=1. Initial scales are finite and cannot be dropped.
+A ceil RHS C X^2 ceil(X^epsilon) is covered by replacing C with 2C.
+Mixed lower signs or non-dyadic scales do not receive THIS bridge; they still
+receive their exact kernel and valid component certificates. The backend
+labels this bridge conditional and never marks its premise proved.
+
+An RH-strength conclusion requires a positive schedule epsilon(q)->0,
+EVERY integer q>=q0, finite C_q independent of X, and ALL dyadic X. A finite
+q table does not supply this premise or its cofinal tail. These energy bounds
+would give the usual zero-exclusion bridge: for any sigma>1/2 choose epsilon
+small enough that sum over dyadic blocks of M(n)^2 n^(-2sigma'-1) converges
+with 1/2<sigma'<sigma. Cauchy then gives absolute convergence of the M-Mellin
+integral in Re(s)>1/2, representing 1/zeta(s) from its original Re(s)>1
+identity. Holomorphy excludes zeros there, and the functional equation gives
+RH. This conditional reasoning never fills the missing actual F or R bound.
+
+5. Filtered actual Liouville/squarefloor calibration.
+Declare IndicatorSquares(n)=1 if n is a positive square, else 0, and
+lambda=Mu*IndicatorSquares. Complete Mu*One=Unit gives exactly
+ lambda*One=IndicatorSquares.
+Prime-power coefficients of lambda are (-1)^j, so this is the actual
+Liouville sequence, not an anonymous unrelated generator. For EVERY integer
+x>=0, including x=0,
+ sum_(d<=x)lambda(d)floor(x/d)=Prefix(lambda*One,x)=floor(sqrt(x)).
+Consequently the FILTERED signed sum lies between 0 and sqrt(x). This is a
+useful exact all-scale signed arithmetic calibration: the unsigned sum is
+sum_(d<=x)floor(x/d)>=x, so its square-root bound uses actual signs/constraints.
+It is NOT a bound for the ordinary unsmoothed prefix of lambda or Mu and is
+not an RH estimate. The sparse root-feature law is learned from responses
+first; a separate analytical admission recognizes its frozen canonical
+floor_root(q=2,offset=0) coefficient one via the supplied convolution theorem.
+Other polynomial/divisor/root features can be present in the learner's broad
+dictionary. This backend only admits laws it proves; unrecognized exact-looking
+fits remain unresolved, not refuted or globally accepted. A supplied theorem
+recognizer is proof-method bias and is not a winning vector given to discovery.
+
+6. Independently reviewed coupled formula and actionable residual route.
+The full energy expansion and primitive partition above are mathematically
+exact with all endpoints. Mu*One=Unit constrains each complete coefficient,
+but neither the convolution null relation nor the squarefree density alone
+controls the signs of mu(u)mu(r) across the dense residual. Positivity of an
+auxiliary Gram only helps after its complete cross terms and unit forcing cost
+are proved. Dropping the residual or applying a diagonal-only Gram estimate
+would be a gap. The backend preserves these boundaries explicitly.
+
+A tractable NEW residual feature route, not a proved bound, is to regroup the
+EXACT same R by the remaining shared factor rather than primitive arity:
+ R=2sum_(g>=1)mu(g)^2
+       sum_(r>B,(r,g)=1)mu(r)W(gr) T_(gr)(r-1),
+ T_k(y)=sum_(1<=u<=y,(u,k)=1)mu(u).
+Here g<=floor(LX/(B+1)); every equality/coprimality constraint is retained.
+T_k has exact complete divisor/inclusion-exclusion rewrites, but no supplied
+square-root estimate. This exposes signed coupled prefix/bilinear features at
+small shared g, including g=1 (which must not be omitted), and reciprocal
+cutoffs. A learner can search frozen rational combinations of dyadic r-shells,
+shared-g shells, floor differences and nonnegative coupled correlation energies.
+Both displayed R expressions and every shell complement are exact identities.
+Candidate upper bounds must apply to the TOTAL R, possibly with a telescoping
+nonnegative potential; fitting favorable shells separately is insufficient.
+Any Cauchy expansion retains ALL off-diagonal correlations. This route makes
+the missing signed estimate measurable and typed, without assuming it.
+
+For the dyadic energy stencil, D/P are already subcritical up to a fixed
+logarithm. A genuinely useful new all-scale proof would bound R from above
+by a cofinal C_q X^2 ceil(X^epsilon(q)) family, with any potential telescoped
+and nonnegative and all initial scales/cutoff changes charged. Present kernels,
+finite fits, identities and filtered squarefloor calibration do not provide
+that premise. Higher arities retain full collision patterns, modulus factors,
+coefficient norms and operation/bit costs; no compression is counted as RH gain.
+
+7. Exact energy-only bridge obstruction: more moments can erase the target.
+For positive scales and rational coefficients define P(t)=sum_s c_s s^t.
+If an integer t>2 has P(t)<=0, the nonnegative abstract energy A(X)=X^t
+satisfies sum c_s A(sX)<=0 for EVERY X>0. Nevertheless it does not satisfy
+A(X)=O(X^(2+epsilon)) for any epsilon<t-2. Thus even a zero-constant all-scale
+one-sided stencil inequality cannot imply critical energy from the energy
+recurrence alone. This is a structural bridge obstruction, NOT a counterexample
+to any conjecture requiring complete actual Mu*One=Unit.
+
+If at least the first two kernel moments vanish, P(2)=P(3)=0: the cubic
+countermodel is annihilated exactly. More generally P(3)<=0 already supplies
+that obstruction, without demanding more moments. The backend tests exact
+rational P(3),P(4) by default and records which monomial models qualify.
+The t=4 model only tests an unconstrained energy recurrence: unlike t=3 it is
+incompatible with the supplied actual trivial cubic upper energy bound.
+Additional arithmetic/upper-growth premises can therefore remove some abstract
+countermodels; they must be stated and proved rather than inferred numerically.
+
+Cubic growth is genuinely realized by the noncancelling coefficient sequence
+a(n)=1, whose prefix is n and whose exact block energy is
+ A_block(X)=(7/3)X^3-(3/2)X^2+(1/6)X.
+For the legal zero-quadratic/cubic stencil c_1=32,c_2=-12,c_4=1 this gives
+sum c_s A_block(sX)=(1/6)(32-24+4)X=2X. The abstract A(X)=X^3 model gives
+exactly zero for this same stencil. Both are energy-only obstructions, while
+a(n)=1 fails the actual inverse condition at n=2. Neither uses sampled Mu or
+refutes the actual arithmetic inequality. The example underscores why signed
+arithmetic coupling, rather than adding vanishing moments, is the next needed
+mechanism. Candidates with this obstruction require a new arithmetic bridge;
+the existing nonnegative lower-coefficient recursion must not be attached.
+
+8. Exact factorization and stronger conditional positive-energy transform.
+For dyadic integer scales 2^j, merge coefficients and insert missing zero
+entries: P(T)=sum_(j=0)^m c_j T^j. Division by T-4 is exact:
+ b_(m-1)=c_m; b_(j-1)=c_j+4b_j (j=m-1,...,1),
+ P(T)=(T-4)B(T)+P(4), B(T)=sum_(j=0)^(m-1)b_j T^j.
+For m=0, B=0 and the same identity remains valid. All rational coefficients
+are explicitly retained. P(4)=sum c_j 4^j is precisely the quadratic moment
+up to the nonzero kernel normalization. This factorization is certified for
+ANY signs; the positive bridge has additional conditions. The symbolic order
+budget caps array/representation work and returns missing, never a theorem
+refutation or a zero coefficient vector. No growing-order uniformity is assumed.
+
+At P(4)=0, define H(X)=sum b_j A(2^j X). The FULL stencil is exactly
+ F(X)=H(2X)-4H(X)=sum b_j Delta(2^j X).
+If every b_j>=0 and at least one is positive, H is a nonnegative energy
+transform and H(X)>=b_j A(2^j X) for any positive b_j. Thus this condition
+admits a stronger conditional bridge even when a lower c_j is positive.
+
+If F(X)<=C X^(2+epsilon) at EVERY dyadic X>=1, epsilon>0, finite C>=0,
+then E_H(2X)<=E_H(X)+(C/4)X^epsilon. Summing from X=1 through n/2 gives
+ H(n)/n^2 <= H(1)+(C/4)(n^epsilon-1)/(2^epsilon-1), n dyadic>=1.
+For any fixed positive b_j, at n>=2^j,
+ A(n)<=H(n/2^j)/b_j=O_(C,epsilon,B)(n^(2+epsilon)).
+The finitely many smaller dyadic n remain initial data, and H(1) uses the
+finitely many actual energies A(2^i) appearing in B. These data and b_j^-1
+are charged. Cofinal epsilon(q)->0 and all-scale constants would recover the
+conditional RH bridge in section4. NO full signed inequality is proved here.
+
+Existing lower-nonpositive normalized stencils always have b_j>=0. The converse
+need not hold: c=[-32,8,-4,1] gives b=[8,0,1], so H=8A(X)+A(4X) and the
+same conditional positive-transform proof works. This does not change the
+frozen numerical candidate or its original prebackend selection tag.
+
+The transformation also states the limitation concretely: positive b combines
+ordinary Delta inequalities at finitely many dilates. If ordinary Delta(Y)
+<=C_q Y^2 ceil(Y^(1/q)) globally, then
+ F(X)<=C_q X^2 ceil(X^(1/q))*sum_j b_j 4^j ceil(2^(j/q)).
+The finite scale/coefficient charge follows from ceil(ab)<=ceil(a)ceil(b).
+Thus these stencils smooth an existing unknown arithmetic problem; operator
+novelty alone supplies no new signed estimate. For mixed b, an ordinary
+one-sided Delta upper bound cannot be multiplied by negative b: lower bounds
+or a complete signed estimate are additional obligations. An absolute expansion
+charges sum |b_j| times the dilated costs but itself does not establish either
+side of the unknown signed defect.
+For section8, a premise C X^2 ceil(X^epsilon) is covered by replacing C with
+2C, since ceil(X^epsilon)<=2X^epsilon for X>=1. The positive-energy transform
+certificate records this conversion explicitly; finite fitted constants never
+supply the unknown cofinal premise.

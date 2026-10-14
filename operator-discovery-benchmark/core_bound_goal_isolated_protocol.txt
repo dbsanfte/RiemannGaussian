@@ -1,0 +1,32 @@
+RESOURCE-ISOLATED VALIDATION OF THE UNCHANGED BOUND-GOAL SEARCH
+
+pilot-001 is terminal incomplete. Its combined frozen suite imported the
+checker's standalone test module, which sets a HARD512MiB process address
+limit. That process had already imported the root runner's larger dependency
+set. Twelve MemoryErrors followed; no source search, result or publication
+occurred. Preserve the entire failed attempt and every frozen source byte.
+Neither generator, checker, mathematical rule, search specification nor
+original tests change.
+
+pilot-002 changes ONLY orchestration. Run root-owned and checker-owned tests
+in SEPARATE sequential child processes, each initially capped at2GiB; the
+checker retains its smaller standalone cap. The root test group also checks
+this isolation with two synthetic modules: one lowers its own hard limit,
+the other must still see its separately assigned2GiB limit. Preserve each
+suite's full stdout/stderr, status, elapsed time and work counter. One new
+owned development suite covers the changed harness, then one isolated frozen
+suite. All prior unchanged development suites are receipts, not rerun as
+development. The original detector study has never executed its search.
+
+Include the previous failed attempt's2,000,000 startup operations plus
+166,939 recorded frozen-test operations in this retry's inclusive work.
+Also include all original/new development and final frozen tests. The
+300million operation cap and1800s runtime remain. Main4GiB, owner tests2GiB,
+isolation fixture2GiB maximum sequential child: aggregate within authorized
+16GiB. No hashes, no numerical source observations, no model in search.
+
+Verify old and new frozen bytes before/after the unchanged generator and
+independent checker. The original all144 bindings, complete signed source,
+zero new payments and open full core/RH status are unchanged. Publish only
+after the isolated suite, complete search and independent feedback audit
+pass. This is a test-harness repair, not a different mathematical candidate.

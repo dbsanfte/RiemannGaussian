@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_core_prefix_proof_search",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_prefix_proof_search operations=3165827\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 2.023s\n\nOK\n",
+      "elapsed_seconds": 2.0970690149988513,
+      "operations": 3165827
+    },
+    {
+      "command": "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python -B -m unittest test_core_prefix_proof_search.PrefixProofSearchTests.test_new_payment_excludes_previously_paid_head",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_prefix_proof_search operations=2453\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n",
+      "elapsed_seconds": 0.06542384999920614,
+      "operations": 2453
+    }
+  ],
+  "operations": 3168280
+}

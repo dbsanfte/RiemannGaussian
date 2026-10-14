@@ -1,0 +1,100 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_observations": 0,
+  "baseline": {
+    "B_power": "11/2",
+    "log_degree": "0"
+  },
+  "best_common_signed_prefix_bound": {
+    "B_power": "11/2",
+    "log_degree": "0"
+  },
+  "cost_thresholds": 35,
+  "development_operations": 14158230,
+  "failed_study_operations": 14802301,
+  "fitted_constants": 0,
+  "full_component_bound_proved": false,
+  "inclusive_operations": 43499940,
+  "infeasible_thresholds": 34,
+  "inferred_potential_basis": 66,
+  "inherited_source_bindings": 144,
+  "interface_failure_preserved": true,
+  "main_peak_rss_kib": 704032,
+  "observable": "absolute value of complete cumulative signed integral; not grouped absolute work or Gram",
+  "original_energy_restatement": true,
+  "producer_search_reruns": 0,
+  "requested_bound_proved": false,
+  "requested_trial": {
+    "allowed_basis": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "constrained_rows": 454,
+    "contradiction": "-3",
+    "dual": [
+      {
+        "coefficient": "1",
+        "monomial": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "Abar",
+          "Abar",
+          "Abar",
+          "Abar",
+          "a",
+          "x",
+          "z",
+          "z",
+          "z",
+          "zbar",
+          "zbar",
+          "zbar"
+        ]
+      }
+    ],
+    "status": "infeasible",
+    "threshold": {
+      "B_power": "12/5",
+      "log_degree": "0"
+    }
+  },
+  "required": {
+    "B_power": "12/5",
+    "log_degree": "0"
+  },
+  "runtime_model_calls": 0,
+  "selected_trial": 34,
+  "signed_elimination_found": true,
+  "signed_primitive_endpoint": {
+    "B_power": "11/2",
+    "log_degree": "0"
+  },
+  "signed_primitive_remainder": {
+    "B_power": "33/10",
+    "log_degree": "0"
+  },
+  "source_monomials": 5064,
+  "status": "SIGNED_PRIMITIVE_ARGUMENTS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "verification_elapsed_seconds": 26.29763812897727,
+  "verification_operations": 14539409,
+  "whole_signed_bound_proved": false
+}

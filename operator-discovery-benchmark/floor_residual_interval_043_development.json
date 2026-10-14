@@ -1,0 +1,21 @@
+{
+  "schema": "floor-residual-interval-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.022160620021168143,
+      "operations": 83639,
+      "peak_integer_bits": 42,
+      "peak_bytes_estimate": 110786,
+      "exposure": "synthetic rational floor/step fixtures and closed calibrations only"
+    }
+  ],
+  "actual_new_programs_evaluated": false,
+  "parent_source_data_read": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "cumulative_operations": 83639
+}

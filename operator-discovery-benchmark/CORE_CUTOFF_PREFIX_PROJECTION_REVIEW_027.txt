@@ -1,0 +1,295 @@
+COMPLETE-PREFIX FACTOR PROJECTIONS AND WEIGHTED WORK-GRAM RULES
+
+Status: exact recovery, complete common-height payment, and weighted Gram
+cost rules established; actual signed arithmetic bounds remain OPEN. This
+new memo consumes candidate10_cutoff_prime_orbit_obligation.json, Review026,
+and PRIME_EXCHANGE_HANDOFF.txt / PRIME_SLIDE_HANDOFF.txt. No new arithmetic
+observations, tests, source edits, hashes, or numerical candidate choice
+were made. Earlier studies and reviews remain unchanged.
+
+1. Production signature and exact factor domain
+
+Use a fixed dyadic reference B and complete event horizon N=2B. A generated
+prime-window spec selects a finite set P=P(B), with exact rational-root
+endpoint conventions frozen before measurements. For a SQUAREFREE event q,
+ q=a_P(q)b_P(q),
+ a_P(q)=product_(p|q,p in P)p,
+ gcd(b_P(q),product P)=1.
+Thus a is squarefree and supported on P, b is squarefree and P-free, and
+gcd(a,b)=1. The two projection choices are:
+ SMOOTH: label(q)=a_P(q);
+ ROUGH:  label(q)=b_P(q).
+Fix P and the label map through every partial V in (B,2B]; do not recompute
+them from V. Every q=2..V must be represented. q=1 has zero RECURRENCE event,
+not a removed source unit. At mu(q)=0 the joined odd/even event is exactly
+zero; the complete state must still update its deterministic head, zero
+work, child shell, and all later prefix states. Skip only that zero event
+in grouped joined work, never the integer in arithmetic history.
+
+Let s=9/20+it, u=1/3, H_U=2U^(45/2),
+ kappa(t)=|zeta(s+u)/s|^2,
+ rho_q(t)=1_(|t|<H_(q-1)) kappa(t)j_q(t),
+ j_q=mu(q)C_1(q,t)+mu(q)^2 C_2(q,t).
+C_1,C_2 are the FULL actual-state head-corrected polynomials of the current
+input. All residues, source-mode crosses and history remain. For a projection
+pi write
+ G_l(B,V,t)=sum_(2<=q<=V,pi_B(q)=l)rho_q(t),
+ M_pi(B)=sup_(integer B<V<=2B) integral sum_l|G_l| dt/(2pi). (1.1)
+The target is M_pi(B)<=C B^beta, beta=12/5. This is a stronger sufficient
+control, not automatically equivalent to the one-sided signed integral.
+
+2. Direct all-scale recovery; no block-summation loss
+
+The partition identity gives, for EVERY V,
+ S(V)=sum_(q=2)^V integral rho_q dt/(2pi)
+     =integral sum_l G_l dt/(2pi).
+Hence |S(V)|<=M_pi(B) whenever B<V<=2B. Choose the enclosing dyadic B for
+each integer V>=2; then B<=V and M_pi(B)<=C B^beta implies |S(V)|<=C V^beta.
+There is no geometric sum over earlier dyadic blocks: each case already
+contains the COMPLETE prefix q=2..V. V=1 is empty. A protocol starting its
+declared uniform range at B_0 must carry all smaller cutoffs as a finite
+symbolic base, rather than imply an unspecified threshold from observations.
+
+Review024 then supplies the nonlinear maximum-energy recovery, paid J_0,
+and all child energy shells. Nothing here removes any full-source residual,
+its opposite analytic drift, unit, or original channel binding. A component
+control is an optional route; the whole signed core remains priority zero.
+All-prefix coverage is mandatory even if a finite ranking uses dyadic endpoints.
+
+3. COMPLETE-prefix common-window theorem, including tiny q
+
+Define the upper common window H_N=H_(2B), replace every event mask by
+1_(|t|<H_N), and call the resulting functional M_pi^*(B). For ANY partition,
+ |M_pi(B)-M_pi^*(B)|<=C_height B^(21/10), ALL B>=1.       (3.1)
+The constant is finite, independent of P(B), projection, label count, V,
+and source measurements. This theorem is analytically supplied, not a
+detector-discovered signed correlation bound.
+
+Proof. Each event q>=2 has the three complete virtual children P_q^(e),
+e=0,+1,-1, with OLD actual prefix q-1 and all head/moment updates retained.
+Let F_q^(e)=zeta(s+u)P_q^(e). Exact polarization gives
+ kappa(t)j_q(t)=(|F_q^(mu(q))|^2-|F_q^(0)|^2)/|s|^2.     (3.2)
+The coefficient c of each branch equals A(1), with |c|<=5/2; coefficients
+have absolute value<=1 and support through q. Pole removal at1 survives
+even when the virtual source-head inverse identity fails. It is not needed
+for the generic weighted high-tail or complete finite-head norm majorants.
+
+BOUND EACH EVENT FROM ITS OWN OLD WINDOW. The ratio q/(q-1)<=2 permits the
+inherited fixed-factor short-polynomial extension, uniformly including the
+finite q=2 base, so
+ integral_(|t|>=H_(q-1)) |F_raw^(e)/s|^2 dt/(2pi)
+ <=C q^-1/16.
+The complete centered finite head has full squared norm O(q^11/10).
+Triangle for the corrected branch therefore gives a bound
+C[q^-1/16+q^11/10] for its full tail above H_(q-1). This includes the lower
+real-x tail and analytic-residue compensation; no ordinary E^3 coefficient
+moment is claimed.
+
+Because q<=N, H_(q-1)<=H_N. The mask added by the common window is a SUBSET
+of the preceding tail, no matter how small q is relative to B. From (3.2),
+its eventwise absolute integral is bounded by the sum of two such branch
+tails. Summing q=2..N gives O(B^15/16+B^21/10), hence (3.1). Triangle over
+groups, followed by the supremum in V, changes neither the constant nor the
+quantifier. mu(q)=0 has j_q=0 identically; its zero-branch/head effects are
+nevertheless retained in subsequent states. The source unit is not an event
+and is not extended to a fictitious H_0 mask.
+
+No length comparison q~B or high-tail theorem beginning at H_N for tiny
+cutoffs was used. Since21/10<12/5, moving-window and common-window controls
+are equivalent up to uniform paid constants. The window endpoint H_N rather
+than H_(N-1) is harmless: the extra range is already covered by the same
+eventwise tail proof. All norms keep the exact outer zeta(s+1/3)/s factor
+and measure dt/(2pi).
+
+4. What the two projections genuinely permit
+
+For a fresh prime p not dividing q:
+ - if p is in P, insertion q->pq preserves the ROUGH label;
+ - if p is outside P, insertion preserves the SMOOTH label.
+The complementary projection changes label. Thus smooth rows can group the
+prime frontier with P-free composites, while rough columns can contain
+complete selected-prime chains across scales. These are actual differences
+from the previous strict-block antichains. They do not imply negative work.
+
+For fixed smooth label a, the exact common-window polynomial is
+ sum_(b<=V/a,b squarefree,P-free)
+   [mu(a)mu(b)C_1(ab,t)+mu(a)^2 mu(b)^2 C_2(ab,t)].       (4.1)
+For fixed rough label b it is
+ sum_(a<=V/b,a|product P)
+   [mu(a)mu(b)C_1(ab,t)+mu(a)^2 mu(b)^2 C_2(ab,t)].       (4.2)
+These are row and column sums of the SAME signed matrix indexed by a,b,
+with exact hyperbolic support ab<=V. Source history depends on ab-1, so the
+matrix is not automatically a separable arithmetic tensor. Equal-cardinality
+prime exchanges preserve the sign of the odd factor; only parity-changing
+insertion gives an opposite odd factor. The even source factor stays plus.
+
+If P is enlarged to a proved SUPERSET at every B, rough labels coarsen and
+smooth labels refine. In the rough case the new label is obtained by removing
+the additional primes from the old rough factor. In the smooth case removing
+the additional primes from the new smooth label recovers the old one.
+Triangle proves monotonicity of the corresponding absolute functional under
+that coarsening/refinement. Unrelated prime windows have no such ordering.
+This is a structural rule, not an extrapolation from finite coincidences.
+It explains a bias toward larger rough windows or smaller smooth windows;
+that monotonicity supplies no bound for the favored endpoint construction.
+
+Useful calibration and alias gates:
+ P empty: smooth is one bucket, rough is all singleton events.
+ P contains all primes<=2B: rough is one bucket, smooth is all singleton events.
+ P={p}: smooth has at most labels1,p at ALL scales; rough may have many labels.
+ P={primes<=B}: rough has one bulk group plus singleton primes in(B,2B];
+                smooth puts these new primes together but leaves other
+                squarefree events singleton.
+These facts need no actual-source samples. A one-bucket control is a direct
+whole-work presentation, not a new arithmetic pairing; all singleton events
+have no grouping gain. Neither should be described as a discovered prime
+mechanism merely because its finite score wins. For a fixed nonempty P,
+having finitely many smooth labels is not a proof that their joined control
+is free: cross-label cancellation may still be essential.
+
+For this parameter range the one-bucket complete-prefix control is equivalent
+up to paid terms to the old all-integer low-energy goal. On the common window
+the complete sum telescopes to the endpoint squared energy minus the initial
+energy and accumulated zero-sector work. If the low-energy goal holds, full
+endpoint energy is also controlled after the paid corrected tail, and the
+absolute zero-work sum is O(V^[beta/2+1-sigma])+lower costs, below V^beta.
+Conversely the one-bucket control bounds S(V), and Review024 recovers energy
+without assuming it. This is a recognized equivalence lane, not a new gain.
+
+5. Cross-scale pairing and full partial-exit semantics
+
+An exact cover grammar may choose edges(q,pq) up to N=2B, fresh p, with
+nonnegative rational weights. If each nonunit vertex has incident mass<=1,
+then at every partial V the following identity holds pointwise. Here
+R(n)=j_n(t) is the complete raw joined event at one fixed t; multiplying
+every term by the same common-window mask and kappa, and then integrating,
+preserves the identity. Set R(1)=0. Thus
+ sum_(2<=n<=V)R(n)
+ =sum_edges lambda_e[R(q)1_(q<=V)+R(pq)1_(pq<=V)]
+  +sum_(2<=n<=V)[1-incident_mass(n)]R(n).                (5.1)
+The unit event is zero and may be handled separately. For q<=V<pq the parent
+is an EXACT exit, not an interior difference. The cover and weights should
+be fixed at horizon N before V varies; otherwise every recomputed capacity,
+unmatched coefficient, and partial face must be verified again. Arbitrary
+multiple parent use is not a balanced cover.
+
+When both vertices are present the pair is
+ mu(q)[C_1(q)-C_1(pq)]+mu(q)^2[C_2(q)+C_2(pq)],           (5.2)
+with the common outer kernel and complete actual states. The difference can
+be decomposed into frozen kernel and exact cutoff-state shell; there is no
+remaining mask variation after (3.1). The state shell includes every integer
+q<=n<pq, its harmonic-null dc delta-D_shell, deterministic head increments,
+all old/shell products and opposite residue drifts. It is not a short additive
+interval merely because the pairing uses a prime. Complete primes/cubes with
+q product(p)<=V are admissible interiors; every other face is a residual.
+
+A more genuinely bilinear auxiliary uses a selected fresh prime p on the
+smooth leg and an unselected fresh prime r on the rough leg. A complete
+rectangle q,pq,rq,prq, q<=V/(pr), has odd source pattern +,-,-,+ and even
+pattern +,+,+,+. Its odd work is the exact double difference; its even work
+is the exact four-term sum. This can eliminate a compiled separable frozen
+mode, but every true state variation and partial rectangle remains. At a
+frozen monomial q^-Omega exp(-i omega log q), the difference gains factors
+(1-p^-Omega exp(-i omega log p))(1-r^-Omega exp(-i omega log r)). Their
+moduli are not uniformly contracting over the full common window. Pure
+factor permutation at the SAME product q leaves R(q) unchanged and supplies
+no source-sign cancellation. These are exact production/rejection rules,
+not assumptions about independently random prime phases.
+
+Searchable coupled potentials or signed rectangle terms must recover the
+complete scalar matrix sum with explicit constant-mode and edge costs.
+An exact nullspace identity, or a proved coercive Gram domination, can certify
+that recovery; a smaller transformed observable alone cannot. The previous
+prime-slide study proved this distinction: dividing by a prime-dependent
+attenuation after summing is not a uniform inverse. Here also any inverse
+coefficient depending on p must have its complete weighted cost certified.
+Within-row/column signed bounds may retain more cancellation than absolute
+edge majorants. Do not require each expanded source sector to be paid
+independently if a joint route is available.
+
+6. Generic weighted work-Gram primitive, with rational constants
+
+On the common H_N let Gamma_l(B,V,t) denote the raw complete group polynomial
+BEFORE the nonnegative factor kappa and mask. Set dnu=kappa(t)dt/(2pi).
+The full kernel mass obeys nu(R)<=K_kernel=100/13 by the complete centered
+power-kernel norm. For positive label weights eta_l, Cauchy gives
+ [integral_(|t|<H_N)sum_l|Gamma_l| dnu]^2
+ <=K_kernel (sum_l eta_l)
+   integral_(|t|<H_N)sum_l |Gamma_l|^2/eta_l dnu.        (6.1)
+All active labels lie in1..2B. Use the COMPLETE horizon label set for weights,
+including a label empty at one particular V; this supplies one uniform bound
+for the maximum-partial target. With eta_l=l^-gamma, gamma>=0, the following
+elementary, uniform rational constants are valid:
+ gamma<1: sum eta_l<=[2/(1-gamma)]B^(1-gamma);
+ gamma=1: sum eta_l<=1+ln(2B);
+ gamma>1: sum eta_l<=gamma/(gamma-1).                   (6.2)
+They follow by integral comparison and 2^(1-gamma)<=2. Thus delta=max(1-gamma,0)
+is the mass power, with one extra harmonic log precisely at gamma=1.
+
+For beta=12/5, a sufficient UNIFORM Gram target is
+ Q_gamma(B)=sup_V integral_(|t|<H_N)
+                sum_l l^gamma |Gamma_l(B,V,t)|^2 dnu
+ <=C_Q B^[24/5-delta] (1+ln(2B))^-h,
+ h=1 if gamma=1, h=0 otherwise.                        (6.3)
+Then common-window M<=sqrt(K_kernel C_mass C_Q) B^beta,
+and moving-window M adds the proved C_height B^21/10. If a compiler instead
+allows a log in the output, it must record that changed target explicitly;
+it cannot silently drop the gamma=1 loss when claiming the original strict
+CB^beta leaf. A strict power saving in Q can alternatively absorb the log
+by a certified elementary envelope. No numerical constant is fitted here.
+
+For a FIXED-prime SMOOTH projection only labels1,p occur and sum eta_l<=2
+for every gamma>=0. Its delta=h=0 bound is uniform in B and p. This is a real
+structural calibration of the argument language, not a bound for Q_gamma.
+Growing prime windows cannot infer a fixed mass from two labels observed
+at small B. For arbitrary labels gamma>1 already gives a uniform mass, but
+the reciprocal weight l^gamma makes the Gram harder; this is a genuine
+tradeoff the detector can search, not free exponent improvement.
+
+The Gram contains ALL ordered same-label q,q', their odd/even mixed crosses,
+all mu factors and all prior states. Its diagonal is not the same target.
+Squaring work raises its zeta-moment order and can worsen the long-height
+cost. Existing twisted-fourth import is not a theorem for these new moments.
+Record (6.3) as an OPEN auxiliary estimate unless a valid provider or exact
+signed correlation proof covers it. Projection choice, gamma, mass rule,
+cost exponent and whole-target recovery can be synthesized automatically
+before responses without embedding a nominated uniform solution.
+
+7. Available envelopes and necessary proof-scope gates
+
+Inherited coefficient and convergent full moment bounds give per event
+ integral |kappa j_q| dt/(2pi)<=C[q^(9/2)+q^(7/2)].
+Therefore every complete-prefix projection still has an unconditional
+O(B^11/2) envelope. It misses beta by31/10. Common-window payment removes
+one rigorously lower-order correction, but does not change that state cost.
+This failure is not a disproof of a projection or the actual signed target.
+Scalar harmonic-nullness, generic signs and finite-prime identities alone
+have the reviewed countermodels; no independently random prime model is
+an admissible replacement for actual source correlations.
+
+Required machine-checkable gates are: prime-window endpoint and projection;
+unique squarefree factorization; complete integer history including mu0;
+same reference B for every partial V; source/analytic-residue binding;
+moving/common-window theorem with LOCAL q tail premise; common outer kernel
+and exact dt/(2pi); all partial edge/cube exits and capacity; singleton and
+one-bucket classification; exact row/column or rectangle identity; Gram
+weight mass power/log rule; full ordered signed contractions; and a uniform
+OPEN arithmetic estimate with finite base and verified noncircular recovery.
+
+Finite sampling of these projections is a new observable on preserved cached
+work, not a proof of the continuous height integral or a fresh-source holdout.
+No conclusion about a frozen detector score proves (6.3), a current-scale
+recurrence, or negative energy credit. Complete divisor identities are useful
+zero insertions only on complete rows; missing shell divisors must remain.
+Masked real-pole refutations for earlier coefficient groupings cannot be
+copied to these nonlinear cutoff-work groups without deriving their full
+actual-state analytic representation.
+
+Conclusion. Complete prefixes permit true cross-scale prime/cofactor chains
+and smooth rows can reunite prime/composite events. The upper common-window
+correction is uniformly paid at B^21/10 without any q~B assumption. Exact
+row/column, bounded-capacity and rectangle grammars, plus weighted same-label
+Gram rules, form a concrete construction+argument search language. The
+indispensable arithmetic leaf remains a joined actual-state work/Gram bound;
+no complete component or original core estimate, Mertens improvement, or RH
+claim is established. This memo is final and stable; edits have stopped.

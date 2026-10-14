@@ -1,0 +1,60 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_convolution_argument_search"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_convolution_argument_search operations=4562184 elapsed_seconds=7.08428205299424\n",
+      "stderr": "test_dilation_rejects_lost_harmonic_null_mean_unit_and_sign (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_divisor_algebra_prerequisites_include_repeated_prime_powers (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_divisor_constants_and_cutoff_log_conversion_are_exact (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_divisor_domain_all_routes_and_spacing_debt_are_required (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_dual_must_annihilate_all_allowed_columns_and_ideal_rows (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_exact_signed_bilinear_gram_agrees_with_discrete_period (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_floor_basis_and_certificate_mutations_fail_closed (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_floor_synthesis_is_a_complete_formal_primal_certificate (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_generic_depth_fractional_decay_and_critical_abel_logs (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_geometry_cost_retains_unit_amplitude_spacing_and_no_lower_claim (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_hyperbola_identity_for_arbitrary_signed_sequences_all_small_prefixes (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_hyperbola_primal_dual_optimum_and_mean_are_verified (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_primal_missing_mean_or_finite_head_and_false_domains_rejected (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_prime_count_obstruction_is_only_a_full_period_lower_statement (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_signed_dilation_matches_period_and_complete_physical_short_head (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_source_binding_and_charge_only_rational_size_guard (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_source_wrapper_and_feedback_keep_full_signed_state_open (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_systematic_geometry_grid_is_complete_not_a_nominated_winner (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 7.084s\n\nOK\n",
+      "operations": 4562184,
+      "elapsed_seconds": 7.214141220989404,
+      "tests": 18,
+      "peak_rss_kib": 47960
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests.test_systematic_geometry_grid_is_complete_not_a_nominated_winner",
+        "test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests.test_source_wrapper_and_feedback_keep_full_signed_state_open",
+        "test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests.test_source_binding_and_charge_only_rational_size_guard"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_convolution_argument_search operations=3008429 elapsed_seconds=5.443090723012574\n",
+      "stderr": "test_systematic_geometry_grid_is_complete_not_a_nominated_winner (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_source_wrapper_and_feedback_keep_full_signed_state_open (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\ntest_source_binding_and_charge_only_rational_size_guard (test_check_core_convolution_argument_search.IndependentConvolutionArgumentTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 5.442s\n\nOK\n",
+      "operations": 3008429,
+      "elapsed_seconds": 5.583402807998937,
+      "tests": 3,
+      "peak_rss_kib": 44720,
+      "reason": "Only affected strict-short cutoff grid and wrapper fixtures after beta=1 grammar exclusion; initial suite passed."
+    }
+  ],
+  "operations": 7570613,
+  "operation_cap": 50000000,
+  "time_cap_seconds": 180,
+  "memory_cap_bytes": 1073741824,
+  "source_arithmetic_observations": 0,
+  "old_suite_reruns": 0,
+  "edits_stopped": true,
+  "math_audit": {
+    "floor": "exact integer rewrite; complete signed coefficients and harmonic null",
+    "covariance": "discrete gcd^2-1 kernel; full bilinear crosses and physical head",
+    "divisor": "cutoff H/r retained; constants include U-log conversion",
+    "geometry": "complete fixed-N ideals/primal/dual; all51 strictly-short rational geometries",
+    "scope": "finite head, all mean branches/crosses, outer kernel and ordinary moment remain open",
+    "prime_obstruction": "full period only; asymptotic PNT explicitly imported"
+  },
+  "distinct_tests": 18,
+  "test_invocations": 21,
+  "grammar_correction": "Exclude beta=1 whole-length-head restatement; not an observed failure or arithmetic impossibility."
+}

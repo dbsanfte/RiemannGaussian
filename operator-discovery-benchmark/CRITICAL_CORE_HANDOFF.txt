@@ -1,0 +1,138 @@
+CRITICAL-CORE SIGNED CORRECTIONS: VERIFIED PILOT AND NEXT CANCELLATION LANGUAGE
+
+The goal remains active. This turn made verified progress, but no complete
+all-scale signed arithmetic bound or RH proof has been obtained. No external
+blocker remains. Current user priority: enhance the detector language to find
+actual Mobius/prime cancellation, then prove selected estimates analytically.
+
+Immutable experiment
+
+Run: critical-core-results/pilot-001. Its protocol and frozen_source bind 19
+source/proof/test/scope files. Do not edit those successful sources in place.
+29 tests passed; independent verification passed 15 audit groups. All three
+worker outputs reproduced byte for byte. Complete actual coefficients through
+1,048,575 were reconstructed independently from local prime-power factors.
+The discovery worker has a declared Python file-access guard, not OS isolation.
+The final arithmetic work proxy was 1,199,237,790, below the five-billion limit;
+it does not measure physical memory or total bit complexity.
+
+The 363 attempts produced 363 distinct programs, with zero proposal aliases,
+missing computations or solver failures. Nine programs were selected before
+final responses, including three original-target baselines. All nine have
+parallel analytical reviews in immutable review-collection-001. The requested
+reviewer model was Sol 6.1; receipts do not independently authenticate runtime
+model identity. The collector verifies provenance/coverage, not mathematical
+proofs. Every original existential global claim remains unresolved.
+
+Training used dyadic base blocks through8192; validation used12288,16384,24576.
+Final blocks were131072,173725,262144, each with its doubled child. The odd final
+block was derived from the frozen candidate seal. Actual historical coefficient
+overlap is disclosed: these are new response domains, not unseen prime sources.
+Final q levels were3,12,17,29; the last two have no fitted training constants.
+Direct energy:45 finite passes,9 stored-constant failures,54 missing constants.
+Secondary innovation:51 passes,3 stored-constant failures,54 missing constants.
+Five direct failures are on dyadic blocks, four on the odd probe. Every
+innovation failure is dyadic. These fail stored constants, not the existential
+claim permitting other constants and a later cofinal starting q.
+
+What the new language actually implements
+
+critical_core_grammar.py defines complete actual-c correctors, c=mu*lambda,
+including when the anchored target is ordinary mu. Sources m=p^e b use the
+smallest prime p, its full positive EVEN valuation e, and p-free core b. With
+z=floor(X^theta),u=floor(sqrt X), retain p<=z,b<=u and either b1 orOmega(b)>h.
+Remove ALL other core patterns1<=Omega(b)<=h exactly, for ALL even exponents.
+Full=retained+removed is verified coefficientwise and at every prefix.
+Omega counts prime factors with multiplicity. The source integer1 is excluded.
+
+The pilot takes h in{1,2,3,5} andtheta in{1/6,1/3,1/2}. The mathematical
+arithmetic API permits any positive integerh and positive rationaltheta;
+this pilot's search dictionary is deliberately finite. Correctors use the
+same fixed filter as the base target and divide byceil(X^(1/[2(h+1)])),
+including fourth,sixth,eighth andtwelfth roots. Cutoffs stay at parentX within
+its filtered arguments; the child independently recomputes its own cutoffs.
+
+For a filter of absolute weight sumLambda, each normalized correction has
+energy <=256Lambda^2(1+log(2X))^4 at EVERY scale. This follows from the actual
+rough-core support and |c|<=d2, with no PNT/RH/signed-correlation premise.
+For fixed signed rational weightsgamma, H_X=G+sum gamma_j T_j,X. The coefficient
+of originalG remains1. The complete 13-coordinate Gram retains all target/
+corrector and corrector/corrector cross terms. The supplied uniform correction
+bound proves criticalHenergy iff criticalGenergy. Recovery to ordinaryG must
+precede the Mellin/pole argument; moving H has no assumed ordinary Dirichlet
+series. The full H/G energy bound is still an unknown premise.
+
+critical_core_search.py learns signed weights in[-8,8], using zero-centered
+ridge penalties and exact rational KKT verification. Floating optimization
+only proposes an active face. Exact and denominator-at-most64 quantized
+programs receive separate exact fits. Baselines and signed singletons remain
+in the archive. The exact finite optimum proves no uniform arithmetic law.
+Selection uses direct validation failures and direct validation energy; the
+innovation is a secondary diagnostic. The proof queue asks for complete
+cofinal direct energy at all dyadic scales.
+
+What this pilot teaches about cancellation
+
+The learned mu candidate948a443e4816 passed its stored direct bounds but
+increased final energy relative to M itself by approximately2.51657,1.70960,
+2.44122 at the three increasing final blocks. Thus finite bound passes are
+not evidence of improved cancellation. Other correctors reduce some block
+energies and raise others. report.json gives exact energy ratios and signed
+E_H=E_G+2<G,B>+E_B decompositions, with every finite failure witness retained.
+No robust improvement or new full uniform estimate was established.
+
+The twelve features represent at most FIVE nonunit source classes globally:
+forh1, theta1/3 and1/2 saturate the same nonunit source; forh2,h3,h5 all three
+theta choices saturate it. Differences within those classes are unit-core
+prime-power controls. Normalizers also vary withh and cannot be discarded.
+Minimal nonunit activation scales are81,729,6561,531441 respectively. Hence
+h5 has NO nonunit sources anywhere in this pilot, whose largest childX is
+524288. Depth3 nonunit sources enter the training objective only at8192.
+
+Exact pooled correction-Gram ranks are12 in training,10 in validation and8
+in final data, for each target. These ranks measure the finite functions,
+including cutoffs, units and root ceilings; they are not counts of independent
+arithmetic mechanisms. No percentage of mixed-feature gain is attributed to
+unit sources: that would require additional complete unit/nonunit Gram data.
+The pre-freeze critical_core_language_scope.txt documents these limitations.
+
+Next implementation priority
+
+critical_core_next_relational_language.txt is a NEW POST-FREEZE proposal,
+independently reviewed in critical_core_next_relational_review.txt. Neither
+changes the pilot. Their identities and diagonal envelopes are algebraically
+checked, with small exact endpoint tests; the missing signed inequality is
+NOT established. The gcd identity already occurs in earlier signed-arithmetic
+work; the proposed advance is a composable relational proof/search language.
+
+Let K_X(t)=max(0,2X-max(X,t)) and J_X=K_(2X)-4K_X. Complete Mertens block
+energy is diagonal plus2sum_(i<j)mu(i)mu(j)K_X(j). The diagonal is already
+O(X^2), with innovation at most3X^2 uniformly. The missing expression is the
+COMPLETE signed off-diagonal innovation with kernelJ, not its unsigned norm.
+Prioritize exact PairReindex, GcdCoordinates, KernelMixedDifference and
+ExactDivisorSplit productions. Each must certify domains, actual arithmetic
+coefficient changes, every endpoint, all unmatched terms and full recovery.
+Use fixed-prime mu shell pairings and actual-c boundary phases; allow more
+creative prime/core selections only with independently checked reconstruction.
+Fractional cutoff parameters remain exact rational programs.
+
+For actual primes, Lambda=mu*log and its complete divisor split produce psi,
+including the full large-divisor tail. The target must be centered psi(n)-n.
+Its diagonal is also critical; mixed signed terms remain uncontrolled.
+Represent logarithmic identities symbolically (or with rigorous real balls),
+never by floating equality. Ordinary pole recovery needs its own checked
+filter condition; do not transfer the c two-term pole budget to simple-pole
+prime errors or ordinarymu. More general filter banks require separate proofs.
+
+Candidate ranking should include baseline-relative energy and structural
+coverage across several training/validation scales. Unit-only or dormant
+branches remain explicit controls. Distinguish empirical fit, exact identity,
+uniform auxiliary estimate, and full target bound. Proof search must expose
+its remaining signed estimate rather than accepting that estimate circularly.
+Counterfeit controls may preserve explicitly declared PARTIAL constraints;
+the full actual multiplicative prime-power specification determines the
+sequence and must never be attributed to a different synthetic arithmetic.
+
+Prior successful factor-region and fixed-filter artifacts remain unchanged.
+The new latest pointer binds this handoff, report, verification, collected
+reviews, post-freeze relational proposal/review and reporting source.

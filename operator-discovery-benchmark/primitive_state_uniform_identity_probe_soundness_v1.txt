@@ -1,0 +1,124 @@
+Primitive-state fresh-scale probe: independent soundness review v1
+Scope: bounded source inspection and nine tiny synthetic algebra tests only.
+No X7 native construction, saved candidate evaluation, arithmetic sign sample,
+source SDP regeneration, or research run was performed for this review.
+
+Exact rejection theorem and feedback row
+Let L_X be the unchanged rational target polynomial and B_X the complete fixed
+operator body. Define N_X(u)=(L_X-B_X)(u)-(L_X-B_X)(0). A universal NONCONSTANT
+FORMAL identity requires N_X identically zero at every licensed integer X.
+For any integer assignment u, a nonzero residue modulo a prime p, after checking
+all source/candidate denominators invertible modulo p, proves N_X(u) nonzero
+in Q and therefore rejects that fixed formal identity. This says nothing about
+an actual-Mobius-only inequality: primitive relation polynomials generally
+vanish after arithmetic substitution and MUST remain nonzero formal atoms.
+Zero residue never proves an identity, even at the selected X. For example
+65537*u1 is nonzero over Q but invisible modulo65537. Baseline subtraction
+cancels constants, including all five scalar slacks and the target's q-root
+budget, so this probe cannot discharge the independent scalar budget obligation.
+
+The independently computed exact row a_j=column_j(u)-column_j(0) and
+rhs=L_X(u)-L_X(0)=-Delta_X(u) is a NECESSARY formal affine constraint
+sum_j a_j v_j=rhs, not a universal certificate. Target Delta is the sum of
+prefix-square child rows t=2X..4X-1 minus four parent rows t=X..2X-1.
+It is not a sum of weighted isolated u_n squares. Coordinate coverage:
+366 scalar columns;613 INTERLEAVED signed pairs at366+2i and367+2i;
+five zero slack coordinates1592..1596; three120-entry upper-triangle blocks
+at1597,1717,1837. Offdiagonals have factor2. The third block is child-4parent,
+not an independent unsigned region. Native gram_specs declares all THREE matrix
+blocks. The source has two regional state arrays; the third matrix's contribution
+is derived from signed_storage_increment transport.
+An independently licensed exact row may constrain a future affine search chart.
+Appending it requires the ordinary exact consistency and cone checks; it does
+not validate a new chart or extrapolate from finite fits automatically.
+
+Native-source fork and semantic completeness
+Producer build_native and independent _construct_source retain every old affine
+square/relation group, every regional full15 state, and all210 additional grouped
+primitive-state families. New math-only constructors generate the legacy366/403
+source directly; they avoid the wholesale frozen builders' optional archive and
+digest work. See primitive_state_math_only_source_review_v1.txt for the semantic
+inventory and implementation review. Producer uses suffix sums for the additional
+primitive groups; the checker uses forward accumulation.
+For a fixed primitive spec with first licensed row anchor, the exact identity
+sum_{t in region, t>=anchor} r_spec*U_atom(t)
+ =r_spec*sum_{t in region, t>=anchor} U_atom(t)
+justifies suffix aggregation. The seven families' domains are monotone: unit,
+norm, primepower, squarefree-zero, inverse-row, gcd pairs1<=a<=b<=t, coprime
+products a>=2,a<=b,a*b<=t. No pairs are removed by a coprimality filter in the
+GCD family. Coefficients/cuts/factor witnesses are computed over integers/Q
+before finite-field reduction. Optional expanded degree4 polynomial hashes can
+be omitted: evaluation uses native factors and their complete multipliers.
+They are neither premises nor source-admission evidence in this protocol.
+
+Final rejection requires independently reconstructing the complete source,
+checking descriptor order, evaluating its exact row, and comparing that row and
+the modular witness with the producer's actual values. An opaque source license
+records the reconstruction; raw producer native data alone cannot authorize
+identity_refuted=True. No new precautionary hashes are needed. The user's
+2026-10-09 instruction supersedes earlier design notes that requested hashes.
+Saved protocol, coefficient vector and source snapshots support replay; digest
+or repeated file-inventory checks do not establish mathematical soundness.
+
+Complete joint-work containment, not a completion guarantee
+The initial prototype called frozen affine builders, some of which omit forwarded
+limits or reset local counters. Summing their outer construction counters did not
+bound these descendants. The revised math-only constructors avoid those wholesale
+calls, redundant state builds, and optional polynomial expansions for hashes.
+An explicit all-descendant Python LINE_EVENTS guard is still a transparent runtime
+proxy; it is not an exact integer/rational operation count. Its BaseException
+abort must escape legacy except Exception blocks, restore the previous tracer
+in finally, forbid an existing instrumentation tracer, and perform deadline
+checks. Native C biginteger arithmetic is bounded separately by operand/result
+bit caps; result JSON/file I/O requires byte and memory/time limits.
+
+A single joint450m protocol can reserve150m producer source LINE_EVENTS,
+150m independent source LINE_EVENTS,50m producer exact evaluation/serialization,
+50m independent evaluation/serialization, and50m TOTAL preparation, input loading, I/O,
+metadata, tests and other overhead. These are disjoint stages. Local nested
+operation diagnostics must not be silently claimed complete, nor double-added
+on top of a stage already line-metered. If the true source construction or
+remaining bytes exceed a reservation, stop UNKNOWN; do not start a second job
+or omit independent replay. This reserve proves bounded stopping, not that X7
+will finish. No real source timing was obtained here.
+
+Static X7/H27 checks useful before launch:95 divisor pairs;378 ordered GCD
+pairs;at most406 monomials of degree<=2 over27variables;31465 of degree<=4;
+full15 regional rows total21. A coarse state-support estimate1000 and primitive
+family-count estimate582 are planning upper bounds, not measured receipts.
+New suffix-state memory is at most21*15*406 rational cells before group copies.
+Copied group supports and immutable affine intermediates still need explicit
+term/cell/bit guards plus process memory containment. Individual result JSON
+tokens must be bounded by rational/name limits before encoding. Operand caps
+4096bits imply temporary rational products<=8192bits and addition numerators
+<=8193bits before immediate result checks. This does not establish a total
+6GiB peak for every legacy intermediate; external memory enforcement remains
+part of the declared containment protocol. Source serialization solely to
+compute a fingerprint is unnecessary and is omitted from the revised path.
+
+Adversarial findings and tests
+test_primitive_state_uniform_identity_probe_soundness.py runs9 tests in~0.25s.
+Its artificial X1 native fixture is NOT source-licensed research evidence.
+Tests check prefix target rhs=-253, constant cancellation, all five zero slacks,
+interleaved relation signs, Gram offdiagonal2 and child-minus4parent, modular
+false negatives, noninvertible denominator rejection, missing groups, direct
+source changes, formal unit defect hidden by arithmetic substitution, and early
+work-cap termination. No proof is based on horizon sampling. The original
+digest test is replaced by a direct source-data sensitivity test in accordance
+with the user's hashing instruction.
+Producer malformed canonical rational '1/0' initially escaped the UNKNOWN handler
+as ZeroDivisionError; communicated to owner for explicit rejection/handler fix.
+NaN deadlines should also be rejected rather than disable the time comparison.
+Root integration review also found that the first synthetic fixtures declared
+only two Gram matrices, whereas the native constructor declares all three. The
+native-to-evaluation smoke test must exercise the actual three-matrix metadata
+and the two regional arrays, with storage derived from their signed difference.
+Current review found no false-positive formal rejection in complete exact-row
+algebra. The full compiler's universal symbolic equivalence remains unproved;
+this fresh-scale protocol licenses one independently rebuilt finite source,
+not the missing universal backend or RH.
+
+Code references: primitive_state_uniform_identity_probe.py:preflight,
+ExactEvaluator,target_pair,probe_native,build_native,
+build_native_metered; check_primitive_state_uniform_identity_probe.py:
+verify_plan,_construct_source,rebuild_source,exact_row,verify_probe.

@@ -1,0 +1,33 @@
+EXACT POST059 PRIME-RATIO COST OBSTRUCTION SEARCH
+
+Motivation: analytical review of the finite survivors found that irrevocable
+same-profile ratio-edge costs can grow too quickly. This is an explicitly
+supplied generic proof rule. Its floor-cell witness is searched automatically;
+no particular interval from the review is present in the enumeration.
+
+Freeze all8 miner/checker/test/receipt/protocol files before the exact search.
+Read the unchanged059 grammar and parameters only; never run a new Mobius
+sieve, numerical kernel, candidate-cost search or fitted-constant selection.
+
+For r the smallest actual prime outside M, enumerate every open rational
+cell in 0<v<64 cut out by changes in the twelve floors defining
+W(v/p), W(v/q), W(v/(rp)), W(v/(rq)). Keep cells where both pairs are nonzero
+and have the same positive kernel profile and the same kernel sign. Rank
+by the proved logarithmic power, then reciprocal-cell width, then endpoints.
+The finite search extent limits witness discovery, not the scale domain of
+a verified witness. Rational source orders are general within bit budgets.
+
+Try the chosen cell on every saved policy beginning with an ascending
+prime-ratio pass, allowing only the current grammar's canonical global or
+profile residual pass. The independent checker must establish the exact
+floor constants, prime minimality, source signs, irreversible first-pass
+coverage and correct exponent. Squarefree coprime density and a positive
+small-t kernel lower bound prove B_policy(N)>=cN/log(N)^A for all sufficiently
+large N with fixed c>0. This refutes every proposed N^beta fixed-polylog cost
+bound with beta<1 for those policies. The proof does not name a finite failure
+scale, bound the actual signed source, or refute RH.
+
+Preserve the059 finite successes unchanged and record the stronger all-scale
+obstruction alongside them. No final constant refit, hashes, prior suite or
+scientific study replay. Existing16GiB/7200s ceilings remain ample; prospective
+exact-cell and bit guards apply. Synthetic tests use a different prime mask.

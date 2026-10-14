@@ -1,0 +1,39 @@
+Independent complete coupled remainder checker083 scope
+
+NEW check_mobius_coupled_remainder_083.py reuses frozen independent083
+geometry/native exact reconstruction and uniformwholeouter admission only.
+No producer imports, old scientific/test replay, hashes or frozen edits.
+Five new focused tests pass firstattempt; entire output retained in receipt.
+
+verify_certificate(program,u,outer_certificate,certificate,meter=None)
+requires independently VERIFIED_UNIFORM_WHOLE_OUTER_CONTROL bound to the
+EXACT same complete program. Certificate EXACT squarefree_count,price,
+row_prices; original SFcount retained, rows effective primeanchor order.
+build_remainder returns complete raw A, raw positive Gram G, outer mask,
+raw R=A-O-G and complete prime-congruent projected residual. O restricts A
+to BOTH indices u/5<n<=floor(u/4). Negative Gram remains mandatory everywhere,
+including the outer block; controls and outer-inner cross terms retained.
+
+Complete zero identities imply DeltaE=mu^T O mu+mu^T R mu, since actual
+A=original energy drift+zero identities+positive Gram. No subtraction of
+full/outer ABSOLUTE prices occurs. Uniform |mu^T O mu|<=Astar*u is separately
+admitted; next machine-executable uniform target is mu^T R mu<=K*u.
+Current status VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND admits only
+trace(Rproj)+2sum|offdiag| at supplied u. Signed rows may be negative.
+Diagnostics exactly partition signedtrace into anchorconstant and composite
+signedtrace, then anchor-composite absolute and composite-composite absolute
+prices. Without anchor, anchor diagnostics0 and remaining all offdiag price
+is retained. Structural unit/prime signs are used only if requested; unknown
+composite signs and observed full source values neverused by checker.
+
+Resources inherit horizon16384, SF4096, rational100000bit, work3e11 and
+percall4GiB gates, and add prospective complete raw/Gram/remainder/projection
+matrix reserve BEFORE allocation. Aggregate16GiB remains runner obligation.
+External original historical source/kernel admission remains required.
+Outputs uniformremainder/source/RH alwaysFalse.
+
+Tests compare literal complete raw matrix, negative Gram subtraction and
+actual tiny synthetic mu identity; anchored/unanchored and unit/tiny domains;
+exact anchor cross partition; strict outer boundary; same-program outer/Gram/
+coefficient mutation; wrong full price, missing cost and shapes; preallocation
+huge horizon and work resource rejection. Actual mu is test-fixture-only.

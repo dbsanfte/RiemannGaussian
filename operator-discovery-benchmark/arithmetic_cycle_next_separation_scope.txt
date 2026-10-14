@@ -1,0 +1,113 @@
+EXACT SEPARATION AND ADAPTIVE FINITE CERTIFICATE EXPANSION
+
+Posthoc scope note; no frozen pilot source or outcome is changed. The pilot
+reported8 finite certificates (all mu at X1),48 true bounds with no certificate
+found,8 false bounds (all c at X1),0 missing. These finite arithmetic labels do
+not turn solver non-success into mathematical infeasibility. This note describes
+an additional EXACT separation gate and its narrowly scoped use in expansion.
+It supplies no novel arithmetic estimate, global inequality or RH proof.
+
+1. The finite cone from first principles.
+Let V be the finite rational monomial space containing EVERY monomial in the
+fixed lhs L=D-Delta_X, in every declared square column S_j=P_j^2, and in every
+declared relation column R_i=Q_i*rho_i or exact grouped sum thereof. The search
+cone is
+ C={sum_j w_j S_j+sum_i v_i R_i: w_j>=0, v_i arbitrary real}.
+A rational certificate additionally requires rational weights. Any rational
+linear functional y on V with
+ y(S_j)>=0 for ALL declared squares,
+ y(R_i)=0 for ALL declared free signed relations,
+ y(L)<0
+proves L is NOT in C: applying y to any representation yields a nonnegative
+value, contradicting y(L)<0. In a plus/minus nonnegative-column encoding,
+y must annihilate both signs of every relation column; imposing only one sign
+is insufficient. All equalities and signs must be checked exactly with
+Fractions, after any floating LP merely proposes a dual vector.
+
+The underlying cone is finitely generated plus a subspace, hence a polyhedral
+closed cone. Finite-dimensional separating-hyperplane/Farkas reasoning gives
+such a real functional when L is outside this cone. With rational column/lhs
+data, a feasible strict rational separator can be obtained by scaling y(L)<=-1
+and solving the resulting rational linear inequalities; existence does not
+justify using an approximate floating separator without exact reconstruction.
+The direct contradiction above is sufficient for every admitted finite witness
+and does not depend on trusting an LP infeasibility status.
+
+2. Certificate obstruction is not an arithmetic counterexample.
+The separator is a formal monomial functional, not necessarily evaluation at
+an arithmetic coefficient assignment, nor a positive functional on ALL squares.
+It is positive only on the declared basis squares and zero only on the declared
+multiplier relations. Therefore y(L)<0 does NOT mean actual L(mu) or L(c)<0.
+It rules out only the current finite cone. In particular, an actual true bound
+among the48 solver non-successes may have an exact cone separator. Conversely,
+solver failure without such a witness establishes neither cone separation nor
+false actual arithmetic. Actual false bound labels must come from independent
+complete coefficient evaluation or another valid arithmetic proof.
+
+3. How a witness guides expansion.
+For a candidate missing relation multiplier T*rho already supported in V,
+if y(T*rho)!=0, its freely signed column is incompatible with the separator;
+adding both signs invalidates this PARTICULAR witness. A grouped relation
+extension must evaluate its COMPLETE sum; a violated atomic term need not make
+the grouped sum nonzero. For a proposed new square P^2 supported in V,
+if y(P^2)<0, adding that nonnegative square invalidates this witness.
+A new relation for which y=0 or square with y>=0 leaves the witness valid,
+assuming every original constraint and target remains unchanged.
+
+If a proposed column contains a monomial absent from V, y has NO declared
+value on it. Do not silently insert0 and claim a determined violation or an
+unrestricted extended separator. One must either restrict the test to supported
+columns, explicitly search for a full extension y' agreeing on V and satisfying
+ALL new constraints, or solve a new complete extended dual from scratch.
+An explicitly chosen zero extension is just one proposed extended functional;
+its validity must be tested on every new column, and its failure says nothing
+about existence of another extension. Missing monomials are therefore unknown
+for the original witness-guided evaluation, not arithmetic zeros.
+
+Invalidating one separator does NOT imply certificate feasibility: another
+separator may remain. Every expansion must resynthesize and check the complete
+primal coefficient identity and nonnegative weights exactly. If unsuccessful,
+a new exact separator can certify the larger declared cone's obstruction.
+All previous candidates, dual failures, primal failures, resources and alias
+expansions must be retained. This is an adaptive proof-basis audit, not a
+posthoc change of a frozen pilot's success/failure status.
+
+4. General enumeration without a nominated winning identity.
+A new search may enumerate exact signed rational multiplier coefficients in a
+fixed height/denominator ordering, monomial degree, index horizon and arithmetic
+predicate family; bounds must precede enumeration and evaluation. Enumerate
+square templates and relation multipliers jointly, including missing unit,
+prime-power, coprime-product, squarefree-zero and inverse-row relations ONLY
+under their existing exact domain guards. Cost limits must charge polynomial
+expansion, primal/dual monomial dimensions, coefficient bits, relation predicates,
+complete source/product horizons and exact solving. Resource exhaustion is
+missing, not mathematical separation or a false bound.
+A reusable motif must specify its variable-index map, arithmetic premises,
+complete product boundaries, coefficient norms and initializer. Similar-looking
+finite weights are not evidence of a proved scale law. Motif extraction can
+propose grouped templates, then independent symbolic verification must establish
+the claimed family before any all-scale mathematical admission.
+
+5. Why jointly grouped templates are the useful next objective.
+The pilot grouped_cycles still allowed free per-index square weights, and only
+used the intentional relation subset ab<=N; its lhs retained the complete pair
+defect. Enlarging rowwise multipliers and atomized squares can encode the entire
+known finite actual sequence: complete inverse rows uniquely determine mu, and
+complete prime normalization/multiplicativity similarly determines actual c.
+This is finite proof expressivity, not newly supplied cancellation information.
+The reviewed counterfeit f_P from prime_pair_forcing_next_certificate_scope.txt
+shows that squarefree support, coprime cycles and finitely normalized prime
+families cannot on their own prove critical control. Every partial-domain or
+partial-normalization obligation remains explicit after a dual-guided expansion.
+
+The constructive next objective is therefore JOINTLY grouped square AND relation
+templates with a proved uniform scale law, rather than unrestricted per-index
+fitting. For full critical signed control, the template must ultimately prove:
+exists q0, every integerq>=q0, finiteCq independentX, every dyadicX>=1,
+ D_q(X)-Delta_f(X)>=0 for the COMPLETE original actual target,
+ D_q(X)=Cq X^2 ceil(X^(1/q)), with all initial and product-boundary costs charged.
+Every finite certificate and every exact cone separator remains finite until
+such a symbolic or recursive uniform theorem is established. The usual energy
+and ordinary-zeta bridge is conditional on that missing actual estimate.
+There is no learned-operator transfer claim when weights are recomputed per case,
+no inference from a separated cone to false RH, and no novel global theorem here.

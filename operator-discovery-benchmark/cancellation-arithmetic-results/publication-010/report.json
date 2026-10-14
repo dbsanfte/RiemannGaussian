@@ -1,0 +1,176 @@
+{
+  "RH_proved": false,
+  "added_scalar_charge": "O_beta(X^2) for fixed weights using only SF(t)<=t and pi(t)<=t",
+  "additional_signed_groups": 210,
+  "critical_finite_certificate_found": false,
+  "decision": {
+    "dual_status": "uncertified",
+    "final_scales": [],
+    "primal_status": "uncertified",
+    "run_primal": true
+  },
+  "diagnostic": {
+    "cost": {
+      "cpu_seconds": 15.824222602,
+      "elapsed_seconds": 15.825485904002562,
+      "observed_threads_at_completion": 1,
+      "peak_rss_kib": 226128,
+      "pid": 666065
+    },
+    "counts": {
+      "annihilated_relation": 12,
+      "unknown_missing_coordinates": 46,
+      "violated_relation": 152
+    },
+    "family_counts": {
+      "coprime_product": {
+        "annihilated_relation": 2,
+        "unknown_missing_coordinates": 18,
+        "violated_relation": 10
+      },
+      "gcd_product": {
+        "annihilated_relation": 2,
+        "unknown_missing_coordinates": 28
+      },
+      "inverse_row": {
+        "annihilated_relation": 2,
+        "violated_relation": 28
+      },
+      "norm": {
+        "annihilated_relation": 2,
+        "violated_relation": 28
+      },
+      "prime_power": {
+        "annihilated_relation": 2,
+        "violated_relation": 28
+      },
+      "squarefree_zero": {
+        "annihilated_relation": 2,
+        "violated_relation": 28
+      },
+      "unit": {
+        "violated_relation": 30
+      }
+    },
+    "independent_receipt_sha256": "c8fb67cb0f50534839fba9700002602d3d0078f2569e21d75e19e830c383b38d",
+    "larger_cone_feasibility_proved": false,
+    "missing_coordinates": 1793,
+    "no_new_floating_search": true,
+    "result_sha256": "0bd81955cb22e7d80bedac9ffbb88523cd89ab8288b293fda727e45373edba0e",
+    "scope": "unit relations also violate the old witness; this is arithmetic compatibility evidence, not a prime-distribution estimate",
+    "source_count": 81,
+    "status": "witness_invalid_for_localizer_cone",
+    "tests_passed": 22
+  },
+  "exact_primitive_state_cone_separator_found": false,
+  "gamma_gate_scope": "conditional on uniform fixed-template matching and critical extracted scalar budget under unchanged scalar-growth hypotheses",
+  "global_bound_proved": false,
+  "gram_dimensions": {
+    "full_child": 15,
+    "full_parent": 15,
+    "storage_K": 15
+  },
+  "historical_development_scales": true,
+  "independent_receipt_sha256": "84e0b424f04fecd90f2fbb173a9b19405610ec25084e450d8c75d92e4574ad4b",
+  "initial_cost": "1+u^T K u",
+  "jobs": [
+    {
+      "complete_columns": 1957,
+      "complete_moment_coordinates": 5641,
+      "cost": {
+        "cpu_seconds": 121.563960659,
+        "elapsed_seconds": 121.57923973500147,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 864740,
+        "pid": 666560
+      },
+      "file": "jobs/dual-000.json",
+      "phase": "dual",
+      "reason": "floating solver did not propose support; no exact infeasibility conclusion",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "7848d1e70859ee44608f63a58d0667d9416f6ef44cc9e0eac583634a26bb39f1",
+      "status": "uncertified"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 96.662418545,
+        "elapsed_seconds": 96.68090639897855,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 798268,
+        "pid": 666670
+      },
+      "file": "jobs/primal-000.json",
+      "phase": "primal",
+      "reason": "numerical SDP solver failure: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "274c62654e003212e59bb626a433c6bd87212c60ab61b5d309f1aceb8cefb40f",
+      "status": "uncertified"
+    }
+  ],
+  "next_action": "inspect retained numerical and exact reconstruction checkpoints; preserve unknown feasibility",
+  "original_target_and_all_scalar_sources_preserved": true,
+  "previous_research_publication": "publication-009",
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "publication-007": {
+      "bound_files": 401,
+      "manifest_sha256": "dda8d1cdcba8fbb4c0e385217ff7a66acb28cce39c4ab4819c9243a64fe855f9"
+    },
+    "publication-008": {
+      "bound_files": 294,
+      "manifest_sha256": "9314baa21704b4a09c280ac83dabc0d106006e1baa45f973246837c1a5d2053b"
+    },
+    "publication-009": {
+      "bound_files": 275,
+      "manifest_sha256": "530ee2f63f8c634c5613e499e686b2faa024475de78edcefb0e331598921e6a5"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "relation_scope": "grouped subspace of the arithmetic ideal with fixed shared coefficients",
+  "resources": {
+    "authorized_memory_when_limiting_bytes": 17179869184,
+    "charged_backend_reconstruction_work": 450000000,
+    "cooperative_seconds": 360,
+    "external_seconds": 1200,
+    "total_memory_bytes": 6442450944,
+    "worker_memory_bytes": 6442450944
+  },
+  "scalar_relation_groups": 613,
+  "scalar_square_groups": 366,
+  "schema": 10,
+  "scope_note_sha256": "2fff2232e0851781fe5a66cad54374698c23c78d8497803ecc2a78a96559a97b",
+  "signed_increment": "child minus four parent",
+  "source_count": 92,
+  "source_rule": "every existing primitive family times every affine state coordinate, in both regions",
+  "storage_is_nonnegative_SOS": false,
+  "tests_passed": 34,
+  "uniform_innovation_bound_proved": false
+}

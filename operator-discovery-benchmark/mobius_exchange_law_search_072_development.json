@@ -1,0 +1,21 @@
+{
+  "schema": "mobius-exchange-law-development-v1",
+  "runs": [
+    {
+      "tests": 9,
+      "returncode": 0,
+      "operations": 130070,
+      "elapsed_seconds": 0.019182164047379047,
+      "failures": []
+    },
+    {
+      "tests": 1,
+      "returncode": 0,
+      "operations": 397871,
+      "elapsed_seconds": 0.03312003397149965,
+      "failures": []
+    }
+  ],
+  "unique_new_synthetic_tests": 10,
+  "final_status": "PASS"
+}

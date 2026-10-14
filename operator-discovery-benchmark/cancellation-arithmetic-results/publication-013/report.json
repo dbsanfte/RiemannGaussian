@@ -1,0 +1,255 @@
+{
+  "RH_proved": false,
+  "augmented_rank": null,
+  "certified": false,
+  "coefficient_consistency": null,
+  "critical_finite_certificate_found": false,
+  "deadline_exceeded": false,
+  "diagnostic_only": true,
+  "equation_reduction_verified": false,
+  "exact_admission": false,
+  "exact_row_equivalence_is_not_a_PSD_certificate": true,
+  "execution_cost": {
+    "available": 1,
+    "bounded_status_overhead_bytes": 4096,
+    "cpu_budget": {
+      "available_cpus": 8,
+      "quota_rounding": "floor with minimum one",
+      "sources": {
+        "affinity": 8,
+        "os_cpu_count": 8
+      }
+    },
+    "elapsed_seconds": 216.8309400420112,
+    "errors": 0,
+    "max_in_flight": 1,
+    "max_total_payload_bytes": 33554432,
+    "max_total_result_bytes": 33554432,
+    "memory_budget_bytes": 3221225472,
+    "missing": 0,
+    "numerical_thread_control": "spawn-inherited environment; threadpoolctl additionally if installed",
+    "numerical_threads_per_worker": 1,
+    "payload_bytes": 197,
+    "requested_workers": 1,
+    "result_bytes": 392,
+    "serial_fallback": false,
+    "start_method": "spawn",
+    "worker_memory_bytes": 3221225472,
+    "worker_memory_limit_enforced": true,
+    "workers": 1
+  },
+  "full_optimization_variables_and_cones_unchanged": true,
+  "global_bound_proved": false,
+  "handoff": "PRIMITIVE_STATE_EXACT_BASIS_HANDOFF.txt",
+  "independent_receipt_sha256": "c731f377899d6f00e753c08c535db3c7e3b16e1656fb945b24b19f70ab837f7b",
+  "independent_worker_review": {
+    "RH_proved": false,
+    "certified": false,
+    "equation_reduction_verified": false,
+    "exact_admission": false,
+    "global_bound_proved": false,
+    "infeasibility_proved": false,
+    "mathematical_feasibility": "UNKNOWN",
+    "outer_failure_without_process_return": false,
+    "progress": {
+      "equation_reduction_verified": false,
+      "ledger": {
+        "all_stages_committed": false,
+        "pending_stages": [
+          "basis_producer"
+        ],
+        "remaining_work": 190523333,
+        "total_work_reserve": 259476667,
+        "verified": true
+      },
+      "ledger_retained": true,
+      "verified": true
+    },
+    "retained_progress_phase": "basis_unknown",
+    "selected_original_row_indices": null,
+    "solver_called": false,
+    "transport_status": "available",
+    "worker_state": {
+      "equation_reduction_verified": false,
+      "ledger": {
+        "all_stages_committed": false,
+        "pending_stages": [
+          "basis_producer"
+        ],
+        "remaining_work": 190523333,
+        "total_work_reserve": 259476667,
+        "verified": true
+      },
+      "ledger_retained": true,
+      "verified": true
+    },
+    "worker_status": "unknown"
+  },
+  "infeasibility_proved": false,
+  "ledger": {
+    "entries": [
+      {
+        "allocation": 34416554,
+        "charged_operations": 34416554,
+        "precision": "declared_compilation_reserve",
+        "reserve": 34416554,
+        "stage": "compilation"
+      },
+      {
+        "allocation": 50000000,
+        "charged_operations": 19715799,
+        "precision": "independently_verified",
+        "reserve": 19715799,
+        "stage": "projection_producer"
+      },
+      {
+        "allocation": 190583446,
+        "charged_operations": 20301277,
+        "precision": "independently_verified",
+        "reserve": 21847066,
+        "stage": "projection_checker"
+      },
+      {
+        "allocation": 175000000,
+        "charged_operations": null,
+        "precision": "allocated_unverified",
+        "reserve": 175000000,
+        "stage": "basis_producer"
+      },
+      {
+        "allocation": 199020581,
+        "charged_operations": 130727,
+        "precision": "independently_verified",
+        "reserve": 8497248,
+        "stage": "basis_checker"
+      }
+    ],
+    "max_work": 450000000,
+    "remaining_work": 190523333,
+    "total_work_reserve": 259476667
+  },
+  "limits": {
+    "basis_operations": 175000000,
+    "cooperative_seconds": 900,
+    "max_audit_cells": 60000000,
+    "max_coefficient_bits": 4096,
+    "max_fill_cells": 20000000,
+    "max_live_cells": 4000000,
+    "max_metadata_bytes": 65536,
+    "max_receipt_bytes": 8388608,
+    "max_source_cells": 4000000,
+    "max_work": 450000000,
+    "projection_operations": 50000000
+  },
+  "mathematical_cone_and_target_unchanged": true,
+  "mathematical_feasibility": "UNKNOWN",
+  "next_action": "address the actual recorded preprocessing resource block; retain unknown equation equivalence",
+  "original_finite_equations": 5641,
+  "original_finite_scope_is_not_a_uniform_proof": true,
+  "original_variables": 1957,
+  "preprocessing": {
+    "basis": {
+      "complete": false,
+      "counts": {
+        "fill_cells": 247949,
+        "live_cells": 38074,
+        "operations": 48633769,
+        "peak_live_cells": 38366,
+        "receipt_bytes": 8366520,
+        "source_cells": 577526,
+        "transcript_steps": 232141
+      },
+      "reason": "receipt byte cap",
+      "source_hash": "9036c059ba1b762f09f1b34a0af0b776a86780836d7f4b2929c82e4a27669d42",
+      "status": "unknown"
+    },
+    "projection": {
+      "complete": true,
+      "counts": {
+        "identities_verified": 733,
+        "operations": 19715799,
+        "peak_live_cells": 588808,
+        "projected_cells": 571885,
+        "receipt_bytes": 22664,
+        "recipe_cells": 853,
+        "source_cells": 951239
+      },
+      "full_source_hash": "395d3c4556aced8d1685824237b55c0dba688b275a979c38548eb8dbdde0d6f8",
+      "projected_rows_hash": "9036c059ba1b762f09f1b34a0af0b776a86780836d7f4b2929c82e4a27669d42",
+      "status": "complete"
+    }
+  },
+  "previous_research_publication": "publication-012",
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "publication-007": {
+      "bound_files": 401,
+      "manifest_sha256": "dda8d1cdcba8fbb4c0e385217ff7a66acb28cce39c4ab4819c9243a64fe855f9"
+    },
+    "publication-008": {
+      "bound_files": 294,
+      "manifest_sha256": "9314baa21704b4a09c280ac83dabc0d106006e1baa45f973246837c1a5d2053b"
+    },
+    "publication-009": {
+      "bound_files": 275,
+      "manifest_sha256": "530ee2f63f8c634c5613e499e686b2faa024475de78edcefb0e331598921e6a5"
+    },
+    "publication-010": {
+      "bound_files": 304,
+      "manifest_sha256": "bdcfd2747abf589d6fc7cc9330e7035bc0bd5d2d7442001610a144ef690c1f98"
+    },
+    "publication-011": {
+      "bound_files": 217,
+      "manifest_sha256": "efad6084163dc8a99705fe974f3d57ec967b755b61b887cba1eaef80ac28d7fb"
+    },
+    "publication-012": {
+      "bound_files": 259,
+      "manifest_sha256": "c67794133adb4d1b9645cc7003835485812a2eabada0d59f15d2dc630345f6d8"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "reason": "incomplete basis; original equations remain required",
+  "resources": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 3221225472,
+    "timeout_seconds": 1800,
+    "worker_memory_bytes": 3221225472,
+    "workers": 1
+  },
+  "schema": 13,
+  "selected_original_row_indices": null,
+  "selected_original_row_indices_sha256": null,
+  "solver_called": false,
+  "source_count": 101,
+  "terminal_receipt_sha256": "0f8a8f1115fa9d903ae9ad53534e59b77baca828ea2c2509c389ec447f7655e3",
+  "tests_passed": 63,
+  "transport_status": "available",
+  "uniform_innovation_bound_proved": false,
+  "worker_cost": {
+    "cpu_seconds": 215.699085587,
+    "elapsed_seconds": 215.81644576697727,
+    "observed_threads_at_completion": 1,
+    "peak_rss_kib": 730588,
+    "pid": 672713
+  },
+  "worker_status": "unknown"
+}

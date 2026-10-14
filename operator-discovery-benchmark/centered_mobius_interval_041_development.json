@@ -1,0 +1,31 @@
+{
+  "schema": "centered-mobius-interval-development-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 14,
+      "failures": 2,
+      "errors": 3,
+      "elapsed_seconds_reported_by_unittest": 0.005,
+      "operations": null,
+      "source_exposure": "toy rational coefficients, synthetic prime local powers, injected centers, source-lambda schema only; no actual source coefficients or normalization"
+    },
+    {
+      "returncode": 0,
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds_reported_by_unittest": 0.009,
+      "operations": null,
+      "source_exposure": "toy rational coefficients, synthetic prime local powers, injected centers, source-lambda schema only; no actual source coefficients or normalization"
+    }
+  ],
+  "development_operations_aggregated": false,
+  "cumulative_operations": null,
+  "actual_source_generated": false,
+  "actual_normalization_evaluated": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "uniform_signed_bound_proved": false,
+  "RH_proved": false
+}

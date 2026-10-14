@@ -1,0 +1,466 @@
+OBSTRUCTION-AWARE AUXILIARIES AND COMPLETE DYADIC PROOF RULES
+
+Scope
+-----
+This is a new analytical memo only. The frozen shifted-product candidate 10
+and every earlier file remain unchanged. The 27-word renewal sweep remains
+unrun. No numerical study, new arithmetic evaluation, test, parameter search,
+rescore, or hash was performed. SEMANTIC_POTENTIAL_DISCOVERY_HANDOFF.txt and
+the complete candidate-10 review were read. This memo does not repeat the
+old proposal of adding arbitrary nonnegative squares to E and hoping that
+finite drift samples close the theorem.
+
+The goal is to make the missing estimate an explicit proof input, jointly
+with an operator, auxiliary and complete argument. We prove usable rule
+families, several new subcritical components, and exact weighted-correlation
+reductions. No input lemma sufficient for the complete actual-source moment
+is proved. Every global moment/RH flag remains false.
+
+1. Fixed target, source and notation
+-----------------------------------
+Keep u=1/3, v=2/3, beta=9/2, a_b=mu*n^(-b), h_b=(a_b-delta)/b,
+  p=h_u*h_v, S(x)=sum_(n<=x)p(n).
+Let d be the complete same-prime prime-power overlap coefficient, D its
+prefix; let t be the mixed-prime portion of the literal prime-power product,
+T its prefix; and let c be the coefficient of the OTHER THREE complete
+composite-factor branches, C its prefix. Thus p=d+t+c exactly. No composite
+factorization, repeated-prime overlap, factor order or source sign is lost.
+Use the exact larger pole coefficient m=m_u from the earlier memo and
+  R(x)=T(x)+C(x)-m*x^(2/3), V(x)=C(x)-m*x^(2/3).
+This R is the already proved reduction of the original centered output J:
+  J(x)=R(x)+D(x)-m_v*x^(1/3).
+The last two complete terms have explicit finite critical-norm costs.
+They are part of the frozen output even when omitted from this proof target.
+
+For integer dyadic X>=1 write
+  <f,g>_X=X^(-2)sum_(n=X)^(2X-1)f(n)g(n),
+  E_f(X)=<f,f>_X, ||f||_X=sqrt(E_f(X)).
+The desired theorem is E_R(X)<=K_epsilon X^epsilon for every epsilon>0 and
+EVERY dyadic X, with constants independent of X. An unbounded/cofinal set
+of reciprocal-q exponents is equivalent after enlarging constants. Initial
+value E_R(1)=m^2 is retained. Full dyadic cells, real extension, and exact
+initial costs are essential to the original RH bridge.
+
+2. A proved jump-square lemma
+------------------------------
+Put a(n)=p(n)-d(n), so R(x)=sum_(n<=x)a(n)-m*x^(2/3).
+Because the factor increments have zero constant and |h_u|<=3, |h_v|<=3/2,
+  |p(n)|<=beta*d_2(n).
+The complete overlap mass per prime is beta, hence |d(n)|<=beta and
+  |a(n)|<=2*beta*d_2(n).
+Similarly |c(n)|=|p(n)-(l_u*l_v)(n)|<=2*beta*d_2(n), where l_b is the
+literal prime-power restriction. Every bound is on the FULL coefficient.
+
+At prime powers, (e+1)^2<=binom(e+3,3), so d_2(n)^2<=d_4(n). Ordered
+factor counting gives for every real N>=1
+  sum_(n<=N)d_4(n)<=N*(1+log N)^3.
+Consequently for f=a or c,
+  sum_(n<=N)|f(n)|^2<=4*beta^2*N*(1+log N)^3.        (2.1)
+This uniform elementary estimate controls local increments, NOT prefixes.
+It does not assume RH or an unproved signed correlation.
+
+3. Exact paired energy and a subcritical within-pair component
+--------------------------------------------------------------
+For X<=n<2X define the complete child average and half-difference
+  A(n)=[R(2n)+R(2n+1)]/2,
+  B(n)=[R(2n+1)-R(2n)]/2.
+All child indices together fill [2X,4X) exactly. For any fixed real lambda,
+  H_lambda(n)=A(n)-lambda*R(n), rho=lambda^2/2,
+  E_R(2X)=rho*E_R(X)+lambda*<R,H_lambda>_X
+                         +[E_(H_lambda)(X)+E_B(X)]/2.             (3.1)
+This is an identity, with EVERY mixed term. Choosing lambda=1 gives a
+formal half-parent coefficient, but does not create a free contraction:
+  H_1(n)=sum_(n<k<=2n)a(k)+a(2n+1)/2
+     -m*[((2n)^(2/3)+(2n+1)^(2/3))/2-n^(2/3)].
+It contains the entire fresh transport, not a known small error.
+
+The whole within-pair component B IS small. Put kappa=2/3. Concavity gives
+  B(n)=[a(2n+1)-m*((2n+1)^kappa-(2n)^kappa)]/2.
+Using (2.1) through N<4X,
+  E_B(X)<=8*beta^2*X^(-1)*(1+log(4X))^3
+                +(m^2*kappa^2/2)*2^(-2/3)*X^(-5/3).              (3.2)
+Its contribution to (3.1) is HALF this bound. The complete cost is summable
+on dyadic scales. Thus the unresolved transport is the LOW-FREQUENCY defect
+  Gamma_lambda(X)=lambda*<R,H_lambda>_X+E_(H_lambda)(X)/2,           (3.3)
+with the known B cost added. Bounding H_lambda absolutely alone loses its
+covariance with R. Defining H_lambda by subtracting a parent never proves
+that covariance has a favorable sign.
+
+4. Compact conditional recurrence rules, with exact consequences
+----------------------------------------------------------------
+Let e_j=E_R(2^j), j>=0, or another nonnegative/coercive energy with a proved
+comparison to E_R. All statements here are conditional proof rules. A
+certificate must supply the specified uniform DEFECT estimate, not a fit.
+
+Rule A: strict contraction. If e_(j+1)<=rho*e_j+D_j, 0<=rho<1, then
+  e_j<=rho^j*e_0+sum_(i=0)^(j-1)rho^(j-1-i)*D_i.
+A bounded D gives e_j<=e_0+D/(1-rho). A polynomial (1+j)^k defect gives
+polylogarithmic energy O((1+j)^k), with explicit geometric cost. A defect
+C_epsilon*2^(epsilon*j) gives
+  e_j<=rho^j*e_0+C_epsilon*2^(epsilon*(j-1))
+                                    /[1-rho*2^(-epsilon)].
+Thus arbitrarily small positive defect exponents yield the cofinal theorem.
+
+Rule B: bounded drift. If rho=1 and D_j<=D, then e_j<=e_0+jD:
+E_R(X)=O(1+log X). A (1+j)^k defect gives O((1+j)^(k+1)). An arbitrarily
+small exponential-in-j defect gives the same subpower conclusion with the
+geometric denominator 2^epsilon-1. Nonnegative storage W=E_R+auxiliary
+squares only helps if its COMPLETE drift has such a bound, W(1) is finite,
+and W>=E_R. The old handoff supplies no such credit for candidate 10.
+
+Rule C: epsilon slack. For each epsilon>0 it suffices to prove
+  e_(j+1)<=rho_epsilon*e_j+D_epsilon*2^(epsilon*(j+1)),
+  rho_epsilon<2^epsilon.
+Induction with K>=max(e_0,D_epsilon/[1-rho_epsilon/2^epsilon]) yields
+e_j<=K*2^(epsilon*j). A fixed rho>1 instead creates an exponent floor
+log_2 rho; it does NOT give cofinal epsilon. At equality an extra factor j
+appears and must be paid by exponent slack, not suppressed.
+
+Rule D: strictly smaller scales. Suppose for all sufficiently large dyadic X,
+  E_R(X)<=rho*E_R(X/2)+sum_i A_i*E_i(Y_i(X))+D(X),
+where 0<=rho<=1, A_i are finite, Y_i<=B_i*X^(theta_i), theta_i<1, and each
+E_i has a proved comparison to the jointly controlled target/auxiliary
+energy at those scales. Then for every epsilon>0 strong induction works
+once
+  rho*2^(-epsilon)+sum_i A_i*B_i^epsilon
+                   *X^(-(1-theta_i)*epsilon)<1
+and the polylogarithmic/strictly subpower D is absorbed. The finite earlier
+range and all initial auxiliary energies are part of K_epsilon. This does
+NOT allow E_i to be silently assumed bounded: they must be included in a
+closed well-founded induction system with these comparisons.
+
+For nondyadic Y, choose dyadic Y_0<=Y<2Y_0. Nonnegative full squares give
+  E_f(Y)<=E_f(Y_0)+4*E_f(2Y_0).
+The second scale is strictly below X only after its declared threshold;
+otherwise it is a finite-head cost. A single parent plus constant smaller-
+scale forcing with rho=1 can be subpower WITHOUT being polylogarithmic.
+With rho<1, finitely many constant smaller-scale weights and polynomial
+log defects, a sufficiently high logarithmic power closes because
+rho+sum_i A_i*theta_i^k<1. Do not confuse these two rates.
+
+Rule E: coupled energies. For a state vector F with first coordinate R,
+choose a fixed symmetric matrix P with F^T P F>=c*R^2 for all F, c>0.
+If exact arithmetic gives F(2n+b)=A_b F(n)+H_b(n), b=0,1, and
+  sum_b A_b^T P A_b<=4*rho*P,
+then its child energy is at most rho times its parent plus the COMPLETE
+  (1/(2X^2))*sum_n F(n)^T*sum_b A_b^T P H_b(n)
+          +(1/(4X^2))*sum_(n,b)H_b(n)^T P H_b(n).
+Apply Rules A--D only after proving the defect and coercivity. This admits
+operator+auxiliary+argument search, but arbitrary definitions of H_b by
+subtraction still give identities rather than bounds. Negative cross terms
+cannot be omitted merely because P or the auxiliary is positive.
+
+5. The proposed moving-average auxiliary, with complete costs
+-------------------------------------------------------------
+Let H>=1 be an integer, possibly H=floor(X^a), and for X<=n<2X put
+  V_bar(n)=H^(-1)*sum_(h=0)^(H-1)V(n+h),
+  U(n)=T(n)+V_bar(n), D_H(n)=V(n)-V_bar(n).
+Then R=U+D_H EXACTLY. Use a whole window through
+2X+H-2; never clip it at 2X-1. In a future evaluation all coefficient data
+through that lookahead must be available. Each degree-two factor queries
+source mu only through half that coefficient horizon, but that fact is not
+permission to erase the lookahead. These are auxiliaries to the original
+R, not changed candidate constants or a new rescore.
+
+For 1<=k<=H-1 set w_k=(H-k)/H and W=sum_k w_k=(H-1)/2. Exact telescoping
+of EVERY composite coefficient gives
+  D_H(n)=-sum_k w_k*c(n+k)+m*s_H(n),
+  s_H(n)=H^(-1)*sum_(h=0)^(H-1)(n+h)^kappa-n^kappa.
+Since kappa=2/3, 0<=s_H(n)<=kappa*W*n^(-1/3).
+Weighted Cauchy--Schwarz and then complete offset counting give
+  sum_(X<=n<2X)|sum_k w_k*c(n+k)|^2
+     <=W^2*sum_(X<r<=2X+H-2)|c(r)|^2.
+If H<=X, (2.1) therefore proves
+  E_(D_H)(X)<=24*beta^2*W^2*X^(-1)*(1+log(3X))^3
+                     +2*m^2*kappa^2*W^2*X^(-5/3)
+     <=6*beta^2*H^2*X^(-1)*(1+log(3X))^3
+                     +(m^2*kappa^2/2)*H^2*X^(-5/3).               (5.1)
+At H=1 the exact discrepancy is zero; the W bound records that fact.
+
+For H=floor(X^a), 0<=a<=1:
+- a<1/2 gives a genuinely decaying X^(2a-1)log^3 X cost, summable dyadically;
+- a=1/2 gives a polylogarithmic, cofinal-admissible cost, NOT a finite
+  critical-norm conclusion from this bound;
+- a>1/2 leaves a positive exponent 2a-1, so this elementary rule no longer
+  closes arbitrary epsilon. Improving it needs an actual signed offset
+  coefficient-correlation lemma, not the same bound with a fitted ceiling.
+The smooth contribution is X^(2a-5/3), smaller throughout this threshold.
+Fixed H is the a=0 situation with its fixed explicit constant.
+
+For every eta>0, complete Young inequalities give BOTH directions
+  E_R<=(1+eta)E_U+(1+1/eta)E_(D_H),
+  E_U<=(1+eta)E_R+(1+1/eta)E_(D_H).                 (5.2)
+Thus at a<=1/2 the cofinal theorem for U is EQUIVALENT to that for R. This
+is a proof-backed change of representation and a usable feedback feature,
+but NOT an automatic decrease in difficulty. At a=1/2 absorb logs into any
+positive epsilon with an explicit supremum; for example
+(1+log(3X))^3<=4*(1+log 3)^3*[1+(3/(e*epsilon))^3]*X^epsilon.
+
+5a. Shifts, both channels, and nested joint-state padding
+---------------------------------------------------------
+The same proof covers a shift, rather than only an average, and covers
+transforming either T or V. Define a finite positive offset kernel K by
+  (K f)(n)=sum_h k_h*f(n+h), k_h>=0, sum_h k_h=1.
+For shift(H), k_H=1. For average(H), k_h=1/H on 0<=h<H.
+Its mean displacement is M_K=sum_h h*k_h, namely H for a shift and
+(H-1)/2 for an average. The exact telescoping weights are
+  w_j=sum_(h>=j)k_h, sum_j w_j=M_K.
+Replacing W by M_K proves the single-channel discrepancy bound. If T is
+transformed, D_1=T-K_1 T has NO smooth part. If V is transformed, the exact
+smooth part is m*[K_1(n^kappa)-n^kappa], not a constant derivative.
+
+Let U_1=K_T T+K_C C-m*K_C(n^kappa), with (K_T,K_C) either
+(K_1,identity) or (identity,K_1), so R=U_1+D_1. Apply K_2 to the WHOLE
+joint state U_1, setting U_2=K_2 U_1, D_2=U_1-K_2 U_1. Then
+  R=U_2+D_2+D_1 EXACTLY.
+The kernels are fixed within each base-X block; if their lengths change on
+a dyadic child, the resulting kernel-change terms belong to that child's
+transport identity. They cannot be silently identified with the parent.
+
+Suppose H_1,H_2<=X, each offset support is at most its H_i, and total
+lookahead is at most 2X. Every sample then lies below 4X; all coefficient
+and smooth windows through 4X-1 must be retained. Put L=1+log(4X) and
+M_i=M_(K_i). Uniform conservative constants valid for BOTH first channels
+and for shifts/averages are
+  E_(D_1)(X)<=32*beta^2*M_1^2*X^(-1)*L^3
+                         +2*m^2*kappa^2*M_1^2*X^(-5/3),
+  E_(D_2)(X)<=128*beta^2*M_2^2*X^(-1)*L^3
+                         +2*m^2*kappa^2*M_2^2*X^(-5/3).          (5a.1)
+The first smooth term is exactly zero when T is the first transformed
+channel. To prove the second coefficient constant, the jump sequence of
+U_1 is K_T t+K_C c, with two nonnegative coefficient stencils of total
+L1 mass two. Jensen/Cauchy gives its complete window square sum at most
+  2*sum_(channels,offsets)k_h*sum |f_channel(n+h)|^2
+     <=64*beta^2*X*L^3.
+Weighted telescoping contributes M_2^2 and splitting the coefficient and
+smooth parts contributes the factor two, yielding 128. No pointwise bound
+on d_2(n+h) by d_2(n) is assumed. These are full window-sum bounds.
+The EXACT second smooth part is
+  m*[K_2 K_C(n^kappa)-K_C(n^kappa)].
+Only afterward is concavity used to bound its absolute value by
+|m|*kappa*M_2*n^(-1/3). Its n dependence and first-stage offsets stay in
+the identity and in every complete numerical square.
+
+Consequently both exponents a_1,a_2<=1/2 prove polylogarithmic padding for
+both stages; strict inequalities give decaying costs. An exponent 2/3
+at either stage is NOT covered by a cofinal padding proof from (5a.1),
+even if finite evaluations look favorable. The two-stage exact expansion
+contains all three pairwise mixed terms of U_2,D_2,D_1. The coercive majorants
+  F_1=2*E_(U_1)+2*E_(D_1)>=E_R,
+  F_2=4*E_(U_2)+4*E_(D_2)+2*E_(D_1)>=E_R            (5a.2)
+follow by two successive complete Young bounds, not by asserting favorable
+signs for those cross terms. Their exact initial F_i(1) and all child
+lookahead costs are retained. If the padding exponents are supported,
+cofinal moments for F_i, U_i and R are equivalent with explicit enlarged
+constants. This certifies the compiler's conditional padding claim; it
+does not certify the unresolved U_i moment.
+
+6. The exact offset correlations exposed by smoothing
+------------------------------------------------------
+Define the complete offset kernels on the declared lookahead:
+  Gamma_cc(X;k,l)=X^(-2)*sum_(X<=n<2X)c(n+k)c(n+l),
+  Gamma_cs(X;k)=X^(-2)*sum_n c(n+k)s_H(n).
+Then the EXACT discrepancy square is
+  E_(D_H)=sum_(k,l)w_k*w_l*Gamma_cc(X;k,l)
+                       -2*m*sum_k w_k*Gamma_cs(X;k)+m^2*E_(s_H).  (6.1)
+No stationarity in k-l, sign of off-diagonal terms, or missing-boundary
+assumption is used. The elementary H^2 loss comes from bounding all these
+terms absolutely. A bound of order H/X times polylogs, for example, would
+be a genuinely different local coefficient-offset correlation input and
+would extend the useful averaging range. It is not supplied here.
+
+Likewise the auxiliary's FULL square is
+  E_U=E_T+H^(-2)*sum_(h,k)<V(n+h),V(n+k)>_X
+                    +(2/H)*sum_h<T(n),V(n+h)>_X.   (6.2)
+The explicit prime/composite cross correlation can be expanded without
+copying the target square. For h>=0,
+  <T,C(n+h)>_X
+    =X^(-2)*sum_(d<=2X-1,e<=2X+H-2)t(d)c(e)K_(X,h)(d,e),
+  K_(X,h)(d,e)=max(0,2X-max(X,d,e-h)).
+The smooth complement is exactly
+  -m*X^(-2)*sum_(X<=n<2X)T(n)(n+h)^(2/3).
+This triangular/fiber kernel identifies the actual signed divisor/prime
+weight, the range, and every cutoff. A proposal to bound it must retain
+both covariance and all V--V terms in (6.2). Simply asking that their
+sum equal a small number renames E_U and thus the original RH-scale task.
+
+There is a nonnegative smoothing variance, but not a free absorption credit:
+  Var_V=X^(-2)*sum_n [H^(-1)sum_h V(n+h)^2-V_bar(n)^2]
+       =(1/(2H^2))*sum_(h,k)E_(V(n+h)-V(n+k))>=0,
+  E_U=H^(-1)*sum_h E_(T(n)+V(n+h))-Var_V.
+The same jump lemma bounds Var_V by a constant multiple of the H^2/X
+polylog cost. At H<=sqrt X this is cofinal padding; it cannot by itself
+pay a fixed proportion of a potentially supercritical parent energy.
+
+A precise small-padding no-go makes this clear. If ||D_H||_X<=B_X, then
+  ||U||_X>=max(0,||R||_X-B_X).
+Claiming E_U<=rho E_R with fixed rho<1 consequently implies
+  E_R<=B_X^2/(1-sqrt rho)^2.                       (6.3)
+Thus a uniform smoothing contraction with polylog B already ASSERTS the
+target estimate; it does not derive it from the known padding bound.
+Along any scales where E_R/B_X^2 diverges, E_U/E_R tends to one. This is an
+exact obstruction to selecting an argument merely by numerical contraction.
+
+7. Prime transfer gives a different, strictly smaller-cofactor correlation
+--------------------------------------------------------------------------
+The actual arithmetic transfer is more informative than a norm identity.
+For a prime p not dividing m>1 put r_b(p)=1-p^(-b). The established law is
+  p(mp)=-(r_u(p)+r_v(p))*p(m)
+                        -beta*[r_v(p)*a_u(m)+r_u(p)*a_v(m)].
+Since d(mp)=0 for such m, this is also a(mp). Define for m>=2
+  z_0(m)=2*p(m)+beta*[a_u(m)+a_v(m)],
+  z_u(m)=p(m)+beta*a_v(m), z_v(m)=p(m)+beta*a_u(m),
+so z_0=z_u+z_v and EXACTLY
+  a(mp)=-z_0(m)+p^(-1/3)*z_u(m)+p^(-2/3)*z_v(m).   (7.1)
+This is a full three-channel source identity. Calling p multiplicative or
+erasing either a_b complement would be false.
+
+Choose any fixed theta in (1/2,1), Y=x^theta, M=floor(x/Y). Any integer
+n<=x with largest prime factor greater than Y contains exactly one such
+prime, to exponent ONE. Its cofactor is m<=M<Y and automatic p does not
+divide m. Since a vanishes at one-prime integers, only m>=2 contribute.
+Let K_theta(x) be the COMPLETE prefix of a(n) over n<=x with largest prime
+factor <=Y, and for b=0,u,v put
+  Pi_b(x,m)=sum_(Y<p<=x/m)p^(-b).
+Then all coefficients are partitioned exactly:
+  R(x)=K_theta(x)-sum_(2<=m<=M)z_0(m)Pi_0(x,m)
+           +sum_(2<=m<=M)z_u(m)Pi_u(x,m)
+           +sum_(2<=m<=M)z_v(m)Pi_v(x,m)-m_u*x^(2/3).              (7.2)
+Here m_u is the fixed main coefficient; summation m is a cofactor.
+No prime range, repeated-prime branch, or smooth-number complement is lost.
+The cutoff is real and strict on the large-prime side.
+
+This exposes actual PRIME-BANK/SMALL-COFACTOR correlations different from
+a generic bound on R itself. They are well-defined missing-lemma inputs:
+weights count primes in (x^theta,x/m], and source coefficients/prefixes lie
+at most at x^(1-theta). But a bound for K_theta is NOT supplied by a small
+cofactor energy. It includes every smooth-number coefficient up to x.
+Absolute counting only gives an x*polylog cost. It must remain in the
+joint argument together with its covariance with the bank terms.
+
+Changing the bank under transport also has an exact old/fresh boundary:
+  K_theta(2x)-K_theta(x)
+    =sum_(x<n<=2x,Pplus(n)<=(2x)^theta)a(n)
+       +sum_(n<=x,x^theta<Pplus(n)<=(2x)^theta)a(n).
+The old-bank gains in the second sum cannot be omitted when constructing
+a paired defect or smaller-scale induction.
+
+8. One entire large-prime weighted branch is rigorously subcritical
+-------------------------------------------------------------------
+For m>=2, |z_u(m)|,|z_v(m)|<=2*beta*d_2(m). The integer integral bound
+sum_(j<=y)j^(-b)<=y^(1-b)/(1-b), 0<b<1, and ordered divisor counting give
+  sum_(m<=M)d_2(m)m^(-(1-b))
+                              <=M^b*(1+log M)/b.
+Therefore the COMPLETE b-weighted large-prime branch has absolute bound
+  |sum_(2<=m<=M)z_b(m)Pi_b(x,m)|
+       <=[2*beta/(b*(1-b))]*x^(1-b*theta)
+                                      *[1+(1-theta)log x].        (8.1)
+Here z_b denotes the appropriately paired state of (7.1), not an omitted
+selector or fitted coefficient. For b=u or v the prefactor is 9*beta.
+
+Take theta=5/6 as a symbolic proof choice, not a numerical search. Then
+M<=x^(1/6), and the ENTIRE v=2/3 branch, denoted L_v(x), obeys
+  |L_v(x)|<=9*beta*x^(4/9)*(1+log x/6),
+  ||L_v||_crit^2<= (9*beta)^2*(153/2).              (8.2)
+Indeed integral_1^infinity x^(-10/9)(1+log x/6)^2dx=153/2.
+This is strictly subcritical without RH. More generally any theta>3/4
+makes the v branch subcritical. The u=1/3 branch retains exponent
+1-theta/3>=2/3 even as theta approaches one, so the same absolute method
+cannot peel it at the critical scale.
+
+Consequently one new exact reduced target is
+  R_new(x)=K_(5/6)(x)-sum_(2<=m<=x^(1/6))z_0(m)Pi_0(x,m)
+              +sum_(2<=m<=x^(1/6))z_u(m)Pi_u(x,m)-m_u*x^(2/3),
+  R(x)=R_new(x)+L_v(x).                            (8.3)
+Both-direction triangle bounds with (8.2) show cofinal equivalence. The
+whole cross term with L_v is kept; its finite-critical cost is paid, not
+assumed negative. This eliminates a particular arithmetic term rather than
+merely introducing another positive square.
+
+The remaining bank terms can be expanded into genuinely smaller prefixes.
+For any f with F(t)=sum_(2<=m<=t)f(m), finite summation by parts gives
+  sum_(m=2)^M f(m)Pi_b(x,m)
+    =F(M)Pi_b(x,M)+sum_(m=2)^(M-1)
+                         F(m)[Pi_b(x,m)-Pi_b(x,m+1)].
+All weights and weight differences are nonnegative. The boundary term is
+retained: floor M does NOT generally make Pi_b(x,M) zero. This is the
+precise smaller-scale weighted input a rule compiler can expose. It does
+not justify replacing F by a bound already equivalent to RH.
+
+9. Exact Abelian cancellation, and the still missing rate
+--------------------------------------------------------
+The new transfer states have simple Dirichlet identities over m>=2:
+  Z_u(s)=P(s)+beta*(D_v(s)-1)=beta*D_u(s)*(D_v(s)-1),
+  Z_v(s)=P(s)+beta*(D_u(s)-1)=beta*D_v(s)*(D_u(s)-1),
+  Z_0(s)=beta*[2*D_u(s)D_v(s)-D_u(s)-D_v(s)].
+Since D_u(1)=D_v(1)=0, all three have exact ANALYTIC value zero at one.
+This identifies the companion cancellation that would remove the leading
+large-prime mean if its finite weighted sums were controlled. It is not
+an assertion that sum z_b(m)/m converges ordinarily, nor a uniform rate
+for partial sums. Such an assertion requires source-specific information.
+The series identities are first proved absolutely in Re(s)>1, then continued.
+
+The small-cofactor operator has weights roughly x/(m log x), so a few
+small m can create an x/log x contribution. The compensating zero at one
+therefore matters; one cannot just take absolute values and call every
+cofactor small. The explicit lemma candidates are bounds for these prime-
+bank weighted Z prefixes and their complete covariance with K_theta, with
+all endpoints and changing-bank gains retained. They are structurally
+specified weighted correlations, not a claim of proved cancellation.
+A full bound on their sum in (8.3) remains equivalent to the original
+cofinal target. Individual estimates/comparison lemmas would be genuine
+progress only if obtained without assuming that target or a square-root
+M/M_2/shifted-prefix bound that already imports RH-strength information.
+
+10. Obstructions, proof-input hygiene and ranking reductions
+------------------------------------------------------------
+The existing handoff's root fibers, paired polynomial-Mobius correlation,
+and bounded mask/divisor components show how an argument can expose a
+new weight while retaining the unsolved transport. Their negative credit
+cannot be borrowed for candidate 10. None concerns the Z prime-bank kernel
+or its K_theta boundary. An auxiliary must come with its own exact identity,
+coercivity/coverage and a proved component or explicitly missing lemma.
+
+Even all known jump and smoothing bounds do not force subpower energy.
+Outside the actual arithmetic source, take a deterministic prefix R(n)=n^a
+with 1/2<a<1. Its increments are bounded, its within-pair B energy is
+subcritical, and every H<=sqrt X smoothing discrepancy satisfies the
+same kind of local estimate. Yet E_R(X)>=X^(2a-1). This is an exact
+countermodel to a proof using only local increment norms and small padding;
+it is NOT a counterexample to candidate 10 or its actual prime-transfer law.
+It identifies where arithmetic correlation has to enter.
+
+A compact prospective proof record should keep these separate:
+- operator and original source, complete centered target and initial cost;
+- auxiliary identity with all lookahead, dyadic child and bank boundaries;
+- proved component bounds with fixed constants and validity ranges;
+- the named unproved correlation kernel and exact quantifiers;
+- conditional recurrence/conclusion, including rho, scale ratios and slack;
+- unchanged full signed target and every padding/mixed-term cost.
+No per-obligation reset, response-selected rho, or missing child is evidence
+for a uniform rule. A finite fitted ceiling remains a hypothesis. Matrix
+coercivity and exact algebra are proved; the source defect is separately open.
+
+Proof-reduction ranking can prefer: an independently proved removed component;
+a strictly smaller-scale dependency with closed induction coefficients; a new
+explicit arithmetic correlation kernel; then an equivalence/alias identity;
+and only then finite constant improvements. Counting the same target square
+under a new name as a new correlation is inadmissible. The moving average at
+a<=1/2 is an equivalence with proved padding; the large-prime v-branch peel
+is an actual component elimination; the unweighted/one-third banks plus
+K_theta are explicit new obligations. None of them currently supplies the
+uniform low-frequency defect in (3.3) or a closed joint recurrence.
+
+Final status
+------------
+Proved: complete paired transport identity and summable within-pair cost;
+conditional contraction/drift/epsilon/smaller-scale/coupled-energy rules;
+complete shift/average and nested joint-state discrepancy bounds and their
+fractional thresholds, with the 2/2 and 4/4/2 coercive majorants; exact
+shifted prime/composite and offset covariance kernels; a small-padding
+contraction obstruction; exact largest-prime/cofactor decomposition; and a
+strictly subcritical full p^(-2/3) large-prime branch with explicit cost.
+Open: the actual-source low-frequency defect, the offset improvements beyond
+the elementary averaging range, and the complete Z-bank/smooth-component
+weighted correlation that would close a cofinal theorem. No numerical work
+was done and no full signed moment or RH conclusion is asserted.

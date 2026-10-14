@@ -1,0 +1,47 @@
+{
+  "schema": "mobius-transport-source-059-development-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "elapsed_seconds": 0.06758505699690431,
+      "operations": 3239069
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.05693594500189647,
+      "operations": 989374,
+      "scope": "only corrected D-profile fixture test; no suite replay"
+    }
+  ],
+  "total_primitive_counts": {
+    "prime_trial_divisions": 15,
+    "exact_power_bits": 1647,
+    "mu_sieve_entries": 275,
+    "integer_weight_entries": 372,
+    "coprime_mask_entries": 146,
+    "log_atoms": 155,
+    "quadrature_nodes": 512,
+    "quadrature_matrix_entries": 6208,
+    "tokens": 68,
+    "cache_hits": 12
+  },
+  "peak_bytes_estimate": 8437027,
+  "scope": "tiny N<=17 numerical custom-band fixtures and exact/cap tests N<64 only; no scientific source tables",
+  "scientific_pilot_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "checker_imported": false,
+  "numerical_screening_only": true,
+  "uniform_bound_or_rh_claimed": false,
+  "initial_failure_retained": true,
+  "correction": "The N11,p2,q5 fixture has no D-profile token. Replaced it with N13, where W(13/2)=W(13/5)=-1 at d1. Producer unchanged.",
+  "final_focused_status": "PASSED_AFTER_FIXTURE_CORRECTION",
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "root_receipt_note": "Normalize status keys for existing ledger reader; all invocations, failure and focused correction preserved."
+}

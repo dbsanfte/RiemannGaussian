@@ -1,0 +1,80 @@
+Prospective032: sparse coordinate proposals on the verified031 system
+
+This new proposal method reuses302 exact equations in687 retained nonnegative
+weights. It does not repeat the terminal031 LP, exact row reduction or old
+geometry assembly. No actual scaling, update, score or support calculation
+precedes the frozen protocol. No hashes are generated.
+
+One450m combined allocation:40m preparation,40m exact model preparation,
+190m numerical proposal,90m exact support restoration,90m sole independent
+audit. Preparation includes25m cumulative synthetic tests,10m independent
+input/output and5m other work. Owned development tests and the one frozen
+combined suite print metered work receipts; the runner/auditor bind their
+sum plus1m root/scaffolding reserve to25m. Do not reset spent allowances.
+Development arithmetic consumed2,019,371 operations:850,492 in the producer
+module and1,168,879 in the independent checker module, each run once. Root
+workflow tests and the three focused allocation-binding checks fit within
+the1m root/scaffolding reserve. The combined frozen suite is run once only;
+its printed module receipts are added to the consumed development amount.
+Worker and independent audit each6GiB, one thread,3600 cooperative seconds;
+producer external7200seconds. Result/temporary bits4096/8193, live-cell
+proxy6m, proposal/review8MiB, metadata64KiB, source snapshot8MiB. Inputs
+retain their previous byte caps, including64MiB reduction and16MiB geometry.
+
+Decode the saved final equations and original retained column ids. Exact
+positive row/column infinity scaling uses the existing029 helper. Reject
+nonfinite or nonzero-underflowed binary64 coefficient conversion. Store
+all matrix nonzeros and the complete RHS. Scaling preserves mathematical
+feasibility and support, but numerical arithmetic remains approximate.
+
+Minimize one numerical merit function along nonnegative coordinates:
+  1/2 * ||A*x-b||_2^2 + lambda * sum(x), x>=0.
+Start x=0. Let lambda_ref=max(0,max_j dot(A_j,b)). Use lambda_ref*2^-e for
+e=1,3,...,31, then0:17 prescribed phases with warm starts. This is a new
+unit L1 objective in scaled coordinates, not preservation of previous costs.
+Visit columns in ascending retained position. Set
+  new=max(0,x_j-(dot(A_j,r)+lambda)/dot(A_j,A_j)), r=A*x-b,
+and update only the affected residual entries by (new-x_j)*A_j. No opaque
+LP, Gram factorization, approximate rank cutoff or support threshold is used.
+
+Refresh the residual from the matrix after every16 complete sweeps and at
+every phase end. Use math.fsum per row over -b and all sparse products;
+reserve nnz+m temporary cells. Dot products and stable L2 norms receive
+finite-value checks. One unchanged full sweep may end a phase early; that
+is a numerical stopping rule, not a convergence or feasibility theorem.
+
+The numerical work model depends only onm,n,nnz before coefficient scores:
+  setup =8*nnz+32*(m+n)+65536
+  sweep =8*nnz+32*n+2*m+64
+  refresh =8*nnz+16*(m+n)+256.
+Choose the largest common S<=10000 with
+  setup+17*(S*sweep+(ceil(S/16)+1)*refresh) <=190m.
+Charge setup once and each sweep/refresh block before computation, including
+charged partial work on failure. Additional deadline/peak-cell checks are
+covered by those blocks rather than silently adding unmatched work. Report
+counts exactly reconcilable to charged block counters. These are declared
+operation proxies, not a claim to count interpreter or hardware instructions.
+
+After each phase's fresh residual, save finite residual norms and support
+size. Among checkpoints with1..443 strictlypositive coordinates select the
+minimum (relativeL2 residual,support size,phase index). Save its entire687
+vector, including zeros. Keep every strictlypositive entry, however tiny.
+An incomplete/resource-limited trajectory cannot trigger exact restoration.
+All numerical scores remain producer diagnostics; the audit does not replay
+the trajectory or independently certify its residual values.
+
+Translate the selected support through031 active columns and030 original
+ray representatives. Perform exactlyone old029 rational support solve on
+all851 saved response columns against target{1224:-1}, with free support
+coordinates setzero. Certify using all782 original chart rows. Independent
+admission requires all851 nonnegative ray weights, all782 row multipliers,
+all1224 coordinates of A^T*lambda=G*alpha, and b^T*lambda=-1. The final
+identity and workflow checks share one90m audit budget without nested resets.
+
+Complete numerical work with no eligible or exactly reconstructible support
+is NONCERTIFIED; resource-incomplete work isUNKNOWN. Neither conclusion says
+anything about primal feasibility or all possible PSD dual generators. A
+complete exact separator would exclude this augmented finite proof template,
+not an RH estimate or every grammar. The all-scale signed arithmetic bound,
+universal identity, scalar/initial storage estimates, cofinal parameter family
+and ordinary-zeta bridge remain separate unresolved research requirements.

@@ -1,0 +1,28 @@
+{
+  "operations": 50068,
+  "runs": [
+    {
+      "test": "test_check_shifted_quotient_candidates",
+      "operations": 47019,
+      "returncode": 1,
+      "tests": 9,
+      "runtime_seconds": 0.011,
+      "passed": 8,
+      "errors": 1,
+      "error": "test_mainterm_center_and_envelope_tampering: python-flint Arb objects do not support deepcopy/pickling; TypeError: no default __reduce__ due to non-trivial __cinit__",
+      "stdout": "SYNTHETIC_WORK module=test_check_shifted_quotient_candidates operations=47019\n"
+    },
+    {
+      "test": "test_check_shifted_quotient_candidates.ShiftedCheckerTests.test_mainterm_center_and_envelope_tampering",
+      "operations": 3049,
+      "returncode": 0,
+      "tests": 1,
+      "runtime_seconds": 0.002,
+      "passed": 1,
+      "errors": 0,
+      "change": "copy only state containers and normalizer row dictionaries; replace immutable Arb fields instead of deepcopy",
+      "stdout": "SYNTHETIC_WORK module=test_check_shifted_quotient_candidates operations=3049\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+    }
+  ]
+}

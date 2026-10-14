@@ -1,0 +1,245 @@
+FRACTIONAL DISCRETE/CONTINUOUS ARITHMETIC REMAINDERS
+Supplied mathematical backend; independently checked algorithms and reviewed
+arguments, not a machine-formalized proof or autonomous theorem invention.
+
+1. SEMANTICS AND EXACT ANCHORS
+
+The input is u(n)=1, n>=1. Its Dirichlet inverse is the actual Mobius
+function mu, obtained by inversion without a factor or prime-label oracle.
+For every real 0<=beta<=1 set D_beta u(1)=0 and
+D_beta u(n)=(log n)^beta for n>=2. At beta=0 the value at 1 stays ZERO.
+Set T_beta=mu * D_beta u and
+
+ J_beta(y)=integral_1^y (log t)^beta dt, y>=1,
+ R_beta(x)=sum_(n<=x) T_beta(n)-sum_(d<=x)mu(d)J_beta(x/d).      (1)
+
+All these sums include every integer, not a random sample. The producer
+uses the triangular arithmetic-logarithm recursion. The checker computes
+mu by factorization and takes the divisor convolution directly. Normalizers
+are independently evaluated using Kummer's transformation of 1F1, with
+additional native integral calibrations. Rational powers of positive real
+logarithms have no semantic denominator bound. The pilot's denominator
+budget is a resource choice, not a mathematical restriction.
+
+T_0=delta_1-mu and T_1=Lambda. The exact floor identity gives
+R_0(x)=1-x*sum_(d<=x)mu(d)/d for EVERY real x>=1. In particular
+R_0(2)=0 and R_0(3)=1/2. The convention at index one is essential.
+
+For fixed real rational vectors c,b, j=0,...,D, define
+
+ V_a(x)=sum_j c_j sum_(n<=x)T_(ja)(n)
+                -sum_j b_j sum_(d<=x)mu(d)J_(ja)(x/d),        (2)
+
+on 0<=a<=1/max(1,D). A positive-order compensated family has b_j=c_j
+for j>=1. Its b_0 can be independent. Coefficients do NOT vary with a.
+
+2. AN ENTIRE NUMERATOR, NOT A CORRIDOR AROUND TWO ZEROS
+
+Let A(s)=zeta(s)-1-1/(s-1), an entire function. For Re(s)>1,
+
+ N_beta(s)=sum_(n>=2)(log n)^beta n^(-s)
+                         -Gamma(beta+1)/(s-1)^(beta+1).
+
+For 0<beta<1 the horizontal fractional derivative gives
+
+ N_beta(s)= beta/Gamma(1-beta) integral_0^infty
+                       [A(s)-A(s+u)]u^(-beta-1)du
+          =-1/Gamma(1-beta) integral_0^infty A'(s+u)u^(-beta)du. (3)
+
+Initially these equalities follow by absolute convergence in Re(s)>1;
+the continuous term has the same fractional-derivative representation.
+At zero, the first difference is O(u), the derivative is O(1). At infinity,
+A(s+u)=-1/u+O(u^-2) and A'(s+u)=1/u^2+O(u^-3), locally uniformly
+in complex s. The exponential zeta tail is uniform on every compact set.
+Consequently both formulas define an ENTIRE function of s. They cross
+s=1 analytically. N_0=A and N_1=-A'. No all-height nonvanishing assertion
+about any particular N_beta is made.
+
+Integration of (1) and termwise Dirichlet convolution gives, in Re(s)>1,
+
+ s*zeta(s)*integral_1^infty R_beta(x)x^(-s-1)dx=N_beta(s).     (4)
+
+For a compensated family the numerator on the right of the corresponding
+identity is
+
+ Q_a(s)=c_0(zeta(s)-1)-b_0/(s-1)+sum_(j>=1)c_j N_(ja)(s).     (5)
+
+For an uncompensated positive order one must additionally retain
+(c_j-b_j)Gamma(ja+1)/(s-1)^(ja+1). After division by zeta's simple
+pole this produces a fractional pole/branch at s=1. Distinct positive
+orders cannot cancel their highest uncancelled power. At the schedule
+a_q=1/(max(1,D)*q), q>=2, every positive ja_q is noninteger and <=1/2.
+A uniform integer bound with recovered growth exponent <1 is therefore
+impossible for any uncompensated positive order. This is a rejection
+certificate, distinct from a failure to prove a promising bound.
+
+3. A PARAMETER POLE PRESERVES ALL ORDINARY ZETA ZEROS
+
+For -1<Re(beta)<1 there is a meromorphic parameter continuation
+
+ N_beta(s)=1/Gamma(-beta)*[
+ integral_0^1 [A(s+u)-A(s)]u^(-beta-1)du
+ +integral_1^infty A(s+u)u^(-beta-1)du -A(s)/beta].            (6)
+
+The apparent singularity at beta=0 is removable and equals A(s).
+Since A(s+u)=-1/u+O(u^-2), at beta=-1 the meromorphic continuation
+has residue -1, INDEPENDENT OF s. To justify the boundary statement,
+subtract -1/u from the tail. The remaining integral is holomorphic for
+Re(beta)>-2, so the sole first boundary pole is -1/(beta+1), multiplied
+by 1/Gamma(-beta), whose value at beta=-1 is one.
+
+Consider any nonzero fixed compensated family with highest positive
+index D and c_D!=0. Suppose, for EVERY q>=2, its Mellin transform is
+holomorphic in Re(s)>eta, for some eta<1. If zeta(rho)=0 there, (5)
+requires Q_(a_q)(rho)=0. The function a -> Q_a(rho) is holomorphic
+on -1/D<Re(a)<1/D, including a=0. The infinitely many a_q tend to
+zero. The identity theorem would therefore make Q_a(rho) identically
+zero on that connected strip. But at a=-1/D it has residue -c_D/D:
+the highest term has the pole from (6), every lower term is regular,
+and the zero-order terms are constant in a. This nonzero residue is
+a contradiction. ALL multiplicities and all heights are included.
+
+For degree zero, Q(rho)=-c_0-b_0/(rho-1). With real c_0,b_0, not both
+zero, any cancellation point is real. Ordinary zeta has no real zero
+with real part >0 (the alternating eta series is positive on (0,1),
+and the Euler product excludes zeros to the right of 1). Thus the
+degree-zero scalar remainder also retains all ordinary zeros there.
+
+In particular a bound |V_(a_q)(n)|<=C*a_q^kappa*n^(1/2)*
+log(e+n)^ell, EVERY integer n>=1 AND EVERY integer q>=2, would imply
+RH. Each individual q can even have its own finite constant for the
+qualitative zero-exclusion argument. A SINGLE common C is required
+by the stronger parameter-rate claims made by our estimate grammar.
+A finite parameter grid, however dense or successful, DOES NOT
+establish the identity-theorem premise. A fixed fractional numerator
+can cancel a zero; it is not given the family's all-height theorem.
+
+4. EXACT PARAMETER ORDER AND AN ANTI-AMPLITUDE OBSTRUCTION
+
+For b=c, let r be the first k>=0 with sum_j c_j*j^k != 0.
+It exists with r<=D by the Vandermonde matrix. Then V_a(x) has order
+a^r for fixed x. If r=0, R_0(3)=1/2 witnesses a nonzero constant.
+For r>=1, at x=2 the rth parameter derivative of R_beta is
+
+ (log log 2)^r-integral_1^2 (log log t)^r dt.                 (7)
+
+This is nonzero: log log t is negative and strictly increasing there;
+its rth power is strictly increasing for odd r and decreasing for even r.
+The leading Taylor coefficient in V is (sum c_j*j^r)/r! times (7).
+If b_0!=c_0, then V_0(2)=c_0-b_0 is nonzero, so r=0.
+Thus a proposed common-constant family bound with kappa>r is false
+already at one fixed integer as q tends to infinity. Tiny observed
+amplitudes cannot provide free asymptotic arithmetic control.
+
+5. A NATIVE CAUCHY CERTIFICATE FROM ACTUAL PRIME STRUCTURE
+
+For n>=2, write B=log(n/rad(n))>=0, m=omega(n), and
+h_n(u)=exp(-Bu)*product_(p|n)(1-exp(-u log p)). For 0<Re(z)<1,
+
+ T_z(n)=(-1)^(m+1)*z/Gamma(1-z)*integral_0^infty h_n(u)u^(-z-1)du.
+
+The actual arithmetic structure gives |h''(u)|<=(log n)^2:
+Leibniz's rule and factors bounded by one give the square of
+B+sum_(p|n)log p=log n. We have h(0)=0,
+h'(0)=log p if m=1 and zero otherwise, and h(infinity) is 1 for
+squarefree n, 0 otherwise. Also
+
+ |h(u)-h(infinity)| <=(log n/log 2)*exp(-u log 2).
+
+Subtract h'(0)u on [0,1] and h(infinity) on [1,infinity]. This gives
+the holomorphic representation on Re(z)<2
+
+ (-1)^(m+1)*[z*rgamma(1-z)*(I_0+I_infinity)
+                   +z*rgamma(2-z)*h'(0)+rgamma(1-z)*h(infinity)].
+
+It equals the entire finite divisor sum, including at z=0 and z=1,
+by continuation. On the rectangle Re(z) in [-rho,1+rho],
+Im(z) in [-rho,rho], 0<rho<1,
+
+ |I_0| <=(log n)^2/[2(1-rho)],
+ |I_infinity| <= log n/[2(log 2)^2].
+
+The second bound uses u^(rho-1)<=1 for u>=1. Let native interval
+subboxes certify maxima M1=|z*rgamma(1-z)|, M2=|z*rgamma(2-z)|,
+M3=|rgamma(1-z)| throughout that rectangle. The checked finite cover
+is of the WHOLE rectangle, not merely sampled points. Set
+
+ C0=M1/[2(1-rho)]+M1/[2(log 2)^2]+M2+M3.
+
+Cauchy's inequality on every circle of radius rho around beta in [0,1]
+then proves, for every integer r>=0 and every actual n>=2,
+
+ |partial_beta^r T_beta(n)|<=r!*rho^(-r)*C0*log(e+n)^2.         (8)
+
+No prime-distribution theorem is imported. The global proof uses
+factorization structurally; production of coefficients uses no oracle.
+The radius is selected automatically from a frozen finite set by the
+resulting cost. That set is only a resource limit for the certificate.
+
+6. PROVED ALL-SCALE FAMILY AND INTERPOLATION BOUNDS
+
+For b=c and r>=1 set S_r=sum_j |c_j|j^r and L=log(e+x).
+The rth derivative of the discrete prefix is bounded by
+x*r!*rho^(-r)*C0*L^2. For the continuous part, exchanging the finite
+divisor sum and the positive absolute-value integral gives
+
+ |partial_beta^r G_beta(x)|
+ <=x*integral_0^(log x) u^beta |log u|^r du
+ <=x*[r!+L^(r+2)/(r+2)], beta in [0,1].                     (9)
+
+On u<1 use u^beta<=1 and the exact log moment r!. On u>=1 use
+u^beta<=u and (log u)^r<=u^r. Taylor's theorem and the exact zero
+parameter moments below r prove, for EVERY real x>=1 and 0<=a<=1/D,
+
+ |V_a(x)|<=W*a^r*x*L^(r+2),
+ W=S_r*[rho^(-r)*C0+1+1/((r+2)r!)].                         (10)
+
+This contains genuine signed cancellation in the parameter combination.
+Its x-growth exponent is ONE; it is below the required RH strength.
+
+For a unit interval N<=t<=N+1, N>=1, the discrete change contains
+at most one T_beta(N+1). Split continuous divisors at d=N/2.
+For d<=N/2 use log(t/d)>=log 2 and sum 1/d<=2*log(e+N+1).
+The integral is bounded by 2*log(e+N+1)^(r+2).
+For d>N/2, integer d>=(N+1)/2, so log(t/d)<=log 2 and
+log(t/d)>=(t-d)/(N+1). The adjacent intervals t-d and 1/d<=2/N
+bound the singular log moments by 4*r!, including N=1.
+Applying the same parameter Taylor cancellation proves
+
+ |V_a(t)-V_a(N)|<=I*a^r*log(e+N+1)^(r+2),
+ I=S_r*[rho^(-r)*C0+2/r!+4].                                (11)
+
+For r=0, or independent b, the real fractional sign integral gives
+|T_beta(n)|<=(log n)^beta<=log(e+n). The same exchanges give the
+valid conservative bounds
+
+ |V_a(x)|<=(sum|c|+(3/2)sum|b|)*x*log(e+x)^2,
+ |V_a(t)-V_a(N)|<=(sum|c|+6sum|b|)*log(e+N+1)^2.              (12)
+
+Thus an integer family bound with growth theta has an all-real Mellin
+continuation to Re(s)>max(theta,0). Its logarithmic losses are charged
+by the exact upper moment majorant with m=ceil(ell),
+log(e+x)<=log(e+1)+log x. Its parameter a^kappa is charged separately
+from the increment's a^r. At a finite native complex query a nonzero
+Q_a lower bound permits |1/zeta(s)|<=|s|*H_majorant/|Q_a|.
+Every denominator, normalization and unit correction is included.
+This finite-query cost is NOT an all-height bound. Shrinking Q and V
+together cannot supply a free gain. Missing finite denominator coverage
+does not disqualify an unfamiliar lead from the numerical archive.
+
+7. NATIVE ENTIRE-NUMERATOR ENCLOSURES AND STATUS
+
+The producer uses (3)'s difference integral. The independent checker
+uses its derivative integral. Both enclose the small endpoint with a
+Cauchy Taylor remainder on a full complex box; native integration of
+u=exp(v) handles the middle; convergent rational geometric series and
+upper incomplete gamma functions handle the infinite tail. The leftover
+Dirichlet sums have explicit integral-test bounds, with all recorded
+real parts beyond one. All finite probes are interval arithmetic.
+
+The proof above supplies generic family-zero and weak-growth backends.
+The detector can apply them to any enumerated rational coefficient
+vector, including high-pass combinations whose a=0 limit vanishes.
+It does NOT discover these proofs autonomously. Finite training,
+validation and sealed fresh evaluation infer stronger estimates only.
+No uniform square-root family bound is proved. RH remains unproved.

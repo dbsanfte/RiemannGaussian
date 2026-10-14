@@ -1,0 +1,66 @@
+FRACTIONAL PRIME DECODER: SUBSTANTIVE PRIOR-ART COMPARISON
+7 October 2026. Historical novelty remains unresolved.
+
+1. ESTABLISHED FRACTIONAL ZETA DERIVATIVE
+
+Emanuel Guariglia, Riemann zeta fractional derivative--functional equation
+and link with primes, Advances in Difference Equations 2019, article 261.
+Primary article: https://link.springer.com/article/10.1186/s13662-019-2202-5
+Archived published PDF: literature/fractional/guariglia_2019.pdf, obtained
+from the German National Library at https://d-nb.info/1198402598/34.
+
+Equation (1.1) is exp(i*pi*alpha)*sum_(n>=2)(log n)^alpha/n^s.
+The paper attributes this derivative to Guariglia (2015). Our N_alpha
+omits that phase by explicit convention. This establishes that N_alpha
+is a known fractional zeta derivative, not a discovered primitive.
+The forward Caputo formula (2.1) also supplies established context for
+our integration-by-parts evaluation. The paper's Theorem 4.3 concerns
+a convergence/divergence comparison; it is not an imported prime-count
+identity, zero-free theorem, or RH proof in this detector.
+
+2. ESTABLISHED INTEGER-ORDER ARITHMETIC LOGARITHMS
+
+Pratt et al., More than five-twelfths of the zeros of zeta are on the
+critical line, Research in the Mathematical Sciences (2020), section 2:
+https://link.springer.com/article/10.1007/s40687-019-0199-8
+The paper defines generalized von Mangoldt functions mu*log^k for
+integer k. That is exactly our Lambda_alpha at integer order. Extending
+the exponent to a real parameter cannot alone establish originality.
+Ordinary Dirichlet inversion and perfect-power Mobius removal W also
+have established prior art recorded in novelty_audit.txt.
+
+3. CLOSEST LOGARITHMIC-FRACTIONAL SOURCE: COMPARISON INCOMPLETE
+
+Guariglia, Fractional calculus, Riemann zeta function and Euler products,
+IFAC-PapersOnLine 58(12) (2024), 215-219, doi:10.1016/j.ifacol.2024.08.192.
+Primary abstract: https://www.sciencedirect.com/science/article/pii/S2405896324009169
+It explicitly discusses logarithmic fractional derivatives and an Euler
+product generalization using a homomorphism. The full formulas were not
+retrieved: the publisher returned 403 for the PDF, while its public
+Elsevier endpoint supplied bibliographic metadata only. Access evidence
+is preserved in literature/fractional/reference_access.json and
+literature/fractional/elsevier_2024_xml.xml. No access restrictions were
+bypassed, and the abstract is not treated as a full formula comparison.
+
+There are two materially different candidate meanings of logarithmic
+fractional derivative: D_alpha(log zeta) and (D_alpha zeta)/zeta.
+For alpha=1 these agree (up to the derivative sign convention).
+For alpha=1/2 they differ at squarefree pq: the former has zero
+coefficient there, while the latter has
+sqrt(log(pq))-sqrt(log p)-sqrt(log q), which is strictly negative.
+The first interpretation, followed by normalization and W, gives the
+classical prime indicator at every order; the second gives our mixed
+composite coefficients. Which meaning the 2024 paper uses must be
+checked against its actual definitions, not inferred from its title.
+
+4. SCOPE OF THE REMAINING PRIORITY QUESTION
+
+The unresolved compound application is
+B_alpha=W[(zeta_D^(-1)*D_alpha zeta)(n)/(log n)^alpha], together with
+the all-integer strict sign law, sharp prime/composite separation,
+uniform coefficient limit and generic triangular inverse. Independent
+coefficient/API and actual-zero analytic audits pass in their stated
+domains. Those audits establish mathematical validity, not historical
+priority. No absence-of-search-hit claim is used as novelty evidence.
+No new prime distribution estimate or RH estimate is verified.
+The verified-historically-new registry therefore remains empty.

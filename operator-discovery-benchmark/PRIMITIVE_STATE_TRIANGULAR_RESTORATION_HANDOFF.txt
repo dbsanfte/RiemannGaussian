@@ -1,0 +1,89 @@
+EXACT TRIANGULAR RESTORATION — publication017
+
+This stage tests one declared rational repair of the publication016 faer
+proposal. It reuses the verified exact arithmetic cache and saved row-basis
+proof. It does not run a numerical solver, select new rows, perform a new
+elimination, change the arithmetic target, or search multiple starting seeds.
+
+Exact algebra and candidate construction
+
+The original problem has1957 variables and5641 coefficient equations. The
+licensed projection removes613 redundant signed splits and120 redundant matrix
+directions from the coefficient representation. Its1224 effective coordinates
+have779 exact pivots and445 free coordinates. Retained pivot rows are rebuilt
+from the saved exact subtraction transcript; normalized rows are fingerprinted.
+Back-substitution proceeds in descending pivot COLUMN order. Reversing the
+order in which rows entered the basis is insufficient.
+
+Every saved native binary64 coordinate is converted to its exactly equal
+rational. The fixed seed rule projects these values into effective coordinates
+and sets negative FREE square weights to zero. Other free coordinates remain
+unchanged. All pivot coordinates are recomputed exactly. This changes the
+proposal; the original native vector and its failed diagnostics remain frozen.
+
+For effective matrices C=G_child+K and P=G_parent-4K, the correct quotient cone
+is C PSD and P+4C PSD. The canonical original lift sets G_child=0,K=C and
+G_parent=P+4C, and represents each signed beta by its nonnegative positive and
+negative parts. This preserves coefficient identities and finite feasibility.
+It does not preserve the numerical objective or initial storage constant;
+neither is presented as an optimization result. P itself need not be PSD.
+
+The independent checker derives all733 original column identities, replays
+the full5641-row exact tape, independently reconstructs the seed, solves pivots
+and lifts the candidate. It checks every ORIGINAL rational equation, every
+one of1597 scalar signs, and all three ORIGINAL15x15 PSD matrices. PSD checking
+uses exact rational Schur/LDL arithmetic, including zero-pivot handling. Failed
+matrices have rational vectors giving strictly negative quadratic values.
+Unknown, interrupted or over-limit output never becomes a verified candidate.
+
+Resources and validation
+
+The job has450000000 charged work,3GiB address space,900 cooperative seconds
+including validation and1800 external seconds. Binding/read work reserves
+143339417 units; producer work retains its conservative125000000 allocation.
+The independent worker checker has172315385 operation units after reserving
+receipt bytes and original source cells. Rational coefficients are limited
+to4096 bits; private live-cell proxy4m, cumulative fill20m and independent
+audit-cell proxy60m. No enlarged memory or runtime limit was needed at launch.
+
+There are108 frozen sources and36 passing calibration tests. Tests cover
+out-of-order pivot insertion, canonical PSD quotient signs, original quadratic
+counterexamples, altered seeds/candidates, interrupted transport, saved checks
+before commitment, final-validation deadline overruns and closed inventories.
+The complete synthetic archive uses the actual coordinate/equation dimensions.
+The publisher has10 additional tests preventing partial evidence or cone defects
+from being promoted to a finite feasible candidate.
+
+Further direction
+
+The bound free-coordinate search analysis describes a matrix-free proposal
+method on445 variables. Sparse forward and transpose triangular solves avoid
+forming a dense rational nullspace. A convex penalty measures negative scalar
+weights and negative eigenvalue parts of C and P+4C; every proposed endpoint
+would still require exact back-substitution and original cone checks. Numerical
+conditioning is unresolved and must be measured. No such search is executed
+by this restoration stage. A bounded source scan found that all3836 highest
+degree rows have signed-relation coefficients, excluding simple single-row
+exposing functionals but not combinations of rows.
+
+Even a successful finite candidate would require typed finite-certificate
+admission, a genuine all-scale identity, the uniform innovation estimate,
+boundary control and the remaining RH argument. The research goal stays active.
+
+Observed exact result
+
+The worker completed with restoration_verified=true and finite_candidate_feasible=false. Independent replay confirms EXACT ZERO residual in all5641 original equations, but117 original nonnegative scalar coordinates are negative. They are all square weights. The parent matrix fails at Schur pivot6 and K at pivot7; the independent checker supplies full original-coordinate rational vectors with strictly negative quadratic values. A separate direct quadratic evaluation confirms both witnesses. The canonical child matrix is zero and PSD. This rejects the single candidate, not the finite cone.
+
+The largest negative square weight is coordinate4, approximately-5432.486861665769; the maximum projected correction is approximately5432.486940108872. These are approximate displays of exact rationals. Hence the drop in negative-coordinate count from159 to117 is not evidence of proximity to a certificate. Exact equation restoration can amplify errors from this free-coordinate seed. No new condition-number theorem is asserted.
+
+Producer elapsed62.35473230399657 seconds; reported operations13111727, retained transcript steps35348, cumulative fill271124, peak private-cell proxy1628122. Fifty free square seeds were set to zero. The receipt is177391 bytes, maximum candidate coefficient size275bits. Producer counters remain diagnostics under the conservative125m allocation.
+Independent worker replay operations80835282, audit cells31642809, precise checker reserve81969263. Total job reserve350308680 of450m; remaining99691320. Worker elapsed251.68634162802482 seconds, CPU251.537968209, peak RSS445312KiB. No memory, time or coefficient limit stopped the experiment.
+Exact candidate identities and counterexamples are in jobs/restoration.json and jobs/check.json. A subsequent search should adjust free coordinates to satisfy positivity while reconstructing equations exactly. The analysis note also describes cheaper independent endpoint verification against all original equations using the already verified source/rank license; this current trial retained its full replay contract.
+jobs/restoration.json SHA256: 40c2e68c912318ef3bf8af1e6db60eb4fb8e8b824acaae7b2b52abb8efe09c2b.
+jobs/check.json SHA256: a11bc1fea82167cf56cd214a0d825e0e4dd8d5c1d26afcb4100ec2912e530c99.
+receipt.json SHA256: fa66c4899549588b66951edfb89a79c10a83cff5149d5f420aa11a32320b7108.
+
+Completed whole-stage independent audit
+
+The complete archive audit passed in186.63451614699443 seconds. It separately replayed the exact restoration and all original constraints, without a parent arithmetic rebuild, new solver call or new elimination. Exact replay used80835282 operations and31642809 cells. Including bounded artifact read/hash/AST work, totals were83579626 operations and32145010 cells. All lifecycle/transport/work-ledger bindings passed. Mathematical finite-cone feasibility remains UNKNOWN; the explicit candidate is rejected.
+Independent review SHA256: e43f9d9532b5a307f209c3e5469c07fc13a44a5f9f084b23113401380f13200b.

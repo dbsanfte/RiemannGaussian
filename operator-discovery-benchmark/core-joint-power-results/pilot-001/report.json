@@ -1,0 +1,589 @@
+{
+  "RH_proved": false,
+  "elapsed_seconds": 1.6921822510194033,
+  "geometry_summary": [
+    {
+      "alpha": "1/2",
+      "baseline_subsum_score": [
+        "4/3",
+        0,
+        3,
+        0,
+        0
+      ],
+      "gamma": "1/2",
+      "geometry_id": 12,
+      "joint_drifts": [
+        {
+          "energy": {
+            "constant": "131769/4",
+            "log_degree": 0,
+            "power": "1",
+            "uniform_constant": null
+          },
+          "polynomial": [
+            {
+              "coefficient": "-3/2",
+              "powers": [
+                0,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "27/4",
+              "powers": [
+                2,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "prefix_bound": {
+            "constant": "363/4",
+            "log_degree": 0,
+            "power": "1"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_mask": 5,
+      "selected_remainders": [
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 0,
+          "energy": {
+            "constant": "729/4",
+            "log_degree": 0,
+            "power": "1",
+            "uniform_constant": null
+          },
+          "prefix_bound": {
+            "constant": "27/4",
+            "log_degree": 0,
+            "power": "1"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 6,
+          "energy": {
+            "constant": "2025",
+            "log_degree": 0,
+            "power": "-2/3",
+            "uniform_constant": "2025"
+          },
+          "prefix_bound": {
+            "constant": "45/2",
+            "log_degree": 0,
+            "power": "1/6"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_subsum_score": [
+        "1",
+        0,
+        3,
+        2,
+        5
+      ],
+      "statistics": {
+        "eligible_pieces": 3,
+        "profile_trials": 6,
+        "rejected_profiles": 5,
+        "selected_centered": 2,
+        "selected_joint_drifts": 1,
+        "selected_paid_remainders": 1,
+        "subsets": 8
+      }
+    },
+    {
+      "alpha": "1/3",
+      "baseline_subsum_score": [
+        "1",
+        0,
+        3,
+        0,
+        0
+      ],
+      "gamma": "1/3",
+      "geometry_id": 6,
+      "joint_drifts": [
+        {
+          "energy": {
+            "constant": "471969/4",
+            "log_degree": 0,
+            "power": "7/9",
+            "uniform_constant": null
+          },
+          "polynomial": [
+            {
+              "coefficient": "-3/2",
+              "powers": [
+                0,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-27/4",
+              "powers": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient": "27/4",
+              "powers": [
+                2,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "prefix_bound": {
+            "constant": "687/4",
+            "log_degree": 0,
+            "power": "8/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_mask": 7,
+      "selected_remainders": [
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 0,
+          "energy": {
+            "constant": "729/4",
+            "log_degree": 0,
+            "power": "1/3",
+            "uniform_constant": null
+          },
+          "prefix_bound": {
+            "constant": "27/4",
+            "log_degree": 0,
+            "power": "2/3"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 3,
+          "energy": {
+            "constant": "6561/4",
+            "log_degree": 0,
+            "power": "-1/9",
+            "uniform_constant": "6561/4"
+          },
+          "prefix_bound": {
+            "constant": "81/4",
+            "log_degree": 0,
+            "power": "4/9"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 11,
+          "energy": {
+            "constant": "2025",
+            "log_degree": 0,
+            "power": "-7/9",
+            "uniform_constant": "2025"
+          },
+          "prefix_bound": {
+            "constant": "45/2",
+            "log_degree": 0,
+            "power": "1/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_subsum_score": [
+        "7/9",
+        0,
+        2,
+        3,
+        7
+      ],
+      "statistics": {
+        "eligible_pieces": 3,
+        "profile_trials": 6,
+        "rejected_profiles": 5,
+        "selected_centered": 3,
+        "selected_joint_drifts": 1,
+        "selected_paid_remainders": 2,
+        "subsets": 8
+      }
+    },
+    {
+      "alpha": "1/3",
+      "baseline_subsum_score": [
+        "1",
+        0,
+        3,
+        0,
+        0
+      ],
+      "gamma": "2/3",
+      "geometry_id": 8,
+      "joint_drifts": [
+        {
+          "energy": {
+            "constant": "131769/4",
+            "log_degree": 0,
+            "power": "7/9",
+            "uniform_constant": null
+          },
+          "polynomial": [
+            {
+              "coefficient": "-3/2",
+              "powers": [
+                0,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "27/4",
+              "powers": [
+                2,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "prefix_bound": {
+            "constant": "363/4",
+            "log_degree": 0,
+            "power": "8/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_mask": 5,
+      "selected_remainders": [
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 0,
+          "energy": {
+            "constant": "729/4",
+            "log_degree": 0,
+            "power": "1/3",
+            "uniform_constant": null
+          },
+          "prefix_bound": {
+            "constant": "27/4",
+            "log_degree": 0,
+            "power": "2/3"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 9,
+          "energy": {
+            "constant": "2025",
+            "log_degree": 0,
+            "power": "-5/9",
+            "uniform_constant": "2025"
+          },
+          "prefix_bound": {
+            "constant": "45/2",
+            "log_degree": 0,
+            "power": "2/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_subsum_score": [
+        "7/9",
+        0,
+        3,
+        2,
+        5
+      ],
+      "statistics": {
+        "eligible_pieces": 3,
+        "profile_trials": 6,
+        "rejected_profiles": 5,
+        "selected_centered": 2,
+        "selected_joint_drifts": 1,
+        "selected_paid_remainders": 1,
+        "subsets": 8
+      }
+    },
+    {
+      "alpha": "1/6",
+      "baseline_subsum_score": [
+        "2/3",
+        0,
+        3,
+        0,
+        0
+      ],
+      "gamma": "1/6",
+      "geometry_id": 0,
+      "joint_drifts": [
+        {
+          "energy": {
+            "constant": "471969/4",
+            "log_degree": 0,
+            "power": "5/9",
+            "uniform_constant": null
+          },
+          "polynomial": [
+            {
+              "coefficient": "-3/2",
+              "powers": [
+                0,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-27/4",
+              "powers": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient": "27/4",
+              "powers": [
+                2,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "prefix_bound": {
+            "constant": "687/4",
+            "log_degree": 0,
+            "power": "7/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_mask": 7,
+      "selected_remainders": [
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 0,
+          "energy": {
+            "constant": "729/4",
+            "log_degree": 0,
+            "power": "-1/3",
+            "uniform_constant": "729/4"
+          },
+          "prefix_bound": {
+            "constant": "27/4",
+            "log_degree": 0,
+            "power": "1/3"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 6,
+          "energy": {
+            "constant": "6561/4",
+            "log_degree": 0,
+            "power": "-5/9",
+            "uniform_constant": "6561/4"
+          },
+          "prefix_bound": {
+            "constant": "81/4",
+            "log_degree": 0,
+            "power": "2/9"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 32,
+          "energy": {
+            "constant": "2025",
+            "log_degree": 0,
+            "power": "-8/9",
+            "uniform_constant": "2025"
+          },
+          "prefix_bound": {
+            "constant": "45/2",
+            "log_degree": 0,
+            "power": "1/18"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_subsum_score": [
+        "5/9",
+        0,
+        1,
+        3,
+        7
+      ],
+      "statistics": {
+        "eligible_pieces": 3,
+        "profile_trials": 6,
+        "rejected_profiles": 5,
+        "selected_centered": 3,
+        "selected_joint_drifts": 1,
+        "selected_paid_remainders": 3,
+        "subsets": 8
+      }
+    },
+    {
+      "alpha": "1/6",
+      "baseline_subsum_score": [
+        "2/3",
+        0,
+        3,
+        0,
+        0
+      ],
+      "gamma": "5/6",
+      "geometry_id": 4,
+      "joint_drifts": [
+        {
+          "energy": {
+            "constant": "471969/4",
+            "log_degree": 0,
+            "power": "5/9",
+            "uniform_constant": null
+          },
+          "polynomial": [
+            {
+              "coefficient": "-3/2",
+              "powers": [
+                0,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-27/4",
+              "powers": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient": "27/4",
+              "powers": [
+                2,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "prefix_bound": {
+            "constant": "687/4",
+            "log_degree": 0,
+            "power": "7/9"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_mask": 7,
+      "selected_remainders": [
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 0,
+          "energy": {
+            "constant": "729/4",
+            "log_degree": 0,
+            "power": "-1/3",
+            "uniform_constant": "729/4"
+          },
+          "prefix_bound": {
+            "constant": "27/4",
+            "log_degree": 0,
+            "power": "1/3"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 6,
+          "energy": {
+            "constant": "6561/4",
+            "log_degree": 0,
+            "power": "-1/9",
+            "uniform_constant": "6561/4"
+          },
+          "prefix_bound": {
+            "constant": "81/4",
+            "log_degree": 0,
+            "power": "4/9"
+          },
+          "theta": "2/3"
+        },
+        {
+          "definition": "signed K*h minus its complete signed moment/theta times J_theta",
+          "eligible_id": 18,
+          "energy": {
+            "constant": "2025",
+            "log_degree": 0,
+            "power": "-4/9",
+            "uniform_constant": "2025"
+          },
+          "prefix_bound": {
+            "constant": "45/2",
+            "log_degree": 0,
+            "power": "5/18"
+          },
+          "theta": "2/3"
+        }
+      ],
+      "selected_subsum_score": [
+        "5/9",
+        0,
+        1,
+        3,
+        7
+      ],
+      "statistics": {
+        "eligible_pieces": 3,
+        "profile_trials": 6,
+        "rejected_profiles": 5,
+        "selected_centered": 3,
+        "selected_joint_drifts": 1,
+        "selected_paid_remainders": 3,
+        "subsets": 8
+      }
+    }
+  ],
+  "inclusive_operations": 4781043,
+  "main_operations": 1707529,
+  "model_calls_in_search": 0,
+  "numerical_source_evaluations": 0,
+  "peak_rss_kib": 704032,
+  "profile_trials": 30,
+  "reduction_bindings": 720,
+  "selected_paid_remainders": 10,
+  "source_geometries": 5,
+  "status": "JOINT_POWER_CONTROLS_VERIFIED_WITH_OPEN_SIGNED_DRIFT",
+  "subsets": 40,
+  "whole_signed_bound_proved": false,
+  "whole_signed_bounds_proved": 0
+}

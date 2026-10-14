@@ -1,0 +1,585 @@
+{
+  "RH_proved": false,
+  "all_attempts_retained": true,
+  "geometry_generation_attempts": [
+    {
+      "elapsed_seconds": 0.029486888961400837,
+      "rows": [
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 11112,
+          "patterns": 3,
+          "peak_bytes": 36864,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 63927,
+          "patterns": 5,
+          "peak_bytes": 53248,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/480",
+          "threshold": 8294400
+        },
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 22827,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 22827,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 15214,
+          "patterns": 3,
+          "peak_bytes": 36864,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 72932,
+          "patterns": 5,
+          "peak_bytes": 59392,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/480",
+          "threshold": 8294400
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 25732,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 25732,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 18116,
+          "patterns": 3,
+          "peak_bytes": 36864,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 81937,
+          "patterns": 5,
+          "peak_bytes": 65536,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/480",
+          "threshold": 8294400
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 28637,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 28637,
+          "patterns": 3,
+          "peak_bytes": 49152,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 13516,
+          "patterns": 3,
+          "peak_bytes": 53248,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 68331,
+          "patterns": 5,
+          "peak_bytes": 65536,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "929/786432",
+          "threshold": 8294400
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 25231,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 25231,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 17618,
+          "patterns": 3,
+          "peak_bytes": 53248,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 77336,
+          "patterns": 5,
+          "peak_bytes": 65536,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "929/786432",
+          "threshold": 8294400
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 28136,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 28136,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 20520,
+          "patterns": 3,
+          "peak_bytes": 53248,
+          "points": 6,
+          "scales": [
+            "1/4"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 86341,
+          "patterns": 5,
+          "peak_bytes": 65536,
+          "points": 11,
+          "scales": [
+            "1/4",
+            "1/5",
+            "1/8",
+            "1/10"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "929/786432",
+          "threshold": 8294400
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 31041,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "3/7",
+            "7/11",
+            "10/13"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 31041,
+          "patterns": 3,
+          "peak_bytes": 65536,
+          "points": 6,
+          "scales": [
+            "1/4",
+            "1/12",
+            "1/20",
+            "1/28"
+          ],
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "elapsed_seconds": 0.013765050971414894,
+      "roster": [
+        "1/4",
+        "3/28",
+        "7/44",
+        "5/26"
+      ],
+      "rows": [
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 89127,
+          "patterns": 6,
+          "peak_bytes": 59392,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/624",
+          "threshold": 14017536
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 107232,
+          "patterns": 6,
+          "peak_bytes": 66560,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/624",
+          "threshold": 14017536
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 121137,
+          "patterns": 6,
+          "peak_bytes": 73728,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/624",
+          "threshold": 14017536
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 93531,
+          "patterns": 6,
+          "peak_bytes": 65536,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "4645/5111808",
+          "threshold": 14017536
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 111636,
+          "patterns": 6,
+          "peak_bytes": 66560,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "4645/5111808",
+          "threshold": 14017536
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 125541,
+          "patterns": 6,
+          "peak_bytes": 73728,
+          "points": 11,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "4645/5111808",
+          "threshold": 14017536
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "elapsed_seconds": 0.007052900968119502,
+      "family": "actual_full_fractional",
+      "rows": [
+        {
+          "extended": false,
+          "memory": 1,
+          "ops": 23563,
+          "peak_bytes": 49152,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 2,
+          "ops": 26537,
+          "peak_bytes": 49152,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": false,
+          "memory": 3,
+          "ops": 29557,
+          "peak_bytes": 49152,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 1,
+          "ops": 25967,
+          "peak_bytes": 65536,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 2,
+          "ops": 28941,
+          "peak_bytes": 65536,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        },
+        {
+          "extended": true,
+          "memory": 3,
+          "ops": 31961,
+          "peak_bytes": 65536,
+          "status": "PROPOSED_UNIFORM_RANK_OBSTRUCTION",
+          "tau": "1/160",
+          "threshold": 921600
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "schema": "dense-rank-obstruction-development-v1",
+  "source_signs_accessed": false,
+  "test_attempts": [
+    {
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_dense_rank_obstruction_082 -v",
+      "elapsed_seconds": 0.058,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 3
+    },
+    {
+      "change": "Added actual fractional-of-N profile roster; prior literal fractions allcap atN.",
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_dense_rank_obstruction_082 -v",
+      "elapsed_seconds": 0.064,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 3
+    },
+    {
+      "change": "Actual full_fractional mixed-exponent family; prospective metered H00/lower-coefficient arithmetic replaces direct summation.",
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_dense_rank_obstruction_082 -v",
+      "elapsed_seconds": 0.073,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 4
+    },
+    {
+      "change": "Actual positive memory-ray energies included in mixed-exponent family integration.",
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_dense_rank_obstruction_082 -v",
+      "elapsed_seconds": 0.073,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 4
+    },
+    {
+      "change": "Canonical exact-left ascending interval sorting for independent checker schema; no crossintegration failures observed by producer author.",
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_dense_rank_obstruction_082 -v",
+      "elapsed_seconds": 0.078,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 4
+    }
+  ],
+  "uniform_source_bound_proved": false
+}

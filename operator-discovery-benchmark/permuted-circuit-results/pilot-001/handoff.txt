@@ -1,0 +1,87 @@
+PERMUTED AND MIXED ARITHMETIC CANDIDATE STUDY — pilot-001
+
+Independent status: FINITE_EVALUATIONS_VERIFIED_WITH_WORK_EXTENSION
+Whole-study charged operations: 478229178 / 481500000.
+Original 450m ceiling exceeded; explicit user-authorized extension at most7%; original receipt retained.
+All-scale moment estimate, global signed bound and RH: UNPROVED.
+
+The new language combines fractional full divisor convolutions with
+closed-block polynomial/bit/source-branch permutations and reversible
+pair shears. Both pair coordinates and every signed square are retained.
+The frozen catalogue has 48 raw words plus baseline. Exact baseline
+aliases cannot consume a lead slot; selection preserves four families.
+Generation, ranking and all operator coefficients preceded responses.
+
+39 frozen tests passed.
+Independent verification completed for all available cases and the
+recovery metadata, normalizations, fits, diagnostics and selection.
+Evaluations verified: 303.
+Final available/missing/invalid: 15/0/0.
+
+Selected structures and finite evidence (ratios relative to original M):
+
+ID 7 — permutation_input
+{"stages": [{"inverse": false, "map": {"kind": "reverse_bits"}, "op": "permute"}, {"alpha": "1/2", "op": "convolve", "prime_phase": ["source_sign", ["subtract_root", 1, 2]]}]}
+Matched validation: worst raw ratio 1.58634; worst path-cancellation specificity 0.575855; failed gates 0/16.
+Final mu X=20480: energy/baseline=2.2409, signed/absolute-path energy=0.588704.
+Final mu X=32768: energy/baseline=1.21019, signed/absolute-path energy=0.587034.
+Final mu gates failed 0/8.
+Dyadic X=8192: E=0.0444975, F=0.0400856, G=0.00479589, C=-0.000384016; -C/(F+G)=0.0085562.
+Dyadic X=16384: E=0.0620049, F=0.0511832, G=0.00536113, C=0.0054606; -C/(F+G)=-0.096572.
+Dyadic X=32768: E=0.0693212, F=0.0572813, G=0.0071192, C=0.00492068; -C/(F+G)=-0.0764075.
+
+ID 19 — permutation_interleaving
+{"stages": [{"alpha": "1/2", "op": "convolve", "prime_phase": ["source_sign", ["subtract_root", 1, 2]]}, {"inverse": false, "map": {"kind": "reverse_bits"}, "op": "permute"}, {"alpha": "-1/2", "op": "convolve", "prime_phase": ["multiply", ["constant", -1], ["source_sign", ["subtract_root", 1, 2]]]}]}
+Matched validation: worst raw ratio 1.86934; worst path-cancellation specificity 0.391071; failed gates 0/16.
+Final mu X=20480: energy/baseline=2.20316, signed/absolute-path energy=0.202102.
+Final mu X=32768: energy/baseline=1.27438, signed/absolute-path energy=0.249273.
+Final mu gates failed 0/8.
+Dyadic X=8192: E=0.0525006, F=0.0400856, G=0.00821181, C=0.00420315; -C/(F+G)=-0.0870262.
+Dyadic X=16384: E=0.0635635, F=0.0511832, G=0.00977096, C=0.00260939; -C/(F+G)=-0.0428091.
+Dyadic X=32768: E=0.0729981, F=0.0572813, G=0.00896266, C=0.00675408; -C/(F+G)=-0.101958.
+
+ID 33 — conjugated_convolution
+{"stages": [{"inverse": false, "map": {"kind": "rotate_bits", "shift": -2}, "op": "permute"}, {"alpha": "-1", "op": "convolve", "prime_phase": ["constant", 1]}, {"inverse": true, "map": {"kind": "rotate_bits", "shift": -2}, "op": "permute"}, {"alpha": "1", "op": "convolve", "prime_phase": ["constant", 1]}]}
+Matched validation: worst raw ratio 2.65402; worst path-cancellation specificity 0.566175; failed gates 0/16.
+Final mu X=20480: energy/baseline=1.38667, signed/absolute-path energy=0.0175457.
+Final mu X=32768: energy/baseline=1.03373, signed/absolute-path energy=0.0248629.
+Final mu gates failed 0/8.
+Dyadic X=8192: E=0.0577918, F=0.0400856, G=0.0423938, C=-0.0246876; -C/(F+G)=0.299318.
+Dyadic X=16384: E=0.0584673, F=0.0511832, G=0.0378469, C=-0.0305627; -C/(F+G)=0.343286.
+Dyadic X=32768: E=0.0592137, F=0.0572813, G=0.0466447, C=-0.0447124; -C/(F+G)=0.430233.
+
+ID 42 — shear_interleaving
+{"stages": [{"alpha": "1/3", "op": "convolve", "prime_phase": ["residue_sign", ["n"], 5, [1, 4]]}, {"inverse": false, "map": {"kind": "xor", "mask": "alternating"}, "op": "permute"}, {"coefficient": "1/3", "direction": "odd_from_even", "op": "shear", "phase": ["residue_sign", ["n"], 5, [1, 4]]}, {"inverse": true, "map": {"kind": "xor", "mask": "alternating"}, "op": "permute"}, {"alpha": "-1", "op": "convolve", "prime_phase": ["source_sign", ["root", 1, 3]]}]}
+Matched validation: worst raw ratio 2.64064; worst path-cancellation specificity 0.736675; failed gates 0/16.
+Final mu X=20480: energy/baseline=2.24792, signed/absolute-path energy=0.117358.
+Final mu X=32768: energy/baseline=2.13067, signed/absolute-path energy=0.160262.
+Final mu gates failed 0/8.
+Dyadic X=8192: E=0.0816405, F=0.0449715, G=0.0160692, C=0.0205999; -C/(F+G)=-0.337478.
+Dyadic X=16384: E=0.112523, F=0.0574363, G=0.0191762, C=0.0359103; -C/(F+G)=-0.468726.
+Dyadic X=32768: E=0.122047, F=0.0642821, G=0.021405, C=0.0363603; -C/(F+G)=-0.424338.
+
+Interpretation of this frozen batch:
+None of the four selected circuits improves the full Mobius energy
+over baseline at the final tested blocks. ID33 has negative fresh/
+lower-block cross terms on all three recorded dyadic scales, but
+that credit does not cover its entire positive lower-block term.
+Its low path-envelope ratio therefore does not establish the needed
+signed estimate. The other selected circuits have mostly positive
+cross terms. Baseline and candidates all pass the finite mu gates;
+both coherent controls fail those gates, including at baseline.
+These are structural leads and diagnostic lessons, not RH bounds.
+
+Exact proof accounting:
+rho_B=Q_B M_B+g_B, with Q obtained by deleting convolution stages
+without normalizing the remaining word. E=F+G+C is checked exactly:
+F=X^-2||Q_B M_B||^2, G=X^-2||g_B||^2, C=2X^-2<Q_B M_B,g_B>.
+Permutation-only Q preserves full block energy. Shears introduce
+fresh/fresh cross terms while retaining the complementary coordinate.
+Negative C alone is insufficient: the entire E must satisfy the
+cofinal subpower gate for one fixed circuit over every dyadic scale.
+
+The uniform inverse is proved in the grammar review; it is not
+an estimate for actual Mobius moments. Final control scales differ
+from final mu scales, so final specificity comparisons are not made.
+No fitted operator coefficients, optimizer, content hashes or edits
+to earlier frozen studies were used. Full exact values: report.json.

@@ -1,0 +1,40 @@
+{
+  "schema": "floor-drift-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.047380754025653005,
+      "operations": 233491,
+      "max_power_bits": 9258,
+      "root_comparisons": 756,
+      "ceil_comparisons": 161,
+      "exposure": "synthetic rational rate sets, moments, polynomial identities and coefficient values only"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.0016000429750420153,
+      "operations": 687,
+      "max_power_bits": 39,
+      "root_comparisons": 32,
+      "ceil_comparisons": 12,
+      "root_cache_hits": 4,
+      "selected_tests": [
+        "test_new_shared_atoms_across_distinct_drift_recipes"
+      ],
+      "exposure": "synthetic rational rate sets, moments, polynomial identities and coefficient values only"
+    }
+  ],
+  "actual_search_or_selected_application": false,
+  "additional_norms_evaluated": false,
+  "source_arrays_read": false,
+  "frozen_files_modified": false,
+  "old_suites_or_studies_rerun": false,
+  "hashes_generated": false,
+  "cumulative_operations": 234178
+}

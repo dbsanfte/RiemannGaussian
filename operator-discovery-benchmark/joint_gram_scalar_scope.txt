@@ -1,0 +1,30 @@
+Joint divisor Gram scope and scalar accounting
+
+Each regional atom vector is (P,D_1,...,D_9), ordered by theta
+1/3,1/2,2/3 and power -1,0,1. All weights have w_1=1. Thus its
+formal constant vector is z=(0,-1/2,...,-1/2), with no arithmetic
+values substituted. For a fixed exact PSD matrix G the scalar charge
+of one block is z^T G z = (1/4) sum_{i,j=1}^9 G_ij >= 0.
+All DD offdiagonal entries are included twice in this sum. The parent
+has X blocks and the child 2X blocks. Therefore the combined charge is
+X/4 sum DD(parent) + X/2 sum DD(child). With fixed matrices this is
+O(X), and it can be zero for nonzero PSD matrices: the direction
+D_i-D_j has zero constant. A D_i+D_j direction has positive charge.
+
+The old separate pair cone embeds exactly into this joint cone:
+embed each 2x2 [P,D_j] matrix on coordinates (0,j) and sum the nine
+embedded matrices. Congruence embeddings and sums preserve PSD;
+all P diagonals add, each P-D_j entry retains its coefficient, and
+all previously absent D_i-D_j entries are zero. Legacy 5x5 Grams are
+copied. This preserves every full formal polynomial and scalar charge
+at every complete source block. Joint mixing adds genuine channels.
+
+Under the previously proved fixed-template mu scalar asymptotic
+assumptions at q>1, these nonnegative O(X) charges cannot cancel the
+old cubic scalar term. Hence the old gamma=0 necessary gate is still
+necessary. The auxiliary row encodes only that old gate; its four
+empty Gram block lists introduce no unrecorded Gram constants. Full
+original polynomial identities, constant slack, and finite budgets
+still require separate exact checking. Neither the gate, the cone
+embedding, a finite separator, nor a failed separator for a larger
+cone establishes a uniform signed bound or RH.

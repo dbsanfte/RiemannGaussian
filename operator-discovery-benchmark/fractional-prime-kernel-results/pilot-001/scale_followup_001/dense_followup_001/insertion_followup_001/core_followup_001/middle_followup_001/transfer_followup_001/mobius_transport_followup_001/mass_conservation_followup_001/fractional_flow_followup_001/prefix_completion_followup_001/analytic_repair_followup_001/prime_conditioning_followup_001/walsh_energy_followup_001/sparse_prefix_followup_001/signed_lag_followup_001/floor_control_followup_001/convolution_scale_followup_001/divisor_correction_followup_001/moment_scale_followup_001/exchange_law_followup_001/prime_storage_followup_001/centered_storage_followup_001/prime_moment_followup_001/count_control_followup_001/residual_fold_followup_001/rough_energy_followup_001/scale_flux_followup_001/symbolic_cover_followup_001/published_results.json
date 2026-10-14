@@ -1,0 +1,427 @@
+{
+  "RH_proved": false,
+  "candidates_with_refutations": 12,
+  "details": [
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 181,
+      "conditional_price": "37885465283689/17592186044416",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p16_q1_baseline",
+      "kappas": [
+        "16216985661/1099511627776",
+        "1160914089759/549755813888"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "1",
+      "refuted": 95,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 233,
+      "conditional_price": "1075048812715969/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p16_q1_promoted",
+      "kappas": [
+        "2445836680633/1099511627776",
+        "403112356835/274877906944"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "1",
+      "refuted": 43,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 182,
+      "conditional_price": "554429138449761/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p16_q129_128_baseline",
+      "kappas": [
+        "14685243535/1099511627776",
+        "132838965045/68719476736"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "129/128",
+      "refuted": 94,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 235,
+      "conditional_price": "245643336498169/70368744177664",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p16_q129_128_promoted",
+      "kappas": [
+        "1119470996831/549755813888",
+        "1468077816683/1099511627776"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "129/128",
+      "refuted": 41,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 182,
+      "conditional_price": "424245430533961/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p16_q33_32_baseline",
+      "kappas": [
+        "5452355837/549755813888",
+        "407597604815/274877906944"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "33/32",
+      "refuted": 94,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 236,
+      "conditional_price": "750210511380841/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p16_q33_32_promoted",
+      "kappas": [
+        "214683666429/137438953472",
+        "553997721779/549755813888"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "33/32",
+      "refuted": 40,
+      "source_id": "q1_p16",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 175,
+      "conditional_price": "79290066823009/70368744177664",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p04_q1_baseline",
+      "kappas": [
+        "2236492411/549755813888",
+        "381050804563/274877906944"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "1",
+      "refuted": 101,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 212,
+      "conditional_price": "171462080488609/70368744177664",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p04_q1_promoted",
+      "kappas": [
+        "1763278549907/1099511627776",
+        "343353942263/274877906944"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "1",
+      "refuted": 64,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 175,
+      "conditional_price": "290170340465769/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p04_q129_128_baseline",
+      "kappas": [
+        "4050498213/1099511627776",
+        "348817504787/274877906944"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "129/128",
+      "refuted": 101,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 215,
+      "conditional_price": "626792633573929/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p04_q129_128_promoted",
+      "kappas": [
+        "807060917675/549755813888",
+        "1250446177995/1099511627776"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "129/128",
+      "refuted": 61,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 175,
+      "conditional_price": "222220050260209/281474976710656",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(1)*D7",
+        "(1)*D1 + (1)*D8 + (1)*D9"
+      ],
+      "gamma": "5/8",
+      "id": "q1_p04_q33_32_baseline",
+      "kappas": [
+        "3007748223/1099511627776",
+        "1070297253675/1099511627776"
+      ],
+      "log_argument": "7/5",
+      "mode": "baseline",
+      "promotion": null,
+      "q": "33/32",
+      "refuted": 101,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    },
+    {
+      "both_uniform_signed_leaf_bounds_obstructed": true,
+      "certified": 218,
+      "conditional_price": "119607797806225/70368744177664",
+      "finite_status": "REFUTED_LOCAL_BOUND",
+      "formulas": [
+        "(L)*D1 + (1/2)*D7 + (1)*D8 + (1)*D9",
+        "(1+-L)*D1 + (1/2)*D7"
+      ],
+      "gamma": "5/9",
+      "id": "q1_p04_q33_32_promoted",
+      "kappas": [
+        "619088113327/549755813888",
+        "943743343771/1099511627776"
+      ],
+      "log_argument": "17/10",
+      "mode": "promoted",
+      "promotion": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "q": "33/32",
+      "refuted": 58,
+      "source_id": "q1_p04",
+      "uniform_signed_leaf_bounds_proved": false,
+      "unresolved": 0
+    }
+  ],
+  "finite_only_candidates": 0,
+  "promoted_frames_obstructed": 570,
+  "selected_leaves_obstructed": 24,
+  "status": "PUBLISHED_SYMBOLIC_COMPLEMENT_RESULTS",
+  "tests": {
+    "distinct_tests": 31,
+    "failed_attempts": 1,
+    "successful_test_executions": 32,
+    "test_executions": 33
+  },
+  "uniform_correlation_proved": false,
+  "uniform_residual_bound_proved": false,
+  "unresolved_candidates": 0
+}

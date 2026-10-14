@@ -1,0 +1,96 @@
+INDEPENDENT PREFREEZE MATHEMATICAL/SOURCE REVIEW
+
+Review of the new grouped arithmetic pipeline only; no numerical score queries,
+actual target evaluations, source mutations or global mathematical promotions.
+Source-hash bindings are appended after stable-source confirmation below.
+
+Mathematical checks.
+1. Norm and gcd identities are correct at zeros, units, equal arguments and
+coprime arguments. The mu gcd coefficient is the squarefree(g) compatibility
+mask, not a generic c mask. The c cleared coefficient counts common primes with
+unequal exponents; its quartic right side x_g^2*x_u*x_v is correct. Exact prime
+factor verification and horizon checks prevent user supplied factor constants
+from becoming arbitrary arithmetic axioms. Old relations remain whitelisted.
+2. A computed scalar slack is sound precisely when lhs-RHS has no nonconstant
+coefficient and its constant is nonnegative. Appending that constant times1^2
+preserves the prescribed lhs. Direction is NOT RHS-lhs. Shared structural
+weights can be preserved at a new scale while this scalar is recomputed; doing
+so is finite template transfer, not a uniform bound. Exact coefficient matching
+and scalar derivation must independently verify every transferred instance.
+3. The unsigned calibration lhs is U_X-Delta, distinct from criticalD-Delta.
+Its exact weights4,1,-1 and full prefix/pair/norm groups reproduce the identity
+in grouped_arithmetic_proof.txt section7. U has unconditional cubic/polylog
+charge; a calibration success does not certify criticalD. Metadata must state
+certified_bound=U or D according to claim, even if both diagnostic numbers appear.
+4. Shared dimensions alone do not prove matching descriptor semantics. The runner
+must bind unchanged descriptor ordering/IDs across training and transfer and
+reconstruct groups independently. Flattened certificate terms must have the
+same shared weights as every declared group; atomic substitutions are rejected.
+5. Scalar slack adds one independent nonnegative constant column PER instance to
+the stacked finite cone. Independent dual verification must include those columns
+and require each corresponding constant-coordinate functional value>=0. Omitting
+these columns could falsely separate the broader slack cone. Independent primal
+verification must reconstruct the exact constant slack, not trust an LP weight.
+
+Source/resource scope.
+The solver proposes float support, reconstructs exact rational nonnegative
+coefficients, checks full polynomial equality, and compiles an exact certificate.
+A failed reconstruction or LP is no_certificate_found/missing, not infeasibility.
+A dual admission needs exact full monomial coverage and exact sign/equality
+checks. Group generation admits empty stable positional groups and retains every
+original pair target term. The pair/coprime relation subset is intentional and
+cannot be described as a complete product-horizon cycle bank.
+The template preflight N^4 work proxy, synthesis coefficient/degree/monomial/time
+limits, relation factor predicate limits, and compiler expansion limits are
+explicit computation guards. They are not total physical memory, bit-complexity,
+serialization or walltime proofs. Runtime test/source-seal hashes and failure
+retention are operational provenance, not arithmetic cancellation.
+
+Representation gap, separate future proposal.
+For c, a gcd column uses R=2^overlap*x_a*x_b-x_g^2*x_u*x_v. The norm relation
+rho_g=x_g^2-h_g yields the lower-degree exact combination
+ R+rho_g*x_u*x_v=2^overlap*x_a*x_b-h_g*x_u*x_v.
+The current norm multiplier dictionary contains constants/anchor/prefix linear
+forms, not the degree-two multiplier x_u*x_v, so this cancellation may be absent
+from its cone. That is a declared representation gap, not an obstruction to
+actual c arithmetic or a proof of the desired inequality. A future grouped
+production could sum this COMPLETE relation combination over exact gcd classes
+with shared rational weights, preserving all boundaries, factor constants and
+norm sources. It should not be injected into the present frozen dictionary.
+
+Uniform scope.
+A finite shared certificate is stronger compression than unrestricted rowwise
+weights, but still lacks a proved all-scale coefficient identity and critical
+scalar budget. Norm/gcd/cycle premises with finitely normalized prime signs admit
+the positive-mean counterfeit. Sufficient arithmetic information must exclude
+that model uniformly; not every individual prime sign is logically necessary.
+No finite source check, exact dual, transfer case or unsigned calibration supplies
+the cofinal actual signed inequality. Global/RH flags must remain false.
+
+Final stable source bindings reviewed:
+grouped_arithmetic_language.py SHA256 aafa824b462477852df9ceca1cdf7fb153b17ec4184575e84030dac07ac9c9df
+grouped_arithmetic_synthesis.py SHA256 d9165d156dee1d57b7d6cd4901c319792e3fe4908369e4f80a8729aeff6777ad
+grouped_arithmetic_templates.py SHA256 9869beef394818011885fa34521467b86ccb530d3c8bcca654906ccaed4f2b8b
+grouped_arithmetic_proof.txt SHA256 0bcec50e20add12beb28f346e35ee31eb8a58ab407d6f18d91012a18be1a8fd0
+check_grouped_arithmetic.py SHA256 760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e
+check_grouped_arithmetic_run.py SHA256 c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f
+run_grouped_arithmetic.py SHA256 de637d735bebe047591cd6b6fcbe15e8c6c0bd1107adc556d12984e4f49e1a5b
+
+Final integration checks: independent verify_joint, verify_joint_result and
+verify_joint_dual accept allow_constant_slack. Primal checker computes lhs-RHS,
+requires every nonconstant coefficient vanish, and admits constant>=0 only when
+slack is enabled. Result checker reconstructs the appended constant square and
+compares recorded slacks. Dual domain adds every instance constant and checks
+each corresponding dual value>=0. This resolves the earlier pending blocker.
+Independent run checker reconstructs full groups and actual lhs bound; D is U
+for unsigned calibration and critical_budget is separately retained. Exact
+shared weights are reused at transfer with no refit, all certificates and
+instance groups independently matched. Training is1,2,4,5 to distinguish root
+programs; final8 and deterministic9/11 are explicitly finite transfer cases.
+The run checker verifies source/protocol/candidate seals, exact source set,
+complete program retention, successful contract output and file hashes before
+and after the audit. Eleven focused existing language/checker/run-checker tests
+passed; no pilot score queries or target-score run was performed by this review.
+Conclusion: no remaining blocking mathematical/schema issue found in these
+bound source versions. This is an independent human-readable review and focused
+contract check, not a formal proof, exhaustive security audit or global bound.

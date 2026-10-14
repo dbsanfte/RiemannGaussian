@@ -1,0 +1,215 @@
+COHERENT QUOTIENT AND DIFFERENCE-ENERGY POSTREVIEW075
+==================================================
+
+Scope and disposition
+---------------------
+This analytical postreview reads only saved075 moment controls, selected
+programs, report and admitted learning_data rows. It makes no new source
+query, sieve, scientific scale study or candidate fit, uses no hashes,
+and writes only this new file. The report records125 shapes,144 moment
+controls,106 active-prime controls all failing adaptation,118 refuted
+controls total, and18 selected paired programs all refuted. No fresh
+final domain was queried. Those are finite dispositions of fixed formulas,
+not impossibility theorems for all constants or all operators. The exact
+generic decompositions below are new payable templates, not RH results.
+
+1. Concrete failures expose a cross-family support obligation
+------------------------------------------------------------
+Use the075 order of six adjacent prime blocks followed by d=2,3,5,6.
+moment_002.json has shape(1,1,0,...,0). Its beta is zero on both
+active blocks; the only paid coordinates are the fifth prime block
+(869/4096), direct2(373/2048), direct3(4521/4096). Thus its learned
+claim is NOT a within-block variance bound. It asserts domination of
+one prime aggregate by a distant prime moment and two unrelated direct
+squares. Their shared mu source can have correlations, but the learner
+has not proved the needed all-scale cross-family comparison.
+
+At saved u=1966035, X=491508, the first block sums are -40 and152,
+with counts90 and61 and square moments11196 and3124. The active sum
+is112 and its square12544. The paid fifth-block moment is12188 and
+direct2/direct3 values143,-55. The exact paid energy is
+
+ [869*12188 + 746*20449 + 4521*3025]/4096
+ =39522351/4096,
+
+so the gap is11857873/4096>0, as independently recorded. The within-
+active-block square identity itself is
+112^2=(-40)^2+152^2+2*(-40)*152: the interblock cross term is
+negative here. The failure therefore cannot honestly be described as
+positive cross terms between these two block totals. Coherence within
+quotients and cross-family support remain distinct issues. Its80 saved
+failures cluster around the original k=24576 lattice phase window;
+this identifies a local counterexample region, not an asymptotic cause.
+
+moment_136.json is prime_only, all six prime coefficients positive.
+All six prime beta values are zero; only direct3,5,6 are paid. At
+u=1966001 its unscaled prime sum is -2338725/6832 and paid energy
+36544781/2048. Its square5469634625625/46676224 exceeds that energy.
+The selected q1 program uses amplitude -1/2. Multiplying both sides
+by1/4 preserves the failure; reducing exposure cannot repair it.
+The saved q1 program also has innovation counterexamples, so paying
+correlation alone would not rehabilitate the frozen paired program.
+
+moment_139.json is prime_composite. It pays only direct2 and3, with
+beta10131/4096 and5941/2048. At u=2621364 its unscaled prime subtotal
+is5075356/2701 and its direct subtotal384766/2701. They reinforce:
+
+ L=5460122/2701,
+ L^2=29812932254884/7295401,
+ E=250045901/4096.
+
+The selected q1 amplitude -1/4 scales this same gap by1/16. The
+prime/direct cross term2*(5075356/2701)*(384766/2701) is positive.
+Different saved rows can have opposite-sign subtotals, so this is an
+observed mechanism at this witness, not a universal sign law. The
+selected q1 paired program139 also fails its separately fixed residual
+budget. None of these observations proves that larger beta, different
+supports, other operators or other paid correlations can never work.
+
+2. Merge all equal children before choosing a correlation grammar
+---------------------------------------------------------------
+For fixed parent u and its exact prime blocks let
+
+ m_ij(u)=#{p in block i: u/(j+1)<p<=u/j}.
+ w_j(u)=sum_i a_i m_ij(u),
+ h_j(u)=sum_d a_d 1[j=u//d],
+ v_j(u)=w_j(u)+h_j(u).
+
+Every count is literal, with open lower and closed upper endpoints.
+Include j=0 if desired: G(0)=0; in these prime blocks it is absent.
+Direct collisions and prime/direct collisions add their coefficients,
+rather than creating independent copies of G(j). All nonzero children
+are strictly smaller than u. The exact identity is
+
+ L(u)=sum_j v_j(u)G(j).
+
+Its complete square is
+
+ sum_j v_j^2 G(j)^2 + 2 sum_{j<k}v_jv_k G(j)G(k).
+
+Even the diagonal now contains prime-prime multiplicity cross terms,
+cross-block same-child products and any direct collision. Equivalently
+put P=sum w_jG(j), D=sum h_jG(j); then L^2=P^2+2PD+D^2.
+Dropping2PD or off-diagonal child products changes the target energy.
+The exact paid original diagonal moment is
+
+ E(u)=sum_i beta_i Q_i +sum_d beta_d G(u//d)^2
+     =sum_j t_j(u)G(j)^2,
+ t_j=sum_i beta_i m_ij+sum_d beta_d 1[j=u//d]>=0.
+
+This t has linear multiplicity, whereas the target diagonal has v^2.
+Grouping does not allow replacing m by1 or by m^2 in E.
+
+3. A universal support/coherence certificate and its full price
+-------------------------------------------------------------
+If t_j=0 implies v_j=0, weighted Cauchy proves
+
+ L^2<=K(u) E(u),  K(u)=sum_{j:t_j>0}v_j^2/t_j.
+
+Thus K<=1 certifies the original correlation universally, without any
+arithmetic assumptions about G. This merged-child criterion can exploit
+coefficient cancellation before squaring and is stronger than treating
+duplicate children as separate vectors. If v_j!=0 where t_j=0, no
+universal inequality L^2<=K E can hold for arbitrary child vectors:
+put a vector value1 at that unsupported j and0 elsewhere. This does
+NOT refute an actual arithmetic inequality for G; it identifies the
+additional arithmetic relationship such a claim must prove.
+
+For K(u)<=Kstar uniformly, the075 induction bound E<=B rho u^q
+gives L^2<=B Kstar rho u^q. The full contraction price is Kstar*rho,
+not rho alone. Require Kstar*rho<=r^2<1 and the same residual budget.
+Alternatively a potentially sharper purely structural price is
+
+ T_q(u)=sum_{j>=1}|v_j(u)|(j/u)^(q/2).
+
+The child invariant implies |L|<=sqrt(B)u^(q/2)T_q. Uniform T_q<=r
+would close the transfer with the residual budget, but coherent prime
+weights need not have a bounded price. Neither condition follows from
+smaller rank, from the finite observed ratios, or from arbitrary beta
+inflation; any inflation must repay contraction simultaneously.
+
+4. Exact discrete Abel reduction with the boundary paid
+------------------------------------------------------
+Discard j=0, whose G value is zero. Let1<=J<u encompass every
+remaining supported child (the zero operator can be handled separately),
+and put
+V_j=sum_{h=1}^j v_h. Direct subtraction proves
+
+ L=V_J G(J)-sum_{j=1}^{J-1}V_j [G(j+1)-G(j)].
+
+Indeed G(h)'s coefficient is V_h-V_(h-1)=v_h, including both ends.
+The endpoint V_J=sum v_h is essential. For002 the prime coefficients
+are positive, so sum w_h is the total151 primes at the displayed row;
+it is not a zero-mass pairing. For136 all positive prime coefficients
+likewise preclude a zero-mass weight identity. Mixed139 has positive
+and negative coefficients, but no centering constraint forces total
+quotient mass zero. Centering of smooth coefficients in074 does not
+imply sum_i a_i*#block_i=0. Removing the anchor would be a new error.
+
+The exact increment has a completely specified arithmetic stencil:
+
+ Delta G(j)=1[8 divides j+1]mu((j+1)/8)
+           -1[10 divides j+1]mu((j+1)/10)
+           -1[4 divides j+1]mu((j+1)/4)
+           +1[5 divides j+1]mu((j+1)/5).
+
+Terms at nondisible arguments are absent. This follows from the jump
+of M(floor(j/h)), includes mu(1), and costs no asymptotic boundary
+approximation. Its absolute value is at most4, but exploiting signed
+increments in the V-weighted sum requires further control; taking
+absolute values can lose exactly the hoped-for cancellation.
+
+5. Payable difference-energy or pairing leaves
+---------------------------------------------
+Choose positive weights eta0 and eta_j for retained Abel terms. Set
+
+ F_eta=eta0 G(J)^2+sum_{j=1}^{J-1}eta_j(Delta G(j))^2,
+ K_eta=V_J^2/eta0+sum_{j=1}^{J-1}V_j^2/eta_j.
+
+Weighted Cauchy universally proves L^2<=K_eta F_eta. Zero weights
+are allowed only when the corresponding Abel coefficient is zero.
+One independently payable arithmetic leaf is
+K_eta(u)F_eta(u)<=B r^2 u^q under the smaller-child invariant,
+proved without assuming the parent target. A more modular version
+requires uniform K_eta<=Kstar and F_eta<=B Dstar u^q, with
+Kstar*Dstar<=r^2<1. F_eta's expansion retains ALL products among
+the four signed mu increments; replacing it by individual squares
+requires a separately charged Cauchy factor. Its anchor is likewise
+paid explicitly. These are possible new search leaves, not proved here.
+
+An unconditional fallback is F_eta<=eta0 B J^q+16 sum eta_j
+under the child invariant; if B>0 its transfer cost is
+K_eta[eta0(J/u)^q+(16/B)sum eta_j/u^q]. This safe price can be poor.
+Writing down a difference norm does not establish a small uniform cost.
+
+More generally any exact finite signed flow representation
+
+ v=sum_e f_e(e_(j_e)-e_(k_e))+b e_anchor,
+ b=sum_j v_j,
+
+gives L=sum_e f_e[G(j_e)-G(k_e)]+bG(anchor). Such a representation
+always exists using an anchor within1..J and edges to every other
+supported child. Pairing coefficients can be chosen rationally and
+verified by exact conservation at each child. With positive edge
+weights eta_e and anchor weight eta0, Cauchy pays
+
+ L^2<=[b^2/eta0+sum_e f_e^2/eta_e]
+       [eta0 G(anchor)^2+sum_e eta_e(G(j_e)-G(k_e))^2].
+
+Long-edge differences telescope into the exact Delta G stencil above,
+with every intervening term retained. Each difference square is
+G(j)^2+G(k)^2-2G(j)G(k). Generic induction gives only
+(G(j)-G(k))^2<=B(j^(q/2)+k^(q/2))^2; any better sign/nearby-child
+correlation is a distinct arithmetic lemma. All endpoints must remain
+strictly below parent u, and a pure pairing is permissible only if b=0.
+
+Next searchable object
+----------------------
+Export exact merged weights, paid support t_j, unsupported active rows,
+the full cross terms, and a rational Abel/flow conservation certificate.
+Search a residual identity jointly with an independently paid signed
+difference-energy or coherent-support price, including anchor, resource
+costs and contraction. Finite success can guide this construction but
+cannot pay the uniform arithmetic leaf. The current counterexamples
+identify failed frozen budgets; they establish neither all-constant
+asymptotic impossibility nor any whole-head/core/RH theorem.

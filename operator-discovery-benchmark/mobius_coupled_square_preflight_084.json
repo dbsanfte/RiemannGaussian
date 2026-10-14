@@ -1,0 +1,189 @@
+{
+  "status": "PASS_PREFLIGHT",
+  "prior_frozen_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15,
+    16,
+    8,
+    10,
+    10,
+    10,
+    10,
+    14,
+    10,
+    5,
+    10,
+    10,
+    10,
+    10,
+    10,
+    12,
+    12,
+    13,
+    4,
+    10,
+    4,
+    11,
+    5,
+    11,
+    9,
+    10,
+    9,
+    10,
+    9,
+    10,
+    10,
+    10,
+    13,
+    10,
+    14,
+    13,
+    19,
+    19,
+    21
+  ],
+  "total_preserved": 638,
+  "source_files": [
+    {
+      "name": "mobius_coupled_square_084.py",
+      "exists": true
+    },
+    {
+      "name": "test_mobius_coupled_square_084.py",
+      "exists": true
+    },
+    {
+      "name": "mobius_coupled_square_search_084_development.json",
+      "exists": true
+    },
+    {
+      "name": "check_mobius_coupled_square_084.py",
+      "exists": true
+    },
+    {
+      "name": "test_check_mobius_coupled_square_084.py",
+      "exists": true
+    },
+    {
+      "name": "mobius_coupled_square_checker_084_development.json",
+      "exists": true
+    },
+    {
+      "name": "MOBIUS_COUPLED_SQUARE_CHECK_SCOPE_084.txt",
+      "exists": true
+    },
+    {
+      "name": "mobius_rh_target_084.py",
+      "exists": true
+    },
+    {
+      "name": "test_mobius_rh_target_084.py",
+      "exists": true
+    },
+    {
+      "name": "mobius_rh_target_084_development.json",
+      "exists": true
+    },
+    {
+      "name": "MOBIUS_RH_TARGET_AUDIT_084.txt",
+      "exists": true
+    },
+    {
+      "name": "MOBIUS_SQUARE_BOUND_REVIEW_084.txt",
+      "exists": true
+    },
+    {
+      "name": "mobius_coupled_square_protocol_084.txt",
+      "exists": true
+    },
+    {
+      "name": "run_mobius_coupled_square_084.py",
+      "exists": true
+    }
+  ],
+  "out_exists": false,
+  "programs": [
+    {
+      "source": "q1_p16",
+      "family": "inherited",
+      "terms": 44,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p16",
+      "family": "cofactor",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p16",
+      "family": "reciprocal",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p16",
+      "family": "fractional",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p04",
+      "family": "inherited",
+      "terms": 44,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p04",
+      "family": "cofactor",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p04",
+      "family": "reciprocal",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    },
+    {
+      "source": "q1_p04",
+      "family": "fractional",
+      "terms": 116,
+      "target_status": "VERIFIED_CONDITIONAL_RH_TARGET",
+      "equation_rows": 12
+    }
+  ],
+  "retained_preflight_attempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_PREFLIGHT_REPORTING",
+      "error": "KeyError: 0",
+      "reason": "ad hoc preflight accessed theta_equalities dict with index 0 instead of rows; no science executed"
+    },
+    {
+      "attempt": 2,
+      "status": "PASS"
+    }
+  ]
+}

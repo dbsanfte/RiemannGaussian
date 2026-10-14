@@ -1,0 +1,113 @@
+Semantic structural candidate discovery, prospective pilot002
+
+This is a new structural search. Published pilot001 sources and results are
+immutable. No coefficient optimizer, new hashes, actual research scores before
+freeze, refitted final constants, or automatic universal theorem promotion.
+Root owns semantic_potential_discovery.py, run_semantic_potential_discovery.py,
+exposure planning, selection, reporting and workflow tests. Producer owns
+potential_candidate_semantics.py and its tests. Independent owner owns
+check_potential_candidate_semantics.py and its tests. Reviewer owns the new
+semantic_potential_discovery_soundness.txt. Reuse the unchanged exact finite
+arithmetic evaluator/checker and complete candidate AST language from pilot001.
+
+Target remains actual Mobius M(t)=sum_{n<=t}mu(n),
+ E(X)=X^-2 sum_{X<=t<2X}M(t)^2,
+ V(X)=X^-2 sum_t sum_j w_j U_j(X,t)^2, W(X)=E(X)+V(X).
+All w_j are nonnegative. Evaluate the full W(2X)-W(X), fresh child X, W(1),
+all cross terms, source complements and moving-domain boundaries. No potential
+replaces E. The unresolved obligation remains one fixed program, exists q0,
+every integer q>=q0 has finite Cq independent of dyadic X>=1 with
+ W(2X)-W(X)<=Cq*ceil(X^(1/q)). All global/RH estimate flags remain false.
+
+Semantic APIs
+ potential_candidate_semantics.analyze(program,meter)->JSON annotation.
+ check_potential_candidate_semantics.analyze(program,meter)->same JSON via an
+ independently implemented reconstruction; verify(program,annotation,meter)
+ rejects mismatches. The independent module must not import producer semantics
+ or the new generator. Both may use the respective unchanged AST validator.
+Top-level mechanism is one of baseline,lag,mask,bounded_root,target_copy,
+coupled_sum,coupled_bank,nonlinear,unknown,multi_state. The producer and checker
+owners agree the remaining compact deterministic schema directly. Keep source
+and domain scope and unknown cases explicit. Preserve original ASTs in records;
+annotations may refer to paths/subterms without duplicating full programs.
+Do not infer a new cancellation theorem from a surviving symbolic odd factor.
+Whole-state point multiplication has a norm-mask interpretation on actual mu,
+without removing existing sign dependence inside the other factor. Standalone
+bounded root squares do not bound their mixed terms with an unresolved state.
+Finite aliases cannot establish universal identities. A prose/syntactic semantic
+annotation is not a formal universal source/compiler proof certificate.
+
+Search
+Baseline plus40 initial programs across five construction families, eight each:
+calibration,source_mixture,factor_bank,prime_bank,index_switch. Generic point
+factors enter different summands before squaring; divisor/prime sums retain
+their pair correlations. Include fractional roots2,3,6 and exploration using
+gcd-dependent indices, changes of argument and bilinear differences. Then at
+most24 mutations across four structural operations: factor_in_summand,
+signed_pair,gcd_conditioned_mix,quotient_commutator (six each). This is a declared
+finite grammar/design choice, not bias-free or exhaustive mathematics.
+
+Eight parent/final structural slots: one best calibration (lag/mask/bounded_root/
+target_copy), one best available coupled_sum, one coupled_bank, one nonlinear,
+one unknown/multi_state exploration, then remaining distinct mechanism/family
+pairs before fill. Calibration occupies at most two slots in the final fill;
+when a mask has a recognized coupled_sum/coupled_bank/nonlinear core, selection
+uses that core class and retains the mask annotation rather than treating the
+whole candidate as calibration. An unclassified masked core stays conservative.
+other classes at most three each unless no remaining noncalibration candidate
+can fill a slot. Keep fewer than eight if only redundant calibration remains.
+Numerical order inside slots uses validation failures, anchored costs q12/6/3/2
+including W1, complexity, ordinal ID. Baseline always evaluated separately.
+Selected does not imply improves baseline or supplies new signed information.
+
+Training bases1,2,4,8,16,32,64,128. Base validation192,256,384,512. Candidate
+selector diagnostics are chosen from ASTs before responses, adding at most two
+distinct bases<=1024 around the first later effective transition of a supported
+scale-dependent selector. Source horizon covers all declared bases/children.
+Extra diagnostic scores are reported separately from the shared validation
+ranking so varying numbers of diagnostic cases cannot bias failure counts.
+The plan records effective selector values on both parent and child contexts;
+unsupported or unaffordable regimes are explicitly unknown/unexposed. Exact
+integer root endpoints handle t-dependent selector ranges. Outer max/min,
+prime-entry boundaries and radical equivalence must be considered where the
+planner claims an effective change. No source-response values choose scales.
+
+Fit Cq=max(0,max_train DeltaW/ceil(X^(1/q))) for q2,3,6,12; persist training
+before any validation. Final bases1536,2048,3072,4096 fixed prospectively, with
+complete source through16383, plus one/partial_prime_2 controls. Persist selected
+ASTs/constants/proof queue before final responses. These are unused by this
+run's adaptation; no claim of historically unseen arithmetic. All available,
+invalid and resource-missing results survive. Failures refute stored constants
+at those cases, not arbitrary future constants or the operator itself.
+
+Resources and verification
+One450m complete proxy-work reservation:40m preparation,15m generation and
+annotations/selection/exposure,145m discovery,100m final,150m sole independent
+audit. No resets, borrowing, hidden retries or duplicate unchanged suites.
+Preparation includes25m cumulative synthetic arithmetic and15m I/O/scaffolding.
+Producer/checker each <=5m development; root uses a declared1m reserve plus
+explicit metered workflow work. Exactly one owned development suite per module
+when ready and one frozen combined suite. Changed failed tests may rerun with
+all prior cost retained. New semantic and workflow tests print cumulative
+SYNTHETIC_WORK module=<name> operations=N. The frozen suite includes unchanged
+producer/checker arithmetic tests once; their work is also counted.
+No actual source/pilot computation before all required code/protocol frozen.
+6GiB address-space cap,3600s stage deadlines,6m live-cell cap including fixed1m
+root reserve,4096-bit exact number cap,8MiB artifact cap. Root metadata is
+structurally bounded with100k cells reserved for external sources/transients.
+Source bytes compared directly against one frozen snapshot; no digest IDs.
+Independent finite evaluator verifies all saved cases, independent semantic
+analysis verifies annotations, independent arithmetic recomputes fits/selection.
+Generation and exposure replay use the shared generator/planner (declare this
+limitation); prospective soundness review and targeted boundary tests cover
+planner logic. No extra independent run is licensed by a failed audit.
+
+Development receipts before freeze
+New producer semantics:10 tests passed once,10,845 metered operations.
+New independent semantics:12 tests passed once,7,987 metered operations.
+New root workflow:12 tests passed once,2,307,838 metered operations,0.492s.
+Cumulative development2,326,670; no failures, repairs or repeated suites.
+Unchanged core arithmetic modules were not rerun during development. The sole
+frozen combined58-test suite is separately charged, including those two modules.
+The additional1m root preparation reserve is also charged. No pilot computation
+has run before freezing these sources and the prospective protocol.

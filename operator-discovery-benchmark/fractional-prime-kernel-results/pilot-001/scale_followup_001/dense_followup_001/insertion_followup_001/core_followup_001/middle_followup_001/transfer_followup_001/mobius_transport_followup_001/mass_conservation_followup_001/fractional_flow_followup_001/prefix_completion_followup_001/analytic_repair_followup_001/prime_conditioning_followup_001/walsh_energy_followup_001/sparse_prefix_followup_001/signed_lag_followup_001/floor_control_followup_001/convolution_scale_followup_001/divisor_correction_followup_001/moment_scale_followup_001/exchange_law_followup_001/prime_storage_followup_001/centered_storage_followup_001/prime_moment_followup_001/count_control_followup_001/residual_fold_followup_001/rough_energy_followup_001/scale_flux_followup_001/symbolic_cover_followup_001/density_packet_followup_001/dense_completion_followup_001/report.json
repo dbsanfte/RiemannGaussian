@@ -1,0 +1,333 @@
+{
+  "RH_proved": false,
+  "admitted_proposals": 24,
+  "arithmetic_horizon_unchanged": true,
+  "complete_dense_target": true,
+  "conservative_process_peak_sum_bytes": 1020461056,
+  "constructor_operations": 3859998,
+  "discovery": [
+    {
+      "energy_id": "current",
+      "family_id": "cofactor_radii",
+      "id": "q1_p04_current_cofactor_radii",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.30342267401283607,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "full_fractional",
+      "id": "q1_p04_current_full_fractional",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.34223074198234826,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "full_radius",
+      "id": "q1_p04_current_full_radius",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.14595446398016065,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "source_endpoints",
+      "id": "q1_p04_current_source_endpoints",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.3967206999659538,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "cofactor_radii",
+      "id": "q1_p04_three_delay_cofactor_radii",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.5810868879780173,
+      "worker_peak_rss_kib": 96432
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "full_fractional",
+      "id": "q1_p04_three_delay_full_fractional",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.6641427510185167,
+      "worker_peak_rss_kib": 96568
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "full_radius",
+      "id": "q1_p04_three_delay_full_radius",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.29525211703730747,
+      "worker_peak_rss_kib": 96432
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "source_endpoints",
+      "id": "q1_p04_three_delay_source_endpoints",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.7753140479908325,
+      "worker_peak_rss_kib": 97504
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "cofactor_radii",
+      "id": "q1_p04_two_delay_cofactor_radii",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.4067629090277478,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "full_fractional",
+      "id": "q1_p04_two_delay_full_fractional",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.4856077459990047,
+      "worker_peak_rss_kib": 96432
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "full_radius",
+      "id": "q1_p04_two_delay_full_radius",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.16932452301261947,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "source_endpoints",
+      "id": "q1_p04_two_delay_source_endpoints",
+      "source_id": "q1_p04",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.549494170001708,
+      "worker_peak_rss_kib": 97016
+    },
+    {
+      "energy_id": "current",
+      "family_id": "cofactor_radii",
+      "id": "q1_p16_current_cofactor_radii",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.2128006520215422,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "full_fractional",
+      "id": "q1_p16_current_full_fractional",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.34346405300311744,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "full_radius",
+      "id": "q1_p16_current_full_radius",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.16656680597225204,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "current",
+      "family_id": "source_endpoints",
+      "id": "q1_p16_current_source_endpoints",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.3950439020409249,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "cofactor_radii",
+      "id": "q1_p16_three_delay_cofactor_radii",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.5149069749750197,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "full_fractional",
+      "id": "q1_p16_three_delay_full_fractional",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.5990048570092767,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "full_radius",
+      "id": "q1_p16_three_delay_full_radius",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.21690133097581565,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "three_delay",
+      "family_id": "source_endpoints",
+      "id": "q1_p16_three_delay_source_endpoints",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.7304712819750421,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "cofactor_radii",
+      "id": "q1_p16_two_delay_cofactor_radii",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.36138439702335745,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "full_fractional",
+      "id": "q1_p16_two_delay_full_fractional",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.5418229709612206,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "full_radius",
+      "id": "q1_p16_two_delay_full_radius",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.23923768399981782,
+      "worker_peak_rss_kib": 96268
+    },
+    {
+      "energy_id": "two_delay",
+      "family_id": "source_endpoints",
+      "id": "q1_p16_two_delay_source_endpoints",
+      "source_id": "q1_p16",
+      "status": "LP_PROPOSAL",
+      "total_elapsed_seconds": 0.6085799040156417,
+      "worker_peak_rss_kib": 96268
+    }
+  ],
+  "elapsed_seconds": 10.47126363904681,
+  "fresh_geometry_parents": [
+    1722,
+    1787,
+    3588,
+    3850,
+    6444,
+    8179
+  ],
+  "independent_discovery_operations": 20285603,
+  "independent_discovery_upper_checks": 48,
+  "independent_dual_checks": 24,
+  "independent_validation_operations": 38836433,
+  "independently_admitted_uniform_obstruction_certificates": 0,
+  "prior_byte_preserved_files": 566,
+  "reviewed_analytic_sublinear_obstruction_proposals": 12,
+  "sampled_aggregate_peak_rss_bytes": 395403264,
+  "selected_candidates": 8,
+  "signs_or_source_values_used": false,
+  "stage_frozen_files": 13,
+  "status": "COMPLETE_FINITE_DENSE_CERTIFICATE_SEARCH",
+  "tasks": 24,
+  "uniform_growth_proved": false,
+  "uniform_original_source_bound_proved": false,
+  "validation": [
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 2.056332695996389,
+      "id": "q1_p04_current_cofactor_radii",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 2.597136838012375,
+      "id": "q1_p04_current_full_fractional",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 1.0636938029783778,
+      "id": "q1_p04_current_full_radius",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 2.762839019007515,
+      "id": "q1_p04_current_source_endpoints",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 2.0016438310267404,
+      "id": "q1_p16_current_cofactor_radii",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 2.33344586804742,
+      "id": "q1_p16_current_full_fractional",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 0.9192690519848838,
+      "id": "q1_p16_current_full_radius",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    },
+    {
+      "RH_proved": false,
+      "elapsed_seconds": 4.093757711991202,
+      "id": "q1_p16_two_delay_source_endpoints",
+      "new_arithmetic_horizon": false,
+      "new_geometry_parents": true,
+      "uniform_growth_proved": false,
+      "uniform_original_source_bound_proved": false,
+      "worker_peak_rss_kib": 96524
+    }
+  ],
+  "validation_rows": 48
+}

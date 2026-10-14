@@ -1,0 +1,298 @@
+{
+  "RH_proved": false,
+  "build_limits": {
+    "max_coefficient_bits": 4096,
+    "max_horizon": 80,
+    "max_operations": 200000000,
+    "max_terms": 100000
+  },
+  "cooperative_seconds": 360,
+  "decisions": {
+    "unknown_missing_coordinates": "retain unknown; do not impute unsupported moments",
+    "witness_extends_to_affine_cone": "the same separator excludes the fixed affine cone on the declared grid",
+    "witness_invalid_for_affine_cone": "consider a new full15 certificate search; feasibility remains unproved"
+  },
+  "existing_atom_count": 14,
+  "extended_atom_count": 15,
+  "global_bound_proved": false,
+  "grammar": {
+    "atoms": [
+      "unit",
+      "prefix",
+      "half",
+      "even",
+      "mod3one",
+      "prime",
+      {
+        "power": -1,
+        "theta": "1/3"
+      },
+      {
+        "power": 0,
+        "theta": "1/3"
+      },
+      {
+        "power": 1,
+        "theta": "1/3"
+      },
+      {
+        "power": -1,
+        "theta": "1/2"
+      },
+      {
+        "power": 0,
+        "theta": "1/2"
+      },
+      {
+        "power": 1,
+        "theta": "1/2"
+      },
+      {
+        "power": -1,
+        "theta": "2/3"
+      },
+      {
+        "power": 0,
+        "theta": "2/3"
+      },
+      {
+        "power": 1,
+        "theta": "2/3"
+      }
+    ],
+    "auxiliary_blocks": "empty",
+    "base": {
+      "anchor": "prefix",
+      "anchor_index": 0,
+      "atoms": [
+        "prefix",
+        "half",
+        "even",
+        "mod3one",
+        "prime",
+        {
+          "power": -1,
+          "theta": "1/3"
+        },
+        {
+          "power": 0,
+          "theta": "1/3"
+        },
+        {
+          "power": 1,
+          "theta": "1/3"
+        },
+        {
+          "power": -1,
+          "theta": "1/2"
+        },
+        {
+          "power": 0,
+          "theta": "1/2"
+        },
+        {
+          "power": 1,
+          "theta": "1/2"
+        },
+        {
+          "power": -1,
+          "theta": "2/3"
+        },
+        {
+          "power": 0,
+          "theta": "2/3"
+        },
+        {
+          "power": 1,
+          "theta": "2/3"
+        }
+      ],
+      "auxiliary_storage_blocks": "empty",
+      "base_program": {
+        "atoms": [
+          "prefix",
+          "half",
+          "even",
+          "mod3one",
+          "prime",
+          {
+            "power": -1,
+            "theta": "1/3"
+          },
+          {
+            "power": 0,
+            "theta": "1/3"
+          },
+          {
+            "power": 1,
+            "theta": "1/3"
+          },
+          {
+            "power": -1,
+            "theta": "1/2"
+          },
+          {
+            "power": 0,
+            "theta": "1/2"
+          },
+          {
+            "power": 1,
+            "theta": "1/2"
+          },
+          {
+            "power": -1,
+            "theta": "2/3"
+          },
+          {
+            "power": 0,
+            "theta": "2/3"
+          },
+          {
+            "power": 1,
+            "theta": "2/3"
+          }
+        ],
+        "auxiliary_blocks": "empty for every Gram group",
+        "constant_vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "-1/2"
+        ],
+        "dimension": 14,
+        "matrix_sharing": "one exact PSD matrix per region, shared across every t and X",
+        "regions": [
+          "parent",
+          "child"
+        ],
+        "scalar_language": {
+          "normalizer": "unit_constant",
+          "partition": "d<=floor(t^theta)",
+          "powers": [
+            -1,
+            0,
+            1
+          ],
+          "regions": [
+            "parent",
+            "child"
+          ],
+          "relation_forms": [
+            "one",
+            "prefix",
+            "contrast",
+            "normalization"
+          ],
+          "source_domain": "all 1<=a<=t, d|a; inside and complete complement",
+          "source_scale": "N=4X-1",
+          "square_forms": [
+            "contrast",
+            "prefix_plus",
+            "prefix_minus"
+          ],
+          "thetas": [
+            "1/3",
+            "1/2",
+            "2/3"
+          ],
+          "version": "divisor-cells-v1",
+          "weights": "a^power"
+        },
+        "selection": "union of every prior regional atom; identify shared prefix; retain every pair",
+        "version": "complete-regional-grams-v1"
+      },
+      "child_multiplier": "1",
+      "constant_vector": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "-1/2"
+      ],
+      "dimension": 14,
+      "formal_storage_scalar": "-2 X z^T K z",
+      "gamma_zero_scope": "necessary gate conditional on unchanged fixed-template scalar-growth assumptions",
+      "matrix_sharing": "one fixed K shared across every t and X",
+      "parent_multiplier": "-4",
+      "storage_matrix": "R=e_prefix e_prefix^T+K; K PSD",
+      "target_identity": "D-Delta(E)=nonnegative_proof_terms+Delta(S_K)",
+      "transport_kind": "signed_storage_increment",
+      "version": "anchored-full14-storage-v1"
+    },
+    "constant_vector": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2"
+    ],
+    "dimension": 15,
+    "missing_policy": "unknown after exact coefficient cancellation",
+    "new_floating_search": false,
+    "prefix_anchor_index": 1,
+    "selection": "prepend the constant unit to every complete regional and storage state; retain every pair",
+    "storage_increment": "child minus four parent; signed transport",
+    "version": "affine-anchored-unit-probe-v1"
+  },
+  "larger_cone_feasibility_proved": false,
+  "native_reconstruction_work": 0,
+  "no_new_floating_search": true,
+  "parallel": {
+    "max_jobs": 1,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 6442450944,
+    "timeout_seconds": 1200,
+    "worker_memory_bytes": 6442450944,
+    "workers": 1
+  },
+  "program": {
+    "C": 32,
+    "allow_constant_slack": true,
+    "claim": "critical",
+    "constraint": "zero_cubic",
+    "dictionary_mode": "extended",
+    "q": 6,
+    "target": "mu"
+  },
+  "scales": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "schema": 1,
+  "source_selection": "all unit pairs in all three complete anchored groups; no selection from signed response data",
+  "tests": [
+    "test_affine_storage_moment_probe",
+    "test_check_affine_storage_moment_probe"
+  ]
+}

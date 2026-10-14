@@ -1,0 +1,178 @@
+SIGNED FLOOR VECTOR NORM044: EXACT GLOBAL TAIL, GROWING-FAMILY CLAIMS OPEN
+
+This new backend accepts general signed floor/step vectors, including constant0
+auxiliary differences. It preserves every frozen043/older file and does not
+rerun their suites/studies. It certifies the complete continuous norm of each
+fixed vector; it proves neither growing-family convergence nor RH. Actual new
+programs must be frozen by root before observation. All owned development
+uses synthetic fixtures and exact analytic calibrations only.
+
+1. General constant and exact integer head
+
+The exact input schema is
+ {id:str,constant:canonical rational str,
+  coefficients:[{n:int,value:canonical nonzero rational str}],
+  steps:[{q:int,value:canonical nonzero rational str}]}.
+The floor and step lists are strictly sorted, distinct and always present.
+Constant may be positive,negative or0. Combined support is at most2048 and
+indices n,q lie in2..4096. Empty supports are allowed.
+
+On each complete cell(1/(k+1),1/k], k>=1, the vector is
+ e(k)=C-sum_n c_n*(k mod n)/n-sum_q d_q*1_(k>=q).
+Its continuous norm squared is sum_(k>=1)e(k)^2/[k(k+1)].
+Use D=lcm(denominators(C),denominators(c_n/n),denominators(d_q)),
+ w_n=c_n D/n, A=sum w_n, R(0)=C D.
+The exact event update is
+ R(k)-R(k-1)=-A+sum_(n|k)c_n D-sum_(q=k)d_q D.
+Periodic events occur at ALL multiples; step events occur exactly once.
+Every R(k) is an exact integer. The complete head1..H is summed at default
+Arb192bits as D^-2 sum R(k)^2/[k(k+1)], with all signs/cross terms retained.
+H must cover every step q. The universal EARLY bound used to check the prefix
+is |C|+sum|d_q|+sum|c_n|(n-1)/n, allowing nonzero early cells even if the
+tighter eventual-tail bound vanishes.
+
+2. Exact complete periodic energy beyond all steps
+
+After the steps activate, write C_tail=C-sum d_q. The floor residues are
+periodic. Their exact means are (n-1)/(2n), and their exact covariance is
+ G(m,n)=(gcd(m,n)^2-1)/(12mn).
+One elementary derivation conditions on r=k mod g, g=gcd(m,n). Over the
+common period, the remaining residues modulo m/g and n/g are independent by
+the Chinese remainder theorem. The conditional centered means are
+ (r-(g-1)/2)/m and (r-(g-1)/2)/n.
+The uniform variance of r=0,...,g-1 is(g^2-1)/12, proving G, including its
+diagonal and coprime-zero cases. No covariance sign is inferred numerically.
+
+The complete periodic mean square is exactly
+ V=(C_tail-sum c_n*(n-1)/(2n))^2+sum_(m,n)c_m*c_n*G(m,n).
+Every signed covariance is present, including identical reduced frequencies
+shared by different floors. Expanding each individual floor and separately
+summing its Fourier norms would incorrectly omit those shared-mode crosses.
+V instead represents the Parseval energy AFTER grouping identical frequencies.
+
+3. Jordan2 representation: signed sums before squares
+
+The exact divisor identity sum_(d|g)J2(d)=g^2 gives
+ gcd(m,n)^2-1=sum_(d|m,n,d>1)J2(d),
+ J2(d)=d^2*product_(p|d)(1-p^-2).
+Put t=2D(C-sum d_q)-sum_n w_n(n-1). Then
+ S=sum_(d=2..K)J2(d)*(sum_(n multiple of d)w_n)^2,
+ V=(3t^2+S)/(12D^2), K=max occupied floor index(default1 if empty).
+This is exactly the signed GCD quadratic form; cancellations occur inside
+each divisor sum BEFORE squaring. Neither absolute coefficients nor a sum of
+separate floor squares replaces those signed sums.
+
+JordanKernel caches one coefficient-free Jordan2 sieve through the largest
+requested K, at most4096, and reuses it for smaller K. The integer divisor
+sums and squares take O(K log K) arithmetic, with no quadratic pair table and
+no Fourier-mode expansion. Certificate rows include every d>=2 dividing at
+least one occupied floor index, in ascending order, INCLUDING a row when its
+signed weighted_sum cancels to0. Each row exposes exact J2 and weighted_sum.
+The mathematical pair_count is floor-support squared, not a claimed pair loop.
+An optional bounded GCDKernel helper exists only for independent small toy
+kernel checks; certify always uses the Jordan provider.
+
+4. Imported large sieve and its exact applicable constant
+
+Imported provider: H. L. Montgomery and R. C. Vaughan, "The large sieve",
+Mathematika20(1973),119-134, Theorem1(1.4) and matrix duality Lemma1.
+Primary author-hosted paper:
+ https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf
+DOI https://doi.org/10.1112/S0025579300004708
+The original theorem gives L+delta^-1 for L consecutive integer indices.
+Its dual form bounds the squared exponential sum over those indices by that
+constant times the coefficient energy. This is an imported classical theorem,
+not a detector discovery. The source was read directly before implementation.
+
+All grouped floor frequencies are rational with reduced denominator<=K,
+including the constant frequency0. Distinct circular frequencies therefore
+have separation>=1/K^2. Parseval identifies their coefficient energy with V.
+The dual theorem consequently gives, for ANY integer start and L>=1,
+ sum over that L-cell interval of e_tail(k)^2 <=(L+K^2)*V.
+For zero or a single occupied frequency, the elementary constant-sequence
+bound also implies this displayed bound, without needing a distinct-pair
+spacing definition. No frequency is omitted when it is present.
+The original1973 provider does NOT include the later minus-one sharpening;
+the certificate explicitly records that it is unused.
+
+5. Exact discrete weighted tail and the complete integral
+
+Let a=H+1, w(k)=1/[k(k+1)] and
+ T(L)=sum_(k=a..a+L-1)e(k)^2 <=(L+K^2)V.
+Summation by parts gives the finite weighted tail in terms of T(L) and positive
+differences w(a+L-1)-w(a+L). The endpoint tends0 because T(L)=O(L) and
+w(a+L)=O(L^-2). In the infinite limit,
+ sum_(L>=1)L*(w(a+L-1)-w(a+L))=sum_(k>=a)w(k)=1/a,
+ sum_(L>=1)(w(a+L-1)-w(a+L))=w(a)=1/[a(a+1)].
+Therefore the FULL unobserved continuous tail is bounded by
+ 0<=tail<=V*(1/a+K^2/[a(a+1)]).
+This is the exact primary-safe weighted formula, not the proposed sharper
+formula requiring L-1+K^2. It retains the complete infinite tail.
+
+The separately proved pointwise tail has
+ M=|C-sum d_q|+sum|c_n|*(n-1)/n,
+ tail<=M^2/a.
+The implementation computes both rational bounds EXACTLY and uses their
+minimum. Neither bound is inferred from an observed finite tail pattern.
+Arb encloses head+[0,min(pointwise bound,large-sieve bound)] for the entire
+continuous domain0<x<=1. A negative/zero/positive C is treated identically;
+no float norm or sign admission occurs.
+
+6. API and independent replay payload
+
+ certify(program,H=1048576,precision=192,meter=None,kernel=None)
+ kernel=JordanKernel() may be shared across frozen fixed-vector evaluations.
+ validate_program(program,meter=None)
+ integer_lattice(program,meter=None)
+ periodic_energy(lattice,meter=None,kernel=None)
+ head_from_lattice(lattice,H,precision=192,meter=None,kernel_bytes=0)
+
+Schema floor-signed-vector-norm-v1 exposes exact program,C,H,precision,lattice
+D/A/Rzero/weights/events/early bound,head enclosure,periodic mean/variance/V,
+all signed-pair scope,Jordan provider/rows/exact integer numerator/denominator,
+both exact rational tails,the selected minimum,imported theorem provenance and
+frequency spacing/weighted factor,whole norm enclosure and resource counts.
+Each interval has a65-digit readable ball and exact enclosing dyadic endpoints
+ [decimal integer mantissa,integer exponent], meaning mantissa*2^exponent.
+The analytic tail itself has exact rational lower0 and upper fields.
+Independent replay may check the Jordan terms or the complete ordered signed
+GCD sum without using any producer cache. Primary theorem applicability and
+all-real tail coverage are mathematical provider obligations, not midpoint
+observations. The metadata explicitly records no minus-one strengthening.
+
+General signed vectors are diagnostics/auxiliaries, NOT automatically RH
+bearing. A target using the floor zero-response bridge separately requires
+constant1 and steps=[]; constant0 auxiliaries and stepped forcing vectors
+have their own role and recovery debts. This norm primitive never claims
+source recovery,growing-support convergence,RH proved or RH refuted.
+
+7. Resource domains and focused development
+
+Input rationals have4096-bit cap; floor/step indices are2..4096; combined
+support<=2048; all exact lattice/energy/tail integers have8192-bit result cap.
+Products are preflighted and resource exhaustion raises. The mathematical
+fixed-vector bounds do not depend on a chosen finite exponent/root bank.
+H is integer0..8388608, with every step q<=H. Precision is128..4096bits.
+Meter defaults to1e9 operations and3600seconds; it charges validation/lattice,
+Jordan sieve/divisor scans,integer squares,all source-independent events and
+every head cell,with deadline checks after each event scan/every4096head cells.
+
+Estimated allocation reserves include the exact event-list pointer/int limbs,
+support metadata,Jordan sieve and divisor-certificate rows; allocations above
+15GiB are refused. Counts expose estimates rather than measured RSS. The
+Jordan cache is O(K) memory, not O(support^2). Root must allocate concurrent
+workers within its total16GiB plan; no actual array timing is presumed here.
+
+The sole focused owned invocation passed11 tests with0 failures/errors,
+1585611 charged operations,762 peak integer bits,2283776 estimated peak bytes,
+0.041165406990330666seconds. Receipt:
+ floor_residual_interval_044_development.json.
+Fixtures check general constant/negative/zero updates,exact rational heads,
+periodic mean-square over a full small period,Jordan/GCD equality,zero signed
+divisor rows,covariance calibrations,primary-safe block bound and weighted
+factor,complete-tail partial calibrations,constant/step exact norms,Jordan
+cache reuse,expanded support257,source-role flags and resource/schema guards.
+All checks are synthetic; no new actual recipe/norm/source data,prior study,
+old suite,frozen-file edit or hash occurred. Producer implementation stops
+after this pass; root owns new-program freeze,actual evaluation and independent
+admission.

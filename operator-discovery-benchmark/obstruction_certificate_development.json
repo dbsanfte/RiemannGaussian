@@ -1,0 +1,14 @@
+{
+  "operations": 1807,
+  "runs": [
+    {
+      "test": "test_obstruction_bound_certificates",
+      "returncode": 0,
+      "operations": 1807,
+      "tests": 11,
+      "runtime_seconds": 0.007,
+      "stdout": "SYNTHETIC_WORK module=test_obstruction_bound_certificates operations=1807\n",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.007s\n\nOK\n"
+    }
+  ]
+}

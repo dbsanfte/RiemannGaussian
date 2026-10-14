@@ -1,0 +1,12 @@
+{
+  "module": "fractional_cofactor_bounds.py",
+  "command": "../.venv/bin/python -B -m unittest -v test_fractional_cofactor_bounds",
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "unittest_elapsed_seconds": 0.001,
+  "synthetic_prime_profile_only": true,
+  "actual_source_exponent_search_before_freeze": false,
+  "old_studies_or_suites_rerun": false,
+  "hashes_created": false
+}

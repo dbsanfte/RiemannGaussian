@@ -1,0 +1,55 @@
+GRADED POLYNOMIAL FILTERS BEFORE TARGET SCORES
+
+Read-only analysis of cancellation_arithmetic_templates.py before outcomes.
+No frozen source edits or score queries. This concerns the declared dictionary,
+not all possible arithmetic operators or proof methods.
+
+For c, the new gcd_pair relation is degree4 plus degree2; its product/difference
+multipliers are quadratic. Hence these12 groups contain degree6 terms. No other
+current group has degree6: norm_core tops at4, prime_transport at4, old product
+squares at4, old gcd at4, and new signed-block squares at2. The quadratic target
+has no degree6. Therefore the aggregated degree6 coefficient vector of the new
+c gcd_pair groups must be EXACTLYzero. This is an unconditional formal matching
+constraint, not an estimate about actual c values.
+
+More specifically, for n>=2, the monomial x_n^4*x1^2 occurs only in the new
+gcd_pair product multiplier at a=b=n: g=n,u=v=1, so the degree6 part is
+ -x_n^2*x1^2*x_n^2. The difference multiplier vanishes at equal arguments.
+No other pair has that monomial: to have its gcd-coordinate support and four
+copies of n requires the equal pair; distinct coprime u,v cannot both supply n.
+Consequently its effective product-gcd coefficient
+ w_all,one+w_region,one + J_X(n)*(w_all,J+w_region,J)
+must vanish for every n>=2, with region=head or tail according to n<=2X.
+The dictionary uses overlapping all/head/tail groups, so this does not require
+every named weight individually0; all=head+tail produces exact redundancies.
+It does require the entire effective product-group combination to vanish on
+its full anchor domain. Several distinctJ values in each region can separate
+the constant andJ coefficients; at tiny scales some values may be absent.
+Allscale shared weights must satisfy every such constraint at arbitrarily
+largeX. This family therefore cannot contribute a genuinely nonzero product-
+gcd effect after formal cancellation in the present c dictionary.
+
+For difference-gcd groups the remaining degree6 block must also vanish, but
+index collisions can couple several pairs. Do not assert all weights vanish
+without exact analysis. A cheap generic compiler optimization is to build the
+highest-degree coefficient matrix first, compute its exact rational nullspace,
+and restrict the shared weights to that subspace. Then process degree4 and
+finally degree2/constants. These formal constraints are independent of actual
+response scores and can diagnose a representation gap before expensive fitting.
+They cannot substitute for nonnegative square weights or complete coefficient
+matching. For mu the gcd relation is quadratic, so these multipliers give
+quartics that can interact with norm/product-square columns; the c degree6
+argument does not transfer unchanged.
+
+The scalar module is unchanged when new squares have zero formalconstant and
+new relation multipliers are nonconstant. Gamma0 removes the positive/negative
+cubic norm obstruction for mu but leaves prime rowmass and norm discrepancy.
+Elementary Chebyshev bounds control prime sums only byO(X^3/logX), still
+supercritical; they do not identify a precise prime asymptotic signature or
+prove critical cancellation. A further exact filter can demand symbolic
+cancellation of the COMPLETE prime-local rowmass scalar function across
+shared groups, but that is an optional stronger search restriction, not a
+necessary theorem proved from Chebyshev. Coefficients can be constrained by
+exact overlapping-region/kernel equality rather than fitted prime responses.
+Any surviving template still needs BOTH allscale nonconstant identity and
+critical scalarbudget theorem, with no hidden RH-strength prime estimate.

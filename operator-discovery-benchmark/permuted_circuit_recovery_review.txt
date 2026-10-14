@@ -1,0 +1,373 @@
+Dyadic-permuted divisor circuits: independent recovery and signed review
+
+Scope
+Pure algebraic review of REVERSIBLE_CIRCUIT_DISCOVERY_HANDOFF.txt,
+dyadic_permutation_recovery_note.txt and fractional_circuit_majorant_note.txt,
+and the proposed general grammar, including the amended
+permuted_circuit_contract.txt shear primitive. No response artifacts, actual arithmetic
+source tables, tests, hashes or frozen files are inspected or modified. No
+cofinal signed moment estimate is claimed. This new memo alone is edited.
+
+The block bijections, finite inverses, separate-stage recovery bound and
+conditional H cost below are valid. Permutations enlarge arithmetic coordinate
+access but leave a precise DYADIC-BLOCK version of the fresh-prefix obstruction.
+For permutation/sign/divisor words the new potentially useful mechanism is a
+rearranged signed correlation with lower-block prefix coordinates, not removal
+of the full fresh-block energy. The amended shear primitive really does add
+fresh/fresh cross terms. Its retained complement and generic adjacent-prefix
+smoothness cancellations require the additional accounting in section9.
+
+1. Polynomial bijections and exact digit inverses
+For n>=1 write n=m+r, m=2^k, 0<=r<m. Fix integer coefficients and let
+ F(r)=b+a*r+sum_{j=2}^J c_j*r^j,
+with a odd and every c_j even. Then
+ F(x)-F(y)=(x-y)[a+sum_{j>=2}c_j sum_{l=0}^{j-1}x^{j-1-l}y^l].
+The bracket is odd. Therefore divisibility of F(x)-F(y) by2^k is equivalent
+to divisibility of x-y by2^k. The map r->F(r) mod2^k is injective, hence a
+bijection of the finite ring, for every k. The constant b does not affect
+this argument. These are sufficient conditions, not a classification of all
+permutation polynomials modulo powers of2.
+
+Given a target y mod2^k, start with r_0=0 modulo1. If r_j solves F(r_j)=y
+mod2^j, its two possible lifts are r_j and r_j+2^j. Their images differ by
+2^j modulo2^(j+1), because the displayed difference factor is odd. Exactly
+one is the next solution. Repeating through j=k-1 gives the unique inverse
+residue in[0,2^k). This is an exact finite algorithm, including the first
+binary digit; it needs no floating roots or enumeration of the whole block.
+For k=0 the sole residue is0 and the block map fixes1.
+
+2. Other maps, block branches and composition
+Xor by a k-bit mask is self-inverse. The mask must be in[0,2^k), or explicitly
+reduced to those k bits. Bit reversal on exactly k bits is self-inverse.
+Cyclic rotation by s positions has inverse rotation by -s modk, with the
+k=0 case explicitly the identity. These are finite bijections of each block.
+Any finite composition is bijective; undo its factors in reverse order.
+If U_pi f(n)=f(pi(n)), then U_pi^-1=U_{pi^-1}; function-composition order
+inside a pullback must be handled consistently by an implementation.
+
+Choose between two such maps using a fixed original-source phase evaluated
+at the BLOCK BASE m, with a specified unit-sign convention for a zero source.
+The chosen branch is then constant throughout that block, and the inverse
+uses the same choice and inverse branch map. Recompute that choice from the
+same original source and same base, never from current intermediate values.
+Choosing a branch separately at each n has no automatic bijection theorem:
+on a two-point block, choosing identity at its first point and swap at its
+second sends both points to the first. The constant-block branch condition
+prevents precisely this defect. A branch may vary between blocks; no source
+cancellation is required for this algebraic admission rule.
+
+3. Closed horizons and exact restriction
+H=2^K-1 contains complete blocks[2^k,2^(k+1)), k<K. Every admitted permutation
+and inverse preserves this set. Full divisor transforms and inverses use only
+coordinates n/d<=n and therefore also preserve it. Restricting a global fixed
+circuit and its inverse to this closed horizon is exact: every intermediate
+coordinate required for n<=H is retained. Coefficients and arithmetic phases
+still denote one fixed original source, not a horizon-dependent substitute.
+
+An arbitrary prefix cutoff is not closed under a block permutation. Clipping
+the mapped index, dropping out-of-range terms, or inserting a zero extension
+does not give the inverse of the intended restricted circuit. Load the complete
+enclosing block or reject the unclosed horizon. Closed horizons exhaust the
+positive integers and are sufficient for all monotone global H limits below.
+
+4. Weighted norm recovery without a fictitious divisor-path majorant
+Use H_{sigma,H}(f)=sum_{n<=H}|f(n)|^2/n^(2sigma+1), with its square-root norm.
+Within one block, n and pi(n) have ratio between1/2 and2. Changing variables
+in the finite sum shows
+ H_{sigma,H}(U_pi f)<=2^(2sigma+1)H_{sigma,H}(f),
+and the same holds for U_pi^-1. Thus the unsquared norm cost is
+2^(sigma+1/2). For sigma=1/2+epsilon, 0<epsilon<=1/2, it is <=sqrt(8)<3.
+Every complete dyadic unweighted moment is preserved EXACTLY by U_pi and its
+inverse. Arbitrary intervals and the reciprocal-power weights are not exact
+invariants of a generic permutation.
+
+For one divisor stage, the local coefficient bound
+ |a_{alpha,chi}(p^l)|<=(|alpha|)_l/l!
+gives |a(d)|<=d_|alpha|(d), including fractional negative alpha. The
+divisor-supported dilation has norm d^(-sigma-1/2), so independently
+ ||T_{alpha,chi}||, ||T_{-alpha,chi}||<=zeta(1+epsilon)^|alpha|.
+Unit signs have norm1 and are their own inverses. Multiply these SEPARATE
+stage norms for a circuit with P permutation occurrences and B=sum|alpha|:
+ ||O||, ||O^-1||<=3^P zeta(1+epsilon)^B
+                <=3^P(1+1/epsilon)^R, R=ceil(B).
+R=0 when B=0. Every inverse uses the same fixed coefficient source, with
+alpha negated, and reverses the entire stage order.
+
+The bound is sound even though a single d_B kernel on inputs n/d generally
+does NOT survive intervening permutations. A permutation changes the next
+integer to be divided and its divisor set. The old path identity that combines
+all divisors into one product denominator is unavailable. Separate operator
+norm multiplication needs no such identity. Squared H costs are
+9^P(1+1/epsilon)^(2R), not the unsquared factors.
+
+For a shear with coefficient c and fixed original-source phase, the additional
+stage norm and inverse cost is <=1+2|c|, as proved in section9. Define
+ V=product_over_shears(1+2|c|), with empty product1.
+The amended full bound is 3^P V(1+1/epsilon)^R, and the squared H bound is
+9^P V^2(1+1/epsilon)^(2R). No changed divisor-path argument is needed.
+
+5. Exact conditional cost and cofinal bridge
+Let rho=O M for ONE fixed circuit. Suppose for a given integer q>=2 a finite
+Cq>=0 satisfies, for EVERY dyadic X>=32,
+ E_rho(X)=X^-2 sum_{X<=n<2X}rho(n)^2<=Cq ceil(X^(1/q)).
+At sigma=1/2+1/q, a block contributes at most
+ X^(-2/q)E_rho(X)<=2Cq X^(-1/q)
+to H_sigma(rho). For t=1/q in(0,1], convexity of2^-t gives
+2^-t<=1-t/2, so
+ sum_{k>=5}2^(-k/q)<=1/(1-2^(-1/q))<=2q.
+Define the retained head h=sum_{1<=n<32}rho(n)^2/n^2, or use an explicitly
+larger nonnegative head. Its H_sigma contribution is <=h. Consequently
+ H_{1/2+1/q}(rho)<=h+4qCq,
+ H_{1/2+1/q}(M)<=9^P V^2(1+q)^(2R)(h+4qCq).
+For no shears V=1, giving the originally proposed cost exactly.
+The head belongs to this same fixed output and must not be omitted or silently
+replaced by a cheaper candidate's head. The displayed cost is conditional on
+the universal moment premise; a finite fitted constant is not such a Cq.
+
+If this premise holds for a cofinal/unbounded set of q, for every sigma>1/2
+choose q with1/q<sigma-1/2. Monotonicity in the weights then gives finite
+H_sigma(M). The reviewed step-extension/Mellin argument continues ordinary
+1/zeta holomorphically to Re(s)>1/2; the standard ordinary-zeta continuation
+and functional equation give RH. No ordinary Mobius-series convergence in
+that whole half-plane is assumed in this argument. Finite tested q and a
+scale-varying circuit do not establish the cofinal fixed-circuit premise.
+
+6. Permutation/sign/divisor subgrammar: complete signed kernels and obstruction
+For one stage the exact matrix kernels are
+ T(n,u)=1_{u|n}a(n/u),
+ U_pi(n,u)=1_{u=pi(n)}, S(n,u)=S(n)1_{u=n}.
+The full K_O(n,u) is the sum of products over all intermediate integer paths.
+Every coordinate stays inside the closed horizon. The complete moment is
+ X^-2 sum_{n in block}sum_{u,v}K_O(n,u)K_O(n,v)M(u)M(v).
+This is the valid full signed interaction formula after permutations; it
+includes their changed divisibility sets and all mixed input pairs.
+
+If n lies in[ m,2m), every PROPER divisor input n/d lies below m. Thus T is
+identity on its diagonal dyadic block plus a strictly lower-block matrix.
+Permutations and signs are block-diagonal monomial orthogonal matrices.
+Their arbitrary interleaving remains block lower triangular, with a signed
+permutation Q_m as its diagonal block. Exactly,
+ rho_[m,2m)=Q_m M_[m,2m)+G_m(M_<m),
+where G_m is linear in the lower-block PREFIX COORDINATES. Its coefficients
+may query the fixed original arithmetic source, including fresh source data;
+this is not a claim that G_m is computable from past source information alone.
+Once a path goes to a lower block it never returns to the original block.
+The unique same-block path uses the divisor1 at every T stage, which proves
+the signed-permutation diagonal assertion without approximation.
+
+Therefore the complete dyadic energy is exactly
+ E_rho(m)=E_M(m)+m^-2||G_m||^2+2m^-2<Q_m M_block,G_m>.
+Equivalently rho=Q_m[M_block+Q_m^-1 G_m] on this block. Nontrivial new prime
+and within-block coordinate pairings are available, but the full fresh-block
+energy remains with coefficient1. For any unrestricted input supported in
+this block and zero below it, the output on the block is just Q_m f_block
+and has precisely its original energy. No source-independent lower-block
+norm argument can turn that energy into a subpower estimate.
+
+On actual M the requisite arithmetic mechanism is a sufficiently negative
+FULL correlation. Specifically the moment gate would require
+ 2<Q_m M_block,G_m>
+ <=-||M_block||^2-||G_m||^2+m^2 Cq ceil(m^(1/q)).
+Merely proving that the cross term vanishes, or that G_m is small, provides
+no universal cancellation of E_M. This is an obstruction to an argument
+based only on reversibility/norms, not a refutation of an arithmetic proof
+using the actual source-dependent correlations.
+
+7. Exact commutators, conjugation and analytic aliases
+In the permutation/sign/divisor subgrammar, the basic interaction has the
+exact two-domain formula
+ [T,U_pi]f(n)
+ =sum_{d|n}a(d)f(pi(n/d))-sum_{e|pi(n)}a(e)f(pi(n)/e).
+The domains differ and neither unmatched divisor complement may be dropped.
+Conjugation gives
+ (U_pi^-1 T U_pi f)(n)
+ =sum_{d|pi^-1(n)}a(d)f(pi(pi^-1(n)/d)).
+This does change coordinate-level proper-divisor arithmetic, while every
+nonidentity term remains in a strictly lower DYADIC block. The commutator
+[T,U_pi] has zero diagonal block. A reversible group commutator, for example
+T^-1 U_pi^-1 T U_pi, has identity diagonal block and lower-block correction.
+These are genuine ways to alter the required correlation, not removal of
+the fresh-prefix term. A block permutation cannot anticommute with T as
+whole operators: their diagonal blocks would require Q=-Q, impossible for
+a nonzero unit permutation block.
+
+Adjacent inverse stages cancel exactly using the same fixed branch/source.
+Adjacent compatible permutation stages compose exactly; adjacent same-source
+T stages merge their exponents. Multiplicative phase folding retains its
+usual fixed-source qualifications. A TERMINAL permutation, or any terminal
+composition of permutations and unit signs, preserves every COMPLETE DYADIC
+moment. Such an output is an energy alias for that target. This is not a
+claim about non-dyadic diagnostic intervals or exact weighted H/head equality.
+Removing a terminal permutation may also change a conservative recovery cost;
+that change is not new signed arithmetic cancellation.
+
+8. Involutions, interval complements and a proved padding rule
+For a block involution pi, U_pi is a self-adjoint orthogonal involution on
+the unweighted block. Its projections
+ P_plus=(I+U_pi)/2, P_minus=(I-U_pi)/2
+satisfy ||f||^2=||P_plus f||^2+||P_minus f||^2. The antisymmetric channel
+may cancel invariant data, but it has a kernel. Retaining only it loses the
+target; retaining the complementary symmetric channel preserves the entire
+energy and its unresolved cost. The algebra alone supplies no anti-invariance
+identity for actual M. A conjugated divisor cancellation rule must retain
+these complements if it uses such a projection inside a proposed proof.
+
+For every permutation acting DIRECTLY on actual M there is the exact interval
+identity
+ delta_pi(n)=M(pi(n))-M(n)
+            =signed sum of mu(j) between n and pi(n),
+with both interval endpoints specified by the usual prefix difference.
+Thus |delta_pi(n)|<=|pi(n)-n|. If
+ L(X)=max_{X<=n<2X}|pi(n)-n|,
+then E_delta_pi(X)<=L(X)^2/X, unconditionally. In particular a directly
+applied fixed low-bit xor, or a near-identity family with
+L(X)<=C_eta X^(1/2+eta) for every eta>0, adds an unconditionally subpower
+padding channel. This is a useful mechanism classifier, not an estimate for
+the full prefix M. If such a channel is followed by a fixed admitted circuit,
+its H_sigma finiteness survives by the proved stage bounds.
+The rule cannot be transferred blindly to interior permutations acting on
+T M or S M: those sequences need not have increments bounded by1.
+
+Conversely, large polynomial/bit displacements replace the prefix coordinate
+by a potentially large signed interval sum. A residue polynomial identity
+is not an identity for mu or M. Even the affine map r->p*r mod m sends the
+original integer to
+ m+(p*r mod m)=p(m+r)-m[p-1+floor(p*r/m)],
+so the prime-multiple law mu(pu)=-mu(u)1_{p does not divide u} does not apply
+without its entire wrap/translation complement. A polynomial permutation
+does not preserve squarefreeness just because it is a ring bijection.
+No unconditional cancellation for these signed interval complements or the
+full lower-block correlation is proved here.
+
+9. Amended shear primitive: inverse, full cross terms and smoothness classifier
+For each even n>=2 let the pair be(n,n+1), let t=c*phi(n), and let
+phi(n) be a unit sign evaluated from the SAME original source at the even
+index. Every such pair lies inside one complete dyadic block; n=1 is unchanged.
+The even_from_odd matrix on(u,v) is [[1,t],[0,1]], and odd_from_even is
+[[1,0],[t,1]]. In either case the off-diagonal part N has N^2=0. Hence
+(I+N)^-1=I-N: negate c, keep direction and the same fixed phase. Both original
+coordinates remain; there is no discarded difference complement. Computing
+the target from current pair values is safe only if the untouched source
+coordinate and the original-source phase remain unchanged during the stage.
+
+On H_sigma, the even_from_odd off-diagonal norm is at most
+ |c|*((n+1)/n)^(sigma+1/2)
+ <=|c|*(3/2)^(1+epsilon)<2|c|,
+uniformly for0<epsilon<=1/2. The other direction costs at most |c|.
+Triangle inequality gives <=1+2|c| for each shear and inverse. The sign of
+c and its rational denominator do not affect the theorem. Its specified
+finite rational bounds belong to the grammar, not to a needed cancellation
+assumption. Adjacent same-direction/same-phase shears merge by adding c,
+because their shared N squares to zero. An adjacent inverse pair cancels.
+
+The exact unweighted pair energies, with both coordinates retained, are
+ even_from_odd: (u+t*v)^2+v^2
+              =u^2+v^2+c^2*v^2+2c*phi(n)*u*v;
+ odd_from_even: u^2+(v+t*u)^2
+              =u^2+v^2+c^2*u^2+2c*phi(n)*u*v.
+This is a genuine fresh/fresh signed cross term, paid for by the positive
+c^2 complement. Negative correlation cannot be counted without that cost.
+Conjugating a shear by a block permutation U_pi^-1 A U_pi makes its pair
+coordinates pi(n),pi(n+1), with the phase still evaluated at the ORIGINAL
+even n as dictated by the conjugated stages. Those coordinates need not be
+adjacent in arithmetic order. This can expose different within-block signed
+interval correlations. It is not an identity identifying their source values.
+
+There is an especially important unconditional classifier for a shear acting
+DIRECTLY on adjacent actual M. Put x=M(n), y=M(n+1), w=mu(n+1), so y=x+w
+and |w|<=1. With t=c*phi(n), define kappa(t)=1+t+t^2/2.
+The even_from_odd pair has the EXACT identity
+ (x+t*y)^2+y^2
+ =kappa(t)*(x^2+y^2)+c^2*y*w-(t+c^2/2)*w^2.
+The odd_from_even pair similarly equals
+ kappa(t)*(x^2+y^2)-c^2*x*w-(t+c^2/2)*w^2.
+No probabilistic source premise is used. Since |x|,|y|<2X on the dyadic
+block and there are X/2 pairs, the total remainder divided by X^2 is bounded
+in absolute value by
+ c^2+(|c|+c^2/2)/(2X).
+Thus it is O_c(1), uniformly over every scale and every unit-phase choice.
+Also kappa(t)=((t+1)^2+1)/2>=1/2, so
+ E_shear(X)>=E_M(X)/2-O_c(1).
+The retained full pair energy cannot become a subpower observer here without
+the original E_M itself becoming subpower.
+
+If phi is a constant sign, more precisely
+ E_shear(X)=kappa(c*phi)E_M(X)+O_c(1).
+For c=-1, phi=+1, the changed coordinate is M(n)-M(n+1)=-mu(n+1), but the
+unchanged coordinate is M(n+1). The full energy is E_M/2+O(1), rather than
+just the bounded difference energy. This same leading cancellation holds
+for ANY prefix with bounded source increments, including coherent controls.
+It is smoothness cancellation, not evidence of an actual-prime mechanism.
+For a nonconstant phase, the leading term is the complete positive pair
+energy weighted by kappa(c*phi); it still has the uniform lower bound1/2.
+The phase-dependent improvement requires correlation with prefix energy,
+and is not supplied by the bounded-increment identity alone.
+
+These classifiers do not automatically apply to interior shears on T M or
+S M, which need not have bounded adjacent increments. Nor does their adjacent
+version apply after a permutation has separated the two arithmetic indices.
+There the exact complementary pair energy and interval-source relation must
+be analyzed anew, retaining every translated/wrapped source complement.
+
+With shears included, the whole circuit is still dyadic-block lower triangular,
+but its diagonal Q_m is now an INVERTIBLE same-block matrix, not necessarily
+a signed permutation. Thus section6's coefficient1 fresh-energy identity is
+specific to its stated subgrammar and must not be applied to shear words.
+The general exact identity is instead
+ rho_block=Q_m M_block+G_m(M_<m),
+ E_rho=m^-2[||Q_m M_block||^2+||G_m||^2
+             +2<Q_m M_block,G_m>].
+All fresh/fresh cross terms reside in ||Q_m M_block||^2 and must remain.
+On the unweighted block, every shear and its inverse has norm<=1+|c|;
+signs and permutations have norm1. If V0=product(1+|c|), then
+ V0^-1||f_block||<=||Q_m f_block||<=V0||f_block||.
+Consequently for inputs zero in lower blocks, the entire fresh-block energy
+remains at least V0^-2 E_f. Shears remove the monomial-diagonal restriction,
+but a fixed finite uniformly invertible word still has no input-independent
+subpower estimate for arbitrary coherent fresh blocks. An actual-source
+proof would need negative fresh/fresh correlations plus their positive
+complements, and any additional lower-block cross credit, or a complete
+moment bound using other source-specific information.
+
+Each shear has determinant1; signs and permutations have determinant of
+absolute value1. Hence |det Q_m|=1. A uniform strict contraction of every
+fresh-block direction is impossible; any contracted directions must have
+compensating expansion elsewhere. A source-specific alignment with those
+directions could still matter, but the adjacent-prefix identity shows one
+large alignment shared by all bounded-increment controls. Repeating lifting
+or differencing through an unbounded number of scale-dependent stages is
+not covered by the FIXED finite-word cost. Replacing all M coordinates by
+their bounded adjacent differences without their coarse complement would
+need an unbounded prefix-sum inverse, rather than the stated certificate.
+
+10. Consequences for the proposed structural study
+The block inverse/circuit recovery certificate is sound with the domain,
+source-binding, shear-factor and head qualifications above. A different
+prime-coordinate obstruction has been removed. The permutation-only dyadic
+fresh-energy identity and the amended invertible-block/shear cross identities
+supply exact accounting rules for candidate proof attempts. State which signed
+lower-block or fresh/fresh correlation a structural rearrangement exposes.
+Classify terminal energy aliases, exact inverse/merge aliases, directly
+applied bounded-displacement padding and adjacent-prefix smoothness shears
+before interpreting finite improvements. The amended contract's normalizer
+uses exact permitted inverse/merge rules; terminal-permutation removal is
+explicitly an alias of complete dyadic moments and not irregular diagnostics.
+
+A meaningful all-scale advance would prove a complete correlation/compensation
+identity, or a source-specific estimate strong enough to pay all squared
+complements and retained fresh energy. An involution's antisymmetric channel
+must not be used without its symmetric complement. Nontriangular coordinate
+access and reversible fresh/fresh mixing are real new grammar abilities,
+but do not by themselves supply a signed moment bound. No favorite
+permutation, numerical result, optimization backend or unproved Mertens/RH
+premise is used in this review.
+
+Final status
+Proved here: all stated block bijections and exact inverses; closed-horizon
+restriction; separate-stage norm recovery and conditional H cost; complete
+path, commutator and dyadic fresh-energy identities; shear inverses and norm
+costs; exact complementary pair/cross identities and direct-prefix smoothness
+classification; exact aliases; projection complements and the direct-prefix
+bounded-displacement estimate. Unproved:
+the cofinal full transformed moment for any newly generated actual-Mobius
+circuit. Reviewer numerical/test/research work is zero. Frozen files unchanged.

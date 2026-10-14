@@ -1,0 +1,49 @@
+Independent finite residual-pairing checker
+=========================================
+Only new residual files were created; frozen075/076 source, reviews and tests
+were preserved. No producer import, scientific source query, old-suite run,
+hash or delegation is used. Exact rational parsing and bounded operations are
+reused solely from the frozen independent073 checker. Reconstruction is new.
+
+verify_fold(before,after,p,prior_primes=()) admits exact symbolic sparse maps
+{positive integer n:{token label:canonical rational coefficient}}, omitting
+zeros and empty support rows. The checker trial-divides p and prior primes,
+requires distinct primes<=100000, support1..16000003, and the retained coprime
+before-domain. Its reconstruction treats v_p=0 with plus sign, v_p=1 by moving
+n to n/p with minus sign, and v_p>=2 as a mu-zero term. Every moved boundary
+term is compared, including the unit. Token labels are formal real labels;
+token independence is never assumed. Prior retained primes remain excluded.
+
+verify_stencil(components,coefficients) admits components exactly
+{'parent':nonnegative integer,'weight':symbolic polynomial}. It independently
+reconstructs every integer prefix coefficient through horizon max(parent//4)
+using +M(parent//8)-M(parent//10)-M(parent//4)+M(parent//5). Duplicate components,
+negative/fractional token coefficients, empty stencils, cancellation and units
+are retained literally. Both identity APIs return VERIFIED_IDENTITY or INVALID,
+counts, optional first exact mismatch, ops and peak_bytes.
+
+bound_coefficients(coefficients,token_intervals) takes canonical rational
+ordered interval pairs for real tokens. It computes the complete signed linear
+polynomial interval at each support point, then sums the maximum endpoint
+absolute values. Result VERIFIED_BOUND includes exact rational string bound,
+coefficient_intervals keyed integer, whole_supplied_domain=True and the
+assumption |mu(n)|<=1. Every used token needs an interval; unused valid intervals
+are harmless. Zero intervals and dependent/shared tokens are permitted. This
+certifies a finite constructive absolute bound without fitting numerical mu.
+It asserts no monotonic l2 behavior, sign-cancellation theorem or power law.
+
+Every output says finite_identity_only=True, uniform_bound_proved=False and
+RH_proved=False. Prospective sparse expansion, rational-intermediate/decimal
+witness, support and prime-domain allocations are gated before reconstruction
+under4GiB. Sparse input and planned output terms are limited to200000; the
+conservative worst-case memory gate can reject fewer terms. The complete
+prefix checker can safely reject large cancellation-heavy stencils rather
+than allocating an unchecked expansion. Default work cap3e11 and frozen
+4096-bit input/100000-bit intermediate arithmetic restrictions remain active.
+
+Eight distinct tests pass;10 successful executions over2 retained attempts.
+Tests cover generic finite mu identity, p-square gates, signs, units, dropped
+boundaries, composite/repeated primes, retained-domain violations, canonical
+coefficients, interval completeness/zero intervals and prospective rejection
+with reconstruction mocked to prohibit any attempted expansion. Receipt
+final status PASS. These are finite algebra/admission tests only.

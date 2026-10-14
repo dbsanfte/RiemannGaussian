@@ -1,0 +1,401 @@
+COMPLETE PREFIX BOUNDS AND PAID CENTERED CUTOFF TRANSFER
+
+Status: affine normalization, generic complete pair/cube prefix inequalities,
+finite-factor/head bounds, and a full centered PHYSICAL-BLOCK transfer to a
+shorter finite cube are proved below. These rules are supplied analytically;
+the detector can search their identities, cutoffs and proof costs. They do
+not prove the remaining signed finite-cube bound, the fixed-U global low
+Mellin target, the whole original core, or RH. No tests, source observations,
+experiments, hashes or earlier/frozen-file edits were made.
+
+Input scope: CORE_CONVOLUTION_ARGUMENT_SEARCH_HANDOFF.txt and its accepted
+031 report. The selected geometry had priced only its periodic branch.
+Every result here prices a declared complete expression or identifies the
+exact unpaid complement; no inexpensive branch is called a complete proof.
+All multiplication between coefficient states is Dirichlet convolution.
+
+1. Actual E coordinates: remove artificial unit costs exactly
+
+Fix integer U>=1. A(n)=mu(n)1_(n<=U), c=sum_(d<=U)mu(d)/d and
+ E=delta-One*A+c One.
+When a state is evaluated at a complex s or at theta below, its notation
+means its Dirichlet series/polynomial value, not an integer coefficient.
+In particular A(s)|_(s=1)=c while the unit coefficient A(n=1)=1.
+The complete actual identities are
+ |c|<=2, E(n)=c for 1<=n<=U,
+ |E(n)|<=3d2(n), |P_E(x)|<=2U for every real x>0.     (1.1)
+P denotes the complete prefix, with P(x)=0 below1. For integer n>=1,
+P_E(n)=1+sum_(d<=U)mu(d){n/d}; thus its bound includes the unit. The
+coefficient bound is |c| at n=1 and <=|c|+d2(n) for n>1. The head identity
+uses the FULL inverse mu*One=delta on n<=U, not partial-prime identities.
+For completeness, dividing sum_(d<=U)mu(d)floor(U/d)=1 by U yields
+|c|<=1/U+1<=2. No source table or cancellation hypothesis is required.
+
+Write C=1+(M(U)-c)/2, e=E-C delta. For fixed t,r>=1, let
+ T=E 1_[1,t], R=E 1_[1,r], t_e=e 1_[1,t], r_e=e 1_[1,r].
+EXACTLY T=t_e+C delta and R=r_e+C delta. Every fixed truncation of E
+inherits BOTH bounds in (1.1), with the same B=2U,K=3. In particular
+there is no O(U) unit coefficient in T or R: their unit is c. The large
+unit c-C in e must cancel algebraically before applying a coefficient norm.
+
+The previously selected identity has h=3C^2 delta+6C t_e+3t_e^2=3T^2.
+Its entire expression normalizes to
+ E^3=3T^2*E+R^3-3R*T^2=R^3+3T^2*(E-R), n<=N.       (1.2)
+Sufficient, checkable premises are t<=r and
+ (r+1)^2>N, (r+1)(t+1)>N.                            (1.3)
+Proof: write J=E-R and V=R-T. In E^3-R^3-3T^2J, every term has either
+two factors J or a factor J*V. Their minimum indices exceed N by (1.3).
+This is a coefficient identity on 1..N, not a global Dirichlet-series
+identity. Conversely the discarded support ideals can be generated and
+tested before solving for the coefficient3, rather than nominating it.
+
+2. Generic complete-prefix providers with rational constants
+
+Let f be any real/complex sequence, B,K>=0, with
+ |P_f(x)|<=B, |f(n)|<=K d2(n), all x>0,n>=1.         (2.1)
+Use Lambda(x)=1+ln(max(1,x)). The elementary mass rules, for x>=1, are
+ sum_(n<=x)d2(n)<=x Lambda(x),
+ sum_(n<=x)d2(n)n^(-rho)<=x^(1-rho)Lambda(x)/(1-rho), 0<=rho<1.
+They follow from divisor counting and Stieltjes summation. In particular
+the rho=1/2 constant is2. No unspecified n^epsilon constant is introduced.
+
+Complete hyperbola identities, with a=floor(sqrt x), b=floor(x^(1/3)), give
+ P_(f^2)(x)=2 sum_(d<=a)f(d)P_f(x/d)-P_f(a)^2,
+ P_(f^3)(x)=3 sum_(d<=b)f(d)P_(f^2)(x/d)
+             -3 sum_(d,e<=b)f(d)f(e)P_f(x/(de))+P_f(b)^3.
+All prefixes use floors and the entire history. Rectangles a^2<=x and
+b^3<=x justify the displayed intersections; no reciprocal tail is omitted.
+Applying (2.1) and the mass rules proves, for ALL real x>=1,
+ |P_(f^2)(x)|<=2BK x^(1/2)Lambda(x)+B^2,              (2.2)
+ |P_(f^3)(x)|<=15BK^2 x^(2/3)Lambda(x)^2
+                     +3B^2K x^(1/3)Lambda(x)+B^3.    (2.3)
+Proof of15: the first cube term uses (2.2) and weighted mass at1/2,
+giving12BK^2 x^(2/3)Lambda^2+3B^2K x^(1/3)Lambda. The second term adds
+3BK^2 x^(2/3)Lambda^2; the finite rectangle contributes B^3. The rules
+hold without a condition x>=U or x>=U^m. Below1 every raw prefix is0.
+
+For three different sequences with parameters B_i,K_i, the same proof gives
+ 5 sum_i[B_i product_(j!=i)K_j] x^(2/3)Lambda^2
+ +sum_i[K_i product_(j!=i)B_j] x^(1/3)Lambda
+ +product_i B_i.                                    (2.4)
+For two sequences it gives (B_2K_1+B_1K_2)sqrt x Lambda+B_1B_2.
+Thus mixed full/truncated factors are typed inputs, not assumptions that
+the full target bound has already been proved. Higher integer degrees can
+be searched by complete inclusion-exclusion and prior certified degrees;
+every resulting weighted mass and rectangle retains its exact domain.
+
+In particular E, T or R independently satisfy
+ |P_(E^3)(x)|, |P_(T^3)(x)|, |P_(R^3)(x)|
+ <=270U x^(2/3)Lambda^2+36U^2 x^(1/3)Lambda+8U^3.     (2.5)
+The R^3 result is proved from the generic rule, not inferred cyclically
+from the unknown full E^3 estimate. Its finite product condition remains
+inside the prefix; it is not P_E(r)^3 unless x>=r^3.
+
+3. Finite convolution, complete rectangles and source shorthead
+
+A prefix-power bound sum_j C_j x^(rho_j)Lambda^ell_j, 0<=rho_j<1,
+lifts through a finite signed h by replacing C_j with
+ C_j sum_d |h(d)|d^(-rho_j).
+Terms with d>x have raw prefix0; they are never requested from a periodic
+extension. For h=A^p, the weighted mass is at most
+ [U^(1-rho)/(1-rho)]^p.                              (3.1)
+For T^a it is at most
+ [K t^(1-rho)Lambda(t)/(1-rho)]^a.                   (3.2)
+These factorized positive majorants may beat the alternative coefficient
+bound K^a d_(2a), support t^a. Both are valid searched proof routes.
+
+A separate finite centered-K provider is useful. For every real y>0,
+ |sum_(k<=y)k^(theta-1)-y^theta/theta|<=1/theta,
+0<theta<1. For y<1 this is immediate; for y>=1 the decreasing-function
+integral bounds from1 to floor(y) and floor(y)+1 give the inequality.
+Thus a finite signed v has COMPLETE centered prefix bounded by
+ ||v||1/theta, with its full ordinary moment and all terms d>x retained
+through the continuous main. This can pay genuine finite mean/head states
+without pretending that they vanished in an affine change of coordinates.
+
+For actual p=2, (2.5),(3.1) give ALL x>=1
+ |P_(A^2 E^3)(x)|
+ <=2430 U^(5/3)x^(2/3)Lambda^2
+    +81 U^(10/3)x^(1/3)Lambda+8U^5.                 (3.3)
+The same rule pays the R^3 prefix without claiming it is small enough.
+A direct unsigned coefficient rule competes with it: |A^2 E^3|<=27d8,
+so its prefix mass is <=27x Lambda^7. Choosing between bounds is search,
+not source-specific cancellation. Their mixed terms may remain signed.
+
+Exact rectangles are another competing rule. If h_i is cutoff at d_i,
+then P_(product h_i)(x)=product P_(h_i)(d_i) ONLY IF product d_i<=x.
+A certificate product d_i<=N does not license this at an earlier parent
+or child x<N. If the condition fails, the product<=x indicator remains.
+For example |P_(R*T^2)(x)|<=B[K t Lambda(t)]^2 is a valid finite-factor
+lift for every x, while P_R(r)P_T(t)^2 is generally not the prefix.
+
+Actual source binding gives on coefficients n<=U
+ A^p E^3=c^3 One^(3-p), for integers 0<=p<=3.        (3.4)
+The declared head subtraction is c^3 D_(3-p),U, the COMPLETE restriction
+of that divisor state through U, including its unit. For p=2 it is c^3
+One_U. Thus the head-corrected source vanishes on n<=U. For p>3 the
+typed inverse-divisor state must be defined; never interpret a negative
+divisor degree informally. Every geometry must preserve (3.4) before
+separately taking magnitudes. Convolving the finite head with K and its
+main compensation is still part of the source expression. For l=3-p>=1
+its centered prefix costs at most (8/theta)U(1+ln U)^(l-1); for l=0
+it costs8/theta. These are explicit all-scale finite-head providers,
+not replacements for the full core.
+
+4. The inexpensive branch after normalization; the full head still exists
+
+For a periodic-branch representation of (1.2), h=3A^2*T^2 has
+ |h|<=27d6, support<=U^2t^2.
+Review031 floor elimination gives v=h*A-c h with
+ |v|<=81d7, support<=H=U^3t^2, harmonic null exact.
+Therefore its periodic variance is bounded by
+ [81^2 R_14/12] H(1+ln H)^48,
+R_j=j!sum_(i=0)^j1/i!. The normalized complete window costs for
+U<=N^lambda,t<=N^alpha, window length<=N, are powers
+ 3lambda+2alpha-1 and 9lambda+6alpha-2,
+with the respective logarithms48 and49 and explicit conversion constants.
+At lambda=1/24,alpha=1/6 these are -13/24 and -5/8.
+Physical shorthead -(1-C)sum_(d>n)h(d) still exists until the physical
+window is certified above U^2t^2. Normalization does not erase it.
+
+The E-coordinate finite term is k=A^2*(R^3-3R*T^2), with safe envelope
+108d8. IMPORTANT: if the proof route uses e and the periodic covariance,
+then h*E=h*e+C h, so its COMPLETE finite term is k+C h, not merely k.
+The exact C h and its main/cross must stay in that route. Its crude C
+bound is still O(U); affine coefficient normalization does not license
+deletion of a genuine period mean. An E-prefix route instead bounds h*E
+directly using B and never separates the C h branch.
+The finite states may also be priced by (2.4),(3.1),(3.2).
+All crosses remain unless a justified triangle rule pays them. A very
+small bound for h*e alone cannot establish the full expression. The next
+section gives a DIFFERENT route which keeps the whole finite R^3 target
+and pays its difference from the original centered component exactly.
+
+The period mean is affordable at the selected physical scales IF it is
+paid rather than erased: for general p,
+||3A^p T^2||1<=27U^p t^2 Lambda(t)^2 and |C|<=5U/2. The finite-K
+provider bounds the centered C h prefix by
+ [135/(2theta)]U^(p+1)t^2 Lambda(t)^2.
+Its energy exponent is2lambda(p+1)+4alpha-1; at p=2,lambda=1/24,
+alpha=1/6 this is -1/12. This leaves the joined R^3/RT^2 head untouched.
+
+5. A generic tail rule with its COMPLETE infinite moment
+
+Let 0<theta<1 rational, u=1-theta, K_theta(n)=n^(theta-1),
+J_theta(n)=n^theta-(n-1)^theta. Fix r>=1 and J=E-R.
+Then J has support>r and |P_J(x)|<=4U for all real x>0.
+Abel summation proves ordinary convergence and the explicit tail bound
+ m_J(theta)=sum_(d>r)E(d)d^(-theta),
+ |m_J(theta)|<=4U r^(-theta).                        (5.1)
+The boundary -P_E(r)r^(-theta) and the COMPLETE integral from r to infinity
+are included. No numerically evaluated zeta value or missing tail is used.
+
+Define, for EVERY real x>0,
+ S_J(x)=P_(K_theta*J)(x)-m_J(theta)x^theta/theta.
+This has a CONTINUOUS main term, while its raw prefix is the usual integer
+staircase. For x<1 the raw prefix is0 and the main term remains. Support
+and prefix bounds give
+ |P_(K_theta*J)(x)|<=4U sum_(k<=x/r)k^(theta-1)
+                  <=(4U/theta)(x/r)^theta,
+ |S_J(x)|<=(8U/theta)(x/r)^theta, ALL x>0.            (5.2)
+The empty sum for x/r<1 causes no exception; (5.1) pays the remaining
+main. This all-real domain is essential when a finite outer d exceeds n.
+
+Finite h has an ordinary theta-moment, and h*J also has an ordinary moment
+because its full prefix is a finite sum of bounded prefixes of J. Exactly
+ S_(h*J)(x)=sum_d h(d) S_J(x/d).
+This identity uses CONTINUOUS inner main terms. It is not a claim that
+convolving h with the discretely centered coefficient replaces h*J_theta
+by h(theta)J_theta. At integer n that separate route has the literal
+floor compensator sum_d h(d)floor(n/d)^theta, and its difference from
+h(theta)n^theta must be retained. The continuous-main proof accounts
+for that discrepancy through every inner n/d, including n/d<1.
+For h=3A^p*T^2, (3.1),(3.2),(5.2) prove
+ |S_(h*J)(x)|<=C1 U^[1+pu] t^(2u) x^theta r^(-theta)Lambda(t)^2,
+ C1=216/[theta u^(p+2)].                             (5.3)
+No finite d>x is deleted from the centered lift; its continuous main
+supplies the correct contribution. For p=2,theta=2/3, C1=26244.
+
+6. Full analytic centering: exact join and paid moment discrepancy
+
+The local coefficient identity cannot be evaluated at theta as if it
+were a global series equality. Here is the full correction.
+
+Actual E has bounded prefix, hence its ordinary series converges and is
+holomorphic on Re(s)>0. Initially Re(s)>1 it equals
+ 1+zeta(s)[c-A(s)]; the pole at1 is canceled EXACTLY by A(1)=c.
+By agreement and analytic continuation this formula gives E(theta) as
+the ordinary moment of E. From E(n)=c on n<=U and (5.1) at r=U,
+ |E(theta)|<=[2/u+4]U^u.                             (6.1)
+If t>=U and r>=t, put M=2/u+8. Then
+ |T(theta)|,|R(theta)|,|E(theta)|<=M U^u,
+ |E(theta)-T(theta)|<=4U t^(-theta),
+ |R(theta)-T(theta)|<=8U t^(-theta).                 (6.2)
+
+Let d_head=D_(3-p),U when that source head is declared. Define the complete
+component and finite replacement, with the SAME head,
+ F=A^p*E^3-c^3 d_head, F_R=A^p*R^3-c^3 d_head.
+The analytic main coefficients are
+ m_F=A(theta)^p E(theta)^3-c^3 d_head(theta),
+ m_R=A(theta)^p R(theta)^3-c^3 d_head(theta).
+The second is an ordinary finite moment. The first is an ANALYTIC residue
+coefficient; ordinary convergence of the E^3 coefficient sum at theta is
+NOT inferred from ordinary convergence of the single E series. At the
+current theta=2/3 the elementary cube prefix exponent equals theta, so
+these providers alone do not certify that ordinary convergence.
+
+On x<=N, after convolution with K_theta, (1.2) preserves every coefficient
+needed by the raw prefix. With h=3A^p*T^2, the EXACT centered join is
+ S_F(x)=S_R(x)+S_(h*J)(x)-Delta_m x^theta/theta,
+ Delta_m=m_F-m_R-h(theta)J(theta)
+        =A(theta)^p J(theta)[E(theta)^2+E(theta)R(theta)
+                             +R(theta)^2-3T(theta)^2].               (6.3)
+The finite head cancels in the difference but remains in BOTH components.
+This formula neither omits h(theta)J(theta) nor subtracts it twice.
+
+Use
+ E^2+ER+R^2-3T^2=(E-T)(E+T)+(R-T)(R+T)
+                         +(E-T)R+T(R-T)
+at the scalar theta-values. Equations (6.2) bound this bracket by
+36M U^(1+u)t^(-theta). Also |A(theta)|<=U^u/u.
+Consequently the complete residual centering drift satisfies
+ |Delta_m x^theta/theta|
+ <=C2 U^[2+(p+1)u] x^theta (rt)^(-theta),
+ C2=144M/[theta u^p].                                (6.4)
+For p=2,theta=2/3, M=14 and C2=27216. This is stronger than separately
+paying m_F-m_R and h(theta)J(theta), and is still a simple triangle proof
+after the exact algebraic cancellation. No actual-prime correlation estimate
+or target norm is used to pay it.
+
+7. Exact rational cutoff and physical-energy certificates
+
+Use ONE integer horizon N for both parent and child, normally N=4X-1.
+Choose rational lambda,alpha,beta with 0<=lambda<=alpha<=beta<1, and
+ U integer,1<=U<=N^lambda,
+ t=floor(N^alpha), r=floor(N^beta).
+The actual integers MUST pass (1.3); exponents alone do not replace strict
+floor support tests. The exact floor inequalities imply t>=U. They also
+give r>=N^beta/2 and t>=N^alpha/2, even at the smallest horizon.
+The selected alpha=1/6,beta=5/6 has alpha+beta=1 and beta>=1/2, so
+(t+1)(r+1)>N and (r+1)^2>N automatically, including perfect powers.
+
+For an integer-block energy E_H(X)=X^(-2)sum_(n=X)^(2X-1)|S_H(n)|^2,
+the two difference components in (6.3) have the rational exponent costs
+ e1=2lambda[1+p(1-theta)]+4(1-theta)alpha
+                                      +2theta-1-2theta beta,
+ e2=2lambda[2+(p+1)(1-theta)]+2theta-1
+                                      -2theta(alpha+beta).           (7.1)
+No powers of a negative remainder are taken. Constants in (5.3),(6.4)
+are rational once p and theta are supplied.
+
+For N=4X-1, n<=N and N/X<=4. Because theta<1,
+ r^(-2theta)<=4N^(-2theta beta),
+ (rt)^(-2theta)<=16N^(-2theta(alpha+beta)).
+Thus the component energies are at most
+ 16 C1^2 N^e1(1+ln N)^4 and 64 C2^2 N^e2.            (7.2)
+Triangle adds twice each to bound the energy of S_F-S_R. Full recovery,
+in either direction, can use
+ E_F<=2E_R+64 C1^2 N^e1(1+ln N)^4+256 C2^2 N^e2,
+and the identical inequality with F,R interchanged.                    (7.3)
+An arbitrary rational Young parameter gives a competing constant; the
+detector need not optimize it to certify cofinal payment.
+
+For p=2,theta=2/3,lambda=1/24,alpha=1/6,beta=5/6,
+ e1=-5/12, e2=-3/4.                                  (7.4)
+The COMPLETE centered physical component therefore transfers to the
+shorter finite cube F_R with decaying, logarithmically explicit padding.
+This is unconditional even though no bound for E_R is known. If either
+cost exponent is0, its declared log factor is paid cofinally but remains
+visible; a positive exponent is unpaid unless another rule compensates it.
+At N>=X negative N powers are bounded by the same X powers. To express
+the log cost using 1+log2 X, use 1+ln N<=3(1+log2 X); the fourth power
+adds the rational factor81. No fitted constants or excluded small scales
+are involved. Finitely small horizons may also use their exact support
+predicate and the all-x bounds, not an unspecified numerical exception.
+
+8. Integer cells, pole scope and the global Mellin distinction
+
+At integer n, S_F(n)=P_(K_theta*F)(n)-m_F n^theta/theta is exactly the
+prefix of the declared discrete centered coefficient
+ K_theta*F-(m_F/theta)J_theta. Therefore (7.3) is a genuine full-cell
+integer-array recovery. For real x the continuous center in (6.3) differs
+from the unit-cell staircase center by
+ (m_F/theta)[x^theta-floor(x)^theta].
+This deterministic term is retained when a Mellin or continuous norm
+is requested. For x>=1, its absolute value is <=|m_F|floor(x)^(theta-1);
+at x<1 the continuous main has its literal value. The difference between
+the two components uses m_F-m_R, with the exact bounds above. It cannot
+be silently dropped during a global Hardy/Abel or contour application.
+
+The identity (1.2) and energy transfer apply only below the declared N.
+They do NOT yield an equality of global transforms on the sigma9/20 line,
+nor a bound of that fixed-U entire low-height integral by a finite-R norm.
+Moving N changes T,R and the analytic-residue discrepancy. To use them in
+a global norm, one must partition all x, include every earlier prefix,
+and prove the resulting varying-cutoff operator. That is a new proof rule.
+The detector may instead declare the physical-block centered finite cube
+as its intermediate target and compose (7.3) with the saved source binding.
+
+The generic prefix bound (3.3) has leading rho=2/3. On the current fixed
+sigma=9/20 line, integrating its square against x^(-2sigma-1) diverges.
+This is failure of the upper provider, not proof that the actual norm
+diverges. Even before outer K, the leading critical block-energy cost is
+U^(10/3)X^(1/3)log^4; at U<=N^(1/24) its X power is17/36, unpaid.
+Generic complete cube control alone therefore does not close the source.
+The new transfer changes the structured arithmetic leaf: all three E
+factors are restricted to r<N, with the full analytic main and unit/head
+retained, and a rigorously paid complement. It is more than scoring a
+cheap branch, but is not a signed bound for that shorter cube.
+
+9. Generic-weight ablation and reusable detector rule signatures
+
+For arbitrary |w(d)|<=1, A=w restricted<=U,c=A(1), E=delta-One*A+cOne,
+the prefix is still <=2U and |c|<=1+ln U. A safe coefficient parameter
+is K=3+ln U. The actual inverse head E(n)=c on n<=U is unavailable, but
+mass_E(x)<=(3+2ln U)x gives the alternative moment bound
+ |E(theta)|<=[(3+2ln U)/u+4]U^u.
+Truncated moment and tail proofs then give the SAME cutoff powers with
+additional explicit logarithms. Thus even the whole paid cutoff transfer
+is primarily a bounded-prefix mechanism; the actual inverse supplies its
+clean constants/head and removes logs, not a new prime-specific exponent
+advantage. Do not advertise it as discovery of actual signed cancellation.
+
+The executable deliberately also supports a looser generic provider through
+its existing divisor grammar: put L_U=1+ln U and |E(n)|<=3L_U*d2(n).
+Splitting the ordinary moment at U and using weighted divisor mass gives
+ |E(theta)|<=[3/u+4]U^u L_U^2,
+ |T(theta)|,|R(theta)|<=[3/u+8]U^u L_U^2, t,r>=U.
+The tail differences in (6.2) still cost4U and8U with no added logarithm.
+Hence the same transfer exponents use unchanged C1 with an extra L_U^2
+in the first amplitude, and C2=144[3/u+8]/[theta*u^p] with an extra L_U^2
+in the second amplitude. Under U<=N^lambda,0<lambda<1, L_U<=1+ln N.
+After squaring, the two log degrees are8 and4, versus4 and0 for actual mu.
+At p=2,theta=2/3 the generic C2 is33048. This version is implemented for
+an explicit same-grammar ablation; it does not claim the sharpest generic
+logarithmic bound from the preceding mass estimate.
+
+Composable proof signatures proposed here are:
+ - affine_coordinate_collect: substitute cutoff E-C delta, then collect
+   all C powers in the ENTIRE source expression before coefficient bounds;
+ - bounded_prefix_divisor_power: inputs B,K,degree and complete support
+   cover; output a rational sum of prefix powers/logs, with exact rectangles;
+ - finite_factor_weighted_lift or rectangle_exact: explicitly test their
+   domains at the actual evaluated prefix, not just the outer horizon;
+ - support_ideal_cubic_transition: infer h in E^3-R^3=h(E-R) modulo the
+   certified short/long tail support ideals; retain residual terms otherwise;
+ - bounded_tail_centered_kernel: support r, bounded full prefix, complete
+   Abel tail moment, all-real centered bound including x<1;
+ - analytic_moment_join: retain Delta_m in (6.3), head and integer-cell
+   correction, with ordinary versus analytic moment types distinguished;
+ - physical_scale_cost: search rational lambda,alpha,beta,theta and both
+   complete costs in (7.1), with exact integer support/floor certificates;
+ - joined_finite_cube_leaf: keep all finite factors, product indicators,
+   centered main, units and cross terms, then seek an independently proved
+   signed bound for the resulting physical-block quadratic.
+
+These inputs can be synthesized and independently checked without choosing
+a numerical winner. The scalar/cube inequalities are generic supplied
+theorems; the detector constructs their applications and searches feasible
+identity/scale routes. The last signed leaf remains OPEN. Any eventual
+full original-core conclusion must also compose all saved source-decomposition,
+channel, transport and recovery certificates; no such closure is asserted.

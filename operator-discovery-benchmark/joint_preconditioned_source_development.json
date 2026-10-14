@@ -1,0 +1,12 @@
+{
+  "operations": 71399,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_joint_preconditioned_source operations=71399\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.033s\n\nOK\n",
+      "operations": 71399,
+      "elapsed_seconds": 0.11536455998430029
+    }
+  ]
+}

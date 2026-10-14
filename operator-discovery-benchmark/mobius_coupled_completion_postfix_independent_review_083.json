@@ -1,0 +1,5 @@
+{
+  "elapsed_seconds": 0.0003929919912479818,
+  "status": "FAIL",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/audit_mobius_coupled_completion_postfix_083.py\", line 39, in <module>\n    try:r=audit()\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/audit_mobius_coupled_completion_postfix_083.py\", line 14, in audit\n    model=P.build_model(p,u);cert,diag=P.upper_certificate(model)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/mobius_coupled_completion_083.py\", line 100, in build_model\n    raise ValueError('u positive integer domain')\nValueError: u positive integer domain\n"
+}

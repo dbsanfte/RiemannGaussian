@@ -1,0 +1,183 @@
+{
+  "RH_proved": false,
+  "admitted_unsigned_transfer_scales_across_separate_archives": [
+    8,
+    13
+  ],
+  "all_missing_failed_and_accepted_states_preserved": true,
+  "complete_original_defect_and_all_channels_preserved": true,
+  "compressed_recovery": {
+    "actual_selected_support_raw_work_proxy": 517653504,
+    "all_original_equations_independently_verified": true,
+    "constant_coordinates": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "full_equation_rows": 1318,
+    "full_system_work_upper_proxy": 526440832,
+    "higher_resource_ceiling": false,
+    "independent_receipt_sha256": "dbb629d45fdfc2064ad990ed50b695d41542b0067d52f35e396d80de091d2da1",
+    "native_work_proxy": 321136896,
+    "new_floating_search": false,
+    "original_rows": 1296,
+    "preprocessing_work": 1186906,
+    "reduced_rows": 804,
+    "result_sha256": "3cde9eea26baa704f0f31009aefd3e75b7840beaf91a7d1c177f3b0d74563332",
+    "same_saved_support_count": 632,
+    "scope": "arbitrary scalar budget shifts in the exact fixed four-group shared gamma-zero cone; no actual bound refutation",
+    "source_count": 63,
+    "status": "exact_separator",
+    "tests_passed": 15,
+    "total_work_proxy": 335419779,
+    "unchanged_work_ceiling": 450000000
+  },
+  "critical_finite_certificate_found": false,
+  "followup_statuses": [
+    "missing_resource",
+    "finite_PSD_certificate",
+    "missing_resource"
+  ],
+  "future_memory_policy": {
+    "authorization_persists": true,
+    "full_memory_workers": 1,
+    "old_frozen_resources_preserved": true,
+    "total_concurrent_memory_bytes": 6442450944,
+    "worker_memory_bytes": 6442450944
+  },
+  "global_bound_proved": false,
+  "gram_group_dimensions": {
+    "joint_child": 10,
+    "joint_parent": 10,
+    "old_child": 5,
+    "old_parent": 5
+  },
+  "historical_transfer_scales_reused": true,
+  "independent_receipt_sha256": "9542371e45316eca1026c4218e89a428954961fa64e2330908a11085b64c3734",
+  "jobs": [
+    {
+      "cost": {
+        "cpu_seconds": 67.79885088900001,
+        "elapsed_seconds": 67.81116920700879,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 608172,
+        "pid": 633530
+      },
+      "file": "jobs/dual-000.json",
+      "phase": "dual",
+      "reason": "native RREF dimension/work proxy",
+      "sha256": "54b49c842989f34fc210689ee1c0ce7601a834a1e406a2e2fc217bb35d41a743",
+      "status": "missing_resource"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 28.771487709,
+        "elapsed_seconds": 28.77434748300584,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 779320,
+        "pid": 633533
+      },
+      "file": "jobs/final-001.json",
+      "nonzero_Gram_matrices": 0,
+      "phase": "final",
+      "reason": null,
+      "sha256": "c24c8e84f1fcdf1d9034f7801df98051ae438ebab001c51038959b8f7901d5e3",
+      "status": "finite_PSD_certificate",
+      "weights_sha256": "5b180a915eaeae798249c5ead1a9e81e204f0757b0876263a1ac7de975a5ac89"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 62.761299555,
+        "elapsed_seconds": 62.770138055988355,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 2063184,
+        "pid": 633533
+      },
+      "file": "jobs/final-002.json",
+      "phase": "final",
+      "reason": "MemoryError",
+      "sha256": "7b4a10597c0a38c9f73cd2505fd25eefe32640e508e41e846bb31a01fd32a05c",
+      "status": "missing_resource"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 56.965743726,
+        "elapsed_seconds": 56.97027898399392,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 547992,
+        "pid": 633394
+      },
+      "file": "jobs/train-000.json",
+      "phase": "train",
+      "proposal_origin": "joint_PSD_numerical_search",
+      "reason": "numerical SDP solver failure: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+      "sha256": "8f7910eab2b1b89abaa1f48168c0f00f76ece2c68647ba8fa9d8827318659a65",
+      "status": "uncertified"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 12.843453824000001,
+        "elapsed_seconds": 12.844449849013472,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 323316,
+        "pid": 633397
+      },
+      "file": "jobs/train-001.json",
+      "nonzero_Gram_matrices": 0,
+      "phase": "train",
+      "proposal_origin": "supplied_archived_unsigned_calibration",
+      "reason": null,
+      "sha256": "c69384749d133a36ef7a6d3ee5fcb927b8da4974cd7cdd20848345ad52eea11b",
+      "status": "finite_PSD_certificate",
+      "weights_sha256": "5b180a915eaeae798249c5ead1a9e81e204f0757b0876263a1ac7de975a5ac89"
+    }
+  ],
+  "joint_exact_separator_found": true,
+  "memory_transfer_recovery": {
+    "X": 13,
+    "cost": {
+      "cpu_seconds": 100.900732621,
+      "elapsed_seconds": 100.91354285899433,
+      "observed_threads_at_completion": 1,
+      "peak_rss_kib": 2211068,
+      "pid": 634865
+    },
+    "independent_receipt_sha256": "f996ab28d40912df58986abcde58e6c8ca59517815b25567351dd21d86e8eed5",
+    "new_floating_search": false,
+    "original_2GiB_MemoryError_preserved": true,
+    "refitted": false,
+    "result_sha256": "9fc4f1b581e11c439d7e10454075a0e01f532869c506acabf97618ac56510667",
+    "same_fixed_weights_and_four_zero_Grams": true,
+    "source_count": 56,
+    "status": "finite_PSD_certificate",
+    "tests_passed": 9,
+    "total_memory_bytes": 6442450944,
+    "worker_memory_bytes": 6442450944,
+    "workers": 1
+  },
+  "next_action": "preregister coherent full14atom regional Grams mixing all five legacy atoms and all nine complete divisor contrasts; inspect the admitted witness against that larger cone without claiming feasibility or an actual bound",
+  "original_stage_transfer_count": 1,
+  "previous_research_bound_files": 263,
+  "previous_research_manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256",
+  "previous_resource_bound_files": 244,
+  "previous_resource_manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b",
+  "prior_research_publication": "publication-005",
+  "proposal_checkpoints": [],
+  "proposal_checkpoints_are_certificates": false,
+  "raw_stage_exact_separator_found": false,
+  "scalar_scope_sha256": "17b6884f637d09629f100a9159571522baa3d7a678117e3ab64b1893b8f8490b",
+  "schema": 6,
+  "scope": "finite complete joint-divisor shared proof cone with supplied calibration and exact admission; gamma-zero necessity uses the recorded q>1 fixed-template scalar asymptotic assumptions; no actual all-scale bound",
+  "separate_memory_retry_transfer_count": 1,
+  "source_count": 72,
+  "supplied_archived_calibrations_verified": 1,
+  "supplied_calibration_is_discovery": false,
+  "tests_passed": 37,
+  "training_statuses": [
+    "uncertified",
+    "finite_PSD_certificate"
+  ],
+  "transfer_certificates_verified": 1
+}

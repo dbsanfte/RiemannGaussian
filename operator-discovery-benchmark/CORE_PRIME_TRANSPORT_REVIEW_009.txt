@@ -1,0 +1,240 @@
+FULL PRIME-VALUATION GROUPING: TRANSFER RULES AND SCOPED PROOF GUARDS
+
+Scope
+-----
+This independent source-only review reads CORE_SIGNED_WORK_HANDOFF.txt,
+core_work_pair_reduction.py, core_arithmetic_grouping.py and the actual
+selected source AST in joint-preconditioner-results/pilot-001/selection.json.
+Only this NEW memo is written. No actual-source study, arithmetic sweep,
+test, hash, subagent or frozen-file edit is performed. The review is
+attached independently; it is not a frozen study admission certificate.
+
+The selected preconditioner is ID23, power1 at shift2/3. Its complete
+source terms, in evaluator order, are nu0=k_u*(mu*mu),
+nu1=k_u*(mu*mu_v), nu2=k_u*mu_v, mu, with
+f=beta nu0-beta nu1-R_u nu2-beta mu, u1/3,v2/3,beta9/2,R_u>0.
+The separately retained original correction and center/inverse costs
+remain necessary; a global correction norm does not license deleting
+that correction at arbitrary sharp pair cutoffs.
+
+1. Exact orbit grouping and what absolute values can certify
+----------------------------------------------------------
+Let the complete step kernel be
+  L_X(h,k)=K_eta,2X(h,k)-rho K_eta,X(h,k), h,k<=4X-1.
+Any total label map l_X on this ENTIRE support defines
+  Q_rs=sum_(l_X(h)=r,l_X(k)=s) f(h)f(k)L_X(h,k).
+The exact identities/rule are
+  Delta W=sum_rs Q_rs, Delta W<=sum_rs |Q_rs|.
+Units, diagonal and old-head pairs are included. Grouping is legitimate
+only when every pair is represented exactly once, or an overlapping
+weighted cover has a verified reproduction identity. All four modes
+must be combined before evaluating each group; separate triangle bounds
+for their sixteen cross channels can destroy actual prime cancellations.
+
+The streamed grouping implementation reads each index in ascending order.
+Its new-index update uses the complete max-index kernel
+a(n)+b(n)(log h+log k), adds both orientations, and then the coefficient
+diagonal. The displayed formulas agree with the full grouped identity.
+The diagonal of the GROUP matrix includes within-group off-diagonal
+pairs and must not be confused with the coefficient diagonal of008.
+Float discovery explicitly lacks a certified rounding bound; no universal
+grouped arithmetic inequality follows from those numerical expressions.
+
+2. Actual first-prime signature and the growing-cutoff obstruction
+----------------------------------------------------------------
+Combining ALL source channels at an actual prime gives exactly
+  f(p)=-R_u p^-u+(beta+R_u)p^-2u.                       (2.1)
+The constant and part of the p^-u terms cancel between channels. Thus
+the leading exponent is u1/3, not zero; the AST compiler's combined
+prime-row extraction correctly records this cancellation. At odd primes
+any fixed delay g(n)=f(n)-a*1_(2|n)f(n/2) has g(p)=f(p).
+
+Consider any prime-stripping set P_X contained in primes<=X. Stripping
+any whole valuation or even-valuation chunk leaves each p in[2X,5X/2]
+unchanged. Moreover its complete orbit inside the support is a singleton:
+every nonunit stripped dilation d>=2 has dp>=4X. The parent kernel is
+zero on these pairs, while008 proves the child lower bound
+  L_X(p,q)=K_eta,2X(p,q)>=3/(40X), |eta|<=2.
+For all sufficiently large primes (2.1) has one sign and
+|f(p)|>=R_u p^-u/2.
+
+The only external arithmetic theorem used for this obstruction is the
+classical prime number theorem. A primary reference is Atle Selberg,
+"An Elementary Proof of the Prime-Number Theorem", Annals of Mathematics
+50 (1949),305-313, https://doi.org/10.2307/1969455 ; accessible original:
+https://www.math.lsu.edu/~mahlburg/teaching/handouts/2014-7230/Selberg-ElemPNT1949.pdf .
+Partial summation gives for fixed 0<A<B and 0<u<1
+  sum_(AX<p<=BX)p^-u
+    ~ [(B^(1-u)-A^(1-u))/(1-u)] X^(1-u)/log X.
+Therefore the absolute sum of these singleton pair groups is
+  Omega(X^(1-2u)/log^2 X)=Omega(X^(1/3)/log^2 X).        (2.2)
+This is uniform over arbitrary growing choices P_X<=X. No prime gaps,
+RH, short-interval estimate or source randomness is assumed. It forbids
+a cofinal grouped-absolute proof for the BASE stripping partitions;
+it does not refute the original signed step.
+
+For a FIXED finite prime set there is a stronger elementary guard.
+Removing its finitely many Euler factors from008's absolute mass series
+leaves a positive constant times x log x for the P-free |g| mass. On
+[2X,5X/2] each such cofactor is again a singleton orbit. The same kernel
+lower bound gives Omega_P(Xlog^2 X). Hence exact rational local tails
+or infinite local sums cannot repair a fixed-prime fresh boundary.
+
+3. Two sound automatic postcomposition guards
+---------------------------------------------
+For valuation_step1, let Y be the actual integer stripping cutoff.
+If (Y+1)^2>4X-1, the residual of every n<=4X-1 is either1 or a single
+prime: two remaining factors, WITH multiplicity, would exceed support.
+Thus removing largest once, smallest once or largest all maps every
+residual to1. There is ONE group and sumabs=|whole Delta W|. This is
+an exact degenerate presentation, not an analytically false candidate.
+For cutoff floor(X^theta),theta>1/2 this holds at all sufficiently large
+X; finite scales require the displayed integer inequality. Step2 does
+not satisfy this premise because leftover odd small-prime valuations
+remain. Its removal posts must not inherit this collapse certificate.
+
+Now suppose step1, (Y+1)^2>4X-1, Y<=X, and a monotone root/quotient
+post has label preimage width o(X) on residuals<=4X. A complete interior
+fresh band, for example[9X/4,19X/8], then has labels whose ENTIRE
+preimages eventually lie inside[2X,5X/2]. Residuals there are primes;
+any nonunit dilation exits support. The full classes therefore contain
+only actual fresh primes. Their coefficients all have the same sign
+and L_X is positive, so merging several such primes cannot reduce the
+lower bound(2.2). Root orders2,3,6 have width O(X^(1-1/k)); quotient
+by floor(X^a),0<a<1 has width O(X^a). Both meet the width premise.
+Boundary clusters straddling2X cannot be called prime-only.
+
+This generalizes the cutoffX guard to cutoffs much larger than sqrt X
+with the explicit residual1/prime condition. A positive subsector cannot
+be used to lower-bound |Q_rs| if its class also contains oppositely signed
+composites. In particular coarse residues can mix units/composites and
+prime sectors; they remain OPEN. Step2 or smaller cutoffs also require
+new sign/remainder certificates before inheriting the prime-only guard.
+
+4. Boundary sqrt-cutoff extension: REVIEW ONLY
+-----------------------------------------------
+There is an additional proof at Y=floor(sqrt X),step1, for root/quotient
+posts of widtho(X). This is not claimed as an implemented gate.
+Interior residual classes above2X have no nonunit stripped dilation.
+Their actual indices are rough primes or semiprimes: every remaining
+prime is>sqrt X, so three factors exceed4X at large X. For two such
+primes, including a repeated prime, f(pq) is eventually positive; for
+distinct primes it tends to2beta, while f(p^2) tends tobeta. Large rough
+prime coefficients are negative by(2.1).
+
+PNT supplies Omega(sqrt X/log X) primes in any fixed interval just
+above1.5sqrt X. Taking both factors in, say,
+[1.5sqrt X,1.54sqrt X] supplies Omega(X/log^2 X) distinct positive
+semiprimes with products in the interior band[2.25X,2.375X]. Their
+total positive source mass has that order, whereas all negative primes
+in the selected classes have mass O(X^(2/3)/log X). On this complete
+fresh support the kernel is between positive constants times1/X.
+The positive-positive contribution therefore dominates all negative
+prime cross terms and gives aggregate grouped absolute lower bound
+Omega(X/log^4 X). No uniformly short prime-interval estimate is used.
+This proof does not extend automatically to theta<1/2 (more rough
+prime-factor counts with alternating signs) or to step2. It is kept
+separate from the frozen implemented guard scope.
+
+5. Complete rational valuation transfers and boundaries
+-------------------------------------------------------
+For p-free H, t=p^-u, the four exact generating rows are
+  R0(z)=(1-z)^2/(1-tz),
+  R1(z)=(1-z)(1-t^2 z)/(1-tz),
+  R2(z)=(1-t^2 z)/(1-tz),
+  Rmu(z)=1-z.
+Consequently at every e>=3
+  f(p^e H)=t f(p^(e-1)H).
+The complete first rows are
+  f(pH)=A0(H)+t A1(H)+t^2 A2(H),
+  A0=beta(-2nu0+nu1+mu),
+  A1=beta(nu0-nu1)-R_u nu2,
+  A2=beta nu1+R_u nu2,
+and
+  f(p^2H)-t f(pH)=beta nu0(H)-beta t^2 nu1(H)-beta t mu(H).
+These retain every mode and unit; H can share primes with the OTHER
+pair leg. For a delayed row at2 the common tail starts at valuation3;
+all other primes keep the displayed tail. Common-prime valuation pairs
+(e,f), including both positive, remain in the tensor product transfer.
+
+For any finitely supported kernel sequence Phi(e), exact numerator
+transfer gives, for example,
+  sum_e nu0(p^e)Phi(e)=sum_(j>=0)t^j
+                             [Phi(j)-2Phi(j+1)+Phi(j+2)].
+The other rows use (1-E)(1-t^2 E),1-t^2 E and1-E, respectively, with
+the appropriate geometric denominator. Kernel values outside support
+are ZERO, so these formulas INCLUDE every cutoff jump. On a fresh
+singleton Phi0!=0,Phi1=Phi2=0 the second difference is Phi0, with no
+small-prime suppression. Dropping those exits defeats the exact identity.
+
+At a completely constant UNTRUNCATED local weight the signed sums are
+R0(1)=R1(1)=Rmu(1)=0,R2(1)=1+t. Thus the full local f sum is
+-R_u(1+t)nu2(H), not zero. The geometric series justify this statement
+for each fixed prime, but the actual prefix kernel is not constant.
+An infinite-prime or infinite-cutoff limit requires its own convergence
+and boundary theorem; it does not pay the fresh support.
+
+Fractional SHIFTS with integral Euler exponents retain rational rows.
+Fractional Euler EXPONENTS generally do not: (1-tz)^(-alpha) has
+coefficients (alpha)_e*t^e/e!, and its exact recurrence is
+(e+1)c_(e+1)=t(e+alpha)c_e. A pure geometric/rational-tail certificate
+for noninteger alpha is false. Exact finite-support truncation and a
+proved generalized-binomial tail bound are possible. Fractional finite
+differences still retain their cutoff exits and unit coefficient one.
+If used as a genuine invertible prefix operator rather than a partition,
+each fixed-prime inverse has its declared dilation-norm cost; products
+over growing prime sets cannot be assigned a scale-free cost for free.
+
+6. Constructive cofactor-changing cancellation with honest recovery
+-------------------------------------------------------------------
+Prime-label exchanges at fixed cofactor1 cannot cancel(2.2): all fresh
+f(p) have one sign. A detector can instead enumerate small cofactors H
+with an exact certificate A0(H)!=0, and source-free prime matches r
+comparable to q/H, r>Pplus(H). The generic AST identity is
+  P(q,r;H)=f(q)+(R_u/A0(H))*q^-u f(rH)
+    =(beta+R_u)q^-2u
+       +(R_u/A0(H))*q^-u[r^-u A1(H)+r^-2u A2(H)].
+For r>=c q with fixed c>0, this proves |P|<=C_H,c q^-2u. It is an
+actual coefficient power gain generated from the complete source AST,
+not a fitted weight. For example the cofactor2 has
+A0(2)=beta(2-2^-u-2^-2u)>0; this example only proves the nonempty
+scope of the generic enumeration, not a preferred search candidate.
+
+No prime-gap estimate is needed for this coefficient identity. A
+bounded-multiplicity prime matching between fixed comparable intervals
+can be certified by PNT counts, or by exact combinatorial coverage at
+finite scales. However the FULL kernel pullback has a compulsory flux:
+  f(q)K(q,k)+c_q f(rH)K(rH,k)
+   =P(q,r;H)K(q,k)+c_q f(rH)[K(rH,k)-K(q,k)].
+Applying it to both legs gives both mixed fluxes and their product.
+When both prime sets lie in fixed comparable X-intervals and a common
+reference kernel is O(1/X), the doubly canceled block has an absolute
+envelope O(X^(1-4u))=O(X^-1/3), with a prime-count saving if desired; the flux
+has NOT been paid by this estimate. Prefix indicators similarly retain
+1_(rH<=x)-1_(q<=x). Coarse comparability alone does not make these
+frontiers small enough. Unmatched primes, reused composite partners and
+the remaining coefficient (1-sum c_q)f(n) must be represented exactly.
+Crosses between the canceled bank and the retained full source are not
+bounded by the paid doubly canceled block alone.
+
+This is a useful enumerable source-specific primitive and a precise
+new forcing obligation, but not a complete core bound. A compiler can
+certify its polynomial cancellation, exact matching multiplicities,
+pair-kernel pullback and coefficient coverage; an all-scale signed
+estimate for the joint flux/complement remains open. Assuming an
+RH-strength q-free/cofactor bound to pay it would be circular. The
+known old-head product must also remain in the recovered step.
+
+7. Final scope
+---------------
+The baseline, one-bucket and prime-only-coarsening guards above have
+distinct meanings: baseline/coarsening are genuine absolute-proof-route
+obstructions, while one-bucket is a restatement with no structural gain.
+Residue and mixed prime/composite groups cannot be rejected using a
+positive subsector without a complete sign or remainder certificate.
+Exact orbit sums and local rational identities do not by themselves
+bound their signed group matrix. The source-specific cancellation
+primitive in section6 offers a detector-generated argument component,
+with its missing recovery flux made explicit. No uniform grouped bound,
+work recurrence, complete cofinal moment or RH proof is established.
+All frozen artifacts are unchanged. This independent memo is complete.

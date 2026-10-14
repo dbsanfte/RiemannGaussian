@@ -1,0 +1,87 @@
+Exact geometry discovery and compressed dual search on publication028
+
+This complete new method uses the licensed782-row/1224-coordinate chart,
+the SAME851 rational ray descriptions saved in029, and their recorded
+finite premises. No new eigenvectors, arithmetic sources, historical basis
+replay or hashes are generated. The previous029100-iteration attempt is
+terminal and is not restarted or extended.
+
+One combined450m work-proxy reservation:80m preparation/tests/I/O,
+70m exact geometry,150m native proposal,80m exact restoration and70m for
+one independent audit. Synthetic65m and independent I/O10m are inside
+preparation. Independent geometry and optional Farkas checks share one70m
+meter. Unused allowances authorize no retry. Exact rational result4096bits,
+two-input temporary8193bits, live rational proxy6m. Geometry16MiB,
+proposal/certificate8MiB, independent review8MiB, metadata64KiB,
+one source snapshot8MiB. One worker/thread and one sequential auditor,
+each6GiB and3600 cooperative seconds; producer external7200seconds.
+
+Before the first research calculation, preparation was reallocated within
+the same450m ceiling to include all consumed synthetic integration work.
+Reserve20m covers earlier producer/reviewer/root checks; the checker agent's
+two completed runs consumed29,849,297; the final frozen combined suite has
+a15m reservation. Their sum64,849,297 fits inside65m. Another5m preparation
+covers source copying and remaining input/output work. No research responses
+were calculated before this adjustment, and no consumed allowance resets.
+Run the combined suite once inside the frozen job, without an identical
+pre-freeze repetition. Later tests require a new concrete change or failure.
+
+Geometry saves complete exact coordinate forms x_j=t_j+N_j*f for all1224
+coordinates. The442 free forms are units with constantzero. Every782
+pivot equation is verified by substitution into these forms. This proves
+the affine parameterization using the existing row-span premise. Compose
+every original rational cone generator into its complete response(r,t),
+including its constant. Scalar rays are nonnegative scalar units; matrix
+rays represent v^T*C*v or v^T*H*v with H=P+4C and offdiagonal factor2.
+No response calculation or case selection precedes the frozen protocol.
+
+An identically zero response exposes that generator as zero on every
+feasible point. A line class with both positive and negative proportional
+COMPLETE responses gives a positive two-ray combination equalzero. All
+members then vanish conditionally on primal feasibility. Residual-only
+opposition is insufficient: constants must cancel as well. Exposed scalar
+rays force a scalarzero; exposed matrix rays imply C*v=0 or H*v=0 from PSD.
+Exact canonical kernel spans summarize these necessary conditions. They
+do not prove existence of a feasible point or an arithmetic estimate.
+
+LP compression drops only zero columns and merges only positive
+proportional columns, choosing the first ray as representative. Opposite
+signs stay separate. Any representative coefficient vector lifts into the
+full851 vector by explicit zeros on omitted rays. The declared new heuristic
+objective is positiveL1 of representative coefficients; previous objective
+values are not preserved. Equality rows are compressed by exact augmented
+coefficient/RHS proportionality, permitting negative factors. Only an
+all-zero augmented row disappears. A nonzero RHS with zero coefficients
+remains a contradiction in this restricted separator LP; it cannot prove
+infeasibility of the primal cone.
+
+Before a native call, the first ray with zero free response and a strictly
+negative constant is tested as an exact singleton separator alpha=-1/t.
+This declared route uses the restoration reserve and skips native LP.
+Otherwise an empty or contradictory compressed LP yields NONCERTIFIED.
+For a valid compressed shape one HiGHS dual-simplex call has presolveFalse,
+one thread and no fallback. Its iteration limit K is chosen solely from
+compressed dimensions before coefficient scaling: hardmax10000 and the
+largest bounded K fitting the150m dimension-only preparation and dense
+linear-algebra proxy. Preparation reserve16mn+64(m+n)+1MiB precedes the
+m^3 initial factorization, K*(2mn+m^2) pivot and2mn+1MiB transport proxies.
+These are declared proxies, not measured native flops or wall-time promises.
+
+Exact positive row/column infinity scaling and a common positive objective
+normalization precede finite binary64 conversion. No nonzero coefficient
+underflow is silently accepted. A successful finite native proposal supplies
+all strictly positive support indices. One exact restoration in ORIGINAL
+443-row/851-ray coordinates sets free support variables tozero. A negative
+or inconsistent reconstruction is NONCERTIFIED; resource exhaustion is
+UNKNOWN. No native status, eigenvalue, approximate zero or rank threshold
+proves a theorem. A complete lifted Farkas witness must still satisfy all
+1224 coordinates of A^T*lambda=G*alpha, alpha>=0 and b^T*lambda=-1 exactly.
+
+The auditor independently checks the entire affine map, all851 responses,
+all exposure and compression classes and kernel spans. Geometry has its
+own complete proof result, separate from numerical search and any negative
+pairing witness. A later unsuccessful or resource-limited LP does not erase
+fully saved and independently checked geometry. A partial geometry artifact
+is never licensed. Any independent arithmetic, byte or deadline failure
+revokes geometry and separator promotion. One exclusive audit marker prevents
+a second audit. Global bounds, RH and primal feasibility remain false.

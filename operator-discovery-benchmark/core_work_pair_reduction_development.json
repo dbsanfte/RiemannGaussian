@@ -1,0 +1,13 @@
+{
+  "module": "test_core_work_pair_reduction",
+  "operations": 3262808,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_work_pair_reduction operations=3262808\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.157s\n\nOK\n",
+      "operations": 3262808,
+      "elapsed_seconds": 0.24722556400229223
+    }
+  ]
+}

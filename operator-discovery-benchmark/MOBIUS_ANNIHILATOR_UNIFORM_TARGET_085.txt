@@ -1,0 +1,316 @@
+085 UNIFORM TARGET: SHORT DIVISOR INCREMENTS AND A PAID HEAD / NEGATIVE BULK RULE
+
+This continues independently after the11 scientific source files froze. It
+reads only saved descriptor selection and earlier source/reviews. No new
+signed arithmetic, old scientific replay, or frozen edit. It supplies actual
+elementary uniform lemmas, an implementable sufficient bound construction,
+and precise scale diagnostics; it does not pay the remaining RH-strength leaf.
+
+A. Selected bank geometry and a useful exact reinterpretation
+Saved085 banks are mainly balanced K=N-floor(a*u^eta), eta<1. Several include
+linear K=floor(u/5), one K=floor(u/9); one inherited bank has an unbalanced
+sublinear cut. Reciprocal banks are almost entirely short complementary
+increments, including constant lengths and eta1/7. The q1_p16 reciprocal
+bank includes balanced complement scale7,eta-1/6. These are detector-selected
+saved descriptors, not prescribed formulas or a uniform performance claim.
+
+LetN=floor(u/4)>=2 and1<=K=N-L<=N. Forn>1 the balanced form is exactly
+ D_(N-L)(n) = L/(N-1)*floor(N/n)-I_(N,L)(n),
+ I_(N,L)(n)=floor(N/n)-floor((N-L)/n)
+          =sum_(N-L<t<=N)1[n divides t].
+Atn1 it iszero. K0 iszero by convention and must be treated separately.
+Thus a near-N balanced form is a harmonic/divisor profile minus the COMPLETE
+short-interval divisor-incidence rows. It is not a mysterious global dense
+identity and not a signed short-interval Mertens value. The raw incidence
+support has at most sum_(t=N-L+1)^N(tau(t)-1) nonunit occurrences; all repeats,
+prime divisors and composite divisors remain. Exact anchoring includes every
+known-unit/prime contribution and can only reduce this column's l1 norm.
+
+For ALL integerN>=2,K between1 andN, |D_K(n)|<1 forn>1. Indeed write
+c=(K-1)/(N-1), then
+ D_K(n)=(K-cN)/n -{K/n}+c{N/n}, K-cN=(N-K)/(N-1).
+The lower bound is greater than-1. The upper bound is less than
+ c+(N-K)/((N-1)n)<=1. Unitcoordinate0 and K0/N zero endpoints are consistent.
+This pointwise bound is independently paid elementary floor geometry.
+
+B. Uniform column and signed-correction norms: no RH premise
+LetH_N=sum_(n<=N)1/n. Summing the exact increment formula gives
+ ||P^T D_(N-L)||_1 <= ||D_(N-L)||_1
+ <=2L H_N + sum_(t=N-L+1)^N(tau(t)-1).
+The factor2 usesN/(N-1)<=2. Restricting to squarefree coordinates only
+reduces the absolute sum. P is the exact known-sign anchor congruence; the
+triangle inequality bounds its anchor entry by the original known entries.
+No actual unknown sign is used anywhere.
+
+For every rationalepsilon>0 an explicit Cepsilon gives tau(t)<=Cepsilon*t^epsilon
+for ALL positive integers. One cheap exact construction: epsilon=r/s,
+J=ceil(s/r), exceptional primes p^r<2^s. For nonexceptional p, a+1<=2^a
+<=p^(epsilon*a). For an exceptional p write a=qJ+t,0<=t<J; then
+ a+1<=J(q+1)<=J*2^q<=J*p^(epsilon*a).
+Hence Cepsilon=J^(numberofexceptionalprimes) suffices. A finite proof checker
+can independently sieve the complete exceptional range and check the integer
+powers. A looser integer-range count instead of primality is also safe but
+has a much larger constant. This bound is conservative, not a numericalfit.
+Also H_N<=(1+1/epsilon)*N^epsilon by comparison with x^(epsilon-1).
+Consequently
+ ||P^T D_(N-L)||_1 <=Aepsilon*L*N^epsilon,
+ Aepsilon=2(1+1/epsilon)+Cepsilon.
+
+For a noncomplemented small cut K, either raw or balanced,
+ ||P^T d_K||_1<=K H_K+K,
+ ||P^T D_K||_1<=K H_K+K+2K H_N.
+Thus these also have explicit Oepsilon(K*N^epsilon) bounds. Unbalanced
+near-N forms instead contain an O(N H_N) backgroundd_N plus the small
+increment; they must not be charged as short forms alone.
+
+For complete anchored bankcolumns g_k and arbitrary symmetricS,
+ ||V S V^T||_entrywise1
+ <=sum_(k,l)|S_kl|*||g_k||_1*||g_l||_1.
+This includes every diagonal, anchor, prime/composite cross and both offdiag
+orientations. It is an ACTUAL uniform upper price for a proposed correction,
+provided its S-growth schedule is separately proved. It does not prove that
+adding the correction makes the residual small; it prices its possible effect.
+IfL_k(u)<=a_k*u^eta_k and |S_kl(u)|<=b_kl*u^lambda_kl, the paid correction
+norm has exponent max(lambda_kl+eta_k+eta_l+2epsilon), with explicit constants.
+This makes coefficient growth a precise next search input, not hidden finiteS.
+
+C. An inexpensive asymptotic descriptor gate
+For a negative exponenteta=-r/s, a>0, floor(a*u^eta)=0 whenever
+ u^r>a^s. A balanced complemented descriptor then becomesD_N=0 identically;
+a noncomplemented descriptor is alsozero. For scale7,eta-1/6 the selected
+balanced complemented form vanishes for everyu>117649. At current training
+and validation it may be useful, but it cannot supply a nonzero allscale mode.
+This is an exact computable threshold, not an asymptotic heuristic. Eta0 gives
+fixed integer shortlength; eta>1 eventually caps toN, so noncomplemented
+balancedforms vanish and complementedforms becomeK0zero. Fixed finite bank
+must record such collapse thresholds/rank changes in any uniform construction.
+
+For banks consisting only of sublinear smallcuts or balanced shortincrements,
+uniform bounded S gives subquadratic correction norm whenever the pair exponent
+eta_k+eta_l+2epsilon<2. Therefore such coefficients cannot change a PROVED
+quadratic-size witness mode at leading order: foranyBoolean s,
+ |s^T VSV^T s|<=||VSV^T||_entrywise1=o(u²).
+This is CONDITIONAL on an independently proved originalwitness mode; the saved
+finite084 witnesses alone do not establish that allscale hypothesis. It is a
+useful scaling necessity, not a new universal no-go theorem. IflargefiniteS
+is essential, detector must invent and bound its scaling, or changebank/identity.
+Linearcut columns are excluded from this short-bank inference and may control
+a genuine bulkdirection. Never apply the shortnorm bound to those columns.
+
+D. One concrete allscale proof-search mechanism
+Search a PAID HEAD / NEGATIVE BULK decomposition on the COMPLETE RAW residual.
+For eachj>=1 putdelta=1/j. Chooseh_j(u)=min(N,ceil(u^eta_j)),0<eta_j<=delta,
+and letH be all rawSFcoordinatesn<=h, C the rest. Keep fullunit/primes/composites.
+Seek exact signedbankS_j(u) such that the C-by-C block of
+ W_j(u)=R_raw(u)+D_j(u) S_j(u) D_j(u)^T
+is nonpositive semidefinite FOR ALLu. Construct the positivecompletion Q_raw
+as minus this full C-by-C block, zero-padded onH. Then W+Q has exactlyzero
+bulkblock; every head/head andhead/bulk pair remains and is independentlypaid.
+After anchoring, Q_eff=P^T Q_raw P isstillPSD. Exactrawblock partition BEFORE
+projection is mandatory: the knownanchor mixeshead andbulkprimes, so an
+'effective composite tail only' shortcut would lose known-prime interactions.
+
+For the frozen085 inheritedoperator, all oldcoupledcuts areunitbalanced and
+source/product/band/prime/compositeweights are uniformly bounded. Source
+featurebound B=sum|kernelweights|, T fixed and theta finite give explicit
+rawentryboundC_R independentofu. For example a safe bound is
+ C_R=2*(B²||T||_entrywise1+sum|theta_k|*sup|weight_k|)
+       +B²*sum originalGramweights,
+since R=A0+Z-O andO is the correctedfullrawouter block. This uses the pointwise
+balancedfloor lemma above and retains every oldterm. No new sign premise.
+The remaining rawR head pairs have total absolute cost
+ <=2*C_R*h*N <=C_R*u^(1+eta_j) foru>=1 (useceil(u^eta)<=2u^eta,N<=u/4).
+The newzero-correction head pairs cost at most its full entrywise norm,
+which can be paid by the explicit columnbounds inB when its exponent<=1+delta.
+Thus the uniformly NEGATIVE BULK leaf plus the elementary head/correction
+prices yields B_eff<=C_j*u^(1+delta), with everycost retained.
+This is an RH-sufficient geometric theorem by the alreadypaidouterbound and
+fixedkerneltransfer. It is stronger than a bound on actualmu alone, so may
+fail for a smallbank; failure gives a precise newlemma/witness to feed back.
+
+This is not simply the originalsignedscalar disguised: its unpaid leaf is
+an explicit universal MATRIX inequality for all realvectors on a namedraw
+bulk, and the remainingcount/normcosts are alreadyproved above. Detector can
+search exact structurednegativeGram identities for thatblock rather than
+fit an unobserved signedscalar. A countervector refutes this proposed bulk
+mechanism, not the original RHbound. If a fixedbank is too weak, growth of
+bankradius/rank must be proposed with alluniformcosts, not covered by tuningS.
+
+E. Implementable synthesis and acceptance plan
+1 Freeze a rationalhead-exponent rule andS_j(u) grammar (e.g. finite rational
+powers with coefficients alloweddependj), keeping completeoldoperator/outer.
+2 At development geometries test constrained PSD feasibility of-negativebulk,
+then propose exact structuredfactorizations. Ordinary finite eigensolver flags
+are invention evidence only. Preserve exactnegativevectors forfailures.
+3 Candidate factor rows should come from generic sourceprofiles, exactdivisor
+incidencerows, cofactor/carry indicatorfunctions and their rational products,
+with indexranges explicitlyparameterized. The factorconstruction is an AST,
+not arbitrary stored L lookup. Search coefficientidentities against complete
+floor kernels; admit only an allscale algebraic identity or other reviewed
+uniformPSD proof, with endpoints and bankcollapse thresholds covered.
+4 Independently prove the head count, rawentry bound, annihilatorcolumnbounds,
+coefficientgrowth schedule and alljquantification. Exactfinite admission of
+specificu PSD remains a separate status. No automaticuniversal promotion.
+
+An alternative uniform leaf is restricted spectral control
+ v^T R v<=C_j*u^(1/j)||v||² onker(D_j^T), with proved diagonalcost/Schur
+completion. It can remain useful, but arbitrary projectedcoordinates are not
+Boolean and a positive kernelvector alone does NOT automatically lower-bound
+unrestricted signed-diagonal certificate trace. Use appropriate normdomination
+or an actualPSDunit-diagonal annihilator-compatible dual. Negativebulk ruleD
+has a simpler fully paid headprice, hence is the recommended concrete pilot
+proof target. There is currently no proof that the selectedeightbanks achieveit.
+
+No new uniformRH-strength leaf paid. Actual finite calibration/validation
+results remain separate from this target derivation.
+
+F. Complete mixed zero ideal: a specific executable next-language extension
+Reported085 calibration reveals one near-optimal floatingobjective with very
+large opposite signedidentity/positivefactor traces; others have substantial
+S magnitudes too. This is evidence of conditioning/representation cost, not
+proof of bad arithmetic or an allscale obstruction. Do not reduce it to
+factor precision tuning. The current zero languageVSV^T changes only the
+spanV-by-spanV block; it cannot directly change the crossblock between that
+span andker(V^T). Full arithmetic zero relations include arbitrary mixed
+products with the annihilator, which CAN remove those crosses exactly.
+
+Choose exact independent bankcolumnsV and M=(V^T V)^(-1), P=VMV^T,Pi=I-P.
+Then actualy satisfiesPi y=y. The complete projected operator on the SAME
+originalBoolean coordinates obeys
+ y^T Pi R Pi y=y^T R y,
+ Z=Pi R Pi-R=-PR-RP+PRP=(V W^T+W V^T)/2,
+ W=-2 R V M+V M V^T R V M.
+All identities are rational whenR,V are rational. Every physical/anchor pair
+remains through the fullmatrixmultiplication. The Boolean rowprice remains
+legitimate because no coordinatevariables changed: actual ORIGINALy still
+has y_i²=1. This is distinct from pricing an arbitraryorthonormal reduced
+coordinatebasis, which would require newrange/normdomination.
+
+More generally every symmetricquadraticformZ whose restriction toker(V^T)
+iszero is a mixedzero formVW^T+WV^T for someW. This follows from the
+orthogonalblockdecomposition: ker-by-kerblock0 leaves only bank-by-bank and
+bank-by-ker blocks. VSV^T covers only the former. Sinceactualannihilator
+constraint holds, ALL these mixedforms evaluatezero and need no artificial
+positive normcost; their complete coefficientprice is still retained.
+
+Why this can avoid large opposing terms: for a diagonalmajorantD, write its
+PSDcondition in bank/ker blocks. Choosing S verynegative inflates only the
+bank diagonal. Positivity requires a Schur comparison paying cross² divided
+by the smallgap in D_ker-R_ker. As thatgap tendszero, bankpenalty can grow;
+if the gap has a nullvector with nonzerocross coupling, no finitebankbuffer
+makes that particular limitingD PSD. This explains a POSSIBLE near-optimum
+largepenalty mechanism. It is not a proof the reportedsolver instance has
+an unattained optimum or that every unrestricteddiagonal choice diverges.
+Mixedzero correction removes the cross exactly, without this penalty limit.
+
+Concrete next executable experiment, after preserving frozen085:
+ fixedexistingoperators and selectedsymbolicbank;
+ (a) general exactPiRPi ablation using exactactivebankGram inverse;
+ (b) learned mixedpartners W=RVC plus generic source/floor/cofactor profiles,
+     with exact smallcoefficientmatrixC, plus arbitrarypositivefactorQ;
+ independent completeoriginalcoordinate certificateB(R+sym(VW^T)+Q);
+ allrank-change/resource failures preserved; freshgeometry learns onlyaux;
+ compare completeprices and coefficient/trace amplification, notfloatobjective.
+The projection is a general supplied algebraic rule, not a detector-invented
+winning formula. Learned structuredpartners may provide a simpler allscale
+construction than the fullGram inverse; don't claim that before provingit.
+
+Uniform remaining leaf is still explicit:
+ B(Pi_j(u) R_j(u) Pi_j(u)+L_j(u)L_j(u)^T)<=C_j*u^(1+1/j), ALLu,j.
+Exactprojection itself neither bounds this trace nor controlsrankchange,
+Gram-inverse denominator growth or selectednegative-exponent bankcollapse.
+A structuredpartner family can instead use the paidhead/negativebulk ruleD
+and elementaryincrement pricesB; crosscontrol may help its matrixleaf.
+Any claimed universalPi construction must separately cover zero/rank-changing
+banks, allcut endpoints and allowedjdependence. A completebank reconstructing
+actualmu gives noautomaticprice theorem and must disclose arithmetic recovery.
+
+This extension directly uses the new divisorconstraints to change the exact
+bound representation, so it is more than another SDP precision/constant fit.
+It removes a precise unnecessary restriction of085 while keeping the full
+signedresidual and the originalouter theorem unchanged. Whether the remaining
+quotient kernel has a uniformly smallmajorant remains unpaid arithmetic/
+geometry; finite success does not settle it.
+
+G. ESSENTIAL CAVEAT: SAME IDEAL SDP VALUE, NOT NEW ARITHMETIC INFORMATION
+The mixedpartner extensionF changes representation and may improve finite
+attainment/conditioning. For an UNRESTRICTED real PSD diagonal-majorant SDP
+it DOES NOT add arithmeticinformation or improve the idealinfimum over the
+sameR andbank. Here is the exact finite-dimensional argument.
+
+PrimalS: inf sum d subject to diag(d)-R-V S V^T>=0, S symmetricunrestricted.
+Its Lagrange dual is
+ max trace(RX), X>=0, diag(X)=1, V^T X V=0.
+ForPSD X, V^T X V=(X^(1/2)V)^T(X^(1/2)V)=0 iffXV=0.
+PrimalW: inf sum d subject to diag(d)-R-sym(VW^T)>=0, W unrestricted.
+Its dual has the samePSD/diagonal constraints and directlyXV=0. Sym is the
+half-sum; pairing against symmetricX gives trace(W^T X V). Thus both dual
+feasible sets and objectives coincide exactly, irrespective of bankrank.
+
+Both primal problems are strictly feasible: S/W0 andd_i=t witht larger than
+||R|| gives a positive definite slack. Their infima are bounded below because
+the actualBoolean vector y satisfiesV^T y=0, so X=yy^T isdual feasible.
+No actualsign values need be queried to establish this nonemptiness theorem.
+The dualfeasible set isclosed/bounded: PSDdiag1 implies |X_ij|<=1. Hence its
+maximum isattained, and standard finite-dimensional SDP Slaterduality gives
+equal finite primalinfima and the same dualmaximum. Primal attainment need
+not follow from this argument. The mixedgrammar's broaderzero representation
+can attain or approximate that samevalue more stably; it cannot evade an
+exactcompatible dual lower bound for thisbank.
+
+ArbitrarypositiveQ plusBooleanprice has the sameinfimum as its diagonalPSD
+majorant, as proved084, when rank/precision are unrestricted. Fixed dyadic
+precision, coefficientbits, solverbudget and restrictedpartnerAST can yield
+different finite achievedprices; the equality above does NOT assert those
+bounded implementations are equivalent. Structuredpartners may make a
+uniformproof easier by exposing cancellation symbolically, but any exponent
+improvement must arise from a provedconstruction/tracebound or NEW constraints,
+not theclaim that mixedproducts add new annihilatorinformation.
+
+Even the exactPiRPi ablation is merely one specific admissiblemixedcorrection.
+After freezing thatcorrection, unconstrainedBoolean/PSD pricing can be worse
+than optimizing the wholebankzero ideal; PiXP i neednot haveunitdiagonal.
+There is no automaticoptimalprice advantage from projection alone. Original
+Boolean variables remain valid, but the optimizationrelaxation changes if
+one forgets the selectedconstraint after fixing the projection.
+
+H. REQUIRED NEXT-PILOT METHOD-VERSUS-BANK DIAGNOSTIC
+Alongside each finiteprimal certificate seek an EXACT bank-compatible dual
+ X>=0, diag(X)=1, XV=0,
+with lower bound trace(RX). Sucha witness lower-bounds BOTHunrestricted S and
+mixedpartner pluspositive-square grammars for this fixedoperator/geometry.
+A matched small primal-dual gap measures coefficient/factor search quality.
+If its exactlowerbound exceeds a frozenfinitegrowth target, that bank's
+entire idealPSD relaxation cannot meet it; mixedpartners or moreprecision
+alone cannotrescue thetarget. One must strengthenbank/arithmeticconstraints,
+changeoperator, or use anotherboundmechanism. This is stillfinite proof-cone
+failure, not an actualmu lowerbound or allscale impossibility.
+
+A Boolean s withV^T s=0 gives X=ss^T immediately. Existing084witnesses lacking
+that exactcompatibility are invalid for this role. Search fakeBoolean vectors
+under the exactlinear constraints, with completecoordinatebinding and no
+claim that their values equalmu. A PSD dual admits moregenerality.
+
+Implementable exactPSDdual proposal: compute a rationalnullspace basisN for
+V^T; propose X=N H N^T, reconstruct rational symmetricH under the LINEAR
+conditionsdiag(N H N^T)=1, and checkPSD H (orX) by exactnative LDL/signedGram.
+Singularfaces need exactrank/nullpivot treatment; numericalPSD or tinyXV
+isnot admission. An exact positiveweightedGram certificate may use rational
+weights and rows, avoiding the need for rational square roots. Round/factor
+proposals with a diagonal'slack to enforce1 are generally INVALID here:
+that extra diagonal may violateXV=0. Allaffine equations and positivity must
+bechecked jointly. Retain resource/reconstruction failures asmissing evidence.
+
+This diagnostic directly separates finiteattainment/conditioning from the
+amount of arithmeticinformation in the chosenbank. It should be explicit
+in nextmachineinput before interpreting any mixedpartner gain as cancellation.
+The elementary increment/norm lemmasB remain independentpaid facts; the
+uniformmatrix/trace leavesD/E/F remainunpaid.
+
+External optimization theorem dependency checked2026-10-11:
+Boyd/Vandenberghe, Convex Optimization, Stanford primarycourse dualitynotes,
+https://web.stanford.edu/class/ee364a/lectures/duality.pdf
+Slater's strictfeasibility condition gives strongduality and dualattainment
+for finite convex problems with finite primalvalue. The specific SDP duals,
+strictfeasibility, compactness and PSDannihilator equivalence are derived
+above rather than imported as unsupported solver assertions.

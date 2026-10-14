@@ -1,0 +1,189 @@
+GLOBAL CARRY ROOT-LIMIT OPERATOR AND A ZERO-SENSITIVE ZETA CRITERION
+
+These are written mathematical proofs with exact implementation checks,
+not theorem-prover certificates. The operator is a candidate to this
+detector; its historical originality has not been established. A reformulation
+equivalent to RH is not a proof of RH or evidence that RH becomes easier.
+
+1. CROSS-PRIME PRODUCT AND ITS DOMAIN
+
+Omega(n)=sum_p v_p(n) is completely additive. Define
+  (f G g)(n)=sum_{ij=n, Omega(i)&Omega(j)=0}f(i)g(j),
+where & is binary AND. This follows the detector's recovered carry grammar
+with potential V(n)=v_2(Omega(n)!). Its defect
+  V(ij)-V(i)-V(j)=v_2(binomial(Omega(i)+Omega(j),Omega(i)))
+is nonnegative, and equals zero precisely when the total degrees add
+without binary carries. The potential defects telescope on triples.
+At parameter zero, a product of weights is 1 precisely when its total
+defect is zero, and 0 otherwise. This proves associativity. Commutativity
+and delta_1 identity are immediate. The convolution is coefficient-local.
+
+This product couples primes: delta_2 G delta_3=0, while ordinary and
+primewise infinitary convolution both give delta_6. It need not preserve
+multiplicativity. These facts are tested rather than silently assuming an
+Euler product still exists.
+
+2. NONLINEAR TRANSFER AND ROOT LIMIT
+
+On rational arithmetic functions f(1)=1 define
+  S(f)=EXP_G(LOG_*(f)),
+with inverse EXP_*(LOG_G(f)). Coefficient-local formal series are justified
+by n>=2^k for k nonunit factors, exactly as in root_transfer_proof.txt.
+The transfer law S(f*g)=S(f) G S(g) and both inverse laws follow.
+The root-order limit proof in that file uses only these algebraic laws and
+therefore gives
+  S(f)=lim_{q->infinity} q-fold G product of P_(1/q)^*(f)
+coefficientwise, for EVERY normalized input, without an analytic assumption.
+Its group laws do not imply that it is a linear algebra isomorphism.
+
+For u(n)=1 all root coefficients are positive. The q-fold G root product
+removes some nonnegative terms from the ordinary q-fold root product u,
+so each coefficient lies in [0,1]. The limit coefficients s(n)=S(u)(n)
+also lie in [0,1], giving absolute Dirichlet convergence for Re(s)>1.
+At n=6 the only allowed root-product terms have one nonunit factor 6:
+its coefficient is q*b_(1/q)(6)=q/q^2=1/q. The split 2,3 is forbidden
+because the two total degrees both equal 1. Thus s(6)=0 even though
+s(2)=s(3)=1. This is a provable cross-prime effect.
+
+3. INDEPENDENT COEFFICIENT FORMULA AND RECOVERED MASK
+
+LOG_*(u) is supported on prime powers, with coefficient 1/e at p^e.
+In its G-exponential, the total degrees of participating prime powers
+must have pairwise disjoint binary bits. For each prime, the factor degrees
+partition the bits of v_p(n). Across distinct primes those exponent bit
+sets must also be disjoint. Conversely these two conditions give every
+allowed exponential term. Labels on the ordered factors contribute the
+factorial canceled by the exponential coefficient, as in the independent
+partition proof for the primewise transfer.
+
+Consequently, with h_e from root_transfer_proof.txt section 3,
+  s(n)=chi(n)*product_{p^e||n} h_e(0),
+  chi(n)=1[the binary bit sets of the exponents v_p(n) are pairwise disjoint].
+Equivalently
+  chi(n)=1[sum_p s_2(v_p(n))=s_2(Omega(n))].
+The equivalence follows by counting carries: binary digit sum never increases
+under addition, and its total decrease is zero precisely when there are no
+carries. The detector searches the two sides as anonymous digital features.
+It checks direct generic LOG/EXP against the independent partition/mask
+formula through n=4096. This finite check supports, but does not replace,
+the universal coefficient argument above.
+
+4. GRADED ANALYTIC REPRESENTATION
+
+Let P(z)=sum_p p^(-z) for Re(z)>1. Its definition and convergence here use
+the prime Dirichlet series. The familiar identity
+  log(zeta(s))=sum_{k>=1}P(k*s)/k, Re(s)>1,
+follows by the absolutely convergent Euler logarithm, with its normalized
+branch. Grade arithmetic coefficients by Omega(n). At each grade k, the
+Dirichlet sum of LOG_*(u) is P(k*s)/k.
+
+On graded power series define x^i G x^j=x^(i+j) when i&j=0, and zero
+otherwise. Put
+  K(s,x)=sum_{k>=2}P(k*s)*x^k/k,
+  K_even(s,x)=sum_{even k>=2}P(k*s)*x^k/k,
+  K_odd(s,x)=sum_{odd k>=3}P(k*s)*x^k/k.
+Their coefficient l1 norms converge locally uniformly on Re(s)>1/2,
+since the first possible term is degree 2. The graded G product has
+l1 norm <= the product of l1 norms, so its exponential is an entire
+map of this Banach algebra. Evaluating a convergent graded series at x=1
+is a bounded linear map, though it is NOT a G-algebra homomorphism.
+
+Define the holomorphic functions, on Re(s)>1/2,
+  A(s)=eval_1 EXP_G(K_even(s,x)),
+  D(s)=eval_1[EXP_G(K_even(s,x)) G K_odd(s,x)],
+  Q(s)=sum_{k>=2}P(k*s)/k,
+  B(s)=A(s)*(1-Q(s))+D(s).
+The odd-grade ideal squares to zero, and multiplication by x annihilates
+it. Multiplication by x maps every even grade to the next odd grade and
+preserves evaluation at 1. Thus the elementary finite/absolutely convergent
+exponential identity gives, initially for Re(s)>1,
+  F(s)=sum_n s(n)n^(-s)=A(s)*(1+P(s))+D(s)
+      =A(s)*log(zeta(s))+B(s).
+A is not identically zero: A(s)>=1 on real s>1/2, and A(s)->1 as s->+infinity.
+This is a genuine analytic bridge to the half-plane relevant to RH. It
+does not claim F itself has a single-valued extension through zeta zeros.
+
+5. POLE CANCELLATION AND RH EQUIVALENCE
+
+Let H={Re(s)>1/2}. The function Z(s)=(s-1)*zeta(s) is holomorphic on H,
+with value 1 at s=1. On Re(s)>1 choose the normalized logarithms and put
+  Phi(s)=F(s)+A(s)*log(s-1)=A(s)*log(Z(s))+B(s).
+
+If RH holds, zeta has no zeros in H. The simply connected domain H then
+admits a holomorphic logarithm of Z, agreeing with the initial branch.
+The displayed formula proves Phi has a single-valued holomorphic extension
+to all H.
+
+Conversely suppose zeta has a zero rho in H of order m. A small loop around
+rho changes log Z by 2*pi*i*m, hence changes Phi by 2*pi*i*m*A(s) at its
+base point. Since A is holomorphic and not identically zero, it cannot
+vanish on a whole punctured neighborhood. This monodromy cannot disappear,
+even if A(rho)=0. Therefore Phi cannot extend single-valuedly to all H.
+By zeta's functional equation and the known location of nontrivial zeros
+in 0<Re(s)<1, absence of zeros in H is equivalent to RH. Hence
+  RH <=> Phi extends holomorphically and single-valuedly to H.
+
+This criterion is a reformulation. Proving its extension remains a global
+problem equivalent to excluding off-line zeta zeros. The numerical detector
+does not decide this criterion from finite samples.
+
+6. VERIFICATION AND NOVELTY
+
+The formal laws, bit-mask identity and independent coefficient route have
+exact checks on unrelated inputs and larger, separate cutoffs. The affine
+analytic representation can be checked at actual zeta values using graded
+series and explicit tails. A controlled additional zero must produce a
+nonzero monodromy, unlike the earlier symmetry-only tests.
+
+The zero-parameter kernel is a degeneration of a classical potential-weight
+convolution framework. Its specific cross-prime root-limit and analytic
+representation require further publication-history review. The operator
+is not counted as historically new merely because its formula or this RH
+criterion was constructed in the present search.
+
+7. CERTIFIED GRADED TAILS AND ZERO-SENSITIVITY CONTROL
+
+For tested sigma>=3/4, P(z) at Re(z)>1 is evaluated independently from
+actual Arb zeta values using
+  P(z)=sum_{m>=1}mu(m)*log(zeta(m*z))/m.
+This inversion follows by the absolutely convergent Euler logarithm:
+the coefficient of P(k*z) is sum_{m|k}mu(m)/k, which is 1 for k=1 and
+0 otherwise. With a=M+1, the tail beyond m=M is bounded by
+  [(1+2/(a*Re(z)-1))*2^(-a*Re(z))]
+   /[a*(1-2^(-a*Re(z)))*(1-2^(-Re(z)))].
+To obtain it, use |log zeta(m*z)|<=sum_{n>=2}n^(-m*Re(z))
+/(1-2^(-m*Re(z))) and the integral bound on that integer sum. The tested
+domain satisfies log(zeta(Re(z)))<pi, so the principal Arb logarithm equals
+the analytically normalized branch. Every finite prime-zeta coefficient
+gets a complex error box from the proved tail before further arithmetic.
+
+For the graded exponential tail choose r=2^(sigma/2)>1. Since k>=2,
+  sum_k |K_k(s)|*r^k <= C,
+  C=r^2/[2*(1-r*2^(-sigma))]
+         *[2^(-2*sigma)+2^(1-2*sigma)/(2*sigma-1)].
+The weighted l1 convolution norm is submultiplicative. Consequently the
+exponential's weighted norm is <=exp(C). Its output grades beyond D have
+unweighted norm <=exp(C)*r^(-D-1). This bounds BOTH the even (A) and odd
+(D-function) output tails. The Q tail is bounded by
+  (1+2/((D+1)*sigma-1))*2^(-(D+1)*sigma)
+  /[(D+1)*(1-2^(-sigma))].
+The numerical affine representation error is therefore at most
+  tau_exp*(2+|log(zeta(s))|+C)+|A_head|*tau_Q.
+Add N^(1-sigma)/(sigma-1) for the independent arithmetic Dirichlet sum.
+global_analytic_probe.py uses these bounds with complex Arb balls. Perturbed
+coefficients must exceed the same bound and are checked as negative controls.
+
+The zero-sensitivity control takes a disk of radius 1/200 centered at
+3/4+i. An Arb enclosure of the actual zeta on an enclosing rectangle proves
+that this whole disk contains no zeta zero. It also excludes the pole.
+Thus Z(s)=(s-1)zeta(s) has winding number zero there. The controlled model
+(s-(3/4+i))*Z(s) has exactly one simple zero and winding number one. The
+computed graded A at the loop basepoint, with its tail, excludes zero.
+The logarithmic criterion therefore has monodromy zero for the actual
+local Z, and 2*pi*i*A(basepoint)!=0 for the extra-zero model. Sampled phases
+confirm the two windings, but the stated zero count comes from the ball
+enclosure and the explicitly added linear factor, not a finite phase mesh.
+
+This last check challenges the derived criterion with its zeta-specific
+A,B kept fixed. It does NOT assert that substituting any analytic function
+for zeta gives the arithmetic transfer of some different input sequence.

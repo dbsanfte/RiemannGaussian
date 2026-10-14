@@ -1,0 +1,114 @@
+Publication024: verified counterexample constraint incorporated into the affine chart
+Date: 2026-10-09
+Research archive: cancellation-arithmetic-results/primitive-state-feedback-affine-002
+
+Verified outcome
+The publication023 necessary equation is independent of the old finite affine
+system. The coefficient and augmented ranks both rise from779 to780; the
+projected width remains1224 and the free dimension falls from445 to444.
+Independent status: AFFINE_UPDATED. All5641 original equations and the new
+equation hold exactly at the repaired endpoint. This is a finite affine result,
+not an all-scale formal identity, signed arithmetic bound or RH proof.
+
+The new original equation is the already verified1957-coordinate row from
+publication023/constraint.json, with RHS-3130575, at X7/H27 and u_n=2n+1
+minus the allzero formal assignment. The source program remains mu/q6/C32,
+claim critical. No actual Mobius signs or new evaluation cases were used.
+The sole seed is publication021's exact original-coordinate endpoint.
+
+Reduction and repair
+All733 signed-pair and storage column dependencies were checked against the
+actual complete cached source. The feedback row obeys the same dependencies.
+After eliminating all779 old pivot columns, including pivots beyond leading
+free coordinates, the residual is a homogeneous relation on82 old free
+coordinates. Its support comprises24 square,31 effective signed-relation and
+27 Gram coordinates, with mixed signs. The RHS iszero. This is not a direct
+nonnegative-coordinate exposing equation or a new forced-face theorem.
+
+There are774 nonzero old-pivot elimination multipliers. The new pivot is
+projected coordinate148, also original coordinate148, with normalization
+409248/11. The declared rule selects the smallest nonzero old free coordinate.
+Descending back-substitution retains every other old free coordinate exactly.
+The canonical lift uses Gchild=0, K=C, Gparent=P+4C and the positive/negative
+parts of every effective signed coefficient. Only eight original square
+weights change; signed halves, slacks and all three matrix blocks are unchanged.
+This deterministic repair is not an optimization or a nearest-point projection.
+
+Positivity still fails
+The endpoint has227 negative square weights and two negative scalar slacks,
+at1592 and1595:229 negative scalar coordinates in total. Gchild iszero and
+PSD. Gparent and K each have an exact negative quadratic witness at Schur
+pivot3. Full vectors and exact quadratic values are retained in affine.json;
+the independent receipt also retains its own matrix diagnostics. No cone
+feasibility or source-system infeasibility is claimed. The learned equation
+cannot substitute for these positivity conditions.
+
+Reusable exact chart
+jobs/chart.json is4691646bytes. It stores all779 normalized old rows, the
+appended normalized feedback row, retained original-coordinate indices,
+old_pivots, pivot_columns for the complete780-pivot chart, old_free_indices
+for the old445 coordinates, and free_indices for the remaining444 coordinates.
+Normalized rows use augmented RHS index1224. Subsequent forward solves must
+combine normalized_rows and appended_row and visit descending pivot columns;
+adjoints visit ascending pivot columns. Row insertion order is not sufficient.
+
+The independent checker reconstructed the complete old elimination transcript,
+including every omitted augmented row, verified the saved normalized chart,
+recomputed the feedback reduction and repair, and checked every original
+endpoint equation, the new equation, all signs and all three matrix blocks.
+Future searches can consume this checked sparse map without reconstructing the
+old basis again. The complete endpoint equations and cone checks remain
+necessary. The chart does not establish correctness of the arithmetic grammar
+at all scales or prove a universal source-compiler theorem.
+
+Implementation and calibration
+The mathematical backend is primitive_state_feedback_affine.py and the
+independent arithmetic checker is check_primitive_state_feedback_affine.py.
+The actual run uses run_primitive_state_feedback_affine_v2.py and
+check_primitive_state_feedback_affine_run_v2.py. No cryptographic hashes,
+manifest chains or source-byte integrity sweeps were introduced.
+
+The first frozen calibration archive, primitive-state-feedback-affine-001,
+ran35 tests in15.882s and stopped before any research execution: one synthetic
+soundness fixture lacked schema/assignment metadata required by the stricter
+checker. Its source and failed result remain unchanged. The v2 fixture supplies
+that metadata; the arithmetic algorithm, source, seed and feedback equation
+are unchanged. The20 affected tests then passed in8.092s. The final frozen
+prescore passed all35 tests in16.090s. The v2 protocol explicitly records both
+calibration attempts in the same preparation allowance and checks that the
+first archive has neither a research execution nor a jobs directory.
+
+There was exactly one actual producer and one final independent mathematical
+replay. No worker checker, new source compilation, adaptive candidate search,
+cone optimization or fresh-scale probe was performed. All published/frozen
+files remain immutable. The36-file actual-run snapshot totals332326bytes;
+affine.json is762836bytes and independent_verification.json is8120bytes.
+
+Resources
+One joint450m reservation:50m preparation/tests/I/O,150m producer and250m
+independent replay. Both calibration attempts and subsequent checks belong to
+that preparation reservation; no additional450m job was claimed for them.
+
+Producer:153.124024s wall,152.984741s CPU,449908KiB peakRSS (about439MiB),
+47710379 explicit work-proxy units,1646945 peak rational-cell proxy,
+1977 maximum rational bits. Independent:351.455579s wall,351.408941s CPU,
+574812KiB peakRSS (about561MiB),116712623 work-proxy units,2481379 peak live
+cells and1015470 cumulative fill cells. The independent I/O proxy is1171650
+for37492248bytes, within preparation. Both stages used one thread, stayed
+within6GiB/3600s boundaries and had no resource failure. The two arithmetic
+proxies total164423002; this does not replace the declared450m reservation or
+treat preparation asfree. Counters are accounting proxies, not CPU instructions.
+
+Next action
+Run a new cone search using this exact augmented map and its444 remaining
+free directions. Preserve the complete original cone, with C PSD and
+H=P+4C PSD; P alone need not be PSD. Reuse the checked map directly rather
+than rebuilding/hash-licensing the old elimination chain. Any numerical
+proposal needs exact restoration and complete endpoint verification.
+
+X7/u_n=2n+1 is now discovery data. Passing this learned constraint is not
+held-out evidence. A new candidate requires a separately fixed fresh formal
+evaluation before any broader interpretation. The universal nonconstant
+identity, uniform scalar bound, initial storage cost and ordinary-zeta bridge
+remain unresolved. No qualifying operator for the full active goal has yet
+been found; the original all-scale signed-control/RH objective remains active.

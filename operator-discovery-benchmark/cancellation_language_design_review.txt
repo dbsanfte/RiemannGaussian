@@ -1,0 +1,109 @@
+A SMALL SIGN-PRESERVING LANGUAGE EXTENSION FOR ACTUAL MOBIUS/PRIME ARITHMETIC
+
+Read-only design after the grouped SOS audit. Existing frozen stages already
+contain complete signed Grams, gcd primitive decomposition, coprime-squarefree
+density, prime-log forcing, polynomial cycles, factor-certified norm/gcd laws,
+and exact finite SOS/separators. These are not proposed as new capabilities.
+The accepted grouped mu critical templates collapsed to a cubic scalar budget;
+this demonstrates a specific unsigned certificate route, not impossibility of
+other proofs or a prediction about RH. No new numerical scores or source edits.
+
+Recommendation: add a typed TWO-AXIS relational kernel language before adding
+more fitted potentials. Its unit is a complete signed pair sum with a declared
+source/domain, not a list of nonnegative scalar observables. Candidate rewrites
+must produce a new pair kernel PLUS an explicit complete complement/boundary.
+This adds an implementable way to search sign-preserving transformations of the
+unknown mixed sum, rather than another equivalent critical correction fit.
+
+1. Minimal productions and exact semantics.
+ PairSum(f,g,Domain,K)=sum_(a,b in Domain)f(a)g(b)K(a,b).
+ PartitionPair(predicate) returns disjoint signed pieces whose union is exact.
+ ReindexPair(map,inverse) requires a proved finite bijection, coefficient law,
+ source/product horizon, every floor endpoint and an unmatched complement.
+ Polarize(U,V) keeps <U,V>=(||U+V||^2-||U-V||^2)/4 as an EXACT signed
+ relation, not the upper bound from two unsigned squares. Block normalization
+ X^-2 is explicit, and both own-scale child cutoffs remain declared.
+ MixedDilate(p,q,K)=K(a,b)-K(pa,b)-K(a,qb)+K(pa,qb).
+All coefficients are exact rationals; rational floor cutoffs and resource limits
+are declared. General sparse rational linear combinations, mutation and region
+refinement are allowed without passing a nominated winning kernel. Arithmetic
+rewrites and mathematical proof methods are supplied assumptions, not discovered
+arithmetic estimates. Unsupported relation transformations are missing, not zeros.
+
+2. A concrete actual-prime coboundary calibration.
+Fix prime p and define B_p(n)=sum_(a<=n,(a,p)=1)mu(a). Actual prime-power
+normalization gives EXACTLY
+ M(n)=B_p(n)-B_p(floor(n/p)).
+Indeed source n has either no p factor, one p factor with opposite sign, or
+at least two p factors with coefficient0. This is an all-coefficient identity,
+not an approximation or an RH-strength bound for B_p.
+Its COMPLETE parent energy equals
+ sum_(a,b positive,p∤ab)mu(a)mu(b)L_X,p(a,b),
+ L=K_X(max(a,b))-K_X(max(pa,b))-K_X(max(a,pb))+K_X(max(pa,pb))
+  =max(0,min(2X,pa,pb)-max(X,a,b)).
+The last equality counts the exact intersection of integer shells
+ a<=n<pa and b<=n<pb inside X<=n<2X. Boundaries are exclusive at pa,pb,2X
+and inclusive at a,b,X. This nonnegative kernel is still multiplied by signed
+mu(a)mu(b); its positivity is not an arithmetic energy bound. The child uses
+L_2X,p, and the full signed innovation is L_2X,p-4L_X,p.
+The smallest actionable implementation is this MixedDilate calibration plus
+independent complete small-domain pair enumeration and a mutation-capable
+pair-domain AST. No search of global constants is needed to test correctness.
+
+3. Coupled bilateral correlations, not isolated shell successes.
+For disjoint declared source blocks A,B, keep
+ C_X(A,B)=sum_(a in A,b in B)mu(a)mu(b)J_X(max(a,b)),
+with BOTH ordered cross copies in the full target. Gcd coordinates can expose
+coprime prefixes, but g1 and the complete primitive-height complement remain.
+Search grouped relations between a handful of adjacent blocks and their prime-
+dilated images, sharing coefficients across normalized scale regions. A negative
+mixed contribution may cancel positive diagonal/block terms only after an exact
+full reconstruction, not by scoring attractive pieces separately. A relation
+must account for moving rational cutoffs in BOTH scales of the innovation.
+Existing prime-log forcing can be an additional ReindexPair production, but
+log denominators and every permitted prime power remain charged. Its zero kernel
+moment does not cancel the nonconstant logarithmic-density drift automatically.
+
+4. Actual prime-error route with the main term retained.
+Lambda=mu*log gives exact prime-power provenance, but does not supply a prime
+error estimate. If the target is P(n)=psi(n)-n, use increments Lambda(n)-1,
+not Lambda alone. A divisor split at U retains both full sums
+ psi(x)=sum_(d<=U)mu(d)log(floor(x/d)!)+sum_(U<d<=floor x)mu(d)log(floor(x/d)!).
+Squaring keeps small/large-divisor cross terms. This route permits exact coupled
+mu/prime forcing kernels, but its large-divisor remainder is an obligation.
+PNT alone does not provide an RH-strength centered mixed estimate.
+
+5. Finite inference and the explicit uniform gate.
+Finite complete pair responses can nominate relational templates through exact
+kernel fitting, sparse rational coefficients, symbolic coefficient matching and
+exact dual-guided basis expansion. Share BOTH square and signed-relation weights,
+then freeze the transform and transfer without refitting. Record norm/unsigned
+charges separately, including any cubic scalar budget. A compression motif must
+have a proved complete lattice-domain identity or recursion at every scale.
+The missing analytic step remains a proved ONE-SIDED estimate for the complete
+actual mixed signed innovation, with existsq0, everyq>=q0, finiteCq independentX,
+everydyadicX, and all diagonal/residual/recovery costs. No generic square-root
+coprime-prefix estimate, prime randomness, PNT-at-RH-strength, or the same desired
+energy bound may be introduced as a new axiom. Exact expression is increased
+proof-search capability, not evidence that this uniform estimate will be found.
+
+6. Adverse cases owned by the extension.
+Independently test every MixedDilate endpoint on complete tiny domains, including
+p>X, X1, a=b, a or b at p boundaries and source powersp². Mutate one dilation
+sign, omit one mixed cross block, change a parent cutoff at the child, omit g1,
+truncate a product/source horizon, or drop the divisor complement: full identity
+checking must reject each alteration. Use unsigned coefficients and squarefree
+f_P counterfeits with partially normalized primes to reject claims from kernel
+geometry/norms alone. A fixed-p coboundary law holds for f_P whenever p is inP,
+yet that model has positive mean and cubic defect; one prime pairing is therefore
+not a generic critical proof. Finite local normalization is insufficient for
+these listed premises; no claim that every individual prime sign is logically
+necessary in every possible successful proof is made.
+
+Concrete handoff: implement the pair-domain AST, exact partition/bijection
+certificates and the prime MixedDilate calibration first. Keep the original
+full signed defect as the only recovery target. Delay another bound-fitting
+stage until the language can independently certify its complete transformation,
+remainder and adverse mutations. No increase in the chance of proving RH is
+claimed; the benefit is that candidate sign relations become explicit, testable
+and resistant to unsigned collapse.

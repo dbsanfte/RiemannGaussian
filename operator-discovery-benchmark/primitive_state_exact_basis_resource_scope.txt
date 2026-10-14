@@ -1,0 +1,51 @@
+This is an exact preprocessing trial on the unchanged publication012 primal
+arithmetic system. It is not a numerical search, candidate admission or uniform
+arithmetic bound. The full original1957 variables, objective and three PSD
+cones remain the optimization problem. The historical development grid is
+1,2,3,5 plus the gamma-zero auxiliary, q=6,C=32.
+
+First verify all733 declared column identities:613 opposite signed-relation
+pairs and120 storage columns equal child minus four times parent. The1224
+retained coefficient coordinates are used ONLY to compute dependencies among
+the original equation rows. Every omitted coordinate is exactly determined
+by those retained coordinates on each source row. Include the unchanged RHS,
+so the resulting projection is injective on the augmented source-row span.
+The independent checker must validate the complete column partition, each
+coefficient identity, every source monomial and the untouched target.
+
+Next perform deterministic rational elimination of projected AUGMENTED rows,
+recording a transcript for every original row. Selected equations are the
+original equations, in original1957-variable coordinates; the solver must
+never receive the projected coefficient domain as a smaller cone. A retained
+RHS-only pivot is an exact inconsistency diagnostic and must not be dropped.
+No floating rank threshold or numerical refitting is allowed. An interrupted,
+truncated, resource-limited or unverified transcript gives no permission to
+reduce the equation set.
+
+This one preprocessing job has a3GiB worker and total memory allowance,
+one numerical thread,900 cooperative seconds INCLUDING source preparation,
+and1800 external seconds. Its elimination steps depend on earlier pivots;
+this stage therefore uses one worker. The previous two independent numerical
+jobs ran in parallel. User authorization for more memory if limiting and
+longer runtime remains in force, but new allowances require a fresh protocol.
+
+The total charged exact backend work stays at450000000 per job. The ledger
+includes source compilation, projection production, projection verification,
+basis production and basis verification. Projection production is capped at
+50000000 and basis production at175000000, with independent checker budgets
+allocated from the remaining total after reserving receipt and source costs.
+Until a complete independent replay validates actual producer counts, reserve
+the full corresponding production allocation. UNKNOWN or interrupted phases
+cannot return that allocation as though their work had been fully replayed.
+Every later phase requires enough remaining budget; failure retains explicit
+diagnostics and does not admit reduced equations. These are deterministic work
+proxies rather than bounds on CPU instructions or rational bit complexity.
+
+Source/target archives, exact recipes, basis transcripts, independent checks,
+resource ledgers and durable progress are retained with frozen source hashes.
+The whole-stage auditor independently rebuilds arithmetic and checks all
+complete transformations. Partial records remain nonadmitted diagnostics.
+No numerical solver or native exact candidate reconstruction runs in this
+trial. A successful preprocessing equivalence is not a finite PSD certificate,
+a signed cancellation estimate, or a proof of RH. Later proposals must still
+be reconstructed and independently checked against every ORIGINAL equation.

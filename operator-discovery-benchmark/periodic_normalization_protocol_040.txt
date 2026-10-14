@@ -1,0 +1,69 @@
+PERIODIC NORMALIZATION SEARCH 040
+
+Frozen before the sole actual-source symbolic search. No arithmetic coefficient
+archive, old finite study, fitted constant, or new source observation is used.
+Inputs are the unchanged035 complete source certificate and exact scalar,
+039 independently derived pole certificate, and039 complete continuation.
+Inherited proof code is compared byte for byte, without hashes.
+
+The supplied grammar is mean-zero periodic preconditioning, exact Dirichlet
+convolution/inversion, analytic centering, all-real power and shifted-inverse
+kernel bounds, and a complementary hyperbola argument. These theorem rules
+are authored and reviewed, not automatically invented by the detector.
+The detector solves the periodic coefficient from its mean equation, enumerates
+q in[2,3,5,7,11,17] and convolution powers j in[0,1,2], compiles every signed
+source channel, optimizes the rational split, prices the complete remainder,
+and selects a program only if a reciprocal-zeta pole survives. Periods need
+not be prime; this finite dictionary is a work choice.
+
+The hyperbola split solves min_alpha max(alpha,theta*(1-alpha)),0<alpha<=theta.
+When the optimum does not give v+sigma>1 but v>1/2, the exponent may be enlarged
+to the exact rational midpoint of1-v and1/2. This has no denominator whitelist.
+The large-x comparison and separate subunit estimate license that enlargement.
+No choice of a tiny numerical constant or fit selects the split or candidate.
+
+Independent checker check_periodic_normalization_040.py imports no current
+producer. It reconstructs the full transformed source, all prices and selection;
+replays the separately bound exact normalization using check_source_pole_guard;
+and verifies the absolute scalar ceiling with256-bit Arb. The proof and its
+classical analytic premises are in PERIODIC_NORMALIZATION_SCOPE_040.txt.
+This is a checked implementation of the stated mathematical proof rules,
+not a formal proof assistant certificate of all analytic premises.
+
+Extra detail for the all-real shifted-kernel rule used in that proof:
+ e_theta(x)=prefix(n^(-r))(x)-x^theta/theta lies in[-1/theta,0],x>0.
+ For x>=1, sum_(d<=x)d^-v<=x^(1-v)/(1-v), and for w=theta+v>1,
+ sum_(d>x)d^-w<=x^(1-w)*(1+1/(w-1)).
+ Splitting the exact centered K_r*mu_v convolution into that finite sum and
+ complete tail gives C_L=[1/(1-v)+1+1/(v-r)]/theta with power1-v.
+ For0<x<1 its prefix vanishes and its main is at most x^theta/theta,
+ hence the same envelope holds because theta>1-v. No ordinary critical
+ mu moment is assumed. This supplies the generic actual-source C_L=21/2.
+
+All-real prefix scope includes x/d<1 centered values. Every source unit,
+dilation coefficient, conditional periodic moment tail, and shifted inverse
+divisor is retained. Exact normalization cancels the theta main; an interval
+for R alone cannot do so. The new signed target is always OPEN until its own
+uniform bound is proved. A bounded inverse to the periodic operator is never
+assumed. Two preconditioner copies erase the registered RH pole and therefore
+cannot be promoted to an RH result through this bridge.
+
+Success criteria for this experiment:
+ - Independent replay of every emitted program and complete remainder.
+ - A machine-readable OPEN centered-Mobius target with its exact source binding,
+   all scales and constants, and conditional RH implication.
+ - Retain the old original-F obligations; no circular endpoint payment.
+The full source bound and RH are not success claims of this partial experiment.
+
+Run budgets:16GiB address-space limit;120s and1,000,000 charged operations each
+for the new producer/checker. Exact source admission has its inherited meter.
+This symbolic search is small; process parallelism would add overhead.
+Sol6.1 agents have done substantial independent backend/checker work in parallel.
+Owned development receipts record all new tests; no passed old suite is rerun.
+The generic finite_normalization_backend_040 prototype is retained as supporting
+grammar work, with its own tests. This actual run admits only the periodic
+reduction; it does not independently admit every generic finite bridge.
+
+Outputs are written exclusively to periodic-normalization-results/pilot-001.
+Pre-run code/protocol/test receipts are copied there. Any failure is preserved;
+the same output directory cannot be silently overwritten or rerun.

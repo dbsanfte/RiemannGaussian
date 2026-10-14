@@ -1,0 +1,38 @@
+STAGE038: SOURCE-GENERATED GLOBAL ARITHMETIC PROOF CONSTRAINTS
+
+No numerical source data is read and no candidate is selected in this stage.
+The input is the unchanged035 source AST and its generated state basis, plus
+the037 OPEN recurrence lemmas. Identity constructors must work from the source
+definition without a supplied successful kernel or arithmetic bound.
+
+For each weighted channel W=weight*(convolution of source atoms), the producer
+generates a kernel D containing n^(-s) for every mu(n)n^(-s) atom. Complete
+Dirichlet convolution cancels each such pair to delta. Hence W*D equals the
+weighted convolution of all remaining power atoms, with every unit retained.
+An independent checker replays exact Euler factor multisets for all valuations.
+No finite truncation is promoted to an all-prime proof.
+
+Summing the exact convolution gives
+ sum_(d<=N)D(d)W(floor(N/d))=weight*prefix(remaining powers)(N).
+The constructor can emit all terms for any admitted finiteN, subject to work
+and memory guards. This production verifies example rows forN0,1,2,3,4,7,16,31
+using an independent ordered-factorization replay. Those examples exercise the
+compiler; the all-N identity follows from the proved convolution, not samples.
+
+The exact035 basis inverse converts weighted-channel full prefixes to full
+generated-state prefixes. Both inverse products and every signed converted row
+are checked. An explicit prime profile is a different type, connected only by
+the complete coefficient-difference sum over actual primes; it cannot replace
+a full prefix. Old source unit and transport duties remain in force.
+
+Output a proof-input packet binding each037 OPEN defect to these available
+global constraints. Exact-relation multipliers can be used in future signed
+quadratic proofs. The producer does not yet synthesize successful multipliers
+or a nonnegative full-defect certificate. A source identity is not a bound.
+Do not promote OPEN recurrences, finite survivors or a bounded helper to a
+proved uniform target. Preserve the accepted033 root obligation.
+
+Limits:16GiB,120 seconds total; source-law, constructor and independent row
+replay have separate proxy counts. Matrix coordinate checks are wall-time
+accounted. Freeze by direct source bytes, without hashes. No old numerical
+study or unchanged test suite is rerun. Synthetic development receipts persist.

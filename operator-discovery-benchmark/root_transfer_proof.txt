@@ -1,0 +1,177 @@
+NONLINEAR TRANSFER BETWEEN DIRICHLET AND NO-CARRY ARITHMETIC
+
+These are mathematical proofs with exact coefficient and inequality witnesses,
+not theorem-prover certificates. The proposed operator's historical novelty
+remains under review. Ordinary logarithm, formal exponential, infinitary
+convolution and set-partition transforms each have prior art.
+
+1. OPERATOR, DOMAIN AND UNIVERSAL LAWS
+
+Let * denote Dirichlet convolution and A denote binary no-carry convolution:
+  (f A g)(n)=sum_{ij=n, v_p(i)&v_p(j)=0 for every prime p} f(i)g(j),
+where & is bitwise AND of the nonnegative prime exponents. This is exactly
+the t=0, ell=2 carry product proved associative in root_proofs.txt. It has
+identity delta_1. Arithmetic functions have rational values and positive
+integer arguments. For each product define LOG and EXP by their usual
+coefficient-local power series at the identity. If h(1)=0, every nonzero
+term of its kth power has n>=2^k, for EITHER product. Therefore each
+coefficient has only finitely many terms and the power-series identities
+used in root_proofs.txt remain valid separately in both commutative algebras.
+
+For f(1)=1 define
+  T(f)=EXP_A(LOG_*(f)).
+It has the coefficient-local inverse EXP_*(LOG_A(f)). For all normalized f,g,
+  T(f*g)=T(f) A T(g),
+because LOG_*(f*g)=LOG_*(f)+LOG_*(g), followed by the EXP_A addition law.
+It is therefore a bijection of the normalized UNIT GROUPS with their
+respective multiplication laws. These claims hold on all rational inputs.
+
+T is nonlinear. For f=delta_1+delta_2, retaining n<=4 gives
+  T(f)=delta_1+delta_2-delta_4/2,
+  T(delta_1+2*delta_2)=delta_1+2*delta_2-2*delta_4.
+The latter differs from 2*T(f)-delta_1. Also delta_2 A delta_2=0 but
+delta_2*delta_2=delta_4. The ordinary Dirichlet algebra has no zero divisors:
+if f,g are nonzero, their least nonzero indices i,j force
+(f*g)(ij)=f(i)g(j)!=0. The no-carry algebra has a nonzero nilpotent.
+Consequently these two algebras cannot be linearly isomorphic as algebras.
+The operator is distinct from the NONZERO scalar-weight transports previously
+audited. This fact alone does NOT establish historical novelty.
+
+2. COEFFICIENTWISE ROOT-ORDER LIMIT
+
+Let P_alpha^*(f) be the ordinary normalized power and write
+  H_alpha=(P_alpha^*(f)-delta_1)/alpha.
+Every coefficient of H_alpha is a polynomial in alpha, extended to alpha=0,
+where its value is LOG_*(f). For alpha!=0 define the mixed-power program
+  L_alpha(f)=P_(1/alpha)^A(P_alpha^*(f)).
+For each coefficient, its finite binomial expansion is
+  sum_k [product_{j=0}^{k-1}(1-j*alpha)/k!] H_alpha^{A k}.
+This follows by multiplying binom(1/alpha,k) by alpha^k. It is a polynomial
+in alpha at each fixed n, so it extends to alpha=0. At that point it equals
+EXP_A(LOG_*(f))=T(f). Thus T is exactly the coefficientwise q->infinity
+limit of the q-fold no-carry product of the ordinary qth root, alpha=1/q.
+No analytic interchange of limits and infinite Dirichlet series is required
+to establish this coefficientwise law.
+
+3. EXACT LOCAL POLYNOMIALS AND INDEPENDENT COMBINATORIAL FORM
+
+Apply this to u(n)=1. The local root coefficient is c_alpha(e)=(alpha)_e/e!.
+Put d_e(alpha)=c_alpha(e)/alpha for e>=1. It is a polynomial of degree e-1
+and d_e(0)=1/e. In a no-carry factorization of a prime exponent e, its set
+bits must be divided among the nonunit factors. At most s_2(e) factors can
+be nonunit. The polynomial construction in root_transfer_probe.py uses
+this tighter termination bound, rather than a numerical truncation.
+
+An independent formula labels the set bits of e by their actual values
+1,2,4,... . For every set partition pi of these labels, let e_B be the sum
+of bit values in a block B. The local q-root lift coefficient is
+  h_e(alpha)=sum_pi [product_{j=0}^{|pi|-1}(1-j*alpha)]
+                         *product_{B in pi}d_(e_B)(alpha).
+For integer q, the |pi| blocks can be assigned to distinct factors in
+(q)_(|pi|) ways; multiplying each local coefficient by its alpha factor
+gives the displayed expression. This also shows degree h_e<=e-1 for e>=1.
+At alpha=0 it reduces to
+  h_e(0)=sum_pi product_{B in pi}1/e_B.
+This is a set-partition transform of the prime-exponent logarithm coefficients.
+The independent verifier computes the polynomials by this partition formula,
+not by the weighted-polynomial convolution implementation.
+
+4. MULTIPLICATIVITY, CONVERGENCE AND UNIFORM TAIL
+
+For alpha=1/q with integer q>=2, h_e(alpha) is a sum of nonnegative terms
+from the ordinary q-fold root product, with some terms removed by the
+no-carry restriction. The unrestricted coefficient is exactly 1. Therefore
+  0<=h_e(1/q)<=1 for every e and every integer q>=2.
+Taking coefficientwise polynomial limits gives 0<=h_e(0)<=1 as well.
+Each root lift is multiplicative, as is T(u): independently split the
+finite convolution sums by prime. Hence their arithmetic coefficients are
+bounded in absolute value by 1, and their Dirichlet series converge
+absolutely for Re(s)>1.
+
+Their local correction after dividing by zeta is
+  R_alpha(x)=(1-x)*sum_{e>=0}h_e(alpha)*x^e,
+with r_0=1, r_1=0, r_e=h_e-h_(e-1). The bounds above give |r_e|<=2 for
+alpha=1/q (integer q>=2) or alpha=0. Thus on |x|<=r<1 its tail beyond
+degree m is <=2*r^(m+1)/(1-r), uniformly in ALL those root orders.
+The correction Euler product converges uniformly on compact subsets of
+Re(s)>1/2 because its local factors are 1+O(p^(-2*s)), uniformly on the
+required compact sets. This proves holomorphy there, before a zero audit.
+
+5. EXACT BERNSTEIN CERTIFICATE: EVERY q>=2 AND THE LIMIT
+
+Each computed r_e(alpha) is a polynomial on alpha in [0,1/2]. Change
+variables to alpha=a+(b-a)*y for a certificate interval [a,b]. A polynomial
+p(y)=sum_j c_j*y^j of degree d has Bernstein coefficients
+  beta_k=sum_{j=0}^k c_j*binom(k,j)/binom(d,j), 0<=k<=d,
+so p(y)=sum_k beta_k*binom(d,k)*y^k*(1-y)^(d-k).
+The basis functions are nonnegative and sum to 1 on [0,1]. Consequently
+  |p(y)|<=max_k |beta_k|.
+All bounds and beta values in the certificate are EXACT RATIONAL NUMBERS.
+
+For m=32 and r=71/100, summing these per-coefficient bounds times r^e and
+adding the uniform tail gives the serialized rational S in
+transfer-results/root_transfer_probe.json. It satisfies S<1; its decimal
+diagnostic is approximately 0.6945190291. Hence
+  |R_(1/q)(x)-1|<=S<1
+for every |x|<=r, every INTEGER q>=2, and q=infinity (alpha=0).
+This proves all these local factors are nonzero on the disk. Since
+r>1/sqrt(2), every p^(-s) with Re(s)>1/2 lies in that disk. The full
+correction products are therefore holomorphic AND NONZERO throughout
+Re(s)>1/2. The corresponding transforms, including T(u), have exactly
+the same zeros as zeta there, with the same multiplicities.
+
+The Bernstein head bound holds for the whole real alpha interval, but the
+tail proof above is stated ONLY for reciprocal INTEGER q and alpha=0.
+No continuous-real-root-order theorem is asserted from this certificate.
+
+6. ROOT ZETA ISSUE AND NOVELTY LIMIT
+
+The construction transforms actual arithmetic root coefficients and gives
+an exact analytic bridge to the half-plane relevant to RH. It preserves,
+rather than constrains, the zeros there. RH progress would need a new
+zero-free estimate or other usable global property of the transformed
+function. No finite coefficient match or formal unit-group law supplies it.
+
+The operator is a new candidate to this detector, assembled from classical
+operations used in different arithmetic algebras. A first literature search
+did not identify the exact transfer/zero-preserving statement, but absence
+of a search hit is insufficient proof of historical originality. It remains
+outside the verified-new list until that question is adequately resolved.
+
+7. CERTIFIED ACTUAL-ZETA COMPARISONS AND ANALYTIC LIMIT
+
+transfer_analytic_probe.py obtains H(n)=T(u)(n) from the generic arithmetic
+LOG/EXP program. Independently it obtains h_e(0) from bit partitions and
+forms the local correction polynomial of degree M. The two coefficient
+routes are checked exactly through n=N. The reference function is the
+actual zeta evaluated by Arb at new complex arguments, not a fitted model.
+
+For sigma=Re(s)>1, |H(n)|<=1 gives series tail
+  sum_{n>N}|H(n)|n^(-sigma)<=N^(1-sigma)/(sigma-1).
+Set A=2/(1-2^(-sigma)). Each full or truncated local correction satisfies
+  |R_p-1|<=A*p^(-2*sigma).
+Both products have norm at most E=exp(A*S), where
+  S=2^(-2*sigma)+2^(1-2*sigma)/(2*sigma-1)
+majorizes the sum over all primes. The omitted primes beyond P contribute
+  B=A*P^(1-2*sigma)/(2*sigma-1),
+and their product differs from 1 by at most exp(B)-1. Replacing the local
+factors for p<=P by degree-M polynomials changes their product by at most
+E*K, by telescoping one factor at a time, with
+  K=A*[2^(-sigma*(M+1))
+       +2^(1-sigma*(M+1))/(sigma*(M+1)-1)].
+Thus the total correction-product error is <=E*(exp(B)-1+K). The code
+adds this times |zeta(s)| to the series tail. All reported comparisons use
+Arb balls and these proved errors. A controlled coefficient perturbation
+is rejected at every point, so this tolerance does not simply accept any
+nearby Dirichlet series.
+
+The q->infinity limit also holds analytically for correction products,
+uniformly on compact subsets of Re(s)>1/2. At each fixed e the coefficients
+are polynomials in alpha=1/q and converge to h_e(0). On a compact subset
+with sigma>=sigma_0>1/2 their differences are dominated by a constant times
+sum_p sum_{e>=2}p^(-e*sigma_0), a finite quantity. Dominated convergence
+applied to this double sum gives convergence of local-factor corrections,
+and standard telescoping/product estimates give uniform product convergence.
+Multiplying by zeta gives locally uniform convergence away from its pole.
+This is an analytic consequence of the coefficient bounds, not an assumed
+interchange of unbounded root limits and numerical Dirichlet sums.

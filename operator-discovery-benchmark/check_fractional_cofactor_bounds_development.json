@@ -1,0 +1,36 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_fractional_cofactor_bounds"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_fractional_cofactor_bounds operations=58878 elapsed_seconds=0.04957763204583898\n",
+      "stderr": "test_accounting_and_statistics_cannot_claim_discovery_gain (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_all_signed_recovery_fields_are_audited (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_ambiguous_signed_affine_leading_coefficient_keeps_upper_no_lower (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_arbitrary_denominator_257_exact_cancellation_after_Abel (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_canonical_rational_guards_and_negative_twist (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_complete_enumeration_no_duplicates_missing_or_reordering (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_critical_prime_exponent_has_log_loss (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_every_independently_proven_state_and_tail_threshold (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_every_real_partial_prefix_cannot_be_replaced_by_endpoint (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_full_prime_twist_and_all_valuation_law_required (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_immutable_base_states_source_and_higher_valuation_tail (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_lower_scope_updates_exponent_and_retains_count_and_unit_head (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_no_root_payment_global_closure_or_bool_alias (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_supercritical_twist_upper_and_inverse_worsening (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_unit_only_operator_and_conservative_generic_inverse (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\ntest_zero_twist_exact_identity_has_no_extra_recovery_factor (test_check_fractional_cofactor_bounds.FractionalBoundsTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.049s\n\nOK\n",
+      "operations": 58878,
+      "elapsed_seconds": 0.12011942896060646,
+      "tests": 16,
+      "peak_rss_KiB": 28120,
+      "resource_limits": {
+        "operations": 50000000,
+        "CPU_seconds": 180,
+        "wall_seconds": 200,
+        "address_space_bytes": 536870912
+      },
+      "operation_marker_present": true
+    }
+  ],
+  "source_observations": 0,
+  "old_suites_rerun": 0,
+  "operations": 58878,
+  "distinct_tests": 16,
+  "test_invocations": 16,
+  "edits_stopped": true,
+  "scope": "synthetic exact Euler-law fixtures and signed fractional recovery; no actual-core discovery or numeric archive"
+}

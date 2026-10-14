@@ -1,0 +1,43 @@
+{
+  "schema": "prime-scale-source-053-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.023655930999666452,
+      "operations": 8430048
+    }
+  ],
+  "atom_attempt_counts": {
+    "128": 279,
+    "192": 2,
+    "256": 2
+  },
+  "atom_refinement_counts": {
+    "128": 277,
+    "192": 0,
+    "256": 1
+  },
+  "total_primitive_counts": {
+    "sieve_candidates": 589,
+    "sieve_prime_count": 186,
+    "sieve_flip_entries": 932,
+    "sieve_square_zero_entries": 230,
+    "sieve_composite_mark_entries": 537,
+    "log_evaluations": 276,
+    "power_evaluations": 276,
+    "directed_endpoint_floors": 566,
+    "quantized_atoms": 278,
+    "prefix_entries_written": 1467,
+    "hyperbola_blocks": 989,
+    "integer_accumulations": 2967
+  },
+  "peak_bytes_estimate": 112777312,
+  "scope": "small synthetic sources/queries/extensions and allocation-free capacity preflight; no actual pilot arrays or values",
+  "actual_pilot_applied": false,
+  "old_suites_or_studies_replayed": false,
+  "independent_checker_imported": false,
+  "all_scale_bound_claimed": false
+}

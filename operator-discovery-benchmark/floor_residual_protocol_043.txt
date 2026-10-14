@@ -1,0 +1,104 @@
+043 FROZEN ARITHMETIC FLOOR-FAMILY / REFINEMENT DISCOVERY
+
+Purpose
+Search fixed arithmetic formulas across increasing support, together with a
+bound-producing conditional refinement rule. The basis is globally sensitive to
+ordinary zeta zeros via its Mellin transform. This is a known representation
+framework, not a claimed new criterion or uniform bound. The original F and
+centered-Mobius041 estimates remain OPEN, separate inputs.
+
+Representation
+f_n(x)=floor(1/x)/n-floor(1/(n*x)),0<x<=1, zero beyond1.
+g_N=sum c_n(N)f_n; e_N=1-g_N. Target families have no indicator steps.
+For q2/3,b in{-1,-1/2,0,1/2,1}, h_N=e_(qN)-bD_q(e_N).
+D_q f_n=f_(qn)-f_q/n. Compile h_N with its full signed cross and exact step b.
+|b|/sqrt(q)<1. Proved h_N->0 along a geometric chain would imply e_N->0.
+The primary bound language is ||h_N||²<=A/L(N)^eta, L(N)=N.bit_length().
+eta1/5,1/3,1/2,2/3,1; A1/16,1/4,1,4. All constants/formulas are fixed before
+observations. The compiler evaluates each final RHS through exact integer root
+brackets at128dyadic bits. Along N=N0*q^j,L(N)>=1+j, so the conditional Young
+recurrence with rho<1 has decaying polynomial-in-j forcing and gives e_N->0.
+These logarithmic-bound leaves remain OPEN pending independent all-scale proof.
+Uniform relative forcing ||h_N||²<=tau||e_N||² with fixed contraction would
+imply polynomial decay in N, which is impossible in this representation.
+The tau1/64,1/16,1/4,1/2 probes remain negative calibrations, not viable goals.
+b0 is an endpoint restatement, retained as a declared control.
+
+Imported rate obstruction, added before ANY candidate performance observations
+Burnol, arXiv math/0103058, Theorem1.3, gives a positive liminf for D(1/N)²logN.
+f_n=rho(1/(n*x))-rho(1/x)/n belongs to the allowed span with theta>=1/N.
+Its zero extension is exactly this difference on(0,infinity). Thus any target
+with support<=N has error at least D(1/N). A fixed energy contraction along
+geometrically growing support, or a logarithmic exponent eta>1, contradicts
+this theorem. No bound constant from that asymptotic is used at finite N.
+This imported theorem is not a detector discovery or a refutation of RH.
+Source: https://arxiv.org/pdf/math/0103058
+
+Candidate language
+434 fixed recipes,4340 q/b refinements. Arithmetic atoms: actual mu,Liouville,
+mu*mu,(-1)^omega,constant1,mu+Liouville/2,mu-Liouville/2, all on ordinary integers.
+Untapered c_n=-a(n), or c_n=-a(n)*n^-beta*(1-(n/N)^alpha)^gamma with exact dyadic
+rounding at EACH power. alpha1/5,2/7,1/2,1,2;gamma1/3,1,5/4;beta0,1/7.
+Each recipe optionally applies the exact cell1 correction
+c_2 +=2*(1-sum c_n/n). This is a defined formula, not a fitted coefficient.
+The API accepts arbitrary rational positive exponents under resource limits;
+the finite pilot bank is not a permanent root-denominator whitelist.
+Root rounding is exactly floor(2^p*x^(u/v))/2^p, p=4*ceil(log2N), checked by
+integer powers, never float approximations. Rounded families are the exact
+objects tested; no convergence claim for an ideal unrounded family is imported.
+No per-N free optimization, coefficient fitting, seed, expected winning formula,
+model call, literature call, or source-label concealment is used in selection.
+
+Partitions and ranking
+Training parents8,16,24,children through72. Generate one shared float Gram over
+complete cells1..32768; analytic tail price M²/(H+1) included in ranking proxy.
+The training proxy is explicitly numerical; only final interval replay certifies.
+Relative forcing negative controls compare upper proxy to tau times lower head
+proxy. Logarithmic matches compare upper proxies to the fixed A/L(N)^eta bank.
+For each rule choose the largest matched eta,then smallest matched A.
+Rank by logarithmic bound match,worst observed forcing logarithmic power,worst
+child target logarithmic power,last forcing proxy,stable recipe/q/b id.
+Observed log slopes use1+ln(N) to avoid duplicate integer levels; they remain
+numerical diagnostics and have no theorem status. Keep best positive b,
+best negative b and best b0. This preserves three different structural roles.
+All4340 records are retained, including nonmatches. No winner is nominated.
+
+Freeze selected recipes/rules before final support compilation/evaluation.
+Final parents40,64,80,children through240. Compile all exact programs and
+conditional arguments and save the entire batch before norms are evaluated.
+Audit logarithmic bound is its training match if present, otherwise the fixed
+fallback A4,eta1/5, explicitly not labeled a training survivor. Negative-control
+tau is the training match if present,otherwise largest admissible frozen tau.
+These choices use no final outcomes. This final audit can refute an
+all-N>=40 claim; it cannot prove it or refute a later-start geometric-chain claim.
+No silent horizon/precision/recipe adjustment after final observations.
+
+Whole-domain certificates
+Each program's global norm is an exact-integer-residue Arb192 head sum plus the
+analytic entire tail, H1048576. An independent heap event replay at Arb256 checks
+the full head,exact lattice,tail,dyadic bounds,and theorem-scope metadata.
+Two processes certify distinct complete programs; no signed square is split.
+Duplicate programs share the same certificate through exact tuple equality.
+No precautionary hashes. Source byte snapshots freeze the run.
+Producer per-program work cap500m;checker750m;1200s producer timeout;memory16GiB
+per process plus an aggregate conservative two-worker preflight below15GiB.
+The compiler uses a2b work cap,1200seconds,400000-bit prospective power guard.
+Fixed finite stencil forcing is obstructed by an independent three-cell positive
+norm lower bound; this does not obstruct the growing-support recipes universally.
+
+Admission and feedback
+An interval certifies one finite program over ALLx, not all N. A small norm,
+downward trend or finite relative-forcing success cannot become a convergence
+theorem. Finite signed cancellation is reported separately from contraction.
+Final counterexamples, unresolved intervals and OPEN forcing-growth leaves become
+the next exact search input, with recipe,parameters,quantifiers and circularity
+guard. Existing041/042/F obligations are retained, not overwritten or rerun.
+For each successful finite logarithmic bound, also replace its signed cross by
+its absolute value and by zero. Record whether cancellation is needed for that
+specific bound, or whether the bound survives the replacement. This diagnostic
+does not change selection or its cost after final observations.
+
+Development
+Only synthetic exact programs and elementary individual arithmetic values are
+used by focused tests. Receipts record each invocation; candidate performance is
+first observed after protocol/source snapshot. No unchanged old suites rerun.

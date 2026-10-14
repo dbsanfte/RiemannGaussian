@@ -1,0 +1,133 @@
+056: INDEPENDENT FINITE-CUTOFF TAIL AND COMPLETE SIGNED FIRST-JET ADMISSION
+
+No scientific arrays, actual candidate values, numerical integrals, hashes or
+old suites/studies are used. All055 and older source/result files are unchanged.
+The new verifier never imports a056 producer/search function. It reuses only
+immutable052 charge-only Meter, canonical rational and strict typed equality
+helpers. Its source is the universally defined ordinary-Mobius kernel, not a
+fitted sequence or an archive Boolean. Analytic identities are independently
+reviewed, not proof-assistant formalization.
+
+1. Source identity and unit gates.
+Fix0<alpha<1, a finite canonical set S of distinct actual primes, R=prodS,
+and integer N>=2. K_S(n) is the Boolean insertion of K(n), n>=2; the excluded
+unit has value-(logR)^alpha for nonemptyS. For the complete normalized
+q2P[2,-3,1] filter t_S(N), the finite divisor/cofactor expansion is
+ t_S(N)=1/(alpha I_alpha) integral_0^infinity h_S(N,t)t^(-alpha-1)dt,
+ h_S(N,t)=R^-t sum_(d<=4N,gcd(d,R)=1)mu(d)d^-t
+                   sum_(e|R)mu(e)W(N/(de)),
+ W(y)=floor4y-3floor2y+2floory.
+P(1)=0 cancels the excluded unit correction. Every cofactor divisor, signed
+composite coefficient, valuation, current cutoff, and external R^-t is kept.
+The quarter-cell values of W are0,1,-1,0, so|W|<=1. For emptyS, W(N)=0 removes
+d1 because N isinteger. For nonemptyS, d1 remains and R>=2 supplies its decay.
+Neither gate allows extending the empty bound to real noninteger N.
+
+2. Uniform normalizer and exponential integration.
+I_alpha=integral_0^infinity(1-exp(-u))u^(-alpha-1)du. Its tail from1 gives
+alpha I_alpha>=1-exp(-1)>1/2, so1/(alpha I_alpha)<2. This needs only exp1>2.
+Also1/2<=log2<1. In either source branch each surviving exponential has base
+at least2, so integrating a base^-t factor from a positive fixed tau yields
+at most2*base^-tau. The complete cofactor sum has at most2^|S| terms. These
+facts, not any Mobius cancellation or fitted distribution estimate, pay the
+uniform finite-cutoff bounds below. All tau are fixed exact positive rationals.
+
+3. Three arbitrary-cutoff tail regimes.
+For0<tau<1 and t>=tau,
+ t^(-alpha-1)<=tau^-2,
+ sum_(d<=4N)d^-tau<=integral_0^(4N)x^-tau dx=(4N)^(1-tau)/(1-tau).
+Using4^(1-tau)<=4 therefore gives
+ |tail_(tau,infinity)(N)|<=16*2^|S|*tau^-2/(1-tau)*N^(1-tau).
+This is deliberately independent of alpha and R. It prices the entire finite
+cutoff and does not replace it by a convergent infinite sum below tau1.
+
+At tau1 use t^(-alpha-1)<=1, the same exponential integral, and the finite
+harmonic sum H_(4N)<=1+log4N<=3+logN. The licensed bound is
+ |tail|<=2^|S|*(12+4logN).
+At tau>1, extend the positive absolute d-sum safely:
+ sum_d d^-tau<=1+integral_1^infinity x^-tau dx=tau/(tau-1),
+giving |tail|<=4*2^|S|*tau/(tau-1).
+The emitted upper_bound has exact N_power, rational constant, rational
+log_coefficient, and natural logarithm_base'e'. Equality tau1 is a separate
+logarithmic case. All low0<t<tau signed contributions remainOPEN; only the
+upper tail is paid. No RH, complete target or arithmetic correlation is paid.
+
+4. Exact complete first derivative, not a prime-only source replacement.
+For each finite N the integrand is a finite sum of exponentials and may be
+differentiated at0. The p-free convolution identity
+ (-mu*log)*One=Lambda on integers coprime to R
+is exact, with the common zero-jet h_S(N,0)=0 from mu*One=delta and P(1)=0.
+Thus the derivative of externalR^-t adds no surviving logR term and
+ h_S'(N,0)=Psi_P(N)-sum_(p inS)b_p(N),
+ Psi_P=Psi(4N)-3Psi(2N)+2Psi(N),
+ b_p=logp*[floor(log_p4N)-3floor(log_p2N)+2floor(log_pN)].
+Every ordinary prime contribution outside S remains in Psi_P. This identity
+does not assert the full h_S equals its prime-only first derivative.
+
+For a signed rational mixture a_i across canonical distinct S_i,
+ sum_i a_i h_(S_i)'=(sum_i a_i)Psi_P+sum_p e_p b_p,
+ e_p=-sum_(i:p inS_i)a_i.
+Every generator prime is emitted even if e_p=0. A nonzero common coefficient
+retains an OPEN ordinary common-prime term and licenses no uniform first-jet
+constant. With zero common coefficient, each dyadic shell contains at most
+one power of p>=2, hence |b_p|<=2logp<=2p. At p2, both shells have exactly one
+power and b2=-log2, giving the sharper rational bound1.
+Therefore sum_p|e_p|*(1 ifp2 else2p) is a proved uniform first-jet bound. If
+every e_p is alsozero, the full first derivative is identicallyzero for allN.
+This is an exact first-jet-only cancellation: no uniform higher derivative,
+finite low-t integral, norm convergence, target bound or RH is inferred.
+In particular cancelling only the outside prime class is weaker than
+cancelling every prime class, and neither is full-kernel cancellation.
+
+5. Conditional full-source square-root recovery.
+The source split is exactly t_S=low_core_(0,tau)+tail_(tau,infinity).
+The uniform low-core hypothesis remains OPEN:
+ |low_core(N)|<=C_low sqrtN*(1+logN)^eta, EVERYintegerN>=2,
+with fixed rational C_low>=0 and eta>=0. The logarithmic weight is>=1 even at
+N2; plain(logN)^eta would not be interchangeable there.
+The supplied tail provider fits square-root growth iff tau>=1/2: below1 the
+power is1-tau, above1 it iszero. At tau1, logN<=2sqrtN gives tail square-root
+constant C0+2C1; in all other compatible regimes it isC0.
+The exact triangle after the complete signed split gives full_constant
+C_low+C_tail with the SAME(1+logN)^eta. No squared cross term is discarded.
+For tau<1/2 the result is TAIL_PROVIDER_INSUFFICIENT, a statement about this
+proof provider, not an arithmetic lower bound or impossibility theorem.
+The symbolic recovery-schema API quantifies FOR EVERY finite C_low>=0 and
+emits the affine full_constant C_low+C_tail, without supplying an empirical
+numeric low-core constant. The finite numeric API is the same implication
+instantiated at one fixed rational C_low; it does not prove that provider.
+The original target is conditionally recovered only when S isempty AND the
+tail iscompatible. Nonempty insertions remain auxiliaries; their control alone
+does not recover the original. No low-core provider is markedPAID, and complete
+target and RH flags remainfalse even when the implication is admitted.
+
+6. E_R microscopic endpoint, distinct from D_S and the full kernel.
+For a NONEMPTY prime set R with k primes, E_R K(n)=K(Rn), n>=2, has integrand
+prod_(p|Rn)(1-p^-t). It includes each prime of R even when n shares that prime;
+there is no coprime D_S mask in this different operator. The signed filter
+weights are-2 on(N,2N] and+1 on(2N,4N], with total absolute mass4N. All n<=N
+weights vanish; the excluded K(R) unit also cancels because P(1)=0.
+Dropping other factors bounded between0and1 and using1-exp(-t logp)<=t logp
+gives |h_E(N,t)|<=4N*t^k*prod_(p|R)logp. Thus the normalized integral from0 to
+epsilon is at most12R/(k-alpha)*N*epsilon^(k-alpha), using the conservative
+normalizer<=3, logp<=p, and k-alpha>0. For FIXED rational gamma>0 and
+epsilon_N=min(1/2,N^-gamma), the licensed bound is
+ 12R/(k-alpha)*N^(1-gamma*(k-alpha)), EVERYintegerN>=2.
+No numerical values or integral samples are used. Empty R is rejected by this
+provider because its zero-end integrability argument would fail. Both the
+moving middle epsilon_N<t<1/2 and the remaining tail require separate proofs;
+the D_S tail provider is not silently reassigned to E_R. This endpoint rule
+does not prove the whole E_R target, an RH bridge, or a uniform recurrence.
+
+7. Executable resources and strict admission.
+Canonical rational inputs are guarded at4096bits/2500characters, with no
+denominator whitelist. Positive cutoff tau<=256 is an execution guard, not a
+mathematical restriction of the theorem. Prime sets contain at most12 actual
+primes<=2,000,000 and product has at most256bits. Feature families contain at
+most64 distinct sets and all signed coefficients are canonical rational text;
+rational intermediates are charged and guarded at32768bits;
+the trivial allzero mixture is outside the search API. All zero exception rows
+must remain. Float/bool substitutes, omitted units/cofactor factors/cross terms,
+changed source filters, forged uniform flags, and OPEN-to-PAID promotion fail
+strict typed comparison. No numerical source values or integral samples are
+used as theorem authority.

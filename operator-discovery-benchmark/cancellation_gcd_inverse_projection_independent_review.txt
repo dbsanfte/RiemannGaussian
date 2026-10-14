@@ -1,0 +1,13 @@
+Independent complete gcd inverse projection review
+
+For the complete ordered HxH rational kernel, define Q_d=sum_{d|a,d|b}K_ab x_a x_b. Then sum_d x_d Q_d minus sum_gcd(a,b)=1 K_ab x_a x_b equals sum_ab K_ab x_a x_b*(sum_{d|gcd(a,b)}x_d−1_{gcd(a,b)=1}). Each bracket is the mu inverse_row(gcd), with gcd1 the unit relation x1−1. No product index ab is used; pairs ab>H remain part of the domain. Zero-weight pairs and multiplicities must remain in source coverage. This is a supplied exact polynomial identity, not an estimate.
+
+If K is PSD, each Q_d is a sum of positive rational squares restricted to multiples of d. The outer x_d coefficient is signed on actual mu. Therefore the whole divisor sum is not an SOS/PSD certificate and no signed cancellation bound follows. Our independent checker reconstructs every pair, common-divisor block, cubic monomial, relation multiplier and complete complement; verifies the exact finite identity; and separately checks any kernel rank-one PSD decomposition and full signed-square expansion. It rejects falsely promoted signed-PSD flags.
+
+Six combined focused tests pass, including asymmetric kernels, zero pairs, ab>H, omitted relations/cubic terms, and invalid signed-PSD promotion. Work is explicitly charged for independent polynomial additions/products and complete loops; kernel/horizon limits prevent silent truncation. No actual coefficient table or bound scores queried, and no frozen previous source edited.
+
+SHA256:
+cancellation_gcd_inverse_projection.py ef69517a01fe7b4a816cc7a5bd3da96c8376c4f9d7dc0fd52bac5eec7d04cca2
+test_cancellation_gcd_inverse_projection.py 0cc6e772ea0f544de8436dd7a58a40cf2c81835eb8ba57dc345a965a786c0050
+check_cancellation_gcd_inverse_projection.py 948d40049cfd40c3f64f4349519171385b3f3bcc348b51154479793ecbbc7e58
+test_check_cancellation_gcd_inverse_projection.py 2f22402e84b6290c5d3f10f19a6d7f9777745d67f448f23ba912b20f3866c715

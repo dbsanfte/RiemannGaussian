@@ -1,0 +1,652 @@
+{
+  "RH_proved": false,
+  "centering_feedback": {
+    "RH_proved": false,
+    "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+    "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+    "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+    "isolated_payment_excluded": {
+      "conclusion": "P_theta alone has no cofinal critical-energy bound",
+      "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+      "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+      "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+    },
+    "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+    "prime_parameter": "t=q^(-1/3)",
+    "proof_status": "reviewed analytical input; proof text is not formally checked",
+    "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+    "shared_prime_rule": {
+      "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+      "horizon": "T<=2*X^(1/4)",
+      "matrix_norm_squared_upper": "93/2",
+      "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+      "premise_established": false,
+      "storage": "identity matrix on the three states"
+    },
+    "smooth_compensator": [
+      "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+      "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+      "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+    ],
+    "state": [
+      "J",
+      "M_u",
+      "M_v"
+    ],
+    "theta": "3/4",
+    "transfer_matrix": [
+      [
+        [
+          [
+            0,
+            "-2"
+          ],
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "-9/2"
+          ],
+          [
+            2,
+            "9/2"
+          ]
+        ],
+        [
+          [
+            0,
+            "-9/2"
+          ],
+          [
+            1,
+            "9/2"
+          ]
+        ]
+      ],
+      [
+        [],
+        [
+          [
+            0,
+            "-1"
+          ],
+          [
+            1,
+            "1"
+          ]
+        ],
+        []
+      ],
+      [
+        [],
+        [],
+        [
+          [
+            0,
+            "-1"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ]
+      ]
+    ],
+    "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+    "whole_signed_bound_proved": false
+  },
+  "equivalence_class": "candidate10_complete_prime_bank_covariance",
+  "existing_auxiliary": "bounded-degree actual-prime edge exchange correction has a cofinal absolute envelope",
+  "full_graph_recovery_proved": false,
+  "not_a_new_source_experiment": true,
+  "product_fiber_feedback": {
+    "implication": "nonnegative prime-allocation transport within such a product cannot pair opposite signs",
+    "invariant": "on squarefree m, every nonzero a(h)*a(k) with h*k=m has sign mu(m)",
+    "not_excluded": [
+      "cross-product transitions changing prime-count parity",
+      "different valuation allocations at nonsquarefree products",
+      "signed kernel and centered/repeated-prime compensation"
+    ],
+    "paid_regions": [
+      "h*k<=X*B(X) with fixed/polylog B, retaining the full d4 bound",
+      "fixed/polylog primitive cofactor height with all gcd and valuation overlaps"
+    ],
+    "proposed_new_production": "prime adjunction across product fibers with explicit occupancy states, birth terms and both prefix exits",
+    "provenance": "PRODUCT_FIBER_SIGNED_REVIEW_001.txt",
+    "squarefree_projection_is_positive_energy": false
+  },
+  "required_bound": {
+    "all_cross_terms_retained": true,
+    "constants_uniform_in": "X",
+    "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+    "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+  },
+  "required_recovery": [
+    "retain the unsuppressed symmetric coefficient/kernel term",
+    "supply complete-graph recovery with growing path/congestion costs and its constant mode paid",
+    "retain same-prime labels, cross-divisibility, shared cofactors, units, poles and all moving supports"
+  ],
+  "schema": "prime-exchange-joint-recovery-obligation-v1",
+  "scope": {
+    "domain": "all dyadic integers X>=1",
+    "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+    "source": "actual_mu_candidate10"
+  },
+  "selected_factor_constructions": [
+    {
+      "RH_proved": false,
+      "complete_prime_graph_recovery": "OPEN",
+      "constant_for_correction_over_four": "243/8",
+      "edge_constructions": [
+        {
+          "C": "243/8",
+          "bound": {
+            "both_orientation_supports_retained": true,
+            "cofinal": true,
+            "constant_multiplier": "7/2",
+            "constant_power_of_two": "1",
+            "degree": "1",
+            "energy_upper_power": "0",
+            "full_domain_recovery": "OPEN",
+            "growing_degree_graphs_admitted": false,
+            "logdegree": 2,
+            "theta": "3/4",
+            "weight": "1/3",
+            "whole_signed_bound_proved": false
+          },
+          "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+          "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+          "degree_independent_of_X": true,
+          "graph": "next_1_actual_prime_neighbours",
+          "original_target_recovered": false
+        },
+        {
+          "C": "243/8",
+          "bound": {
+            "both_orientation_supports_retained": true,
+            "cofinal": true,
+            "constant_multiplier": "7",
+            "constant_power_of_two": "1",
+            "degree": "2",
+            "energy_upper_power": "0",
+            "full_domain_recovery": "OPEN",
+            "growing_degree_graphs_admitted": false,
+            "logdegree": 2,
+            "theta": "3/4",
+            "weight": "1/3",
+            "whole_signed_bound_proved": false
+          },
+          "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+          "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+          "degree_independent_of_X": true,
+          "graph": "next_2_actual_prime_neighbours",
+          "original_target_recovered": false
+        },
+        {
+          "C": "243/8",
+          "bound": {
+            "both_orientation_supports_retained": true,
+            "cofinal": true,
+            "constant_multiplier": "14",
+            "constant_power_of_two": "1",
+            "degree": "4",
+            "energy_upper_power": "0",
+            "full_domain_recovery": "OPEN",
+            "growing_degree_graphs_admitted": false,
+            "logdegree": 2,
+            "theta": "3/4",
+            "weight": "1/3",
+            "whole_signed_bound_proved": false
+          },
+          "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+          "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+          "degree_independent_of_X": true,
+          "graph": "next_4_actual_prime_neighbours",
+          "original_target_recovered": false
+        }
+      ],
+      "envelope": {
+        "coefficient_envelope": "each component <= component_constant*r^(-prime_weight)",
+        "common_total_order": 1,
+        "component_constants": [
+          "0",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "component_total_orders": [
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ],
+        "domain": "0<x<y<1; x=q^(-1/3), y=r^(-1/3), actual primes r<q",
+        "prime_weight": "1/3",
+        "whole_signed_bound_proved": false
+      },
+      "factors": [
+        {
+          "coefficients": [
+            0,
+            1,
+            -1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            -1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            -1
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "full_kernel_correction_admissible": true,
+      "kernel_A": "max(0,min(2X,tau_theta(r))-max(X,q*H,r*K))",
+      "kernel_B": "max(0,min(2X,tau_theta(r))-max(X,r*H,q*K))",
+      "kernel_domain": "r<q primes; H,K>=2; complete union of both supports; gcd(H,K) unrestricted",
+      "original": [
+        [],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            -1
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            -1
+          ]
+        ],
+        [],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            -1
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            1
+          ]
+        ],
+        []
+      ],
+      "parent_id": 13618,
+      "prime_swap_antisymmetric": true,
+      "program": {
+        "binding": "distinct_primes",
+        "terms": [
+          {
+            "coefficient": 1,
+            "left": [
+              1,
+              0
+            ],
+            "right": [
+              0,
+              1
+            ]
+          },
+          {
+            "coefficient": -1,
+            "left": [
+              0,
+              1
+            ],
+            "right": [
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      "projection": "beta^2*(B-au-av) tensor (B-au-av); units excluded",
+      "quadratic_identity": "(P_A*K_A+P_B*K_B)/2 = (P_A+P_B)*(K_A+K_B)/4 + (P_A-P_B)*(K_A-K_B)/4",
+      "quotients": [
+        [],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "-1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "-1"
+          ]
+        ],
+        [],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "-1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "1"
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            "1"
+          ]
+        ],
+        []
+      ],
+      "same_prime_and_cross_divisibility_sectors": "OPEN",
+      "symmetric_core": "OPEN",
+      "whole_signed_bound_proved": false
+    }
+  ],
+  "signed_credit_proved": false,
+  "source": "actual_mu_candidate10",
+  "source_specific_improvement": {
+    "at_selected_theta": "14*beta^2*d*(1+log(2X))",
+    "beta": "9/2",
+    "formula": "|edge correction|<=7*beta^2*d*2^(2-4*theta/3)*X^(1-4*theta/3)*(1+log(2X))",
+    "proof_scope": "Delta/z0 wedge, both orientation supports, fixed uniform outgoing degree d; absolute envelope only",
+    "proof_status": "reviewed analytical input; no proof-text execution",
+    "provenance": "PRIME_EXCHANGE_KERNEL_REVIEW_001.txt",
+    "theta": "3/4"
+  },
+  "status": "open",
+  "whole_signed_bound_proved": false
+}

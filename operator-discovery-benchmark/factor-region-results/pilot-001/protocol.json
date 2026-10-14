@@ -1,0 +1,8849 @@
+{
+  "budgets": {
+    "arithmetic_work": 3000000000,
+    "bit": 1000000,
+    "feature_work": 100000000,
+    "max_n": 524287
+  },
+  "code_sha256": {
+    "arithmetic_filter_pole_budget.py": "e1b730dec869117f8e654712744bc7b72ebaa6d6771e8d87774fe5c48f96bd4d",
+    "arithmetic_filter_pole_budget_proof.txt": "0f32e43a7ceb851dd29a1218424cfa4e77daa8c62f5e5ee57b69b275e4dc6403",
+    "check_factor_region_run.py": "5951deef7f9b57bd3a7dc869415d949bf00336540b916308f4ff6d8033bcb4b8",
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "factor_region_analytical_review.txt": "3a3ba224ccbf05d74fd2805e223af62a614bf1c7038f288ed97985ab47fdbf1d",
+    "factor_region_arithmetic.py": "99652349d4e8a9a9b7bb9e69982a3c33c1c9605516b521267952687dc9a480b7",
+    "factor_region_checks.py": "9a410cd4373bc8ec8b35c352dc218ba8049b5b45a496f9f3ce78af59b20ffd9c",
+    "factor_region_proof.txt": "37679d21f3a685e8519257364f5563d0fe1bc62723edc822690da940437127c6",
+    "factor_region_search.py": "88c8478f55ee73a3315ec6a128f4744b837846f0046d66f3a9814fd0c9b62a9f",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "run_factor_region.py": "70c6465745b783d29dd3009ae5fb153e4a56935bbe0099452fd8ff5cb31bd3d5",
+    "test_arithmetic_filter_pole_budget.py": "2af4abce1e4495f6bb36ab133b7fc02abf15954ba9685fa5b3788bf218945b12",
+    "test_check_factor_region_run.py": "c6ef659cdbaa2ef33f834b1e1979d7cfac9afb9053a1587c28a8d8da333f3d4a",
+    "test_factor_region_arithmetic.py": "06a63d226ce2e3eea4f1fba7907c4af2f4513ba300918df0803d548b7e845909",
+    "test_factor_region_checks.py": "8fa88dcea8a9e638e725d3db8acd2c161de5defbd3f142667c727f8d50767d05",
+    "test_factor_region_search.py": "ee7226cda58503e8000680e3283765b8f85d5da173940d72ba376c570e162a03",
+    "test_run_factor_region.py": "cf1200511777dc74d36f26e37bb6a1b46d3ea5ac72b4bbaae9f836849a573c74"
+  },
+  "dictionary_sha256": "682ef055aadda2791549d2671217d57606282c751a4312fd2e08b3244a38ce59",
+  "features": [
+    {
+      "eta": "0",
+      "feature_id": "a4dbc38fef8cda6bd3bf8ab9c07556932bbae7ef2cce8d11d3d5c447f3b6dba1",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0469511cb2c5aa93caeea76fde04a3de113120577a4324a608791f7b02f2848e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "5226956883ac96ff39f11064809693f30180ffd2d6570d99d1ad9c22c48497c0",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "55c4127e0b4664d0c4a172a22ebc9ed854bbe8737166e7c6f6a4c2e94c233c93",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "57e324fecb9d991eb45f5568ef92558d5d4d009d0612b67e8d95d47fc1199324",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "375214b64a979335f7d5e6ada3de8148e0cd00fc1bfa7b1faa4236df3a1ac55e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "a9b4233e6336908915010ebbd1ea6c44ea1c44d9b99371981d78985ed90ce33a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "243e19fe7c22113a543d02792919c3df98004ffe6e4ae7ca45cf1ca87fccea1e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "62efe7c3476ebbc99453870f2bcc3d04f93ccd63de95faf4b80c0a45ca172c33",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0cb8e1342c7c1f2ae68151dea15bedd4957438b494539ad8d9393648701df062",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "87871c05a8597125d866c306135039666ee29044dff48d7fd2771f8b847a0634",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "26f3bd907dbcb527636fb20c9a25d1d2bcd0edef49ef7f1457c614b74f10bb3f",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "cedb9e936ead9e0a98953bd81b59a3a5c2af84c3382690da561e17ba5b55f3a1",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4952d895a91d06428fbe46be5b9add5f3a040c6207db5424f9ccfadc21ac82ed",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ad6254010d17f0af5834e2e35699eec8589c2d9ac3468b61359bbf4353416683",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "275f155bea74e245c2ce5f05366537b705ed924ec576ba80b6e1523aacdec746",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "50cbcad27ad83651d732b4e6a0b8c049aa9101d7de5604edad7a911407069604",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "cd9181d4f30ce066fec8ebcaa10dc4e6ae87426e971787da73b229215e453221",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "a7022ea6840a322249e682b8b1dfb30edaeb24e5d401e4d46894d77f42fe71d4",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e00fc6a5f0ea59d903a77d327e2d8c440da026f20c01ac71198920dd67c24c4e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "50e2a1c2bd51d548b0fa7d33164fc1caf7e4319fce8d252ec77f0826d27d4bde",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b4b075205e4c378d3df068a8bf5db65cee44e83ee7edabc8950056a9fbbf07f8",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ed3e42fb8d04cc7ec4b397bc13347ede8964e28776f7641ef469241c78b22b4b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "458b8b9a2f756a21ed62edcd91e78cf2b1c61ce050d4501c6e24f942d4471171",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "32774b6ba053c5c1fbe30d5e898a6445505c9adeec7e140e35df4c10839f7b73",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a9eab241d0a3d4fe92cb2111dd3ce5ecac26051731bbe4b12ae3444375804fc9",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3672167cb8b44c91c6970ad766d796a25c87b85aee87f4c155f1379cffcdbc0b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "45daa8eb3255e9a96fa04a12227a7ce8b770d5604172aff3f900850c875fb5a2",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "982530f32bed2d696e613946f65e08512ba20ca33eb923229fa7cf6384bd8a02",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "19ff9658005f750acdcbb758dee1b881e83eef7368c81615c6a4137aafffe217",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "b0ab98d59234b66a58e07ed89ca9f5690f0ed09bc5ec47673d8dacb98e2660fc",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "eedec01811f3fcaf177280d57bee0cae851b3620a323ee1224548c643e1da493",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4cd080b4450f7ebd03c9a423517bc7019847c33f7e983e6e4bfaecfc94521055",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "8e1e35a82648ecba985e009f214b2be6067df391a1a1ce966babe9bf6a43e224",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "78ce50c27d3737c8ef59cb8dc476f777b617025fcd4aed8810b18b5f59c244b9",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a68de7754ac144328be82283ac31607a0b092b6e3bb9b3eb356e4df3b02080a3",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "eea3a5fed2c6f7bdf914e5f0205a0d290b7bc2aa028580e310dfbad1cfbfe753",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1d9305a7b20e33506c56db1adfdcbc3331b263012d191543a2f866603ba8de51",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "09081fe522b8d8ae3826312ff077f530020b652a84f7119d3f08980ce2a99cff",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "ce237f942d0efa4967cc60c69c93039aa7e2fbeed708652a6d6a99f801ecd997",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f9d7eeba9b63c43d037e123fc75f651d2b53ab30afd97cfdd48ab8c408139621",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6b9c6542b314d78f8b4144b66cef7ce44088ea6def807e095f5e324d850a7d70",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "def7b9ea65dd8d2e3005b46084ec0fcf5c56184ebbfbbb0256e2df6b96b99f5b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "be644f11f9fed0fc6e5a0c61b9bf864667af607aefd85dbaf623dca9dd71e986",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f6088c1577e17273d280cef9620f5be42ef18462ce02f230e89f5b6f6af82068",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c40389b4e635f863e4e338cbf9f7bc004ba4571fa118ff250e241311bc7690fc",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "621afa02839cae86e5d5f9c84b7135407ee3b7c8db39c8b42997aa76ae261d5d",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5ada887811b0fb8115a659638eb6c6fda13c2ffa90c6ea9e23e05e07f6f1b7aa",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "f41f2fc40f6f956b781a1518bb197fb41b389979db8f5073d31f91f359c6ab7c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7f8f49a1c537e1f66d6891ee6255241c9e921cdde2036203cd11acfdc65f23a8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "284bb344dd049b5d8eaa590e2ee3d0659db844e7ad0ba87e8821e62f18b50c6c",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0ee83b50a3ce696122e8fff4a965f39deea0ae34716450f6d4a5e2f5ffbca495",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "7e6f1ce681efbd5aa0b775a5ab81baae042dc2e79848a7f13edd9d7a03a354d2",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7401f00dcd707f01605c04285c67cda9c48dcdbaea3d56dd932be693abb47ab2",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "800bfcf8946f1f1128911bb6137c592fef5232852917ac3da786df4c558d75a0",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2b64357293aa22fafaa4f5744b22b4331b593fbb89f676a1d84e06445558b460",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "da801f591f3df2c41d90b9b6c6048e9b38e0a013504c32f8b4ca438b2087f4e8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "03bfd531bcdbc38049a8a146d2a8218790ee327367157fb91933f574cf941a8f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4c7860dd25e63ea6f781949deaf5e164236d4860880d566ecbcacf2262541177",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "431e3b415bb1f4da40dbbe999c2384cfa670f364d159133dddbe3624e41d1212",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5f274e83b1b857bfd35995bd8b5eeb72f0dcd23a1481ff8c5641d56ce9796f10",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0680acda3d6a70f4c6a09c65e86624a0c6f648396300a415441937cd96b5b66a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9af5d7703ea8166b7441ab61bae2eef838adf4724e63072d6f8b8319d33f5e72",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2b2fd1bde74eff1fe8181aacf10cb5906399505574aba62cf04804793c5c6568",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e5b75ae274dc9785d806bab677c2cc7e0e22ca5b99503b39d70807fe2fac7206",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9187198df7bc29a4ddd6cd1e5cbb403d9ae0c67f27dcebbe3a7e56ef52f892fd",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "22adee9636d539e09b22523d9d34998a6583149811ade7d98345de524952879f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "273f006634db2a8c73ed90f1a4121eaac463875455cffcb878011d654658ff14",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b9aa11e31f192149005cecfa7f83678e70cec2617141493f21bdd472a4b9d1b9",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e8fac809a67795d9ce93685b337a69a3dc1d4e99c89754d64c41cf9b193ebb73",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "47b7ba958c57fd35df258eb16c53b3c6f558b3321006da0f2065ab47e9136aab",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "af9b5b5819511ff56057733945530a593dd41156d07281128377a1385b385c08",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1a4abd749f1d471ff07d6ea6e638da9d5a81f440d5ade181801bf6345cbc4340",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c9ab637d457f1c136efecd1b336e8b45a91c03cb18cbbb4d52f4921c3d6a2f4e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "8499added4e534af34bf68ac5afd6485b75a9e7371de3ad0aa76f29597b67383",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4369d4f734c85177ab6193d247eb14fb9201d5661431499bc5862d34437bae7d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4d6ff5ef237f6c18ac4a376fd736aa1ad84e4ddeb636e05964d01dcc422dce1a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2c2cb3a2df4e2e9918718b54a073ddbbff34156d245f7abfeda8dc5a0f935a03",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a8b0de4c1184db98dccb992a0bcf5e19c87725c9483513b9b35e8cee86376b4c",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7e86ecba35177626d4857780ede5f6f63d6dad6d38a00c93b156a5805b8d7310",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6364262ad2afbe5e466c1fa972b8d774fba5b01d57483c9ce8b6ad7b79d5bdc4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "089eb3299cd7af3707f69db1b480ae02f061ea75a3a3e5f36931604a26802e74",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "df3256f2b47ff991dc2b15e80ee6eecd27ebd79231d61750e29a2f9adeee8ca0",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "86ea6a46db14673d83bee471b140a285480344ac61771a9dd6b051b5a8874d50",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f9f51356412afc07e93b511802c8b2e1ce4f5cded102116a4b3b407c91f7023b",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fec20cef3211a6f8cd25be28845c8d64ba36bee4fbbb61814b06583fa1782d26",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "41438f47cc762ece0e4f2e2a80efb445e3478e37c419f9b3d6b22bbf88806143",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9d98c3de99bc4702c97f1ea1a6f0989d1cc3b77a5b73b283fcf0c8eb618cdc0e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c62a2e17319b67e262a949288d1d947e3aafbb267cb9ac51ea9444be8c7b3ea1",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7eff12d6723aac177e2eea0f4b5d85339c8659ef626526b4ae3ed35a39422509",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6bd7f0ad8d97f8112db64450d1808728b433f3198f5461eeebdaf78dac8b642d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "cddb8e0979765b443322ac4e02be9b200f9ec1009bc1122b505d6f68470173bf",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5a7e8de2e440b6be10d0bae6b9492163d1a5c4cb15479e4d4db5121699122750",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "b8601fc8364c93c9e832d68b51f0a0a4b2121b0541ccac0e5a746775ff70f36d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "cbad8fbde8d7b6d72b4f937db354ff943942e0ec5df33cae1e6e45e4483f13ac",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "316f347022b52efe07033b84d1b55328f5024baf762082b1828dc065a9414929",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "74c120cb2f333cdfa4f6d61efad6b3f3e1dc262a908525348cffce0b66f067da",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "1b8d50a341f869ccfcdc4ef9b10b4bd5f91ebe148f93995b26efa7b4c1e8c98e",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "d2c715c148ed4e5b31aa896d496f8467c69cbde50ad220bfb84f23d67ae44276",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "379f8e39170b6841bd8c4b88a29d4f4bfa6cd9419a68160999bfdfc7d0305c82",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "d8dca3f5bce0cd49e83908b97fe797b9319bf1322e77d84701a7c62f32e8b6c9",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "00d8338ed229e111fd4b06a7563ec5ea971216f156109d79a80d2d1486f21947",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "bcd5c10ab57f734064805c95b9796766c54f952b4b1817af7ea8dd0c80310ef8",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "ea7019710092156769592399702c8f180259ae1872d3ddb2318e30e417334abb",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9475efa474da55f1ce049d18930e8416e6f8059f9cdd44c191abc5641f94750e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a65e6b5460a2b094f42665fb850ac2487eb0f2ced797152a677cd839b544f104",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "35f4e5dc124d4c14733810d7f3e264d2d09da6b0ccf006c2d39f998975d672f0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f121f15f913ae4bf8565882e851be4299f41bbd0b408bef685fe2de401b7b2e6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "eb877725242be48e210a33a7cf170603c4a2620733bc2e53415d0945989f405f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3571ff730703010efbb99f06c9f020f8a4a52747fbb18e73999a13b0558d0257",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "49a2f67c01b4ec440c298d5ec32200528ca787f87584ec0838996f74e597ff63",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b718cf1228cc3a46e4977e4608f934a1da07888cf541ef62cb2bd69985145701",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "b562fabeae983f1dfe0cdb060660b4a4db1c327f5f422e2212201653f88ed60e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6caa0070dd8707b4b2e3918ee9c293c2316962d85f2768b7d33f40661f67d14a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0a949921a62764ce89a70d233d9bfffabd7979cceae0f50ef9566622e9faddca",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3823da7ce7f614ac93311684b7cadeac02a7f0ffa9ab14af3c4e10b8e5b9d4b6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "cf75e966f3714fd3deac7baaaafc22bc5e15fde78fb842429ffb00128b333419",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "171d026d9889926a21aabb0e90b9b2e5fa8afa7bccd6665fa362156ea11d9f0e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c7fdda8ed4c2c947e58571698b13935c0cd9877e2a4b1874efc531569a476eb5",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5c961f8ac49c07d9fa9db5f6aefb2770094668e6157f3612086fa29313f6567a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2d68dcf17aca3fa259be94a465b7bf53e22475d724160c04afafc0c31e736877",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9642b76b175371802e65e97b9ba64c65fe4ccf9b4d433daf3105543660981d7d",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "5b2dcfb13fc13792a3f40a5d4129c1ec4f6793ef95617a3818a433cf1789357c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a9b774b2ce4bb9bccec458796549e1ce09e53eb18c9fe103df05290a6a8ef460",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "950e700a9a4d5465c128671ea9f2d09d129e8704e6fbe2371e89d1a84beadb0b",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a381e63f8ebf39472e609a9abeb152aa2a44420457806bf5813ea358220bcc78",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3a072422af8574aef5c4f322768713eb614429ad3e5e1b200b92c469ff715f1c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "fdc3ae912c21ff37b8b021ba314163bc0f7e3f9bc9b1b419ff93f01a6bbe3672",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9fae5a61056d7ddf934fbb76c61bbe47679ab91bf91e84b34e058914e7a1911d",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c76e3a66c55aee95f6d1f038b914999365fe805dd41ad9fc9ec4749b10f11b27",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "1e6af40c59aa3704b7a283c7fc042a8c88d1ddfc4a407d14ef41c28f26cf2205",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b0868f594a216fc6119c857710051687e1343777dcacf1f431164bc4b3d07ad5",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "240cf0efa0731e7653c167d7257f7bf9c4b2557ced3911c03b8296bac95196b5",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "bed4ecb34f10831ec514febcb2e03e9b5b04f3c8e7d308ad0a4829db08595fd2",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "27de45898a49415f167e45ebd171264e41968b537a51eae5b04ec94104c33f28",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f0243f9b1f1347573a97f10eb40e23e04e01809fa2a32d18cafbc1940b4b69f6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "bf5b3622e221cd2a0ce2b323a6fb78474f98dacaa3897dcec11ed6a87cd76654",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "79151ec19ef5fee44313657fc985fbf82c5080f9175a7f33ec88546368c264c5",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "42603ccf6bd1e1c83d8e102b4c0c728c17c0dde702edf24d67baef23124d940f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6859b5258ef7b1760859b7a021ae9b924292ca55b38b732af9a4e221cee34317",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e267b83ba0ad2b2a7533780d860df697a7a145ed87fd440d59307ea9f80dff1f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c258ce78bcdcfaee1a554abcb8989deb98b49c435453f9ef4eb12be31be98ffb",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9b35d7039920bf57fa240433debda8eb431220029961f1fd9e3687440b8dfd1b",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c35f555c64dea943ed39431c5c92f029946380a1c6c2462f43c95b50b1f74775",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "73cf45c6ef72d64b29177a49ac5bc977d39c1636400f2911a77fc6c32261cb6d",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0254018d1a7177fe5d0291967bf9a7d0944dddf8ca8b05de08f19844139869b6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/6"
+      },
+      "scheme_id": "89862baad1d0d54f5dabf4080c5e000fd922f0939da94993973307670246318c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "58653e41788f0e4ad9272345c2cb6bb6100f11de990b793e5a04ce70a0e8ad3e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "524aad6161e64c68ee86f6b2d0190bffd07b7f32796349e37518a29bb57f6dae",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "8e69da6c1395ad8f40b80ab32e62a81abdfac94786fc9bfeccaa48f7fd36c7f5",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "74470772c950b2f26f1f9ef39c456e430f0a19fdad075b51129d8d3e38cf571f",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "25a4019a6980c855540b2e352356a54fc77a14f748847800ba728d0ef5314ff7",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e8689010ae2a7e0f3e9766c72c80a2b482f7653c381b2976e74f3943dc42bedf",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "babc0221a7c69575d0d376c6e6a7f7cdcd9359dd4ac275b7dc08a7b3f7100510",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e042e418cd9a8f4a1718308198643a3c134ee4bc19a19f5b37a3b9910d04407b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6f3a489b567dd95908cbd5f52144b41b170b974f8e8afe6980e8f75d2615751b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "aa2674517a860ebe2591d28a327a8bbcade987c9befb4b35e0860d4f0cbe523d",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f5b75b8ed145d5a7b447c318cfb78faf6fd7eadb971ab5a94a8d856e73843073",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0d9e8128837b3141f63697b41f60a4dd5bb778c8b90a6df262b008b23ea4e82a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0be4a7e17ce6cf117063c5920863c9a60dc214d327a46b3cbbfdff35670af8c9",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a94c68df89b5c82351e48d3ef9720fc2047659253fc57cb5b028053ab44648ed",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fbe0918b919308bfc51c6bd0f4b1e9da819c4d461b93c92e70d4d94134b083b4",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4cf5563df22798793bb4e3225a99ac7ec84a1b65b25c38a6ec77838b50d81eda",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "53f2963a87783f336a49ddd99c00024ad12af96c283cf3b486f738a2261131ea",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "98859b487d85fc92d9f0cc5503c6c1d8b3ddbf2c5b77e22c224b6997858eb372",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "80de3f837b7fd064659d6541222086870d455a1786439f5cbae6f0c4b30f571a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "2be6d74d948f6d9295e6fe92e48ed86d49e61c0335b33c236d37c2ef1b87a615",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "eef4e12bca0baadeeaa562da25dc2d03f2cefb97b6260b34b2a2173ef908633f",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1b618cf3a95b3019e3e11f6cb3509da36212d4dcd31489f4b0f180bf05f1a250",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6288ae002685929add55e0e0637a4d26efb96d75b68e3e368eed801477b148e4",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3a2ed3ef3d15184488f3ed3ae38d11942205f833068421466471b07ed180a28d",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7bd440cdb0630baf6ddb2fde76076c4b686442d090354549f11b6837dc109ee0",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4c216ea46df0a0b7459ca15a127de5d6211f17e74149ff0e2a18fa248620b3f3",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3583a57f7e1118516ac19b99cb349dede7ff140a0663a0293dd49e7fc3ce2524",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "252e69632c28ae23e0a358c967c084cb92e6ee397f56566c60fffab0f9b7909c",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ef9560b181ea013dc2f416cadbee32064c856dd77d7bda62eb7a3e798306c4c3",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9a229d584544962dea216743773839e039d6423d1df312760cbd04c9af97a325",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2bd78cb7bc72614f3e1563ce78cd44374e97541ca6496c811f7f87b83717fe90",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "aebee85fe7107ee644401c7b066bdce1ac7b64b625beb2b8e0820343e6f9d376",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e047e4704108846b8b9a1eeb671fc75e44f896eaf942bf8727213df662d124da",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "cef59abe87a19df777020dbab3807c8c70467d19454e41e534fff1582313d363",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9558fcfd92066659730a1be4037de6eefc91296a87da0476e8452bb2e6196631",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "eadf12378d39e60a0e97bbc1c126899219e576ccd41332a18d9524e032746a90",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "5c57ddaa3c61943ef1d6c1b278c9fff543590a07351b218a364e5ad8307f502e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1c104bc66a1d8b112943d2a72417097fb8fc5f30d21812f8e5189dc230689246",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "562a8ef29e1a042a81de2ecd44ad429071b655c2a17af3208ad33d849a454481",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "abb58d83fed533efd88b28d4c3b2642b52f6ef385146e19417ab017579b0f280",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f6b561976007781c2ab159c36c465dbdb99c0c520c6559ef00381af3c300908a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "05d33c5e71b8071b2be8e8a49a783a5e034a8541a4d14abc1382ae56669662bf",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ba4aac30d70cf7158a522a54a319356799a5a50e941eae526aee648adef527ae",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b88628ebf4150157aef1d5210f851818accca1879bf46b34039b15c79d6023b1",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f9f67fc9c09b9d51198511f908d93e92de0a4dd36b4696f568844ec4eb73bbfc",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "2af5b9a425e685daedb2312eb92e09ddc429bbbcb5ce91812970ac601a07322f",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "59d29f50566f30edf5f31a725be18a80346e45a9bde6643d69aa0333605c2ef3",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "fddbfb7c974dc5293168734f3f6323c4e7549d60064ebf4e2a6e57f81b903c2a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "29e9b259980f031a2684a55df6038ed4b856386b58e69ce637f7cefd7931bf91",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7b92876b5b862ec9510d70014a3dad3e56526b5436a187cc055eae11703e7e2f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "eb6113ef63f5e2a63f2be73ec0fb32f9eea06ec9744f56ca918958ad11eb3aed",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4c39b8700f3caf34ec3daa181110186b954729590f2114d66228260d6282d5ab",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "895437cac5c53ad941b89c389d0fb963c21f4869f20913a378eae1cb6dcd192d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2c4938fa8087575ddaa7be704c9e8147e601102976369ee9ba9005b990076fcf",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b1522ecaff8f39ed571dbccaf5ebd37085c03682cac0f5e789f77442c7944d78",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4b5bfc5a872065752a5ae0f3923f150c4d3a947062b42508c98844561a3daa2a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1a7a704ad871f331a685312c2712b3980e97e4dd5702deb6d2caa9f8f9136dd7",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0bb33d59778cf003bd631b01d892da4f35014567af447965d2397e9b0be80b44",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c7ee661383fc154c81ad1593ac70067e66469977eaceae0327a575d8affefecd",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "d22795296ec3cbfc3f37008662af1c744a632b38c5f105fcd6371c114052d9f4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "547e7c44ce9483507b1f564a666aeed797a5e0adc49afb7b73363d08370a85cf",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9dab72fa539a559054ed001787c62a1fbc96629800b6fb32f70a4b6cf56ade35",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6fbea74ed063daa83f54e82722e05598bf92fccb18ec87a14f209476381de86f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "108860a02c711a189265aac6d90b9c1d413034e8e9fa731a04ecaf0366901ad5",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9b13b7581f88dbb8e8295511b1f735aa9c56ec6c5d241e104ea7c415e568c886",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "1f783795a21dfbb0176d663671928962335a639ef60fef9eb8e2fc55748b636a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5dba7232931508dfc99f75836076e5130ba1d239aaed9e9b9b1e8248d0c2fba6",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3482930e70ab1ded68c4c7b8d0e201a7f2652c7ea3144077384044f62e9c3b15",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "bd345fafca3fc97dd42003bf522684ee1b1f5ad963a8352abf1e955f137dd283",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3c04af162f52733eb66d0ee16acc1489a234a97672f672b2da4010a1637c4636",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "516404ae30db5106e85622588cd31cd2e9dbcc200d4b525f0841126aef183754",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7eb606bd851f0de9892dc7971b002dbf0eede07560c79a5c8f3e7afa9ee3733f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "efcc2e62d519fd26490fc6de6837427647d1d415945375a020358a1239b9a6b3",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6a6b3cec13180b9c53abeb2b8b5dada90d5ab79e1c1d87accc627d1d76a8bd83",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "054dc8280741b8fecb9f37dd26b32d6d94122806a4d2df38474017fbd39983a5",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c18abbd2490e02fa5089d9a2056132ed64e54409bd23aceb6e66dad2932fb7ed",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "2674c20912400f910e3d0b0e396344001fe6e96a8d214b6da2e6304fb642dc5b",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fbfc923986d3ee7f3956c52afefa0d8757ab289292de76e67353ac5cd2c134cd",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "cb893838d395bcd70c1a7ba3b589638b50a20fb800e74621482aacf5624d27a6",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "857863634fec8525fea840e997e4abd75dd614e4f8e58039e5312dd9f327bbe0",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "cec90da388b7968be70484e8930a1da2cbb065082bcf8209a7c159b77e6fab91",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "879c75bd3872ec222b531a6fd9064cbc6f4bd46c6bac1690ed6cd38fa57724ab",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1869285c036411ee41dff560c28382e4745cbb7cfb4b210e96171d2a4e23762e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "480c085f687d20e05ebfa51e2906a4de12385d802086d7304280ba74e1cbbc19",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "335cb2464d69da5328c8b7fd3dbbf6f29beb3b44805d21d697831990a1f2803f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "afdea9bfd6598c3e5208f6a930dfdeec9bc991853d59fd20504cd2cc54874626",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0b528e9aee2ed4f5af6bb304135567f41432c637ae1ee7633265d2b03cc942db",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f5f0f2793f6aef92ad6f018d7e588a32abdb1d8f4e308119ef85582207e471df",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "2e7f2ccfc6fe9524fef4d7dc18832c8cbe128d82a55af3d1330b9e9642b0266b",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6ecddabb985e2655402faa4611c11121b684221b08e7f4c58db88a9a5dcb7c1e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b1916c16d57d6b4bf6c6d7773ee665b532165f9da7da3d50f4b1ed71ec09ee00",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9187dfac09f9ad8e9785c0aa233d949d06e58f00e89e47a9b42f055e6aed1ad0",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f0068e6a3b212e2fd3eb085f57b60169e8d5909814e9d818058ced8447469e07",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "97bbc12788498444503df25577f0c3ded4c21219b9844c85d0ecaa3d94f9ee82",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c1309f65f5a62d9c35a3964e59ceaede9b0a520ed1eab3fbe70bf3fe072319d8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7d218169c9806e0a238767f9797923d205e10dcf3adb077fb3ea67acd6eee463",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "529ee64e1ce1ba5affd8a61e1e0c6c2f7f9b207f59a4f0a2c01c90725123342e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "1d690818b196419d9d37cdd7ec13be3811b9c3a85d5a029fad9b67c4b273da0b",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "b60d250ea2142cf0f20ebc16668b4d4df7c221e35813a1cfaa23aed806d1fa3a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "47e1223143d26b872ab3c58f2b6f0ab0bf45da86b35b156798f65d2687ccb22c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "575858093e1f99c3a0e136d53fb9261db742bf0d44eec3ef3c4d6bf6f36b53ea",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "faacbab86dff5470f6f1bf2741c8f17feca2726475df24e2f08348cf220e15ca",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "92cb6b4d083a1e7ab91f2249186e695f491349d41cf501b0c8cd1414184ed107",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1034073c7955763faa18dc79e4c6acdf20b99f34503327a3dc081399de01d3ed",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "53d00e87468a7c68285f602ed80d70f7aba12d417efd61e310c13358d80630fd",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f7c112b8c5712536077d39df2502649bf69bad8c17d108c7b60f271fdf61e5c2",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4874a4c7fb445d6ac6d0f6dde52477571b5ca709a0d2732f9c134e7dd2bdbddf",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6b4f09b7fffcebbb80fa54c3172b24972092dbe6dc70c726eeb28a2c848bfb09",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e41c5658cd39c88c0290834da45e3cb3747c398239b53497d006d7ab4a0f9fd3",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a55502f761b6799999ae3c170e1118b5660ed06d5ffc512981ee2442972f71a0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "a6a8eb3ca9820a330dd3dc74d75264edaaefda55d5aa0703e89bb02eceec167e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "fd0d19102366cede749e619a257967515556e95ec78165d7f54b6046db432872",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ad125c002394d92b6203063a7139cf869c457fe8b06d6f424d8e95c8a20ce720",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4364f7c4b9879456cdde0fb658ef66b78c10ab9792262856758370d7fa40b8ac",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7b67f0f798bbd93fb68bc5457557a99b4d633e09a0a024c16718a0e17dc3aab2",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "293ef9f7c3f94dc3e49ea82c2e865fde86a3d6d7bc8a6b37f66730fcf5c9622f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "45a9658a0173de6904e5be8bec03e7c3e797d03da17452686b01600d7ef72308",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "8e22d91c37260fdcd823fa9ef7aeaaae8cc400d1aae0ccaa1f11570852f974aa",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "67774d6a00241f50d831989faf197197260e67be9bce814ce1845f8850d6960c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0a7c99e37d7b55ccbb90bd4495ca5e2a91f798bb30f24e0d2d0d1f3254d4e61b",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "27e610c86b6c6f0fc0ee83ee6356188dbcc4a15b75318981bd9dc73cc1b3faad",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "d9b1fdd3b646170b5012fa9af5b5c010d3acef865eeb55313f51bd9f4ea7cd09",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9c4d856bc3c22b86971afb97f4c47dd1e86b275da5cea02b3e8f7e056553a73c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1f6dbf0c2ffe3489f22560769890910b567c3eca3ea977a3bae2adf17e5d6334",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fa62651c58a789bde56a89de75e51a998ed39b332dec594c452e7a5c69c44bf2",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5068d5540eeef05ede6067292ff4b0f8767d3ef9c7079579024b928b22bf6a9e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "a324247df90cff4c4a7ff45c239a5236a75349ccdd5c90512747a809e14e2061",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e6641a4a68b6fa4c2eeb534e147682009b4425a5372116157b35120fa9404491",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6a870d9960c31e06b384d94bdacde2418528c7fba0ff1799365fb7c4bb87eab0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c8bfd6ad161cd57c2a7e376d6a2b7bb1880594cd962f97a50a7366e7516a406a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4ee150c858ed2fe300a4fad977ee7dd727b23d17888a1aea81b4fc4594d27255",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3fc74032c0df4a8b380110d6ca2619a8ed3048864222766c088ec189c86bf3a3",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "293e8bc37389d2e4c7f4bac5eed59d88d79d14c6deb8879b4bd42a5d3ae9d137",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "623f6049743821834be7ce5eb68e5e18b960555ecc8932e7467d2f3c8ff1fbc6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "5ce66a26114a1020b9cf667517bb2b6d7f3c63a0258c982685d024b6f67d4626",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "10332d66f66ae2f0f8eb2bc158246853f07c0d07dd9996d8b3d8030ecec72061",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "807a8db67459b85cf8a0ae909744d62624719df4645ed647121a2be287ceb2d0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "ce1ec67250d6c3a2a33367e20352572bb1380c3689a88baa3a24af67be76fd8d",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "df26ab34c48e00293329cd496080853eef445d53fc98c4ecef505ac0033c2ca8",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "62a66d654d8c51ba28930c1cb1ade68c331a23546363f2a8ce40bf84ca9af74f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4362175c332b75f3f315540060773a8d1ea679c66a58cdbe4435ab298b4fa67c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9927eea0aa608fa6e209c0afc9fd45656d722f25f82bdae7261cd1cf82e3007a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "49e2080a31d661a6691610509de81b697aee4235fa4288f1b725cfe4799e2838",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "78e34dbeceb33e00638e05ea654d1787cbfc703936e74b4ff3de8af59644ebd3",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "0066387f3e5df82eeda88f0a27449869283b9e122005f3e5c4731419990bff8a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "7f57d37d4211894b2c7bdb53700ecc9b9f93ab5577802fa2100056dc24bc4ee9",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/3"
+      },
+      "scheme_id": "cfff814e9383a45e65206997b1437d523d54645545ff6f4b524652b6b711b655",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "40e7f72aa936ec68eda2cc143f5b18be84a50d4f054c56c2ff73229ee7345041",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "668821aaf38f1690549d1fcb6bf9e41ac1cd0713f42c36ab6df9f31e92320a95",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "8d3faf4b8035e880e689369338f1d4f9685fdc22e135b91fc3ab77ecf74241b2",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9f3d8a8a6f60d0916cdea71159273344be5580b3c44eff88b1576dbe289d9141",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "21a082469e78f42c87fbb36a8d7295f0fee1c80739f6769ef14659554427752b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a89506ed20f0a7257845396c5ef0fa2d729a0f811465fe55995b55297aeda2bc",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "86bf54d5a969aba804d00950491840596422bf79e98c5c32d2ab9c03f3186790",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "458ca84332fd1cd2df9304baee4c5a9efaa7f6e5ade721deab13ae891f7a88b0",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3902b698efeb8fa044386fcb1a1a6b0001a0838739e08480b259a12241bae49e",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "95169028eea8c76c7b91eb58c5b9e3ae97daf78a45a82e216183d0f75db00705",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "02f270d7f59b941b86e03164815e3121f8e6f39eeab998b103b9200529630d95",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c14c6ab908090af9c0710470115b24a32a5edf0c26d810cb9ffe3e4f26e4aeef",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ebfa6311cbb530982ec47436105505b18d01dd177d43ec5e1bce3b69d20bd812",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "ec756924809be3661d6976ebf5b30e1d2f9ed063bf4127479d68c43a12a95b5a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "08083a0c63e200ced77c956cee9a79aa8a8b7b64e57e4a0f6c010e4b4b412e6a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "241b1a56681421109fc0eac7d08569c26ecada19a7a2cef7e8637d1b4ebb4f8f",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7397e8db36f27f2170dd9a5436429ea2b165c885c270bd100c6d0ad788fd6468",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "900d8aa1813ed6c53974f992c4c49090563375a8d6fea305469c1f60140bf643",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "67ee06b0f55320bf0eb5b25f69f251094c0d00f55a0b6a2d4ea4d4c41fd61227",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f4d98a88eac512f2737341438410c24a5cf375db2413f7cc36b529d05454570a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "940d2e9c1a9d25fb9976a82c6c03386415ebb67ceb609f503201ff3c4fcd227a",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "890f5cc303b3e226d77572469bec4de597a2ae648b94784cab4cc0695d384d89",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4977648fb76add57ac646d9cc1fdb3af6f202797794b1fd783edbfb32ef37b41",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "7b2879f43498e119c839cfc0564189bd3e4063df13d2b342c33c50d081035f87",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "4be74a0e6b58c5845e2bb1cdbda9a5f4b8d6cd63127c1479510acce936e320cb",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "8217e41f86ee5926d71005de7cd3313dc2ed3668f7ee05f34807eff76455effd",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "cd5ad6316a3760ad016f28d25883c1e01246f94e174f70841fcf0dd4d9603030",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0cbbd94890b43ddb75a7f5cdca06bc688945c830dfb4c5f3de56f170dc354767",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f3e0a17bc01115d54ba75e69474affd162c41320c984bfa2de0d9b27c7a01deb",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5b269bc2b34021801df3c7fa1f4b583241da7a868f8e353d3ec2b8502a01a317",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "a4cbade778a2f2e76cfd42e10464fe621f0f7e28ec6881270719813381ef5f4b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f844ed1681a0894a6e6886faf2a07ab643e80c28c94de6040151b89ba605e1ec",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "cb6ce69ca9dc352a169463d6a21b8817d5afebc019c82f1e7184aa7873133a3b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0608b166bd0136fff50ffb35581120b890ebf90453ab37334bbe3bf2f190f3fa",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "dda04055ac727b1b4d0c26350f6fa10e3d251fa6aefff12dc9ae7bb3de216506",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c8dc696b7d08cbb051c198fafd263694b7913d44b0d5be8b1ecffd4d7232ac62",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "90f88d37e22cfd6b67408a3768f9ecadc3ec901679264e0114a215109726f43b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c9b2c658316c95e6a4d1c4253254567f97237ded232658ea9fd03afd174e1f2b",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c4954df0cafcca8d83e54a7ae36ca3220f376d854f279f3df7e586fbcb4a4aa2",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5e5012e4c5b6fd1d68e15069865ac1b8215ae593eafa30d3d9bdb092f8501228",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3597d7f00098fc31b4919278fb5593bd313170bf1b17e92277db9f974229fb79",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b093c49552d324407fae1caf13531031c08d38b7637fb02f90682811cb679504",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e79bf5ef7880b74c0f099b14106d263dfd60959e33b5184d5bf64794c649d6d7",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0b51798f0a20a34f0bad27dca8d1dfc83dec14e0eec61a3c58c12f750cbf8e34",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "5163297f25ea5094b9bd1abb48a589b66d2b01942276f3c6ae911772915bfae1",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e79e2c8543a53a4951f8ca757d2762c1c7228095f8da190ae3bc9d007c4d1d31",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9efad5bd62563bd740609c969a21096b75e8e4e6c248c929fe99c964bb44a7ad",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "ff7515e625079fe4aee7d14f99ec21802dd990f210b31d770a0c65145f8921da",
+      "scheme": {
+        "core_power": "1/6",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "969f09d7319e6f58780a05023940334f9db40e0fa51fb07ff409017e8aa7598c",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "d1d4adfe615a47b3cbd615cccecd75cae43c8f6c7509b6225fabf40e81bb6e5b",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e34e6920b0d30d7b5f2a5492978a23787b46180d3d819f0d920a836fbfaf56f3",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2ebc96246c2dcfbcc91220c37dcb5e664652d8569376ef0d54dbf3d95abec2e0",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c488e0fdefeed506da81e234cd2d9828ff57c0b7838cfff11558c1f400ca6295",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "db3eed94330b2d0b626f762dd0366e8185d5d3e7fbe27583b23cd3bd96083682",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0885ec1a917ee786e3ac78758d170a9f1bff866343fe1db08d2614e199901459",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "1f987e65457a2adc067a07dbc6a12421d740c24fa8e0f1f5f4f95ceb15f47242",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "a95e08f85806249b51c251091dac9e1cc22b1f1c20ecfcd4bcdb87e729455f69",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "764b32c857c9056071a522b3506c46aee56adf3e9ac8df9260da24e981f45f1f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "941811ff9b73f4d72209f763041e328bf7a8f0f1253292ffea7738785c1e26bd",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c5e2508188ab48ce0aecb3c798534045b7194bc778128b11d7c0335eebec2f68",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "446712ac2225c29a4702fa4c9140edb9ac464bb5b19ef86bacc1334672290bc6",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f0c41971395ac37af646541959a02f372ed128d4a45a81d83965be32b19e8433",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "d946a19eaf143f1e818e5405819eb09cc9fe80ffc58fcb31331af4c6909759d8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "1364c55aaecbc0ee741f37e4fe1774180858dae14b62bdf217af47007347183e",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "1c789a5e4866f36fa1e91afe23b60f832618ea35c75a7f67820693176373ce16",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c07dfbb4acbd0d1e9c0bd89636c0dfdbb15154640b67cf99b9198224e30dd7f4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "9eaedcd6b5eb00ff290c2d4c9a6f3c04e58ddbc5a7c614584c64529d7d3f39c7",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "3807fcac11c204ecee6cfb50df6a4aa6f7605dbd33fdfdf4c6524b93b96635d4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e12ae43caff77f31630c1adc0c3023eb26ba4760435bbdd4623589bb890070bd",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "d3adf80c2728be8c9c07f889d649c264cbb96845dcff338418e4cc3d32cb02b4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3d13bfa164be5516fc537e824387b626baafd455e9c7d8f8488a5216b72c9384",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "41f0d9f30ba0c123745130f150b831862401314917fdcae43537642c845f2467",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "76176bee4a90f729e11b5e09515926322028ea7f62b0c37623e3d0e8f5c4fc7a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f8b710959e233e7327f8a17958393078f48b65bb717c3522db5918448a7ff183",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "09cf7f3717842ccb22a4a87c0f7051e89ac8dbbc4650b32a4f9db8ff59e4ef2f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "143ad1cf2aec8c440ce3077382ef823337cda4f2c99a895bbf552dcd63f885e8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c6e0ad56c017e9a0aaa06c8896404a7607129cbaa7af94fe833ff42b4e5c284a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "452589a176e321a980680bcb820eb9c8dd17fe752729a5013b888e3a786c1cb4",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "f83dded80d6b8dfb54e6a5544cbd3b4b732876ebdddccd2093098b4c9d2e0864",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fcf40d6e88fd0f4a32c7987ea6d55d00e001fd795f780560fabfd87177576a2d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "474edecfc1b85b6af206bcca259d23327aba2e00c91c60157cc13034bd86861f",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "38a4fc37688f49852b6601348bb85841d7c953d4964f5d3b3be7367b62aebd59",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0ef9322bf06e387e52c1bcdc6509402afe26f08c2867ece015a2285df8af0ad3",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "796ceb6aca9e59b224aa1426493c1c6a12bc9e9a7f0ff7b5c0693abc05e7736a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "15812f7a0639b6227d40c48ea4822e78251149d5f9665e9d7cb6e7418264acf5",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "dad4ae84b2910212851324513d5dca1ad67fe0318022c76181b895f607e24229",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0060e190db57ca2a4944a6b8380c155ddd0e6c03ea3ab9db3194e60af83a9515",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "411da1be445ac0e85dddb5828e0b28721bab602b50eef4a4bf44489149ae2f29",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "3ee67998cbd0341dad11c067ca2e71d220bc40fa37538f4bbfbccb894d986b4c",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "60ea27a7b7c643da9ef9699a7023ea3fe587cc2042fd48f319b82925d9f9f6c7",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "db48dc12599ac22d7cc68f0e82da76de9aed25dc93dd9d8258d06d3305fad23d",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2f36909ae4b29155b98d3aa7472d04f7d1bb21f5935faf2dff3fcf16cb602e9c",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "4e83bc5a0ddb780f690faff03570fce58a6995359c0257bb154c35b8616573d8",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "2941ab6df4505323224f2d6bcec208d3dcdd86863d9d5baff3553e5060527906",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b71663bee5ddeaf6d2f1cc609cff7c4cd2d3a95687a6b90a39a37987bab32bd7",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "e41aeb605f0c7da30d74562825689f7c63ade64fb5fa12cbfe29b621eca95864",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "e58857e4cc3235be2733e136e2a418e35a2375c4e634a80882571fdb4b3bc26a",
+      "scheme": {
+        "core_power": "1/3",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "1108f994c51036145f2b7fd3f4eb86736caa40ead3ad45effaccbd4f9bb38bed",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ea494530b17d14d41b3cb07ef827f3ffbcba0ff0ebc535365cd29bdab5cd7bab",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "2ec60a6c79ade8cdc175bceee0046dba93cdcb57ecd7ca8c2ef654e5c593788f",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "928bb74ad710a988e012d12d563a38eb403d64b907feaa7ee0f862e818d9cf35",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "847b47dade7ebd1b80aac934ce6c65a01107ab4d316e27bd1cb7a6f9d0a44596",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "8e2f017db83ea10a9f9eae6320e304342b068739418487c578c54b4de07e1174",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c96e8353b2198366bd0bfe1c7866574e130648b2746450e93e17091290fbdd94",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "9c220e1c77a2784f640033a177b0f99854fc099f80298a9053bd66d333420972",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "5256c11186985f074816ffe069ca42bda3f883021e4c8a7d1e540b9aaae40d0a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6680cd33df4538f093657b151a6e793fe827db0396ce6521f59bb4c1a04b5864",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "81cf5cbc33aac2d8330e7fa80dc15c69840fbc83d52b07d2fe41d026fce51c8d",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "72dfe1813df3b8d259fe9e9c15ce6337f30947238625b282dad638296b03b1e8",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "43316e66f0df14dd6223b5cf3871f45f136b9229fbf4c31b71cadbe5c86d11ac",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "25f0f0150d0035bbaa1e4f02f8f4aa6dad65c798a47c505eaf3bb520a12bfe24",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "418d043fddb77f9651439a885f6e2e95bae4a18859062a42aad99432c53b7770",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "bf38e73c3a6498ec9fe8dc67fe25232f8254ab47e68887234f2e7724476e8f5e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "bc4f75f227c52a5ce9988a3f7df5aae7afe7903b3f1f8c6d347da3c9fa39f2f6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c31aec6e8f31efa076d213f6d01ef32872bd7b1298a994ef1e0c5a161ea0a084",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c70d50722122d03edb208fea8effb154255065cac7305d70fff8590ce57e65f6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f81691034ab945272c1900f91ca50cf2fa862f1e19be6616d0a23226f880ae88",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "7787445fcc8ca7cf6cfcda620aee0f21b5ffc10c37a1f3b31941c1addcb342d9",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7224f4864c57417f8cc6595ffbf6b0381189a356769dbd71dbb93a18e84cf80a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "bb055b1f45bd46f2df64ba6ec20faa874b6f6b4fc68075a0383cf1dc90e8b0cc",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "ba4bd9d775312b9e6d565768f974a5318042a6b9f8c44ca1926aacfd608385c6",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c98e87c76d3f2e227f782fa69adecf8a7511644e1c05a9e7664a86e6360aced9",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "038eee0376a00ed8358d7d50d7426a73aee31a649abeebf6c77c8e584671167a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "142b5879cff03e207f9d1916ffd388322e3c0aa3c9af0607c2a5ac8822f2cb8e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "60529d0f820151eaea05d09b73a52f17d9ad6f8bddd07829bd27017d4d0554ec",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b6a803bfa394bf3d9caa364095b7d0c35413a899ff83b33956c550dee372f970",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "00c8d4bde8496b51a701e0aaa636380218f1807f1ffb0a58938633d66ef1d59e",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "b2162620d4baadfd44ec3473c824b76a6c1ba2846d2db9468f27153f35c1f93a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "c3504e0e20b0c0e77129d768cc08fc720a681fd5c30f428caff38b057929517a",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "407054c931f11ef811a491c3d122108d870f94d747061a170be1d6753e2c2205",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6aa4208e823dd15179a08be57bb45414a8cb981995634ff3b44395affba31cb3",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "95701003bf6963b5408ee59b2a7dbb29bb8da8f05546e49002fda4fd434a346c",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "40a07496b56ed55b9a70c1ff7ffd7e996215206863587de0dcc8fedfa0ec4660",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "0f46c4ab641c00f3503a32e2abec7a5c030db8151f549ab1583d41bce99eaab3",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "6c102476ac43108b41db1f411cd5741d0ab72e20f55060eccd38e4b4cbbc6c12",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "6ea6df8782460bf5833bb0afbabf4756854fff6a881fec1153e64ddce5d27da7",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "8203316c4c928630ce82bb293e2ee0b3a810656eefe1801ccf0b517f8bef09d1",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "58663580a7937d5c3baa8b6779e6dadc6ba4272f4e6c4b6ac861c3b15eb1a379",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "1809a4393b912a6a3f3db69636788b320338bb320fd066cd96a2f46eee882484",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "bb57fd29b52c1613342ceb1b9cf133bc16c5d684a0a5748e4dd45f4e14a955b9",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "f80a1d6e7633e8b13da39aa1495d92f8778119cd289838c21570156ea50671dd",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "13cfc2333c8d3b11671fd3e90c25bb9891cee29348fb59b5b2507e7a410906aa",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "fa09a0186931a82cac6c1528c9606a4a439e4720e4b5553a405a17042a2d1768",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "c28a8793a034e92146a8d2303063d4a0ffc203290fa260d0d9f58ca28d3aa9f0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "eta": "0",
+      "feature_id": "7a32e1124a3112bc1e6d7d21b971c32d09c344711b31662805c7ba4feaf5d0c0",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "eta": "1/3",
+      "feature_id": "af110fce23bb289e24bc5d087f94c3335ddde121b02c7d2cf5011af88bd89b05",
+      "scheme": {
+        "core_power": "1/2",
+        "prime_power": "1/2"
+      },
+      "scheme_id": "7f8182582757a915293520ae5bcbfdb112deaa7f3d28d1e3d9702a5d25651d2a",
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    }
+  ],
+  "final_generation": {
+    "fixed": [
+      32768,
+      65536
+    ],
+    "formula": "50001+2*(int(seal_sha256[:16],16)%5000)",
+    "odd_count": 5000,
+    "odd_min": 50001
+  },
+  "final_levels": [
+    3,
+    12,
+    17,
+    29
+  ],
+  "global_claim": "For the exact actual arithmetic target and complete factor-region potential in the program, there exists integer q0>=1 such that every integer q>=q0 admits finite Cq>=0 independent of X, and every dyadic integer X>=1 satisfies E(2X)+V(2X)-E(X)-V(X)<=Cq ceil(X^(1/q)). E is the complete actual filtered-prefix block energy divided by X^2; V is the frozen nonnegative combination of full signed Gram squares with exact normalizers. Regions use the smallest prime factor, its full positive valuation and p-free core. Every cutoff, component and child transition is retained and reevaluated at its own scale. Stored constants are finite fits, not assertions about unknown existential constants.",
+  "language": {
+    "base_energy_mandatory": true,
+    "box": 8,
+    "component_order": [
+      "unit",
+      "prime_small/core_small/odd",
+      "prime_small/core_small/even",
+      "prime_small/core_large/odd",
+      "prime_small/core_large/even",
+      "prime_large/core_small/odd",
+      "prime_large/core_small/even",
+      "prime_large/core_large/odd",
+      "prime_large/core_large/even"
+    ],
+    "conditional_bridge": "V>=0; cofinal all-dyadic bound on E(2X)+V(2X)-E(X)-V(X) implies critical base filtered energy; no estimate proved",
+    "eta": [
+      "0",
+      "1/3"
+    ],
+    "lp_penalties": [
+      "0",
+      "1/1024"
+    ],
+    "quantization_denominator": 64,
+    "singleton_weights": [
+      "1/4",
+      "1",
+      "4"
+    ],
+    "vector_productions": "9unit basis,4parity differences,4prime differences,4core differences,all_nonunit,odd_minus_even,prime_small_minus_large"
+  },
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "provenance": {
+    "complete_actual_prime_source": true,
+    "global_bound_proved": false,
+    "historical_coefficient_overlap": true,
+    "prior_verifications": {
+      "fixed-pole-filter-results/pilot-001/verification.json": "f2cb8a9afeab5ede4738c9bd7b9a17778e3007e5d3136ff26f1c033b34c50d21"
+    },
+    "supplied_bias": "actual targets, smallest-prime partition, nine cutoff schemes, vector productions, LP groups and penalties fixed before scores",
+    "unseen_prime_holdout": false
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "scipy": "1.15.3"
+  },
+  "schema": 1,
+  "schemes": [
+    {
+      "core_power": "1/6",
+      "prime_power": "1/6"
+    },
+    {
+      "core_power": "1/3",
+      "prime_power": "1/6"
+    },
+    {
+      "core_power": "1/2",
+      "prime_power": "1/6"
+    },
+    {
+      "core_power": "1/6",
+      "prime_power": "1/3"
+    },
+    {
+      "core_power": "1/3",
+      "prime_power": "1/3"
+    },
+    {
+      "core_power": "1/2",
+      "prime_power": "1/3"
+    },
+    {
+      "core_power": "1/6",
+      "prime_power": "1/2"
+    },
+    {
+      "core_power": "1/3",
+      "prime_power": "1/2"
+    },
+    {
+      "core_power": "1/2",
+      "prime_power": "1/2"
+    }
+  ],
+  "selection_groups": [
+    "baseline",
+    "all",
+    "singleton",
+    "lp"
+  ],
+  "selection_rank": [
+    "missing_observations_plus_missing_constants",
+    "validation_failures",
+    "max_training_constant",
+    "nonnegative_weight_l1",
+    "term_count",
+    "program_id"
+  ],
+  "targets": [
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        }
+      ],
+      "l": 0,
+      "r": 1
+    },
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        }
+      ],
+      "l": 1,
+      "r": 1
+    },
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        },
+        {
+          "divisor": 6,
+          "weight": "-11/4"
+        }
+      ],
+      "l": 1,
+      "r": 1
+    }
+  ],
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "validation_scales": [
+    6144,
+    8192,
+    12288
+  ],
+  "version": "factor-region-v1"
+}

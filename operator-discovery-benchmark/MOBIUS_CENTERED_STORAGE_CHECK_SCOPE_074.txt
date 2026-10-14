@@ -1,0 +1,168 @@
+INDEPENDENT NECESSARY GRAMMAR ADMISSION074
+==========================================
+
+Files and API
+---------------
+Implementation: check_mobius_centered_storage_074.py.
+Tests: test_check_mobius_centered_storage_074.py.
+Development receipt: mobius_centered_storage_checker_074_development.json.
+API: verify_grammar(candidate, branch)->dict.
+
+This checker imports only standard-library modules.  It imports no
+producer, learner, feedback analyzer, scientific runner, source generator,
+or old checker.  It does not read source data, numerical candidate
+outcomes, or search metadata.  No scientific scale was regenerated or
+queried in its development.  No hashes are used.  Frozen073 files are
+unchanged by this task.
+
+The candidate retains the signed-prime-storage-candidate-v1 schema from
+MOBIUS_PRIME_STORAGE_SCHEMA_073.txt.  This module admits only necessary
+stage074 coefficient conditions.  It does not replace independent073
+source, complete certificate, algebraic domination, base/training drift,
+or finite-normalization admission.
+
+Source and structural binding
+-------------------------------
+The exact registered source profile is
+
+             [['8','10','1'],['16','20','-1']].
+
+Equivalent fitted rescalings, changed endpoints/signs, reordered bands,
+or other profiles are rejected.  Spec keys are exactly profile and theta.
+Theta is a strictly increasing finite list of canonical rational strings
+in(0,1).  The exact complete labels must be, in order,
+
+ Z, unit, omega1, omega2, omega3, omega_ge4,
+ then smooth:<theta> for each spec theta in order.
+
+The candidate must have the frozen073 schema/keys and one canonical
+fixed rational1<=q<2.  q=2 and out-of-range q are rejected.  Every listed
+ray has exactly weight and direction, strictly positive canonical weight,
+and a full physical rational coefficient list in the label order.  Empty
+rays and positive-weight zero directions are permitted.  At most256
+rays,4096-bit rational inputs,4096 smooth coordinates, a conservative
+100000-bit grammar-sum preflight, and5000000 counted actions bound
+checker resources.  Resource-limited evidence is rejected explicitly;
+floating approximations are never substituted for coefficient equalities.
+
+Proof declarations require the frozen073 domination declaration true and
+the recurrence/head/RH declarations literally false.  The domination
+declaration is not itself certified by this grammar module.  Its output
+does not report uniform_domination_proved; ordinary independent073
+admission must establish that status.  Noncanonical fractions, floats,
+booleans, dimension changes, and metadata aliases for physical fields
+cannot supply coefficient evidence.
+
+Registered and unknown smooth ranges
+--------------------------------------
+The registered smooth bulk range is1/2<=theta<1.  The genuinely
+unregistered range in this grammar is0<theta<1/2.  The stage074 definition
+was corrected before freezing to include theta=1/2 in the known range.
+
+MOBIUS_PRIME_STORAGE_CANDIDATE_REVIEW_073.txt proves the common source
+bulk coefficient +2k/log^2 k for fixed1/2<theta<1.  Its source-specific
+endpoint proof also covers theta=1/2: y=sqrt(20k) satisfies y^2>=a k for
+each original a in{8,10,16,20}.  The unique-large-prime identity and every
+truncation/tail bound therefore still apply.  Consequently a nonzero
+pure theta=1/2 ray cannot be treated as an unknown mixture escape.
+
+The previous sector review proves the necessary factor balance
+v[2]=v[3]=v[4]=v[5] for each active ray at fixed q<2.  This equality is
+checked on exact physical coefficients, independently of claimed
+projections or nullspace metadata.
+
+Exact branch rules, applied separately to every ray
+-----------------------------------------------------
+Both branches first require factor balance.
+
+centered_high requires:
+
+ * Every smooth coefficient with theta<1/2 is exactly zero.
+ * The sum of all smooth coefficients with theta>=1/2 is exactly zero.
+
+open_mixed requires EITHER:
+
+ * At least one smooth coefficient with theta<1/2 is exactly nonzero;
+   this actual unknown mixture is retained, with no constraint on its
+   high-only sum or all-smooth sum; OR
+ * With all such unknown coefficients zero, the sum of every smooth
+   coefficient is exactly zero.
+
+Thus open_mixed rejects known-impossible pure registered bulk rays but
+retains unresolved mixtures.  One unknown ray does not license another
+pure registered ray.  Opposite bulk sums in different positive squares
+cannot cancel each other and are rejected separately.  No numerical
+tolerance is applied to a tiny coefficient or an almost-zero sum.
+
+Z and unit coefficients may be arbitrary rationals.  Any common balanced
+factor coefficient is admitted, rather than requiring the generator's
+particular reduced representation.  On this exact source the unit state
+is zero, and the four factor states sum to Z, so a balanced factor ray
+reduces to v_Z+v_ge4 on Z.  Root074 may eliminate those redundant generated
+coordinates without losing arithmetic directions, but the checker
+independently supports their full physical form.
+
+Result scope and required subsequent admission
+------------------------------------------------
+Successful status is NECESSARY_GRAMMAR_ADMITTED with verified=true.
+Rejections return GRAMMAR_REJECTED with verified=false, explanatory
+per-ray violations or an explicit structural/resource error.  Returns
+retain branch, operations, ray_checks, registered and total smooth sums,
+unknown nonzero labels, and indices of actual unknown-mixture rays.
+The explicit branch argument is authoritative; search_metadata is never
+used to admit a candidate or override physical coefficients.
+
+Every return, including successful or empty-ray admission, states
+necessary_filter_only=true, ordinary_073_admission_required=true,
+uniform_control_remains_open=true, uniform_recurrence_proved=false,
+uniform_head_bound_proved=false, and RH_proved=false.  This status certifies
+only passage through the stated necessary filters.  It never asserts
+that every possible obstruction has been removed, that an unknown
+mixture cancels a bulk term, or that a centered residual has a uniform
+price.  Even cancelling every registered leading mode does not pay a
+constant drift law.
+
+Finite scalar parameters precision, C, base_upper, training_scales and
+training_upper are deliberately not arithmetically checked here.  This
+separation is tested using a grammar-valid object with invalid finite
+parameters: it still passes the necessary grammar and must fail the
+ordinary073 certificate checker.  The root must call the frozen073
+verify_data, verify_candidate and evaluate_candidate functions at their
+appropriate stages.  This module computes no E, k^q, drift enclosure,
+Mertens value, smooth state or source factorization and certifies no
+finite recurrence domain.
+
+Development attempts and resolution
+--------------------------------------
+There are35 distinct new synthetic tests.  They exercise arbitrary
+rational coefficients and denominators, exact near-half classification,
+the registered half boundary, both branches, per-ray factor/bulk gates,
+unknown mixtures with nonzero high sums, arbitrary Z/unit and balanced
+factor coefficients, empty/zero directions, q2 rejection, source and
+label binding, positive weights, strict canonical inputs, bit limits,
+metadata tampering, false proof claims, explicit finite-check delegation,
+and candidate immutability.
+
+The initial35-test invocation had34 passes and one fixture error before
+checker invocation: the malformed theta float case attempted string
+concatenation while constructing its fake label.  That failed attempt,
+its traceback,16,147 checker operations,0.021414684 seconds and returncode1
+are preserved in the development receipt.  The fixture was corrected to
+stringify its fake label while retaining the malformed physical theta.
+Only the affected test was rerun; it passed with7 checker operations,
+0.000309323 seconds and returncode0.  No unchanged full suite was rerun.
+
+The receipt retains both attempts, test_names and integer tests counts,
+operations, elapsed_seconds, returncodes, failures and errors.  Its
+final_status=PASS is computed from the latest outcome of EACH distinct
+test, not merely from the last partial invocation.  All35 latest outcomes
+pass; unresolved_test_failures is empty.  No scientific data or numerical
+candidate outcomes were read for these tests.
+
+Disposition
+-------------
+The independent074 checker enforces the corrected source-bound grammar
+exactly.  Admission is necessary and incomplete.  All source correctness,
+ordinary certificate checks, adaptation scoring, frozen final-domain
+evaluation, and every uniform recurrence/head/RH obligation remain with
+their declared independent checkers and unpaid analytical rules.

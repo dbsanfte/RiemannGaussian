@@ -1,0 +1,13 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.05305848002899438,
+      "exposure": "synthetic signed/positive integer prefixes and exact rational program syntax only"
+    }
+  ]
+}

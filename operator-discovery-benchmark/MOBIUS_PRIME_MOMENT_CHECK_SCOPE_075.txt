@@ -1,0 +1,45 @@
+Independent075 checker scope
+The checker imports only AdmissionError, ResourceLimit and exact integer/rational
+normalization and root-enclosure helpers from the frozen independent073 checker.
+It imports no producer, source/search dataset or scientific numerical result.
+Source admission constructs ordinary mu by prime factor parity and square gates,
+M including mu(1)=1, and a separate Eratosthenes pi table. Prime components are
+independently counted by quotient j=u//p, with strict lower/closed upper endpoints.
+Counts preserve multiplicity; squares are sums of individual squares. Direct
+components keep their unit terms and floors.
+verify_data(data,meter=None) returns VERIFIED or INVALID, rows_checked, ops and
+optional first_witness/reason. It proves only equality of the supplied finite rows.
+verify_program(program,data,meter=None,scales=None) returns INVALID, REFUTED,
+UNRESOLVED_ROUNDING or VERIFIED_ON_FINITE_DOMAIN, failures, scales_checked, ops,
+worst_innovation, conditional_induction_verified and
+universal_direct_correlation_proved. Program verification binds exact spec and
+row shape but intentionally does not repeat source admission; caller must admit
+data separately. Finite base is independently rebuilt (explicit exact cache by
+integer base_u), with upper normalization enclosures. Innovation passes only an
+upper enclosure and refutes only a lower enclosure; a straddle remains unresolved.
+conditional_induction_verified admits static contraction and finite base only;
+it leaves all-scale innovation and prime correlation as premises. It can remain
+true alongside a finite lemma refutation. Direct Cauchy admission proves only the
+correlation lemma when prime coefficients vanish and sum a_d^2/beta_d<=1.
+All outputs retain uniform_source_bound_proved=False and RH_proved=False.
+No finite success, constant-zero baseline or conditional certificate is a theorem
+of an unconditional source power bound or RH. Four GiB prospective sieve cap and
+3e11 default work cap coexist with imported4096-bit rational input and100000-bit
+power/intermediate limits. Runner must enforce16GiB aggregate process cap.
+Tests were restricted to this new checker suite; every attempt is retained in the
+development receipt, including unavailable python interpreter then python3 runs.
+Adversarial memory correction: base tuples are priced conservatively at48 bytes
+per element and capped at1GiB BEFORE source or tuple allocation. Cache eviction
+also precedes allocation. Meter.reserve checks simultaneous input, resident cache,
+pending base tuple and24-byte-per-horizon sieve estimates, reporting peak_bytes.
+Data row/vector and evaluation/training indexing estimates are checked before
+working allocations. A regression mocks allocators/source to verify rejection
+of a10^100 base/horizon and of pending-memory overflow without allocating.
+The external runner still owns accounting of already decoded JSON and process RSS.
+
+Root integration after independent implementation: training and evaluation
+domains must be nonempty; tiny u1..3 source domains get a length-one prefix.
+The existing huge-base resource fixture now uses a nonempty huge parent.
+These targeted changes are tested in the root search development receipt.
+The runner must first verify exact source data; verify_program alone is
+not an arithmetic source admission.

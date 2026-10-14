@@ -1,0 +1,379 @@
+MULTIPLE RESIDUALS, EULER-REMAINDER PAYMENT AND THE WHOLE-CORE FRONTIER
+
+Scope and conclusion
+--------------------
+Only this new review is written. Previous sources, proofs, contracts and
+studies are unchanged; no source evaluation, experiment, test or hash is
+performed. The universal multidimensional bound and both proposed kernel
+exponent rules are sound after the full tails and Euler compensator are
+included. A power-unpaid certificate is a FAILURE OF THAT PROOF ROUTE,
+not a disproof of the arithmetic target. No RH conclusion is claimed.
+
+Write H(t)=1+log t for real t>=1; all logs are natural. Prefix arguments
+use floor t and all sequences include their actual unit. For fixed integer
+U>=1, the actual residual of016 is
+ E=delta-One*A+c One, A(d)=mu(d)1_(d<=U), c=sum_(d<=U)mu(d)/d,
+ |P_E(t)|<=2U, M_E(t)<=L t, L=3(1+log U).              (0.1)
+These are complete all-t identities/bounds, not finite observations.
+
+1. A universal all-t multidimensional hyperbola bound
+----------------------------------------------------
+More generally suppose a real sequence a has |P_a(t)|<=C and M_a(t)<=L t,
+for all t>=1, with C,L>=1. For k>=1 positive convolution gives
+ M_(|a|^k)(t)<=L^k t H(t)^(k-1).                       (1.1)
+Induct using M_(|a|^k)(t)=sum_(d<=t)|a(d)|M_(|a|^(k-1))(t/d),
+and sum_(d<=t)|a(d)|/d<=L H(t), the latter by partial summation.
+This proof retains every repeated factor and valuation.
+
+For m>=2 put y=floor(t^(1/m))>=1. Partition all integer tuples with
+product<=t into the cube n_i<=y for every i and the m disjoint regions
+whose FIRST index exceeding y is i. The entire cube is included, since
+y^m<=t, and its exact signed sum is P_a(y)^m. Its magnitude is at most
+ C(Ly)^(m-1)<=C L^(m-1)t^(1-1/m).
+In region i, fixing the other factors with product d gives the exact
+large-index sum P_a(t/d)-P_a(y), of magnitude<=2C. Those other products
+satisfy d<=t/(y+1)<t^(1-1/m). Dropping only their restrictions for an
+UPPER ABSOLUTE bound and applying(1.1) gives each region at most
+ 2C L^(m-1)t^(1-1/m)H(t)^(m-2).
+Therefore, for every real t>=1,
+ |P_(a^m)(t)|<=(2m+1)C L^(m-1)t^(1-1/m)H(t)^(m-2).    (1.2)
+No unbounded C^m head remains: in the cube one factor used the prefix
+bound C and the other m-1 used the mass bound Ly. This is valid also
+when t<C^m or t<U^m, and when an outer region is empty.
+
+For E this yields the explicit all-t bounds
+ m1: |P_E(t)|<=2U;
+ m>=2:
+ |P_(E^m)(t)|<=2(2m+1)3^(m-1)U(1+log U)^(m-1)
+                              *t^(1-1/m)H(t)^(m-2),
+ M_(E^m)(t)<=3^m(1+log U)^m t H(t)^(m-1).              (1.3)
+The requested single combined-log envelope is consequently
+ C_m U t^(1-1/m)[1+log(2t)+log U]^(2m-3), m>=2,
+ C_m=2(2m+1)3^(m-1).
+For m1 use C1=2 and log degree0. In particular
+                    |P_(E^2)(t)|<=30U(1+log U)sqrt t.  (1.4)
+The exact separated log degrees in(1.3) are more informative for code
+than the combined envelope; its extra log U factors are cutoff costs,
+not extra powers of log t.
+
+2. General growing-prefix hypotheses and the complete moment tail
+----------------------------------------------------------------
+Assume now an arbitrary real h satisfies, for all t>=1,
+ |P_h(t)|<=C t^rho H(t)^ell,
+ M_h(t)<=L t H(t)^k,
+ 0<=rho<theta<1, C,L>=1, k,ell nonnegative integers.    (2.1)
+Integer log degrees give rational explicit constants. A rational degree
+may instead be replaced by its ceiling in these certificate rules.
+Put delta0=theta-rho and
+ T_ell(delta0)=sum_(i=0)^ell binom(ell,i)i!/delta0^(i+1).
+Summation by parts proves ordinary conditional convergence of
+ mtheta(h)=sum_(d>=1)h(d)d^(-theta).
+Its COMPLETE tail after any integer D>=1 has the exact Abel expression,
+and the quantitative bound
+ |sum_(d>D)h(d)d^(-theta)|
+ <=C D^(rho-theta)H(D)^ell[1+theta T_ell(delta0)].       (2.2)
+For the integral, substitute t=D exp(v) and use
+(H(D)+v)^ell<=H(D)^ell(1+v)^ell. No d>n tail is dropped.
+The same integral at D1 also bounds |mtheta(h)| by theta C T_ell(delta0).
+
+The STRICT rho<theta hypothesis is necessary for this sufficient rule.
+Equality does not prove divergence of the actual coefficient moment,
+but the generic bound no longer proves convergence. For theta2/3, (1.3)
+proves the m1,m2 moments; it does not prove the m>=3 moments. Analytic
+continuation of E(s)^m alone is not ordinary coefficient convergence.
+When theta>1-1/m, absolute convolution first in Re(s)>1 and analytic
+agreement with the Abel transforms show mtheta(E^m)=mtheta(E)^m.
+Conditional series cannot simply be multiplied without that justification.
+
+3. The ordinary kernel split rule and its required stronger prefix
+-----------------------------------------------------------------
+Let K(n)=n^(theta-1), Jtheta(n)=n^theta-(n-1)^theta, and
+ B_h(n)=P_(K*h)(n)-(mtheta(h)/theta)n^theta.
+This is the prefix of the fully centered coefficient K*h-(mtheta/ theta)Jtheta.
+Use the exact integer split D in[1,n] and complementary hyperbola of016.
+The small-factor kernel error is at most M_h(D)/theta. Bounds(2.1)-(2.2)
+on the complementary row and the full conditional moment tail give
+ |B_h(n)|<=L D H(D)^k/theta
+                 +A C n^theta D^(rho-theta)H(n)^ell,
+ A=1/delta0+2/theta+T_ell(delta0).                     (3.1)
+The complementary P_h(n/a) row gives1/delta0, its P_h(D) subtraction
+gives1/theta, and the full moment tail gives1/theta+T_ell. These constants
+are finite rational functions of the declared parameters.
+
+For a certificate not optimizing C,L, choose the admissible integer
+ D=ceil(n^r0)<=n,
+ r0=theta/(1+theta-rho).
+Then D<=2n^r0 and the exponent identity balances the two error monomials.
+Consequently all integer n>=1 satisfy
+ |B_h(n)|<=[2L/theta+A C]n^r0 H(n)^max(k,ell).          (3.2)
+The full free-split inequality(3.1) allows the detector to choose other
+cutoffs and optimize parameter costs, with its exact rounding/head checks.
+
+At theta2/3,rho1/2, r0=4/7>1/2, so even fixed U is power-unpaid in
+critical prefix energy. This is not a contradiction for E^2. The rule
+would require rho<=1-theta, hence rho<=1/3 here, to reach r0<=1/2.
+At equality the complete log degree remains and must be squared in energy.
+
+4. A uniform real-quotient Euler remainder, without numerical zeta
+-----------------------------------------------------------------
+Write Ztheta(y)=sum_(a<=floor y)a^(theta-1), y>=1. There is a constant
+ ctheta=zeta(1-theta) satisfying
+ |ctheta|<=1/theta,
+ |Ztheta(y)-y^theta/theta-ctheta|<=2y^(theta-1).        (4.1)
+Here is an elementary proof of the bound. For integer M>=1 set
+ F(M)=Ztheta(M)-M^theta/theta. Its successive differences are nonpositive
+integral errors. It has a limit ctheta, since the absolute error from M
+to infinity is bounded by the telescoping sum of the decreases of
+t^(theta-1), hence by M^(theta-1). The bound from016,
+-1/theta<=F(M)<=0, proves |ctheta|<=1/theta. For real y and M=floor y,
+ F(y)-ctheta=F(M)-ctheta-int_M^y t^(theta-1)dt,
+with both terms on the right in[0,M^(theta-1)] before subtraction.
+Thus its magnitude is at most M^(theta-1)<=2y^(theta-1).
+This includes y1 and every fractional quotient edge.
+
+The identification with zeta needs no numerical evaluation: for a complex
+exponent s with Re(s)>0, the sum-minus-integral correction converges
+normally on compact sets away from s1, agrees with zeta in Re(s)>1,
+and therefore gives its continuation at s=1-theta. This does not infer
+ordinary convergence of any unrelated signed source series there.
+
+5. Stronger free-split error and the retained compensating h
+----------------------------------------------------------
+Applying(4.1) to the small d<=D row gives the exact expansion
+ B_h(n)=sum_(d<=D)h(d)[Ztheta(n/d)-(n/d)^theta/theta-ctheta]
+           +complementary_row-(n^theta/theta)tail_D+ctheta P_h(D).
+The small remainder is at most
+ 2n^(theta-1)sum_(d<=D)|h(d)|d^(1-theta)
+ <=2L n^(theta-1)D^(2-theta)H(D)^k.
+The same COMPLETE complementary and moment-tail bounds as before give
+ |B_h(n)|<=2L n^(theta-1)D^(2-theta)H(D)^k
+       +A C n^theta D^(rho-theta)H(n)^ell
+                         +(C/theta)D^rho H(D)^ell.     (5.1)
+No compensating source term was erased in this fully centered formula.
+
+If the grammar explicitly SUBTRACTS ctheta*h as another operator, its
+prefix is B_h(n)-ctheta P_h(n), and the last term in(5.1) is instead
+bounded by(2C/theta)n^rho H(n)^ell. Recovery of the original centered
+K*h then restores ctheta*h, costing a further(C/theta)n^rho H(n)^ell.
+This gives a valid conservative three-part certificate. Dropping h or
+pretending its coefficient is0 would change the target. Alternatively
+the direct fully centered identity above keeps only ctheta P_h(D).
+
+Balancing the TWO main error powers now gives
+ d1=1/(2-rho), D=ceil(n^d1)<=n,
+ r1=[theta+rho(1-theta)]/(2-rho).                      (5.2)
+Since D<=2n^d1 and 2*2^(2-theta)<=8, (5.1) implies the all-n bound
+ |B_h(n)|<=[8L+(A+1/theta)C]n^r1 H(n)^max(k,ell).      (5.3)
+The compensator is paid: r1-rho=(theta-rho)(1-rho)/(2-rho)>0, so even
+the more conservative retained n^rho term has a smaller exponent.
+For the subtract-and-restore route one may instead use A+3/theta in
+(5.3). Exact rational split denominators and integer ceilings require
+certified comparisons, not floating endpoint guesses.
+
+The predicted powers are therefore correct: rho0 gives r1=theta/2;
+theta2/3,rho1/2 gives5/9, still above1/2. The necessary gate for this
+proof rule is
+ rho<=2(1-theta)/(3-2theta),
+which is rho<=2/5 at theta2/3. A stronger signed prefix estimate of that
+degree would be a genuinely different arithmetic input, not a change
+in the kernel's local weight. Passing this gate alone does not pay any
+cutoff dependence hidden in C or L.
+
+For E^2 explicitly take C=30U(1+log U),rho1/2,ell0,
+L=9(1+log U)^2,k1,delta0=1/6,A=15. The certified ordinary rule is
+ [27(1+log U)^2+450U(1+log U)]n^(4/7)H(n),
+and the fully centered Euler rule is
+ [72(1+log U)^2+495U(1+log U)]n^(5/9)H(n).              (5.4)
+Both are valid but power-unpaid. Neither proves the true E^2 estimate
+cannot be sharper, nor rejects a joined cancellation with other modes.
+For a concrete scope check, U1 gives E=delta and E^m=delta for every m;
+its fully centered kernel prefix is bounded by1/theta, while the generic
+m2 route still reports an unpaid upper exponent. Therefore an unpaid
+certificate cannot be labeled an arithmetic lower-bound disproof.
+
+5A. Scaled all-n rules and generic finite convolution costs
+---------------------------------------------------------
+For backward proof search the C dependence matters, not just r0,r1.
+Put T0=C^(1/(1-rho))>=1. When n>=T0, the admissible integer splits are
+ ordinary: D=ceil[T0(n/T0)^r0];
+ Euler:    D=ceil[T0(n/T0)^(1/(2-rho))].
+The quantities in brackets lie in[1,n], so their ceilings are<=n and
+at most twice the unrounded quantities. The SAME free-split proofs give
+ ordinary amplitude C^a0 n^r0, a0=1/(1+theta-rho);
+ Euler amplitude C^a1 n^r1, a1=(2-theta)/(2-rho).
+Both obey a=(1-r)/(1-rho). For the Euler retained term,
+C n^rho<=C^a1 n^r1 when n>=T0, so its coefficient is not forgotten.
+
+The n<T0 head is also paid with these same amplitudes. Use mass up to
+T0 and prefix beyond it in the full Abel integral to obtain
+ |mtheta(h)|<=theta[L/(1-theta)+T_ell(delta0)]
+                              T0^(1-theta)H(T0)^max(k,ell).
+The raw convolution is at most L(2-theta)/(1-theta)*n H(n)^k.
+Since both r0,r1<theta, for n<T0 one has
+ n<=T0^(1-r)n^r,
+ T0^(1-theta)n^theta<=T0^(1-r)n^r=C^a n^r.
+Thus define Hstar=1+log n+log T0 and s=max(k,ell). Convenient explicit
+rational parameter constants giving ALL integer n>=1 are
+ Kordinary=(3-theta)/(1-theta)+T_ell(delta0)+2/theta+A,
+ KEuler=(3-theta)/(1-theta)+T_ell(delta0)+8+A+1/theta,
+ |B_h(n)|<=Kroute L C^aroute n^rroute Hstar^s.         (5A.1)
+The constants are sums rather than optimized maxima. If the operator
+subtracts and then restores ctheta*h separately, use3/theta instead of
+1/theta in KEuler. Log T0 is a declared cost; it cannot be erased from
+the head bound. For cutoff-polynomial C its growth is only logarithmic,
+but its coefficient and the cutoff powers in C^a must be propagated.
+
+For any FINITE factor h0=A^p*B^q, the prefix hypothesis transfers with
+ C replaced by C M_h0(rho),
+ M_A(rho)<=U^(1-rho)/(1-rho).
+The B factor has the three exact cases from its exponent2/3+rho:
+ >1: mass<=1+1/(rho-1/3);
+ =1: mass<=1+log V;
+ <1: mass<=V^(1/3-rho)/(1/3-rho).
+The mass hypothesis transfers with L multiplied by
+(1+log U)^p(5/2)^q, not a new power of U. The full moments transfer
+through the finite factors, and every Euler/J compensating term stays.
+These bounds use all of the finite support, including products larger
+than the current n. No separate-head convolution identity is assumed.
+
+In particular suppose an auxiliary E^2 prefix certificate is
+ Caux U^b t^rho times declared logs. For q0,p2 its convolution with
+A^2 replaces the cutoff exponent in C by b+2(1-rho). At theta2/3 and
+U comparable to X^alpha, alpha1/24, the critical energy conditions
+deduced from(5A.1) are EXACTLY
+ ordinary: b+10rho<=2;
+ Euler:    b+13rho<=4.                                (5A.2)
+Strict inequalities give power decay; equality pays the remaining
+explicit log powers. These are CONDITIONAL proof-certificate regions,
+not a statement that no whole-core cancellation outside them exists.
+
+6. A concrete actual-residual reduction to divisor remainders
+------------------------------------------------------------
+There is a reusable source-specific next input more structured than an
+unsupported assertion P_(E^2)=O(t^rho). Put the FINITE sequence
+ T=c delta-A, so E=delta+One*T, and its Dirichlet value
+ T_hat(1)=sum_d T(d)/d=c-sum_d A(d)/d=0.
+This refers to the Dirichlet value, NOT to its unit coefficient T(1)=c-1.
+Let D2(y)=sum_(ab<=y)1, zero for y<1, and let
+ Delta2(y)=D2(y)-y log y-(2EulerGamma-1)y, all real y>0.
+For every integer n>=1 the exact full-source identity is
+ P_(E^2)(n)=1+2sum_d T(d)[floor(n/d)-n/d]
+                         +sum_d(T*T)(d)Delta2(n/d).   (6.1)
+All sums include the ENTIRE finite support, even d>n. The x log x and
+x main terms cancel because T_hat(1)^2=0 and
+(T_hat(s)^2)' at s1 equals2T_hat(1)T_hat'(1)=0. Thus no omitted fractional
+tail or pole residue remains. The first correction is bounded by2||T||_1.
+
+As a concrete reusable conditional primitive, suppose an independently
+proved divisor-error certificate gives |Delta2(y)|<=C_D y^kappa for
+ALL y>=1, 0<=kappa<1. Its extension to 0<y<1 is automatic with constant
+ Cext=max(C_D,1+1/(1-kappa)),
+since D2(y)=0 there, |2EulerGamma-1|<=1, and
+y|log y|<=y^kappa/(1-kappa). It follows from(6.1) that
+ |P_(E^2)(n)|<=1+2(U+2)
+       +Cext n^kappa[2+U^(1-kappa)/(1-kappa)]^2.      (6.2)
+This uses |c|<=2 and the full finite T weighted mass, including its unit.
+For n>=1 a constant head can be absorbed into the displayed n^kappa
+coefficient. This is a PROVED REDUCTION conditional on the stated
+independent divisor-error theorem; no particular external exponent or
+constant is imported or numerically evaluated in this review.
+
+For kappa<=1/2, this gives the explicit cutoff exponent
+ b=2(1-kappa), rho=kappa,
+ |P_(E^2)(n)|<=[7+Cext[2+1/(1-kappa)]^2]U^b n^rho.     (6.3)
+Indeed 1+2(U+2)<=7U<=7U^b and
+2+U^(1-kappa)/(1-kappa)<=U^(1-kappa)[2+1/(1-kappa)].
+For kappa>1/2 this head absorption instead costs at least exponent1;
+the displayed b<1 alone is not justified by this rule. Applying the
+specific region(5A.2) to(6.3) gives ordinary feasibility only at kappa0
+(equality), and Euler feasibility kappa<=2/11. Thus fixed-U requirements
+rho<=2/5 are NOT enough for the stated growing cutoff. This is an honest
+cost frontier for the supplied route; no external divisor exponent or
+full-source impossibility theorem is being asserted.
+
+Thus a certified kappa<=2/5 would supply the Euler rule's required
+stronger rho for E^2, with EXPLICIT U costs, instead of assuming a new
+RH-strength prefix lemma. It would not close E^3/higher residuals or
+the whole source join. More generally E^m=sum_j binom(m,j)One^j*T^j.
+For rigorous arbitrary-m scope, define D_j(x)=sum_(n1...nj<=x)1, zero
+for x<1. The raw complete convolution identity is
+ P_(E^m)(n)=1+sum_(j=1)^m binom(m,j)sum_ALL_d T^j(d)D_j(n/d).
+For ANY specified polynomial P_(j-1) of degree at most j-1,
+define its COMPLETE extended remainder
+ Delta_j(x)=D_j(x)-x P_(j-1)(log x), EVERY real x>0.
+Then finite algebra and moment annihilation give the exact identity
+ P_(E^m)(n)=1+sum_(j=1)^m binom(m,j)
+                              sum_d T^j(d)Delta_j(n/d). (6.4)
+To prove annihilation, the entire Dirichlet polynomial T_hat(s)^j has
+a zero of order at least j at1. Its derivatives of orders0 through j-1
+are the finite sums of T^j(d)d^(-1)(-log d)^ell and are0. Expanding
+(n/d)P_(j-1)(log n-log d) therefore cancels EVERY main term, with ALL
+d in the finite support, not only d<=n. The polynomial can be obtained
+from the Laurent pole of zeta(s)^j when that proof primitive is supplied;
+the cancellation identity itself does not assert a divisor asymptotic.
+At j1 choose P0=1, giving the complete floor error; at j2 use the full
+polynomial already present in(6.1). The initial1 retains the delta unit.
+
+If a separate theorem bounds |Delta_j(x)|<=C_j x^kappa_j H(x)^nu_j
+for x>=1, 0<=kappa_j<1, it extends to0<x<1 with the explicit additional
+constant sum_ell |P_(j-1),ell|ell!/(1-kappa_j)^ell.
+This follows from x|log x|^ell<=x^kappa_j ell!/(1-kappa_j)^ell.
+Take C_jext as the maximum of C_j and that additional constant, and
+use Hplus(x)=1+max(0,log x) on this complete extension. Consequently
+(6.4) is bounded by1 plus the sum of
+ binom(m,j)C_jext n^kappa_j H(n)^nu_j
+                     [2+U^(1-kappa_j)/(1-kappa_j)]^j.
+Thus all remainders, low quotient edges and their U costs remain explicit.
+Their exponents/moments are new arithmetic leaves; analytic continuation
+does not certify the associated ordinary tails. This can be compiled as
+generated finite factorization plus moment-annihilation, not a nominated
+estimate for E^m or a silently omitted pole complement.
+
+Alternatively the backward search may declare a SINGLE hypothetical
+all-x leaf |Delta_j(x)|<=C_j x^kappa_j(1+|log x|)^ell_j, x>0.
+Then the same complete identity gives each j contribution at most
+ binom(m,j)C_j n^kappa_j(1+log n+j log U)^ell_j
+                      [2+U^(1-kappa_j)/(1-kappa_j)]^j.
+Indeed T^j has support<=U^j and |log(n/d)|<=log n+j log U for every
+finite-support d, including d>n. This is an explicit U^(j(1-kappa_j))
+polylog cost with constant [2+1/(1-kappa_j)]^j for U>=1. Such a global
+Delta bound is a CONDITIONAL arithmetic leaf, not a result inferred from
+the identity. For j1, floor x-x is bounded for every x>0, so kappa0,
+ell0,C1=1 is proved, yielding the paid-head candidate b1. The delta
+unit is the separate j0 term1. A combined E^m bound must still include
+every other j leaf and its cost before it can be admitted.
+
+Finite A^p*B^q factors preserve any proved prefix bound by weighted
+finite mass at rho, and preserve mass bounds by harmonic finite mass;
+their complete centering moments and the J commutator rules of016 still
+apply. If U grows with the study horizon, its powers in(6.2) must be
+squared and added to energy exponents before admission. A fixed-U
+arithmetic estimate is not uniform cofinal recovery for arbitrary cutoffs.
+
+7. Whole-core proof-frontier interpretation
+------------------------------------------
+The detector can compose (1.1)-(1.3), moment/tail certificates, the free
+integer split errors(3.1),(5.1), and the exact divisor-remainder reduction.
+It can solve exponent balance equations, enumerate cutoffs and compare
+valid proof routes. For theta2/3 its ordinary-rule residual requirement
+is rho<=1/3; its Euler-remainder requirement is rho<=2/5. The universal
+E^2 bound does not reach either threshold, and universal m>=3 bounds
+do not even certify the required ordinary moment at that theta. These
+are precise missing-rule leaves, not a theorem that such moments or
+better actual estimates do not exist.
+
+In the current inverse expansion R=E-c One. Every binomial One companion,
+real-pole/main channel, actual four-mode mixed term, repeated valuation
+and exact transport correction must remain. A paid centered residual is
+not permission to erase the other components. Individual errors may
+also cancel in the joined coarse kernel; language failure for a separate
+component does not rule out that mechanism. Conversely, analytic main
+cancellation is not a signed coefficient tail estimate without proof.
+
+PROVED: universal all-t residual-power prefix/mass bounds, conditional
+moment domain and full tails, Euler remainder with explicit real-floor
+constant, both split inequalities/exponents, and the finite actual-T
+divisor-error reduction. OPEN: stronger arithmetic input at the required
+thresholds and a COMPLETE source-bound joined estimate closing the target.
+No source experiment, test, hash or RH claim occurred. Only this new memo
+was written; the rules are human-proved primitives for machine proof search.

@@ -1,0 +1,81 @@
+INDEPENDENT CRITICAL-CORE ROUTE REVIEW (pre-freeze supplied proof method)
+
+The residual uses ACTUAL c=mu*lambda even when the base target is ordinary mu.
+For each integer blockX>=1, h>=1, theta>0, z=floorX^theta,u=floor sqrtX,
+retain exactly source m=p^e b with p=leastprime(m)<=z, e positive even,
+b<=u andleastprime(b)>p (or b1), if b1 OR Omega(b)>h. Omega counts prime
+factors WITH multiplicity. The complementary1<=Omega(b)<=h patterns must be
+subtracted completely from the original even region; all positive even
+exponents are retained in each branch. This subtraction is exact arithmetic,
+not an inferred sign cancellation.
+
+A useful explicit uniform envelope.
+Let rho=1/[2(h+1)], y<=2X, and R_X(y) be the complete retained prefix.
+For nonunit retained b, b>=p^(h+1) andb<=sqrtX, hencep<=X^rho. This restriction
+is independent oftheta, and only strengthens when its cutoff is smaller.
+Since |c|<=d2, sum_{b<=u}|c(b)|<=u(1+logu). The number of possible exponents
+at any p is at most log(2X)/log2. Therefore the nonunit absolute contribution
+is <=2 log(2X)/log2 * X^rho sqrtX(1+(logX)/2).
+Unit cores are treated SEPARATELY: p^e<=2X,e>=2 givesp<=sqrt(2X), and their
+absolute contribution is <=2 log(2X)/log2 * sqrt(2X). These bounds are valid
+also atX1, where the actual source horizon is1 and the residual is empty.
+Using log2>=1/2 andsqrt2<=3/2, their sum is bounded by
+ |R_X(y)| <=22 sqrtX X^rho (log(2X))^2,
+uniformly inX,h,theta. The proof deliberately overcounts primes by integers
+and all possible exponents; no PNT or signed correlations are imported.
+
+For any fixed rational filter with positive integer divisors, let L=sum|w_d|.
+Every argument floor(n/d)<=2X for X<=n<2X. Apply the SAME parentX classification
+in each filtered argument. The correction T_X(n)=sum_d w_d R_X(floor(n/d))
+ divided by ceil(X^rho) satisfies
+ |T_X(n)|<=22 L sqrtX(log(2X))^2,
+ sum_[X,2X)|T_X(n)|^2<=484 L^2 X^2(log(2X))^4.
+This is a genuine all-scale near-critical auxiliary estimate for everyh,theta.
+The ceiling weakens the bound and has exact positive arithmetic semantics.
+The source is actualc, so the estimate remains valid for corrections added to
+mu or any admitted actual base; it is not a fictitious inverse of that base.
+
+Signed coefficients and recovery: no positive potential assumption.
+Let finitely many corrections have fixed signed rational coefficients gamma_j,
+H_X(n)=G(n)+sum gamma_j T_j,X(n), andGamma=sum|gamma_j|. The base coefficient
+is exactly1 and must never be omitted. With normalized block energies,
+ E_H(X)<=2E_G(X)+968 L^2 Gamma^2(log(2X))^4,
+ E_G(X)<=2E_H(X)+968 L^2 Gamma^2(log(2X))^4.
+These follow from the L2 triangle inequality and the uniform correction
+bounds. Thus cofinal critical H energy is equivalent to cofinal critical G
+energy, with eps-dependent constants and EVERY initial scale retained.
+Signed cross terms may provide useful proof coordinates, but this equivalence
+does not prove either unknown critical estimate. Fixed coefficients/finite
+arity are essential; if weights or dimension grow withX, Gamma andcosts must
+be charged and separately bounded. The residual/error vectors cannot be
+replaced by unsigned diagonal-only energies: the full13x13Gram is required.
+
+Innovation and ordinary Mellin bridge.
+Normalized E_H is nonnegative even though its correction coefficients may be
+negative. If there exists integerq0>=1 such that every integerq>=q0 admits
+finiteCq>=0, independent ofX, with E_H(2X)-E_H(X)<=Cq ceil(X^(1/q)) for EVERY
+dyadic integerX>=1, telescope to
+ E_H(X)<=E_H(1)+2Cq(X^(1/q)-1)/(2^(1/q)-1).
+Recover E_G by the preceding inequality. For each epsilon>0 choose sufficiently
+largeq with1/q<epsilon; polylogarithmic error is also O_epsilon(X^epsilon).
+Consequently complete ordinary filtered G has critical block energy. Its
+actual series is P(s)zeta(2s)^l/zeta(s)^(r+l), where the basefilterP is nonzero,
+fixed inX, and has m distinct nonzero terms. Under m<=r+l, Vandermonde gives
+zero multiplicityP<=m-1; numeratorzeta(2s) is nonzero inRe>1/2. The ordinary
+Mellin transform is holomorphic there by block Cauchy, so no ordinary-zeta
+zero can remain. Thus RH follows CONDITIONAL on that full signed estimate.
+There is NO claim that the scale-dependent H_X itself has an Euler series or
+ordinary Mellin transform: the proof first recovers the unthinned fixed G.
+Moving cutoffs and normalizers are independently reevaluated at child2X;
+recovery uses a uniform bound at each scale, not stationary residual labels.
+
+Critical-boundness audit.
+This route genuinely certifies the removed-pattern remainder as near-critical
+using actual least-prime/core support. It therefore repairs the previous use
+of positive uncentered singleton energies, which had polynomial obstructions.
+It does not discover a critical signed H bound. The main open analytical task
+is to control the full corrected13-coordinate signed Gram or its innovation,
+including base/correction and correction/correction correlations, across ALL
+scales andcofinalq. Exact ridge KKT and finite fits prove only a finite convex
+optimization result. Quantized proposals require independent exact refitting;
+finite passes never prove this task, and unknown constants remain unknown.

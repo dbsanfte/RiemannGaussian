@@ -1,0 +1,199 @@
+INDEPENDENT FULL-CHANNEL AND SECOND-MODE REVIEW080
+
+Scope and provenance
+New analytic review while080 science runs. No frozen080 file is changed,
+no old scientific/test replay, hashes, subagents or Mobius arithmetic queries.
+Two successful python3 commands computed only rational logarithm envelopes;
+one initial command using unavailable executable python failed before work.
+This is an explicit mathematical derivation importing classical analytic
+theorems, not a formal theorem-prover proof or a positive RH bound.
+
+Primary sources verified through browsing
+1. Classical PNT as already imported in079 (Zagier/Newman proof).
+2. Ethan Simpson Lee and Nicol Leong, New explicit bounds for Mertens
+   function and the reciprocal of the Riemann zeta-function, arXiv2208.06141v5:
+   https://arxiv.org/abs/2208.06141v5
+   The authors' current abstract states unconditional M(x) bounds of order
+   x log(x) exp(-eta sqrt(log x)), sufficient for M=o(x/log^A x) for every
+   fixed A. This stronger imported theorem is required for channel7.
+3. Tim Trudgian, Updating the error term in the prime number theorem,
+   arXiv1401.2689v2, Theorem2:
+   https://arxiv.org/html/1401.2689v2
+   Its unconditional exponentially decreasing pi-li error is sufficient for
+   the two-term prime/semiprime expansion below. Qualitative PNT alone is
+   not used to assert that second-order expansion.
+
+Signed rough-number leading term: derivation
+Define A(x,y)=sum_(n<=x, Pminus(n)>y) mu(n), with1 included (Pminus(1)=infinity).
+Define Dickman rho(s)=1 on0<=s<=1 and rho'(s)=-rho(s-1)/s for s>1.
+For fixed U>1, the signed rough asymptotic is
+ A(x,x^(1/U))=-rho(U-1)*x/log x+o(x/log x).
+The proposed hypothesis has the correct sign and normalization.
+
+Exact smallest-prime decomposition gives
+ A(x,y)=1-sum_(y<p<=x) A(x/p,p).
+This is EXACT for mu: the cofactor of the smallest prime has all its prime
+factors strictly above p, so repeated p never enters. Split p>sqrt(x),
+where the inner sum is1. The prime contribution is -pi(x)+pi(sqrt(x)).
+For p=x^t, y<p<=sqrt(x), bounded-U induction and PNT/partial summation give
+ inner A(x/p,p)~-(x/p)*rho(1/t-2)/((1-t)log x).
+Consequently the leading coefficient h(U) satisfies
+ h(U)=-1+integral_(1/U)^(1/2) rho(1/t-2)/(t*(1-t)) dt
+     =-1+integral_1^(U-1) rho(s-1)/s ds
+     =-rho(U-1).
+For1<U<=2 the integral is empty and h=-1, consistent with primes only.
+
+For completeness, the induction is on successive bounded intervals of U.
+On a compact subinterval below t=1/2 the inner parameter is bounded away
+from1 and the PNT induction is uniform. Boundary strips can be removed
+and restored by domination: numbers with all prime factors>y, x<=y^B,
+are O_B(x/log y)+1. To see this bound, split by their bounded number of
+prime factors, choose all but the largest, bound that largest prime by
+pi(x/m)<=C*x/(m*log y), and bound the remaining reciprocal prime sums
+by O_B(1) using PNT/partial summation. The extra1 contributes O(sqrt x)
+in the recursion. Thus dominated convergence applies to the prime integral.
+One can also expand the finite squarefree prime-factor simplex directly;
+there are finitely many factors because U is fixed. This avoids importing
+a separate black-box theorem about signed rough numbers.
+
+Dickman positivity and inexpensive envelope
+The delay equation implies, for s>=1,
+ s*rho(s)=integral_(s-1)^s rho(t)dt.
+The two sides have equal derivative and agree at1. A first zero of rho
+would contradict the positive integral over its preceding interval. Hence
+rho>0 everywhere, and its differential equation gives strict decrease for
+s>1. On[1,2], rho(s)=1-log s. In particular
+ rho(3)=1-log3+integral_1^2 log(v)/(v+1)dv.
+The integrand is increasing on[1,2], since its derivative has numerator
+1+1/v-log v>0. A64-panel right-endpoint sum is therefore an upper bound.
+
+Exact checkable certificate
+For rational r>0, z=(r-1)/(r+1), use32 terms of
+ log r=2 sum_(k>=0) z^(2k+1)/(2k+1),
+with absolute tail <=2|z|^65/[65*(1-z^2)], directing signs outward.
+Let loglo/loghi be these rational envelopes. Set
+ U64=1-loglo(3)+(1/64)*sum_(k=1)^64
+      loghi(1+k/64)/(2+k/64).
+Direct rational calculation followed by upward dyadic32 rounding gives
+ U64<=108244151/2147483648<3/50<1/16.
+The same series proves log2<7/10. No numerical Dickman value is needed.
+
+Full active-channel signature and fixed source binding
+Assume1/2<gamma<=2/3 (the pilot promoted domain), H=floor(u/4),
+cuts ceil(H^(gamma/3)), ceil(H^(2gamma/3)), ceil(H^gamma).
+The broader leading derivation holds for1/2<gamma<3/4, subject to the
+existing complete factor-layer partition and inactive-coordinate admissions.
+Write alpha=2gamma/3, L=log((1-alpha)/alpha),
+ r0=rho(3/gamma-1), r1=rho(3/(2gamma)-1)=1-L.
+The latter identity holds because3/(2gamma)-1 lies in(1,2).
+At a fixed coefficient endpoint x=c*u, logH/logx tends to1, so the three
+rough sums have coefficients -r0,-r1,-1 on x/logx. Differences give
+ category1: -1 (terminal primes);
+ category7: r0 (total coprime mu sum minus first rough sum);
+ category8: r1-r0 (first rough sum minus second);
+ category9: 1-r1=L (second rough sum minus terminal primes).
+Thus the complete signature in order{1,7,8,9} is
+ [-1,r0,1-L-r0,L], whose sum is EXACTLY0.
+Extra channels therefore matter; the079 two-coordinate formula alone cannot
+refute a larger-supported leaf.
+
+Channel7 needs total signed mu=o(x/logx). Qualitative PNT in its usual
+M=o(x) equivalent formulation does not by itself supply that estimate.
+The cited quantitative Mertens theorem does. For fixed excluded P, the exact
+identity M_P(x)=sum_(P-smooth k) M(x/k) also gives M_P=o(x/log^A x):
+split k<=x^epsilon, use the quantitative bound and sum1/k finite over
+P-smooth k; bound the remaining tail by x^(1-epsilon/2) times the convergent
+sum_(P-smooth k) k^(-1/2). Thus fixed exclusions do not invalidate channel7.
+
+Fixed excluded primes are eventually below the first cutoff, and have no
+effect on any rough subset. For a fixed prefix kernel sum b_d 1_(n<=u/d),
+its fixed P-fold has mass mP=(sum b_d/d)*product_(p in P)(1-1/p).
+Each endpoint contributes its coefficient times u/d, so all four signature
+coordinates receive the SAME mass mP. Literal half h=floor(u/2) multiplies
+the leading flux coefficient by1/2. The resulting a.D coefficient is
+ (mP/2)*[-a1+a7*r0+a8*(1-L-r0)+a9*L].
+Ceil/floor cutoff errors alter at most the multiples of a bounded number
+of boundary primes, O(u^(1-alpha0)), alpha0=gamma/3>0; this is negligible
+against u/log^j u for every fixed j. Fixed endpoint floor errors are O(1).
+Unit0 vanishes above the admitted base; layers2..6 are inactive when
+gamma>1/2. These inherited premises must accompany any machine gate.
+
+Actual promoted motifs and generic grammar obstruction
+For observed a=L*e1+(1/2)e7+e8+e9, its complement is
+ b=(1-L)e1+(1/2)e7. Its full-mode scalar is -r1+r0/2.
+Since0<r0<1/16 and r1>3/10, this is strictly less than -43/160.
+The factor mP is nonzero for both fixed kernels, so this leaf is uniformly
+obstructed at every fixed q<2 and finite kappa given Q=O(u).
+
+More generally, a promoted primitive has form L*e1+c7*e7+c8*e8+e9,
+and mode c7*r0+c8*(r1-r0). If c8=0,c7!=0, positivity of r0 suffices.
+If c8!=0, cancellation requires c7/c8=1-r1/r0<-4, because r1>3/10 and
+r0<3/50. But normalized primitive coefficients satisfy |c7/c8|<=4:
+the common normalization by original coordinate9 cancels in this ratio,
+and original nonzero coefficients are1 or±1/2,±1,±2. Therefore every
+promoted ray with a nonzero extra7 or8 coordinate has a nonzero full first
+mode. Only the pure L*e1+e9 escapes this FIRST-mode gate. The full target
+has zero first mode, so its complement has the opposite mode exactly.
+
+Machine-checkable scope
+A checker can independently rebuild U64, positivity/monotonicity hypotheses,
+the fixed source/fold mass and rational coefficient domain; enclose the full
+mode expression and require an interval excluding0. Imported PNT/Mertens
+and the analytic deduction above remain explicit theorem dependencies, not
+proved by rational Python. Never infer a finite threshold from the eventual
+asymptotic or claim a lower bound on the full signed source residual.
+
+Pure promoted pair: nonzero second logarithmic mode
+This stronger obstruction requires quantitative PNT, supplied by Trudgian.
+Put alpha=2gamma/3 in(1/3,1/2), x=u/s, H=u/4, T=log x,
+beta=log(H/x)=log(s/4), and y=H^alpha (ceil changes are negligible).
+Bin9 consists asymptotically of distinct semiprimes; its one-prime terms
+are O(H^gamma)=o(x/log^j x). Their count is exactly, up to endpoints,
+ C2(x,y)=sum_(y<p<=sqrt x) [pi(x/p)-pi(p)].
+Quantitative PNT permits replacing prime measures by dt/logt and pi(z)
+by z/logz+z/log^2z+O(z/log^3z), uniformly at all positive-power arguments.
+Write a=logy/T=alpha+alpha*beta/T. Then
+ C2=(x/T)*integral_a^(1/2)dt/[t(1-t)]
+    +(x/T^2)*integral_alpha^(1/2)dt/[t(1-t)^2]
+    -2*x/T^2+o(x/T^2).
+The subtraction2 comes from sum_(p<=sqrt x)pi(p)=2x/T^2+o(x/T^2);
+the excluded p<=y tail is negligible because2alpha<1.
+The second integral is L+2-1/(1-alpha), and moving the first lower
+endpoint from alpha to a contributes -beta/(1-alpha) at second order.
+Hence
+ C2=L*x/T+[L-(1+beta)/(1-alpha)]*x/T^2+o(x/T^2).
+Terminal prime channel1 is -pi(x) plus negligible cutoff terms. Therefore
+ L*V1+V9 at this endpoint has leading term0 and second term
+ -(1+log(s/4))*x/[(1-alpha)*log^2x].
+
+For folded endpoint weights w_s, define
+ Tfold=sum_s (w_s/s)*(1+log(s/4)).
+Endpoint logx=logu-log s changes no second coefficient after the leading
+coefficient cancels endpointwise. Thus the pure promoted FLUX obeys
+ L*D1+D9= -Tfold*u/[2*(1-alpha)*log^2u]+o(u/log^2u).
+Literal half retains half the second coefficient as it did the first.
+
+Nonzero exact moment certificate for both fixed sources
+For G, m=-1/40 and
+ TG=m+(log2)/8-(log(5/2))/10+(log(5/4))/5.
+For fixed G+a*G(u/3), a=3547/8192,
+ m_fixed=m*(1+a/3), T_fixed=TG*(1+a/3)+(a*m/3)*log3.
+For fixed P={2,3,5,7}, delta=product(1-1/p), exact folding gives
+ Tfold=delta*[T_fixed-m_fixed*sum_p logp/(p-1)].
+32-term rational log envelopes and outward dyadic32 rounding yielded:
+ p16: Tfold in[62702903/4294967296,7837863/536870912];
+ p04: Tfold in[33930591/2147483648,67861183/4294967296].
+Both lower endpoints are STRICTLY positive. This is a scalar log-moment
+certificate, not a query of mu or a fit to080 validation data.
+
+Conclusion and next search constraint
+The full leading gate excludes every promoted primitive with extra active
+channels in the current coefficient grammar. The pure promoted pair has a
+nonzero second inverse-log mode for both fixed kernels. Combined with the
+paid Q=O(u), its squared size u^2/log^4u eventually defeats kappa*u^q for
+every q<2, without furnishing an effective threshold. This excludes these
+proper-local-bound METHOD branches; the complete signed target cancels the
+full first mode and is not refuted. A next construction must handle an
+entire lower-order remainder, potentially through scale-dependent exact
+coefficients or a truly joint signed recurrence. Adding a single fixed log
+symbol or retuning kappa cannot pay that obligation.

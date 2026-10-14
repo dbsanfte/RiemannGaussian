@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "extended": false,
+      "prime_anchor": false,
+      "u": 1,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": false,
+      "prime_anchor": false,
+      "u": 23,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": false,
+      "prime_anchor": false,
+      "u": 131,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": false,
+      "prime_anchor": true,
+      "u": 1,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": false,
+      "prime_anchor": true,
+      "u": 23,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": false,
+      "prime_anchor": true,
+      "u": 131,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": false,
+      "u": 1,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": false,
+      "u": 23,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": false,
+      "u": 131,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": true,
+      "u": 1,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": true,
+      "u": 23,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    },
+    {
+      "extended": true,
+      "prime_anchor": true,
+      "u": 131,
+      "status": "VERIFIED_FINITE_COUPLED_REMAINDER_UPPER_BOUND"
+    }
+  ]
+}

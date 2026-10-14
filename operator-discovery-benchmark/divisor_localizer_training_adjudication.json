@@ -1,0 +1,70 @@
+{
+  "RH_proved": false,
+  "active_relation_groups": [
+    {
+      "descriptor": {
+        "family": "norm",
+        "id": "f2f2dfc5a13d5162e5d1514861b62690932e63687c8f381832b7106d7e4d0521",
+        "multiplier": "one",
+        "region": "all",
+        "weight": "child_rowmass"
+      },
+      "index": 9,
+      "weight": "-1"
+    }
+  ],
+  "active_square_groups": [
+    {
+      "descriptor": {
+        "domain": "all",
+        "family": "pair",
+        "id": "10f0d9b361d5eceafc47593df6588a184a0b7bb89ec87af4d34a25c431bff464",
+        "sign": -1,
+        "weight": "child_kernel"
+      },
+      "index": 22,
+      "weight": "1"
+    },
+    {
+      "descriptor": {
+        "contrast": "half",
+        "family": "signed_block",
+        "id": "21b57de94da4b7e48ca0cb6cfa0143891c49c5a384baae7f170ec0b997b0c53f",
+        "region": "child",
+        "weight": "one"
+      },
+      "index": 58,
+      "weight": "2"
+    }
+  ],
+  "all_factor_extension_weights_zero": true,
+  "classification": "exact all-X alias of supplied unsigned Cauchy calibration",
+  "constant_slacks": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "gamma": "56/3",
+  "global_critical_bound_proved": false,
+  "input_sha256": {
+    "candidate_seal.json": "0be8d4a89c1fbf185759528d0595732c39aa66a69a759b0bb2c7b9d6232dd2e7",
+    "jobs/train-001.json": "4dea11ad5b1d3cb68bb0d4c7cb5b8d2a6ce7a86c6aae8ecb328868b3088f22e1",
+    "protocol.json": "9d0c391603944cb3c7273fd4a241595cfc4783201322bcd7f125d4378ef51346",
+    "seal.json": "030fa545e73f7ab1cbbfce865ce12eca82c01756ec7793c0e66d2fdab300339d",
+    "source_seal.json": "8e9e63001e992fd29bb814325012bebc6cd30c084b4f4b61f84ec4439c77443a",
+    "training.json": "b6d01b1bf3bc1c3f797d535c5b4348e8ae2b840e0472344b78a2c9a8cbab0924"
+  },
+  "learned_new_signed_estimate": false,
+  "new_divisor_relation_weights_all_zero": true,
+  "new_divisor_square_weights_all_zero": true,
+  "scalar_budget": "U(X)=sum_{t=2X}^{4X-1} t sum_{i<=t} u_i",
+  "schema": 1,
+  "scope": "sealed unsigned training outcome only; no final or dual outputs inspected",
+  "source_sha256": {
+    "check_cancellation_arithmetic_run.py": "b23c0f244dfaa7d3cc1907366c4aa9853ca76c7fdcc08adc14a4d1f113f5e6ef",
+    "check_cancellation_divisor_localizer.py": "d44eb098d921009192dce6ceb31fcfea876ad6c8211e0905c77aafc144a2f046",
+    "check_grouped_arithmetic_run.py": "c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f"
+  },
+  "uniform_identity": "U(X)-Delta(X) = sum_{t=2X}^{4X-1} sum_{1<=a<b<=t}(x_a-x_b)^2 + 2 sum_{t=2X}^{4X-1} P_floor(t/2)^2 - sum_i mass_X(i)(x_i^2-u_i)"
+}

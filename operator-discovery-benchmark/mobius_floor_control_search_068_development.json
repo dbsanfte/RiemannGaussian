@@ -1,0 +1,28 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new synthetic floor bound synthesis suite",
+      "returncode": 0,
+      "tests": 10,
+      "stdout": "test_actual_joined_source_barrier_family (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_complete_span_is_flagged_even_when_price_is_exact (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_duplicate_dictionaries_reuse_solver_and_keep_all_plans (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_failed_solver_is_recorded_with_valid_zero_fallback (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_fractional_depths_without_root_whitelist (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_input_scope_rejects_signed_targets_and_bad_parameters (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_integer_replay_and_box_penalty_match_scalar_formula (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_lp_recovers_anonymous_complete_floor_calibration (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_quotient_blocks_and_rank_spread_match_scalar_enumeration (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_unsigned_squarefree_mask_and_unit_extraction (test_mobius_floor_control_068.FloorControlTests) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.044s\n\nOK\n",
+      "operations": 510026,
+      "elapsed_seconds": 0.04439998103771359,
+      "peak_rss_KiB": 78320
+    },
+    {
+      "command": "native single-thread LP and new source-bound independent pipeline",
+      "returncode": 0,
+      "tests": 2,
+      "stdout": "test_lp_recovers_anonymous_complete_floor_calibration (test_mobius_floor_control_068.FloorControlTests) ... ok\ntest_independent_pipeline_source_binding_and_far_transfer (test_mobius_floor_control_068.FloorControlTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.331s\n\nOK\n",
+      "operations": 4228715,
+      "elapsed_seconds": 0.33120810805121437,
+      "peak_rss_KiB": 93948
+    }
+  ],
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false,
+  "operations": 4738741,
+  "unique_new_synthetic_tests": 11,
+  "final_status": "PASS"
+}

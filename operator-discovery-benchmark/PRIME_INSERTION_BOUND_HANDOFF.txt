@@ -1,0 +1,57 @@
+PRIME INSERTION AUXILIARY SEARCH055: FINITE PASSES, FULL DRIFT OPEN
+
+Authoritative archive:
+  fractional-prime-kernel-results/pilot-001/scale_followup_001/dense_followup_001/insertion_followup_001/
+Its report.json, selected.json, final.json, proof_attempts.json,
+uniform_tail_bounds.json and next_search_input.json preserve the evidence.
+
+The detector enumerated397 positive auxiliary energies and1985 recurrence
+claims for the fixed alpha1/5 q2 filter [2,-3,1]. Each energy retains the
+complete target t0(N)^2/N and adds lambda*(sum a_i t_i(N))^2/N. The seven
+channels are insertion sets empty,2,3,5,23,25,35. Signed mixtures are formed
+before squaring. The numeric selector receives no anticipated winning
+formula or proof-provider output.
+
+All seven archived claims had delta1,C128. The archive contained the
+target-only baseline and six single-channel auxiliaries at lambda1/4.
+Each passed14 independent final branch comparisons:98 finite passes in all.
+The final source evaluator independently rebuilt140 channel values from
+ordinary Mobius coefficients, shifted logarithms, and coprime cofactor
+counts. Selection used training transitions only; underlying054 target
+values were reused and were already observed. This was not a wholly new
+source-data experiment. No final constants were refitted.
+
+There is NO demonstrated auxiliary advantage in that selected archive.
+Reading the saved training rows subsequently shows that a few signed
+mixtures had smaller unrounded required constants; coarse powers-of-two
+constants and a simplicity tie-break hid them. Their small improvements
+are finite numerical evidence, not a proved cancellation mechanism.
+
+Uniform paid rules now have executable independent checks:
+  * Boolean prime insertion on radical-invariant states, including the
+    external coprime masks and exceptional unit contribution;
+  * nonnegative-square target domination and a source-free finite base;
+  * conditional all-integer recovery from BOTH binary-child recurrences;
+  * the t>=8 Laplace-tail bound for all seven channels, every integerN>=2.
+
+The tail bounds are18*2^-8 for the empty set and12*2^|S|*R^-8 otherwise.
+They control a component of the integral. The joint low-t arithmetic,
+complete energy drift, original target bound and RH remain OPEN.
+The pointwise proof attempt gives an N^1 upper bound; this does not imply
+the proposed N^-delta drift. All source, complement and energy crosses
+are retained in the next proof obligation.
+
+The run finished successfully in7.583495659seconds using3workers.
+No new producer logarithm atoms were evaluated. Independent shifted-atom
+audits did overlap earlier atom computations; that is disclosed in the
+archive. Largest individual worker peak37364KiB, parent peak704032KiB
+(process measurements, not a simultaneous aggregate). Budget16GiB.
+45 distinct new tests passed; development work proxy3264327. No old
+successful study or suite was replayed. No artifact hashes were created.
+167prior frozen sources plus16new files remain unchanged:183total.
+
+The next substantive work is to enlarge automatic proof search for the
+unpaid source, rather than extending the finite range or optimizing C.
+Current056 work is investigating generic rational integral cutoffs and
+exact prime-class jet relations. Its results are not asserted here.
+The active goal is not complete.

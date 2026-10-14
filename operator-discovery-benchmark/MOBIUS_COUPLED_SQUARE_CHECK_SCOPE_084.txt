@@ -1,0 +1,73 @@
+Independent positive-square residual checker084 scope
+
+NEW check_mobius_coupled_square_084.py reuses frozen independent083 coupled
+remainder and full outer-certificate admission. No producer import, float
+trust, historical source/science query, oldtest execution, hash or frozen edit.
+Nine distinct tests, eleven executions pass; three attempts retained.
+
+API verify_certificate(program,u,outer_certificate,cert,meter=None). Exact
+cert keys squarefree_count,factor_denominator,factor_numerators,price,row_prices.
+Original fullSFcount is bound; factor rows and output rows use COMPLETE
+effective coordinates including joint known unit/prime anchor if requested.
+E<=512, rectangular rank<=E, empty rank allowed. Canonical integer strings
+only: denominator power2<=2^48, numerators absolute bits<=128. Denominator
+positive; no exponent/sign/leadingzero/fraction spelling accepted.
+
+Independent R=A-O-G reconstruction retains negative original positive Gram
+and all cross terms, requiring complete SAME-PROGRAM outer theorem. Exact
+native integer product computes Q=L L^T, with L=num/den. Thus Q>=0 for all
+real coordinates, and actual mu^T R mu<=mu^T(R+Q)mu. Complete effective
+Boolean diagonals equal1, so trace(R+Q)+2sum|offdiag| is a FINITE upper.
+No diagonal clamp, lost anchor constant, omitted primes or dropped cross term.
+Status VERIFIED_FINITE_COUPLED_SQUARE_BOUND. Diagnostics old_residual_price,
+factor_trace,signed_trace,absolute_cross_price and exact output rows. Empty
+factor recovers complete old residual price exactly. Arbitrary rank factor
+may improve or worsen price; strict improvement is not required for admission.
+
+Resource gates precede factor/native allocation: bounded textual roster,
+full inherited source geometry admission, effective512 limit, cumulative
+retained raw/remainder/factor/native product scratch reserve, bounded128bit
+integers and dyadic48bit denominator. Independent Meter4GiB/work3e11;
+aggregate16GiB is runner obligation. No truncation or rounding admission.
+Standalone square_price helper requires complete symmetric matrix, bounded
+exactinteger factor and admitted dyadic denominator.
+
+Tests compare exact rational Gram and complete literal price; zero factor
+on anchor/unanchored/unit domains; frustrated three-negative-edge matrix
+strictly improves Booleanprice6 to3 and bounds all eight Boolean vectors;
+wrong denominator/rank/integer/schema/price/count; changed source/outer/anchor
+binding; huge source horizon pre-sieve, factor dimension and work rejection.
+Structural known unit/prime signs may be used; unknown composite signs and
+observed source values never used in admission. Tiny matrices only.
+
+Outputs uniform_remaining/remainder/source/RH ALWAYSFalse. This language
+extends finite pricing; no growing-factor construction or uniform price
+theorem is supplied. Historical original kernel/source binding remains an
+external obligation.
+
+Exact affine grammar dual extension
+
+verify_dual(program,u,outer_certificate,cert,meter=None) requires EXACT
+squarefree_count,factor_denominator,factor_numerators,equality_multipliers,
+lower_bound. Same factor grammar as primal, plus exact each rownorm<=1.
+X=UU^T+diag(1-rownormSquared) is PSD with diagonal1. Consequently trace(RX)
+lowerbounds every PSD-completed Boolean price; it is NOT actual signed
+Möbius drift lower bound. Source/energy/positive original Gram remain fixed.
+Independent full OUTER equality rows are rebuilt with all Gram columns,
+then fixed Gram coefficients move to rhs b. All coupled theta remain boxes
+[-16,16], outer constraints Etheta=b. Residual templates Bj zero the raw
+BOTH-outer block before full prime congruence, retaining all cross entries.
+R0 is computed algebraically as admitted R minus all currenttheta*Bj; no
+false zero-theta outer admission is assumed. Independent integer D columns
+and lifted X reconstruct every template functional. Exact certified lower:
+trace(R0X)-lambda.b-16sum|trace(BjX)+(E^Tlambda)j|. Multipliers unrestricted
+canonical rationals subject inherited prospective bit/work/memory gates.
+Status VERIFIED_FINITE_COUPLED_SQUARE_GRAMMAR_LOWER_BOUND refers only to
+complete finite fixed-Gram affine-box square-certificate grammar. It is not
+LP/SDP optimality, a uniform obstruction, a true mu lower bound or RH claim.
+
+Three new tests independently construct literal raw R0 and every Bj including
+outer zeroing, nonzero Gram rhs shifts, anchor lift and offdiagonal factors;
+compare exact multiplier formula and primal price; reject norm>1, wrong
+multipliers/den/rank/lower/source/Gram, and test identity X emptyfactor plus
+huge-horizon scope/resource gate. No old tests/science replay.

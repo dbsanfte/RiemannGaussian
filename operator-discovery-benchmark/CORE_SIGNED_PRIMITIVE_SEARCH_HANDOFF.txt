@@ -1,0 +1,174 @@
+SIGNED PRIMITIVES DISCOVERED; CURRENT ENERGY ENDPOINT STILL OPEN
+
+Current input: candidate10_signed_primitive_obligation.json
+Verified result: core-signed-primitive-results/pilot-001/verification-001
+Saved producer search: core-signed-primitive-results/pilot-001/proof_search.json
+Generator: core_signed_primitive_search.py
+Independent checker: check_core_signed_primitive_search.py
+Accepted verifier/publication: verify_core_signed_primitive_publication.py
+Review: CORE_SIGNED_PRIMITIVE_SEARCH_REVIEW_029.txt
+Protocols: core_signed_primitive_search_protocol.txt and
+           core_signed_primitive_verification_protocol.txt
+
+The original run_core_signed_primitive_search.py terminated with an interface
+failure AFTER saving the producer result. Do not restart it. Its source and
+failure snapshots remain intact. For future frozen-source ancestry use the
+accepted verifier module's verify(), which checks the saved producer result
+and explicitly accounts for the corrected checker interface.
+
+Why this advances the detector
+------------------------------
+The previous moment stage only tried arguments which ultimately majorized
+arithmetic coefficients separately. Their costs exceeded every requested
+Gram target even with height costs removed. This extension searches exact
+SIGNED summation identities before applying magnitudes, and checks whether
+their endpoints and remaining terms can actually be paid.
+
+The detector infers potential monomials from the work's state increments
+and solves rational coefficient systems. Sol6.1 agents supplied reviewed
+rules and an independently implemented verifier, not a nominated answer
+for each searched primitive. There are no runtime model calls, fitted
+constants, or finite numerical growth estimates in these proofs.
+
+Generic development calibrations rediscover actual all-scale signed controls:
+given W_q=mu(q)*h(c_(q-1))/q, where c_N=sum_(n<=N)mu(n)/n, the solver finds
+the discrete primitive for polynomial h. Tests cover degrees0..6 and a
+mixed rational polynomial. The absolute event bound is O(log B); the
+discovered endpoint-plus-remainder argument gives O(1).
+
+For example h(c)=c yields F=c^2/2 and R=-mu(q)^2/(2q^2). The exact unit
+endpoint remains. Complete divisor inversion proves |c_N|<=2 for EVERY N:
+N*c_N=1+sum_(d<=N)mu(d)*{N/d}. The quadratic remainder sums absolutely.
+These are known elementary signed controls recovered by the executable,
+not new RH-level arithmetic estimates. The current backend uses absolute
+remainder costs; the sharper one-sided constant in Review029 is not an
+implemented sign-provider certificate.
+
+Actual search language and proof scope
+--------------------------------------
+The current source is the complete p2,m3 joined cutoff work. Substitute
+E=1+z(c-A), set the exact head atom v=1, and retain every conjugate and
+signed cross. States evolve by
+ A'=A+x*b, Abar'=Abar+x*bbar, c'=c+x*a,
+ D'=D+b, Dbar'=Dbar+bbar, x=mu(q), a=1/q, b=q^-s.
+The zero-Mobius deterministic head update is never omitted. z,zbar stay
+fixed. All source/centering/residue bindings and the original alternatives
+remain in the inherited input.
+
+Reverse one declared increment in each source monomial, admitting a potential
+only when its remaining factors are state/invariant symbols. Pair conjugate
+monomials to form a real basis. No current a,b factors are treated as fixed
+storage coefficients. Compute the FULL DeltaF, including all higher event
+powers, and reduce x^3=x. This is a finite first-increment dictionary; it
+does not cover every auxiliary construction or arbitrary new state.
+
+For W=DeltaF+R, sum on the SAME common window H=2(2B)^(45/2):
+ sum_(q=2..V)W_q=F(state_V)-F(state_1)+sum_(q=2..V)R_q.
+The outer |zeta(s+1/3)/s|^2 and measure dt/(2pi) occur once. The unit state
+is A=Abar=c=D=Dbar=1; z is not set to1. The full unit polynomial's growing-
+height moment must be paid. The accepted parent moment certificates supply
+all height powers, compact contributions, epsilon losses and logs without
+rerunning their old proof searches. The paid original-mask correction is
+still B^(21/10), with all partial integer cutoffs covered.
+
+The observable here is the absolute value of the COMPLETE cumulative signed
+integral. It is not a sum of absolute grouped works or a Gram bound. None
+of the252 previous Gram goals is closed by renaming this quantity.
+
+For every endpoint/residual cost threshold, admit only basis columns with
+affordable endpoint costs and require every more expensive residual row to
+cancel. Exact elimination gives either rational potential coefficients or
+a left-null witness y with y*M=0 and y*source nonzero. The checker rebuilds
+all columns and validates each witness directly, independently of the solver.
+The threshold search includes the requested cost and every cost transition.
+Separate unrestricted signed-row elimination exposes telescoping identities
+even when their endpoints are too expensive. Recognition of the original
+energy happens AFTER solving and is not an input to the primitive search.
+
+Verified actual outcome
+------------------------
+Status: SIGNED_PRIMITIVE_ARGUMENTS_VERIFIED_WITH_OPEN_SIGNED_CORE.
+The canonical work has5,064 monomials. The detector inferred66 Hermitian
+potential columns and examined35 cost thresholds. Thirty-four were exactly
+infeasible under their endpoint/residual budgets. The sole feasible minimum
+has exponent11/2; its chosen potential is zero, retaining the absolute
+baseline. The requested exponent12/5 remains open.
+
+At the requested threshold18 columns are affordable and454 residual rows
+must cancel. A one-row dual obstruction selects
+ A^5*Abar^4*a*x*z^3*zbar^3,
+whose source coefficient is-3 and whose coefficient in EVERY affordable
+column is zero. Near the best achievable bound, the threshold99/20 admits
+65 of66 columns but the two highest signed rows still cannot cancel.
+One corresponding exact witness selects A^5*Abar^4*bbar*x*z^3*zbar^3,
+with source coefficient5. These are finite-grammar exclusion certificates,
+not lower bounds on actual work or disproofs of its arithmetic bound.
+
+Unrestricted signed-row elimination succeeds. Its121-term potential is
+EXACTLY the original energy |P|^2, where P=A^2E^3-c^3D. The initialized
+endpoint also has121 terms (P at the unit is zero). Its23-term remainder
+is the complete negative zero-sector work. The elementary absolute costs
+are endpoint B^(11/2), remainder B^(33/10). The older nonlinear argument
+already pays that zero-sector correction more effectively, but does not
+pay the current energy endpoint. This exact identity therefore restates
+the original open energy problem; it is not a newly proved improvement.
+
+The leading endpoint is |z|^6|A|^10. Review029 explains why cancelling its
+first-variation rows forces a degree10 endpoint in this fixed-coefficient
+polynomial setting. Adding cheap bounded-state primitives alone cannot
+make that endpoint payment disappear. Every full-core/RH and requested-
+component payment flag remains false.
+
+What should change in the next search
+-------------------------------------
+The current input keeps the complete signed core at priority zero, adds the
+exact primitive failure and endpoint costs, and preserves all older routes.
+The next useful proof primitive needs additional actual arithmetic control:
+a coupled signed inequality, a uniformly controlled recurrence, a new
+arithmetic state with a proved relation to the endpoint, or a different
+complete-source route. Preserve useful unproved lemmas as explicit targets.
+Do not treat the energy's own desired bound as an available endpoint rule.
+
+Review029 gives a concrete possible language extension: prime-filtered
+harmonic states C_p(U), with proved |C_p|<=4 from complete prime-dilation
+inversion, and signed mixed-gradient identities such as F=c*C_p. It also
+prices fixed prime-set products and warns that growing prime sets are not
+free constants. These are UNIMPLEMENTED extensions, and their boundedness
+does not by itself control A_U(s) or |P_U(s)|^2. Coercivity or recovery from
+any new state must be proved against the complete target. New one-sided
+SOS rules and cutoff-dependent primitives likewise need their full sign
+domains, coefficient changes, endpoints and noncircular dependencies.
+
+Verification, preserved failure and resources
+----------------------------------------------
+Root's12 owned development tests passed in the sole run. The independent
+checker's13 original tests passed in its sole run. The first actual check
+then exposed a meter-interface mismatch: it called number() on the runner's
+charge-only Meter. The failed original session50071 and terminal_failure.json
+are preserved. No mathematical result was accepted by that failed check.
+
+The checker now validates rational bit lengths locally and uses charge(),
+retaining the size guard. Only one focused regression with the actual runner
+meter was added/run; it passed. Thus26 distinct tests passed, with no rerun
+of a passing unchanged suite. The correction changed only the checker, its
+tests and its receipt relative to the original snapshot.
+
+The follow-up session82761 verified the SAVED producer result, independently
+reconstructing all source polynomials, columns, costs, primal/dual witnesses,
+endpoint-restatement detection and full feedback. It completed exit0.
+No producer search was repeated. The accepted verification artifact reports
+verified=true. Its wrapper tests isolate symbolic ancestry; the actual run
+checks the complete current source and all144 inherited bindings.
+
+Post-run readback confirmed all10 corrected frozen source files unchanged,
+the saved producer proof unchanged byte for byte, and exact equality of the
+published input with both new publication copies. Every other original
+pilot source is required to match its old frozen bytes. No hashes or fresh
+arithmetic source samples were used; all old results remain preserved.
+The producer proof artifact is4,028,854 bytes.
+
+Development:14,158,230 charged operations including the focused correction.
+Failed pilot:14,802,301. Accepted verification:14,539,409.
+Inclusive total:43,499,940 of the1b cap. Accepted verification elapsed26.298s;
+its main peakRSS704,032KiB, within4GiB and900s limits. Both actual sessions
+are terminal; no process remains to poll. The research goal remains active.

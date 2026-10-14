@@ -1,0 +1,488 @@
+CURRENT-SCALE FULL-FLOOR CONTROL: EXACT SYNTHESIS AND A DENOMINATOR BARRIER 068
+============================================================================
+
+Scope
+-----
+This is a new source-only mathematical review of the ordinary-Mobius raw
+head from MOBIUS_SIGNED_LAG_HANDOFF.txt, SPARSE_HEAD_MECHANISM_REVIEW_067.txt,
+mobius_sparse_prefix_066.py, and the newly supplied floor-control dictionary
+rules. No scientific array, old study, numerical
+Mobius sample, optimizer, archived result, hash, or test was executed.
+Only this review is written; no subagent is used. The derivations below
+are elementary and invoke no RH, Mertens estimate, prime-distribution
+theorem, or random-sign model.
+
+The new substantive result is a current-scale obstruction, different from
+067's small-support divisor barrier. For the actual joined source
+N=15k,y=16k, a fixed finite rational endpoint-quotient dictionary cannot
+produce an o(N) positive residual price, even when horizon20k is present
+and coefficients are arbitrary signed rationals learned per instance.
+A three-chamber squarefree dual certificate proves this. A quantitative
+version excludes an RH-strength positive price whenever the dictionary's
+common rational denominator is O(N^rho), rho<1/4. The statement is about
+this proof price, never a lower bound on the signed raw coefficient.
+
+Growing closure k<=N^theta, theta>0, generally lies outside that denominator
+regime. No unconditional square-root or sublinear approximation theorem
+for those growing dictionaries is proved here. Conversely, a complete
+quotient dictionary can encode the target using only O(sqrt X) distinct
+horizons per indicator endpoint. Small dictionary cardinality and absence
+of explicit mu-sign inputs therefore do not themselves exclude encoding.
+
+1. Exact row theorem, with the known unit paid before triangle
+-------------------------------------------------------------
+Use the original joined source and conventions of067:
+
+ g(d)=-1[d>y]*(W(N/(3d))-r*W(N/(5d))),
+ W(t)=floor(4t)-3floor(2t)+2floor(t),
+ D=floor(4N/3), r in[3/5,1],
+ kappa_j(n)=g(jn)-g((j+1)n),
+ c_j=d_j+sum_(n>=1)mu(n)*kappa_j(n).
+
+Thus kappa_j is supported at n<=R0=floor(D/j), has rational geometry
+at rational r, and satisfies |kappa_j(n)|<=4. d_j is the exact direct
+full-floor coefficient. All channels and rows retain ordinary mu.
+
+Let H be any finite set of positive integer horizons, with arbitrary
+rational coefficients lambda_X, and set
+
+ Q(n)=sum_(X in H)lambda_X*floor(X/n),
+ R=max(R0,max H), with max(empty H)=0.
+
+The complete ordinary divisor identity gives, for every X>=1,
+
+ sum_(n>=1)mu(n)*floor(X/n)=1,
+
+because regrouping by m<=X gives sum_(n|m)mu(n)=1[m=1]. No floor may
+be clipped at R0 if its horizon exceeds R0. Consequently
+
+ |c_j| <= |d_j+sum_X lambda_X|
+           +sum_(n<=R)mu(n)^2*|kappa_j(n)-Q(n)|.             (1.1)
+
+There is a stronger legitimate version: mu(1)=1 is known, so combine
+the unit with the scalar BEFORE triangle. Since floor(X/1)=X,
+
+ c0_j=d_j+kappa_j(1),
+ center_j=c0_j+sum_X lambda_X*(1-X),
+ P_j(lambda)=|center_j|
+       +sum_(2<=n<=R,mu(n)^2=1)|kappa_j(n)-Q(n)|,
+
+ |c_j|<=P_j(lambda).                                        (1.2)
+
+The price(1.2) is no larger than(1.1), by scalar triangle. Horizon1
+has no effect in(1.2), since 1-X=0 and its floor vanishes for n>=2;
+it can be dropped. The empty dictionary remains a valid baseline.
+The squarefree mask is unsigned geometry, not a substituted sign model.
+
+These theorems are uniform finite identities. They allow current-scale
+horizons, larger horizons with their complete support, arbitrary signed
+coefficients, arbitrary rational quotient exponents, and adaptive
+sign-blind coefficient synthesis. They do not prove any growth rate for
+the synthesized price.
+
+2. Exact LP and lower certificates, including a declared coefficient box
+------------------------------------------------------------------------
+Let den be a positive common denominator for d_j and kappa_j. Put
+c=den*(d_j+kappa_j(1)), w_n=den*kappa_j(n), x_X=den*lambda_X,
+and A_(n,X)=floor(X/n), for squarefree n>=2 through R. The integer
+geometry LP minimizes
+
+ L(x) = |c+sum_X x_X*(1-X)|
+         +sum_n |w_n-sum_X A_(n,X)*x_X|.                    (2.1)
+
+Then L(x)/den is an upper certificate for |c_j| for EVERY rational x.
+Floating solvers propose x; exact rational replay proves the bound.
+The solver need not see ordinary mu signs or the evaluated c_j.
+
+Without a coefficient box, the exact dual is
+
+ maximize epsilon*c+sum_n z_n*w_n,
+ |epsilon|<=1, |z_n|<=1,
+ epsilon*(1-X)-sum_n z_n*A_(n,X)=0 for every X.             (2.2)
+
+The usual rational LP primal/dual certificates can be checked by integer
+cross-multiplication. A positive dual is a lower certificate for this
+dictionary's positive proof price, not for |c_j|. The actual ordinary-mu
+vector epsilon=1,z_n=mu(n) is dual-feasible by the complete floor identity;
+its negation is also feasible. Therefore every dictionary optimum is at
+least |den*c_j|. This fact is theoretical, not permission to feed signs
+or target values into a sign-blind search.
+
+Now impose a declared box |x_X|<=C, C>=0. For ANY proposed multipliers
+|epsilon|<=1, |z_n|<=1 define
+
+ v_X=epsilon*(1-X)-sum_n z_n*A_(n,X),
+ LB=epsilon*c+sum_n z_n*w_n-C*sum_X|v_X|.                  (2.3)
+
+For every boxed x,
+
+ L(x)>=epsilon*(c+sum_X x_X*(1-X))
+             +sum_n z_n*(w_n-sum_X A_(n,X)*x_X)
+       =epsilon*c+sum_n z_n*w_n+sum_X x_X*v_X
+       >=LB.                                             (2.4)
+
+Thus max(0,LB)/den is a rigorous lower bound for the DECLARED boxed
+optimum, regardless of approximate stationarity or solver success.
+Rationally rounding and clipping epsilon,z to [-1,1], then computing
+v and LB exactly, is sufficient. The penalty C*sum|v_X| cannot be
+omitted unless exact dual equalities have been established. A box such
+as C=4*den*max(1,#H) is a finite search capacity, not a uniform theorem
+about the unboxed optimum. A small boxed gap certifies optimality within
+that box only; a large boxed lower bound cannot exclude unboxed controls.
+
+For rationalized x and a proposed x', the exact Lipschitz loss is
+
+ |L(x')-L(x)| <= sum_X |x'_X-x_X|*
+       [X-1+sum_(2<=n<=R,mu(n)^2=1)floor(X/n)].             (2.5)
+
+The bracket is at most sum_(n<=X)floor(X/n)-1
+<=X*(1+log X)-1. Hence dyadic rounding with error<=1/(2G) per coordinate
+has a completely charged explicit upper loss. Exact replay alone is
+enough for validity; no roundoff-to-zero residual shortcut is allowed.
+Endpoint y,r, original direct term, squarefree support, new horizons,
+denominator, coefficient box and dictionary cap must remain in the
+certificate. A finite solver status is not a mathematical growth law.
+
+A fixed dyadic grid G=2^20 is legitimate finite replay precision. It is
+not automatically harmless in an all-scale theorem: for #H bounded and
+max H=O(N), the worst-case loss in(2.5), after division by den, is
+O(#H*N*log(2N)/(den*G)). This envelope is linear up to logarithms when
+G is fixed. A future ideal-coefficient rate must either control the
+actual rounding residual more sharply, use coefficients already on the
+grid, or let G grow sufficiently to pay this complete loss. For example
+G>=#H*N^(1/2-eta)*log(2N)/den suffices for an
+O(N^(1/2+eta)) rounding allowance under those horizon assumptions.
+This is a sufficient precision condition, not a lower bound on actual
+rounded certificates.
+
+3. Full quotient span can encode the exact target at sparse cardinality
+----------------------------------------------------------------------
+For the single indicator h_A(n)=1[n<=A], regrouping finite divisor sums
+proves the exact functional identity
+
+ h_A(n)=sum_(m<=A)mu(m)*floor(floor(A/m)/n).                 (3.1)
+
+Indeed floor(floor(A/m)/n)=floor(A/(mn)), and the complete m sum equals
+1 whenever A/n>=1 and0 otherwise. Grouping equal positive quotients
+B=floor(A/m) produces at most 2*floor(sqrt A)+1 distinct horizons.
+Their grouped coefficients are sums of ordinary mu on quotient-index
+intervals. The sum of all coefficients is M(A)=sum_(m<=A)mu(m).
+
+The joined row kernel is already an exact signed sum of indicators:
+
+ kappa_j(n)=sum_T a_T*
+       [h_(floor(T/j))(n)-h_(floor(T/(j+1)))(n)].             (3.2)
+
+If the dictionary contains EVERY positive quotient floor(A/m),m<=A,
+for every nonzero indicator endpoint A in(3.2), then(3.1) gives zero
+residual on ALL n, and the scalar center in(1.2) is exactly c_j.
+The unboxed optimum therefore equals |c_j|. A bounded box may fail to
+contain those coefficients, so dictionary coverage is an encoding-risk
+flag rather than proof of actual boxed zero residual.
+
+The representation(3.1) uses mu signs in its explanation. An optimizer
+can reach its algebraic effect through floor geometry and the squarefree
+mask without receiving a sign table. Sign-blind inputs do not certify
+an independently paid all-scale estimate. This is why complete quotient
+coverage must be flagged explicitly, even with O(sqrt A) horizons per
+endpoint. Cardinality or runtime alone is not a noncircularity criterion.
+
+A one-level quotient cutoff m<=sqrt A DOES NOT automatically contain
+all distinct quotients: small quotient horizons usually require larger
+indices. A nested cutoff is complete only when actual coverage has been
+checked; nesting identities alone do not establish completeness.
+Likewise a budget clip at512 can remove columns needed for(3.1).
+
+4. Actual joined interior source used in the new obstruction
+-----------------------------------------------------------
+Take N=15k, D=20k, y=16k, integer k>=1. At both r endpoints, indeed
+at every r in[3/5,1], the exact tail source is -1 on(16k,20k] and0
+elsewhere. Both channels remain present: the q channel has already
+exited below y. Its exact tail-step coefficients are a_(16k)=1 and
+a_(20k)=-1. The first head row is consequently
+
+ w(n)=kappa_1(n)=1[8k<n<=10k]-1[16k<n<=20k], d_1=0.         (4.1)
+
+This is a required raw head row for all sufficiently large k under
+the square-root head cutoff. It has no unit contribution. Its source
+endpoint horizons are8k,10k,16k,20k; the six full atoms add only
+3k,5k,6k,10k,12k,20k. Their nontrivial quotients are <=10k.
+
+Thus dictionaries generated from these endpoint seeds by finitely many
+declared quotient operations have ideal normalized horizons a_X in
+
+ (0,16] union {20}.                                       (4.2)
+
+For the usual integer quotient operation, a_X is rational and the
+actual horizon is X=floor(a_X*k). Nested integer quotients collapse
+exactly: floor(floor(A/s)/t)=floor(A/(st)). Current-scale horizon20k
+is retained. Restricting the proof below does not discard that horizon.
+
+5. Three-chamber exact floor dual with squarefree coordinates
+------------------------------------------------------------
+Assume the ideal rational horizons in(4.2) have a common positive
+integer denominator L: b_X=L*a_X is an integer. Let k>=120*L^2.
+Empty and duplicate horizons may be removed. The following argument
+also permits horizon rounding errors of absolute size<=1.
+
+For s=0,1,2 define the half-open integer chamber
+
+ I_s={n: 18k/(18sL+1)<n<=19k/(19sL+1)}.                   (5.1)
+
+Their real lengths are k*Delta_s, where
+
+ Delta_s=1/[(18sL+1)*(19sL+1)].                            (5.2)
+
+I_0 is(18k,19k], where w=-1. I_1 and I_2 are below8k,
+where w=0. For k>=120L^2, the chambers contain no unit n=1.
+They are disjoint and all lie within the original20k source radius.
+
+Every n in I_s can be written n/k=1/[L*(u+s)], with
+1/(19L)<=u<1/(18L). For the ideal horizon a_X*k,
+
+ a_X*k/n=b_X*u+s*b_X.
+
+If a_X<=16 then 0<b_X*u<8/9 and its floor is0. If a_X=20
+then 20/19<=b_X*u<10/9 and its floor is1. Thus the integer
+floor value throughout I_s is
+
+ floor(X/n)=delta_X+s*b_X,
+ delta_X=1[a_X=20].                                     (5.3)
+
+Rounding X by at most1 changes the argument by at most
+(2L+1/18)/k<3L/k. Since a_X>=1/L, the smallest lower
+distance to an integer in the ideal argument is >=1/(19L).
+The condition k>=120L^2 makes the perturbation less than half
+that distance; upper distances are >=1/9. Hence(5.3) stays EXACT
+for the actual rounded horizons. No limiting or floating argument
+is used. If all horizons are exact a_X*k, the rounding condition
+is unnecessary, apart from ensuring useful chamber populations.
+
+Let C_s count the squarefree n>=2 in I_s. Whenever they are positive,
+choose
+
+ eta=min(C_0,C_1/2,C_2), epsilon=0,
+ z_n=-eta/C_0 on squarefree I_0,
+ z_n= 2eta/C_1 on squarefree I_1,
+ z_n=-eta/C_2 on squarefree I_2,
+ z_n=0 elsewhere.                                       (5.4)
+
+These are exact rational multipliers with |z_n|<=1. Equations(5.3)
+and(5.4) give, for EVERY admitted horizon,
+
+ sum_n z_n*floor(X/n)
+ =-eta*delta_X+2eta*(delta_X+b_X)
+                    -eta*(delta_X+2b_X)=0.               (5.5)
+
+Thus they satisfy the extracted-unit LP dual exactly, with epsilon0.
+Their source objective is sum_n z_n*w(n)=eta, since only I_0
+meets the support of w. For ANY coefficients, boxed or unboxed,
+
+ P_1(lambda)>=eta.                                      (5.6)
+
+The scalar penalty, including the original unit-extracted center,
+cannot defeat this certificate: its dual multiplier is zero. The proof
+uses only floor geometry, rational horizon data and the squarefree mask.
+It does not evaluate a single ordinary-mu sign or signed source row.
+
+6. Explicit elementary population bound and uniform consequences
+----------------------------------------------------------------
+An interval of real length B inside[1,20k] contains at least B-1
+integers. Non-squarefree integers have a prime-square divisor. The
+number divisible by any fixed a^2 is at most B/a^2+1. The union bound,
+with primes bounded by sqrt(20k), and
+
+ sum_(a>=2)1/a^2<=1/4+integral_2^infinity t^(-2)dt=3/4,
+
+therefore gives, conservatively,
+
+ C_s>=k*Delta_s/4-floor(sqrt(20k))-2.                      (6.1)
+
+No prime-distribution result is involved. The minimum in(5.4), with0
+used if a chamber is empty, is bounded below by
+
+ eta>=max(0,
+     k/[4*(36L+1)*(38L+1)]-floor(sqrt(20k))-2)
+     >=max(0,k/(5772L^2)-floor(sqrt(20k))-2).              (6.2)
+
+To check the middle chamber: Delta_1/8>=Delta_2/4 because
+(36L+1)(38L+1)>=2(18L+1)(19L+1); the first chamber is larger.
+The error in(6.1) remains safe after division by2. The source objective
+is multiplied by den in the integer-scaled LP, then divided by den,
+so(6.2) is the unscaled row-price lower bound.
+
+Consequences:
+
+* For ANY fixed finite rational quotient dictionary, L is fixed.
+  Equation(6.2) gives P_1=Omega_L(k)=Omega_L(N). This forbids
+  an o(N) positive-price theorem for that dictionary even if20k is
+  included, coefficients depend on k, and no coefficient box is used.
+  It is stronger in scope than the previous low-horizon support barrier.
+
+* If a growing dictionary has common ideal denominator L(k)<=C*k^rho
+  for a fixed rho<1/4, the rounding condition eventually holds and
+  P_1=Omega_C(k^(1-2rho)). The O(sqrt k) population error is smaller
+  than this main term. Such a grammar cannot prove every
+  O_epsilon(N^(1/2+epsilon)) head rate: choose
+  epsilon<1/2-2rho. This is a denominator-complexity condition, not
+  a cardinality-only theorem.
+
+* If quotient divisors are bounded by a fixed K and nesting depth by a
+  fixed h, one may take L=lcm(1,...,K)^h. Retaining arbitrary subsets,
+  a structural dictionary budget, or a box only weakens the primal
+  controls and preserves the certificate. No closure with both K and h
+  fixed is rescued by including the current-scale seed horizons.
+
+* The same reasoning covers variable K,h whenever their actual common
+  denominator meets the stated condition. A sufficient rough bound is
+  L<=(K!)^h<=K^(Kh). For example fixed h and
+  h*K*log K<=(rho-o(1))*log k with rho<1/4 are in the obstructed
+  regime. This does not assert that L must be this large; use its actual
+  value for a sharper certificate.
+
+The obstruction does NOT cover arbitrary extra horizon seeds,
+current-scale rationals without the common-denominator condition,
+unbounded growing nesting, signed residual moments, or a different
+proof price. It is NOT an Omega bound for |c_1|, the actual head,
+Mertens windows, or RH. The exact signed row may cancel strongly.
+
+6a. A rejected prefix-cap design and the final rank-spread scope
+-------------------------------------------------------------
+A development dictionary design visited divisor indices m=1,2,...
+in order, visited the row anchors at each index, deduplicated horizons,
+excluded horizons<2, and stopped at a fixed budget B. This design has
+an additional all-scale obstruction on the actual source(4.1).
+
+Its anchors are20k,16k,10k,8k. For sufficiently large k the B+1
+horizons floor(20k/m),1<=m<=B+1, are distinct and>=2: adjacent
+ideal values differ by at least20k/[B(B+1)]. They cannot all fit
+under budgetB. Thus either requested depth K<B+1, or the dictionary
+has stopped by indexB+1. Every admitted horizon has the form
+
+ X=floor(a*k/m), a in{20,16,10,8}, 1<=m<=B+1.             (6a.1)
+
+All requested dictionaries then have the SAME common denominator
+L=lcm(1,...,B+1). Equation(6.2) gives an Omega_B(k) positive-price
+lower bound uniformly over all requested K and all signed rational
+coefficients. Arbitrary rational exponents, even depending on N, do not
+escape that prefix-cap obstruction. Boxes and grids only increase the
+price. For B=512, the constant has an enormous asymptotic threshold;
+this claims no useful lower value at finite pilot scales.
+
+This prefix-cap design was rejected during development. The final
+declared dictionary instead enumerates ALL DISTINCT endpoint quotients
+A//m for1<=m<=min(K,A//2), using quotient blocks. If the union exceeds
+budgetB, it retains B equally spaced ranks of the sorted horizon set,
+including its minimum and maximum; B=1 retains the maximum. Increasing
+K can therefore change retained normalized denominators even at fixedB.
+The proof of(6a.1) does not apply to that rank-spread selection rule.
+
+The three-chamber theorem STILL applies to any final selected dictionary
+whose rational-horizon and common-denominator hypotheses in sections5-6
+hold. Fixed cardinality alone does not imply those hypotheses. The final
+selection change avoids this particular fixed-prefix conclusion; it
+does not prove a uniform rate or evade all possible obstructions. The
+complete quotient-coverage warning, exact boxed certificates, and finite
+precision scope remain applicable. No frozen final run is judged by the
+rejected development rule.
+
+7. Arbitrary rational quotient exponents: what is and is not established
+------------------------------------------------------------------------
+For theta=a/b>=0 rational, K=floor(N^theta) is well-defined by exact
+integer powers, with any necessary arithmetic resource cap declared.
+No mathematical denominator whitelist is needed. The cases theta0 and
+theta>0 have different asymptotic behavior: at theta0, K=1 permanently;
+at every fixed positive theta, K eventually exceeds every fixed divisor.
+A finite pilot where very small theta yields the same K as theta0 does
+not test that difference.
+
+For a fixed number of closure levels with K=N^theta, the common L can
+grow far beyond N^(1/4), so(6.2) generally becomes uninformative. It is
+invalid to apply the fixed-L linear conclusion while allowing L to grow.
+No assertion here excludes those current-scale growing dictionaries.
+But source geometry alone does not supply a sublinear residual theorem
+for them, and complete quotient coverage eventually restores the exact
+target-encoding possibility of section3. Those are separate boundaries.
+
+The genuine open constructive problem is to specify a source-bound rule
+for the admitted horizons and rational coefficients, then prove a rate
+for the COMPLETE residual plus scalar cost uniformly in N,y at both r
+endpoints. A finite exact primal bound and dual capacity gap support
+dictionary selection and rejection; they do not supply that rate.
+
+8. Conditional raw-head and far-correlation transfer
+--------------------------------------------------
+For the required head1<=j<J, any family of exact floor certificates gives
+
+ sum_(j<J)|c_j|<=sum_(j<J)P_j.                            (8.1)
+
+A uniform theorem sum_(j<J)P_j=O_epsilon(N^(1/2+epsilon)),
+for every epsilon>0, every prefix and both endpoint ratios, is therefore
+a sufficient direct head closure. It must prove actual synthesis cost,
+including any coefficient restrictions and complete new-horizon support.
+For example the stronger envelope
+
+ P_j<=C_eta*N^(1/2+eta)/j                                 (8.2)
+
+uniformly on the head pays(8.1) after summing the harmonic series and
+absorbing its logarithm into a chosen positive exponent gap.
+
+This is an alternative route to067's signed far-correlation condition,
+not automatically a bound for that condition. A head l1 estimate alone
+does not control the dyadic Cauchy prefactors in the far-risk expression.
+There is, however, a precise sufficient block transfer. Let I=[L,U],
+|I|<=L, let M1 be the original coalesced step first moment, and choose
+near-lag cutoff K>=0 as in067. Put
+
+ S_I=sum_(j in I)(P_j+|d_j|)^2.
+
+Since |z_j|=|c_j-d_j|<=P_j+|d_j|, one has E_I<=S_I.
+With E_I=D_I+C_I^near(K)+C_I^far(K), D_I>=0, and the paid
+|C_I^near(K)|<=8K*M1/L, it follows that
+
+ (C_I^far(K))_+<=S_I+8K*M1/L,
+ sqrt(|I|*(C_I^far(K))_+)
+     <=sqrt(L*S_I)+sqrt(8K*M1).                          (8.3)
+
+Thus a proved block family S_I=O_eta(N^(1+2eta)/L) gives paid far
+risk after summing the O(log N) dyadic blocks, with the same explicit
+near-band exponent cost as067. In particular(8.2), and the original
+paid direct atoms handled exactly, give such control. For large N the
+six original full horizons are outside the square-root head; finitely
+many smaller N can be paid directly. No sign estimate for individual
+lags is needed.
+
+The theta parameter for floor-dictionary closure is independent of the
+delta parameter for near-lag cutoff. Cofinal delta->0 remains necessary
+for the stated every-epsilon far-risk transfer when a positive delta
+is charged. A floor dictionary exponent is not an arithmetic cancellation
+exponent merely because it has the same numerical value.
+
+For affine r geometry and a FIXED common dictionary, the unboxed optimal
+LP price is a seminorm of the target modulo the floor-column subspace,
+hence convex in r. Endpoint
+certificates can also be interpolated when their common dictionaries
+and coefficient boxes permit it. The original raw-head norm is convex
+in r regardless. The indefinite far-correlation polynomial itself need
+not be convex; do not use endpoint convexity to bound it directly.
+
+9. Disposition
+--------------
+Paid here: complete-floor and extracted-unit row identities; exact
+unboxed and boxed dual certificates; explicit rationalization loss;
+complete quotient target-encoding boundary; a new exact three-chamber
+current-scale dual obstruction for actual joined sources; its explicit
+squarefree population and denominator-complexity bounds; and precise
+conditional head/far-risk transfer.
+
+Open: any uniformly sublinear positive-price theorem for the admitted
+growing N^theta quotient grammar over all interior prefixes, any
+RH-strength head synthesis theorem outside the restricted barrier,
+the remaining signed far-correlation control, and the full raw-head/RH
+research goal. No new unconditional bridge admission is claimed.
+
+An exact finite bound and declared-capacity gap are substantive detector
+outputs. They become a uniform theorem only after an independent rate
+for their complete cost has actually been proved. Fixed rational closure
+is now concretely ruled out as an o(N) positive-price mechanism on an
+admitted joined source; growing closure remains an honest open direction.

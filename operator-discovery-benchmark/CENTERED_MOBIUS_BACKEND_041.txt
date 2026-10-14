@@ -1,0 +1,109 @@
+CENTERED MOBIUS ENDPOINT 041: COMPLETE SOURCE, LOCAL BOUNDS, ENERGY OPEN
+
+This new backend preserves the endpoint of PERIODIC_NORMALIZATION_HANDOFF.txt
+and periodic-normalization-results/pilot-001/bound_search_frontier.json.
+It does not alter or rerun040. The original complete source and all prior open
+obligations remain. Neither a prefix-energy estimate nor RH is proved here.
+
+1. Exact source and prime-power proof
+
+Let r be any canonical rational with0<r<1/2, theta=1-r, and q any integer>=2.
+All products in this memo are Dirichlet convolution. Define K_r(n)=n^-r,
+b=K_r*mu, c=b-q delta_q*b, where delta_q is1 exactly at q.
+The unit is b(1)=c(1)=1. The generating series at each actual prime p is
+ (1-t)/(1-p^-r t).
+Writing v=p^-r in(0,1), its coefficients are b(p^e)=(v-1)v^(e-1), e>=1.
+Consequently |b(p^e)|<=1, and multiplicativity proves |b(n)|<=1 for ALL n.
+No squarefree restriction is made: every repeated valuation is retained.
+The exact all-prime adjunction law, including its non-coprime branch, is
+ b(pn)=v b(n) if p divides n, and (v-1)b(n) otherwise.
+In particular b(p^e)=v b(p^(e-1)) only for e>=2; the unit is separate.
+
+For arbitrary composite q, c(n)=b(n)-q*1_(q divides n)*b(n/q) is used directly.
+Thus |c(n)|<=q+1. No multiplicativity of c for composite q is asserted.
+If q is prime, its local series is (1-t)(1-q t)/(1-q^-r t).
+The exceptional valuation-one crossing must remain:
+ c(qn)=q^-r c(n)-(q+1)1_(q does not divide n)b(n)
+        +q1_(valuation_q(n)=1)b(n/q).
+At other primes p!=q, c(pn)=p^-r c(n)-1_(p does not divide n)c(n).
+Geometric recurrence at the q prime starts at e>=3, not e>=2.
+The certificate includes these conditional laws without claiming q prime.
+
+2. Analytic center, complete increment, real endpoints
+
+Define the analytic scalar
+ kappa=(1-q^r)/(theta*zeta(theta)).
+This is analytic continuation of the normalization. It is NOT an assertion
+that sum mu(n)/n^theta converges ordinarily. For real x>0 let
+ J_q(x)=sum_(n<=x)c(n)-kappa*x^theta.
+The equivalent expression J(x)-q J(x/q), with
+ J(x)=sum_(n<=x)b(n)-x^theta/(theta*zeta(theta)), retains the center even when
+ x/q<1. Replacing x/q by floor(x/q) in the power center changes the source.
+At integer n>=1 its COMPLETE increment is
+ a(n)=c(n)-kappa*(n^theta-(n-1)^theta),
+ a(1)=1-kappa, J_q(0)=0.
+Concavity of x^theta gives0< n^theta-(n-1)^theta<=1, including n1.
+Given an INDEPENDENTLY VERIFIED rational ceiling T>=|kappa|, therefore
+ |a(n)|<=q+1+T, every integer n>=1.
+This bounds coefficients/increments, not accumulated signed energy. In
+particular it does not pay any generated energy recurrence or storage claim.
+An externally supplied ceiling in symbolic_certificate is a premise; it
+requires separate verification. normalization_certificate computes a finite
+positive Arb enclosure and its upper absolute ceiling and binds the complete
+parameter/certificate payload. Invalid/insufficient enclosures raise.
+
+3. Public APIs and finite resource domains
+
+ symbolic_certificate(r_text,q,kappa_ceiling=None,meter=None)
+ normalization_certificate(r_text,q,precision=192,meter=None)
+ build_state(H,r_text='1/3',q=2,normalization=None,meter=None)
+
+Certificate schema centered-mobius-bound-v1 contains r,theta,q, exact source
+atoms, unit, rational local factor, both adjunction branches, coefficient
+bound, periodic definition/conditional laws, analytic normalization, optional
+integer ceiling, full increment bound, and false energy/RH proof flags.
+Normalization schema centered-mobius-normalization-v1 binds the parameters,
+Arb precision/enclosure, ceiling, symbolic certificate and no-ordinary-moment
+scope. build_state returns b,c,prefix,main,J,a numpyfloat64 arrays0..H, plus
+H/r/theta/q/kappa/normalization/certificate/metadata. Index0 is zero throughout;
+main(n)=kappa n^theta. It retains all previous prefix terms and all units.
+A supplied normalization must equal the fresh independently recomputed
+certificate at the backend precision; no unchecked injected production
+normalization is accepted.
+
+Generic helpers smallest_prime_factors, multiplicative_coefficients and
+center_coefficients permit synthetic tests without evaluating selected-source
+normalization. multiplicative_coefficients uses a supplied prime parameter
+in(0,1); production supplies exp(-r log p). SPF structural validation is not
+an independent primality proof; production constructs the complete SPF itself.
+All allocations/scans/sieve visits/local powers and prefix updates are charged
+to Meter(cap,seconds), with live scalar-cell reserve and deadline. Parameter
+bit bounds4096 and finite cells200m are resource guards, not a denominator
+bank. Numerical inability to resolve a valid rational parameter raises rather
+than replacing its semantics. There is no finite hard semantic exponent grid.
+
+Float arrays are observations/proposals. The analytic normalization is Arb
+certified; float coefficient/prefix roundoff is explicitly NOT interval
+certified. Compensated Neumaier summation preserves full numerical prefixes,
+and expm1/log1p evaluates centered power increments stably. Metadata exposes
+normalization radius and its scalar contribution to J error, without calling
+that a complete roundoff bound. Independent numerical/source replay remains
+necessary before promoting finite evidence. No import-time source evaluation,
+archive read, hash, ordinary critical moment or all-scale signed bound occurs.
+
+4. Integration scope and development
+
+This is a source/local-bound backend. Root owns detector-generated child,
+innovation, correlation/storage programs and their complete recovery debts.
+The OPEN target remains E_Jq(X)=X^-2 sum_(X<=n<2X)J_q(n)^2 with a uniform
+subpower bound; no source-bound rule in this module proves it. Local absolute
+bounds can be used to pay genuine detail/error sectors only with their full
+constants and exponent costs, not to assert prefix cancellation.
+
+Owned tests use toy multiplicative prime parameter1/2 (independent of p),
+synthetic signed coefficients and injected rational centers. They check
+Dirichlet convolution, repeated valuations, periodic composite q, units,
+subunit-centered dilation, exact incremental recovery, arbitrary denominator
+257 in symbolic parameters, domain/work/cell guards, and mocked production
+metadata. No actual selected-source coefficient/normalization or archive was
+observed. The receipt records every owned test invocation and cumulative work.

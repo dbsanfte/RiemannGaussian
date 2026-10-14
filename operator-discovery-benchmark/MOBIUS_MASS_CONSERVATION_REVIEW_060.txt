@@ -1,0 +1,274 @@
+MOBIUS MASS CONSERVATION AND COPY MATCHING REVIEW 060
+==================================================
+Scope
+-----
+This is a generic source-free mathematical review of the proposed060
+conservation/copy construction. The059 handoff and archived mechanism
+feedback were read. All059 and earlier sources, reviews and observations
+remain unchanged. No scientific source calls, source tables, nullspace
+enumerations, winners, quadratures, norms or tests were computed. One
+archived feedback JSON was decoded; the remaining work is symbolic proof.
+No particular conservation vector is supplied or presumed to exist.
+
+The proposed construction has a useful PAID conclusion if an exact positive
+conservation certificate is found: the complete final leftover cost is
+uniformly polylogarithmic. The paired-copy cost is a separate OPEN signed
+arithmetic leaf. Neither conservation nor finite matching closes the full
+middle estimate or RH.
+
+1. Exact masks, grid, boundaries and the inference certificate
+-------------------------------------------------------------
+Fix distinct actual primes p<q in a fixed registered-prime set M. Let
+R=product_(ell in M)ell, k=|M|>=2, and
+
+ W(v)=floor(4v)-3floor(2v)+2floor(v).
+
+W has period1 and takes +1 when frac(v) is in[1/4,1/2), -1 on
+[1/2,3/4), and0 elsewhere. All intervals are left-closed/right-open.
+Put u=W(v/p), z=W(v/q). The profiles and kernel signs are:
+ P:u!=0,z=0, sigma=u;
+ Q:u=0,z!=0, sigma=-z;
+ D:u=z!=0, sigma=u;
+ S:u=-z!=0, sigma=u.
+If u=z=0 there is no token. Define f_i(v)=sigma*1_(profile=i).
+
+In coordinate x=4v, each f_i(x/4) is a right-continuous step function
+constant on[j,j+1), j integer, with period L=4pq. For v>=0 its value
+at v=0 is zero. For v<p/4 every profile is zero; this supplies the exact
+source horizon d<=floor(4N/p). No inclusive endpoint may be changed to
+an open one in a machine reconstruction.
+
+For proposed integer weights w_i>0 let F(v)=sum_i w_i f_i(v). A sufficient
+exact certificate consists of rational/integer c_b for b dividing L with
+
+ F(v)=sum_(b|L)c_b floor(4v/b).                            (1)
+
+The following finite verification proves(1) on ALL real v>=0, not merely
+on the sampled grid. Set a_j=F(j/4), using its periodic extension, and
+check for j=1,...,L
+
+ a_j-a_(j-1)=sum_(b|L,b|j)c_b,       a_0=0.               (2)
+
+The RHS is the exact jump of the floor expression at x=j. Summing the
+rows gives sum_b (L/b)c_b=0. Hence the floor expression has zero period
+drift and is itself periodic. Its value at x=0 is zero. Equal jumps and
+the equal origin value imply equality on each cell and every boundary.
+Jump equality without an origin check leaves an unproved additive
+constant. Period checking without all cell jumps leaves unproved cells.
+
+There is a generic necessary-and-sufficient algebraic test, useful for
+an independent miner. The jump sequence h_j=a_j-a_(j-1) must depend only
+on gcd(j,L). For each b|L reconstruct
+
+ c_b=sum_(e|b)mu(b/e)h_e.                                 (3)
+
+Divisor inversion proves sum_(b|g)c_b=h_g for every g|L. Thus the
+gcd-class condition, plus the origin convention, reconstructs(1).
+Conversely every divisor-floor representation satisfies that condition.
+This characterizes a rational linear subspace of weights. Its intersection
+with the strict positive cone is a genuine finite feasibility question;
+positive weights are not guaranteed merely by the existence of some
+signed conservation. Rational positive solutions can be cleared to
+integer weights. For integer weights the c_b in(3) are automatically
+integers. Common scaling is an alias, so primitive weight normalization
+is appropriate.
+
+A nonzero bounded floor combination must have both positive and negative
+c_b: sum c_b/b=0 excludes a nonzero all-nonnegative coefficient list.
+Positive copy weights therefore do NOT imply positive smooth-count
+coefficients. Their signs must remain in the exact conservation.
+
+2. Ordinary-Mobius convolution gives a paid smooth-count invariant
+-----------------------------------------------------------------
+Let mu_M(d)=mu(d)*1_(gcd(d,R)=1), using the FULL actual Mobius source.
+For every integer n>=1,
+
+ sum_(d|n)mu_M(d)=1_(every prime factor of n belongs to M).
+
+The Euler factors prove this directly: a prime outside M contributes
+1-1=0; an M-prime contributes only the unit factor. All prime valuations
+and the integer1 are included. Define Psi_M(Y)=0 for Y<1, and for Y>=1
+let it count the M-smooth positive integers <=Y, INCLUDING1. Then
+
+ sum_(d>=1)mu_M(d)floor(Y/d)=Psi_M(Y).                     (4)
+
+All sums are finite. No infinite Mobius series, RH premise or probabilistic
+sign model is used. For any real N>0,(1) and(4) give
+
+ T_w(N):=sum_i w_i C_i(N)
+       =sum_(d>=1)mu_M(d)F(N/d)
+       =sum_(b|L)c_b Psi_M(4N/b),                         (5)
+
+where C_i(N)=sum_d mu_M(d)f_i(N/d) is the actual signed token count.
+The cofactor unit d=1 remains. It can correspond to actual source primes
+p or q; it is not the separate inclusive-source unit v_x(1).
+
+HORIZON GUARD: the complete original F sum vanishes for d>4N/p, but an
+individual floor term may persist up to4N/b. To obtain a Psi term one
+must use its FULL individual floor horizon. Equivalently prove that all
+outside-original-horizon terms cancel jointly by(1). Truncating each
+floor at4N/p and calling it Psi is generally invalid. This matters when
+some admitted b<p. Formula(5) avoids that error by extending the complete
+sum before splitting it. Ordinary real/integer boundary coincidences are
+handled by the inclusive floor convention.
+
+For a fixed registered set, unique prime factorization gives the elementary
+uniform bound
+
+ Psi_M(Y)<=product_(ell in M)(1+floor(log Y/log ell))
+          <=(1+log_2 Y)^k,       Y>=1.                    (6)
+
+Thus, for N>=2 and C_c=sum_b|c_b|,
+
+ |T_w(N)|<=C_c*(1+log_2(4N))^k.                          (7)
+
+This is a paid source-specific polylogarithmic invariant. It concerns the
+weighted SIGNED copy count, not the number of squarefree terms, an absolute
+coefficient mass, or the unweighted original counts individually. If M,
+w or c depend on N without further bounds, the constants/degree in(7)
+are not fixed; the all-scale rule requires those objects to be fixed.
+
+3. Copy splitting retains the whole signed middle and pays leftovers
+--------------------------------------------------------------------
+For 0<alpha<1, gamma>0, 0<tau<1 set eps=min(tau,N^-gamma) and
+
+ Phi_N(a)=1/Gamma(1-alpha)
+          integral_eps^tau G_M(t)a^-t t^(-alpha-1)dt,
+ G_M(t)=product_(ell in M)(1-ell^-t).
+
+The P,Q,D,S magnitudes are Phi(pd), Phi(qd), Phi(pd)-Phi(qd),
+Phi(pd)+Phi(qd). They are nonnegative, and positive when the band is
+nonempty. The actual signs are mu(d)*sigma. Replace a profile-i token
+with w_i identical copies, each having magnitude m_i/w_i and the SAME
+actual sign. Their signed sum is exactly the original token. Consequently
+the FULL joined middle, both signs, unequal range exits and all source
+coefficients are retained.
+
+A global greedy scan must exhaust opposite signs; then it leaves exactly
+|T_w(N)| copies. No magnitude ordering assumption is required for this
+count statement. A policy that restricts pairs by groups must either
+perform a complete final global scan or price its additional leftovers;
+the global count formula does not apply to an unexhausted grouped list.
+
+The maximum magnitude bound proposed by the parent is safe uniformly.
+For t>0, 1-ell^-t<=t log ell<=t ell, so G_M(t)<=R t^k.
+All arguments pd,qd>=2 give a^-t<=1, and S costs at most twice one
+factor. Elementary integration by parts gives
+alpha*I_alpha=Gamma(1-alpha)=integral_0^infinity e^-u u^-alpha du.
+The latter is >=integral_0^1 e^-u du=1-e^-1>1/2. Therefore
+
+ max_(i,d)m_i <=4R/(k-alpha) <=6R/(k-alpha).               (8)
+
+Here tau^(k-alpha)<=1 was used. The argument even works for k=1,
+though the licensed two-prime source has k>=2. If eps=tau every
+magnitude is exactly zero and every norm/cost statement holds trivially.
+There is no fixed-N asymptotic approximation or dyadic rounding in(8).
+
+Let w_min=min_i w_i>=1. The final residual charge satisfies
+
+ B_left(N)<=6R*C_c/[(k-alpha)w_min]
+                  *(1+log_2(4N))^k.                     (9)
+
+The slightly sharper4R constant is optional;6R needs no correction.
+Only exact positive integer weights license the stated identical-copy
+counting. Rational weights require clearing denominators and rebinding the
+copy list. Common rescaling cancels between T_w and the maximum copy
+magnitude; it cannot improve the theorem by choosing enormous weights.
+
+4. Exact paired-cost frontier and the limits of conservation
+------------------------------------------------------------
+For a complete copied plan define
+
+ E_copy(N)=sum_(paired copies)|m_i/w_i-m_j/w_j|.
+
+Triangle on every pair and explicit pricing of every remaining copy prove
+
+ |J_N|<=B_copy(N)=E_copy(N)+B_left(N).                     (10)
+
+Thus the new sufficient source-bound leaf is E_copy=O(sqrt(N)polylog N)
+or its cofinal-power version. Under the058 paid endpoint scope, that leaf
+would restore the complete conditional RH-sensitive bound. The source-free
+conservation pays(9), not this leaf. No fixed finite C, finite training pass
+or signed count identity supplies(10)'s paired-work growth.
+
+This is a real operational improvement over059's two unpaid terms: the
+unknown cross-profile residual charge becomes uniformly polylogarithmic.
+It is not a new identity beyond the established mu_M*One law. The new
+content is that a detector-inferred mask conservation converts that law
+into a count invariant for a nonlinear complete matching construction.
+The source coefficients/kernel themselves were not attenuated or replaced.
+This is a new use of a proved elementary law, not a claim of prior-art
+novelty or a new prime-distribution theorem.
+
+The exact optimal copied cost, including zero dummy endpoints, is
+
+ B_copy^*=integral_0^infinity
+   |sum_i w_i sum_(d of profile i)epsilon_d
+                   1_(m_i(d)/w_i>y)|dy.                  (11)
+
+Conservation controls the threshold count at y=0 only. It does not
+control the remaining threshold discrepancies. For arbitrary signed data,
+positive magnitudes1,3 and negative magnitudes2,2 have zero signed sum
+and zero signed count, but optimal pair cost2. Multiplying all magnitudes
+by a factor makes the cost arbitrarily large while both invariants remain
+zero. This is an algebraic counterexample to free paired-cost recovery,
+not a counterfeit replacing the actual Mobius source.
+
+Likewise(5) pays no truncated prefix for free. A prefix in d has the exact
+formula
+
+ sum_(d<=y)mu_M(d)F(N/d)
+ =sum_b c_b[Psi_M(4N/b)
+       -sum_(y<d<=4N/b)mu_M(d)floor(4N/(bd))].             (12)
+
+The boundary divisor tails on the right remain joined and unpaid. Using
+only the smooth count in(12) would discard the very signed forcing
+needed to control copy paths or magnitude-threshold variation.
+
+An exact residual-count conservation also cannot reverse a bad first pass.
+If a same-profile prime-ratio stage pairs all copies belonging to an edge
+(a,ra), its w_i equal-copy costs sum to |m_i(a)-m_i(ra)|, the original
+edge charge. The059 positive-density obstruction survives that lift.
+The new rule must not rehabilitate the rejected0390 first-pass mechanism
+merely because its copied leftovers are now paid.
+
+5. Cost comparison and reusable proof-route guards
+--------------------------------------------------
+Splitting preserves the complete absolute mass, and every legal copied
+plan still has B_copy<=sum_original m_i. It can never exceed that absolute
+control. It does NOT automatically improve an old signed pairing cost.
+For example original tokens +1 and -1 can pair at cost0. Weights1 and2
+make copies +1,-1/2,-1/2; every optimal complete binary plan costs1.
+Unequal profile weights can therefore worsen even the optimal cost.
+This does not contradict unchanged signed sum or the leftover theorem.
+
+Uniform replication by the SAME integer multiplies every copy count and
+divides every magnitude. Its exact optimal cost is unchanged, by a change
+of variable in(11). The same holds for a contiguous-copy greedy scan under
+uniform further replication. This alias should not be ranked as a new
+mechanism. Different profile weights genuinely alter admissible binary
+transport; old profile-dominance results must be rebound to its new kernels.
+
+The next detector can correctly certify the following without scientific
+tables: complete step-mask and divisor-floor equality; strict integer
+copy weights; exact source/rounding/kernel binding; smooth-count identity;
+global opposite-count exhaustion; maximum magnitude and polylog leftover.
+It must leave paired-copy growth as an explicit source-bound obligation.
+An auxiliary proof may seek exact joint interval/divisor-tail cancellations
+in(12), a one-direction threshold-flow certificate for(11), or larger
+signed groups whose internal sums are taken before absolute values. None
+is admitted merely by a finite matching score.
+
+The rule's scope is the whole actual Mobius source with fixed M,p,q and
+all integer N>=2; its mask/convolution identities also hold for real N>0.
+No independent-prime assumption, random-sign model, assumed RH-strength
+Mertens estimate or source-dependent fitted normalization is used. General
+gamma>0,tau<1 suffice for leftover control but not for endpoint restoration:
+the complete058 bridge additionally needs gamma*(k-alpha)>=1/2 and
+tau>=1/2, or separately paid endpoint bounds. These scopes must be explicit
+in any final argument certificate.
+
+Disposition: mathematical review complete; edits stopped. No conservation
+vector was selected or enumerated here. Polylog leftover control is proved
+conditionally on an exact positive mask certificate. Paired-copy signed
+arithmetic growth, full middle control and RH remain OPEN.

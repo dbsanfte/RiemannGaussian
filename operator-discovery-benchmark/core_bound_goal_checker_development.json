@@ -1,0 +1,36 @@
+{
+  "schema": "core-bound-goal-checker-development-v1",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_check_core_bound_goal_search"
+      ],
+      "returncode": 0,
+      "operations": 1187699,
+      "tests": 17,
+      "elapsed_seconds": 1.2567104260087945,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_bound_goal_search operations=1187699 elapsed_seconds=1.177638\n",
+      "stderr": ".................\n----------------------------------------------------------------------\nRan 17 tests in 1.177s\n\nOK\n"
+    }
+  ],
+  "operations": 1187699,
+  "tests": 17,
+  "source_observations": 0,
+  "old_suites_rerun": false,
+  "edits_stopped": true,
+  "mathematical_audit": {
+    "source": "all four inverse modes independently re-audited; repeated polynomial substitution retains every companion and exact transport error",
+    "auxiliary_factor": "source tail extracted before full primitive-vector enumeration and exact symbolic moment matching",
+    "moment_annihilation": "finite harmonic zero yields j-fold zero jets and every arbitrary degree j-1 main log polynomial cancels over complete support",
+    "kernel_domain": "rho<theta is mandatory for this ordinary-convergence proof language; equality remains unlicensed, not a divergence claim",
+    "symbolic_split": "whole-interval polynomial gaps and independent convex dual verify optimum; exact division derives C exponent",
+    "all_prefix_costs": "review017 C-scaled integer split, small-prefix head, cutoff logarithms and retained Euler compensation are sound",
+    "backward_conditions": "full finite A cutoff cost, explicit known-head gates, conditional divisor U powers and mass logs retained; strict slack required",
+    "proof_frontier": "open remainders never become proved; acyclic dependencies include explicit open signed complement; redirects request a search, not a theorem",
+    "closure": "zero new component payments; complete signed core and RH remain open"
+  }
+}

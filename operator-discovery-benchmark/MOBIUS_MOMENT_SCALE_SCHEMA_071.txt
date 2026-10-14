@@ -1,0 +1,111 @@
+UNIFORM CONDITIONAL PROOF-PROGRAM SEARCH071: IMPLEMENTATION CONTRACT
+
+This stage searches symbolic cost/rank inequalities, not measured arithmetic
+scores. The reciprocal-moment and interval-disjointness rules are supplied
+mathematics. Exact rational primal/dual certificates prove optimality only
+inside the declared affine language. Prefix premises and the joined signed
+floor remainder stay unpaid. No RH or full head bound follows.
+
+Generic system schema:
+ {variables:[names], rows:[{name,a:[canonical rationals],b:rational}],
+  objective:[canonical rationals]}
+Each row means a dot x >= b, all variables otherwise free.
+Result is {status:'optimal',primal:[rationals],dual:[rationals],
+           objective:rational,solver:metadata}, or
+ {status:'infeasible',dual:[rationals],solver:metadata}, or
+ {status:'unresolved',reason:string,solver:metadata}.
+For an optimum verify Ax>=b, y>=0, A^T y=c and c.x=b.y exactly.
+For infeasibility verify y>=0, A^T y=0 and b.y=1 exactly.
+Solver metadata is observational; it never licenses proof acceptance.
+
+Program schema:
+ schema='mobius-moment-scale-program-v1', sigma, rho, fixed_theta (null or
+ canonical rational), primary={system,result}, secondary=null or
+ {system,result}, short={system,result}, derivation=null or derived record,
+ conditional_prefix_bounds_paid=false, uniform_head_bound_proved=false,
+ RH_proved=false. 0<sigma<1, 0<rho<1, 0<fixed_theta<1 if present.
+All rationals canonical, at most4096 bits; explicit power work caps apply.
+
+Primary variables theta,gamma_u,gamma_v,kappa_u,kappa_v, in that order.
+Rows in order (names below are literal):
+ theta_lower: theta>=0; theta_upper: -theta>=-1;
+ u_domain: gamma_u-theta>=0;
+ v_domain: gamma_v+theta>=1;
+ u_rank: -gamma_u>=-rho; v_rank: -gamma_v>=-rho;
+ u_exposure: kappa_u-theta+gamma_u>=0;
+ u_moment: kappa_u-(sigma-1)*theta>=0;
+ v_exposure: kappa_v+theta+gamma_v>=1;
+ v_moment: kappa_v+(sigma-1)*theta>=sigma-1;
+ u_nonpositive: -kappa_u>=0; v_nonpositive: -kappa_v>=0.
+Optional fixed_theta_lower/upper are theta>=fixed_theta and
+ -theta>=-fixed_theta, appended. Objective kappa_u+kappa_v.
+No optimum exponent formula or nominated balance is supplied to search.
+
+Secondary variables append exposure to the primary variables. Extend all
+primary rows by zero. Append optimum_lower/upper fixing the primary
+objective to its exact optimum; exposure_u: exposure-gamma_u>=0;
+exposure_v: exposure-gamma_v>=0; exposure_lower: exposure>=0;
+exposure_upper: -exposure>=-rho. Minimize exposure.
+
+Short variables split,delta. Rows split_lower: split>=0;
+split_upper: -split>=-1;
+short_prefix: delta-(1-sigma)*split>=sigma;
+short_tail: delta+split>=1; delta_upper: -delta>=-1.
+Minimize delta. This instantiates the two supplied interval cost laws
+O(C T^(sigma+(1-sigma)*split)) and O(T^(1-split)); it does not
+pretend that this absolute short bound controls the joined remainder.
+
+If primary and secondary and short are exact optimal, derive from the
+secondary primal theta,gamma_u,gamma_v,kappa_u,kappa_v,exposure;
+alpha=1+kappa_u+kappa_v; reciprocal_A=(2-sigma)/(1-sigma);
+head_C_polynomial=[8/alpha,16*reciprocal_A/alpha,
+ 8*reciprocal_A^2/alpha]; short_exponent=short primal delta;
+short_split=short primal split; short_C_exponent=short_exponent;
+short_per_branch_constant=1+4/(1-sigma);
+sufficient_base_log2=ceil(1/(1-exposure)).
+The head polynomial multiplies D^(alpha-1)*M1, where M1=sum|a_T|T.
+The short constant multiplies C^short_exponent*M_short_exponent.
+M_delta=sum|a_T|T^delta, with no reversed interpolation inequality.
+Base condition is R>=2^sufficient_base_log2; finite exact rank may hold
+earlier. Universal bases, prefix premise, joint remainder and induction
+closure are explicit open dependencies, never paid by a sampled check.
+
+Geometry certificate schema='mobius-moment-scale-source-v1', N,y,max_j,
+parameters, programs (the complete program list), endpoints, and the three
+false claim flags above. Same registered source as068/069/070.
+Endpoint: ratio,denominator,steps [[T,a_scaled],...] ascending nonzero,
+M1_scaled, rows. g(d)=-1[d>y]*(den Wp(d)-ratio_num Wq(d)),
+Wp(d)=floor(4N/pd)-3floor(2N/pd)+2floor(N/pd), D=floor(4N/p).
+Steps a_T=g(T)-g(T+1). Row: j,R=floor(D/j),direct_scaled,
+prefix_steps [[A,h_scaled],...] ascending nonzero, b_scaled=sum h*A,
+V_scaled=sum|h|, plans. h from a_T at floor(T/j), minus a_T at
+floor(T/(j+1)); omit index0. direct_scaled is the coalesced six atoms
+at floor(vN/p),floor(vN/q), v=4,2,1, weights1,-3,2, scaled by
+den and -ratio_num respectively, evaluated at row index j.
+Plan for every program with nonnull derivation: program_index,u,v,T_u,T_v,
+strict_rank,universal_base_gate,short_zero_support. Here u=floor(R^theta),
+v=floor(R^(1-theta)), T_u=ceil(R^gamma_u),T_v=ceil(R^gamma_v).
+strict_rank means max(T_u,T_v)<R, including failure at unit/base rows;
+universal_base_gate means R>=3 and R^(1-exposure)>=2 by integer powers;
+short_zero_support means (j+1)*max(u,v)<=y (sufficient, not necessary).
+The complete rectangle satisfies (u+1)(v+1)>R; never drop ab>R terms.
+
+Independent checker API: Meter(limit=...,seconds=...), verify_program(cert,
+meter=None), verify_source(cert,meter=None). No producer or optimizer imports.
+verify_source independently regenerates geometry and returns verified,N,y,
+max_j,endpoints [{ratio,rows:[{j,R,actual_coefficient,evaluations:[
+ {u,v,H_u,H_v,L_u,L_v,E,J,separable,direct,actual_coefficient}]}]}].
+All evaluation numbers are canonical unscaled rationals. One evaluation
+per distinct (u,v), ordered by first appearance in plans. Only evaluator
+queries actual mu. H_u=sum mu(a)/a; L_u=sum mu(a)*kappa_j(a);
+E=sum_(a<=u,b<=v)mu(a)mu(b)*(K_j(ab)-b_j/(ab));
+J=L_u+L_v-E; separable=-b_j*H_u*H_v;
+actual=direct+separable+J. Independently compare to direct+sum mu*kappa.
+Store all shared/repeated prime factors. No coprime or squarefree-product
+restriction is allowed. Return no uniform proof claim based on finite data.
+
+Root source admission will compare every independently evaluated row with
+the saved069 verification. No old scientific runner or old test is rerun.
+Synthetic tests and review precede freeze; preserve every development
+attempt. Resources:16GiB aggregate,7200s,3workers,one native thread each,
+explicit work and intermediate-bit caps. No artifact hashes.

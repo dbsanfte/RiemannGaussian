@@ -1,0 +1,245 @@
+COMPLETE SIGNED GRAM OPERATORS, TRUE ARITHMETIC DIAGONALS, AND THE REMAINING GAP
+============================================================================
+The numerical search proposes matrices and inequalities. These identities and
+certificate methods are supplied, not autonomously invented or machine formalized.
+No RH-strength uniform off-diagonal inequality is proved by finite observations.
+
+1. Quadratic observables retain the complete actual arithmetic
+-------------------------------------------------------------
+Use the preceding kernel grammar at fixed rational k>1, ell>0, b>1:
+ g_i(X/n)=(X/n)^k K_i((X/n)^ell),
+ F_i(X)=sum_{n>=1}mu(n)g_i(X/n),
+ K_i(y)=sum c_i[m,j](b^j y)^m exp(-b^j y).
+For any fixed symmetric rational two-by-two matrix H, define
+ E_H(X)=F(X)^T H F(X),
+ D_H(X)=sum_{n>=1}mu(n)^2 g(X/n)^T H g(X/n),
+ C_H(X)=sum_{n!=m}mu(n)mu(m) g(X/n)^T H g(X/m).
+Absolute convergence of sum |mu(n)g_i(X/n)| at fixed X justifies the exact
+identity E_H=D_H+C_H. This is the full infinite arithmetic pair sum. It is
+not a sampled pair statistic, a random-sign model, or a diagonal approximation.
+
+Pointwise kernel multiplication introduces general positive rational rates:
+ ((r y)^m exp(-r y))*((s y)^h exp(-s y))
+ =r^m s^h/(r+s)^(m+h) *((r+s)y)^(m+h) exp(-(r+s)y).
+Thus the diagonal can use new rates r+s, not only powers of a fixed base.
+An exact finite exponential-polynomial expansion records every coefficient.
+No assumption of positivity of each expanded coefficient is made.
+
+For w>1 the squarefree arithmetic moment is
+ sum_{n>=1}mu(n)^2 n^(-w)=zeta(w)/zeta(2w).
+This follows from the absolutely convergent Euler factors 1+p^(-w). Its complete
+tail after N is obtained by subtracting the entire actual coefficient prefix.
+The exponential Taylor remainder has the same valid absolute bound as the
+inverse channel, with k replaced by 2k and the general rational rate r.
+The producer uses triangular inversion and squares those coefficients.
+The checker factors every index independently, changes cutoffs, Taylor order,
+precision and summation, and encloses every complete infinite Gram value.
+
+2. Squarefree information over every real scale
+-----------------------------------------------
+The exact square-divisor identity is
+ mu(n)^2=sum_{d^2|n}mu(d).
+For real x>=1 and A=floor(sqrt(x)), it gives
+ Q(x)=sum_{n<=x}mu(n)^2=sum_{d<=A}mu(d)floor(x/d^2).
+Since a=sum mu(d)/d^2=1/zeta(2),
+ |Q(x)-a*x|<=A+x*sum_{d>A}1/d^2<=A+x/A.
+Writing u=sqrt(x)/A, 1<=u<=(A+1)/A<=2, this is at most
+ sqrt(x)*(u+1/u)<=(5/2)*sqrt(x).
+For 0<x<1, Q=0 and a*x<=sqrt(x), since 0<a<1. Therefore
+
+ |Q(x)-x/zeta(2)|<=(5/2)*sqrt(x) for EVERY real x>0.
+
+This elementary actual-arithmetic estimate is proved here, using all prime
+positions through square-divisor inversion, without importing a distribution
+theorem. Historical novelty is not claimed. It does not prove RH.
+
+3. A signed all-scale density remainder for every Gram diagonal
+--------------------------------------------------------------
+Write K(y)^T H K(y)=sum c[m,r]*(r y)^m exp(-r y), with exact rational
+coefficients and rates r>0, and set
+ f_X(t)=(X/t)^(2k)*K((X/t)^ell)^T H K((X/t)^ell).
+Even for indefinite H, the following signed identity and bound are valid.
+Stieltjes partial summation, with both boundary terms vanishing, gives
+ D_H(X)=a*integral_0^infinity f_X(t)dt
+           -integral_0^infinity (Q(t)-a*t) f_X'(t)dt.
+Substitute t=X*u in the first integral to obtain a*X*I_H, where
+ I_H=sum c[m,r]*r^((1-2k)/ell)*Gamma((2k-1)/ell+m)/ell.
+
+For each atom, differentiation and the triangle inequality give
+ integral_0^infinity sqrt(t)*|f_atom,X'(t)|dt <=sqrt(X)*U_atom,
+ U_atom=r^((1/2-2k)/ell)/ell
+       *[(2k+ell*m) Gamma((2k-1/2)/ell+m)
+                              +ell Gamma((2k-1/2)/ell+m+1)].
+Let U_H=sum |c[m,r]| U_atom. All arguments of Gamma are positive, and all
+integrals converge. Thus the true signed density-correction theorem is
+
+ |D_H(X)-a*X*I_H|<=(5/2)*U_H*sqrt(X), for EVERY real X>0.
+
+The integral I_H retains the signed cross-kernel coefficients. Only the
+error variation uses absolute coefficients. For a nonzero positive semidefinite
+observable with a nonzero effective kernel, I_H>0; D_H>=0 at every scale.
+This is critical-size information about the diagonal component. It is not a
+bound for E_H or C_H. The missing signed cross terms are explicitly retained.
+
+4. Singular metrics and ordinary-zero recovery
+----------------------------------------------
+For H=[[a,h],[h,c]], positive semidefiniteness is the exact rational condition
+ a>=0, c>=0, a*c-h^2>=0. If a>0 then
+ E_H=a*(F_1+h/a*F_2)^2+(c-h^2/a)*F_2^2.
+If a=0, positivity forces h=0, so E_H=c*F_2^2. Only strictly positive
+pivots appear. A zero effective kernel supplies no recovery information.
+The active rational covectors give effective kernels L_i=sum r_ij K_j,
+and |F_{L_i}(X)|<=sqrt(E_H(X)/d_i) whenever E_H is bounded above.
+Consequently singular positive metrics are allowed. Indefinite metrics remain
+signed observables, but an upper bound on them is not silently treated as a
+bound on absolute values of the constituent responses.
+
+The earlier exact rational Mellin bank certificates apply to these effective
+kernels without renormalizing away their amplitudes or dilations. In particular
+sum A_i(v,z) P_{L_i}(v,z)=(v)_r z^h prevents a common ordinary-zero numerator
+zero at every height. The pivots d_i must be charged in quantitative recovery.
+Small pivots or strongly cancelling effective combinations do not give control
+of ordinary zeta for free. Missing scalar certificates and indefinite metrics
+are not counterexamples to a numerical inequality.
+
+5. The signed target and its quantifiers
+--------------------------------------
+Put theta_q=eta+epsilon/q^nu, rational eta>=1/2, epsilon>0, nu>0, q>=2.
+The proposed signed inequality, for fixed H and rational rho, is
+
+ FOR EVERY q THERE EXISTS a finite B_q>=0 such that FOR EVERY integer N>=1,
+ C_H(N)<=rho*D_H(N)+B_q*N^(2 theta_q)*log(e+N)^d, d>=0.
+
+Equivalently E_H(N)<=(1+rho)D_H(N)+B_q*N^(2 theta_q)*log(e+N)^d.
+The illustrative fitted B_q values are not mandatory constants of the global
+existential target. Failure of one fitted B_q at a finite N refutes that fit;
+it does not refute existence of some other finite B_q. There is no prescribed
+growth law in q. Finite q grids never prove this target.
+
+For a positive observable write A=a*I_H>0, V=(5/2)*U_H, and p=max(1+rho,0).
+D_H(N)<=A*N+V*sqrt(N) and D_H>=0. Therefore
+ sqrt(E_H(N))<=sqrt(p*A)*N^(1/2)+sqrt(p*V)*N^(1/4)
+                       +sqrt(B_q)*N^theta_q log(e+N)^(d/2).
+This remains valid for rho<-1 by discarding its nonpositive diagonal term.
+The active effective responses are divided by sqrt(d_i).
+Their true all-scale derivative bounds extend these integer inequalities to
+real X with an additional effective unit constant J_i. A supplied scalar upper
+bound never controls an indefinite metric through this argument.
+
+For sigma>1/2 and theta_q<sigma, complete Mellin norms charge:
+  the local integral on (0,1),
+  J_i/sigma,
+  [sqrt(p*A)/(sigma-1/2)+sqrt(p*V)/(sigma-1/4)
+                  +sqrt(B_q)*log_moment(sigma-theta_q,d/2)]/sqrt(d_i).
+The fractional log moment is bounded using its integer ceiling, since
+log(e+X)>1 for X>=1. Native Gamma, all bank multipliers, positive pivots and
+denominator lower bounds enter the conditional reciprocal-zeta cost.
+This is one quantitative observer, not an all-height quantitative bound.
+
+If eta=1/2 and the effective bank has exact all-height recovery, true bounds
+for every q would give holomorphy beyond every ordinary zero right of the
+critical line. The bank identity gives a contradiction, so the target implies
+RH. The converse follows from the already named conditional Mertens consequence
+in the parent proof: under RH every F_i=O_delta(X^(1/2+delta)), while D_H=O(X),
+and an arbitrary fixed rho can be absorbed into a freely varying B_q. Thus this
+is an RH-equivalent target for recovering positive observables, not a fixed
+pure square-root constant that silently presupposes simpler zeros or bounded
+constant growth. All such signed uniform targets remain unproved here.
+
+6. Automatic certificate attempts and controls
+----------------------------------------------
+The absolute bound |F_i(X)|<=W_i X proves only E_H=O(X^2), C_H=O(X^2).
+It supplies unconditional energy-frontier witnesses at eta>=1, equivalent to
+point growth exponent one. The diagonal density theorem has true exponent
+one-half for its correction, but does not repair that signed gap. The checker
+keeps the distinction between a missing proof method and a counterexample.
+
+A separate counterfeit adds +1 to mu(n) for every n beyond a very large H0.
+Its finite response perturbation is enclosed explicitly. Its Dirichlet series
+has a pole at one. At least one response of a recovering effective bank has
+a pole there. A cofinal positive-energy bound with eta<1 would continue all
+active responses holomorphically across one, contradicting that pole.
+The actual squarefree diagonal retained for this control is a supplied actual-
+arithmetic comparator, not the square of the counterfeit coefficients.
+Accordingly C_control is defined as E_control-D_actual; no claim about a
+counterfeit pair decomposition is made. A cofinal target with eta<1 is false,
+even if every finite comparison succeeds. Positive oracles and random signs
+never replace the actual inverse coefficients in discovery data.
+
+Named parent calibration imports are retained with provenance. This stage
+imports no prime-distribution estimate. Backends are supplied. The final data
+are drawn after the archive and new-q calibration are sealed. No mathematical
+identity, diagonal-only estimate, finite fit, or weak global witness is promoted
+to an RH proof.
+
+7. A second signed target: the diagonal density correction itself
+----------------------------------------------------------------
+For a density observable write Z_H(X)=D_H(X)-A_H X with A_H=I_H/zeta(2).
+The theorem in section 3 proves |Z_H(X)|<=V_H sqrt(X) at every real X>0.
+This true bound is weaker than the new critical target
+
+ FOR EVERY q EXISTS finite C_q, FOR EVERY integer N>=1,
+ |Z_H(N)|<=C_q N^(1/4+epsilon/q^nu)log(e+N)^d.
+
+All root denominators and freely varying constants are allowed. Finite fits
+cannot prove it. This target can suffice for RH even though the uncentered
+diagonal has nonnegative squarefree coefficients.
+
+The raw diagonal Mellin transform, initially 1<Re(s)<2k, is
+ W_H(s)*zeta(s)/zeta(2s),
+ W_H(s)=Gamma((2k-s)/ell)/ell
+          *sum c[m,r]*((2k-s)/ell)_m*r^(-(2k-s)/ell).
+Its residue at one is exactly A_H. After subtracting the integral on (0,1)
+and A_H/(s-1), this is the Mellin transform of Z_H on (1,infinity).
+The integral on (0,1) is holomorphic for Re(s)<2k. Thus the cofinal density
+target would make W_H(s)*zeta(s)/zeta(2s) holomorphic for 1/4<Re(s)<2k,
+apart from its explicitly removed pole at one.
+
+8. Numerator cancellation cannot simply be ignored
+--------------------------------------------------
+A zero rho of zeta with 1/2<Re(rho)<1 gives a denominator zero at s=rho/2.
+The factor zeta(rho/2) could cancel it. When W_H is nonzero at every such
+point, holomorphy forces zeta(rho/2)=0, with multiplicity at least that at rho.
+Conjugation and the functional equation then give another ordinary zero
+ rho_next=1-conjugate(rho)/2.
+Its real part is again strictly greater than 1/2, and its height is halved.
+Repeating yields infinitely many ordinary zeros with real parts tending to 2/3
+and heights tending to zero. But zeta(2/3)!=0: the alternating eta series is
+positive at every real s>0, while 1-2^(1-s)<0 for 0<s<1, so zeta(s)<0 there.
+Analyticity makes a neighborhood of 2/3 zero-free. This contradicts the chain.
+Therefore the centered quarter-power cofinal target implies RH. Multiplicities
+and possible numerator-zero cancellations are included; no known-zero grid or
+simple-zero assumption is used. At a general limiting exponent above 1/4 the
+same complete chain need not follow. No blanket all-height consequence is
+assigned to those above-threshold targets.
+
+The supplied common-rate certificate writes W_H as Gamma(v)*r^(-v)*P(v)/ell.
+Its domain for all ordinary denominator zeros is Re(v)>(2k-1/2)/ell. Exact
+division peels roots v=-j, j>=0, which are outside that domain. If the remaining
+polynomial has degree at most two, shift v=u+(2k-1/2)/ell and normalize the
+leading coefficient. Nonnegative shifted coefficients imply that all roots
+have Re(u)<=0: for a quadratic this follows immediately from the quadratic
+formula, and for a linear polynomial from its single root. Constants have no
+root. This gives an all-height certificate, including imaginary boundary roots.
+Higher-degree remainders and multiple rates remain missing-certificate leads.
+This bounded certificate backend does not restrict the mathematical grammar.
+
+RH also implies the target for every finite exponential-polynomial density
+kernel. The parent's named conditional Mertens bound gives 1/zeta(w)=O(|w|)
+uniformly in any closed halfplane Re(w)>1/2+delta. Euler summation gives a
+polynomial bound for zeta(s) on any closed vertical strip Re(s)>0 away from one.
+Gamma(v) decays exponentially with height and the finite polynomial/rate factors
+have at most polynomial growth. Shifting the inverse Mellin contour from Re(s)>1
+to any Re(s)>1/4 crosses just the residue A_H at one. After removing it,
+Z_H(X)=O_delta(X^(1/4+delta)). Choose delta smaller than epsilon/q^nu for each q.
+The conditional Mertens theorem identifies equivalence; it is not used to prove
+a new unconditional quarter-power estimate in this project.
+
+Quantitative native recovery charges the density unit-increment bound, its
+entire local integral, the pole subtraction, |W_H(s)| and |zeta(s)|. The latter
+is needed to recover 1/zeta(2s) from a bound for zeta(s)/zeta(2s). A finite query
+where zeta(s) cannot be separated from zero has unresolved quantitative cost,
+not a counterexample to the qualitative reflection argument.
+A rational mutation of the density center produces an uncancelled pole at one
+whenever A_H!=0. It can pass finite tests if that mutation is small; the global
+sublinear target is nevertheless false. These tests are separate controls.

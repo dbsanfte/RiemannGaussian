@@ -1,0 +1,131 @@
+EXACT ARITHMETIC HEAD AND CUTOFF-WORK SEARCH
+
+Input: candidate10_weighted_height_obligation.json. Preserve all frozen files,
+source bindings, paid pieces, full signed source and original RH obligation.
+Apply this compiler to EVERY unproved complete low-Gram leaf in that input;
+do not nominate a winning component. The full signed core remains first.
+
+Before any numerical observations, declare the finite auxiliary grammar:
+  scalar powers c^a, a=0..p+m;
+  finite coefficient atoms One^l and mu^l, l=0..p+m, with zero power delta;
+  multiplier in {-2,-1,-1/2,1/2,1,2}.
+One^0 and mu^0 are one canonical delta candidate, not two candidates.
+Solve exact formal coefficient matching against the supplied arithmetic head
+constraint. Keep every trial count, matching atom and unmatched outcome.
+This discovers the finite head H_U=c^m*d_(m-p) restricted to n<=U (or the
+inverse-divisor version when m<p) from the identity, not numerical fitting.
+Generate BOTH raw and complete-head-subtracted states. Selection prefers
+proved vanishing through U and a paid recovery, then enumeration order.
+This changes the representation, not the exponent of the original problem.
+The implementation must expand E=delta+One*(c*delta-A), with A=mu only on
+n<=U, in the Laurent convolution quotient mu*One=delta. It must NOT put
+the anticipated head tuple into the matching predicate. This is discovery
+of a consequence of a supplied identity, not discovery of that identity.
+
+Finite-head proof rule (review023)
+---------------------------------
+For theta=1-u and 0<sigma<theta, the complete centered power kernel has
+weighted continuous norm squared at most
+ B=(1/(2*theta^2))*(1/(theta-sigma)+1/sigma).
+The complete centered K*h prefix is <=sum|h|/theta, even for real x<1 and
+finite d>x. For |h(n)|<=2^a d_l(n) restricted to n<=U, l>=1, this gives
+prefix <=(2^a/theta) U(1+log U)^(l-1) and full Mellin norm squared
+ <=B*4^a/(1-sigma)^2 U^[2(1-sigma)](1+log U)^[2(l-1)].
+For l=0 it is a delta atom, with no U or log cost and constant B*4^a.
+For mu^l use |mu^l|<=d_l. Every finite analytic residue is retained.
+At the actual cutoff alpha=1/24, these fixed-degree centered head energies
+have negative physical X power. They are paid auxiliary corrections.
+If the low target U exponent strictly exceeds the head U exponent, the
+logarithm is absorbed with an explicit rational factorial/power constant;
+raw and corrected low-Gram bounds are equivalent up to fixed constants.
+Do not announce a weaker global target or a full component payment.
+
+Exact transition compiler (review022)
+-------------------------------------
+Use commuting symbols A,E,c,D,z,a,b,v,x. Complex symbols are A,E,D,z,b;
+c,a,v,x are real. At q=U+1>=2:
+ A -> A+x*b; E -> E+x*z*(a-b); c -> c+x*a; D -> D+v*b,
+where x=mu(q), a=1/q, b=q^(-s), z=zeta(s), and v is the EXACT next
+finite-head coefficient (d_l(q) or mu^l(q)). The analytic relation
+E=1+z*(c-A) is preserved; c and A changes must stay coupled.
+Source polynomial is P=A^p*E^m, or P=A^p*E^m-c^m*D.
+Reduce x^k to x for odd k and x^2 for positive even k, using x^3=x.
+The exact change is J0+x*J1+x^2*J2. J0 is mandatory: the finite head
+extends even when mu(q)=0. Expand the COMPLETE Hermitian energy change,
+retaining every conjugate and cross, as W0+x*W1+x^2*W2.
+The common positive weight is abs(zeta(s+1-theta)/s)^2.
+Store exact canonical sparse polynomial coefficients, not evaluations.
+Independent checking must use the three specializations x=-1,0,1 and
+interpolation, rather than importing the producer's reduced-ring routine.
+
+Each state emits an all-integer OPEN signed-work leaf: the integral of the
+complete W polynomial over the OLD head |t|<H(q-1) must be <=C*q^(b_goal-1).
+This is an OPTIONAL stronger sufficient route. The endpoint norm goal does
+not imply this one-step bound. Paid head recovery equates the global norm
+goals, not their one-step work bounds.
+The enlarged-window shell is mandatory and separately paid only by the
+reviewed high-tail rule with its fixed-factor length extension and the
+finite-head global norm. If its exponent cannot meet b_goal-1, leave it open.
+Telescoping is conditional on the signed-work inequality, all q>=2 and the
+initial low norm. Pointwise or dyadic-only values do not prove this leaf.
+The source-coefficient centering drift and its complete change at theta are
+retained; analytic residues do not imply ordinary moment convergence.
+Report equivalent reformulations as such. A finite observed improvement is
+not a proof of an all-scale saving, and generic sign identities cannot close
+the actual Mobius work by themselves.
+
+Automatic bound composition (review024)
+---------------------------------------
+Recognize J0 as a finite sum of c^j*a^k*b^l*v^h monomials. Use the complete
+centered kernel for q^l and |c|<=2. For degree d>=1, |v|<=q^(d-1);
+for degree zero, v=0 at q>=2. An unrecognized symbol leaves the rule
+unavailable; it is not a certificate that the candidate is impossible.
+The compiler calculates a squared norm D*q^(2a), then applies Cauchy to
+pay |W0|<=2*sqrt(D)*q^a*sqrt(L_old)+D*q^(2a).
+
+Enumerate the inherited norm-envelope route and complete signed-work
+routes with consecutive, cumulative-prefix, and dyadic MAXIMUM PARTIAL
+coverage. When J0 can be paid and is nonzero, also enumerate those three
+routes for the remaining JOINED odd/even work. Keep all cross terms.
+The sublinear maximum rule is generic in 0<=r<1 (including fractional r):
+ M<=D+A*M^r implies M<=2D+(2A)^(1/(1-r)).
+Taking the finite maximum follows by summation of the exact recurrence;
+it does not assume the bound being sought. Sum all nonnegative shell and
+square costs, with the exponent -1 logarithmic boundary retained.
+
+The exponent goal is an input to backwards budget calculations. Attempt
+each resulting forcing leaf using available inherited uniform envelopes.
+Insufficient exponents stay open. Prefer an actually closed proof, then
+fewer unbounded sectors, then cumulative over stronger consecutive work.
+The selected unresolved exact polynomial becomes a new bound target in
+the output; retain alternative routes and reasons they did not close.
+No route may promote an assumption of its target or numerical evidence.
+Current rules search proof compositions, not unrestricted analytic proofs.
+
+Deferred diagnostic evaluation (old arithmetic, new observables)
+---------------------------------------------------------------
+The latest user prioritizes the detector's own bound-search capability.
+Before any tests or source observations, defer the diagnostic worker from
+THIS study and implement the automatic proof planner above instead.
+Keep this future diagnostic specification; executed=false in the artifact.
+No numerical claim, finite comparison, or fresh-prime evidence is produced.
+For a future study, freeze symbolic programs before reading source values.
+The existing producer
+and checker Mobius archives are already observed data, not fresh primes.
+Use q=1..2048 and fixed nonnegative heights 0,1/2,1,2,4,8,16; symmetric discrete
+weights 1 at zero and 2 elsewhere. This defines a FINITE SAMPLED ENERGY,
+not quadrature certified for the complete continuous low Gram. It never
+enters proof selection, uniform constants or source payment flags.
+At every q evaluate raw/corrected states and all three work sectors, keeping
+the x=0 head branch. Report dyadic block signed work, absolute work, and
+sector sums. Do not fit or select a growth exponent from these diagnostics.
+Producer192bits and independent checker256bits; each reads its own archived
+source and independently validates actual mu. Verify interval agreement,
+complete block coverage and exact scope flags. No arithmetic regeneration,
+hashes, dropped observations or unrecorded numerical retries.
+
+One owned development suite per owner in isolated processes; one frozen
+study. Main/worker caps4GiB, sequential or at most two numeric workers under
+the user's16GiB aggregate limit. Inclusive cap600million operations and
+1800seconds. Preserve all failures, source snapshots and terminal results.
+The whole signed core/RH flags remain false until their actual proof closes.

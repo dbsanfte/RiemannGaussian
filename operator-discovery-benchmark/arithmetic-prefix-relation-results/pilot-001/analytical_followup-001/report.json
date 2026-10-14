@@ -1,0 +1,17 @@
+{
+  "RH_proved": false,
+  "lemma_roles": {
+    "compensator_01": "unproved_arithmetic_candidate",
+    "compensator_02": "unproved_arithmetic_candidate",
+    "compensator_03": "unproved_arithmetic_candidate",
+    "compensator_04": "unproved_arithmetic_candidate",
+    "compensator_05": "padding_control",
+    "priced_baseline": "baseline_control"
+  },
+  "new_arithmetic_observations": 0,
+  "old_outputs_modified": false,
+  "source_and_state_binding_checked": true,
+  "status": "ANALYTICAL_REVIEW_ATTACHED_TO_ARITHMETIC_BOUND_FRONTIER",
+  "tests_rerun": 0,
+  "whole_signed_bound_proved": false
+}

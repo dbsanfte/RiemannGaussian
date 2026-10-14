@@ -1,0 +1,157 @@
+Unbound analytical review of selected arithmetic potentials: IDs4,25,26,73
+2026-10-09. This memo is outside the frozen pilot's admission artifacts.
+
+Inputs read: the frozen final_batch.json candidate payloads and their stored
+training constants, the language contract, and the pre-run soundness review.
+No final numerical responses were read. No source evaluation, arithmetic
+experiment, test, hash, optimizer or earlier-file edit was performed. All
+identities below are deductions from the exact selected ASTs and the usual
+Mobius identity mu(n)^2=1_{n squarefree} for positive n. The independent reader
+must adjudicate this memo; it changes no frozen result or theorem flag.
+
+Notation and the complete target
+
+Let M(n)=sum_{j=1}^n mu(j), M(0)=0, and
+  E(X)=X^-2 sum_{t=X}^{2X-1} M(t)^2.
+Let chi(n)=mu(n)^2=1_{n squarefree}, for n>=1. All four selected states have
+weight1 and contain the lagged sum L(t)=M(floor(t/2)). Their potentials and
+full objectives are V_i(X)=X^-2 sum_{t=X}^{2X-1} U_i(t)^2 and
+W_i(X)=E(X)+V_i(X). In particular E is never replaced by a masked or lagged
+energy. Every t endpoint below is inclusive, and X is a positive integer.
+
+The exact selected states are
+  ID4:  U_4(t)=L(t).
+  ID25: U_25(t)=L(t)*mu(floor(sqrt(t))).
+  ID26: U_26(t)=L(t)*mu(floor(t^(1/3))).
+  ID73: U_73(t)=L(t)*mu(floor(t^(1/3)))*mu(t).
+There is no explicit X inside these particular U trees; child evaluation
+still uses its own interval [2X,4X-1]. Roots are exact integer floors.
+
+ID4: exact lagged-energy recurrence, including the initial exception
+
+For X=2Y, t=2s and t=2s+1 each have floor(t/2)=s. As t runs through
+[2Y,4Y-1], s runs through [Y,2Y-1], with multiplicity EXACTLY2. Therefore
+  V_4(2Y)=(4Y^2)^-1*2*sum_{s=Y}^{2Y-1} M(s)^2=E(Y)/2.
+Consequently, at every dyadic X>=2,
+  V_4(X)=E(X/2)/2,
+  W_4(X)=E(X)+E(X/2)/2,
+  W_4(2X)-W_4(X)=E(2X)-E(X)/2-E(X/2)/2.                 (1)
+Equivalently, if Delta E(X)=E(2X)-E(X), the last expression is
+Delta E(X)+Delta E(X/2)/2. It is a fixed lag filter of the original signed
+energy increments, not an arithmetic cancellation identity controlling them.
+
+X=1 has only t=1 and L(1)=M(0)=0, so V_4(1)=0. E(0) is NOT defined and
+the displayed lag formula must not be extended to X=1 by inventing E(1/2).
+All four selected states likewise vanish at t=1. Since mu(1)=1,
+  V_i(1)=0 and W_i(1)=E(1)=1, for i=4,25,26,73.
+For ID4 the initial innovation is E(2)-E(1)/2; that expression retains both
+the complete initial anchor and the child's lag storage. W(1) is not omitted.
+
+Writing e_j=E(2^j), j>=0, an assumed upper bound epsilon_j on ID4's full
+innovation at X=2^j, j>=1, would imply
+  e_{j+1} <= (e_j+e_{j-1})/2 + epsilon_j.
+The homogeneous recurrence has characteristic roots1 and-1/2. This explains
+the lag smoothing, but supplies no bound on the actual epsilon_j. It neither
+proves monotonicity nor replaces the missing signed arithmetic estimate.
+
+IDs25,26,73: exact squarefree-mask reductions
+
+Define fixed integer weights
+  a_25(t)=chi(floor(sqrt(t))),
+  a_26(t)=chi(floor(t^(1/3))),
+  a_73(t)=chi(floor(t^(1/3)))*chi(t),
+and a_4(t)=1. Then, identically for actual mu,
+  V_i(X)=X^-2 sum_{t=X}^{2X-1} a_i(t)*M(floor(t/2))^2.   (2)
+The signs of the EXTRA factors mu(root) and mu(t) do not survive the final
+square: their direct contribution is precisely these zero/one gates. This
+does not remove signed information from L(t). Expanding L(t)^2 still gives
+all mu(n)*mu(m) cross terms, including their signs, for n,m<=floor(t/2).
+The root index can also occur inside L(t), so this observation does NOT say
+that globally flipping a source coefficient leaves the whole potential
+unchanged. It says that the additional scalar multiplication introduces a
+squarefree mask rather than a new retained signed cross interaction.
+
+The root masks are piecewise constant on complete integer intervals
+  [h^2,(h+1)^2-1] for ID25, and [h^3,(h+1)^3-1] for ID26.
+ID73 additionally masks individual t by squarefreeness. No interval endpoint,
+root-boundary term or masked-out cost is silently discarded from (2). A
+density statement for squarefree integers alone cannot replace the weighted
+sum: its required correlation with the lagged M(s)^2 remains unknown.
+
+For an exact paired version set
+  b_i(s)=(a_i(2s)+a_i(2s+1))/2, and
+  E_{b_i}(Y)=Y^-2 sum_{s=Y}^{2Y-1} b_i(s)*M(s)^2.
+Here b_i takes values0,1/2,1; b_4 is identically1. Pairing the two t values
+gives, for every even X>=2,
+  V_i(X)=E_{b_i}(X/2)/2,
+  W_i(2X)-W_i(X)=E(2X)-E(X)
+                   +(E_{b_i}(X)-E_{b_i}(X/2))/2.        (3)
+This is a masked lagged energy with complete normalization, rather than
+bounded local padding. Formula (3) includes any root-mask change across the
+pair2s,2s+1 by using BOTH mask values. Its masks are not constant statistical
+density factors or a parent cutoff reused by the child.
+
+Pointwise domination and its limits
+
+For every positive X,
+  0<=V_73(X)<=V_26(X)<=V_4(X), and 0<=V_25(X)<=V_4(X).
+There is no analogous automatic order between V_25 and V_26. Each W_i>=E.
+These orders do NOT order the full signed innovations: subtracting the parent
+potential can reverse a comparison. Thus an innovation estimate for ID26
+does not automatically pass to ID73 with the same constant, nor does a smaller
+potential automatically provide a stronger signed cancellation mechanism.
+
+For dyadic X>=2 all four satisfy V_i(X)<=E(X/2)/2. The elementary
+|mu(n)|<=1 bound gives only V_i(X)<=V_4(X)<X. No scale-independent O(1)
+bound follows from the AST or its squarefree gates. Conversely, this memo
+does not prove these actual-mu potentials unbounded. Their exact structural
+classification is lagged or masked lagged energy; a stronger actual-mu bound
+would itself require an additional estimate for M.
+
+As a formal sanity distinction, on the diagnostic source identically1 every
+extra source multiplier is1 and all four ASTs reduce to ID4. There M(s)=s,
+and V_4(2Y)=(2Y^2)^-1 sum_{s=Y}^{2Y-1}s^2>=Y/2. Hence these ASTs are not
+universally bounded-padding identities for arbitrary bounded scalar sources.
+This algebraic comparison is not an actual-mu counterexample or an experiment.
+
+Precise missing signed estimates
+
+The required obligation for each fixed selected candidate remains:
+  exists integer q0>=1 such that, for EVERY integer q>=q0,
+  there exists finite C_q>=0, independent of dyadic X>=1, with
+  W_i(2X)-W_i(X)<=C_q*ceil(X^(1/q)).                     (4)
+For ID4, at dyadic X>=2 the left side is exactly (1). For IDs25,26,73 it
+is exactly (3), with the specific b_i above. Equivalently, for all four it is
+the complete difference
+  (4X^2)^-1 sum_{t=2X}^{4X-1}[M(t)^2+a_i(t)M(floor(t/2))^2]
+    -X^-2 sum_{t=X}^{2X-1}[M(t)^2+a_i(t)M(floor(t/2))^2]. (5)
+The parent term is signed and cannot be dropped, made positive, replaced by
+a separate square, or bounded by a finite fitted constant without proof.
+
+No identity in this review establishes (4). For example, pointwise
+V_i<=E(X/2)/2 leaves open both the unmasked and masked energy increments.
+If the cofinal upper-bound premise were proved, ordinary dyadic telescoping
+would retain W_i(1)=1 and give E(X)<=W_i(X)<=K_q*X^(1/q), with finite q-
+dependent K_q. Conversely, such an all-dyadic bound on E for cofinal q would
+already bound all these W_i by the same exponent, since their storage is
+dominated by the lagged E. Their cofinal obligations are therefore tied to
+the same substantive subpower energy control, not discharged by the lag
+identity or positive storage alone. The conditional ordinary-zeta consequence
+still requires that genuine all-scale premise and its full quantifiers.
+
+ID73's stored C_q=0 at q2,3,6,12 is a FINITE training hypothesis only.
+It is not a universal proof, not information about omitted q, and not a
+license to assume W_73 is nonincreasing at all dyadic scales. If universal
+zero innovation were actually proved, telescoping from W_73(1)=1 would give
+E(X)<=W_73(X)<=1 at every dyadic X. That is a strong separate missing lemma.
+Its finite training fit does not establish it or justify a favorite after
+seeing final responses; this review has made no such nomination.
+
+Disposition
+
+ID4 supplies an exact lag recurrence. IDs25/26/73 supply precise squarefree-
+masked versions, with ID73 losing the direct sign of its added mu(t) factor
+on squaring. All preserve the complete target, W1, and the lagged M square's
+signed cross terms. None supplies the missing all-scale signed innovation
+bound. No universal-estimate, global-bound, RH or candidate-admission claim
+is established, and all frozen-run evidence remains unchanged.

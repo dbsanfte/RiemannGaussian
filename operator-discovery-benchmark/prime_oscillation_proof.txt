@@ -1,0 +1,79 @@
+OSCILLATION COMPATIBILITY OF FRACTIONAL PRIME TWISTS
+
+Named external dependency
+--------------------------
+Hardy and Littlewood, Contributions to the theory of the Riemann zeta-function
+and the theory of the distribution of primes, Acta Mathematica 41, 119--196,
+DOI 10.1007/BF02422942, section 5.1, equations (5.111),(5.112), printed p.184.
+The original scanned paper is pinned by hash. PDF page 33 contains printed
+pages 183--184. Its source theorem is
+  psi(x)-x = Omega_+(sqrt(x) log log log x)
+           = Omega_-(sqrt(x) log log log x).
+The section explains that assuming RH suffices for the proof, since if RH
+fails a stronger oscillation statement holds. The unconditional statement
+rules out psi(x)-x=O(sqrt(x)).
+This classical analytic theorem is imported. Its proof is not independently
+re-proved or machine-formalized in this detector. The arithmetic inversion
+below is independently checked. No RH proof or historical novelty is claimed.
+Publisher: https://doi.org/10.1007/BF02422942
+Original-paper mirror: https://mwolf.pracownicy.uksw.edu.pl/Hardy_Littlewood%20zeta.pdf
+
+General program class, not a nominated formula
+------------------------------------------------
+In the log channel let
+  E(x)=sum b_j I_(1-jdelta)(x)-sum_(n<x)Lambda(n)P(n^(-delta)),
+  P(z)=sum c_j z^j, c_r=1, nu=r delta, delta>0.
+Let W(t)=1+sum_(j>r)c_j t^(-(j-r)delta), so P(t^(-delta))=t^(-nu)W(t).
+This normalized polynomial is eventually positive even if it changes sign
+at smaller indices. Put S=sum_(j>r)|c_j| and choose rational
+  z0=min(1,1/(2S)) if S>0; z0=1 otherwise.
+For EVERY real t>=T=max(2,z0^(-1/delta)), the elementary triangle bound gives
+  |W(t)-1|<=S z0<=1/2.
+Thus g(t)=1/P(t^(-delta)) exists there and satisfies
+  |g(t)|<=2 t^nu,
+  |g'(t)|<=(2nu+4delta sum_(j>r)(j-r)|c_j|)t^(nu-1).
+The implementation chooses an integer power of two T meeting the exact
+rational inequality T^(delta numerator)*z0^(delta denominator)>=1.
+The program certificate supplies a universal eventual inverse, not an
+all-height complex multiplier certificate.
+
+Consider an alleged integer bound
+  |E(n)-A|<=C n^(1/2-nu), every integer n>=1,
+with any fixed real A. Suppose each normalizer mismatch obeys
+  c_j!=b_j => (j-r)delta>=1/2.                           (1)
+This implies no normalizer precedes the leading arithmetic shift. It is
+exactly the real-pole compensation condition at the critical output exponent.
+The previously proved whole-unit extension gives, at real x>=T,
+  e(x)=E(x)-A = O(x^(1/2-nu)) + O(x^(-nu)log(e+x)).
+
+Write B(t)=sum b_j t^(-jdelta). In the sense of Stieltjes measures,
+  de=B(t)dt-P(t^(-delta))dpsi(t).
+On [T,x] invert the weight and integrate by parts:
+  psi(x)-x = constant + integral_T^x(B(t)/P(t^(-delta))-1)dt
+                        -g(x)e(x)+integral_T^x g'(t)e(t)dt.
+Strict versus inclusive endpoints alter this by at most Lambda(x)=O(log x).
+Condition (1) bounds the first integral by O(sqrt(x)): each mismatch, after
+division by the leading twist, decays at least as t^(-1/2).
+The g and g' bounds give O(sqrt(x))+O(log(e+x)^2) for the remaining terms.
+Consequently the alleged bound forces psi(x)-x=O(sqrt(x)), contradicting
+the pinned oscillation theorem. ALL such pure critical-power log-channel
+claims are false, including fractional monomials and signed polynomials.
+Nearby real centers cannot repair this oscillation obstruction.
+
+Weighted channel and slowly varying factors
+---------------------------------------------
+In the lambda channel inversion to psi introduces an additional log(t).
+A critical pure-power lambda bound consequently gives a psi bound with a
+logarithmic loss, so the above rejection cannot be applied to that channel.
+Similarly a positive log-power in a log-channel bound is not rejected by
+this theorem: log(e+x)^ell eventually dominates log log log x for every
+fixed ell>0. Compatibility is not a proof that the estimate is true.
+
+The audit retains the source programs, coefficients, learned constants,
+validation and outcomes. It applies the generic class test to the complete
+frozen candidate batch. An automatic repair rule may select a positive
+log-power estimate already present in that batch for the same rejected
+archived program, using only source discovery-validation and charged costs.
+Repaired choices are sealed before fresh final cases. All earlier final
+and exhaustive coverage data are development evidence for this extension.
+Finite success of a repair remains an open uniform signed proof obligation.

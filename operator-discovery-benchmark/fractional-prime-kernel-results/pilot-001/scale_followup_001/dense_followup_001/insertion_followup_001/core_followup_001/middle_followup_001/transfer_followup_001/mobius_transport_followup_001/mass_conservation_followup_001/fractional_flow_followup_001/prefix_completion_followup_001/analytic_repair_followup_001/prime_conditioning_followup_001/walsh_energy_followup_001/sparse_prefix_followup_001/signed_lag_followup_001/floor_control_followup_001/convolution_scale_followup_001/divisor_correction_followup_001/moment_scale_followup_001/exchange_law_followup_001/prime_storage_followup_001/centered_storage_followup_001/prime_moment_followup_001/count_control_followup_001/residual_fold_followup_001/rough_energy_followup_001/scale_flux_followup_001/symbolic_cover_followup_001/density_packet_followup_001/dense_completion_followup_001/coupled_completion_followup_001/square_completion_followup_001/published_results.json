@@ -1,0 +1,3728 @@
+{
+  "RH_proved": false,
+  "corrected_producer_resource_audit_failure_retained": true,
+  "discovery_failures": [],
+  "independent_artifact_admission": "VERIFIED_COUPLED_SQUARE_ARTIFACT_BINDING",
+  "independent_witness_admission": "VERIFIED_SQUARE_WITNESS_ARTIFACT_BINDING",
+  "preflight_reporting_error_retained": true,
+  "science": {
+    "RH_proved": false,
+    "admitted_proposals": 8,
+    "conservative_process_peak_sum_bytes": 1077977088,
+    "constructor_operations": 20773528188,
+    "discovery": [
+      {
+        "family_id": "cofactor",
+        "id": "q1_p04_cofactor",
+        "source_id": "q1_p04",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 51.91636405297322,
+        "worker_peak_rss_kib": 196088
+      },
+      {
+        "family_id": "fractional",
+        "id": "q1_p04_fractional",
+        "source_id": "q1_p04",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 48.243613329017535,
+        "worker_peak_rss_kib": 202504
+      },
+      {
+        "family_id": "inherited",
+        "id": "q1_p04_inherited",
+        "source_id": "q1_p04",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 39.97044588497374,
+        "worker_peak_rss_kib": 174716
+      },
+      {
+        "family_id": "reciprocal",
+        "id": "q1_p04_reciprocal",
+        "source_id": "q1_p04",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 47.063271455001086,
+        "worker_peak_rss_kib": 195056
+      },
+      {
+        "family_id": "cofactor",
+        "id": "q1_p16_cofactor",
+        "source_id": "q1_p16",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 45.53636266000103,
+        "worker_peak_rss_kib": 174716
+      },
+      {
+        "family_id": "fractional",
+        "id": "q1_p16_fractional",
+        "source_id": "q1_p16",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 48.34312229801435,
+        "worker_peak_rss_kib": 190084
+      },
+      {
+        "family_id": "inherited",
+        "id": "q1_p16_inherited",
+        "source_id": "q1_p16",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 38.15637523098849,
+        "worker_peak_rss_kib": 150744
+      },
+      {
+        "family_id": "reciprocal",
+        "id": "q1_p16_reciprocal",
+        "source_id": "q1_p16",
+        "status": "EXACT_SQUARE_PROPOSAL",
+        "total_elapsed_seconds": 46.52708040399011,
+        "worker_peak_rss_kib": 172404
+      }
+    ],
+    "elapsed_seconds": 1445.7233001550194,
+    "frozen_operators": 8,
+    "growth_hypotheses_by_j": [
+      {
+        "j": 1,
+        "passes": 32,
+        "tested": 32
+      },
+      {
+        "j": 3,
+        "passes": 32,
+        "tested": 32
+      },
+      {
+        "j": 7,
+        "passes": 24,
+        "tested": 32
+      },
+      {
+        "j": 15,
+        "passes": 5,
+        "tested": 32
+      },
+      {
+        "j": 31,
+        "passes": 0,
+        "tested": 32
+      }
+    ],
+    "hashes_used": false,
+    "independent_discovery_operations": 33775002772,
+    "independent_validation_operations": 484644345262,
+    "independently_admitted_auxiliary_rows": 32,
+    "known_unit_and_all_prime_signs_used": true,
+    "new_auxiliary_factor_searches_at_validation": true,
+    "new_auxiliary_rows": 32,
+    "new_geometry_parents": [
+      1603,
+      1738,
+      2651,
+      2766
+    ],
+    "observed_full_source_values_used": false,
+    "operation_accounting_scope": "Instrumented matrix and factor work; excludes solver instructions, symbolic outer setup, conditional target compilation and exact growth comparisons",
+    "operator_coefficients_frozen_at_validation": true,
+    "prior_frozen_files": 638,
+    "sampled_aggregate_peak_rss_bytes": 800591872,
+    "source_bytes_preserved": true,
+    "status": "COMPLETE_COUPLED_SQUARE_SEARCH",
+    "tasks": 8,
+    "uniform_remaining_bound_proved": false,
+    "uniform_source_bound_proved": false,
+    "unknown_composite_signs_used": false,
+    "validation": [
+      {
+        "elapsed_seconds": 455.72376743500354,
+        "id": "q1_p04_cofactor",
+        "worker_peak_rss_kib": 259280
+      },
+      {
+        "elapsed_seconds": 444.97097263502656,
+        "id": "q1_p04_fractional",
+        "worker_peak_rss_kib": 251900
+      },
+      {
+        "elapsed_seconds": 403.2959320890368,
+        "id": "q1_p04_inherited",
+        "worker_peak_rss_kib": 251152
+      },
+      {
+        "elapsed_seconds": 440.8114906359697,
+        "id": "q1_p04_reciprocal",
+        "worker_peak_rss_kib": 255864
+      },
+      {
+        "elapsed_seconds": 446.8454493599711,
+        "id": "q1_p16_cofactor",
+        "worker_peak_rss_kib": 245352
+      },
+      {
+        "elapsed_seconds": 462.258267416968,
+        "id": "q1_p16_fractional",
+        "worker_peak_rss_kib": 248668
+      },
+      {
+        "elapsed_seconds": 401.5664644310018,
+        "id": "q1_p16_inherited",
+        "worker_peak_rss_kib": 243696
+      },
+      {
+        "elapsed_seconds": 441.6790445690276,
+        "id": "q1_p16_reciprocal",
+        "worker_peak_rss_kib": 248360
+      }
+    ]
+  },
+  "selected_details": [
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "inherited",
+      "id": "q1_p16_inherited",
+      "rows": [
+        {
+          "exact_price_reduction": "48171824072114776169/14355223812243456",
+          "factor_fallback": null,
+          "factor_rank": 100,
+          "grammar_lower_over_u": "9939383140903867229/12249790986447749120",
+          "growth_tests": [],
+          "old_residual_price_over_u": "4508824933063/1095216660480",
+          "solver_objective_over_u": 0.805540336917474,
+          "solver_seconds": 32.80804689,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "20574332957386696529/24499581972895498240",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "480469812860682484381/56154257853775872",
+          "factor_fallback": null,
+          "factor_rank": 163,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "566817573227/83833257984",
+          "solver_objective_over_u": 1.419851818059536,
+          "solver_seconds": 77.1432758,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "2615222899823062483/1837046435502096384",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "337893721238664456497/30469666228928512",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "51301918231153/6312880504832",
+          "solver_objective_over_u": 1.7416483970040753,
+          "solver_seconds": 90.015943805,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "92457960450531448527/52956279905877753856",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "1207345640088840195437/46513739901435904",
+          "factor_fallback": null,
+          "factor_rank": 280,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "94063936040383/7349725036544",
+          "solver_objective_over_u": 2.8979539015150912,
+          "solver_seconds": 90.183308804,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "370785332670850118291/123307924478706581504",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "92766840895357680695/3236962232172544",
+          "factor_fallback": null,
+          "factor_rank": 270,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "107074033131037/8004996956160",
+          "solver_objective_over_u": 2.920112626367864,
+          "solver_seconds": 90.266863511,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "404901568400198842567/134301563012838850560",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p16",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "cofactor",
+      "id": "q1_p16_cofactor",
+      "rows": [
+        {
+          "exact_price_reduction": "115081095323224487947/35888059530608640",
+          "factor_fallback": null,
+          "factor_rank": 100,
+          "grammar_lower_over_u": "12641838439184025911/18374686479671623680",
+          "growth_tests": [],
+          "old_residual_price_over_u": "2872399389187/730144440320",
+          "solver_objective_over_u": 0.6806409499567806,
+          "solver_seconds": 35.553650636,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "29491499648750602229/36749372959343247360",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "810938363918889379403/112308515707551744",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "11980470231173/1788442836992",
+          "solver_objective_over_u": 2.193966219402589,
+          "solver_seconds": 76.554568842,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "395055257180866746805/180030550679205445632",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "707809993811082043691/60939332457857024",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "26130295558819/3156440252416",
+          "solver_objective_over_u": 1.5762961980515409,
+          "solver_seconds": 88.30274244099999,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "168977231657212092117/105912559811755507712",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "2380696564756814222337/93027479802871808",
+          "factor_fallback": null,
+          "factor_rank": 279,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "92145247060349/7349725036544",
+          "solver_objective_over_u": 2.765574287211849,
+          "solver_seconds": 90.061978172,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "64653169259351472221/22419622632492105728",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "67240504235960768933/2427721674129408",
+          "factor_fallback": null,
+          "factor_rank": 294,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "103392308619883/8004996956160",
+          "solver_objective_over_u": 2.7577022125024664,
+          "solver_seconds": 90.09066361800001,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "32485417477935300589/11191796917736570880",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p16",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "reciprocal",
+      "id": "q1_p16_reciprocal",
+      "rows": [
+        {
+          "exact_price_reduction": "16174361575519024285/4785074604081152",
+          "factor_fallback": null,
+          "factor_rank": 100,
+          "grammar_lower_over_u": "18749407989169767061/24499581972895498240",
+          "growth_tests": [],
+          "old_residual_price_over_u": "2241127469281/547608330240",
+          "solver_objective_over_u": 0.7600495164606702,
+          "solver_seconds": 37.212135357,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "58183613452500249293/73498745918686494720",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "78347307670796728365/9359042975629312",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "43390417505473/5365328510976",
+          "solver_objective_over_u": 2.864192911471638,
+          "solver_seconds": 78.576423377,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "18420468628194380927/6429662524257337344",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "660080670504823877411/60939332457857024",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "68053753463195/6312880504832",
+          "solver_objective_over_u": 4.528996814845707,
+          "solver_seconds": 88.954476577,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "43788350087086062519/9628414528341409792",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "2315434702977948519559/93027479802871808",
+          "factor_fallback": null,
+          "factor_rank": 280,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "107449006884891/7349725036544",
+          "solver_objective_over_u": 5.073275336306239,
+          "solver_seconds": 90.19528553399999,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "1289955692008658367353/246615848957413163008",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "2645649349198086306713/97108866965176320",
+          "factor_fallback": null,
+          "factor_rank": 294,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "103144346524739/8004996956160",
+          "solver_objective_over_u": 2.8789286698116268,
+          "solver_seconds": 90.20473412300001,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "163060122490140957307/53720625205135540224",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p16",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "fractional",
+      "id": "q1_p16_fractional",
+      "rows": [
+        {
+          "exact_price_reduction": "5684413832462281043/1794402976530432",
+          "factor_fallback": null,
+          "factor_rank": 96,
+          "grammar_lower_over_u": "2097771932716907987/3062447746611937280",
+          "growth_tests": [],
+          "old_residual_price_over_u": "2787407854021/730144440320",
+          "solver_objective_over_u": 0.6808503061750213,
+          "solver_seconds": 37.516010452,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "6651638572943683937/9187343239835811840",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "29207604092628056749/4011018418126848",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "1143024475307/191618875392",
+          "solver_objective_over_u": 1.421403043231439,
+          "solver_seconds": 79.548066264,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "3048644312798784625/2143220841419112448",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "1339440096178183100699/121878664915714048",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "50590099691147/6312880504832",
+          "solver_objective_over_u": 1.6842939193923345,
+          "solver_seconds": 89.037753959,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "358081963781629912805/211825119623511015424",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "2241031686860990972889/93027479802871808",
+          "factor_fallback": null,
+          "factor_rank": 279,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "737712780237/60993568768",
+          "solver_objective_over_u": 2.8486601986366287,
+          "solver_seconds": 90.164174866,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "741769078198208953383/246615848957413163008",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "859354755200298831641/32369622321725440",
+          "factor_fallback": null,
+          "factor_rank": 294,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "50613621524173/4002498478080",
+          "solver_objective_over_u": 2.7980615009498297,
+          "solver_seconds": 90.327039449,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "818558377812302074549/268603126025677701120",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p16",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "inherited",
+      "id": "q1_p04_inherited",
+      "rows": [
+        {
+          "exact_price_reduction": "523764107461340451397/143552238122434560",
+          "factor_fallback": null,
+          "factor_rank": 100,
+          "grammar_lower_over_u": "3893288164964935298529566309/4932417344027687032801198080",
+          "growth_tests": [],
+          "old_residual_price_over_u": "82412212526927713169/18374686479671623680",
+          "solver_objective_over_u": 0.7716571868787692,
+          "solver_seconds": 34.431264128,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "9035572850272083597/9799832789158199296",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "2061519919196959228877/224617031415103488",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "652227792656863852129/90015275339602722816",
+          "solver_objective_over_u": 1.5182214723672893,
+          "solver_seconds": 76.51995607299999,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "547391251430496179639/360061101358410891264",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "2879136421262496626945/243757329831428096",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "331564653505807204109/38513658113365639168",
+          "solver_objective_over_u": 1.8112661011571918,
+          "solver_seconds": 90.115416942,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "384037383650691309127/211825119623511015424",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "10199188202708229682611/372109919211487232",
+          "factor_fallback": null,
+          "factor_rank": 280,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "6590268672945847534549/493231697914826326016",
+          "solver_objective_over_u": 2.914659310882536,
+          "solver_seconds": 90.300368782,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "2981349143183465386487/986463395829652652032",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "374795171062319152541/12138608370647040",
+          "factor_fallback": null,
+          "factor_rank": 294,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "340055754766036934783/23875833424504684544",
+          "solver_objective_over_u": 2.911561055674051,
+          "solver_seconds": 90.096354511,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "3309063490477449183923/1074412504102710804480",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p04",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "cofactor",
+      "id": "q1_p04_cofactor",
+      "rows": [
+        {
+          "exact_price_reduction": "497773198438381194041/143552238122434560",
+          "factor_fallback": null,
+          "factor_rank": 98,
+          "grammar_lower_over_u": "58713483963775309040816547/102758694667243479850024960",
+          "growth_tests": [],
+          "old_residual_price_over_u": "585601591383421867771/146997491837372989440",
+          "solver_objective_over_u": 0.5713381867356854,
+          "solver_seconds": 41.447854185999994,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "8782839294504067373/14699749183737298944",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "860153778084782337685/112308515707551744",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "2341559488730440101401/360061101358410891264",
+          "solver_objective_over_u": 1.7246838401796594,
+          "solver_seconds": 78.524303645,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "207083977520291808677/120020367119470297088",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "2811030449464267361565/243757329831428096",
+          "factor_fallback": null,
+          "factor_rank": 180,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "318912746487364272391/38513658113365639168",
+          "solver_objective_over_u": 1.6421968137605827,
+          "solver_seconds": 89.609054164,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "43563110118546227171/26478139952938876928",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "9321396913845767478817/372109919211487232",
+          "factor_fallback": null,
+          "factor_rank": 281,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "6215172958029798596659/493231697914826326016",
+          "solver_objective_over_u": 3.024298939498611,
+          "solver_seconds": 90.053607329,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "3108949002213829714501/986463395829652652032",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "1836938194830092593899/64739244643450880",
+          "factor_fallback": null,
+          "factor_rank": 293,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "7107029928450356339129/537206252051355402240",
+          "solver_objective_over_u": 2.75074115949718,
+          "solver_seconds": 90.281380564,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "199526917995009819679/67150781506419425280",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p04",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "reciprocal",
+      "id": "q1_p04_reciprocal",
+      "rows": [
+        {
+          "exact_price_reduction": "16321937797631788813/4785074604081152",
+          "factor_fallback": null,
+          "factor_rank": 99,
+          "grammar_lower_over_u": "605181746561871963107174281/822069557337947838800199680",
+          "growth_tests": [],
+          "old_residual_price_over_u": "200521281566692950243/48999163945790996480",
+          "solver_objective_over_u": 0.734477299551069,
+          "solver_seconds": 37.391286991,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "37301903590375062113/48999163945790996480",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "1777478292460177990331/224617031415103488",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "712954014838233963833/90015275339602722816",
+          "solver_objective_over_u": 2.9822853074582527,
+          "solver_seconds": 76.957848074,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "51158941280607517381/17145766731352899584",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "582282400119000207369/60939332457857024",
+          "factor_fallback": null,
+          "factor_rank": 179,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "280009622976735955971/26478139952938876928",
+          "solver_objective_over_u": 5.058057026743744,
+          "solver_seconds": 82.436815279,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "537756091787943616515/105912559811755507712",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "1111561701242487013467/46513739901435904",
+          "factor_fallback": null,
+          "factor_rank": 280,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "6847619391077665341151/493231697914826326016",
+          "solver_objective_over_u": 4.759304434167629,
+          "solver_seconds": 90.232809698,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "2401372586107717287283/493231697914826326016",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "513026384256878427709/19421773393035264",
+          "factor_fallback": null,
+          "factor_rank": 294,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "3393608329545946771957/268603126025677701120",
+          "solver_objective_over_u": 2.918542258213976,
+          "solver_seconds": 90.158363638,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "207119102065388658353/67150781506419425280",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p04",
+      "validation_failures": []
+    },
+    {
+      "calibrated_growth_hypotheses": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "family_id": "fractional",
+      "id": "q1_p04_fractional",
+      "rows": [
+        {
+          "exact_price_reduction": "9351993597390892247/2990671627550720",
+          "factor_fallback": null,
+          "factor_rank": 98,
+          "grammar_lower_over_u": "1493126958626292642155565323/2466208672013843516400599040",
+          "growth_tests": [],
+          "old_residual_price_over_u": "22563907969647008179/6124895493223874560",
+          "solver_objective_over_u": 0.6038296993626495,
+          "solver_seconds": 38.125445847,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "771984154973044737/1224979098644774912",
+          "u": 1024
+        },
+        {
+          "exact_price_reduction": "775879379026092350273/112308515707551744",
+          "factor_fallback": null,
+          "factor_rank": 164,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "712338007552224453121/120020367119470297088",
+          "solver_objective_over_u": 1.6247251155226552,
+          "solver_seconds": 74.85319789399999,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "83607894943498379831/51437300194058698752",
+          "u": 1603
+        },
+        {
+          "exact_price_reduction": "316654845918631236395/30469666228928512",
+          "factor_fallback": null,
+          "factor_rank": 180,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "3300919800783327636179/423650239247022030848",
+          "solver_objective_over_u": 1.806048519876378,
+          "solver_seconds": 81.87924131,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "767681033434277745019/423650239247022030848",
+          "u": 1738
+        },
+        {
+          "exact_price_reduction": "8369022050803347855823/372109919211487232",
+          "factor_fallback": null,
+          "factor_rank": 282,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "11529875396049194914943/986463395829652652032",
+          "solver_objective_over_u": 3.1215822745404207,
+          "solver_seconds": 90.248134356,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "197553334077865441195/61653962239353290752",
+          "u": 2651
+        },
+        {
+          "exact_price_reduction": "324531261047968545111/12947848928690176",
+          "factor_fallback": null,
+          "factor_rank": 296,
+          "grammar_lower_over_u": null,
+          "growth_tests": [
+            {
+              "constant": "1",
+              "energy_exponent": "2",
+              "j": 1,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "4/3",
+              "j": 3,
+              "passes": true,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "8/7",
+              "j": 7,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "16/15",
+              "j": 15,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            },
+            {
+              "constant": "1",
+              "energy_exponent": "32/31",
+              "j": 31,
+              "passes": false,
+              "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+            }
+          ],
+          "old_residual_price_over_u": "1469982921268724815019/119379167122523422720",
+          "solver_objective_over_u": 3.068909413626626,
+          "solver_seconds": 90.044105596,
+          "solver_status": "optimal_inaccurate",
+          "square_price_over_u": "388212051108829664649/119379167122523422720",
+          "u": 2766
+        }
+      ],
+      "source_id": "q1_p04",
+      "validation_failures": []
+    }
+  ],
+  "status": "PUBLISHED_COUPLED_SQUARE_BOUNDS_AND_UNIFORM_TARGETS",
+  "tests": {
+    "distinct_tests": 21,
+    "failed_test_executions": 0,
+    "passed_test_executions": 30,
+    "test_executions": 30
+  },
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false,
+  "witness_details": [
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "witness_q1_p04_cofactor_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_1603",
+      "lower_bound_over_u": "90946405423251665795/60010183559735148544",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "207083977520291808677/74872343805034496"
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "witness_q1_p04_cofactor_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_1738",
+      "lower_bound_over_u": "619363846958280714669/423650239247022030848",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "43563110118546227171/15234833114464256"
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "witness_q1_p04_cofactor_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_2651",
+      "lower_bound_over_u": "638782078456334515561/246615848957413163008",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "3108949002213829714501/372109919211487232"
+    },
+    {
+      "candidate_id": "q1_p04_cofactor",
+      "certificate_file": "witness_q1_p04_cofactor_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_cofactor_2766",
+      "lower_bound_over_u": "303908926640071741619/134301563012838850560",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "199526917995009819679/24277216741294080"
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "witness_q1_p04_fractional_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_1603",
+      "lower_bound_over_u": "44752130487704116779/30005091779867574272",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "83607894943498379831/32088147345014784"
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "witness_q1_p04_fractional_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_1738",
+      "lower_bound_over_u": "656284638133776835167/423650239247022030848",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "767681033434277745019/243757329831428096"
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "witness_q1_p04_fractional_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_2651",
+      "lower_bound_over_u": "1320403201132056793249/493231697914826326016",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "197553334077865441195/23256869950717952"
+    },
+    {
+      "candidate_id": "q1_p04_fractional",
+      "certificate_file": "witness_q1_p04_fractional_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_fractional_2766",
+      "lower_bound_over_u": "727535117172391048823/268603126025677701120",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "1164636153326488993947/129478489286901760"
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "witness_q1_p04_inherited_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_1603",
+      "lower_bound_over_u": "33722456202339224375/25718650097029349376",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "547391251430496179639/224617031415103488"
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "witness_q1_p04_inherited_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_1738",
+      "lower_bound_over_u": "86333980134543593095/52956279905877753856",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "384037383650691309127/121878664915714048"
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "witness_q1_p04_inherited_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_2651",
+      "lower_bound_over_u": "125558372549863114071/44839245264984211456",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "2981349143183465386487/372109919211487232"
+    },
+    {
+      "candidate_id": "q1_p04_inherited",
+      "certificate_file": "witness_q1_p04_inherited_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_inherited_2766",
+      "lower_bound_over_u": "499834158859260216589/179068750683785134080",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "3309063490477449183923/388435467860705280"
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "witness_q1_p04_reciprocal_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_1603",
+      "lower_bound_over_u": "352583813826610921189/120020367119470297088",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "51158941280607517381/10696049115004928"
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "witness_q1_p04_reciprocal_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_1738",
+      "lower_bound_over_u": "2125063766087395947383/423650239247022030848",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "537756091787943616515/60939332457857024"
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "witness_q1_p04_reciprocal_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_2651",
+      "lower_bound_over_u": "1092926662264040187137/246615848957413163008",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "2401372586107717287283/186054959605743616"
+    },
+    {
+      "candidate_id": "q1_p04_reciprocal",
+      "certificate_file": "witness_q1_p04_reciprocal_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p04_reciprocal_2766",
+      "lower_bound_over_u": "997194180820456165501/358137501367570268160",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "207119102065388658353/24277216741294080"
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "witness_q1_p16_cofactor_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_1603",
+      "lower_bound_over_u": "1883352998337/894221418496",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "395055257180866746805/112308515707551744"
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "witness_q1_p16_cofactor_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_1738",
+      "lower_bound_over_u": "8374949499869/6312880504832",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "168977231657212092117/60939332457857024"
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "witness_q1_p16_cofactor_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_2651",
+      "lower_bound_over_u": "37489916223741/14699450073088",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "711184861852866194431/93027479802871808"
+    },
+    {
+      "candidate_id": "q1_p16_cofactor",
+      "certificate_file": "witness_q1_p16_cofactor_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_cofactor_2766",
+      "lower_bound_over_u": "20468016697727/8004996956160",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "32485417477935300589/4046202790215680"
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "witness_q1_p16_fractional_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_1603",
+      "lower_bound_over_u": "2069082046583/1788442836992",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "3048644312798784625/1337006139375616"
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "witness_q1_p16_fractional_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_1738",
+      "lower_bound_over_u": "8836236978897/6312880504832",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "358081963781629912805/121878664915714048"
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "witness_q1_p16_fractional_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_2651",
+      "lower_bound_over_u": "20237539726783/7349725036544",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "741769078198208953383/93027479802871808"
+    },
+    {
+      "candidate_id": "q1_p16_fractional",
+      "certificate_file": "witness_q1_p16_fractional_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_fractional_2766",
+      "lower_bound_over_u": "22248666553139/8004996956160",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "818558377812302074549/97108866965176320"
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "witness_q1_p16_inherited_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_1603",
+      "lower_bound_over_u": "14660794537/11976179712",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "18306560298761437381/8022036836253696"
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "witness_q1_p16_inherited_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_1738",
+      "lower_bound_over_u": "9734856382945/6312880504832",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "92457960450531448527/30469666228928512"
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "witness_q1_p16_inherited_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_2651",
+      "lower_bound_over_u": "3781463668557/1336313643008",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "370785332670850118291/46513739901435904"
+    },
+    {
+      "candidate_id": "q1_p16_inherited",
+      "certificate_file": "witness_q1_p16_inherited_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_inherited_2766",
+      "lower_bound_over_u": "1391028805607/500312309760",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "404901568400198842567/48554433482588160"
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "witness_q1_p16_reciprocal_1603.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_1603",
+      "lower_bound_over_u": "7148711088167/2682664255488",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1603,
+      "verified_upper_bound": "18420468628194380927/4011018418126848"
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "witness_q1_p16_reciprocal_1738.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_1738",
+      "lower_bound_over_u": "39822313365/8967159808",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 1738,
+      "verified_upper_bound": "481671850957946687709/60939332457857024"
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "witness_q1_p16_reciprocal_2651.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_2651",
+      "lower_bound_over_u": "73786440683473/14699450073088",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2651,
+      "verified_upper_bound": "1289955692008658367353/93027479802871808"
+    },
+    {
+      "candidate_id": "q1_p16_reciprocal",
+      "certificate_file": "witness_q1_p16_reciprocal_2766.json",
+      "error": null,
+      "growth_obstructions": [
+        {
+          "constant": "1",
+          "energy_exponent": "2",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 1,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "4/3",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 3,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "8/7",
+          "impossible_for_any_square_with_frozen_constant": false,
+          "j": 7,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "16/15",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 15,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        },
+        {
+          "constant": "1",
+          "energy_exponent": "32/31",
+          "impossible_for_any_square_with_frozen_constant": true,
+          "j": 31,
+          "scope": "finite residual-price growth hypothesis only; full drift adds Astar*u"
+        }
+      ],
+      "id": "q1_p16_reciprocal_2766",
+      "lower_bound_over_u": "105827954701/38671482880",
+      "status": "EXACT_FIXED_OPERATOR_OBSTRUCTION_WITNESS",
+      "u": 2766,
+      "verified_upper_bound": "163060122490140957307/19421773393035264"
+    }
+  ],
+  "witness_diagnostic": {
+    "RH_proved": false,
+    "actual_signed_drift_lower_bound_proved": false,
+    "admitted": 32,
+    "checker_operations": 6288695478,
+    "conservative_process_peak_sum_bytes": 781574144,
+    "elapsed_seconds": 178.17404057603562,
+    "fixed_operator_only": true,
+    "growth_obstructions_by_j": [
+      {
+        "j": 1,
+        "obstructed": 0,
+        "tested": 32
+      },
+      {
+        "j": 3,
+        "obstructed": 0,
+        "tested": 32
+      },
+      {
+        "j": 7,
+        "obstructed": 5,
+        "tested": 32
+      },
+      {
+        "j": 15,
+        "obstructed": 21,
+        "tested": 32
+      },
+      {
+        "j": 31,
+        "obstructed": 30,
+        "tested": 32
+      }
+    ],
+    "posthoc_on_existing_geometries": true,
+    "sampled_aggregate_peak_rss_bytes": 695234560,
+    "search_operations": 103799875848,
+    "source_bytes_preserved": true,
+    "status": "COMPLETE_FIXED_OPERATOR_SQUARE_OBSTRUCTION_DIAGNOSTIC",
+    "tasks": 32,
+    "uniform_obstruction_proved": false,
+    "whole_theta_grammar_obstruction": false
+  }
+}

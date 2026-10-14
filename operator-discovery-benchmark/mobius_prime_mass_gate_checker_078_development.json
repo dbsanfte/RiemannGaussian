@@ -1,0 +1,27 @@
+{
+  "schema": "prime-mass-gate-checker-development-v1",
+  "status": "PASS",
+  "distinct_tests": 7,
+  "successful_test_executions": 8,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 7,
+      "status": "PASS",
+      "output": "test_certificate_fold_density_tampering_and_threshold (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_empty_rays_resource_and_canonical (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_generic_direct_source_kernel_binding (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_mass_zero_and_critical_unpaid (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_nonpure_negative_lambda_domains (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_normalization_and_signed_mass (test_check_mobius_prime_mass_gate_078.Tests) ... ok\ntest_prime_mass_gate_and_no_promotion (test_check_mobius_prime_mass_gate_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 1,
+      "status": "PASS",
+      "output": "test_prime_mass_gate_and_no_promotion (test_check_mobius_prime_mass_gate_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "scientific_results_read": false,
+  "old_suites_run": false,
+  "hashes_used": false,
+  "delegation_used": false,
+  "primary_PNT_source_checked": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+}

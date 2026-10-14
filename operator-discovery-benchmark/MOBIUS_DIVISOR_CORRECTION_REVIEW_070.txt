@@ -1,0 +1,786 @@
+LOCAL DIVISOR CORRECTIONS, QUOTIENT COST AND SCALE CLOSURE 070
+===========================================================
+
+Scope
+-----
+This is an independent mathematical review of the proposed correction
+language, not a review of forthcoming070 numerical output. I read
+MOBIUS_CONVOLUTION_SCALE_HANDOFF.txt, MOBIUS_CONVOLUTION_SCALE_REVIEW_069.txt
+and the already existing mobius_convolution_scale_069.py as text. No
+scientific runner, historical test, optimizer, numerical study or newly
+produced070 result was executed or inspected. Only this file is written.
+No hashes are made and no former frozen artifact is changed.
+
+The purpose is a reusable bound for the actual ordinary-mu source. Local
+divisor relations are sound additional arithmetic constraints. They remove
+the particular scalar-prefix adversary of069 when their domain contains3.
+They also have a strong degeneracy: all relations through U determine the
+entire ordinary-mu table through U. Every polynomial in those prefixes
+can then be corrected to its exact finite target-valued constant. That
+fact alone gives no all-scale cancellation estimate.
+
+There are two substantive outcomes here. First, a precise quotient and
+defect-propagation description identifies what the correction grammar
+can and cannot certify, including an obstruction for any fixed collection
+of local constraints, regardless of multiplier degree. Second, a finite
+divisor argument gives a smaller-rank reciprocal-moment estimate. Applied
+to a separable piece of the same joined bilinear kernels, it pays an
+O(C^2 N^sigma log(2N)) partial head price under explicit smaller-rank
+Mertens premises. An explicit signed floor remainder and, in general,
+short linear pieces remain. Neither a closed Mertens invariant nor a
+complete raw-head, core, far-correlation or RH bound is proved.
+
+1. Exact finite algebra and its information content
+--------------------------------------------------
+Fix a positive integer U. Work over the rational polynomial ring
+
+ R_U=Q[m_2,...,m_U],   m_0=0, m_1=1,
+ x_d=m_d-m_(d-1),
+ G_n=sum_(d|n)x_d-delta_(n,1),  1<=n<=U.
+
+G_1 is the zero polynomial, so it carries no additional information.
+The x_2,...,x_U are another set of affine coordinates: x_1=1 and
+m_t=1+sum_(d=2)^t x_d. In these coordinates,
+
+ G_n=x_n+sum_(d|n, d<n)x_d,             n>=2.          (1)
+
+The coefficient of x_n is1 and all other indices are strictly smaller.
+Consequently the affine map (x_2,...,x_U)->(G_2,...,G_U) has a unit lower
+triangular linear part. It is invertible over Q, with integer inverse.
+Every subset of the rows G_2,...,G_U is linearly independent: in a
+nonzero linear combination take the largest row index with nonzero
+coefficient; its x_n coefficient cannot be canceled by smaller rows.
+
+The equations G_n=0, 2<=n<=U, therefore have one and only one solution.
+Call its increments mu(n). Explicitly mu(1)=1 and
+
+ mu(n)=-sum_(d|n,d<n)mu(d).                            (2)
+
+These are precisely the ordinary-mu divisor-inverse equations. Their
+identification does not assume a Mertens estimate. For completeness,
+the multiplicative function with prime values -1, squareful values0 and
+unit1 has divisor sum product_(p|n)(1-1)=0 for n>1, and unit divisor sum1.
+It solves (2), so triangular uniqueness identifies it with ordinary mu.
+This proof of the arithmetic table contains no assertion about its sums.
+
+Write a_t=sum_(n<=t)mu(n). The full ideal is
+
+ I_U=(G_2,...,G_U)=(m_2-a_2,...,m_U-a_U).              (3)
+
+To prove (3), use the invertible affine coordinate map, or successively
+solve (1) and sum the increments. This is the maximal ideal of the single
+ordinary-mu prefix point; it is radical. Its quotient is Q. In particular,
+
+ P-Q belongs to I_U  iff  P(a)=Q(a).                  (4)
+
+Equation (4) is a statement about this finite ring, not about growth as
+U or the source horizon increases.
+
+For a partial set S subset {2,...,U}, let I_S=(G_n:n in S). The quotient
+has U-1-|S| free affine coordinates. One may choose the x_n with n not
+in S as free variables and eliminate x_n for n in S in increasing order.
+This gives a unique normal form after that coordinate choice. There is
+no extra nonlinear arithmetic rigidity hidden in I_S: its zero set is
+an affine space. Intersecting it with sign, squareful, multiplicative or
+prefix-envelope constraints is an additional and separately specified
+feasible-set operation.
+
+This distinction matters for claims that a few polynomial multiples of
+linear divisor equations discover a nonlinear law. Multiplication can
+make an effective polynomial extension outside the affine zero set.
+It does not add information to that zero set.
+
+2. Complete elimination preserves degree but encodes the finite target
+---------------------------------------------------------------------
+Let P have total degree d>=1. Set e_t=m_t-a_t. Express P in the e variables
+and expand. Its constant is P(a). Each remaining monomial contains at
+least one e_t. Assign that monomial to one such variable and factor it.
+This gives
+
+ P(m)-P(a)=sum_(t=2)^U e_t H_t(m),
+                         deg H_t<=d-1.               (5)
+
+The change between e_t and G_n is linear, with no new variables. Hence
+there are polynomial A_n of degree at most d-1 such that
+
+ P(m)+sum_(n=2)^U A_n(m)G_n(m)=P(a).                 (6)
+
+The sign of A is chosen to cancel (5). Constants and all cross terms in
+P are essential to this statement. It is false to discard an extracted
+center and apply (6) to only the visible nonconstant terms.
+
+One need not be supplied the row target to construct (6). The triangular
+recurrence (2) computes the smaller arithmetic table, and substitution
+computes P(a) from the source geometry. Thus a prohibition on passing
+target values to a producer does not by itself prevent finite-target
+encoding. An automatic algorithm can reconstruct those values through
+the constraints. Its exact certificate remains valid; its growth claim
+still needs an independent estimate for the resulting constant.
+
+The degree cap d-1 on multipliers is not a safeguard against this
+degeneracy. Sparse restrictions, allowed indices, coefficient height,
+monomial count and work can make particular eliminations unavailable,
+but those are restrictions on representation and computation. They do
+not turn a surviving constant into a paid all-scale bound.
+
+A similar telescoping construction eliminates any contiguous block
+G_2,...,G_B, B<=U, giving the representative
+
+ P(a_2,...,a_B,m_(B+1),...,m_U).                      (7)
+
+The remaining variables are free in the partial quotient. The coefficients
+of (7) now contain exact small-prefix arithmetic. This is legitimate
+smaller-domain information. It becomes a cancellation theorem only if
+one proves a uniform price for those coefficients and the residual.
+
+3. What an absolute polynomial objective can certify
+----------------------------------------------------
+For positive weights w_t, write a polynomial in collected monomials as
+
+ Q(m)=sum_J q_J product_(t in J)m_t,
+ ||Q||_w=sum_J |q_J| product_(t in J)w_t.              (8)
+
+Repeated indices are retained, and the empty product is1. If |m_t|<=w_t,
+then |Q(m)|<=||Q||_w. With w_t=C t^sigma, (8) is a nonnegative polynomial
+in C, with degree equal to the largest surviving monomial degree.
+The constant is charged exactly like the other collected coefficients.
+Rational upward weight enclosures also give a valid price, with their
+rounding error retained.
+
+Suppose the box contains the ordinary-mu point a. Every correction by
+I_U satisfies Q(a)=P(a), so
+
+ ||Q||_w>=|P(a)|.                                    (9)
+
+The constant representative (6) attains equality. Therefore unrestricted
+full-domain correction minimizes (8) to exactly |P(a)|. The same is true
+for any absolute range price whose value on a constant is its absolute
+value and which dominates evaluation at a. This is an exact finite
+optimization identity. It gives no bound for how |P(a)| scales.
+
+If multiplier support and degree are bounded, the optimum can exceed
+|P(a)|. An improvement then proves that a particular extension of P away
+from the divisor variety has a lower robust price. That is useful finite
+evidence. It is not by itself evidence that the normalized optimum is
+bounded uniformly over source horizons.
+
+For a fixed candidate scope and rational weights, (8) is a linear
+program in coefficient variables after adding variables for absolute
+values. Exact coefficient replay proves P-Q=sum A_n G_n. A rational
+primal bound proves a valid upper price. A rational dual certificate can
+prove optimality within the registered scope. These three certificates
+have different meanings. A local optimum, a found feasible correction
+or a replayed identity cannot be described as the unrestricted optimum.
+
+Selecting a candidate at C=1 does not select the same candidate at a
+general invariant constant C. A high-degree improvement at C=1 can lose
+for the C required by base cases. Retain the whole polynomial price in C,
+the source parameters, indices, degree, coefficient denominator and
+weight enclosure; selection at one pilot value is a separate decision.
+
+4. Exact defect propagation and the cost of approximate constraints
+------------------------------------------------------------------
+Introduce formal defect coordinates E_n=G_n, E_1=0. Let delta be the
+Dirichlet-convolution unit and One(n)=1. Since x*One=delta+E and
+mu*One=delta, finite coefficient inversion gives
+
+ x_n=mu(n)+sum_(d|n,d>=2)mu(n/d)E_d.                  (10)
+
+Only coefficients through n occur, so no convergence is used. Summing
+over n<=t yields the exact affine inverse in prefix coordinates:
+
+ m_t=a_t+sum_(d=2)^t a_(floor(t/d)) E_d.              (11)
+
+Proof of (11): in (10), sum n=dm; the coefficient of E_d is
+sum_(m<=t/d)mu(m)=a_(floor(t/d)).
+
+Formula (11) exposes the cost of treating the divisor relations as
+numerically small rather than exactly zero. If |E_d|<=epsilon, the
+sharp real-coordinate operator price for the prefix displacement is
+
+ epsilon sum_(d=2)^t |a_(floor(t/d))|.                (12)
+
+It is sharp by choosing the signs of E_d to match those coefficients.
+This sharpness concerns the unconstrained real defect coordinates; an
+additional discrete sign domain can reduce its feasible perturbations.
+
+For every t>=2, all d with t/2<d<=t have a_(floor(t/d))=a_1=1. Hence
+
+ sum_(d=2)^t |a_(floor(t/d))|>=floor((t+1)/2).         (13)
+
+The counted indices are all >=2, including at t=2. More conservatively,
+the lower bound floor(t/2) also suffices for every t>=2. Unconditionally,
+|a_s|<=s gives an upper bound t(1+log t). Even provisionally assuming
+|a_s|<=C s^sigma, 0<=sigma<1, the triangle estimate is at most
+
+ C t^sigma sum_(d=2)^t d^(-sigma)
+ <= C t/(1-sigma).                                  (14)
+
+The exact inverse therefore has at least linear unweighted defect gain.
+A uniform absolute defect tolerance does not transfer to sublinear
+prefix error. If that particular perturbation argument is to give an
+O(t^sigma) displacement, its tolerance must decrease at least like
+t^(sigma-1). A weighted defect norm could change the conclusion, but
+its weights and uniform bound are a new premise. Exact identities have
+zero defect and avoid this stability cost; they still do not bound a_t.
+
+The lower bound in (13) was stated only as a coordinate-cost fact. It is
+not a counterexample to ordinary mu and not an obstruction to every
+coupled signed bound. It does show why an approximate annihilator or
+floating residual cannot replace exact replay without a paid error law.
+
+5. Fixed divisor constraints cannot defeat the finite-prime adversary
+--------------------------------------------------------------------
+The particular fake chi=delta_1-delta_2 has G_3=1. If U>=3 and G_3 is
+used, it is excluded. If U<=2, it is exactly the ordinary-mu sequence on
+the queried domain, and no local equation there can distinguish it.
+
+There is a stronger and precise obstruction for a fixed collection of
+divisor constraints. Let S be any finite subset of integers >=2. Choose
+a finite prime set P that hits S: every n in S has at least one prime
+divisor belonging to P. Define
+
+ chi_P=*_(p in P)(delta_1-delta_p),
+ Q_P=product_(p in P)p,
+ alpha_P=product_(p in P)(1-1/p)>0.                   (15)
+
+This is a multiplicative sequence, supported on the squarefree divisors
+of Q_P, with unit1, prime values -1 on P, zero at other primes, squareful
+zeros and absolute pointwise values at most1. Its divisor sum is
+
+ (chi_P*One)(n)=product_(p|n,p in P)(1-1).             (16)
+
+Thus G_n(chi_P)=0 for every n in S. It is enough to hit a composite
+constraint with one included prime; all of its prime factors need not
+belong to P. Prime constraints themselves require including that prime.
+This hitting-set description is more precise than saying that every
+new composite relation forces a new prime anchor.
+
+For all t, its prefix magnitude is at most min(t,2^|P|). Thus the
+unconditional envelope |m_t|<=t admits it for every P without enlarging
+a constant. Also the scalar
+envelope with C=2^|P| and sigma>=0 admits it. A smaller specified C is
+admissible only after its actual finite prefix envelope is checked or
+proved. This distinction is essential: the adversary does not establish
+a barrier for every fixed small C. It remains an adversary even if the
+relaxation includes pointwise magnitude, squareful zeros and coprime
+multiplicativity.
+
+Now use the admitted joined source p=3,q=5,r=1,N=15k,y=16k,j=1. As
+proved directly from the source in069,
+
+ kappa(n)=1_(8k,10k](n)-1_(16k,20k](n), d_1=0,
+ K(t)=floor(10k/t)-floor(8k/t)
+                     -floor(20k/t)+floor(16k/t).     (17)
+
+For degree2, use the strict support gate (u+1)(v+1)>20k, let both cuts
+contain Q_P and take 8k>=Q_P. For fixed P, balanced square-root cuts
+satisfy these conditions for all sufficiently large k. All short
+cutoff sequences at chi_P are exactly chi_P, and the two short linear
+terms vanish. Since
+
+ K(t)=-2k/t+e(t), |e(t)|<=4,
+ sum_n chi_P(n)/n=alpha_P,
+
+the complete original polynomial obeys
+
+ |P_2(chi_P)-2k alpha_P^2|<=4*4^|P|.                 (18)
+
+Proof: P_2=-sum_(a,b)chi_P(a)chi_P(b)K(ab). The rank-one part sums to
+2k alpha_P^2. There are 2^|P| choices in each factor, so the bounded
+floor error has at most 4^|P| signed terms. Terms with ab>20k cause no
+problem: the same floor identity and error bound hold for every t.
+
+Every polynomial correction using ONLY G_n for n in S, of any degree
+and with any multipliers, has exactly the same value at chi_P. Thus,
+whenever its registered relaxation admits this fake, every valid robust
+absolute price is at least 2k alpha_P^2-4*4^|P|. This is linear for a
+fixed S and P as k tends to infinity. It is a limitation of the stated
+constraint relaxation, not a lower bound on the actual ordinary-mu row.
+
+In particular, if all constraints through a fixed B are used, take P to
+contain the primes <=B. The same barrier persists once all cuts contain
+Q_P. Fixed arithmetic anchors do not become all-scale signed control
+merely because arbitrary polynomial multipliers are allowed.
+
+This argument also gives a quantitative test for growing sparse scopes.
+At a given scale, any hitting prime set P for the used indices produces
+(18) provided Q_P<=min cuts and 8k>=Q_P. To be useful as a lower bound,
+the error 4*4^|P| must be small compared with k alpha_P^2, and the chosen
+prefix envelope must admit chi_P. None of these conditions may be dropped
+when P grows. The barrier becomes uninformative when the support no
+longer fits the cuts or the specified C excludes the fake. Full constraints
+through U fix the actual table and generally leave no such independent
+fake within that query domain.
+
+For any fixed higher convolution degree d>=3 and cuts containing Q_P,
+the069 derivation similarly gives the nonzero leading response
+
+ (-1)^d*2*alpha_P^d/(d-2)! * k*(log k)^(d-2)
+                 +O_(d,P)(k*(log(2k))^(d-3)).         (19)
+
+Corrections using the same S again leave it unchanged. This statement
+is for fixed d and P. It provides no uniform assertion in growing degree
+or growing prime sets. Degree2 already suffices for the exact obstruction
+(18), without a divisor-asymptotic premise.
+
+6. A finite reciprocal-moment estimate with explicit rank dependencies
+----------------------------------------------------------------------
+Here is a positive use of the divisor equations that is stronger than
+replacing a target by a constant. Define the actual short reciprocal sum
+
+ H_mu(u)=sum_(d<=u)mu(d)/d,   u>=1.
+
+Let T>=u be an integer and suppose a proved or induction-licensed
+Mertens premise is available on the entire finite domain 1<=t<=T:
+
+ |M(t)|<=C t^sigma,    0<=sigma<1, C>=1.              (20)
+
+The divisor identity summed through T is
+
+ 1=sum_(d<=T)mu(d)floor(T/d).                         (21)
+
+Split d<=u and d>u. The short portion is T H_mu(u)+E, |E|<=u because
+|mu(d)|<=1 and the floor error is below1. In the long portion interchange
+the d,m sum. With L=floor(T/(u+1)), it equals
+
+ sum_(m<=L)[M(floor(T/m))-M(u)].                      (22)
+
+By (20), its absolute value is at most
+
+ C T^sigma sum_(m<=L)m^(-sigma)+C L u^sigma
+ <= C T u^(sigma-1)/(1-sigma)+C T u^(sigma-1).
+
+The sum inequality follows by comparison with the integral from0 to L
+of t^(-sigma); it also covers sigma=0. Divide (21) by T to obtain
+
+ |H_mu(u)| <= (u+1)/T
+                +C*(2-sigma)/(1-sigma)*u^(sigma-1).  (23)
+
+No infinite series, prime number theorem or all-scale tail is used in
+this proof. Every arithmetic argument in (21)-(22) is at most T.
+
+Take T=ceil(u^(2-sigma)). Then
+
+ |H_mu(u)|<=L_sigma(C) u^(sigma-1),
+ L_sigma(C)=2+C*(2-sigma)/(1-sigma).                  (24)
+
+Indeed (u+1)/T<=2u^(sigma-1). For rational sigma the integer ceiling
+and all comparisons can be certified by integer powers, just as069
+certifies its cuts. A fully rational upper constant for L_sigma is
+immediate when sigma is rational.
+
+For a scale rank R and u approximately R^theta, the auxiliary rank is
+T approximately R^(theta(2-sigma)). It is strictly smaller than R,
+apart from an explicitly handled finite base interval, if
+
+                    theta(2-sigma)<1.               (25)
+
+Balanced square-root cuts satisfy this for every fixed sigma>0. Their
+auxiliary domain is approximately R^(1-sigma/2), which is larger than
+the original mu-query radius sqrt R but still strictly smaller than R.
+For sigma=1/2 it is R^(3/4). This increase in dependency radius must be
+recorded; it cannot be reported as using only the original short domain.
+Extreme complementary splits may violate (25). At sigma=0 balanced
+cuts are on the boundary and this choice gives no strict reduction.
+
+There is an explicit sufficient base threshold for the balanced case.
+Set u_0=max(2,ceil(2^(1/sigma))). If u>=u_0 then u^sigma>=2, so
+u^(2-sigma)<=u^2/2 and
+
+ ceil(u^(2-sigma))<=ceil(u^2/2)<=u^2-1<=R-1.
+
+Thus R>=u_0^2 suffices. Every smaller R is a finite declared base;
+the much smaller threshold often available is not needed for validity.
+For general u<=R^theta, put gamma=theta(2-sigma)<1. The conditions
+R>=3 and R^(1-gamma)>=2 similarly ensure
+T<=R^gamma+1<=R/2+1<R. These thresholds can be verified by exact integer
+powers for rational exponents. They are not inferred from a floating fit.
+
+Relation (23) is also useful with any other licensed T<R; the price
+contains the explicit u/T term. There is no need to force the particular
+choice in (24) if another domain transfer is cheaper.
+
+A common tempting argument is to write H_mu(u) as minus the infinite
+tail, use an all-scale Mertens bound, and infer O(u^(sigma-1)). Even if
+the vanishing total reciprocal sum is established, that tail argument
+queries prefixes beyond the current scale. It does not establish a
+well-founded strong induction from only smaller ranks. Equations
+(21)-(25) give a finite replacement and identify its actual extra rank.
+
+The premise (20) is still unpaid in the current program. A bound for
+the raw head is not itself (20). One may use (23) conditionally, or in a
+simultaneous induction whose Mertens component has been proved to close.
+The finite derivation must not be presented as having proved that component.
+
+7. Source-specific rank-one extraction and its exact residual
+------------------------------------------------------------
+Return to the same joined source, not a new inverse-filled branch. Let
+g be its coalesced finite step function, supported through D, with
+
+ a_T=g(T)-g(T+1),
+ g(d)=sum_T a_T 1[d<=T],
+ kappa_j(n)=g(jn)-g((j+1)n).
+
+Here a_T denotes the source step coefficient, not the arithmetic prefix
+anchor a_t used in sections1-4. Let R_j=floor(D/j). The degree2 identity
+below requires the strict gate (u+1)(v+1)>R_j. Without this gate the
+long-long convolution residual must be retained; it is not (27).
+
+Let h_(j,A) be the coalesced prefix-step coefficients of kappa_j. Then
+
+ K_j(t)=sum_A h_(j,A)floor(A/t)
+       =b_j/t+e_j(t),
+ b_j=sum_A h_(j,A)A
+    =sum_T a_T[floor(T/j)-floor(T/(j+1))],
+ |e_j(t)|<=V_j:=sum_A |h_(j,A)|.                     (26)
+
+All channels and adjacent-row endpoints are joined before these
+quantities are formed. The identity holds for every positive t, including
+t>R_j; there K_j(t)=0 but b_j/t and e_j(t) still cancel exactly.
+
+For degree2 with cuts u,v the complete exact coefficient is
+
+ c_j=d_j+sum_(a<=u)mu(a)kappa_j(a)
+            +sum_(b<=v)mu(b)kappa_j(b)
+            -b_j H_mu(u)H_mu(v)-E_j(u,v),
+ E_j(u,v)=sum_(a<=u,b<=v)mu(a)mu(b)e_j(ab).            (27)
+
+This extraction keeps a new deterministic center coupled with all
+arithmetic factors. It does not delete pairs with common prime factors,
+repeated factors or factors whose product exceeds R_j. Such deletions
+would change E_j and destroy the exact identity.
+
+On the barrier source (17), b_1=-2k, |e_1|<=4 and the short sums vanish
+whenever both cuts lie below8k. Thus
+
+ c_1=2k H_mu(u)H_mu(v)-E_1(u,v).                      (28)
+
+For balanced cuts u=v=floor(sqrt(20k)), (24) bounds the separable part by
+O(L_sigma(C)^2 k^sigma) under only the finite smaller-rank premises
+through T=ceil(u^(2-sigma)). The constants and bases must be retained.
+This pays the old fake's troublesome rank-one part on actual arithmetic,
+conditionally on a genuine induction-licensed premise.
+
+The remainder is still a bilinear ordinary-mu sum against a bounded
+oscillating floor kernel. The direct absolute bound is
+
+                    |E_1(u,v)|<=4uv,                 (29)
+
+which is linear for balanced cuts. No claim of sublinear growth follows
+from bounded e_1. Under the premise that the separable piece has already
+been paid at O(k^sigma), an O(k^sigma) bound for E_1 and the same bound
+for c_1 imply each other up to the paid main term, by (28). In this
+sense E_1 is a precisely identified arithmetic leaf, not an automatically
+cheaper copy of the original problem.
+
+The correction language can represent this extraction. H_x(u), viewed
+as a polynomial in the prefixes, is linear. For full constraints through
+u, H_x(u)-H_mu(u) is a linear combination of G_n. The difference
+
+ H_x(u)H_x(v)-H_mu(u)H_mu(v)
+
+is therefore in the divisor ideal with affine-linear multipliers, by
+factoring one moment difference at a time. Replacing the rank-one product
+by its exact finite value is sound. Calling the value paid requires a
+bound such as (23), with the declared larger auxiliary domain, rather
+than mere substitution. Correcting E_j fully to its constant value is
+still only target reconstruction unless its price has a separate proof.
+
+8. A reusable conditional head cost for the separable bilinear part
+------------------------------------------------------------------
+There is a stronger aggregate cost than paying each b_j crudely. Define
+
+                  M1=sum_T |a_T|T.
+
+For 0<sigma<1 put beta=1-sigma. Quotient counting gives the exact identity
+and elementary inequality
+
+ sum_(j>=1) j^beta [floor(T/j)-floor(T/(j+1))]
+   =sum_(n<=T)floor(T/n)^beta
+   <=T^beta sum_(n<=T)n^(-beta)
+   <=T/(1-beta)=T/sigma.                             (30)
+
+The first identity assigns n to its quotient j=floor(T/n). The floor
+differences are nonnegative; only finitely many j contribute. Using
+(26), taking absolute a_T only after the source join, and restricting
+to any head gives
+
+             sum_(j in head)j^(1-sigma)|b_j|<=M1/sigma. (31)
+
+Let R_j=floor(D/j), and take u_j=v_j=floor(sqrt(R_j)). For rows with
+R_j>=4, u_j^2>=R_j/4 and R_j>=D/(2j). Since sigma-1<0, (24) implies
+
+ |b_j H_mu(u_j)^2|
+ <=8^(1-sigma)L_sigma(C)^2
+                    D^(sigma-1)j^(1-sigma)|b_j|.
+
+Summing and using (31) proves the explicit price
+
+ sum_(j in head)|b_j H_mu(u_j)^2|
+ <=[8^(1-sigma)/sigma] L_sigma(C)^2 D^(sigma-1)M1.    (32)
+
+The finitely small-radius rows are licensed bases or priced separately.
+For all remaining rows, every use of (24) requires the actual domain
+T_j=ceil(u_j^(2-sigma)) and its strictly smaller-rank certificate.
+One common C must cover all these Mertens premises.
+
+For fixed p, D has order N. The admitted source's previously proved
+M1=O(N log(2N)) envelope then turns (32) into
+
+                   O_sigma(L_sigma(C)^2 N^sigma log(2N)). (33)
+
+At sigma=1/2 this is a square-root head price with a logarithmic factor
+for THIS SEPARABLE PIECE. It is a uniform algebraic cost rule rather than
+a finite target evaluation. Its proof uses the same source step measure
+M1 already paid in069, plus the explicit finite Mertens premise (20).
+No numerical coefficient array is needed for (30)-(33).
+
+Here is a direct same-source proof of that M1 envelope, included so the
+cost does not depend on a fitted prior result. Write
+
+ Z_(b,v)=floor(vN/b),    (v,c)=(4,1),(2,-3),(1,2).
+
+The floor atom floor(vN/(bd)) equals floor(Z_(b,v)/d). Its decreasing
+step differences have weighted total
+
+ sum_(T>=1) T[floor(Z/T)-floor(Z/(T+1))]
+    =sum_(d<=Z)floor(Z/d)
+    <=Z(1+log(max(1,Z))).                            (33a)
+
+This is finite summation by parts followed by the harmonic bound.
+For F(d)=W_p(d)-rW_q(d), g(d)=-1[d>y]F(d). The tail cutoff introduces
+only the step a_y=F(y+1); all steps at T>y are negatives of steps of F,
+and those at T<y are zero. Write x=N/(bd)=m+f with 0<=f<1. The integer
+part cancels in W_b, leaving floor(4f)-3floor(2f), whose values on the
+four quarter intervals are 0,1,-1,0. Thus |W_b|<=1 and |F|<=1+r<=2.
+The cutoff step costs at most2y. Joining may reduce the total; a safe
+bound follows from (33a):
+
+ M1<=2y+sum_(v,c)|c|[Z_(p,v)H_(Z_(p,v))
+                                      +rZ_(q,v)H_(Z_(q,v))]
+    <=2D+12N(1/p+r/q)(1+log(max(1,D))),              (33b)
+
+where H_0 is interpreted as0 and H_Z<=1+log Z for Z>=1.
+The factor12 is 1*4+3*2+2*1. This is an unconditional bound for the
+same ordinary source for every allowed y and endpoint r. For fixed p,q
+it is O(N log(2N)), with an explicit uniform constant. Substituting
+(33b) into (32) proves the same-source claim without numerical data.
+
+The short linear sums in (27) are another obligation. Their unconditional
+absolute head price for balanced cuts is O(D^(1/2)H^(1/2)); for H of
+order sqrt N this is O(N^(3/4)), not square root. A useful source-specific
+exception is
+
+                    (j+1)u_j<=y.                    (34)
+
+Then g(ja)=g((j+1)a)=0 for every a<=u_j, so both short sums vanish
+identically. For all j<=H, the sufficient common condition
+y>=2sqrt(DH) implies (34), since (j+1)sqrt(D/j)<=2sqrt(Dj).
+This is available when y is sufficiently large relative to that head;
+it is not a premise for every allowed source prefix. In general those
+short terms require their own bound or a higher-degree construction.
+The069 cofinal-degree estimate pays only the original subset-size-one
+terms; it must not be confused with a price for every linear term created
+after extracting the higher-degree units.
+
+The direct floor atoms remain paid independently. For a full atom
+floor(Z/d), ordinary-mu inversion at row n gives
+sum_(a<=Z/n)mu(a)floor(Z/(na))=1[n<=Z], by the divisor identity.
+Its adjacent-row difference is1[n=Z]. Thus the joined direct coefficients
+have absolute total at most(1+3+2)(1+r)<=12, with possible reductions
+after coalescing equal Z. They add this fixed paid mass to any head
+price; none of the conditional moment arguments changes them.
+
+The last part of (27), the sum of |E_j| over the head or an appropriate
+coupled signed energy, remains unpaid. Its absolute price
+sum_j V_j u_j^2 does not inherit (32). The quotient-counting argument
+prices b_j, not the oscillating signed remainder. A useful next theorem
+would be an ordinary-mu estimate for this explicit remainder family,
+with its source parameters, ranks and norm transfer all stated.
+
+9. What local corrections might genuinely discover
+--------------------------------------------------
+A credible scalable correction should reveal a bounded-cost quotient
+representative whose coefficients satisfy a structural law. Two examples
+of useful discoveries would be a source-bound sparse multiplier rule
+that removes a finite collection of low-rank separable moments with
+uniformly priced moment lemmas, or a signed floor-remainder/energy rule
+that closes with a norm decrease. A repeated triangular substitution
+that produces the row constant is neither of these cost laws.
+
+For the bilinear language, the hierarchy suggested by (26)-(33) is:
+
+  * retain source step coefficients and their paid M1 envelope;
+  * extract and bound reciprocal moments using the finite auxiliary
+    divisor domain, with the rank increase from u to T made explicit;
+  * keep the oscillating remainder as a named arithmetic state;
+  * prove its signed bound or transfer, together with all short terms;
+  * close the common Mertens/head invariant and only then use the result
+    as an all-scale law.
+
+This is a proposal for theorem discovery, not an assertion that the
+last two steps can be completed by the present grammar. In particular,
+e_j(ab) depends on horizons of order R_j through A. Its arithmetic
+factor queries are short, but its geometric oscillations are at the
+current rank. A lemma for E_j is not an instance of the original source
+at a smaller N merely because a,b<=sqrt(R_j).
+
+A concrete extension of the detector grammar could register (26) as a
+kernel operator with exactly replayed b_j and e_j, and register (23) as
+a supplied pricing operator with inputs (u,T,sigma,C). The checker would
+reconstruct (21)-(22), check T>=u and T<R or a licensed base, and expose
+every required M(t) premise through T. The detector could choose T or
+balanced cuts within these gates, combine the resulting moment prices,
+and leave an explicit E_j node. It could then synthesize sparse divisor
+multipliers for that remainder, instead of reporting its target-valued
+constant as a general bound. Formula (32), with certificate (33b), is a
+supplied aggregate price operator for the separable nodes. This is a
+reviewer-proved backend/next feature; the present analytical proof was
+not autonomously discovered by the detector.
+
+The parent reports that070's current finite search prices sparse local
+corrections using |M(s)|<=s and retains conditional C-degree prices, with
+scientific divisor domain T=U and an API permitting explicitly declared
+T>=U. This review has not inspected that implementation or its results.
+Its local T=U scope must not inherit (24): that reciprocal estimate
+generally invokes M arguments beyond U. An extension using the proposed
+operator would add those premises, rank gates and prices explicitly.
+The unconditional envelope |M(t)|<=t corresponds to sigma=1 and does
+not satisfy the sigma<1 reciprocal decay proof. Direct finite moment
+evaluation at T=U remains exact but does not supply the missing rate.
+
+Higher-degree constructions bring higher ordered-divisor kernels. Their
+large-scale main terms involve reciprocal-logarithmic moments and
+products of them, with coefficients and constants depending on degree.
+It would be reasonable to extract such moments and search coupled
+corrections. No uniform higher-degree cost is established here. The
+number of subset terms, powers of the invariant constant, logarithmic
+degrees, coefficient height and growing-degree dependence must all be
+charged before that idea supplies an epsilon-cofinal all-scale theorem.
+
+Full local constraints are useful as exact replay and as a diagnostic
+upper limit: the finite problem can be solved completely. Partial or
+structured constraints are useful for testing which arithmetic fact
+removes a robust-price barrier. Neither use permits automatic promotion
+from finite optimization to uniform cancellation.
+
+10. Rank and invariant closure: exact requirements
+--------------------------------------------------
+A rank certificate must distinguish three different horizons:
+
+  R: the original source/divisor geometry horizon;
+  U: the arithmetic argument radius of the support-reduced polynomial;
+  T: any auxiliary arithmetic domain used by its pricing lemmas.
+
+The identity may have U<R while the price has T>=R, which invalidates a
+claimed strong induction. The finite reciprocal rule provides one valid
+way to keep T<R, but only with (25), the stated bases and the licensed
+Mertens family. Coefficient constants can also hide horizon-R targets;
+calling them geometry does not remove their arithmetic growth obligation.
+
+A simultaneous induction must list all state families: Mertens prefixes,
+raw head norms, the source endpoints and all admitted prefixes/cutoffs,
+reciprocal moments if separately maintained, signed remainders or energies,
+and any transfer to the filled core. Each leaf is either a paid base,
+a proved uniform lemma, or a strictly smaller-rank instance of an
+explicitly included family. Unlisted auxiliary kernels are not licensed.
+
+For a one-constant scalar envelope, a sufficient normalized closure has
+the form
+
+ price_R(C)<=A+sum_(d=1)^D B_d C^d,
+ A,B_d>=0 independent of R,
+ C>=A+sum_d B_d C^d,                                 (35)
+
+with the same C covering every base and every parameter instance.
+Logarithmic or epsilon losses can be part of the normalization but must
+be fixed before the induction. Finite empirical ratios do not prove the
+uniform coefficients in (35).
+
+Even the positive partial law (32) has L_sigma(C)^2 and therefore a
+quadratic dependence on C. It is not a linear contraction. For a
+quadratic right side A+B_1 C+B_2 C^2 with A>0 and B_2>0, feasibility
+requires 1-B_1>0, discriminant (1-B_1)^2-4AB_2>=0, and a base-case
+constant in the interval between the roots. Increasing C arbitrarily
+does not fix failure. Several auxiliary constants require a vector
+invariant with simultaneous feasible inequalities, not several
+unrelated choices made after seeing finite outcomes.
+
+The correction multipliers themselves may raise degree. If P has degree
+d and a multiplier has degree r, its product with G_n has degree at most
+r+1. Price closure uses the actual collected degrees, not the initial
+support-reduction degree. Multipliers with index support outside the
+registered U extend the arithmetic domain even though their products
+vanish at actual mu. The domain of every symbol must be reported.
+
+11. Exact certificates, scopes and permissible conclusions
+----------------------------------------------------------
+An exact finite correction certificate should state the original complete
+joined polynomial P, every multiplier A_n, its used divisor index n,
+the fixed conventions m_0=0,m_1=1, and the collected corrected polynomial
+Q. A checker can verify the literal rational identity
+
+                       Q-P=sum_n A_n G_n.            (36)
+
+No actual target evaluation is needed to replay (36). The fact G_n(M)=0
+is the separately proved ordinary-mu rule. Noncoprime products and unit
+substitutions must agree between both sides, and absent monomials mean
+zero coefficients. A bound certificate then needs its own exact box or
+constraint domain and rational price enclosure. It cannot borrow a
+finite actual envelope as a uniform premise.
+
+If the search also uses pointwise mu identities, multiplicativity,
+squareful zeros, prime values, interval bounds or source energies, list
+them as additional rules with their own domains. They are not encoded
+by an arbitrary strict subset of the G_n. A correction that is valid
+modulo a larger ideal is not certified by (36) with a smaller list.
+
+Every reported optimum must include the allowed multiplier monomials,
+coefficient/rational limits, degree, selected divisor indices, search
+method and objective. Exact feasible prices remain useful even when
+optimality is not certified. Candidate comparison must preserve the
+full C-price if a later invariant uses C other than the selection value.
+
+The full-domain constant representative has a truthful label: an exact
+finite target encoded by divisor reconstruction. It can be evaluated or
+used as a finite base. It is an unpaid growth leaf until there is a
+uniform estimate. That remains true when the synthesizer never receives
+mu signs or an externally supplied target, because the full constraints
+compute them internally.
+
+Work and information also need separate labels. The sign-query radius
+can shrink while geometry still reaches R, while the output is large,
+and while the multiplier coefficient heights grow. Finite arithmetic
+complexity bounds are not cancellation exponents. A proof based on
+growing constraint scopes must specify their source-independent law and
+charge all domains, coefficient heights, base data and representation
+costs; it must not merely store one new exact target per scale.
+
+12. Disposition
+---------------
+The proposed correction language is exact and potentially useful. It is
+strictly stronger than a scalar-prefix relaxation when it includes a
+divisor equation that the scalar fake violates. The full language is
+also mathematically complete for every finite prefix target, with no
+degree obstacle to replacing that target by a constant. Completeness
+of finite determination is not all-scale signed control.
+
+The new proved obstruction is that any fixed finite set of divisor
+constraints leaves a finite-prime fake, and every multiplier correction
+using those constraints preserves its linear joined-source response
+whenever the stated envelope and support conditions hold. The precise
+hitting-set and growing-scope qualifications prevent overclaiming.
+
+The new positive cost law is (23)-(25), a finite smaller-rank reciprocal
+moment estimate, and its same-source aggregate application (30)-(33).
+It pays a separable bilinear contribution at the desired conditional
+exponent, with explicit C powers, rank expansion and source M1 cost.
+It leaves the signed floor remainder, generally the short sums, and
+closure of the Mertens/head invariant as real unpaid obligations.
+
+A stage070 finite improvement would therefore be mathematically
+interesting as a discovered quotient representative and exact robust
+certificate. It becomes a reusable bound mechanism only when a uniform
+source-specific multiplier/cost rule, residual theorem and well-founded
+invariant are proved. No scientific070 result is used in this conclusion.

@@ -1,0 +1,61 @@
+{
+  "RH_proved": false,
+  "calibration_only": true,
+  "entrypoint": "run_detector.py",
+  "example_config": "detector_resource_search.json",
+  "final_seconds": 27.587326902983477,
+  "final_statuses": [
+    "finite_certificate",
+    "finite_certificate"
+  ],
+  "global_bound_proved": false,
+  "independent_audit": "detector-performance-results/integrated-search-math-audit-002.json",
+  "matched_output_benchmarks": {
+    "cache_miss_and_two_hits_seconds": [
+      3.129731498003821,
+      0.05724913199082948,
+      0.06168351801170502
+    ],
+    "distinct_scale_speedup": 1.3171112222639179,
+    "distinct_scales_1_2_3_5_workers1_vs2_seconds": [
+      8.228225188999204,
+      6.247175675001927
+    ],
+    "equal_work_4jobs_workers1_vs4_seconds": [
+      7.2659382359997835,
+      1.8922727139870403
+    ],
+    "exact_digest_equality": true,
+    "peak_job_RSS_KiB_max": 113664
+  },
+  "matrix": {
+    "csc_bytes": 3031144,
+    "dense_float64_equivalent_bytes": 15072288,
+    "scope": "matrix arrays only, not total process or solver memory"
+  },
+  "observed_completion_threads": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "peak_worker_rss_kib": 606124,
+  "pool_memory_budget_bytes": 2147483648,
+  "previous_publication_files_verified_unchanged": 259,
+  "primary_run": "detector-performance-results/integrated-search-002",
+  "schema": 1,
+  "tested_scope": "fixed factor scalar cone; Grams zero; historical full-Gram route preserved",
+  "tests": {
+    "all_passed": true,
+    "distinct_cases": 31,
+    "scope": "combined initial suites and affected-module reruns; thread fix and new independent audit covered"
+  },
+  "thread_correction": "HiGHS native threads=1/parallel=False required; older metadata measured configured environment rather than native thread count",
+  "training_seconds": 28.42621608200716,
+  "training_statuses": [
+    "no_certificate_found",
+    "finite_certificate"
+  ],
+  "worker_memory_bytes": 1073741824,
+  "workers": 2
+}

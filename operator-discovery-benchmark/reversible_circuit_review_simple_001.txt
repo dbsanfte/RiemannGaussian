@@ -1,0 +1,352 @@
+Reversible circuit proof attempt: selected IDs11,12,28,29
+
+Scope and result
+
+These IDs are from reversible-circuit-results/pilot-001/proof_queue.json,
+not from either older potential study. Only their program/certificate/obligation
+payloads and the reversible circuit contract/review were read. No discovery,
+training or final numerical responses, fitted constants, source tables, tests,
+hashes or frozen-file edits were used. This new memo is the sole owned artifact.
+
+The attempt does not close a cofinal transformed moment estimate. It proves
+several concrete reductions: a quadratic-character Euler identity for11/12,
+exact initial phase aliases for28, a complete phase-flip-bank identity for28/29,
+and an opposite-prime-phase compression with critical-weight bounded inverse.
+An interposed sign prevents that compression through an explicit divisor
+defect. These give generic grammar/proof hooks. A shifted-zeta pole argument
+shows why an Euler factor applied to M cannot simply cancel the original
+Möbius singularities. A finite-prime countermodel makes the source-information
+boundary precise. No identity below is promoted to an unproved estimate.
+
+moment_estimate_proved = false
+global_bound_proved = false
+RH_proved = false
+
+Programs, full target, and recovery
+
+Let M(n)=sum_{j<=n} mu(j), M(0)=0. For a fixed unit prime source chi define
+
+  a_alpha,chi(p^k)=chi(p)^k (alpha)_k/k!, a(1)=1,
+  (T_alpha,chi f)(n)=sum_{d|n} a_alpha,chi(d)f(n/d).
+
+Here (alpha)_k=alpha(alpha+1)...(alpha+k-1). All positive divisors occur; the
+input is M itself, not mu followed by prefix summation. Set chi_5(p)=-1 for
+p mod5 in{1,4} and +1 otherwise. The four selected outputs are
+
+  rho11=T_-1/3,chi5 M,
+  rho12=T_-1/6,chi5 M,
+  rho28=T_-1/6,chi5 (S_6 M),
+    S_6(n)=-1 iff mu(floor(n^(1/6)))<0, otherwise +1,
+  rho29=T_1/6,eta (P M),
+    P(n)=(-1)^floor(n^(2/3)),
+    eta(p)=-1 iff mu(floor(sqrt(p)))<0, otherwise +1.
+
+Every prime coefficient and phase is fixed using the original actual source;
+it does not change with intermediate circuit values, X or q. Define the
+complete moments D_i(X)=X^-2 sum_{X<=n<2X} rho_i(n)^2. All mixed terms belong
+to these squares. At n=1, rho11=rho12=rho28=1 and rho29=-1, so all initial
+moments equal1. The stated gate requires one fixed circuit and cofinally many
+integers q with finite constants independent of every dyadic X>=32; the full
+finite head remains in inverse recovery. A finite set of q does not suffice.
+
+All four certificates have recovery_power1: for sigma=1/2+epsilon,
+ ||M||_{sigma,T}<=(1+1/epsilon)||rho_i||_{sigma,T}.
+The norm is associated with sum_{n<=T}|f(n)|^2/n^(2sigma+1). Squared recovery
+uses (1+1/epsilon)^2. Source phases are unit isometries and the inverse uses
+the same fixed prime source and phases, in reverse order. These facts prove
+a conditional moment-to-original-target implication, not the moment premise.
+
+1. Single kernels11/12: exact Euler reduction and prime-power effects
+
+Let lambda be the real quadratic Dirichlet character modulo5: lambda=+1 on
+1,4, -1 on2,3 and0 on multiples of5. Thus chi5(p)=-lambda(p) for p!=5,
+whereas chi5(5)=+1. For Re(s)>1 the absolutely convergent kernel series is
+
+  A_alpha(s)=sum_n a_alpha,chi5(n)n^-s
+    =zeta(2s)^alpha L(s,lambda)^(-alpha)(1+5^-s)^alpha.   (1)
+
+Proof: for p!=5 use
+ (1+lambda(p)p^-s)=(1-p^-2s)/(1-lambda(p)p^-s),
+and retain the exceptional p=5 factor (1-5^-s)^(-alpha). The ratio of the
+missing square Euler factor and that local factor is (1+5^-s)^alpha. Powers
+in (1) are defined by the convergent Euler logarithms; no choice of branch
+across an unknown L-function zero is assumed.
+
+For alpha=-beta, beta=1/3 or1/6, this is
+ A_-beta=zeta(2s)^(-beta)L(s,lambda)^beta(1+5^-s)^(-beta).
+The p=5 correction cannot be discarded. This character identity is about
+the kernel. It does not turn the transform of M into a transform of mu.
+
+For every prime and k>=1,
+
+  a_-beta,chi(p^k)=-[beta/k] chi(p)^k
+                    product_{j=1}^{k-1}(1-beta/j).       (2)
+
+In particular a(p)=-beta chi(p), a(p^2)=-beta(1-beta)/2,
+a(p^3)=-beta(1-beta)(2-beta)chi(p)/6. Squares have a negative coefficient
+independent of the prime phase; odd powers retain it. The magnitude bound
+|a(p^k)|<=beta/k follows directly from the displayed product. On primes,
+residues1,4 give coefficient+beta, residues2,3 and the exceptional prime5
+give -beta. This is not a universal negative damping of the prefix.
+
+The exact output at a prime and at its square is
+
+  rho_beta(p)=M(p)-beta chi(p),
+  rho_beta(p^2)=M(p^2)-beta chi(p)M(p)-beta(1-beta)/2.   (3)
+
+Thus prime-power terms already retain a fresh full M prefix and lower-prefix
+correlations. Moreover T_-1/3,chi5=(T_-1/6,chi5)^2 by Euler convolution.
+IDs11 and12 are distinct orders in the same semigroup, not distinct unknown
+prime sources. No ordering of their signed moments follows from that identity.
+
+2. Why an Euler reduction cannot directly cancel the Mertens obstruction
+
+In Re(s)>2, absolute convergence gives
+
+  F_M(s)=sum_n M(n)n^-s
+        =sum_k mu(k)sum_{n>=k}n^-s,
+  sum_n rho_beta(n)n^-s=A_-beta(s)F_M(s).             (4)
+
+The tail of n^-s has the trapezoidal/Euler summation expansion
+ sum_{n>=k}n^-s=k^(1-s)/(s-1)+(1/2)k^-s+R_s(k),
+where R_s(k)=O_s(k^(-Re(s)-1)), locally uniformly for Re(s)>1. One can
+obtain this error by bounding each unit-interval trapezoidal error using
+the second derivative of t^-s and summing. Consequently
+
+  F_M(s)=1/[(s-1)zeta(s-1)]+1/[2zeta(s)]+G(s),       (5)
+
+initially Re(s)>2, with G holomorphic on Re(s)>1 by absolute convergence
+of sum mu(k)R_s(k). Formula (5) gives a meromorphic continuation there.
+If zeta has a zero z with Re(z)>1/2, the first term has a genuine pole at
+s=1+z. The other two terms are holomorphic there, so cannot cancel its pole.
+
+Every fixed unit-source kernel A_alpha is holomorphic and NONZERO on Re(s)>1
+by its absolutely convergent Euler product. Thus the pole in (5) survives
+both kernels11 and12. In particular the tempting zeta(2s)^(-beta) factor
+does not cancel a pole at1+z: it and all other kernel factors are nonzero
+there. Confusing (4) with A(s)/zeta(s) loses the prefix and shifts the analytic
+problem by one whole unit.
+
+If cofinal moments for rho held, weighted L2 and Cauchy-Schwarz would make
+its ordinary Dirichlet series holomorphic on Re(s)>3/2: choose sigma>1/2
+with Re(s)>sigma+1. The surviving pole at1+z would be impossible. This is
+a concrete obstruction to a naive Euler-factor cancellation proof, not an
+assumption that an off-line zero exists and not a proof of RH. Phases28/29
+change F_M to the series of S(n)M(n); the explicit formula (5) is not asserted
+for those modulated input series. Their inverse-recovery obstruction remains.
+
+3. Modulation28: initial aliases and the complete phase-flip split
+
+The source phase S_6 is exactly+1 for1<=n<2^6 because its root index is1.
+It is -1 for2^6<=n<4^6: the root indices2 and3 both have negative Mobius
+value. At4^6 the root index4 is nonsquarefree, so the source_sign becomes+1.
+These are exact phase-domain facts, not a source evaluation or a response
+comparison. On1<=n<64 every divisor input lies in the first band; hence
+
+  rho28(n)=rho12(n), n<64.                            (6)
+
+For64<=n<128, only the diagonal input can be in the negative band, giving
+ rho28(n)=rho12(n)-2M(n). If B(n)=sum_{d|n,d>1}a_-1/6,chi5(d)M(n/d), then
+
+  rho28(n)=-M(n)+B(n), rho12(n)=M(n)+B(n),
+  rho28(n)^2-rho12(n)^2=-4M(n)B(n).                  (7)
+
+This is a full signed cross-term reduction at the first phase regime. It
+does not assert a nonzero numerical difference: M or B may vanish. Discarding
+the proper-divisor channel would falsely conclude that the phase has no
+moment effect. Later intervals require all admitted phase-flip divisors.
+
+Here is the global identity, valid for any real unit phase S, any divisor
+kernel a, and any real input f. Define
+
+  B_same(n)=sum_{d|n,S(n/d)=S(n)}a(d)f(n/d),
+  B_flip(n)=sum_{d|n,S(n/d)!=S(n)}a(d)f(n/d).
+
+Then T f=B_same+B_flip, S(n)T(S f)(n)=B_same-B_flip, and exactly
+
+  [T(S f)(n)]^2-[T f(n)]^2=-4B_same(n)B_flip(n).     (8)
+
+The diagonal belongs to B_same, so original target information is retained.
+This isolates the complete signed modulation mechanism, with no independently
+dropped terms. The comparison of block moments is the normalized sum of (8)
+on the entire fresh block; it is not a comparison of individual components.
+For complex f, replace the product by its real part with conjugation.
+
+For28, S_6 is not completely multiplicative: S_6(2)=+1 but S_6(2^6)=-1.
+It cannot be absorbed into coefficients by the completely-multiplicative
+phase conjugation law. A slowly changing phase only defines long bands in
+which (8) may vanish on some inputs; it does not uniformly reduce B_flip.
+Proper divisors n/d cross earlier bands even when n lies deep inside one.
+
+4. Modulation29: two phase scales, not a standard character
+
+Write gamma=1/6 and eta(p)=source_sign(mu(floor(sqrt(p)))). Prime phase
+eta is constant on each prime interval r^2<=p<(r+1)^2, with its value set
+by the original mu(r). It is not the universal prime-domain value mu(p)=-1.
+A zero mu(r) gives+1 by the exact source_sign convention, not a zero mask.
+
+The positive-order prime-power kernel is
+
+  a_gamma,eta(p^k)=[gamma/k]eta(p)^k
+                    product_{j=1}^{k-1}(1+gamma/j),    (9)
+
+and its Euler product on Re(s)>1 can be written
+
+  A_29(s)=zeta(s)^gamma
+     product_{p:eta(p)=-1}[(1-p^-s)/(1+p^-s)]^gamma.   (10)
+
+The complete prime set is essential. No residue character or classical
+Dirichlet L-function reduction for that set is proved. In particular an
+asymptotic distribution or independent-sign law for these source-defined
+prime intervals cannot be assumed.
+
+The output phase P(n)=(-1)^floor(n^(2/3)) has exact band endpoints
+h_k=min{n>=1:n^2>=k^3}; its kth band is h_k<=n<h_{k+1}. It is -1 on n=1,2
+and +1 at n=3; the kernel prime phases on all inputs<=2 are+1. Thus29 has
+an initial norm alias there with the unmodulated positive-order constant
+prime kernel. Beyond that interval the global identity (8) applies with
+T=T_gamma,eta and S=P, preserving both phase scales and their mixed terms.
+
+At a prime and its square the exact output is
+
+  rho29(p)=P(p)M(p)-gamma eta(p),
+  rho29(p^2)=P(p^2)M(p^2)+gamma eta(p)P(p)M(p)
+                                      -gamma(gamma+1)/2.  (11)
+
+The whole-source prefix remains on the diagonal. Nonmultiplicativity is
+already exact at prime powers: P(2)=-1 while P(2^3)=+1. On every cube m^3,
+P(m^3)=(-1)^m. Thus for odd m the perfect-cube divisor subchannel d=e^3
+has no phase flip (both m and m/e are odd); its complements must still be
+kept. This is a local algebraic channel identity, not an all-scale moment
+estimate for a thin cube subsequence.
+
+5. Opposite-prime-phase companion: a square-supported compression
+
+For ANY unit prime source chi and ANY admissible alpha,
+
+  T_alpha,chi T_alpha,-chi=K_alpha,
+  (K_alpha f)(n)=sum_{e^2|n}a_alpha,1(e)f(n/e^2).       (12)
+
+Proof: the prime-power generating product is
+ (1-chi(p)x)^(-alpha)(1+chi(p)x)^(-alpha)=(1-x^2)^(-alpha).
+All nonsquare coefficients vanish. Every remaining coefficient is independent
+of chi. This is an exact compression/alias certificate: the pair ERASES its
+prime-phase information, not a new source-specific prime control mechanism.
+The inverse is K_-alpha, valid on every finite initial interval with diagonal1.
+
+If r=ceil(|alpha|), divisor-supported square dilation gives
+
+  ||K_alpha||,||K_alpha^-1||<=zeta(2sigma+1)^r
+     =zeta(2+2epsilon)^r for sigma=1/2+epsilon.        (13)
+
+This bound remains finite at the critical weight sigma=1/2; zeta(2)<=2 by
+the elementary integral bound. Squared energy recovery uses the square of
+(13). This is stronger uniform recovery than the generic two-convolution
+bound, but it still preserves M's unknown energy class. It does not prove
+that a compressed output has subpower moments.
+
+In particular negative residue kernels can be factored as
+ T_-beta,chi5=K_-beta T_beta,-chi5. The source -chi5 equals lambda on primes
+other than5 and equals-1 at5. Thus the negative-order single observers are
+critically bounded square-filter modifications of a positive fractional
+quadratic-character kernel with its exceptional local5 factor. Keeping this
+factorization does not justify dropping either channel or its inverse cost.
+
+6. Interposing a sign: exact defect that keeps prime interactions
+
+The collapse in (12) is prevented in general by an intervening sign. For a
+fixed unit phase S define U=T_alpha,chi S T_alpha,-chi f. Then exactly
+
+  U=S K_alpha f+D,
+  D=[T_alpha,chi,S]T_alpha,-chi f,
+  [T_alpha,chi,S]g(n)
+      =sum_{d|n}a_alpha,chi(d)[S(n/d)-S(n)]g(n/d).     (14)
+
+Equivalently the coefficient multiplying f(n/h) in D is
+
+  sum_{a|h}a_alpha,chi(a)a_alpha,-chi(h/a)
+                              [S(n/a)-S(n)].        (15)
+
+For a prime divisor h=p this is alpha chi(p)[S(n/p)-S(n)]. Therefore
+nonsquare prime interactions survive precisely on phase-flip domains, with
+the prime phase still present. At n=p the defect is that coefficient times
+f(1); for actual M the diagonal remains S(p)M(p). This is an exact structural
+mechanism and not a lower bound on its numerical effect.
+
+The complete observed square is
+ |K_alpha f|^2+2Re(S K_alpha f conjugate(D))+|D|^2.
+The new defect square AND its mixed term must be estimated. Keeping one full
+interleaved circuit preserves a proved inverse: two convolutions give generic
+norm recovery (1+1/epsilon)^(2r), squared recovery (1+1/epsilon)^(4r).
+The improved critical square-filter bound alone does not cover the defect.
+
+If S is completely multiplicative, (14) can instead fold into Euler kernels:
+ U=S T_alpha,chi*S T_alpha,-chi f. At primes with S(p)=+1 the local product
+is square-supported; at primes with S(p)=-1 it is (1+chi(p)x)^(-2alpha).
+Thus even that case may retain a prime subset, but is an Euler compression
+rather than a genuinely output-dependent phase interaction. Phases28/29 are
+not completely multiplicative, as the explicit prime-power checks show.
+
+These identities suggest a generic detector/generator hook: certify opposite
+prime-source pairs as square compression when adjacent, and when separated
+by a unit phase record (15), phase-flip domains and the full defect cross term.
+They do not license hardcoding candidate64 from the older study, a new ranking,
+or assuming that a larger source footprint has analytic advantage.
+
+7. Source-specific information needed; a precise broad-class obstruction
+
+The inverse theorem itself excludes a source-independent moment proof. For
+the source one, M_one(n)=n, and every fixed admissible circuit binds its phases
+to that same source. If its output had cofinal subpower moments, inverse
+recovery would give H_sigma(n)<infinity for every sigma>1/2. But
+ H_sigma(n)=sum_n n^(1-2sigma) diverges for1/2<sigma<=1. No circuit or added
+nonnegative channel can evade that retained target. This is not a counterexample
+to actual mu; it identifies the necessity of using its global sign information.
+
+The obstruction can respect all squarefree, coprime and even-index laws and
+any finite actual-source calibration. For finite primes P containing2 set
+ f_P(p)=-1 on P,+1 outside P, extend multiplicatively on squarefree integers
+and set it0 otherwise. Then f_P^2 is the actual squarefree indicator,
+f_P(2n)=-1_{n odd}f_P(n), and f_P agrees with mu on every P-smooth integer.
+Taking P to include all primes<=H gives exact agreement on every source query
+needed by any of these circuits through H; all phase and output values there
+then agree as well. This is a symbolic statement, not a new finite evaluation.
+
+Nevertheless the prefix has positive mean. If D=product_P p, elementary
+squarefree counting gives
+ Q_D(T)=#{m<=T:m squarefree,gcd(m,D)=1}
+       =h_D Z_D T+O_D(sqrt(T)),
+ h_D=product_P(1-1/p), Z_D=product_{p notinP}(1-1/p^2)>0.
+To see this, expand the squarefree indicator as sum_{k^2|m}mu(k); the
+coprimality count is h_D T/k^2+O_D(1), and the square-divisor sum and its tail
+have error O_D(sqrt(T)). Then
+
+  sum_{n<=N}f_P(n)=sum_{d|D}mu(d)Q_D(N/d)
+                  =h_D^2 Z_D N+O_D(sqrt(N)).         (16)
+
+All constants are positive and are not numerically evaluated. Thus its target
+energy grows linearly. For each fixed circuit with f_P-bound phases, inverse
+recovery forbids cofinal output moments. The source_sign laws, prime-power
+identities, finite aliases and coefficient bounds alone therefore cannot
+close the actual-mu claim. The full law mu(p)=-1 for EVERY prime/divisor
+inverse identity is absent from this countermodel; a proof exploiting that
+global law is not ruled out. The existing partial_prime_13 control belongs
+to this finite-P class. Its finite numerical behavior is not used as proof.
+
+8. Final proof boundary
+
+No unknown Mertens energy, RH, sign independence, prime interval distribution
+or finite fitted constant was assumed as an estimate. The selected circuits'
+prime-power formulas retain their fresh full-prefix channel. Their Euler
+compression and phase-flip identities are concrete reductions, and the
+interposed opposite-phase family has a precise defect suitable for structural
+generation. None controls its full signed square on every fresh dyadic block.
+
+One fixed actual-source circuit, its finite head/initial1, complete moments,
+and the same-source inverse recovery remain required for the cofinal gate.
+The next genuine analytic step would be a source-specific bound for the
+phase-conditioned divisor products in (8) or (15), with both channels and
+every complementary divisor retained. If proved, the existing inverse gives
+the original energy and zeta implication. In this attempt only the stated
+identities and broad-class obstructions are proved; all moment/global/RH
+flags remain false.

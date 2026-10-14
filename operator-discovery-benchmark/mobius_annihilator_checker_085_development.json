@@ -1,0 +1,36 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "failed": 0,
+      "output": "test_actual_complete_divisor_identity_unit_and_projection (test_check_mobius_annihilator_085.Tests) ... ok\ntest_empty_bank_factor_and_literal_full_price (test_check_mobius_annihilator_085.Tests) ... ok\ntest_negative_zero_square_strict_improvement_and_mixed_cross (test_check_mobius_annihilator_085.Tests) ... ok\ntest_prospective_resource_power_and_helper_symmetry (test_check_mobius_annihilator_085.Tests) ... ok\ntest_same_outer_source_and_complete_anchored_binding (test_check_mobius_annihilator_085.Tests) ... ok\ntest_schema_symmetry_denominator_and_bank_mutations (test_check_mobius_annihilator_085.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.054s\n\nOK\n",
+      "passed": 6,
+      "reason": "Initial new independent suite.",
+      "status": "PASS",
+      "tests": 6
+    },
+    {
+      "attempt": 2,
+      "failed": 0,
+      "output": "test_schema_symmetry_denominator_and_bank_mutations (test_check_mobius_annihilator_085.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.013s\n\nOK\n",
+      "passed": 1,
+      "reason": "Added symmetric signed coefficient tampering case; affected test only.",
+      "status": "PASS",
+      "tests": 1
+    }
+  ],
+  "distinct_tests": 6,
+  "failed_executions": 0,
+  "hashes_used": false,
+  "latest_outcome": "PASS",
+  "old_tests_run": false,
+  "passed_executions": 7,
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "test_executions": 7,
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false,
+  "zero_identity_rule_verified_for_all_u": true
+}

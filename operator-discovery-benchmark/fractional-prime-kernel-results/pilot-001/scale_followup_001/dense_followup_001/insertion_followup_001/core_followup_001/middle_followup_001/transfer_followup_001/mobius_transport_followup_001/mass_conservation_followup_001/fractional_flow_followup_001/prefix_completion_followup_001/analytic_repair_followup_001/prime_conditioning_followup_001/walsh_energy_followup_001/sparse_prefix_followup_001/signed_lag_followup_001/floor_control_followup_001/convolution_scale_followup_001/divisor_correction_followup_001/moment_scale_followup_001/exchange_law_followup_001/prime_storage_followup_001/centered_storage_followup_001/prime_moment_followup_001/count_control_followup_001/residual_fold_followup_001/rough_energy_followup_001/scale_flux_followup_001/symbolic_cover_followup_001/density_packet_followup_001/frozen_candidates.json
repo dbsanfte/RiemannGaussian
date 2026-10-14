@@ -1,0 +1,967 @@
+{
+  "candidates": [
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "5/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "5/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "-13/8",
+            "-3/8"
+          ],
+          [
+            "0",
+            "-3/8",
+            "-3/8"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "681988401387/1048576",
+        "density_balance_admission_still_required": true,
+        "exponent": "1",
+        "jump_price": "144",
+        "omega_price": "75742934611/16777216",
+        "omega_prime_horizon": 256,
+        "omega_primes": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73,
+          79,
+          83,
+          89,
+          97,
+          101,
+          103,
+          107,
+          109,
+          113,
+          127,
+          131,
+          137,
+          139,
+          149,
+          151,
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197,
+          199,
+          211,
+          223,
+          227,
+          229,
+          233,
+          239,
+          241,
+          251
+        ],
+        "ops": 394,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 393984,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "681988401387/1048576",
+        "exponent": "1",
+        "jump_price": "144",
+        "omega_price": "75742934611/16777216"
+      },
+      "discovery_unlinked_kappa": "2321495/16777216",
+      "energy_index": 3,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p16_packet_0",
+      "maximum_D": 82,
+      "maximum_observed_unlinked_over_u": "7139090838402283034541/51593512326752904282500",
+      "negative_packet_rows": 10,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 9,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/8",
+        "eta": "2/7",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          }
+        ],
+        "memory": 2,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1"
+            ],
+            "weight": "1/4"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 2,
+      "search_file": "search_q1_p16_energy_03.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "largest_growing_roster"
+      ],
+      "source_id": "q1_p16",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    },
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "5/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "5/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "-13/8",
+            "-3/8"
+          ],
+          [
+            "0",
+            "-3/8",
+            "-3/8"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "548563617/1048576",
+        "density_balance_admission_still_required": true,
+        "exponent": "1",
+        "jump_price": "144",
+        "omega_price": "27397081/16777216",
+        "omega_prime_horizon": 4,
+        "omega_primes": [
+          2,
+          3
+        ],
+        "ops": 394,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 393984,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "548563617/1048576",
+        "exponent": "1",
+        "jump_price": "144",
+        "omega_price": "27397081/16777216"
+      },
+      "discovery_unlinked_kappa": "2321843/16777216",
+      "energy_index": 3,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p16_packet_1",
+      "maximum_D": 21,
+      "maximum_observed_unlinked_over_u": "982250708907/7097567830430",
+      "negative_packet_rows": 7,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 12,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/2",
+        "eta": "1/5",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          }
+        ],
+        "memory": 2,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1"
+            ],
+            "weight": "1/4"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 32,
+      "search_file": "search_q1_p16_energy_03.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "smallest_paid_constant"
+      ],
+      "source_id": "q1_p16",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    },
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "2",
+            "1",
+            "-1"
+          ],
+          [
+            "1",
+            "1",
+            "-1"
+          ],
+          [
+            "-1",
+            "-1",
+            "1"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "2",
+            "1",
+            "-1",
+            "0"
+          ],
+          [
+            "1",
+            "-2",
+            "-5/2",
+            "3/2"
+          ],
+          [
+            "-1",
+            "-5/2",
+            "-1/2",
+            "3/2"
+          ],
+          [
+            "0",
+            "3/2",
+            "3/2",
+            "-3/2"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "12914307/4096",
+        "density_balance_admission_still_required": true,
+        "exponent": "7/8",
+        "jump_price": "672",
+        "omega_price": "352823/131072",
+        "omega_prime_horizon": 8,
+        "omega_primes": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "ops": 668,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 393984,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "12914307/4096",
+        "exponent": "7/8",
+        "jump_price": "672",
+        "omega_price": "352823/131072"
+      },
+      "discovery_unlinked_kappa": "527277/4194304",
+      "energy_index": 14,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p16_packet_2",
+      "maximum_D": 14,
+      "maximum_observed_unlinked_over_u": "834337162/6636862155",
+      "negative_packet_rows": 12,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 7,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/3",
+        "eta": "9/52",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          }
+        ],
+        "memory": 3,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1",
+              "-1"
+            ],
+            "weight": "1"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 19,
+      "search_file": "search_q1_p16_energy_14.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "smallest_observed_unlinked"
+      ],
+      "source_id": "q1_p16",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    },
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "5/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "5/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "-13/8",
+            "-3/8"
+          ],
+          [
+            "0",
+            "-3/8",
+            "-3/8"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "93980812185330715827/70368744177664",
+        "density_balance_admission_still_required": true,
+        "exponent": "1",
+        "jump_price": "1240237089/4194304",
+        "omega_price": "75742934611/16777216",
+        "omega_prime_horizon": 256,
+        "omega_primes": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73,
+          79,
+          83,
+          89,
+          97,
+          101,
+          103,
+          107,
+          109,
+          113,
+          127,
+          131,
+          137,
+          139,
+          149,
+          151,
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197,
+          199,
+          211,
+          223,
+          227,
+          229,
+          233,
+          239,
+          241,
+          251
+        ],
+        "ops": 470,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 660992,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "93980812185330715827/70368744177664",
+        "exponent": "1",
+        "jump_price": "1240237089/4194304",
+        "omega_price": "75742934611/16777216"
+      },
+      "discovery_unlinked_kappa": "362187/4194304",
+      "energy_index": 3,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p04_packet_0",
+      "maximum_D": 82,
+      "maximum_observed_unlinked_over_u": "256244919762732857146328322985416545099/2967444112392344678654837589973045084160",
+      "negative_packet_rows": 9,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 10,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/8",
+        "eta": "2/7",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          },
+          {
+            "divisor": 12,
+            "weight": "-3547/8192"
+          },
+          {
+            "divisor": 15,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 24,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 30,
+            "weight": "-3547/8192"
+          }
+        ],
+        "memory": 2,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1"
+            ],
+            "weight": "1/4"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 2,
+      "search_file": "search_q1_p04_energy_03.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "largest_growing_roster"
+      ],
+      "source_id": "q1_p04",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    },
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "5/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "5/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "-13/8",
+            "-3/8"
+          ],
+          [
+            "0",
+            "-3/8",
+            "-3/8"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "75594327053265657/70368744177664",
+        "density_balance_admission_still_required": true,
+        "exponent": "1",
+        "jump_price": "1240237089/4194304",
+        "omega_price": "27397081/16777216",
+        "omega_prime_horizon": 4,
+        "omega_primes": [
+          2,
+          3
+        ],
+        "ops": 470,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 660992,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "75594327053265657/70368744177664",
+        "exponent": "1",
+        "jump_price": "1240237089/4194304",
+        "omega_price": "27397081/16777216"
+      },
+      "discovery_unlinked_kappa": "362295/4194304",
+      "energy_index": 3,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p04_packet_1",
+      "maximum_D": 21,
+      "maximum_observed_unlinked_over_u": "14390669379389841399967098599/166601446923092614942132535296",
+      "negative_packet_rows": 7,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 12,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/2",
+        "eta": "1/5",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          },
+          {
+            "divisor": 12,
+            "weight": "-3547/8192"
+          },
+          {
+            "divisor": 15,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 24,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 30,
+            "weight": "-3547/8192"
+          }
+        ],
+        "memory": 2,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1"
+            ],
+            "weight": "1/4"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 32,
+      "search_file": "search_q1_p04_energy_03.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "smallest_paid_constant"
+      ],
+      "source_id": "q1_p04",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    },
+    {
+      "RH_proved": false,
+      "both_density_signs_seen": true,
+      "bound_admission": {
+        "H": [
+          [
+            "2",
+            "1",
+            "-1"
+          ],
+          [
+            "1",
+            "1",
+            "-1"
+          ],
+          [
+            "-1",
+            "-1",
+            "1"
+          ]
+        ],
+        "RH_proved": false,
+        "T": [
+          [
+            "2",
+            "1",
+            "-1",
+            "0"
+          ],
+          [
+            "1",
+            "-2",
+            "-5/2",
+            "3/2"
+          ],
+          [
+            "-1",
+            "-5/2",
+            "-1/2",
+            "3/2"
+          ],
+          [
+            "0",
+            "3/2",
+            "3/2",
+            "-3/2"
+          ]
+        ],
+        "analytic_premise": "elementary squarefree coprime count error <=(2^omega(N)+2)*sqrt(x)",
+        "balance_rule": "positive min(1,N/P); negative min(1,P/N); zero1; absent bucket nonzero side0",
+        "bound": "|W(u)|<=constant*u^q for every positive integer u",
+        "constant": "219288561765771670263/35184372088832",
+        "density_balance_admission_still_required": true,
+        "exponent": "1",
+        "jump_price": "2893886541/2097152",
+        "omega_price": "75742934611/16777216",
+        "omega_prime_horizon": 256,
+        "omega_primes": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73,
+          79,
+          83,
+          89,
+          97,
+          101,
+          103,
+          107,
+          109,
+          113,
+          127,
+          131,
+          137,
+          139,
+          149,
+          151,
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197,
+          199,
+          211,
+          223,
+          227,
+          229,
+          233,
+          239,
+          241,
+          251
+        ],
+        "ops": 744,
+        "pair_compilation_admission_still_required": true,
+        "peak_bytes": 660992,
+        "q": "1",
+        "source_kernel_binding_still_required": true,
+        "status": "VERIFIED_UNIFORM_SIGNED_PACKET_BOUND",
+        "uniform_original_residual_bound_proved": false,
+        "uniform_signed_packet_bound_proved": true,
+        "uniform_source_bound_proved": false,
+        "uniform_unlinked_correlation_proved": false,
+        "unlinked_remainder_unpaid": true
+      },
+      "certificate": {
+        "constant": "219288561765771670263/35184372088832",
+        "exponent": "1",
+        "jump_price": "2893886541/2097152",
+        "omega_price": "75742934611/16777216"
+      },
+      "discovery_unlinked_kappa": "330439/4194304",
+      "energy_index": 14,
+      "energy_kind": "memory_cross_term",
+      "frozen_before_validation_draw": true,
+      "id": "q1_p04_packet_2",
+      "maximum_D": 82,
+      "maximum_observed_unlinked_over_u": "74123072433163941118143183368658123/940853557189486737686593156667146240",
+      "negative_packet_rows": 8,
+      "nonzero_packet_seen": true,
+      "positive_packet_rows": 11,
+      "program": {
+        "drift_multiplier": "3/2",
+        "epsilon": "1/8",
+        "eta": "2/7",
+        "kernel": [
+          {
+            "divisor": 4,
+            "weight": "-1"
+          },
+          {
+            "divisor": 5,
+            "weight": "1"
+          },
+          {
+            "divisor": 8,
+            "weight": "1"
+          },
+          {
+            "divisor": 10,
+            "weight": "-1"
+          },
+          {
+            "divisor": 12,
+            "weight": "-3547/8192"
+          },
+          {
+            "divisor": 15,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 24,
+            "weight": "3547/8192"
+          },
+          {
+            "divisor": 30,
+            "weight": "-3547/8192"
+          }
+        ],
+        "memory": 3,
+        "q": "1",
+        "rays": [
+          {
+            "a": [
+              "1",
+              "1",
+              "-1"
+            ],
+            "weight": "1"
+          }
+        ],
+        "schema": "growing-density-packet-v1"
+      },
+      "schedule_index": 2,
+      "search_file": "search_q1_p04_energy_14.json",
+      "selection_eligible": true,
+      "selection_tracks": [
+        "smallest_observed_unlinked"
+      ],
+      "source_id": "q1_p04",
+      "source_kernel_binding": "exact original unfolded080 fixed_kernel; no excluded-prime fold in081 representation",
+      "uniform_original_source_bound_proved": false,
+      "uniform_unlinked_bound_proved": false,
+      "unlinked_kappa_is_finite_calibration_only": true
+    }
+  ],
+  "discovery_independently_checked": true,
+  "uniform_unlinked_bound_proved": false,
+  "validation_draw_started": false
+}

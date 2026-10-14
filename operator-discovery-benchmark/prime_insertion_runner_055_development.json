@@ -1,0 +1,15 @@
+{
+  "schema": "prime-insertion-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 207488,
+      "elapsed_seconds": 0.30960770504316315,
+      "stdout": "SYNTHETIC_WORK operations=207488\n",
+      "stderr": "test_complete_two_child_coverage_and_unpaid_scope (test_prime_insertion_runner_055.RunnerTests) ... ok\ntest_independent_negative_cross_energy_and_exact_boundary_pass (test_prime_insertion_runner_055.RunnerTests) ... ok\ntest_parent_split_is_fresh_but_source_channels_can_overlap (test_prime_insertion_runner_055.RunnerTests) ... ok\ntest_strict_new_drift_failure_and_source_containment_guard (test_prime_insertion_runner_055.RunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

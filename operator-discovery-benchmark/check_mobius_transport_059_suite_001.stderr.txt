@@ -1,0 +1,36 @@
+test_assess_claim_pass_refuted_unresolved_and_general_beta (__main__.TransportCheckerTests) ... ok
+test_charge_only_meter_and_precision_restore (__main__.TransportCheckerTests) ... ok
+test_claim_and_context_forgery_gates (__main__.TransportCheckerTests) ... ok
+test_direct_joined_W_formula_no_token_sign_swap (__main__.TransportCheckerTests) ... ok
+test_evaluate_many_one_table_signed_bounds_and_triangle (__main__.TransportCheckerTests) ... ok
+test_exact_powered_zero_band_general_tau (__main__.TransportCheckerTests) ... ok
+test_exact_rational_pair_interval_and_absolute_values (__main__.TransportCheckerTests) ... ok
+test_generic_fractional_parameters_and_functional_cache (__main__.TransportCheckerTests) ... ok
+test_half_alpha_erfc_integral_and_monotone_difference (__main__.TransportCheckerTests) ... ok
+test_missing_duplicate_wrong_sign_and_foreign_tokens (__main__.TransportCheckerTests) ... ok
+test_monotone_profile_optimum_flux_and_zero_dummy (__main__.TransportCheckerTests) ... ok
+test_ordinary_mu_tokens_all_weights_and_profiles (__main__.TransportCheckerTests) ... ok
+test_phi_independent_integrated_taylor_calibration (__main__.TransportCheckerTests) ... ERROR
+test_plan_cross_profile_pairs_and_reversal (__main__.TransportCheckerTests) ... ok
+test_prime_parameters_types_and_canonical_aliases (__main__.TransportCheckerTests) ... ok
+test_profile_dominance_exact_policy_scope_and_mutations (__main__.TransportCheckerTests) ... ok
+test_unit_and_q_range_exit_remain (__main__.TransportCheckerTests) ... ok
+test_work_memory_power_and_precision_guards (__main__.TransportCheckerTests) ... ok
+
+======================================================================
+ERROR: test_phi_independent_integrated_taylor_calibration (__main__.TransportCheckerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_transport_059.py", line 156, in test_phi_independent_integrated_taylor_calibration
+    lo,hi=Taylor_phi(a,r,m)
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_transport_059.py", line 78, in Taylor_phi
+    lo=C._dyadic(total.lower()-error.abs_upper(),m)
+  File "/home/dbsanfte/riemann/operator-discovery-benchmark/check_mobius_transport_059.py", line 159, in _dyadic
+    man,exponent=value.man_exp();man,exponent=int(man),int(exponent)
+  File "flint/types/arb.pyx", line 252, in flint.types.arb.arb.man_exp
+ValueError: man_exp requires an exact, finite value
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.043s
+
+FAILED (errors=1)

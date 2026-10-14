@@ -1,0 +1,35 @@
+{
+  "owner": "independent_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_bound_argument_search"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_bound_argument_search operations=271868 elapsed_seconds=0.55308974799118\n",
+      "stderr": "test_compiler_rejects_missing_conductor_wrong_jordan_and_cross_squares (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_component_generates_auxiliary_but_cannot_close_bridge (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_cutoff_double_sum_identity_is_valid_for_each_finite_prefix (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_dag_cycle_forward_reference_and_dropped_attempt_rejected (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_depth_and_unknown_language_leaves_fail_closed (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_equal_frequency_sign_cancellation_and_mean_unit (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_exact_discrete_period_identity_including_jump_values (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_feedback_preserves_full_source_failed_routes_and_old_tasks (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_fractional_abel_resonance_and_direct_critical_log (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_generic_cutoff_variance_has_no_mobius_exponent_gain (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_inverse_profile_provider_and_assumption_changes_rejected (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_local_rational_guard_and_unvalidated_goal_rejected (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_rejects_missing_spacing_head_or_offdiagonal_loss (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_representation_proofs_are_not_numeric_bounds (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_rule_ablation_is_replayed_as_a_distinct_search (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_search_recovery_keeps_all_mean_branches_and_ordered_crosses (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_source_boundary_replays_binding_and_actual_degree_guard (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\ntest_window_choice_and_full_convolution_denominator_cost (test_check_core_bound_argument_search.IndependentBoundArgumentTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.553s\n\nOK\n",
+      "operations": 271868,
+      "elapsed_seconds": 0.651145446987357,
+      "tests": 18,
+      "peak_rss_kib": 35240
+    }
+  ],
+  "operations": 271868,
+  "operation_cap": 50000000,
+  "time_cap_seconds": 180,
+  "memory_cap_bytes": 805306368,
+  "source_arithmetic_observations": 0,
+  "old_suite_reruns": 0,
+  "edits_stopped": true,
+  "math_audit": {
+    "discrete_Fourier": "exact on every integer, equal frequencies grouped",
+    "generic_cutoff_variance": "U/2 holds for bounded weights; Mobius 9U is weaker",
+    "window_scope": "all offdiagonals retained; n>=D; short head and Qplus(0) retained",
+    "recovery": "exact mean, Dirichlet branches and ordered crosses; unsupported bridge open"
+  }
+}

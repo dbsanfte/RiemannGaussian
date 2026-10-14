@@ -1,0 +1,521 @@
+RENEWAL SHIFT WORDS: EXACT STRUCTURE, RECOVERY, AND THE SIGNED REMAINDER
+
+Scope and conclusion
+--------------------
+This is a new analytical review. It preserves all frozen studies and earlier
+reviews, including both selected shifted-quotient candidate reviews. No new
+arithmetic evaluation, numerical study, test, parameter search, rescore, or
+hash was performed. The current producer renewal_shift_candidates.py was
+read as source only. Its actual-mu local logarithm, merged stencil, positive
+shift normalization, and simple-real-pole centering agree with the formulas
+below. No numerical outcome is a premise of any theorem in this memo.
+
+The proposed local positivity and mass-one conjecture is TRUE. The words
+give exact renewal distributions on prime exponents, a nonnegative survival
+kernel, and an actual-mu signed random-stretch interpretation. This is a
+structural change from multiplying old zero-unit increments: there is no
+factor-access lag, and the fixed-index small-shift limit is a logarithmically
+weighted von Mangoldt coefficient, not a convolution power of Lambda.
+
+These facts do not prove the complete signed moment. The survival kernel
+still acts on the original Mertens prefix by proper-divisor dilations. Its
+fresh/past decomposition retains exactly the original fresh source. The
+stochastic representation has alternating subset covariances; independence
+of exponent draws does not make the actual Mobius signs independent. One
+genuine uniform component estimate is available: the random fluctuation of
+the largest-prime singleton component has finite critical integral, while
+its negative mean prime-count bulk still requires the entire composite
+complement. A second complete component peel removes the higher powers of
+single primes, with no discarded remainder.
+
+For previous candidate 10, a positive renewal equation can be proved
+exactly. Its positive kernel has x log x mass and is unbounded on critical
+weighted L2, even on a compactly supported positive input. Thus the natural
+absolute-value renewal contraction is a specifically invalid route to its
+remaining full signed bound. This obstruction does not exclude a genuinely
+signed correlation proof. Neither that bound nor a new word's cofinal
+moment, and therefore neither RH, is proved here.
+
+1. Word semantics and exact aliases
+----------------------------------
+Let B=(b_1,...,b_k), each b_i>0, and let beta=product_i b_i. Start from
+Q_empty(s)=1/zeta(s), and append b by Q_new(s)=Q(s)/Q(s+b).
+For a subset S of positions, write t_S=sum_(i in S)b_i. Then
+  Q_B(s)=product_S zeta(s+t_S)^((-1)^(|S|+1))
+        =product_t zeta(s+t)^(e_t),
+  e_t=sum_(S:t_S=t)(-1)^(|S|+1).                     (1.1)
+The finite stencil is merged BEFORE classifying poles. In particular e_0=-1
+and sum_t e_t=0 for every nonempty word. Appending shifts commutes. Sorting
+the word removes the permutation aliases.
+
+Example: B=(b,c,b+c) merges to
+  Q_B= zeta(s+b)zeta(s+c)zeta(s+2b+2c)
+        /[zeta(s)zeta(s+2b+c)zeta(s+b+2c)].           (1.2)
+The shift b+c cancels. Provided b!=c, the surviving positive exponents are
+one. If 2(b+c)<1, this is compatible with the proposed pilot restrictions.
+Conversely, B=(b,b) gives
+  Q_B=zeta(s+b)^2/[zeta(s)zeta(s+2b)],
+and requires a DOUBLE pole normalizer with an x^(1-b) log x term. Excluding
+that word from a simple-pole pilot is a schema restriction, not a failure
+of its general algebra or local positivity.
+
+For rational words, equality of the formal merged stencils is exactly
+equality of the unordered multisets of shifts. Choose a common denominator
+L and put m_i=L b_i. The stencil polynomial is
+  sum_t e_t z^(Lt)=-product_i(1-z^(m_i)).            (1.3)
+In its cyclotomic factorization, the exponent of Phi_d counts how many m_i
+are divisible by d. Starting at the largest m_i and descending recovers
+each multiplicity. Hence a merged stencil is a complete exact word key;
+it is not merely a heuristic alias test. Equality of the Euler products
+also forces this polynomial equality: their prime coefficients evaluate
+the same finite polynomial at p^(-1/L), for infinitely many p tending to
+infinity. The polynomial identity follows from the accumulation at zero.
+An allowed b=0 would erase a whole word, since Q(s)/Q(s)=1; positive shifts
+are essential.
+
+The new increment is
+  H_B(s)=(Q_B(s)-1)/beta.
+Its coefficient at a prime is nonzero. It is not the product of the old
+increments H_b. In particular the old degree-k zero-unit convolution lag
+does not occur here. The fixed comparator mu-delta has the same unit-zero
+convention and the same first coefficient access; the old degree-k lagged
+comparator would be inappropriate for these new words.
+
+2. Proof of local positivity, mass, and stochastic monotonicity
+-------------------------------------------------------------
+At a fixed prime p, use z=p^(-s) and q=p^(-b) in (0,1). Suppose the current
+local factor is 1-P(z), with P(0)=0, nonnegative coefficients, and P(1)=1.
+Then
+  Q_new,p(z)=(1-P(z))/(1-P(qz))=1-P_new(z),
+  P_new(z)=[P(z)-P(qz)]/[1-P(qz)].                  (2.1)
+Every coefficient of the numerator is P_j(1-q^j)>=0. The denominator's
+inverse is sum_(r>=0)P(qz)^r, also coefficientwise nonnegative. Because
+the distribution is supported on positive integers, P(q)<=q<1. Therefore
+  P_new(1)=(1-P(q))/(1-P(q))=1.                   (2.2)
+The base is P_empty(z)=z. After the first positive shift all positive-degree
+coefficients are strictly positive; the numerator term alone preserves
+strict positivity at every subsequent step. Formal coefficient operations
+and evaluation at one are justified by these nonnegative convergent sums.
+
+Consequently the actual coefficient sequence a_B of Q_B is multiplicative,
+  a_B(1)=1,
+  a_B(p^e)=-Pr(N_p=e), e>=1,
+  a_B(n)=(-1)^omega(n) product_(p^e||n)Pr(N_p=e).   (2.3)
+Every |a_B(n)|<=1. The sign is mu(rad(n)), not mu(n): higher prime powers
+remain present. Each prime has COMPLETE nonconstant absolute mass one.
+This is an actual Euler-coefficient statement, not a random sign premise.
+
+There is a useful construction of the new distribution. Draw independent
+copies N_1,N_2,... of the old positive exponent. After drawing N_i, declare
+success with probability 1-q^(N_i), independently conditional on the draw;
+stop at the first success and sum all exponents drawn. The failures have
+defective generating function P(qz), and the success has generating
+function P(z)-P(qz). Their sum is (2.1). Under this coupling the new sum is
+at least N_1. Thus adding a shift stochastically increases the prime
+exponent; it does more than reduce the prime coefficient in isolation.
+For a finite mean, differentiation at one gives exactly
+  E N_new = E N_old/[1-P(q)].                      (2.4)
+The finite rational Euler factors have a radius beyond one at each fixed
+p, so the means here are finite. They need not be uniformly small across
+primes or words.
+
+In particular
+  Pr(N_p=1)=kappa_p:=product_i(1-p^(-b_i)).         (2.5)
+At fixed positive shifts kappa_p tends to one as p tends to infinity.
+For squarefree n, a_B(n)=mu(n) product_(p|n)kappa_p. The normalized
+coefficient tends to mu(n)/beta when a fixed number of its distinct primes
+all grow. Thus raw small-prime attenuation is genuine, but it is not a
+uniform attenuation of the normalized comparator at all prime locations.
+
+3. Logarithms, the small-shift limit, and a signed renewal identity
+-----------------------------------------------------------------
+For Re(s)>1, absolute Euler expansions yield
+  log Q_B(s)=-sum_(p,e>=1) ell_B(p^e)p^(-es),
+  ell_B(p^e)=product_i(1-p^(-e b_i))/e >=0,         (3.1)
+with ell zero off prime powers. Thus a_B=exp_*(-ell_B), whereas
+a_B^(-1)=exp_*(ell_B) has nonnegative coefficients. These two exact facts
+must not be confused: a positive inverse is not a signed remainder bound.
+
+Since 1-exp(-b log n)<=b log n,
+  ell_B(n)/beta <= Lambda(n)(log n)^(k-1)          (3.2)
+on its prime-power support. At each FIXED integer n, taking all shifts to
+zero with fixed word length gives
+  (a_B(n)-delta(n))/beta
+       -> -Lambda(n)(log n)^(k-1).                (3.3)
+To see this, ell_B(n)/beta has this limit, while every convolution term of
+degree at least two in exp_*(-ell_B) is O(beta^2) at that fixed n and has
+only finitely many divisor tuples. This is a pointwise finite-divisor
+argument. It is not uniform in x or in moment integrals. The limit is not
+(-1)^k Lambda^{*k}, which belongs to products of old increments.
+
+Let
+  L_B(n)=Lambda(n) product_i(1-n^(-b_i)) >=0
+on prime powers and zero elsewhere. Logarithmic differentiation gives
+  a_B(n) log n = -(a_B*L_B)(n),
+  A_B(x) log x - integral_1^x A_B(t)/t dt
+       = -sum_(d<=x)L_B(d)A_B(x/d),               (3.4)
+where A_B(x)=sum_(n<=x)a_B(n), with inclusive real endpoints and prefix
+zero below one. This identity retains every quotient prefix and boundary.
+For a complete center g_B(x), replacing A_B by A_B-g_B moves the ENTIRE
+same expression for g_B to the right; no smooth term may be omitted.
+
+The existing factorial-trace lemma supplies
+sum_(n<=x)Lambda(n)/n=log x+O(1), with the inclusive endpoint adjustment
+also bounded. Expanding the product in L_B, every nonempty shifted term
+has absolutely convergent sum Lambda(n)/n^(1+t_S). Therefore
+  sum_(n<=x)L_B(n)/n=log x+O_B(1).                (3.5)
+This is an unconditional all-scale harmonic component estimate. It uses
+the earlier proved actual-prime trace, not an RH or Mertens premise.
+It does not turn (3.4) into a critical-norm contraction. The full signed
+quotient prefixes in (3.4), after centering, remain the unknown quantity.
+
+4. Exact positive survival kernel and the fresh/past obstruction
+--------------------------------------------------------------
+Write
+  v_B(p^e)=Pr(N_p>e), e>=0.
+Then v_B(p^0)=1, 0<=v_B(p^e)<=1, and
+  [1-P_p(z)]/(1-z)=sum_(e>=0)v_B(p^e)z^e.
+Extending v_B multiplicatively gives the exact identities
+  a_B=mu*v_B,
+  K_B(s):=sum_n v_B(n)n^(-s)=zeta(s)Q_B(s),
+  A_B(x)=sum_(d<=x)v_B(d)M(x/d).                  (4.1)
+The survival kernel is nonnegative. Its values depend on the actual prime
+index and the fixed word, not on unknown signs of M. It acts on the full
+original prefix; no source-domain complement is lost.
+
+Let g_B(x)=1+sum_t C_t x^(1-t) be the UNNORMALIZED complete pole center,
+so the numerical word output is F_B=(A_B-g_B)/beta. On an integer doubling
+block X<=n<2X define
+  H_B,past(n)=sum_(2<=d<=n)v_B(d)M(n/d)-g_B(n).
+Every quotient n/d in this sum is strictly below X. Exactly
+  beta F_B(n)=M(n)+H_B,past(n),
+  beta^2 E_F(X)=E_M(X)+E_Hpast(X)
+                 +2 X^(-2)sum_(X<=n<2X)M(n)H_B,past(n).            (4.2)
+This is the complete signed-square gate. The new grammar creates no
+fresh/fresh source interaction within that block: the entire fresh source
+occurs in M(n) with coefficient 1/beta. A proof may succeed through its
+correlation with the past compensation, but a norm bound on the past alone
+does not establish that correlation. The observation is a structural
+limitation and a guide to the proof obligation, not a rejection of the
+grammar or a claim that the desired correlation is impossible.
+
+5. Random stretched actual primes: justified expectation and covariance
+-----------------------------------------------------------------------
+Independently draw N_p with the distributions of section 2. For each finite
+x, only actual primes p<=x can appear. Define
+  Z_x=sum_(S subset primes<=x)(-1)^|S|
+                       1_{product_(p in S)p^(N_p)<=x}.
+Then, with no infinite product or limit exchange,
+  A_B(x)=E Z_x.                                    (5.1)
+Each distinct prime is selected at most once; its selected exponent is N_p.
+The sample coefficient at a given integer is mu(rad(n)) if every nonzero
+prime exponent equals the sampled N_p, and zero otherwise. This is not a
+model in which the actual Mobius signs have been declared independent.
+
+For Re(s)>1, the corresponding infinite Euler expectation is also valid:
+sum_p E p^(-Re(s)N_p)<=sum_p p^(-Re(s))<infinity, and the unsigned subset
+expansion is bounded by product_p(1+p^(-Re(s))). It gives Q_B(s).
+One must NOT interchange expectation with reciprocal Euler products:
+  E[product_p(1-p^(-N_p s))^(-1)]
+is generally different from Q_B(s)^(-1). The latter uses a local renewal
+of fresh independent exponent draws; the former reuses the same sampled
+exponent in all its multiples.
+
+For subsets S,T put I_S(x)=1_{product_(p in S)p^(N_p)<=x}. Then exactly
+  E Z_x^2=sum_(S,T)(-1)^(|S|+|T|)E[I_S(x)I_T(x)],
+  Var Z_x=sum_(S,T)(-1)^(|S|+|T|)Cov(I_S(x),I_T(x)),
+  |A_B(x)-g_B(x)|^2
+       =E|Z_x-g_B(x)|^2-Var Z_x.                 (5.2)
+All sums are finite. The joint threshold probability for S,T is correlated
+through every prime shared by the subsets. Events are coordinatewise
+decreasing in the independent N_p. Their covariance is nonnegative: the
+usual one-coordinate monotone covariance inequality, followed by induction
+over the finite product coordinates, proves this directly. But its sign
+in (5.2) is positive or negative according to |S|+|T|. Same-parity and
+opposite-parity pairs must both remain. Removing the latter removes the
+cancellation under investigation. Jensen gives an upper bound by the full
+expected sample square; it does not prove that square is subpower.
+
+A conditional one-prime decomposition also exposes the missing estimate.
+With the other draws fixed, let Z_x^(p) omit p. Then
+  Z_x=Z_x^(p)-Z_(x/p^(N_p))^(p).
+Controlling its conditional variance requires the whole signed prefix
+Z_y^(p) over the random quotient values. Independence of N_p has therefore
+not supplied an independent bound on the signed complement.
+
+6. Proved stochastic and prime-power components; the retained mean bulk
+-----------------------------------------------------------------------
+For x/2<p<=x the only possible subset containing p is its singleton with
+N_p=1: a second prime factor or N_p>=2 makes the product exceed x.
+Thus
+  Z_x=Z_x,low - sum_(x/2<p<=x)1_{N_p=1},
+where the two terms use disjoint sets of independent draws. In particular
+  Var Z_x=Var Z_x,low + V_high(x),
+  V_high(x)=sum_(x/2<p<=x)kappa_p(1-kappa_p).
+The elementary product inequality gives
+  1-kappa_p <= sum_i p^(-b_i).
+For the proposed 0<b_i<1,
+  V_high(x)<=sum_i[1+x^(1-b_i)/(1-b_i)].           (6.1)
+Consequently integral_1^infinity V_high(x)x^(-2)dx is finite, bounded by
+sum_i[1+1/(b_i(1-b_i))]. This is a genuine uniform, subcritical fluctuation
+component theorem. It does NOT bound the full Var Z_x, the full expected
+square, or the deterministic mean. The mean of this component is still
+minus sum_(x/2<p<=x)kappa_p, with kappa_p tending to one.
+
+More generally, group the finite expectation by subset cardinality:
+  A_B(x)=1-U_1(x)+U_2(x)-U_3(x)+...,
+  U_j(x)=sum_(|S|=j)Pr(product_(p in S)p^(N_p)<=x)>=0.              (6.2)
+The sum terminates for every x. Since kappa_p tends to one,
+  sum_(p<=x)kappa_p <= U_1(x) <= pi(x),
+and the first quantity is at least pi(x)/2 minus a fixed finite head.
+The earlier elementary central-binomial argument supplies pi(x)>=c x/log x
+eventually. Hence U_1(x)>=c_B x/log x eventually. Every real pole center
+in this pilot has exponent strictly below one, so it is o(x/log x).
+Thus the COMPLETE alternating complement sum_(j>=2)(-1)^j U_j must cancel
+the macroscopic negative singleton mean before a square-root-scale moment
+can hold. Low variance of the random singleton contribution does not
+produce that deterministic cancellation.
+
+There is an additional complete peel, with no exponent cutoff error:
+  U_1(x)=sum_(p<=x)kappa_p + D_B,pp(x),
+  0<=D_B,pp(x)<=pi(sqrt x).                        (6.3)
+Here D_B,pp includes ALL exponents e>=2 of the single-prime branch and
+has zero prefix below four. Using the previously proved Chebyshev upper
+bound pi(y)<=C_pi y/log y for y>=2,
+  ||D_B,pp||_crit^2
+    := integral_1^infinity D_B,pp(x)^2/x^2 dx
+    <=4 C_pi^2/log 4,
+  E_Dpp(X)<=6 C_pi^2/(log X)^2, X>=4.             (6.4)
+After division by beta the costs divide by beta and beta^2 respectively.
+This peel does not remove nonsquarefree MULTI-prime branches; those may
+still have bulk size and must remain. Its cross with the retained remainder
+also remains, or can be paid by a triangle inequality in both directions.
+
+Every center term with r=1-t<1/2 has finite critical norm
+  ||C_t x^r||_crit^2=C_t^2/(1-2r).
+A term with r=1/2 has bounded integer dyadic energy and can be paid in a
+cofinal moment comparison, but has infinite critical integral. A term
+with r>1/2 must remain in the complete compensated remainder. These
+analytic distinctions do not permit changing the frozen numerical output.
+
+7. Preconditioning and why local probability mass is not global recovery
+------------------------------------------------------------------------
+Equation (4.1) makes this a fixed positive preconditioning of the original
+prefix. On the continuous finite or global norm
+  ||f||_sigma^2=integral_1^T |f(x)|^2 x^(-2sigma-1)dx,
+with f=0 below one, a dilation f(x/d) has norm at most d^(-sigma)||f||.
+Absolute coefficient bounds for K_B and its Dirichlet inverse therefore
+give the valid conditional operator bound
+  ||K_B||, ||K_B^(-1)||
+      <=product_(t>0)zeta(sigma+t)^(|e_t|),
+provided sigma+min(t:e_t!=0,t>0)>1.               (7.1)
+It is a uniform bounded critical preconditioning if the smallest surviving
+shift is greater than 1/2. The pole centers are then strictly subcritical
+padding. At equality the epsilon cost diverges; below it (7.1) is not a
+finite critical estimate.
+
+Every admitted multi-shift word with total shift below one has a smallest
+shift below 1/2. That smallest subset shift comes from singleton positions;
+no pair can cancel it. Its exponent is positive, and admission forces it
+to be one. The corresponding pole of K_B is at 1-min b_i>1/2 with positive
+nonzero residue. Thus all such multi-words require a genuine supercritical
+compensation, rather than being covered by the easy bounded critical
+preconditioning theorem. Indeed f(x)=1 for x>=1 has finite critical norm;
+K_B f is the prefix of v_B, whose Mellin transform has this pole. A finite
+critical norm for that output would force holomorphy to the right of 1/2,
+a contradiction. This proves unboundedness of the unrestricted critical
+operator, not merely failure of an absolute bound. Affine centering of
+the one actual source does not repair the linear operator on arbitrary
+inputs.
+
+Separately let rho_B=a_B^(-1), the NONNEGATIVE global renewal inverse.
+Do not confuse it with the survival kernel v_B. Then
+  sum_(d<=x)rho_B(d) A_B(x/d)=1.                   (7.2)
+Its Dirichlet series is
+  Q_B(s)^(-1)=zeta(s) product_(t>0)zeta(s+t)^(-e_t).
+The shifted product's coefficients k have sum |k(n)|/n<infinity. Hence,
+by dominated convergence in sum k(d)floor(x/d)/x,
+  sum_(n<=x)rho_B(n)=c_B x+o_B(x),
+  c_B=product_(t>0)zeta(1+t)^(-e_t)>0.            (7.3)
+Thus sum_n rho_B(n)n^(-sigma) diverges for every sigma<=1. Local mass one
+for the prime-exponent distributions has NOT become a critical mass-one
+global renewal operator. A particularly concrete witness is
+  f_0(x)=1 for 1<=x<2, zero otherwise.
+It has ||f_0||_crit^2=1/2, while
+  sum_d rho_B(d)f_0(x/d)
+     =sum_(x/2<d<=x)rho_B(d)=c_B x/2+o_B(x),       (7.4)
+whose critical norm is infinite. This rules out the proposed natural
+positive-kernel norm contraction. It does not forbid a signed argument
+which retains cancellations in the inverse or in (4.2).
+
+8. Simple poles, complete centers, and the ordinary-zeta bridge
+--------------------------------------------------------------
+The pilot total shift below one and every merged positive exponent equal
+to one make each positive stencil location t a simple real pole at
+r_t=1-t in (0,1). All other zeta arguments there are positive real and
+different from one, hence nonzero. The exact unnormalized residue is
+  R_t^Q=product_(u!=t)zeta(1-t+u)^(e_u),
+  C_t=R_t^Q/(1-t),
+  F_B(x)=[A_B(x)-1-sum_t C_t x^(1-t)]/beta.       (8.1)
+Terms with negative exponent cause a zero at their real pole location,
+not an extra real pole. Pole order restrictions concern the MERGED stencil.
+The displayed center is complete; it includes its value at x=1 and every
+power, even a power analytically peelable from an all-scale comparison.
+
+On Re(s)>1 the exact Mellin identity is
+  s integral_1^infinity F_B(x)x^(-s-1)dx
+    =(Q_B(s)-1)/beta
+        -sum_t (C_t/beta)*s/(s-(1-t)).            (8.2)
+Every fraction, including its constant part, remains. A cofinal family
+of full integer dyadic moments E_F(X)<=C_q X^(1/q), for EVERY dyadic X
+and unbounded q, gives finite weighted L2 for every sigma>1/2. Choose
+1/q<2sigma-1 and sum the geometric dyadic bound. Between n and n+1 only
+the smooth center changes; its derivative is bounded by
+sum_t |R_t^Q|n^(-t)/beta. The finite head and this cell cost are integrable
+in all these norms. Cauchy-Schwarz then makes (8.2) holomorphic on Re(s)>1/2.
+
+At a nonreal zero rho of ordinary zeta with Re(rho)>1/2, e_0=-1 supplies
+a pole of Q_B. Holomorphy requires at least one farther-right zero at
+rho+t for a surviving positive exponent. If none existed, all shifted
+positive factors would be nonzero, while any zeros in negative-exponent
+factors would only increase the pole order. Multiplicities may be spread
+among several shifted factors; no simple-zero or single-factor cancellation
+assumption is needed. Iterating such a right shift, with fixed positive
+minimum shift, reaches Re>1 after finitely many steps, contradicting the
+Euler product. The usual symmetry then gives RH. This is a conditional
+qualitative theorem; the complete cofinal premise has not been proved.
+
+Quantitative recovery is not the constant beta or the local probability
+mass. Away from the real pole of zeta, the exact modulus identity is
+  |1/zeta(s)|=|Q_B(s)|
+       product_(t>0,e_t>0)|1/zeta(s+t)|^(e_t)
+       product_(t>0,e_t<0)|zeta(s+t)|^(-e_t).       (8.3)
+It generates a shifted recovery tree, retaining all branches and powers
+until the real part exceeds one. Mellin bounds for Q_B retain the full
+norm of F_B and every fraction in (8.2). The depth is bounded by the
+required rightward distance divided by min positive shift, but the branching
+and powers can make the constants large. Near real zeta poles one must
+clear them with (s-1)zeta(s), not divide by small sampled numerator balls.
+No bounded critical inverse, all-height growth bound, or finite-prefix
+inverse follows from the qualitative zero-chain argument alone.
+
+9. Same-word control poles
+-------------------------
+For a base Dirichlet series F, applying the SAME append grammar gives
+  F_B(s)=product_S F(s+t_S)^((-1)^|S|).            (9.1)
+This is the reciprocal exponent convention to (1.1). For the one-source
+control F=zeta, its simple pole at one occurs with exponent +1. For the
+partial-prime-13 squarefree sign source,
+  F(s)=zeta(s)/zeta(2s)
+          *product_(p<=13)(1-p^(-s))/(1+p^(-s)),
+its residue at one is also finite and positive. In both cases all shifted
+F(1+t), t>0, are finite, positive, and nonzero. Consequently EVERY fixed
+word retains a simple positive-residue pole at s=1. Its order is one,
+not the word depth. The old product-of-increments control had a different
+pole order; reusing that argument here would be incorrect.
+
+Actual-zeta centers at 1-t<1 cannot remove this pole at one. Hence neither
+control can satisfy all cofinal full-moment premises, irrespective of
+finite gates. This is an analytic falsifier, not a numerical score. The
+mass-one positivity proof of section 2 belongs to the actual 1-z local
+source and does not extend to the control's initial 1/(1-z) or 1+z factors.
+Control failure detects an all-scale mean/pole mismatch; it is not by
+itself evidence that the actual composite cancellation has been explained.
+
+10. Fresh positive-renewal pass on previous candidate 10
+------------------------------------------------------
+Keep its exact definitions u=1/3, v=2/3, w=1/(uv)=9/2,
+  a_b=mu*(n^(-b)), h_b=(a_b-delta)/b,
+  p=h_u*h_v, S(x)=sum_(n<=x)p(n),
+  S=D+T+C, R_red=T+C-m_u x^(2/3).
+Here D is the COMPLETE same-prime overlap; its critical-norm peel, the
+smaller m_v x^(1/3) peel, and all hyperbola complements remain as proved
+in SHIFTED_QUOTIENT_CANDIDATE_10_REVIEW_001.txt. This is not a new word
+Q_(u,v), nor a new normalizer or changed candidate.
+
+The Dirichlet inverse of each a_b is the positive multiplicative sequence
+  r_b(n)=product_(p|n)(1-p^(-b)), r_b(1)=1,
+  sum_n r_b(n)n^(-s)=zeta(s)/zeta(s+b).
+It obeys 0<=r_b(n)<=1. Let rho=r_u*r_v. Direct convolution gives
+  rho*p=w*(r_u-delta)*(r_v-delta)=:b_pos>=0.       (10.1)
+The positivity is coefficientwise and includes the unit-zero conventions.
+With B_pos(x)=sum_(n<=x)b_pos(n), the COMPLETE reduced renewal equation is
+  sum_(d<=x)rho(d)R_red(x/d)
+     =B_pos(x)-sum_(d<=x)rho(d)D(x/d)
+          -m_u x^(2/3)sum_(d<=x)rho(d)d^(-2/3).   (10.2)
+There is no missing prime overlap, residue, or quotient domain in this
+identity. Its right side is a DIFFERENCE of complete positive branches;
+the source sign or positivity of its individual branches does not make
+the right side small.
+
+The relevant mass can be proved without PNT or an RH-strength premise.
+Since r_b=1*(mu(n)n^(-b)), the exact floor identity and the convergent
+series at 1+b give, for 0<b<1,
+  R_b(x):=sum_(n<=x)r_b(n)
+     =c_b x+O_b(x^(1-b)), c_b=1/zeta(1+b)>0.      (10.3)
+The error follows by bounding the floor loss by sum_(d<=x)d^(-b) and
+the convergent tail by x sum_(d>x)d^(-1-b). No unknown signed estimate
+is invoked. Partial summation gives sum_(d<=x)r_u(d)/d=c_u log x+O_u(1).
+Therefore
+  sum_(n<=x)rho(n)
+    =sum_(d<=x)r_u(d)R_v(x/d)
+    =c_u c_v x log x+O_(u,v)(x).                 (10.4)
+For the error use sum_(d<=x)r_u(d)d^(v-1)<=sum_(d<=x)d^(v-1)=O_v(x^v).
+It follows also that
+  B_pos(x)=w c_u c_v x log x+O_(u,v)(x).          (10.5)
+
+This disproves a specific tempting route. The nonnegative renewal
+convolution by rho has infinite sigma-mass sum rho(d)d^(-sigma) for every
+sigma<=1; in particular its critical mass is not less than one. Applied
+to the same compact input f_0=1_[1,2), of critical norm squared 1/2, it gives
+  sum_d rho(d)f_0(x/d)
+    =sum_(x/2<d<=x)rho(d)
+    =(c_u c_v/2)x log x+O(x),                     (10.6)
+of infinite critical norm. Thus local geometric probability mass, positive
+inverse coefficients, and positive right-side coefficients cannot justify
+a global critical Banach contraction, a maximum-principle bound, or a
+bounded critical inverse inferred by dropping the signs. Compact finite
+head data alone can be amplified into x log x bulk. Such bulk in (10.2)
+therefore does not disprove a small R_red either: it may be generated by
+the finite head of a function with finite critical norm. Both errors must
+be avoided.
+
+The exact signed square still to be controlled is
+  E_Rred(X)=E_T(X)+E_(C-m_u n^(2/3))(X)
+       +2 X^(-2)sum_(X<=n<2X)T(n)[C(n)-m_u n^(2/3)].              (10.7)
+The earlier proof gives T(x)>=c x/log x eventually. The smooth n^(2/3)
+term cannot cancel that branch's leading scale. Since the composite C
+is not coefficientwise negative, replacing the cross by an absolute
+bound abandons precisely the needed cancellation. Formula (10.1) is a
+valid new structural identity, but (10.2) and (10.7) supply no estimate
+that forces their compensations at every scale. Assuming such a moment
+for a_u, a_v, mu*mu, or a quotient prefix to close the equation would
+reintroduce an RH-strength premise. The full candidate-10 bound remains
+open after this positive-renewal pass.
+
+11. Consequences for structural generation and the next honest proof gate
+------------------------------------------------------------------------
+The fixed words distinguish mechanisms: merged finite-difference Euler
+stencils; prime-exponent renewal laws; a survival-weighted original prefix;
+and complete pole compensation. These are exact arithmetic distinctions,
+not fitted numerical coefficients. Sorting/merged payload equality removes
+aliases. Pole multiplicity must be decided after merging. Comparing the
+normalization beta, the critical/subcritical center classes, and prime
+weights kappa_p makes finite attenuation and padding visible. A small
+shift limit cannot be interchanged with increasing horizons or interpreted
+as a uniform prime-error theorem.
+
+The two worthwhile generic signed gates are (4.2), retaining fresh/past
+source covariance, and (5.2)/(6.2), retaining all mixed subset covariances
+or alternating complements. The higher-single-prime-power peel (6.3),
+the highest-prime stochastic variance bound (6.1), and the harmonic renewal
+identity (3.4)-(3.5) reduce or clarify components; none substitutes for the
+whole signed square. A future proof must control that remaining compensation
+without assuming a small Mertens prefix or importing a random-sign law.
+
+No uniform signed moment, quantitative critical recovery theorem, or RH
+has been established. The positive local recurrence and its exact random
+and survival interpretations are proved. The critical-norm absolute-renewal
+route is disproved, with explicit positive compact-input witnesses. This
+memo introduces no altered frozen candidate, changed selection, numerical
+study, test, hash, or frozen-file edit.

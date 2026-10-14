@@ -1,0 +1,50 @@
+{
+  "owner": "independent prefix_proof_checker Sol6.1",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_floor_residual_transition_source_050",
+      "returncode": 1,
+      "tests": 16,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_transition_source_050 operations=5348302\nSYNTHETIC_SPLIT checker=5272369 fixture=75933\n",
+      "stderr": "test_distinct_precision_cache_keys (test_check_floor_residual_transition_source_050.ExactAtomTests) ... FAIL\ntest_exact_ceiling_jump_not_smooth_drift (test_check_floor_residual_transition_source_050.ExactAtomTests) ... ok\ntest_floor_zero_and_exact_equality_boundaries (test_check_floor_residual_transition_source_050.ExactAtomTests) ... ok\ntest_new_program_index_and_input_bit_limits (test_check_floor_residual_transition_source_050.ExactAtomTests) ... ok\ntest_nontrivial_integer_root_agreement_and_high_index (test_check_floor_residual_transition_source_050.ExactAtomTests) ... ok\ntest_actual_separate_signed_rounding_and_complete_recovery (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_auxiliary_indicator_and_f_p_normalizer (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_charge_only_external_meter (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_exact_zero_normalization_and_capacity_5000 (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_general_fractional_exponents_d_and_signed_profiles (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_invalid_inputs_and_resource_gates (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_missing_tail_or_unit_values (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_mu_zero_values_independently_source_bound (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_prime_square_and_unit_step_not_dropped (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_program_target_identity_and_scope_swaps (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\ntest_source_recipe_and_rounding_swaps (test_check_floor_residual_transition_source_050.SourceStateTests) ... ok\n\n======================================================================\nFAIL: test_distinct_precision_cache_keys (test_check_floor_residual_transition_source_050.ExactAtomTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_floor_residual_transition_source_050.py\", line 171, in test_distinct_precision_cache_keys\n    self.assertEqual(a[1],b[1]);self.assertNotEqual(a[2],b[2])\nAssertionError: Fraction(2, 3) != Fraction(1, 2)\n\n----------------------------------------------------------------------\nRan 16 tests in 0.700s\n\nFAILED (failures=1)\n",
+      "operations": 5348302,
+      "elapsed_seconds": 0.7911731249769218,
+      "peak_rss_KiB": 28556
+    },
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_floor_residual_transition_source_050.ExactAtomTests.test_distinct_precision_cache_keys",
+      "returncode": 0,
+      "tests": 1,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_transition_source_050 operations=31525\nSYNTHETIC_SPLIT checker=23848 fixture=7677\n",
+      "stderr": "test_distinct_precision_cache_keys (test_check_floor_residual_transition_source_050.ExactAtomTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n",
+      "operations": 31525,
+      "elapsed_seconds": 0.09329683997202665,
+      "peak_rss_KiB": 26704,
+      "scope": "Only the cache fixture affected by corrected equal-beta support selection9,33"
+    }
+  ],
+  "operations": 5379827,
+  "distinct_tests": 16,
+  "suite_failures": 1,
+  "edits_stopped": true,
+  "actual_promoted_source_profile_application": false,
+  "source_or_norm_archives_read": false,
+  "source_norms_evaluated": false,
+  "old_suites_or_studies_rerun": false,
+  "static_parse_passed": true,
+  "frozen_primitives_reused": "check_floor_residual_drift_045 parse_spec/beta/rational; per-value trusted checks in synthetic tests only",
+  "independent_new_rules": "Integer root Newton/binary replay and final powered inequalities; trial-factor mu; complete signed h/A/v source recovery",
+  "limits": {
+    "input_bits": 4096,
+    "intermediate_bits": 16384,
+    "integer_power_bits": 400000,
+    "max_index": 5000,
+    "max_support": 4096,
+    "prospective_memory_bytes": 4294967296
+  },
+  "scope": "Actual finite source AST/profile admission and exact transition identities only; no uniform norm or recurrence proof.",
+  "test_invocations": 17,
+  "failed_assertions_preserved": 1,
+  "final_status": "PASS_AFTER_AFFECTED_FIXTURE_CORRECTION",
+  "correction": "Only the test fixture changed: beta7=2/3 andbeta14=1/2; supports9 and33 both havebeta1/2 at distinct precision. Production checker unchanged."
+}

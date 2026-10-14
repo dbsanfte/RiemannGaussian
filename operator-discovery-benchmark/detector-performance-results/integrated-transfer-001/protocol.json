@@ -1,0 +1,35 @@
+{
+  "RH_proved": false,
+  "audit_seconds": 180,
+  "final_refit": false,
+  "final_scales": [
+    7,
+    11
+  ],
+  "global_bound_proved": false,
+  "grams_fixed_zero": true,
+  "input_source": "/home/dbsanfte/riemann/operator-discovery-benchmark/cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/attempts/001.json",
+  "input_source_sha256": "5f2ac43f96c8b94f85c606f09ef979722c4c1fb2af713fa66aed6ffb774d2c8a",
+  "limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 1024,
+    "max_degree": 12,
+    "max_denominator": 1000000,
+    "max_horizon": 80,
+    "max_monomials": 30000,
+    "max_operations": 200000000,
+    "time_limit": 180
+  },
+  "mode": "transfer",
+  "parallel": {
+    "max_jobs": 256,
+    "max_result_bytes": 65536,
+    "memory_budget_bytes": 2147483648,
+    "timeout_seconds": 600,
+    "worker_memory_bytes": 1073741824,
+    "workers": 2
+  },
+  "schema": 1,
+  "source_builder": "calibrated checker factor builder used for construction; separate independent certificate algebra audit",
+  "training_scales": []
+}

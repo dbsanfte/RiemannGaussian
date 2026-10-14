@@ -1,0 +1,182 @@
+{
+  "PSD_gate": "a>=0,c>=0,a*c-b*b>=0",
+  "RH_proved": false,
+  "code_sha256": {
+    "arithmetic_cycle_language.py": "08524016771c787269ebbf811ec52275261d1d51bfd6ed6096c9550db6723688",
+    "arithmetic_cycle_synthesis.py": "c4985ad6bc49415622f6ede2441fc28157dcb9dde4da6e4d13374a6e6ff05204",
+    "branch_center_report.py": "ea5be65bb41ab098f0ded7e2ecaccfde0669486ee05f74930fc21c9b6efcf361",
+    "cancellation_arithmetic_language.py": "9b598c772b9d4159768f7a48371a06ab8a53f2e4a5cde3866b049618d27d37b9",
+    "cancellation_arithmetic_synthesis.py": "f123a142701a01985e57060208d8933642fa1068871f795149128861a9a02111",
+    "cancellation_arithmetic_templates.py": "c06877b9b03c18bd7e4965c71632f9899680a06641d0ac0781a4e0b32da2c456",
+    "cancellation_divisor_cell_language.py": "c748bb2786d6e4e0adebe2603339e79dede4d47941771b606ff415fe69b56f85",
+    "cancellation_divisor_cells.py": "8f144731d76bb35a5807378d0c83727b17fef6c909b33d37046bcfda0831baad",
+    "cancellation_divisor_coupling.py": "7841539816892ca930671d2b34a317f60464d26074df2ddffc3ac62f24f4a2bf",
+    "cancellation_divisor_localizer_language.py": "835f547ef39aaa1d82a2b0a658d25318928c8560a485d735f070c1e03f218f73",
+    "cancellation_factor_blocks.py": "364c5443fc9c02d8f84798f725f69b5e9253404f88d706bee7d52a8d271fd0c2",
+    "cancellation_factor_search_language.py": "b157d80433001fad069528f5c878120b2927e19419234b8223b1d2b16815ac46",
+    "cancellation_gram_language.py": "5d62e47291be950b6c30e3ef9146c2e875683fb36b1602544611adb7fcd09584",
+    "cancellation_gram_synthesis.py": "522ebfc4ebc1ad9067682fcf026e5b750a38574cf4fc424aedb27b1f4eab9b7d",
+    "cancellation_native_gram_dual.py": "72c9739986e3540f781dd39ad4a4e245525c2c3bcdd69d1019b3f1a7b3ea73bb",
+    "cancellation_sparse_synthesis.py": "b4ab60fa53dc96ca7bdeb3e4749fd92f41d632bc590d439d63e7196e7370cf1c",
+    "candidate_review_report.py": "14e5f57742516e9c0e2206a6ef9936667c843561fba9254b9ec5a4276142e7fa",
+    "check_arithmetic_cycle_certificate.py": "a2efbe5e421bbe0d15e30b6be513d9fa09607abae420c16f3f9667067b5bf7e8",
+    "check_cancellation_arithmetic_run.py": "b23c0f244dfaa7d3cc1907366c4aa9853ca76c7fdcc08adc14a4d1f113f5e6ef",
+    "check_cancellation_divisor_cells.py": "48b889406df7a6b7a3474edc26e84b1cb1ce40351c3113aa98c2c44ba2abc4b4",
+    "check_cancellation_divisor_localizer.py": "d44eb098d921009192dce6ceb31fcfea876ad6c8211e0905c77aafc144a2f046",
+    "check_cancellation_factor_blocks.py": "fa483c714c5412dcff6b91940ec2651f09dc2b1b45e0c4f2d13f3a79d5f8e004",
+    "check_cancellation_factor_search.py": "13d7a0b0a107f5a118df1d0e59077e3b546e117e559bd30be6d90834cc7ac88b",
+    "check_cancellation_gram.py": "cb9792e941591814d4007d4a9afb31567e477044c97f67855ebf2ed478e62e4b",
+    "check_candidate_reviews.py": "f18d59eb886b028d9d586080d9a9b187fb084562849de45b0a8370650c836421",
+    "check_divisor_cell_search.py": "4413c0e451434ae2a4a402ea69ac39813c22dbf18cdf1b3b857b50fb9c942898",
+    "check_grouped_arithmetic.py": "760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e",
+    "check_grouped_arithmetic_run.py": "c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f",
+    "check_grouped_arithmetic_sparse.py": "731c1aa7147c77f8df16dd7be63d4a88e7aa61cc1e28e4ab12d8b7e363570492",
+    "check_prime_twists.py": "88e510e84454c89eac85482869df5cf0569e900bc4fe601c92ce3157b0632e22",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "critical_defect_report.py": "ae1159b55a168039ff310db9433ca495db8ca49ea332979ffee25849adb211ee",
+    "detector_parallel.py": "3ce0381e8b09e7a989864f36dcb54488d9c553f534a297269da803a2389e7260",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "divisor_cell_gram_moment_probe.py": "9df378c14733a5ca6afb036cf42add646d45606d7d3c97d02894fc9f8c68589e",
+    "divisor_dual_analytic_report.py": "1aaa4d08551b3a74ed2c3e1a6f0f987139f9c403b248be576a96708df4b59223",
+    "divisor_dual_report.py": "17fa5e1d15002a1c643b5a90201059e001335afd787582623d2dff1437e9d0cb",
+    "divisor_preconditioner_report.py": "59ff05fb3efb28ebb68673a74ae8d46370d3c2f90e8dde5f1699d313c0a6b809",
+    "exact_polynomial_column_cache.py": "8d568486c2050359d3801ab0c3f2cc9059920d20b6734257370bf5e0716b5a50",
+    "fractional_remainder_report.py": "f4792629f99e132810c1e56be38fe45309726472ac9bc867f3106484dceb6c59",
+    "grouped_arithmetic_language.py": "aafa824b462477852df9ceca1cdf7fb153b17ec4184575e84030dac07ac9c9df",
+    "grouped_arithmetic_sparse.py": "8523765d9724233c5ac12d25e157aae85978a8b3baafc8751208771710efcd3d",
+    "grouped_arithmetic_synthesis.py": "d9165d156dee1d57b7d6cd4901c319792e3fe4908369e4f80a8729aeff6777ad",
+    "grouped_arithmetic_templates.py": "9869beef394818011885fa34521467b86ccb530d3c8bcca654906ccaed4f2b8b",
+    "kernel_correlation_report.py": "b2cdd1ed8d74f500fc1fb9e2681a878d8065a43044eb4d6d43e441d11f48b399",
+    "lattice_synthesis_report.py": "857ec0352368f7c7f79dbf90ba23c64640e7b28ea257c53ae4e247ca023649cd",
+    "mellin_kernel_report.py": "6adce33c631b07b13cead31577b533ddb2859bbf5df8d2ef8d8954940c38fe99",
+    "mertens_limit_report.py": "19b0d01dce57b2ac9eed239b8f5ffd0c53065cf00c5eed8d40f880684979f9db",
+    "native_exact_support.py": "78f62b540b3a7bd2a9a60715a27c933e8b693f25ac764e2bddd6aa96302bba7c",
+    "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_oscillation_report.py": "5c85bc3a5ef007d0f541fb10b6c19bb6deff7c4d3fff5e178c6fedcd137c1501",
+    "prime_twist_coverage_report.py": "ef96266355a1dcb25b81d159f83f39bc5de598103750415a4d4a87c57340a2fd",
+    "prime_twist_report.py": "584ce2639c4fde755b3c1e78a302a2a1c912c2865a011eba27e3071ed2305d53",
+    "root_lattice_report.py": "6d9259174716b161614a7b153939aac26df66621a36c7b98f3da456103625ab0",
+    "run_detector.py": "da653631344f720dad60dc7fe627140f84fd6a6e48079c5fcecad7d1bafd2c8c",
+    "run_divisor_cell_search.py": "9a3d991d501d6110b9f57cac9e80ba968aa1f76a23aefbb91ec8bb701539b321",
+    "signed_gap_cofinal_report.py": "8d1a34ae19b81f2b784875339606e839c2bb57cf60eb9d6612b2d5efa692dfb3",
+    "signed_gap_profile_report.py": "2d90e88a76cbeb0bed6c98bc503eb4efe677915f5fec595f166adde9b3f001fe",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "test_cancellation_divisor_cell_language.py": "3f622c1bbdd30d36ea5a4c89944e2a26863287df4a345fcd6975b295338ba147",
+    "test_cancellation_divisor_cells.py": "c51c29a1b3e70c600f5ea859ac52b9163c9c33fe8117be8e631fe14882e4d0ec",
+    "test_cancellation_native_gram_dual.py": "215cc944ba77462a3c4eb10e68638c0f599002c171dcf51a96ce6c7578ca5fe1",
+    "test_check_cancellation_divisor_cells.py": "cf9cec023e83e1d61c119aa49623fbffff7503edfd9bda4f5c2143390b9f2246",
+    "test_run_divisor_cell_search.py": "4e9895bdb33784a260e53ac2af3527aec0f7514518856d5590768d8a6c8d0c31"
+  },
+  "contexts": [
+    {
+      "power": -1,
+      "region": "parent",
+      "theta": "1/3"
+    },
+    {
+      "power": 0,
+      "region": "parent",
+      "theta": "1/3"
+    },
+    {
+      "power": 1,
+      "region": "parent",
+      "theta": "1/3"
+    },
+    {
+      "power": -1,
+      "region": "parent",
+      "theta": "1/2"
+    },
+    {
+      "power": 0,
+      "region": "parent",
+      "theta": "1/2"
+    },
+    {
+      "power": 1,
+      "region": "parent",
+      "theta": "1/2"
+    },
+    {
+      "power": -1,
+      "region": "parent",
+      "theta": "2/3"
+    },
+    {
+      "power": 0,
+      "region": "parent",
+      "theta": "2/3"
+    },
+    {
+      "power": 1,
+      "region": "parent",
+      "theta": "2/3"
+    },
+    {
+      "power": -1,
+      "region": "child",
+      "theta": "1/3"
+    },
+    {
+      "power": 0,
+      "region": "child",
+      "theta": "1/3"
+    },
+    {
+      "power": 1,
+      "region": "child",
+      "theta": "1/3"
+    },
+    {
+      "power": -1,
+      "region": "child",
+      "theta": "1/2"
+    },
+    {
+      "power": 0,
+      "region": "child",
+      "theta": "1/2"
+    },
+    {
+      "power": 1,
+      "region": "child",
+      "theta": "1/2"
+    },
+    {
+      "power": -1,
+      "region": "child",
+      "theta": "2/3"
+    },
+    {
+      "power": 0,
+      "region": "child",
+      "theta": "2/3"
+    },
+    {
+      "power": 1,
+      "region": "child",
+      "theta": "2/3"
+    }
+  ],
+  "domain_policy": "Absent monomials are unknown; no zero extension.",
+  "dual_not_read_before_freeze": true,
+  "global_bound_proved": false,
+  "max_horizon": 80,
+  "max_operations": 20000000,
+  "moments": [
+    "sum y(P_t^2)",
+    "sum y(P_t D_j(t))",
+    "sum y(D_j(t)^2)"
+  ],
+  "parent_protocol_sha256": "66ff4307a78d22b3205f4b5d1a610656a125d32279d0b12009d9799bed7169e8",
+  "scales": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "scope": "outcome-conditioned dual audit preregistered before reading new dual weights",
+  "version": 1
+}

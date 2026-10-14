@@ -1,0 +1,3173 @@
+{
+  "candidates": [
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 2.153539107740014,
+      "calibrations": [
+        {
+          "kappa": "16216985661/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "1160914089759/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "37885465283689/17592186044416"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2412,
+        "peak_bytes": 0,
+        "price": "37885465283689/17592186044416",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "949463/8388608",
+          "11360771/8388608"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q1_baseline",
+      "kappas": [
+        "16216985661/1099511627776",
+        "1160914089759/549755813888"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "1",
+            "determinant_polynomial": [
+              "1",
+              "0"
+            ],
+            "determinant_upper": "1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-1",
+            "determinant_polynomial": [
+              "-1",
+              "0"
+            ],
+            "determinant_upper": "-1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p16_5_8_baseline.json",
+      "q": "1",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 3.819340564940788,
+      "calibrations": [
+        {
+          "kappa": "2445836680633/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "403112356835/274877906944",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "1075048812715969/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2414,
+        "peak_bytes": 0,
+        "price": "1075048812715969/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "11660213/8388608",
+          "9467511/16777216"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "5/8"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q1_promoted",
+      "kappas": [
+        "2445836680633/1099511627776",
+        "403112356835/274877906944"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "determinant_polynomial": [
+              "1",
+              "-1"
+            ],
+            "determinant_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "determinant_polynomial": [
+              "-1",
+              "1"
+            ],
+            "determinant_upper": "-353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p16_5_9_promoted.json",
+      "q": "1",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 1.96972779737927,
+      "calibrations": [
+        {
+          "kappa": "14685243535/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "132838965045/68719476736",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "554429138449761/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2396,
+        "peak_bytes": 0,
+        "price": "554429138449761/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "903511/8388608",
+          "21739297/16777216"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q129_128_baseline",
+      "kappas": [
+        "14685243535/1099511627776",
+        "132838965045/68719476736"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "1",
+            "determinant_polynomial": [
+              "1",
+              "0"
+            ],
+            "determinant_upper": "1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-1",
+            "determinant_polynomial": [
+              "-1",
+              "0"
+            ],
+            "determinant_upper": "-1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p16_5_8_baseline.json",
+      "q": "129/128",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 3.4908015726057906,
+      "calibrations": [
+        {
+          "kappa": "1119470996831/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "1468077816683/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "245643336498169/70368744177664"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2420,
+        "peak_bytes": 0,
+        "price": "245643336498169/70368744177664",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "5578073/4194304",
+          "4516867/8388608"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "5/8"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q129_128_promoted",
+      "kappas": [
+        "1119470996831/549755813888",
+        "1468077816683/1099511627776"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "determinant_polynomial": [
+              "1",
+              "-1"
+            ],
+            "determinant_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "determinant_polynomial": [
+              "-1",
+              "1"
+            ],
+            "determinant_upper": "-353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p16_5_9_promoted.json",
+      "q": "129/128",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 1.5072224895190534,
+      "calibrations": [
+        {
+          "kappa": "5452355837/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "407597604815/274877906944",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "424245430533961/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2402,
+        "peak_bytes": 0,
+        "price": "424245430533961/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "389287/4194304",
+          "19040071/16777216"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p16_q33_32_baseline",
+      "kappas": [
+        "5452355837/549755813888",
+        "407597604815/274877906944"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "1",
+            "determinant_polynomial": [
+              "1",
+              "0"
+            ],
+            "determinant_upper": "1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-1",
+            "determinant_polynomial": [
+              "-1",
+              "0"
+            ],
+            "determinant_upper": "-1",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 2
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p16_5_8_baseline.json",
+      "q": "33/32",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 2.665283010966692,
+      "calibrations": [
+        {
+          "kappa": "214683666429/137438953472",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "553997721779/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "750210511380841/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2413,
+        "peak_bytes": 0,
+        "price": "750210511380841/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "19541921/16777216",
+          "3924025/8388608"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "5/8"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p16_q33_32_promoted",
+      "kappas": [
+        "214683666429/137438953472",
+        "553997721779/549755813888"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "determinant_polynomial": [
+              "1",
+              "-1"
+            ],
+            "determinant_upper": "6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-6803132855236480622522538584598365421834842933548846149791802064799481753055294904469498747350523666773127910789/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+            "determinant_polynomial": [
+              "-1",
+              "1"
+            ],
+            "determinant_upper": "-353762908472296992371172006399115001935217628381769454844778874512915247009990369458690481659799095187164446267067/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 6
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p16_5_9_promoted.json",
+      "q": "33/32",
+      "source_id": "q1_p16",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 1.1267795088740369,
+      "calibrations": [
+        {
+          "kappa": "2236492411/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "381050804563/274877906944",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "79290066823009/70368744177664"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2536,
+        "peak_bytes": 0,
+        "price": "79290066823009/70368744177664",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "915177/16777216",
+          "16893817/16777216"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q1_baseline",
+      "kappas": [
+        "2236492411/549755813888",
+        "381050804563/274877906944"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "16475815/67108864",
+            "determinant_polynomial": [
+              "16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-16475815/67108864",
+            "determinant_polynomial": [
+              "-16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "-16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p04_5_8_baseline.json",
+      "q": "1",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 2.436622511703386,
+      "calibrations": [
+        {
+          "kappa": "1763278549907/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "343353942263/274877906944",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "171462080488609/70368744177664"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2542,
+        "peak_bytes": 0,
+        "price": "171462080488609/70368744177664",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "18170497/16777216",
+          "8018209/16777216"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "2/3"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p04_q1_promoted",
+      "kappas": [
+        "1763278549907/1099511627776",
+        "343353942263/274877906944"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "determinant_polynomial": [
+              "41638233/67108864",
+              "-41638233/67108864"
+            ],
+            "determinant_upper": "2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "determinant_polynomial": [
+              "-41638233/67108864",
+              "41638233/67108864"
+            ],
+            "determinant_upper": "-8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p04_5_9_promoted.json",
+      "q": "1",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 1.0308920582751089,
+      "calibrations": [
+        {
+          "kappa": "4050498213/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "348817504787/274877906944",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "290170340465769/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2533,
+        "peak_bytes": 0,
+        "price": "290170340465769/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "870885/16777216",
+          "8081751/8388608"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q129_128_baseline",
+      "kappas": [
+        "4050498213/1099511627776",
+        "348817504787/274877906944"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "16475815/67108864",
+            "determinant_polynomial": [
+              "16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-16475815/67108864",
+            "determinant_polynomial": [
+              "-16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "-16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p04_5_8_baseline.json",
+      "q": "129/128",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 2.2268146587557123,
+      "calibrations": [
+        {
+          "kappa": "807060917675/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "1250446177995/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "626792633573929/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2527,
+        "peak_bytes": 0,
+        "price": "626792633573929/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "543281/524288",
+          "7650835/16777216"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "2/3"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p04_q129_128_promoted",
+      "kappas": [
+        "807060917675/549755813888",
+        "1250446177995/1099511627776"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "determinant_polynomial": [
+              "41638233/67108864",
+              "-41638233/67108864"
+            ],
+            "determinant_upper": "2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "determinant_polynomial": [
+              "-41638233/67108864",
+              "41638233/67108864"
+            ],
+            "determinant_upper": "-8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p04_5_9_promoted.json",
+      "q": "129/128",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 0.7894840249597155,
+      "calibrations": [
+        {
+          "kappa": "3007748223/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 327635
+        },
+        {
+          "kappa": "1070297253675/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        }
+      ],
+      "certificate": {
+        "price": "222220050260209/281474976710656"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2524,
+        "peak_bytes": 0,
+        "price": "222220050260209/281474976710656",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "187615/4194304",
+          "14156587/16777216"
+        ]
+      },
+      "frame": {
+        "index": 1,
+        "mode": "baseline",
+        "primitive_index": 1,
+        "promotion_rule": null,
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/8",
+      "id": "q1_p04_q33_32_baseline",
+      "kappas": [
+        "3007748223/1099511627776",
+        "1070297253675/1099511627776"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "7/5",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "logspec": {
+        "argument": "7/5",
+        "lower": "10936095895676235800076154949906521969472357803912070242595480028990442657/32502223676741739196370539189898439746218227866616901757449229847389798400",
+        "terms": 32,
+        "upper": "5468047947838117900038077474953260984736178901956036474625217238421809597/16251111838370869598185269594949219873109113933308450878724614923694899200"
+      },
+      "mode": "baseline",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "16475815/67108864",
+            "determinant_polynomial": [
+              "16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-16475815/67108864",
+            "determinant_polynomial": [
+              "-16475815/67108864",
+              "0"
+            ],
+            "determinant_upper": "-16475815/67108864",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 10
+          }
+        }
+      ],
+      "promotion_admission": null,
+      "proposal_file": "proposal_q1_p04_5_8_baseline.json",
+      "q": "33/32",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    },
+    {
+      "RH_proved": false,
+      "all_uniform_covariance_leaves_unpaid": true,
+      "approximate_price": 1.699728809371017,
+      "calibrations": [
+        {
+          "kappa": "619088113327/549755813888",
+          "uniform_correlation_proved": false,
+          "worst_u": 81890
+        },
+        {
+          "kappa": "943743343771/1099511627776",
+          "uniform_correlation_proved": false,
+          "worst_u": 163810
+        }
+      ],
+      "certificate": {
+        "price": "119607797806225/70368744177664"
+      },
+      "cover_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "coefficient_norm_admission_still_required": true,
+        "exact_affine_cover_verified": true,
+        "finite_u_threshold_supplied": false,
+        "inactive_coordinate_admission_still_required": true,
+        "maxima": [
+          "1",
+          "1/2"
+        ],
+        "noncircularity_still_required": true,
+        "ops": 2549,
+        "peak_bytes": 0,
+        "price": "119607797806225/70368744177664",
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_CONDITIONAL_COVER",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_leaves_still_required": true,
+        "uniform_source_bound_proved": false,
+        "weights": [
+          "3806603/4194304",
+          "3323329/8388608"
+        ]
+      },
+      "frame": {
+        "index": 56,
+        "mode": "promoted",
+        "primitive_index": 183,
+        "promotion_rule": {
+          "coordinates": [
+            1,
+            9
+          ],
+          "domain": "1/2<gamma<3/4",
+          "imported_from": "079/postrun_next_search_input.json",
+          "log_argument_formula": "(3-2*gamma)/(2*gamma)",
+          "lower_logarithmic_remainders_unpaid": true,
+          "observed_gammas": [
+            "2/3"
+          ],
+          "other_channels_unpaid": true,
+          "signature": [
+            "-1",
+            "L"
+          ],
+          "use_proved_domain_beyond_observed_gamma": true
+        },
+        "rays": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "frozen_before_validation_draw": true,
+      "gamma": "5/9",
+      "id": "q1_p04_q33_32_promoted",
+      "kappas": [
+        "619088113327/549755813888",
+        "943743343771/1099511627776"
+      ],
+      "log_admission": {
+        "RH_proved": false,
+        "argument": "17/10",
+        "arithmetic_residual_refuted": false,
+        "finite_u_threshold_supplied": false,
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "ops": 832,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LOG_ENCLOSURE",
+        "terms": 32,
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "logspec": {
+        "argument": "17/10",
+        "lower": "7690992261223364352174498074701491242560592537952532617750793602589760800253685944255770029690416918721215265536/14494125116459844974697036659299856664395435471501378767542595667389242553308980848725268777040940585494343176325",
+        "terms": 32,
+        "upper": "399931597583614946313073899884477544613345016136302241067436100191325365762076634675023494746329815258541398901833/753694506055911938684245906283592546548562644518071695912214974704240612772067004133713976406128910445705845168900"
+      },
+      "mode": "promoted",
+      "noncircularity": [
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "determinant_polynomial": [
+              "41638233/67108864",
+              "-41638233/67108864"
+            ],
+            "determinant_upper": "2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        },
+        {
+          "admission": {
+            "RH_proved": false,
+            "arithmetic_residual_refuted": false,
+            "cell_admission_still_required": true,
+            "determinant_lower": "-2195894813614665505895957436720906595763585097562095913691348495069782321805928923379951397173559977590029907660741053/7540188149143317037736642436992003225662069157191952740492276487207859795139729812059756866061138016930389527049011200",
+            "determinant_polynomial": [
+              "-41638233/67108864",
+              "41638233/67108864"
+            ],
+            "determinant_upper": "-8783579254458662023583829746883626383049518495090953794341014675281172668011050883289825969131151734402106036365006543/30160752596573268150946569747968012902648276628767810961969105948831439180558919248239027464244552067721558108196044800",
+            "finite_u_threshold_supplied": false,
+            "noncircularity_proved": true,
+            "ops": 1061,
+            "peak_bytes": 0,
+            "residual_lower_bound_proved": false,
+            "source_admission_still_required": true,
+            "status": "VERIFIED_NONCIRCULARITY",
+            "uniform_bound_proved": false,
+            "uniform_correlation_proved": false,
+            "uniform_source_bound_proved": false
+          },
+          "u": 327680,
+          "witness": {
+            "first_cell": 0,
+            "second_cell": 24
+          }
+        }
+      ],
+      "promotion_admission": {
+        "RH_proved": false,
+        "arithmetic_residual_refuted": false,
+        "conclusion": "prime/last-bin subexpression is o(u/log u); lower logarithmic remainders and other channels unpaid",
+        "finite_u_threshold_supplied": false,
+        "fixed_kernel_binding_still_required": true,
+        "imported_theorem": {
+          "name": "Classical Prime Number Theorem",
+          "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf"
+        },
+        "leading_mode_annihilated": true,
+        "ops": 886,
+        "peak_bytes": 0,
+        "residual_lower_bound_proved": false,
+        "source_admission_still_required": true,
+        "status": "VERIFIED_LEADING_MODE_ANNIHILATION",
+        "uniform_bound_proved": false,
+        "uniform_correlation_proved": false,
+        "uniform_source_bound_proved": false,
+        "whole_ray_mode_annihilated": false
+      },
+      "proposal_file": "proposal_q1_p04_5_9_promoted.json",
+      "q": "33/32",
+      "source_id": "q1_p04",
+      "uniform_source_bound_proved": false
+    }
+  ],
+  "validation_draw_started": false
+}

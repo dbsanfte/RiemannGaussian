@@ -1,0 +1,31 @@
+{
+  "schema": "prime-scale-dense-054-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.011236906982958317,
+      "operations": 92872
+    }
+  ],
+  "total_primitive_counts": {
+    "source_prefix_entries_validated": 1752,
+    "recovered_difference_entries": 1314,
+    "convolution_center_entries": 1082,
+    "convolution_up_entries": 754,
+    "convolution_down_entries": 328,
+    "summatory_prefix_entries": 1314,
+    "new_scales_tested": 104,
+    "filter_terms": 112,
+    "exact_squared_comparisons": 203
+  },
+  "peak_bytes_estimate": 31113328,
+  "scope": "source-free injected integer atom/prefix/scalar fixtures only; no saved source array or logarithm evaluated",
+  "actual_pilot_applied": false,
+  "old_source_atoms_rerun": false,
+  "old_suites_or_studies_replayed": false,
+  "checker_imported": false,
+  "all_scale_bound_claimed": false
+}

@@ -1,0 +1,48 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "certificate_replay_counts": {
+    "max_power_bits": 180,
+    "operations": 55301
+  },
+  "development_receipt": {
+    "additional_norms_evaluated": false,
+    "cumulative_operations": 62059,
+    "frozen_files_modified": false,
+    "hashes_generated": false,
+    "invocations": [
+      {
+        "elapsed_seconds": 0.05455731903202832,
+        "errors": 0,
+        "exposure": "synthetic exact cell witnesses, scalar arithmetic channels and rational root brackets only",
+        "failures": 0,
+        "max_power_bits": 5401,
+        "operations": 62059,
+        "returncode": 0,
+        "tests": 12
+      }
+    ],
+    "schema": "floor-recovery-review-development-v1",
+    "source_arrays_read": false
+  },
+  "elapsed_seconds": 1.0390759820002131,
+  "family_convergence_proved": false,
+  "frontier_review_counts": {
+    "max_power_bits": 182,
+    "operations": 2034932
+  },
+  "full_signed_core_bound_proved": false,
+  "new_norms_evaluated": 0,
+  "prior_norm_evaluations_rerun": 0,
+  "recipes_refuted": 402,
+  "recipes_remaining_open": 32,
+  "selected_forcing_claims_refuted": 3,
+  "selected_review_counts": {
+    "max_power_bits": 182,
+    "operations": 33764
+  },
+  "selected_rules_reviewed": 3,
+  "selected_targets_refuted": 3,
+  "status": "FLOOR_RESIDUAL_SELECTED_FAMILIES_REFUTED_LOCAL_RECOVERY_GATE_VERIFIED",
+  "total_frozen_recipes": 434
+}

@@ -1,0 +1,250 @@
+044 INDEPENDENT REVIEW: CONVEX MOBIUS POWER CUTOFFS
+New post-analysis proof and executable guard; no frozen source or result edits.
+
+1. Result and limits
+
+For a fixed convex mixture
+    w(t)=sum_i lambda_i(1-t^alpha_i), 0<=t<=1,
+    alpha_i>0, lambda_i>=0, sum_i lambda_i=1,
+consider the actual coefficients c_n(N)=-mu(n) times the dyadically rounded
+version of w(n/N), for 2<=n<=N. The precision is p=4 ceil(log_2 N), each
+inner power is rounded down, and the outer taper exponent is exactly one.
+Let f_n be the original floor basis, g_N=sum c_n f_n, e_N=chi-g_N,
+and h_N=e_(qN)-b D_q e_N, D_q f(x)=f(qx). For fixed integer q>=2 and
+fixed real b with |b|<sqrt(q),
+
+    ||h_N||_2 does not tend to zero as N tends to infinity through ALL integers.
+
+Consequently, for every finite A>=0 and eta>0, the uniform assertion
+    ||h_N||_2^2 <= A/(1+floor(log_2 N))^eta
+for every integer N>=N0 is false, for every finite starting threshold N0.
+This conclusion concerns the exact functions and rounded coefficients. It does
+not depend on finite numerical slopes, observed norms, RH, or simple zeros.
+It yields no specific finite violating N and no positive numerical lower bound.
+
+The supported mixed recipe has c_n=-mu(n)(T_(2/7)+T_1)/2, obtained by generic
+AST coefficient algebra; the baseline has c_n=-mu(n)T_(2/7). Thus the theorem
+applies to both analytic formulas in the task. No executable application to
+either actual selected payload was run during this review. Their already-saved
+finite norm certificates are untouched and may all hold while the stated
+all-integer uniform extension fails.
+
+The conclusion does NOT refute any individual fixed geometric subsequence or
+every possible later tapping. Original019, original041 core, and RH remain OPEN.
+Full-sequence convergence e_N->0 for this supported shape is also impossible:
+it would imply h_N->0 by the triangle inequality and ||D_q||=q^(-1/2).
+That is a statement about this particular family, not about all approximations.
+
+2. Imported facts and exact transformed basis
+
+Use the known L2 unitary U commuting with positive dilations and satisfying
+    U rho(1/x)=rho(x)/x,
+    U chi(x)=S(x)=sin(2*pi*x)/(pi*x).
+These are imported facts, displayed in Baez-Duarte, Arithmetical aspects of
+Beurling's real variable reformulation of the Riemann hypothesis, section4,
+equations4.1-4.4: https://arxiv.org/pdf/math/0011254 .
+No unitary is numerically constructed or newly discovered here. The other
+imported fact is that ordinary zeta has at least one zero rho=1/2+i*tau on the
+critical line. Neither its simplicity nor the absence of other zeros is needed.
+
+Writing rho for fractional part only in the following basis identities,
+    f_n(x)=rho(1/(n*x))-rho(1/x)/n,
+which equals floor(1/x)/n-floor(1/(n*x)) on 0<x<=1 and is zero for x>1.
+Commutation gives
+    U f_n(x)=[rho(n*x)-rho(x)]/(n*x).
+On 0<x<1/N, every n<=N therefore has U f_n(x)=1-1/n. This interval
+identity is exact; endpoint values at single points do not affect the norm.
+Define the signed constant
+    T_N=sum_(2<=n<=N) c_n(N)(1-1/n).
+Then on 0<x<1/(qN), all terms in both g_(qN) and D_q g_N are constant,
+and the FULL refinement forcing satisfies
+    U h_N(x)=S(x)-b*S(q*x)-[T_(qN)-b*T_N].                    (2.1)
+In particular, |S(x)|<=2 and the L2 triangle inequality on this interval give
+    |T_(qN)-b*T_N|/sqrt(N)
+       <=sqrt(q)||h_N||_2+2(1+|b|)/sqrt(N).                  (2.2)
+The indicator forcing chi-b D_q chi is present in (2.1); it is never discarded.
+All signed contributions of g_(qN) and the dilated parent remain in T.
+
+3. Rounding, harmonic complement, and unit
+
+Let the unrounded sums be
+    F_w(x)=sum_(n<=x) mu(n)w(n/x),
+    m_w(N)=sum_(n<=N) mu(n)w(n/N)/n.
+The actual taper is 1-floor_(2^-p)((n/N)^alpha). Its outer power-one floor is
+exact on that dyadic. Thus its difference from 1-(n/N)^alpha lies in
+[0,2^-p], including exact zero error at n=N. Since 2^-p<=N^-4 and the
+merged weights are convex, the effective weight error is at most N^-4.
+Identical powers in the literal AST have identical floors, so their coefficients
+can be combined before this error is bounded, even if the raw AST has negative
+terms which cancel. Therefore
+    T_N=-F_w(N)+m_w(N)+delta_N, |delta_N|<=N^-3.             (3.1)
+Indeed |1-1/n|<=1 and there are fewer than N summands.
+
+There is no missing n=1 basis term. The n=1 contributions -mu(1)w(1/N) and
++mu(1)w(1/N)/1 cancel IDENTICALLY in (3.1). This is why the useful scalar
+sum can include the unit while the original g_N starts at n=2. As 0<=w<=1,
+    |m_w(N)|<=sum_(n<=N)1/n<=1+log N.                      (3.2)
+No arithmetic cancellation is assumed in this paid harmonic complement.
+
+Set G(x)=F_w(qx)-b F_w(x). Combining (2.2)-(3.2) gives the explicit bound
+    |G(N)|/sqrt(N) <=sqrt(q)||h_N||_2
+      +[2(1+|b|)+(1+log(qN))+|b|(1+log N)
+         +(qN)^(-3)+|b|N^(-3)]/sqrt(N).                    (3.3)
+Consequently, vanishing forcing on all integers implies G(N)=o(sqrt(N)).
+In particular, no full-energy convergence/interpolation argument is necessary.
+
+4. Exact integer-to-real transfer
+
+For a single power alpha, the real sum F_alpha(x) is continuous at every
+integer: the newly entered term has weight 1-(n/x)^alpha=0 at x=n. Between
+integers its derivative obeys the elementary estimate
+    |F_alpha'(x)|
+      <=alpha*x^(-alpha-1)*sum_(n<=x)n^alpha<=alpha.
+Thus F_w is globally Lipschitz on [1,infinity) with constant
+    C_w=sum_i lambda_i alpha_i.
+G is Lipschitz with constant (q+|b|)C_w. For integer N<=x<N+1,
+    |G(x)-G(N)|<=(q+|b|)C_w.
+The all-integer little-o implication from (3.3) therefore extends to
+    G(x)=o(sqrt(x)) for ALL real x->infinity.               (4.1)
+This uses fixed positive powers and zero endpoint weight, not a claim about
+arbitrary moving/logarithmic cutoff ASTs. The dyadic rounding is removed with
+the explicit error in section3 before this Lipschitz argument is used.
+
+5. Mellin identity with the entire endpoint term
+
+For Re(s)>1, absolute convergence justifies exchanging the scalar sum and
+integral. For each n and alpha,
+    integral_n^infinity [1-(n/x)^alpha]x^(-s-1)dx
+      =n^(-s)*alpha/[s(s+alpha)].
+Since sum mu(n)n^(-s)=1/zeta(s), define the EXACT rational function
+    K_w(s)=sum_i lambda_i alpha_i/[s(s+alpha_i)]
+and obtain Mellin(F_w)(s)=K_w(s)/zeta(s). Scaling the LOWER ENDPOINT as well
+as the integrand gives
+    Mellin(G)(s)=(q^s-b)K_w(s)/zeta(s)-C_q(s),             (5.1)
+    C_q(s)=q^s*integral_1^q F_w(t)t^(-s-1)dt.
+C_q is entire because its integral is over a fixed compact positive interval.
+This term cannot be omitted; the whole transformed function includes it.
+
+For Re(s)>0, the factor s is nonzero and
+    Re[s K_w(s)]
+      =sum_i lambda_i alpha_i (Re(s)+alpha_i)/|s+alpha_i|^2>0.   (5.2)
+At least one weight is positive, so K_w has no zero in that half-plane.
+This is a positive Stieltjes proof, not the incorrect general claim that an
+arbitrary polynomial with positive coefficients has no right-half-plane zeros.
+At a known critical zero rho,
+    |q^rho|=sqrt(q)>|b|,
+so (q^rho-b)K_w(rho) is nonzero.
+
+6. Boundary-pole contradiction, including multiple zeros
+
+Suppose (4.1) holds. Mellin(G) then converges absolutely and is holomorphic in
+Re(s)>1/2. For delta>0, splitting its integral at an arbitrary fixed A and
+using |G(x)|<=epsilon sqrt(x) on the tail proves
+    delta*Mellin(G)(rho+delta)->0.                         (6.1)
+The finite head contributes O_A(delta), and the absolute tail is bounded by
+epsilon*delta*integral_A^infinity x^(-delta-1)dx<=epsilon.
+
+Multiply (5.1) by zeta before taking the limit. The resulting meromorphic
+identity continues from Re(s)>1 to Re(s)>1/2; any pole at s=1 is handled as a
+meromorphic identity and is irrelevant near the nonreal critical zero.
+As zeta is analytic and vanishes at rho, even for a multiple zero,
+    zeta(rho+delta)=O(delta).
+Equation (6.1) implies zeta(rho+delta)*Mellin(G)(rho+delta)->0, whereas the
+right side tends to
+    (q^rho-b)K_w(rho)-zeta(rho)*C_q(rho)
+      =(q^rho-b)K_w(rho) != 0.
+This contradiction proves section1. No assertion of RH, simple zeros,
+zero-free continuation, prime independence, or sign randomness occurs here.
+The conclusion is limsup_N ||h_N||_2>0 (possibly infinite); it is not a
+pointwise lower bound at every large N and not a subsequence theorem.
+
+7. Selected analytic formulas, without actual guard applications
+
+For the baseline alpha=2/7,
+    K_0(s)=2/[s(7s+2)].
+Ascending rational polynomial coefficients can be given as numerator [2]
+and denominator [0,2,7]. This is a scaled representation of the denominator
+factorization used by the executable guard, which preserves monic factors.
+For the half-and-half mixed formula,
+    K_mix(s)=(9s+4)/[2s(7s+2)(s+1)].
+One scaled coefficient representation is numerator [4,9] and denominator
+[0,4,18,14]; its only numerator zero is -4/9. Both formulas also satisfy the
+generic Stieltjes argument, so no bespoke identifier/zero check is required.
+Their Lipschitz constants are 2/7 and 9/14 respectively.
+
+The frozen auxiliary convention c=-mu*base+lambda*mu*(left-right) makes
+the effective weight base-lambda*left+lambda*right. For the mixed formula,
+left=base=T_(2/7), right=T_1, lambda=1/2: the weights become 1/2,1/2.
+Recognizing this signed AST algebra, rather than naming compatible0149, is
+essential to reusing the argument on genuinely generated recipes.
+
+8. Executable certificate API and verifier scope
+
+NEW files:
+    floor_residual_cutoff_guard_044.py
+    test_floor_residual_cutoff_guard_044.py
+    floor_residual_cutoff_guard_044_development_receipt.json
+
+API:
+    build_guard(request, meter=None)
+    verify_guard(request, certificate, meter=None)
+    Meter(...).operations
+
+Request schema, with exact canonical rational strings:
+    {recipe:{id:ordinal_label,base:taper_AST,auxiliary:null_or_aux_AST},
+     q:integer, b:rational_string,
+     domain:{kind:"all_integer",minimum:integer_N0},
+     rounding:{kind:"dyadic_power_floor",bits_multiplier:4,
+               scale:"ceil_log2_N"}}
+The existing recipe AST is used directly, with no recipe-ID whitelist. A taper
+has kind taper, coordinate cutoff, positive rational alpha, and gamma "1".
+A nonnull auxiliary must use actual mu and a literal difference envelope
+whose two children have the same supported taper shape. The guard normalizes
+base-coefficient*left+coefficient*right and admits only a convex mixture after
+merging equal powers. Labels do not affect admission but are retained in full
+payload identity. No data-dependent signs, coefficient fitting, or numerical
+Mellin evaluations enter this decision.
+
+Output status REFUTED_ALL_INTEGER_VANISHING_FORCING binds the full request,
+exact rational mixture, ascending numerator/denominator coefficients of K,
+the positive-Stieltjes argument, q-b^2>0, exact rounding/harmonic/unit costs,
+Lipschitz transfer, entire endpoint term, imported dependencies, and scope.
+The method returns UNSUPPORTED for other ASTs or domains; this never means
+those recipes are refuted. Resource failures propagate instead of producing
+an obstruction certificate. Geometric-subsequence status and original019/041
+core/RH status are always OPEN in a valid scoped certificate.
+
+The verifier does NOT call the producer build_guard or its kernel constructor.
+It independently normalizes coefficients with a list-based algorithm, checks
+the denominator factorization s*product(s+alpha_i), and verifies K by exact
+cross multiplication against the literal Stieltjes fractions. Strict JSON
+identity binds every proof field and prevents booleans masquerading as numeric
+flags. Shared syntax/rational parsers and static theorem-schema constants are
+explicit trusted code; this is an executable algebraic guard, not a new formal
+proof of the imported analytic facts. The verifier returns a scoped dictionary
+with verified True, status REFUTED, and the OPEN/false flags.
+
+Finite input/certificate sizes, parameter/intermediate rational bit caps, a
+deadline, and a metered exact-algebra operation cap keep this small schema
+bounded. These are proxy counts rather than machine-instruction counts.
+No source sieve, floor-residual compiler, norm evaluator, old suite or saved
+score module is imported by either producer or verifier.
+
+9. Development receipt and final status
+
+The sole actual owned suite invocation used python3 and passed 11/11 tests
+in 0.011 seconds, consuming 2,035 cumulative metered proxy operations.
+An earlier attempt to launch the absent command python executed no tests.
+The receipt preserves the successful invocation, exact work and toy-only scope.
+Tests exercise literal one/two-power kernels, signed AST normalization, exact
+duplicate-power cancellation, nonconvex/unsupported rejection, all-integer vs
+geometric scope, strict b^2<q, rounding policy, kernel/flag/Lipschitz tampering,
+payload/type identity, and resource failures. The synthetic exponents and
+labels differ from the actual selected recipes. No selected application,
+Mobius table, norm, arithmetic study, source sweep, or hash was generated.
+
+This review is complete. The proof memo, new guard, focused tests and receipt
+are stopped for independent parent review and a separate application freeze.
+The correct detector action is a scoped obstruction to an all-integer theorem,
+with unsupported families forwarded to other arguments and individual chains
+left open; it is not a global rejection of floor-residual proof search.

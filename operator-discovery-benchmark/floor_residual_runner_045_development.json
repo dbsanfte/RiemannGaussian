@@ -1,0 +1,14 @@
+{
+  "schema": "drift-runner-integration-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.08973421098198742,
+      "operations": 1612285
+    }
+  ],
+  "scope": "synthetic source programs at7,11,13 and symbolic allocations; no final supports or norms"
+}

@@ -1,0 +1,345 @@
+EXACT LATTICE PRIME-MOMENT TRANSFER REVIEW075
+==========================================
+
+Status and scope
+----------------
+The lattice lift, prime grouping, reciprocal prices and conditional
+strong-induction transfer below are valid. One necessary correction to
+the supplied premises is that the rational contraction witness must obey
+0<=r<1, not merely r<1. A negative r does not imply sqrt(rho)<=r and can
+make the proposed residual budget invalid. C, Bbase and B are nonnegative.
+No actual candidate arithmetic lemma is proved here. Finite fitting is
+not a uniform proof. The original source family remains necessary only;
+the complete head, core and RH remain open.
+
+This review reads the074 handoff and reduction, creates only this new
+review in the project, performs no scientific source-scale study, uses
+no hashes and changes no frozen file. Temporary downloads used to inspect
+a primary mathematical source are not scientific datasets.
+
+1. Exact lattice, floors and units
+---------------------------------
+Write M(x)=sum_{1<=n<=floor(x)}mu(n), with empty prefixes zero. For t>=0,
+Z(t)=M(10t)-M(8t)-M(20t)+M(16t). Set
+
+ G(u)=M(u//8)-M(u//10)-M(u//4)+M(u//5), u integer>=0.
+
+Then G(u)=Z(u/80). For real v>=0 and integer h>=1,
+floor(v/h)=floor(floor(v)/h): writing floor(v)=ah+b, 0<=b<h,
+the remainder b+(v-floor(v)) stays in[0,h). Apply this with v=80t
+and h=8,10,4,5 to prove Z(t)=G(floor(80t)) for every real t>=0.
+In particular for integer d>=1,
+
+ Z(t/d)=G(floor(floor(80t)/d)).
+
+For integer u, (u//d)//e=u//(de), so dilation operators
+T_d f(u)=f(u//d) compose exactly: T_d T_e=T_{de}. This is an
+identity of the source stencil, not an interpolation or an estimate.
+No rounding correction remains. G(0),G(1),G(2),G(3) are zero, because
+all four prefixes are empty. At u=4 the negative unit gives G(4)=-1.
+Thus removing units at rational children would already corrupt a base
+row. The complete finite base must cover every integer1<=u<=U0,
+including rows not divisible by80, and retain ordinary mu(1)=1.
+
+More generally, for finitely many positive rational endpoint multipliers
+a/b in reduced form, let D be the LCM of their numerators a. Then
+(a/b)/D=1/h with h=bD/a integer, so the same floor argument gives an
+exact D-lattice lift. For this source D=LCM(10,8,20,16)=80.
+
+2. Parent convention and exact prime grouping
+---------------------------------------------
+For an integer lattice parent u put X=u//4. For fixed rational
+1/2<=lo<hi<1 define the block
+
+ P_i(u)={p prime: floor(X^lo)<p<=floor(X^hi)},
+ B_i(u)=sum_{p in P_i(u)}G(u//p),
+ Q_i(u)=sum_{p in P_i(u)}G(u//p)^2.
+
+The prime indicators are unchanged if the real cutoffs X^lo,X^hi
+replace their floors. Empty blocks have B_i=Q_i=0. Powers with rational
+exponents can be compared exactly by integer power inequalities.
+Repeated cutoffs produce empty blocks, rather than inverted intervals.
+
+At original integer scale k, u=80k and X=20k; the preceding exact
+lattice identity gives G(u//p)=Z(k/p). These are exactly the prime
+blocks in074, including the open lower and closed upper endpoints,
+cumulative signed coefficients and child units. Centered smooth rays
+therefore retain the074 reduction aZ(k)+sum_i C_i B_i(80k).
+
+Away from multiples of80, the grid chooses the smooth threshold
+(floor(u/4))^theta, not (u/4)^theta. This convention must be declared
+when extending smooth coordinates. It still has threshold squared>=X
+when theta>=1/2 and X>=1. Every integer endpoint of the lattice source
+is at most X, so the unique-large-prime proof applies to those integer
+prefixes. This does not assert equality with a different smooth convention
+using the unfloored real horizon.
+
+For j>=1, floor(u/p)=j iff u/(j+1)<p<=u/j. Intersect this exact interval
+with P_i(u), and call its prime count m_{i,j}(u). Then
+
+ B_i(u)=sum_j m_{i,j}(u)G(j),
+ Q_i(u)=sum_j m_{i,j}(u)G(j)^2.
+
+Both multiplicities must be retained; in particular Q is not the square
+of a grouped coefficient times G(j)^2. One may also keep j=0 with the
+condition p>u, contributing zero since G(0)=0. For the present blocks
+with X>=1, p<=X^hi<=X<=u, so this group is absent anyway. All primes
+are>=2, hence every nonzero child index is<=u//2<u for u>=1.
+The same strict decrease holds for direct coordinates
+B_d(u)=G(u//d), Q_d(u)=G(u//d)^2 with any fixed integer d>=2,
+including2,3,5,6. Parent u=0 is never an induction obligation.
+
+3. Conditional all-integer transfer
+-----------------------------------
+Choose finitely many prime or direct coordinates, fixed rational a_i,
+beta_i>=0 and fixed rational1<=q<2. Put L(u)=sum_i a_i B_i(u).
+The two independent arithmetic obligations are, for EVERY integer u>U0,
+
+ (G(u)-L(u))^2<=C u^q,                    (A)
+ L(u)^2<=sum_i beta_i Q_i(u).             (B)
+
+Assume uniform H_i>=sum_{p in P_i(u)}p^(-q) for prime blocks.
+For a direct d, H_d=1/d is safe because d^(-q)<=d^(-1).
+Set rho=sum_i beta_i H_i and certify rho<=r^2, 0<=r<1.
+Certify all base rows G(u)^2<=Bbase u^q,1<=u<=U0. Take B>=Bbase
+and C<=(1-r)^2 B. These are sufficient premises, not conclusions
+obtained from finite fits.
+
+Proof by strong induction: base rows are paid. For parent u>U0,
+every child j=u//p or u//d is strictly smaller. At j=0 its value is
+zero. At j>=1 induction gives G(j)^2<=B j^q. Since
+j^q<=(u/p)^q (or (u/d)^q),
+
+ Q_i(u)<=B u^q H_i,
+ |L(u)|<=sqrt(B rho) u^(q/2)<=r sqrt(B) u^(q/2).
+
+The residual bound and triangle inequality now give
+
+ |G(u)|<=|G(u)-L(u)|+|L(u)|
+       <=(sqrt(C)+r sqrt(B))u^(q/2)<=sqrt(B)u^(q/2).
+
+This closes induction for every integer u. The argument also covers
+B=0 (then C=0 and all values vanish), empty coordinates, zero beta,
+and zero-valued children. In a universal Cauchy certificate zero beta
+requires the associated coefficient zero; actual arithmetic lemma(B)
+could instead exploit an identically zero or redundant coordinate.
+
+The exact lift then bounds all real t through G(floor(80t)); for t>0,
+G(floor(80t))^2<=B(80t)^q, with the zero-floor case handled separately.
+At integer k it gives Z(k)^2<=B(80k)^q. These source-family statements
+do not pay the separate full-head/core transfers. One fixed q does not
+constitute an epsilon-cofinal family. Defining a finite observed maximum
+as C, B or beta proves only the tested domain, never(A) or(B).
+
+4. Primary unconditional reciprocal bound
+-----------------------------------------
+The imported fact is unconditional: Rosser and Schoenfeld,
+"Approximate formulas for some functions of prime numbers", Illinois
+Journal of Mathematics6(1962),64-94, p69, Corollary1, equation(3.6),
+states pi(x)<1.25506 x/log(x) for real x>1. Thus pi(x)<=2x/log(x)
+for real x>=2. The restriction x>=17 belongs to the adjacent LOWER
+bound, not this upper bound. I inspected the scanned primary page69:
+
+ bibliographic primary publication: https://doi.org/10.1215/ijm/1255631807
+ primary page scan: https://oeis.org/A000720/a000720_8102163510_1.jpg
+ scan contents: https://oeis.org/A000720/a000720.html
+
+Only this small explicit bound is imported; no RH or independence
+hypothesis enters. Let X0=U0//4>=4. For u>U0, X=u//4>=X0.
+Write A=X^lo and D=X^hi. Then2<=A<D. Because prime membership
+with integer floors is identical to membership in(A,D], Stieltjes
+partial summation is exact, including prime endpoints:
+
+ sum_{A<p<=D}1/p=pi(D)/D-pi(A)/A+integral_A^D pi(t)/t^2 dt
+ <=2/log(D)+2 integral_A^D dt/(t log(t))
+ =2/[hi log(X)]+2 log(hi/lo)
+ <=2[log(hi/lo)+1/(hi log(X0))].
+
+The discarded lower endpoint term is nonpositive. For q>=1,
+p^(-q)<=1/p, so this H bounds the requested price independently
+of q. Constants depend on the fixed endpoints and fixed X0; there
+is no moving-cutoff or uniform shrinking-gap assertion.
+
+5. Exact rational upper certificate for H
+-----------------------------------------
+Let m=floor(log2 X0), computed as the integer bit length minus1.
+Since X0>=2^m, log(X0)>=m log2. The positive atanh expansion at
+z=1/3 gives log2=2 atanh(1/3)>2/3, so log(X0)>=(2/3)m>0.
+This proof uses no floating approximation to logarithms.
+
+For z=(hi-lo)/(hi+lo), 0<z<1,
+log(hi/lo)=2 sum_{j>=0}z^(2j+1)/(2j+1).
+After terms j=0,...,11 the remainder is
+2 sum_{j>=12}z^(2j+1)/(2j+1)
+<=2/25 sum_{j>=12}z^(2j+1)=2 z^25/[25(1-z^2)].
+Thus the proposed12-term Ulog with this geometric tail is an exact
+rational upper bound. Consequently
+
+ Hraw=2[Ulog+1/(hi*((2/3)m))]
+
+is rational and bounds H. Let Hcert=ceil(2^20 Hraw)/2^20,
+with the ceiling performed by exact integer arithmetic on its rational
+numerator and denominator. Hcert>=Hraw, so rounding preserves safety.
+The certificate is conservative but fully unconditional. Empty or
+degenerate blocks can receive H=0 directly. Fixed hi=lo is empty;
+if included in the formula z=0, the positive endpoint price is merely
+a safe overestimate. Endpoint order and positive denominators must
+be checked before any evaluation.
+
+6. Correlation strength, multiplicities and circularity
+------------------------------------------------------
+For direct-dilation coordinates alone, write x_i=G(u//d_i).
+If beta_i>0 and sum_i a_i^2/beta_i<=1, weighted Cauchy gives
+
+ (sum_i a_i x_i)^2
+ <=(sum_i a_i^2/beta_i)(sum_i beta_i x_i^2)
+ <=sum_i beta_i Q_i(u).
+
+Coordinates with beta_i=0 must have a_i=0 for this universal proof.
+It proves(B) without any information about mu or about the residual(A).
+It remains valid with repeated direct indices. The condition is a
+sufficient universal certificate; arithmetic coincidences can permit
+other coefficients.
+
+For a prime block with n primes, universal Cauchy instead gives
+B_i^2<=n Q_i. Setting all child values equal to1 makes B_i^2/Q_i=n.
+Thus ignoring multiplicity would incorrectly replace n by1. Grouped
+cofactors do not cure this: if n primes share the same child j, then
+B_i=nG(j), Q_i=nG(j)^2, and the ratio is n whenever G(j)!=0.
+These are generic vector demonstrations of the invalid universal
+reasoning, not assertions that such values occur in the actual source.
+Actual fixed-beta lemma(B) can hold only through a further arithmetic
+correlation argument or another valid uniform structural restriction.
+Shorter child rank alone supplies no such argument.
+
+The paired search makes the missing cost explicit: approximation(A)
+must be simultaneously strong enough for the paid residual budget,
+and correlation(B) strong enough for a contraction rho<1. Each lemma
+must have an all-integer proof independent of the desired conclusion,
+or an explicit induction proof that uses only already established
+smaller ranks and closes without assuming the parent bound. Simply
+assuming the target bound to certify(A), or taking constants from
+finite observed maxima, is circular or finite-only respectively.
+
+The a_i=0 baseline has L=0, allows beta=0,rho=r=0, and makes(B)
+trivial. Its residual(A) becomes G(u)^2<=C u^q itself: it is a useful
+finite control, not a newly proved theorem. Even a nonzero operator
+with a universal Cauchy proof of(B) still owes(A). Conversely numerical
+prime cancellation does not prove(B). The conditional transfer is a
+sound certificate template after those arithmetic obligations and the
+complete base are paid, and is not itself an RH detector success.
+
+7. Independent pre-run implementation review (initial075 snapshot)
+------------------------------------------------------------------
+This section reviews mobius_prime_moment_075.py and
+check_mobius_prime_moment_075.py, with the frozen073 rational/root
+helpers inspected directly. It is a static adversarial review, not a
+scientific run or numerical candidate result. Findings were sent to
+root before integration. Subsequent fixes require their own validation;
+this section records the initial reviewed implementation faithfully.
+
+Arithmetic: the producer Euler sieve correctly leaves a repeated-prime
+multiple's mu zero and otherwise changes its sign; its prefix retains
+mu(1)=1. The checker reconstructs mu by distinct prime sign flips and
+prime-square zeroing, and reconstructs primality by a separate sieve.
+Both implement the four lattice prefix floors literally. For small
+X=0 or1 prime blocks are empty, so no division by zero is reachable
+in the producer quotient walk. For X>=1 every cutoff is<=X<=u and a
+nonempty block starts at an integer>=2. The producer groups by left
+endpoint quotient j and ends at min(hi,u//j). The checker independently
+uses max(lo,u//(j+1))<p<=min(hi,u//j). These constructions are identical
+to section2 and retain prime multiplicity in BOTH sums and moments.
+
+Rational powers: producer floor_power and checker cut compute integer
+roots of X^a for theta=a/b; the checker uses bounded exponentiation
+and exact root comparisons. Neither substitutes floating powers in
+arithmetic admission. Both apply explicit work/bit restrictions, so
+"arbitrary rational cutoffs" means any admitted rational cutoff subject
+to resource limits, not acceptance of unbounded denominators. Producer
+power_bounds and checker power_enclosure bound u^q with exact rational
+root brackets. C and Bbase use the LOWER bracket, a conservative upper
+bound on each actual normalized square. Evaluation distinguishes an
+actual failure (lower normalized bracket>C) from unresolved rounding
+(upper>C but lower<=C). This distinction is mathematically required.
+
+Price/correlation: both implementations reproduce the12-term log tail
+and round upward, and the checker recomputes minimum admissible prices.
+It checks beta>=0, rho>=sum beta H, rho<=r^2,0<=r<1 and the paid
+base/residual budget. The direct universal correlation certificate
+checks sum a_i^2/beta_i<=1 after confirming all prime coefficients zero;
+additional nonnegative prime beta terms do not invalidate that proof.
+The producer cauchy_beta is sufficient for direct coordinates because
+beta_i=(sum|a|)|a_i| gives sum a_i^2/beta_i=1 on nonzero coordinates.
+It would NOT be universal for prime blocks and must only be designated
+universal when the checker actually proves the direct condition.
+
+Finite fitting/scaling: beta LP rounding is followed by exact finite
+repair and a final exact training-domain correlation check. LP results
+remain proposals. Amplitude s changes a to sa and beta to s^2 beta;
+this preserves every strict correlation failure for any s!=0. Shrinking
+rho therefore cannot repair a failed correlation lemma. The fixed
+nonzero signed amplitude ladder makes this fact auditable. Floating
+selection chooses proposals only; make_program recomputes the chosen
+constants rationally. It does not check training correlation itself,
+so complete evaluation must report that separate obligation even for
+selected programs. Adaptation must preserve failures of a frozen formula
+and may not overwrite them with a later finite pass.
+
+Flags: program admission requires all supplied uniform/RH proof flags
+false, and the output leaves uniform_source_bound_proved and RH_proved
+false. conditional_induction_verified denotes only the transfer template
+and paid numerical side conditions; it does not prove arithmetic(A)
+or(B). A direct universal(B) proof still leaves(A) unpaid. Numerical
+training_scales may be empty in checker admission, yielding vacuous
+finite verification; the runner must require a nonempty intended domain
+before describing any finite test. No such status licenses promotion.
+
+Issues identified in this initial snapshot:
+
+* verify_program calls validate_rows, not verify_data. Schema/cutoff
+  admission alone does not reconstruct z, components, moments or counts.
+  A finite evaluation is authoritative only after explicit independent
+  verify_data success on the same data. This dependency must be enforced
+  by the runner or checker API, rather than inferred from a schema.
+* The checker constructs the U-element base tuple before its cache-memory
+  check. U has no upper bound beyond the sieve memory gate; the tuple
+  can be much larger than the sieve. Prospective base tuple, live sieve
+  arrays and existing cache bytes must be checked BEFORE construction.
+  Clearing a cache after construction is not a prospective gate.
+* Producer make_data budgets2048 bytes per row independently of admitted
+  dimension, which can reach47. Three47-element Python integer vectors
+  already exceed that estimate. Use dimension-dependent conservative
+  row costs. LP/NumPy matrices are allocated without prospective reserve
+  gates, and operation charges arrive after the LP finishes. Bound their
+  dimensions and reserve their live arrays before creating them; retain
+  the solver time limit as a separate runtime control.
+* next_obligations detects an actual REFUTED lemma but chooses its first
+  matching witness without filtering status. An earlier innovation
+  UNRESOLVED_ROUNDING can then be displayed as the counterexample for a
+  later true failure. Choose an actual REFUTED witness for the
+  FINITE_COUNTEREXAMPLE label and preserve unresolved-only disposition.
+
+These issues concern admission dependencies, resources and reporting;
+the inspected exact lattice, prime moment and conditional transfer
+formulas themselves agree with the proof above. Their correction does
+not supply either missing uniform arithmetic lemma.
+
+8. Root integration response before scientific freeze
+----------------------------------------------------
+The subsequent root integration fixes the issues recorded above. The runner
+requires independent verify_data success before any program use and binds
+source spec and exact parent list; the source payload is frozen and byte
+compared. Checker now reserves base/cache/sieve bytes before allocation,
+rejects empty training/evaluation lists, and admits tiny u1..3 with a
+minimum length-one arithmetic prefix. Producer budgets rows by dimension
+and reserves LP working matrices before allocation. Feedback selects a
+REFUTED witness for a counterexample and retains rounding ambiguity.
+
+The original twelve root producer/integration tests passed. Three more
+root integration tests cover tiny/nonvacuous domains, joint program
+selection with known Cauchy recovery, and the actual source/candidate
+pipeline including failed source-admission dependencies. The checker
+prospective-memory test was updated to keep a nonempty huge training scale
+and rerun successfully. These changes were integrated by root; this is
+not a claim that the initial independent review reread the final runner.
+Receipts retain all test attempts. No scientific scores were consulted.

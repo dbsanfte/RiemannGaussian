@@ -1,0 +1,233 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 2970223220,
+  "elapsed_seconds": 160.22353942500195,
+  "eligible_training_arguments": 2605,
+  "finite_recurrence_pairs": 6,
+  "finite_status_counts": {
+    "refuted_at_this_pair": 0,
+    "unresolved_interval": 0,
+    "verified_at_this_pair": 6
+  },
+  "fresh_parents": [
+    227,
+    251,
+    293
+  ],
+  "largest_individual_worker_rss_kib": 453432,
+  "new_frozen_source_count": 4,
+  "norm_certificates": 18,
+  "norm_checker_operations": 9172302919,
+  "norm_producer_operations": 1971217331,
+  "parent_peak_rss_kib": 375744,
+  "prime_checker_operations": 19218428,
+  "prime_compilation_counts": {
+    "cell_rows": 0,
+    "estimated_peak_bytes": 77423040,
+    "input_lattice_bits": 45,
+    "max_rational_bits": 838,
+    "operations": 26037930,
+    "program_columns": 72214,
+    "rational_operations": 236788,
+    "sieve_updates": 25123
+  },
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18
+  ],
+  "prior_norms_rerun": false,
+  "proved_auxiliary_improvements": 4,
+  "selected_argument": {
+    "base_probes": [
+      {
+        "N": 32,
+        "lower_proxy": 0.10539590915338534,
+        "passes_proxy": true,
+        "threshold": 0.11072224803924029,
+        "upper_proxy": 0.10544204885981596
+      },
+      {
+        "N": 47,
+        "lower_proxy": 0.06380993515339818,
+        "passes_proxy": true,
+        "threshold": 0.11072224803924029,
+        "upper_proxy": 0.06384083723880901
+      },
+      {
+        "N": 63,
+        "lower_proxy": 0.07195222678152867,
+        "passes_proxy": true,
+        "threshold": 0.11072224803924029,
+        "upper_proxy": 0.0719936748880999
+      }
+    ],
+    "complexity": 5,
+    "d": "2",
+    "family": "prime_profile_024",
+    "final_observations_used": false,
+    "finite_failure_count": 0,
+    "helpful_auxiliary_count": 6,
+    "id": "prime_argument_022728",
+    "negative_increment_count": 5,
+    "prime": 3,
+    "recurrence_probes": [
+      {
+        "N": 32,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 64,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": -0.009901202940151742,
+        "increment_lower_proxy": -0.014848210128274447,
+        "increment_upper_proxy": -0.014771848474014637,
+        "parity": 0,
+        "passes_proxy": true
+      },
+      {
+        "N": 32,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 65,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": -0.009017274122010773,
+        "increment_lower_proxy": -0.01643725621113029,
+        "increment_upper_proxy": -0.01635947028072375,
+        "parity": 1,
+        "passes_proxy": true
+      },
+      {
+        "N": 47,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 94,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": 0.003111392719461502,
+        "increment_lower_proxy": 0.0004986434337751755,
+        "increment_upper_proxy": 0.0006126716713533292,
+        "parity": 0,
+        "passes_proxy": true
+      },
+      {
+        "N": 47,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 95,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": 0.0021044334973010833,
+        "increment_lower_proxy": -0.003218021553131327,
+        "increment_upper_proxy": -0.003103729254834285,
+        "parity": 1,
+        "passes_proxy": true
+      },
+      {
+        "N": 63,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 126,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": 0.00010461039392973236,
+        "increment_lower_proxy": -0.0014483271074158047,
+        "increment_upper_proxy": -0.0012693724785418428,
+        "parity": 0,
+        "passes_proxy": true
+      },
+      {
+        "N": 63,
+        "auxiliary_improves_increment_proxy": true,
+        "child": 127,
+        "forcing_threshold": 0.013840281004905036,
+        "full_signed_energy_retained": true,
+        "h_only_increment_upper_proxy": -0.0014658974420389687,
+        "increment_lower_proxy": -0.0039012342233161815,
+        "increment_upper_proxy": -0.0037260530814282183,
+        "parity": 1,
+        "passes_proxy": true
+      }
+    ],
+    "request": {
+      "argument": {
+        "base": {
+          "minimum": 32
+        },
+        "gram": [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ]
+        ],
+        "recurrence": {
+          "C": "1/32",
+          "forcing": "L_parent^-eta",
+          "parities": [
+            0,
+            1
+          ],
+          "rho": "3/4"
+        },
+        "state": "prime_split_H_A"
+      },
+      "original_forcing_b": "-1",
+      "prime": 3,
+      "rounding": {
+        "bits_multiplier": 4,
+        "drift": "round_each_exponential_before_signed_sum",
+        "kind": "dyadic_power_floor",
+        "product": "multiply_rounded_children_exactly",
+        "scale": "ceil_log2_N"
+      },
+      "source_recipe": {
+        "auxiliary": null,
+        "base": {
+          "a": "1",
+          "kind": "drift_mixture",
+          "terms": [
+            {
+              "rate": "1",
+              "weight": "4"
+            },
+            {
+              "rate": "2",
+              "weight": "-6"
+            },
+            {
+              "rate": "3",
+              "weight": "4"
+            },
+            {
+              "rate": "4",
+              "weight": "-1"
+            }
+          ],
+          "theta": "6/11"
+        },
+        "id": "prime_profile_024"
+      },
+      "target": {
+        "A": "1/4",
+        "eta": "5/11"
+      }
+    },
+    "target_collinear_control": false,
+    "tau": "1",
+    "training_parents": [
+      32,
+      47,
+      63
+    ],
+    "uniform_recurrence_proved": false
+  },
+  "source_constructions": 9,
+  "source_operations": 3260703169,
+  "status": "PRIME_AUXILIARY_MECHANISM_AUDITED_UNIFORM_INCREMENT_OPEN",
+  "training_search_or_norms_rerun": false,
+  "uniform_signed_bound_proved": false
+}

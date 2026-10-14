@@ -1,0 +1,84 @@
+EXACT DISK CERTIFICATES FOR CARRY-FILTERED ZETA ROOT LIFTS
+
+Fix q>=2, a prime ell, and rational t. Let G_e be the q-fold local product
+of c_(1/q)(e) under the carry-weighted convolution. Every term has a
+nonnegative root coefficient product times t^K, where
+  K=v_ell(e!)-sum_{j=1}^q v_ell(e_j!), sum e_j=e.
+The ordinary q-fold product of the root equals (1-x)^(-1). Therefore the
+sum of the nonnegative coefficient products at EACH degree e is exactly 1.
+
+If |t|<=1, this immediately proves |G_e|<=1 at all e, independently of q
+and ell. The correction coefficient R_e=G_e-G_(e-1) has |R_e|<=2. Its
+first-degree coefficient vanishes. Hence after degree m, on |x|<=r<1,
+  sum_{e>m}|R_e|*r^e <= 2*r^(m+1)/(1-r).
+
+For t=2 we use a different bound. In base-ell addition of q nonnegative
+integers totalling e, let c_j be the carry into digit column j. The digit
+addition equation gives c_(j+1)=floor((sum_i d_(i,j)+c_j)/ell), with c_0=0.
+Induction gives 0<=c_j<=q-1. If e has L digits, every input has at most L
+digits, and the carry beyond the final column must be zero: otherwise the
+sum would have another digit. K=sum_j c_j by the digit-sum form of
+Legendre's formula. Thus K<=(q-1)*L. Since ell>=2,
+  2^K <=2^((q-1)*(1+log_2(e+1)))
+        =2^(q-1)*(e+1)^(q-1).
+The coefficient products average to 1, so the same bound holds for |G_e|.
+Consequently |R_e|<=2^q*(e+1)^(q-1).
+
+For k=q-1, the tail terms (e+1)^k*r^e beyond m have successive ratios at
+most theta=r*((m+2)/(m+1))^k; this is a conservative bound on the actual
+ratio r*((e+2)/(e+1))^k for e>=m+1. If theta<1, geometric summation gives
+  sum_{e>m}|R_e|*r^e
+    <=2^q*(m+2)^(q-1)*r^(m+1)/(1-theta).
+All certificates use EXACT rational arithmetic for this inequality.
+
+For each operator, compute its EXACT coefficients through degree m and
+form the rational number
+  S=sum_{e=2}^m |R_e|*r^e + the applicable proved tail bound.
+If S<1, then |R(x)-1|<=S<1 on the whole CLOSED disk |x|<=r. This directly
+proves R(x) cannot vanish there; no argument-principle approximation or
+floating-point root finder is involved. A record with S>=1 is merely
+unresolved by this method and is never counted as a zero counterexample.
+
+The chosen r=71/100 satisfies r^2>1/2 by an exact rational comparison.
+For every prime p and every s with Re(s)>1/2,
+  |p^(-s)|<1/sqrt(p)<=1/sqrt(2)<r.
+Thus a passing disk certificate proves every local correction factor is
+nonzero throughout Re(s)>1/2. mixed_root_proofs.txt proves absolute compact
+convergence of the correction product there, so the entire correction is
+nonzero there as well. The corresponding root lift consequently has the
+same zeros as zeta in this half-plane. This is a PROVED analytic law for
+the passing parameter instances, not a proof of RH or historical novelty.
+
+The coefficient computations rely on the exact recursive root and local
+kernel implementations, which implement the definitions proved in the
+earlier proof files. independently_verify checks the serialized rational
+bound and theorem choice without trusting stored pass flags; it does not
+constitute a separate implementation of the coefficient computations.
+No certificate is described as machine-checked theorem-prover output.
+
+PARAMETERIZED THEOREMS: NO FINITE-q EXTRAPOLATION REQUIRED
+
+The same method yields TWO uniform statements covering infinitely many root
+orders and parameter values. If e<ell then v_ell(e!)=0, hence every carry
+weight in degree e equals 1. Therefore G_e=1 for 0<=e<ell, and R_e=0 for
+1<=e<ell. These facts hold for EVERY integer q>=2.
+
+If 0<=t<=1, all weights and root products are nonnegative and |G_e|<=1.
+Consequently 0<=G_e<=1 and |R_e|<=1 at every e. On |x|<=r,
+  |R(x)-1|<=r^ell/(1-r).
+For r=71/100, r^5/(1-r)<1 by exact rational arithmetic. Thus for EVERY
+integer q>=2, EVERY prime ell>=5 and EVERY real t in [0,1], the correction
+Euler product is holomorphic AND NONZERO throughout Re(s)>1/2.
+
+If -1<=t<=1, negative weights are allowed, but |G_e|<=1 still holds and
+|R_e|<=2. Now |R(x)-1|<=2*r^ell/(1-r), and 2*r^7/(1-r)<1. Thus the same
+holomorphy and nonvanishing statement holds for EVERY integer q>=2, EVERY
+prime ell>=7 and EVERY real t in [-1,1].
+
+These proofs use uniform coefficient bounds, not observations at q=2,...,7.
+They certify the parameterized laws mathematically; only rational t have
+exact rational implementations in the current grammar. The extension to
+real t follows from the same finite-at-each-coefficient formulas and bounds.
+Whether these specific consequences of known carry convolutions have prior
+publication remains unresolved. They are not promoted to historically new
+operators merely because the detector produced the identities and bounds.

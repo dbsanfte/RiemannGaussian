@@ -1,0 +1,45 @@
+{
+  "owner": "independent prefix_proof_checker Sol6.1",
+  "runs": [
+    {
+      "command": "python - <<PY [checker edit preflight; no file mutation executed]",
+      "returncode": 127,
+      "tests": 0,
+      "stdout": "",
+      "stderr": "/bin/bash: line 1: python: command not found\n",
+      "operations": 1,
+      "operations_scope": "conservative failed shell invocation reserve",
+      "elapsed_seconds": 2.6e-05
+    },
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_floor_residual_prime_047",
+      "returncode": 0,
+      "tests": 16,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_prime_047 operations=220370\nSYNTHETIC_SPLIT checker=196800 fixture=23570\n",
+      "stderr": "test_cell_tail_divisor_and_unit_tampering (test_check_floor_residual_prime_047.CellBlockTests) ... ok\ntest_complete_finite_block_and_direct_signed_squares (test_check_floor_residual_prime_047.CellBlockTests) ... ok\ntest_cross_energy_and_whole_norm_claim_tampering (test_check_floor_residual_prime_047.CellBlockTests) ... ok\ntest_signed_rational_profiles_and_small_cells (test_check_floor_residual_prime_047.CellBlockTests) ... ok\ntest_charge_only_meter_and_capacity_guards (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_complete_signed_identity (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_domain_canonical_and_source_unit_guards (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_emitted_scalar_text_can_exceed_python_decimal_limit (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_false_global_and_recipe_claims_rejected (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_identity_and_prime_manifest_tampering (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_negative_normalization_is_exact (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_normalized_profile_provenance_including_zero_mu (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_omitted_square_normalizer_indicator_and_conversion (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_other_prime_and_unit_only_parent (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_prime_square_and_higher_valuation_retained (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\ntest_zero_normalization_retains_direct_match_and_auxiliary (test_check_floor_residual_prime_047.PrimeIdentityTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.138s\n\nOK\n",
+      "operations": 220370,
+      "elapsed_seconds": 0.20316746702883393,
+      "peak_rss_KiB": 26040
+    }
+  ],
+  "operations": 220371,
+  "distinct_tests": 16,
+  "suite_failures": 0,
+  "preflight_failures": 1,
+  "edits_stopped": true,
+  "source_arrays_read": false,
+  "source_norms_evaluated": false,
+  "actual_candidate_application": false,
+  "old_suites_or_studies_rerun": false,
+  "static_parse_passed": true,
+  "approved_limits": {
+    "input_bits": 4096,
+    "common_lattice_bits": 8192,
+    "result_bits": 32768,
+    "block_energy_bits": 400000,
+    "max_index": 4096,
+    "max_parent_support": 3072,
+    "prospective_memory_bytes": 4294967296
+  },
+  "audit": "Independent trial factorization, full signed vector and all-valuation prime laws, division-free lambda0 matched recovery, complete normalized profile provenance, truncated divisor cell sums and signed squares; finite identities only."
+}

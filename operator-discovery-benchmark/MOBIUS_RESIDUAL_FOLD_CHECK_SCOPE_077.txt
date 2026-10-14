@@ -1,0 +1,66 @@
+Independent scalable interval residual checker077
+================================================
+All frozen files preserved. Only077 checker/test/receipt/scope files created.
+No producer imports, mu queries, scientific results, old-suite runs, hashes or
+agents. Frozen073 exact rational arithmetic is reused; compiled binding uses
+frozen independent075 cutoff/shape and076 count-root enclosure primitives.
+Producer076 residual_components source was read only for schema/naming contract.
+
+Interval schema is a sorted disjoint list of exactly
+{'left':int,'right':int,'weight':{token:canonical rational}}, representing(left,right].
+Left>=0, right<=4000000, nonzero rows/coefficients, at most100000 intervals/terms.
+Parents<=16000003. Arbitrary nonempty real token labels are allowed, including1.
+verify_stencil(components,intervals) reconstructs the four literal floor-prefix
+coefficient functions by signed endpoint events and compares on every breakpoint
+segment. verify_fold(before,after,p,prior_primes=()) compares the FULL function
+f(m)-f(pm), including indices excluded by earlier primes. Primes remain a
+separate retained domain gcd(m,product(P))=1. Distinct trial-verified primes<=100000,
+at most10, are required. Both return VERIFIED_IDENTITY or INVALID and witnesses.
+
+bound_intervals(intervals,token_intervals,primes=()) returns VERIFIED_BOUND with
+exact rational strings bound=l1_upper, l1_lower, and integer counts per interval.
+Counts are independently exact inclusion-exclusion floor differences; divisors
+larger than horizon and all their descendants contribute zero and are pruned.
+Complete signed linear polynomial intervals are priced by maximum absolute
+endpoint; minimum absolute interval yields the optional lower l1 bound. Missing
+tokens reject even when a segment's retained count is zero. Bound assumes only
+|mu|<=1 on the complete supplied retained coprime domain and never fits mu signs.
+
+verify_compiled(program,row,prime_groups,compiled,precision=20) binds the literal
+076 residual G(u)-L(u) compiler schema. It independently validates theta floors,
+sieves primes to the largest cutoff, reconstructs child multiplicities, verifies
+actual prime/direct counts, and builds signed per-column atom weights. Token1
+has exact[1,1]; all other tokens are inverse rational count powers with independently
+certified rational enclosures. Exact component ordering, count-token definitions
+and endpoints must match. This supplies prime_group_admission_supplied=True;
+source_data_admission_still_required=True preserves separate admitted row z/B/Q.
+No ordinary mu source is queried or reconstructed here.
+
+verify_bulk_obstruction(kernel,child_min_divisor,primes,certificate) independently
+admits a generic nonzero rational bulk band past ALL smaller-child and nontrivial
+fold horizons, with no interior kernel breakpoint. It verifies exact coefficient,
+delta=product(1-1/p), A=abs(c)*delta*width, E=abs(c)*2^r, threshold=ceil(2E/A),
+and1<=q<2. Output VERIFIED_UNIFORM_COEFFICIENT_OBSTRUCTION proves only that the
+fixed finite-prime coefficient-l1 method has l1>=A*u-E>=A*u/2 eventually, so
+l1^2/u^q diverges. It explicitly sets arithmetic_residual_refuted=False and
+uniform_source_bound_proved=False. It does not refute signed mu cancellation.
+
+Outputs retain uniform_bound_proved=False and RH_proved=False. Identity/bound
+outputs are finite_identity_only=True; the generic negative-method theorem
+alone has finite_identity_only=False. Prospective memory gates scale with actual
+input rational/token sizes and event/component counts, before parsed/event or
+compiled expansion allocations. Checker cap4GiB, default work3e11, frozen4096-bit
+input/100000-bit intermediate limits. Runner owns aggregate process/input gate.
+Large horizon with tiny intervals takes memory proportional to interval data,
+not horizon; only compiled prime binding allocates a bounded own prime sieve.
+
+Nine distinct tests pass,11 successful executions over4 retained attempts.
+Tests cover signs/floors/units, full retained-domain functions, pointwise fold
+cross-check, exact/pruned coprime counts, four-million horizon tiny intervals,
+interval/token tampering, arbitrary gamma compiled token binding, source groups/
+counts, generic bulk obstruction and prospective allocation rejection. Receipt
+status PASS. No unconditional positive source-bound or RH theorem is supplied.
+
+Compiled token endpoint strings are reserved using their actual certified root
+bit lengths before formatting and retaining them; token storage is charged to
+the live input estimate before each subsequent cache/root/component allocation.

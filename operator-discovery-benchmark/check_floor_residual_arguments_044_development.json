@@ -1,0 +1,19 @@
+{
+  "owner": "check_floor_residual_arguments_044",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_044",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_044 operations=508853 checker_operations=420303 fixture_operations=88550 elapsed_seconds=0.14139007398625836\n",
+      "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.141s\n\nOK\n",
+      "operations": 508853,
+      "elapsed_seconds": 0.22003802499966696,
+      "tests": 21,
+      "peak_rss_KiB": 29096
+    }
+  ],
+  "operations": 508853,
+  "edits_stopped": true,
+  "source_observations": 0,
+  "scope": "signed synthetic floor/step vectors only; no earlier suite or increasing-support source search"
+}

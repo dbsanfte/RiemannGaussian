@@ -1,0 +1,23 @@
+{
+  "operations": 56719,
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_core_truncated_inverse"
+      ],
+      "returncode": 0,
+      "operations": 56719,
+      "elapsed_seconds": 0.08671434200368822,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_truncated_inverse operations=56719\n",
+      "stderr": "test_complete_mixed_inverse_components_by_divisor_pairs (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_exact_fractional_cutoffs_and_support_zeroes (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_exact_residual_boundary_and_all_scale_support (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_forged_inverse_and_omitted_strict_boundary_rejected (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_large_formal_powers_zero_by_support_and_shared_meter (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_mu_counterfeit_square_unit_and_horizon_rejected (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_strict_ast_and_canonical_fraction_types (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\ntest_zero_power_delta_units_and_weighted_prime_powers (test_check_core_truncated_inverse.TruncatedInverseTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.020s\n\nOK\n",
+      "receipt_lines": 1,
+      "actual_source_study_runs": 0,
+      "toy_mu_max_horizon": 63
+    }
+  ]
+}

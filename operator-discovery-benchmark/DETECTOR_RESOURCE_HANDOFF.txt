@@ -1,0 +1,110 @@
+Optimized detector execution — 2026-10-08
+
+Use run_detector.py for future factor scalar-cone discovery and fixed-candidate
+transfer. It is the new resource-bounded entrypoint. Existing stage/full-Gram
+runners and their frozen evidence remain unchanged. The optimized LP route fixes
+Grams to zero; it does not silently replace the larger full-Gram search cone.
+
+From /home/dbsanfte/riemann/operator-discovery-benchmark:
+
+  ../.venv/bin/python -B run_detector.py search \
+    --input detector_resource_search.json --out /path/to/NEW-run \
+    --workers 4 --worker-memory-mib 1024 --memory-budget-mib 4096
+
+  ../.venv/bin/python -B run_detector.py transfer \
+    --input cancellation-arithmetic-results/pilot-001/factor-probe-001/lp-retry-001/attempts/001.json \
+    --out /path/to/NEW-transfer --scales 7 11 --workers 2
+
+  ../.venv/bin/python -B run_detector.py legacy -- --summarize-only
+
+  ../.venv/bin/python -B check_detector_execution.py /path/to/completed-run \
+    --recheck-math --require-live-sources
+
+Search JSON contains programs, training_scales, final_scales, and solver limits.
+Each program must declare a boolean allow_constant_slack, extended dictionary,
+and explicit none/zero_cubic constraint. The example retains the established
+critical and unsigned calibration programs, train1,2,3,5 and final7,11. These are
+already-used development scales, not new statistical holdouts. Output must be an
+unused directory. Final evaluation uses frozen training weights without refitting.
+The --timeout value is a global wall deadline for EACH dispatch phase; time_limit
+in search JSON governs each solver, and --time-limit also governs each audit.
+
+Execution:
+- Spawn independent candidate searches and then independent final-scale checks.
+  Workers construct cases locally; queues carry small specifications/receipts.
+  Full certificates are written by workers instead of copied into parent memory.
+- Default four workers, at most eight, clamped by affinity/cgroup CPU budget and
+  the explicitly allocated worker-memory budget. Use --workers 8 with a fitting
+  memory budget when desired. Numerical library thread environment is one per
+  worker to avoid nested oversubscription. HiGHS is explicitly configured with
+  threads=1 and parallel=False: environment variables alone did not constrain
+  its separate native scheduler. A fresh-process test checks actual Linux thread
+  count, and worker receipts record observed threads at completion.
+- The CLI defaults to 1GiB address-space limit per worker and 4GiB for worker
+  concurrency; these are address-space limits, not observed RSS or a hard cap on
+  the entire Python parent+OS process tree. The parent has separate bounded
+  payload/receipt/inflight limits. Oversized/failed/timed-out jobs remain missing;
+  no implicit serial retry or disappearing candidate.
+- All source files, protocol and input are snapshotted before work. Exact candidate
+  weights and their receipt hashes are sealed before final evaluation. Runtime
+  versions, source/template hashes, per-job CPU/wall time and peak RSS are saved.
+  Failed/missing resource states and numerical infeasibility stay distinct from
+  mathematical refutations. Python -O is rejected.
+
+Arithmetic work saved:
+- grouped_arithmetic_sparse.py validates EVERY source polynomial, horizon, fixed
+  weight and arithmetic premise, but expands only nonzero weighted primal terms.
+  It checks the entire original target and exact constant remainder.
+- check_grouped_arithmetic_sparse.py independently checks these identities and
+  exact expanded certificate bindings, without importing producer mathematics.
+  Zero-weight input validation and premise checks remain mandatory. All generator
+  columns are still required for a dual-cone certificate; no sparse dual shortcut.
+- cancellation_sparse_synthesis.py uses a CSC numerical proposal matrix and
+  FLINT exact rational support reconstruction. Float results never certify a bound.
+  Native elimination has pre/post deadline checks; the containing process-pool
+  deadline can terminate a stuck worker. Internal native work/bit limits are not
+  claimed as hard caps.
+- A bounded per-worker exact structural-column cache avoids repeated preparation
+  when only the target lhs changes. Full structures and limits form its key;
+  every lhs is revalidated, and returned columns cannot mutate cached copies.
+- Construction uses the previously calibrated checker-side factor builder once.
+  The algebraic certificate audit is independent of synthesis, but construction
+  is shared in this optimized route; this is not two independent case rebuilds.
+
+Evidence:
+- 31 focused tests passed across the combined and affected-module runs: exact
+  old/new certificate equivalence, rational/slack
+  policies, malformed active/inactive sources, work/memory limits, exact sparse
+  matrices/native reconstruction, multicore ordering/failures, no overwrite,
+  source/candidate seals, snapshot-integrity audit, actual solver thread count,
+  and optimized-Python rejection.
+- integrated-search-002: two candidates trained on1,2,3,5 in ~28seconds using
+  two workers. Critical search found no certificate (not a mathematical
+  infeasibility proof). Unsigned calibration passed and transferred unchanged
+  to both7 and11 in ~27seconds. Its coefficients and complete certificates are
+  independently verified; this is the known unsigned identity, no signed gain.
+- Sparse proposal matrix storage ~3.03MB vs ~15.1MB dense float64 equivalent.
+  This comparison excludes other solver state and the source dictionaries.
+- Complete X11 fixed-weight production ~6.1s and independent algebra audit
+  ~11.5s in the integrated transfer. It skips598 zero groups. Earlier historical
+  X11 missing_resource remains untouched; this is a new successful evaluation.
+- Same exact construction jobs1,2,3,5: one worker8.23s vs two workers6.25s,
+  a1.32x measured speedup. A separate four-equal-job probe measured3.84x at four
+  workers. Scale imbalance explains why additional cores do not always scale
+  linearly. All compared complete instance hashes match.
+- AtX3, structural-column cache preparation3.13s vs .057/.062s for repeated and
+  changed-lhs hits. This is reuse of identical structure, not a blanket50x speedup.
+- The previous research publication's259 file hashes were rechecked unchanged.
+- An independent post-run audit rebuilt and verified the accepted training
+  identity and both final identities, checked unchanged candidate weights, and
+  matched all42 frozen/current source hashes for integrated-search-002.
+
+Main evidence lives under detector-performance-results. The initial integrated
+transfer snapshot predates final slack/candidate-seal hardening; the full search
+snapshots include those protections. Search001 used single-thread environment
+settings, but a later check found HiGHS independently created four threads;
+search002 explicitly sets its native options and logs observed one-thread workers.
+Earlier metadata saying numerical_threads_per_worker=1 described configuration,
+not an independent runtime observation. Frozen snapshots preserve the implementation
+used for each measurement. Later source changes must not rewrite those records.
+No RH bound, global signed estimate, or enlarged grammar is claimed by this work.

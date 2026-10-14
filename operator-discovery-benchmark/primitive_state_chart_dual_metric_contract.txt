@@ -1,0 +1,82 @@
+Prospective034: diagonal-metric accelerated proposal
+
+Root owns producer, independent checker, workflow and tests. Sol6.1 reviewer
+owns the soundness memo. Prior033 and all older published files are immutable.
+No actual source scaling, metric values, iterates or scores before freeze.
+No hashes, source rebuild, reduction replay or warm start from earlier runs.
+
+Inputs and mathematical admission are identical to033: licensed031 exact
+302x687 separator equations,7550 nonzeros, original851 positive generators,
+782 chart rows and1224 projected coordinates. Reuse032 exact positive row/
+column infinity scaling and reject nonfinite/nonzero-underflow conversion.
+The new search changes the numerical metric, not any original exact equation
+or the mandatory full Farkas check. Its support is in the same retained order.
+
+API and schemas
+primitive_state_chart_dual_metric exposes build_model, numerical_work_model,
+accelerated_proposal(model,*,deadline,max_operations=190000000,resident_cells=0)
+and search(chart,rays,geometry,reduction,*,deadline,checkpoint=None).
+Numerical schema primitive-state-chart-dual-metric-proposal-v1;
+outcome primitive-state-chart-dual-metric-search-v1, route metric_acceleration.
+Independent core verify_numerical and verify_outcome signatures match033;
+summary primitive-state-chart-dual-metric-independent-check-v1.
+
+Metric algorithm
+Minimize half||A*x-b||^2 over x>=0, starting cold with x=y=0,t=1,L=1.
+For every nonzero finite column compute sigma_j=math.hypot(column_j),
+D_j=sigma_j^2, then root_j=sqrt(D_j). All three are finite and positive.
+Save the full D vector as metric_diagonal, a numerical diagnostic. D remains
+fixed during the trajectory. L0=1 is a starting value, not a global bound.
+For each step compute fresh r_y=A*y-b,g=A^T*r_y with guarded sparse fsum.
+For each of at most32 trials:
+  denominator_j=L*D_j, finite and positive;
+  z_j=max(0,y_j-g_j/denominator_j), with ratio/candidate guards before clamp;
+  d=z-y; compute fresh A*d and A*z-b;
+  accept if ||A*d||^2<=L*||sqrt(D)*d||^2, otherwise double L.
+Use finite guarded sqrt(D_j)*d_j and math.hypot to compute the weighted norm,
+and separately guard its square and the L product. Never accept an infinite
+right side. Carry the accepted L. Momentum, restart every64 accepted steps,
+max10000 steps, accepted checkpoints and zero-reported-residual stop match033.
+Floating products/roots/norms do not establish an exact metric or line test.
+
+Final diagnostic at the last accepted x recomputes r,g and p_j=max(0,
+x_j-g_j/(L*D_j)), then reports L*||sqrt(D)*(x-p)||. Its mapping_metric label
+is diagonal column curvature. These units differ from033's unweighted norm.
+Save last iteration,L,residual_norm,relative_residual,projected_gradient_norm.
+The selected checkpoint is still the minimum (relative residual,support size,
+iteration) among1..443 strictlypositive coordinates. Keep its full vector and
+every strictlypositive index without trimming. Scaled x values retain033's
+coordinate meaning; there is no coefficient lift from approximate weights.
+
+Accounting and termination
+Work blocks:setup=8nnz+48(m+n)+65536,gradient=8nnz+32(m+n)+512,
+trial=16nnz+80(m+n)+1024,commit=32(m+n)+512,
+final=12nnz+80(m+n)+2048. The extra vector work and metric storage are covered.
+iteration_reserve=gradient+32trial+commit;
+minimum_attempt=setup+iteration_reserve+final.
+Before setup require the complete minimum_attempt to fit; before every step
+require iteration_reserve+unspent final to fit. Charge actual blocks before
+work and preserve charged partial blocks on errors. charge(0) supplies extra
+deadline/live checks without hidden costs. Normal completion occurs at an
+accepted work boundary,10000-step limit or zero reported residual, only after
+the final diagnostic succeeds. Other failures clear selected and stay UNKNOWN.
+No convergence claim follows from any normal or incomplete stop.
+
+Independent core derives every work formula, validates initial_L=1 and a
+complete positive finite D before any iteration, and checks all counter,
+checkpoint,L-doubling,restart,stop and ranking invariants from033. It checks
+the final metric label and does not compare weighted norms across methods.
+Metric values, numerical scores and trajectory are not independently replayed
+or certified. Full exact admission still checks all851alpha>=0,782lambda,
+all1224 coordinates A^Tlambda=Galpha and b^Tlambda=-1 under SAME90m budget.
+Restore once on original030 responses, free support valueszero; exact
+ValueError rejection is NONCERTIFIED and resource failure UNKNOWN. A full
+separator excludes this augmented finite proof template, not RH.
+
+One450m job:40m preparation,40m model,190m numerical,90m restoration,90m
+sole independent audit. Development test arithmetic and one frozen suite,
+plus1m root/scaffolding, share25m within preparation. Each arithmetic test
+module prints SYNTHETIC_WORK module=<name> operations=N. Do not reset costs
+for retries or repeat unchanged development suites. Worker/audit each6GiB,
+one thread,3600 cooperative seconds; producer external7200seconds. Rational
+bits4096/8193, live cells6m, proposal/review and snapshot8MiB, metadata64KiB.

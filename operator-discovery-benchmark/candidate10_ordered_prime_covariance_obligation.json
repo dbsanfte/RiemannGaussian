@@ -1,0 +1,60 @@
+{
+  "RH_proved": false,
+  "analytic_provenance": "PRIME_BANK_COVARIANCE_REVIEW_001.txt",
+  "complete_uniform_bound_proved": false,
+  "difference_channel": {
+    "identity": "Delta=z_u-z_v=beta*(a_v-a_u)=-beta*(mu*(n^-u-n^-v))",
+    "paid": "its v bank has finite critical norm already at theta=3/4",
+    "unproved": "the u-weighted difference and common z0 bank still require joint source control"
+  },
+  "disallowed": [
+    "discarding the smooth remainder",
+    "separate RH-strength companion assumptions",
+    "equivalent target used as its own premise",
+    "finite energy or support identity promoted to a uniform bound"
+  ],
+  "energy_atoms": [
+    "K",
+    "-L0",
+    "Lu",
+    "-main"
+  ],
+  "equivalence_class": "candidate10_complete_prime_bank_covariance",
+  "kernel": {
+    "coefficient": "a(h)*z_b(k)*q^(-b)/X^2",
+    "domain": "h>=2, k>=2, q prime; all finite support terms retained",
+    "entry": "tau_theta(p)=min{n integer>=1:n^a>=p^b}, theta=a/b",
+    "exact_support": "positive kernel implies q>Pplus(h), k<q, gcd(h,q)=1",
+    "formula": "max(0,min(2X,tau_theta(q))-max(X,h,tau_theta(Pplus(h)),q*k))",
+    "high_smooth_variant": "replace min(2X,tau_theta(q)) by min(2X,tau_theta(q),h^2) after the sqrt(n) coefficient-prefix peel",
+    "same_largest_prime_diagonal": "identically zero by opposed entry conditions"
+  },
+  "next_productions": [
+    "ordered coprime coefficient correlations",
+    "complete entry/exit kernels",
+    "fresh-scale covariance with all smooth and bank terms",
+    "recurrences whose forcing is a proved source correlation"
+  ],
+  "paid_cutoff_transport": "R_new(Y2)-R_new(Y1)=J_v(Y1,Y2) at fixed x",
+  "paid_smooth_prefix": {
+    "bound": "9*sqrt(n)*(1+log(n)/2)",
+    "energy": "O((1+log X)^2)",
+    "expression": "sum_{2<=h<=sqrt(n)} a(h)",
+    "next_high_smooth_support": "h>sqrt(n), Pplus(h)<=n^theta",
+    "outside_domain_warning": "q>n^theta and h>sqrt(n) imply q*h>n; pairing must retain outside-domain compensation"
+  },
+  "schema": "prime-bank-overlap-obligation-v1",
+  "scope": {
+    "domain": "all dyadic integers X>=1",
+    "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+    "source": "actual_mu_candidate10"
+  },
+  "selected_theta": [
+    "3/4",
+    "4/5"
+  ],
+  "source": "actual_mu_candidate10",
+  "source_obligation": "candidate10_complete_prime_bank_covariance",
+  "status": "open",
+  "unproved": "signed joint energy across fresh dyadic coefficients; kernel support does not bound its signed sum"
+}

@@ -1,0 +1,160 @@
+DETECTOR-GENERATED CUTOFF COMBINATIONS; ARITHMETIC BOUNDS REMAIN OPEN
+
+Current input: candidate10_cutoff_frame_obligation.json
+Verified run: core-cutoff-frame-results/pilot-001/report.json
+Generator: core_cutoff_frame.py
+Independent checker: check_core_cutoff_frame.py
+Runner: run_core_cutoff_frame.py
+Pre-experiment protocol: core_cutoff_frame_protocol.txt
+
+User concern and the actual automation boundary
+-----------------------------------------------
+The user asks whether the detector finds bounds itself or whether analysts
+and subagents supply them. Both have contributed. The preceding prefix
+search automatically chose rewrites, convolution partitions and inequality
+proof trees; the joint power stage automatically combined signed leading
+terms. They proved component bounds. Analysts supplied the primitive
+identities, norm inequalities, grammar families and ranking policies.
+Neither stage proved a uniform bound for the full signed core.
+
+This stage makes another construction search executable: the detector
+solves generic polynomial coefficient equations, generates all admitted
+combinations, tests recovery costs, selects constructions without model
+calls, and emits their unresolved inequalities as next-search inputs.
+The language is still analyst supplied. This does not make the detector
+an unrestricted analytic prover or an autonomous inventor of proof rules.
+The independent Sol6.1 subagent wrote and tested the checker, not the
+actual-source candidate coefficients or the selected candidate list.
+
+Exact common target and complete representation binding
+-------------------------------------------------------
+For each existing source geometry, use the COMPLETE power-centering
+alternative (mask7), including the two geometries whose old selected mask
+was5. All alternatives were already checked; old selections and files are
+unchanged. Leaving an uncentered finite-head drift hidden in a source
+piece would make displayed drift elimination misleading.
+
+At COMMON N=4X-1 for the whole parent/child construction,
+
+  g = P_i + R_i + d_i J_(2/3), i=1,...,5.
+
+P_i includes every uniformly bounded group from the short inverse, prefix,
+and complete power-centering stages. Its energy constant is
+  C_Pi = r_i * sum(C_group),
+with the full number r_i of nonzero groups. R_i includes every remaining
+source term, every unpaid centered remainder, and the exact common -e,
+where e=f-g from the inherited transport. All signs, units, prime powers,
+complete prefixes, and residual cross terms remain. All720 existing
+source/channel/transport bindings are authenticated; they are bookkeeping
+of144 existing routes across five representations, not720 new operators.
+
+Geometry order is12,6,8,0,4, with cutoff exponents respectively
+(1/2,1/2), (1/3,1/3), (1/3,2/3), (1/6,1/6), (1/6,5/6).
+The saved complete signed moment polynomial is evaluated, not replaced
+with a nominated formula. In the present source it is
+  d_i=(27/4)a_U^2-(27/4)a_U*b_V-(3/2)R_u*b_V,
+  a_U=sum_(d<=U)mu(d)/d^(2/3), b_V=sum_(d<=V)mu(d)/d^(4/3).
+Unsupported nonzero c_U powers are rejected, never silently dropped.
+
+What the search derives
+------------------------
+For generic real drift variables d, solve the exact rational coefficient
+equations for all vector polynomials v(d) of degree<=1 satisfying v.d=0.
+No pairwise solution is seeded. RREF yields a complete10-dimensional
+kernel of a rank20 map. The independent checker recomputes constraint
+rank and basis rank and checks primitive integer normalization.
+
+For s_j=sum_i v_(j,i), every nonempty basis subset T yields
+  W_i=sum_(j in T) s_j*v_(j,i), S=sum_(j in T) s_j^2.
+The checker expands all1023 constructions and proves
+  sum_i W_i=S, sum_i W_i*d_i=0, S>=0.
+Where S>0, lambda_i=W_i/S thus recovers
+  g=sum_i lambda_i(R_i+P_i).
+The weights are constant through the entire prefix/channel/cell map at
+fixed N. Negative weights and all residual crosses remain. Cauchy gives
+  E_g <= 2 E_(sum_i lambda_i R_i) + 2 K sum_i C_Pi,
+  K=sum_i lambda_i^2.
+
+This is a conditional exact recovery theorem. It does not establish
+S>0 at all arithmetic scales, a uniform bound for K, or the signed
+weighted residual bound. Equal nonzero abstract drifts give S=0 for
+every construction, so separate drift magnitude upper bounds cannot
+prove recovery. That countermodel concerns the weak proof route, not
+the actual Mobius sequence or RH. A separately certified all-zero drift
+would permit identity recovery; a zero-containing ball is insufficient.
+
+Numerical experiment and results
+--------------------------------
+Structure was frozen before moments. Discovery used X=1,2,...,8192 on
+dyadic scales. One construction per active support size2,3,4,5 was chosen
+by worst observed doubling exponent of K, then basis count and id. The
+pair using the two representations with all centered finite heads paid
+was also retained, regardless of ranking. Selection was saved before
+evaluating X=16384,32768,65536,131072. These are new MOMENT observables
+on already observed source coefficients, not fresh arithmetic holdouts.
+The worst one-step doubling statistic is a selection score, not an
+inferred asymptotic exponent. No constants were fitted.
+
+1008 of1023 candidates had certified finite nonzero denominators at all
+discovery scales; failures and singular scales are preserved. The five
+selected constructions all had certified finite recovery at the later
+evaluation scales. Approximate K values there were:
+
+ candidate  active geometry ids     X16384    X32768    X65536    X131072
+        9   12,8,0                   1.323     0.455     0.458      0.825
+       20   12,6,8,0                 1.488     0.391     0.331      0.524
+       31   8,0                      7.361     1.732     0.647      1.410
+      511   0,4                     34.668    60.373    58.614     59.946
+      898   12,6,8,0,4               1.092     0.370     0.293      0.512
+
+Candidate511 has all its centered finite-head remainders paid but larger
+recovery costs. Other candidates use representations retaining unpaid
+centered remainders. Conditioning alone cannot rank their full-core
+usefulness. The full signed residual energy was NOT evaluated in this
+stage, and no numerical recovery pass is a whole-core bound pass.
+
+Producer:192-bit direct cube-root moment sums. Checker:224-bit Abel
+summation from exact integer Mertens prefixes with log-exp powers. Both
+read their own existing certified mu archives and validate every divisor
+inverse equation through the largest required cutoff. No source was
+regenerated. Exact cutoff roots use integer inequalities. Trailing mu=0
+cutoffs are merged only when both effective moment cutoffs agree AND
+the complete drift polynomials are identical. Producer evaluates
+factorized square pools; checker independently evaluates expanded
+polynomials. Every moment, drift, normalizer, weight and finite recovery
+cost is compared.172186 enclosure comparisons passed. Wide finite
+enclosures would remain unresolved; none is treated as exact zero.
+
+What must be searched next
+---------------------------
+Each generated construction emits four OPEN obligations:
+1. Eventual nonsingularity at one fixed cofinal dyadic threshold X0.
+2. Uniform polylogarithmic recovery K, or the exact weighted paid cost.
+3. Uniform polylogarithmic energy of the COMPLETE weighted residual.
+4. The original full source's finite head below any proved threshold.
+
+The two main search targets are arithmetic separation of complete signed
+moments and cancellation in the joined residual correlations. Bounds for
+one do not imply the other. A usable construction must reduce these
+obligations to proved estimates or produce concrete intermediate lemmas
+whose proof is itself searched. Merely eliminating a displayed drift or
+lowering observed K is not enough. Continue to retain competing routes
+when available proof rules cannot close them. No older fixed-constant
+recurrence is discharged, and inherited recovery and degree costs stay.
+
+Verification and resources
+---------------------------
+All27 frozen tests passed:9 generator/generic-semantics,13 independent
+checker,5 runner/selection/interval tests. Each owned development suite
+also passed once; no study or development failure occurred. Frozen prior
+proof nodes and complete alternatives were replayed without rerunning old
+search optimizers or old suites. Direct-byte snapshots, no hashes.
+
+Study31.661 seconds,373833236 inclusive charged operations under1.5billion.
+Main peak RSS704032KiB. Parallel workers peaked at about306140/316876KiB
+in discovery and305964/317012KiB in evaluation, within4GiB per process
+and the user's16GiB aggregate ceiling. Both phases completed once.
+Session39729 is terminal with exit0; do not poll or restart it.
+
+Whole signed arithmetic control and RH remain OPEN. Keep the original
+research goal active; these verified reductions do not complete it.

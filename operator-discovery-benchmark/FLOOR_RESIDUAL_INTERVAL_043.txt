@@ -1,0 +1,143 @@
+FLOOR RESIDUAL INTERVAL043: WHOLE CONTINUOUS NORM FOR FIXED PROGRAMS
+
+This is a globally certified fixed-program norm primitive in a new integer
+floor representation. It does not claim convergence as the support increases,
+a source coefficient recovery, or RH.041/042 are neither edited nor rerun.
+Actual synthesized programs must be frozen by root before actual evaluation.
+No parent arithmetic/source data is read by this backend.
+
+1. Exact representation on all continuous cells
+
+For integer n>=2 define
+ f_n(x)=floor(1/x)/n-floor(1/(n*x)),0<x<=1,
+and f_n(x)=0 for x>1. On each cell x in(1/(k+1),1/k], k>=1,
+floor(1/x)=k and floor(1/(n*x))=floor(k/n), including the upper endpoint.
+Thus f_n(x)=(k mod n)/n,0<=f_n(x)<=(n-1)/n.
+For integer q>=2, I_q(x)=1_(x<=1/q) has cell value1_(k>=q), including x=1/q.
+The exact rational program specifies
+ e(x)=1-sum_n c_n f_n(x)-sum_q d_q I_q(x),0<x<=1.
+The cell length is1/[k(k+1)]. Hence the WHOLE continuous norm is
+ integral_0^1 e(x)^2 dx=sum_(k>=1)e(k)^2/[k(k+1)].
+The half-open cell endpoints are measure-zero boundaries, but their values
+are consistent with the exact floor and indicator definitions too.
+
+2. Exact signed head from integer divisor events
+
+Choose D=lcm(denominator(c_n/n),denominator(d_q)). Empty support gives D=1.
+Set integer weights w_n=c_n D/n, periodic events v_n=c_n D=n w_n,
+one-time step events s_q=-d_q D, and A=sum_n w_n.
+The integer residue and complete increment are
+ R(k)=D-k*A+sum_n v_n floor(k/n)+sum_(q<=k)s_q,
+ R(k)-R(k-1)=-A+sum_(n|k)v_n+sum_(q=k)s_q,
+ R(0)=D, e(k)=R(k)/D.
+The implementation constructs one integer event array0..H: every periodic
+v_n is added at ALL multiples of n, and every s_q exactly ONCE at k=q.
+Colliding periodic and step events retain their full signed sum. A single
+prefix pass computes every R(k), with no O(H*support) direct residue loop.
+
+The head is accumulated at Arb precision192 by default:
+ head=D^-2*sum_(1<=k<=H)R(k)^2/[k(k+1)].
+Every R is exact Python integer arithmetic; Arb encloses all head divisions,
+squares and additions. All covariance/cross terms inherent in the squared
+combined residual remain. There is no sum of separate norms replacing the
+signed residual, and no float head or sign admission.
+
+3. Analytic tail covering every unobserved continuous x
+
+certify requires H>=every registered step threshold q. Therefore on every
+tail cell k>=H+1 all I_q are1. Put
+ M=|1-sum_q d_q|+sum_n |c_n|*(n-1)/n.
+Every tail cell satisfies |e(k)|<=M by the triangle inequality. Its complete
+measure is sum_(k>=H+1)1/[k(k+1)]=1/(H+1). Consequently
+ 0<=tail integral<=M^2/(H+1).
+M and this bound are exact rationals. No sampled sign, observed tail pattern,
+truncate-and-assume convergence rule or omission of floor multiples is used.
+The output norm enclosure is head+[0,M^2/(H+1)], constructed in Arb and
+serialized with exact enclosing dyadic endpoints.
+
+Before every step has activated, the prefix engine checks R against the
+larger valid bound D+sum|d_q D|+sum|w_n|(n-1), rather than applying the tighter
+tail bound to the early head. This matters when sum d_q=1 and the tail bound
+is zero while the first head cells remain nonzero.
+
+4. API and schema
+
+ certify(program,H=1048576,precision=192,meter=None) -> JSON
+
+The program schema is exactly
+ {id:nonempty str,
+  coefficients:[{n:integer>=2,value:canonical nonzero rational str}],
+  steps:[{q:integer>=2,value:canonical nonzero rational str}]}.
+Both lists are strictly sorted by their integer key, with distinct entries.
+steps is always present, and may be empty; both lists may be empty for e=1.
+Combined floor plus step support is at most256. No hidden zero coefficient,
+float rational, duplicate, unsorted entry or missing field is admitted.
+H is an exact integer0..8388608, with H>=max(step q). H0 is allowed only with
+no steps and gives an empty head plus the complete triangle-bound tail.
+
+Schema floor-residual-continuous-norm-v1 exposes exact input program,H,
+precision,basis and step cell identities,lattice D/A/weights/periodic and
+one-time events,residue/update formula,Rzero,head indices/enclosure,complete
+tail indices/measure/exact M/exact upper bound,whole norm enclosure,continuous
+domain,combined support,coefficient bit count,and resource counts.
+Every interval contains a65-digit readable Arb ball and exact dyadic bounds
+ [decimal integer mantissa,integer exponent], representing mantissa*2^exponent.
+The tail is separately exposed as exact rational lower0/upper M^2/(H+1).
+No printed float endpoint determines admission.
+
+Primitive helpers validate_program,integer_lattice and head_from_lattice
+are synthetic-testable. validate_program returns exact floor and step
+Fraction lists; integer_lattice returns all integer events and head/tail
+pointwise bounds. The evaluator does not synthesize programs, select minima,
+fit coefficients or read parent coefficient/source arrays. Optional inner
+product APIs were not added; squared combined residuals retain signed cross
+terms required by this fixed-program norm primitive.
+
+5. Resource domains and worker use
+
+Canonical rational/integer parameters have4096-bit input cap. Exact lattice,
+event,bound and tail integers have8192-bit result cap; product sizes are
+preflighted before multiplication. H cap8388608 allows the requested2^20
+pilot and larger windows. Precision is128..4096bits. The default Meter has
+500m proxy operations and3600seconds, with charged validation/lattice work,
+allocation reservation,all periodic/one-time visits,all head updates and
+output interval arithmetic. Deadline checks occur after each event support
+scan and every4096 head cells. Exhaustion raises rather than approximating.
+
+The event allocation allowance is
+ (H+1)*(64+ceil(event_magnitude_bit_length/8))+support*8192+65536bytes.
+event_magnitude=sum|c_n D|+sum|d_q D| bounds any cell's accumulated event.
+The estimate deliberately exceeds a Python list pointer/int allocation. An
+estimate above15GiB is rejected before allocation. Counts expose this estimate,
+not a measured high-water RSS. There is no quadratic Gram table or retained
+array of Arb source values. Every fixed-program evaluation has its own event
+array and head accumulator; root may parallelize frozen programs with fresh
+meters inside its overall16GiB resource plan.
+
+6. Typed scope: general norms versus RH-bearing targets
+
+The norm primitive accepts steps for general affine residuals and refinement
+forcing. That permission does NOT make a stepped target RH-bearing. Indicators
+have Mellin transform q^-s/s, which does not vanish at zeta zeros. Independent
+argument admission must require steps=[] for a target using the zero-response
+floor-function bridge. Root/checker own those typed proof obligations.
+This backend therefore always reports false for convergence as support
+increases,actual source coefficient recovery,RH proved and RH refuted. A
+small certified norm for one fixed program does not discharge an infinite
+family convergence condition or an unpaid refinement forcing term.
+
+7. Focused synthetic development
+
+One owned invocation passed11 tests with0 failures/errors,83639 charged
+operations,42 peak integer bits,110786 estimated peak bytes,0.022160620021168143
+seconds. Its receipt is floor_residual_interval_043_development.json.
+Tests compare the event head with direct exact rational residue sums, preserve
+signed floor/step coefficients,check floor cell and indicator endpoints,check
+divisor/update formulas,periodic/one-time collision,constant-residual and
+step-only exact-zero-tail calibrations,and the elementary c2=2 norm1-log2.
+They verify complete analytic tail bounds,denominator257 support,scope/counts,
+schema/ordering/zero/float rejection,step-horizon rejection,and pre-allocation
+work/horizon/precision/support/integer guards. All fixtures are synthetic.
+No actual newly synthesized program,old study/suite,parent source data or hash
+was read or generated. Producer implementation stops after this focused pass;
+root owns program freeze,actual evaluations and independent proof admission.

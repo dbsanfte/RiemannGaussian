@@ -1,0 +1,14 @@
+{
+  "RH_proved": false,
+  "counts": {
+    "finite_certificate": 8,
+    "missing_resource": 0,
+    "no_certificate_found": 56
+  },
+  "development_attempts": 32,
+  "final_attempts": 32,
+  "global_bound_proved": false,
+  "schema": 1,
+  "scope": "finite symbolic certificates only; atomic coefficient encoding control, grouped representation search; no uniform template or RH proof",
+  "status": "completed"
+}

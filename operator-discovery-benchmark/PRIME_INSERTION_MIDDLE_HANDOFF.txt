@@ -1,0 +1,167 @@
+LATEST CONTINUATION: read PRIME_TRANSFER_HANDOFF.txt for completed058.
+Exact transfers and endpoint estimates were inferred and checked; the
+joined ordinary-Mobius middle bound and RH remain OPEN.
+
+SIGNED MOVING-MIDDLE SEARCH057: CANDIDATES TESTED; UNIFORM WORK STILL OPEN
+
+Latest completed experiment:
+  fractional-prime-kernel-results/pilot-001/scale_followup_001/dense_followup_001/insertion_followup_001/core_followup_001/middle_followup_001/
+Read report.json, assessment.json, selected.json and final.json for the
+frozen experiment. Read candidate_diagnostics.json and mechanism_feedback.json
+for the post-selection followup. The stopped analytical candidate review is
+archived alongside them as PRIME_INSERTION_MIDDLE_CANDIDATE_REVIEW_057.txt.
+The preceding056 endpoint/operator discovery remains in the parent directory.
+
+STATUS: the active research goal is NOT complete. No uniform middle bound,
+complete source bound, original floor-energy bound, or RH proof/refutation
+has been obtained. The detector now evaluates the actual unpaid middle and
+searches signed auxiliary recurrences. Its current proof backend does not
+prove the remaining joined arithmetic work. Do not promote finite survivors
+or a smaller fitted training constant to an all-scale cancellation mechanism.
+
+1. What the detector actually searched
+
+For alpha=1/5 and actual ordinary primes,
+  h_R(N,t)=sum_(2N<n<=4N)G_(Rn)(t)-2sum_(N<n<=2N)G_(Rn)(t),
+  G_m(t)=product_(p|m)(1-p^(-t)),
+  J_R(N)=integral_(epsilon_R(N))^(1/2)h_R(N,t)t^(-6/5)dt/Gamma(4/5).
+This is the complete E_R source K(Rn), with every prime valuation and overlap;
+there is no outer coprime mask. The excluded source unit cancels in this
+integer filter. epsilon_R=min(1/2,N^(-gamma_R)), gamma5/8 for R2,3,5 and
+5/18 for R6,10,15. Every evaluated channel retains its own moving endpoints.
+
+The nine supplied features were the full J6,J2,J3,J5,J10,J15 and the J6
+bands ending at fractions1/3,1/2,2/3 of the distance from epsilon to1/2.
+The detector enumerated673 coercive energies
+  F(N)=[J6(N)^2+lambda*(sum a_i J_i(N))^2]/N,
+with signed primitive integer vectors of support<=2 and lambda1/4,1,4,
+plus the target-only control. It combined them with13 convex rational
+parent transports on N-1,N,N+1 and delta0,1/7,1/3,1/2,1:43745 proposed
+bounds of the form
+  F(2N+r)<=sum_s w_s F(N+s)+C/N^delta, EVERY N>=3, r=0,1.
+General rational exponents remain accepted by the APIs; these are pilot
+choices and finite enumeration budgets, not a2/3/6 root whitelist.
+
+Training used35 parent centers and both child parities. All43745 had a
+coarse declared constant that passed training. The selector retained15:
+a center-only target control, a neighbor target control and a signed
+auxiliary for eachdelta. It uses the unrounded training requirement to
+break coarse-constant ties. No analytic proof result supplies its winners.
+The model supplied the representation, feature dictionary and proof rules;
+this remains a constrained discovery grammar with those explicit biases.
+
+Selection and constants were frozen before final-only values. Final parent
+centers were19,37,61,97,149,211,307,419, both parities. These are disjoint
+transitions from training; endpoint source values may overlap and are cached.
+No constant was refitted after testing.
+
+2. Actual candidates and independent finite outcome
+
+The weaker signed selection, for delta0,1/7,1/3,1/2, was
+  L6(N)=integral_(epsilon_N)^(1/3+epsilon_N/3)h6*t^(-6/5)dt/Gamma(4/5),
+  A(N)=J15(N)-L6(N), F_A(N)=[J6(N)^2+A(N)^2/4]/N,
+  F_A(2N+r)<=F_A(N-1)+C/N^delta.
+Its constants in that order are1/8192,1/4096,1/2048,1/1024.
+The strongest-decay signed selection was
+  B(N)=J6(N)-J10(N), F_B(N)=[J6(N)^2+4B(N)^2]/N,
+  F_B(2N+r)<=(2/3)F_B(N-1)+(1/3)F_B(N)+(1/128)/N.
+The last fixed inequality is REFUTED at N211,r0. Its verified drift is
+approximately0.00012819626 against allowance0.00003702607. Both delta1
+target controls also fail at that transition. This refutes those exact
+recurrence constants, not RH, all possible operators, or every1/N bound.
+
+Overall:237 final passes and3 refutations. The twelve selected delta<=1/2
+variants each pass16 reserved comparisons and remain OPEN. They use repeated
+forms with different exponents, so they are not twelve distinct mechanisms.
+All112 used final source intervals passed independent containment at256bit,
+Taylor degree128; no precision fallback was needed. Their arguments range
+from18 through839. Exactly868 unique producer middle-source values were
+computed:774 for training and94 additional final-only requests. These are
+new middle integrals, while raw prime/Mobius arithmetic overlaps older work.
+
+The weaker signed form reduced the maximum required training constant by
+about33.6% versus the center control. Yet its actual drift is LARGER on14/16
+reserved transitions and smaller on2/16. Against identical N-1 transport,
+its auxiliary adds positive cost10/16 and negative credit6/16. These are
+post-selection descriptive interval comparisons, with no new source values
+or fitting. They show why training-constant improvement should not dominate
+the research priority. See candidate_diagnostics.json for exact intervals.
+
+3. What is proved, and what remains open
+
+The independent checker verifies F>=J6^2/N, the complete signed quadratic
+matrix, source-free bases for all four integers2,3,4,5, and conditional
+convex-neighbor recovery. A UNIFORM recurrence would give F=O(log N) for
+delta0 or bounded F for delta>0. The paid endpoint bounds from056 restore
+the whole inserted E6 filter; its separately reviewed conditional RH bridge
+then applies. The pointwise proof provider supplies only F<=constant*N and
+explicitly fails to pay the requested signed drift. That uniform leaf is
+still the central unsolved problem.
+
+The new post-selection analytical review proves a general exact transport.
+With H_R(x,t) inclusive of n1 and v_x(n)=1_(2x<n<=4x)-2*1_(x<n<=2x),
+  H_(Rp)(x)-H_(Rq)(x)=(q^(-t)-p^(-t))*H_R(x)
+      +p^(-t)*H_(Rp)(x/p)-q^(-t)*H_(Rq)(x/q),
+for distinct actual primes p,q not dividingR. This retains ALL valuations.
+Lower arguments are real and their integrals retain the p^(-t) weights,
+cutoff compensation and actual unit v_x(1). The unit is+1 on[1/4,1/2),
+-2 on[1/2,1), and zero elsewhere; it is NOT the divisor coefficientW(x).
+No integer-only norm certificate is silently transferred to these states.
+The current-scale weighted forcing is unpaid, so this identity is a new
+proof-language primitive, not an unconditional contraction.
+
+For the selected subband, the exact moving upper endpoint is
+u_N=1/3+epsilon_N/3. Its exiting boundary has the all-scale bound
+  |upper_flux(N to2N+r)|<=144 N^(7/18), N>=2, r=0,1.
+Dividing by sqrtN gives144 N^(-1/9), summable along a dyadic/parity chain;
+a nonexpansive norm recovery can absorb it with total<=5184 N0^(-1/9).
+This is an analytical component proof, not yet an executable new proof rule.
+The whole upper parameter band has only an O(N^(2/3)) absolute envelope;
+it must not be confused with its small moving-boundary flux. The incoming
+lower boundary already has a paid square-root amplitude, but its sign and
+energy cross terms do not acquire the selected tiny drift constants.
+Joined spatial/current-channel forcing and signed correlation remain OPEN.
+
+4. Concrete feedback into the next search
+
+mechanism_feedback.json records failed fixed claims, finite survivor scope,
+the negative ranking evidence, exact new transfer states and all unpaid
+forcing. The next grammar should enumerate general prime-valuation and
+lower-real-argument transfers, linked parameter-boundary compensations,
+and norm/slack recurrences that allow fixed logarithmic growth. It should
+search for a separately testable arithmetic forcing lemma and track its
+dependencies. Assuming an RH-scale bound for another unpaid channel or
+cycling through an equivalent identity does not close an obligation.
+
+Do not rerun this successful search or merely increase its constants/scales.
+Its saved data can support further analysis. The next experiment should
+introduce a source-specific control mechanism and its proof obligations;
+new reserved transitions must be distinguished from already observed ones.
+
+5. Verification, resources and preservation
+
+The scientific search ran once in48.277484seconds with3 persistent
+workers and bounded functional caches. It searched43745 candidates and
+independently rebuilt only112 final source requests actually used by the
+selected forms and nonzero transport weights. No hashes were created.
+34 distinct focused tests passed:9 producer,7 search,14 checker,4 integration.
+One checker capacity-test fixture initially expected overflow below its
+actual limit; its failed run is preserved and only that corrected test was
+rerun. No production checker arithmetic changed for that correction.
+Development work proxy:34968654; scientific work proxy:1917976997.
+These are declared operation proxies, not physical CPU-instruction counts.
+Parent peak RSS:704032KiB; largest worker peak:65836KiB.
+These are per-process high-water marks, not an aggregate or fresh allocation
+measurement. The authorized aggregate ceiling remains16GiB.
+
+All196 earlier frozen source files and16 preregistered057 files were
+byte-preserved:212 total. Prior successful suites and scientific studies
+were not replayed. The post-run candidate review, diagnostics, feedback,
+erratum and this handoff are additional artifacts, outside that16-file
+pre-experiment snapshot. The reviewer used no new arithmetic computations.
+Root handoffs are mutable pointers; archived prior work remains intact.
+
+ERRATA.txt corrects one frozen scope-memo sentence saying "five seeds";
+the correct four seeds2..5 were already used everywhere executable.
+The fixed057 source bytes are preserved, and the prose error does not
+alter any bound, validation result or conclusion.

@@ -1,0 +1,28 @@
+{
+  "RH_proved": false,
+  "all_attempts_retained": true,
+  "producer_imports_in_checker": false,
+  "schema": "density-coverage-independent-development-v1",
+  "science_admission_attempts": [
+    {
+      "elapsed_seconds": 19.45266852801433,
+      "operations": 839547214,
+      "output": "fractional-prime-kernel-results/pilot-001/scale_followup_001/dense_followup_001/insertion_followup_001/core_followup_001/middle_followup_001/transfer_followup_001/mobius_transport_followup_001/mass_conservation_followup_001/fractional_flow_followup_001/prefix_completion_followup_001/analytic_repair_followup_001/prime_conditioning_followup_001/walsh_energy_followup_001/sparse_prefix_followup_001/signed_lag_followup_001/floor_control_followup_001/convolution_scale_followup_001/divisor_correction_followup_001/moment_scale_followup_001/exchange_law_followup_001/prime_storage_followup_001/centered_storage_followup_001/prime_moment_followup_001/count_control_followup_001/residual_fold_followup_001/rough_energy_followup_001/scale_flux_followup_001/symbolic_cover_followup_001/density_packet_followup_001/coverage_admissions_081.json",
+      "peak_reserved_bytes": 592978110,
+      "peak_rss_bytes": 80371712,
+      "rows": 6,
+      "status": "VERIFIED_FINITE_DENSITY_COVERAGE"
+    }
+  ],
+  "test_attempts": [
+    {
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_check_mobius_density_coverage_081 -v",
+      "elapsed_seconds": 0.043,
+      "exit_code": 0,
+      "status": "PASS",
+      "tests_run": 3
+    }
+  ],
+  "uniform_source_bound_proved": false,
+  "uniform_unlinked_bound_proved": false
+}

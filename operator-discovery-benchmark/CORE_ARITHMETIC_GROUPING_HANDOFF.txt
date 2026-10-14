@@ -1,0 +1,208 @@
+ARITHMETIC GROUPING SEARCH: GENERATED CANDIDATES, PROOF FEEDBACK, PAID HEAD
+
+Current result and authoritative continuation
+----------------------------------------------
+The detector now changes its construction language in response to a proved
+obstruction, generates complete signed arithmetic groupings, selects them
+without model calls, and compiles analytical feedback into reusable guards
+and new residual search obligations. The full signed core bound and RH
+remain OPEN. No goal-completion claim is warranted.
+
+Continue from candidate10_arithmetic_grouping_obligation.json, a direct-byte
+copy of core-arithmetic-grouping-results/pilot-001/proof-followup-001/
+next_search_input.json. The original target, units, centers, prime-power
+corrections, inverse costs and signed-work recovery chain remain attached.
+Earlier inputs and frozen studies have not been modified.
+
+Main completed study:
+ core-arithmetic-grouping-results/pilot-001/report.json
+ core-arithmetic-grouping-results/pilot-001/selection.json
+ core-arithmetic-grouping-results/pilot-001/verified_groupings.json
+Follow-up completed proof compiler:
+ core-arithmetic-grouping-results/pilot-001/proof-followup-001/report.json
+ core-arithmetic-grouping-results/pilot-001/proof-followup-001/proof_gates.json
+ core-arithmetic-grouping-results/pilot-001/proof-followup-001/paid_head_certificates.json
+ core-arithmetic-grouping-results/pilot-001/proof-followup-001/next_search_input.json
+Latest pointer: core-arithmetic-grouping-results/latest.json.
+
+Run is TERMINAL, exit0. Session29331 is closed; do not poll or restart it.
+No full-source retry, fresh source generation, final reselection or numerical
+bound refit occurred. All study source snapshots use direct bytes, no hashes.
+
+What is automated, and what was supplied analytically
+----------------------------------------------------
+The generator begins with17 arithmetic valuation-stripping maps. A generic
+proof rule extracts the first nonzero COMPLETE prime coefficient from the
+source AST. It proves that their singleton fresh-prime classes force a
+positive-power absolute majorant. Failure activates every member of a fixed
+11-operation extension menu: prime-cofactor deletion, fractional-root index
+maps, quotient maps and residue maps. This produces204 programs total.
+
+The search enumerates and ranks those constructions itself; no model picks
+individual formulas or fitted constants. The grammar, mutation rule, and
+proof templates remain supplied by us. Sol6.1 analytical reviews supplied
+the proof templates and evaluated actual selected candidates. An independent
+Sol6.1 checker used separate arithmetic-label and complete pair algorithms.
+This is a guided executable discovery/proof loop, not autonomous arbitrary
+theorem invention or proof of an RH-strength inequality.
+
+The initial gates exclude17 singleton-frontier proof routes and10 interval
+coarsenings which still group only same-sign fresh primes. Six more programs
+eventually put the entire target into one bucket; these offer no reduced
+control. There are171 initially admitted programs,130 distinct partitions
+on the declared finite cases. Finite equal partitions reuse evaluation only;
+they are not declared equivalent operators at all scales.
+
+Exact complete object being searched
+-------------------------------------
+For the unchanged core coefficient f, identity filter, eta1 and rho1/2,
+ H=4X-1,
+ Q_rs(X)=sum_(h,k<=H,L_X(h)=r,L_X(k)=s)
+                 f(h)f(k)[K_1,2X(h,k)-K_1,X(h,k)/2].
+Every ordered pair, diagonal, unit, old head and source-mode cross remains.
+The entire coefficient grouping is performed BEFORE absolute values:
+             Delta W_1(X)=sum Q_rs(X)<=sum |Q_rs(X)|.
+The child and parent use the SAME label_X, not independently chosen child
+labels. A uniform polylog bound on the grouped absolute sum would suffice
+through the original signed recurrence, causal recovery and correction chain.
+The exact partition identity alone does not establish that premise.
+
+Numerics and validation scope
+-----------------------------
+Exploration used X256,512,1024 and coefficients through4095, ALL already
+observed in the prior independently verified source. The first two scales
+are below the downstream cutoff1024. These are new grouped observables on
+known coefficients, not fresh source holdouts or extrapolation evidence.
+No constants were fitted. Ranking used worst observed doubling growth,
+complexity and ordinal; one program was selected in each of three lanes.
+
+All171 admitted label maps at every scale were independently checked by a
+sieve-based interpreter and a trial-factorization interpreter. Float matrix
+updates explored the partitions. The three selected full matrices atX1024
+were then independently reconstructed at192-bit Arb precision by streaming
+row updates and literal ordered coefficient pairs. The checker also matched
+the complete scalar prefix/log-prefix shell integral. All397 scalar checks
+passed, covering379 entries and18 aggregate/scalar checks. Matrix dimensions
+were separately audited in the proof follow-up. No sampled-pair claim is
+substituted for these complete checks.
+
+Selected programs and observed grouped absolute sums:
+ ID117: strip all small-prime valuations up tosqrtX, remove smallest prime.
+ ID110: strip valuation pairs up toX^(1/3), take floor sixth root.
+ ID37:  strip powers of2, then residue modulo3.
+ X             256          512           1024
+ ID117          9.996684    17.763180      21.841110
+ ID110          2.422399     2.135227       2.451329
+ ID37          27.213991    45.634653      74.672382
+The common signed total atX1024 is0.9813499987169554. Their group counts
+there are19,3,3. These few small-scale values prove no asymptotic rate.
+
+Eleven tests passed in the single frozen combined main suite. The checker
+had one prior incorrect hand-fixture expectation; its initial failure and
+affected-only correction are retained in the development receipt. Four new
+proof-feedback tests passed: the original three once, then only the added
+head-rule test after that rule was introduced. No unrelated suite reruns.
+
+Main study2,021,151,691 charged operations,545.709seconds. Main peakRSS
+704032KiB; each worker peak<=212972KiB. Main plus two worker peaks is below
+1.08GiB against the authorized16GiB. Two parallel processes; explicit whole
+study work cap6b. The checker dominates wall time because it verifies every
+ordered pair. Proof follow-up2,089,668 operations, no new source evaluation.
+Combined total2,023,241,359 operations. These are explicit work proxies,
+not bit-complexity or physical CPU instruction counts.
+
+Analytical feedback: two selected routes actually fail
+-------------------------------------------------------
+ID117 is refuted as a grouped-absolute cofinal proof route. Certain complete
+fresh classes consist only of semiprimes pq with p,q>sqrtX, all n>2X.
+Their full coefficients satisfy f(pq)=2beta+O(X^-1/6)>0, not just the
+dominant mode alone. Their whole class-pair blocks are positive; no hidden
+same-class complement supplies cancellation. PNT in fixed relative prime
+intervals gives a lower bound c X/log^4X on the grouped absolute sum.
+The analogous largest-prime deletions are also rejected, with their repeated
+prime cases accounted for. This becomes a reusable three-program rule.
+
+ID37 is refuted by an uncanceled real pole. Its zero class is exactly3|n.
+The masked coefficient Dirichlet series has a nonzero residue at2/3, even
+though that pole cancels in the full source. A grouped polylog bound would
+bound the zero-class diagonal work step, then its prefix energy, and imply
+holomorphy to the right of1/2, contradicting that pole. Separating absolute
+groups loses indispensable cross-class cancellation.
+
+The compiler derives local masks from the arithmetic AST, including positive
+and odd prime valuations and the actual product masks for moduli2,3,6. It
+computes complete local residue factors and certifies nonzero residues with
+Arb. This rejects28 generated residue routes. It never infers nonzero values
+for multi-prime masks without computing the complete combined residue.
+
+Altogether the follow-up rejects31 further grouped-bound routes, including
+two of the three selections. These are NOT counterexamples to the original
+signed bound or RH. Numerical success was not mistaken for proof. Existing
+PNT is an explicit imported theorem, not a newly discovered prime estimate:
+Carneiro, Formalization of the prime number theorem and Dirichlet's theorem,
+https://arxiv.org/abs/1608.02029. Its source and stated theorem were checked.
+
+ID110: a genuinely paid sector, with an explicit signed remainder
+----------------------------------------------------------------
+ID110 has canonical n=d²r, where d uses stripped small primes and all
+unremoved large-prime valuations remain in r. Label j means j^6<=r<(j+1)^6.
+In particular the first cell includes residuals1..63, not just1. No proof
+or refutation of its complete grouped majorant has been established.
+
+For its complete low cells j<=J, use the ACTUAL source envelope
+ |f(n)|<=(37/2)d2(n),
+ d2(r d²)<=d2(r)d3(d),
+ sum_(d<=y)d3(d)<=y(1+log y)^2.
+The coefficient mass across those cells obeys
+ sum_(j<=J)sum_(n<=x,label_X(n)=j)|f(n)|
+        <=A_J sqrtx(1+log x)^2,
+ A_J=37 (J+1)^3[1+6log(J+1)].
+This bound is unconditional and uniform in the stripping cutoff. It retains
+common primes between r,d and the complete unit. The logarithmic bank has
+the same envelope after division bylogx. Consequently
+ sum_(j,k<=J)|Q_jk(X)|
+       <=(3/2)log2 A_J² (1+log4X)^4.                     [PROVED]
+All low/low source crosses and both step intervals are covered.
+
+This remains valid for J=J(X). The new compiler generates
+ J(X)=floor((1+log2X)^a), a0,1/6,1/3,1/2,1,2,
+and extends the same square-lift rule to root degrees k2,3,6. A conservative
+rational version is C*(1+log2X)^(ak+6),
+ C=6*(37/2)^2*2^k*[1+k(1+a)]²*81.
+The exact envelope retains its loglog factor; the conservative rational
+version pays it explicitly. There are144 generated head certificates over
+24 programs. These are variants of ONE reusable proved rule, not144
+independent mathematical discoveries. Step1 stripping cannot use it.
+
+For the surviving selection, six exact residual targets are now emitted:
+ R_J(X)=sum_(max(j,k)>J(X))Q_jk(X),
+ Delta W_1(X)=sum_(j,k<=J(X))Q_jk(X)+R_J(X).
+The remainder includes ordered low/high, high/low and high/high pairs ONCE.
+The search now needs a ONE-SIDED cofinal upper bound for this complete
+signed R_J, at every required scale. It is not necessary to take all its
+groups absolute. No sign, norm or covariance bound for R_J is assumed.
+The paid head may have higher log degree than the earlier fitted degree2;
+every fixed polylog degree still meets the original cofinal objective.
+
+Limits and next action
+-----------------------
+Large primes p>X^(1/3) and their squares remain in ID110. A plain absolute
+coefficient bound on that unremoved-square sector is onlyO(X^(2/3)logX),
+which does not pay its critical prefix cost. Do not discard it. Do not
+apply a fixed masked-series pole argument to these X-dependent cells.
+
+Use the generated signed-remainder obligations as the next detector inputs.
+Search joint prime/composite and cofactor transports with exact assignments,
+retaining every complement and exit. The exact prime/cofactor expansion in009
+suggests weighted leading-term cancellation as a next grammar; its kernel pullback and
+unmatched/composite complements have not been implemented or paid here.
+Prefer a proof of that remaining signed covariance to more fitting of the
+same numerical constants or denser grids. All data through524287 remain
+observed; any adapted final extrapolation must declare a genuinely new range.
+
+Proof records: CORE_ARITHMETIC_GROUPING_REVIEW_009.txt (independent Sol6.1),
+CORE_ARITHMETIC_GROUPING_GATES_009.txt (root record of reviewed gate proofs),
+CORE_SELECTED_GROUPING_REVIEW_010.txt (independent Sol6.1 selected-candidate
+analysis). One pending duplicate review was interrupted after its mathematical
+messages had been incorporated; no nonexistent final memo is cited as evidence.
+All completed analytical/checker edits have stopped. The full goal is active.

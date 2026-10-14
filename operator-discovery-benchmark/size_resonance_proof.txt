@@ -1,0 +1,275 @@
+SIZE ROOT LIFTS: ARTIFICIAL SINGULARITIES AND THE INFINITE-ORDER LIMIT
+
+Research record, 7 October 2026. This adds a negative analytic gate to
+the previously proved size-carry algebra. The operators remain valid
+formal operators and absolutely convergent zeta series on Re(s)>1.
+The stronger RH-half-plane regularity proposed for individual lifts is
+ruled out below. The paired identity is unaffected. No RH conclusion,
+historical originality, or theorem-prover certification is claimed.
+
+1. NOTATION AND A CIRCLE-MEASURE LEMMA
+
+Fix b>=2, tau=2*pi/log(b), s_m=1+i*m*tau, m an integer. Put
+theta(n)={log_b(n)} and psi(n)=ceil(log_b(n))-log_b(n), both in [0,1).
+The q-fold floor no-carry product permits an ordered factorization
+  n=n_1*...*n_q
+exactly when sum theta(n_j)<1. For ceiling use sum psi(n_j)<1.
+Indeed the total defect is floor of the corresponding sum of fractional
+parts, by telescoping the height potential. These facts also hold for
+unit factors. They follow from the exact product proved previously.
+
+For a>0 let d_a be the nonnegative coefficients of the normalized zeta
+power zeta(s)^a on Re(s)>1. For epsilon>0 define a positive measure on
+the circle R/Z by
+  mu_(epsilon,a)=epsilon^a*sum_n d_a(n)*n^(-1-epsilon)*delta_theta(n).
+Its mass is epsilon^a*zeta(1+epsilon)^a, tending to 1. Its mth Fourier
+coefficient is epsilon^a*zeta(1+epsilon+i*m*tau)^a. For each fixed m!=0
+the zeta value stays bounded: zeta is holomorphic at s_m, its only pole
+being 1. Since a is real, the modulus of its normalized power is |zeta|^a.
+Thus all nonconstant Fourier coefficients tend to zero. Finite
+trigonometric polynomials are dense among continuous circle functions;
+positivity and convergence of the total mass therefore prove that mu
+converges weakly to uniform Lebesgue measure. The same is true for psi,
+whose circle phase is the negative of theta's, including exact b-powers.
+
+Products of any fixed number of these positive measures converge to the
+product of uniform measures. Functions with only limit-measure-null
+discontinuities also have convergent integrals. The coordinate cut at
+theta=0 and the boundary sum theta=1 are null for the product uniform
+measure. Consequently the simplex indicator and its Fourier phase can
+be used in this conclusion; no unproved equidistribution of primes or
+zeta zeros is being assumed.
+
+2. UNIVERSAL ABELIAN LAW FOR EVERY FINITE ROOT ORDER
+
+Let L_(b,q,-)(u^{*alpha}) be the q-fold floor product of the ordinary
+qth root d_(alpha/q), q>=1, alpha>0. For ceiling replace - by +.
+Absolute convergence and nonnegative coefficients hold on Re(s)>1,
+since all its coefficients are bounded by d_alpha.
+Using a=alpha/q in the preceding product-measure lemma gives
+  lim_(epsilon down to 0) epsilon^alpha
+      L_(b,q,-)(u^{*alpha})(s_m+epsilon)
+    =A_q(m)=1/(q-1)!*integral_0^1 t^(q-1)*exp(-2*pi*i*m*t) dt.
+For ceiling the limit is the complex conjugate of A_q(m).
+This is a limit along the real direction from the domain of absolute
+convergence. It does not assert local meromorphic continuation.
+The result is independent of b and alpha once this normalization is used.
+
+At m=0, A_q(0)=1/q!. At m!=0 put w=1/(2*pi*i*m). Integration by parts
+gives A_1(m)=0 and
+  A_q(m)=-w/(q-1)!+w*A_(q-1)(m), q>=2,
+hence
+  A_q(m)=-sum_(r=1)^(q-1) w^r/(q-r)!.
+In particular A_2(m)=-1/(2*pi*i*m).
+
+For every q>=2 and positive integer m, Im A_q(m)>0. Pair the first and
+second half of each sine period in integral t^(q-1)*sin(2*pi*m*t) dt.
+Sine is positive on the first half; the value of the strictly increasing
+weight t^(q-1) is larger at the matching point of the second half, where
+sine has the opposite sign. Thus that sine integral is strictly negative,
+and the imaginary part of exp(-2*pi*i*m*t)'s integral is strictly positive.
+For negative m use conjugation. Therefore none of these A_q(m) vanishes.
+
+Every finite q>=2 lift consequently has a non-removable boundary
+singularity at EVERY s_m, m!=0, on Re(s)=1. Multiplication by a branch
+of (s-1)^alpha that is analytic and nonzero near s_m cannot remove it.
+Such points lie inside the proposed RH half-plane Re(s)>1/2, although
+actual zeta is finite there and is known to be zero-free on Re(s)=1.
+Thus the individual lifts cannot have the proposed single-valued
+holomorphic extension after ordinary pole cancellation, independently
+of RH. For alpha=1 the leading divergence has pole-like order one;
+calling this an isolated meromorphic pole would require additional
+continuation evidence and is deliberately avoided.
+
+3. THE EXACT GRID SEARCH AND ITS RIGOROUS ERROR
+
+The numerical geometry stage uses boxes of side 1/M in [0,1]^q.
+It computes the coefficients of (1+z+...+z^(M-1))^q for total degree
+0..M-1 using cumulative sums, without a preloaded factorial formula.
+All boxes with sum of lower endpoints <1 give an upper volume bound;
+all boxes whose sum of upper endpoints <1 give a lower bound. Their
+integer counts, divided by M^q, enclose the actual simplex volume.
+A 600-model grammar uses rational scales, powers of q and factorials
+at shifted q arguments. It trains at q=2..5 and tests q=6,7,8,10,12,16
+at a finer mesh. Passing syntactic aliases are not distinct operators.
+
+For nonzero m, the phase is evaluated at each box center. Its variation
+within a box is <=pi*|m|*q/M. Therefore the complex integral differs from
+the computed upper-box sum by at most
+  (pi*|m|*q/M)*upper_volume+(upper_volume-lower_volume).
+This certifies the numerical simplex Fourier calculations. The universal
+factorial and polynomial laws follow from section 2, not a finite mesh.
+
+The independent checker obtains the counts from stars-and-bars binomial
+coefficients and the Fourier integral from direct quadrature. It also
+checks the polynomial recurrence exactly over rational coefficients and
+tests the all-arity formula at fresh frequencies. These are independent
+checks of implementation, not replacements for the written theorem.
+
+4. A RAPID HURWITZ FORMULA FOR A GENUINE ZETA-INPUT ENCLOSURE
+
+Let J_1(s)=sum theta(n)*n^-s, initially Re(s)>1. Since
+floor(log_b(n))=sum_(k>=1)1[n>=b^k],
+  J_1(s)=-zeta'(s)/log(b)-sum_(k>=1)zeta(s,b^k).
+For a=b^k, Euler-Maclaurin gives
+  zeta(s,a)=a^(1-s)/(s-1)+a^(-s)/2+s*a^(-s-1)/12+R(s,a),
+with, for sigma=Re(s)>0,
+  |R(s,a)|<=|s*(s+1)|/[12*(sigma+1)]*a^(-sigma-1).
+The bound follows from |periodic B_2|<=1/6 in the integral remainder.
+Summing the three displayed terms geometrically makes the residual sum
+absolutely and locally uniformly convergent on Re(s)>0. Its truncation
+after k=K has error at most
+  |s*(s+1)|/[12*(sigma+1)]
+       *b^(-(K+1)*(sigma+1))/(1-b^(-sigma-1)).
+The independent zeta derivative is calculated by differentiating the
+finite Euler-Maclaurin expression for sum_(n>=1)n^-s, with arithmetic
+cutoff N=96 and order R=12. The undifferentiated remainder is bounded by
+  |B_(2R)|/(2R)! * |(s)_(2R)|
+         *N^(1-sigma-2R)/(sigma+2R-1).
+The periodic Bernoulli Fourier series proves its supremum is <=|B_(2R)|.
+On a circle of radius r=1/10 around the evaluation point, use the smaller
+real part sigma-r and |s+j|+r for each factor of the rising factorial.
+Cauchy's derivative estimate bounds the derivative remainder by this
+whole-circle bound divided by r. This differentiates a rigorously
+controlled finite arithmetic expression, without differentiating an
+unqualified asymptotic error or invoking a native zeta derivative.
+
+The geometric first term has residue -1/(2*pi*i*m) in J_1 at s_m, m!=0.
+This supplies an explicit independent route to the q=2 Abelian law.
+
+For the ordinary square root g=d_(1/2), define J_half by weighting its
+coefficients with theta. The exact floor identity previously proved is
+  L_(b,2,-)(u)=zeta-2*zeta^(1/2)*J_half+J_1.
+On Re(s)>1, |J_half(s)|<=zeta(sigma)^(1/2). Thus actual Arb zeta and
+the Hurwitz formula give a rigorous enclosure for the infinite lift,
+without truncating a slowly convergent Dirichlet series. After scaling
+by epsilon at s=s_m+epsilon, its center is epsilon*(zeta+J_1) and its
+error is at most
+  2*epsilon*|zeta(s)|^(1/2)*zeta(sigma)^(1/2)
+       +epsilon*Hurwitz_tail.
+The unknown-root term tends to zero as O(sqrt(epsilon)). It cannot cancel
+the nonzero leading J_1 residue.
+
+The ceiling identity is
+  L_(b,2,+)(u)=2*zeta^(1/2)*(R_(b,1/2)+J_half)-R_(b,1)-J_1.
+Its scaled center is -epsilon*(R_(b,1)+J_1); add
+2*epsilon*|zeta|^(1/2)*|R_(b,1/2)| to the floor error bound.
+The paired root has scaled modulus <=epsilon*|zeta|^(1/2)*|R_(b,1/2)|,
+tending to zero. Its previous zero-free correction proof is unaffected.
+
+The production probe uses K=28, the B_2 remainder, and native
+hypergeometric corrections. At bases 2,6,12, harmonics 3,-5,7, and
+epsilon=2^-20,2^-28,2^-36, it certifies both scaled lift values within
+half the modulus of their predicted nonzero opposite residues. Separate
+Arb neighbourhoods certify actual zeta is zero-free at these locations.
+These are 27 artificial-singularity controls, distinct from the earlier
+78 arithmetic-to-zeta comparison cases. The independent checker uses a
+different cutoff, the weaker B_1 Euler summation remainder, its own
+zeta derivative route, and a rational series for the correction.
+
+5. THE INFINITE ROOT-ORDER LIMIT HAS A DIFFERENT OBSTRUCTION
+
+For beta>0 let U_(b,-,beta)=EXP_Kminus(beta*LOG_*u); use Kplus for +.
+Let g(n)=LOG_*u(n), equal to 1/j at p^j and zero otherwise, and
+  L_epsilon=beta*log(zeta(1+epsilon)).
+Define a probability measure on the angle circle by
+  nu_epsilon=(1/log(zeta(1+epsilon)))
+                 *sum_n g(n)*n^(-1-epsilon)*delta_theta(n).
+For each fixed m!=0 its Fourier coefficient is
+LOG(zeta(1+epsilon+i*m*tau))/log(zeta(1+epsilon)). The numerator has a
+finite limit, with the logarithm normalized from Re(s)>1: the classical
+zero-free line Re(s)=1 implies zeta is nonzero at s_m, allowing this
+particular local logarithm to extend. The denominator tends to infinity.
+The same positive-measure argument as section 1 gives weak convergence
+of nu_epsilon to uniform measure, for theta and for psi.
+
+The true infinite-order zeta-input series has the positive expansion
+  U(1+epsilon)=sum_(k>=0) L_epsilon^k/k!
+           *integral 1[sum angles<1] d(nu_epsilon^product k).
+At each fixed k the probability tends to 1/k!, giving a term asymptotic
+to L_epsilon^k/(k!)^2. For any fixed real N>=0, choose an integer k>N.
+Positivity then proves
+  U(1+epsilon)/(log(1/epsilon))^N -> infinity.
+
+For any fixed lambda>0, 1[sum angles<1]<=exp(lambda-lambda*sum angles).
+Summing the complete positive exponential gives
+  U(1+epsilon)<=exp(lambda+L_epsilon*nu_epsilon(exp(-lambda*angle))).
+The bounded angular function has only a null-limit-measure jump at the
+circle cut, so its integral tends to (1-exp(-lambda))/lambda. That value
+can be made arbitrarily small by choosing a fixed sufficiently large
+lambda. Since L_epsilon~beta*log(1/epsilon), for every a>0 this implies
+  epsilon^a*U(1+epsilon)->0.
+Both conclusions hold for every fixed b>=2 and beta>0 and both orientations.
+
+Thus U grows faster than every log power but slower than every positive
+power of 1/epsilon. It cannot be meromorphic in any neighbourhood of 1:
+a removable singularity is bounded and a finite-order pole has power
+growth. More strongly no multiplication by (s-1)^a for any finite real
+a makes U holomorphic at 1. For a<=0 this is already unbounded. For
+a>0 a holomorphic result would have a finite integer zero order k and
+give U~c*epsilon^(k-a); this is either positive-power divergence, a finite
+nonzero limit, or convergence to zero, all contradicting the two bounds.
+The result is not an assertion that 1 is an isolated essential singularity;
+continuation to a punctured neighbourhood has not been established.
+
+The finite-q residue 1/q! tends to zero with q, and epsilon*U also tends
+to zero. Both normalized iterated limits are zero. This vanishing leading
+residue does not establish holomorphic regularity of U; its proved growth
+still rules it out. The detector records that stronger inference as false.
+
+6. RIGOROUS LOWER BOUNDS FROM ACTUAL ZETA ANGULAR MOMENTS
+
+The probe also computes actual normalized LOG(zeta) moments with certified
+branch corridors from sigma=4 to sigma=1+epsilon. Every interval image is
+Arb-certified to exclude zero. Its convex rectangle then has argument
+width less than pi, so the principal logarithm of consecutive endpoint
+ratios gives the correct continuous increment. At sigma=4, |zeta-1|<1
+anchors the principal branch to the normalized Euler logarithm.
+
+There is a finite numerical lower bound on U itself. Fix 0<r<=1/2,
+c=r/2 and the Fejer kernel F_N. Outside [0,r] the circular distance
+from c is >=r/2, so
+  F_N(theta-c)<=C=1/[N*sin(pi*r/2)^2].
+Since F_N<=N everywhere, (F_N(theta-c)-C)/N minorizes 1[theta in [0,r]].
+Integrating against the positive unnormalized g measure gives the actual
+mark mass lower bound
+  A_r >= ((1-C)*log(zeta(sigma))
+      +2*sum_(m=1)^(N-1)(1-m/N)
+          *Re(exp(2*pi*i*m*c)*LOG(zeta(sigma+i*m*tau))))/N.
+For ceiling replace LOG by its conjugate. If the computed lower bound
+is positive, every exponential term using k atoms in this interval
+survives whenever k*r<1, hence
+  U(sigma)>=sum_(k=0)^K A_r^k/k!, K*r<1.
+This bound uses the complete actual infinite zeta input. It is not a
+finite-array extrapolation. The production probe uses r=1/4, N=32, K=3;
+the independent checker uses a different Fejer degree, interval and K.
+
+If the angular measure were exactly uniform, the corresponding complete
+model would be sum L^k/(k!)^2=I_0(2*sqrt(L)), a classical Bessel series.
+Weak convergence at each fixed k does not justify replacing a growing
+number of terms by uniform probabilities. No Bessel asymptotic for the
+actual U is asserted by this experiment.
+
+7. SCOPE AND SOURCES
+
+The new singularity law is a verified consequence and a negative analytic
+gate, not a newly counted primitive. It does not invalidate the formal
+size products or their previously proved paired identity. It rejects
+their individual unmodified RH-half-plane holomorphy criterion. More
+general continuations with additional singularity subtractions remain
+unestablished. No conclusion about off-line zeros of zeta is inferred
+from singularities created by the transform itself.
+
+Primary references for the classical inputs:
+NIST DLMF 25.10, zero-free Re(s)=1 and the critical strip:
+  https://dlmf.nist.gov/25.10
+NIST DLMF 25.11, Hurwitz zeta and Euler-Maclaurin representations;
+the specific B_1 and B_2 tail bounds above are derived from the periodic
+Bernoulli remainder, not a fitted asymptotic error:
+  https://dlmf.nist.gov/25.11
+NIST DLMF 10.25.2, the modified Bessel series for the uniform model:
+  https://dlmf.nist.gov/10.25.E2
+The underlying convolution and LOG/EXP prior art is documented in
+novelty_audit.txt. The exact size-lift applications have not been matched
+to a reviewed publication; this does not certify historical originality.
+The verified-historically-new operator list remains empty.

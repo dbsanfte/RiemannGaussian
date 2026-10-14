@@ -1,0 +1,14 @@
+{
+  "schema": "prime-search-integration-047-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.041615089983679354,
+      "operations": 99819
+    }
+  ],
+  "scope": "synthetic gate/identity/implication/partition tests; no actual scientific arrays or scores"
+}

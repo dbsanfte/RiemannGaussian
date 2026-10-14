@@ -1,0 +1,307 @@
+FRACTIONAL ARITHMETIC LOGARITHM: PRIME SEPARATION AND ACTUAL-ZERO BRANCHING
+7 October 2026. Universal coefficient proofs and independent coefficient checks.
+Seven independent coefficient/API gates and six independent analytic gates pass.
+Historical priority unresolved. No new prime-distribution or RH estimate.
+
+1. THE OPERATOR, ITS DOMAIN, AND A FORMAL INVERSE
+
+Let D denote ordinary Dirichlet convolution, f(1)=1, and 0<alpha<1.
+Set D_alpha f(1)=0 and D_alpha f(n)=(log n)^alpha f(n) for n>=2.
+All powers here are positive-real powers of log n. Define
+
+ L_alpha(f)=f_D^(-1) D D_alpha f,
+ R_alpha(f)(1)=0, R_alpha(f)(n)=L_alpha(f)(n)/(log n)^alpha,
+ B_alpha(f)=W R_alpha(f), W=sum_(k>=1)mu(k)U_k/k.             (1)
+
+U_k is perfect-power placement, with zero coefficient at 1. The sums
+are coefficient-local. V=sum U_k/k satisfies VW=WV=I, since the weight
+at U_j is (1/j)sum_(d|j)mu(d). This holds for every formal sequence with
+coefficient 1 equal to zero, not only for prime-supported sequences.
+
+The equality f D L_alpha(f)=D_alpha f gives, at n>=2,
+
+ f(n)=R_alpha(f)(n)+sum_(d|n,1<d<n)
+        f(n/d)(log d)^alpha R_alpha(f)(d)/(log n)^alpha.       (2)
+
+Thus first apply V to a proposed B output and then use (2) in increasing
+n to recover a unique normalized f. This proves a universal triangular
+bijection between normalized formal units and sequences with value 0
+at 1. It does not assert a Dirichlet-product homomorphism.
+
+At alpha=1, the derivation D_1 obeys Leibniz's rule and
+R_1(f)=LOG_D f, hence B_1(f)=W LOG_D f is the established prime decoder.
+For alpha!=1 the ordinary normalized-unit lift is
+S_alpha(f)=EXP_D(R_alpha(f))=EXP_D(V B_alpha(f)). For zeta^beta input,
+the R or B coefficient at squarefree pq is beta^2 times that for zeta.
+Ordinary output root beta would instead multiply its logarithm by beta.
+At alpha=beta=1/2 and n=6 these differ. B itself has coefficient 0 at
+1 and is not a normalized unit to which ordinary unit roots apply.
+
+2. WHAT ZETA SUPPLIES WITHOUT AN INPUT PRIME ORACLE
+
+For the zeta coefficient sequence u(n)=1,
+
+ Lambda_alpha(n)=sum_(d|n)mu(d)(log(n/d))^alpha,
+ R_alpha(u)(n)=Lambda_alpha(n)/(log n)^alpha.                 (3)
+
+The production program computes Lambda recursively by inverting the
+divisor sum of (log n)^alpha. It does not accept prime indicators or
+prime-weight data as inputs. Independent verification factors n and
+computes (3) by squarefree subset differences. These are different
+algorithms. The inverse computation still contains arithmetic work;
+it is not a fast-primality claim or an estimate of prime distribution.
+
+Write n=product p^e_p, m=omega(n), g=gcd(e_p), t_p=log p/log n.
+All m steps t_p are positive and sum t_p<=1. Put
+
+ b_k=(-1)^(k+1)binom(alpha,k)>0, sum_(k>=1)b_k=1, b_1=alpha,
+ T_k(t)=sum_(S subset primes) (-1)^(m-|S|)(sum_(p in S)t_p)^k.
+
+The multinomial expansion gives T_k=0 for k<m and T_k>0 for k>=m:
+only monomials involving every one of the m variables survive.
+In particular T_k(t)<= (sum t_p)^k. The binomial expansion, including
+its absolutely convergent endpoint at sum t_p=1, gives
+
+ R_alpha(u)(n)=(-1)^(m-1)sum_(k>=m)b_k T_k(t).
+
+Removing perfect-power lifts as in (1) and using homogeneity yields
+
+ B_alpha(u)(n)=(-1)^(m-1)sum_(k>=m)b_k T_k(t) J_(k-1)(g),   (4)
+ J_(k-1)(g)=sum_(d|g)mu(d)d^(k-1)
+           =product_(ell|g, ell prime)(1-ell^(k-1)).
+
+The interchange is legitimate: the d sum is finite and each binomial
+expansion is absolutely convergent. If g=1 then J=1. If g>1, J_0=0,
+and all k>1 terms have sign (-1)^omega(g). Consequently, for EVERY
+integer n>=2 and 0<alpha<1,
+
+ sign B_alpha(u)(n)=(-1)^(omega(n)+omega(g)-1).               (5)
+
+At least one term in (4) is strictly nonzero. This also explains why
+using Omega(g) in place of omega(g) is a false short-training rule.
+
+3. A SHARP UNIFORM PRIME/COMPOSITE SEPARATION
+
+For positive x, x^alpha=c_alpha integral_0^infty
+(1-exp(-xt))t^(-1-alpha)dt, c_alpha=alpha/Gamma(1-alpha)>0.
+Applying the finite differences in (3) gives
+
+ |Lambda_alpha(n)|=c_alpha integral_0^infty
+ exp(-log(n/rad(n))*t) product_(p|n)(1-exp(-log(p)*t))
+ t^(-1-alpha)dt.                                             (6)
+
+If m>=2, discard the exponential and all but two factors. Formula (6)
+then gives, for any two distinct divisors p,q,
+
+ |R_alpha(n)| <= [(log p)^alpha+(log q)^alpha
+                         -(log p+log q)^alpha]/(log n)^alpha
+                 <= delta_alpha, delta_alpha=2^(1-alpha)-1.
+
+The final inequality follows from concavity, and log n>=log p+log q.
+Also |J_(k-1)(g)|<=g^(k-1). Combining this with (4) and
+T_k(g*t)=g^k T_k(t), for m>=2 we obtain
+
+ |B_alpha(n)| <= |R_alpha(n^(1/g))|/g <=delta_alpha/g.        (7)
+
+For n=p^e with e>1, the k=1 term vanishes because J_0(e)=0, while
+e*t_p=1. Therefore
+
+ |B_alpha(p^e)| <= (1/e)sum_(k>=2)b_k=(1-alpha)/e.            (8)
+
+Since 2^x-1>=x/2 for 0<=x<=1 (its derivative is at least log 2>1/2),
+(8) is at most delta_alpha. At a prime p, (3) is (log p)^alpha and
+the W sum has only its k=1 term, so B_alpha(p)=1 exactly. Hence
+
+ B_alpha(p)=1 for every prime p,
+ |B_alpha(n)|<=delta_alpha<1 for every composite n.           (9)
+
+The constant is the supremum: for squarefree pq,
+B_alpha(pq)=1-[(log p)^alpha+(log q)^alpha]/(log p+log q)^alpha.
+Taking consecutive primes tending to infinity makes log p/log q->1,
+so its magnitude tends to delta_alpha. This uses the already known
+prime asymptotic p_j~j log j, not a new distribution theorem; see
+https://dlmf.nist.gov/27.12.E1. Even Bertrand's classical bound suffices.
+The test near 10^12 illustrates sharpness but does not prove it.
+
+Equivalently, ||B_alpha(u)-1_primes||_(coefficient infinity norm)
+<=delta_alpha, so the prime indicator is recovered uniformly as
+alpha->1 from below. This is a statement about coefficients, not a
+uniform critical-strip convergence statement for scalar Dirichlet series.
+
+4. ALL-SCALE PRIME OBSERVABLES AND THEIR INFORMATION LIMIT
+
+For theta_alpha=(1+delta_alpha)/2, (9) proves
+1_prime(n)=1[B_alpha(u)(n)>theta_alpha] for every integer n>=2.
+It therefore recovers counts and residue counts in any finite interval
+at any scale, without prime-power contamination. For any finitely
+supported real/complex weights a_n, the softer observable satisfies
+
+ |sum_n a_n B_alpha(n)-sum_(p prime) a_p|
+                  <=delta_alpha sum_(n composite)|a_n|.
+
+These are exact all-scale recognition/reconstruction statements.
+Without new cancellation estimates on the left they give no improved
+count, gap, residue or prime-correlation estimate. No nontrivial prime
+distribution information gain beyond reconstruction is certified.
+
+5. A NATIVE ZETA BRIDGE AND ITS RIGOROUS INFINITE TAIL
+
+For Re(s)>1, termwise integration and absolute convergence give
+
+ N_alpha(s)=c_alpha integral_0^infty
+             [zeta(s)-zeta(s+t)]t^(-1-alpha)dt
+           =sum_(n>=2)(log n)^alpha n^-s,
+ L_alpha(u)(s)=N_alpha(s)/zeta(s)=sum_n Lambda_alpha(n)n^-s.
+
+For alpha=1/2, t=u^2 gives the independently evaluable formulas
+
+ N_half(s)=1/sqrt(pi) integral_0^infty
+             [zeta(s)-zeta(s+u^2)]/u^2 du
+          =-2/sqrt(pi) integral_0^infty zeta'(s+u^2)du.        (10)
+
+The second equality is integration by parts. The endpoint terms vanish.
+Away from the horizontal preimage of zeta's pole at 1, these integrals
+continue holomorphically, by compact Taylor bounds at u=0 and
+Euler-series estimates at infinity. The tested zero disks have large
+nonzero imaginary part, so the pole is excluded throughout their paths.
+
+For the first implementation, integrate the Taylor coefficients a_k
+of zeta(s+z) through k=K at u<=d. If |z|<=R has |zeta(s+z)|<=M and
+q=d^2/R<1, the neglected integral is bounded by
+M/d * q^(K+1)/[(2K+1)(1-q)]. Native Arb quadrature handles d<=u<=U.
+For u>=U use (zeta(s)-1)/U, with error at most
+
+ 2^(-x)(1+2/(x-1))/(2 log(2) U^3), x=Re(s)+U^2>1.
+
+For the independent implementation of the derivative integral,
+|zeta'(x+iy)|<=D(x)=2^(-x)[log2+2log2/(x-1)+2/(x-1)^2].
+Its full omitted N_half tail is at most D(x)/(sqrt(pi)log2 U).
+The completed independent audit uses this derivative integral at 448 bits,
+U=9, changed quadrature edges, and an independent coefficient cutoff 6144.
+The producer uses the subtraction quotient at 384 bits and cutoff 4096.
+
+Equations (6)-(9) imply |Lambda_half(n)|<=sqrt(log n). For N>=3,
+the native coefficient comparisons may therefore use the conservative
+integer-log tail N^(1-sigma)[log N/(sigma-1)+1/(sigma-1)^2].
+Six comparisons concern the COMPLETE L_half operator component.
+They are not numerical evaluations of the complete normalized B_half.
+
+6. WHY THE DECODER HAS AN INVERSE-SQUARE-ROOT ZERO OBSTRUCTION
+
+On Re(s)>1, normalization of coefficients is a fractional integral:
+
+ R_half(s)=1/sqrt(pi) integral_0^infty
+            t^(-1/2) L_half(s+t)dt,
+ B_half(s)=sum_(k>=1)mu(k)R_half(k*s)/k.                     (11)
+
+Let rho be a simple ordinary zeta zero, with a zero-free rightward
+horizontal corridor apart from rho, and assume N_half(rho)!=0.
+Then L_half has residue C=N_half(rho)/zeta'(rho)!=0. Put w=s-rho.
+Split the t integral at a small fixed h. Subtract C/(w+t) in the
+local part. Its analytic remainder and the t>=h part are holomorphic
+near w=0 on the continued branch. The identity
+integral_0^infty t^(-1/2)/(w+t)dt=pi*w^(-1/2) therefore yields
+
+ R_half(s)=sqrt(pi)*C*(s-rho)^(-1/2)+H(s), H holomorphic.
+
+For the two certified old zeros with Re(rho)=1/2, the k=2 part of
+(11) is holomorphic on a checked horizontal corridor from 2*rho.
+All k>=3 terms converge normally near rho in their initial domains,
+by the bounded R coefficients and exponential decay in k. Consequently,
+the completed numerator and corridor certificates prove that B_half has
+the same leading inverse-square-root branch at these two old zeros.
+
+This is branch retention, not preservation of the ordinary zeta zero
+set by a normalized unit multiplier. EXP(R_half) has a branched
+essential obstruction at these points. A general nonvanishing theorem
+N_half(rho)!=0 for EVERY zeta zero is unproved. Even such a theorem
+would require a separate global analytic-domain/estimate argument to
+produce an RH consequence. Nothing excludes off-line zeta zeros here.
+
+7. COMPLETED WHOLE-DISK CERTIFICATE AND INDEPENDENT AUDIT
+
+The two reused zero disks already have existence, uniqueness and
+simplicity certificates from earlier Rouché/derivative checks. They
+are not newly located zeros. Compute N_half at each disk centre c.
+For all s in the disk, differentiation of (10) gives
+N'_half=1/sqrt(pi) integral [zeta'(s)-zeta'(s+u^2)]/u^2 du.
+
+On u<=d the quotient is bounded by sup|zeta''| on the shifted region.
+On each real cell [a,b], bound by
+(sup|zeta'(s)|+sup|zeta'(s+[a^2,b^2])|)*(1/a-1/b).
+On u>=U use (sup|zeta'(s)|+D(Re(s)+U^2))/U.
+Thus a rigorous derivative bound M' gives
+|N_half(s)|>=|N_half(c)|-r M' on the WHOLE disk. Native zeta'
+bounds then give |C|>=N_lower/zeta'_upper, and branch coefficient
+at least sqrt(pi)*N_lower/zeta'_upper>0.
+
+The producer's original nonfinite derivative cell is archived in
+fractional-prime-results/failed_fractional_derivative_bound.json.
+For real part at least two the complete absolute Euler bound D(x)
+replaces the problematic wide native derivative enclosure. The corrected
+producer has a positive numerator lower bound throughout both zero disks.
+
+The independent checker instead bounds N'_half by
+2/sqrt(pi) integral_0^infinity |zeta''(s+u^2)|du. Its real mesh uses
+delta=1/40, U=9 and ratio 7/6; farther right it bounds the complete
+second-derivative Euler series. This changes both the formula and grid.
+Its whole-disk |N_half| lower bounds exceed 0.8855 and 1.0518, and its
+leading branch-coefficient modulus lower bounds exceed 1.9070 and 1.6352.
+
+Adaptive TWO-DIMENSIONAL boxes certify horizontal zero-free corridors.
+Increasing precision can change Arb's zeta algorithm and widen interval
+enclosures. The independent checker therefore refines inconclusive boxes
+at a different split point, accepting a subrectangle only with a strictly
+positive fresh native modulus lower bound. It certifies 4531 boxes across
+the four corridors, including 1143 additional refinements. A sweep over
+exact rational vertical stripes proves coverage with no gaps or overlaps;
+matching total area alone is insufficient.
+
+A second gap was closed between the local zero disk and the scale-one
+corridor. Fresh Rouché comparisons count exactly one simple zero in the
+producer's outer disk of radius 4r and in the independent outer disk of
+radius 5r. The connector rectangle with real offsets [-r,2r] and imaginary
+offsets [-r,r] lies in both outer disks because its squared distance is
+at most 5r^2. A separate nested r/2 disk in the checker contains the same
+unique zero. Thus the local continuation and certified corridor join.
+
+check_fractional_prime_analytic.py passes six gates: changed native
+integral/coefficient comparisons; changed tails and wrong-prime controls;
+whole-disk numerator nonvanishing; exact corridor coverage and native
+zero exclusion; nested and connector Rouché disks; and scope checks.
+The scalar comparisons evaluate the complete L_half component, not B_half.
+No global numerator nonvanishing theorem, new ordinary zero, prime
+distribution estimate or RH estimate follows from these two local controls.
+
+8. PRIOR ART AND WHAT IS ACTUALLY VERIFIED
+
+The fractional zeta derivative itself is established prior art. Guariglia
+(2019), equation (1.1), explicitly gives the positive-log Dirichlet series
+with phase e^(i*pi*alpha) in his derivative convention and attributes the
+construction to his 2015 work:
+https://link.springer.com/article/10.1186/s13662-019-2202-5
+The primary published PDF is archived in literature/fractional/guariglia_2019.pdf.
+Our positive-log convention omits that phase by definition.
+The integer-order generalized von Mangoldt coefficient mu*log^k is
+also established; Pratt et al. (2020), section 2, specifies k in N:
+https://link.springer.com/article/10.1007/s40687-019-0199-8
+Guariglia (2024), Fractional calculus, Riemann zeta function and Euler
+products, explicitly studies logarithmic fractional derivatives:
+https://www.sciencedirect.com/science/article/pii/S2405896324009169
+Its full formulas still require comparison; abstract relevance alone
+does not settle identity of operators. Fractional calculus, Dirichlet
+inversion and W are not newly discovered primitives.
+
+The specific compound B_alpha family, sign law (5), sharp prime gap
+(9), and generic inverse have written coefficient proofs and independent
+implementation checks. The two actual-zero branch certificates now pass
+independent verification. The typed public grammar also executes forward
+and inverse programs on changed real and complex units and rejects
+invalid parameters and input normalizations. Seven coefficient/API
+audit gates and six analytic gates pass. The mathematical coefficient
+audit imports no production code; its separate API section does.
+The family's historical priority is unresolved, and mathematical
+verification does not prove novelty.
+The new verified-new list remains empty. The primary next target is
+a new arithmetic cancellation/count/residue consequence across scales,
+with a global ordinary-zeta root/zero bridge where RH is claimed.

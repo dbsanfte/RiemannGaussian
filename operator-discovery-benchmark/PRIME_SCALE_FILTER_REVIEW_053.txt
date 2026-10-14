@@ -1,0 +1,304 @@
+PRIME SCALE FILTER: COMPLETE ANALYTICAL REVIEW 053
+
+Status and scope
+================
+This new review preserves the frozen 051 and 052 sources and results. It uses
+no numerical/source evaluations, arithmetic tables, tests, or hashes. The
+licensed result is a conditional RH implication from an explicit OPEN signed
+source estimate. Neither that estimate nor a converse from RH is proved.
+
+The ordinary-zeta background is unchanged: meromorphic continuation, sole
+pole at 1 with residue 1, Euler product and zero location, alternating-series
+identity, isolated finite-multiplicity zeros, and the functional equation.
+Primary references are [DLMF 25.2](https://dlmf.nist.gov/25.2),
+[DLMF 25.4](https://dlmf.nist.gov/25.4), and
+[DLMF 25.10](https://dlmf.nist.gov/25.10). The fractional arithmetic and local
+singularity are the reviewed derivations in the frozen 051/052 memos, not
+claims imported from those references.
+
+1. Fixed exact source and filter word
+=====================================
+Fix rational 0<alpha<1. On every ordinary integer define
+
+ K_alpha(1)=0,
+ K_alpha(n)=-sum_{d|n} mu(d)*(log(d))^alpha, n>=2,
+ A(x)=sum_{2<=n<=x} K_alpha(n), every real x>=1.
+
+This is the b=0, a=1, sign=-1 branch of 051. Its logarithms and powers are
+unrounded, and 0^alpha=0. It has 0<K_alpha(n)<=(log(n))^alpha for n>=2,
+retaining every prime-power valuation. With
+
+ I_alpha=int_0^infinity (1-exp(-u))*u^(-alpha-1) du>0,
+
+the absolutely convergent initial Dirichlet identity is
+
+ F(s)=sum_{n>=2} K_alpha(n)n^-s
+     =I_alpha^-1 int_0^infinity
+            [zeta(s)/zeta(s+t)-1]*t^(-alpha-1) dt, Re(s)>1.       (1)
+
+Fix an integer q>=2 (the proposed bank uses {2,3,5}), and a NONZERO finite
+polynomial
+
+ P(z)=sum_{j=0}^m c_j z^j
+
+with fixed rational coefficients, trimmed to its actual degree. No c_j,
+degree, q, or alpha may vary with the observed scale. Define
+
+ T_P(x)=sum_{j=0}^m c_j A(q^j x).                                (2)
+
+The proposed grammar requires P(q)=0. P(1)=0 is optional. The zero polynomial
+must be excluded: its identically zero statistic has no RH implication.
+
+2. Exact finite arithmetic expression and every boundary
+========================================================
+Counting multiples after reversing a FINITE divisor sum gives, for every
+positive integer N,
+
+ T_P(N)=-sum_{d<=q^m N} mu(d)*(log(d))^alpha
+                        *sum_{j=0}^m c_j floor(q^j N/d).         (3)
+
+No prime-power, source complement, or unit is suppressed. The d=1 contribution
+is zero because log(1)^alpha=0; it may be retained explicitly. For a real x,
+the same formula holds with upper limit floor(q^m x). Formula (3) is an exact
+finite-source evaluator, not an appeal to an infinite mu series.
+
+Write C_d(N)=sum_j c_j floor(q^j N/d). Since P(q)=sum_j c_j q^j=0,
+
+ C_d(N)=-sum_j c_j {q^j N/d},
+ T_P(N)=sum_{d<=q^m N} mu(d)*(log(d))^alpha
+                          *sum_j c_j {q^j N/d}.                 (4)
+
+For d>q^m N all floors vanish, and the fractional-part sum in (4) also vanishes
+by P(q)=0. Thus the actual support in (3)-(4) is complete and finite. Applying
+absolute values termwise gives only a linear-size bound; the required signed
+mu/fractional-part correlation remains unpaid. A finite floor cancellation
+inside C_d is a useful primitive, not already the missing square-root estimate.
+
+3. Integer-to-real transfer with explicit jump cost
+==================================================
+Let x>=1 and N=floor(x). Each interval (q^j N,q^j x] contains at most q^j
+integers. The 051 pointwise bound therefore gives
+
+ |T_P(x)-T_P(N)|
+ <=sum_j |c_j| q^j *[log(q^j(N+1))]^alpha
+ <=B_P*[log(q^m(N+1))]^alpha,
+ B_P=sum_j |c_j| q^j.                                           (5)
+
+This uses q integral and the original full source, including all jumps. It
+costs only O_(P,q,alpha)((1+log(x))^alpha), and hence can be absorbed into
+x^(1/2+epsilon) for every epsilon>0. Consequently the precise OPEN premise
+
+ for every epsilon>0 there exists finite C_(epsilon,P,q,alpha)
+ such that |T_P(N)|<=C_(epsilon,P,q,alpha)*N^(1/2+epsilon)
+ for every integer N>=N0                                        (6)
+
+with fixed finite N0 implies the same all-real estimate. Any finite omitted
+head enlarges the constant only. A single geometric subsequence does NOT
+supply (5) across its proportional gaps and is not licensed by this bridge.
+Nor are infinitely many selected scales or finite holdouts sufficient for (6).
+
+The definitive 053 request uses the stronger explicit OPEN inequality
+
+ |T_P(N)|/alpha <= C*sqrt(N)*(1+log(N))^eta
+ for EVERY integer N>=2, with fixed rational C>0 and eta>=0.     (6a)
+
+For any epsilon>0 a fixed logarithmic power is bounded by a constant times
+N^epsilon, so (6a) implies (6). Division by the fixed positive alpha is a
+declared normalization and does not change the qualitative implication. It
+must remain in the finite comparisons and source request; it cannot vary by
+scale. Neither C nor eta is paid merely by being supplied in a conjecture.
+
+4. Complete Mellin identity and finite-head entire terms
+=======================================================
+In Re(s)>1, partial summation gives
+
+ int_1^infinity A(x)*x^(-s-1) dx=F(s)/s.
+
+Substitution u=q^j x in each term of (2) consequently yields
+
+ int_1^infinity T_P(x)*x^(-s-1) dx
+   =P(q^s)*F(s)/s-E_P(s),
+ E_P(s)=sum_j c_j q^(js)*int_1^(q^j) A(u)*u^(-s-1) du.           (7)
+
+EVERY finite head is retained. It is entire because its integration interval
+is compact in the positive real axis. More explicitly, writing Q=q^j,
+
+ q^(js)*int_1^Q A(u)*u^(-s-1) du
+   =sum_{2<=n<=Q} K_alpha(n)*[(Q/n)^s-1]/s.                     (8)
+
+The apparent denominator at s=0 in EACH term of (8) is removable, with value
+log(Q/n). For j=0 the integral is zero; n=Q likewise contributes zero. This
+assertion concerns the finite head; it does not claim that F(s)/s itself is
+holomorphic at zero. The RH argument concerns Re(s)>1/2, so s=0 is immaterial.
+
+By (5)-(6), the left side of (7) is holomorphic on Re(s)>1/2. To justify this
+on any compact subset, choose epsilon smaller than its real-part gap from
+1/2. The same domination with logarithmic factors permits complex derivatives.
+Adding the ENTIRE E_P proves the conditional continuation
+
+ G_P(s)=P(q^s)*F(s)/s is holomorphic on Re(s)>1/2.                (9)
+
+All remaining implications below follow from this precise holomorphy. They
+do not invoke a Tauberian mean theorem or assume a centered-error converse.
+
+5. Real pole and what P(q)=0 does
+================================
+The reviewed b=0 density is the constant
+
+ kappa=I_alpha^-1 int_0^infinity
+                    t^(-alpha-1)/zeta(1+t) dt>0,
+
+and its EXACT primitive is kappa*(x-1). It follows directly from (1) that
+delta*F(1+delta) tends to kappa for positive delta tending to zero.
+In fact F(s)-kappa/(s-1) is holomorphic in a neighborhood of 1. To see this
+without a Tauberian claim, put f(z)=1/zeta(z) and g0(z)=zeta(z)-1/(z-1).
+The integrand after subtracting the pole is
+
+ [f(s+t)-f(1+t)]/(s-1)+g0(s)*f(s+t)-1.                         (10)
+
+The divided difference is removable at s=1. A small disk about 1 and the ray
+to its right contain no denominator zero: use compact nonvanishing on bounded
+t intervals, the removable zero of f at 1, and Euler-product separation at
+large t. The complete bracket in (10) vanishes at t=0, so is uniformly O(t)
+there; the tail is bounded. This pays holomorphy after integration for alpha<1.
+
+Thus P(q)=0 cancels the genuine real pole in G_P. Indeed if P(q)!=0, the
+simple real-pole divergence contradicts (9) at 1, so no premise (6) could
+hold. The requirement is a real-main-term compatibility condition, not a
+fitted value of kappa.
+
+For R(x)=A(x)-kappa*(x-1), a purely exact substitution gives
+
+ T_P(x)=sum_j c_j R(q^j x)-kappa*P(1), when P(q)=0.              (11)
+
+P(1)=0 removes this constant as well. When P(1)!=0 the constant is retained
+and harmless for the all-epsilon square-root estimate. No asymptotic for R
+is assumed in (11), and no numerical kappa is needed to evaluate (3).
+
+6. Initially proposed annulus guard: sufficient, not necessary
+=============================================================
+If ordinary RH is false, reflection supplies a zero rho=beta+i gamma with
+1/2<beta<1 and gamma!=0. Choose a rightmost zero at that FIXED height, as in
+052. Then
+
+ sqrt(q)<|q^rho|=q^beta<q.
+
+Therefore the suggested condition that P have no zero in the open annulus
+sqrt(q)<|z|<q guarantees P(q^rho)!=0, and the fractional singularity of F
+directly contradicts (9). Annulus boundary roots are immaterial to this
+particular off-line argument. This condition is valid as a sufficient simple
+diagnostic, but rejecting every annulus-root word is unnecessarily restrictive
+for the conditional RH implication. The next section removes that condition.
+
+7. Stronger bridge: finite polynomial zeros cannot erase a fractional branch
+===========================================================================
+The frozen 052 proof gives, for ANY multiplicity d>=1 of the chosen zero,
+along the permitted horizontal approach s=rho+delta, delta positive real,
+
+ F(rho+delta)=C_d*delta^(-alpha)+O(1),
+ C_d=I_alpha^-1 int_0^infinity
+                 [(1+u)^(-d)-1]*u^(-alpha-1) du<0.              (12)
+
+The fixed-height rightmost choice ensures the denominator zeta(rho+t) is
+nonzero for every t>0. Compact nonvanishing and the Euler tail give the needed
+path tubes. It does not assert a zero-free half-plane at other heights.
+Factoring zeta(rho+z)=z^d*g(z) gives the local ratio error O(t), so the
+integrated remainder in (12) is O(1). This includes repeated zeros and the
+bounded, rather than decaying, b=0 large-t numerator. These are exactly the
+conditions established in the 052 review.
+
+Since P is a NONZERO finite polynomial, P(q^s)/s is analytic at nonreal rho
+and is not identically zero there. Its order k is finite, with expansion
+
+ P(q^(rho+delta))/(rho+delta)=a_k*delta^k+O(delta^(k+1)), a_k!=0.
+
+The map q^s has derivative log(q)*q^s!=0, so k is the ordinary finite
+multiplicity of a possible P root at q^rho. Multiplication of (12) gives
+
+ G_P(rho+delta)=a_k*C_d*delta^(k-alpha)+O(delta^k).               (13)
+
+The cross error delta^(k+1-alpha) is absorbed in O(delta^k) because alpha<1.
+If k=0, (13) diverges, contradicting holomorphy. If k>=1, then
+
+ k-1 < k-alpha < k.
+
+A function holomorphic at rho with the growth in (13) must have Taylor
+coefficients of degrees 0,...,k-1 all zero: otherwise its first nonzero such
+coefficient would dominate delta^(k-alpha) along the positive real approach.
+It would therefore be O(delta^k), contradicting the nonzero leading term in
+(13). Being finite or even tending to zero does NOT make the fractional-power
+expression holomorphic.
+
+It follows that EVERY nonzero finite P, not merely annulus-free P, preserves
+the conditional RH sensitivity. Under the grammar's necessary real-pole
+condition P(q)=0, premise (6) implies RH. No simple-zero hypothesis, actual
+zero computation, prime-independence assumption, or critical-line mu-series
+convergence enters the proof. The strict noninteger range 0<alpha<1 is
+essential to this argument; at an integer endpoint a finite polynomial can
+erase an ordinary integer-order pole, so this branch proof cannot be reused.
+
+8. What the bridge does not recover or prove
+============================================
+There is no proved converse RH=>the specific estimate (6), no bound for its
+constants, and no uniformity over changing alpha, q, or P. There is also no
+automatic quantitative inverse norm or recovery of R(x) from T_P(x).
+
+The distinction between arithmetic fractional sensitivity and generic filter
+invertibility matters. If P has an annulus root z0, an abstract function
+x^(lambda+i tau), with lambda=log|z0|/log q and
+tau=(arg(z0)+2*pi*l)/log q, is an EXACT null mode of (2), with lambda>1/2.
+It could obstruct recovery for arbitrary source functions. The ordinary
+fractional source cannot hide its zero singularity in that way, by (13).
+Thus annulus exclusion can remain useful for a separate generic inverse
+argument, but it must not be asserted necessary for this conditional bridge.
+
+The filter also annihilates linear counterfeit means. For the artificial
+source K(n)=1 for n>=2, A(N)=N-1 at integer scales, and P(q)=0 gives
+T_P(N)=-P(1), identically zero if P(1)=0. Such a control may satisfy (6), yet
+is not ordinary mu and has no connection to (1) or (12). Exact arithmetic
+source binding is indispensable; a successful filter-control amplitude test
+cannot certify ordinary RH. Likewise multiplication of P by a small nonzero
+scalar changes finite amplitudes without changing the implication. Numerical
+comparison needs its declared normalization and cannot manufacture a proof.
+The actual 053 source grammar prevents that scalar freedom by taking primitive
+integer coefficients with positive leading coefficient, rather than allowing
+an arbitrary rescaling. Its divide_by_alpha normalization is an additional
+explicit comparison guard, not a source-bound proof.
+
+At fixed n, the limit alpha down to zero of the b=0 kernel is 1 for n>=2;
+this follows from the Boolean sum with its d=1 power equal to zero. Thus a
+small-alpha finite-word behavior can resemble the linear counterfeit above.
+That fixed-n limit is not a uniform all-scale limit and does not pay (6).
+
+9. Reusable argument and explicit next source leaf
+==================================================
+A detector may bind an exact object consisting of the ordinary b=0 kernel,
+fixed alpha in (0,1), integral q, nonzero rational P, exact P(q)=0, and the
+all-integer/all-epsilon domain. Universally paid transformations are:
+
+ * the complete finite expression (3), including unit and all valuations;
+ * the O(log(x)^alpha) integer-to-real jump envelope (5);
+ * the full Mellin expression (7) and entire finite heads (8);
+ * the real-pole cancellation from P(q)=0;
+ * the fractional singularity preservation (13) for every finite P root;
+ * the conditional implication (6)=>RH.
+
+The sole new source-bound leaf is the signed uniform inequality (6), or its
+identical explicitly exposed expression (3)-(4). It has not been paid. A
+detector can explore P to seek exact grouping, divided differences, and prime
+or divisor identities before taking absolute values, but finite slopes and
+floor cancellations alone do not supply its missing all-scale mu correlation.
+It must not replace the premise by a finite bank, selected subsequence, or
+individually absolute component bound and retain the same PAID status.
+
+I subsequently read the definitive prime_scale_filter_053.py without running
+it. Its exact request binds alpha in (0,1), q an integer in 2..64, a primitive
+integer polynomial of degree 1..16 with nonzero constant and positive leading
+coefficient, exact P(q)=0, and (6a). These narrower word constraints guarantee
+nonzero P and are within the proof's scope. Its complete finite divisor
+identity, jump envelope, finite-head Mellin formula, arbitrary polynomial-root
+survival, and conditional-only conclusion match this review. No material
+mathematical scope error was found. The strict OPEN arithmetic flags correctly
+prevent the paid algebra from paying (6a). This is source-only review, not an
+execution check or a proof-assistant verification. The file is stopped; all
+prior frozen files remain unchanged.

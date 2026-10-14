@@ -1,0 +1,76 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "all_scale_pairing_upper_formula_proved": true,
+  "assessment_status_counts": {
+    "OPEN_AFTER_FINITE_TESTS": 10,
+    "REFUTED_FIXED_BOUND": 2
+  },
+  "development_operations": 11643163,
+  "dominance_checker_operations": 140669,
+  "dominated_programs": 250,
+  "elapsed_seconds": 12.904818153998349,
+  "final_operations": {
+    "checker": 3753603213,
+    "planner": 14138100,
+    "producer": 38192451
+  },
+  "final_scales": [
+    4096,
+    7249,
+    8192,
+    13803,
+    16384
+  ],
+  "finite_status_counts": {
+    "PASS": 52,
+    "REFUTED": 8
+  },
+  "fixed_growth_hypotheses": 942,
+  "hashes_used": false,
+  "largest_worker_peak_rss_kib": 72640,
+  "new_frozen_source_count": 16,
+  "numerically_scored_programs": 157,
+  "old_suites_or_studies_replayed": false,
+  "parent_peak_rss_kib": 704032,
+  "prior_frozen_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16,
+    15
+  ],
+  "programs": 407,
+  "selected_claims": 12,
+  "selected_policies": 6,
+  "status": "ARITHMETIC_TRANSPORT_BOUNDS_SEARCHED_UNIFORM_COST_OPEN",
+  "training_planner_operations": 19505960,
+  "training_producer_operations": 8243585,
+  "training_scales": [
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048,
+    3072
+  ],
+  "uniform_full_source_bound_proved": false,
+  "uniform_transport_cost_growth_bound_proved": false
+}

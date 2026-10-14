@@ -1,0 +1,109 @@
+066 independent sparse prefix checker: admitted scope and proof obligations
+
+Checker: check_mobius_sparse_prefix_066.py
+Synthetic suite: test_check_mobius_sparse_prefix_066.py
+API: verify_sparse(cert, meter=None)
+Certificate: mobius-sparse-prefix-inverse-v1
+
+This checker admits an exact raw short inverse of the original ordinary-Mobius
+prefix source, at one finite N,y,H and the two ratios r=p/q and r=1. It does not
+import the discovery producer, scientific arrays, frozen studies, numerical LP
+outputs, or an earlier scientific certificate. Repaired core_inverse objects
+and free-sign or conditioned-prime objects do not belong to its exact schema.
+The SAME 063 raw source admission must separately bind this prefix to the
+scientific source. That external binding is explicitly not proved here.
+
+Source and decomposition
+
+For positive integer d, the source is
+ f_y(d)=1[d<=y]*(W(N/(p*d))-r*W(N/(q*d))),
+ W(x)=floor(4*x)-3*floor(2*x)+2*floor(x).
+There are six original floor atoms (b,v,a), with b=p,q and
+(v,a)=(4,1),(2,-3),(1,2). Write Z=floor(v*N/b) and lambda=a for
+b=p, lambda=-r*a for b=q. The checker independently enumerates
+ i=1,...,floor(Z/(y+1)), T=floor(Z/i)>y,
+and retains lambda*floor(Z/d), adding
+ -lambda*1[d<=T]+lambda*1[d<=y].
+These additions exactly remove lambda*floor(Z/d) for d>y and vanish for
+d<=y. All six channels are signed-coalesced; zero atoms are omitted. No
+head correction, ratio endpoint, threshold boundary, or unit is discarded.
+The original six atoms can share horizons, so the recorded coalesced floor
+list need not contain six entries. Its horizons may be inside the short H.
+
+Raw actual-Mobius inverse
+
+Ordinary mu is independently built by an Eratosthenes sign sieve through
+D=floor(4*N/p). mu(1)=1; prime values are -1; squareful values are zero.
+For an indicator atom with threshold T, its inverse at row j is
+ M(floor(T/j))-M(floor(T/(j+1))). For a full floor atom of horizon Z,
+mu*One=delta_1 contracts its inverse to delta_(j=Z). Thus each raw row is
+ c_j=sum_floor lambda*1[Z=j]
+     +sum_step a_T*sum_(T//(j+1)<n<=T//j) mu(n).
+The checker independently constructs signed integer-interval events and
+sweeps them into maximal disjoint nonzero intervals, checking every recorded
+endpoint and coefficient. It then evaluates the joined intervals using its
+own ordinary Mertens prefix table.
+
+A second, independent computation checks each row directly against
+ sum_n mu(n)*(f_y(j*n)-f_y((j+1)*n)).
+The p/q channel arrays are evaluated with exact integer floor divisions,
+and the sum is evaluated without the certificate's floor/step/interval
+representation. This replay is O(D log H), not an O(D^2) source-forward
+reconstruction. Tiny synthetic tests additionally invert all D rows forward
+and check sum_j c_j*floor(j/d)=f_y(d) at every d.
+
+Every row j=1,...,H must be supplied. There is no repaired row substitution.
+Every tail J=1,...,H must be supplied, including the head and terminal row.
+The finite data support all real r between the endpoint ratios by affine
+source/inverse interpolation and convexity of absolute value; no all-N
+variation growth rate follows from finite endpoint certificates.
+
+Joined and uniform tail rules
+
+The row interval cost is abs(direct_j)+sum_I abs(a_I)*length(I), after signed
+coalescing. It bounds abs(c_j) because abs(mu(n))<=1. For each J<=H, the
+checker verifies exactly the joined cost, actual coefficient variation, and
+coarse telescoping cost
+ sum_(J<=Z<=H) abs(lambda_Z)
+ +sum_T abs(a_T)*(floor(T/J)-floor(T/(H+1))).
+The step inverse windows are disjoint in n as j varies, so their sizes
+telescope. Signed joining cannot increase the separate-atom triangle cost.
+The coarse cost is at most floor_l1+M1/J, where
+ M1=sum_T abs(a_T)*T
+is computed AFTER signed atom coalescing. It is not the signed moment
+sum_T a_T*T. The checker verifies these inequalities for every recorded J.
+
+The schema's all-scale first-moment rule is independently reviewed:
+ M1 <= 12*(1/p+r/q)*N*(2+log(max(1,D/(y+1)))).
+For an original atom the pre-coalescing moment is at most
+abs(lambda)*Z*(H_K+1), K=floor(Z/(y+1)); K=0 contributes zero. For K>=1,
+H_K<=1+log(K), Z<=v*N/b, and K<=D/(y+1). Sum abs(a)*v=12 across the three
+atoms in a channel. Coalescing only decreases the moment. This is an exact
+reviewed schema theorem for every eligible integer scale and prefix; its
+logarithmic right side is not fabricated as an exact rational certificate.
+
+The uniform tail rule is proved for the represented short tail. It does not
+pay the unresolved head uniformly, prove a uniform full-variation rate, bound
+the whole signed scientific target, or prove RH. Return flags preserve all
+those limits. The new arithmetic interval queries may reach n=D, including
+the unit and squareful integers; the old sqrt-sized arithmetic query radius
+is not preserved. This enlarged range is explicit, not treated as free work.
+
+Resource and input gates
+
+N<=65536, H<=min(D,4096), and 1<=y<=D; p<q are actual registered primes.
+The source parameter list permits alpha,gamma,primes,p,q and optional tau,
+with exact fractional gates. Integers reject booleans. Rationals must be
+canonical strings and every checked/intermediate rational is capped at 4096
+bits. Unknown fields, zero/duplicate/unsorted atoms, nonmaximal/overlapping
+intervals, missing rows/tails, and changed exact aggregates are rejected.
+
+The checker uses the established Meter but additionally enforces its own
+500,000,000-unit cap even when the caller supplies a charge-only meter.
+Prospective storage is conservatively reserved before allocations; the
+reported upper bound counts transient reservations cumulatively, with a
+512 MiB cap and 900,000-entry cap. Sorting events, integer source divisions,
+sieve operations, interval construction, raw source sums, rational sizes,
+and multiplication bit work receive charges. A caller's stricter Meter cap
+or deadline remains effective. The tests record wall time, charged units,
+and actual peak RSS; only new synthetic tests are run.

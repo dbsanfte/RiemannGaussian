@@ -1,0 +1,11 @@
+{
+  "module": "multiscale_bound_discovery",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 0.03311044996371493,
+  "operations": 24614,
+  "edits_stopped": true,
+  "invocations": 1,
+  "post_suite_edit": "Added observation-value logging to retained search results; proof and search logic unchanged."
+}

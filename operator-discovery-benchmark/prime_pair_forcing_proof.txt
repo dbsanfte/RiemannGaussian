@@ -1,0 +1,133 @@
+COMPLETE PRIME-LOGARITHMIC PAIR FORCING: IDENTITIES AND PREFIX COSTS
+
+This is a supplied proof family for complete actual mu and c=mu*lambda. It
+proves exact identities and a primitive-prefix component envelope. It proves
+NO complete all-scale signed bound, prime correlation estimate, or RH result.
+Finite intervals and tests check computations, not the missing uniform premise.
+
+1. Actual local forcing and every endpoint.
+For mu, prime local series is 1-z; for c it is (1-z)/(1+z), so
+mu(p)=-1, mu(p^e)=0(e>=2), c(p^e)=2(-1)^e. Differentiate each local
+series formally: mu(n)log n=-(mu*Lambda)(n), where Lambda(p^e)=log p
+for ALL positive e; and c(n)log n=-2(c*Lambda_odd)(n), where
+Lambda_odd(p^e)=log p for ODD positive e, zero otherwise. These formal
+identities are coefficientwise finite, not dependent on analytic convergence.
+Let f denote mu or c, kappa respectively1 or2, and L_f the corresponding
+prime-power log sequence. Thus f log=-kappa f*L_f exactly, including n=1.
+
+K_X(t)=max(0,2X-max(X,t)) counts integers n in [X,2X) with n>=t.
+J_X=K_2X-4K_X. For N=4X-1, complete step prefix energy has
+Delta=sum_(i,j<=N) f(i)f(j)J_X(max(i,j)). The zero-weight endpoint4X
+may be included but is not enumerated. The pair(1,1) contributes J_X(1),
+since f(1)=1. For every other pair log(ij)>0. Apply logarithmic forcing
+to each coordinate, divide by log(ij), and substitute i=ka or j=kb.
+Symmetry of the complete pair kernel gives
+ S_X=sum_(ka,b<=N,k>=2) L_f(k) f(a)f(b) J_X(max(ka,b))/log(kab),
+ Delta=J_X(1)-2*kappa*S_X.
+ALL permitted prime powers k, ALL a,b and all actual zeros are retained.
+This is ordered-pair forcing: no symmetry factor is inserted into S itself.
+At X=1, J1=-2, and the identity still holds. Positive Lambda weights do
+not make S positive: J changes sign and f(a)f(b) changes sign.
+
+2. Exact primitive partition, unchanged thresholds.
+For every triple write a=g*u,b=g*v, gcd(u,v)=1. Define its core height
+h=max(u,v)=max(a,b)/gcd(a,b). For ONE cutoff B at the given X, partition
+S into S_prefix (h<=B) and R (h>B). Histograms preserve all integer
+heights, interval sums, total triples and zero contributions. B=0 is the
+empty-prefix baseline. Every prefix/remainder uses the same source horizon,
+log enclosures and cutoff; no residual is dropped or declared positive.
+This height is not max(ka,b)/gcd(ka,b), an inequivalent partition.
+
+3. Uniform primitive-prefix envelopes.
+Since k=p^e>=p and a,b>=1, 0<=log p/log(kab)<=1. Also |J_X|<=2X.
+For fixed coprime u,v, g>=1 and kgu<=N. The number of permitted prime
+powers k for that g is at most N/(gu), even for the restricted odd family.
+Actual mu gives |mu(gu)mu(gv)|<=1. Actual c gives
+ |c(gu)c(gv)|<=|c(u)c(v)|4^omega(g)<=|c(u)c(v)|d_4(g).
+The first inequality remains true when g shares primes with uv: the union
+of prime supports has no larger size than their sum. For T>=1,
+ sum_(g<=T)1/g<=1+log T,
+ sum_(g<=T)d_4(g)/g<= (sum_(n<=T)1/n)^4 <=(1+log T)^4,
+by the complete four-divisor expansion and enlarging its product domain.
+Therefore EVERY X>=1 and fixed positive coprime u,v satisfy
+ |S_(u,v)|<=8 X^2/u*(1+log(4X))                         [mu],
+ |S_(u,v)|<=8 |c(u)c(v)| X^2/u*(1+log(4X))^4           [c].
+If their domain is empty, the inequality is automatic. No kappa is charged
+inside these S bounds. Sum over all u,v<=B, enlarging away coprimality:
+ |S_prefix|<=8 X^2 B(1+log B)(1+log(4X))                 [mu],
+ |S_prefix|<=8 X^2 B(1+log B)^3(1+log(4X))^4            [c].
+For c, |c(n)|=2^omega(n)<=tau(n), sum tau(n)<=B(1+log B), and
+sum tau(n)/n<=(1+log B)^2 prove the displayed charge. For B=0 the
+prefix is exactly zero; no expression log0 is evaluated.
+
+4. Rational cutoff programs and cofinal conversion.
+Let L=1+log(4X), s,r=(1,1) for mu and (3,4) for c.
+Fixed B>0 gives |S_prefix|/X^2<=8B(1+bit_length(B))^s L^r,
+because log B<=bit_length(B). Fixed0 gives zero.
+For B=floor(bit_length(X)^gamma), gamma>=0 rational, m=ceil gamma:
+bit_length(X)<=2L, B<=2^m L^m, and 1+log B<=(1+2gamma)L.
+Thus the bound is 8*2^m*(1+2gamma)^s L^(m+s+r).
+For B=floor(X^beta), beta>=0 rational, the bound is
+8(1+beta)^s X^beta L^(s+r). For beta>0 THIS proof loses exponent beta;
+it is not a cofinal critical certificate. beta=0 is admissible.
+For every integer d>=1,q>=1, t=log X>=0,
+ L<=3+t,
+ L^d<=2^(d-1)(3^d+t^d)
+     <=2^(d-1)(3^d+d!*q^d)ceil(X^(1/q)),
+using exp(t/q)>= (t/q)^d/d!. Hence every fixed or bit-length rational
+program has an explicit finite Cq at EVERY integer q and EVERY X>=1,
+for the PREFIX component only. Constants may grow factorially with the
+fixed integer log degree. No fitted constant is required for this theorem.
+All cutoff choices are numerical search inputs; the supplied theorem does
+not assert that the learner invented these proof methods.
+
+5. Certified log/ratio arithmetic and limitations.
+For n>=1, k=floor(log2 n), m=n/2^k in[1,2), z=(m-1)/(m+1) in[0,1/3).
+log n=k log2+log m, and log m=2 sum_(j>=0)z^(2j+1)/(2j+1).
+Use z=1/3 for log2. After T terms, the positive remaining tail is at most
+2 z^(2T+1)/((2T+1)(1-z^2)), by enlarging every denominator to2T+1.
+The initial analytic endpoints are exact Fractions; ONCE per source log they
+are rounded to integer [floor(D*lo),ceil(D*hi)] ticks. T=bits+bit_length(k)+8 (k=0 case
+uses bit_length0=0) supplies the declared precision; validity holds for
+any positive T, so correctness is not dependent on a claimed tight width.
+The producer bounds each log once through the complete source horizon.
+For each nonzero triple, denominator log(ka)+log b has strictly positive
+lower endpoint, because ka>=k>=2. With D=2^bits, the ratio ticks are
+ floor(D*lp_lower/(li_upper+lb_upper)),
+ceil(D*lp_upper/(li_lower+lb_lower)), using INTEGER log tick endpoints.
+Each entire triple loop uses integer arithmetic, not Fraction divisions.
+Multiplication by a negative actual integer reverses the interval. Summing
+outward integer ticks yields rigorous histogram/full/prefix/remainder
+intervals. Histograms are shared in value.histograms keyed by target:X; rows
+bind their histogram_id/hash, avoiding repeated complete dictionaries.
+The full interval must contain exact (J1-Delta)/(2kappa).
+This check alone does not certify the partition implementation; independent
+original-coordinate reconstruction is separately required. The output's
+normalized_negative_remainder is [-R_upper,-R_lower]/(D X^2).
+
+Actual f is produced by complete prime sieve/convolution, never truncated
+on budget failure. Rational powers use the frozen safe ceiling evaluator;
+exact floor equality has an explicit bit budget before exponentiation.
+Huge rational exponents can yield missing; this is a computation limit,
+not a semantic arity/power theorem. The work proxy charges source, log
+series, prime identification and every enumerated triple. It is not a total
+bit-complexity, physical-memory, serialization or independent-primality
+certificate. Missing profiles return value=None, no partial claimed result.
+
+6. The complete missing premise and ordinary recovery.
+For every integer q>=q0, a finite Aq independent of dyadic X must bound
+ -R_(B(X))(X)<=Aq X^2 ceil(X^(1/q)) at EVERY dyadic X>=1.
+Together with the proved critical prefix charge (fixed or logarithmic B)
+and |J1|<=2X, this would bound full Delta from ABOVE at cofinal positive
+exponents. For positive-power B the extra exponent cost must additionally
+be recovered; it is not silently absorbed by increasing q.
+Then actual nonnegative block energy telescopes:
+ A(2^j)<=4^j A(1)+(Cq/4)4^j*(2^(j/q)-1)/(2^(1/q)-1)
+for a power RHS Cq X^(2+1/q). A ceiled RHS changes Cq by at most factor2.
+This proves original full energy O_q(X^(2+1/q)). Its Mellin integral excludes
+ordinary zeta zeros in Re(s)>1/2 for mu; for c the actual series is
+zeta(2s)/zeta(s)^2 and numerator is zero-free in that open half-plane.
+Functional symmetry would then imply RH. This is ONLY a conditional bridge.
+The remainder estimate, signed prime-pair correlation, and complete global
+Delta bound remain UNPROVED. PNT alone, inverse identities, unsigned norms,
+finite interval success, or selected small core heights do not supply them.

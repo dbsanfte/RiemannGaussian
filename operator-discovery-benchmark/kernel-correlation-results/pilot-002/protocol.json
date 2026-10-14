@@ -1,0 +1,446 @@
+{
+  "schema": 1,
+  "grammar_version": "complete-Gram-correlations-squarefree-density-singular-metrics-cofinal-growth-v1",
+  "seed": 2026100871,
+  "precision": 384,
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/mellin-kernel-results/pilot-001",
+  "source_sha256": {
+    "protocol.json": "7e9967b1d012a71fa97dbf92f7fee91e1abfafeb69a9c6361cd4670054398734",
+    "verification.json": "51c3aa84ac9b8ee4c9e7146d5d0ea1ba648d30add118651dd9555ec526297b1b",
+    "summary.json": "2ca34badb6f6c6884809881fa052531d53be64a5effa71afcb611e3146796441",
+    "candidate_batch.json": "e477cb819e3154e140241984fb035d653037dc2335327f94954347c4f2c38f7c"
+  },
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+    "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+    "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+    "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+    "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+    "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+    "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+    "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+    "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95",
+    "prime_discrepancy_grammar.py": "2a5abf9701638454b2b0f25b867cb7e1e7a7925a3f6c362b6346b75bee9762b2",
+    "prime_discrepancy_search.py": "515ccda5fa5fd7d984f1fc4c3a61119853d19acde249df9f03e814249afb07ad",
+    "check_prime_discrepancy.py": "aa8d0c7b6903e219cd74d4d79b82b721bece99bc0107e495426b65e23b9378d2",
+    "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+    "prime_discrepancy_proof.txt": "71d9a276d9a8ca0d630e740ba800e57a3ab6e74570931bb2f3b3d277266550c1",
+    "prime_twist_grammar.py": "992e865811765faaf1be90564114f5f5684a5593bf6970491681edb0b78806b0",
+    "prime_twist_search.py": "1b34b84399b4fb6445d7cf523697c11827552187aa58522ddfbc73e9b12f507d",
+    "check_prime_twists.py": "88e510e84454c89eac85482869df5cf0569e900bc4fe601c92ce3157b0632e22",
+    "prime_twist_report.py": "584ce2639c4fde755b3c1e78a302a2a1c912c2865a011eba27e3071ed2305d53",
+    "prime_twist_proof.txt": "1c20d07625889c07f9e64849f5e3bf03ef057dc27804ec30df7841e0e9385618",
+    "prime_oscillation_audit.py": "b4d7b446e9f299d832cb7d55c457327a3b7c450847f77ca051349cf3adb366a7",
+    "check_prime_oscillation.py": "f03c512d2cb96c9a0d1e652a1cff00e69157f407ee6e68708c6c2d61f021d2b0",
+    "prime_oscillation_report.py": "5c85bc3a5ef007d0f541fb10b6c19bb6deff7c4d3fff5e178c6fedcd137c1501",
+    "prime_oscillation_proof.txt": "24a04fa8521bd173b5702bfc5ceca4aa3c53f8b93e6bf1fa60b3b4a99e7dfa49",
+    "fractional_remainder_grammar.py": "8d5d6448724d5b8f88b326804a01c7cb4c5c446e2ee04476ad3c92c1c862e6cd",
+    "fractional_remainder_analytic.py": "69c292d85eea95fbefa96ad022de23e7f3fbd60093ccd4f19e6e98b9e75789f9",
+    "fractional_remainder_search.py": "fce42ba31106d30b4d2c83d93ad640dffe434d38c43c9ebe7a1a81f0b69ae186",
+    "check_fractional_remainders.py": "1b3c9980277b8c37f79bc025f9a4b9b8a689dbf0b8d3c4ab2a5b75740042872f",
+    "fractional_remainder_report.py": "f4792629f99e132810c1e56be38fe45309726472ac9bc867f3106484dceb6c59",
+    "fractional_remainder_proof.txt": "1ed7453f5bf3dc00b10caf31dfeee9d63aff0685266201b3f81bd6673280cd08",
+    "fractional_prime_grammar.py": "16ae66e9e706d1aeaa11a30486e12b493996cfe480afff819ddc201b0724d3e2",
+    "fractional_prime_proof.txt": "3f1bc5fb25473e55df7564e333a5eb521b398a5106105ab703a896ccb4291828",
+    "mertens_limit_audit.py": "2fe99a9e9a2d75936cdb6ab8facb747cbd706d6f350ebc73afbf940504366f3a",
+    "check_mertens_limits.py": "aa33e4af838d77cace5aaa2371d0aa71e41c6b54081c5007fb16ff965cb31d1b",
+    "mertens_limit_report.py": "19b0d01dce57b2ac9eed239b8f5ffd0c53065cf00c5eed8d40f880684979f9db",
+    "mertens_limit_proof.txt": "b3d826b44312364ac5dafc327b0b99850c71773c51e550ab1a1140a150d1075b",
+    "mellin_kernel_grammar.py": "69200865e06bdb40fed1ec4858198ccaf1e406ceb6cb8c8710cdc2598d884d74",
+    "mellin_kernel_search.py": "d54ba40a094581d64139274a400a0b6b3b9d26a66200fa82497e323ec3289d21",
+    "check_mellin_kernels.py": "99e7381a1eb11d863eea822aaaa2bc771b3a9851584d6c5f252c6521d3e49acb",
+    "mellin_kernel_report.py": "6adce33c631b07b13cead31577b533ddb2859bbf5df8d2ef8d8954940c38fe99",
+    "mellin_kernel_proof.txt": "e56c4031b581a12919ea08c74e5f740c3adaa8180f521d33067059ed42cd9705",
+    "kernel_correlation_grammar.py": "a967ae9b411bd4cb2f0407bb260397d0094232a0f0462e53f948b34855136efd",
+    "kernel_density_bridge.py": "29045ebaa3442fb0794ff9219b3f215a5d0ea80ffbda8ee3de0f36cf6cc46be5",
+    "kernel_correlation_search.py": "f69c4591398839205a8a5aa45b8c62f3d6d3a03e273e4aaa517e981253052712",
+    "check_kernel_correlations.py": "dd1a729ac8b4405cc4401b0aa7fef8b5b81e514da046cc577dc45b4096958ed1",
+    "kernel_correlation_report.py": "b2cdd1ed8d74f500fc1fb9e2681a878d8065a43044eb4d6d43e441d11f48b399",
+    "kernel_correlation_proof.txt": "a2a43456a1050d5cd36e8cd406fb80f1ec294564117d4b8102979d399a365be6"
+  },
+  "this_stage_source_files": [
+    "kernel_correlation_grammar.py",
+    "kernel_density_bridge.py",
+    "kernel_correlation_search.py",
+    "check_kernel_correlations.py",
+    "kernel_correlation_report.py",
+    "kernel_correlation_proof.txt"
+  ],
+  "named_calibration_dependencies": [
+    {
+      "path": "/home/dbsanfte/riemann/operator-discovery-benchmark/mellin-kernel-results/source/TitchmarshZeta.pdf",
+      "sha256": "ee495ba7e6b7af4722317baa79087881c16f648cb8af72843eb869c7497a03d0",
+      "url": "https://sites.math.rutgers.edu/~zeilberg/EM18/TitchmarshZeta.pdf",
+      "scope": "Theorem 14.25(C), printed p.370: RH iff M(x)=O_epsilon(x^(1/2+epsilon)); converse calibration only",
+      "imported_not_independently_reproved": true
+    },
+    {
+      "path": "/home/dbsanfte/riemann/operator-discovery-benchmark/mellin-kernel-results/source/AgarwalGargMaji_2202.00637.pdf",
+      "sha256": "de0a183bfbd36c33bd136782b6410ec7ebabc6a8dd0c0ca45013adae03f1cd90",
+      "url": "https://arxiv.org/pdf/2202.00637",
+      "scope": "Theorem 1.2: Riesz-type criterion; separate known-operator calibration only",
+      "imported_not_independently_reproved": true
+    }
+  ],
+  "parameters": [
+    [
+      "3/2",
+      "1/3",
+      "2"
+    ],
+    [
+      "3/2",
+      "1/2",
+      "3/2"
+    ],
+    [
+      "3/2",
+      "1",
+      "2"
+    ],
+    [
+      "3/2",
+      "2",
+      "3/2"
+    ],
+    [
+      "2",
+      "1/3",
+      "3/2"
+    ],
+    [
+      "2",
+      "1/2",
+      "2"
+    ],
+    [
+      "2",
+      "1",
+      "3/2"
+    ],
+    [
+      "2",
+      "2",
+      "2"
+    ],
+    [
+      "2",
+      "3",
+      "2"
+    ],
+    [
+      "2",
+      "6",
+      "2"
+    ]
+  ],
+  "maximum_moment": 2,
+  "maximum_dilation": 2,
+  "pair_groups_per_parameter": 4,
+  "single_density_extra_low_energy": 2,
+  "single_density_extra_random": 1,
+  "source_selection": "only kernel forms and pair membership; recalculate certificates; reserve one recovering pair when available, then seeded sampling; every one-atom form plus training-energy and random single forms",
+  "fixed_metric_entries": [
+    [
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "1"
+    ],
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "random_signed_metrics_per_pair": 2,
+  "random_positive_metrics_per_pair": 2,
+  "metric_integer_range": [
+    -3,
+    3
+  ],
+  "metric_rounding_denominator": 64,
+  "metric_denominator_bits_cap": 160,
+  "learning": "rank-one least squares and positive inverse training covariance with an exact positive rational ridge",
+  "promotion_slots_per_parameter": 4,
+  "promotion_pool": 6,
+  "promotion_rule": "training-energy pool; exact rational congruence S^T H S using seeded unit triangular S; no claim that compression proves an estimate",
+  "ablation": "identical initial and learned metrics; replace four promotion proposal slots by seeded random symmetric matrices",
+  "matrix_density_leads_per_parameter": 2,
+  "rho_grid": [
+    "-1",
+    "0"
+  ],
+  "rho_fit_denominator": 64,
+  "rho_resource_cap": 16,
+  "training_points": [
+    1,
+    2,
+    3,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "validation_points": [
+    385,
+    512,
+    768
+  ],
+  "training_q": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "validation_new_q": [
+    5,
+    10,
+    17
+  ],
+  "energy_limits": [
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "energy_margins": [
+    "1/4"
+  ],
+  "density_limits": [
+    "1/4",
+    "3/8",
+    "1/2"
+  ],
+  "density_margins": [
+    "1/16",
+    "1/4"
+  ],
+  "approach_powers": [
+    "1/6",
+    "1",
+    "2"
+  ],
+  "energy_log_powers": [
+    "0",
+    "1"
+  ],
+  "density_log_powers": [
+    "0",
+    "1/2",
+    "1"
+  ],
+  "constant_rule": {
+    "training_margin": "3/2",
+    "upward_denominator": "340282366920938463463374607431768211456",
+    "minimum": "1/340282366920938463463374607431768211456"
+  },
+  "constants_scope": "independent free B_q or C_q; no law for their growth in q; fit only frozen training scales",
+  "prefix_rule": "N=max(256,2*ceil(max(points))); complete arithmetic prefix and rigorously enclosed entire infinite tail",
+  "energy_cost_query": [
+    "5/8",
+    "16"
+  ],
+  "density_cost_query": [
+    "5/16",
+    "8"
+  ],
+  "archive_size": 24,
+  "selection": "validation then fully charged conditional cost; preserve roots, singular, learned, promoted, indefinite, density, missing-certificate and weak regimes",
+  "final_cases": {
+    "count": 3,
+    "range": [
+      1537,
+      3072
+    ],
+    "real_offset": "1/3",
+    "boundary": [
+      1,
+      2
+    ],
+    "fresh_q_count": 3,
+    "fresh_q_range": [
+      19,
+      223
+    ],
+    "generic_count": 4,
+    "generic_cutoff": 24
+  },
+  "parent_final_scales_excluded": [
+    594,
+    972,
+    1000
+  ],
+  "parent_final_q_excluded": [
+    125,
+    186,
+    198
+  ],
+  "retained_failed_runs_are_development": [
+    {
+      "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/kernel-correlation-results/pilot-001",
+      "failure_sha256": "8838d7a39206942dd3735c3542d64f6bfdb06275e647047e5a01d1d8793f37a8",
+      "excluded_final_scales": [
+        1694,
+        1903,
+        2590
+      ],
+      "excluded_final_q": [
+        45,
+        199,
+        205
+      ],
+      "original_code_sha256": {
+        "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+        "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+        "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+        "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+        "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+        "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+        "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+        "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+        "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+        "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+        "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+        "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+        "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+        "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+        "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+        "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+        "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+        "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+        "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+        "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+        "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+        "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+        "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+        "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+        "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+        "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+        "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+        "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+        "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+        "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+        "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+        "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+        "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+        "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+        "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+        "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+        "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+        "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+        "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95",
+        "prime_discrepancy_grammar.py": "2a5abf9701638454b2b0f25b867cb7e1e7a7925a3f6c362b6346b75bee9762b2",
+        "prime_discrepancy_search.py": "515ccda5fa5fd7d984f1fc4c3a61119853d19acde249df9f03e814249afb07ad",
+        "check_prime_discrepancy.py": "aa8d0c7b6903e219cd74d4d79b82b721bece99bc0107e495426b65e23b9378d2",
+        "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+        "prime_discrepancy_proof.txt": "71d9a276d9a8ca0d630e740ba800e57a3ab6e74570931bb2f3b3d277266550c1",
+        "prime_twist_grammar.py": "992e865811765faaf1be90564114f5f5684a5593bf6970491681edb0b78806b0",
+        "prime_twist_search.py": "1b34b84399b4fb6445d7cf523697c11827552187aa58522ddfbc73e9b12f507d",
+        "check_prime_twists.py": "88e510e84454c89eac85482869df5cf0569e900bc4fe601c92ce3157b0632e22",
+        "prime_twist_report.py": "584ce2639c4fde755b3c1e78a302a2a1c912c2865a011eba27e3071ed2305d53",
+        "prime_twist_proof.txt": "1c20d07625889c07f9e64849f5e3bf03ef057dc27804ec30df7841e0e9385618",
+        "prime_oscillation_audit.py": "b4d7b446e9f299d832cb7d55c457327a3b7c450847f77ca051349cf3adb366a7",
+        "check_prime_oscillation.py": "f03c512d2cb96c9a0d1e652a1cff00e69157f407ee6e68708c6c2d61f021d2b0",
+        "prime_oscillation_report.py": "5c85bc3a5ef007d0f541fb10b6c19bb6deff7c4d3fff5e178c6fedcd137c1501",
+        "prime_oscillation_proof.txt": "24a04fa8521bd173b5702bfc5ceca4aa3c53f8b93e6bf1fa60b3b4a99e7dfa49",
+        "fractional_remainder_grammar.py": "8d5d6448724d5b8f88b326804a01c7cb4c5c446e2ee04476ad3c92c1c862e6cd",
+        "fractional_remainder_analytic.py": "69c292d85eea95fbefa96ad022de23e7f3fbd60093ccd4f19e6e98b9e75789f9",
+        "fractional_remainder_search.py": "fce42ba31106d30b4d2c83d93ad640dffe434d38c43c9ebe7a1a81f0b69ae186",
+        "check_fractional_remainders.py": "1b3c9980277b8c37f79bc025f9a4b9b8a689dbf0b8d3c4ab2a5b75740042872f",
+        "fractional_remainder_report.py": "f4792629f99e132810c1e56be38fe45309726472ac9bc867f3106484dceb6c59",
+        "fractional_remainder_proof.txt": "1ed7453f5bf3dc00b10caf31dfeee9d63aff0685266201b3f81bd6673280cd08",
+        "fractional_prime_grammar.py": "16ae66e9e706d1aeaa11a30486e12b493996cfe480afff819ddc201b0724d3e2",
+        "fractional_prime_proof.txt": "3f1bc5fb25473e55df7564e333a5eb521b398a5106105ab703a896ccb4291828",
+        "mertens_limit_audit.py": "2fe99a9e9a2d75936cdb6ab8facb747cbd706d6f350ebc73afbf940504366f3a",
+        "check_mertens_limits.py": "aa33e4af838d77cace5aaa2371d0aa71e41c6b54081c5007fb16ff965cb31d1b",
+        "mertens_limit_report.py": "19b0d01dce57b2ac9eed239b8f5ffd0c53065cf00c5eed8d40f880684979f9db",
+        "mertens_limit_proof.txt": "b3d826b44312364ac5dafc327b0b99850c71773c51e550ab1a1140a150d1075b",
+        "mellin_kernel_grammar.py": "69200865e06bdb40fed1ec4858198ccaf1e406ceb6cb8c8710cdc2598d884d74",
+        "mellin_kernel_search.py": "d54ba40a094581d64139274a400a0b6b3b9d26a66200fa82497e323ec3289d21",
+        "check_mellin_kernels.py": "99e7381a1eb11d863eea822aaaa2bc771b3a9851584d6c5f252c6521d3e49acb",
+        "mellin_kernel_report.py": "6adce33c631b07b13cead31577b533ddb2859bbf5df8d2ef8d8954940c38fe99",
+        "mellin_kernel_proof.txt": "e56c4031b581a12919ea08c74e5f740c3adaa8180f521d33067059ed42cd9705",
+        "kernel_correlation_grammar.py": "a967ae9b411bd4cb2f0407bb260397d0094232a0f0462e53f948b34855136efd",
+        "kernel_density_bridge.py": "29045ebaa3442fb0794ff9219b3f215a5d0ea80ffbda8ee3de0f36cf6cc46be5",
+        "kernel_correlation_search.py": "f69c4591398839205a8a5aa45b8c62f3d6d3a03e273e4aaa517e981253052712",
+        "check_kernel_correlations.py": "d17a55992d68e694b952fade4a5ecc20cdfed62311977fd69eb7d721fc1d3d09",
+        "kernel_correlation_report.py": "b2cdd1ed8d74f500fc1fb9e2681a878d8065a43044eb4d6d43e441d11f48b399",
+        "kernel_correlation_proof.txt": "a2a43456a1050d5cd36e8cd406fb80f1ec294564117d4b8102979d399a365be6"
+      },
+      "retained_files_sha256": {
+        "source_forms.json": "ca8a4e9ef9220fcb3b59524fef2ffc2ad81fdd9525da4c701580a247f5682fce",
+        "parameter_calibration.json": "63f53246aa04b6e37ae75ebda69d5a3b8fbf43e2220265ee0e10265ff4679dfc",
+        "archive.json": "7fb3ee2fe256707308deb2007802a5496d765275cafb3078ed8fc3ee156e8e21",
+        "validation_data.json": "a58807c0c6a50d5531ab2dc0e1eaaa2689b7901da1b371b9fd44497707e74bbb",
+        "final_cases.json": "c21315290fa7555fcd4200c697b39ab9e15356708699f25a8e86b27c48c8088a",
+        "discovery_data.json": "8788589efc5182db184929e25d3c9cac4302238bd5ffc6068c0ea2518af1c1d1",
+        "candidate_batch.json": "b897ac1f824d81e6bd8c482aa2eded20670f580dac8282f46a21ed3d8d451b94",
+        "final_evaluation.json": "8a901b94d0a2b366c905127a4b31245121da26e6940ee477400e537c3bf68eef",
+        "seal.json": "bc63bedd3241bc61a4c58bff10108e0e8a82daf5f4dce8b8ebc53ff902447d0d",
+        "calibration_seal.json": "afbbba7dc77b9db8a0e3650e65e01e78ea25ab81e9914ed2b3c8cec1ed8a693c",
+        "parameter_cases.json": "9b77f2cbfe1b5be03c7aabe6a5209a17507aa48f42b0275694df060d49b1ad1f",
+        "protocol.json": "4223280cee77be4a6986c085a138c1d9a2df84ab3a23aecd0fed249d71a1eaf1"
+      }
+    }
+  ],
+  "counterfeit_tail_cutoff": "1606938044258990275541962092341162602522202993782792835301376",
+  "wrong_density_center_factor": "1267650600228229401496703205377/1267650600228229401496703205376",
+  "supplied_backends": [
+    "complete arithmetic Gram identity",
+    "square-divisor inversion and all-real-scale density remainder",
+    "exact rational positive and singular metric factorization",
+    "all-height parent bank certificate",
+    "common-rate polynomial strip certificate",
+    "ordinary-zero multiplicity, reflection and height halving",
+    "free cofinal growth targets and fully charged finite observers"
+  ],
+  "developer_preflight": "training-sized complete diagonal atoms and products; generic source-form counts; no new candidate scoring, validation, archive or final cases",
+  "generator_model_literature_network_access": false,
+  "not_autonomous_proof_invention": true,
+  "historical_priority_is_acceptance_gate": false,
+  "new_prime_distribution_estimate_imported": false,
+  "machine_formalized": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

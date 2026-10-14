@@ -1,0 +1,99 @@
+SHARED CACHE AND TWO NATIVE VARIANTS — publication016
+
+Neither numerical variant produced an admissible candidate. The faer variant
+with static regularization1e-6 made progress and returned AlmostSolved after
+200 iterations, but the independent original-system checks show substantial
+equation errors and negative square weights. Native status is diagnostic only.
+Finite feasibility remains UNKNOWN; no all-scale arithmetic bound or RH result.
+
+Unchanged problem and cache
+
+The fixed problem retains all1957 original variables,1597 nonnegative scalar
+coordinates and three15x15 PSD matrices, including K PSD. The historical grid
+is1,2,3,5 plus the gamma-zero auxiliary, with q6,C32; it is not held-out evidence.
+The779 exact selected original rows represent all5641 original equations.
+Publication015 provides the completed exact row-span license. Numerical row
+scaling and native objective remain identical to that parent experiment.
+
+One isolated preparation worker builds arithmetic and the canonical matrix
+once. The19817027-byte JSON cache includes all original rational coefficients,
+monomial labels, coordinates, target, selected rows, and the actual canonical
+CSC values encoded as binary64 float.hex. Both workers use exactly that cache.
+An independent checker reconstructs its canonical matrix and verifies raw native
+coordinates without clipping or CVXPY inversion. Each trace is checked against
+every original equation, scalar signs and necessary PSD conditions.
+
+Exactly two settings changes were declared before execution: qdldl_default
+selects qdldl; faer_static_1e-6 selects faer and static_regularization_constant
+1e-6. All other settings use the parent's installed defaults. No target,
+grammar, row selection, objective or cone change occurred in this experiment.
+
+Observed numerical results
+
+qdldl_default: NumericalError at iteration1, zero step and all-zero original
+vector. Maximum original equality residual1600, selected scaled residual1.
+Native solve0.350248142 seconds; worker29.946469688 seconds, peak814384KiB.
+Charged/reserved worker work292402850 of450000000.
+
+faer_static_1e-6: AlmostSolved at iteration200, native solve11.515450503 seconds.
+Maximum original equality residual64.75175177720236; selected unscaled residual
+0.3897596521280455; selected scaled residual0.0002435997825800278. There are159
+negative scalar coordinates, minimum-8.106211180681734e-5. They are all square
+weights, not the positive/negative parts of signed relation coefficients.
+The child matrix has a negative2x2 principal minor,-7.3076432179462075e-6.
+These values disqualify the raw vector. Native normalized primal residual
+1.4028129842785362e-6 uses a different normalization and does not override the
+original equation checks. Worker41.232041418 seconds, peak815500KiB; charged/
+reserved work292695199 of450000000. Numerical objective1526.2569362888578.
+
+Preparation took122.708604192 seconds, peak1138448KiB, with273049934 reserved
+work. The two variant workers ran concurrently in42.357116721 seconds. Each
+worker has3GiB memory,900 cooperative seconds,1800 external seconds and450m
+charged work; parallel variants have6GiB combined memory. Full source building
+is charged once to preparation; each variant separately charges decoding,
+native production and its independent check. Native operations are clock and
+memory bounded; the exact work accounting is not a native floating flop count.
+
+Original audit failure and explicit supplemental correction
+
+The original whole-stage auditor rejects protocol.json before source rebuilding:
+its137531 bytes exceed that auditor's65536-byte metadata allowance. The runner
+wrote the complete nested parent assembly and could read it with its existing
+larger default. This is an archive-envelope mismatch, not a passed old contract.
+All frozen files and numerical evidence remain unchanged.
+
+The new check_primitive_state_cached_primal_variants_run_v2.py changes ONLY the
+protocol-file audit allowance to262144 bytes. Worker metadata stays65536 bytes;
+all source, exact proof, cache, native trace, resource and mathematical checks
+remain in force. Its separate independent_verification_v2.json explicitly
+records original_audit_contract_satisfied=false. See the bound correction scope.
+The original29 frozen tests and6 supplemental tests pass; the publisher has9
+additional passing checks, including preservation of the old contract failure.
+
+Analytical follow-up
+
+The two bound analysis notes identify a bounded next experiment: replay only
+the779 retained exact pivot rows, choose one declared rational free-coordinate
+seed and back-substitute in DESCENDING PIVOT COLUMN order. This avoids another
+dense elimination. Fifty of the159 negative square weights are free coordinates;
+preserving those raw negative values guarantees failure. A new trial may declare
+setting negative free square seeds to zero, while retaining the raw trace intact.
+All dependent coordinates then require exact recomputation and full cone checks.
+
+A lossless feasibility quotient removes redundant signed splits and one matrix:
+with C=G_child+K and P=G_parent-4K, its cone is C PSD and P+4C PSD. The canonical
+lift is child0, K=C, parentP+4C. It preserves the polynomial identity, not the
+old objective or initial storage cost. In particular P need not be PSD. This
+quotient has1224 coordinates and445 free coordinates after exact rank779.
+
+Neither quotienting nor affine restoration guarantees positivity. A restored
+proposal must satisfy ALL5641 rational equations, all1597 scalar signs and all
+three ORIGINAL PSD matrices after lifting. Any failure rejects that proposal
+only. A finite successful proposal would still need an all-scale identity,
+uniform innovation bound, boundary estimates and the remaining RH bridge.
+
+Supplemental whole-stage audit result
+
+The supplemental audit passed in294.6451415629999 seconds, with181747847 independent operations including compilation and37417618 audit cells. It rebuilt the arithmetic/geometry once, replayed the parent exact basis once, verified the shared cache once and reconstructed the canonical system once. Both native traces and worker ledgers were independently checked. Original audit contract remains unsatisfied; mathematical feasibility remains UNKNOWN.
+independent_verification_v2.json SHA256: 12a99722bfafff390140b488ff0d1d72a45c1d0a0698126d6ebc36b8af72c2ef.
+receipt.json SHA256: 621ce3a0d6d9e378e15f483b5a0147447bf080eec0c1faec1d12bc5617c0c820.

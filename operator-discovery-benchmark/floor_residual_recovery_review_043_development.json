@@ -1,0 +1,20 @@
+{
+  "schema": "floor-recovery-review-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.05455731903202832,
+      "operations": 62059,
+      "max_power_bits": 5401,
+      "exposure": "synthetic exact cell witnesses, scalar arithmetic channels and rational root brackets only"
+    }
+  ],
+  "additional_norms_evaluated": false,
+  "source_arrays_read": false,
+  "frozen_files_modified": false,
+  "hashes_generated": false,
+  "cumulative_operations": 62059
+}

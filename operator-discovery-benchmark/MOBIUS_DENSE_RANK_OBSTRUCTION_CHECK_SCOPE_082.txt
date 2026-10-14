@@ -1,0 +1,84 @@
+Independent effective uniform dense-price obstruction082 checker
+
+check_mobius_dense_rank_obstruction_082.py owns verify_obstruction(program,
+certificate,meter=None). It reuses only independent082 strict program parser,
+its exact H/T construction, and frozen073 rational/power primitives. No
+producer import, factor/squarefree sieve, actual mu sign or scientific source
+value is queried. Program's original kernel binding remains separately
+required. No frozen082 pre-run file is modified.
+
+Certificate exact schema dense-rank-interval-v1 has keys intervals,tau,
+threshold,H00,lower_coefficient in addition to schema. Each interval has
+left,right,profiles,source,t, with canonical rational boundaries/t/source
+values and complete integer profile values. At most256 sorted disjoint
+positive intervals lie within(0,1/minimum_source_divisor]. Weights t are
+nonzero, tau>0, threshold positive integer. Source constants are reconstructed
+from all fixed prefix-kernel endpoints; internal source jumps are rejected.
+Profile and memory vectors must be complete. No requested proof flag can
+be hidden in metadata.
+
+Linear profiles use kappa=min(scale,1/minimum_divisor). For stated valuev,
+left>kappa/(v+1), and right<kappa/v forv>0. The specified conservative
+stability threshold floor(1/[left*(kappa/right-v)])+1 is checked exactly.
+Indeed integer floor nesting implies floor(floor(kappa*u)/n)=floor(kappa*u/n),
+so strict constant-cell margins alone make the value stable on these
+integer coordinates. Keeping the extra supplied threshold is sound.
+Sublinear profiles must have value0, with exact
+ threshold^(den(eta)-num(eta))>=(2scale/left)^den(eta).
+Certified bounded powers and comparison cover arbitrary rational exponents
+without a denominator whitelist; no approximation admits a false cell.
+
+Elementary real-x squarefree inversion gives Q(x)=rho*x+error with
+|error|<=3sqrt(x),rho=1/zeta(2)>1/2. Since interval endpoints<=1, the interval
+population is at least width*u/2-6sqrt(u). Checking
+threshold>=ceil(24/width)^2 makes it>=width*u/4 for every integeru>=threshold.
+Checking threshold>=ceil(2/left) excludes the arithmetic unit from every
+selected interval. Checking tau<=width/(4|t|) ensures that the individual
+formal value tau*u*t/population has magnitude<=1. This squarefree theorem
+is elementary, not an imported asymptotic prime/RH premise.
+
+Exact null checks require sum t*source=(1,0,...,0) and sum t*profiles=0.
+H00 is independently recomputed from the complete energy rays; coefficient
+must equal H00*tau^2>0. All complete groups, including unselected coordinates,
+remain in the original grammar. Assign formal value0 to unselected positions
+and aggregate the selected interval values into the canonical squarefree
+groups. Disjointness and convex averaging preserve |z_g|<=1. Then every
+profile dot and delayed source dot vanishes exactly, while F0z=tau*u.
+The feasible rank-one dual lambda=z_g^2,nu=2z_gz_h therefore yields
+ B(u)>=H00*tau^2*u^2 for EVERY integeru>=threshold.
+The theta corrections have zero dual functional and all positive Gram
+functionals are squares, so this is independent of current theta/Gram
+coefficients (even u-dependent coefficients within the admitted grammar).
+
+Admission status VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION means
+only that this fixed finite-profile group-box SDD PRICE cannot be bounded
+by any finiteC*u^q withq<2. It is not an actual arithmetic drift lower bound,
+source/RH refutation, or obstruction to a growing-profile/prime-constrained
+SOS language. Flags actual_arithmetic_drift_refutedFalse,
+uniform_original_source_bound_provedFalse,uniform_source_bound_provedFalse,
+RH_provedFalse are always explicit. The source binding is external and the
+profile roster must remain fixed.
+
+All rational inputs4096bits, intermediates/powers100000bits,4GiB prospective
+memory and work3e11 are enforced before witness parsing/expensive powers.
+Huge threshold values are bit-gated; no horizon-sized allocation occurs.
+Invalid/tampered/resource-unadmitted certificates return INVALID, with
+resource_limitTrue when appropriate. No rounding ambiguity is tolerated.
+
+Eight focused independent tests PASS first attempt: generic full-radius
+witness, finite rank-one dual linkage, fractional17/31 sublinear/duplicate
+profiles, source/null/value tampering, source breaks/linear margins/overlap,
+squarefree threshold/tau rejection, H00/ray binding, current-parameter
+independence, canonical/schema/unit/empty/bool rejection, no-sieve/work/power
+resource gates. Receipt preserves the entire attempt.
+
+Separate audit_mobius_dense_rank_obstruction_082.py integrates the detector's
+EFFECTIVE certificates against this checker for24 cases: two original fixed
+kernels, memories1..3, and all four actual pilot profile families. Its PASS
+receipt contains every invented interval/tau/threshold and independent
+admission, making the broad obstruction effective rather than relying only
+on the existence proof. The audit uses algebraic kernel definitions and
+profile schedules, not actual mu signs, source scientific outcomes or old
+search/test replay. These24 certificate admissions are integration cases,
+not additional distinct unit tests. Files remain separate from frozen
+pre-run082 source until the root freezes postrun publication artifacts.

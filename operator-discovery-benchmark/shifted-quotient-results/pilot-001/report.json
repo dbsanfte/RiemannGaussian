@@ -1,0 +1,864 @@
+{
+  "RH_proved": false,
+  "all_scale_bound_status": "open",
+  "audit_operations": 514419942,
+  "checked_blocks": 636,
+  "discovery_operations": 54168660,
+  "elapsed_seconds": 198.6549461550021,
+  "final_operations": 230072152,
+  "finite_prefix_inverse_claimed": false,
+  "historical_novelty_claimed": false,
+  "preparation_operations": 1339246,
+  "selected": [
+    {
+      "constants": {
+        "12": "61059961693/549755813888",
+        "2": "21587956487/1099511627776",
+        "3": "43175912973/1099511627776",
+        "6": "86351825945/1099511627776"
+      },
+      "degree": 1,
+      "final": {
+        "mu": {
+          "energy_ratios": [
+            0.7462534176166472,
+            0.6801477143099507
+          ],
+          "growth_failures": 0,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 12
+            }
+          ],
+          "numerical_lead": true,
+          "strict_improvements": [
+            true,
+            true
+          ],
+          "worst_full_energy_ratio": 0.7462534176166472
+        },
+        "one": {
+          "energy_ratios": [
+            263605328.60351422,
+            409837966.4437729
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 409837966.4437729
+        },
+        "partial_prime_13": {
+          "energy_ratios": [
+            440257.0023956562,
+            670975.6492426932
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 670975.6492426932
+        }
+      },
+      "id": 1,
+      "program": {
+        "shifts": [
+          "1/3"
+        ]
+      },
+      "scores": {
+        "energy_ratios": [
+          1.5640684577068311,
+          0.920631975785528,
+          0.6889673851864916,
+          0.824061119727495
+        ],
+        "growth_failures": 0,
+        "growth_tests": [
+          {
+            "X": 768,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 12
+          }
+        ],
+        "numerical_lead": false,
+        "strict_improvements": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "worst_full_energy_ratio": 1.5640684577068311
+      }
+    },
+    {
+      "constants": {
+        "12": "3493122819473/1099511627776",
+        "2": "154375677073/274877906944",
+        "3": "154375677073/137438953472",
+        "6": "2470010833167/1099511627776"
+      },
+      "degree": 2,
+      "final": {
+        "mu": {
+          "energy_ratios": [
+            0.28230547332222067,
+            0.22354759772459845
+          ],
+          "growth_failures": 0,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 12
+            }
+          ],
+          "numerical_lead": true,
+          "strict_improvements": [
+            true,
+            true
+          ],
+          "worst_full_energy_ratio": 0.28230547332222067
+        },
+        "one": {
+          "energy_ratios": [
+            1239146074.054995,
+            1561631827.314603
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 1561631827.314603
+        },
+        "partial_prime_13": {
+          "energy_ratios": [
+            1395.7641796839175,
+            1244.8789811669685
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 1395.7641796839175
+        }
+      },
+      "id": 10,
+      "program": {
+        "shifts": [
+          "1/3",
+          "2/3"
+        ]
+      },
+      "scores": {
+        "energy_ratios": [
+          0.4503941686774183,
+          0.4529900571175394,
+          0.397252581959426,
+          0.3599808276257326
+        ],
+        "growth_failures": 0,
+        "growth_tests": [
+          {
+            "X": 768,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 12
+          }
+        ],
+        "numerical_lead": true,
+        "strict_improvements": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "worst_full_energy_ratio": 0.4529900571175394
+      }
+    },
+    {
+      "constants": {
+        "12": "3307270046227/549755813888",
+        "2": "292324134613/274877906944",
+        "3": "2338593076903/1099511627776",
+        "6": "4677186153805/1099511627776"
+      },
+      "degree": 3,
+      "final": {
+        "mu": {
+          "energy_ratios": [
+            0.19018209842420591,
+            0.13784095914938632
+          ],
+          "growth_failures": 4,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": true,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            true,
+            true
+          ],
+          "worst_full_energy_ratio": 0.19018209842420591
+        },
+        "one": {
+          "energy_ratios": [
+            502933166350.07,
+            584425808837.3965
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 584425808837.3965
+        },
+        "partial_prime_13": {
+          "energy_ratios": [
+            1882.0461223251925,
+            1474.8201430914926
+          ],
+          "growth_failures": 8,
+          "growth_tests": [
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 49152,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 65536,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "numerical_lead": false,
+          "strict_improvements": [
+            false,
+            false
+          ],
+          "worst_full_energy_ratio": 1882.0461223251925
+        }
+      },
+      "id": 15,
+      "program": {
+        "shifts": [
+          "1/6",
+          "1/3",
+          "1/2"
+        ]
+      },
+      "scores": {
+        "energy_ratios": [
+          0.18924845725919356,
+          0.1556757809606462,
+          0.15783389562979538,
+          0.22122838028035338
+        ],
+        "growth_failures": 0,
+        "growth_tests": [
+          {
+            "X": 768,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 768,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1024,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 1536,
+            "passed": true,
+            "q": 12
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 2
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 3
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 6
+          },
+          {
+            "X": 2048,
+            "passed": true,
+            "q": 12
+          }
+        ],
+        "numerical_lead": true,
+        "strict_improvements": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "worst_full_energy_ratio": 0.22122838028035338
+      }
+    }
+  ],
+  "status": "INCOMPLETE",
+  "total_operations": 800000000,
+  "uniform_signed_bound_proved": false,
+  "work_limit": 800000000
+}

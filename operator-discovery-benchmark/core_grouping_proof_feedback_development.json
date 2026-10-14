@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "returncode": 0,
+      "command": [
+        "-m",
+        "unittest",
+        "test_core_grouping_proof_feedback"
+      ],
+      "stdout": "SYNTHETIC_WORK module=test_core_grouping_proof_feedback operations=945354\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.619s\n\nOK\n",
+      "operations": 945354,
+      "elapsed_seconds": 0.7059963160136249
+    },
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_core_grouping_proof_feedback.GroupingProofFeedbackTests.test_square_lift_head_support_and_unpaid_crosses"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_grouping_proof_feedback operations=7824\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n",
+      "operations": 7824,
+      "elapsed_seconds": 0.08736429302371107,
+      "reason": "New square-lift head rule, affected new test only"
+    }
+  ],
+  "operations": 953178
+}

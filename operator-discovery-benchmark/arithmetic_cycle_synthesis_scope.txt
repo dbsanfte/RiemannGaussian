@@ -1,0 +1,153 @@
+EXACT FINITE ARITHMETIC SOS SYNTHESIS: SOUNDNESS AND LIMITS
+
+Independent mathematical scope review of the producer language and synthesis
+pipeline, before its first scored freeze. This text is not a formal machine-
+checked proof and does not establish any full actual bound or RH conclusion.
+The language and solver are reviewed as implementations of finite algebra.
+
+1. Certificate semantics and positivity.
+A polynomial is a finite rational linear combination of sorted monomials
+ x_(i1)...x_(id), including repeated indices; constant monomial is empty.
+For target actual mu or c, every whitelisted relation rho(x)=0 holds:
+ unit x1-1;
+ coprime_product xa*xb-xab, with EXACT gcd(a,b)=1;
+ squarefree_zero xn for nonsquarefree n, ONLY actual mu;
+ prime_power x_(p^e)-v, with proven prime p and positive e, v=-1 at e1
+ and0 at higher e for mu, v=2(-1)^e for c;
+ inverse_row sum_(d|n)xd-1_(n=1), ONLY actual mu.
+Unknown shapes, individualized actual coefficient axioms, arbitrary custom
+relations, missing product indices, false coprimality and nonprime prime-power
+premises are rejected. At zero coefficients the coprime relation still holds;
+no division by xab is permitted. Relation multipliers may have either sign.
+
+The compiler checks the EXACT coefficient identity
+ lhs=sum_j w_j P_j(x)^2+sum_i Q_i(x)*rho_i(x), w_j>=0 rational.
+For actual arithmetic, the second sum vanishes and every square is nonnegative,
+so lhs(actual)>=0. The identity is finite and polynomial, independent of actual
+coefficient evaluation or approximate numerical residuals. For generic inputs
+positivity is conditional on the same whitelisted relations, not unconditional.
+A zero polynomial has a valid empty certificate. Omitting even one nonzero
+coefficient invalidates matching; negative square weights are invalid.
+
+2. Full defect and a rational bound.
+For integer X>=1 and N=4X-1, the mandatory original complete defect polynomial is
+ Delta_X(x)=sum_(i,j<=N)J_X(max(i,j))*xi*xj,
+ J_X(t)=max(0,4X-max(2X,t))-4max(0,2X-max(X,t)).
+The symmetric implementation merges ordered pairs into coefficient J on i=j
+and2J on i<j. This retains ALL original coefficients, endpoints and cross terms.
+To prove a finite proposed bound D, the certificate must match
+ lhs=D-Delta_X exactly, not a projection, substituted response, or different
+polynomial. D=C X^2 ceil(X^(1/q)), C>=0 exact rational and q positive integer,
+is itself rational because the ceiling is an exact integer. The runner/checker
+must independently bind X,q,C, the complete polynomial and exact root ceiling.
+Floating powers may not define D. An unavailable exact ceiling is missing,
+not a rounded bound, successful certificate or mathematical counterexample.
+
+3. Product horizon, degree and explicit resource scope.
+Complete coprime ordered a,b<=N needs xab through N^2; checking a,b alone is
+insufficient. All source variables in lhs, squares and multipliers must lie in
+the declared positive horizon. Products of polynomials multiply formal variables:
+xa*xb is not automatically xab without the corresponding admitted relation.
+The polynomial degree, monomial count, expanded term count, primality/squarefree
+predicate work, divisor-row enumeration, coefficient-bit size and exact linear
+algebra costs are distinct constraints. Budget failures must retain missing
+outcomes, never truncate a complete domain or change a mathematical relation.
+The language's scalar work cap is not a total physical-memory/bit-complexity
+bound. The synthesis adds degree, monomial, denominator, coefficient-bit,
+source-horizon and time limits. No finite computational cap is a global
+semantic bound or proof of infeasibility.
+
+4. Solver soundness and incompleteness.
+The declared square basis generates columns P_j^2. Each grouped relation column
+is an EXACT sum of declared multiplier*relation products. Both signs of every
+relation column are available as nonnegative LP columns, so arbitrary signed
+relation weights are expressible. Floating LP supplies only a support proposal.
+Exact Fraction elimination solves coefficient equations on that support, with
+free variables set to0; inconsistent or negative reconstructed weights are
+rejected. It then reconstructs the entire polynomial and re-runs the strict
+certificate compiler. Neither floating feasibility nor tiny residuals can
+certify an identity. A float false positive is therefore harmless if the exact
+matching/reconstruction gate remains mandatory.
+Free-zero RREF can reject a support that has another nonnegative solution;
+thresholded support can omit a needed column. Solver resource failure and
+no_certificate_found are NOT rigorous nonexistence or infeasibility results.
+No LP optimum is independently certified or required for finite soundness.
+Grouping may compress a proof, but grouping does not change the relations or
+remove unmatched monomials. Aggregate weights must expand back to every term
+of every group in the final independent certificate check.
+
+5. Atomic calibration versus reusable arithmetic proof.
+Complete local normalization/multiplicativity determines the actual finite
+sequence. A freely chosen relation multiplier for each index can encode those
+known finite coefficients and re-express an already true finite inequality.
+Such atomic_local synthesis is a calibration of exact finite proof plumbing,
+not independent new cancellation or a uniformly compressed theorem. It can
+succeed without explicitly receiving a coefficient table: sufficient local
+relations already determine that table logically.
+Grouped_cycles constrains the relation multiplier family and tests compression,
+but STILL uses free per-index square weights; it is not a fully grouped or
+uniform proof ansatz. The pilot intentionally uses only relation pairs ab<=N,
+a subset of coprime a,b<=N. This is sound because the lhs retains the FULL
+pair defect and every missing relation is simply unavailable to synthesis;
+there is no claim that the pilot materializes the complete N^2 cycle domain.
+The separate complete cycle production does require horizonN^2. A
+successful group does not automatically give a scale-independent recursion or
+control its cost at an unbounded horizon. A new genuine proof needs a symbolic
+or recursive family valid for every declared scale, with all initializer,
+coefficient-growth, prime-normalization, product-index and boundary charges.
+
+6. Frozen pilot operational scope.
+The proposed pilot declares development X1,2 and final X4 plus odd X5 or7
+chosen from the training seal, C in{1,4}, q in{2,6}, and modes atomic_local and
+grouped_cycles. The solver RECOMPUTES weights at each final case. Consequently
+this is a post-seal finite feasibility audit, NOT out-of-sample transfer of a
+learned operator or fixed certificate coefficients. Novel final indices and
+sealed dataflow do not imply mathematical uniformity. OddX is a valid finite
+arithmetic identity case but is not an all-dyadic quantifier witness. Numerical
+scores, modes, failed certificates and resource failures must all be retained.
+Each accepted final certificate must be checked independently coefficientwise;
+no actual f evaluation is needed for that identity check.
+
+7. Uniform RH bridge; all premises retained.
+A sufficient actual premise is: there exists integer q0>=1 such that for EVERY
+integer q>=q0 there is finite Cq independent of X, and for EVERY dyadic X>=1 a
+sound complete certificate proves Delta_f(X)<=Cq X^2 ceil(X^(1/q)).
+All coefficients may depend on q, but no unknown global validity of the template
+is supplied by its finite instances. Since ceil(X^(1/q))<=2X^(1/q), original
+nonnegative block energies telescope to A_f(X)=O_q(X^(2+1/q)), with initial A_f(1)
+and the finite geometric factor1/(2^(1/q)-1) charged. Absolute Mellin convergence
+then excludes ordinary zeta zeros in Re(s)>1/2: actual mu represents1/zeta(s),
+and actual c represents zeta(2s)/zeta(s)^2 with numerator nonzero in that open
+half-plane. Functional symmetry would imply RH. This is a conditional theorem,
+not a conclusion of the finite pipeline. A finite q list does not give cofinality.
+
+8. Independently reviewed counterfeit obstruction.
+The previously reviewed note prime_pair_forcing_next_certificate_scope.txt,
+SHA256 27eb67192fca6a71283e09ebd26e0c38b0a2690faae3d003b581a0fe40ddce5b,
+proves the elementary global countermodel
+ f_P(n)=mu(n)^2*(-1)^omega_P(n)
+for ANY finite normalized prime set P. It satisfies squarefree support, ALL
+coprime cycles, actual local mu normalization on P and every inverse row
+containing a prime in P. Nevertheless F_P(x)=c_P x+O_P(sqrt x), c_P>0, and
+Delta_P(X)=(28/3)c_P^2 X^3+O_P(X^(5/2)). Thus no generic critical certificate
+from only those partial-normalization premises can exist. This is a supplied
+analytical obstruction, not a theorem established by finite control checks,
+and not an actual mu/RH counterexample. Complete normalization excludes this
+counterfeit; nonlinear relations then improve proof representation, not logical
+information. An individualized full coefficient encoding remains atomic calibration.
+
+Referenced elementary/bridge proofs are bound explicitly:
+ critical_defect_proof.txt SHA256
+ 14da66b203eb60e6b3f6d20e8bec0783e6a0a7b234f0f40bbe3f8d61c3f858c3;
+ signed_arithmetic_proof.txt SHA256
+ 8a10baa6de7002ce6f3fc453623b285b2cb216ae827691e59677599c10d1c52e.
+Their coprime-squarefree lemma supports the counterfeit proof; the conditional
+energy/Mellin bridge supports section7. No PNT, RH-strength prime error estimate,
+random-sign assumption or unproved dense cancellation is imported.
+
+Review conclusion: the language and synthesis gates are sound for exact finite
+identities under their stated whitelisted premises. Main false-certification
+threats lie in binding the wrong lhs/domain, dropping grouped terms, accepting
+float residuals, or promoting per-case resynthesis to a uniform template. Those
+must be rejected by the independent pipeline. No full signed global estimate,
+RH result, formally verified mathematical proof, or solver completeness is claimed.

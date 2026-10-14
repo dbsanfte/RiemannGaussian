@@ -1,0 +1,45 @@
+{
+  "schema": "floor-capacity-050-synthetic-tests-v1",
+  "invocations": [
+    {
+      "returncode": 1,
+      "tests": 8,
+      "failures": 0,
+      "errors": 1,
+      "elapsed_seconds": 0.9827576209791005,
+      "operations": 93621489,
+      "conversion_operations": 79726832
+    },
+    {
+      "returncode": 1,
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "purpose": "diagnostic replay exposed old checker ValueError versus expected OverflowError",
+      "operations": null,
+      "counter_note": "native unittest diagnostic did not serialize counters"
+    },
+    {
+      "returncode": 0,
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.013323099992703646,
+      "operations": 16291729,
+      "conversion_operations": 15858417,
+      "purpose": "sole affected regression after correcting expected legacy exception type"
+    }
+  ],
+  "scope": "new synthetic capacity fixtures only; no actual scientific source or old suite replay",
+  "limits": {
+    "max_index": 5000,
+    "max_support": 4096,
+    "input_bits": 4096,
+    "working_bits": 16384,
+    "aggregate_bytes": 17179869184
+  },
+  "native_decimal_guard": 4300,
+  "actual_candidates_evaluated": false,
+  "final_status": "passed",
+  "preserved_failure_explanation": "Producer/checker mathematics passed; synthetic legacy rejection assertion corrected from OverflowError to ValueError. Seven other original tests passed and were not rerun."
+}

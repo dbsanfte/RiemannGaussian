@@ -1,0 +1,178 @@
+JOINED MOBIUS PRIME TRANSPORT FLOAT SOURCE059
+
+Scope and stopped artifacts
+===========================
+This producer evaluates numerical discovery features for one finite joined
+ordinary-mu source. Integer source weights, classification and the empty-band
+gate are exact; all quadrature magnitudes and totals are FLOAT SCREENING ONLY.
+There is no rigorous numerical interval, quadrature error certificate, signed
+bound, all-scale estimate or RH admission. An independent checker reconstructs
+the source and performs Arb integration separately. No checker or prior proof
+provider is imported. All older/frozen files are preserved. No scientific
+N>=64 evaluation or default059 source table has occurred in development.
+
+The four owned files are mobius_transport_source_059.py,
+test_mobius_transport_source_059.py,mobius_transport_source_059_development.json,
+and this scope memo. They are stopped after the focused development below.
+
+Exact request and source
+========================
+ evaluate(request,degree=64,meter=None,context=None)
+ prepare_context(meter=None,max_bytes=512MiB)
+ classify_pair(a,b)
+
+The request has exactly N,alpha,gamma,tau,primes,p,q. Rational strings are
+canonical:0<alpha<1,gamma>0,0<tau<1. N is an integer>=2. The prime list M is
+sorted, distinct and consists of actual primes; it contains distinct p<q.
+Additional actual primes in M are allowed. The mathematical source is
+
+ epsilon=min(tau,N^-gamma), G_M(t)=product_(l in M)(1-l^-t),
+ Phi_N(a)=1/Gamma(1-alpha)*int_epsilon^tau
+                       G_M(t)*a^-t*t^(-1-alpha)dt,
+ W_N(kd)=floor(4N/(kd))-3floor(2N/(kd))+2floor(N/(kd)),
+ J(N)=sum_(1<=d<=floor(4N/p),gcd(d,product M)=1)
+           mu(d)*[W_N(pd)*Phi_N(pd)-W_N(qd)*Phi_N(qd)].
+
+The range exit d>4N/q zeros only the q weight. It does not delete the p
+weight or the token. Ordinary mu is constructed by an integer Eratosthenes
+sieve: each prime flips its multiples; square multiples are zero. Coprime
+masks remove multiples of each M prime. The factor d1 has mu1=1 and is
+considered on the same footing as every other divisor. It is omitted only
+when its exact pair is00 or the source horizon itself is empty. This d1 is
+an actual divisor coefficient, not an H-source unit correction. No prime
+valuation, quotient boundary, or registered-prime factor is approximated.
+
+For x=m+f with integer m and0<=f<1, W(x)=floor(4f)-3floor(2f), which is
+0,1,-1,0 on the successive quarter intervals. Thus both weights a,b lie in
+{-1,0,1}. The producer checks this finite exact range. It removes only pair00,
+zero mu and noncoprime divisors, then classifies every remaining pair:
+
+ P:(a,b)=(+/-1,0), magnitude Phi(pd),sigma=a;
+ Q:(a,b)=(0,+/-1), magnitude Phi(qd),sigma=-b;
+ D:a=b=+/-1, magnitude Phi(pd)-Phi(qd),sigma=a;
+ S:a=-b=+/-1, magnitude Phi(pd)+Phi(qd),sigma=a.
+
+In every case mu(d)[a Phi(pd)-b Phi(qd)] equals mu(d)*sigma*magnitude.
+Since p<q and t>0, the nonempty-band mathematical magnitudes are strictly
+positive. The D primitive integrates exp(-t log(pd))*(1-exp(-t log(q/p)))
+directly. It never subtracts two nearly equal floating Phi values. This
+structural positivity is distinct from a rigorous finite magnitude enclosure.
+Numerical results remain screening-only and must be independently admitted.
+
+Exact empty band; no tolerance promotion
+=======================================
+Write gamma=u/v and tau=A/B, with positive coprime integer components. The
+band is empty exactly when N^-gamma>=tau, equivalently
+
+ N^u*A^v<=B^v.
+
+The powered comparison is performed with Python integers after a prospective
+bit estimate. Equality is included. Empty bands retain all exact token
+structure with literal zero magnitudes and zero totals; no logarithm atoms
+or quadrature nodes are evaluated. This is an algebraic zero, not a tolerance.
+If a mathematically nonempty band cannot be represented by distinct finite
+positive float endpoints, evaluation raises ArithmeticError. It does not
+round the band to zero, silently use an endpoint0, or promote a near-zero
+sample to equality. Very small parameters can be numerically unresolved
+within this discovery evaluator even when the mathematical source is valid.
+
+Finite numerical method
+=======================
+NumPy's locally installed leggauss constructs a positive-weight Gauss-Legendre
+rule on[-1,1], mapped affinely to[epsilon,tau]. Default degree64; every integer
+degree8..256 is admitted under explicit cost guards. No inference is made
+from precision/degree agreement. The normalizer is computed as
+exp(-lgamma(float(1-alpha))), with the exact rational complement formed first.
+It is required finite and strictly positive.
+
+At each quadrature point, every factor of G_M is evaluated with
+-expm1(-t log(l)), retaining its small-t numerical behavior. Required pd and
+qd logarithms are cached. Batches of at most2048 divisor rows use vectorized
+exponentials and positive dot products. D uses the independently evaluated
+log(q/p)=log1p((q-p)/p) and the positive expm1 factor above. S is the sum of
+positive P/Q profiles. The producer requires every selected magnitude to be
+finite and strictly positive for a nonempty nonzero source. Underflow or
+other failed numerical conditions raise rather than admit a zero/negative
+profile. Signed and absolute totals use math.fsum. No FLOAT result is a
+rigorous interval or proved sign/bound.
+
+Result contract
+===============
+The schema is mobius-transport-numerical-source-v1. It includes the full
+request, tokens, signed_sum,absolute_sum,numeric metadata and counts.
+Each token has exactly
+
+ {d:int,profile:'P'/'Q'/'D'/'S',sign:+/-1,kernel_sign:+/-1,
+  mu:+/-1,magnitude:finite float}.
+
+kernel_sign is sigma before multiplication by ordinary mu. sign=mu*sigma.
+Token order is ascending actual integer d. Empty-band magnitudes may be0;
+nonempty selected magnitudes must be>0. An empty cofactor horizon also yields
+an empty token list and zero finite sum. Tokens are not paired or fitted by
+this source layer; root owns the pairing grammar, order and coverage checks.
+The checker independently reconstructs these exact fields and integrates
+its own mathematical profiles before admitting any finite bound or plan.
+
+Numeric metadata records the method, degree,float64,exact empty-band status,
+float endpoints when used,normalization,source horizon,d1 consideration,
+q-range exit,mu provenance and ascending-d order. It explicitly marks
+numerical_screening_only:true, quadrature_error_certified:false,
+rigorous_positive_magnitudes_admitted:false,
+rigorous_source_interval_admitted:false,uniform_bound_proved:false,rh_proved:false.
+No source-chain admission is claimed merely from a floating screening run.
+
+Resources, caches and accounting
+================================
+Operational caps:N<=262144, at most8 actual primes each<=1,000,000,
+rational component bits<=4096, powered-comparison estimate<=400000bits,
+degree<=256,batch2048. Since p>=2, the mu/cofactor horizon is at most524288.
+The maximum integer divisor argument q*d is below2^63; exact NumPy int64
+quotient arithmetic therefore cannot overflow within these caps. Divisor
+weight multiplication is by small fixed integers only. Mu uses int8 with
+entries-1,0,1. The coprime mask is boolean. No dense source-array convolution
+or additional logarithmic scientific source construction is performed.
+
+Default Meter has50billion proxy operations and7200seconds. Callers may
+supply a larger explicit cap. Meter.operations and counts expose prime
+trial divisions, exact powered bits, sieve entries, integer weight entries,
+coprime masking,log atoms,quadrature nodes,matrix entries,tokens and cache hits.
+NumPy vector work is charged by actual dimensions; quadrature setup has a
+conservative cubic-degree charge. These are declared work proxies, not CPU
+instruction counts. Time is checked at primitive/batch boundaries.
+
+Each context retains at most512MiB of cached objects. Prospective working
+preflight is capped at4GiB and covers sieve/weights/logs/token dictionaries
+and both batch exponential matrices. The source kernel preflight includes a
+conservative maximum-degree batch envelope. Root retains aggregate16GiB
+responsibility; no worker pool is created here. Three persistent worker
+contexts together can retain at most1.5GiB of cache. Every cache key is a
+literal functional tuple: sieve horizon, N/M/p/q for integer kernels and logs,
+and quadrature degree for nodes. Source-kernel arrays are made read-only.
+Gamma/tau/alpha are not incorrectly included as dependencies of integer
+weights, and they are not omitted from any cached numerical integral: final
+magnitudes are not cached. Cache exhaustion stops storing new objects while
+permitting guarded evaluation. No artifact hashes or file keys are used.
+
+These finite resource domains do not alter the mathematical all-N source or
+provide an upper bound beyond them. Root must freeze any scientific request
+bank, training scales, finite final checks and pairing grammar before actual
+source screening. This producer has not applied any scientific bank.
+
+Focused development and preserved failure
+=========================================
+Eight focused synthetic tests were run once. Seven passed. The remaining
+fixture expected a D token atN11,p2,q5, but that exact source has no D token.
+The failed native invocation is retained. The fixture was changed toN13,
+where d1 has W(13/2)=W(13/5)=-1, and only that affected test was rerun; it
+passed. Producer code was unchanged by the correction. Inclusive charged
+work across both preserved invocations is4,228,443operations, with no
+unresolved failure and prospective memory peak8,437,027bytes.
+
+Tests cover all eight nonzero W-pair classes, independent tiny trialfactor
+mu/coprimality/token reconstruction, d1 and q-range exits, repeated-prime
+rejection, all ordinary valuations via direct prime-product signed integrands,
+scalar Phi profiles and stable D magnitudes, general tau and denominator257,
+algebraic empty bands, float-unresolved endpoints, literal caches, optional
+zero-cache mode, parameter/degree/work/deadline/memory caps. Numerical
+fixtures use custom bands and N<=17; exact/cap loops remain N<64. No old
+suite or scientific source table was replayed. All four files are stopped.

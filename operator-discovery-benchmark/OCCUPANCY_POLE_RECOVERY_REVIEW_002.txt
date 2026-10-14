@@ -1,0 +1,358 @@
+OCCUPANCY POLES, COMPLETE CENTERING, AND NORMALIZED ABEL RECOVERY
+
+Scope and status
+----------------
+This new memo audits candidate10_occupancy_joint_forcing_obligation.json
+and OCCUPANCY_TRANSFER_REVIEW_001.txt. No prior file is changed. No source
+table, numerical experiment, test, hash, parameter search or subagent is
+used. The source remains actual mu. No whole cofinal estimate or RH proof
+is obtained; those flags remain false.
+
+The important correction is that the previous isolated squarefree-product
+recovery proposal was UNCENTERED. Its infinite bivariate series has a
+genuine, strictly positive double residue at physical s=t=2/3. For the
+sixth-root weight this is z1=z2=1/2, to the right of the bounded low
+rectangle. Finite Euler compilation and its low-rectangle theorem remain
+valid, but do not remove these poles from the high complement.
+
+This memo proves the local pole statement, provides exact joint centering
+at every product cutoff, proves that sharp product-band recovery is
+strictly stronger than a whole moment even for bounded generic sources,
+and proves a bounded-norm normalized Abel recovery operator. Its apparent
+fractional prime gain cancels under normalized pullback. A local pole is
+not promoted to an unconditional sharp diagonal-prefix asymptotic.
+
+1. Modewise infinite Euler factorization and its actual domain
+--------------------------------------------------------------
+Write u=1/3, v=2/3, kappa=1-u=2/3, beta=9/2. Let J be an allowed-bin
+subset of {hu,hv,ku,kv}, with indicators a_h,b_h,a_k,b_k in {0,1} for
+its u/v bins on each leg. Put k_h=a_h+b_h, k_k=a_k+b_k and
+  r_q=1-q^(-u), w_q=1-q^(-v),
+  R_J(q)=a_h*r_q+b_h*w_q, S_J(q)=a_k*r_q+b_k*w_q.
+The infinite cumulative-mode series, initially Re(s),Re(t)>1, is
+  F_J(s,t)=prod_q [1-R_J(q)*q^(-s)-S_J(q)*q^(-t)].             (1.1)
+Its complete full-occupancy combination is
+  F_SF(s,t)=sum_J (-1)^(4-|J|)*F_J(s,t).                       (1.2)
+The coefficient of h^(-s)k^(-t) in beta^2*F_SF is exactly
+  a(h)*a(k)*1_(hk squarefree),
+where a=p-d is the candidate-10 mixed-prime coefficient. On squarefree
+integers d=0. Each leg must occupy both of its bins. All prime-absent and
+coprime conditions are included; this is not the unrestricted tensor square.
+
+Separate the first-order prime terms to obtain
+  F_J(s,t)=zeta(s)^(-k_h)*zeta(s+u)^(a_h)*zeta(s+v)^(b_h)
+           *zeta(t)^(-k_k)*zeta(t+u)^(a_k)*zeta(t+v)^(b_k)
+           *E_J(s,t).                                        (1.3)
+Here the q factor of E_J is
+  [1-R_J*q^(-s)-S_J*q^(-t)]
+   *(1-q^(-s))^(-k_h)*(1-q^(-s-u))^(a_h)*(1-q^(-s-v))^(b_h)
+   *(1-q^(-t))^(-k_k)*(1-q^(-t-u))^(a_k)*(1-q^(-t-v))^(b_k).
+Its difference from one is bounded on compact sets by a constant times
+  q^(-2 Re(s))+q^(-2 Re(t))+q^(-Re(s)-Re(t)).
+Consequently E_J is an absolutely normally convergent holomorphic product
+for Re(s),Re(t)>1/2. The finitely many local factors may have zeros, not
+poles. Formula (1.3) is a meromorphic continuation on this domain.
+It explicitly RETAINS poles from zeros of zeta(s) or zeta(t); no zero-free
+half-plane is inferred. Near the real point (kappa,kappa), however, both
+zeta denominators are nonzero, so a sufficiently small local polydisc is
+legitimate without any RH hypothesis. The v-shift pole at 1/3 lies outside
+this remainder domain; this argument makes no unsupported continuation
+claim there.
+
+The physical variables for a product weight (hk)^(-gamma) are
+  s=z1+gamma, t=z2+gamma.
+Thus all of (1.3), including its poles, shifts with gamma. A finite prime
+polynomial is entire in z1,z2 and is not its infinite analytic continuation
+uniformly on arbitrary left half-planes. The earlier finite Perron proof
+never claimed such a limiting interchange.
+
+2. Strictly nonzero full-row double residue
+-------------------------------------------
+For real 0<x<1, zeta(x)<0: the alternating eta series is positive and
+zeta(x)=eta(x)/(1-2^(1-x)). In particular Z=zeta(kappa)<0 and
+W=zeta(kappa+v)=zeta(4/3)>0.
+
+Every local E_J factor is positive at (kappa,kappa). To see the only
+nontrivial numerator issue, set y=q^(-1/3). The full-bin local factor,
+which is the smallest among the allowed-bin factors at this point, is
+  1-2*(r_q+w_q)*q^(-kappa)
+    =1-4*y^2+2*y^3+2*y^4
+    =(1-2*y^2)^2+2*y^3*(1-y)>0, 0<y<1.                       (2.1)
+All normalizing factors are positive. Absolute convergence then gives
+E_J(kappa,kappa)>0, rather than merely a nonnegative limiting product.
+
+Only the four J containing hu AND ku contribute a double kappa pole.
+Index their optional hv,kv by epsilon,delta in {0,1}. Since the zeta
+pole residue at one is one, their double residues are
+  Z^(-2-epsilon-delta)*W^(epsilon+delta)*E_J(kappa,kappa).
+Their full-row inclusion signs are (-1)^(epsilon+delta). Therefore
+  D_SF := Res_(s=kappa) Res_(t=kappa) F_SF(s,t)
+    =sum_(epsilon,delta in {0,1})
+       |Z|^(-2-epsilon-delta)*W^(epsilon+delta)*E_J(kappa,kappa)
+    >0.                                                      (2.2)
+There is NO cancellation of this double residue between occupancy modes.
+Other modes may have single poles; they cannot cancel its double coefficient.
+
+Locally the symmetric meromorphic germ can be written uniquely as
+  F_SF(s,t)=D_SF/[(s-kappa)*(t-kappa)]
+             +A(s)/(t-kappa)+A(t)/(s-kappa)+H(s,t),             (2.3)
+with A and H holomorphic near the point. For example, subtract the double
+part from the residue in t to define A(s); the remaining germ defines H.
+The single-residue functions are part of the compensation obligation too.
+
+The double-residue term in the unweighted double-Perron prefix is
+  beta^2*D_SF*n^(2*kappa)/kappa^2.                             (2.4)
+This is an exact local residue calculation if a contour is moved across
+those two poles with the remaining integrals retained. It is NOT a proved
+asymptotic for the actual sharp prefix: zeros elsewhere, single residues,
+and the remaining contours have not been bounded. If it were the leading
+term, its block contribution would be
+  [beta^2*D_SF/kappa^2]
+   *[(2^(2*kappa+1)-1)/(2*kappa+1)]*X^(2*kappa-1),
+namely a positive constant times X^(1/3).
+
+For gamma=1/6 the local poles are z1=z2=kappa-gamma=1/2.
+Their residue term is instead
+  beta^2*D_SF*n^(2*(kappa-gamma))/(kappa-gamma)^2
+    =4*beta^2*D_SF*n.
+Its putative leading block contribution is constant, not the
+X^(-1/3+epsilon) product-local saving needed to undo this weight at balanced
+products. Thus a bounded weighted endpoint is compatible with an unbounded
+uncentered unweighted term.
+
+The earlier low rectangle has real line c=1/log(2X-1). For sufficiently
+large X it is left of z=1/2. The finite Euler bound there remains correct;
+the high complement contains the rest of the finite Perron limit. One may
+not silently identify this low rectangle with a pole-subtracted infinite
+series or use it to erase (2.2).
+
+3. What is refuted, and what the local pole does not yet prove
+-------------------------------------------------------------
+The isolated squarefree product-band proposal is uncentered and is not a
+justified sufficient route to the COMPLETE target as previously motivated.
+It asks for an extra saving against a genuine pole component. It should be
+replaced by a joint centered statement, not installed as a proved lemma.
+
+A rigorous simpler obstruction is available for a stronger rectangular
+version. Let C_SF(x,y) be the sharp rectangular prefix of the coefficients
+of F_SF. If for every epsilon>0 it satisfied
+  |C_SF(x,y)|<=C_epsilon*(xy)^(1/2+epsilon), x,y>=1,
+then two summations by parts would make
+  F_SF(s,t)=s*t*integral_1^infinity integral_1^infinity
+                C_SF(x,y)*x^(-s-1)*y^(-t-1) dy dx
+holomorphic for Re(s),Re(t)>1/2, choosing epsilon below the distance to
+the boundary. This contradicts (2.2). The raw rectangular version is FALSE.
+
+The proposed same-X W_X-weighted product-band bound is not literally this
+rectangular hypothesis. A local two-variable pole alone does not supply a
+sharp diagonal asymptotic or an implication between these two kernel
+families. Accordingly this memo does NOT assert an unconditional refutation
+of that exact same-X inequality from (2.2) alone. Such a refutation requires
+a diagonal Mellin/contour argument with all other singularities accounted
+for, or an independently proved asymptotic. Assuming RH to dismiss those
+terms and then presenting the result as unconditional would be circular.
+What is already certain is the nonzero polar germ and the missing centering.
+
+4. Exact full centering at every product cutoff, including the unit
+------------------------------------------------------------------
+Let A(n)=sum_(h<=n)a(h), A(0)=0, and let m_u be the old EXACT residue
+coefficient. With R_u=kappa*m_u define
+  c(h)=m_u*[h^kappa-(h-1)^kappa], h>=1,
+  b(h)=a(h)-c(h).                                             (4.1)
+In particular a(1)=0 but c(1)=m_u and b(1)=-m_u. The unit must be kept.
+Then sum_(h<=n)c(h)=m_u*n^kappa exactly, and
+  B(n)=sum_(h<=n)b(h)=A(n)-m_u*n^kappa.
+No floor error or fractional-power derivative is discarded.
+
+For any gamma>=0, X integer>=1, N=2X-1 and real T>=1, define
+  J_gamma,X(T)=X^(-2)*sum_(h,k<=N, hk<=T)
+       W_X(h,k)*(hk)^(-gamma)*b(h)*b(k).                       (4.2)
+Its summand is EXACTLY
+  a(h)*a(k)-a(h)*c(k)-c(h)*a(k)+c(h)*c(k).                     (4.3)
+Split each of these three symmetric classes AA, AC+CA, CC by hk squarefree
+or nonsquarefree. These are six sectors. Their sum is (4.2), at EVERY
+cutoff and for EVERY retained product kernel. A restricted kernel does not
+permit one to subtract a global scalar main term after the restriction.
+
+At gamma=0,T=N^2,
+  J_0,X(N^2)=X^(-2)*sum_(X<=n<2X)|A(n)-m_u*n^kappa|^2.        (4.4)
+This is a positive full energy; its individual product sectors and proper
+cutoffs generally are indefinite. The AA/SF sector is beta^2 times the
+old occupancy projection. The AA/nonsquarefree sector includes repeated
+valuations and shared primes; AC and CC include all unit and main crosses.
+
+Analytic recovery of the center also checks exactly. If mathcal D(s) is
+the old same-prime coefficient series, its complete local mass beta and
+support q^e,e>=2 give absolute convergence for Re(s)>1/2. Thus
+  mathcal A(s)=P(s)-mathcal D(s)
+has residue R_u at s=kappa. Furthermore
+  c(h)=R_u*h^(-u)+O(h^(-u-1)), h>=2,
+so its Dirichlet series is
+  mathcal C(s)=R_u*zeta(s+u)+an analytic remainder,
+the remainder being holomorphic for Re(s)>-u. The exact h=1 term is
+included in that remainder. Consequently mathcal A-mathcal C is
+holomorphic near real kappa, and the UNRESTRICTED pair series
+  [mathcal A(s)-mathcal C(s)]*[mathcal A(t)-mathcal C(t)]        (4.5)
+has neither double nor single kappa poles. This is pole compensation,
+not a zero-free theorem or a prefix moment estimate.
+
+The AA/full double residue is R_u^2. Its AA/SF part is beta^2*D_SF and
+its AA/nonsquarefree part is R_u^2-beta^2*D_SF. The AC+CA/full and CC/full
+double residues are respectively -2*R_u^2 and R_u^2, so they cancel in
+(4.5). These identities quantify the full-center recovery which an
+isolated SF payment would lose.
+
+Even centering INSIDE the squarefree sector is not automatically enough.
+Coprime/squarefree conditioning changes the residue profiles. For example,
+the leading CC/SF pair series has double residue
+  R_u^2*prod_q (1-1/q)^2*(1+2/q),
+rather than R_u^2. The product is strictly positive and absolutely
+convergent after first-order cancellation. The O(h^(-u-1)) difference
+in c cannot create this double pole: its residue sums after finite-prime
+coprime conditioning converge normally. Analogous conditional profiles
+occur in AC and AA. There is no algebraic reason for the centered SF
+double coefficient to vanish separately. Its remaining residue, if any,
+must cancel the centered nonsquarefree sector's residue because (4.5)
+is locally holomorphic. No separate cofinal bound for centered SF is
+claimed here.
+
+For the exact reduced bank target U(n)=K-L0+Lu-main one has
+  B(n)=U(n)+Lv(n).
+If a cutoff compiler is to represent U itself, set
+  ell_v(h)=Lv(h)-Lv(h-1), b_new(h)=b(h)-ell_v(h),
+retaining all the resulting pair cross terms. Alternatively keep (4.2)
+as the full centered object and use the reviewed paid Lv comparison in
+both directions. The identity and triangle inequality are legitimate;
+deleting the Lv cross term from a square is not. The fixed-source bank,
+theta, and all earlier D/smaller-pole padding conventions remain unchanged.
+
+5. A sensible sufficient product-local rule, not an equivalence
+---------------------------------------------------------------
+Use the COMPLETE b(h)b(k) summand of (4.2), including all six sectors.
+For each dyadic product scale T0, demand a uniform bound over every partial
+interval (T0,V], T0<V<=2T0, with the finite product support understood:
+  |X^(-2)*sum_(T0<hk<=V) W_X(h,k)*(hk)^(-gamma)*b(h)*b(k)|
+       <=C_epsilon*X^epsilon*T0^(-gamma).                     (5.1)
+Keep the finite m=1 head as well. Difference of two partial intervals
+gives arbitrary subintervals with twice the constant. Stieltjes Abel on
+each band then removes its product weight at cost at most a fixed
+gamma-dependent constant times C_epsilon*X^epsilon. Summing the O(log X)
+bands gives the full cofinal energy, with epsilon rescaled to absorb the
+logarithm. This is a sufficient joint centered candidate rule. It is not
+a proved source lemma and not equivalent to the original endpoint goal.
+
+The distinction is strict even for ONE fixed generic source with |b(h)|<=1.
+Choose lacunary dyadic X_j=2^(2^j), and L_j=floor(X_j^(2/3)). On each
+block put b=+1 on [X_j,X_j+L_j), b=-1 on the next L_j integers, zero
+elsewhere. Ignore a finite initial head so 2L_j<X_j and the blocks are
+separated. Each completed block has net zero. B(n) is a triangle of
+height L_j and support 2L_j, hence its only nonzero dyadic block energy
+is at most 2L_j^3/X_j^2<=2. Whole cofinal energy is therefore bounded.
+
+Now take the SINGLE dyadic product band (X_j^2,2X_j^2] and its partial
+endpoint V=X_j*(X_j+L_j)-1. Any pair with a negative factor from this
+block has product at least X_j*(X_j+L_j)>V. Earlier pairs and pairs
+between this block and earlier blocks have product below X_j^2, for
+large j, since the preceding block lies below 2*sqrt(X_j).
+The interval thus has only positive pairs from the new block. It contains
+at least a constant times L_j^2 pairs with both indices between X_j and
+X_j+floor(L_j/4), apart from the one pair at product X_j^2. These have
+W_X>=3X_j/4 and product <=2X_j^2. Its weighted value is at least
+  c_gamma*L_j^2*X_j^(-1-2gamma)
+     >=c'_gamma*X_j^(1/3-2gamma).
+Rule (5.1) would bound it by C_epsilon*X_j^(epsilon-2gamma), impossible
+for epsilon<1/3. This is a logical countermodel to recovery-rule
+equivalence, NOT a counterfeit claiming to satisfy actual-mu identities.
+Sharp product cuts may destroy cancellation even after correct centering.
+
+6. Normalized Abel is a genuinely bounded recovery operator
+-----------------------------------------------------------
+For the SAME centered coefficient sequence, use real staircase extension
+  B(t)=sum_(h<=t)b(h),
+  F_gamma(t)=t^gamma*sum_(h<=t)b(h)*h^(-gamma), t>=1.
+Here B is constant on [n,n+1), while F_gamma(t)=(t/n)^gamma F_gamma(n)
+there. One must not replace both by the same staircase convention.
+Stieltjes integration by parts, including the h=1 atom, gives EXACTLY
+  F_gamma(t)=B(t)+gamma*t^gamma*
+                      integral_1^t B(u)*u^(-gamma-1)du,
+  B(t)=F_gamma(t)-gamma*integral_1^t F_gamma(u)du/u.             (6.1)
+These are not pointwise absolute-value inverse bounds between arbitrary
+signed endpoint sums; they are complete causal operators with memory.
+
+For sigma>0 define the truncated norm
+  ||f||_(sigma,T)^2=integral_1^T |f(t)|^2*t^(-2sigma-1)dt.
+Set H(t)=integral_1^t F_gamma(u)du/u. Then t*H'(t)=F_gamma(t)
+almost everywhere, H(1)=0, and an exact integration by parts gives
+  2 Re <F_gamma,H>_(sigma,T)
+      =T^(-2sigma)*|H(T)|^2+2sigma*||H||_(sigma,T)^2.
+Therefore
+  ||B||_(sigma,T)^2
+    =||F_gamma||_(sigma,T)^2
+       -gamma*T^(-2sigma)*|H(T)|^2
+       -gamma*(2sigma-gamma)*||H||_(sigma,T)^2.                 (6.2)
+For 0<=gamma<=2sigma the inverse norm is AT MOST ONE, uniformly in T.
+The formula works for complex coefficients and retains the endpoint term.
+
+For 0<=gamma<sigma, the forward memory kernel on logarithmic coordinates
+is exp(-(sigma-gamma)*x)*1_(x>=0), with L1 norm 1/(sigma-gamma).
+Young's inequality, with zero extension past the finite interval, proves
+  ||F_gamma||_(sigma,T)<=sigma/(sigma-gamma)*||B||_(sigma,T).   (6.3)
+At sigma=1/2,gamma=1/6 the forward constant is 3/2 and inverse is one.
+This bounded bridge needs no product-cutoff hypothesis. In particular,
+cofinal integer complete moments in all epsilon imply finite norms for
+every sigma>1/2, and (6.2)-(6.3) transfer that property both ways when
+gamma<1/2. Conversely finite norms at every sigma>1/2 bound each dyadic
+moment by a constant times X^(2sigma-1). For F_gamma the exact interpolation
+above changes only finite comparison constants. Thus the cofinal property
+is equivalent for B and F_gamma in this range, with constants enlarged
+as specified. No such property is proved for the actual source here.
+
+7. The normalized prime gain cancels, rather than closing the target
+-------------------------------------------------------------------
+Suppose a particular complete arithmetic transfer has weighted pullback
+q^(-gamma)*S_gamma(t/q), S_gamma(y)=sum_(h<=y)b(h)*h^(-gamma).
+Multiplying by t^gamma gives
+  t^gamma*q^(-gamma)*S_gamma(t/q)=F_gamma(t/q).                 (7.1)
+Thus the fractional gain disappears EXACTLY under the normalized state
+used for bounded recovery. All original arithmetic weights, occupancy
+unions, q-free restrictions, and exits remain. The formula does not assert
+that centered b obeys the uncentered homogeneous transfer: its exact center
+increments produce additional deterministic forcing, which must be kept.
+
+If only integer state values at m=floor(t/q)>=1 are used, the same term is
+  [t/(q*m)]^gamma*F_gamma(m).
+The multiplier is not one and lies in [1,2^gamma); retain its exact value,
+plus the below-one/unit convention. Continuous interpolation restores
+(7.1). In two-leg quadratic states the analogous normalization is
+t^(2gamma); the same issue is present on each transported leg.
+
+In Mellin language, normalized F_gamma replaces the weighted prefix
+denominator z by the physical denominator s-gamma, while the prime
+arguments return to s. It does not move an actual source singularity to a
+less demanding physical scale. The valid bounded inverse and the apparent
+q^(-gamma) scalar improvement cannot be counted as independent credits.
+
+8. Correct next obligation and stopping point
+---------------------------------------------
+Two mathematically sound routes remain distinct:
+  (a) a joint centered product-local estimate such as (5.1), retaining
+      all six sectors and all partial product cuts; this is strictly
+      stronger than the whole endpoint goal and needs a new source lemma;
+  (b) a normalized Abel auxiliary F_gamma with the proved bounded recovery
+      (6.2), whose full arithmetic forcing and scalar transfer must be
+      estimated after the cancellation (7.1), not before it.
+Neither may separately pay an uncentered SF pole or discard a center
+conditioned by the chosen kernel. The old low-contour theorem remains a
+correct component result. Its high complement and the genuine shifted
+polar germ have not been controlled by that theorem. Full centered
+SF/nonsquarefree recombination removes the local kappa poles but does not
+establish a uniform signed moment or a zero-free region.
+
+The concrete correction to the search input is therefore exact kernel-
+compatible centering plus explicit choice of a stronger sharp-cut rule
+or a bounded-memory normalized auxiliary. Repeated valuations, moving
+prime-bank cutoffs, lower-pole padding, and all center/mixed correlations
+stay in the forcing ledger. Global and RH flags remain false.
+
+Final status: only this new prose file was written. All work was analytical;
+no arithmetic, experiment, test or development invocation was performed.

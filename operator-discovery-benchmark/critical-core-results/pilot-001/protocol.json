@@ -1,0 +1,287 @@
+{
+  "budgets": {
+    "arithmetic_work": 5000000000,
+    "bit": 1000000,
+    "max_n": 1048575
+  },
+  "code_sha256": {
+    "arithmetic_filter_pole_budget.py": "e1b730dec869117f8e654712744bc7b72ebaa6d6771e8d87774fe5c48f96bd4d",
+    "arithmetic_filter_pole_budget_proof.txt": "0f32e43a7ceb851dd29a1218424cfa4e77daa8c62f5e5ee57b69b275e4dc6403",
+    "check_critical_core_run.py": "17a72f0b3d092b0960e7e9f26d3dff60b696b592881806183c8b905fa189bed5",
+    "critical_core_checks.py": "8123597b5a3cd36a612bb4438db99a2dee888e9e4f135c79ee198608be5e61ee",
+    "critical_core_grammar.py": "6e19c7b5a1fd1b894766c4a35c045470e21ec0974af6d50bb08a8cb85beeb9d7",
+    "critical_core_independent_analytical_review.txt": "ae8ced477f2534a1716567775b08114366ab1e1211b0a683f02b528bd3afb89c",
+    "critical_core_language_scope.txt": "7201130e4be9783cc86619dce60a3d23f3d289ed10084e0a412c601b8d082685",
+    "critical_core_proof.txt": "57d7d850abaedb67482ff55b01a4e776dafc00960ebef6eba66df8b8ca6c2218",
+    "critical_core_search.py": "f852205f79caa0d3ecc71a4718712aa4b5b2ba75a53e07675cbdc1e656148e52",
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "run_critical_core.py": "1915fb44a8182a967511160dcf8403301c56b30d88b56483d41944d00d968d09",
+    "test_arithmetic_filter_pole_budget.py": "2af4abce1e4495f6bb36ab133b7fc02abf15954ba9685fa5b3788bf218945b12",
+    "test_check_critical_core_run.py": "eef175068a3e6dcf97f7c7d74f57c6921e0b118263b3d9917f6852d3a2bdf129",
+    "test_critical_core_checks.py": "c9c799c8d3d45e66ccddcee2d744fbf463ae44a40627e6758b079f616461098d",
+    "test_critical_core_grammar.py": "4a12679caeb42244eebd21f0b10658ddd072d3936be736b615d2ca43a574bc47",
+    "test_critical_core_search.py": "bff9761e6932ea5727d8da18c6840a6531e3cc1ecc993ca22c17ffacb4e4ba5a",
+    "test_run_critical_core.py": "e1eda75014d5d95e5256aca5eb6218bc1a3278f15fefcd4ac84a7571d0e6c246"
+  },
+  "dictionary_sha256": "d6917dea94cc9d8cbeb3e4c32d3c8c6f989885317e12dd89521a0b2d49c596d0",
+  "features": [
+    {
+      "core_depth": 1,
+      "feature_id": "871e921fec461708bc9a84813092c15571d0f7380563ecdbaae97b58c1a1b32e",
+      "theta": "1/6"
+    },
+    {
+      "core_depth": 1,
+      "feature_id": "493c275f5783627d2a3dd966cbff142b990e5c44d6747609826f4bb7fe0e8c49",
+      "theta": "1/3"
+    },
+    {
+      "core_depth": 1,
+      "feature_id": "f024ff14b0a99ea5ed5a9968ea0bd4337df9a48aa635f9589295fab27169aca3",
+      "theta": "1/2"
+    },
+    {
+      "core_depth": 2,
+      "feature_id": "b4bafdc3934c612e2dcf1d2fa990f1d08cb718f6d9ed5eb5f3e8c5d62c50a62e",
+      "theta": "1/6"
+    },
+    {
+      "core_depth": 2,
+      "feature_id": "7dc515f4f7068686bfcf8f7fca35d086af7c443af24faacbddfe2d3ed27d8ba4",
+      "theta": "1/3"
+    },
+    {
+      "core_depth": 2,
+      "feature_id": "6d489edb5972eb8b0da98a86018c635f2f7a1662f1c869fe8fe2b6602e649215",
+      "theta": "1/2"
+    },
+    {
+      "core_depth": 3,
+      "feature_id": "f23f09ce2e61c8dd1d326c115e40aa5e7ff1a846c06770e8d620f6d4dfbcf9d5",
+      "theta": "1/6"
+    },
+    {
+      "core_depth": 3,
+      "feature_id": "95e3d4b4dd53a578847447b4aa825bf7c91c16957f1f39cb82f3258c1dcc5991",
+      "theta": "1/3"
+    },
+    {
+      "core_depth": 3,
+      "feature_id": "adb213668a313ea06c0cf4a70d96b6f0ab196a7daaf2bd26f0d308682ab56b9d",
+      "theta": "1/2"
+    },
+    {
+      "core_depth": 5,
+      "feature_id": "567c614fa2a599dbe2c749741a02885234492e241bb24deff8692d28f1353395",
+      "theta": "1/6"
+    },
+    {
+      "core_depth": 5,
+      "feature_id": "2764fce612571af2d4dd5d40876659e815fddf09c07f31128d404ccd4d826033",
+      "theta": "1/3"
+    },
+    {
+      "core_depth": 5,
+      "feature_id": "8db8d2d272d400ff60cc68eaf8f4c8c599ad517814a536c271b11ae40e404204",
+      "theta": "1/2"
+    }
+  ],
+  "final_generation": {
+    "fixed": [
+      131072,
+      262144
+    ],
+    "formula": "170001+2*(int(seal_sha256[:16],16)%10000)",
+    "odd_count": 10000,
+    "odd_min": 170001
+  },
+  "final_levels": [
+    3,
+    12,
+    17,
+    29
+  ],
+  "global_claim": "For the exact actual arithmetic target G and anchored signed corrected block function H_X(n)=G(n)+sum_j gamma_j T_j,X(n) in the program, there exists integer q0>=1 such that every integer q>=q0 admits finite Cq>=0 independent of X, and every dyadic integer X>=1 satisfies E_H(X)<=Cq ceil(X^(1/q)). E_H(X)=X^(-2) sum_{X<=n<2X} H_X(n)^2 with every cross term retained. Each correction uses actual c=mu*lambda, its complete even-smallest-prime retained core sum, the same fixed filter as G with parent-X cutoffs, and its exact fractional-root ceiling. All gamma_j are fixed signed rationals, and the coefficient of G is exactly1. Stored constants are finite fits, not assertions about unknown existential constants. Innovation scores are secondary diagnostics. The supplied uniform correction theorem recovers G before applying its ordinary pole bridge; no Mellin argument is applied directly to block-dependent H.",
+  "language": {
+    "box": "8",
+    "correction_semantics": "actual c even-smallest-prime source, retain core1 or Omega(core)>h, core<=sqrtX, p<=floorX^theta, same fixed target filter, divide byceil(X^(1/[2(h+1)]))",
+    "features": [
+      {
+        "core_depth": 1,
+        "feature_id": "871e921fec461708bc9a84813092c15571d0f7380563ecdbaae97b58c1a1b32e",
+        "theta": "1/6"
+      },
+      {
+        "core_depth": 1,
+        "feature_id": "493c275f5783627d2a3dd966cbff142b990e5c44d6747609826f4bb7fe0e8c49",
+        "theta": "1/3"
+      },
+      {
+        "core_depth": 1,
+        "feature_id": "f024ff14b0a99ea5ed5a9968ea0bd4337df9a48aa635f9589295fab27169aca3",
+        "theta": "1/2"
+      },
+      {
+        "core_depth": 2,
+        "feature_id": "b4bafdc3934c612e2dcf1d2fa990f1d08cb718f6d9ed5eb5f3e8c5d62c50a62e",
+        "theta": "1/6"
+      },
+      {
+        "core_depth": 2,
+        "feature_id": "7dc515f4f7068686bfcf8f7fca35d086af7c443af24faacbddfe2d3ed27d8ba4",
+        "theta": "1/3"
+      },
+      {
+        "core_depth": 2,
+        "feature_id": "6d489edb5972eb8b0da98a86018c635f2f7a1662f1c869fe8fe2b6602e649215",
+        "theta": "1/2"
+      },
+      {
+        "core_depth": 3,
+        "feature_id": "f23f09ce2e61c8dd1d326c115e40aa5e7ff1a846c06770e8d620f6d4dfbcf9d5",
+        "theta": "1/6"
+      },
+      {
+        "core_depth": 3,
+        "feature_id": "95e3d4b4dd53a578847447b4aa825bf7c91c16957f1f39cb82f3258c1dcc5991",
+        "theta": "1/3"
+      },
+      {
+        "core_depth": 3,
+        "feature_id": "adb213668a313ea06c0cf4a70d96b6f0ab196a7daaf2bd26f0d308682ab56b9d",
+        "theta": "1/2"
+      },
+      {
+        "core_depth": 5,
+        "feature_id": "567c614fa2a599dbe2c749741a02885234492e241bb24deff8692d28f1353395",
+        "theta": "1/6"
+      },
+      {
+        "core_depth": 5,
+        "feature_id": "2764fce612571af2d4dd5d40876659e815fddf09c07f31128d404ccd4d826033",
+        "theta": "1/3"
+      },
+      {
+        "core_depth": 5,
+        "feature_id": "8db8d2d272d400ff60cc68eaf8f4c8c599ad517814a536c271b11ae40e404204",
+        "theta": "1/2"
+      }
+    ],
+    "global_bound_proved": false,
+    "groups": "each core_depth, each theta, all",
+    "leading_G_coefficient": "1",
+    "max_exact_iterations": 512,
+    "objective": "sum training normalized complete corrected energies plus ridge sum signed weights squared",
+    "quantization_denominator": 64,
+    "ridges": [
+      "1/1024",
+      "1/64",
+      "1"
+    ],
+    "singleton_weights": [
+      "-4",
+      "-1",
+      "-1/4",
+      "1/4",
+      "1",
+      "4"
+    ]
+  },
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "provenance": {
+    "complete_actual_prime_source": true,
+    "global_bound_proved": false,
+    "historical_coefficient_overlap": true,
+    "prior_verifications": {
+      "factor-region-results/pilot-001/verification.json": "a5ffe7e901f2015c951d760748a9bcdc3ca55fd906a932479caca73c9a5e26e5"
+    },
+    "supplied_bias": "actual target choices; smallest-prime/core counterterms; uniform correction theorem; fixed feature grid, ridge groups and penalties supplied before scores",
+    "unseen_prime_holdout": false
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "scipy": "1.15.3"
+  },
+  "schema": 1,
+  "selection_groups": [
+    "baseline",
+    "all",
+    "singleton",
+    "ridge_fit"
+  ],
+  "selection_rank": [
+    "missing_direct_observations_plus_missing_constants",
+    "direct_validation_failures",
+    "sum_direct_validation_energy",
+    "max_direct_training_constant",
+    "absolute_correction_weight_l1",
+    "term_count",
+    "program_id"
+  ],
+  "targets": [
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        }
+      ],
+      "l": 0,
+      "r": 1
+    },
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        }
+      ],
+      "l": 1,
+      "r": 1
+    },
+    {
+      "filter": [
+        {
+          "divisor": 1,
+          "weight": "1"
+        },
+        {
+          "divisor": 6,
+          "weight": "-11/4"
+        }
+      ],
+      "l": 1,
+      "r": 1
+    }
+  ],
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "validation_scales": [
+    12288,
+    16384,
+    24576
+  ],
+  "version": "critical-core-v1"
+}

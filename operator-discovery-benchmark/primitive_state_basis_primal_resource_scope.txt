@@ -1,0 +1,46 @@
+One newly frozen primal numerical trial uses the complete, independently
+saved original equality-row basis from probe002. Publication014 records the
+old transport failure and leaves its equation admission UNKNOWN. This NEW
+worker independently replays the complete saved exact projection and basis
+tapes against freshly rebuilt sources before authorizing any numerical solve. It selects
+779 original equations from all5641, then divides each selected augmented row
+by its exact positive infinity norm. All1957 original variable coordinates,
+1597 scalar sign constraints, three full15 PSD matrices, and the original
+objective are retained. K itself remains PSD; the physical storage matrix
+R=e_prefix e_prefix^T+K is derived, with prefix index1. Substituting R PSD for
+K PSD would change the cone and is forbidden by this protocol.
+
+Direct Clarabel assembly uses Zero779, Nonnegative1597, and three PSDTriangle15
+cones. Its svec map is column-major upper triangle with sqrt(2) offdiagonal
+scaling, mapped from original row-major upper-triangle coordinates. Every
+native x coordinate is exported unchanged, including negative failed iterates.
+No CVXPY attribute projection or inversion is used. The canonical coefficient
+map, original equations, raw coordinate identity, and diagnostic residuals are
+independently rebuilt; floating PSD metrics and solver status never admit proof.
+
+The user previously authorized longer runtime and necessary memory. This job
+uses one worker and one numerical thread, a3GiB address-space limit and3GiB
+total allowance,900 cooperative seconds including source construction, and
+1800 external seconds. The450-million exact charged-work ceiling includes
+source compilation, a conservative20-million row preparation reserve, bounded
+projection/basis replay allowances of50/125million operations plus serialized
+receipt/source-cell overhead, a conservative50-million native producer
+allocation, and bounded
+independent replay. Floating native iterations are bounded by elapsed/memory
+limits, not represented as exact rational operation counts. Producer diagnostic
+counts are archived; their full allocation remains reserved unless separately
+validated. Independent replay reserves include trace bytes and source cells.
+
+The worker verifies publication014 and retained probe002 evidence bindings,
+selected candidate indices, original source/target hashes, and full geometry.
+It independently replays exact saved transcripts to obtain NEW equation
+authorization. It does not rerun the producer elimination. The whole-stage auditor independently replays the licensed
+basis and rebuilds original arithmetic before checking the numerical trace.
+Trace/checkpoint artifacts are bounded at8MiB, native logs at1MiB with explicit
+truncation counts, and phase/job metadata at64KiB. Failure preserves available
+native logs, last finite raw vector, and durable diagnostic checkpoints.
+
+No exact candidate correction, support refit, parameter variant, certificate
+admission, or arithmetic feasibility/infeasibility claim occurs in this trial.
+Any useful numerical vector requires a separate exact reconstruction against
+all5641 original equations, every scalar sign, and all three PSD matrices.

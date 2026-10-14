@@ -1,0 +1,308 @@
+COMPLETE PRIME-ORBIT REDUCTIONS OF JOINED CUTOFF WORK
+
+Status: exact arithmetic grouping and some unconditional component payments;
+the complete uniform signed-work estimate remains OPEN. This new memo reads
+the current cutoff-work and arithmetic-grouping handoffs, the authoritative
+obligation, and divisor_dual_proof.txt. No source observation, test, numerical
+experiment, hash, or change to an earlier file was made.
+
+1. Target and domain
+
+For each integer q>=2 let w_1(q),w_2(q) be the COMPLETE old-height integrals
+W_1,W_2 in candidate10_cutoff_work_obligation.json, with the exact actual old
+state at cutoff q-1, its analytic residues, and all scalar and mode crosses.
+Write
+ R(q)=mu(q)w_1(q)+mu(q)^2 w_2(q),
+ S(V)=sum_(2<=q<=V)R(q).
+The required leaf is S(V)<=C V^beta, EVERY integer V>=1, beta=12/5.
+Set w_1(1)=w_2(1)=R(1)=0 only to extend this finite event sum. This does not
+erase the original cutoff-energy base or the arithmetic unit. Review024 has
+already paid the zero-sign work and the complete CHILD height shells, and
+proves recovery from this one-sided all-prefix bound. Neither w_j is positive
+or independent of mu(q). In particular mu(q)^2 w_2(q) is not an unsigned square.
+
+All prime statements below use actual mu. Repeated-prime valuations have
+mu(q)=mu(q)^2=0 and therefore zero EVENT weight, but their previous-state,
+finite-head, prime-power, and source-mode contributions inside w_j remain.
+Replacing that previous state by a squarefree-only source is forbidden.
+
+2. Exact one-prime identity, with the whole exit
+
+Fix a prime p. Every squarefree q is uniquely r or pr with p not dividing r.
+The local identities mu(pr)=-mu(r), mu(pr)^2=mu(r)^2 then give
+ S(V)=sum_(p not dividing r, r<=V/p)
+       {mu(r)[w_1(r)-w_1(pr)]+mu(r)^2[w_2(r)+w_2(pr)]}
+      +sum_(p not dividing r, V/p<r<=V)R(r).             (2.1)
+This includes r=1 with its zero event weight. Non-squarefree r contributes zero.
+There is no contribution from p^2r events, because their two source factors
+are exactly zero. The floor V/p is used in integer implementations. The last
+sum is a FULL signed exit; it is not a negligible count or a paid energy shell.
+
+Thus an odd difference is accompanied by an even SUM. Neither prime insertion
+nor absolute values turn the latter into a difference. An exact or estimated
+coupling between the two sectors must be proved separately. Pairing primes
+with the unit yields R(p) itself, not a cancellation with a missing unit event.
+
+3. Squarefree cubes and incomplete faces
+
+For a finite distinct prime set P let Q=product_(p in P)p and T_p w(r)=w(pr).
+The unique decomposition q=rd, gcd(r,Q)=1, d dividing Q, gives
+ S(V)=sum_(r<=V,gcd(r,Q)=1)
+  {mu(r) sum_(d|Q,rd<=V)mu(d)w_1(rd)
+   +mu(r)^2 sum_(d|Q,rd<=V)w_2(rd)}.                    (3.1)
+For r<=V/Q the cube is complete and its two inner operators are
+ product_(p in P)(I-T_p)w_1(r),
+ product_(p in P)(I+T_p)w_2(r).                         (3.2)
+For r>V/Q the truncated face in (3.1) is retained literally. Equivalently
+apply (3.2) to w_j(q)1_(q<=V) extended by zero; its cutoff discontinuities are
+then part of the differences. Do not evaluate unrequested q>V and subtract
+an estimated outside tail in place of those exact faces.
+
+Every composite event is represented once. Iterating separate prime pairings
+without this unique decomposition may overcount it. If P=P(V), Q and the
+number of faces enter the certificate. When Q>V there are no complete cubes:
+ALL of (3.1) is truncated-face work. Calling it a boundary does not make it
+small. A growing set can be legitimate, but the uniform cost must be proved;
+a constant depending on a growing P is not a uniform C.
+
+4. General fractional orbit covers: capacity is part of the theorem
+
+A detector need not use complete cubes. Consider edges (r,pr) within [1,V],
+with p prime, p not dividing r, and nonnegative rational weights lambda_e.
+If each nonunit vertex has total incident weight at most one, then exactly
+ S(V)=sum_edges lambda_e [R(r)+R(pr)]
+      +sum_(n=2)^V [1-sum_(e incident n)lambda_e]R(n).    (4.1)
+An edge touching the unit uses R(1)=0. Unit multiplicity can be omitted or
+carried explicitly because this EVENT value is zero, but supplies no free
+signed cancellation. Every other multiplicity and unmatched residual remains.
+Each paired edge has precisely the odd/even form in (2.1). This rule permits
+bounded-congestion growing-prime matchings or scale-dependent orbit covers
+without requiring each complete cube. It does not prove their edge sums or
+the residual. Taking absolute values only after the pairing is an additional,
+usually stronger, majorant premise with its own analytic gates.
+
+5. Freeze kernel versus ACTUAL state variation
+
+The work is not a fixed function of q alone. Write its compiled polynomial
+integral as Phi_j(q;Z;h), where Z=(A,c,E,D) is the entire old cutoff state,
+D is the deterministic finite head, and h is the integration-height endpoint.
+For q=r, Z=Z_(r-1), h=h_r=H_(r-1). For q=pr these are Z_(pr-1),h_(pr).
+For r>=2 the exact difference is
+ w_j(pr)-w_j(r)=K_j(r,p)+T_j(r,p)+B_j(r,p),              (5.1)
+ K_j=Phi_j(pr;Z_(r-1);h_r)-Phi_j(r;Z_(r-1);h_r),
+ T_j=Phi_j(pr;Z_(pr-1);h_r)-Phi_j(pr;Z_(r-1);h_r),
+ B_j=Phi_j(pr;Z_(pr-1);h_(pr))-Phi_j(pr;Z_(pr-1);h_r).
+Frozen states at a virtual q are algebraic inputs to the SAME full polynomial;
+they are not falsely declared to be an actual source prefix. The r=1 edge is
+treated by its exact event formula, not by an undefined H_0.
+
+The paired interior work becomes
+ -mu(r)[K_1+T_1+B_1]
+ +mu(r)^2[2w_2(r)+K_2+T_2+B_2].                        (5.2)
+This explicitly exposes three distinct tasks: finite kernel differences;
+signed actual cutoff-state variations; and height variations. The even base
+2w_2(r) survives. A smooth-kernel calculation pays neither that base nor the
+cutoff-state term by naming them variations.
+
+The complete state variation is itself a compilable arithmetic polynomial.
+For r>=2 define
+ D_shell(s)=sum_(r<=n<pr)mu(n)n^-s, dc=D_shell(1),
+ Q_shell=dc delta-D_shell,
+ A_(pr-1)=A_(r-1)+D_shell,
+ c_(pr-1)=c_(r-1)+dc,
+ E_(pr-1)=E_(r-1)+zeta(s)Q_shell,
+ D_(pr-1)=D_(r-1)+sum_(r<=n<pr)n^-s.                   (5.3)
+The notation D_shell(1) here means series evaluation, not the unit coefficient.
+Q_shell(1)=0 removes the pole at 1 before any expansion is estimated. The shell
+INCLUDES n=r and EXCLUDES n=pr. It is a multiplicative annulus of length
+(p-1)r, not automatically a short additive interval. Its deterministic head
+sum includes every integer, including repeated-prime numbers. Expand (5.3)
+into T_j with all mixed shell/old-state terms; do not center its factors
+separately and drop the opposite drifts.
+
+6. A further UNCONDITIONAL payment: height variation of work
+
+B_j is an indefinite work shell, not the positive energy shell of Review024.
+Nevertheless it can be paid without the target, by exact virtual polarization.
+For the full corrected transition at cutoff q let F_0,F_+,F_- be the three
+series obtained by assigning the new coefficient mu(q)=0,+1,-1, with the OLD
+state fixed and EVERY head and analytic-residue update retained. Pointwise,
+ W_1=(|F_+|^2-|F_-|^2)/2,
+ W_2=(|F_+|^2+|F_-|^2)/2-|F_0|^2.                     (6.1)
+The common measure is dt/(2pi |s|^2). Therefore the absolute integral of each
+W_j over any interval is bounded by a fixed positive sum of these branch
+energies. The virtual coefficients still satisfy |a_n|<=1, have finite support
+through q, and their c=A(1) has |c|<=2+1/q<=5/2. Thus the raw moment provider's
+coefficient majorants change by fixed constants only, and its pole-removal
+hypothesis is still satisfied. Their finite corrected heads have full norm
+O(q^11/10), irrespective of the actual head identity at that virtual coefficient.
+
+For fixed p, the constant-factor length extension from Review022 applied at
+h_r=2(r-1)^(45/2) proves
+ |B_1(r,p)|+|B_2(r,p)|<=C_p r^11/10.                    (6.2)
+The raw tails are O_p(r^-1/16); the larger displayed cost pays the complete
+finite heads. All small r are covered by uniform fixed constants; the r=1
+term is a separate finite base. Summation gives O_p(V^21/10), below beta=12/5.
+This is a genuine paid component of (5.2), not an arithmetic sign estimate.
+
+There is a UNIFORM growing-prime version for 0<=lambda<1/8 and p<=r^lambda,
+r>=2. Choose kappa' strictly between 5(1+lambda)/(45/2) and 1/4. The maximum
+virtual polynomial length q^5<=r^[5(1+lambda)] then meets the inherited
+short-polynomial provider at h_r, with a fixed-factor finite-head extension.
+For branch index j, its raw tail has exponent
+ (2+j)(1+lambda)(1-2sigma)+(45/2)(d_j+epsilon),
+with sigma=9/20, epsilon=1/120 and the d_j of Review020. The maximum is
+ -1/16+lambda/2<0, from j=3; j=0 and j=1 are retained. The complete virtual
+head bound instead gives
+ |B_1|+|B_2|<=C_lambda r^[11(1+lambda)/10].               (6.3)
+For edge covers of bounded weighted multiplicity at each parent, its total
+cost is O(V^[21/10+11lambda/10]), still strictly below 12/5. This applies to
+the weighted edges in (4.1), or a certified comparable cover; it is not a
+free estimate for every edge of a many-prime cube. All p outside the length
+condition, unit edges, unmatched vertices and truncated faces stay in the
+remaining exact obligation. lambda=0 allows no prime p<=1 but states the
+continuous cost boundary; fixed p is separately covered by (6.2).
+
+7. Exact kernel signatures and why smoothness is not an exponent gain
+
+With a fixed old state and fixed height, expand the scalar work integrand in
+ a=q^-1, b=q^-s, conjugate(b). A monomial a^j b^k conjugate(b)^l is
+ q^-Omega exp(-i nu t log q),
+ Omega=j+(k+l)sigma, nu=k-l.                             (7.1)
+The compiler can derive these signatures exactly; coefficients retain their
+zeta factors and old-state dependence. A prime difference multiplies this
+pure kernel by
+ 1-p^-Omega exp(-i nu t log p),                          (7.2)
+and a cube gives the product of those factors. The even-sum kernel instead
+has plus signs. A fixed finite P changes a constant, not the q exponent.
+Only Omega=nu=0 is identically annihilated by an odd difference. Any actual
+annihilation must be checked in the complete polynomial, not in one term
+whose old-state coefficient changes with q.
+
+For a pure phase on a cone cos(nu t log p)>=delta>0,
+ |1-p^-Omega exp(-i nu t log p)|^2
+ <=1+p^-2Omega-2delta p^-Omega.
+If p^-Omega<=delta this is <=1-delta p^-Omega, a genuine pure-kernel
+contraction on that domain. Outside the cone it need not be <=1. For example
+the fundamental difference 1-p^-s has squared modulus
+ 1+p^-2sigma-2p^-sigma cos(t log p),
+which exceeds one on many heights. The complete low integral includes all
+heights through H_V, not just a common zero-frequency rectangle.
+
+A phase-restricted certificate must recover its complement, the even sector,
+state drift and exits. A weighted difference I-c_p T_p that cancels a chosen
+monomial changes the target: the exact residual (c_p-1)T_p must be restored.
+There is no automatic arithmetic L2 credit from a pure-dilation multiplier
+while the p-free projections and changing states are ignored.
+
+8. An actual-source scalar primitive for eligible frozen sectors
+
+There is a small but rigorous arithmetic rule beyond generic signs. Define
+ c_P(V)=sum_(r<=V,gcd(r,Q)=1)mu(r)/r.
+For one prime, the exact local inverse gives
+ c_{p-free}(V)=sum_(k>=0,p^k<=V)p^-k c_floor(V/p^k).
+Iterating gives the analogous P-smooth sum, hence
+ |c_P(V)|<=B_P=2 product_(p in P)(1-1/p)^-1.             (8.1)
+Repeated valuations in this inversion are all retained; this is not a
+squarefree truncation of the smoothing inverse. For fixed P the constant
+is uniform in V. For growing P its product is an explicit additional cost.
+
+By Abel, for Omega real and frequency omega,
+ |sum_(r<=V,gcd(r,Q)=1)mu(r)r^-Omega exp(-i omega log r)|
+ <=B_P[V^(1-Omega)+|1-Omega-i omega| integral_1^V x^-Omega dx]. (8.2)
+For omega=0 and Omega>=1 this is <=B_P; for Omega<1 it is <=2B_P V^(1-Omega).
+For Omega=1 and nonzero omega the safe bound is B_P[1+|omega|log V].
+The corresponding even sum is bounded absolutely by sum_(r<=V)r^-Omega:
+bounded for Omega>1, logarithmic at 1, and a power below 1.
+
+These rules pay eligible scalar, state-independent frozen sectors. They do
+not apply unchanged to a coefficient depending on Z_(r-1). Its variation
+must enter Abel explicitly, and omega=nu t can grow to H_V. A finite coefficient
+polynomial or a phase cone cannot silently remove that growth or the zeta
+weight. This is a useful typed compiler primitive, not a bound for all T_j.
+
+9. Rejection gates, carefully scoped
+
+(a) Generic even cancellation is false, even for actual mu. Take arbitrary
+smooth weights w_1(q)=0,w_2(q)=q^2. For V>=1024 the number of squarefree integers
+in (V/2,V] is at least V/16: nonsquarefree ones are at most
+ (V/2)sum_(k>=2)k^-2+sqrt V <=3V/8+sqrt V,
+and allow one extra integer endpoint. Here sum_(k>=2)k^-2<=3/4 follows from
+1/4+integral_2^infinity x^-2 dx. Thus S(V)>=V^3/64. No complete prime cube or
+smooth finite difference yields O(V^12/5) for this class. This refutes a generic
+orbit theorem with no coupled-work premise; these are NOT the actual w_j.
+
+(b) Finite-prime identities alone are insufficient arithmetic information.
+For fixed P define h_P(n)=mu(n_P) if n is squarefree, and zero otherwise,
+where n_P is its part supported in P. This normalized three-valued source
+satisfies h_P(pr)=-h_P(r), h_P(pr)^2=h_P(r)^2 for every p in P, p not dividing r,
+and every repeated valuation is zero. It also satisfies every complete divisor
+zero row whose index is divisible by a prime in P. Yet an elementary squarefree
+sieve gives
+ sum_(n<=x)h_P(n)=c_P^* x+O_P(sqrt x),
+ c_P^*=(1/zeta(2)) product_(p in P)(p-1)/(p+1)>0.        (9.1)
+Proof: uniquely write n=dr, d|Q, gcd(r,Q)=1, and count coprime squarefree r by
+sum_(k^2|r)mu(k), using inclusion-exclusion for gcd. Their density is
+(1/zeta(2))product p/(p+1); summing mu(d)/d supplies product(1-1/p).
+The floor and tail errors are O_P(sqrt x).
+This extends the fixed-prime diagnostic in divisor_dual_proof.txt while
+retaining squarefree support. It does NOT satisfy the actual bounded-harmonic-
+sum hypothesis: its harmonic sum grows like c_P^* log x. Therefore (9.1) is
+only an obstruction to rules using those finite-prime identities ALONE, not
+a countermodel to their conjunction with every established source premise.
+Review021/022 supply a different bounded-harmonic generic obstruction; one
+must not pretend that two separate counterexamples prove their intersection.
+
+(c) Old fresh-prime/semiprime grouping refutations cannot be copied here.
+Unlike the coefficient f(p), w_j(p) depends on A_(p-1) and the whole height
+integral. No proved fixed-sign fresh-prime asymptote for R(p) has been supplied.
+A planner must derive such an asymptote from the COMPLETE work before using
+a frontier positivity gate. The exit is nevertheless mandatory.
+
+(d) A divisor-zero Gram injection is an exact equality only for COMPLETE
+divisor rows. A shell [r,pr) picks partial rows; its missing divisors must be
+restored. As divisor_dual_proof.txt shows, full nonunit Gram domination can
+re-express the same signed bound on its null vector, rather than create it.
+Finite selected rows, phase gains or a fitted PSD matrix are not global proof.
+
+10. Concrete remaining arithmetic interface and recovery
+
+For a fixed prime, or an admitted weighted growing-prime cover, (5.2) and
+sections 2-4 turn the original leaf into an exact JOIN of:
+ frozen kernel differences K_j;
+ actual shell-state variations T_j from (5.3), including every old/shell cross;
+ the even base 2w_2(r);
+ all unmatched vertices, prime-free exits, unit cases, and incomplete faces.
+The height terms B_j are uniformly paid under section 6's explicit gates.
+It is sufficient to prove a ONE-SIDED O(V^12/5) bound for this remaining JOIN,
+with all-prefix coverage and one constant independent of V. The known height,
+zero-sign and full-head payments then compose through Review024 to the low
+goal. Taking absolute values of every remaining term is optional and stronger.
+
+This is executable beyond a bare relabeling: expand each T_j in the finite
+shell sums D_shell,dc,Q_shell and the deterministic head shell; retain actual
+mu(r) and every tuple mu(n_1)...mu(n_k), with r<=n_i<pr and all previous-prefix
+indices explicit. Reduce repeated source factors by mu^3=mu, but keep their
+gcd, repeated-prime and composite sectors. The resulting intermediate leaf is
+a weighted multiplicative-annulus correlation, coupled to the even base and
+exit, with fixed polynomial/range semantics. A detector can enumerate prime
+covers, freeze choices, complete-divisor zero insertions, and polynomial
+potentials, then compare their theorem costs or emit these concrete signed
+correlations. No unproved orthogonality, independence or current-scale target
+is used to pay the height sector.
+
+One can also enumerate the unique largest-prime exposure
+ S(V)=sum_(r squarefree)mu(r)^2
+       sum_(p>Pplus(r),p<=V/r)[-mu(r)w_1(pr)+w_2(pr)],
+Pplus(1)=1. This preserves every event once, but is not itself a gain. Pairing
+such children with r requires an explicit capacity/compensation rule as in
+(4.1); otherwise r is used repeatedly. Any proposed new source-specific
+correlation estimate must account for that recovery cost.
+
+No bound for the remaining joined multiplicative-annulus correlation has been
+proved here. The scalar free-harmonic rule and work-height payment are genuine
+unconditional components; the even base, state variation and frontier remain
+the actual forcing. Generic prime identities, a pure kernel contraction, or
+the failure of an unsigned template neither proves nor disproves that bound.
+The full original signed core stays priority zero, and global/RH flags remain
+false. This memo is final and stable; edits have stopped.

@@ -1,0 +1,14 @@
+Independent q-uniform constrained-cone review
+
+For every integer q>=1 and rational C>=0, the same exact separator excludes a shared certificate in the fixed extended zero-cubic cone on scales [1,2,3,5].
+
+Symbolic inspection: q enters the baseline polynomial builder only through the lhs scalar C X^2 ceil(X^(1/q)) and the first constant-square scalar X^2 ceil(X^(1/q)). The extended growing-prime root orders 2 and 3 belong to fixed descriptors and do not depend on q. All remaining square/relation groups and the zero-cubic auxiliary are independent of q and C. Thus changes affect only constant coordinates, apart from metadata. All five instance constant dual coordinates vanish. Every column dot and the lhs dot -1 therefore remain unchanged for arbitrary q and C, even if structural weights are selected anew for each pair. This includes all cofinal q>1 schedules.
+
+This excludes the declared fixed dictionary/shared-weight/zero-cubic cone, not actual arithmetic bounds, RH, different dictionaries, or removal of the auxiliary constraint. The universal argument is structural, not an extrapolation from numerical q checks. Exact independent regeneration also checked q=1,2,3,6,17,100 at C=0. An attempted huge-q development check was interrupted because the frozen independent root evaluator directly materializes powers; this resource limitation does not affect the symbolic argument or the pilot q grid. Frozen sources were unchanged.
+
+Bindings:
+grouped_arithmetic_templates.py 9869beef394818011885fa34521467b86ccb530d3c8bcca654906ccaed4f2b8b
+cancellation_arithmetic_templates.py c06877b9b03c18bd7e4965c71632f9899680a06641d0ac0781a4e0b32da2c456
+check_grouped_arithmetic_run.py c4dc5d1446f2f212286203974792230f5cc86a1ea9c2becba2b4c43777d6661f
+check_cancellation_arithmetic_run.py b23c0f244dfaa7d3cc1907366c4aa9853ca76c7fdcc08adc14a4d1f113f5e6ef
+check_grouped_arithmetic.py 760a314582791520854c1634f69504594c532dc2d726537da165bba9beec0b3e

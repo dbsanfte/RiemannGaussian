@@ -1,0 +1,51 @@
+INDEPENDENT ANALYTICAL REVIEW: EVEN SMALL-PRIME/SMALL-CORE ASYMPTOTIC
+
+Proof file: factor_region_even_prime_core_posthoc_proof.txt
+Proof SHA256: e7b13832f856988c1210674b99889701d9a53c3fecff1bf93c3ea4fd29629c7d
+Frozen queue: factor-region-results/pilot-001/proof_queue.json
+Queue SHA256: de2ddd26aec62f4d0dbef1915db809a8ecf09965250a5e6c87fffd401c7ff247
+
+Scope and conclusion.
+This is an independent analytical audit of the exact proof text bound above. It is not a formal machine-checked proof, an independently reproved PNT, a numerical proof, or a proof of RH. No frozen source or original review collection is edited. The stated actual-c asymptotic and its specified potential-innovation refutation are justified by the supplied argument plus the unconditional prime number theorem. The proof has existential sufficiently-large thresholds; it supplies NO explicit numerical threshold for the asymptotic rejection. The earlier4096 prime-singleton theorem is different and must not be reused as this theorem's threshold.
+
+Imported result checked: pi(t)~t/log t, stated as equation27.2.3 at https://dlmf.nist.gov/27.2.E3, with its unconditional status explained in that section; related reference https://dlmf.nist.gov/27.12. Ordinary PNT gives eventual pi(t)<=Ct/log t and uniform relative error for ALL real arguments t above a growing lower endpoint. No RH, prime-pair conjecture or uniform short-interval prime theorem is imported.
+
+1. Exact domain and local coefficients.
+Actual c=mu*lambda has c(p^e)=2(-1)^e for all e>=1. A source m with positive even least-prime valuation has unique form p^e*b, P^-(b)>p, and c(m)=2c(b). For e2 and prime core q>p it is exactly -4. The source constraints are p<=floor(X^theta), theta>=1/3 fixed, and b<=floor sqrtX, independent of the prefix argument y=vX. All other source classes are retained and bounded absolutely; there is no discarded signed residual.
+
+2. Absolute error partition.
+Let H=log X, L=X^(1/4)/H^8, U=X^(1/4)H and v in a fixed compact interval[a,b] with a>0. The tuple envelope sum_(n<=t)|c(n)|<=t(1+log t) follows from |c|<=d2. For p<L, counting all O(H) possible even exponents and all cores<=sqrtX gives O(L*H*sqrtX*H)=O(X^(3/4)/H^6), uniformly in v. This is negligible relative to X^(3/4)/H^2 and requires no prime estimate.
+
+For p>=L and e>=4, the core is at most bX/L^4=bH^32, while p<=O(X^(1/4)). Counting all integer p, all O(H) exponents and the tuple envelope gives O(X^(1/4)H^33(1+log H)), also negligible. For e2, unit cores contribute O(sqrtX).
+
+For p>=L, a nonunit composite core<=sqrtX has at most two prime factors counted with multiplicity, because L^3>sqrtX eventually. Write it q1*q2, both greater than p. The full product condition p^2*q1*q2<=bX forces p<=O(X^(1/4)). Thus there are O(X^(1/4)/H) possible prime p. Dropping the least-prime condition only for an upper bound, candidate cores are bounded by sum_(L<q<=sqrtX/L)pi(sqrtX/q). PNT bounds this by O(sqrtX/H) times the prime reciprocal sum over that narrow interval. Partial summation gives the reciprocal sum O(log H/H): the logarithms of the endpoints are H/4±8log H, the log-ratio is O(log H/H), and endpoint terms are O(1/H). The aggregate composite-core contribution is therefore O(X^(3/4)log H/H^3), including repeated prime cores. The factor2 from c(p^2) only changes an implicit constant. No sign cancellation is assumed in these errors.
+
+For prime cores with p>U, existence requires q>p and p^3<vX. The allowable q bound is Y_p=min(sqrtX,vX/p^2)>=p whenever the interval is nonempty. PNT therefore bounds its count by O(X/(p^2 H)). Partial summation gives sum_(p>U)p^(-2)=O(1/(U log U)), leading to O(X^(3/4)/H^3). The cutoff p<=X^theta loses only this negligible upper tail, since U<X^(1/3)<=X^theta eventually.
+
+3. Central main term and actual uniformity.
+For L<=p<=U, Y_p has log Y_p=H/2+O(log H) uniformly for v in[a,b], and Y_p>p eventually throughout the window. The exact prime-core count is sum(pi(Y_p)-pi(p)). The subtraction is at most pi(U)^2=O(X^(1/2)H^2), negligible. Uniform PNT yields pi(Y_p)=(2/H)(1+o(1))min(sqrtX,vX/p^2).
+
+The second PNT use is cumulative, NOT short-interval: pi(t)=(4t/H)(1+o(1)) uniformly on[L,U]. For f_v(t)=min(sqrtX,vX/t^2), let the relative cumulative error be delta_X->0. Stieltjes integration by parts bounds the error by O(delta_X/H) times
+ U*f_v(U)+L*f_v(L)+integral_L^U t*|df_v(t)|=O(X^(3/4)),
+uniformly in v. This proves sum f_v(p)=(4/H)integral_L^U f_v(t)dt+o(X^(3/4)/H); no differentiability assumption on the prime counting function is made.
+
+The integral over(0,infinity) equals2sqrt(v)X^(3/4). The omitted lower/upper integrals are O(X^(3/4)/H^8) and O(X^(3/4)/H), respectively. Floors contribute only O(1) per prime before the harmless logarithmic factor. Hence the exact prime-core count is (16sqrt(v)+o(1))X^(3/4)/H^2, uniformly. Its coefficient -4 and all preceding absolute errors give
+ F_X(vX)=(-64sqrt(v)+o(1))X^(3/4)/H^2.
+
+4. Fixed parent cutoffs and full energy.
+Every filter event d*m uses the SAME parent-block source cutoffs, rather than cutoffs recomputed at n/d. Consequently a fixed divisor contributes sqrt(v/d), and the multiplier is P(1/2)=sum w_d/sqrt d, NOT P(3/4). Uniformity holds on a compact interval containing all v/d for the finite fixed filter. Squaring the complete filtered S2 prefix and summing the full integer block produces
+ X^(-2)sum_(X<=n<2X)S2(n)^2=(6144P(1/2)^2+o(1))X^(1/2)/(log X)^4.
+This is the actual signed component square, not its unsigned event energy or a diagonal approximation. Child-block cutoffs change with the child X, but the same asymptotic independently applies at each block. No equality of parent/child class membership is assumed.
+
+5. Candidate membership checked against the exact frozen queue.
+095660153d4af9100747438e1df37b5fc0a6e305050a18efeebcb2f61192e53f:
+ actual target r=l=1; fixed filter1-(11/4)D6; theta1/3,phi1/2; singleton vector[0,0,1,0,0,0,0,0,0]. It appears with positive weight4/17 and eta0 (feature92cb6b4d083a1e7ab91f2249186e695f491349d41cf501b0c8cd1414184ed107), and with positive weight64/57 and eta1/3 (feature1034073c7955763faa18dc79e4c6acdf20b99f34503327a3dc081399de01d3ed). P(1/2)=1-11/(4sqrt6) is nonzero exactly: equality would require121=96. Either selected singleton alone supplies an obstruction; eta0 is stronger. All other exact outside weights are nonnegative.
+
+65c76f5dec44e02fc7f1400e381cf4d390075e0009435c1c89c8791f03c88369:
+ actual target r=l=1; unfiltered divisor1/weight1; theta1/2,phi1/2; the same singleton vector with positive weight63/61 and eta1/3 (featurec96e8353b2198366bd0bfe1c7866574e130648b2746450e93e17091290fbdd94). P(1/2)=1. All other exact outside weights are nonnegative.
+
+For eta<1/2, a positive outside weight gives W=E+V>=V>=c*X^(1/2-eta)/(log X)^4 at every sufficiently large dyadic X, with some c>0. The ORIGINAL cofinal innovation premise would telescope to W(X)=O_q(X^(1/q)), with finite Cq and finite W(1). Choose an integer q>=q0 with1/q<1/2-eta. Powers dominate logarithms, so the lower bound contradicts that upper bound along dyadic X. Unknown q0 and arbitrary finite Cq do not evade this argument. The contradiction also applies to an eventual-scale innovation premise after its finite starting block is charged.
+
+This is a global refutation of these specified FULL POTENTIAL-INNOVATION claims using a proved asymptotic theorem. It is not a refutation of their direct critical target energy, any actual Möbius/Riemann-hypothesis assertion, or a proof of RH. It does not apply to arbitrary signed component contrasts, theta<1/3, phi!=1/2, eta>=1/2, moving filters, or filters with P(1/2)=0. Frozen batch reviews remain unchanged; any promotion belongs in a separately hash-bound domain adjudication.
+
+Machine metadata for interpretation: formal_machine_checked_proof=false; actual_all_scale_signed_bound_proved=false; RH_proved=false; numerical_threshold_explicit=false; imported_unconditional_PNT=true. The runtime checker may verify feature/domain membership and these hashes, but does not thereby formally verify the asymptotic argument or PNT.

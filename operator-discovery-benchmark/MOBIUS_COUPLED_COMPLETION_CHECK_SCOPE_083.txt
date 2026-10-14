@@ -1,0 +1,140 @@
+Independent full-squarefree coupled-divisor checker083 scope
+
+Owned source check_mobius_coupled_completion_083.py; focused tests
+ test_check_mobius_coupled_completion_083.py; receipt
+ mobius_coupled_completion_checker_083_development.json.
+20 distinct tests,40 executions,39 passed and one retained failed test
+expectation. Eight attempts retained. The failed arithmetic mutation operated
+on an inactive zero cut, so certificate acceptance was correct; the fixture
+was made active and only that test reran. Later resource accounting changes
+reran only three affected resource tests. Final status PASS.
+No producer import, scientific source query, old test, hash, subagent, or
+frozen-file edit. Actual mu appears only in tiny generic test fixtures.
+
+Strict coupled-divisor-completion-v1 schema keys are schema,kernel,memory,
+rays,drift_multiplier,coupled_terms,gram_weights, plus optional strict Boolean
+prime_anchor (defaultFalse). Kernel/memory/rays/drift
+inherit the independent082 parser; the kernel is sorted normalized nonzero,
+memory1..3, ray weights positive, drift multiplier1..2. Gram source-only
+weights have memory+1 entries in[0,16]. At most128 coupled terms are admitted.
+Each term has EXACT cut,weight,theta, with theta in[-16,16].
+Cut has EXACT scale,n_exponent,u_exponent,complement,unit_balance; positive
+canonical rational scale, arbitrary SIGNED canonical rational exponents,
+strict booleans. Arbitrary denominator supported subject4096input/100000
+intermediate-power bits; there is no exponent whitelist.
+Weight has kind and mandatory arithmetic all/prime/composite. one has only
+these keys; source additionallyi in0..memory; product additionallyi,j with
+0<=i<=j<=memory; band additionallyleft,right canonical with0<=left<right<=1.
+Band condition is left*u<n<=right*u. Prime arithmetic uses a complete
+independent Eratosthenes prime sieve. Composite means n>1 and nonprime.
+The unit receives only the all arithmetic mask, never prime or composite.
+
+APIs parse_program,build_model,corrected_matrix,verify_certificate,
+verify_price_dual; meter argument optional. Mathematical build_model raises
+on invalid/resource inputs. It returns program,u,N,coordinates(sorted ALL
+squarefree n<=N,includingunit),squarefree_count,source features,cuts perterm
+percoordinate,weights perterm percoordinate,T,prime_count,unit_balance_columns,
+resident_bytes. Frozen independent082 squarefree-only prime-square sieve
+and source energy T are reused; no factor/sign/source-evaluator cache is used.
+Full physical coordinates are retained with no grouping or ratio extraction.
+
+N=u//minimum_divisor. f_i(n)=sum b_d1[n<=u//(2^i d)]. Fixed source binding
+to the original historical kernel remains externally required. Cut K(n)
+is min(N,floor(scale*n^eta*u^beta)), complemented toN-K if requested.
+An exponent-denominator LCM constructs a single certified integer root;
+negative powers go to the denominator. All products/powers are gated before
+large integer allocation. K may be0 and no fictitious minus-unit term is
+introduced: C_0=0; otherwiseC_K(m)=floor(K/m)-1[m=1].
+For unit_balance andN>=2,
+ D_K(m)=C_K(m)-max(K-1,0)/(N-1)*C_N(m);
+otherwiseD=C. Thus D_K(1)=0 exactly, and each D column is a genuine complete
+ordinary-mu zero identity. The SYMMETRIZED Z can still have unit cross terms
+from weight(1)*D_K(1)(m); these are retained. This is not a certificate that
+the entire unit row vanishes.
+
+Z_mn=(weight(n)D_K(n)(m)+weight(m)D_K(m)(n))/2. Independent direct rational
+entries reconstruct this half-factor, both complete units, complement cuts,
+and all source/prime/composite/band weights. The full corrected A is original
+T source quadratic+sumthetaZ+sumpositiveGram source outerproducts. Each
+coupled term evaluates to zero at ordinary mu, since its inner COMPLETE
+squarefree Mobius divisor sum is zero; positive Gram is ADDED. No positive
+cost is subtracted or dropped.
+
+verify_certificate exact keys squarefree_count,price,row_prices; each row
+price is A_gg+sum_h!=g|A_gh|, which MAY BE NEGATIVE and is NOT clamped.
+For actual squarefree coordinates mu(n)^2=1 includingunit, the FULL bound
+is trace(A)+2sum_g<h|A_gh|=sumrowprices. Every row/count and exact sum must
+match. Status VERIFIED_FINITE_COUPLED_UPPER_BOUND, complete-target/prime-edge
+retention, exact Boolean squarefree diagonals, zeroidentity/Gram flags,
+prime_count diagnostic,ops,peak_bytes. This is a finite full drift upper
+bound, not a signed growth estimate.
+
+verify_price_dual exact keys nu,lower_bound. Nu hasG(G-1)/2 entries in
+lexicographic coordinate-position g<h order and values[-2,2]. Diagonal
+dual is fixed1. L(A)=trace(A)+sum nu_gh A_gh. Thus L(A)<=Boolean price.
+Independent source/Z/Gram direct contractions compute EXACT
+ LB=L(A0)-16sum|L(Z)|+16sum min(0,L(sourceGram)).
+The supplied lower must equal LB, including negative bounds. Current theta
+and Gram coefficients are irrelevant; this bounds the best finite Boolean
+price over the complete box grammar. Status VERIFIED_FINITE_COUPLED_PRICE_
+LOWER_BOUND. It is not an actual signed drift lower bound, LP optimality,
+or uniform price obstruction.
+
+Resources: full horizon<=16384 before sieve allocation; actual squarefree
+coordinates<=4096 before any full matrix; bit-aware source/product-weight
+vector admission before accumulating arrays; full matrices and raw dual
+nu parsed rationals prospectively gated by actual common denominator,
+numerator and term counts. Persistent input/vector storage is INCLUDED
+with matrix/dual scratch, not silently replaced by the largest individual
+reservation. Meter percall4GiB/work3e11; aggregate16GiB is runner obligation.
+Invalid/mutated/resource-unadmitted ->INVALID with resource_limitTrue when
+applicable. There is no truncation or rounding-based admission.
+
+Tests independently enumerate tiny pointwise SF/source/cut/weight/Z/A/Gram
+models, direct full mu drift and zeroidentities, unitbalance andK0, complement
+andempty/N1 domains, prime/composite/unit masks, negative unclamped Boolean
+rows, half/offdiag factors and signs, exact box-dual functionals and shapes,
+parameter independence/negative lower bounds, signed fractional17/31 and
+-19/37,-1001/1000 exponents, exact root boundaries, source/arithmetic/weight/
+cut/unitbalance tampering, discriminated schema and proof flags, prospective
+huge-horizon/full-count/matrix/nu/power/work gates. All prior attempts are
+retained. Outputs ALWAYS uniform_growth/source/originalsource/RHFalse and
+source_kernel_binding_still_requiredTrue. All-scale identity is valid but
+uniform growth of the finite price remains a separate unpaid theorem.
+
+Prime anchor extension: prime_anchor=True fixes mu(1)=+1 and mu(p)=-1
+for ALL actual primes<=N, combining all known coordinates into y0=1.
+Unknown squarefree composites remain independent Boolean coordinates.
+price_matrix projects the COMPLETE corrected raw matrix by exact congruence;
+anchor/composite cross sums and negative known-block constants are retained.
+Certificate squarefree_count remains original; row_prices and dual nu use
+effective order [anchor, increasing squarefree composites]. Dual diagonal1
+lifts to known-known sign products, known-composite signed nu/2 and ordinary
+composite blocks. Raw corrected_matrix and whole-outer theorem are unchanged.
+Known unit/prime signs are structural arithmetic inputs; unknown composite
+signs and observed full source values are never used. Results explicitly
+report known_prime_signs_anchored, unknown_composite_signs_used=False and
+observed_full_source_values_used=False. Four new tests cover negative known
+blocks, complete cross/template projection, empty/unit domains, strict flag
+admission and raw-versus-effective certificate/dual shape tampering. Five
+affected defaultFalse/dual tests also passed. The effective anchor mixes raw
+outer and other known coordinates; subtracting a raw outer absolute price
+from effective full price does NOT certify the remaining kernel.
+
+Performance refinement: literal_corrected_matrix is retained as an exact test
+oracle. Public corrected_matrix independently builds integer D columns,
+contracts source/Gram in FLINT rationals, and symmetrizes complete weighted
+D matrices. Int64 scaling is used only with prospective absolute product
+bound below2^62; otherwise unbounded exact integer arithmetic is used. No
+rational denominator whitelist. Zero actual theta/weight/Gram/source terms
+are skipped without deleting any dual grammar template. Dual contractions
+use independently derived common-denominator integer lifted matrices, exact
+source bilinears and all D/weight contractions. One cut geometry is cached
+at a time, avoiding unbounded matrix retention; all allocation/work/bit gates
+remain prospective. Two new tests compare native versus literal matrices
+and every source/Z/Gram dual functional across8 varied anchor/cut/sign cases
+and arbitrarylarge denominators. Nine affected/new executions passed.
+
+Identical complete cut vectors are cached within build_model, preventing
+repeated root work for repeated source/prime/composite weights. The affected
+duplicate-cut literal-oracle test passed; attempt8 retained.

@@ -1,0 +1,204 @@
+Reversible divisor circuits: independent analytical theorem review
+
+Scope and conclusion
+Pure analytical review of the proposed family. No numerical responses, actual
+source tables, tests, hashes or frozen files are read or changed. The finite
+inverse and norm/recovery theorem is valid with the qualifications below. It
+gives a conditional all-scale moment-to-RH admission rule, not a signed moment
+bound. The family avoids the growing-average near-identity mechanism but still
+preserves, rather than weakens, the unresolved weighted energy requirement.
+
+1. Coefficients and the negative-fractional case
+Fix one function chi on primes with |chi(p)|<=1, independent of output n and
+of the function being transformed. It may query a fixed actual-Mobius source.
+For rational alpha in[-2,2] define multiplicative coefficients by
+ a_alpha,chi(p^k)=chi(p)^k*(alpha)(alpha+1)...(alpha+k-1)/k!,
+ a(1)=1. The local generating function is(1-chi(p)x)^(-alpha).
+Set r=ceil(|alpha|), with r=0 when alpha=0. For every integer j>=0,
+ |alpha+j|<=r+j.
+Thus for k>=1 and r>=1,
+ |a(p^k)|<=(r)(r+1)...(r+k-1)/k!=d_r(p^k).
+This argument also covers negative nonintegral alpha; it does not require its
+alternating coefficient signs to have a special pattern. Zero factors at
+negative integral alpha cause no problem. Multiplicativity gives |a(n)|<=d_r(n).
+For alpha=0 the coefficient is the convolution identity and T is the identity.
+
+2. Exact finite inverse and fixed-source requirement
+Define(T_alpha,chi f)(n)=sum_{d|n}a_alpha,chi(d)f(n/d).
+The formal local product of powers alpha and-alpha is1. Therefore
+a_alpha,chi*a_-alpha,chi=epsilon as an exact Dirichlet-convolution identity.
+At each n, every sum in T_-alpha T_alpha is finite over pairs ab|n. For n<=T,
+all needed inputs n/(ab)<=T. Consequently restriction to a finite initial
+interval commutes with the triangular transform and its inverse: no tail
+beyond T is omitted. The diagonal coefficient is1, so there is no loss at1.
+
+The inverse uses the SAME chi(p). If coefficients are changed when the input
+changes, derived from current intermediate values, or made output-dependent,
+the Euler-convolution inverse is no longer established. Frozen source queries
+are fixed coefficients, not new values of the transformed source. Candidate
+source descriptions need an all-positive-integer mathematical meaning even
+when their saved finite evaluation has only a bounded source horizon.
+
+Point phases S(n)=+1 or-1 are self-inverse isometries. A zero-valued source mask
+such as mu(n), or a coprime indicator, is not such a phase. A phase derived from
+these predicates must explicitly choose one of the two unit signs at every n.
+For a finite circuit applied in forward order, undo the operations in reverse
+order, replacing alpha by-alpha and preserving every phase and chi source.
+Recovery covers one reversible circuit, or a nonnegative energy stack retaining
+one such channel with a fixed positive weight. A signed sum of circuit outputs
+inside one square need not be invertible; identity minus identity vanishes.
+
+3. Finite discrete norm theorem
+Use the UNSQUARED norm associated with
+ H_sigma,T(f)=sum_{1<=n<=T}|f(n)|^2/n^(2sigma+1).
+The divisor-supported dilation D_d f(n)=1_{d|n}f(n/d) satisfies EXACTLY
+ H_sigma,T(D_d f)=d^(-2sigma-1)H_sigma,floor(T/d)(f).
+Triangle inequality and the coefficient domination therefore give
+ ||T_alpha,chi f||_T
+ <=sum_d |a(d)|d^(-sigma-1/2)||f||_T
+ <=zeta(sigma+1/2)^r||f||_T.
+For sigma=1/2+epsilon, epsilon>0,
+ zeta(1+epsilon)<=1+1/epsilon,
+so both T and its inverse have norm at most(1+1/epsilon)^r. No assumption of
+finite infinite energy, Mertens growth or RH enters this proof.
+
+For a fixed circuit with R=sum ceil(|alpha_i|), phases costing0,
+ ||Circuit f||_T,||Circuit^-1 f||_T<=(1+1/epsilon)^R||f||_T.
+The corresponding SQUARED H recovery bound is(1+1/epsilon)^(2R), not the
+unsquared factor. Passing to infinity is by monotonic limits of finite bounds.
+The blow-up as epsilon decreases is allowed in a qualitative RH bridge;
+the circuit and R must remain fixed. Changing the circuit with epsilon or X
+would not establish one admissible all-scale candidate.
+At n=1 every transform preserves its input and every phase has unit modulus,
+so on actual M the observed initial energy is exactly1. Additional initial
+storage costs must also be retained in telescoping.
+
+4. Essential distinction: transform M directly, not mu then prefix
+The theorem concerns f(n)=M(n) as its INPUT SEQUENCE. Transforming mu instead
+and then summing the output produces
+ sum_{k<=n}(a*mu)(k)=sum_{d<=n}a(d)M(floor(n/d)).
+This is an ordinary quotient sum with no1_{d|n} support. Its integral dilation
+norm lacks the additional d^-1/2 from discrete divisibility density, and the
+displayed zeta(1+epsilon) bound does not apply to it. The two constructions
+are not interchangeable. Likewise a continuous extension must apply the
+finite integer circuit first and then use its floor-step extension; it cannot
+replace divisibility support by a continuous scaling formula.
+
+5. Exact dyadic-moment-to-integral-to-zeta bridge
+Let rho be the output of ONE fixed admissible circuit on actual M, and define
+ E_rho(X)=X^-2 sum_{X<=n<2X}|rho(n)|^2 on dyadic X.
+For the discrete weighted norm, each block satisfies
+ 2^(-2sigma-1)X^(1-2sigma)E_rho(X)
+ <=sum_block |rho(n)|^2/n^(2sigma+1)
+ <=X^(1-2sigma)E_rho(X).
+Thus E_rho(X)<=C_delta X^delta with delta<2sigma-1 gives finite global H_sigma.
+For the contract's direct moment gate, an unbounded set of positive integers q
+with finite Cq and E_rho(X)<=Cq ceil(X^(1/q)) suffices: for each epsilon choose
+one such q with1/q<2epsilon. It need not be every integer above a threshold.
+The same holds if a full nonnegative storage W=E_rho+V obeys a cofinal dyadic
+drift with finite W(1), one fixed circuit, some q0 and finite constants Cq
+independent of X for every integer q>=q0:
+ DeltaW(X)<=Cq ceil(X^(1/q)).
+Telescoping yields E_rho(X)<=W(1)+2Cq(X^(1/q)-1)/(2^(1/q)-1).
+For sigma=1/2+epsilon choose q>=q0 with1/q<2epsilon. Recovery then makes the
+global discrete H_sigma(M) finite. Only finitely many tested q do not suffice.
+
+For step extension M(x)=M(floor(x)), the continuous weighted integral is<=the
+discrete norm; its cell weights are integral_n^(n+1)x^(-2sigma-1)dx. They also
+bound it below by2^(-2sigma-1) times the discrete norm. For Re(s)>1/2 choose
+1/2<sigma<Re(s). Cauchy-Schwarz implies absolute/local-uniform convergence of
+ F(s)=s integral_1^infinity M(x)x^(-s-1)dx.
+It is holomorphic there and equals the ordinary sum mu(n)n^(-s)=1/zeta(s)
+where Re(s)>1, by ordinary absolute convergence and summation by parts.
+The continuation identity(s-1)zeta(s)F(s)=s-1 excludes zeros of the ordinary
+Riemann zeta function to the right of1/2. Its functional equation/symmetry
+then gives RH. Standard final symmetry references are NIST DLMF25.4.E3 and
+25.10.i, also documented in residual_observer_bridge_review.txt.
+
+This bridge is conditional. It does not assert a proved cofinal rho moment or
+ordinary Mobius-series convergence at every Re(s)>1/2 directly from moments;
+the analytic integral continuation is sufficient. If the experiment instead
+retains original E_M as a positive anchor in W, that anchor itself gives this
+moment implication; observer recovery must not be double-counted as proof.
+
+6. What reversibility does and does not change
+For every sigma>1/2, H_sigma(rho)<infinity if and only if H_sigma(M)<infinity.
+This is honest preservation of the target analytic class, not a weaker goal.
+Unlike growing normalized averages, an unnormalized divisor convolution need
+not become the identity at high inputs. For an impulse at N, T produces value
+a(d) at dN; its relative weighted difference from the identity includes
+ |a(2)|^2*2^(-2sigma-1), independent of N whenever that output is retained.
+Thus the family can express persistent prime/divisor interactions at arbitrarily
+large scales. This is a real additional search ability, not a moment theorem.
+
+Each convolution has diagonal1. A circuit of convolutions and unit phases has
+diagonal the product of its phases, of modulus1. Its other terms use proper
+divisor inputs<=n/2. A coherent fresh target block is therefore present in the
+observer with full diagonal magnitude; a source-free norm/past proof cannot
+make it disappear. Fixed-source coefficients can encode genuine arithmetic
+constraints, but those constraints must be used to prove the signed moment.
+Invertibility alone does not establish them. This is the whole-target version
+of the fresh-block obstruction, rather than the blindness of old quotient banks.
+
+7. Algebraic degeneracies that should remain visible
+Same-chi convolution nodes obey T_alpha,chi T_beta,chi=T_alpha+beta,chi; inverse
+pairs cancel. All divisor convolutions commute, even with different coefficient
+sources, though different sources generally do not merge into one Euler power.
+The order of noncommuting phase nodes is where new circuit interactions arise.
+alpha=0 or chi identically0 gives the identity. On a prime domain mu(p)=-1 and
+mu(p^2)=0, so such queries can be a constant coefficient source or an identity
+source, rather than new independent signs.
+
+If S is a COMPLETELY MULTIPLICATIVE unit sign, then
+ S T_alpha,chi S=T_alpha,chi*S,
+where the new prime source is chi(p)S(p). Hence such phase conjugation folds
+into coefficients and is not intrinsically a new noncommuting mechanism.
+A generic parity/source phase need not be completely multiplicative; this
+reduction must not be asserted merely from its pointwise unit modulus.
+Nonmultiplicative source-conditioned phases retain factorization-dependent
+interactions S(n)S(n/d), which need explicit signed analytic estimates.
+
+Full divisor inverse illustrates another important non-alias. T_1,1 has divisor
+coefficient1 and T_-1,1 has coefficientmu. On source mu, T_1,1 mu=epsilon.
+On the actual observer input M they instead give divisor sums of M, not the
+bounded full quotient identity. At a prime p,
+ (T_1,1 M)(p)=M(p)+1, (T_-1,1 M)(p)=M(p)-1.
+Consequently one cannot certify a bounded observer by applying the source
+inverse identity to the prefix sequence. Transforming a source then prefixing
+is the different, nonadmitted operation from section4.
+
+8. Where analytic simplification could actually come from
+The useful possibilities are exact divisor-source identities, complementary
+channels kept intact, and nonmultiplicative phase/divisor interactions whose
+complete signed square can be controlled. A commutator circuit involving a
+unit phase and a convolution is legitimately reversible and can retain those
+interactions; if the phase is a multiplicative character it reduces as above.
+These are generic mechanisms, not a favorite formula or expected result.
+
+An analytic proof must bound the fixed observed square for all dyadic scales,
+including its diagonal, divisor-pair, phase and source-complement terms. Full
+divisor inversion, prime-conditioned laws and fresh nonmultiple prefixes can
+provide identities; none authorizes dropping a remaining channel or importing
+an unknown Mertens-strength estimate. The recovery factor explicitly guarantees
+that a truly easier proved observer estimate would prove the original result.
+It does not guarantee that any generated representation is easier to estimate.
+
+9. Read-only interface consistency check
+The new reversible_divisor_circuit_contract.txt and the independent
+check_reversible_divisor_circuits.py were read as source, without execution.
+They use prefix M as input, prime-factorized generalized-binomial coefficients,
+all output divisors, fixed original source values for every phase, strict unit
+phase syntax and the correct unsquared recovery-power metadata. The checker
+admits the restricted theorem schema by independent reconstruction; it is not
+a proof assistant or source-specific moment certificate. No mathematical
+interface inconsistency was found in this read. Producer/root workflow and
+development execution are outside this analytical review receipt.
+
+Final disposition
+Finite inverses, generalized-binomial domination and polynomial-in1/epsilon
+norm recovery are sound for fixed divisor-supported circuits on M with genuine
+unit phases. The dyadic-to-ordinary-zeta/RH bridge is sound under the unproved
+fixed-candidate cofinal moment premise. The family is mathematically justified
+and does not suffer the same growing-average near-identity limitation, but
+whole-target and algebraic alias obstructions remain. No signed all-scale bound
+or RH conclusion is established by this review.

@@ -1,0 +1,139 @@
+PAIRED SIGNED PRIME-MOMENT SEARCH075 -- FROZEN BEFORE SCIENTIFIC SCORES
+
+Purpose
+
+Consume the exact074 prime-dilation obstruction as executable grammar.
+Search an arithmetic operator L together with a proposed residual bound
+and a proposed signed correlation bound. Supply a rigorously reviewed
+conditional induction rule connecting them to an all-scale source bound.
+Do not treat either finite estimate as its required uniform theorem.
+This experiment concerns the necessary071 source family only; the joined
+remainder J1=Z(k)-2k H_mu(u)H_mu(v), separable prices, complete parameters,
+head/core transfers and RH remain unpaid.
+
+Exact arithmetic language
+
+G(u)=M(u//8)-M(u//10)-M(u//4)+M(u//5)=Z(u/80), u>=0 integer.
+Z(t)=G(floor80t) exactly. D_dG(u)=G(u//d), D_dD_e=D_(de).
+G(0..3)=0, G(4)=-1, G(8)=G(9)=2; ordinary mu(1)=1 is retained.
+The mathematical identity covers real t, not an interpolated integer fit.
+
+At each parent set X=u//4. Fixed prime cutoffs are
+ theta=[1/2,17/31,4/7,2/3,5/7,4/5,7/8].
+For adjacent cutoffs, B_i=sum_{X^lo<p<=X^hi}G(u//p),
+Q_i=sum_{X^lo<p<=X^hi}G(u//p)^2, and count_i counts actual primes.
+Prime contributions retain multiplicity when several p share a child.
+Direct components use d=[2,3,5,6], B_d=G(u//d), Q_d=B_d^2.
+The arbitrary rational cutoff/power API has exact bit/work gates, not a
+denominator whitelist.17/31 is a new pilot cutoff, not a privileged root.
+Between original u=80k parents, the cutoff convention is (floor(u/4))^theta.
+The independent checker reconstructs actual mu/primes, floors and sums.
+
+Paired lemmas and complete price
+
+For every integer u>U0=4096 the proposed lemmas are
+ (A) (G(u)-sum a_i B_i(u))^2 <= C u^q,
+ (B) (sum a_i B_i(u))^2 <= sum beta_i Q_i(u), beta_i>=0.
+Both left sides retain ALL cross terms, including prime/composite terms.
+The pilot q values are1,33/32,129/128; none is an epsilon-cofinal family.
+
+Each prime reciprocal price is bounded uniformly using the unconditional
+Rosser--Schoenfeld pi(x)<=2x/logx and the exact rational upper certificate
+in MOBIUS_PRIME_MOMENT_REVIEW_075.txt. Direct prices are1/d. With H_i the
+certified prices, rho>=sum beta_i H_i, rho<=r^2,0<=r<1,
+C<=(1-r)^2 B and B>=Bbase, strong induction gives G(u)^2<=B u^q
+CONDITIONAL on(A),(B). Bbase checks EVERY1<=u<=4096, all80 residues.
+Shorter children do not themselves establish(B). The proof template is
+valid even when a proposed arithmetic lemma has a finite counterexample;
+conditional_induction_verified must never be interpreted as that lemma.
+
+For direct-only a and positive active beta, sum a_i^2/beta_i<=1 proves(B)
+by weighted Cauchy. The recovery slot includes signed two-dilation controls.
+It still owes(A). For prime blocks the same generic argument would cost
+prime multiplicity; a finite diagonal moment fit is not a uniform proof.
+The zero-operator baseline is explicitly the original bound in(A), not
+a discovered mechanism. No numerical result may set uniform/RH flags true.
+
+Search and numerical separation
+
+Initial directions include every axis and every signed two-component pair.
+The generator also reads074's exact centered rays, subdividing exported
+prime blocks at any new cutoff without changing the signed expression.
+Unregistered theta<1/2 rays are not silently converted to this grammar.
+Nine bounded minimax LP proposals (three q, three operator classes) may
+add new signed directions. Floating coefficients are rounded rationally;
+all selected constants and finite inequalities are then checked exactly.
+
+For each shape, one LP minimizes beta dot H subject to(B) on discovery.
+Nonnegative beta is rounded upward and any solver tolerance repaired by
+an exact finite calculation. Direct-only shapes also have a universal
+Cauchy variant beta_i=|a_i| sum|a|. This is not labeled universal for primes.
+Correlation fitting is q-independent here and reused across all q and
+amplitudes. Prime sums are grouped by equal floor(u/p), avoiding per-prime
+reconstruction for every candidate. Independent checker groups by j.
+
+Each fixed shape/beta pair gets eight signed nonzero amplitudes:
+ +/-s,+/-s/2,+/-s/4,+/-s/8, where s starts1 and halves until s^2 rho<=1/4.
+Operator a scales by amplitude and beta by its square. This cannot hide
+a correlation failure. Each failed moment control gets an independently
+checked exact homogeneous counterexample, including controls not selected
+for full innovation evaluation. No adaptation constant or beta is refitted.
+
+For each q and each class (prime only, direct only, prime+composite), select
+the lowest C/(1-r)^2 and lowest C proposals using DISCOVERY ONLY, deduplicated.
+These finite objectives are declared selection heuristics, not estimates
+proved at infinity. The recovery slot and zero baseline are also retained.
+Program coefficients, beta, C, base and price are frozen before new final
+source values are generated. Every selected program independently checks
+both inequalities on discovery and adaptation, with exact normalization
+enclosures at precision20. Rounding ambiguity is not a proven violation.
+
+Source domains
+
+Every anchor k contributes all80 integer parents u=80k-phase, phase0..79.
+Discovery k=[64,96,128,192,256,384,512],560 parents.
+Adaptation k=[768,1024,1536,2048,3072,3723,4096,6144,8192,12288,16384,
+              21142,24576,32768],1120 parents.
+The maximum learning arithmetic prefix is655360, already within074's
+observed arithmetic. These new features are not an independent historical
+holdout. The anchor selection includes known074 failures before any075 score.
+Coverage of all80 phases at an anchor does NOT cover all intervening scales.
+
+Only formulas passing BOTH known lemmas receive fresh final evaluation at
+k=[40960,49152,65536],240 parents, arithmetic horizon1310720. If no formula
+qualifies, generate no new final data. A baseline may qualify independently.
+Any new final pass retains its obligation for every untested integer.
+Failed exact formulas and their proof dependencies remain in saved output;
+they cannot regain candidate status merely by passing another domain.
+
+Independent admission and resources
+
+Producer and checker share only frozen073 exact rational/root primitives;
+the checker never imports the075 producer and reconstructs source sieves
+and quotient grouping independently. verify_program alone checks schema
+and formulas, NOT source arithmetic. The runner first requires verify_data
+VERIFIED, binds exact spec/parent list, uses the admitted rows, and retains
+the source-admission artifact as a mandatory dependency for every evaluation.
+Learning source bytes and frozen formulas are compared directly before and
+after the run. No hashes are constructed. Empty scientific domains are rejected.
+
+Prospective source/base/cache/matrix allocation checks precede allocations;
+three workers use one native thread each,4GiB per task estimates,16GiB total
+RSS cap,7200s whole-stage limit and120s per LP. Counters are implementation
+work estimates, not an exact instruction count or matched performance study.
+The complete independent base is cached by explicit integer U, with exact
+values, not a digest. Source and correlation work is shared across q.
+Do not rerun frozen historical suites or science. Preserve all attempts.
+
+Outputs and stopping rule
+
+Retain operator_catalog, all moment controls and their witnesses, candidate
+programs, independent admissions, final results if eligible, report and
+typed next_search_input. Feedback distinguishes unpaid innovation from
+unpaid correlation, finite counterexamples from unresolved root rounding,
+and known Cauchy controls from arithmetic-dependent estimates. A failed
+correlation requests coherent quotient groups, signed cross moments or a
+new operator; a failed residual requests a new identity/composed control.
+Do not resolve either by reporting a larger fitted constant as a theorem.
+Historical novelty is not a ranking requirement. Uniform signed arithmetic
+control and a sound connection to the original RH task remain the objectives.

@@ -1,0 +1,116 @@
+052 INDEPENDENT CONDITIONAL RH BRIDGE AUDIT
+
+Owned checker: check_fractional_prime_rh_bridge_052.py
+Admission is a finite typed instance of the following reviewed analytic rule.
+It is not proof-assistant formalization. No source values, candidate tables,
+zero computations or finite scientific evidence are used. The missing error
+estimate remains OPEN. Only its implication is admitted; RH and the original
+floor energy bound remain OPEN. There is no converse asserted.
+
+1. Source and positive kernel.
+Fix rational a>b>=0, a+b=1, 0<alpha<1 and c=a-b>0. For every integer n>=2,
+K(n)=-sum_{d|n} mu(d)*(a log d+b log(n/d))^alpha; K(1)=0.
+The coefficients are the ordinary all-integer Mobius coefficients, not a finite
+prime surrogate. I=integral_0^infinity (1-exp(-u))u^(-alpha-1)du is finite,
+positive and equals Gamma(1-alpha)/alpha. The fractional-power integral and
+sum_{d|n}mu(d)=0 give exactly
+ K(n)=I^-1 integral_0^infinity n^(-bt)
+       product_{p|n}(1-p^(-ct)) t^(-alpha-1)dt.
+All factors are positive for t>0, so K(n)>0. A single-prime factor upper bound
+also gives K(n)<= (c log n)^alpha. Thus the Dirichlet series converges absolutely
+initially ONLY on Re(s)>1. Summing the nonnegative integral and then using the
+absolutely convergent Euler product gives
+ F(s)=sum_{n>=2}K(n)n^-s
+     =I^-1 integral_0^infinity [zeta(s+bt)/zeta(s+at)-1]t^(-alpha-1)dt.
+The subtraction of the n=1 term is essential. No reciprocal-zeta series is
+claimed convergent at a zero or on the critical strip.
+
+2. The full center, not a leading asymptotic.
+Define for all real x>=1
+ m(x)=I^-1 integral_0^infinity x^(-bt)/zeta(1+ct)*t^(-alpha-1)dt,
+ M(x)=integral_1^x m(u)du.
+Near t=0, reciprocal zeta(1+ct)=ct+O(t^2), so the integrand is O(t^-alpha).
+At infinity it is bounded by t^(-alpha-1), since x^-bt<=1 and
+0<1/zeta(1+ct)<=1. Hence 0<m(x)<=m(1)<infinity, M(1)=0 and M(x)=O(x).
+This includes b=0, when m is a positive constant. In the initial half-plane,
+absolute interchange yields
+ H(s)=integral_1^infinity m(x)x^-s dx
+     =I^-1 integral_0^infinity
+       t^(-alpha-1)/[zeta(1+ct)(s+bt-1)]dt.
+The integral is holomorphic on the complex plane minus the real cut
+(-infinity,1]. Compact sets have uniform integrable domination at zero and
+infinity. For b=0 it is m(1)/(s-1), which is also holomorphic at every nonreal
+ordinary zero. No pole approximation or fitted density may replace m.
+
+3. Exactly what the missing estimate would provide.
+A(x)=sum_{2<=n<=x}K(n), defined for all real x>=1. Stieltjes integration and
+M(1)=A(1)=0 give, initially Re(s)>1,
+ F(s)-H(s)=s integral_1^infinity [A(x)-M(x)]x^(-s-1)dx.
+The entire compact interval 1<=x<=2 is retained. Suppose, ONLY conditionally,
+for every epsilon>0 there is a finite constant depending on epsilon and this
+fixed kernel, bounding |A(x)-M(x)| by that constant times x^(1/2+epsilon)
+for EVERY real x>=2. For a compact subset of Re(s)>1/2 choose epsilon strictly
+below its minimum real-part gap. Uniform domination, also after multiplying
+by each finite power of log x, proves the integral holomorphic there.
+Pointwise positivity or an upper bound for K does not provide this estimate.
+A fixed epsilon, a finite table, or only selected prime checks is insufficient.
+
+4. A rightmost zero at one fixed height.
+If RH fails, functional-equation reflection gives a nontrivial zero with
+Re(rho)>1/2. It has nonzero imaginary part: for real 0<s<1 the paired alternating
+eta series is positive and 1-2^(1-s)<0, so zeta(s)<0. There are no real zeros to
+the right of 1 either. At the chosen fixed nonzero height gamma, select a zero
+rho=beta+i gamma of maximal real part. Such a maximum exists because there
+are finitely many zeros in the compact relevant strip and none on/to the right
+of Re(s)=1. This is NOT the existence of a globally rightmost zero.
+For s=sigma+i gamma with sigma>beta, zeta(s+at) has no zeros for any t>=0.
+The integral for F admits horizontal continuation from Re(s)>1 along this ray.
+Local complex neighborhoods follow from zero avoidance on compact ray pieces
+and Euler zero-freeness at the right end. At t=0 the numerator/denominator
+ratio minus one is O(t); at infinity it is bounded (even when b=0). Those facts
+justify local holomorphy. No zero-free half-plane is assumed.
+
+5. All multiplicities and the important O(t) cancellation.
+Write zeta(rho+z)=z^d G(z), where d>=1 is arbitrary and G is holomorphic and
+nonzero near zero. For delta>0 and t>=0 sufficiently small,
+ zeta(rho+delta+bt)/zeta(rho+delta+at)
+ =[(delta+bt)/(delta+at)]^d [1+O(t)].
+The error is O(t), uniformly in delta, because the two arguments of G differ
+by ct; the common delta cancels. Replacing this by an unprocessed O(delta+t)
+inside the integral would not justify the desired bounded error at t=0.
+The power ratio lies in [0,1], and t^-alpha is integrable, so the integrated
+error is O(1). Substitute t=delta u in the remaining small-t integral. Extending
+its upper limit to infinity changes it by O(1), since the bracket is bounded.
+The rest of the t-integral is uniformly bounded: the denominator stays nonzero
+on the relevant compact ray, and the integrand has an integrable tail. Thus
+ F(rho+delta)=C_d delta^-alpha+O(1),
+ C_d=I^-1 integral_0^infinity
+      [((1+bu)/(1+au))^d-1]u^-alpha-1du.
+At zero the bracket is d(b-a)u+O(u^2). At infinity it is bounded. Therefore
+C_d is finite for 0<alpha<1. It is strictly negative because a>b makes the
+bracket strictly negative at every u>0. This remains true for b=0 and for
+every multiplicity. There is no simple-zero assumption or numerical sign gate.
+
+6. Contradiction and scope.
+The proposed error estimate would make F-H holomorphic on Re(s)>1/2.
+H is holomorphic at the nonreal rho. Consequently F would be bounded near rho,
+contradicting the nonzero negative C_d delta^-alpha divergence just proved.
+Hence the estimate implies no zero to the right of the critical line, and
+reflection implies RH. This pays a CONDITIONAL implication only. It neither
+proves the arithmetic error estimate nor supplies an effective constant or a
+finite threshold. No converse, all-kernel uniformity, original-source bound,
+analytic continuation from pointwise evidence, or actual RH result is admitted.
+
+7. Primary background and executable limits.
+The elementary fractional integral, Euler algebra, full-density and local-zero
+proof above are derived here. Standard zeta background is imported separately:
+DLMF 25.2 https://dlmf.nist.gov/25.2 (initial series/Euler product, meromorphic
+continuation and simple pole at 1; alternating eta identity 25.2.E3),
+DLMF 25.4 https://dlmf.nist.gov/25.4 (functional equation/reflection), and
+DLMF 25.10 https://dlmf.nist.gov/25.10 (ordinary zero strip and symmetries).
+These primary pages were independently checked; none asserts the new error
+estimate. The verifier strictly replays this bounded typed rule certificate,
+canonical rational parameters and all source/domain/claim fields. It is not an
+arbitrary complex-analysis theorem prover. Rational inputs are capped at 4096
+bits/2500 characters, with explicit work/deadline accounting. No denominator
+whitelist or numerical zeta/zero fitting is used.

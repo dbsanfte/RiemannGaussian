@@ -1,0 +1,200 @@
+PERIODIC PRECONDITIONING: NORMALIZATION-SENSITIVE PAID REDUCTION
+================================================================
+
+Independent proof and checker requirements. Only this new040 memo is written;
+no frozen source, result, arithmetic archive, old suite or numerical study is
+changed or run. The reduction is proved below. Its remaining linear inverse
+bound is OPEN, and neither the original full signed bound nor RH is paid.
+
+1. Source and exact periodic preconditioner
+-------------------------------------------
+Let beta=9/2, r=1/3, theta=1-r=2/3, v=2/3,
+ K_r(n)=n^-r, mu_v(n)=mu(n)n^-v, nu2=K_r*mu_v.
+All stars are DIRICHLET convolution, never pointwise products. The source is
+
+ f=beta*K_r*mu*mu-beta*K_r*mu*mu_v-R*nu2-beta*mu.
+
+For ANY integer q>=2 define
+ D_q=delta-q delta_q, a_q=One*D_q.
+Then a_q(n)=1-q*1_(q divides n), and its all-real prefix is
+ floor(x)-q floor(x/q), in[0,q-1], for x>=0. Its unit is1. Exact complete
+Mobius inversion gives mu*a_q=D_q. No prime assumption on q is required.
+
+Preconditioning one copy therefore produces the all-coefficient identity
+
+ a_q*f=beta*D_q*(K_r*mu)-beta*D_q*nu2
+        -R*(nu2*a_q)-beta*D_q.                         (1)
+
+Every signed term, finite unit and positive/negative dilation coefficient
+survives. The transformation genuinely reduces the largest reciprocal-zeta
+power from two to one, rather than replacing the source by a prime profile.
+
+2. Moments and exact source normalization
+------------------------------------------
+For Re(s)>1 the source and preconditioner have absolutely convergent Euler
+identities. At theta, a_q's ordinary conditional moment exists by its bounded
+prefix and equals
+
+ a_q(theta)=D_q(theta)zeta(theta), D_q(theta)=1-q^(1-theta).
+
+The identity follows from analytic continuation of the initial equality and
+the convergent bounded-prefix Abel integral. It is NOT ordinary convergence
+of mu(theta), mu*mu(theta), or the full source's coefficient series.
+
+The shifted inverse moment
+ m_v=sum mu(d)d^(-v-theta)=1/zeta(v+theta)
+is absolutely convergent because v+theta>1. Thus the centering coefficient of
+nu2*a_q is m_v*a_q(theta), while that of nu2 is m_v. These are moments of the
+INNER residual factors, not ordinary critical moments of the pole-bearing
+whole kernel operators themselves. The centering coefficient of K_r*mu is
+the ANALYTIC value m_mu=1/zeta(theta); ordinary convergence remains unasserted.
+
+Write
+ J_mu(x)=prefix(K_r*mu)(x)-m_mu*x^theta/theta,
+ S_v(x)=prefix(nu2)(x)-m_v*x^theta/theta,
+ S_va(x)=prefix(nu2*a_q)(x)-m_v*a_q(theta)*x^theta/theta.
+
+The source-defined scalar R_u independently satisfies
+ R_u=beta[zeta(theta+v)/zeta(theta)^2-1/zeta(theta)].
+The complete main coefficient in(1) is
+
+ D_q(theta)[beta/zeta(theta)-beta/zeta(theta+v)
+             -R_u*zeta(theta)/zeta(theta+v)]=0.         (2)
+
+Cancellation must be exact algebra using the separately admitted source
+definition, not Arb zero containment or substitution of a proposed winner.
+Keeping R merely in[1,5] makes(2) false for a typical family member and would
+leave a critical X^(1/3) energy term.
+
+Consequently the normalization-sensitive physical reduction is
+
+ prefix(a_q*f)(x)=beta*[J_mu(x)-q J_mu(x/q)] + Z_q(x),
+ Z_q=-beta*[S_v(x)-q S_v(x/q)]-R_u*S_va(x)-beta*prefix(D_q)(x). (3)
+
+For x/q<1 the original prefix term is zero BUT its centered main is not zero.
+The finite D_q prefix is1_(x>=1)-q*1_(x>=q). It is never silently omitted.
+
+3. Automatic hyperbola split and the all-real uniform remainder
+---------------------------------------------------------------
+Let B=q-1. The periodic source has prefix in[0,B] and coefficient magnitude
+at most B. Bounded-prefix Abel gives0<=a_q(theta)<=B, including the whole
+infinite tail. Fix rational0<alpha<=theta<1; for x>=1 let
+ U=floor(x^alpha), V=floor(x/U). The exact complementary hyperbola identity is
+
+ prefix(K_r*a_q)(x)
+ =sum_(d<=U)a_q(d)prefix(K_r)(x/d)
+   +sum_(m<=V)K_r(m)[prefix(a_q)(x/m)-prefix(a_q)(U)].
+
+Extra rows with U<=x/m<U+1 are EXACTLY zero. The K main/error bound costs
+B U/theta. The complete conditional-moment tail costs
+2B(x/U)^theta/theta, and the rectangle costs only
+B(x/U)^theta/theta since both periodic prefixes belong to[0,B]. Thus
+
+ |S_(K_r*a_q)(x)|<=B/theta[U+3(x/U)^theta]
+ <=7B/theta*x^sigma,
+ sigma=max(alpha,theta*(1-alpha)).                      (4)
+
+Here U>=x^alpha/2, 2^theta<=2, and no rounded floating split is used. The
+domain alpha<=theta ensures sigma<=theta. For0<x<1 the prefix vanishes and
+the full main is bounded by B*x^theta/theta<=7B*x^sigma/theta. Thus(4) holds
+for EVERY real x>0, including all quotients x/d below1.
+
+The detector can enumerate or solve the two affine power lines and verify the
+exact minimax dual. Its optimum alpha=theta/(1+theta) is generated from the
+objective; this is not a nominated arithmetic cutoff.
+
+The selected exponent may safely be increased without changing the split:
+the bound for x>=1 only grows, and the independent subunit bound remains valid
+as long as sigma<=theta. If the minimax exponent fails the strict shifted
+convergence gate but v>1/2, the rational midpoint of1-v and1/2 supplies a
+subcritical sigma with a positive margin. It must be distinguished from the
+envelope minimum. For v<=1/2 this particular subcritical contraction cannot
+be licensed. Padding changes an admitted uniform cost, not the underlying
+hyperbola identity or its optimum.
+
+Contracting the shifted inverse is valid ONLY when v+sigma>1:
+
+ S_va(x)=sum_(d>=1)mu(d)d^-v S_(K_r*a_q)(x/d),
+ |S_va(x)|<= [7B/theta]*[1+1/(v+sigma-1)]x^sigma.       (5)
+
+The sum contains ALL d, including d>x. Absolute convergence follows from
+the bound(4); the complete theta centering factors also converge absolutely
+on the shifted inverse. Equality v+sigma=1 is not this provider's domain.
+
+At actual theta=v=2/3 the synthesized optimum sigma=2/5 has v+sigma=16/15,
+so(5) gives168(q-1)x^(2/5). The independent positive-kernel rule gives
+|S_v(x)|<=10x^(1/3) all real, or the generic safe21/2 constant.
+Finite D_q dilation costs at most the whole weighted absolute sum1+q, and
+its prefix has magnitude at most q. Thus(3)'s COMPLETE remainder is uniformly
+O_q(x^(2/5)), with computable rational constants and negative block energy
+power-1/5. Separate slower-power/head terms may be retained instead of merged.
+
+All remainder costs are independent of the unresolved J_mu norm. Squaring
+must retain their cross terms or apply a proved triangle factor. Recovered
+estimates must use the original beta, R_u interval, full finite D_q head and
+the declared complete block convention. A negative exponent remains paid
+only uniformly with fixed q and fixed parameters.
+
+4. What is now genuinely open, and the RH bridge
+------------------------------------------------
+Equation(3) is useful progress: a nonlinear source has been reduced to a
+linear centered inverse plus an independently paid COMPLETE error. It does
+not prove J_mu, nor an all-scale original F energy theorem.
+
+A subpower block energy for D_q*J_mu would imply holomorphy of its Abel
+transform in Re(s)>1/2, after the known real-theta main and unit-cell correction
+are accounted for. The relevant meromorphic part is
+
+ D_q(s) zeta(s+r)/zeta(s)
+
+minus an explicit real-theta pole subtraction. D_q zeros lie on Re(s)=1;
+classical zeta nonvanishing on that line is needed if it is used as a general
+single-q bridge. Suppose a nontrivial zero exists with real part>1/2. Let b
+be the supremum of their real parts, and choose such a zero rho with
+Re(rho)>max(1/2,b-r). Then zeta(rho+r) cannot vanish: its real part exceeds
+b, and it is neither a trivial zero nor the real pole. D_q(rho) is nonzero.
+Thus the inverse pole survives, contradicting the asserted holomorphy.
+
+This RIGHTMOST-ZERO argument prevents an unsupported assumption that the
+shifted numerator never cancels any zero. It suffices that at least one
+off-half pole must survive. Real theta is not a zeta zero and its separate
+source main cancellation does not affect that argument.
+
+Physical bounded-inverse recovery from a_q is NOT supplied by this bridge.
+An original-F energy proof and an RH implication are different result types.
+If the root goal is reported as proved via RH, every separately required
+RH-to-original-operator implication must also be admitted. In the current
+stage J_mu remains OPEN, so neither route pays the persistent full core.
+
+5. Automatic search scope and necessary negative controls
+----------------------------------------------------------
+The q dictionary is a finite work grammar, not a primality theorem or a fitted
+constant bank. Powers j=0,1,2 can be source-compiled by exact inversion:
+
+ j0 preserves the original source and its open costs;
+ j1 preserves a reciprocal-zeta pole and admits the paid reduction(3);
+ j2 removes the largest reciprocal-zeta power entirely and is a DIFFERENT
+    target/pole-loss negative control, not an RH certificate.
+
+For j2, the alternating/periodic convolution can have a proved finite critical
+moment and normalized main with no RH input. That success cannot be promoted
+to F without paying its complete inverse/recovery; two copies can erase the
+very pole used by the ordinary-RH bridge. This is precisely why a convolved
+source estimate cannot be labeled a root payment merely because it is small.
+
+Independent checker requirements:
+* Compile the whole source and q/j identity, all atoms and unit, independently.
+* Replay exact separately bound normalization; interval-only R is insufficient.
+* Verify every split parameter and the complete minimax candidate/dual witness.
+* Enforce0<alpha<=theta<1, sigma<=theta and the STRICT v+sigma>1 contraction.
+* Preserve the all-real and subunit main, ALL shifted-inverse divisors, every
+  dilation/head and every coefficient/triangle constant.
+* Keep generic kernel facts, actual source scalar facts, source identities,
+  conditional RH bridges, paid remainder and OPEN target as distinct nodes.
+* Never use J_mu convergence or the target energy as a proof premise for Z_q.
+* Forbid open-dependent payment, cyclic dependencies, dropped signed terms,
+  no-recovery source swaps and j2 pole-erasure masquerading as root control.
+
+No actual arithmetic data, fitted recurrence or new numerical observation is
+used in this proof. The paid normalization-sensitive reduction is rigorous;
+the linear centered inverse estimate and full original goal remain OPEN.

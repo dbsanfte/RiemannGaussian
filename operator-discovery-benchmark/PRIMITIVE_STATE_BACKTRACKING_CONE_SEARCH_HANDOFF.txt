@@ -1,0 +1,100 @@
+Publication026: extended descent, exact recovery, and point-specific rejection
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-backtracking-cone-search-001
+
+Verified result
+The search accepted54 steps and reduced the normalized numerical cone defect
+from0.279626966637625 to0.08482483316269551, about70% further reduction. The
+normalizers are unchanged from publication025, so these values are comparable.
+The overall defect is about91.5% below the publication024 starting point.
+The search stopped before iteration55 at its fixed work-reservation boundary;
+no incomplete iteration, extra numerical proposal or adaptive retry occurred.
+
+The final independent audit reconstructed the exact point from its saved
+269-bit increment and original rational publication024 center. All5641 source
+equations and the learned publication023 equation hold exactly. The point has
+243 negative square weights plus negative slacks1592 and1595:245 negative
+scalar coordinates. This proves rejection of this particular point by the
+cone constraints. It does not prove infeasibility of the operator family.
+The negative-coordinate count rose from226 even as the squared defect fell;
+these are different quantities. No signed arithmetic bound or RH proof exists.
+
+Numerical block penalties (display-only decimal approximations)
+Scalar:616.3548921854913 ->186.97124074731747.
+C:0.010479495817422479 ->0.001378850908691013.
+H=P+4C:0.7109032042901393 ->0.2485364306749762.
+Native eigensolves, gradients and these numerical merits remain uncertified.
+The independent trace audit checks their exported algebra and step history.
+
+Search changes fixed before evaluation
+Reuse the exact780-pivot/444-free chart, original024 center, saved025 positive
+dyadic scales, original025 normalizers and final absolute z025. The map remains
+x=x024+N(Dz); it is not recentered at025. The initial step is half the last
+rejected025 trial step. There is no new column-norm sweep or power pass.
+Each iteration allows12 halving/model/Armijo trials, with capped2x step growth
+after acceptance. The maximum is128 iterations, subject to work/byte limits.
+Trials per accepted step:22 used1;17 used2;10 used3;4 used4;1 used5.
+Thus five accepted steps actually needed more than the old three-trial limit.
+Setup work fell from19,688,167 to2,433,072 in the same work-proxy units.
+
+Producer failure retained and independent recovery
+The original exact endpoint stage stopped when one rational result reached
+4204bits, exceeding its4096-bit result limit. Its original job remains UNKNOWN;
+jobs/endpoint.json remains incomplete with no complete original vector or cone
+diagnostics. No original artifact or frozen source was rewritten.
+
+Before any final independent audit ran, a separate scalar-first audit policy
+was fixed and tested. It uses the already reserved150m independent stage once:
+verify warm inputs and complete trace; reconstruct every exact coordinate;
+check every source and learned equation; inspect all1597 original scalar
+coordinates. Any negative scalar is sufficient to reject this point, making
+matrix diagnostics unnecessary for that decision. If all scalars pass, all
+three exact PSD checks remain mandatory. Resource failure still means UNKNOWN.
+The4096-bit result and8193-bit temporary bounds were not increased.
+
+This audit succeeded: status RECOVERED_SCALAR_REJECTED. It saved the complete
+exact point separately in recovered-endpoint.json (539100bytes), with444 free,
+1224 projected and1957 original coordinates. Its independent review is
+independent_recovery_verification.json (7569bytes). An exact negative witness
+at coordinate1 is retained. PSD_status=NOT_CHECKED_AFTER_SCALAR_REJECTION;
+PSD_blocks_checked=0 and PSD_failures=null. Do not carry over the previous
+candidate's matrix verdicts or claim that all three new matrix blocks failed.
+The original producer failure and this separate successful recovery coexist.
+
+Validation and resources
+The original31-test suite passed before freeze in13.111s and in the frozen
+prescore in13.195s. The new17-test recovery suite passed before its policy was
+fixed in2.526s and in its prescore in2.493s. Tests cover deeper backtracking,
+high-bit exact centers, absolute warm increments, unchanged normalizers,
+equation completeness, scalar-first rejection, mandatory PSD after scalar
+success, failed-cap handling and one-time independent-budget consumption.
+
+One combined450m reservation covers everything:50m preparation/tests/I/O,
+5m setup,220m proposal,25m original endpoint and150m independent recovery.
+There was no second final audit or new450m allowance for recovery. Actual
+arithmetic proxies were2,433,072 +176,388,151 +9,396,651 +17,333,104 =
+205,550,978. Independent I/O used1,387,618 units for44,402,930bytes within
+preparation. These are accounting proxies, not processor instruction counts.
+Producer:132.729116s wall,131.791833s CPU,481588KiB peakRSS (about470MiB).
+Recovery audit:62.075366s wall,62.062229s CPU,487568KiB peakRSS (about476MiB).
+Both used one numerical thread and stayed within6GiB/3600s stage boundaries.
+
+Original map671401bytes; proposal13870631bytes; failed endpoint2698bytes.
+Original snapshot:58 files/783579bytes. Recovery extension:7 files/44980bytes,
+fixed before the sole audit. No hashes or precautionary digest work ran.
+The active source modules have the primitive_state_backtracking_cone_search
+prefix; recovery is check_primitive_state_backtracking_recovery.py. Publication
+uses publish_cancellation_primitive_state_backtracking_recovery.py.
+
+Next research action
+The optimizer now makes sustained progress without the short line-search stop.
+Prioritize a separately fixed fresh formal-identity probe of this exact saved
+point before repeatedly refining the same finite constraints. A new failure
+can supply another necessary equation for the affine search. Preserve the
+whole source and baseline subtraction; do not interpret a learned row as
+held-out evidence or a proof of universal identity. X7/u_n=2n+1 remains known
+discovery data. No fresh formal probe was performed in this run.
+
+Finite cone feasibility, universal nonconstant identity, uniform scalar budget,
+initial storage cost, a cofinal parameter family and the ordinary-zeta bridge
+remain unresolved. The full all-scale signed-control/RH goal remains active.

@@ -1,0 +1,34 @@
+{
+  "schema": "rough-transport-checker-development-v1",
+  "status": "PASS",
+  "distinct_tests": 8,
+  "successful_test_executions": 10,
+  "failed_test_executions": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 7,
+      "status": "FAIL",
+      "output": "test_counts_include_zero_coefficient_products (test_check_mobius_rough_transport_077.Tests) ... FAIL\ntest_degrees_three_four_and_threshold_equality (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_invalid_primes_tokens_and_empty (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_literal_transport_mu_fixture (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_product_gate_before_aggregate (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_terminal_semiprime_signs_and_squares (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_transport_roster_floors_and_normalization (test_check_mobius_rough_transport_077.Tests) ... ok\n\n======================================================================\nFAIL: test_counts_include_zero_coefficient_products (test_check_mobius_rough_transport_077.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_rough_transport_077.py\", line 69, in test_counts_include_zero_coefficient_products\n    self.assertEqual(r['status'],'VERIFIED_IDENTITY');self.assertEqual(r['layer_counts'],[1,4]);self.assertEqual(p['layer_polynomials'],[{}, {'a':'1'}])\nAssertionError: Lists differ: [{}, {}] != [{}, {'a': '1'}]\n\nFirst differing element 1:\n{}\n{'a': '1'}\n\n- [{}, {}]\n+ [{}, {'a': '1'}]\n\n----------------------------------------------------------------------\nRan 7 tests in 0.224s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 1,
+      "status": "PASS",
+      "output": "test_counts_include_zero_coefficient_products (test_check_mobius_rough_transport_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "tests_run": 3,
+      "status": "PASS",
+      "output": "test_transport_roster_floors_and_normalization (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_literal_transport_mu_fixture (test_check_mobius_rough_transport_077.Tests) ... ok\ntest_square_factor_parity_trap (test_check_mobius_rough_transport_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n"
+    }
+  ],
+  "initial_failure": "fixture mistakenly treated prime13 as inside(13,16]; correctedfixtureto(12,16], affectedtestpassed",
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "scientific_results_read": false,
+  "old_suites_run": false,
+  "hashes_used": false,
+  "delegation_used": false
+}

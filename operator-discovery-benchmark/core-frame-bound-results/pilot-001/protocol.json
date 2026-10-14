@@ -1,0 +1,28 @@
+{
+  "RH_proved": false,
+  "actual_source_evaluations": 0,
+  "arithmetic_goal": "S>0 and S>=c*(1+log2X)^(-q)*B for fixed c>0,q>=0 at every dyadic X>=X0",
+  "generated": [
+    "quadratic bound numerator",
+    "exact quotient or SOS proof",
+    "actual moment condition",
+    "retained common-mode coefficient"
+  ],
+  "grammar": "exact multivariate quotient first; generated Lagrange square witness otherwise",
+  "hashes": false,
+  "inclusive_operation_cap": 300000000,
+  "input": "candidate10_cutoff_frame_obligation.json",
+  "memory_limit_bytes": 4294967296,
+  "model_calls_in_search": 0,
+  "monomial_order": "graded lexicographic d0..dm-1",
+  "numerical_candidate_scores": 0,
+  "runtime_limit_seconds": 1800,
+  "schema": "core-frame-bound-run-v1",
+  "scope": "conditional recovery theorem, explicit actual moment inequality, and common-mode equivalence audit",
+  "supplied": [
+    "polynomial arithmetic",
+    "Lagrange/Cauchy identity",
+    "abstract unit-vector countermodel language"
+  ],
+  "whole_signed_bound_proved": false
+}

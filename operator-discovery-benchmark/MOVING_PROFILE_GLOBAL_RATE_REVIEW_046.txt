@@ -1,0 +1,231 @@
+MOVING PROFILE GLOBAL RATE REVIEW 046
+Independent proof and executable obstruction; ordinary Mobius source only
+
+1. Result and exact scope
+
+Fix a>0, 1/2<theta<1, finitely many distinct positive rational rates r_j,
+fixed signed rational weights w_j with sum w_j=1, an integer q>=2, and
+real b with |b|<sqrt(q). Put
+  L(N)=1+floor(log_2 N), beta_N=ceil(a L(N)^theta)/L(N),
+  V_N(n)=sum_j w_j n^(-r_j beta_N).
+Round EACH exponential downward to precision 4 ceil(log_2 N), then take
+the exact signed sum, as specified by the frozen drift recipe. Write the
+rounded profile V_N^R. The finite residual is formed from n=2,...,N and
+c_n=-mu(n)V_N^R(n), using the actual ordinary Mobius source. There is no
+additional taper, source channel or external auxiliary. Define
+  h_N=e_(qN)-b D_q e_N, D_q f(x)=f(qx).
+
+There exist constants c>0 and N_* such that, UNCONDITIONALLY,
+  ||h_N||_2^2 >= c beta_N             for every integer N>=N_* .       (1)
+Constants and the threshold are existential in this review and its guard;
+no numerical c, zero location, failing support or effective N_* is claimed.
+Consequently no finite A>0 can give
+  ||h_N||_2^2 <= A L(N)^(-eta)                                       (2)
+on all sufficiently large integers, or any specified unbounded geometric
+chain, when eta>1-theta. Equality and slower rates remain OPEN. In
+particular this does not prove eta<=1-theta attainable. Norm convergence
+and RH remain OPEN: the lower bound tends to zero.
+
+The proof is a dichotomy. If RH is false, a zero strictly right of the
+critical line gives a fixed positive norm lower bound for every N. If RH
+is true, a conditional theorem about M(x) pays the ACTUAL finite truncation
+on a bounded frequency window, and a critical-zero boundary layer gives
+the lower bound c beta_N. Combining the branches is unconditional; it
+does not assume RH in order to close an upper bound.
+
+The theta>1/2 restriction pays the finite Dirichlet tail. This proof does
+not license theta<=1/2, products with old tapers, N-dependent mixtures,
+critical-line Mobius series, or arbitrary sign sources. Those requests
+return UNSUPPORTED. The distinction from the 044 fixed-cutoff obstruction
+is deliberate: the present eventual lower bound holds on every integer,
+so it also refutes the specified rates on geometric chains; the older
+all-integer scalar obstruction alone did not refute individual chains.
+
+2. Exact finite Mellin identity, including units and dilation
+
+On 0<x<=1 let
+  f_n(x)=floor(1/x)/n-floor(1/(nx)),
+and set it to zero beyond 1. Let chi=1_(0,1] and
+  e_N=chi-sum_(n=2)^N c_n f_n.
+These finite functions are bounded near zero and belong to L^2(0,infinity).
+For Re(s)>0 their Mellin transforms satisfy
+  M f_n(s)=zeta(s)(1/n-n^(-s))/s,
+where the apparent singularity at s=1 is removable. This follows first
+where the floor integrals converge individually, then by continuation
+or by the bounded floor difference. Introduce the virtual unit
+  A_N(s)=sum_(n<=N) mu(n)V_N^R(n)n^(-s).
+Since V_N^R(1)=sum w_j=1, the unit cancels EXACTLY in A_N(s)-A_N(1),
+and the actual n>=2 basis gives
+  M e_N(s)=[1-zeta(s)(A_N(s)-A_N(1))]/s.                            (3)
+Dilation contributes q^(-s), so the whole signed forcing is
+  M h_N(s)={1-b q^(-s)-zeta(s)[A_(qN)(s)-A_(qN)(1)
+                 -b q^(-s)(A_N(s)-A_N(1))]}/s.                    (4)
+The child profile, cutoff and precision are recomputed at qN. Formula
+(4) retains chi, the harmonic correction, both finite cutoffs and their
+signed interaction. There is no independent positive estimate of child
+and parent energies in the boundary-layer argument.
+
+3. RH-false branch: exact lower bound without tails
+
+If RH is false, ordinary zeta zero symmetry supplies a nontrivial zero
+rho with sigma=Re(rho)>1/2. Equation (4) gives, for EVERY N,
+  M h_N(rho)=(1-b q^(-rho))/rho.
+Both h_N terms have support in (0,1]. Cauchy-Schwarz yields
+  |M h_N(rho)|^2 <= ||h_N||_2^2/(2 sigma-1),
+and therefore
+  ||h_N||_2^2 >= (2 sigma-1)|1-b q^(-rho)|^2/|rho|^2 >0.             (5)
+Indeed |b q^(-rho)|<1 when |b|<sqrt(q). No simplicity, hypothetical
+convergence, zero computation, recurrence or tail estimate enters (5).
+Thus any vanishing whole forcing on an unbounded sequence would imply RH.
+
+4. Imported conditional theorem and legitimate finite-cutoff payment
+
+The only specialized analytic import is K. Soundararajan, Partial sums
+of the Mobius function, Theorem 1, primary source
+https://arxiv.org/pdf/0705.0723 . It proves under RH that, eventually,
+  |M(x)| <= C sqrt(x) exp(sqrt(log x)(loglog x)^14).                  (6)
+This conditional theorem is imported rather than discovered by the
+detector. The existence of at least one ordinary critical-line zero is
+also a classical imported fact. No simple-zero hypothesis is required.
+
+Let K=N or qN and T=log K. Set E(y)=sqrt(y)(log y)^14. The quotient
+E(y)/y decreases once log y>28, since its logarithmic derivative is
+(-1/2+14/log y)/y. Because theta>1/2,
+  r_min beta_K >= 2 E(T)/T                                         (7)
+eventually: beta_K is comparable to (log K)^(theta-1), whereas E(T)/T
+equals (log K)^(-1/2)(loglog K)^14. Hence for x>=K, (6)-(7) imply
+  |M(x)| <= C x^(1/2+r_min beta_K/2).
+For z with Re(z)=1/2+r beta_K, r>=r_min, bounded imaginary part, ordinary
+partial summation now JUSTIFIES shifted-series convergence and gives
+  sum_(n>K) mu(n)n^(-z)
+     =-M(K)K^(-z)+z integral_K^infinity M(x)x^(-z-1) dx,
+  |tail| <= C[1+2|z|/(r_min beta_K)]
+                   exp(-r_min beta_K log K/2)=o(1).                (8)
+The tail is uniform on the bounded scaled frequency windows used below.
+The exponential beats every fixed inverse power of beta_K. Equality
+with 1/zeta(z) follows from the absolutely convergent identity in Re(z)>1
+and analytic continuation of the now convergent shifted series. This is
+NOT an assumed infinite series on Re(s)=1/2, and (8) is NOT a global
+critical-line L^2 bound on truncation or a separately integrable bias.
+
+5. Harmonic, rounding, and moving child scale
+
+Write C_w=sum |w_j|. The actual coefficient error obeys
+  |V_N^R(n)-V_N(n)| <= C_w N^(-4),
+because 2^(-4 ceil(log_2 N))<=N^(-4). On Re(s)=1/2 this gives
+  |A_N^R(s)-A_N^exact(s)| <= 2 C_w N^(-7/2),                       (9)
+uniformly in imaginary part; the harmonic error is at most
+  C_w N^(-4)(1+log N).
+At s=1 the shifted series is absolutely convergent without RH. The
+elementary estimate zeta(1+kappa)>=1/kappa, kappa>0, and the integral
+bound for its absolute tail give
+  |A_N(1)| <= beta_N sum_j |w_j|r_j
+       +sum_j |w_j|N^(-r_j beta_N)/(r_j beta_N)
+       +C_w N^(-4)(1+log N)=O(beta_N).                            (10)
+Only sum w=1 is needed for the virtual unit; no higher moment cancellation
+is needed for (9)-(10). Actual separate floors, including their signed
+errors, have therefore been paid locally rather than silently discarded.
+
+For fixed q the integer level gap satisfies
+  0<=L(qN)-L(N)<=ceil(log_2 q).
+The ceiling in beta gives beta_N~a L(N)^(theta-1), with relative error
+O(L^(-theta)). Consequently
+  beta_(qN)/beta_N ->1.                                            (11)
+This includes the level discontinuities and arbitrary integers N. It
+does not require beta monotone or child beta exactly equal to parent beta.
+
+6. Full signed boundary layer, arbitrary zero multiplicity
+
+Assume RH and choose an ordinary critical zero rho=1/2+i gamma. Its
+multiplicity d is a finite positive integer. Locally
+  zeta(rho+z)=C z^d(1+O(z)), C!=0.
+For s=rho+i beta_N v, v in a fixed compact real interval, (8)-(11) imply
+uniformly, for K=N or qN and xi_N=beta_K/beta_N,
+  zeta(s)/zeta(s+r_j beta_K) -> (iv)^d/(r_j+iv)^d.
+The positive rates keep denominators uniformly separated from zero;
+xi_N->1. The bounded-frequency tails and rounding vanish after
+multiplication by zeta(s). The harmonic term zeta(s)A_K(1) vanishes by
+(10). Inserting all terms into (4), including the signed child-parent
+coupling, gives the uniform limit
+  M h_N(rho+i beta_N v) -> (1-b q^(-rho)) F_d(v)/rho,
+  F_d(v)=1-(iv)^d sum_j w_j/(r_j+iv)^d.                            (12)
+At v=0, F_d(0)=1 for EVERY d>=1. Thus the mixture cannot remove the
+central residual response at this zero. Higher Taylor cancellations of
+the profile at fixed n do not make this scaled frequency window vanish.
+
+For an explicit formal window put v_0=r_min/(4 C_w); C_w>=1. Then
+  |F_d(v)-1| <= C_w (|v|/r_min)^d <=1/4, |v|<=v_0, d>=1.
+Let g_0=(1-b q^(-rho))/rho; |g_0|>0 since |b|<sqrt(q). By uniform
+convergence, for all sufficiently large N, |M h_N|>=|g_0|/2 throughout
+this window. Mellin Plancherel on Re(s)=1/2 therefore gives
+  ||h_N||_2^2=(1/(2pi)) integral_R |M h_N(1/2+it)|^2 dt
+       >= [v_0 |g_0|^2/(4pi)] beta_N.                             (13)
+This is a lower bound on the WHOLE residual. All signed source terms and
+crosses are already in (12); no independent-block positivity assumption
+or unlicensed removal of truncation has been used. The formal window is
+exactly positive for all multiplicities. Its constant uses an imported
+zero, and the eventual threshold is not evaluated here.
+
+7. Unconditional conclusion and examples of source algebra
+
+Under RH, (13) proves (1). If RH is false, (5) proves (1) eventually
+because beta_N->0. This dichotomy proves (1) without resolving RH.
+Since beta_N>=a L(N)^(-(1-theta)),
+  A L(N)^(-eta)/beta_N
+       <=(A/a)L(N)^(-(eta-(1-theta))) ->0                          (14)
+for eta>1-theta. The requested uniform inequality is therefore false on
+either licensed domain, for any finite A. A claimed finite passing
+interval does not identify or exclude the unknown failing supports.
+
+For the four-term bare profile in the frozen selected formulas,
+  (w_1,w_2,w_3,w_4)=(4,-6,4,-1), (r_1,...,r_4)=(1,2,3,4),
+the simple-zero formal layer is the exact rational identity
+  1-z sum_j w_j/(z+r_j)=24/[(z+1)(z+2)(z+3)(z+4)].                 (15)
+Equation (15) changes the window shape and constants, not the beta
+exponent. The proof above does not need a simple zero; F_d(0)=1 is the
+relevant multiplicity-independent fact. Theta=4/7 gives the forbidden
+range eta>3/7; theta=3/5 gives eta>2/5. These are paper source-algebra
+deductions, not applications of the executable guard to selected data.
+Likewise the generic theta=5/6 bare profile has boundary power 1/6.
+No external auxiliary or legacy taper is covered by those deductions.
+
+The stable identity e_(qN)=b D_q e_N+h_N, ||D_q||=q^(-1/2), also shows
+that hypothetical h_N->0 on a q-chain implies e_N->0 there, since the
+fixed recurrence ratio |b|/sqrt(q)<1. This valid implication is included
+in certificates, but the direct zero evaluation is stronger and avoids
+using recurrence recovery as a substitute for the finite-tail proof.
+
+8. Executable argument rule, admission and development receipt
+
+NEW producer: floor_residual_global_rate_guard_046.py.
+API: build_guard(request,meter=None), Meter.operations. The request binds
+the complete recipe {id,base,auxiliary}, exact q,b, domain kind/minimum,
+the precise floor-rounding policy, and exact rational A,eta. Supported
+base AST is drift_mixture with fixed sorted distinct positive rates,
+nonzero signed weights summing to one; auxiliary must be null. The rule
+does not recognize recipes by ordinal, fitted score or prior identity.
+
+The returned certificate status REFUTED_UNIFORM_LOG_RATE means precisely
+the rate refutation (14), not a computed norm, RH proof, convergence
+refutation or explicit failing integer. It carries the copied request,
+exact positive tail/rate/contraction margins, finite Mellin identity,
+RH-false and RH-true branches, imported theorem, rounding and child-scale
+conditions, and explicit open-scope flags. Unsupported shape, equality,
+slower rate, theta<=1/2, wrong rounding or malformed input returns
+UNSUPPORTED with rate, RH and norm convergence OPEN; resource exceptions
+propagate. The independent verifier is separately owned and imports no
+046 producer code; source-only inspection found its reconstructed rule,
+strict payload equality and scope flags consistent with this proof.
+
+The producer's sole focused development invocation passed 10/10 toy
+tests in 0.004 seconds and charged 1,861 proxy exact-algebra operations.
+Receipt: floor_residual_global_rate_guard_046_development_receipt.json.
+Tests cover exact gaps, copied domains, unsupported boundaries/tapers,
+arbitrary multiplicity central response, the literal rational identity
+(15), source/rounding/type strictness and resource failure. They evaluate
+no actual source values, zeta values or residual norms; no selected/frontier
+applications were performed. Counts are metered algebra proxies, not a
+claim to count every Python instruction. The independent agent owns its
+own test execution and receipt. Frozen 044/045 sources, observations and
+argument files remain unchanged. Producer/test edits are stopped; this
+memo is the final new analytical attachment for root's separate freeze.

@@ -1,0 +1,389 @@
+RESIDUE-VISIBLE PRIME-POWER PRODUCT DECODER
+
+Status: universal mathematical proofs with exact and Arb ball checks.
+These are written proofs, not theorem-prover certificates. Historical
+originality is unresolved; no new RH estimate is asserted. r is an integer
+at least 3 unless explicitly stated otherwise. The trusted numerical
+kernel is FLINT/Arb; the independent checker imports no producer code.
+
+1. Definition, learned grammar, and complete-fibre scope
+
+Let PP={p^e: p prime, e>=1}, g(p^e)=1/e, and g(n)=0 otherwise.
+Thus g is the formal Dirichlet logarithm of u(n)=1. Define the bilinear
+index coupling K_r(a,b) by summing a(x)b(y) at
+
+                  Phi_r(x,y)=xy(x+y)^r, x,y>=2.
+
+The inputs in the decoder bridge are supported on PP. An unordered
+PP pair {p^e,q^f} is admissible if e,f are nonzero modulo r when p!=q,
+or if e+f is nonzero modulo r when p=q. Let I_r be the image of these
+pairs. Section 2 proves each member of I_r has a UNIQUE unordered PP
+fibre among ALL PP pairs, not merely among the admissible inputs.
+
+For an arbitrary coefficient sequence h, define the linear operator
+
+ (V_r h)(m)=sum_{x<=y, x,y in PP, xy=m, pair admissible} h(Phi_r(x,y)).
+
+Every row is finite. This operator includes the earlier two-visible-prime
+coordinate decoder and adds same-prime rows. At a prime-power product
+p^k with k nonzero modulo r, the row has floor(k/2) coordinates. V_r
+therefore aggregates distinct encoded coordinates; it is not a partial
+coordinate permutation, isometry, or two-sided inverse.
+
+The searched grammar uses full prime valuations, their residues modulo r,
+integer power comparisons, residual r-th roots obtained from factorization,
+and affine integer reconstruction. For r=3, nine comparisons U^d>N
+leave three training fits and the unique held-out exponent d=4. Twenty-five
+reconstruction programs leave five training fits and the unique held-out
+divisor r+2, with the special two-prime diagonal shift r. Held-out examples
+include very unequal exponents and integers beyond a machine word.
+The source sums duplicate factor entries before using valuations.
+
+2. Universal unique-fibre theorem on the accepted sectors
+
+Call a prime visible in N when its FULL valuation v_p(N) is nonzero
+modulo r; do not replace that valuation by its residue.
+
+For distinct-base PP inputs x=p^e,y=q^f, gcd(x,y)=1 and the sum x+y
+is coprime to pq. Hence the only possible visible primes of Phi are
+p,q, with their exact input exponents. If both are visible, those full
+prime-power factors reconstruct x and y. No same-prime pair can produce
+two visible primes. This proves uniqueness for the earlier sector.
+
+Now let x=p^e,y=p^f,e<=f, k=e+f nonzero modulo r. Put d=f-e.
+If d>0, N=p^v(1+p^d)^r with v=(r+2)e+d. If d=0 and p is odd,
+N=p^((r+2)e)2^r. If d=0 and p=2, N=2^(r+(r+2)e).
+In every case p is the only visible prime, and its residue is k mod r.
+Write U=p^v, using the FULL valuation v of p in N.
+
+For d>0, U>1+p^d, so U^(r+1)>N. For odd-prime diagonal pairs,
+U>2 gives the same inequality. For the two-prime diagonal, N=U>1.
+By contrast, a distinct-base pair with exactly one visible prime has
+that prime-power factor U as one input, so N=U*y*(U+y)^r>U^(r+1).
+The strict oversize comparison therefore excludes every distinct-base
+PP fibre for these same-prime images.
+
+Any alternative same-prime fibre must have the same visible prime p.
+Let R=(N/p^v)^(1/r), an integer obtained by dividing all other prime
+valuations by r. Except for p=2,R=1, the equation R-1=p^d determines
+d uniquely, and then e=(v-d)/(r+2),f=e+d. R=2 includes odd-prime
+diagonals with d=0. In the exceptional case p=2,R=1, the pair must
+be diagonal and e=f=(v-r)/(r+2). Thus it too is unique. Reconstruction
+is accepted only after checking positive integer exponents and Phi=N.
+
+This is NOT a claim of global PP injectivity or unrestricted integer
+injectivity. Images with no visible prime are unclassified. Other
+single-visible images are excluded by the oversize inequality. Known
+unrestricted integer collisions from the earlier stage remain valid.
+
+3. Generic bilinear bridge, raw-zeta calibration, and harmonic law
+
+For ANY finitely supported PP inputs a,b, unique complete fibres give
+
+ (V_r K_r(a,b))(m)=sum_{xy=m, admissible} a(x)b(y).
+
+For x!=y the unordered encoded coefficient is a(x)b(y)+a(y)b(x);
+for x=y it is a(x)b(x). The formula is a filtered ordinary Dirichlet
+product, without the earlier subtraction of every same-prime diagonal.
+It extends coefficientwise to formal PP sequences because each output
+row has finitely many inputs. It is tested on unrelated signed rational
+inputs; it was not defined by fitting the zeta scalar identity.
+
+At r=3, delta_16000-delta_8192 is a nonzero kernel vector: the unique
+pairs are (2,8) and (4,4), both with decoded product 16. Also V_r
+annihilates delta_1. On raw u(n)=1, it gives one on the admissible
+two-prime sector and floor(k/2) on p^k with k nonzero modulo r.
+These are known factorization/partition masks, not new primitive counts.
+
+Put kappa_r=K_r(g,g), and v_r=V_r kappa_r. Its nonzero coefficients are
+
+ v_r(p^k)=2 H_(k-1)/k,                  if k is nonzero modulo r;
+ v_r(p^e q^f)=2/(ef), p!=q,            if e,f are nonzero modulo r.
+
+The first formula follows from
+sum_{e=1}^{k-1} 1/[e(k-e)]=(2/k)sum_{e=1}^{k-1}1/e.
+It is a classical Stirling/harmonic logarithm-square law. In particular
+v_r agrees with g*_D g through n<2^r and first differs at n=2^r by
+-2H_(r-1)/r. For r>Omega(n), every PP factorization of n is admissible,
+so the generic filtered product and the zeta coefficients recover the
+unfiltered ordinary Dirichlet product at that coefficient.
+
+Six source profiles r=3,4,5,7,11,13 decode through 8192. The source
+computes the entire finite K_r(g,g) before selecting image coordinates.
+Inputs through 4096 cover every PP pair with xy<=8192. The independent
+checker enumerates EVERY possible integer sum S with S^r dividing N,
+solves the discriminant of X^2-SX+N/S^r, and then tests PP membership.
+All 20,416 complete PP-fibre queries, including 478 same-prime queries,
+pass. This is evidence for the implementation, not the universal proof.
+
+4. Local cancellation and the scalar zeta identity
+
+On |x|<1 define
+ h(x)=-LOG(1-x), h_r(x)=h(x)+LOG(1-x^r)/r,
+ J_r(x)=h(x)^2-(1/r)sum_{j=0}^{r-1} h(omega_r^j x)^2,
+ c_r(x)=J_r(x)-h_r(x)^2=sum_{k>=0} c_(r,k)x^k.
+
+The root-of-unity average deletes total degrees divisible by r.
+h_r deletes individual logarithm degrees divisible by r. These are
+different filters; their difference restores the admissible same-prime
+sector while keeping the earlier cross-prime filter.
+
+Let b_k=2H_(k-1)/k (b_0=b_1=0). Both the J_r coefficient and the
+h_r^2 coefficient lie in [0,b_k]. Induction gives H_(k-1)<=k/2 for
+k>=2: the step uses 1/k<=1/2. Consequently |c_(r,k)|<=1 universally.
+For k<r the two local filters coincide, so c_(r,k)=0. At k=r,
+the total-degree filter deletes the unfiltered coefficient, but no
+individual exponent e<r has yet been deleted. Thus
+
+                   c_(r,r)=-2H_(r-1)/r.
+
+The cancellation-order grammar scores 35 affine programs and the leading
+harmonic-coefficient grammar scores 54 programs; their held-out survivors
+are respectively degree r and this negative harmonic law. The classical
+logarithm-square coefficient is rediscovered, not declared new mathematics.
+
+Write L(s)=the Euler logarithm of zeta(s) on Re(s)>1 and P(s)=sum_p p^-s.
+The actual decoded Dirichlet series satisfies, on Re(s)>1,
+
+ U_r(s)=sum_n v_r(n)n^-s
+       =[L(s)-L(rs)/r]^2 + R_r(s),
+ R_r(s)=sum_p c_r(p^-s)=sum_{k>=r} c_(r,k)P(ks).
+
+The square accounts for distinct-prime products plus the individually
+filtered same-prime square. R_r replaces that square by J_r. This
+proves the identity by absolutely convergent coefficient rearrangements.
+
+0<=v_r(n)<=2. The prime-power bound uses b_k<=1 and the cross-prime
+bound uses 2/(ef)<=2. Thus U_r converges absolutely for Re(s)>1.
+At n=2q, q an odd prime, its coefficient is 2; sum_q 1/q diverges by
+the prime number theorem. Hence its absolute abscissa is exactly 1,
+and it diverges at that endpoint. Below 1 the scalar identity is a
+branch-valued continuation, not convergence of the full ordinary series.
+
+By contrast, |c_r(p^-s)|<=p^(-r*sigma)/(1-p^-sigma). On every compact
+subset of Re(s)>1/r this is summable and uniform. R_r is therefore
+single-valued holomorphic throughout Re(s)>1/r. For r=3 this crosses
+the entire critical line and reaches Re(s)>1/3, cancelling the earlier
+separate diagonal term's order-two obstruction. R_r is an ADDITIVE
+correction here; it is not asserted to be a nonzero multiplicative factor.
+
+5. Actual zero obstruction, quantitative anomaly, and parameter limit
+
+On the half-plane Re(s)>1/r, L(rs) has its single-valued Euler branch.
+For a zero rho of zeta of multiplicity m, a local branch of L(s) changes
+by 2*pi*i*m around rho. Set G_r=L(s)-L(rs)/r. The decoded continuation
+therefore has monodromy
+
+             Delta U_r=4*pi*i*m*G_r - 4*pi^2*m^2.
+
+R_r has no monodromy in this domain. At a selected basepoint the modulus
+of this jump is at least 4*pi*m*|Re G_r|, because the constant term is
+real and Im(4*pi*i*m*G_r)=4*pi*m*Re G_r. This bound is independent of
+the initial LOG zeta(s) sheet. The native and independent Cauchy checks
+reuse the earlier certified simple-zero disks near heights 14.134725
+and 21.022040, for r=3,4,5,7. All eight jumps have strictly positive
+lower bounds. R_r is rigorously bounded on each whole disk. Unlike the
+earlier decoder, no assertion that zeta(2s) is nonzero on the disk is
+needed for this cancellation. No new zero location is claimed.
+
+Relative to L(s)^2, the monodromy differs by exactly
+
+      Delta U_r-Delta(L^2)=-(4*pi*i*m/r)L(rs).
+
+Its modulus is bounded, uniformly in height at real part sigma>1/r,
+by (4*pi*m/r)L(r*sigma), which decays exponentially as r increases.
+This estimate compares existing local obstructions. It does not estimate
+zeros in an untested region or prove their absence.
+
+More generally let K lie in Re(s)>=sigma>0 and have a fixed holomorphic
+branch L on a zero-free, pole-free neighborhood, with M=sup_K |L|.
+For r*sigma>1,
+
+ |R_r| <= [zeta(r*sigma)-1]/[1-2^-sigma],
+ |L(rs)| <= L(r*sigma) <= zeta(r*sigma)-1,
+ |U_r-L^2| <= 2M L(r*sigma)/r + L(r*sigma)^2/r^2
+                 + [zeta(r*sigma)-1]/[1-2^-sigma].
+
+The elementary bound zeta(a)-1<=2^-a(1+2/(a-1)), a>1, proves
+locally uniform exponential convergence U_r->L^2 on this chosen branch.
+The branch/zero-free condition is essential. It must not be promoted
+to unconditional continuation through a possible zeta zero.
+
+To remove the known pole at s=1 let F(s)=(s-1)zeta(s), with its removable
+value there. The germ
+
+ [LOG F(s)-L(rs)/r]^2+R_r(s)
+
+extends single-valuedly holomorphically to Re(s)>1/2 if and only if
+zeta has no zeros there. If F is nonzero, the simply connected half-plane
+has a holomorphic logarithm. Conversely, any zero supplies the above
+quadratic logarithmic monodromy, which is nonzero as a function of the
+basepoint and cannot be cancelled by the holomorphic terms. By the
+classical functional-equation symmetry this is an RH-equivalent criterion.
+It is a reformulation of the missing global continuation estimate.
+
+6. Sharp weighted absolute and Hilbert operator bounds
+
+Define A_sigma by ||h||=sum |h(n)| n^-sigma, and H_sigma by
+||h||^2=sum |h(n)|^2 n^(-2*sigma). Image coordinates for different
+decoded rows are disjoint by the unique-fibre theorem. A_tau membership
+gives absolute Dirichlet convergence on Re(s)>=tau and holomorphy strictly
+to its right. H_tau is a coefficient norm: by Cauchy--Schwarz it gives
+Dirichlet holomorphy only on Re(s)>tau+1/2 in general. No Hilbert weight is
+silently identified with a pointwise analytic domain. For sigma>0,
+the absolute norm of V_r:A_sigma->A_tau is
+
+ sup_{admissible x<=y} [xy(x+y)^r]^sigma/(xy)^tau.
+
+Put m=xy. This ratio equals
+m^((r+1)*sigma-tau)(1/x+1/y)^(r*sigma).
+Since m>=4 and 1/x+1/y<=1, for tau>=(r+1)*sigma the supremum is
+attained at x=y=2 and is EXACTLY 4^((r+1)*sigma-tau). If tau is
+smaller, the pairs (2,q), q prime tending to infinity, make it infinite.
+
+For Hilbert spaces, the squared norm is the supremum of squared row
+norms. At tau_0=(r+1)*sigma a same-prime row p^k has squared norm
+
+ sum_{e=1}^{floor(k/2)} (p^-e+p^(-(k-e)))^(2*r*sigma), k mod r!=0.
+
+For every sigma>0 this is at most
+2^(2*r*sigma)/(2^(2*r*sigma)-1), a convergent geometric bound. Cross-prime
+rows have one coordinate. Thus the Hilbert map is bounded iff
+tau>=(r+1)*sigma. Necessity uses the same (2,q) rows.
+
+If r*sigma>=1, the Hilbert norm is also EXACTLY
+4^((r+1)*sigma-tau). At tau_0, the k=2,p=2 row has norm squared 1.
+For k>=3 the first term at exponent 2 is at most (3/4)^2. The remaining
+terms are bounded by sum_{e>=2}(2*2^-e)^2=1/3, so the row is at most
+43/48<1. Higher exponents only decrease the terms. Cross-prime rows
+have reciprocal sum at most 5/6. Increasing tau adds a row factor
+m^(-2*(tau-tau_0))<=4^(-2*(tau-tau_0)); the (2,2) row attains equality.
+Without r*sigma>=1 the claimed norm-one boundary is FALSE, as the exact
+low-weight row controls show.
+
+At sigma=0, H_0->H_tau is bounded iff tau>0. The prime-power rows have
+floor(k/2) coordinates; damping by p^(-2*k*tau) bounds them for tau>0,
+but their cardinalities are unbounded at tau=0. In particular V_r is
+not an unweighted Hilbert partial isometry. A nonzero kernel also excludes
+a two-sided inverse. These restrictions concern this operator, not all
+possible arithmetic operators or all approaches to RH.
+
+7. Full prime-power encoded endpoint, including a uniform family bound
+
+The earlier prime-only result extends to the FULL source kappa_r, rather
+than just its prime-pair projection. Let
+
+ W(X)=sum_{p^e<=X}1/e.
+
+The prime number theorem implies W(X)=O(X/log X): the e=1 term is
+pi(X), and the e>=2 contribution is O(sqrt(X)log X). Partial summation
+then gives, for each fixed 0<sigma<1,
+
+ sum_{a<=X} g(a)a^-sigma=O_sigma(X^(1-sigma)/log X).
+
+Put sigma_0=2/(r+2), r>=1. On a<=b, a+b>=b; consequently the full
+positive scalar sum obeys
+
+ Gamma_r(sigma_0)=sum_{a,b in PP}g(a)g(b)[ab(a+b)^r]^-sigma_0
+ <=2 sum_b g(b)b^(-(r+1)*sigma_0) sum_{a<=b}g(a)a^-sigma_0
+ <=C sum_b g(b)/(b log b)<infinity.
+
+The last convergence follows by partial summation of W: its integral
+is dominated by integral_2^infinity dt/(t log^2 t). Balanced prime pairs
+in [X,2X] give a lower contribution of order
+X^(2-(r+2)*sigma)/(log X)^2, so every sigma<sigma_0 diverges.
+The full encoded absolute abscissa is therefore EXACTLY sigma_0,
+with ABSOLUTE CONVERGENCE AT THAT ENDPOINT. No analyticity across this
+boundary is claimed. This sharpens the old sufficient strict-half-plane
+bound without altering the old numerical certificates.
+
+For r>=3, r*sigma_0>=1. Section 6 therefore gives exact norm 1 for
+V_r:H_sigma_0->H_{2(r+1)/(r+2)}, also with absolute norm 1 at those weights.
+Moreover
+
+ Phi_r(a,b)^(-2/(r+2))
+  =(a+b)^-2 [((a+b)^2)/(ab)]^(2/(r+2)).
+
+The ratio in brackets is at least 4, so each term decreases with r.
+Dominated convergence using Gamma_3(2/5)<infinity proves
+
+ Gamma_r(2/(r+2)) decreases to sum_{a,b}g(a)g(b)/(a+b)^2,
+ ||kappa_r||_{H_sigma_0}<=||kappa_r||_{A_sigma_0}
+                           <=Gamma_3(2/5)<infinity.
+
+This is a uniform finite family estimate, not a numeric evaluation of
+Gamma_3(2/5). The bounded output weights are 2(r+1)/(r+2), at least
+8/5, and tend to 2; they do not approach the critical line 1/2.
+
+For the earlier pure-power regularization multiplying output by n^(-lambda), at the full endpoint
+and target tau=1/2, the boundedness inequality becomes
+lambda >= (r+1)*sigma_0-1/2 = (3r+2)/(2(r+2)).
+At r=3 equality lambda=11/10 is now permitted by endpoint convergence;
+the critical-line obstruction is still shifted to real part at most -3/5.
+The old strict inequality was correct using only its earlier open-half-plane
+certificate. This endpoint refinement does not eliminate that domain loss.
+
+8. Numerical error certificates and independent references
+
+For a>1 the Mobius representation P(s)=sum_{m>=1}mu(m)LOG zeta(ms)/m
+has tail at cutoff M bounded by
+
+ 2^(-(M+1)*a)(1+2/((M+1)*a-1))/[(M+1)(1-2^-a)].
+
+Using |c_(r,k)|<=1, truncating the local R series at degree K leaves
+tail at most
+2^(-(K+1)*sigma)(1+2/((K+1)*sigma-1))/(1-2^-sigma).
+Complex error boxes include every Mobius and local-degree tail.
+All native logarithms used for P have a>=9/8 and L(9/8)<pi; the
+Euler logarithm is therefore the principal value at these arguments.
+
+The source uses K=64,M=24 and the exact decoded prefix through 8192 at
+six fresh points with sigma=5/3,2,7/3. The full decoded series tail is
+at most 2*N^(1-sigma)/(sigma-1). Perturbing coefficient four by 1/2
+is rejected. The independent checker uses coefficients from its own
+harmonic/factorization formula through 12288, a prime-local root-of-unity
+reference through 384, and smaller perturbation 1/3. Its prime tail is
+at most N^(1-r*sigma)/[(r*sigma-1)(1-(N+1)^-sigma)]. All six pass.
+
+Six additional REmainder-only points have sigma=3/8,2/5,5/12. The source
+and checker compare the degree/Mobius form with the root-of-unity form,
+subtracting c_(r,r)p^(-r*s) before the finite prime sum and restoring
+c_(r,r)P(rs) with a separately bounded Mobius computation. The remaining
+prime tail is at most
+
+ N^(1-(r+1)*sigma)/[((r+1)*sigma-1)(1-(N+1)^-sigma)].
+
+The source uses prime cutoff 2048, leading M=32; the checker uses 4096,
+leading M=48, independent harmonic degree 80 and M=36. Perturbing
+coefficient eight by respectively 1/2 and 1/3 is rejected. This certifies
+the holomorphic REMAINDER identity below 1/2. It does not claim convergence
+of the whole decoded series there or test an RH-equivalent continuation
+without a chosen LOG zeta branch.
+
+Eight actual-zero controls use the existing disks and a native R enclosure
+over each whole disk. The checker obtains a basepoint modulus upper bound
+from a two-coefficient zeta jet and a Taylor/Cauchy remainder at radius
+1/48, without reusing the production basepoint zeta value. Real Euler
+majorants independently bound L(rs) and R_r on the disks. Six parameter
+values also pass limit-majorant controls at different source/checker points.
+
+9. Historical audit, calibration, and what remains open
+
+Unique factorization, valuation residue filters, coordinate aggregation,
+root-of-unity filters, Mobius prime-zeta inversion, harmonic/Stirling laws,
+the prime number theorem, and logarithmic monodromy at zeros are classical.
+Primary references reviewed in this stage include
+https://dlmf.nist.gov/26.8.E8 (Stirling logarithm generating function),
+https://dlmf.nist.gov/26.8.E15 (two-cycle harmonic law),
+https://dlmf.nist.gov/27.12 (prime number theorem), and the previously
+reviewed zeta and factorization references in the candidate registry.
+Exact-expression searches have not established the publication history of
+this particular arithmetic decoder and its combined domain/norm theorem.
+Failure to find a matching paper is not proof of originality.
+
+The stage improves the arithmetic sector, the correction's analytic domain,
+the parameter-limit comparison, and the full encoded endpoint theorem.
+It also retains explicit actual-zeta zero sensitivity. It supplies no bound
+that rules out zeros with Re(s)>1/2, no critical-line bounded decoder, and
+no universal impossibility theorem for other grammars. The verified-new
+operator list remains empty; the research objective remains open.

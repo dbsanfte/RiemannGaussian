@@ -1,0 +1,278 @@
+Index-switch candidates33..40: exact localization and remaining signed drift
+2026-10-09. New analytical memo; frozen sources and candidate artifacts unchanged.
+
+Algebraic premises: the generation0_batch.json ASTs/structural annotations for
+the index_switch family and semantic_potential_discovery_soundness.txt. No
+training/evidence/final response, numerical source experiment, test, fitted
+coefficient table or hash is used. The lemmas below follow from the displayed
+ASTs and elementary actual-Mobius identities, not from a selected response.
+
+Common notation and the required endpoint accounting
+----------------------------------------------------
+M(n)=sum_{1<=i<=n}mu(i), M(0)=0. All eight states have weight1. For their
+exact U_X(t), retain
+ E(X)=X^-2 sum_{t=X}^{2X-1}M(t)^2,
+ V(X)=X^-2 sum_{t=X}^{2X-1}U_X(t)^2, W=E+V.
+Every increment is the complete child sum minus four times the complete parent
+sum, divided by4X^2. Child parameters are recomputed at2X. No algebraic
+localization replaces E, deletes a mixed product, or deletes W(1).
+
+The outstanding condition is a single fixed program, some integer q0>=1,
+and, for every integer q>=q0, a finite Cq independent of every dyadic X>=1
+such that W(2X)-W(X)<=Cq*ceil(X^(1/q)). Fixed positive powers do not suffice.
+An additive uniformly bounded error in W changes this condition only by an
+additive constant in Cq, because ceil(X^(1/q))>=1. This permits the exact
+bounded-remainder reductions below, but does not prove the reduced condition.
+
+IDs33,35,37: point-weighted first differences, orders k=2,3,6
+----------------------------------------------------------------
+Define
+ D(t)=M(t)-M(floor(t/2)), D(0)=0,
+ h_k(t)=floor(t^(1/k)), a(t)=mu(h_k(t)) for t>=1,
+ A(t)=a(t)D(t), A(0)=0.
+The max1 in the old point-query argument makes its t=1 query valid. Its
+other factor is D(0)=0, so the AST is exactly
+ U(t)=A(t)-A(t-1).
+This state has no X parameter; the child has no additional cutoff correction.
+
+Let delta(t)=D(t)-D(t-1). Exact floor endpoints give
+ delta(t)=mu(t)-1_{2|t}mu(t/2).
+For odd t, delta(t)^2=mu(t)^2. For even t=2n,
+ delta(2n)^2=(1+3*1_{n odd})mu(n)^2.
+Indeed mu(2n)=-mu(n) for odd n, whereas mu(2n)=0 for even n. Thus the
+square of the local D increment is an explicit unsigned squarefree statistic,
+not an independently varying signed cancellation term.
+
+The exact discrete product rule is
+ U(t)=a(t)delta(t)+(a(t)-a(t-1))D(t-1).
+The coefficient can change only at t=m^k, m>=2. Away these boundaries,
+ U(t)^2=mu(h_k(t))^2*delta(t)^2<=4.
+At a boundary, mu(m^k)=0. If k>=3 and t is even, m^k/2 is also squareful;
+if t is odd there is no half increment. Consequently delta(m^k)=0 at EVERY
+boundary for k=3,6. For k=2 the same holds except m=2,t=4: if even m>=4,
+m^2/2=2*(m/2)^2 is squareful. Hence, apart from that one finite exception,
+ U(m^k)=(mu(m)-mu(m-1))*D(m^k-1).
+These are root-boundary impulses involving unresolved long-tail prefixes.
+
+This yields an exact and useful all-scale reduction. Set
+ S_k(X)=X^-2 sum_{m>=2, X<=m^k<=2X-1}
+                  (mu(m)-mu(m-1))^2*D(m^k-1)^2.
+For k=3,6,
+ V(X)=S_k(X)+X^-2 sum_{X<=t<=2X-1, t not a boundary}a(t)^2 delta(t)^2.
+For k=2 add the single correction
+ 1_{X<=4<=2X-1}*(1+4D(3))/X^2.
+To check that correction, at4 we have a=-1, its jump=-2 and delta=1, so
+U(4)^2-4D(3)^2=1+4D(3). Its absolute value is at most9 by |D(3)|<=2.
+No asymptotic argument is needed to handle this endpoint.
+
+Thus V-S_k is uniformly bounded (indeed at most4/X in absolute value for
+k=3,6, and at most4/X+9/X^2 for k=2). The complete cofinal drift condition
+for each of IDs33,35,37 is equivalent, up to constants, to that for E+S_k.
+This identifies the actual remaining mechanism: positive sparse sampling of
+the long-tail energy at perfect powers, rather than generic first-difference
+cancellation. D(v)^2 still contains the full cross term
+ M(v)^2-2M(v)M(floor(v/2))+M(floor(v/2))^2.
+The weight (mu(m)-mu(m-1))^2 cannot erase these source correlations.
+
+Unconditionally |D(m^k-1)|<=m^k/2 and the weight is at most4. Each boundary
+therefore contributes at most4 to S_k on its block. The number of boundaries
+is at most(2X)^(1/k)+1, giving V=O(X^(1/k)). This is a genuine improvement
+over an unrestricted O(X) potential bound, but still a fixed positive power.
+Sharper signed E+S_k transport, or sharper sparse-prefix energy control,
+remains unproved by these identities.
+
+Unsquared telescoping does hold exactly:
+ sum_{t=a}^b U(t)=A(b)-A(a-1).
+It does not telescope the stored squares. The precise square identity is
+ sum_{t=a}^b U(t)^2=A(b)^2-A(a-1)^2-2 sum_{t=a}^b A(t-1)U(t).
+Its residual correlation must be kept. This is why merely naming U a discrete
+derivative does not supply a dissipative signed W drift.
+
+IDs34,36,38: bilinear moving differences, orders k=2,3,6
+----------------------------------------------------------------
+Let r=floor(X^(1/k)), s=(t-r)_+, and
+ F_k(u)=M(u)*M(h_k(u)), F_k(0)=0.
+The exact AST is
+ U_X(t)=F_k(t)-F_k(s).
+On the actual block r<=X<=t, s=t-r>=0; the clipping still matters at X1.
+The one-step product rule gives, for u>=1,
+ F_k(u)-F_k(u-1)=mu(u)M(h_k(u))
+                    +1_{u=m^k}mu(m)M(m^k-1).
+The root increases by one at each perfect kth power. At every m^k,m>=2,
+mu(m^k)=0, so the first term vanishes right at the boundary. At u1 the
+second term iszero because M(0)=0.
+
+The moving difference therefore localizes EXACTLY as
+ L_X(t)=sum_{s<u<=t}mu(u)M(h_k(u)),
+ J_X(t)=sum_{m: s<m^k<=t}mu(m)M(m^k-1),
+ U_X(t)=L_X(t)+J_X(t).
+Its whole square is L^2+2LJ+J^2. On any window containing no root boundary,
+h_k is constant and this further simplifies to
+ U_X(t)=M(h_k(t))*[M(t)-M(t-r)].
+This is a short-interval state, not a root-prefix envelope for the whole product.
+
+There is at most ONE root boundary in each window (t-r,t]. To verify this
+without an asymptotic exception, r^k<=X and
+ X-r>=r^k-r>=(r-1)^k.
+Relevant boundaries have m>=r, and consecutive such kth powers are more than
+r apart. Thus the boundary windows [m^k,m^k+r-1] are disjoint. Put
+ ell_X(m)=max(0,min(2X-1,m^k+r-1)-max(X,m^k)+1).
+Then the impulse square has the exact diagonal-only form
+ S_k^bil(X)=X^-2 sum_m mu(m)^2*M(m^k-1)^2*ell_X(m).
+Here diagonal-only is JUSTIFIED by disjoint window support, rather than by
+dropping cross terms of simultaneously active bank indices. The mixed term
+2LJ remains fully present. ell includes partial windows at both block ends.
+
+Elementary uniform bounds make a stronger reduction possible for ID38.
+We have |L|<=r*(2X)^(1/k)<=2X^(2/k), |J|<=2X, and its support has at most
+r*((2X)^(1/k)+1)<=3X^(2/k) locations. Consequently
+ X^-2 sum L^2<=4X^(4/k-1),
+ |2X^-2 sum LJ|<=24X^(4/k-1),
+ |V(X)-S_k^bil(X)|<=28X^(4/k-1).
+These coarse constants follow from inequalities, not response fitting.
+For k=6 the remainder is O(X^(-1/3)), hence uniformly bounded. ID38's
+cofinal complete drift condition is therefore equivalent, up to constants,
+to that for E+S_6^bil. Its unresolved part is the NONNEGATIVE sparse energy
+of M(m^6-1), with squarefree weights and short-band multiplicities. Bounded
+smooth-region storage and bounded mixed L/J correction do not control this
+impulse energy or its drift. For k=3 the remainder estimate is O(X^(1/3));
+for k=2 it is O(X). Those estimates are not cofinal-small-power bounds.
+The impulse estimate alone is only S_k^bil=O(X^(2/k)).
+
+Two endpoint/cutoff identities must accompany any later proof. First, fixed-r
+unsquared telescoping is
+ sum_{t=X}^{2X-1}U_X(t)=sum_{u=2X-r}^{2X-1}F_k(u)
+                            -sum_{u=X-r}^{X-1}F_k(u).
+For the square one must retain the residual -2F_k(t-r)U_X(t) in
+ U_X(t)^2=F_k(t)^2-F_k(t-r)^2-2F_k(t-r)U_X(t).
+Second, the child uses r'=floor((2X)^(1/k)), not r. For the frozen parent
+extension Ubar_X(t)=F_k(t)-F_k((t-r)_+) on the child block,
+ K_X(t)=U_{2X}(t)-Ubar_X(t)
+       =F_k((t-r)_+)-F_k((t-r')_+).
+This is the sum of the same one-step increments over the additional window.
+The complete transition contribution is
+ (4X^2)^-1 sum_{t=2X}^{4X-1}[2Ubar_X(t)K_X(t)+K_X(t)^2].
+The root impulses in this additional window cannot be replaced by smooth bounds.
+
+ID39: divisor-output bank, moving square-root cutoff
+---------------------------------------------------
+Set R=floor(sqrt(X)). Its state is exactly
+ U_R(t)=sum_{d<=R,d|t}mu(d)M(t/d).
+For1<=X<4, R=1 and U=M(t), so this regime is an exact target copy. At any
+prime output t>=X>=2, only d1 is admitted and again U_R(t)=M(t). Those
+output energies are not canceled by a generic divisor-inversion identity.
+
+The full untruncated function is H(t)=(mu*M)(t) as a Dirichlet convolution
+of the arithmetic function M with mu. It satisfies sum_{d|t}H(d)=M(t),
+not H(t)=1. In particular H(p)=M(p)-1 at a prime p. The truncated bank is
+ H(t)-sum_{R<d|t}mu(d)M(t/d).
+That exact complement must survive any full-convolution rewrite. The kernel
+here is M(t/d); the inverse-divisor identity with floor(t/d) is different.
+
+All square terms admit a useful exact rearrangement. The diagonal is
+ X^-2 sum_{d<=R}mu(d)^2
+            sum_{n=ceil(X/d)}^{floor((2X-1)/d)}M(n)^2.
+If d divides X its unweighted normalized inner sum is E(X/d)/d^2; otherwise
+the explicit integer endpoints remain. For every d<e, let g=gcd(d,e),
+L=lcm(d,e). The cross term is exactly
+ (2mu(d)mu(e)/X^2)
+ sum_{n=ceil(X/L)}^{floor((2X-1)/L)}M((e/g)n)M((d/g)n).
+No common-multiple correlation has been discarded. The d1 diagonal is E(X)
+itself, and the signed cross terms are the unresolved possible coupling.
+
+Minkowski and |M(n)|<=n give an unconditional O(X) total bound. For each d,
+there are at most2X/d admitted outputs and |M(t/d)|<2X/d. Its normalized
+squared contribution is at most8X/d^3. Since sum d^(-3/2)<=3,
+ V(X)<=72X.
+This avoids an unnecessary cutoff-count loss but does not give a cofinal drift.
+
+There is a better unconditional lemma for the child cutoff SQUARE alone.
+Let R'=floor(sqrt(2X)) and
+ K(t)=sum_{R<d<=R',d|t}mu(d)M(t/d), t in[2X,4X-1].
+All admitted d exceed sqrt(X). Using |M(t/d)|<=4X/d and the count of multiples
+of L=lcm(d,e) in this block, which is at most4X/L because L<=de<=2X,
+ (4X^2)^-1 sum_child K(t)^2
+ <=16X sum_{R<d,e<=R'}gcd(d,e)/(d^2 e^2)
+ <=32 H_{R'}, H_N=sum_{n=1}^N1/n.
+For the last step use d^2e^2>X^2 and
+sum_{d,e<=R'}gcd(d,e)<=R'^2 H_{R'}<=2X H_{R'}.
+Thus the new-index square costs only O(log X), which individually can be
+bounded by Cq*X^(1/q) for every fixed q. This is a substantive boundary lemma.
+It does not bound the full correction: 2Ubar_R*K remains. Cauchy-Schwarz with
+the elementary old-bank bound gives only O(sqrt(X log X)). An independently
+signed common-multiple estimate or a justified negative transport absorption
+is still required; the old bank contains the unresolved target energies.
+
+ID40: gcd/quotient commutator, moving cube-root cutoff
+----------------------------------------------------
+Set R=floor(X^(1/3)), q_d=floor(t/d), g_d=gcd(t,d). On the actual block,
+1<=d<=R<=t, so both point-query arguments are positive. The exact state is
+ U_R(t)=sum_{d<=R}mu(d)[mu(q_d)M(g_d)-mu(g_d)M(q_d)].
+The kernel in brackets is antisymmetric in its two arguments, but the argument
+pairs here do not come with a reversed partner. For R>=2, t>=X>=R^3 gives
+q_d>=R^2>R>=g_d. Thus no equality q_d=g_d or within-bank argument-swap
+cancellation exists in these regimes. Individual equality would make a term
+zero, but does not occur there. The d1 contribution is exactly
+ mu(t)-M(t)=-M(t-1).
+For1<=X<8, R=1 and this is the entire state.
+
+For every nonzero summand d is squarefree, hence g_d is squarefree and
+ mu(d)mu(g_d)=mu(d/g_d).
+Consequently the state separates exactly into A_R-B_R, where
+ A_R(t)=sum_{d<=R}mu(d)mu(q_d)M(g_d),
+ B_R(t)=sum_{d<=R,d squarefree}mu(d/g_d)M(q_d).
+If d|t and d is squarefree, that particular contribution is
+ mu(d)mu(t/d)M(d)-M(t/d).
+The coefficient of the large prefix is then -1, independently of the sign of
+mu(d). Nondisor terms must remain; the full bank is not a divisor-only bank.
+
+The small-gcd component A_R has an UNCONDITIONAL uniformly bounded normalized
+square. This is stronger than the pointwise O(R^2) estimate. Write
+ tau_R(t)=sum_{h<=R,h|t}1. The elementary divisor identity for gcd gives
+ |A_R(t)|<=sum_{d<=R}gcd(t,d)
+          =sum_{h<=R,h|t}phi(h)*floor(R/h)<=R*tau_R(t).
+Since lcm(h,j)<=R^2<=X, counts of its multiples in the block are at most
+2X/lcm(h,j). Therefore
+ sum_{t=X}^{2X-1}tau_R(t)^2<=2X sum_{h,j<=R}gcd(h,j)/(hj)
+                           <=2X H_R^3,
+ X^-2 sum A_R(t)^2<=2R^2 H_R^3/X<=2H_R^3/R<=54.
+The final elementary bound follows from H_R<=3R^(1/3). The sharper expression
+2R^2 H_R^3/X tends tozero as X grows. This bound uses only |mu|<=1 and
+|M(g)|<=g; it assumes no estimate for large M(q).
+
+Nevertheless the WHOLE potential is
+ V_R=||B_R||_X^2-2<A_R,B_R>_X+||A_R||_X^2,
+with every d/e pair contained in these terms. B_R includes M(t) from d1 and
+many large quotient prefixes. A bounded A component does not bound the mixed
+term with B. The elementary estimate is only ||B_R||_X^2<=4X H_R^2;
+Cauchy-Schwarz reintroduces its positive-power size. A Young inequality can
+compare V_R to B_R energy up to constants and a multiplicative loss, but
+pointwise energy comparison does not order their signed innovations.
+
+The child uses R'=floor((2X)^(1/3)); at common t its correction is exactly the
+sum of the same commutator terms over R<d<=R'. Expanding 2Ubar_R*K+K^2
+retains old/new, new/new and A/B products. The new A component satisfies the
+same bounded-small-gcd lemma on the child scale. No corresponding unconditional
+cofinal bound for the large-quotient component or its cross terms is obtained.
+
+Anchors and concrete remaining proof tasks
+-----------------------------------------
+At X1 each point-difference or bilinear state is1, and ID39 is1; all seven
+therefore have W(1)=2. ID40 iszero at t1, hence W(1)=1. These follow from
+mu(1)=M(1)=1 and M(0)=0 with the AST's exact clipped endpoints.
+
+The useful new proof reductions are:
+- IDs33/35/37: E plus perfect-power samples of D^2, up to a bounded remainder.
+- ID38: E plus band-weighted perfect-sixth-power samples of M^2, up to a
+  bounded (indeed decaying) remainder; smooth and mixed local terms are closed.
+- ID39: a logarithmic unconditional square bound for the new-cutoff bank,
+  with its old/new correlation and full target/common-multiple transport open.
+- ID40: a uniformly bounded small-gcd component, with large-quotient energy
+  and its mixed products open; antisymmetry supplies no paired cancellation.
+
+None of these lemmas closes a signed E+V drift without an additional estimate
+for the identified target correlations or a proved negative transport term
+that absorbs them. This is an explicit remaining mathematical task, not a
+numerical rejection or a claim that no future proof is possible. The original
+cofinal quantifiers, full source complements, W1 and ordinary-zeta conditional
+bridge remain unchanged. No RH/global/universal estimate is asserted.

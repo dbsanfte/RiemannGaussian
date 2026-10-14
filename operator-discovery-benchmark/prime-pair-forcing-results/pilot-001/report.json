@@ -1,0 +1,3613 @@
+{
+  "RH_proved": false,
+  "attempts": [
+    {
+      "admitted": 10,
+      "attempts": 14,
+      "exploratory": 4,
+      "programs": [
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "755578637259143234191371/1208925819614629174706176",
+              "2": "755578637259143234191371/1208925819614629174706176",
+              "3": "755578637259143234191371/1208925819614629174706176",
+              "6": "755578637259143234191371/1208925819614629174706176"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 0
+            },
+            "target": "mu"
+          },
+          "program_id": "ee3998d569168871ae57d20fad26cf39f26277649a20e8abfe9f2dcdcca2864c",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 1
+            },
+            "target": "mu"
+          },
+          "program_id": "df6f96d5534ece65816945f5ba30b352f04119cffee2b532e50532cdb2ee8146",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "134017407107944115249137/151115727451828646838272",
+              "2": "134017407107944115249137/151115727451828646838272",
+              "3": "134017407107944115249137/151115727451828646838272",
+              "6": "134017407107944115249137/151115727451828646838272"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 2
+            },
+            "target": "mu"
+          },
+          "program_id": "d31bf768b7169c99881845bb0c1b746bca4e34a5f459eaedfce715484cf4eb34",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "149507543798617851811937/1208925819614629174706176",
+              "2": "149507543798617851811937/1208925819614629174706176",
+              "3": "149507543798617851811937/1208925819614629174706176",
+              "6": "149507543798617851811937/1208925819614629174706176"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 3
+            },
+            "target": "mu"
+          },
+          "program_id": "b11a6bed7051964b92a47b104299c3f6944157389d46412e9e1101787af456aa",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "149507543798617851811937/1208925819614629174706176",
+              "2": "149507543798617851811937/1208925819614629174706176",
+              "3": "149507543798617851811937/1208925819614629174706176",
+              "6": "149507543798617851811937/1208925819614629174706176"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 4
+            },
+            "target": "mu"
+          },
+          "program_id": "6e6ce24c1400c16ea2701d8f78307c04220ee3fe9f9fae59174ecba018f4a1d9",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "16961086123675356852510885/2475880078570760549798248448",
+              "2": "5653695374558452284170295/2475880078570760549798248448",
+              "3": "16961086123675356852510885/4951760157141521099596496896",
+              "6": "16961086123675356852510885/2475880078570760549798248448"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 8
+            },
+            "target": "mu"
+          },
+          "program_id": "f60b4645e6f2555a6a038678596bf04d4e9a561be44b5a8316e4ad7183b21515",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/12"
+            },
+            "target": "mu"
+          },
+          "program_id": "379bb094ddf3e6a965e4e3de931ca233c5a9288474b185895f5044d3ef2a9ece",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/6"
+            },
+            "target": "mu"
+          },
+          "program_id": "f5dfc484aaced3f7f5f05904f7932b7039f8fa7e7839f95352c2318b7b0b7ee8",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/3"
+            },
+            "target": "mu"
+          },
+          "program_id": "de37a8de0ddb5a806ce76684fe190b60cdf3a14245cd5520b69a523c6ba100ed",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/2"
+            },
+            "target": "mu"
+          },
+          "program_id": "70062f6cea379a29c5e409f4da00ec7c4b6302ccff921a872eb857f81b87ac01",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "1/2"
+            },
+            "target": "mu"
+          },
+          "program_id": "10f3d1bfc38b2ad35eddf3fb95052d894e2fa2eaba6886725d5206e04e1f494c",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "1"
+            },
+            "target": "mu"
+          },
+          "program_id": "79799314b94543f80b62b65c72510c3d42883c2ff5309366b7ff4c3131eae29d",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "3/2"
+            },
+            "target": "mu"
+          },
+          "program_id": "9cc17beb807e57f594c5d3ee290e01b719644313fc6f1fefc7865bbee33985e6",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/604462909807314587353088",
+              "2": "1511157274518286468382723/604462909807314587353088",
+              "3": "1511157274518286468382723/604462909807314587353088",
+              "6": "1511157274518286468382723/604462909807314587353088"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "2"
+            },
+            "target": "mu"
+          },
+          "program_id": "e6e7947746a8452875f7554f38bca8ca0f980ef667a12efb000b9c09f041bfd8",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        }
+      ],
+      "target": "mu"
+    },
+    {
+      "admitted": 10,
+      "attempts": 14,
+      "exploratory": 4,
+      "programs": [
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "2417851639229258349412369/1208925819614629174706176",
+              "2": "2417851639229258349412369/1208925819614629174706176",
+              "3": "2417851639229258349412369/1208925819614629174706176",
+              "6": "2417851639229258349412369/1208925819614629174706176"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 0
+            },
+            "target": "c"
+          },
+          "program_id": "ad255c359768276b0a851013ba700c28982e744d1da195c4eab29682ea4f7941",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 1
+            },
+            "target": "c"
+          },
+          "program_id": "1c55d3fa21cd3ce2fa4622b56bbb80c6dc4fe198516c1ec860168c21b896d8ed",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "134017407107944115249137/75557863725914323419136",
+              "2": "134017407107944115249137/75557863725914323419136",
+              "3": "134017407107944115249137/75557863725914323419136",
+              "6": "134017407107944115249137/75557863725914323419136"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 2
+            },
+            "target": "c"
+          },
+          "program_id": "42b611082b1d038c57e19e329564bab95a6db64dbdcfae9875eb3c69bb5a6853",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "0",
+              "2": "0",
+              "3": "0",
+              "6": "0"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 3
+            },
+            "target": "c"
+          },
+          "program_id": "b3868d3f4f94825d27d331d827c231f54e15250582586884367775423c4a379b",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "0",
+              "2": "0",
+              "3": "0",
+              "6": "0"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 4
+            },
+            "target": "c"
+          },
+          "program_id": "647188f23693bf960490c617209fe58d2202a7d6f6fe6be1c4f9070559f1b074",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "5068774770259118059358006327/4951760157141521099596496896",
+              "2": "5068774770259118059358006327/19807040628566084398385987584",
+              "3": "5068774770259118059358006327/9903520314283042199192993792",
+              "6": "5068774770259118059358006327/4951760157141521099596496896"
+            },
+            "cutoff": {
+              "kind": "fixed",
+              "value": 8
+            },
+            "target": "c"
+          },
+          "program_id": "c37f5193f4981f74f14d42cdc1b3812e45389445c5add96a00bd9d7981acb1b8",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/12"
+            },
+            "target": "c"
+          },
+          "program_id": "da4de8482fbb35e62f73e8dbcb51f8fbfc2b0767ec35864a052684a18825b1bd",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/6"
+            },
+            "target": "c"
+          },
+          "program_id": "76f30e96a1e5aa375d5a165a25785f7a552170b0b5a924251a7edc0bd2081430",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/3"
+            },
+            "target": "c"
+          },
+          "program_id": "c425402e8aab0564be46e8dce47e24db78993283de1a637d5e3d094d5a266afa",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": false,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "exploratory"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "power",
+              "power": "1/2"
+            },
+            "target": "c"
+          },
+          "program_id": "1b2bfecea1b0f04aa4f414d4a3efca8d990f4e8df47b22af5ef6d08c4243fcd3",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "1/2"
+            },
+            "target": "c"
+          },
+          "program_id": "f2912ae583951d2ec821f554fe212afed33f54d53f5f5a1a173882df698f8b43",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "1"
+            },
+            "target": "c"
+          },
+          "program_id": "6e44687e4ed18d108c347715075e635abdd7cc5026f9bf6ea538fbd15e82c658",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "3/2"
+            },
+            "target": "c"
+          },
+          "program_id": "43c5126839265fd217f312d52b57e9ead03641329beb844f1445e32ecfd261b3",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        },
+        {
+          "conditional_auxiliary": {
+            "RH_proved": false,
+            "auxiliary_bound_admitted": true,
+            "certificate_reference": "prime_pair_forcing_proof.txt: uniform S_B bound; fixed/polylog cutoff",
+            "remainder_bound_proved": false,
+            "status": "conditional"
+          },
+          "exact_program": {
+            "constants": {
+              "12": "1511157274518286468382723/302231454903657293676544",
+              "2": "1511157274518286468382723/302231454903657293676544",
+              "3": "1511157274518286468382723/302231454903657293676544",
+              "6": "1511157274518286468382723/302231454903657293676544"
+            },
+            "cutoff": {
+              "kind": "bit_length_power",
+              "power": "2"
+            },
+            "target": "c"
+          },
+          "program_id": "aced99e858604cd799196d17bed698d05e7799e73948f2bf96b39925714780d4",
+          "training_counts": {
+            "finite_cases": 28,
+            "finite_failures": 0,
+            "finite_passes": 28,
+            "global_bound_proved": false,
+            "missing_cases": 0,
+            "unresolved_intervals": 0
+          }
+        }
+      ],
+      "target": "c"
+    }
+  ],
+  "full_identity": "Delta_f(X)=J_X(1)-2*kappa*(S_B(X)+R_B(X)); J_X(1)=-2X",
+  "full_signed_bound_proved": false,
+  "global_bound_proved": false,
+  "hashes_rechecked_at_end": true,
+  "limitations": [
+    "Stored constants only; their finite failures do not refute existential constants or unknown q0.",
+    "Missing unknown levels and unresolved intervals are reported separately; neither counts as a pass.",
+    "Complete actual coefficients overlap historical stages; no unseen-prime holdout.",
+    "Exact forcing identity, core partition, interval rules and uniform auxiliary theorem were supplied; numerical search learned only cutoff choices and finite constants.",
+    "Original target energies/defects are separate diagnostics; they do not prove the remainder law.",
+    "Auxiliary control and pole recovery are conditional bridges; full uniform signed estimate remains unproved."
+  ],
+  "required_direction": "Lower bound R_B >= -Cq X^2 ceil(X^(1/q)); equivalent upper bound on -R_B. The known absolute S_B bound is an additional recovery charge.",
+  "schema": 1,
+  "selected_programs": [
+    {
+      "blocks": [
+        {
+          "B": 3,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "55296",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 4944474,
+              "triples": 12487641,
+              "zero_terms": 7543167
+            },
+            "full": {
+              "active_nonzero_terms": 4957899,
+              "triples": 12515358,
+              "zero_terms": 7557459
+            },
+            "retained": {
+              "active_nonzero_terms": 13425,
+              "triples": 27717,
+              "zero_terms": 14292
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -12193624543019789064874695442,
+              "lo": -12193624543019789067603939398
+            },
+            "exact_full_S": "-13671/2",
+            "full_S_ticks": {
+              "hi": -8263612439975797722334287455,
+              "lo": -8263612439975797725073647043
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "6096812271509894532437347721/158456325028528675187087900672",
+              "upper": "6096812271509894533801969699/158456325028528675187087900672"
+            },
+            "retained_prefix_ticks": {
+              "hi": 3930012103043991342540407987,
+              "lo": 3930012103043991342530292355
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 47135,
+            "A_X": 8622,
+            "Delta": 12647,
+            "diagnostic_only": true,
+            "normalized_energy": "4311/131072",
+            "normalized_innovation": "12647/1048576"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 27,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 3,
+              "log_definition": "L=1+log(4X)",
+              "outer": 4,
+              "q_coefficient": 6,
+              "q_power": 3
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 3,
+            "ordinary_X_power": "2",
+            "scalar": "32"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 3,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "55296",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 12298788,
+              "triples": 31290516,
+              "zero_terms": 18991728
+            },
+            "full": {
+              "active_nonzero_terms": 12320100,
+              "triples": 31334949,
+              "zero_terms": 19014849
+            },
+            "retained": {
+              "active_nonzero_terms": 21312,
+              "triples": 44433,
+              "zero_terms": 23121
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -50600025654039239297033407426,
+              "lo": -50600025654039239307562590167
+            },
+            "exact_full_S": "-33432",
+            "full_S_ticks": {
+              "hi": -40416808001356282563499282196,
+              "lo": -40416808001356282574053392688
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "25300012827019619648516703713/387824007395282846560328613888",
+              "upper": "50600025654039239307562590167/775648014790565693120657227776"
+            },
+            "retained_prefix_ticks": {
+              "hi": 10183217652682956733534125230,
+              "lo": 10183217652682956733509197479
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 153226,
+            "A_X": 21991,
+            "Delta": 65262,
+            "diagnostic_only": true,
+            "normalized_energy": "21991/641601",
+            "normalized_innovation": "10877/427734"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 27,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 3,
+              "log_definition": "L=1+log(4X)",
+              "outer": 4,
+              "q_coefficient": 6,
+              "q_power": 3
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 3,
+            "ordinary_X_power": "2",
+            "scalar": "32"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 3,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "70304",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 20244920,
+              "triples": 51686974,
+              "zero_terms": 31442054
+            },
+            "full": {
+              "active_nonzero_terms": 20272375,
+              "triples": 51744420,
+              "zero_terms": 31472045
+            },
+            "retained": {
+              "active_nonzero_terms": 27455,
+              "triples": 57446,
+              "zero_terms": 29991
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -58271614936983429491548850752,
+              "lo": -58271614936983429513674605919
+            },
+            "exact_full_S": "-67709/2",
+            "full_S_ticks": {
+              "hi": -40927579160143463384006005623,
+              "lo": -40927579160143463406172473927
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "910493983390366085805450793/19807040628566084398385987584",
+              "upper": "58271614936983429513674605919/1267650600228229401496703205376"
+            },
+            "retained_prefix_ticks": {
+              "hi": 17344035776839966107542845129,
+              "lo": 17344035776839966107502131992
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 254201,
+            "A_X": 47135,
+            "Delta": 65661,
+            "diagnostic_only": true,
+            "normalized_energy": "47135/1048576",
+            "normalized_innovation": "65661/4194304"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 27,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 3,
+              "log_definition": "L=1+log(4X)",
+              "outer": 4,
+              "q_coefficient": 6,
+              "q_power": 3
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 3,
+            "ordinary_X_power": "2",
+            "scalar": "32"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "1511157274518286468382723/604462909807314587353088",
+          "2": "1511157274518286468382723/604462909807314587353088",
+          "3": "1511157274518286468382723/604462909807314587353088",
+          "6": "1511157274518286468382723/604462909807314587353088"
+        },
+        "cutoff": {
+          "kind": "bit_length_power",
+          "power": "1/2"
+        },
+        "target": "mu"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/75557863725914323419136",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "6096812271509894532437347721/158456325028528675187087900672",
+            "lower_margin": "3163029688299063609209326957175/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "8762007045589793133039746357528611/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "6096812271509894533801969699/158456325028528675187087900672",
+            "upper_margin": "3163029688299063609207962335197/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "6096812271509894532437347721/158456325028528675187087900672",
+            "lower_margin": "786184812871133481403003728503/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "8762007045589793133039746357528611/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "6096812271509894533801969699/158456325028528675187087900672",
+            "upper_margin": "786184812871133481401639106525/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "6096812271509894532437347721/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "8762007045589793133039746357528611/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "6096812271509894533801969699/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "6096812271509894532437347721/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "8762007045589793133039746357528611/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "6096812271509894533801969699/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "7555786372591432341913615/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "25300012827019619648516703713/387824007395282846560328613888",
+            "lower_margin": "9670300172055051544359717891517/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "42890283225884774606039169629691863/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "50600025654039239307562590167/775648014790565693120657227776",
+            "upper_margin": "19340600344110103088708906600293/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "25300012827019619648516703713/387824007395282846560328613888",
+            "lower_margin": "1913820024149394613153130215333/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "42890283225884774606039169629691863/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "50600025654039239307562590167/775648014790565693120657227776",
+            "upper_margin": "3827640048298789226295731247925/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "25300012827019619648516703713/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "42890283225884774606039169629691863/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "50600025654039239307562590167/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "25300012827019619648516703713/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "42890283225884774606039169629691863/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55296",
+            "upper": "50600025654039239307562590167/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "16622730019701151152209953/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "910493983390366085805450793/19807040628566084398385987584",
+            "lower_margin": "543783123302176954869810289111/19807040628566084398385987584",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "89120966070060376826253735825360223/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "70304",
+            "upper": "58271614936983429513674605919/1267650600228229401496703205376",
+            "upper_margin": "34802119891339325111645732747937/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "910493983390366085805450793/19807040628566084398385987584",
+            "lower_margin": "98124709159440055906124683735/19807040628566084398385987584",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "89120966070060376826253735825360223/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "70304",
+            "upper": "58271614936983429513674605919/1267650600228229401496703205376",
+            "upper_margin": "6279981386204163577969854003873/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "910493983390366085805450793/19807040628566084398385987584",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "89120966070060376826253735825360223/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "70304",
+            "upper": "58271614936983429513674605919/1267650600228229401496703205376",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "910493983390366085805450793/19807040628566084398385987584",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "89120966070060376826253735825360223/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "70304",
+            "upper": "58271614936983429513674605919/1267650600228229401496703205376",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "10f3d1bfc38b2ad35eddf3fb95052d894e2fa2eaba6886725d5206e04e1f494c",
+      "selection_origins": [
+        "bit_length_power"
+      ],
+      "validation_stored_failure_witnesses": []
+    },
+    {
+      "blocks": [
+        {
+          "B": 1,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "1327104",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 10240771,
+              "triples": 10246368,
+              "zero_terms": 5597
+            },
+            "full": {
+              "active_nonzero_terms": 10245774,
+              "triples": 10251376,
+              "zero_terms": 5602
+            },
+            "retained": {
+              "active_nonzero_terms": 5003,
+              "triples": 5008,
+              "zero_terms": 5
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -1929438104224712329221918151826,
+              "lo": -1929438104224712329333004563506
+            },
+            "exact_full_S": "81044",
+            "full_S_ticks": {
+              "hi": 97976184124848006890508906477,
+              "lo": 97976184124848006779357788174
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "964719052112356164610959075913/158456325028528675187087900672",
+              "upper": "964719052112356164666502281753/158456325028528675187087900672"
+            },
+            "retained_prefix_ticks": {
+              "hi": 2027414288349560336112427058303,
+              "lo": 2027414288349560336112362351680
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 7103184,
+            "A_X": 1857096,
+            "Delta": -325200,
+            "diagnostic_only": true,
+            "normalized_energy": "232137/32768",
+            "normalized_innovation": "-20325/65536"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "64"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 1,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "1327104",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 25744080,
+              "triples": 25744080,
+              "zero_terms": 0
+            },
+            "full": {
+              "active_nonzero_terms": 25752120,
+              "triples": 25752120,
+              "zero_terms": 0
+            },
+            "retained": {
+              "active_nonzero_terms": 8040,
+              "triples": 8040,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -5064555919593164358118247413574,
+              "lo": -5064555919593164358598692647280
+            },
+            "exact_full_S": "188170",
+            "full_S_ticks": {
+              "hi": 227483571476884772044933349916,
+              "lo": 227483571476884771564305098051
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "2532277959796582179059123706787/387824007395282846560328613888",
+              "upper": "105511581658190924137472763485/16159333641470118606680358912"
+            },
+            "retained_prefix_ticks": {
+              "hi": 5292039491070049130163180763490,
+              "lo": 5292039491070049130162997745331
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 21333082,
+            "A_X": 5521841,
+            "Delta": -754282,
+            "diagnostic_only": true,
+            "normalized_energy": "5521841/641601",
+            "normalized_innovation": "-377141/1283202"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "64"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 1,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "1827904",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 42593356,
+              "triples": 42606258,
+              "zero_terms": 12902
+            },
+            "full": {
+              "active_nonzero_terms": 42603757,
+              "triples": 42616665,
+              "zero_terms": 12908
+            },
+            "retained": {
+              "active_nonzero_terms": 10401,
+              "triples": 10407,
+              "zero_terms": 6
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -13846714314005396112745314072700,
+              "lo": -13846714314005396113815997602476
+            },
+            "exact_full_S": "-4039604",
+            "full_S_ticks": {
+              "hi": -4883581576618534472124064637964,
+              "lo": -4883581576618534473195070008009
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+              "upper": "3461678578501349028453999400619/316912650057057350374175801344"
+            },
+            "retained_prefix_ticks": {
+              "hi": 8963132737386861640621249434736,
+              "lo": 8963132737386861640620927594467
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 44569104,
+            "A_X": 7103184,
+            "Delta": 16156368,
+            "diagnostic_only": true,
+            "normalized_energy": "443949/65536",
+            "normalized_innovation": "1009773/262144"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "64"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "1511157274518286468382723/302231454903657293676544",
+          "2": "1511157274518286468382723/302231454903657293676544",
+          "3": "1511157274518286468382723/302231454903657293676544",
+          "6": "1511157274518286468382723/302231454903657293676544"
+        },
+        "cutoff": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": "c"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 1,
+        "finite_passes": 5,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/37778931862957161709568",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "964719052112356164610959075913/158456325028528675187087900672",
+            "lower_margin": "5373533949028790842872569533879/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "210288987489712631311649767835695641/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "964719052112356164666502281753/158456325028528675187087900672",
+            "upper_margin": "5373533949028790842817026328039/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "964719052112356164610959075913/158456325028528675187087900672",
+            "lower_margin": "619844198172930587259923076535/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "210288987489712631311649767835695641/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "964719052112356164666502281753/158456325028528675187087900672",
+            "upper_margin": "619844198172930587204379870695/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "964719052112356164610959075913/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "210288987489712631311649767835695641/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "964719052112356164666502281753/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "964719052112356164610959075913/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "210288987489712631311649767835695641/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "964719052112356164666502281753/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "7555786372591432341913615/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "2532277959796582179059123706787/387824007395282846560328613888",
+            "lower_margin": "16858922409967560148957345483673/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "21445221824511218474324068506314333/16159333641470118606680358912",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "105511581658190924137472763485/16159333641470118606680358912",
+            "upper_margin": "1404910200830630012393093572235/32318667282940237213360717824"
+          },
+          {
+            "X": 801,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "2532277959796582179059123706787/387824007395282846560328613888",
+            "lower_margin": "1345962114156246286544170131305/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "21445221824511218474324068506314333/16159333641470118606680358912",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "105511581658190924137472763485/16159333641470118606680358912",
+            "upper_margin": "112163509513020523858662292871/32318667282940237213360717824"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "2532277959796582179059123706787/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "21445221824511218474324068506314333/16159333641470118606680358912",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "105511581658190924137472763485/16159333641470118606680358912",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "2532277959796582179059123706787/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "21445221824511218474324068506314333/16159333641470118606680358912",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1327104",
+            "upper": "105511581658190924137472763485/16159333641470118606680358912",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "16622730019701151152209953/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+            "lower_margin": "13968517174636805242393375158753/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "579289362368473860327385897979303595/316912650057057350374175801344",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "1827904",
+            "upper": "3461678578501349028453999400619/316912650057057350374175801344",
+            "upper_margin": "13968517174636805242125704276309/316912650057057350374175801344"
+          },
+          {
+            "X": 1024,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": false,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+            "lower_margin": "-292552077930775524444564213279/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "579289362368473860327385897979303595/316912650057057350374175801344",
+            "reason": null,
+            "status": "fail",
+            "uniform_normalized_abs_prefix_upper": "1827904",
+            "upper": "3461678578501349028453999400619/316912650057057350374175801344",
+            "upper_margin": "-292552077930775524712235095723/316912650057057350374175801344"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "579289362368473860327385897979303595/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1827904",
+            "upper": "3461678578501349028453999400619/316912650057057350374175801344",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "579289362368473860327385897979303595/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "1827904",
+            "upper": "3461678578501349028453999400619/316912650057057350374175801344",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [
+        {
+          "X": 1024,
+          "bound": "1511157274518286468382723/151115727451828646838272",
+          "domain": "dyadic",
+          "global_claim_refuted": false,
+          "lower": "3461678578501349028186328518175/316912650057057350374175801344",
+          "lower_margin": "-292552077930775524444564213279/316912650057057350374175801344",
+          "q": 12,
+          "upper": "3461678578501349028453999400619/316912650057057350374175801344",
+          "upper_margin": "-292552077930775524712235095723/316912650057057350374175801344"
+        }
+      ],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "1c55d3fa21cd3ce2fa4622b56bbb80c6dc4fe198516c1ec860168c21b896d8ed",
+      "selection_origins": [
+        "fixed"
+      ],
+      "validation_stored_failure_witnesses": []
+    },
+    {
+      "blocks": [
+        {
+          "B": 0,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 10245774,
+              "triples": 10251376,
+              "zero_terms": 5602
+            },
+            "full": {
+              "active_nonzero_terms": 10245774,
+              "triples": 10251376,
+              "zero_terms": 5602
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 97976184124848006890508906477,
+              "lo": 97976184124848006779357788174
+            },
+            "exact_full_S": "81044",
+            "full_S_ticks": {
+              "hi": 97976184124848006890508906477,
+              "lo": 97976184124848006779357788174
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-97976184124848006890508906477/316912650057057350374175801344",
+              "upper": "-48988092062424003389678894087/158456325028528675187087900672"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 7103184,
+            "A_X": 1857096,
+            "Delta": -325200,
+            "diagnostic_only": true,
+            "normalized_energy": "232137/32768",
+            "normalized_innovation": "-20325/65536"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 0,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 25752120,
+              "triples": 25752120,
+              "zero_terms": 0
+            },
+            "full": {
+              "active_nonzero_terms": 25752120,
+              "triples": 25752120,
+              "zero_terms": 0
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 227483571476884772044933349916,
+              "lo": 227483571476884771564305098051
+            },
+            "exact_full_S": "188170",
+            "full_S_ticks": {
+              "hi": 227483571476884772044933349916,
+              "lo": 227483571476884771564305098051
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-18956964289740397670411112493/64637334565880474426721435648",
+              "upper": "-227483571476884771564305098051/775648014790565693120657227776"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 21333082,
+            "A_X": 5521841,
+            "Delta": -754282,
+            "diagnostic_only": true,
+            "normalized_energy": "5521841/641601",
+            "normalized_innovation": "-377141/1283202"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 0,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 42603757,
+              "triples": 42616665,
+              "zero_terms": 12908
+            },
+            "full": {
+              "active_nonzero_terms": 42603757,
+              "triples": 42616665,
+              "zero_terms": 12908
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -4883581576618534472124064637964,
+              "lo": -4883581576618534473195070008009
+            },
+            "exact_full_S": "-4039604",
+            "full_S_ticks": {
+              "hi": -4883581576618534472124064637964,
+              "lo": -4883581576618534473195070008009
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "1220895394154633618031016159491/316912650057057350374175801344",
+              "upper": "4883581576618534473195070008009/1267650600228229401496703205376"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 44569104,
+            "A_X": 7103184,
+            "Delta": 16156368,
+            "diagnostic_only": true,
+            "normalized_energy": "443949/65536",
+            "normalized_innovation": "1009773/262144"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 81,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 4,
+              "log_definition": "L=1+log(4X)",
+              "outer": 8,
+              "q_coefficient": 24,
+              "q_power": 4
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 4,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "2417851639229258349412369/1208925819614629174706176",
+          "2": "2417851639229258349412369/1208925819614629174706176",
+          "3": "2417851639229258349412369/1208925819614629174706176",
+          "6": "2417851639229258349412369/1208925819614629174706176"
+        },
+        "cutoff": {
+          "kind": "fixed",
+          "value": 0
+        },
+        "target": "c"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "2417851639229258349412369/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-97976184124848006890508906477/316912650057057350374175801344",
+            "lower_margin": "5168578585037765612877357379565/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "-48988092062424003389678894087/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-48988092062424003389678894087/158456325028528675187087900672",
+            "upper_margin": "2584289292518882806383103130631/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": "2417851639229258349412369/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-97976184124848006890508906477/316912650057057350374175801344",
+            "lower_margin": "1365626784353077408387221024749/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "-48988092062424003389678894087/158456325028528675187087900672",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-48988092062424003389678894087/158456325028528675187087900672",
+            "upper_margin": "682813392176538704138034953223/158456325028528675187087900672"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-97976184124848006890508906477/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "-48988092062424003389678894087/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-48988092062424003389678894087/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-97976184124848006890508906477/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "-48988092062424003389678894087/158456325028528675187087900672",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-48988092062424003389678894087/158456325028528675187087900672",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "12089258196146291747061845/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-18956964289740397670411112493/64637334565880474426721435648",
+            "lower_margin": "2623407311214699772409697829601/129274669131760948853442871296",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "-227483571476884771564305098051/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-227483571476884771564305098051/775648014790565693120657227776",
+            "upper_margin": "15740443867288198633977558725741/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": "2417851639229258349412369/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-18956964289740397670411112493/64637334565880474426721435648",
+            "lower_margin": "555012605106524590754597345909/129274669131760948853442871296",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "-227483571476884771564305098051/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-227483571476884771564305098051/775648014790565693120657227776",
+            "upper_margin": "3330075630639147544046955823589/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-18956964289740397670411112493/64637334565880474426721435648",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "-227483571476884771564305098051/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-227483571476884771564305098051/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-18956964289740397670411112493/64637334565880474426721435648",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "-227483571476884771564305098051/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "-227483571476884771564305098051/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "26596368031521841843536059/1208925819614629174706176",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "1220895394154633618031016159491/316912650057057350374175801344",
+            "lower_margin": "5751182907100628090200900491005/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "upper_margin": "23004731628402512359732596593975/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": "2417851639229258349412369/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "1220895394154633618031016159491/316912650057057350374175801344",
+            "lower_margin": "46755206073595783465695958781/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "upper_margin": "187020824294383132791778465079/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "1220895394154633618031016159491/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "1220895394154633618031016159491/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "4883581576618534473195070008009/1267650600228229401496703205376",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "ad255c359768276b0a851013ba700c28982e744d1da195c4eab29682ea4f7941",
+      "selection_origins": [
+        "baseline",
+        "all_admitted"
+      ],
+      "validation_stored_failure_witnesses": []
+    },
+    {
+      "blocks": [
+        {
+          "B": 1,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "192",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 4953918,
+              "triples": 12509244,
+              "zero_terms": 7555326
+            },
+            "full": {
+              "active_nonzero_terms": 4957899,
+              "triples": 12515358,
+              "zero_terms": 7557459
+            },
+            "retained": {
+              "active_nonzero_terms": 3981,
+              "triples": 6114,
+              "zero_terms": 2133
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 22813468568523017173654664090,
+              "lo": 22813468568523017170918394489
+            },
+            "exact_full_S": "-13671/2",
+            "full_S_ticks": {
+              "hi": -8263612439975797722334287455,
+              "lo": -8263612439975797725073647043
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-11406734284261508586827332045/158456325028528675187087900672",
+              "upper": "-22813468568523017170918394489/316912650057057350374175801344"
+            },
+            "retained_prefix_ticks": {
+              "hi": -31077081008498814895988951545,
+              "lo": -31077081008498814895992041532
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 47135,
+            "A_X": 8622,
+            "Delta": 12647,
+            "diagnostic_only": true,
+            "normalized_energy": "4311/131072",
+            "normalized_innovation": "12647/1048576"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "16"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 1,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "192",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 12313782,
+              "triples": 31325166,
+              "zero_terms": 19011384
+            },
+            "full": {
+              "active_nonzero_terms": 12320100,
+              "triples": 31334949,
+              "zero_terms": 19014849
+            },
+            "retained": {
+              "active_nonzero_terms": 6318,
+              "triples": 9783,
+              "zero_terms": 3465
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 26182774402413301834739479079,
+              "lo": 26182774402413301824192972623
+            },
+            "exact_full_S": "-33432",
+            "full_S_ticks": {
+              "hi": -40416808001356282563499282196,
+              "lo": -40416808001356282574053392688
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-26182774402413301834739479079/775648014790565693120657227776",
+              "upper": "-26182774402413301824192972623/775648014790565693120657227776"
+            },
+            "retained_prefix_ticks": {
+              "hi": -66599582403769584398238761275,
+              "lo": -66599582403769584398246365311
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 153226,
+            "A_X": 21991,
+            "Delta": 65262,
+            "diagnostic_only": true,
+            "normalized_energy": "21991/641601",
+            "normalized_innovation": "10877/427734"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "16"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 1,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "208",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 20264238,
+              "triples": 51731784,
+              "zero_terms": 31467546
+            },
+            "full": {
+              "active_nonzero_terms": 20272375,
+              "triples": 51744420,
+              "zero_terms": 31472045
+            },
+            "retained": {
+              "active_nonzero_terms": 8137,
+              "triples": 12636,
+              "zero_terms": 4499
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 60438775207510613524776382491,
+              "lo": 60438775207510613502622340891
+            },
+            "exact_full_S": "-67709/2",
+            "full_S_ticks": {
+              "hi": -40927579160143463384006005623,
+              "lo": -40927579160143463406172473927
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-60438775207510613524776382491/1267650600228229401496703205376",
+              "upper": "-60438775207510613502622340891/1267650600228229401496703205376"
+            },
+            "retained_prefix_ticks": {
+              "hi": -101366354367654076908782388114,
+              "lo": -101366354367654076908794814818
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 254201,
+            "A_X": 47135,
+            "Delta": 65661,
+            "diagnostic_only": true,
+            "normalized_energy": "47135/1048576",
+            "normalized_innovation": "65661/4194304"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "16"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "1511157274518286468382723/604462909807314587353088",
+          "2": "1511157274518286468382723/604462909807314587353088",
+          "3": "1511157274518286468382723/604462909807314587353088",
+          "6": "1511157274518286468382723/604462909807314587353088"
+        },
+        "cutoff": {
+          "kind": "fixed",
+          "value": 1
+        },
+        "target": "mu"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/75557863725914323419136",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-11406734284261508586827332045/158456325028528675187087900672",
+            "lower_margin": "3180533234854835012328591636941/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "60824415342386488254670835463559/316912650057057350374175801344",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-22813468568523017170918394489/316912650057057350374175801344",
+            "upper_margin": "6361066469709670024654447004281/316912650057057350374175801344"
+          },
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-11406734284261508586827332045/158456325028528675187087900672",
+            "lower_margin": "803688359426904884522268408269/158456325028528675187087900672",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "60824415342386488254670835463559/316912650057057350374175801344",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-22813468568523017170918394489/316912650057057350374175801344",
+            "upper_margin": "1607376718853809769041800546937/316912650057057350374175801344"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-11406734284261508586827332045/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "60824415342386488254670835463559/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-22813468568523017170918394489/316912650057057350374175801344",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-11406734284261508586827332045/158456325028528675187087900672",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "60824415342386488254670835463559/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-22813468568523017170918394489/316912650057057350374175801344",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "7555786372591432341913615/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-26182774402413301834739479079/775648014790565693120657227776",
+            "lower_margin": "19417383144166555629851208669539/775648014790565693120657227776",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "148898236065386199777341994760369/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-26182774402413301824192972623/775648014790565693120657227776",
+            "upper_margin": "19417383144166555629840662163083/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-26182774402413301834739479079/775648014790565693120657227776",
+            "lower_margin": "3904422848355241767438033317171/775648014790565693120657227776",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "148898236065386199777341994760369/775648014790565693120657227776",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-26182774402413301824192972623/775648014790565693120657227776",
+            "upper_margin": "3904422848355241767427486810715/775648014790565693120657227776"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-26182774402413301834739479079/775648014790565693120657227776",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "148898236065386199777341994760369/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-26182774402413301824192972623/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-26182774402413301834739479079/775648014790565693120657227776",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "148898236065386199777341994760369/775648014790565693120657227776",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "192",
+            "upper": "-26182774402413301824192972623/775648014790565693120657227776",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "16622730019701151152209953/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-60438775207510613524776382491/1267650600228229401496703205376",
+            "lower_margin": "34920830281483819154684183736347/1267650600228229401496703205376",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "263610886072264204897811644377317/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "208",
+            "upper": "-60438775207510613502622340891/1267650600228229401496703205376",
+            "upper_margin": "34920830281483819154662029694747/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": "1511157274518286468382723/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-60438775207510613524776382491/1267650600228229401496703205376",
+            "lower_margin": "6398691776348657621008304992283/1267650600228229401496703205376",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "263610886072264204897811644377317/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "208",
+            "upper": "-60438775207510613502622340891/1267650600228229401496703205376",
+            "upper_margin": "6398691776348657620986150950683/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-60438775207510613524776382491/1267650600228229401496703205376",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "263610886072264204897811644377317/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "208",
+            "upper": "-60438775207510613502622340891/1267650600228229401496703205376",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-60438775207510613524776382491/1267650600228229401496703205376",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "263610886072264204897811644377317/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "208",
+            "upper": "-60438775207510613502622340891/1267650600228229401496703205376",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "df6f96d5534ece65816945f5ba30b352f04119cffee2b532e50532cdb2ee8146",
+      "selection_origins": [
+        "fixed"
+      ],
+      "validation_stored_failure_witnesses": []
+    },
+    {
+      "blocks": [
+        {
+          "B": 0,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 4957899,
+              "triples": 12515358,
+              "zero_terms": 7557459
+            },
+            "full": {
+              "active_nonzero_terms": 4957899,
+              "triples": 12515358,
+              "zero_terms": 7557459
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -8263612439975797722334287455,
+              "lo": -8263612439975797725073647043
+            },
+            "exact_full_S": "-13671/2",
+            "full_S_ticks": {
+              "hi": -8263612439975797722334287455,
+              "lo": -8263612439975797725073647043
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "8263612439975797722334287455/316912650057057350374175801344",
+              "upper": "8263612439975797725073647043/316912650057057350374175801344"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 47135,
+            "A_X": 8622,
+            "Delta": 12647,
+            "diagnostic_only": true,
+            "normalized_energy": "4311/131072",
+            "normalized_innovation": "12647/1048576"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 0,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 12320100,
+              "triples": 31334949,
+              "zero_terms": 19014849
+            },
+            "full": {
+              "active_nonzero_terms": 12320100,
+              "triples": 31334949,
+              "zero_terms": 19014849
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -40416808001356282563499282196,
+              "lo": -40416808001356282574053392688
+            },
+            "exact_full_S": "-33432",
+            "full_S_ticks": {
+              "hi": -40416808001356282563499282196,
+              "lo": -40416808001356282574053392688
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "10104202000339070640874820549/193912003697641423280164306944",
+              "upper": "2526050500084767660878337043/48478000924410355820041076736"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 153226,
+            "A_X": 21991,
+            "Delta": 65262,
+            "diagnostic_only": true,
+            "normalized_energy": "21991/641601",
+            "normalized_innovation": "10877/427734"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 0,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "0",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 20272375,
+              "triples": 51744420,
+              "zero_terms": 31472045
+            },
+            "full": {
+              "active_nonzero_terms": 20272375,
+              "triples": 51744420,
+              "zero_terms": 31472045
+            },
+            "retained": {
+              "active_nonzero_terms": 0,
+              "triples": 0,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": -40927579160143463384006005623,
+              "lo": -40927579160143463406172473927
+            },
+            "exact_full_S": "-67709/2",
+            "full_S_ticks": {
+              "hi": -40927579160143463384006005623,
+              "lo": -40927579160143463406172473927
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "40927579160143463384006005623/1267650600228229401496703205376",
+              "upper": "40927579160143463406172473927/1267650600228229401496703205376"
+            },
+            "retained_prefix_ticks": {
+              "hi": 0,
+              "lo": 0
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 254201,
+            "A_X": 47135,
+            "Delta": 65661,
+            "diagnostic_only": true,
+            "normalized_energy": "47135/1048576",
+            "normalized_innovation": "65661/4194304"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 3,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 1,
+              "log_definition": "L=1+log(4X)",
+              "outer": 1,
+              "q_coefficient": 1,
+              "q_power": 1
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 1,
+            "ordinary_X_power": "2",
+            "scalar": "0"
+          },
+          "target": "mu",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "755578637259143234191371/1208925819614629174706176",
+          "2": "755578637259143234191371/1208925819614629174706176",
+          "3": "755578637259143234191371/1208925819614629174706176",
+          "6": "755578637259143234191371/1208925819614629174706176"
+        },
+        "cutoff": {
+          "kind": "fixed",
+          "value": 0
+        },
+        "target": "mu"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "755578637259143234191371/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "8263612439975797722334287455/316912650057057350374175801344",
+            "lower_margin": "1576299637845310954148567787937/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "8263612439975797725073647043/316912650057057350374175801344",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "8263612439975797725073647043/316912650057057350374175801344",
+            "upper_margin": "1576299637845310954145828428349/316912650057057350374175801344"
+          },
+          {
+            "X": 512,
+            "bound": "755578637259143234191371/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "8263612439975797722334287455/316912650057057350374175801344",
+            "lower_margin": "387877200131345890245391231393/316912650057057350374175801344",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "8263612439975797725073647043/316912650057057350374175801344",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "8263612439975797725073647043/316912650057057350374175801344",
+            "upper_margin": "387877200131345890242651871805/316912650057057350374175801344"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "8263612439975797722334287455/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "8263612439975797725073647043/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "8263612439975797725073647043/316912650057057350374175801344",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "8263612439975797722334287455/316912650057057350374175801344",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "8263612439975797725073647043/316912650057057350374175801344",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "8263612439975797725073647043/316912650057057350374175801344",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "3777893186295716170956855/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "10104202000339070640874820549/193912003697641423280164306944",
+            "lower_margin": "2403691642219839649720339483757/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "2526050500084767660878337043/48478000924410355820041076736",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "2526050500084767660878337043/48478000924410355820041076736",
+            "upper_margin": "2403691642219839649715062428511/387824007395282846560328613888"
+          },
+          {
+            "X": 801,
+            "bound": "755578637259143234191371/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "10104202000339070640874820549/193912003697641423280164306944",
+            "lower_margin": "464571605243425416918668183873/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "2526050500084767660878337043/48478000924410355820041076736",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "2526050500084767660878337043/48478000924410355820041076736",
+            "upper_margin": "464571605243425416913391128627/387824007395282846560328613888"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "10104202000339070640874820549/193912003697641423280164306944",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "2526050500084767660878337043/48478000924410355820041076736",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "2526050500084767660878337043/48478000924410355820041076736",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "10104202000339070640874820549/193912003697641423280164306944",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "2526050500084767660878337043/48478000924410355820041076736",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "2526050500084767660878337043/48478000924410355820041076736",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "8311365009850575576105081/1208925819614629174706176",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "40927579160143463384006005623/1267650600228229401496703205376",
+            "lower_margin": "8674170297408933671905955409033/1267650600228229401496703205376",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "40927579160143463406172473927/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "40927579160143463406172473927/1267650600228229401496703205376",
+            "upper_margin": "8674170297408933671883788940729/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": "755578637259143234191371/604462909807314587353088",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "40927579160143463384006005623/1267650600228229401496703205376",
+            "lower_margin": "1543635671125143288486896069769/1267650600228229401496703205376",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "40927579160143463406172473927/1267650600228229401496703205376",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "40927579160143463406172473927/1267650600228229401496703205376",
+            "upper_margin": "1543635671125143288464729601465/1267650600228229401496703205376"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "40927579160143463384006005623/1267650600228229401496703205376",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "40927579160143463406172473927/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "40927579160143463406172473927/1267650600228229401496703205376",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "40927579160143463384006005623/1267650600228229401496703205376",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "40927579160143463406172473927/1267650600228229401496703205376",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "0",
+            "upper": "40927579160143463406172473927/1267650600228229401496703205376",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "ee3998d569168871ae57d20fad26cf39f26277649a20e8abfe9f2dcdcca2864c",
+      "selection_origins": [
+        "baseline",
+        "all_admitted"
+      ],
+      "validation_stored_failure_witnesses": []
+    },
+    {
+      "blocks": [
+        {
+          "B": 3,
+          "X": 512,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "55037657088",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 10223220,
+              "triples": 10228789,
+              "zero_terms": 5569
+            },
+            "full": {
+              "active_nonzero_terms": 10245774,
+              "triples": 10251376,
+              "zero_terms": 5602
+            },
+            "retained": {
+              "active_nonzero_terms": 22554,
+              "triples": 22587,
+              "zero_terms": 33
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 2672754083904666873060110162160,
+              "lo": 2672754083904666872949318643396
+            },
+            "exact_full_S": "81044",
+            "full_S_ticks": {
+              "hi": 97976184124848006890508906477,
+              "lo": 97976184124848006779357788174
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-167047130244041679566256885135/19807040628566084398385987584",
+              "upper": "-668188520976166718237329660849/79228162514264337593543950336"
+            },
+            "retained_prefix_ticks": {
+              "hi": -2574777899779818866169601255683,
+              "lo": -2574777899779818866169960855222
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 7103184,
+            "A_X": 1857096,
+            "Delta": -325200,
+            "diagnostic_only": true,
+            "normalized_energy": "232137/32768",
+            "normalized_innovation": "-20325/65536"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 6561,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 8,
+              "log_definition": "L=1+log(4X)",
+              "outer": 128,
+              "q_coefficient": 40320,
+              "q_power": 8
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 8,
+            "ordinary_X_power": "2",
+            "scalar": "128"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 3,
+          "X": 801,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "55037657088",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 25715790,
+              "triples": 25715790,
+              "zero_terms": 0
+            },
+            "full": {
+              "active_nonzero_terms": 25752120,
+              "triples": 25752120,
+              "zero_terms": 0
+            },
+            "retained": {
+              "active_nonzero_terms": 36330,
+              "triples": 36330,
+              "zero_terms": 0
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 6932853135186215863153935843650,
+              "lo": 6932853135186215862674321164356
+            },
+            "exact_full_S": "188170",
+            "full_S_ticks": {
+              "hi": 227483571476884772044933349916,
+              "lo": 227483571476884771564305098051
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-3466426567593107931576967921825/387824007395282846560328613888",
+              "upper": "-577737761265517988556193430363/64637334565880474426721435648"
+            },
+            "retained_prefix_ticks": {
+              "hi": -6705369563709331091109002493734,
+              "lo": -6705369563709331091110016066305
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 21333082,
+            "A_X": 5521841,
+            "Delta": -754282,
+            "diagnostic_only": true,
+            "normalized_energy": "5521841/641601",
+            "normalized_innovation": "-377141/1283202"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 6561,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 8,
+              "log_definition": "L=1+log(4X)",
+              "outer": 128,
+              "q_coefficient": 40320,
+              "q_power": 8
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 8,
+            "ordinary_X_power": "2",
+            "scalar": "128"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        },
+        {
+          "B": 3,
+          "X": 1024,
+          "coarse_cost_rule": "scalar*(2+bit_length(X))^degree; 1+log(4X)<=2+bit_length(X)",
+          "coarse_uniform_normalized_prefix_cost": "104413532288",
+          "coverage": {
+            "complement": {
+              "active_nonzero_terms": 42556716,
+              "triples": 42569586,
+              "zero_terms": 12870
+            },
+            "full": {
+              "active_nonzero_terms": 42603757,
+              "triples": 42616665,
+              "zero_terms": 12908
+            },
+            "retained": {
+              "active_nonzero_terms": 47041,
+              "triples": 47079,
+              "zero_terms": 38
+            }
+          },
+          "forcing": {
+            "complement_remainder_ticks": {
+              "hi": 6505383714328700195904021379344,
+              "lo": 6505383714328700194834802459790
+            },
+            "exact_full_S": "-4039604",
+            "full_S_ticks": {
+              "hi": -4883581576618534472124064637964,
+              "lo": -4883581576618534473195070008009
+            },
+            "identity_verified": true,
+            "interval_denominator": 1208925819614629174706176,
+            "normalized_negative_remainder": {
+              "lower": "-406586482145543762244001336209/79228162514264337593543950336",
+              "upper": "-3252691857164350097417401229895/633825300114114700748351602688"
+            },
+            "retained_prefix_ticks": {
+              "hi": -11388965290947234668028086017308,
+              "lo": -11388965290947234668029872467799
+            }
+          },
+          "original_target_diagnostics": {
+            "A_2X": 44569104,
+            "A_X": 7103184,
+            "Delta": 16156368,
+            "diagnostic_only": true,
+            "normalized_energy": "443949/65536",
+            "normalized_innovation": "1009773/262144"
+          },
+          "supplied_uniform_prefix_certificate": {
+            "RH_proved": false,
+            "admitted_component_bound": true,
+            "bound": "|S_prefix| <= scalar*X^ordinary_X_power*(1+log(4X))^log_4X_power",
+            "cofinal_conversion": {
+              "constant_term": 6561,
+              "inequality": "L^d <= 2^(d-1)*(3^d+d!*q^d)*ceil(X^(1/q)), q integer>=1",
+              "integer_degree": 8,
+              "log_definition": "L=1+log(4X)",
+              "outer": 128,
+              "q_coefficient": 40320,
+              "q_power": 8
+            },
+            "cofinal_critical_component_bound": true,
+            "full_signed_bound_proved": false,
+            "log_4X_power": 8,
+            "ordinary_X_power": "2",
+            "scalar": "128"
+          },
+          "target": "c",
+          "unknown_remainder_law_proved": false
+        }
+      ],
+      "exact_program": {
+        "constants": {
+          "12": "1511157274518286468382723/302231454903657293676544",
+          "2": "1511157274518286468382723/302231454903657293676544",
+          "3": "1511157274518286468382723/302231454903657293676544",
+          "6": "1511157274518286468382723/302231454903657293676544"
+        },
+        "cutoff": {
+          "kind": "bit_length_power",
+          "power": "1/2"
+        },
+        "target": "c"
+      },
+      "final_interval_score": {
+        "finite_cases": 12,
+        "finite_failures": 0,
+        "finite_passes": 6,
+        "global_bound_proved": false,
+        "missing_cases": 6,
+        "observations": [
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/37778931862957161709568",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-167047130244041679566256885135/19807040628566084398385987584",
+            "lower_margin": "959328755386685055501697961359/19807040628566084398385987584",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "4360532439504228000084772343012340720719/79228162514264337593543950336",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-668188520976166718237329660849/79228162514264337593543950336",
+            "upper_margin": "3837315021546740221979093965745/79228162514264337593543950336"
+          },
+          {
+            "X": 512,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-167047130244041679566256885135/19807040628566084398385987584",
+            "lower_margin": "365117536529702523550117154191/19807040628566084398385987584",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "4360532439504228000084772343012340720719/79228162514264337593543950336",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-668188520976166718237329660849/79228162514264337593543950336",
+            "upper_margin": "1460470146118810094172770737073/79228162514264337593543950336"
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-167047130244041679566256885135/19807040628566084398385987584",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "4360532439504228000084772343012340720719/79228162514264337593543950336",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-668188520976166718237329660849/79228162514264337593543950336",
+            "upper_margin": null
+          },
+          {
+            "X": 512,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-167047130244041679566256885135/19807040628566084398385987584",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "4360532439504228000084772343012340720719/79228162514264337593543950336",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-668188520976166718237329660849/79228162514264337593543950336",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": "7555786372591432341913615/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-3466426567593107931576967921825/387824007395282846560328613888",
+            "lower_margin": "22857626937357250259593437112285/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "3557487454341521135027129770737489642661/64637334565880474426721435648",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-577737761265517988556193430363/64637334565880474426721435648",
+            "upper_margin": "3809604489559541709892271628773/64637334565880474426721435648"
+          },
+          {
+            "X": 801,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-3466426567593107931576967921825/387824007395282846560328613888",
+            "lower_margin": "7344666641545936397180261759917/387824007395282846560328613888",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "3557487454341521135027129770737489642661/64637334565880474426721435648",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-577737761265517988556193430363/64637334565880474426721435648",
+            "upper_margin": "1224111106924322732823409070045/64637334565880474426721435648"
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-3466426567593107931576967921825/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "3557487454341521135027129770737489642661/64637334565880474426721435648",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-577737761265517988556193430363/64637334565880474426721435648",
+            "upper_margin": null
+          },
+          {
+            "X": 801,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-3466426567593107931576967921825/387824007395282846560328613888",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "3557487454341521135027129770737489642661/64637334565880474426721435648",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "55037657088",
+            "upper": "-577737761265517988556193430363/64637334565880474426721435648",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": "16622730019701151152209953/302231454903657293676544",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 3,
+            "lower": "-406586482145543762244001336209/79228162514264337593543950336",
+            "lower_margin": "4764135420430082329888927255441/79228162514264337593543950336",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "66179938435163713533959117732622634360249/633825300114114700748351602688",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "104413532288",
+            "upper": "-3252691857164350097417401229895/633825300114114700748351602688",
+            "upper_margin": "38113083363440658638576808583751/633825300114114700748351602688"
+          },
+          {
+            "X": 1024,
+            "bound": "1511157274518286468382723/151115727451828646838272",
+            "finite_pass": true,
+            "global_bound_proved": false,
+            "level": 12,
+            "lower": "-406586482145543762244001336209/79228162514264337593543950336",
+            "lower_margin": "1198868107288187138179442412433/79228162514264337593543950336",
+            "missing": false,
+            "normalized_upper_plus_auxiliary": "66179938435163713533959117732622634360249/633825300114114700748351602688",
+            "reason": null,
+            "status": "pass",
+            "uniform_normalized_abs_prefix_upper": "104413532288",
+            "upper": "-3252691857164350097417401229895/633825300114114700748351602688",
+            "upper_margin": "9590944858305497104900929839687/633825300114114700748351602688"
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 17,
+            "lower": "-406586482145543762244001336209/79228162514264337593543950336",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "66179938435163713533959117732622634360249/633825300114114700748351602688",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "104413532288",
+            "upper": "-3252691857164350097417401229895/633825300114114700748351602688",
+            "upper_margin": null
+          },
+          {
+            "X": 1024,
+            "bound": null,
+            "finite_pass": null,
+            "global_bound_proved": false,
+            "level": 29,
+            "lower": "-406586482145543762244001336209/79228162514264337593543950336",
+            "lower_margin": null,
+            "missing": true,
+            "normalized_upper_plus_auxiliary": "66179938435163713533959117732622634360249/633825300114114700748351602688",
+            "reason": "unknown_level_constant",
+            "status": "missing",
+            "uniform_normalized_abs_prefix_upper": "104413532288",
+            "upper": "-3252691857164350097417401229895/633825300114114700748351602688",
+            "upper_margin": null
+          }
+        ],
+        "unresolved_intervals": 0
+      },
+      "final_stored_failure_witnesses": [],
+      "global_claim_not_refuted_by_finite_failure": true,
+      "program_id": "f2912ae583951d2ec821f554fe212afed33f54d53f5f5a1a173882df698f8b43",
+      "selection_origins": [
+        "bit_length_power"
+      ],
+      "validation_stored_failure_witnesses": []
+    }
+  ],
+  "total_attempts": 28,
+  "verification_sha256": "698e73f62eadac102e1e36c323ec11ff5631237cc64ef6af9852a067341f0c4f",
+  "verified_final_counts": {
+    "dyadic_stored_constant_failures": 1,
+    "failures": 1,
+    "missing": 36,
+    "offdomain_finite_failures": 0,
+    "passes": 35,
+    "unresolved_intervals": 0
+  },
+  "verified_input_sha256": {
+    "candidate_batch.json": "7ce08859db5cca31a35ac650283f96dbb25507f985555ee42f67473aff09bc06",
+    "contract_tests.txt": "acb095a71a287a420acc05ece60ccbf8a948925411fb3027117ea70828d969eb",
+    "final_cases.json": "ff6ff286c46b1179f6b3f2e38002b54cbceda54321394534793ae6ba98334fa1",
+    "final_evaluation.json": "0861e6de15976b95b2d652e8cd22dfa16caca84bb2cd85ec6c3b24c81e0aeeca",
+    "proof_queue.json": "fb2bc908ffbb31d4d77d81cf0bc41e7f287843eacbcc53f0cf0dcd8e4172b641",
+    "protocol.json": "bf53a34ac8df33dd6e4fde7d1a9a4e0e64f866e3e84f1db1c85a8641c02546ea",
+    "seal.json": "48764b774e3eaea8e02f7e89f8a1ee8c14dc4416c917a48afa5f6d4b2e78d574",
+    "source_seal.json": "c5974d4e16f125a44b01eb9a84e6a781faa1bb6bcc5f3ae3a8e4282659183e96",
+    "training.json": "666ece60feb1b4ec353d2d137a4ca745c29e391192ed83bb056f4fdfd02b1bd7",
+    "validation.json": "ebe5ed32a55692e843e2e8d863c3a66954ff0670de6478320d911bfcfad4f27e",
+    "validation_data.json": "ff6b08dbe99f567854310fb61d343b66f04baf023c297d4998abd16b35e217b7",
+    "worker_replay.json": "07f15cd4335834d1eec84f97c8a11ec39faa0b72024ac99ffc6a4aac94f5d6e4"
+  }
+}

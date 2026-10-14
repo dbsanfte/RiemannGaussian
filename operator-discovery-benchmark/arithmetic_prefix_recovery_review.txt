@@ -1,0 +1,257 @@
+Independent review: arithmetic prefix averaging and target recovery
+
+Initial mathematical verdict
+
+The proposed contraction is valid, including a measurable t-dependent bank
+size, complex-valued f, arbitrary admitted zero terms, and finite horizons.
+The dilations must be DISTINCT INTEGERS >=2 (or separately satisfy d_j>=j+1).
+N(t) must be a finite nonnegative integer wherever the operator is evaluated.
+The averaging is over precisely the first N(t) entries of one fixed ordered
+sequence. An arbitrary selected subset or a differently normalized weighted
+bank is not covered by the stated certificate.
+
+This certifies a recovery operator. It does NOT certify a uniform bound for
+the residual, a numerical result, or RH. No numerical responses, source tables,
+experiments, tests or hashes were used for this initial proof review.
+
+Operator and truncated norms
+
+Fix distinct integers 2<=d_1<d_2<..., either an infinite sequence or a finite
+sequence of length L. In the finite case require N(t)<=L. Let N be measurable
+and finite with values in the nonnegative integers. Source-free N is required
+for the proposed candidate semantics. The inequality itself holds for any
+such fixed N; source-free is not needed by Jensen.
+
+For a measurable complex f set f(u)=0 for 0<u<1, and define
+
+  Af(t)=0 if N(t)=0,
+  Af(t)=N(t)^-1 sum_{j=1}^{N(t)} f(t/d_j) otherwise.
+
+For sigma>=1/2 and finite T>=1, use
+  ||f||_{sigma,T}^2=integral_1^T |f(t)|^2 t^(-2sigma-1) dt.
+
+For f in this L2 space, Jensen/Cauchy-Schwarz gives pointwise
+
+  |Af(t)|^2<=sum_{j>=1} 1_{N(t)>=j}/N(t) |f(t/d_j)|^2,
+
+where the fraction is defined as0 when the indicator is false. Integrating
+nonnegative terms and applying Tonelli, then t=d_j u in each term, gives
+
+  ||Af||^2 <=sum_j d_j^(-2sigma)
+       integral_1^{T/d_j} [1_{N(d_j u)>=j}/N(d_j u)]
+                          |f(u)|^2 u^(-2sigma-1) du
+    <=sum_j [1/(j d_j^(2sigma))] ||f||^2.              (1)
+
+An integral whose upper endpoint is below1 is zero. The omitted portion
+u<1 contributes exactly zero by the declared extension of f. On every
+admitted term N(d_j u)>=j, so its reciprocal is at most1/j even though the
+bank changes with t. No monotonicity of N, independence among terms, or
+prime distribution theorem is used. Complex f is covered by the usual
+modulus-square Jensen inequality. Changing values at integration endpoints
+does not affect the conclusion.
+
+Infinite sums and finite bank cutoffs
+
+Each pointwise bank is finite. Infinite sequence interchange in (1) uses
+Tonelli and not an unjustified absolutely convergent signed sum. Since d_j
+are distinct integers >=2, d_j>=j+1. Thus for sigma>=1/2,
+
+  sum_j 1/(j d_j^(2sigma))<=sum_j 1/(j d_j)
+    <=sum_{j=1}^m 1/(j d_j)+sum_{j=m+1}^infinity 1/(j(j+1))
+    =c_m, c_m=sum_{j=1}^m 1/(j d_j)+1/(m+1).         (2)
+
+The baseline telescoping sum is1. In fact
+  1-c_m=sum_{j=1}^m [1/(j(j+1))-1/(j d_j)].
+Hence c_m<=1, with c_m<1 exactly when some observed d_j>j+1. For the prefix
+2,3,5, c_3=1/2+1/6+1/15+1/4=59/60. Primality is unnecessary for this numeric
+contraction witness. A program calling the sequence primes still needs its
+own correct sequence/domain linkage; checking these three numbers alone
+does not certify the semantics of an arbitrary candidate bank.
+
+For a fixed finite bank of known maximum size L, one can instead use the
+smaller coefficient sum_{j=1}^L 1/(j d_j), always <=1-1/(L+1)<1, even if
+there is no gap. The conservative infinite-extension certificate (2) is
+valid for finite banks too. If no gap is observed it simply does not certify
+strict contraction for arbitrary growing banks. Distinct real dilations
+>=2 alone do not imply d_j>=j+1, so that tail formula would be invalid.
+
+N=0 is handled explicitly. N=+infinity is outside this definition. A bank
+including entries with d_j>t is allowed: those terms are zero but still
+count in its denominator. Omitting such terms while retaining or changing
+the denominator requires checking that the resulting expression is still
+the declared prefix average. Truncating the bank at a fixed maximum L is
+valid if its N never exceeds L.
+
+Inverse residual bound and finite-horizon endpoints
+
+Let R=(I-A)f and c=c_m<1. Inequality (1) yields
+
+  ||R||>=||f||-||Af||>=(1-sqrt(c))||f||,
+  ||f||<=(1-sqrt(c))^-1 ||R||.                        (3)
+
+All norms here are on the SAME finite horizon and weight. Af up to T uses
+only f up to T/2, so it never demands unknown values beyond the horizon.
+The inverse does not have a boundary remainder at T or an initial f below1.
+
+Even an a-priori L2 hypothesis on f can be avoided if R is L2. For any K
+with 2^K>T, the delay d_j>=2 implies A^K f(t)=0 for t<=T, after the declared
+zero extension. For a fixed N, A is linear and
+
+  f=sum_{k=0}^{K-1} A^k R on [1,T].
+
+Each term is L2 by (1); its norm is at most c^(k/2)||R||. Summing the finite
+geometric series proves (3). Almost-everywhere representatives cause no
+problem: the dilations are countable, and each dilation preserves null sets.
+This finite delay argument also verifies that a genuine residual norm bound
+cannot coexist with a hidden non-L2 homogeneous solution on a finite horizon.
+
+For an exact rational certificate there is no need to encode a square root.
+Since 1-sqrt(c)=(1-c)/(1+sqrt(c))>=(1-c)/2,
+
+  ||f||<=[2/(1-c)] ||R||,
+  ||f||^2<=[4/(1-c)^2] ||R||^2.                     (4)
+
+These constants are uniform in sigma>=1/2, T, N and the admissible source.
+They are conservative upper bounds, not the exact optimal operator norm.
+
+Bounded signed selectors and finite stage composition
+
+The same proof covers
+  A_beta f(t)=N(t)^-1 sum_{j<=N(t)} beta(t,d_j)f(t/d_j)
+with measurable complex coefficients |beta(t,d_j)|<=1, and the same zero
+case. Jensen bounds its square by the average of |beta*f|^2, which is at
+most the average of |f|^2. A coefficient involving the fixed actual-mu
+source is permissible if its modulus bound is proved; freeze that function
+when treating A_beta as a linear operator on the input f. Multiplying
+selectors known to lie in {-1,0,1} preserves this bound. An arbitrary sum,
+unbounded scalar, or a division by a possibly zero selector does not.
+
+For finitely many stages f_0=f, f_l=(I-A_l)f_{l-1}, put R=f_k. Every stage
+preserves the extension zero below1. Applying (4) to each stage on the SAME
+finite horizon and weight gives
+  ||f||<=product_{l=1}^k [2/(1-c_l)] ||R||,
+  ||f||^2<=product_{l=1}^k [4/(1-c_l)^2] ||R||^2.
+An intermediate input need not be an ordinary Mertens prefix. Its continuous
+step extension still works for integer dilations if every selector and bank
+count is frozen on integer cells; f_l(t/d) is then evaluated in its own
+argument cell, with no new root/global-context substitution. Source/domain
+validation must prove those identities for the complete staged program.
+The constants multiply and remain finite; no residual estimate is inferred.
+
+Discrete Mertens energy: the required bridge
+
+Take f(t)=M(floor(t)). To infer a continuous residual bound from integer
+candidate values, define N(t)=N(floor(t)) (or freeze a block-context program
+on each integer cell). With integer d_j,
+
+  floor(t/d_j)=floor(floor(t)/d_j),  t>=1.
+
+Thus R is constant on [n,n+1) and equals the candidate's complete integer
+residual r(n)=M(n)-N(n)^-1 sum_{j<=N(n)} M(floor(n/d_j)), with the zero-bank
+case r(n)=M(n). If N is genuinely arbitrary measurable between integer
+samples, those samples alone give NO bound on its continuous residual norm.
+The theorem remains true, but this particular finite-data bridge does not.
+
+Write E_R(X)=X^-2 sum_{n=X}^{2X-1}|r(n)|^2. At sigma=1/2,
+
+  E_M(X)/4<=integral_X^{2X}|M(floor(t))|^2 t^-2 dt,
+  integral_Y^{2Y}|R(t)|^2 t^-2 dt<=E_R(Y).
+
+Applying (4) on T=2X and partitioning [1,2X] into dyadic blocks gives
+
+  E_M(X)<=4[4/(1-c)^2] sum_{Y dyadic,1<=Y<=X} E_R(Y).  (5)
+
+Suppose one fixed residual program satisfies E_R(Y)<=K_epsilon Y^epsilon
+for every dyadic Y and every epsilon>0. Then the geometric sum in (5) is at
+most K_epsilon [2^epsilon/(2^epsilon-1)] X^epsilon. Therefore E_M has the
+same cofinal subpower property, with finite uniform constants. A residual
+potential W_R=E_R+nonnegative storage with its own cofinal signed drift would
+imply this premise by telescoping, retaining W_R(1). No such residual drift
+or uniform growth estimate is established by the recovery certificate.
+
+For the actual residual r(1)=M(1)=1, because all d_j>=2. Its initial energy
+is not lost through the below1 extension, despite [1,1] having zero continuous
+measure. The block [1,2] contains exactly that initial integer value.
+
+Zeta implication, conditional on the genuine cofinal residual premise
+
+The same residual premise also implies integral_1^infinity |R(t)|^2
+t^(-2sigma-1)dt<infinity for every sigma>1/2: choose epsilon<2sigma-1 and
+sum its dyadic block bounds. Uniform recovery and monotone convergence then
+give the identical statement for M(floor(t)). For any s with Re(s)>1/2,
+choose 1/2<sigma<Re(s). Cauchy-Schwarz gives absolute convergence of
+
+  F(s)=s integral_1^infinity M(floor(t)) t^(-s-1) dt,
+
+because the remaining squared weight is t^(-2(Re(s)-sigma)-1). On compact
+subsets of Re(s)>1/2 the same argument, including logarithmic derivatives,
+gives holomorphy. For Re(s)>1, summation by parts identifies F(s)=1/zeta(s).
+The meromorphic continuation of zeta and the identity theorem give
+zeta(s)F(s)=1 throughout that half-plane, with the removable product at
+the pole s=1. Therefore zeta has no zeros with real part>1/2. Its functional
+equation then places all nontrivial zeros on the critical line.
+
+The only external standard facts used in that last step are zeta's
+meromorphic continuation/simple pole and reflection formula, checked against
+NIST DLMF sections25.2 and25.4:
+https://dlmf.nist.gov/25.2 and https://dlmf.nist.gov/25.4.
+
+This is a conditional implication of an ALL-SCALE residual estimate. Finite
+candidate values, a source-free bank definition and c<1 alone prove none of
+that premise. The recovery operator is a new sufficient route to the original
+target; it does not make signed source cancellation disappear.
+
+Candidate-domain boundaries to preserve in implementation
+
+- Link the bank to one fixed ordered integer sequence; an observed list with
+  a gap certifies its arbitrary distinct-integer continuation, not an unrelated
+  sequence or a subset chosen separately at each t.
+- N must count exactly the admitted prefix and define the zero case. Variable
+  source-free cutoffs, floor roots and fixed finite caps are allowed if they
+  really produce that finite prefix. The proof requires no monotone cutoff.
+- Keep f=0 below1; in an AST use empty prefix sums there, never a point source
+  request at0. Keep the complete original residual, including its denominator.
+- For integer residual energies use the stated step extension. Programs with
+  block parameter X can be frozen on their own dyadic block and integer cells
+  to define one measurable N on the whole positive axis; the source f itself
+  must remain the same global M prefix. Fresh child blocks are fully included.
+- The same fixed program and cofinal-q quantifier are required for a residual
+  drift proof. No candidate choice depending on observed responses supplies
+  a universal residual inequality.
+
+The initial operator inequality and conditional target/zeta recovery pass
+this independent proof review within these scopes. Checker API/schema and
+finite resource limits are to be agreed before implementation. Global/RH
+flags remain false unless the separate residual premise is genuinely proved.
+
+Growing-prefix limitation and narrowed checker scope
+
+Before any actual recovery-candidate run, root narrowed the implementation
+to the generic numerical witness theorem, with no full candidate-AST linkage.
+The checker API is verify_witness(divisors,meter), returning canonical rational
+strings c, norm_bound=2/(1-c), squared_bound=4/(1-c)^2. It checks an ordered
+integer witness of length1..64, entries2..4096 and strict c<1. Its theorem
+still assumes a COMPLETE ordered prefix average. It does not prove that an
+AST, predicate, cutoff, source selector or actual research candidate has that
+form, and does not certify any residual energy estimate. This limitation is
+intentional; no actual arithmetic study of that candidate family was run.
+
+There is also a precise reason not to infer cancellation from a growing
+prefix. If N(t)->infinity, consider inputs f supported in [B,infinity),
+where N(t)>=L for all t>=B. In the change-variable proof every nonzero input
+has u>=B, hence N(d_j u)>=L. For j<=L use1/N<=1/L; for j>L use1/N<=1/j.
+At sigma>=1/2 this gives the tail operator bound
+
+  ||Af||^2 <=epsilon_L^2 ||f||^2,
+  epsilon_L^2 <=(H_{L+1}-1)/L+1/(L+1) ->0,
+
+where H_k=sum_{j=1}^k 1/j. The same conclusion holds for bounded signed
+selectors. Consequently the HIGH-INPUT tail residual I-A approaches the
+identity in operator norm: for those inputs,
+ (1-epsilon_L)||f||<=||(I-A)f||<=(1+epsilon_L)||f||.
+This does not assert that arbitrary actual-Mobius output-tail values equal
+M pointwise, nor remove possible contributions from the fixed initial input
+segment to a later output tail. It does show that large prefix size alone
+provides no uniformly improving cancellation mechanism in the critical norm.
+Recovery remains a sound conditional theorem; it is not a reason to spend a
+research run on an otherwise unsupported growing-prefix residual family.

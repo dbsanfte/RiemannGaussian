@@ -1,0 +1,47 @@
+{
+  "schema": "rough-energy-checker-development-v1",
+  "status": "PASS",
+  "distinct_tests": 9,
+  "successful_test_executions": 20,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 7,
+      "status": "PASS",
+      "output": "test_energy_projection_and_finite_drift (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_feature_all_boundaries_signs_and_tokens (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_fractional_eta_and_q_enclosures (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_independent_factor_sieve_and_cache (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_invalid_zero_projection_domain_and_binding (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_shared_token_cancellation_and_interval_ambiguity (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_unit_empty_and_resource_domain (test_check_mobius_rough_energy_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.029s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 6,
+      "status": "PASS",
+      "output": "test_feature_all_boundaries_signs_and_tokens (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_unit_empty_and_resource_domain (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_energy_projection_and_finite_drift (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_fractional_eta_and_q_enclosures (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_invalid_zero_projection_domain_and_binding (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_shared_token_cancellation_and_interval_ambiguity (test_check_mobius_rough_energy_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.031s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "tests_run": 2,
+      "status": "PASS",
+      "output": "test_arbitrary_gamma_and_unit_above_source_sentinel (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_prospective_memory_and_work_gates (test_check_mobius_rough_energy_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "attempt": 4,
+      "tests_run": 2,
+      "status": "PASS",
+      "output": "test_fractional_eta_and_q_enclosures (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_invalid_zero_projection_domain_and_binding (test_check_mobius_rough_energy_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.023s\n\nOK\n"
+    },
+    {
+      "attempt": 5,
+      "tests_run": 3,
+      "status": "PASS",
+      "output": "test_energy_projection_and_finite_drift (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_fractional_eta_and_q_enclosures (test_check_mobius_rough_energy_078.Tests) ... ok\ntest_shared_token_cancellation_and_interval_ambiguity (test_check_mobius_rough_energy_078.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.026s\n\nOK\n"
+    }
+  ],
+  "environment_probe": "systempython lacksnumpy;venvpython numpy2.2.6 available",
+  "test_interpreter": "/home/dbsanfte/riemann/.venv/bin/python",
+  "producer_imports": false,
+  "producer_contract_static_review": "mobius_rough_energy_078.py arithmeticquery/energy schema only",
+  "scientific_source_queries": false,
+  "scientific_results_read": false,
+  "old_suites_run": false,
+  "hashes_used": false,
+  "delegation_used": false
+}

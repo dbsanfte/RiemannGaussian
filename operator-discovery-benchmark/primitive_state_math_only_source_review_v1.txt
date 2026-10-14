@@ -1,0 +1,132 @@
+Math-only complete native source replacement: independent review v1
+Scope: read-only comparison with frozen grammar and functional tiny-source
+checks, where explicitly recorded below. No X7 source build, saved candidate
+probe, research run, archive sweep or precautionary hash check is authorized.
+
+Complete semantic inventory
+Legacy group boundaries (square/relation counts after each stage):
+grouped arithmetic52/195; balanced arithmetic106/231; factor closure282/319;
+divisor localizers312/331; divisor cells366/403; primitive-state366/613.
+Order includes empty groups and zero-weight terms as prescribed by each source.
+Original files reviewed: grouped_arithmetic_templates.py:descriptors and
+build_instance; cancellation_arithmetic_templates.py:descriptors,descriptor_ast,
+build_instance; cancellation_factor_search_language.py:template_catalog,
+block_spec,build_instance; cancellation_factor_blocks.py:build_block;
+cancellation_divisor_localizer_language.py:build_additions;
+cancellation_divisor_cell_language.py:build_additions;
+cancellation_cell_gram_program.py:build_blocks;
+cancellation_joint_gram_program.py:build_blocks;
+cancellation_complete_gram_program.py:assemble_blocks;
+cancellation_affine_storage.py:affine_blocks,storage_transport;
+cancellation_primitive_state_localizers.py:additions,_anchor.
+
+Critical distinctions for replacements
+Original pair squares/product groups enumerate1<=a<b<=H. Primitive GCD groups
+enumerate1<=a<=b<=H including diagonals. Divisor inverse groups retain ALL
+ordered1<=a,b<=t, aggregating equalgcd. Factor closures retain orderedcoprime
+pairs a,b>=1,ab<=H, including1and diagonal(1,1). They partition using the exact
+inclusive cut a<=floor(H^theta); the rightcut includes allb<=H. Complements
+must contain every remaining licensed pair, not merely a second rectangle.
+Group order for44factor descriptors is original symboliccost then canonical
+sorted-field descriptor serialization; four square forms and two relation
+forms remain positional. Normalization H^(-kernel_degree) applies to both
+B/projected states AND primitive relation multipliers. The descriptorkernel
+one,a,b,a_minus_b may have cancellation but no pair support truncation.
+
+Base target coefficient for sorted(a,b) is -J(b)*(1 diagonal/2offdiagonal),
+J(b)=K(2X,b)-4K(X,b), K(Y,b)=max(0,2Y-max(Y,b)). Constant budget is32X²ceilroot6X.
+Base constant-square weight isX²ceilroot6X, not that budget itself. Childrowmass
+weight is sum_{t=max(2X,i)}^{4X-1}t, distinct from K and J. Headincludesi=2X;
+tailstrictlyexcludesit. Prefix initial indices i<X; parentX<=i<2X;child2X<=i<4X.
+Unit relation has one,anchoru1,globalprefix multipliers in that order.
+
+Arithmetic extension prime transport usesprimea, allc>=1, gcd(a,c)=1,
+anchor=a*c<=H; unlikeGCD/norm_core it does not restrictc>=a. Normcore variable
+indices area/g,c/g withg=gcd(a,c); difference multiplier is their squared
+polynomial difference. Growingprime square upperbound isceil(X^(1/k)) for
+k2,3, notfloor and notroot(t). It includes eachprimep then allj<=floor(t/p)
+withgcd(j,p)=1; duplicatej contributions from differentp accumulate.
+
+Divisorlocalizer weights are(a/t)^power, powers-1,0,1; cellweights are a^power.
+Localizer d runs1..t, a runsmultiplesofd<=t; plain/squarefreeplain/modulated/
+plus/minus states are p,p,u_d*p,p+u_d*p,p-u_d*p. Squarefreeplain alone has
+factor-certified0/1 weight. Normclosure multiplies primitive norm(d) by the
+complete p_d². Inverse closure aggregates weights[a]*weights[b]*u_a*u_b for
+ALLorderedpairs by theirgcd, withunitrelation atgcd1.
+
+Cellpartition runsalla<=t andalld|a includingd=a. Exactintegercutfloor(t^theta)
+for theta1/3,1/2,2/3 separates inside/outside. D=(inside-outside-1)/2 and
+Z=inside+outside-1; squareforms D,prefix+D,prefix-D. Relation multipliers
+one,prefix,D,Z multiplyu_a*a^power for a>=2; at a1 multiply(u1+1), notthe
+unitrelation(u1-1). The primitive relation spec at a1 isunit. Thisplus is
+needed for formalconstant ledger and polynomial equality.
+
+Full15 state order isunit,prefix,half,even,mod3one,prime, thennineD states:
+thetaouter1/3,1/2,2/3;powerinner-1,0,1. Regionalrows coverparentX..2X-1,
+child2X..4X-1. Signed storage repeats these states withchild1,parent-4;
+gram_specs hasfull_child,full_parent,storage_K dimensions15, although actual
+statearrays have two regionalnames. All120upperpairs remain withoffdiagonal2.
+Primitive210groups ordersevenfamilies outer;regionparent,child middle;15atoms inner. Suffix and
+forwardaggregation agree exactly because each relationfamily's licensed domain
+is monotone in t and anchor is first eligible row (clamped to regionstart).
+
+Necessary algebra versus omitted metadata
+Necessary expansions are those in native output: degree<=2 statepolynomials;
+factorclosure primitive multipliers normalizedweight*(B+projected) and
+normalizedweight*(B-projected); divisorclosure p_d²; cell primitive*U;
+primitive-state accumulated U. These cannot be replaced by hashes or dropped.
+Expanding factor primitive relation_sum solely to compare it with B-projected,
+expanding its difference-of-squares closure solely to verify equality, and
+constructing degree4 aggregate columns solely for optional polynomial hashes
+are not output algebra. They may be removed when replacement semantics are
+independently reviewed/reconstructed. Likewise pair-record archives, source
+hashes and full descriptorhash sweeps are not mathematical operator output.
+No runtime integrity/hash sweep is part of this review.
+
+Producer implementation review
+Reviewed NEW primitive_state_uniform_native_source.py:build_affine,Algebra and
+explicit44-entry FACTOR_ORDER. By direct formula inspection all legacy stages
+above are represented. Factor square ordering is B,C_plus_R,prefix_plus,
+prefix_minus; each of firsttwo has inside thencomplement terms. Factorrelation
+multipliers use already-normalizedplus/T times anothernormal*q, matching the
+original closure's normalization on BOTH factors. Orderedpairs includinga1/b1,
+zero kernel coefficients, rootcuts and complete complements are preserved.
+All divisor inverse orderedpairs and localizer norm p_d² remain. Cell states and
+primitive (u1+1) multipliers are correct. Three gram_specs are present while
+state arrays have two regionalnames. No semantic defect found by inspection.
+Algebra uses actual output multiplications only; optional descriptor/pair/archive
+hashing and expanded closure-verificationpolynomials are absent.
+The explicit FACTOR_ORDER must remain the original fixed coordinate declaration
+order. Since symmetric zero kernels can hide permutations atX1, a declaration
+sequence functional check is useful in addition to polynomial groupcomparison.
+No claim of universal equivalence follows from an X1oracle alone.
+
+Additional meaningful small tests
+X1/H3 lacks squarefree-zero4, prime-power4, coprimepair(2,3), and later rational
+root boundaries. Test these through helper-only small polynomial fixtures:
+normalization atH6 with(2,3)/(3,2), gcd(4,6), norm/squarefreezero4,
+floor(8^(2/3))=4 versusfloor(7^(2/3))=3, andgrowingprimeceilroot2(3)=2.
+Verify cella1 multiplieru1+1, negative kernel a_minus_b, upperoffdiag2,
+complete squarefree-zero weight0 positions, and d=a ineachcellcomplement.
+These require no wholeX2/X7 sourcegeneration orresearchcandidateevaluation.
+
+Independent implementation review
+Reviewed NEW check_primitive_state_uniform_native_source.py completely. Its
+sparse add/scale/product implement rational polynomial algebra independently;
+factorization and positive rational-power floor roots use integer comparisons.
+For the actual constructor's positive coefficient1 and properpositive rational
+exponents, the floor helper's inequality z^den<=n^num is exact and inclusive.
+The ceil helper uses z^k>=n, includingperfectpowers. Declaration loops represent
+the same source domains, weights, multipliers and full15 state order reviewed
+above. Source declarations are structurally similar to producer declarations;
+independent arithmetic is useful but not a separate universal compiler proof.
+
+Concrete issue found and reported: independent Algebra.serial initially sorted
+monomials by(degree,tuple), while frozen dump_poly and producer use tuplelex.
+For u1²+u2, degree-first emitsu2 beforeu1² and violates the core's canonical
+previous<current condition. Owner instructed to change tosorted(p). This is a
+finite serialization defect, not a false formal identity proof. No other
+semantic discrepancy found during this code review. Parent will use owners'
+one combined integration suite and functionalX1/order calibration; this review
+has not repeated a source build. The review is complete conditional on that
+serialization fix and the ordinary independent functional checks passing.

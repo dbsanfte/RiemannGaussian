@@ -1,0 +1,170 @@
+Prospective035 implementation contract: coupled active-face corrections
+
+Producer owns primitive_state_chart_dual_active.py and its test module;
+checker owns check_primitive_state_chart_dual_active.py and its tests;
+reviewer owns primitive_state_chart_dual_active_soundness_v1.txt. Root owns
+protocol, workflow, publication, resource scope and workflow tests.
+Prior034 and all older published files are immutable. No actual new source
+model, metric, score, face, Krylov step or reconstruction before freeze.
+No hashes, source rebuild, geometry assembly or old reduction replay.
+
+Exact source/admission remain032-034: same licensed031302x687 system and
+old032 build_model,851 original generators,782 chart rows,1224 coordinates.
+Same450m allocation:40m prep,40m model,190m numerical,90m reconstruction,
+90m sole audit. All development arithmetic and one frozen combined suite
+plus1m root/scaffolding share25m inside prep. Each arithmetic test module
+prints SYNTHETIC_WORK module=<module> operations=N; target each dev suite
+<=5m and run it once when ready, reporting consumed total. No extra tests
+by reviewer; do not repeat unchanged suites. Sequential worker/audit each
+6GiB,1thread,3600s; external producer7200s. Bits4096/8193,cells6m, exports8MiB.
+
+Producer APIs
+build_model may alias032. numerical_work_model(m,n,nnz) returns:
+  setup=12nnz+64(m+n)+65536
+  gradient=8nnz+32(m+n)+512
+  face_setup_full=8nnz+48(m+n)+1024
+  cg_step_full=12nnz+64(m+n)+1024
+  commit=8nnz+48(m+n)+1024
+  final=12nnz+64(m+n)+2048
+  cg_limit_full=min(128,2n),max_faces=1000
+  iteration_reserve=gradient+face_setup_full+cg_limit_full*cg_step_full+commit
+  minimum_attempt=setup+iteration_reserve+final.
+face_work_model(m,k,z) returns setup=8z+48(m+k)+1024,
+  cg_step=12z+64(m+k)+1024,cg_limit=min(128,2k).
+Require1<=m<=443,1<=n<=851,n<=nnz<=m*n. Face1<=k<=n,
+nonzeros z is sum of lengths of the active source columns.
+active_set_proposal(model,initial_vector=None,*,deadline,
+  max_operations=190000000,resident_cells=0) returns numerical record.
+search(chart,rays,geometry,reduction,seed,*,deadline,checkpoint=None).
+
+Seed and numerical setup
+Actual seed is protocol.SEED: complete032 proposal's numerical.selected.
+Require schema primitive-state-chart-dual-coordinate-search-v1, numerical
+schema primitive-state-chart-dual-coordinate-proposal-v1 and completeTrue;
+take its full finite nonnegative selected.scaled_vector of length687.
+No old numerical score is used. Recompute its residual on the current model.
+Generic numerical helper uses zeros when initial_vector=None. Set P to all
+strictlypositive initial positions. Initial weights can be any nonnegative
+vector; the archived seed is not a new theorem premise. Exact input scaling
+and coordinates match032 by reusing its model helper. Core receives seed as
+an optional keyword; actual root passes the fixed archive, synthetic tests
+default to zero or pass a synthetic seed with those schemas.
+
+Before setup require minimum_attempt to fit, else unattempted/incomplete
+with all block counts zero. Charge setup before validation/calculation.
+Compute positive finite D_j=||A_j||^2 and roots sqrt(D_j); require nonzero
+target norm. Save full initial_vector and metric_diagonal as diagnostics.
+Compute fresh initial r=b-A*x and checkpoint iteration0, including residual
+norm,relative norm,support size,cumulative_operations=setup. Initial and
+later checkpoints compete under the same strict support/ranking rule.
+
+One outer iteration
+Before each gradient block require iteration_reserve+unspent final to fit.
+The worst-case reservation uses full source dimensions; actual face blocks
+use face dimensions. Charge gradient, recompute r=b-A*x and w=A^T*r.
+Mode initial_face if this is the first solve and P nonempty. Mode refine_face
+if the previous committed face was damped and its surviving P is nonempty.
+Otherwise use mode enter_column and choose inactive j maximizing strictlypositive w_j/sqrt(D_j),
+breaking ties by smaller index; append it to P with current weightzero.
+If no inactive score is positive, stop no_positive_inactive_correlation.
+This is only a diagnostic: a truncated face solve need not satisfy active
+KKT conditions. No subsequent face is started after this terminal gradient.
+
+Append a face record containing iteration1-based, mode,entered(indexorNone),
+entry_score(floatorNone),active(sorted positions),nonzeros,cg_limit and all
+false/zero block counters BEFORE its setup charge. Record only one face per
+outer iteration; a boundary removal schedules the next outer refine, not
+an unmetered inner solve. Keep all previous records/checkpoints resident.
+
+Face PCGLS
+Charge face setup. Start unconstrained z_P=current x_P, r=b-A_P*z,
+s=A_P^T*r,h_j=s_j/D_j,p=h,gamma=sum(s_j*h_j). All products/sums finite;
+gamma>=0. Fresh sparse products use math.fsum; norms use math.hypot and
+finite squares. A gamma==0 yields cg_stop zero_normal_residual, no steps.
+For at most cg_limit iterations, charge one cg block then:
+  q=A_P*p,delta=||q||^2.
+  If delta==0 while gamma>0: stop zero_curvature without updating z.
+  Otherwise a=gamma/delta,z+=a*p (unrestricted), with finite guards.
+  Recompute fresh r=b-A_P*z,s=A_P^T*r,h=s/D,gamma_new=sum(s*h).
+  If gamma_new==0, count completed step and stop zero_normal_residual.
+  Otherwise beta=gamma_new/gamma,p=h+beta*p,gamma=gamma_new.
+  At limit use iteration_limit. No numerical convergence theorem is claimed.
+cg_blocks counts charged attempts; cg_steps_completed counts full z/residual
+updates. A zero_curvature stop has blocks=completed+1. Other normal stops
+have blocks=completed; iteration_limit equals cg_limit. Deadline/nonfinite
+or memory failure is incomplete with consumed blocks retained.
+
+Nonnegative commit
+Charge commit before all interpolation/checkpoint work. If all z_P>0,
+accept z with dampedFalse,step_fraction1,boundary_hits[]. Otherwise:
+  for each z_j<=0 form ratio=x_j/(x_j-z_j); x_j=z_j=0 gives ratio0;
+  alpha=min ratios, require finite0<=alpha<=1;
+  calculate x_j+alpha*(z_j-x_j), finite BEFORE max(0,value);
+  explicitly set every ratio-minimizer to0;
+  keep all other strictlypositive entries and drop all stored zeros.
+Record dampedTrue even if alpha=1. Values outside P remain0. Set surviving
+support to every strictlypositive new x position. No posthoc threshold or
+support trimming. After fresh full residual/metrics and complete state,
+append checkpoint; mark face complete. Save a selected full n-vector if
+it wins min(relative residual,support size,iteration), eligibility1..443.
+
+Stops and final diagnostic
+Normal stops: zero_reported_residual immediately after initial or committed
+checkpoint; krylov_breakdown after a committed zero_curvature face;
+face_limit after1000 committed faces; work_boundary at a failed full-step
+guard; no_positive_inactive_correlation after its terminal gradient.
+Priority after a face: zero residual, then breakdown, then face limit.
+All normal stops must finish the reserved final block before completeTrue:
+fresh r=b-A*x,w=A^T*r,p=max(0,x+w/D), guarded sqrt(D)*(x-p) norm.
+Final dict: iteration,last residual_norm,relative_residual,
+projected_gradient_norm,mapping_metric='diagonal column curvature, unit step'.
+It concerns the last committed x, which may differ from the selected point.
+Any setup/midstep/final failure clears selected and stays incomplete/UNKNOWN.
+
+Numerical schema primitive-state-chart-dual-active-proposal-v1
+complete,attempted,max_operations,rows,columns,nonzeros,work_model;
+initial_vector and metric_diagonal (None until assigned under charged setup);
+setup_charged,final_charged:bool,gradient_blocks:int;
+faces:list,checkpoints:list,selected:{iteration,scaled_vector,support,
+relative_residual}orNone,stop_reason,final_diagnostic,counts,elapsed_seconds,
+reason/resource_failure/error_type on failure,globalflagsfalse.
+Each face additionally has setup_charged,cg_blocks,cg_steps_completed,
+cg_stop,commit_charged,complete,damped,step_fraction,boundary_hits,
+surviving_support,cumulative_operations. Incomplete unset values may beNone.
+Exact operations=setupbool*setup+gradient_blocks*gradient+sum over faces
+(face_setupbool*face_setup+cg_blocks*cg_step+commitbool*commit)+finalbool*final.
+Charge actual blocks BEFORE work; charge(0) only for extra deadline/live scans.
+
+Outcome schema primitive-state-chart-dual-active-search-v1,route active_set.
+Other model_stats,stage_counts,policy,limits and original exact restoration
+fields match033/034. Restore selected support ONCE on original030 responses,
+free coordinateszero; full old029 certify. ValueError=>NONCERTIFIED, resource
+failure=>UNKNOWN. Selected initial checkpoint is allowed by the fixed rule.
+All prior inputs, seed, current arrays and exports stay resident in meters.
+
+Independent APIs
+verify_numerical(numerical,rows,columns,nnz,budget,*,column_nonzeros,
+initial_vector=None). Independently derive all full/face work formulas.
+Check column_nonzeros positive ints lengthn,sum nnz; actual verify_outcome
+derives them from saved031 equations under its SAME90m meter, after licensed
+_source parsing. Bind face.nonzeros to its actual active ids, not a reported
+sum. Bound all guard/counter/checkpoint/stop invariants without numeric replay.
+Verify face modes/entry/support carry: initial active from supplied seed;
+refine active from prior surviving_support after damping; entry adds exactly
+one previously inactive index with finite positive reported entry_score.
+Check boundary_hits subset of active, survivors subset active excluding hits,
+and complete-face checkpoint support size matches survivors. Numerical entry
+score ranking, CG equations and damping values are not independently replayed.
+Selected vector strictlypositive support must equal the corresponding saved
+initial or face surviving support and its reported checkpoint ranking.
+At most one incomplete final face; gradient blocks correspond to faces plus
+at most one terminal/interrupted gradient. Complete no-positive stop has
+one extra gradient, other complete stops none. Validate every start reserve,
+cg limits/stop counts, cumulative charges, final metric label, all finite
+metadata and exact prescribed normal-stop conditions. No earlier zero or
+breakdown checkpoint may be followed by another step.
+verify_outcome(...,outcome,*,seed=None,deadline=None,max_operations=90000000,
+max_cells=6000000,max_bits=4096,max_certificate_bytes=8388608).
+Use optional seed only for initial-vector binding. Full proof admission uses
+SAME90m budget to check all851alpha>=0,782lambda,1224-coordinate identity and
+pairing-1. Numerical metadata verification never becomes an all-scale bound.

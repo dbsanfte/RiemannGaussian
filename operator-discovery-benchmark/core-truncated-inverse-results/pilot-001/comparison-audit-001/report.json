@@ -1,0 +1,67 @@
+{
+  "RH_proved": false,
+  "actual_core_bound_disproved": false,
+  "audit": {
+    "elapsed_seconds": 2.756401007005479,
+    "operations": 10120400,
+    "peak_cells": 0,
+    "peak_rss_kib": 704032
+  },
+  "complete_scalar_comparisons": 256020,
+  "full_signed_bounds_proved": 0,
+  "generated_joined_obligations": 720,
+  "geometries": 25,
+  "inclusive_operations_upper_bound": 1009280018,
+  "inverse_certificates": 100,
+  "new_source_observations": 0,
+  "numerical_joined_probes": 20,
+  "original_terminal_failure_retained": true,
+  "paid_components_per_selected_geometry": {
+    "0": 1,
+    "12": 1,
+    "4": 1,
+    "6": 1,
+    "8": 1
+  },
+  "reordered_geometries": [
+    6,
+    0
+  ],
+  "selected_geometries": 5,
+  "status": "SAVED_ACTUAL_SOURCE_OUTPUTS_VERIFIED_BY_ALGEBRAIC_COMPONENT_KEYS",
+  "upper_bound_includes_full_failed_main_cap": 150000000,
+  "whole_signed_bound_proved": false,
+  "worker_reruns": 0,
+  "workers": [
+    {
+      "files": [
+        "producer-geometry-12.json.gz",
+        "producer-geometry-6.json.gz",
+        "producer-geometry-8.json.gz",
+        "producer-geometry-0.json.gz",
+        "producer-geometry-4.json.gz"
+      ],
+      "resources": {
+        "elapsed_seconds": 21.607137552986387,
+        "operations": 419038259,
+        "peak_cells": 46080,
+        "peak_rss_kib": 279208
+      }
+    },
+    {
+      "files": [
+        "checker-geometry-12.json.gz",
+        "checker-geometry-6.json.gz",
+        "checker-geometry-8.json.gz",
+        "checker-geometry-0.json.gz",
+        "checker-geometry-4.json.gz"
+      ],
+      "resources": {
+        "elapsed_seconds": 40.81733365802211,
+        "operations": 428986731,
+        "peak_cells": 99328,
+        "peak_rss_kib": 289688
+      }
+    }
+  ]
+}

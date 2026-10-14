@@ -1,0 +1,284 @@
+RATIONAL-CONDUCTOR PROOF SEARCH FOR COMPLETE DIVISOR PREFIXES
+
+Status: exact Fourier/conductor compilation and uniform period/window bounds
+are proved below. The best basic O(U) variance rule is GENERIC bounded-weight
+control, not newly discovered actual-prime cancellation. Actual inverse facts
+provide a competing coefficient rule, whose cost must be compared honestly.
+Finite-convolution transfer is proved; no pointwise cube is used for E^3.
+Full core and RH remain open. No source observations, tests, hashes, numeric
+experiments or earlier-file changes were made.
+
+This memo reviews the proposed next engine after the verified signed-primitive
+stage. Its basic Fourier, inverse and spacing rules are supplied analytically;
+the detector should construct their applications, search proof routes and
+record which arithmetic premises actually help. It is not claimed to invent
+Fourier analysis or to establish a full-core estimate from a calibration.
+
+1. Typed source, exact periodic extension, mean and unit
+
+Fix an INTEGER U>=1. Let w(d),1<=d<=U, be arbitrary real weights |w(d)|<=1.
+For the actual source w(d)=mu(d), c_U=sum_(d<=U)mu(d)/d,
+ E_U=delta-One*A_U+c_U One, A_U=mu restricted to[1,U].
+Its COMPLETE integer prefix is, for n>=1,
+ P_U(n)=1+sum_(d<=U)mu(d){n/d}.                        (1.1)
+The same sawtooth expression is a generic target for arbitrary w. Define
+its periodic extension on ALL integers by that displayed formula, including
+P_U(0)=1. This is NOT the actual source prefix at0, which is0. Its period
+divides lcm(1,...,U); never construct this enormous period to apply the rule.
+
+The exact period mean and centered periodic function are
+ C_U=1+sum_(d<=U)w(d)(d-1)/(2d), Q_U(n)=P_U(n)-C_U.
+For actual mu this reads
+ C_U=1+(M(U)-c_U)/2.                                  (1.2)
+The full M(U) term is retained. Under actual |c_U|<=2, |C_U|<=2+U/2<=5U/2.
+No critical Mertens estimate is being used. In the generic route |C_U|<=1+U
+is enough for an O(U) bound. A raw uncentered target includes C_U explicitly;
+variance is not a bound for that raw mean square.
+
+For actual source put e_U=E_U-C_U delta. Its actual prefix is
+ Q_U^+(n)=Q_U(n) for n>=1, Q_U^+(0)=0.                 (1.3)
+Periodic Q_U(0)=1-C_U is different. Every finite-convolution or floor map
+must choose Q^+, not accidentally request the periodic value at a zero
+argument. Equivalently E_U=delta+Delta P_period on positive integers; the
+extra delta is the exact unit boundary. All infinite E_U coefficients and
+repeated-prime/source histories remain in subsequent convolution products.
+
+2. Exact reduced-frequency compiler BEFORE magnitudes
+
+Write e(t)=exp(2pi i t). A length-d discrete Fourier transform gives
+ {n/d}=(d-1)/(2d)
+       -sum_(j=1)^(d-1)e(jn/d)/[d(1-e(-j/d))].
+At a reduced nonzero fraction a/r, (a,r)=1, 1<=a<r<=U, combine every divisor
+d=kr contributing that SAME frequency. The exact coefficient is
+ B_(r,a)=-K_r(U)/[r(1-e(-a/r))],
+ K_r(U)=sum_(k<=floor(U/r))w(kr)/k.                   (2.1)
+Thus Q_U(n)=sum_(r=2)^U sum_(a,r)=1 B_(r,a)e(an/r).
+Grouping unreduced pairs separately and then taking absolute values loses
+the intended rule. Cyclotomic/algebraic representations or formal root-of-
+unity symbols can encode the exact coefficients without sampled sines.
+Source zeros and all signs stay in K_r. Every prime/composite coefficient
+is represented once. U=1 has no nonzero frequencies and Q_U identically0.
+
+The exact full-period variance is
+ V_U=sum_(r=2)^U K_r(U)^2 J_2(r)/(12r^2),
+ J_2(r)=r^2 product_(p|r)(1-p^-2).                    (2.2)
+Proof: orthogonality gives coefficient squares. Summing all nontrivial rth
+roots gives sum_(a=1)^(r-1)|1-e(a/r)|^-2=(r^2-1)/12;
+this follows by logarithmically differentiating (z^r-1)/(z-1) at1. Splitting
+that sum by reduced denominator and applying divisor Möbius inversion gives
+sum_(a,r)=1 |1-e(a/r)|^-2=J_2(r)/12 for r>1. The frequency coefficient phase
+is still retained in the full AST; only this exact period diagonal is reduced.
+
+3. Competing GENERIC and actual-inverse variance providers
+
+The strongest simple generic provider retains the conductor cutoff:
+ |K_r(U)|<=H_floor(U/r), H_t=sum_(k<=t)1/k.
+Since J_2(r)/r^2<=1,
+ V_U<= (1/12)sum_(r<=U)H_floor(U/r)^2
+ <=(U/12)sum_(k,l>=1)1/[kl max(k,l)].                 (3.1)
+Interchanging positive sums is justified by monotone convergence. The double
+sum equals 2 sum_k H_k/k^2-sum_k1/k^3. The elementary H_k<=1+ln k and decreasing
+(1+ln x)/x^2 give sum_k H_k/k^2<=1+integral_1^infinity(1+ln x)x^-2 dx=3.
+The subtracted sum is>=1. Consequently
+ V_U<=5U/12<U/2, ALL U>=1, ANY bounded weights.        (3.2)
+No arithmetic distribution or source inversion is needed. Replacing every
+H_floor(U/r) by H_U would unnecessarily lose two logs. The detector should
+rediscover the cutoff-sensitive summation rather than crediting an inferior
+actual-source bound as signed arithmetic improvement.
+
+For comparison actual mu gives K_r=0 for nonsquarefree r and
+ K_r=mu(r)sum_(k<=floor(U/r),(k,r)=1)mu(k)/k otherwise.
+The complete divisor-floor identity proves |c_T|<=2, every integer T.
+For primes dividing r, invert the finite prime-dilation identity to obtain
+ |sum_(k<=T),(k,r)=1 mu(k)/k|<=2 product_(p|r)(1-1/p)^-1=2r/phi(r).
+All floor endpoints terminate at cutoff0; no partial-prime law is substituted
+for the complete source bound. This gives
+ V_U<= (1/3)sum_(r<=U)(r/phi(r))^2<=9U.               (3.3)
+For the last inequality expand f(r)=(r/phi(r))^2=sum_(d|r)g(d), g squarefree
+and g(p)=(2p-1)/(p-1)^2. Then
+ sum_(r<=U)f(r)<=U product_p(1+g(p)/p).
+Here g(p)/p=1/(p-1)^2+1/[p(p-1)]. Extending to all integers n>=2 bounds
+the exponent sum by7/4+1=11/4<3; hence the product is<exp(3)<27.
+All products and tails converge absolutely and e<3 is elementary.
+
+The actual provider is useful source-specific algebra, but9U LOSES to the
+generic U/2 on this variance target. Neither result implies cancellation in
+the complete core. My early message suggesting an actual-Mobius O(U) gain
+over generic bounded weights was too strong; (3.1) corrects that attribution.
+
+4. Uniform finite-window provider: an elementary proof, no import needed
+
+Distinct reduced frequencies with denominator<=U have circular separation
+>=U^-2. For ANY integer starting point M and integer length L>=1 the geometric
+sum kernel satisfies |sum_(n=M+1)^(M+L)e(n t)|<=min(L,1/[2||t||]).
+For one frequency, order neighbors on each side around the circle. The jth
+neighbor is at distance>=j/U^2. Summing the two sides gives at most
+U^2 H_R<=U^2(1+ln R)<=U^2(1+2ln U), since the number R of frequencies<=U^2.
+The diagonal is L. Gram row-sum/Schur therefore proves
+ sum_(n=M+1)^(M+L)|Q_U(n)|^2
+ <=[L+U^2(1+2ln U)] V_U.                             (4.1)
+For R=0 the expression is0; for R=1 there is no offdiagonal row sum. This
+is uniform in M, U and L, with no period-length assumption. It handles all
+short windows, rather than transferring an asymptotic period average by fiat.
+The arithmetic coefficients were coalesced before the Gram magnitudes.
+
+Combining (3.2),(4.1) gives the unconditional generic bound
+ sum_window |Q_U|^2 <=(U/2)[L+U^2(1+2ln U)].           (4.2)
+The rational-frequency large sieve can improve the logarithmic spacing term.
+Its primary reference is Montgomery--Vaughan, The large sieve, Mathematika20
+(1973),119--134, https://doi.org/10.1112/S0025579300004708 . I browsed the
+primary bibliographic/abstract page, which did not expose its full theorem.
+NO external theorem is needed or imported for (4.1); the self-contained row
+sum proof is the provider proposed here. A sharper import needs its own exact
+statement, provenance and independent application check.
+
+Raw or centered is a searched proof choice. The raw route can add
+2L|C_U|^2+2 times(4.2), or retain the exact cross with the mean. Centered
+control alone never certifies deletion of that mean from the source.
+
+5. Rational-decay weights and operator choices
+
+For lambda>=0 rational use weights w(d)d^-lambda. Exact coefficient grouping
+gives K_(r,lambda)=r^-lambda sum_(k<=U/r)w(kr)k^-1-lambda.
+The planner may choose the direct conductor-dependent bound, a uniform
+harmonic maximum, or a weighted Abel proof. The exact finite identity is
+ Q_(lambda,U)=U^-lambda Q_U
+   +sum_(d=1)^(U-1)[d^-lambda-(d+1)^-lambda]Q_d.       (5.1)
+All Q_d use the SAME weight sequence and their own exact means, so no unit
+or mean is lost. On a common period Minkowski and (3.2) imply
+ lambda<1/2: variance<=[2(1-2lambda)^2]^-1 U^(1-2lambda);
+ lambda=1/2: variance<=(1/2)(1+(1/2)ln U)^2;
+ lambda>1/2: variance<=(1/2)[lambda/(lambda-1/2)]^2.  (5.2)
+Proof uses sqrt(floor t)<=sqrt(t) in the exact Stieltjes-Abel integral. These
+are safe, not necessarily best. For lambda>0 the competing direct bound
+|K_(r,lambda)|<=r^-lambda(1+1/lambda) yields variance
+<= (1/12)(1+1/lambda)^2 sum_(r<=U)r^-2lambda; atlambda1/2 this costs only one
+log and can outperform (5.2). All critical powers/logs remain explicit.
+Every such spectrum has denominator<=U, so (4.1) applies with its chosen
+variance provider. The actual inverse bound is another candidate, not a
+mandatory winner. Multiplying or reciprocally recovering a decay operator
+requires its complete cost; no full-core recovery is inferred from variance.
+
+6. Exact finite Dirichlet-convolution lift
+
+Let h be a finite SIGNED coefficient state supported in1..D. Then
+ prefix(h*e_U)(n)=sum_(d<=D)h(d)Q_U^+(floor(n/d)).      (6.1)
+For n>=D every argument is positive, so the RHS has a periodic rational
+spectrum. A mode e(a floor(n/d)/r) has the exact lift
+ sum_(j=0)^(d-1)kappa_j e(n(a/r+j)/d),
+ kappa_j=(1/d)sum_(l=0)^(d-1)e[-l(a/r+j)/d].          (6.2)
+This follows by writing n=dm+l and finite Fourier inversion in l.
+Sum_j |kappa_j|^2=1. The lifted frequencies have reduced denominators<=r d<=UD.
+Combine ALL lifted collisions and signed h coefficients before magnitudes.
+
+On a full common period, each Q_U(floor(n/d)) has the same variance V_U.
+Thus Minkowski gives variance<=V_U ||h||_1^2, with complete mean0.
+Spacing/Schur with denominatorUD gives, on any window whose minimum n>=D,
+ sum_window |prefix(h*e_U)(n)|^2
+ <=V_U ||h||_1^2 [L+(UD)^2(1+2ln(UD))].              (6.3)
+The exact conductor covariance itself may beat this triangle proof and is a
+legitimate generated auxiliary; a measured finite Gram is not its uniform law.
+For n<D use the literal Q^+(0)=0. Relative to the periodic lifted expression,
+the exact head correction is
+ -(1-C_U)sum_(d>n)h(d), supported n<D.                (6.4)
+Its unit, all signs and centered moment correction are retained. A uniform
+crude bound |Q_U^+(n)|<=5U gives a separate finite-head cost; no restarted
+block prefixes occur.
+
+For actual h=A_U^2, ||h||_1<=U^2 and D<=U^2, so the periodic variance is
+<=U^5/2 and the spacing scale is U^6. This is a nontrivial useful window
+provider when physical X greatly exceeds U^6, as with alpha1/24. It is still
+a generic signed finite-factor bound, not an actual-prime improvement.
+Neither (6.3) nor Parseval licenses multiplication by zeta(s+1/3) on an
+arbitrary L2 line without a further operator bound. The outer power kernel,
+complete centering and its infinite coefficient tail must be lifted explicitly.
+
+7. E^3 and complete centered source: what is and is not paid
+
+Dirichlet convolution, never pointwise multiplication, gives
+ A^2*E^3=A^2*e^3+3C_U A^2*E^2-3C_U^2 A^2*E+C_U^3 A^2. (7.1)
+All branches, source units, repeated valuations, opposite analytic residues
+and cross terms are part of the same identity. One may also use the ordinary
+binomial expansion in e; proof search should compare both exact presentations.
+E^3 is NOT Q_U(n)^3. Factors e^2,e^3 have infinite support; the finite h rule
+(6.3) cannot be applied to them by assigning a fictitious fixed support D.
+Exact hyperbola/split identities retain every complementary reciprocal region.
+
+For a finite coefficient h the centered K*h, K(n)=n^-1/3, has prefix
+ sum_d h(d)[sum_(k<=n/d)k^-1/3-(n/d)^(2/3)/(2/3)].
+The bracket has absolute value<=3/2 for ALL positive real n/d, including<1;
+thus the pure C_U^3 A^2 branch is bounded by(375/16)U^5 in prefix. Its complete
+centered energy is<= (375/16)^2 U^10/X. At U<= (4X)^(1/24) this is paid, with
+power -7/12 and fixed constants. This is an ANALYTICAL component observation;
+no current-run source payment is promoted without the executable binding.
+
+Two further lower-mean branches can be tested by the EXISTING moment proof
+compiler, rather than nominating a new correlation premise. For C_U A^2 E^2
+take its ordinary m2 centered component certificate and multiply its squared
+norm/residue constants by (25/4)U^2. An illustrative valid invocation is
+ candidate(p=2,m=2,theta=2/3,alpha=1/24,sigma=7/20,orders=['2','4'],goal=0).
+The high moment row has lambda=11/3-5sigma=23/12<2; its finite coefficient
+power is8(1-sigma). After adding2 for the scalar, recovered energy power is
+ 2sigma-1+[2+8(1-sigma)]/24=0.                       (7.2)
+The low row and complete residue/integer-cell correction are retained.
+For C_U^2 A^2 E, a corresponding generic Mellin rule at sigma1/8 gives
+lambda=7/3-4sigma=11/6<2, scalar-adjusted finite power4+6(1-sigma)=37/4,
+and energy power -35/96. The current candidate API rejects m1, so that latter
+application needs a separately typed m1 bridge, not a bypass of validation.
+The detector should search the contour and allocations; these examples only
+demonstrate feasible analytical compositions. Neither lower-mean branch is
+implemented/promoted as paid in the present proposed Fourier stage.
+
+Consequently a future independently checked composition can replace the
+remaining centered A^2E^3 component by centered A^2e^3 up to these paid pieces.
+This concerns the ORIGINAL physical-block component at U=floor(N^(1/24)),
+with ONE common N for parent and child and all channel recovery factors.
+It does not discharge or subtract these branches from the stronger fixed
+sigma9/20 global low-height leaf U^(12/5), its cumulative work, or252 Gram
+targets. The illustrative contours are different; a bound cannot be moved
+to the current work line without a separate valid bridge. No such bridge is
+claimed here. A new original-source route must declare and verify that change.
+The actual head subtraction c_U^3 One_[1,U] stays separately and is paid by
+its complete finite-head rule. The source scalar and every whole-core binding
+still multiply these costs. For E^3/e^3 centering use the inherited ANALYTIC
+residue, not an unsupported ordinary coefficient-moment convergence claim.
+Linearity of analytic products at2/3 retains all compensating terms. Only the
+m1/m2 branches or finite coefficients have the separately justified ordinary
+moments in these statements.
+
+The precise unsolved arithmetic is the COMPLETE reciprocally dilated
+nonzero-frequency convolution cube, with the outer K kernel and all cross
+regions. A finite-cofactor search can compile
+ sum_(d<=D)h(d)Q_U^+(floor(n/d))
+and pay (6.3), but the remaining d>D region must be joined with all other
+hyperbola branches before its signed square is bounded. A conductor larger
+than the available window has an explicit (UD)^2 debt. Mean0 is not a proof
+that this debt or the joined e^3 correlation is small. This is a concrete
+representation and executable inequality frontier, not a rebranding of the
+old low Gram as already solved.
+
+8. Proof-DAG and detector provenance
+
+Typed node: fixed-cutoff divisor sawtooth with exact source weights/decay,
+mean/raw route, rational frequency quotient, variance functional, positive
+integer observation window and complete unit convention. Nodes include
+DFT, equal-frequency merge, exact Jordan-residue square sum, generic cutoff-
+sensitive harmonic summation, uniform harmonic-max competitor, complete-
+inverse coefficient bound, weighted Abel, spacing/Schur, finite convolution
+lift, exact head correction and source/center binding. All applications
+record constants, powers/logs, parameter dependencies and exact domains.
+
+Search choices are centering/raw, triangle/coalescence, generic/arithmetic
+provider, uniform-max/cutoff-sensitive sum, Abel/direct decay, conductor-
+split geometry and direct-window/spacing transfer. The proof DAG recursively
+opens unsupported leaves, rather than using their requested exponents as
+premises. Keep generic calibration controls, complete-mean countercontrols
+and false pointwise-power routes as explicit rejection tests. A whole-core
+certificate must recover the original source with every residual and all
+finite/cumulative domains; no energy-to-variance cycle is admitted.
+
+This is a detector-owned search WITHIN analytically supplied rules. It can
+find that the best basic provider is generic and that an arithmetic provider
+does not improve its cost. That honest result is valuable feedback, but is
+not new signed prime cancellation. Full original control remains open.
+Finalized; no further computations or edits planned.

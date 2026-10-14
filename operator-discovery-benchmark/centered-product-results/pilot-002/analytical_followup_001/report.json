@@ -1,0 +1,15 @@
+{
+  "RH_proved": false,
+  "analytical_reviewers": [
+    "/root/dual_reduction_backend",
+    "/root/dual_reduction_review"
+  ],
+  "independent_new_arithmetic_exponent_gain": false,
+  "numerical_selection_retuned": false,
+  "original_frozen_pilot_unchanged": true,
+  "primary_target": "joined high-product off-diagonal one-sided upper bound",
+  "requested_model": "gpt-6.1-sol",
+  "status": "JOINT_CORRELATION_FRONTIER_WITH_PAID_REMAINDER_REVIEWED",
+  "stronger_partial_band_goal_optional": true,
+  "whole_signed_bound_proved": false
+}

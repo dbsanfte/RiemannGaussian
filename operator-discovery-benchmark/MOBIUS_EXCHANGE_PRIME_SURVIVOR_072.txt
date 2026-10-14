@@ -1,0 +1,74 @@
+POST-RUN SCOPE EXTENSION: GROWING EXCHANGES AND PRIME ANCHORS072
+
+This analytical addendum follows the frozen072 run. It changes no
+candidate, allocation, score, test, source snapshot or scientific result.
+It draws a stronger consequence of the exact prime survivor statement in
+MOBIUS_PRIME_ORBIT_REVIEW_072.txt, using the classical prime number theorem.
+That theorem is imported mathematics, not a detector discovery. A primary
+author's proof and statement are Terence Tao, 246B Notes4, Theorem1:
+https://terrytao.wordpress.com/2021/02/12/246b-notes-4-the-riemann-zeta-function-and-the-prime-number-theorem/
+The source was checked after the search. Only its standard asymptotic
+pi(x)~x/log(x) is used here; no RH-strength error estimate is imported.
+
+Fix the SAME actual joined source slice
+ w_k(n)=1_(8k,10k](n)-1_(16k,20k](n),
+ Z(k)=sum_n mu(n)w_k(n).
+Let a scale-dependent exchange graph use any coprime-squarefree multiplier
+pairs, arbitrary paths, zero-kernel intermediates, capacities and real flows.
+Let S(k) contain every prime factor of every multiplier used. Suppose
+max S(k)<=16k eventually (empty S is allowed).
+
+For each prime p in(16k,20k], p is outside S(k). Every vertex in its
+exchange component has the same outside-S squarefree part p. Its other
+factors are from S(k). Every such vertex other than p is at least2p>20k,
+so its source coefficient is zero. The labelled signed component sum
+therefore has absolute value1, coming from w_k(p)=-1. Distinct such
+primes have distinct rough parts and cannot share an exchange component.
+
+Consequently every UNSIGNED COMPONENT OR RESIDUAL-TRANSPORT PRICE U(k)
+covered by the review's exact component lemma satisfies
+
+ U(k)>=pi(20k)-pi(16k).
+
+This statement is exact, and permits a growing number of multipliers and
+arbitrarily complicated internal transport. Finite fractional matching is
+a restricted case. It does not require S(k) to be fixed or a bound on
+the product of its primes.
+
+From the imported prime number theorem, by subtracting its two asymptotics,
+
+ pi(20k)-pi(16k)=(4+o(1))*k/log(k).
+
+The two errors are both o(k/log k), and log(ck)/log(k)->1 for fixed c,
+so this subtraction is licensed without an error estimate in short intervals.
+For every fixed epsilon<1/2, k/log k is not O(k^(1/2+epsilon)).
+Thus this unsigned component-price language cannot supply the requested
+RH-strength exponent when max S(k)<=16k eventually. In particular,
+merely increasing a multiplier cap to any fixed sublinear power of k
+does not evade this barrier. The obstruction is stronger than a failure
+of the nine tested finite dictionaries.
+
+This is emphatically NOT a lower bound on |Z(k)|, J(k), or actual Mobius
+cancellation. All these prime anchors have the known sign mu(p)=-1.
+Their contributions can interact with other prime and composite components
+when one preserves the full signed sum. The barrier applies to a norm
+that takes each component's absolute value before that interaction. A
+method aggregating known signed prime anchors jointly, a cross-component
+energy, or additional relations connecting rough parts is outside the
+excluded language and must be priced separately.
+
+Concrete next grammar requirement
+
+Retain Z=sum_C mu(anchor_C)V_C. A proof rule may identify a prime anchor
+and use mu(anchor)=-1; it must then place its contribution in the SAME
+signed state as the remaining prime and composite contributions. The
+rule cannot charge all prime anchors separately and call that cancellation.
+If an expanded prime scope reconstructs every source-scale mu value, mark
+the result as finite target reconstruction until a uniform growth law is
+proved. No data structure containing exact values supplies that law.
+
+For any growing dictionary retain both A(k) and B(k) in the072 theorem
+delta1*A(k)*k+B(k)*sqrt(k). Suppressing the changing count-error constant
+can create a false exponent even independently of the prime survivor.
+All original head, prefix/invariant, core and ordinary-zeta/RH obligations
+remain open. This addendum excludes a proof price, not the desired theorem.

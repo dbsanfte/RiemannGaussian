@@ -1,0 +1,213 @@
+{
+  "RH_proved": false,
+  "checker_frozen_tests_replayed": false,
+  "elapsed_seconds": 0.2090481750201434,
+  "hashes_used": false,
+  "old_tests_run": false,
+  "remaining_generic_resource_concerns": [
+    "Unchecked Fraction growth in producer drift_matrix",
+    "Fixed bytes per rational in small_dual_contraction/public dual inputs"
+  ],
+  "scientific_source_queries": false,
+  "scope": "Finite generic source algebra audit, not historical scientific outcomes or uniform obstruction certificate.",
+  "status": "PASS",
+  "synthetic_lp_proposals": [
+    {
+      "gap": "1/6291456",
+      "linear": false,
+      "lower_bound": "1495/32",
+      "price": "293928961/6291456",
+      "solver_status": 0
+    },
+    {
+      "gap": "3623/75497472",
+      "linear": true,
+      "lower_bound": "2336995265/50331648",
+      "price": "7010993041/150994944",
+      "solver_status": 0
+    }
+  ],
+  "tiny_group_upper_dual_cases": [
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "1/18",
+      "memory": 1,
+      "price": "5/36",
+      "u": 1
+    },
+    {
+      "groups": 5,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-8155/432",
+      "memory": 1,
+      "price": "205/9",
+      "u": 19
+    },
+    {
+      "groups": 7,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-9191/54",
+      "memory": 1,
+      "price": "2051/12",
+      "u": 53
+    },
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "1/18",
+      "memory": 1,
+      "price": "5/36",
+      "u": 1
+    },
+    {
+      "groups": 7,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-7175/432",
+      "memory": 1,
+      "price": "2387/9",
+      "u": 19
+    },
+    {
+      "groups": 10,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-7522/9",
+      "memory": 1,
+      "price": "126853/36",
+      "u": 53
+    },
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "5/72",
+      "memory": 2,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "groups": 5,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-12707/432",
+      "memory": 2,
+      "price": "4025/144",
+      "u": 19
+    },
+    {
+      "groups": 9,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-59123/576",
+      "memory": 2,
+      "price": "56599/288",
+      "u": 53
+    },
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "5/72",
+      "memory": 2,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "groups": 7,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-3083/48",
+      "memory": 2,
+      "price": "13427/48",
+      "u": 19
+    },
+    {
+      "groups": 11,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-629257/1728",
+      "memory": 2,
+      "price": "1060159/288",
+      "u": 53
+    },
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "5/72",
+      "memory": 3,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "groups": 6,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-15085/288",
+      "memory": 3,
+      "price": "727/24",
+      "u": 19
+    },
+    {
+      "groups": 10,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": false,
+      "lower_bound": "-98603/1728",
+      "memory": 3,
+      "price": "59597/288",
+      "u": 53
+    },
+    {
+      "groups": 1,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "5/72",
+      "memory": 3,
+      "price": "1/6",
+      "u": 1
+    },
+    {
+      "groups": 7,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-132359/864",
+      "memory": 3,
+      "price": "21461/72",
+      "u": 19
+    },
+    {
+      "groups": 12,
+      "independent_dual_status": "VERIFIED_FINITE_GRAMMAR_PRICE_LOWER_BOUND",
+      "independent_upper_status": "VERIFIED_FINITE_DENSE_UPPER_BOUND",
+      "linear": true,
+      "lower_bound": "-226507/1728",
+      "memory": 3,
+      "price": "119993/32",
+      "u": 53
+    }
+  ],
+  "uniform_original_source_bound_proved": false
+}

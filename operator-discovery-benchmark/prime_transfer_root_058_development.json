@@ -1,0 +1,21 @@
+{
+  "schema": "prime-transfer-root-058-development-v1",
+  "runs": [
+    {
+      "returncode": 0,
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "operations": 18688,
+      "elapsed_seconds": 0.04036719800205901,
+      "peak_rss_kib": 42920,
+      "output": "test_all_presence_orders_and_independent_gate (test_prime_transfer_search_058.SearchTests) ... ok\ntest_canonical_and_fractional_grid (test_prime_transfer_search_058.SearchTests) ... ok\ntest_general_fractional_endpoint_and_open_forcing (test_prime_transfer_search_058.SearchTests) ... ok\ntest_lower_scale_and_zero_source_cannot_inherit_current_bounds (test_prime_transfer_search_058.SearchTests) ... ok\ntest_pair_elimination_discovers_signed_transfer (test_prime_transfer_search_058.SearchTests) ... ok\ntest_full_candidate_admission_keeps_unpaid_states (test_run_prime_transfer_058.RunnerTests) ... ok\ntest_target_obstruction_has_limited_scope (test_run_prime_transfer_058.RunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.040s\n\nOK\n"
+    }
+  ],
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scope": "new one/two-prime root integration only; no three-prime scientific matrix",
+  "checker_domain_metadata_corrected": "epsilon=min(tau,N^-gamma), independently exercised at tau2/5",
+  "old_suites_or_studies_replayed": false,
+  "scientific_pilot_applied": false
+}

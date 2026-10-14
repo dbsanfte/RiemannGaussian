@@ -1,0 +1,2311 @@
+{
+  "RH_proved": false,
+  "actual_arithmetic_drift_refuted": false,
+  "case_count": 24,
+  "cases": [
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 299,
+        "peak_bytes": 95152,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 1,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/230400",
+        "ops": 933,
+        "peak_bytes": 146972,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/480",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/230400",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/480",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 1,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 594,
+        "peak_bytes": 119728,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 1,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 572,
+        "peak_bytes": 119728,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 1,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 479,
+        "peak_bytes": 99312,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 2,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/184320",
+        "ops": 1131,
+        "peak_bytes": 153212,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/480",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/184320",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/480",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 2,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 777,
+        "peak_bytes": 123888,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 2,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 755,
+        "peak_bytes": 123888,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 2,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 722,
+        "peak_bytes": 103472,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 3,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/115200",
+        "ops": 1392,
+        "peak_bytes": 159452,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/480",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/115200",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/480",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 3,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 1023,
+        "peak_bytes": 128048,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 3,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 1001,
+        "peak_bytes": 128048,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 3,
+      "source": 0
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 303,
+        "peak_bytes": 95152,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 1,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "863041/618475290624",
+        "ops": 946,
+        "peak_bytes": 148028,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "929/786432",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "-3547/8192",
+              "0"
+            ],
+            "t": "8192/4645"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "-8192/4645"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-8192/4645"
+          }
+        ],
+        "lower_coefficient": "863041/618475290624",
+        "schema": "dense-rank-interval-v1",
+        "tau": "929/786432",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 1,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 598,
+        "peak_bytes": 119728,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 1,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "1",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/25600",
+        "ops": 576,
+        "peak_bytes": 119728,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "1",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/25600",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 1,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 483,
+        "peak_bytes": 99312,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 2,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "4315205/2473901162496",
+        "ops": 1144,
+        "peak_bytes": 154268,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "929/786432",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "-3547/8192",
+              "0",
+              "0"
+            ],
+            "t": "8192/4645"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-8192/4645"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-8192/4645"
+          }
+        ],
+        "lower_coefficient": "4315205/2473901162496",
+        "schema": "dense-rank-interval-v1",
+        "tau": "929/786432",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 2,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 781,
+        "peak_bytes": 123888,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 2,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "5/4",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/20480",
+        "ops": 759,
+        "peak_bytes": 123888,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "5/4",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/20480",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 2,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 726,
+        "peak_bytes": 103472,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19
+          ],
+          [
+            81
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 0,
+      "memory": 3,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 3,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "863041/309237645312",
+        "ops": 1405,
+        "peak_bytes": 160508,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            117,
+            29,
+            25,
+            57
+          ],
+          [
+            19,
+            121,
+            38,
+            242
+          ],
+          [
+            81,
+            6,
+            9,
+            12
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "929/786432",
+        "threshold": 8294400,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "14/195",
+            "profiles": [
+              3,
+              2,
+              1,
+              1
+            ],
+            "right": "25/312",
+            "source": [
+              "-3547/8192",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "8192/4645"
+          },
+          {
+            "left": "23/264",
+            "profiles": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "right": "21/220",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-8192/4645"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-8192/4645"
+          }
+        ],
+        "lower_coefficient": "863041/309237645312",
+        "schema": "dense-rank-interval-v1",
+        "tau": "929/786432",
+        "threshold": 8294400
+      },
+      "family": 1,
+      "memory": 3,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 1027,
+        "peak_bytes": 128048,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ],
+          [
+            81,
+            "sublinear_zero",
+            "sublinear_zero",
+            "sublinear_zero"
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 2,
+      "memory": 3,
+      "source": 1
+    },
+    {
+      "admission": {
+        "H00": "2",
+        "RH_proved": false,
+        "actual_arithmetic_drift_refuted": false,
+        "current_parameter_values_irrelevant": true,
+        "excluded_price_exponents": "every q<2 with fixed finite C",
+        "interval_count": 2,
+        "linear_floor_note": "The conservative margin threshold is verified; integer floor nesting also gives floor(floor(kappa*u)/n)=floor(kappa*u/n).",
+        "lower_coefficient": "1/12800",
+        "ops": 1005,
+        "peak_bytes": 128048,
+        "price_lower_bound": "B(u)>=lower_coefficient*u^2 for every integer u>=threshold",
+        "profile_moments": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "profile_roster_must_remain_fixed": true,
+        "profile_stability": [
+          [
+            19,
+            16,
+            26,
+            36
+          ],
+          [
+            81,
+            14,
+            23,
+            32
+          ]
+        ],
+        "scope": "Formal group-box rank-one covariance; actual mu drift/source bound unrefuted",
+        "source_kernel_binding_still_required": true,
+        "source_moments": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "squarefree_premise": "Q(x)=x/zeta(2)+error, |error|<=3sqrt(x), 1/zeta(2)>1/2; elementary square-divisor inversion",
+        "status": "VERIFIED_UNIFORM_DENSE_GRAMMAR_PRICE_OBSTRUCTION",
+        "tau": "1/160",
+        "threshold": 921600,
+        "uniform_completion_price_obstruction_proved": true,
+        "uniform_original_source_bound_proved": false,
+        "uniform_source_bound_proved": false
+      },
+      "certificate": {
+        "H00": "2",
+        "intervals": [
+          {
+            "left": "7/48",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "11/60",
+            "source": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "1"
+          },
+          {
+            "left": "19/90",
+            "profiles": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "right": "17/72",
+            "source": [
+              "-1",
+              "0",
+              "0",
+              "0"
+            ],
+            "t": "-1"
+          }
+        ],
+        "lower_coefficient": "1/12800",
+        "schema": "dense-rank-interval-v1",
+        "tau": "1/160",
+        "threshold": 921600
+      },
+      "family": 3,
+      "memory": 3,
+      "source": 1
+    }
+  ],
+  "elapsed_seconds": 0.049540789041202515,
+  "hashes_used": false,
+  "old_tests_run": false,
+  "scientific_source_queries": false,
+  "status": "PASS",
+  "uniform_original_source_bound_proved": false
+}

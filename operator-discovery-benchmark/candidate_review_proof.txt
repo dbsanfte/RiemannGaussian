@@ -1,0 +1,68 @@
+PARALLEL ANALYTICAL REVIEWS WITH INDEPENDENT ACTUAL-ARITHMETIC CERTIFICATES
+
+The user authorized gpt-6.1-sol subagents to evaluate detector candidates in
+parallel. Frozen exact candidate IDs are sorted and assigned round-robin;
+every remaining candidate receives a review. Reviewers can attempt different
+proof methods. Their assertions are leads until independently verified.
+The source queue, formulas, coefficients and finite results remain immutable.
+
+1. A DECISIVE ACTUAL SMALL-SCALE COUNTEREXAMPLE.
+Direct prime factorization gives mu(1..8)=(1,-1,-1,0,-1,1,-1,0).
+Prefix sums are (1,0,-1,-1,-2,-1,-2,-2). Thus
+A(2)=M(2)^2+M(3)^2=1,
+A(4)=M(4)^2+M(5)^2+M(6)^2+M(7)^2=10,
+Delta(2)=A(4)-4A(2)=6, and Q(8)=6.
+
+For every positive integer denominator d>=1,
+1<2^(1/d)<=2, hence ceil(2^(1/d))=2 EXACTLY.
+All declared cofinal schedules have such a denominator for every q>=1.
+At X=2, L=0, a constant-law candidate has D=4C and D*Q/2=12C.
+Every exact C<1/2 therefore violates its half-gap at this ONE fixed dyadic
+scale for EVERY integer q>=1. No existential starting q0 can remove it.
+Five candidates surviving the earlier recorded-scale endpoint audit use
+C=1478554275663870691771/45950839487610493075456<1/2. Their exact margin is
+-64490596404424127537871/11487709871902623268864.
+This proves those particular global inequalities false, not RH false.
+
+For general X>=2, the earlier plateau theorem still applies: whenever the
+reciprocal denominator is at least bit_length(X), the root ceiling is 2.
+The certificate backend requires a threshold that proves this condition for
+EVERY later q. Illustrative samples at a few large q cannot establish that
+quantifier. Each certificate is derived from actual mu via trial prime
+factorization, independently of the inverse-recurrence numerical detector
+and the reviewer's linear sieve.
+
+2. FINITE FAILURES AND GROWING CONSTANTS.
+At X=2 and general nonnegative L the necessary condition is
+C(q)*ceil(3^L)>=1/2 at every q INCLUDED by the global claim.
+A growing constant law may fail at finitely many small q and then satisfy
+this necessary condition. Its unknown q0 can exclude those q, so the finite
+failures do not refute its cofinal all-scale claim. Free-per-level families
+have unknown constants at unseen q; stored constants are not extrapolated.
+Neither satisfying this necessary condition nor passing any finite list of
+scales proves the all-scale signed upper bound.
+
+3. PRECISE SCOPE OF A COMPLETED REVIEW AUDIT.
+The independent checker verifies hashes, complete exact coverage, frozen
+agent dispatch, typed arithmetic witnesses and any explicit finite X=2
+diagnostics. Passing this checker does not certify unconstrained reviewer
+prose, unresolved estimates or auxiliary large development arithmetic.
+A newly proposed global upper proof needs a separate appropriate independent
+mathematical verification backend; text labeled proved_global is rejected
+by the current counterexample/provenance backend. This restriction concerns
+the scope of this checker, not the search grammar or admissible mathematics.
+
+For completeness, normalize E_j=A(2^j)/4^j and F_j=Delta(2^j)/4^(j+1).
+Then E_(j+1)-E_j=F_j exactly. If at every previous dyadic scale the half-gap
+with L=0 and fixed epsilon>0 holds, ceil(X^epsilon)<=2X^epsilon and Q<=4X
+give Delta<=4C X^(2+epsilon). Therefore
+A(2^J)<=4^J[1+C*(2^(epsilon J)-1)/(2^epsilon-1)].
+This is a CONDITIONAL transfer. The signed forcing premise remains unproved.
+
+If v is the actual Mobius vector and G0 the full nonunit divisor Gram,
+G0*v=0. A PSD certificate (D/2)I-H+Y*G0 implies the requested half-gap on v.
+Increasing Y cannot change that scalar nullspace margin. A strict positive
+margin can allow an orthogonal Schur enlargement, but presupposes the exact
+arithmetic premise. D*I instead of (D/2)I certifies only the weaker full gap.
+Reviewers' conditional multiplicity consequences neither prove nor refute
+the actual candidates. No all-scale RH-strength signed bound is established.

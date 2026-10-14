@@ -1,0 +1,511 @@
+MOBIUS PREFIX SMALL-HORIZON REPAIR REVIEW 063
+===========================================
+
+Scope and disposition
+---------------------
+This is a source-only mathematical review of the062 handoff, report and
+stopped062 review. No source table, optimizer, scientific bound, norm,
+integral, candidate enumeration or test was evaluated. One saved report
+JSON was decoded; the first read attempt used an unavailable python
+command, then the read succeeded with python3. No old file was changed.
+The finite062 certificates remain valid finite certificates. Neither
+their observed costs nor their exact verification prove a uniform rate.
+
+The review supplies an exact repair formula, complete coprime-row
+parameterization, universal positive repair rules, and an actual-prime
+second-difference recurrence with a paid integer-rounding boundary. The
+new signed arithmetic estimates required to close it remain OPEN.
+
+Notation
+--------
+Fix registered primes M, R=product(M), k=|M|>=2 and p<q in M. For integer
+N>=2, integer prefix Y>=0 and 0<r<1 define
+
+ f(d,r)=1[d<=Y]*(W(N/(pd))-r W(N/(qd))),
+ W(v)=floor(4v)-3floor(2v)+2floor(v), D=floor(4N/p).
+
+The true joined source is p^-t times sum mu_M(d)f(d,r), where
+mu_M(d)=mu(d)1[gcd(d,R)=1] and r=(p/q)^t. It is harmless to clamp Y to D.
+W takes values in {-1,0,1}, hence |f|<=2. Every floor and indicator is
+inclusive. Source unit d=1 and outside prime factors are retained.
+
+1. The exact small-horizon inverse
+----------------------------------
+Let a joined residual E(d,r) be zero for every integer d>H, H>=1. For
+1<=j<=H put
+
+ A_E(j,r)=sum_(m<=H/j) mu(m)E(jm,r), A_E(H+1,r)=0,
+ b_j(r)=A_E(j,r)-A_E(j+1,r).                         (1)
+
+Then, for EVERY positive integer d,
+
+ E(d,r)=sum_(j<=H)b_j(r)floor(j/d).                  (2)
+
+Proof: sum_m A_E(md)=sum_n E(nd)sum_(m|n)mu(m)=E(d).
+On the other hand sum_j b_j floor(j/d)=sum_m sum_(j>=md)b_j
+=sum_m A_E(md). All sums are finite, so the inversion introduces no
+Dirichlet-series or interchange assumption. This is the unique repair
+in the full basis floor(j/d), j=1,...,H: the matrix has unit diagonal
+and is triangular when the indices are ordered from large to small.
+
+All operations are linear in the source. An affine residual in r gives
+affine b_j(r); exact independent endpoint constructions at r=p/q and1
+may instead be interpolated as in062, with union horizons and complete
+residuals. The repair is not a separate optimization of the two channels.
+
+Two exact invariants retain the unit and current-scale information:
+
+ sum_j b_j=A_E(1)=sum_(m<=H)mu(m)E(m),
+ sum_j j*b_j=E(1).                                  (3)
+
+The second identity is also simply (2) at d=1. Adding a complete repair
+therefore changes the first moment of the long completion by E(1).
+One may not assert that a previously zero-moment long construction
+stays zero-moment after repair unless the full source unit is zero.
+
+2. The generic indicator completion restores a full inverse
+------------------------------------------------------------
+For any finite target f supported d<=D define
+
+ F(j,r)=sum_(m<=D/j)mu(m)f(jm,r), F(D+1,r)=0,
+ a_j(r)=F(j,r)-F(j+1,r).                            (4)
+
+The same proof gives f(d,r)=sum_(j<=D)a_j(r)floor(j/d).
+This is a full-row identity, before any coprime mask is applied.
+
+For an indicator 1[d<=T], F(j)=M_0(floor(T/j)), where
+M_0(x)=sum_(n<=x)mu(n). Its full coefficient is
+
+ a_j=M_0(floor(T/j))-M_0(floor(T/(j+1)))
+    =sum_(T/(j+1)<m<=T/j)mu(m).                     (5)
+
+The062 generic long completion uses
+I_K(T,d)=sum_(m<=K)mu(m)floor(T/(md)),
+K=floor(T/(H+1)), for each threshold T>H. Every one of these columns
+has horizon floor(T/m)>H. Conversely every full indicator inverse
+column with horizon>H has m<=K. Thus the generic completion is EXACTLY
+the j>H part of (4). After expanding truncated W into its indicators,
+this remains true under their complete signed linear combination.
+More explicitly, each threshold is T=min(Y,floor(Z/m)), with its
+original signed multiplicity. In the full indicator inverse,
+floor(T/(ell*d))=floor(floor(T/ell)/d); retaining ell<=floor(T/(H+1))
+is exactly retaining the integer floor endpoint floor(T/ell)>H.
+Aggregating duplicate endpoints before or after this truncation gives
+the same coefficient. There is no approximation in a grouped endpoint
+or in the original prefix truncation.
+Discarded thresholds T<=H only contribute to the repair; they must not
+be omitted from that repair.
+
+Consequently the short residual is
+
+ E_H(d,r)=sum_(j<=H)a_j(r)floor(j/d),
+
+and its exact repair is just a_j for j<=H. For j<=H its cumulative
+transform is A_E(j)=F(j)-F(H+1); the constant cancels in each difference.
+Small-horizon correction has not removed a Mertens remainder: it has
+restored the omitted part of the ordinary-mu inverse.
+
+Already the indicator coefficient a_1=M_0(T)-M_0(floor(T/2)) is a
+CURRENT-SCALE signed interval. No unconditional square-root estimate
+for it is proved here. The fact that its floor horizon is1 does not
+make its arithmetic coefficient small. This is a scoped obstruction
+to declaring generic repair automatically cheap, not an impossibility
+theorem for other completions or for the actual joined source.
+
+The062 paid long cost remains
+O(N/(H+1)*(1+log(max(1,N/(H+1))))). For H=floor(N^eta), eta in[0,1],
+it is O(N^(1-eta)log(2N)). The new unpaid cost is precisely
+
+ V_H(N,Y,r)=sum_(j<=H)|F(j,r)-F(j+1,r)|.             (6)
+
+A uniform square-root/polylog estimate for the COMPLETE joined (6)
+would pay this repair. Separate indicator estimates followed by absolute
+summation need not preserve its useful cancellations.
+
+3. Separate the genuinely paid full channel from the prefix exit
+----------------------------------------------------------------
+In (4), the exact complete ordinary-mu convolution gives
+
+ F(j,r)=C(j,r)-T(j,r),                              (7)
+
+ C(j,r)=1[j<=4N/p]-3*1[j<=2N/p]+2*1[j<=N/p]
+       -r*(1[j<=4N/q]-3*1[j<=2N/q]+2*1[j<=N/q]),
+
+ T(j,r)=sum_(m>Y/j)mu(m)
+               [W(N/(pjm))-r W(N/(qjm))].           (8)
+
+The tail in (8) ends at floor(D/j). There is no assumption about mu
+after a fixed prime cutoff. Formula (7) follows from
+sum_m mu(m)floor(Z/m)=1[Z>=1] for every real Z>0. The full-channel
+variation costs at most 6*(1+r)<=12, including every endpoint jump.
+Therefore
+
+ V_H<=12+sum_(j<=H)|T(j,r)-T(j+1,r)|.                (9)
+
+If Y>=D, the tail is zero and the six original floor columns are a
+universal cheap full reconstruction. For an interior prefix, the new
+arithmetic leaf is the joint reciprocal EXIT variation in (9), not
+an assumed bound on the whole untruncated source. The lower and upper
+cofactor endpoints in every T(j)-T(j+1) must remain signed together.
+
+An equivalent bilinear formula is
+
+ a_j=sum_m mu(m)[f(jm,r)-f((j+1)m,r)].               (10)
+
+If Delta f(T)=f(T,r)-f(T+1,r), then
+
+ a_j=sum_T Delta f(T)
+          [M_0(floor(T/j))-M_0(floor(T/(j+1)))].    (11)
+
+It follows by writing f(d)=sum_(T>=d)Delta f(T); all finite thresholds,
+including Y, remain. These formulas give enumerable joined kernel and
+boundary primitives rather than only a numeric repair vector.
+
+For illustration, a uniform harmonic-interval premise
+|sum_(T/(j+1)<m<=T/j)mu(m)|<=C*(sqrt(T)/j+1)*polylog(T)
+would pay a single indicator repair with H<=sqrt(T), by harmonic
+summation. It is an UNPAID strong signed interval premise. Moreover
+applying it independently to every W threshold can lose the joined
+cancellation and accumulate an extra power. It is not a provider for
+the actual target until the entire threshold combination is priced.
+
+4. Coprime-only repairs have free rows, but fixed signed recovery
+----------------------------------------------------------------
+The062 checker requires matching only rows coprime to R. Therefore
+uniqueness of the full-row repair does not imply uniqueness, optimality,
+or a lower bound for every licensed LP repair.
+
+There is an exact COMPLETE parameterization of this freedom. Fix the
+actual short residual on every coprime d<=H, including d=1. Fill each
+noncoprime row with an arbitrary affine value z_d(r), obtaining a full
+short vector E_z. Apply (1). Conversely every small-floor repair that
+matches the required coprime rows induces just such a fill, and (1)
+recovers its unique coefficients. Thus the filled-row inverse covers
+ALL repairs in this basis, not just the zero-fill one.
+
+The invariant masked convolution is
+
+ sum_(j<=H)b_j(r)Psi_M(j)
+   =sum_(d<=H)mu_M(d)E_z(d,r)
+   =sum_(d<=H,gcd(d,R)=1)mu(d)E_actual(d,r).        (12)
+
+It is independent of every free fill. The unit invariant in (3) is
+also fixed. Free noncoprime rows can improve coefficient cancellation;
+they cannot change the actual signed remainder being recovered.
+
+For the useful zero-fill extension of the FULL target, (4) becomes
+
+ F_M(j,r)=1[gcd(j,R)=1]*P_M(N/j,Y/j,r),
+ P_M(x,z,r)=sum_(d<=z)mu_M(d)
+                      [W(x/(pd))-r W(x/(qd))].      (13)
+
+This uses ordinary mu in the inverse but the actual masked source in
+P_M. Repeated valuations and gcd overlaps are included: the displayed
+zero for noncoprime j is algebraic, not a deletion of a nonzero source
+term. The complete untruncated part of P_M is the six corresponding
+smooth counts Psi_M. Its crude short variation is paid by
+O(H*(1+log(4N))^k); its remaining masked prefix-exit variation is OPEN.
+
+This zero-fill FULL-target inverse is a separate permissible algebraic
+construction. Its long coefficients need not equal062's generic
+unmasked long coefficients and do not automatically inherit their
+proved coefficient cost. For a FIXED generic long completion, apply
+the free-row parameterization only to its SHORT residual. The long
+rows and their existing certificate stay fixed. Keeping this distinction
+prevents an alternative full inverse from silently changing the paid
+construction.
+
+5. Universal repair bounds and what they actually buy
+----------------------------------------------------
+For an arbitrary chosen full short residual E, (1) gives
+
+ ||b||_1<=2*sum_(d<=H)tau(d)|E(d)|
+         <=2H*(1+log H)*||E||_infinity.             (14)
+
+Indeed sum_j|A_E(j)|<=sum_d tau(d)|E(d)|, and each A_E occurs at
+most twice in the variation. The elementary divisor count
+sum_(d<=H)tau(d)=sum_(a<=H)floor(H/a)<=H*(1+log H)
+proves the second inequality. These bounds are independent of source
+sign guesses. For affine E the endpoint or direct convex price may
+retain the signed p/q mixture before either bound is applied.
+
+A quadratic alternative retaining signed crosses within E is
+
+ ||b||_1<=2*sqrt(H)*(1+log H)^(3/2)*||E||_2.        (15)
+
+At prime powers tau(p^e)^2=(e+1)^2<=binom(e+3,3)=d_4(p^e);
+the difference is (e+1)*e*(e-1)/6>=0. Multiplicativity and
+sum_(d<=H)d_4(d)<=H*(1+log H)^3 follow by counting four-factor
+products and summing three harmonic factors. Cauchy-Schwarz now
+proves (15). No companion RH bound enters this argument.
+
+For H<=sqrt N, a uniform polylog sup bound for the FULL joined E
+pays repair by (14). An appropriate quadratic premise can use (15).
+Both are explicit source-bound leaves and neither is proved for the
+generic E_H. Applying |E|<=2+long coefficient L1 merely reproduces
+the bad product H*N^(1-eta) of062; no exponent is saved.
+
+The positive rules are sufficient, not necessary. For example
+E(d)=floor(H/d) has a repair consisting of the single column j=H
+with coefficient1, despite a large unit and a large residual L1.
+Thus a detector should also search floor-structured residual identities
+or directly bound the transformed variation, rather than always impose
+a small residual sup norm. This is a source-free algebraic example,
+not an observation about the scientific residual.
+
+Repair is also not automatically better than leaving the062 residual
+priced in L1. Formula (14) can increase cost by a divisor weight; the
+exact smooth-weighted repair price can be still larger. Only its actual
+complete cost or a proved rate is a valid improvement.
+
+6. Optional actual-prime scale innovation with paid integer transport
+----------------------------------------------------------------
+Choose an actual prime Q outside M. The exact law
+mu_M(Qd)=-mu_M(d) for Q not dividing d and0 otherwise, including
+all higher Q valuations, gives the constructive identity
+
+ I_Q(N,Y,r):=P_M(N,Y,r)-P_M(N/Q,Y/Q,r)
+ =sum_(gcd(m,QR)=1)mu(m)
+       [f(m,r)-2*f(Qm,r)+f(Q^2*m,r)].               (16)
+
+Proof: separate each P_M into valuation0 and valuation1 terms. In
+the first source these are f(m)-f(Qm); in the second they are
+f(Qm)-f(Q^2m). Their difference is (16). The unit m=1, new prime
+Q-free companion, every cutoff Y/Q and Y/Q^2, and all W exits are
+present. Valuation>=2 vanishes by the actual ordinary-mu law, not by
+an approximation. No independence or prime density is assumed.
+
+For (13), Q coprime to R implies
+I_Q=F_M(1)-F_M(Q)=sum_(j=1)^(Q-1) a_j. Thus (16) is also a
+concrete LOW coefficient-block innovation for that alternative full
+inverse. If its long part is separately admitted and H>=Q-1, the
+block lies within its short repair. It is not automatically a block
+of the fixed062 generic repair, and no long-part cost is inherited.
+The scale identity itself is independent of any floor construction.
+It overlaps the licensed prime-transfer direction and is optional,
+not the main new repair theorem or a paid arithmetic estimate.
+
+The real arguments in (16) matter. They can be transported to integer
+parents at a source-free square-root price. If x>=1, n=floor x and
+z is any prefix, then
+
+ |P_M(x,z,r)-P_M(n,floor z,r)|<=56*sqrt x.           (17)
+
+For a single floor floor(c*x/d)-floor(c*n/d), summing its nonnegative
+jumps over d counts divisors of the integers v with c*n<v<=c*x.
+There are at most ceil(c) such integers and tau(v)<=2sqrt(v).
+For c=4/p,2/p,1/p, the weighted jump count is at most
+2*sqrt(4x/p)*(ceil(4/p)+3ceil(2/p)+2ceil(1/p))
+<=14*sqrt(4x/p). The q channel has the same upper bound and r<=1;
+their total is <=56sqrt x. Restricting to a prefix or to coprime d
+only reduces this positive jump count. The prefix floor is exact, not
+an ignored extra source row. Empty sources and x<1 can be handled in
+the finite head, directly by |P_M(x,z,r)|<=2floor(4x/p).
+
+Consequently a genuinely proved uniform innovation premise
+
+ |I_Q(N,Y,r)|<=C*N^sigma*(1+log(4N))^A,
+ every integer N>=N0, every prefix Y, every admissible r,          (18)
+
+with integer N0>=2, sigma>=1/2 and A>=0, gives a strict normalized
+scale recurrence.
+Set N'=floor(N/Q), Y'=floor(Y/Q). Equations (16)-(17) imply
+
+ |P_M(N,Y,r)|<=|P_M(N',Y',r)|
+          +(C+56)*N^sigma*(1+log(4N))^A.            (19)
+
+Iterating the floor parents yields a geometric coefficient factor
+at most 1/(1-Q^-sigma), plus the source-free finite head. In
+particular Q^-sigma<=1/sqrt2<3/4, so the conservative prefactor
+4*(C+56)+4*N0 bounds the result at N>=2. The head estimate uses
+|P_M(x,z,r)|<=4x for integer x and p>=2. This is all-integer
+recovery, not just a claim along an exact geometric subsequence.
+
+The hypothesis (18) must cover the parameter at EVERY parent. A bound
+known only on t>=eps(N) cannot be silently used at N': eps(N') is
+larger and leaves a missing low-t strip. One must either prove (18)
+uniformly for 0<t<1, as062's algebraic certificates do at a fixed N,
+or price each missing strip by the licensed endpoint theorem.
+
+The normalized gap in (19) is valid, but the signed estimate (18)
+is OPEN. Pointwise absolute values in (16) give only a linear source
+count; they do not establish the square-root innovation. Applying an
+assumed RH-strength bound separately to the Q-free companion would
+be circular. Positive-power uniform increment control and uniform
+prefix control have the same growth class: the reverse implication
+follows by triangle inequality. This is therefore an exact useful
+arithmetic frontier and recovery schema, not yet an advance in the
+unresolved exponent. A real advance would prove (18), or a stronger
+joint cancellation mechanism, from independent arithmetic structure.
+
+7. Detector-facing grammar and honest proof obligations
+-------------------------------------------------------
+An enumerable argument can contain:
+ * exact joined long columns with all original and added horizons;
+ * a rational affine noncoprime-row fill, then inverse (1);
+ * a transformed-variation or paid positive rule (14)/(15);
+ * exact full-channel/exit separation (7)-(11);
+ * an actual-prime innovation (16), complete cutoff masks and
+   integer-parent compensation (17);
+ * a uniform rate premise with all-N/all-prefix/all-parameter domains,
+   finite head, and explicit scale decrease (19).
+
+These are mechanically checkable algebraic rules or conditional
+recovery rules. Their unpaid arithmetic leaves are transformed short
+variation, joint reciprocal-exit variation, a short-residual quadratic
+bound, or the actual Q-free second-difference estimate. They may not
+be paid by the original source bound at the same scale, an assumed
+Mertens/RH estimate, a disappearing gcd sector, or finite LP evidence.
+Source mask changes must be recorded in the obligation graph.
+
+For example a node invoking P_M(N,Y) to bound its own coefficient
+F_M(1) creates a dependency cycle. A node invoking the Q-free
+companion at current scale must expose that companion as OPEN unless
+an independent source identity pays it. Merely enlarging M repeatedly
+does not give a finite proof; the cost and remaining outside primes
+must be controlled. Conversely use of small-index ordinary mu in the
+exact floor inverse is fully legitimate and is not such an assumed
+signed estimate.
+
+A proved square-root/polylog full repair together with062's paid long
+mass would provide the uniform prefix bound, then061's core recovery
+and058's conditional RH bridge within their original endpoint scope.
+No such repair or innovation bound has been proved here. No general
+impossibility for the finite LP language or for other cheap repairs
+has been proved either.
+
+8. Factored quadratic dependency: smaller queries, current-scale cost
+---------------------------------------------------------------------
+This section additionally inspects the new063 producer and independent
+checker source, plus the062 generic indicator-construction source. No
+source array, optimizer or test is executed by this inspection. The
+scope is a GENERIC ordinary-mu inverse base followed by one fixed fill
+rule. An arbitrary fitted LP base is not automatically such a base.
+
+Keep an unpruned dictionary containing every generic long endpoint.
+For each threshold T in the signed truncated-W expansion and each
+ell<=floor(T/(H+1)), the long coefficient has the form
+mu(ell) times a source-free signed multiplicity, at X=floor(T/ell).
+Duplicate columns are aggregated linearly. Pruning columns whose
+coefficient becomes zero does not alter this statement: retain them
+with zero coefficients in the underlying dictionary. Put
+
+ K=max_T floor(T/(H+1))<=floor(D/(H+1)),
+ g_X(r)=sum_(ell<=K)G_(X,ell)(r)*mu(ell),
+ L_(d,X)=floor(X/d), 1<=d<=H.
+
+Take K=0 if the long threshold list is empty, with an empty G matrix.
+The matrix G is source-free and affine in r; it includes all threshold
+multiplicities and both channels. The raw short residual vector is
+
+ E_raw(r)=f_short(r)-L G(r)mu_(<=K).                 (20)
+
+All eight registered rules raw, zero, left, right, linear,
+reciprocal_linear, core and core_inverse are fixed linear maps P on
+this vector. Their entries depend on H and registered-prime divisibility
+only, not on ordinary-mu values. Every row is nonnegative with row sum
+at most1, and every coprime row, including1, is the identity row.
+For the reciprocal rule, between neighboring coprime indices a<d<b,
+the weights are a(b-d)/(d(b-a)) and b(d-a)/(d(b-a)); they are positive
+and sum1. The virtual right endpoint H+1 is zero and may reduce row
+mass. The core rule copies the row with registered primes stripped;
+core_inverse multiplies it by core/d<=1. Thus
+
+ ||P E_raw||_infinity<=||E_raw||_infinity.           (21)
+
+No hidden mu-dependent interpolation or division is present in these
+rules. Other future fills must prove their own linearity and norm rule.
+
+Define D(mu) by
+ (D(mu)v)_j=sum_(m<=H/j)mu(m)v_(jm),
+and Delta v_j=v_j-v_(j+1), with the virtual row H+1 zero. The exact
+coefficient vector is therefore
+
+ b(r)=Delta D(mu_(<=H)) P
+                    [f_short(r)-L G(r)mu_(<=K)].    (22)
+
+This is a factored polynomial of degree at most TWO in ordinary mu.
+The first term is linear, the second is bilinear, and all coefficients
+are affine in r. More explicitly, put
+
+ T_(j,m,e)=1[jm<=H]P_(jm,e)-1[(j+1)m<=H]P_((j+1)m,e).
+
+An out-of-range P row in this notation contributes zero.
+Then
+ b_j(r)=sum_m mu(m)sum_e T_(j,m,e)f_e(r)
+       -sum_(m,ell)mu(m)mu(ell)
+          sum_(e,X)T_(j,m,e)floor(X/e)G_(X,ell)(r). (23)
+
+The source-free coefficient tensors may have current-scale weights.
+Every mask, unit and endpoint remains inside (23). If a fill is selected
+by comparing its observed costs, the winner is piecewise one of these
+eight polynomials; it is not necessarily one fixed quadratic formula
+valid at every N. Each fixed branch retains the exact factorization.
+
+For H=floor(N^eta), eta in[0,1], H<=N^eta and H+1>N^eta. Consequently
+K<(4/p)N^(1-eta), and all ordinary-mu dependencies are at indices
+
+ <=max(H,K)=O(N^max(eta,1-eta)).                    (24)
+
+The minimum exponent is1/2, attained at eta1/2. With p>=2 the bound
+is at most2sqrt N there. The actual generic compiler may conservatively
+generate mu through floor(D/(H+1)) rather than just the last used
+threshold; the same bound applies. These are MU ARGUMENT INDICES, not
+a claim that only prime indices are queried. Their prime factors are
+small too, but bilinear products can be as large as H*K<D=O(N).
+For a fixed branch (22) the repair uses no new current-scale source
+mu lookup. This is genuine arithmetic dependency reduction.
+
+It is not a contraction or a solved signed bound. An elementary exact
+factorization makes that distinction explicit. Let L_U be the sequence
+mu restricted to n<=U, with U,V nonnegative integers. Dirichlet
+convolution gives
+
+ (mu-L_U)*(mu-L_V)*One
+       =mu-L_U-L_V+L_U*L_V*One.                    (25)
+
+The left side has no coefficient at n<(U+1)(V+1), because both factors
+are supported above their respective cutoffs. Therefore whenever
+(U+1)(V+1)>T,
+
+ M_0(T)=M_0(min(U,T))+M_0(min(V,T))
+        -sum_(a<=U,b<=V)mu(a)mu(b)floor(T/(ab)).    (26)
+
+This proof uses only finite convolution and mu*One=delta_1. Choosing
+U=H and V=floor(T/(H+1)) meets the condition exactly. Taking the
+difference of (26) at T and T/2 yields the indicator coefficient a_1
+in (5), using only indices through max(H,V). Thus a current-scale
+Mertens interval really can be encoded by smaller-index quadratic
+arithmetic. No unknown large-prime sign is licensed to vanish; the
+complete floor weights encode its contribution indirectly. This is an
+identity, not an assumption about independence of the small inputs.
+
+Nor may one freely replace mu(m)mu(ell) by mu(m*ell). Overlap sectors
+are essential. With g=gcd(m,ell), the exact identity is
+
+ mu(m)mu(ell)=mu(m)^2*mu(ell)^2*mu(m*ell/g^2).
+
+It follows by separating squarefree and nonsquarefree inputs and then
+their coprime remaining factors. It does not license deleting shared
+prime factors or treating the composite-index form as a smaller query.
+
+The concrete next analytic leaf is the COMPLETE joint variation
+
+ sum_(j<=H)| linear_j(mu_(<=H),r)
+                       - quadratic_j(mu_(<=H),mu_(<=K),r) |,
+
+with (23)'s actual source-free tensors and either exact endpoint
+control or full parameter quantification. The paid long coefficient
+cost is added afterward. A detector can enumerate fills or exact
+tensor rearrangements, expose gcd-overlap sectors, seek telescoping,
+and attach an independently proved variation budget. It must price
+the tensors, not just count their source queries. Absolute termwise
+estimation can lose both bilinear cancellation and the linear-minus-
+quadratic cancellation. If an argument bounds this leaf by the
+current-scale Mertens term reconstructed in (26), its dependency is
+still unpaid and may be circular. Smaller arithmetic queries provide
+a useful new joint-quadratic proof coordinate, not by themselves a
+scale-decreasing inequality, asymptotic growth estimate, or RH claim.
+
+Disposition: review complete and edits stopped. No scientific source,
+optimizer, old suite or frozen file was changed or rerun.

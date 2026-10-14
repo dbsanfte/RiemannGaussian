@@ -1,0 +1,86 @@
+TARGET-DRIVEN SIGNED PREFIX PROOF SEARCH, VERSION 1
+
+Input is the published candidate10_short_inverse_obligation.json. All old
+sources and studies remain frozen. This stage performs exact symbolic
+search and proof checking; it reads no numerical source responses and
+fits no constants. No all-scale conclusion comes from finite tests.
+
+For fixed integer N>=1, U=floor(N^alpha), V=floor(N^gamma), use the
+previously verified A,B,R,S,K and E=R+c*One, c=sum_(d<=U)mu(d)/d.
+O denotes One; C denotes the sequence c*delta (scalar convolution).
+For EVERY 1<=n<=N, prefix E(n)=1+sum_(d<=U)mu(d){n/d}.
+Thus its absolute value is <=1+U<=2N^alpha. Evaluating at n=U and
+using prefix R(U)=0 gives |c|U<=1+U, hence |c|<=2. All fixed-U
+divisors, including d>n, remain in this identity. E has NO support gap.
+
+Grammar: each original monomial containing a copies of R can rewrite
+k of them, 0<=k<=a, using R=E-C*O. Enumerate the COMPLETE binomial
+expansion. Never apply support truncation again after centering. The
+original certified inverse polynomial is the only support truncation.
+No source mode, unit, scalar, prime power or transport error is removed.
+Search every k separately, retaining all alternatives and their failures.
+
+For each resulting convolution monomial, dynamic programming searches
+every multiset partition and these reusable rules:
+ M(f*g)<=M(f)M(g); W(f*g)<=W(f)W(g);
+ P(f*g)<=P(f)M(g) and M(f)P(g);
+ P(f)<=M(f); P(f)<=sqrt(N)W(f).
+Here M=sum_(n<=N)|f(n)|, W=sum_(n<=N)|f(n)|/sqrt(n), and
+P=max_(1<=n<=N)|sum_(k<=n)f(k)|. Bounds have exact rational constant
+and N exponent, and nonnegative integer power of h=1+ln N.
+
+Atomic bounds (constant,N exponent,h degree):
+ A: M=(1,alpha,0), W=(2,alpha/2,0).
+ B: M=(3,gamma/3,0), W=(7,0,0).
+ R: M=(1,1,1), W=(2,1/2,1), using actual inverse tail.
+ S: M=(3,1/3,1), W=(50,0,0) or (84,-gamma/6,0).
+ E: M=(3,1,1), W=(6,1/2,1), P=(2,alpha,0).
+ O: M=(1,1,0), W=(2,1/2,0).
+ K: M=(3/2,2/3,0), W=(6,1/6,0).
+ C: M=W=P=(2,0,0).
+ Empty convolution is delta: M=W=P=(1,0,0).
+Analysts supply these primitive facts and inference rules. The executable
+chooses rewrites, factor partitions, norm conversions and proof trees.
+Its selection is lexicographic (N exponent,h degree,constant,proof size),
+not numerical fitting or a nominated answer. Report this as bounded
+proof search within a supplied language, not an unrestricted prover.
+
+If P(h)<=D N^e h^k, normalized complete-prefix block energy at X or
+2X under COMMON N=4X-1 is <=4 D^2 N^(2e-1)h^(2k).
+For exponent -d<0 and integer q>=0, N^-d(1+ln N)^q is uniformly
+<=1 when q=0, otherwise <=2^q*(1+(q/d)^q). This follows from
+(1+x)^q<=2^q(1+x^q) and x^q exp(-d*x)<=(q/d)^q.
+An exponent zero is uniformly paid only when the log degree is zero.
+
+For a channel L(n)^-eta sum_j a_j sum_(k<=n)h(k)log(k)^j/L(n)^j,
+L(n)=log(2n), Abel summation, with ALL earlier prefixes, gives a bound
+2^ceil(eta)*(|a_0|+2sum_(j>=1)|a_j|)*P(h). This is different from a
+coefficient-mass bound. Squared channel costs add. Projection onto
+complete cells is contractive. The paid sum uses Cauchy with its full
+number of terms. Every remaining term stays in ONE signed energy.
+
+Selection per original monomial: retain baseline k=0 unless an expansion
+creates a uniformly paid part of a previously unpaid monomial, or improves
+its worst proved N exponent. Prefer more paid terms, then smaller worst
+unpaid exponent, then fewer terms, then k. This selects partial reductions,
+not successful full bounds or independent new operators. All unselected
+alternatives remain recorded. Do not infer disproof from an unpaid bound.
+
+Previously paid original source terms must be excluded before the new
+payment. If Z_old=P_new+Z_new, then S_old<=2S_new+2C_new and conversely.
+The transport error is retained in Z_new. Target log degree and domain
+remain inherited; fixed-C recurrences are not discharged. All dependencies
+are retained, and any new signed leaf stays open unless fully proved.
+
+Independent checker imports no generator; it verifies each proof node,
+all exact binomial recovery identities, exhaustive alternatives, selection,
+Abel channel costs and the paid/unpaid partition. Independent generic
+rational sequence tests check the prefix convolution rule, floor remainder
+with d>n, every drift term, source recombination and tamper rejection.
+
+One owned development suite per module, affected tests only after edits,
+then one frozen suite. Direct-byte snapshots, no hashes. One symbolic
+process, 4GiB address-space ceiling under the user's 16GiB aggregate limit,
+900 seconds, 300million charged operations including development and
+frozen checks. Preserve any terminal failure. No unchanged study rerun.
+The complete signed core bound and RH remain open.

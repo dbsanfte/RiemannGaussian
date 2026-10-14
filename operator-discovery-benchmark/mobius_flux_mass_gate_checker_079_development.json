@@ -1,0 +1,23 @@
+{
+  "stage": "079 flux mass gate independent checker",
+  "status": "PASS",
+  "distinct_tests": 6,
+  "test_executions": 6,
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "python3 -m unittest test_check_mobius_flux_mass_gate_079 -v",
+      "tests_run": 6,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.01,
+      "outcome": "PASS",
+      "output": "test_coupled_log_interval_and_signed_mass (test_check_mobius_flux_mass_gate_079.Tests) ... ok\ntest_domain_and_other_bins_unpaid (test_check_mobius_flux_mass_gate_079.Tests) ... ok\ntest_normalization_canonical_and_resource (test_check_mobius_flux_mass_gate_079.Tests) ... ok\ntest_pure_prime_and_scope (test_check_mobius_flux_mass_gate_079.Tests) ... ok\ntest_tampered_mass_density_sign_terms_threshold (test_check_mobius_flux_mass_gate_079.Tests) ... ok\ntest_unpaid_log_interval_and_zero_mass (test_check_mobius_flux_mass_gate_079.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_source_queries": false,
+  "old_test_suites_run": false,
+  "frozen_files_edited": false,
+  "scope": "Exact rational certification of a nonzero asymptotic prime/last-bin covariance-leaf main coefficient, conditional on the named classical PNT and separate fixed-kernel/source/coefficient-norm binding. No effective threshold or residual/RH refutation."
+}

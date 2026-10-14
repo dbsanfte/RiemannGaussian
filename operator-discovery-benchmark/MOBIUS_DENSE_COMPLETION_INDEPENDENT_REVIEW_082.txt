@@ -1,0 +1,97 @@
+Independent082 producer and proposed obstruction review
+
+Read-only source review plus generic tiny algebra audit; no old scientific
+outcome, source mu sign query, old test replay, frozen edit, or hash. New
+review source is audit_mobius_dense_completion_082.py and retained PASS
+receipt is mobius_dense_completion_independent_review_082.json. Original
+18-distinct/20-execution checker receipt remains unchanged. The audit tests
+18 generic u=1,19,53 cases over memory1..3 and linear/fractional profiles,
+and two small LP proposals atu37. Every producer group, count, exact upper
+price, exact feasible dual price and reconstructed LP proposal was checked
+against the independently written checker. All passed.
+
+Producer primal/dual correspondence
+Literal squarefree construction (strike every k^2) has the same support as
+independent prime-square sieving. Integer common-denominator features and
+np.unique lexicographic global grouping match exact rational ordering.
+feature_bound*N<2^62 prospectively controls the native integer count-weight
+product. Unit C_K correction is retained; source delay endpoints and profile
+cutoffs agree. Coefficient matrix puts theta in BOTH cross blocks, so f*C
+mixed terms carry the necessary factor2, while positive Gram is added.
+
+The LP introduces price d_g>=0 and edge slack e_gh>=0, with inequalities
+ A_gg+sum_h e_gh<=d_g, A_gh<=e_gh and -A_gh<=e_gh.
+Thus its objective is the claimed SDD price. Scaling all matrix terms by
+u^2 preserves original theta/Gram box units. Sparse row/column indexing,
+edge incidences, RHS signs, and parameter basis match the exact grammar.
+Floating solver outputs are only proposals. Clamping/rounding parameters
+cannot invalidate the published bound because exact upper certificates are
+recomputed. Feasible exact dual lambda=-row_marginal and
+nu=-positive_edge_marginal+negative_edge_marginal are projected to their
+correct constraints before exact replay. No published dual theorem relies
+on numerical feasibility tolerance or float_optimum_normalized.
+
+The small contraction uses D_gh=nu_gh/2, correct for pairing each A_gh once.
+Consequently dual base, theta absolute penalty and nonnegative Gram box
+penalty match the independent verifier. Exact upper-minus-lower ordering
+is sound. A zero/negative dual is valid but not a useful obstruction.
+Neither an exact gap nor a finite lower bound proves a uniform price law.
+
+Resource review issues communicated before freeze
+Producer drift_matrix currently accumulates unrestricted Fraction arithmetic
+for up10000 rays with4096bit input rationals. Common-denominator growth and
+work are not prospectively gated there, and this T is constructed after
+source arrays in build_model. Public small_dual_contraction uses fixed320
+bytes per dense rational, although supplied lambda/nu denominator growth
+can greatly exceed that estimate. Public dual_certificate parses arbitrary
+Q strings rather than the canonical/4096bit admitted path. Exact_matrix's
+sum of coefficient bit lengths is useful only after the coefficient matrix
+has already been constructed. These are generic advertised-resource risks;
+the tiny audit and intended small-coefficient pilot are not evidence that
+the generic gates are safe. Root was notified and owns fixes. This review
+does not approve freezing those unchecked generic paths as resource-safe.
+
+Independent scrutiny of MOBIUS_DENSE_RANK_ONE_OBSTRUCTION_082.txt
+The rank-one finite dual is correct: lambda=z^2,nu=2zgzh is feasible. If
+all C_j weighted dots and delayed source dots vanish, L(Z)=0 and Gram
+functionals are squares, so the full-box lower bound equals H00(F0z)^2.
+This is a formal group-box covariance, not actual ordinary-mu covariance.
+
+The rational-floor independence lemma is sound. Writing distinct rational
+kappas as Aj/B turns the alleged zero tail into sum alpha_j floor(Aj t).
+The shift relation forces sum alpha_j Aj=0, hence periodicity; a zero tail
+then implies zero everywhere, and the earliest largest-A jump isolates its
+coefficient. Duplicates must first be merged. The argument uses finitely
+many fixed rational scales; it does not cover a growing or varying roster.
+
+For the two registered zero-sum kernels, all source delays vanish near0,
+while on(1/5,1/4] f0=-1 and all delayed source profiles vanish. Thus f0 is
+outside the span of any fixed finite linear floor profiles and delays.
+Sublinear profiles vanish on a fixed compact interval away from0. A finite
+rational evaluation/null witness exists by finite-dimensional linear algebra;
+points may be chosen within rational constant-profile cells.
+
+The interval construction is also valid: fixed strict margins make the
+floored linear cutoffs stable for sufficiently largeu, and elementary
+squarefree interval counts provide positive orderu population. Disjoint
+interval formal values tau*u*t_l/count_l satisfy |s_n|<=1, exactly annihilate
+all constraints, and give orderu source mass. Aggregating to canonical groups
+is legitimate even when one group contains disconnected intervals. The
+unit and other coordinates receive formal zero, not deletion from the
+complete source model. This yields an orderu^2 PRICE obstruction.
+
+The stated easier sublinear threshold checks independently: all cuts<=u/6
+vanish on the outer source band. Its squarefree count>=u/40-3sqrtu; u>=241^2
+makes it strictly greater thanu/80. Hence H00*u^2/6400 is safe with the
+exact rational profile threshold included. This conclusion remains tied to
+these two verified outer-band kernels.
+
+The broad fixed-roster argument is a sound reviewed mathematical existence
+proof under its explicit hypotheses. It is NOT an implemented effective
+certificate: the finite interval list,t_l,tau and starting scale have not
+been supplied or replayed by the checker. Publications should distinguish
+reviewed theorem from finite exact dual admission and from an independently
+checked uniform construction. It excludes this finite fixed-moment SDD
+price grammar even with u-dependent theta, but not growing profile rosters,
+prime-fixed constraints, nonseparable divisor/multiplicative constraints,
+actual drift cancellation, an unrestricted arithmetic SOS system, or RH.

@@ -1,0 +1,209 @@
+FINITE NORMALIZATION BRIDGES AND SOURCE-GENERATED POSITIVE KERNELS
+================================================================
+
+Scope and implementation
+------------------------
+Only new040 backend/test/receipt/memo files were written. No arithmetic archive,
+actual full-source coefficient, new candidate observation, old study/suite or
+hash was used. The source AST and mathematical synthetic fixtures generate
+exact factorization and proof programs; there is no selected numerical winner.
+The full signed bound and RH remain OPEN.
+
+factor_candidates(source,meter=None,kernel_v_values=()) finds every power atom
+with0<r<1. It removes exactlyone matching power atom from each covered channel;
+every uncovered channel persists. Repetitions and channel weights survive.
+It also enumerates shifted kernels using v from mu atoms or caller-supplied
+arbitrary rationals, with v>r. It divides by mu_v exactly: delete a matching
+mu_v atom when present, otherwise insert its inverse power_v. No LCM polynomial
+or semantic denominator grid is required. Invalid positive-kernel pairs are
+reported as inapplicable, rather than promoted to a theorem.
+
+Factor fields include kernel_r,kernel_v (None for pure power),theta=1-r,
+covered references, residual_source with exact rational atom shifts, uncovered
+indices and a main_multiplier. The original source_binding remains complete.
+The residual weighted source is denoted h. One obtains EXACTLY
+
+ f=L*h+f_uncovered,
+
+where L=K_r or L=K_r*mu_v and K_r(n)=n^(-r). The shifted equality follows from
+mu_v*power_v=delta at every prime and valuation; it is not a finite jet law.
+
+compile_bridges generates finite-cutoff programs, automatic head prices and
+solved scale-nullspace templates. parameter_domain, when supplied, only prices
+absolute affine weights; it does not replace exact scalar normalization.
+The small numerical kernel/bridge helpers are for synthetic identity tests.
+No import-time numerical source evaluation occurs.
+
+1. The pure kernel remainder, including all subunit arguments
+------------------------------------------------------------
+For0<theta<1 and EVERY real y>0 define
+
+ P_K(y)=sum_(1<=k<=floor y)k^(theta-1),
+ e_K(y)=P_K(y)-y^theta/theta.
+
+Then -1/theta<=e_K(y)<=0. If y<1 this is immediate. Otherwise m=floor y>=1;
+monotonicity of t^(theta-1) gives
+
+ ((m+1)^theta-1)/theta <=P_K(y)
+ <=1+(m^theta-1)/theta <=y^theta/theta.
+
+Since m+1>y the lower bound is at least y^theta/theta-1/theta. The kernel
+statement includes integer endpoints, unit1, and every argument y=x/d<1.
+
+2. Positive shifted kernel and complete absolute moment
+--------------------------------------------------------
+For0<r<1 and v>r, L=K_r*mu_v has local rational factor
+
+ (1-p^(-v)t)/(1-p^(-r)t),
+ L(p^e)=p^(-er)(1-p^(r-v))>0 for every e>=1, L(1)=1.
+
+Let theta=1-r and a=theta+v>1. The AUXILIARY mu_v moment is absolutely
+convergent:
+
+ kappa=sum_(d>=1)mu(d)d^(-a)=1/zeta(a), 0<kappa<1.
+
+This is not a statement that sum L(d)d^(-theta) converges: L's Dirichlet series
+has the real theta pole. Nor does it license an ordinary residual h moment.
+The backend explicitly labels the convergent object moment_source='mu_v'.
+
+Define e_L(y)=P_L(y)-kappa y^theta/theta. For y>=1, writing m=floor y,
+
+ e_L(y)=sum_(d<=y)mu(d)d^(-v)e_K(y/d)
+        -(y^theta/theta)sum_(d>y)mu(d)d^(-a).
+
+The ENTIRE second sum is retained and paid absolutely. Avoid replacing floor y
+by y inside a decreasing tail integral. A uniformly valid estimate is
+
+ sum_(d>y)d^(-a)
+ <=(m+1)^(-a)+(m+1)^(1-a)/(a-1)
+ <=y^(1-a)[1+1/(a-1)].
+
+For r<v<1 this proves
+
+ |e_L(y)|<=C y^(1-v),
+ C=[1/(1-v)+1+1/(v-r)]/theta.                             (2.1)
+
+For v=1, |e_L(y)|<=C[1+log(max(y,1))],
+ C=[2+1/(1-r)]/theta.
+For v>1, |e_L(y)|<=C,
+ C=[v/(v-1)+1+1/(v-r)]/theta.
+
+All statements hold ALSO for0<y<1: P_L(y)=0 and
+|e_L(y)|=kappa y^theta/theta. When v<1, theta>1-v and y^theta<=y^(1-v).
+For v>=1 use y^theta<=1. These constants deliberately sacrifice sharpness
+to keep the all-real floor/tail proof elementary and rational.
+
+For the source-generated pair r=1/3,v=2/3, (2.1) gives the safe constant21/2
+and power1/3. The independently reviewed10 is stronger; no numeric optimization
+or claim that21/2 is best is made. Source factors with arbitrary v, including
+r+1/257,5/7,1 and4/3, retain exact rational shifts without rescaling the source
+lattice. Constants grow as v approaches r; that debt is explicit.
+
+3. Exact finite analytic-normalization bridge
+--------------------------------------------
+Let G_theta be the meromorphically continued Dirichlet value of h at theta,
+when that value exists. It is a source-bound analytic scalar, NOT a presumed
+ordinary coefficient sum. For ANY integer U>=0 define the finite moment
+
+ M_U=sum_(d<=U)h(d)d^(-theta), delta_U=G_theta-M_U.
+
+Let kappa=1 for the pure kernel and the above reciprocal zeta for shifted L.
+Define complete finite expressions, for every real x>0,
+
+ B_U(x)=sum_(d<=U)h(d)e_L(x/d),
+ C_U(x)=sum_(U<d<=floor x)h(d)P_L(x/d)
+          -kappa delta_U x^theta/theta.
+
+Then exact finite reindexing gives
+
+ F(x)=F_uncovered(x)+B_U(x)+C_U(x)
+            +kappa G_theta x^theta/theta.                  (3.1)
+
+The head sum includes ALL d<=U, even d>x; those terms have P_L(x/d)=0 but
+a nonzero inner main. For U=0 the moment/head are empty and the tail retains
+the unit. For U>x the raw tail is empty, yet its analytic compensation remains.
+Both cases satisfy (3.1). No infinite coefficient tail is equated to delta_U.
+It is the difference of a named analytic value and a genuinely finite sum.
+
+Exact source normalization may prove G_theta=0 by analytic continuation.
+For a shifted factor the analytic residual changes by zeta(theta+v), a regular
+nonzero factor, so zero transfers. This still supplies no rate for delta_U,
+no ordinary h(theta) convergence, and no independent bound on C_U.
+Uncovered channels, especially the actual -beta mu channel, stay joined.
+
+4. Automatically compiled finite-head price
+--------------------------------------------
+For a residual channel with k atoms, define growth gamma as the sum of positive
+coefficient exponents from negative shifts. Absolute coefficients satisfy
+|h_j(d)|<=|weight_j|d^gamma d_k(d). For k=0 the coefficient is a weighted delta.
+Divisor summation gives sum_(d<=U)d_k(d)<=U(1+log U)^(k-1).
+
+If the kernel error is C x^rho(1+log^+x)^ell, where0<=rho<1, then the needed
+weighted mass is bounded by
+
+ sum_(d<=U)d^gamma d_k(d)d^(-rho)
+ <=M U^(1+gamma-rho)(1+log U)^(k-1),
+ M=max(1,1/(1+gamma-rho)).
+
+For gamma<rho this follows from Stieltjes partial summation; for gamma>=rho
+pull out the increasing weight. The denominator is positive. For delta use
+mass1. With U=floor(X^alpha), alpha>=0, and X<=n<2X, the complete head's
+critical energy is bounded by the sum of channel terms with power
+
+ 2rho-1+2alpha(1+gamma-rho)                                (4.1)
+
+and log degree2(k-1)+2ell. Delta channels have power2rho-1. The compiler pays
+the square inequality's covered-channel count, squared absolute weight,
+C^2 M^2, factor4 when a block power/log needs it, and
+max(1,alpha)^(2(k-1)) for substituting log U. It never removes signed crosses
+from the SOURCE identity; only this declared upper-bound route uses triangle.
+
+Power<=0 is cofinally paid, with stated logs; power<0 decays. For the generated
+r1/3,v2/3 pair and nonnegative residual shifts, (4.1) is
+ -1/3+4alpha/3, hence alpha<=1/4 is paid. This is a price for a FINITE HEAD,
+not for the whole signed source or complete centered tail. The detector chooses
+from caller-supplied rational cutoffs and reports every unpaid term. The main
+integration may instead use persistent whole moment/kernel states; their
+full costs cannot be inferred from this small-head theorem.
+
+5. Automatic scale-template selection, and the old filter limitation
+-------------------------------------------------------------------
+The prototype enumerates finite divisor subsets and solves their exact main
+nullspace, rather than requiring a nominated coefficient row. Write
+a_j=lambda_j d_j^theta; solving sumlambda_j=0 cancels the common analytic main.
+Coefficients are typed rational*positive-integer^rational, not huge LCM polynomials.
+For unequal cutoffs U_j, the finite difference is exactly
+
+ delta_Uj-delta_U0 =-[M_Uj-M_U0].
+
+Consequently sum_j a_j C_Uj(x/d_j) equals the sum of raw complete tails PLUS
+kappa x^theta/theta times sum_j lambda_j[M_Uj-M_U0]. Every oriented finite band
+is retained, including the case a scaled cutoff is zero. Cutoff base X and
+prefix argument x are separate variables. The complete filtered original
+source also includes sum_j a_j F_uncovered(x/d_j); units are not projected out.
+
+This is an exact constructive interface, but it overlaps old fixed pole filters.
+It is not promoted as a new arithmetic estimate. The inverse/recovery debt is
+OPEN. In particular I-d^theta T_d has a homogeneous x^theta mode and fails the
+ordinary critical absolute inverse criterion for theta>1/2. Analytic absence
+of a real pole is not by itself a bounded inverse. Any alternative pole-order
+RH implication must be checked from the FULL source, including every numerator,
+uncovered term and possible complex filter zero. A finite sample cannot do so.
+
+The substantive supplied new provider is the source-generated positive shifted
+kernel with complete all-real remainder control, together with (3.1)'s finite
+normalization accounting. It may support a later periodic/arithmetic proof
+construction. Neither scalar cancellation nor nullspace selection pays the
+remaining whole centered tail or -beta M companion.
+
+Validation and stop
+-------------------
+Six synthetic tests passed in the sole full invocation,61903 metered operations.
+One affected metadata test passed after correcting the convergent-moment label
+from ambiguous kernel wording to auxiliary mu_v,243 further operations.
+Cumulative62146 operations, both returncode0, recorded in
+finite_normalization_backend_040_development.json. Tests used synthetic source
+ASTs, arbitrary finite signed Arb arrays and pure power kernels; no actual
+complete source/archive/response was observed. Backend/test/memo edits stopped.
+Independent source/normalization/error replay and the full signed bound remain
+separate production responsibilities. No RH result is claimed.

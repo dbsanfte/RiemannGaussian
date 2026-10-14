@@ -1,0 +1,27 @@
+{
+  "owner": "/root/prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_finite_prime_obstruction_042"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_finite_prime_obstruction_042 operations=488497 elapsed_seconds=0.084719 checker_operations=456533 fixture_operations=31964\n",
+      "stderr": "test_actual_source_and_RH_refutation_claims_fail_closed (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_composite_period_and_genuine_denominator257 (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_energy_cost_quantifier_and_ordinary_series_scope_protected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_exact_finite_alias_and_explicit_missing_prime_failure (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_exact_minimal_threshold_and_positive_power_near_boundary (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_external_meter_requires_only_charge (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_forged_exact_power_witness_and_boolean_exponent (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_full_floor_identity_and_essential_d_greater_x_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_harmonic_cancellation_unit_and_full_real_floor_domain_protected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_local_convolution_coefficients_and_exact_infinite_l1_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_malformed_parameters_and_composite_registered_value (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_missing_prime_witness_must_be_checked_and_first (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_registered_and_empty_models_have_correct_limited_scope (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_underpriced_and_nonminimal_thresholds_rejected (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_underpriced_norm_and_wrong_infinite_local_tail (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_unit_and_global_One_convolution_from_independent_factorization (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\ntest_wrong_scalar_lower_upper_rejected_independently (test_check_finite_prime_obstruction_042.IndependentObstruction) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.084s\n\nOK\n",
+      "operations": 488497,
+      "elapsed_seconds": 0.14824746700469404,
+      "tests": 17,
+      "peak_rss_KiB": 28016
+    }
+  ],
+  "operations": 488497,
+  "edits_stopped": true,
+  "source_coefficient_observations": 0,
+  "old_suites_rerun": false,
+  "scope": "synthetic rational local parameters and analytic scalar certificate arithmetic; no actual coefficient arrays"
+}

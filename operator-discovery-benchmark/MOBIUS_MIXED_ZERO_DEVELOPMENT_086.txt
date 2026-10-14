@@ -1,0 +1,82 @@
+086 mixed-zero producer development receipt, 2026-10-11
+
+Files added: mobius_mixed_zero_086.py and test_mobius_mixed_zero_086.py.
+No 085 or earlier source, handoff, run, or snapshot was edited. No Git or
+content digest operation was used. Only tiny development tests were run.
+
+The producer takes an externally supplied exact E-by-m annihilator matrix V,
+m<=16, in the complete original anchored Boolean coordinate order. E is the
+existing price_dimension, with the unit/prime anchor followed by every
+squarefree composite. The fixed remainder is the complete existing
+B.project_native(raw_remainder), including every original physical pair.
+The fixed anchor is the established coordinate binding; it is not a new
+nullspace or numerical coordinate change. The caller's independent bank
+checker must establish V^T y0=0 for actual y0 at the requested geometry.
+
+Public API: build_model(program,u,meter=None), parse_vectors(model,V),
+certificate(model,V,partner_matrix,factor_denominator,factor_numerators),
+projection_partner(model,V), solve_model(model,V,time_limit=90,
+projection=True,partner_bits=24), and solve(program,V,u,...).
+V accepts native fmpq_mat or complete canonical rational-string rows.
+Public certificates always reconstruct the fixed remainder. Cached R is
+private implementation state and cannot replace R through the public API.
+
+For arbitrary rational partners W the correction is exactly
+Z=(VW^T+WV^T)/2. For actual Boolean y0, y0^T Z y0=0. The denominator and
+integer factor rows specify an exact positive Gram Q=LL^T. Every row price
+is the exact diagonal of R+Z+Q plus all absolute off-diagonal entries in
+that original coordinate row. Summing those prices bounds y0^T R y0;
+neither floating PSD assertions nor solver status admit a certificate.
+Certificate keys are squarefree_count, partner_matrix, factor_denominator,
+factor_numerators, price, and row_prices. Partners are canonical rational
+strings; factor integers and the dyadic denominator are canonical strings.
+
+The numerical model minimizes sum(d) subject to
+diag(d)-R/u-sym(Vnormalized*partner^T)>=0. Exact dependent bank columns are
+removed before numerical optimization. Rounded dyadic partners are unscaled
+exactly by u/normalizer and reembedded into all original bank columns, with
+zero partners on omitted columns. The positive-factor proposal uses the
+frozen 084 factor_from_psd helper, followed by independent exact Gram pricing.
+
+An exact Pi R Pi ablation is implemented using the active bank Gram inverse
+and W=-2 R U M+U M U^T R U M, M=(U^T U)^-1. Its correction and price retain
+the original Boolean coordinates. The projection can increase the price;
+there is no automatic improvement theorem. The zero-control/zero-factor
+incumbent is always retained. The selected certificate minimizes exact price
+over every admitted attempt, including projection, mixed-only, and mixed
+with positive factor. Every attempted certificate, diagnostic, and caught
+resource/numerical failure is preserved in the report.
+
+Prospective gates precede native rank, Gram inverse, mixed products, factor
+Gram, dense SDP, and factor eigensolver. They enforce E<=512, m<=16, cumulative
+rational denominator and arithmetic bit bounds, memory, and cumulative
+charged work. The Gram inverse receives degree-based determinant bounds
+before allocation. Dyadic factor precision is <=48 bits and integer factor
+numerators are <=128 bits. Partner unscaling receives prospective exact bit
+checks. The inherited producer meter enforces a 4GiB per-worker memory limit.
+SCS receives at most 20000 iterations, reduced as necessary to charge its
+prospective dense PSD-cone work while preserving half the remaining work
+budget for exact reconstruction. Reported ops therefore include conservative
+prospective solver work, not a claim of exact executed instruction counts.
+
+Validation command, native threads constrained to one:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ../.venv/bin/python -B -m unittest
+test_mobius_mixed_zero_086 -v
+
+All eight tests passed in the final run (0.107 seconds). Tests cover exact
+half-sum zero evaluation and literal Fraction row pricing; Pi R Pi identity
+including dependent-column embedding and a zero-rank bank; exact numerical
+partner unscaling; global incumbent preservation; solver/resource failures;
+schema, dimension, cumulative bit/memory/work guards; and empty domains.
+The eighth test supplies a tiny actual typed divisor/prime/cofactor-source
+bank from the independent 086 checker. Every exact producer attempt is
+accepted by verify_upper as
+VERIFIED_FINITE_ARITHMETIC_BANK_MIXED_UPPER_BOUND. This is a development
+integration test, not a scientific result or detector-selected formula.
+
+Scientific interpretation remains frozen: unrestricted mixed controls have
+the same ideal SDP infimum as 085's unrestricted signed V S V^T grammar for
+the same R and bank. Mixed representation can affect finite attainment,
+conditioning, and bounded reconstruction, but adds no arithmetic constraint.
+New information can come from independently justified new bank columns.
+Uniform remaining bounds, uniform source bounds, and RH remain unproved.

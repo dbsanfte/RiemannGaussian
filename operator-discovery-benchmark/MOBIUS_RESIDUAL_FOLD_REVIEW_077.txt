@@ -1,0 +1,417 @@
+INTERVAL RESIDUAL FOLDING AND ITS UNIFORM L1 OBSTRUCTION077
+=======================================================
+
+Scope
+-----
+This review creates only this new077 file, preserving all frozen files.
+It performs no scientific source query, numerical candidate-score review,
+hash or subagent work. The arguments use elementary exact identities.
+They distinguish a failed coefficient-l1 PROOF CERTIFICATE from failure
+of the actual signed Mobius residual. The full joined head/core and RH
+goal remains open; one fixedq does not establish an epsilon family.
+
+1. Interval/token representation and exact dilation
+-------------------------------------------------
+Let c(n),n>=1, be a finite coefficient function, represented by sorted
+disjoint integer intervals(l,r] carrying rational token polynomials.
+At a fixed parent, each token has a declared real value (for example a
+count-power coefficient), and polynomial evaluation gives c(n). All
+count variables, source binding, domains and token dependencies must
+be exported. Equal formal token expressions should cancel symbolically
+before interval evaluation; irrational values must never be replaced by
+floating approximations in a certificate.
+
+For integer prime p and integer endpoints l,r>=0,
+
+ 1[l<p m<=r]=1[floor(l/p)<m<=floor(r/p)].
+
+Thus c(pm) is obtained by dilating interval endpoints with integer floor
+division, retaining coefficient tokens unchanged. Floor collisions can
+create empty intervals, which contribute zero. Sum overlapping original
+and dilated intervals by an exact endpoint sweep; adjacent intervals
+with identical canonical polynomial coefficients can merge. Sign changes
+and token dependence are retained. A source prefix event at endpoint0
+is zero, whereas a resulting interval containing m=1 retains mu(1)=1.
+
+2. Prime folds with the excluded domain separate
+-----------------------------------------------
+For one prime p, squareful p-adic rows have mu(n)=0; rows n=pm with
+p not dividing m have mu(pm)=-mu(m). Consequently
+
+ sum_n c(n)mu(n)=sum_{m:p does not divide m}[c(m)-c(pm)]mu(m).
+
+After a finite DISTINCT prime set P, put Q=productP and define a
+coefficient function on ALL positive integers
+
+ f_P(m)=sum_{d|Q}mu(d)c(dm).
+
+The residual identity is R=sum_{m:gcd(m,Q)=1}f_P(m)mu(m).
+For a NEW prime p not in P, transform the unrestricted function by
+f_(P union{p})(m)=f_P(m)-f_P(pm), and update the excluded domain to
+gcd(m,Qp)=1. Since p is coprime to Q, multiplying by p preserves the
+old gcd gate on admissible m; the same splitting proof applies. Fold
+order does not change the formal result. Repeating a prime should be
+rejected or canonicalized away, not added as another subset factor.
+
+The coefficient function and excluded domain must remain distinct.
+Do not zero f_P at excluded m and then claim that the new transformed
+interval function is the original unrestricted subset formula. Although
+some such values never enter the final sum, preserving the full function
+is what makes conservation, independent verification and the schedule
+formula transparent. No prime-square term is silently omitted from an
+arbitrary-vector identity: the omission is justified specifically by mu.
+
+Primality of schedule entries, distinctness, all integer endpoints and
+the ORIGINAL residual binding must be independently checked. Count-power
+normalization is part of c and is fixed at this parent throughout folding.
+If the parent changes, its count tokens must update; count jumps are not
+annihilated by prime folding. Different source columns and direct terms
+share ONE mu sequence and must be combined before interpreting costs.
+
+3. Exact coprime interval counts and coefficient norm enclosures
+--------------------------------------------------------------
+For0<=l<=r and squarefree Q,
+
+ N_Q(l,r)=#{l<m<=r:gcd(m,Q)=1}
+        =sum_{d|Q}mu(d)[floor(r/d)-floor(l/d)].
+
+This follows by expanding product_{p|Q}(1-1[p|m]) and counting each
+divisibility interval. It includes both boundary conventions exactly.
+For Q=1 the count is r-l. Every N_Q is a nonnegative integer; a
+negative computed count indicates an arithmetic/certificate error.
+An inclusion-exclusion implementation has2^|P| divisor terms unless
+it employs another independently verified counting construction.
+
+For disjoint coefficient intervals with evaluated constants k_r,
+the literal coefficient-l1 price is
+
+ T(u)=sum_r |k_r(u)| N_Q(l_r(u),r_r(u)).
+
+The universal triangle certificate is |R(u)|<=T(u), since |mu(m)|<=1.
+It counts coprime squareful m too, conservatively. A certified interval
+[a,b] for k has absolute LOWER bound0 if it crosses zero, otherwise
+min(|a|,|b|), and UPPER boundmax(|a|,|b|). Multiplying by exact counts
+and summing gives certified T_lower<=T<=T_upper. To refute a proposed
+price T^2<=C u^q use T_lower^2 divided by the UPPER enclosure of u^q;
+to verify it use T_upper^2 divided by the LOWER enclosure. Threshold
+straddling is unresolved rounding. A lower-price failure refutes that
+coefficient-l1 certificate, NOT the signed R bound, which could benefit
+from cancellations that the price discarded.
+
+Token polynomial norm/interval arithmetic must use bounded exact rational
+operations, including reciprocal signs and shared monomial cancellation.
+The number of segments, divisor vocabulary, polynomial terms and rational
+bit sizes need prospective resource gates. An interval representation
+avoids source-sized dense coefficient expansion, but repeated folds can
+still grow its segment/token vocabulary substantially.
+
+4. Generic outer-support witness
+--------------------------------
+Suppose c has support within1..E. For ANY finite prime schedule,
+if m>E/2 then dm>E for every integer d>=2. Therefore
+
+ f_P(m)=c(m) on the whole outer shell(E/2,E].
+
+This is independent of schedule order, signs, selected primes or lower
+coefficients. It provides a generic certificate interface: an interval
+(l,r] with l>=floor(E/2), exact coefficient k and r<=E produces the
+lower witness |k|N_Q(l,r). More generally split every constant outer-
+shell segment and sum these nonnegative lower witnesses. Zero coefficient
+segments contribute zero. The detector can discover such witnesses from
+support geometry, without a hardcoded anticipated source outcome.
+
+For the exact current residual c_u=s_u-sum_j v_j s_j, every child
+j<=u//2, and every child prefix endpoint is<=u//8. The parent source
+has maximal horizon E=u//4 and coefficient -1 on
+
+ (l,r]=(u//5,u//4].
+
+All child coefficients vanish there. Since l>=floor(E/2) for integer
+u>=1 (trivial small empty intervals included), the generic witness gives
+
+ f_P,u(m)=-1 on this top band,
+ T(u)>=N_Q(u//5,u//4).
+
+Count-normalized coefficients, lower prime/direct interactions and their
+signs cannot change this identity. Folding might reduce other coefficient
+segments, but it cannot remove this outer-band coefficient on admissible
+m. This is NOT an arithmetic lower bound |R|>=N_Q: the signed mu sum
+on this band can cancel internally and against the lower bands.
+
+5. Fixed-schedule all-scale obstruction, with exact period price
+--------------------------------------------------------------
+For fixed Q define phi(Q)=#{1<=a<=Q:gcd(a,Q)=1} and
+delta=phi(Q)/Q=product_{p|Q}(1-1/p)>0. Both are elementary exact
+integers/rationals; Q=1 gives phi=delta=1. Any Q consecutive integers
+contain exactly phi(Q) coprime integers, because their residues moduloQ
+are complete. An interval of integer length L therefore satisfies
+
+ N_Q(l,r)>=phi(Q)floor(L/Q)>=delta L-phi(Q), L=r-l.
+
+This lower bound uses complete periods plus a nonnegative remaining
+partial period; it includes the cost of endpoints without assuming the
+interval is aligned to a period. Inclusion-exclusion alternatively gives
+|N_Q(l,r)-delta L|<2^|P|, since each floor-difference error has absolute
+value<1. Either bound can be independently certified; use whichever is
+sharper for a declared input rather than dropping its error term.
+
+Here L=floor(u/4)-floor(u/5)>=u/20-1, hence
+
+ T(u)>=delta u/20-delta-phi(Q).
+
+For every integer u>=40(delta+phi(Q))/delta,
+T(u)>=delta u/40. Consequently for fixed rationalq<2,
+
+ T(u)^2/u^q >=(delta^2/1600)u^(2-q) -> infinity.
+
+Thus NO fixed finite prime schedule admits a finite constant C with
+the uniform coefficient-l1 proof price T(u)^2<=C u^q for all largeu.
+The conclusion includes q near1 and every fixedq<2. It does not depend
+on finite fitted scores, observed mu values or actual residual failures.
+It refutes this proof rule's uniform price, not the possibility of a
+signed residual power bound or RH. Selecting among a FIXED finite
+catalogue of schedules cannot evade the theorem: take the minimum
+positive delta and maximum threshold over the finite catalogue.
+
+6. Growing schedules, maximal cancellation and remaining mechanism
+-----------------------------------------------------------------
+For a parent-dependent P(u), the exact outer-band witness still holds
+with its actual Q(u). The fixed-Q asymptotic cannot be substituted without
+retaining delta(u), period/divisor error and schedule complexity. A
+necessary condition for the l1 certificate is
+
+ N_(Q(u))(u//5,u//4)<=sqrt(C)u^(q/2).
+
+When a uniform density estimate is available with controlled error,
+this forces its density contribution to shrink suitably. A huge period
+error can instead make that particular lower estimate vacuous; it does
+not prove the actual count small. Exact coprime counts or another paid
+sieve bound must establish the price. Merely appending primes until a
+finite price improves is not a uniform compression theorem.
+
+At the extreme, folding all primes<=E leaves only the coprime support
+m=1, with coefficient f_P(1)=sum_{d<=E}mu(d)c(d)=R itself. The l1
+price is then |R|. This is exact but simply embeds the original signed
+target into its folded coefficient, with enormous prime/product/symbolic
+cost. It shows why arbitrary maximal folding is no automatic analytic
+shortcut and why schedule/compression resources and proof leaves must
+be explicit. Folding l1 is nonincreasing, but coefficient quadratic
+energy need not be: c(1)=1,c(p)=-1 folds to coefficient2, changing
+energy2 to4. Any energy shortcut must pay collision/cross terms.
+
+Recommended executable uniform-certificate search:
+* Discover generic outer-support interval witnesses; export exact constant
+  coefficients, coprime-count formulas and rational affine lower envelopes
+  A u-D with their declared parent domain. Prove the associated q<2
+  uniform-price obstruction automatically when A>0.
+* Keep surviving symbolic fold conservation as a representation of the
+  signed remainder. Export the precise signed pair kernel
+  R^2=sum_m f(m)^2 mu(m)^2
+      +2sum_{m<n}f(m)f(n)mu(m)mu(n), restricted to gcd(mn,Q)=1.
+  A useful new leaf prices this COMPLETE kernel uniformly, or a rational
+  paired/difference energy with explicitly conserved anchor. Dropping its
+  off-diagonal products recreates the failed l1/independence reasoning.
+* If proposing recursive/growing fold compression, specify its exact
+  schedule, token/count-jump evolution, smaller-rank state and full cost.
+  A uniform compression recurrence must be proved from already paid
+  smaller states, not from the desired parent residual bound. Retain
+  outer-band/gcd leftovers, prime-square zero justification and units.
+
+These interfaces let the detector prove a genuine obstruction to its
+current unsigned proof mechanism and generate a different signed proof
+obligation. They do not manufacture that arithmetic proof from finite
+survival, nor equate a necessary source slice with the full RH goal.
+
+7. Stronger detector-generated rational kernel barrier
+-----------------------------------------------------
+A general parent source can export a fixed rational prefix kernel
+G_kernel(u)=sum_d w_d M(u//d), where d are positive integers and
+w_d rational. Put h=max_{w_d!=0}(1/d). Its normalized coefficient
+function is sum_d w_d 1[x<=1/d]; exact breakpoints1/d determine
+constant coefficients on rational open-left/closed-right bands. Combine
+duplicate divisors and zero weights first. Suppose an exact scan finds
+a band(alpha,beta] with constant c!=0 satisfying
+
+ 0<=alpha<beta<=h,
+ alpha>=h/Dmin and alpha>=h/2,
+
+and every operator child index is<=u//Dmin, Dmin>=2. For integer n in
+(floor(alpha*u),floor(beta*u)], parent kernel coefficient is precisely c,
+including a breakpoint at beta. Every child endpoint is<=floor(h*u/Dmin)
+<=floor(alpha*u), so no child modifies this band. For every folded
+d>=2, dn>2alpha*u>=h*u and the complete residual coefficient at dn
+vanishes. Therefore its folded coefficient remains c on the band for
+ANY finite prime schedule. Empty integer bands at smallu cause no error.
+
+The generic checker must verify the actual kernel coefficients and band,
+all barrier inequalities and the source's declared child-rank bound;
+it must not trust an anticipated coefficient or source-specific name.
+The normalized breakpoint scan has no floating power or floor rounding.
+
+For rational alpha,beta and every integer divisor d,
+floor(floor(alpha*u)/d)=floor(alpha*u/d), and likewise for beta.
+Consequently inclusion-exclusion directly gives
+
+ N_Q(floor(alpha*u),floor(beta*u))
+ =sum_{d|Q}mu(d)[floor(beta*u/d)-floor(alpha*u/d)]
+ >=delta(beta-alpha)u-2^|P|.
+
+Each individual floor-difference error relative to(beta-alpha)u/d has
+absolute value<1, since it is the difference of two fractional parts.
+The2^|P| error bound is independent of denominator sizes, period alignment
+and Q itself; it needs no EXTRA outer floor error. This is often stronger
+than the period bound in section5 and proves the requested interface.
+
+Thus the interval-l1 certificate has the affine lower envelope
+
+ T(u)>=A u-E,
+ A=|c|delta(beta-alpha)>0, E=|c|2^|P|,
+ T(u)>=A u/2 whenever u>=2E/A.
+
+For fixedP and fixedq<2, T(u)^2/u^q>=A^2 u^(2-q)/4 is unbounded.
+All numbers except u^q are exact rationals/integers. The detector can
+export its discovered kernel band and these constants as a independently
+checkable UNIFORM_PRICE_OBSTRUCTION, pruning a fixed-schedule l1 proof
+branch before fitting any large C. The disposition must explicitly say
+coefficient_l1_certificate_refuted=true and arithmetic_residual_refuted=false.
+Finite transform checks can validate conservation and leftover exposure,
+but do not establish or refute the signed arithmetic theorem.
+
+After this obstruction, a viable next proof-search object retains the
+signed coprime remainder rather than fitting its inevitably linear l1
+price. An explicit leaf may be a complete signed pair-kernel estimate,
+or a conserved anchor plus difference energy with a proved uniform
+price; section6 describes the required cross terms and dependencies.
+An exact fold schedule is an arithmetic representation, not a free
+cancellation theorem. This generic obstruction permits the detector
+to recognize that distinction autonomously without an expected-result
+special case or a claim of RH progress.
+
+8. Independent static077 producer/checker snapshot review
+-------------------------------------------------------
+Reviewed mobius_residual_fold_077.py, check_mobius_residual_fold_077.py
+and the relevant frozen076 symbolic compiler helpers before077 science.
+This records the inspected snapshot and issues sent to root; subsequent
+fixes need their own validation. No source query or candidate-score
+inspection was performed, and no code file was edited.
+
+The producer decode admits sorted disjoint integer intervals, exact token
+coefficients and bounded source horizon. fold_state builds endpoint events
+for the original(l,r] and NEGATIVE dilation(left//p,right//p]. assemble
+sweeps all starts/ends, combining token coefficients before emitting each
+constant segment. Its endpoint+1 event convention correctly represents
+integer open-left/closed-right intervals. It retains the FULL coefficient
+function, including indices excluded by prior primes; prime schedule is
+supplied separately to the coprime count. Empty dilated intervals disappear
+legitimately. Terminal active coefficients trigger an error, preventing
+an unpaid infinite tail. Adjacent identical segments can merge exactly.
+
+The checker independently uses events AT left and right, active on each
+interval(point,nextpoint]. Its different event convention reconstructs
+the SAME integer function. verify_fold compares the old function minus
+its dilated function against the whole new function on every combined
+breakpoint segment. It checks schedule primality/distinctness and carries
+the gcd-domain declaration separately. It does not import the producer
+or confuse prior-domain filtering with a full-function fold.
+
+Producer signed_divisors and checker independent divisor expansion prune
+only products beyond the relevant horizon. Such products and descendants
+have zero floor counts, so this is exact. Coprime bounds retain literal
+inclusion-exclusion signs and integer endpoint floors. Bound routines
+evaluate the COMPLETE token linear combination to an interval before
+taking its absolute lower/upper envelope, rather than summing individual
+absolute token terms. Signed token endpoints are ordered correctly; a
+zero-crossing coefficient has absolute lower0. Shared-token symbolic
+cancellation is preserved first, although interval dependency across
+different tokens may still make the bound conservative. The result is
+a finite coefficient-l1 enclosure, not a finite measurement of signed R.
+
+Compiler binding is substantial: producer reconstructs literal prime
+groups from prime membership and verifies the saved actual counts;
+checker verify_compiled independently reconstructs prime membership and
+floor children, checks both prime multiplicities and direct counts1,
+and reconstructs the source residual's negative atom weights, parent
+component, token definitions and inverse count-power enclosures. The
+component ordering and exact payload are compared, including false
+proof flags. verify_stencil then compares the complete four-prefix
+coefficient function against interval events, retaining child units.
+Counts are not inferred from mu-derived values or replaced by horizon
+lengths. Arithmetic source admission of saved z/B/Q remains a separate
+required075 dependency; symbolic compiler admission alone does not supply it.
+
+The generic kernel detector scans exact rational breakpoints and computes
+constant band coefficients as sum of weights whose breakpoint>=upper.
+It requires lower>=both child horizon and half parent horizon, and chooses
+a nonzero protected band. uniform_obstruction computes rational delta,
+A=|c|delta width,E=|c|2^schedule_length and ceil(2E/A), with fixedq<2.
+The checker independently verifies band bounds, absence of internal kernel
+breakpoints, coefficient, density, constants and threshold. Kernel horizon
+uses all supplied breakpoints, even zero/canceling kernel terms; this is
+conservative and may miss a possible barrier, not create an invalid one.
+Canonical kernel simplification would improve completeness. A certificate
+requires a separate binding of that kernel and child-rank premise to the
+actual source program, since verify_bulk_obstruction checks the GENERIC
+theorem's supplied premises rather than recompiling arbitrary programs.
+
+Scope flags correctly distinguish VERIFIED_UNIFORM_COEFFICIENT_OBSTRUCTION
+from arithmetic_residual_refuted=False and uniform_source_bound_proved=False.
+_finish marks finite_identity_only=False only for the generic obstruction;
+ordinary fold/stencil/norm results remain finite. A runner must not reject
+a signed candidate merely because its l1 proof mechanism is blocked, nor
+overwrite any prior actual innovation counterexample. The uniform barrier
+holds independently of the finite beam winner.
+
+Beam selection uses certified coefficient upper prices divided by LOWER
+u^q enclosures; it never receives mu values. Canonical prime-set deduplication
+is sound because folds commute. Token interval upper prices are themselves
+nonincreasing under folding by triangle and domain splitting, justifying
+the producer's monotonic-price assertion even when exact coefficients are
+algebraic. Choosing a finite best schedule supplies no uniform signed
+bound. q inputs and source domains still require runner-level admission.
+
+Resource issues identified and sent early to root:
+* prime_groups allocates its sieve, prime-list cache and quotient-count
+  dictionaries without a supplied meter's prospective reserve/charges.
+  compile_row therefore cannot account that work or live memory. Add
+  source-membership/cache/group costs before allocation and retain them
+  in the module receipt, even though this computation does not consult mu.
+* fold_state reserves for one state, but beam search retains several rows,
+  old beam states, candidate after states and a bounded best list at once.
+  A per-state gate is not a bound on that simultaneous allocation. Account
+  aggregate live states/compiled rows/cache before constructing each
+  candidate, or enforce a conservative aggregate dimension cap. The
+  admitted maximum100000 intervals/200000 terms can make one state large.
+* Producer merges use frozen OLD.add rational arithmetic without an
+  intermediate bit/work gate. Independently denominated input coefficients
+  can grow far beyond their4096-bit input limits before checker rejection;
+  a fixed8192-byte/term estimate then undercounts. Bound prospective
+  rational products/sums or actual symbolic byte sizes at each event merge.
+  The checker already uses bounded073 _add/_mul, independently guarding
+  its own arithmetic. Planned small shared-denominator scientific programs
+  do not remove the need for a safe generic API resource gate.
+
+The inspected semantics and negative-method theorem are sound. Resource
+corrections and full source/theorem binding are required implementation
+admission details; none would prove the remaining signed residual leaf.
+Root integration response before freezing077
+-------------------------------------------
+This response records subsequent implementation changes; it is not an
+assertion that the independent reviewer rechecked those edits. Prime
+membership generation now accepts the task meter, reserves the existing
+prime cache and prospective sieve/list/group allocations, and charges sieve
+and grouping work. The beam supplies live retained/input/transient state
+bytes to allocations; interval events and output polynomial coefficients
+are counted using actual bit sizes. Event merges and bound arithmetic have
+prospective100000-bit addition/multiplication gates. The inherited residual
+compiler receives a stricter total input-coefficient bit budget before
+forming symbolic combinations. Input/beam storage and prime membership
+storage are included rather than treating each state as the only live one.
+
+The scientific runner binds the generic obstruction to the literal075
+G prefix kernel and the independently reconstructed prime/direct children,
+all with dilation at least2. It requires old complete source admission
+before compiling any row. The stronger bit/resource tests, large-horizon
+interval test, exact sparse-reference comparison, independent group/root
+binding and complete tiny-runner test pass. Ten distinct root tests pass
+in10 executions; nine independent checker tests pass in11 executions.
+No scientific construction scores or new mu queries entered development.

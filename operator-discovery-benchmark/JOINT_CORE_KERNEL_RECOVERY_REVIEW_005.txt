@@ -1,0 +1,394 @@
+FULL-CORE RECOVERY: ANGULAR NULLSPACES, COERCIVE LOG WORK,
+AND GENERATED SCALE-INCREMENT LEMMAS
+
+Scope
+-----
+This substantial independent analytical review uses
+candidate10_joint_preconditioner_obligation.json and
+JOINT_PRECONDITIONER_HANDOFF.txt. Only this NEW memo is written. No tests,
+source evaluations, numerical studies, hashes, earlier/frozen edits or
+subagents are used. Finite results in the input are not asymptotic premises.
+
+The detector can legitimately generate auxiliary-plus-inequality-plus-
+recovery candidates. The proofs below supply reusable admission schemas:
+  * mixed angular work alone has a common-mode nullspace and is not coercive;
+  * symmetric log-bank work IS coercive for the complete core, with a paid
+    finite head and explicit constants;
+  * a one-sided bounded dyadic ENERGY-INCREMENT lemma for a recoverable
+    full scale filter implies a logarithmic full-target bound;
+  * its critical equality case has polynomial-log recovery, not bounded
+    critical recovery, and its stronger-than-cofinal premise is explicit;
+  * a corresponding signed log-WORK-INCREMENT lemma is another sufficient
+    generated schema, retaining all source/boundary terms.
+None of the required increment or arithmetic correlation bounds is proved
+for the actual source here. These are proposed universal lemmas with exact
+conditional consequences, not conclusions from calibration or holdout data.
+
+1. The complete signed core and original recovery
+-------------------------------------------------
+Write u=1/3,v=2/3,beta=9/2, k_w(n)=n^(-w), mu_w(n)=mu(n)n^(-w), and
+  nu0=k_u*(mu*mu), nu1=k_u*(mu*mu_v), nu2=k_u*mu_v,
+  f=beta*nu0-beta*nu1-beta*mu-R_u*nu2,
+  F(x)=sum_(n<=x)f(n), F(x)=0 for x<1.
+Here * denotes Dirichlet convolution, and R_u=(2/3)m_u is the original
+fixed residue. No mode is separately required to have a cofinal moment.
+The complete selected operator satisfies
+  w=tilde_b*mu_v=f+eta, eta=beta*mu_v-d*mu_v,
+where d is the ENTIRE original same-prime-power contribution. The units are
+  f(1)=-beta-R_u, eta(1)=beta, w(1)=-R_u.
+Dropping eta at arbitrary sharp product cutoffs is not licensed by its
+paid global prefix norm.
+
+For finite step-prefix norms
+  ||H||_(sigma,T)^2=int_1^T |H(x)|^2*x^(-2sigma-1)dx,
+the original forward and inverse costs are at most zeta(7/6)<=7 for
+sigma>=1/2. The input proves
+  ||prefix eta||_crit<=C_eta=beta*sqrt(27)+7*C_D,
+  C_D=20beta/sqrt(log4).
+The smooth-center correction has prefix bounded by E0=-R_u*zeta(1/3)>0,
+and hence critical norm at most E0. Thus the COMPLETE original centered
+prefix R has the finite-horizon recovery bound
+  ||R||_(sigma,T)<=7||F||_(sigma,T)+7C_eta+E0, sigma>=1/2.   (1.1)
+All original center/correction cross terms are retained by this triangle
+bound. A cofinal moment for F supplies the required sigma>1/2 norms and
+the existing ordinary RH bridge; neither is proved here.
+
+For diagonal and finite-head estimates,
+  |nu0(n)|<=d_2(n), |nu1(n)|,|mu(n)|,|nu2(n)|<=1,
+  |f(n)|<=C_f*d_2(n), C_f=3beta+R_u.                       (1.2)
+These are conservative coefficient envelopes, not prefix cancellation.
+The original shared-large-prime-square certificates remain valid, with
+their union counted once and all scalar cross coefficients included.
+
+2. Angular work is rotation information, not full-core energy
+-------------------------------------------------------------
+Let s_i range over the four coefficient modes nu0,nu1,mu,nu2, and put
+  A_i(x)=sum_(n<=x)s_i(n), B_i(x)=sum_(n<=x)s_i(n)log n,
+  H_i(x)=int_1^x A_i(t)dt/t.
+Exact finite Abel summation gives
+  B_i(x)=A_i(x)log x-H_i(x).                             (2.1)
+For the COMPLETE symmetric prefix-square kernel, the mixed angular statistic
+  Angular_ij(X)=X^(-2)*sum_(h,k)s_i(h)s_j(k)log(h/k)W_X(h,k)
+equals exactly
+  X^(-2)*sum_(n=X)^(2X-1)[B_i(n)A_j(n)-A_i(n)B_j(n)]
+ =X^(-2)*sum_n[A_i(n)H_j(n)-H_i(n)A_j(n)].               (2.2)
+This is a skew correlation of the state and its Volterra memory.
+The determinant version [s_i(h)s_j(k)-s_j(h)s_i(k)]log(h/k) is twice (2.2).
+
+For any single core or scale-filtered core, the corresponding same-channel
+angular statistic is IDENTICALLY ZERO on every symmetric kernel: f(h)f(k)
+is symmetric and log(h/k) is antisymmetric. It cannot serve as a nonzero
+energy detector. Mixed channels avoid this zero, but leave a radial mode.
+If A_i(x)=v_i Q(x) for a fixed vector v, ALL mixed angular values vanish
+while the full core projection is (c dot v)Q(x), c=(beta,-beta,-beta,-R_u).
+There is no generic inequality controlling its norm by angular values alone.
+
+This remains an obstruction even with a retained unit and coefficient
+envelopes. Set every coefficient channel equal to n^(-1/3). They have unit
+one and coefficients <=1, all angular quantities vanish, but c dot (1,1,1,1)
+=-beta-R_u is nonzero and their projected dyadic energy grows on the order
+of X^(1/3). This is a counterexample to source-independent recovery from
+units/envelopes/angular information, NOT an actual Mobius source and NOT a
+counterexample to a prospective theorem using its full Euler identities.
+Those identities would have to supply an additional arithmetic lemma.
+
+Boundary flux does not automatically supply it. In logarithmic coordinates,
+H_i'=A_i, so the derivative of H_i H_j gives the SYMMETRIC A_i H_j+H_i A_j,
+whereas (2.2) gives its antisymmetric part. These recover an A/H cross, not
+A_i A_j. Differentiating again introduces actual coefficient/jump terms;
+deleting them loses the whole prefix target. Endpoint values of H alone do
+not bound its derivative energy. One can construct two separated triangular
+prefix pulses, rescale the second so their integrals Q(x)dx/x cancel, and
+leave both endpoint fluxes unchanged. Their coefficients can be bounded by
+one while their critical energy grows with their support horizon. Placing
+all channels on this same radial pulse leaves all angular values zero.
+Thus an endpoint-only flux plus angular schema requires a new arithmetic
+constraint or an explicit positive common-mode measurement.
+
+There is also a quantitative inverse-frequency guard. Under y=log x and
+the norm transform a_i(y)=exp(-sigma y)A_i(exp y), Volterra memory is
+convolution by exp(-sigma y)1_(y>=0). Its skew part has Fourier multiplier
+  -2i*tau/(sigma^2+tau^2).
+It vanishes at tau=0 and decays at high |tau|. Recovering a whole norm from
+that operator would require inverse losses of order 1/|tau| at low frequency
+and |tau| at high frequency. A finite-domain version has head/tail flux as
+well. No spectral gap, band limit or bounded inverse for actual source
+states is assumed. Local division by log(h/k) has the same issue:
+at h=k+1, 1/log(h/k) is of order k, not a logarithmic cost in the horizon.
+The multiplier describes the continuous weighted-norm Volterra operator;
+the literal dyadic statistic is the finite sum (2.2), whose common-mode
+nullspace was established separately and without a Fourier approximation.
+
+Some narrow complements ARE independently paid. For any fixed graph on
+coefficient indices with maximum TOTAL degree D, its unordered pair
+contribution to the full core kernel has absolute normalized cost at most
+  2D*C_f^2*(1+log(2X-1))^3.                             (2.3)
+Indeed 2|f(h)f(k)|<=f(h)^2+f(k)^2, W_X<=X, and
+sum_(n<=N)d_2(n)^2<=sum_(n<=N)d_4(n)<=N(1+log N)^3.
+Thus fixed-offset near-diagonal graphs are paid; a growing multiplicative
+near-diagonal cone has unbounded degree and is NOT covered by (2.3).
+
+The high-product angular probe differs from (2.2) only by a paid low-product
+piece. At hk<=X, W_X=X and |log(h/k)|<=log(hk)<=log X, so for the unscaled
+mode pair
+  |Angular_full-Angular_(hk>X)|<=(1+log X)^4.             (2.4)
+The actual source constants multiply this bound. Diagonal angular values
+are zero. Consequently a high-product restriction does not secretly repair
+the common-mode nullspace through its discarded head.
+
+3. A coercive symmetric log-bank work, with exact finite head
+-------------------------------------------------------------
+For ANY actual real prefix Q, zero below one, define
+  B_Q(x)=sum_(n<=x)q(n)log n,
+  P_Q(x)=B_Q(x)/log x, x>1,
+  H_Q(x)=int_1^x Q(t)dt/t,
+where q is its exact coefficient sequence. Abel summation gives
+  P_Q=Q-H_Q/log x.                                      (3.1)
+Unlike angular work, the symmetric work Q*P_Q retains the radial mode.
+Use x0=64, H0=H_Q(x0), and split H_Q=H0+H_tail on x>=x0.
+For sigma>=1/2 put
+  r=1/(sigma log x0)<1/2,
+  c_head=x0^(-sigma)/(sqrt(2sigma)*log x0).
+The inequality r<1/2 follows from log2>2/3, hence log64>4. No numerical
+evaluation of the source is needed to choose this tail boundary.
+
+The finite-horizon Hardy estimate is
+  ||H_tail||_(sigma,x0..T)<=||Q||_(sigma,x0..T)/sigma.
+Proof: integrate H_tail(x)^2*x^(-2sigma-1) by parts. The lower boundary
+is zero and the upper boundary is nonpositive; Cauchy gives the displayed
+estimate. Therefore ||H_tail/log x||<=r||Q||, with the SAME truncated
+horizon. The remaining constant head satisfies ||H0/log x||<=|H0|c_head.
+
+Define the SIGNED, fully joined bank work
+  Work_Q,sigma(T)=int_(x0)^T Q(x)P_Q(x)x^(-2sigma-1)dx.
+The exact lower bound is
+  Work >= (1-r)||Q||_tail^2-|H0|c_head||Q||_tail.
+Young's inequality then proves the unconditional recovery theorem
+  ||Q||_tail^2 <= 2*Work/(1-r)
+                         +H0^2*c_head^2/(1-r)^2.        (3.2)
+This is a ONE-SIDED coercive signed-work bound up to a paid finite head.
+Work may be negative, but only by the controlled head term. One must retain
+that term and the complete signed cross in Q*P_Q. No bound for Work is
+inferred from coercivity; that is the new candidate arithmetic lemma.
+
+The reverse comparison follows from ||P_Q||<= (1+r)||Q||+|H0|c_head.
+Thus finite/cofinal norm control of this symmetric work is an equivalent
+full-norm presentation with constants, not an independent source estimate.
+Its value is an honest recovery certificate and a source-specific lower-
+argument bank representation, in place of nonexistent angular coercivity.
+
+For Q=F, (1.2) gives the explicit source-free finite-head bounds
+  |H0|<=C_f*x0*log x0,
+  ||F||_(crit,1..x0)^2<=C_f^2*x0*(1+log x0)^2.           (3.3)
+They include f(1)=-beta-R_u. For a scale-filtered Q, replace C_f by the
+coefficient bound C_f(1+|a|), as in section 5.
+
+To express the work through actual source identities, set A_i to the four
+complete mode prefixes and c=(beta,-beta,-beta,-R_u). The exact log-divisor
+multipliers, including all prime powers d, are
+  lambda0(d)=d^(-u)-2,
+  lambda1(d)=d^(-u)-1-d^(-v),
+  lambda_mu(d)=-1,
+  lambda2(d)=d^(-u)-d^(-v).
+Then
+  B_F(x)=sum_(d<=x,d>=2)Lambda(d)
+                              *sum_i c_i lambda_i(d) A_i(x/d). (3.4)
+All arithmetic arguments are <=x/2. Unit cofactors are part of each A_i,
+and Lambda includes every power of each prime. Multiplying (3.4) by the
+ENTIRE F(x)/log x, with the norm weight, is the complete Work in (3.2).
+The second leg is current-scale, but there is no q-free forcing disguised
+as a smaller argument. No raw mode or deterministic pole is paid separately.
+
+4. Exact angular transfer classification for the CURRENT core
+--------------------------------------------------------------
+For a finite symmetric kernel K and a pair of modes i,j, their mixed
+logarithmic statistic has the complete pullback
+  sum_(h,k)s_i(h)s_j(k)log(h/k)K(h,k)
+   =sum_(d>=2)Lambda(d)*sum_(H,L)s_i(H)s_j(L)
+      *{[lambda_i(d)-lambda_j(d)]*[K(dH,L)+K(H,dL)]/2
+       +[lambda_i(d)+lambda_j(d)]*[K(dH,L)-K(H,dL)]/2}.   (4.1)
+This follows from the convolution log derivation, with BOTH orientation
+supports retained. It requires no coprimality; common primes and repeated
+valuations survive exactly.
+
+With du=d^(-u),dv=d^(-v), the six pair differences are
+  nu0,nu1 : dv-1;
+  nu0,mu  : du-1;
+  nu0,nu2 : dv-2;
+  nu1,mu  : du-dv;
+  nu1,nu2 : -1;
+  mu,nu2  : -1-du+dv.                                 (4.2)
+Only nu1/mu has zero constant term and the true d^(-1/3)-d^(-2/3)
+attenuation. This is an exact generic compiler classification, not a
+channel nominated from numerical responses. The common nu0 symmetric
+mode remains unsuppressed and is not recovered by that angular channel.
+
+For product-only kernels, the commutator in (4.1) vanishes. For W_X with
+full product/diagonal restrictions it retains max/prefix, product birth,
+and unequal diagonal exits. On the flat interior dH,dL<=X the W part is
+equal in both placements; product masks also agree since the product is
+dHL. The remaining frontier coefficient is lambda_i+lambda_j, which can
+be unsuppressed. A boundary is not paid just because it has a name or lies
+outside that flat interior. Diagonal angular zeros and the paid diagonal
+target bound must not be confused with deletion of near-diagonal pairs.
+
+Equations (4.1)-(4.2) are useful detector constraints: a program can search
+source differences whose symmetric transported term has a proved prime
+gain, then conjecture a JOINT bound for its exact boundary flux plus the
+retained symmetric work. Claiming recovery from the angular term alone
+violates section 2, even if every local valuation identity is exact.
+
+5. Invertible scale filters and bounded energy-increment schemas
+----------------------------------------------------------------
+Fix an integer q>=2 and an exact real a. Define the FULL core filter
+  G(x)=F(x)-aF(x/q),
+with the actual integer-floor step extension, zero below one. Its coefficient
+sequence is
+  g(n)=f(n)-a*1_(q divides n)f(n/q), g(1)=f(1).
+All arithmetic/center cross terms remain inside G^2. Write
+  E_G(X)=X^(-2)*sum_(n=X)^(2X-1)G(n)^2.
+
+A valid generated universal lemma is the ONE-SIDED increment bound
+  E_G(2X)-E_G(X)<=B for every dyadic X>=1, B>=0.           (5.1)
+With the exact head A=E_G(1), telescoping proves
+  E_G(X)<=A+B log2 X.                                  (5.2)
+Negative increments are allowed; an absolute increment bound is a stronger
+unnecessary variant. Calibration can propose/freeze B and holdout can
+reject it, but no finite pass proves (5.1) for all X.
+
+Here is a complete discrete recovery theorem. Put r=|a|/sqrt(q). The finite
+causal inverse is EXACTLY
+  F(n)=sum_(j=0)^floor(log_q n) a^j G(floor(n/q^j)).
+There is no unknown prehistory or missing unit. From (5.2), cumulative
+summation over dyadic blocks gives
+  S_G(T)=sum_(n<=T)G(n)^2
+         <=(4/3)T^2*[A+B log2 T].
+Each cofactor floor(n/q^j) has at most q^j preimages. Minkowski consequently
+gives
+  S_F(T)/T^2 <=(4/3)[A+B log2 T]
+                              *(sum_(j=0)^floor(log_q T)r^j)^2.
+Thus for every dyadic X>=1,
+  E_F(X)<=(16/3)[A+B log2(2X)]
+                      *(sum_(j=0)^floor(log_q(2X-1))r^j)^2.  (5.3)
+This includes the finite head, all floors and q not a power of two.
+
+If |a|<sqrt(q), (5.3) is at most
+  (16/3)[A+B log2(2X)]/(1-|a|/sqrt(q))^2.                (5.4)
+If |a|=sqrt(q), replace the INVERSE-COST factor
+(1-|a|/sqrt(q))^(-2) by
+  [1+floor(log_q(2X-1))]^2,                             (5.5)
+giving cubic-log recovery. At sigma>1/2 the equality case has the bounded
+norm constant 1/[1-q^(1/2-sigma)]; at the critical finite norm its inverse
+cost is logarithmic. Equality must not be labeled bounded critical recovery.
+For |a|>sqrt(q), the causal cost includes a power of X. A separate source-
+specific exponent improvement is then required; smaller measured G energy
+does not remove that cost.
+
+The generated lemma (5.1) is meaningfully STRONGER than mere cofinal energy,
+not an equivalent tautology with a fitted normalization. For a generic
+bounded-coefficient source, choose F(n)=sqrt(n)(log n)^2 with a finite
+adjustment of its head. Its coefficients are bounded at large n and its
+energy has only powers of log X, hence is cofinal. At a=sqrt(q), the leading
+filter is a nonzero constant times sqrt(n)log n, so E_G has a log^2 X term
+and its dyadic increments are unbounded. Nonresonant a leaves an even
+larger log power. This is a source-independent strictness example, not an
+actual-source asymptotic. The all-scale increment conjecture could be
+false for the actual core even when its RH-equivalent cofinal goal is true.
+
+Nor can the threshold be bypassed by a mean-canceling fit. A generic prefix
+F(n)=n^b, 1/2<b<1, with a=q^b, has bounded coefficients and only a small
+floor residual G(n)=O(n^(b-1)), while E_F grows as X^(2b-1). This gives a
+literal obstruction to universal no-power recovery beyond the threshold.
+The unit/head spawns the growing homogeneous mode. At negative a a
+log-periodic signed analogue has the same energy obstruction. These are
+generic recovery guards, not proposed replacement arithmetic sources.
+
+6. Filtered source banks and a signed work-increment schema
+-----------------------------------------------------------
+The filtered core retains an exact source-specific log bank. Its log prefix
+is
+  B_G(x)=B_F(x)-aB_F(x/q)-a log(q)F(x/q).                 (6.1)
+The last term is essential: log(n) on q times a cofactor is log q plus
+the cofactor log. Filtering every mode prefix in (3.4) therefore gives
+  B_G(x)=sum_(d>=2)Lambda(d)*sum_i c_i lambda_i(d)
+                           [A_i(x/d)-aA_i(x/(dq))]
+                                         -a log(q)F(x/q). (6.2)
+All modes and all prime powers are retained. The extra lower-prefix term,
+unit and integer floors must be part of any generated work/flux program.
+
+Apply section 3 to Q=G. The coefficient envelope is C_g=C_f(1+|a|), because
+d_2(n/q)<=d_2(n) on q multiples. Thus its complete finite head is paid by
+(3.3) with C_g. A second valid generated lemma is
+  Work_G,crit(2T)-Work_G,crit(T)<=B_w
+      for all dyadic T>=64, B_w>=0.                      (6.3)
+Since Work(64)=0, this implies Work(T)<=B_w log2(T/64). At sigma=1/2 the
+coercivity theorem gives for the tail
+  ||G||_(crit,64..T)^2
+     <=2B_w log2(T/64)/(1-r0)
+          +H0^2/[64*(log64)^2*(1-r0)^2],
+  r0=2/log64<1/2.                                      (6.4)
+Add its explicit finite-head norm. Each dyadic block satisfies
+  E_G(X)<=4||G||_(crit,X..2X)^2,
+because the exact step integral weights are 1/[n(n+1)]>=1/(4X^2).
+Consequently (6.3) implies a bound of the form A_w+B'_w log2 X, which feeds
+directly into (5.3). This is a sufficient whole-target proof schema with
+positive recovery and signed arithmetic work; no angular inverse is used.
+
+The exact work can be evaluated as a finite sum with positive interval
+weights int_n^(n+1) x^(-2sigma-1)/log x dx multiplying G(n)B_G(n). Replacing
+those weights by endpoint samples is an approximation requiring its own
+error bound, not the exact theorem. The source bank representation (6.2)
+is what makes this a constructive operator-plus-argument conjecture rather
+than a free positive metric on unrelated channels.
+
+A bounded work-increment premise is again stronger than merely cofinal
+core growth. The work is norm-equivalent after its finite head, but its
+increments encode a specified logarithmic rate. The detector may propose
+and finitely falsify this rate; its proof status must stay CONJECTURED
+until a uniform source argument establishes it. No independent assumption
+about an RH-equivalent mode or q-free companion is allowed to prove it.
+
+7. Detector admission and falsification constraints
+----------------------------------------------------
+The next detector can enumerate exact q,a filters, lemma type (5.1) or
+(6.3), the full source/flux AST, constants frozen after calibration, and
+their recovery certificates. These are actual bound proposals. Fresh
+validation can reject them on a larger scale or falsify a proposed signed
+comparison, while every pass remains finite evidence. The universal claim
+and its constants must be explicit, independent of the omitted scales.
+
+Useful reusable proof checks are:
+  * full four-mode core, unit, eta and original recovery (1.1) retained;
+  * exact |a| versus sqrt(q) classification and actual inverse cost;
+  * an increment lemma specifying all dyadic scales, head and one-sided
+    or absolute direction, not merely a least-slope numerical ranking;
+  * exact source bank (6.2), including the -a log(q) term;
+  * angular-only programs flagged as noncoercive unless a proved positive
+    symmetric/common-mode measurement or new arithmetic constraint remains;
+  * local prime gains classified by (4.2), complete max/product/diagonal
+    fluxes retained, and no near-diagonal division without its inverse cost;
+  * paid bounded-degree graph/head/diagonal unions counted once, with growing
+    degree or omitted first-valuation sectors explicitly unpaid;
+  * exact numerical identities and inequality enclosures distinguished from
+    a universal proof of the conjectured bound.
+
+Angular and flux probes are useful DIAGNOSTICS for a structural argument.
+For instance a candidate can propose that the complete nu1/mu angular
+transfer and its boundary flux provide a negative credit in the symmetric
+work (6.2). The detector must also specify the unsuppressed nu0/common
+projection and an exact inequality recovering the whole signed G state.
+Sections 2/4 show why merely reporting a suppressed angular term does not
+provide that inequality. This guard is numerically falsifiable whenever
+the proposed complete comparison fails, and mathematically rejects an
+unjustified generic inverse even before any source evaluation.
+
+Final proof boundary
+--------------------
+There is no free angular recovery. The new coercive symmetric log-work
+identity provides a valid bounded recovery with a complete finite head;
+the scale-filter energy/work increment schemas provide exact polylogarithmic
+consequences with explicit critical costs. They are reusable detector proof
+templates, capable of expressing a substantive all-scale growth conjecture
+rather than just improving a numerical constant. Their actual signed
+source increment bounds and any angular-to-symmetric arithmetic credit
+remain open. No full-core bound or RH advance is claimed.

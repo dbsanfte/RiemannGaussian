@@ -1,0 +1,48 @@
+Source-generated global floor-prefix constraints
+================================================
+
+Let P_a(n)=n^(-a), M_a(n)=mu(n)n^(-a), including value1 at n=1.
+For every n, (M_a*P_a)(n)=n^(-a) sum_(d|n)mu(d)=delta(n).
+Equivalently at every prime p the FULL local rational factors are
+(1-p^(-a)t) and (1-p^(-a)t)^(-1); their product is1 as a formal
+power series. This proves all valuations, not just finitely sampled jets.
+It applies to arbitrary rational a, including signed shifts. The inverse
+kernel is positive because every n^(-a)>0, irrespective of a's sign.
+
+For a channel nu equal to a Dirichlet convolution of mu/power atoms,
+construct D as the convolution of one P_a for EACH mu atom, retaining
+repetitions and shifts. Then nu*D equals the convolution of all remaining
+power atoms. If none remain, the RHS is delta, not One. The source channel
+weight w=w0+wR*R is not divided out. Define W(n)=w nu(n). For every
+integer N>=0, exact finite reindexing yields
+
+ sum_(d<=N) D(d) sum_(k<=floor(N/d)) W(k)
+     = w sum_(n<=N) (nu*D)(n).
+
+The d=1 term has D(1)=1, hence it contains W's full prefix, including
+its unit. N=0 gives empty sums. All positive generalized-power monomials
+in D(d) are constructed from complete ordered divisor factorizations;
+arguments are positive integers and exponents canonical rationals. Terms
+with the same exact monomial are collected with positive integer counts.
+No real-power approximation or numerical source sample establishes a law.
+
+The certificate keeps the exact source AST as source_binding and records
+the full rational Euler numerator/denominator multisets. The independent
+checker imports no producer, regenerates those multisets from the source,
+and constructs finite rows by recursive divisor factorization, independently
+of the producer's convolution-table algorithm. Payload comparison is type
+strict. A source-channel permutation changes channel references but cannot
+discard a weight, unit or factor. Repeated mu atoms require repeated inverses.
+
+The source lattice is a representation, not a denominator ceiling. Only
+explicit finite guards (4096bit scalars,64 channels,32 atoms, work/residency
+budget) restrict an invocation. Finite rows can become large; reserve work
+and memory before expanding, and reject exhausted invocations. No hashes,
+research archive, actual full-core coefficient or numerical response is used.
+
+These constraints are arithmetic input to a future coupled inequality search.
+Rearranging the d=1 term can recover a prefix exactly, but does not price
+the complementary floor sums. Triangle inequalities may lose cancellation;
+positivity of D is not positivity of the signed channel prefixes. Any
+derived all-scale bound needs a separately proved coercive/forcing argument
+with all signed complements. Neither global core control nor RH is claimed.

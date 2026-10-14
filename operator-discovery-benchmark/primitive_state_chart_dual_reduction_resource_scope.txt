@@ -1,0 +1,75 @@
+Prospective031: exact reduction of the verified030 conic generator system
+
+The licensed input is the317-row/695-column compressed system from030,
+with all851 original responses and the original782-row chart available for
+exact restoration. Do not rebuild geometry or replay historical elimination.
+The prior207-iteration job is terminal. This is a new exact reduction method,
+not an extension or a retry. No actual reductions occur before freeze.
+
+One complete450m reservation:40m preparation/tests/I/O,100m reduction,
+160m native proposal,70m exact restoration,80m sole independent audit.
+Synthetic tests share25m cumulatively (including development and the single
+frozen combined suite); independent I/O10m and other preparation5m complete
+the40m. Tests must use small generic systems and avoid repeated full-shape
+audits for every mutation. The initial frozen source snapshot is capped8MiB.
+Input geometry16MiB, reduction64MiB, proposal8MiB, review8MiB, metadata64KiB.
+Rational result4096bits, two-input temporary8193bits, live-cell proxy6m.
+Sequential worker and audit each6GiB, one thread,3600 cooperative seconds;
+producer external7200seconds. No hashes, unbudgeted retry or second audit.
+
+Before freeze, producer12 tests consumed34,212 metered units and independent
+checker11 tests consumed1,369,307 in one invocation each:1,403,519 total.
+The1m root/scaffolding reserve covers root's small workflow checks and other
+unmetered test scaffolding. The frozen combined suite prints both module
+work receipts, and the runner and auditor bind their sum plus consumed
+development work plus1m to the common25m ceiling. No prior work is reset.
+
+The nonnegative variables are dual generator weights. A homogeneous row
+with one strict coefficient sign forces every present weightzero. The RHS
+must be exactlyzero. Remove those variables from every row. A separate
+operation discards closed incidence components with homogeneous targets:
+all their weights can be CHOSENzero in a lift. They are not necessarily
+forcedzero at every solution. Isolated unconstrained columns can likewise
+be chosenzero. Any component touching a nonzero RHS must be preserved.
+
+Normalize a nonzero pivot and subtract its multiples from other rows using
+exact rational arithmetic on the whole augmented equation. These invertible
+operations preserve equality feasibility. Choose sparse pivots by the frozen
+Markowitz policy; perform forward elimination and repeat sign/component
+reductions. Stop after unchanged active columns or at most8 rounds. The
+finite completed transformation proves equivalence even if it is not maximal.
+Never infer rank, exhaustiveness or primal feasibility from a stop label.
+
+Save a trace of each allowed elementary step plus all final equations and
+the complete variable disposition. Independently replay the trace from the
+licensed030 input, compare the final coefficients/RHS exactly and check that
+every original column is retained, forcedzero, or discarded by zero-target
+extension. A zero-coefficient/nonzero-RHS row proves only that the fixed
+generator system cannot represent the separating target. That is NOT a proof
+of primal cone infeasibility, because other PSD dual generators may exist.
+
+If a nonempty consistent reduced system remains, call the existing native
+proposal helper exactlyonce with160m. For reduced dimensionsm,n, reserve
+16mn+64(m+n)+1048576 preparation, m^3 factorization,2mn+1048576 transport,
+and K*(2mn+m^2) pivots. Choose the largest K fitting160m, hardcap10000,
+before exact positive scaling and nonunderflowing binary64 conversion.
+This remains a declared proxy, not measured HiGHS flops. Methodhighs-ds,
+presolveFalse, threads1. A numerical status never proves an inequality.
+
+Every strictly positive successful native coordinate enters the one exact
+support restoration, with size at most443. Underdetermined support is allowed
+with its declared free coordinates setzero during exact reconstruction. Lift through
+active column ids and030 original ray representatives to the complete851
+ray system. Restore against all original443 exact affine-response equations,
+then export all782 row multipliers and the full1224-coordinate Farkas check.
+Final admission requires nonnegative ray weights, A^T*lambda=G*alpha in
+every original coordinate and b^T*lambda=-1. Independent step verification
+and this optional identity share ONE80m budget, without phase resets.
+
+A complete exact reduction remains useful if the later solver fails, but
+resource-incomplete traces and independent audit failures are not admitted.
+The report separates reduction equivalence, numerical search disposition and
+an optional full finite-cone separator. Even a separator excludes only this
+augmented finite proof template. Actual signed arithmetic control at all
+scales still needs a universal operator identity, scalar and initial storage
+bounds, a cofinal parameter family and an ordinary-zeta bridge.

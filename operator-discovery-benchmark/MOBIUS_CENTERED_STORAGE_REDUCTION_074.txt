@@ -1,0 +1,457 @@
+EXACT CENTERED PRIME-DILATION REDUCTION074 AND ITS UNPAID PRICE
+===============================================================
+
+Conclusion and limited status
+--------------------------------
+Every centered_high ray on the admitted source reduces exactly to
+
+ R(k)=a Z(k)+sum_(j=1..r-1) C_j
+                         sum_(y_j<p<=y_(j+1), p prime) Z(k/p),
+ y_j=(20k)^theta_j, C_j=sum_(i=1..j)c_i,          (1)
+
+where1/2<=theta_1<...<theta_r<1 and sum_i c_i=0.  The SAME four-endpoint
+stencil defines Z at both the integer parent and rational child scales.
+The coefficient signs C_j are cumulative signed coefficients, not their
+absolute values.  Every prime above the largest cutoff has zero weight.
+Every remaining cofactor horizon is less than sqrt(20k).
+
+For fixed coefficients and a fixed finite cutoff list, the centered
+smooth part in (1) is O_A(k/log^A k) for EVERY fixed A>0.  Thus exact
+centering removes every fixed inverse-log bulk order, not just the
+leading2k/log^2 k term.  This is an unconditional upper bound, not any
+fixed sublinear-power theorem or any uniform storage recurrence.
+
+A hypothetical pointwise Mertens power bound gives a generic triangle
+price growing like k^(alpha+theta_*(1-alpha))/log k for0<=alpha<1,
+where theta_* is the largest upper exponent of a nonzero coefficient
+block.  Its multiplier relative to k^alpha is unbounded.  Smaller
+cofactor radius does not make that triangle rule a scalar contraction.
+The exact signed prime-dilation aggregate and its correlation with
+the separate current-scale term aZ(k) remain the new obligations.
+
+This is a postrun analytical review, outside the frozen074 scientific
+files.  It writes only this file, reads no new scientific dataset or
+numerical output, performs no source-scale query, uses no hashes, and
+changes no frozen073/074 implementation or result.  No numerical failure
+location is needed for its proof.  It imports the unconditional Mertens
+and PNT facts already identified in the073 analytical reviews.  All
+new reductions, bounds and scope distinctions are proved below.  No
+actual candidate recurrence, joined-head bound, or RH theorem is claimed.
+
+1. The actual source and its exact rational-scale extension
+-------------------------------------------------------------
+For EVERY real t>0 define
+
+ w_t(n)=1_(8t,10t](n)-1_(16t,20t](n),
+ Z(t)=sum_(n>=1)mu(n)w_t(n)
+     =M(10t)-M(8t)-M(20t)+M(16t),                (2)
+ M(u)=sum_(1<=n<=u)mu(n), M(u)=0 for0<=u<1.
+
+Each M argument means its exact integer floor.  Therefore(2) agrees
+literally with the admitted original source at integer k and defines
+the same stencil at real or rational scales, without interpolation or
+rounding of an observed integer-scale value.  An endpoint n=8t or16t
+is excluded from its corresponding band; n=10t or20t is included.
+
+For an integer parent k>=1 its unit coordinate w_k(1)=0.  The complete
+signed squarefree factor sectors satisfy
+U_1+U_2+U_3+U_ge4=Z(k).  Hence a general physical ray with balanced factor
+coefficients v_2=v_3=v_4=v_5=b and arbitrary unit coefficient reduces to
+
+          R(k)=(v_Z+b)Z(k)+sum_theta c_theta S_theta(k). (3)
+
+centered_high sets every theta<1/2 coefficient to zero and imposes the
+exact zero sum of the remaining smooth coefficients.  Put a=v_Z+b and
+list those remaining fixed exponents as theta_1,...,theta_r, retaining
+zero coefficients if desired.  The empty list or a one-element list
+with zero coefficient has a zero centered smooth part.
+
+The parent unit elimination does NOT apply automatically to the children
+in (1).  A rational child t=k/p may be less than1 at small parent scales,
+and w_t(1) can then be nonzero.  For example its positive unit band is
+1/10<=t<1/8 and its negative unit band is1/20<=t<1/16.  M(t)'s unit
+contributions in (2) are therefore essential finite terms.  A child
+argument below1 is an empty prefix; an argument in[1,2) contains exactly
+the unit.  Neither may be silently removed or treated as a large-scale
+asymptotic value.
+
+2. Exact prefix identity with all prime and square gates
+----------------------------------------------------------
+Let
+
+ A_mu(x,y)=sum_(n<=x,P+(n)<=y)mu(n), P+(1)=1,
+
+where x>=0, y>=1, and y>=sqrt(x).  A nonzero nonsmooth term has a unique
+large prime p>y.  A product of two primes>y, including a repeated prime,
+would exceed y^2>=x.  Thus n=pm has m<=x/p<x/y<=y<p; p cannot divide m,
+all factors of m are below p, and mu(pm)=-mu(m).  Squareful m and n
+contribute zero.  Conversely every p prime with y<p<=x and every
+integer1<=m<=x/p satisfies these gates.  Counting these terms gives
+
+       A_mu(x,y)=M(x)+sum_(y<p<=x, p prime)M(x/p). (4)
+
+This is the finite reordering of the exact cofactor identity established
+in MOBIUS_PRIME_STORAGE_CANDIDATE_REVIEW_073.txt, equation(6).  It is not
+an independence approximation or a theorem about only prime anchors.
+
+All endpoints are literal: p=y is excluded, p=x is included with its
+M(1) term, and a prime p with x/p an integer includes that integer
+cofactor.  At y=sqrt(x), the strict p>y inequality still excludes a
+large prime square.  If y>x the sum is empty and(4) gives A_mu=M.
+For x<1 both prefixes and the prime sum are empty.  The unit is included
+in A_mu and M when x>=1, y>=1.
+
+For real algebraic y, the prime/smooth indicators are unchanged by
+floor(y).  In particular a prime p>floor(y) is also p>y.  We keep the
+real y in factor-gate inequalities and in the open-left/closed-right
+prime blocks; this avoids any erroneous claim that floor(sqrt(x))
+itself has square at least x.
+
+3. Exact source identity and shorter rational children
+---------------------------------------------------------
+Put X=20k for integer k>=1 and y=X^theta with1/2<=theta<1.  Then
+y^2>=X>=x for EACH source endpoint x in{8k,10k,16k,20k}.  Apply(4) to
+all four prefixes with the SAME y.  Extend each prime sum to p<=X,
+using M(x/p)=0 whenever p>x.  The exact result is
+
+ S_theta(k)=Z(k)+sum_(y<p<=X, p prime)G_k(p),
+ G_k(p)=M(10k/p)-M(8k/p)-M(20k/p)+M(16k/p)
+       =Z(k/p).                                 (5)
+
+The last equality invokes precisely the rational-scale extension(2).
+The four signed endpoints and all their shared ordinary mu values
+remain inside ONE child stencil.  There are no independent copies of
+M, no removed composites, and no replacement by its absolute value.
+
+Every prime in(5) is>y>=sqrt(X).  Consequently
+
+ 20(k/p)=X/p<X/y<=sqrt(X),                       (6)
+
+so its integer cofactor access is indeed strictly shorter than the
+parent source horizon X.  This gate includes squarefree/coprimality
+conditions already paid in(4).  The prime-query horizon is nonetheless
+that of the displayed parent cutoff interval, not the cofactor horizon.
+
+For integer k and prime p, k/p is generally a positive rational, not an
+integer.  The frozen073/074 dyadic recurrence premises quantify over
+integer scales only.  They DO NOT license applying their F(t), source
+invariant, or parent relation at t=k/p.  Rounding t to floor(t) changes
+all four endpoints and the exact function in(5).  A recursive proof using
+these children must explicitly admit the rational dilation domain,
+or prove a separate theorem that transfers an integer invariant to it
+with every boundary price.  Smaller arithmetic access alone does not
+pay that additional domain obligation.
+
+4. Centering as an exact signed block operator
+-------------------------------------------------
+Let y_j=X^theta_j, c_j fixed, and sum_j c_j=0.  Summing(5) gives
+
+ H(k):=sum_j c_j S_theta_j(k)
+ =sum_j c_j Z(k)+sum_(p<=X, p prime)W_k(p)G_k(p),
+ W_k(p)=sum_j c_j 1[p>y_j].                      (7)
+
+The first term is EXACTLY zero.  Also W_k(p)=0 for p<=y_1 and for
+p>y_r, the latter because it equals the complete sum of c_j.  On each
+block(y_j,y_(j+1)] it equals
+
+                         C_j=sum_(i<=j)c_i.     (8)
+
+Thus
+
+ H(k)=sum_(j=1..r-1) C_j B_j(k),
+ B_j(k)=sum_(y_j<p<=y_(j+1), p prime)Z(k/p),
+ R(k)=aZ(k)+H(k).                               (9)
+
+The sign is important: for c_1=1,c_2=-1, the difference
+S_theta1-S_theta2 is PLUS the prime-block sum in(9), since the source
+contribution newly admitted by the larger smooth cutoff has sign
+-mu(m).  A prime exactly equal to y_(j+1) is still in block j and does
+not yet activate c_(j+1); a prime exactly y_j is excluded from block j.
+These conventions exactly match the indicator p>y_j in(7).
+
+Real cutoffs are increasing.  Their integer floors may coincide or a
+block may contain no primes; the corresponding sum is exactly zero.
+No negative/inverted prime count is manufactured.  The empty/one-term
+cases and all zero cumulative coefficients give H=0.  Primes above
+the largest cutoff disappear by exact cancellation before a norm is
+taken; their cofactor units and other small terms are cancelled, not
+discarded individually.  Prime/cofactor units still present in a
+nonempty retained block remain inside its Z(k/p).
+
+Equations(7)-(9) define an exact signed prime-dilation operator
+
+          (P_(c,theta)f)(k)=sum_j C_j
+                        sum_(y_j<p<=y_(j+1)) f(k/p). (10)
+
+Its cutoff geometry depends on the integer parent k.  Its input f must
+be defined on the displayed rational children.  The current source
+obligation is R(k)=aZ(k)+(P_(c,theta)Z)(k), with aZ(k) kept separate.
+
+5. Uniform cofactor growth after complete centering
+------------------------------------------------------
+Assume H is not identically zero as a formal block expression.  Let
+theta_max be the largest retained fixed theta, let theta_min be the
+smallest, and put delta=1-theta_max>0.  Every contributing prime obeys
+
+                 X^theta_min<p<=X^theta_max.
+
+For each of its four positive endpoint arguments, with b in{8,10,16,20},
+
+ (b/20)X^delta <= b k/p < (b/20)X^(1-theta_min),
+ log(b k/p)>=delta log X+log(b/20).             (11)
+
+Hence EVERY endpoint cofactor argument tends to infinity uniformly over
+ALL primes in ALL the retained blocks.  This is the new fact supplied
+by vanishing prime weights above the largest fixed sublinear cutoff.
+For sufficiently large k, their logs are at least(delta/2)log X and
+the quantitative Mertens theorem applies throughout the entire range.
+
+The existing primary unconditional input is
+
+ |M(t)|<=D_A t/(log t)^A
+            for all sufficiently large t and every fixed A>0. (12)
+
+It follows, for example, from Lee and Leong, "New explicit bounds for
+Mertens function and the reciprocal of the Riemann zeta-function,"
+Theorem1.1, equation(9), and Theorem2.2.  This is already imported and
+verified in the073 analytical reviews.  Only its unconditional
+asymptotic consequence(12) is used here.
+[Lee and Leong, primary paper](https://arxiv.org/pdf/2208.06141)
+
+Using(11)-(12) at all four endpoints gives
+
+ |G_k(p)|<=54 D_A (2/delta)^A
+                        k/[p(log X)^A].        (13)
+
+The number54 is8+10+16+20, the sum of the absolute endpoint sizes.
+The constants and the starting scale depend on A and the FIXED delta,
+but not on k or the individual prime/cofactor.  Below that starting
+scale, the exact identities still hold with all empty/unit prefixes;
+those finitely many integer parents are legitimate finite base costs,
+not silently replaced by(13).
+
+6. All inverse-log bulk orders disappear: a proved upper bound
+----------------------------------------------------------------
+Put C_*=max_j|C_j|, with C_*=0 when there are no blocks.  Using only
+the all-integer harmonic bound, for any desired fixed A>0 apply(13)
+with Mertens exponent A+1.  Then
+
+ |H(k)|<=54 C_* D_(A+1)(2/delta)^(A+1)
+           k/(log X)^(A+1) sum_(p<=X)1/p
+        <=constant_(A,c,theta) k/(log X)^A.       (14)
+
+Thus no additional prime-distribution theorem is needed to prove
+
+       H(k)=O_(A,c,theta)(k/(log k)^A)
+                         for EVERY fixed A>0.  (15)
+
+There is a slightly sharper constant bookkeeping if the existing
+unconditional PNT is used.  It implies pi(t)<=K t/log t for large t.
+Partial summation gives, for L_0=X^theta_min,U_0=X^theta_max,
+
+ sum_(L_0<p<=U_0)1/p
+ =pi(U_0)/U_0-pi(L_0)/L_0
+                         +integral_(L_0..U_0)pi(t)/t^2 dt
+ <=K[1/log U_0+log(log U_0/log L_0)]
+ =K[1/(theta_max log X)+log(theta_max/theta_min)]. (16)
+
+The prime reciprocal price is bounded for fixed cutoffs; since
+theta_min>=1/2, its limiting ratio term is at most log2.  Equation(13)
+with exponent A then suffices directly.  One may keep each block's
+|C_j| price separately instead of using C_*, preserving all parameter
+dependence.  The unsharpened harmonic argument(14) already proves(15).
+
+Z(k) itself is O_A(k/log^A k) by(12) at the four original endpoints.
+Therefore every fixed centered_high ray R=aZ+H satisfies the same
+all-log-power upper-bound family.  For a fixed finite positive quadratic
+storage, it follows only that
+
+ E(k)=O_A(k^2/(log k)^(2A)),
+ E(k)/k^q=O_A(k^(2-q)/(log k)^(2A))              (17)
+
+for every fixed A, with constants depending also on the actual fixed
+ray coefficients, their nonnegative weights and the finite list.
+
+Equation(15) rigorously means that no nonzero fixed inverse-log bulk
+coefficient can survive in H.  It does not assert convergence of a
+complete asymptotic series, and it does not prove any fixed power gain.
+For any fixed A and beta<1, k/log^A k still exceeds k^beta eventually.
+Even the family for EVERY fixed A does not imply O(k^beta): the scalar
+example k exp(-sqrt(log k)) satisfies that family and exceeds every
+k^beta with beta<1.  This example diagnoses the logical scope of the
+estimate; it is not asserted to equal the actual arithmetic source.
+One cannot let A vary with k while suppressing D_A, base thresholds and
+the delta-dependent constants.  Nothing in(15)-(17) pays logarithmic
+growth of F, constant dyadic drift, or an RH-strength power bound.
+
+7. Generic triangle price under a hypothetical Mertens power bound
+--------------------------------------------------------------------
+Suppose, purely as a CONDITIONAL input, that
+
+          |M(t)|<=B t^alpha for every real t>=1, (18)
+
+where B is fixed and0<=alpha<1.  For arguments0<t<1, M(t)=0 makes the
+same inequality harmless; all units at larger arguments remain included.
+Define
+
+ K_alpha=8^alpha+10^alpha+16^alpha+20^alpha,
+ T_alpha(k)=sum_j |C_j|
+                         sum_(y_j<p<=y_(j+1))p^(-alpha). (19)
+
+Then the exact four-endpoint stencil gives
+
+ |Z(t)|<=B K_alpha t^alpha,
+ |H(k)|<=B K_alpha k^alpha T_alpha(k),
+ |R(k)|<=|a| |Z(k)|+B K_alpha k^alpha T_alpha(k). (20)
+
+If(18) is licensed only over the smaller child range rather than the
+current parent endpoints, only the last form with separate |aZ(k)|
+is available.  If it holds globally, one can further bound that term
+to obtain B K_alpha k^alpha[|a|+T_alpha(k)].  Neither version is an
+unconditional consequence of the logarithmic estimates above.
+
+The exact prime-count price can be exported without replacing it by
+the number of all integers.  For a block(L,U] and0<=alpha<1,
+
+ sum_(L<p<=U)p^(-alpha)
+ =U^(-alpha)pi(U)-L^(-alpha)pi(L)
+                  +alpha integral_(L..U)pi(t)t^(-alpha-1)dt. (21)
+
+This is a Stieltjes/partial-summation identity with the same strict
+lower and closed upper endpoints.  At alpha=0 it is exactly pi(U)-pi(L).
+It includes empty prime blocks and is not an unpaid replacement of
+prime counts by a density.  The elementary inequality
+sum_(L<p<=U)p^(-alpha)<=L^(-alpha)[pi(U)-pi(L)]
+is another finite price, though generally less sharp than(21).
+
+For assessing asymptotic operator size, the existing unconditional PNT
+pi(t)~t/log t implies, for every fixed0<=alpha<1,
+
+ sum_(p<=U)p^(-alpha)
+           ~U^(1-alpha)/[(1-alpha)log U].        (22)
+
+To see this directly, use partial summation from2, and the elementary
+integral equivalent
+integral_2^U t^(-alpha)/log t dt
+~U^(1-alpha)/[(1-alpha)log U].  The latter follows by differentiating
+the proposed equivalent or by l'Hopital's rule.  Its endpoint term
+and alpha times the integral combine to the factor1/(1-alpha).
+The alpha=0 case is the PNT itself.  No short-interval PNT is needed,
+since the two block endpoints are fixed distinct powers of X.
+
+A checked primary PNT source already used in the073 candidate review
+is Trudgian, "Updating the error term in the prime number theorem,"
+Theorem2.  Its unconditional quantitative error implies the PNT and
+the upper bound used in(16).
+[Trudgian, primary paper, Theorem2](https://arxiv.org/pdf/1401.2689)
+
+For a fixed block L=X^theta_j,U=X^theta_(j+1), the lower endpoint
+contribution to(22) is negligible because theta_j<theta_(j+1).  Thus
+
+ sum_(y_j<p<=y_(j+1))p^(-alpha)
+ ~X^(theta_(j+1)(1-alpha)) /
+             [(1-alpha)theta_(j+1)log X].        (23)
+
+If some C_j is nonzero, let j_* be its largest index and put
+theta_*=theta_(j_*+1).  The nonnegative triangle price then obeys
+
+ T_alpha(k)~|C_(j_*)| X^(theta_*(1-alpha)) /
+                    [(1-alpha)theta_* log X].   (24)
+
+All smaller block exponents are lower-order in this price.  If every
+C_j=0, T_alpha=H=0 instead; do not assign an artificial positive cost.
+
+Consequently the generic child-triangle upper envelope in(20) has
+order
+
+ B K_alpha |C_(j_*)|20^(theta_*(1-alpha)) /
+                     [(1-alpha)theta_*]
+        times k^(alpha+theta_*(1-alpha))/log(20k). (25)
+
+This is the size of THAT permitted upper envelope, not a lower bound
+on actual |H| or |R|.  Its parameter dependence includes B, all four
+stencil endpoints, the actual cumulative coefficient,1/(1-alpha),
+theta_*, and the fixed cutoff gaps that allow the lower-order block
+comparison.  The asymptotic is not claimed uniform as alpha approaches1
+or a cutoff gap shrinks with k.
+
+At alpha=1/2 the envelope exponent is(1+theta_*)/2, strictly above1/2
+and at least3/4.  Its multiplier relative to the hypothetical k^alpha
+invariant is T_alpha(k), which tends to infinity whenever a block is
+active and alpha<1.  Thus the generic prime-by-prime triangle transfer
+cannot close a scale-independent scalar contraction in that norm.
+It may give a fixed sublinear bound CONDITIONAL on(18), but does not
+preserve its input exponent or supply the desired constant drift.
+
+At alpha=1 the price instead tends to
+sum_j |C_j|log(theta_(j+1)/theta_j), by prime reciprocal summation.
+Even if coefficients make that multiplier small, the admitted invariant
+has linear exponent and is not an RH-strength gain.  That endpoint
+should not be recovered by substituting alpha=1 into(24), whose
+1/(1-alpha) form is for fixed alpha<1 only.
+
+8. The exact remaining signed obligation for detector search
+---------------------------------------------------------------
+An auditable supplied operator can export the following symbolic data:
+
+ * Registered profile(2), integer parent k>=1, X=20k.
+ * Fixed finite theta list in[1/2,1), rational c_j with exact zero sum.
+ * Exact cumulative coefficients C_j and prime blocks(y_j,y_(j+1)].
+ * Shared child stencil Z(k/p) at positive rational scales, including
+   every floor, empty argument, unit and squareful zero convention.
+ * Child cofactor horizon X/p<sqrt(X); prime-query horizon y_r.
+ * Separate current-scale coefficient a and term aZ(k).
+ * The complete signed aggregate aZ(k)+sum_j C_j B_j(k), with no
+   per-prime or per-block absolute value in its definition.
+
+The analytical leaf can be a genuine uniform signed aggregate price
+for this family, for example
+
+ |sum_j C_j sum_(y_j<p<=y_(j+1))Z(k/p)|
+                        <=D k^(1/2+epsilon)     (26)
+
+for EVERY integer k beyond a declared paid finite base, with D depending
+on the fixed coefficients, cutoffs and epsilon but not on k's evaluated
+values.  This would be a new prime/cofactor correlation theorem, not a
+consequence of smaller child rank or positive semidefiniteness.  It
+would still leave the separate aZ(k) term unless that term is paid or
+a complete coupled price is proved.  A coupled target is
+
+ |aZ(k)+(P_(c,theta)Z)(k)|<=D k^(1/2+epsilon),    (27)
+
+or directly the full storage drift inequality with its actual base,
+weights, normalization and every cross term.  Merely defining D as a
+finite observed maximum does not license either assertion.
+
+If a detector factors a block energy, its genuine within-block square
+contains ordered prime pairs Z(k/p)Z(k/q), with the same underlying
+ordinary mu values in all four child endpoints.  Multiple blocks and
+the aZ(k) term introduce their corresponding cross terms as well.
+Dropping those terms changes the energy and can lose the actual signed
+interaction.  A small finite variance or a finite successful recurrence
+does not pay its all-scale operator norm or drift.  Conversely the
+growing triangle price(25) does not prove the signed aggregate cannot
+cancel; it pinpoints the cost a successful signed rule must beat.
+
+Any iterative proof must carry the explicit additional scale-domain
+obligation from section3.  Starting with integer k, repeated prime
+dilations produce rational k/(p_1...p_m).  An integer-only dyadic law
+is not a theorem for that family, and a floor substitution requires
+new endpoint correction estimates.  The radius decrease in(6) is a
+real arithmetic fact, while the number and weights of prime children,
+current prime access, rational domains, coefficient dependencies,
+and the full signed correlation price remain separate requirements.
+
+Disposition
+--------------
+The exact reduction(9) is valid for EVERY centered_high ray, including
+the registered theta=1/2 boundary, general balanced factor coefficients,
+arbitrary Z/unit coefficients, empty lists and empty prime blocks.
+It preserves the original signed source stencil at rational children
+and keeps aZ(k) separate.  Complete zero-sum centering removes all fixed
+inverse-log bulk orders through the proved unconditional family(15).
+That family supplies no fixed sublinear power, no scalar contraction,
+and no actual candidate recurrence theorem.  The precise remaining
+object is the signed prime-dilation operator(10), with rational-scale
+admission and the bound for its correlation with the current source
+both still unpaid.

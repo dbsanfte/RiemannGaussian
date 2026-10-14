@@ -1,0 +1,28 @@
+Independent analytical scope review: complete divisor-localizer separator
+
+cancellation-arithmetic-results/divisor-localizer-probe-001/jobs/dual-000.json: 9e7a979724e973d7f5b93aed828283a92c5e4d8bdc8f8cf0806d79c83ca83416
+cancellation-arithmetic-results/divisor-localizer-probe-001/protocol.json: 9d0c391603944cb3c7273fd4a241595cfc4783201322bcd7f125d4378ef51346
+cancellation-arithmetic-results/divisor-localizer-probe-001/source_seal.json: 8e9e63001e992fd29bb814325012bebc6cd30c084b4f4b61f84ec4439c77443a
+cancellation_divisor_localizer_language.py: 835f547ef39aaa1d82a2b0a658d25318928c8560a485d735f070c1e03f218f73
+cancellation_native_gram_dual.py: 72c9739986e3540f781dd39ad4a4e245525c2c3bcdd69d1019b3f1a7b3ea73bb
+
+This read-only audit inspected the exact admitted result and source semantics; it did not rerun the complete builder or expensive checker. The embedded independent check reports verified=true. Whole-run provenance audit remains a separate obligation.
+
+All four ordinary constant coordinates, and the fifth gamma-auxiliary constant coordinate, are exactly zero. The full parent dual Gram is diagonal with one positive even-mask diagonal; the child dual Gram is diagonal with prefix diagonal1. All other entries are zero. Hence both are exactly PSD without relying on floating eigenvalues. Recorded lhs pairing is -1, not a sampled arithmetic observation.
+
+Uniform parameter scope
+For fixed scales1,2,3,5, changing C>=0 or integerq>=1 changes the target only through per-instance scalar constants and rescales the existing positive constant-square columns. Zero constant moments annihilate every such change. The added30 square groups and12 signed relation groups (54 scalar LP columns after signed splitting) depend on X, region and powers-1,0,1, not C or q. Their expanded formal constants are zero: divisor forms are homogeneous linear/quadratic, and inverse/norm rows are multiplied by homogeneous quadratic forms. All complete ordinary/source pairs remain represented. Thus the SAME exact functional separates every arbitrary per-scale scalar-budget target in the SAME fixed shared dictionary with the SAME gamma-zero auxiliary constraint. This is stronger than exclusion of C32,q6, but only a finite jointly constrained proof-cone obstruction. It does not refute any actual Mobius estimate, an enlarged dictionary, or different scale-dependent structural weights.
+
+The gamma-zero condition is necessary for the stated fixed-weight all-scale critical budget when q>1, subject to its asymptotic hypotheses. At q=1 it is an extra restriction; the witness still separates that restricted cone but cannot exclude all legitimate q1 unsigned bounds. Likewise arbitrary per-scale scalar budgets do not remove the auxiliary constraint. There is no conclusion that every proof of RH must obey this grammar or these chosen finite training scales.
+
+What the present language knows
+For j=-1,0,1 define L_d,t,j=sum_{d|a<=t}(a/t)^j x_a. Complete inverse-gcd rows identify the coprime kernel with sum_d x_d L_d². The five square forms plain, squarefree_plain, modulated,plus,minus and norm closures implement both sign-localizers exactly. Crucially each group sums independently over d and t: squares contain cross-a correlations within a divisor row, but no d!=e cross between distinct divisor rows. Existing five-atom PSD Grams allow cross-atom correlations and do not fill that missing divisor-by-divisor interaction. The new separator proves that these complete diagonal-in-d localizers, even with the old factor and full5atomGram language, remain inadequate for this declared cone.
+
+Concrete next identity and missing interaction
+Let B(t)=sum_{d<=t}x_d sum_{a<=t,d|a}x_a. Then
+ B(t)-x_1 = x_1*(x_1-1) + sum_{a=2}^t x_a*inverse_row(a).
+Equivalently, the complete formal identity is
+ B(t)-1 = (x_1+1)*(x_1-1) + sum_{a=2}^t x_a*inverse_row(a).
+Together with x1=1 this gives B(t)=1 for actual mu, since mu*one=unit. Squaring a complete B(t) introduces d!=e products x_d*x_e*L_d*L_e. This is the cross-divisor information absent from sums of individual divisor squares. Exact closure is B²-1=(B-1)(B+1), expressed using ALL inverse rows with multipliers x_a*(B+1), and the unit relation with the full multiplier (x_1+1)*(B+1). No component or remainder may be discarded. This identity is supplied arithmetic, not a discovered signed bound. B itself is a forced convolution sum, so merely replacing one coordinate by B cannot bound the original Mertens defect.
+
+A minimally honest extension can add shared complete weighted cross-divisor forms or B-weighted norm/inverse closures and their polarization, with complete source domains and zero formal scalar tracking. Any successful identity must still control the original full prefix energy and establish the all-scale scalar critical budget with cofinal q; finite feasibility alone cannot supply that estimate. The analytic challenge is transferring convolution forcing1 into control of unforced signed prefix directions without replacing negative cross terms by absolute values. No new numerical probe or actual arithmetic coefficient response was used here.

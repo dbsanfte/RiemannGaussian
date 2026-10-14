@@ -1,0 +1,156 @@
+{
+  "RH_proved": false,
+  "all_105_storage_pairs_retained": true,
+  "coercivity": "R=e_prefix e_prefix^T+K; K PSD",
+  "critical_finite_certificate_found": false,
+  "decision": {
+    "dual_status": "missing_resource",
+    "final_scales": [],
+    "primal_status": "uncertified",
+    "run_primal": true
+  },
+  "exact_storage_cone_separator_found": true,
+  "future_resources": {
+    "authorized_memory_when_limiting_bytes": 17179869184,
+    "authorized_total_memory_when_limiting_bytes": 17179869184,
+    "charged_backend_reconstruction_work": 450000000,
+    "cooperative_seconds": 360,
+    "current_total_memory_bytes": 6442450944,
+    "current_worker_memory_bytes": 6442450944,
+    "external_seconds": 1200
+  },
+  "gamma_gate_scope": "necessary for the uniform fixed-template critical extracted scalar budget under recorded unchanged scalar-growth hypotheses",
+  "global_bound_proved": false,
+  "gram_dimensions": {
+    "full_child": 14,
+    "full_parent": 14,
+    "storage_K": 14
+  },
+  "historical_development_scales": true,
+  "independent_receipt_sha256": "5e5bd40dd13ddd272f158fa1f33694a8d6d028cc470d830f02e36a546c98f15d",
+  "initial_cost": "1+v1^T K v1, v1=(1,0,0,1,0,...,0)",
+  "jobs": [
+    {
+      "cost": {
+        "cpu_seconds": 89.11138755500001,
+        "elapsed_seconds": 89.12225983600365,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 656036,
+        "pid": 650492
+      },
+      "file": "jobs/dual-000.json",
+      "phase": "dual",
+      "reason": "total charged anchored reconstruction work cap",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "46391c8d5294d096367e6ea5f5d0394213642bae901c01b0b029ffb20cd186d0",
+      "status": "missing_resource"
+    },
+    {
+      "cost": {
+        "cpu_seconds": 67.555958659,
+        "elapsed_seconds": 67.56108602599124,
+        "observed_threads_at_completion": 1,
+        "peak_rss_kib": 617284,
+        "pid": 650604
+      },
+      "file": "jobs/primal-000.json",
+      "phase": "primal",
+      "reason": "numerical SDP solver failure: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+      "scales": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "sha256": "2fca57edc244a14425ba8f2f5e419f6071a765e68929d74497edc99baae142d5",
+      "status": "uncertified"
+    }
+  ],
+  "leaf_replay": {
+    "compilation_work_reserve": 28110900,
+    "constant_coordinates": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "cooperative_seconds": 360,
+    "cost": {
+      "cpu_seconds": 137.429770776,
+      "elapsed_seconds": 137.46051912699477,
+      "observed_threads_at_completion": 1,
+      "peak_rss_kib": 604684,
+      "pid": 658279
+    },
+    "dual_build_work_proxy": 11368818,
+    "dual_verification_work_reserve": 1938786,
+    "eliminated_variables_restored": 161,
+    "external_seconds": 1200,
+    "full_original_equations_and_three_PSD_matrices_verified": true,
+    "independent_receipt_sha256": "53572cbc8c743b775cd815f0c09ca8e02e460891acd19c0ec761dac81ba0bccc",
+    "leaf_total_work_proxy": 221726381,
+    "new_floating_search": false,
+    "original_rows": 1380,
+    "original_variables": 703,
+    "remaining_native_rows_after_compression": 731,
+    "remaining_native_work_proxy": 214741484,
+    "remaining_rows": 1219,
+    "remaining_variables": 542,
+    "result_sha256": "8b0017e969b3969ca24217ed3364c365af12ef8f1c5c369bdc195288be9f210f",
+    "same_cone": true,
+    "same_saved_support_count": 703,
+    "source_count": 83,
+    "status": "exact_separator",
+    "target_pairing": "-1",
+    "tests_passed": 32,
+    "total_memory_bytes": 6442450944,
+    "total_work_proxy": 263144885,
+    "work_limit": 450000000,
+    "worker_memory_bytes": 6442450944
+  },
+  "next_action": "use the admitted storage-cone separator to diagnose missing arithmetic constraints or a structurally different coefficient/state law",
+  "original_target_and_all_scalar_sources_preserved": true,
+  "previous_research_publication": "publication-007",
+  "prior_manifests": {
+    "publication-003": {
+      "bound_files": 259,
+      "manifest_sha256": "db773650eed360d6120fe73e0d6476c7d8da769c7430698d0124c28beee39306"
+    },
+    "publication-004": {
+      "bound_files": 343,
+      "manifest_sha256": "c2ceffb9c79d7a24c59022e0e9c9eefaadec50c57f5f472edbb173e597ec6fbb"
+    },
+    "publication-005": {
+      "bound_files": 263,
+      "manifest_sha256": "16d6df8e48f9ce3998550e46292fe1a0767187b38e9ad08c1b150fe34e9ae256"
+    },
+    "publication-006": {
+      "bound_files": 319,
+      "manifest_sha256": "dfa39dbd4f2a7ed189ba28701baae0cbc247786d8a8775826e985240ae21e4c8"
+    },
+    "publication-007": {
+      "bound_files": 401,
+      "manifest_sha256": "dda8d1cdcba8fbb4c0e385217ff7a66acb28cce39c4ab4819c9243a64fe855f9"
+    },
+    "resource-publication-001": {
+      "bound_files": 244,
+      "manifest_sha256": "fba4bf90611afbeacd15ccf42ea971f56d220bdb1617e8243dbc3c0e7ae8a79b"
+    }
+  },
+  "redundancy_is_exact_not_source_truncation": true,
+  "restricted_dual_redundant_cross_equations": 91,
+  "schema": 8,
+  "scope_note_sha256": "cacf85f40e8ca95a2b59c7fec39b20e2cb0c52698ea23d5785894f56f2f2fcde",
+  "signed_increment": "child minus four parent",
+  "source_count": 83,
+  "storage_is_nonnegative_SOS": false,
+  "tests_passed": 38,
+  "uniform_innovation_bound_proved": false,
+  "uniform_recovery_is_conditional": true
+}

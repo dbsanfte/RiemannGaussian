@@ -1,0 +1,397 @@
+SIGNED PRIME ORBITS, EXCHANGE TRANSPORT, AND COMPLETE JOINED COST 072
+=================================================================
+
+Scope
+-----
+This source-only review reads MOBIUS_MOMENT_SCALE_HANDOFF.txt,
+MOBIUS_MOMENT_SCALE_REVIEW_071.txt, DETECTOR_INDEPENDENCE_HANDOFF.md,
+and, at the root's request, SPARSE_HEAD_MECHANISM_REVIEW_067.txt.
+It inspects no scientific072 result, old study/suite, hash, or other file;
+it runs no experiment and writes only this file. No subagent is used.
+The fixed-prime positive-price obstruction was already proved in067.
+Its extension to arbitrary exchange transport below is the new scoped
+statement, rather than a rediscovery of the fixed-prime statement.
+
+The main results are an exact component-optimal transport lemma, an
+exact no-gain theorem for single-prime matchings on the admitted source,
+a concrete disjoint exchange gain, a growing-scope survivor estimate,
+and a complete graph-energy transfer with a paid diagonal. None closes
+the signed cross-component leaf, the joined J estimate, or RH.
+
+1. Preserve the actual source and the complete remainder
+-------------------------------------------------------
+For the original joined source keep, literally,
+
+ k_j(n)=g(jn)-g((j+1)n),
+ z_j=sum_n mu(n) k_j(n), c_j=d_j+z_j,
+ J_j=z_j+b_j H_mu(u_j)H_mu(v_j).                    (1)
+
+Thus a complete z-head theorem pays the actual c head after adding
+sum_j|d_j|, and it pays J after adding the full separable moment price.
+Conversely a complete J theorem pays z after the same addition. This
+is a triangle equivalence up to a paid term, not a new cancellation rule.
+The071 price, including its C^2 term, auxiliary Mertens hypotheses and
+all rank bases, must be retained if this conversion is used.
+
+Ordinary mu is shared by every row, channel and orbit. The unit has
+mu(1)=1; squareful integers have value zero. Kernels are joined before
+every norm. There is no deletion of reciprocal rectangle terms with
+ab>R: the passage to (1) uses the complete identity already proved071.
+Direct atoms can be added to k_j(1), but keeping sum_j|d_j| as a separate
+paid term is simpler and avoids a hidden direct-atom cross term.
+
+For N=15k,y=16k,p=3,q=5,r=1,j=1, k a positive integer,
+
+ w(n)=1_(8k,10k](n)-1_(16k,20k](n), d_1=0,b_1=-2k,
+ z_1=M(10k)-M(8k)-M(20k)+M(16k),
+ J_1=z_1-2k H_mu(u_1)H_mu(v_1).                   (2)
+
+For fixed admissible sublinear cuts the short branches vanish eventually.
+All results below apply to this complete z_1 and hence to its actual J
+with the explicit additional separable cost in(2).
+
+2. Exact finite prime block and shared-head robust prices
+-------------------------------------------------------
+Let S be a finite set of distinct primes and P=product_(p in S)p.
+Extend every kernel by zero beyond its declared support. Every squarefree
+n has a unique representation n=md, d|P, gcd(m,P)=1; mu(n)=mu(m)mu(d).
+Squareful terms are zero. Therefore
+
+ B_j(m)=sum_(d|P)mu(d)k_j(dm),
+ z_j=sum_(gcd(m,P)=1)mu(m)B_j(m).                 (3)
+
+This proves the requested identity with full support, including m=1,
+outside primes, and divisors whose arguments lie outside support.
+The squarefree-coprime absolute price
+
+ U=sum_(j in head,m:gcd(m,P)=1)mu(m)^2|B_j(m)|     (4)
+
+is a valid complete z-head price. Replacing mu(m)^2 by1 is also valid
+and does not require an arithmetic mask in the producer.
+
+For shared signs, (4) need not be the best robust vector price. For a
+finite set A of unresolved squarefree anchors, vectors v_a=(B_j(a))_j,
+and a known vector q (unit, direct atoms, and any separately certified
+anchors), the exact sign-relaxation price is
+
+ sup_(epsilon_a=+/-1)||q+sum_a epsilon_a v_a||_1
+ =max_(eta_j=+/-1)[eta.q+sum_a|eta.v_a|].          (5)
+
+Proof: ||x||_1=max_eta eta.x, and the two finite maxima commute.
+One shared epsilon_a is used across the entire head. Allowing separate
+epsilon_(j,a) instead gives the weaker rowwise triangle price. Formula
+(5) is sharp for this sign relaxation; it is not a claim that actual
+outside-prime Mobius values attain every relaxed sign assignment.
+Known anchors must stay inside q, rather than being granted free signs.
+
+For one row, the sharp relaxed price is |q|+sum_a|B(a)|. In particular
+the known unit does not remove an unresolved absolute survivor. Knowledge
+that all prime anchors have sign -1 may aggregate their contributions
+into q; for(2) all top-band prime contributions have the same sign, so
+this does not reduce the isolated top-band contribution's absolute cost.
+
+3. General squarefree exchange graph and exact transport lemma
+--------------------------------------------------------------
+An admissible edge joins u=am and v=bm, where a,b are coprime squarefree
+positive integers and gcd(m,ab)=1. The multiplier factorizations certify
+s=mu(a)mu(b) in{+1,-1}, and the exact identity is
+
+ mu(u)=s mu(v).                                  (6)
+
+It remains true when m is squareful: both sides are zero. One may discard
+such vertices using a separately checked squarefree mask, or retain them
+with a weaker unweighted price. No actual mu(n) table is needed to check
+the local relation; however multiplier factorization and squarefree
+mask access are arithmetic inputs and must be charged/provenanced.
+Cycle signs are consistent even on unmasked vertices: the distinct-prime
+count omega(am)=omega(a)+omega(m) under the stated coprimality condition,
+so edge signs equal the ratio of the formal labels(-1)^omega(n). This
+is an algebraic justification, not permission to evaluate all global
+vertex labels without charging the associated arithmetic access.
+
+Take any finite graph of these edges on squarefree integers, allowing
+zero-kernel intermediate vertices. On each connected component C choose
+an anchor a_C. Edge signs are globally consistent: a product of edge
+signs around any cycle is1, by(6) and nonzero mu on squarefree vertices.
+Hence a checker can assign labels l_n in{+1,-1}, l_(a_C)=1, satisfying
+mu(n)=l_n mu(a_C), without querying mu(a_C). Define
+
+ V_(j,C)=sum_(n in C) l_n k_j(n).
+ z_j=sum_C mu(a_C)V_(j,C).                       (7)
+
+Unmatched vertices are singleton components. Arbitrary edge capacities
+or disjoint matching constraints restrict the available graph further;
+they do not change(7) for any genuinely established component relations.
+
+Transport lemma. For a scalar kernel on this finite graph, allow arbitrary
+real flows along the annihilator columns e_u-s e_v and price the remaining
+coefficient vector by its l1 norm. The minimum residual price is exactly
+
+                       sum_C |V_C|.              (8)
+
+Proof: every annihilator has zero l-labelled sum in its component, so
+sum_(n in C)|residual_n|>=|sum_(n in C)l_n residual_n|=|V_C|.
+A spanning tree transfers all coefficients to its anchor, leaving the
+single coefficient V_C there; induction from the leaves proves attainment.
+The same proof works for each row. Capacities can prevent attainment but
+cannot beat the lower bound. This proves a precise limit for all fractional
+allocations and geometry-adaptive matchings, not only a particular greedy
+edge selection. Known anchor signs may be retained and jointly priced
+as in(5);(8) describes unsigned residual triangle, not every possible
+signed arithmetic proof.
+
+For a finite exchange dictionary let S contain EVERY prime occurring in
+ANY multiplier. Each edge preserves the outside-S part
+
+                rough_S(n)=n/gcd(n,P),            (9)
+
+on squarefree vertices. Indeed only primes of S are exchanged. Thus each
+graph component lies inside one full P divisor block. Aggregating a whole
+P block can only reduce the sum of absolute component totals. Consequently
+
+ unsigned exchange transport cost >= U_P(w),      (10)
+
+where U_P is the full-block scalar price from(4). This remains true with
+arbitrary graph paths, zero-kernel intermediates beyond the original
+support, adaptive geometry-based edge selection, and real flow weights.
+It fails if new relations connect distinct rough parts; that is precisely
+the additional arithmetic mechanism such a stronger method must supply.
+
+4. Single-prime matching cannot improve the concrete joined source
+-----------------------------------------------------------------
+Consider any disjoint collection of admissible edges n<->pn, p prime,
+with the remaining vertices unmatched. An edge's exact contribution is
+mu(n)[w(n)-w(pn)] when p does not divide n. Its triangle cost on a
+squarefree pair is |w(n)-w(pn)|; an unmatched vertex costs |w(n)|.
+
+For(2), supported vertices of equal coefficient have ratio at most10/8
+within the lower band and20/16 within the upper band, both less than2.
+Thus no prime edge connects supported vertices of equal coefficient.
+A prime edge joining the two bands must have p=2 since20/8<3, and it
+then joins coefficient+1 to coefficient-1. For every admissible pair,
+
+              |w(n)-w(pn)|=|w(n)|+|w(pn)|.        (11)
+
+Edges with one or two zero coefficients satisfy the same equality.
+Squareful pairs contribute zero on both sides. Therefore EVERY disjoint
+single-prime matching, with optional unmatched vertices, has exactly
+the initial price sum_n mu(n)^2|w(n)|. Selection from floor geometry,
+varying the prime from edge to edge, and optimizing capacities cannot
+improve that cost. Prime2 reinforces the signed target rather than
+canceling it. This theorem is more specific than067's fixed-P barrier.
+
+It is scoped to disjoint pair pricing. Composing several primes into a
+larger component permits rational exchange ratios and is covered by(8),
+not by the exact equality(11).
+
+5. Concrete disjoint exchange cancellation with a uniform count law
+-------------------------------------------------------------------
+The following two edge families are genuinely different from prime
+involutions and can be selected using geometry alone:
+
+ 3m<->5m, 16k/5<m<=10k/3, gcd(m,15)=1;
+ 3m<->7m,  8k/3<m<=20k/7, gcd(m,21)=1.           (12)
+
+In each family the first vertex has coefficient+1 and the second has
+coefficient-1. Both multipliers have Mobius value-1, so(6) gives equal
+vertex signs and the two contributions cancel exactly. Within a family
+all endpoints are distinct. Across the two families, the lower endpoints
+lie respectively in(48k/5,10k] and(8k,60k/7], which are disjoint, and the
+upper endpoints lie in(16k,50k/3] and(56k/3,20k], also disjoint. Thus the
+two families together are an admissible matching without any capacity
+overlap. Squareful m give zero endpoints and are retained as zeros.
+
+Let Q_P(A,B) count squarefree m in(A,B] coprime to P. The exact matched
+price is
+
+ sum_n mu(n)^2|w(n)|
+ -2 Q_15(16k/5,10k/3)-2 Q_21(8k/3,20k/7).        (13)
+
+This is a valid uniform source rule, not an arithmetic fit to finite mu
+values. It produces a constant-factor saving, not a square-root theorem.
+
+For completeness an elementary count law, useful also for growing scope,
+is proved here. Write s=omega(P),
+
+ delta_P=(6/pi^2) product_(p|P) p/(p+1).
+
+For any real X>=1,
+
+ |Q_P(0,X)-delta_P X| <= (2^s+2)sqrt(X).          (14)
+
+To prove it, use mu(n)^2=sum_(d^2|n)mu(d) and the exact coprime count
+sum_(e|P)mu(e)floor(Y/e). This latter differs from Y phi(P)/P by at most
+2^s. Restrict d<=sqrt(X), gcd(d,P)=1. The errors sum to at most
+2^s sqrt(X). Extending sum mu(d)/d^2 to infinity costs at most2sqrt(X)
+(the bound sum_(d>floor sqrt(X))d^-2<=2/sqrt(X) suffices). Its absolutely
+convergent Euler product equals delta_P/(phi(P)/P), establishing(14).
+The identity sum n^-2=pi^2/6 only normalizes this positive product; the
+proof also works with that series left unevaluated.
+
+Subtracting two versions of(14) proves an interval error no larger than
+(2^s+2)(sqrt(A)+sqrt(B)). Applying it to(13), the two savings have leading
+coefficients respectively k/pi^2 and3k/(2pi^2). The baseline has leading
+coefficient36k/pi^2. Thus(13) gives leading price67k/(2pi^2)+O(sqrt(k)),
+compared with36k/pi^2+O(sqrt(k)). These constants are analytical outputs
+of the declared exchange families, not observed scientific072 results.
+This finite dictionary improves a price while retaining a linear rate.
+
+6. Fixed and growing multiplier scope: survivor and rank costs
+-------------------------------------------------------------
+For every finite P, full-block B(m)=-1 when16k<m<=20k: the d=1 term is
+-1, and every d>=2 has dm>20k and coefficient zero. Therefore(10) implies
+
+ exchange triangle price >= Q_P(16k,20k)
+ >=4k delta_P-(2^s+2)(sqrt(16k)+sqrt(20k)).        (15)
+
+For fixed P this is linear. This recovers the067 obstruction as the
+special full-block case and EXTENDS it to every fixed exchange dictionary,
+including all geometry-adaptive transport plans over that dictionary.
+The constants belong to the entire dictionary prime scope; they cannot
+be presented as independent of a growing S.
+
+Equation(15) is nevertheless a uniform growing-s estimate. Since
+p/(p+1)>=2/3 for every prime,
+
+ delta_P>=(6/pi^2)(2/3)^s.                        (16)
+
+For example if s<=c log(k) with c<1/(2 log3), the ratio of the error in
+(15) to its displayed main lower bound tends to zero, uniformly over
+the choice of those s primes. The surviving price is then at least a
+positive constant times k^(1-c log(3/2)). This exponent exceeds1/2.
+The statement is unconditional and explicitly counts scope, rather than
+reusing a fixed-P asymptotic at growing P. Larger scopes lie outside this
+estimate's effective regime; failure of the estimate proves no gain.
+
+There is a separate large-prime survivor, independent of block size.
+If every dictionary multiplier is <=L<16k, then its prime factors are
+<=L. Every prime n in(16k,20k] is an outside-S anchor and gives B(n)=-1.
+Thus the absolute component price is at least
+
+                       pi(20k)-pi(16k).           (17)
+
+With the explicitly imported premise pi(20k)-pi(16k)>=c k/log(k),
+as supplied by the prime number theorem for large k, this rules out any
+O(k^(1/2+epsilon)) unsigned component price for epsilon<1/2 when L<16k.
+This review does not prove or require that external prime-counting
+premise for its unconditional claims(11),(13),(15),(16). Formula(17)
+itself is exact without the premise. Treating prime signs as known merely
+aggregates their positive contribution; cancellation against other rough
+components would require a signed control beyond component triangle.
+
+Small multiplier rank does NOT imply small anchor rank. The surviving
+anchors in(15),(17) are at the current radius20k. Even an edge am<->bm
+with a,b small can involve m of order k; its identity licenses the sign
+relation, not a smaller-rank Mobius premise on that anchor. If multipliers
+reach order k to absorb such primes, their factorization/primality scope
+has itself reached the current rank. The same common-rank and base audit
+as071 remains necessary.
+
+A full P block has2^s formal divisor terms, although support pruning can
+reduce active terms. This is a grammar/evaluation charge, not an automatic
+lower bound on every possible implementation. The dictionary, all graph
+vertices/edges used, exact factorization certificates, capacity checks,
+support extensions, and shared-vector price algorithm must have explicit
+costs. One cannot substitute s alone for maximum arithmetic query radius.
+
+At the opposite extreme, prime division edges for every needed prime,
+with all squarefree vertices through radius R present, connect every such
+vertex to1. Its label is then mu(n), and(7) has a single known anchor with
+V_j=z_j. Thus complete-scope transport reconstructs the exact target even
+without receiving a mu table. This is the orbit analogue of070's complete
+ideal correction, not an independent uniform growth theorem.
+
+7. A different composable reduction: graph-aggregated signed energy
+-------------------------------------------------------------------
+Transport can be used without taking an unsigned component triangle.
+Here is a complete conditional transfer whose diagonal is uniformly paid.
+Use one finite valid exchange graph common to a dyadic row block I,
+and retain the actual shared anchor signs t_C=mu(a_C). After discarding
+only certified squareful components, define
+
+ D_I^G=sum_C sum_(j in I)V_(j,C)^2,
+ C_I^G=sum_(C!=C')t_C t_(C')sum_(j in I)V_(j,C)V_(j,C').
+
+Expanding actual squares gives exactly
+
+             sum_(j in I)z_j^2=D_I^G+C_I^G>=0.    (18)
+
+All ordered cross pairs are included. If the graph is built without a
+squarefree mask, use the exact diagonal with t_C^2 and bound it above by
+the same unsigned D_I^G; squareful components and their cross terms have
+actual coefficient zero. No independent copies of signs are introduced.
+
+Let Q bound, for every row and component, the number of vertices in that
+component on which k_j is nonzero. Zero-kernel intermediates do not count.
+Cauchy-Schwarz within each component proves
+
+ D_I^G<=Q sum_(j in I,n)squarefree(n) k_j(n)^2
+       <=Q D_I^original<=4Q M1/L                 (19)
+
+for I subset[L,2L-1], using067's actual-source diagonal theorem. The
+squarefree mask in the middle line is1 or0, not an independent arithmetic
+copy. For unmasked graphs the weaker all-n sum gives the same final
+bound from067's proof. Q may be replaced by the exact row/component
+occupancies inside the sum when that finer source norm is proved.
+The displayed coefficient4 uses the admitted nonnegative r<=1 range.
+For a different nonnegative bounded r, replace4 by2(1+r), as follows
+directly from |k_j(n)|<=2(1+r) and quotient telescoping. Parameter
+dependence of M1 and D is retained; p or q varying cannot silently be
+absorbed into a universal N-only constant.
+
+Partition the head into B dyadic row blocks, each starting at L and of
+size at most L. Let Q_I be its declared occupancy cap. From(18),(19),
+the COMPLETE original head obeys
+
+ sum_head |c_j|
+ <=sum_head|d_j|+2 sqrt(M1) sum_I sqrt(Q_I)
+   +sum_I sqrt(|I| max(C_I^G,0)).                 (20)
+
+Proof: rowwise Cauchy bounds a block's l1 by the square root of its size
+times its actual energy; sqrt(x+y)<=sqrt(x)+sqrt(max(y,0)) for x>=0 and
+x+y>=0 then separates its paid diagonal and its signed cross risk.
+For a fixed registered source M1=O(N log(2N)), B=O(log(2N)). If all
+Q_I are polylogarithmic, the paid part is O(sqrt(N) polylog(N)). If
+Q_I<=N^delta, its explicit exponent is(1+delta)/2, with the usual cofinal
+delta/epsilon quantifiers required for every-epsilon transfer. For a
+whole P block Q<=2^s, giving explicit diagonal inflation2^(s/2).
+
+Equation(20) is a meaningful new modular reduction: geometry-adaptive
+local exact cancellation can alter cross-component kernels while the
+entire diagonal has a proved cost. It avoids claiming that(13)'s linear
+absolute residual is already small. The precise unclosed leaf is the
+last sum in(20), with actual current-rank shared anchor signs. A useful
+detector output must prove its uniform bound or a signed recurrence
+controlling it. Evaluating its finite value, assuming independent signs,
+or dropping it repeats the existing target rather than pays it.
+
+This is closely related to067's signed off-diagonal route, but it applies
+after detector-chosen arithmetic exchanges and tracks the resulting
+diagonal inflation. It is not claimed as a new unconditional signed
+estimate. If graph selection uses actual mu or cross-risk evaluation,
+that data must be evaluator-only unless the adaptive protocol explicitly
+licenses it; a finite selection gain then still needs a uniform theorem.
+
+8. Admission conditions and disposition
+---------------------------------------
+A geometry-only exchange search can honestly discover a matching or
+transport rule, verify its exact identities and capacities, and produce
+a reusable paid constant-factor gain such as(13). It cannot claim a new
+sublinear growth law merely from an optimal finite transport cost.
+Any all-scale claim must specify the dictionary as a function of source
+parameters, certify every edge's coprimality and factorization, retain
+unmatched vertices and zero extensions, prove its source norm bound,
+pay growing arithmetic rank and construction costs, and keep the same
+joined kernel, shared signs, units and direct atoms.
+
+The strongest viable result of this review is(20) with its explicit
+cross-component leaf, together with the exact exchange/component lemmas.
+For pure unsigned transport, fixed finite dictionaries are blocked on
+the actual source, single-prime disjoint matchings cannot improve it at
+all, and slowly growing prime scope still leaves the quantitative
+survivor(15). Larger multiplier scope may compute the complete target;
+that extreme must be distinguished from a new uniform inequality.
+Bounding the actual J or complete c still requires signed control across
+the remaining current-rank anchors, plus the explicitly paid071 moment
+term if translating to J. No uniform Mertens invariant or RH theorem has
+been proved here.

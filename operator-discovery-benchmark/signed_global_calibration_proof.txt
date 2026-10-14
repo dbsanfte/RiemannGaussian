@@ -1,0 +1,57 @@
+IMPORTED SIGNED MOBIUS CONTROL WITH AN INDEPENDENT COMPLETE FINITE PATCH
+
+Named dependency: Ramare and Zuniga Alterman, arXiv:2408.05969v2,
+Theorem 1.1 (statement on page 1, proof in section 7). For every real
+x>=T=1798118 it gives |M(x)| <= (0.006688 log x-0.039)x/log(x)^2.
+We use the weaker consequence |M(x)|<=c*x/log x, c=6688/1000000.
+The pinned source PDF and this external theorem are explicit proof
+dependencies. The external analytic proof and its prime estimates are NOT
+independently re-proved by the detector. This is an imported calibration,
+not discovery of that theorem or new independent prime information.
+
+The producer infers C from |M(n)| log(e+n)/n for training n=1..1024,
+rounding upward on a declared rational grid. The independent proof backend
+then computes every actual mu(n) and M(n) through T and checks M(n)^2<=n.
+No estimate beyond this finite prefix follows from that check alone.
+
+Write f(x)=x/log(e+x). For n>=4, log(e+n)<=sqrt(n): it holds at four,
+and the derivative of sqrt(x)-log(e+x) is positive since
+e+x-2sqrt(x)=(sqrt(x)-1)^2+e-1>0. Thus the finite square-root check implies
+|M(n)|<=f(n) for 4<=n<=T. Cases n=1,2,3 are checked directly; C is
+required to cover them and to be >=1.
+
+For n>=T, log(e+n)=log n+log(1+e/n)<=log n+e/n. Consequently the
+imported bound is <=C f(n) whenever C>=c*(1+e/(T log T)). Native real
+balls check this constant inequality. Together the two scopes cover
+every integer n>=1, with no unexamined gap at the threshold.
+
+The function f is concave on [0,infinity). Its second derivative has
+the sign of N(x)=x*(2-log(e+x))-2e*log(e+x). Put y=x/e. Then
+N(x)/e=y*(1-log(1+y))-2*(1+log(1+y)), whose derivative is
+-log(1+y)-1/(1+y)<0 and whose value at zero is -2. Also f(0)=0.
+Convexity of absolute value and concavity of f extend the integer bound
+to the linear interpolation: |M_tilde(t)|<=C*t/log(e+t) for every t>=0.
+
+For a finite signed scale polynomial R=sum_j c_j M_tilde(t/d_j),
+d_j>=1, we obtain the global signed estimate
+|R(t)|<=K*t/log(e+t),
+K=C sum_j |c_j|*(1+log d_j)/d_j.
+Indeed e+t<=d_j*(e+t/d_j), and log(e+t/d_j)>=1. The arithmetic signs
+of mu were controlled by the imported M theorem before the final triangle
+bound. This is not an extra cancellation estimate among filter terms.
+
+For every positive rational q and every real X>=1,
+integral_X^(2X)|R(t)|^q dt <= (2K)^q X^(q+1)/log(e+X)^q.
+This universal moment certificate is below the RH exponent q/2+1.
+It provides genuine all-scale signed o(t) control, with a named external
+dependency, but does not prove an RH-sufficient signed estimate.
+
+For the all-positive coefficient control M(t)=t, the logarithmic claim
+fails once log(e+t)>C. For the delayed-positive control, the cumulative
+sum is eventually t+constant and the same uniform claim is false.
+Any source filter with nonzero sum_j c_j/d_j preserves that linear growth.
+Finite matches cannot promote either control to a universal signed bound.
+
+Historical priority is not an acceptance gate. The RH objective remains
+open. The all-scale scope here relies on the imported theorem, not solely
+on the independent finite computations or the source PDF's fingerprint.

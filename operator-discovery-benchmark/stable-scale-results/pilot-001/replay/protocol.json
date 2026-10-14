@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "seed": 2026100753,
+  "objective": "RH-relevant signed arithmetic operators and full recovery costs, without triangle-contraction projection",
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9"
+  },
+  "bases": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    9
+  ],
+  "maximum_degree": 4,
+  "orders": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "training_scales": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048,
+    3072,
+    4096
+  ],
+  "validation_scales": [
+    6144,
+    8192,
+    12289,
+    16384,
+    24577,
+    32768,
+    49157,
+    65536
+  ],
+  "random_rational_budget": 128,
+  "signed_product_budget": 96,
+  "learned_composition_budget": 24,
+  "coefficient_rounding_denominator": 256,
+  "coefficient_resource_cap": 32,
+  "development_cells_per_window": 24,
+  "generation": "exact weighted least squares; unrestricted signed rationals; products of sampled signed factors; reuse low training-energy polynomials",
+  "promotion": "within each base, choose four polynomials of least training response energy; seeded products form reusable compositions before validation",
+  "no_stability_projection": true,
+  "unsupported_candidates_retained": true,
+  "inverse_prefix_length": 64,
+  "certificate": "exact rational Schur disk recursion at four predetermined outer radii, reciprocal prefix plus a Cauchy tail",
+  "growth_inference": "training OLS slopes plus declared margin, rational upward rounding; no nominated exponent formula",
+  "score_anchor": 1073741824,
+  "selection": "baseline; best full-cost candidate in each construction family; one outside triangle domain if available; one unsupported candidate; fill by full-cost score",
+  "archive_size": 8,
+  "precision": 352,
+  "final_cases": {
+    "large_count": 4,
+    "large_range": [
+      131073,
+      499999
+    ],
+    "intermediate_count": 3,
+    "intermediate_range": [
+      17,
+      8191
+    ],
+    "boundary": [
+      1,
+      2,
+      3,
+      15
+    ]
+  },
+  "negative_control_cells_per_window": 24,
+  "maximum_final_cutoff": 999998,
+  "final_scope": "actual Mobius moments are exact complete windows; delayed-positive controls are labelled sampled cells; all-positive moments are analytic exact integrals",
+  "coefficient_source": "constant-one Dirichlet inversion, no prime or factor oracle",
+  "generator_model_literature_network_access": false,
+  "historical_priority_is_acceptance_gate": false,
+  "remaining_assumptions": [
+    "constant-coefficient linear scale polynomials of degree<=4",
+    "six integer bases",
+    "moments through order eight",
+    "available disk certificate backend"
+  ],
+  "uniform_sublinear_estimate_proved": false
+}

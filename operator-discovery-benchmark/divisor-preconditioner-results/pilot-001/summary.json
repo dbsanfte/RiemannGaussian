@@ -1,0 +1,1638 @@
+{
+  "status": "verified_divisor_preconditioning_with_retained_signed_arithmetic",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/divisor-preconditioner-results/pilot-001",
+  "logarithmic_orders": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5/2"
+  ],
+  "all_positive_rational_log_orders_supported": true,
+  "semantic_denominator_cap": false,
+  "integer_global_signed_certificates": 4,
+  "global_signed_certificate_records": {
+    "1": {
+      "kind": "completed_divisor_antiderivative",
+      "order": 1,
+      "polynomial_coefficients": [
+        "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "constant_term": "[-1.577215664901532860606512090082402431042159335939923598805767234884867726777664670937 +/- 5.30e-86]",
+      "gamma_constants": [
+        "[0.5772156649015328606065120900824024310421593359399235988057672348848677267776646709369 +/- 4.71e-86]"
+      ],
+      "harmonic_error_constants": [
+        "2"
+      ],
+      "dilated_harmonic_error_constants": [
+        "2"
+      ],
+      "residual_constant": 7,
+      "divisor_norm_constant": 4,
+      "signed_error_constant": 28,
+      "residual_bound": "|R_k(y)|<=C_R*(1+log y)^k for every real y>=1",
+      "signed_error_bound": "|sum_(n<=x) lambda_k(n)-h_k(x)|<=C*x for every real x>=1",
+      "h_semantics": "x*P(log x)+b for x>=1, zero below one",
+      "exact_rewrite": "sum lambda_k = h_k + sum_(d<=x) mu(d)*R_k(x/d)",
+      "inverse_applied_before_absolute_envelope": true,
+      "actual_mobius_remainder_retained": true,
+      "arithmetic_model": "inverse_one",
+      "global_signed_premise_proved": true,
+      "ordinary_zeta_erased": false,
+      "ordinary_exponent": "1",
+      "RH_strength": false,
+      "first_derivative_recovers_every_ordinary_zero": true,
+      "higher_derivative_zero_recovery_is_unproved": false,
+      "historical_priority_is_acceptance_gate": false,
+      "named_calibration": "integer generalized von Mangoldt/Selberg identities"
+    },
+    "2": {
+      "kind": "completed_divisor_antiderivative",
+      "order": 2,
+      "polynomial_coefficients": [
+        "[-3.154431329803065721213024180164804862084318671879847197611534469769735453555329341874 +/- 1.06e-85]",
+        "2.000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "constant_term": "[3.675155486451149620128603701125490677127680275710430778715188026291464173803819711440 +/- 2.47e-85]",
+      "gamma_constants": [
+        "[0.5772156649015328606065120900824024310421593359399235988057672348848677267776646709369 +/- 4.71e-86]",
+        "[-0.07281584548367672486058637587490131913773633833433795259900655974140143357151148487809 +/- 3.08e-87]"
+      ],
+      "harmonic_error_constants": [
+        "2",
+        "4"
+      ],
+      "dilated_harmonic_error_constants": [
+        "2",
+        "6"
+      ],
+      "residual_constant": 26,
+      "divisor_norm_constant": 10,
+      "signed_error_constant": 260,
+      "residual_bound": "|R_k(y)|<=C_R*(1+log y)^k for every real y>=1",
+      "signed_error_bound": "|sum_(n<=x) lambda_k(n)-h_k(x)|<=C*x for every real x>=1",
+      "h_semantics": "x*P(log x)+b for x>=1, zero below one",
+      "exact_rewrite": "sum lambda_k = h_k + sum_(d<=x) mu(d)*R_k(x/d)",
+      "inverse_applied_before_absolute_envelope": true,
+      "actual_mobius_remainder_retained": true,
+      "arithmetic_model": "inverse_one",
+      "global_signed_premise_proved": true,
+      "ordinary_zeta_erased": false,
+      "ordinary_exponent": "1",
+      "RH_strength": false,
+      "first_derivative_recovers_every_ordinary_zero": false,
+      "higher_derivative_zero_recovery_is_unproved": true,
+      "historical_priority_is_acceptance_gate": false,
+      "named_calibration": "integer generalized von Mangoldt/Selberg identities"
+    },
+    "3": {
+      "kind": "completed_divisor_antiderivative",
+      "order": 3,
+      "polynomial_coefficients": [
+        "[11.02546645935344886038581110337647203138304082713129233614556407887439252141145913432 +/- 7.41e-85]",
+        "[-9.463293989409197163639072540494414586252956015639541592834603409309206360665988025622 +/- 3.18e-85]",
+        "3.000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "constant_term": "[-11.64592311070720657037381990265579808748519003429786507432603063331317134564016710346 +/- 2.68e-84]",
+      "gamma_constants": [
+        "[0.5772156649015328606065120900824024310421593359399235988057672348848677267776646709369 +/- 4.71e-86]",
+        "[-0.07281584548367672486058637587490131913773633833433795259900655974140143357151148487809 +/- 3.08e-87]",
+        "[-0.009690363192872318484530386035212529359065806101340749880701365451850755382280414171978 +/- 1.98e-88]"
+      ],
+      "harmonic_error_constants": [
+        "2",
+        "4",
+        "10"
+      ],
+      "dilated_harmonic_error_constants": [
+        "2",
+        "6",
+        "20"
+      ],
+      "residual_constant": 159,
+      "divisor_norm_constant": 32,
+      "signed_error_constant": 5088,
+      "residual_bound": "|R_k(y)|<=C_R*(1+log y)^k for every real y>=1",
+      "signed_error_bound": "|sum_(n<=x) lambda_k(n)-h_k(x)|<=C*x for every real x>=1",
+      "h_semantics": "x*P(log x)+b for x>=1, zero below one",
+      "exact_rewrite": "sum lambda_k = h_k + sum_(d<=x) mu(d)*R_k(x/d)",
+      "inverse_applied_before_absolute_envelope": true,
+      "actual_mobius_remainder_retained": true,
+      "arithmetic_model": "inverse_one",
+      "global_signed_premise_proved": true,
+      "ordinary_zeta_erased": false,
+      "ordinary_exponent": "1",
+      "RH_strength": false,
+      "first_derivative_recovers_every_ordinary_zero": false,
+      "higher_derivative_zero_recovery_is_unproved": true,
+      "historical_priority_is_acceptance_gate": false,
+      "named_calibration": "integer generalized von Mangoldt/Selberg identities"
+    },
+    "4": {
+      "kind": "completed_divisor_antiderivative",
+      "order": 4,
+      "polynomial_coefficients": [
+        "[-46.58369244282882628149527961062319234994076013719146029730412253325268538256066841383 +/- 7.18e-85]",
+        "[44.10186583741379544154324441350588812553216330852516934458225631549757008564583653728 +/- 2.97e-84]",
+        "[-18.92658797881839432727814508098882917250591203127908318566920681861841272133197605124 +/- 3.37e-84]",
+        "4.000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "constant_term": "[47.50233218476160027467700266436636101300994069366104458250780236992597501190536607733 +/- 3.31e-84]",
+      "gamma_constants": [
+        "[0.5772156649015328606065120900824024310421593359399235988057672348848677267776646709369 +/- 4.71e-86]",
+        "[-0.07281584548367672486058637587490131913773633833433795259900655974140143357151148487809 +/- 3.08e-87]",
+        "[-0.009690363192872318484530386035212529359065806101340749880701365451850755382280414171978 +/- 1.98e-88]",
+        "[0.002053834420303345866160046542753384285715804445410618245481483336913834492112970053571 +/- 4.43e-88]"
+      ],
+      "harmonic_error_constants": [
+        "2",
+        "4",
+        "10",
+        "32"
+      ],
+      "dilated_harmonic_error_constants": [
+        "2",
+        "6",
+        "20",
+        "76"
+      ],
+      "residual_constant": 1114,
+      "divisor_norm_constant": 130,
+      "signed_error_constant": 144820,
+      "residual_bound": "|R_k(y)|<=C_R*(1+log y)^k for every real y>=1",
+      "signed_error_bound": "|sum_(n<=x) lambda_k(n)-h_k(x)|<=C*x for every real x>=1",
+      "h_semantics": "x*P(log x)+b for x>=1, zero below one",
+      "exact_rewrite": "sum lambda_k = h_k + sum_(d<=x) mu(d)*R_k(x/d)",
+      "inverse_applied_before_absolute_envelope": true,
+      "actual_mobius_remainder_retained": true,
+      "arithmetic_model": "inverse_one",
+      "global_signed_premise_proved": true,
+      "ordinary_zeta_erased": false,
+      "ordinary_exponent": "1",
+      "RH_strength": false,
+      "first_derivative_recovers_every_ordinary_zero": false,
+      "higher_derivative_zero_recovery_is_unproved": true,
+      "historical_priority_is_acceptance_gate": false,
+      "named_calibration": "integer generalized von Mangoldt/Selberg identities"
+    }
+  },
+  "anonymous_learned_preconditioner_proposals": 20,
+  "completed_new_candidate_promotions": 4,
+  "learned_universal_bell_relations": 4,
+  "bell_relation_records": {
+    "1": {
+      "monomials": [
+        [
+          0
+        ]
+      ],
+      "coefficients": [
+        "1"
+      ],
+      "symbolic_coefficients": [
+        "1"
+      ],
+      "universal_admitted": true,
+      "names_or_expected_coefficients_supplied_to_fit": false,
+      "numeric_only_if_no_certificate": false
+    },
+    "2": {
+      "monomials": [
+        [
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "symbolic_coefficients": [
+        "1",
+        "1"
+      ],
+      "universal_admitted": true,
+      "names_or_expected_coefficients_supplied_to_fit": false,
+      "numeric_only_if_no_certificate": false
+    },
+    "3": {
+      "monomials": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "coefficients": [
+        "1",
+        "3",
+        "1"
+      ],
+      "symbolic_coefficients": [
+        "1",
+        "3",
+        "1"
+      ],
+      "universal_admitted": true,
+      "names_or_expected_coefficients_supplied_to_fit": false,
+      "numeric_only_if_no_certificate": false
+    },
+    "4": {
+      "monomials": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "coefficients": [
+        "1",
+        "6",
+        "4",
+        "3",
+        "1"
+      ],
+      "symbolic_coefficients": [
+        "1",
+        "6",
+        "4",
+        "3",
+        "1"
+      ],
+      "universal_admitted": true,
+      "names_or_expected_coefficients_supplied_to_fit": false,
+      "numeric_only_if_no_certificate": false
+    }
+  },
+  "all_index_fractional_and_integer_sign_certificates": 8,
+  "anonymous_universal_sign_signatures": 8,
+  "sign_signature_records": [
+    {
+      "anonymous_channel": "5a84adae41643d80c98fb002badbdbe29f1ab5551b90e19445a3052b4d2311e0",
+      "signature": {
+        "kind": "alternating_tail_after_threshold",
+        "threshold": 1
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "1/6",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "fea95f6e7df05a1ac9acccc06133d2a35127ca70ed72cf076f8d7daa582ba2fb",
+      "signature": {
+        "kind": "alternating_tail_after_threshold",
+        "threshold": 1
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "1/3",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "2cbe2170dec8bd42583ffd4263b36f13789e70a1c67f1a9df8dae8ea9cf93578",
+      "signature": {
+        "kind": "alternating_tail_after_threshold",
+        "threshold": 1
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            4
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "1/2",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "8d62329445c65abc4f0264389f7770257abe5c084d687e78327c64e9d18d6952",
+      "signature": {
+        "kind": "integer_zero_tail",
+        "threshold": 1
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            2,
+            3
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "1",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "2f4bfe3d2e95bc0529abca834211a104346998c21c53875558efb69e4dc5f0f7",
+      "signature": {
+        "kind": "integer_zero_tail",
+        "threshold": 2
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            3
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            3,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "2",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "0a4d2935d557a31c83d2779d0302010bcf70e637622e22c8ebc6939c4291725c",
+      "signature": {
+        "kind": "integer_zero_tail",
+        "threshold": 3
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            3
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "3",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "afa560457646ca330d7fad1d6420bd1ae543a56fe00efe918409664285286be6",
+      "signature": {
+        "kind": "integer_zero_tail",
+        "threshold": 4
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            5
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "4",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    },
+    {
+      "anonymous_channel": "52c32a626baf973e5d9123ef0746345ec37dfbb0e71b68c556a0bfdd9e05c99a",
+      "signature": {
+        "kind": "alternating_tail_after_threshold",
+        "threshold": 3
+      },
+      "attempts": [
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 1
+          },
+          "training_failures": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 3
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 4
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 5
+          },
+          "training_failures": [
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "integer_zero_tail",
+            "threshold": 6
+          },
+          "training_failures": [
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 0
+          },
+          "training_failures": [
+            1,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 1
+          },
+          "training_failures": [
+            2
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 2
+          },
+          "training_failures": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 3
+          },
+          "training_failures": []
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 4
+          },
+          "training_failures": [
+            4,
+            5
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 5
+          },
+          "training_failures": [
+            4
+          ]
+        },
+        {
+          "signature": {
+            "kind": "alternating_tail_after_threshold",
+            "threshold": 6
+          },
+          "training_failures": [
+            4
+          ]
+        }
+      ],
+      "decoded_order_after_fit": "5/2",
+      "universal_signature_admitted": true,
+      "inputs_contained_order_or_prime_names": false
+    }
+  ],
+  "ablation_comparison": [
+    {
+      "order": 1,
+      "primary_completed_log_loss": 0,
+      "best_ablation_log_loss": 0,
+      "same_ordinary_exponent": "1",
+      "RH_strength": false
+    },
+    {
+      "order": 2,
+      "primary_completed_log_loss": 0,
+      "best_ablation_log_loss": 1,
+      "same_ordinary_exponent": "1",
+      "RH_strength": false
+    },
+    {
+      "order": 3,
+      "primary_completed_log_loss": 0,
+      "best_ablation_log_loss": 2,
+      "same_ordinary_exponent": "1",
+      "RH_strength": false
+    },
+    {
+      "order": 4,
+      "primary_completed_log_loss": 0,
+      "best_ablation_log_loss": 3,
+      "same_ordinary_exponent": "1",
+      "RH_strength": false
+    }
+  ],
+  "completed_log_loss_improvements": 3,
+  "actual_mobius_remainder_retained": true,
+  "ordinary_zeta_erased": false,
+  "all_real_scales_integer_signed_bounds_proved": true,
+  "verified_ordinary_power": "1",
+  "verified_integer_log_loss": "0",
+  "RH_strength": false,
+  "first_jet_zero_recovery_proved": true,
+  "higher_jet_zero_recovery_unproved": true,
+  "fractional_critical_centers_and_zero_recovery_unproved": true,
+  "actual_prime_factor_support_information_for_every_integer": true,
+  "new_independent_prime_distribution_estimate": false,
+  "known_Selberg_and_generalized_von_Mangoldt_is_calibration": true,
+  "known_signed_collapse_used_only_on_preconditioned_component": true,
+  "negative_controls": {
+    "unit_type_alias_rejected": true,
+    "fractional_integer_support_alias_rejected": true,
+    "higher_derivative_RH_alias_rejected": true,
+    "incomplete_fractional_center_RH_alias_rejected": true
+  },
+  "independent_native_counts": {
+    "independent_complete_prime_difference_coefficients": 28920,
+    "independent_all_index_support_witnesses": 28920,
+    "independent_contour_harmonic_constants": 10,
+    "independent_full_Mellin_principal_coefficients": 10,
+    "independent_every_real_scale_signed_certificates": 4,
+    "independent_full_retained_remainder_terms": 69204,
+    "independent_complete_signed_rewrites_and_global_witnesses": 32,
+    "independent_original_proposal_global_bounds": 24,
+    "independent_learned_convolution_relation_witnesses": 304,
+    "independent_unrelated_generic_sequence_relations": 212,
+    "independent_fresh_generic_difference_geometries": 64
+  },
+  "verified_checks": 12,
+  "verification_sha256": "28eb46471885d4adda132dd7248af334dbaa982cf029292630eedb8a870c84d4",
+  "machine_formalized": false,
+  "not_autonomous_proof_invention": true,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false
+}

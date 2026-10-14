@@ -1,0 +1,143 @@
+EXECUTABLE WEIGHTED-HEIGHT BOUND SEARCH
+
+Current input: candidate10_weighted_height_obligation.json
+Verified study: core-weighted-height-results/pilot-001/report.json
+Generator: core_weighted_height_search.py
+Independent checker: check_core_weighted_height_search.py
+Completed runner: run_core_weighted_height_search.py (do not restart)
+Protocol: core_weighted_height_search_protocol.txt
+Reviewed rules: CORE_WEIGHTED_MOMENT_RULE_REVIEW_020.txt
+Independent mathematical review: CORE_WEIGHTED_MOMENT_SHARPNESS_REVIEW_021.txt
+
+The user asked whether the detector itself searches for core controls, or
+whether analysts/subagents are doing that work. The honest answer remains a
+mixture. Analysts supply and review general mathematical rules. The detector
+now makes executable proof choices within those rules, checks their complete
+costs, and turns unresolved estimates into precise next-search inputs. It is
+not an unrestricted analytic prover. Signed pairing, head subtraction, joint
+Gram domination and scale recurrence in the next-task list are directions for
+future executable construction search; this stage does not implement general
+proof synthesis for all of them.
+
+What this study actually searched
+--------------------------------
+The preceding moment compiler proved one complete centered A^2 E^2 component
+bound. This stage keeps the signed finite factors inside a weighted moment
+rule and explicitly separates its valid high-height range from the remaining
+low-height arithmetic estimate. It searches all 22 inherited targets, every
+rational contour with denominator <=24, every strict twisted-length fraction
+with denominator <=12, and epsilon saving fractions 1/2,1/4,1/8. A rational
+linear optimization derives the smallest common height exponent for each
+plan, subject to length and tail-cost constraints. No selected contour or
+winning source component was supplied, and no arithmetic observations enter
+the ranking.
+
+The frozen run checked 1,958 contour lines and 1,140 height plans. It proved
+two high-height auxiliary bounds, for the already controlled E^2 component
+and for E^3. It added ZERO complete source-component payments. One complete
+signed low-height Gram obligation for E^3 was generated; the higher targets
+remain open because this rule library supplies no convergent belowhalf line.
+This is a limitation of the library, not an arithmetic impossibility theorem.
+
+The run also searched 845 integer amplitude pairs in a harmonic-null dilation
+grammar. It found five normalized generic counterexample families, with
+dilations 2 through 6. Exact normalization and harmonic nullness are computed,
+not nominated answers. These families show that generic coefficient bounds
+and harmonic cancellation alone cannot improve the global low-height U cost.
+They do NOT disprove an actual Mobius bound, a prescribed physical-block
+bound, a projected-channel bound, or cancellation in the complete signed core.
+
+The new arithmetic target, exactly
+---------------------------------
+Products denote Dirichlet convolution. Put
+ A(n)=mu(n) 1_(n<=U), c=sum_(n<=U)mu(n)/n,
+ T=c delta-A, E=delta+One*T, K(n)=n^(-1/3), theta=2/3.
+For p=2,m=3 the compiler chose
+ sigma=9/20, kappa=2/9, epsilon=1/120, tau=45/2,
+ H=2 U^(45/2), B_j=A^2*T^j, j=0,1,2,3.
+For s=sigma+it define
+ F_U(s)=zeta(s+1/3) A(s)^2 [1+zeta(s)(c-A(s))]^3.
+The high-tail theorem gives
+ I_high=(1/(2pi)) integral_(|t|>=H) |F_U(s)/s|^2 dt
+       <= C_high U^(-1/16).
+The common threshold satisfies every length premise, including the longest
+polynomial U^5. The j=0 and j=1 branches are included. Constants are finite
+and independent of U,X,N; no numerical value for C_high is asserted.
+
+The missing leaf is
+ I_low=(1/(2pi)) integral_(|t|<H) |F_U(s)/s|^2 dt
+       <= C_low U^(12/5), EVERY integer U>=1.                 OPEN
+The output expands this as the full 4 by 4 Hermitian matrix of the B_j,B_k,
+with all 16 binomial contractions and all ordered integer pairs d,e. Actual
+Mobius signs, the shifted zeta weight, units and cross terms remain. A plain
+finite-polynomial Gaussian Gram or the diagonal alone cannot substitute for
+this object. Increasing tau enlarges this same compulsory low-height leaf.
+
+The generic fallback is U^(11/2), which would give physical energy exponent
+31/240 at U=floor((4X-1)^(1/24)). It does not meet the target. The generic
+counterexamples explain why a better actual arithmetic argument is needed.
+The source-specific constraint (A^2*E^3)(n)=c^3 for every n<=U is also emitted.
+It follows from mu*One=delta on that prefix. It is an exact constraint for
+future constructions, not a proof of the missing Gram inequality.
+
+Recovery and proof status
+-------------------------
+This route defines M=A(theta)^2 E(theta)^3 as an ANALYTIC residue and centers
+K*A^2*E^3 by (M/theta)J_theta, retaining J_theta(1)=1 and its opposite source
+drift. Ordinary convergence of the coefficient moment for E^3 is not inferred
+or claimed. The pole at 1 is removed in the complete E before the contour
+argument. Gaussian Perron/Mellin transfer includes the x<1 centered tail.
+
+Integer-cell averages, rather than unsupported point sampling of L2 Mellin
+functions, transfer the low and high pieces to discrete prefixes. The full
+history Hardy/Abel rules retain every earlier prefix and every channel. The
+separate integer averaging error has energy exponent -31/36 and is paid.
+The high auxiliary has the safe physical energy bound O(X^(-1/10)); the
+negative U exponent is dropped safely, not converted using an upper cutoff
+in the wrong direction. The proposed low bound would give O(1) energy.
+
+The actual source scalar for this E^3 term is +18. All 144 channel bindings
+carry its square, both parent and child with the same N=4X-1, and explicit
+safe recovery multipliers. For the first original binding, the conditional
+constant combination is
+ 10511360 C_low + 2627840 C_high + 938304 C_residue_squared.
+These are uniform symbolic theorem constants, not fitted numeric constants.
+Because the low leaf is open, NONE of this component is subtracted from the
+current full residual. The complete inherited source reduction, old paid
+components, opposite drifts, units, -e and all 144 bindings remain unchanged.
+
+The full signed core remains the first search task. The componentwise routes
+are optional approaches, not a requirement that every expanded component
+must be bounded independently. Stronger cancellation may occur in the join.
+Dependency checks reject cycles and any claimed proof depending on an open
+arithmetic leaf. The full core and RH remain OPEN.
+
+Trust base and validation
+-------------------------
+The new classical import is the twisted fourth moment for polynomials of
+length <Y^(1/4), with uniform subpower coefficient bounds. Precise provenance:
+ https://arxiv.org/html/1609.02539v1 (Introduction equation (1))
+ https://doi.org/10.1006/jnth.1995.1086 (Watt)
+Review020 derives the off-critical phase-uniform transfer using strip Poisson
+kernels and accounts for remote heights; it does not use invalid direct
+three-lines shifting of the polynomial coefficients. The classical theorem
+and reviewed analytic bridges are declared trust primitives. Python checks
+their exact applications, not a formal-assistant proof of the whole analysis.
+
+Root owned development suite: 13 tests, once, passed.
+Independent Sol 6.1 checker development suite: 19 tests, once, passed.
+Frozen suite: all 32 tests passed in isolated owner processes. No failures or
+reruns. The independent checker derives reflection costs, solves the affine
+minimum-tau constraints, obtains nullspace directions separately, and replays
+the complete signed source. Mutations cover lost branches/crosses, length and
+epsilon violations, changed source/history/unit, false ordinary convergence,
+incorrect inherited payments, circularity and false core closure.
+
+Run elapsed: 15.303 seconds. Main peak RSS: 704032 KiB.
+Main operations: 6,962,099. Inclusive operations: 42,034,325.
+Actual source observations: 0. Fitted constants: 0. Model calls in search: 0.
+Direct-byte source snapshots were used; no hashes. Published next input was
+read back and matches its immutable publication. Keep this completed study
+and all earlier studies frozen. Further work should consume the new input,
+prioritize actual signed arithmetic constructions for the open low Gram or
+the full joined core, and preserve every remaining dependency and failure.

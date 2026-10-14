@@ -1,0 +1,202 @@
+Semantic policy for a next structural potential generation
+Read-only analytical review of selected pilot001 ASTs, 2026-10-09.
+Owned addition only; frozen source and old artifacts are unchanged.
+Read selected program records and generator/selector source, not final response
+scores. No tests, new coefficient tables, fresh arithmetic scores or hashes.
+
+Purpose and conclusion
+The pilot genuinely changes parameterized state expressions. That capability
+should now be guided by semantic classification, rather than treating every
+new AST as a new signed-control mechanism. A different function remains an
+unproved candidate. Source-sensitive masks, lag energies, bounded root padding
+and dormant moving banks deserve explicit classes alongside mixed interactions.
+The proposed policy nominates next structural mutations and proof obligations;
+it establishes no complete innovation estimate or RH result.
+
+Selected ASTs, without using performance scores
+All have the complete anchored E_mu and weight1; ID0 has V=0. Write
+M(y)=sum_{1<=n<=y}mu(n), with M(0)=0. The selected state descriptions are:
+  ID4: M(floor(t/2)).
+  ID16: sum_{i<=t, i=0 mod max(2,floor(X^(1/6)))}mu(i).
+  ID61: coprime(t,max(2,floor(sqrt(X)))) times
+        [M(t)-M(floor(t/3))].
+  ID25: M(floor(t/2))*mu(floor(sqrt(t))).
+  ID26: M(floor(t/2))*mu(floor(t^(1/3))).
+  ID73: ID26 state multiplied bymu(t).
+  ID67: sum_{d<=floor(X^(1/6))}mu(d)[M(t)-M(floor(t/d))]
+        -M(floor(t^(1/6))).
+  ID42: sum_{p prime,p<=floor(X^(1/3))}M(floor(t/p)).
+In every case V(X)=X^-2 sum_{t=X}^{2X-1}U(X,t)^2. This list describes
+semantics/provenance, not validated improvements over baseline.
+
+Proof-backed square semantics
+For actual mu, mu(g)^2=1_(g squarefree). Multiplying a WHOLE state U by
+mu(g), then squaring, therefore changes its potential to a squarefree-masked
+U^2. The added mu(g) sign disappears, even when U itself depends on mu(g).
+IDs25/26 are masked lag energies; ID73 adds another squarefree mask. They
+are different potential functions, but this particular mutation adds no
+new coefficient-sign factor to the squared expression.
+
+This does NOT mean that those potentials are wholly unsigned or that masks
+are useless. M(floor(t/2))^2 already contains all signed prefix cross terms.
+A mask can change their weighting and the signed parent/child increment.
+It still needs an actual arithmetic estimate; removing the extra factor's
+sign is only a precise algebraic classification.
+
+Pointwise potential domination does not order signed innovations: subtracting
+the parent term can reverse that comparison. Thus a smaller squarefree-masked
+V is not automatically a better innovation bound or a stronger mechanism.
+
+Likewise guard(P,U)^2=1_P*U^2. ID61's guard changes where its signed square
+is counted, while the square retains the mixed term
+  -2*M(t)*M(floor(t/3)).
+The mask is not itself a new signed identity. Multiplying by a SUM inside
+a square differs from multiplying by a single point coefficient: its square
+can introduce new mixed products. In particular ID42 retains all prime-bank
+cross terms. A blanket label of sign-insensitive for every product mutation
+would be false.
+
+Generic next-generation rule: track added sign dependence RELATIVE TO THE
+parent. Classify whole-state point-coefficient multiplication as norm/mask
+reweighting when a checked norm law applies. Reserve separate mutation slots
+for placing factors within different signed summands before aggregation, or
+forming coupled state sums before squaring. Expand or symbolically describe
+their complete mixed terms, then apply only justified arithmetic reductions.
+Their mere presence remains no theorem about cancellation.
+
+Lag and alias semantics
+For dyadic X>=2, every n in[X/2,X-1] occurs twice as floor(t/2) when
+t runs[X,2X-1]. Thus ID4 has the exact identity
+  V(X)=2*A_mu(X/2)/X^2=E_mu(X/2)/2.
+Its W increment is Delta E_mu(X)+Delta E_mu(X/2)/2. At X=1 its potential
+iszero; the initial case must remain explicit. ID4 is a positive lag/smoothing
+channel. Its square contains the original signed arithmetic, but its smallness
+cannot be assumed independently of the unknown energy bound it samples.
+It is not the same function as baseline V=0.
+
+Next classification should distinguish proved full-function identities,
+proved identities only on dyadic/even domains, and finite-response aliases.
+Only the first two can justify a theorem-scope alias, with initial/domain
+exceptions retained. Equal sampled outputs do not justify universal merging.
+Global state sign changes U->-U give the same potential exactly; alpha-renamed
+binders and ordinary ring simplifications can also be grouped with a checked
+rewrite record. Preserve all ordinal IDs, original payloads and provenance.
+
+Effective cutoff exposure
+Moving syntax need not move effectively in discovery. ID16's modulus is
+max(2,floor(X^(1/6))). Throughout discovery, including its largest child
+argument X=512, it is exactly2 because512<3^6=729. That evidence therefore
+concerns a parity mask, not several moving-modulus regimes. The frozen final
+arguments cross the next regime; no final response score is needed to see
+this coverage distinction.
+
+ID67's d=1 summand vanishes identically because floor(t/1)=t. When its
+bank cutoff is1, the bank iszero and only the subtracted root-prefix remains.
+At later cutoff values the bank genuinely changes. Such exact dormant terms
+should be simplified before counting effective bank size or coupling degree.
+
+Sixth-root t selectors have seen no index4 when the complete maximum t is4095:
+4^6=4096. Likewise the largest own-scale X=2048 stays below that threshold.
+This is an exact AST/domain coverage statement, not an arithmetic score or
+an assertion that later regimes behave similarly. Integer-root transitions
+alone do not guarantee a potential change: an outer max may hide them, and
+a squared point-coefficient factor may retain the same norm across them.
+
+Generic exposure metadata should record, conservatively and with exact integer
+inequality witnesses: effective selector ranges on parent and child domains;
+whether max/min masks suppress root transitions; guaranteed empty banks;
+identically zero summands; and which new regimes remain untested. A branch
+coverage count is not a lower bound on signed information. General nonlinear
+index maps may require conservative bounds or an explicit unknown label.
+
+Predeclare transition-sensitive evaluations from AST semantics before seeing
+new responses. Include nearby irregular cases as diagnostics and dyadic cases
+on both sides where the resource ledger permits. Recompute all child selectors
+and retain newly entered primes/divisors and all boundary terms. If the next
+effective regime is beyond budget, record unexposed rather than treating many
+samples within one regime as confirmation of the moving family. Do not add
+unbudgeted coefficient lookahead or use final failures to refit this old run.
+
+Bounded padding versus mixed interaction
+For a standalone U(t)=M(floor(t^theta)) with0<=theta<=1/2, the elementary
+|mu(n)|<=1 bound gives
+  V(X)<=X^-2*X*(2X)^(2theta)=2^(2theta)*X^(2theta-1).
+This is uniformly bounded and even decays when theta<1/2. It is a checked
+component envelope, not critical control of E_mu. For any nonnegative V
+uniformly bounded by B, |V(2X)-V(X)|<=B. Therefore the existential cofinal
+innovation claim for E_mu+V is equivalent to the same claim for E_mu by
+adding B to each constant, with initial storage retained. Such padding can
+alter finite constants or simplify a proof presentation, but supplies no
+independent discharge of the missing arithmetic estimate.
+
+Do not apply this rule to root_mixture(U,B) merely because B's own normalized
+square is bounded. The potential (U-B)^2 includes -2UB. A bound for B^2
+does not bound that mixed term independently of the unknown U energy. ID67
+must retain its complete bank/root mixed interaction. A correct classifier
+can mark its root-square component bounded and its mixed component unresolved.
+
+Proposed evidence and selection policy
+Keep three separate annotations for each candidate:
+  (a) checked semantic identities/reductions and their source/domain scope;
+  (b) proved component envelopes, initial charges and unresolved mixed terms;
+  (c) finite evidence, effective-regime coverage and missing computations.
+Neither (a) nor (b) may be replaced by a response fingerprint or fitted slope.
+Actual-mu norm reductions must not silently be applied to another control source.
+
+The next archive should retain baseline plus bounded calibration slots for
+lag aliases, masks and bounded padding, while reserving explicit slots for
+distinct mixed interactions and unexposed moving regimes. Group diversity
+by effective mechanism as well as generation provenance: IDs25/26/73 are
+three different masks in one mechanism class, not three automatically new
+signed-control directions. Do not reject every mask or every unproved lead.
+Classification can be unknown, with a dedicated bounded exploration slot.
+
+Report baseline-relative whole innovation and anchored costs, completeness,
+AST/work cost and exposure alongside the class label. Preserve the complete
+signed quantities; do not improve a candidate score by deleting negative
+cross terms, complement regions, child bank entries or initial W1. Constants
+remain frozen from training, and new validation/final responses remain separate.
+Finite rank is a nomination rule, never a universal arithmetic estimate.
+
+Evidence-driven structural feedback should state why a mutation is nominated:
+for example a checked semantic collapse identifies an ineffective placement
+of a point factor; an unexposed selector requires regime coverage; or an
+unresolved mixed expression supplies a concrete lemma obligation. New mutations
+must change actual retained AST structure. There is no coefficient optimizer,
+preferred named formula, universal response alias or automatic novelty claim.
+
+Proof priority and stopping discipline
+Highest analytical priority goes to an explicit complete expression for which
+a universal source/domain binding and induction-relevant signed innovation
+lemma can be stated. A new operator/function may still be only a reformulation
+of the unknown bound. Ask whether its proposed lemma controls a signed mixed
+term with all moving-boundary and scalar costs, or merely assumes an equivalent
+energy bound. Uniform envelopes/aliases can resolve that question negatively
+for a mechanism without refuting every possible future candidate.
+
+The all-scale conclusion still requires cofinal q, finite C_q independent of
+dyadic X, the entire W(2X)-W(X), and finite initial W(1). Passing finite cases,
+cheap root padding, control-source contrast or a new syntactic function proves
+none of that premise. If a search round yields only masks/aliases/padding,
+record that result and change generic structural placement or semantic coverage;
+do not substitute another gradient method or claim the finite template exhausts
+signed arithmetic discovery.
+
+Minimal changes to the existing next-generation hooks
+No new optimizer, general theorem engine or parallel infrastructure is needed.
+At generate_initial/generate_mutations, annotate the few recognized identities
+above and retain unknown for other expressions. Reallocate some whole-state
+source_product attempts to factor placement within distinct summands before
+coupling/squaring, so their direct sign need not disappear in one norm gate.
+At choose, retain baseline and calibration representatives, but limit redundant
+mask/lag representatives and reserve slots for genuinely distinct unresolved
+mixed mechanisms. Count mechanism diversity separately from inherited family
+labels. Before freezing a new scale plan, check effective selector transitions
+of the nominated parents and declare which affordable regimes will be exposed.
+These three changes alter what expressions are generated and selected while
+keeping exact complete evaluation and the existing proof gate unchanged.
+
+Read-only consistency review found the recurrence memo's exact lag/masked-lag
+classification consistent with the rules here. It provides no missing signed
+estimate. This policy memo is complete; its author made no frozen-code edits,
+executed no tests and computed no new arithmetic response or score.

@@ -1,0 +1,43 @@
+Operator detector local research checkpoint -- 2026-10-12
+
+This directory records the local numerical and symbolic detector work from
+/home/dbsanfte/riemann/operator-discovery-benchmark. It is a source and compact
+record checkpoint. RH and the uniform signed remainder bound remain open.
+
+Research remains paused. Stage085 is the last completed published stage.
+Stage086 finished arithmetic enrichment, then its bound search was suspended;
+its final artifact audit and publication are unfinished. The087 prime transport
+compiler is a working draft with only its recorded tiny smoke check completed.
+Its independent tests, resource review and proof receipts are unfinished.
+
+GIT_CHECKPOINT.json describes the selection and validation. All root Python
+sources, research notes, and root JSON/JSONL records up to1MiB are included,
+except the host-specific process-pause receipt. Compact named run records up
+to1MiB and cancellation-arithmetic-research sources are also included.
+LOCAL_ARTIFACT_INVENTORY.tsv lists included and omitted files without hashes.
+Large experiment data, duplicated historical snapshots, reference downloads,
+runtime logs, environments and caches remain in the original local directory.
+Nothing was deleted there. This commit is not a complete experiment archive.
+
+Historical runners and reports retain their original paths and frozen-input
+requirements. Restoring the omitted archive is necessary for full historical
+replay; this checkpoint does not claim that a fresh clone can replay every run.
+The original research environment is /home/dbsanfte/riemann/.venv. Do not resume
+searches or change frozen scientific inputs merely to inspect this snapshot.
+The host-specific pause receipt remains in the original directory. Its saved
+process group was no longer present when inspected on2026-10-12; a future
+continuation must inspect the saved partial run before planning any restart.
+
+Copies were checked by direct byte comparison. The files listed under
+whitespace_normalized_copies subsequently had trailing whitespace removed in
+this Git copy only; Python ASTs were unchanged. Original frozen source files
+remain untouched. Python syntax was checked without importing modules or
+running scientific searches. Earlier test receipts
+are retained, including recorded failures. No new all-scale bound is asserted.
+
+Retrospective priorities: search for an operator plus an auxiliary construction
+and a growth argument; make remaining proof obligations searchable; classify
+cutoffs, prime support and coefficient growth before ranking finite gains;
+benchmark recovery of uniform bound mechanisms; consolidate experiment runners
+and verification interfaces. Increasing the fractional-exponent menu alone is
+not the main remaining limitation.

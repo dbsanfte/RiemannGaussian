@@ -1,0 +1,21 @@
+{
+  "module": "test_core_signed_work",
+  "operations": 3232442,
+  "runs": [
+    {
+      "returncode": 1,
+      "stdout": "SYNTHETIC_WORK module=test_core_signed_work operations=1090714\n",
+      "stderr": "...F\n======================================================================\nFAIL: test_streamed_signed_crosses_match_exact_literal_cells (test_core_signed_work.SignedWorkTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_core_signed_work.py\", line 66, in test_streamed_signed_crosses_match_exact_literal_cells\n    if sign==0:self.assertTrue(P.measure(p,1,t,m)['work']<0)\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 4 tests in 0.104s\n\nFAILED (failures=1)\n",
+      "operations": 1090714,
+      "elapsed_seconds": 0.18070523400092497
+    },
+    {
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_signed_work operations=2141728\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.056s\n\nOK\n",
+      "operations": 2141728,
+      "elapsed_seconds": 0.1366707840061281,
+      "scope": "affected signed-cell test after correcting zero-unit synthetic fixture"
+    }
+  ]
+}

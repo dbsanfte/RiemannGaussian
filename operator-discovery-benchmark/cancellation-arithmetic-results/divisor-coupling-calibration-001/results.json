@@ -1,0 +1,3778 @@
+{
+  "RH_proved": false,
+  "all_passed": true,
+  "fixtures": [
+    {
+      "fixture": {
+        "H": 1,
+        "id": "unit",
+        "weights": [
+          "1"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 13,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              1
+            ]
+          }
+        ],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "1",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 31
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 1,
+        "normalization_certificate": {
+          "horizon": 1,
+          "lhs": [
+            {
+              "c": "-1",
+              "m": []
+            },
+            {
+              "c": "1",
+              "m": [
+                1,
+                1
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "1",
+                  "m": []
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    1
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [
+          {
+            "c": "-1",
+            "m": []
+          }
+        ],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "1"
+            }
+          ],
+          "complete": true,
+          "pair_count": 1,
+          "pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "pairs_sha256": "5cc6a8a697bb6f2fcb468ef02cf2a76e9ad3f5da223682f1ca29288836ee66b3",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 1,
+          "lhs": [
+            {
+              "c": "-1",
+              "m": []
+            },
+            {
+              "c": "1",
+              "m": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "1",
+                  "m": []
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    1
+                  ]
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    1,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "target": "mu",
+        "weights": [
+          "1"
+        ],
+        "weights_sha256": "43de3a417d75f4818c5a553268b80ce3a5805109a3bbc6b605e9fb0b8f50b485"
+      }
+    },
+    {
+      "fixture": {
+        "H": 1,
+        "id": "signed_unit",
+        "weights": [
+          "-3/2"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 13,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [
+          {
+            "c": "-3/2",
+            "m": [
+              1,
+              1
+            ]
+          }
+        ],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "-3/2",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 31
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 1,
+        "normalization_certificate": {
+          "horizon": 1,
+          "lhs": [
+            {
+              "c": "3/2",
+              "m": []
+            },
+            {
+              "c": "-3/2",
+              "m": [
+                1,
+                1
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "-3/2",
+                  "m": []
+                },
+                {
+                  "c": "-3/2",
+                  "m": [
+                    1
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [
+          {
+            "c": "-9/4",
+            "m": []
+          }
+        ],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "-3/2"
+            }
+          ],
+          "complete": true,
+          "pair_count": 1,
+          "pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "pairs_sha256": "5cc6a8a697bb6f2fcb468ef02cf2a76e9ad3f5da223682f1ca29288836ee66b3",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 1,
+          "lhs": [
+            {
+              "c": "-9/4",
+              "m": []
+            },
+            {
+              "c": "9/4",
+              "m": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "9/4",
+                  "m": []
+                },
+                {
+                  "c": "9/4",
+                  "m": [
+                    1
+                  ]
+                },
+                {
+                  "c": "9/4",
+                  "m": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "c": "9/4",
+                  "m": [
+                    1,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [
+          {
+            "c": "9/4",
+            "m": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "target": "mu",
+        "weights": [
+          "-3/2"
+        ],
+        "weights_sha256": "d997612e4ae489b63614374de12f041ccb964c604f6935876b914bd2c3fdd608"
+      }
+    },
+    {
+      "fixture": {
+        "H": 1,
+        "id": "zero_unit",
+        "weights": [
+          "0"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 1,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "0",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 3
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 1,
+        "normalization_certificate": {
+          "horizon": 1,
+          "lhs": [],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "0"
+            }
+          ],
+          "complete": true,
+          "pair_count": 1,
+          "pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "pairs_sha256": "5cc6a8a697bb6f2fcb468ef02cf2a76e9ad3f5da223682f1ca29288836ee66b3",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 1,
+          "lhs": [],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [],
+        "target": "mu",
+        "weights": [
+          "0"
+        ],
+        "weights_sha256": "a37bbbb0764cc5bf8d8c251cb1c95e3d2e142934792916ccb362ceb5902d9f0b"
+      }
+    },
+    {
+      "fixture": {
+        "H": 6,
+        "id": "mixed_complete",
+        "weights": [
+          "2/3",
+          "-1",
+          "0",
+          "5/7",
+          "-2",
+          "1/4"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 434,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [
+          {
+            "c": "2/3",
+            "m": [
+              1,
+              1
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              2
+            ]
+          },
+          {
+            "c": "5/7",
+            "m": [
+              1,
+              4
+            ]
+          },
+          {
+            "c": "-2",
+            "m": [
+              1,
+              5
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              1,
+              6
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              2,
+              2
+            ]
+          },
+          {
+            "c": "5/7",
+            "m": [
+              2,
+              4
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              2,
+              6
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              3,
+              6
+            ]
+          },
+          {
+            "c": "5/7",
+            "m": [
+              4,
+              4
+            ]
+          },
+          {
+            "c": "-2",
+            "m": [
+              5,
+              5
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              6,
+              6
+            ]
+          }
+        ],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "2/3",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 1022
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 6,
+        "normalization_certificate": {
+          "horizon": 6,
+          "lhs": [
+            {
+              "c": "-2/3",
+              "m": []
+            },
+            {
+              "c": "2/3",
+              "m": [
+                1,
+                1
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                2
+              ]
+            },
+            {
+              "c": "5/7",
+              "m": [
+                1,
+                4
+              ]
+            },
+            {
+              "c": "-2",
+              "m": [
+                1,
+                5
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                1,
+                6
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                2,
+                2
+              ]
+            },
+            {
+              "c": "5/7",
+              "m": [
+                2,
+                4
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                2,
+                6
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                3,
+                6
+              ]
+            },
+            {
+              "c": "5/7",
+              "m": [
+                4,
+                4
+              ]
+            },
+            {
+              "c": "-2",
+              "m": [
+                5,
+                5
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                6,
+                6
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "2/3",
+                  "m": []
+                },
+                {
+                  "c": "2/3",
+                  "m": [
+                    1
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-1",
+                  "m": [
+                    2
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "5/7",
+                  "m": [
+                    4
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-2",
+                  "m": [
+                    5
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 5
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "1/4",
+                  "m": [
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 6
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [
+          {
+            "c": "-4/9",
+            "m": []
+          }
+        ],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "2/3"
+            },
+            {
+              "a": 2,
+              "divisors": [
+                1,
+                2
+              ],
+              "weight": "-1"
+            },
+            {
+              "a": 3,
+              "divisors": [
+                1,
+                3
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 4,
+              "divisors": [
+                1,
+                2,
+                4
+              ],
+              "weight": "5/7"
+            },
+            {
+              "a": 5,
+              "divisors": [
+                1,
+                5
+              ],
+              "weight": "-2"
+            },
+            {
+              "a": 6,
+              "divisors": [
+                1,
+                2,
+                3,
+                6
+              ],
+              "weight": "1/4"
+            }
+          ],
+          "complete": true,
+          "pair_count": 14,
+          "pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "pairs_sha256": "80771954e4fcae0bdc71b4b1f7d9cb238a178b40922733c42a9a00975f988a5a",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 6,
+          "lhs": [
+            {
+              "c": "-4/9",
+              "m": []
+            },
+            {
+              "c": "4/9",
+              "m": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "c": "-4/3",
+              "m": [
+                1,
+                1,
+                1,
+                2
+              ]
+            },
+            {
+              "c": "20/21",
+              "m": [
+                1,
+                1,
+                1,
+                4
+              ]
+            },
+            {
+              "c": "-8/3",
+              "m": [
+                1,
+                1,
+                1,
+                5
+              ]
+            },
+            {
+              "c": "1/3",
+              "m": [
+                1,
+                1,
+                1,
+                6
+              ]
+            },
+            {
+              "c": "-1/3",
+              "m": [
+                1,
+                1,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-10/21",
+              "m": [
+                1,
+                1,
+                2,
+                4
+              ]
+            },
+            {
+              "c": "4",
+              "m": [
+                1,
+                1,
+                2,
+                5
+              ]
+            },
+            {
+              "c": "-1/6",
+              "m": [
+                1,
+                1,
+                2,
+                6
+              ]
+            },
+            {
+              "c": "1/3",
+              "m": [
+                1,
+                1,
+                3,
+                6
+              ]
+            },
+            {
+              "c": "215/147",
+              "m": [
+                1,
+                1,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                1,
+                1,
+                4,
+                5
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                1,
+                1,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "4/3",
+              "m": [
+                1,
+                1,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                1,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "19/48",
+              "m": [
+                1,
+                1,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "2",
+              "m": [
+                1,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                1,
+                2,
+                2,
+                4
+              ]
+            },
+            {
+              "c": "4",
+              "m": [
+                1,
+                2,
+                2,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                2,
+                2,
+                6
+              ]
+            },
+            {
+              "c": "-1/2",
+              "m": [
+                1,
+                2,
+                3,
+                6
+              ]
+            },
+            {
+              "c": "-20/49",
+              "m": [
+                1,
+                2,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                1,
+                2,
+                4,
+                5
+              ]
+            },
+            {
+              "c": "5/7",
+              "m": [
+                1,
+                2,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "4",
+              "m": [
+                1,
+                2,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                2,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "-3/8",
+              "m": [
+                1,
+                2,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                1,
+                3,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                3,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "1/8",
+              "m": [
+                1,
+                3,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "50/49",
+              "m": [
+                1,
+                4,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                1,
+                4,
+                4,
+                5
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                1,
+                4,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                1,
+                4,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                1,
+                4,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "8",
+              "m": [
+                1,
+                5,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                5,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                5,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "1/8",
+              "m": [
+                1,
+                6,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "1",
+              "m": [
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-10/7",
+              "m": [
+                2,
+                2,
+                2,
+                4
+              ]
+            },
+            {
+              "c": "-1/2",
+              "m": [
+                2,
+                2,
+                2,
+                6
+              ]
+            },
+            {
+              "c": "-1/2",
+              "m": [
+                2,
+                2,
+                3,
+                6
+              ]
+            },
+            {
+              "c": "-45/49",
+              "m": [
+                2,
+                2,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                2,
+                2,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "4",
+              "m": [
+                2,
+                2,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "-7/16",
+              "m": [
+                2,
+                2,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                2,
+                3,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "1/8",
+              "m": [
+                2,
+                3,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "50/49",
+              "m": [
+                2,
+                4,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                2,
+                4,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                2,
+                4,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                2,
+                4,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                2,
+                5,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "1/8",
+              "m": [
+                2,
+                6,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "1/16",
+              "m": [
+                3,
+                3,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                3,
+                4,
+                4,
+                6
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                3,
+                5,
+                5,
+                6
+              ]
+            },
+            {
+              "c": "1/8",
+              "m": [
+                3,
+                6,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "25/49",
+              "m": [
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            {
+              "c": "-20/7",
+              "m": [
+                4,
+                4,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "5/14",
+              "m": [
+                4,
+                4,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "4",
+              "m": [
+                5,
+                5,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                5,
+                5,
+                6,
+                6
+              ]
+            },
+            {
+              "c": "1/16",
+              "m": [
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [
+                {
+                  "c": "4/9",
+                  "m": []
+                },
+                {
+                  "c": "4/9",
+                  "m": [
+                    1
+                  ]
+                },
+                {
+                  "c": "4/9",
+                  "m": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "c": "4/9",
+                  "m": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "c": "-2/3",
+                  "m": [
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    1,
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "c": "-4/3",
+                  "m": [
+                    1,
+                    1,
+                    5
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    1,
+                    6
+                  ]
+                },
+                {
+                  "c": "-2/3",
+                  "m": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "c": "-2/3",
+                  "m": [
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    3,
+                    6
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    1,
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "-4/3",
+                  "m": [
+                    1,
+                    5
+                  ]
+                },
+                {
+                  "c": "-4/3",
+                  "m": [
+                    1,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "c": "-2/3",
+                  "m": [
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    3,
+                    6
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "-4/3",
+                  "m": [
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    6,
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-2/3",
+                  "m": [
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "-5/7",
+                  "m": [
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "2",
+                  "m": [
+                    1,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    1,
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "-2/3",
+                  "m": [
+                    2
+                  ]
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    2,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "-5/7",
+                  "m": [
+                    2,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    2,
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    2,
+                    3,
+                    6
+                  ]
+                },
+                {
+                  "c": "-5/7",
+                  "m": [
+                    2,
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "2",
+                  "m": [
+                    2,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    2,
+                    6,
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "10/21",
+                  "m": [
+                    1,
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "c": "-5/7",
+                  "m": [
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "25/49",
+                  "m": [
+                    1,
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "-10/7",
+                  "m": [
+                    1,
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    1,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "-5/7",
+                  "m": [
+                    2,
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "c": "25/49",
+                  "m": [
+                    2,
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    2,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    3,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "10/21",
+                  "m": [
+                    4
+                  ]
+                },
+                {
+                  "c": "25/49",
+                  "m": [
+                    4,
+                    4,
+                    4
+                  ]
+                },
+                {
+                  "c": "-10/7",
+                  "m": [
+                    4,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    4,
+                    6,
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-4/3",
+                  "m": [
+                    1,
+                    1,
+                    5
+                  ]
+                },
+                {
+                  "c": "2",
+                  "m": [
+                    1,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "-10/7",
+                  "m": [
+                    1,
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "c": "4",
+                  "m": [
+                    1,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    1,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "c": "2",
+                  "m": [
+                    2,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "-10/7",
+                  "m": [
+                    2,
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    2,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    3,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "c": "-10/7",
+                  "m": [
+                    4,
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "c": "-4/3",
+                  "m": [
+                    5
+                  ]
+                },
+                {
+                  "c": "4",
+                  "m": [
+                    5,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    5,
+                    6,
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 5
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "1/6",
+                  "m": [
+                    1,
+                    1,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    1,
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    1,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    1,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/16",
+                  "m": [
+                    1,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/4",
+                  "m": [
+                    2,
+                    2,
+                    6
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    2,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/16",
+                  "m": [
+                    2,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/16",
+                  "m": [
+                    3,
+                    6,
+                    6
+                  ]
+                },
+                {
+                  "c": "5/28",
+                  "m": [
+                    4,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    5,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "c": "1/6",
+                  "m": [
+                    6
+                  ]
+                },
+                {
+                  "c": "1/16",
+                  "m": [
+                    6,
+                    6,
+                    6
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 6
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [
+          {
+            "c": "4/9",
+            "m": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "c": "-4/3",
+            "m": [
+              1,
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "c": "20/21",
+            "m": [
+              1,
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "c": "-8/3",
+            "m": [
+              1,
+              1,
+              1,
+              5
+            ]
+          },
+          {
+            "c": "1/3",
+            "m": [
+              1,
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "c": "-1/3",
+            "m": [
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-10/21",
+            "m": [
+              1,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "c": "4",
+            "m": [
+              1,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "c": "-1/6",
+            "m": [
+              1,
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "c": "1/3",
+            "m": [
+              1,
+              1,
+              3,
+              6
+            ]
+          },
+          {
+            "c": "215/147",
+            "m": [
+              1,
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              1,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              1,
+              1,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "4/3",
+            "m": [
+              1,
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "19/48",
+            "m": [
+              1,
+              1,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "2",
+            "m": [
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              1,
+              2,
+              2,
+              4
+            ]
+          },
+          {
+            "c": "4",
+            "m": [
+              1,
+              2,
+              2,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              2,
+              2,
+              6
+            ]
+          },
+          {
+            "c": "-1/2",
+            "m": [
+              1,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "c": "-20/49",
+            "m": [
+              1,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "c": "5/7",
+            "m": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "4",
+            "m": [
+              1,
+              2,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "-3/8",
+            "m": [
+              1,
+              2,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              1,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "1/8",
+            "m": [
+              1,
+              3,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "50/49",
+            "m": [
+              1,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              1,
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              1,
+              4,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              1,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              1,
+              4,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "8",
+            "m": [
+              1,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "1/8",
+            "m": [
+              1,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "1",
+            "m": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-10/7",
+            "m": [
+              2,
+              2,
+              2,
+              4
+            ]
+          },
+          {
+            "c": "-1/2",
+            "m": [
+              2,
+              2,
+              2,
+              6
+            ]
+          },
+          {
+            "c": "-1/2",
+            "m": [
+              2,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "c": "-45/49",
+            "m": [
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              2,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "4",
+            "m": [
+              2,
+              2,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "-7/16",
+            "m": [
+              2,
+              2,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              2,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "1/8",
+            "m": [
+              2,
+              3,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "50/49",
+            "m": [
+              2,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              2,
+              4,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              2,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              2,
+              4,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              2,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "1/8",
+            "m": [
+              2,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "1/16",
+            "m": [
+              3,
+              3,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              3,
+              4,
+              4,
+              6
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              3,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "c": "1/8",
+            "m": [
+              3,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "25/49",
+            "m": [
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "c": "-20/7",
+            "m": [
+              4,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "5/14",
+            "m": [
+              4,
+              4,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "4",
+            "m": [
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              5,
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "c": "1/16",
+            "m": [
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        ],
+        "target": "mu",
+        "weights": [
+          "2/3",
+          "-1",
+          "0",
+          "5/7",
+          "-2",
+          "1/4"
+        ],
+        "weights_sha256": "d6539e91ae54884f72d25f21d3db9f060689e3eaabc7d422b3db3224cc5f88a8"
+      }
+    },
+    {
+      "fixture": {
+        "H": 5,
+        "id": "zero_head",
+        "weights": [
+          "0",
+          "1",
+          "-1/2",
+          "0",
+          "3"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 145,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              2
+            ]
+          },
+          {
+            "c": "-1/2",
+            "m": [
+              1,
+              3
+            ]
+          },
+          {
+            "c": "3",
+            "m": [
+              1,
+              5
+            ]
+          },
+          {
+            "c": "1",
+            "m": [
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-1/2",
+            "m": [
+              3,
+              3
+            ]
+          },
+          {
+            "c": "3",
+            "m": [
+              5,
+              5
+            ]
+          }
+        ],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "0",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 263
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 5,
+        "normalization_certificate": {
+          "horizon": 5,
+          "lhs": [
+            {
+              "c": "1",
+              "m": [
+                1,
+                2
+              ]
+            },
+            {
+              "c": "-1/2",
+              "m": [
+                1,
+                3
+              ]
+            },
+            {
+              "c": "3",
+              "m": [
+                1,
+                5
+              ]
+            },
+            {
+              "c": "1",
+              "m": [
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-1/2",
+              "m": [
+                3,
+                3
+              ]
+            },
+            {
+              "c": "3",
+              "m": [
+                5,
+                5
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "1",
+                  "m": [
+                    2
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-1/2",
+                  "m": [
+                    3
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "3",
+                  "m": [
+                    5
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 5
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 2,
+              "divisors": [
+                1,
+                2
+              ],
+              "weight": "1"
+            },
+            {
+              "a": 3,
+              "divisors": [
+                1,
+                3
+              ],
+              "weight": "-1/2"
+            },
+            {
+              "a": 4,
+              "divisors": [
+                1,
+                2,
+                4
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 5,
+              "divisors": [
+                1,
+                5
+              ],
+              "weight": "3"
+            }
+          ],
+          "complete": true,
+          "pair_count": 10,
+          "pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              5
+            ]
+          ],
+          "pairs_sha256": "7322b0d1c3eff78627221f975d6b752870b837eff98dd2a30eb04fa8eaf6a60e",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 5,
+          "lhs": [
+            {
+              "c": "1",
+              "m": [
+                1,
+                1,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "c": "6",
+              "m": [
+                1,
+                1,
+                2,
+                5
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                1,
+                1,
+                3,
+                3
+              ]
+            },
+            {
+              "c": "-3",
+              "m": [
+                1,
+                1,
+                3,
+                5
+              ]
+            },
+            {
+              "c": "9",
+              "m": [
+                1,
+                1,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "2",
+              "m": [
+                1,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                2,
+                2,
+                3
+              ]
+            },
+            {
+              "c": "6",
+              "m": [
+                1,
+                2,
+                2,
+                5
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                1,
+                2,
+                3,
+                3
+              ]
+            },
+            {
+              "c": "6",
+              "m": [
+                1,
+                2,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "1/2",
+              "m": [
+                1,
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "c": "-3",
+              "m": [
+                1,
+                3,
+                3,
+                5
+              ]
+            },
+            {
+              "c": "-3",
+              "m": [
+                1,
+                3,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "18",
+              "m": [
+                1,
+                5,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "1",
+              "m": [
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "c": "-1",
+              "m": [
+                2,
+                2,
+                3,
+                3
+              ]
+            },
+            {
+              "c": "6",
+              "m": [
+                2,
+                2,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "1/4",
+              "m": [
+                3,
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "c": "-3",
+              "m": [
+                3,
+                3,
+                5,
+                5
+              ]
+            },
+            {
+              "c": "9",
+              "m": [
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          ],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "1",
+                  "m": [
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    1,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "c": "3",
+                  "m": [
+                    1,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "1",
+                  "m": [
+                    2,
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    2,
+                    3,
+                    3
+                  ]
+                },
+                {
+                  "c": "3",
+                  "m": [
+                    2,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "-1/2",
+                  "m": [
+                    1,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "c": "1/4",
+                  "m": [
+                    1,
+                    3,
+                    3
+                  ]
+                },
+                {
+                  "c": "-3/2",
+                  "m": [
+                    1,
+                    3,
+                    5
+                  ]
+                },
+                {
+                  "c": "-1/2",
+                  "m": [
+                    2,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "c": "1/4",
+                  "m": [
+                    3,
+                    3,
+                    3
+                  ]
+                },
+                {
+                  "c": "-3/2",
+                  "m": [
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            },
+            {
+              "multiplier": [
+                {
+                  "c": "3",
+                  "m": [
+                    1,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "-3/2",
+                  "m": [
+                    1,
+                    3,
+                    5
+                  ]
+                },
+                {
+                  "c": "9",
+                  "m": [
+                    1,
+                    5,
+                    5
+                  ]
+                },
+                {
+                  "c": "3",
+                  "m": [
+                    2,
+                    2,
+                    5
+                  ]
+                },
+                {
+                  "c": "-3/2",
+                  "m": [
+                    3,
+                    3,
+                    5
+                  ]
+                },
+                {
+                  "c": "9",
+                  "m": [
+                    5,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 5
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [
+          {
+            "c": "1",
+            "m": [
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "c": "6",
+            "m": [
+              1,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              1,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "c": "-3",
+            "m": [
+              1,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "c": "9",
+            "m": [
+              1,
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "2",
+            "m": [
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "c": "6",
+            "m": [
+              1,
+              2,
+              2,
+              5
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              1,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "c": "6",
+            "m": [
+              1,
+              2,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "1/2",
+            "m": [
+              1,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "c": "-3",
+            "m": [
+              1,
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "c": "-3",
+            "m": [
+              1,
+              3,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "18",
+            "m": [
+              1,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "1",
+            "m": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "c": "-1",
+            "m": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "c": "6",
+            "m": [
+              2,
+              2,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "1/4",
+            "m": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "c": "-3",
+            "m": [
+              3,
+              3,
+              5,
+              5
+            ]
+          },
+          {
+            "c": "9",
+            "m": [
+              5,
+              5,
+              5,
+              5
+            ]
+          }
+        ],
+        "target": "mu",
+        "weights": [
+          "0",
+          "1",
+          "-1/2",
+          "0",
+          "3"
+        ],
+        "weights_sha256": "b0b1a5a0dd9922923d6b6c825a173290710e2ecdb1eef1a2e7a949d6b2160e4e"
+      }
+    },
+    {
+      "fixture": {
+        "H": 4,
+        "id": "all_zero",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "independent_check": {
+        "RH_proved": false,
+        "complete_cross_divisor_products": true,
+        "complete_divisor_source": true,
+        "finite_identities_only": true,
+        "global_bound_proved": false,
+        "independent_operations_proxy": 16,
+        "producer_operation_count_independently_verified": false,
+        "unit_endpoint_retained": true,
+        "verified": true
+      },
+      "producer": {
+        "B": [],
+        "RH_proved": false,
+        "arithmetic_values_substituted": false,
+        "c": "0",
+        "cost": {
+          "max_coefficient_bits": 4096,
+          "max_operations": 20000000,
+          "max_terms": 10000,
+          "operations": 12
+        },
+        "formal_identities_verified": true,
+        "global_bound_proved": false,
+        "horizon": 4,
+        "normalization_certificate": {
+          "horizon": 4,
+          "lhs": [],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "scalar_minus_c_squared": [],
+        "scope": "supplied weighted Mobius inverse-row identity; cross-divisor square terms complete; no critical estimate",
+        "source": {
+          "blocks": [
+            {
+              "a": 1,
+              "divisors": [
+                1
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 2,
+              "divisors": [
+                1,
+                2
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 3,
+              "divisors": [
+                1,
+                3
+              ],
+              "weight": "0"
+            },
+            {
+              "a": 4,
+              "divisors": [
+                1,
+                2,
+                4
+              ],
+              "weight": "0"
+            }
+          ],
+          "complete": true,
+          "pair_count": 8,
+          "pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "pairs_sha256": "24bd6281af39165a9658238559f26de23bc304d1fafc3783efa245c1efd4123b",
+          "source_domain": "all 1<=a<=H and d|a; zero weights retained"
+        },
+        "square_closure_certificate": {
+          "horizon": 4,
+          "lhs": [],
+          "relations": [
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "unit"
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 2
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 3
+              }
+            },
+            {
+              "multiplier": [],
+              "spec": {
+                "kind": "inverse_row",
+                "n": 4
+              }
+            }
+          ],
+          "squares": [],
+          "target": "mu"
+        },
+        "square_is_bound_certificate": false,
+        "square_polynomial": [],
+        "target": "mu",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "weights_sha256": "73ca7a9ed16e954dab2040896df29f2c5ee175ef8d98eaec144f0cd2f4a3fcd9"
+      }
+    }
+  ],
+  "global_bound_proved": false,
+  "supplied_identity_not_discovery": true
+}

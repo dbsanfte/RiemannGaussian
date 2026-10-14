@@ -1,0 +1,1279 @@
+{
+  "RH_proved": false,
+  "all_expected_evaluations_available": true,
+  "archive": "/home/dbsanfte/riemann/operator-discovery-benchmark/permuted-circuit-results/pilot-001",
+  "baseline_mu": {
+    "cases": [
+      {
+        "X": 20480,
+        "absolute_energy": "1761279/52428800",
+        "energy": "1761279/52428800"
+      },
+      {
+        "X": 32768,
+        "absolute_energy": "30752677/536870912",
+        "energy": "30752677/536870912"
+      }
+    ],
+    "constants": {
+      "12": "151/2048",
+      "2": "151/6144",
+      "3": "151/4096",
+      "6": "151/2048"
+    },
+    "decomposition": [
+      {
+        "X": 8192,
+        "diagonal_energy": "1345051/33554432",
+        "lower_energy": "0",
+        "mixed_energy": "0",
+        "total_energy": "1345051/33554432"
+      },
+      {
+        "X": 16384,
+        "diagonal_energy": "1717423/33554432",
+        "lower_energy": "0",
+        "mixed_energy": "0",
+        "total_energy": "1717423/33554432"
+      },
+      {
+        "X": 32768,
+        "diagonal_energy": "30752677/536870912",
+        "lower_energy": "0",
+        "mixed_energy": "0",
+        "total_energy": "30752677/536870912"
+      }
+    ],
+    "horizon": 65535,
+    "id": 0,
+    "initial_cost": "9638727915079980640136177161/5213096522073683233230240000",
+    "scales": [
+      20480,
+      32768
+    ],
+    "scores": [
+      {
+        "X": 20480,
+        "bound": "453/128",
+        "dyadic": false,
+        "passed": true,
+        "q": 2
+      },
+      {
+        "X": 20480,
+        "bound": "1057/1024",
+        "dyadic": false,
+        "passed": true,
+        "q": 3
+      },
+      {
+        "X": 20480,
+        "bound": "453/1024",
+        "dyadic": false,
+        "passed": true,
+        "q": 6
+      },
+      {
+        "X": 20480,
+        "bound": "453/2048",
+        "dyadic": false,
+        "passed": true,
+        "q": 12
+      },
+      {
+        "X": 32768,
+        "bound": "13741/3072",
+        "dyadic": true,
+        "passed": true,
+        "q": 2
+      },
+      {
+        "X": 32768,
+        "bound": "151/128",
+        "dyadic": true,
+        "passed": true,
+        "q": 3
+      },
+      {
+        "X": 32768,
+        "bound": "453/1024",
+        "dyadic": true,
+        "passed": true,
+        "q": 6
+      },
+      {
+        "X": 32768,
+        "bound": "453/2048",
+        "dyadic": true,
+        "passed": true,
+        "q": 12
+      }
+    ],
+    "source": "mu",
+    "status": "available"
+  },
+  "certificates_checked": 49,
+  "cumulative_operations": 478229178,
+  "evaluations_verified": 303,
+  "final_available": 15,
+  "final_invalid": 0,
+  "final_missing": 0,
+  "finite_arithmetic_verified": true,
+  "global_bound_proved": false,
+  "independent_status": "FINITE_EVALUATIONS_VERIFIED_WITH_WORK_EXTENSION",
+  "leads": [
+    {
+      "calibration": null,
+      "certificate": {
+        "bound": "3^permutation_count*shear_factor*(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_and_block_branches_in_inverse",
+        "domain": "closed_dyadic_horizon_weighted_l2_half_lt_sigma_le_one",
+        "fractional_order": "1/2",
+        "permutation_count": 1,
+        "program": {
+          "stages": [
+            {
+              "inverse": false,
+              "map": {
+                "kind": "reverse_bits"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "permuted-arithmetic-circuit-v1",
+        "shear_count": 0,
+        "shear_factor": "1"
+      },
+      "decomposition": [
+        {
+          "X": 8192,
+          "baseline_ratio": "105066801666897314177/94649549724911140864",
+          "diagonal_energy": "1345051/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "11323983043801481601/2361183241434822606848",
+          "lower_plus_cross_relative_to_diagonal": "10417251941986173313/94649549724911140864",
+          "mixed_energy": "-108090770461/281474976710656",
+          "negative_cross_fraction": "906731101815308288/105973532768712622465",
+          "total_energy": "105066801666897314177/2361183241434822606848"
+        },
+        {
+          "X": 16384,
+          "baseline_ratio": "18739837254170380267125/15469171165675038703616",
+          "diagonal_energy": "1717423/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "1620302052558088105589/302231454903657293676544",
+          "lower_plus_cross_relative_to_diagonal": "3270666088495341563509/15469171165675038703616",
+          "mixed_energy": "12296170264015/2251799813685248",
+          "negative_cross_fraction": "-330072807187450691584/3417894643646625361841",
+          "total_energy": "18739837254170380267125/302231454903657293676544"
+        },
+        {
+          "X": 32768,
+          "baseline_ratio": "167608401644832065250931/138497744677845222817792",
+          "diagonal_energy": "30752677/536870912",
+          "diagonal_ratio": "1",
+          "lower_energy": "17213173660936478582387/2417851639229258349412352",
+          "lower_plus_cross_relative_to_diagonal": "29110656966986842433139/138497744677845222817792",
+          "mixed_energy": "22160789568071/4503599627370496",
+          "negative_cross_fraction": "-11897483306050363850752/155710918338781701400179",
+          "total_energy": "167608401644832065250931/2417851639229258349412352"
+        }
+      ],
+      "discovery": {
+        "conditional_cost": "2465080855255229508497439445537/222836306047752695316480000",
+        "gate_failures": 0,
+        "raw_ratio": "2292646159884889/1445239315234816",
+        "specificity": "6875465433429961466145317117/11939585362602840309759303933"
+      },
+      "family": "permutation_input",
+      "final_controls": [
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "74498332555565331552948241/2361183241434822606848",
+              "energy": "74498332555565331552948241/2361183241434822606848"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "19074055078719758505320678581/302231454903657293676544",
+              "energy": "19074055078719758505320678581/302231454903657293676544"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "96213256322738746334785/2361183241434822606848",
+              "energy": "60744102204149793267329/2361183241434822606848"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "23707466100234267055348373/302231454903657293676544",
+              "energy": "15507402852947334795737717/302231454903657293676544"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "final_mu": [
+        {
+          "X": 20480,
+          "absolute_energy": "241548238893761568161037/1888946593147858085478400",
+          "baseline_ratio": "47400111018782626934415/21152254528254612865024",
+          "energy": "28440066611269576160649/377789318629571617095680",
+          "path_energy_ratio": "15800037006260875644805/26838693210417952017893"
+        },
+        {
+          "X": 32768,
+          "absolute_energy": "285517351175330187299667/2417851639229258349412352",
+          "baseline_ratio": "167608401644832065250931/138497744677845222817792",
+          "energy": "167608401644832065250931/2417851639229258349412352",
+          "path_energy_ratio": "167608401644832065250931/285517351175330187299667"
+        }
+      ],
+      "final_mu_comparisons": 8,
+      "final_mu_failed": 0,
+      "final_mu_status": "available",
+      "id": 7,
+      "normalization": {
+        "equivalence": "dyadic_moments",
+        "program": {
+          "stages": [
+            {
+              "inverse": false,
+              "map": {
+                "kind": "reverse_bits"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "rewrites": []
+      },
+      "program": {
+        "stages": [
+          {
+            "inverse": false,
+            "map": {
+              "kind": "reverse_bits"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "raw_program": {
+        "stages": [
+          {
+            "inverse": false,
+            "map": {
+              "kind": "reverse_bits"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "calibration": null,
+      "certificate": {
+        "bound": "3^permutation_count*shear_factor*(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_and_block_branches_in_inverse",
+        "domain": "closed_dyadic_horizon_weighted_l2_half_lt_sigma_le_one",
+        "fractional_order": "1",
+        "permutation_count": 1,
+        "program": {
+          "stages": [
+            {
+              "alpha": "1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "inverse": false,
+              "map": {
+                "kind": "reverse_bits"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "multiply",
+                [
+                  "constant",
+                  -1
+                ],
+                [
+                  "source_sign",
+                  [
+                    "subtract_root",
+                    1,
+                    2
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "permuted-arithmetic-circuit-v1",
+        "shear_count": 0,
+        "shear_factor": "1"
+      },
+      "decomposition": [
+        {
+          "X": 8192,
+          "baseline_ratio": "61981771829955979679/47324774862455570432",
+          "diagonal_energy": "1345051/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "9694799180124842399/1180591620717411303424",
+          "lower_plus_cross_relative_to_diagonal": "14656996967500409247/47324774862455570432",
+          "mixed_energy": "1183080145687/281474976710656",
+          "negative_cross_fraction": "-4962197787375566848/57019574042580412831",
+          "total_energy": "61981771829955979679/1180591620717411303424"
+        },
+        {
+          "X": 16384,
+          "baseline_ratio": "4802725727234830435795/3867292791418759675904",
+          "diagonal_energy": "1717423/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "738272756415555503571/75557863725914323419136",
+          "lower_plus_cross_relative_to_diagonal": "935432935816070759891/3867292791418759675904",
+          "mixed_energy": "2937915614255/1125899906842624",
+          "negative_cross_fraction": "-39432035880103051264/921113109566863035895",
+          "total_energy": "4802725727234830435795/75557863725914323419136"
+        },
+        {
+          "X": 32768,
+          "baseline_ratio": "88249250714855517072043/69248872338922611408896",
+          "diagonal_energy": "30752677/536870912",
+          "diagonal_ratio": "1",
+          "lower_energy": "10835191144443151788715/1208925819614629174706176",
+          "lower_plus_cross_relative_to_diagonal": "19000378375932905663147/69248872338922611408896",
+          "mixed_energy": "243341542228751/36028797018963968",
+          "negative_cross_fraction": "-8165187231489753874432/80084063483365763197611",
+          "total_energy": "88249250714855517072043/1208925819614629174706176"
+        }
+      ],
+      "discovery": {
+        "conditional_cost": "28070978525652882004055000520127/2079805523112358489620480000",
+        "gate_failures": 0,
+        "raw_ratio": "675411254750691/361309828808704",
+        "specificity": "104331458052112840708304290797/266784232154976109296341289965"
+      },
+      "family": "permutation_interleaving",
+      "final_controls": [
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "30587824685338332086935243/590295810358705651712",
+              "energy": "59206965293026871060658463/1180591620717411303424"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "1930491095072266081983560773/18889465931478580854784",
+              "energy": "7477814761635181471365716411/75557863725914323419136"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "41685477153960414935829/590295810358705651712",
+              "energy": "33537494197222504867487/1180591620717411303424"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "2475811692182020158431231/18889465931478580854784",
+              "energy": "4212901026970290347946963/75557863725914323419136"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "final_mu": [
+        {
+          "X": 20480,
+          "absolute_energy": "691756123002136384051887/1888946593147858085478400",
+          "baseline_ratio": "46601826036201664020161/21152254528254612865024",
+          "energy": "139805478108604992060483/1888946593147858085478400",
+          "path_energy_ratio": "46601826036201664020161/230585374334045461350629"
+        },
+        {
+          "X": 32768,
+          "absolute_energy": "88506545259405019336883/302231454903657293676544",
+          "baseline_ratio": "88249250714855517072043/69248872338922611408896",
+          "energy": "88249250714855517072043/1208925819614629174706176",
+          "path_energy_ratio": "88249250714855517072043/354026181037620077347532"
+        }
+      ],
+      "final_mu_comparisons": 8,
+      "final_mu_failed": 0,
+      "final_mu_status": "available",
+      "id": 19,
+      "normalization": {
+        "equivalence": "dyadic_moments",
+        "program": {
+          "stages": [
+            {
+              "alpha": "1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "inverse": false,
+              "map": {
+                "kind": "reverse_bits"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "multiply",
+                [
+                  "constant",
+                  -1
+                ],
+                [
+                  "source_sign",
+                  [
+                    "subtract_root",
+                    1,
+                    2
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        "rewrites": []
+      },
+      "program": {
+        "stages": [
+          {
+            "alpha": "1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "inverse": false,
+            "map": {
+              "kind": "reverse_bits"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "multiply",
+              [
+                "constant",
+                -1
+              ],
+              [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "raw_program": {
+        "stages": [
+          {
+            "alpha": "1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "inverse": false,
+            "map": {
+              "kind": "reverse_bits"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "multiply",
+              [
+                "constant",
+                -1
+              ],
+              [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "calibration": null,
+      "certificate": {
+        "bound": "3^permutation_count*shear_factor*(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_and_block_branches_in_inverse",
+        "domain": "closed_dyadic_horizon_weighted_l2_half_lt_sigma_le_one",
+        "fractional_order": "2",
+        "permutation_count": 2,
+        "program": {
+          "stages": [
+            {
+              "inverse": false,
+              "map": {
+                "kind": "rotate_bits",
+                "shift": -2
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            },
+            {
+              "inverse": true,
+              "map": {
+                "kind": "rotate_bits",
+                "shift": -2
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "1",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            }
+          ]
+        },
+        "recovery_power": 2,
+        "schema": "permuted-arithmetic-circuit-v1",
+        "shear_count": 0,
+        "shear_factor": "1"
+      },
+      "decomposition": [
+        {
+          "X": 8192,
+          "baseline_ratio": "3878345/2690102",
+          "diagonal_energy": "1345051/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "2844999/67108864",
+          "lower_plus_cross_relative_to_diagonal": "1188243/2690102",
+          "mixed_energy": "-414189/16777216",
+          "negative_cross_fraction": "1656756/5535101",
+          "total_energy": "3878345/67108864"
+        },
+        {
+          "X": 16384,
+          "baseline_ratio": "3923675/3434846",
+          "diagonal_energy": "1717423/33554432",
+          "diagonal_ratio": "1",
+          "lower_energy": "5079719/134217728",
+          "lower_plus_cross_relative_to_diagonal": "488829/3434846",
+          "mixed_energy": "-4102061/134217728",
+          "negative_cross_fraction": "4102061/11949411",
+          "total_energy": "3923675/67108864"
+        },
+        {
+          "X": 32768,
+          "baseline_ratio": "31790099/30752677",
+          "diagonal_energy": "30752677/536870912",
+          "diagonal_ratio": "1",
+          "lower_energy": "12521097/268435456",
+          "lower_plus_cross_relative_to_diagonal": "1037422/30752677",
+          "mixed_energy": "-6001193/134217728",
+          "negative_cross_fraction": "2182252/5072261",
+          "total_energy": "31790099/536870912"
+        }
+      ],
+      "discovery": {
+        "conditional_cost": "9925367539972371105991841686321/380823765218327360160000",
+        "gate_failures": 0,
+        "raw_ratio": "22883/8622",
+        "specificity": "4260325251/7524744967"
+      },
+      "family": "conjugated_convolution",
+      "final_controls": [
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "2388664278341/16777216",
+              "energy": "390935524911/16777216"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "78121883125717/268435456",
+              "energy": "12270671005625/268435456"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "14445068485/67108864",
+              "energy": "2000736253/67108864"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "27167453237/67108864",
+              "energy": "3736716273/67108864"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "final_mu": [
+        {
+          "X": 20480,
+          "absolute_energy": "1113575291/419430400",
+          "baseline_ratio": "19538507/14090232",
+          "energy": "19538507/419430400",
+          "path_energy_ratio": "19538507/1113575291"
+        },
+        {
+          "X": 32768,
+          "absolute_energy": "1278615123/536870912",
+          "baseline_ratio": "31790099/30752677",
+          "energy": "31790099/536870912",
+          "path_energy_ratio": "31790099/1278615123"
+        }
+      ],
+      "final_mu_comparisons": 8,
+      "final_mu_failed": 0,
+      "final_mu_status": "available",
+      "id": 33,
+      "normalization": {
+        "equivalence": "dyadic_moments",
+        "program": {
+          "stages": [
+            {
+              "inverse": false,
+              "map": {
+                "kind": "rotate_bits",
+                "shift": -2
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            },
+            {
+              "inverse": true,
+              "map": {
+                "kind": "rotate_bits",
+                "shift": -2
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "1",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            }
+          ]
+        },
+        "rewrites": []
+      },
+      "program": {
+        "stages": [
+          {
+            "inverse": false,
+            "map": {
+              "kind": "rotate_bits",
+              "shift": -2
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          },
+          {
+            "inverse": true,
+            "map": {
+              "kind": "rotate_bits",
+              "shift": -2
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "1",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          }
+        ]
+      },
+      "raw_program": {
+        "stages": [
+          {
+            "inverse": false,
+            "map": {
+              "kind": "rotate_bits",
+              "shift": -2
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          },
+          {
+            "inverse": true,
+            "map": {
+              "kind": "rotate_bits",
+              "shift": -2
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "1",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "calibration": null,
+      "certificate": {
+        "bound": "3^permutation_count*shear_factor*(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_and_block_branches_in_inverse",
+        "domain": "closed_dyadic_horizon_weighted_l2_half_lt_sigma_le_one",
+        "fractional_order": "4/3",
+        "permutation_count": 2,
+        "program": {
+          "stages": [
+            {
+              "alpha": "1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "inverse": false,
+              "map": {
+                "kind": "xor",
+                "mask": "alternating"
+              },
+              "op": "permute"
+            },
+            {
+              "coefficient": "1/3",
+              "direction": "odd_from_even",
+              "op": "shear",
+              "phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "inverse": true,
+              "map": {
+                "kind": "xor",
+                "mask": "alternating"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 2,
+        "schema": "permuted-arithmetic-circuit-v1",
+        "shear_count": 1,
+        "shear_factor": "5/3"
+      },
+      "decomposition": [
+        {
+          "X": 8192,
+          "baseline_ratio": "411169460413983721111345/201884939300863964700171",
+          "diagonal_energy": "3017985/67108864",
+          "diagonal_ratio": "3017985/2690102",
+          "lower_energy": "161859719842571217231359/10072680467275913619308544",
+          "lower_plus_cross_relative_to_diagonal": "73871112584230710006301/90596671581362778438237",
+          "mixed_energy": "267791519769857/12999674453557248",
+          "negative_cross_fraction": "-103747921539291166400073/307421538874692554711272",
+          "total_energy": "411169460413983721111345/5036340233637956809654272"
+        },
+        {
+          "X": 16384,
+          "baseline_ratio": "40802616512898254151008993/18559870476168824739733176",
+          "diagonal_energy": "138761549/2415919104",
+          "diagonal_ratio": "138761549/123654456",
+          "lower_energy": "3476794310234815141675849/181308248410966445147553792",
+          "lower_plus_cross_relative_to_diagonal": "19975252422496581069410564/20827364090401673081598429",
+          "mixed_energy": "16805595175978097/467988280328060928",
+          "negative_cross_fraction": "-13021663802026950786058866/27780952710871303364950127",
+          "total_energy": "40802616512898254151008993/362616496821932890295107584"
+        },
+        {
+          "X": 32768,
+          "baseline_ratio": "7169538646497731816238982919/3364926830427910104262352493",
+          "diagonal_energy": "155300473/2415919104",
+          "diagonal_ratio": "310600946/276774093",
+          "lower_energy": "628705321293346257097474177/29371936242576564113903714304",
+          "lower_plus_cross_relative_to_diagonal": "3393356253763125462793737173/3776182392734606353445245746",
+          "mixed_energy": "612583218671005219/16847578091810193408",
+          "negative_cross_fraction": "-2135945611176432948598788819/5033593035321298867640194100",
+          "total_energy": "7169538646497731816238982919/58743872485153128227807428608"
+        }
+      ],
+      "discovery": {
+        "conditional_cost": "242160567104280279453386639875808119/5396943002970482949621081600",
+        "gate_failures": 0,
+        "raw_ratio": "1270470284315602957/481121822120284791",
+        "specificity": "123873659944613401177262302393828549/168152325234816460241823690024185845"
+      },
+      "family": "shear_interleaving",
+      "final_controls": [
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "983924381984334203775703975403/10072680467275913619308544",
+              "energy": "120853659445378892109805453847/10072680467275913619308544"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "35419997676527360504241423439765/181308248410966445147553792",
+              "energy": "4346631574248805335954171249937/181308248410966445147553792"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "cases": [
+            {
+              "X": 8192,
+              "absolute_energy": "688095255848971107781601473/5036340233637956809654272",
+              "energy": "74577441877446683492672809/5036340233637956809654272"
+            },
+            {
+              "X": 16384,
+              "absolute_energy": "92476957781932087457003295605/362616496821932890295107584",
+              "energy": "11779666735482012396559002065/362616496821932890295107584"
+            }
+          ],
+          "comparisons": 8,
+          "failed": 8,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "final_mu": [
+        {
+          "X": 20480,
+          "absolute_energy": "7382784009088318871700204133/11473412594756470356993638400",
+          "baseline_ratio": "866426000887805103741938413/385434735517121913030536622",
+          "energy": "866426000887805103741938413/11473412594756470356993638400",
+          "path_energy_ratio": "866426000887805103741938413/7382784009088318871700204133"
+        },
+        {
+          "X": 32768,
+          "absolute_energy": "44736405402684103197451014653/58743872485153128227807428608",
+          "baseline_ratio": "7169538646497731816238982919/3364926830427910104262352493",
+          "energy": "7169538646497731816238982919/58743872485153128227807428608",
+          "path_energy_ratio": "7169538646497731816238982919/44736405402684103197451014653"
+        }
+      ],
+      "final_mu_comparisons": 8,
+      "final_mu_failed": 0,
+      "final_mu_status": "available",
+      "id": 42,
+      "normalization": {
+        "equivalence": "dyadic_moments",
+        "program": {
+          "stages": [
+            {
+              "alpha": "1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "inverse": false,
+              "map": {
+                "kind": "xor",
+                "mask": "alternating"
+              },
+              "op": "permute"
+            },
+            {
+              "coefficient": "1/3",
+              "direction": "odd_from_even",
+              "op": "shear",
+              "phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "inverse": true,
+              "map": {
+                "kind": "xor",
+                "mask": "alternating"
+              },
+              "op": "permute"
+            },
+            {
+              "alpha": "-1",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "rewrites": []
+      },
+      "program": {
+        "stages": [
+          {
+            "alpha": "1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "inverse": false,
+            "map": {
+              "kind": "xor",
+              "mask": "alternating"
+            },
+            "op": "permute"
+          },
+          {
+            "coefficient": "1/3",
+            "direction": "odd_from_even",
+            "op": "shear",
+            "phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "inverse": true,
+            "map": {
+              "kind": "xor",
+              "mask": "alternating"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      "raw_program": {
+        "stages": [
+          {
+            "alpha": "1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "inverse": false,
+            "map": {
+              "kind": "xor",
+              "mask": "alternating"
+            },
+            "op": "permute"
+          },
+          {
+            "coefficient": "1/3",
+            "direction": "odd_from_even",
+            "op": "shear",
+            "phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "inverse": true,
+            "map": {
+              "kind": "xor",
+              "mask": "alternating"
+            },
+            "op": "permute"
+          },
+          {
+            "alpha": "-1",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                3
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Finite responses and ordinary mathematical inverse certificates; no proof-assistant claim.",
+    "Full cofinal fixed-circuit moment inequality remains unproved.",
+    "Final source scales are unmatched; specificity uses matched discovery data only.",
+    "Previous source/scale overlap is disclosed; this is a new structural catalogue.",
+    "Reported decimal ratios are display approximations of retained exact rationals.",
+    "Report arithmetic and I/O are covered by the previously charged root reserve."
+  ],
+  "moment_estimate_proved": false,
+  "original_audit_status": "UNKNOWN",
+  "original_ceiling_met": false,
+  "original_work_ceiling": 450000000,
+  "preparation": {
+    "development": 205292,
+    "frozen": {
+      "test_check_permuted_arithmetic_circuits": 40325,
+      "test_permuted_arithmetic_circuits": 54316,
+      "test_permuted_circuit_discovery": 110651
+    },
+    "root_reserve": 1000000,
+    "total": 1410584
+  },
+  "schema": "permuted-circuit-report-v1",
+  "tests_returncode": 0,
+  "total_work_ceiling": 481500000
+}

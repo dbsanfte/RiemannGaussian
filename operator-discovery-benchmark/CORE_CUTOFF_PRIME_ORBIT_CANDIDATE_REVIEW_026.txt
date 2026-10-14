@@ -1,0 +1,279 @@
+SELECTED PRIME-PRODUCT SLICES: COMMON HEIGHT AND THE REMAINING CORRELATION
+
+Status: a uniform ancillary height payment is proved; the detector-selected
+grouped controls and the original signed core remain OPEN. Only this new memo
+was written. The frozen pilot, code, source archives, tests and prior reviews
+were not changed or rerun. No new source evaluation, numerical samples,
+parameter search, hashes or fitted constants were used.
+
+1. Actual selections, finite evidence, and its scope
+
+The completed core-cutoff-prime-orbit-results/pilot-001 selected:
+ program4: P_B={primes p<=B^(1/3)};
+ program9: P_B={primes B^(1/6)<p<=B^(1/2)}.
+The integer-root convention is the frozen exact one. Membership is strict at
+the lower endpoint and inclusive at the upper. Their nonzero events q in
+(B,2B] are grouped by the unique cofactor r remaining after selected primes
+are removed. Every squarefree event and every partial endpoint remains.
+Zero-mu events have zero joined odd/even work; their zero-sector/head and
+energy-shell changes remain in the original recovery.
+
+The selection rule maximized the MINIMUM integer cancellation_bits over four
+declared blocks, then used the smallest program id in each lane. All18 programs
+had minimum score0. Thus4 and9 are enumeration-tie choices, not the strongest
+finite ratios or analytically preferred controls. At B1024 their saved seven-
+height peak functionals were311.9081 and303.4759 against ungrouped315.931;
+the saved full-block odd/even totals were-77.1583 and80.2874, joined3.1290.
+These are observations of the declared DISCRETE functional, without quadrature
+widths or 2pi normalization. They are neither bounds nor samples covering the
+complete continuous integral. Peaks and signed endpoints are also different
+functionals, so their ratio cannot locate endpoint cancellation by itself.
+
+Wider program7 is used below ONLY as an already-observed structural diagnostic.
+It was not selected, re-evaluated on a new block, or substituted for4 or9.
+The coarse bit threshold explains why a program with a better saved ratio at
+some blocks can still tie at minimum0. No reranking is justified by this memo.
+
+2. The complete continuous target, with its outer weight
+
+Put s=sigma+it, sigma=9/20, u=1/3, H_U=2U^(45/2), and
+ kappa(t)=|zeta(s+u)/s|^2.
+For q>=2 use the complete OLD state at q-1,
+ A_U=sum_(n<=U)mu(n)n^-s, c_U=A_U(1),
+ E_U=1+zeta(s)(c_U-A_U), D_U=sum_(n<=U)n^-s,
+ P_U=A_U^2 E_U^3-c_U^3 D_U.
+The raw scalar work polynomials C_1(q,t),C_2(q,t) are those of the frozen
+compiled transition, including J_0 and every head/residue update. Set
+ j_q(t)=mu(q)C_1(q,t)+mu(q)^2 C_2(q,t),
+ rho_q(t)=1_(|t|<H_(q-1)) kappa(t) j_q(t).
+For a group r and B<V<=2B let
+ G_r(V,t)=sum_(B<q<=V,cofactor_B(q)=r)rho_q(t).
+The selected sufficient bound is
+ M_P(B)=sup_(integer B<V<=2B)
+       integral_R sum_r |G_r(V,t)| dt/(2pi)
+       <=C B^(12/5), EVERY required dyadic B.            (2.1)
+All nontrivial groups, incomplete faces, singleton primes, old masks and
+actual states are present. The grouping is fixed by B while V varies. A
+uniform bound implies the original one-sided cumulative work estimate by
+triangle and dyadic summation, with finite base retained. It is STRONGER
+than that estimate: it forbids cancellation between groups before integration
+and between heights where the joined work has different signs. Neither
+the full signed cumulative bound nor the low-energy goal alone proves (2.1).
+
+3. These block groups are antichains, not insertion pairs
+
+If B<q_1<q_2<=2B and q_1 divides q_2, then q_2>=2q_1>2B, a contradiction.
+Thus distinct members of EVERY selected block group form an antichain under
+divisibility. In particular no interior edge q_2=pq_1 with p prime exists.
+The fixed-single-prime2,3,5 calibration groups are necessarily singletons;
+that is a structural proof, not a finite empirical result.
+
+Let Q_B be the product of selected primes and
+ D_r(B,V)={d|Q_B : B<rd<=V}.
+For squarefree r coprime to Q_B the exact group, before its weight/mask, is
+ mu(r) sum_(d in D_r)mu(d)C_1(rd,t)
+ +mu(r)^2 sum_(d in D_r)C_2(rd,t).                       (3.1)
+The set D_r is a truncated antichain of selected-prime products. Distinct
+d,d' are incomparable; the ratio d'/d can be less than2 even though a direct
+prime insertion leaves the block. Equal-cardinality prime exchanges preserve
+mu(d), hence preserve the sign of the odd source factor. Only a difference in
+the PARITY of the number of selected primes gives opposite odd factors.
+Common cofactor is not the same as opposite signs. For example an early
+selected P={2,3} slice can group2r and3r with the same odd factor.
+
+For program4, residual cofactors have only primes>B^(1/3); for program9,
+their primes are either<=B^(1/6) or>B^(1/2). These descriptions do not remove
+the actual old-source state or imply any sign for C_j. The selected slices
+can be compared through PRIME EXCHANGES or multi-prime/cofactor transfers,
+not by claiming complete product_(p in P)(I-T_p) cubes inside the block.
+Complete cube identities on [1,V] remain valid, but their lower and upper
+faces must be restored when forming (B,V].
+
+4. A new uniform ancillary lemma: freeze ALL masks to H_B
+
+Define the COMMON-window group
+ G_r^0(V,t)=1_(|t|<H_B) kappa(t)
+            sum_(B<q<=V,cofactor_B(q)=r)j_q(t),
+and let M_P^0(B) have the same supremum and integral as (2.1), with G_r^0.
+For every partition of this block, including4 and9,
+ |M_P(B)-M_P^0(B)|<=C_height B^(21/10),                 (4.1)
+with one finite constant independent of B, P_B, number of groups, V and all
+source observations. This pays a correction; it is not a signed correlation
+bound discovered by the numerical detector.
+
+Proof. At q, let P_q^(e) be the full corrected polynomial obtained from the
+old actual state by assigning the new coefficient e in{0,+1,-1}:
+ P_q^(e)=(A_(q-1)+e q^-s)^2
+          [E_(q-1)+e zeta(s)(q^-1-q^-s)]^3
+          -(c_(q-1)+e/q)^3[D_(q-1)+q^-s].
+The complete branch series is F_q^(e)=zeta(s+u)P_q^(e). Exact polarization
+gives, with e=mu(q),
+ kappa(t)j_q(t)=(|F_q^(e)|^2-|F_q^(0)|^2)/|s|^2.       (4.2)
+The zero-sector is absent from this difference, exactly as required. Thus
+its absolute value is bounded by the positive sum of these two branch norms.
+For B<q<=2B, H_(q-1)>=H_B and q/B<=2. The virtual raw coefficients have
+|a_n|<=1, support<=q, and c=A(1) with |c|<=5/2. Their harmonic nullness removes
+the pole at1. The virtual source-head identity need NOT hold; it is not used.
+
+The inherited weighted high-tail theorem, with fixed-ratio length extension,
+therefore gives for each raw branch
+ integral_(|t|>=H_B)|F_raw/s|^2 dt/(2pi)<=C B^-1/16.
+Its COMPLETE finite corrected head has full norm O(q^11/10), from the centered
+kernel lemma; its analytic-residue and x<1 compensation are included. Hence
+ integral_(|t|>=H_B)|F_q^(e)/s|^2 dt/(2pi)
+ <=C[B^-1/16+B^11/10]<=C' B^11/10.                     (4.3)
+Constants for the coefficient bound5/2 rather than2 change only fixed
+majorant constants. All finite B are covered by the inherited finite-head
+extension, not by asserting that an unspecified asymptotic theorem starts
+at the observed cutoffs.
+
+The mask difference is supported on H_B<=|t|<H_(q-1). Summing (4.2)-(4.3)
+over at most B events gives C_height B^21/10. Triangle over all groups bounds
+the difference of their absolute sums by that eventwise cost, for EVERY V.
+Taking suprema preserves the same bound. No group pairing, cube completeness
+or congestion hypothesis is needed for this mask-freezing lemma.
+
+Since21/10<12/5, (2.1) and its common-window version are equivalent up to
+uniform paid constants. Incomparable q,q' can also have their height variation
+paid by fixed-ratio branch estimates, with bounded weighted multiplicity.
+Antichain geometry is therefore NOT a blanket rejection of height payment.
+It only rules out a claimed interior insertion cancellation. State variation,
+even work and all block faces remain open after (4.1).
+
+5. What current unconditional envelopes actually yield
+
+Review020's full unweighted moment primitive converges at sigma=9/20 for the
+zeta(s+u)zeta(s)^j/s branches j<=3. Using only |mu|<=1 and |c|<=2 gives
+ ||F'_(q-1)||<=C q^[5(1-sigma)]=C q^(11/4),
+ ||F_q^(mu(q))-F_q^(0)||<=C q^[5(1-sigma)-1]=C q^(7/4).  (5.1)
+Here norms are full weighted L2(dt/(2pi)) of the series divided by s. To see
+the second exponent, a new q^-s factor replaces an old factor of size
+q^(1-sigma): its exponent decreases by1. New q^-1 factors are smaller.
+Every higher increment and finite-head correction has no larger exponent.
+The complete pole-removing Q is kept intact; the line is away from its
+removable pole, and no ordinary E^3 coefficient moment is asserted.
+
+By (4.2), Cauchy and the squared increment bound, uniformly in q,
+ integral |kappa j_q| dt/(2pi)
+ <=C[q^(9/2)+q^(7/2)].                                 (5.2)
+Triangle thus gives, for ANY grouping,
+ M_P(B)<=C B^(11/2).                                    (5.3)
+This is an upper bound, NOT a lower bound or a disproof. It misses the target
+by exponent31/10. Squarefree support or fewer groups alone does not supply
+that saving. The present kernel/head rules pay the height correction but do
+not improve (5.3)'s actual-state cost. A fixed pure-kernel difference changes
+constants; a coefficient depending on A_(q-1) is not a frozen monomial.
+
+6. Where the absolute grouping removes potentially essential cancellation
+
+For fixed V and height define T(V,t)=sum_r G_r(V,t). Exactly
+ integral sum_r|G_r|-|integral T|
+ =integral[sum_r|G_r|-|T|]
+  +[integral|T|-|integral T|],                          (6.1)
+with measure dt/(2pi) throughout. Both terms are nonnegative. The first
+measures SAME-height cross-group cancellation; the second measures signed
+height cancellation. Split G_r=O_r+E_r using its odd/even parts. Then
+ integral sum_r(|O_r|+|E_r|-|O_r+E_r|)>=0                (6.2)
+measures within-group odd/even cancellation. The target retains (6.2) before
+absolute values, but discards both cancellations in (6.1).
+
+The saved aggregate odd/even totals establish finite cancellation in the
+aggregate. They do not locate it uniquely among (6.1),(6.2), do not describe
+unobserved heights, and do not prove that any one mechanism dominates at
+all scales. Selected finite peak ratios show no certified factor2 over all
+declared blocks. No continuous sign or prime-specific theorem follows.
+
+Program7 exposes the recovery issue exactly, without an asymptote. On (B,2B]
+every composite has all prime factors<=B, since its largest prime is<=q/2<=B.
+Its squarefree composites therefore form cofactor1 under P={primes<=B}; each
+prime q>B remains its own singleton. This grouping's functional is precisely
+ integral [|sum_composite rho_q|+sum_prime |rho_q|],
+with the same partial endpoint and mask conventions. It still excludes both
+prime-to-prime signed cancellation and prime/composite bulk cancellation.
+The previously observed program7 ratios are a structural diagnostic of this
+split, not a new numerical winner or a uniform bound. Larger selected-prime
+sets cannot be declared a harmless refinement/coarsening at all scales solely
+from finite equalities or a better observed ratio.
+
+Every selected program likewise has singleton prime events in (B,2B], since
+its selected primes are below B. Therefore (2.1) NECESSARILY implies
+ sup_V integral sum_(B<p<=V,p prime)|rho_p(t)| dt/(2pi)
+ <=C B^(12/5).                                         (6.3)
+No complete fixed-sign asymptote for rho_p is known from f(p): rho_p depends
+on A_(p-1), the entire old state and the zeta weight. The old coefficient-
+frontier refutations cannot be copied. Equation (6.3) is a real extra absolute
+prime-work requirement, not something paid by the original signed bound.
+
+7. A precise shared-window arithmetic leaf and optional Gram rule
+
+Use the exact orbit antichain D_r(B,V) in (3.1), the common window H_B, and
+the common old block state Z_B=(A_B,c_B,E_B,D_B). At q>B the complete changes are
+ A_(q-1)=A_B+sum_(B<n<q)mu(n)n^-s,
+ c_(q-1)=c_B+sum_(B<n<q)mu(n)/n,
+ E_(q-1)=E_B+zeta(s)[dc delta-D_shell],
+ D_(q-1)=D_B+sum_(B<n<q)n^-s.                           (7.1)
+Q_shell(1)=0. Include every composite, repeated valuation, source unit and
+finite-head term inside the history. The event q is NOT in its own old shell.
+Substitute (7.1) into the frozen compiled C_j and expand all terms. The result
+is a finite signed prime-product-antichain polynomial with shell tuples
+ B<n_i<rd, actual factors mu(rd),mu(n_1),..., and all old-block/source-mode
+crosses. Same-size exchanges have the same source sign; opposite parity
+selected products have opposite odd factors. It must not be replaced by a
+generic independence or a primegap hypothesis.
+
+The PRIMARY next lemma is the ONE common-window integral of the absolute
+joined antichain sums, with all singleton terms and EVERY V, bounded by
+C B^12/5. This still demands more than the original signed work. A different
+detector route may preserve cancellation between cofactor groups instead of
+forcing this stronger control. The current selections do not authorize
+deleting that complement or requiring separate odd/even bounds.
+
+An optional genuinely different sufficient auxiliary is an exact antichain
+work Gram, with explicit cost. Put dnu=kappa(t)dt/(2pi); its full mass is
+<=100/13 by the centered-kernel norm. Let Gamma_r(V,t) be the common-window
+group polynomial BEFORE multiplication by kappa and its mask. With at most B
+groups, Cauchy gives
+ [integral_(|t|<H_B)sum_r|Gamma_r| dnu]^2
+ <=(100/13) B integral_(|t|<H_B)sum_r|Gamma_r|^2 dnu.      (7.2)
+Thus a uniform max-partial Gram bound O(B^(19/5)) suffices. It expands into
+ALL ordered q,q' with the same cofactor and their odd/even crosses, not the
+diagonal alone. More generally positive weights eta_r give the prefactor
+sum eta_r and Gram sum |Gamma_r|^2/eta_r; the detector can enumerate weights
+and derive the required exponent rather than nominate a solution.
+
+This optional Gram is stronger, not already paid. Squaring the work introduces
+higher zeta moments and a potentially worse moving-height cost; the inherited
+twisted-fourth provider cannot be silently reused as their theorem. Its exact
+signed Gram/weight representation is a concrete theorem-search interface,
+not an asserted estimate or a reason to run new samples in this phase.
+
+8. Global telescoping does not pay orbit-resolved absolute variation
+
+At the common window, the exact scalar event identity is
+ kappa j_q=(|F'_q|^2-|F'_(q-1)|^2)/|s|^2-W_0(q,t).
+Here W_0(q,t) means the complete kappa-weighted ZERO-SECTOR integrand on this
+same window, not its unweighted polynomial or its already integrated value.
+Summing ALL events telescopes the two endpoint energies. An orbit subset
+does not telescope: discrete summation by parts produces energy values at
+EVERY change of its membership indicator. Those intermediate full states,
+and their head corrections, must remain. Inserting mu(q)=0 events with zero
+joined work does not create cancellation; their energy and W_0 changes cancel
+exactly before omission.
+
+A bounded endpoint energy never generically bounds partition-resolved total
+variation: a bounded nonnegative sequence can oscillate while separate rise
+and fall classes accumulate large absolute sums. Therefore current all-prefix
+energy/cumulative-work recovery cannot be inverted into (2.1) without a new
+variation/correlation premise. Exact divisor-zero rows can annihilate complete
+constraints, but partial shell rows require their missing divisors; the earlier
+dual-Gram nullspace warning still applies.
+
+Conclusion and status. The selected controls are valid stronger sufficient
+targets. Existing premises prove common-window reduction and unconditional
+B^11/2 envelopes, but no B^12/5 bound. The new useful payment is the uniform
+B^21/10 height correction, with complete outer zeta weight, counterfactual
+branches and analytic compensation retained. Remaining arithmetic is the
+joined actual-state prime-product-antichain correlation, including singleton
+prime work and cross-group recovery costs. No component, full core, Mertens
+improvement or RH theorem was closed. This memo is final and stable; edits
+have stopped.

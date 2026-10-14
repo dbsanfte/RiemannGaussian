@@ -1,0 +1,35 @@
+{
+  "owner": "check_multiscale_bound_discovery",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_check_multiscale_bound_discovery"
+      ],
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_multiscale_bound_discovery operations=5482232 elapsed_seconds=26.062815\n",
+      "stderr": "test_actual_counterexample_has_correct_index_values (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_alternating_target_quotient_discards_unobserved_growth (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_complete_quadratic_cross_cost_is_paid (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_core_numeric_identity_and_flags_never_supply_a_proof (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_endpoint_only_cancellation_does_not_bound_auxiliary_growth (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_fractional_one_sixth_bound_covers_nonaligned_prefixes (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_fractional_one_third_bound_pays_every_phase (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_general_base_and_nonscalar_seed_bound (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_long_transient_fit_is_not_global_closure (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_metric_must_be_strictly_positive_and_symmetric (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_projection_recovery_and_commutation_are_mandatory (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_reachable_subspace_accepts_true_latent_alias (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_redundant_projection_rows_remain_sound (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_row_envelope_and_complete_source_schema_are_required (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_state_domains_and_bound_parameters_fail_closed (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_unit_impulse_cannot_be_erased (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_zero_psd_pivot_cannot_hide_cross_terms (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\ntest_zero_source_closure_uses_zero_reachable_space (test_check_multiscale_bound_discovery.AdmissionTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 26.062s\n\nOK\n",
+      "operations": 5482232,
+      "elapsed_seconds": 26.135883300972637,
+      "tests": 18,
+      "peak_rss_KiB": 25340,
+      "work_accounting": "reported charged operations"
+    }
+  ],
+  "operations": 5482232,
+  "test_count": 18,
+  "limits": {
+    "operations": 50000000,
+    "cpu_seconds": 180,
+    "wrapper_seconds": 190,
+    "address_space_bytes": 805306368
+  },
+  "source_observations": 0,
+  "old_suites_run": 0,
+  "checker_imports_producer": false,
+  "edits_stopped": true
+}

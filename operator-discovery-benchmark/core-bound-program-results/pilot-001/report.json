@@ -1,0 +1,33 @@
+{
+  "RH_proved": false,
+  "all_scale_signed_bounds_proved": 0,
+  "bound_source_inputs": 4,
+  "branch_statuses": {
+    "partial_bound_open_signed_coarse": 27593,
+    "requires_decaying_coarse_bound_outside_recurrence_rule": 8749,
+    "unpaid_detail_power": 24228,
+    "unpaid_recovered_detail_log": 12114
+  },
+  "elapsed_seconds": 15.764787714986596,
+  "generated_bound_programs": 6057,
+  "generated_cancellation_orders": {
+    "0": 4806,
+    "1": 1152,
+    "2": 90,
+    "3": 9
+  },
+  "generated_signed_obligations": 144,
+  "inclusive_operations": 82920169,
+  "main_operations": 62825167,
+  "model_calls_in_search": 0,
+  "new_source_observations": 0,
+  "peak_rss_kib": 704032,
+  "polynomial_count": 880,
+  "previous_projection_numerical_verification_complete": false,
+  "recovery_constructions": 673,
+  "selected_constructions": 36,
+  "source_values_used_for_selection": false,
+  "status": "BOUND_PROGRAM_SEARCH_VERIFIED_WITH_OPEN_SIGNED_LEAVES",
+  "target_branches": 72684,
+  "whole_signed_bound_proved": false
+}

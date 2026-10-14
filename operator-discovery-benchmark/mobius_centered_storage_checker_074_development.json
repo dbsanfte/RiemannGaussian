@@ -1,0 +1,71 @@
+{
+  "schema": "independent-grammar-checker-development-074-v1",
+  "runs": [
+    {
+      "tests": 35,
+      "test_names": [
+        "__main__.SyntheticGrammarTests.test_at_most256_positive_rays",
+        "__main__.SyntheticGrammarTests.test_candidate_keys_and_schema_not_metadata_aliases",
+        "__main__.SyntheticGrammarTests.test_centered_high_exact_balanced_arbitrary_rationals",
+        "__main__.SyntheticGrammarTests.test_complete_label_order_and_binding",
+        "__main__.SyntheticGrammarTests.test_domination_declaration_not_certified_by_grammar",
+        "__main__.SyntheticGrammarTests.test_empty_rays_baseline_both_branches",
+        "__main__.SyntheticGrammarTests.test_exact_arbitrary_denominator_cancellation",
+        "__main__.SyntheticGrammarTests.test_explicit_branch_isolation",
+        "__main__.SyntheticGrammarTests.test_factor_balance_checked_even_for_unknown_mixture",
+        "__main__.SyntheticGrammarTests.test_factor_balance_checked_for_centered_high",
+        "__main__.SyntheticGrammarTests.test_finite_arithmetic_is_explicitly_delegated",
+        "__main__.SyntheticGrammarTests.test_fixed_original_source_binding",
+        "__main__.SyntheticGrammarTests.test_fixed_q1_and_loss65over64_and_arbitrary_denominator_admitted",
+        "__main__.SyntheticGrammarTests.test_full_ray_dimension_and_exact_ray_keys",
+        "__main__.SyntheticGrammarTests.test_half_boundary_registered_in_both_branches",
+        "__main__.SyntheticGrammarTests.test_input_bit_boundary_and_resource_rejection",
+        "__main__.SyntheticGrammarTests.test_known_pure_high_bulk_rejected_in_both_branches",
+        "__main__.SyntheticGrammarTests.test_no_false_proof_scope_declarations",
+        "__main__.SyntheticGrammarTests.test_no_smooth_coordinates_and_general_balanced_sector_ray",
+        "__main__.SyntheticGrammarTests.test_open_unknown_mixture_keeps_nonzero_known_sum",
+        "__main__.SyntheticGrammarTests.test_per_ray_bulk_cannot_cancel_across_positive_squares",
+        "__main__.SyntheticGrammarTests.test_q2_and_out_of_range_rejected",
+        "__main__.SyntheticGrammarTests.test_rational_format_and_float_tampering",
+        "__main__.SyntheticGrammarTests.test_search_metadata_never_overrides_physical_coefficients",
+        "__main__.SyntheticGrammarTests.test_strict_below_half_classification_uses_integer_rationals",
+        "__main__.SyntheticGrammarTests.test_theta_sorted_finite_canonical_and_open_interval",
+        "__main__.SyntheticGrammarTests.test_tiny_nonzero_known_sum_is_rejected",
+        "__main__.SyntheticGrammarTests.test_tiny_nonzero_unknown_is_not_rounded_away",
+        "__main__.SyntheticGrammarTests.test_unknown_branch_rejected",
+        "__main__.SyntheticGrammarTests.test_unknown_mixture_may_cancel_known_boundary",
+        "__main__.SyntheticGrammarTests.test_unknown_only_direction_is_retained_open",
+        "__main__.SyntheticGrammarTests.test_unknown_permission_is_per_ray",
+        "__main__.SyntheticGrammarTests.test_verification_does_not_mutate_candidate",
+        "__main__.SyntheticGrammarTests.test_zero_and_negative_weights_must_be_omitted",
+        "__main__.SyntheticGrammarTests.test_zero_direction_positive_weight_admitted"
+      ],
+      "operations": 16147,
+      "elapsed_seconds": 0.021414684015326202,
+      "returncode": 1,
+      "failures": [],
+      "errors": [
+        {
+          "test": "__main__.SyntheticGrammarTests.test_theta_sorted_finite_canonical_and_open_interval",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_centered_storage_074.py\", line 185, in test_theta_sorted_finite_canonical_and_open_interval\n    self.assertRejected(candidate(theta=theta), \"centered_high\")\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_centered_storage_074.py\", line 20, in candidate\n    [\"smooth:\" + t for t in theta],\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_centered_storage_074.py\", line 20, in <listcomp>\n    [\"smooth:\" + t for t in theta],\nTypeError: can only concatenate str (not \"float\") to str\n"
+        }
+      ]
+    },
+    {
+      "tests": 1,
+      "test_names": [
+        "__main__.SyntheticGrammarTests.test_theta_sorted_finite_canonical_and_open_interval"
+      ],
+      "operations": 7,
+      "elapsed_seconds": 0.0003093229606747627,
+      "returncode": 0,
+      "failures": [],
+      "errors": []
+    }
+  ],
+  "unique_new_synthetic_tests": 35,
+  "final_status": "PASS",
+  "scientific_data_or_outcomes_read": false,
+  "independent_of_producer_learner_and_feedback_analyzer": true,
+  "unresolved_test_failures": []
+}

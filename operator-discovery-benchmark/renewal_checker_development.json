@@ -1,0 +1,16 @@
+{
+  "operations": 116949,
+  "runs": [
+    {
+      "test": "test_check_renewal_shift_candidates",
+      "returncode": 0,
+      "operations": 116949,
+      "tests": 10,
+      "runtime_seconds": 0.039,
+      "precision_bits": 192,
+      "maximum_synthetic_horizon": 63,
+      "stdout": "SYNTHETIC_WORK module=test_check_renewal_shift_candidates operations=116949\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.039s\n\nOK\n"
+    }
+  ]
+}

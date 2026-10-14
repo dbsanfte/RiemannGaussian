@@ -1,0 +1,101 @@
+PREREGISTERED SHARED-INDEX SIGNED COVARIANCE SEARCH079
+
+Purpose
+The unresolved078 scale-change bound is now the detector's actual input.
+Search local signed covariance estimates and an exact argument assembling
+them into a complete flux bound. Coefficient energy, complete small-scale
+base, transport and conditional cover are paid separately. No finite
+observation supplies an all-scale arithmetic correlation theorem.
+
+Sources and exact language
+Use existing076 surviving fixed residuals q1_p16=G and
+q1_p04=G+(3547/8192)G(u//3), fixed folded primes2,3,5,7. The variable prime
+predictor q1_p00 and all older operators remain preserved outside this
+fixed-kernel pilot. G(u)=M(u//8)-M(u//10)-M(u//4)+M(u//5).
+Reuse already admitted078 kernels and literal half parents. Rebind every
+saved interval function to the independently expanded fixed folded prefix
+kernel. There is no new mu prefix or fresh historical holdout.
+
+For h=floor(u/2), D=V(u)-V(h), refine the union of both coefficient
+endpoint sets on the SAME physical integer n. Cells retain parent/half
+category, both original coefficient polynomials, squarefree count and
+signed mu count. Category10 means outside the respective support. All
+occupied cells are present, including coefficient gaps and outer support.
+Both complete endpoint residuals recombine exactly. Compare saved078
+category features wherever that cutoff was previously evaluated.
+
+V categories0..6 are signed terminal factor layers;7..9 are signed
+least-prime bins with cutsceil(H^(gamma/3)),ceil(H^(2gamma/3)),ceil(H^gamma).
+The finite pilot reuses17 reduced gamma in[1/7,2/3], denominator<=9.
+The API permits other rational roots; the degree gate and explicit bit/
+work limits are resource/domain restrictions, not arithmetic refutations.
+Shared named count-root tokens denote the SAME real quantity; intersect
+their inherited enclosures and reject conflicting definitions.
+
+The cell coefficient vector is delta_i(n)=1_pc=i*c_u(n)-1_hc=i*c_h(n).
+Construct D_i=sum mu(n)delta_i(n) and the complete diagonal Gram
+B_ij=sum mu(n)^2 delta_i(n)delta_j(n), on the P-coprime domain.
+For each proper rational ray a, S_a=a.D, Q_a=a^T B a, search
+ S_a^2 <= kappa*u^(q-1)*Q_a, q=1,129/128,33/32.
+This retains signed cross terms in S_a before asking for their price.
+
+Unconditional uniform proof primitives
+For fixed prefix coefficients b_d after exact P-folding, integrate the
+normalized step kernel squared over rational bands to obtain I. Sum its
+band square weights to obtain floor-error E. Then ||c_v||_2^2<=I v+E.
+At base6300 define K=I+E/base; for h>=base,
+ Q_a<=2 max|a|^2(||c_u||_2^2+||c_h||_2^2)<=3K max|a|^2 u.
+Unit category0 vanishes for v>=base because base>=max folded divisor and
+the folded coefficient sum is0. Terminal r is inactive when r*gamma>=1:
+every r-factor product with factors>ceil(H^gamma) exceeds H. These exact
+certificates determine the active target vector d; no empirically empty
+coordinate is silently removed.
+
+Let A=sum|b_d|/d. |R(v)|<=A v gives R(v)^2/v^q<=2base*A^2 for EVERY
+integer1<=v<2base and EVERY real1<=q<2. This pays the complete recurrence
+base for these fixed residuals, without enumerating old arithmetic.
+
+Search, noncircularity and assembly
+Generate axes and two-coordinate rays e_i+r e_j on active coordinates,
+r in{-2,-1,-1/2,1/2,1,2}. A ray must have a physical two-cell determinant
+witness proving its coefficient function is not proportional to the full
+flux coefficient. This excludes disguised total bounds; it does not prove
+the collection of local estimates easier than the original problem.
+
+Floating vectorized covariance ratios propose prices and a weighted-l1
+LP proposes d=sum t_r a_r. Reconstruct t EXACTLY by rational elimination.
+Discard unwitnessed rays and repeat the LP. For every selected leaf,
+recalibrate kappa upward to a2^-40 grid from exact interval ratios (with
+positive grid minimum), then independently check every discovery row.
+Price radical enclosures use upward2^-24 grid. Exact triangle inequality
+gives the CONDITIONAL complete flux price
+ J=(sum |t_r| sqrt_upper(3K*kappa_r*max|a_r|^2))^2.
+It proves (d.D)^2<=J u^q ONLY IF ALL local covariance leaves hold uniformly.
+Young then gives F(u)<=3/4 F(h)+3J, or F(u)<=F(h)+2J, for F=R^2/u^q.
+Combined with the paid base, the first gives F<=max(Bbase,12J), conditionally.
+No such all-scale leaf is currently proved. q>1 fixed is not RH by itself.
+
+Discovery and validation
+Discovery85 parents: k256,512,1024,2048,4096; phases0,5,...75,79;
+u=80k-phase. Validation170 parents: k192,384,768,1536,3072,6144,8192,
+16384,32768,65536, same phases. All literal half parents already exist.
+Search2 sources*17 gamma*3 q=102 cover proposals. Select at most6 by
+exact conservative J within each fixed(source,q); tie break by fewer
+leaves then smaller gamma. Freeze formulas and prices BEFORE generating
+validation shared cells. Read both sources at needed selected cutoffs.
+Validation independently checks every selected leaf on all170 parents.
+Failure rejects that fixed leaf/cover premise, not the original residual.
+Do not repair validation failures by silently enlarging kappa.
+
+Budgets, archives and scope
+Three worker processes, native library threads1, aggregate16GiB,
+7200s/stage, per-task work proxy3e11. Prospectively reserve source/array/
+quadratic work and retain all scientific failures. Direct byte comparisons
+preserve499 older frozen files; freeze10 new files before execution. No
+precautionary hashes. Only new079 tests, no old test/scientific replay.
+Independent Sol6.1 checker and substantial mathematical/code review used.
+
+Remaining original obligations
+Uniform generated signed covariance leaves, original source correlation
+and separable price, full parameter family and entire head/core/RH transfer.
+Conditional cover certificates are not signed growth theorems or RH proofs.

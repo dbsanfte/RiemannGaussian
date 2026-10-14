@@ -1,0 +1,98 @@
+044 PROTOCOL: LOCALLY COMPATIBLE ARITHMETIC AUXILIARIES
+
+Freeze before candidate scores or final source programs. Prior043 selected
+families were analytically refuted by their fixed coefficient limits. The
+authoritative parent is pilot-001/analytical_followup_001/next_search_input.json.
+Do not rerun that study or treat finite bounds as convergence proofs.
+
+Target and language
+e_N=1-sum_(2<=n<=N)c_n(N)f_n, f_n(cell k)=(k mod n)/n.
+c_n=-mu(n)W0(n,N)+lambda*a(n)V(n,N).
+W0 tends1 at each fixed n and is bounded between0 and1. V tends0, by one of
+four typed rules: difference of two limit-one weights, positive reciprocal-N
+power, positive reciprocal-level power, or a band n>floor(N^theta),0<theta<1.
+W may be a cutoff taper, logarithmic-coordinate taper, vanishing exponent
+n^[-rate/L(N)^integer_power], product, or unit. All roots are exactly rounded
+to dyadics at4ceil(log2N) bits. Log coordinate is rounded with an exact common
+integer-power test at rational boundaries; otherwise Arb certifies its floor.
+Arbitrary rational exponents are permitted by the API under bit/work limits.
+The finite581-recipe bank is not a permanent denominator whitelist. Arithmetic
+channels are actual mu,Liouville,mu*mu,radical sign,1,and mu±Liouville/2.
+No coefficient or exponent is fit separately at different support scales.
+
+Each AST has a structural fixed-index coefficient-limit proof. This is only
+a necessary condition for norm convergence; it does not price the joint tail.
+The limit is for the unbounded exact mathematical recipe. The evaluator may
+refuse large N at its declared resource limits; it is not an all-N computation.
+The unrestricted fixed-sign arithmetic channels remain legal in vanishing
+auxiliaries. No heuristic finite-prime relaxation substitutes for their source.
+
+Search and roles
+581 fixed formulas,5810(q,b) refinements,q2/3,b=-1,-1/2,0,1/2,1.
+Training parents48,96,144; children up to432. One shared Gram of65536 cells
+and a full signed periodic covariance Gram provide NUMERICAL ranking proxies.
+They include an analytic tail formula, but floating evaluations are not norm
+certificates. Freeze all scores, selected formulas and proof thresholds before
+compiling final parent supports257,389,521,children up to1563.
+
+Refinement identity e_(qN)=b D_q e_N+h_N; ||D_q||=q^-1/2.
+Forcing target ||h_N||²<=A/L(N)^eta, L=1+floor(log2N),0<eta<=1.
+eta bank1/5,1/3,1/2,2/3,1; A bank1/64,1/16,1/4,1,4.
+For each rule choose strongest eta then least A passing every training proxy.
+Four selection strata: arithmetic auxiliary with b!=0; scale refinement with
+b!=0; baseline-only control with b!=0; b0 endpoint-restatement control.
+Rank: training bound match, count needing auxiliary signed cross, count needing
+refinement signed cross, eta, worst observed forcing and target log slopes,
+last forcing proxy, stable family/q/b. Require distinct selected rules.
+If a stratum has no bound match, fixed fallback A4,eta1/5 is diagnostic only.
+No promised winner or predetermined sign. Retain all5810 scores and failures.
+
+Signed diagnostic
+Let h0 be the forcing of the same baseline and v=h-h0. Price all three norms
+to enclose2<h0,v>=||h||²-||h0||²-||v||². Also enclose the refinement cross
+||h||²-||e_(qN)||²-b²||e_N||²/q. Report whether the certified threshold fails
+after replacing that cross by its absolute value. A negative cross alone is
+not evidence that the observed bound requires cancellation. Necessity at a
+finite support still does not provide a uniform signed estimate.
+
+Final certification
+General diagnostic vector C-sum c_n f_n-sum d_q I_q has explicit rational C;
+RH-bearing targets strictly require C=1 and no indicators. Auxiliary vectors
+have C=0 and are never substituted for the target. Compile complete batches
+and independently replay exact dilation before any final norm evaluations.
+Producer: exact integer events,Arb192,head1048576. Checker: independently
+constructed heap events,Arb256 or higher,all steps and exact endpoint replay.
+Identically zero vector alone uses H0 to avoid a redundant million-cell replay.
+
+Tail: after all indicators activate, compute full periodic mean-square V by
+Jordan-2 divisor squares, retaining signed sums before squaring. The imported
+Montgomery--Vaughan1973 large sieve and matrix duality give block(L+K²)V,
+therefore tail<=V*[1/(H+1)+K²/((H+1)(H+2))]. Use the minimum of this and the
+exact pointwise bound M²/(H+1). No observed signs or empirical period truncation
+enter this bound. No minus-one sharpening is assumed. It is a known imported
+theorem used to certify fixed vectors, not a newly discovered RH estimate.
+Primary: https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf
+
+Proof scope and continuation
+Burnol's imported support lower bound excludes fixed geometric energy decay
+and log energy exponents above1; such false targets are not selection goals.
+Primary: https://arxiv.org/pdf/math/0103058 (Theorem1.3).
+The conditional log-forcing gate keeps its uniform premise OPEN. Final finite
+failure refutes the stated bound for every N>=257, not every possible later
+geometric chain or all eventual decay of the family. Final finite success
+does not discharge the uniform premise. Keep exact unsigned replacements,
+source constraints,units and cross terms in the next proof-search input.
+Neither RH, target convergence, local limits nor numerical trends can supply
+the missing signed bound. Original F and centered-Mobius obligations stay OPEN.
+
+Resources and persistence
+16GiB aggregate allowance; conservative worker allocation preflight plus2GiB
+parent reserve; two norm workers; two training BLAS threads. Cached exact
+weights/envelopes, shared numerical Grams and functional exact tuple memoization.
+No precautionary hashes. Source snapshots compared by bytes after completion.
+Index4096,support2048,parameter4096bits,intermediate8192bits.
+Search150b proxy operations; producer1b/checker3b per norm;3600s phase guards.
+Proxy operation counts are not measured CPU instructions or constant-time costs.
+Per-worker RSS high-water marks are not an aggregate peak-memory measurement.
+Run only new focused tests before freeze; no older unchanged suite or study.
+Write raw certificates immediately; preserve any failure and never overwrite a run.

@@ -1,0 +1,35 @@
+{
+  "status": "independently_verified_guided_parameter_jet_calibration",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/parameter-jet-results/calibration-001",
+  "checks": {
+    "frozen_sources_and_explicit_guided_scope_checked": true,
+    "general_rational_inputs_checked_by_independent_binomial_polynomials": true,
+    "actual_arithmetic_jets_checked_by_prime_factor_polynomials": true,
+    "kernel_jets_checked_by_native_series_and_rigorous_Cauchy_contours": true,
+    "complete_parameter_family_jets_and_strict_endpoints_checked": true,
+    "exact_prime_power_and_root_decoded_prime_counts_checked": true,
+    "finite_difference_values_checked_by_incomplete_gamma": true,
+    "unproved_coupled_global_premise_and_RH_status_preserved": true
+  },
+  "general_grammar_extension": "arbitrary-order rational Dirichlet parameter jets and independent coefficient/kernel slopes",
+  "identity": "lim_(a->0+) (G_a(x)-1)/a = li(x)-sum_(p^k<x)1/k, for every real x>1",
+  "all_scale_identity_argument": "parameter_jet_proof.txt",
+  "proof_is_machine_formalized": false,
+  "exact_coefficient_values_checked": 8960,
+  "rigorous_Cauchy_kernel_coefficients": 48,
+  "complete_family_jet_values_checked": 168,
+  "decoded_prime_cases": 14,
+  "complete_difference_quotient_cases": 42,
+  "observed_convergence_cases": 14,
+  "observed_convergence_total": 14,
+  "coupled_RH_sufficient_target": {
+    "premise": "For every real x>=2 and every 0<a<=a0, |G_a(x)-1|<=C*a*sqrt(x)*(1+log(x))^L",
+    "C_and_a0_finite_positive_L_fixed_nonnegative_integer": true,
+    "uniform_premise_proved": false
+  },
+  "scope": "guided_identity_recovery_not_autonomous_prime_estimate_discovery",
+  "new_prime_distribution_bound_proved": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "verification_sha256": "a603952267baf6288d471b9ff9d763a0a3c6a6b0c73745e76604fac65c07c28b"
+}

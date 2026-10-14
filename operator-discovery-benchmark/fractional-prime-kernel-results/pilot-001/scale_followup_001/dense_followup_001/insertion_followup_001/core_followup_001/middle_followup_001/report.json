@@ -1,0 +1,764 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_limit_bytes": 17179869184,
+  "bound_candidates": 43745,
+  "decay_operations": 5169955,
+  "development_operations": 34968654,
+  "elapsed_seconds": 48.2774835510063,
+  "final_operations": 23168048,
+  "finite_final_statuses": {
+    "FINITE_PASS": 237,
+    "FINITE_REFUTATION": 3
+  },
+  "forms": 673,
+  "grammar_operations": 2799,
+  "hashes_used": false,
+  "independent_checker_operations": 304929574,
+  "independent_final_source_values": 112,
+  "largest_individual_worker_peak_rss_kib": 65836,
+  "new_frozen_source_count": 16,
+  "new_middle_source_values": 868,
+  "old_suites_or_studies_replayed": false,
+  "parent_peak_rss_kib": 704032,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13
+  ],
+  "producer_worker_counts": {
+    "1286572": {
+      "operations": 437847461,
+      "peak_bytes_estimate": 72839712,
+      "total_primitive_counts": {
+        "cache_hits": 282859,
+        "exact_power_bits": 2073,
+        "exponential_terms": 74908,
+        "gamma_upper_atoms": 81229,
+        "integer_weight_entries": 78844,
+        "log_atoms": 6375,
+        "mu_sieve_entries": 197796,
+        "power_atoms": 6375,
+        "prime_trial_divisions": 103,
+        "signed_sum_terms": 107036
+      },
+      "worker_peak_rss_kib": 65452
+    },
+    "1286573": {
+      "operations": 430110983,
+      "peak_bytes_estimate": 71227680,
+      "total_primitive_counts": {
+        "cache_hits": 290315,
+        "exact_power_bits": 2118,
+        "exponential_terms": 77584,
+        "gamma_upper_atoms": 81168,
+        "integer_weight_entries": 81604,
+        "log_atoms": 4665,
+        "mu_sieve_entries": 204977,
+        "power_atoms": 4665,
+        "prime_trial_divisions": 104,
+        "signed_sum_terms": 109084
+      },
+      "worker_peak_rss_kib": 65104
+    },
+    "1286574": {
+      "operations": 440828945,
+      "peak_bytes_estimate": 73256576,
+      "total_primitive_counts": {
+        "cache_hits": 285704,
+        "exact_power_bits": 1993,
+        "exponential_terms": 75014,
+        "gamma_upper_atoms": 81813,
+        "integer_weight_entries": 78528,
+        "log_atoms": 6382,
+        "mu_sieve_entries": 196890,
+        "power_atoms": 6382,
+        "prime_trial_divisions": 98,
+        "signed_sum_terms": 108178
+      },
+      "worker_peak_rss_kib": 65836
+    }
+  },
+  "selected": [
+    {
+      "C": "1/8192",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_center_control",
+      "counterexamples": [],
+      "delta": "0",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_004_delta_0",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": true,
+        "id": "parent_transport_004",
+        "weights": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/8192",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_neighbor_transport",
+      "counterexamples": [],
+      "delta": "0",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_012_delta_0",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/8192",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "signed_auxiliary_control",
+      "counterexamples": [],
+      "delta": "0",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "id": "middle_energy_0604",
+        "lambda": "1/4",
+        "signed_auxiliary": true,
+        "support": [
+          5,
+          8
+        ]
+      },
+      "id": "middle_energy_0604_parent_transport_012_delta_0",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/4096",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_center_control",
+      "counterexamples": [],
+      "delta": "1/7",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_004_delta_1_7",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": true,
+        "id": "parent_transport_004",
+        "weights": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/4096",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_neighbor_transport",
+      "counterexamples": [],
+      "delta": "1/7",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_012_delta_1_7",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/4096",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "signed_auxiliary_control",
+      "counterexamples": [],
+      "delta": "1/7",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "id": "middle_energy_0604",
+        "lambda": "1/4",
+        "signed_auxiliary": true,
+        "support": [
+          5,
+          8
+        ]
+      },
+      "id": "middle_energy_0604_parent_transport_012_delta_1_7",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/2048",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_center_control",
+      "counterexamples": [],
+      "delta": "1/3",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_004_delta_1_3",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": true,
+        "id": "parent_transport_004",
+        "weights": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/2048",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_neighbor_transport",
+      "counterexamples": [],
+      "delta": "1/3",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_012_delta_1_3",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/2048",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "signed_auxiliary_control",
+      "counterexamples": [],
+      "delta": "1/3",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "id": "middle_energy_0604",
+        "lambda": "1/4",
+        "signed_auxiliary": true,
+        "support": [
+          5,
+          8
+        ]
+      },
+      "id": "middle_energy_0604_parent_transport_012_delta_1_3",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/1024",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_center_control",
+      "counterexamples": [],
+      "delta": "1/2",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_004_delta_1_2",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": true,
+        "id": "parent_transport_004",
+        "weights": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/1024",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_neighbor_transport",
+      "counterexamples": [],
+      "delta": "1/2",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_012_delta_1_2",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/1024",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "signed_auxiliary_control",
+      "counterexamples": [],
+      "delta": "1/2",
+      "finite_status_counts": {
+        "FINITE_PASS": 16
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "id": "middle_energy_0604",
+        "lambda": "1/4",
+        "signed_auxiliary": true,
+        "support": [
+          5,
+          8
+        ]
+      },
+      "id": "middle_energy_0604_parent_transport_012_delta_1_2",
+      "status": "OPEN_AFTER_FINITE_TESTS",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_center_control",
+      "counterexamples": [
+        {
+          "N": 211,
+          "parity": 0
+        }
+      ],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 15,
+        "FINITE_REFUTATION": 1
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_004_delta_1",
+      "status": "REFUTED_FIXED_RECURRENCE",
+      "transport": {
+        "center_only": true,
+        "id": "parent_transport_004",
+        "weights": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "target_neighbor_transport",
+      "counterexamples": [
+        {
+          "N": 211,
+          "parity": 0
+        }
+      ],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 15,
+        "FINITE_REFUTATION": 1
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0000",
+        "lambda": "0",
+        "signed_auxiliary": false,
+        "support": []
+      },
+      "id": "middle_energy_0000_parent_transport_012_delta_1",
+      "status": "REFUTED_FIXED_RECURRENCE",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_012",
+        "weights": [
+          "1",
+          "0",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    },
+    {
+      "C": "1/128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "archive_family": "signed_auxiliary_control",
+      "counterexamples": [
+        {
+          "N": 211,
+          "parity": 0
+        }
+      ],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 15,
+        "FINITE_REFUTATION": 1
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "middle_energy_0084",
+        "lambda": "4",
+        "signed_auxiliary": true,
+        "support": [
+          0,
+          4
+        ]
+      },
+      "id": "middle_energy_0084_parent_transport_011_delta_1",
+      "status": "REFUTED_FIXED_RECURRENCE",
+      "transport": {
+        "center_only": false,
+        "id": "parent_transport_011",
+        "weights": [
+          "2/3",
+          "1/3",
+          "0"
+        ]
+      },
+      "uniform_middle_bound_proved": false,
+      "uniform_recurrence_proved": false
+    }
+  ],
+  "status": "ACTUAL_SIGNED_MIDDLE_CONTROLS_SEARCHED_UNIFORM_WORK_OPEN",
+  "training_operations": 275919232,
+  "transports": 13,
+  "uniform_middle_bound_proved": false,
+  "uniform_recurrence_proved": false,
+  "workers": 3
+}

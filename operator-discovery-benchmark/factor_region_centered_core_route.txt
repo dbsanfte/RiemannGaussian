@@ -1,0 +1,70 @@
+EXACT CORE-PATTERN CENTERING: AN UNCONDITIONAL SUBPOWER RESIDUAL FEATURE
+New analytical proposal only. No frozen detector, candidate, review or selection is altered. The result below concerns a centered arithmetic component, not the full actual mu/c critical energy or RH.
+
+1. Exact source operators.
+Let c=mu*lambda, z=floor(X^theta), theta>0 fixed, u=floor sqrtX, X an integer>=1. For y>=0 define F_X(y) as the complete c-prefix over sources m=p^e b<=floor y, p prime<=z, e positive EVEN, b<=u, P^-(b)>p, P^-(1)=infinity. This is the original small-prime/small-core/even component BEFORE its fixed filter.
+Define exact integer counting operators:
+ B_X(y)=sum_(p<=z prime) max(0,pi(min(u,floor(y/p^2)))-pi(p)).
+ D_X(y)=#{(p,q,r): p<=z prime; p<q<r prime; qr<=u; p^2 qr<=floor y}.
+ Q_X(y)=#{(p,q): p<=z prime; p<q prime; q^2<=u; p^2 q^2<=floor y}.
+B counts EXACT exponent2/prime-core sources, D exponent2/distinct-two-prime cores, Q exponent2/repeated-prime cores. These are source coordinates, not independent arbitrary prime signs. The local coefficients are respectively -4,+8,+4. Thus
+ R_X(y)=F_X(y)+4 B_X(y)-8 D_X(y)-4 Q_X(y)
+contains EXACTLY the remaining sources: exponent2/unit cores; exponent2/cores with at least3 prime factors counted with multiplicity; and all even exponents>=4 with every allowed core. All boundaries and squareful cores are retained. There is no asymptotic subtraction in this definition.
+
+2. Unconditional all-scale residual bound, with explicit constants.
+For every integer X>=1 and every real0<=y<=2X,
+ |R_X(y)| <=16 X^(2/3) [1+log(2X)]^2.
+This needs no PNT, RH, random-sign model or signed prime-correlation theorem.
+
+Proof. Write L=1+log(2X). Actual |c|=2^omega<=d2, so sum_(b<=v)|c(b)|<=v(1+log v) for v>=1 by harmonic divisor summation.
+
+Exponent2/unit cores contribute at most2sqrt(2X)<=3sqrtX.
+
+For exponent2 and Omega(core)>=3, every core prime is>p, hence core>p^3 and p<=u^(1/3)<=X^(1/6). Counting all integer p and dropping roughness only for an absolute upper bound gives at most2 X^(1/6)*u(1+log u)<=2 X^(2/3)L. This includes nonsquarefree cores and all their actual signs.
+
+For even exponent e>=4, each prime has at most log(2X)/(2log2)<=L possible positive even exponents. For each such exponent the core charge is at most L*min(u,2X/p^4). Therefore their total absolute contribution is at most2L^2 sum_(integer p>=2)min(u,2X/p^4).
+Put M=(2X/u)^(1/4)>=1. Splitting at M and using floor(M)>=M/2 gives
+ sum_(p>=2)min(u,2X/p^4)
+ <=u M+(2X)/(3floor(M)^3)
+ <=(11/3)(2X)^(1/4)u^(3/4)
+ <=(11/2)X^(5/8),
+where2^(1/4)<3/2 and u<=sqrtX. Thus high even powers contribute at most11 X^(5/8)L^2.
+
+Since X^(1/2),X^(5/8)<=X^(2/3) and L>=1, the three contributions total at most(3+2+11)X^(2/3)L^2. This proves the stated16 constant at EVERY scale, including X1 and every moving source cutoff. Theta affects the exact source set but not this upper bound, because the prime cutoff was relaxed for the absolute estimate.
+
+3. Fixed filtering, normalization, and a genuine cofinal signed innovation estimate for the AUXILIARY feature.
+For any fixed finite rational filter w_d with positive integer divisors d, define Lambda=sum_d|w_d| and the complete centered filtered component
+ T_X(n)=sum_d w_d R_X(floor(n/d)).
+Its cutoff program remains the parent X in every summand. For n in[X,2X), the previous theorem gives |T_X(n)|<=16Lambda X^(2/3)L^2. Hence the NEW feature
+ Z(X)=sum_(n=X..2X-1)T_X(n)^2 / [X^2 ceil(X^(1/3))]
+satisfies0<=Z(X)<=256Lambda^2 L^4 globally. Child Z(2X) uses child cutoffs throughout.
+
+For every integer q>=1, the elementary bound (2+t)^4<=8(16+t^4) and t^4<= (4q)^4 exp(t/q), t>=0, gives
+ Z(X)<=256Lambda^2(128+2048q^4)X^(1/q).
+Therefore a COMPLETE actual signed innovation bound IS proved for this auxiliary feature:
+ Z(2X)-Z(X)<=512Lambda^2(128+2048q^4)ceil(X^(1/q)),
+for every integer q>=1 and every integer X>=1. Nonnegativity allows discarding only the parent Z(X) in this valid one-sided estimate; no source, prime pattern, Gram cross or child boundary is discarded.
+
+For the frozen c filter1-(11/4)D6, Lambda=15/4 and Z(X)<=3600[1+log(2X)]^4. This is a new EXACT CENTERED FEATURE, not a bound for the frozen uncentered S2 singleton or a modification of its original disposition. Fractional normalization eta>=1/3 also admits the same upper bound. For eta0 this argument leaves O(X^(1/3)log^4 X), so it does NOT prove a subpower auxiliary.
+
+4. Why subtracting only the prime-core term is insufficient.
+Assume theta>=1/3 in this lower-bound paragraph, matching the rejected frozen features. Let R1_X(y)=F_X(y)+4B_X(y). Its exponent2/two-prime-core sources all have positive coefficients, and all satisfy p^2*core<=core^2<=u^2<=X. Thus for every y>=X their complete contribution is already present. Unit cores are positive; only exponent2/Omega(core)>=3 and higher even powers can offset them, and section2 bounds those by O(X^(2/3)log X+X^(5/8)log^2 X).
+
+Using ONLY ordinary unconditional PNT, one gets a rigorous lower bound of order X^(3/4)/(log X)^3 for that positive contribution. Put V=X^(1/4). Choose p primes in[V/4,V/3] and q<r primes in[V/2,2V/3]. These sources are disjoint and obey p<q,r, core qr<=4sqrtX/9<=u eventually, and p^2qr<=4X/81<X. PNT gives order V/logX primes in each interval, so order V^3/(logX)^3 distinct sources, each with coefficient+8. These are fixed multiplicative intervals, not a short-interval conjecture. The error powers from section2 are smaller than X^(3/4)/log^3 X. Consequently
+ R1_X(y)>=c X^(3/4)/(log X)^3
+uniformly X<=y<=2X for all sufficiently large X, with some c>0 and an existential threshold. Its normalized squared feature with eta<1/2 therefore still has a positive power lower bound and cannot satisfy a cofinal subpower Lyapunov innovation assertion on its own as a positive potential term. Subtracting the leading prime-core term alone merely moves the obstruction to another logarithmic order at the SAME X^(3/4) power.
+
+PNT source: https://dlmf.nist.gov/27.2.E3. The exact1024/3 asymptotic coefficient for this next core layer is consistent with the scaled triple-prime volume, but this file does NOT rely on or claim that full asymptotic: the fixed-interval lower bound suffices and is proved above. No filtered R1 lower theorem is claimed; signed filters act on its complete shape and require separate analysis.
+
+5. Proof-compatible detector language and recovery obligation.
+A useful typed extension is CountLeastPrimePattern(exponent,core_pattern,cutoff_program,product_domain), with core_pattern=prime, unordered_distinct_prime_pair, repeated_prime_pair, or an explicit residual class. Its admission certificate must prove the unique source parametrization, exact local coefficient, no duplicate prime ordering, all floor/product boundaries, and a disjoint exhaustive complement. It may produce a centered component by subtracting the EXACT signed pattern sum, never an estimated main term.
+
+The detector can search centered squares and nonnegative potentials built from these certified source operators. Each term should retain its fixed declared cutoff/normalizer and be scored on complete data with parent/child programs evaluated independently. The all-scale auxiliary theorem above can admit Z without choosing a fitted winner or assuming its finite score extends globally.
+
+Ordinary-target recovery remains explicit:
+ F_X=R_X-4B_X+8D_X+4Q_X.
+The full filtered G also contains the other eight original source regions. Any Gram identity involving this transformed representation must retain all centered/pattern/other-region cross terms and their true signs. B,D,Q themselves are large coherent counting functions; a triangle recovery charge restores the noncritical powers. A small centered residual is NOT a small ordinary G energy.
+
+If one uses E_G+vZ as a potential, the proved auxiliary increment only bounds the Z part. The complete actual E_G increment remains unresolved. Conversely, adding an auxiliary with this independent cofinal subpower bound cannot by itself evade the original E_G signed-control obligation: one can absorb its entire increment into finite Cq after choosing sufficiently small exponents. No RH conclusion follows unless the FULL mandatory actual innovation premise is proved and the fixed filter's ordinary Mellin/pole recovery assumptions hold.
+
+Interpretation: exact centering of two low-complexity core patterns gives a real unconditional subpower auxiliary at root normalization1/3. It improves expressivity and prevents coherent arithmetic drift from poisoning a Lyapunov feature. It does not close the full signed-correlation recovery cost or establish RH. No claim is made that every finite pattern family must fail, or that this centering was numerically discovered. Global theoretical gate and frozen finite evaluation remain separate.

@@ -1,0 +1,235 @@
+Fresh-scale universal nonconstant identity falsification gate: design v1
+2026-10-09. New design note only. No current/prior real candidate was evaluated,
+no source rebuilt, no research job run, and no frozen/balanced file changed.
+Read-only source inspection and elementary algebra; no new scored evidence.
+
+Concrete recommendation
+Preregister ONE fresh integer scale, e.gX=7 (H=27), one fixed formal assignment
+u_n=2n+1, and an optional fixed-prime modular version. Bind a fixed candidate's
+exact shared coefficients BEFORE starting the gate. Evaluate the complete
+operator residual at that assignment and at the allzero assignment, without
+constructing1957 expanded source columns, a moment matrix, an SDP or a new rank
+basis. Any independently checked nonzero difference is an exact counterexample
+to this candidate's universal NONCONSTANT FORMAL polynomial identity. Zero means
+NOT_REFUTED_BY_THIS_PROBE, never universal validity. This is structurally different
+from optimizing the same finite grid and preserves the distinction between
+formal variables, arithmetic substitution and scalar bounds.
+
+1. What must be compared
+Let B_X(u) be the complete candidate operator body:366 grouped squares,613 signed
+relations, both regional full15 Gram terms and signed storage increment. Let
+L_X(u)=C*X^2*ceil(X^(1/q))-Delta_X(u) be the unchanged critical target. Define
+ R_X(u)=L_X(u)-B_X(u), N_X(u)=R_X(u)-R_X(0).
+The universal nonconstant claim is N_X identically0 for every required X, with
+ONE fixed coefficient vector independent of X. Per-instance finite-grid slacks
+have no universal operator meaning; exclude them by the API contract. Their
+constant contribution, the target budget and the constant-square normalizer all
+cancel in this difference anyway. q6/C32 may stay explicitly bound, but this
+gate does not test the q/scalar budget obligation.
+
+Parse the original1957 layout completely; use beta=xplus-xminus for each of613
+relations, not individual split weights. Bind exact descriptor IDs/order, every
+square weight, all three full symmetric matrices, source grammar/program and
+candidate hash. Under the already licensed lossless quotient set
+ C_eff=G_child+K, H_eff=G_parent+4G_child.
+The regional body is
+ sum_child U(t)^T C_eff U(t)
+ +sum_parent U(t)^T [H_eff-4C_eff] U(t).
+Using H_eff alone in the parent region would omit the negative storage charge
+and could produce a false rejection. Equivalently evaluate the original three
+matrices with K multiplying child-minus4parent. Full symmetric offdiagonal
+terms count twice. Source formal U(0)=(1,0^5,(-1/2)^9), NOT the actual initial
+arithmetic vector. Do not substitute mu1=1 when extracting a formal constant.
+
+2. Exact rejection logic
+For any complete rational assignment a to variables1..H,
+ N_X(a)!=0 implies N_X is not the zero polynomial overQ,
+ hence refutes its proposed universal FORMAL_EQ at this fixedX.
+This uses one exact witness, not sampling as a universal proof. Reject only
+that frozen candidate's stated identity; it does not refute the grammar's
+feasibility, all possible identities, an arithmetic inequality, or RH.
+Malformed/missing coordinates, unsupported terms, bit/work/time caps or invalid
+source bindings produce UNKNOWN, not a counterexample. A nonzero producer result
+needs independent replay of both complete evaluations and exact source semantics.
+
+The full assignment may deliberately violate primitive relations, including
+u1=1. This is necessary to probe a FORMAL identity in independent variables.
+For example u1^2-u1 is nonzero formally but vanishes at u1=0 or1. Actual Möbius
+substitution can erase formal discrepancies through arithmetic relations. A
+separate arithmetic-value probe can test a differently declared arithmetic
+identity, but cannot replace the formal gate, certify its zero polynomial, or
+establish a uniform scalar budget. The present design collects no actual Möbius
+signs and evaluates no current endpoint.
+
+3. Smallest useful implementation using existing APIs
+A first implementation can reuse the frozen native language builders while
+avoiding the full source-SDP coefficient assembly:
+ cancellation_primitive_state_localizers.build(program,X,...), line263;
+ grouped_arithmetic_language.relation(spec,'mu',H,...), line85;
+ grouped_arithmetic_language.evaluate, aliased to
+ arithmetic_cycle_language.evaluate, line63;
+ cancellation_affine_storage gram_specs/storage_transport/affine_blocks;
+ check_cancellation_primitive_state_localizers.build/check_builder, lines203/245.
+Build the bounded native instance/15-state source, then evaluate each polynomial
+factor numerically in exactQ WITHOUT expanding its square, relation product or
+Gram outer product into a degree4 polynomial. For a square term w*p^2 evaluate
+w*eval(p)^2; for a relation term evaluate eval(relation(spec))*eval(multiplier).
+For each regional row evaluate all15 atoms and its fixed quadratic matrix form.
+Compute target Delta from its kernel J(b)=K(2X,b)-4K(X,b),
+ K(Y,t)=max(0,2Y-max(Y,t));
+where Delta=sum_b J(b)*[P_b^2-P_(b-1)^2], P_b=sum_(a<=b)u_a.
+Equivalently Delta=sum_(t=2X..4X-1)P_t^2-4sum_(t=X..2X-1)P_t^2.
+Using sum_b J(b)*P_b^2 directly would be WRONG: it counts every earlier prefix
+coefficient again. Prefix values suffice. This agrees with the triangular coefficients in
+ grouped_arithmetic_templates.build_instance, lines30-68.
+Reuse constant extraction by a second allzero evaluation. No PSD/sign check,
+new optimization or fresh exact elimination is needed for this identity gate.
+
+This first fragment STILL constructs bounded native source polynomials/archives;
+it avoids1957 expanded columns and the full SDP, not all source construction.
+That scope is practical and should be stated honestly. The existing independent
+builder can reconstruct finite source coverage and evaluate independently, rather
+than trusting a producer's native groups or local checksums. Passing a finite
+check_builder at ONE fresh scale licenses that finite source construction; it
+does not fill the universal compiler-equivalence gap from publication019.
+
+4. Streaming semiring evaluator: useful second implementation
+A new fully covered descriptor interpreter can later evaluate source programs
+inQ or a finite field, streaming values rather than native polynomials. This
+requires independent rules for EVERY descriptor family; omitted families may
+cancel included ones, so an incomplete residual is unsafe for rejection.
+The shared data are factor-certified primitive specifications, integer/root cuts,
+prefix/masked-prefix values and all15 state values at each regionalt. The full
+state is constant1, prefix/half/even/mod3one/prime masks, plus nine divisor-cell
+contrasts. Complete divisor cells retain1<=d<=a<=t and a^j weights forj=-1,0,1,
+with d<=floor(t^theta) and its FULL complement, theta1/3,1/2,2/3. A missed equality
+boundary, denominator or pair multiplicity can manufacture a false witness.
+
+For the210 primitive-state groups, the existing suffix source formula is
+ sum_specs r_spec(u)*sum_{regional t>=anchor(spec)}U_i(t).
+The equivalent streaming form is
+ sum_regionalt U_i(t)*sum_{anchor(spec)<=t}r_spec(u).
+This exact finite Fubini identity permits seven primitive prefix aggregates and
+all15 signed atom coefficients without expanding multiplier polynomials.
+Anchors must match cancellation_primitive_state_localizers._anchor: unit1,
+norm/squarefree/inverse n, prime powers p^e, coprime products a*b and gcd products
+max(a,b). The product anchors are not interchangeable. New gcd specifications
+retain all1<=a<=b<=H with complete factor certificates; coprime specifications
+use their declared a>=2,a*b<=H,gcd1 domain. Aggregate only after COMPLETE coverage.
+The relation polynomials must match grouped_arithmetic_language._relation,
+including squarefree constants, factor-certified gcd compatibility and prime
+power cases; treating every primitive as0 would destroy formal rejection soundness.
+
+A semiring interpreter must have an independently checked correspondence to the
+actual source expressions at the probed finiteX. Tiny regression tests alone
+cannot license arbitrary future terms. Until full coverage/correspondence exists,
+use the native-builder fragment or return UNKNOWN for unsupported descriptors.
+Never monkeypatch shared frozen module globals to swap arithmetic operations.
+
+5. Sparse exact coefficient probes without a dense polynomial
+For a selected canonical NONEMPTY monomial m, letS be its distinct variable
+indices and e_j their multiplicities. Set every variable outsideS to0 and work
+in the quotient ring Q[x_j:j inS]/(x_j^(e_j+1):j inS). Addition/multiplication
+follow usual truncated polynomial arithmetic. The coefficient of m in this image
+is exactly its original coefficient: all exponents are nonnegative, so a term
+above a truncation limit can never contribute back to m. This argument needs no
+global degree bound. For |m|<=4, at most product_j(e_j+1)<=16 live coefficient
+cells are needed per expression, and a naive product uses at most256 pair cells.
+A nonzero residual coefficient is a direct exact formal counterexample. A zero
+coefficient licenses only that monomial at thatX.
+
+This truncated-semiring fragment can reuse the source expression interpreter;
+it must truncate DURING products, not merely discard variables from a completed
+coefficient or assume missing coordinates0. All source terms still contribute.
+A finite selected-monomial schedule can focus on new-index support such as
+(H,H,H,H),(H,H),(1,H), fixed before evaluation. These are examples, not recommendations
+based on endpoint values. The native grammar appears to have maximum degree4
+(state degree2, Gram/square degree4, primitive degree<=2 times multiplier<=2),
+but any completeness claim over all monomials must independently verify that
+bound for EVERY source family. Rejection from one coefficient does not need it.
+
+Evaluating a sparse assignment is NOT the same as extracting one coefficient.
+At u_k=1, all other variables0, R(a)-R(0) sums all positive powers ofu_k.
+u_k^2-u_k^3 vanishes there but is nonzero. For a degree<=4 univariate restriction,
+values at0,1,2,3,4 could reconstruct coefficients exactly after proving the degree
+bound; that costs five evaluations and adds interpolation checks. A truncated
+coefficient ring is more direct when a specific monomial is desired.
+
+6. Modular exact witnesses
+A fixed-prime version can avoid growth of exact rational evaluation denominators.
+Choose a preregistered primep, e.g65537, independently verify primality, and require
+p not divide ANY candidate/source denominator. If H<p, the a^-1 weights are safe;
+candidate denominators still require individual checks. All root cuts/factor
+predicates remain exact integer operations BEFORE reduction, never finite-field
+roots or field-valued gcd tests. Evaluate the complete expression inF_p and
+subtract its allzero value. A nonzero residue proves the rational polynomial is
+nonzero because reduction is a ring homomorphism on the localized rational
+coefficient ring. The same argument works for a truncated monomial coefficient.
+No rational reconstruction or probability claim is needed for a nonzero witness.
+A zero residue can hide nonzero rational coefficients divisible byp, and means
+NOT_REFUTED, not identity. A denominator divisible byp means UNKNOWN; do not
+silently set its inverse to0 or choose another prime after observing the result.
+
+Hand calibrations: (u1^2-u1) at u1=2 is2, nonzero overQ and modulo65537.
+At u1=0/1 it is0, illustrating a missed formal discrepancy. Polynomial65537*u1
+is nonzero overQ but identically0 modulo65537, illustrating a modular false
+negative. For (1/65537)*u1 the declared modular gate is undefined and must return
+UNKNOWN before inversion. These toy cases require no arithmetic sign table.
+
+7. Proposed API and receipt
+preflight_fixed_identity_probe(candidate, source_bindings, program, probes, limits)
+ returns immutable plan/hash, exact coordinate/descriptor layout, H, factor/root
+ domains, planned source/evaluation/checker work and bytes, orUNKNOWN.
+probe_nonconstant_identity(plan, candidate, probe, *, deadline, caps)
+ returns status REFUTED orNOT_REFUTED orUNKNOWN, candidate/source/program hashes,
+ freshX, complete assignment or selected monomial, optionalp, exact source coverage,
+ lhs/body/baseline residual values, difference/coefficient witness, counts and
+ explicit false global_bound/RH/universal_identity_proved flags.
+check_nonconstant_identity_probe(plan, candidate, receipt,...)
+ independently reconstructs finite source semantics and every value/coefficient,
+ checks exact nonzero witness before REFUTED, and charges independent replay.
+Candidate_admitted/exact_admission/infeasibility_proved remainFalse. A producer's
+partial computation or work-limited value can never become a rejection witness.
+No fresh coefficient fitting, new support restriction, changed scalar/PSD cone,
+extra adaptive prime/scale or retry is part of this protocol.
+
+8. Charged-cost preflight and resource discipline
+Do NOT estimate cost from the old5641 rows/1957 columns: those count expanded
+finite moment equations, which this gate deliberately avoids. Native-source
+builder preflights include16*H^4 in grouped_arithmetic_templates and18*H^2 in
+divisor-cell construction; primitive_state.build combines construction and
+retained-source validation. These are source-stage bounds, not the total new
+job meter. Existing nested helpers may each reset local budgets, so simply
+passing max_operations once is insufficient: the new wrapper must sum every
+source/factor/root call plus byte/validation/evaluation/checker charge intoONE
+ledger with explicit reserved independent replay.
+
+For native source data letT=sum of all serialized polynomial term counts that
+must be read, D=sum of their monomial degrees and M their largest coefficient
+bits. Two evaluations cost at most constant*(T+D), plus square/relation products,
+366/613 group weighting and 120pairs per regional row. Count primitive relation
+construction/verification separately or cache by exact specification hash with
+its one-time charged factor verification. Rational operation bit caps must be
+checked on operands before multiplication, with a declared temporary cap and
+immediate result cap; modular operations use a bounded prime and exact integer
+source predicates. Preflight H, source terms/live cells/bytes, assignment bits,
+candidate denominator invertibility, and all planned evaluations BEFORE allocation.
+
+For streaming source-DAG lengthL, one exact-value evaluation costs O(L), and a
+selected-monomial interpreter costs at most16^2 L scalar product units before
+cancellation, plus predicates/factors/cuts. Obtain L from complete descriptor/domain
+loop bounds or an independently covered bounded expression plan; do not assert
+an unmeasured actual-source number here. Reuse prefix and primitive aggregate
+values once perX/assignment, but never treat repeated work as free without an
+explicit cache/binding receipt. The first native-builder gate may preregister
+separate producer-source200m and checker-source200m ceilings, leaving at most50m
+of a joint450m job for bindings/evaluations/tests/receipts; this is a POSSIBLE
+allocation, not evidence the freshX source fits it. If the complete preflight
+cannot establish all stage/byte/memory reserves, stop UNKNOWN before evaluation.
+
+The design can therefore reject fixed tiny-grid overfitting cheaply relative to
+rebuilding an SDP, but it cannot certify the universal nonconstant identity from
+any finite collection of passing probes. Scalar ledger M, optional rowmass
+annihilation gate, signed primitive MU validity, uniform coefficient sharing,
+initial storage cost and cofinalq/global inequality proofs remain separate
+requirements as detailed in primitive_state_free_search_uniform_bridge_analysis_v1.txt.

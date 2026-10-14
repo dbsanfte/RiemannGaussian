@@ -1,0 +1,77 @@
+Publication025: constrained cone search with an independently checked endpoint
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-feedback-cone-search-001
+
+Outcome
+The numerical maximum of three normalized cone-distance penalties fell from
+1 to approximately 0.279626966637625. Thirteen steps were accepted. All three
+trials in iteration14 failed the fixed Armijo condition, so the search stopped
+with line_search_failed and retained the last accepted point. This was not a
+work, memory or time limit. No retry or additional search was performed.
+
+The independent audit completed with ENDPOINT_CHECKED. All5641 original finite
+equations and the learned publication023 equation hold exactly. Positivity
+still fails:226 scalar coordinates are negative; full_child is PSD, while
+full_parent and storage_K fail exact PSD checks. The previous repaired center
+had229 negative scalar coordinates. No feasible operator, universal identity,
+all-scale signed arithmetic bound, infeasibility theorem or RH proof is claimed.
+
+Numerical observations (display-only decimal approximations)
+Scalar half-squared defect:2204.2040494050057 ->616.3548921854913.
+C half-squared defect:0.0435176691994082 ->0.010479495817422479.
+H=P+4C half-squared defect:2.946050801352043 ->0.7109032042901393.
+The final unsuccessful trial objectives were approximately3.7511,0.84272,
+and0.317325; each exceeds its Armijo threshold. The last trial step was about
+1142.5466. These observations do not certify gradients or model optimality.
+
+Method fixed before scoring
+Reuse the independently checked780-pivot/444-free chart from publication024.
+Use its exact repaired endpoint as center: x=x024+N(Dz), starting at z=0.
+Forward increments solve homogeneous equations; exact endpoint restoration
+combines the exact center with D times the exported269-bit increment before
+descending back-substitution and canonical1957-coordinate lifting.
+The numerical map uses80 decimal digits; the two15x15 PSD eigensolves use
+binary64. Cone conditions are all scalar signs, C PSD and H=P+4C PSD.
+
+Only81 homogeneous columns change after the learned row eliminates pivot148.
+Their approximate cone norms determine new positive dyadic scales. The363
+unchanged columns retain their prior scales. No approximate zero removes a
+direction. These scales are heuristics, not independently proved norm bounds.
+After an accepted step, the next starting step doubles, capped at2^900.
+Each iteration allows three halving trials with a recomputed simplex model.
+The128-iteration limit is an upper cap, not a promise of convergence.
+
+Verification and resource use
+All40 combined tests passed before freeze (10.040s), and all40 required frozen
+prescore tests passed (9.992s). One producer and one independent audit ran.
+The audit reused the published chart span proof without replaying the old
+elimination tape, checked exported trace algebra and restored the endpoint
+independently, then checked all original equations, the learned row, signs and
+all three original matrix cones. Native numerical merits remain uncertified.
+
+One joint450m work-proxy reservation:50m preparation/tests/I/O,25m map setup,
+200m proposal,25m exact endpoint and150m independent audit. Actual arithmetic
+proxies were19,688,167;37,074,657;9,936,664;14,488,590 respectively, totaling
+81,188,078. Independent I/O used934,464 proxy units for29,902,308bytes within
+preparation. These counters are accounting proxies, not CPU instructions.
+Producer:86.480559s wall,86.163396s CPU,429824KiB peakRSS (about420MiB).
+Audit:53.391518s wall,53.384787s CPU,436296KiB peakRSS (about426MiB).
+Both used one numerical thread and stayed within6GiB/3600s stage limits.
+Maximum producer rational size was1973bits; audit peak live cells:2,481,379.
+
+Map615618bytes; proposal3312830bytes; endpoint535596bytes;
+independent review7433bytes. The frozen snapshot contains53 files/714148bytes.
+No cryptographic hashes, precautionary digest sweeps or manifest chains ran.
+Previously frozen files remain unchanged. Source modules are
+primitive_state_feedback_cone_search.py, run_primitive_state_feedback_cone_search.py,
+check_primitive_state_feedback_cone_search.py and its _run.py wrapper.
+
+Next work
+The immediate numerical obstruction is the short backtracking allowance,
+not exhausted resources. A subsequent, separately fixed search can allow more
+backtracking while retaining the exact chart, saved positive scales and best
+endpoint. This may improve descent; it does not guarantee cone feasibility.
+Do not change or resume this frozen run under a different rule.
+The learned X7/u_n=2n+1 case remains discovery data. Universal nonconstant
+identity, uniform scalar bound, initial storage cost and ordinary-zeta bridge
+remain unresolved, in addition to the failed finite cone conditions.

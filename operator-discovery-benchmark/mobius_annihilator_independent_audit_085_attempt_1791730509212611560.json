@@ -1,0 +1,58 @@
+{
+  "RH_proved": false,
+  "elapsed_seconds": 0.257031059009023,
+  "hashes_used": false,
+  "independent_exact_score_and_tie_reconstruction": true,
+  "old_tests_run": false,
+  "scientific_source_queries": false,
+  "standalone_identity_column_cumulative_gate": true,
+  "standalone_witness_anchor_one": true,
+  "status": "PASS",
+  "synthetic_catalog_representatives": 28,
+  "tiny_SCS_exact_admission": true,
+  "tiny_exact_cases": [
+    {
+      "cuts": [
+        0,
+        0,
+        0
+      ],
+      "identity_trace": "0",
+      "price": "0",
+      "u": 1
+    },
+    {
+      "cuts": [
+        1,
+        0,
+        0
+      ],
+      "identity_trace": "0",
+      "price": "-3/16",
+      "u": 4
+    },
+    {
+      "cuts": [
+        6,
+        0,
+        0
+      ],
+      "identity_trace": "-2",
+      "price": "-3",
+      "u": 24
+    },
+    {
+      "cuts": [
+        13,
+        0,
+        0
+      ],
+      "identity_trace": "-14",
+      "price": "623/48",
+      "u": 53
+    }
+  ],
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false,
+  "witness_frozen_status_binding": true
+}

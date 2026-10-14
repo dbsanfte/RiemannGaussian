@@ -1,0 +1,387 @@
+FULL PRIME-VALUATION PARITY: RATIONAL OCCUPANCY TRANSFERS,
+PAID SHARED-SQUARE SECTORS, AND THE COMPLETE EXIT FORCING
+
+Scope and findings
+------------------
+This is a new analytical review of
+prime-exchange-results/pilot-001/next_search_input.json and
+PRODUCT_FIBER_SIGNED_REVIEW_001.txt. The source is actual candidate10 mu,
+u=1/3, v=2/3, beta=9/2. All older/frozen files remain unchanged. No
+experiments, tests, arithmetic tables, hashes, numerical study or additional
+agents were used. The formulas here are deductions, not empirical scores.
+
+The squarefree fresh-prime parity transition extends exactly to the FULL
+source by processing all four color valuations at each prime with a rational
+union-mask transfer. Its local sign is minus for FIRST occupation of a color,
+and plus for an additional exponent in an already occupied color. Consequently
+global squarefree parity is not the correct rule on repeated-valuation states.
+Sixteen global occupied-color masks suffice for p, if all local valuation
+allocations and the actual two-leg geometry are retained; exact a=p-d admission
+also needs same-prime leg information or the explicit paid d recovery below.
+
+Two concrete full-source deductions are available:
+  * For any fixed q, the complete a(q^e H) chain sums to -d(H) on q-free
+    H>1, and is identically zero at H=1. Thus the full coefficient square
+    has a paid q-free d bulk and a COMPLETE signed joint prefix-exit forcing.
+  * The entire quadratic region sharing q^2 on BOTH legs with q>n^(1/3)
+    is paid absolutely, with all higher valuations and gcd overlap included.
+    More generally shared q^e, e>=2, has a cofinal threshold 1/(2e-1).
+
+These are useful argument productions, rather than deletion of the
+nonsquarefree source. They do not close the remaining fresh/fresh exit
+correlation or centered main terms. Local rational inversion has an explicit
+all-prime absolute recovery cost, and lower-color companion bounds cannot be
+assumed independently at RH strength. The original full moment remains open.
+
+1. Actual source, exact centers, and paid same-prime recovery
+-----------------------------------------------------------
+Use Dirichlet convolution *, and put
+  U=mu*n^(-u), V=mu*n^(-v), B=U*V,
+  p=beta*(U-delta)*(V-delta), a=p-d,
+where d is the COMPLETE same-prime prime-power part of p. Thus
+  p(n)=beta*(B(n)-U(n)-V(n)+delta(n)),
+  a(1)=a(q^e)=0,
+and a=p at all other n. No higher-prime-power or nonsquarefree term is
+removed from U,V,B or from the off-prime-power a source.
+
+At prime q set t=q^(-u), so q^(-v)=t^2. The nonunit local U,V rows are
+  U(q^e)=-(1-t)*t^(e-1),
+  V(q^e)=-(1-t^2)*t^(2e-2), e>=1.                    (1.1)
+They are negative, and their absolute nonunit masses are both exactly one.
+The same-prime p channel is their nonunit convolution multiplied by beta.
+Every d(q^e)>=0, it vanishes for e<2, and
+  sum_{e>=2} d(q^e)=beta.                            (1.2)
+Therefore its inclusive prefix satisfies, for x>=1,
+  0<=D(x):=sum_{n<=x}d(n)<=beta*pi(sqrt(x))<=beta*sqrt(x).
+In particular
+  X^(-2)*sum_{X<=n<2X}|D(n)|^2<=2beta^2.             (1.3)
+This elementary cofinal payment is sufficient; no unproved prime estimate
+is being used. It is not, by itself, a finite critical-integral bound.
+
+Let P(x),A(x) be the p,a prefixes. Exactly A=P-D. For any fixed retained
+complete center M(x), the two-direction norm triangle gives
+  E(A-M) cofinal iff E(P-M) cofinal.                 (1.4)
+This keeps the exact finite square
+  E(A-M)=E(P-M)+E(D)-2<P-M,D>.
+It does NOT claim the mixed term is independently bounded without a
+bound for P-M. The comparison recovers the full a target with its paid
+same-prime component and initial conventions. Existing paid smaller-pole,
+Lv and unit/head corrections can likewise be used only through their
+already proved full norm comparisons, with their exact centers retained.
+
+For integer X>=1, N=2X-1 and the actual R=A-c*n^(2/3), c=m_u,
+the full centered square remains
+  E_R(X)=X^(-2)*[sum_{h,k<=N}a(h)a(k)W_X(h,k)
+                     -2c*sum_{h<=N}a(h)Psi_X(h)+c^2*M_X],     (1.5)
+  W_X(h,k)=max(0,2X-max(X,h,k)),
+  Psi_X(h)=sum_{max(X,h)<=n<2X}n^(2/3),
+  M_X=sum_{X<=n<2X}n^(4/3).
+Other complete retained centers have the identical exact expansion with
+their own deterministic cross/square kernels. The quadratic projection
+alone is not the target energy.
+
+2. All-valuation four-color transfer and actual parity
+------------------------------------------------------
+Use colors hu,hv,ku,kv, with the first two on the h leg and the last two
+on k. At a processed prime q let alpha_i>=0 be the exponent assigned
+to each color. A zero exponent has local weight one; a positive exponent
+has the U or V weight (1.1). Thus the exact local coefficient is
+  c_q(alpha)=prod_i ell_i(alpha_i),
+  sign c_q(alpha)=(-1)^number_of_occupied_local_colors.          (2.1)
+Its leg exponents are
+  A_q=alpha_hu+alpha_hv, B_q=alpha_ku+alpha_kv.
+The actual indices become q^(A_q)H and q^(B_q)K. This includes primes
+shared between both legs, between both colors of one leg, and every
+higher valuation. No condition gcd(H,K)=1 appears.
+
+For a subsequent increment in color i, its exact local ratio is
+  alpha_i=0: -(1-t_i), activating that local color;
+  alpha_i>=1: t_i, preserving its occupancy and sign,
+where t_i=t for u and t_i=t^2 for v. A repeated exponent is therefore
+not another squarefree parity flip. Two colors occupied at one prime
+give positive sign even when the product valuation is two; one color
+with exponent two still gives negative sign. The parity rule follows
+the actual color factors, not mu of a nonsquarefree product (which is zero).
+
+Here is a complete rational transfer. Let E_i be commuting idempotent
+marks: E_i takes a global occupied mask S to S union {i}, and E_i^2=E_i.
+Let z_h,z_k track the two leg exponents. Then the new-prime operator is
+  T_q(z_h,z_k)=prod_i [1-E_i*(1-t_i)*z_leg(i)
+                                             /(1-t_i*z_leg(i))].       (2.2)
+Expanding it assigns every alpha exactly once, with weight (2.1), and
+updates S to S union supp(alpha). This is an exact 16-state union-mask
+matrix with rational exponent-generating entries. A q is new relative
+to the processed base, but ALL its valuations are admitted at that step.
+If a language instead revisits the same q, global masks alone do not
+say whether q already occupied a color. Its local occupied subset and
+valuation-dependent coordinate shifts must then be recorded explicitly.
+
+Birth is the part supp(alpha) not already in S; global occupancy and
+local q occupancy are different. A color occupied at an earlier prime
+still receives its FIRST local negative q coefficient when this q is
+adjoined. Confusing that coefficient with a positive repeated-q ratio
+would change the arithmetic source.
+
+For exact finite a admission, occupied colors alone do not recognize
+whether a leg is supported on just ONE distinct prime. Add a per-leg
+prime-support count truncated to 0,1,>=2, or retain the full p/d recovery
+in section 1. Counts increase once per processed q on that leg, however
+many local colors/exponents q occupies. The count-one final contribution
+is d and must be subtracted; all units and prime-power zero conventions
+are then correct. Paying d cofinally is legitimate for a theorem
+reduction, but an artifact purporting to equal a pointwise must still
+perform that exact subtraction or use the count state.
+
+3. Sixteen masks are a source basis, not sixteen independent signs
+-----------------------------------------------------------------
+For one leg the four exactly occupied color states have coefficients
+  g_empty=delta,
+  g_u=U-delta, g_v=V-delta,
+  g_uv=B-U-V+delta=p/beta.                            (3.1)
+The full sixteen states are their left/right tensor products. With the
+complete prefix kernel, their integrated values are the Gram entries
+of the corresponding four inclusive scalar prefixes. This is an exact
+linear transformation of the delta,U,V,B source basis; it is not four
+or sixteen independently sampled arithmetic signs.
+
+Consequently extending masks to all valuations is meaningful admission
+work, but mask enumeration alone does not add an independent source rank
+or prove an unresolved moment. The new argument must use the rational
+prime transition, its joint changed kernel, and a genuinely paid forcing
+or coercive recurrence. Individual Gram entries can have either sign;
+only the recovered whole centered square supplies the needed positivity.
+The squarefree-product projection's lack of positive-energy status is
+not repaired by declaring its color amplitude nonnegative.
+
+Lower-color states already include U and V. Their centered square-root
+strength cannot be assumed independently as a free induction base.
+They must enter the SAME well-founded coupled argument with their true
+pole/unit centers; otherwise the proposed color reduction imports an
+RH-strength companion estimate or cycles back to the target.
+
+4. Complete repeated-valuation chain and a paid bulk/exit reduction
+------------------------------------------------------------------
+The local rational series are
+  U_q(z)=(1-z)/(1-tz), V_q(z)=(1-z)/(1-t^2 z),
+  B_q(z)=(1-z)^2/((1-tz)(1-t^2 z)).                  (4.1)
+For q-free H>1 the COMPLETE a chain is
+  A_H(z):=sum_{e>=0}a(q^e H)z^e
+       =beta*[B(H)B_q(z)-U(H)U_q(z)-V(H)V_q(z)]-d(H).          (4.2)
+The defect is ONLY at e=0: for e>=1 and H>1, q^e H is not a prime
+power, even if H itself is. At H=1 the whole a chain is zero, because
+all q^e are unit or prime powers. This exception must not be replaced
+by the raw B,U,V formula without the complete d(q^e) subtraction.
+
+All three series in (4.1) vanish at z=1. Their local absolute masses
+are at most 2,2,4, respectively. Hence all chain sums used below converge
+absolutely, and
+  c_H:=sum_{e>=0}a(q^e H)=-d(H), H>1,q-free;
+  c_1=0.                                             (4.3)
+For e>=3 the chain obeys the exact two-root recurrence
+  a(q^e H)=(t+t^2)a(q^(e-1)H)-t^3 a(q^(e-2)H).       (4.4)
+The lower rows and e=0 d defect remain explicit. Replacing prime-power
+rows by powers of a prime row is invalid.
+
+For fixed q every original pair has the unique form h=q^e H,k=q^f K
+with q-free H,K. Define the complete NONNEGATIVE geometric exit count
+  Exit_{e,f}(H,K)=W_X(H,K)-W_X(q^e H,q^f K).          (4.5)
+It retains both source legs. Exactly
+  sum_{h,k}a(h)a(k)W_X(h,k)
+    =sum_{q-free H,K}d(H)d(K)W_X(H,K)
+      -sum_{q-free H,K,e,f>=0}a(q^e H)a(q^f K)
+                                             *Exit_{e,f}(H,K).        (4.6)
+The first term is the square of the q-free d prefix and has normalized
+cost <=2beta^2 by (1.3). This is an actual all-valuation extension of
+prime parity with a paid bulk, not an assumed squarefree sign rule.
+The exit forcing is SIGNED and is not paid by this identity.
+Every q-free H,K with nonzero W lies below N, a finite set. Absolute
+local convergence justifies (4.3)-(4.6), including the infinite exponent
+tails multiplying an unlifted base kernel. No infinite-product exchange
+over all primes or source-independence premise is used.
+
+When both exponents are positive, adding both individual exits would
+double count their intersection. One exact decomposition is
+  Exit_{e,f}=[W(H,K)-W(q^e H,K)]
+                         +[W(q^e H,K)-W(q^e H,q^f K)].         (4.7)
+Equivalently use the two individual exits minus their simultaneous
+exit intersection. Every old/new largest-prime or low-product cutoff
+must be applied at the base AND lifted pair, with its threshold crossing
+added. A valuation tail above the prefix is not an arithmetic zero: it
+has a retained base contribution in (4.5).
+
+The corresponding exact linear identity is
+  A(n)=-D_qfree(n)-L_exit,q(n),
+  L_exit,q(n)=sum_{q-free H,e>=0}a(q^e H)
+                      *[1_{H<=n}-1_{q^e H<=n}].                (4.8)
+Thus A-M=-[D_qfree+L_exit,q+M]. The paid d comparison reduces the full
+centered goal to the signed exit-plus-center state, with all its
+mixed terms retained. This is a concrete auxiliary domain and exact
+recovery; proving its bound has not yet been accomplished. If q>N,
+every nontrivial lift is outside the prefix and L_exit,q(n)=-P(n)
+throughout the block. Large q alone cannot be called scale gain.
+
+5. A genuinely paid full repeated-valuation region
+--------------------------------------------------
+There is a nontrivial complete repeated-prime sector which CAN be peeled
+without any signed-correlation hypothesis. Fix an integer j>=2 and a
+cutoff exponent rho>0. At integer n select ALL pairs h,k<=n for which
+some prime q>n^rho satisfies q^j|h AND q^j|k. This selection retains every
+higher valuation and every remaining common factor. It is not limited
+to coprime bases or particular color assignments.
+
+For the actual full a coefficients,
+  |a(q^j H)|<=beta*d2(q^j H)<=beta*(j+1)*d2(H),       (5.1)
+even if q divides H. Sum both bases through n/q^j and enlarge primes
+to integers. The absolute pointwise selected quadratic sum is at most
+  beta^2*(j+1)^2*n^2*(1+log n)^2
+                         *sum_{integer q>n^rho}q^(-2j)
+  <=C_j*n^(2-(2j-1)rho)*(1+log n)^2,
+  C_j=beta^2*(j+1)^2*(1+1/(2j-1)).                  (5.2)
+The divisor-sum estimate is used only on nonempty ranges >=1.
+Repeatedly counted pairs are safe in this ABSOLUTE upper bound. An
+exact subtraction uses the union indicator once, or a canonical
+qualifying q; it must not subtract overlapping q sectors repeatedly.
+
+Therefore the FULL normalized selected quadratic contribution obeys
+  C_j*2^max(2-(2j-1)rho,0)*X^(1-(2j-1)rho)
+                                           *(1+log(2X))^2.     (5.3)
+At rho=1/(2j-1) it is cofinal padding. At larger rho it decays until
+rho>=1/j, where the strict prime cutoff makes the sector empty.
+In particular j=2,rho=1/3 gives the explicit cost
+  24beta^2*(1+log(2X))^2.                            (5.4)
+This rho is a NEW shared-valuation cutoff; it is not the bank theta=3/4.
+The j=2 region is nonempty in principle between n^(1/3) and sqrt(n).
+It can contain products of size comparable to n^2 and primitive heights
+of positive-power size; it is not merely the previously paid low-product
+or fixed/polylog primitive-height peel.
+
+Its exact moving entry/exit includes n<q^(1/rho) and q^j|h,k, together
+with h,k<=n. For rational rho use the corresponding exact integer
+threshold. This full quadratic component need not be positive energy,
+but its absolute payment is valid in the complete centered-square
+decomposition (1.5). The main cross terms remain; no positive storage
+or whole source bound is inferred from (5.3).
+
+One should NOT generalize this to a free q^(-u) factor for all repeated
+source valuations. B(q^2) tends to one as q grows because both local
+colors can be occupied once. Hence a(q^2 H) can have order-one amplitude
+for a fixed nonunit H. The saving in (5.3) is a full shared-divisibility
+and prime-density saving, not an invented suppression of that coefficient.
+
+6. Rational finite differences, complete boundaries and inverse cost
+--------------------------------------------------------------------
+Another useful exact kernel form comes from the numerators in (4.1).
+For q-free H,K let T_h W shift H to qH, and T_k W shift K to qK.
+On one color the source transfer is
+  (I-T_leg)/(I-t_i T_leg);
+on the B leg it is
+  (I-T_leg)^2/[(I-t T_leg)(I-t^2 T_leg)].             (6.1)
+The geometric denominators have nonnegative coefficients and convergent
+finite-q masses. Thus complete parity can be moved to FIRST or SECOND
+prime-scale differences of the ACTUAL kernel, with all the exponent
+and lower-color/unit terms in (2.2) retained. It is not necessary to
+pretend the full source is squarefree to perform this transformation.
+
+For example the mixed first difference is exactly
+  (I-T_h)(I-T_k)W_X(H,K)
+   =sum_{X<=n<2X}[1_{H<=n}-1_{qH<=n}]
+                       *[1_{K<=n}-1_{qK<=n}]>=0.               (6.2)
+It counts SIMULTANEOUS exits. A second difference on the h indicator is
+  1_{H<=n}-2*1_{qH<=n}+1_{q^2H<=n}
+  =-1 on n/q^2<H<=n/q,
+   +1 on n/q<H<=n,
+    0 elsewhere.                                      (6.3)
+The joint second differences retain all four annular quadrants. Their
+fresh/fresh quadrant can have both source coordinates near n. This
+frontier is not a smaller-scale forcing merely because another quadrant
+has smaller indices. Deleting it would reinstate the old past-only flaw.
+
+There is an explicit exact inverse in the idempotent occupancy algebra.
+For one color,
+  [1-E_i*(1-t_i)z/(1-t_i z)]^(-1)
+      =1+E_i*(1-t_i)z/(1-z).                         (6.4)
+All positive inverse exponents have coefficient 1-t_i, with NO geometric
+decay. The four-color inverse is the product of these four factors;
+this records every repeated valuation and its recovery cost.
+
+To quantify a LEG prefix cost, for sigma>0 define
+  ||F||_(sigma,T)^2=int_1^T |F(x)|^2 x^(-2sigma-1) dx,
+with the actual step extension F(x)=F(floor x), zero below one.
+Prime dilation F(x/q^e) has norm at most q^(-sigma e)||F||.
+For a finite occupancy vector use the sum of its scalar prefix norms;
+union operators E_i have norm at most one by the triangle inequality.
+The per-color absolute inverse bound is then
+  1+(1-t_i)/(q^sigma-1),
+and the TWO-color per-leg bound is
+  K_sigma(q)=[1+(1-t)/(q^sigma-1)]
+                               *[1+(1-t^2)/(q^sigma-1)].       (6.5)
+For a finite processed prime set the honest bound is product_q K_sigma(q).
+At sigma=1/2 this infinite absolute product diverges: its factors are
+1+O(q^(-1/2)) with a positive comparable leading term, and the prime
+sum q^(-1/2) diverges (already sum_q 1/q diverges by the elementary
+Euler/harmonic argument). To recall that argument, convergence of
+sum_q 1/q would bound all products prod_{q<=Y}(1-1/q)^(-1), whereas
+each product contains the entire harmonic sum through Y in its positive
+Euler expansion. The harmonic sums are unbounded. Thus this does not
+supply a uniform all-prime critical-norm recovery certificate.
+Divergence is not a proof that
+signed source-specific recovery or a cofinal finite-horizon estimate
+is impossible. The finite product, any horizon growth and all companion
+costs must be recorded rather than treated as one bounded operator.
+
+The two-leg rational algebra is exact, but its product-state norm is
+not automatically the diagonal n-prefix moment in (1.5). A coupled
+prefix-vector argument, with the same centers and all mixed entries,
+must supply that step. Subtracting real pole functions also changes
+the below-one and unit forcing: (6.1)-(6.5) act on uncentered actual
+prefixes, not on pole profiles silently set to zero. The centering
+feedback in the new input explicitly keeps those deterministic terms.
+
+7. Dependencies, proposed joint construction, and precise open lemma
+--------------------------------------------------------------------
+The following is a concrete full-source operator+auxiliary+argument
+production, with proved subcomponents rather than a new unnamed moment.
+
+First process each q once with the rational sixteen-mask union transfer
+and its two actual exponent coordinates. Recover a either by the exact
+leg prime-support count or by the paid p/d norm comparison. Preserve the
+entire product/gcd kernel, unit slots, births and simultaneous exits.
+Peel the existing low-product/primitive-height union and the new shared
+q^j sector (5.3) disjointly. This narrows a complete repeated-valuation
+part with an unconditional scale gain instead of assuming it negligible.
+
+Then use (4.6) or the equivalent annular finite-difference form to
+couple the remaining common/difference and occupancy states. Include
+the exact center vector and smooth/pole compensator in the SAME storage
+or induction; the next input's smaller shared-prime conditional rule
+requires that very simultaneous induction and does not establish it.
+The new input also explicitly excludes paying its isolated deterministic
+pole compensation by itself. No birth-state RH estimate or artificial
+independent color signs may enter as a free premise.
+
+The exact remaining lemma is a signed bound or a coercive well-founded
+recurrence for the COMPLETE residual joint exit/birth correlations,
+including the fresh/fresh annulus, common q^1 overlaps, lower shared-q^j
+window left after (5.3), all center crosses and moving cutoff transports.
+Its forcing must be proved from smaller dependencies or an actual source
+identity, and its storage must recover the whole centered moment.
+An assumption that the entire right side of (4.6) is cofinal would just
+rename the original obligation. Separately assuming centered U,V bounds
+would import RH-strength companion information. A recurrence which needs
+the same frontier moment at its own scale without contraction is circular.
+
+The present deductions provide an exact full-source parity mechanism,
+a nontrivial paid repeated-valuation sector, and explicit rational/inverse
+costs. They do not assert a complete signed forcing estimate has been
+proved. This is the useful remaining search boundary.
+
+Final status
+------------
+Proved: full rational occupied-color/valuation transfer with actual
+parity; sixteen-state source-basis interpretation; exact p/d recovery
+and paid same-prime prefix; complete repeated-prime chain and paid-bulk
+signed-exit identity; unconditional shared-q^j quadratic scale gain;
+kernel finite-difference boundaries and explicit finite-prime inverse cost.
+Unproved: the remaining whole centered exit/birth covariance, a closed
+coercive coupled recurrence, the original cofinal moment, or RH.
+Only this new memo was written; all earlier/frozen files remain immutable.

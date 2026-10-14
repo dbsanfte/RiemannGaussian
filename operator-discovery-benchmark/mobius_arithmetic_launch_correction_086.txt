@@ -1,0 +1,33 @@
+086 corrected launch, with the first attempt preserved
+
+The first scientific attempt was explicitly stopped after a confirmed import
+ordering bug. Historical044/045/047/048 runners assign two OpenBLAS/OpenMP
+threads during import, after086's initial one-thread environment assignment.
+All eight training witness calls therefore declined numerical work at their
+strict one-thread guard. No lower witness was admitted, no upper artifact
+completed, and no fresh parent was drawn. Parent1493471 and its pool were
+confirmed terminal after SIGINT, exit130. All artifacts and the seventeen
+scientific source files remain byte-preserved in attempt001. Its abort_manifest
+and aborted_launch_snapshot record the failure. No hash was constructed.
+
+New run_mobius_arithmetic_bank_retry_086.py imports the unchanged086 runner,
+then resets every relevant environment thread flag to1 and controls actual
+loaded BLAS/OpenMP pools using threadpoolctl3.7.0. Native settings are checked
+in parent and each spawned worker, before/after every scientific task, with
+receipts. HiGHS still explicitly receives threads=1 from the unchanged witness
+backend. This repairs launch ordering rather than weakening that guard.
+Official tool source: https://github.com/joblib/threadpoolctl
+
+The fixed operator roster, grammar, seeds, constants, scales, witness starts,
+four10sec proposals, four-addition limit,90sec upper solves and all exact
+checker logic remain unchanged. New artifacts go to attempt001/corrected_launch_001.
+All prior686 frozen sources and the aborted seventeen are independently
+checked byte-for-byte before/after the corrected experiment. The correction's
+five additional sources are frozen separately. A regression starts fresh
+interpreters and three spawned workers, verifies actual native pool limits,
+executes all four tiny MILP proposals per worker, and checks exact admissions.
+
+No scientific failure is deleted or reclassified as success; the first run
+was an invalid launch with an explicit guard rejection, not a negative
+arithmetic result. No validation redraw or outcome-selected policy change.
+Uniform signed remainder/source growth and RH remain unresolved.

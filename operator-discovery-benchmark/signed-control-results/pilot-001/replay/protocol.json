@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "objective": "signed arithmetic control of ordinary zeta across all scales, toward RH",
+  "historical_priority_is_acceptance_gate": false,
+  "code_sha256": {
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "signed_control_report.py": "43aa8156fbb958695e33a91410d46fe105b251ba02c300ce4697e16c2d46a4ca",
+    "signed_control_proof.txt": "30615beeb1600f8ac22d74207c515485f019af8258504cd60d3da750bf3094d6",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864"
+  },
+  "seed": 2026100731,
+  "coefficient_source": "constant-one Dirichlet inverse by triangular divisor rows; no prime/factor oracle",
+  "scale_dictionary": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "orders": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "training_scales": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048,
+    3072,
+    4096
+  ],
+  "validation_scales": [
+    6144,
+    8192,
+    12289,
+    16384,
+    24577,
+    32768,
+    49157,
+    65536
+  ],
+  "moment_observations_in_development": "uniform sample of declared unit cells; exact within sampled cells, not a complete window integral",
+  "sampled_cells_per_window": 24,
+  "least_squares_weights": "1/X, on training integer cumulative responses",
+  "coefficient_rounding_denominator": 512,
+  "projection_denominator": 1024,
+  "critical_inverse_cost_cap": "3/4",
+  "fit_pair_budget": 80,
+  "fit_triple_budget": 120,
+  "random_program_budget": 80,
+  "archive_size": 8,
+  "growth_inference": "OLS log(moment) against log(X), add 1/8 then round upward to 1/16; fit constant from all training windows with factor 2",
+  "growth_exponent_range": "0<=beta<=q+1; infer beta, do not require a predicted formula",
+  "selection": "preserve baseline and one per construction family; then least certified-bridge pointwise exponent, retaining inverse and Lipschitz costs",
+  "final_cases": {
+    "fresh_large_windows": 6,
+    "X_range": [
+      131073,
+      524287
+    ],
+    "fresh_intermediate_windows": 3,
+    "intermediate_X_range": [
+      17,
+      8191
+    ],
+    "fixed_boundary_windows": [
+      1,
+      2,
+      3,
+      15
+    ]
+  },
+  "maximum_final_coefficient_cutoff": 1048574,
+  "precision": 320,
+  "final_evaluation": "separate process after sealing; evaluator-owned OS entropy; exact complete window integrals; no reselection",
+  "control_families": [
+    "all-positive coefficients",
+    "actual inverse through 4096 then all-positive"
+  ],
+  "remaining_assumptions": [
+    "finite integer-scale recurrence language",
+    "at most three scale terms",
+    "even moments through eight",
+    "bounded moment and inverse certificate methods"
+  ],
+  "finite_success_is_uniform_proof": false,
+  "model_or_literature_calls_in_generator_selector": false
+}

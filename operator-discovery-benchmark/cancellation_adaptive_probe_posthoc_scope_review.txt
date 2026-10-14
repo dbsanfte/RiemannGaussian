@@ -1,0 +1,16 @@
+Adaptive cancellation basis repair: posthoc scope clarification
+
+The sealed batch retains all120 exact scores; ten proposed square columns have negative dot against the prior exact separator, and the declared ranking selects eight. These additions enlarge the shared finite cone and invalidate that old separating functional on the enlarged cone. The prior exact all-q/C obstruction remains a theorem about the original dictionary only. It is not a separating certificate for the new dictionary.
+
+New training returned no_certificate_found from a floating LP infeasibility report. No new exact separator was supplied. Consequently this outcome does not establish infeasibility of the enlarged rational cone, a barrier to other basis extensions, a false actual bound, or an RH result. There is no transferred candidate: final status no_candidate and zero final observations are preserved. All global promotion flags remain false.
+
+The independent adaptive checker is being run separately by root. This note does not replace its full source/domain/dot/selection/certificate audit. The current checker supports the observed no-candidate path; a preparation-resource final row with null case/budget would need a separately coordinated future implementation change. That unreachable branch was not altered during the audit.
+
+Artifact bindings:
+spec.json e05b4e215bf3f81e5c46018e34ca1fe2536f2e6e3703e61abf4d7ea47877f5db
+proposals.json cbf614c6b37dc9288568356c045dcb5d0b02b8eebd2a31ef18eb9508f3a42403
+selection_seal.json 623ebf31dd87bd4a54c426161f47fb2560aa3f73941620df9ee3610bf7d772c0
+training.json 0f22a41ba719720117d4f4c72c68e9d347f3fd74ed65809f82cd75785d32492e
+candidate_seal.json 8db835c568a8e374e8388912fd0dd20c88c774279700d9a893a435300ebc3a93
+final.json 37e42a310e54917ad81e35f57966f9e79daf00446f1b60a1cc4ae193868137e1
+producer_receipt.json eb6e546246c0d43b6c4e0ff001460bbd76717535c31c16cac031ab9d34f55d79

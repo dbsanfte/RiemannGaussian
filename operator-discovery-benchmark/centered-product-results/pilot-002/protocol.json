@@ -1,0 +1,2615 @@
+{
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "all_units_valuations_and_crosses": true,
+  "center": "b(n)=a(n)-m_u*(n^(2/3)-(n-1)^(2/3)); b(1)=-m_u",
+  "development": {
+    "centered_product_checker_development.json": {
+      "operations": 244146,
+      "runs": [
+        {
+          "operations": 244146,
+          "returncode": 0,
+          "runtime_seconds": 0.036,
+          "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.036s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_centered_product_fibers operations=244146\n",
+          "test": "test_check_centered_product_fibers",
+          "tests": 8
+        }
+      ]
+    },
+    "centered_product_producer_development.json": {
+      "operations": 53006,
+      "runs": [
+        {
+          "elapsed_seconds": 0.08008212901768275,
+          "operations": 51576,
+          "returncode": 0,
+          "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_centered_product_fibers operations=51576\n"
+        },
+        {
+          "elapsed_seconds": 0.06523467999068089,
+          "operations": 1430,
+          "reason": "new selected-pair admission test only",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_centered_product_fibers operations=1430\n"
+        }
+      ]
+    }
+  },
+  "discovery_scales": [
+    64,
+    128,
+    256
+  ],
+  "gamma_grid": [
+    "0",
+    "1/6",
+    "1/3"
+  ],
+  "grammar": [
+    {
+      "coefficients": [
+        1,
+        -2,
+        -2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 0,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        -1
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 1,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        0
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 2,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 3,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        -2,
+        2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 4,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 5,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 6,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 7,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 8,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 9,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 10,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 11,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 12,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 13,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 14,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 15,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 16,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 17,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 18,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 19,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        2,
+        -2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 20,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        2,
+        -1
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 21,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        2,
+        0
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 22,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    },
+    {
+      "coefficients": [
+        1,
+        2,
+        1
+      ],
+      "cofinal_inverse_admitted": true,
+      "id": 23,
+      "inverse_coefficient_envelope": "|g_l|<=l+1",
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "POLYLOG_RECOVERY"
+    },
+    {
+      "coefficients": [
+        1,
+        2,
+        2
+      ],
+      "cofinal_inverse_admitted": false,
+      "id": 24,
+      "inverse_coefficient_envelope": null,
+      "inverse_root_condition": "|c2|<=1 and |c1|<=1+c2",
+      "status": "EXPONENTIAL_INVERSE_REQUIRES_EXTRA_SOURCE_GAIN"
+    }
+  ],
+  "hashes": false,
+  "independent_cap_per_scale": 200000000,
+  "independent_checker": "direct Mobius/Dirichlet convolutions and weighted prefix/multiples cutoff queries, not pair scatter",
+  "independent_precision_bits": 192,
+  "kernel": "max(0,2X-max(X,h,k))",
+  "main_cap": 50000000,
+  "maximality_scope": "complete producer enumeration; independent direct-query checks of every reported witness, plus fixed cutoff and full-energy checks",
+  "memory_bytes_per_process": 4294967296,
+  "metadata_reserve": 1000000,
+  "original_target_bridge": "full leading-centered R=R_new+Lv, using the retained two-direction paid Lv norm comparison",
+  "parent": {
+    "RH_proved": false,
+    "centering_feedback": {
+      "RH_proved": false,
+      "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+      "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+      "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+      "isolated_payment_excluded": {
+        "conclusion": "P_theta alone has no cofinal critical-energy bound",
+        "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+        "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+        "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+      },
+      "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+      "prime_parameter": "t=q^(-1/3)",
+      "proof_status": "reviewed analytical input; proof text is not formally checked",
+      "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+      "shared_prime_rule": {
+        "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+        "horizon": "T<=2*X^(1/4)",
+        "matrix_norm_squared_upper": "93/2",
+        "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+        "premise_established": false,
+        "storage": "identity matrix on the three states"
+      },
+      "smooth_compensator": [
+        "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+        "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+        "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+      ],
+      "state": [
+        "J",
+        "M_u",
+        "M_v"
+      ],
+      "theta": "3/4",
+      "transfer_matrix": [
+        [
+          [
+            [
+              0,
+              "-2"
+            ],
+            [
+              1,
+              "1"
+            ],
+            [
+              2,
+              "1"
+            ]
+          ],
+          [
+            [
+              0,
+              "-9/2"
+            ],
+            [
+              2,
+              "9/2"
+            ]
+          ],
+          [
+            [
+              0,
+              "-9/2"
+            ],
+            [
+              1,
+              "9/2"
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              0,
+              "-1"
+            ],
+            [
+              1,
+              "1"
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [],
+          [
+            [
+              0,
+              "-1"
+            ],
+            [
+              2,
+              "1"
+            ]
+          ]
+        ]
+      ],
+      "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+      "whole_signed_bound_proved": false
+    },
+    "complete_repeated_prime_transition_implemented": false,
+    "construction": {
+      "fractional_auxiliaries": [
+        {
+          "complete_occupancy_basis": true,
+          "construction_ids": [
+            1,
+            7,
+            13,
+            19,
+            25,
+            31,
+            37,
+            43,
+            49
+          ],
+          "covers_every_discovered_mode": true,
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "gamma": "1/6",
+          "pointwise_inverse_power": "1/3",
+          "signed_sum_recovery_proved": false
+        },
+        {
+          "complete_occupancy_basis": true,
+          "construction_ids": [
+            2,
+            8,
+            14,
+            20,
+            26,
+            32,
+            38,
+            44,
+            50
+          ],
+          "covers_every_discovered_mode": true,
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "gamma": "1/3",
+          "pointwise_inverse_power": "2/3",
+          "signed_sum_recovery_proved": false
+        },
+        {
+          "complete_occupancy_basis": true,
+          "construction_ids": [
+            3,
+            9,
+            15,
+            21,
+            27,
+            33,
+            39,
+            45,
+            51
+          ],
+          "covers_every_discovered_mode": true,
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "gamma": "1/2",
+          "pointwise_inverse_power": "1",
+          "signed_sum_recovery_proved": false
+        },
+        {
+          "complete_occupancy_basis": true,
+          "construction_ids": [
+            4,
+            10,
+            16,
+            22,
+            28,
+            34,
+            40,
+            46,
+            52
+          ],
+          "covers_every_discovered_mode": true,
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "gamma": "2/3",
+          "pointwise_inverse_power": "4/3",
+          "signed_sum_recovery_proved": false
+        },
+        {
+          "complete_occupancy_basis": true,
+          "construction_ids": [
+            5,
+            11,
+            17,
+            23,
+            29,
+            35,
+            41,
+            47,
+            53
+          ],
+          "covers_every_discovered_mode": true,
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "gamma": "1",
+          "pointwise_inverse_power": "2",
+          "signed_sum_recovery_proved": false
+        }
+      ],
+      "modes": [
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "1",
+            "0",
+            "0"
+          ],
+          "eigen_u": "0",
+          "eigen_v": "0",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 0,
+          "potential": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "16/25",
+          "bulk_polynomial": [
+            "0",
+            "0",
+            "1"
+          ],
+          "eigen_u": "0",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 1,
+          "potential": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "16/25",
+          "bulk_polynomial": [
+            "0",
+            "0",
+            "1"
+          ],
+          "eigen_u": "0",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 2,
+          "potential": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "0",
+            "2"
+          ],
+          "eigen_u": "0",
+          "eigen_v": "2",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 3,
+          "potential": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "4/5",
+          "bulk_polynomial": [
+            "0",
+            "1",
+            "0"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "0",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 4,
+          "potential": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "4/5",
+          "bulk_polynomial": [
+            "0",
+            "1",
+            "0"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "0",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 5,
+          "potential": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "1",
+            "1"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 6,
+          "potential": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "1",
+            "1"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 7,
+          "potential": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "1",
+            "1"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 8,
+          "potential": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "1",
+            "1"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 9,
+          "potential": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "2",
+          "bulk_polynomial": [
+            "-2",
+            "1",
+            "2"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "2",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 10,
+          "potential": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": false
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "2",
+          "bulk_polynomial": [
+            "-2",
+            "1",
+            "2"
+          ],
+          "eigen_u": "1",
+          "eigen_v": "2",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 11,
+          "potential": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "stable": false
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "1",
+          "bulk_polynomial": [
+            "-1",
+            "2",
+            "0"
+          ],
+          "eigen_u": "2",
+          "eigen_v": "0",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 12,
+          "potential": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": true
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "2",
+          "bulk_polynomial": [
+            "-2",
+            "2",
+            "1"
+          ],
+          "eigen_u": "2",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 13,
+          "potential": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "stable": false
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "2",
+          "bulk_polynomial": [
+            "-2",
+            "2",
+            "1"
+          ],
+          "eigen_u": "2",
+          "eigen_v": "1",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 14,
+          "potential": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "stable": false
+        },
+        {
+          "algebraic_envelope_only": true,
+          "bulk_envelope": "3",
+          "bulk_polynomial": [
+            "-3",
+            "2",
+            "2"
+          ],
+          "eigen_u": "2",
+          "eigen_v": "2",
+          "energy_contraction_proved": false,
+          "full_target_recovered": false,
+          "id": 15,
+          "potential": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "stable": false
+        }
+      ],
+      "phase_cone_auxiliaries": [
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            5,
+            29,
+            53,
+            77,
+            101,
+            125,
+            149,
+            173,
+            197
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/6",
+          "phase_half_width": "1/4",
+          "pointwise_inverse_power": "1/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            4,
+            28,
+            52,
+            76,
+            100,
+            124,
+            148,
+            172,
+            196
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/6",
+          "phase_half_width": "1/8",
+          "pointwise_inverse_power": "1/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            10,
+            34,
+            58,
+            82,
+            106,
+            130,
+            154,
+            178,
+            202
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/3",
+          "phase_half_width": "1/2",
+          "pointwise_inverse_power": "2/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            9,
+            33,
+            57,
+            81,
+            105,
+            129,
+            153,
+            177,
+            201
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/3",
+          "phase_half_width": "1/4",
+          "pointwise_inverse_power": "2/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            8,
+            32,
+            56,
+            80,
+            104,
+            128,
+            152,
+            176,
+            200
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/3",
+          "phase_half_width": "1/8",
+          "pointwise_inverse_power": "2/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            15,
+            39,
+            63,
+            87,
+            111,
+            135,
+            159,
+            183,
+            207
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/2",
+          "phase_half_width": "1",
+          "pointwise_inverse_power": "1",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            14,
+            38,
+            62,
+            86,
+            110,
+            134,
+            158,
+            182,
+            206
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/2",
+          "phase_half_width": "1/2",
+          "pointwise_inverse_power": "1",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            13,
+            37,
+            61,
+            85,
+            109,
+            133,
+            157,
+            181,
+            205
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/2",
+          "phase_half_width": "1/4",
+          "pointwise_inverse_power": "1",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            12,
+            36,
+            60,
+            84,
+            108,
+            132,
+            156,
+            180,
+            204
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1/2",
+          "phase_half_width": "1/8",
+          "pointwise_inverse_power": "1",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            19,
+            43,
+            67,
+            91,
+            115,
+            139,
+            163,
+            187,
+            211
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "2/3",
+          "phase_half_width": "1",
+          "pointwise_inverse_power": "4/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            18,
+            42,
+            66,
+            90,
+            114,
+            138,
+            162,
+            186,
+            210
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "2/3",
+          "phase_half_width": "1/2",
+          "pointwise_inverse_power": "4/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            17,
+            41,
+            65,
+            89,
+            113,
+            137,
+            161,
+            185,
+            209
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "2/3",
+          "phase_half_width": "1/4",
+          "pointwise_inverse_power": "4/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            16,
+            40,
+            64,
+            88,
+            112,
+            136,
+            160,
+            184,
+            208
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "2/3",
+          "phase_half_width": "1/8",
+          "pointwise_inverse_power": "4/3",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            23,
+            47,
+            71,
+            95,
+            119,
+            143,
+            167,
+            191,
+            215
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1",
+          "phase_half_width": "1",
+          "pointwise_inverse_power": "2",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            22,
+            46,
+            70,
+            94,
+            118,
+            142,
+            166,
+            190,
+            214
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1",
+          "phase_half_width": "1/2",
+          "pointwise_inverse_power": "2",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            21,
+            45,
+            69,
+            93,
+            117,
+            141,
+            165,
+            189,
+            213
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1",
+          "phase_half_width": "1/4",
+          "pointwise_inverse_power": "2",
+          "prime_free_projection_closure": false
+        },
+        {
+          "arithmetic_operator_norm_proved": false,
+          "construction_ids": [
+            20,
+            44,
+            68,
+            92,
+            116,
+            140,
+            164,
+            188,
+            212
+          ],
+          "energy_contraction_proved": false,
+          "formal_dilation_symbol_bounded": true,
+          "full_target_recovered": false,
+          "gamma": "1",
+          "phase_half_width": "1/8",
+          "pointwise_inverse_power": "2",
+          "prime_free_projection_closure": false
+        }
+      ],
+      "target_bulk_and_both_exits": {
+        "kernel": [
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 0,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 1,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 2,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 3,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 4,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 5,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 6,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "-1",
+              "0",
+              "1"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 7,
+            "right_exit": [
+              "1",
+              "0",
+              "-1"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 8,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 9,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 10,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "-1",
+              "1",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 11,
+            "right_exit": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "0",
+              "0",
+              "0"
+            ],
+            "left_exit": [
+              "0",
+              "0",
+              "0"
+            ],
+            "mask": 12,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "-1",
+              "0",
+              "1"
+            ],
+            "left_exit": [
+              "1",
+              "0",
+              "-1"
+            ],
+            "mask": 13,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "-1",
+              "1",
+              "0"
+            ],
+            "left_exit": [
+              "1",
+              "-1",
+              "0"
+            ],
+            "mask": 14,
+            "right_exit": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "bulk": [
+              "-3",
+              "2",
+              "2"
+            ],
+            "left_exit": [
+              "2",
+              "-1",
+              "-1"
+            ],
+            "mask": 15,
+            "right_exit": [
+              "2",
+              "-1",
+              "-1"
+            ]
+          }
+        ],
+        "mode_id": "target",
+        "potential": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "target_recovery": [
+        "1",
+        "-1",
+        "-1",
+        "1",
+        "-1",
+        "-1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1",
+        "1",
+        "-1",
+        "-1",
+        "1"
+      ]
+    },
+    "dependencies": [
+      {
+        "id": "full_centered_moment",
+        "kind": "original target",
+        "requires": [
+          "joint_squarefree_and_repeated_valuation_forcing",
+          "complete_center_and_cross"
+        ],
+        "status": "OPEN"
+      },
+      {
+        "id": "joint_squarefree_and_repeated_valuation_forcing",
+        "requires": [
+          "birth_and_exit_correlations",
+          "all_valuation_complement"
+        ],
+        "status": "OPEN"
+      },
+      {
+        "expression": "joint signed birth and BOTH exit terms at every required scale/prime; include high-frequency and moving prime-free projection control; scalar/phase-cone bounds alone are insufficient",
+        "id": "birth_and_exit_correlations",
+        "requires": [],
+        "status": "OPEN"
+      },
+      {
+        "expression": "full rational local prime-valuation transition, shared gcds and source prime-power correction",
+        "id": "all_valuation_complement",
+        "requires": [],
+        "status": "OPEN"
+      },
+      {
+        "expression": "original smooth/pole compensation kept jointly with source square",
+        "id": "complete_center_and_cross",
+        "requires": [],
+        "status": "OPEN"
+      }
+    ],
+    "dependency_policy": "no RH-strength companion estimate is a paid leaf; a smaller-scale induction needs uniform constants and an independently bounded forcing",
+    "energy_contraction_proved": false,
+    "equivalence_class": "candidate10_complete_prime_bank_covariance",
+    "exact_new_target": {
+      "Birth": "sum_(h*k=m)[G_q(h)*gamma(k)*W_X(q*h,k)+gamma(h)*G_q(k)*W_X(h,q*k)]",
+      "Boundary": "sum_(h*k=m) gamma(h)*gamma(k)*(2*W_X(h,k)-W_X(q*h,k)-W_X(h,q*k))",
+      "G": "beta*(s_q*prod_(p|h)r_p+r_q*prod_(p|h)s_p-t_q*delta(h))",
+      "Phi": "sum_(h*k=m) gamma(h)*gamma(k)*W_X(h,k)",
+      "W": "max(0,2X-max(X,h,k))",
+      "beta": "9/2",
+      "expression": "X^-2 sum_(m squarefree,q not dividing m) mu(m)*[(1-2*t_q)*Phi_X(m)+t_q*Boundary_X,q(m)-Birth_X,q(m)]",
+      "gamma": "beta*(prod_(p|h)(r_p+s_p)-prod_(p|h)r_p-prod_(p|h)s_p+delta(h))",
+      "r_p": "1-p^(-1/3)",
+      "s_p": "1-p^(-2/3)",
+      "scope": "exact squarefree-product projection only; not positive and not the complete target",
+      "t_q": "2-q^(-1/3)-q^(-2/3)"
+    },
+    "fractional_recovery": "need uniform product-cutoff partial sums for signed Abel recovery; pointwise inverse m^gamma<= (2X)^(2gamma) is not a signed-sum estimate",
+    "new_actual_prime_distribution_estimate": false,
+    "prior_obligation": {
+      "RH_proved": false,
+      "centering_feedback": {
+        "RH_proved": false,
+        "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+        "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+        "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+        "isolated_payment_excluded": {
+          "conclusion": "P_theta alone has no cofinal critical-energy bound",
+          "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+          "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+          "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+        },
+        "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+        "prime_parameter": "t=q^(-1/3)",
+        "proof_status": "reviewed analytical input; proof text is not formally checked",
+        "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+        "shared_prime_rule": {
+          "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+          "horizon": "T<=2*X^(1/4)",
+          "matrix_norm_squared_upper": "93/2",
+          "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+          "premise_established": false,
+          "storage": "identity matrix on the three states"
+        },
+        "smooth_compensator": [
+          "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+          "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+          "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+        ],
+        "state": [
+          "J",
+          "M_u",
+          "M_v"
+        ],
+        "theta": "3/4",
+        "transfer_matrix": [
+          [
+            [
+              [
+                0,
+                "-2"
+              ],
+              [
+                1,
+                "1"
+              ],
+              [
+                2,
+                "1"
+              ]
+            ],
+            [
+              [
+                0,
+                "-9/2"
+              ],
+              [
+                2,
+                "9/2"
+              ]
+            ],
+            [
+              [
+                0,
+                "-9/2"
+              ],
+              [
+                1,
+                "9/2"
+              ]
+            ]
+          ],
+          [
+            [],
+            [
+              [
+                0,
+                "-1"
+              ],
+              [
+                1,
+                "1"
+              ]
+            ],
+            []
+          ],
+          [
+            [],
+            [],
+            [
+              [
+                0,
+                "-1"
+              ],
+              [
+                2,
+                "1"
+              ]
+            ]
+          ]
+        ],
+        "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+        "whole_signed_bound_proved": false
+      },
+      "equivalence_class": "candidate10_complete_prime_bank_covariance",
+      "existing_auxiliary": "bounded-degree actual-prime edge exchange correction has a cofinal absolute envelope",
+      "full_graph_recovery_proved": false,
+      "not_a_new_source_experiment": true,
+      "product_fiber_feedback": {
+        "implication": "nonnegative prime-allocation transport within such a product cannot pair opposite signs",
+        "invariant": "on squarefree m, every nonzero a(h)*a(k) with h*k=m has sign mu(m)",
+        "not_excluded": [
+          "cross-product transitions changing prime-count parity",
+          "different valuation allocations at nonsquarefree products",
+          "signed kernel and centered/repeated-prime compensation"
+        ],
+        "paid_regions": [
+          "h*k<=X*B(X) with fixed/polylog B, retaining the full d4 bound",
+          "fixed/polylog primitive cofactor height with all gcd and valuation overlaps"
+        ],
+        "proposed_new_production": "prime adjunction across product fibers with explicit occupancy states, birth terms and both prefix exits",
+        "provenance": "PRODUCT_FIBER_SIGNED_REVIEW_001.txt",
+        "squarefree_projection_is_positive_energy": false
+      },
+      "required_bound": {
+        "all_cross_terms_retained": true,
+        "constants_uniform_in": "X",
+        "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+        "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+      },
+      "required_recovery": [
+        "retain the unsuppressed symmetric coefficient/kernel term",
+        "supply complete-graph recovery with growing path/congestion costs and its constant mode paid",
+        "retain same-prime labels, cross-divisibility, shared cofactors, units, poles and all moving supports"
+      ],
+      "schema": "prime-exchange-joint-recovery-obligation-v1",
+      "scope": {
+        "domain": "all dyadic integers X>=1",
+        "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+        "source": "actual_mu_candidate10"
+      },
+      "selected_factor_constructions": [
+        {
+          "RH_proved": false,
+          "complete_prime_graph_recovery": "OPEN",
+          "constant_for_correction_over_four": "243/8",
+          "edge_constructions": [
+            {
+              "C": "243/8",
+              "bound": {
+                "both_orientation_supports_retained": true,
+                "cofinal": true,
+                "constant_multiplier": "7/2",
+                "constant_power_of_two": "1",
+                "degree": "1",
+                "energy_upper_power": "0",
+                "full_domain_recovery": "OPEN",
+                "growing_degree_graphs_admitted": false,
+                "logdegree": 2,
+                "theta": "3/4",
+                "weight": "1/3",
+                "whole_signed_bound_proved": false
+              },
+              "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+              "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+              "degree_independent_of_X": true,
+              "graph": "next_1_actual_prime_neighbours",
+              "original_target_recovered": false
+            },
+            {
+              "C": "243/8",
+              "bound": {
+                "both_orientation_supports_retained": true,
+                "cofinal": true,
+                "constant_multiplier": "7",
+                "constant_power_of_two": "1",
+                "degree": "2",
+                "energy_upper_power": "0",
+                "full_domain_recovery": "OPEN",
+                "growing_degree_graphs_admitted": false,
+                "logdegree": 2,
+                "theta": "3/4",
+                "weight": "1/3",
+                "whole_signed_bound_proved": false
+              },
+              "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+              "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+              "degree_independent_of_X": true,
+              "graph": "next_2_actual_prime_neighbours",
+              "original_target_recovered": false
+            },
+            {
+              "C": "243/8",
+              "bound": {
+                "both_orientation_supports_retained": true,
+                "cofinal": true,
+                "constant_multiplier": "14",
+                "constant_power_of_two": "1",
+                "degree": "4",
+                "energy_upper_power": "0",
+                "full_domain_recovery": "OPEN",
+                "growing_degree_graphs_admitted": false,
+                "logdegree": 2,
+                "theta": "3/4",
+                "weight": "1/3",
+                "whole_signed_bound_proved": false
+              },
+              "bound_scope": "signed exchange CORRECTION only; both orientation kernels retained",
+              "definition": "each prime r points to its next degree larger primes; both endpoints satisfy the original cutoff",
+              "degree_independent_of_X": true,
+              "graph": "next_4_actual_prime_neighbours",
+              "original_target_recovered": false
+            }
+          ],
+          "envelope": {
+            "coefficient_envelope": "each component <= component_constant*r^(-prime_weight)",
+            "common_total_order": 1,
+            "component_constants": [
+              "0",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1",
+              "0"
+            ],
+            "component_total_orders": [
+              null,
+              1,
+              1,
+              1,
+              null,
+              1,
+              1,
+              1,
+              null
+            ],
+            "domain": "0<x<y<1; x=q^(-1/3), y=r^(-1/3), actual primes r<q",
+            "prime_weight": "1/3",
+            "whole_signed_bound_proved": false
+          },
+          "factors": [
+            {
+              "coefficients": [
+                0,
+                1,
+                -1
+              ],
+              "multiplicity": 1
+            },
+            {
+              "coefficients": [
+                1,
+                -1,
+                0
+              ],
+              "multiplicity": 1
+            },
+            {
+              "coefficients": [
+                1,
+                0,
+                -1
+              ],
+              "multiplicity": 1
+            }
+          ],
+          "full_kernel_correction_admissible": true,
+          "kernel_A": "max(0,min(2X,tau_theta(r))-max(X,q*H,r*K))",
+          "kernel_B": "max(0,min(2X,tau_theta(r))-max(X,r*H,q*K))",
+          "kernel_domain": "r<q primes; H,K>=2; complete union of both supports; gcd(H,K) unrestricted",
+          "original": [
+            [],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                1
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                -1
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                -1
+              ]
+            ],
+            [],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                -1
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                1
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                1
+              ]
+            ],
+            []
+          ],
+          "parent_id": 13618,
+          "prime_swap_antisymmetric": true,
+          "program": {
+            "binding": "distinct_primes",
+            "terms": [
+              {
+                "coefficient": 1,
+                "left": [
+                  1,
+                  0
+                ],
+                "right": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "coefficient": -1,
+                "left": [
+                  0,
+                  1
+                ],
+                "right": [
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          "projection": "beta^2*(B-au-av) tensor (B-au-av); units excluded",
+          "quadratic_identity": "(P_A*K_A+P_B*K_B)/2 = (P_A+P_B)*(K_A+K_B)/4 + (P_A-P_B)*(K_A-K_B)/4",
+          "quotients": [
+            [],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ],
+            [],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "-1"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0
+                ],
+                "1"
+              ]
+            ],
+            []
+          ],
+          "same_prime_and_cross_divisibility_sectors": "OPEN",
+          "symmetric_core": "OPEN",
+          "whole_signed_bound_proved": false
+        }
+      ],
+      "signed_credit_proved": false,
+      "source": "actual_mu_candidate10",
+      "source_specific_improvement": {
+        "at_selected_theta": "14*beta^2*d*(1+log(2X))",
+        "beta": "9/2",
+        "formula": "|edge correction|<=7*beta^2*d*2^(2-4*theta/3)*X^(1-4*theta/3)*(1+log(2X))",
+        "proof_scope": "Delta/z0 wedge, both orientation supports, fixed uniform outgoing degree d; absolute envelope only",
+        "proof_status": "reviewed analytical input; no proof-text execution",
+        "provenance": "PRIME_EXCHANGE_KERNEL_REVIEW_001.txt",
+        "theta": "3/4"
+      },
+      "status": "open",
+      "whole_signed_bound_proved": false
+    },
+    "required_bound": {
+      "all_cross_terms_retained": true,
+      "constants_uniform_in": "X",
+      "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+      "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+    },
+    "reviewed_full_valuation_feedback": {
+      "complete_exit": "Exit_(e,f)=W_X(H,K)-W_X(q^e*H,q^f*K)",
+      "complete_prime_chain": "sum_(e>=0) a(q^e*H)=-d(H) for q-free H>1; zero at H=1",
+      "exit_center": "A(n)-M(n)=-[D_qfree(n)+L_exit,q(n)+M(n)]",
+      "exit_forcing_proved": false,
+      "exit_reparametrization_is_equivalent_target": true,
+      "joint_exit_identity": "sum a(h)*a(k)*W = sum_(q-free H,K) d(H)*d(K)*W - sum_(q-free H,K,e,f) a(q^e*H)*a(q^f*K)*Exit_(e,f)",
+      "local_parity": "negative at first occupation of each color at this prime; positive on its subsequent valuation increments",
+      "paid_shared_valuation_sector": {
+        "bound": "C_j*2^max(2-(2*j-1)*rho,0)*X^(1-(2*j-1)*rho)*(1+log(2X))^2",
+        "cofinal_threshold": "rho>=1/(2*j-1)",
+        "constant": "C_j=beta^2*(j+1)^2*(1+1/(2*j-1))",
+        "domain": "union of h,k<=n sharing q^j on both legs for some prime q>n^rho, j>=2",
+        "full_energy_proved": false,
+        "overlap_policy": "subtract the union once; do not subtract overlapping prime sectors repeatedly",
+        "square_example": "j=2,rho=1/3: 24*beta^2*(1+log(2X))^2"
+      },
+      "proof_status": "reviewed analytical argument; not execution of proof text",
+      "provenance": "PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt",
+      "rational_transition": "product_i [I-E_i*(1-t_i)*z_leg(i)/(1-t_i*z_leg(i))]",
+      "same_prime_correction": "0<=D(n)<=beta*sqrt(n); full centered p/a norm comparison, with finite mixed term retained",
+      "t_u": "q^(-1/3)",
+      "t_v": "q^(-2/3)"
+    },
+    "reviewed_inputs": [
+      {
+        "file": "OCCUPANCY_TRANSFER_REVIEW_001.txt",
+        "status": "analytical review; not proof-text execution"
+      },
+      {
+        "file": "PRIME_PARITY_FULL_RECOVERY_REVIEW_001.txt",
+        "status": "analytical review; not proof-text execution"
+      }
+    ],
+    "reviewed_low_contour_component": {
+      "N": "2X-1",
+      "X_minimum": 2,
+      "beta": "9/2",
+      "bound": "beta^2*exp(4)/(pi^2*X)",
+      "finite_prime_product": "Z_N(s,t)=e_full^T product_(q prime<=N)[I-r_q*q^(-gamma-s)*A_hu-s_q*q^(-gamma-s)*A_hv-r_q*q^(-gamma-t)*A_ku-s_q*q^(-gamma-t)*A_kv] e_empty",
+      "full_prefix_compilation": "finite Euler product and double Perron with n+1/2 endpoints",
+      "gamma": "1/6",
+      "high_complement": "entire conditional Perron limit minus the low rectangle; includes one or both high frequencies",
+      "high_complement_proved": false,
+      "low_rectangle": "|Im(s)|,|Im(t)|<=c/4",
+      "product_cutoff_recovery": {
+        "abel_identity": "S_0(N^2)=N^(2*gamma)*S_gamma(N^2)-gamma*integral_1^(N^2) t^(gamma-1)*S_gamma(t) dt",
+        "lemma_proved": false,
+        "required": "S_gamma(T)=beta^2/X^2 sum_(sf m<=T) mu(m)*Psi_full,X(m)*m^(-gamma), uniformly over 1<=T<=N^2",
+        "sufficient_new_lemma": "for each dyadic product band (T,2T] and every partial subinterval, weighted signed sum <=C_epsilon*X^epsilon*T^(-gamma)"
+      },
+      "projection_is_positive_energy": false,
+      "proof_status": "separate reviewed analytical component theorem, not proof-text execution or an implication of scalar certificates alone",
+      "provenance": "OCCUPANCY_TRANSFER_REVIEW_001.txt",
+      "real_line": "c=1/log(N)",
+      "source": "entire squarefree-product projection, weighted by m^(-1/6)",
+      "whole_signed_bound_proved": false
+    },
+    "schema": "occupancy-joint-forcing-obligation-v1",
+    "scope": {
+      "domain": "all dyadic integers X>=1",
+      "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+      "source": "actual_mu_candidate10"
+    },
+    "source": "actual_mu_candidate10",
+    "status": "open",
+    "whole_signed_bound_proved": false
+  },
+  "partial_cutoffs": "ALL exact rational breakpoints m/2^ceil(log2(m)), batch simultaneous jumps, same t in every shifted band",
+  "producer_caps": {
+    "1024": 750000000,
+    "128": 100000000,
+    "256": 300000000,
+    "512": 400000000,
+    "64": 50000000
+  },
+  "product_support": "1<=h*k<=(2X-1)^2",
+  "proof_scope": "conditional polylog full-target recovery; no uniform arithmetic estimate is inferred from finite extrema or ranks",
+  "schema": "centered-product-band-discovery-v1",
+  "sectors": [
+    "aa_sf",
+    "aa_ns",
+    "cross_sf",
+    "cross_ns",
+    "mm_sf",
+    "mm_ns"
+  ],
+  "selection": "one operator per gamma by smallest worst discovery dyadic log slope of U_X; then smaller inverse log degree, stencil l1 and ordinal",
+  "source_policy": "one read-only actual-source table through2047; each kernel worker reads only its declared prefix; larger-scale kernel responses are withheld until selection",
+  "source_precision_bits": 160,
+  "startup_revision": {
+    "numerical_implementation_changed": false,
+    "prior_administrative_work": "included in the existing one-million metadata reserve",
+    "prior_arithmetic_operations": 0,
+    "prior_attempt": "centered-product-results/pilot-001",
+    "prior_test_operations": 0,
+    "reason": "JSON object keys are strings; compare the declared scale-cap mapping in canonical form"
+  },
+  "stronger_than_whole_moment": true,
+  "superseded_premise": "the old isolated uncentered squarefree product-band target; its nonzero double pole must be compensated jointly",
+  "total_work_limit": 3000000000,
+  "validation_policy": "selected pairs plus unfiltered calibration at each gamma; selection is saved before validation kernels are evaluated",
+  "validation_scales": [
+    512,
+    1024
+  ],
+  "whole_signed_bound_proved": false,
+  "worker_seconds": 1800,
+  "workers": 3
+}

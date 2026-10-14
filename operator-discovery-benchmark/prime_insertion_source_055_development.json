@@ -1,0 +1,31 @@
+{
+  "schema": "prime-insertion-source-055-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.06442987301852554,
+      "operations": 275661
+    }
+  ],
+  "total_primitive_counts": {
+    "prime_trial_divisions": 13,
+    "source_entries_validated": 5700,
+    "difference_entries": 5700,
+    "subset_vector_entries": 1352,
+    "mask_entries": 533,
+    "prefix_entries": 1599,
+    "boolean_product_pairs": 401,
+    "source_cache_hits": 2,
+    "filter_terms": 21
+  },
+  "peak_bytes_estimate": 240777328,
+  "scope": "source-free common integer atom and prefix fixtures only; no archived arrays, mu source or logarithm atoms evaluated",
+  "actual_pilot_applied": false,
+  "old_source_atoms_rerun": false,
+  "old_suites_or_studies_replayed": false,
+  "checker_imported": false,
+  "all_scale_bound_claimed": false
+}

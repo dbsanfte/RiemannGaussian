@@ -1,0 +1,102 @@
+Reversible divisor circuit discovery v1 -- NEW study, 2026-10-09
+
+Purpose
+Search for complete transformed Mobius-prefix moments, with a uniform inverse
+proved for the operator grammar. This does not assert those moments are bounded.
+It replaces neither the frozen potential studies nor their missing evaluations.
+Growing normalized prefix averages were rejected as the main next search family
+after an analytical tail-norm obstruction, before any new arithmetic experiment.
+
+Program schema: {"stages": [stage, ...]}, at most five stages, at most three
+convolutions and two signs. Each stage is exactly one of:
+  {"op":"convolve", "alpha":canonical rational, "prime_phase":phase}
+  {"op":"sign", "phase":phase}
+An empty program is the baseline. Alpha is nonzero, |alpha|<=2, denominator<=6.
+All generated nonempty programs finish with a convolution: a terminal sign has
+no effect on their moments. Validation may accept terminal signs for inversion.
+
+A phase takes a positive integer n, and returns exactly +1 or -1:
+  ["constant", +1 or -1]
+  ["parity", index]                         (-1)^index
+  ["source_sign", index]                    -1 iff a(index)<0; otherwise +1
+  ["residue_sign", index, m, residues]       -1 iff index mod m in residues
+  ["multiply", phase, phase]
+Index forms:
+  ["n"]
+  ["root", numerator, denominator]          floor(n^(numerator/denominator))
+  ["subtract_root", numerator, denominator]  n minus that root
+  ["quotient", integer] or ["remainder", integer]
+Index root exponent is reduced, positive and <=1, denominator<=6. Integer
+quotient/remainder modulus is 2..16. Residue modulus is 2..16; residues are a
+strictly increasing list in 0..m-1, possibly empty. Phase syntax has at most31
+nodes and depth6. Every queried source index is in0..n; a(0)=0. No intermediate
+state, fitted response, or block X can change a phase. The SAME fixed source
+coefficient sequence supplies phases in every stage and in its inverse.
+
+For chi(p)=prime_phase(p), the multiplicative convolution kernel is specified
+by a(1)=1 and a(p^k)=chi(p)^k * alpha(alpha+1)...(alpha+k-1)/k!.
+At integer n: (T_alpha,chi f)(n)=sum_{d|n} a(d)f(n/d), ALL positive divisors.
+A sign stage multiplies by phase(n). Input f(n)=sum_{j<=n} source(j), f(0)=0.
+The evaluation is exact rational. Each finite convolution is invertible by
+the same prime phase with -alpha; sign stages are self-inverse. Circuit inverse
+reverses stages. Neither n normalization nor an omitted complement is allowed.
+
+Uniform recovery certificate schema (exact keys):
+ {"schema":"reversible-divisor-circuit-v1", "program":program,
+  "convolution_orders":[ceil(abs(alpha)) for convolve stages],
+  "recovery_power":sum(convolution_orders),
+  "domain":"discrete_weighted_l2_sigma_gt_half",
+  "bound":"(1+1/epsilon)^recovery_power",
+  "coefficient_binding":"same_fixed_source_in_all_stages_and_inverse"}
+Independent checker API: verify(certificate, meter=None) -> True, raises on
+malformed or false data. A checked certificate proves the grammar's uniform
+recovery theorem, not a source-specific moment estimate. Proof is ordinary
+mathematical reasoning plus a restricted checker, not a proof assistant.
+
+Let H_sigma,T(f)=sum_{1<=n<=T}|f(n)|^2/n^(2sigma+1), sigma=1/2+epsilon.
+For r=ceil(|alpha|), each kernel and its inverse have coefficient majorant d_r.
+Divisor-supported dilation has norm d^(-sigma-1/2), so each convolution and
+inverse has norm <=zeta(1+epsilon)^r <=(1+1/epsilon)^r, uniformly in T.
+Signs are isometries. The circuit has the stated UNSQUARED norm bound; recovery
+of squared energy uses its square. No integrability assumption on infinite M
+is used to prove these finite-T inequalities.
+
+Numerical observable: D(X)=X^-2 sum_{X<=n<2X} output(n)^2, full output.
+For one fixed circuit, the OPEN gate is: for cofinally many positive integers
+q, there exists finite C_q independent of dyadic X>=1 with
+ D(X)<=C_q*ceil(X^(1/q)). These estimates imply H_sigma(M)<infinity for every
+sigma>1/2 by the inverse theorem. The floor-step Mellin integral then provides
+holomorphic ordinary 1/zeta on Re(s)>1/2. Finite fits do not establish this gate.
+
+Selection's conditional cost retains explicit theorem constants. For a fixed q,
+sigma=1/2+1/q, a proved dyadic estimate from X>=32 would imply
+ H_sigma(output)<=sum_{n<32}output(n)^2/n^2+4q*C_q.
+Indeed each dyadic block contributes at most2C_q*X^(-1/q), and grouping q
+successive powers of two gives sum_{j>=0}2^(-j/q)<=2q. Applying the inverse
+squares its norm factor, giving (1+q)^(2R) times that displayed quantity.
+The search ranks these CONDITIONAL quantities. A fitted C_q is not a proved
+global constant, and only four tested q do not establish the cofinal gate.
+
+Finite evaluator interface agreed with independent checker:
+ producer module reversible_divisor_circuits.py:
+   source(name,H,meter) -> list a[0..H], a0=0, ai in{-1,0,1};
+   evaluate(program, values, meter) -> output list[0..H], output0=0;
+   moments(output, scales, meter) -> [{X:int, energy:canonical rational}].
+ checker module check_reversible_divisor_circuits.py: independent versions of
+   verify, source, evaluate, moments; evaluator must NOT import producer.
+ Sources: mu; one; partial_prime_13. The last is zero on nonsquarefree n and
+ (-1)^(number of prime factors in {2,3,5,7,11,13}) otherwise. It agrees with mu
+ through16 but has a positive mean asymptotically; it is a diagnostic control,
+ not a counterexample to actual Mobius. Each control binds its OWN source
+ phases consistently. Primality/factorization are explicit evaluator oracles.
+
+Resource policy
+One new bounded study including development, frozen suite, research and one
+independent audit, ceiling450m declared work operations; no budget resets.
+Exact integer/rational bit cap4096, at most6m live scalar-cell proxy, physical
+address-space ceiling16GiB. Charge allocations, syntax/source/root/kernel work,
+divisor enumeration, arithmetic, ranking, certificate and audit work. Whole
+source and full output vectors, including all cross terms when squared, count.
+Code/protocol/program snapshots use direct bytes and full payload equality;
+no content hashes. Source files/results freeze before actual study responses.
+Unsupported certificates and missing evaluations remain explicit, never passes.

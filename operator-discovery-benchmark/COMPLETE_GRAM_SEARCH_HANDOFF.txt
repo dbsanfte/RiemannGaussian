@@ -1,0 +1,53 @@
+COMPLETE GRAM SEARCH HANDOFF — publication007
+
+The research objective remains a uniform signed arithmetic bound with a verified recovery to the RH target. No such bound or proof has been found. This publication records completion and exclusion of a finite certificate language, plus a diagnostic for a different, recoverable multiscale state. A separator excludes the declared certificate cone, not actual Möbius cancellation or RH.
+
+Full quadratic mixing of the existing atom bank
+
+The new complete_gram_program has two shared fourteen-dimensional PSD groups, full_parent and full_child. Each contains prefix, half, even, mod3one, prime, followed by all nine complete divisor contrasts D(theta,j), with theta=1/3,1/2,2/3 and j=-1,0,1. The previous four-group cone embeds by congruence; the repeated prefix coordinate is shared, with its diagonal contributions added. All original scalar squares, signed relations, target coefficients, unit boundaries, divisor complements and the gamma-zero auxiliary row remain. Constants are z=(0,0,0,0,0,-1/2,...,-1/2), so every DD cross term is charged. Fixed matrix charges remain O(X) under the recorded fixed-template assumptions.
+
+The first frozen diagnostic, complete-gram-moment-probe-001, passed 12 tests and froze 68 sources. It re-admitted the original separator but ended missing_resource at the unchanged 4096-bit polynomial coefficient cap when expanding a very large rational negative direction. Its independent audit passed as an audit of this failure, not as a full moment admission. This failure is preserved.
+
+The separately frozen complete-gram-moment-probe-002 changed only bounded witness-direction extraction, retaining the same input separator, full atom union, complete polynomial expansion and resource ceilings. It passed 15 tests and froze 68 sources. In both regions the exact direction half-D(1/3,-1) has negative moment, with zero missing coordinates. The complete square polynomial and moment pairing were independently replayed. Thus the old four-group separator is invalid for the larger cone; this alone did not prove feasibility. No floating search or fitted arithmetic response was used in either diagnostic.
+
+New full-cone search and obstruction
+
+complete-gram-search-001 passed 44 tests and froze 79 sources. It searched the complete fourteen-atom critical mu program at q=6, C=32 and scales 1,2,3,5 plus the same gamma-zero gate. These are reused development scales, not unseen arithmetic observations. The full source domain has 3848 moments, 1177 scalar columns and 210 Gram upper-triangle columns. The numerical dual proposal is only a proposal; exact reconstruction and independent full-domain coefficient and PSD checks alone admit a separator. Checkpoints retain the full declared domain, support, column hashes and resource settings before reconstruction.
+
+A new 701-support exact separator was admitted. Exact proportional augmented-row compression, including the right-hand side, reduced the selected-support system from 1366 to 877 rows. Raw native work proxy was 671253766; compressed native work was 430958677; total charged work including construction, preprocessing and verification reserves was 446048494, below the unchanged 450000000 allowance. The worker completed in about 152.83 seconds, with peak RSS 627896 KiB and one numerical thread. The independent whole-run audit passed, including every original equation, compression equivalence, complete Gram positivity, checkpoint binding and actual resource receipt.
+
+The target pairing is -1 and all five ordinary/auxiliary constant coordinates are zero. Therefore arbitrary scalar budget shifts cannot rescue this exact shared full14 gamma-zero cone. This statement retains the frozen source family, shared coefficient law and necessary-gate assumptions; it is not an impossibility theorem for other proof languages. The exact separator correctly pruned primal optimization and final transfers; none were run or claimed. The prior supplied unsigned calibration remains a calibration and was not counted as a new discovery.
+
+Anchored multiscale energy diagnostic
+
+complete-gram-storage-probe-001 passed three tests and froze 42 sources. It binds the independently admitted full14 separator and preregisters the entire anchored PSD state family R=e_P e_P^T+K, K PSD. For V_t equal to the full fourteen-atom vector, define S_R(X)=sum_{X<=t<2X} V_t^T R V_t. Coercivity S_R(X)>=E(X) is exact, where E(X)=sum P_t^2. This changes the proposed target to an innovation bound for S_R; it does not treat a signed increment as a nonnegative square.
+
+The correct rearrangement is D-Delta(E)=Q+Delta(S_K), where Delta(S_K)=S_K(2X)-4 S_K(X). Its dual matrix is H_child-4 H_parent. Exact replay finds a negative direction consisting solely of the half coordinate. Consequently the full14 separator is invalid for this anchored-storage extension. K=e_half e_half^T and R=e_P e_P^T+K are exactly PSD, coercivity is exact, and this increment has zero formal constant. The result and matrix are replay-verified in verification.json. This is a same-implementation exact diagnostic replay, not an independent uniform proof or a feasible primal certificate.
+
+Here half=P_floor(t/2). The selected diagnostic energy is therefore E(X)+sum_{X<=t<2X} P_floor(t/2)^2. For even integer X, the second sum is exactly 2 E(X/2); at X=1 it is zero because P_0=0. For dyadic X>=2 its innovation is Delta(E)(X)+2 Delta(E)(X/2). Thus this particular direction adds a previous-scale energy, not new prime-sign information. Invalidating one witness does not exclude a different separator of the enlarged cone.
+
+Conditional recovery and unresolved estimate
+
+Suppose, separately, a fixed-in-X R_q=e_P e_P^T+K_q with K_q PSD and a finite nonnegative C_q satisfy
+
+ S_Rq(2X)-4 S_Rq(X) <= C_q X^2 ceil(X^(1/q))
+
+at EVERY dyadic X>=1, for q>0. Set W(X)=S_Rq(X)/X^2. Then W(2X)<=W(X)+(C_q/4)ceil(X^(1/q)) <= W(X)+(C_q/2)X^(1/q). Summing the geometric series gives
+
+ E(X) <= [S_Rq(1)+(C_q/2)/(2^(1/q)-1)] X^(2+1/q)
+
+for dyadic X>=1. This algebraic recovery is conditional: no uniform innovation estimate has been supplied. To invoke the project's RH bridge, the required estimates must hold for a cofinal family of q with constants independent of X, together with the recorded energy/Mellin hypotheses. A q=6 finite certificate would not suffice. All initial, floor, cutoff, unit, prime-power, noncoprime and complement contributions must survive a uniform proof.
+
+Next substantial work
+
+Implement a typed anchored-storage operator with an independent checker for the signed child-minus-four-parent increment, the fixed PSD K, exact target rearrangement, coercivity, constants and initial cost. Retain the entire fourteen-atom K cone; the half-coordinate diagnostic must not become a hand-picked substitute grammar. Storage columns cannot be passed to the current SOS checker as if their negative parent block were nonnegative. Before retaining the old gamma-zero gate, prove that all new scalar contributions have the declared growth. Raw a-weighted channels may require a separately preregistered normalization and a fresh charge calculation. Search the expanded cone only after these proof obligations are encoded; a new exact separator or finite certificate remains a finite result.
+
+complete_gram_next_strategy.txt also records the limits of shared scale copies, possible signed localizers, exact norm identities and their degree/cost requirements. Uniformly weighted sign conditioning collapses to a signed prefix mean; it must not be advertised as separate prime-wise information. Completing matrices on the same atom span alone cannot now add expressivity.
+
+Persistent execution and collaboration policy
+
+The authorized ceiling remains 450 million total charged native reconstruction work, 6 GiB per worker and 6 GiB total concurrent worker memory. Full-memory jobs serialize; smaller independent jobs can be scheduled within the total allowance. The current search used a 600-second external worker limit and 180-second cooperative limits. Frozen lower limits and their failures are immutable.
+
+Use Sol 6.1 subagents only for substantial, long-running, parallelizable research or implementation. Handle small fixes, checks, notes and publication in the main thread, per the user's latest instruction. Do not repeatedly ask for the already authorized resource limits.
+
+publication007 binds both moment probes, the complete search, the storage diagnostic, their exact source closures and receipts, this handoff, scope and strategy notes, and publication006's manifest/report. Older publications remain immutable. The latest pointer advances only after artifact integrity replay. The all-scale inequality remains unresolved and the research goal remains active.

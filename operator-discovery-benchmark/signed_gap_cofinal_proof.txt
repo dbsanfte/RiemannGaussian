@@ -1,0 +1,62 @@
+COFINAL ENDPOINT COUNTEREXAMPLES FOR FROZEN ACTUAL SIGNED-GAP CLAIMS
+
+The source is the already frozen, independently verified profile pilot.
+Its original 48 templates and 704 available fresh passes are unchanged.
+This analytical extension uses the original actual arithmetic cases; they
+are not fresh holdout data and are not used to retune any constant.
+Actual Mobius counterexamples refute particular fitted inequalities, not RH.
+
+1. EXACT ROOT PLATEAU, NOT A NUMERICAL LIMIT.
+Fix an integer X>=2. For every integer d>=bit_length(X),
+1<X^(1/d)<2, since X<2^d. Thus ceil(X^(1/d))=2 EXACTLY.
+Every declared cofinal exponent schedule has epsilon(q)=1/d(q),
+with d(q) monotone and tending to infinity. For all sufficiently large q,
+the root ceiling at this fixed X is therefore two.
+
+A finite explicit threshold can be certified without evaluating an enormous
+factorial or root denominator. If d(q)=ceil(q^(p/r)), p,r positive integers,
+q>=d0^r guarantees d(q)>=d0. If d(q)=2^ceil(q^(p/r)), the same threshold
+is sufficient. If d(q)=q!, q>=d0 is sufficient. Here d0=bit_length(X).
+For a fixed rational epsilon there is no cofinal conclusion; those ordinary
+calibrations are excluded. Resource exhaustion in evaluating a huge exact
+integer is not a semantic failure of this threshold theorem.
+
+2. BOUNDED CONSTANT ENDPOINTS.
+For C(q)=A, and log factor L_X=ceil(ell(X)^L), the exact eventual diagonal
+is D=2*A*X*L_X. The source half-gap claim requires
+Delta(X)<=A*X*L_X*Q(4X).
+Any strict violation at ONE fixed dyadic X persists for EVERY q beyond
+the certified threshold. Therefore it refutes
+exists q0, every q>=q0, every dyadic X: Delta<=D*Q/2.
+This is stronger than finding a failure at a single sampled q, which an
+unknown starting q0 could potentially exclude.
+
+The audit also distinguishes two weaker quantities:
+the necessary complete-nonunit-Gram PSD entry is D*Q-Delta, and
+the fully charged defect majorant is 4X*D-Delta.
+A negative half-gap margin alone does not refute either weaker claim.
+They are checked individually and reported separately. If D*Q-Delta<0,
+the actual mu vector is a negative direction for the full dual matrix,
+regardless of its Gram weight. If 4X*D-Delta<0, the proposed fully charged
+RH-sufficient bound is itself false at that X for all large q.
+
+The positive-power constant law with power zero has eventual C=2*A and
+the same logic. An unrestricted per-level constant family has no supplied
+endpoint value; equal numerical fits at finitely many levels do not establish
+one. Growing positive-power, exponential, factorial and positive denominator
+power laws are likewise not declared globally successful by this endpoint
+test. Their uniform all-scale claims remain unresolved.
+
+3. INDEPENDENT ACTUAL ARITHMETIC AND PROOF SCOPE.
+Every original training, validation and final signed energy is recomputed
+with an independent prime sieve. Q is its exact coefficient square sum.
+All endpoint margins are rational; the negative witnesses are exact.
+Three cofinal integer levels beyond each threshold are illustrative native
+checks of the plateau. The universal quantifier comes from the monotone
+schedule and elementary root theorem, not those finitely sampled levels.
+No formula or coefficient is changed. Successful old finite tests remain
+valid finite tests while the global dispositions are superseded.
+
+This audit leaves the research objective open. A larger fitted constant may
+remove these particular counterexamples, but that would be a new candidate
+and would still require an all-scale signed arithmetic proof.

@@ -1,0 +1,83 @@
+Augmented cached-chart cone search: mathematical review
+
+Scope: symbolic design, source reading and tiny synthetic fixtures only.
+No actual024/026/027 repair, source/map/score/probe calculation or hashes.
+
+Appending consistent independent rows to a licensed affine chart gives a
+smaller affine solution set. Preserve every surviving old free coordinate
+of the recovered point, then descending backsubstitute all old and new
+pivots. This is an exact deterministic repair, not a cone projection. Its
+canonical lift restores beta positive/negative parts, child=0, storage=C,
+parent=H=P+4C. Equation preservation follows the signed and storage column
+dependencies, not cone preservation. Earlier pivot equations may propagate
+changes into any coordinates; the fact new pivots160/170 are squares does
+not prove only square weights changed.
+
+For the repaired rational center c, numerical search uses c_mp+N_mp(Dz),
+z0=0. Exact endpoint is c_free+D*exported_z followed by full descending
+backsub and canonical lift. Never substitute c_mp for c in endpoint export.
+A center with more than269 significant bits remains valid; calibration is
+only a numerical consistency check. Homogeneous forward/adjoint directions
+omit every affine RHS, including all appended rows. Fixed025 normalizers
+are inherited, while eight weighted power iterations estimate a fresh
+initial step on the new map. All eigensolver/model/power results are proposal
+heuristics and never exact feasibility or norm certificates.
+
+To justify reusing a scale: express each appended row in old free variables,
+then eliminate dependencies on later appended pivots in descending order.
+For a surviving coordinate j absent from every resulting effective row,
+the old homogeneous column already satisfies all new rows. The unique
+triangular solution therefore equals the new homogeneous column. Raw support
+union is a conservative alternative; effective support may remove exact
+cancellations. Coupled160->170 requires propagating row170's support into
+row160. Every refreshed column must be evaluated through the COMPLETE new
+chart, not one local row correction. Positive dyadic D preserves the solution
+set for any declared values, so refreshed approximate norms need not be
+certified. Partial refresh on cap failure is forbidden by the declared method.
+
+Endpoint checks must cover5641 original equations and all three learned
+rows before cone diagnostics. Negative exact square/slack/split coordinate
+rejects THIS point; PSD then stays explicitly unchecked (count0, failuresNone).
+If all1597 signs pass, all three original exact PSD blocks are mandatory.
+No conclusion of global cone infeasibility, uniform identity or RH follows.
+Any arithmetic/work/deadline/byte failure remains UNKNOWN without usable
+partial center/map/endpoint or admission claim.
+
+Shared450m ledger is50m preparation,30m setup,195m numerical proposal,
+25m endpoint and150m final audit.128 is an iteration upper cap only. Each
+step reserves all12 trials, accepted-gradient refresh and final serialization;
+selective setup reserves complete affected-column loop and calibration before
+starting. The final auditor must share one budget across new-row replay,
+chart/center/trace and initial/final exact equations, avoiding hidden duplicated
+source construction or old elimination. Successful rational results remain
+4096 bits, two-input temporary bound8193;6m live rational cells and all byte
+caps remain separate constraints.
+
+Final new-code review: generic producer compose_chart preserves the original
+rows and rejects previous-pivot leakage from appended rows. Both owners use
+the conservative RAW surviving-support union, rather than effective-row
+cancellation; this is sound and complete for refreshing potentially changed
+columns. The full composed chart propagates coupled pivots in every response.
+Independent new-row replay verifies the exact reductions before licensing the
+repaired center. Successful endpoint checks explicitly require all learned
+rows to have1957 coordinates and validate rationals before sign diagnostics.
+
+Reported defects during development: missing learned-row length allowed zip
+truncation; generic append validation differed; inherited scale length and
+exponent checks were incomplete; producer/checker power seeds and zero-power
+handling differed. Owners corrected these. Final declared power policy is
+alternating (-1)^i/sqrt(n), up to8 iterations, stop on zero operator, reciprocal
+last estimate if positive otherwise2^900, clamped to fixed range. It is a
+numerical heuristic. Setup resident allowance now4E+12width+8free+2*1957
+includes retained composed-chart/center/export artifacts in addition to exact
+and MP charts. Worst-step and whole selective-loop reservation remain required.
+
+Eleven owned tests passed in0.348s: exact coupled160/170 repair with535-bit
+center, homogeneous RHS exclusion and transitive support, unchanged outside-
+support direction, exact center plus269-bit dyadic, canonical beta/storage
+lift, actual generic composition and preceding-pivot rejection, full5644
+scalar-first PSD bypass, mandatory three PSD calls when signs pass, malformed
+learned-row rejection, and resource overflow. No actual chart/repair/norm/
+source/search/probe calculation was performed. Owned files are ready and
+edits stopped. Numerical gradients/eigenvalues, refreshed norm estimates,
+convergence and all-scale arithmetic implications remain uncertified.

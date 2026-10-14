@@ -1,0 +1,107 @@
+THE EXACT SCALAR BUDGET OF THE FIXED GROUPED DICTIONARY
+
+Analytical follow-up before scores; no outcomes read or frozen sources edited.
+This note concerns the declared52 square/195 relation descriptor dictionary in
+grouped_arithmetic_templates.py. It extracts its exact scalar budget. No global
+coefficient identity, critical budget estimate, prime cancellation theorem or
+RH conclusion is established.
+
+1. Formal coefficient extraction, not substitution of x1=1.
+Let a_d>=0 denote the fixed shared square weights, and b_d the fixed signed
+relation-group weights. Expand the COMPLETE grouped polynomial RHS_X with these
+weights and every declared term. Let [1] denote its formal constant coefficient,
+not evaluation at actual arithmetic. If EVERY nonconstant coefficient equals
+the corresponding coefficient of -Delta_X, then
+ RHS_X=B_template(X)-Delta_X, B_template(X)=[1]RHS_X.
+For a prescribed D=C X^2 ceil(X^(1/q)), the computed slack is exactly
+ s_X=D-B_template(X).
+A finite certificate accepts only nonnegative s_X and appends s_X*1^2.
+This formula has no actual signed response input and cannot repair an unmatched
+nonconstant coefficient. Formal x1 is still a variable: a polynomial containing
+x1 has zero constant coefficient even though actual x1=1. Treating it as1 before
+coefficient extraction would alter the fixed language and the budget.
+
+2. Exactly which declared groups contribute.
+The sole constant square group is descriptor
+ {family:constant,region:all,weight:critical_normalizer}.
+Its fixed internal coefficient is Z_q(X)=X^2 ceil(X^(1/q)). Write its shared
+weight as a_0. Every coordinate, prefix, pair, divisor-row and product square
+has a polynomial with zero constant term, so its square has zero constant term.
+This includes product squares of degree4 and all empty positional groups.
+
+For relation groups, multiplier one is a constant internal weight W_X(n).
+The available weights are1,X,J_X(n), and
+ R_X(n)=sum_(t=max(2X,n))^(4X-1)t,
+with exact empty sums0. Regions are all, head n<=2X and tail n>2X.
+Norm relation x_n^2-h_n contributes -W_X(n)*h_n, where
+ h_n=1_(n squarefree) for mu, h_n=4^omega(n) for c.
+Prime-power relation x_(p^e)-v_f(p,e) contributes -W_X(p^e)*v_f(p,e),
+where v_mu=-1 at e1 and0 for e>=2; v_c=2(-1)^e.
+The unit relation x1-1 with multiplier one contributes -1.
+Every other declared multiplier (anchor, prefix, global_prefix) has zero formal
+constant, and its product with any relation therefore has zero constant.
+In particular, norm at n1 with anchor x1 contributes no formal scalar; the
+same applies to prime-power prefix multipliers. Squarefree-zero relations have
+no constant at any n. Inverse rows are declared only for n>=2 and have no
+constant; the excluded inverse row n1 is represented separately by unit.
+Coprime-product and gcd-product relations have no constants, including degenerate
+arguments1 and equal arguments. Their signed coefficient and norm factors do
+not create a constant monomial. No zero/empty group contributes a hidden scalar.
+
+3. Exact extraction formula with descriptor multiplicities retained.
+For each relation descriptor d with multiplier one, let I_d(X) be its complete
+declared region of norm indices or prime powers, and W_d,X its exact internal
+weight. Distinct all/head/tail descriptors may overlap: they are separate columns
+and their shared weights must ALL appear. Then
+ B_template(X)
+ =a_0*Z_q(X)
+  -sum_(d:family norm,multiplier one)b_d*sum_(n in I_d(X))W_d,X(n)*h_n
+  -sum_(d:family prime_power,multiplier one)b_d*
+                  sum_(p^e in I_d(X))W_d,X(p^e)*v_f(p,e)
+  -b_(unit,all,one,multiplier one).
+This formula is exact for EVERY finite X as formal algebra; it does not assume
+that nonconstant matching holds there. The polynomial source horizon isN=4X-1.
+For mu the prime-power inner sum reduces exactly to minus the weighted prime
+sum, because every higher local value is0. For c ALL positive exponents occur
+with their alternating2 signs. No prime powers or region endpoints may be
+replaced by a continuous density without an independently justified error.
+
+4. What the formula exposes, and what remains unknown.
+The scalar budget contains no arbitrary ordinary signed prefix values. It is a
+fixed linear combination of complete actual norm counts and signed local prime-
+power sums, with elementary polynomial/kernel weights, rational coefficients
+and critical normalizer. This is a useful way to state the missing all-scale
+scalar theorem explicitly. But its fixed weights may have either sign on the
+relation families, and different regions/weights have different growth. A bound
+must retain their cancellation rather than separately bounding all magnitudes
+and claiming a critical result.
+The rowmass norm sum is exactly the unsigned calibration U_X. With shared norm
+weight-1 it contributes +U_X; the companion square weights4 and1 cancel the
+nonconstant kernel exactly. Its unconditional upper bound is power3 for mu and
+power3 timeslog^3 for c. This is a complete uniform identity but fails the critical
+budget objective. It demonstrates why algebraic matching by itself is inadequate.
+
+Possible useful new arithmetic would be a proved fixed coefficient combination
+in the extraction formula with B_template(X)=O_q(X^2 ceil(X^(1/q))) and ALL its
+region/end-point/remainder charges, paired with a proved complete nonconstant
+identity and nonnegative shared square weights. Weighted prime/norm main terms
+might cancel, but no such cancellation or leading asymptotic is asserted here.
+PNT alone cannot be credited with an RH-strength weighted error, and cancellation
+of one leading power can still leave a supercritical next term. Any norm-density
+or prime-power asymptotic used must state its uniform errors and exact cutoff
+changes; an attractive finite scalar profile proves none of these.
+
+5. The two independent uniform obligations.
+First prove for ALL dyadicX that the complete symbolic grouped RHS has
+nonconstant coefficients exactly -Delta_X, with the fixed square weights
+nonnegative and all factor-certified arithmetic relations valid on the whole
+domain. Finite shared matching or successful transfer does not prove this.
+Second prove the extracted B_template(X)<=Cq X^2 ceil(X^(1/q)) for EVERY
+integerq>=q0 with finiteCq independentX, including finite initialization and all
+rational ceilings. A sampled nonnegative slack does not prove this either.
+Both are necessary to admit this particular template as an all-scale certificate;
+other proof languages may have different obligations. Neither unknown step may
+be inserted as a new arithmetic axiom. The original full actual defect is then
+bounded, energies telescope, and the ordinary-zeta bridge applies conditionally.
+No outcomes, numerical re-fit, leading-term heuristic or solver completeness
+claim is used in this extraction note.

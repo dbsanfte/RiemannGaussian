@@ -1,0 +1,42 @@
+{
+  "final_scales": [
+    7,
+    11
+  ],
+  "limits": {
+    "max_coefficient_bits": 4096,
+    "max_columns": 1024,
+    "max_degree": 12,
+    "max_denominator": 1000000,
+    "max_horizon": 80,
+    "max_monomials": 30000,
+    "max_operations": 200000000,
+    "time_limit": 180
+  },
+  "programs": [
+    {
+      "C": 32,
+      "allow_constant_slack": true,
+      "claim": "critical",
+      "constraint": "zero_cubic",
+      "dictionary_mode": "extended",
+      "q": 6,
+      "target": "mu"
+    },
+    {
+      "C": 1,
+      "allow_constant_slack": true,
+      "claim": "unsigned_calibration",
+      "constraint": "none",
+      "dictionary_mode": "extended",
+      "q": 2,
+      "target": "mu"
+    }
+  ],
+  "training_scales": [
+    1,
+    2,
+    3,
+    5
+  ]
+}

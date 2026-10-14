@@ -1,0 +1,187 @@
+FLOOR COEFFICIENT RECOVERY043: EXACT RECIPE OBSTRUCTION, RH REMAINS OPEN
+
+This analytical followup adds finite-cell coefficient recovery to the fixed
+floor norm representation. It makes no additional norm observation and does
+not edit or rerun frozen043/041/042. Root binds selected recipes/rules and the
+full next frontier to the frozen run_spec. Raw pilot scores remain intact.
+Any rejection below concerns the EXACT FIXED recipe, not an arithmetic
+primitive in isolation, arbitrary mixtures, or the general floor strategy.
+
+1. Complete local recovery, independent of higher support
+
+For a pure floor program write
+ g(k)=sum_(n>=2)c_n*(k mod n)/n,
+ e(k)=1-g(k), S=sum c_n/n, g(0)=0.
+All sums are finite for each individual program. Then
+ g(k)-g(k-1)=S-sum_(n|k,n>=2)c_n,
+ S=g(1)=1-e(1).
+For every integer k>=2,
+ sum_(n|k,n>=2)c_n=1-e(1)+e(k)-e(k-1).
+Finite divisor inversion, with the coefficient at1 set0, gives for every n>=2
+ c_n+mu(n)=mu(n)e(1)
+           +sum_(d|n,d>=2)mu(n/d)*(e(d)-e(d-1)).
+This is an exact identity for EVERY finite program, regardless of its maximum
+support. It does not discard coefficients with index larger than n.
+
+Each e(k) is constant on the full cell(1/(k+1),1/k], of length1/[k(k+1)].
+If E=integral_0^1 e(x)^2dx tends0 along ANY family of pure programs, then
+ |e(k)|<=sqrt(k(k+1)*E)->0 for every fixed k.
+Therefore the NECESSARY coefficient limits are c_n->-mu(n), every fixed n>=2.
+These necessary limits are not sufficient for norm convergence or RH.
+
+2. Algorithmically discovered exact witnesses
+
+Rather than hard-code an arithmetic family or chosen index, generate_witness(n)
+solves an n-by-n exact rational linear system for alpha_1,...,alpha_n:
+ sum_(1<=k<=n)alpha_k*k=0,
+ sum_(1<=k<=n)alpha_k*(k mod j)/j=-1_(j=n),2<=j<=n.
+The first equation annihilates ALL higher basis columns j>n, because then
+(k mod j)/j=k/j. The remaining columns eliminate every coefficient except
+c_n. The constant sum alpha_k equals mu(n), independently checked by scalar
+trial factorization. Hence sum alpha_k e(k)=c_n+mu(n) for pure programs.
+Witnesses are found by Gaussian elimination over exact Fractions, not by
+fitting sampled energy data, choosing an anticipated winner or observing norms.
+
+The explicit JSON witness records n,sorted nonzero rational alpha cells,
+constant,zero higher-support slope,and the exact Cauchy denominator
+ D_n=sum alpha_k^2*k(k+1)>0.
+verify_witness REPLAYS these supplied equations directly without resolving the
+linear system. It checks the constant,each finite basis column,linear tail
+annihilation,the denominator and theorem-scope strings. A separate checker
+can perform the same rational dot products without trusting the producer.
+
+Weighted Cauchy-Schwarz on the selected cells, followed by the nonnegative
+remainder of the continuous integral, proves
+ E>= (sum alpha_k e(k))^2/D_n.
+The first discovered calibrations are
+ c2-1=-2e1+e2, D2=14;
+ c3-1=-e1-e2+e3, D3=20;
+ c4=e1-e2-e3+e4, D4=40.
+Thus E>=(c2-1)^2/14, E>=(c3-1)^2/20, E>=c4^2/40.
+There is no support/truncation error in these identities. A coefficient
+adjustment at index2, including anchoring, vanishes from every n>2 witness.
+
+3. General step response and direct forcing obstruction
+
+For e=1-sum c_n f_n-sum d_q I_q, I_q=1_(x<=1/q), the same witness gives
+ sum alpha_k e(k)=c_n+mu(n)-sum_q d_q*B_n(q),
+ B_n(q)=sum_(k>=q)alpha_k.
+The corresponding norm lower bound retains the ENTIRE signed combination
+and has the same denominator D_n. Step coefficients are not silently omitted.
+
+For the frozen refinement forcing h_N=e_(qN)-b*D_q e_N, the exact compiled
+floor coefficients are c_(qN)-b*lift_q(c_N), with step coefficient b at q.
+Here lift_q(f_j)=f_(qj)-f_q/j, so the lifted coefficient at n!=q is c_(n/q)
+if q divides n with n/q>=2, otherwise0. The special coefficient at q is
+-sum c_j/j. The review preserves this special global sum as unresolved when
+the family is unanchored and b!=0. When anchoring is enabled, the finite sum
+is EXACTLY1 at every N, so that contribution is known; anchored c2 itself
+still has no assumed coefficient limit.
+
+For every index whose necessary limits are known, the forcing gap is
+ lim c_h,n+mu(n)-b*B_n(q).
+A certified nonzero gap gives a positive lower bound for liminf norm(h_N)^2,
+directly refuting ANY proposed forcing-energy upper bound tending0 along this
+same fixed recipe. This does not infer forcing failure solely from target
+failure; it proves a separate exact finite-cell forcing inequality.
+At q2,n3, B3(2)=0 and there is no parent coefficient at n3, so the target gap
+c3-1 is also the forcing gap for ANY b. Other indices can give stronger direct
+forcing witnesses and are scanned automatically.
+
+4. Exact fixed-recipe limits, rounding and anchor behavior
+
+The reviewed mathematical recipes are exactly those frozen043 productions:
+ c_n(N)=-a(n)*dyadic(n^-beta)
+               *dyadic((1-dyadic((n/N)^alpha))^gamma),
+with the untapered option and optional coefficient2 anchor. All exponents are
+fixed canonical rationals, alpha,gamma>0 and beta>=0. The precision is
+B(N)=4ceil(log2(N)); each dyadic root is rounded DOWN with error<2^-B(N).
+For fixed n as N->infinity, (n/N)^alpha->0, its rounded inner value->0,
+the outer real root->1, and its rounding error->0. The independently rounded
+decay factor tends n^-beta. Thus the unanchored coefficient limit, or any
+anchored coefficient with n!=2, is exactly -a(n)*n^-beta.
+The anchor changes only coefficient2 by2*(1-sum c_n/n); that growing sum is
+not presumed to vanish/converge. The review marks its c2 limit UNRESOLVED.
+
+Arithmetic channels are evaluated only at the small witness index, using
+independent scalar trial factorization and exact divisor convolution. No
+producer sieve or imported arithmetic/source array is read. The gate covers
+all seven frozen arithmetic expressions without a family blacklist.
+
+For beta=a/b, root_bracket independently brackets (1/n)^(a/b) by exact dyadic
+rationals l,u, proving l^b<=(1/n)^a<=u^b by exact integer powers. beta0 gives
+the exact interval[1,1]. Negative channel signs are retained when scaling the
+bracket to the coefficient interval. verify_root_bracket replays the rational
+power inequalities. A gap interval entirely on one side of zero yields the
+exact rational liminf lower bound distance(interval,0)^2/D_n. Ambiguous
+brackets remain OPEN, never receive a float sign or fabricated rejection.
+
+Forcing limits combine the child/parent coefficient brackets and the exact
+step response with all signs. The chosen witness maximizes the certified
+rational lower bound among the scanned indices, breaking ties by smaller n.
+The detector never hard-codes n2/n3/n4 as the winning index or a winning family.
+
+5. APIs, output and scoped frontier
+
+ generate_witness(index,meter=None), verify_witness(witness,meter=None)
+ root_bracket(base:Fraction,exponent_text,bits=24,meter=None)
+ verify_root_bracket(bracket,meter=None)
+ coefficient_limit(recipe,n,bits=24,meter=None)
+ review_recipe(recipe,rule=None,max_index=16,bits=24,meter=None,witnesses=None)
+ audit_selected(selected_dict,max_index=16,bits=24,meter=None)
+ audit_selected(recipe_list,rule_list,max_index=16,bits=24,meter=None)
+ review_frontier(frozen_recipe_list,max_index=16,bits=24,meter=None)
+
+Selected recipes have unique ids; EVERY declared q/b/stratum rule is reviewed
+against its matching recipe. The same family may appear in multiple distinct
+rule strata. Missing recipe/rule matches and duplicate rule identities raise.
+Per-recipe schema floor-fixed-recipe-recovery-review-v1 includes all scanned
+target/forcing candidates,root brackets,exact gaps,witnesses,strongest positive
+liminf bounds,exact recipe/rule binding and analytically_refuted versus OPEN
+statuses. The scan defaults to2..16 and shares solved witnesses across reviews.
+review_frontier applies ONLY this necessary-condition gate to the frozen
+recipe list. It returns all statuses/strongest witnesses and complete OPEN
+recipes. It neither reselects final candidates nor evaluates/changes prior
+pilot scores. OPEN frontier members have passed only these necessary local
+checks; no convergence proof is claimed for them.
+
+The rejection scope is ONLY this exact fixed recipe. Fixed arithmetic mixtures
+with wrong coefficient limits can be excluded; the underlying primitives and
+future scale-vanishing/taper-difference mixtures are not thereby excluded.
+There is no blacklist of Liouville,convolution,mixed channels or taper roots.
+All outputs retain false RH/source-array/additional-norm flags and explicitly
+mark necessary-condition-only scope. Original centered/source obligations
+remain available and OPEN; these fixed-recipe obstructions do not prove RH.
+
+6. Resource domains versus mathematical N->infinity
+
+The finite witness implementation accepts indices2..64,scalar arithmetic
+indices1..4096,exact-root bracket bits1..128 and rational input bit cap4096.
+Prospective exact powers above400000bits are rejected before exponentiation.
+Meter defaults to50m proxy operations and600seconds and charges all Gaussian
+elimination steps,direct witness dot products,trial factor/divisor work and
+root-power comparisons. Frontier lists have a10000-entry resource cap.
+These are finite certificate-generation limits. They do NOT truncate the
+mathematical recipe definition at a finite N or restrict the N->infinity
+argument to supports successfully computed by the finite compiler. The exact
+dyadic rounding formula is mathematically defined for arbitrary integer N;
+its precision may increase without a fixed numerical-bit limit in that
+definition. A finite witness proves its inequality for arbitrary larger
+support because the linear higher-column condition is symbolic and exact.
+
+7. Focused synthetic development and root-owned application
+
+One owned invocation passed12 tests,0 failures/errors,62059 charged proxy
+operations,5401 maximum predicted power bits,0.05455731903202832seconds.
+Receipt: floor_residual_recovery_review_043_development.json.
+Tests check discovered n2/n3/n4 witnesses,arbitrary higher coefficients and
+steps,all finite/higher basis relations,weighted Cauchy and its exact equality
+case,tampered constants/slopes/denominators/scope,exact root brackets and replay
+including denominator257,scalar arithmetic channels,anchor uncertainty,
+necessary-only mu frontier,fixed mixture and direct forcing gaps,irrational
+limits,multiple rules per family,missing matches,frontier semantics and resource
+guards. Only synthetic rational cell fixtures and root-bracket/calibration
+proofs were used. No additional norm evaluator,prior suite,source array,frozen
+file edit or hash occurred. Root owns actual selected/full-grammar binding and
+publication under analytical_followup_001; this producer does not rerun that
+application or alter the raw043 pilot.

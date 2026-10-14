@@ -1,0 +1,76 @@
+{
+  "RH_proved": false,
+  "global_bound_proved": false,
+  "new_operator_scores_before_freeze": false,
+  "no_new_float_search": true,
+  "spec": {
+    "atoms": [
+      "prefix",
+      "half",
+      "even",
+      "mod3one",
+      "prime",
+      {
+        "power": -1,
+        "theta": "1/3"
+      },
+      {
+        "power": 0,
+        "theta": "1/3"
+      },
+      {
+        "power": 1,
+        "theta": "1/3"
+      },
+      {
+        "power": -1,
+        "theta": "1/2"
+      },
+      {
+        "power": 0,
+        "theta": "1/2"
+      },
+      {
+        "power": 1,
+        "theta": "1/2"
+      },
+      {
+        "power": -1,
+        "theta": "2/3"
+      },
+      {
+        "power": 0,
+        "theta": "2/3"
+      },
+      {
+        "power": 1,
+        "theta": "2/3"
+      }
+    ],
+    "constant_vector": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2",
+      "-1/2"
+    ],
+    "dimension": 14,
+    "dual_matrix": "H_child-4*H_parent",
+    "increment": "S_K(2X)-4*S_K(X)",
+    "original_lhs": "D-(E(2X)-4E(X))",
+    "proposed_identity": "original_lhs=old_proof_terms+storage_increment",
+    "scope": "diagnostic only; no primal feasibility or uniform innovation bound",
+    "selection": "entire anchored PSD state cone; no selected channel restrictions",
+    "state": "R=e_prefix*e_prefix^T+K with K PSD, shared at every scale",
+    "version": "anchored-storage-witness-v1"
+  }
+}

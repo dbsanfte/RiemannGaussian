@@ -1,0 +1,314 @@
+THE COMPLETE SIGNED FRONTIER: SUPPORT IDEALS, GLOBAL DEFECTS AND POLE JETS
+
+Status: exact polynomial compression, complete global-defect identities,
+centering/pole bookkeeping and a reusable proof-search grammar are proved
+below. These are constructive reductions, not a proof of the remaining
+joint signed core. The new033 cubic component is paid; every opposite
+drift and companion remains. The m4+ absolute-envelope obstruction is
+not overcome by a change of coordinates. Whole-core and RH flags stayfalse.
+
+Only this new memo was written. Finalized033 and all older files remained
+untouched. No source observations, sample tables, studies, tests or hashes
+were run. The authoritative input read was
+candidate10_complete_convolution_obligation.json, its full980-term signed
+join, selected representation506, and the matching immutable source code.
+The completed033 handoff reports its newly verified component; no numerical
+responses from that study were needed for the algebra here.
+
+A single NEW exact symbolic calculation reconstructed the980 formal terms
+from the86 inherited inverse terms and verified the two univariate finite
+geometric defects below. It did not evaluate any arithmetic source table.
+Its conservative declared work was217856 proxy operations:64+8a charged
+before each binomial term at degreea,20 per compared collected row, and8
+per univariate coefficient multiply-add. Receipt:
+ SYMBOLIC_WORK module=review034 operations=217856 formed_terms=980
+No old implementation or old suite was executed by that calculation.
+
+1. The inherited source, symbols and two different meanings of equality
+
+Let u=1/3,v=2/3,theta=2/3,beta=9/2. For ONE declared horizonN=4X-1,
+ U=floor(N^(1/24)), V=floor(N^(1/2)),
+ A=mu1_[1,U], B=(mu*n^(-v))1_[1,V], c=A_hat(1), C=c delta,
+ O=One, K(n)=n^(-u), b_v(n)=n^(-v),
+ R=delta-O*A, S=delta-b_v*B, E=R+C*O.
+The actual source states include delta and their complete integer units.
+Products are Dirichlet convolutions; a pointwise power weight is explicitly
+distinguished from them. Write nu(n)=mu(n)n^(-v).
+
+The COMPLETE original source is
+ f=beta K*mu^2-beta K*mu*nu-beta mu-R_u K*nu.         (1.1)
+Its scalar R_u is the previously proved pure-center residue, not a fitted
+coefficient. Transport uses g=f-e and retains the exact error-e.
+The original source function is
+ F(s)=zeta(s+u)[beta/zeta(s)^2
+             -beta/(zeta(s)zeta(s+v))-R_u/zeta(s+v)]
+                         -beta/zeta(s).             (1.2)
+The known real pole at theta is canceled by
+ beta/Z^2-beta/(ZW)-R_u/W=0,
+ Z=zeta(theta), W=zeta(theta+v)=zeta(4/3).           (1.3)
+Here Z is nonzero and W>1. This real-pole identity does NOT exclude the
+unresolved nonreal inverse-zeta poles in(1.2).
+
+There are two equality types:
+ GLOBAL: formal Dirichlet-series/coefficient identity at every index,
+ initially absolutely convergent for Re(s)>1 when analytically evaluated;
+ LOCAL_N: coefficient identity for1<=n<=N, proved by strict support ideals.
+Only GLOBAL identities can be evaluated at theta or used to compare global
+principal parts without an explicit defect. A LOCAL_N identity does give
+the full prefix through N, including every earlier prefix used by channels.
+It does not give the equality of infinite moments or analytic residues.
+
+2. Exact compression of the980 terms
+
+Define G_L(r)=sum_(a=0)^(L-1)r^a and
+ H_L(r)=sum_(a=0)^(L-1)(a+1)r^a. At L=24 the saved polynomial source is
+ f_N=beta K*A^2*H24(R)
+      -beta K*A*B*[G24(R)+S*G12(R)]
+      -beta A*G24(R)-R_u K*B*(delta+S).             (2.1)
+Here f_N is the finite polynomial for the untransported source f. The
+saved transported join is g_N=f_N-e, which equals g=f-e on1..N; the
+separate-e is never included in, or dropped by, the980-term polynomial
+count. Every normalization and remaining bound target retains that error.
+Its inverse monomials number24+36+24+2=86. Expanding R=E-C*O produces
+300+378+300+2=980 distinct formal terms, exactly the saved join. This
+count and every rational coefficient were checked by the recorded symbolic
+calculation. No terms are absent, and no sample-based cancellation is used.
+
+For example the cubic B-mode expansion is
+ 18 K*A^2*(E^3-3C*O*E^2+3C^2*O^2*E-C^3*O^3).
+The18 K*A^2 E^3 term now has a paid ANALYTIC-centered component. Its
+opposite +18 M_raw J_theta/theta remains. The27/2 K*A^2 E^2 component
+was previously paid, and the older paid E-linear pieces have their own
+complete compensations. Paying these terms does not pay their polynomial
+companions, nor allow treating an uncentered E^3 as a bounded state.
+
+The inverse facts give support(R)>U and support(S)>V. Thus
+ R^24, R^12*S, S^2 have support>N because
+ (U+1)^24>N, (U+1)^12(V+1)>N, (V+1)^2>N.
+Strict greater-than is essential at exact root/floor boundaries. The
+minimum index of a convolution product multiplies even when coefficients
+are signed. These are finite support facts, not infinite tail estimates.
+
+3. The COMPLETE global defects, rather than vanished tails
+
+The exact polynomial identities are
+ (1-r)G24(r)=1-r^24,
+ (1-r)^2H24(r)=1-25r^24+24r^25.
+For the mixed source they give
+ D_B=25R^24-24R^25,
+ D_U=delta-(delta-R)(delta-S)[G24(R)+S G12(R)]
+    =S^2+(delta-S)R^24+S(delta-S)R^12,
+ D_V=R^24, D_power=S^2.                             (3.1)
+Every monomial in these defects has support>N. Using O*mu=delta and
+b_v*nu=delta yields the GLOBAL identities
+ A^2 H24(R)=mu^2*(delta-D_B),
+ AB[G24(R)+S G12(R)]=mu*nu*(delta-D_U),
+ A G24(R)=mu*(delta-D_V),
+ B(delta+S)=nu*(delta-D_power).                     (3.2)
+Consequently the complete source defect is
+ d_N=f-f_N
+    =beta K*mu^2*D_B-beta K*mu*nu*D_U
+                  -beta mu*D_V-R_u K*nu*D_power.   (3.3)
+It is supported>N, so its RAW prefix is exactly0 for everyx<=N. It
+contains ALL tail coefficients at indices>N, repeated primes and cofactors.
+Its analytic value, centered prefix, and principal parts are not0.
+
+In particular the true mu/nu factors in(3.3) preserve the unresolved
+inverse-zeta poles of the original source. One may not apply a pole-free
+single-theta Gaussian contour to this global defect. Replacing it by0
+as a global function would assert exactly the missing source information.
+The original source recovery remains intact if(3.3) is kept as a formal
+global identity plus a LOCAL_N support certificate.
+
+Generic reusable version: for any synthesized finite inverse polynomial
+P_(p,q)(R,S), set
+ D_(p,q)=delta-(delta-R)^p(delta-S)^q P_(p,q).
+Then A^p B^q P_(p,q)=mu^p nu^q*(delta-D_(p,q))
+GLOBALLY. The compiler must archive D_(p,q), its full monomials and support
+proof even when they vanish from the declared finite coefficient window.
+This does not duplicate a quantitative finite-inverse theorem: it adds the
+global centering/pole debt needed to use that identity in a bound argument.
+
+4. Principal parts: the980-term join is not a single-theta function
+
+E_hat(s)=1+zeta(s)[c-A_hat(s)] is regular at1. In contrast
+ R_hat(s)=1-zeta(s)A_hat(s)
+has a potential pole at1 with residue-c. S_hat(s) has a potential pole
+at1-v=1/3, and zeta(s+u) has its pole at theta=2/3.
+The finite function associated with(2.1) therefore has potential real poles
+at1 of multiplicity up to23, at theta of multiplicity1, and at1/3 of
+multiplicity1. Zero coefficients may reduce these orders, but that reduction
+needs an exact principal-part certificate. The whole join does not generally
+cancel the pole at1. For example, its highest coefficient at1 is
+ beta(-c)^23*c*[zeta(1+u)(24c-B_hat(1))-1].          (4.1)
+For the purely exact unit cutoffU=V=1 it is nonzero, since c=B_hat(1)=1
+and zeta(4/3)>1. This algebraic unit example requires no source sampling.
+Thus whole-source compression cannot license the033 single-theta bridge.
+
+For a prospective contour sigma>1/3, the1/3 pole stays below the line;
+the1 and theta poles are crossed and require their FULL multiplicities.
+For sigma<=1/3 additional explicit treatment is necessary. A Laurent
+principal part sum_j a_j/(s-lambda)^j contributes, under Perron,
+ Res_(s=lambda)[F(s)x^s/s]=x^lambda P_(j-1)(logx).
+The1/s factor and all lower polynomial coefficients must be kept. In a
+Gaussian regulator exp(e s^2) its derivatives also appear before the
+limit. A coefficient-residue term alone is not the full main for j>1.
+
+The defect(3.3) has the opposite known real principal parts because the
+original(1.2) is regular there after(1.3); it additionally carries the
+original unresolved nonreal poles. Centering f_N at ALL its known real
+poles creates large explicit counterterms, not a free proof of f on n<=N.
+The corresponding centered defect supplies the exact opposite terms in
+that window. Keeping their joint sum is sound; paying one independently
+by an unavailable moment bound is not.
+
+5. Consolidated theta defect and why opposite drifts are not free
+
+Evaluate the GLOBAL identities at theta, where Z,W are nonzero. Put
+ r=1-Z A_hat(theta), s=1-W B_hat(theta).
+The theta residue of f_N is
+ M_N=beta A_hat(theta)^2H24(r)
+    -beta A_hat(theta)B_hat(theta)[G24(r)+sG12(r)]
+    -R_u B_hat(theta)(1+s).
+Using(1.3) and(3.1) gives the exact compact scalar formula
+ M_N=-beta D_B(r)/Z^2+beta D_U(r,s)/(ZW)+R_u s^2/W. (5.1)
+The V-mode has no outerK pole at theta and therefore no contribution to
+this residue. Equation(5.1) is preferable to980 separately evaluated drifts.
+It does NOT say M_N=0. Its r^25 coefficient is24beta/Z^2, nonzero;
+no formal whole-companion cancellation removes that term. Actual special
+values may cancel terms, but no all-U saving follows from ring algebra.
+
+The known shifted residual satisfies |S_hat(theta)|<=its critical weighted
+l1 norm<=42V^(-1/6). This pays no comparable smallness of r: R has lost
+its bounded-prefix centering. The remaining r^24/r^25 parts of(5.1)
+cannot be bounded by discarding the finite inverse defect.
+
+For an arbitrary complete source H, let M_H denote the theta residue of
+its Dirichlet function and define the partial theta-centering
+C_theta(H)(n)=prefix(H)(n)-M_H n^theta/theta. Other pole counterterms
+remain separate in this notation; no extra convolution with K is applied
+to f_N or d_N, which already include their declared kernels. On n<=N,
+raw d_N has prefix0 and its theta-centered
+contribution is -M_(d_N)n^theta/theta=+M_N n^theta/theta. Thus full
+recovery is a JOINT statement. No separate bound on |M_N| is necessary
+if that drift is kept with the remaining correlation, but it may not be
+removed or declared paid. Similarly all opposite paid-component drifts
+can be consolidated into this complete scalar/pole ledger, not deleted.
+
+Ordinary cubic convergence is unclaimed by the033 rule; this does not say
+that every other classical divisor-error route to it is unavailable. No
+such extra theorem is imported here. An ordinary infinite coefficient
+moment is not used in(5.1). Treating a
+support-zero finite-horizon defect as having a zero ordinary or analytic
+moment would be precisely the forbidden local-to-global inference.
+
+6. A small available provider, and its mandatory opposite drift
+
+An optional elementary rule can pay the COMPLETE centered pure-power
+companion, without higher zeta moments. This is a general decay/Minkowski
+provider, not a new actual-prime signed estimate. Before any new payment,
+the compiler must compare it with the inherited paid vector and C_old;
+an earlier source/split reduction may already pay exactly this component.
+No duplicate payment or claim of new progress is authorized by this note.
+For0<sigma<theta<1 the
+base centered power kernel
+ B_theta(x)=sum_(n<=x)n^(theta-1)-x^theta/theta
+has global squared norm at most
+ B(theta,sigma)=[1/(theta-sigma)+1/sigma]/(2theta^2).
+For any coefficient state h with sum|h(d)|d^(-sigma)<infinity, the
+COMPLETE centered K*h norm is at most sqrt(B(theta,sigma)) times that
+mass, provided its ordinary theta moment is retained. The identity
+sum_d h(d)B_theta(x/d) includes every d>x main compensator; it follows
+by absolute convergence, then Minkowski. No finite-d truncation is hidden.
+
+For h=nu, sigma=1/2 and theta=2/3,
+ sum|nu(d)|d^(-1/2)<=zeta(7/6)<=7,
+ B(theta,sigma)=9.
+Hence the continuous critical norm is at most441; multiplying byR_u^2
+uses R_u<5 if a rational numeric majorant is desired. Integer cells retain
+the moment1/zeta(4/3), including the unit, and are paid by the same explicit
+cell correction as033. This component is available for a detector to match
+as a generic rule; no claim is made that the current frozen033 executable
+already applies it.
+
+Its source scalar-R_u leaves the opposite drift
+ -R_u/[theta*zeta(4/3)] J_theta.
+The original real pole balance joins that drift with the positive/negative
+inverse-zeta modes in(1.3). Paying the centered pure-power state alone does
+not pay or cancel that signed join. A short B(delta+S) implementation must
+also keep its global S^2 defect from(3.2).
+
+7. Concrete detector grammar: joined support/pole-jet proof search
+
+The next implementable primitive is a TWO-LEDGER normal form, not another
+positive-envelope catalogue. Input is the exact signed source AST, declared
+N/U/V cutoffs, source inverse facts and available paid norm certificates.
+Search columns can be generated, rather than nominated, by:
+ (i) commuting and collecting exact coefficient monomials;
+ (ii) binomial coordinate changes R=E-C O and E=R+C O;
+ (iii) generic G/H inverse-polynomial recurrences and factor extraction;
+ (iv) support-ideal division, with every discarded monomial stored inD;
+ (v) exact global inverse substitutions O*mu=delta,b_v*nu=delta;
+ (vi) linear analytic-centering/pole-jet collection of the WHOLE expression;
+ (vii) source matching to proved centered norm nodes and finite-head rules.
+
+Each column carries an exact tuple
+ [LOCAL_N coefficient difference,
+  GLOBAL source defect with its actual inverse factors,
+  theta analytic residue,
+  every known real Laurent jet and its multiplicity,
+  unresolved nonreal-pole status,
+  declared complete norm cost or OPEN joined leaf].
+Exact rational linear algebra can search combinations that cancel coefficient
+rows and known pole jets simultaneously. Expressions involving c,A(theta),
+B(theta),zeta real values/derivatives must remain typed scalar expressions;
+a polynomial zero must be replayed symbolically, not inferred from a source
+sample or fitted constant. Support cannot be used as a zero on the GLOBAL
+moment/jet rows. A residual with nonzero jets is a full signed joined target
+including those counterterms. A residual with inverse-zeta poles is not
+accepted into the finite-zeta-only033 Gaussian rule.
+
+A genuine proof gain must remove an unpaid source term through a proved
+norm provider or reduce its cost while preserving the complete defect.
+Compressing980 terms to86 terms or four original modes is computationally
+useful but is an exact presentation change, not an exponent gain. A one-row
+restatement or a return to(1.2) receives no newly proved-bound status.
+The grammar can retain all cross terms in a small joined Gram: paid vector
+P, remaining finite polynomialZ, scalar theta drift and known higher real
+pole counterterms. Only P has an established uniform cost. The complete
+Z-plus-drift squared norm stays OPEN, with source binding and finite head.
+This is preferable to forcing separate bounds on each large companion.
+
+8. Useful support alternatives, and their quantitative failure gates
+
+A support-preserving, pole-free tail can also be generated from the actual
+head identity: J_U=E-c One_[1,U]. It has support>U, bounded prefix<=4U,
+and no pole at1. E=c One_[1,U]+J_U is GLOBAL. Mixed finite-head/tail
+binomial expansions are sound, and ordinary single-tail theta moments and
+their all-real compensators are available. This provides a different
+typed search carrier from R, whose support is good but pole is unpaid.
+However J_U has the same coarse U^(1-sigma) vertical amplitude as E;
+its sign-free moment envelope does not bypass the033 m4+ obstruction.
+Support alone does not supply a critical weighted l1 contraction.
+
+The tail inverse identities R*mu=mu-A and S*nu=nu-B are likewise exact
+arithmetic reductions. They may generate smaller-argument/cofactor leaves,
+but an unproved signed operator bound on R is not a reusable contraction.
+For example a delayed R^k source has support>(U+1)^k but reintroduces
+the pole-at1 jets; subtraction of these jets changes its coefficient
+support and must remain in the coupled recurrence. These are explicit
+rejection gates against an apparent smaller-scale induction with unpaid
+macroscopic forcing or a current-scale cycle.
+
+Future proof search may test a coupled correlation for the residual inverse
+factors in(3.3), or a weighted actual finite-factor Mellin Gram after exact
+pole/defect collection. Such a leaf must state all-U/N quantifiers, height
+windows, full compensators and smaller-scale arguments. It is not licensed
+by the generic moment library or by the actual inverse identities alone.
+
+Disposition: the exact joint source has a compact, auditable global-defect
+and pole-jet normal form. This makes the next detector search constructive
+and prevents false drift/pole cancellation. It supplies an optional generic
+decay component provider and new source-normalization search signatures,
+but it does not establish the remaining signed correlation. No winner,
+uniform residual constant, full-core estimate or RH conclusion is asserted.

@@ -1,0 +1,27 @@
+{
+  "owner": "prefix_proof_checker",
+  "runs": [
+    {
+      "command": [
+        "../.venv/bin/python",
+        "-B",
+        "test_check_mobius_mass_conservation_060.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests": 17,
+      "stdout": "SYNTHETIC_WORK module=check_mobius_mass_conservation_060 operations=246704\n",
+      "stderr": "test_bad_weights_unit_copy_or_profile_swap (__main__.MassCheckerTests) ... ok\ntest_charge_only_pipeline_meter (__main__.MassCheckerTests) ... ok\ntest_complete_period_identity (__main__.MassCheckerTests) ... ok\ntest_completeness_requirement_and_rh_scope (__main__.MassCheckerTests) ... ok\ntest_continuous_cells_endpoints_and_multiple_periods (__main__.MassCheckerTests) ... ok\ntest_copy_weight_must_bind_identity (__main__.MassCheckerTests) ... ok\ntest_divisor_rows_canonical_nonzero_unique (__main__.MassCheckerTests) ... ok\ntest_equal_copies_conserve_signed_weighted_count (__main__.MassCheckerTests) ... ok\ntest_extra_proof_flags_and_float_inputs_rejected (__main__.MassCheckerTests) ... ok\ntest_general_rational_identity_and_zero_identity (__main__.MassCheckerTests) ... ok\ntest_missing_floor_row_or_altered_profile_coefficient (__main__.MassCheckerTests) ... ok\ntest_ordinary_mu_to_smooth_all_units_and_exits (__main__.MassCheckerTests) ... ok\ntest_period_cannot_be_truncated_or_swapped (__main__.MassCheckerTests) ... ok\ntest_positive_copy_bound_exact_price (__main__.MassCheckerTests) ... ok\ntest_prime_mask_and_band_gates (__main__.MassCheckerTests) ... ok\ntest_prospective_period_and_bit_caps (__main__.MassCheckerTests) ... ok\ntest_underpriced_constant_or_log_degree (__main__.MassCheckerTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.118s\n\nOK\n",
+      "operations": 246704,
+      "elapsed_seconds": 0.19268696301151067,
+      "peak_rss_KiB": 25460
+    }
+  ],
+  "operations": 246704,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "source_arrays_read": false,
+  "scientific_integrals_evaluated": false,
+  "old_suites_replayed": false,
+  "edits_stopped": true
+}

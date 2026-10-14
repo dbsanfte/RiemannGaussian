@@ -1,0 +1,98 @@
+AUTOMATIC SHARED-SIGN WEIGHTED ENERGY AND PARITY-CYCLE BOUNDS065
+
+The previous064 turn was substantive: independent source admission and301
+prime-conditioned bound certificates, plus explicit relaxation witnesses.
+The all-scale signed control needed for the research goal is still OPEN.
+This study changes the bound construction rather than conditioning more
+prime signs or running a larger numerical grid for a fitted exponent.
+
+Freeze the10 files listed by the runner before new scientific energy
+weights, expansions, cycle packs or scores. Preserve305 ancestor snapshot
+files by direct bytes, without precautionary hashes. Source-only review,
+new synthetic tests and an inspection of existing064 polynomial term counts
+precede the freeze. That inspection found maximum87598 square-expansion
+pairs across both endpoints; it computed no new weights or bounds.
+
+Use all36 saved064 parents labelled prefix_1/2, including labels coalesced
+with other conditioning powers. Keep precisely the same remaining prime
+variables, source fill, N,y,H,K and affine endpoint rows. Bind the archived
+independent source and contraction verdicts to this exact parent. Reuse
+those verdicts; do not rerun the unchanged064 study or claim a fresh source
+check. The NEW checker proves a bound conditional on admission of the SAME
+parent. Its local shape/L1 validation is not original source admission.
+
+For each parent polynomial row q_j(x), construct a positive rational weight
+from its coefficient L1 A_j: round A_j^beta UP to a binary number with four
+significand bits. Empty rows receive weight exactly zero. Enumerate
+ beta=-1/2,0,1/3,1/2,3/5,2/3,7/8,1,3/2.
+These are finite sample orders, not a whitelist. The API permits any exact
+canonical rational order within explicit integer-power bit/work limits.
+Rounding uses integer power comparisons, including negative and fractional
+orders; floating approximations never determine the certified weights.
+Bounded significands control denominator growth when energies divide by
+many different weights. Deduplicate identical complete weight vectors,
+retaining all power labels. Do not fit weights to actual source values.
+
+Compute E(x)=sum_j q_j(x)^2/w_j. Expand each row square ONCE, caching its
+exact prime-parity coefficients for all weight policies. Shared primes
+square to1, all diagonal constants and twice each cross are retained, and
+all j rows coalesce BEFORE absolute values. The independent checker uses
+integer gcd reduction to reconstruct every energy term from the supplied
+parent and weights, without importing the producer or its cached squares.
+
+Write E=A_1+sum_(F nonempty)A_F chi_F. A_1 is nonnegative. The first bound
+is L=A_1+sum|A_F|. Seek relations among the preferred signed characters:
+a set of distinct nonconstant keys whose XOR is zero and whose coefficient
+sign product is negative cannot all achieve their individual maxima.
+A cycle of length l therefore has signed sum<=l-2. Allocate a positive
+rational mass to every cycle, charging that mass to each member's absolute
+coefficient capacity. Overlapping cycles are allowed only within capacity.
+This proves E<=L-2*sum_cycle_mass for every remaining prime assignment.
+
+The generator sorts positive remaining capacities descending, then key
+degree and value, and performs GF(2) basis reduction. On the first negative
+dependency it consumes the minimum capacity and rebuilds. Stop after no
+dependency or64 cycles per endpoint. This is a finite deterministic bound
+search, not a claim of optimal cycle packing or an exhaustive cone search.
+The checker validates every dependency, sign, mass, capacity and final price.
+
+Weighted Cauchy then gives
+ sum_j|q_j(x)| <=sqrt[(sum_j w_j)*(L-2*sum_cycle_mass)].
+Round the square root upward to denominator4096 by exact integer arithmetic.
+Retain also the uncycled Cauchy bound to isolate the cycle contribution.
+Check original all-free-plus and actual all-free-minus witnesses remain
+below the new bounds and agree with their archived064 interpretations.
+
+Each endpoint may have different resulting weights/energies. Convexity of
+the ORIGINAL row L1, whose rows are affine in r, supplies the ratio continuum.
+Do not claim that E is affine or extrapolate from a few t samples. Add each
+endpoint's unchanged long price BEFORE maximizing. Retain all energy
+certificates, even if worse. The old064 coefficient-L1 envelope remains an
+available fallback; select the lowest complete certified budget, with
+deterministic policy order for ties. No new conditioning or original source
+prefix, Mobius table, integral or LP evaluation is performed.
+
+The source-only065 audit supplies exact additional arithmetic structure:
+the formal inverse reconstructs E(d) plus the divisor-convolution defect.
+At square-root conditioning its all-free-plus defect is exactly a sum over
+free primes. The actual ordinary-mu divisor inverse has zero defect. Also
+core_inverse fixes1/d, so the joined truncated kernel separates EXACTLY
+into a harmonic profile and a fractional remainder; the source-linear
+part costs at most4H(1+logH). These are reviewed identities, not a new
+machine-admitted defect schema or a proved growth estimate. No O(N) error
+may be called negligible relative to a proposed N/log(N)^2 witness.
+
+Three fork workers, one native thread each,7200s/module,300b charged units
+per producer/checker meter,16GiB aggregate authorization. Prospective square
+expansion cap100000 pairs; energy terms60000; the independent checker also
+guards rational bits,250000 cumulative entries and512MiB prospective local
+allocation. Report actual process peaks separately from prospective costs.
+Preserve failures and do not replay unchanged historical tests or studies.
+
+The next unpaid theorem is a uniform bound on
+ (sum_j w_j)*(A_1+sum|A_F|-2*sum_cycle_mass)
+of order N^(1+2*kappa), for each kappa>0 and every required N,y at both
+endpoints, or an arithmetic-constrained construction controlling the same
+repair without the stronger arbitrary-sign domain. Finite improvement,
+cycle discovery and computational efficiency do not discharge this leaf.
+Keep the RH goal active unless its full uniform requirements are proved.

@@ -1,0 +1,198 @@
+SIGNED ROUGH-KERNEL TRANSPORT AFTER THE077 L1 OBSTRUCTION
+======================================================
+
+Scope and actual disposition
+----------------------------
+Only this new postreview is written. All077 pre-run files are frozen and
+unchanged. This review reads saved077 report/construction/check records,
+uses no new arithmetic source query, tests, science rerun, hashes or agents.
+The mathematical construction below is exact and independent of numerical
+success. Its signed uniform prices remain arithmetic proof obligations.
+
+The report records48 distinct formula/q jobs representing51 stage076
+programs,672 independently checked row constructions (14 per job), and
+48 verified uniform obstructions to the fixed-prime coefficient-l1 method.
+Every row's certified coefficient-price lower witness exceeds its old
+residual budget. None of these facts refutes the actual signed residual;
+the report explicitly rejects ZERO signed arithmetic candidates. Historical
+076 innovation/correlation dispositions must remain separately preserved.
+
+42 jobs select the prime set{2,3,5,7}, six select{2,3,5,11}. Discovery
+squared coefficient-price ratios after/before folding range approximately
+0.1288968..0.3269759. Those are real exact-construction price reductions,
+not improvements in the actual signed residual, which is unchanged by
+every fold identity. For the former schedule the generic band certificate
+has A=2/175,E=16,threshold2800, so l1>=2u/175-16 for every parent and
+l1>=u/175 above threshold. This linear lower bound proves the unsigned
+price cannot have any fixed subquadratic squared exponentq<2 uniformly.
+
+At saved u5242880, q1_p00's folded l1 upper price is the exact rational
+1288995159391426225457519129254634383834847/
+5727839875174439411471306192579706537 (about225040.36), with normalized
+squared price about9659. The zero baseline's l1 is exactly224839.
+Direct predictor q1_p04 has exact l1=417027221/2048 (about203626.57).
+The direct operator changes the residual stencil and can lower this
+particular price, while folding preserves each stencil's actual residual.
+All these prices remain orders above the frozen residual budgets, and
+their protected top band is unchanged. Neither finite reduction nor that
+failure supplies an arithmetic residual lower bound or RH theorem.
+
+1. Exact least-prime decomposition of the signed remainder
+--------------------------------------------------------
+Let c=f_P be the complete folded coefficient function supported on
+1..E, with the distinct folded prime setP and Q=productP kept as a
+separate excluded domain. Its residual is
+
+ R=sum_{n<=E,gcd(n,Q)=1}c(n)mu(n).
+
+For n>1 with nonzero mu, let p be its LEAST prime factor and n=pm.
+Then p not in P, all prime factors of m are STRICTLY greater than p,
+gcd(m,Q)=1, and mu(pm)=-mu(m). Conversely these conditions give a
+unique squarefree n when m is squarefree. Squareful m contributes zero,
+and the strict inequality excludes p^2 and all other repeated-p rows.
+Define P^-(1)=infinity. The EXACT identity is
+
+ R=c(1)-sum_{p<=E, p prime,p not in P} A_p,
+ A_p=sum_{m<=E/p,P^-(m)>p,gcd(m,Q)=1}c(pm)mu(m).
+
+Units m=1 and c(1) are retained separately. Upper support is literal;
+when c(pm) is an interval stencil its endpoints divide by p with exact
+floors. No independent copies of mu occur. Bounding sum|A_p| would
+return to an unsigned price, so this identity alone proves no power gain.
+
+2. Executable new grammar: rough factor-count polynomials
+-------------------------------------------------------
+Introduce source-bound weighted states
+
+ F(c,y,z)=sum_{n<=E,squarefree,gcd(n,Q)=1,P^-(n)>y}c(n)z^omega(n),
+
+with omega(1)=0 and P^-(1)=infinity. z is a FORMAL variable. At z=-1
+this equals the rough signed Mobius state T(c,y). The exact least-prime
+partition between thresholds0<=y1<=y2 gives
+
+ F(c,y1,z)=F(c,y2,z)
+          +z sum_{y1<p<=y2,p prime,p not in P}F(c(p dot),p,z).
+
+At z=-1, T(c,y1)-T(c,y2)=-sum_{y1<p<=y2}T(c(p dot),p).
+Every prime endpoint is open at y1, closed at y2; child threshold is
+STRICT P^->p, and Q exclusions persist. This is a new exact transport
+grammar with parity information, rather than another coefficient-l1 fit.
+It can be independently tested using synthetic finite squarefree prime
+factor models, interval/token functions and complete least-prime partitions.
+Arbitrary unconstrained mu vectors do not satisfy its arithmetic premise.
+
+All parent count tokens in c remain bound to THEIR ORIGINAL parent as
+c is dilated. Recomputing the count normalization at a child would change
+the kernel. The new states are NOT automatically ordinary G at child
+scale; a prior invariant for G alone cannot price them. Export kernel
+provenance, parent tokens, support, Q and rough threshold in each state.
+
+For integerk>=0, if y^(k+1)>=E, strict roughness implies omega(n)<=k:
+k+1 prime factors each>y would have product>E, including repetitions
+already excluded by squarefreeness. This is an exact finite degree gate.
+At y^2>=E, only unit and prime terms remain, so
+
+ T(c,y)=c(1)-sum_{p>y,p<=E,p not in P}c(p).
+
+At y^3>=E, degree<=2 gives the signed PRIME/SEMIPRIME terminal leaf
+
+ T(c,y)=c(1)-sum_{p>y,p<=E,p not in P}c(p)
+        +sum_{y<p<r,pr<=E,p,r prime,p,r not in P}c(pr).
+
+The STRICT p<r excludes prime squares and counts each semiprime once.
+The closed product endpoint includes pr=E. At equality y^3=E a product
+of three factors>y still exceedsE, so the boundary is admitted exactly.
+Thresholds may be exact rational/algebraic cutoffs with integer power
+comparisons; rounding y to a different root convention is not permitted.
+
+These terminal leaves use prime membership/counts and weighted products,
+not an observed mu-sign table. For an interval(l,r] coefficient, the
+semiprime count is exactly
+
+ sum_{p>y,p<=sqrt(r),p not in P}
+ #{prime s not in P: max(p,y,l/p)<s<=r/p},
+
+with p^2=r contributing no s=p term because the lower endpoint is
+strict. Integer floors implement product boundaries. This provides a
+concrete executable primitive with explicit prime access and operation
+cost, and an independent endpoint checker can reconstruct it differently.
+
+3. Concrete coupled proof target, rather than tautological absolutes
+------------------------------------------------------------------
+For a chosen threshold y, transport from0 gives
+
+ R=T(c,y)-sum_{p<=y,p not in P}T(c(p dot),p).
+
+Choose y^3>=E so the first state is the explicit unit-prime-semiprime
+terminal kernel above. The signed residual square is
+
+ T(c,y)^2 + H^2 -2T(c,y)H,
+ H=sum_{p<=y,p not in P}T(c(p dot),p).
+
+The cross term is the target interaction between a prime/semiprime tail
+and smaller rough child states. Pricing the two positive squares
+separately can lose the entire hoped-for cancellation. A useful detector
+search should generate signed linear combinations of these states and
+CONSERVATION-BOUND coupled energies with explicit cross coefficients,
+rather than assuming each parity layer is individually small.
+
+One specific auxiliary proof certificate is a finite family of such
+rough/parity states V_a with source-derived kernel provenance, a positive
+rational energy matrixW, exact transport identities, and an all-scale
+bound on the innovation energy plus the full signed child aggregation.
+The proposed invariant V^T W V<=B u^q must include this residual as a
+paid linear projection. Any recursion must close on the declared kernel,
+threshold and token family, with strictly smaller arithmetic support.
+The all-scale lemma for the coupled terminal-tail/small-prime energy
+is arithmetic: it cannot be inferred from PSD, degree<=2, count geometry
+or shorter cofactor horizon. Independent source admission and finite
+fits can guide its coefficients but are not its proof.
+
+An executable pipeline can therefore:
+1. Compile exact folded c with token/Q binding and interval endpoints.
+2. Generate rational/exact-power rough thresholds and transport blocks.
+3. Certify least-prime conservation, squarefree gates, product endpoints
+   and finite polynomial degree; compile exact degree1/degree2 terminal
+   prime/product count kernels independently of mu values.
+4. Generate a coupled signed state/energy grammar containing the actual
+   R projection, terminal tail and small-prime rough children, including
+   their unit anchors and cross terms. Record any failure of family closure.
+5. Search finite coefficients with separate unpaid ALL-SCALE terminal
+   correlation, recursive rough-state price and innovation obligations.
+   Require a proof of those leaves before uniform source/RH promotion.
+
+This is more than renaming R: it supplies a finite-factor-degree reduction,
+primitive prime/semiprime count interfaces and exact typed transport rules
+from which the detector can generate new operators/energies. It is still
+not a newly proved cancellation theorem. In particular the degree2 tail
+may have a large main term; only the coupled signed relation can justify
+a small full residual.
+
+4. Parameterized smooth-prime folds and resource/proof limits
+-----------------------------------------------------------
+Taking P(u) to be primes<=a cutoff Y(u) turns the retained domain into
+rough numbers P^-(n)>Y. The coefficient f_P still includes ALL squarefree
+selected-prime subset dilations; smooth-fold product/dictionary cost and
+its exact unit coefficient must be retained. A smaller density of rough
+numbers is not a signed correlation bound. If Y^3>=E, the retained
+factor polynomial has degree<=2, but f_P itself can encode the original
+full residual through its folded coefficients. The all-scale complexity,
+coefficient growth and count-jump evolution must therefore be priced
+alongside the rough terminal count. With all primes throughE folded,
+only the unit remains and its coefficient IS R; this embeds the target
+rather than proving it.
+
+All-scale prime membership/count information is needed for varyingY,
+prime-product terminal prices and recursive least-prime children. Finite
+tables do not pay these domains. Importing an unconditional prime-count
+upper bound can price positive costs but does not establish the required
+signed prime/semiprime cancellation. A claimed asymptotic error must be
+uniform in the declared cutoff/parent family with endpoints and constants
+explicit; no moving-parameter inference follows from fixed-cutoff data.
+
+The next proof task is a genuinely signed, source-bound coupled rough
+transport theorem, with exact parity and prime endpoint signatures.
+The fixedP l1 obstruction tells the detector to abandon that unsigned
+uniform price, not to reject a signed candidate. The full joined head,
+separable component, complete parameter coverage and RH transfer remain
+separate open requirements.

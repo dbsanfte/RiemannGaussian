@@ -1,0 +1,56 @@
+{
+  "RH_proved": false,
+  "alpha": "1/24",
+  "applications": 1058,
+  "arithmetic_source_observations": 0,
+  "complete_signed_bounds_proved": 0,
+  "component_target_certificates": 414,
+  "elapsed_seconds": 12.520003717014333,
+  "gamma": "1/2",
+  "generated_split_parameters": {
+    "2/3": "2/5"
+  },
+  "geometries": 529,
+  "geometries_with_component_control": 276,
+  "inclusive_operations": 18075149,
+  "inherited_route_bindings": 144,
+  "main_operations": 12583307,
+  "model_calls_in_search": 0,
+  "peak_rss_kib": 704032,
+  "proof_routes": 2116,
+  "selected_component_controls": 2,
+  "selected_controls": [
+    {
+      "energy": {
+        "constant": "89302500",
+        "log_degree": 2,
+        "power": "-1/20"
+      },
+      "rule": "finite_weighted_propagation_with_complete_commutator",
+      "source_key": {
+        "a": 1,
+        "b": 0,
+        "mode": "B"
+      },
+      "target_constant": "571893210000"
+    },
+    {
+      "energy": {
+        "constant": "2057529600",
+        "log_degree": 2,
+        "power": "-1/10"
+      },
+      "rule": "finite_weighted_propagation_with_complete_commutator",
+      "source_key": {
+        "a": 1,
+        "b": 0,
+        "mode": "U"
+      },
+      "target_constant": "3300277478400"
+    }
+  ],
+  "selected_geometry": 506,
+  "source_terms": 71564,
+  "status": "SPLIT_AND_PROOF_ROUTE_COMPONENT_CONTROLS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "whole_signed_bound_proved": false
+}

@@ -1,0 +1,64 @@
+{
+  "drawn_after_formula_freeze": true,
+  "draws": [
+    {
+      "band": [
+        1536,
+        2047
+      ],
+      "status": "ACCEPTED",
+      "u": 1811
+    },
+    {
+      "band": [
+        1536,
+        2047
+      ],
+      "status": "ACCEPTED",
+      "u": 1835
+    },
+    {
+      "band": [
+        2560,
+        3071
+      ],
+      "status": "ACCEPTED",
+      "u": 2772
+    },
+    {
+      "band": [
+        2560,
+        3071
+      ],
+      "status": "ACCEPTED",
+      "u": 2882
+    },
+    {
+      "band": [
+        3584,
+        4095
+      ],
+      "status": "ACCEPTED",
+      "u": 3870
+    },
+    {
+      "band": [
+        3584,
+        4095
+      ],
+      "status": "ACCEPTED",
+      "u": 4057
+    }
+  ],
+  "observed_full_source_values_used": false,
+  "parents": [
+    1811,
+    1835,
+    2772,
+    2882,
+    3870,
+    4057
+  ],
+  "seed": 20261011083,
+  "unknown_composite_signs_used": false
+}

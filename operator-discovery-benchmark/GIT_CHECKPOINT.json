@@ -1,0 +1,88 @@
+{
+  "schema": "operator-detector-source-checkpoint-v1",
+  "source_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark",
+  "recorded_date": "2026-10-12",
+  "included_files": 3144,
+  "included_bytes": 46484479,
+  "omitted_files": 11097,
+  "omitted_bytes": 12074218337,
+  "policy": {
+    "maximum_root_or_compact_record_bytes": 1048576,
+    "compact_record_names": [
+      "abort_manifest.json",
+      "frozen_candidates.json",
+      "handoff.txt",
+      "protocol.json",
+      "protocol.txt",
+      "publication_integrity.json",
+      "published_results.json",
+      "report.json",
+      "results.json",
+      "stage_timings.json",
+      "summary.json",
+      "validation_draw.json"
+    ],
+    "archived_source_snapshots_omitted": true,
+    "caches_and_environments_omitted": true,
+    "runtime_pause_receipt_omitted": true
+  },
+  "categories": {
+    "root_source_and_compact_record": {
+      "files": 2720,
+      "bytes": 27165986
+    },
+    "large_or_runtime_root_artifact": {
+      "files": 21,
+      "bytes": 810377945
+    },
+    "generated_or_reference_artifact": {
+      "files": 8944,
+      "bytes": 10308354753
+    },
+    "compact_run_record": {
+      "files": 421,
+      "bytes": 19303506
+    },
+    "archived_snapshot": {
+      "files": 2132,
+      "bytes": 955485639
+    },
+    "research_source": {
+      "files": 3,
+      "bytes": 14987
+    }
+  },
+  "verification": {
+    "copy_method": "direct byte comparison; listed copies subsequently normalized only for trailing whitespace, with unchanged Python ASTs",
+    "python_sources_parsed": 1688,
+    "syntax_errors": [],
+    "research_searches_resumed": false,
+    "tests_rerun": false,
+    "hashes_created": false,
+    "whitespace_normalized_copies": [
+      "CORE_COMPLETE_CONVOLUTION_BOUND_REVIEW_032.txt",
+      "CORE_DILATION_COVARIANCE_REVIEW_031.txt",
+      "MOBIUS_RESIDUAL_FOLD_REVIEW_077.txt",
+      "MOBIUS_SCALE_FLUX_CHECK_SCOPE_079.txt",
+      "PRIME_SCALE_CANDIDATE_REVIEW_054.txt",
+      "check_primitive_state_chart_dual_search_run.py",
+      "floor_residual_prime_search_047.py",
+      "pole_neutral_grammar.py",
+      "primitive_state_backtracking_cone_search.py",
+      "primitive_state_chart_dual_geometry_protocol.py",
+      "primitive_state_chart_dual_protocol.py",
+      "primitive_state_feedback_cone_search.py",
+      "publish_cancellation_primitive_state_solver_trace.py",
+      "rational_power_grammar.py"
+    ]
+  },
+  "scope": {
+    "research_paused": true,
+    "stage085": "latest completed published detector stage",
+    "stage086": "enrichment complete; bound search paused; artifact audit and publication unfinished",
+    "stage087": "transport language working draft; tests and independent review unfinished",
+    "uniform_signed_bound_proved": false,
+    "RH_proved": false,
+    "original_suspended_process_group": "no longer present when inspected on2026-10-12; research remains paused"
+  }
+}

@@ -1,0 +1,61 @@
+NEXT RELATIONAL LANGUAGE: COMPLETE ACTUAL SIGNED PAIRS AND PRIME FORCING
+Post-freeze proposal. No frozen source, corrected-energy program or validation record is changed. The identities and critical diagonals below are supplied mathematical productions, not newly inferred cancellation estimates. The complete actual signed upper estimate remains unresolved.
+
+1. Exact Mertens block kernel and already-critical diagonal.
+For every integer X>=1, let K_X(t)=max(0,2X-max(X,t)), integer t>=1. It is exactly the number of integers n in[X,2X) with t<=n. With M(n)=sum_(i<=n)mu(i),
+ A_M(X)=sum_(i,j<=2X-1)mu(i)mu(j)K_X(max(i,j)).
+Write D_M(X)=sum_i mu(i)^2K_X(i), O_M(X)=2sum_(i<j)mu(i)mu(j)K_X(j). Then A_M=D_M+O_M with NO off-diagonal omission.
+The diagonal is already critical:0<=D_M(X)<=sum_(n=X..2X-1)n=(3X^2-X)/2. Its complete signed dyadic innovation uses J_X(t)=K_(2X)(t)-4K_X(t). For dyadic X>=2, summing only positive J weights gives D_M(2X)-4D_M(X)<=5X^2/2; at X1 the positive weight sum is3. Thus the uniform bound3X^2 is sufficient globally. The UNKNOWN requirement is cofinal signed control of
+ 2sum_(i<j<=4X-1)mu(i)mu(j)J_X(j),
+not a square-root assertion for individual signs. A cofinal upper bound Cq X^2 ceil(X^(1/q)) for this COMPLETE off-diagonal innovation would establish the original signed-control route after charging the diagonal. A bound on a projected subset does not do so.
+For actual c=mu*lambda, c(i)^2=4^omega(i)<=d4(i). Consequently its primitive increment diagonal is at most4X^2(1+log(2X))^3, also cofinally critical. This primitive diagonal must not be confused with the much larger column-prefix diagonal in a positive convolution-operator Gram. Its mixed signed pairs remain uncontrolled.
+
+2. Complete gcd/coprime coordinates.
+Put i=ga,j=gb, (a,b)=1. Actual mu satisfies
+ mu(ga)mu(gb)=mu(g)^2 mu(a)mu(b)1_((g,ab)=1).
+This includes squareful g,a,b and noncoprime cases: the corresponding coefficient vanishes. Therefore
+ A_M(X)=D_M(X)+2sum_(a<b,(a,b)=1)mu(a)mu(b)
+   sum_(g<=floor((2X-1)/b),(g,ab)=1)mu(g)^2 K_X(gb).
+The innovation substitutes J_X for K_X and uses g<=floor((4X-1)/b). The inner factor is nonnegative for energy, but generally SIGNED for innovation. The outer mu(a)mu(b) cannot be replaced by absolute values without losing the missing cancellation.
+This identity and a primitive-cutoff projection with exact dense residual ALREADY occur in the signed-arithmetic work. The proposed addition is a typed relational transformation/certificate language acting on its COMPLETE pair domain, rather than claiming this coordinate change is a new implemented discovery. Every restriction such as b<=B=floor(X^beta) must emit its exact complementary signed sum. Rational cutoff programs are declared before scoring and independently reevaluated at the child.
+
+3. Actual valuation/same-core pairings and boundary kernels.
+For a FIXED actual prime p, write every integer as p^e b with (b,p)=1. For mu the local coefficients are1,-1,0,0,... . Complete same-core cancellation gives, for every integer n>=1,
+ M(n)=sum_((b,p)=1)mu(b)[1_(b<=n)-1_(pb<=n)]
+     =sum_(n/p<b<=n,(b,p)=1)mu(b).
+It cancels paired sources b,pb only when both lie in the complete prefix. The surviving upper shell is explicit; its signed sum is not an error declared small. Squaring produces the exact window Gram
+ A_M(X)=sum_((b,p)=(c,p)=1)mu(b)mu(c)L_(X,p)(b,c),
+ L_(X,p)(b,c)=max(0,min(2X,pb,pc)-max(X,b,c)).
+Equivalently this kernel is the full four-term mixed difference
+ K_X(max(b,c))-K_X(max(pb,c))-K_X(max(b,pc))+K_X(max(pb,pc)).
+This is a useful typed paired-kernel production: the off-diagonal terms retain their actual signs, and the complete boundary shell is encoded in exact interval intersections. The diagonal remains O(X^2); no useful upper estimate for the mixed core sum follows solely from this identity.
+
+For actual c, local coefficients are1,2(-1)^e for e>=1. Summing all available exponents of the same p-free core yields1+2sum_(e=1..E)(-1)^e=(-1)^E. Thus
+ C(n)=sum_(b<=n,(b,p)=1)c(b)(-1)^(floor(log_p(n/b))).
+The exponent is computed by exact integer-power comparisons, not floating logs. Its full Gram kernel is the sum over n in[X,2X) of the two displayed boundary phases. Pairing positive exponents odd/even cancels equal-magnitude terms, but a unit exponent and every unmatched top exponent remain. Existing prime-power pairing for c already exposes such residuals; the next language should allow certified kernel/orbit manipulations of them, not assert that more adaptive primes remove them. Their diagonal is cofinally critical by c(b)^2<=d4(b), while the complete signed mixed-core bound is open.
+
+More general finite prime sets permit exact local exponent operators/inclusion-exclusion on p-free cores. Any orbit truncation or sparse pair projection must retain an explicit unmatched residual and all interactions with it. Möbius exponent toggles are valid only with their actual coprime/squarefree conditions; a synthetic sign involution does not confer actual prime cancellation or a critical operator norm.
+
+4. Exact prime forcing and all remainders.
+The actual von Mangoldt sequence is
+ Lambda=mu*log,
+ Lambda(n)=sum_(d|n)mu(d)log(n/d).
+This is a coefficientwise identity; it can be checked through the actual Euler factors, giving log p on n=p^e and0 on other n. Logarithms may be represented by formal prime-indexed symbols and later certified real balls, but not by floating equality assumptions.
+For any declared integer cutoff U>=1,
+ Lambda(n)=sum_(d|n,d<=U)mu(d)log(n/d)
+          +sum_(d|n,d>U)mu(d)log(n/d).
+Summing the COMPLETE prefix gives
+ psi(x)=sum_(d<=min(U,floor x))mu(d)log(floor(x/d)!)
+       +sum_(U<d<=floor x)mu(d)log(floor(x/d)!).
+The second divisor sum is exact, not a disposable tail. For moving rational U=floor(X^beta), both parent and child use their own declared programs. Squaring retains small/large-divisor cross terms. The related forcing mu(n)log n=-(mu*Lambda)(n), and actual-c odd-prime-exponent logarithmic forcing, are already supplied arithmetic identities; jointly using them as premises for each other's unknown estimates would be circular.
+
+The prime-error target must include its main-term subtraction: P(n)=psi(n)-n, increments a_n=Lambda(n)-1. Its complete block kernel is the same K_X with a_i a_j. Its diagonal is already critical using only |Lambda(n)|<=log n: sum a_i^2K_X(i)<=O(X^2(1+log(2X))^2). The missing statement is the complete centered mixed signed innovation, not unsigned prime density. Continuous psi(t)-t differs from its integer step version by at most1; this is an explicitly critical additive correction.
+
+5. Recovery and finite-versus-uniform gates.
+A candidate may search PairReindex(axis,prime_selector,valuation_map,domain), GcdCoordinates, KernelMixedDifference, or ExactDivisorSplit. Its certificate must establish injectivity/bijection on a declared disjoint domain, actual coefficient transformation, all floor/product endpoint weights, every unmatched residual, and a complete reconstruction of ORIGINAL M/C/prime error. Pairing credits are used before absolute values; any later norm charge must state what signs it loses and why the remaining estimate suffices.
+For ordinary mu the Mellin/pole bridge applies to original M after recovery. A fixed filtered multiplier may erase a pole: a sufficient generic guard is one nonzero fixed divisor term, or a separately proved multiplier/bank recovery certificate. For c the frozen sufficient support bound is m<=2. For prime error, -zeta'/zeta-zeta is the Dirichlet series of Lambda-1; an offcritical zeta zero contributes a nonremovable logarithmic-derivative pole unless the chosen filter kills it. A single nonzero fixed divisor filter, or an independently certified no-common-zero/recovery bank, is required. Block-dependent corrected functions must recover the original sequence before any ordinary Mellin argument.
+
+The analytical gate needs: exists q0, every integer q>=q0, finite Cq independent of X, EVERY dyadic X>=1, a proved upper bound for the COMPLETE actual signed innovation with all certified recovery charges. Eventual-scale variants must specify their thresholds and charge the finite starting blocks. None follows from finite pair cancellation, regression, random-sign calibration, nonnegative Gram, or a selected attractive cutoff.
+Finite training/validation/fresh sealed cases may compare candidate relational certificates and complete arithmetic responses, preserving all failures/aliases. They cannot replace this uniform gate. Useful controls include unsigned mu, sign-counterfeits with the same local identities, omitted residuals and endpoint mutations, and noncritical main-term shifts. These help test the language, not prove the arithmetic estimate.
+
+Proposed priority: proof-search over exact paired-kernel transformations of the complete off-diagonal innovation, with an independently certified critical diagonal and exact dense residual. This targets the missing signed relation directly and preserves the original ordinary-zeta recovery obligation. No next-stage implementation or unfrozen final scores were used to write this proposal.

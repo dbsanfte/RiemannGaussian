@@ -1,0 +1,51 @@
+{
+  "RH_proved": false,
+  "bound_lemma_inputs": 6,
+  "converted_rows": 32,
+  "coordinate_checks_metering": "bounded exact4x4 matrix/row checks wall-time accounted",
+  "development_receipts": {
+    "arithmetic_prefix_relations_development.json": {
+      "cumulative_operations": 24675,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.048808364022988826,
+          "errors": 0,
+          "exposure": "tiny toy integer-exponent Mobius convolution only; no actual core/source archive or responses",
+          "failures": 0,
+          "operations": 24675,
+          "returncode": 0,
+          "tests": 6
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "prefix_relation_bridge_development.json": {
+      "actual_source_observations": false,
+      "elapsed_seconds": 0.005647299985866994,
+      "errors": 0,
+      "failures": 0,
+      "invocations": 1,
+      "schema": "prefix-relation-bridge-development-v1",
+      "successful": true,
+      "tests": 3
+    }
+  },
+  "elapsed_seconds": 0.13705498998751864,
+  "exact_all_scale_relation_templates": 4,
+  "finite_compiler_example_rows": 32,
+  "identities_generated_from_source_atoms": true,
+  "peak_rss_kib": 704032,
+  "producer": {
+    "elapsed_seconds": 0.11484271998051554,
+    "operations": 9266,
+    "peak_cells": 6016
+  },
+  "relation_checker_operations": 27349,
+  "source_channels": 4,
+  "source_checker_operations": 3630,
+  "source_observations_performed": false,
+  "status": "GLOBAL_ARITHMETIC_PREFIX_CONSTRAINTS_VERIFIED_BOUND_OPEN",
+  "successful_uniform_recurrences": 0,
+  "supplied_winning_kernels": false,
+  "whole_signed_bound_proved": false
+}

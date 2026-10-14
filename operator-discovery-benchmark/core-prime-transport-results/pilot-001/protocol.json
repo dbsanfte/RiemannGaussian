@@ -1,0 +1,293 @@
+{
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "analyst_supplied": [
+    "arithmetic/auxiliary grammar",
+    "elementary recovery/proof rules",
+    "reviewed short-prime-interval theorem"
+  ],
+  "data_status": "underlying source already observed through524287; all new transformed observations are exploratory, NOT fresh holdout",
+  "detector_generated": [
+    "every joint construction",
+    "every bound shape and training constant",
+    "selection",
+    "proof-rule compositions and open dependency graphs"
+  ],
+  "development": {
+    "core_control_checker_development.json": {
+      "operations": 12498,
+      "runs": [
+        {
+          "operations": 9817,
+          "returncode": 1,
+          "runtime_seconds": 0.07670671699452214,
+          "stderr": "E.....E.\n======================================================================\nERROR: test_complete_log_bank_unit_and_accumulated_head (test_check_core_control_synthesis.ControlTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_control_synthesis.py\", line 102, in test_complete_log_bank_unit_and_accumulated_head\n    truncated = deepcopy(fixture)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 231, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 206, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"/usr/lib/python3.10/copy.py\", line 161, in deepcopy\n    rv = reductor(4)\n  File \"<stringsource>\", line 2, in flint.types.arb.arb.__reduce_cython__\nTypeError: no default __reduce__ due to non-trivial __cinit__\n\n======================================================================\nERROR: test_measurement_and_recurrence_domain_failures_preserve_charges (test_check_core_control_synthesis.ControlTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_control_synthesis.py\", line 172, in test_measurement_and_recurrence_domain_failures_preserve_charges\n    bad = deepcopy(fixture); bad['G'][4] = arb('nan')\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 231, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 206, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"/usr/lib/python3.10/copy.py\", line 161, in deepcopy\n    rv = reductor(4)\n  File \"<stringsource>\", line 2, in flint.types.arb.arb.__reduce_cython__\nTypeError: no default __reduce__ due to non-trivial __cinit__\n\n----------------------------------------------------------------------\nRan 8 tests in 0.007s\n\nFAILED (errors=2)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_control_synthesis operations=9817\n",
+          "test": "test_check_core_control_synthesis",
+          "tests": 8
+        },
+        {
+          "operations": 2681,
+          "returncode": 0,
+          "runtime_seconds": 0.06182042000000365,
+          "selection": [
+            "test_check_core_control_synthesis.ControlTests.test_complete_log_bank_unit_and_accumulated_head",
+            "test_check_core_control_synthesis.ControlTests.test_measurement_and_recurrence_domain_failures_preserve_charges"
+          ],
+          "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_control_synthesis operations=2681\n",
+          "test": "test_check_core_control_synthesis",
+          "tests": 2
+        }
+      ]
+    },
+    "core_control_producer_development.json": {
+      "actual_source_evaluations": 0,
+      "operations": 81251,
+      "runs": [
+        {
+          "command": [
+            "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_core_control_synthesis"
+          ],
+          "elapsed_seconds": 0.14526120401569642,
+          "operations": 81251,
+          "returncode": 0,
+          "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_control_synthesis operations=81251\n"
+        }
+      ]
+    },
+    "core_prime_transport_checker_development.json": {
+      "operations": 133759,
+      "runs": [
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_prime_transport"
+          ],
+          "elapsed_seconds": 0.07946096200612374,
+          "operations": 101099,
+          "receipt_lines": 1,
+          "returncode": 1,
+          "stderr": "test_aggregate_capacity_failure_retains_whole_window (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_all_sign_failures_empty_and_no_destination (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_congestion_guard_without_fake_window_geometry (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_formal_prime_recovery_and_explicit_eventual_import (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests) ... FAIL\ntest_global_log_bank_and_literal_signed_shell (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_sorted_round_robin_capacity_and_complete_window_mass (test_check_core_prime_transport.PrimeTransportTests) ... ok\ntest_strict_program_horizon_and_precision (test_check_core_prime_transport.PrimeTransportTests) ... ok\n\n======================================================================\nFAIL: test_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_prime_transport.py\", line 106, in test_fractional_windows_disjoint_complete_support_and_q_condition\n    self.assertEqual([(p, t) for p, t, demand in result['assignments']], [(11, 10), (23, 22)])\nAssertionError: Lists differ: [(7, 6), (11, 10), (23, 22)] != [(11, 10), (23, 22)]\n\nFirst differing element 0:\n(7, 6)\n(11, 10)\n\nFirst list contains 1 additional elements.\nFirst extra element 2:\n(23, 22)\n\n- [(7, 6), (11, 10), (23, 22)]\n?  --------\n\n+ [(11, 10), (23, 22)]\n\n----------------------------------------------------------------------\nRan 8 tests in 0.017s\n\nFAILED (failures=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_prime_transport operations=101099\n",
+          "synthetic_max_horizon": 31
+        },
+        {
+          "actual_source_runs": 0,
+          "command": [
+            "../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "-v",
+            "test_check_core_prime_transport.PrimeTransportTests.test_fractional_windows_disjoint_complete_support_and_q_condition"
+          ],
+          "elapsed_seconds": 0.07047193800099194,
+          "operations": 32660,
+          "reason": "Affected-only rerun after restoring omitted7->6 assignment in fractional-window hand fixture",
+          "receipt_lines": 1,
+          "returncode": 0,
+          "stderr": "test_fractional_windows_disjoint_complete_support_and_q_condition (test_check_core_prime_transport.PrimeTransportTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_prime_transport operations=32660\n",
+          "synthetic_max_horizon": 31
+        }
+      ]
+    },
+    "core_prime_transport_producer_development.json": {
+      "actual_source_evaluations": 0,
+      "operations": 41769,
+      "runs": [
+        {
+          "command": [
+            "/home/dbsanfte/riemann/operator-discovery-benchmark/../.venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "test_core_prime_transport"
+          ],
+          "elapsed_seconds": 0.317239169991808,
+          "operations": 41769,
+          "returncode": 0,
+          "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.006s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_prime_transport operations=41769\n"
+        }
+      ]
+    }
+  },
+  "discovery_horizon": 8191,
+  "fit": "max(1,ceil(5/4*max(0,training normalized drift))); fixed before validation, never refitted",
+  "full_units_crosses_prime_powers_and_corrections": true,
+  "grammar": {
+    "auxiliary_kinds": [
+      "log_bank",
+      "half_delay",
+      "transport_error"
+    ],
+    "bound_shapes": [
+      {
+        "log_power": "0",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "1/2",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "1",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "3/2",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "2",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "3",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "4",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "6",
+        "rho": "1/2"
+      },
+      {
+        "log_power": "0",
+        "rho": "1"
+      },
+      {
+        "log_power": "1/2",
+        "rho": "1"
+      },
+      {
+        "log_power": "1",
+        "rho": "1"
+      },
+      {
+        "log_power": "3/2",
+        "rho": "1"
+      },
+      {
+        "log_power": "2",
+        "rho": "1"
+      },
+      {
+        "log_power": "3",
+        "rho": "1"
+      },
+      {
+        "log_power": "4",
+        "rho": "1"
+      },
+      {
+        "log_power": "6",
+        "rho": "1"
+      }
+    ],
+    "cofactors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fractional_auxiliary_weights": [
+      "0",
+      "1/6",
+      "1/3"
+    ],
+    "mixes": [
+      "-1",
+      "1"
+    ],
+    "reserves": [
+      "1/3",
+      "1",
+      "3"
+    ],
+    "storages": 55,
+    "transports": 90,
+    "window_powers": [
+      "1/2",
+      "7/12",
+      "2/3",
+      "3/4",
+      "5/6",
+      "1"
+    ]
+  },
+  "hashes": false,
+  "larger_parents": [
+    4096,
+    8192
+  ],
+  "main_cap": 600000000,
+  "main_seconds": 14400,
+  "metadata_reserve": 5000000,
+  "models_in_generator_or_selector": false,
+  "parent_input": "candidate10_arithmetic_grouping_obligation.json",
+  "process_memory_bytes": 4294967296,
+  "proof_composition": "sum-square domination -> dyadic recurrence -> paid transport recovery -> original f pole minimum degree",
+  "ranking": [
+    "validation failure count",
+    "conditional original-core log degree",
+    "worst observed storage doubling power on1024,2048,4096",
+    "AST complexity",
+    "negative training-final-annulus prime coverage",
+    "transport ordinal",
+    "storage ordinal",
+    "rho",
+    "forcing log degree"
+  ],
+  "schema": "joint-arithmetic-operator-and-bound-search-v1",
+  "searched": "A(X)=E_(G+aQ)(X)+wE_Q(X); A(2X)<=rho*A(X)+C(1+log2X)^k",
+  "selection": "one best per auxiliary mechanism and each admitted window exponent; all choices frozen before larger transformed observables",
+  "total_operations_cap": 2500000000,
+  "training_parents": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "uniform_premise_proved": false,
+  "validation_parents": [
+    1024,
+    2048
+  ],
+  "verification_horizon": 32767,
+  "whole_signed_bound_proved": false,
+  "worker_cap": 850000000,
+  "worker_seconds": 3600,
+  "workers": 2
+}

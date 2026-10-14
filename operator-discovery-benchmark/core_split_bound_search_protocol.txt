@@ -1,0 +1,121 @@
+TARGET-DRIVEN SPLIT AND PROOF-ROUTE SEARCH, VERSION 1
+
+The user asks the detector itself to search for bounds, with analysts
+helping to extend its language. This stage adds an executable generic
+affine-error minimax solver and two supplied analytic inference routes.
+It does not represent the new underlying hyperbola theorem as an
+autonomous invention. The exact supplied theorem, including its infinite
+moment, small-prefix cases and finite-factor commutator, is proved in
+CORE_SPLIT_BOUND_RULE_REVIEW_016.txt. No finite data establish a bound.
+
+Input: the published candidate10_frame_bound_obligation.json. Preserve
+every old source/result and terminal failure. This is a new branch of
+the original complete core g=f-e, retaining the existing frame and moment
+obligations by their immutable parent reference. Existing bounds are not
+assumed to prove any new arithmetic premise. No previous numeric study
+or unchanged test suite is rerun. No hashes.
+
+Reusable machine problem: for R>=1, bound a sum of errors whose powers
+are a_i+b_i*t, t in a rational closed interval. Generate its endpoints
+and every in-domain intersection, minimize the upper envelope exactly,
+then select its smallest minimizing parameter. Emit the complete finite
+search and a convex combination of active lines giving a matching
+global lower bound (with the appropriate endpoint slope). The generic
+solver does not contain a preselected power-kernel solution.
+
+Licensed application: for arbitrary h with |prefix h(t)|<=C and
+mass_h(t)<=L*t at EVERY t>=1, C,L>=1, theta in(0,1), subtract the
+COMPLETE conditional moment m_theta(h) times J_theta/theta from K*h,
+where K(n)=n^(theta-1), J_theta(n)=n^theta-(n-1)^theta. The supplied
+hyperbola and Abel rules give LD/theta+4C/theta*(n/D)^theta, any integer
+1<=D<=n. For n>=C use D=ceil(C*(n/C)^t). The executable solves the
+relative error powers t and theta*(1-t); call the generated optimum r.
+It must verify r<=theta for the separately supplied n<C proof. The
+resulting bound is 6/[theta(1-theta)]*L*C^(1-r)*n^r. The conditional
+moment includes the whole infinite tail; no N-dependent finite sum is
+silently substituted. Cutoffs are fixed within each identity.
+
+For actual A=mu 1_[1,U], B=mu*n^(-2/3)1_[1,V], R=delta-One*A,
+c=sum_(d<=U)mu(d)/d, C=c*delta, and E=R+c*One, supplied arithmetic
+facts give |prefix E|<=2U, mass_E(t)<=3t(1+log U), and
+|m_theta(E)|<=[2/(1-theta)+4]U^(1-theta), all prefixes including the
+unit. E does not inherit R's support gap.
+
+Every matching source term kappa*K*A^p*B^q*R can produce the COMPLETE
+three-piece identity, h=A^p*B^q*E:
+ kappa[K*h-m_theta(h)J_theta/theta]
+ +kappa*m_theta(h)J_theta/theta
+ -kappa*c*K*A^p*B^q*One.
+The source scalar and inverse-polynomial coefficient both remain.
+The moment factors into the finite A,B moments and the full conditional
+E moment. Finite factors with product support beyond the horizon remain.
+Every unmatched original term, both compensations, and -e stay in one
+signed residual. Additional R or S factors are outside this bounded-
+prefix rule; record that limitation rather than erase those factors.
+
+Compare TWO sound proof routes on the same fully centered component:
+1. Center the full h directly. Prefix parameter C0 W has C0=2*3^q,
+   W=U^(p+1)V^(q/3), density parameter is
+   L0(1+log U)^(p+1), L0=3*(5/2)^q. Replace C0^(1-r) by C0.
+2. Center E, convolve its bound with finite A^p*B^q using r-weighted
+   mass, and pay the COMPLETE commutator h0*J-m_theta(h0)J. Its prefix
+   is <=n^r*sum_ALL_d |h0(d)|/d^r, including d>n. The resulting
+   constant is 42/[theta(1-theta)]*(1-r)^(-p)*M_B(r)^q,
+   with factor (1+log U)U^((p+1)(1-r))*n^r.
+   For s=2/3+r, M_B(r) is <=1+1/(s-1) when s>1, <=1+log V when
+   s=1, or <=V^(1-s)/(1-s) when s<1. Preserve all three cases.
+Route choice is lexicographic by proved N power, log degree, constant,
+then route index. No observed arithmetic values select the route.
+
+Generate reciprocal fractional roots 1/d for EVERY d=2..24 on both
+cutoff axes, U=floor(N^alpha), V=floor(N^gamma). Solve all four complete
+inverse polynomials from their denominator equations and support gaps.
+The declared factor cap is64. A cap failure aborts; it never licenses
+source truncation. This new grammar does not alter old selected cutoffs.
+
+For every source application propagate the complete costs with N=4X-1
+for BOTH parent and child. A prefix bound D*N^e*(1+ln N)^k implies
+normalized energy <=4D^2*N^(2e-1)*(1+ln N)^(2k). The component target
+is a uniform constant (power0,log degree0). Derive the exact sufficient
+cutoff inequality from the requested target; do not nominate its answer.
+Strict negative power absorbs logs with the existing explicit bound
+2^q*(1+(q/d)^q), d>0. Zero power with a positive unmatched log degree
+does not prove a constant. The generic component compiler also supports
+other target powers/log degrees, but this pilot's whole-source recovery
+bridge is only for constant-paid components.
+
+Choose a geometry by most distinct source terms with a paid CENTERED
+component, then smallest worst paid energy exponent, then fewest complete
+source terms, factor count, alpha,gamma. This is ranking partial controls,
+not a ranking that claims a solved core. All alternative geometries,
+proof routes, unsuccessful cutoff gates and complete source terms stay
+in the archive. No candidate is chosen by a subagent or model call.
+
+Bind the selected complete representation to all144 inherited original
+channel/transport routes. The Abel channel cost is the sum of
+[2^ceil(eta)(|a0|+2 sum_(j>=1)|aj|)]^2. If P is the sum of the paid
+components, its energy cost includes the full Cauchy term count. With
+g=P+R, emit both S_g<=2S_R+2C_P and S_R<=2S_g+2C_P. Every full-history
+prefix, varying channel weight, cell projection, exact error, sign and
+cross term remains. The generated goal is a uniform bound for the
+COMPLETE signed residual R; neither this nor RH is claimed proved.
+The residual log budget is the inherited original target degree MINUS
+the complete channel-recovery log degree. Verify that this equals the
+inherited forcing degree plus1 when rho=1 (plus0 otherwise). A paid
+source component does not waive this existing recovery cost. Preserve
+the original recovery inequality and its constant in each new binding.
+
+An independent checker imports no new generator. It checks all declared
+source polynomials, applications, both proof routes, cutoff/payment
+calculations, selection, complete joins and inherited bindings. Generic
+calibrations exercise other affine envelopes and fractional exponents.
+Mutation tests must reject a lost drift/tail/commutator, missing source
+term, unsupported closure, false optimum or unpaid logarithmic cost.
+
+One owned development suite per owner, affected tests only after edits,
+then one frozen suite. Preserve all failures including terminal ones.
+Direct-byte snapshots. Main process capped at4GiB, test process at2GiB;
+aggregate within authorized16GiB. Runtime1800seconds, inclusive charged
+operation cap300million including development and frozen tests. Source
+coefficient observations0, fitted constants0, model calls in search0.
+The complete signed core bound and RH remain OPEN.

@@ -1,0 +1,28 @@
+This continues primitive-state-exact-row-basis-probe-001, whose independently
+audited UNKNOWN outcome was caused by its8MiB retained receipt cap. Its worker
+used215.82seconds and730588KiB, with no deadline exhaustion, and retained5253
+of5641 row transcript records. The partial tape did not authorize reduction.
+
+The sole algorithm-parameter change is max_receipt_bytes=33554432 (32MiB),
+previously8388608. Readers, writers, independent checker limits and budget
+overheads must all use that value for exact receipts. Metadata remains capped
+at65536bytes. All source equations, target, coefficient identities, initial
+row ordering, pivot selection, scalar/PSD variables and proof requirements
+remain unchanged. The original generic producer/checker implementation files
+are reused without modification. There is no new numerical solver or refit.
+
+One worker retains the3GiB worker/total memory allowance, one numerical thread,
+900 cooperative seconds including source construction, and1800 external
+seconds. Total charged work stays450000000, projection production50000000,
+basis production175000000, with independent audit allocations drawn from the
+remaining budget after reserving the larger receipt overhead. Unverified
+producer phases retain their full allocation. There is no increase to the
+work ceiling or mathematical search cone.
+
+Bind publication013 and the previous run's seal, terminal receipt and complete
+independent audit. A new exclusive archive preserves both attempts. Only a
+complete independently verified equation equivalence licenses selected original
+rows; interrupted or incomplete receipts remain UNKNOWN. All1957 original
+optimization variables and full PSD constraints remain required. Any later
+numerical proposal must still pass exact restoration against every original
+equation. A row-basis equivalence is not a signed arithmetic bound or RH proof.

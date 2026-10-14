@@ -1,0 +1,115 @@
+INDEPENDENT CONDITIONAL QUADRATIC CONTRACTION064
+
+API: check_mobius_quadratic_contraction_064.verify_contraction(lift,cert,meter=None)
+
+The checker imports independent060/052 checking primitives only. It does
+not import a discovery producer, open any saved scientific arrays, evaluate
+scientific integrals/LPs, or use the lift's recorded ordinary-mu vector.
+The synthetic suite constructs all lifts and expected monomials by hand.
+
+MANDATORY SOURCE CONDITION
+
+This local admission is CONDITIONAL on independent acceptance of the SAME
+lift and repair by
+ check_mobius_quadratic_source_064.verify_quadratic(lift,repair,meter).
+That separate rule must bind Pf/PG to the original source and selected
+repair. Producer replay flags, source-only review flags, arithmetic-radius
+metadata, and recorded arithmetic values do not establish this condition.
+The local result explicitly sets original_source_binding_proved=False and
+independent_source_admission_required=True. Whole prefix admission and its
+separately priced long component also remain external obligations.
+
+EXACT LOCAL ADMISSION RULE
+
+The lift uses the exact legacy063 field set. Operational local inputs are
+parameters p/q, N,y,H,K, the two complete linear_terms arrays Pf, and the
+two complete long_kernels_after_fill arrays PG. Metadata is not promoted
+to independent evidence. The strict certificate contains only
+ schema,N,y,H,K,conditioned_primes,endpoints,budget,
+with schema mobius-quadratic-contraction-v1. Each endpoint contains only
+ ratio,rows,l1; each complete j=1..H row only j,terms; each term only
+ index,coefficient. The endpoint ratios are exactly p/q and1. Primes are
+actual, distinct, ascending and at most B=max(H,K), or the list is empty.
+Rational text is canonical Fraction text, at most4096 numerator/denominator
+bits and2500 characters. Zero terms are omitted. Claimed term indices are
+positive, distinct, ascending squarefree integers. Booleans are rejected
+where integers or exact rational text are required.
+
+For each endpoint and every j, the checker expands the COMPLETE expression
+ c_j=sum_(m<=H/j)mu(m)*Pf[jm]
+     -sum_(m<=H/j,ell<=K)mu(m)*mu(ell)*PG[jm,ell]
+     -sum_(m<=H/(j+1))mu(m)*Pf[(j+1)m]
+     +sum_(m<=H/(j+1),ell<=K)mu(m)*mu(ell)*PG[(j+1)m,ell].
+The omitted H+1 branch is zero because its multiples range is empty.
+Squarefulness is independently sieved, including squareful m and ell.
+For squarefree m,ell it uses key m*ell/gcd(m,ell)^2. Thus a shared prime
+occurs twice and cancels from the sign monomial; mu(2)^2=1 rather than
+mu(4)=0. The unit is the constant monomial with index1.
+
+Every linear and quadratic contribution enters the SAME exact dictionary
+before any absolute value. Coefficients cancel there, including the unit.
+For every conditioned prime dividing a surviving squarefree key, that
+prime is removed once and its coefficient receives the factor-1. These
+terms coalesce again, with exact zero removal. Every claimed coefficient
+is compared to this complete independently expanded dictionary. Cardinality
+checks plus ascending uniqueness prevent missing, extra or repeated terms.
+The exact endpoint price is sum_(j,key)|coefficient|, checked against l1;
+budget must equal the maximum of BOTH endpoint prices, with neither
+underpricing nor arbitrary overpricing accepted.
+
+FINITE THEOREM AND ITS LIMIT
+
+Assign arbitrary +/-1 signs to unconditioned primes, fix each conditioned
+actual-prime sign at-1, set the unit sign1 and squareful inputs zero, and
+extend multiplicatively on squarefree integers. Each surviving monomial
+then has magnitude1. The triangle inequality bounds the whole endpoint
+variation by its checked price. The SAME shared prime-sign assignment is
+used in both arithmetic factors; independent arbitrary index signs would
+not justify the overlap reduction.
+
+Conditional source admission establishes affine dependence of Pf/PG on r.
+For r=(1-t)*p/q+t, 0<=t<=1, the same assignment yields
+ sum_j|c_j(r)| <= (1-t)*sum_j|c_j(p/q)|+t*sum_j|c_j(1)|
+               <= max(endpoint_l1).
+The proved bound therefore covers every real r in[p/q,1], at the supplied
+fixed N,y,H, and even all such assignments to the remaining prime signs.
+The ordinary Mobius sequence is one permitted assignment. Conditioning
+every actual prime<=B leaves constants and gives exact finite arithmetic
+evaluation at the endpoints. This alone supplies no new growth theorem.
+Products/symmetric-difference keys can reach scale H*K; smaller input
+queries and the reindexing do not prove exponent contraction.
+
+uniform_N_growth_proved=False,
+whole_signed_target_bound_proved=False,
+RH_proved=False.
+In particular this rule does NOT establish the unpaid all-N, required-y,
+every-positive-kappa O_kappa(N^(1/2+kappa)) variation bound from the handoff.
+
+CAPACITY AND DEVELOPMENT
+
+H<=4096, B<=65536, H*K<=1,000,000. N,y are positive bounded64-bit integers,
+N>=2; K=y//(H+1), y<=floor(4N/p). Independent source admission may impose
+stricter caps. Exact rational intermediates are bounded by32768 bits.
+Endpoint parsing and row coalescing have a conservative512MiB prospective
+working-storage cap, excluding caller-owned input objects and interpreter
+baseline; this estimate is not simultaneous aggregate RSS. Endpoint arrays
+are parsed and released one endpoint at a time, and monomials one row at a
+time. Every sieve, expansion, condition factorization, parse, sum and memory
+check is charged through a charge-only compatible meter with work/deadline
+checks. The returned prospective_peak_storage_bytes is an estimate of this
+local storage, not an RSS measurement.
+
+The sole owned metered suite passed21 tests once with67,952 work units.
+It includes hand-priced diagonal and gcd6/10 overlap, squareful outer and
+inner inputs, full linear-minus-quadratic cancellation, conditioning parity
+and post-conditioning coalescence, the unit, both endpoint ratios/prices,
+all remaining sign assignments on small fixtures, and intermediate-ratio
+convexity. Actual ordinary-mu coefficients on the tiny diagonal fixture
+are additionally checked by independent backwards floor-matrix elimination;
+arbitrary sign assignments are checked against hand-derived formulas.
+Schema, prime, rational, array, sign, missing/extra/zero term, copied horizon,
+cost, budget, work, memory and intermediate-cap mutations are rejected.
+No old successful suite was replayed. No suite failure or affected retest
+occurred. Exact command, stdout/stderr, elapsed time, child high-water RSS
+and work count are preserved in the owned development receipt. All four
+owned deliverables are complete; editing stops after receipt finalization.

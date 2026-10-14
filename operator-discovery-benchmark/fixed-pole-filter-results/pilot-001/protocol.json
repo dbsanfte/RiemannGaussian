@@ -1,0 +1,178 @@
+{
+  "budgets": {
+    "bit": 1000000,
+    "max_n": 1048575,
+    "work": 1000000000
+  },
+  "code_sha256": {
+    "arithmetic_filter_pole_budget.py": "e1b730dec869117f8e654712744bc7b72ebaa6d6771e8d87774fe5c48f96bd4d",
+    "arithmetic_filter_pole_budget_proof.txt": "0f32e43a7ceb851dd29a1218424cfa4e77daa8c62f5e5ee57b69b275e4dc6403",
+    "check_fixed_pole_filter_run.py": "2a3ed2ced63dd583713634cdba06e5d35748e5bbf297491df10b5c6152d3b29d",
+    "detector_safe_evaluation.py": "54ca77d84ade432fa5189831d9215dadddb6ad08dff06ec037381fe461604858",
+    "detector_workflow_guard.py": "cb73dca68508b2aa5657aebda87e045089fe39cd200faa8de33241fa549d9b5f",
+    "fixed_pole_filter_checks.py": "6f2a4e9b4272344b18f2bf6ebe3620ea064c4d1fc6309eab2dd6b2c0191d62d1",
+    "fixed_pole_filter_search.py": "fbc872d14c3361421d164d5417b48796f3f527cd4233da58dbb92cbea0c8ab7a",
+    "inverse_prefix_grammar.py": "865565ac1f346e9f36d8afd767a370e68054f843ab3c798931c67cc4489d086b",
+    "prime_power_pairing.py": "2f55a921350ad6b8e2bca2b7339f2307a909773f343a421c1161c6eed3c45f2e",
+    "prime_power_pairing_proof.txt": "61ff2042720ea53ee05e1f73aabd6b099ba4171e941c6ac8e3c9623624b280f0",
+    "run_fixed_pole_filter.py": "f57a490c921795f24b82c276289d858ed49fe7d734e8227bf938c7e42884c5e6",
+    "test_arithmetic_filter_pole_budget.py": "2af4abce1e4495f6bb36ab133b7fc02abf15954ba9685fa5b3788bf218945b12",
+    "test_check_fixed_pole_filter_run.py": "b9465c05eaefb4a55ffe0357dc8726fc02bff5536be8b64808a009c0baca294b",
+    "test_fixed_pole_filter_checks.py": "415bede2f52a1efea14849fe5173f4fa7bd219f1e888e60b88a82137b3c3aa1d",
+    "test_fixed_pole_filter_search.py": "a29ab69657627760b3979bb965d5fb7944f679da9e6da68a7f12ddc318660819",
+    "test_prime_power_pairing.py": "6b276094263a794d66067d2b202b6f2ec4adbc5020a35167a305fefe5c5d8024",
+    "test_run_fixed_pole_filter.py": "9fe8de00f21c8e9ad9812d9577840f3efb86ca1e683a9987e2eebc4ae07dd1e9"
+  },
+  "dictionary": {
+    "box": "8",
+    "composition": "for each d>1 with d^2 in dictionary and each two-weight w, square (1+w D_d): weights1,2w,w^2 at1,d,d^2; retain exact pole support admission",
+    "divisors": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      12,
+      16
+    ],
+    "inference": "one pooled normalized Gram constrained least-squares minimizer per one/two nonleading divisor support; exact interior/edges/corners; singular missing with explicit grid fallback",
+    "leading_divisor": 1,
+    "leading_weight": "1",
+    "quantization_denominator": 64,
+    "support_limit": "r+l",
+    "targets": [
+      {
+        "l": 1,
+        "r": 0
+      },
+      {
+        "l": 0,
+        "r": 1
+      },
+      {
+        "l": 2,
+        "r": 0
+      },
+      {
+        "l": 1,
+        "r": 1
+      },
+      {
+        "l": 0,
+        "r": 2
+      },
+      {
+        "l": 3,
+        "r": 0
+      },
+      {
+        "l": 2,
+        "r": 1
+      },
+      {
+        "l": 1,
+        "r": 2
+      },
+      {
+        "l": 0,
+        "r": 3
+      }
+    ],
+    "three_weights": [
+      "-2",
+      "-1",
+      "1",
+      "2"
+    ],
+    "two_weights": [
+      "-4",
+      "-3",
+      "-2",
+      "-1",
+      "-1/2",
+      "1/2",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  "dictionary_sha256": "f3ecc79031efc02355db3494730ed18bcc9c9c5f3430063f3b6c0476ce544834",
+  "final_generation": {
+    "fixed": [
+      32768,
+      65536
+    ],
+    "formula": "40001+2*(int(seal_sha256[:16],16)%5000)",
+    "odd_count": 5000,
+    "odd_min": 40001
+  },
+  "final_levels": [
+    3,
+    12,
+    17,
+    29
+  ],
+  "global_claim": "For the exact actual target and fixed filter specified by the program, there exists an integer q0>=1 such that for every integer q>=q0 there exists finite Kq>=0 independent of X such that for every dyadic integer X>=1, sum_(n=X)^(2X-1)|G(n)|^2 <= Kq X^2 ceil(X^(1/q)). Here a=mu^{*r}*lambda^{*l}, A(x)=sum_(n<=x)a(n), and G(x)=sum_j w_j A(floor(x/d_j)); all coefficients, terms and boundaries are retained. Stored direct and innovation constants are finite fits, not assertions of the unknown existential constants.",
+  "levels": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "provenance": {
+    "actual_all_scale_signed_bound_proved": false,
+    "actual_source": "complete prime sieve and generic full Dirichlet convolution",
+    "coefficient_history_overlap": true,
+    "guided_design": "target arities, divisor grid, exact least squares and composition rules supplied before scoring",
+    "prior_verifications": {
+      "convolution-control-results/pilot-001/verification.json": "1edc400c517e9a1ae7f18e0382715623535b5f772e8fcb8904a74a604feed2e2",
+      "convolution-control-results/pole-budget-001/verification.json": "4406d25c70dd3ddd6efadd2613bd36736d83a336c39be1c04ba35bb549a3fa88"
+    },
+    "unseen_prime_holdout": false
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+  },
+  "schema": 1,
+  "selection": {
+    "cross_target_normalization": "constants divided by max(1, own-target baseline constant)",
+    "groups": "one per target plus c baseline, best composition and best inferred",
+    "rank": [
+      "missing",
+      "validation_failures_both_modes",
+      "max_direct_training_constant",
+      "max_innovation_training_constant",
+      "nonleading_l1",
+      "support",
+      "program_id"
+    ]
+  },
+  "training_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "validation_scales": [
+    12288,
+    16384,
+    24576
+  ],
+  "version": "fixed-pole-filter-v1"
+}

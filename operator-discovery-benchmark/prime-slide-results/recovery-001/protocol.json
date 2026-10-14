@@ -1,0 +1,37 @@
+{
+  "RH_proved": false,
+  "combined_work_limit": 150000000,
+  "development": {
+    "operations": 34459,
+    "runs": [
+      {
+        "operations": 34459,
+        "returncode": 0,
+        "runtime_seconds": 0.07837787200696766,
+        "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.025s\n\nOK\n",
+        "stdout": "SYNTHETIC_WORK module=test_prime_slide_recovery operations=34459\n",
+        "test": "test_prime_slide_recovery",
+        "tests": 5
+      }
+    ]
+  },
+  "frozen_search_not_repeated": true,
+  "hashes": false,
+  "memory_bytes": 4294967296,
+  "metadata_reserve": 100000,
+  "new_actual_source_evaluations": 0,
+  "parent": "prime-slide-results/pilot-001",
+  "proof_text_is_not_formally_checked": true,
+  "purpose": "exact recurrence reduction, complete support pullback and scoped local recovery obstruction",
+  "reviewed_analytical_inputs": [
+    "local recurrence valid at every prime power",
+    "complete kernel pullback domains",
+    "bounded local recovery obstruction",
+    "joint centering and conditional smaller-scale rule"
+  ],
+  "schema": "prime-slide-recovery-postanalysis-v1",
+  "seconds": 120,
+  "selected_candidate_id": 13391,
+  "whole_signed_bound_proved": false,
+  "work_limit": 1000000
+}

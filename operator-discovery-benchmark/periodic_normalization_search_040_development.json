@@ -1,0 +1,15 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 1438,
+      "elapsed_seconds": 0.008426820044405758,
+      "failures": 0,
+      "errors": 0,
+      "exposure": "synthetic source AST, finite generic Mobius inversion, exact rational exponent constraints only"
+    }
+  ],
+  "cumulative_operations": 1438
+}

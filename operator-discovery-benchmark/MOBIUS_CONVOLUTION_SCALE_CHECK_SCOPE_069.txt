@@ -1,0 +1,108 @@
+INDEPENDENT CONVOLUTION SCALE CHECKER 069
+
+This checker admits only the exact finite mobius-convolution-scale-v1
+schema. It imports neither the producer nor a historical checker, an
+optimizer, NumPy, SciPy, or saved scientific arrays. The 068 handoff and
+original 067 joined source were read as mathematical context. No old
+suite or scientific study was replayed, and no hashes were made.
+
+The mathematical rule supplied to the producer is the support gate and
+multilinear vanishing-face system. For h_empty=1 and each face equation
+h_T+h_(T union {i})=0, every submitted coefficient and every face is
+checked. A triangular subsystem, with one parent equation per nonempty
+mask, has full rank 2^degree. The checker does not trust rank metadata
+without verifying those equations. This is a supplied universal rule,
+not a claim that an unconstrained detector discovered number theory.
+
+With a_i(n)=mu(n)1[n<=u_i], b_i=delta-a_i*One is supported only above
+u_i. Thus product_i b_i has no support through R when product_i(u_i+1)>R.
+Expansion followed by convolution with ordinary mu gives the complete
+nonempty-subset reconstruction. All masks are present. The support gate
+is exact integer arithmetic. Canonical rational exponents lie in[0,1),
+sum to at least one, and are ordered with repetitions allowed. Their
+u_i=floor(R^theta_i) use integer powers. Every mu argument is at most
+max_i u_i<R when R>1. R=1 has the explicit known unit exception.
+
+Source replay is pointwise and independent: W_p(d)=floor(4N/(pd))
+-3floor(2N/(pd))+2floor(N/(pd)), the two channels are joined before any
+absolute value, and g(d)=-1[d>y](W_p(d)-r W_q(d)). The checker constructs
+kappa_j(n)=g(jn)-g((j+1)n), retains the full direct floor atom, and audits
+the actual raw inverse of the original truncated source. Ratios p/q and
+1, and all rows j=1..max_j, are required in order. Registered primes and
+source parameter gates are checked. Independent binding to the admitted
+parent scientific source remains the root evaluator's responsibility;
+original_source_binding_proved is explicitly false here.
+
+The convolution functional is rederived with ordered positive-factor
+counts d_s(t). Prime exponents give d_s(t)=product_e binomial(e+s-1,s-1).
+The checker forms K_m(v)=sum_t kappa(vt)d_(m-1)(t). It does not use the
+producer's divisor-transpose recurrence or tensor forward differences.
+Each scalar tuple inside every declared cutoff rectangle is expanded
+using mu(a)=M(a)-M(a-1). Terms with M(0) vanish; M(1)=1 is removed before
+pricing. Sorted monomial indices coalesce, including collisions across
+subsets and repeated axes. Coefficients retain their signs. The direct
+atom is added to the signed constant. Missing, repeated, zero, reordered,
+or sign-changed supplied monomials are rejected by exact comparison.
+Rectangular restrictions are applied to every coordinate, including cut
+boundaries; product support is not a replacement for those restrictions.
+
+For any supplied canonical sigma in[0,1], the only asserted envelope is
+conditional: if |M(t)|<=C t^sigma for every 2<=t<=max u_i, then
+|c_j|<=A_0+sum_(d>=1) A_d C^d. Here A_0 is the absolute signed constant
+after division by the endpoint denominator. For each actual degree d,
+A_d sums absolute coalesced coefficients times
+ceil(2^20*(product of monomial indices)^sigma)/2^20. Rounding is upward
+and uses exact integer power comparisons. Every degree, including zero,
+is replayed. This finite grid is a valid finite upper bound; it is not an
+all-scale precision theorem. Selection uses the first requested sigma's
+C=1 conditional price, then radius, term count, and stable model index.
+
+The checker constructs ordinary mu only as evaluator data. It evaluates
+the signed polynomial at the actual smaller prefixes and compares with
+the original full-radius raw coefficient. It also audits the finite C=1
+prefix premise exactly, using |M(t)|^b<=t^a for sigma=a/b. A successful
+finite audit cannot pay that premise for other sources or larger scales.
+The full arithmetic audit horizon remains D, even though each learned
+polynomial uses smaller prefixes. Producer access to ordinary mu is not
+proved by process isolation: it is an API and dependency restriction.
+
+The submitted scalar witness M(1)=1, M(s)=0 for s>=2 is a formal point
+inside every such scalar prefix box. Its value is the signed constant.
+It is never labeled an actual ordinary-Mobius prefix assignment. On the
+actual source N=15k,y=16k,p=3,q=5,r=1,j=1, kappa is the indicator of
+(8k,10k] minus the indicator of(16k,20k]. For degree two and both cutoffs
+at least two, the witness value is ceil(k/2). Independent fresh tiny
+synthetic tests check this for k=1..6. This certifies a limitation of a
+scalar-prefix-box-only upper bound; it is not a lower bound for the
+actual signed row, actual prefix sums, or RH. Extra coupled arithmetic
+constraints can exclude this fake assignment and lie outside that claim.
+
+Scope flags reject claims that conditional prefix bounds, a uniform head
+growth bound, or RH have been paid. The output also leaves uniform N
+growth, the whole signed target, and parent source admission open. The
+universal finite convolution identity and smaller query radius are paid;
+a noncircular all-scale smaller-prefix law is not.
+
+Resources are explicit. The standalone meter caps 300 billion charged
+work units and 7200 seconds. Exact rationals have 4096-bit capacity, and
+integer powers have 100000-bit intermediate capacity. The checker bounds
+the incoming in-memory JSON tree, including its nested strings and
+integers, before allocating replay. It permits at most 4 million input
+and prospective scratch entries and 512MiB of prospectively accounted
+input plus scratch storage. Entry/storage/power/work/deadline violations
+raise explicit errors; no subset, tensor edge, or price is silently
+truncated. Charged units are a conservative algorithmic proxy, not a
+hardware instruction count. Peak storage accounting is conservative and
+does not replace the overall run's aggregate RSS measurement or 16GiB cap.
+Development receipts retain rusage maxima, which can include inherited
+launcher high-water marks in this environment. New receipts also report
+Linux /proc/self/status VmHWM for the actual current Python process.
+
+All development runs are appended to
+mobius_convolution_scale_checker_069_development.json, including any
+failures. The new checker suite builds tiny independent scalar tensor
+fixtures and tests actual arithmetic, every requested degree boundary,
+mixed rectangular cutoffs, endpoint/unit behavior, face constraints,
+signed coalescing, support and exact powers, rounding, invalid paid/global
+claims, formal witness honesty, selection/reuse, and resource rejection.
+No unchanged historical test suite is imported or run.

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "../.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "test_check_global_multiplier_bounds",
+    "-v"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.039428847027011216,
+  "stdout": "",
+  "stderr": "test_exact_multiplier_bound_and_mutations (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\ntest_negative_witness_is_scoped_to_relaxation (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\ntest_singular_psd_and_indefinite_rejection (test_check_global_multiplier_bounds.ExactMultiplierReplay) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+  "scope": "synthetic rational proof admission only; no source observations"
+}

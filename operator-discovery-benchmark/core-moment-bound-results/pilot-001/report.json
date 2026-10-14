@@ -1,0 +1,35 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "candidate_lines": 1958,
+  "elapsed_seconds": 24.369562701001996,
+  "fitted_constants": 0,
+  "inclusive_operations": 56633123,
+  "inherited_bindings": 144,
+  "main_operations": 22060467,
+  "model_calls_in_search": 0,
+  "moment_allocations_examined": 78892,
+  "new_component_bounds_proved": 1,
+  "paid_components": [
+    {
+      "constant": {
+        "kind": "fixed_finite_theorem_constant",
+        "name": "C_norm_centered_A2_E2",
+        "numerical_value": null,
+        "statement": "sum_(n>=1)|complete centered prefix(n)|^2*n^(-2sigma-1)<=C_norm*U^b",
+        "uniform_in": [
+          "U",
+          "X",
+          "N"
+        ]
+      },
+      "energy_X_power": "-2/23",
+      "sigma": "8/23",
+      "target_id": "centered_A2_E2"
+    }
+  ],
+  "peak_rss_kib": 704032,
+  "status": "MOMENT_PROOF_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "targets": 22,
+  "whole_signed_bound_proved": false
+}

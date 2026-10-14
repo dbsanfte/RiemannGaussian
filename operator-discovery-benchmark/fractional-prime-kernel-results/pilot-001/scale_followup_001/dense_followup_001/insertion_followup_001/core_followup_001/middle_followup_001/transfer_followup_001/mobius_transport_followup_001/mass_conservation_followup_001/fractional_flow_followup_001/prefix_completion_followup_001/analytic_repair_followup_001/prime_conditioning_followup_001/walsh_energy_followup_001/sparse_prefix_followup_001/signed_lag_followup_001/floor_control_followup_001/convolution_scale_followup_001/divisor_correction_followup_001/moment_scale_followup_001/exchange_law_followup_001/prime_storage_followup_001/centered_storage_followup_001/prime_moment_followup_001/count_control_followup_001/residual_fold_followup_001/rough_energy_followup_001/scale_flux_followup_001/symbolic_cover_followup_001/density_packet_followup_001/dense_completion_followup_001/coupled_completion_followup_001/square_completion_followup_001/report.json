@@ -1,0 +1,167 @@
+{
+  "RH_proved": false,
+  "admitted_proposals": 8,
+  "conservative_process_peak_sum_bytes": 1077977088,
+  "constructor_operations": 20773528188,
+  "discovery": [
+    {
+      "family_id": "cofactor",
+      "id": "q1_p04_cofactor",
+      "source_id": "q1_p04",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 51.91636405297322,
+      "worker_peak_rss_kib": 196088
+    },
+    {
+      "family_id": "fractional",
+      "id": "q1_p04_fractional",
+      "source_id": "q1_p04",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 48.243613329017535,
+      "worker_peak_rss_kib": 202504
+    },
+    {
+      "family_id": "inherited",
+      "id": "q1_p04_inherited",
+      "source_id": "q1_p04",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 39.97044588497374,
+      "worker_peak_rss_kib": 174716
+    },
+    {
+      "family_id": "reciprocal",
+      "id": "q1_p04_reciprocal",
+      "source_id": "q1_p04",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 47.063271455001086,
+      "worker_peak_rss_kib": 195056
+    },
+    {
+      "family_id": "cofactor",
+      "id": "q1_p16_cofactor",
+      "source_id": "q1_p16",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 45.53636266000103,
+      "worker_peak_rss_kib": 174716
+    },
+    {
+      "family_id": "fractional",
+      "id": "q1_p16_fractional",
+      "source_id": "q1_p16",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 48.34312229801435,
+      "worker_peak_rss_kib": 190084
+    },
+    {
+      "family_id": "inherited",
+      "id": "q1_p16_inherited",
+      "source_id": "q1_p16",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 38.15637523098849,
+      "worker_peak_rss_kib": 150744
+    },
+    {
+      "family_id": "reciprocal",
+      "id": "q1_p16_reciprocal",
+      "source_id": "q1_p16",
+      "status": "EXACT_SQUARE_PROPOSAL",
+      "total_elapsed_seconds": 46.52708040399011,
+      "worker_peak_rss_kib": 172404
+    }
+  ],
+  "elapsed_seconds": 1445.7233001550194,
+  "frozen_operators": 8,
+  "growth_hypotheses_by_j": [
+    {
+      "j": 1,
+      "passes": 32,
+      "tested": 32
+    },
+    {
+      "j": 3,
+      "passes": 32,
+      "tested": 32
+    },
+    {
+      "j": 7,
+      "passes": 24,
+      "tested": 32
+    },
+    {
+      "j": 15,
+      "passes": 5,
+      "tested": 32
+    },
+    {
+      "j": 31,
+      "passes": 0,
+      "tested": 32
+    }
+  ],
+  "hashes_used": false,
+  "independent_discovery_operations": 33775002772,
+  "independent_validation_operations": 484644345262,
+  "independently_admitted_auxiliary_rows": 32,
+  "known_unit_and_all_prime_signs_used": true,
+  "new_auxiliary_factor_searches_at_validation": true,
+  "new_auxiliary_rows": 32,
+  "new_geometry_parents": [
+    1603,
+    1738,
+    2651,
+    2766
+  ],
+  "observed_full_source_values_used": false,
+  "operation_accounting_scope": "Instrumented matrix and factor work; excludes solver instructions, symbolic outer setup, conditional target compilation and exact growth comparisons",
+  "operator_coefficients_frozen_at_validation": true,
+  "prior_frozen_files": 638,
+  "sampled_aggregate_peak_rss_bytes": 800591872,
+  "source_bytes_preserved": true,
+  "status": "COMPLETE_COUPLED_SQUARE_SEARCH",
+  "tasks": 8,
+  "uniform_remaining_bound_proved": false,
+  "uniform_source_bound_proved": false,
+  "unknown_composite_signs_used": false,
+  "validation": [
+    {
+      "elapsed_seconds": 455.72376743500354,
+      "id": "q1_p04_cofactor",
+      "worker_peak_rss_kib": 259280
+    },
+    {
+      "elapsed_seconds": 444.97097263502656,
+      "id": "q1_p04_fractional",
+      "worker_peak_rss_kib": 251900
+    },
+    {
+      "elapsed_seconds": 403.2959320890368,
+      "id": "q1_p04_inherited",
+      "worker_peak_rss_kib": 251152
+    },
+    {
+      "elapsed_seconds": 440.8114906359697,
+      "id": "q1_p04_reciprocal",
+      "worker_peak_rss_kib": 255864
+    },
+    {
+      "elapsed_seconds": 446.8454493599711,
+      "id": "q1_p16_cofactor",
+      "worker_peak_rss_kib": 245352
+    },
+    {
+      "elapsed_seconds": 462.258267416968,
+      "id": "q1_p16_fractional",
+      "worker_peak_rss_kib": 248668
+    },
+    {
+      "elapsed_seconds": 401.5664644310018,
+      "id": "q1_p16_inherited",
+      "worker_peak_rss_kib": 243696
+    },
+    {
+      "elapsed_seconds": 441.6790445690276,
+      "id": "q1_p16_reciprocal",
+      "worker_peak_rss_kib": 248360
+    }
+  ]
+}

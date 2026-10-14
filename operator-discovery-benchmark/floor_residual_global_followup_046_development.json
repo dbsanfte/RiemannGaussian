@@ -1,0 +1,14 @@
+{
+  "schema": "global-moving-followup-integration-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.002213519997894764,
+      "operations": 911
+    }
+  ],
+  "scope": "toy requests and artificial finite statuses; no actual source, norms or selected application"
+}

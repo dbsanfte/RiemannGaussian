@@ -1,0 +1,459 @@
+CENTERED BAND FILTERS, HYPERBOLA PREDICTION AND THE UNPAID COVARIANCE
+
+Scope
+-----
+This is an independent analytical review of the centered-product pilot-002
+operator C(z)=(1+z)^2 and of constructive next auxiliary languages. Only
+this new file is written. There are no tests, arithmetic source sweeps,
+parameter searches, hashes or changes to frozen files. The finite observations
+quoted below are already supplied by the root agent; they are not recomputed.
+No asymptotic inference is made from their slopes. No RH-strength companion
+bound or prime independence is assumed.
+
+The conclusions are specific. The selected filter has no newly established
+arithmetic cancellation mechanism. All admitted band filters and all three
+relative fractional weights belong to the same cofinal auxiliary class.
+Nevertheless, a useful next reduction is available: the ENTIRE full-centered
+low-product region hk<=X is paid absolutely with an explicit logarithmic
+bound. An exact hyperbola identity then exposes the remaining high-product
+region as a current-scale high/high square and a signed complementary-
+quotient covariance, with all units and moving endpoints retained. This
+identity supplies a concrete correlation language, not a proved bound for
+that correlation. A positive smaller-scale prediction theorem and a bounded
+main/floor remainder are proved below. They also distinguish useful recovery
+from an unproved predictor premise or an unstable pole-removal trick.
+The final primary frontier is the INTEGRATED high-product off-diagonal sum
+in section 3a. It preserves cancellation across all bands and needs only
+one one-sided signed bound. Partial-band maxima remain optional stronger
+diagnostics; they are not imposed on the new primary argument.
+
+1. The actual complete center and source envelope
+------------------------------------------------
+Use u=1/3, v=2/3, beta=9/2,
+  U=mu*n^(-u), V=mu*n^(-v), B=U*V,
+  p=beta*(U-delta)*(V-delta), a=p-d,
+where * is Dirichlet convolution and d is the COMPLETE same-prime part.
+Thus a(1)=a(q^e)=0, and a(n)=p(n) at every other n. All repeated prime
+valuations and gcd overlaps remain in these coefficients.
+
+The running pilot uses the LEADING center
+  M(n)=m_u*n^(2/3), M(0)=0,
+  m_u=(3/2)*beta*[zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)],
+not a fitted constant. Put
+  m(n)=M(n)-M(n-1), b(n)=a(n)-m(n),
+  R(n)=sum_(h<=n)b(h)=A(n)-M(n), R(0)=0.             (1.1)
+In particular b(1)=-m_u. The source producer's main array and the pilot
+protocol agree with this definition. No lower pole is silently subtracted.
+Adding the known n^(1/3) profile would change the finite b coefficients;
+its separate dyadic cost is O(X^(-1/3)), allowing a paid norm comparison,
+not silent reuse of the current finite responses.
+
+For every n, |U(n)|,|V(n)|<=1: their prime-power coefficients are the
+negative geometric differences p^(-e*u)-p^(-(e-1)*u) and the v analogue,
+and their multiplicative products retain that bound. Consequently
+  |p(n)|<=beta*d_2(n), |a(n)|<=beta*d_2(n).
+For p this follows by counting its proper two-factor divisor allocations;
+for a, the prime-power coefficients are removed exactly, rather than
+bounded by adding an extra absolute d term. Concavity gives
+  |m(n)|<=|m_u|, |b(n)|<=C_b*d_2(n), C_b=beta+|m_u|.          (1.2)
+The unit is included in (1.2). If both fixed pole profiles are explicitly
+used instead, the same proof replaces C_b by beta+|m_u|+|m_v|.
+
+With N=2X-1 and integer dyadic X>=1, the complete moment is
+  E_R(X)=X^(-2)*sum_(X<=n<2X)R(n)^2
+        =X^(-2)*sum_(h,k<=N)b(h)b(k)W_X(h,k),
+  W_X(h,k)=max(0,2X-max(X,h,k)).                      (1.3)
+It contains AA, both main crosses and MM, each on both squarefree and
+nonsquarefree PRODUCT. Only the whole moment is positive. Centering is
+performed BEFORE any product masks or fractional weights.
+
+2. What (1+z)^2 does, and what it does not establish
+---------------------------------------------------
+For J=ceil(log2 N^2), the existing exact band states are
+  D_(j,gamma)(t)=X^(-2)*sum_(h,k<=N,2^(j-1)<hk<=t*2^j)
+                         b(h)b(k)W_X(h,k)*(hk/2^j)^(-gamma),
+  1/2<=t<=1, j=0,...,J, D_j=0 for j<0.               (2.1)
+The selected output is
+  E_j(t)=D_j(t)+2D_(j-1)(t)+D_(j-2)(t).             (2.2)
+All shifted terms use the SAME relative t. Its causal inverse is exactly
+  g_l=(-1)^l*(l+1).
+The repeated characteristic root is -1. Thus an alternating affine band
+sequence (-1)^j*(a+b*j) is annihilated in the interior. The retained head
+prevents a global nullspace, but reconstructing such a mode amplifies
+head/interior forcing by a polynomial in J. This algebra is not an identity
+for actual Mobius or for actual arithmetic/center sector cancellation.
+
+The complete sufficient recovery bound is
+  E_R(X)<=K_gamma*binom(J+3,3)*U_C,gamma(X),
+  K_gamma=2-2^(-gamma),
+  U_C,gamma=max_j sup_t |E_j(t)|.                   (2.3)
+For the identity filter the corresponding bound is
+  E_R(X)<=K_gamma*(J+1)*U_I,gamma(X).
+The exact ratio of these inverse-cost envelopes, before comparing their
+different U values, is (J+2)*(J+3)/6. A smaller finite slope of U_C alone
+does not remove this larger recovery cost.
+
+All admitted fixed filters are equivalent, up to powers of J, to the same
+uniform signed partial-band auxiliary. The chosen filter has coefficient
+l1 equal to four, so U_C,gamma<=4 U_I,gamma, while its inverse gives
+U_I,gamma<=binom(J+2,2)U_C,gamma. These are operator statements, with no
+source-specific improvement in the exponent.
+
+There is also exact constant-equivalence across relative weights, for
+EVERY fixed causal band filter C. Signed partial-band Abel summation gives
+  D_gamma(t)=t^(-gamma)D_0(t)
+                +gamma*int_(1/2)^t rho^(-gamma-1)D_0(rho)d rho,
+  D_0(t)=t^gamma D_gamma(t)
+                -gamma*int_(1/2)^t rho^(gamma-1)D_gamma(rho)d rho.
+There is no atom at the strict lower boundary. These transforms are the
+same on every j and commute with C. Therefore, for gamma>=0,
+  U_C,gamma<=2^gamma U_C,0,
+  U_C,0<=(2-2^(-gamma))U_C,gamma.                   (2.4)
+In particular gamma=0,1/6,1/3 cannot produce distinct asymptotic auxiliary
+classes in this protocol. No global product-power gain survives relative-
+band normalization. A new arithmetic proof might use one presentation
+more conveniently; numerical weighting itself proves no new cancellation.
+
+The already supplied pilot summary is consistent with this warning. At
+gamma=0, the identity U decreases from about 15.398 to 8.718 between X=64
+and X=1024, while the selected U decreases from about 60.795 to 26.860.
+The sufficient reconstructed bounds are about 231 to 200.5 for the identity
+and 41,340 to 61,778 for the selected filter; actual full moments are about
+118.24 to 67.19. Those are finite observations, not growth theorems. The
+supplied witness audit reports same-sign inter-band contributions at all
+15 selected witnesses. Thus even the displayed finite improvements do not
+exhibit cancellation between the three selected band weights. The signed
+cancellation at these witnesses occurs across AA/main-cross/MM and SF/NS
+sectors. Those joint sectors must remain in the next mathematical operator.
+
+3. A new paid region: full centered products below X
+----------------------------------------------------
+Define the complete normalized product prefix
+  F_X(T)=X^(-2)*sum_(h,k<=N,hk<=T)b(h)b(k)W_X(h,k),
+with F_X(T)=0 for T<1. No positivity is assumed for F_X.
+The divisor identity d_2*d_2=d_4 and elementary harmonic summation give
+  sum_(m<=T)d_4(m)<=T*(1+log T)^3, T>=1.            (3.1)
+Indeed enumerate four ordered positive factors, eliminate the fourth by
+floor(T/(abc))<=T/(abc), then enlarge each of the other harmonic sums to
+its unrestricted range <=T. This needs no prime distribution theorem.
+
+Since 0<=W_X<=X, (1.2) and (3.1) prove uniformly over every real T>=1
+  |F_X(T)|<=C_b^2*(T/X)*(1+log T)^3.               (3.2)
+In particular the ENTIRE complete centered region hk<=X is paid by
+  |F_X(X)|<=C_b^2*(1+log X)^3.                     (3.3)
+This includes its large individual center sectors through the joint b
+envelope, and every unit/repeated valuation/gcd overlap. There is no
+companion moment premise and no cancellation assumption. The same estimate
+holds for every partial product prefix below X.
+
+For a band with 2^j<=X, its relative weight is at most 2^gamma. Thus
+  sup_t|D_(j,gamma)(t)|
+      <=2^gamma*C_b^2*(2^j/X)*(1+log(2^j))^3.      (3.4)
+Summing all such bands gives an absolute upper bound
+  2^(gamma+1)*C_b^2*(1+log X)^3.
+If C has fixed coefficient l1=L_C, its outputs entirely below that
+frontier are bounded by the corresponding L_C multiple. The j=0 unit is
+covered. Boundary terms from a finite causal stencil crossing the frontier
+remain explicitly paid, rather than discarded as an unknown head.
+
+Thus one can reduce the full moment to
+  E_R(X)=F_X(X)+H_X,
+  H_X=X^(-2)*sum_(h,k<=N,hk>X)b(h)b(k)W_X(h,k),
+with the first term paid independently. H_X is signed and includes low/high
+as well as high/high pairs; it is NOT just the sector h,k>sqrt(X).
+A bound on H_X itself is now cofinal-equivalent to the original full moment
+up to the paid term. Simply renaming H_X an auxiliary would not be progress.
+The useful next construction must expose and estimate its actual covariance.
+
+Fixed cofactor heads are also paid. The union h<=H or k<=H has absolute
+normalized cost at most
+  4*C_b^2*H*(1+log H)*(1+log(2X)),                  (3.5)
+for fixed integer H>=1, by sum_(k<=N)|b(k)|<=C_b*N*(1+log N).
+This includes the nonzero centered unit. If H grows as a power of X, (3.5)
+has an unpaid power: a fixed-head theorem cannot silently cover a growing
+cofactor bank.
+
+3a. Primary integrated off-diagonal frontier, without a J cost
+-------------------------------------------------------------
+The subsequent root/backend proposal admits a useful exact simplification.
+Set kappa=2/3 and R_u=kappa*m_u. Here m_u>0 since zeta(4/3)>0 and
+zeta(2/3)<0, so R_u>0. Define the SMOOTH coefficient center
+  tilde_b(n)=a(n)-R_u*n^(-1/3),
+  e(n)=m_u*[n^kappa-(n-1)^kappa]-R_u*n^(kappa-1).
+Concavity, or integrating the decreasing derivative on [n-1,n], gives
+  e(n)>=0, b(n)=tilde_b(n)-e(n).                   (3a.1)
+For n>=2, another integration of that derivative gives
+  e(n)<=m_u*kappa*(1-kappa)*(n-1)^(kappa-2)/2.
+The unit e(1)=m_u-R_u is retained. Therefore e is summable. Its exact mass
+is
+  E0=sum_n e(n)=-R_u*zeta(1/3)>0.                 (3a.2)
+To see the constant without an unproved asymptotic premise, summability
+first proves convergence of H_u(N)-N^(1-u)/(1-u), with u=1/3. If its limit
+is L, the finite identity for alternating sums
+  eta_u(2N)=H_u(2N)-2^(1-u)*H_u(N)
+and the convergent alternating series imply L=eta(u)/(1-2^(1-u))=zeta(u).
+Telescoping (3a.1) then proves (3a.2). No source-sign cancellation is used.
+
+Put tilde_R(n)=sum_(h<=n)tilde_b(h). The actual centered prefix satisfies
+  R(n)=tilde_R(n)-E(n), 0<=E(n)=sum_(h<=n)e(h)<=E0.
+With K=beta+m_u, |tilde_b(n)|<=K*d_2(n), since R_u<=m_u.
+Consequently
+  |E_R(X)-E_tilde_R(X)|
+        <=4*E0*K*(1+log(2X))+E0^2/X.             (3a.3)
+Indeed |tilde_R(n)|<=K*n*(1+log n); expand the complete square and sum
+the linear and constant error terms. This is a PAID norm correction, not
+permission to replace already computed finite b responses by tilde_b data.
+
+Now define precisely
+  O_X=(2/X^2)*sum_(n=X)^N
+             sum_(h<k<=n,hk>X)tilde_b(h)tilde_b(k).           (3a.4)
+This is a single signed full-union sum; no band is independently absolutized.
+Its complement in E_tilde_R consists of all low products hk<=X and the
+high-product diagonal h=k. Low products cost at most K^2*(1+log N)^3
+by (3.2). For the entire diagonal,
+  d_2(n)^2<=d_4(n),
+since at p^e, (e+1)^2<=binom(e+3,3), and both are multiplicative. Thus
+  X^(-2)*sum_(h<=N)tilde_b(h)^2 W_X(h,h)
+        <=2*K^2*(1+log N)^3.                     (3a.5)
+Using the full diagonal overbounds the high diagonal harmlessly; low
+diagonals are NOT subtracted twice in the exact partition.
+
+Combining the exact partition and (3a.3)-(3a.5) proves
+  |E_R(X)-O_X|<=B_X,
+  B_X=3*K^2*(1+log N)^3
+             +4*E0*K*(1+log(2X))+E0^2/X.         (3a.6)
+All constants and cutoffs agree with the proposed primary frontier. X=1,
+N=1 is included; its O_X is empty. Every cofactor, prime-power allocation,
+gcd overlap and both centered source legs are retained.
+
+This yields a useful positive recovery fact: because E_R>=0,
+  O_X>=-B_X,
+unconditionally. Only the ONE-SIDED remaining lemma
+  O_X<=C_epsilon*X^epsilon for every epsilon>0     (3a.7)
+is needed. It recovers E_R with constant one and a paid logarithmic
+remainder, with no J or inverse-stencil factor. Conversely a full moment
+bound gives (3a.7) by (3a.6); this is an equivalent residual frontier,
+NOT an independently proved signed gain. Its advantage is that it retains
+all cross-band cancellation while removing provably paid low/diagonal/
+center-rounding pieces. Uniform bounds on every high band or on its every
+partial cutoff are stronger optional lemmas, not requirements of (3a.7).
+
+4. Exact hyperbola prediction and complete cutoff complements
+--------------------------------------------------------------
+For any n>=1 and real T>=1 set
+  Q_n(T)=sum_(h,k<=n,hk<=T)b(h)b(k),
+  c=min(n,floor(sqrt(T))), R_n=R(n), R_c=R(c).
+Then the complete Dirichlet hyperbola identity is
+  Q_n(T)=2*sum_(h<=c)b(h)R(min(n,floor(T/h)))-R_c^2. (4.1)
+Every admitted pair has at least one leg <=c. Pairs with both legs <=c
+are counted twice and corrected once. The cap n, unit and strict product
+exit are part of the identity. It is valid at T>=n^2 with c=n, where it
+becomes Q_n(T)=R_n^2, and at T<1 with empty c=0 and Q=0.
+
+Write
+  V_(n,c)=R_n-R_c,
+  Gamma_n(T)=sum_(h<=c)b(h)
+                    [R(min(n,floor(T/h)))-R_c].
+Equation (4.1) yields exactly
+  Q_n(T)=R_c^2+2 Gamma_n(T),
+  R_n^2-Q_n(T)=V_(n,c)^2+2R_c*V_(n,c)-2 Gamma_n(T). (4.2)
+The full 2R_c*V term is essential. Equivalently put
+  Gamma_hat_n(T)=Gamma_n(T)-R_c*V_(n,c)
+      =sum_(h<=c)b(h)[R(min(n,floor(T/h)))-R_n].
+Then the complement is V_(n,c)^2-2 Gamma_hat_n(T). Gamma_hat is the
+negative of the EXCLUDED low/high covariance, not the inside covariance
+Gamma. Interchanging the two drops exactly the required low/high cross.
+Consequently
+  E_R(X)-F_X(T)=X^(-2)*sum_(X<=n<2X)
+                  [V_(n,c)^2+2R_c*V_(n,c)-2 Gamma_n(T)].     (4.3)
+The moving c is used separately at every n. This retains the full high/high
+complement and the low/high credit. V still contains CURRENT-scale R_n:
+neither its square nor Gamma is independently paid by saying c is small.
+Dropping the square, or bounding only the negative part of Gamma, loses
+the original target. At T=X the subtraction F_X(T) is paid by (3.3), but
+the right side of (4.3) remains the unsolved joint energy.
+
+For integer/rational cutoffs, the correlation has an explicit complementary
+quotient-interval form. Put
+  w_m=R(min(c,floor(T/m)))-R(min(c,floor(T/(m+1)))), c<=m<n,
+  w_n=R(min(c,floor(T/n))).
+These are the exact sums of b(h) on the fibers
+min(n,floor(T/h))=m, h<=c. Thus
+  Gamma_n(T)=sum_(m=c+1)^(n-1)w_m*[R(m)-R_c]
+                         +w_n*[R_n-R_c].           (4.4)
+The final capped fiber is a birth/frontier term involving R_n; it is not
+the difference w_n-w_(n+1) and must not be omitted. The m=c fiber vanishes
+against its increment. If n=c all increments vanish. Formula (4.4) retains
+unit fibers and all integer endpoints, with no assumption about squarefree
+products or independent source signs. Finite Abel/summation-by-parts can
+rearrange it, but does not pay it without a new signed source estimate.
+If Gamma_hat is used instead, subtract the COMPLETE R_c*V. The capped
+fiber then cancels against its own piece of that subtraction because its
+endpoint equals n; every other fiber retains R(m)-R_n. This is exact
+outside-domain accounting, not permission to delete a frontier in Gamma.
+
+For gamma>0, the same hyperbola identity applies to the EXACT coefficients
+b(h)h^(-gamma) and their weighted prefixes. One must not substitute an
+uncentered multiplicative a channel and then reuse the old center. The
+relative-band Abel theorem (2.4) allows the new grammar to use gamma=0 as
+its default correlation representation without forfeiting recovery.
+
+5. A positive predictor theorem with a real coefficient gap
+-----------------------------------------------------------
+Let d>=2 be fixed, alpha real and source-free, and define
+  Z(n)=R(n)-alpha R(floor(n/d)), Z(0)=0.            (5.1)
+On the actual step extension and finite weighted norm
+  ||R||_(sigma,T)^2=int_1^T |R(x)|^2*x^(-2sigma-1)dx,
+the dilation has norm <=d^(-sigma). If |alpha|<sqrt(d), then for
+sigma>=1/2,
+  ||R||_(sigma,T)<=[1-|alpha|/sqrt(d)]^(-1)
+                                       *||Z||_(sigma,T).    (5.2)
+The inverse is the causal sum of alpha^j R/floor-dilations on successively
+smaller arguments, with exact zero below one. This is a positive recovery
+theorem and its constant has a genuine gap independent of T.
+
+There is also a completely discrete cumulative proof. Let
+  S_R(T)=sum_(n<=T)R(n)^2, S_Z(T)=sum_(n<=T)Z(n)^2.
+Each lower argument occurs at most d times, giving for any delta>0
+  S_R(T)<=(1+delta)*alpha^2*d*S_R(floor(T/d))
+                                 +(1+1/delta)*S_Z(T).       (5.3)
+If S_Z(T)<=A*T^(2+epsilon), choose delta with
+(1+delta)*alpha^2/d<1. Then induction gives
+  S_R(T)<= [(1+1/delta)*A /
+                  (1-(1+delta)*alpha^2*d^(-1-epsilon))]
+                                                    *T^(2+epsilon). (5.4)
+The missing lower indices are zero; T<d is included. The denominator can
+be replaced by its smaller epsilon=0 value for a simpler uniform constant.
+The dyadic-block/cumulative comparison costs only its usual geometric sum.
+
+Equation (5.2) also implies the reverse norm comparison by the triangle
+bound 1+|alpha|/sqrt(d). Therefore a bare cofinal lemma about Z is in the
+same fixed-d norm class as R. Declaring it a new source estimate is not
+progress. A useful predictor program needs an independently derived
+arithmetic decomposition of Z or a signed covariance argument for its
+forcing, with full current-scale terms exposed.
+
+For the exact dyadic split d=2 and X>=2, put
+  L(n)=R(floor(n/2)), V(n)=R(n)-L(n),
+  L_X=X^(-2)*sum_(X<=n<2X)L(n)^2=E_R(X/2)/2,
+  V_X=X^(-2)*sum V(n)^2, C_X=X^(-2)*sum L(n)V(n).
+Then
+  E_R(X)=L_X+V_X+2C_X.                             (5.5)
+A concrete sufficient SIGNED forcing lemma is, for fixed -1<=tau<1, delta>=0,
+  2C_X<=-(1+delta)V_X+tau L_X+F_X^paid.            (5.6)
+It gives a strict recurrence
+  E_R(X)<=(1+tau)E_R(X/2)/2+F_X^paid,              (5.7)
+with the finite X=1 head explicit. Cofinal F^paid then closes a coupled
+induction. Unlike a norm-only proposal, (5.6) identifies the exact negative
+low/high credit needed to absorb the fresh square. But no such credit has
+been proved for this actual source. Unless its proof uses a new source
+identity or independently paid correlation, merely asserting (5.6) is an
+unresolved energy-drift restatement. All AA/cross/MM and gcd sectors must
+be present when expanding its C_X and V_X.
+
+6. Bounded mean/floor remainder, and the unstable pole predictor
+--------------------------------------------------------------
+There is a useful fully proved remainder for testing proposed predictors.
+For any fixed integer d>=2, let alpha=d^(2/3). The raw increment
+  Z_A(n)=A(n)-alpha*A(floor(n/d))
+and centered increment Z_R from (5.1) obey
+  Z_A(n)-Z_R(n)=m_u*[n^(2/3)-(d*floor(n/d))^(2/3)]. (6.1)
+Concavity gives the UNIFORM bound
+  |Z_A-Z_R|<=|m_u|*(d-1)^(2/3).                    (6.2)
+Its dyadic squared cost is at most |m_u|^2*(d-1)^(4/3)/X. For d=2,
+the difference is zero at even n and at most |m_u| at odd n. This is a
+real paid floor remainder with the unit included, not an unknown companion.
+
+However the mean-canceling gain d^(2/3) EXCEEDS sqrt(d). At the critical
+weighted norm its delayed multiplier is d^(1/6)>1. The associated causal
+inverse is not uniformly bounded on the whole critical norm class. Thus
+a cheap mean-canceling increment does not by itself recover the target.
+For an explicit norm-class witness, F(n)=d^(kappa*floor(log_d n)), kappa=2/3,
+has F(n)-d^kappa F(floor(n/d))=0 for n>=d, while its critical finite norm
+diverges as the horizon grows. Its forcing is supported only on the
+retained finite head. This is a generic recovery witness, not a claim
+about actual source values or the admissibility of this F as an a prefix.
+Conversely |alpha|<sqrt(d) leaves the nonzero continuous raw main forcing
+  m_u*(1-alpha*d^(-2/3))*n^(2/3),
+unless the complete center is retained. One cannot simultaneously remove
+that raw real pole and invoke the forward critical coefficient gap.
+
+A backward inverse for alpha=d^(2/3) formally uses future scales. On
+exact dilation orbits it would require the boundary term
+  lim_(j->infinity)alpha^(-j)R(d^j*n)=0.
+No such boundary condition has been established here. Subtracting the
+known displayed center does not prove it: off-line source singularities
+and log-periodic dilation modes remain possible. The Mellin characteristic
+zeros occur on Re(s)=2/3 with imaginary periods 2pi/log d; removing a
+single real main term is not removal of that entire characteristic line.
+Any analytic argument restoring a future inverse must declare and prove
+its boundary/pole-mode hypothesis and all associated source remainders.
+
+The full fixed-prime U,V,B transfer from the earlier review supplies
+bounded rational local operators and paid floor forcing, but its current-
+scale q-free input remains. It cannot be inserted as an independently
+bounded predictor in (5.1). Actual source laws, rather than the coefficient
+gap alone, must pay the new forcing.
+
+7. A small next grammar with an honest proof gate
+------------------------------------------------
+The constructive next language should manipulate the full centered b and
+the actual prefix R, or the PAID tilde_b replacement in section 3a, not
+choose another C or tune gamma. The primary objective is the joint O_X,
+preserving cancellation across all product bands. A minimal set of
+exact primitives is:
+
+  * Complete product-prefix and complementary-product masks, with the
+    low-product certificate (3.2) as a paid leaf, and the complete
+    low/diagonal/center certificate (3a.6) for the primary O_X.
+  * Hyperbola split (4.1), quotient-interval grouping (4.4), and exact
+    subtraction of two cutoffs. These generate joint signed low/high
+    correlations and retain the high/high complement.
+  * A fixed rational-coefficient lower-prefix predictor with its declared
+    gap and positive recovery certificate (5.2)/(5.3), or a coupled matrix
+    version only when its actual weighted norm is proved below one.
+  * Exact original-source prime/divisor transfer expansions of the
+    correlation coefficients. Every prime-power allocation, q-free
+    restriction, unit, capped frontier and center profile is an obligation,
+    not a removable annotation.
+  * Joint square completion, retaining both modes and cross terms. A
+    canceled projection cannot replace the full reconstruction identity.
+
+For example, a generated program can split a high product band at a
+declared T, group its low/high term by the explicit w_m in (4.4), then
+apply actual prime-power row identities to those SHORT COFACTOR INTERVAL
+increments. Its next unresolved bound is precisely the retained weighted
+correlation with R(m)-R(c), including the capped R_n frontier. This gives
+the search an arithmetic correlation whose support and complementary costs
+are known. Whether the expansion yields a paid forcing or smaller-scale
+closure is an analytical question, not guaranteed by the syntax.
+
+The proof gate must distinguish:
+  (i) exact identity and full-target reconstruction;
+  (ii) independently paid components such as (3.3), fixed heads and (6.2);
+  (iii) an actual coefficient gap in an induction;
+  (iv) the remaining signed source lemma and its dependencies.
+A program containing its own target under a new name, a q-free companion
+of equivalent norm, or a future boundary assumption without proof has not
+closed (iv). The stable-filter and relative-weight aliases in section 2
+should be recognized before allocating another search to their constants.
+
+Preserving the full signed cross is essential. Absolute separation of AA,
+main-cross and MM can retain supercritical deterministic components even
+when the complete centered expression cancels them. Conversely evidence
+that those sectors cancel at saved witnesses supplies no all-scale signed
+credit. A rigorous new argument must estimate their complete joint kernel
+or a source-identity forcing with all complements paid.
+
+Final proof boundary
+--------------------
+The new unconditional results are the complete centered low-product bound,
+the constant-one integrated off-diagonal recovery with explicit paid
+low/diagonal/center remainder and a one-sided frontier, the exact full-cross
+hyperbola/capped-quotient covariance identities, the positive
+prediction recovery theorem with constants, and the bounded pole/floor
+remainder together with its critical-recovery obstruction. They identify
+a narrower source-correlation frontier and a plausible operator-plus-
+argument language. No bound for that frontier, strict signed credit (5.6),
+new all-scale moment result or RH theorem is claimed. No finite slope or
+selected numerical witness is used as an asymptotic premise.

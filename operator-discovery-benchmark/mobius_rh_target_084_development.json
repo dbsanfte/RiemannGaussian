@@ -1,0 +1,13 @@
+{
+  "attempts": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_rh_target_084",
+      "time_epoch": 1791726732.7695155,
+      "tests": 3,
+      "exit_code": 0,
+      "output": "test_dilation_inverse_for_unrelated_step_sequence_and_real_floors (test_mobius_rh_target_084.TargetTests) ... ok\ntest_exact_fixed_kernel_conditional_binding_and_scope (test_mobius_rh_target_084.TargetTests) ... ok\ntest_rational_exponents_exact_comparison_and_rejection (test_mobius_rh_target_084.TargetTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 3
+}

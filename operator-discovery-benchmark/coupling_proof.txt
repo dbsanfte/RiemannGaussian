@@ -1,0 +1,341 @@
+SEARCHED INTERACTIONS OF THE TWO CARRY TRANSFERS
+
+Status: universal formal identities and a proved analytic bridge for one
+selected sector. The full commutator has no proved continuation to
+Re(s)>1/2 in this investigation. Historical originality is unresolved.
+These are mathematical proofs, supported by exact and Arb checks; they
+are not theorem-prover certificates and do not prove RH.
+
+1. DEFINITIONS AND THE LABELLED SEARCH DOMAIN
+
+Work over C with arithmetic functions f satisfying f(1)=1. Write D for
+ordinary Dirichlet convolution, delta for its unit, and LOG_D and EXP_D
+for the coefficient-local formal logarithm and exponential. Define
+
+ (a A b)(n)=sum_(ij=n) [v_p(i)&v_p(j)=0 for every p] a(i)b(j),
+ (a G b)(n)=sum_(ij=n) [Omega(i)&Omega(j)=0] a(i)b(j).
+
+The ampersand denotes binary bitwise AND. Both products are associative:
+for a triple product, every intermediate no-carry condition holds exactly
+when the three relevant bit sets are pairwise disjoint. They are
+commutative and have unit delta. LOG and EXP under either product are
+coefficient-local and mutually inverse, by the usual formal series laws
+in a commutative associative algebra over a characteristic-zero field.
+
+ T(f)=EXP_A(LOG_D(f)), S(f)=EXP_G(LOG_D(f)),
+ Dcomm(f)=T(S(f))-S(T(f)).
+
+Dcomm uses subtraction of coefficient functions, rather than the group
+commutator defined using inverse operators. T and S are established
+compositions of logarithm and exponential with carry products. Their
+definitions alone are not counted as new arithmetic primitives.
+
+For distinct primes p,q_1,...,q_k a tensor entry (e,k) represents the
+coefficient at p^e*q_1*...*q_k. When the coefficient depends only on e,k,
+products sum over a split of e and a subset of the k labels. A split
+having j labels has multiplicity binom(k,j). For A the weight is
+[a&(e-a)=0]; for G it is [(a+j)&(e-a+k-j)=0]. Equivalently, dividing entry
+(e,k) by k! gives an exponential generating series in the label count.
+There is no truncation at the potentially huge integer p^e*prod q_i.
+
+Because convolution only uses divisors, tensor truncation by e and k is
+an exact quotient algebra. Terms outside its declared bounds cannot
+feed back into a retained coefficient. A zero at a missing, larger
+integer is therefore never assumed. The ordinary arithmetic power
+f_alpha=u^{*alpha}=EXP_D(alpha LOG_D u), u(n)=1, is defined formally for
+every complex alpha. Its Dirichlet series is zeta(s)^alpha on Re(s)>1,
+with the Euler logarithm normalized at positive real infinity.
+
+2. A UNIVERSAL FIRST-OTHER-PRIME MODULE
+
+Restrict an arbitrary f to the divisor chains p^e and p^e*q, for distinct
+p,q, and set the square of the q-variable to zero. Its formal series is
+
+ F(x,y)=F_0(x)+y F_1(x), y^2=0, F_0(0)=1.
+
+Ordinary logarithm gives h=log F_0 and k=F_1/F_0, so
+ LOG_D F=h+y k. Let t=EXP_A h in the local p-variable. The square-zero
+q-component and the exponential addition law imply
+
+ T(F)=t+y (t A k),
+ S(F)=t+y B(t,k),
+ B(t,k)_e=sum_(a+b=e) [a&(b+1)=0] t_a k_b.
+
+In the second formula a local p^a term has total degree a, while p^b*q
+has total degree b+1. This explains the searched offset rather than
+postulating a shift in an untyped binary product. Equivalently
+ B(t,k)_e=coefficient_(e+1) of t A (x*k).
+
+B is a unital left A-module action. Its associativity is the basis
+identity
+ [a&b=0][(a+b)&(c+1)=0]
+   =[b&(c+1)=0][a&(b+c+1)=0].
+Both sides equal one exactly when the bit sets of a,b,c+1 are pairwise
+disjoint. Thus B(t A r,k)=B(t,B(r,k)). It is not a commutative product:
+B(x,1)=0 whereas B(1,x)=x. The grammar fitted two offset pairs on 0..3;
+(0,5) fails at a=4,b=0, leaving the correct pair (0,1) on fresh exponents.
+The written identity is universal; the finite offset search by itself is
+not its proof.
+
+At prime-power indices A=G, so Dcomm vanishes there for every f. On the
+squarefree divisor quotient A=D and T is the identity, so Dcomm also
+vanishes at squarefree indices. The generic cubic law proved in
+projection_proof.txt section 6 is Dcomm(f)(p^2*q)=f(p)^2*f(q).
+
+3. THE FACTORIAL FAMILY LEARNED FROM ZETA POWERS
+
+For f_alpha and k labelled external primes, let y_i^2=0 and Y=sum y_i.
+Retain p-exponents at most 2. LOG_D f_alpha is
+ alpha*(x+x^2/2+Y) modulo higher p-exponents and repeated y_i.
+Under G, the odd total-degree ideal has square zero: a product of two
+odd-degree homogeneous terms has a carry in bit zero. Consequently
+
+ S(f_alpha)=F_0+x F_1+x^2 F_2 modulo x^3,
+ F_0=1+alpha Y, F_1=alpha, F_2=(alpha/2)(1+alpha Y).
+
+On the external squarefree quotient A equals the ordinary product.
+However, x A x=0, so no two x-degree-one terms can contribute to degree
+two in EXP_A. Applying the ordinary logarithm then EXP_A therefore gives
+
+ [x^2] T(S(f_alpha))
+   =F_0*(F_2/F_0-F_1^2/(2 F_0^2))
+   =(alpha/2)(1+alpha Y)-alpha^2/(2(1+alpha Y)).
+
+T(f_alpha) is multiplicative. Its local coefficient at x^2 is alpha/2,
+and the local coefficient of its ordinary logarithm at x^2 is
+(alpha-alpha^2)/2. Applying G once more gives
+
+ [x^2] S(T(f_alpha))=(alpha-alpha^2)/2*(1+alpha Y).
+
+Subtracting yields the exact rational formal identity
+
+ [x^2] Dcomm(f_alpha)
+   =alpha^2/2*((1+alpha Y)-(1+alpha Y)^(-1))
+   =alpha^3 Y-alpha^4 Y^2/(2*(1+alpha Y)).
+
+The coefficient of y_1*...*y_k in Y^k is k!, since all permutations of
+the distinct labels occur once. The universal laws are accordingly
+
+ Dcomm(f_alpha)(p^2)=0,
+ Dcomm(f_alpha)(p^2*q)=alpha^3,
+ Dcomm(f_alpha)(p^2*q_1*...*q_k)
+   =(-1)^(k+1)*k!/2*alpha^(k+2), k>=2.
+
+The last formula would give alpha^3/2 at k=1, and is false there. This
+negative control prevents extending a good asymptotic-looking fit to
+the wrong arity. The two surviving grammar expressions k! and k*(k-1)!
+are the same law, not two operators. A 1,920-program search had 30
+training fits at alpha=1,k=2..5, with only these two equivalent fits
+surviving k up to 16 and six other parameters.
+
+For fixed alpha this selected p^2-sector converges absolutely on
+Re(s)>1. To see this despite k!, put a_j=q_j^(-sigma). Their sum is
+finite. Choose a finite head of m primes whose remaining sum L obeys
+|alpha|L<1. Then
+ e_k(a)<=sum_(j=0)^m e_j(head)*L^(k-j)/(k-j)!.
+Multiplication by |alpha|^k*k! leaves a polynomial in k times a
+convergent geometric factor. The outer sum over p is bounded by
+sum p^(-2 sigma). For alpha!=0, absolute convergence fails when
+sigma<=1 already in the k=1 subseries at any fixed p, by divergence of
+the sum of reciprocal primes. This is a statement about absolute
+convergence, and does not rule out analytic continuation. No such
+continuation of the full commutator is inferred from the next section.
+
+4. THE COMPLETE FIRST-OTHER-PRIME LOCAL PROFILE
+
+For alpha=1 let H=EXP_A(sum_(e>=1) x^e/e), let
+ t_2=EXP_A(LOG_D H), and g=H_even/H, where
+ H_even(x)=(H(x)+H(-x))/2.
+
+Apply section 2 twice to u. S(u) has local p-series H. Its p^e*q
+coefficient is h_e when e is even, and zero when e is odd: the only
+q-term in LOG_D u has total degree one. Thus T(S(u)) has p^e*q series
+t_2 A g. In contrast T(u) is multiplicative, so its ordinary logarithm
+again has no cross-prime terms and its q-term is one. S(T(u)) has
+p^e*q series (t_2)_even. Hence
+
+ d(x)=sum_(e>=0) d_e x^e=t_2 A (H_even/H)-(t_2)_even,
+ d_e=Dcomm(u)(p^e*q).
+
+In particular d_0=d_1=0 and d_2=1; the subsequent values begin
+d_3=1/3,d_4=5/3,d_5=1/5. Section 3 concerns e=2 and arbitrary k;
+this section instead concerns arbitrary e and exactly one other prime.
+
+All local series through degree 256 were checked by an independent
+weighted bit-partition evaluator, ordinary reciprocal recursion, and
+the identity LOG_D(H)'=H'/H. It does not import the production evaluator.
+The implementation explicitly raises FLINT's global series capacity and
+asserts the returned precision: an unavailable higher coefficient is
+not replaced by zero. The full integer-index calculation through 512
+agrees with the selected tensor/local coefficients at three parameters.
+
+5. A UNIFORM LOCAL NORM AND ITS INFINITE TAIL
+
+For radius r use the norm ||a||_r=sum |a_e| r^e. Local A is
+submultiplicative since its kernel is bounded by one. From the Euler
+recurrence
+ e h_e=sum_(j proper bit-submask of e) h_j
+and the fact that there are 2^popcount(e)-1<=e proper bit submasks,
+induction proves 0<=h_e<=1 for every e. Set R=(1-x)H. Then
+R(0)=1 and |[x^e](R-1)|=|h_e-h_(e-1)|<=1.
+
+For r=39/50 and head degree 128 the exact rational certificate is
+
+ c=sum_(e=1)^128 |h_e-h_(e-1)| r^e+r^129/(1-r)
+   <0.964071<1.
+
+This proves H has no zero in |x|<=r and bounds ordinary formal log H:
+ ||LOG_D H||_r<=-log(1-r)-log(1-c).
+Therefore ||t_2||_r<=K=1/((1-r)(1-c)). Also
+ ||H_even||_r<=1/(1-r^2),
+ ||H^(-1)||_r<= (1+r)/(1-c),
+so ||g||_r<=K and
+ ||d||_r<=M=K*(K+1).
+The exact rational values c,K,M, not rounded decimals, are retained in
+coupling_search.json and independently recomputed. Since d_0=d_1=0,
+ |d(x)|<=M*(|x|/r)^2 for |x|<=r.
+
+6. ANALYTIC BRIDGE AND AN RH EQUIVALENCE FOR THE SELECTED SECTOR
+
+Let P(s)=sum_p p^(-s) initially on Re(s)>1. Define
+
+ A(s)=sum_p d(p^(-s))=sum_(e>=2) d_e P(e*s),
+ B(s)=sum_p p^(-s)*d(p^(-s))=sum_(e>=2) d_e P((e+1)*s).
+
+Because 2^(-1/2)<r, section 5 gives normally convergent prime sums on
+Hhalf={Re(s)>1/2}. Thus A and B are holomorphic there. A is not
+identically zero: along positive real infinity A(s)~4^(-s), by d_2=1.
+Writing Q(s)=sum_(k>=2) P(k*s)/k, a normally convergent holomorphic sum
+on Hhalf, the Euler logarithm gives P(s)=log zeta(s)-Q(s) for Re(s)>1.
+
+Select just the commutator coefficients at indices p^e*q, e>=2,p!=q:
+
+ C_1(s)=sum_(p!=q,e>=2) d_e*(p^e*q)^(-s)
+       =A(s)*P(s)-B(s)
+       =A(s)*log zeta(s)-A(s)*Q(s)-B(s), Re(s)>1.
+
+Uniqueness of the repeated prime ensures that an integer in this sector
+is counted once. Section 5 and sigma>1 justify all rearrangements.
+
+Define the germ Phi_1=C_1+A*log(s-1) on Re(s)>1, with normalized real
+branches. RH holds if and only if Phi_1 admits a single-valued
+holomorphic continuation to Hhalf. Indeed Z=(s-1)*zeta(s) is holomorphic
+on Hhalf with its removable value at 1. If RH holds it is nonzero there,
+so the simply connected half-plane admits log Z and
+ Phi_1=A*log Z-A*Q-B is holomorphic.
+
+Conversely, a zero rho in Hhalf of multiplicity m produces local
+monodromy 2*pi*i*m*A(s) in this expression. A is holomorphic and not
+identically zero, so no isolated zero of A, of any finite order,
+eliminates that nonzero analytic germ. It contradicts single-valued
+continuation. The standard reflection of nontrivial zeta zeros then
+makes absence of zeros in Hhalf equivalent to RH.
+
+This equivalence supplies a criterion, not a zero-free estimate. It
+does not prove Phi_1 holomorphic throughout the half-plane and does not
+assert the same domain for the unselected commutator coefficients.
+
+7. ACTUAL-ZETA VALIDATION, TAILS, AND THE ZERO CONTROL
+
+For a>1 put D(a)=2^(-a)+2^(1-a)/(a-1), which bounds
+sum_(n>=2) n^(-a). A local cutoff E has infinite tails
+
+ |A-A_E|<=M/r^(E+1)*D((E+1)*sigma),
+ |B-B_E|<=M/r^(E+1)*D((E+2)*sigma).
+
+This follows by writing |d_e|p^(-e*sigma)=|d_e|r^e
+times (p^(-sigma)/r)^e, applying the weighted norm, and summing primes.
+For arithmetic cutoff N and sigma>2, the omitted C_1-series is bounded
+by N^(2-sigma) times an absolute Dirichlet norm at 2. That norm is at
+most P(2)*sum_(e>=2)|d_e|P(2e); its local tail obeys the preceding bound.
+
+The analytic evaluator obtains P(z) from actual Arb zeta evaluations,
+using sum_(m<=L) mu(m)/m*log zeta(m*z) plus an explicit infinite tail.
+For Re(z)>1 it certifies log zeta(Re(z))<pi, connecting the principal
+logarithm to the normalized Euler branch. The separate audit instead
+uses |log zeta(m*z)|<=D(m*Re(z)) and tail
+ D((L+1)*Re(z))/((L+1)*(1-2^(-Re(z)))).
+
+Six new points use real parts 3,4,6 and heights 61.19,-67.43,139.71,
+-151.23,257.89,-269.31. Production arithmetic cutoff 4096/local degree
+64 and independent cutoff 8192/local degree 48 both pass their proved
+infinite bounds. Changing the coefficient at 12 by 1/7, or independently
+by 1/11, fails all six comparisons. Neither route fits this coefficient
+from the analytic values used for validation.
+
+At c=1/2+14.13472514173469379046*i and zero-disk radius 1/10000, actual
+Arb zeta and derivative values certify exactly one simple zero by
+Rouche: the constant plus quadratic remainder is smaller than
+|zeta'(c)|/10000. Reflection s->1-conjugate(s) preserves the disk, so
+uniqueness places this zero on Re(s)=1/2. No claim of its global rank is
+needed. A separate audit replaces the quadratic interval remainder by
+a Cauchy estimate from radius 1/100 and obtains the same zero count.
+
+To continue P(2s) across the entire disk, the principal log zeta(2s)
+is explicitly connected to the Euler branch. Ten Arb rectangles cover
+Re(2s) from 0.9998 to 1.5 with imaginary centre twice Im(c) and radius
+0.0002. Each has Re(zeta)>0, and the right anchor satisfies
+log zeta(1.5)<pi. Higher Mobius terms have real part greater than one.
+The audit recomputes this connection with eight rectangles. The sums
+P(e*s),e>=3, already lie in their absolutely convergent domain on this
+disk. Local norm tails remain summable on its full crossing rectangle.
+
+Production local degree 256 and independent degree 224 both certify
+A is holomorphic and nonzero there. Production has |A|>0.587775 and
+local tail below 1.869e-7. Thus Phi_1 has the actual-zero monodromy
+2*pi*i*A at each basepoint, with modulus greater than 3.69310 throughout
+the disk. This probes the true zeta function and the genuine selected
+arithmetic coefficients. The boundary zero is consistent with RH;
+the control is not an off-critical-line counterexample.
+
+8. WHAT THE SEARCH DOES AND DOES NOT ESTABLISH
+
+The factorial and module identities are proved for every declared
+parameter and arity, rather than inferred from finite validation.
+The first-other-prime analytic criterion uses a complete local series
+and its infinite tails, rather than a finite prime or integer fit.
+A new analytic estimate sufficient to prove RH is still absent.
+
+The formal coefficients depend only on the free prime monoid's exponent
+data. Replacing prime labels by arbitrary generators preserves every
+exact law above. This is an explicit limitation of the arithmetic
+specificity supplied by the present grammar. Further, the selected
+sector collapses analytically to A*P-B. Its zero test is therefore a
+test of the familiar zeta logarithm with holomorphic prefactors, rather
+than a new mechanism excluding off-line zeros.
+
+These facts do not make the detector uninformative: it learned an
+unbounded-arity law, rejected an incorrect extension at k=1 and an
+incorrect kernel shift, and established a precise continuation domain
+with a real-zero control. They do mean that naming this operator word
+or sector should not increase the verified-new operator count.
+
+Primary literature checked for context:
+ * Wai Yan Pong, Applications of differential algebra to algebraic
+   independence of arithmetic functions (2016), section 2:
+   https://www.impan.pl/shop/publication/transaction/download/product/91275
+ * Cohen and Hagis, Arithmetic functions associated with the infinitary
+   divisors of an integer (1993), section 2:
+   https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171293000456
+ * Pentti Haukkanen, On the k-ary convolution of arithmetical functions,
+   Fibonacci Quarterly 38 (2000), 440-445, theorem 2.2:
+   https://www.fq.math.ca/Scanned/38-5/haukkanen.pdf
+ * Contucci and Knauf, The Low Activity Phase of Some Dirichlet Series,
+   Appendix A (PDF dated 2001):
+   https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/contucci-knauf.pdf
+ * NIST DLMF, zeta zeros and reflection:
+   https://dlmf.nist.gov/25.10 and https://dlmf.nist.gov/25.4
+
+These sources establish the primitive convolution/logarithm/partition
+framework. No exact publication match for the compound factorial law
+was identified in the reviewed material. That is not proof of historical
+originality, which remains unresolved.
+
+Reproduce the new stage from the project directory:
+ ../.venv/bin/python coupling_search.py
+ ../.venv/bin/python check_coupling.py
+ ../.venv/bin/python coupling_analytic_probe.py
+ ../.venv/bin/python check_coupling_analytic.py
+
+Machine-readable evidence is in coupling-results/. All Arb certificates
+depend on FLINT/Arb as a shared trusted numerical kernel.

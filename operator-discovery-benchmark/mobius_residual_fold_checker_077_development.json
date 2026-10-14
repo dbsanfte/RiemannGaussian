@@ -1,0 +1,39 @@
+{
+  "schema": "residual-fold-checker-development-v1",
+  "status": "PASS",
+  "distinct_tests": 9,
+  "successful_test_executions": 11,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 7,
+      "status": "PASS",
+      "output": "test_compiled_binding_arbitrary_gamma (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_coprime_counts_and_pruned_divisors (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_fold_full_function_excluded_primes (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_generic_bulk_obstruction (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_interval_and_token_tampering (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_large_horizon_tiny_intervals (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_stencil_floors_units_signs (test_check_mobius_residual_fold_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 1,
+      "status": "PASS",
+      "output": "test_compiled_binding_arbitrary_gamma (test_check_mobius_residual_fold_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "tests_run": 2,
+      "status": "PASS",
+      "output": "test_signed_fold_independent_pointwise (test_check_mobius_residual_fold_077.Tests) ... ok\ntest_resource_gate_before_parsing (test_check_mobius_residual_fold_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "attempt": 4,
+      "tests_run": 1,
+      "status": "PASS",
+      "output": "test_compiled_binding_arbitrary_gamma (test_check_mobius_residual_fold_077.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "producer_contract_read_only": "076 residual_components source code for schema/naming",
+  "scientific_source_queries": false,
+  "scientific_results_read": false,
+  "old_suites_run": false,
+  "hashes_used": false,
+  "delegation_used": false
+}

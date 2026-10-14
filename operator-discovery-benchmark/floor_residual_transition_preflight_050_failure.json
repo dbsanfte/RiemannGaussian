@@ -1,0 +1,14 @@
+{
+  "schema": "floor-transition-preflight-failure-v1",
+  "command": "../.venv/bin/python -B run_floor_residual_transitions_050.py",
+  "returncode": 1,
+  "elapsed_seconds_reported_by_shell": 0.078027568,
+  "type": "ValueError",
+  "message": "missing passing focused development receipt",
+  "cause": "New guard receipt uses a single-invocation summary, while inherited verifier requires a list of invocations.",
+  "source_freeze_created": false,
+  "scientific_source_arrays_evaluated": false,
+  "norms_evaluated": false,
+  "operations": null,
+  "resolution": "Add an explicit strict adapter for the guard receipt schema and one focused adapter test. Preserve all earlier passing tests and this preflight failure."
+}

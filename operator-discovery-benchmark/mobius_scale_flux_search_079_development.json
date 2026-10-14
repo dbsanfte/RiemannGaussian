@@ -1,0 +1,21 @@
+{
+  "schema": "scale-flux-search-development-v1",
+  "status": "PASS",
+  "distinct_tests": 6,
+  "successful_test_executions": 6,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 6,
+      "failures": 0,
+      "errors": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.038,
+      "output": "test_actual_cells_witness_proper_leaf_not_disguised_total ... ok\ntest_complete_shared_cells_keep_signs_gaps_outer_support_and_root_tokens ... ok\ntest_detector_discovers_a_signed_pair_and_rejects_broken_continuation ... ok\ntest_empty_intervals_and_resource_domain_are_not_arithmetic_refutations ... ok\ntest_root_identity_is_shared_but_counts_cannot_be_rebound ... ok\ntest_uniform_floor_coefficient_price_and_exact_inactive_channels ... ok\nRan 6 tests. OK."
+    }
+  ],
+  "additional_static_checks": ["producer, checker and runner AST parse", "actual fixed source kernels independently admitted, coefficient norm and complete base certificates reconstructed without signed source queries"],
+  "scientific_source_queries_during_development": false,
+  "old_suites_run": false,
+  "hashes_used": false
+}

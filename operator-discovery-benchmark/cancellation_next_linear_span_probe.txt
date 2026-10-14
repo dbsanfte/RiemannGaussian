@@ -1,0 +1,28 @@
+NEXT DIAGNOSTIC AFTER PUBLICATION-001 (not an executed probe)
+
+The 120 rational two-atom squares alter positivity, not the linear span of the
+old column family. For every rational c and every polynomial A,B,
+ (A+cB)^2=(1-c)A^2+(c^2-c)B^2+c(A+B)^2.
+Summing over the identical parent or child domain preserves this identity for
+EVERY X, with exactly the same rational coefficients. The old extended family
+already contains A^2,B^2,(A+B)^2 for each of its five atoms in both domains.
+Thus all eight selected adaptive square columns lie in its old linear span.
+The coefficients above need not be nonnegative; the positive cone can enlarge
+even though the linear span does not. The negative dual pairings confirm that
+it did enlarge relative to the particular old separating functional.
+
+Before repeating many rounds of rational-mix additions, test whether the full
+critical target with gamma=0 belongs even to the unrestricted linear span of
+the current square/relation/constant columns across the same training scales.
+An exact functional annihilating ALL these columns and having nonzero target
+pairing would show that no rational mixture within those five atom spans can
+repair the problem. New arithmetic atoms or relation multipliers would then
+be necessary within this proof framework. No such span obstruction has been
+computed here, and the existing separator does NOT establish it because its
+square pairings are generally positive rather than zero.
+
+If the unrestricted system is consistent, the obstruction is instead in its
+nonnegative/Gram representation (or a subsequent larger-scale requirement).
+Then rational square column generation or a PSD Gram proposal with exact
+rational factorization is a justified next experiment. This diagnostic concerns
+the declared shared finite templates, not impossibility of an RH proof.

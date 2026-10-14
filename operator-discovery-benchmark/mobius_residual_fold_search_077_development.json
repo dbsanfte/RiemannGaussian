@@ -1,0 +1,26 @@
+{
+  "schema": "residual-fold-search-development-v1",
+  "attempts": [
+    {
+      "tests_run": 8,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.3265471649938263,
+      "output": "test_compiler_binds_actual_prime_children_and_arbitrary_count_power (test_mobius_residual_fold_077.Fold) ... ok\ntest_coprime_count_with_big_products_is_exact (test_mobius_residual_fold_077.Fold) ... ok\ntest_generic_kernel_discovers_verified_uniform_method_obstruction (test_mobius_residual_fold_077.Fold) ... ok\ntest_interval_fold_matches_sparse_reference_on_restricted_domain (test_mobius_residual_fold_077.Fold) ... ok\ntest_large_horizon_interval_identity_without_expansion (test_mobius_residual_fold_077.Fold) ... ok\ntest_prime_memory_gate_precedes_allocation_and_fraction_bit_gate (test_mobius_residual_fold_077.Fold) ... ok\ntest_search_discovers_operator_free_cancellation_and_preserves_method_scope (test_mobius_residual_fold_077.Fold) ... ok\ntest_uniform_density_lower_bound_matches_integer_counts (test_mobius_residual_fold_077.Fold) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.015s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "names": [
+        "test_mobius_residual_fold_077.Fold.test_complete_runner_task_keeps_signed_candidate_and_obstructs_method",
+        "test_mobius_residual_fold_077.Fold.test_formula_dedup_keeps_every_original_obligation_id"
+      ],
+      "tests_run": 2,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.5750911390059628,
+      "output": "test_complete_runner_task_keeps_signed_candidate_and_obstructs_method (test_mobius_residual_fold_077.Fold) ... ok\ntest_formula_dedup_keeps_every_original_obligation_id (test_mobius_residual_fold_077.Fold) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.246s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "080 independent postrun full/second rough-mode gates",
+  "status": "PASS",
+  "distinct_tests": 8,
+  "test_executions": 8,
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_full_mode_gate_080 -v",
+      "tests_run": 5,
+      "errors": 0,
+      "failures": 0,
+      "elapsed_seconds": 1.337,
+      "outcome": "PASS",
+      "output": "test_coupled_affine_quadratic_vertex_and_tampered_sign (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_observed_complement_full_mode_and_negative_mass (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_prospective_memory_and_noncanonical (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_rho_exact_endpoint_certificate_and_mutations (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_zero_mode_zero_mass_and_unknown_domain (test_check_mobius_full_mode_gate_080.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 1.337s\n\nOK\n"
+    },
+    {
+      "attempt": 2,
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -m unittest test_check_mobius_full_mode_gate_080.Tests.test_strict_positive_rho_only_without_fake_numeric_lower test_check_mobius_full_mode_gate_080.Tests.test_second_mode_exact_moment_and_first_identity test_check_mobius_full_mode_gate_080.Tests.test_second_mode_prime_log_and_negative_weight -v",
+      "tests_run": 3,
+      "errors": 0,
+      "failures": 0,
+      "elapsed_seconds": 0.144,
+      "outcome": "PASS",
+      "output": "test_strict_positive_rho_only_without_fake_numeric_lower (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_second_mode_exact_moment_and_first_identity (test_check_mobius_full_mode_gate_080.Tests) ... ok\ntest_second_mode_prime_log_and_negative_weight (test_check_mobius_full_mode_gate_080.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.144s\n\nOK\n"
+    }
+  ],
+  "producer_imports": false,
+  "scientific_queries": false,
+  "old_suites_run": false,
+  "frozen_files_edited": false,
+  "primary_sources_verified": [
+    "https://arxiv.org/abs/2208.06141v5",
+    "https://arxiv.org/html/1401.2689v2"
+  ],
+  "scope": "Exact rational certificate reconstruction plus explicitly imported/reviewed analytic leading theorems; no finite effective threshold or signed residual/RH refutation."
+}

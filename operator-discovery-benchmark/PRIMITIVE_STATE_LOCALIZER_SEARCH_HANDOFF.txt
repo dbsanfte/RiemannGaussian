@@ -1,0 +1,178 @@
+PRIMITIVE STATE LOCALIZER SEARCH HANDOFF — publication010
+
+The objective remains a uniform signed arithmetic estimate with verified
+recovery to RH. This stage adds systematic consequences of the actual
+prime/Mobius relations to the complete affine state grammar. Its exact
+diagnostic invalidates the publication009 separator. The subsequent full
+search encountered numerical failures in both solvers, so feasibility of
+the enlarged cone remains UNKNOWN. No finite candidate, uniform innovation
+bound, or RH proof was admitted. Numerical failure is not an obstruction.
+
+Complete arithmetic expansion
+
+For each integer t, R_f(t) sums every primitive relation in the canonical
+domain of family f. All seven existing families are included: unit, norm,
+prime_power, squarefree_zero, inverse_row, coprime_product and gcd_product.
+The source domains and all witnesses are specified in
+primitive_state_localizers_uniform_scope.txt. Actual primality and exact
+factor witnesses certify these sources; no table of Mobius signs or fitted
+signed responses is supplied to the grammar.
+
+Let U(t) be the unchanged full15 affine state, including the constant,
+prefix, half, even, mod3one, prime and all nine divisor contrasts. For each
+family, parent/child region and every coordinate i=0,...,14, add
+
+  L_(f,r,i)(X) = sum_(t in r(X)) U_i(t) R_f(t).
+
+These are 210 signed relation groups with fixed shared coefficients. Every
+primitive vanishes at x_n=mu(n), so every new relation vanishes for EVERY
+integer scale. Repeated primitive specs are aggregated distributively by
+adding their multipliers; complete pre-aggregation coverage remains in the
+archives. Empty groups retain their descriptor positions. The gamma-zero
+auxiliary appends 210 empty groups, with zero added gamma coefficients.
+
+All 366 old square groups, 403 old relation groups, the three full15 matrix
+blocks and the original target are retained. The new relation count is
+613. This is a grouped subspace of the arithmetic ideal, not the complete
+ideal. A coefficient cannot vary with the individual primitive, t or X.
+
+The producer constructs suffix multipliers; the independent checker
+reconstructs forward sums over t using independent primitive arithmetic.
+Their complete source constructions agree on development scales 1,2,3,5.
+The producer can omit a redundant expanded-polynomial metadata hash after
+a small metadata work allowance; the independent checker expands it fully.
+Search archive hashes exclude only this optional polynomial_sha256 field.
+Complete semantic archives, native polynomial groups, primitive sources
+and multiplier sources remain separately bound and independently rebuilt.
+
+Scalar scope and recovery
+
+The formal state constant vector is z=(1,0^5,(-1/2)^9). The seven aggregate
+relation constants are -1, -SF(t), pi(t), 0, 0, 0, 0. Therefore the formal
+constant of L_(f,r,i) is z_i times the corresponding regional sum. This
+formal coefficient is distinct from the actual initial arithmetic state.
+
+There is an explicit elementary quadratic bound for fixed signed weights
+beta. Set u_r=sum_i |beta_(unit,r,i) z_i| and
+n_r=sum_i (|beta_(norm,r,i) z_i|+|beta_(prime_power,r,i) z_i|).
+Using SF(t)<=t and pi(t)<=t gives, for integer X>=1,
+
+  |B_beta(X)| <= X u_parent + 2X u_child
+       + (3X^2-X)/2 n_parent + (6X^2-X) n_child
+    <= (u_parent+2u_child+3n_parent/2+6n_child) X^2.
+
+No prime-distribution estimate is used in this budget. For fixed
+coefficients it is compatible with an X^(2+1/q) critical allowance, but
+does not establish the nonconstant polynomial identity or signed bound.
+The new quadratic term cannot cancel the old cubic gamma term under the
+previous fixed-template scalar-growth hypotheses. Gamma-zero remains a
+conditional necessary gate, not a theorem about all possible RH proofs.
+
+Storage remains a signed child-minus-four-parent increment. With PSD K,
+R=e_prefix e_prefix^T+K, so S_R dominates the prefix energy. Initial cost
+is still 1+u^T K u for the actual t=1 state u. A successful proof still
+requires a uniform identity and innovation budget at all needed scales,
+the appropriate cofinal q family and the previously recorded energy/Mellin
+bridge conditions. Finite tests cannot discharge those quantifiers.
+
+Exact diagnostic
+
+primitive-state-localizer-probe-001 froze 81 sources and passed 22 prescore
+tests. It tested EVERY new relation against the publication009 exact dual,
+after exact coefficient cancellation in each complete column. Its result:
+
+  family             violated   annihilated   missing moments
+  unit                     30             0                 0
+  norm                     28             2                 0
+  prime_power              28             2                 0
+  squarefree_zero          28             2                 0
+  inverse_row              28             2                 0
+  coprime_product          10             2                18
+  gcd_product               0             2                28
+  TOTAL                   152            12                46
+
+There are 1793 unique missing coordinates. Missing coordinates remain
+unknown, never zero. Signed relations require exactly zero pairing; any
+known nonzero pairing invalidates the old witness for the expanded cone.
+In particular unit identities also violate the witness. Part of this
+improvement concerns grouped scale coverage, not unknown prime signs or
+prime correlations. None of these counts proves target feasibility.
+
+The diagnostic used no new floating optimization. It charged 523326
+construction operations, took 15.8255 worker seconds and peaked at
+226128 KiB. The independent whole-archive audit rebuilt all sources and
+all 210 exact columns; it passed. The admitted result SHA256 is
+0bd81955cb22e7d80bedac9ffbb88523cd89ab8288b293fda727e45373edba0e.
+
+Full expanded search and numerical failure
+
+primitive-state-localizer-search-001 froze 92 sources and passed 34
+prescore tests. The declared grid is the historical development set
+1,2,3,5 plus the gamma-zero auxiliary, with q=6 and C=32. These are not
+unseen arithmetic data. All 210 groups were included, including all 46
+that had missing coordinates in the old-witness diagnostic.
+
+The complete system has 5641 moment coordinates and 1957 columns:
+1597 scalar columns and all 360 full15 matrix columns. The dual numerical
+proposer removes only the 105 algebraically redundant storage cross
+equations, leaving 1852 restricted columns and 1853 equations on 11698
+nonnegative split-moment/slack variables. Its floating matrix has 1684238
+nonzero entries. Full exact admission would still check every original
+column and all PSD moment matrices.
+
+HiGHS returned status4, reporting an unknown model status and infeasible
+primal status, without a support vector. The dual result is UNCERTIFIED.
+It took 121.5792 worker seconds and peaked at 864740 KiB. Its complete
+prepared-domain and numerical-status checkpoint was retained. No native
+exact reconstruction ran, and no exact infeasibility claim is made.
+
+The deterministic protocol then attempted the primal SDP with complete
+sources and row normalization. CLARABEL raised SolverError and supplied
+no vector; the primal result is also UNCERTIFIED. It took 96.6809 worker
+seconds and peaked at 798268 KiB. No reconstruction or PSD certificate
+was produced. Therefore there was no fixed candidate and the final-scale
+transfers at 8 and 13 were not run.
+
+Both workers used one numerical thread. They stayed below the 6 GiB
+worker/total memory limit and below the 360 cooperative/1200 external
+second limits. The 450-million exact work ceiling was unchanged. User
+authorization for 16 GiB if memory limits progress and for longer runtime
+persists; these failures do not establish that either limit was binding.
+
+The separate whole-stage audit rebuilt the source instances, arithmetic
+archives, complete checkpoint geometry and branch decisions. It verified
+all source/input/terminal hashes and actual resource declarations, and
+correctly admitted neither failed proposal as a mathematical result.
+That audit passed before publication. Its success certifies the record
+and scope of the failures, not feasibility or infeasibility of the cone.
+
+Workflow and immediate next task
+
+Sol 6.1 agents handled substantial independent producer/checker work for
+the arithmetic expansion. Integration, diagnostic execution, frozen full
+search, whole-archive audit and publication were done in the main thread.
+Only new files and new archives were created; previous frozen evidence
+was preserved.
+
+Before enlarging the mathematical grammar again, repair numerical
+proposal reliability on this SAME cone. Exact zero/proportional row
+compression and exact row scaling are legitimate candidate transformations
+if complete mappings and solver diagnostics are retained, all relevant
+resource work is accounted for, and final admission still reconstructs
+every original coefficient and PSD constraint. Do not infer rank from a
+floating cutoff or discard unfavorable source groups. New backend and
+independent-checker work may proceed in parallel; freeze every new complete
+protocol and calibration result before research scoring.
+
+After an exact finite candidate is obtained, the next mathematical task
+is an analytic uniform proof with the required scalar budget and recovery
+quantifiers. If a new exact separator is obtained, use it to test systematic
+arithmetic refinements without tailoring the source family to favorable
+moments. The mixed grid including 3 and 5 remains distinct from a purely
+dyadic law. Neither a finite-grid separator nor a numerical solver failure
+is a counterexample to actual Mobius cancellation.
+
+publication010 binds the diagnostic and failed search, both independent
+audits, their complete source closures, this note and the scope note, and
+publication009's manifest/report. Earlier publications remain immutable.
+global_bound_proved=False; RH_proved=False; the research goal remains active.

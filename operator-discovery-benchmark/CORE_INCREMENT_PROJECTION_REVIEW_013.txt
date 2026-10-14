@@ -1,0 +1,453 @@
+EXACT ANNULAR PROJECTION, PAID DETAIL AND SIGNED COARSE ARITHMETIC
+
+Scope and status
+----------------
+Only this new analytical memo is written. The published transport/control
+obligation, frozen code/results, earlier reviews and source artifacts are
+read-only. No numerical source evaluation, experiment, test, rescore or
+hash is performed. All units, complete prime/composite/valuation terms,
+centering and original recovery costs remain. No uniform signed core
+recurrence or RH proof is claimed.
+
+The proposed exact detail payment is sound with the stated constants.
+For r<1/2 it is uniformly bounded; r1/2 has a log-cubed payment. A further
+component theorem proves that zero-cell-mean detail has an improved Mellin
+strip, so the known critical pole cannot be hidden in this paid sector.
+The remaining means are exact full-prefix arithmetic ramp kernels. A
+half-delay exposes a genuine smaller-scale coarse covariance plus a paid
+refinement term. Neither its sign nor a closing estimate is proved.
+
+1. Full storage and a globally consistent projection
+----------------------------------------------------
+Let g,G,Bg,D be the complete transported source, prefix, logarithmic bank
+and F-G error of011/012. In particular Bg retains every completed-window
+logarithmic mismatch. Fix the storage program
+ U(n)=G(n)+a Q(n),
+ A(X)=X^(-2)sum_(n=X)^(2X-1)[U(n)^2+w Q(n)^2], w>0,
+ Q(n)=n^(-alpha)Z(n),
+ Z=G(floor(n/2)), D(n), or Bg(n)/log(2n), 0<=alpha<=1/3.
+The null auxiliary is the exact E_G baseline. Parameters are fixed program
+constants; none depend on an observed block response.
+
+For dyadic X=2^j choose fixed r in[0,1] and
+ L_X=2^floor(rj), I_i=[X+i L_X,X+(i+1)L_X).
+These complete integer cells partition the whole annulus. Each cell mean
+is the mean of the actual full signal over its L_X integer values. It is
+not a coefficient sum restarted at the cell's left endpoint. Fractional
+n-weights and log denominators are evaluated BEFORE taking means.
+Together the annuli define a single global step-function projection P;
+parent/child observables use this same rule, not a horizon-fitted operator.
+
+For each channel y, write bar y_I=L_X^(-1)sum_(n in I)y(n). Orthogonality
+gives exactly
+ A(X)=S(X)+V(X),
+ S=X^(-2)sum_I L_X[bar U_I^2+w bar Q_I^2],
+ V=X^(-2)sum_I sum_(n in I)[(U(n)-bar U_I)^2
+                                      +w(Q(n)-bar Q_I)^2]>=0. (1.1)
+All internal source signs and target/auxiliary crosses remain inside these
+complete scalar squares. Since P is linear and a is constant,
+ bar U=bar G+a bar Q,
+ E_(PG)(X)<=c S(X), c=1+a^2/w,                            (1.2)
+by the same sharp rational sum-square certificate as012. This is a bound
+for the full projected G, not for a separately centered mode.
+
+For one cell of length L and any real y_i,
+ sum_i(y_i-bar y)^2=L^(-1)sum_(i<j)(y_i-y_j)^2
+ <=sum_(t=1)^(L-1)[t(L-t)/2]*(y_(t+1)-y_t)^2
+ <=L^2/8*sum_internal(Delta y)^2.                         (1.3)
+For the first inequality, Cauchy bounds each difference by(j-i) times
+the sum of its internal squared increments; summing all pairs crossing
+t yields t(L-t)/2 EXACTLY. L1 has zero detail, including the unit cell.
+There is no boundary-jump term between distinct projection cells.
+
+2. Complete coefficient and auxiliary increment bounds
+-------------------------------------------------------
+Use K=37/2 and the verified pointwise transport domination
+ |g(n)|<=|f(n)|<=K d2(n),
+ |f(n)-g(n)|<=|f(n)|<=K d2(n).                            (2.1)
+The second inequality is exact at prime sources and at capacity-limited
+positive destinations, and is zero in rejected windows. It is not a
+generic consequence of the first inequality alone.
+
+For every n>=2, both Z=G(floor(n/2)) and Z=D satisfy
+ |Delta Z(n)|<=K d2(n),
+ |Z(n-1)|<=K(n-1)(1+log(n-1)).
+The half delay changes only at even n, using g(n/2); d2(n/2)<=d2(n).
+The D bound uses the second part of(2.1). The actual negative unit is
+included whenever n/2=1. Differentiating only the elementary n-weight,
+ (n-1)^(-alpha)-n^(-alpha)<=alpha(n-1)^(-alpha-1),
+ (n/(n-1))^alpha<=2^alpha<=2,
+gives
+ |Delta Q(n)|<=K n^(-alpha)[d2(n)+b(1+log n)],
+                              b=2alpha.                 (2.2)
+
+For the log-bank auxiliary write ell_n=log(2n), Z=Bg/ell_n. The full
+discrete identity is
+ Delta Z(n)=g(n)*log n/ell_n
+             +Bg(n-1)[1/ell_n-1/ell_(n-1)].
+Its second term retains the full accumulated bank. From
+ |Bg(n-1)|<=K(n-1)(1+log(n-1))*log(n-1),
+ log(n/(n-1))<=1/(n-1), ell_n>=log4>1,
+one obtains |Delta Z(n)|<=K[d2(n)+(1+log n)]. Also
+ |Z(n-1)|<=K(n-1)(1+log(n-1)).
+Thus(2.2) holds with b=2alpha+1; the proposed b=2alpha+4 is a valid
+conservative certificate. The improvement to1 is only a constant tightening,
+not a claim of a new exponent or an arithmetic signed estimate. At n2 the
+previous bank is Bg1=0. At n1 use the exact cell/unit, never log1 division.
+
+All logarithms in this section are natural; conversion to log2 in the
+payment is performed explicitly below. For every valuation e>=0,
+ (e+1)^2<=binom(e+3,3),
+so d2(n)^2<=d4(n), including all repeated prime valuations. The complete
+elementary convolution count gives
+ sum_(n<=x)d4(n)<=x(1+log x)^3.
+Therefore on internal increments of[X,2X),
+ sum g(n)^2<=2K^2 X(1+log(2X))^3,
+ sum(Delta Q(n))^2
+         <=4K^2(1+b^2)X^(1-2alpha)(1+log(2X))^3.         (2.3)
+The latter uses(d2+bH)^2<=2d2^2+2b^2 H^2. No prime-count hypothesis,
+short-interval cancellation or companion moment estimate is used.
+
+3. Explicit baseline/full detail constants and increment payment
+----------------------------------------------------------------
+Let J=1+log2 X=j+1. Since1+log(2X)<=2J, (1.3),(2.3) yield the baseline
+ V_G(X)<=2K^2 X^(2r-1)J^3.                               (3.1)
+For full storage, Delta U=g+a Delta Q and
+ (Delta U)^2+w(Delta Q)^2
+                         <=2g^2+(2a^2+w)(Delta Q)^2.
+Hence the proposed full certificate is valid:
+ V(X)<=C_V X^(2r-1)J^3,
+ C_V=4K^2[1+(2a^2+w)(1+b^2)].                            (3.2)
+One can retain X^(-2alpha) on the auxiliary contribution in the bracket;
+the common G contribution is still present, so that refinement alone
+does not critically pay r>1/2. Null storage may use the sharper(3.1).
+
+For r<1/2 set delta=1-2r in(0,1]. Uniformly for every integer j>=0,
+ (1+j)^3 2^(-delta*j)<=96/delta^3.                        (3.3)
+For example t=delta log2, z=t(1+j) gives the left side=t^(-3)e^t z^3e^-z.
+The maximum z^3e^-z is27e^-3; e^t<=2, log2>1/2 and e>=2 give a bound
+54/delta^3, stronger than the conservative96. Thus V is uniformly bounded
+by96 C_V/delta^3. At r1/2 it is paid by C_V J^3. Larger r is UNPAID by
+this certificate, not analytically refuted as a possible different route.
+
+For rho>=0, exactly
+ A(2X)-rho A(X)=S(2X)-rho S(X)+V(2X)-rho V(X)
+                         <=S(2X)-rho S(X)+V(2X).          (3.4)
+The child payment is bounded as above for r<1/2; at r1/2 it is at most
+8 C_V J^3, because1+log2(2X)=J+1<=2J. A proposed universal mean recurrence
+with a fixed-polynomial log forcing therefore recovers the full storage
+and original core, using012 and the unchanged transport error50 X^(2theta-5/3).
+At every block, directly
+ E_F(X)<=2c S(X)+2c V(X)+50 X^(2theta-5/3).               (3.5)
+
+This DOES NOT prove a previously fitted constant1 degree2 recurrence.
+For r1/2 the generic detail budget has degree3; a mean degree2 step plus
+this payment gives a cofinal theorem with the larger degree, not the old
+degree2 constant. For r<1/2 the payment is constant but still consumes an
+explicit amount of the forcing budget. A frozen fitted C cannot be silently
+enlarged while reporting the same selected hypothesis as proved.
+
+4. Zero-cell-mean Mellin improvement and coarse pole rejection
+--------------------------------------------------------------
+Set h(n)=G(n)-PG(n), using the global annular projection, and extend it
+constantly on every real unit cell[n,n+1). On each projection cell I,
+ EXACT integral_I h(x)dx=sum_(n in I)h(n)=0.
+From(3.1), its annular absolute mass satisfies
+ integral_X^(2X)|h(x)|dx<=sqrt X*(sum h(n)^2)^(1/2)
+                                  <=sqrt(2)K X^(r+1)J^(3/2). (4.1)
+In M_h(s)=integral_1^infinity h(x)x^(-s-1)dx, subtract the value of
+x^(-s-1) at each cell's left endpoint. The constant-weight term vanishes
+EXACTLY. The variation of the remaining weight is O_s(L_X X^(-sigma-2)).
+Thus the whole annulus contributes
+                        O_s(X^(2r-sigma-1)J^(3/2)).      (4.2)
+On any compact set with Re(s)>2r-1 the bound is uniform, and its dyadic
+sum converges normally. Individual finite-cell integrals are entire in s.
+Consequently M_h is holomorphic in
+                              Re(s)>2r-1.               (4.3)
+This is an exact step-extension result, not an endpoint quadrature, a
+weighted-mean substitution or an assumption of oscillatory cancellation.
+
+For theta<5/6, transport D has Mellin transform holomorphic past the
+critical line by011. At theta5/6, |D(x)|<=5sqrt x gives
+                |M_D(rho+epsilon)|<=5/epsilon            (4.4)
+for any fixed critical rho=1/2+i tau and epsilon>0. For r<=1/2, (4.3)
+includes a neighborhood of rho; indeed r<3/4 already suffices. Since
+ F=PG+h+D, its original meromorphic Mellin transform equals
+                         M_F=M_PG+M_h+M_D.
+If the separately verified original witness has pole order m>=2 with
+nonzero leading coefficient, neither the analytic h term nor the possible
+O(1/epsilon) D term can conceal its epsilon^-m radial growth. This does
+not assert meromorphic continuation of g at theta5/6.
+
+By(1.2), a uniform S=O(J^p), p>=0, implies E_PG=O(J^p). Shell Cauchy
+then bounds M_PG(rho+epsilon) by O(epsilon^(-1-p/2)). Hence necessarily
+                              p>=2m-2;                  (4.5)
+in particular p>=2 for the known double-pole witness. This is stronger
+than using the loose V log^3 payment to allow a fake bounded S. The gate
+uses the original bound witness and its source facts, not a finite pole
+fit. It remains valid at theta5/6. It also applies to r2/3 as a pole gate,
+although(3.2) does not pay that r's positive-power detail for recovery.
+At or above r3/4, this Mellin estimate does not supply the same neighborhood;
+no extension of the gate is inferred merely by changing a parameter.
+
+4A. Source-specific analytic recovery at r2/3: a separate conditional rule
+-------------------------------------------------------------------------
+An unpaid ENERGY detail is not necessarily an analytically false operator.
+At r2/3, (4.3) makes M_h holomorphic for Re(s)>1/3, despite(3.1)'s
+positive-power energy envelope. Suppose the genuinely OPEN full coarse
+leaf is established: S(X)=O_epsilon(X^epsilon) for EVERY epsilon>0.
+Then (1.2) and shell Cauchy make M_PG holomorphic for Re(s)>1/2. For a
+cofinally paid transport, M_D is also holomorphic in that open half-plane,
+including theta5/6. Consequently M_F and its complete source Dirichlet
+series D_f(s)=s M_F(s) are holomorphic there. Initial equality holds in
+Re(s)>1; this is ordinary analytic continuation, not a claimed coefficient
+tail convergence at s2/3.
+
+For THIS complete source AST,
+ D_f(s)=zeta(s+1/3)*[beta/zeta(s)^2
+             -beta/(zeta(s)zeta(s+2/3))-R_u/zeta(s+2/3)]
+             -beta/zeta(s).                              (4A.1)
+The real s2/3 pole is exactly canceled by the already verified R_u.
+Holomorphy in Re(s)>1/2 forces RH by a self-contained rightward-extremal
+zero argument. If any offcritical zeros existed, let B>1/2 be the supremum
+of their real parts, bounded by1. Choose one rho with
+ Re(rho)>max(1/2,B-1/3). Then zeta(rho+1/3) is nonzero because its real
+part exceeds B; it is finite since a nontrivial zero is not real, so this
+argument is not the zeta pole1. Also zeta(rho+2/3) is finite and nonzero
+by the absolutely convergent Euler product in Re(s)>1. If rho has
+multiplicity m>=1, the first term in(4A.1) has an uncanceled pole of
+order2m with nonzero leading coefficient. All other terms have order
+at most m or are regular. This contradicts the established holomorphy.
+Thus no zeros lie right of1/2; the functional equation supplies the
+corresponding left-side exclusion. No rightmost zero need be attained.
+
+This proves a CONDITIONAL qualitative RH bridge for the open coarse leaf
+at r2/3 (and any r<3/4), with its complete source binding. It does not
+prove that leaf, prove RH unconditionally or quantitatively pay V's energy.
+The numerical energy backend's r<=1/2 admission remains unchanged.
+
+For an automated analytic-lane certificate the sufficient hypotheses are:
+the complete actual f AST agrees with its coefficient Dirichlet series in
+Re(s)>1; its unique highest inverse power of zeta(s) has nonzero certified
+scalar coefficient; all its other zeta arguments are fixed STRICTLY positive
+real shifts; the projected G storage has the coercivity(1.2); 2r-1<1/2;
+the transport error is cofinally paid; and the whole coarse leaf is universal,
+not a finite pass. In this particular AST the highest inverse power is2,
+the scalar is beta9/2, and the smallest positive shift is1/3. More generally
+choose a hypothetical zero within that smallest shift of the real-part
+supremum. Every shifted zeta factor is then finite and nonzero there, and
+the unique highest inverse power produces its full order times the zero's
+multiplicity. Exact merging/cancellation of source rows and nonzero leading
+coefficient verification are required before granting that uniqueness flag.
+A rational noninteger zeta power or several tied leading rows require a
+different local argument and are not covered by this integer-order rule.
+The lane is ADMISSIBLE CONDITIONALLY, not an established coarse bound or
+unconditional RH claim. The original full target remains open.
+
+Returning from that conditional RH conclusion to original moments needs
+an explicit growth theorem, not mere holomorphy. A suitable external
+input is the classical RH bound |log zeta(s)|=o(log|t|), uniformly on each
+fixed strip Re(s)>=1/2+eta; it yields both zeta(s) and1/zeta(s)=O_eta,epsilon
+((1+|t|)^epsilon), away from the bounded-height pole neighborhood. A primary
+modern proof is Aleksander Simonic, "Estimates for L-functions in the
+Critical Strip Under GRH with Effective Applications" (2023), Theorem1,
+especially its log-modulus bound; the introduction also states Littlewood's
+fixed-strip result. Source:
+https://link.springer.com/article/10.1007/s00009-023-02289-2
+The absolute bound on complex log controls its real part with BOTH signs,
+so the reciprocal bound is not silently inferred from an upper bound for
+|zeta| alone. Above the1-line the Euler product gives the needed bounds.
+
+For clarity the remaining standard Perron step can be made explicit.
+Under that RH growth input, (4A.1) is O_eta,epsilon(T^epsilon) on fixed
+vertical strips to the right of1/2 at large height; the compensated real
+pole lies in a bounded-height analytic region. Its coefficients obey
+|f(n)|<=K d2(n)<<epsilon n^epsilon. Apply truncated Perron at x=N+1/2,
+right edge1+1/log x, height T=x^2, and shift to1/2+epsilon/2. All poles
+inside have been canceled or excluded by RH. Choose the vertical growth
+exponent epsilon/8 for the COMPLETE D_f product. The vertical integral
+is O(x^(1/2+3epsilon/4)log x); horizontal edges and the half-integer
+truncation error are smaller by the coefficient bound. Absorbing log x
+gives F(N)=O_epsilon(N^(1/2+epsilon)), hence all-epsilon cofinal E_F.
+This outlines the explicit growth/recovery bridge; its classical external
+input must be recorded in any analytic certificate and cannot be substituted
+for the missing coarse premise. It promises cofinal moments, not the same
+fixed log-degree or constant as a generated finite recurrence.
+
+Higher-order projection is a future component extension, not an implemented
+or experimentally tested family. If a discrete degree-q orthogonal cell
+projection is used, its residual has vanishing continuous moments through
+degree q under the unit-step extension: each unit-cell integral of x^ell
+is a polynomial in the integer index of degree ell. Subtracting the weight's
+degree-q Taylor polynomial then gives Mellin boundary
+ Re(s)>(q+2)r-(q+1), with the same baseline absolute-mass bound, because
+the higher projection's residual energy is no larger. Tiny rank-deficient
+cells require their actual projection; exact Gram/moment certificates and
+full recovery are still needed. No higher-order energy payment is presumed.
+
+5. Exact full-source mean kernels, not restarted local coefficients
+-------------------------------------------------------------------
+For I=[b,b+L), let
+ w_I(h)=1 for1<=h<b,
+        =(b+L-h)/L for b<=h<b+L,
+        =0 for h>=b+L.
+Then EXACTLY
+ bar G_I=G(b-1)+L^(-1)sum_(v=b)^(b+L-1)(b+L-v)g(v)
+                         =sum_h g(h)w_I(h).              (5.1)
+The old prefix is the first term. Bounding only the local coefficient
+triangle misses the principal unknown contribution, including the unit.
+The three auxiliary means are equally explicit full-support kernels:
+ half_delay: sum_h g(h)L^(-1)sum_(n in I,n>=2h)n^(-alpha),
+ transport_error: sum_h(f(h)-g(h))L^(-1)sum_(n in I,n>=h)n^(-alpha),
+ log_bank: sum_h g(h)log h*L^(-1)
+                              sum_(n in I,n>=h)n^(-alpha)/log(2n). (5.2)
+The log-bank unit has log1=0, while the target's unit in(5.1) is present.
+All finite ramps, heads, floor edges and actual fractional weights remain.
+
+For a genuinely arithmetic convolution form, put u1/3,v2/3 and
+ chi=beta*(mu*mu)-beta*(mu*(mu n^-v))-R_u*(mu n^-v),
+ Z_u(y)=sum_(1<=d<=y)d^-u, zero below1.
+The full original coefficient is f=(n^-u)*chi-beta*mu, including
+chi(1)=-R_u and f(1)=-R_u-beta. Therefore
+ bar G_I=sum_(k<b+L)chi(k)*[L^(-1)sum_(n in I)Z_u(n/k)]
+                 -beta sum_h mu(h)w_I(h)-bar D_I.         (5.3)
+This reduces the means to actual signed divisor/cofactor correlations of
+the complete four-mode core and the paid transport error. It is a finite
+exact convolution, with repeated primes and all center channels present.
+The analytic bracket zero at s2/3 does NOT justify replacing any finite
+chi tail by zero or claiming ordinary convergence there. Such a tail
+estimate would be additional signed arithmetic, not this identity.
+
+For baseline coarse energy its source-pair kernel is
+ S_G(X)=sum_(h,k<2X)g(h)g(k) J_X(h,k),
+ J_X(h,k)=L_X/X^2*sum_(I subset[X,2X))w_I(h)w_I(k).       (5.4)
+The storage has the corresponding joint kernels from(5.2). The signed
+coarse increment uses J_(2X)-rho J_X with its ENTIRE support, including
+cross-band, prime/composite, diagonal and repeated-valuation pairs. A
+positive-semidefinite J_X is not a source-specific contraction for that
+difference. Taking absolute values of its coefficient pairs is an extra,
+stronger route and can reinstate the previous frontier obstructions.
+
+6. Half-delay parent refinement and the remaining signed covariance
+------------------------------------------------------------------
+At alpha0 and every dyadic X>=2, the unprojected exact identity is
+                         E_Q(X)=E_G(X/2)/2.              (6.1)
+Every parent value G(k), X/2<=k<X, occurs twice. This keeps the complete
+parent prefix rather than its increments. At positive alpha the exact
+weights are(2k)^(-2alpha)+(2k+1)^(-2alpha), so only the weighted formula
+and its bounds(2X)^(-2alpha)E_G(parent)/2 through
+X^(-2alpha)E_G(parent)/2 are claimed; (6.1) cannot be reused unchanged.
+
+For projected half delay at alpha0, L_X is either L_parent or2L_parent.
+If it doubles, each child's half-index cell is exactly a parent cell.
+If it stays equal and L_X>=2, the half-index cells refine each parent cell
+into two equal halves. At L_X1 the values are exact and no refinement
+error occurs. Thus, with the appropriate finer parent projection,
+ S_Q(X)=1/2[S_G(X/2)+R_X],
+                          0<=R_X<=V_G(X/2).              (6.2)
+R_X is the exact difference of finer and coarser parent projection energies,
+not a lost floor remainder. It vanishes in the doubling/L1 cases.
+
+Define the complete signed lag covariance
+ C_X=L_X/X^2*sum_I bar G_I*overline_(Ghalf)_I.
+The whole mean storage is
+ S(X)=S_G(X)+2a C_X+(a^2+w)/2[S_G(X/2)+R_X].              (6.3)
+Its increment consequently has a complete smaller-scale decomposition:
+ S(2X)-rho S(X)
+ =S_G(2X)+[(a^2+w)/2-rho]S_G(X)-rho*(a^2+w)/2*S_G(X/2)
+  +2a[C_(2X)-rho C_X]+(a^2+w)/2[R_(2X)-rho R_X].         (6.4)
+The final term is upper-bounded by the paid parent refinement. This is
+a detector-generable mean-covariance primitive with genuine smaller
+arguments, not an assumption that the signed C_X has a favorable sign.
+Its actual arithmetic content is obtained by inserting(5.1),(5.3) into
+the covariance and retaining every cofactor/floor/ramp term. A source-
+specific bound on that joined expression remains OPEN.
+
+Cauchy only gives |C_X|<=sqrt(S_G(X)S_Q(X)); using it to absorb an unknown
+current S_G(2X) requires a proved budget/coercivity condition. One cannot
+assume the current-scale mean bound in order to show its own recurrence.
+The exact parent identity alone is not an induction credit. For the
+transport-error auxiliary, S_Q<=E_Q<=25X^(2theta-5/3-2alpha) is already
+paid when theta<=5/6; its signed cross can be controlled by Young only
+with the explicit target coefficient cost. That lane is a paid-padding
+equivalence, not a new estimate for the unknown coarse common mode.
+
+7. A useful log-jump cancellation and a possible proof-bearing extension
+------------------------------------------------------------------------
+For log_bank alpha0, write Z=Bg/log(2n). Summation by parts gives
+ Z=G-[J_G+log2*G]/log(2n), J_G(n)=integral_1^n G(x)dx/x.
+Therefore mix a=-1 cancels the leading g(n) increment in U=G-Z:
+ Delta U(n)=g(n)*log2/log(2n)
+                      +Bg(n-1)[1/log(2(n-1))-1/log(2n)]. (7.1)
+The first term has an actual1/log gain. This is an exact signed component
+identity, not a whole-storage exponent improvement. Fixed reserve w>0
+retains wZ^2 and its unsuppressed increments, so the full (3.2) payment
+still has the common-mode log^3 contribution. Alpha>0 also removes the
+leading cancellation as n^-alpha tends to zero.
+
+A FUTURE grammar could use two channels
+ U'=G-Z, R'=Z/log(2n), A'=||U'||_X^2+||R'||_X^2.
+This is variable log reserve expressed as a second full scalar, before
+projection. It is not a change to the current frozen grammar or selection.
+Exact pointwise recovery is
+ G^2<=[1+log(2n)^2][U'^2+R'^2],
+ E_F(X)<=2[1+log(4X)^2]A'(X)+50X^(2theta-5/3).            (7.2)
+The additional log^2 recovery cost is explicit; it is not an exponent gain.
+
+For n>=2 the same complete-bank algebra proves, H_n=1+log n,
+ |Delta U'|<=K/log(2n)[d2(n)+H_n],
+ |Delta R'|<=K/log(2n)[d2(n)+4H_n].
+Summing squares on[X,2X), using log(2X)>1 for X>=2, gives at most
+336K^2 X(1+log2X). With(1.3), the whole two-channel detail is paid by
+                     42K^2 X^(2r-1)(1+log2X).            (7.3)
+X1 has zero detail. Thus at critical r1/2 this primitive pays log instead
+of log^3, while recovering the original target with log^2 cost. This is
+a real component improvement supported by exact cancellation/recovery.
+It does not prove an A' or its coarse mean bound; a bounded A' hypothesis
+would merely be compatible with original pole order2, not established.
+For its coarse projection, the varying log weight cannot be pulled outside
+a cell mean: PG=PU'+P[log(2n)R'], not PU'+log(2b)PR'. A mean-only analytic
+route would need the exact corresponding weighted commutator; the pointwise
+whole-energy recovery(7.2) does not silently certify that extra mean rule.
+
+8. Rigorous insufficiency and the remaining proof obligation
+-----------------------------------------------------------
+No cofinal mean theorem follows from the divisor envelope, absence of
+large prime coefficients and orthogonal detail payment alone. For a
+countermodel to THOSE RULES, keep the same fixed negative unit and take
+g(n)=1 on even composites n>=4, zero at every prime and every other n.
+Put D=0. This is not actual f and does not satisfy its complete Euler AST;
+it is used only to audit a purported source-independent implication from
+the above envelope/prime-removal/local-jump rules. It obeys their coefficient
+majorants and unit convention, has G(n)=n/2+O(1), and hence S_G(X) is
+of order X for every r<=1. Its detail is paid at r<=1/2 while its coarse
+mean recurrence cannot have a fixed-polylog forcing with rho<=1.
+
+Thus a proof using only local jump squares, prime singleton deletion or
+positive-semidefinite projection would be missing genuine signed source
+information. The actual four-mode identities can supply that information
+only through a proved joined correlation estimate, with complete complements.
+An absolute prefix estimate yields merely the valid weak reference
+ S(X)<=A(X)<=16K^2[(1+|a|)^2+w]X(1+log2X)^2,
+not a critical cofinal bound. The proper mean kernels expose exactly where
+this positive power must be replaced by signed arithmetic.
+
+The next open lemma can be stated precisely as an all-scale one-sided
+bound for S(2X)-rho S(X) with declared finite head, log forcing and SAME
+global program, using(5.2)-(5.4) or the joint parent covariance(6.4).
+The detector may enumerate that signed ramp/cofactor or parent-pair grammar,
+compile the paid detail/refinement/recovery rules, and reject impossible
+coarse log degrees via(4.5). Its generated uniform coarse leaf remains
+OPEN until actually proved. Finite passes do not establish it.
+
+Final status
+-------------
+Exact A=S+V, complete constant detail envelopes, uniform r<1/2 payment,
+critical log^3 payment, zero-cell-mean Mellin strip, original-pole coarse
+gate, full arithmetic ramp kernels and half-delay refinement identities
+are PROVED. The r2/3 analytic branch has a proved source-specific conditional
+RH bridge and explicit external growth/Perron recovery, not a paid detail
+energy certificate or a closed coarse leaf. The future logreserve primitive has proved component payment
+and explicit recovery cost, but no closed mean estimate. Actual full-core
+coarse signed control, the original target and RH remain OPEN. No numerical
+source experiment or test was performed; only this new memo was written.

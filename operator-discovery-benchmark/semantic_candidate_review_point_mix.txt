@@ -1,0 +1,331 @@
+Point-factor mixtures: exact algebra and remaining signed estimates
+
+Scope and disposition
+
+This is a new analytical memo, separate from the frozen pilot002 run. I read
+only the source_mixture program payloads and source-free semantic annotations
+for generation0 IDs9..16, the frozen soundness memo, and, at root's request,
+the program payload of final mutation64. No training constants, response
+scores, evidence values or final responses were read. No source tables,
+arithmetic probes, tests, hashes or frozen-file edits were performed.
+
+There are useful exact reductions: ID15 admits a discrete integration-by-parts
+identity because its point source is the increment of M at the same index.
+Mutation64 admits an even/odd pairing and a coprime-product reduction to
+mu(n(2n+1)). Neither reduction closes a uniform signed estimate. The root-point
+mixtures admit exact root-block Abel summation but have unresolved weights.
+All eight original mixtures, and mutation64, are bounded above by fixed finite
+combinations of the original energy at nearby dyadic scales. This is a useful
+comparison theorem, not bounded padding and not a proof of the desired energy
+bound. It gives no candidate-specific all-scale advantage for free.
+
+universal_estimate_verified = false
+global_bound_proved = false
+RH_proved = false
+
+Notation and complete candidate inventory
+
+M(u)=sum_{1<=n<=u} mu(n), M(0)=0, chi(u)=mu(u)^2. All arguments below are
+nonnegative integers, and a point mu(0) is never requested. Put
+
+  L_d(t)=M(floor(t/d)), a_k(t)=mu(floor(t^(1/k))),
+  [F]_X=X^-2 sum_{t=X}^{2X-1} F(t), E(X)=[M(t)^2]_X.
+
+The actual programs, each with one state of weight1, are
+
+  ID9:  U=M-a_2 L_2.       ID10: U=M+a_2 L_3.
+  ID11: U=M-a_3 L_2.       ID12: U=M+a_3 L_3.
+  ID13: U=M-a_6 L_2.       ID14: U=M+a_6 L_3.
+  ID15: U=M-mu(t)L_2.      ID16: U=L_2+a_3 L_3.
+
+Every potential is V(X)=[U(t)^2]_X, with W(X)=E(X)+V(X). In particular, IDs
+9..15 have W(1)=2, whereas ID16 has W(1)=1. These follow from M(1)=mu(1)=1
+and L_2(1)=L_3(1)=0; the initial contribution is retained, not fitted away.
+
+No listed state depends explicitly on X. Consequently its child at 2X uses
+the same global function U(t), evaluated on the fresh block 2X<=t<4X, with
+normalization (2X)^-2. There is no parameter-change correction K in the
+soundness memo's frozen-parameter decomposition. The entire block transport
+still remains; this observation does not cancel root-selector changes in t.
+
+Exact lag bookkeeping, including the divisor3 endpoint issue
+
+Write H_d(X)=[L_d(t)^2]_X. For every positive integer X,d,
+
+  H_d(X)=X^-2 sum_{n=floor(X/d)}^{floor((2X-1)/d)} m_{d,X}(n) M(n)^2,
+  m_{d,X}(n)=max(0,min(2X-1,dn+d-1)-max(X,dn)+1).
+
+This is an exact count of the original t-domain. If d divides X it gives
+H_d(X)=E(X/d)/d. Thus H_2(X)=E(X/2)/2 for dyadic X>=2. H_3(X) is NOT exactly
+E(X/3)/3 on any dyadic X: both endpoint multiplicities must be retained.
+For dyadic X>=4, the n-domain for H_3 is contained in [X/4,X-1], and every
+multiplicity is at most3. Partitioning this interval into the two dyadic
+blocks gives the unconditional comparison
+
+  H_3(X) <= (3/16)E(X/4)+(3/4)E(X/2).                 (1)
+
+This bound uses positivity only. Its right side is unresolved original
+energy, so it cannot be invoked as an independent subpower estimate.
+
+IDs9..14: diagonal masks, signed root-block correlation, and Abel identity
+
+For the pair (k,d) and sign s in the inventory, define
+
+  B_{k,d}(X)=[chi(floor(t^(1/k))) L_d(t)^2]_X,
+  C_{k,d}(X)=[mu(floor(t^(1/k))) M(t)L_d(t)]_X.
+
+Then exactly
+
+  V=E+B_{k,d}+2s C_{k,d},       W=2E+B_{k,d}+2s C_{k,d}.       (2)
+
+The diagonal is a squarefree gate on a macroscopic lag prefix. The odd source
+sign persists in C; factoring it out of the complete state would change U.
+There is no small-root prefix M(floor(t^(1/k))) in these states. A bound for
+that standalone prefix square does not bound their mixed term or diagonal.
+
+Here is a requested-domain Abel reduction of C. Let
+
+  l=floor(X^(1/k)), h=floor((2X-1)^(1/k)),
+  J_r=[max(X,r^k), min(2X-1,(r+1)^k-1)],
+  B_r^*=sum_{t in J_r} M(t)L_d(t),       l<=r<=h.
+
+All intervals are inclusive and nonempty. Then
+
+  X^2 C_{k,d}(X)=sum_{r=l}^h mu(r)B_r^*
+    =M(h)B_h^*-M(l-1)B_l^*
+       -sum_{r=l}^{h-1} M(r)(B_{r+1}^*-B_r^*).       (3)
+
+The truncated first/last intervals are essential. The same formula on the
+child uses l=floor((2X)^(1/k)), h=floor((4X-1)^(1/k)), and its own intervals.
+The weights B_r^* are signed sums of products of large prefixes; no monotonicity
+or bounded total variation has been established. In particular,
+
+  Delta_t(M(t)L_d(t))
+    =mu(t+1)L_d(t)+1_{d divides t+1}mu((t+1)/d)M(t+1).
+
+Thus transferring variation to the weights reintroduces signed prefix/source
+products. Treating their variation as harmless would be an extra theorem.
+The endpoints in (3) can already have normalized size O(X) under |M(u)|<=u:
+the root factor contributes O(X^(1/k)), a root block has length
+O(X^(1-1/k)), and the product of macroscopic prefixes is O(X^2).
+This is a cost estimate, not a lower bound or an assertion of actual growth.
+
+The direct unconditional bound is
+
+  0<=B_{k,d}<=H_d,  |C_{k,d}|<=sqrt(E B_{k,d}),
+  2|C_{k,d}|<=epsilon E+epsilon^-1 B_{k,d} (epsilon>0).     (4)
+
+It does not supply cofinal-q cancellation. Multiplicativity cannot simply
+replace mu(r)mu(n) by mu(rn) throughout either prefix: coprimality is not
+imposed on the summation domains. The complements and shared-prime cases
+would have to be kept. The root block relation itself gives no such condition.
+
+The precise remaining candidate-specific signed obligation is a uniform
+upper estimate for
+
+  2(E(2X)-E(X))+(B_{k,d}(2X)-B_{k,d}(X))
+       +2s(C_{k,d}(2X)-C_{k,d}(X)),                    (5)
+
+for the fixed (k,d,s) of the selected candidate, with no independent dropping
+of diagonals or correlations. Equation (3) is an alternative exact form for
+the last term, not a bound for it. Changing k from2 to3 to6 changes the root
+blocks and correlation problem; it does not change the sign of (5) by algebra.
+
+ID15: same-index source gives a stronger discrete identity
+
+Set F(t)=M(t)^2 and L(t)=L_2(t). Since M(t)-M(t-1)=mu(t),
+
+  2mu(t)M(t)=F(t)-F(t-1)+chi(t),
+  (M(t)-mu(t)L(t))^2
+    =F(t)-L(t)(F(t)-F(t-1))+chi(t)(L(t)^2-L(t)).       (6)
+
+For a=X,b=2X-1, summation by parts gives the exact complete block identity
+
+  X^2 V15(X)=sum_{t=a}^b F(t)-L(b)F(b)+L(a)F(a-1)
+    +sum_{n=ceil((a+1)/2)}^{floor(b/2)} mu(n)F(2n-1)
+    +sum_{t=a}^b chi(t)(L(t)^2-L(t)).                 (7)
+
+An empty sum is zero. This formula is valid at X=1 and returns the initial
+V15(1)=1. For dyadic X>=2, L(b)=M(X-1), L(a)=M(X/2), and hence
+
+  V15(X)=E(X)+D15(X),
+  X^2 D15(X)=-M(X-1)M(2X-1)^2+M(X/2)M(X-1)^2
+    +sum_{n=X/2+1}^{X-1} mu(n)M(2n-1)^2
+    +sum_{t=X}^{2X-1} chi(t)(L_2(t)^2-L_2(t)).        (8)
+
+The final sum is nonnegative because M is integer-valued and z(z-1)>=0 for
+every integer z. It is not a favorable negative error. The endpoint terms
+retain their displayed source signs, and the interior sum is a signed
+Möbius correlation against an odd-index energy. Estimating each of these
+pieces independently by |M(u)|<=u gives O(X) after normalization. Any stronger
+bound must exploit their joint cancellation or supply a genuinely stronger
+estimate for these correlations. Their exact representation has cancellations
+forced by positivity of the original square; that does not certify drift.
+
+In this form the remaining drift is 2DeltaE+DeltaD15, with D15(1)=0, not merely
+Delta of a masked lag. In the direct form it is (5) with
+B=[chi(t)L_2(t)^2]_X and C=[mu(t)M(t)L_2(t)]_X, s=-1.
+Equation (8) is a real reduction of that same-index correlation to endpoint
+and half-scale terms; it is not a proof that it is small.
+
+ID16: two macroscopic lags remain coupled
+
+Let B=B_{3,3} and C23=[a_3(t)L_2(t)L_3(t)]_X. Then
+
+  V16=H_2+B+2C23,  W16=E+H_2+B+2C23,
+  |C23|<=sqrt(H_2 B), B<=H_3.                         (9)
+
+The root-block formula (3) also applies here with M(t)L_d(t) replaced by
+L_2(t)L_3(t). Its product increment is
+
+  Delta_t(L_2(t)L_3(t))
+    =1_{2 divides t+1}mu((t+1)/2)L_3(t)
+       +1_{3 divides t+1}mu((t+1)/3)L_2(t+1).
+
+These are two source/prefix correlations rather than a small bounded root
+state. For dyadic X>=2 the exact lag part of its drift is
+
+  DeltaW16=DeltaE+(E(X)-E(X/2))/2+DeltaB+2DeltaC23.    (10)
+
+At X=1 use H_2(1)=0 and H_2(2)=E(1)/2, retaining W16(1)=1.
+No E(X/3)/3 substitution is allowed on the dyadic domain.
+
+Uniform comparison lemma and why naive absorption is circular
+
+The elementary inequality (A+B)^2<=2A^2+2B^2 gives, for dyadic X>=4,
+
+  E<=W9,W11,W13,W15<=3E(X)+E(X/2),
+  E<=W10,W12,W14<=3E(X)+(3/2)E(X/2)+(3/8)E(X/4),
+  E<=W16<=E(X)+(5/2)E(X/2)+(3/8)E(X/4).             (11)
+
+All displayed comparisons are actual-mu unconditional statements, but their
+right sides are unresolved target energies. The finitely many smaller scales
+are retained through their actual initial/finite definitions. Neither (4)
+nor (11) gives a contraction of child W by parent W: bounding positive child
+energy by unknown child energy cannot be called absorption. Pointwise W>=E
+also does not order DeltaW and DeltaE.
+
+There is a precise conditional equivalence. For any one of these fixed
+candidates, the required cofinal-q drift bound implies dyadic E(X)=O_epsilon
+(X^epsilon) for every epsilon>0 by the telescoping lemma, with its W(1)
+unchanged. Conversely, if those bounds for the original E are independently
+known, (11) gives W(X)=O_epsilon(X^epsilon). Since W(X)>=0,
+DeltaW<=W(2X), giving the required drift for every cofinally large q (indeed
+every positive q) by choosing epsilon=1/q. Constants may depend on q and the
+fixed candidate, never on X. This is an equivalence of theorem strength, not
+a circular proof of either side and not an impossibility theorem for a new
+signed-potential proof.
+
+The original all-scale premise remains: one fixed program, some q0, and for
+every integer q>=q0 a finite Cq independent of every dyadic X>=1 such that
+DeltaW<=Cq ceil(X^(1/q)). Telescoping yields
+
+  E(X)<=W(1)+2Cq (X^(1/q)-1)/(2^(1/q)-1).
+
+A fixed positive power loss, including the O(X) trivial bounds above, cannot
+close that cofinal requirement. No finite training or selector exposure can
+replace it.
+
+An algebraic obstruction to proof from norms and syntax alone
+
+Replace the source formally by the constant sequence1, so its prefix is t.
+This is not actual mu and supplies no counterexample to the desired theorem.
+It is a symbolic test of which hypotheses a proposed absorption uses. All
+bounded-source and square/ring inequalities still apply. IDs9,11,13,15 then
+have U=t-floor(t/2)=t/2+O(1); IDs10,12,14 have U=t+floor(t/3)=4t/3+O(1);
+ID16 has U=floor(t/2)+floor(t/3)=5t/6+O(1). Symbolic summation gives
+
+  E_one(X)=(7/3)X-3/2+1/(6X),
+  W_one(X)=(7/3)(1+c^2)X+O(1),
+
+with c=1/2,4/3,5/6 respectively. Hence their signed drifts have a strictly
+positive linear leading term and violate any q>1 subpower bound. Consequently
+no argument using only these ring identities, positivity and |source|<=1
+can prove cofinal cancellation. Such an argument must use actual Möbius
+arithmetic beyond the retained algebra. This calculation is a symbolic
+identity/asymptotic derivation, not a numerical probe or source table.
+
+Selected mutation64: quotient commutator, pairing and polynomial correlation
+
+The separately requested final program64 is exactly
+
+  U64(t)=mu(t)*1_{floor(t/2)>=1}M(floor(t/4))
+        -mu(max(1,floor(t/2)))*M(floor(t/2)).
+
+At t=1 both prefixes are zero; no mu(0) is evaluated. Thus V64(1)=0 and
+W64(1)=1. For t>=2 put n=floor(t/2), A_n=M(floor(n/2)), B_n=M(n).
+For a dyadic block X=2Y, n ranges Y<=n<=2Y-1 and both t=2n,2n+1 occur.
+Actual Möbius multiplicativity gives
+
+  mu(2n)=-1_{n odd}mu(n), gcd(n,2n+1)=1,
+  mu(n)mu(2n+1)=mu(n(2n+1)),
+  U64(2n)=-mu(n)(B_n+1_{n odd}A_n),
+  U64(2n+1)=mu(2n+1)A_n-mu(n)B_n.                  (12)
+
+For even n, mu(2n)=0; the formula remains correct when n is nonsquarefree.
+Expanding both squares and adding, the exact full paired square is
+
+  D_n+2[1_{n odd}chi(n)-mu(n(2n+1))]A_n B_n,
+  D_n=[1_{n odd}chi(n)+chi(2n+1)]A_n^2+2chi(n)B_n^2. (13)
+
+Therefore V64(2Y) is (4Y^2)^-1 times the sum of (13) over the stated n-range.
+The coprime product reduction is an actual arithmetic simplification. Its
+remaining source is Möbius on the quadratic polynomial n(2n+1), weighted by
+two dependent macroscopic prefixes. An unweighted polynomial-source estimate
+would not by itself control this weighted correlation. For odd n the bracket
+in (13) is nonnegative, but A_n B_n has no justified uniform sign. Even n
+retains an additional signed bracket. Neither term may be dropped.
+
+A second exact form makes the summation-by-parts limitation explicit. Put
+
+  F_n=M(n)^2, p_n=mu(2n)+mu(2n+1), K_n=A_n p_n,
+  a=Y, b=2Y-1.
+
+Since 2mu(n)M(n)=F_n-F_{n-1}+chi(n), (13) can equally be written
+
+  D_n-K_n(F_n-F_{n-1})-K_n chi(n).
+
+Summation over a<=n<=b consequently gives
+
+  (2Y)^2 V64(2Y)=sum D_n-K_b F_b+K_a F_{a-1}
+      +sum_{n=a}^{b-1} F_n(K_{n+1}-K_n)-sum K_n chi(n).       (14)
+
+All unqualified sums in (14) run a..b. Here p_n=M(2n+1)-M(2n-1) is a
+two-increment source sum, not a smooth positive weight. Its next difference
+is a four-source signed expression, while A_{n+1}-A_n contains half-scale
+Möbius increments. Thus (14) exchanges the quadratic polynomial correlation
+for endpoint and higher difference correlations; it does not eliminate it.
+Endpoint costs may be O(X) after normalization under trivial prefix bounds.
+Taking a first moment of U rather than its complete square would omit precisely
+these mixed terms and supplies no bound for the required second moment.
+
+For dyadic X>=4 the unmasked quarter-prefix identity is
+H_4(X)=E(X/4)/4. Applying the norm inequality before any source cancellations
+gives the unconditional comparison
+
+  0<=V64(X)<=2H_4(X)+2H_2(X)
+              =E(X/4)/2+E(X/2),
+  E(X)<=W64(X)<=E(X)+E(X/2)+E(X/4)/2.                (15)
+
+The gated source diagonals in (13) are not these unmasked exact lag energies;
+(15) is a bound, not equality. It extends the conditional equivalence following
+(11) to mutation64, with W64(1)=1. The exact remaining drift is DeltaE plus
+the child-minus-parent normalized sum of (13), or equivalently (14). At child
+2X its n-range is X..2X-1 and normalization is (2X)^-2; at parent X the range
+is X/2..X-1 and normalization X^-2. Both dependent weighted correlations and
+all diagonals/endpoints must therefore be estimated together.
+
+What this analysis actually supplies
+
+ID15's integration-by-parts reduction and mutation64's coprime pairing are
+candidate-specific lemmas suitable for a proof queue. IDs9..14 and ID16 have
+explicit root-block Abel representations, with no hidden endpoint deletion.
+The common unconditional result is domination by nearby unresolved energies,
+with the divisor3 boundary problem handled exactly. None is certified bounded
+padding, a simple unmasked lag identity for the full V, or a signed innovation
+estimate at cofinal q. No candidate preference is inferred from these lemmas.
+The complete original target E, W(1), fresh child block, and cofinal quantifier
+remain in every proposed proof obligation. Further progress requires an
+actual uniform weighted correlation/absorption theorem; using the desired
+Mertens energy bound as its premise would only recover the conditional
+equivalence already proved here.

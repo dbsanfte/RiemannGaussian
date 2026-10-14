@@ -1,0 +1,277 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_limit_bytes": 17179869184,
+  "bound_candidates": 1985,
+  "decay_weight_operations": 19350403,
+  "development_operations": 3264327,
+  "elapsed_seconds": 7.583495658996981,
+  "final_comparison_operations": 10329984,
+  "finite_final_statuses": {
+    "FINITE_PASS": 98
+  },
+  "forms": 397,
+  "grammar_operations": 1635,
+  "hashes_used": false,
+  "independent_checker_operations": 579464675,
+  "independent_final_source_values": 140,
+  "largest_individual_worker_peak_rss_kib": 37364,
+  "new_frozen_source_count": 16,
+  "new_producer_atoms_evaluated": 0,
+  "old_scientific_studies_replayed": false,
+  "parent_peak_rss_kib": 704032,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12
+  ],
+  "selected": [
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": true,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "insertion_energy_0000",
+        "lambda": "0",
+        "support": []
+      },
+      "id": "insertion_energy_0000_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "insertion_energy_0001",
+        "lambda": "1/4",
+        "support": [
+          1
+        ]
+      },
+      "id": "insertion_energy_0001_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "id": "insertion_energy_0004",
+        "lambda": "1/4",
+        "support": [
+          2
+        ]
+      },
+      "id": "insertion_energy_0004_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "id": "insertion_energy_0007",
+        "lambda": "1/4",
+        "support": [
+          3
+        ]
+      },
+      "id": "insertion_energy_0007_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "id": "insertion_energy_0010",
+        "lambda": "1/4",
+        "support": [
+          4
+        ]
+      },
+      "id": "insertion_energy_0010_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "id": "insertion_energy_0013",
+        "lambda": "1/4",
+        "support": [
+          5
+        ]
+      },
+      "id": "insertion_energy_0013_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    },
+    {
+      "C": "128",
+      "RH_proved": false,
+      "RH_refuted": false,
+      "counterexamples": [],
+      "delta": "1",
+      "finite_status_counts": {
+        "FINITE_PASS": 14
+      },
+      "form": {
+        "baseline": false,
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "id": "insertion_energy_0016",
+        "lambda": "1/4",
+        "support": [
+          6
+        ]
+      },
+      "id": "insertion_energy_0016_delta_1",
+      "status": "OPEN_AFTER_FINITE_DRIFT_TESTS",
+      "uniform_drift_proved": false,
+      "uniform_target_bound_proved": false
+    }
+  ],
+  "source_producer_counts": {
+    "operations": 10125784,
+    "peak_bytes_estimate": 38461688,
+    "total_primitive_counts": {
+      "boolean_product_pairs": 61,
+      "difference_entries": 384003,
+      "filter_terms": 5943,
+      "mask_entries": 174938,
+      "prefix_entries": 524814,
+      "prime_trial_divisions": 855,
+      "source_cache_hits": 0,
+      "source_entries_validated": 384003,
+      "subset_vector_entries": 435178
+    }
+  },
+  "status": "INSERTION_AUXILIARIES_SEARCHED_UNIFORM_DRIFT_OPEN",
+  "training_branches_per_form": 262,
+  "training_operations": 93882560,
+  "training_parent_scales": 131,
+  "uniform_drift_proved": false,
+  "uniform_tail_bounds_checked": 7,
+  "uniform_target_bound_proved": false,
+  "workers": 3
+}

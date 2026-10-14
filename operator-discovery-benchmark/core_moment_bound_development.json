@@ -1,0 +1,16 @@
+{
+  "owner": "root",
+  "modules": [
+    "test_core_moment_bound_search"
+  ],
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout": "operations=4436820\n",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 7.012s\n\nOK\n",
+      "operations": 4436820,
+      "elapsed_seconds": 7.192896916996688
+    }
+  ],
+  "operations": 4436820
+}

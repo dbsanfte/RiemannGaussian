@@ -1,0 +1,105 @@
+STAGE038 COMPLETE: GLOBAL ARITHMETIC IDENTITIES ADDED TO BOUND INPUTS
+
+Result: arithmetic-prefix-relation-results/pilot-001/report.json.
+Machine frontier: arithmetic-prefix-relation-results/pilot-001/bound_search_frontier.json.
+Current continuation, including subsequent analytical review:
+ arithmetic-prefix-relation-results/pilot-001/analytical_followup-001/next_search_input.json.
+The initial unreviewed production input remains at the parent next_search_input.json.
+Status GLOBAL_ARITHMETIC_PREFIX_CONSTRAINTS_VERIFIED_BOUND_OPEN, exit0.
+No uniform signed-core estimate or RH proof is claimed. Accepted033 remains
+unchanged;037 candidate recurrence lemmas remain OPEN.
+
+This stage addresses a specific weakness of the037 proof attempt. Its generic
+coefficient/helper norm countermodels did not obey actual arithmetic source
+identities. Those countermodels reject a weak rule, not the arithmetic bound.
+The detector now generates global source identities as usable proof constraints.
+
+arithmetic_prefix_relations.py reads the source AST. For each shifted Mobius
+atom mu(n)n^(-s), it generates the positive inverse kernel n^(-s). It convolves
+all these kernels, including repeated atoms. Multiplying the original channel
+by that kernel cancels every Mobius factor and leaves its power atoms.
+This produces, from the original four channels:
+ nu0*d2=K,
+ nu1*(One*One_(2/3))=K,
+ nu2*One_(2/3)=K,
+ mu*One=delta.
+The weighted identities preserve beta,-beta,-R_u,-beta without dividing by a
+parameter or dropping a unit. These are source-derived identities, not claims
+of historical novelty or newly established signed cancellation estimates.
+
+The independent checker imports no producer. It replays full Euler factor
+multisets, proving the cancellation at every prime and every valuation. Exact
+Dirichlet convolution then supplies the complete all-integer prefix identity
+ sum_(d<=N)D_j(d) W_j(floor(N/d))
+     = weight_j * prefix(remaining power convolutions)(N).
+The d=1 term, unit, signs, repeated factors, zero horizon and all floor cells
+remain explicit. A runtime compiler instantiates any affordable finiteN with
+exact generalized-power coefficients; no floating powers enter the proof.
+
+The current production checks32 example rows, four channels at eachN in
+0,1,2,3,4,7,16,31. Independent ordered-factorization enumeration checks the
+producer's convolution-table coefficients. These are compiler examples, not
+the reason the identity holds for allN. The universal identity is algebraic.
+
+prefix_relation_bridge.py computes the rational inverse of the checked035
+basis and verifies both products. Weighted channel prefixes W=B^-1 V are
+converted to full generated-state prefixes. Every converted floor row is
+checked. Full prefixes and explicit prime profiles have different types:
+ A_i(t;y)=V_i(1)+sum_(y<p<=t)(V_i(p)-V_i(p-1)) for t>=1,
+ A_i(t;y)=0 for t<1.
+This explicit linkage retains all actual primes, while preventing a false
+substitution of a prime profile for the composite-containing full prefix.
+
+All six037 open lemmas are bound to this source, generated state basis and
+the new exact constraints. The proof-input packet admits multiplication of
+a COMPLETE exact zero relation by a defined real expression. The proposed
+proof goal is a paid-forcing-minus-defect decomposition into a nonnegative
+form plus these exact relation multiples. The full inhomogeneous RHS, all
+floor terms and recovery costs must survive.
+
+Important current limit: automatic multiplier/storage synthesis using these
+global relations is NOT implemented here, and no successful signed-defect
+certificate was produced. The new identities are available proof inputs.
+They must not be counted as an established bound merely because every source
+coefficient satisfies them. This distinction is explicit in the machine flags.
+
+Verification/resources
+Six independent constructor/checker development tests and three coordinate
+bridge tests passed, each in one invocation. Constructor/checker tests used
+synthetic shifted/repeated factors, arbitrary source reorderings, multiple
+power atoms, delta, denominator257, and missing-floor/factor/type mutations.
+The bridge tests checked actual signed vector substitution and rejected lost
+floors, wrong signs, singular inverses and prime/full-prefix type swaps.
+Development constructor/checker work24675 proxy operations; bridge wall time
+0.002s. No numerical source observations or old study/test reruns.
+Actual symbolic production0.1371s; source admission3630, constructor9266 and
+independent relation replay27349 proxy operations. Coordinate checks are
+wall-time accounted rather than included in those proxy counts.
+
+Current files
+ arithmetic_prefix_relations.py
+ check_arithmetic_prefix_relations.py
+ prefix_relation_bridge.py
+ run_arithmetic_prefix_relations.py
+ arithmetic_prefix_relations_protocol.txt
+ ARITHMETIC_PREFIX_RELATIONS_DERIVATION.txt
+All inputs, source bytes, exact relations, instantiated/converted rows and
+development receipts are retained in the result directory. No digest created.
+
+Next: use the actual arithmetic constraints in a generated signed-defect
+certificate search. The analytical assessment of037's finite survivors should
+determine whether their vanishing paid helpers warrant further attention or
+whether the auxiliary/recovery grammar needs a structural change. Improve
+the proof mechanism before refining finite constants or rerunning numerics.
+
+Analytical followup completed
+COUPLED_SCALE_CANDIDATE_REVIEW_037.txt and its JSON companion prove helper
+decay for02/03 and reduce the open recurrence to the complete signed source,
+prime-profile correlation and profile Gram difference, with every parent/child
+cutoff, earlier prefix and unit retained. They establish neither the complete
+recurrence nor an arithmetic counterexample. The analytical lemmas are marked
+reviewed, not admitted executable proof certificates. The followup input links
+these residuals to the global arithmetic frontier, explicitly labels the
+baseline and padding controls, and lowers the priority of finite-C tuning.
+Its next required implementation is storage/relation-multiplier synthesis
+with independently verified positivity, boundaries and initialized recovery.

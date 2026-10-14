@@ -1,0 +1,1092 @@
+PUBLICATION-HISTORY AUDIT, UPDATED 7 OCTOBER 2026
+
+Historical novelty is unresolved for the specific nonlinear transfers,
+canonical linear projection, and their zeta applications. Neither absence of a search hit nor verification
+of a formula establishes that the formula was previously unknown.
+
+Verified prior art used to interpret, not to seed, the early blind search:
+
+1. Hideki Nakaya, On the Generalized Divisor Problem (1993): coefficients
+of zeta(s)^z, so the fractional-root coefficient family is established.
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/0837-09.pdf
+
+2. Wai Yan Pong, Applications of differential algebra to algebraic independence
+of arithmetic functions, Acta Arithmetica 172.2 (2016), section 2: the formal
+convolution exponential/logarithm and prime-basic derivations match the
+operations recovered here. The paper attributes the operators to Rearick,
+Operators on algebras of arithmetic functions, Duke Math. J. 35 (1968),
+761-766. All 31 verified multiplicative-shift laws in this detector are
+instances of the classical prime-exponent recurrence.
+https://www.impan.pl/shop/publication/transaction/download/product/91275
+
+3. Ingrid Popa Fotino, Generalized convolution ring of arithmetic functions,
+Pacific J. Math. 61.1 (1975), 103-116: classifies nonvanishing associative
+weighted divisor products. Its symmetric case is a weight transport.
+Searching only such nonzero kernels cannot deliver a new algebra up to
+these scalar transports. This restriction does not classify all zero
+kernels or nonlinear maps between different normalized unit groups.
+https://msp.org/pjm/1975/61-1/pjm-v61-n1-p11-s.pdf
+
+4. Pattira Ruengsinsub et al., Results about dependence and convolution (2012),
+section 3: explicit scalar-weight isomorphism with Dirichlet convolution.
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1806-07.pdf
+
+5. Laszlo Toth and Pentti Haukkanen, On the binomial convolution of arithmetical
+functions, J. Comb. Number Theory 1.1 (2009), 31-47: the exponent-binomial
+kernel and transport are established.
+https://arxiv.org/abs/0806.0508
+
+6. J. V. Burnett, O. V. Osterman and R. Lewandowski, On a special class of
+A-functions, New York J. Math. 25 (2019), 1404-1421: structured divisibility
+and general convolution frameworks, including infinitary settings.
+https://nyjm.albany.edu/j/2019/25-57v.pdf
+
+7. Jan Snellman, The ring of arithmetical functions with unitary convolution:
+Divisorial and topological properties (2002): explicit algebra structure
+with nilpotents; distinguishes it from the ordinary Dirichlet domain.
+https://arxiv.org/abs/math/0201082
+
+8. Jan Snellman, Greedy Regular Convolutions, version 4 (14 August 2026):
+equation (6) requires both shared-prime exponents to be even. This
+regular ternary kernel differs from global Omega radix-three carry:
+delta_p times delta_p is zero in that product and delta_(p^2) in ours.
+The terminology is not a kernel match and the distinction is not
+novelty evidence. The current PDF was rechecked on 7 October 2026.
+https://arxiv.org/pdf/2504.02795
+
+9. Tim Carroll and A. A. Gioia, Roots of multiplicative functions (1988): an established
+root theory, citing Rearick and Kemp's Nth roots of arithmetical functions.
+https://www.numdam.org/item/CM_1988__65_3_349_0.pdf
+
+10. Vichian Laohakosol, Nittiya Pabhapote and Nalinee Wechwiriyakul,
+Arithmetic Functions and Operators, ScienceAsia 27 (2001), 199-202. The
+introduction attributes ordinary/unitary arithmetic group isomorphisms to
+Rearick; the paper develops logarithmic and related operators and real
+arithmetic powers. Its logarithm at n>1 is f^(-1)*D_log(f), which equals
+log(n) times our formal LOG_* coefficient. This convention was compared
+explicitly. The broad idea of transferring arithmetic groups through
+logarithms/exponentials therefore cannot count as our novelty.
+https://www.scienceasia.org/2001.27.n3/v27_199_202.pdf
+The valid official PDF and extracted text are cached in literature/.
+
+11. Graeme L. Cohen and Peter Hagis, Jr., Arithmetic functions associated
+with the infinitary divisors of an integer, IJMMS 16.2 (1993), 373-383.
+The binary components p^(2^j) and section 2's convolution/unit-group results
+exactly match the detector's primewise binary no-carry algebra. Later
+sections concern infinitary totients and summatory functions. The formal
+LOG/EXP zeta transfers or our continuous-parameter correction theorem were
+not identified in this paper. The binary-component description makes
+dyadic exponent shifting elementary, so that operation alone should not
+be presented as an undiscovered arithmetic primitive.
+https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171293000456
+
+12. Pierluigi Contucci and Andreas Knauf, The Low Activity Phase of Some
+Dirichlet Series, PDF version dated 2 October 2001 with a 1996 preprint
+cover. Appendix A, equations (68)-(75), gives exponent-binomial convolution,
+formal EXP/LOG for two algebras, and a partition interpretation. The paper
+also studies cross-prime/polymer interpretations of Dirichlet series.
+Neither physical interaction language nor set-partition exponentials are
+new in themselves. Its circle product is the known exponent-binomial
+product, not our zero-kernel infinitary or total-Omega product. The precise
+T/S applications were not identified in the reviewed text.
+https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/contucci-knauf.pdf
+The valid primary PDF and extracted text are cached in literature/.
+
+13. OEIS A008480 gives exactly W(n)=Omega(n)!/product_p v_p(n)!, the
+number of orderings of the multiset of prime factors, with its prime-zeta
+generating series. OEIS A355939 gives the ordinary inverse of delta plus
+the prime indicator, namely (-1)^Omega(n)*W(n). The new detector mask is
+the parity of these classical coefficients. W itself and the inverse
+must be classified as established arithmetic, not novel discoveries.
+https://oeis.org/A008480
+https://oeis.org/A355939
+
+14. Maxie Dion Schmidt, Exact formulas for partial sums of the Mobius
+function expressed by partial sums weighted by the Liouville lambda
+function, arXiv:2102.05842v8 (17 July 2022). The full primary text defines
+the same C_Omega=W, discusses its prime-zeta generating series and related
+Dirichlet inverses, and attributes the unsigned function to Froberg (1968).
+Its text was checked for parity, binary masks, infinitary projections and
+the typed A-to-G characterization. No exact match for those compound
+statements was identified; this does not verify historical originality.
+https://arxiv.org/abs/2102.05842
+The valid PDF and extracted text are cached in literature/.
+
+15. Simon Litsyn and Vladimir Shevelev, On Factorization of Integers with
+Restrictions on the Exponents, Integers 7 (2007), A33, 35 pages. The
+publisher index links the primary archived paper. It establishes unique
+factorization in components p^((k+1)^j) with component exponents bounded
+by k, and develops k-arithmetic. Thus the base-b prime-power digit layers
+are established prior art. The cross-prime projection enforcing a total
+digit occupancy limit is a different compound operation; its precise
+publication history remains unresolved. The paper's introduction and
+full text were checked for the relevant product/projection framework.
+https://zenodo.org/records/8288749
+https://math.colgate.edu/~integers/vol7.html
+The valid PDF and extracted text are cached in literature/.
+
+Candidate-specific checks:
+
+- T(f)=EXP_infinitary(LOG_Dirichlet(f)): exact unit-group transfer, bit-set
+partition coefficients, and a zero-free correction for every integer q>=2
+plus the root-order limit. Formal LOG/EXP, infinitary convolution and
+set-partition transforms are each known. No exact publication match for
+the compound statement has been identified in the reviewed sources.
+
+- Parameterized T_beta and E_m coefficient extraction: binary shifting
+and fractional arithmetic powers are known components. The detector learned
+and proved the dyadic scaling law, the full real-beta [0,1] nonzero correction
+with an independent rational witness, and the all-dyadic-root continuation
+criterion. The last criterion is a root reformulation of RH, not an advance
+on RH. The continuous-parameter certificate is a concrete verified theorem
+in this investigation; no exact prior publication match has been identified.
+That absence is insufficient to certify originality or an independent new
+operator. Details: dyadic_root_proof.txt and dyadic-results/.
+The additional actual-zero control isolates a simple critical-line zero
+by Arb/Taylor/Rouche bounds and locally continues the correction by factoring
+its quadratic term through zeta(2s). These are verification tools and a
+specific local application, not claimed new analytic primitives or RH progress.
+
+- S(f)=EXP_global_Omega_no_carry(LOG_Dirichlet(f)): cross-prime coupling,
+the recovered bit-disjoint exponent mask, and F=A*log(zeta)+B with A,B
+holomorphic on Re(s)>1/2. Its kernel is a zero degeneration of a known
+potential-weight framework. The exact compound application has not been
+matched to a publication. The RH holomorphy criterion is a reformulation,
+not a new result about the truth of RH.
+
+- M(f)=chi*f coefficientwise: a canonical linear A-to-G algebra map,
+uniquely forced by preservation of prime-power impulses. Its multinomial
+parity, characteristic-two Frobenius digit layers, and known inverse
+coefficients prevent calling its underlying mask an undiscovered primitive.
+The specific typed characterization M T=S P_2, full prime-base logarithmic
+projection hierarchy, cubic commutator consequence, and raw-zeta product
+have not been matched to a reviewed publication. Those claims have written
+universal proofs and independent checks, but historical originality is
+unresolved. The hierarchy's limit is CLASSICAL multiplicative completion.
+The linear projection's half-plane criterion and its actual-zero branch
+certificate are reformulation/verification tools, not RH progress.
+An own-zero control certifies that F_chi creates a simple zero near
+1.1533968760+14.0166117003*i where actual zeta is zero-free. It rejects a
+stronger zero-preservation interpretation; that verified local zero is
+not claimed historically new or an RH counterexample.
+Details: projection_proof.txt and projection-results/.
+
+Searches included infinitary convolution with logarithm/exponential/unit
+groups; regular-convolution logarithms; total-degree and Omega weighted
+convolutions; binary/no-carry zeta transforms; and roots of multiplicative
+functions. Searches yielded broad frameworks and component prior art,
+but these searches do not certify originality. Inaccessible or poorly
+indexed literature may contain the precise applications.
+
+Additional searches covered infinitary endomorphisms, exponent extraction,
+logarithm/exponential transfer across arithmetic algebras, and binary set-bit
+partition coefficients. The review now includes the original 1993 infinitary
+convolution paper, the 2001 operator review, and the polymer paper's complete
+appendix. Steven Finch's Unitarism and Infinitarism was also checked for
+matching coefficient families; its infinitary divisor/totient functions
+differ from T_beta's bit-block partition coefficients.
+https://oeis.org/A007947/a007947.pdf
+Sequence searches also checked factorial-scaled local coefficients beginning
+1,1,1,5,6,54,210,3114,5040,85680,589680. No relevant publication match was
+returned; search results were mostly unrelated and are not evidence of
+originality. A cycle-count interpretation is a prospective comparison route,
+not currently included as a separately verified discovery in the registry.
+
+The recent title Binary convolution height: Structural invariants of integer
+factorisations was inspected. Its bit-polynomial product concerns ordinary
+binary multiplication of factor values, rather than the prime-exponent or
+Omega no-carry arithmetic products considered here; it is not an exact match.
+https://www.tandfonline.com/doi/full/10.1080/27684830.2026.2727395
+
+NIST reference for the zeros/reflection facts used in the RH criterion:
+https://dlmf.nist.gov/25.10
+https://dlmf.nist.gov/25.4
+
+Current verified-historically-new list: empty. Current mathematically
+verified new-to-detector candidate list: T, S, the linear projection M,
+the floor/ceiling size transfers, the prime-binary partition regularizer,
+and the ordinary-root-sensitive quadratic difference family.
+The hierarchy, dyadic extension and commutator interactions are consequences,
+not additional primitives obtained by assigning names to compositions. Proofs are
+written mathematics with exact/Arb witnesses, not machine formalization.
+
+Additional primary-source review for the expanded coupling grammar:
+Pentti Haukkanen, On the k-ary convolution of arithmetical functions,
+Fibonacci Quarterly 38 (2000), 440-445. The full six-page primary text
+was read. Theorem 2.2 records the classical associative infinitary algebra,
+unit group, and multiplicativity properties, with prior attribution to
+Cohen/Hagis. General k-ary convolution can fail associativity (page 442).
+This supports careful typing of the learned suspension as a module,
+rather than calling it a commutative associative product.
+https://www.fq.math.ca/Scanned/38-5/haukkanen.pdf
+
+The deeper compound law
+  (T S-S T)(u^{*alpha})(p^2*q_1*...*q_k)
+    =(-1)^(k+1)*k!/2*alpha^(k+2), k>=2,
+and the first-other-prime module with kernel 1[a&(b+1)=0] have written
+universal proofs and independent exact checks. No precise publication
+match has been identified in the reviewed arithmetic algebra/partition
+sources. The factorial itself and labelled nilpotent combinatorics are
+classical. No-match searches cannot certify that this compound identity
+is historically new, so it remains a consequence of the existing two
+candidate transforms, rather than an extra verified-new operator.
+
+The selected p^e*q sector has a rigorously bounded half-plane bridge
+C_1=A*P-B and an independently certified actual-zero branch obstruction.
+Its RH criterion is another reformulation; it proves no RH estimate.
+The formal coefficient laws survive arbitrary relabeling of the free
+prime monoid. This and the scalar prime-zeta reduction identify concrete
+limitations of the present grammar's arithmetic specificity. They do
+not disprove analytic continuation of the full commutator; that remains
+unestablished and is not inferred from the selected sector.
+Details: coupling_proof.txt and coupling-results/.
+
+INTEGER SIZE GRAMMAR: WHAT THE NEW CHECKS ESTABLISH
+
+The new stage searches floor/ceiling logarithmic heights, quotients,
+residues, digit sums, integer roots, additive gcd expressions, and mixed
+heights. It recovers unitary convolution and produces exact counterexamples
+to shifted coprimality and a residue carry applied to multiplicative indices.
+Two selected no-carry size products have universal cocycle proofs. Their
+nonzero-weight pencils are known scalar transports. EXP_K LOG_D transfers
+remain instances of the established formal unit-group construction.
+
+T. M. K. Davison, On Arithmetic Convolutions, Canadian Mathematical
+Bulletin 9 (1966), 287-296, DOI 10.4153/CMB-1966-037-x, was reviewed in
+the official full PDF. It supplies the general divisor-kernel associativity
+framework. Its extra multiplicativity requirement is not imposed here.
+The paper's examples do not identify this exact paired size identity.
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/198C74522DE4B0F126BF0231877B01A8/S0008439500052863a.pdf/on_arithmetic_convolutions.pdf
+
+Stefan Porubsky, Structure of the group of quasi multiplicative arithmetical
+functions, Acta Academiae Paedagogicae Agriensis, Sectio Mathematicae 30
+(2003), 133-145, sections 3 and 4: generalized divisor kernels and normed
+free commutative semigroups. Size dependence distinguishes prime relabeling
+but does not alone establish an operation specific to ordinary primes.
+https://real.mtak.hu/142348/1/AAPASM_30_from133to145.pdf
+
+The paired identity is B_(b,beta)(f)=f^beta*R_b(f^beta), with R_b retaining
+indices b^k. For u its correction is a product-beta moment generating
+function with positive real part on Re(s)>0, for all b>=2 and beta in [0,1].
+The moment integral and the hypergeometric/elliptic special functions are
+classical: NIST DLMF 5.12.1 and 19.5.1. In NIST's modulus convention the
+base-6 beta=1/2 elliptic argument is sqrt(6^-s), not 6^-s.
+https://dlmf.nist.gov/5.12.E1
+https://dlmf.nist.gov/19.5.E1
+
+This proves a paired root-continuation criterion for RH; it does not prove
+global continuation or a new RH estimate. The individual floor/ceiling
+transfers have established series only on Re(s)>1. The separate individual
+floor-square Fourier formula has proved quantitative errors on Re(s)>2;
+its b-power resonance correction cannot be omitted.
+
+No exact publication match has been established for the paired identity
+or individual size applications. This leaves historical novelty unresolved,
+not certified. The 281 finite surviving programs and 60 finite fingerprints
+are not counts of proved operators. The verified-new list remains empty.
+Details: size_carry_proof.txt and size-results/.
+
+SUBSEQUENT SIZE REGULARITY AUDIT
+
+The individual size-family continuation question now has a definite
+negative answer for the unmodified RH holomorphy gate. Every finite q>=2
+lift produces artificial singularities at 1+2*pi*i*m/log(b), m!=0. Its
+universal Abelian coefficient is the Fourier integral of a q-dimensional
+simplex. At the real pole the coefficient is 1/q!. An independent grid
+search learns that factorial law; the universal proof follows from weak
+positive-measure limits of actual zeta-root coefficients.
+
+The infinite-order U grows faster than all log powers and slower than
+every positive pole power, excluding every finite real-power cancellation
+that would be holomorphic at s=1. These results preserve the formal algebra
+and the separate paired identity, while rejecting an RH inference from
+the individual transforms. No new primitive or estimate about zeta zeros
+is inferred from this obstruction.
+
+The Hurwitz/Euler-Maclaurin input is classical (NIST DLMF 25.11); the
+zero-free line Re(s)=1 used for the log-angle limits is classical (25.10).
+The uniform-angle exponential gives the classical I_0 series (10.25.2),
+but no corresponding Bessel asymptotic for the full arithmetic U is proved.
+https://dlmf.nist.gov/25.11
+https://dlmf.nist.gov/25.10
+https://dlmf.nist.gov/10.25.E2
+
+These are verified consequences and negative controls. They do not settle
+publication history of the exact size operations. The historically-new
+operator list remains empty. Details: size_resonance_proof.txt and the
+independent size-results/size_resonance_verification.json.
+
+JOINT SIZE KERNELS AND THE NATURAL-BOUNDARY APPLICATION
+
+Pointwise multiplication of two associative divisor-kernel weights is
+an elementary closure rule obtained by multiplying cocycle identities.
+The resulting LOG/EXP group transfer uses the same established formal
+framework. Neither Boolean intersection nor a name for its transfer
+is counted as a new primitive. The Boolean grammar's 80 held-out instances
+are applications of four classical closure rules, not 80 new operators.
+
+The precise two-base zeta consequence now has a written universal proof:
+for multiplicatively independent bases and every finite q>=2, nonzero
+simplex Fourier coefficients produce a dense set of singularities and
+a natural boundary on Re(s)=1. For dependent bases c=b^k, a different
+stars-and-bars factor gives binomial(k+q-1,q)/(k^q*q!). The proof uses
+classical weak-convergence, Fourier, and elementary combinatorial arguments.
+The root-coefficient Dirichlet series and the zero-free line of actual
+zeta are classical (NIST DLMF 25.10):
+https://dlmf.nist.gov/25.10
+
+No reviewed publication has been identified with this exact joint-size
+boundary application. A broad search without such a match does not prove
+originality. These results are recorded as mathematically verified
+consequences and rejection controls; the historically-new operator list
+remains empty. They reject an RH-domain inference from the unmodified
+finite joint lifts, while leaving the earlier paired root law intact.
+Details: joint_size_proof.txt and the exact/analytic independent checks
+in joint-results/.
+
+SIGNED ORIENTATION CANCELLATION AUDIT
+
+The square-root signed search now has a definitive exact reduction,
+rather than merely a literature search without matches. Its unique
+nonzero constant-weight survivor is the equal sum of four orientations.
+After explicit arithmetic projection corrections the normalized operation
+is g*(R_b(g)+R_c(g)+R_bc(g))/3. This is a sum of the already established
+paired-root/projection compositions and is not counted as a new primitive.
+Its averaged kernel for prime bases is also a classical nonzero weighted
+transport, within the frameworks already reviewed above. Composite cases
+fail the independent associativity test and cannot be called algebras
+merely because a bilinear continuation identity holds.
+
+The exact bilinear identity and the all-q>=3 rational signed natural-
+boundary classification are recorded as verified arithmetic consequences.
+Their precise publication history has not been resolved. New grammar
+syntax, a new correction average, or the fresh actual-zero computation
+does not itself establish mathematical originality. The beta-integral
+zero-free bound and classical zeta reflection context come from:
+https://dlmf.nist.gov/5.12.E1
+https://dlmf.nist.gov/25.10
+https://dlmf.nist.gov/25.4
+
+The verified-new operator list remains empty. Details: cancellation_proof.txt
+and the independent exact/analytic artifacts in cancellation-results/.
+
+MIXED ADDITIVE / DIVISOR INDEX APPLICATION
+
+The selected operation M EXP_C LOG_D combines classical normalized
+arithmetic LOG/EXP with the shifted additive subset product, where M
+divides by popcount(n-1)!. The primary abstract of Andreas Bjorklund,
+Thore Husfeldt, Petteri Kaski and Mikko Koivisto, Fourier meets Mobius:
+fast subset convolution (2006 preprint), explicitly defines the identical
+set-bit product. Thus changing from prime-exponent bit sets to the bits
+of additive index n-1 does not discover subset convolution itself.
+https://arxiv.org/abs/cs/0611101
+
+The Bell partition EGF and recurrence are classical. Giving each block
+a weight produces the standard weighted EGF exp(beta*(exp(z)-1)); the
+positive-coefficient bound at any radius and the dyadic row count are
+elementary applications. These known combinatorial facts, the formal
+unit-group construction and diagonal transport do not establish a new
+primitive.
+https://dlmf.nist.gov/26.7.E5
+https://dlmf.nist.gov/26.7.E6
+
+For the specific zeta input, admissible binary blocks must have value
+plus one equal to a prime power. The discovered v2 recurrence follows
+from the only even prime powers being powers of two. Its exact universal
+proof and the positive-half-plane Bell domain theorem stand independently
+of a historical-originality claim. No precise publication match for this
+compound application has been established in the reviewed sources. Search
+absence is not evidence that the application was previously unknown.
+
+The native-zeta coefficient decoder assumes the known finite value set
+for LOG(zeta), without supplied prime-power locations. Its success is a
+certified calibration rather than a historically new decoding principle.
+The unconditional holomorphy at actual zeta zeros is also not RH progress:
+the relevant B roots are not ordinary Dirichlet roots. The reverse
+EXP_D LOG_A transfer is zero-free across both certified zeta-zero disks.
+These are explicit domain and root-information rejection controls.
+
+The verified-historically-new operator list remains empty. The candidate
+application's originality is unresolved. Details: mixed_index_proof.txt
+and mixed-index-results/; independent arithmetic and analytic checks pass.
+
+ORDINARY-ROOT-SENSITIVE QUADRATIC INDEX DIFFERENCES
+
+The new weight grammar rediscovers the third forward difference. Its
+alternating binomial weights and zero moments are classical, as given
+by the primary NIST Stirling formula. They are not classified as a new
+primitive. Formal arithmetic LOG/EXP and linear maps of the augmentation
+ideal likewise supply an established normalized unit-group framework.
+https://dlmf.nist.gov/26.8.E6
+https://www.impan.pl/shop/publication/transaction/download/product/91275
+
+The compound application uses iterated actual index maps n->n(n+a),
+rather than arbitrary prime-exponent relabeling. The learned and universally
+proved order is r=m*(2^k-1), with degree 2^k and a rising-factorial leading
+recurrence. Grouped zeta corrections are holomorphic on
+Re(s)>-m+(m+1)/2^k and have zero-free exponentials. Exact ordinary D root
+laws, actual critical-zero monodromy and a new trivial-zero control at -2
+all pass independent verification. When m exceeds the relevant negative
+integer magnitude and that point lies in the proved domain, the correction
+equals one there, preserving the integer-power zeta derivative at its zero.
+
+The search covered arithmetic finite differences, quadratic prime-power
+indexing, logarithmic arithmetic operators and related Dirichlet-series
+composition terms. Many results use 'Dirichlet' for function spaces or
+'zeta' for poset transforms, which does not establish a match to this
+arithmetic application. No precise reviewed publication match has been
+established for the full iteration/domain hierarchy. This does not certify
+historical novelty; the candidate remains unresolved under the registry's
+novelty rules.
+
+The classical reflection formula supplies the independent exact slope
+zeta'(-2)=-zeta(3)/(4*pi^2). The trivial-zero calculation is a calibration,
+not a new zero of zeta or evidence about the truth of RH.
+https://dlmf.nist.gov/25.4
+https://dlmf.nist.gov/25.10
+
+The root-preserving bridge supplies another RH-equivalent continuation
+criterion. It does not establish that continuation or a new RH estimate.
+Negative-domain continuation is grouped; ordinary individual coefficient
+terms still fail the necessary convergence condition there. Historical
+originality remains unresolved, and the verified-historically-new list
+remains empty. Proof and independent artifacts: difference_proof.txt and
+difference-results/.
+
+NONLINEAR PRIME-SUM LOG APPLICATION
+
+The root-constraint audit is an elementary homogeneous-polynomial theorem:
+universal normalized half-root commutation restricts regular maps to
+EXP_D L LOG_D with linear L. Dropping that generic constraint allows
+nonlinear LOG couplings while testing the ordinary-zeta zero bridge
+separately. This is a grammar-design consequence, not a new primitive.
+
+The selected pair map sends (x,y) to xy(x+y)^r and exponentiates a
+quadratic log correction. At r=0 its scalar quadratic inverse and the
+total inverse-tree masses are CLASSICAL Catalan facts. The output-prime
+labels at r=3 distinguish tree shapes, but this does not discover Catalan
+trees or formal LOG/EXP. Positive-r output parity fixes the odd quotient;
+the elementary parity proof establishes the actual-zeta counterexample
+P_3(u)(256)=2 versus P_3(u)(6561)=1 after swapping prime labels.
+https://dlmf.nist.gov/26.5
+
+The scalar correction is a prime-power-weighted Mordell--Tornheim-type
+series, with g(n)=Lambda(n)/log(n) for n>=2. The product/sum kernel and
+beta Mellin inversion are established multiple-zeta constructions.
+The reviewed modern finite analogues use primes as moduli, which is
+different from restricting the summation weights to prime powers here.
+https://arxiv.org/abs/2401.03380
+https://dlmf.nist.gov/5.12.E1
+https://dlmf.nist.gov/5.12.E3
+https://dlmf.nist.gov/5.5
+
+A primary publisher search excerpt for generalized multiple-zeta functions
+also describes Mellin--Barnes recursion and generalized Tornheim kernels.
+The full publisher download returned HTTP 503; the excerpt does not prove
+a match to the present weighted map or a theorem beyond the reviewed text.
+https://www.impan.pl/shop/en/publication/transaction/download/product/81948
+
+Six fresh actual-zeta bridges and two reused certified-zero disks pass
+independent exact/analytic audits. The r=3 correction has proved ordinary
+coefficient-series convergence on Re(s)>2/5; both input/output root families
+retain ordinary zeta branching with different quadratic/linear amplitudes.
+These are mathematical verification results. A zero-free factor supplies
+no new RH estimate. Searches for prime-power/logarithmic Tornheim variants
+do not establish historical originality by absence of precise matches.
+
+The historically-verified-new list remains empty. The precise weighted
+nonlinear application is unresolved. Proof: pair_proof.txt; independent
+arithmetic and certified analytic evidence: pair-results/.
+
+PRIME-SUM SECTOR DECODER AND SHARP ANALYTIC DOMAIN LOSS
+
+The residue-core grammar rediscovers the elementary power-free
+decomposition of an integer. Unique prime valuations and the associated
+sector projections are classical. The decoder and encoder are partial
+coordinate permutations; their linearity and projection inverse laws
+are not new algebraic primitives. On raw zeta coefficients the decoder
+reduces exactly to the known indicator of two distinct prime powers whose
+exponents are nonmultiples of r. That action is resolved as a known mask,
+not counted as an undiscovered operation inside raw zeta.
+https://dlmf.nist.gov/27.2
+
+The more specific compound application decodes the zeta-derived graft
+Gamma_r to T_r=(L(s)-L(rs)/r)^2-Q_r. The production route obtains it from
+the full prime-power pair data; a universal sector theorem and independent
+complete integer fibres prove its uniqueness without assuming all
+prime-power fibres are injective. The prime-zeta reference uses established
+scaled Mobius inversion. Logarithmic singularities associated with zeta
+zeros are also established context; the reviewed primary abstract below
+describes prime-zeta singular structure at Riemann zeros. It is not a
+publication match for the specific prime-sum decoder or its norm theorem.
+https://dlmf.nist.gov/27.5.E7
+https://arxiv.org/abs/2102.02280
+
+The sharp arithmetic coefficient-norm law is proved universally:
+D_r:A_sigma->A_tau bounded iff tau>=(r+1)*sigma, with exact bounded norm
+6^(sigma-tau)*5^(r*sigma), for sigma>0. This explains why the decoded
+zero obstruction can reappear despite the encoded correction's holomorphy.
+The pure-power regularization tradeoff is scoped to this decoder and
+these weights; multiplying by n^-lambda is a classical scalar shift.
+No general restriction on all arithmetic operators is inferred.
+
+Eight independent exact and four analytic gates pass, with six fresh
+native-zeta comparisons and two reused actual-zero disks. The cumulative
+comparison count is 114. A beyond-word held-out example catches repeated
+native factor entries; full exponent aggregation and exact product checks
+pass independent scrutiny. The full prime-power injectivity conjecture is
+explicitly unproved, and unrestricted integer collisions are certified.
+
+The precise decoder application, diagonal continuation and sharp norm
+tradeoff have unresolved publication history. Literature searches without
+an exact match do not establish originality. A squared-log RH-equivalent
+criterion gives no new continuation estimate. The historically-verified-
+new list remains empty. Proof: decode_proof.txt; independent evidence and
+figure: decode-results/.
+
+FULL PRIME-PAIR TWO-PRODUCT CALIBRATION AND HILBERT DOMAIN
+
+The prime-pair extension is a successful known-operator rediscovery test.
+Diagonal pairs are now proved uniquely decodable among all prime-power
+inputs, and generic signed prime-supported inputs recover BOTH ordinary
+Dirichlet and additive convolution. On the zeta-derived graft the outputs
+are the classical prime-zeta square and ordered Goldbach representation
+counts. Raw-zeta action gives familiar semiprime masks and unordered
+prime-sum counts. No tenth primitive or historical-new operator is counted.
+
+The sharper prime-only encoded abscissa and endpoint convergence proofs
+use the established unconditional prime number theorem. The additive
+series also converges at its exact absolute abscissa two. Hilbert row
+counts have a sharp boundedness threshold proved using prime-density
+averaging. This does not assume the Goldbach conjecture, the Hardy-Littlewood
+asymptotic for every sum, or a conditional zeta-zero distribution.
+https://dlmf.nist.gov/27.12
+
+The reviewed primary Goldbach-continuation paper defines its function
+with von Mangoldt weights on all integer/prime-power summands. Its
+conditional continuation and natural-boundary statements concern that
+weighted function, whereas the present additive output has unit prime
+weights. The title/abstract alone cannot justify importing those theorems.
+The primary definition and theorem statements were reviewed directly.
+https://arxiv.org/pdf/1002.4806
+
+Beta Mellin inversion, scaled Mobius inversion, row-norm linear algebra
+and prime-zeta logarithmic branching are established frameworks. The
+mathematics of this specific encoded bridge and sharp l1/Hilbert hierarchy
+passes six independent exact and four analytic gates. All 28303 queries
+have independently checked complete prime-power fibres, including 172
+diagonals. Six fresh native-zeta groups check both products, bringing the
+cumulative comparison count to 120. Failed initial wide contour enclosures
+are archived; only failed cases are recomputed at unchanged arguments and
+gates, with short starting intervals. Passed cases retain a coefficient
+digest. The independent reference uses different cutoffs and smaller errors.
+
+The PRODUCT output recovers ordinary-zeta zero branching. The additive
+output's values, monodromy or continuation at those zeros are not inferred.
+The pure-power norm tradeoffs are generic operator estimates; the special
+prime-product output has a better coefficient abscissa than those generic
+spaces guarantee. The sharpened encoded endpoint is scoped to the PRIME-
+ONLY component, and does not assert a stronger full prime-power theorem.
+
+Publication history of the precise application and sharp norm hierarchy
+remains unresolved. No-match searching is not proof of originality; no
+new RH estimate is supplied. The verified-historically-new list remains
+empty. This is a verified consequence of family nine. Proof and numerical
+evidence: prime_pair_proof.txt and prime-pair-results/.
+
+RESIDUE-VISIBLE SAME-PRIME EXTENSION (2026-10-07)
+
+The accepted sector is now larger: distinct-base PP exponent residues are
+nonzero individually, or same-base total exponents are nonzero modulo r.
+A universal full-visible-factor oversize comparison distinguishes the
+same-prime sector from every competing distinct-base fibre. It reconstructs
+the pair exactly, including the two-prime diagonal shift. The resulting
+linear aggregator differs from the earlier coordinate permutation because
+multiple encoded coordinates share one decoded prime-power product.
+
+Generic PP inputs decode to a filtered ordinary Dirichlet product. On the
+zeta input, same-prime coefficients 2H_(k-1)/k follow the CLASSICAL
+logarithm-square/Stirling law. Primary DLMF equations reviewed here:
+https://dlmf.nist.gov/26.8.E8
+https://dlmf.nist.gov/26.8.E15
+The learned first defect -2H_(r-1)/r at 2^r and root-of-unity degree filter
+are therefore classical calibrations. They are not originality evidence.
+
+The combined scalar identity U_r=(LOG zeta(s)-LOG zeta(rs)/r)^2+R_r has
+a single-valued additive remainder holomorphic on Re(s)>1/r. For r=3 it
+removes the earlier separate order-two diagonal obstruction. The full
+ordinary series still has absolute abscissa one and retains quadratic-log
+monodromy at actual zeta zeros. On a chosen zero-free logarithm branch the
+parameter limit approaches (LOG zeta)^2 with an exponential majorant.
+The loop anomaly is exactly -4*pi*i*m*LOG zeta(rs)/r, with a height-independent
+Euler bound. These are proved consequences, not an unconditional RH
+continuation or an estimate excluding unknown zeros.
+
+The PNT endpoint proof is now extended to the FULL prime-power source,
+using W(X)=sum_(p^e<=X)1/e=O(X/log X), with primary reference
+https://dlmf.nist.gov/27.12
+The full source converges at its exact abscissa 2/(r+2), and its endpoint
+norms are uniformly finite for r>=3. This supplies equality in earlier
+pure-power thresholds that were strict using the then-available open-domain
+certificate. It preserves the decoder loss: norm-one output weights are
+2(r+1)/(r+2)>=8/5. The positive-sigma Hilbert boundedness threshold is the
+same as the absolute one, but the exact norm formula needs r*sigma>=1.
+Unweighted partial-isometry and lower-weight norm-one claims are rejected.
+
+Exact-expression searches for the PP encoding xy(x+y)^r and its uniqueness
+law have not established the history of this particular decoder and combined
+domain/norm consequences. Absence of a search match does not establish
+novelty. Classical ingredient matches are retained; no theorem from a
+different weighted/additive zeta model is imported into this construction.
+
+All 20,416 complete PP-fibre queries, including 478 same-prime queries, pass
+independently. Six exact and six analytic gates pass. Six full scalar groups
+raise the cumulative comparison count to 126. Six subcritical remainder-only
+groups, eight actual-zero parameter controls on two reused disks and changed-point
+parameter-limit checks are separate auxiliaries. Producer and checker change
+cutoffs, reference representations and error size, with explicit infinite
+tails. These demonstrate implementation reliability and proof applicability,
+not historical originality or a new zero-location theorem.
+
+The catalogue now has ten verified mathematical detector families and
+fifteen recorded arithmetic consequences. The historically-verified-new
+list remains empty, and the research objective remains active. Proof and
+numerical evidence: visible_proof.txt and visible-results/.
+
+GAP CORRELATION AND CRITICAL ENDPOINT (2026-10-07)
+
+The new difference grammar uses ab|a-b|^r for distinct indices and composes
+the bilinear coupling with ordinary Dirichlet LOG/EXP. A primary prior-art
+match is explicit: Korevaar's Prime pairs and Zeta's zeros, preprint dated
+2007 and arXiv-submitted 2008, defines von-Mangoldt-weighted additive prime-
+pair Dirichlet correlation in equation (2.3). Equations (1.3),(1.5) also
+give an unconditional sieve bound uniform in the even gap, which supplies
+the current r>=3 endpoint proof after accounting for the logarithmic
+weights. The paper's conjectural and conditional zero-distribution results
+are not imported into this model.
+https://arxiv.org/pdf/0806.0934
+
+Yamada's primary 2023 paper on arbitrary-interval Brun--Titchmarsh bounds,
+Theorem 2 with k=1, supplies the O(D/log D) short-interval prime upper bound
+needed for the r=1 endpoint. No new constant or sieve theorem is claimed.
+https://arxiv.org/pdf/2312.16090
+Unconditional PNT supplies the bulk and near-pair lower bounds and PP
+counting; no fixed-gap conjecture is an assumption.
+https://dlmf.nist.gov/27.12
+
+The particular weighted composite and sharp endpoint classification have
+not been matched to a reviewed exact publication. That does not establish
+historical originality. Bilinear correlation, Toeplitz/Young bounds,
+FFT/polynomial convolution, LOG/EXP and tree recurrences are classical.
+The conditional colored-tree inverse-mass fit is specifically rejected by
+held-out arithmetic collisions. The actual overlap formula remains valid.
+
+The exact absolute edge is max(2/(r+2),1/2); r=2 diverges at the endpoint,
+whereas r=1 and r>=3 converge. For r=3 the finite nonzero exponential
+correction on the closed right half-plane preserves ordinary root behavior
+from the right at critical-line zeros. No whole crossing-disk holomorphy,
+positive spectral RH operator, or zero-location estimate is established.
+The critical l2 source norm diverges despite finite off-diagonal Gamma;
+its endpoint proof requires additional prime sparsity.
+
+All six exact and six analytic independent gates pass, including 40,955
+encoded-index checks, twelve finite density certificates, six fresh full
+native-zeta groups with changed references/tails and smaller errors,
+five ordinary-root scalar groups and six one-sided actual-zero groups.
+The cumulative full scalar comparison count is 132; auxiliary groups are
+separate. Both zero disks are reused. The exploratory FFT and dimensional
+threshold grammar are not infinite numerical certificates.
+
+This is a known-kernel compound consequence, not an eleventh primitive
+family. The catalogue now retains ten verified mathematical families and
+sixteen arithmetic consequences. The verified-historically-new list remains
+empty; the research objective remains active. Proof and evidence:
+gap_proof.txt and gap-results/.
+
+PRIME GAP-LAPLACIAN SHEAR (2026-10-07)
+
+The recovered weights 1,-2,1 are the classical graph-Laplacian/second-
+difference form. Primary reviewed matrix definition: Krasnov and Scarinci,
+Weighted Laplacians, cocycles and recursion relations, section 1.8, 2013.
+Only the known weighted matrix framework is used here; the paper's
+physics, determinant and graph-recursion applications are not transferred
+to zeta's zeros.
+https://arxiv.org/pdf/1310.0653
+
+The prime projection makes every correction composite, producing a
+quadratic shear and inverse via the negative parameter. Elementary shears
+and abstract LOG/EXP transport are classical. Complete square/squarefree-
+part prime fibres and the precise arithmetic group are proved here, but
+their exact application history remains unresolved. No absent search
+match establishes historical originality.
+
+The paired correction H_r has sharp positive-axis/right-half-plane edge
+2/(r+2) for r>=3, with endpoint convergence by unconditional PNT and
+derivative cancellation. For even r>=4 the ordinary arithmetic correction
+has a different absolute edge 1/2, including endpoint convergence using
+the previously reviewed uniform prime-pair sieve bound. These proofs
+assume neither RH nor a prime-pair conjecture.
+https://dlmf.nist.gov/27.12
+https://arxiv.org/pdf/0806.0934
+
+Whole critical-zero-disk correction bounds restore ordinary fractional-root
+monodromy, with explicit positive exponential lower bounds on both reused
+simple-zero disks. No new zero, Riemann-zero spectrum, determinant identity
+or new RH estimate follows. The positive Hermitian energy is different
+from the holomorphic correction; all six full native-zeta groups reject
+that replacement. The critical source vector is not in l2.
+
+The initial even-mask prefix false positive is preserved as evidence of
+a cutoff trap; full sparse composition finds failure at 59105344. Independent
+checks confirm every failed/surviving mask. All 32764 encoded-index checks,
+five exact gates and six analytic gates pass. Six fresh full scalar groups
+bring the cumulative count to 138; five ordinary-root and two whole-zero
+disk groups are separate auxiliaries. Source and checker change coefficient
+and graph cutoffs, reference representations, binomial/Mobius parameters,
+error bounds and deliberate error size.
+
+This is a seventeenth known-kernel compound consequence, not an eleventh
+primitive. Ten mathematical detector families remain, with zero verified-
+historically-new operators. Research remains active. Proof and evidence:
+laplacian_proof.txt and laplacian-results/.
+
+HIGHER MOMENT PRIME SHEAR AND THE PARAMETER-LIMIT OBSTRUCTION
+
+The expanded grammar recovers the classical alternating binomial
+finite-difference weights, calibrated against NIST DLMF equation 1.2.2:
+https://dlmf.nist.gov/1.2.E2
+
+The real positive-axis form sum_edges w_ij(x_i-x_j)^m, for even m,
+is a known graph p-energy. Reviewed section 2, page 3 of Tudisco and
+Hein (2016), A nodal domain theorem and a higher-order Cheeger inequality
+for the graph p-Laplacian, defines its Rayleigh form:
+https://arxiv.org/abs/1602.05567
+No graph eigenvalue or Cheeger theorem is used to identify Riemann zeros.
+The complex continuation here has no conjugates. Elementary shear groups,
+prime projection and arithmetic LOG/EXP are likewise established.
+
+The specific application encodes m+1 binomial faces at
+p^(m-j)*q^j*(q-p)^(m+2), removes the sole gap-one prime pair by the
+predicate q-p>=2, reconstructs complete fibres modulo m+2, and proves a
+uniform-in-height correction estimate on the critical right half-plane.
+Its sharp parameter-limit threshold is the root of 6^-sigma+10^-sigma=1.
+Without the mask, the 2/3 prime edge yields a rigorous scalar divergence
+on the critical line while every fixed coefficient approaches identity.
+These universal statements are proved in moment_proof.txt and checked
+independently; no claim of historical priority is made for the encoding,
+regularization, bounds, or combined limit application. Lack of a literature
+match would not establish that they are new.
+
+Five exact and six analytic gates pass. Finite-prime-input data and
+complete all-input prefixes are separate. The six new factored scalar
+groups are supplemented by six minimum-gap mask programs and 240
+index-scale programs with held-out observations. Finite discoveries and
+universal proofs are explicitly separate. The six factored scalar
+groups have the native zeta factor evaluated directly on both routes;
+they are AUXILIARY correction checks, not independently evaluated full
+ordinary transformed coefficient series. The cumulative full comparison
+count remains 138. Five ordinary-root controls and eight order/disk
+controls reuse two existing simple zeta zeros, preserving branching.
+No zero is added, removed, or newly located by this stage.
+
+This is the eighteenth known-kernel consequence, with ten mathematical
+candidate families and an empty verified-historically-new list. The
+critical-half-plane correction bound is not a proof excluding off-line
+zeros. Research remains active. Proof/data/figure: moment_proof.txt and
+moment-results/.
+
+GLOBAL RADIX CARRY: SELF-SIMILARITY AND COMPLETE BRANCH LADDERS
+
+The literal global digit kernel is a known type of potential-defect
+construction, and its graded algebra has digit capacities b-1.
+Coefficient-local LOG/EXP and unit-group transfer are established
+frameworks. The older base-two global transfer is extended here rather
+than counted as a new primitive. Popa Fotino's nonvanishing-kernel
+classification supplies cocycle framework context; it assumes nowhere
+zero weights and is not applied as a classification of this carry
+indicator with its zero divisors.
+
+Written proofs and changed independent exact/Arb computations establish
+the particular zeta LOG-polynomial, leading scale identity, positive
+critical-half-plane leading bound, full branch-difference criterion,
+and operator-created zero with native zeta nonzero. The source and
+checker locate that same simple transformed zero using different
+nested disks, finite EXP algorithms, Mobius cutoffs and certified
+derivative quotients. Ordinary output-root fidelity is rejected both
+by the exact coefficient-eight mismatch and by that strip zero.
+
+A single pointwise branch jump is insufficient: a constructed model
+has zero first jump and nonzero second difference. Its coefficients
+are fixed from the zeta-derived criterion, not claimed to remain fixed
+when the underlying arithmetic input changes. The complete ladder
+on two reused actual-zero disks confirms ordinary-zeta logarithmic
+sensitivity, not ordinary-output fractional-root commutation.
+
+Historical priority of the exact global-degree application, scale
+recursion, complete ladder and spurious-zero analysis remains
+unresolved. Similar names, no literature match, and numerical success
+are not novelty certificates. This is the nineteenth known-kernel
+consequence within ten candidate families; the verified-new list is
+still empty. Six new full coefficient-origin/native-zeta groups bring
+the current total to 144. No new ordinary zeta zero or RH estimate is
+proved. The research objective remains active. Proof: radix_proof.txt;
+source/check data and figure: radix-results/.
+
+ACTUAL PRIME INFORMATION ACROSS SCALES: KNOWN RECOVERIES AND A NEW PRIORITY
+
+The new user priority is a verified operator that supplies arithmetic
+information about actual primes at all scales. Exact prime extraction
+and count reconstruction alone are calibration. Finite observations,
+universal identities and new uniform estimates must be distinguished.
+
+The recovered perfect-power/Mobius prime extractor and Lambda weights
+are classical. The searched balanced floor filters lie in the established
+Landau/factorial-ratio framework. Reviewed primary source:
+Jonathan W. Bober, Factorial ratios, hypergeometric series, and a family
+of step functions, Journal of the London Mathematical Society (2009),
+section 3 and Theorem 1.2; preprint arXiv:0709.1977.
+https://arxiv.org/pdf/0709.1977
+The introduction discusses their Chebyshev prime-estimate application.
+No claimed improvement or unreviewed classification theorem is imported.
+
+Complete exact period certificates establish 67 positive filters among
+78125 programs. All 52 bounded height-two survivors decompose into
+height-one survivors; the scope is this finite coefficient grammar.
+Classical finite divisor inversion gives the exact trace and its Mobius
+scale decoder. A negative decoded contrast rejects positivity inheritance.
+Mellin symbols prove that EVERY finite floor trace cancels zeta-zero
+poles, while the central decoded contrast restores them. The sharp
+generic norm barrier does not rule out new arithmetic cancellation on
+structured prime-derived inputs.
+
+This is the twentieth known-framework consequence/calibration within
+ten existing families. Six new full prime-weight/native-zeta groups
+bring the current comparison total to 150. Twenty complete dyadic
+windows and four short windows through 10^12+4096 are finite exact
+observations, not a theorem about all larger scales. There is no new
+prime-distribution estimate, historically verified operator or RH proof.
+The target is now a new arithmetic consequence or uniform estimate on
+an explicit prime-window/residue observable. The objective stays active.
+Proof/data/figure: prime_scale_proof.txt and prime-scale-results/.
+
+CREATIVE REPRESENTATIONS AND QRH FINITE-ARITHMETIC RECOVERY
+
+The grammar now permits linear/anti-linear residue maps, commutators,
+adjoints, phase products and unknown polynomial kernels. Fourier/inversion
+transport recovers normalized Kloosterman sums. Projection algebra proves
+K^2=I-J/p, rank p-1 and norm one; it supplies no new arithmetic cancellation.
+The observed rank[F,INV]=p-3 is now universally proved by multiplicative
+characters and classical cyclotomic independence for every odd prime.
+Historical priority for that exact rank formulation is unresolved, and
+no useful uniform spectral lower bound or ordinary-zeta consequence is
+established. The specific rank theorem is not a verified-new operator.
+
+Phase twists have exact graded associators and all-integer Omega lifts.
+The four learned degree-five cocycles are scalar-potential differences:
+one-half delta(x^2), one-third delta(x^3), one-half delta(x^4), and
+one-fifth delta(x^5), with delta(h)=h(x+y)-h(x)-h(y). This explains their
+known-framework status; it does not authorize division by those denominators
+modulo every prime. Their integer polynomial associators vanish without
+division. Six characteristic-three finite fits fail across primes.
+
+The released QRH manuscripts are external calibration sources pinned to
+adc7f1241b42e322a6451854ab7e4b4c146bf78a. The elementary Gauss conversion,
+Fourier masks and cube inversion have cited prior art in the manuscripts.
+The prime mark/rescale and local replacement tests cover universal finite
+algebra using integer proxies, with principal-row local rational factors.
+They do not establish the compatible theta comparisons or the manuscripts'
+uniform moment bounds. No full QRH proof was independently checked here.
+Sources and detailed coverage: qrh_operator_review.txt. Independent exact
+and native artifacts: qrh-results/, creative-results/.
+
+GLOBAL MOMENT DISCOVERY IS A KNOWN COMPUTATIONAL FRAMEWORK
+
+The new inequality grammar learns two different energy transfer matrices
+from generic polynomial inputs, then learns positive functionals and proves
+their every-level bounds by support identities and induction. Forty-eight
+operator programs give 24 universal transfers and 16 rejected finite fits.
+Arithmetic second moments use known character orthogonality, polynomial
+root counting and Cauchy bounds. Signed recursive and lacunary polynomial
+families are calibrations, not new prime information.
+
+Reviewed primary source: Shalosh B. Ekhad and Doron Zeilberger,
+Integrals Involving Rudin-Shapiro Polynomials and Sketch of a Proof of
+Saffari's Conjecture, arXiv:1605.06679v2 (2016), pages 2-4.
+https://arxiv.org/pdf/1605.06679
+It gives the exact fourth moment (4*4^j-(-2)^j)/3, attributed there to
+Littlewood, and computer-generated systems of mixed-moment recurrences.
+Thus the recovered formula and the general computer-algebra moment
+discovery strategy cannot be treated as historical novelties.
+Nearby broader Riesz-product moment framework:
+https://arxiv.org/abs/1805.10918
+Its abstract concerns weighted sums and sufficiently large lacunary ratios;
+we do not import it as a theorem proving our particular ternary formula.
+The latter has its own explicit coefficient/support proof and audit.
+
+The forcing-cost certificate is a geometric-series argument. Critical
+resonance creates a logarithmic scale loss; omitting it is rejected.
+These stages remain separate from the main twenty verified consequences
+and 150 full native-zeta comparisons. No new prime/Mobius cancellation,
+ordinary-zeta zero bridge, historical operator, or QRH/RH proof is verified.
+The research objective stays active. Proof: global_moment_proof.txt;
+independent artifacts and figure: global-moment-results/.
+
+FRACTIONAL ARITHMETIC LOGARITHM AND PRIME-SUPPORT MOMENTS
+
+Guariglia (2019), equation (1.1), gives exactly our fractional numerator
+N_alpha up to his explicit exp(i*pi*alpha) phase and attributes it to 2015.
+https://link.springer.com/article/10.1186/s13662-019-2202-5
+The published primary PDF and extracted text are cached in literature/fractional/.
+Integer mu*log^k functions, Dirichlet inversion and perfect-power Mobius
+removal are established operations. They are not novel primitives here.
+
+The closest 2024 paper explicitly treats logarithmic fractional zeta
+derivatives, but its full formulas were not obtained from the publisher.
+https://www.sciencedirect.com/science/article/pii/S2405896324009169
+Its public API returned metadata only; the PDF returned 403. The operator
+comparison is incomplete. D_alpha(log zeta) and (D_alpha zeta)/zeta agree
+at order one but differ at squarefree pq for fractional order. No identity
+or originality claim is inferred from the abstract. The compound B_alpha
+sign law, sharp gap and inverse therefore retain unresolved priority.
+Seven coefficient/API and six independent analytic gates establish validity
+in their stated domains, with only two old ordinary-zero branch controls.
+Detailed comparison and access evidence: fractional_prior_art_audit.txt.
+
+The support-moment count transfer is an elementary positivity/interval
+inequality. Learning its affine coefficients, using higher moments to
+suppress uniformly small scores, complete Fourier orthogonality, and
+integer recovery from a narrow interval are known frameworks. The new
+arithmetic implementation and six audit gates do not establish historical
+novelty or a new independent prime-distribution estimate. No ordinary-zero
+bridge is inherited automatically by coefficientwise powers. These stages
+remain separately typed; the verified-historically-new list is still empty.
+Proof and evidence: prime_moment_transfer_proof.txt, prime-moment-results/.
+
+The least-prime-factor score envelope and layer-cake integration now
+provide a genuine all-scale upper moment bound for the actual B_alpha
+family, using an imported uniform rough-number theorem. For B_(1/2),
+the fourth coefficient moment on [X,2X] is <=4*X/log X, every integer
+X>=2. Its complete injective Fourier family has second moment bounded
+by 4*H*X/log X. This imports known prime arithmetic rather than proving
+a new prime distribution theorem. The critical envelope keeps a loglog
+cost, without ruling out stronger bounds from additional arithmetic.
+
+Primary source for the imported theorem: Kai (Steve) Fan and Carl
+Pomerance, An inequality related to the sieve of Eratosthenes, author
+version dated 9 August 2023, Theorem A, page 1:
+https://math.dartmouth.edu/~carlp/erat060523rev.pdf
+The statement Phi(x,y)<x/log y is unconditional for x>=y>=2. The sharper
+constant with exceptions is not used. The full external sieve proof was
+not independently reverified. Cached primary PDF: literature/roughness/.
+Proof and quantitative scope: prime_roughness_moment_proof.txt. A finite
+roughness-exponent fit surviving through 4096 is rejected at an actual
+unbalanced prime coefficient near 2*10^12. No historical-new claim follows.
+
+UNEQUAL-SHIFT ARITHMETIC LOGARITHMS AND POSITIVE MIXTURES
+
+The exact compound kernel is log b/(log b+v log a), with Dirichlet inverse
+coefficients and perfect-power Mobius stripping. Its prime gap, strict
+sign, least-prime envelope, known-sieve M2 bound and nonzero zero-order
+signature have explicit proofs. A pole-regularized continuation criterion
+is equivalent to RH; the continuation itself remains unproved.
+
+The full four-page primary paper "Arithmetic Functions and Operators",
+Laohakosol, Pabhapote and Wechwiriyakul, ScienceAsia 27 (2001), 199-202,
+was read. It defines the established inverse/log-derivation operator and
+its triangular inverse, crediting Rearick (1968). Our v=1 is this known
+logarithm after normalization. For 0<v<1 the mixed squarefree coefficient
+and homomorphism failure distinguish the formulas, not all possible prior
+compositions. Primary PDF:
+https://thaiscience.info/Journals/Article/SCAS/10460000.pdf
+
+The current live primary paper is cached from the official journal PDF:
+https://www.scienceasia.org/2001.27.n3/v27_199_202.pdf
+The older ThaiScience direct endpoint now serves a landing redirect;
+the journal PDF is the preferred current source.
+
+More directly, for v>1/2 the unequal-shift family is a convergent geometric
+combination of known integer generalized logarithms R_j. Fourteen changed
+coefficient checks verify that closure and a prime counterexample rejects
+ordinary convergence at v=1/2. Fractional R_alpha/B_alpha is its beta
+mixture. Thus this is a compound resummation/deformation of established
+primitives; the exact compound's priority is unresolved. The missing full
+2024 fractional logarithmic paper remains a comparison gap. Absence of
+an exact search hit is not sufficient novelty evidence.
+
+Arbitrary positive finite mixtures of shifts preserve the proved prime
+gap, inverse and multiplicity signatures. Their coefficient M2 bound
+uses the same Fan-Pomerance sieve theorem and Jensen's inequality. It
+does not supply a new independent arithmetic cancellation estimate.
+Detailed comparison: shift_ratio_prior_art_audit.txt. Proof:
+shift_ratio_proof.txt. Evidence: shift-ratio-results/. The verified-new
+list remains empty, with the unbudgeted research objective still active.
+
+
+ESTIMATE SEARCH AND CERTIFICATE FEEDBACK
+
+The detector now proposes quantified growth estimates, tests separate scales,
+and searches explicit elementary and imported-theorem certificate backends.
+Twenty polynomial smoothing kernels produce 700 signed Mobius bounds.
+Complete arithmetic data through 131072 cannot certify global cancellation;
+214 finite survivors are rejected by their known ordinary-zeta zero residue.
+The engine recovers a classical prime-dilation cancellation bound and
+synthesizes twelve positive global-moment constants. Two mixture constants
+strictly improve the supplied Jensen bounds, using the same named classical
+sieve theorem. These are proof-certified consequences of known arithmetic,
+not newly discovered independent prime estimates or an RH proof.
+Missing uniform cancellation lemmas remain first-class search obligations.
+Proof: estimate_proof.txt. Evidence and standalone figures: estimate-results/.
+Run: ../.venv/bin/python run_expanded_probe.py --estimates-only.
+The verified-historically-new operator list remains empty.
+
+
+TARGET-PRESERVING ESTIMATE CERTIFICATE FEEDBACK
+
+The learned prime-dilation rows compose into exact coprime-row rewrites of
+the same smoothed Mobius target, preserving its ordinary-zeta Mellin
+transform. Four learned primes and fourteen conditioning sets synthesize
+280 all-scale affine estimates by piecewise Bernstein positivity and
+elementary finite-sieve discrepancy. No external sieve theorem enters this
+feedback layer. The W=1-u,P=2 calibration gives |S_W(X)|<=X/8+1.
+Every remaining estimate is checked at previously omitted small scales.
+Finite-prefix and monotone-tail certificates then prove sixty revised
+linear or weaker growth bounds. Counterexamples reject the original
+constants; they are never treated as proofs of those constants.
+The square-root signed cancellation subgoals remain open. Historical
+novelty and new independent prime-distribution estimates remain unproved.
+Proof: cancellation_rewrite_proof.txt. Evidence: estimate-results/.
+
+
+INDEPENDENT SEARCH PROCESS AND SIGNED-GAP COMPOUNDS
+
+DETECTOR_INDEPENDENCE_HANDOFF.md has been implemented as a separate frozen
+generic-language stage. Its known calibrations and evaluator-randomized
+in-language targets demonstrate recovery within an explicit representation,
+not publication novelty. Grammar promotion changes candidate admissions but
+produces no net final behavior count gain in pilot-002. Recovered identities,
+compressed macros and new catalogue entries do not increase the new-operator
+count. Earlier guided constructions retain their recorded origin.
+
+The guided signed-shift family now has automatic all-integer estimate
+certificates: seven proved bounds, ten counterexamples, four unsupported
+leads. The chosen u=1/3,v=5/7 compound has prime coefficient one and sharp
+composite bound 2/39, proved by exact rational simplexes and uniform elementary
+tail inequalities. This is mathematical verification of a specific compound
+and its estimate; historical priority is unresolved.
+
+Negative signed weights take these kernels outside the earlier positive
+mixture grammar. The selected scalar kernel has positive second derivative
+at zero, distinguishing it from the previously admitted positive Bernstein
+cone. A signed span of known arithmetic-logarithm ingredients is not thereby
+a new primitive. Its logarithm-dependent two-prime coefficient distinguishes
+it from a fixed multiplicative generalized-divisor coefficient family, but
+does not exclude every earlier nonmultiplicative composition.
+
+The composite upper bounds import no external prime-distribution theorem.
+Bertrand's postulate is named solely for sharpness of the supremum. This does
+not provide new prime counts or an RH-strength signed cancellation estimate.
+All-order nonzero leading zero signatures preserve the analytic obstruction;
+the required pole-regularized continuation remains unproved. Complete native
+numerical groups retain explicit parameter attribution in the signed report.
+The missing full 2024 fractional-logarithm comparison remains a priority gap.
+Verified-new operators remain zero pending a substantive historical audit.

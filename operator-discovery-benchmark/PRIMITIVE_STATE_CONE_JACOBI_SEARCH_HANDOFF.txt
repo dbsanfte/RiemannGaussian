@@ -1,0 +1,131 @@
+PRIMITIVE STATE CONE-JACOBI SEARCH — PUBLICATION020
+2026-10-09. Completed research experiment; no uniform arithmetic bound or RH proof.
+
+Outcome
+
+The first positive diagonal scaling experiment completed from publication018's
+exact endpoint. Forty gradient steps were accepted, each on its first Armijo
+trial. It stopped at the declared work reservation boundary, before starting
+step41; this is a budget stop, not convergence. The independently checked exact
+endpoint satisfies all5641 original rational equations but fails finite cone
+feasibility:227 negative square weights, two negative slack variables and two
+indefinite matrices. No negative split-relation weights occur. Total negative
+scalar count229, compared with141 in the starting point.
+
+Numerical proposal penalties:
+                         initial                 final
+  total                  137796.3420930164        1307.3979292438905
+  scalar                 137796.03583817906       1304.335939201048
+  matrix                 0.3062548373609863       3.061990042842565
+
+The total fell99.0512%, but the matrix penalty increased about tenfold. Thus
+scaling greatly improved this scalar-dominated penalty without resolving joint
+cone feasibility. The number of negative coordinates increased even as their
+aggregate squared magnitude decreased. These observations do not establish
+convergence, a forced face, or infeasibility of the finite grammar.
+
+Minimum scalar is coordinate64, about-21.836110047443576. Negative slacks are
+1592, about-3.4399789668359553, and1595, about-0.07536839436986384.
+full_child is the zero matrix and exactlyPSD with15 zero pivots. full_parent
+fails at Schur pivot3 and storage_K at pivot2. Independently verified original-
+matrix witnesses have negative quadratic values about-7.09149883484439 and
+-3.2247146684699035 respectively. Full rational witnesses are in check.json.
+
+Candidate hash:
+173890e7346120c1f063a554dbedcbfdc39ddc552b2d2386bf2ed09dadb4ead2
+Maximum candidate numerator/denominator size714bits; final free values reach
+535bits. This exceeds the269-bit search precision and confirms why the exact
+f0+D*z sum must not be rounded back to a search record.
+
+Method and scope
+
+Archive: cancellation-arithmetic-results/primitive-state-cone-jacobi-search-001.
+Publication017 supplies the independently proved affine chart; publication018
+supplies the full exact seed; publication019 supplies the preceding analysis.
+The1957 original variables,1224 projected variables, rank779 and445 free
+coordinates, source coefficients, target and cones are unchanged. No clipping,
+support selection, new elimination, numerical rank decision or precision retry.
+
+For every free coordinate the producer streamed one exact homogeneous column
+response, suppressing the affine RHS. Its norm includes all366 square weights,
+five slacks, C and H=P+4C, with off-diagonal matrix entries counted twice.
+For positive reported g, the exact scale D=2^-k satisfies4^(k-1)<g<=4^k.
+All445 columns completed. The reported exponents range0..17;124 records have
+zero norm and retain D=1 and their coordinates. No dense nullspace is stored.
+Zero products skip Fraction allocations after operand checks, with the same
+conservative arithmetic charge. Response4096/norm8192/temporary16385-bit caps
+and exponent abs<=900 were respected.
+
+The independent checker verifies every positive dyadic scale and its rounding
+rule from the exported records, but does not recompute the445 columns. Both
+column_norms_independently_verified and scaled_trace_bound_certified remainFalse.
+Strictly positive D preserves the feasible set regardless of norm correctness.
+The reported scaled-diagonal trace is a bounded optional diagnostic; exceeding
+its aggregation bit cap would return an explicit absent diagnostic, not revoke
+an otherwise valid positive coordinate change or certify the true trace.
+
+The centered search is f=f0+D*z with z initially0. Affine arithmetic uses80
+decimal digits/269bits, and PSD eigensolves and negative parts use binary64.
+Initial affine relative error against the exact018 point was about1.26e-71;
+scaled adjoint pairing error was about7.20e-70, below the fixed1e-40 gate.
+These are affine checks, not certification of numerical gradients or merit.
+Eight power steps gave an estimate about24.03637757 and initial step
+0.041603606745609464. The endpoint uses an exact rational sum f0+D*z, exact
+triangular restoration and the original canonical lift. Every original equation,
+all1597 scalar signs and all three PSD cones were independently checked.
+
+Verification and resources
+
+Frozen120-source closure;54 prescore tests passed in139.436s. Ten additional
+publication-gate tests passed. The independent whole-archive audit passed in
+19.568140512s with3282843 search/endpoint replay operations,9362004 total audit
+operations and4038055 audit cells. Review bindings use seven STEM keys:
+protocol/source_seal/input/seal/tests/execution/receipt; append.json for files.
+The source files and completed archive are now immutable.
+
+Worker244.980865577s wall,242.292321685s CPU,593844KiB peak RSS, about579.9MiB,
+one numerical thread. Limits:6GiB,1800s cooperative and3600s external; frozen
+prescore tests have a300s timeout. Map131072bytes, norms2MiB, proposal8MiB,
+endpoint1MiB and check64KiB are separate artifact caps. Actual map77979bytes;
+an actual-parent preflight caught the insufficient original64KiB proposal cap.
+
+One joint450m work ceiling includes preparation, tests, worker and final audit.
+Conservative worker stages: input/source binding148161457; map50m; norm/setup
+100m; proposal80m; endpoint20m; independently verified checker reserve9291016.
+Worker reserve407452473; final audit actual9362004; joint charged total416814477.
+The ledger reserved the full25m final audit up front, giving a still-conservative
+432452473 total before that audit was measured. Producer counters never reduce
+their stage allocations. No second uncharged research job or fallback was run.
+
+Informational producer counts: map11757168; columns90420920; columns plus scale
+installation90513433; proposal63573980; endpoint2105478. Norms took120.5411s and
+proposal37.5053s. Before the next iteration, remaining search work20820521 was
+less than worst-step4402861 plus finalization17354144, so the last complete
+accepted point was exported. The trace also reserves bytes before each step.
+
+Interpretation and next work
+
+The search infrastructure now supports a reversible coordinate preconditioner
+without weakening exact admission. This experiment supplies a rejected finite
+candidate and diagnostic evidence; it does not supply a new arithmetic estimate.
+The final five matrix penalties keep increasing while scalar penalties decrease.
+A subsequent search should explicitly address competing cone defects rather
+than judge progress only from the total penalty. General positive block weights
+or a balanced feasibility objective are options to preregister and test; this
+run does not show that either will succeed or that the current path cannot
+eventually reach feasibility.
+
+The expensive positive diagonal can be reused as proposal data for the same
+licensed chart without claiming independently proved norm values. Any new
+continuation must bind this endpoint and all scale records and account for all
+new work. The current module specifically calibrates a269-bit-representable
+publication018 center; blindly replacing it with this535-bit free vector would
+fail that requirement. A new version must retain exact center-plus-increment
+coordinates or explicitly handle bounded rounding of an exact center, while
+preserving exact final sums and the original endpoint gates.
+
+Finite cone feasibility, a universal nonconstant identity for a fixed positive
+candidate, the uniform arithmetic inequality and ordinary-zeta recovery remain
+unresolved. Publication019's supplied symbolic identities remain available as
+proof infrastructure; they do not discharge these obligations. All global-bound,
+RH, exact-admission and infeasibility flags remainFalse.

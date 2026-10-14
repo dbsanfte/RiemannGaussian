@@ -1,0 +1,514 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 751403210,
+  "argument_operations": 355397,
+  "certificates": [
+    {
+      "artifact": "norm_001.json",
+      "id": "family_0329_N40"
+    },
+    {
+      "artifact": "norm_002.json",
+      "id": "family_0329_N80"
+    },
+    {
+      "artifact": "norm_003.json",
+      "id": "rule_01_N40_forcing"
+    },
+    {
+      "artifact": "norm_004.json",
+      "id": "family_0329_N64"
+    },
+    {
+      "artifact": "norm_005.json",
+      "id": "family_0329_N128"
+    },
+    {
+      "artifact": "norm_006.json",
+      "id": "rule_01_N64_forcing"
+    },
+    {
+      "artifact": "norm_007.json",
+      "id": "family_0329_N160"
+    },
+    {
+      "artifact": "norm_008.json",
+      "id": "rule_01_N80_forcing"
+    },
+    {
+      "artifact": "norm_009.json",
+      "id": "family_0341_N40"
+    },
+    {
+      "artifact": "norm_010.json",
+      "id": "family_0341_N80"
+    },
+    {
+      "artifact": "norm_011.json",
+      "id": "rule_02_N40_forcing"
+    },
+    {
+      "artifact": "norm_012.json",
+      "id": "family_0341_N64"
+    },
+    {
+      "artifact": "norm_013.json",
+      "id": "family_0341_N128"
+    },
+    {
+      "artifact": "norm_014.json",
+      "id": "rule_02_N64_forcing"
+    },
+    {
+      "artifact": "norm_015.json",
+      "id": "family_0341_N160"
+    },
+    {
+      "artifact": "norm_016.json",
+      "id": "rule_02_N80_forcing"
+    },
+    {
+      "artifact": "norm_017.json",
+      "id": "family_0343_N40"
+    },
+    {
+      "artifact": "norm_018.json",
+      "id": "family_0343_N80"
+    },
+    {
+      "artifact": "norm_019.json",
+      "id": "family_0343_N64"
+    },
+    {
+      "artifact": "norm_020.json",
+      "id": "family_0343_N128"
+    },
+    {
+      "artifact": "norm_021.json",
+      "id": "family_0343_N160"
+    }
+  ],
+  "checker_operations": 6824403737,
+  "compiler_counts": {
+    "max_power_bits": 242,
+    "operations": 586704
+  },
+  "cross_effect_counts": {
+    "strict_cancellation": 2,
+    "strict_reinforcement": 4,
+    "unresolved_interval": 0,
+    "zero_by_restatement": 3
+  },
+  "development_receipts": {
+    "check_floor_residual_arguments_043_development.json": {
+      "edits_stopped": true,
+      "external_pre_suite_integration_failure": "Root preserves decimal Arb display/endpoints mismatch and corrected focused integrations in floor_residual_runner_043_development.json; not an owned-suite run.",
+      "fix": "Use exact Fraction seeds for empty indicator/floor sums in M; avoid float tail in H=0 empty program.",
+      "operations": 201324,
+      "owner": "check_floor_residual_arguments_043",
+      "runs": [
+        {
+          "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_043",
+          "elapsed_seconds": 0.1535653059836477,
+          "operations": 168204,
+          "peak_rss_KiB": 28656,
+          "returncode": 1,
+          "stderr": ".........E..........\n======================================================================\nERROR: test_independent_heap_head_vs_direct_rational_cells (test_check_floor_residual_arguments_043.FloorProofAdmission)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_floor_residual_arguments_043.py\", line 119, in test_independent_heap_head_vs_direct_rational_cells\n    c=fixture(p,H);out=V.verify_norm(p,c,meter=METER)\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/check_floor_residual_arguments_043.py\", line 274, in verify_norm\n    if not _eq(certificate,expected):raise ValueError('altered norm/tail/domain/scope certificate')\nValueError: altered norm/tail/domain/scope certificate\n\n----------------------------------------------------------------------\nRan 20 tests in 0.089s\n\nFAILED (errors=1)\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_043 operations=168204 checker_operations=147274 fixture_operations=20930 elapsed_seconds=0.08957763196667656\n",
+          "tests": 20
+        },
+        {
+          "command": "synthetic empty-program certificate diagnostic (no verification suite)",
+          "elapsed_seconds": 4.2882e-05,
+          "operations": 1797,
+          "purpose": "Identify integer empty-sum division producing checker float 1.0.",
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "Independent producer diagnostic for H=0: exact tail upper=1; counts.operations=1797.",
+          "tests": 0
+        },
+        {
+          "command": "../.venv/bin/python -B -m unittest test_check_floor_residual_arguments_043.FloorProofAdmission.test_independent_heap_head_vs_direct_rational_cells",
+          "elapsed_seconds": 0.07656691398005933,
+          "operations": 31323,
+          "peak_rss_KiB": 28372,
+          "purpose": "Only affected exact empty-program tail fix regression.",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_floor_residual_arguments_043 operations=31323 checker_operations=22630 fixture_operations=8693 elapsed_seconds=0.007499116996768862\n",
+          "tests": 1
+        }
+      ],
+      "scope": "synthetic pure floor and affine forcing programs; one owned suite; no earlier-suite rerun",
+      "source_observations": 0,
+      "test_invocations": 21,
+      "tests_distinct": 20
+    },
+    "floor_residual_interval_043_development.json": {
+      "actual_new_programs_evaluated": false,
+      "cumulative_operations": 83639,
+      "hashes_generated": false,
+      "invocations": [
+        {
+          "elapsed_seconds": 0.022160620021168143,
+          "errors": 0,
+          "exposure": "synthetic rational floor/step fixtures and closed calibrations only",
+          "failures": 0,
+          "operations": 83639,
+          "peak_bytes_estimate": 110786,
+          "peak_integer_bits": 42,
+          "returncode": 0,
+          "tests": 11
+        }
+      ],
+      "old_suites_or_studies_rerun": false,
+      "parent_source_data_read": false,
+      "schema": "floor-residual-interval-development-v1"
+    },
+    "floor_residual_runner_043_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.07152656896505505,
+          "errors": 1,
+          "exposure": "one constant synthetic recipe compiled without norm evaluation; signed rational toy norm128; artificial diagnostics",
+          "failures": 0,
+          "returncode": 1,
+          "tests": 3
+        },
+        {
+          "elapsed_seconds": 0.08532652503345162,
+          "errors": 0,
+          "exposure": "one constant synthetic recipe compiled without norm evaluation; signed rational toy norm128; artificial diagnostics",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 4
+        },
+        {
+          "elapsed_seconds": 0.001013384957332164,
+          "errors": 0,
+          "exposure": "synthetic diagnostic only; new signed-cross necessity classification",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 1
+        }
+      ],
+      "schema": "owned-development-v1"
+    },
+    "floor_residual_search_043_development.json": {
+      "invocations": [
+        {
+          "elapsed_seconds": 0.18396666797343642,
+          "errors": 0,
+          "exposure": "synthetic rational floor programs; arithmetic sieve values<=64; one exact syntax fixture; no recipe scores",
+          "failures": 0,
+          "returncode": 0,
+          "tests": 8
+        },
+        {
+          "elapsed_seconds": 0.0019623079570010304,
+          "errors": 0,
+          "exposure": "synthetic selection and logarithmic coordinates only; pre-data rate obstruction correction",
+          "failures": 0,
+          "returncode": 0,
+          "test_names": [
+            "test_selection_is_closed_to_final_data_and_no_expected_winner",
+            "test_log_rate_coordinates_and_impossible_contraction_not_ranked"
+          ],
+          "tests": 2
+        }
+      ],
+      "schema": "owned-development-v1"
+    }
+  },
+  "elapsed_seconds": 95.39460347098066,
+  "family_convergence_proved": false,
+  "family_count": 434,
+  "final_cases": 9,
+  "final_logarithmic_forcing_refuted": 0,
+  "final_logarithmic_forcing_unresolved": 0,
+  "final_logarithmic_forcing_verified": 9,
+  "final_relative_forcing_refuted": 9,
+  "final_relative_forcing_unresolved": 0,
+  "final_relative_forcing_verified": 0,
+  "full_signed_core_bound_proved": false,
+  "independently_replayed_all_norms": true,
+  "parent_peak_rss_kib": 704032,
+  "prior_studies_rerun": 0,
+  "producer_operations": 1620548988,
+  "refinement_count": 4340,
+  "search_counts": {
+    "max_power_bits": 259,
+    "operations": 647784429
+  },
+  "selected_rules": [
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "audit_tau": "1/4",
+      "b": "1/2",
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "1/2",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "9/7",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "9/16",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/8",
+        "verified": true,
+        "young_parameter": "7/2"
+      },
+      "family": "family_0329",
+      "finite_contraction_tau": null,
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_01",
+      "q": 2,
+      "recipe": {
+        "anchor_cell_one": false,
+        "channel": "mu_plus_half_liouville",
+        "decay": "0",
+        "id": "family_0329",
+        "taper": {
+          "alpha": "2/7",
+          "gamma": "1"
+        }
+      },
+      "relative_conditional_gate": {
+        "RH_proved": false,
+        "admissible": true,
+        "b": "1/2",
+        "conditional_result": "norm(e_(N0*q^j))^2<=rho^j*norm(e_N0)^2; tends to0",
+        "contraction_energy_coefficient": "63/80",
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "finite_norms_discharge_leaf": false,
+        "gap": "5/8",
+        "imported_lower_bound": {
+          "RH_refuted": false,
+          "bound": "liminf_(N->infinity) log(N)*norm(e_N)^2>0",
+          "conclusion": "uniform geometric norm decay is impossible in this domain",
+          "domain": "pure floor targets with maxsupport<=N; along N=N0*q^j",
+          "growing_support_convergence_refuted": false,
+          "provider": "Burnol Theorem1.3; imported unconditional lower bound",
+          "source": "https://arxiv.org/pdf/math/0103058"
+        },
+        "leaf": {
+          "domain": "EVERY j>=0,N=N0*q^j; one fixed recipe and fixed parameters",
+          "inequality": "norm(h_N)^2<=tau*norm(e_N)^2",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "search_role": "negative calibration; not a viable uniform convergence provider",
+        "strict_margin": "17/64",
+        "t": "1/8",
+        "tau": "1/4",
+        "uniform_geometric_gate_excluded_for_linear_support": true,
+        "verified": true,
+        "young_parameter": "5/2"
+      },
+      "stratum": "positive_refinement",
+      "tau_selection": "negative calibration only: training match, otherwise largest admissible frozen tau",
+      "uniform_geometric_contraction": "EXCLUDED_BY_IMPORTED_BURNOL_LOWER_BOUND"
+    },
+    {
+      "audit_log_bound": {
+        "A": "4",
+        "eta": "1"
+      },
+      "audit_tau": "1/16",
+      "b": "-1",
+      "conditional_gate": {
+        "A": "4",
+        "RH_proved": false,
+        "b": "-1",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "12",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "3/4",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "1/2",
+        "verified": true,
+        "young_parameter": "1/2"
+      },
+      "family": "family_0341",
+      "finite_contraction_tau": null,
+      "finite_log_bound": {
+        "A": "4",
+        "eta": "1"
+      },
+      "id": "rule_02",
+      "q": 2,
+      "recipe": {
+        "anchor_cell_one": false,
+        "channel": "mu_plus_half_liouville",
+        "decay": "0",
+        "id": "family_0341",
+        "taper": {
+          "alpha": "1/2",
+          "gamma": "1"
+        }
+      },
+      "relative_conditional_gate": {
+        "RH_proved": false,
+        "admissible": true,
+        "b": "-1",
+        "conditional_result": "norm(e_(N0*q^j))^2<=rho^j*norm(e_N0)^2; tends to0",
+        "contraction_energy_coefficient": "207/224",
+        "convergence_proved": false,
+        "endpoint_restatement": false,
+        "finite_norms_discharge_leaf": false,
+        "gap": "7/16",
+        "imported_lower_bound": {
+          "RH_refuted": false,
+          "bound": "liminf_(N->infinity) log(N)*norm(e_N)^2>0",
+          "conclusion": "uniform geometric norm decay is impossible in this domain",
+          "domain": "pure floor targets with maxsupport<=N; along N=N0*q^j",
+          "growing_support_convergence_refuted": false,
+          "provider": "Burnol Theorem1.3; imported unconditional lower bound",
+          "source": "https://arxiv.org/pdf/math/0103058"
+        },
+        "leaf": {
+          "domain": "EVERY j>=0,N=N0*q^j; one fixed recipe and fixed parameters",
+          "inequality": "norm(h_N)^2<=tau*norm(e_N)^2",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "search_role": "negative calibration; not a viable uniform convergence provider",
+        "strict_margin": "17/256",
+        "t": "1/2",
+        "tau": "1/16",
+        "uniform_geometric_gate_excluded_for_linear_support": true,
+        "verified": true,
+        "young_parameter": "7/16"
+      },
+      "stratum": "negative_refinement",
+      "tau_selection": "negative calibration only: training match, otherwise largest admissible frozen tau",
+      "uniform_geometric_contraction": "EXCLUDED_BY_IMPORTED_BURNOL_LOWER_BOUND"
+    },
+    {
+      "audit_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "audit_tau": "1/2",
+      "b": "0",
+      "conditional_gate": {
+        "A": "1",
+        "RH_proved": false,
+        "b": "0",
+        "conditional_energy": "rho^j*E0+B*sum_(i=0..j-1)rho^(j-1-i)/(1+i)^eta",
+        "conditional_tends_to_zero": true,
+        "convergence_proved": false,
+        "endpoint_restatement": true,
+        "eta": "1",
+        "finite_norms_discharge_leaf": false,
+        "forcing_multiplier": "1",
+        "leaf": {
+          "L": "1+floor(log2(N))=N.bit_length()",
+          "domain": "EVERY j>=0,N=N0*q^j; integer N0>=1; one fixed recipe and parameters",
+          "inequality": "norm(h_N)^2<=A/L(N)^eta",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "rho": "0",
+        "scale_lower_bound": "L(N0*q^i)>=1+i",
+        "t": "0",
+        "verified": true,
+        "young_parameter": null
+      },
+      "family": "family_0343",
+      "finite_contraction_tau": "1/2",
+      "finite_log_bound": {
+        "A": "1",
+        "eta": "1"
+      },
+      "id": "rule_03",
+      "q": 2,
+      "recipe": {
+        "anchor_cell_one": false,
+        "channel": "mu_plus_half_liouville",
+        "decay": "1/7",
+        "id": "family_0343",
+        "taper": {
+          "alpha": "1/2",
+          "gamma": "1"
+        }
+      },
+      "relative_conditional_gate": {
+        "RH_proved": false,
+        "admissible": true,
+        "b": "0",
+        "conditional_result": "norm(e_(N0*q^j))^2<=rho^j*norm(e_N0)^2; tends to0",
+        "contraction_energy_coefficient": "1/2",
+        "convergence_proved": false,
+        "endpoint_restatement": true,
+        "finite_norms_discharge_leaf": false,
+        "gap": "1/2",
+        "imported_lower_bound": {
+          "RH_refuted": false,
+          "bound": "liminf_(N->infinity) log(N)*norm(e_N)^2>0",
+          "conclusion": "uniform geometric norm decay is impossible in this domain",
+          "domain": "pure floor targets with maxsupport<=N; along N=N0*q^j",
+          "growing_support_convergence_refuted": false,
+          "provider": "Burnol Theorem1.3; imported unconditional lower bound",
+          "source": "https://arxiv.org/pdf/math/0103058"
+        },
+        "leaf": {
+          "domain": "EVERY j>=0,N=N0*q^j; one fixed recipe and fixed parameters",
+          "inequality": "norm(h_N)^2<=tau*norm(e_N)^2",
+          "status": "OPEN"
+        },
+        "q": 2,
+        "search_role": "negative calibration; not a viable uniform convergence provider",
+        "strict_margin": "1/4",
+        "t": "0",
+        "tau": "1/2",
+        "uniform_geometric_gate_excluded_for_linear_support": true,
+        "verified": true,
+        "young_parameter": null
+      },
+      "stratum": "endpoint_restatement_control",
+      "tau_selection": "negative calibration only: training match, otherwise largest admissible frozen tau",
+      "uniform_geometric_contraction": "EXCLUDED_BY_IMPORTED_BURNOL_LOWER_BOUND"
+    }
+  ],
+  "signed_mechanism_counts": {
+    "bound_survives_absolute_cross_replacement": 6,
+    "endpoint_restatement": 3
+  },
+  "status": "FLOOR_RESIDUAL_GLOBAL_NORMS_VERIFIED_FAMILY_CONVERGENCE_OPEN",
+  "training_b_zero_matches": 17,
+  "training_finite_contraction_matches": 56,
+  "training_finite_log_bound_matches": 3698,
+  "whole_domain_norm_certificates": 21,
+  "worker_max_individual_rss_kib": 138220
+}

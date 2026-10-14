@@ -1,0 +1,102 @@
+INTERVAL RESIDUAL PRIME-FOLD SEARCH077: PRE-RUN PROTOCOL
+
+Purpose
+
+Apply the076 residual-construction grammar to actual admitted arithmetic
+and have the detector certify both finite coefficient bounds and a generic
+uniform obstruction to the fixed-prime absolute-coefficient method. These
+are distinct tasks. A failed method does not refute a signed arithmetic
+candidate. Preserve all076 residual/correlation counterexamples and leaves.
+No RH/source/head/core theorem is assumed or supplied by finite survival.
+
+Representation and independent admission
+
+Compile the exact076 G(u)-L(u) using actual prime quotient multiplicities,
+direct children and arbitrary admitted rational inverse-count powers.
+The producer regenerates prime membership only, without new mu queries.
+The independent checker regenerates primes, cutoffs, counts, components
+and count-root intervals itself. Original z/B/Q data require matching
+stored independent075 source admission on the complete076 datasets.
+
+Each coefficient function is a list of disjoint integer intervals(l,r]
+carrying exact rational polynomials in named real count tokens. Combine
+endpoint events; never allocate one coefficient object per integer. A fold
+by p changes the FULL coefficient function f(m) to f(m)-f(pm), whose
+scaled interval endpoints are floor(l/p),floor(r/p). The represented
+Mobius sum separately retains gcd(m,product(P))=1. Do not zero function
+values on excluded indices before a later fold. Retain units, prime-square
+relations, every boundary and all signed prime/direct interactions.
+
+On each coefficient interval the coprime multiplicity is EXACTLY
+ sum_(d divides product(P))mu(d)(floor(r/d)-floor(l/d)).
+Compute its full signed polynomial interval before taking its absolute
+upper/lower envelope. Summing multiplicities times those envelopes gives
+certified bounds on coefficient l1. Its upper value bounds the absolute
+Mobius aggregate by |mu|<=1. Its lower value does NOT bound the absolute
+arithmetic sum from below; it can only reject an overly small l1 price.
+
+Search and scientific boundary
+
+Read all51 frozen076 proof programs. Deduplicate identical(q,atoms,operator)
+triples to48 construction jobs while retaining EVERY alias/disposition.
+Search candidate prime schedules from2,3,5,7,11,13 with beam width3 and
+depth4. This is a bounded construction grammar, not an exponent whitelist.
+For every proposal compute exact l1 upper prices on8 construction-discovery
+parents: k64,256,1024,4096, phases0,79, u=80k-phase. Minimize the maximum
+certified squared price divided by u^q, using exact rational power enclosures.
+No Mobius values, numerical residuals or observed mu signs enter selection.
+Keep only the best3 states per layer and deduplicate commuting prime sets.
+
+Freeze each selected schedule/formula before its6 construction-validation
+parents: k16384,32768,65536, phases0,79. Independently verify the complete
+source compiler, every fold and coefficient price on all14 selected parents.
+These are already observed076 arithmetic, not an independent historical
+holdout, nor all80 phases or all intermediate parents. No C/operator/q is
+refit. No new final arithmetic prefix is requested by this experiment.
+
+Uniform obstruction discovery
+
+Give the detector the rational step kernel (8,+1),(10,-1),(4,-1),(5,+1),
+the literal child rank at most u/2, selected fixed prime schedule and q.
+Its generic kernel scanner searches breakpoint bands(alpha,beta] where
+the kernel coefficient c is nonzero, alpha is beyond every child horizon,
+and alpha>=kernel_horizon/2. Such a band survives all higher fold dilations.
+This is a generic prefix-kernel rule, not a special-cased expected G result.
+
+Let delta=product_(p in P)(p-1)/p. Exact inclusion-exclusion and floor
+errors prove the coprime band count is at least
+ delta*(beta-alpha)*u - 2^|P|.
+Consequently coefficient l1 is at least A*u-E, with
+A=|c|delta(beta-alpha)>0, E=|c|2^|P|, and at least A*u/2 for
+u>=ceil(2E/A). The independent checker validates all kernel, band, prime,
+coefficient and rational constant conditions. For fixed1<=q<2 this rules
+out a uniform coefficient-l1-square bound C*u^q for any finite constant C.
+It does NOT rule out cancellation in the represented signed Mobius sum.
+The same obstruction applies to a fixed finite catalogue of such schedules.
+Growing schedules need their own uniform analysis; pointwise maximization
+or total factor elimination can simply encode the original target.
+
+Output and continuation
+
+Retain discovery searches, immutable selected constructions, per-row source
+bindings, interval/fold certificates, exact price envelopes, generic
+all-scale method obstructions, every old076 failure and source dependency.
+Export the remaining signed coprime aggregate as a new bound-search target,
+with prime/composite interaction, count jumps, units and boundary terms
+explicit. Arithmetic candidates remain unrefuted by the METHOD obstruction.
+No all-scale positive residual bound, exponent improvement, full epsilon
+family, joined remainder, head/core transfer or RH result is asserted.
+
+Resources and preservation
+
+Preserve461 earlier frozen source/postrun files by direct byte comparison.
+Freeze10 new077 files before any scientific construction scoring. No hashes.
+Three worker processes, native numerical threads1, aggregate16GiB and
+whole-stage7200s. Per-meter work cap3e11. Resource estimates include prime
+cache/source groups, retained beam states, transient interval events and
+polynomial coefficient sizes; rational-intermediate gates precede products.
+The independent checker uses actual input/interval sizes and bounded exact
+arithmetic rather than a worst-case fixed allocation at every integer index.
+Development includes large-horizon tiny-interval and complete tiny-runner
+tests, with independently reconstructed source/fold/root checks. Do not
+rerun unchanged historical test suites or Mobius scientific searches.

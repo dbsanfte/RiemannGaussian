@@ -1,0 +1,284 @@
+Universal identity backend for primitive/full15 grammar: design v1
+2026-10-09. New analysis only; existing/frozen/published sources unchanged.
+No research solver, source instance rebuild, heavy elimination or archive run.
+
+Conclusion and smallest implementable fragment
+
+Add a bounded, independently replayed proof DAG for PARAMETRIC guarded finite
+sums, with exact commutative-ring rules and complementary-domain partitions.
+Its first useful fragment can universally prove complete inside+outside and
+rowmass all=head+tail identities, plus weighted inverse-row/square closures.
+It can reject malformed source transformations and exactly refute a false
+universal identity with a legal finite counterexample. It cannot infer a
+universal identity from a matching grid or prove the whole full15 target by
+sampling. A certificate for the remaining quartic coefficient cancellations
+would still have to be supplied; the proposed fragment is a real proof layer,
+not a claim that such a full certificate is currently known.
+
+Existing pieces and what is new
+
+cancellation_arithmetic_language.py:247 compile_expression expands at a GIVEN
+integerX. Its partition(:255) inserts predicate/not-predicate under leading
+sums; polarization(:271) generates an exact ring identity. It has no universal
+proof DAG connecting generated source expressions to the target at everyX.
+autonomous_grammar.py:285 polynomial_certificate proves its restricted closed
+commutative polynomial sort, explicitly leaving unsupported sums/maps unknown.
+Reuse its mathematical ring principle, not its unsupported scope.
+cancellation_factor_blocks.py:79-103 enumerates pairs and verifies finite
+inside/complement and coprime rewrites; check_cancellation_factor_blocks.py:57
+and :85 independently reconstruct those finite instances.
+cancellation_divisor_coupling.py:43-68 and its independent checker verify the
+weighted inverse-row and difference-of-squares closure at supplied finiteH.
+A parametric proof kernel can certify the SAME algebra at arbitraryH and weights,
+without duplicating finite arithmetic generation or inventing an estimate.
+
+Three judgments must remain distinct
+
+1. FORMAL_EQ: forall declared integer parameters and forall formal coefficient
+   variables x_n, P=Q as polynomials. This is the judgment required to establish
+   universal nonconstant coefficient matching for the existing certificate cone.
+2. MU_EQ: P(mu)=Q(mu) for actual mu=Dirichlet inverse ofOne, from valid arithmetic
+   premises. A primitive rho(mu)=0 is a MU_EQ fact, not FORMAL_EQ(rho,0).
+3. INEQUALITY: arithmetic equality plus exact nonnegative square/PSD/coercivity
+   and a separate scalar bound yields an all-scale operator inequality.
+
+There is NO rule converting MU_EQ into FORMAL_EQ. For example x1-1 vanishes
+at actualmu but is a nonzero formal polynomial. An arithmetic proof can support
+a separately typed new inequality backend, but cannot masquerade as admission
+of the current formal coefficient identity. The new scalar-readiness gate in
+the preceding note likewise is not the missing FORMAL_EQ certificate.
+
+Proposed certificate envelope
+
+Version: primitive-state-parametric-sum-proof-v1.
+Context: X is an integer>=1; optionally dyadicX=2^m,m integer>=0. All bound
+index variables are integers with explicit finite inclusive intervals. State
+formal indeterminates x_n, 1<=n<=4X-1. Explicit coefficients are canonical
+bounded rationals. Candidate weights/matrices and every descriptor/source
+recipe have IDs and exact values/hashes; no coefficient may depend onX unless
+that dependence is already an internal source weight in the frozen grammar.
+
+Envelope fields: version, context, grammar_definition_hashes, candidate_hash,
+source_recipe_ids, exact_coefficient_table, theorem_judgment, lhs_root_id,
+rhs_root_id, AST_DAG, proof_DAG, conclusion_id, limits, charged_counts.
+Each proof node specifies rule ID/version, earlier premise IDs, operand IDs,
+explicit substitutions/side-condition certificate IDs, and output IDs.
+No executable callbacks, unconstrained lemma text, user-supplied rewrite code,
+implicit coordinates, or producer-computed normal form is trusted. The checker
+rebuilds each conclusion from its premises under a small whitelisted rulebook.
+A cyclic DAG, missing source term, wrong scope or unsupported rule rejects
+that certificate; it does not establish mathematical inequality falsity.
+
+Universal source binding is stronger than a source hash. A separately checked
+adapter must produce a symbolic recipe for EACH of the366 square and613 relation
+groups, both full15 regional sources, storage child-4parent, and the full target.
+It must compare descriptor IDs/order, atom formulas, index endpoints, masks,
+factors, cut/root conventions and complements against the existing definitions.
+Hashing an arbitrary truncated AST is not a semantic binding to those sources.
+The first fragment need not adapt every group: partial proof status must list
+its exact covered recipes and never claim the whole target was proved.
+
+Typed symbolic syntax
+
+Index terms: integer literals/variables, bounded integer addition/subtraction/
+product, gcd, exact division under a divisibility side condition, min/max,
+integer floor/ceiling root nodes with rational parameter records.
+Predicates: equality/order/divides/coprime/prime/squarefree, and Boolean
+and/or/not. Arithmetic predicates are opaque exact Boolean functions unless a
+specific admitted rule proves a relation between them. No density approximation
+or sampled truth value is used in a symbolic guard.
+Scalar coefficients: rationals and specified index-dependent internal weights;
+opaque exact arithmetic constants sf(n)=1_(n squarefree), prime-power local values, indicator
+functions, and weight kernels retain their definitions. Formal polynomials:
+x(index), constant, addition, product, rational scaling, square, guard, finite
+sum, and named primitive-polynomial definitions. Bound variables use canonical
+IDs or deBruijn indices to prevent capture. Free-variable sets, finiteness,
+index horizon and formal degree annotations are checked independently.
+
+A sum normal form retains a COMMON domain/predicate and an exact polynomial
+body. It may normalize ring expressions locally or combine identical guarded
+summands, but does not enumerate a parameter-sized interval. It does not equate
+two different arithmetic guards merely because sampled values agree. Opaque
+sums can be treated as ring atoms only after their definitions are bound; this
+proves algebraic combinations of sums without asserting identities between
+unrelated sum atoms.
+
+Minimal rulebook with independently checked side conditions
+
+ALPHA: rename a bound variable capture-freely.
+RING: exact polynomial normalization in the local commuting expression atoms;
+      validates distributivity, associativity, square expansion and factorization.
+SUM_LINEAR: split/add/scaling inside sums; pull a factor outside only if it
+      is independent of that bound variable. No hidden dependence through a cut.
+GUARD_BOOL: complement, conjunction and identical-predicate Boolean identities.
+PARTITION: Sum_D F = Sum_D [phi]F + Sum_D [not phi]F, sameD/F/phi and multiplicity.
+      Works even when phi is false everywhere or true everywhere.
+RANGE_SPLIT: replace a finite range by guards i<=k and i>k; no assumption that
+      k lies within the interval is needed when both guarded pieces are retained.
+RECT_FUBINI: swap sums over a COMMON finite Cartesian box, retaining the same
+      guard. Dependent bounds first require a licensed guarded-box conversion.
+BOUND_ROW_TRIANGLE: for X>=1, t in[2X,4X-1], n in[1,t] is exactly n in[1,4X-1],
+      t in[2X,4X-1], n<=t; equivalently t in[max(2X,n),4X-1]. This specific
+      linear-order lemma has a short independent checker, not a generic oracle.
+REINDEX: only registered explicit bijections with inverse and domain proofs.
+      First include swapping independent indices and d*k=n under d|n,k>=1.
+      Do not admit a transformation merely because a producer supplies a map.
+DEF_EXPAND: expand an approved named source/primitive definition exactly.
+MU_PRIMITIVE: imported proved arithmetic primitive vanishing, output onlyMU_EQ.
+MU_CONGRUENCE: multiply/sum arithmetic equalities over a complete finite domain.
+
+Every rule charges actual DAG/node/local ring operations and checks output size,
+coefficient bits, scope and degree. Local distributive expansion can blow up;
+stop UNKNOWN at the bound rather than deleting inconvenient terms. Independent
+verification must not import the certificate producer's rewriting implementation.
+
+Rational-root divisor cuts and boundaries
+
+For a nonnegative rational coefficient c/d, powerp/q>=0 and integer t>=1,
+normalize the definition
+    k=floor((c/d)*t^(p/q))
+to the unique integerk>=0 satisfying
+    d^q*k^q <= c^q*t^p < d^q*(k+1)^q,
+with c>=0,d>0,p>=0,q>=1 and reduced rational parameter records. The cases c=0
+and p=0 remain explicit. For c>0, monotonicity/unboundedness of integer powers
+provides existence/uniqueness; a supplied root-definition lemma establishes
+this, not evaluation at selectedt. Ceiling-root nodes are DIFFERENT definitions
+with their own inequality/equality endpoint conventions.
+
+The crucial first fragment does not need root comparison solving. Partition
+at d_index<=k versus d_index>k is an identity for ANY integerk. It only needs
+both occurrences to reference the SAME well-typed cutoff AST. This immediately
+handles theta1/3,1/2,2/3 divisor cuts and rational factor-cell cuts. The equality
+case belongs to the inside<=piece. Replacing floor by ceiling, changing t toX,
+using a different rational coefficient, or losing the equality boundary changes
+that AST and must fail source binding. Proving a reindexing that crosses a
+root threshold requires additional exact side-condition rules and remains
+unsupported in the initial fragment.
+
+Primitive relations and semantic imports
+
+Formal definitions retain all index arguments and arithmetic constants:
+unit x1-1; norm xn^2-sf(n), sf(n)=1_(n squarefree); prime power x_(p^e)+1 for e1 and x_(p^e) for e>=2;
+squarefree-zero xn on a proved nonsquarefree domain; inverse row Sum_(d|n)xd
+forn>=2; coprime xa*xb-x_(ab) with gcd(a,b)=1 and ab<=4X-1; complete mu gcd
+product with g=gcd(a,b),u=a/g,v=b/g, squarefree(g) and coprime(g,uv) indicators.
+See arithmetic_cycle_language.py:relation and grouped_arithmetic_language.py
+:_relation. The symbolic adapter must keep every prime power, diagonal/gcd
+case, index horizon and family source domain. The seven primitive-state
+families retain their actual complete sum domains, not selected primitive rows.
+
+MU_PRIMITIVE can import the elementary global proofs from the defining actual
+Dirichlet-inverse/Euler-factor law and factor algebra. These supplied lemmas
+must have fixed IDs and independently reviewed proofs; finite factor witnesses
+at a fewn are not a proof for everyn. This is still a written mathematical
+kernel, not a formal proof-assistant claim. Formal primitive EXPANSION and
+arithmetic primitive VANISHING are separate rule IDs and judgments.
+
+Hand-worked universal proof A: complete divisor partition
+
+For anyt>=1 and any integercutk(t), with arbitrary specified weightw(a,t), let
+    F(t)=Sum_(1<=a<=t) Sum_(1<=d<=t) [d|a] w(a,t)*xa*xd,
+    I(t)=same sum with the additional guard d<=k(t),
+    O(t)=same sum with the additional guard d>k(t).
+PARTITION with phi=(d<=k(t)), followed by GUARD_BOOL, proves FORMAL_EQ(F,I+O)
+for everyt, hence for every required parent/child sum over t. No Mobius premise,
+prime estimate or expansion horizon is used. This preserves ordered source
+multiplicity; dividing out symmetric pairs or discarding d=a would change it.
+It implies the complete normalized contrast identity
+    D=(I-O-1)/2, Z=I+O-1=F-1
+by RING. It does NOT imply that D^2 is small or that its negative source
+contribution can be replaced by an absolute majorant without cost.
+
+An exact obstruction example: theta1/3,t2,power0 gives k=1 since1^3<=2<2^3.
+Then F=x1^2+x1*x2+x2^2, I=x1^2+x1*x2 and O=x2^2. The false transformation
+F=I has coefficient mismatch1 at x2^2, or evaluation0 vs1 at formalx1=0,x2=1.
+This single legal counterexample DISPROVES that universal formal identity.
+It is not sampling used to prove an identity, and is not a counterexample to
+the project's actual signed bound. A checker can independently validate such
+small typed counterexamples under a strict work bound.
+
+Hand-worked universal proof B: rowmass full primitive partition
+
+ForX>=1, letH=4X-1, r_X(n)=Sum_(t=max(2X,n))^H t, and let rho_f(n) be any
+specified primitive polynomial at index/anchor n. Define
+    Rall=Sum_(n=1)^H r_X(n)*rho_f(n),
+    Rhead=same sum guarded n<=2X,
+    Rtail=same sum guarded n>2X.
+PARTITION proves FORMAL_EQ(Rall,Rhead+Rtail), including n=2X exactly inhead.
+Thus b_all=t,b_head=b_tail=-t cancels the FULL polynomial, not just its formal
+constant, at everyX. For prime-power families replace n by the anchorp^e and
+keep the complete guarded(p,e) domain; the same partition proof applies.
+This is the universal backend form of the cheap scalar-gate identities.
+
+DEF_EXPAND, BOUND_ROW_TRIANGLE and RECT_FUBINI also prove
+    Sum_(n=1)^H r_X(n)*rho(n)
+    =Sum_(t=2X)^H t*Sum_(n=1)^t rho(n).
+Both sides traverse exactly the same guarded finite(n,t) box. This rule can
+connect rowmass templates with regional primitive-prefix localizers. It does
+not identify a weighted norm or prime source with a continuous density; sf(n)
+and prime guards remain exact, so scalar error estimates remain separate.
+
+Additional immediately useful universal closure
+
+For arbitraryH>=1 and specified weightsw(a), put
+    B=Sum_(a=1)^H w(a)*xa*Sum_(d|a)xd, c=w(1),
+    rho1=x1-1, rhoinv(a)=Sum_(d|a)xd for a>=2.
+Split a=1 from a>=2, use the divisor-of1 definition, then RING/SUM_LINEAR:
+    B-c = w(1)*(x1+1)*rho1 + Sum_(a=2)^H w(a)*xa*rhoinv(a).
+Multiplying by B+c and using RING proves
+    B^2-c^2=(B+c)*[the displayed complete relation sum].
+Both are FORMAL_EQ for arbitrary weights/H, including empty a>=2 atH1.
+MU_PRIMITIVE yields B(mu)=c separately. This exact closure is already tested
+at finiteH by cancellation_divisor_coupling; the parametric certificate removes
+its horizon dependence. It supplies arithmetic normalization, not a critical
+prefix-energy estimate. The a1 multiplier MUST be x1+1: using x1 alone leaves
+a formal remainderx1-1 and fails RING.
+
+What remains unsupported for the full candidate
+
+The first fragment can certify source completeness and reusable closures, but
+is not a generic universal-equivalence decision procedure for this grammar.
+It cannot automatically solve arbitrary divisibility/gcd/prime/root guarded
+sum identities or perform unbounded monomial collection. To prove the full
+candidate it must combine certified source ASTs into a theorem that every
+nonconstant coefficient equals the signed defect at all requiredX; degrees3/4
+and unwanted linear/quadratic terms must cancel universally. An expanded
+sum of independent opaque atoms with a residual only gives UNSUPPORTED, not
+proof that those atoms can never cancel arithmetically. A true global obstruction
+needs a valid exact counterexample or a proved nonzero symbolic coefficient
+on an explicitly nonempty infinite/finite domain.
+
+Once FORMAL_EQ(F_X,B0(X)-DeltaE) is certified, existing exact PSD/coercivity,
+primitive MU_EQ, explicit scalarM and actual boundary cost can form a separate
+inequality certificate. Promotion must bind the source context, fixed coefficients
+and every q/scale quantifier; it must not claim a universe larger than the proof.
+Dyadic-only certificates are enough for the stated recurrence bridge but must
+be labeled dyadic-only. Extending to all integers needs its own bracketing
+argument. None of this machinery supplies the currently unknown full target
+certificate or makes finite numerical feasibility a theorem.
+
+Implementation scope and bounded resources
+
+Implement first: a hash-consed typed AST, capture-free scope checker, FORMAL_EQ
+DAG replay forALPHA/RING/SUM_LINEAR/GUARD_BOOL/PARTITION/RANGE_SPLIT, and the two
+hand-worked identities plus the exactt2 counterexample. Next add approved
+primitive definitions, the one triangular-domain Fubini lemma and inverse-row
+closure. Keep arbitrary reindexing and global quartic cancellation unsupported
+until accompanied by additional individually reviewed rules and actual proofs.
+
+Example strict per-certificate caps:4096 proof nodes,50000 AST nodes,
+20000 local ring monomial cells, degree4 where licensed by a source annotation,
+4096 coefficient bits, depth128,16MiB receipt,25m charged replay operations,
+cooperative/process time and memory caps. These are engineering limits on proof
+representation, not mathematical theorems about complexity. Inputs are parsed
+and bounded before expansion; DAG references cannot evade expanded-output/fill
+limits. A complete conclusion requires every node and side condition verified.
+Cap exhaustion is UNKNOWN. Unit tests must mutate cut conventions, complements,
+endpoints, capture substitutions, omitted multiplicities, primitive judgments,
+source IDs and proof references; no tautology-only tests should license the
+whole detector grammar.
+
+Analysis accounting: bounded local source/function reads and hand algebra only,
+with a conservative5m operation/read reservation (below the requested25m).
+No parameterized source compilation or solver; no changes to completed notes,
+frozen files, published evidence, or candidate coefficients.

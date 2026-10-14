@@ -1,0 +1,126 @@
+CURRENT STATE: EXECUTABLE BOUND COMPOSITION, SIGNED ARITHMETIC STILL OPEN
+
+Current input: candidate10_cutoff_work_obligation.json
+Verified study: core-cutoff-work-results/pilot-001
+Runner: run_core_cutoff_work_search.py
+Construction compiler: core_cutoff_work_search.py
+Bound planner: core_cutoff_bound_planner.py
+Independent verifier: check_core_cutoff_work_search.py
+Supplied mathematical rules: reviews022,023,024
+
+The user asked whether the detector itself searches for controls, or whether
+analysts are doing the principal proof work. The workflow remains a hybrid.
+Earlier executable stages already searched bounded families of constructions
+and proof compositions; analysts supplied the underlying analytical rules.
+The draft for this stage likewise exposed an open signed-work estimate but
+did not establish its control. This study adds automatic bound composition
+and pays one correction sector using the rules. It does not invent a new
+uniform prime/Mobius estimate or close the original signed core.
+
+The bounded detector now does the following without runtime model calls:
+
+* Expands the restricted arithmetic source in the convolution quotient
+  mu*One=delta, valid only through U, and searches finite head formulas.
+  Its match predicate no longer contains the expected winning head tuple.
+  The supplied inverse identity is not itself a discovered theorem.
+* Compiles the complete raw and head-corrected transitions and Hermitian
+  work, including the zero-Mobius branch, units, poles and residue changes.
+* Recognizes finite-shift correction polynomials, derives kernel bounds,
+  and composes Cauchy with a nonlinear maximum-energy argument. This pays
+  a correction without assuming the requested energy bound.
+* Searches direct, consecutive, cumulative-prefix and dyadic maximum-partial
+  bound routes. It retains the unknown sign correlations together, attempts
+  available envelope rules, and records precisely why they do not close.
+* Emits the selected remaining signed polynomial and its exact quantifiers
+  as the next bound target. All alternative proof routes remain inspectable.
+
+The reusable sublinear rule accepts arbitrary rational 0<=r<1, including
+square, cubic and sixth-root energy dependence. This does not license
+fractional powers of a complex arithmetic polynomial without their own
+domain/branch proof. The present Cauchy application supplies r=1/2.
+
+Completed actual obligation run
+
+One eligible open low-Gram component produced 396 finite-head trials, one
+exact head match, two complete transition programs and 11 bound routes.
+One finite head and one nonzero work-correction sector have automatic
+controls. There are ZERO newly closed low-energy goals, ZERO new complete
+source-component payments and ZERO new uniform signed arithmetic estimates.
+The inherited complete source reduction and all144 original bindings remain.
+
+The root owned suite passed12 tests, followed by two focused checks after
+adding the inverse-divisor licensing guard (one new test and one regression).
+The independent Sol6.1 checker suite passed22 tests in its sole run. Thus
+35 distinct tests passed, with one targeted regression repeated. The frozen
+study replayed every actual certificate and the complete feedback binding;
+it did not rerun unchanged development suites. No failures occurred.
+
+Total charged work including development:20,773,707 operations.
+Frozen study runtime:2.244 seconds; main peak RSS:704,032KiB.
+Source coefficient observations:0; runtime model calls:0; fitted constants:0.
+The initially proposed sampled-height diagnostic was deferred before any
+observations to prioritize automatic proof search. Its future specification
+is retained with executed=false. This study contains no numerical evidence
+about actual prime cancellation, no fresh-prime holdout and no hashes.
+
+What was actually paid, and what remains
+
+At p=2,m=3, theta=2/3, sigma=9/20, write the arithmetic polynomial as
+ P_U=A_U^2 E_U^3-c_U^3 D_U,
+ A_U(s)=sum_(n<=U)mu(n)n^-s, c_U=A_U(1),
+ E_U(s)=1+zeta(s)(c_U-A_U(s)), D_U(s)=sum_(n<=U)n^-s.
+The low energy L_U uses the full weight |zeta(s+1/3)/s|^2 and all heights
+|t|<H_U=2U^(45/2), with measure dt/(2pi). Its goal is O(U^(12/5)).
+
+The finite head has full norm at most (2560000/1573) U^(11/10).
+Removing it preserves the strength of the original global low-energy goal;
+it does not establish that goal. Its complete opposite centering drift is
+retained, and ordinary coefficient-moment convergence is not inferred.
+
+For q=U+1, the complete transition is J0+mu(q)J1+mu(q)^2 J2.
+The detector recognizes J0=-c_U^3 q^-s as a finite-shift kernel. Its full
+squared norm is <=D q^(-9/10), D=6400/13. Hence on the OLD height interval
+ |W0(q)|<=2 sqrt(D) q^(-9/20) sqrt(L_(q-1))+D q^(-9/10).
+The updated integration range contributes the CHILD shell; its summed
+cost is O(U^(21/10)). This shell is not omitted or confused with the old
+source's smaller high-tail estimate.
+
+If R_q is the joined integral of mu(q)W1+mu(q)^2 W2, the selected missing
+estimate is precisely
+ sum_(q=2..V) R_q <=C_R V^(12/5), EVERY integer V>=1,
+with one finite uniform C_R and the full signed polynomials in the artifact.
+Neither sector is assumed positive, independent, or mean zero.
+
+Taking the finite maximum of L_k and using
+ M<=D0+A*sqrt(M) => M<=2D0+4A^2
+pays the zero sector with exponent11/10. Both this and the shell exponent
+21/10 are below12/5. The resulting low bound is CONDITIONAL on the missing
+cumulative arithmetic estimate. That estimate is equivalent up to the paid
+costs to the original global low-energy goal here; it is not an independent
+arithmetic gain. The stronger one-step requirement R_q<=C q^(7/5) remains
+an optional route. Dyadic endpoints alone do not cover every cutoff.
+
+Limits and next substantive task
+
+The search is a bounded proof-rule composer, not an unrestricted analytic
+theorem prover. Current inherited envelopes give an insufficient U^(11/2)
+scale for the relevant forcing. Code does not convert that failure into a
+disproof. Supplied rules, a matched head, and generic ternary sign algebra
+do not supply the missing actual-Mobius cancellation.
+
+The new exact joined-work target is ready for arithmetic construction and
+bound search. It needs a theorem using additional divisor/prime correlations
+or a different complete-source route. The full joined core remains priority0;
+this global component route is optional. Review023 shows that its low goal
+would already imply a Mertens exponent69/100+epsilon, so it should not be
+treated as an inexpensive calibration. No such Mertens estimate was proved.
+
+For inverse-divisor heads, the planner conservatively leaves zero-sector
+payment unavailable until v's dependence on mu(q) is repartitioned. For
+higher-degree heads it tracks larger costs and can reject the current proof
+route. These limits must not be bypassed by renaming a quantity or dropping
+its signed cross terms.
+
+All prior frozen sources/results remain unchanged. New sources and rule
+reviews have direct-byte frozen copies. The full signed core and RH remain
+OPEN; the overall research goal is not complete.

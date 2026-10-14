@@ -1,0 +1,242 @@
+085 EXACT ARITHMETIC ANNIHILATOR ARCHITECTURE REVIEW
+
+Recommendation: extend the complete084 residual language by a learned bank
+of exact divisor annihilators, signed products of those identity forms, and
+ordinary positive square completion. Use saved artificial witness violations
+to select PARAMETERIZED cut rules, then freeze that entire adaptive proposal
+and ranking rule. Prefer full-coordinate signed updates before generic
+projection; exact coordinate elimination is also valid with explicit Boolean
+free-variable binding. This is actual arithmetic-constraint use beyond084
+positive factors, but negative divisor Grams have substantial earlier lineage.
+No all-scale estimate follows simply from adding the identities.
+
+1. Exact identities and complete domain
+N=floor(u/4) for these original kernels. On every raw squarefree coordinate
+1<=n<=N, let
+ d_K(n)=floor(K/n)-1[n=1] for integer1<=K<=N; d_0=0.
+Then sum_n mu(n)d_K(n)=0: regroup multiples to obtain
+sum_(t<=K)sum_(n|t)mu(n)=1 and subtractmu(1)=1. Squareful coordinates may
+be omitted because their actual mu is zero, but every squarefree coordinate
+and every resulting prime/composite cross remains. d_1 is identicallyzero.
+The convention d_0=0 is mandatory; the literal floor formula atK0 would
+incorrectly give-unit. A parameterized cutoff must be exactly clipped to[0,N].
+
+Unit-balanced D_K=d_K-c_K/(N-1)*d_N, c_K=max(K-1,0), forN>=2, is also an
+annihilator and has unit coordinate0. ForN<2 all rows arezero. This balances
+the unit contribution, not all anchored known-prime terms. For the exact083
+projection P which substitutesunit+1/allprimes-1, g_K=P^T d_K (orP^T D_K)
+satisfies y^T g_K=0 on actual y=(1,unknownsquarefreecompositesigns). The anchor
+entry is the FULL knownunit-minus-prime contraction; do not drop it merely
+because raw D_K(1)=0. The raw identity uses complete coordinates withK<=N.
+
+CRITICAL WEIGHT GUARD: multiplying coefficients pointwise by an arithmetic
+weight w(n) generally destroys mu·d_K=0. The valid quadratic relation is
+(mu·d_K)*(mu·v)=0 for any independently specified partner vectorv, including
+weighted source/band/floor profiles. The weight belongs to that second
+linear form, not silently inside the annihilator. A weighted annihilator
+requires a separately proved convolution identity and correct forcing.
+
+2. Recommended bound rule and certificate schema
+For bankG with exact columns g_K, allow
+ Z=G S G^T, S any exact symmetric rational matrix,
+or Z=(G V^T+V G^T)/2 for exact partnercolumnsV. On actualy, y^T Z y=0.
+This includes negative zero squares-lambda*g_K*g_K^T forlambda>=0, arbitrary
+signed cross-products and positive zero squares. No forcing or norm cost is
+needed for these TRUE zero forms. They are distinct from the new positive
+completion Q=L L^T, whose actual quadratic form is only nonnegative.
+For the full fixed R, the exact finite certificate is
+ actualresidual=y^T(R+Z)y <= y^T(R+Z+Q)y <=B(R+Z+Q),
+ B(S)=trace(S)+2sum_(i<j)|S_ij|.
+Every signed diagonal and all full effective pairs remain. OriginalO is
+unchanged and stays paidAstar*u. Add controls toR, not a redefinedO; this
+avoids unnecessary outer-equation changes while retaining exactDeltaE.
+
+Suggested typed schema arithmetic-annihilator-square-bound-v1:
+ complete frozen operator/source/energy/outer certificate binding;
+ cutoffbank of generic descriptors (scale,rationalpower,complement,balance);
+ exact all-coordinate bank normalization and anchoring conventions;
+ signed symmetric bankmatrixS and/or completepartnercolumnsV;
+ exact dyadic positivefactorL oncompleteeffectivecoordinates;
+ full squarefree count/effectiveorder, complete rowprices andtotal;
+ sourceidentityorigin=mu*1=delta1, K0 convention explicitlybound;
+ allunknowncompositeentriesretained=True, actualsignsqueried=False;
+ scope=FINITE_GEOMETRY_ONLY, uniformleaf=UNPAID, RHfalse.
+Independent checker rebuilds everyK,floor,anchorentry,Z,Q andallpriceentries.
+A spectral/SDP optimum or tiny witness violation is not an identity proof.
+Scaling bankcolumns by any exact nonzero rational preserves annihilation;
+record the scale and charge its coefficient-bit/resource growth.
+
+3. Detector use of084 witnesses and provenance
+For each candidate descriptor K(u)=min(N,floor(a*u^eta)) (or richer exact
+cofactor schedules) evaluate saved fake witnesses s on their boundgeometry.
+A cheap rational score is (s·g)^2/(g·g), zero when g iszero. It measures the
+constraint violation in a scale-normalized way without actualmu values.
+Unitbalance andnormnormalization may be ablations. Aggregate across the
+registered witness roster with a frozen rational scoring/tie-break rule,
+select descriptors rather than arbitrary coordinate/sign lookups, and retain
+all scores/rejections. Increasing-denominator/rationalexponent enumeration
+with bit/resource gates is more general than a fixed smallprime whitelist.
+The score/rule, candidatebankbudget and downstream coefficient optimization
+must freeze before inspecting genuinely new geometry outcomes. The084
+witnesses are training feedback; reuse does not make them fresh validation.
+
+A fake witness violating any selected g can cease to obstruct the new bound:
+negativezero-square penalties alter its objective while leaving actualmu
+unchanged. Recompute new witnesses/duals for the enlarged grammar; the old
+s^TRs lower bound does not lower-bound B(R+Z+Q). A fake witness satisfying
+allg still lower-bounds EVERY chosen signedzero product andpositivefactor
+at thatgeometry, so retained annihilator-compatible witnesses are particularly
+useful diagnostics. Their signs still need not be actualmu.
+
+4. Precise projection/elimination rules
+An arbitrary orthonormal nullspace basis changes coordinates. Its coordinates
+are not Boolean, so trace+2offdiagabs cannot be reused without a separately
+paid norm/range majorant. This mistake could create a false bound.
+A valid alternative is exact coordinate elimination: choose free indices
+which are a SUBSET of the original anchor/composite coordinates; exact RREF
+of G^T y=0 gives y=Bz with identity rows onthosefreeindices. Actualz_i²=1.
+Retain anchor as freecoordinate with z0=1, verify G^T B=0 and the complete
+identity free-row block, then price B^T R B (plus positivefactor onz).
+All eliminated physical entries remain through exact congruence; their costs
+cannot be omitted. Inversion may create large rationalcoefficients and this
+must be charged. Additional Boolean constraints on eliminated rows can be
+ignored for an upper bound, giving a relaxation, not a false equality of
+feasible signsets. The independent checker must verify the map from the
+complete actual constrained vector, not merely some nullspace columns.
+
+5. Earlier mechanisms and what is genuinely new
+Read rootlevel divisor_dual_grammar.py, divisor_dual_proof.txt and
+ divisor_dual_analytic_proof.txt: fullnonunit divisor-Gram penalties already
+occurred in globalPSD diagonal comparisons D I-H+Y G>=0. Their actual forcing
+and completeunit cost were explicitlycharged. Analytic§3 states kerG=spanmu;
+largepenalty can pay orthogonal directions but leaves arithmeticentry
+D*Q-Delta unchanged. Oldcoverage countermodels refute prunedrow universal
+PSD certificates, not the actualsourcebound. FullprefixGram itself is NOT
+new and must not be presented as a newly invented cancellation theorem.
+
+Root convolution_control_proof.txt§7 also uses fullzero h-Grams and forced
+tau-Grams with complete squareforcing costs. Root divisor_cell_gram_moment_probe.py
+checks momentcone compatibility for joineddivisorprofiles. Stages073/074
+use bulk-mode nullspaces for channelstorage, not exact full current Möbius
+constraints. Stage068 learned linearfloorannihilator remainders;082 supplied
+globalfloor×source zeroquadratic corrections.083 allowed coupledcut×weighted
+source terms.084 positive arbitraryfactors cannot add negativezero squares;
+its weightgrammar lacks arbitraryfloorprofile partners.085's realextension
+is adaptivewitness-driven exactconstraintbank selection, arbitrary signed
+bankcrossproducts and/or exactphysicalcoordinate elimination on THIS complete
+prime-anchoredR, with independently admitted finiteprices. State that lineage.
+
+6. Fullprefix limit and noncircularity
+ForK>=2, d_K-d_(K-1)=the divisorincidence row1[n|K]. Allprefixconstraints
+therefore recover every mu value by the triangular convolution recurrence.
+On rawSFcoordinates their commonnullspace is theactualmu line; afteranchor
+it is theactualy line. This is exact and legitimate arithmetic, but computing
+that entire line algebraically reconstructsunknowncomposite signs. A finite
+optimizer fed the complete bank cannot claim it is using no unknownsign
+information merely because it did not call a sieve for mu. If permitted, this
+must be disclosed as identity-derived fullarithmetic recovery, not a new
+sign-free geometric estimate. A small learnedbank need not reconstruct them.
+Even fullbank gives noautomaticuniformpricebound: its remainingnullspace
+entry is precisely the originalactualsignedresidual. Replacing an unpaid
+Mertensbound by its quotient scalar is circular unless that scalar has an
+independently proved new estimate. This repeats the priorfulldivisorGram
+warning, now with the corrected fixedkernel/exponenttarget.
+
+7. Constructive uniform opportunity and its exact unpaid leaf
+For each j>=1, q_j=1+1/j, synthesize genericbankG_j(u), signedcontrolsZ_j(u)
+andpositivefactorQ_j(u) with
+ B(R(u)+Z_j(u)+Q_j(u))<=C_j*u^q_j FOR EVERYu>=1.
+This would pay the residual leaf; outerAstaru andr3/2 contraction then give
+RH by the fixedkernel transfer. Constants/programs maydependj, notu fits.
+Finite successfulprices are invention evidence only.
+
+A sharper structured route seeks a projected spectral estimate:
+ v^T R(u)v<=C_j*u^(1/j)||v||² for EVERYv withG_j(u)^T v=0.
+Actualy belongs tothatkernel and ||y||²=effective_dimension<=N+1=O(u), so
+this yields the required exponent. It is a substantially stronger geometric
+lemma than actualmu control, potentially machine-checkable through exact
+floorcarry/cofactor identities and Schur bounds. State it as an unpaid leaf,
+not a restatement alreadyproved by nullspace computation. An exact uniform
+matrix decomposition into diagonals, signedzero products andPSD pieces,
+with trace<=C_j*u^q_j, can pay this lemma independently. Floorcarry kernels
+might have Schur/l2 norms controlled by harmonic/divisor sums; every induced
+anchor and cross term must be included. No such complete norm theorem is
+proved in this review.
+
+Ifbank uses onlysublinearcutoffs K<=u^eta witheta<1, its rawcolumns vanish
+on alln>K. Consequently it cannot directly constrain individualtail signs;
+oldfullPSDcoverage arguments suggest testing compatibletail witnesses early.
+However the presentR differs andouterblock isalreadyremoved: this is a
+diagnostic warning, NOT a carried-over allscaleimpossibility theorem. Fixed
+finite linear-radius profiles also require newconstraineddual/witness tests
+in the current Booleananchor geometry. Growingbank schedules may escape
+finite-profile coverage limitations, but must pay rank, conditioning,
+normalization and uniformtrace costs. No universal no-go asserted.
+
+No frozen edits, old science/test replay, unknownarithmetic query, or RHclaim.
+
+085 PRODUCER/BANK IMPLEMENTATION REVIEW (prepilot)
+Read mobius_annihilator_085.py, mobius_annihilator_bank_085.py and five
+producer tests. Exact K0 handling, unit-balanced numerators and joint known
+unit/prime contraction agree with the mathematical identity. No unknown
+composite parity or source values are used. Score(dot²/norm²) on integer
+columns correctly cancels their common denominator, so raw and normalized
+annihilator scoring is exact. Training-only duplicate merging explicitly
+retains that scope; descriptors that coincide on training need not coincide
+at new geometry. Stable grammar ordering supplies the stated tie-break.
+
+RREF on the effective coordinate-by-bank matrix finds pivot COLUMNS. Using
+those original independent columns spans the full bank, without reducing
+physical coordinates or losing Boolean diagonal knowledge. A rank-deficient
+bank is therefore numerically reduced only in its coefficient space. The
+normalization W_i=V_i/norm_i and reconstruction
+ S_active(i,j)=u*rounded(H_ij)/(norm_i*norm_j)
+correctly undo the solver's R/u scaling. Exact symmetric averaging/rounding
+makes a legitimate unrestricted signed S. Any numerical PSD error is covered
+by independent exact price evaluation of the actually submitted positivefactor,
+not an assertion about the proposed diagonal. The L0 fallback guarantees no
+worse price than the same chosen S alone, but does not itself guarantee no
+worse price than the old S0 operator; report those comparisons separately.
+
+Certificate bits and completegeometry/native scratch have explicit gates.
+The catalog has a prospective aggregate memory estimate, caching complete
+vectors by actual cut/balance/trainingu. At this initial review the selector's
+exact dot/norm/greedy coverage/gain work was not metered or subjected to an
+aggregate rational-bit gate, while the matrixmeters cannot cover it. This
+was reported to the root as a resource-accounting issue beforefreeze. The
+standalone identity_integer_column helper also relies on callergeometry gates;
+identity_vectors andcatalog do invoke them. Pilot may remain inexpensive,
+but generic boundedsize inputs should be explicitly guarded and counters
+qualified rather than silently claiming all this setup is matrixwork.
+
+No new uniformnorm orpricelemma is obtained from this implementation alone.
+Selected finite-height descriptors form a genuinely exact bank, but their
+finite score/coefficients and changing S/L do not establish a parameterized
+all-u trace estimate. Useful postrun diagnostics are complete original/S-only/
+S-plus-positivefactor prices, exact witness annihilator violations, selected
+bankrank and coefficientbit/conditioning growth. If a source/residual vector
+is represented EXACTLY by selected constraints at a geometry, that is a valid
+finite identity; promoting it requires an allscale algebraic representation
+with every source and cutoff endpoint bound. It cannot be inferred from small
+floating projection error or high normalized violation scores.
+
+FINAL PRE-FREEZE FOLLOWUP
+Root added standalone completegeometry gate, catalognorm counters and a
+ScoreMeter for exact dot/normalized-score/greedy fraction work, prospective
+4096bit fraction gates, and combined catalog-plus-score1GiB reservation.
+These address the resource-accounting findings above. Updated five producer
+tests passed again according to retained receipts; this reviewer did not
+rerun tests or scientific selection.
+
+Read prospective085 runner/protocol: all eight084 operators bind, four084
+fake witnesses are explicitly development feedback, generic adaptive and
+same-order baseline banks freeze before calibration/draw, no originaltheta
+retuning, and all eight adaptive banks reach both fresh geometries even if
+calibration fails. New S/L pergeometry are explicitly auxiliarysearches.
+Calibration-only baseline has no freshbaseline claim; saved084 comparisons
+state unequal numerical budgets. All old constants remain frozen; fullpaid
+outer contribution is separate. No old084dual is transferred to the signed
+bank grammar; no085dual or globaloptimality claim is made. No scientific
+leakage or coverage blocker found. Further allscale target design belongs
+in a separate new085 review, not this frozenprepilot note.
+This file is now stable for the scientific source freeze.

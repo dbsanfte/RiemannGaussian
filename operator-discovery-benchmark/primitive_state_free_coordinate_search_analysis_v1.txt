@@ -1,0 +1,199 @@
+Matrix-free free-coordinate cone search analysis, version 1
+2026-10-09. Proposal analysis only. No solver, source compilation, elimination,
+freeze, publication, research scoring, or existing-source modification.
+
+Conclusion
+
+A finite matrix-free convex cone-distance experiment in the445 licensed free
+coordinates is a credible next step distinct from solver-parameter tuning.
+The exact779-row triangular map supplies forward and adjoint operators in
+about100k sparse coefficients, without a dense rational nullspace. Every
+numerical iterate remains a proposal: floating triangular evaluation can drift
+or suffer cancellation, so final rationalization, exact back-substitution and
+full original admission remain mandatory. No new square/PSD forced face is
+established. In particular, every one of the3836 highest-degree source rows
+has a nonzero signed-relation coefficient; a single leading-coefficient row
+cannot be a valid exposing functional.
+
+Licensed geometry and read-only evidence
+
+The existing projected system has1224 coordinates, rank779 and445 free
+coordinates. Its cone is366 nonnegative squares, five nonnegative slacks,
+613 unrestricted effective signed coefficients and two PSD constraints:
+    C PSD, H=P+4C PSD.
+The canonical full lift is child0,parentH,storageC, with each signed beta
+lifted to(max(beta,0),max(-beta,0)). The scalar auxiliary slack is forcedzero,
+not an additional inferred PSD face. The rank receipt reports99431 normalized
+basis live cells; normalized RHS/pivot entries included make this a conservative
+sparse-coefficient count for a pass. Existing normalized rows must be licensed
+and hashed before search. Exact replay or a newly licensed cache is needed;
+the old basis receipt alone stores a transcript, not those rows.
+
+Read-only inspection of the immutable cached original source:
+SHA256 f7cabcf611c5c3bf0127866dcaae05bbbf94d3645d2561b86eb5228992f8f1fa;
+19817027 file bytes;950948 sparse source-column entries; maximum formal degree4.
+There are3836 degree4 coefficient rows. ALL3836 occur with a nonzero
+coefficient in at least one signed relation column. The bounded scan loaded
+the JSON once, inspected column terms, and parsed only signed coefficients
+needed for the degree4 support test. It took approximately1.06s, peak260480KiB
+RSS. Conservatively reserve50m charged units for this analysis scan, source
+reads, hash and tiny derivation checks (<450m). No ordinary source was rebuilt.
+
+This support observation rules out y=e_row and y=-e_row as degree4 exposing
+functionals: signed relations are unrestricted, so every such column pairing
+must be exactly zero. It does NOT rule out an exact linear COMBINATION of
+leading rows that annihilates all signed columns. Finding such a combination
+and verifying nonnegative square pairings plus both PSD dual blocks is another
+bounded certificate task; no combination, nullspace computation, or exposing
+witness has been obtained here. Degree alone and positive square-leading
+coefficients cannot override signed relations or negative parent storage.
+
+Sparse forward and transpose maps
+
+Write the exact affine solution as x=c+N*f, f in Q^445. For each pivot p, the
+licensed normalized row is
+    x_p = b_p - sum_{j>p} a_pj*x_j.
+To compute N*d, set free entries to d and use the same DESCENDING-pivot
+back-substitution with zero RHS. To compute N^T*g, initialize a working
+1224-vector w=g and visit pivot columns in ASCENDING order. For every row
+coefficient a_pj with j>p, update w_j -= a_pj*w_p; then discard w_p. The
+remaining free entries are N^T*g. This is reverse differentiation of the
+forward solve, requiring one sparse pass and no445-column expansion.
+Basis insertion order is not a substitute for pivot-column order.
+
+The same formula works over exact rationals. Exact transpose solves are useful
+for calibration/receipt checks, but repeating exact rational arithmetic in
+every proposal iteration is unnecessary and risks coefficient-bit growth.
+Use finite floating versions of the EXACTLY licensed sparse coefficients for
+proposal generation, record their conversion, and reject overflow/underflow.
+Use exact maps for final reconstruction. Additional native triangular equality
+constraints would reintroduce equality residuals while keeping more variables;
+they offer no exactness advantage over direct free-coordinate evaluation.
+
+Concrete differentiable convex merit
+
+Let S extract the366 square and five slack coordinates. Define negative parts
+componentwise for scalars and spectrally for symmetric matrices:
+    F(f) = (1/2)*||min(S*x,0)||_2^2
+         + (1/2)*||C_-||_F^2 + (1/2)*||H_-||_F^2,
+    x=c+N*f, H=P+4C.
+Squared distance to a closed convex cone is convex and differentiable, including
+at repeated/zero eigenvalues. Thus this is a convex penalty; its zero set is
+exactly the desired quotient cone on the affine system. F>0 at a finite iterate
+or stalled descent never proves infeasibility. The exact forced auxiliary slack
+can remain in S or be eliminated under its existing proof; no empirical face
+truncation is allowed.
+
+The coordinate gradient before the transpose solve is:
+    scalar gradient = min(S*x,0);
+    C matrix gradient = C_- + 4*H_-;
+    P matrix gradient = H_-;
+    signed-relation direct gradient =0.
+For upper-triangle matrix coordinates, use the diagonal gradient unchanged
+and DOUBLE every offdiagonal matrix-gradient entry. This factor is essential
+because the merit uses the full symmetric Frobenius norm. Then g_f=N^T*g_x.
+Compute negative parts with two15x15 eigendecompositions for numerical
+proposals only. Final PSD decisions use exact rational LDL with zero-pivot
+handling and full reconstruction, never floating eigenvalue clipping.
+
+A preregisterable single experiment
+
+Use exactly one independently licensed existing restored/free seed. Fix all
+source/basis/coordinate hashes and record the complete445-vector; do not
+perform a seed or denominator sweep. Initialize f from the chosen seed's
+free coordinates. Fix identity coordinate scaling first; a declared fixed
+power-of-two diagonal scaling may be used instead, but must be recorded and
+inverted exactly. No adaptive coordinate dropping or rank truncation.
+
+Predeclare eight power-operator iterations for a numerical step estimate.
+The operator is N^T*B^T*B*N, where B stacks S, C and H with the Frobenius
+sqrt(2) offdiagonal weighting. This bounds the merit curvature when evaluated
+exactly, but a finite numerical power estimate is NOT a certified upper bound.
+Use one deterministic normalized alternating-sign445-vector, zero stopping
+on an identically zero operator, and a finite step estimate clipped to a
+predeclared finite interval wide enough to include the very small steps implied
+by large triangular-map norms (for example2^-900..2^900 with explicit overflow
+and underflow checks). A narrow minimum such as2^-40 can force line-search
+failure solely by excluding a suitable step. Record the chosen interval;
+require actual
+finite merit decrease in line search rather than trusting this estimate.
+
+Run at most24 gradient iterations. Each iteration permits at most THREE
+trial step sizes alpha,alpha/2,alpha/4 and accepts the first finite trial
+satisfying a fixed Armijo decrease rule (e.g coefficient1/8). Carry the
+accepted step into the next iteration; terminate on failed line search,
+nonfinite arithmetic, resource cap, zero gradient or the iteration limit.
+Save the best finite-merit free vector and emit the whole trace, not merely
+a favorable terminal status. No momentum, restart, extra seed or hidden retry.
+A stationary positive merit can indicate an affine/cone separation candidate,
+but is not a separator until its exact dual witness is separately established.
+
+Take at most that ONE final free vector. Choose one fixed rationalization
+rule beforehand (exact binary64 rationals, or a fixed bounded denominator).
+Reconstruct all pivots exactly, lift all1957 original coordinates, verify all
+5641 original exact equations, signs, complete three-matrix PSD, gamma,
+original target/source hashes, scalar/storage ledgers and boundary cost. A
+failed candidate is an informative bounded failure, never an infeasibility
+claim. Successful finite checks still do not establish an all-scale identity
+or RH. If certificate reconstruction exceeds any bit/time/work cap, return
+UNKNOWN instead of weakening the check.
+
+Work and conditioning boundaries
+
+With E<=99431 sparse coefficient entries, the fixed power estimate needs16
+forward/adjoint passes. The search needs at most72 trial forward passes and24
+adjoint passes, plus initial/diagnostic passes: conservatively120 total.
+At two charged multiply/add units per coefficient this is<24m scalar units.
+There are at most73 merit evaluations, each using two15x15 eigenproblems.
+A declared conservative native eigensolve proxy96*n^3 per matrix adds<48m
+units. Vector operations, gradients, conditioning probes and receipts fit a
+100m proposal allocation under an explicit meter; the proxy is accounting,
+not a promise about BLAS instructions or wall time. Native calls need process
+time/memory enforcement; all count/elapsed limits must be checked.
+
+One possible450m-per-job allocation is100m input/normalized-map licensing and
+materialization,100m proposal iterations,100m exact candidate reconstruction
+and original source checks,125m independent final replay/admission,25m byte/
+receipt/overhead reserve. The allocations are hard ceilings, not predictions.
+Existing full source receipts must be reused/licensed rather than rerunning
+unbounded arithmetic compilation. If initial replay consumes its allocation,
+stop UNKNOWN with no search. Do not borrow another job's work or silently
+repeat capped attempts. A verified prior normalized cache can lower actual
+preprocessing cost but cannot erase its provenance requirements.
+
+Independent endpoint verification can be cheaper than repeating the full
+5641-row elimination transcript for every proposal. Given the unchanged,
+previously verified source/cache and rank/pivot license, recompute the declared
+free seed, bind those free entries of the lifted candidate to it, and check
+ALL original exact equations and cone constraints directly. Passing the full
+equations proves the candidate identity independently of the generator; the
+licensed rank/pivot partition then makes that affine solution unique for the
+fixed free coordinates. This verifies restoration provenance without replaying
+all earlier row eliminations. It must not skip any original equality, infer
+validity from a saved producer status, or accept a changed source/map/license.
+Such a cheaper endpoint contract needs a new declared checker version; the
+already frozen triangular-restoration001 full-replay contract stays unchanged.
+
+Historical diagnostic absolute multiplier propagation reached roughly1e32,
+and binary64 replay produced large normalized residuals. This warns that the
+triangular chart may be numerically ill-conditioned despite exact consistency.
+The present method removes native affine-equality drift; it does not cure
+cancellation or make gradients reliable automatically. Record per-row absolute
+summation/cancellation ratios, maximum reconstructed coordinate, both native
+and full-original floating residuals, and deterministic forward/adjoint
+inner-product agreement probes. Nonfinite values or failed agreed calibration
+stop proposal generation. Large cancellation can be reported without claiming
+that it proves infeasibility; exact final reconstruction remains decisive.
+A fixed long-double comparison for calibration is reasonable, but unregistered
+precision/conditioning sweeps are not part of this proposed experiment.
+
+Tiny exact adjoint calibration
+
+For x0+2*x1=3 and x2-x3=1, free f=(x1,x3),
+    N*d=(-2*d0,d0,d1,d1).
+The transpose formula gives N^T*g=(-2*g0+g1,g2+g3).
+Both have identical exact dot pairing for arbitrary rational d,g. This checks
+sign and traversal order. For C,P upper-triangle perturbations, the derivative
+of (1/2)||C||_F^2 has gradient diagonalCii and offdiagonal2*Cij; composing
+H=P+4C adds four times the H-gradient to the C-gradient. These conventions
+must be tested before running the actual fixed experiment.

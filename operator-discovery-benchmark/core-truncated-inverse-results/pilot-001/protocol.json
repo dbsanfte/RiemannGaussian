@@ -1,0 +1,250 @@
+{
+  "H": 1023,
+  "RH_proved": false,
+  "X": 256,
+  "aggregate_memory_limit": 17179869184,
+  "all_four_actual_source_modes": true,
+  "coefficient_solver": "triangular exact denominator inversion in a weighted monomial quotient",
+  "constant_fit": false,
+  "cutoffs": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6"
+  ],
+  "discarded_support": "alpha*a+gamma*b>=1 gives strict support>N; discard only before any centering expansion",
+  "full_units_and_transport_error": true,
+  "hashes": false,
+  "input": "candidate10_bound_program_obligation.json",
+  "main_cap": 150000000,
+  "main_seconds": 14400,
+  "methods": [
+    "sparse factor convolution and weighted complete prefixes",
+    "independent divisor convolution and Abel means"
+  ],
+  "new_source_observations": 0,
+  "numerical_source_scope": "all source coefficients previously observed; new decomposition and cross observables only",
+  "process_memory_bytes": 4294967296,
+  "representative_bound": {
+    "RH_proved": false,
+    "conditional_conclusion": {
+      "expression": "E_F(X)=O((1+log2X)^target_log_power)",
+      "h": "1+log2X",
+      "original_recovery": "E_F<=2*C_rec*h^ell*(S+detail)+50*X^(2theta-5/3)",
+      "original_units_centers_and_corrections_retained": true,
+      "target_log_power": "3"
+    },
+    "construction": {
+      "RH_proved": false,
+      "cancellation_order": 3,
+      "channels": [
+        {
+          "derivative_constant": "4068416",
+          "derivative_log_power": "3",
+          "eta": "0",
+          "full_unit_retained": true,
+          "polynomial": [
+            "0",
+            "3",
+            "-3",
+            "1"
+          ],
+          "rule": "complete_prefix_jump_plus_weight_derivative",
+          "shifted_coefficients": [
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "terms": [
+            {
+              "coefficient": "1",
+              "constant": "32",
+              "q": 0
+            },
+            {
+              "coefficient": "-1",
+              "constant": "2034176",
+              "q": 3
+            }
+          ],
+          "vanishing_order": 0
+        },
+        {
+          "derivative_constant": "2034176",
+          "derivative_log_power": "-3",
+          "eta": "0",
+          "full_unit_retained": true,
+          "polynomial": [
+            "1",
+            "-3",
+            "3",
+            "-1"
+          ],
+          "rule": "complete_prefix_jump_plus_weight_derivative",
+          "shifted_coefficients": [
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "terms": [
+            {
+              "coefficient": "1",
+              "constant": "2034176",
+              "q": 3
+            }
+          ],
+          "vanishing_order": 3
+        }
+      ],
+      "complexity": "23",
+      "degree": 3,
+      "desired_gain": "0",
+      "detail_constant_times_K_squared": "762824",
+      "detail_log_power": "3",
+      "id": 4671,
+      "normalization_only": false,
+      "proof_rules": [
+        "exact_polynomial_recovery",
+        "weighted_Cauchy",
+        "divisor_summatory",
+        "prefix_product_rule",
+        "orthogonal_projection_path_bound"
+      ],
+      "recovered_detail_log_power": "3",
+      "recovery_coefficients": [
+        "1",
+        "1"
+      ],
+      "recovery_constant": "2",
+      "recovery_log_power": "0",
+      "uniform_coarse_bound_proved": false,
+      "uniform_detail_bound_proved_given_majorant": true,
+      "whole_signed_bound_proved": false
+    },
+    "definitions": {
+      "A": "X^(-2)*sum_(X<=n<2X) sum_i V_i(n)^2",
+      "H_j": "sum_(1<=k<=n) g(k)*log(k)^j, including k=1",
+      "L": "log(2n)",
+      "S": "X^(-2)*sum_complete_cells |cell|*sum_i mean_cell(V_i)^2",
+      "V_i": "L(n)^(-eta_i) * sum_j c_(i,j)*H_j(n)/L(n)^j",
+      "cell_length": "2^floor(mesh_power*log2X)",
+      "full_history": true
+    },
+    "dependency_graph": [
+      {
+        "depends_on": [],
+        "id": "signed_coarse_increment",
+        "status": "open"
+      },
+      {
+        "depends_on": [
+          "signed_coarse_increment"
+        ],
+        "id": "coarse_growth",
+        "rule": "dyadic_induction",
+        "status": "conditional"
+      },
+      {
+        "depends_on": [
+          "coarse_growth"
+        ],
+        "id": "storage_growth",
+        "rule": "add_proved_detail",
+        "status": "conditional"
+      },
+      {
+        "depends_on": [
+          "storage_growth"
+        ],
+        "id": "core_growth",
+        "rule": "full_energy_recovery_and_paid_transport",
+        "status": "conditional"
+      }
+    ],
+    "id": "bound_56058_source_32",
+    "old_obligation_retained": true,
+    "original_fixed_constant_claim_discharged": false,
+    "parent_obligation": "control_32_0_1/2_2",
+    "reduction": {
+      "detail_X_power": "0",
+      "detail_absorption_constant": null,
+      "full_bound_proved": false,
+      "id": 56058,
+      "mesh_power": "1/2",
+      "open_leaf_count": 1,
+      "program_id": 4671,
+      "recovered_detail_log_power": "3",
+      "required_coarse_forcing_log_power": "3",
+      "rho": "1/2",
+      "status": "partial_bound_open_signed_coarse",
+      "target_log_power": "3"
+    },
+    "required": {
+      "constant_fitted": false,
+      "expression": "S(2X)-rho*S(X)",
+      "k": "3",
+      "proved": false,
+      "quantifier": "one fixed finite C, EVERY dyadic X>=1",
+      "rho": "1/2",
+      "upper": "C*(1+log2X)^k"
+    },
+    "schema": "bound-program-obligation-v1",
+    "signed_source_kernel": {
+      "J": "J_X(h,k)=X^(-2)*sum_(cells I) |I|*sum_i w_i(I,h)*w_i(I,k)",
+      "exact_increment": "sum_(1<=h,k<4X) g(h)*g(k)*(J_(2X)(h,k)-rho*J_X(h,k))",
+      "outside_support": "J_X(h,k)=0 when h>=2X or k>=2X",
+      "retains": [
+        "all signed cross terms",
+        "full unit",
+        "all primes and repeated prime powers",
+        "complete prefix history"
+      ],
+      "w_i": "w_i(I,k)=mean_(n in I) [1_(k<=n)*L(n)^(-eta_i)*p_i(log(k)/L(n))]"
+    },
+    "source_majorant_verified": true,
+    "status": "open",
+    "transport_program": {
+      "capacity_fraction": "1/2",
+      "cofactor": 7,
+      "keep_failed_windows": true,
+      "load_multiple": 4,
+      "theta": "2/3"
+    },
+    "variable_weights_commuted_through_projection": false,
+    "weak_fact_obstruction": {
+      "C_rec": "2",
+      "actual_core_bound_disproved": false,
+      "coarse_lower": "S_h=A_h-detail; detail has X exponent<=0 on admitted energy branches, so S_h eventually dominates every fixed log power",
+      "detail_X_power": "0",
+      "ell": "0",
+      "full_actual_source_AST_satisfied": false,
+      "original_energy": "E_H(X)>=X/16 for all dyadic X>=64",
+      "prefix": "H(n)=floor(n/2)-10 >= n/4 for n>=40",
+      "requirement_for_next_search": "use complete-source signed identities in the emitted pair kernel; replaying only divisor envelopes cannot close it",
+      "satisfies": [
+        "coefficient divisor majorant",
+        "zero coefficient at every actual prime",
+        "all generated universal identities and derivative estimates"
+      ],
+      "source": "h(1)=-9; h(n)=1 for even n>=4; h(n)=0 otherwise",
+      "status": "weak_facts_cannot_close_signed_leaf",
+      "storage_lower": "A_h(X)>=X/(16*C_rec*(1+log2X)^ell)"
+    },
+    "whole_signed_bound_proved": false
+  },
+  "representative_selection": "largest polynomial degree/cancellation/weight/mesh, then inherited id; no numerical responses",
+  "scalar_tolerance": "finite Arb interval radius<=2^-96*(1+abs(midpoint)); comparisons require enclosure overlap",
+  "schema": "source-specific-truncated-inverse-search-v1",
+  "selection": "factor budgets4,5,8; balanced shortest cutoffs and shortest unshifted inverse with smallest retained expansion",
+  "shared_horizon": "N=4X-1 used for both complete parent and child",
+  "source_horizon_already_observed": 524287,
+  "source_selection_uses_numerics": false,
+  "total_cap": 1400000000,
+  "whole_signed_bound_proved": false,
+  "worker_cap": 600000000,
+  "worker_seconds": 3600,
+  "workers": 2
+}

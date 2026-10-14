@@ -1,0 +1,383 @@
+ORDERED PRIME PAIRING: EXACT STENCILS, PAID AUXILIARIES, AND RECOVERY GAPS
+
+Scope and conclusion
+--------------------
+This is a new source-only analytical review of PRIME_BANK_HANDOFF.txt and
+candidate10_ordered_prime_covariance_obligation.json. The older covariance
+memo and all frozen files remain unchanged. I also read the earlier prime-pair
+forcing handoff/proof/certificate review, and the current producer and independent
+checker for prime-slide stencil discovery. No arithmetic study, response
+calculation, numerical experiment, test, hash, or parameter search was performed.
+
+There is an actual proved new auxiliary estimate: exact same-prime power
+stencils with a sufficiently high local zero have a cofinal bound on the FULL
+ordered smooth/bank kernel, including the common B channel. A cumulative
+prime-power stencil gives an explicit example. This is stronger than discovering
+a local commutator identity, but it is not a bound for the original covariance:
+its complete lifted outside-domain terms remain unestimated, and quantitative
+inversion loses the same prime powers that supplied suppression.
+
+Distinct-prime slides have the expected multiplicative small factor in the
+u/v tensor component. Repeated use of the same prime has a different, order-one
+defect. The common B/u and B/v components have no such small slide factor.
+The cofactor-diagonal and fixed/polylog primitive-cofactor portions of the
+repeated-prime defect can be paid. The remaining large primitive sector, all
+outside-domain terms and the full smooth/bank/main covariance stay open.
+No closed all-scale recurrence, complete signed moment, or RH is proved.
+
+1. Source channels and original ordered support
+-----------------------------------------------
+Use actual mu, u=1/3, v=2/3, beta=9/2, and
+  a_b=mu*(n^(-b)), B=a_u*a_v,
+  p=((a_u-delta)/u)*((a_v-delta)/v), a=p-d,
+where d is the COMPLETE same-prime prime-power overlap. For n>1,
+  p(n)=beta*[B(n)-a_u(n)-a_v(n)].
+The unit correction is separate: p(1)=0. Every a(p^e)=0, including the
+unit, because p(p^e)=d(p^e). At other n>1, a=p. Thus the smooth coefficient
+a(h) has no prime-power support, although its tensor-channel expansion
+uses channels which do have such support. This mask must survive expansion.
+
+For cofactor k>=2,
+  z_0=beta*(2B-a_u-a_v),
+  z_u=beta*(B-a_u), z_v=beta*(B-a_v).
+All transfer sequences are zero at k=1. Let theta>=1/2, theta<1, and define
+  tau_theta(q)=ceil(q^(1/theta)),
+  alpha_theta(h)=max(h,tau_theta(Pplus(h))).
+The exact ordered overlap count on an integer dyadic block [X,2X) is
+  I(h;q,k)=max(0,min(2X,tau_theta(q))
+                            -max(X,alpha_theta(h),q*k)),        (1.1)
+with h>=2, k>=2 and q prime. The high-smooth variant also puts h^2 in
+the upper minimum, because h>sqrt(n) means n<h^2 strictly. Rational powers
+are tested by exact integer comparisons, not floating endpoint rounding.
+
+A positive count supplies an actual integer n with
+  Pplus(h)<=n^theta<q, k<=n/q<n^(1-theta)<=n^theta<q.
+Consequently q is coprime to BOTH h and k. It gives no condition on
+gcd(h,k). All shared-prime/valuation sectors of h,k remain. For the
+high-smooth kernel, k<sqrt(n)<h and qh>n. Every q-adjunction to h therefore
+leaves the original pointwise coefficient prefix. An outside source value
+may appear in a valid exact identity; its support cannot then be truncated.
+
+The complete target remains
+  R_new=K-L_0+L_u-m_u*x^(2/3),
+with the previously paid L_v and low-smooth components. Every bank-bank,
+smooth-smooth and main covariance remains alongside the ordered cross.
+Bounding a new auxiliary is progress only after its distinct scope and
+its unresolved recovery terms are stated.
+
+2. Exact prime-adjunction calculus
+----------------------------------
+Set t=q^(-1/3). The channels S=(B,a_u,a_v) have local prime multipliers
+  lambda_B=t+t^2-2,
+  lambda_u=t-1,
+  lambda_v=t^2-1.                                (2.1)
+For q coprime to the relevant base integer, S_i(qh)=lambda_i(q)S_i(h).
+For a tensor F_ij(h,k)=S_i(h)S_j(k), define T_q^h and T_q^k to adjoin q
+to the indicated coordinate. On the domain q coprime to h*k,
+  (T_q^h-T_q^k)F_ij=(lambda_i-lambda_j)F_ij.       (2.2)
+In particular
+  (T_q^h-T_q^k)(a_u(h)a_v(k))
+     =(t-t^2)a_u(h)a_v(k).
+For distinct primes q,r, both coprime to h*k, the full four-term double
+slide is exactly
+  S_i(qrh)S_j(k)-S_i(qh)S_j(rk)
+        -S_i(rh)S_j(qk)+S_i(h)S_j(qrk)
+    =(lambda_i(q)-lambda_j(q))
+       *(lambda_i(r)-lambda_j(r))*S_i(h)S_j(k).   (2.3)
+This retains every lifted term. For u/v its multiplier is
+(q^(-u)-q^(-v))(r^(-u)-r^(-v)), bounded by q^(-u)r^(-u).
+
+The common channels behave differently:
+  lambda_B-lambda_u=lambda_v,
+  lambda_B-lambda_v=lambda_u.                     (2.4)
+Their factors tend to -1 rather than zero. The original a(h)z_0(k)
+projection contains nonzero B/u and B/v tensor coefficients. Hence a
+u/v-only commutator cannot control the whole common bank. Same-channel
+distinct-prime slides vanish exactly, but eliminating those tensors is
+not domination of the original quadratic projection either.
+
+3. The repeated-prime exception is not a squared prime eigenvalue
+----------------------------------------------------------------
+For a_b at a fresh base,
+  a_b(q^2)-a_b(q)^2=a_b(q).
+For B,
+  B(q^2)-B(q)^2=lambda_B-lambda_u*lambda_v.
+Write these three defects as
+  delta_u=lambda_u, delta_v=lambda_v,
+  delta_B=lambda_B-lambda_u*lambda_v.             (3.1)
+The exact repeated-prime double slide is therefore
+  (T_q^h-T_q^k)^2 F_ij
+    =[(lambda_i-lambda_j)^2+delta_i+delta_j]F_ij.  (3.2)
+For the u/v tensor its multiplier is
+  (t-t^2)^2+(t-1)+(t^2-1),
+which tends to -2 as q grows. It is NOT a q^(-2/3) term. Even for i=j,
+the true expression is 2*delta_i, not zero: after the first adjunction,
+the base coordinate is divisible by q, so (2.2) cannot be reapplied with
+its original coprime guard. Prime-power rows, not powers of a prime row,
+are required. Uniformly |delta_u|,|delta_v|<=1 and |delta_B|<=3, so
+|delta_i+delta_j|<=6.
+
+If r is chosen as Pplus(h), it is already a source factor. One must
+write h=r^e H and k=r^f K, with r coprime to H*K, and use the actual
+rows S_i(r^(e+a))S_j(r^(f+b)). Neither f=0 nor e=1 may be assumed.
+This includes the h/k shared-prime sector and all higher powers. A
+symbolic grammar limited to fresh primes cannot silently use r=Pplus(h).
+
+4. Ordered swaps do not cancel within the original support
+----------------------------------------------------------
+On high-smooth support, exchanging h and k makes the reversed bank
+cofactor h: qh>n, so the corresponding I(k;q,h) is zero at that n.
+Similarly replacing a smooth largest prime r=Pplus(h) by its bank prime
+q>r reverses the ordering. A would-be bank at r cannot be above the new
+largest smooth prime q. Thus the reversed term is in a complement, not
+in a second interior signed pair of equal weight.
+
+A source antisymmetry and a kernel antisymmetry must both be accounted
+for. Writing a tensor as symmetric and antisymmetric parts under h,k
+exchange, and the kernel as its symmetric and antisymmetric parts, gives
+an exact decomposition. On this ordered domain the kernel's antisymmetric
+part is nonzero; its source part is not integrated against an automatically
+canceling symmetric domain. All complements remain.
+
+There are useful local signed identities, but they do not change this
+support fact. For q>r both coprime to k,
+  a_u(qk)a_v(rk)-a_u(rk)a_v(qk)
+    =(1-q^(-u))(1-r^(-u))(r^(-u)-q^(-u))
+                                  *a_u(k)a_v(k)>=0.             (4.1)
+The last product is positive since both channels have the same radical
+Mobius sign at k. This is an exact ordered-prime determinant with a
+common cofactor; it is not a sign assertion for h!=k or for the full
+common B tensors. Removing its extra factors to infer positivity of an
+unrelated bilinear target would repeat the invalid cycle reasoning warned
+against in the earlier prime-pair certificate review.
+
+5. Counting independent prime labels correctly
+----------------------------------------------
+The bank-bank intersection count has two independently summed prime
+labels q,r. Positive support implies both are greater than n^theta and
+both are coprime to both cofactors. For theta>=1/2, qr>n (strictly also
+at the endpoint). The lifted terms in (2.3) are generally outside the
+original coefficient prefix.
+
+The distinct u/v slide gain has ONE 1/3 power for each prime. It is not
+a single-prime 2/3 bank. For example its absolute pointwise bank-bank
+sum is bounded by
+  [n*(1+log n)]^2
+       *[sum_(q>n^theta)q^(-1-u)]^2,
+which yields normalized block exponent 1-2u*theta. This is positive for
+every theta<1. The Chebyshev input can add prime-count logarithmic savings
+but does not change that power. Fixed cofactor columns already explain
+why a power gain on two independent prime labels must not be collapsed
+into the old one-branch threshold.
+
+More generally, positive weights b,c on the TWO free labels give power
+  1-theta*(b+c)
+for the complete bank-bank auxiliary, while weight b on the ONE free
+prime of a smooth-bank auxiliary gives 1-theta*b. The geometric domains
+are respectively h<=n/q,k<=n/r and h<=n,k<=n/q. This distinction is
+explicit in the current producer and independent checker.
+
+6. A paid part of the repeated-prime defect, with gcd overlap retained
+---------------------------------------------------------------------
+The order-one defect in (3.2) is not all paid by a small prime weight.
+Nevertheless its low primitive-cofactor sector IS cofinal padding. This
+is a candidate10 tensor/kernel specialization of the earlier primitive-
+height counting idea, not a new global cancellation theorem.
+
+At integer n write h=gH,k=gK, gcd(H,K)=1. Retain every g, including
+overlap of g with H or K. Let the primitive height max(H,K)<=B, B>=1.
+For any channels i,j,
+  |S_i(gH)S_j(gK)|
+    <=d_2(gH)d_2(gK)
+    <=d_2(g)^2*d_2(H)d_2(K)
+    <=d_4(g)*d_2(H)d_2(K).
+Thus, for q>n^theta and h,k<=n/q, the full g sum is at most
+  [n/(q*max(H,K))]*(1+(1-theta)log n)^3
+                                      *d_2(H)d_2(K).
+Dropping only coprimality in an UPPER bound,
+  sum_(H,K<=B)d_2(H)d_2(K)/max(H,K)
+    <=[sum_(H<=B)d_2(H)/H]*[sum_(K<=B)d_2(K)]
+    <=B*(1+log B)^3.                             (6.1)
+All repeated-prime valuations and h/k overlap are present in this bound.
+
+Let C_psi be the proved all-real psi(t)<=C_psi*t constant from
+prime_discrepancy_proof.txt section 1, or the self-contained 4 log 2
+fallback in PRIME_BANK_COVARIANCE_REVIEW_001.txt section 2. For a nonempty
+bank define
+  D_theta=(1-theta)*(1+1/log 2)/theta.
+Finite partial summation of sum log(q)/q, followed by log q>=theta log n,
+gives
+  sum_(n^theta<q<=n/2)1/q<=C_psi*D_theta.          (6.2)
+The bank is empty through n=2^(1/(1-theta)); otherwise
+1/log n<=(1-theta)/log 2, which supplies the uniform constant. No PNT
+or RH-strength prime-error bound is used.
+
+With defect multiplier at most six, its COMPLETE normalized primitive-
+prefix contribution on [X,2X) is bounded in absolute value by
+  9*C_psi*D_theta*B*(1+log B)^3
+                         *(1+(1-theta)log(2X))^3.               (6.3)
+Use sum_(X<=n<2X)n<3X^2/2. B=1 is exactly the cofactor diagonal h=k.
+Fixed B, or B a fixed power of 1+log X, gives explicit cofinal log
+padding. A positive-power B=X^eta leaves that positive exponent under
+this rule and is not promoted. If a child changes B, its complete
+primitive-sector boundary remains. The complementary large primitive
+height repeated-prime defect is still unresolved.
+
+7. Exact polynomial stencils give a genuine complete-kernel auxiliary bound
+--------------------------------------------------------------------------
+Consider a same-prime program
+  O=sum_(e,f)c_ef T_(q^e)^h T_(q^f)^k,
+on S_i(h)S_j(k), with q coprime to h*k. Its multiplier is the EXACT
+polynomial
+  M_ij(t)=sum_(e,f)c_ef S_i(q^e)S_j(q^f),
+where local prime-power rows are polynomials in t=q^(-1/3). Suppose its
+first nonzero degree is at least m>0 and its coefficient l1 norm is C.
+Then for every actual prime q,
+  |M_ij(q^(-1/3))|<=C*q^(-b), b=m/3.              (7.1)
+This works for EVERY b>0, including b>=1. There is no need to take a
+b->1 limit of the earlier weighted-prime branch theorem.
+
+Define the whole smooth-bank auxiliary by applying O under (1.1),
+with all source shifts kept. Write Q_O,ij(X) for X^(-2) times the sum
+over integer X<=n<2X of that pointwise signed auxiliary; equivalently
+sum the same tensor against I(h;q,k) and multiply by X^(-2).
+At each n its absolute sum is at most
+  C*[sum_(h<=n)d_2(h)]
+       *sum_(q>n^theta)q^(-b)*sum_(2<=k<=n/q)d_2(k)
+    <=C*n^2*(1+log n)^2*sum_(q>n^theta)q^(-1-b)
+    <=C*(1+1/b)*n^(2-theta*b)*(1+log n)^2.        (7.2)
+The last bound enlarges primes to integers. For Y>=1,
+sum_(integer l>Y)l^(-1-b)<=Y^(-b)*(1+1/b), by its first term plus the
+tail integral. All smooth masks, high-smooth restrictions, and unit
+exclusions only reduce this absolute bound; they are not removed from
+the defining identity.
+
+Consequently the normalized complete auxiliary obeys, for ALL integer
+dyadic X>=1,
+  |Q_O,ij(X)|
+    <=C*(1+1/b)*2^max(2-theta*b,0)
+                   *X^(1-theta*b)*(1+log(2X))^2.                (7.3)
+The max is necessary if 2-theta*b is negative. For several independent
+free primes in the declared bank-bank geometry, the identical proof
+gives product_j(1+1/b_j), power 1-theta*sum_j b_j, and the same max
+with that sum. Distinctness is imposed in the identity; enlarging it in
+the absolute upper bound is safe. Local repeated-prime rows must still
+be used for any binding which actually identifies those labels.
+
+These are bounds for SIGNED BILINEAR AUXILIARIES, not squared energies
+of prefix outputs. A negative power is summable with the displayed logs;
+zero power is cofinal log padding; positive power is not cofinal under
+this proof. For an original tensor projection, add the absolute fixed
+projection coefficients times the individual polynomial l1 bounds.
+No numerical coefficient fit enters this estimate.
+
+8. Explicit cumulative stencil, including the common B channel
+--------------------------------------------------------------
+For q coprime to the base coordinate define
+  C_(q,m)^h=sum_(e=0)^m T_(q^e)^h.
+For m>=1, exact finite Euler sums give
+  sum_(e=0)^m a_u(q^e)=t^m,
+  sum_(e=0)^m a_v(q^e)=t^(2m),
+  sum_(e=0)^m B(q^e)=-t^(m-1)+t^(2m-1)+t^(2m).    (8.1)
+For the last identity, B's local series is
+  (1-z)^2/[(1-tz)(1-t^2 z)].
+Its cumulative coefficient is that of (1-z)/[(1-tz)(1-t^2z)]; subtracting
+the two successive finite geometric sums proves (8.1). At m=0 every
+cumulative multiplier is one; the displayed B formula is not used there.
+
+Thus m=5 gives local orders 4,5,10 in channels B,u,v and l1 norms 3,1,1.
+Every tensor S_i(h)S_j(k) with the stencil on its h coordinate has at
+least a 4/3 prime weight. At theta=3/4 the WHOLE smooth-bank auxiliary
+is cofinal by (7.3), including every B/u and B/v common-channel component.
+For theta>3/4 it even has a negative block exponent, with the full logs
+retained. This is an actual unconditional bound, distinct from the weaker
+u/v-only two-prime slide mechanism.
+
+The finite sparse/rectangular grammar may discover this and other local
+zeros by exact polynomial enumeration. The current producer recurrence
+and independent literal-convolution checker agree with the mathematical
+local rows; neither may replace B(q^e) by B(q)^e. Coordinatewise polynomial
+valuations supply one weight per independent FREE prime, not one weight
+per tensor factor. A zero component is an exact identity, not an automatically
+recovered target. All whole-target/RH flags correctly remain false.
+
+9. Outside-domain recovery and its quantitative cost remain open
+---------------------------------------------------------------
+On the original a(h) support, h is not a prime power. Adjoining a fresh q
+preserves that property, so the cumulative projected identity is
+  sum_(e=0)^5 a(q^e h)
+    =beta*[F_B,5(t)B(h)-t^5*a_u(h)-t^10*a_v(h)],
+  F_B,5=-t^4+t^9+t^10.                            (9.1)
+If base prime powers are allowed instead, an additional -d(h) defect
+appears because only e=0 loses the same-prime branch. The h=1 convention
+is separate again. Keeping the original non-prime-power mask avoids
+both errors, but does not solve recovery.
+
+For any original covariance tensor whose stencil includes the baseline
+e=f=0 term, its exact transformed auxiliary is the baseline covariance
+plus ALL nontrivial lifted terms. In (9.1), high-smooth h has q^e h>n
+for every e>=1. Those terms are genuine outside-domain source terms;
+bounding the small cumulative auxiliary does not bound the baseline
+unless their whole weighted contribution is separately controlled.
+Dropping, clipping, or treating them as unseen zero coefficients breaks
+the identity. Recovering through a recurrence at those larger indices
+is not a strictly decreasing-scale induction.
+
+The suppression also has an explicit inverse loss. For m=5 and q>=2,
+  |F_B,5(t)|=t^4*(1-t^5-t^6),
+  1-t^5-t^6>=1-2^(-5/3)-2^(-2)>0.
+Thus B recovery by this local scalar filter costs order q^(4/3), while
+the separate u and v filters cost q^(5/3) and q^(10/3). There is no
+uniform q-independent coercivity for these filtered channels. One scalar
+filtered projection also does not invert all three differently scaled
+channels without companions or further exact identities. Multiplying
+by these inverse factors can undo the very powers used in (7.3).
+
+This does not refute an argument combining several stencils and a signed
+outside-domain compensation. It identifies its explicit residual:
+  prove a complete bound or closed decreasing-scale recurrence for the
+  lifted-support sum which expresses the original K/L0/Lu projection
+  through the proved cofinal auxiliary, with the original full K, all
+  h/k overlap, bank-bank/main terms and initial costs retained.
+No such bound has been supplied here. It cannot be assumed to follow
+from a separate RH-strength companion estimate or from the original
+target itself.
+
+10. Adversarial audit and next admissible constructions
+------------------------------------------------------
+The previous prime-removal study's two-prime saturation rules out its
+own strict entrywise absolute contraction; it concerns different sources.
+Here the exact polynomial cancellation orders are genuine candidate10
+channel identities. The earlier finite-prime counterfeit examples still
+warn that finitely many local laws and positive cycles cannot prove a
+global signed moment. The current auxiliary bound instead includes the
+complete growing-prime kernel, but its recovery is explicitly not closed.
+
+Concrete safe constructions now available are:
+  (a) component u/v slides with distinct-prime guards, complete outside
+      terms, and their actual two-label support exponent;
+  (b) cumulative/rectangular same-prime power stencils with exact local
+      rows, all-channel cancellation order, and the full-kernel bound;
+  (c) a primitive-height partition of repeated-prime defects, with the
+      fixed/polylog prefix paid by (6.3) and the complement left open;
+  (d) source-valuation partitions when a proposed second prime already
+      divides h or k, retaining all shifted prime-power rows and masks.
+These are operator+auxiliary+argument productions, not a claim of finite
+score improvement. Their next proof input is the outside-domain recovery
+and remaining large-primitive/fresh covariance, not another fitted drift
+constant. Normalizing a new auxiliary by its term count may make it cheap,
+but cannot silently normalize the original target or create coercivity.
+
+Final status
+------------
+Proved: exact distinct and repeated-prime slide formulas; common B-sector
+leakage; ordered-support failure of interior swapping; complete primitive-
+prefix repeated-prime defect envelope; exact same-prime cumulative stencils;
+and an all-channel, full ordered-kernel cofinal auxiliary bound with explicit
+constants, domains and independent-prime geometry. Source-only producer/core
+review found no additional mathematical blocker in their local polynomial
+and support-bound implementations. Their tests were not executed by me.
+Unproved: outside-domain recovery of the original projection, a closed
+decreasing-scale signed recurrence, the full actual-source moment, and RH.
+All frozen files remain unchanged; no numerical study, test, hash or rescore
+was introduced by this review.

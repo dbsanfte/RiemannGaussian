@@ -1,0 +1,39 @@
+{
+  "purpose": "universal transfer and additional analytic audit; no reselection or fresh numerical validation claim",
+  "code_sha256": {
+    "signed_mellin_transfer.py": "033fd17a06ea626fffd84f6dfe7fe0db4f0dc03e1a34221df513ca834b34a0a8",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5"
+  },
+  "sources": [
+    {
+      "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-control-results/pilot-001",
+      "files": {
+        "protocol.json": "3cdc9ff40a3d6b215cd300ac1eddc74a5d2955db75eea4bad12db1f7425dcd85",
+        "candidate_batch.json": "d2bafca343ba5b317c9dcd3f3523c096b2e37603c90133cfb77e45293e6de5f2",
+        "validation_data.json": "ab16b699375557bcfdc3502e8d6f790e45b348e99538ba6872899f2f6810964d",
+        "archive.json": "034a536adb0b025d70058a53518307973e6d3667038ec964c9b7ac091b00cb09",
+        "seal.json": "952505099f3d9906a601b114bfae30c7cb653ec4161646f1c9ce967f175c64b7",
+        "final_cases.json": "88f64091c414ba7f4dcd872431ade26cb6edeaa2ec8010c9fa1f7b76dafdc20c",
+        "final_evaluation.json": "6086d459db2a0686c67cbacd753f9e53fa707cd743b29192ebbfed985f5e4343",
+        "verification.json": "ee2473e772be1c3b6927dd56bac1d7d1844962e03b9dc70931458fb48002bf37"
+      }
+    },
+    {
+      "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/stable-scale-results/pilot-001",
+      "files": {
+        "protocol.json": "c51ba112cc2013931f2836276f67cd5552441d28af436368ba4eff305cdf413a",
+        "candidate_batch.json": "199110098293f777b84e0442d35e3c0023e3a34a5d414f4590e6b5ddb0722536",
+        "validation_data.json": "44c8a77c00f665ca814084a593bbf209e31580a7825dabce8702b082e660271c",
+        "archive.json": "c86f2fc321f4f37de4e7086c22d3d3cf327d5f6855bcb92d08b1c3ebde2d51bb",
+        "seal.json": "9467ac675655aed941cd86c756d5604cbb804ff36f3ce55da160481bbb51715d",
+        "final_cases.json": "0a082ae9168dec04a32133e86263d801eb3219e3c551206259285afe190b36d3",
+        "final_evaluation.json": "b17ed90a2b3297637969813c620f1753fdebc423085eb4724e2055ebad13211d",
+        "verification.json": "1c01e1ee95f936c111858665be18e293fa23cade6285d0a76bce84b9ab06a893"
+      }
+    }
+  ],
+  "precision": 640,
+  "finite_moment_data_previously_inspected": true,
+  "historical_priority_is_acceptance_gate": false
+}

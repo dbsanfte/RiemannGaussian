@@ -1,0 +1,164 @@
+STAGE084 COMPLETE RESIDUAL SQUARE-COMPLETION REVIEW
+
+1. Exact mathematical scope
+Keep the full raw signed residual R=A-O-G from083, then apply the exact
+known-unit/prime congruence. Let y=(1,unknown squarefree composite signs),
+so each y_i^2=1. Every added Q=L L^T is positive semidefinite, and therefore
+ y^T R y <= y^T(R+Q)y <= B(R+Q),
+ B(S)=trace(S)+2*sum_(i<j)|S_ij|.
+This is valid even when individual diagonals or total trace are negative.
+The factor must be formed on the COMPLETE effective coordinates; deleting
+cross entries or forming an unrelated raw factor changes the certificate.
+No need to assume a square evaluates zero. Its nonnegative cost is retained.
+The already proved outer inequality adds Astar*u to this residual bound.
+
+A floating SDP/eigenfactor is a proposal only. Exact dyadic L and exact
+rational R suffice for unconditional finite admission: the checker forms
+Q=L L^T itself and verifies every Boolean price row. No numerical assertion
+that an approximate matrix is PSD is then required. A claimed SDP optimum,
+solver status, d value, or floating spectral truncation cannot be substituted
+for this exact reconstructed price. No separate epsilon correction is needed
+when price is recomputed exactly from the dyadic factor actually submitted.
+The original SDP d is guidance; reconstructed factor price can be worse.
+
+2. Relation to the diagonal SDP: useful mechanism and limitation
+For fixed R, minimize sum d subject to diag(d)-R>=0. Signed d are allowed;
+PSD forces d_i>=R_ii. If the implementation additionally requires d>=0,
+it searches a smaller legitimate grammar and must disclose that restriction.
+For any factor Q, set d_i=(R+Q)_ii+sum_(j!=i)|(R+Q)_ij|. Then
+ diag(d)-(R+Q) is symmetric diagonally dominant PSD: each offdiagonal
+edge is |S_ij|*(e_i-sign(S_ij)e_j)*(...)^T. Hence
+ diag(d)-R=Q+that PSD matrix>=0 and sum d=B(R+Q).
+Thus no square-plus-Boolean certificate beats the full diagonal SDP optimum.
+Conversely, any feasible diagonal majorant gives Q=diag(d)-R>=0 and the
+formal exact square certificate has R+Q diagonal, with price=sum d.
+Real factors can be approximated by rational/dyadic factors arbitrarily
+closely for finite dimension; continuity of B gives convergence in value.
+Rational d with a small positive identity slack also gives robust exact
+PSD constructions. This is a real enlargement beyond L=0 coefficientwise
+absolute pricing, but it remains a Boolean/correlation relaxation, not full
+signed arithmetic. It is not a uniform theorem merely because dimension
+and factor rank grow with u.
+
+For a fixed operator, an exact dual witness X>=0 with diag(X)=1 gives
+ tr(R X)<=sum d and therefore lower-bounds EVERY square/Boolean certificate.
+Known anchor y0=1 poses no extra issue: quadratic forms are invariant under
+y->-y; Boolean assignments can globally flip to anchor1, and their rank-one
+correlations lie in this elliptope. This dual is a bound-cone obstruction,
+not a counterexample using actual unknown mu values. To certify across all
+operator theta, the dual must also price the full theta boxes and equality
+constraints: for Rtheta=R0+sumtheta Z, certify inf_allowedtheta tr(Rtheta X).
+A fixed-theta dual does not prove the detector's full operator grammar fails.
+Rational factored PSD dual witnesses with exact diagonal1 are implementable,
+though not required to establish validity of primal finite certificates.
+
+3. Freeze and validation interpretation
+Freeze kernel, energy, coupled controls and theta before fresh geometry.
+Preserve the outer equations exactly for every such operator. New cuts with
+weight identically zero on the whole outer interval preserve the theorem,
+provided identity-zero classification is symbolic and covers prime and
+composite branches; merely zero on calibration rows is insufficient.
+At new u, solving a new SDP and producing a new factor L is allowed, but it
+is new auxiliary-certificate search at that geometry. Label it as such.
+It is not validation of the old finite factor and not evidence of a uniform
+factor-construction rule. Report operator coefficients unchanged, factor
+geometry-dependent, and retained solver failures/resources. L=0 must remain
+an independently admitted baseline so the actual enlargement can be seen.
+Always compare reconstructed exact prices, not only floating objectives.
+
+4. Missing uniform estimate for the correct RH target
+By MOBIUS_RH_TARGET_AUDIT_084.txt either original fixed source suffices when
+its exponent bounds approach1/2. For each integer j>=1 put q_j=1+1/j.
+A sufficient NEW uniform square theorem is a computable complete family
+ theta_j, L_j(u), and C_j<infinity independent of u,
+with symbolic outer closure and
+ B(R_(theta_j)(u)+L_j(u)L_j(u)^T)<=C_j*u^q_j
+for EVERY positive integer u. Constants, ranks and construction rules may
+depend on j; no bound uniform in j is required. The positive Gram additions
+inside the previous A and the new completion Q must remain distinct.
+The drift then is <=Astar_j*u+C_j*u^q_j <=(Astar_j+C_j)*u^q_j.
+Domination/base plus r3/2 contraction gives source O_j(u^(1/2+1/(2j))).
+All-j quantification plus the exact fixed-kernel transfer yields RH.
+A finite pilot, even with exact certificates at many j,u, does not pay this
+uniform statement. A black-box SDP algorithm that happens to return finite
+factors for each queried u does not prove either termination at all u or
+the uniform price estimate. The density/frontier is retained, not solved.
+
+A cleaner symbolic route is to synthesize a structured diagonal majorant
+ diag(d_j(u))-Rtheta_j(u)=L_j(u)L_j(u)^T+P_j(u),
+with P_j uniformly PSD by exact sparse/SDD/rank-one identities and
+sum d_j(u)<=C_j*u^q_j. The trace estimate and matrix identity are separate
+uniform leaves. A parameterized sum-of-squares identity can pay the PSD
+leaf; exact squarefree-count or prime-divisor estimates may pay its trace.
+An unproved trace bound equal to the original signed residual is not an
+independent invention. Print the precise arithmetic statistic still unpaid.
+
+5. Operator-versus-method diagnostics and prior-work limits
+Record four prices for each fixed geometry: L=0 exact baseline, exact square
+completion, SDP primal objective as noncertified guidance, and any admitted
+PSD dual lower witness. A small primal/dual gap with large superlinear price
+suggests the selected operator's Boolean SDP relaxation is the bottleneck;
+a large gap or bad dyadic factor indicates numerical/factor reconstruction
+limitations. Finite evidence cannot by itself give an all-scale obstruction.
+Across-operator bounds need operator-feasible dual pricing as above.
+Known prime signs are already used jointly. Unknown composite signs may not
+enter operator or factor fitting; auxiliary factors should use only admitted
+geometry and exact known information. A dual Boolean assignment need not
+satisfy divisor zero identities and so must never be described as actual
+arithmetic failure.
+
+Earlier073 PSD storage energies kept specific arithmetic channel squares
+and encountered nonzero bulk modes;074 centered them without paying the
+remaining signed cancellation. Earlier069 joined convolution rows retained
+all signed crosses and diagonals but unsigned Gram prices did not give the
+required exponent. The new full effective-coordinate completion is broader
+than those fixed channel/source-only storage squares; their no-go witnesses
+cannot transfer without re-admission. It is nevertheless still auxiliary
+PSD majorization: finite larger rank alone supplies no uniform arithmetic
+cancellation theorem. This distinction should be explicit in feedback.
+
+6. Typed conditional RH-transfer acceptance
+Suggested certificate kind CONDITIONAL_FIXED_KERNEL_RH_TRANSFER, with:
+ source exact rational kernel binding to G or G+cG(u/3);
+ exponent_family q(j)=1+1/j, integer domain j>=1;
+ energy_domination identity and complete base dependency;
+ recurrence r3/2, exact all-j contraction witness r/2^q<=3/4;
+ all_u_all_j_drift_leaf dependency status UNPAID or VERIFIED_UNIFORM;
+ constants allowed depend j but not u;
+ transfer exact dilation identities and external zeta/RH theorem dependency.
+A checker may admit THE_IMPLICATION_IS_VALID while preserving
+RH_proved=False whenever the drift/base leaves remain unpaid. Structural
+metadata is not proof of a universal arithmetic leaf. For a single fixed
+q>1 certificate, conclusion is only its associated zero-free half-plane.
+Separate statuses avoid conflating a correct target with its achievement.
+
+No frozen files changed; no old science or unknown arithmetic queried.
+
+IMPLEMENTATION AUDIT (before pilot)
+Read mobius_rh_target_084.py and mobius_coupled_square_084.py. The target
+compiler exactly reconstructs the full integer-divisor kernel from two
+contractive rational dilations and an optional |c|<1 extra dilation. Its
+conditional status and unpaid all-j arithmetic leaf are appropriate. The
+energy schema makes E(0)=0, so global induction needs no separately observed
+base when the leaf really covers every positive u. Rational factor2/(2-r)
+is safe for all q>=1. If future energy/operator programs depend on j, every
+member must retain the fixed kernel and separately satisfy domination and
+the global leaf; checking the present fixed program does not verify an
+arbitrary all-j construction. This qualification is covered by the conditional
+leaf, not an achieved theorem.
+
+The square producer forms the complete effective residual and all linear
+control templates after RAW outer removal. The fixed Gram subtraction stays
+in the base. Exact dyadic factors give valid positivity regardless of spectral
+clipping errors; the exact price, not the proposed SDP diagonal, is admitted.
+The L=0 fallback is valid and reported. The dual constructs a factored Gram
+whose row norms are at most1, then completes its diagonal to1 with nonnegative
+slack. For equality rows Etheta=b the lower formula
+ base-lambda*b-16*sum|v+lambda*E|
+is correct for all admitted theta boxes and exact outer equations. The
+positive scale factor in numerical equality multipliers is proposal-only;
+any rational lambda is valid after independent exact evaluation. Its scope
+is finite complete roster/energy/Gram, not every future operator grammar.
+Fresh-geometry solve with optimize_operator=False retains theta and learns
+a new auxiliary certificate, which must be labeled as such in pilot results.
+No blocking mathematical defect found in the reviewed implementation.

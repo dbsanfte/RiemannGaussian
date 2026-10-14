@@ -1,0 +1,82 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "automatically_paid_zero_sectors": 1,
+  "bound_routes": 11,
+  "closed_low_goals": 0,
+  "development_operations": 18210042,
+  "elapsed_seconds": 2.2440858089830726,
+  "exact_head_matches": 1,
+  "fitted_constants": 0,
+  "head_trials": 396,
+  "inclusive_operations": 20773707,
+  "main_operations": 2563665,
+  "model_calls_in_search": 0,
+  "new_component_bounds_proved": 0,
+  "new_uniform_signed_arithmetic_estimates": 0,
+  "numerical_diagnostics_executed": false,
+  "paid_head_auxiliaries": 1,
+  "peak_rss_kib": 704032,
+  "selected_routes": [
+    {
+      "actual_arithmetic_bound_proved": false,
+      "corrected": true,
+      "goal_U_power": "12/5",
+      "next_target_count": 1,
+      "route": {
+        "aggregation": "prefix",
+        "method": "pay_zero_sector_by_energy_feedback",
+        "nonnegative_cost": {
+          "U_power": "21/10",
+          "log_degree": "0"
+        },
+        "recurrence": {
+          "D": "initial energy + summed nonnegative costs + upper bound for EVERY signed prefix",
+          "all_integer_cutoffs": true,
+          "energy_root": "1/2",
+          "feedback_envelope": {
+            "U_power": "11/10",
+            "log_degree": "0"
+          },
+          "inequality": "M<=D+A*M^r implies M<=2*D+(2*A)^(1/(1-r))",
+          "resulting_envelope": {
+            "U_power": "12/5",
+            "log_degree": "0"
+          },
+          "rule": "finite_maximum_and_sublinear_Young",
+          "target_assumed_in_proof": false
+        },
+        "relation_to_original_goal": "equivalent goal up to paid costs",
+        "status": "conditional_open_signed_work"
+      },
+      "target_id": "centered_A2_E3",
+      "zero_sector_control": {
+        "absolute_work_control": true,
+        "available": true,
+        "identically_zero": false,
+        "norm_domain": "entire real height line, hence every old window",
+        "retained_zero_mu_branch": true,
+        "root_U_power": "-9/20",
+        "rule": "finite shifted complete centered power kernels and Minkowski",
+        "squared_norm_constant": "6400/13",
+        "squared_norm_envelope": {
+          "U_power": "-9/10",
+          "log_degree": "0"
+        },
+        "target_assumed_in_proof": false,
+        "terms": [
+          {
+            "coefficient_upper": "8",
+            "root_U_power": "-9/20"
+          }
+        ],
+        "v_bound": "v=0 for degree 0, otherwise abs(v)<=q^(degree-1)",
+        "work_control": "W0_integral<=2*sqrt(D)*q^a*sqrt(L_old)+D*q^(2*a)"
+      }
+    }
+  ],
+  "status": "CUTOFF_BOUND_COMPOSITIONS_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "targets": 1,
+  "transition_programs": 2,
+  "whole_signed_bound_proved": false
+}

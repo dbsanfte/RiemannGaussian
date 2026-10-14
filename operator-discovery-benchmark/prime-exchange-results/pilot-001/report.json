@@ -1,0 +1,48 @@
+{
+  "RH_proved": false,
+  "audit_operations": 756747,
+  "complete_prime_graph_recovered": false,
+  "coordinatewise_scores_reused": false,
+  "edge_constructions": 3,
+  "elapsed_seconds": 3.5102257179969456,
+  "expressions": 272,
+  "factor_occurrences": [
+    {
+      "coefficients": [
+        0,
+        1,
+        -1
+      ],
+      "words": 272
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0
+      ],
+      "words": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1
+      ],
+      "words": 272
+    }
+  ],
+  "linear_forms": 48,
+  "new_actual_source_evaluations": 0,
+  "peak_cells": 473536,
+  "peak_rss_kib": 517060,
+  "preparation_operations": 360332,
+  "producer_operations": 878258,
+  "selected_parent_ids": [
+    13618
+  ],
+  "signed_negative_credit_proved": false,
+  "status": "JOINT_FACTORS_AND_COMPLETE_EDGE_CORRECTIONS_VERIFIED",
+  "total_operations": 1995337,
+  "whole_signed_bound_proved": false
+}

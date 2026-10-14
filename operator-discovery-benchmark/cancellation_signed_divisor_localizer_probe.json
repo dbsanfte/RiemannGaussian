@@ -1,0 +1,152 @@
+{
+  "RH_proved": false,
+  "cases": [
+    {
+      "d": 1,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 1,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 2,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 2,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 3,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 3,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 4,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 0
+    },
+    {
+      "d": 4,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 0
+    },
+    {
+      "d": 5,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 5,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 6,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 6,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 7,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 7,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 8,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 0
+    },
+    {
+      "d": 8,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 0
+    },
+    {
+      "d": 9,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 0
+    },
+    {
+      "d": 9,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 0
+    },
+    {
+      "d": 10,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 10,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 11,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 1
+    },
+    {
+      "d": 11,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 1
+    },
+    {
+      "d": 12,
+      "identity_verified": true,
+      "sign": -1,
+      "squarefree": 0
+    },
+    {
+      "d": 12,
+      "identity_verified": true,
+      "sign": 1,
+      "squarefree": 0
+    }
+  ],
+  "global_bound_proved": false,
+  "schema": 1,
+  "scope": "supplied symbolic identity calibration; no signed coefficient values or target scores"
+}

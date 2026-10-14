@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "code_sha256": {
+    "signed_bound_calibration.py": "2549550e1016e89e742bb9dfc9a1b4ee6d106c8d158e257c67f9bf12caf5b97a",
+    "test_signed_bound_calibration.py": "d5f92ba71bd9626bbce45a87c893b2b7b278bfda3cdbe71ac0b471688878b07d"
+  },
+  "training_generators": [
+    {
+      "seed": 10001,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          -1,
+          0
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10001,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          1,
+          0
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10001,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          -1,
+          0
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10003,
+      "generator": {
+        "base": 2,
+        "weights": [
+          1,
+          -1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10003,
+      "generator": {
+        "base": 2,
+        "weights": [
+          1,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10003,
+      "generator": {
+        "base": 2,
+        "weights": [
+          1,
+          -1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10004,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10004,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10004,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10005,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10005,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10005,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10007,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          0,
+          -1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10007,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          0,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10007,
+      "generator": {
+        "base": 3,
+        "weights": [
+          1,
+          0,
+          -1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10017,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10017,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10017,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10018,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10018,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10018,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10020,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10020,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10020,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    },
+    {
+      "seed": 10030,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "mode": "signed",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10030,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "mode": "positive",
+        "delay": null
+      }
+    },
+    {
+      "seed": 10030,
+      "generator": {
+        "base": 4,
+        "weights": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "mode": "delayed",
+        "delay": 1024
+      }
+    }
+  ],
+  "training_parents": 64,
+  "response_horizon": 512,
+  "candidate_bases": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "holdout_generator_bases": [
+    5,
+    6
+  ],
+  "holdout_novelty_design": "Exclude coefficients matching any training function through index 511; this is a novelty gate, not outcome filtering. Retain rejected seed designs.",
+  "bulk_feature_dictionary": [
+    "T*S",
+    "T*b",
+    "T",
+    "S",
+    "b",
+    "one"
+  ],
+  "boundary_feature_dictionary": [
+    "T*S_r",
+    "b*T_r",
+    "T",
+    "T_r",
+    "S_r",
+    "one"
+  ],
+  "sparse_rule_support_budget": 2,
+  "tie_break": "minimum support then feature-index tuple then exact coefficient text",
+  "discovery_input": "anonymous integer response arrays only; no generator seed/base/weight/mode metadata",
+  "supplied_bias": "digit/prefix block-recursion basis, residue moment atoms, and post-freeze induction/positivity proof method",
+  "expected_digit_prefix_or_moment_coefficients_supplied": false,
+  "actual_prime_data_used": false,
+  "holdout_seed_and_dimension_generation": "derive fresh values only AFTER global/model and per-instance seals",
+  "RH_proved": false
+}

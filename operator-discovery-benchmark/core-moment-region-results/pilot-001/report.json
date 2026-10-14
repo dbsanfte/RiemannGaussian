@@ -1,0 +1,41 @@
+{
+  "RH_proved": false,
+  "actual_source_observations": 0,
+  "arithmetic_power_advantage": false,
+  "contour_trials": 1958,
+  "development_operations": 17772411,
+  "elapsed_seconds": 48.83549702298478,
+  "finite_cube_bound_proved": true,
+  "fitted_constants": 0,
+  "formal_proof_assistant_verified": false,
+  "full_component_bound_proved": true,
+  "future_targets_requiring_more_than_moment_library": 20,
+  "inclusive_operations": 68838600,
+  "main_peak_rss_kib": 704032,
+  "moment_allocations": 199825,
+  "new_source_payments": 1,
+  "original_bindings": 144,
+  "original_fixed_sigma_low_Gram_proved": false,
+  "paid_analytic_components": 2,
+  "paid_components": [
+    {
+      "U_power": "136/23",
+      "energy_N_power": "-16/69",
+      "newly_paid": false,
+      "sigma": "6/23",
+      "target_id": "centered_A2_E2"
+    },
+    {
+      "U_power": "150/23",
+      "energy_N_power": "-3/92",
+      "newly_paid": true,
+      "sigma": "8/23",
+      "target_id": "centered_A2_E3"
+    }
+  ],
+  "runtime_model_calls": 0,
+  "status": "MOMENT_REGION_SEARCH_VERIFIED_WITH_OPEN_SIGNED_CORE",
+  "study_operations": 51066189,
+  "targets": 22,
+  "whole_signed_bound_proved": false
+}

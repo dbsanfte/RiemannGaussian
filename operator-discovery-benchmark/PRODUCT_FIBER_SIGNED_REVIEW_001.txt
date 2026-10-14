@@ -1,0 +1,356 @@
+PRODUCT FIBERS, PRIME/COMPOSITE SIGNS, AND COMPLETE CROSS-PRODUCT TRANSPORT
+
+Scope and outcome
+-----------------
+This new analytical memo addresses
+candidate10_integrated_prime_recovery_obligation.json. The source is actual
+mu, u=1/3, v=2/3, beta=9/2. Previous studies and analytical memos remain
+unchanged. No numerical response, arithmetic table, experiment, test, hash
+or subagent was used. No complete uniform bound or RH theorem is obtained.
+
+There are three useful exact reductions and two scoped obstructions.
+  * The full prefix-square has a product-fiber identity, retaining every
+    divisor, gcd, repeated prime and the complete main-term cross.
+  * The entire product region hk<=X*B and the entire primitive-height<=B
+    region have explicit absolute costs. Fixed/polylogarithmic B is paid.
+  * Across products m and qm, prime adjunction gives an exact four-color
+    bulk / three-color birth / prefix-exit identity, with the unit removed.
+  * At squarefree m, every nonzero a(h)a(k) in the SAME product fiber has
+    sign mu(m). Positive prime-allocation or divisor-orbit reweighting
+    cannot pair opposite signs there. This is a proof, not parity folklore.
+  * The squarefree-product projection is not a positive energy. Moreover
+    repeated-prime fibers can have opposite signs, but the opposite branch
+    can be power-suppressed or entirely outside the original prefix.
+
+A next grammar must admit a real change of product prime parity, or a
+repeated-valuation transition with its amplitude and outside support paid.
+The lower-color birth channel is a concrete auxiliary correlation, not an
+established cofinal estimate. The full centered smooth/common-bank credit
+still remains open. Global/RH flags remain false.
+
+1. Source, product geometry, and the centered square
+----------------------------------------------------
+Let a_b=mu*(n^(-b)), B=a_u*a_v, p=beta*(B-a_u-a_v+delta), and a=p-d,
+where d is the COMPLETE same-prime prime-power part. Prefixes are inclusive
+and below-one zero. Thus a(1)=a(q^e)=0; elsewhere a=p. Write
+  A(n)=sum_(h<=n)a(h), R(n)=A(n)-c*n^kappa,
+  c=m_u, kappa=2/3.
+For X dyadic integer>=1 put N=2X-1 and
+  W_X(h,k)=max(0,2X-max(X,h,k)),
+  Psi_X(h)=sum_(max(X,h)<=n<2X)n^kappa,
+  M_X=sum_(X<=n<2X)n^(2*kappa).
+Every index and endpoint in these formulas is integer. Then EXACTLY
+  E_R(X)=X^(-2)*[sum_(h,k<=N)a(h)a(k)W_X(h,k)
+                  -2c*sum_(h<=N)a(h)Psi_X(h)+c^2*M_X].         (1.1)
+The cross and main square are NOT removed by regrouping the quadratic part.
+
+Define the complete product fiber
+  Gamma_X(m)=sum_(h divides m)a(h)a(m/h)W_X(h,m/h).
+The weight is zero if either factor is above N, so the quadratic term is
+  sum_(m<=N^2)Gamma_X(m).                       (1.2)
+It is generally invalid to replace Gamma_X(m) by (a*a)(m) times a weight
+depending only on m: max(h,m/h), hence the divisor balance, remains.
+All products through N^2 occur, even though the original source prefix
+only requested coefficients through N.
+
+For the actual input at theta>=3/4,
+  R=K-L0+Lu+Lv-main=R_new+Lv.
+The existing whole Lv bound makes R and R_new cofinal-equivalent by the
+two-direction triangle/Young inequality. Their finite energy relation is
+  E_Rnew=E_R+E_Lv-2<R,Lv>_X.                    (1.3)
+This memo works with (1.1), which retains the full a source. Equation (1.3)
+and the old D/smaller-pole corrections are kept when recovering the precise
+input target. No individual Gram entry is identified with the whole energy.
+
+2. Complete gcd and valuation parametrization
+---------------------------------------------
+Put h=g*r,k=g*s, gcd(r,s)=1. Then h*k=g^2*r*s, and
+  Gamma_X(m)=sum_(g^2 divides m)
+       sum_(r*s=m/g^2,gcd(r,s)=1)a(g*r)a(g*s)W_X(g*r,g*s).       (2.1)
+There is NO condition gcd(g,r*s)=1. At a prime with product valuation e,
+write gamma=min(v_q(h),v_q(k)); then
+  0<=gamma<=floor(e/2),
+  (v_q(r),v_q(s))=(e-2gamma,0) or (0,e-2gamma),
+with the pair (0,0) included once when e=2gamma. This parametrizes every
+shared/repeated prime exactly. It does not replace them by squarefree density.
+
+For au/av alone, each nonunit prime-power local coefficient is negative.
+Their pair sign at h,k is therefore
+  (-1)^(omega(h)+omega(k))
+   =(-1)^(omega(rad(m))+omega(g)).              (2.2)
+That is not simply mu(rad(m)), because every shared prime contributes
+twice on the two legs. For B and the linear combination p, higher prime
+powers have additional signs; equation (2.2) is not imposed on a.
+
+3. Two independently paid quadratic regions
+-------------------------------------------
+The actual coefficient envelope is |a(n)|<=beta*d2(n), including every
+zero prime-power coefficient. Also d2*d2=d4, d2(n)^2<=d4(n), and
+sum_(n<=T)d4(n)<=T*(1+log T)^3 for real T>=1, by ordered divisor counting.
+
+(A) Let B>=1 and T=X*B. The ENTIRE low-product region, with all gcd and
+repeated-prime sectors, has absolute normalized cost
+  X^(-2)*sum_(h*k<=T)|a(h)a(k)|W_X(h,k)
+     <=beta^2*B*(1+log(X*B))^3.                (3.1)
+Indeed W_X<=X and sum_(h*k<=T)d2(h)d2(k)=sum_(m<=T)d4(m). Products with
+a factor>N contribute zero automatically. For fixed or polylogarithmic
+B(X), this is cofinal padding. The unresolved quadratic products may be
+restricted to m>X*B after retaining this complete signed component and cost.
+
+(B) In (2.1) let the primitive height H=max(r,s) be <=B. Since
+d2(g*r)<=d2(g)d2(r), with no coprimality assumption, and g<=2X/H,
+its complete absolute normalized cost is at most
+  2beta^2*(1+log(2X))^3
+          *sum_(r,s<=B,gcd(r,s)=1)d2(r)d2(s)/max(r,s)
+     <=4beta^2*B*(1+log B)^2*(1+log(2X))^3.     (3.2)
+For the last bound, ignore the gcd restriction, order the two legs, and
+use sum_(r<=s)d2(r)<=s*(1+log s), then sum_(s<=B)d2(s)<=B*(1+log B).
+The diagonal is included safely by the doubled bound. Fixed/polylog B
+again gives a paid sector. These two regions overlap; an implementation
+must use their union once, or a disjoint peel with no duplicated subtraction.
+
+Equations (3.1)-(3.2) concern the quadratic term only. They do not authorize
+discarding the linear main cross in (1.1), or treating the remaining
+signed quadratic projection as a nonnegative energy. All full squares and
+their original main terms are recovered before making an energy claim.
+
+4. Exact squarefree sign and four nonempty prime-color bins
+----------------------------------------------------------
+For prime q define r_q=1-q^(-u)>0, s_q=1-q^(-v)>0. For squarefree n set
+  U(n)=prod_(q divides n)r_q,
+  V(n)=prod_(q divides n)s_q,
+  T(n)=prod_(q divides n)(r_q+s_q),
+  gamma(n)=beta*[T(n)-U(n)-V(n)+delta(n)].
+Empty products are one. Actual multiplicativity of B,au,av gives
+  a(n)=mu(n)*gamma(n) for EVERY squarefree n.    (4.1)
+Here gamma(1)=gamma(q)=0; gamma(n)>0 when omega(n)>=2. Positivity follows
+by expanding T: its all-u and all-v terms are U and V, and all other
+terms are strictly positive. It does not depend on a numerical prime sample.
+
+If m is squarefree, every factorization h*k=m is automatically coprime,
+both factors are squarefree, and
+  a(h)a(k)=mu(m)*gamma(h)*gamma(k).              (4.2)
+Thus
+  Gamma_X(m)=mu(m)*Phi_X(m),
+  Phi_X(m)=sum_(h divides m)gamma(h)gamma(m/h)W_X(h,m/h)>=0.       (4.3)
+It is nonzero only if omega(m)>=4 and some allowed balanced factorization
+puts at least two primes on each leg. This is the exact scoped obstruction:
+within a fixed squarefree product, ALL nonzero terms have the same sign.
+
+The amplitude has a useful combinatorial interpretation. Each prime of m
+goes into one of four labeled bins hu,hv,ku,kv, with ALL four bins nonempty.
+A u-colored prime contributes r_q, a v-colored prime s_q; the product of
+bins hu,hv is h, and of ku,kv is k. Their geometric weight is W_X(h,k).
+This preserves the complete divisor balance, with no independence assumption.
+
+For comparison, WITHOUT the geometric weight, put ell=omega(m), m>1.
+The complete amplitude sum divided by beta^2 is
+  Q(m)=(2^ell+4)*T(m)+(2^ell-2)*[U(m)+V(m)]
+        -2*prod_(q divides m)(2r_q+s_q)
+        -2*prod_(q divides m)(r_q+2s_q).        (4.4)
+It follows by expanding (T-U-V+delta)*(T-U-V+delta) on squarefree m.
+The formula vanishes for ell<4 and is positive for ell>=4. At m=1 the
+omitted delta*delta term restores zero; (4.4) was explicitly scoped to m>1.
+Formally letting all r_q,s_q tend to one gives
+  Q=4^ell-4*3^ell+6*2^ell-4,
+the number of surjections into four bins. This is a symbolic prime-location
+limit, not a source experiment or a new signed estimate. Equation (4.4)
+does not replace the actual W_X geometry in (4.3).
+
+5. What divisor-fiber and prime-permutation transport cannot do
+--------------------------------------------------------------
+A permutation of factorizations at a fixed squarefree m, or any regrouping
+with nonnegative coefficients and nonnegative kernel weights, preserves the
+common sign mu(m). It cannot pair two nonzero opposite-sign source terms.
+A permutation of the existing prime labels between the legs likewise
+preserves the number of prime factors of the product and this same sign.
+Permuting the numerical prime labels to another squarefree product with
+the SAME number of prime factors also preserves its parity sign, though
+the amplitude and all prefix/cutoff geometry may change.
+
+This does not exclude an algebraic relation with signed auxiliary coefficients,
+a signed changed kernel, or a main-term complement. Such a relation contains
+negative terms added by the transformation; they must be recovered with
+their full costs. There is no opposite raw source sign in (4.3) to make
+that recovery automatic. A change of squarefree product parity, e.g. real
+prime adjunction/removal, is the basic source transition not admitted by
+the fixed-fiber orbit. Repeated valuations provide another possible
+transition, as section 7 demonstrates.
+
+Moreover the squarefree-product part of the quadratic kernel is NOT a
+positive energy. On coefficient indices h>=2 its diagonal is zero because
+h^2 is nonsquarefree. It has nonzero off-diagonals whenever allowed coprime
+factors h,k occur. Such a two-index submatrix is [0,w;w,0], w>0, with
+one positive and one negative eigenvalue. Hence it cannot be a coercive
+quadratic storage by itself. A negative scalar coefficient on this signed
+projection cannot be called energy contraction. The full centered square
+in (1.1), with all nonsquarefree/gcd and main terms, supplies positivity.
+
+6. A complete cross-product prime-pairing identity
+-------------------------------------------------
+Fix a prime q, and let m be squarefree with q not dividing m. For every
+squarefree q-free h define t_q=r_q+s_q and
+  G_q(h)=beta*[s_q*U(h)+r_q*V(h)-t_q*delta(h)].
+Then exactly
+  gamma(q*h)=t_q*gamma(h)+G_q(h).               (6.1)
+G_q(1)=0 and G_q(h)>0 for h>1. In particular the unit correction is
+essential; gamma(q)=0 is not a nonzero birth at the empty cofactor.
+
+Every factorization of qm assigns its unique q to the left or right leg,
+so define complete nonnegative boundary and birth fibers
+  Boundary_X,q(m)=sum_(h*k=m)gamma(h)gamma(k)
+        *[W_X(h,k)-W_X(q*h,k)+W_X(h,k)-W_X(h,q*k)],
+  Birth_X,q(m)=sum_(h*k=m)[G_q(h)gamma(k)W_X(q*h,k)
+                                        +gamma(h)G_q(k)W_X(h,q*k)].
+The EXACT identity is
+  Phi_X(q*m)=2*t_q*Phi_X(m)
+                     -t_q*Boundary_X,q(m)+Birth_X,q(m).         (6.2)
+There is no omitted factorization with a prime or unit leg: their amplitudes
+and G values supply the appropriate zero or newly nonzero term.
+Every prefix exit is explicit; for example
+  W_X(h,k)-W_X(q*h,k)
+     =max(0,min(2X,q*h)-max(X,h,k)).            (6.3)
+It counts integers where the base pair is in the prefix and its q-lift
+is not. Both legs' exits are needed. Outside-domain lifted pairs are not
+silently treated as source zeros; their original base contribution is
+the retained boundary in (6.3).
+
+Partitioning ALL squarefree products into q-free m and qm gives
+  X^(-2)*sum_(m squarefree)Gamma_X(m)
+   =X^(-2)*sum_(m squarefree,q not dividing m)mu(m)
+       *[(1-2t_q)*Phi_X(m)+t_q*Boundary_X,q(m)-Birth_X,q(m)].     (6.4)
+All fiber functions have their natural zero outside the finite prefix
+product range; the identity includes products that enter or exit under
+the mapping. If a low-product peel is imposed, its indicator must be
+included at m AND qm, with the additional threshold crossing retained.
+
+The bulk coefficient is negative: q^(-1/3)<4/5, q^(-2/3)<16/25 for q>=2,
+so t_q>14/25 and 1-2t_q<-3/25. Nevertheless the remaining mu(m) projection
+in (6.4) is signed and indefinite by section 5, and the two complete
+defect channels have no established signed bound. This is not a contraction.
+
+There is a genuinely different typed auxiliary here. Phi has FOUR nonempty
+prime-color bins. Each G_q(h) term is monochrome on its cofactor leg, while
+gamma(k) is mixed on the other; Birth therefore has THREE nonempty bins.
+The distinguished q fills the missing fourth bin. This is a full arithmetic
+identity linking color-occupancy states and DIFFERENT products, with exact
+kernel transport. A next language can encode occupancy, which leg receives
+q, and both entry/exit kernels, rather than only higher local multipliers.
+Boundary retains the old four-bin state. A degree/color induction is not
+closed by this fact alone: lower-color companions, at their base, still
+contain actual mu/au-type signed prefix information. Independently assuming
+their RH-strength bounds would remain circular. The new testable input is
+their joint signed correlation in (6.4), with a well-founded scale/prime
+or color argument and the entire boundary paid, not its fitted scalar value.
+
+7. Repeated-prime fibers can have opposite signs, with explicit costs
+--------------------------------------------------------------------
+The same-sign theorem is deliberately scoped to squarefree m. There are
+actual repeated-prime opposite signs within one fiber. This can be proved
+symbolically, without choosing or evaluating a new source sample.
+
+Take distinct primes q,r,s,t with q>=27 and put x=q^(-1/3), y=x^2.
+The local B coefficients satisfy
+  B(q^2)=1-2(x+y)+x^2+xy+y^2>0,
+  B(q^3)=(x+y)*B(q^2)-xy*(x+y-2)>0.             (7.1)
+Indeed x<=1/3,y<=1/9 gives the first expression >=1/9. For every other
+prime r, B(r)<0 and au(r),av(r)<0, while au(q^e),av(q^e)<0 for e>=1.
+Equation p=beta*(B-au-av) off the unit implies
+  a(q*r)>0, a(s*t)>0, a(q^3*r)<0,
+  a(q^2*s*t)>0.                                (7.2)
+The third follows because all three contributions are negative; for the
+fourth, B(q^2)B(s)B(t)>0 and the au/av products are negative and subtracted.
+None of these indices is a prime power, so a=p there.
+
+Thus the product m=q^3*r*s*t has a positive pair
+(q*r,q^2*s*t), and a negative pair (q^3*r,s*t). Every nonsquarefree/gcd
+sector must remain: removing one of these by a squarefree analogy is false.
+
+Sign availability is not cancellation with bounded cost. Hold r,s,t fixed
+and let q tend to infinity through primes. Then
+  B(q^2)->1, B(q^3)/q^(-u)->1,
+  au(q^2)=O(q^(-u)), au(q^3)=O(q^(-2u)),
+and the av analogues decay faster. Consequently the positive pair above
+has a positive nonzero limiting amplitude, whereas the negative pair is
+of order q^(-u), with a nonzero negative leading constant. Pairing those
+two magnitudes requires a coefficient of order q^u, or an explicitly
+retained remainder. This is an exact asymptotic in prime parameters, not
+a numerical fit. Other negative q^3 assignments for this m are similarly
+suppressed; the q^(1+2) assignments with both legs having other prime
+factors are positive under (7.1).
+
+There is also a complete SUPPORT example. Let L=max(rs,rt,st), choose q
+large, and choose dyadic X with q^2*L<=X<2q^2*L. If q>4L/min(r,s,t),
+every nonzero q^(1+2) split fits inside X and has weight X, but every
+negative q^3-on-one-leg assignment is above 2X and has weight zero. For
+three other primes, the only nonzero q^3-on-one-leg assignments put ONE
+of r,s,t on that leg and the other TWO on the opposite leg; all other
+assignments have a unit or prime-power/prime zero leg. Thus this complete
+fiber is positive in that prefix geometry despite its negative algebraic
+branches existing at larger coordinates. Their recovery requires actual
+outside support and changed kernels. This narrow example does not give
+a lower bound for the full energy or disprove its uniform target.
+
+8. Divisor inversion: an identity with a recorded recovery cost
+--------------------------------------------------------------
+The exact actual source law mu*1=delta gives
+  sum_(d divides n)mu(d)=delta(n),
+  sum_(d<=N)mu(d)*floor(N/d)=1.                 (8.1)
+It couples DIFFERENT divisor products d. It does not cancel two terms
+whose fixed squarefree product is m and common sign is mu(m).
+For a nonconstant weight F(d), the complete identity is instead
+  sum_(d divides n)mu(d)F(d)
+   =F(1)*delta(n)+sum_(d divides n)mu(d)[F(d)-F(1)].             (8.2)
+The weighted difference is precisely what cannot be discarded. The balance
+weights and source amplitudes in (4.3) are nonconstant.
+
+A legitimate complete convolution regrouping is g=a*1, hence a=mu*g,
+with
+  g=beta*[mu*(n^(-u)*n^(-v))-n^(-u)-n^(-v)+1]-d*1.             (8.3)
+Stars inside (8.3) remain Dirichlet convolutions; the final 1 is the
+constant-one sequence, not delta. Thus for G(x)=sum_(k<=x)g(k),
+  A(x)=sum_(d<=x)mu(d)*G(x/d).                  (8.4)
+This retains repeated-prime removal, the unit convolution and every floor.
+There is still actual mu in the leading g state, and its critical recovery
+cannot be supplied for free. On the weighted L2 norm with parameter sigma,
+dilation by d has norm at most d^(-sigma); the absolute recovery cost is
+  sum_(d>=1)|mu(d)|d^(-sigma)=prod_q(1+q^(-sigma)),
+which diverges at sigma<=1, in particular at the critical sigma=1/2.
+This is a failure of that absolute recovery certificate, not a claimed
+impossibility of a signed source-specific inverse. The finite floor law
+also gives a bounded harmonic mu prefix, but not the missing prefix-square
+covariance. Any use of (8.4) must prove its signed dilation estimate or
+put its companions in the same closed induction, with full centering.
+
+9. Concrete next correlation domain and limitations
+---------------------------------------------------
+After the two paid quadratic peels, the remaining pairs have large product
+and large primitive height. Squarefree fibers have exact common sign mu(m);
+their parity cancellation must occur across different products. Equation
+(6.4) supplies one explicit domain and source transition: a q-free squarefree
+cofactor product, prime adjunction into either leg, complete three-color
+births and four-color exits, with all cut crossings. Equation (7.1)-(7.2)
+supplies another: repeated-valuation redistribution at fixed nonsquarefree
+product, with unequal amplitudes and possibly outside-prefix coordinates.
+
+A sufficient next lemma must give a signed integrated estimate for those
+complete correlations together with the retained main/pole Gram entries
+and nonsquarefree complement. Proving just an auxiliary four-to-three-color
+identity, its positive envelope, or a finite orbit equality does not recover
+the original energy. Treating the whole right side of (6.4) as a new named
+cofinal premise would also be a rephrasing rather than a reduction. Useful
+progress would prove one of its boundary/birth sectors with a genuinely
+smaller dependency, or a joint estimate which closes a coercive full-state
+recurrence without independently assuming a lower-color RH bound.
+
+Final status
+------------
+Proved: full product/gcd energy decomposition and main costs; low-product
+and primitive-height paid regions; homogeneous squarefree-fiber sign;
+indefiniteness of the squarefree-product projection; complete cross-product
+prime-adjunction identity with three-color births and both kernel exits;
+explicit repeated-prime opposite signs, suppression and support obstruction;
+and exact divisor inversion with its divergent absolute critical cost.
+Open: an actual-source joint signed estimate connecting these product sectors,
+the complete centered smooth/common-bank recurrence, the original cofinal
+moment, and RH. This memo changes only this new prose file.

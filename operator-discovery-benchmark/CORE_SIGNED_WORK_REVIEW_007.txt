@@ -1,0 +1,320 @@
+SIGNED SHELL WORK FOR THE COMPLETE CORE, REVIEW 007
+
+Scope and outcome
+-----------------
+Inputs: candidate10_core_bound_obligation.json, reviews005/006 and the
+saved pole-feedback witness linked by the current obligation. Only this
+new prose memo is written. No numerical source evaluation, experiment,
+test, hash, subagent or prior/frozen edit is performed.
+
+The primary rule is a detector-enumerable SIGNED shell-work family with
+exact full-cell integration. For every |eta|<=2 it has uniform causal
+recovery at the fixed dyadic cutoff1024, no cumulative log loss and no
+separately assumed RH-strength channel bound. Its past-block kernel has
+total mass below2/5. A generated signed upper recurrence can therefore
+close the complete filtered energy conditionally, with explicit finite
+head and constants. Every source square, prime power, unit and cross is
+retained. Eta0 is explicitly the unchanged weighted energy presentation.
+
+This proves a recovery/inequality BACKEND, not the actual-source bound
+premise. The proposed fixed-polylog signed-work estimates remain OPEN.
+Their necessary log degree is at least2 for the certified surviving
+double pole. Cumulative signed work is possible too, but requires log
+degree at least3 and is not the primary language here.
+
+1. Complete core, delay and logarithmic bank
+-------------------------------------------
+Let f,F be the complete four-mode core of reviews005/006, including
+f(1)=-beta-R_u, beta=9/2, R_u>0. All prefixes are zero below1. Put
+ B_F(x)=sum_(n<=x)f(n)log n,
+ J_F(x)=integral_1^x F(y)dy/y.
+For ALL real x>=1, exact summation by parts is
+                   B_F(x)=log x*F(x)-J_F(x).               (1.1)
+At1 this is0=0; the unit is not recovered by dividing by log1.
+
+For a fixed real a, the delayed signal and its actual coefficient are
+ G(x)=F(x)-a F(x/2),
+ g(n)=f(n)-a*1_(2 divides n)*f(n/2).
+Both prefixes are constant on every integer unit cell, with G(1)=f(1).
+Its exact logarithmic bank is
+ B_G(x)=B_F(x)-a B_F(x/2)-a*log2*F(x/2),                   (1.2)
+not merely the difference of the two B_F values. The last term is the
+logarithmic cost of multiplying an integer coefficient index by2.
+Define J_G(x)=integral_1^x G(y)dy/y; then universally
+                   B_G(x)=log x*G(x)-J_G(x).               (1.3)
+No source term is deleted by this identity.
+
+For explicit proper-prime-power work, use the exact four-mode formula
+ B_F(x)=sum_(r<=x)Lambda(r)*sum_i c_i D_ii(r)A_i(x/r),
+ c=(beta,-beta,-R_u,-beta),
+ D=diag(r^(-1/3)-2,r^(-1/3)-1-r^(-2/3),
+        r^(-1/3)-r^(-2/3),-1).
+All r are prime powers, including higher valuations, and all arguments
+are <=x/2. Substitution in (1.2) retains the four bank channels, the
+additional delayed term and every signed covariance with G. Individual
+channels must not be separately centered or squared away without paying
+their missing deterministic main/pole forcing.
+
+2. Exact work family, cells and product-pair kernel
+---------------------------------------------------
+For dyadic X>=1024 and rational eta in[-2,2], define
+ N_G(X)=integral_X^(2X) |G(x)|^2*x^(-2)dx,
+ W_eta,G(X)=integral_X^(2X)
+   [(1-eta)|G(x)|^2+eta*Re(conjugate(G(x))*B_G(x))/log x]
+                                                     *x^(-2)dx. (2.1)
+For the actual real source the real part is just G*B_G. This matches the
+proposed eta menu{-1,-1/2,0,1/3,1/2,2/3,1,3/2,2}; the theorem covers
+the entire stated interval. W can be SIGNED. No clipping or termwise
+absolute value is part of its definition.
+
+With G_n=G(n), B_n=B_G(n), exact integer-cell weights are
+ d_n=1/n-1/(n+1),
+ ell_n=integral_n^(n+1) dx/(x^2 log x)
+       =Ei(-log(n+1))-Ei(-log n)>0.
+Thus the finite full-cell expression is
+ W_eta,G(X)=sum_(n=X)^(2X-1)
+            [(1-eta)d_n*|G_n|^2+eta*ell_n*Re(conj(G_n)*B_n)]. (2.2)
+Ei denotes its real branch on negative arguments. No log1 singularity
+occurs because X>=1024. Rigorous interval integration or a proved Ei
+evaluation is valid; replacing ell_n by an endpoint sample is a different
+observable and requires a separately proved error/recovery rule.
+
+The ordinary complete dyadic moment E_G=X^(-2)sum G_n^2 satisfies
+                 N_G(X)<=E_G(X)<=4N_G(X).                 (2.3)
+These comparisons are exact and lose no power or log degree.
+
+For real coefficients the full quadratic product-pair kernel is
+ W_eta,G(X)=sum_(h,k<=2X-1)g(h)g(k) K_eta,X(h,k),
+ K_eta,X(h,k)=(1-eta)*sum_(n=max(X,h,k))^(2X-1)d_n
+       +(eta/2)*log(h*k)*sum_(n=max(X,h,k))^(2X-1)ell_n.    (2.4)
+Empty sums are zero. The unit log1 is zero, while its other contribution
+remains. The symmetrization in (2.4) preserves all ordered cross terms,
+diagonal terms, prime/composite sectors and valuations. No product-band
+absolute value or gcd support deletion is present. Some kernel values
+are negative for admissible eta; that alone neither proves cancellation
+nor defeats the causal recovery below.
+
+3. Uniform causal recovery, including the exact past-block head
+--------------------------------------------------------------
+By (1.3),
+ W_eta,G(X)=N_G(X)-eta*Re integral_X^(2X)
+                      conj(G(x))*J_G(x)/(x^2 log x)dx.     (3.1)
+Split J_G(x)=J_G(X)+integral_X^x G(y)dy/y. In logarithmic coordinates
+t=log x, h(t)=exp(-t/2)G(exp t), the local integration operator becomes
+convolution on an interval of length log2 with kernel exp(-(t-s)/2),
+s<=t. Its L1 mass, hence its L2 operator norm, is at most
+                       lambda=2-sqrt2.
+Division by log x has norm at most1/log X. The past-head contribution has
+block norm bounded by
+                   b_X=|J_G(X)|/(sqrt(2X)*log X).
+Therefore, for
+             gap_X=1-|eta|lambda/log X>0,
+ W_eta,G(X)>=gap_X*N_G(X)-|eta|*b_X*sqrt(N_G(X)).           (3.2)
+Young gives the exact useful recovery inequality
+ N_G(X)<=2W_eta,G(X)/gap_X+eta^2*b_X^2/gap_X^2.             (3.3)
+This is valid even if W is negative. Replacing its first coefficient by
+a larger constant times W is not valid when W<0; instead apply an upper
+bound for W BEFORE increasing that coefficient.
+
+For X=2^j, ALL previous dyadic blocks partition[1,X). Cauchy on each
+block yields
+ |integral_Y^(2Y) G(y)dy/y|<=sqrt(Y)*sqrt(N_G(Y)).
+With A0=1+sqrt2=sum_(k>=1)2^(-k/2), weighted Cauchy then gives
+ J_G(X)^2/X <=A0*sum_(k=1)^j 2^(-k/2)*N_G(X/2^k).         (3.4)
+This includes the block[1,2), hence the nonzero unit; no head is omitted.
+Combining (3.3),(3.4) gives a STRICTLY SMALLER-SCALE bound:
+ N_G(X)<=2W_eta,G(X)/gap_X
+    +[eta^2*A0/(2gap_X^2*(log X)^2)]
+                    *sum_(k=1)^j 2^(-k/2)N_G(X/2^k).      (3.5)
+No companion source bound or current-scale iteration appears on the right.
+
+One FIXED cutoff handles the whole eta menu. At every X>=1024,
+ log X>=10log2>69/10,
+ lambda<3/5, |eta|<=2, gap_X>4/5, A0^2=3+2sqrt2<6.
+The TOTAL smaller-scale mass in (3.5) is bounded by
+ eta^2*A0^2/[2gap_X^2*(log X)^2]
+       <12/[(4/5)^2*(69/10)^2]<2/5.                       (3.6)
+The last inequality is an exact rational check: its denominator is
+19044/625>30, so12 divided by it is less than2/5.
+
+Suppose the ACTUAL-SOURCE one-sided work lemma is independently proved:
+ for EVERY dyadic X>=1024,
+                   W_eta,G(X)<=K*(1+log X)^p, K>=0,p>=0. (3.7)
+Let the full finite head be
+ H0=max_(dyadic 1<=Y<1024) E_G(Y),
+                  D=max(H0,5K).
+Inductively assume N_G(Y)<=D*(1+log Y)^p for all smaller blocks. In
+(3.5), the work term is at most(5/2)K*(1+log X)^p and the past term is
+less than(2/5)D*(1+log X)^p. Since D>=5K, their sum is at most(9/10)D
+times this log factor, in particular at most D times it. Thus
+ N_G(X)<=D*(1+log X)^p,
+ E_G(X)<=4D*(1+log X)^p, EVERY dyadic X>=1.                (3.8)
+The choice5K is safe, not optimized;25K/6 would suffice in the tail.
+
+An unconditional symbolic head can replace observed head values. With
+K0=3beta+ceil(R_u), |f(n)|<=K0*d2(n) gives |F(n)|<=K0*n*(1+log n).
+All proposed delays have |a|<2, so
+ |G(n)|<=Ct*n*(1+log n), Ct=2K0.
+Hence H0<=2048*Ct^2*(1+log1024)^2. The exact unit is
+ E_G(1)=(beta+R_u)^2. A verifier may use tighter completely checked
+finite-head energies; it must retain all10 blocks1 through512.
+The coefficient envelope is different: |g(n)|<=3K0*d2(n), since for even
+n, d2(n/2)<=d2(n), while the filtered PREFIX envelope uses the half-size
+argument and gives Ct=2K0. A weak reference using3K0 for both is safe.
+
+4. Signed recurrences and full-target recovery
+----------------------------------------------
+The detector may enumerate eta, a, rho and integer log forcing degree k,
+then conjecture, with C>=0 independent of scale,
+ W_eta,G(2X)<=rho*W_eta,G(X)+C*(1+log(2X))^k,
+                           EVERY dyadic X>=1024.          (4.1)
+The repeated W in (4.1) is SIGNED. Upper iteration only uses rho>=0;
+it does not require W>=0. The finite base is W_eta,G(1024), with
+Wbase_plus=max(0,W_eta,G(1024)). For0<=rho<1,
+ W_eta,G(X)<=[Wbase_plus+C/(1-rho)]*(1+log X)^k.            (4.2)
+For rho=1,
+ W_eta,G(X)<=[Wbase_plus+C/log2]*(1+log X)^(k+1).           (4.3)
+The recurrence is only applied above cutoff; its full positive energy
+head is recovered using section3. A negative observed base poses no
+problem; deleting its finite-head recovery would pose a problem.
+Rho>1 gives a generic power cost and has no automatic cofinal rule.
+In (4.1)-(4.3), log(2X) is the natural logarithm of the product2X.
+Unadorned log in the exact arithmetic/integration identities is always
+natural. The implementation's BASE-TWO bound weights are handled next.
+
+Exact primary implementation constants: let L2(X)=1+log_2 X and suppose
+ W_eta,G(2X)<=rho*W_eta,G(X)+C*L2(X)^k,
+            EVERY dyadic X>=1024, C>=0, k>=0.              (4.4)
+Take B>=max(0,W_eta,G(1024)). For0<=rho<1 define
+              K=B+C/(1-rho), p=k;
+for rho=1 define
+              K=B+C, p=k+1.
+Then, with NO additional numerical or natural-log conversion factor,
+            W_eta,G(X)<=K*L2(X)^p, X>=1024.               (4.5)
+Indeed writing X=2^j, j>=10, geometric iteration sums at most C/(1-rho)
+times(1+j)^k in the strict-gap case. For rho1 the number of steps is at
+most j, so the sum is <=C*(1+j)^(k+1), and the base is bounded by B times
+the same factor. If C=0, both cases sharpen to K=B,p=0, independently
+of the recorded k. A pole gate should use this sharper actual consequence.
+
+Section3 induction uses only monotonicity of its weight, not its logarithm
+base. Apply it with L2(X)^p verbatim: with H0 from that section and
+D=max(H0,5K), one gets
+        N_G(X)<=D*L2(X)^p, E_G(X)<=4D*L2(X)^p
+at EVERY dyadic X>=1. No constants are changed. Head weights are at least1,
+so the same H0 works. Critical log-degree gates are independent of this
+fixed logarithm-base change. Equations(4.4)-(4.5), rather than(4.1)'s
+alternative natural-log forcing, are the interface used by the new pilot.
+
+Equations(4.2)/(4.3) feed the proved one-sided lemma rule(3.8). This gives
+finite-polylog E_G, hence cofinal E_G. Recovery to the COMPLETE F uses the
+separate delay certificate: |a|<sqrt2 preserves the same log degree;
+|a|=sqrt2 has a generic additional degree2 and still preserves cofinality;
+|a|>sqrt2 has an unpaid power inverse cost and does NOT yield full-core
+cofinality merely because E_G is controlled. Identity a0 is exact.
+The old paid soft-divisor and center/prime-power recovery is then the route
+from full F to the original candidate10 target; no complement is dropped.
+
+Eta0 is W=N_G exactly: its conjectured recurrence is a weighted-energy
+presentation and is labeled TAUTOLOGICAL OPERATOR ALIAS. For eta!=0, the
+observable allows cancellation between prime-log work and its complete
+memory complement; its polylog growth class remains equivalent to E_G.
+Indeed a polylog E_G bound gives the same-degree upper work bound by
+Cauchy and the past-block geometric sum. Thus this is not automatically
+an easier or stronger source theorem just because its integrand is signed.
+The valid difference is the explicit arithmetic work kernel and the
+well-founded, uniformly paid Volterra recovery, without positive raw
+mode auxiliaries and their uncanceled real-pole penalties.
+
+A further conditional pruning fact is explicit. If N_G(Y)<=D*L2(Y)^p
+for every earlier/current block, the same two Cauchy bounds show
+ |W_eta,G(X)-N_G(X)|
+ <=|eta|*(lambda+A0/sqrt2)*D*L2(X)^p/log X.                (4.6)
+Thus fixed eta changes a controlled degree-p energy by a one-log-lower
+term (lambda+A0/sqrt2=3-1/sqrt2). This does not supply the assumed source
+bound; it limits claims of a new exponent gain from the universal mixing
+alone. A useful result must still prove the signed step itself.
+
+5. Critical-pole degree gate and cumulative-work caution
+--------------------------------------------------------
+The current obligation links the independently saved witness
+ core-bound-results/pilot-001/pole-feedback-001/pole_witness.json.
+It records both Rouche and Newton unique-simple-critical-zero certificates,
+shifted-zeta nonvanishing and nonzero delay multipliers. These supply the
+formerly pending linkage in006. No fresh evaluation is performed here.
+The full F and every13 delayed G have a surviving leading double pole at
+that critical zero. Review006's direct moment obstruction applies after
+(3.8): a shell work upper bound of degree p<2 is impossible. Consequently
+for gamma0 signed recurrences, admissible necessary floors are
+ 0<=rho<1: k>=2;
+ rho=1: k>=1.
+This is a necessary filter, not proof of any admitted recurrence. Signed
+storage does not evade it once its proved recovery gives the target bound.
+With a general surviving order d the floor is p>=2d-2.
+
+Cumulative signed work can be coercive too, but pays a different degree.
+For L>=1024 define Q_eta(H)=integral_L^H the same work integrand and
+A(H)=integral_L^H G^2/x^2. The full Volterra tail norm is2, so
+ g=1-2|eta|/log L>0,
+ b=|J_G(L)|/(sqrt(L)*log L),
+ Q_eta(H)>=g A(H)-|eta| b sqrt(A(H)).
+Thus S(H)=Q_eta(H)+eta^2*b^2/(2g)>=g A(H)/2>=0. This is proved aggregate
+positivity despite signed local work, with an explicit finite head. It
+does not grant arbitrary indefinite potential boundary terms for free.
+
+If S(H)=O((1+log H)^p), then A has the same upper growth. Stieltjes
+Laplace integration gives
+ integral_L^infinity G^2/x^2*x^(-delta)dx=O(delta^(-p)),
+and Mellin Cauchy gives |I_G(1/2+delta+i*t)|=O(delta^(-(p+1)/2)).
+A surviving order-d leading singularity therefore requires p>=2d-1,
+so the current double pole requires cumulative degree at least3.
+This is why the shell language is primary: its induction does not pay
+or conceal this extra cumulative log. Cumulative storage is a legitimate
+optional language if its stronger degree gate and head are retained.
+
+6. Attempted closing argument, scoped obstruction and proof interface
+---------------------------------------------------------------------
+The actual source-specific closing lemma could be precisely(4.1) with
+rho in{1/2,1}, eta from the finite menu and the pole-admitted k. It is an
+arithmetic covariance estimate on (2.4) or the exact prime-power expansion
+in section1, with every prefix edge and lower argument explicit. It can
+be tested or falsified at finite scales, but its universal quantifier is
+OPEN. No actual closing estimate is proved in this memo.
+
+An attempted proof from negative prime-log multipliers fails: the target
+rank-one polarization is indefinite, the generators can have either
+prefix-Hilbert Fourier sign, and raw square completion restores a genuine
+uncentered real-pole row, as005 proves. Eta mixing does not change those
+facts. The proved small mass here belongs to the UNIVERSAL Volterra
+memory, not to the unsuppressed arithmetic prime work. All-coprime or
+finite-prime identities alone have not supplied the missing prefix bound.
+
+There is also a simple generic counterexample to claiming that(1.3) alone
+closes work. Choose a staircase G(n)=n, so g(n)=1. It satisfies the exact
+same universal summation-by-parts identity. Its J(x) is asymptotic to x,
+and on large shells W_eta/G weighted energy tends to1 for each fixed eta,
+with an O(1/log X) correction. Thus W_eta grows on the order of X and
+cannot satisfy any fixed-polylog upper lemma. This is NOT an actual-mu
+counterexample and does not refute a future actual-source proof; it shows
+that the source-specific step cannot be generated from universal Volterra
+algebra alone. The critical-pole gate gives genuine actual-source false
+shapes; the generic example gives only a proof-rule limitation.
+
+A sound detector proof DAG can contain:
+ (a) complete source/delay/log-bank construction, including(1.2);
+ (b) exact full-cell work kernel(2.2) and all source crosses;
+ (c) cutoff1024, gap>4/5 and past-block mass<2/5 certificates;
+ (d) generated signed step(4.1), explicitly conjectural unless separately
+     proved by an all-scale arithmetic argument;
+ (e) signed upper iteration(4.2)/(4.3), full head and causal recovery(3.8);
+ (f) delay/full original recovery, with unsupported inverse costs kept;
+ (g) surviving-pole rejection on the final recovered degree.
+Finite fits cannot turn(d) into a theorem. New sector pairings must compile
+back to the entire kernel or leave explicit paid/unpaid complements.
+Current-scale cycles, omitted valuations, erased centers and free signed
+endpoint potentials are rejected. A proved recurrence at degree2 would
+be substantive actual-source progress; merely naming(4.1) is not.
+
+Final status: reusable shell recovery and certificate composition proved;
+actual all-scale signed-work recurrence, full cofinal target and RH remain
+OPEN. Only this new memo was written. No numerical or test invocation.

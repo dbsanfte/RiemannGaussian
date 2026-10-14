@@ -1,0 +1,205 @@
+{
+  "attempts": [
+    {
+      "charged_work_units": 674675,
+      "errors": [],
+      "failures": [],
+      "peak_rss_kib": 704032,
+      "successful": true,
+      "test_ids": [
+        "__main__.Tests.test_actual_joined_source_barrier_family",
+        "__main__.Tests.test_arbitrary_rational_theta_and_power_bit_guards",
+        "__main__.Tests.test_boxed_dual_penalty_is_required_and_negative_is_valid",
+        "__main__.Tests.test_capacity_and_canonical_rational_gates",
+        "__main__.Tests.test_full_source_direct_atoms_against_actual_inversion",
+        "__main__.Tests.test_quotient_events_against_independent_scalar_floor",
+        "__main__.Tests.test_unit_squareful_and_clipped_coordinates_are_not_free",
+        "__main__.Tests.test_unsigned_squarefree_and_actual_mu_are_distinct_checks"
+      ],
+      "tests_run": 8,
+      "wall_seconds": 0.015495081024710089
+    },
+    {
+      "charged_work_units": 7586586,
+      "errors": [],
+      "failures": [],
+      "peak_rss_kib": 704032,
+      "successful": true,
+      "test_ids": [
+        "__main__.Tests.test_actual_joined_source_barrier_family",
+        "__main__.Tests.test_arbitrary_rational_theta_and_power_bit_guards",
+        "__main__.Tests.test_boxed_dual_penalty_is_required_and_negative_is_valid",
+        "__main__.Tests.test_capacity_and_canonical_rational_gates",
+        "__main__.Tests.test_complete_certificate_and_exact_actual_head",
+        "__main__.Tests.test_complete_rows_endpoints_selection_and_boolean_gates",
+        "__main__.Tests.test_coordinate_masks_boundaries_and_box_mutations",
+        "__main__.Tests.test_deterministic_clipping_and_complete_span_flags",
+        "__main__.Tests.test_exhaustive_tiny_sources_prefixes_and_prime_pairs",
+        "__main__.Tests.test_full_source_direct_atoms_against_actual_inversion",
+        "__main__.Tests.test_grammar_anchor_order_horizon_order_and_plan_depth",
+        "__main__.Tests.test_mutate_every_exact_cost_and_raw_source_field",
+        "__main__.Tests.test_mutate_every_primal_and_dual_coordinate",
+        "__main__.Tests.test_quotient_events_against_independent_scalar_floor",
+        "__main__.Tests.test_schema_source_parameters_and_resource_gates",
+        "__main__.Tests.test_unit_squareful_and_clipped_coordinates_are_not_free",
+        "__main__.Tests.test_unsigned_squarefree_and_actual_mu_are_distinct_checks",
+        "__main__.Tests.test_zero_rows_full_prefix_and_dictionary_reuse"
+      ],
+      "tests_run": 18,
+      "wall_seconds": 0.4123924939776771
+    },
+    {
+      "charged_work_units": 7663841,
+      "errors": [],
+      "failures": [
+        {
+          "test": "__main__.Tests.test_capped_quotient_union_depth_and_rank_boundaries",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_floor_control_068.py\", line 194, in test_capped_quotient_union_depth_and_rank_boundaries\n    self.assertTrue(any(row['plans'][2]['model_index'] != row['plans'][3]['model_index']\nAssertionError: False is not true\n"
+        }
+      ],
+      "peak_rss_kib": 704032,
+      "successful": false,
+      "test_ids": [
+        "__main__.Tests.test_actual_joined_source_barrier_family",
+        "__main__.Tests.test_arbitrary_rational_theta_and_power_bit_guards",
+        "__main__.Tests.test_boxed_dual_penalty_is_required_and_negative_is_valid",
+        "__main__.Tests.test_capacity_and_canonical_rational_gates",
+        "__main__.Tests.test_capped_quotient_union_depth_and_rank_boundaries",
+        "__main__.Tests.test_complete_certificate_and_exact_actual_head",
+        "__main__.Tests.test_complete_rows_endpoints_selection_and_boolean_gates",
+        "__main__.Tests.test_coordinate_masks_boundaries_and_box_mutations",
+        "__main__.Tests.test_deterministic_clipping_and_complete_span_flags",
+        "__main__.Tests.test_exhaustive_tiny_sources_prefixes_and_prime_pairs",
+        "__main__.Tests.test_full_source_direct_atoms_against_actual_inversion",
+        "__main__.Tests.test_grammar_anchor_order_horizon_order_and_plan_depth",
+        "__main__.Tests.test_mutate_every_exact_cost_and_raw_source_field",
+        "__main__.Tests.test_mutate_every_primal_and_dual_coordinate",
+        "__main__.Tests.test_quotient_events_against_independent_scalar_floor",
+        "__main__.Tests.test_schema_source_parameters_and_resource_gates",
+        "__main__.Tests.test_unit_squareful_and_clipped_coordinates_are_not_free",
+        "__main__.Tests.test_unsigned_squarefree_and_actual_mu_are_distinct_checks",
+        "__main__.Tests.test_zero_rows_full_prefix_and_dictionary_reuse"
+      ],
+      "tests_run": 19,
+      "wall_seconds": 0.42518455896060914
+    },
+    {
+      "charged_work_units": 7678134,
+      "errors": [],
+      "failures": [],
+      "peak_rss_kib": 704032,
+      "successful": true,
+      "test_ids": [
+        "__main__.Tests.test_actual_joined_source_barrier_family",
+        "__main__.Tests.test_arbitrary_rational_theta_and_power_bit_guards",
+        "__main__.Tests.test_boxed_dual_penalty_is_required_and_negative_is_valid",
+        "__main__.Tests.test_capacity_and_canonical_rational_gates",
+        "__main__.Tests.test_capped_quotient_union_depth_and_rank_boundaries",
+        "__main__.Tests.test_complete_certificate_and_exact_actual_head",
+        "__main__.Tests.test_complete_rows_endpoints_selection_and_boolean_gates",
+        "__main__.Tests.test_coordinate_masks_boundaries_and_box_mutations",
+        "__main__.Tests.test_deterministic_clipping_and_complete_span_flags",
+        "__main__.Tests.test_exhaustive_tiny_sources_prefixes_and_prime_pairs",
+        "__main__.Tests.test_full_source_direct_atoms_against_actual_inversion",
+        "__main__.Tests.test_grammar_anchor_order_horizon_order_and_plan_depth",
+        "__main__.Tests.test_mutate_every_exact_cost_and_raw_source_field",
+        "__main__.Tests.test_mutate_every_primal_and_dual_coordinate",
+        "__main__.Tests.test_quotient_events_against_independent_scalar_floor",
+        "__main__.Tests.test_schema_source_parameters_and_resource_gates",
+        "__main__.Tests.test_unit_squareful_and_clipped_coordinates_are_not_free",
+        "__main__.Tests.test_unsigned_squarefree_and_actual_mu_are_distinct_checks",
+        "__main__.Tests.test_zero_rows_full_prefix_and_dictionary_reuse"
+      ],
+      "tests_run": 19,
+      "wall_seconds": 0.42982844001380727
+    },
+    {
+      "charged_work_units": 8585043,
+      "errors": [],
+      "failures": [],
+      "peak_rss_kib": 704032,
+      "successful": true,
+      "test_ids": [
+        "__main__.Tests.test_actual_joined_source_barrier_family",
+        "__main__.Tests.test_arbitrary_rational_theta_and_power_bit_guards",
+        "__main__.Tests.test_boxed_dual_penalty_is_required_and_negative_is_valid",
+        "__main__.Tests.test_capacity_and_canonical_rational_gates",
+        "__main__.Tests.test_capped_quotient_union_depth_and_rank_boundaries",
+        "__main__.Tests.test_complete_certificate_and_exact_actual_head",
+        "__main__.Tests.test_complete_rows_endpoints_selection_and_boolean_gates",
+        "__main__.Tests.test_coordinate_masks_boundaries_and_box_mutations",
+        "__main__.Tests.test_deterministic_clipping_and_complete_span_flags",
+        "__main__.Tests.test_exhaustive_tiny_sources_prefixes_and_prime_pairs",
+        "__main__.Tests.test_full_source_direct_atoms_against_actual_inversion",
+        "__main__.Tests.test_grammar_anchor_order_horizon_order_and_plan_depth",
+        "__main__.Tests.test_mutate_every_exact_cost_and_raw_source_field",
+        "__main__.Tests.test_mutate_every_primal_and_dual_coordinate",
+        "__main__.Tests.test_noncanonical_certificate_rationals_and_finite_claims",
+        "__main__.Tests.test_quotient_events_against_independent_scalar_floor",
+        "__main__.Tests.test_schema_source_parameters_and_resource_gates",
+        "__main__.Tests.test_selection_ties_and_changed_scores_require_declared_selection",
+        "__main__.Tests.test_solver_metadata_is_bounded_without_certifying_optimality",
+        "__main__.Tests.test_unit_squareful_and_clipped_coordinates_are_not_free",
+        "__main__.Tests.test_unsigned_squarefree_and_actual_mu_are_distinct_checks",
+        "__main__.Tests.test_zero_rows_full_prefix_and_dictionary_reuse"
+      ],
+      "tests_run": 22,
+      "wall_seconds": 0.4917973209521733
+    }
+  ],
+  "charged_work_units": 32188279,
+  "old_suites_replayed": false,
+  "peak_rss_kib": 704032,
+  "schema": "mobius-floor-control-checker-development-v1",
+  "successful": true,
+  "synthetic_only": true,
+  "total_test_invocations": 86,
+  "wall_seconds": 1.774697894928977,
+  "runs": [
+    {
+      "command": "new checker synthetic development attempt 1",
+      "returncode": 0,
+      "tests": 8,
+      "operations": 674675,
+      "elapsed_seconds": 0.015495081024710089,
+      "peak_rss_KiB": 704032
+    },
+    {
+      "command": "new checker synthetic development attempt 2",
+      "returncode": 0,
+      "tests": 18,
+      "operations": 7586586,
+      "elapsed_seconds": 0.4123924939776771,
+      "peak_rss_KiB": 704032
+    },
+    {
+      "command": "new checker synthetic development attempt 3",
+      "returncode": 1,
+      "tests": 19,
+      "operations": 7663841,
+      "elapsed_seconds": 0.42518455896060914,
+      "peak_rss_KiB": 704032
+    },
+    {
+      "command": "new checker synthetic development attempt 4",
+      "returncode": 0,
+      "tests": 19,
+      "operations": 7678134,
+      "elapsed_seconds": 0.42982844001380727,
+      "peak_rss_KiB": 704032
+    },
+    {
+      "command": "new checker synthetic development attempt 5",
+      "returncode": 0,
+      "tests": 22,
+      "operations": 8585043,
+      "elapsed_seconds": 0.4917973209521733,
+      "peak_rss_KiB": 704032
+    }
+  ],
+  "operations": 32188279,
+  "unique_new_synthetic_tests": 22,
+  "final_status": "PASS",
+  "prior_failure_preserved": true,
+  "correction": "The capped-depth fixture N30 saturated the same quotient set; changed only that fixture to N150,y160 to test distinct retained dictionaries. All failed assertions and subsequent runs remain in attempts."
+}

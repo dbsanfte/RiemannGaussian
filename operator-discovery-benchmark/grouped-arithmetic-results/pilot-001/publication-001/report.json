@@ -1,0 +1,191 @@
+{
+  "RH_proved": false,
+  "actual_Mobius_global_claim_refuted": false,
+  "actual_post_search_false_bounds": 0,
+  "actual_post_search_observations": 48,
+  "completed": true,
+  "final_outcome_counts": {
+    "finite_certificate": 4,
+    "no_candidate": 6,
+    "template_mismatch": 4
+  },
+  "fixed_mu_budget_adjudication": "Both accepted critical mu templates have gamma=56/3 and cubic scalar budgets; their unchanged all-scale critical budget extension is disproved.",
+  "global_critical_bound_proved": false,
+  "padding_reduction": "All four accepted vectors reduce exactly to the same unsigned calibration weights. The reduction improves known scalar padding but supplies no critical bound.",
+  "program_count": 10,
+  "programs": [
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 8,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 2,
+        "target": "mu"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [
+        {
+          "X": 8,
+          "status": "template_mismatch"
+        },
+        {
+          "X": 9,
+          "status": "template_mismatch"
+        }
+      ],
+      "final_status": "evaluated",
+      "learned_weights_sha256": "1ab269836efce02cc8b1b22a786ee673b76d65d812c62b30b5acc87a7d287499",
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 2,
+        "target": "mu"
+      },
+      "training_status": "finite_certificate"
+    },
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 8,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 6,
+        "target": "mu"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [
+        {
+          "X": 8,
+          "status": "template_mismatch"
+        },
+        {
+          "X": 9,
+          "status": "template_mismatch"
+        }
+      ],
+      "final_status": "evaluated",
+      "learned_weights_sha256": "fa5f88f06fe2cd5cea1fef15246ce81e20dddf080b251aaf46aa30db1a553940",
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 6,
+        "target": "mu"
+      },
+      "training_status": "finite_certificate"
+    },
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 8,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 2,
+        "target": "c"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 2,
+        "target": "c"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 8,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 6,
+        "target": "c"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [],
+      "final_status": "no_candidate",
+      "learned_weights_sha256": null,
+      "program": {
+        "C": 32,
+        "allow_constant_slack": true,
+        "claim": "critical",
+        "q": 6,
+        "target": "c"
+      },
+      "training_status": "no_certificate_found"
+    },
+    {
+      "final_observations": [
+        {
+          "X": 8,
+          "status": "finite_certificate"
+        },
+        {
+          "X": 9,
+          "status": "finite_certificate"
+        }
+      ],
+      "final_status": "evaluated",
+      "learned_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f",
+      "program": {
+        "C": 1,
+        "allow_constant_slack": false,
+        "claim": "unsigned_calibration",
+        "q": 2,
+        "target": "mu"
+      },
+      "training_status": "finite_certificate"
+    },
+    {
+      "final_observations": [
+        {
+          "X": 8,
+          "status": "finite_certificate"
+        },
+        {
+          "X": 9,
+          "status": "finite_certificate"
+        }
+      ],
+      "final_status": "evaluated",
+      "learned_weights_sha256": "196a7af6d0c786f28fc14d289a3e81201d233cea961208187b941ddc72cfe26f",
+      "program": {
+        "C": 1,
+        "allow_constant_slack": false,
+        "claim": "unsigned_calibration",
+        "q": 2,
+        "target": "c"
+      },
+      "training_status": "finite_certificate"
+    }
+  ],
+  "schema": 1,
+  "scope": "Complete independently checked finite shared-template experiment; fixed weights transferred without refitting. Template mismatch is not arithmetic inequality failure. Six no-candidate programs do not count as successful transfer.",
+  "training_counts": {
+    "finite_certificate": 4,
+    "missing_resource": 0,
+    "no_certificate_found": 6
+  }
+}

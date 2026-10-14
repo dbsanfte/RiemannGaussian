@@ -1,0 +1,391 @@
+PRIME WORK REDUCTION REVIEW 050
+Independent predictor-scope and drift-aware proof-search audit
+
+1. Current source and theorem boundary
+
+This review reads MOVING_FLOOR_BOUND_HANDOFF.txt and the stopped 047
+argument module. It changes neither frozen source nor evidence. The
+promoted source is the ordinary-Mobius four-atom drift mixture with a=1,
+theta=6/11, exact separately rounded weights (4,-6,4,-1) at rates 1..4,
+prime p=3. Put z_N=(H_N,A_N), h_N=H_N+A_N and Q=2I. The promoted
+potential is
+  P_N=||h_N||^2+||h_N-2A_N||^2=2(||H_N||^2+||A_N||^2).
+The base interval 32..63 is paid by the separate finite base admission.
+The remaining proposed uniform recurrence is
+  P_(2N+r)<=3P_N/4+1/(32 L(N)^(5/11)),
+  every integer N>=32, both r=0,1, complete spatial norm.             (1)
+Fresh finite passing pairs and helpful auxiliary increments do not pay
+this uniform leaf. The 047 algebra template intentionally retains OPEN
+placeholders; its separate finite base evidence may pay the base without
+changing or retrospectively promoting the recurrence.
+
+The known necessary bare-source rate ceiling is eta=1-theta=5/11. It
+does not prove the endpoint attainable. This audit neither rejects (1)
+from finite data nor asserts it. The analytic rules below are universal
+identities/implications and proposed source-bound proof productions. No
+source tables, norms, selected applications or numerical sweeps were run.
+
+2. Exact alias of whole predictor work
+
+Use the full Hilbert inner product, equivalently the complete k>=1
+floor-cell energy with weight 1/(k(k+1)). Let Q be positive definite,
+B any constant real two-by-two matrix, and y=z_(2N+r), z=z_N. Define
+  xi=y-Bz,
+  W_B=2<Bz,Qxi>+<xi,Qxi>.
+Expanding every term gives EXACTLY
+  W_B=<y,Qy>-<z,B^T Q B z>.                                       (2)
+All cross terms between y and Bz cancel in their SUM. Let R=B^T Q B.
+Then the whole-work observable is determined by R, not by B. In
+particular B and O B have identical work if O^T Q O=Q. Such a Q-orthogonal
+gauge can change innovation energy and correlation separately without
+changing their combined work. A large negative correlation by itself is
+not evidence of a new bound: the positive innovation may exactly offset
+it. Nonconstant B_N similarly gives a per-instance parent Gram R_N,
+unless a further derivative/transport operator is introduced.
+
+If the proposed contraction guard is R<=rho Q, then
+  W_B=(P_child-rho P_parent)+<z,(rho Q-R)z>,
+  W_B>=P_child-rho P_parent.                                      (3)
+Thus proving W_B<=forcing is a sufficient but possibly stronger version
+of the old recurrence. A standalone search of whole W_B cannot furnish
+an easier arithmetic bound than that recurrence. Its additional parent
+slack is nonnegative. In the limiting case R=rho Q it is the exact same
+increment. General R merely searches a parent quadratic reweighting.
+If R_1<=R_2, then W_(R_1)>=W_(R_2) for every source state. This dominance
+is universal and can remove redundant observable candidates without
+inspecting numerical norms.
+
+For rational certificates, equality and Loewner order of two-by-two
+matrices are exact entry/minor computations. Rational B with the same R
+must not count as distinct empirical mechanism discoveries merely because
+their coefficient words differ. The appropriate canonical observable is
+the exact triple (R00,R01,R11), along with its source Q and recurrence
+domain. This rule compares full work; it does not erase different proof
+tactics associated with the same observable.
+
+3. Scope-correct anti-restatement rule
+
+The detector should label a candidate ALIASED_PARENT_GRAM_RECURRENCE when
+its only construction is xi=y-Bz and its only bound leaf is W_B<=C/L^eta.
+The certificate should show (2), the canonical R, and slack (3). It must
+not label this a newly paid correlation bound or rank a Q-orthogonal gauge
+as a new mechanism. B=0 is the endpoint control W=P_child.
+
+A B word may still be kept as a PROOF_TACTIC if it has a genuinely new
+downstream decomposition. The minimum acceptable proof record is:
+  (i) actual source identity expressing xi in explicit source atoms or
+      auxiliary operators, with complete support, units and cutoffs;
+  (ii) exact algebra or source law producing a paid coefficient/kernel
+       factor, smaller argument, telescoping boundary or compensator;
+  (iii) separate unpaid leaves for whatever uniform arithmetic estimate
+        remains, with quantifiers and recovery cost;
+  (iv) a noncircular implication from those leaves to W, not a paid flag
+       inferred from its numerical value.
+Distinct B gauges can then represent different tactics for the same
+observable if one aligns with an actual prime/divisor identity. They are
+not distinct measured whole-work mechanisms. A favorable finite covariance
+does not itself supply (ii) or (iii).
+
+For example, if B^TQB<=sigma Q and delta>0 with (1+delta)sigma<=rho,
+Young's inequality yields
+  P_child<=rho P_parent+(1+1/delta)||xi||_Q^2.
+A separately proved full innovation estimate is a legitimate stronger
+source leaf. Alternatively an exact compensation inequality retaining
+2<Bz,Qxi> can yield a smaller forcing. Neither is paid by defining xi.
+Every source-bound innovation estimate must include the new source blocks
+and full k>N truncated-divisor energy. A fake identity omitting those
+components will misleadingly make the predictor appear accurate.
+
+4. Constant-rho recurrences and what they actually add
+
+With rho fixed below one and forcing C/L^eta, a recurrence plus finite
+base provides an effective uniform constant via the 047 induction. Its
+proof is meaningful and remains open. But, if constants are free, its
+asymptotic class is not automatically a new cancellation mechanism:
+P_N=O(L^-eta) implies a recurrence of this form with a sufficiently large
+C, simply because P_child<=D/L_parent^eta and P_parent>=0. Conversely
+the recurrent bound plus suitable base/induction gives P_N=O(L^-eta).
+Consequently class-level existence of a constant-rho recurrence is another
+presentation of the same energy order. A tight fixed C or a source-derived
+forcing decomposition is stronger information; a fitted finite C is not
+such a decomposition.
+
+For any nonnegative added storage T_N=P_N-||h_N||^2, improvement of EVERY
+increment at fixed rho would mean T_child<=rho T_parent. Along a chain
+this forces geometric decay. The observed helpful increments at a few
+supports must not be promoted to that universal claim. The actual
+recurrence (1), with positive forcing and without a universally-helpful
+assertion, does not require it.
+
+Zero forcing C=0 with theta>1/2 contradicts the reviewed 046 eventual
+whole-forcing lower bound along a chain, since it would give geometric
+energy decay. This refutes that argument, NOT every slower logarithmic
+target. The corrected 047 target_status=OPEN in the C0-only slower-rate
+case is essential. Eta>1-theta, in contrast, refutes the target itself
+within the licensed bare-profile scope. No frozen gate is changed here.
+
+5. Exact ceiling and precision transport
+
+Let m_l=ceil(a l^theta), beta_l=m_l/l. The exact adjacent-level drift is
+  beta_(l+1)-beta_l
+    =[l(m_(l+1)-m_l)-m_l]/[l(l+1)].                               (4)
+It cannot be replaced by the negative smooth derivative of a l^(theta-1).
+Eventually a theta l^(theta-1)<1, so adjacent ceiling increments are 0
+or 1; there are infinitely many 1 increments because m_l tends to infinity.
+At such a jump, eventually m_l<l, and (4) is POSITIVE. Between jumps it is
+negative. A simple source-free model P_l=beta_l already refutes the claim
+that smooth negative drift controls every exact level transition. This
+is a proof-route counterexample, not a computation of actual Mobius norms.
+
+The two-profile state needs separate exact index records:
+  l_N=L(N), t_N=L(pN),
+  a_N=ceil(log_2 N), c_N=ceil(log_2(pN)).
+For children 2N+r, l_child=l_N+1 always. For r=0, t_child=t_N+1.
+For r=1, t_child can be t_N+1 OR t_N+2: the odd prime child may cross an
+additional power-of-two boundary. Similarly a_child and c_child can
+increase by one or two. In particular, doubling-plus-one from an exact
+power-of-two parent can change ceil(log_2 N) by two while L changes by one.
+The actual floor precision therefore changes as well as beta. The
+state source must recompute all four records; matching only l_N does
+not bind the prime-child profile. The planned stress at the child-source
+4096 boundary addresses a genuine source issue, but passing it cannot
+certify all later jumps.
+
+For the unrounded four-atom profile,
+  P_beta(n)=1-(1-n^(-beta))^4.
+Its exact difference is
+  P_beta'(n)-P_beta(n)
+    =(z'-z) sum_(i=0)^3 (1-z')^i(1-z)^(3-i),
+  z=n^(-beta), z'=n^(-beta').                                    (5)
+This is a useful coefficient factor before norms and absolute values.
+The general signed mixture can instead use exact divided differences
+of each exponential. But (5) is NOT an identity for the actual four
+separately floored atoms. Their explicit finite discrepancy must be
+retained and paid. Even a positive scalar factor in (5) is not a sign
+claim about a Mobius covariance or about child/parent Hilbert states.
+
+6. A valid derivative-scale induction, with endpoint guard
+
+A second reusable all-integer proof rule uses rational gamma>eta>0,
+minimum level l0>=gamma, a full paid base, and the uniform source lemma
+  P_(2N+r)<=(1-gamma/l)P_N+C/l^(eta+1), l=L(N), both r.             (6)
+If the desired base constant A satisfies A>=C/(gamma-eta), then
+  (1-gamma/l)A+C/l <= A(1-eta/l)
+                         <=A(l/(l+1))^eta,
+where the last inequality is the convex tangent bound
+(1+x)^(-eta)>=1-eta x for x>=0. This proves P_N<=A/L(N)^eta by the
+same complete base-interval induction. Coefficients are nonnegative on
+the domain l>=gamma. The statement is valid for arbitrary positive
+rational eta; no numerical fractional-power comparison is required.
+
+This requires a stronger, derivative-order forcing leaf than the
+constant-rho production. It is not a free improvement. The gap gamma>eta
+must be explicit. At gamma=eta, a positive forcing generically produces
+an extra log L: the equality recurrence has homogeneous product of order
+L^-eta, and its accumulated forcing in that integrating factor is a
+harmonic sum. Thus the equality endpoint does not automatically pay a
+constant-times L^-eta target. A detector must either preserve the log
+loss, prove extra cancellation, or use a stricter gap.
+
+Equation (6) is sensitive to ceiling jumps; a proof obtained only by
+differentiating beta is invalid. An exact jump compensator, based on (4),
+is a reasonable additional production. Its energy/correlation costs must
+be source-bound and cannot be declared zero or smooth.
+
+7. Beta-calibrated stationary forcing, without hidden normalization
+
+A source-free positive weight w_N can be declared in advance, for example
+beta_N, beta_(pN), or a fixed positive combination of both. It is computed
+from the profile AST and ceiling rule, not fitted from norms. It must
+remain defined through every jump and have a paid target-comparison bound.
+For w_N=beta_N,
+  a L^(-(1-theta))<=w_N<=(a+1)L^(-(1-theta)).                     (7)
+Thus a bound P_N<=D w_N recovers a legitimate critical-order target with
+constant (a+1)D; paying a smaller requested constant requires a sharper
+explicit comparison, not treating ceil(aL^theta) as aL^theta.
+
+Put S_N=P_N/w_N. A credible source lemma is the stationary normalized rule
+  S_(2N+r)<=(1-gamma/l)S_N+C/l,
+  l>=l0>=gamma>0, both parities.                                  (8)
+It has the paid elementary recovery S_N<=max(full normalized base,C/gamma).
+In unnormalized form the exact child multiplier is
+  (w_child/w_parent)(1-gamma/l),
+and forcing C w_child/l. Ratios must use the EXACT child profile, including
+ceilings, and can exceed one at jumps; that does not invalidate normalized
+induction. This production targets stationary normalized energy, rather
+than pretending the ceiling trajectory is smooth. For a weight involving
+beta_(pN), both source level records from section 5 remain necessary.
+
+Equation (8) alone is another presentation of an energy bound until its
+source forcing is reduced. It supplies useful bookkeeping and an explicit
+stationary budget C/gamma; it is not a new arithmetic estimate by itself.
+One must not overstrengthen it by declaring the normalized forcing
+o(1/l) with gamma>0. That would force S_N->0 along a chain, by the usual
+positive recurrence comparison: an arbitrary epsilon upper equilibrium
+eventually attracts under product(1-gamma/l)->0. For w_N comparable to
+beta_N and theta>1/2 this contradicts the reviewed 046 lower bound.
+In particular C/l^(1+delta), delta>0, is an impossible uniform forcing
+for such a strictly damped normalized rule on the unchanged full target.
+This is an ARGUMENT refutation. It does not refute a critical-order target
+or the stationary rule with positive C/l.
+
+A different, permitted rule has no artificial damping:
+  S_child<=S_parent+F_l,
+with a genuine uniform positive-envelope sequence whose sum is paid.
+For F_l=C/l^(1+delta), delta>0, the sum from l0 is at most
+  C[l0^(-1-delta)+l0^(-delta)/delta].
+It bounds S by its base plus a summable total positive flux and allows a
+nonzero limiting energy. This can be a useful telescoping production if
+an exact arithmetic source identity pays the flux. Merely setting
+F_l=max(0,S_child-S_parent) and observing a finite small sum is circular.
+
+8. Concrete source-bound grammar beyond constant predictor reweighting
+
+The following constructions are meaningful proposed proof tactics because
+they alter explicit coefficient/kernel structure rather than only R.
+
+(a) Full prime-adic atom transport. Before norms, express H and A in the
+four atom types chi, D_p chi, f_n and D_p f_n. The H coefficients are
+1, V(p), mu(n)V(n) for n<=pN, and mu(n)V(pn) for n<=N; A coefficients
+are 0, 1-V(p), 0, and mu(n)(U_N(n)-V(pn)). Then construct child minus
+predictor coefficients EXACTLY, including common-profile changes and
+new source intervals. The basis identity
+  D_p f_n=f_(pn)-f_p/n
+and ordinary mu(pm)=-mu(m) for p not dividing m allow actual valuation-one
+pairings. When p divides m, mu(pm)=0 but mu(m)D_p f_m may survive through
+the dilated parent and generate valuation-two basis terms. These cannot
+be deleted. Group complete p-adic cofactor orbits BEFORE absolute values,
+retain m=1 units and every profile cutoff, and generate their full kernel.
+An all-cofactor signed kernel estimate is still open. Counting a paired
+orbit or repeating its energy as a new bound does not pay it. A useful
+certificate must exhibit a quantitative kernel factor, paid complement,
+or well-founded smaller-scale source reduction.
+
+(b) Drift divided differences with explicit jump/birth work. Generate
+factor (5), or general fixed-rate exponential divided differences, for
+common coefficients; retain exact rounding errors and the born blocks
+pN<n<=p(2N+r) and N<n<=2N+r. The signed innovation energy includes all
+common-common, common-birth and birth-birth pairs and counterterm crosses.
+A source lemma may control their joint forcing. Independently bounding
+every block by absolute values generally loses the sought cancellation.
+Its dependency record must say which loss is incurred and keep every
+tail. This is a concrete source-difference leaf, not a declaration that
+profile Taylor order alone controls the whole norm.
+
+(c) All-prime-power logarithmic removal with fixed parameter. For an
+unrounded single rate, at a FIXED beta,
+  mu(n)n^(-r beta) log n
+    =-sum_(d|n) Lambda(d)d^(-r beta)mu(n/d)(n/d)^(-r beta).          (9)
+This follows from the actual Euler product or ordinary local prime
+factorization; Lambda includes all prime powers. For the truncated sum
+C_(beta,K)(t)=sum_(n<=min(t,K))mu(n)n^(-r beta), it gives the exact identity
+  sum_(n<=min(t,K))mu(n)n^(-r beta)log n
+   =-sum_(d<=min(t,K))Lambda(d)d^(-r beta)
+                         C_(beta,floor(K/d))(t/d).               (10)
+All arguments n/d are smaller; the unit contributes zero log and must
+remain in C. Identity (10) continues to bind a finite source even when
+t>K. Replacing its truncated inner source by unrestricted M(t/d), or
+dropping d that are higher prime powers, is invalid.
+
+The genuine off-diagonal state in (10) holds beta fixed while K and t
+shrink. It is NOT the old moving profile at floor(N/d): that would
+recompute beta and rounding. A detector can generate the parameter-held
+cofactor family and exact conversion auxiliaries to the moving family,
+then search a uniform joint forcing/covariance lemma for it. If it uses
+only the original moving family, every conversion difference and boundary
+is an explicit new leaf. No companion RH-strength bound is assumed paid.
+
+For the signed mixture, apply (9)-(10) atomwise and keep the fixed weights
+before the norm. Separate floor rounding destroys exact multiplicativity;
+its finite discrepancy must be emitted as a compensator. It is small in
+the original basis without source cancellation: |f_n|<=1 and |f_n|<=1/(nx)
+for x>1/n give ||f_n||^2<=2/n, hence total coefficient rounding at precision
+4ceil(log_2 N) has norm at most 2 sqrt(2) C_w N^(-7/2). Dilation has its
+exact p^(-1/2) norm factor. Log-weighted discrepancy introduces the
+explicit finite log N factor. Those estimates pay rounding itself,
+not the unrounded main source covariance or a premature kernel bound.
+
+The log weights in (9)-(10) are symbolic arithmetic weights, not response-
+fitted coefficients. Recovering a prefix through log division/Abel
+summation needs its finite head and exact inverse cost; it is not free
+coercivity. Simple log-weight prime removal has earlier failed to give a
+strict entrywise norm contraction in two-prime sectors. The detector must
+seek a joint signed gain or a paid source forcing, rather than infer a
+gap from positive normalized divisor weights summing to one.
+
+9. Noncircular proof graph and next admission requirements
+
+Each proposed bound should carry:
+  SOURCE: exact AST, ordinary mu, prime, all parameter-held or moving
+          profiles, independent coefficient rounding and complete units;
+  IDENTITY: exact transport/grouping/log-divisor or divided-difference
+            expansion with its full support and every exit/birth term;
+  ALGEBRA: PSD recovery, canonical observable R and any universal slack;
+  UNPAID SOURCE LEAF: explicit uniform kernel/innovation/flux inequality
+                     with all N, both parities, all K and all spatial cells;
+  RECOVERY: paid induction/telescoping implication with constants and
+            finite head/base admission;
+  RESULT: conditional until every actual source leaf has a valid proof.
+An edge back to the same unknown energy is legitimate only through a
+proved coefficient gap or a well-founded smaller argument with paid
+forcing. An assumed critical source/companion bound closing (10) is
+circular. A finite proof of base energies is genuine progress but cannot
+pay a uniform covariance. Unsupported tail/parameter transfers are OPEN,
+not silently true. RH is never admitted as an upper-bound provider here.
+
+The current promoted recurrence still deserves the planned exact jump
+stress test, with no new fit. Whole constant-predictor work alone should
+not be the next large numerical catalogue: canonicalization (2)-(3) proves
+its limitation first. The productive next production is a source-bound
+coefficient/orbit/log-divisor identity plus an explicit joint forcing,
+with calibrated drift and all boundary costs visible. The rules above
+give detector-reusable proof and scope constraints; none supplies that
+unresolved arithmetic estimate yet.
+
+10. Executable canonicalization guard and development receipt
+
+At root's request the new lightweight universal guard is implemented in
+floor_residual_prime_work_guard_050.py, with APIs
+  build_guard({Q,B,rho},meter=None),
+  verify_guard(request,certificate,meter=None), Meter.operations.
+Q and B are exact two-by-two rational matrices; Q must be symmetric PSD.
+The algebra allows singular Q, including zero; it NEVER infers target
+recovery from this condition. R is computed by a matrix product. The
+verifier separately reconstructs R from its two column quadratic forms
+and polarization, then checks the exact request-bound metadata and scope.
+This is distinct arithmetic replay, not proof-assistant formalization or
+an independent source-norm calculation.
+
+The certificate canonicalizes (Q,R), emits rho Q-R, and decides its PSD
+condition. It labels the complete-work observable
+ALIASED_PARENT_GRAM_RECURRENCE and admits the conditional implication
+only when that algebra guard passes. Failure is explicitly
+FAILED_ALGEBRA_GUARD; no weakening comparison is then asserted. The
+comparison coefficient rho may be any nonnegative rational here: a
+Loewner comparison with rho>=1 is not a strict dynamic contraction and
+cannot by itself supply an induction gap. The consuming argument must
+separately impose its own coefficient domain and recovery theorem.
+
+Whole-work change alone is never certified as new signed arithmetic.
+Source-bound downstream proof tactics remain permitted. The guard always
+states target_recovery_proved=false and uniform_arithmetic_bound_proved=false;
+it neither pays nor refutes a source inequality from its numerical value.
+Changed matrices, canonical R, payment flags or weakening claims fail
+verification. No arbitrary source/evidence fields can enter this algebra
+request. Root binds the result to its source argument separately.
+
+The sole focused synthetic suite passed 10/10 in 0.009 seconds, charging
+3,489 rational/schema proxy operations. Files:
+  test_floor_residual_prime_work_guard_050.py
+  floor_residual_prime_work_guard_050_development.json
+Tests cover gauge aliases, literal signed-work cancellation, non-diagonal
+product versus polarization, PSD nullspaces, failed comparisons, B0,
+parent-Gram dominance, false payment/weakening tampering and resource
+guards. Only bounded toy algebraic states were used; no ordinary-Mobius
+source values, scientific norms, candidate scores or applications were
+computed. The receipt does not claim to count every assertion instruction.
+There were no failed suite attempts or repeated unchanged tests.
+
+All frozen files and prior receipts remain unchanged. This memo and all
+owned new050 source/test/receipt edits are stopped after self-audit. No
+asymptotic inference from finite slopes or fresh source observation is made.

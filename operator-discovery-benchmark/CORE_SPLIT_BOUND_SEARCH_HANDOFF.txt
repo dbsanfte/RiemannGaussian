@@ -1,0 +1,126 @@
+THE DETECTOR NOW SEARCHES SPLITS AND COMPETING BOUND PROOFS
+
+Current input: candidate10_split_bound_obligation.json
+Verified study: core-split-bound-results/pilot-001/report.json
+Generic optimizer: bound_split_search.py
+Source/proof search: core_split_bound_search.py
+Independent checker: check_core_split_bound_search.py
+Runner: run_core_split_bound_search.py (completed; do not restart)
+Exact analytic rule: CORE_SPLIT_BOUND_RULE_REVIEW_016.txt
+Declared experiment: core_split_bound_search_protocol.txt
+
+What answers the user's concern
+-------------------------------
+The earlier detector already selected constructions and composed supplied
+norm inequalities. It had proved some component controls. Analysts and
+Sol6.1 subagents nevertheless supplied much of the new analytic machinery;
+the full uniform core bound was not an autonomous detector discovery.
+
+This stage makes another substantial part of bound search executable.
+From a requested component bound, the program enumerates fractional
+cutoffs, reconstructs the complete source, matches eligible factors,
+solves a split-error minimax problem, compares two proof routes on the
+same centered expression, derives exact cutoff feasibility conditions,
+and emits all remaining signed obligations. No model selects candidates
+or coefficients inside the search, and no numerical source observations
+or fitted constants rank them.
+
+The elementary arithmetic facts, hyperbola/Abel inequalities and complete
+centering-commutator rule were supplied analytically. One Sol6.1 agent
+proved and audited those reusable primitives; another wrote the independent
+checker. This remains a bounded search in a supplied mathematical language,
+not a general analytic prover or discovery free of design choices.
+
+The generic optimizer receives affine error powers, not their minimizer.
+It enumerates all boundary/intersection possibilities and supplies a
+matching convex-dual lower bound. The checker independently verifies its
+global optimum. Consequently the next step is to expand the argument
+language when needed, not to tune a split already optimal in this language.
+
+The generated result
+--------------------
+For h with globally bounded signed prefixes and mass_h(t)<=L*t, the
+supplied exact hyperbola/Abel inequality is
+  |prefix(K*h-m_theta(h)*J_theta/theta)(n)|
+       <=L*D/theta+4*C/theta*(n/D)^theta.
+Here m_theta(h) is the COMPLETE infinite conditional moment, K(n) is
+n^(theta-1), and J_theta(n)=n^theta-(n-1)^theta. The executable balances
+the two relative error powers. For the actual theta2/3 it selects r2/5.
+The theorem includes the separate n<C case and every floor/tail term.
+
+Apply this to A=mu restricted to[1,U], B=mu*n^(-2/3) restricted to[1,V],
+R=delta-One*A, c=sum_(d<=U)mu(d)/d, E=R+c*One. For a source term
+kappa*K*A^p*B^q*R, the generated identity keeps ALL three terms:
+  kappa[K*A^p*B^q*E-m_theta(A^p*B^q*E)*J_theta/theta]
+  +kappa*m_theta(A^p*B^q*E)*J_theta/theta
+  -kappa*c*K*A^p*B^q*One.
+Only the first component receives the new bound. The other two terms
+remain in the complete signed target with every untouched source term
+and the exact transport error -e. Finite factors beyond the prefix and
+the conditional moment's infinite tail are never truncated away.
+
+The two proof routes are direct centering of the full factor and centering
+E followed by finite-factor propagation WITH its paid J commutator. The
+search selects the latter for both selected source components. A shortcut
+identifying h0*J with m_theta(h0)*J is false; the rule and checker retain
+and bound their difference explicitly.
+
+The search generated529 cutoff geometries (reciprocal roots2..24 on both
+axes),71564 full inverse source terms,1058 applications and2116 proof
+routes.414 component certificates meet the constant target across276
+geometries. These are repeated instances of two component controls, not
+414 new independent operators or solved arithmetic lemmas.
+
+Selection gives alpha1/24, gamma1/2, geometry506. With COMMON N=4X-1
+for both parent and child, h=1+ln N, the selected centered energies obey
+  B-mode: <=89302500*N^(-1/20)*h^2;
+  U-mode: <=2057529600*N^(-1/10)*h^2.
+Both yield uniform finite constants by the proved logarithm-absorption
+rule. These conservative constants are large and were not numerically
+tuned. All bounds are for the correctly centered components, not their
+uncentered source terms or the full core.
+
+For example the compiler derives alpha<1/18 for the first component to
+have a CONSTANT bound. At equality this route still pays a log-squared
+bound, not a constant. The requested target determines this distinction.
+Generic tests also exercise square-root and sixth-root parameters and
+the harmonic weighted-mass threshold rather than relying on one solution.
+
+Complete recovery and remaining task
+------------------------------------
+The selected decomposition is bound to all144 inherited original channel
+and transport routes. Full Abel variation, the complete Cauchy term count
+and both S_g<=2*S_R+2*C_paid and its converse are retained. The required
+residual logarithmic degree is the original target MINUS the existing
+channel-recovery degree; no earlier recovery loss is waived.
+
+Every previous frame/moment obligation and all720 earlier representation
+bindings remain available through the immutable parent input reference.
+This new branch does not claim to discharge their common-mode obstruction.
+The full signed join, its mixed correlations, compensating moment drifts,
+multiple residual factors and exact transport error remain the next
+arithmetic targets. Conditioning or another exact rewriting alone still
+cannot bound the retained common core. No original fixed-C recurrence
+or complete signed core bound has been proved. RH remains OPEN.
+
+Verification and resources
+---------------------------
+All27 frozen tests passed. The independent checker replayed every complete
+source inverse identity, both proof routes, the generic optimizer, every
+cutoff/payment gate, selection and the144 recovery bindings. It imports no
+new generator. The analytic rule is an ordinary inspected mathematical
+proof; this is not an end-to-end formalization in a proof assistant.
+
+The owned producer/runner development suite passed, then one affected
+test verified a pre-freeze correction to the inherited logarithmic budget.
+The checker development suite passed once. All development records remain.
+There was no failed numerical or symbolic pilot and no unchanged rerun.
+The checker agent experienced one transient tool/compaction failure before
+resuming; it did not select or evaluate actual search candidates.
+
+Main runtime12.520seconds, peak RSS704032KiB. Main charged work12583307;
+inclusive work18075149 including development and frozen checks. No new
+source coefficient observations, numerical scores, precautionary hashes,
+or edits to old frozen sources. The new files are frozen by direct bytes.
+Publication and root input match the verified next-search input exactly.
+Session16701 is terminal with exit0. Keep the original research goal active.

@@ -1,0 +1,256 @@
+{
+  "RH_proved": false,
+  "basis_vectors": 10,
+  "comparison_count": 172186,
+  "discovery_finite_nonsingular": 1008,
+  "elapsed_seconds": 31.66088453697739,
+  "evaluation_summary": [
+    {
+      "id": 9,
+      "observations": [
+        {
+          "K": "[1.32330191126498678183952334715208631415422680511928229124688645 +/- 7.43e-63]",
+          "X": 16384,
+          "id": 9,
+          "normalizer": "[3.50759130999679253310563624970401873342233025118341028922191030 +/- 6.27e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.45534558503219968233029381185413129527261901598114438882131931 +/- 8.30e-63]",
+          "X": 32768,
+          "id": 9,
+          "normalizer": "[0.94798939076145432982855050665788101092675331965900668291186884 +/- 5.78e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.4578088846763566100340339155850016617493321893081606705645996 +/- 2.72e-62]",
+          "X": 65536,
+          "id": 9,
+          "normalizer": "[0.52050971083075421941020270064886709714432857167181647021240895 +/- 2.52e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.8253408062746279477430744549008682291406448289660012911816739 +/- 5.58e-62]",
+          "X": 131072,
+          "id": 9,
+          "normalizer": "[0.96729631149012417177016586349811948488070910794618535667284156 +/- 6.05e-63]",
+          "status": "certified_positive"
+        }
+      ],
+      "signed_residual_bound_proved": false,
+      "status": "finite_recovery_observed",
+      "uniform_recovery_proved": false
+    },
+    {
+      "id": 20,
+      "observations": [
+        {
+          "K": "[1.4875718683553426637977845524176981948898652201246144264675594 +/- 2.42e-62]",
+          "X": 16384,
+          "id": 20,
+          "normalizer": "[1.41122832885170283854637815704121161976800793561374304131153896 +/- 7.78e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.39111823981677049483869108064713451751636436393888222223608621 +/- 6.15e-63]",
+          "X": 32768,
+          "id": 20,
+          "normalizer": "[1.04121112953887105718490571539892610574864047951953398674068072 +/- 5.67e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.33069005223918068988392464801995188020759710498353389776581339 +/- 6.48e-63]",
+          "X": 65536,
+          "id": 20,
+          "normalizer": "[0.87969044282140743888083458022348814045536951681397482563005444 +/- 4.93e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.5236081525635526763990747608838927423517572134050557509585168 +/- 3.33e-62]",
+          "X": 131072,
+          "id": 20,
+          "normalizer": "[1.5541440090158144175375471055538000808667834394270590252681308 +/- 3.05e-62]",
+          "status": "certified_positive"
+        }
+      ],
+      "signed_residual_bound_proved": false,
+      "status": "finite_recovery_observed",
+      "uniform_recovery_proved": false
+    },
+    {
+      "id": 31,
+      "observations": [
+        {
+          "K": "[7.3607500453144381200052508237772284881437270459038593778665236 +/- 7.37e-62]",
+          "X": 16384,
+          "id": 31,
+          "normalizer": "[0.62605090003652611635865016989159717580795833110445437032715444 +/- 2.57e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[1.7315911058596631127141329913566412687465116683228502930737858 +/- 6.30e-62]",
+          "X": 32768,
+          "id": 31,
+          "normalizer": "[0.212324288154977437255939909460547496481979574699540612116133048 +/- 9.77e-64]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.64661575852498282095563834032041024336081249892331041362885938 +/- 7.93e-63]",
+          "X": 65536,
+          "id": 31,
+          "normalizer": "[0.32753124106706302742581912802110310403626839896543222297701672 +/- 4.47e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[1.4103301852411149709258271663702322131226084004439035191652467 +/- 6.99e-62]",
+          "X": 131072,
+          "id": 31,
+          "normalizer": "[0.56425064985382717677172789472029066456803364351043493253832899 +/- 7.29e-63]",
+          "status": "certified_positive"
+        }
+      ],
+      "signed_residual_bound_proved": false,
+      "status": "finite_recovery_observed",
+      "uniform_recovery_proved": false
+    },
+    {
+      "id": 511,
+      "observations": [
+        {
+          "K": "[34.66841858751505236812686292412435127862532164503325397820105 +/- 5.36e-60]",
+          "X": 16384,
+          "id": 511,
+          "normalizer": "[0.1613427592331428026920228910442252220035484832517832728093013 +/- 5.40e-62]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[60.373257789052729919611898403832657004183950177653820305636 +/- 5.71e-58]",
+          "X": 32768,
+          "id": 511,
+          "normalizer": "[0.00048272236365200620134607790927383947436267138649234048208924 +/- 2.14e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[58.61434471534335670193047998889989510535780459922554098975 +/- 5.38e-57]",
+          "X": 65536,
+          "id": 511,
+          "normalizer": "[0.00049608401880794245846845320273680396789002673844765006318935 +/- 3.71e-63]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[59.94590767729790794953044140662014955298546737341396451149 +/- 5.25e-57]",
+          "X": 131072,
+          "id": 511,
+          "normalizer": "[0.0004859005988624675361669215519879664017710242061402231491843 +/- 3.08e-62]",
+          "status": "certified_positive"
+        }
+      ],
+      "signed_residual_bound_proved": false,
+      "status": "finite_recovery_observed",
+      "uniform_recovery_proved": false
+    },
+    {
+      "id": 898,
+      "observations": [
+        {
+          "K": "[1.0923033507715136330850422138672288257478084571915401121805030 +/- 8.74e-62]",
+          "X": 16384,
+          "id": 898,
+          "normalizer": "[2.0615576719797054259883686707732714844106937455692020687326113 +/- 6.19e-62]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.3703542201715226349497644156392909894407216501540109311783360 +/- 1.19e-62]",
+          "X": 32768,
+          "id": 898,
+          "normalizer": "[2.0689026941054310139660092252097149374234695552531768654456897 +/- 5.01e-62]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.2925917005061262857291475845118154473221935685882782072008744 +/- 5.08e-62]",
+          "X": 65536,
+          "id": 898,
+          "normalizer": "[1.6584634696566903660613929024234578549472274524403050837469442 +/- 6.98e-62]",
+          "status": "certified_positive"
+        },
+        {
+          "K": "[0.5124500309827667321390826085878869564821112986358949974321250 +/- 5.22e-62]",
+          "X": 131072,
+          "id": 898,
+          "normalizer": "[3.109873790772732373911170736885779360442360644729963343299665 +/- 1.97e-61]",
+          "status": "certified_positive"
+        }
+      ],
+      "signed_residual_bound_proved": false,
+      "status": "finite_recovery_observed",
+      "uniform_recovery_proved": false
+    }
+  ],
+  "finite_evaluation_passes": 5,
+  "fresh_source_holdout": false,
+  "full_signed_residual_evaluated": false,
+  "generated_candidates": 1023,
+  "generic_kernel_rank": 20,
+  "geometries": 5,
+  "inclusive_operations": 373833236,
+  "main_operations": 9058252,
+  "new_moment_observables": true,
+  "peak_main_rss_kib": 704032,
+  "selected": [
+    {
+      "id": 31,
+      "route": "recovery_conditioning_support_2"
+    },
+    {
+      "id": 9,
+      "route": "recovery_conditioning_support_3"
+    },
+    {
+      "id": 20,
+      "route": "recovery_conditioning_support_4"
+    },
+    {
+      "id": 898,
+      "route": "recovery_conditioning_support_5"
+    },
+    {
+      "id": 511,
+      "route": "all_centered_finite_heads_paid"
+    }
+  ],
+  "source_bindings": 720,
+  "source_regenerated": false,
+  "status": "CUTOFF_FRAME_CONSTRUCTIONS_VERIFIED_WITH_OPEN_ARITHMETIC_BOUNDS",
+  "uniform_recovery_proved": false,
+  "whole_signed_bound_proved": false,
+  "worker_receipts": [
+    {
+      "elapsed_seconds": 14.62598031302332,
+      "operations": 79313679,
+      "path": "discovery-producer.json",
+      "phase": "discovery",
+      "role": "producer"
+    },
+    {
+      "elapsed_seconds": 18.852821637003217,
+      "operations": 176752279,
+      "path": "discovery-checker.json",
+      "phase": "discovery",
+      "role": "checker"
+    },
+    {
+      "elapsed_seconds": 2.372588055994129,
+      "operations": 31158834,
+      "path": "evaluation-producer.json",
+      "phase": "evaluation",
+      "role": "producer"
+    },
+    {
+      "elapsed_seconds": 3.8999217429955024,
+      "operations": 71886618,
+      "path": "evaluation-checker.json",
+      "phase": "evaluation",
+      "role": "checker"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+INDEPENDENT FINITE COVERAGE CHECKER081 SCOPE
+
+API: verify_coverage(program,coveragecertificate,meter=None).
+No packet/coverage producer imports. Reuses frozen independent081 program
+parser, drift Gram construction, direct max-denominator pair compiler, and
+independent078 Eratosthenes arithmetic. Restricted squarefree counts use the
+frozen checker square-divisor plus coprimality inclusion-exclusion routine,
+not producer mask queries. Complete ratio-label enumeration and exact signed
+density balance weights are independently recomputed.
+
+The checker reconstructs every floor-cut band using its left interior integer,
+squarefree/prime prefix populations, diagonal and full unordered offdiagonal
+coefficient geometry, and actual weighted removal through exact count
+intervals. Nonzero ratio-label counts, truly weighted label counts, touched
+physical edges and truly weighted physical counts remain distinct. Exact
+canonical certificate equality includes types, rational strings and flags.
+
+All intersecting outer bands must equal [-1,0,...]. Positive integer divisors
+and dyadic shifts admit no interior divisor threshold strictly between4 and5,
+so the producer's endpoint criterion is valid for the admitted grammar. This
+checker's stronger all-band check confirms the actual claimed prime block.
+Every distinct actual prime pair in (floor(u/5),floor(u/4)] has gcd1, both labels
+exceedD, coefficient2H00, and totalH00*P*(P-1); none is removed by the packet.
+
+Prospective complete-ratio bank, direct-product, horizon, integer/rational
+arithmetic and memory gates are inherited from frozen081. New prefix arrays
+and dense-band work are additionally reserved/charged before construction.
+Meter operation counts are conservative accounting, not wall-clock deadlines;
+caller remains responsible for the stage wall-clock/watchdog envelope.
+
+This admits finite coefficient geometry and actual prime-block values only.
+It proves no arithmetic cancellation bound, no uniform source bound, no
+uniform unlinked bound, and no RH statement. Source-kernel binding remains
+an external obligation. It does not independently re-admit saved U or the
+proposal's U=B+V decomposition; those are separate saved-artifact admissions.

@@ -1,0 +1,68 @@
+EXPLICIT SHORT-REPAIR RECIPE AND QUADRATIC LIFT SEARCH063
+
+062 was substantive: automatically generated finite complete-floor bounds,
+with the all-scale budget theorem still open. This followup searches explicit
+repair algorithms that apply at arbitrary H and exposes their small-arithmetic
+quadratic dependence. It does not rerun062's LP or seek another fitted vector.
+
+Freeze the ten files listed in the runner before new scientific repairs.
+Preserve281 inherited snapshot files by direct bytes, no hashes. Eleven new
+producer tests passed in two disjoint groups (8 repair,3 later quadratic);
+17 independent checker tests passed once. No failures or unchanged reruns.
+
+Use all36 saved062 generic long completions. Do not re-optimize their long
+coefficients or recompute their old source sums, integrals or LP values.
+Compute the NEW exact residual array on every short integer d<=H. Every
+coprime row is fixed. Noncoprime rows may be filled by one of8 algorithms:
+ raw,zero,left,right,linear,reciprocal_linear,core,core_inverse.
+Nearest-node interpolation uses coprime nodes and virtual right endpoint
+H+1 of value0. Reciprocal interpolation is linear in1/d. Core removes every
+registered-prime factor; core_inverse divides its value by d/core. Every
+recipe is linear in the input array and independent of arithmetic signs.
+There are no learned numerical fill coefficients or fitted exponents.
+
+For filled g, compute A_j=sum_(m<=H/j)mu(m)g_(jm), then c_j=A_j-A_(j+1).
+This exactly repairs every full integer row, and therefore every source row.
+The independent new checker uses suffix/multiples forward replay without
+calling the producer or its Mobius inverse. It checks all8 fill definitions,
+every coefficient, exact L1, unit and all coprime/squareful rows. Its proof
+alone does not bind the original source. Merge c_j with the unchanged long
+coefficients, then admit every NEW whole candidate using the independent062
+checker. It must have zero residual at every coprime short row and retain all
+source horizons. These new whole-candidate checks are necessary composition
+verification, not a replay of062's unchanged certificates or optimization.
+
+Rank the eight recipes per fixed case by exact total coefficient budget,
+then declared recipe order. Compare to saved generic/LP budgets descriptively.
+No new all-y coverage, holdout, empirical exponent or uniform budget is claimed.
+All288 recipe instances are retained, including any that have worse budgets.
+
+For each case winner construct and save the NEW factored quadratic operator:
+ c=Delta D(u)P(f-G*u), u_m=ordinary mu(m), shared by BOTH factors.
+Here f is the short target, G is the long generic completion expressed in
+unweighted inverse columns ell, P is the linear fill. Construct f,G,P without
+mu values, then evaluate the same u through B=max(H,K), K=floor(y/(H+1)).
+Exact producer replay must recover every filled row and every independently
+verified repair coefficient. Save Pf and PG, not H separate dense quadratic
+matrices. This has synthetic direct-expansion tests and an independent
+source-only general proof; there is no new independent machine admission
+of the entire quadratic schema. The full final prefix bound is independently
+checked separately. Disclose this distinction.
+
+H=floor(N^eta) implies B=O(N^max(eta,1-eta)); minimizing this proven query
+exponent over the three existing eta choices gives1/2 at eta1/2. This ranking
+uses no finite norm value. The generic long charge also meets square-root
+times polylogs at eta1/2. The remaining joint quadratic variation estimate
+has NOT been proved. Smaller queried arithmetic indices do not imply that
+the quadratic norm contracts; a current-scale Mertens interval can be encoded
+by this very factorization. Keep both factors' actual shared mu and gcd law.
+
+Three fork workers, one native thread each,7200s/module,300b metered units per
+producer/checker and16GiB aggregate authorization. Record prospective storage
+and actual per-process RSS. Instrumented units are not CPU instructions.
+No new original-source sieve or integral; short inverse-kernel mu values are
+newly evaluated for the new repair/factorization and explicitly accounted for.
+
+Preserve any failure and rerun only materially affected work. Leave the goal
+active. The next target is a uniform bound on the signed quadratic variation
+for every N,prefix and required parameter, with all boundary/unit terms.

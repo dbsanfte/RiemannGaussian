@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "latest_outcome": "PASS",
+  "attempts": [
+    {
+      "file": "mobius_coupled_completion_postfix_independent_review_083.json",
+      "status": "FAIL"
+    },
+    {
+      "file": "mobius_coupled_completion_postfix_independent_review_083_attempt_1791724683706090308.json",
+      "status": "FAIL"
+    },
+    {
+      "file": "mobius_coupled_completion_postfix_independent_review_083_attempt_1791724693016206315.json",
+      "status": "PASS"
+    }
+  ],
+  "retained_fixture_failures": [
+    "u0 outside producerpositiveu domain",
+    "Meter has fixed4GiB reserve gate; settingunusedmemory_limit didnot altergate"
+  ],
+  "source": "audit_mobius_coupled_completion_postfix_083.py",
+  "scientific_source_queries": false,
+  "old_tests_run": false,
+  "hashes_used": false,
+  "uniform_source_bound_proved": false,
+  "RH_proved": false
+}

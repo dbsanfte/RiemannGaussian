@@ -1,0 +1,203 @@
+Lossless primitive-state cone quotient and exact affine restoration, version 1
+2026-10-09. Analysis only; no solver, arithmetic compilation, source freeze,
+research scoring, or alteration of existing sources was performed.
+
+Result
+
+The proposed quotient is EXACTLY equivalent for finite feasibility in the
+unchanged coefficient identity and PSD cone. It also preserves a genuine
+fixed-coefficient all-scale polynomial identity, if one has independently
+been proved. It does not preserve the optimization objective or the initial
+storage cost, and does not itself prove either feasibility or a uniform bound.
+It removes algebraic gauge freedoms, not a PSD face exposed by gamma=0.
+The recorded 1224-coordinate rank779 system can supply a 445-free-coordinate
+exact affine restoration without another dense elimination.
+
+Actual source contracts
+
+cancellation_affine_storage_synthesis.py:27 prepare, especially :45 and
+:51-53, appends each storage column as child minus four times parent.
+check_cancellation_affine_storage.py:244 coefficient_system independently
+uses child factor1 and parent factor-4 at :266. Thus, entrywise and with the
+same full15 atoms, A_K = A_child - 4*A_parent. Offdiagonal primal columns
+already contain the factor2 for symmetric upper-triangle matrix entries.
+The identity therefore holds for diagonal AND offdiagonal columns without
+additional factors. Auxiliary blocks are empty for all three matrices.
+
+cancellation_affine_storage.py:125 initial_cost uses R=e_prefix*e_prefix^T+K
+and actual initial v=(1,1,0,0,1,0,...,0). The independent check is at
+check_cancellation_affine_storage.py:155 and :301 verify_primal; :333-335
+binds every scalar split/slack and all three full15 upper-triangle blocks.
+A reduced candidate must ultimately lift to that complete original format.
+check_primitive_state_equation_projection.py:21 full15_recipes keeps one
+signed representative per pair and both regional blocks; :29 and :31
+check the exact sign and storage-column dependencies.
+
+Exact quotient proof
+
+Write the regional quadratic coefficient contribution abstractly as
+    A_child(Gc+K) + A_parent(Gp-4K),
+where Gc,Gp,K are PSD and A_region is the linear polynomial map of that
+region. Set
+    Gc' = 0, K' = K+Gc, Gp' = Gp+4Gc.
+These matrices remain PSD, because nonnegative sums of PSD matrices are PSD.
+Their contribution is
+    A_child(K+Gc) + A_parent(Gp+4Gc-4*(K+Gc)),
+which is the identical polynomial. All scalar weights, targets, shared
+coefficient contracts, five slacks and gamma-zero equations stay unchanged.
+This proof holds before sampling, with the actual source polynomials at each
+scale. Conversely, every feasible candidate with Gc=0 is already a member
+of the original cone. Thus restricting Gc to zero AFTER applying this
+canonical lift loses no feasible polynomial identities.
+
+For every signed relation coefficient beta, the original nonnegative split
+can be recovered exactly as beta_plus=max(beta,0), beta_minus=max(-beta,0).
+Conversely, beta=x_plus-x_minus for any original nonnegative split. Hence
+613 split pairs can be replaced by613 unrestricted rational coordinates
+without losing any effective relation polynomial.
+
+The resulting variable count is
+    366 nonnegative squares + 613 free relations + 5 nonnegative slacks
+    + 120 storage PSD entries + 120 parent PSD entries = 1224.
+The count removes613 redundant split directions and120 redundant matrix
+directions from1957. This is a lossless quotient of polynomial representations;
+the zero child matrix is a chosen representative, not a forced face of all
+original feasible matrices. The prior auxiliary-only memo remains valid.
+Gamma-zero still forces only gamma=0 and the auxiliary slack to zero.
+
+Existing projected coordinates and their CORRECT cone
+
+Let C=Gc+K and P=Gp-4K. These are exactly the effective coefficients against
+the retained child and parent columns in the existing equation projection.
+The projected PSD cone is
+    C PSD, H=P+4C PSD.
+It is NOT C PSD and P PSD. The canonical lift is
+    K=C, Gp=H=P+4C, Gc=0.
+Necessity follows because C=Gc+K PSD and H=Gp+4Gc PSD for every original
+feasible triple. Sufficiency follows from the displayed lift. The map between
+(C,P) and independent PSD coordinates (K,H) is invertible, rational, and
+entrywise triangular with determinant1. No rank decision or matrix direction
+is discarded. The old projection receipt licensed equation-rank computation
+only; a NEW cone-quotient receipt/check is needed before using this cone in
+optimization or certificate reconstruction.
+
+The corresponding dual simplification is also exact. Original region moments
+satisfy Hc PSD, Hp PSD, Hk=Hc-4Hp PSD. The child PSD requirement follows from
+Hc=Hk+4Hp and is therefore redundant when Hp and Hk are PSD. This is a
+structural implication, not evidence that any moment must vanish.
+
+Objective, boundary and all-scale qualifications
+
+The original trace objective is tr(Gc)+tr(Gp)+tr(K). The canonical trace
+objective is tr(Gp+4Gc)+tr(K+Gc), which exceeds it by4*tr(Gc).
+Thus objective values and optimizers are not preserved. Replacing relation
+splits by free beta preserves their MINIMUM split L1 cost |beta|, but an
+absolute-value objective needs an explicit convex representation or a
+separately declared new objective. A feasibility objective can avoid keeping
+redundant split variables merely to reproduce an L1 objective.
+
+The canonical anchored initial cost increases by v^T*Gc*v >= 0. It is finite
+for fixed rational matrices, and R'=e_prefix*e_prefix^T+K+Gc remains coercive
+on the prefix. This is acceptable for a fixed-template asymptotic argument
+which requires a finite initial constant and retains the complete identity.
+It is not lossless for a prescribed upper bound on initial cost, a fixed
+boundary matrix, an objective including that cost, or an argument requiring
+identical quantitative constants. Such extra restrictions need explicit
+checking. The current finite admission checker verifies finite initial cost,
+not an upper cap that would invalidate this lift.
+
+The full formal scalar ledger is preserved:
+    2*z^T Gc z + z^T Gp z -2*z^T K z
+    = z^T(Gp+4Gc)z -2*z^T(K+Gc)z.
+The unchanged gamma-zero coefficients also remain unchanged. This quotient
+cannot convert a finite witness at X=1,2,3,5 into a proof for every X, establish
+the all-scale scalar growth premises, or prove RH. One must still establish
+the unchanged complete all-scale identity and its required bound. In
+particular, a fixed uniform recurrence depending on S_R must be reevaluated
+with the new R if it relied on the previous boundary value.
+
+Saved rank779 basis and exact affine restoration
+
+Recorded primitive-state-exact-row-basis-probe-002/jobs/basis.json and
+basis-check.json report a complete consistent projected1224-variable system
+of augmented rank779, with no inconsistent RHS pivot. Hence445 coordinates
+are free. The basis receipt contains a transcript, retained ORIGINAL row
+indices and pivot columns; it DOES NOT store the normalized sparse triangular
+rows themselves. The checker reconstructs those rows during replay and hashes
+them as normalized_basis_sha256 (check_primitive_state_exact_row_basis.py:187
+and :229). The producer normalizes at primitive_state_exact_row_basis.py:131.
+A restoration implementation must either materialize and independently bind
+those reconstructed rows once, or read an equally verified new cache. Retained
+original rows alone are not triangular and cannot be back-substituted as if
+already normalized.
+
+Each normalized residual row with pivot p has no coefficient at j<p and has
+coefficient1 at p. Its stored augmented column1224 is the RHS. Sort pivot
+columns in DESCENDING numerical order and compute
+    x_p = rhs_p - sum_{j>p} a_pj*x_j.
+Do not reverse receipt insertion order: a later-inserted pivot can be smaller
+than an earlier pivot. All free coordinates must be explicitly supplied as
+bounded exact rationals. This computes the unique exact pivot values for that
+free assignment. No dense RREF, numerical rank truncation, guessed missing
+coordinates, or rounding of dependent pivot coordinates is needed. Complete
+exact row-span replay establishes omitted equations; full original equality
+verification should nevertheless run after the full1957-coordinate lift.
+
+The recorded basis has99,431 live sparse cells, peak99,983, and82,424,719
+producer operations; these are historical receipt values, not a new run.
+A one-time verified replay/materialization has that preprocessing cost and
+needs its own bounded resource allocation. Each back-substitution then costs
+roughly the sum of normalized row nonzeros, with exact coefficient growth,
+denominator, cells, time and charged-work caps enforced. It does not require
+another elimination of5641 equations. The normalized-basis hash, source hash,
+monomial order, retained-coordinate map and pivot layout must all be bound.
+
+Credible bounded repair stage
+
+1. Independently license the exact lossless cone map and existing complete
+   row-basis transcript. Cache verified sparse normalized rows under hashes.
+2. Convert a numerical proposal to effective(C,P), then choose all445 free
+   coordinates as exact rationals under a preregistered denominator/bit cap.
+   Back-substitute pivot coordinates exactly. This repairs affine equality,
+   regardless of the numerical proposal's former equation residual.
+3. Check all366 square weights and five slacks for exact nonnegativity and
+   verify exact PSD of C and P+4C, with gamma and auxiliary slack included.
+   If any fail, this candidate is rejected; equality restoration is not
+   positivity repair and does not imply infeasibility.
+4. A separately bounded convex correction can operate directly on the445
+   free coordinates with the exact affine map, square/slack inequalities,
+   and the two PSD constraints. This avoids native affine equality drift.
+   Producing a dense nullspace map is optional and can create fill/large
+   rationals; a sparse triangular map with explicit resource bounds is the
+   preferable starting point. Any native free-vector result must again be
+   rationalized and back-substituted exactly, then subjected to step3.
+5. Lift beta to explicit nonnegative parts and C,P to all three original
+   matrices (child0,parentP+4C,storageC), recompute initial/scalar ledgers and
+   typed storage proofs, and independently check every original5641 equation
+   and the existing full finite certificate admission contract.
+
+The quotient removes the known733 algebraically redundant coordinate
+directions and can reduce cone assembly and numerical gauge freedoms. It
+does not reduce exact rank779 or guarantee improved conditioning. It cannot
+repair the reported159 negative SQUARE weights by changing gauges: those
+weights are identical under the quotient. A non-PSD C or P+4C is likewise an
+actual quotient-cone violation. An AlmostSolved status with original residual
+64.75 and negative squares supplies no exact certificate or face inference.
+Any improvement from free-coordinate correction needs actual bounded evidence;
+this memo authorizes no solver attempt and makes no success prediction.
+
+Tiny exact calibrations (no research solver)
+
+For a15-dimensional triple Gc=Gp=K=I, effective C=2I,P=-3I. P is negative
+definite but H=P+4C=5I is positive definite: imposing P PSD would incorrectly
+exclude an original feasible matrix triple. Canonical lift is child0,parent5I,
+storage2I; both give the same coefficient pair(2I,-3I). Trace cost changes
+from45 to105, exactly4*tr(I)=60. Since actual initial v has squared norm3,
+anchored cost changes from1+3=4 to1+6=7. With formal norm(z)^2=13/4, the
+matrix ledger stays13/4 before and after lifting.
+
+For triangular equations x0+2*x1=3 and x2-x3=1, choose free x1=1/3,x3=2/5.
+Back-substitution gives x0=7/3,x2=7/5, with exact zero residual in both rows.
+The same mechanism works for779 verified pivots but supplies no positivity
+promise. This separates an exact affine restoration guarantee from the
+remaining convex feasibility problem.

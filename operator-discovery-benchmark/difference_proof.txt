@@ -1,0 +1,320 @@
+ORDINARY-ROOT-SENSITIVE QUADRATIC INDEX DIFFERENCES
+
+Status: written universal proofs with independent exact and Arb witnesses;
+not machine formalization. This is a mathematically verified candidate
+application, not a verified historically new primitive or an RH proof.
+
+1. Correct type and the ordinary Dirichlet root relation
+
+Let D be ordinary Dirichlet convolution, with unit delta_1. LOG_D and
+EXP_D are its coefficient-local normalized logarithm and exponential.
+For an augmentation sequence h, h(1)=0, define the pushforward
+
+  (E_a h)(N)=sum_(n>=2,n(n+a)=N) h(n),  a=0,1,... .
+
+The map n -> n(n+a) is strictly increasing and exceeds n for n>=2.
+E_a acts only on the augmentation ideal; it does not send the unit
+to the index 1+a. All sums and all subsequent coefficient computations
+are finite. Define the m-th forward-difference combination
+
+  A_m=sum_(a=0)^m (-1)^(m-a) binomial(m,a) E_a,  m>=1,
+  P_(m,k,beta)(f)=EXP_D(beta*(I+A_m^k)*LOG_D(f)), k>=1, f(1)=1.
+
+These are ordinary D roots, not roots in a transported product:
+
+  P_alpha(f) D P_beta(f)=P_(alpha+beta)(f),
+  P_1(f D g)=P_1(f) D P_1(g),
+  P_beta(f)=P_1(f^(D beta))=P_1(f)^(D beta).
+
+The equations follow by taking LOG_D and using linearity of I+A_m^k.
+Each A_m application sends support n>=b to indices >=b^2. Hence A_m^k
+sends it to indices >=b^(2^k). The formal inverse is coefficient local:
+
+  P_1^-1 = EXP_D * [sum_(j>=0)(-1)^j A_m^(k*j)] * LOG_D.
+
+The stars in this displayed composition mean composition of maps, not
+convolution of their scalar values. At a fixed cutoff all sufficiently
+late terms vanish. Generic exact checks use unrelated signed rational
+inputs, ordinary divisor products and fractional roots. A separate sparse
+control through 10^8 requires two nonzero inverse correction powers;
+stopping after the first is explicitly rejected. The independent checker
+also solves the inverse by increasing-index triangular elimination.
+
+E_0 is the classical square-index pushforward: its scalar Dirichlet
+action is F(s)->F(2s), and its log-zeta input becomes LOG(zeta(2s)).
+E_a for a>0 need not be multiplicative as an index map. We do not call
+it a D algebra homomorphism merely because the conjugated P_1 is a
+normalized unit-group homomorphism.
+
+For zeta input at m=2,k=2,beta=1, the coefficients at 20 and 45 are
+-1 and 1. Swapping prime labels 2 and 3 sends 20 to 45 but fixes u, so
+even this specific zeta output is not prime-relabel invariant. The first
+correction support begins at 16; its coefficient at 20 is -2 and none of
+its supported divisors contributes at 45. The ordinary correction EXP
+therefore gives these values exactly. The coefficients at 4 and 5 are
+both 1 but the coefficient at 20 is -1, rejecting multiplicativity
+despite the ordinary unit-group laws.
+
+2. Known-operator calibration and the recovered compound law
+
+The integer-weight grammar fixes four quadratic nodes a=0,1,2,3 and
+primitive weights with a positive last nonzero entry. It scores 1120
+vectors. Vanishing zeroth and first moments gives six training fits;
+the fresh second-moment gate leaves (-1,3,-3,1), the classical third
+forward difference. Binomial weights are prior art, not a new primitive.
+The identities
+
+  sum_a (-1)^(m-a) binomial(m,a) a^j=0 for j<m,
+  sum_a (-1)^(m-a) binomial(m,a) a^m=m!
+
+follow by taking m differences of a polynomial. They also follow from
+the classical Stirling formula in NIST DLMF 26.8.6.
+
+The compound search forms quadratic image words of lengths k. It does
+not identify a cancellation order just by naming a finite difference.
+Exact rational Taylor profiles at thirteen (m,k) pairs and three fresh
+positive parameters recover the order and leading coefficient. The
+1890-program order grammar gives three training fits and one survivor;
+the 80-program leading recurrence grammar gives four fits and one
+survivor. Independent interpolation and separate LOG/EXP recursions
+recompute every decision and every coefficient.
+
+3. Universal cancellation order under nonlinear index iteration
+
+For a scalar test kernel define
+
+  B_m w(n)=sum_(a=0)^m (-1)^(m-a)binomial(m,a) w(n(n+a)),
+  W_(m,k)(n,s)=B_m^k[n^-s].
+
+This is the dual of A_m^k; the full word set is closed under reversal,
+so the scalar kernel agrees with the coefficient pushforward. Set d=2^k.
+We prove
+
+  W_(m,k)(n,s)=n^(-d*s-r_k) G_(m,k)(1/n,s),
+  r_k=m*(2^k-1),
+  c_(m,k)(s)=G_(m,k)(0,s),
+  c_(m,0)=1,
+  c_(m,k+1)=(-1)^m*(2^k*s+r_k)_m*c_(m,k).
+
+Here (x)_m=x(x+1)...(x+m-1), and G is jointly analytic near u=0
+and for every complex s. Start with G_0=1 and r_0=0. If the statement
+holds at k, put t=2^k*s+r_k and u=1/n. Then the next raw bracket is
+
+  sum_a w_a (1+a*u)^(-t) G_k(u^2/(1+a*u),s).
+
+Expand G_k in powers u^(2j)(1+a*u)^(-j). Every coefficient of total
+degree ell<m is a polynomial in a of degree at most ell, so the
+moment identities annihilate it. At degree m only j=0 contributes:
+all j>0 require an a-power below m and also vanish. The coefficient
+is (-1)^m*(t)_m*G_k(0,s). Division of the bracket by u^m gives an
+analytic G_(k+1), with r_(k+1)=2*r_k+m. This proves both laws.
+
+The order is at least r_k for every s, and exactly r_k except at the
+finitely many roots of c_(m,k). It is not exact at all complex s:
+s=0 annihilates the full kernel identically. The verifier retains that
+negative control. No extrapolation from finite profiles is needed.
+
+4. A rigorous grouped continuation into negative half-planes
+
+For zeta input u(n)=1 put g=LOG_D(u), so g(n)=1/r for n=p^r and
+zero otherwise. Initially define
+
+  Delta_(m,k)(s)=sum_(n>=2) g(n) W_(m,k)(n,s).
+
+For Re(s)>1/d every word's series converges absolutely. The cancellation
+law extends the grouped sum further. On compact sets of s, G is bounded
+near u=0. Therefore |W(n,s)|<=C*n^(-d*Re(s)-r_k) for large n.
+Since 0<=g(n)<=1, absolute/local-uniform convergence after grouping holds
+whenever d*Re(s)+r_k>1, or
+
+  Re(s)>eta_(m,k)=-m+(m+1)/2^k.
+
+Thus Delta is holomorphic on this half-plane. This is a sufficient domain,
+not a claim of its maximal possible continuation. The selected instance
+m=2,k=2 has d=4,r=6,eta=-5/4. The trivial-zero control m=6,k=1 has
+d=2,r=6,eta=-5/2. In particular both domains cover the entire critical strip.
+
+Grouping is essential. The ordinary coefficient series of A_m^k(g)
+has coefficient (-1)^(m*k)/r at p^(d*r) for every prime p>m. Indeed a
+positive shift a<=m cannot keep an intermediate power of such a prime
+a prime power, whereas the all-zero word maps p^r to p^(d*r). Therefore
+its individual terms do not tend to zero on Re(s)<=0. Negative-half-plane
+continuation above is not absolute convergence, or even ordinary natural-
+order convergence, of that coefficient Dirichlet series. This distinction
+remains an explicit rejection gate in the detector.
+
+5. Quantitative bounds and a native-zeta scalar representation
+
+For a word let Phi_w(n) be its quadratic image, and write
+Phi_w(n)=n^d H_w(1/n), H_w(0)=1. Let
+
+  h(u,s)=sum_w weight(w)*H_w(u)^(-s)=sum_(j>=r_k) c_j(s) u^j.
+
+Choose R=1/[2(m+1)]. Starting at |u|<=R, each reciprocal update is
+u->u^2/(1+a*u), with a<=m; it stays inside this disk. The logarithm of
+the normalized image is a sum with powers 2 of logs(1+a*u), so its
+magnitude is at most (d-1)log 2. The word weights have total absolute
+mass 2^(m*k). Consequently
+
+  |c_j(s)|<=M(s)*R^-j, M(s)=2^(m*k+|s|*(d-1)).
+
+After treating a finite input prefix n<=N0=4(m+1), the Taylor expansion
+converges absolutely at every remaining 1/n. Interchange of the two
+absolutely convergent sums gives the scalar identity
+
+  Delta(s)=sum_(n=2)^N0 g(n)W(n,s)
+    +sum_(j>=r_k)c_j(s) [LOG(zeta(d*s+j))
+                          -sum_(n=2)^N0 g(n)n^(-d*s-j)].
+
+LOG here is the normalized Euler logarithm on Re(d*s+j)>1. This entire
+formula is valid on Re(s)>eta. A finite prefix must be removed when
+the closest normalized polynomial zero prevents direct expansion at n=2.
+The implemented arguments have minimum real part near two or larger,
+where the native principal log equals the normalized Euler log because
+|LOG(zeta)|<=log(zeta(Re z))<pi.
+
+For an s compact set with minimum real part sigma, truncation after j=J
+has tail at most
+
+  M*(N0+1)^(-d*sigma) * q^(J+1)/(1-q)
+       * (1+(N0+1)/(d*sigma+J)), q=1/[R*(N0+1)]<1.
+
+The independent version uses R=1/[3(m+1)], a different finite prefix and
+a sharper bound 2^(m*k)*(1-m*R)^(-|s|*(d-1)). It computes exact polynomial
+logarithms by Newton interpolation, then a separate exponential recurrence.
+The production uses native polynomial LOG/EXP. Both require the known
+leading coefficient as well as all vanished lower coefficients.
+
+For a direct grouped input tail after N, sum the first Taylor degrees
+r<=j<=J using
+
+  |c_j|*N^(1-d*sigma-j)/(d*sigma+j-1),
+
+then bound the remainder by
+
+  M*R^(-J-1)/(1-1/(R*N))
+    *N^(-d*sigma-J)/(d*sigma+J).
+
+These bounds certify two negative-real-part grouped comparisons. Their
+ordinary coefficient series is not labelled convergent there.
+
+6. Zero-free correction, original zeta zeros and ordinary roots
+
+On Re(s)>1 the formal Dirichlet identity is
+
+  H_(m,k,beta)(s)=zeta(s)^beta * C_(m,k,beta)(s),
+  C_(m,k,beta)=exp(beta*Delta_(m,k)).
+
+Delta is holomorphic on Re(s)>eta, so C is holomorphic and never zero
+throughout that half-plane, for every complex beta. At beta=1 this
+continues H meromorphically there and preserves every zeta zero and
+its multiplicity exactly; its only inherited pole is zeta's pole at 1.
+Fractional beta retains ordinary-zeta root monodromy, unlike the earlier
+factorial-normalized subset transfer. For a zero of multiplicity ell,
+the phase is exp(2*pi*i*ell*beta); a nonzero holomorphic C cannot remove it.
+
+For every m,k the correction domain includes Re(s)>0. Thus RH is
+equivalent to single-valued holomorphic continuation to Re(s)>1/2 of
+every pole-cancelled dyadic root (s-1)^(1/2^j) H_(m,k,1/2^j), j>=1.
+The usual reflection symmetry converts no zeros to the right of the
+critical line into RH. This is a root reformulation, not a proof of the
+required continuation or a new zero-free estimate for zeta.
+
+7. Positive-domain full-series bounds and actual comparisons
+
+For real beta in [0,1], the ordinary zeta-power coefficients d_beta(n)
+lie between zero and one. Write the correction's formal coefficients
+as r_beta. If L bounds sum_n |A_m^k(g)(n)|/n, then
+sum_n |r_beta(n)|/n<=exp(beta*L) by the convolution exponential majorant.
+For sigma>1 the output tail after N is therefore at most
+
+  (1+1/(sigma-1))*N^(1-sigma)*exp(beta*L).
+
+To see this, expand H=d_beta D r_beta and bound the inner tail
+sum_(a>N/b) a^-sigma by (1+1/(sigma-1))*(N/b)^(1-sigma).
+The bound is also valid when N/b<1. The source computes L from a finite
+word-weighted prime-power sum plus an integral bound; the independent
+version uses a longer prefix and a normalized log(zeta(4)) tail.
+
+Six fresh complex cases compare exact rational arithmetic output through
+4096 against the native shifted-log-zeta identity with explicit infinite
+tails. The independent output reaches 6144 and uses a distinct reference:
+one native zeta root times the direct grouped prime-power correction,
+whose remainder uses exact leading Taylor coefficients and Cauchy bounds.
+It rejects a smaller coefficient-2 perturbation at every point.
+
+8. Two actual nontrivial-zero disks and one actual trivial-zero disk
+
+The existing authoritative certificates isolate simple critical-line
+zeros near heights 14.134725 and 21.022040. New tests certify C nonzero
+across both full disks for beta=1/2,1/4,1. Fractional cases have nontrivial
+monodromy, and integer cases correctly have trivial phase. Source and
+independent root controls reuse those unchanged zero certificates.
+The recorded phase bounds apply to |(exp(2*pi*i*beta)-1)*C_beta|.
+The full H jump also includes its zeta^beta factor and therefore has no
+strictly positive uniform modulus bound at the zero itself.
+
+For a stable source enclosure, native Delta is evaluated at the centre
+and extended over the rectangle by a derivative bound. For m=2,k=2,
+Phi_w(n)>=n^4 and log Phi_w(n)<=4log n+3log 2. Hence on real part >=sigma,
+
+  |Delta'|<=16*[4*(-zeta'(4sigma)/zeta(4sigma))
+                        +3log 2*log(zeta(4sigma))], sigma>1/4.
+
+Multiply this by sqrt(2) times the disk radius to enclose the rectangle.
+The independent method instead sums grouped prime-power kernels directly
+on the rectangle, with changed input cutoffs and exact Taylor tails.
+
+For the additional zero at s=-2, use m=6,k=1. Native zeta(-2)=0, and
+its derivative is nonzero. A Taylor/Rouche bound counts one simple zero
+in the radius-1/10000 disk. Independently, the functional equation gives
+zeta'(-2)=-zeta(3)/(4*pi^2), and a larger-circle Cauchy bound repeats the
+count. This is a classical trivial zero used as a new calibration.
+
+At any negative integer s=-ell with m>ell, the m-th difference of
+(n(n+a))^ell, as a polynomial in a, is exactly zero. Thus Delta(-ell)=0
+and C_beta(-ell)=1 when that point lies in the proved continuation domain.
+For m=6,k=1 this applies at -2. At beta=1 the transformed function
+therefore also has derivative zeta'(-2), as well as the same simple zero.
+
+An exact repeated-integral identity provides a stable whole-disk bound:
+
+  W_(m,1)(n,s)=(-1)^m (s)_m
+       *integral_[0,1]^m n^-s (n+t_1+...+t_m)^(-s-m) dt.
+
+If sigma+m>0 and 2sigma+m>1, it implies
+|Delta|<=(|(s)_m|)*log(zeta(2sigma+m)).
+The rising factor is small near -2 for m=6. The independent verifier
+uses explicit distances from the six factors and the looser bound
+zeta(2sigma+m)-1. Both certify nonzero C over the entire crossing disk;
+neither infers this from a finite raw sum with catastrophic cancellation.
+
+9. Scope, historical status and reproducibility
+
+Finite differences, square-index dilation, linear maps of augmentation
+sequences and formal arithmetic LOG/EXP are known building blocks.
+No exact publication match for this particular quadratic-iteration
+application, cancellation/domain hierarchy and negative-integer behavior
+has been established in the reviewed sources. This leaves originality
+unresolved; it does not prove that the operator was previously unknown.
+The candidate has a substantive verified arithmetic/domain consequence
+and an ordinary-zero bridge, but no new estimate establishing RH.
+
+Primary references for the classical components:
+https://dlmf.nist.gov/26.8.E6
+https://www.impan.pl/shop/publication/transaction/download/product/91275
+https://dlmf.nist.gov/25.4
+https://dlmf.nist.gov/25.10
+
+Reproduce the new stage without rerunning unchanged baselines:
+  ../.venv/bin/python difference_search.py
+  ../.venv/bin/python check_difference.py
+  ../.venv/bin/python difference_analytic.py
+  ../.venv/bin/python check_difference_analytic.py
+
+Production and independent polynomial constructions differ (multiplication
+versus Newton interpolation), as do divisor LOG/EXP, native/grouped
+references, cutoffs and infinite-tail certificates. FLINT/Arb is the shared
+trusted interval kernel. Explicit native coefficient lists and a checked
+leading coefficient prevent a tuple being interpreted as a scalar ball.
+Data: difference-results/. Proofs are written mathematics, not formalized.

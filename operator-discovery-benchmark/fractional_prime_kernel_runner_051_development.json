@@ -1,0 +1,16 @@
+{
+  "schema": "fractional-prime-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 5,
+      "operations": 23,
+      "elapsed_seconds": 0.2582345160190016,
+      "stdout": "SYNTHETIC_WORK operations=23; no source values or bank observations\n",
+      "stderr": "test_consistent_proofs_keep_finite_and_uniform_status_separate (test_fractional_prime_kernel_runner_051.RunnerTests) ... ok\ntest_disjoint_fixed_final_and_training_sets (test_fractional_prime_kernel_runner_051.RunnerTests) ... ok\ntest_failed_or_unmetered_receipt_not_admitted (test_fractional_prime_kernel_runner_051.RunnerTests) ... ok\ntest_numeric_and_symbolic_disagreement_is_not_silenced (test_fractional_prime_kernel_runner_051.RunnerTests) ... ok\ntest_receipt_formats_and_preserved_fixture_correction (test_fractional_prime_kernel_runner_051.RunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n"
+    }
+  ],
+  "scope": "synthetic receipt and status guards; fixed partition metadata; no bank observations",
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

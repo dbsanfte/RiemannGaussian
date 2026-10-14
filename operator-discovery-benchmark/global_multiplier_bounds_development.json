@@ -1,0 +1,31 @@
+{
+  "tests_run": 5,
+  "successful": true,
+  "elapsed_seconds": 0.363182332017459,
+  "output": "test_complete_symbolic_search_and_independent_replay (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_endpoint_and_formal_witness_scope (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_general_rational_prices_with_growth_charged (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_missing_shape_and_equivalence_debt_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_source_tail_payment_and_unit_mutations_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.363s\n\nOK\n",
+  "producer_counts": {
+    "operations": 2586402,
+    "peak_cells": 2500,
+    "elapsed_seconds": 0.3629648479982279
+  },
+  "source_observations": false,
+  "scope": "changed-rational synthetic source; exact proof and negative controls",
+  "focused_followups": [
+    {
+      "names": [
+        "test_complete_symbolic_search_and_independent_replay",
+        "test_omitted_template_and_equivalence_coverage_rejected"
+      ],
+      "reason": "independent review: require complete floor and equivalence coverage",
+      "successful": true,
+      "tests_run": 2,
+      "elapsed_seconds": 0.37025724799605086,
+      "output": "test_complete_symbolic_search_and_independent_replay (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\ntest_omitted_template_and_equivalence_coverage_rejected (test_global_multiplier_bounds.CompleteMultiplierSearch) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.370s\n\nOK\n",
+      "producer_counts": {
+        "operations": 2586402,
+        "peak_cells": 2500,
+        "elapsed_seconds": 0.3702056360198185
+      }
+    }
+  ]
+}

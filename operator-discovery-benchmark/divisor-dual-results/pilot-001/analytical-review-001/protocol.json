@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/divisor-dual-results/pilot-001",
+  "source_sha256": {
+    "protocol.json": "e23fab6647b7bab41fd2c97467c9ce0788bf5745c505b6c2891f786550479e62",
+    "seal.json": "c851768d250ba4e0f67ad026425773ae44ded8a41c42ee189709cf0a299f862b",
+    "proof_queue.json": "bc474b571acb73661879e38b055badbc0278c8c17fd3d0f8950fe373a0bf55e6",
+    "final_evaluation.json": "b9c78654a6dfee7802c781893d5ac904d9381da74f7dd0ec3628d8d3ae01b8da",
+    "verification.json": "e642a816c2eb0ef81a16a0abe53b84f19d0d7719db754913bca07ae7596a7736"
+  },
+  "code_sha256": {
+    "divisor_dual_analytic_review.py": "a9e6fcc98c3f78c79ccaafe3b0d5a9161f6c8251d9259c6341407b200707d8ac",
+    "check_divisor_dual_analytic.py": "5179b727446cc7d4ca2d07101c6e889a709b56b9dfc4e782774cf1ef889d31e0",
+    "divisor_dual_analytic_report.py": "1aaa4d08551b3a74ed2c3e1a6f0f987139f9c403b248be576a96708df4b59223",
+    "divisor_dual_analytic_proof.txt": "cbf7921461e84117a8f1185652de7481ad30c8a29e2bd6a1764042d317b8ac66",
+    "test_divisor_dual_analytic_contracts.py": "5ec5730cb8f77640001c89ccec6620128f7844ef69427e7c077d7b1d09ccee1f"
+  },
+  "original_candidate_formulas_must_remain_unchanged": true,
+  "analytical_review_occurs_after_frozen_final": true,
+  "illustrative_witness_levels": [
+    2,
+    7,
+    17
+  ],
+  "disproof_quantifiers": "for every fixed integer q>=2 there are arbitrarily large dyadic scales with a negative quadratic form",
+  "proof_method_scope": "ordinary analytical arguments and independent exact certificate checks; not machine-formalized",
+  "RH_proved": false
+}

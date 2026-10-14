@@ -1,0 +1,130 @@
+{
+  "checker_producer_imported": false,
+  "correction": "First command used unavailable python executable; subsequent commands use python3. The original unit-omission fixture N=12,y=3,j=1 had a zero joined unit weight, so the assertion was invalid. Corrected only that fixture to N=2,y=1,H=4, whose j=1 unit interval weight is -5/3. The checker event-sort work charge was also made explicit before the final complete new-suite rerun.",
+  "final_scope": {
+    "RH_proved": false,
+    "actual_mobius_inverse_identity_proved": true,
+    "raw_short_only": true,
+    "source_rewrite_proved": true,
+    "uniform_full_variation_proved": false,
+    "uniform_tail_rule_reviewed": true
+  },
+  "final_status": "PASS",
+  "invocations": [
+    {
+      "command": "python3 test_check_mobius_sparse_prefix_066.py",
+      "elapsed_seconds": 3.2849257119814865,
+      "full_stdout_stderr": "test_aggregate_tamper (__main__.Tests) ... ok\ntest_atom_horizon_and_signed_coefficient_tamper (__main__.Tests) ... ok\ntest_duplicate_and_unsorted_atoms (__main__.Tests) ... ok\ntest_endpoint_missing_swapped_ratio_and_fake_ratio (__main__.Tests) ... ok\ntest_every_coefficient_and_cost_tamper (__main__.Tests) ... ok\ntest_every_tail_field_tamper (__main__.Tests) ... ok\ntest_exhaustive_small_prefix_rows_and_all_tails (__main__.Tests) ... ok\ntest_full_floor_forward_source_reconstruction (__main__.Tests) ... ok\ntest_intermediate_bit_work_and_storage_guards (__main__.Tests) ... ok\ntest_missing_floor_step_and_zero_atoms (__main__.Tests) ... ok\ntest_missing_head_middle_last_row (__main__.Tests) ... ok\ntest_missing_tail_head_middle_last (__main__.Tests) ... ok\ntest_mu_unit_omission_is_rejected (__main__.Tests) ... FAIL\ntest_no_repair_free_sign_or_unknown_fields (__main__.Tests) ... ok\ntest_noncanonical_and_overbit_rational_gates (__main__.Tests) ... ok\ntest_nonmaximal_adjacent_segments_rejected (__main__.Tests) ... ok\ntest_optional_tau_and_distinct_prime_pairs (__main__.Tests) ... ok\ntest_ordinary_mu_unit_prime_and_squareful_values (__main__.Tests) ... ok\ntest_parameter_gates (__main__.Tests) ... ok\ntest_prime_sign_substitution_for_squareful_mu_is_rejected (__main__.Tests) ... ok\ntest_scope_is_actual_raw_and_open_full_target (__main__.Tests) ... ok\ntest_segment_omission_endpoint_coefficient (__main__.Tests) ... ok\ntest_signed_two_channel_coalescing (__main__.Tests) ... ok\ntest_strict_integer_and_capacity_gates (__main__.Tests) ... ok\ntest_tail_index_and_terminal_horizon (__main__.Tests) ... ok\ntest_tiny_unit_y1_and_every_boundary (__main__.Tests) ... ok\ntest_untruncated_prefix_contracts_to_floor_deltas (__main__.Tests) ... ok\ntest_y_at_and_below_H_with_floor_horizons_inside_H (__main__.Tests) ... ok\n\n======================================================================\nFAIL: test_mu_unit_omission_is_rejected (__main__.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_sparse_prefix_066.py\", line 198, in test_mu_unit_omission_is_rejected\n    self.assertNotEqual(unit_weight, 0)\nAssertionError: Fraction(0, 1) == 0\n\n----------------------------------------------------------------------\nRan 28 tests in 3.285s\n\nFAILED (failures=1)\n{\"charged_work_units\": 1498550, \"errors\": 0, \"failures\": 1, \"peak_rss_kib\": 22400, \"schema\": \"mobius-sparse-prefix-checker-development-v1\", \"successful\": false, \"synthetic_only\": true, \"tests_run\": 28, \"wall_seconds\": 3.2849257119814865}\n",
+      "operations": 1498550,
+      "original_temporary_log": "/tmp/mobius_sparse_prefix_checker_066_tests_first_python3.log",
+      "peak_rss_KiB": 22400,
+      "returncode": 1,
+      "summary": {
+        "charged_work_units": 1498550,
+        "errors": 0,
+        "failures": 1,
+        "peak_rss_kib": 22400,
+        "schema": "mobius-sparse-prefix-checker-development-v1",
+        "successful": false,
+        "synthetic_only": true,
+        "tests_run": 28,
+        "wall_seconds": 3.2849257119814865
+      },
+      "tests": 28
+    },
+    {
+      "command": "python3 test_check_mobius_sparse_prefix_066.py",
+      "elapsed_seconds": 3.143779128033202,
+      "full_stdout_stderr": "test_aggregate_tamper (__main__.Tests) ... ok\ntest_atom_horizon_and_signed_coefficient_tamper (__main__.Tests) ... ok\ntest_duplicate_and_unsorted_atoms (__main__.Tests) ... ok\ntest_endpoint_missing_swapped_ratio_and_fake_ratio (__main__.Tests) ... ok\ntest_every_coefficient_and_cost_tamper (__main__.Tests) ... ok\ntest_every_tail_field_tamper (__main__.Tests) ... ok\ntest_exhaustive_small_prefix_rows_and_all_tails (__main__.Tests) ... ok\ntest_full_floor_forward_source_reconstruction (__main__.Tests) ... ok\ntest_intermediate_bit_work_and_storage_guards (__main__.Tests) ... ok\ntest_missing_floor_step_and_zero_atoms (__main__.Tests) ... ok\ntest_missing_head_middle_last_row (__main__.Tests) ... ok\ntest_missing_tail_head_middle_last (__main__.Tests) ... ok\ntest_mu_unit_omission_is_rejected (__main__.Tests) ... ok\ntest_no_repair_free_sign_or_unknown_fields (__main__.Tests) ... ok\ntest_noncanonical_and_overbit_rational_gates (__main__.Tests) ... ok\ntest_nonmaximal_adjacent_segments_rejected (__main__.Tests) ... ok\ntest_optional_tau_and_distinct_prime_pairs (__main__.Tests) ... ok\ntest_ordinary_mu_unit_prime_and_squareful_values (__main__.Tests) ... ok\ntest_parameter_gates (__main__.Tests) ... ok\ntest_prime_sign_substitution_for_squareful_mu_is_rejected (__main__.Tests) ... ok\ntest_scope_is_actual_raw_and_open_full_target (__main__.Tests) ... ok\ntest_segment_omission_endpoint_coefficient (__main__.Tests) ... ok\ntest_signed_two_channel_coalescing (__main__.Tests) ... ok\ntest_strict_integer_and_capacity_gates (__main__.Tests) ... ok\ntest_tail_index_and_terminal_horizon (__main__.Tests) ... ok\ntest_tiny_unit_y1_and_every_boundary (__main__.Tests) ... ok\ntest_untruncated_prefix_contracts_to_floor_deltas (__main__.Tests) ... ok\ntest_y_at_and_below_H_with_floor_horizons_inside_H (__main__.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 3.143s\n\nOK\n{\"charged_work_units\": 1542017, \"errors\": 0, \"failures\": 0, \"peak_rss_kib\": 22272, \"schema\": \"mobius-sparse-prefix-checker-development-v1\", \"successful\": true, \"synthetic_only\": true, \"tests_run\": 28, \"wall_seconds\": 3.143779128033202}\n",
+      "operations": 1542017,
+      "original_temporary_log": "/tmp/mobius_sparse_prefix_checker_066_tests_final.log",
+      "peak_rss_KiB": 22272,
+      "returncode": 0,
+      "summary": {
+        "charged_work_units": 1542017,
+        "errors": 0,
+        "failures": 0,
+        "peak_rss_kib": 22272,
+        "schema": "mobius-sparse-prefix-checker-development-v1",
+        "successful": true,
+        "synthetic_only": true,
+        "tests_run": 28,
+        "wall_seconds": 3.143779128033202
+      },
+      "tests": 28
+    }
+  ],
+  "prior_failure_preserved": true,
+  "resource_policy": {
+    "H_max": 4096,
+    "N_max": 65536,
+    "entries": 900000,
+    "prospective_memory_bytes": 536870912,
+    "rational_bits": 4096,
+    "work_cap": 500000000
+  },
+  "schema": "mobius-sparse-prefix-checker-development-v1",
+  "scientific_files_read": false,
+  "synthetic_only": true,
+  "unchanged_old_suites_run": false,
+  "unique_new_synthetic_tests": 28,
+  "launcher_attempts": [
+    {
+      "command": "python test_check_mobius_sparse_prefix_066.py",
+      "elapsed_seconds": 2.4793e-05,
+      "full_stdout_stderr": "/bin/bash: line 1: python: command not found\n",
+      "operations": 0,
+      "original_temporary_log": "/tmp/mobius_sparse_prefix_checker_066_tests_initial.log",
+      "peak_rss_KiB": null,
+      "returncode": 127,
+      "summary": null,
+      "tests": 0
+    }
+  ],
+  "runs": [
+    {
+      "command": "python3 test_check_mobius_sparse_prefix_066.py",
+      "elapsed_seconds": 3.2849257119814865,
+      "full_stdout_stderr": "test_aggregate_tamper (__main__.Tests) ... ok\ntest_atom_horizon_and_signed_coefficient_tamper (__main__.Tests) ... ok\ntest_duplicate_and_unsorted_atoms (__main__.Tests) ... ok\ntest_endpoint_missing_swapped_ratio_and_fake_ratio (__main__.Tests) ... ok\ntest_every_coefficient_and_cost_tamper (__main__.Tests) ... ok\ntest_every_tail_field_tamper (__main__.Tests) ... ok\ntest_exhaustive_small_prefix_rows_and_all_tails (__main__.Tests) ... ok\ntest_full_floor_forward_source_reconstruction (__main__.Tests) ... ok\ntest_intermediate_bit_work_and_storage_guards (__main__.Tests) ... ok\ntest_missing_floor_step_and_zero_atoms (__main__.Tests) ... ok\ntest_missing_head_middle_last_row (__main__.Tests) ... ok\ntest_missing_tail_head_middle_last (__main__.Tests) ... ok\ntest_mu_unit_omission_is_rejected (__main__.Tests) ... FAIL\ntest_no_repair_free_sign_or_unknown_fields (__main__.Tests) ... ok\ntest_noncanonical_and_overbit_rational_gates (__main__.Tests) ... ok\ntest_nonmaximal_adjacent_segments_rejected (__main__.Tests) ... ok\ntest_optional_tau_and_distinct_prime_pairs (__main__.Tests) ... ok\ntest_ordinary_mu_unit_prime_and_squareful_values (__main__.Tests) ... ok\ntest_parameter_gates (__main__.Tests) ... ok\ntest_prime_sign_substitution_for_squareful_mu_is_rejected (__main__.Tests) ... ok\ntest_scope_is_actual_raw_and_open_full_target (__main__.Tests) ... ok\ntest_segment_omission_endpoint_coefficient (__main__.Tests) ... ok\ntest_signed_two_channel_coalescing (__main__.Tests) ... ok\ntest_strict_integer_and_capacity_gates (__main__.Tests) ... ok\ntest_tail_index_and_terminal_horizon (__main__.Tests) ... ok\ntest_tiny_unit_y1_and_every_boundary (__main__.Tests) ... ok\ntest_untruncated_prefix_contracts_to_floor_deltas (__main__.Tests) ... ok\ntest_y_at_and_below_H_with_floor_horizons_inside_H (__main__.Tests) ... ok\n\n======================================================================\nFAIL: test_mu_unit_omission_is_rejected (__main__.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_sparse_prefix_066.py\", line 198, in test_mu_unit_omission_is_rejected\n    self.assertNotEqual(unit_weight, 0)\nAssertionError: Fraction(0, 1) == 0\n\n----------------------------------------------------------------------\nRan 28 tests in 3.285s\n\nFAILED (failures=1)\n{\"charged_work_units\": 1498550, \"errors\": 0, \"failures\": 1, \"peak_rss_kib\": 22400, \"schema\": \"mobius-sparse-prefix-checker-development-v1\", \"successful\": false, \"synthetic_only\": true, \"tests_run\": 28, \"wall_seconds\": 3.2849257119814865}\n",
+      "operations": 1498550,
+      "original_temporary_log": "/tmp/mobius_sparse_prefix_checker_066_tests_first_python3.log",
+      "peak_rss_KiB": 22400,
+      "returncode": 1,
+      "summary": {
+        "charged_work_units": 1498550,
+        "errors": 0,
+        "failures": 1,
+        "peak_rss_kib": 22400,
+        "schema": "mobius-sparse-prefix-checker-development-v1",
+        "successful": false,
+        "synthetic_only": true,
+        "tests_run": 28,
+        "wall_seconds": 3.2849257119814865
+      },
+      "tests": 28
+    },
+    {
+      "command": "python3 test_check_mobius_sparse_prefix_066.py",
+      "elapsed_seconds": 3.143779128033202,
+      "full_stdout_stderr": "test_aggregate_tamper (__main__.Tests) ... ok\ntest_atom_horizon_and_signed_coefficient_tamper (__main__.Tests) ... ok\ntest_duplicate_and_unsorted_atoms (__main__.Tests) ... ok\ntest_endpoint_missing_swapped_ratio_and_fake_ratio (__main__.Tests) ... ok\ntest_every_coefficient_and_cost_tamper (__main__.Tests) ... ok\ntest_every_tail_field_tamper (__main__.Tests) ... ok\ntest_exhaustive_small_prefix_rows_and_all_tails (__main__.Tests) ... ok\ntest_full_floor_forward_source_reconstruction (__main__.Tests) ... ok\ntest_intermediate_bit_work_and_storage_guards (__main__.Tests) ... ok\ntest_missing_floor_step_and_zero_atoms (__main__.Tests) ... ok\ntest_missing_head_middle_last_row (__main__.Tests) ... ok\ntest_missing_tail_head_middle_last (__main__.Tests) ... ok\ntest_mu_unit_omission_is_rejected (__main__.Tests) ... ok\ntest_no_repair_free_sign_or_unknown_fields (__main__.Tests) ... ok\ntest_noncanonical_and_overbit_rational_gates (__main__.Tests) ... ok\ntest_nonmaximal_adjacent_segments_rejected (__main__.Tests) ... ok\ntest_optional_tau_and_distinct_prime_pairs (__main__.Tests) ... ok\ntest_ordinary_mu_unit_prime_and_squareful_values (__main__.Tests) ... ok\ntest_parameter_gates (__main__.Tests) ... ok\ntest_prime_sign_substitution_for_squareful_mu_is_rejected (__main__.Tests) ... ok\ntest_scope_is_actual_raw_and_open_full_target (__main__.Tests) ... ok\ntest_segment_omission_endpoint_coefficient (__main__.Tests) ... ok\ntest_signed_two_channel_coalescing (__main__.Tests) ... ok\ntest_strict_integer_and_capacity_gates (__main__.Tests) ... ok\ntest_tail_index_and_terminal_horizon (__main__.Tests) ... ok\ntest_tiny_unit_y1_and_every_boundary (__main__.Tests) ... ok\ntest_untruncated_prefix_contracts_to_floor_deltas (__main__.Tests) ... ok\ntest_y_at_and_below_H_with_floor_horizons_inside_H (__main__.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 3.143s\n\nOK\n{\"charged_work_units\": 1542017, \"errors\": 0, \"failures\": 0, \"peak_rss_kib\": 22272, \"schema\": \"mobius-sparse-prefix-checker-development-v1\", \"successful\": true, \"synthetic_only\": true, \"tests_run\": 28, \"wall_seconds\": 3.143779128033202}\n",
+      "operations": 1542017,
+      "original_temporary_log": "/tmp/mobius_sparse_prefix_checker_066_tests_final.log",
+      "peak_rss_KiB": 22272,
+      "returncode": 0,
+      "summary": {
+        "charged_work_units": 1542017,
+        "errors": 0,
+        "failures": 0,
+        "peak_rss_kib": 22272,
+        "schema": "mobius-sparse-prefix-checker-development-v1",
+        "successful": true,
+        "synthetic_only": true,
+        "tests_run": 28,
+        "wall_seconds": 3.143779128033202
+      },
+      "tests": 28
+    }
+  ],
+  "operations": 3040567,
+  "receipt_normalization": "Root separated the preserved unavailable-python launcher attempt, which ran no tests, from actual test invocations before freezing; runs aliases actual invocations for the common runner."
+}

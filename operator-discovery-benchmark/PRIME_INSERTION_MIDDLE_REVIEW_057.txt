@@ -1,0 +1,304 @@
+PRIME INSERTION MOVING MIDDLE: EXACT TRANSPORT AND RECOVERY REVIEW 057
+
+Scope
+=====
+This new source-only review preserves all frozen files. No arithmetic source
+values, numerical integrals, tests, scores, or hashes were computed. All
+bounds below are unconditional algebraic/component bounds, except the
+explicitly named uniform recurrence or middle-correlation premises. Those
+premises remain OPEN. No square-root source estimate is claimed.
+
+1. Source, units, and the complete finite middle
+===============================================
+Fix alpha=1/5. The formulas remain valid for 0<alpha<1 where stated. For a
+fixed squarefree R>=2, let k=omega(R), A_R=product_{p|R}log p, and
+
+ G_n(t)=product_{p|n}(1-p^(-t)), G_1(t)=1,
+ K(n)=I_alpha^(-1) integral_0^infinity G_n(t)t^(-alpha-1)dt, n>=2,
+ I_alpha=integral_0^infinity (1-exp(-u))u^(-alpha-1)du.
+
+K(1)=0 by its original divisor definition; its integral must NOT be
+replaced by the divergent integral of G_1. The inserted source is K(Rn)
+for n>=2. Its prefix excludes n=1 even though K(R)>0. Define
+
+ h_R(N,t)=sum_{2N<n<=4N}G_(Rn)(t)
+                   -2 sum_{N<n<=2N}G_(Rn)(t),
+ epsilon_R(N)=min(1/2,N^(-gamma_R)), tau=1/2,
+ J_R(N)=(alpha I_alpha)^(-1) integral_epsilon_R(N)^tau
+                                  h_R(N,t)t^(-alpha-1)dt.       (1)
+
+Here N is an integer >=2. For R=2,3,5 use gamma=5/8; for R=6,10,15
+use gamma=5/18. In both cases p_R=gamma_R(k-alpha)=1/2 exactly. The
+integral is zero if its endpoints coincide. No rounded cutoff is intended.
+
+The equivalent prefix coefficients are (2,-3,1) at (N,2N,4N). Thus the
+unit correction cancels exactly, since 2-3+1=0. Prime powers and overlap
+with forced primes are all retained in G_(Rn).
+
+2. A cleaner finite signed divisor source
+=========================================
+Factor forced primes BEFORE expanding the remaining radical product:
+
+ G_(Rn)(t)=G_R(t) sum_{d|n, gcd(d,R)=1}mu(d)d^(-t).
+
+Every prime valuation in n is included: when p|R its factor appears once
+in G_R, and when p does not divide R it appears once in the divisor sum.
+Finite summation over n in (1) therefore gives
+
+ h_R(N,t)=G_R(t) D_R(N,t),
+ D_R(N,t)=sum_{d<=4N, gcd(d,R)=1}mu(d)W(N/d)d^(-t),
+ W(y)=floor(4y)-3floor(2y)+2floor(y), |W(y)|<=1.                (2)
+
+This is the E_R source, not the coprime-masked mixed difference D_S K.
+There is no external restriction gcd(n,R)=1. The internal restriction
+in (2) excludes exactly the already-forced primes. The d=1 term is zero
+because W(N)=0 at integer N. No infinite mu series is used below t=1.
+The finite signed mu-W polynomial, not its absolute envelope, is the
+remaining source that the detector must control.
+
+The tail t>=1/2 is bounded independently of R:
+
+ |T_R(N)| <=128 sqrt(N),
+ T_R=(alpha I_alpha)^(-1) integral_(1/2)^infinity h_R t^(-alpha-1)dt. (3)
+
+Proof: alpha I_alpha>1/2, G_R<=1, and d=1 is exactly zero. For t>=1/2,
+t^(-alpha-1)<=4 uniformly 0<alpha<1. Integrating d^(-t) gives
+d^(-1/2)/log d; log d>=log2>=1/2 for d>=2. Hence the bound is at most
+16 sum_{d<=4N}d^(-1/2)<=16*2*(4N)^(1/2)=64 sqrt(N).
+Thus (3), the executable conservative constant 128, is valid with room
+to spare. This stronger direct argument avoids the Boolean-face triangle
+constant of review056. The zero d=1 term must be handled before integration.
+
+The microscopic endpoint has the earlier unconditional bound
+
+ |M_R(N)| <=12R/(k-alpha)*sqrt(N).                            (4)
+
+Indeed |h_R|<=4N A_R t^k, (alpha I_alpha)^(-1)<3,
+A_R<=R, and epsilon_R^(k-alpha)<=N^(-1/2). Therefore the full inserted
+filter t_R=[A_R_source(4N)-3A_R_source(2N)+2A_R_source(N)]/alpha satisfies
+
+ t_R=J_R+M_R+T_R,
+ |M_R+T_R|<=[12R/(k-alpha)+128]sqrt(N).                       (5)
+
+The symbol A_R_source denotes the prefix of K(Rn); it is distinct from
+the logarithmic product A_R. Formula (5) does not recover a fixed old
+constant and does not invert the insertion projection back to K.
+
+A paid absolute envelope has a logarithmic saving but no RH-scale gain.
+Put beta=k-alpha>0 and D=4N. For 0<t<=1/2,
+
+ sum_{d<=D}d^(-t)<=D^(1-t)/(1-t)<=2D exp(-t log D),
+ G_R(t)<=A_R t^k.
+
+Consequently even the entire low interval obeys
+
+ |J_R(N)|<=16 A_R Gamma(beta) N/[log(4N)]^beta.                (6)
+
+The Gamma notation is only a positive elementary integral, not an imported
+source theorem: integral_0^infinity exp(-v)v^(beta-1)dv. A rational
+certificate can use Gamma(beta)<=1/beta+(ceil(beta)-1)!, by splitting
+at v=1 and enlarging the remaining power. This bound is much larger than
+sqrt(N); positivity and the forced-prime factor alone do not close the
+middle. It gives a genuine, but weak, all-scale baseline.
+
+3. Exact moving transport and paid neighboring boundary
+=======================================================
+For integers M>N>=2, set epsilon_N=epsilon_R(N). The complete identity is
+
+ J_R(M)-J_R(N)
+ =c_alpha integral_epsilon_N^tau [h_R(M,t)-h_R(N,t)]t^(-alpha-1)dt
+  +c_alpha integral_epsilon_M^epsilon_N h_R(M,t)t^(-alpha-1)dt, (7)
+ c_alpha=(alpha I_alpha)^(-1).
+
+The last term is incoming parameter-boundary flux. Its sign is not fixed,
+because h_R is a signed filter even though each G_(Rn) is positive. The
+spatial difference is exactly
+
+ h_R(M,t)-h_R(N,t)
+ =2 sum_{N<n<=M}G_(Rn)(t)
+ -3 sum_{2N<n<=2M}G_(Rn)(t)
+   +sum_{4N<n<=4M}G_(Rn)(t).                                (8)
+
+All endpoints in (8) are inclusive on the right and exclusive on the left;
+overlapping intervals are still summed with their coefficients. These
+identities cover children 2N and 2N+1 and adjacent parents N-1,N,N+1.
+They must not be replaced by a transport at fixed epsilon with its flux
+silently omitted.
+
+For M=N+1, (8) has exactly the new points
+2 G_(R(N+1)) -3[G_(R(2N+1))+G_(R(2N+2))]
++sum_{i=1}^4 G_(R(4N+i)), total absolute coefficient mass 12.
+Its normalized integral is at most
+12 [log(4N+4)]^alpha/alpha, since any partial positive integral for n>=2
+is at most K(Rn)/alpha<=K(n)/alpha<=log(n)^alpha/alpha.
+
+The moving flux in (7) is bounded, including the cap transition, by
+
+ 12(N+1)A_R/(k-alpha)
+       [epsilon_N^(k-alpha)-epsilon_(N+1)^(k-alpha)]
+ <=24 gamma_R A_R N^(-1/2).                                 (9)
+
+For the inequality, x -> min(2^(-beta),x^(-p_R)) is nonincreasing and
+has derivative magnitude at most p_R x^(-p_R-1), wherever differentiable.
+The same integral bound crosses its corner. Thus
+
+ |J_R(N+1)-J_R(N)|
+ <=12 log(4N+4)^alpha/alpha+24 gamma_R A_R/sqrt(N).            (10)
+
+This is a proved local regularity rule with no source observations. It
+cannot be summed over N to obtain a square-root bound: its crude accumulated
+cost is linear times a logarithm. Child-scale flux in (7) is of order
+sqrt(N), so it is paid for the growth class but not a small fixed drift
+constant or a favorable signed covariance.
+
+4. Prime 2 gives an exact joined odd/parent pairing
+==================================================
+If 2|R then G_(R(2m))(t)=G_(Rm)(t), and also K(2Rm)=K(Rm). Splitting
+the even and odd terms in the upper block proves, for EVERY fixed t,
+
+ h_R(N,t)=sum_{m=N+1}^{2N}
+                   [G_(R(2m-1))(t)-G_(Rm)(t)].              (11)
+
+The corresponding full-source and common-cutoff middle identity follows
+by integration. This is valid at N>=1: no unit correction appears because
+both blocks are above 1. The m=N+1 odd point is 2N+1 and the last is 4N-1;
+the even points exhaust 2N+2,...,4N.
+
+Each difference in (11) compares two actual radical sets. It is not of a
+fixed sign. For example at R=2, m=5 gives G_18-G_10=G_6-G_10<0,
+while m=3 gives G_10-G_6>0, at every t>0. These are exact elementary factor comparisons,
+not evaluated arithmetic samples. Thus radical positivity does not make
+this pairing termwise contracting. It is not a prime-independence model.
+
+For odd R, the equally complete formula is
+
+ h_R(N,t)=sum_{m=N+1}^{2N}[G_(R(2m-1))(t)-G_(Rm)(t)]
+           -sum_{m=N+1}^{2N}[G_(Rm)(t)-G_(2Rm)(t)].           (12)
+
+The last block is nonnegative before its minus sign. It retains all m
+already divisible by 2 (zero contribution) and every other prime overlap.
+Dropping it might give a one-sided comparison, but cannot prove an absolute
+middle bound or a squared-energy recurrence. The useful auxiliary is the
+JOINED odd-parent difference with this complete compensation, not separate
+positive bounds on its two terms.
+
+Crucially (11) uses epsilon_R(N) for both legs. Substituting a separately
+computed parent channel with its own epsilon_R(m), or a 2R channel with its
+own k/gamma, adds exactly the boundary integral in (7). These are different
+functions unless that correction is included.
+
+5. Neighbor-parent recurrence: exact all-integer induction
+=========================================================
+Let z(N) consist of the middle channels with their defined moving cutoffs.
+For rational lambda>=0 and fixed rational signed coefficients a_i define
+
+ F(N)=[J_6(N)^2+lambda*(sum_i a_i z_i(N))^2]/N >=0.           (13)
+
+More generally a fixed PSD rational Gram is allowed provided it majorizes
+the original J_6 coordinate square. No omitted-cross diagonalization is
+licensed. Assume the source-bound PREMISE, not merely finite evidence,
+
+ F(2N+r)<=sum_{s=-1}^1 w_s F(N+s)+C/N^delta,
+ N>=3, r in {0,1}, w_s>=0, sum_s w_s=1, C>=0, delta>=0.     (14)
+
+Every channel, cutoff and source definition must be recomputed at its own
+argument. Neither checking only even children nor a fixed chain suffices.
+Let B bound ALL four bases F(2),F(3),F(4),F(5).
+
+Then (14) implies for every integer n>=2:
+
+ delta=0:
+ F(n)<=B+C*max(0,floor(log2(n-2))-1),                        (15)
+
+with the logarithmic expression defined to be zero at n=2;
+
+ delta>0:
+ F(n)<=B+C/(2^delta-1)<=B+2C/delta.                         (16)
+
+Proof uses a finite weighted parent tree, not repeated maxima with a lost
+branching factor. For an internal node n>=6 put d=n-2. Every allowable
+parent p=floor(n/2)+s has p-2<=floor(d/2), and p>=2. It is strictly smaller
+than n. The maximum path length to the bases is at most
+max(0,floor(log2(d))-1). Since outgoing weights sum to one, a tree expansion
+averages the base and path forcing sums. This proves (15).
+
+For (16), read an internal path backwards from its last internal node,
+which has d>=4. At j reverse steps, d>=4*2^j; its forcing denominator
+floor(n/2)>=d/2>=2^(j+1). The path forcing sum is therefore at most
+sum_{j>=0}2^(-(j+1)delta)=1/(2^delta-1). Finally
+2^delta-1>=delta log2>=delta/2. These are valid for arbitrary positive
+rational delta; no denominator restriction is mathematically needed.
+
+For features z_i=J_(R_i) without extra rescaling, a fully source-free base
+is
+
+ B=180/alpha^2*(1+lambda*(sum_i |a_i|)^2).                   (17)
+
+Indeed a positive partial integral at each n is bounded by log(n)^alpha/
+alpha. Both the upper-block positive mass and the negative lower-block
+mass are <=2N log(4N)^alpha/alpha; thus |J_R(N)| is bounded by that
+quantity. For N=2,...,5, log(4N)<=log20<3, so
+|J_R(N)|<=6N/alpha and F<=36N/alpha^2*(1+lambda L1^2).
+The inequality log20<3 is elementary: the first nine terms of the positive
+series for exp(3) already exceed 20. No finite arithmetic bases need be
+computed for (17). Extra rescaled or different features require their own
+explicit base factors; this base must not be transplanted to them silently.
+
+Combining (15)-(16), F>=J_6^2/N and (5) yields a uniform full inserted-source
+square-root times at most sqrt(log N) bound. The conditional RH implication
+for this fixed E_6 source from review056 then applies. This does not establish
+(14), does not infer it from sampled recurrence passes, and does not recover
+the original fixed numerical C=2. A positive delta gives a stronger source
+lemma than is required for cofinal RH-scale growth.
+
+6. Exact work, neighbor variance, and an arithmetic proof frontier
+================================================================
+For a fixed PSD Gram Q, write u_n=z(n)/sqrt(n),
+bar_u=sum_s w_s u_(N+s), and xi=u_(2N+r)-bar_u. Then the COMPLETE work is
+
+ F(2N+r)-sum_s w_s F(N+s)
+ =2 <bar_u,Q xi>+||xi||_Q^2
+       -sum_s w_s ||u_(N+s)-bar_u||_Q^2.                    (18)
+
+The variance term is a genuine negative algebraic credit. It is not a
+free strict contraction: equal neighboring states make it zero. Dropping
+the signed first cross term or estimating it as if prime factors were
+independent would change the original obligation. Formula (7) supplies
+an exact source-bound xi with both its spatial and cutoff-boundary terms.
+All cross terms between those two components stay in ||xi||_Q^2 and in
+the parent correlation. A detector can enumerate rational w and Q and
+propose a SOURCE-SPECIFIC proof of their joined signed work.
+
+Two useful enumerable leaves are consequently:
+ (i) common-cutoff odd-parent joined correlations from (11)-(12), with the
+     exact cutoff compensation appended;
+ (ii) the signed covariance in (18) between the transported parent state
+     and the complete spatial-plus-boundary innovation, allowing its
+     negative neighbor variance credit.
+
+A proof graph may pay (2), (3), (4), (7)-(12), (15)-(17), and the universal
+identity (18) immediately. It may NOT pay (14) from these identities alone.
+The arithmetic leaf is a uniform upper bound on the joined work in (18),
+or a genuinely stronger signed interval/pairing estimate that implies it.
+Taking absolute values separately in (2) proves only (6); taking them
+separately in (11) is also of linear scale. The scalar growth target has
+not been proved. The transported-work identity is equivalent to its exact
+recurrence at that stage; progress requires a distinct arithmetic lemma
+with independent dependencies, not naming xi or positivity as that lemma.
+
+Endpoint restoration is also cross-aware. If full vector t=z+e, then
+
+ ||t||_Q^2=||z||_Q^2+2<z,Qe>+||e||_Q^2,
+ ||t||_Q^2<=(1+v)||z||_Q^2+(1+1/v)||e||_Q^2, v>0.           (19)
+
+Paid bounds on e do not determine the sign of the cross or preserve an
+old forcing constant. They do preserve the square-root/polylog growth
+class. Source-feedback should retain the finite signed divisor polynomial,
+its exact boundary flux, and the joined odd-parent correlation as the next
+unpaid expressions. It should not claim that a fixed first-jet nullspace or
+positive radical kernel has already supplied their all-scale control.
+
+Disposition: source-only review complete; no actual uniform middle or
+recurrence lemma established. All signed units, prime valuations, overlap,
+prefix endpoints, moving cutoffs, both child parities, and base domains are
+retained. This new review is stopped.

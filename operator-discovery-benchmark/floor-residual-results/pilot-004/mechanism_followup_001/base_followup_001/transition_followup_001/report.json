@@ -1,0 +1,54 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "aggregate_memory_reserve_bytes": 2620605688,
+  "drift_producer_counts": {
+    "ceil_comparisons": 23,
+    "max_power_bits": 940,
+    "operations": 160413547,
+    "rational_operations": 40980,
+    "root_cache_hits": 0,
+    "root_comparisons": 1594752,
+    "total_power_bit_estimates": 18441640
+  },
+  "elapsed_seconds": 24.097100831975695,
+  "finite_recurrence_pairs": 1,
+  "independent_source_operations": 641828109,
+  "largest_individual_worker_rss_kib": 244320,
+  "new_frozen_source_count": 18,
+  "norm_certificates": 4,
+  "norm_checker_operations": 1096510518,
+  "norm_conversion_operations": 10668001602,
+  "norm_horizons_used": [
+    262144
+  ],
+  "norm_preflight_operations": 340693768,
+  "norm_producer_operations": 743036515,
+  "parent_capacity_preflight_operations": 340693768,
+  "parent_conversion_operations": 2899112,
+  "parent_peak_rss_kib": 704032,
+  "potential_target_refuted": false,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1
+  ],
+  "recurrence_refuted": true,
+  "scientific_candidate_or_constants_changed": false,
+  "selected_argument": "prime_argument_022728",
+  "source_constructions": 2,
+  "source_producer_operations": 5422836,
+  "status": "FIXED_RECURRENCE_REFUTED_AT_PROFILE_TRANSITION",
+  "status_counts": {
+    "refuted_at_this_pair": 1,
+    "unresolved_interval": 0,
+    "verified_at_this_pair": 0
+  },
+  "uniform_signed_bound_proved": false,
+  "whole_h_target_refuted": false
+}

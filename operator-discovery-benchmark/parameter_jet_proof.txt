@@ -1,0 +1,154 @@
+PARAMETER JETS AND ACTUAL PRIME-POWER INFORMATION
+
+Scope: universal operator identities with a guided recovery calibration. The
+identities do not supply a new bound for primes or an RH proof. The finite
+coefficient and numerical checks are independent implementations, not a
+formal proof of all analytic arguments below.
+
+1. General exact Dirichlet parameter jets
+
+For any rational arithmetic sequence f with f(1)=1, write delta for the
+Dirichlet unit and H=f-delta. At index n, H^{*k}(n)=0 for 2^k>n. Consequently
+every formal power, logarithm and exponential is a finite calculation at that
+index. This proves the identities in the locally nilpotent commutative
+Dirichlet algebra, without multiplicativity or a prime oracle:
+
+ f^{*(a+h)} = f^{*a} * exp_D(h log_D f),
+ [h^j]f^{*(a+h)} = f^{*a}*(log_D f)^{*j}/j!.
+
+The grammar returns Taylor coefficients; multiplying by j! returns ordinary
+derivatives. The identities hold for every rational centre a and every
+nonnegative integer j. Finite prefixes are exact restrictions of these
+infinite arithmetic identities. They do not assert convergence of a
+Dirichlet series for a generic input.
+
+2. General logarithmic-kernel jets at exponent zero
+
+For real u>0, real kappa and a>0, define
+ K_(a,kappa)(u) = integral_0^u exp(kappa*v)*v^(a-1)dv / Gamma(a).
+Expanding the exponential and integrating its absolutely convergent power
+series gives
+ K_(a,kappa)(u) = u^a/Gamma(1+a)
+   * [1 + sum_(k>=1) a/(a+k)*(kappa*u)^k/k!].
+
+For each fixed u>0 the right side is analytic in a near zero, and its
+constant coefficient is one. It supplies the one-sided a=0 extension.
+Uniform convergence on compact a disks of radius less than one justifies
+coefficient extraction. With L=log(u)+EulerGamma,
+
+ log[u^a/Gamma(1+a)] = L*a
+    + sum_(j>=2) (-1)^(j+1)*zeta(j)*a^j/j,
+ [a^j]sum_(k>=1) a/(a+k)*(kappa*u)^k/k!
+    = (-1)^(j-1)*sum_(k>=1) (kappa*u)^k/(k^j*k!), j>=1.
+
+The Gamma series follows by expanding the convergent Euler product; a
+primary reference for the equivalent Gamma/psi series is DLMF 5.7.3-4:
+ https://dlmf.nist.gov/5.7
+For kappa=1, the first coefficient is
+ L + sum_(k>=1)u^k/(k*k!) = Ei(u),
+with the standard real positive-u exponential integral (DLMF 6.6.1):
+ https://dlmf.nist.gov/6.6.E1
+
+For a truncation at k=T and z=kappa*u, if |z|/(T+2)<1, the absolute tail of
+the j-th scalar series is at most
+ |z|^(T+1)/[(T+1)!*(T+1)^j] / [1-|z|/(T+2)].
+Each subsequent term has smaller ratio because both factorial and k^j
+increase. Adding this symmetric error ball certifies each kernel jet value.
+This bound is at the declared u, not uniform in u or x.
+
+Endpoint: K_(a,kappa)(0)=0 for every a>0. Its u>0 extension at a=0 is one.
+Do not evaluate the above parameter derivatives at u=0 or commute the limits
+a->0 and u->0. A summation over integers n<=x therefore becomes n<x when
+this one-sided parameter jet is taken. The arithmetic limit below requires
+x>1; it does not apply at x=1.
+
+3. A matched derivative produces an actual signed prime error
+
+The producer obtains mu by divisor inversion of the constant-one sequence,
+without factorisation. Let nu_a=mu^{*a} and, for a>0 and real x>1,
+
+ G_a(x) = sum_(n<=x)nu_a(n) K_(a,1)(log(x/n)).
+
+At every fixed x this is a finite sum. At a=0+ its limit equals one.
+The first coefficient of nu_a is log_D mu = -log_D 1. At a prime p the
+formal local series of 1 is (1-z)^-1, whose logarithm is sum z^k/k. The
+logarithm of the Euler product is the sum of these local logarithms, so
+
+ (log_D mu)(n) = -1/k if n=p^k, and 0 otherwise, including n=1.
+
+This is an all-index arithmetic identity. The evaluator's independent sieve
+checks the actual prime-power support, rather than defining the producer's
+coefficients by that support. Combining the finite coefficient derivative
+and the fixed-u kernel derivative proves for every real x>1:
+
+ E(x) := lim_(a->0+) [G_a(x)-1]/a
+       = Ei(log x) - Pi_<(x),
+ Pi_<(x) = sum_(p prime, k>=1, p^k<x)1/k.
+
+Ei(log x) here is li(x) with the standard principal-value normalisation.
+At an integer prime power, the strict count is essential; it differs from
+the usual right-continuous count by the corresponding 1/k. Higher jets
+contain signed products and convolutions of the same arithmetic information.
+For instance, writing d=log_D mu and J_j(u)=[a^j]K_(a,1)(u),
+
+ [a^2]G_a(x) = J_2(log x) + sum_(1<n<x)d(n)Ei(log(x/n))
+                         + (1/2)sum_(1<n<x)(d*d)(n).
+
+4. Root-count inversion supplies ordinary prime counts
+
+For every real x>1, only finitely many k have 2^k<x, and
+
+ pi_<(x) = sum_(k>=1) mu(k)/k * Pi_<(x^(1/k)).
+
+Expanding Pi and grouping terms with exponent m=k*l gives coefficient
+(1/m)sum_(k|m)mu(k), which is one for m=1 and zero for m>1. This proves
+the identity for every x, including prime-power endpoints. The implemented
+decoder tests n^k<x with exact rational inequalities to avoid numerical
+root-boundary errors. This is a recovered representation of actual primes,
+not a prime-distribution estimate.
+
+5. Ordinary-zeta bridge and the missing signed control
+
+For Re(s)>1, absolute convergence and the exponential-integral series give
+
+ Mellin(E)(s) = -[log(s-1)+log zeta(s)]/s
+             = -log[(s-1)zeta(s)]/s.
+
+To check the first term, put u=log x: the integral of log u+EulerGamma
+against exp(-s*u) is -log(s)/s, and integrating the positive-u series gives
+sum_(k>=1)1/(k*s^(k+1)) = -log(1-1/s)/s. The prime-power contribution is
+log zeta(s)/s by its absolutely convergent Euler logarithm. The logarithm
+branch is the canonical one on Re(s)>1, real on the real axis.
+
+Suppose a uniform bound |E(x)|<=C*x^(1/2)*(1+log x)^L for every real x>=2
+were proved, with finite C and nonnegative integer L. The integrable
+log-log singularity on 1<x<2 is confined to a bounded interval; it contributes
+an entire Mellin function. The uniform bound makes the rest holomorphic on
+Re(s)>1/2. Exponentiating -s*Mellin(E) then gives a holomorphic nonvanishing
+function agreeing with (s-1)zeta(s) on Re(s)>1. The identity theorem extends
+that equality to Re(s)>1/2. An ordinary zero of any positive multiplicity
+there would contradict nonvanishing. The standard zeta functional equation
+then gives RH. No uniform premise in this paragraph has been proved.
+
+A sufficient parameter-family target is, for some a0>0, finite C and fixed L,
+ |G_a(x)-1| <= C*a*x^(1/2)*(1+log x)^L
+ for EVERY real x>=2 and EVERY 0<a<=a0.
+Dividing by a and taking the already proved fixed-x limit gives the preceding
+prime-error bound. Restricting x>=2 is necessary: Ei(log x)->-infinity as
+x->1+, so a bounded target all the way down to one would be false.
+
+Bounds on finitely many exponents or scales do not prove this coupled
+premise. Constants O(1), rather than O(a), lose the derivative control.
+The matched-path Mellin root is ((s-1)zeta(s))^-a/s, whose inversion costs
+1/a; a smaller a alone therefore establishes no improved arithmetic bound.
+
+The grammar also permits independent slopes q,r. The first jet of
+nu_(q*a) with K_(r*a,1) has Mellin transform
+ -[q*log zeta(s)+r*log(s-1)]/s.
+If q!=r, the residual (q-r)*log(s-1) is singular at one. Thus a uniform
+O(x^theta*(1+log x)^L) first-jet claim with theta<1 is impossible for that
+unmatched path. This is an analytic obstruction, not a finite-growth test.
+
+Acceptance: the proof backend may register these universal identities and
+conditional bridges. It must not register an all-scale signed upper bound,
+historical novelty, or RH on the basis of the numerical calibration.

@@ -1,0 +1,269 @@
+PRIME-SUM SECTOR DECODER: INFORMATION RECOVERY AND SHARP DOMAIN LOSS
+
+Status: universal written proofs and independent exact/Arb audits.
+The decoder is a linear partial coordinate permutation, not a unital
+Dirichlet-algebra homomorphism. Its precise arithmetic application has
+unresolved originality. No new estimate establishing RH is proved.
+
+1. WHAT THE EMPIRICAL FIBRE SEARCH ACTUALLY FOUND
+
+Use Phi_r(a,b)=ab(a+b)^r. The r=3 probe on integers 2..512 has 130816
+unordered pairs and 44 output collisions. Its first is
+  Phi_3(3,45)=Phi_3(16,20)=14929920.
+Thus the integer index map is not injective. A further exact family, t>32,
+is
+  Phi_3(2(t-32),2t(t-1))=Phi_3(32(t-1),t(t-32)).
+The first pair has twice the second pair's sum, and one eighth its product,
+proving the equality for every integer t>32. These are not misrepresented
+as collisions on prime-power inputs.
+
+The bounded prime-power probe has 604 inputs <=4096 and 182710 unordered
+pairs, with no collisions. A separate deep probe, prime bases<=97 and
+exponents 1..12, has 300 inputs and 45150 pairs, also with no collisions.
+The prime-only probe has 159330 pairs including diagonals and no collisions.
+None of these finite observations proves injectivity on ALL prime powers.
+That stronger claim remains unestablished and is not used below.
+
+The decoder grammar scores 96 programs: exponent modulus 2..9, visible
+prime count 1..4, and full/residue/quotient exponent modes. Five training
+pairs leave two fits. Fresh fourth exponents reject the residue mode;
+one full-exponent modulo-three decoder survives. Large held-out indices
+are retained rather than avoided when they expose a factor-parser bug.
+
+2. UNIVERSAL INJECTIVITY ON AN EXPLICIT PRIME-POWER SECTOR
+
+Let a=p^e, b=q^f, p!=q, r>=2, with neither e nor f divisible by r.
+Then gcd(ab,a+b)=1. In N=Phi_r(a,b), the valuations at p,q are exactly
+e,f; every other prime valuation is divisible by r. Hence the primes
+with nonzero exponent residues modulo r are exactly p,q. Recovering
+their FULL valuations recovers a,b, and thus their unordered pair.
+
+Conversely, on ANY prime-power input pair, the output has exactly two
+nonzero exponent residues modulo r iff the inputs have distinct prime
+bases and both exponents are nonmultiples of r. If the bases coincide,
+only that single base can have nonzero residue: write, for e<=f,
+p^e+p^f=p^e(1+p^(f-e)) for e<f, and 2p^e for e=f. All other prime
+contributions from the sum are multiplied by r. Therefore a second
+prime-power pair producing an admissible N must have the same two bases
+and the same full valuations. No other prime-power fibre can contribute.
+
+This is a universal uniqueness theorem on the stated sector, without
+assuming any global prime-power injectivity or experimental cutoff.
+
+3. THE LINEAR OPERATORS AND THEIR EXACT GENERIC LAWS
+
+Let C_r be the set of m=p^e*q^f, p!=q, with r not dividing e or f.
+Define E_r to push coefficient h(m), m in C_r, to Phi_r(p^e,q^f), and
+zero elsewhere. Define D_r on all arithmetic coefficient sequences by
+  (D_r h)(p^e*q^f)=h(p^e*q^f*(p^e+q^f)^r), m in C_r,
+and zero off C_r. Each output asks for one finite input coordinate.
+An equivalent encoded-index implementation recovers the two visible
+prime powers from exponent residues and then VALIDATES their image.
+The validation is necessary: N=6 has two visible primes but is not an image.
+
+E_r is injective on sequences supported on C_r by section 2. It follows
+  D_r E_r=Pi_Cr,
+  E_r D_r=Pi_encoded,
+where the two Pi operators are diagonal sector projections. Both composites
+are idempotent. D_r and E_r are linear partial coordinate permutations and
+are partial isometries in unweighted coefficient l2. D_r(delta_1)=0,
+so a normalized-unit-group interpretation is explicitly rejected.
+
+For augmentation inputs a,b supported on prime powers, let a_r,b_r discard
+exponents divisible by r, and let diagonal keep same-prime interactions.
+The universal identity is
+  D_r K_r(a,b)=a_r *_D b_r - same_prime_diagonal(a_r,b_r).
+Different prime bases yield the unique encoded fibre; equal bases are
+discarded. This proves the identity on unrelated signed rational inputs,
+not just the zeta coefficients. The independent checker enumerates ALL
+possible sums s with s^r|N and solves the integer discriminant equation
+X^2-sX+N/s^r=0. Its fibre mechanism imports no production residue decoder.
+
+The coefficient map is not causal at the same prefix length. For example
+the decoded coordinate 10 requests encoded coordinate 3430. An encoded
+prefix through 2048 does not provide it. Unavailable input may not be
+substituted by zero. Sparse exact queries are distinguished from a full
+finite encoded Dirichlet-series cutoff.
+
+On RAW zeta input u(n)=1, D_r(u) is simply the familiar indicator of C_r.
+That action reduces to a known arithmetic mask. What is studied here is
+the decoding of the zeta-derived sum-grafted correction, together with its
+inverse laws and analytic domain loss; raw mask recovery is not novelty.
+
+4. THE ZETA-DERIVED COEFFICIENTS AND ACTUAL SCALAR IDENTITY
+
+For g=LOG_D u, g(p^e)=1/e and other coefficients vanish. Let
+kappa_r=K_r(g,g), whose Dirichlet series Gamma_r was proved absolutely
+convergent and holomorphic on Re(s)>2/(r+2) in pair_proof.txt. Put
+t_r=D_r(kappa_r). Then universally
+  t_r(p^e*q^f)=2/(e*f), m in C_r, and t_r(n)=0 otherwise.
+
+The production route first enumerates the entire 182710-term bounded
+prime-power correction, without pre-filtering it to the proposed decoder
+law. It then obtains 3078 admissible exact queries through decoded index
+8192. The independent complete-sum/discriminant checker validates EVERY
+query, including possible prime-power fibres beyond the source input cutoff.
+The result agrees with the universal two-prime formula through 8192.
+
+Let L(s)=normalized Euler LOG zeta(s), initially Re(s)>1, and
+  G_r(s)=L(s)-L(rs)/r,
+  ell_r(x)=-log(1-x)+log(1-x^r)/r,
+  Q_r(s)=sum_p ell_r(p^(-s))^2.
+G_r is the Dirichlet series of g with r-multiple exponents removed.
+Removing the same-prime diagonal from G_r^2 gives the actual scalar bridge
+  T_r(s)=sum_n t_r(n)n^(-s)=G_r(s)^2-Q_r(s), Re(s)>1.
+
+The decoded ordinary series has EXACT absolute abscissa 1. Convergence
+above 1 follows from 0<=t_r(n)<=2. At m=2q for every odd prime q, its
+coefficient is 2, so it diverges at sigma=1 by the divergent prime harmonic
+series, and also at every smaller sigma. The latter classical fact follows
+from zeta's pole and its Euler logarithm: the higher-prime-power contribution
+is bounded as sigma approaches 1, while L(sigma) diverges. This is an
+absolute-convergence theorem, not a maximal analytic-continuation claim.
+
+Q_r is holomorphic on Re(s)>1/2 since |ell_r(x)|<=|x|/(1-|x|). Locally
+it has a stronger continuation
+  Q_r(s)=LOG zeta(2s)+B_r(s),
+where B_r is holomorphic on Re(s)>1/3. Indeed ell_r(x)^2 has leading
+coefficient x^2 for r>=2. Adding log(1-x^2) cancels that coefficient;
+the remaining coefficient at x^k is bounded in modulus by k for k>=3.
+Summing over primes proves the B_r domain. LOG zeta(2s) can continue
+across any disk where zeta(2s) is nonzero, using an appropriate local sheet.
+
+Six fresh complex points compare this scalar identity against decoded
+coefficients through 4096, with proved infinite tails. The source Q_3
+reference uses exact local-square coefficients and native zeta/Mobius
+prime-zeta sums. The independent route uses coefficients through 6144,
+prime-local Euler logarithms through prime 384 and a changed diagonal tail.
+Every case rejects a coefficient-6 perturbation, including the smaller
+independent perturbation. These are genuine native-zeta comparisons of
+the decoded output, not comparisons of two finite coefficient routines.
+
+5. NUMERICAL TAILS AND THEIR DOMAINS
+
+For Re(z)=sigma>1, prime zeta equals
+  P(z)=sum_(m>=1) mu(m)/m * L(mz).
+After m=M the omitted tail is at most
+  2^(-(M+1)*sigma)/[(M+1)*(1-2^(-sigma))]
+  *(1+2/((M+1)*sigma-1)).
+Use L(v)<=zeta(v)-1<=2^(-v)*(1+2/(v-1)) and the geometric majorant.
+The source uses M=24 and local-square degree K=48. If q_k is the square
+coefficient, 0<=q_k<=k. Its omitted prime sum is bounded by
+  (1+2/((K+1)*sigma-1))*t^(K+1)
+  *((K+1)/(1-t)+t/(1-t)^2), t=2^(-sigma).
+All evaluated native logarithms in the six comparisons are on the Euler
+half-plane and have the correct principal branch, since L(Re argument)<pi.
+
+The independent diagonal prime-cutoff tail at P0 is at most
+  P0^(1-2*sigma)/[(2*sigma-1)*(1-(P0+1)^(-sigma))^2].
+The full decoded coefficient tail after N is at most
+  2*N^(1-sigma)/(sigma-1).
+Native ball integration is not needed in this stage. Every finite reference
+has an explicit infinite error bound; printed balls include rounding error.
+
+6. THE ROOT OBSTRUCTION REALLY RETURNS AFTER DECODING
+
+Reuse the independently checked simple-zeta-zero disks near
+1/2+14.1347251417i, radius 1/10000, and 1/2+21.0220396388i, radius 1/100000.
+The encoded Gamma_3 is unconditionally holomorphic across BOTH disks,
+because they lie in Re(s)>2/5. The decoded function T_3 is not single-valued
+holomorphic there. A simple-zeta-zero loop changes G_3 by h=2*pi*i,
+while Q_3 is single-valued on the disk, so its jump is
+  Delta T_3=2*h*G_3+h^2=4*pi*i*G_3-4*pi^2.
+
+At the right-hand boundary basepoint s0, every local logarithm sheet has
+the same real part
+  Re G_3=log|zeta(s0)|-(1/3)*log|zeta(3s0)|.
+This is certified negative, and |Delta T_3|>=4*pi*|Re G_3|. The source
+lower bounds are approximately 117.7468 and 145.5973. These are bounds
+for the DECODED LOGARITHMIC SERIES jump, not full zeta-root jumps or
+monodromy bounds for an exponential correction. No global Euler sheet of
+the local basepoint log is asserted; the bound is independent of that sheet.
+
+The source directly certifies zeta(2s) and zeta(3s) nonzero on the whole
+small disks. The independent checker uses a first-degree zeta Taylor ball
+and radius-1/32 Cauchy remainder for the basepoint modulus. It replaces
+the actual zeta(3s) log by its unconditional Euler norm bound. A separate
+radius-1/8 Cauchy variation controls zeta(2s) on the entire disk. Its jump
+lower bounds are approximately 108.0995 and 138.4536. Thus Q_3's local
+extension and the nonzero jump pass two distinct enclosure mechanisms.
+The existing zeros are on the critical line; no off-line zero is inferred.
+
+A consequence, not a new primitive, is the pole-cancelled criterion:
+  Phi_r(s)=[LOG((s-1)*zeta(s))-L(rs)/r]^2-Q_r(s).
+RH iff this initially right-half-plane function has single-valued holomorphic
+continuation to Re(s)>1/2. If RH holds, (s-1)zeta is nonzero there and its
+log exists in the simply connected domain. Conversely an interior zero
+of multiplicity m produces a nonconstant quadratic-log monodromy; Q_r and
+L(rs) are holomorphic there and cannot cancel it. This criterion supplies
+no new estimate proving the required continuation.
+
+7. SHARP DECODER NORM AND THE POWER-WEIGHT TRADEOFF
+
+Let A_sigma be coefficient sequences with norm sum_n |h(n)|n^(-sigma).
+For sigma>0, D_r:A_sigma -> A_tau is bounded IFF
+  tau >= (r+1)*sigma.
+If bounded, its EXACT norm is
+  ||D_r||=6^(sigma-tau)*5^(r*sigma).
+Proof: each encoded coordinate at N=ab(a+b)^r maps to m=ab. Its basis
+norm ratio is m^(sigma-tau)*(a+b)^(r*sigma). Re-express it as
+  m^((r+1)*sigma-tau)*(1/a+1/b)^(r*sigma).
+For distinct prime-power bases, m>=6 and 1/a+1/b<=5/6. Both extrema
+are attained at a=2,b=3, yielding the exact norm in the bounded range.
+If tau<(r+1)*sigma, use a=2,b=q as q runs through infinitely many primes:
+the ratio grows as a positive constant times q^((r+1)*sigma-tau).
+This proves unboundedness, rather than extrapolating a finite norm plot.
+
+In particular ordinary holomorphy of the encoded correction does NOT
+pass through this decoder at the same Dirichlet weight. Linear coefficient
+invertibility alone supplies no bounded operator on that analytic space.
+For r=3 the available encoded norms have sigma>2/5, whereas the corresponding
+bounded target weights require tau>8/5. Special decoded zeta coefficients
+have the better abscissa 1, but still no unconditional critical-strip bound.
+
+Consider ONLY pure power regularizations R_lambda D_r, multiplying the
+decoded coefficient at m by m^(-lambda). Their sharp boundedness condition
+is tau+lambda>=(r+1)*sigma. Their zeta-derived scalar output is T_r(s+lambda),
+so every zero-related logarithmic obstruction shifts left by lambda.
+To use the available source norms sigma>2/(r+2) and target tau=1/2 requires
+  lambda>(3r+2)/(2(r+2)).
+The critical-line obstruction then has real part
+  1/2-lambda < -r/(r+2).
+At r=3 these bounds are lambda>11/10 and shifted real part<-3/5. This
+uniform tradeoff is for this decoder and these power weights; it is NOT
+a no-go theorem for all possible arithmetic operators or RH approaches.
+Multiplying coefficients by a power is a classical shift, not a new primitive.
+
+8. FACTOR REPRESENTATION AND VERIFICATION SCRUTINY
+
+The held-out N=2*65537*65539^3=36899117956198039606 exposes a native
+representation issue. python-flint 0.9.0 returns factor entries
+  (2,1),(65537,1),(65539,1),(65539,2).
+The product is correct, but a last-entry dictionary loses an exponent.
+Both implementations now SUM repeated prime exponents and require exact
+product reconstruction. The independent checker also verifies every prime
+component by its own integer factor routine. A separate regression retains
+this beyond-word-size case. No generic trusted factor result is assumed to
+be canonical without checking its representation and reconstructed product.
+The parser fault affected this new stage; no earlier source uses this
+fmpz-factor-to-dictionary pattern, as confirmed by a project-wide code search.
+
+Independent exact gates: 8/8. Independent analytic gates: 4/4.
+Raw probes, exact profiles, changed numerical references, complete integer
+fibres and regression data are saved in decode-results/. The plot separately
+shows the sharp finite norm law, restored zero jump and tail/perturbation tests.
+
+Classical primary context:
+https://dlmf.nist.gov/27.2 (prime factorization and arithmetic functions)
+https://dlmf.nist.gov/27.5.E1 (ordinary coefficient convolution)
+https://dlmf.nist.gov/27.5.E7 (scaled Mobius inversion)
+https://dlmf.nist.gov/25.2 (zeta pole and analytic continuation)
+https://dlmf.nist.gov/25.10 (zeta zeros)
+https://python-flint.readthedocs.io/en/latest/fmpz.html (factor API)
+https://arxiv.org/abs/2102.02280 (prime-zeta singularity context; primary abstract)
+
+These primitives and partial-coordinate operators are classical. Historical
+originality of the precise prime-sum sector decoder and its sharp domain-loss
+application remains unresolved. A no-match search does not establish novelty.
+The mathematically verified catalogue has nine candidate families and 114
+comparison cases. The historically-verified-new list remains empty.

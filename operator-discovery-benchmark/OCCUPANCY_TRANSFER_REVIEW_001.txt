@@ -1,0 +1,325 @@
+COMPLETE OCCUPANCY TRANSFER: STABLE MODES, ACTUAL PREFIX COMPONENT, AND RECOVERY
+
+Scope and outcome
+-----------------
+This is a new analytical memo, using PRODUCT_FIBER_SIGNED_REVIEW_001.txt and
+prime-exchange-results/pilot-001/next_search_input.json. The source is actual
+mu and the target remains the COMPLETE centered candidate-10 smooth/common
+covariance. No experiments, tests, arithmetic tables, hashes, subagents or
+previous/frozen edits were used. No complete cofinal estimate or RH proof
+is obtained. All such flags remain false.
+
+There is a concrete new component theorem: a sixth-root product weight
+admits an exact bounded low rectangle in a finite Euler/double-Perron
+representation of the ACTUAL squarefree-product prefix projection. Its
+absolute contribution is <=beta^2*exp(4)/(pi^2*X), X>=2. The complementary
+contour integral, product-cutoff uniformity for signed Abel recovery, and
+the repeated-prime/main complements remain open. This actual-source
+component theorem is separately derived here; it is not a consequence of
+a scalar eigenvalue certificate alone.
+
+Other conclusions: the 16 union states diagonalize explicitly; stable-only
+constant linear recovery misses the full-occupancy mode; some stable rows
+have independent absolute envelopes, while opposite-leg rows do not; positive
+recovery through a vv row needs macroscopic total variation; and fractional
+weights can stabilize scalar bulk without closing the phase/boundary problem.
+
+1. Exact states, prime transfer, and all exits
+--------------------------------------------
+Let I={hu,hv,ku,kv}. A squarefree product m has each prime assigned to one
+of these bins. Its occupied mask is EXACTLY M subset I. A u-bin contributes
+r_q=1-q^(-1/3), a v-bin s_q=1-q^(-2/3). Products of the h bins form h and
+of the k bins form k. Put beta=9/2 and
+  W_X(h,k)=max(0,2X-max(X,h,k)), N=2X-1.
+For every squarefree m let Psi_M,X(m) be the sum of the positive assignment
+weights times W_X(h,k), over assignments with exactly occupied mask M.
+The empty assignment is m=1,M=empty,h=k=1, with weight W_X(1,1)=X.
+Bins may be empty in these states; the FULL target row requires all four.
+The squarefree-product part of the original quadratic coefficient term is
+  S_0(X)=beta^2*X^(-2)*sum_(m squarefree)mu(m)*Psi_I,X(m).         (1.1)
+Only m<=N^2 contributes. This is an INDEFINITE projection, not a positive
+energy. The full a=p-d square, pole/main cross, all gcd and nonsquarefree
+sectors, and the old D/Lv/smaller-pole corrections remain complementary
+obligations. Their removal is not inferred from this occupancy calculation.
+
+Write e_M for the 16-state column basis and A_i e_M=e_(M union {i}).
+The A_i commute and A_i^2=A_i. For q not dividing squarefree m, appending
+q to bin i multiplies that bin's leg by q and sends M to M union {i}.
+Let E_i(q,m) be the vector of the same positive assignments, now in mask
+M union {i}, weighted by W_X(h,k)-W_X(qh,k) on an h bin, or the k-leg
+analogue. Each entry is nonnegative. In particular
+  W_X(h,k)-W_X(qh,k)
+     =max(0,min(2X,qh)-max(X,h,k)).              (1.2)
+Every lost prefix point, including outside-domain lifts, is retained.
+Then exactly
+  Psi_X(qm)=sum_i w_i(q)*[A_i Psi_X(m)-E_i(q,m)],
+  w_hu=w_ku=r_q, w_hv=w_kv=s_q.                 (1.3)
+Pairing q-free and q-present products, with mu(qm)=-mu(m), gives
+  sum_sf mu(m)Psi_X(m)
+    =sum_(sf m,q not dividing m)mu(m)
+       *[T_q Psi_X(m)+sum_i w_i(q)E_i(q,m)],
+  T_q=I-r_q(A_hu+A_ku)-s_q(A_hv+A_kv).          (1.4)
+All sums have their natural zero outside the finite product support.
+Any additional low-product or moving smooth cutoff must be transported
+on BOTH products, with its threshold crossing added. Equations (1.3)-(1.4)
+are complete identities, not independence or energy-contraction assertions.
+
+2. Simultaneous spectrum and constant-weight recovery
+-----------------------------------------------------
+For J subset I define the left cumulative row and its dual right vector
+  ell_J(e_M)=1_(M subset J),
+  v_J=sum_(M superset J)(-1)^|M\J| e_M.
+They satisfy ell_J(v_K)=delta_(J,K), and
+  A_i v_J=1_(i in J)v_J, ell_J A_i=1_(i in J)ell_J.              (2.1)
+Let a_J,b_J count u,v bins in J, and t=q^(-1/3). Then
+  ell_J T_q=lambda_J(q)ell_J,
+  lambda_J=1-a_J*r_q-b_J*s_q
+           =1-a_J-b_J+a_J*t+b_J*t^2.           (2.2)
+The joint eigenspaces with counts (a,b) have dimension binom(2,a)binom(2,b).
+All common constant-weight invariant subspaces split among these spaces:
+three distinct prime parameters recover the commuting u/v union sums by
+polynomial interpolation, and their joint spectral projectors give the
+split. Arbitrary subspaces inside a degenerate count space are invariant.
+
+The empty mode has eigenvalue one. One-bin modes have t or t^2. Two-bin
+modes have -1+2t, -1+t+t^2 or -1+2t^2, lying strictly between -1 and one
+for actual q>=2. Three-bin and four-bin eigenvalues tend to -2 and -3.
+They cannot be uniformly contracted by a fixed positive coercive quadratic
+storage on the complete state space; eigenvalues cannot be altered by
+changing that norm. A noncoercive storage may ignore them but then loses
+target recovery.
+
+The full-occupancy row is exactly
+  e_I^T=sum_(J subset I)(-1)^(4-|J|)ell_J.        (2.3)
+Every simultaneous mode occurs. In particular v_I=e_I is annihilated by
+EVERY proper cumulative row but e_I^T v_I=1. Thus no combination of the
+proper stable rows recovers the full row on the 16-state space, even with
+prime-dependent scalar coefficients. This is a linear recovery obstruction,
+not a claim that all source-dependent nonlinear recovery is impossible.
+
+There is also an actual-source obstruction to a COEFFICIENTWISE constant-
+weight identity using only <=2-bin rows. Fix a prime count L, let its distinct actual primes
+tend to infinity, and choose X>=m so W_X is constant X on every divisor
+pair. Allowed J counts tend to |J|^L, whereas full occupancy tends to
+4^L-4*3^L+6*2^L-4 (L>0). No fixed linear combination of the counts for
+|J|<=2 can represent this for all L. This uses only infinitely many primes
+and the exact weights, not a numerical evaluation. Additional signed kernels
+or source identities remain admissible, with their recovery costs retained.
+
+3. Which stable rows really have unconditional envelopes
+--------------------------------------------------------
+Normalize a cumulative row by X^(-2)*sum_sf mu(m)ell_J Psi_X(m), without
+beta^2. Its empty-row absolute value is 1/X. A one-bin row has the other
+leg one, m<=N, and assignment weight<=1, giving absolute bound two. If
+two bins are on the SAME leg, its assignment weight is at most 2^omega(m)
+<=d2(m), again m<=N, so its absolute bound is
+  2*(1+log(2X)).                               (3.1)
+These are real paid modes, independently of their scalar eigenvalues.
+They are not the unsolved constant mode of the earlier prime-exchange graph.
+
+The four opposite-leg two-bin rows are different. A positive pointwise
+domination through J={hv,kv} exists: since r_q<=s_q,
+  Psi_I,X(m)<=2^omega(m)*ell_J Psi_X(m), squarefree m.             (3.2)
+For any delta>0, 2^omega(m)<=C_delta*m^delta, e.g. bound small primes
+below 2^(1/delta) by a finite constant and use 2<=q^delta on all others.
+Thus the coefficient cost on m<=N^2 is subpower. But (3.2) controls TOTAL
+VARIATION, not a comparison of the signed sums in (1.1). Its actual total
+variation is macroscopic, not a paid companion.
+
+Here is an elementary proof for the vv row. Let
+  f(h,k)=1_(hk squarefree)*prod_(q divides hk)s_q.
+Its bivariate local series is 1+s_q*z+s_q*w. Convolving separately with
+mu in each coordinate gives local series
+  (1-z)(1-w)(1+s_q*z+s_q*w).
+The sum of absolute nonconstant coefficients evaluated at z=w=1/q is
+O(q^(-1-v)+q^(-2)), v=2/3, so the bivariate divisor inverse has absolutely
+convergent harmonic mass. Exact floor counting and dominated convergence give
+  sum_(h,k<=n)f(h,k)=C_vv*n^2+o(n^2),
+  C_vv=prod_q(1-1/q)^2*(1+2*s_q/q)>0.           (3.3)
+Every local factor is positive and its difference from one is summable;
+no PNT or RH is used. Consequently
+  X^(-2)*sum_sf |mu(m)|*ell_J Psi_X(m)
+      =(7/3)*C_vv*X+o(X).                      (3.4)
+The signed row can still cancel, but its absolute recovery bound cannot
+be replaced by its signed scalar stability. All proper-mode estimates
+needed for a full target must be source estimates or members of the same
+closed induction, rather than separately assumed RH-strength companions.
+
+4. Fractional products: genuine scalar improvement, explicit recovery cost
+----------------------------------------------------------------------------
+Weight each product by m^(-gamma). Scalar pairing now has eigenvalue
+  lambda_(J,gamma)=1-q^(-gamma)*(a_J*r_q+b_J*s_q).                (4.1)
+For gamma=1/6 put z=q^(-1/6). The largest removed mass is
+  rho(z)=4z-2z^3-2z^5.
+Its maximum on [0,1] occurs at z^2=2/5, by differentiating, and equals
+  rho_max=(72/25)*sqrt(2/5), rho_max^2=10368/3125<4.               (4.2)
+Thus ALL 16 scalar eigenvalues lie in [-1,1], with a strict lower endpoint
+greater than -1. This is a genuine zero-phase algebraic improvement. It
+does not prove cancellation of the original signed sum or its exits.
+
+Pointwise undoing the weight costs m^gamma<=N^(2gamma). For SIGNED sums
+the exact condition is stronger. Define, with the same fixed X and gamma,
+  S_gamma(T)=beta^2*X^(-2)*sum_(sf m<=T)mu(m)*Psi_I,X(m)*m^(-gamma).
+Stieltjes summation by parts gives
+  S_0(N^2)=N^(2gamma)*S_gamma(N^2)
+             -gamma*integral_1^(N^2)t^(gamma-1)*S_gamma(t)dt.    (4.3)
+Hence a UNIFORM product-cutoff bound |S_gamma(T)|<=B_X for all T<=N^2
+gives |S_0(N^2)|<=2*N^(2gamma)*B_X. A single endpoint value cannot
+substitute for this: two signed masses may cancel at the weighted endpoint
+and not after undoing their unequal weights. For gamma=1/6 the generic
+loss is N^(1/3), so a merely cofinal weighted estimate is not sufficient.
+
+A concrete sufficient refinement is product-local cancellation. If every
+dyadic product band (T,2T], and every partial subinterval ending inside it,
+has weighted signed sum <=C_epsilon*X^epsilon*T^(-gamma), (4.3) on each
+band recovers an unweighted O(X^epsilon) cost per band and O(log X) in
+total. This is a NEW precise source-correlation requirement, not a proved
+lemma or a replacement of the complete centered target. All nonsquarefree
+and main/pole components still have to be joined after such recovery.
+
+An X-dependent fractional family can avoid a fixed-power inverse cost
+at the scalar level. For 0<c0<1 set Q_X=(log(2X))^c0 and
+gamma_X=log(2)/log(Q_X), outside a finite head. Primes q>=Q_X have
+q^(-gamma_X)<=1/2, so all scalar factors have modulus<=1. Small primes
+give at most 3^Q_X=X^o(1), and N^(2gamma_X)=X^o(1). This is valid cofinal
+BOOKKEEPING, not a proof: uniform product-cutoff cancellation and all phase
+and boundary terms remain. No such family has been implemented or tested here.
+
+5. Phase stability is a different assertion from arithmetic L2 stability
+-------------------------------------------------------------------------
+For a CLOSED pure-dilation occupancy block on logarithmic coordinates,
+the actual scalar Fourier multiplier of a J mode is
+  1-q^(-gamma)*[R_J(q)*exp(i*xi*log q)
+                              +S_J(q)*exp(i*eta*log q)],        (5.1)
+where R_J is the total allowed h-bin weight and S_J the k-bin weight.
+Their sum is a_J*r_q+b_J*s_q. The zero-phase scalar is only one point.
+For phases near pi the modulus is 1+q^(-gamma)*(R_J+S_J), not a contraction.
+For a finite prime set, rational independence of the prime logarithms and
+the continuous Kronecker theorem approximate such phases simultaneously
+with xi=eta. Thus the unrestricted translation-operator norm has the
+absolute product growth, despite scalar zero-phase stability. This excludes
+a universal pure-dilation norm proof; it does not lower-bound the output
+on the actual fixed prefix kernel. That kernel cannot be replaced by an
+arbitrary resonant test function.
+
+There is a useful SMALL phase cone. Suppose the removed scalar mass is
+rho_J<=2-delta^2, and |xi|,|eta|<=delta/log N for q<=N. Then
+cos(xi log q),cos(eta log q)>=1-delta^2/2. The complex removed mass zeta
+satisfies |zeta|<=rho_J and Re(zeta)>=(1-delta^2/2)*rho_J, hence
+  |1-zeta|^2<=1-(2-delta^2)*rho_J+rho_J^2<=1.   (5.2)
+For gamma=1/6, delta=1/4 works because rho_max<31/16=2-delta^2, by
+(4.2). A further real Mellin damping q^(-c) only reduces rho_J.
+
+The premise is an eigenmode for EACH individual union A_i, not just a
+degenerate eigenvalue of their total at one parameter. Otherwise two-leg
+phases can mix the purported scalar block. Moreover arithmetic q-free
+projections, changing smooth supports and outside pullbacks are not
+frequency-diagonal in general. A certificate for (5.2) alone is therefore
+FORMAL pure-dilation phase admission, not a norm credit for the original
+ordered prime-bank kernel. The next section compiles a different, complete
+arithmetic domain to justify one actual prefix component separately.
+
+6. Exact finite Euler/Perron compilation of the squarefree prefix projection
+---------------------------------------------------------------------------
+Fix X>=2,N=2X-1, P_N={q prime:q<=N}, and Mellin variables z1,z2. Define
+  T_q(z1,z2;gamma)=I
+      -r_q*q^(-gamma-z1)*A_hu-s_q*q^(-gamma-z1)*A_hv
+      -r_q*q^(-gamma-z2)*A_ku-s_q*q^(-gamma-z2)*A_kv,
+  Z_N(z1,z2;gamma)=e_I^T*[prod_(q in P_N)T_q(z1,z2;gamma)]*e_empty.
+The product is FINITE. Expanding it assigns each prime either absent or
+to one bin. Its sign is mu(m), each prime occurs at most once, its product
+weight is m^(-gamma), and its leg weights are h^(-z1)k^(-z2). The full row
+selects exactly occupied mask I. Thus it compiles the COMPLETE squarefree
+product restriction, including coprimality and prime-absent projections;
+no independence approximation or growing-cutoff local filtering is used.
+Any valid prefix pair h,k<=N has all its primes in P_N. Terms outside
+the prefix are retained in the finite polynomial and removed by the exact
+Perron indicators below, rather than treated as arbitrary coefficient zeros.
+
+For c>0 and integer h>=1, use n+1/2 endpoints:
+  1_(h<=n)=lim_(T->infinity)(1/(2pi i))
+                *integral_(c-iT)^(c+iT)(n+1/2)^z*h^(-z)*dz/z.  (6.1)
+The ratio (n+1/2)/h is never one, so there is no half-weight endpoint.
+This is the elementary Perron step identity, obtained by closing the
+contour left or right; only its pole at zero contributes. The finite Euler
+expansion permits the ordinary limits term by term. With
+  D_X(z1,z2)=sum_(X<=n<2X)(n+1/2)^(z1+z2)/(z1*z2),
+the exact weighted squarefree projection is
+  S_gamma(N^2)=beta^2*X^(-2)/(2pi i)^2
+             *integral_(Re z1=c) integral_(Re z2=c)
+                        D_X(z1,z2)*Z_N(z1,z2;gamma) dz2 dz1.   (6.2)
+These full-contour integrals mean the ordinary separate truncated Perron
+limits (or their simultaneous limit in this finite expansion), NOT an
+assertion of absolute convergence uniformly in N. They equal the finite
+signed sum. No estimate of the full high-frequency integral is assumed.
+
+Now set gamma=1/6, c=1/log N, and take the bounded rectangle
+  |Im z1|,|Im z2|<=c/4.
+All individual A_i modes (2.1) remain diagonal. Their factor is
+  Lambda_J=1-q^(-gamma-c)
+        *[R_J(q)*exp(-i Im(z1)log q)+S_J(q)*exp(-i Im(z2)log q)].
+For every q<=N, (4.2) and (5.2) give |Lambda_J|<=1. Also
+  Z_N=sum_(J subset I)(-1)^(4-|J|)*prod_q Lambda_J,
+so |Z_N|<=16 on the ENTIRE rectangle. This includes every occupancy state
+and the arithmetic absent/present choices of the whole finite product.
+
+Its integral is absolutely bounded. Indeed
+  |D_X|<=X*(2X)^(2c)/c^2,
+the rectangle area is c^2/4, and the Mellin factor is 1/(4pi^2). Therefore
+  |S_gamma,low(X)|<=beta^2*(2X)^(2c)/(pi^2*X)
+                   <=beta^2*exp(4)/(pi^2*X).                  (6.3)
+For X>=2, N>=3 and 2X<=N^2, giving (2X)^(2/log N)<=exp(4). Every
+endpoint/unit convention has been retained. X=1 is a finite head, not a
+singular c=1/log1 construction. A general admitted delta rectangle yields
+16*delta^2*beta^2*exp(4)/(pi^2*X) by the same proof.
+
+This is a proved cofinal bound for an ACTUAL arithmetic prefix component.
+Its scope is the compiled full squarefree-product projection (1.1), not
+the original ordered smooth/common kernel on a moving cutoff. Its low/high
+split is a complex integral decomposition, not two positive energies.
+The high piece is defined exactly as the full Perron limit minus this
+bounded rectangle. No cancellation or norm assertion for that complement
+has been proved. Repeated valuations, gcd overlap and the pole/main cross
+were deliberately not compiled into this squarefree product; they remain
+full complementary obligations in the original centered energy.
+
+7. Concrete missing mechanism and recovery conditions
+------------------------------------------------------
+The analytical progress is more than a negative coefficient: some stable
+rows are paid, scalar all-mode stabilization is exact at the sixth root,
+and (6.3) supplies an independently justified actual low-contour component.
+But the original target requires three additional kinds of control:
+  * the high-contour / actual projected-kernel correlation in (6.2), with
+    uniform PRODUCT CUTOFFS if the weight is to be undone by (4.3);
+  * all prefix exits, changed smooth/q-free masks and lifted support if a
+    local prime transfer is used instead of the full finite Euler compilation;
+  * repeated valuations, nonsquarefree/gcd pairs and the complete center,
+    including its smooth/pole covariance rather than separate pole payment.
+For product cutoff m<=T, a third Perron indicator adds
+(floor(T)+1/2)^w/w and multiplies every prime-present factor by q^(-w).
+The half-integer endpoint again avoids a half-weight at integer m. This
+is an exact way to expose the
+uniformity missing in (4.3); it also adds its entire contour and projection
+recovery. A stable endpoint scalar cannot pay that third contour automatically.
+
+A potential next source lemma can be stated sharply: prove the product-local
+weighted cancellation described after (4.3), for the complete occupancy
+projection and its exact kernels, while coupling its high-contour forcing
+and complementary centers to a closed smaller-scale state system. This
+asks for a specific family of weighted actual-product correlations, not
+for the original total square under a new scalar name. It is stronger
+than a single auxiliary endpoint and remains unproved. The adaptive family
+has subpower bookkeeping but still needs its full kernel estimates; the
+fixed sixth-root family has actual low-phase padding but a fixed-power
+Abel recovery cost unless that extra product-local gain is established.
+
+Final status
+------------
+Proved: complete 16-state transfer and spectrum; scoped stable-only recovery
+obstructions; independent envelopes for empty/one-bin/same-leg rows; positive
+vv total-variation growth; exact signed Abel recovery conditions; sixth-root
+scalar and small-phase bounds; and the full finite Euler/Perron derivation
+of the <=beta^2*exp(4)/(pi^2*X) actual low-contour component. Unproved:
+uniform high-contour/product-cutoff recovery, complete domain and center
+compensation, the all-scale signed target, and RH. Only this new prose file
+was written. No arithmetic or development invocation was performed.

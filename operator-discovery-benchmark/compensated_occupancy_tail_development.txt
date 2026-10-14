@@ -1,0 +1,67 @@
+DEVELOPMENT LEAD: DEGREEWISE ABSOLUTE OCCUPANCY TAILS
+7 October 2026. Guided proof-backend development; not counted as a certificate.
+
+The four retained leads in family-gap-run-001 have unclosed omega=4 regions.
+The recorded resource cap cannot construct their five-variable polynomials.
+An exploratory exact-rational probe suggests a different uniform tail method.
+Its results are in compensated-shift-results/occupancy-tail-development-probe.json.
+No candidate status, published bound or verified-new count changes from this
+probe. A fresh frozen experiment and independent verification are required.
+
+Draft argument to check:
+
+For m variables and integer j>=m, let
+ A_(j,m)(q)=sum_(a_i>=1,sum a_i=j) j!/prod a_i! * prod q_i^(a_i).
+This is the positive occupancy polynomial already used by the Jordan-series
+proof. At sum q_i<=1 its maximum should be at q_i=1/m. A direct argument
+groups terms by the total k hitting a chosen pair of variables. The pair's
+factor is (q_1+q_2)^k-q_1^k-q_2^k for k>=2, times nonnegative factors from
+the remaining variables. Convexity of x^k says averaging q_1,q_2 cannot
+decrease this factor. Repeated pair averaging and continuity yield the
+uniform maximum, including boundary points. Homogeneity moves sum q to one.
+
+At equal shares the value is the exact rational number
+ A_(j,m)=sum_(r=0..m)(-1)^r binomial(m,r)*((m-r)/m)^j.
+Its interpretation as the probability that j draws visit all m equally
+likely bins gives monotonicity in m: merge two bins, then apply the equal-
+share maximum to the resulting m-1 probabilities. Visiting every original
+bin implies visiting every merged bin. This supplies an infinite comparison,
+not testing only finitely many m or j.
+
+For signed shifts define c_j=sum_i w_i*v_i*(1-v_i)^(j-1). The full stripped
+coefficient has the same Jordan multiplier degree by degree. Its absolute
+value should therefore satisfy
+ |B(n)| <= C_m/g, m=omega(n)>=2, g=gcd(prime exponents),
+ C_m=sum_(j>=m)|c_j|*A_(j,m).
+The series converges absolutely; each A_(j,m)<=1, and the c_j are finite sums
+of geometric sequences with ratios strictly below one. Positivity and the
+merge argument imply C_m is nonincreasing in m. The one-prime tail uses the
+same series starting at j=2 because the degree-one Jordan multiplier vanishes.
+
+For the two opposite-weight shifts 0<u<v<1, c_1>0 and c_j is eventually
+negative. Its sign changes at most once: compare the increasing rational
+power ((1-u)/(1-v))^(j-1) with w_v*v/(|w_u|*u). Once a strict negative
+degree J is certified, every later coefficient is negative. Equalities at
+one degree contribute zero and do not cause an additional sign change.
+Thus the infinite sum is an exact rational closed form:
+ C_m = -sum_i w_i*U_(v_i)(m)
+       +2*sum_(j=m..J-1)c_j*A_(j,m).
+The one-prime version subtracts the omitted degree-one coefficient.
+U_v(m) is the previously proved atomic equal-share norm. A bounded search
+for J must retain a lead if its budget is exhausted, rather than assume a
+sign change was found.
+
+Exploratory m=4 values for the four retained parameter pairs:
+ 1/5,1/3: 28301/202500 < proposed 7/24
+ 1/3,3/7: 30073/370440 < proposed 3/20
+ 1/3,1/2: 779/11760 < proposed 5/42
+ 3/7,1/2: 121/2380 < proposed 22/255
+
+If the draft maximum and monotonicity arguments pass independent checking,
+these exact values may close every omega>=4 region without large simplex
+polynomials. They do not by themselves prove the four full global bounds:
+the complete lower-omega/exponent partitions and their certificates still
+need independent audit under the new protocol. Test every recorded candidate
+by the same rule, preserve the previous run, and declare this method's guided
+origin. The same mathematical scope and novelty/prime-distribution/RH gates
+continue to apply.

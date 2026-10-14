@@ -1,0 +1,73 @@
+JOINT RECIPROCAL CORRELATION AND EXACT DIVISOR PRECONDITIONER DISCOVERY
+
+The input is candidate10_centered_reciprocal_obligation.json, byte-identical
+to the completed centered-product pilot's analytical followup. The primary
+target is its complete joined high-product off-diagonal upper bound, up to
+the already paid head, diagonal and center. Independent sharp-band control
+is not required. All previous snapshots and numerical results stay fixed.
+
+The new structural grammar contains the identity and 36 Euler powers
+zeta(s+v)^(-r), v in {1/6,1/3,1/2,2/3,5/6,1},
+r in {-2,-1,-1/2,1/2,1,2}. Exact rational source-factor ASTs are generated.
+Both forward and inverse costs are charged. Shifts above 1/2 have a bounded
+critical prefix norm cost; the boundary has polylog cost; shifts below it
+retain their unpaid power cost. They are not declared impossible.
+
+Selection is algebraic and precedes all fresh source generation: minimize
+total positive factor order, largest number of positive factors in one
+term, nonintegrality, numerator factor order, absolute power, then ordinal.
+This is an explicit language/ranking choice, not a claim of bias-free or
+exhaustive discovery. There is no numerical fitting or validation-based
+reselection. All 37 programs, including unpaid ones, are archived.
+
+For the selected AST, compile its complete simple-pole local recurrence
+and all e>=2 valuation tails using exact polynomial operations. An
+independent checker rebuilds all ASTs, recovery records and the selection,
+then expands every tail factorization and its first-valuation Bernstein
+certificate. The general geometric tail and elementary divisor bounds
+give 16 ordered shared-square sector statements. These refer to unscaled
+multiplicative modes: absolute products of the actual beta/-beta/-R_u
+coefficients must multiply their envelopes before a source bound is made.
+Union overlaps are counted once. The unsuppressed common mode remains open.
+
+Numerical evaluation uses all coefficients through H=131071. Calibration
+scales are 1,16,64,1024; fresh scales are 2048,4096,8192,16384,32768,65536.
+One producer at 160-bit Arb precision and one independent checker at192
+bits run concurrently. Complete original source, smooth center, transformed
+kernel and inverse, four multiplicative modes, paid correction, core and
+their prefixes are archived as 25 full vectors. Every scalar enclosure is
+finite, tight and independently compared, including the unit and every
+prime power. The checker also inverts the complete transformation.
+
+The producer evaluates O via a convolution head and diagonal prefix tables.
+The checker uses reciprocal intervals and the exact upper-triangle identity,
+never energy-minus-head-minus-diagonal. All arithmetic/center and four-mode
+cross terms are preserved. The transformed core/correction energy identity
+and full 4x4 Gram matrix are compared. Truncated critical recovery norms
+are finite consistency checks for separately proved bounds, not estimates
+uniform in the source horizon. The paid eta prefix cannot be dropped at
+independent sharp cutoffs. No smaller numerical constant counts as a new
+exponent, induction gap, or complete signed theorem.
+
+One owned development suite per module, then one combined frozen suite.
+Only affected/new tests follow a real development correction. Receipts
+include failures. The run is single-attempt and writes a start marker;
+unchanged arithmetic is not rerun to bypass caps. Code/input snapshots use
+direct bytes, no hashes. gzip is solely disk compression, with one vector
+per JSON line to keep comparison memory small.
+
+Work limits: producer450m, checker650m, main150m weighted primitive work;
+2m administrative reserve plus all development/frozen tests; total1.3b.
+Each worker has3600seconds, main7200seconds. Each process is limited to4GiB
+address space, with two workers plus parent (<=12GiB, within authorized16GiB).
+Conservative scalar-cell proxies and observed RSS are reported. Root/tail
+oracles and serialization/comparison costs are charged; exact measured wall
+time and RSS are also reported. The complexity reduction is O(H log H)
+work and O(H) storage for the full joined observable; no H^2 pair table.
+
+The output records exact recoverable simplifications and proved partial
+sector bounds, all finite observations, and an open complete core bound.
+Next constructions may use exact valuation defects, all-prime logarithmic
+recurrences, or mixed kernel commutators from the two _004 analytical
+reviews. A renamed target, RH-equivalent companion or current-scale boundary
+cannot become a paid lemma. The whole signed bound and RH remain OPEN.

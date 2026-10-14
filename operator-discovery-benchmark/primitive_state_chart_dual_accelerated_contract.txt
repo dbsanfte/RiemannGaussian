@@ -1,0 +1,136 @@
+Prospective033: accelerated sparse feasibility proposal, implementation contract
+
+Prior032 and all earlier published inputs are immutable. No actual model,
+scaling, scores, iterates or exact research calculation before freeze.
+No hashes, source rebuild, old geometry assembly or reduction replay.
+Producer owns primitive_state_chart_dual_accelerated.py and its tests;
+checker owns check_primitive_state_chart_dual_accelerated.py and its tests;
+reviewer owns primitive_state_chart_dual_accelerated_soundness_v1.txt.
+Root owns this contract, protocol, workflow, resource scope and publication.
+All450m work:40m preparation,40m model,190m numerical,90m restoration,90m
+sole audit. Cumulative development and frozen tests share25m in preparation.
+Each owned module prints exactly SYNTHETIC_WORK module=<module> operations=N;
+count all producer/checker arithmetic including failures. Run each owned
+development suite once when ready, report total, then stop edits. Target
+each development invocation<=5m. Root runs the combined suite once frozen.
+
+Producer API
+  build_model(reduction,budget): may alias032 build_model unchanged.
+  numerical_work_model(m,n,nnz) -> dict:
+    setup=8*nnz+32*(m+n)+65536
+    gradient=8*nnz+32*(m+n)+512
+    trial=16*nnz+64*(m+n)+1024
+    commit=32*(m+n)+512
+    final=12*nnz+64*(m+n)+2048
+    iteration_reserve=gradient+32*trial+commit
+    minimum_attempt=setup+iteration_reserve+final
+    max_iterations=10000, max_backtracking_trials=32.
+    Accept1<=m<=443,1<=n<=851,n<=nnz<=m*n; dimensions only.
+  accelerated_proposal(model,*,deadline,max_operations=190000000,
+                       resident_cells=0) -> numerical record
+  search(chart,rays,geometry,reduction,*,deadline,checkpoint=None) -> outcome.
+
+Sparse model and exact stages are032 unchanged. Use302x687 saved031 rows,
+original retained ids, old029 positive exact infinity scaling and finite
+nonunderflowing float conversion. No warm start from032. Retain all source
+exports/chart/rays/reduction/model arrays in the resident-cell accounting.
+
+Numerical algorithm
+Minimize f(x)=half||A*x-b||^2 with x>=0 and no penalty. Start x=y=0,t=1.
+Set L0=max_j(math.hypot(*column_j)^2), finite positive, and require finite
+nonzero target norm. This is a starting step estimate, not an asserted
+global Lipschitz constant. Fresh sparse products use math.fsum per row or
+column; temporary product buckets require nnz+m cells. Guard all intermediate
+products, sums, norms, squares, ratios, candidate coordinates and momentum
+against nonfinite values BEFORE projection or other clipping.
+
+Before starting a step, require remaining allowance>=iteration_reserve+final.
+If this fails at an accepted boundary, stop normally with work_boundary.
+If max_operations<minimum_attempt, do no setup/iterations and return an
+incomplete unattempted proposal. Reserve the final diagnostic at every guard.
+Before each block charge its whole declared proxy, including partial work
+on error. Additional deadline/live checks use charge(0), no hidden cell+1.
+
+One gradient block computes fresh r_y=A*y-b and g=A^T*r_y. Up to32 trial
+blocks: z=max(0,y-g/L),d=z-y; compute fresh A*d and r_z=A*z-b separately.
+Accept iff ||A*d||^2<=L*||d||^2, with finite checks including RHS product.
+Otherwise double L and retry at same y and gradient. Carry the accepted L
+to the next step. A32-trial rejection, nonfinite result, deadline or resource
+failure interrupts the trajectory: completeFalse, selectedNone.
+
+One commit block computes accepted residual/support, then
+  tnew=(1+sqrt(1+4*t*t))/2
+  ynew=z+((t-1)/tnew)*(z-x).
+Every64th accepted iteration instead resets ynew=z,tnew=1. x=z is always
+nonnegative; momentum y is unrestricted. Compute all accepted state and
+metrics before appending the checkpoint, so a partial commit cannot be
+misreported complete. Increment iteration after a complete commit.
+After each accepted checkpoint, stop if its reported residual norm is zero
+(zero_reported_residual), or if iteration=10000(iteration_limit); otherwise
+continue to the next boundary guard. No tolerance/convergence stop is used.
+
+Each accepted checkpoint stores iteration(1-based),backtracking_trials,
+lipschitz,residual_norm,relative_residual,support_size,momentum_restarted,
+cumulative_operations (after its commit, before final). Keep at most10000.
+Select min(relative_residual,support_size,iteration) over1..443 positive
+coordinates, saving the FULL vector and every strictlypositive index.
+No coefficient threshold or support trimming is permitted.
+
+On normal termination compute one charged final diagnostic at the LAST
+accepted x: fresh r, g=A^T*r, projected p=max(0,x-g/L), norm=L*||x-p||.
+Store iteration,lipschitz,residual_norm,relative_residual,projected_gradient_norm.
+It need not describe the selected earlier checkpoint. It is only a floating
+stationarity diagnostic. Only after it succeeds is complete=True. None of
+the line tests, stopping rules, zero norms or stationarity values is a proof.
+
+Numerical schema primitive-state-chart-dual-accelerated-proposal-v1:
+ complete,attempted:bool; max_operations; rows,columns,nonzeros;
+ work_model (all fields above); initial_lipschitz orNone; checkpoints:list;
+ selected:{iteration,scaled_vector,support,relative_residual} orNone;
+ setup_charged,final_charged:bool;
+ gradient_blocks,trial_blocks,commit_blocks:nonnegativeint;
+ stop_reason:work_boundary/iteration_limit/zero_reported_residual orNone;
+ final_diagnostic:dictorNone; counts:Budget.counts(); elapsed_seconds;
+ reason,resource_failure,error_type on interruption; globalflagsfalse.
+ Operations must equal setupbool*setup+gradient_blocks*gradient+
+ trial_blocks*trial+commit_blocks*commit+finalbool*final exactly.
+ Block counters record charged partial work, even on deadline exceptions.
+ Incomplete proposals ALWAYS clear selected; no exact restoration follows.
+
+Outcome schema primitive-state-chart-dual-accelerated-search-v1:
+ status CERTIFICATE_PROPOSED/NONCERTIFIED/UNKNOWN, route accelerated_gradient;
+ numerical,model_stats,certificate,restoration_stats if attempted;
+ stage_counts only started model/numerical/restoration; policy,limits,flags.
+ Incomplete numerical=>UNKNOWN. Complete ineligible=>NONCERTIFIED. Eligible
+ completed proposal triggers exactly one old029 exact_support_solve on all
+ original030 responses,target{1224:-1}, original851 support, free valueszero;
+ then full old029 certify. ValueError restoration rejection=>NONCERTIFIED;
+ resource incomplete=>UNKNOWN. No earlier input arithmetic is repeated.
+
+Independent core API same032 signatures, new accelerated schemas.
+ verify_numerical(numerical,rows,columns,nnz,budget) may be exposed.
+ Reuse032 _source and full exact admission logic with SAME90m shared Budget.
+ Independently derive work-model arithmetic, block counters and boundary
+ reservations, ordered checkpoints and reported ranking; do not call producer
+ numerical methods, replay scores or promote them. Bind max_operations<=190m
+ for tiny helpers; root binds actual run==190m.
+ Complete: gradient_blocks=commit_blocks=len(checkpoints)>=1, trial_blocks
+ equals sum trials, setup and final charged, final diagnostic at last index,
+ exact cumulative_operations; each start has room for32trials+commit+final.
+ Check L starts at initialL and doubles once per rejected trial, no decreases;
+ each restart flag exactly iteration%64==0. Validate finite nonnegative
+ diagnostics, full selectedvector and every strictlypositive index.
+ Prior checkpoints must have positive residual if zero stops are declared.
+ work_boundary requires operations+iteration_reserve>max_operations after
+ final charging; iteration_limit requires10000; zero stop requires lastnorm0.
+ Incomplete counters may include only one interrupted gradient/trial/commit
+ after the checkpoint prefix, or one final diagnostic; never accept a
+ selected support. Keep genuine resource-failure metadata for incomplete
+ live-cell over-cap counts. No unsupported theorem flags.
+
+All exact certificate fields and scope match032: all851 alpha>=0,782lambda,
+all1224 coordinates A^Tlambda=Galpha,pairing=-1, original strict support lift,
+free reconstruction positionszero; one90m audit, no nested fresh budget.
+No certificate=>verifiedTrue,completeFalse,certificate_verifiedFalse,
+status unchanged, scores/trajectory_verifiedFalse. A certificate excludes
+only the augmented finite proof template, not an RH bound or every grammar.

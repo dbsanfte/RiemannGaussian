@@ -1,0 +1,35 @@
+{
+  "stage": "080 symbolic cover producer and workflow",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": "../.venv/bin/python -B -m unittest test_mobius_symbolic_cover_080 -v",
+      "status": "FAIL",
+      "elapsed_seconds": 0.7102470639511012,
+      "tests_run": 6,
+      "output": "test_exact_log_promotion_complement_and_scope (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\ntest_folded_intervals_bind_both_arithmetic_endpoints_and_actual_cells (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\ntest_quadratic_vertex_fractional_calibration_and_prospective_resources (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\ntest_search_discovers_synthetic_signed_pair_and_exposes_failure (test_mobius_symbolic_cover_080.SymbolicCover) ... FAIL\ntest_symbolic_structural_obstruction_does_not_ignore_other_channels (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\ntest_validation_prime_entry_boundaries_and_known_exclusions (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\n\n======================================================================\nFAIL: test_search_discovers_synthetic_signed_pair_and_exposes_failure (test_mobius_symbolic_cover_080.SymbolicCover)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_mobius_symbolic_cover_080.py\", line 34, in test_search_discovers_synthetic_signed_pair_and_exposes_failure\n    self.assertTrue(any(a[:3] == [['1', '0'], ['1', '0'], ['0', '0']] for a in best['rays']))\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 6 tests in 0.193s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "attempt": 2,
+      "command": "../.venv/bin/python -B -m unittest test_mobius_symbolic_cover_080.SymbolicCover.test_search_discovers_synthetic_signed_pair_and_exposes_failure -v",
+      "status": "PASS",
+      "tests_run": 1,
+      "elapsed_seconds": 0.5562388490070589,
+      "output": "test_search_discovers_synthetic_signed_pair_and_exposes_failure (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.080s\n\nOK\n"
+    },
+    {
+      "attempt": 3,
+      "command": "../.venv/bin/python -B -m unittest test_mobius_symbolic_cover_080.SymbolicCover.test_runner_independent_source_and_search_roundtrip test_mobius_symbolic_cover_080.SymbolicCover.test_runner_watchdog_covers_serial_leaf_checks -v",
+      "status": "PASS",
+      "tests_run": 2,
+      "elapsed_seconds": 0.8452925750170834,
+      "output": "test_runner_independent_source_and_search_roundtrip (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\ntest_runner_watchdog_covers_serial_leaf_checks (test_mobius_symbolic_cover_080.SymbolicCover) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.391s\n\nOK\n"
+    }
+  ],
+  "status": "PASS",
+  "distinct_tests": 8,
+  "test_executions": 9,
+  "corrections": [
+    "Synthetic discovery test initially demanded a particular third coefficient; the winning frame correctly retains equal signed-pair coefficients and splits the bounded coordinate. Test now asserts cancellation and rejection of broken continuation without prescribing that split."
+  ]
+}

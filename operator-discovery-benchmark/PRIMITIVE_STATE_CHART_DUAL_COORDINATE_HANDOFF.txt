@@ -1,0 +1,105 @@
+Publication032: sparse coordinate search for a finite-cone separator
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-coordinate-001
+
+Outcome
+NONCERTIFIED. The numerical trajectory completed all17 prescribed penalty
+phases and selected236 positive weights. The sole exact reconstruction
+attempt returned inconsistent exact native-support equations. No exact
+separator was proposed. The independent audit verified the saved workflow,
+source dimensions, support lift and work accounting; it did not replay the
+numerical scores or certify the unsuccessful reconstruction as an exclusion
+theorem. No finite-cone infeasibility, primal feasibility, signed arithmetic
+bound, universal identity or RH result was obtained.
+
+Method and observed numerical result
+The licensed031 system has302 equations,687 nonnegative unknowns and7550
+nonzero entries. Exact positive row/column infinity scaling precedes guarded
+binary64 conversion. Sparse cyclic coordinate descent minimizes squared
+residual plus a nonnegative unit L1 penalty. The fixed17-stage schedule
+starts at half the maximum nonnegative column-target correlation, decreases
+through powers2^-1,2^-3,...,2^-31, then reaches zero. Warm starts preserve
+the vector between phases. Every16 sweeps and each phase end use a fresh
+math.fsum residual. Every strictlypositive selected coordinate is retained.
+
+The dimension/sparsity reservation allowed126 sweeps per phase. All2142
+sweeps completed, with1,471,554 coordinate visits and5,312,617 changed
+residual-entry updates. The136 charged refreshes include119 periodic and17
+phase-end refreshes. No phase stopped early. The producer's penalty reference
+was0.06490005903101385. Reported relative residuals decreased across all17
+phase checkpoints, from0.9948162692975572 to0.5298381360646995. The selected
+final phase has absolute residual0.03675944359138143 and236 positive weights.
+These residuals are approximate producer diagnostics and remain far from an
+exact identity. They are not independently verified lower bounds or evidence
+that the complete selected-generator problem has no solution.
+
+The selected support is lifted through retained031 column ids and030 ray
+representatives into the original851-ray family. One exact solve used all
+original030 response equations against target{1224:-1}, with free support
+coordinates setzero. It did not yield a solution; no full782-row multiplier
+and1224-coordinate Farkas identity was available to check. The failure of
+this one support does not exclude different supports or PSD ray directions
+outside the selected851 generators.
+
+Resources and tests
+Numerical execution took7.130194s. Producer wall8.628559s/CPU8.626779s,
+peakRSS66196KiB, one thread; enclosing worker stage8.713634s. Memory and
+wall-time limits did not bind. The search exhausted its prescribed sweep
+schedule, not the available machine memory.
+
+The numerical reservation was189,756,408 operations:setup157,584,
+sweep83,052, refresh76,480. Charged numerical work was188,456,248; the
+reservation conservatively used ceil(S/16) periodic refresh slots per phase.
+These are declared sparse-work proxies, not hardware instruction counts.
+Model preparation107,685 operations/344442 peak live cells/540bits;
+numerical340078 peak cells; restoration203,735 operations/545937cells/497bits.
+The independent check consumed17,537 operations/166354 peak live cells,
+0.159561s wall/0.159482s CPU, process peakRSS496896KiB. Its input-I/O meter
+charged230,108 units on7,363,007bytes. Mathematical work before preparation
+totaled188,785,205, within the shared450m complete-job reservation.
+
+The allocation remained40m preparation,40m model,190m numerical,90m exact
+restoration and90m sole independent audit. Worker and audit each had6GiB,
+one thread and3600 cooperative seconds, producer external7200seconds.
+Rational result/temporary bounds4096/8193bits and6m live cells were retained.
+Actual proposal18981bytes, review3171bytes; source snapshot25files/315529bytes.
+No hashes were generated, no old reduction was replayed, and no actual
+research retry or second independent audit occurred.
+
+The frozen suite passed32 tests in2.354s:12 producer,9 independent-core,
+11 workflow. Development arithmetic consumed2,019,371 metered operations;
+the frozen combined suite consumed2,019,373. Including the1m root/scaffolding
+reserve, cumulative synthetic charge was5,038,744 within the25m preparation
+subreserve. The fixed190m actual numerical allocation is bound separately
+from tiny generic-helper budgets. Tests exercise sparse updates, stable
+refreshes, incomplete trajectories, strict support, exact identity tampering,
+shared audit metering and prevention of numerical-to-theorem promotion.
+Sol6.1 agents handled the substantial parallel producer, checker and
+mathematical-review tasks. The final review found no mathematical blocker.
+
+Next research action
+Do not restart032 or extend its trajectory after seeing the result. Sparse
+updates provide substantially more explicit proposal steps than the old
+dense per-pivot reservation, but this first coordinate schedule has not
+approached an exact representation. Repeating the same method with only a
+larger memory or wall-time limit would not address its numerical behavior.
+
+A new experiment should test a faster sparse method for the same feasibility
+residual, with its initialization, step policy, work limits and support rule
+declared before execution. A useful candidate is accelerated projected
+gradient with a dimension/sparsity-metered line search, followed by the same
+single exact support solve. It should report the unpenalized residual and
+stationarity diagnostics, so a slow trajectory can be distinguished from a
+numerically stationary positive residual without treating either as proof.
+Support selection must not silently discard small positive weights; a
+separate declared support-reduction method would need explicit accounting.
+
+The851 fixed generators are only a portion of the PSD dual cone. Failure to
+find a separator here leaves additional rank-one directions open. Dynamic
+ray generation from primal/dual residual information is another substantive
+method change, not grounds for a claim about every operator grammar. An
+exact separator, if eventually found, would exclude this augmented finite
+proof template; it would not supply the desired signed arithmetic estimate.
+The ultimate task still requires a valid operator identity, uniform scalar
+and initial-storage bounds, a cofinal parameter family and a bridge to
+ordinary zeta. These remain unresolved.

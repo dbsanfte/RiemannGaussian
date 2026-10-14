@@ -1,0 +1,81 @@
+INDEPENDENT FINITE DIVISOR CORRECTION CHECKER070
+
+Interface and independence
+
+check_mobius_divisor_correction_070.py exports verify_correction(cert,meter=None),
+Meter(limit=300000000000,seconds=7200), SCHEMA and GRID=2^20. The supplied
+meter exposes operations and charge/add. Verification returns a verdict or
+raises ValueError. No producer, optimizer, NumPy, SciPy, old checker, historical
+study or scientific070 output was imported or consulted. Only the supplied069
+handoff and the agreed070 certificate specification informed this checker.
+
+The checker accepts an arbitrary complete canonical sparse rational polynomial
+P in shared prefix variables, with repeats retained, degree2..8, U1..131072 and
+positive denominator<=1000000. It does not bind P to an admitted069 source;
+the external root runner must establish that binding separately. In particular,
+original_source_binding_proved is always False in its own verdict.
+
+Exact obligations
+
+Each column is independently reconstructed by enumerating divisors of n and
+expanding sum_(d|n)(M_d-M_(d-1)), with M0=0 and M1=1. Its constant is1 for odd n
+and0 for even n. Multiplier monomials are retained with shared/repeated indices.
+Every residual coefficient must equal GRID*P+sum lambda_num*column. All source
+and column supports enter the dual universe, including zero-lambda columns and
+monomials that cancel out of the residual. Sparse zero terms, duplicates,
+unsorted monomials, noncanonical rationals and unknown schema keys are rejected.
+
+The primal price is the exact unconditional weighted L1 bound using |M(s)|<=s.
+Each feasible dual has |z_num|<=GRID*prod(indices); boxed lower and gap are checked
+from their exact formulas. The checker neither demands optimizer convergence
+nor trusts solver/search metadata. Selection is exactly the smallest tuple
+(unconditional price,nonzero multiplier count,round index), with baseline index-1.
+It checks the selected polynomial, used constraints, the full finite-system flag,
+constant-only flag and the fake scalar-prefix diagnostic independently.
+
+Every supplied conditional coefficient retains all C^d powers. Integer powers
+and integer b-th root comparison produce ceil(GRID*prod(indices)^(a/b)) exactly;
+no floating arithmetic participates in the proof. Price sigma may be any distinct
+canonical rational in[0,1] within the32-request and power/work capacities.
+An empty price request is accepted. The fake diagnostic is globally non-Mobius;
+for T<=2 it can still agree with actual Mobius on the queried finite domain.
+
+Only the final evaluator independently derives ordinary Mobius by a linear sieve.
+It evaluates P and selected Q exactly and requires equality and |P(M)|<=selected
+unconditional price. Each C1 prefix premise is checked on all1..T; each satisfied
+finite premise must enclose the same actual value with the corresponding price.
+Those finite checks pay no all-scale prefix bound, rank reduction, uniform head
+estimate or RH. All proof/access claim flags named by the schema remain False.
+Optional T>U is explicitly a larger arithmetic dependency and is not a smaller
+rank result. A full finite triangular system or target-valued constant is not a
+uniform cost proof.
+
+Resources
+
+Explicit meter charges cover arithmetic, expansion, sparse evaluation, metadata,
+sieve work and exact integer-power comparisons. Their units are conservative
+algorithmic proxies, not CPU instructions. Every charge enforces300bn default
+operations and7200s elapsed time. Source/round/union lists have a2m-term structural
+cap; conservative simultaneous object/temporary storage estimates enforce2GiB
+prospective checker capacity. Structurally valid very large inputs may be refused
+by these capacity limits. Integer input coefficients have4096-bit limits, residual
+and scaled lambda limits include the grid and256-column summation allowance,
+and exact price power intermediates have100000-bit limits. Metadata is bounded
+JSON data with depth16,10000 nodes and100000 text characters, and no proof role.
+The external runner owns aggregate16GiB accounting and source-preservation checks.
+
+Synthetic validation and preservation
+
+The synthetic tests construct independent certificates from symbolic divisor
+prefix differences and independently rounded integer powers. They exercise
+arbitrary signed mixed polynomials, repeated indices, squareful/even/odd n,
+fractional multipliers/prices, zero/cancelled support dual entries, exact ties,
+full triangular constraints, unit/zero cases, T>U, all proof flags, fake diagnostics,
+metadata/work/time/power/storage caps and malformed certificates.
+
+mobius_divisor_correction_checker_070_development.json preserves every test
+attempt, full test names, returncodes and charged operations. The first attempt
+had one incorrect expected synthetic polynomial value: M2=0 makes all nonconstant
+terms vanish, so7/3 was correct and1 was an erroneous test expectation. That
+failure and its correction remain visible. No hashes or historical tests/reruns
+were produced. No scientific070 result was inspected by this checker task.

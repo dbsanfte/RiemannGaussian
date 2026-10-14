@@ -1,0 +1,152 @@
+{
+  "RH_proved": false,
+  "all_mode_phase_pairs": [
+    [
+      "1/6",
+      "1/4"
+    ],
+    [
+      "1/6",
+      "1/8"
+    ],
+    [
+      "1/3",
+      "1/2"
+    ],
+    [
+      "1/3",
+      "1/4"
+    ],
+    [
+      "1/3",
+      "1/8"
+    ],
+    [
+      "1/2",
+      "1"
+    ],
+    [
+      "1/2",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "1/4"
+    ],
+    [
+      "1/2",
+      "1/8"
+    ],
+    [
+      "2/3",
+      "1"
+    ],
+    [
+      "2/3",
+      "1/2"
+    ],
+    [
+      "2/3",
+      "1/4"
+    ],
+    [
+      "2/3",
+      "1/8"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1/2"
+    ],
+    [
+      "1",
+      "1/4"
+    ],
+    [
+      "1",
+      "1/8"
+    ]
+  ],
+  "all_mode_weights": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "1"
+  ],
+  "audit_operations": 985463,
+  "bulk_certificates": 51,
+  "complete_kernel_fixture_checks": 1632,
+  "complete_occupancy_basis": true,
+  "discovered_modes": 16,
+  "eigenvalue_multiplicities": [
+    {
+      "modes": 1,
+      "u": "0",
+      "v": "0"
+    },
+    {
+      "modes": 2,
+      "u": "0",
+      "v": "1"
+    },
+    {
+      "modes": 1,
+      "u": "0",
+      "v": "2"
+    },
+    {
+      "modes": 2,
+      "u": "1",
+      "v": "0"
+    },
+    {
+      "modes": 4,
+      "u": "1",
+      "v": "1"
+    },
+    {
+      "modes": 2,
+      "u": "1",
+      "v": "2"
+    },
+    {
+      "modes": 1,
+      "u": "2",
+      "v": "0"
+    },
+    {
+      "modes": 2,
+      "u": "2",
+      "v": "1"
+    },
+    {
+      "modes": 1,
+      "u": "2",
+      "v": "2"
+    }
+  ],
+  "elapsed_seconds": 4.384875525021926,
+  "energy_contraction_proved": false,
+  "fractional_constructions": 54,
+  "full_coordinate_recovery_verified": true,
+  "new_actual_prime_distribution_estimate": false,
+  "new_actual_source_evaluations": 0,
+  "peak_cells": 318464,
+  "peak_rss_kib": 517060,
+  "phase_certificates": 185,
+  "phase_constructions": 216,
+  "preparation_operations": 309676,
+  "producer_operations": 2715961,
+  "proposed_eigenvalue_pairs": 625,
+  "rejected_eigenvalue_pairs": 616,
+  "scalar_stable_modes": 11,
+  "stable_span_obstruction_independently_verified": true,
+  "stable_target_recovery": false,
+  "status": "OCCUPANCY_IDENTITIES_AND_FRACTIONAL_BULK_CERTIFICATES_VERIFIED",
+  "total_operations": 4011100,
+  "whole_signed_bound_proved": false
+}

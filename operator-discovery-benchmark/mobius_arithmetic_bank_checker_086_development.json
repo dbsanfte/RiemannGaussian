@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "distinct_tests": 12,
+  "test_method_executions": 16,
+  "passed_executions": 14,
+  "retained_failed_executions": 2,
+  "retained_loader_errors": 1,
+  "latest_outcome": "PASS",
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 8,
+      "passed": 7,
+      "failed": 1,
+      "loader_errors": 0,
+      "note": "Fixture mutated an inactive zero divisor column; valid unchanged price.",
+      "output": "test_actual_calibration_compatible_divisor_and_prime_bank (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_all_directed_prime_pairs_unit_and_multiplicities (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_compatible_fake_boolean_lower_and_incompatible_rejection (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_complete_upper_binding_nonzero_factor_and_empty_domains (test_check_mobius_arithmetic_bank_086.Tests) ... FAIL\ntest_literal_mixed_partner_half_factor_signed_cross_and_bound (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_resources_preallocation_shapes_power_and_work (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_source_weights_fractional_cuts_complement_and_zero (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_typed_schema_indices_canonical_and_source_binding (test_check_mobius_arithmetic_bank_086.Tests) ... ok\n\n======================================================================\nFAIL: test_complete_upper_binding_nonzero_factor_and_empty_domains (test_check_mobius_arithmetic_bank_086.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_arithmetic_bank_086.py\", line 71, in test_complete_upper_binding_nonzero_factor_and_empty_domains\n    bad=copy.deepcopy(c);bad['partner_matrix'][0][0]=str(Q(bad['partner_matrix'][0][0])+1);self.assertEqual(A.verify_upper(p,53,o,b,bad)['status'],'INVALID')\nAssertionError: 'VERIFIED_FINITE_ARITHMETIC_BANK_MIXED_UPPER_BOUND' != 'INVALID'\n- VERIFIED_FINITE_ARITHMETIC_BANK_MIXED_UPPER_BOUND\n+ INVALID\n\n\n----------------------------------------------------------------------\nRan 8 tests in 0.054s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "attempt": 2,
+      "tests_run": 3,
+      "passed": 2,
+      "failed": 1,
+      "loader_errors": 0,
+      "note": "Changed prime cut happened to preserve exact price; valid collision.",
+      "output": "test_complete_upper_binding_nonzero_factor_and_empty_domains (test_check_mobius_arithmetic_bank_086.Tests) ... FAIL\ntest_actual_calibration_compatible_divisor_and_prime_bank (test_check_mobius_arithmetic_bank_086.Tests) ... ok\ntest_source_weights_fractional_cuts_complement_and_zero (test_check_mobius_arithmetic_bank_086.Tests) ... ok\n\n======================================================================\nFAIL: test_complete_upper_binding_nonzero_factor_and_empty_domains (test_check_mobius_arithmetic_bank_086.Tests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_mobius_arithmetic_bank_086.py\", line 73, in test_complete_upper_binding_nonzero_factor_and_empty_domains\n    bb=copy.deepcopy(b);bb[1]['cut']['scale']='1/53';self.assertEqual(A.verify_upper(p,53,o,bb,c)['status'],'INVALID')\nAssertionError: 'VERIFIED_FINITE_ARITHMETIC_BANK_MIXED_UPPER_BOUND' != 'INVALID'\n- VERIFIED_FINITE_ARITHMETIC_BANK_MIXED_UPPER_BOUND\n+ INVALID\n\n\n----------------------------------------------------------------------\nRan 3 tests in 0.026s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "attempt": 3,
+      "tests_run": 0,
+      "passed": 0,
+      "failed": 0,
+      "loader_errors": 1,
+      "note": "Incorrect unittest class selector; no test method executed.",
+      "output": "E\n======================================================================\nERROR: ArithmeticBankTests (unittest.loader._FailedTest)\n----------------------------------------------------------------------\nAttributeError: module 'test_check_mobius_arithmetic_bank_086' has no attribute 'ArithmeticBankTests'\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+    },
+    {
+      "attempt": 4,
+      "tests_run": 1,
+      "passed": 1,
+      "failed": 0,
+      "loader_errors": 0,
+      "note": "Affected upper-binding test passes after shape-tampering fixture correction.",
+      "output": ".\n----------------------------------------------------------------------\nRan 1 test in 0.015s\n\nOK\n"
+    },
+    {
+      "attempt": 5,
+      "tests_run": 3,
+      "passed": 3,
+      "failed": 0,
+      "loader_errors": 0,
+      "note": "New exact extension method plus two independent producer integration methods; only new tests executed.",
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.045s\n\nOK\n"
+    },
+    {
+      "attempt": 6,
+      "tests_run": 1,
+      "passed": 1,
+      "failed": 0,
+      "loader_errors": 0,
+      "note": "Only new prospective resource and selected-extension integration method executed after producer patch.",
+      "output": ".\n----------------------------------------------------------------------\nRan 1 test in 0.012s\n\nOK\n"
+    }
+  ],
+  "scientific_queries": false,
+  "producer_imports": false,
+  "checker_distinct_tests": 9,
+  "producer_integration_distinct_tests": 3,
+  "producer_resource_review": "PASS: pre-expansion grammar count, complete possible-cut/prefix catalog reserve before columns, score memory/work/bit guards, exact selected extension independently verified."
+}

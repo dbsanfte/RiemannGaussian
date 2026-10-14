@@ -1,0 +1,50 @@
+Independent signed annihilator checker085 scope
+
+Own NEW check_mobius_annihilator_085.py,test_check_mobius_annihilator_085.py,
+mobius_annihilator_checker_085_development.json and thisscope. Frozen084 and
+all earlier files unchanged. Six distinct tests,seven executions allpass,
+two attempts retained. No producer import, oldtest/science replay, hash or
+subagent. Tiny synthetic actualmu is used ONLY in tests to check identity.
+
+API verify_certificate(program,u,outer_certificate,bank,certificate,meter=None).
+Complete primeanchored residual required, same-program independently admitted
+wholeouter certificate. Residual is exactly frozen R=P^T(A-O-Gold)P; old
+outer O NEVER redefined by new identities. Negative original Gram retained.
+Bank<=16 exact descriptors scale,u_exponent,complement,unit_balance; scale
+canonicalpositive rational, exponent arbitrarycanonical signed rational,
+strict Booleans. K=min(N,floor(scale*u^exponent)), complemented toN-K if
+requested. Independent083 integerroot/power gates support arbitrary rational
+denominator,4096input/100000intermediatebits, no exponent whitelist.
+
+Each COMPLETE raw SFcoordinate g_K(n)=floor(K/n)-1[n=1] ifK>=1, zeroifK0.
+If balanced andN>=2 subtract max(K-1,0)/(N-1)*g_N(n). For ordinarymu,
+sum_mu g_K=0 by mu*1=delta, includingunit and allcofactors; nonsquarefree
+indices have mu0 and are harmless. Same holds balanced. Complete known
+unit/prime congruence gives V=P^Tg; actual effective y satisfies V^T y=0.
+For ANY exact symmetric signed S, y^T VSV^T y=0. PSD assumption on S is
+forbidden; negativezero squares and mixed signedcross terms are permitted.
+
+Exact certkeys squarefree_count,identity_matrix,factor_denominator,
+factor_numerators,price,row_prices. S full bank×bank canonicalrationals,
+EXACTsymmetry. Factor fullErows commonrank<=E, E<=512; integercanonical
+strings, numeratorbits<=128, positivepower2denominator<=2^48 as084.
+Exact FLINT computes Z=VSV^T and LL^T. Complete Booleanprice on R+Z+LL^T
+is trace+2sum|offdiag|, signed diagonals unclamped. Actual R quadratic is
+bounded since Z evaluateszero and LL^T nonnegative. Status
+VERIFIED_FINITE_ANNIHILATOR_SQUARE_BOUND, exact price/rows/traces/cross.
+zero_identity_rule_verified_for_all_u=True refers ONLY to divisor identity
+rule; uniformremaining/remainder/source/RH remainFalse. No novelty or allscale
+price-growth claim. Historical original source binding remains external.
+
+Prospective cumulative memory includes complete rawremainder, identities,
+Sactualbits, factor/nativeproducts; percall4GiB/work3e11, inheritedSF4096/
+horizon16384 pluseffective512 andbank16 gates. Bitgates precede native
+products; full bank/inputshape rejects rather than truncates.
+
+Tests include complete actual tiny divisoridentity withunit/K0/complement/
+balance and fractionalnegativeexponents, jointprimeprojection; literal mixed
+signedS cross terms and negativezero-square strictpriceimprovement on
+constrained Boolean fixtures; emptybank andnonzeroPSDfactor; allrawouter/
+source/anchorbindings; Ssymmetry/symmetrictamper, bankcanonical/bool/scale/
+exponent changes; factor/rank/schema/price/count; hugehorizon before sieve,
+oversizedbank/effectivefactor, prospectivepower/work gates.

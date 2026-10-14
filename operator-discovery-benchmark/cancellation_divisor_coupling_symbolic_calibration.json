@@ -1,0 +1,152 @@
+{
+  "RH_proved": false,
+  "cases": [
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 1
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 1
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 1
+    },
+    {
+      "c": "2",
+      "formal_scalar": "-4",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 2
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 2
+    },
+    {
+      "c": "1/2",
+      "formal_scalar": "-1/4",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 2
+    },
+    {
+      "c": "3",
+      "formal_scalar": "-9",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 3
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 3
+    },
+    {
+      "c": "1/3",
+      "formal_scalar": "-1/9",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 3
+    },
+    {
+      "c": "4",
+      "formal_scalar": "-16",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 4
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 4
+    },
+    {
+      "c": "1/4",
+      "formal_scalar": "-1/16",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 4
+    },
+    {
+      "c": "5",
+      "formal_scalar": "-25",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 5
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 5
+    },
+    {
+      "c": "1/5",
+      "formal_scalar": "-1/25",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 5
+    },
+    {
+      "c": "6",
+      "formal_scalar": "-36",
+      "j": -1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 6
+    },
+    {
+      "c": "1",
+      "formal_scalar": "-1",
+      "j": 0,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 6
+    },
+    {
+      "c": "1/6",
+      "formal_scalar": "-1/36",
+      "j": 1,
+      "normalization_verified": true,
+      "square_closure_verified": true,
+      "t": 6
+    }
+  ],
+  "global_bound_proved": false,
+  "schema": 1,
+  "scope": "supplied symbolic identities; no actual signed scores"
+}

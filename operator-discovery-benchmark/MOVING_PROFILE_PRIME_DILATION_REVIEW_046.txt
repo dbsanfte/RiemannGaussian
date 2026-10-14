@@ -1,0 +1,416 @@
+MOVING PROFILE PRIME DILATION REVIEW 046
+
+Result and scope
+----------------
+The plus-dilation has a real ordinary-prime pairing mechanism, but it does
+not erase the prime-square branch, the unit/indicator, the signed harmonic
+normalizers, or the critical-zero boundary layer. There is no proved
+improvement to the advertised eta1 rate. The separately reviewed global
+rate obstruction rejects eta1 for the two selected bare profiles: their
+barriers are3/7 and2/5. Moment order4 does not bypass these whole-norm
+barriers. The finite observations remain separate facts.
+
+A useful NEW mathematical production is an exact prime-matched profile and
+its predetermined source-bound dilation auxiliary. It cancels all
+valuation-one coefficients in the floor-convolution source, including the
+unit pairing, retains the prime-square and scalar counterterms, and is
+exactly compilable with rational coefficients using the existing child
+dyadic atoms. It exposes a coprime/prime-square joint discrepancy leaf. That
+leaf remains OPEN, including at eta no larger than the global barrier.
+This is an analytic proposal, not an implemented primitive, numerical
+study, proof of convergence, or proof/refutation of RH.
+Production status: DERIVED_NOT_IMPLEMENTED for prime_split,
+prime_matched_parent, the bounded p-adic elimination node, and the
+two-sided moment primitive. No production here carries an upper-bound claim.
+
+Inputs read: frozen pilot-003/selected_families.json, source definitions of
+the frozen044 dilation compiler, and the045 drift memo. No source arrays,
+norm certificates or recovery observations were read. No existing file was
+changed; no numerical norm or old suite/study was run. One exact rational
+synthetic moment calculation verified the illustrative new weight vector
+below. No actual candidate application or fitted coefficient is a premise.
+
+1. Definitions, unit and exact whole-function dilation
+----------------------------------------------------
+Let p be an actual prime, chi=1_(0<x<=1), I_p=chi(px), D_p v(x)=v(px).
+Define f_n as in043 and f_1=0. All equalities below hold on the whole
+positive x-axis, with every function zero beyond its stated support.
+The exact floor identity is
+  D_p f_n = f_(pn) - f_p/n.
+It includes x>1/p: the right side is then zero. Also
+  ||D_p v||_2=p^(-1/2)||v||_2.
+
+Use arbitrary child and parent profiles V(n), U(n), normalized V(1)=U(1)=1,
+including exact signed rounded profiles. Set
+  e_child=chi+sum_(2<=n<=pN) mu(n)V(n)f_n,
+  e_parent=chi+sum_(2<=n<=N) mu(n)U(n)f_n,
+  S_V=sum_(n<=pN) mu(n)V(n)/n,
+  S_U=sum_(n<=N) mu(n)U(n)/n.
+Then h=e_child+D_p e_parent is EXACTLY
+  h=chi+I_p+sum_n A(n)f_n-S_U*f_p,
+  A(n)=mu(n)V(n)1_(n<=pN)
+       +1_(p|n)mu(n/p)U(n/p)1_(n/p<=N).
+The unit A(1)=1 multiplies f_1=0, but it must still be retained in the
+harmonic normalizer and in the floor-convolution identity.
+
+The ordinary prime laws mu(pm)=-mu(m) when p does not divide m, and
+mu(p^2 m)=0, give the following complete p-adic table, with p not dividing m:
+  A(m)     = mu(m)V(m),                         m<=pN;
+  A(pm)    = mu(m)[U(m)-V(pm)],                 m<=N;
+  A(p^2 m) = -mu(m)U(pm),                      pm<=N;
+  A(p^j m) = 0,                               j>=3.
+The formulas also handle other prime squares through mu(m)=0. At m=1 the
+valuation-one entry is A(p)=1-V(p), not an omitted or assumed zero unit.
+
+In the signed-vector convention h=chi-sum d_n f_n-sum t_q I_q, t_p=-1,
+the exceptional floor coefficient is
+  d_p=V(p)+S_U-1.
+For n!=p, d_n=-A(n). Thus a small A(p) never licenses dropping f_p*S_U.
+The p^2 coefficients are real parent contributions; they are not zero just
+because the child ordinary-Mobius coefficient at a square is zero.
+
+2. A source-bound coprime reduction, exact even after rounding
+------------------------------------------------------------
+For any profile W, define
+  B_M[W]=sum_(m<=M,p does not divide m) mu(m)W(m)f_m,
+  T_M[W]=sum_(m<=M,p does not divide m) mu(m)W(m)/m.
+The m=1 term in B is zero, while its term in T is W(1). Pairing m and pm
+using the ordinary prime law and the floor identity proves
+  e_M[W]=chi+B_M[W]
+          -D_p B_floor(M/p)[W(p*.)]
+          -f_p T_floor(M/p)[W(p*.)].
+This uses no false multiplicativity of a mixture or of rounded powers.
+It applies literally to the finite exact rational rounded values.
+
+Applying it to both sides of the selected plus-dilation yields
+  h = chi+I_p+B_(pN)[V]
+      +D_p B_N[U-V(p*.)]
+      -D_(p^2) B_floor(N/p)[U(p*.)]
+      -f_p T_N[V(p*.)]
+      -(D_p f_p) T_floor(N/p)[U(p*.)].                 (A)
+Both scalar terms are signed actual-Mobius harmonic sums. Since
+D_p f_p=f_(p^2)-f_p/p, this expression compiles back to a finite floor/step
+vector with exactly the same support and all scalar signs. There is no
+per-scale fitted normalizing constant.
+
+Equation(A) is a detector-generable reduction node:
+  prime_split(prime, child_profile, parent_profile, parent_support).
+It emits the two coprime profile vectors, the paired profile difference,
+the prime-square dilation, the two signed scalar counterterms, unit and
+indicator. The coprime restriction is diagnostic; it must not replace the
+ordinary all-prime target or be treated as an RH target by itself.
+The factor ||D_(p^2)||=1/p is paid exactly, but this does not bound the
+undilated coprime block or its signed crosses.
+
+3. Exact divisor-product cells and a genuinely arithmetic hard leaf
+-----------------------------------------------------------------
+Let k=floor(1/x)>=1. The full residual is constant on cell
+(1/(k+1),1/k], of mass1/[k(k+1)]. Define
+  C_W(k)=sum_(d|k,d<=support) mu(d)W(d).
+Changing the order of the finite floor sum gives
+  sum_(n<=support) mu(n)W(n)floor(k/n)=sum_(l<=k) C_W(l).
+Hence, for ALL k, with these explicitly truncated divisor sums,
+  h_k=1+1_(k>=p)+k*S_V+floor(k/p)*S_U
+      -sum_(l<=k) C_V(l)-sum_(l<=floor(k/p)) C_U(l).   (B)
+This retains the actual signed unit and both normalizers.
+
+For a raw mixture W_beta(n)=sum_j w_j n^(-r_j*beta), whenever k is within
+the profile support, every divisor is included and Euler factorization gives
+  C_W(k)=sum_j w_j product_(ell|k)(1-ell^(-r_j*beta)).  (C)
+The product is over distinct actual prime divisors, so valuations>=2 are
+handled automatically. For the whole forcing, formula(C) applies to BOTH
+terms in(B) throughout k<=pN: child k<=pN and parent k/p<=N. Beyond that
+range formula(B) remains exact, while(C) must be replaced by its truncated
+version. No observed prefix licenses its tail.
+
+Individual single-twist products in(C) are nonnegative; their signed
+mixture is not generally nonnegative. For the selected order4 profile,
+C_W(ell)=1-W(ell) is positive. At two distinct fixed primes ell1,ell2,
+letting a=log(ell1), b=log(ell2), its leading term is
+  beta^4[a^4+b^4-(a+b)^4]<0.
+Thus positivity of the raw profile itself does not justify taking the
+absolute value of the divisor products or discarding their covariance.
+This is an analytic identity, not an additional arithmetic observation.
+
+A concrete source leaf for proof search is a uniform BLOCK discrepancy
+bound for the full signed quantity on the right of(B). If it supplies
+  sum_(K<=k<2K) h_k^2 <= Q(N,K), K=1,2,4,...,
+then the explicitly paid implication
+  ||h||_2^2=sum_(k>=1) h_k^2/[k(k+1)]
+             <=sum_(K dyadic) Q(N,K)/K^2
+can close the forcing leaf if the last series is uniformly <=A/L^eta.
+The implication uses only cell masses. The hard arithmetic statement must
+control child/parent product correlations, harmonic normalizers and the
+truncated divisor tail jointly. This is a different, inspectable source
+obligation; it is not asserted true by restating the desired endpoint norm.
+Absolute coefficient sums give bounds growing with support and do not
+close this leaf.
+
+4. Child beta, ceiling jumps, and exact rounding
+----------------------------------------------
+The selected bare raw profile is
+  P_beta(n)=4n^(-beta)-6n^(-2beta)+4n^(-3beta)-n^(-4beta)
+           =1-(1-n^(-beta))^4,
+  beta_N=ceil(L(N)^theta)/L(N), theta=4/7 or3/5.
+It satisfies0<P_beta(n)<=1 for finite n>=1. Its rounded counterpart
+independently floors each atom at4ceil(log2N) bits and retains signed weights;
+the absolute weight sum is15. This finite rational profile need not equal
+the raw polynomial in one rounded atom.
+
+At p=2, L(2N)=L(N)+1 exactly. Write z_L=ceil(L^theta). Since0<theta<1,
+z_(L+1)-z_L is0 or1, and
+  beta_(2N)-beta_N
+    =-z_L/[L(L+1)]                     when there is no ceiling jump,
+    =(L-z_L)/[L(L+1)]                  when there is a jump.
+This jump term is O(1/L), larger than the smooth derivative size in general.
+It must not be silently replaced by (theta-1)L^(theta-2). Nevertheless
+beta_(2N)/beta_N->1, and the mismatch is smaller than beta_N relatively.
+
+For the raw scalar F(u)=1-(1-exp(-u))^4, u>=0,
+  sup |F'(u)|=27/64,
+  sup u|F'(u)|<=4/e<=2.
+Therefore the paired profile phi(n)=P_(beta_N)(n)-P_(beta_(2N))(2n)
+satisfies the ALL-n bound
+  |phi(n)| <= 2*|beta_(2N)-beta_N|/min(beta_N,beta_(2N))
+               +(27/64)*beta_(2N)*log(2).
+Replacing log(2) by1 gives an entirely rational computable scalar upper
+bound from the two exact beta certificates. Separate parent/child rounding
+adds epsilon_N+epsilon_(2N), epsilon_M=15*2^(-4ceil(log2M)).
+This scalar bound is O(beta_N+L^-theta), hence O(beta_N) for theta>1/2.
+At every fixed n, the order4 local moments give the much smaller O(beta_N^4)
+gap. Neither estimate is a whole floor norm bound.
+
+The global norm error from replacing raw profiles by the selected rounded
+ones is rigorously at most
+  ||h_rounded-h_raw||_2 <=pN*epsilon_(pN)+p^(-1/2)*N*epsilon_N,
+because ||f_n||_2<=1 and dilation has norm p^(-1/2). It is O(N^-3).
+This bound pays child precision separately from parent precision and is
+negligible at any inverse-log rate. It is a norm-distance allowance; one
+must use triangle inequality before squaring, not just add it to norm^2.
+
+5. Concrete new production: prime-matched normalized parent
+----------------------------------------------------------
+Use the ACTUAL child profile V at support pN, with its child beta and child
+rounding. Define
+  lambda_N=V(p),
+  Q_N(n)=V(pn)/V(p), n<=N,
+provided the separately certified scalar lambda_N is nonzero. No further
+rounding is needed: finite V and the quotient are exact rationals. Q_N(1)=1.
+It is a source-bound profile transform, not a least-squares choice.
+
+The new forcing is
+  H_matched=e_(pN)[V]+lambda_N*D_p e_N[Q_N].
+In its convolution source the coefficient at pm, p not dividing m, is
+  mu(m)[lambda_N Q_N(m)-V(pm)]=0,
+including the unit m=1. Its surviving prime-square coefficient is
+  -mu(m)V(p^2m), p^2m<=pN.
+The unit/indicator is chi+lambda_N I_p. The f_p scalar counterterm remains
+and must not be confused with the vanished convolution coefficient at p.
+The complete counterpart of(A) is
+  H_matched=chi+lambda_N I_p+B_(pN)[V]
+       -D_(p^2) B_floor(N/p)[V(p^2*.)]
+       -f_p T_N[V(p*.)]
+       -(D_p f_p) T_floor(N/p)[V(p^2*.)].             (D)
+This identity removes the intermediate valuation-one block exactly, even
+when each underlying twist atom was rounded independently.
+
+For the selected a=1,p=2, both theta values, beta_M<=1 for all M>=2.
+The raw lambda is at least P_1(2)=15/16. Since child M=2N>=4 and
+epsilon_M<=15/256, its rounded value satisfies
+  225/256 <=lambda_N<=271/256,
+  lambda_N/sqrt(2)<=271/(256sqrt(2))<1.
+The latter is licensed by the exact integer comparison271^2<2*256^2.
+Thus normalization and an eventual contraction constant are not mysterious
+leaves for this specific matched production. The mixed profile Q itself
+may leave[0,1] at finite N; its signed coefficients remain legal.
+
+The ORIGINAL selected forcing is recovered exactly, not replaced, by
+  h=H_matched+A_prime,
+  A_prime=D_p[(1-lambda_N)chi
+               +sum_(2<=n<=N) mu(n)(U(n)-V(pn))f_n]. (E)
+This is a predetermined arithmetic auxiliary and indicator; its coefficients
+can be emitted directly from parent/child atoms. It is legal as a general
+signed diagnostic vector, not as a standalone RH target with indicators.
+The joint price is
+  ||h||^2=||H_matched||^2+2<H_matched,A_prime>+||A_prime||^2.
+All terms and crosses must remain signed. Their uniform control is OPEN.
+An apparent small scalar coefficient or exact prime pairing cannot pay it.
+
+H_matched compares two DIFFERENT target profiles. Proving its bound does not
+give convergence of the original single family unless the coupled transfer
+to Q_N, or the auxiliary in(E), is also controlled uniformly. A new detector
+node could represent this coupled type explicitly:
+  prime_matched_parent(child_profile,prime)
+with obligations lambda!=0, signed scalar range, exact source pairing,
+rounding provenance, profile-transfer norm, and joint forcing bound. This
+is useful mathematical production even though the hard norm leaf is unpaid.
+It is not permission to reinterpret frozen candidates or rerank their data.
+
+6. Euler factors, bounded prime resolvents, and their limitations
+---------------------------------------------------------------
+For one raw twist at a common beta, the untruncated source has Dirichlet
+series1/zeta(s+beta) in its domain of absolute convergence. Multiplication
+by the plus-dilation source factor1+p^-s changes its p-local factor to
+  (1+p^-s)(1-p^(-(s+beta)))
+    =1+(1-p^-beta)p^-s-p^-beta p^(-2s).
+It suppresses valuation one by O(beta), while valuation two persists.
+For a matched scalar p^-beta in that channel the product is
+  (1+p^(-(s+beta)))(1-p^(-(s+beta)))
+    =1-p^(-2(s+beta)),
+which cancels valuation one exactly but again retains the square channel.
+For different beta values the whole source series is instead the sum of
+the child reciprocal-zeta series and p^-s times the parent series; there
+is no common factorization to assume. Finite supports have additional
+Dirichlet tails. Mixtures are linear combinations of these source series,
+not one multiplicative arithmetic function.
+
+The standard Euler and reciprocal-Mobius identities are recorded in the
+official NIST DLMF27.4 equations3 and5:
+  [Euler products and Dirichlet series](https://dlmf.nist.gov/27.4#E5).
+The Dirichlet convolution rule is in
+  [DLMF inversion formulas](https://dlmf.nist.gov/27.5#E1).
+The prime table above follows directly from ordinary factorization, rather
+than importing a finite-prime countermodel or an independent-prime guess.
+
+For a single channel alpha=p^-beta<=1, the operator
+  R_(p,alpha,J)=sum_(j=0..J) alpha^j D_(p^j)
+has the exact algebraic remainder
+  R_(p,alpha,J)(I-alpha D_p)=I-alpha^(J+1)D_(p^(J+1)),
+  ||R_(p,alpha,J)||<=1/(1-alpha/sqrt(p)),
+  ||remainder||<= (alpha/sqrt(p))^(J+1).
+This permits a detector to PRICE a finite p-adic elimination and its tail
+without RH. Floor-basis application must retain its f_p-type scalar
+counterterms and dilated indicators as in(A); source convolution alone is
+not the full residual operator. Infinite prime-free Euler series still has
+the same zeta denominator and does not supply a global remainder estimate.
+
+Also I+D_p is boundedly invertible on L2, with inverse sum_j(-D_p)^j.
+For the SAME residual v,
+  (1-p^-1/2)||v||<=||(I+D_p)v||<=(1+p^-1/2)||v||.
+Thus same-scale plus dilation cannot improve a norm exponent by itself.
+The selected use of a different child support/profile is essential, and its
+scale increment is precisely a new arithmetic obligation.
+
+7. Another possible signed language: positive AND inverse moment synthesis
+--------------------------------------------------------------------------
+Local compatibility moments do not control all critical-zero responses.
+For a maximal survival mixture, inverse moments are strictly positive:
+  sum w_j/r_j^d =1/(d-1)! * integral_0^infinity u^(d-1)P(u)du>0.
+For the selected four-rate weights, sum w_j/r_j=25/12. At an untruncated
+reciprocal-zeta pole, these inverse moments do not cancel its principal part.
+
+A general exact alternative uses s=m+d distinct positive rational rates
+and solves
+  sum w_j=1,
+  sum w_j r_j^k=0, k=1..m-1 and k=-1..-d.
+Writing y_j=w_j/r_j^d converts it to the ordinary Vandermonde system
+  sum y_j r_j^l=delta(l,d), l=0..s-1.
+It is therefore detector-generable by exact linear equations, with no fixed
+rate bank. Its first positive moment is
+  M_m=(-1)^(m+1)*e_m(r_1,...,r_s)!=0,
+from the coefficient of x^d in product(x-r_j). Local order m is preserved.
+Rates1..5, m=4,d=1 give the exact synthetic witness
+  w=(-77/12,107/3,-117/2,122/3,-125/12),
+  M_-1=0, M_0=1, M_1=M_2=M_3=0, M_4=-274,
+  sum|w|=455/3.
+This was verified by exact rational arithmetic, without source data.
+
+The inverse moments cancel reciprocal-zeta Laurent principal parts through
+zero multiplicity d at the exact zero, without assuming simplicity. This
+is an untruncated analytic fact, not a license to approximate a finite
+Dirichlet polynomial on the critical line without paying its tail. Such a
+profile cannot be a nonnegative survival profile: M_-1=integral P=0 while
+P(0)=1 forces negative values. The general signed range and larger absolute
+sum/rounding must be paid. More importantly, this production does NOT beat
+the whole beta-width norm barrier in the next section. It may change
+constants or other joint arithmetic leaves; no viable faster exponent
+follows from these moment constraints alone.
+
+8. Incorporating the independently reviewed global beta-width barrier
+---------------------------------------------------------------------
+The parent global audit covers FIXED finite bare signed mixtures with
+positive distinct rates, normalized weights, theta>1/2 and exact rounding.
+The argument below explains why a prime identity cannot evade its mechanism.
+It is not an assertion that an implemented guard already covers the new
+coupled or scale-dependent-weight production.
+
+For a finite pure-floor target its Mellin transform is
+  E_M(s)=[1+zeta(s)*(S_M-A_M(s))]/s,
+  A_M(s)=sum_(n<=M)mu(n)W_M(n)n^-s,
+valid initially for Re(s)>1 and continuing to Re(s)>0 because f_n is bounded.
+The full plus forcing has transform E_(pN)(s)+p^-s E_N(s), including unit
+and indicator. At ANY zeta zero rho, the exact finite value is
+  H_N(rho)=(1+p^-rho)/rho.
+If RH is false, functional symmetry supplies a zero with Re(rho)>1/2.
+Cauchy then gives the positive N-independent norm lower bound
+  ||h_N||^2 >=(2Re(rho)-1)|1+p^-rho|^2/|rho|^2.
+Here1+p^-rho is nonzero since |p^-rho|<1. Thus a vanishing forcing claim
+cannot assume this RH-false branch away.
+
+On the RH branch use the actual imported theorem, not a newly invented
+Mertens estimate: Soundararajan, Partial sums of the Mobius function,
+Theorem1, assumes RH and gives a square-root bound with an exponential
+factor:
+  M(x) << sqrt(x)*exp((log x)^(1/2)*(log log x)^14).
+  [Primary paper, Theorem1](https://arxiv.org/pdf/0705.0723).
+For theta>1/2 the exponent sqrt(log N)*(log log N)^14 is
+o(beta_N*log N). Abel summation therefore pays
+the finite reciprocal-zeta tails uniformly near one fixed critical zero,
+with errors faster than any inverse log power. This conditional theorem
+is used only inside the RH branch of the obstruction proof.
+
+Let rho=1/2+i*t0 have any finite multiplicity d>=1. On the shrinking Mellin
+window s=1/2+i(t0+beta_N*v), the raw target response tends to
+  F_d(v)/rho,
+  F_d(v)=1-(iv)^d sum_j w_j/(r_j+iv)^d.
+Since F_d(0)=1, it stays nonzero on some fixed v-interval, whatever positive
+or inverse moments were cancelled. Child beta/parent beta tends1, so the
+whole plus response tends to
+  (1+p^-rho)*F_d(v)/rho.
+Mellin Plancherel on that window of width proportional to beta_N gives
+  ||h_N||^2 >=c*beta_N
+for all sufficiently large N, for some fixed c>0. The independently paid
+rounding norm error is O(N^-3) and does not change this lower rate.
+The two branches together refute eta>1-theta without assuming RH true or
+false as a conclusion. Selected theta4/7 allows no eta above3/7; theta3/5
+allows no eta above2/5. In particular their advertised eta1 cannot hold
+uniformly, even though the local order4 gate alone did not reject it.
+This is a rate refutation for these fixed formulas, not an RH refutation.
+The selected bare b0 control, with a=1/3,theta5/6 and rates1,2,4, has the
+same argument with dilation factor omitted and barrier1/6; its eta1 is
+also rejected by the separately reviewed global audit. The present prime
+production analysis does not need to evaluate that control's norms.
+
+Inverse moments may modify F_d away from v=0 but cannot change F_d(0)=1.
+Prime-matched weights tend to the same fixed weights and lambda tends1;
+they leave this same near-zero response mechanism in place. Extending the
+automated global guard to such coupled profiles requires an explicit
+bounded-weight/tail and typed-source proof; the current fixed-mixture guard
+must not claim that extension merely by matching names or local limits.
+
+9. What is usable and what remains unpaid
+----------------------------------------
+The usable new production is the exact prime_split / prime_matched_parent
+language, with equation(A) or(D), source-generated auxiliary(E), scalar
+normalization/contraction certificates and signed joint pricing. It changes
+the objects offered to the detector in a principled arithmetic way. The
+two-sided moment solve is another possible signed primitive, restricted
+here to constant/shape calibration, not an exponent shortcut.
+
+Before any uniform bound is claimed, proof search must pay:
+  - actual all-prime coprime source and p^2 branch, not just one Euler factor;
+  - child/parent beta ceilings and each distinct dyadic rounding;
+  - signed harmonic normalizers, unit, indicator and exceptional f_p term;
+  - source-correlated cross terms of the full emitted vectors;
+  - complete head AND truncated divisor/cell tails through all scales;
+  - coupled profile transfer if the matched parent differs from the target;
+  - a bound exponent at or below the applicable global barrier, with equality
+    still OPEN rather than admitted by necessary-condition survival.
+
+No unconditional upper bound at eta3/7, eta2/5 or any positive eta was found
+here. Such a bound for the original pure-floor forcing would still be a
+substantial RH-bearing result; scalar profile estimates and finite-prime
+resolvents do not constitute it. The construction can simplify prime
+pairing and offer a more structured joint remainder, but it supplies no
+proved exponent or scale-transfer improvement by itself. RH_proved=false,
+RH_refuted=false, additional_norms_evaluated=0; original-core obligations OPEN.

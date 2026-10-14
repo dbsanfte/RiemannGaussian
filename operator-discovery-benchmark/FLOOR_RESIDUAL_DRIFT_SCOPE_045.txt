@@ -1,0 +1,114 @@
+SIGNED LOGARITHMIC DRIFT: INDEPENDENT SCOPE045
+
+Only new045 source files are owned here. Earlier numerical and analytic
+artifacts remain unchanged. No source array or finite residual norm is a
+premise of this proof admission.
+
+1. Moving rational drift
+
+Let L=1+floor(log2 N), a>0 rational, and 0<theta<1 rational.
+Set k=ceil(a L^theta), beta=k/L. At every integer N the exponent is
+rational, and exact ceiling gives
+ a L^(theta-1)<=beta<a L^(theta-1)+1/L.
+In particular beta=a L^(-(1-theta))(1+O(L^-theta)); beta->0 and
+beta log N->infinity. The latter distinguishes this construction from a
+fixed Mellin transfer, but is not a proof of a global norm bound. Resource
+limits may refuse a finite compilation; the mathematical definition does
+not stop at that resource threshold.
+
+2. Signed mixtures and all-index Taylor bound
+
+For fixed distinct positive rational rates r_j and rational signed weights
+w_j let sum w_j=1. If M_k=sum w_j r_j^k vanishes for 1<=k<m while
+M_m!=0, then with z=beta log n>=0
+ P_beta(n)=sum w_j exp(-r_j z)
+ =1+(-1)^m M_m z^m/m!+O(z^(m+1)) at every fixed n.
+Taylor's integral remainder before order m obeys
+ |P_beta(n)-1|<=z^m/m! *sum |w_j| r_j^m
+ for EVERY n>=1. This uses r_j>0 so the mth derivative of exp(-r_j z)
+is bounded in absolute value by r_j^m on z>=0. No positivity of the
+signed mixture itself is claimed. Every weight and every signed moment is
+retained; substituting unsigned moments would erase the construction.
+
+If each twist is rounded down to p-bit dyadics, its error is between
+0 and 2^-p in absolute value. The signed-sum error is bounded by
+2^-p sum |w_j|. Rounding the mixture again is a different operator and
+must not be substituted. All cross terms remain in any later norm pricing.
+
+3. Actual source coefficient and first local obstruction
+
+For c_n(N)=-mu(n)*P_beta(n) with exact ordinary Mobius arithmetic,
+ c_n(N)+mu(n)=(-mu(n))*(-1)^m M_m*(a log n)^m/m!
+                    *L^(-m(1-theta))+o(L^(-m(1-theta))).
+The ceiling relative correction and dyadic rounding do not change this
+leading term. For mu(n)=0 the entire coefficient is exactly zero; no
+nonzero obstruction is asserted at that index. At n>=2 with mu(n)!=0,
+all remaining factors are positive except the independently checked
+rational coefficient, which licenses its sign without numerical fitting.
+
+Exact finite-cell recovery witnesses annihilate every higher-support
+floor column through sum k*alpha_k=0 and check every lower column. They
+retain the constant-one residual and all indicators. For a licensed
+leading term of order nu=m(1-theta), they give
+ liminf L^(2nu)||e_N||^2>=leading_constant(n)^2/D_n>0.
+Only requested energy rates eta>2nu are excluded for any fixed finite
+constant. Equality and slower rates remain OPEN, and no whole norm upper
+bound follows from coefficientwise compatibility or Taylor's bound.
+
+4. Necessary admission gates
+
+All rational input strings must be canonical, with positive rates, nonzero
+weights, distinct rates and <=8 terms. Moment order is recomputed exactly;
+no declared cancellation order or Boolean is a premise. Finite beta is
+checked by powered inequalities for ceil(a L^theta), and every rounded
+twist by integer-power inequalities at the exact dyadic boundary. Explicit
+bit/work caps bound computations instead of restricting a denominator bank.
+
+Every proof certificate is tied to its complete mixture, source coefficient
+sign, mathematical scale and exact rounding policy. The verifier never
+uses a finite norm table or a source archive to license a leading term,
+and never promotes formal compatibility to convergence, RH or original
+signed-core closure. A failed resource check is unsupported computation,
+not an arithmetic counterexample.
+
+5. Positive convolution kernel is an additional exact certificate
+
+For the maximal-order mixture the detector's signed rational weights can
+also satisfy the independently checked polynomial identity
+ sum_j w_j r_j prod_(i!=j)(s+r_i)=prod_i r_i.
+Divide by prod(s+r_i). Each r_i/(s+r_i) is the Laplace transform of a
+positive exponential density. Direct convolution and distinct-rate partial
+fractions give the density -P'(u), with P(0)=1 and P(infinity)=0.
+Consequently raw P is its survival function, 0<=P(u)<=1. Integrating the
+positive convolution density over the simplex sum u_i<=u gives
+ 0<=1-P(u)<=prod(r_i) u^s/s!.
+The exact numerator identity, every signed summand, its denominator and
+all positive rates are verified before this stronger rule is admitted.
+General unit-normalized mixtures retain only the absolute Taylor bound.
+The raw probability interpretation is never transferred to rounded signed
+coefficients without the full sum-absolute-weights rounding allowance.
+
+6. Public checker and source integration
+
+verify_spec(spec) and verify_certificate(spec,proposal) derive the exact
+moments/order/kernel and admit the coefficient-only certificate.
+verify_compilation(spec,n,N,proposal) independently replays every exact
+ceiling and dyadic twist, with either a full certificate or scalar string.
+verify_coefficient_bound(spec,n,N,proposal) prices the all-index scalar
+Taylor/simplex/rounding bound, including exact n=1.
+verify_obstruction reports only a symbolic local order until the actual
+source coefficient and a cell witness are admitted.
+
+weight_series handles drift_mixture and its products with the earlier
+weight AST. verify_rate_candidate(recipe,index,row,precision=192) derives
+-mu(n)*(P-1), preserving all tied signed terms and unresolved cancellation
+barriers. It uses frozen independent cell-column and logarithmic sign
+primitives. Ordinary earlier recipes delegate their frozen checker. New
+drift recipes require a null auxiliary; unsupported new source mixtures
+are not silently substituted. At n=2 log(n)=log(2) is normalized before
+licensing a constant. At a nonsquarefree n the pure actual-Mobius error is
+exactly zero and provides no nonzero obstruction.
+
+A convergence claim for all scales needs an independent norm argument
+beyond this admission. Neither the probability-kernel identity nor an
+arbitrarily high moment-cancellation order supplies that missing argument.

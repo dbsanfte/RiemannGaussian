@@ -1,0 +1,356 @@
+CENTERED COMMON BANK: EXACT COMPENSATION, SMALLER SCALE, AND THE OPEN JOINT CREDIT
+
+Scope and outcome
+-----------------
+This new analytical memo extends the conditional smaller-scale rule (9.5)
+in PRIME_TRANSFER_MARTINGALE_REVIEW_001.txt. Inputs are that frozen memo,
+PRIME_BANK_HANDOFF.txt, the exact ordered-prime obligation, the covariance
+review and the prime-slide protocol. No numerical responses, experiments,
+tests, source tables, hashes, frozen edits or subagents were used.
+
+Two concrete conclusions are obtained.
+  1. The entire reduced target has an exact centered three-state recurrence,
+     with explicit smooth, floor, unit-strip, repeated-prime and pole terms.
+     Its shared-prime centered square is controlled at a strictly smaller
+     horizon by a coupled cumulative moment, without a separate companion
+     assumption. This is a conditional proof rule, not a closed estimate.
+  2. The isolated deterministic compensation P_theta cannot itself be paid
+     by any cofinal critical-energy bound. A self-contained Mellin/Euler
+     argument exhibits an unavoidable logarithmic branch at s=1, even if
+     its harmonic constant vanishes to a finite order. The weighted and
+     main components are analytic there. The actual smooth channel can
+     cancel the branch; this memo does NOT exclude that joint cancellation.
+
+The missing estimate is still a joint actual-source covariance. The new
+obstruction directs it toward the compensated smooth/common kernel rather
+than toward a separately small pole bank. No uniform target theorem or RH
+claim is made. All global/RH flags remain false.
+
+1. Fixed states, centers, and exact unit conventions
+--------------------------------------------------
+Keep u=1/3, v=2/3, beta=9/2, kappa_u=2/3, kappa_v=1/3. Let
+  a_b=mu*(n^(-b)), B=a_u*a_v,
+  p=beta*(B-a_u-a_v+delta), a=p-d,
+where d is the COMPLETE same-prime prime-power part of p. In particular
+p(1)=p(q)=0, a(1)=a(q^e)=0, a_b(1)=B(1)=1. No p multiplicativity is
+assumed. The already proved d and smaller-pole peels remain full components.
+
+Use inclusive prefixes at real t, zero below one:
+  S(t)=sum_(k<=t)p(k), A_b(t)=sum_(k<=t)a_b(k), D(t)=sum_(k<=t)d(k),
+  J(t)=S(t)-m_u*t^kappa_u-m_v*t^kappa_v,
+  M_u(t)=A_u(t)-c_u*t^kappa_u,
+  M_v(t)=A_v(t)-c_v*t^kappa_v,                    (1.1)
+where for t>=1
+  c_u=1/[kappa_u*zeta(kappa_u)], c_v=1/[kappa_v*zeta(kappa_v)].
+These centers are evaluated at their displayed arguments, not rounded
+arguments by default. The exact old residues are
+  m_u=beta/kappa_u*[zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)],
+  m_v=beta/kappa_v*[zeta(2/3)/zeta(1/3)^2-1/zeta(1/3)].
+They are not fitted constants.
+
+For k>=2, z_u=p+beta*a_v, z_v=p+beta*a_u, z_0=z_u+z_v; all three z
+sequences are zero at k=1. Their prefixes Z_b(t) therefore satisfy, t>=1,
+  Z_u=S+beta*A_v-beta, Z_v=S+beta*A_u-beta,
+  Z_0=2S+beta*(A_u+A_v)-2beta.                   (1.2)
+Their EXACT pole/unit profiles are
+  C_u(t)=m_u*t^kappa_u+(m_v+beta*c_v)*t^kappa_v-beta,
+  C_v(t)=(m_u+beta*c_u)*t^kappa_u+m_v*t^kappa_v-beta,
+  C_0(t)=C_u(t)+C_v(t),
+  W_u=Z_u-C_u=J+beta*M_v,
+  W_v=Z_v-C_v=J+beta*M_u,
+  W_0=Z_0-C_0=2J+beta*(M_u+M_v).                (1.3)
+In particular C_b(1)+W_b(1)=0, not C_b(1)=W_b(1)=0 separately.
+
+2. Exact centered decomposition of K-L0+Lu-main
+---------------------------------------------
+Fix 3/4<=theta<1, integer n>=1, Y=n^theta, and
+  Q_theta(n)={q prime:Y<q<=n/2}, m_q=floor(n/q).
+There is no q with a cofactor one in this set. Define
+  K(n)=sum_(k<=n,Pplus(k)<=Y)a(k),
+  L_b(n)=sum_(q in Q_theta(n))q^(-b)*Z_b(m_q), b=0,u,v.
+The complete reduced target is
+  R_new(n)=K(n)-L_0(n)+L_u(n)-m_u*n^kappa_u.      (2.1)
+The original reduced coefficient target satisfies R=R_new+L_v; its relation
+to J is J=R+D-m_v*n^kappa_v. Those complete peels have proved costs.
+
+Put
+  P_theta(n)=m_u*n^kappa_u
+             +sum_(q in Q_theta(n))[C_0(m_q)-q^(-u)*C_u(m_q)],
+  H_R(n)=K(n)-P_theta(n),
+  F(t)=(J(t),M_u(t),M_v(t))^T,
+  b_q=(q^(-u)-2, -beta, beta*(q^(-u)-1)).
+Then the exact decomposition is
+  R_new(n)=H_R(n)+sum_(q in Q_theta(n))b_q*F(m_q).                 (2.2)
+Equivalently its centered bank is -sum_q[W_0(m_q)-q^(-u)*W_u(m_q)].
+Every floor, unit constant, smaller pole and smooth coefficient is present.
+No smallness is asserted for H_R or for P_theta individually.
+
+Replacing m_q^kappa by (n/q)^kappa is not a harmless unweighted-bank edit.
+Its exact correction is
+  E_(b,kappa)(n)=sum_(q in Q_theta(n))q^(-b)
+                      *[floor(n/q)^kappa-(n/q)^kappa].          (2.3)
+For 0<kappa<1 and n/q>=2 the absolute bracket is at most
+kappa*floor(n/q)^(kappa-1), hence at most kappa. But the elementary
+whole-bank bound is then kappa*sum_q q^(-b), of power n^(1-b), not
+automatically critical padding for b=0 or u. Formula (2.3), with its
+actual signs, must stay in the deterministic compensation if real powers
+are preferred. All results below instead keep integer m_q and avoid this edit.
+
+Even a constant change C_b -> C_b+c shifts the bank by
+c*sum_(q in Q_theta(n))q^(-b). Its cofactor energy is bounded, while its
+unweighted bank is not. A small cofactor-center change is not necessarily
+a small prime-bank change. In particular C_b(1) may not be deleted from
+(1.3) merely because the cofactor domain in (2.2) starts at two.
+
+3. An exact coupled recurrence with a common smaller cofactor domain
+-------------------------------------------------------------------
+For j=u,v let K_j(n)=sum_(k<=n,Pplus(k)<=Y)a_j(k), including its unit.
+For p put S_sm(n)=sum_(k<=n,Pplus(k)<=Y)p(k)=K(n)+D(n). The equality
+holds because every nonzero d coefficient is at q^e with e>=2 and
+q<=sqrt(n)<=Y. No repeated-prime coefficient is put into a large-prime bank.
+
+The one-cofactor prime strip is
+  U_theta(n)={q prime:max(Y,n/2)<q<=n}.
+For q>Y the large prime occurs exactly once, and is coprime to its entire
+cofactor. Local au/av multipliers are t_u(q)=q^(-u)-1 and t_v(q)=q^(-v)-1;
+the B multiplier is t_B(q)=q^(-u)+q^(-v)-2.
+Define the exact smooth/compensator vector H=(H_J,H_u,H_v)^T by
+  H_J=S_sm-m_u*n^kappa_u-m_v*n^kappa_v
+              +sum_(q in Q_theta(n))[-C_0(m_q)+q^(-u)*C_u(m_q)
+                                                       +q^(-v)*C_v(m_q)],
+  H_u=K_u-c_u*n^kappa_u
+              +sum_(q in Q_theta(n))t_u(q)*c_u*m_q^kappa_u
+              +sum_(q in U_theta(n))t_u(q),
+  H_v=K_v-c_v*n^kappa_v
+              +sum_(q in Q_theta(n))t_v(q)*c_v*m_q^kappa_v
+              +sum_(q in U_theta(n))t_v(q).                    (3.1)
+The last two strips use a_u(1)=a_v(1)=1 exactly. The p prime strip is
+zero, because p(q)=0. These facts are distinct from the centered values
+M_b(1), which need not be one or zero.
+
+With
+  A_q = [ t_B(q)   beta*t_v(q)  beta*t_u(q) ]
+        [   0         t_u(q)         0      ]
+        [   0           0          t_v(q)   ],
+the full centered identity is
+  F(n)=H(n)+sum_(q in Q_theta(n))A_q*F(m_q).     (3.2)
+This follows directly from the largest-prime partition and (1.3), not
+from an independence assumption. All cofactor arguments are <=n^(1-theta).
+All repeated primes, high-smooth coefficients and same-scale arithmetic
+remain in H. Its source-containing K,K_u,K_v are the unfinished part of
+the construction; calling H a paid forcing would be an unproved claim.
+
+For dyadic transport one can subtract lambda times (3.2) at n from
+(3.2) at 2n or 2n+1. The difference retains H(child)-lambda*H(parent),
+both complete prime sets and all cofactor cells. Child cofactor arguments
+are <=(2n+1)^(1-theta). Thus any genuine parent-credit inequality may use
+strictly smaller companions, but it still needs an estimate for the joint
+fresh H/common-bank covariance. The local eigenvalue t_B tends to -2;
+a fixed positive quadratic local contraction cannot provide that estimate.
+
+4. The smaller-scale rule in a coupled energy, without separate premises
+------------------------------------------------------------------------
+Let Q be any fixed positive definite real 3x3 matrix and put
+  E_F(X)=X^(-2)*sum_(X<=n<2X)F(n)^T*Q*F(n).
+Use a simultaneous cumulative induction hypothesis
+  sum_(1<=m<=T)F(m)^T*Q*F(m)<=A_epsilon*T^(2+epsilon),             (4.1)
+at smaller T. This is ONE coupled hypothesis to be proved, not an external
+bound for J, M_u and M_v separately. Its dyadic/cumulative formulations
+are equivalent up to geometric-sum constants and a factor-two horizon.
+Finite heads must be included if the dependency graph is implemented.
+
+For (3.2) the centered shared-prime square D_F is
+  X^(-2)*sum_(X<=n<2X)sum_(q in Q_theta(n))
+                        F(m_q)^T*A_q^T*Q*A_q*F(m_q).
+Since |t_B|<=2, |t_u|,|t_v|<=1, ||A_q||_Frobenius^2<=6+2beta^2,
+put C_Q=(lambda_max(Q)/lambda_min(Q))*(6+2beta^2). Then (4.1) implies
+  D_F<=C_Q*2^(2+epsilon)*(1+1/epsilon)
+                                    *A_epsilon*X^((1-theta)*epsilon). (4.2)
+The proof is the cofactor-cell rule: for fixed q, at most q integers n
+have a given m_q, so the sum is <=q times (4.1) at T=2X/q. All q>X^theta.
+Use sum_(j>Y)j^(-1-epsilon)<=(1+1/epsilon)*Y^(-epsilon).
+The relaxed horizon is <=2X^(1-theta), below X when X>2^(1/theta);
+the actual cofactor support is smaller. If complete dyadic intervals are
+used instead of cumulative claims, enlarge this fixed head for their
+factor-two endpoint. No same-scale auxiliary bound is being smuggled in.
+
+For (2.2), ||b_q||^2<=4+2beta^2 gives the corresponding shared-prime
+scalar bound with that constant, or its Q-dual norm counterpart.
+
+The EXACT energy remainder of (3.2) is
+  E_F(X)=D_F(X)+N_F(X),
+  N_F=X^(-2)*sum_n[H(n)^T*Q*H(n)
+             +2*sum_q H(n)^T*Q*A_q*F(m_q)
+             +sum_(q!=r)F(m_q)^T*A_q^T*Q*A_r*F(m_r)].           (4.3)
+All prime sets here are Q_theta(n). This retains distinct-prime, smooth,
+pole and unit cross terms. A desired recurrence would have to establish
+an actual signed bound for N_F, possibly with parent credit and proved
+padding, inside the SAME coupled induction. Equation (4.2) is a genuine
+smaller-scale component, but (4.3) alone is not a closure: assuming a
+cofinal bound for N_F wholesale would simply rename the missing estimate.
+The narrower theorem below shows why one of its tempting independent
+payments, that of P_theta, is impossible.
+
+5. A source-independent obstruction for isolated deterministic pole banks
+-------------------------------------------------------------------------
+The following theorem uses primes but no mu estimate, PNT, RH, numerical
+constant or conditional companion moment.
+
+Let C[m], m integer>=0, be a nonzero deterministic profile with
+C[0]=C[1]=0 and |C[m]|<=A*m^kappa for m>=2, 0<kappa<1. Set
+  f_C(1)=0, f_C(2)=C[2], f_C(k)=C[k]-C[k-1] for k>=3,
+  F_C(s)=sum_(k>=2)f_C(k)*k^(-s).
+Summation by parts gives the exact expression
+  F_C(s)=sum_(m>=2)C[m]*[m^(-s)-(m+1)^(-s)],                    (5.1)
+holomorphic on Re(s)>kappa. Its series is locally normally convergent
+there because the bracket is O_K(m^(-Re(s)-1)). Equivalently
+F_C(s)=s*integral_1^infinity C[floor(t)]*t^(-s-1)dt.
+For the actual profiles, f_C(k)=O(k^(kappa-1)) after the finite head,
+so their ordinary Dirichlet series is absolutely convergent on the same
+half-plane. F_C is NOT identically zero: at its first nonzero increment,
+the Dirichlet-series leading term as real s tends to infinity is nonzero.
+
+Define the full staircase prime bank and its truncated version at integers n:
+  B_full(n)=sum_(q prime)C[floor(n/q)],
+  B_theta(n)=sum_(n^theta<q<=n/2,q prime)C[floor(n/q)], 0<theta<1.
+Every profile value with floor<2 is zero. Their staircase extensions at
+real t are the values at n=floor(t). On Re(s)>1, absolute integration
+and t=q*u give the EXACT Mellin identity
+  s*integral_1^infinity B_full(floor(t))*t^(-s-1)dt
+       =F_C(s)*P_prime(s), P_prime(s)=sum_(q prime)q^(-s).        (5.2)
+Here floor(floor(t)/q)=floor(t/q), so no floor error or unit term is
+lost in the change of variable. Each coefficient really has threshold qk.
+
+The removed small-prime bank is exactly
+  B_full(n)-B_theta(n)=sum_(q<=n^theta,q prime)C[floor(n/q)].
+Uniformly for every n>=1, including empty ranges,
+  |B_full(n)-B_theta(n)|
+    <=A*(1+1/(1-kappa))*n^lambda,
+  lambda=kappa+theta*(1-kappa)<1.               (5.3)
+Use floor(n/q)<=n/q and sum_(j<=n^theta)j^(-kappa)
+ <=1+n^(theta*(1-kappa))/(1-kappa). Thus the removed bank's Mellin
+transform is holomorphic on Re(s)>lambda, in particular near s=1.
+
+For completeness, the prime-zeta logarithm is local and elementary.
+On Re(s)>1, the absolutely convergent Euler product gives
+  log zeta(s)=P_prime(s)+sum_(e>=2)P_prime(e*s)/e.                (5.4)
+The last sum is holomorphic in a complex disk about one: choose its real
+part >3/4; then e>=2 prime series are absolutely convergent, and their
+uniform exponential tails in e give normal convergence. Since zeta has
+a simple pole at one and (s-1)zeta(s) is analytic and nonzero in a small
+disk, choose a slit disk and a logarithm to obtain
+  P_prime(s)=-log(s-1)+A_0(s),                  (5.5)
+where A_0 is analytic near one. No global zero-free region is needed.
+
+F_C is analytic near one and not identically zero. It has a finite order
+j>=0 zero there, possibly j>0, so F_C(s)=(s-1)^j*g(s), g(1)!=0. The term
+  -(s-1)^j*g(s)*log(s-1)
+does not extend holomorphically through one; for example its j-th
+derivative has a nonzero logarithmic singularity. Subtracting the analytic
+Mellin correction (5.3) cannot remove this branch. Therefore B_theta has
+a nonholomorphic Mellin germ at one.
+
+Finally a staircase function with a cofinal dyadic energy bound has a
+holomorphic Mellin transform on Re(s)>1/2. Indeed E_B(X)<=C_epsilon*X^epsilon
+implies sum_(X<=n<2X)|B(n)|<=sqrt(C_epsilon)*X^(3/2+epsilon/2).
+The absolute integral over that block is <=a compact-set constant times
+X^(1/2+epsilon/2-Re(s)). Choose epsilon<2Re(s)-1 and sum dyadically;
+normal convergence also gives holomorphy. This contradicts (5.5).
+
+Conclusion: a nonzero profile under these hypotheses cannot have a
+cofinal critical-energy bound as an isolated moving-cutoff unweighted
+prime bank. More strongly it cannot have E_B(X)=O(X^epsilon) at every
+dyadic X for ANY fixed epsilon<1. A finite harmonic zero, or any finite
+number of harmonic logarithmic-moment zeros at one, does not fix this.
+Vanishing to every order would force F_C identically zero near one and
+hence throughout its connected half-plane, contrary to its nonzero profile.
+This theorem excludes paying the isolated deterministic bank. It says
+nothing against a joint cancellation with the actual smooth or centered
+source banks.
+
+6. Application to the actual compensation P_theta
+-------------------------------------------------
+For the theorem use C[m]=C_0(m) for m>=2, and C[0]=C[1]=0. This explicit
+finite-head convention matches Q_theta(n); it does not replace the original
+C_0(1) in (1.3). Put kappa=2/3. Its leading coefficient is
+  gamma_0=2m_u+beta*c_u
+    =beta/kappa_u*[2*zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)]>0.       (6.1)
+Here zeta(2/3)<0 and zeta(4/3)>0. Thus C[m] is eventually nonzero,
+has the required O(m^kappa) growth, and its F_C is analytic near one and
+not identically zero. Whether F_C(1) happens to vanish is irrelevant;
+the theorem permits a finite-order zero of ANY order.
+
+The other two components of P_theta are analytic near one. For the
+weighted profile use C[m]=C_u(m), m>=2, with the same zero head. Its
+full bank has Mellin transform F_Cu(s)*P_prime(s+u), initially where
+both series converge; both factors are analytic in a disk about one.
+The removed weighted bank obeys, for every n>=1,
+  |sum_(q<=n^theta)q^(-u)*C_u[floor(n/q)]|
+       <=A_u*n^(2/3)*(1+theta*log n),           (6.2)
+since kappa+u=1 and integer harmonic counting suffices. Its Mellin
+transform is analytic on Re(s)>2/3. Thus the truncated weighted bank
+is also analytic near one.
+
+The integer main term m_u*n^(2/3) has a staircase Mellin transform
+  m_u*sum_(n>=1)n^(2/3)*[n^(-s)-(n+1)^(-s)],
+normally convergent for Re(s)>2/3. A real-power main term instead has
+m_u*s/(s-2/3); the exact staircase difference is retained by the above
+formula. Either representation is analytic near one, without equating
+their transforms.
+
+Consequently P_theta from (2.2) has the SAME nonremovable logarithmic
+branch supplied by its C_0 unweighted bank. It cannot independently have
+cofinal critical energy. The theorem is uniform in integer n for each
+fixed theta<1. Constants and analytic neighborhoods may depend on theta;
+there is no assertion at theta=1, where the bank is empty.
+
+In contrast, K-P_theta may cancel this branch. The source K is not
+analytic or small by itself under the supplied facts. Calling P_theta
+unpaid is an instruction to retain it in the JOINT kernel, not a claimed
+lower bound for R_new or a counterexample to RH.
+
+7. Exact narrower pole/smooth covariance obligations
+--------------------------------------------------
+Let <f,g>_X=X^(-2)*sum_(X<=n<2X)f(n)g(n). Then exactly
+  E_HR=E_K+E_Ptheta-2<K,P_theta>_X,              (7.1)
+  E_Rnew=E_HR+E_centered_bank
+                         +2<H_R,centered_bank>_X.             (7.2)
+The unweighted pole entry of <K,P_theta> has the complete finite sum
+  X^(-2)*sum_(h>=2,q prime)
+        a(h)*sum_(n in I(h,q))C_0(floor(n/q)),
+  I(h,q)={n integer:X<=n<2X, h<=n,
+                      Pplus(h)<=n^theta<q, 2q<=n}.            (7.3)
+It retains all smooth entries, bank exits and cofactor cells. If the
+low smooth prefix is peeled, impose its exact h threshold and retain
+the paid complement in the full square. Positive support gives
+q>Pplus(h), so q does not divide h. It does not require any additional
+coprimality between h and the cofactor floor(n/q).
+The corresponding weighted/main entries use q^(-u)*C_u and n^kappa_u
+on their exact domains, with the signs from P_theta.
+
+To cancel E_Ptheta one cannot simply assume <K,P_theta> is its positive
+norm. The actual desired credit involves BOTH E_K and the centered-bank
+cross in (7.2), as well as distinct-prime covariance. A bound for (7.3)
+alone would be a substantive narrower signed input, but its sufficient
+sign and constant must follow from actual arithmetic rather than a fitted
+coefficient. Likewise one may prove a joint pole/smooth cancellation
+identity first; (5.2)-(6.2) show why an isolated norm payment cannot replace it.
+
+The new proof hooks are therefore specific: (3.2) gives a finite cofactor
+state alphabet and exact smaller-argument transfers; (4.2) pays its shared-prime
+centered variance after the coupled induction step; (5.1)-(6.2) identify
+an unavoidable isolated deterministic branch; (7.3) is the exact source
+kernel that must participate in its cancellation. These hooks do not
+supply the still missing distinct-prime/fresh smooth signed estimate.
+
+Final status
+------------
+Proved: the complete centered target (2.2), the simultaneous three-state
+transfer (3.2) including prime strips and units, the conditional strictly
+smaller-scale shared-prime rule (4.2), and the source-independent isolated
+deterministic-bank obstruction (5.1)-(6.2). The latter rules out separately
+paying P_theta, with all staircases, finite-order harmonic zeros and removed
+prime ranges accounted for. It does not rule out cancellation with K.
+Open: a joint covariance estimate that closes this coupled induction,
+the original all-scale cofinal moment and RH. No numerical/test work was
+invoked and all older studies, sources, tests, receipts and memos are unchanged.

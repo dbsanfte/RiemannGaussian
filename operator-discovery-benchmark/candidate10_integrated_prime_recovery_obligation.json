@@ -1,0 +1,382 @@
+{
+  "RH_proved": false,
+  "automatic_credit_for_more_local_suppression": false,
+  "centering_feedback": {
+    "RH_proved": false,
+    "analytic_provenance": "CENTERED_COMMON_BANK_CLOSURE_REVIEW_001.txt",
+    "exact_identity": "F(n)=H(n)+sum_q A_q*F(floor(n/q))",
+    "goal_relation": "sufficient coupled route; equivalence to the original target is not asserted",
+    "isolated_payment_excluded": {
+      "conclusion": "P_theta alone has no cofinal critical-energy bound",
+      "expression": "P_theta=m_u*n^(2/3)+sum_q[C0(m)-t*Cu(m)]",
+      "reason": "nonzero deterministic profile has a prime-zeta logarithmic Mellin singularity at s=1",
+      "scope": "standalone pole compensation only; joint cancellation with K and centered banks remains open"
+    },
+    "prime_domain": "q prime, n^theta<q<=n/2; m=floor(n/q)>=2",
+    "prime_parameter": "t=q^(-1/3)",
+    "proof_status": "reviewed analytical input; proof text is not formally checked",
+    "remaining_joint_forcing": "X^-2*sum_n[||H||^2+2*sum_q H^T*A_q*F(m_q)+sum_{q!=r}F(m_q)^T*A_q^T*A_r*F(m_r)]",
+    "shared_prime_rule": {
+      "bound": "(93/2)*2^(2+epsilon)*(1+1/epsilon)*A_epsilon*X^(epsilon/4)",
+      "horizon": "T<=2*X^(1/4)",
+      "matrix_norm_squared_upper": "93/2",
+      "premise": "same simultaneous cumulative induction sum_{m<=T}||F(m)||^2<=A_epsilon*T^(2+epsilon)",
+      "premise_established": false,
+      "storage": "identity matrix on the three states"
+    },
+    "smooth_compensator": [
+      "H_J=K+D-m_u*n^(2/3)-m_v*n^(1/3)+sum_q[-C0(m)+t*Cu(m)+t^2*Cv(m)]",
+      "H_u=K_u-c_u*n^(2/3)+sum_q[(t-1)*c_u*m^(2/3)]+sum_unit_strip(t-1)",
+      "H_v=K_v-c_v*n^(1/3)+sum_q[(t^2-1)*c_v*m^(1/3)]+sum_unit_strip(t^2-1)"
+    ],
+    "state": [
+      "J",
+      "M_u",
+      "M_v"
+    ],
+    "theta": "3/4",
+    "transfer_matrix": [
+      [
+        [
+          [
+            0,
+            "-2"
+          ],
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "-9/2"
+          ],
+          [
+            2,
+            "9/2"
+          ]
+        ],
+        [
+          [
+            0,
+            "-9/2"
+          ],
+          [
+            1,
+            "9/2"
+          ]
+        ]
+      ],
+      [
+        [],
+        [
+          [
+            0,
+            "-1"
+          ],
+          [
+            1,
+            "1"
+          ]
+        ],
+        []
+      ],
+      [
+        [],
+        [],
+        [
+          [
+            0,
+            "-1"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ]
+      ]
+    ],
+    "unit_prime_strip": "q prime, max(n^theta,n/2)<q<=n",
+    "whole_signed_bound_proved": false
+  },
+  "conditional_lemma": {
+    "closed_induction_proved": false,
+    "conclusion": "centered shared-prime square <=2^(2+epsilon)*A_epsilon*(1+1/epsilon)*X^((1-theta)*epsilon)",
+    "coupled_state": "W0=2*J+beta*(M_u+M_v), beta=9/2; all real-pole centers retained",
+    "horizon": "T<=2*X^(1-theta)",
+    "premise": "sum_{m<=T}|W0(m)|^2 <= A_epsilon*T^(2+epsilon) from the SAME closed induction",
+    "provenance": "PRIME_TRANSFER_MARTINGALE_REVIEW_001.txt equation9.5",
+    "unpaid": [
+      "centered distinct-prime covariance",
+      "smooth/common-bank covariance",
+      "deterministic pole and mixed pole terms",
+      "companion-state induction steps"
+    ]
+  },
+  "equivalence_class": "candidate10_complete_prime_bank_covariance",
+  "exact_recovery": {
+    "RH_proved": false,
+    "baseline_coefficient": 1,
+    "candidate_id": 13391,
+    "least_basis_weight": "5/3",
+    "lifted_constant_tensor": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "original_target_recovered": false,
+    "pullbacks": [
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 1,
+        "right_prefix": "inside n-prefix, nonsmooth",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^1*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 1
+        }
+      },
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 2,
+        "right_prefix": "outside n-prefix",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^2*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 2
+        }
+      },
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 3,
+        "right_prefix": "outside n-prefix",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^3*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 3
+        }
+      },
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 4,
+        "right_prefix": "outside n-prefix",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^4*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 4
+        }
+      },
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 5,
+        "right_prefix": "outside n-prefix",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^5*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 5
+        }
+      },
+      {
+        "coefficient": 1,
+        "high_smooth_extra_upper_limit": "(H/q^e)^2",
+        "inverse_image_domain": "h=H/q^e>=2 has at least two distinct prime factors; k=K/q^f>=2",
+        "kernel": "max(0,min(2X,tau(q))-max(X,H/q^e,tau(Pplus(H/q^e)),q*K/q^f))",
+        "left_power": 0,
+        "left_prefix": "unchanged",
+        "obligation_status": "open",
+        "original_smooth_bank_domain": "outside: q divides a lifted coordinate",
+        "right_power": 6,
+        "right_prefix": "outside n-prefix",
+        "source": "beta^2*(B(H)-a_u(H)-a_v(H))*(2*B(K)-a_u(K)-a_v(K))",
+        "substitution": {
+          "H": "q^0*h",
+          "K": "q^6*k"
+        },
+        "theta_range": "1/2<=theta<1",
+        "valuation_guards": {
+          "v_q_H": 0,
+          "v_q_K": 6
+        }
+      }
+    ],
+    "recovery_identity": "auxiliary=baseline_coefficient*original_covariance+sum(all lifted terms)",
+    "reduced_basis": [
+      {
+        "left": 0,
+        "polynomial": [
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            11,
+            -1
+          ]
+        ],
+        "right": 0
+      },
+      {
+        "left": 0,
+        "polynomial": [
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        "right": 1
+      }
+    ],
+    "reduction_independently_verified": true,
+    "reduction_scope": "local source identities under original coprime masks and fixed kernel",
+    "whole_signed_bound_proved": false
+  },
+  "local_recovery_obstruction": {
+    "RH_proved": false,
+    "candidate_ids": [
+      13390,
+      13391,
+      13412,
+      13418,
+      13438,
+      13452,
+      13461,
+      13465,
+      13466,
+      13467,
+      13468,
+      13474,
+      13594
+    ],
+    "excluded_class": "finitely many filters with uniformly bounded scalar recovery coefficients",
+    "necessary_coefficient_growth": "max_j abs(c_j(q)) >= q^(4/3)/85",
+    "not_excluded": [
+      "q-dependent coefficients with recorded growth",
+      "additional arithmetic relations",
+      "signed integrated cancellation",
+      "changed kernels and complete domain compensation",
+      "well-founded coupled scale recurrences"
+    ],
+    "polynomial_l1_sum": 85,
+    "premise": "sum_j c_j(q)*O_j=I on all source tensor components at the same prime and base pair",
+    "prime_weight": "4/3",
+    "status": "bounded_local_linear_recovery_excluded",
+    "whole_signed_bound_proved": false,
+    "witness_tensor": "B(h)*B(k)"
+  },
+  "next_constructions": [
+    "pair complete pulled-back kernels including every outside support",
+    "use local recurrence to reduce higher prime powers to weighted I,T_q actions",
+    "couple centered smaller-cofactor states with smooth and deterministic prime-bank compensation"
+  ],
+  "required_bound": {
+    "all_cross_terms_retained": true,
+    "constants_uniform_in": "X",
+    "expression": "X^-2*sum_{X<=n<2X} complete joint square of K-L0+Lu-main",
+    "growth": "for every epsilon>0: <=C_epsilon*X^epsilon"
+  },
+  "schema": "prime-slide-integrated-recovery-obligation-v1",
+  "scope": {
+    "domain": "all dyadic integers X>=1",
+    "quantifiers": "for every epsilon>0, exists C_epsilon independent of X",
+    "source": "actual_mu_candidate10"
+  },
+  "selected_candidate_id": 13391,
+  "source": "actual_mu_candidate10",
+  "status": "open",
+  "whole_signed_bound_proved": false
+}

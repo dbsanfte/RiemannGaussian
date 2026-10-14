@@ -1,0 +1,333 @@
+Quotient commutator: compensation identities and a local-law obstruction
+
+Scope and outcome
+
+This proof attempt concerns frozen pilot002 mutation64. It is analytical:
+no numerical/source experiments, score inspection, tests, hashes or edits to
+frozen source, data, contracts or soundness files were performed. The only new
+artifact is this memo. The earlier paired identity is restated so this record
+is self-contained. The definition of partial_prime_2 was read from the existing
+contract, without reading its numerical responses.
+
+The attempt supplies two results rather than a global closure:
+
+1. A generic prefix-shift compensation identity replaces the original weighted
+   mixed term by a discrete square increment and a simpler masked source term.
+   Its complete normalized effect is uniformly bounded. Consequently such a
+   prefix-shift mutation preserves the cofinal drift problem up to an additive
+   constant; it does not prove that problem.
+2. A genuine all-scale obstruction applies to reasoning using source increments,
+   squarefree masks, coprime multiplication, the even-index law, and any finite
+   set of correct prime values. Sources satisfying all these laws can have
+   positive linear prefix growth. No nonnegative companion potential can give
+   them the required cofinal drift. The obstruction does not apply to a proof
+   exploiting the full actual-Mobius prime/divisor sign law globally.
+
+universal_estimate_verified = false
+global_bound_proved = false
+RH_proved = false
+
+The actual candidate and target
+
+Let M(n)=sum_{1<=j<=n} mu(j), M(0)=0, chi(n)=mu(n)^2, and
+
+  E(X)=X^-2 sum_{t=X}^{2X-1} M(t)^2.
+
+Mutation64 has one weight1 state
+
+  U(t)=mu(t)1_{floor(t/2)>=1}M(floor(t/4))
+       -mu(max(1,floor(t/2)))M(floor(t/2)),
+  V(X)=X^-2 sum_{t=X}^{2X-1} U(t)^2, W(X)=E(X)+V(X).
+
+At t=1 both prefixes vanish and no mu(0) is requested. Thus W(1)=1. At t>=2
+put n=floor(t/2), A_n=M(floor(n/2)), B_n=M(n). The state is U=a(t)A_n-a(n)B_n
+with a=mu. For dyadic X=2Y, fibers t=2n,2n+1 are complete and Y<=n<=2Y-1.
+Actual mu obeys
+
+  mu(2n)=-1_{n odd}mu(n), mu(n)mu(2n+1)=mu(n(2n+1)).
+
+Hence the exact paired square is
+
+  U(2n)^2+U(2n+1)^2
+    =D_n+2[1_{n odd}chi(n)-mu(n(2n+1))]A_n B_n,
+  D_n=[1_{n odd}chi(n)+chi(2n+1)]A_n^2+2chi(n)B_n^2.       (1)
+
+V(2Y) is (4Y^2)^-1 times the complete sum of (1). The child at 2X uses the
+fresh n-range X..2X-1 and normalization (2X)^-2. Its parent at X uses
+X/2..X-1 and normalization X^-2. Source factors inside the mixed term are
+retained; neither it nor the diagonal is an unmasked lag identity.
+
+First companion attempt: polarization cancels the correlation at a cost
+
+Write T=a(t)A_n and R=a(n)B_n. Add the companion U_+=T+R to U_-=T-R. For
+nonnegative fixed weights w_-,w_+,
+
+  w_-U_-^2+w_+U_+^2
+    =(w_-+w_+)(T^2+R^2)+2(w_+-w_-)TR.                 (2)
+
+Except on a separately proved degenerate domain, generic cancellation of TR
+requires w_+=w_-. Equal weights remove the quadratic-polynomial correlation
+from (1), but leave the positive diagonals 2w(T^2+R^2). After normalization,
+these are still source-gated macroscopic lag energies. They do not supply a
+negative coefficient of the complete target E or an independent bound on it.
+
+This is the general quadratic-bank rule: if states are c_j dot T, adding
+nonnegative squared states gives Gram matrix Q=sum_j w_j c_j c_j^T, which is
+positive semidefinite. Off-diagonal cancellation can diagonalize the bank;
+it cannot make a remaining diagonal negative. Adding the target square adds
+another positive diagonal. This is a pointwise cancellation statement, not
+a claim that all signed temporal drifts of positive potentials are positive.
+Temporal compensation would require an additional valid transport estimate.
+
+For actual mu and w=1 the two-state potential is at most
+2H_4(X)+2H_2(X)=E(X/4)/2+E(X/2) for dyadic X>=4, where
+H_d(X)=X^-2 sum M(floor(t/d))^2. Unknown energies remain on the right. An
+equal-weight companion has therefore removed the desired signed mechanism
+while preserving the original target cost, rather than proving its drift.
+
+Second companion attempt: a useful exact prefix-shift compensation
+
+This identity holds for EVERY ternary source a(n) in {-1,0,1}, not only mu.
+Let S(n)=sum_{j<=n} a(j), S(0)=0, n>=1, let A_n be any real quantity, and set
+
+  U(t)=a(t)A_n-a(n)S(n),
+  U'(t)=a(t)A_n-a(n)S(n-1),  n=floor(t/r).
+
+With chi_a(n)=a(n)^2 and F_n=S(n)^2, one has U'=U+chi_a(n), and exactly
+
+  U(t)^2-U'(t)^2
+    =F_n-F_{n-1}-2a(t)chi_a(n)A_n.                  (3)
+
+Proof: expand U^2-(U+chi_a)^2, use a(n)^3=a(n), chi_a(n)^2=chi_a(n), and
+2a(n)S(n)=F_n-F_{n-1}+chi_a(n). No cancellation hypothesis is used.
+
+For a complete r-fiber t=rn,...,rn+r-1 put
+
+  H_r(n)=sum_{j=0}^{r-1} a(rn+j)
+        =S(rn+r-1)-S(rn-1).
+
+Summing (3) first over fibers and then over n=a,...,b gives
+
+  sum_t [U(t)^2-U'(t)^2]
+    =r(F_b-F_{a-1})-2sum_{n=a}^b chi_a(n)A_n H_r(n).  (4)
+
+This is a concrete parameterized compensation identity. It replaces the
+source-weighted product a(n)S(n)A_n H_r(n) in the original paired expansion
+by endpoint squares and a source-masked correlation without S(n).
+
+For mutation64 take r=2,A_n=M(floor(n/2)), and in its shifted companion replace
+only the second prefix M(n) by M(n-1). At n=0 define both states to be0 with
+the same domain guard; in the AST the shifted prefix endpoint may be
+max(0,n-1), so no negative endpoint or mu(0) is evaluated. Formula (4) becomes
+
+  X^2(V(X)-V'(X))
+    =2[M(X-1)^2-M(X/2-1)^2]
+       -2sum_{n=X/2}^{X-1} chi(n)M(floor(n/2))
+                                 [mu(2n)+mu(2n+1)]          (5)
+
+for dyadic X>=2. At X=1 both potentials are0. The endpoints in (5) are not
+silently discarded. The residual is a genuinely simpler masked correlation,
+but the entire expression is already uniformly bounded using |a|<=1.
+
+Indeed |U|<=floor(n/2)+n<=3n/2, |U'-U|<=1, and n<=t/2. Consequently
+
+  |U(t)^2-U'(t)^2|<=3t/2+1,
+  |V(X)-V'(X)|<=9/4+1/(4X)<=5/2                    (6)
+
+for every positive integer X; t=1 contributes zero and satisfies the bound.
+The displayed constant follows by summing t=X,...,2X-1 exactly. This is a
+uniform bounded difference, not a bound on either V separately. In particular
+
+  |DeltaW(X)-DeltaW'(X)|<=5.
+
+Thus a cofinal-q estimate for either potential implies the estimate for the
+other with Cq enlarged by5, since ceil(X^(1/q))>=1. W'(1)=W(1)=1. This is
+useful equivalence information for structural discovery but supplies no
+proof that either estimate holds. Adding U'^2 as a positive companion does
+not subtract it: the telescoping credit in (3) is a DIFFERENCE of squares.
+
+Generic proof/detector hook for bounded prefix shifts
+
+For any source |a|<=1, a state satisfying |U(t)|<=C t and a mutation D(t)
+with |D(t)|<=d obeys
+
+  |[ (U+D)^2 ]_X-[U^2]_X|<=3Cd+d^2.                (7)
+
+This follows by summing 2|U D|+D^2 with the original normalization. Therefore
+fixed finite shifts of a prefix endpoint inside a linearly growing state
+give bounded changes in potential whenever the prefactors are uniformly
+bounded. This statement does not extend automatically to nonlinear states
+whose growth is quadratic or to shifts that grow with X.
+
+A detector can parameterize r>=2, a map g(n) with 0<=g(n)<=kappa n, and states
+ a(t)S(g(floor(t/r))) +/- a(floor(t/r))S(floor(t/r)),
+using an n>=1 guard/max at n=0. It can synthesize:
+ - the plus companion and exact Gram/off-diagonal cancellation (2);
+ - the one-step prefix-shift companion and exact certificates (3),(4);
+ - fixed bounded endpoint shifts, certified by (7);
+ - fiber-source expansions H_r(n), retaining clipped boundary fibers if r
+   does not divide X. Formula (4) itself is used only on complete fibers.
+
+These are parameterized grammar/proof hooks, not a hardcoded64 identity or
+evidence that a larger source footprint improves the signed estimate.
+
+A stronger obstruction than the constant-source comparison
+
+The earlier constant-one diagnostic fails mu's even-index and squarefree
+laws. A countermodel satisfying those laws is the already defined diagnostic
+partial_prime_2, extended here to all positive integers as
+
+  f_2(n)=mu(n)^2*(-1 if n is even else1).
+
+This definition uses the squarefree predicate, not a new computed source
+table. It is multiplicative on coprime inputs, is zero precisely off the
+squarefree support, satisfies f_2(n)^2=chi(n), f_2(1)=1, f_2(2)=-1, and
+
+  f_2(2n)=-1_{n odd}f_2(n).
+
+Let Q_odd(N) count odd squarefree integers <=N. Then exactly
+
+  S_2(N)=sum_{n<=N} f_2(n)=Q_odd(N)-Q_odd(floor(N/2)),   (8)
+
+the count of odd squarefree integers in (N/2,N]. This is positive linear in
+N by elementary counting, without using any Mertens estimate. There are at
+least N/4-1 odd integers in that interval. Odd nonsquarefree integers are
+divisible by p^2 for an odd prime p<=sqrt(N). For each p their count is at
+most N/(4p^2)+1. Since
+
+  sum_{p odd} p^-2 <=sum_{k=3}^infinity k^-2
+                    <=1/9+integral_3^infinity u^-2 du=4/9,
+
+the union bound gives S_2(N)>=5N/36-sqrt(N)-1. In particular S_2(N)>=cN for
+some fixed c>0 and all sufficiently large N. This is a proved all-scale
+local-law obstruction. The run's finite partial_prime_2 numerical controls
+were diagnostics, not this proof; no such responses are used here.
+
+It follows that the pairing laws in (1), source increments, squarefree masks
+and coprime multiplication alone cannot prove cofinal drift. They hold for
+f_2, whose complete target energy is at least c^2 X on all sufficiently large
+dyadic blocks. No added nonnegative potential can hide this target growth.
+
+Finite-P extension: even arbitrarily long finite agreement is insufficient
+
+Let P be ANY finite set of primes containing2, D=product_{p in P} p. Define
+the source f_P by f_P(p)=-1 for p in P, f_P(p)=+1 for primes outside P, by
+coprime multiplicativity on squarefree integers, and f_P(n)=0 on nonsquarefree
+integers. Thus f_P^2=chi and it obeys the same even-index law as actual mu.
+It agrees with mu whenever all prime factors lie in P. In particular, if P
+contains every prime <=B, it agrees on EVERY integer <=B, while no actual
+source computation at B is needed for this symbolic statement.
+
+Here is a self-contained mean calculation. Let
+
+  Q_D(T)=#{m<=T: m squarefree, gcd(m,D)=1},
+  h_D=product_{p|D}(1-1/p)>0,
+  Z_D=product_{p not dividing D}(1-1/p^2)>0.
+
+The infinite product converges to a positive number because sum_p p^-2 is
+finite and every factor is positive. The squarefree indicator expansion
+chi(m)=sum_{k^2|m} mu(k), followed by the finite coprimality count, gives
+
+  Q_D(T)=sum_{k<=sqrt(T),gcd(k,D)=1} mu(k)
+             #{l<=T/k^2:gcd(l,D)=1}
+        =h_D T sum_{gcd(k,D)=1} mu(k)/k^2+O_D(sqrt(T))
+        =h_D Z_D T+O_D(sqrt(T)).                         (9)
+
+The error is elementary: each coprimality count is h_D times its endpoint
+plus O_D(1), there are at most sqrt(T) terms, and the absolutely convergent
+tail contributes at most T sum_{k>sqrt(T)} k^-2=O(sqrt(T)). The Euler product
+in (9) follows from absolute convergence, not cancellation of partial sums
+of mu. No RH, subpower energy or prime-distribution estimate is used.
+
+Every squarefree integer is uniquely d*m with d|D,gcd(m,D)=1, and f_P(d*m)
+=mu(d). Therefore
+
+  S_P(N)=sum_{d|D} mu(d)Q_D(N/d)
+         =c_P N+O_D(sqrt(N)),
+  c_P=h_D^2 Z_D>0.                                      (10)
+
+This explicit positive constant is generic in P; no value is numerically
+evaluated. It yields, by symbolic summation on X<=t<2X,
+
+  E_P(X)=(7/3)c_P^2 X+O_D(sqrt(X)).                       (11)
+
+Crucially f_P is NOT actual mu on all primes. The full law mu(p)=-1 for EVERY
+prime, or equivalently the full divisor inverse identity, is not among the
+countermodel's hypotheses. Indeed
+
+  sum_{d|n} f_P(d)=product_{p|n}(1+f_P(p))
+
+is nonzero when n>1 has all prime factors outside P. The no-go excludes
+closures derived only from the listed local laws and restricted-P prime
+values; it does not refute a global actual-mu argument using the missing law.
+
+No-go theorem for ANY nonnegative companions in this local-law class
+
+Fix any finite P, any finite W_P(1), and ANY potential V_P(X)>=0 finite at
+each dyadic scale, not necessarily mutation64 or a polynomial potential.
+If the cofinal-q drift claim held for W_P=E_P+V_P, telescoping at even one
+fixed q>1 would give W_P(X)=O_q(X^(1/q))+O(W_P(1)). This contradicts (11) and
+W_P>=E_P. Thus neither a companion bank nor an induction credit valid over
+this entire local-law class can close the actual target's cofinal drift.
+
+More precisely,
+
+  limsup_{X dyadic -> infinity} [W_P(2X)-W_P(X)]/X
+      >=(7/3)c_P^2.                                    (12)
+
+For if that limsup were smaller, choose delta<(7/3)c_P^2 above it. Summing
+DeltaW_P(X)<=delta X for all sufficiently large dyadic X would yield
+W_P(X)<=delta X+O(1), contradicting (11). Thus positive linear innovations
+must occur infinitely often in every such nonnegative extension. No bound
+on V_P from above is required. This is an all-scale conclusion, unlike a
+stored-constant finite failure, and its scope remains the countermodel class.
+
+An actual-mu global companion that cancels completely: what it loses
+
+The missing global divisor law does provide a useful generic proof hook.
+For a source a satisfying sum_{d|m}a(d)=1_{m=1}, with prefix S,
+
+  sum_{j=1}^N S(floor(N/j))
+    =sum_{m=1}^N sum_{d|m} a(d)=1,  N>=1.              (13)
+
+For actual mu this is exact. It is represented by the existing nested-sum
+grammar: sum j=1..t of sum i=1..floor(t/j) of x(i); no zero source request
+arises. The complete quotient bank is the state1, with potential1/X and
+signed drift -1/(2X). If one removes its j=1 term, the remaining bank is
+1-M(t). Adding it to M(t) gives the constant state, or subtracting1 gives an
+identically zero state. Those cancellations erase the target information
+from V; the target E is still required in W=E+V.
+
+Thus using the constant state as the sole weight1 potential gives W=E+1/X,
+DeltaW=DeltaE-1/(2X), and W(1)=2. Its cofinal claim is equivalent to the
+original target claim up to a constant shift, not a proof. Adding that state
+to64 instead gives W64+1/X, a bounded-padding equivalent of64 with initial2.
+Squaring the
+remainder 1-M(t) retains the unknown macroscopic energy instead. Replacing
+prefixes in64 by such complete remainder banks is an exact rewrite, but
+introduces all complementary quotient terms and retains their mixed costs.
+Using only a partial quotient bank would invalidate (13). The full inverse
+identity and its truncation complements are appropriate detector certificates;
+they cannot be promoted to a subpower estimate by dropping the original E.
+
+Induction-credit audit and remaining mathematical boundary
+
+The unconditional comparison
+
+  E(X)<=W64(X)<=E(X)+E(X/2)+E(X/4)/2, dyadic X>=4,
+
+cannot close an induction on E(2X): the unknown current energy E(2X) remains
+on the child's right side. A legitimate credit must be bounded and absorbed
+with explicit constants, or supplied by an independent signed theorem.
+Equations (3)-(7) certify bounded changes of potential but no such new credit;
+(2) removes the signed correlation at a positive-diagonal cost; (13) cancels
+a complete bank while returning only bounded padding. The countermodels
+prove that a local-law-only credit with the desired conclusion is impossible.
+
+The actual-mu global problem therefore remains open in this attempt. A proof
+could still use the full prime/divisor sign law to estimate or compensate
+the weighted mu(n(2n+1)) term together with all diagonals and the fresh-child
+target. None of the above establishes that estimate. One fixed program, W(1),
+fresh child X->2X, and constants Cq independent of every dyadic X for every
+cofinally large integer q remain required. The structural compensation,
+bounded-prefix-shift equivalence and finite-P no-go are the concrete outputs.

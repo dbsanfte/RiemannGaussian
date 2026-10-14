@@ -1,0 +1,72 @@
+DIRECT UNIFORM SIGNED MOMENTS TO ORDINARY-ZETA CONTROL
+
+This is an additional universal transfer theorem. It reclassifies existing
+numerical leads; it does not reuse inspected final data as fresh evaluation,
+retune an archive, or prove any new uniform arithmetic moment premise.
+
+1. THE DIRECT HALF-PLANE
+
+Let R be a signed residual whose ordinary-zeta Mellin identity is
+ T_R(s)=F(s)/(s*zeta(s))+H(s), Re(s)>1,
+where H is holomorphic on Re(s)>0. Suppose, for EVERY dyadic X>=1,
+ A_q(X)=integral_X^(2X)|R(t)|^q dt <= C X^beta,
+with even q>=2 and finite C>0. Define eta=(beta-1)/q.
+For sigma>max(eta,0), Holder's inequality and t>=X give
+ integral_X^(2X)|R(t)|t^(-sigma-1)dt
+ <= X^(-sigma-1)*X^(1-1/q)*A_q(X)^(1/q)
+ <= C^(1/q)*X^(eta-sigma).
+Summing X=2^j proves
+ integral_1^infinity |R(t)|t^(-sigma-1)dt
+ <= C^(1/q)/[1-2^(eta-sigma)].
+On any compact subset of Re(s)>max(eta,0), the same summable geometric
+majorant, with polynomial j factors for log(t) derivatives, proves that
+T_R(s) is holomorphic there. No Lipschitz-to-pointwise loss is required.
+
+If F is nonzero everywhere on Re(s)>=1/2, this excludes ordinary-zeta zeros
+Re(s)>max(eta,1/2). If eta<=1/2 it excludes EVERY zero right of 1/2, and
+the classical functional-equation reflection gives RH. A SINGLE fixed q
+therefore suffices if beta<=q/2+1 and the premise is actually proved.
+This corrects the overly broad statement in the earlier pilot report that
+a finite list of moment orders is always insufficient. A sequence approaching
+the critical exponent is one route, not a mandatory form of an RH proof.
+
+2. A SHARPER FALSIFICATION RULE
+
+A known critical-line zero rho with F(rho)!=0 gives a nonremovable pole of
+F(s)/(s*zeta(s)). Since H is holomorphic near rho, any uniform moment claim
+with eta<1/2 is impossible. The necessary threshold is beta>=q/2+1, stronger
+than the Lipschitz pointwise threshold beta>=(q+1)/2.
+This obstruction applies even when no all-height inverse certificate is
+available, provided F is proved nonzero on the certified actual-zero disk.
+It does not require assuming RH. The numerical audits use a fresh nested
+Rouche disk and classical reflection/uniqueness for its critical-line location.
+Neither a finite fit nor passing fresh complete windows can defeat this pole.
+
+3. QUANTITATIVE CONTROL OF THE RECIPROCAL OF ORDINARY ZETA
+
+For R(t)=M_tilde(t)-sum a_d M_tilde(t/d), write F(s)=1-sum a_d d^(-s).
+Let E(s)=integral_1^infinity [M_tilde(t)-M_step(t)]t^(-s-1)dt.
+The interpolation error is bounded by one, so |E(s)|<=1/sigma for sigma>0.
+Substitution in each dilation gives the exact identity
+ T_R(s)=F(s)/(s*zeta(s))+F(s)E(s)+K(s),
+ K(s)=-sum a_d*(d^(-s)-d^(-1))/(1-s).
+The apparent singularity of each compact correction at s=1 is removable.
+For Re(s)=sigma>0,
+ |K(s)|<=K_sigma=sum |a_d|/d * integral_1^d t^(-sigma)dt.
+If the independently certified multiplier lower bound is |F(s)|>=delta>0,
+then at EVERY height, for sigma>max(eta,1/2),
+ |1/(s*zeta(s))|
+ <= [C^(1/q)/(1-2^(eta-sigma))+K_sigma]/delta + 1/sigma.
+This retains all constants and the multiplier cost. Unlike pointwise recovery
+of M, direct zero exclusion needs no weighted inverse operator bound.
+The all-scale arithmetic premise remains explicit and unproved in this pilot.
+
+4. INDEPENDENCE AND SCOPE
+
+The input candidate batches, archives, final moments and their previous
+independent audits retain their hashes. This later analytic audit makes no
+candidate selection and no new claim of held-out numerical validation.
+It applies the stronger universal implication and pole obstruction to every
+generated program. Unsupported global multiplier certificates remain distinct
+from an actual ordinary-zero obstruction. Exact coefficients and ball-arithmetic
+multiplier checks cannot substitute for an all-scale signed moment proof.

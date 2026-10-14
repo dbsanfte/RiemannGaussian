@@ -1,0 +1,343 @@
+FINITE TRUNCATED DIRICHLET INVERSES AND THE JOINED SHORT-MOBIUS FRONTIER
+
+Scope and status
+----------------
+Only this new analytical memo is written. Frozen sources, prior reviews,
+protocols and numerical studies remain unchanged. No source evaluation,
+experiment, test, parameter computation or hash is performed. The finite
+inverse identities, support rules, some weighted-error payments and the
+absolute-treatment obstructions below are PROVED. A complete all-scale
+signed kernel estimate for the actual core is still OPEN; no RH claim is
+made. These rules support detector generation, not a supplied solution.
+
+1. Dirichlet units, active cutoffs and complete actual-source binding
+--------------------------------------------------------------------
+All products in this memo are Dirichlet convolution unless explicitly
+called pointwise. The unit delta has delta(1)=1 and delta(n)=0 otherwise.
+Put b0(n)=1, bv(n)=n^(-v), mu0(n)=mu(n), muv(n)=mu(n)n^(-v),
+u=1/3, v=2/3, ku(n)=n^(-u). The exact complete inverse laws are
+ b0*mu0=delta, bv*muv=delta.                            (1.1)
+The second follows termwise from the first, since a pointwise n^(-v)
+weight is a homomorphism for Dirichlet convolution. All prime powers,
+common divisors and repeated valuations are included. A fake partial
+source satisfying only finitely many prime laws is not a replacement
+for the source binding in(1.1).
+
+For a positive integer N and nonnegative rational cutoff exponents set
+ U=floor(N^alpha), V=floor(N^gamma),
+ A(n)=mu(n) if n<=U, else0,
+ B(n)=mu(n)n^(-v) if n<=V, else0,
+ R=delta-b0*A, S=delta-bv*B.
+Nonnegative exponents ensure U,V>=1 and the unit of A and B is present.
+For the stated FINITE weighted-quotient synthesis, require alpha>0
+whenever the inverse power p is positive, and gamma>0 whenever q is
+positive. An unused variable can be removed instead. If alpha0,p>0,
+there are infinitely many retained powers r^i of weight0; the proposed
+quotient is not finite-dimensional. A separate N-dependent degree cap
+from support2 would then be necessary. Negative cutoffs can remove the
+unit, make R(1)=1, and invalidate the inverse construction; reject them.
+
+The full source of the current obligation is
+ f=beta ku*(mu0*mu0)-beta ku*(mu0*muv)-beta mu0-R_u ku*muv,
+ beta=9/2. This is the COMPLETE centered/preconditioned coefficient
+source, with its unit, positive real-pole compensation and all four
+modes already encoded. In particular f(1)=-beta-R_u. No mode or pole
+channel is subsequently discarded. The transported source is g=f-e,
+where e=f-g is the exact checked transport correction, not an estimated
+or reconstructed replacement. Transport leaves the unit unchanged.
+
+2. Strict support and exact rational-root cutoff convention
+-----------------------------------------------------------
+For n<=U the b0*A divisor sum includes all divisors of n, so R(n)=0
+by(1.1). For n<=V the weighted inverse law similarly gives S(n)=0.
+For the remaining integers one has the exact formulas
+ R(n)=-sum_(d|n,d<=U)mu(d), n>U,
+ S(n)=-n^(-v)sum_(d|n,d<=V)mu(d), n>V.                 (2.1)
+These are signed truncated divisor sums. They must not be silently
+replaced by independent nonnegative variables or their absolute bounds.
+
+For alpha=a/b in reduced rational form, U is the unique nonnegative
+integer with U^b<=N^a<(U+1)^b. Compute this using exact integer powers
+and roots under the meter, rather than floating N^alpha. The analogous
+rule defines V. Therefore U+1>N^alpha and V+1>N^gamma strictly, including
+N1 and exact-power boundaries.
+
+Every term of R^i*S^j has each R-factor integer at least U+1 and each
+S-factor at least V+1. For i+j>0 its support is at least
+ (U+1)^i(V+1)^j>N^(alpha*i+gamma*j).
+Thus alpha*i+gamma*j>=1 implies support strictly GREATER than N.
+The equality threshold is discarded safely. The word support means a
+lower bound on every possibly nonzero coefficient; cancellations could
+raise it further, but no assertion of exact first support is needed.
+
+3. The unique finite inverse polynomial and its proof
+-----------------------------------------------------
+Let I be the monomial ideal spanned by r^i s^j with alpha*i+gamma*j>=1.
+With positive active exponents its complement is finite. In the quotient,
+r and s are nilpotent and (1-r)^p(1-s)^q is a unit. Its unique inverse is
+ P_(p,q)(r,s)=sum_(alpha*i+gamma*j<1) c_p(i)c_q(j)r^i s^j,
+ c_p(i)=binom(p+i-1,i) for p>=1,
+ c_0(0)=1, c_0(i)=0 for i>0.                            (3.1)
+For p1 the coefficients are1; for p2 they are i+1. The same definition
+applies to q. An exact coefficient solver for
+ (1-r)^p(1-s)^q P=1 modulo I
+must return this polynomial. This explicit Taylor description is a
+validation rule for generated solutions, not a seeded choice of cutoff.
+
+From mu0*(delta-R)=A and muv*(delta-S)=B, the formal Dirichlet algebra
+gives
+ mu0^p*muv^q=A^p*B^q (delta-R)^(-p)(delta-S)^(-q).
+Its coefficient at any fixed n is a finite sum, since R(1)=S(1)=0.
+Replacing the formal inverse by(3.1) has an error supported>N by
+Section2, and convolution with A^p*B^q cannot decrease support. Hence
+ mu0^p*muv^q=A^p*B^q*P_(p,q)(R,S) on EVERY n<=N.        (3.2)
+Equivalently multiply the finite polynomial equation by the actual
+inverse powers; its ideal error remains supported>N. No convergence
+of an infinite Dirichlet series at s1/2 or s2/3 is used in this proof.
+All statements are finite coefficient identities with strict supports.
+
+4. One horizon for a joined parent/child increment
+-------------------------------------------------
+For a coarse increment at scale X choose ONE N=4X-1, and use that same
+A,B,R,S and every P_(p,q) for all parent n in[X,2X) and child n in[2X,4X).
+The full prefixes, log channels and cell means involve only k<=n<=N,
+so(3.2) is valid at every required coefficient. It yields the exact source
+ f_N=beta ku*A^2*P_(2,0)-beta ku*A*B*P_(1,1)
+                       -beta A*P_(1,0)-R_u ku*B*P_(0,1),
+ f_N(n)=f(n), g(n)=f_N(n)-e(n), n<=N.                  (4.1)
+At n1 every positive-degree residual monomial vanishes, A(1)=B(1)=1,
+and all four units reproduce -beta-R_u. No main or unit correction is
+created by the expansion. All e terms and crosses must remain before
+forming the actual signed channel squares or projected means.
+
+These COMPONENTS depend on N, even though their join equals the same
+global source. For the next increment they may use another N. A proof
+of a component recurrence cannot silently compare differently truncated
+parent/child components or carry over a smaller-horizon bound. Either
+make the component lemma uniform in the shared N or formulate it directly
+for the joined exact source increment with ONE N at each scale.
+
+5. What absolute coefficient information really pays
+----------------------------------------------------
+From(2.1), without any signed prefix hypothesis,
+ |A(n)|<=1_(n<=U), |B(n)|<=n^(-v)1_(n<=V),
+ |R(n)|<=d2(n)1_(n>U), |S(n)|<=n^(-v)d2(n)1_(n>V).    (5.1)
+The long weighted error S is genuinely easier for absolute critical
+convolution, while the common unweighted inverse error R is not.
+
+Define M_c(N)=sum_(n<=N)|c(n)|n^(-1/2). Complete convolution satisfies
+ M_(c*d)(N)<=M_c(N)M_d(N). The following explicit bounds suffice:
+ M_A<=2sqrt U,
+ M_B<=7,
+ M_R<=2sqrt N(1+log N),
+ M_S<=min(49,42 V^(-1/6)),
+ M_ku<=6 N^(1/6).                                     (5.2)
+For A and ku integrate n^(-1/2) and n^(-5/6). For B, its absolute
+series is bounded by sum n^(-7/6)<=1+6=7. For R, expand d2 and bound
+sum_(ab<=N)(ab)^(-1/2)<=2sqrt N sum_(a<=N)1/a.
+For S the complete series is at most(sum n^(-7/6))^2<=49. A sharper
+NO-LOG tail uses the exact inverse law:
+ S=bv*(muv-B).
+The critical weighted convolution is absolutely summable, since its
+individual factors have exponent v+1/2=7/6>1. Therefore
+ M_S<=zeta(7/6)sum_(d>V)|mu(d)|d^(-7/6)
+ <=7 int_V^infinity t^(-7/6)dt=42 V^(-1/6).
+This is a justified absolutely convergent positive majorant, not an
+ordinary signed-series convergence assertion at the canceled pole2/3.
+It includes all repeated valuations and is stronger than applying the
+coefficientwise d2 tail to S.
+
+For one component ku^epsilon*A^p*B^q*R^i*S^j, epsilon0or1, multiply
+the bounds(5.2) and the exact nonnegative polynomial coefficient
+c_p(i)c_q(j). This proves a fully explicit absolute weighted-mass bound.
+For every block Y with2Y-1<=N, its coefficient-absolute prefix energy
+is at most(3/2) times that mass bound squared: its prefix at n is at most
+sqrt n times the mass, and sum_(n=Y)^(2Y-1)n<=(3/2)Y^2.
+For rational exponent accounting use U<=N^alpha and
+42 V^(-1/6)<=84 N^(-gamma/6), since floor x>=x/2 for x>=1 and
+2^(1/6)<=2. A convenient completely rational mass certificate is
+ M_component<=C_component N^e(1+log N)^i,
+ e=epsilon/6+p alpha/2+i/2-j gamma/6,
+ C_component=c_p(i)c_q(j)6^epsilon 2^(p+i)7^q84^j.      (5.3)
+Multiply C by the absolute source scalar, or its certified rational
+upper bound beta or5 for the present R_u<5. The mass log degree is i;
+the ENERGY exponent is2e and its log degree is2i, not i. The coarse
+energy rule(3/2)M^2 is stronger than the runner's also valid4M^2 bound;
+the latter follows from n<=N and N/Y<=4 for either joined block.
+These are upper certificates, not asymptotics or lower bounds on actual
+signed components. In a more general grammar an S-tail component with
+e<=0 could be paid by this rule; all mixed crosses would still require
+the declared exact join or an explicit Young payment.
+
+For the four ACTUAL source rows every retained component has e>0:
+ leading row (epsilon,p,q)=(1,2,0): j0 and e=1/6+alpha+i/2;
+ mixed row (1,1,1): gamma*j<1-alpha*i gives
+                  e>alpha/2+i(1/2+alpha/6)>0;
+ plain row (0,1,0): j0 and e=alpha/2+i/2>0;
+ weighted-center row (1,0,1): i0 and e=(1-gamma*j)/6>0.
+Positive active alpha and the strict retained monomial condition are
+essential in these formulas. Thus the no-log S improvement is genuine,
+but THIS finite source component payment scheme pays NONE of the full
+source components. It exposes the signed joining obligation rather than
+claiming an exponent gain. A power-unpaid UPPER certificate does not
+prove the corresponding actual signed component has power growth.
+Changing cutoffs does not turn these absolute rules into a full bound.
+Sharper short support bounds can pay some plain-A finite-head pieces,
+and alternative weights may tighten a component bound, but the common
+mu0 sector and its joined cancellation cannot be inferred from(5.1).
+
+6. Rigorous absolute-treatment obstructions; distinctions matter
+---------------------------------------------------------------
+Three different operations must not be conflated.
+
+(a) FACTORWISE triangle treatment replaces each convolution factor by
+its absolute value. Since A(1)=1, the positive majorant ku*|A|*|A|
+contains ku. Its prefix is at least Z_u(n)=sum_(k<=n)k^(-u)>=n^(2/3),
+since each of its n terms is at least n^(-1/3). Thus this branch has
+energy at least X^(1/3), or beta^2 X^(1/3) with the source coefficient.
+It cannot be paid as a polylog, regardless of cutoffs.
+The same argument applies to any nonzero isolated delta-head factor
+convolved with ku or b0; for b0 the analogous energy grows like X.
+
+(b) Even if all signs inside A*A are preserved BEFORE taking coefficient
+absolute values, the particular zero-residual component C=ku*A*A obeys
+at every prime ell the EXACT local formula
+ C(ell)=ell^(-1/3)-2 if ell<=U,
+ C(ell)=ell^(-1/3) if ell>U.
+Consequently |C(ell)|>=ell^(-1/3) for EVERY prime, independently of N
+or U. This automatically refutes a coefficientwise-absolute polylog
+payment for that component, not only the looser factorwise majorant.
+
+No PNT import is needed for an explicit lower rate. For m=floor(x/2),
+the central binomial coefficient is at least4^m/(2m+1). Its valuation
+at a prime ell is a sum of at most floor(log(2m)/log ell) terms0or1,
+so each prime's logarithmic contribution is at most log(2m). Therefore
+ pi(x)log x>=2m log2-log(2m+1)
+ >=(x-2)log2-log(x+1)>=x/4 for x>=16.
+The last inequality uses log2>1/2, log17<3, and a positive derivative
+thereafter; log17<3 follows, for example, from the finite series e^3>17.
+Hence pi(x)>=x/(4log x), x>=16. On any block X>=16 the coefficient-
+absolute prefix of C is at least X^(2/3)/(4log X), since it contains all
+primes through X. Its energy is therefore at least
+                        X^(1/3)/(16 log(X)^2).         (6.1)
+The beta coefficient multiplies this lower bound by beta^2 if kept as
+a separate absolute source component. This is an all-scale analytical
+obstruction to that proof rule, not a numerical observation.
+
+The complete join must retain known local cancellations too. At a prime
+ell the actual four-mode source has
+ f(ell)=-R_u ell^(-1/3)+(beta+R_u)ell^(-2/3).
+The constant prime terms of the first three modes cancel exactly.
+Within a row, residual components also restore the missing truncated
+prime coefficient when ell>U or ell>V. Then the actual transport e may
+cancel this full prime coefficient in an accepted window. None of these
+identities survives separate component absolute values. This does not
+prove favorable composite/cofactor cancellation, but it identifies local
+cancellations the kernel compiler must preserve before posing its leaf.
+
+(c) Taking absolute values only AFTER summing the whole signed component
+PREFIX is different. Its internal A and residual signs can cancel.
+A unit inside A does NOT by itself prove a power lower bound for such
+a signed prefix. Neither(a)nor(b)refutes that possibility. An estimate
+using it must explicitly retain the actual short-Mobius signed sum and
+prove the necessary source-specific cancellation instead of citing the
+divisor envelope. In particular, a local residual R is itself a signed
+inverse-error coefficient and may not be treated as a positive mass.
+
+An explicit complete-head decomposition gives a related cancellation
+burden without confusing these distinctions. Split every factor into
+its unit and proper-support part and combine ALL four source unit-heads
+before treating them. R and S have unit0, so the resulting head is
+ H=-R_u ku-beta delta, f=H+T_N exactly through N. With the actual R_u>0,
+its prefix is -R_u Z_u(n)-beta and its norm on a block is at least
+(R_u/2)X^(1/6). Any separate absolute payment for this head is therefore
+power-unpaid. The joined complement must contain a macroscopic opposite
+contribution. By the reverse norm triangle,
+ ||prefix T_N-prefix e||_X>=||prefix H||_X-||G||_X.
+If the target were cofinal subpower, this complement would still have
+power-sized norm; it is not small padding. In the full energy identity
+ ||G||^2=||Hprefix||^2+||T_Nprefix-D||^2
+                       +2< Hprefix,T_Nprefix-D>,
+the mixed term must cancel that macroscopic cost. Keeping it is mandatory.
+This is a precise obligation, not proof that the cancellation is absent.
+
+7. Detector-generable short-factor signed bilinear leaves
+--------------------------------------------------------
+Enumerate the exact modes and retained monomials from(4.1), with their
+signed coefficients lambda_c, and append the exact transport component
+e with coefficient-1. For any polynomial/log channel of014 define
+ Phi_i(n,k)=L(n)^(-eta_i)p_i(log k/L(n))1_(k<=n).
+For each source component c let
+ T_(i,c)(I)=Lcell^(-1)sum_(n in I)sum_(k<=n)c(k)Phi_i(n,k).
+Then the FULL joined coarse increment is
+ sum_(c,d)lambda_c lambda_d B_(X,N)(c,d),
+ B_(X,N)(c,d)=Lchild/(2X)^2 sum_(I child)sum_i T_(i,c)(I)T_(i,d)(I)
+                 -rho Lparent/X^2 sum_(I parent)sum_i T_(i,c)(I)T_(i,d)(I),
+with the same N=4X-1 components in both rows. Every source and transport
+cross appears, including identical, repeated-prime and noncoprime pairs.
+This exact finite matrix is a reduction, not itself the desired estimate.
+
+There is a concrete short-actual-Mobius representation, not just a new
+name for g. Expand a residual power only as an EXACT finite algebra:
+ R^i=sum_(t=0)^i(-1)^t binom(i,t)b0^t*A^t,
+ S^j=sum_(w=0)^j(-1)^w binom(j,w)bv^w*B^w.              (7.1)
+Thus each term is
+ ku^epsilon*b0^t*bv^w*A^(p+t)*B^(q+w).
+Every signed factor in A is an actual mu(d) with d<=U; every signed
+factor in B is an actual mu(d)d^(-v) with d<=V. The remaining complete
+cofactor kernel ku^epsilon*b0^t*bv^w is nonnegative. Write d as the
+product of all those SHORT factors, retaining each tuple separately;
+then the channel/cell sum is exactly the finite sum of
+ product(mu(d_l))*product_(B factors)(d_l^(-v)) times
+ Lcell^(-1)sum_(n in I)sum_(z>=1,dz<=n)
+       (ku^epsilon*b0^t*bv^w)(z)Phi_i(n,dz).            (7.2)
+The dyadic source-pair kernel is consequently a joined bilinear form in
+two such short actual-Mobius tuples with explicit reciprocal cofactor
+ramps. Products d may exceed N, in which case their term is0; individual
+tuple bounds U,V do not imply squarefreeness, disjointness or coprimality.
+No prime-power/composite sector is removed. Expanding(7.1) loses the
+visible long support of R,S in each separate term, so the exact binomial
+cancellations must be retained, not replaced by a claimed independent
+long-support property of the expanded terms.
+
+The detector may now enumerate rational tuple-product thresholds,
+short/long cofactor splits and exact pairings on(7.2), with complementary
+regions retained and with fixed N. It can pay monomial support>N for
+free by Section2, pay genuinely decaying S-tail sectors by Section5,
+and reject the separate absolute rules of Section6. A candidate closing
+lemma must bound the REMAINING JOINED signed bilinear form, uniformly
+in X and the shared cutoffs, by the declared coarse forcing/head. In
+particular it must exhibit cancellation among the mu0^2, mu0*muv,
+plain-mu0, centered-muv and transport correlations; treating them as
+independent nonnegative norms misses cancellations already required by
+their exact local prime formulas and their deterministic head.
+
+For example the compiler can combine the three ku rows as the finite
+signed bracket
+ chi_N=beta A^2 P_(2,0)-beta A B P_(1,1)-R_u B P_(0,1),
+and keep ku*chi_N-beta A P_(1,0)-e in every pair kernel. This exposes
+short-factor reciprocal correlations rather than a smoothed scale alias.
+But the bracket's analytic zero at2/3 still does NOT prove convergence
+of its coefficient sum there, a small tail, or a sign for its pair form.
+Those would be additional source-specific signed lemmas. The exact
+rewriting is equivalent on the retained horizon; only a newly proved
+bilinear estimate would constitute a gain for the global target.
+
+8. Certified frontier and provenance
+-----------------------------------
+The finite source-specific inverse compiler is sound with active positive
+cutoffs, exact rational roots, strict support and one joint horizon. It
+provides actual short-Mobius tuple leaves and explicit polynomial support
+certificates, not an infinite-series approximation. The weighted inverse
+error has a proved critical absolute tail decay. The common unweighted
+sector cannot be paid by the proposed generic absolute rules; the explicit
+prime and head obstructions show why all signed complements must stay.
+
+Thus the detector can synthesize inverse polynomials and subsequent
+short-factor pair kernels, automatically classify some paid/unpaid proof
+branches and propose falsifiable uniform joined correlation lemmas.
+The polynomial identity, partial payments and obstruction certificates
+are PROVED; the remaining full joined signed lemma is OPEN. No local
+divisor bound or finite numerical pass turns that leaf into a theorem.
+All global and RH conclusions remain unproved. Edits are confined to this
+new memo; no source computation, numerical experiment or test occurred.

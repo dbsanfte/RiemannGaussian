@@ -1,0 +1,169 @@
+{
+  "RH_proved": false,
+  "actual_prime_and_composite_coordinates_retained": true,
+  "all_mobius_signs_and_saved_source_values_excluded_from_search": true,
+  "calibration_parent": 1024,
+  "drift_multiplier": "3/2",
+  "energies": [
+    {
+      "id": "current",
+      "memory": 1,
+      "rays": []
+    },
+    {
+      "id": "two_delay",
+      "memory": 2,
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1"
+          ],
+          "weight": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "three_delay",
+      "memory": 3,
+      "rays": [
+        {
+          "a": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "weight": "1"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "full_radius",
+      "profiles": [
+        {
+          "eta": "1",
+          "scale": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "source_endpoints",
+      "profiles": [
+        {
+          "eta": "1",
+          "scale": "1/4"
+        },
+        {
+          "eta": "1",
+          "scale": "1/5"
+        },
+        {
+          "eta": "1",
+          "scale": "1/8"
+        },
+        {
+          "eta": "1",
+          "scale": "1/10"
+        }
+      ]
+    },
+    {
+      "id": "full_fractional",
+      "profiles": [
+        {
+          "eta": "1",
+          "scale": "1/4"
+        },
+        {
+          "eta": "3/7",
+          "scale": "1"
+        },
+        {
+          "eta": "7/11",
+          "scale": "1"
+        },
+        {
+          "eta": "10/13",
+          "scale": "1/2"
+        }
+      ]
+    },
+    {
+      "id": "cofactor_radii",
+      "profiles": [
+        {
+          "eta": "1",
+          "scale": "1/4"
+        },
+        {
+          "eta": "1",
+          "scale": "1/12"
+        },
+        {
+          "eta": "1",
+          "scale": "1/20"
+        },
+        {
+          "eta": "1",
+          "scale": "1/28"
+        }
+      ]
+    }
+  ],
+  "fresh_parents_per_band": 2,
+  "gram_box": [
+    "0",
+    "16"
+  ],
+  "hashes_used": false,
+  "lp_parameter_rounding_bits": 24,
+  "lp_seconds": 120,
+  "max_aggregate_bytes": 17179869184,
+  "module_seconds": 7200,
+  "native_threads": 1,
+  "prior_byte_preserved_files": 566,
+  "schema": "dense-drift-search-protocol-v1",
+  "seed": 20261011082,
+  "selection": "smallest exact full drift price/u^2 in each source/profile family",
+  "source_files": [
+    "mobius_dense_completion_082.py",
+    "test_mobius_dense_completion_082.py",
+    "mobius_dense_completion_search_082_development.json",
+    "check_mobius_dense_completion_082.py",
+    "test_check_mobius_dense_completion_082.py",
+    "mobius_dense_completion_checker_082_development.json",
+    "MOBIUS_DENSE_COMPLETION_CHECK_SCOPE_082.txt",
+    "MOBIUS_DENSE_CERTIFICATE_SCOPE_082.txt",
+    "MOBIUS_DENSE_BOUND_DESIGN_082.txt",
+    "MOBIUS_DENSE_COMPLETION_REVIEW_082.txt",
+    "MOBIUS_DENSE_RANK_ONE_OBSTRUCTION_082.txt",
+    "mobius_dense_completion_protocol_082.txt",
+    "run_mobius_dense_completion_082.py"
+  ],
+  "source_ids": [
+    "q1_p16",
+    "q1_p04"
+  ],
+  "theta_box": [
+    "-16",
+    "16"
+  ],
+  "uniform_growth_proved": false,
+  "validation_bands": [
+    [
+      1536,
+      2047
+    ],
+    [
+      3072,
+      4095
+    ],
+    [
+      6144,
+      8191
+    ]
+  ],
+  "workers": 3
+}

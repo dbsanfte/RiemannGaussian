@@ -1,0 +1,71 @@
+{
+  "RH_proved": false,
+  "calibration_parent": 1024,
+  "diagnostic_exponent_parameters": [
+    1,
+    3,
+    7,
+    15,
+    31
+  ],
+  "discovery_solver_seconds": 180,
+  "families": [
+    "inherited",
+    "cofactor",
+    "reciprocal",
+    "fractional"
+  ],
+  "fresh_parents_per_band": 2,
+  "hashes_used": false,
+  "known_unit_and_all_prime_signs_used": true,
+  "max_aggregate_bytes": 17179869184,
+  "max_effective_dimension": 512,
+  "module_seconds": 7200,
+  "native_threads": 1,
+  "observed_full_source_values_used": false,
+  "previous_goal_turn": "PROGRESS",
+  "prior_byte_preserved_files": 638,
+  "schema": "coupled-square-search-protocol-v1",
+  "seed": 20261011084,
+  "selection": "retain every independently admitted family; freeze theta before all new geometries",
+  "source_files": [
+    "mobius_coupled_square_084.py",
+    "test_mobius_coupled_square_084.py",
+    "mobius_coupled_square_search_084_development.json",
+    "check_mobius_coupled_square_084.py",
+    "test_check_mobius_coupled_square_084.py",
+    "mobius_coupled_square_checker_084_development.json",
+    "MOBIUS_COUPLED_SQUARE_CHECK_SCOPE_084.txt",
+    "mobius_rh_target_084.py",
+    "test_mobius_rh_target_084.py",
+    "mobius_rh_target_084_development.json",
+    "MOBIUS_RH_TARGET_AUDIT_084.txt",
+    "MOBIUS_SQUARE_BOUND_REVIEW_084.txt",
+    "mobius_coupled_square_protocol_084.txt",
+    "run_mobius_coupled_square_084.py"
+  ],
+  "source_ids": [
+    "q1_p16",
+    "q1_p04"
+  ],
+  "square_factor_bits": 24,
+  "theta_box": [
+    "-16",
+    "16"
+  ],
+  "uniform_remaining_bound_proved": false,
+  "unknown_composite_signs_used": false,
+  "validation": "fixed operator; synthesize new auxiliary factor at each new geometry; this is new certificate search",
+  "validation_bands": [
+    [
+      1408,
+      1791
+    ],
+    [
+      2304,
+      2815
+    ]
+  ],
+  "validation_solver_seconds": 90,
+  "workers": 3
+}

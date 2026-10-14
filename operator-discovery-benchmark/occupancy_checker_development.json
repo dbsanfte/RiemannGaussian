@@ -1,0 +1,14 @@
+{
+  "operations": 25376,
+  "runs": [
+    {
+      "test": "test_check_occupancy_transfer",
+      "returncode": 0,
+      "operations": 25376,
+      "tests": 10,
+      "runtime_seconds": 0.044,
+      "stdout": "SYNTHETIC_WORK module=test_check_occupancy_transfer operations=25376\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.044s\n\nOK\n"
+    }
+  ]
+}

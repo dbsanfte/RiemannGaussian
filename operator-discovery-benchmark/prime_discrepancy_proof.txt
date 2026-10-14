@@ -1,0 +1,184 @@
+FLOOR CARRIES, ALL-SCALE PRIME INPUTS, AND THE MISSING SIGNED PAIR ESTIMATE
+
+Scope and provenance
+--------------------
+This stage searches every integer coefficient vector (1,c2,...,c6), with
+c2,...,c6 in [-3,3]. It supplies a general periodic-floor certificate template,
+not an expected winning coefficient vector. The coefficient producer is the
+already verified factor-free lambda=-log_D(mu). The independent evaluator uses
+a prime-power sieve. All 228 parent programs are admitted independently of
+their previous final outcomes. Prior final cases are development evidence.
+The downstream search learns rho, gamma and B in
+    C_off(X) <= rho D(X) + B X^gamma, every integer X>=1.
+It does not prove that signed premise. The all-scale results proved here are
+prime density and diagonal coefficient/Gram bounds, which are unsigned.
+The proofs are written mathematics with independently checked exact and ball
+certificates. They are not a machine-formalized proof of RH.
+
+1. The factorial trace supplies actual-prime information
+-------------------------------------------------------
+The inherited universal coefficient theorem identifies lambda(p^k)=1/k and
+lambda(n)=0 otherwise. Put Lambda(n)=lambda(n)log(n) and psi(x)=sum_(n<=x)Lambda(n).
+Then Lambda>=0, 0<=lambda<=1, and
+    sum_(d|m) Lambda(d)=log(m),
+so for every integer N>=1,
+    sum_(n<=N) Lambda(n) floor(N/n)=log(N!).                 (1)
+This follows by exchanging two finite sums; it imports no theorem about
+prime distribution. For rational c_d let
+    K(u)=sum_d c_d floor(u/d).
+If sum_d c_d/d=0, L=lcm(nonzero integer delays) gives K(u+L)=K(u).
+For integer delays K is constant on every half-open unit cell [k,k+1).
+Thus the full list K(0),...,K(L-1)>=0 is a universal certificate for K(u)>=0
+for every real u>=0, including discontinuity endpoints. Normalization c_1=1
+and all other delays>=2 give K(u)=1 on [1,2).
+Using (1), for every integer N>=1,
+    psi(N)-psi(N/2)
+      <= sum_(n<=N)Lambda(n)K(N/n)
+       = F_c(N):=sum_d c_d log(floor(N/d)!).                (2)
+
+Write f(y)=y log(y)-y, f(0)=0. The elementary integral comparison for log(t)
+gives, for every integer m>=1,
+    1 <= log(m!)-f(m) <= 1+log(m).
+For y=N/d>=1 and m=floor(y), 0<=f(y)-f(m)<=log(N).
+For 0<=y<1, |f(y)|<=1 and m=0. In either case
+    |log(floor(N/d)!)-f(N/d)| <= 1+log(N).
+With S=sum|c_d| and H=-sum c_d log(d)/d, exact zero drift cancels the NlogN-N
+terms and gives
+    F_c(N) <= H N + S(1+log N).                            (3)
+The native certificate verifies H>0. Iterating (2),(3) at N=2^j yields
+    psi(2^k) <= H(2^(k+1)-2) + S[k+log(2)k(k+1)/2].
+For 2^(k-1)<x<=2^k this implies
+    psi(x)/x <= 4H+2S[k+log(2)k(k+1)/2]/2^k.               (4)
+The sequences k/2^k and k(k+1)/2^k decrease for k>=2 (the second is equal at
+k=2,3). Choose a frozen K>=4. The right side at k=K covers x>2^(K-1).
+The complete finite prefix n<=2^(K-1) covers smaller real x because psi is
+constant between successive integers and psi(x)/x decreases there.
+An outward-rounded rational C_psi majorizing this finite maximum and (4)
+therefore proves psi(x)<=C_psi x for EVERY real x>=1.
+This is elementary prime information over all scales, recovered by the floor
+certificate search. It is a Chebyshev-level density statement, not a signed
+prime-error bound or evidence of historical novelty.
+
+2. Signed discrepancy increments have a diagonal logarithmic saving
+------------------------------------------------------------------
+Use li(x)=Ei(log x) for x>1, with derivative 1/log x. For integer n>=2 put
+    E_beta(n)=li(n)-beta sum_(m<n)lambda(m),
+and E_beta(0)=E_beta(1)=0. Let U_beta be its continuous linear interpolation,
+zero on [0,1]. Its increments a_1=0, a_2=li(2), and
+    a_(n+1)=delta_n=r_n-beta lambda(n),
+    r_n=li(n+1)-li(n), n>=2,
+retain the signed arithmetic prime-power deficit. Here 0<r_n<=1/log n.
+For integer N>=2, splitting at sqrt(N) gives
+    sum_(2<=n<=N)lambda(n) <= sqrt(N)+2 C_psi N/log N,
+    sum_(2<=n<=N)r_n^2 <= sqrt(N)/log(2)^2+4N/log(N)^2.
+Use lambda^2<=lambda and (r-beta lambda)^2<=2r^2+2beta^2lambda^2. Including
+a_2, and enlarging the shifted prefix n<=N-1 to n<=N, proves
+    sum_(n<=N)a_n^2 <= li(2)^2
+       +2sqrt(N)(1/log(2)^2+beta^2)
+       +8N/log(N)^2+4beta^2 C_psi N/log N.                  (5)
+After multiplying by log(e+N)/N, the majorant is
+    T_beta(N)=li(2)^2 log(e+N)/N
+       +2(1/log(2)^2+beta^2)log(e+N)/sqrt(N)
+       +8log(e+N)/log(N)^2+4beta^2 C_psi log(e+N)/log N.
+Each summand decreases for real N>=8. Indeed log(e+N)/N decreases; for the
+square-root term, 2N/(e+N)<2<log(e+N) at N>=8; and
+    log(e+N)/log N = 1+log(1+e/N)/log N
+decreases for N>1, as does its product with 1/log N.
+A complete finite prefix through a frozen N0>=8 and the single native ball
+T_beta(N0) thus certify, with an outward-rounded rational C_a,
+    sum_(n<=N)a_n^2 <= C_a N/log(e+N), EVERY integer N>=1.   (6)
+The search can compare several proof cutoffs without using final data.
+The positive-support controls are not actual-prime sequences: (4)-(6) are
+never applied to those controls.
+
+3. Exact diagonal and signed off-diagonal observables
+-----------------------------------------------------
+For n>=1 let phi_n(u)=clamp(u-(n-1),0,1). Then U_beta(u)=sum a_n phi_n(u),
+a finite sum at every u. For a canonical filter with distinct rational delays
+d>=1, c_1=1, and S=sum|c_d|, define
+    T(t)=sum_d c_d U_beta(t/d),
+    b_n(t)=sum_d c_d phi_n(t/d),
+    A2(X)=integral_X^(2X) T(t)^2 dt,
+    K_nm(X)=integral_X^(2X)b_n(t)b_m(t)dt,
+    D(X)=sum_n a_n^2 K_nn(X),
+    C_off(X)=A2(X)-D(X)=sum_(n!=m)a_n a_m K_nm(X).         (7)
+D>=0. Off-diagonal terms keep signs from both the arithmetic increments and
+the filter. In each complete window all breakpoints d*n are rational and
+T is affine on each cell. Polynomial antiderivatives evaluate A2 exactly
+with native ball coefficients. The independent evaluator uses Simpson's
+rule on every such cell, which is exact for these quadratic polynomials.
+It computes D from separate per-increment ramp cells, not from the producer's
+prefix shortcut. This is complete-window integration, not sampling.
+
+The producer shortcut uses, for p=1,2, n=floor(t/d), r=t-dn,
+    integral_0^t sum_m a_m^2 phi_m(u/d)^p du
+      = t sum_(m<=n)a_m^2-d sum_(m<=n)m a_m^2
+        +d/(p+1)sum_(m<=n)a_m^2+a_(n+1)^2 r^(p+1)/[(p+1)d^p].
+For d<e and m>=ceil(e/(e-d)), phi_m(u/d)=1 whenever phi_m(u/e)>0.
+Their product is the slower ramp. A finite correction below that cutoff
+therefore suffices for all cross-delay contributions to each K_mm.
+Since |b_n|<=S and every supported n<=ceil(2X)<=3X when X>=1, (6) gives
+    D(X) <= 3 C_a S^2 X^2/log(e+X), EVERY real X>=1.        (8)
+This proof uses actual prime weights at all scales. It does not bound
+C_off: positivity and coefficient density alone do not give signed
+cancellation between different increments.
+
+4. The learned signed premise and its ordinary-zeta obstruction
+---------------------------------------------------------------
+For fixed rational rho, gamma>=0, B>=0, the learned premise is
+    C_off(X)<=rho D(X)+B X^gamma, every INTEGER X>=1.        (9)
+For rho>-1, (7),(8) give A2(X)=O(X^2/log(e+X)+X^gamma).
+For rho<=-1, the nonpositive diagonal contribution can be dropped, giving
+A2(X)<=B X^gamma. Holder on dyadic windows makes the Mellin integral of T
+holomorphic for Re(s)>eta, where
+    eta=max(1/2,(gamma-1)/2) if rho>-1,
+    eta=max(0,(gamma-1)/2)   if rho<=-1.                   (10)
+Only integer dyadic windows are needed for that convergence; fresh irregular
+integer windows remain additional necessary tests of the stated premise.
+
+Compare U_beta with the inherited prime-error function
+    R_beta(t)=li(t)-beta sum_(n<t)lambda(n), t>=2,
+zero below 2. At integer t>=2 they agree. On (N,N+1), N>=2,
+    R_beta(t)-U_beta(t)
+      =li(t)-li(N)-(t-N)(li(N+1)-li(N))
+        -beta(1-(t-N))lambda(N).
+The linear-interpolation remainder of li has modulus at most
+1/(8N log(N)^2)<1, since |li''(t)|=1/(t log(t)^2).
+On 1<=t<2, |U_beta(t)|<=li(2)<2. Thus
+    |R_beta(t)-U_beta(t)|<=2+|beta|, every real t>=1.
+The corresponding filtered difference is bounded by (2+|beta|)S and its
+Mellin integral is holomorphic for Re(s)>0. It cannot change the ordinary
+zero obstructions in the inherited logarithmic bridge.
+
+For completeness, the inherited Mellin formula has
+    s H_R(s)/D_filter(s)+s B0(s)=-log(s-1)-beta log(zeta(s))
+initially on Re(s)>1, with B0 holomorphic for Re(s)>0. A finite filter whose
+unit-delay coefficient is one has an entire D_filter not identically zero.
+Even where it vanishes, the quotient of two holomorphic functions is
+meromorphic, and the derivative of a meromorphic function has zero residue.
+The right derivative -1/(s-1)-beta zeta'/zeta has residue -beta*m at every
+ordinary zero of multiplicity m, and beta-1 at the pole s=1.
+Consequently beta!=1 and eta<1 is impossible due to the pole logarithm.
+For beta=1 and eta<1/2 it is impossible due to the independently enclosed
+actual critical-line zero. For beta=1 and eta<=1/2, a VALID UNIFORM (9)
+would exclude all zeros with Re(s)>1/2; functional-equation symmetry gives RH.
+Isolated filter-multiplier zeros do not need to be excluded.
+An impossible stronger premise can be logically RH-sufficient by implication;
+the analytic status rejects it rather than treating finite success as evidence.
+
+5. What the search and audit establish
+--------------------------------------
+The selector learns rho by regression, then learns positive-residual powers,
+and also explores generic rational coefficient and exponent grids. Every
+candidate is frozen before discovery-validation; the archive is sealed before
+fresh operating-system-random final cases. Discovery cannot read private final
+files, network, or subprocesses. Rejected carries and all estimate candidates
+are retained. Replay checks deterministic selection; independent mathematics
+checks prime support, full period certificates, factorial identities, complete
+finite proof patches, tail constants, complete windows, diagonal decomposition,
+transfer domains, actual-zero and pole obstructions, and support controls.
+If a final bound fails, it is retained as a counterexample; if it passes, it
+remains a conjectural signed premise. The independently verified all-scale
+prime and diagonal bounds are recorded separately. No statement about their
+historical novelty is required. No RH-strength signed estimate, and no RH
+proof, is established by finite-window success.

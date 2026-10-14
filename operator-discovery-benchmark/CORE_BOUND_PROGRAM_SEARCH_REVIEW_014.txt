@@ -1,0 +1,326 @@
+POLYNOMIAL LOG-MOMENT BOUND PROGRAMS: EXACT RECOVERY AND PROOF FEEDBACK
+
+Scope and status
+----------------
+Only this new memo is written. Every previous source, study, response and
+review remains unchanged. No source evaluation, numerical experiment,
+test, rescore or hash is performed. The purpose is to verify reusable
+rules for a detector that GENERATES channels, solves recovery identities
+and proposes uniform coarse bounds. The local rules below are proved;
+the generated all-scale signed coarse bounds are not proved by those
+rules or by finite validation. The full source target and RH remain OPEN.
+
+1. Complete signals, polynomial syntax and exact expansion
+---------------------------------------------------------
+Let g be real, |g(n)|<=K d2(n), and G(n)=sum_(k<=n)g(k), including its
+actual unit. In the current transported source K=37/2. All logarithms
+without a subscript are natural; log2 X denotes the base2 logarithm,
+whereas log 2 denotes the natural logarithm of2. Define
+ L(n)=log(2n), H_j(n)=sum_(k<=n)g(k)log(k)^j,
+ H_0(n)=G(n).
+Thus log(1)^0 in H_0 means1, and the unit contribution to H_j, j>0,
+is0. There is no division by log1. Fix a rational polynomial
+ p(t)=sum_(j=0)^d c_j t^j,
+ U_p(n)=sum_j c_j H_j(n)/L(n)^j.
+All polynomial and channel parameters are fixed globally, independently
+of an observed scale. Trim zero leading coefficients and use exact
+rational coefficient comparisons; no approximate nullspace is a proof.
+
+The exact change of basis is
+ p(1-z)=sum_q b_q z^q,
+ b_q=(-1)^q sum_(j>=q)c_j binom(j,q).
+Consequently
+ U_p=sum_q b_q U_q,
+ U_q=L^(-q) W_q,
+ W_q(n)=sum_(k<=n)g(k)log(2n/k)^q.                       (1.1)
+Here q is a nonnegative INTEGER, even when channel weights are rational.
+In particular U_q(1)=g(1) for every q, since W_q(1)=g(1)(log 2)^q.
+Hence U_p(1)=p(0)g(1), as the original polynomial definition requires.
+The exact identity retains all prime/composite signs and valuations; it
+does not replace g by a nonnegative coefficient model.
+
+2. A self-contained weighted prefix bound
+-----------------------------------------
+The elementary complete divisor summatory bound is
+ sum_(k<=x)d2(k)<=x(1+log x), x>=1.
+Write this summatory function as D(x). For q>=1, integration by parts
+against the nonnegative decreasing kernel gives
+ sum_(k<=x)d2(k)log(2x/k)^q
+ =D(x)(log 2)^q+q int_1^x D(t)log(2x/t)^(q-1)dt/t.
+The unit mass is included in D; its left limit before1 is0. Thus the
+right side is at most x(1+log x) times
+ (log 2)^q+q int_0^infinity e^(-v)(log 2+v)^(q-1)dv
+ =q! sum_(i=0)^q (log 2)^i/i!
+ <=C_q, C_q=q! sum_(i=0)^q 1/i!.
+For q0 use the original summatory bound. Therefore
+ |W_q(x)|<=K x(1+log x) C_q, x>=1.                      (2.1)
+This is a finite-prefix inequality, not an analytically continued tail
+claim. C_0=1 and C_q=q C_(q-1)+1 give the exact integers1,2,5,16,... .
+
+3. Increment certificates, including changing rational log weights
+-----------------------------------------------------------------
+Fix eta>=0 rational and set
+ V_(q,eta)(n)=L(n)^(-eta)U_q(n)=L(n)^(-t)W_q(n),
+ t=q+eta, B_(q,eta)=q C_(q-1)+(q+eta)C_q,
+ C_(-1)=0. The first term in B is0 when q0.
+
+On each real interval[n-1,n), the coefficient set in W is fixed. Its
+ordinary derivative, followed by the exact new coefficient at n, gives
+ Delta V_(q,eta)(n)
+ =g(n)(log 2)^q/L(n)^t
+  +int_(n-1)^n [q W_(q-1)(x)-t W_q(x)/L(x)]
+                                      /(x L(x)^t) dx.   (3.1)
+For q0 the W_(-1) term is absent. This formula includes the change of
+the denominator and the entire accumulated bank. It is not the false
+rule Delta V=L^(-t)Delta W with the old denominator frozen.
+
+Take a dyadic X>=2, h=1+log2 X, and only internal increments
+ n in[X+1,2X-1]. On the integration domains x>=X,
+ L(x)>=(log 2)*h>h/2, L(x)>1,
+ 1+log x<=1+log(2X)<=2h, (log 2)^q<=1.
+Using(2.1), the new coefficient and integral in(3.1) are bounded by
+ K L(X)^(-t)[d2(n)+B_(q,eta)(1+log(2X))].
+Also d2(n)^2<=d4(n), and
+ sum_(n<=2X)d4(n)<=2X(1+log(2X))^3.
+Squaring with (a+b)^2<=2a^2+2b^2 and counting at most X increments
+therefore proves
+ sum_internal(Delta V_(q,eta))^2
+ <=K^2 2^(2t)[32+8 B_(q,eta)^2] X h^(3-2t)
+ <=K^2 D_(q,eta) X h^(3-2q-2eta),                       (3.2)
+ D_(q,eta)=2^ceil(2(q+eta))*[32+8 B_(q,eta)^2].
+The last constant is rational and involves no unverified real power.
+For eta0 this is exactly the proposed D_q; D_0=32 is safe. The
+coefficients32 and8 are conservative: no improvement is needed for
+soundness. This proof works for every fixed rational eta>=0, not only
+sixth fractions or the common-alignment choice eta=R-q>=0.
+
+For a polynomial channel V_p=L^(-eta)U_p, let T={q:b_q!=0}.
+If T is empty, V_p=0 and its increment constant is0. Otherwise put
+ Babs=sum_(q in T)|b_q|,
+ D_p=Babs sum_(q in T)|b_q|D_(q,eta),
+ d_p=3-2 min(T)-2eta.
+Weighted Cauchy gives
+ sum_internal(Delta V_p)^2<=K^2 D_p X h^d_p.            (3.3)
+All constants are rational. A coefficient-count Cauchy alternative is
+also valid, but the weighted form does not introduce an unnecessary
+factor for a singleton channel. Exact cancellations must be performed
+BEFORE extracting min(T); min(T) is the order of vanishing of p at1.
+Finite degrees and rational bit/resource limits remain implementation
+limits, not mathematical permission to expand an unbounded polynomial.
+
+4. Orthogonal detail payment with full channels
+----------------------------------------------
+Let the detector generate a finite list of channels
+ V_i=L^(-eta_i)U_(p_i), eta_i>=0,
+ A(X)=X^(-2)sum_(n=X)^(2X-1) sum_i V_i(n)^2.
+On the complete annulus use cells of length Lcell=2^floor(r log2X),
+0<=r<=1, and apply the mean projection to each ACTUAL V_i. Orthogonality
+gives A=S+Vdetail exactly, S and Vdetail both nonnegative. The unchanged
+scalar inequality
+ sum_cell(y-mean y)^2<=Lcell^2/8 sum_internal(Delta y)^2
+therefore proves
+ Vdetail(X)<=K^2/8 X^(2r-1) sum_i D_i h^d_i
+ <=B_D X^(2r-1)h^d,
+ B_D=K^2 sum_i D_i/8, d=max_(D_i>0)d_i<=3.             (4.1)
+Zero channels may be dropped. X1 has a single unit cell and zero detail,
+so the special finite head needs no extension of the X>=2 increment
+proof. Means are not coefficient sums restarted at cell boundaries.
+
+For r<1/2, delta=1-2r in(0,1] and
+ (1+j)^3 2^(-delta*j)<=96/delta^3, j>=0,
+give the rational uniform payment 96 B_D/delta^3. For r1/2 the payment
+is B_D h^d, or B_D h^max(0,d) when reporting nonnegative log degrees.
+For r>1/2 this certificate is power-unpaid, regardless of a finite
+negative log exponent; it does not refute the channel itself.
+
+For rho>=0, the exact signed increment decomposition implies
+ A(2X)-rho A(X)
+ =S(2X)-rho S(X)+Vdetail(2X)-rho Vdetail(X)
+ <=S(2X)-rho S(X)+Vdetail(2X).                          (4.2)
+No parent-detail absolute payment is necessary. At r1/2 the child
+payment is at most B_D 2^ceil(max(0,d)) h^max(0,d).
+At r<1/2 its uniform payment is unchanged. These are paid addenda,
+not a proof of a proposed small constant for the coarse increment.
+
+5. Exact nullspace recovery and its finite uniform constants
+-----------------------------------------------------------
+The recovery test is the polynomial coefficient identity
+                  1=sum_i a_i p_i(t), a_i rational.    (5.1)
+It is equivalent to a finite exact rational linear system. Failure to
+solve it means this stated recovery rule is unavailable; a numerical
+near-identity is not admitted. If it holds, every complete prefix obeys
+ G(n)=sum_i a_i U_(p_i)(n)=sum_i a_i L(n)^eta_i V_i(n).
+Thus Cauchy yields
+ E_G(X)<=sum_i a_i^2 L(2X)^(2eta_i) A(X)
+ <=Crec h^(2e) A(X),
+ e=max_(a_i!=0)eta_i,
+ Crec=2^ceil(2e) sum_i a_i^2.                           (5.2)
+The rational upper constant uses L(n)<=2h on[X,2X), and2h>=1, so it
+is also safe at X1 even though L(1)=log 2<1. Unused recovery coefficients
+need not inflate e. A positive storage with all a_i=0 cannot satisfy
+(5.1). Full signs/crosses in each channel are retained before squares.
+
+With the paid transport theta<=5/6, the known source rule is
+ E_F(X)<=2 E_G(X)+50X^(2theta-5/3).
+Combining this with(5.2) is valid. One must NOT instead write
+ PG=sum_i a_i L^eta_i PV_i: multiplication by a varying weight does
+not commute with taking a cell mean. Ordinary energy recovery uses
+the WHOLE A=S+Vdetail and avoids that false step.
+
+6. Generated scale recurrences and explicit goal feedback
+-------------------------------------------------------
+Let B>=S(1), C>=0, k>=0 rational, and 0<=rho<=1. A generated uniform
+premise must say for every dyadic X>=1, using the same global program,
+             S(2X)<=rho S(X)+C(1+log2X)^k.             (6.1)
+For rho<1 it gives S(X)<=K_S h^pS with
+ K_S=B+C/(1-rho), pS=k.
+For rho1 it gives K_S=B+C, pS=k+1.
+If C0 the sharper pS0 works for either rho. These formulas use base2
+exactly: iterating on j sums (1+j)^k, never silently substitutes a
+natural-log bound with different constants. A finite initial cutoff
+can be handled by a declared finite head; it cannot be inferred from
+a fitted training constant. A recurrence on finitely many scales is
+finite evidence only, not(6.1).
+
+For r<1/2 set dpaid=0 and K_D=96 B_D/(1-2r)^3.
+For r1/2 set dpaid=max(0,d) and K_D=B_D.
+Then a complete proved composition is
+ pF=max(pS,dpaid)+2e,
+ E_F(X)<=[2 Crec(K_S+K_D)+50] h^pF.                    (6.2)
+The finite unit/detail head is included as above. This is the target
+log degree actually paid by these rules, not merely the degree of S.
+For a desired degree pgoal, the detector must require
+ pS<=pgoal-2e, dpaid<=pgoal-2e,
+and compile the corresponding allowed recurrence k and rho. A
+verified pole of order m>=2 of the original full source requires
+pF>=2m-2; the current double-pole witness gives pF>=2. Pole rejection
+is conditional on the independently source-bound verified witness and
+paid transport; it is not manufactured from an observed slope.
+
+There is a useful structural limit at r1/2. Evaluating(5.1) at t1
+forces at least one active a_i with p_i(1)!=0. For this channel min(T_i)=0
+and its detail exponent is3-2eta_i. Since e>=eta_i,
+ max(0,3-2eta_i)+2e>=3.                                (6.3)
+Consequently the present absolute derivative/payment rules cannot
+prove a whole-target log degree below3 at r1/2 by merely redistributing
+log weights among recoverable polynomial channels. This is an
+accounting obstruction to THIS proof path, not a lower bound of3 for
+the actual source energy. At smaller r, uniform detail payment leaves
+the signed coarse arithmetic as the genuine open leaf. New actual
+coefficient correlations or a different payment theorem could change
+the frontier; polynomial nullspace recovery alone does not do so.
+
+7. A separate weighted-mean Mellin rule; no illegal commuting
+-----------------------------------------------------------
+For possible stronger proof feedback define a DIFFERENT lifted signal
+ Y(n)=sum_i a_i L(n)^eta_i (PV_i)(n),
+ H(n)=sum_i a_i L(n)^eta_i [V_i(n)-(PV_i)(n)].
+Then G=Y+H EXACTLY, while Y is generally not PG. Direct Cauchy proves
+ E_Y(X)<=Crec h^(2e) S(X).                              (7.1)
+This costs the same log weight; it does not assert a scalar mean
+recovery identity with weights evaluated at a cell endpoint.
+
+Let h_i=V_i-PV_i. Its exact discrete cell sum is0. The increment/detail
+rules give an annular L1 bound
+ sum_(n=X)^(2X-1)|h_i(n)|
+ <=K sqrt(D_i/8) X^(r+1)h^(d_i/2).
+For the unit-cell step extension the weighted Mellin integral is
+ sum_(n in cell) h_i(n) phi_(s,eta_i)(n),
+ phi_(s,eta)(t)=log(2t)^eta int_0^1(t+v)^(-s-1)dv.
+This smooth function of real t>=2 has derivative bounded, uniformly
+on compact s sets, by O_(s,eta)(X^(-Re(s)-2) h^eta) on an annulus.
+Subtract phi at the cell start using sum h_i=0. The complete annular
+weighted residual is consequently
+ O_(s,program)(X^(2r-Re(s)-1) h^(eta_i+d_i/2)).
+Dyadic summation converges normally on compact subsets of
+                         Re(s)>2r-1.                  (7.2)
+The finite X1 contribution is entire. This proof treats the exact
+integer log weight through the averaged Mellin kernel phi; replacing
+log(2n) by log(2x) without accounting for unit cells is unnecessary.
+No infinite coefficient series is invoked outside its initial domain.
+
+Hence for r<3/4 this residual is analytic near every critical zero.
+The transported error has radial Mellin bound O(1/epsilon) even at
+theta5/6, and is analytic beyond critical when theta<5/6. An original
+pole of order m>=2 cannot be hidden in either residual. If a cofinal
+coarse hypothesis is S=O(log^p),(7.1) gives radial Mellin growth of Y
+at most O(epsilon^(-1-(p+2e)/2)). Therefore a stronger COARSE gate is
+                         p+2e>=2m-2.                  (7.3)
+For the verified double pole this means p+2e>=2, even when the loose
+energy payment in(6.2) would otherwise allow detail degree3 to obscure
+an impossible bounded coarse hypothesis. This is a proved separate
+rule, not ordinary A=S+V energy recovery with detail discarded.
+
+The same exact lifted residual also supports the separately flagged
+analytic lane of013: r2/3 gives(7.2) in Re(s)>1/3. If an OPEN cofinal
+coarse bound S=O_epsilon(X^epsilon) for every epsilon>0 were proved,
+Y and the paid transport error would have Mellin transforms holomorphic
+in Re(s)>1/2, and hence so would the original source. The actual source
+AST has a unique highest inverse-zeta order2 with nonzero coefficient
+beta and smallest positive shift1/3. Its supremum-zero argument in013
+would force RH, including all zero multiplicities. This source-specific
+conditional bridge is valid for Y, without falsely identifying Y=PG.
+It is not a proof of that coarse bound, a paid-detail energy admission
+for r2/3, or an inference of moment growth from holomorphy alone.
+The ordinary energy admission remains r<=1/2 unless a separate rule is
+explicitly adopted and independently checked.
+
+8. Exact arithmetic mean kernels and why universal closure fails
+---------------------------------------------------------------
+For each actual channel and complete cell I define
+ T_i(I,k)=Lcell^(-1) sum_(n in I,n>=k)
+                    L(n)^(-eta_i)p_i(log k/L(n)).
+Then PV_i on I is sum_k g(k)T_i(I,k), including every k before I.
+The full storage is the joined signed quadratic
+ S(X)=sum_(h,k)g(h)g(k) J_X(h,k),
+ J_X(h,k)=Lcell/X^2 sum_I sum_i T_i(I,h)T_i(I,k).        (8.1)
+Thus the exact open increment is the same quadratic with kernel
+J_(2X)-rho J_X. J_X is positive semidefinite, but this difference need
+not be positive, negative or contracting. Positivity of storage does
+not supply the sign of the arithmetic increment. Applying absolute
+values replaces it with a stronger majorant obligation and must be
+declared as such, with all boundary/full-prefix complements intact.
+
+For the source of013 one can substitute the COMPLETE convolution
+ f=n^(-1/3)*chi-beta mu,
+ chi=beta(mu*mu)-beta[mu*(mu n^(-2/3))]-R_u mu n^(-2/3),
+and g=f-(f-g), retaining the actual transported correction. This
+produces finite reciprocal/divisor pair kernels for detector generation,
+not a tail estimate for chi at2/3. The analytically canceled bracket at
+that point is not ordinary convergence of its coefficient sum there.
+The polynomial channel grammar may expose different signed pair weights,
+but no coefficient envelope proves their required global contraction.
+
+A precise countermodel to closure from ONLY the local rules is the
+fixed negative unit together with g(n)=1 on even composites n>=4,
+and0 at every prime and every other n. It obeys the divisor envelope
+and has no large prime coefficients, but G(n)=n/2+O(1). For any fixed
+polynomial p with p(1)!=0, elementary summation of logarithmic moments
+gives U_p(n)=p(1)n/2+O_p(n/log n). Therefore at least one active recovery
+channel, forced by(5.1), has V_i(n) of size n/log(n)^eta_i, with a
+nonzero fixed sign eventually. Its coarse mean storage is of positive
+power size X/log(X)^(2eta_i), not any fixed polylog. This countermodel
+does not satisfy the actual four-mode Euler AST. It disproves only the
+claim that local derivative, projection, prime deletion and recovery
+rules alone establish the missing source-specific recurrence.
+
+9. Search/proof provenance and final disposition
+----------------------------------------------
+The detector can independently generate bounded rational polynomials,
+log weights and cell exponents; expand exact coefficients; solve(5.1);
+compile rational constants(3.2)-(6.2); and issue the additional verified
+gates(6.3),(7.3). It may then generate desired coarse recurrences from
+the remaining log-degree budget, compute finite evidence and freeze
+the declared constant and head before validation. None of those steps
+requires embedding a nominated polynomial solution or silently turning
+a numerical fit into a theorem. The missing uniform signed leaf is
+(6.1), equivalently the exact source-bound joined kernel(8.1), with
+all scales, finite head, same global program and complete complements.
+
+PROVED: basis expansion, complete weighted-prefix and increment bounds,
+rational eta constants, exact projection/payment, nullspace recovery,
+base2 recurrence composition, critical detail/recovery accounting limit,
+and the separate weighted-mean Mellin/pole feedback rule. The conditional
+analytic source bridge remains exactly scoped as above. OPEN: any actual
+all-scale coarse signed recurrence closing the current full-source goal.
+No actual-source computation or test was made. Only this new memo changed.

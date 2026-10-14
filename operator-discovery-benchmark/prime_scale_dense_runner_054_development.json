@@ -1,0 +1,15 @@
+{
+  "schema": "prime-scale-dense-runner-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "tests": 4,
+      "operations": 72,
+      "elapsed_seconds": 0.29021005501272157,
+      "stdout": "SYNTHETIC_WORK operations=72; coverage and admission metadata only\n",
+      "stderr": "test_complete_new_domain (test_prime_scale_dense_runner_054.DenseRunnerTests) ... ok\ntest_missing_or_repeated_coverage_rejected (test_prime_scale_dense_runner_054.DenseRunnerTests) ... ok\ntest_stop_at_first_new_endpoint_counts_unvisited_tail (test_prime_scale_dense_runner_054.DenseRunnerTests) ... ok\ntest_witness_cannot_promote_without_independent_same_source_refutation (test_prime_scale_dense_runner_054.DenseRunnerTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "actual_search_applied": false,
+  "old_suites_or_studies_replayed": false
+}

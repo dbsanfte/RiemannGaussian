@@ -1,0 +1,630 @@
+COMPLEMENTARY CONVOLUTION: ACTUAL MOBIUS AND CORE FIBERS REVIEW 066
+================================================================
+
+Scope and disposition
+---------------------
+This is a source-only mathematical audit of mobius_prefix_completion_062.py,
+mobius_prefix_repair_063.py, MOBIUS_GROWING_CONDITIONING_REVIEW_065.txt and
+MOBIUS_WALSH_UNIFORM_PREFACTOR_REVIEW_065.txt. No scientific result array,
+candidate table, numerical study, artifact hash or old test was read or run.
+Only this new review is written. All identities use ordinary mu, including
+the SAME mu in the long source and outer inverse. No independent row signs,
+RH assumption, Mertens estimate or prime-distribution estimate is used.
+
+The complementary identity is exact, and after joining the actual source
+its constant is bounded by 2. A raw outer inverse contracts the complementary
+divisor sum completely. A stronger six-floor-atom rewrite reduces the raw
+short repair to a sparse linear Mertens-window dictionary and PAYS its
+last fixed-fraction block uniformly in EVERY prefix. Its head is unpaid.
+The declared finite core_inverse instead leaves an explicit support-boundary
+correlation. The full square-root norm and actual block moments remain
+open. Auxiliary Mertens queries can extend from the old radius max(H,K)
+to D, and must be accounted for.
+
+An additional, explicitly NEW review-only arithmetic-paired operator family removes
+that finite core boundary by extending along all 30-smooth fibers. It has
+an exact finite-geometric norm transfer for every eta>0, including rational
+eta=1. It is not the old finite floor certificate. Ordinary infinite floor
+reconstruction needs eta>1; eta=1 has a concrete boundary counterexample.
+The arithmetic pairing is nevertheless absolutely convergent for eta>0.
+The remaining finite rough-core arithmetic norm is specified and UNPAID.
+
+1. Exact joined source and conventions
+-------------------------------------
+Use p=3,q=5, R=30, N>=2, 1<=H<=D=floor(4N/p), 1<=y<=D,
+and r in[p/q,1]. Write
+
+ w_b(d)=floor(4N/(bd))-3floor(2N/(bd))+2floor(N/(bd)),
+ f(d)=1[d<=y]*(w_p(d)-r*w_q(d)).
+
+The function f is defined for every positive integer; it vanishes beyond
+D. Each w_b is in{-1,0,1}, so |f(d)|<=2. Use the exact signed dictionary
+from062/065: for b=p,q, (v,c)=(4,1),(2,-3),(1,2), and
+1<=i<=floor(floor(vN/b)/(H+1)), add c to
+T=min(y,floor(floor(vN/b)/i)), retaining T>H; combine duplicates.
+Then a_T=a_(p,T)-r*a_(q,T), K_T=floor(T/(H+1)), and
+K=floor(y/(H+1)). This retains both channels, signs and source truncation.
+
+Let M(x)=sum_(1<=n<=floor(x))mu(n), with M(x)=0 for x<1. Every range
+below has integer endpoints. An inverted interval, empty dictionary,
+or empty smooth sum contributes zero. Let rho(d) strip the 2,3,5 factors,
+and s(d)=d/rho(d). The OLD finite fill is
+
+ (Pv)(d)=v(rho(d))/s(d), 1<=d<=H.
+
+For h<=H the actual long contribution is
+
+ G_mu(h)=sum_(T>H)a_T*S_(K_T)(floor(T/h)),
+ S_K(Z)=sum_(n<=min(K,Z))mu(n)*floor(Z/n).
+
+All arithmetic assertions below concern this source, not a substitute
+untruncated W channel or a free-sign polynomial.
+
+2. Complementary floor convolution, including empty cases
+----------------------------------------------------------
+For integers Z,K>=0, the full convolution gives
+
+ sum_(n<=Z)mu(n)*floor(Z/n)=1[Z>=1].                       (1)
+
+Expand floor(Z/n) by its positive multiples and interchange the FINITE
+tail n>K. This proves
+
+ S_K(Z)=1[Z>=1]
+        -sum_(a<=floor(Z/(K+1)))[M(floor(Z/a))-M(K)].      (2)
+
+For every displayed a the upper endpoint is >=K+1. Thus no negative or
+reversed Mertens interval has been introduced. If Z=0, both sides vanish.
+If K>=Z, the complementary sum is empty and S_K(Z)=1[Z>=1]. If K=0,
+(2) is exactly (1) rewritten as 0=1[Z>=1]-sum_a M(floor(Z/a)).
+The denominator K+1 is essential. No value mu(0) is queried.
+
+For T>H and 1<=h<=H, Z=floor(T/h)>=1, and nested floors satisfy
+floor(Z/a)=floor(T/(ha)). Also
+
+ B_T(h):=floor(T/(h*(K_T+1)))<=floor(H/h),                (3)
+
+because T<(H+1)*(K_T+1). Hence
+
+ S_(K_T)(floor(T/h))
+  =1-sum_(a<=B_T(h))[M(floor(T/(ha)))-M(K_T)].            (4)
+
+This is a source-preserving scalar identity for actual mu. A sign
+relaxation chi does not satisfy (1); replacing M by a chi prefix would
+require the extra chi*One terms. Formula (4) is therefore not a valid
+universal Walsh rewrite before actual signs have been substituted.
+
+3. Joined constant and finite complementary query vector
+--------------------------------------------------------
+For every integer x>H the threshold cumulative is exactly
+
+ sum_(T>=x)a_T=f(x).                                     (5)
+
+In particular
+
+ C:=sum_T a_T=f(H+1), |C|<=2.                            (6)
+
+This cancellation must occur BEFORE taking absolute values. Bounding the
+two channels or individual threshold constants separately loses (6).
+
+Define Q(k), for every positive integer k, by
+
+ Q(k)=sum_T a_T*1[k*(K_T+1)<=T]
+                [M(floor(T/k))-M(K_T)].                  (7)
+
+It is supported on k<=H by T<(H+1)*(K_T+1). On k<=H one also has
+floor(T/k)>=K_T, so the indicator in (7) can be suppressed there: outside
+its indicated range the two M values are equal. It cannot be suppressed
+on arbitrary k>H without creating reversed intervals.
+
+Let (VQ)(h)=sum_(a<=H/h)Q(ha). Equations (4)-(7) give, exactly,
+
+ G_mu(h)=C-(VQ)(h),
+ v(h):=f(h)-G_mu(h)=b(h)+(VQ)(h), b(h)=f(h)-C, |b|<=4.   (8)
+
+The source-dependent constant C remains common to every short row. Both
+f and C retain the prefix y; if y<=H the dictionary, C and Q vanish.
+The b-only finite core_inverse repair is already paid:
+
+ ||Delta D_mu P b||_1<=8H*(1+log H).                     (9)
+
+This follows by the same divisor count as065, using |Pb|<=4 and |mu|<=1.
+The bound is uniform in y,r and includes the virtual last row H+1=0.
+
+For a CHOSEN threshold group J, one may instead define C_J and Q_J using
+only that group. Then the exact residual is
+
+ f-G_mu=f-C_J-G_(complement of J)+VQ_J.                   (10)
+
+No small bound for C_J follows from (6) unless its signed source sum is
+independently controlled. One may also complement only chosen rows; when
+P is applied, the choice belongs to the underlying row rho(d), with the
+factor 1/s(d). Different copies of the same underlying row must receive
+consistent definitions. Groups and source rows can be combined before
+absolute values, but an omitted remainder has not been paid.
+
+4. Full raw contraction and the finite core boundary
+----------------------------------------------------
+Since Q is supported on [1,H], actual mu*One contracts V exactly:
+
+ D_mu(VQ)(j)
+  =sum_(m<=H/j)mu(m)sum_(a<=H/(jm))Q(jma)
+  =sum_(n<=H/j)Q(jn)*sum_(m|n)mu(m)=Q(j).               (11)
+
+Thus without the fill P,
+
+ A_raw(j)=D_mu b(j)+Q(j), c_raw=Delta A_raw.             (12)
+
+The appearance of M(T)-M(K) for a single raw indicator is already known
+from the earlier062 review. Equations (8),(11) identify the exact joined
+source and cancellation; they do not establish a new norm for Q.
+
+For the OLD finite core_inverse, let j=s_j*r_j with r_j=rho(j). Write
+m=e*t, where e divides30 and gcd(t,30)=1; this decomposition is unique
+for nonzero mu(m), and mu(m)=mu(e)mu(t). Put kappa=4/15. Extending the
+outer m sum only as an algebraic device gives
+
+ A_Q^infty(j):=sum_(m:rho(jm)<=H)mu(m)*(VQ)(rho(jm))/s(jm)
+             =kappa/s_j*sum_(b 30-smooth,r_j*b<=H)Q(r_j*b). (13)
+
+The sum over m is finite: e divides30 and t<=H/r_j. To prove (13),
+decompose the a index in VQ as b*u with b 30-smooth and u coprime to30.
+The sum over divisors t of the rough product t*u is delta at1, and the
+remaining sum over e gives sum_(e|30)mu(e)/e=kappa.
+
+The ACTUAL finite inverse truncates at jm<=H. Therefore
+
+ A_Q(j)=A_Q^infty(j)-R_H(j),                              (14)
+
+ R_H(j)=1/s_j*sum_(e|30)mu(e)/e
+         sum_(t<=H/r_j, gcd(t,30)=1, t>H/(j*e))
+                     mu(t)*(VQ)(r_j*t).                 (15)
+
+At integer cutoffs t>H/(je) means t>=floor(H/(je))+1. Empty inner sums
+are zero. Equations (13)-(15) retain the same mu in every occurrence.
+R_H is a genuine boundary correlation, not a floor-approximation error.
+The artificial short cutoff and the smooth-core fill make rho(jm)<=H
+different from jm<=H. Dropping R_H changes the licensed063 construction.
+
+Equivalently, after expanding Q(r_j*b*u), its rough coefficient contains
+sum_(t|u,t<=H/(j*e))mu(t). It contracts to delta only when all divisors
+are included. For example b>=30*s_j is a sufficient interior condition
+for every e dividing30; outside that condition truncated divisor sums
+remain. This identifies a precise interior contraction, rather than an
+unproved global replacement of the outer inverse.
+
+5. Auxiliary arithmetic radius and elementary positive prices
+-------------------------------------------------------------
+The ORIGINAL construction needs mu only through B=max(H,K). Formula
+(7) may query M through floor(T/k), and a core row may have k=rho(d)=1.
+Thus the complementary presentation can reach max_T T<=D, which is
+order N even when B is order sqrt N. Those are auxiliary exact queries;
+they cancel back to the original expression if (2) is reversed. They
+are not already admitted small-index inverse-kernel queries.
+
+For completeness define A0=sum_T|a_T| and A1=sum_T|a_T|*T. The exact
+dictionary geometry and positive harmonic sum give
+
+ A0<=12*(1/p+r/q)*N/(H+1),
+ A1<=12*(1/p+r/q)*N*(1+log(4N)).                         (16)
+
+Grouping duplicates and joining channels can only reduce these prices.
+The complement has the finite pointwise interval-length price
+
+ |Q(k)|<=Lambda(k):=sum_T |a_T|*max(0,floor(T/k)-K_T)
+                    <=A1/k, k<=H.                     (17)
+
+A useful refined upper bound is
+
+ Lambda(k)<=A1*(H+1-k)/(k*(H+1))+A0, k<=H.              (18)
+
+It follows from K_T>=T/(H+1)-1. Near k=H this pays narrow individual
+Mertens intervals, without estimating M itself. In particular each
+interval has length at most floor((K_T+H)/H) at k=H, which is bounded
+when H=floor(sqrt N). There are still O(N/H) positively priced threshold
+entries. O(H) such rows can therefore cost O(N), not O(sqrt N).
+
+Another exact regrouping, using (5), is
+
+ Q(k)=sum_(n>=1)mu(n)*[f(max(k*n,H+1))-f((H+1)*n)],
+                                                        1<=k<=H. (19)
+
+The sum is finite. It retains the actual bounded W values and both
+channels. It displays a new correlation with mu at n up to D/k; its
+absolute bounded-W price is order D/k and provides no square-root
+global variation theorem. It must not be described as already known
+Mertens cancellation.
+
+Equation (17) pays |A_Q^infty(j)|<=A1/j: the smooth reciprocal sum is
+sum_(b 30-smooth)1/b=1/kappa, cancelling the kappa in (13). Summing
+this bound gives only N polylogarithmic global variation. Positive
+prices for R_H are likewise at most N polylogarithmic; (14) requires
+their signed combination, not their separate norms, for any sharper
+claim. Complementation improves the description of intervals and can
+improve logarithms or isolate a branch. It has not supplied the missing
+power saving.
+
+6. Paid partial branches and precise moment obligations
+-------------------------------------------------------
+The empty-long branch y<=H has Q=0 and is paid by the old f-only bound
+4H(1+log H). All d>H have exact old long reconstruction: floor(T/d)<=K_T
+so each threshold uses the full convolution (1). These are valid
+uniform branches, not evidence for the remaining nonempty short part.
+
+At H=floor(sqrt N), a terminal set containing only polylog(N) coefficient
+rows is also paid by the existing pointwise positive source estimate.
+For j>=alpha*H, fixed alpha>0, the inverse has at most 1/alpha terms
+per A(j), and |Pf-G|(jm)<=2+M_abs/(jm), M_abs=O(N log(4N)^2).
+Thus each c_j is O_alpha(sqrt N polylog N); polylogarithmically many
+such rows have the desired aggregate price. This does not pay an entire
+macroscopic tail block, which contains order H rows.
+
+For fixed alpha and rough-core cutoff R_*, the terminal rows with
+j>=alpha H and rho(j)<=R_* number at most
+R_* O((1+log H)^3). Consequently their variation is already paid when
+R_* is polylogarithmic. This is a sparse smooth-fiber branch using the
+old positive price, not a proof for all fibers or for small j. An exact
+complementary interval is empty whenever k>T/(K_T+1); a chosen group
+with all such intervals empty has Q_J(k)=0. Its group constant must
+still be priced as in (10).
+
+For the existing065 weights, the actual c_j remains EXACTLY the same
+after (8),(14). Every block moment sum_(j in I)c_j(mu)^2/w_j therefore
+also remains the same. The identity cannot turn the paid mass into a
+paid moment. A source theorem must control the signed, combined
+Delta[A_Q^infty-R_H] and its correlation with the paid b term, or bound
+the complete c_j moment directly. In particular it must control:
+
+ * Mertens increments on (K_T,floor(T/k)] with signed a_T;
+ * common increments shared by different thresholds/channels/rows;
+ * smooth-fiber sums in (13), and truncated rough-divisor correlations
+   in (15), including their cancellation with each other;
+ * the j versus j+1 difference, with its actual terminal convention.
+
+The partition criterion sum_I sqrt(W_I E_I(mu))=O_epsilon(N^(1/2+epsilon))
+from065 is still a sufficient open leaf with declared blocks and paid
+masses. A complementary coefficient expansion is actual-mu specific;
+it cannot silently replace the old universal Walsh coefficient mass.
+Any new weights require their own deterministic paid mass estimate.
+
+7. NEW infinite smooth extension: exact arithmetic pairing
+---------------------------------------------------------
+This section audits a new operator, and does not change the OLD finite
+core_inverse identity (14). Let v be any finite vector on rough indices
+r<=H, zero when r>H. For eta>0 set
+
+ g_eta(d)=s(d)^(-eta)*v(rho(d)), all d>=1,
+ kappa_eta=prod_(p=2,3,5)(1-p^(-eta)),
+ B_r=kappa_eta*sum_(t<=H/r,gcd(t,30)=1)mu(t)*v(r*t),
+ A_eta(j)=s(j)^(-eta)*B_(rho(j)),
+ c_eta(j)=A_eta(j)-A_eta(j+1).                            (20)
+
+B_r is zero for r>H. The ordinary mu inverse D_mu g_eta is well defined
+at each j: nonzero mu's smooth part divides30 and its rough part is at
+most H/rho(j). It equals A_eta(j) exactly. In contrast with (14), there
+is no artificial outer bound jm<=H.
+
+Let Psi(x)=#{s<=floor(x):s is 30-smooth}, Psi(0)=0. Then
+Psi(j)-Psi(j-1)=1[j is 30-smooth]. Write ell(r)=ceil(log_2 r), ell(1)=0,
+and define the explicit geometric constant
+
+ C_eta=sum_(a,b,c>=0)2^(-eta*a)*3^(-eta*b)*5^(-eta*c)
+                          *(1+3*(a+b+c))^3 < infinity.   (21)
+
+Each exponent of a smooth integer <=x is at most log_2 x. Also
+log_2(2^a3^b5^c)<=3(a+b+c). Consequently
+
+ sum_(s smooth)s^(-eta)*Psi(r*s)
+       <=C_eta*(1+ell(r))^3,
+
+ sum_(j>=1)|c_eta(j)|*Psi(j)
+       <=2*C_eta*sum_(r<=H,gcd(r,30)=1)|B_r|*(1+ell(r))^3. (22)
+
+The second inequality counts each A term at its two adjacent c indices;
+Psi is nondecreasing, so the j-1 weight causes no problem. C_eta is a
+finite sum of three independent geometric moments of degree at most3.
+For eta=1 its value in this deliberately coarse bound is the exact
+rational 468525/128. Integer eta gives rational coefficients throughout.
+Positive noninteger rational eta gives algebraic coefficients and needs
+declared rational enclosures if used in an exact-rational checker.
+
+For every 0<delta<eta there is also the explicit weighted tail certificate
+
+ sum_(j>L)|c_eta(j)|*Psi(j)
+ <=2*C_(eta-delta)*L^(-delta)
+         *sum_(r<=H,rough)r^delta*|B_r|*(1+ell(r))^3.     (23)
+
+Here and below rough means coprime to30. These are uniform, paid
+GEOMETRIC transfer statements. They do not pay the finite arithmetic
+norm of B.
+
+Finite summation by parts gives
+
+ sum_(j<=L)c_eta(j)*Psi(j)
+  =sum_(s<=L,smooth)A_eta(s)-A_eta(L+1)*Psi(L).           (24)
+
+The boundary tends to zero for EVERY eta>0: if A_eta(L+1) is nonzero,
+rho(L+1)<=H and hence s(L+1)>L/H, whereas Psi(L) is polylogarithmic.
+Equations (22),(24) therefore prove the absolutely convergent arithmetic
+paired certificate
+
+ sum_(j>=1)c_eta(j)*Psi(j)
+   =B_1/kappa_eta
+   =sum_(t<=H,rough)mu(t)*v(t).                           (25)
+
+No ordinary pointwise infinite-floor theorem is needed for (25). The
+functional on the right is finite and source preserving. The left has
+an independently bounded geometric norm transfer. This is a legitimate
+new arithmetic-paired family for every eta>0, not a statement that the
+previous finite-floor checker already admits it.
+
+One can make (25) exactly finite. Define c_eta^(L)(j)=c_eta(j) for j<L,
+c_eta^(L)(L)=A_eta(L), and zero afterwards. Then
+
+ sum_j c_eta^(L)(j)*Psi(j)=B_1*G_eta(L),
+ G_eta(L)=sum_(s<=L,smooth)s^(-eta).                      (26)
+
+Dividing all coefficients by kappa_eta*G_eta(L) gives exactly the right
+side of (25). The positive normalizing factor is known smooth geometry,
+not an unknown source value. The corrected finite vector itself satisfies
+the same bound (22), by counting its A terms before truncation. The
+normalized finite vector therefore has weighted norm at most
+2*C_eta/[kappa_eta*G_eta(L)] times the finite B norm in (22), uniformly
+bounded by the same expression with G_eta(L) replaced by1. This gives
+an exactly finite arithmetic-paired operator with a paid geometric
+transfer, rather than relying solely on an infinite limit.
+The missing uncorrected paired tail is exactly
+B_1*sum_(s>L,smooth)s^(-eta); geometric bounds enclose it. Taking L=1
+merely encodes the unknown functional in one coefficient, so (26) alone
+cannot be advertised as a cancellation theorem.
+
+8. Why ordinary eta=1 floor reconstruction is a different claim
+--------------------------------------------------------------
+For any d>=1, finite summation by parts with the ordinary floor basis is
+
+ sum_(j<=L)c_eta(j)*floor(j/d)
+  =sum_(k<=L/d)A_eta(k*d)-floor(L/d)*A_eta(L+1).          (27)
+
+The first sum converges absolutely for every eta>0. Its full limit is
+g_eta(d), by mu*One and absolutely convergent smooth-fiber sums. The
+boundary in (27), however, need not vanish for eta<=1.
+
+A concrete eta=1 counterexample is H=1, v(1)=1, d=1. Then
+A_eta(j)=kappa_1/j on smooth j, and zero elsewhere. For L+1=2^a the
+boundary tends to kappa_1; for rho(L+1)>1 it is zero. Thus the ordinary
+increasing-L floor series does not converge to g_eta(1). This includes
+the coprime row d=1, so restriction to coprime source rows does not repair
+the pointwise claim. Weighted Psi summability does not imply weighted
+floor summability.
+
+For eta>1, sum_j j|c_eta(j)| is finite and the boundary vanishes. The
+ordinary floor reconstruction is then absolutely convergent and exact.
+For every 0<delta<eta-1 it has the explicit tail estimate
+
+ sum_(j>L)j|c_eta(j)|
+ <=2*L^(-delta)/kappa_(eta-1-delta)
+                   *sum_(r<=H,rough)r^(1+delta)|B_r|.    (28)
+
+Eta=2 is a fully rational instance with this standard pointwise floor
+admission. Finite source pairings may be interchanged with that series.
+For eta=1 one may specify cofinal boundary-zero cutoffs, for example
+L=(30H+1)*2^a-1, and obtain pointwise convergence along those cutoffs.
+That is an explicitly changed summation convention, not ordinary
+infinite-floor convergence. The arithmetic certificate (25) already
+avoids that convention and is valid without it.
+
+9. Joined-source contraction for the NEW family and the unpaid norm
+-------------------------------------------------------------------
+Return to v(h)=f(h)-G_mu(h) on rough h<=H, keeping the old long dictionary.
+Equation (8) gives v=b+VQ. The rough inverse has no artificial smooth
+boundary. The same divisor contraction used in (13) proves
+
+ sum_(t<=H/r,rough)mu(t)*(VQ)(r*t)
+   =sum_(s 30-smooth,r*s<=H)Q(r*s).                      (29)
+
+Hence the finite arithmetic core in (20) is exactly
+
+ B_r=kappa_eta*[sum_(t<=H/r,rough)mu(t)*b(r*t)
+                         +sum_(s smooth,r*s<=H)Q(r*s)]. (30)
+
+The b term has the uniform divisor-count price O(H polylog H), also
+after multiplication by (1+ell(r))^3 in (22). The NEW unpaid leaf is,
+for example,
+
+ sum_(h<=H,rough)(1+ell(h))^3
+          *|sum_(s smooth,h*s<=H)Q(h*s)|
+       =O_epsilon(N^(1/2+epsilon))                     (31)
+
+uniformly in required y and at both endpoint parameters r=p/q and r=1.
+The rough index in (31) is named h to distinguish it from that parameter.
+This is a
+sufficient finite norm leaf for (22),(25), not a necessary RH condition.
+An independently proved sharper Delta or block-moment estimate may
+replace (31). The exact arithmetic query vector Q remains (7), including
+its original K_T, source thresholds and joined channel signs.
+
+The fully positive price for (31) is only O(N polylog N), using (17),
+the smooth reciprocal geometric series and the rough harmonic sum.
+No square-root estimate for (31) is proved. The new operator has a
+noncircular algebraic gain: it removes the finite support-boundary
+correlation (15), reduces the complementary term to finite rough-core
+smooth-fiber sums, and supplies an explicit all-scale geometric norm
+transfer. It still relocates the unproved arithmetic cancellation to
+Q or B, potentially at queries through D. A claimed paid square-root
+branch must bound those signed queries independently; reverse use of
+(2), an assumed original coefficient bound, or an assumed RH/Mertens
+estimate would be circular.
+
+The paired certificate (25) may bound the exact residual arithmetic
+functional, and eta>1 additionally gives pointwise floor reconstruction.
+Using either within a pre-existing RH bridge requires a separate check
+that its source masks, allowed coefficient family and endpoint bounds
+match that bridge. This review establishes neither that bridge admission
+nor the norm premise (31). No RH consequence is claimed.
+
+10. Stronger symbolic contraction: six full atoms and a sparse prefix tail
+-------------------------------------------------------------------------
+The joined untruncated W source is already a signed list of six ordinary
+floor atoms. For b=p,q and (v,c)=(4,1),(2,-3),(1,2), put
+
+ Z_(b,v)=floor(v*N/b), lambda_(p,v)=c, lambda_(q,v)=-r*c.
+
+An atom with Z=0 vanishes. For every integer d>=1 and every y>=1,
+
+ floor(Z/d)*1[d<=y]
+  =floor(Z/d)-sum_(i<=floor(Z/(y+1)))
+                   [1[d<=floor(Z/i)]-1[d<=y]].           (32)
+
+If d<=y each bracket is zero. If d>y, the brackets count exactly the
+positive multiples i with i*d<=Z. Every tail threshold T=floor(Z/i)
+is strictly greater than y. This proves (32) with its correct endpoints,
+including y>=Z, when the tail sum is empty.
+
+Define the signed tail-pair dictionary by these atoms and i ranges,
+combining duplicate T and the common y threshold before absolute values.
+Its ungrouped weighted pair count satisfies
+
+ P_tail:=sum_(atoms)|lambda|*floor(Z/(y+1))
+       <=12*(1/p+r/q)*N/(y+1).                          (33)
+
+As a list of individual indicator coefficients its L1 is at most
+2*P_tail. This is a UNIFORM paid O(N/y) dictionary count, independent
+of H. It is a genuinely smaller search input when y is much larger than
+H. It is not a bound for the arithmetic norms of its indicator inverses.
+
+The generic062 long completion for an UNTRUNCATED floor atom collapses
+symbolically to that same single floor atom when Z>H. Before coalescing
+its terms have i<=Z/(H+1), T=floor(Z/i), and ell<=T/(H+1). Equivalently
+i*ell<=Z/(H+1), and its coefficient at floor(Z/(i*ell)) contains
+sum_(ell|k)mu(ell)=delta_1(k), k=i*ell. Thus all long contributions
+except the horizon Z disappear exactly. If Z<=H there is no long part,
+and the original atom is a direct short atom. This cancellation occurs
+before evaluating any complement Mertens window or taking coefficient
+absolute values.
+
+The dictionary construction and long inverse are linear. Therefore the
+OLD actual long completion itself equals the six full long atoms minus
+the generic long completions of the sparse tail indicator pairs in
+(32). This is an exact rewrite of its joined coefficients, not just a
+different candidate with a suggestive residual.
+
+Suppose y>H, so every tail threshold T and the threshold y are long.
+For L>H define
+
+ Q_L(k)=1[k<=floor(L/(floor(L/(H+1))+1))]
+                  [M(floor(L/k))-M(floor(L/(H+1)))].     (34)
+
+This is the single-threshold version of (7), supported on k<=H. Put
+
+ Q_tail(k)=-sum_(tail atom,i)lambda*[Q_T(k)-Q_y(k)],
+ v_short(h)=sum_(atoms,1<=Z<=H)lambda*floor(Z/h).
+
+The exact OLD short residual is
+
+ v(h)=v_short(h)+(VQ_tail)(h).                           (35)
+
+The bounded-source b term in (8) has been absorbed by exact full-floor
+contraction; it need not be carried as a separate arithmetic query.
+The short-atom contribution is already uniformly paid after core_inverse:
+|v_short(h)|<=12H/h, P(1/h)=1/h, so its coefficient L1 is at most
+24H*(1+log H)^2. If floor(N/q)>H, all six atoms are long and v_short=0.
+This condition holds for all sufficiently large N with H=floor(sqrt N).
+
+WITHOUT the core fill, the raw short coefficients reduce to the explicit
+linear current-scale Mertens-window dictionary. Unlike (35), this next
+formula is valid for every y>=1, including y<=H:
+
+ c_raw(j)=sum_(atoms,Z<=H)lambda*1[j=Z]
+  -sum_(tail atom,i)lambda*
+    [M(floor(T/j))-M(floor(T/(j+1)))
+                 -M(floor(y/j))+M(floor(y/(j+1)))],
+                                           1<=j<=H.     (36)
+
+Terms with Z=0 are omitted. Formula (36) includes j=H. For a long
+threshold L, its lower endpoint floor(L/(H+1)) is exactly the original
+K_L. For a short threshold that endpoint is zero. A single indicator
+1[d<=L] has its complete finite floor coefficients
+M(floor(L/j))-M(floor(L/(j+1))). The generic long coefficients are
+exactly the j>H portion of this complete inverse, because a term there
+has inverse index at most L/(H+1). Thus subtracting that long part and
+performing the unique short inverse gives precisely the remaining
+j<=H portion. This proves the all-y version of (36), and agrees with
+(11) when both tail thresholds are long. No independent copy of mu
+has been introduced. The direct full-floor atoms are the correct full
+inverse coefficients at their horizons. The original many-threshold
+quadratic presentation has therefore collapsed to a sparse linear
+actual-Mertens presentation for this raw branch.
+
+For H=floor(sqrt N), every individual window in (36) on j>=alpha H
+has length at most T/(j*(j+1))+1=O_alpha(1). Consequently the ENTIRE
+raw macroscopic terminal block j>=alpha H has the elementary but
+nonoptimal price
+
+ O_alpha(H*N/(y+1)).                                    (37)
+
+When y>=N/polylog N this pays the block at square-root/polylogarithmic
+cost. A stronger telescoping price pays the same raw block for EVERY
+prefix y. Let a_T^tail be the signed coalesced INDICATOR dictionary
+obtained by expanding the tail pairs in (32); this notation is distinct
+from the original long threshold dictionary. Put
+
+ M1_tail=sum_T|a_T^tail|*T,
+ L_Z=floor(Z/(y+1)).
+
+For each pair its positive contribution to M1_tail is at most
+|lambda|*(floor(Z/i)+y). Therefore
+
+ M1_tail<=sum_(atoms)|lambda|*[Z*h(L_Z)+y*L_Z]
+         <=sum_(atoms)|lambda|*Z*[h(L_Z)+1]
+         <=12*(1/p+r/q)*N*
+                    [2+log max(1,D/(y+1))],            (39)
+
+where h(0)=0. An atom with L_Z=0 has no tail contribution; the displayed
+upper bound remains valid. The harmonic estimate uses
+h(L_Z)<=1+log L_Z when L_Z>=1. Joining duplicates can only reduce M1.
+
+For every 1<=J<=H, the Mertens windows in successive j are disjoint
+apart from endpoints. Since |mu|<=1, their absolute lengths telescope:
+
+ sum_(j=J)^H|c_raw(j)|
+ <=sum_(atoms,J<=Z<=H)|lambda|
+   +sum_T|a_T^tail|*[floor(T/J)-floor(T/(H+1))]
+ <=6*(1+r)+M1_tail/J.                                  (40)
+
+The first line also remains valid when T<=H; then its last floor is
+zero. At J>=alpha*sqrt N, (39),(40) establish a UNIFORM paid
+O_alpha(sqrt N*log(2N)) raw terminal block for every allowed prefix.
+This is a noncircular power-saving partial branch derived only from
+actual mu*One and |mu|<=1. It requires no Mertens bound or moment
+assumption. The head 1<=j<J remains UNPAID. At J=1, (40) gives only
+O(N polylog N), so the partial theorem is not a full variation theorem.
+
+Neither (36) nor (37),(40) applies unchanged to the declared OLD core_inverse.
+For that operator, use Q_tail in (13)-(15), keeping the finite boundary
+R_H. Even a sparse pair count does not eliminate its smooth-core and
+boundary correlations. A broad core terminal block can access small
+rho(j), and a difference at j versus j+1 need not preserve the narrow
+raw window. Omitting these distinctions would make an invalid claim
+about the current licensed construction.
+
+For the NEW arithmetic-paired extension, however, (29) applies directly:
+
+ B_h=kappa_eta*[D_rough(v_short)(h)
+                       +sum_(s smooth,h*s<=H)Q_tail(h*s)]. (38)
+
+Thus its exact finite arithmetic input is a sparse joined list of
+differences Q_T-Q_y, with O(N/y) paid pair count, followed by smooth
+fiber summation. The matrix degree has contracted to linear actual
+Mertens increments. Those increments can still reach D/h. A uniform
+weighted rough norm or an actual block moment for (38) is unpaid.
+The dictionary count (33) does not estimate its signed Mertens windows.
+
+Finally, y=D has no tail at all. Only the six atoms remain; their long
+coefficient L1 is at most12, and the direct short-atom price above pays
+the old core repair. This is an exact uniform full-prefix branch. For
+y<=H use the earlier empty-long branch; applying the sparse-tail rewrite
+there is unnecessary and does not improve its already paid cost.
+
+Disposition: finite complementary identities, sparse source contraction
+and geometric operator transfers are proved. The old finite core boundary
+is explicit; the nonempty sparse-tail rough norm and actual block
+correlations remain open. No RH conclusion is claimed.

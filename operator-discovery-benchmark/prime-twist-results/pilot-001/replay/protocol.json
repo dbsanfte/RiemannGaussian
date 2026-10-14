@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "grammar_version": "fractional-prime-twists-and-right-shift-zero-recovery-v1",
+  "precision": 384,
+  "seed": 2026101201,
+  "objective": "Learn signed prime-error decay with fractional arithmetic twists, exact centers, all-scale signed calibrations and charged recovery to ordinary zeta",
+  "source_run": "/home/dbsanfte/riemann/operator-discovery-benchmark/prime-discrepancy-results/pilot-001",
+  "source_verification_sha256": "cb91938f6fc4a4d668064733edf07fa8d0528f65ede25bd7880ba467f48d1dd8",
+  "source_archive_sha256": "7d692ac0cde3ef5c316336f3920554dcde108bef8a8c742de8f3ddcfbd2d87f5",
+  "source_final_sha256": "9adbaef20314a9c87f30c728d30209448eb3d8d64a360b98f17ec7ca4a217991",
+  "code_sha256": {
+    "stable_scale_search.py": "eb82f9b669e29815fe75b17adacdea69b49f61c24ef91bf403b5c68a845063aa",
+    "stable_scale_grammar.py": "7ec14a1067f2b79cd9667c58f6cf29f5d1b06e4c4052807c64a47233f4bc12df",
+    "check_stable_scale.py": "ff348b8015fc8a5f0b01d89f781549a20a8549ebcab8effbf922b0c22b15c7eb",
+    "stable_scale_report.py": "807f01417f691619a20ce9d3bd39f596bc96cb1108228ce2440a75ead8efe260",
+    "stable_scale_proof.txt": "b8edda87fc50ad99b175f68dc5293ae72d7aecd1e2df94d686739fc542dab332",
+    "signed_control_grammar.py": "ff980c48339f88f048639ed57887d81d8b3778cb526ec20d388609462ad6e20a",
+    "signed_control_search.py": "e423a80e1ede7ff78fac3a7dcffbae4ebf9338029df2b7f0736388adddbf0f92",
+    "estimate_grammar.py": "bfce1b3a3c58f8f5d378dbfa2a67b2d981e25004b2a6302018f69eeae88fe864",
+    "check_signed_control.py": "c388ec7391ff1c7b04daf082654ae5b9c7a6b9ae92a93760d5de4db6930a63f9",
+    "mellin_search.py": "e750be0f32157ccc3f8f5c0fc38459ad00980d38fcd2cb05f563c90f7e0d650c",
+    "check_mellin_search.py": "b7d40dc6cb7fab69d38d7cb8db83f30c2eec17b13ef662c67c57ba14d2e4e930",
+    "mellin_search_report.py": "b070c015f3b753ed329f102251ad10210d3edf48c707229763e8247abae2a6e4",
+    "signed_mellin_transfer.py": "e86538c87ef69ae99505aaa35cfdb56870d189ad62adbec8f2e9601aef91023b",
+    "check_signed_mellin_transfer.py": "1998728113f27318a3a4c8471e391b964e2b991fc9d037741b0c33c01daedd8e",
+    "signed_mellin_proof.txt": "d21633a81beb89c2a92de6f05ca1f9cef51954e3efd20ca2cc59d18e6d20c6f5",
+    "rational_power_grammar.py": "7e82beacb262e83d6775912b5bda6b69b7f069326305b466e1dd09fc237a3d8f",
+    "rational_power_proof.txt": "683fb3dafd8b5f8aca93ca1f19c5a02a0530a3d76513876c1a46657983176d8f",
+    "fractional_moment_search.py": "c59f721660c069d2f656f1ebb544b6b0e8ab6b16eca0ec23ea518bf18aacfdab",
+    "check_fractional_moments.py": "a341bb164bac770214bb58be70f9df9f91d17d01bbcddab1dab32799a9a58d79",
+    "fractional_moment_report.py": "be57224e5f37578a3ab99d90c07722dd3b342f3acb38871b9a9a2ee70b785c47",
+    "exact_arithmetic.py": "5f8210a3b6cceeab649f71dc69cd4789b3223b53c92df76d0d4e8fe74a6dc49c",
+    "fractional_zeta_branch_audit.py": "01e90aababbc4951357ee2da095f7dc1c00173a2f2093292bfe340f015ef7304",
+    "check_fractional_zeta_branches.py": "f78fa2fb0ffc4d7731f168dfdb886764289a24593a13e1d7a9cf55f42fcbac7f",
+    "fractional_zeta_branch_proof.txt": "78028784064184698b5e606edfbfafa2cbe5befe2993f1d6dfd0eca196107f0f",
+    "pole_neutral_grammar.py": "022af5e70695a34b560d44e4e0513a9f4c52d5afcac0f44fc4343b3b7dcf1ba5",
+    "pole_neutral_proof.txt": "451e74abb3e9fa350dbbff4ee30e1939be3c8c60ea3b17ade1ae9046402e530e",
+    "pole_neutral_search.py": "856996e5f21653531f02eb973a6f69933d441d3e4f0682e832fcb2abed17019d",
+    "check_pole_neutral.py": "6582276a2d7c5e541823c5672b4bab5465b051e497b56e4f6af75ed8bf2b4fc1",
+    "pole_neutral_report.py": "4e288338513e2e8737f477252d4412f77653c65078db64794ff77abf1c45671b",
+    "parameter_jets.py": "f60be1cab89ed776d7b84f859537f61b2fe4aa7598413f6d947dfba56a472e1a",
+    "parameter_jet_audit.py": "e8f4499ad8baab23af931c5eba1f16ad74b73683506a9ca6b244d815d9ba4a6c",
+    "check_parameter_jets.py": "5ad48138c536d36c4f140c1230532e0a375932c5b65051d808fd3e103ab8cec9",
+    "parameter_jet_report.py": "92df07c632e345e7a7bec38cdd4a7a5455019a6bc381d06be65d4839e36174d6",
+    "parameter_jet_proof.txt": "c898882de12f773993906df16b1efa21ccd3fefd74d32a7c635e75d3986ca8e6",
+    "prime_error_grammar.py": "ace5d8962cffc65b288c41614e7085cd903acfd4ea780602c0ff633796430f67",
+    "prime_error_search.py": "404f09de471f40bf147462c2813402edafd4f3f4548a4ca16d29b7e544d43f4d",
+    "check_prime_error.py": "e762516b6b9c9880308044f3919f6de9c79a00eff3fda075538a2f817e07dc9f",
+    "prime_error_report.py": "b0abe48e47edaeb79c50b528401cbe6372ca6fc645494720febca4c1df2c8ed0",
+    "prime_error_proof.txt": "fb3f2429152df2ce81628df104acb144506dac6ddc62a921580944da27691e95",
+    "prime_discrepancy_grammar.py": "2a5abf9701638454b2b0f25b867cb7e1e7a7925a3f6c362b6346b75bee9762b2",
+    "prime_discrepancy_search.py": "515ccda5fa5fd7d984f1fc4c3a61119853d19acde249df9f03e814249afb07ad",
+    "check_prime_discrepancy.py": "aa8d0c7b6903e219cd74d4d79b82b721bece99bc0107e495426b65e23b9378d2",
+    "prime_discrepancy_report.py": "4014eab30a28157f4fa5a71433b506c58689ee062149c2c08c9bc6965b03015c",
+    "prime_discrepancy_proof.txt": "71d9a276d9a8ca0d630e740ba800e57a3ab6e74570931bb2f3b3d277266550c1",
+    "prime_twist_grammar.py": "992e865811765faaf1be90564114f5f5684a5593bf6970491681edb0b78806b0",
+    "prime_twist_search.py": "1b34b84399b4fb6445d7cf523697c11827552187aa58522ddfbc73e9b12f507d",
+    "check_prime_twists.py": "88e510e84454c89eac85482869df5cf0569e900bc4fe601c92ce3157b0632e22",
+    "prime_twist_report.py": "584ce2639c4fde755b3c1e78a302a2a1c912c2865a011eba27e3071ed2305d53",
+    "prime_twist_proof.txt": "1c20d07625889c07f9e64849f5e3bf03ef057dc27804ec30df7841e0e9385618"
+  },
+  "this_stage_source_files": [
+    "prime_twist_grammar.py",
+    "prime_twist_search.py",
+    "check_prime_twists.py",
+    "prime_twist_report.py",
+    "prime_twist_proof.txt"
+  ],
+  "known_zero_dependency": {
+    "verification_sha256": "20812515e6d2022fb2c9be46df5f3693c3182540831d74badd0fa9053333e083",
+    "source_sha256": "06d806d3d39d27bbd7a8bae3f8b64cde1ae84ff167e3a45d0a3ec5a8c2301346",
+    "centre": [
+      "1/2",
+      "14.13472514173469379046"
+    ],
+    "radius": "1/20000",
+    "scope": "previously certified simple critical-line zero; reflection and uniqueness"
+  },
+  "prime_density_constant": "359/128",
+  "source_coefficient_square_certificate": {
+    "beta": "1",
+    "constant": "13633/1024",
+    "initial_cutoff": 2048,
+    "tail_majorant_ball": "[13.3126747192602731000688527796053538213433315 +/- 3.53e-44]",
+    "initial_maximum_ball": "[0.977351385243194567703862347291968611559414954 +/- 4.20e-46]",
+    "uniform_coefficient_square_bound": "sum_(n<=N) a(n)^2 <= C*N/log(e+N), every integer N>=1",
+    "all_scale_coefficient_square_bound_proved": true,
+    "signed_pair_bound_proved": false
+  },
+  "source_unfiltered_moment_obligations": [
+    {
+      "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+      "rho": "-31/32",
+      "gamma": "0",
+      "constant": "41571/1024",
+      "observed_rho": -0.966432239240548,
+      "positive_residual_growth_slope": -0.4722782689782299,
+      "transfer": {
+        "rho": "-31/32",
+        "gamma": "0",
+        "constant": "41571/1024",
+        "mellin_exponent": "1/2",
+        "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+        "diagonal_coefficient": "40899/1024",
+        "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+        "all_scale_diagonal_bound_proved": true,
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+        "uniform_signed_correlation_premise_proved": false,
+        "RH_proved": false
+      },
+      "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+      "id": "ec44a417d6ea3aaf24f2b64e3b6c20b6e647292f44243af2de315014f1fecacb",
+      "validation_failures": [],
+      "validation_unresolved": []
+    },
+    {
+      "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+      "rho": "-31/32",
+      "gamma": "1/4",
+      "constant": "7349/512",
+      "observed_rho": -0.966432239240548,
+      "positive_residual_growth_slope": -0.4722782689782299,
+      "transfer": {
+        "rho": "-31/32",
+        "gamma": "1/4",
+        "constant": "7349/512",
+        "mellin_exponent": "1/2",
+        "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+        "diagonal_coefficient": "40899/1024",
+        "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+        "all_scale_diagonal_bound_proved": true,
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+        "uniform_signed_correlation_premise_proved": false,
+        "RH_proved": false
+      },
+      "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+      "id": "2bd3082b8619e07dfaa92ee2b893a985e09e2e19b959d413142644bff0ae7ae9",
+      "validation_failures": [],
+      "validation_unresolved": []
+    },
+    {
+      "program_id": "ad1aac3422208e59edbb78d72c2116774d756c2ea6eaa09c80a249dbcb701e07",
+      "rho": "0",
+      "gamma": "0",
+      "constant": "147/512",
+      "observed_rho": -0.966432239240548,
+      "positive_residual_growth_slope": 0.0,
+      "transfer": {
+        "rho": "0",
+        "gamma": "0",
+        "constant": "147/512",
+        "mellin_exponent": "1/2",
+        "premise": "For every integer X>=1, C_off(X)<=rho*D(X)+B*X^gamma",
+        "diagonal_coefficient": "40899/1024",
+        "diagonal_bound": "D(X)<=diagonal_coefficient*X^2/log(e+X), every real X>=1",
+        "all_scale_diagonal_bound_proved": true,
+        "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+        "RH_sufficient_if_uniform": true,
+        "ordinary_zero_bridge": "first-jet logarithmic meromorphic residue proof; isolated multiplier zeros allowed",
+        "uniform_signed_correlation_premise_proved": false,
+        "RH_proved": false
+      },
+      "analytic_status": "RH_sufficient_signed_correlation_obligation_missing_uniform_proof",
+      "id": "04c8bba84ce411943c54f8c4a0a9fb13bd6d6c43d188d8ed7b5fda3021744383",
+      "validation_failures": [],
+      "validation_unresolved": []
+    }
+  ],
+  "deltas": [
+    "1/6",
+    "1/4",
+    "1/3",
+    "1/2",
+    "2/3",
+    "1",
+    "3/2"
+  ],
+  "semantic_denominator_ceiling": null,
+  "channels": [
+    "weighted",
+    "log"
+  ],
+  "enumerated_degree": 2,
+  "integer_range": [
+    -2,
+    2
+  ],
+  "monomial_degrees": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "random_draws": 12,
+  "random_denominators": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "maximum_degree": 3,
+  "normalizer_constructions": [
+    "same coefficients",
+    "leading coefficient only",
+    "least squares for random polynomials"
+  ],
+  "least_squares": "leading normalizer fixed at one; fit later normalizers with ridge 1/1024, round to 1/64 and clip to [-16,16]",
+  "training_points": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "validation_points": [
+    193,
+    257,
+    389,
+    521,
+    769
+  ],
+  "offset_constructions": [
+    "zero",
+    "exact compiled Mellin finite part at zero"
+  ],
+  "log_powers": [
+    "0",
+    "1"
+  ],
+  "theta_grid": [
+    "-1",
+    "-1/2",
+    "0",
+    "1/2",
+    "1",
+    "3/2"
+  ],
+  "theta_inference": "OLS absolute centered responses at n>=16, with log-power removed; upward 1/32 quantization with margins 0,1/8,1/4; union generic grid, charged critical target and weak bound exponent",
+  "constant_inference": "twice maximum training ratio, upward 1/1024 rounding, minimum 1/1024",
+  "archive_size": 20,
+  "cost_height": "16",
+  "cost_line_margin": "1/8",
+  "recovery_terminal_real_part": "9/8",
+  "selection": "unfiltered baseline at theta=1/2 and log power zero; best program per channel; RH-compatible shifted program per delta; one inverse-shift-loss example, one negative decay lead, actual-zero diagnostic and density-matched pole diagnostics; fill distinct programs by validation and full recovery cost",
+  "final_cases": {
+    "large_count": 3,
+    "large_range": [
+      16385,
+      32767
+    ],
+    "irregular_point_count": 3,
+    "irregular_point_range": [
+      2049,
+      8191
+    ],
+    "boundary": [
+      1,
+      2,
+      3,
+      4,
+      15
+    ]
+  },
+  "generic_response_calibration": {
+    "cutoff": 17,
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      9,
+      17
+    ],
+    "numerator_range": [
+      -3,
+      3
+    ],
+    "denominators": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scope": "unrelated signed rational coefficient prefixes; finite semantics only, no ordinary-zeta identity asserted"
+  },
+  "density_matched_delayed_controls": {
+    "deltas": [
+      "1/6",
+      "1/4",
+      "1/3"
+    ],
+    "actual_prefix_cutoff": 8192,
+    "tail": "actual lambda(n)*(1-n^(-delta)); actual prime-power locations retained at every index",
+    "same_all_scale_psi_and_coefficient_diagonal_bounds": true,
+    "original_exact_prime_power_weights_preserved": false,
+    "pole_obstruction": "1-delta"
+  },
+  "native_shift_log_bridge": {
+    "real_part": 4,
+    "heights": [
+      "0",
+      "7/3",
+      "19"
+    ],
+    "tail_h": 2
+  },
+  "native_kernel_points": [
+    "7/3",
+    "19/2",
+    "127/3"
+  ],
+  "signed_harmonic_calibration": "factorial fractional-part remainder gives -1<=sum_(p^k<x)log(p)/p^k-log x<=C_psi; partial summation gives uniform reciprocal-prime signed tails",
+  "coefficient_producer": "factor-free Dirichlet logarithm; real positive qth roots for rational twists; no prime or factor oracle",
+  "prior_final_data_is_development_only": true,
+  "model_literature_network_calls": false,
+  "historical_priority_is_acceptance_gate": false,
+  "uniform_RH_sufficient_signed_controls_verified": [],
+  "RH_proved": false,
+  "remaining_assumptions": [
+    "finite rational shift/delay and coefficient budgets",
+    "two cumulative channels with independently chosen smooth normalizers",
+    "pure power/logarithmic point bounds; negative exponents use exact center certificates",
+    "written factorial/Stieltjes and right-shift residue proof backends, not machine-formalized",
+    "finite holdout windows; all RH-strength decay hypotheses remain conjectural"
+  ]
+}

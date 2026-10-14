@@ -1,0 +1,129 @@
+STAGE084 FIXED-KERNEL RH TARGET AND TRANSFER AUDIT
+
+Conclusion: either one of the two original fixed unfolded sources suffices
+for RH if its O_epsilon(x^(1/2+epsilon)) bound is proved for EVERY epsilon>0.
+No additional source-parameter family is required for these particular
+invertible kernels. Earlier wording that a full source-parameter transfer
+remains necessary was unnecessarily strong. It should be superseded by this
+explicit transfer, while preserving historical records. Stage083 proves no
+complete source bound, so this clarification changes no proof status.
+
+1. Exact constructive dilation inversion, including floors
+Put M(x)=sum_(n<=x)mu(n), M(x)=0 for0<=x<1, and extend the sources to real x:
+ G(x)=M(x/8)-M(x/10)-M(x/4)+M(x/5),
+ F(x)=G(x)+cG(x/3), c=3547/8192.
+These agree with their integer floor implementations, and G(x)=G(floor x),
+F(x)=F(floor x), because all kernel divisors are positive integers.
+For D_a h(x)=h(ax), exact algebra gives
+ G(4x)=-(I-D_(1/2))(I-D_(4/5))M(x).
+Consequently
+ M(x)=-sum_(j,k>=0) G(4x*2^(-j)*(4/5)^k).
+For each fixed x the nonzero summands form a finite set: G(t)=0 for t<4.
+The identity follows by telescoping rectangular partial sums; the boundary
+M arguments tend below1. This uses actual source identity, not an assumed
+Mertens bound. For sigma>0, |G(t)|<=C t^sigma for all positive integer t
+therefore implies, on all real x>=1,
+ |M(x)|<= C*4^sigma*x^sigma /
+              ((1-2^(-sigma))*(1-(4/5)^sigma)).
+Integer bounds extend to real arguments by floor monotonicity of t^sigma.
+Also G(x)=sum_(l>=0)(-c)^l F(x/3^l), again locally finite. Thus an F bound
+transfers with the additional factor(1-c*3^(-sigma))^(-1), finite because
+0<c<1. Conversely M bounds give both source bounds by finitely many dilations.
+Hence each fixed source and M have equivalent power-growth bounds for every
+sigma>0, with explicit constants. Neither inversion samples new arithmetic.
+
+2. Independent Mellin check and RH implication
+Initially Re(s)>1, integration of the step functions gives
+ integral_0^infinity G(x)x^(-s-1)dx
+   =[(2^(-s)-1)(4^(-s)-5^(-s))]/[s*zeta(s)].
+For F multiply by1+c*3^(-s). Both factors of the first numerator can vanish
+only on Re(s)=0, since equality of positive-base exponential moduli forces
+that real part. The extra factor is nonzero for Re(s)>=0 because
+|c*3^(-s)|<=c<1. A source O(x^sigma) bound makes its Mellin integral analytic
+in Re(s)>sigma, by locally uniform absolute convergence, so the identity
+excludes zeta zeros there. There is no cancellation of any positive-real-part
+zeta zero by these multipliers. The point s=1 is harmless:1/zeta has a zero.
+Every sigma=1/2+epsilon therefore excludes all zeros to the right of the
+critical line; the zeta functional equation reflects any nontrivial zero to
+1-conjugate(rho), giving RH. The constructive inversion above provides an
+alternative reduction to the classical Mertens-growth equivalence.
+
+Primary references checked2026-10-11:
+https://dlmf.nist.gov/27.4.E5
+  Dirichlet series of mu equals1/zeta for Re(s)>1.
+https://dlmf.nist.gov/25.10
+  Critical strip and symmetry of nontrivial zeta zeros.
+https://sites.math.rutgers.edu/~zeilberg/EM18/TitchmarshZeta.pdf
+  Titchmarsh, The Theory of the Riemann Zeta-function, theorem14.25(C),
+  scanPDF page189: RH equivalent to M(x)=O_epsilon(x^(1/2+epsilon)).
+These imported analytic results are external reviewed mathematics, not
+machine-proved by the finite detector. The dilation derivation is given in
+full here. No claim is taken from speculative RH papers or numerical fits.
+
+3. Exponent distinction and a suitable recurrence proof family
+With E>=source^2, a proved inequality
+ E(u)<=r E(floor(u/2))+C_delta*u^(1+delta), r=3/2,
+for every positive integer u, plus a complete finite base, yields
+ E(u)=O_delta(u^(1+delta)), source=O_delta(u^(1/2+delta/2)).
+Constants and the energy/control program may depend on delta. q=1 gives
+O(sqrt u), which is stronger than the RH-equivalent epsilon family. This
+audit does not assert O(sqrt u) impossible, nor that RH alone proves it.
+One fixed delta>0 gives only a zero-free half-plane Re(s)>(1+delta)/2;
+it does not establish RH. A finite list of positive deltas also falls short.
+
+An implementable target family is delta_j=1/j for every integer j>=1.
+Alternatively delta_j=2^(-j) works. Given epsilon>0 choose j with
+1/(2j)<=epsilon. No uniformity of C_j across j is needed. A finite structural
+acceptance must validate a parametrized construction and its proof FOR ALL j,
+not only several generated members. A bounded pilot is invention evidence.
+
+For exact recurrence certification choose rational A>=0 and C>=0 proving
+base E(u)<=A*u^q, and establish A*(1-r/2^q)>=C. For rational q=a/b>0 and
+rational r=p/t, strict contraction is exactly p^b<t^b*2^a (positive integers).
+A rational lower enclosure l<=2^q obtained by l^b<=2^a gives the sufficient
+rational inequality A*(1-r/l)>=C. For q>=1 and r=3/2, choose l=2 uniformly:
+A=4C, enlarged for the finite base, works for ALL delta>=0. Odd u causes no
+loss:floor(u/2)^q<=u^q/2^q. Base proofs can use a signed-data-free trivial
+source/energy bound if available; a finite exhaustive base is also legitimate
+when independently bound and not mistaken for the uniform drift leaf.
+
+Suggested structural certificate obligations:
+ exact fixed-kernel identity and rational c binding;
+ integer parameter j>=1 and symbolic q_j=1+1/j;
+ complete energy domination (positive auxiliary squares plus source square);
+ proved drift leaf for every u and j, with explicit parameter-dependent C_j;
+ complete base, uniform recurrence contraction, and no dropped raw pairs;
+ explicit external RH-transfer theorem dependency.
+The target compiler may admit this implication conditionally with
+DRIFT_LEAF_UNPAID. It must not emit RH_PROVED from schemas, fitted constants,
+finite Boolean prices or an unproved all-j quantifier. A rational exponent
+family metadata record alone is not an arithmetic bound certificate.
+
+4. Boolean diagonal/prime-anchor obstruction audit
+The stage083 completed physical Boolean envelope fixes mu(1)=1 and mu(p)=-1
+and leaves squarefree composites with Boolean signs. Its exact price is
+trace(A_eff)+2*sum|offdiag(A_eff)|. Signed diagonals need not be nonnegative.
+The price is a valid majorant, not an arithmetic equality. A constant or
+positive prime block cannot be used as a lower obstruction after controls
+without tracking its actual transfer into anchor/composite entries.
+For a fixed corrected matrix, independent random composite signs give
+mean quadratic form equal to its full effective trace, so price>=trace;
+more generally any explicit composite assignment gives a finite cone-price
+lower witness. Such witnesses need not satisfy the divisor zero identities:
+they obstruct only that coefficient majorant, not actual mu cancellation.
+Prime-filtered zero controls leave the composite-composite block unchanged,
+so additional control is required to change that block, although anchor
+constant and affine terms can change jointly. A trace or assignment lower
+bound must be recomputed with every admitted coupled term and Gram, not
+borrowed from082 or from the original uncorrected prime contribution.
+
+No simple all-scale stronger obstruction for the COMPLETE stage083 residual
+has been established here. The actual-sign residual is exactly the remaining
+arithmetic problem; proving its O(u^(1+delta)) upper bound for delta->0 is
+RH-sufficient by the transfer above. The useful next input is therefore this
+weaker exponent family with the same fully retained signed residual, plus
+explicit parameter dependence, rather than asserting that linear-price
+failure or a prime-block count proves a universal no-go theorem.
+
+No frozen files modified, no old science/tests replayed, no unknown signed
+values queried, no RH proof asserted.

@@ -1,0 +1,315 @@
+MOBIUS TRANSPORT SELECTED-CANDIDATE REVIEW 059
+==========================================
+Scope and disposition
+---------------------
+This is post-run source-only analysis of the saved059 selected programs.
+The original MOBIUS_TRANSPORT_REVIEW_059.txt, scientific source, ranking,
+protocol and results remain unchanged. No source tables, integrals, norms,
+plans or suites were regenerated. Inspection consisted of eight saved JSON
+decodes plus source-text reads; new scientific arithmetic work was zero.
+All formulas below concern exact magnitudes, not floating screening values.
+
+The assessment reports five final finite passes for each of the ten
+noncontrol selected claims, at N=4096,7249,8192,13803,16384. Those passes
+are retained. This review proves a new ASYMPTOTIC REFUTATION of program0390
+at every power beta<1, including its selected square-root claim. It does
+not exhibit an additional finite counterexample or change a recorded pass.
+The other selected programs remain open. Their lower finite costs cannot
+be promoted to uniform rates. The saved |mu| ablations are descriptive
+comparisons and are different sources from ordinary mu.
+
+1. Exact source and selected programs
+------------------------------------
+Fix the scientific parameters M=30, p=3, q=5, alpha=1/5,
+gamma=5/28, tau=1/2. Write k=omega(M)=3 and eps=min(tau,N^-gamma),
+
+ Phi_N(a)=1/Gamma(1-alpha)
+          integral_eps^tau G_M(t) a^-t t^(-alpha-1)dt,
+ G_M(t)=product_(ell|M)(1-ell^-t),
+ W(y)=floor(4y)-3floor(2y)+2floor(y).
+
+The exact signed middle is
+
+ J_N=sum_(d<=4N/3,gcd(d,M)=1) mu(d)
+      [W(N/(3d))Phi_N(3d)-W(N/(5d))Phi_N(5d)].              (1)
+
+Only nonzero tokens occur. Their P,Q,D,S magnitudes are respectively
+Phi(3d), Phi(5d), Phi(3d)-Phi(5d), Phi(3d)+Phi(5d).
+Their actual signs include both mu(d) and the floor-kernel sign.
+Squareful d are exactly zero source coefficients, not dropped remainders.
+The cofactor d=1 is retained when nonzero. Its two floor coefficients are
+W(N/(3d)) and W(N/(5d)), not the distinct inclusive-source unit coefficient
+v_x(1). Complete exits
+with 5d>4N have W(N/(5d))=0 and remain in (1).
+
+The saved words are:
+ 0013: ascending profile stack, then ascending global stack;
+ 0402: descending shared-kernel stack, then ascending global stack;
+ 0372: ascending profile blocks of width N, then ascending global stack;
+ 0390: ascending same-profile prime-ratio edges, then ascending global stack.
+
+Each second pass reads actual remaining tokens. It cannot modify a first
+edge or its cost. All unmatched magnitudes are priced at the end.
+
+2. Exact rescue savings and irreversible work
+--------------------------------------------
+For ANY complete first-pass pairing let E be its sum of edge costs and L
+its remaining token list. Let M_L=sum_(i in L)m_i. Its cost with those
+tokens unmatched is B_first=E+M_L. Every second-pass opposite-sign pair
+(i,j) replaces m_i+m_j by |m_i-m_j|. Consequently
+
+ B_final=B_first-2 sum_(rescue pairs)min(m_i,m_j)
+        =E+B_rescue(L).                                    (2)
+
+This is an exact signed-plan reduction with no missing leftover term.
+It proves |J_N|<=B_final<=B_first. Crucially B_final>=E: rescue savings
+come only from first-pass leftover mass. They cannot compensate an
+expensive edge already committed in E.
+
+All first and second passes that scan opposite signs greedily exhaust
+the smaller sign count in their group. A global rescue therefore leaves
+exactly |sum_(i in L)epsilon_i| tokens, independent of their magnitudes.
+This count equality does not determine their residual mass or the cost
+of already paired paths.
+
+For an arbitrary signed residual list define
+
+ T_L(y)=sum_(i in L)epsilon_i 1_(m_i>y),
+ V_L=integral_0^infinity |T_L(y)|dy.
+
+V_L is its optimal unit matching cost, with zero-valued dummy tokens
+representing all unmatched charges. If Omega_L=B_rescue(L)-V_L, then
+
+ B_final=E+V_L+Omega_L,       Omega_L>=0.                    (3)
+
+At threshold y, let C_+(y),C_-(y) be numbers of oppositely directed
+crossings from the chosen rescue edges and zero-dummy paths. Then
+T_L=C_+-C_- and Omega_L=2 integral min(C_+,C_-)dy. This explicitly
+identifies the cost lost through incompatible path directions.
+
+An auxiliary can certify Omega_L=0 by proving one-direction threshold
+flow (for example, a correctly sorted common-kernel matching). Merely
+sorting by cofactor d when profiles differ does not prove it.
+
+A further reusable SUFFICIENT inequality, valid for any maximal-count
+global matching and any chosen m_0>=0, is
+
+ B_rescue(L)<=m_0*|sum_L epsilon_i|+sum_L |m_i-m_0|.          (4)
+
+For pairs apply |m_i-m_j|<=|m_i-m_0|+|m_j-m_0|; for leftovers
+apply m_i<=m_0+|m_i-m_0| and use the exact leftover count. This exposes
+a residual-count-plus-spread construction without assuming the original
+bound. Its arithmetic count and spread premises remain unpaid. A small
+net count alone does not suffice. Unit matching cannot freely cancel a
+magnitude near 2m_0 against two opposite tokens near m_0; that would be
+a different, explicitly licensed three-term grouping grammar.
+
+3. What0013 controls: first-pass variation minus actual rescued mass
+-------------------------------------------------------------------
+Within profile i, list d_1<...<d_s and m_1>=...>=m_s. Put
+A_i(y)=sum_(m_j>y)epsilon_j. Ascending stack realizes its exact optimum
+
+ V_i=integral |A_i(y)|dy
+    =sum_j |sum_(l<=j)epsilon_l|*(m_j-m_(j+1)), m_(s+1)=0.
+
+Its leftovers all have the sign of C_i=sum_j epsilon_j and number |C_i|.
+Let L_i(y) be their signed threshold count. The first committed paths
+and leftover zero paths realize the optimum pointwise, so
+
+ E_i=integral [|A_i(y)|-|L_i(y)|]dy >=0,
+ sum_(leftover i)m_j=integral |L_i(y)|dy.                   (5)
+
+Thus0013 has the concrete all-N identity
+
+ B_0013=sum_i E_i + integral |sum_i L_i(y)|dy + Omega_L.    (6)
+
+The saved improvement over the profile-only control can arise from
+cancellation of the residual L_i across profiles. Bounding each complete
+V_i separately would lose precisely that cancellation. Conversely all
+balanced-profile variation (C_i=0) is already committed and cannot be
+rescued. Equation(6) is more diagnostic than a single fitted cost.
+
+A concrete sufficient next lemma is a uniform bound on the committed
+masked-prefix variation sum E_i together with the joint residual
+threshold integral and a structural bound on Omega_L. This is NOT a
+proved arithmetic estimate. It does identify independently meaningful
+objects that a detector can falsify, including the balanced-profile
+sector and wrong-way residual crossings. A claim bounding the sum of
+these objects without another identity is equivalent to the selected
+plan bound, not a new argument.
+
+There is also a stronger, simpler prefix-discrepancy route: prove for
+each i and every prefix y that the actual N-dependent masked mu count
+is <=D_N in absolute value. Then V_i<=D_N*m_i(d_min). Since
+G_M(t)<=t^k product_(ell|M)log ell, each m_i(d_min) has a finite uniform
+upper bound (S costs at most twice the one-factor bound). This proves
+B_0013<=sum V_i<=constant*D_N. An independently proved D_N=O(sqrt(N)
+polylog N) would be useful, but is a strong unproved source lemma; it is
+not supplied by an ordinary unmasked endpoint Mertens value.
+
+The floor/profile mask can be expanded exactly into ordinary-mu interval
+counts. Its breakpoints are N/[3(j+r/4)] and N/[5(j+r/4)] with integer j
+and r=0,1,2,3. Intersections give the complete profile cells. On a cofactor
+shell d in[D,2D] there are O(1+N/D) such cells. This provides a compiler
+to short-interval coprime mu discrepancies, including every boundary.
+Applying triangle to each interval can be costly; no square-root control
+of those discrepancies is assumed. A useful new lemma must exploit the
+joint intervals or pay their number, not hide that loss in a constant.
+
+4.0372 and0402: changes of pairing geometry, not new source laws
+---------------------------------------------------------------
+For d in[N,4N/3], N/(3d) lies[1/4,1/3] and N/(5d) lies[3/20,1/5].
+Thus these tokens, when squarefree and coprime, are all P with kernel
+sign +1. Width-N blocking therefore splits ONLY the P profile at N;
+all other profiles occur below N. At the point d=N itself the assigned
+block is the upper one, exactly as floor(d/N) requires.
+
+Let A_0(y),A_1(y) be signed threshold counts in the lower and upper P
+blocks. The first-pass cost with leftovers priced is
+
+ V_P,split=integral (|A_0(y)|+|A_1(y)|)dy.
+
+Compared with the complete P optimum its exact excess is
+
+ V_P,split-V_P=2 integral min(|A_0|,|A_1|)
+                                  1_(A_0*A_1<0)dy.        (7)
+
+Above Phi(3N), A_1=0. Below that value the lower block has constant
+threshold count equal to its total signed count. Hence the difference
+comes from a precisely delimited leftover frontier. The global pass
+can trade some of this split excess for different cross-profile rescue.
+There is no universal dominance between the TWO-PASS0013 and0372 merely
+from profile optimum; that dominance applied only before cross-profile
+rescue. Nor are the two programs universal aliases.0372 changes which
+P paths are committed before that rescue, without changing the arithmetic
+source or introducing an additional Mobius identity.
+
+0402 identifies P and Q as the SAME kernel Phi at scaled arguments3d
+and5d. D and S remain the separate kernels Phi(z)-Phi(5z/3) and
+Phi(z)+Phi(5z/3). This exact normalization removes a genuine artificial
+P/Q separation. Ascending scaled arguments would optimize each common
+kernel group. The SELECTED word scans them descending, and with leftover
+paths ending at zero it is not generally optimal. If a group has balanced
+sign counts, both directions attain its optimum, but that exception
+does not establish generic optimality or uniform equivalence.
+
+The common P/Q signed prefix has an exact arithmetic interpretation. At
+scaled index a, P terms have a=3d and sign -mu(a)W(N/a), while Q terms
+have a=5d and sign +mu(a)W(N/a), because gcd(d,30)=1. Each also retains
+its exclusive-profile mask: the other floor coefficient must be zero.
+These are disjoint exact-one-prime-valuation sectors, not independently
+varying signs and not the whole unrestricted mu prefix. This is a useful
+shared-kernel discrepancy leaf, but no prime-exchange estimate pays it.
+
+5.0390 is asymptotically refuted despite its finite passes
+-------------------------------------------------------
+This result depends on the ACTUAL fixed source and the ACTUAL first
+ascending-prime pass. Let a satisfy
+
+ 4N/125<a<4N/123,       mu(a)^2=1,       gcd(a,210)=1.       (8)
+
+Then v=N/a lies(123/4,125/4). The four exact floor arguments give
+
+ v/3 in(10+1/4,10+5/12),  v/5 in(6+3/20,6+1/4),
+ v/21 in(41/28,125/84),  v/35 in(123/140,25/28).
+
+W is +1 on fractional part[1/4,1/2), -1 on[1/2,3/4), and zero
+otherwise. Therefore BOTH a and7a have profile P and kernel sign +1.
+Both supports are inside4N/3. Since7 does not divide a,
+mu(7a)=-mu(a), so the edge(a,7a) is an eligible opposite-sign edge.
+
+Every source token is coprime to30, so no edges with prime2,3,5 exist.
+Prime7 is first. All eligible7-edges are disjoint: squarefree a with
+7 not dividing a has its unique partner7a, while7^2a is not a token.
+Thus every edge in(8) is necessarily taken by0390 before any later
+prime or global rescue. An edge cannot be prevented by another7-edge.
+
+Squarefree coprime integers have positive density. For Q=210,
+
+ rho_Q=(phi(Q)/Q) product_(ell prime,ell not dividing Q)(1-ell^-2)>0.
+
+Proof: expand mu(n)^2=sum_(d^2|n)mu(d), impose gcd(n,Q)=1, and count
+the coprime multiples on the rational interval. Each inner count is
+(phi(Q)/Q)*(v-u)N/d^2 plus an O_Q(1) endpoint error. Summing d up to
+sqrt(vN) and extending the absolutely convergent main series leaves
+O_(Q,u,v)(sqrt N). This proves
+
+ number of a in(8)=rho_210*(8/15375)N+O(sqrt N).            (9)
+
+It uses neither PNT nor RH. Even positivity can be certified elementary:
+all primes outside210 are >=11, sum_(n>=11)n^-2<=1/10, and finite
+product(1-x_i)>=1-sum x_i. Hence rho_210>=36/175. A conservative
+interval error is66sqrt N for N>=123, so an explicit sufficiently large
+threshold follows by demanding66sqrt N<=half the positive main lower
+bound. No assertion about a practical or observed threshold is needed.
+
+Every such edge has the irreversibly charged positive cost
+
+ Delta_a=Phi_N(3a)-Phi_N(21a)
+ =1/Gamma(1-alpha) integral_eps^tau
+       G_M(t)(3a)^-t(1-7^-t)t^(-alpha-1)dt.                (10)
+
+Put L=log(4N). For all sufficiently large N the interval[1/L,2/L]
+lies inside[eps,tau]. On it, (3a)^-t>=exp(-2);
+1-ell^-t>=t log ell/2 for ell=2,3,5, and
+1-7^-t>=t log7/2. Restricting the integral to that interval gives
+
+ Delta_a>=c_1 L^(-(k-alpha+1)),       c_1>0 fixed.
+
+Here c_1 can be displayed as
+ exp(-2)*(log2 log3 log5 log7)/(16 Gamma(1-alpha))
+ times [2^(k-alpha+1)-1]/(k-alpha+1).
+
+Combining(9),(10) with B_final>=E proves
+
+ B_0390(N)>=c_2 N/(log(4N))^(19/5)                         (11)
+
+for every sufficiently large integer N, with c_2>0. Therefore no
+fixed finite C can make B_0390<=C N^beta at ANY beta<1. In particular
+its saved C=1/256,beta=1/2 claim is false all-scale. Its five finite
+passes remain correct, and no new finite counterexample is claimed.
+
+Generic detector rule: a first ascending-prime same-profile pass, whose
+smallest allowed prime r has a positive-length rational cofactor cell
+with equal profile AND equal nonzero kernel sign, incurs a positive-
+density family of disjoint r-edges. For P,Q,S each edge has logarithmic
+power k-alpha+1. D has an additional small-t zero in p^-t-q^-t, giving
+k-alpha+2. Both powers rule out every beta<1. A generic density proof
+can use rho_Q>=phi(Q)/(4Q), since sum_(n>=2)n^-2<=3/4.
+
+Important limits: an earlier scan, an earlier ALLOWED prime, a changed
+source, coefficient zeros, a nonexistent cell, or opposite kernel signs
+invalidate automatic edge-taking unless separately checked. A later
+global pass does NOT invalidate the result because it cannot remove
+charged edges. This does not rule out prime-ratio mechanisms that select
+only a sparse family or use their identities inside larger signed groups
+before absolute values. It rules out this greedy positive-density route.
+
+6. Next proof frontier and scoped conclusions
+---------------------------------------------
+The selected mechanisms are not hundreds of new arithmetic inequalities.
+0013 and0372 choose different commitment/rescue frontiers;0402 changes
+the exact common-kernel geometry;0390 uses an actual mu prime-removal
+identity but pays too many expensive edges. Finite cost improvement may
+come from residual rescue without a uniform estimate of committed work.
+
+The useful automatically checkable next objects are:
+ * exact first-pass edge cost and rescue savings in(2), with leftovers;
+ * balanced-profile committed variation and joint residual thresholds(6);
+ * shared-kernel actual prime-valuation prefix discrepancy;
+ * a proof of one-direction residual threshold flow or a bound on Omega;
+ * a generic floor-cell positive-density irreversible-edge obstruction.
+
+Uniform bounds for the first three are new signed arithmetic premises,
+not paid by the matching identity, finite C calibration or finite ablation.
+Additional grouping arity may preserve cancellation that unit transport
+necessarily loses, but must rebind the complete source and recovery.
+
+Under058's endpoint conditions gamma*(k-alpha)>=1/2 and tau>=1/2,
+a proved square-root/polylog cost bound restores the complete RH-sensitive
+exchange; the scientific parameters satisfy these conditions at equality.
+Those endpoint bounds cannot turn the surviving finite passes into proofs.
+No ordinary-mu uniform estimate for0013,0372 or0402 was established here.
+
+Disposition: candidate review complete; edits stopped. All frozen059
+files and original finite observations are preserved.

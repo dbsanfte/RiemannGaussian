@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_run_core_frame_bounds",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_run_core_frame_bounds operations=6966\n",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.004s\n\nOK\n",
+      "operations": 6966,
+      "elapsed_seconds": 0.3382886809995398
+    }
+  ],
+  "operations": 6966
+}

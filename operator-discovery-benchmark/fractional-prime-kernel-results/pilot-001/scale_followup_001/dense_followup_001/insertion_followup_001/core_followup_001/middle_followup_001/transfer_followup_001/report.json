@@ -1,0 +1,91 @@
+{
+  "RH_proved": false,
+  "RH_refuted": false,
+  "algebra_counts": {
+    "operations": 27537528,
+    "peak_bytes_estimate": 1247056384,
+    "total_primitive_counts": {
+      "cache_hits": 0,
+      "factor_divisions": 1200,
+      "fraction_operations": 2074590,
+      "grammar_atoms": 320,
+      "pivot_checks": 88404,
+      "polynomial_terms": 38720,
+      "prime_trial_divisions": 2,
+      "relation_replay_terms": 1858560,
+      "row_updates": 10791,
+      "valuation_atom_cases": 8640
+    }
+  },
+  "atoms": 320,
+  "basis_relations": 48,
+  "candidate_checker_operations": 1534347,
+  "candidate_producer_operations": 779739,
+  "checked_endpoint_programs": 48,
+  "checked_operator_programs": 186,
+  "development_operations": 798826,
+  "elapsed_seconds": 15.199376205040608,
+  "hashes_used": false,
+  "interpretation_counts": {
+    "unclassified_transfer_operator": 180,
+    "weighted_prime_exchange": 6
+  },
+  "largest_worker_peak_rss_kib": 32908,
+  "literal_closed_self_recurrences": 0,
+  "new_frozen_source_count": 15,
+  "old_suites_or_studies_replayed": false,
+  "parent_checker_operations": 341077,
+  "parent_peak_rss_kib": 704032,
+  "planner_operations": 242746,
+  "prior_frozen_source_counts": [
+    18,
+    17,
+    19,
+    5,
+    13,
+    18,
+    4,
+    1,
+    18,
+    23,
+    19,
+    12,
+    16,
+    13,
+    16
+  ],
+  "proposals": {
+    "archive_truncated": false,
+    "distinct_current_operators": 186,
+    "distinct_proposals": 186,
+    "pair_attempts": 138
+  },
+  "rank": 272,
+  "selected_ids": [
+    "transfer_operator_0021",
+    "transfer_operator_0022",
+    "transfer_operator_0036",
+    "transfer_operator_0047",
+    "transfer_operator_0048",
+    "transfer_operator_0062",
+    "transfer_operator_0000",
+    "transfer_operator_0002",
+    "transfer_operator_0004",
+    "transfer_operator_0005",
+    "transfer_operator_0006",
+    "transfer_operator_0008",
+    "transfer_operator_0009",
+    "transfer_operator_0010",
+    "transfer_operator_0011",
+    "transfer_operator_0023"
+  ],
+  "source_arrays_evaluated": false,
+  "source_order_counts": {
+    "1": 66,
+    "2": 93,
+    "3": 27
+  },
+  "status": "EXACT_OPERATOR_ARGUMENTS_INFERRED_ARITHMETIC_FORCING_OPEN",
+  "target_sector_obstruction": "NONZERO_CURRENT_SECTOR_WHILE_EVERY_STRICTLY_LOWER_ATOM_VANISHES",
+  "uniform_full_source_bound_proved": false
+}

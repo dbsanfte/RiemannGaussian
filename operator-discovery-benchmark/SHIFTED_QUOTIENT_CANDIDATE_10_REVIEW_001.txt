@@ -1,0 +1,410 @@
+CANDIDATE 10: COMPLETE DEGREE-TWO SHIFTED QUOTIENT
+
+Scope and outcome
+-----------------
+This is a separate analytical review of the frozen selected candidate
+  P(s)=H_u(s)H_v(s), u=1/3, v=2/3,
+  H_b(s)=(zeta(s+b)/zeta(s)-1)/b.
+It does not change the frozen study or earlier memos. No new arithmetic
+calculation, numerical experiment, test, parameter search, or rescore was
+performed. The finite admission/results reported by the parent are not used
+as premises for any theorem here. The original source remains actual mu.
+
+Two complete components can be removed rigorously: the entire same-prime
+prime-power overlap, and the smaller residue term x^(1/3). Both have finite
+critical weighted L2 norm. A complete weighted-divisor hyperbola expansion
+also isolates a uniformly bounded kernel remainder; restricting its outer
+sum to d<=x^(1/3) makes that remainder strictly subcritical, with explicit
+cost. None of these removals discards a signed complement.
+
+The remaining candidate-specific obligation is a mixed-prime/composite
+correlation estimate, displayed in sections 5 and 8. The positive
+prime-power-only branch already has bulk size at least c*x/log x, larger
+than the x^(2/3) main term. Consequently the composite branch must cancel
+that bulk before any RH-scale claim is possible. This compulsory correlation
+is not proved by attenuating prime locations, removing a diagonal, or passing
+finite gates. No full cofinal moment theorem or RH is proved here.
+
+1. Exact source, coefficients, and both residue constants
+--------------------------------------------------------
+Let delta be the Dirichlet-convolution unit and k_b(n)=n^(-b). Define
+  a_b=mu*k_b, h_b=(a_b-delta)/b, p=h_u*h_v,
+  S(x)=sum_(n<=x)p(n), beta=1/(uv)=9/2.
+All endpoints are inclusive, x is real >=1, and prefixes vanish below one.
+Every h_b(1)=0. Thus p(1)=0, p(prime)=0, and each factor index in S(x)
+is at most x/2. These prime-location zeros and factor lag are automatic for
+ANY product of two zero-constant Dirichlet series. The matched comparator
+(mu-delta)^{*2} has the same properties; they are not new mu correlations.
+
+Set kappa_u=2/3, kappa_v=1/3, Z_u=zeta(2/3), Z_v=zeta(1/3), W=zeta(4/3).
+The exact residues and main coefficients are
+  R_u=beta*[W/Z_u^2-1/Z_u],
+  R_v=beta*[Z_u/Z_v^2-1/Z_v],
+  m_u=R_u/kappa_u, m_v=R_v/kappa_v.
+The actual centered output is
+  J(x)=S(x)-m_u*x^(2/3)-m_v*x^(1/3).                 (1.1)
+No additional constant is subtracted because p(1)=0. Z_u and Z_v are
+negative and nonzero; W is positive. These are exact special-function
+constants, not fitted rational or numerical coefficients.
+For Re(s)>1,
+  s*integral_1^infinity J(x)x^(-s-1)dx
+    =P(s)-m_u*s/(s-2/3)-m_v*s/(s-1/3).              (1.2)
+Keep the entire compensating fractions, including their constant parts.
+
+For every prime p and e>=1,
+  h_u(p^e)=-3*(1-p^(-1/3))*p^(-(e-1)/3),
+  h_v(p^e)=-(3/2)*(1-p^(-2/3))*p^(-2(e-1)/3).
+For distinct primes p,q,
+  p(pq)=beta*[(1-p^(-1/3))(1-q^(-2/3))
+              +(1-q^(-1/3))(1-p^(-2/3))]>0.        (1.3)
+As both primes increase this tends to 9, whereas the corresponding
+(mu-delta)^{*2} coefficient is 2. Thus the candidate is NOT a uniform
+coefficient attenuation of the matched comparator. For fixed b its h_b
+coefficients include all composites, with signs (-1)^omega(n), not just
+prime powers. Their signed interactions are indispensable.
+
+There is an exact new-prime transfer law. Write b(n)=(a_u*a_v)(n) and
+r_u(p)=1-p^(-u), r_v(p)=1-p^(-v). If m>1 and p does not divide m,
+  p(mp)=-(r_u(p)+r_v(p))*p(m)
+                         -beta*[r_v(p)*a_u(m)+r_u(p)*a_v(m)].
+Indeed a_u,a_v,b are individually multiplicative, with local prime
+values -r_u,-r_v,-(r_u+r_v); their three-dimensional transfer is diagonal,
+while p=beta*(b-a_u-a_v) on integers greater than one. This retains the
+linear source complements instead of pretending p is multiplicative.
+For a squarefree n with j=omega(n)>=1 it gives the especially clean law
+  p(n)=beta*(-1)^j*[product_(p|n)(r_u(p)+r_v(p))
+                    -product_(p|n)r_u(p)-product_(p|n)r_v(p)].
+The bracket is zero at j=1 and positive at j>=2: it is the sum of all
+mixed two-color assignments of the distinct prime factors. Thus squarefree
+semiprimes contribute positively, triples negatively, and so forth. This
+is an exact actual-mu sign relation, not a uniform cancellation estimate.
+It must not be extended to nonsquarefree coefficients, which have their
+different repeated-prime local factors. When these j primes all increase,
+the bracket tends to 2^j-2, and the matched comparator has coefficient
+(-1)^j*(2^j-2). Again the large-prime coefficients are scaled up by beta,
+not uniformly attenuated. Summing this weighted alternating prime-factor
+law to square-root precision is part of the unresolved source estimate.
+
+2. Exact same-prime overlap and a finite critical-norm peel
+----------------------------------------------------------
+Restrict h_u and h_v to prime powers, and within their product retain terms
+whose two factors involve the SAME prime. Denote that coefficient sequence
+d and its inclusive prefix D(x). For q=p^(-1/3) and e>=2,
+  d(p^e)=beta*(1-q^2)*q^(e-2)*(1-q^(e-1))>=0,       (2.1)
+zero otherwise. This follows by summing all exponent splits 1<=l<=e-1:
+  beta*(1-q)(1-q^2)*sum_l q^(l-1+2(e-l-1)).
+The COMPLETE mass at any one prime is exactly
+  sum_(e>=2)d(p^e)
+    =beta*(1-q^2)*[1/(1-q)-q/(1-q^2)]=beta.        (2.2)
+Therefore for every real x>=1,
+  0<=D(x)<=beta*pi(sqrt x).                         (2.3)
+There is no exponent cutoff error in this estimate. This improves the
+logarithmic tuple-count estimate by using the full fixed-shift geometric
+mass, including every repeated-prime power.
+
+The previously proved elementary Chebyshev upper bound supplies a finite
+C_pi with pi(y)<=C_pi*y/log y for y>=2. For example, if the supplied
+source lemma is psi(y)<=C_psi*y, split primes at sqrt y to obtain
+  pi(y)<=sqrt y+2*C_psi*y/log y
+        <=(2*C_psi+2)*y/log y, y>=2.
+Consequently, D(x)=0 for x<4 and for x>=4,
+  D(x)<=2*beta*C_pi*sqrt x/log x.
+In the critical weighted norm ||f||_crit^2=integral_1^infinity |f(t)|^2/t^2 dt,
+  ||D||_crit^2<=4*beta^2*C_pi^2/log 4<infinity.      (2.4)
+Its complete integer block energy satisfies, for dyadic X>=4,
+  X^(-2)sum_(X<=n<2X)D(n)^2
+     <=6*beta^2*C_pi^2/(log X)^2.                 (2.5)
+Use sum_(X<=n<2X)n<3X^2/2 and log n>=log X. The finite head is explicit.
+This is an actual-prime component theorem using only a proved elementary
+prime upper bound, not RH or PNT. It does not bound the mixed-prime branch.
+
+3. Literal prime-power and composite decomposition
+---------------------------------------------------
+Write h_b=l_b+c_b^*, where l_b is its literal prime-power restriction
+(the coefficients in section 1), and c_b^* is supported on integers with
+at least two DISTINCT prime factors. The star distinguishes this sequence
+from the single-quotient smooth coefficient c_b used in earlier memos.
+Then, EXACTLY,
+  p=l_u*l_v + l_u*(c_v^*) + (c_u^*)*l_v + (c_u^*)*(c_v^*).
+Let T(x) be the mixed-prime portion of the l_u*l_v prefix, and C(x) the
+prefix of the other three complete branches. All prime-power exponents,
+all factor orders, all composite overlaps, and all signs are included.
+Then
+  S(x)=D(x)+T(x)+C(x),
+  J(x)=R(x)+Q(x),
+  R(x)=T(x)+C(x)-m_u*x^(2/3),
+  Q(x)=D(x)-m_v*x^(1/3).                           (3.1)
+The smaller pole term alone has
+  ||m_v*x^(1/3)||_crit^2=3*m_v^2.
+Thus
+  ||Q||_crit<=2*beta*C_pi/sqrt(log 4)+sqrt(3)*|m_v|,                  (3.2)
+and its whole integer energy is O(1/log^2 X)+O(X^(-1/3)), with the
+explicit component constants above. In particular Q can be peeled without
+an RH-scale assumption. The exact square always remains
+  E_J=E_R+E_Q+2*X^(-2)sum_(X<=n<2X)R(n)Q(n).        (3.3)
+No sign is asserted for this cross term. Triangle inequalities in BOTH
+directions show that cofinal subpower complete-moment bounds for J and R
+are equivalent, with enlarged constants and the full finite head included.
+The peel changes the proof obligation, not the frozen program or its scores.
+
+4. A mandatory large mixed correlation, not just a diagonal issue
+----------------------------------------------------------------
+All l_u*l_v coefficients are nonnegative. Fix the first factor's prime
+at 2 and let the second factor be a varying prime p>=3. This contributes
+to T, with weight
+  beta*(1-2^(-1/3))*(1-p^(-2/3))
+     >=gamma_0:=beta*(1-2^(-1/3))*(1-2^(-2/3))>0.
+Hence
+  T(x)>=gamma_0*[pi(x/2)-1] for x>=4.              (4.1)
+This is only ONE orientation and one prime-power choice. Adding the other
+positive terms cannot weaken it.
+
+For completeness an elementary prime-count LOWER bound is available
+without PNT. For N=floor(x/2), the central binomial coefficient satisfies
+  psi(x)>=log binom(2N,N)>=2N log 2-log(2N+1).
+The first inequality follows since every prime valuation of the binomial
+is at most floor(log(2N)/log p). Also the supplied psi upper bound yields
+  0<=psi(x)-theta(x)
+     <=C_psi*[sqrt x+(log x/log 2)*x^(1/3)].
+Thus for all sufficiently large x,
+  theta(x)>=(log 2/2)*x,
+  pi(x)>=theta(x)/log x>=c_0*x/log x,
+with a fixed positive c_0 and finite threshold. This is a symbolic all-scale
+argument after that threshold, not a new source-table experiment.
+It follows that T(x)>=c*x/log x eventually. Both main terms in (1.1) have
+smaller order than x/log x. The same-prime D has still smaller order.
+
+Therefore a small FULL centered output requires C to cancel a macroscopic
+positive mixed-prime branch. For example if a cofinal moment holds with
+some exponent 1/q<1, then in the normalized block L2 norm
+  ||T||_X>=c*sqrt X/log X,
+  ||J||_X<=sqrt(C_q)*X^(1/(2q)),
+while ||D-m_u*x^(2/3)-m_v*x^(1/3)||_X=O(X^(1/6)+1).
+Hence
+  ||C+T||_X/||T||_X ->0,
+  ||C||_X/||T||_X ->1,
+  <C,T>_X/(||C||_X*||T||_X) -> -1.                (4.2)
+The statement is conditional on that full moment. It quantifies the exact
+bulk anticorrelation which the candidate would have to exploit; it is NOT
+a proof that the source attains it. The required RH-scale remainder is
+stronger still than this bulk cancellation. Mean-mismatched controls can
+fail badly while proving nothing about (4.2) for actual mu.
+
+5. First precise next inequality
+--------------------------------
+After the rigorous peel, the remaining arithmetic theorem can be stated
+without the one-prime diagonal or the subcritical pole term:
+  For an unbounded/cofinal set of q>0, find finite K_q such that
+  X^(-2)sum_(n=X)^(2X-1)
+       |T(n)+C(n)-m_u*n^(2/3)|^2 <= K_q*X^(1/q)     (5.1)
+for EVERY dyadic integer X>=1. This is a complete signed-square inequality,
+including all three composite branches C and the exact larger main term.
+It is equivalent to the original cofinal J moment by section 3. It remains
+unproved. Dropping C leaves a positive branch with a supercritical moment;
+dropping its cross term with T destroys precisely the necessary information.
+
+6. Exact shift cocycle and its complete defect
+---------------------------------------------
+Let a_1=mu*n^(-1), D_1(s)=zeta(s+1)/zeta(s). It is an endpoint arithmetic
+sequence, not the singular c_b formula at b=1. The exact cocycle is
+  D_u(s)D_v(s+u)=D_1(s).
+Accordingly
+  D_u(s)D_v(s)=D_1(s)+D_u(s)[D_v(s)-D_v(s+u)],
+  P(s)=beta*[D_1(s)-D_u(s)-D_v(s)+1
+                    +D_u(s)(D_v(s)-D_v(s+u))].    (6.1)
+On coefficients define w(n)=(1-n^(-u))*a_v(n), w(1)=0. Then
+  S(x)=beta*[A_1(x)-A_u(x)-A_v(x)+1
+                  +sum_(d*m<=x)a_u(d)w(m)].       (6.2)
+There is also the reversed orientation, using
+  w'(n)=(1-n^(-v))*a_u(n),
+  a_u*a_v=a_1+a_v*w'.
+These are exact divisor/factor-placement identities, with their full signed
+defects. Neither unshifted product telescopes. The difference factors carry
+actual source coefficients, not a nonnegative norm contraction.
+
+At a prime, the cancellation in (6.1) is an algebraic identity between
+1-q,1-q^2,1-q^3 and (1-q)(1-q^2). It adds no independent prime-sign fact.
+Also A_1 is a bounded critical-norm preconditioning of M (absolute kernel
+cost zeta(3/2)), not a proven subcritical function. Moving the defect into
+an A_1 expression cannot close the theorem by declaring A_1 small.
+D_1 has a pole at s=0 and a logarithmic Perron term; there is no finite
+c_1=1/((1-1)zeta(0)) to use. Its low-exponent terms do not alter the critical
+threshold, but they must be retained if that channel is explicitly centered.
+
+7. Weighted divisor kernel: a complete uniformly bounded remainder
+-------------------------------------------------------------------
+Put m_2=mu*mu and
+  k(n)=(k_u*k_v)(n)=n^(-2/3)*sigma_(1/3)(n),
+  K(y)=sum_(n<=y)k(n).
+Then a_u*a_v=m_2*k, so this single kernel exposes the entire degree-two
+smoothing, without forgetting source or rectangle terms.
+For alpha>0, alpha!=1, define
+  S_alpha(y)=sum_(n<=y)n^(-alpha),
+  e_alpha(y)=S_alpha(y)-y^(1-alpha)/(1-alpha)-zeta(alpha).
+Euler summation gives EXACTLY
+  e_alpha(y)=-{y}y^(-alpha)
+                +alpha*integral_y^infinity {t}t^(-alpha-1)dt,
+so |e_alpha(y)|<=y^(-alpha), including noninteger y>=1.
+For alpha=4/3 this says
+  S_(4/3)(y)=zeta(4/3)-3*y^(-1/3)+e_(4/3)(y).
+
+At Y=sqrt y the complete hyperbola identity is
+  K(y)=sum_(m<=Y)m^(-u)S_v(y/m)
+       +sum_(n<=Y)n^(-v)S_u(y/n)-S_u(Y)S_v(Y).
+Expand BOTH short-side S functions, retaining the rectangle. One obtains
+  K(y)=C_u*y^(2/3)+C_v*y^(1/3)+C_0+Delta_K(y),      (7.1)
+  C_u=(3/2)*zeta(4/3), C_v=3*zeta(2/3),
+  C_0=zeta(1/3)*zeta(2/3).
+A useful exact error formula is
+  Delta_K(y)=(3/2)Y^(2/3)e_v(Y)
+             +(3/2)Y^(4/3)e_(4/3)(Y)
+             -3Y^(1/3)e_u(Y)-e_u(Y)e_v(Y)+T_1+T_2,
+  T_1=sum_(m<=Y)m^(-u)e_v(y/m),
+  T_2=sum_(n<=Y)n^(-v)e_u(y/n).
+Here |T_1|<=1 and |T_2|<=3/2; the other bounds are respectively
+3/2,3/2,3,1. Therefore
+  |Delta_K(y)|<=19/2 for EVERY real y>=1.           (7.2)
+This uses u+v=1 essentially. The bound includes all floor/end effects.
+It is much sharper than an unstructured absolute divisor-error bound.
+It is nevertheless a kernel estimate, not the full mu*mu convolution:
+convolving it over every d<=x absolutely would cost O(x log x).
+
+8. Complete outer hyperbola identity and a second subcritical peel
+------------------------------------------------------------------
+Choose U=x^(1/3), V=x^(2/3), so UV=x. Define the inclusive prefixes
+  M(t)=sum_(n<=t)mu(n), M_2(t)=sum_(n<=t)m_2(n),
+  T_K(x)=sum_(m<=V)k(m)M_2(x/m),
+  T_b(x)=sum_(m<=V)m^(-b)M(x/m), b=u,v,
+and the exact finite mismatches
+  B_r(U)=sum_(d<=U)m_2(d)d^(-r)-1/zeta(r)^2,
+  L_r(U)=sum_(d<=U)mu(d)d^(-r)-1/zeta(r), r=2/3,1/3.
+These are differences against analytic values, NOT assumed convergent tails.
+In particular the r=1/3 terms cannot be treated as ordinary convergent
+series even by merely invoking a conjectural square-root M bound.
+
+For B(x)=sum_(n<=x)(a_u*a_v)(n), exact hyperbola gives
+  B(x)=sum_(d<=U)m_2(d)K(x/d)+T_K(x)-M_2(U)K(V).
+Expanding ONLY the short-side K with (7.1) yields
+  B(x)-C_u*x^(2/3)/Z_u^2-C_v*x^(1/3)/Z_v^2
+    =C_u*x^(2/3)B_(2/3)(U)+C_v*x^(1/3)B_(1/3)(U)
+       +C_0*M_2(U)+T_K(x)-M_2(U)K(V)+epsilon_K(x),
+  epsilon_K(x)=sum_(d<=U)m_2(d)Delta_K(x/d),
+  |epsilon_K(x)|<= (19/2)*x^(1/3)*(1+log x/3).      (8.1)
+The last inequality uses |m_2(d)|<=d_2(d) and
+sum_(d<=U)d_2(d)<=U(1+log U). The intersection term is not optional.
+The entire short-side remainder has the explicit critical norm bound
+  ||epsilon_K||_crit^2<=15*(19/2)^2,               (8.2)
+because integral_1^infinity x^(-4/3)(1+log x/3)^2 dx=15.
+
+For EACH original single A_b, the same U,V hyperbola identity gives
+  A_b(x)-x^(1-b)/[(1-b)zeta(1-b)]
+    =x^(1-b)L_(1-b)(U)/(1-b)+zeta(b)M(U)
+       +T_b(x)-M(U)S_b(V)+epsilon_b(x),
+  epsilon_b(x)=sum_(d<=U)mu(d)e_b(x/d).
+The complete short errors obey
+  |epsilon_u(x)|<=x^(1/9),
+  |epsilon_v(x)|<=x^(-1/9),
+  ||epsilon_u||_crit<=3/sqrt 7,
+  ||epsilon_v||_crit<=3/sqrt 11.                   (8.3)
+These follow from x^(-b)sum_(d<=U)d^b<=x^(-b)U^(1+b).
+Again every quotient prefix and rectangle cost is retained.
+
+Since S=beta*(B-A_u-A_v+1), define the following COMPLETE core:
+  F(x)= C_u*x^(2/3)B_(2/3)(U)+C_v*x^(1/3)B_(1/3)(U)
+       -(3/2)*x^(2/3)L_(2/3)(U)-3*x^(1/3)L_(1/3)(U)
+       +C_0*M_2(U)-[zeta(u)+zeta(v)]M(U)
+       +T_K(x)-T_u(x)-T_v(x)
+       -M_2(U)K(V)+M(U)[S_u(V)+S_v(V)]+1.
+Then the exact centered relation is
+  J(x)=beta*F(x)+beta*[epsilon_K(x)-epsilon_u(x)-epsilon_v(x)].       (8.4)
+The complete removed error has critical norm at most
+  beta*[(19/2)*sqrt 15+3/sqrt 7+3/sqrt 11].          (8.5)
+It also has decaying/subpower integer block energy by its explicit
+pointwise bounds. Formula (8.4) is a second equivalent cofinal-moment
+reduction. It is not a claim that any of the remaining B_r,L_r,M_2,T terms
+are small in isolation. Each may require compensation by the others.
+
+If desired combine BOTH rigorous peels into one next target:
+  F_red(x)=beta*F(x)-D(x)+m_v*x^(1/3),
+  J(x)=F_red(x)+D(x)-m_v*x^(1/3)
+                      +beta*(epsilon_K-epsilon_u-epsilon_v)(x).    (8.6)
+The last three complete components have known finite critical norm and
+explicit cofinal-admissible integer energies. Their norm cost is bounded
+by the sum of (3.2) and (8.5). Thus proving, for cofinal q,
+  X^(-2)sum_(X<=n<2X)|F_red(n)|^2<=K_q*X^(1/q)      (8.7)
+would prove the original full moment. Every unknown source term in F_red
+is now explicit. No shortened sum has silently reset an error budget.
+
+9. Why the decompositions do not close the signed theorem
+----------------------------------------------------------
+The sequence m_2 is the coefficient of 1/zeta(s)^2. Replacing M_2 or its
+weighted mismatches by a conjectural square-root estimate reintroduces an
+RH-strength source premise. The A_1 cocycle channel similarly retains M.
+The bounded Delta_K estimate can only be peeled on the short side; the
+long-side M_2 quotient sum and its rectangle remain. Their complete signed
+interaction with the two M channels is precisely what absolute values miss.
+
+After peeling the one-prime diagonal, the prime-power-only mixed part
+still has the lower bound (4.1). The signs in the composite branches are
+not uniformly negative, and overlap of prime factors changes their signs.
+No monotonicity or positive-kernel estimate established here controls
+T+C-m_u*x^(2/3) at square-root scale. The smaller residue term is harmless
+in the cofinal theorem but is part of the actual frozen output; removing
+it from the program or from reported scores would be a different study.
+
+The exact infinite signed square of either R or F_red, not a diagonal
+energy, is the next inequality. A finite reduction in energy relative to
+(mu-delta)^{*2} is compatible with different constants, lower-order tails,
+and the source/control mean mismatch. It proves none of (5.1), (8.7), or
+the bulk correlation limit (4.2). The reported finite energy is evidence
+for examining this correlation, not a uniform norm proof.
+
+10. Recovery retained, including all multiplicities and costs
+--------------------------------------------------------------
+Suppose the complete cofinal J moment, equivalently either reduced target,
+has been proved for every dyadic X. The within-cell error is only the smooth
+normalizer difference, at most |R_u|n^(-1/3)+|R_v|n^(-2/3). The complete
+weighted L2/Mellin argument in SHIFTED_QUOTIENT_ANALYTIC_REVIEW_001.txt then
+makes (1.2) holomorphic in Re(s)>1/2.
+
+At an ordinary nonreal zero rho of multiplicity m, if neither rho+1/3
+nor rho+2/3 is a zero, both H factors have order-m poles, with nonzero
+leading coefficients. Their product has order-2m, uncanceled by real main
+terms. Thus holomorphy forces at least one farther-right ordinary zero.
+More precisely if nu_i is the order at rho of zeta(s+b_i)-zeta(s), the
+product's holomorphy requires nu_u+nu_v>=2m. At least one nu_i>=m then
+forces that right-shifted zero to have multiplicity >=m. This handles
+cross-factor cancellations, higher multiplicities, and coincident shifted
+zeros. Repeating steps of at least 1/3 reaches Re>1 in finitely many steps,
+contradicting the Euler product. Hence the cofinal theorem would imply RH.
+No such theorem has been obtained in this memo.
+
+Quantitative inversion is not an unqualified square root of P. For
+z=1/zeta(s), r_u=zeta(s+u), r_v=zeta(s+v), the exact equation is
+  uv*P(s)=(r_u*z-1)(r_v*z-1).
+For |Im(s)|>=1 the real main poles are absent, and one valid bound is
+  |1/zeta(s)|<=2*max(|1/zeta(s+u)|,|1/zeta(s+v)|)
+                                     *[1+sqrt(uv*|P(s)|)].
+The full P bound includes its two residue fractions and the Mellin norm
+of the complete J. Recurse both possible right shifts until Re>=R>1,
+where the terminal bound is zeta(R). A direct tree has depth at most
+ceil(3*(R-Re(s))) and at most 1+2+...+2^depth nodes. Removal of the real
+singularities uses F(s)=(s-1)zeta(s), with the exact cleared product as in
+the earlier memo; it cannot be implemented by dividing by sampled small
+numerators. These conditional constants and complete paths are retained.
+This is a valid finite analytic bridge, not a bounded finite-prefix inverse
+or an automatically recovered all-height M moment.
+
+Final status
+------------
+Proved here: exact selected-candidate coefficients and both residues;
+complete geometric same-prime overlap mass; its finite critical-norm peel;
+the subcritical smaller-pole peel; a mandatory positive mixed-prime bulk
+branch; complete cocycle defects; a uniformly bounded weighted-divisor
+kernel remainder; and a complete outer-hyperbola short-error peel with
+explicit costs. The reduced signed inequalities (5.1) and (8.7) are
+precise and equivalent routes to the original cofinal theorem.
+Unproved: either reduced uniform signed inequality, the required composite
+anticorrelation at all scales, and therefore RH. All cofinal moment/global/
+RH theorem flags remain false. This memo introduces no changed candidate,
+new selection, numerical run, test, hash, or frozen-file edit.

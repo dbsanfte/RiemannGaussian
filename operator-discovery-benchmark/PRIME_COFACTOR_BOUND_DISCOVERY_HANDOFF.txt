@@ -1,0 +1,88 @@
+Stage035 completed: generated arithmetic states, auxiliary bounds, joined search
+
+Authoritative result
+prime-cofactor-bound-results/pilot-001/report.json
+Status PRIME_STATES_AND_AUXILIARY_BOUNDS_VERIFIED_JOINED_BOUND_OPEN.
+The original full-core/RH estimate remains OPEN. Accepted033 obligation and
+all144 source/transport bindings remain unchanged. This branch targets original
+complete f directly, not an isolated Z033. Do not rerun this completed study.
+
+What the detector did
+It received the original four signed Dirichlet products, not companion rows.
+Prime-power coefficient jets generated four independent rows in the weighted
+mode coordinates (beta nu0,-beta nu1,-R_u nu2,-beta mu):
+  (1,1,1,1), (1,1/2,0,1/2), (1,1,1,0), (0,1,1,0).
+An independent sparse-polynomial checker replayed the programs and the complete
+rational generating matrix. The laws apply to every prime, every valuation,
+and every coprime cofactor, with the nonzero original unit retained.
+This is arithmetic coefficient closure, not a prefix cancellation theorem.
+
+For every generated state the detector compiled a prime-value polynomial,
+selected its first nonzero term, and synthesized uniform rough-prefix upper
+and cofinal lower bounds. The supplied generic inference rules are integer
+power summation and elementary binomial prime counting. This is not discovery
+of a new analytic inequality from no primitives, nor a formal proof assistant.
+
+For the original f it derived
+ f(p)=-R_u p^(-1/3)+(9/2+R_u)p^(-2/3).
+For y_X=ceil(sqrt(2X)), let A_X(n)=f(1)+sum_(y_X<p<=n)f(p), X<=n<2X.
+The detector/checker certify
+ c0 X^(1/3)/(log X)^2 <= X^-2 sum A_X(n)^2 <= 2809 X^(1/3),
+with the lower bound beyond an explicit finite-head condition and c0>0.
+Verification.json records the coefficient threshold, prime-count constant and
+head conditions. This proves that uniformly paying every uncentered rough
+auxiliary at subpower energy would be false for the actual arithmetic source.
+It does not give a lower bound on the complete signed prefix.
+
+The detector then consumed that bound in a search over275constant quadratic
+forms Q on the joined raw rough/composite prefixes(A,B), F=A+B. It found:
+ 216 forms fail target domination Q>=J;
+ 55 coercive forms have positive Schur complement and inherit A's lower bound;
+ 4 singular survivors are multiples of the original target energy itself.
+The last4are unpriced endpoint restatements, not refutations of the target.
+All275classifications and their source premise were independently replayed.
+Only this instantaneous two-prefix grammar was searched. A richer multiscale,
+cutoff-dependent or nonlinear construction remains an open discovery target.
+
+Finite arithmetic run
+Read the previously independently verified12-vector archive; no source rebuild.
+Decoded six needed vectors through131071; reused data, not held-out evidence.
+Audited12251actual primes,439cofactor/valuation cases (powers1,2,3), and all
+131071coefficient/prefix source bindings;312910interval overlap checks.
+Intervals never substituted for the universal coefficient proof.
+Every integer in the five declared blocks and every signed cross was retained.
+
+ X       Erough       Ecomposite    2*covariance    Efull
+ 256      7.462573      4.689567     -10.884063     1.268077
+ 1024    10.526923      9.772402     -18.577480     1.721846
+ 4096    14.526516     15.209593     -27.689370     2.046739
+ 16384   19.680944     28.471656     -43.117649     5.034952
+ 65536   26.348918     40.547435     -60.712419     6.183933
+These are finite observations of Efull=Erough+Ecomposite+2*covariance.
+They demonstrate retained cancellation on the observed scales, not its required
+uniform strength over all scales. No fitted exponent is paid as a theorem.
+
+Resources and development
+Production exited0 in14.406s, peak704032KiB; search13086proxy operations,
+checker5758, observations34931518. Memory cap16GiB. No hashes or old reruns.
+Producer6tests passed; one affected test reran after a native-JSON-bool fix.
+Checker19distinct tests ultimately passed: initial4errors retained in receipt,
+five affected tests reran after bool and cancelled-delta fixture corrections.
+Observer6tests passed once. Its tiny direct arithmetic fixtures had horizons
+15,15,31 and are disclosed; the production archive was read only after freeze.
+New source/protocol bytes match the snapshot; accepted033 and archive ancestry
+were compared directly. No benchmark or identity success pays the open root.
+
+Next executable search input
+prime-cofactor-bound-results/pilot-001/next_search_input.json records the exact
+full energy target, joined decomposition, proved auxiliary obstruction, failed
+quadratic search and remaining dependency. Find additional scale/cutoff states
+or a new signed recurrence whose endpoint is independently priced. Merely
+subtracting the prime profile, separately bounding false rough states, or
+recovering the original energy as a potential does not meet this test.
+
+User steering after035 implementation: broaden fractional exponents. Existing
+rational-power semantics are general, but recent finite search defaults were
+narrow. A separate adaptive enumeration/fractional-cofactor extension is being
+developed. Its costs must include exact recovery to the unweighted target;
+rewriting the same source in a finer root variable creates no new operator.

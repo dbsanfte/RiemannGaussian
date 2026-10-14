@@ -1,0 +1,50 @@
+Root review addendum: one fractional majorant for all interleavings
+2026-10-09. Mathematical deduction only; frozen code/certificates/selection
+and every numerical response remain unchanged. No new arithmetic evaluation.
+
+The generic certificate's sum of individual ceilings is conservative. A simpler
+stronger theorem subsumes the special two-stage majorant in the interleaved
+review and also applies to both double-interleaved candidates.
+
+Let d_b be the multiplicative generalized divisor function with local
+coefficients (b)_k/k!, for b>=0, taking d_0 to be the convolution identity.
+For any real alpha and fixed prime coefficients |chi(p)|<=1,
+ |a_alpha,chi(p^k)|<= (|alpha|)_k/k!,
+because |alpha+j|<=|alpha|+j for every integer j>=0. Thus
+ |a_alpha,chi(n)|<=d_|alpha|(n), with no rounding to an integer order needed.
+The positive coefficient identity d_a*d_b=d_(a+b) follows by multiplying
+(1-z)^(-a) and (1-z)^(-b) at every prime.
+
+Expand a fixed circuit with arbitrary intervening unit phases into its complete
+ordered divisor paths. Taking absolute values removes those phases and bounds
+the coefficient of f(n/d) by
+ (d_|alpha1|*...*d_|alpham|)(d)=d_B(d), B=sum_i|alpha_i|.
+The reverse circuit with every alpha negated has exactly the same majorant.
+Divisor-supported dilation therefore proves, uniformly over every finite T,
+ ||Circuit f||_(1/2+epsilon,T), ||Circuit^-1 f||_(1/2+epsilon,T)
+ <=zeta(1+epsilon)^B ||f||_(1/2+epsilon,T)
+ <=(1+1/epsilon)^B ||f||_(1/2+epsilon,T).
+Squaring gives exponent2B for squared energy. This argument includes complex
+inputs and arbitrary fixed unit phases; it assumes no Mobius cancellation.
+
+For a wholly rational/integer certificate bound one can use ceil(B), instead
+of sum_i ceil(|alpha_i|). If B<=1, every coefficient d_B(d)<=1 and the
+unsquared norm/inverse bound is simply1+1/epsilon.
+
+For the selected circuits, B is:
+ 11:1/3; 12:1/6; 28:1/6; 29:1/6;
+ 42:5/6; 34:2/3; 59:5/6; 53:1.
+Consequently every selected circuit has the valid integer recovery exponent1,
+although the original frozen certificates conservatively record1,2 or3.
+This does not retrospectively replace the selected programs, fit constants,
+ranking or checked certificates. In particular the double-circuit review's
+recorded exponent3 is a valid available bound, not a necessary analytic cost.
+The specialized order-one theorem in the interleaved review remains correct,
+but the additional ordering0<b<a is unnecessary for this general domination.
+
+This is an analytical proof rule suitable for a future certificate compiler.
+It gives no signed correlation estimate and no advantage over baseline by
+itself. A smaller inverse constant cannot substitute for the still-unproved
+cofinal full transformed-moment bound. Candidate discovery remains focused on
+different arithmetic interactions rather than resampling these same formulas
+with improved recovery constants.

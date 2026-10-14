@@ -1,0 +1,312 @@
+{
+  "status": "independently_verified_signed_control_discovery_pilot",
+  "run_directory": "/home/dbsanfte/riemann/operator-discovery-benchmark/signed-control-results/pilot-001",
+  "objective": "signed arithmetic control of ordinary zeta across all scales, toward RH",
+  "historical_priority_is_acceptance_gate": false,
+  "programs_generated": 292,
+  "generation_rejections": 4,
+  "development_estimate_statuses": {
+    "numerical_lead_missing_uniform_signed_moment_proof": 977,
+    "ruled_out_by_ordinary_zeta_zero": 190,
+    "falsified_on_sampled_validation": 1
+  },
+  "operators_archived": 8,
+  "complete_final_estimates": 32,
+  "complete_final_estimates_passing_finite_windows": 26,
+  "checks": {
+    "frozen_code_batches_seal_and_fresh_final_cases": true,
+    "independent_full_mobius_prefix_and_sampled_signed_responses": true,
+    "independent_complete_final_moment_integrals_and_negative_controls": true,
+    "universal_lipschitz_cost_and_critical_inverse_multiplier_certificates": true,
+    "moment_pointwise_and_RH_family_obligations_kept_conditional": true,
+    "ordinary_zeta_zero_bridge_and_root_erasing_bounded_control": true,
+    "deterministic_adaptation_selection_replay_and_worker_denials": true,
+    "historical_priority_removed_from_acceptance_and_no_finite_to_global_promotion": true
+  },
+  "independent_complete_inverse_coefficients": 950118,
+  "independent_complete_moment_values": 416,
+  "final_cases": [
+    1,
+    2,
+    3,
+    15,
+    4402,
+    5927,
+    7827,
+    237969,
+    281030,
+    309563,
+    339499,
+    433557,
+    475059
+  ],
+  "archive": [
+    {
+      "id": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "family": "baseline",
+      "atoms": [],
+      "fit_method": "unfiltered signed cumulative sum",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "1",
+        "critical_inverse_cost_ball": "0",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "c8cf0f78a68c974bc39f5137a327b5283913e3db7f0acf26690c8807331f7052",
+      "family": "fit_1_scales",
+      "atoms": [
+        [
+          13,
+          "147/256"
+        ]
+      ],
+      "fit_method": "exact weighted least squares, quantization and critical-cost projection",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            13,
+            "147/256"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "3475/3328",
+        "critical_inverse_cost_ball": "[0.15925962665060289245448483362925568 +/- 3.19e-37]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "6f1c82cfa6a55d836fedda5ada1d2262f47f086fe6e5028f08b63466e8ddf1cb",
+      "family": "fit_2_scales",
+      "atoms": [
+        [
+          2,
+          "-117349/262144"
+        ],
+        [
+          5,
+          "63335/65536"
+        ]
+      ],
+      "fit_method": "exact weighted least squares, quantization and critical-cost projection",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            2,
+            "-117349/262144"
+          ],
+          [
+            5,
+            "63335/65536"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "742973/524288",
+        "critical_inverse_cost_ball": "[0.74873110179679683600835684393279356 +/- 3.00e-36]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "6b095397c41f20e1b6b392457d2e5795b5315d8dd6a463a059ff49296dc0f289",
+      "family": "fit_3_scales",
+      "atoms": [
+        [
+          9,
+          "14055/16384"
+        ],
+        [
+          10,
+          "9315/16384"
+        ],
+        [
+          12,
+          "-8025/8192"
+        ]
+      ],
+      "fit_method": "exact weighted least squares, quantization and critical-cost projection",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            9,
+            "14055/16384"
+          ],
+          [
+            10,
+            "9315/16384"
+          ],
+          [
+            12,
+            "-8025/8192"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "15161/12288",
+        "critical_inverse_cost_ball": "[0.74852890324057569018206105347700720 +/- 4.22e-36]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "0328e9c56fdc1401eeb6d32561e80835ca13a4a1cb919df25ff09b1ce0127173",
+      "family": "random_signed",
+      "atoms": [
+        [
+          5,
+          "1/4"
+        ]
+      ],
+      "fit_method": "seeded signed rational exploration",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            5,
+            "1/4"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "21/20",
+        "critical_inverse_cost_ball": "[0.11180339887498948482045868343656381 +/- 1.78e-36]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "1b500e7846a14d1e00b831fa0b89afc1ad5bdb931d948c3b5a5a97f33e65752a",
+      "family": "random_signed",
+      "atoms": [
+        [
+          3,
+          "-7/8"
+        ]
+      ],
+      "fit_method": "seeded signed rational exploration",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            3,
+            "-7/8"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "31/24",
+        "critical_inverse_cost_ball": "[0.50518148554092254394550518293921277 +/- 3.70e-36]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "2b63d8cebc2b792076913321512beab1f11bdb767b5083cc3a31a681a9580db4",
+      "family": "random_signed",
+      "atoms": [
+        [
+          10,
+          "7/8"
+        ]
+      ],
+      "fit_method": "seeded signed rational exploration",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            10,
+            "7/8"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "87/80",
+        "critical_inverse_cost_ball": "[0.27669929526473319154990318513786287 +/- 1.71e-36]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    },
+    {
+      "id": "6bbf6955e335099d23f6ec3ef468d677fb624b56296ba48c3ddb707eee84d02f",
+      "family": "random_signed",
+      "atoms": [
+        [
+          7,
+          "1/4"
+        ]
+      ],
+      "fit_method": "seeded signed rational exploration",
+      "operator_certificate": {
+        "operator": "R_a(t)=M_tilde(t)-sum a_d M_tilde(t/d)",
+        "atoms": [
+          [
+            7,
+            "1/4"
+          ]
+        ],
+        "coefficient_domain": "actual Mobius, produced by Dirichlet inversion",
+        "interpolation": "linear between integer cumulative sums; M_tilde(0)=0",
+        "lipschitz_constant": "29/28",
+        "critical_inverse_cost_ball": "[0.094491118252306806803629134058545015 +/- 2.05e-37]",
+        "nonvanishing_multiplier_Re_s_ge_half_certified": true,
+        "multiplier": "F_a(s)=1-sum a_d*d^(-s)",
+        "ordinary_zeta_bridge": "Mellin(R_a)(s)=F_a(s)/(s*zeta(s))+H_a(s), H_a holomorphic for Re(s)>0",
+        "inverse_cost": "1/(1-sum |a_d| d^(-theta)), when the denominator is positive",
+        "global_signed_cancellation_estimate_proved": false,
+        "historical_priority_is_acceptance_gate": false
+      }
+    }
+  ],
+  "verified_all_scale_operator_properties": [
+    "signed linear scale recurrence",
+    "uniform Lipschitz constant",
+    "all-height nonvanishing multiplier Re(s)>=1/2",
+    "bounded inverse for the certified weighted norm"
+  ],
+  "conditional_control_template": "uniform residual moment bound -> pointwise signed bound -> zero exclusion; constants and inverse costs explicit",
+  "RH_completion_obligation": "independently prove uniform moment premises at exponents beta_q/(q+1) approaching 1/2, or another RH-sufficient signed estimate",
+  "uniform_sublinear_signed_controls_verified": [],
+  "RH_proved": false,
+  "historical_novelty_established": "not required for mathematical acceptance",
+  "verification_sha256": "ee2473e772be1c3b6927dd56bac1d7d1844962e03b9dc70931458fb48002bf37",
+  "protocol_sha256": "88f983079f739b6b099f827e958d618a0597aefe6c170ca744c6a76ee1b2ccf6"
+}

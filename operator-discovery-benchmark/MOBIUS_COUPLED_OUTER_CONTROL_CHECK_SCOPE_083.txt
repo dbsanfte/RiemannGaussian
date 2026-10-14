@@ -1,0 +1,23 @@
+Independent whole-outer control checker083 scope
+
+check_mobius_coupled_outer_control_083.py reconstructs complete coupled
+program closure and equality rows, never importing producer or querying mu.
+Eight focused tests passed first attempt; full output retained in receipt.
+Source geometry requires minimum divisor4 with coefficient-1; other divisors
+>=5 vanish on outer (u/5,u/4]. Historical source binding remains external.
+Every nonzero outer weight must use unit-balanced paired K=n,N-n cuts with
+matched aggregate coefficients. Separate prime and composite gains equal
+2Astar, Astar=H00+sourceGram0. Zero outer weights may have arbitrary cuts.
+Whole-program rosters, exact equality rows, every matched group, gains and
+certificate fields are independently checked; partial outer bands rejected.
+For u>=16 raw outer offdiagonals equal
+Astar*(2-1[m=N]-1[n=N])/(N-1), diagonals
+Astar*(1+2*(1-1[n=N])/(N-1)). Entire absolute outer Boolean price is at most
+3Astar*N+4Astar<=Astar*u. Tiny u1..15 outer is empty or singleton with
+zero paired correction, so bound also holds from minimum_u=1.
+Tests compare literal raw entries/prices u1..80, separate arithmetic classes,
+duplicate group aggregation, Gram/source/band variants, tampering and gates.
+Prime anchor changes effective full geometry but leaves this RAW theorem
+valid. It does not justify subtracting raw outer price from effective full
+price. All cross and remaining kernels are unpaid; no uniform full price,
+original source bound or RH claim is admitted. No old tests/science/hash.

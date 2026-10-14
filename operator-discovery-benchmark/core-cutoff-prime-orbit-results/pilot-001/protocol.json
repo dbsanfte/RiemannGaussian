@@ -1,0 +1,41 @@
+{
+  "RH_proved": false,
+  "concurrent_numeric_workers": 2,
+  "continuous_integral_control": false,
+  "discovery_bases": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "evaluation_bases": [
+    1024
+  ],
+  "fitted_constants": 0,
+  "fresh_arithmetic_holdout": false,
+  "hashes": false,
+  "heights": [
+    "0",
+    "1/2",
+    "1",
+    "2",
+    "4",
+    "8",
+    "16"
+  ],
+  "input": "candidate10_cutoff_work_obligation.json",
+  "maximum_concurrent_memory_limit_bytes": 12884901888,
+  "model_calls_in_search": 0,
+  "per_process_memory_limit_bytes": 4294967296,
+  "precision": {
+    "checker": 256,
+    "producer": 192
+  },
+  "schema": "core-cutoff-prime-orbit-run-v1",
+  "testing": "recorded owned development suites; independent actual evidence audit",
+  "total_operation_cap": 1500000000,
+  "total_runtime_limit_seconds": 1800,
+  "whole_signed_bound_proved": false,
+  "worker_operation_cap": 300000000,
+  "worker_runtime_limit_seconds": 900
+}

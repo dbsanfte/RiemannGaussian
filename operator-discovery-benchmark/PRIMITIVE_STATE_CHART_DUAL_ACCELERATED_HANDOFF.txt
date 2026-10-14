@@ -1,0 +1,121 @@
+Publication033: accelerated sparse search for a finite-cone separator
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-accelerated-001
+
+Outcome
+NONCERTIFIED. The cold-start accelerated trajectory completed592 accepted
+steps and selected264 strictlypositive weights. The one rational support
+solve returned inconsistent exact native-support equations. No full exact
+separator was proposed. The independent audit verified the source layout,
+saved method/accounting, stopping rule and support metadata, without replaying
+floating scores or certifying failed restoration as an exclusion theorem.
+No primal feasibility, finite-cone infeasibility, signed arithmetic bound,
+universal identity or RH result was obtained.
+
+Numerical method and evidence
+The unchanged licensed031 source has302 equations,687 retained nonnegative
+weights and7550 nonzeros. Exact positive infinity scaling and finite,
+nonunderflowing coefficient conversion are inherited from032. The new
+proposal starts x=y=0 and minimizes unpenalized half||A*x-b||^2. Sparse
+projected-gradient trials use z=max(0,y-gradient/L), direct fsum products,
+and the floating directional test ||A*(z-y)||^2<=L*||z-y||^2. Rejected trials
+double L. Momentum uses the declared accelerated recurrence, with restart
+every64 accepted steps. No prior032 vector or penalty continuation is used.
+
+Initial L was67.09585173347065. There were594 trial blocks for592 accepted
+steps: two rejected trials in total. The carried final L was268.3834069338826.
+The reported relative residual was0.9911688468754428 at step1,
+0.8435491379417458 at64,0.8138042880684991 at128,
+0.7830180118287179 at256,0.7550187984712646 at512, and
+0.7500829746040976 at592. The selected final iterate has absolute residual
+0.05203972858316105,264 positive weights, and final projected-gradient norm
+0.0026949052582306084. These are producer diagnostics, not certified error
+bounds, KKT conditions, optimality or convergence statements.
+
+The stop reason is work_boundary: remaining work could not reserve another
+gradient plus32 trial blocks plus commit and the final diagnostic. The final
+diagnostic completed from a freshly recomputed residual and gradient. No
+deadline, memory failure, zero-residual stop or hard10000-step limit occurred.
+The complete numerical result therefore qualified for one exact reconstruction,
+which failed on the selected original851-ray support. Different supports,
+free-value choices and PSD generators remain open.
+
+Comparison and interpretation
+The same scaled source makes the feasibility residuals directly comparable:
+033 ended at0.75008, while032 coordinate continuation ended at0.52984.
+Thus this accelerated method did not improve this finite search under its
+declared work allowance. The two trajectories use different objectives and
+update schedules, so this is not a general comparison theorem. Nor does
+either substantial residual establish that the complete fixed-ray problem
+is inconsistent. No certificate-producing operator has emerged.
+
+Resources
+Numerical execution7.454139s; producer8.730226s wall/8.714930s CPU,
+peakRSS67280KiB, one thread; enclosing worker stage8.826298s. Memory and
+wall time did not bind. Sparse work blocks:setup157584,gradient92560,
+trial185120,commit32160,final155944; worst-step reserve6048560 and
+minimum complete-attempt reserve6362088. The exact consumed numerical
+block sum is184,109,048. These are declared operation proxies, not hardware
+instruction counts or certified optimizer complexity.
+
+Model107,685 operations/344442 peak live cells/540bits;
+numerical349516 peak cells; restoration129,522 operations/551054cells/497bits.
+Independent40,378 operations/333761 peak live cells,0.141667s wall/
+0.141622s CPU, process peakRSS496896KiB. Independent input-I/O meter:
+234,246 units on7,495,431bytes. Mathematical work before preparation totaled
+184,386,633, within the single450m complete-job reservation.
+
+Allocations:40m preparation,40m model,190m numerical,90m exact restoration,
+90m sole independent audit. Worker and audit each6GiB, one thread and3600
+cooperative seconds; producer external7200seconds. Rational result/temporary
+bounds4096/8193bits and live-cell proxy6m remain. Actual proposal151387bytes,
+review3173bytes; source snapshot28files/355593bytes. No old reduction replay,
+actual research retry, second independent audit or hashes occurred. Earlier
+published sources and results were left unchanged.
+
+Testing and review
+The single frozen suite passed35 tests in2.087s:13 producer,10 independent
+core and12 workflow. Each owned development suite ran once; total metered
+development2,570,292 and frozen-suite2,570,292. With1m root/scaffolding,
+cumulative synthetic charge6,140,584 stays within the25m preparation reserve.
+No duplicate pre-freeze combined suite ran. Sol6.1 agents handled the
+substantial parallel producer, checker and mathematical-review work.
+
+Tests cover correlated-column backtracking,64-step restart, budget-boundary
+completion, zero diagnostic stops without theorem promotion, untrimmed tiny
+positive entries, nonfinite projection/line intermediates, charged partial
+commits/final failures, and full original Farkas identity/support tampering.
+The same90m independent meter covers metadata and any exact witness. A
+positive initial step estimate must precede every charged iteration. The
+reviewer found no remaining mathematical blocker and ran no extra tests.
+
+Next research action
+Do not restart033 or continue its vector under a reset ledger. Its residual
+does not justify changing the arithmetic grammar by an infeasibility claim.
+The global scalar step used here differs from032's per-column curvature
+updates. Uneven coordinate curvature is a plausible reason for slower
+progress, but it has not been isolated as the cause by this experiment.
+
+A concrete next method is diagonal-metric accelerated projected gradient.
+For positive D_j=||A_j||^2, use z_j=max(0,y_j-g_j/(L*D_j)) and test
+||A*(z-y)||^2<=L*sum_j D_j*(z_j-y_j)^2. Start L=1 and preserve finite
+guards, direct sparse products, the frozen restart/support rules and the
+original exact witness admission. This is a general coordinate-balancing
+rule, not a choice fitted to a particular selected support. Its weighted
+projected-gradient diagnostic has different units and must not be compared
+silently with033's unweighted mapping norm. Freeze its policy before any
+new source metric or trajectory is computed.
+
+Future allocation can also move work from substantially unused model/audit
+reserves into proposal iterations, while retaining one complete450m ledger,
+all consumed preparation/testing work and enough exact-verification capacity.
+That would require an explicit new allocation and matching helper limits,
+not silently reusing the old190m cap or spending an old unused allowance.
+
+If numerical refinement keeps failing, search should address the fixed851
+ray restriction through a declared dynamic PSD-direction method rather than
+infer anything about the entire cone. Even a full exact separator would
+exclude only this augmented finite proof template. The actual objective
+still requires a universal operator identity and signed control at all
+scales, uniform scalar and initial-storage bounds, a cofinal parameter
+family and the ordinary-zeta bridge. Those requirements remain unresolved.

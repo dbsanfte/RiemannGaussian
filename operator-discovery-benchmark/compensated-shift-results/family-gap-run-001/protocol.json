@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "mode": "guided_family_automatic_certificate_search",
+  "source_sha256": "35d99cf4c52310f2008121bc0bba8d16e6973d130785f0e79ce6523f5c433c05",
+  "search_code_sha256": "201c6ae791a8815a297ada860781f324acb2972923166cfed22e41b5286339df",
+  "polynomial_backend_code_sha256": "8997cb154c57cc1ef38be6bb39d729d95f84db4ee15d70a41864e3b98f3a1860",
+  "counterexample_backend_code_sha256": "b0427d8dd232312cbe780123c651e6e1215df51fd3087c7feafe134177cb40fa",
+  "resources": {
+    "maximum_factor_tail_search": 12,
+    "maximum_barycentric_dimension": 4,
+    "maximum_denominator_degree": 30,
+    "maximum_polya_elevations": 24
+  },
+  "rules": "test every recorded estimate; derive omega/g thresholds from uniform atomic norms; certify all residual rational simplex cases or retain a lead",
+  "input_filter": "all recorded pairs, including known finite-failure controls; no favored parameter",
+  "novelty_and_RH_claims": "separate; no theorem count implies new operator or distribution estimate",
+  "prime_oracle_access": "sparse factor/subset evaluator only for explicit counterexamples; operator producer itself has none",
+  "model_or_literature_calls_during_attempts": false
+}

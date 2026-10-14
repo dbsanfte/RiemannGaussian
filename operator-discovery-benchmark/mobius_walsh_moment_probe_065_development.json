@@ -1,0 +1,20 @@
+{
+  "owner": "root",
+  "runs": [
+    {
+      "command": "new isolated test_mobius_walsh_moment_probe_065 suite",
+      "returncode": 0,
+      "tests": 8,
+      "stdout": "test_character_scope_rejects_squareful_and_conditioned_factors (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_dyadic_partition_includes_unit_and_terminal_row (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_energy_tamper_and_endpoint_swap_rejected (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_root_interval_is_exact_upward_rounding (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_signed_nonzero_energy_and_shared_prime_product (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_tail_example_does_not_require_subpower_energy (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_two_way_energy_preserves_actual_cancellation (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\ntest_weight_scope_and_zero_rows (test_mobius_walsh_moment_probe_065.MomentProbeTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nOK\n",
+      "operations": 1408,
+      "elapsed_seconds": 0.0030915570096112788,
+      "peak_rss_KiB": 15052
+    }
+  ],
+  "operations": 1408,
+  "unique_new_synthetic_tests": 8,
+  "final_status": "PASS",
+  "prior_failure_preserved": false,
+  "scientific_source_arrays_read": false,
+  "old_suites_replayed": false
+}

@@ -1,0 +1,250 @@
+ACTUAL PRIME INFORMATION ACROSS SCALES: EXTRACTION, FLOOR TRACES AND DECODING
+7 October 2026. Written universal proofs and independent exact/Arb checks.
+This is calibration and a search-priority change, not new prime estimates.
+
+The user prioritizes arithmetic information about actual primes over all
+scales. A candidate must state an observable (counts, weighted mass, gaps,
+correlations or residues), its scale parameters, its proved range and
+whether it adds information or just re-encodes supplied prime data.
+Finite observations and universal results are kept separate. This stage
+implements these gates and rejects a whole smoothing class as an
+unmodified RH-holomorphy test. Historical novelties remain unverified.
+
+1. A PRIME-EXTRACTION CALIBRATION WITH A UNIVERSAL INVERSE
+
+For h(1)=0 define U_k h(n)=h(m) when n=m^k with integer m>=2, and zero
+otherwise; set U_k h(1)=0. Each coefficient uses finitely many k. The
+operators obey U_a U_b=U_(ab). Put
+
+ V=sum_(k>=1) U_k/k,   W=sum_(k>=1) mu(k)*U_k/k.
+
+Coefficient-local rearrangement gives W V=V W=identity, since the
+coefficient of U_r in either product is (1/r)sum_(d|r)mu(d), equal to
+one for r=1 and zero otherwise. Thus
+
+ P(f)=W LOG_D f,   E(g)=EXP_D(V g)
+
+are inverse maps between normalized ordinary Dirichlet units and
+arithmetic functions g with g(1)=0. P is nonlinear in f but linear in
+LOG coordinates. It obeys P(f^beta_D)=beta P(f), rather than a
+normalized-unit output-root law. It is the established Euler-product /
+plethystic logarithm framework, used here as a known-operator recovery.
+
+For zeta's ordinary input u(n)=1, LOG_D u(p^e)=1/e and is zero at other
+n>1. At n=p^e,
+ P(u)(p^e)=(1/e)sum_(d|e)mu(d)=1[e=1].
+It vanishes on every integer with at least two distinct prime factors.
+Consequently P(u) is EXACTLY the prime indicator for every positive
+integer, not merely on the observed prefix. Summatory evaluation and
+a residue mask therefore give, for every real X and integer q>=1,
+
+ sum_(n<=X)P(u)(n)=pi(X),
+ sum_(n<=X,n=a mod q)P(u)(n)=pi(X;q,a).
+
+The empirical weight grammar scores 42 programs formed from six
+arithmetic atoms and powers k^-3,...,k^3. Exponents e=1..8 train the
+annihilation law; e=9..32 hold it out. It uniquely recovers mu(k)/k.
+Independent coefficient-root tests extend to exponent 64. The complete
+LOG/input-output prefix through 4096, generic rational inverse controls,
+and changed implementations are checked exactly. These are finite
+implementation checks; the preceding proof supplies all-integer scope.
+This extraction alone does not improve any prime-distribution bound.
+
+Multiplying LOG_D u(n) by log n gives the classical von Mangoldt
+coefficient Lambda(p^e)=log p, zero elsewhere. Hence on Re(s)>1,
+ sum_n Lambda(n)n^-s=-zeta'(s)/zeta(s).
+Lambda includes prime POWERS. A statistic weighted by Lambda must not
+be called an unweighted prime count without explicitly removing them.
+
+2. SEARCHED FLOOR FILTERS WITH CERTIFICATES VALID AT EVERY SCALE
+
+For integer a=1..A and integers c_a with sum_a a*c_a=0 define
+
+ w_c(t)=sum_a c_a floor(a*t),
+ T_c(X)=sum_n Lambda(n) w_c(X/n),   X>=0.
+
+The sum is finite, since floor(aX/n)=0 for n>A X. The balance condition
+makes w_c(t+1)=w_c(t). On [0,1) it is constant on half-open intervals
+whose endpoints are k/a. Checking its value at EVERY such left endpoint
+is a universal positivity certificate: w_c(t)>=0 for ALL real t>=0.
+This is not an extrapolation from a numerical grid. Endpoint conventions
+are included because floor is right-continuous.
+
+The implemented grammar exhausts 5^7=78125 coefficient vectors with
+c_a in [-2,2], A=7, height -sum c_a in {1,2}, and coefficient gcd one.
+There are 543 balanced primitive candidates; 341 pass the coarse
+quarter grid, and precisely 67 have the complete positivity certificate.
+Fifteen have height one. All 52 height-two survivors in THIS BOUNDED
+GRAMMAR are sums of two of those height-one survivors. This is not a
+decomposition theorem for every possible factorial-ratio kernel.
+
+The independent checker replaces rational breakpoints with the complete
+integer grid of denominator lcm(1,...,7)=420. That grid contains every
+jump and certifies every constant interval. It re-enumerates the full
+bounded grammar and verifies the same 67 vectors and decompositions.
+
+A genuine coarse-grid false positive is c=(-2,-2,0,1,2,1,-2). It passes
+the four quarter-grid values but has w_c(1/7)=-2. At X=2/7 its actual
+zeta trace is -2 log 2, with factorial ratio 1/4. Thus a sampled positive
+kernel can even fail on an exact small-prime input at a missed scale.
+
+The divisor identity sum_(d|n)Lambda(d)=log n proves, by finite swapping,
+
+ T_c(X)=sum_a c_a log(floor(aX)!).                         (1)
+
+Equivalently, the exponent of p on either side's multiplicative version
+is sum_(k>=1) w_c(X/p^k). This is the familiar factorial-ratio / Legendre
+valuation construction. Positivity of w_c proves that the ratio in (1)
+is an integer for EVERY real X>=0. It also gives nonnegative weighted
+prime-power traces at every scale. This is useful prime information,
+but is an established framework, not a new estimate on actual primes.
+
+The selected smallest-support kernel is c_1=-2,c_2=1:
+ w(t)=floor(2t)-2floor(t), T(X)=log(floor(2X)!)-2log(floor(X)!).
+For integer X it is log binomial(2X,X). Complete exact factorial/prime
+valuation identities check 15 filters at 12 rational scales, with
+180 groups in all. Their all-X scope follows from (1), not those tests.
+
+3. EXACT DECODING AND REMOVAL OF PRIME-POWER CONTAMINATION
+
+Define the scale dilation inverse
+ (M F)(X)=sum_(m>=1)mu(m)F(X/m)
+for functions with support bounded away from zero; each X uses a finite
+sum. Summatory convolution inversion applied to (1) gives
+
+ (M T_c)(X)=I_c(X):=sum_a c_a psi(aX),
+ psi(Y)=sum_(n<=Y)Lambda(n).                              (2)
+
+Indeed T_c(X)=sum_(m>=1) I_c(X/m); swapping the finite m,d sums in its
+M-inverse leaves only md=1 by sum_(d|r)mu(d)=1[r=1]. The sum may safely
+be terminated at floor(A X); no unavailable prime input is zero-filled.
+For the central kernel T and I vanish on X<1, so M T(X) uses m<=X.
+
+At X=5, T(5)=log 252>0 but
+ I(5)=psi(10)-2psi(5)=log(7/10)<0.                        (3)
+This exact example rejects inheritance of positivity under decoding.
+
+To obtain actual-prime weighted mass instead of prime-power mass,
+ theta(Y)=sum_(p<=Y)log p,
+ theta(Y)=sum_(k<=log_2 Y)mu(k)*psi(Y^(1/k)).              (4)
+For Y<2 both sides are zero. For every p, its coefficient on the right
+is sum_(r<=log_p Y)sum_(k|r)mu(k)=1[p<=Y]. This proves (4) at all
+real Y, including integer-power boundaries. Exact integer root routines
+handle those boundaries in the code. Unweighted counts use P(u), rather
+than incorrectly dividing all prime-power weights by log n.
+
+Twenty complete dyadic windows cover integers through 2^20. Four more
+complete windows (X,X+4096] have X=10^6,10^8,10^10,10^12. Each records
+the exact prime count, residues modulo 3,5,7 and maximum consecutive
+gap INTERNAL to that window. A separate sieve and exact FLINT primality
+verify every integer in these windows. For the four distant windows,
+counts are 312,228,170,140. These are FINITE observations: they supply
+no count, gap, residue or RH estimate outside the sampled windows.
+The exact extraction/window definitions (1)--(4) have universal scope.
+
+4. WHY THESE EXACT ALL-SCALE TRACES ERASE ZETA-ZERO INFORMATION
+
+Use the Mellin convention int_0^infinity F(X)X^(-s-1)dX and let
+A_c(s)=sum_a c_a*a^s. Absolute convergence for Re(s)>1 justifies
+
+ Mellin(w_c)=zeta(s)*A_c(s)/s,
+ Mellin(T_c)=-zeta'(s)*A_c(s)/s,
+ Mellin(I_c)=-(zeta'(s)/zeta(s))*A_c(s)/s.                 (5)
+
+For the first formula, floor(aX)=sum_(j>=1)1[X>=j/a] and direct
+integration gives a^s*zeta(s)/s. Multiplication by the Lambda Dirichlet
+series gives the other formulas. Balance makes w_c bounded, so its
+Mellin integral itself converges on Re(s)>0 and the displayed symbol
+continues there. The zeta factor in w_c cancels EVERY zeta-zero pole
+of the logarithmic derivative in T_c. No choice of a finite floor
+combination removes this structural cancellation.
+
+For the central kernel A(s)=2^s-2. It has zeros only at
+1+2*pi*i*j/log 2. In the nontrivial-zero strip Re(s)<1,
+ |A(s)|>=2-2^Re(s)>0.
+At a zeta zero rho of multiplicity m, Mellin(I) therefore has a simple
+pole with residue -m*A(rho)/rho. Mellin(T) is holomorphic there. Native
+zeta derivative and symbol bounds verify this distinction on two reused
+certified simple-zero disks near heights 14.134725 and 21.022040.
+Their disks contain no newly located zero. This distinguishes an
+all-scale prime identity from retention of ordinary-zeta root information.
+
+At s=1, A has a simple zero. Mellin(I)'s main simple pole is cancelled,
+whereas Mellin(T) retains a simple pole with residue C=2 log 2.
+Stirling's formula gives T(X)=C X+O(log X) for X>=1, also for real X
+with the factorial arguments floored. Subtracting that main term does
+not bypass decoding. The exact identity is
+
+ I(X)=sum_(m<=X)mu(m)[T(X/m)-C X/m]
+                  + C X sum_(m<=X)mu(m)/m.              (6)
+
+Both terms still require cancellation of actual arithmetic coefficients.
+An unconditional smooth trace and its asymptotic alone give no new
+critical-half-plane estimate on I. A bound |I(X)|<=C_epsilon*X^(1/2+epsilon)
+for EVERY X>=1 and EVERY epsilon>0 would make its Mellin integral
+holomorphic on Re(s)>1/2 and exclude right-half nontrivial zeros by (5).
+No such bound is proved or inferred from this experiment. The holomorphy
+of the continued central Mellin(I) in 1/2<Re(s)<1 is RH-equivalent.
+
+5. THE SHARP GENERIC DECODER NORM BARRIER
+
+Let B_sigma consist of functions F(Y)=0 for Y<1, with norm
+sup_(Y>=1)|F(Y)|/Y^sigma. For real sigma>1,
+
+ ||M||_(B_sigma->B_sigma)=sum_(m>=1)|mu(m)|m^-sigma
+                        =zeta(sigma)/zeta(2sigma).       (7)
+
+The upper bound is the triangle inequality. At a chosen integer X=N,
+set F(N/m)=mu(m)*(N/m)^sigma for m<=N and zero elsewhere. Its norm
+is at most one and (M F)(N)/N^sigma=sum_(m<=N)|mu(m)|m^-sigma.
+Taking N to infinity proves the matching lower bound. The Euler product
+prod_p(1+p^-sigma)=zeta(sigma)/zeta(2sigma) proves the last equality.
+
+The norm is infinite for sigma<=1. An elementary all-scale argument
+uses the union bound for divisibility by squares: among 1,...,N,
+the number Q(N) of squarefree integers is at least
+delta*N, delta=2-zeta(2)>0. In each block (N,4N],
+Q(4N)-Q(N)>=(4delta-1)N, so its contribution to sum |mu(m)|/m is
+at least delta-1/4>0. Disjoint power-four blocks prove divergence.
+For sigma<1 the weights only increase. No RH, PNT or probabilistic
+independence assumption is used. Exact saturation controls and native
+positive bounds for delta and the block constant verify implementations.
+
+This is a GENERIC operator norm statement. It does not rule out a new,
+strong cancellation estimate on the specific arithmetic trace inputs.
+That additional prime-specific estimate is the missing high-priority
+search target; moving or renaming a generic norm does not provide it.
+
+6. VALIDATION, PRIOR ART AND THE NEXT SEARCH PRIORITY
+
+Six full prime-weight coefficient/native-zeta comparisons use complete
+prefixes 4096/6144, fresh complex arguments, explicit integer logarithm
+tails and changed erroneous prime coefficients (13 then 17). The bound
+is N^(1-sigma)[log N/(sigma-1)+1/(sigma-1)^2], from Lambda(n)<=log n.
+Six floor-trace Mellin groups are AUXILIARY and not added to the full
+comparison count. Three native squarefree norm groups and two reused
+zero disks are also auxiliary. Six exact and six analytic audit gates
+pass. The current full comparison count rises from 144 to 150.
+
+The framework is established. Bober, Factorial ratios, hypergeometric
+series, and a family of step functions, arXiv:0709.1977, section 3
+and Theorem 1.2, treats Landau positivity and height-one factorial ratios:
+https://arxiv.org/pdf/0709.1977
+Its introduction also relates these ratios to Chebyshev prime estimates.
+This is prior-art evidence for the recovered floor class, not a borrowed
+new prime bound. Classical Mobius inversion, prime extraction and
+von Mangoldt identities are known; none is counted as historical novelty.
+
+The detector now gives priority to explicit ACTUAL-PRIME observables
+with new all-scale identities or independently proved uniform estimates.
+Candidates dependent only on formal degree or root transfers remain
+secondary. Exact reconstruction from already supplied data is calibration.
+Prime-power removal, scale coverage, residue/gap scope, ordinary-zero
+sensitivity and proof of the claimed domain are separate gates. Finite
+counts near 10^12 are not evidence of a theorem at every larger scale.
+
+This is the twentieth verified known-framework consequence/calibration,
+not an eleventh primitive or a new RH result. Ten candidate families
+remain; the verified-historically-new list is still empty. Radix-limit
+experiments remain lower priority while actual-prime information is
+the user's stated focus. The research objective remains active.

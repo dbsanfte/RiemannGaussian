@@ -1,0 +1,15 @@
+{
+  "schema": "owned-development-v1",
+  "invocations": [
+    {
+      "returncode": 0,
+      "operations": 10297,
+      "elapsed_seconds": 0.024823371961247176,
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "source_exposure": "synthetic arrays and malformed artificial archive rows only; no actual source or archive"
+    }
+  ],
+  "cumulative_operations": 10297
+}

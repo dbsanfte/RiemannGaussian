@@ -1,0 +1,17 @@
+{
+  "RH_proved": false,
+  "completed_before_prior_failure": {
+    "conditional_RH_target_binding": true,
+    "cumulative_exact_factor_reserve": true,
+    "joint_SCS_exact_primal_dual_admission": true,
+    "native_affine_identities": 6,
+    "tiny_primal_dual_cases": 6
+  },
+  "hashes_used": false,
+  "old_tests_run": false,
+  "prior_attempt": "mobius_coupled_square_independent_review_084.json",
+  "scientific_source_queries": false,
+  "scope": "Only affected publicfactor/resource regression; prior math/SCS not replayed.",
+  "status": "PASS",
+  "uniform_source_bound_proved": false
+}

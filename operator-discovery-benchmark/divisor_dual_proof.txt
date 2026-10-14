@@ -1,0 +1,141 @@
+DIVISOR-ZERO GRAMS AND A DUAL CERTIFICATE FOR THE FULL SIGNED DEFECT
+
+Scope: this stage targets the FULL signed energy inequality, including the
+dense remainder of the preceding common-factor audit. The algebraic and
+matrix-certificate methods are supplied. Learned kernels and masks must
+keep their exact semantics. Native matrix positivity proves a finite-scale
+inequality, never an unbounded-scale premise. No RH-strength global PSD
+comparison is claimed. No prime-distribution theorem is imported.
+
+1. FULL ACTUAL TARGET AND EXACT DIVISOR CONSTRAINTS.
+For X>=1 integer let N=4X, v_n=mu(n), and H_X(n,m)=W_X(max(n,m)),
+where W_X(r)=K_(2X)(r,r)-4*K_X(r,r), K_X(r,r)=(2X-max(X,r))_+.
+Then v^T H_X v=Delta(X)=A_2(2X)-4*A_2(X), for the actual STEP Mertens
+energy. Every pair is present. The cofinal positive-epsilon target and its
+all-ordinary-height recovery are precisely those of critical_defect_proof.txt.
+
+Let C_N(k,n)=1_(n divides k), k,n=1..N. Every divisor row is COMPLETE.
+Dirichlet inversion of the constant-one sequence gives C_N*v=e_1 exactly.
+The coefficient producer uses full divisor inversion, with no factor oracle.
+For any unit-normalized generic sequence f, the analogous convolution matrix
+C_f(k,n)=1_(n|k)*f(k/n) times the exact inverse of f also gives e_1.
+That generic algebraic identity does NOT imply the actual bound |v_n|<=1,
+or ordinary-zeta recovery. Large generic inputs refute that transfer.
+
+2. A CREATIVE BUT EXACT ARITHMETIC GRAM.
+For a nonnegative boolean row mask w(k), put
+G_w=C_N^T*diag(w)*C_N.
+It is PSD, and v^T G_w v=w(1). Its exact entry is
+sum_(k<=N, lcm(n,m)|k) w(k).
+For all rows this is floor(N/lcm(n,m)); for every nonunit row it is
+G_0(n,m)=floor(N/lcm(n,m))-1_(n=m=1).
+Thus G_0 is PSD and G_0*v=0. The kernel uses actual arithmetic constraints
+at every row scale, including numbers divisible by primes up to N. Its
+signed double sum vanishes at EVERY finite N, not just observed prefixes.
+This is an exact arithmetic identity, not new prime-distribution control.
+
+Anonymous matrix-entry fitting can recover the floor/lcm expression from
+divisor-Gram response tables, against a broader declared index dictionary.
+Anonymous zero-forcing response masks can infer a reusable row production.
+Their admission backends count multiples and use the universal inverse
+identity; an approximate fit is not substituted for an exact kernel.
+
+3. THE DUAL OPERATOR AND EVERY COST.
+For any D>=0 and Y>=0 define
+S_(X,q)=D(X,q)*I-H_X+Y(X)*G_w.
+If S is PSD, evaluating it on the ACTUAL vector v gives
+Delta(X)<=D(X,q)*sum_(n<=N)mu(n)^2+Y(X)*w(1)
+          <=N*D(X,q)+Y(X)*w(1).
+All terms in H remain. Large Y is free only when its forcing cost w(1)
+is exactly zero. The scalar cost is otherwise charged; calling it a zero
+term when its unit row is present is a false certificate.
+
+The rational family is
+D(X,q)=c_D*(1+ceil(q^r))*X*ceil(X^(1/q)), q>=1 integer, r>=0 rational,
+Y(X)=c_Y*X^floor(gamma)*ceil(X^(gamma-floor(gamma))), gamma>=0 rational,
+with nonnegative rational coefficients and complete exact ceiling semantics.
+Ceilings increase the bound; they do not alter its ordinary powers. At any
+FIXED q, N*D=O_q(X^(2+1/q)). If w(1)=0, or gamma<=2, the total cost has
+this cofinal critical power. Constants may depend on q arbitrarily.
+
+A GLOBAL proof that the proposed S_(X,q) is PSD for every dyadic X and
+every sufficiently large q would prove the full inequality and hence RH.
+If r=0 and c_D is fixed across q, its charged diagonal constant is bounded
+in q. Taking q to infinity at each finite X then gives a fixed critical
+Delta bound. That stronger candidate would also imply simple critical
+zeros as explained in the preceding proof. It is labelled separately;
+the positive-r family does not require that extra bounded-constant premise.
+Finite sampled q or X does not supply either universal statement.
+
+4. AN UNCONDITIONAL GLOBAL CALIBRATION, NOT THE RH ESTIMATE.
+All entries of H have absolute value at most 2X, N=4X, so
+||H||_2<=8X^2 by the maximum absolute row sum. Consequently D>=8X^2
+makes D*I-H PSD at every integer X, and adding Y*G_w preserves PSD.
+For q=1 the family can meet that condition with c_D>=4. This is a
+proved power-THREE energy bound, corresponding to ordinary unsigned
+Mertens power one. It is not a cofinal-q critical certificate. The backend
+keeps this global calibration separate from finite critical-matrix leads.
+
+5. WHY LARGE GRAM WEIGHTS DO NOT AUTOMATICALLY PROVE RH.
+For the full nonunit Gram, ker(G_0)=span(mu), since C_N is invertible and
+only its first row was removed. Hence positivity necessarily requires
+D*Q(N)-Delta(X)>=0. That is the actual signed inequality again.
+
+Conversely, if D*Q(N)>Delta(X), some finite Y makes the matrix positive
+definite. Write u=mu/sqrt(Q(N)), decompose into u and its orthogonal
+complement, and set a=D-u^T H u>0. On that complement G_0 has a positive
+least eigenvalue. Its block Schur complement is positive for sufficiently
+large Y; explicitly Y*g_min>||H||+||H||^2/a suffices.
+One elementary bound is g_min>=1/(2*N^(3/2)): for v orthogonal to mu,
+v=P_perp*C_N^(-1)*(0,C_tail*v), while the inverse row sum is at most
+2*sqrt(N) and its column sum at most N. Thus the finite dual certificate
+can re-express an existing finite energy bound. It does not manufacture
+the missing sign cancellation. A simple GLOBAL matrix comparison, or a
+uniformly proved recursive decomposition of it, remains the needed new step.
+
+6. UNIVERSAL BARRIERS FOR PRUNED ARITHMETIC CONSTRAINTS.
+Prefix rows k<=L constrain no coefficient above L. A vector that agrees
+with mu through L and is positive thereafter satisfies those complete
+prefix rows. For fixed L its cumulative sum is x+O_L(1), giving energy
+power three. An all-scale critical dual certificate from only fixed prefix
+rows is impossible. A negative matrix witness refutes the certificate,
+not automatically the actual Mobius inequality.
+
+Even infinitely many row constraints from finitely many primes are
+insufficient for a generic sign bound. For a finite prime set P define
+b_P(n) multiplicatively: local values at p in P are 1,-1,0,0,... on
+1,p,p^2,..., and at other primes every local value is one.
+Then |b_P(n)|<=1, and C*b_P vanishes on EVERY row divisible by a prime
+in P. Yet
+sum_(n<=x)b_P(n)=c_P*x+O_P(1), c_P=product_(p in P)(1-1/p)^2>0.
+Indeed b_P=1*a_P with finite support on divisors of product(P)^2;
+a_P(p)=-2, a_P(p^2)=1. The floor remainder is at most 4^|P|.
+Its full energy defect has leading (28/3)*c_P^2*X^3 and an O_P(X^2)
+error. Thus any cofinal critical PSD comparison using ONLY such selected
+rows is false, even though those rows supply exact arithmetic at all scales.
+
+For P={2}, the explicit counter-vector is 1 on odd indices, -1 on indices
+congruent to two modulo four, and zero on multiples of four. It satisfies
+every even divisor row and its cumulative sum grows like x/4. These are
+counterfeit arithmetic models, not evidence against RH. They show exactly
+why selected-prime constraints cannot replace complete all-scale arithmetic.
+
+7. CERTIFICATE SEARCH AND AUDIT SCOPE.
+The source protocol precedes scoring. Its primitives are index divisibility,
+floor, lcm/gcd features, nonnegative row masks, rational powers, diagonal
+majorants and Gram sums. Seeds, response tables, fitting, rounding, balanced
+profile sampling, native precision, selection and promotion budgets are
+recorded. The learner receives numeric responses and feature columns, not
+an expected winning formula. Known inverse and Gram recovery is calibration.
+Model-supplied dictionaries and analytic methods remain explicit assumptions.
+
+Each native LDL certificate is a proof of positivity at its declared finite
+scale. Negative pivots are checked with exact rational negative directions
+and reject that matrix candidate. Numerical failures of the enclosure are
+missing, not counterexamples. The independent checker uses exact integer
+Sylvester minors, independent direct divisor-row Gram sums, and prime
+arithmetic; it imports no producer mathematics. Promotion and equal-slot
+random-mask ablation are frozen before validation and replayed independently.
+Fresh final matrices and generic inputs are protected from the learning worker.
+Every full-defect bound charges N*D and the exact unit forcing cost Y*w(1).
+No global critical PSD proof or RH conclusion follows from finite success.

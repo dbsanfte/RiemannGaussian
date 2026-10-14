@@ -1,0 +1,435 @@
+WALSH ENERGY: UNIFORM PAID PREFACTOR AND ACTUAL MOMENT REVIEW 065
+===============================================================
+
+Scope and conclusion
+--------------------
+This source-only review reads mobius_walsh_energy_065.py,
+MOBIUS_WALSH_ENERGY_CHECK_SCOPE_065.txt, the previously inspected062/063
+source definitions and the frozen mathematical reviews. It reads no
+scientific results arrays and executes no numerical study. It changes
+none of those files, including the frozen growing-conditioning review.
+
+The proposed coefficient-prefactor theorem is VALID for a declared
+core_inverse construction, with the proposed constants and uniformity
+in every allowed prefix. Upward binary weights with beta=1 and precision4
+therefore have paid mass O(N polylog N) at H=floor(sqrt N). A uniform
+subpolynomial bound for the ACTUAL weighted positive energy is a precise
+sufficient unpaid leaf for square-root variation and the existing
+conditional RH route. That energy bound is NOT proved here and is NOT
+the same as the producer's universal Fourier/cycle energy upper bound.
+It is a sufficient stronger normalized-moment premise, not an equivalence
+to the original variation theorem.
+
+1. Source parameters and exact coefficient norm
+-----------------------------------------------
+Fix p=3,q=5, registered primes {2,3,5}, integer N>=2, 1<=y<=D,
+1<=H<=D, D=floor(4N/p), and r in[p/q,1]. Let L=1+log(4N),
+with natural logarithms in this review. Take K=floor(y/(H+1)) and
+B=max(H,K). Empty long dictionaries and K=0 are allowed.
+
+For b=p,q, write
+
+ w_b(d)=floor(4N/(bd))-3floor(2N/(bd))+2floor(N/(bd)),
+ f(d,r)=1[d<=y]*(w_p(d)-r*w_q(d)), 1<=d<=H.
+
+As in the source-only065 review, w_b(d) is in{-1,0,1}, so |f|<=2.
+The long dictionary is obtained, for (v,c)=(4,1),(2,-3),(1,2), from
+Z=floor(vN/b), 1<=i<=floor(Z/(H+1)), and
+T=min(y,floor(Z/i)), retaining T>H. Add c to the threshold T and
+combine duplicates. Let a_T(r)=a_(p,T)-r*a_(q,T), and K_T=floor(T/(H+1)).
+The exact signed source matrix on short rows is
+
+ G(d,ell;r)=sum_(T>H) a_T(r)*1[ell<=K_T]*floor(T/(ell*d)),
+ G(u)(d)=sum_(ell<=K)G(d,ell;r)*u(ell).                     (1)
+
+The two occurrences of u in
+
+ c(u)=Delta D(u)P[f-G(u)]                                  (2)
+
+refer to the same squarefree-prime-sign sequence. A squareful argument
+has value zero; the unit has value one. P is core_inverse unless another
+fill is explicitly declared below. After squarefree deletion, prime
+parity/gcd reduction, coalescing and any actual-prime conditioning, let
+q_j(x;r) be its exact remaining Walsh polynomial, and put
+
+ A_j(r)=sum_U |coefficient_U(q_j)|, A(r)=sum_(j<=H) A_j(r).  (3)
+
+The theorem below holds for any conditioned prime set, including none
+and full conditioning. It does not require the degree-two gate.
+
+2. A uniform absolute harmonic moment for the truncated dictionary
+-----------------------------------------------------------------
+For integers t>=0 define h(t)=sum_(1<=ell<=t)1/ell, h(0)=0, and
+
+ M_abs(r)=sum_(T>H)|a_T(r)|*T*h(K_T).                      (4)
+
+Combining signed duplicates and joining channels can only reduce this
+positive expression relative to the ungrouped threshold list. On each
+ungrouped entry from b,v,i, we have T<=Z/i, K_T<=4N and hence h(K_T)<=L.
+Writing I=floor(Z/(H+1)), with the empty case I=0 understood,
+
+ sum_(i<=I,T>H) T <= Z*h(I) <= Z*L.                       (5)
+
+The first inequality even remains valid after dropping the T>H
+restriction. No replacement of min(y,floor(Z/i)) by an untruncated
+source has been made: it has only been upper-bounded in a positive sum.
+Thus with lambda_p=1 and lambda_q=r,
+
+ M_abs(r)
+ <= L^2*sum_(b=p,q)lambda_b*sum_(v,c)|c|*floor(vN/b)
+ <= 12*(1/p+r/q)*N*L^2.                                 (6)
+
+The factor12 is 1*4+3*2+2*1. If Z=0 or I=0 that entry contributes
+zero. Unit ell=1 is included whenever K_T>=1. The conservatively sized
+K can include unused columns without affecting these bounds.
+
+From (1), floor(T/(ell*d))<=T/(ell*d), so
+
+ sum_(ell<=K)|G(d,ell;r)|<=M_abs(r)/d.                    (7)
+
+This is a positive bound on coefficient size. It does NOT approximate
+the signed source by its harmonic profile, so there is no fractional-part
+error and no problematic O(N) error term in this proof.
+
+3. Propagation through core_inverse and the Delta inverse
+--------------------------------------------------------
+Let rho(d) strip all2,3,5 factors, and s(d)=d/rho(d). Then
+
+ (Pv)(d)=v(rho(d))/s(d), P(1/d)=1/d.                       (8)
+
+The map is nonnegative and its row sums are at most one. Consequently
+|Pf(d)|<=2, and by positivity, the triangle inequality and (7),
+
+ sum_(ell<=K)|PG(d,ell;r)|
+ <= P[sum_ell |G(.,ell;r)|](d)
+ <= M_abs(r)*P(1/d)=M_abs(r)/d.                          (9)
+
+Before coalescing, expanding D and then Delta bounds the coefficient
+L1 by twice the absolute term count in D. Counting representations d=jm
+of each short row gives
+
+ A(r)<=2*sum_(d<=H)tau(d)
+                  [|Pf(d)|+sum_(ell<=K)|PG(d,ell;r)|].    (10)
+
+Squareful deletion cannot increase this bound. Replacing surviving
+products by parity characters does not change their absolute individual
+coefficients. Combining aliases, constants and diagonal terms can only
+contract L1. Substituting actual signs for any prime set and coalescing
+again also contracts L1. Thus (10) bounds precisely (3), not a different
+polynomial with independent copies of u or independent row signs.
+The Delta factor2 includes the virtual row H+1=0; it is an upper bound
+also at the last row and the unit, without a missing boundary column.
+
+Two elementary divisor estimates suffice:
+
+ sum_(d<=H)tau(d)=sum_(a<=H)floor(H/a)<=H*(1+log H),
+ sum_(d<=H)tau(d)/d
+   =sum_(ab<=H)1/(ab)<=h(H)^2<=(1+log H)^2.               (11)
+
+Combining (6),(9)-(11) proves the explicit UNIFORM theorem
+
+ A(r)<=4H*(1+log H)
+       +24*(1/p+r/q)*N*L^2*(1+log H)^2
+ <=4H*(1+log H)+24*(1/p+r/q)*N*L^4.                      (12)
+
+Here H<=D<=4N licenses the last comparison. The bound holds for every
+required y, every r in[p/q,1], and every conditioning set. At p3,q5,
+1/p+r/q<=8/15, hence
+
+ A(r)<=4H*(1+log H)+(64/5)*N*L^4.                        (13)
+
+If K=0 or y<=H, the dictionary is empty and the first term alone pays A.
+If H=D, the same empty-long conclusion holds. If H=1, all harmonic and
+divisor formulas remain valid with log H=0. No asymptotic finite-head
+exception is necessary for (12).
+
+4. Which other declared fills inherit a uniform profile constant?
+-----------------------------------------------------------------
+The argument only needs nonnegative P, |Pf|<=2, and
+
+ P(1/d)<=C_P/d with C_P independent of H.                 (14)
+
+Then replace the second term in (12) by24*C_P*(1/p+r/q)*N*L^4.
+The source063 fill definitions give the following rigorous constants:
+
+ fill                 admissible C_P
+ raw                         1
+ zero                        1
+ right                       1
+ reciprocal_linear           1
+ core_inverse                1
+ left                       30
+ linear                     30
+ core                 no uniform C_P
+
+For raw and zero this is immediate. Right interpolation uses the next
+coprime node b>d and 1/b<=1/d; its virtual H+1 node has value zero.
+For reciprocal_linear, at neighboring coprime a<d<b with an actual
+right node, its weights applied to1/a and1/b give EXACTLY1/d:
+[a(b-d)/(d(b-a))]/a+[b(d-a)/(d(b-a))]/b=1/d.
+Replacing the virtual right-node value by zero only decreases this.
+
+For left and linear, positivity bounds the profile by1/a, where a is
+the previous coprime node. Every interval of30 consecutive integers
+contains a number congruent1 modulo30, hence a>=d-29; also a>=1.
+Therefore d/a<=30. This covers the terminal interval as well. These
+constants are deliberately conservative; their precise optimization
+is immaterial to the growth theorem.
+
+For core, take d=2^k<=H. Its profile is1/rho(d)=1, whereas1/d=2^-k.
+The needed constant is at least2^k and is unbounded as H grows. This
+proves failure of this PROFILE METHOD for core. It does not establish
+that core's actual coefficient norm has bad growth, or that another
+argument cannot pay it.
+
+This classification concerns declared fill branches. A finite study's
+selected winner, its parent conditioning and its selected weight exponent
+are separate choices. In particular no assertion is made that all36
+studied selections obey (13) or the beta1 mass estimate below. Existence
+of the declared core_inverse/beta1 construction is sufficient for the
+conditional all-scale theorem; it need not be a finite study's winner.
+
+5. Exact upward binary weight bound, including zero rows
+------------------------------------------------------
+In the producer, beta1 means exponent string '1'. With precision4,
+for A_j>0 let k=floor(log2 A_j), u=2^(k-4). The exact integer-power
+comparison in dyadic_power_weight chooses
+
+ w_j=u*ceil(A_j/u).                                      (15)
+
+The code's e is floor(log2 of the numerator/denominator power), and its
+k=e//b gives the same binade for beta1 (a=b=1). Its search interval
+brackets the ceiling between16 and32, including an exact binade endpoint.
+No floating logarithm is used to establish (15).
+Since0<=w_j-A_j<u<=A_j/16,
+
+ A_j<=w_j<(17/16)*A_j.                                   (16)
+
+For a zero polynomial row A_j=0, the producer sets w_j=0. That row is
+omitted from divisions; c_j is zero under every sign assignment.
+If A=0, W=E_mu=variation=0 with this convention. Otherwise
+
+ W:=sum_j w_j<(17/16)*A.                                 (17)
+
+For H=floor(sqrt N), (13),(17) prove the paid mass theorem
+
+ W< (17/16)*[4sqrt N*(1+log N)+(64/5)*N*L^4]
+   =O(N*L^4), uniformly in y and conditioning.             (18)
+
+Other beta policies from discover do not inherit (16). The selected
+candidate may use another beta. This theorem declares beta1 and binary
+precision4 explicitly, without making an all-policy mass assertion.
+The producer's computational capacity caps bound its finite search;
+the mathematical recipe and inequality hold for every N. A theorem
+using the recipe at all scales is not a claim that the current capped
+software enumerates every scale.
+
+6. A precise unpaid ACTUAL positive energy leaf
+----------------------------------------------
+For a declared core_inverse branch, H=floor(sqrt N), a declared
+conditioning rule S(N,y), and the endpoint beta1 weights above, define
+
+ E_mu(N,y,r)=sum_(j:A_j(r)>0) c_j(mu;r)^2/w_j(r).           (19)
+
+The actual remaining assignment has every actual prime sign -1.
+It is the SAME ordinary mu in both factors of(2). Equation(19) is an
+exact nonnegative arithmetic moment with an independently paid
+coefficient-mass prefactor. Weighted Cauchy gives
+
+ sum_j |c_j(mu;r)| <=sqrt(W(r)*E_mu(N,y,r)).                (20)
+
+A sufficient unpaid hypothesis is: for every delta>0 there exists
+C_delta, independent of N and every required y, such that at BOTH
+r=p/q and r=1,
+
+ E_mu(N,y,r)<=C_delta*N^delta.                            (21)
+
+The conditioning rule and weight recipe must be explicitly fixed;
+constants may depend on that declared rule, p,q and delta. Finite-head
+values may be absorbed in C_delta. No actual-energy bound is asserted
+by this review.
+
+Equations(18),(20),(21) imply, for every epsilon>0,
+
+ sum_j |c_j(mu;r)|=O_epsilon(N^(1/2+epsilon))               (22)
+
+uniformly in y at both endpoints: take delta=epsilon and absorb L^2
+into the remaining N^(epsilon/2). The endpoint maximum also bounds
+all r in[p/q,1] by convexity of the actual row-L1 norm. The squares
+and r-dependent weights need not define an affine energy, and no such
+affinity is used. Alternatively (21) can be required for every r;
+that stronger version is unnecessary for the endpoint argument.
+
+This reduces the proposed SUFFICIENT proof route to a normalized
+positive-moment leaf after paying its coefficient prefactor. It is not
+an equivalence to the original square-root variation problem. Indeed
+w_j>=A_j>=|c_j(mu)| gives E_mu<=sum_j|c_j(mu)|; a square-root variation
+estimate alone would only imply that weaker energy estimate, not (21).
+Nor does W=O(N polylog N) itself imply (21).
+
+7. Actual energy versus the checked universal energy envelope
+-----------------------------------------------------------
+The producer expands E(x)=sum_j q_j(x)^2/w_j using shared characters.
+The checker supplies a pointwise upper U for EVERY free-sign assignment:
+Fourier coefficient L1 minus twice the capacity-paid frustrated-cycle
+mass. Thus E_mu<=U, but the distinction is material:
+
+ * Proving (21) directly for the actual arithmetic assignment suffices
+   for (22). It can retain actual arithmetic relations discarded by
+   formal free signs, and does not require U to be subpolynomial.
+ * Proving U=O_delta(N^delta) is a stronger sufficient universal-energy
+   theorem. Combined with(18), it pays the checker-style construction.
+ * Finite admissions of U, lower sign witnesses, and decreases under
+   conditioning establish neither uniform theorem.
+
+A direct proof of(21) would be a new arithmetic theorem beyond the
+current finite checker scope. Its source binding still uses the exact
+062/063/064 identities. One cannot relabel the actual value E_mu as a
+certified universal upper, or infer its growth from cycle counts.
+
+For perspective, the completely elementary bound |q_j(x)|<=A_j and
+w_j>=A_j gives E(x)<=A for every assignment. With(13),(18) this yields
+at best a linear/polylog variation scale, so it exposes rather than
+pays the missing exponent.
+
+8. Rounding changes only a uniform constant in the row-majorant budget
+---------------------------------------------------------------------
+For any positive row scales A_j and w_j=t_j*A_j with1<=t_j<=R,
+put A=sum A_j and p_j=A_j/A. Then
+
+ (sum w_j)*(sum A_j^2/w_j)/A^2
+   =(sum p_j t_j)*(sum p_j/t_j)
+   <=(R+1)^2/(4R).                                      (23)
+
+Proof: (t-1)(R-t)>=0 implies t+R/t<=R+1. If
+X=sum p_j t_j and Y=sum p_j/t_j, then X+RY<=R+1.
+Consequently XY<=X(R+1-X)/R<=(R+1)^2/(4R).
+Zero rows are omitted; the all-zero case is trivial.
+At R=17/16 the factor is exactly1089/1088.
+This proves the optional rounding claim without a distribution
+assumption. It bounds the Cauchy product for the row-majorant energies;
+it is not a claim that the cycle-improved universal bound equals that
+product. Separately, actual energies satisfy E_mu(w)<=E_mu(A) and
+W(w)<=R*A, so replacement of exact beta1 weights by their rounded
+versions also loses at most R in that elementary actual product bound.
+Neither statement changes an exponent.
+
+9. Global subpower energy is stronger; partitioned moments are natural
+---------------------------------------------------------------------
+There is a purely algebraic counterexample to equivalence between the
+desired L1 rate and a global subpower-energy premise. Let H=floor(sqrt N)
+and take constant Walsh rows q_j=1 for ceil(H/2)<=j<=H, and zero rows
+elsewhere. Every nonzero A_j=w_j=1 (binary rounding is exact). Then
+variation=number of nonzero rows=O(sqrt N), whereas E_mu equals that
+same number and is NOT O_delta(N^delta) for all delta>0. These are valid
+shared-sign Walsh polynomials and positive weights, obeying the uniform
+mass bound proved above. They need not arise from the actual joined
+source or core_inverse, and are not a counterexample to its energy
+hypothesis. They conclusively refute the abstract inference that an RH-
+strength variation bound requires global subpower energy. Many actual
+tail rows of this size would produce the same issue; this audit neither
+asserts nor excludes their occurrence in the source.
+
+A partition avoids imposing the large global mass on every row. For any
+partition of {1,...,H} into disjoint blocks I, define
+
+ W_I=sum_(j in I)w_j,
+ E_I(mu)=sum_(j in I,A_j>0)c_j(mu)^2/w_j.
+
+The exact block Cauchy inequality is
+
+ sum_j |c_j(mu)| <=sum_I sqrt(W_I*E_I(mu)).                (24)
+
+No independence between blocks or prime signs is needed. The analogous
+universal energy E_I(x) can be expanded and cycle-bounded within each
+block if desired. An actual arithmetic bound and a universal sign
+bound remain different choices here too.
+
+The coefficient prefactor proof can itself be restricted without paying
+all divisors twice. Define
+
+ n_I(d)=#{j in I:j divides d}
+       +#{j in I:j+1<=H and j+1 divides d}.
+
+Counting separately the two terms in each Delta row gives the exact
+sufficient positive coefficient bound
+
+ A_I:=sum_(j in I)A_j
+ <=sum_(d<=H)n_I(d)*[2+M_abs/d],
+ W_I<=(17/16)*A_I.                                      (25)
+
+Thus independent improvements to the kernel or the block's incidence
+count can pay a block mass. The unrestricted argument follows from
+n_I<=2tau. For an interval I=[J,T] within[1,H], one can use
+
+ sum_(d<=H)n_I(d)<=2H*sum_(j=J)^T 1/j,
+ sum_(d<=H)n_I(d)/d
+ <=2*[1+log(H/J)]*sum_(j=J)^T 1/j.                        (26)
+
+These follow by summing floor(H/j), respectively h(floor(H/j))/j,
+and including the shifted j+1 term only when it is within H. The
+shifted term is no larger than the corresponding unshifted term.
+The bounds are valid at J=H, including the last-row boundary.
+They are conservative and do not themselves establish square-root
+variation. In particular even a large-index block can inherit a large
+M_abs contribution; improved source-bound cancellation may still be
+necessary to make its mass estimate sharp.
+
+A useful sufficient all-scale partition theorem would declare at most
+polylog(N) blocks and prove block estimates
+
+ W_I<=C*N^(alpha_I)*polylog(N),
+ E_I(mu)<=C_delta*N^(beta_I+delta)*polylog(N),
+ alpha_I+beta_I<=1,                                     (27)
+
+uniformly over blocks, required prefixes and both endpoints, with
+uniform constants and controlled logarithmic powers. Equation(24)
+then gives O_epsilon(N^(1/2+epsilon)). More generally a directly paid
+sum of sqrt(W_I E_I) at that rate suffices, with any explicitly bounded
+number of blocks. This is a collection of sufficient residual leaves,
+not an already established source theorem.
+
+For the constant tail example, one block has W_I and E_I both of order
+H, so alpha_I=beta_I=1/2 and the product is of order N: the correct
+variation rate is recovered with no false global subpower requirement.
+For the source construction, one may use exact block masses from the
+conditioned coefficients or independent block estimates such as(25).
+Neither this example nor(25) pays its actual block moments.
+
+The global condition(21) remains one sufficient option, potentially
+unnecessarily strong or false for the source. The partition condition
+(24) with independently paid mass/moment estimates is a more flexible
+next-search obligation. It must not be called equivalent to RH or
+silently promoted to a necessary normalized-energy target.
+
+10. Composition with paid long coefficients and the conditional bridge
+---------------------------------------------------------------------
+At H=floor(sqrt N), the062 generic long coefficient L1 remains
+O(sqrt N*log(2N)) uniformly over required prefixes and parameters.
+The short recipe here is fixed core_inverse and uses the SAME source
+and long completion, with its original noncoprime fill and endpoint
+rules. If the unpaid moment hypothesis(21), or the partition alternative
+(24) with a uniform square-root budget, is proved, add that paid
+long price to(22) at each common endpoint, then take the endpoint
+maximum. This gives the complete coefficient budget
+O_epsilon(N^(1/2+epsilon)). The common L_bridge^3 factor in the existing
+prefix certificate is polylogarithmic and can be absorbed by decreasing
+the epsilon used in the coefficient theorem; its original definition
+and all source masks remain unchanged.
+
+Within the already stated062 budget-to-core rule,061 paid regions and
+058 conditional RH bridge, and only their original endpoint/source
+scope, that uniform full budget would discharge the corresponding
+arithmetic variation leaf and enable the conditional RH conclusion.
+No hypothesis of that bridge is newly proved by the prefactor theorem
+alone. In particular (21), the actual moment, is OPEN; the earlier
+uniform-prefix/RH goal therefore remains OPEN.
+
+Disposition: the uniform coefficient-prefactor bound (12)-(13), fill
+profile classification, beta1 rounding mass and optional1089/1088
+constant are proved by finite source algebra and elementary harmonic
+bounds. The normalized actual positive-energy hypothesis(21), its more flexible
+partition alternative(24)-(27), and the stronger universal-cycle-energy
+growth hypothesis are not proved.
+No scientific arrays, numerical studies, agents or old-file edits were
+used in this audit.

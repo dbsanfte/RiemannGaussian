@@ -1,0 +1,16 @@
+operations=1018100
+test_a_strictly_negative_height_margin_is_required (test_core_moment_region_search.MomentRegionTests) ... ok
+test_cube_composition_pays_head_and_both_tail_errors (test_core_moment_region_search.MomentRegionTests) ... ok
+test_different_fractional_kernel_retains_the_correct_integer_cell_cost (test_core_moment_region_search.MomentRegionTests) ... ok
+test_fractional_absolute_powers_share_the_holder_budget (test_core_moment_region_search.MomentRegionTests) ... ok
+test_full_source_payment_preserves_drifts_and_both_recovery_directions (test_core_moment_region_search.MomentRegionTests) ... ok
+test_library_expansion_changes_feasibility_without_nominating_a_contour (test_core_moment_region_search.MomentRegionTests) ... ok
+test_more_moments_alone_cannot_pay_the_next_absolute_envelope (test_core_moment_region_search.MomentRegionTests) ... ok
+test_resource_exhaustion_is_not_a_negative_mathematical_result (test_core_moment_region_search.MomentRegionTests) ... ok
+test_strict_provider_boundaries_prevent_endpoint_promotion (test_core_moment_region_search.MomentRegionTests) ... ok
+test_too_large_cutoff_rejects_an_otherwise_valid_contour (test_core_moment_region_search.MomentRegionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.272s
+
+OK

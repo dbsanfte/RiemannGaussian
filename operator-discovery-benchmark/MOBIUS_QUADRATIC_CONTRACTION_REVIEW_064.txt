@@ -1,0 +1,288 @@
+MOBIUS QUADRATIC PARITY AND CONDITIONING REVIEW 064
+==================================================
+
+Scope
+-----
+This source-only review reads the063 handoff and the stopped063 proof.
+No scientific source array, optimizer, norm, candidate, sign table or test
+was evaluated. No prior file is edited. The proposed rules below concern
+an exactly source-bound generic long inverse and one fixed mu-independent
+fill. They do not confer the same provenance on an arbitrary fitted LP.
+
+The proposed contraction is a valid finite SYMBOLIC ENVELOPE. Its uniform
+all-N/all-prefix rate is still OPEN. Exact prime-parity reduction can make
+the unpaid arithmetic expression more structured; neither conditioning
+nor a smaller lookup horizon supplies a uniform growth estimate by itself.
+
+1. Squarefree and gcd reduction, including shared linear terms
+----------------------------------------------------------------
+For each repair index j the063 factorization gives
+
+ c_j(r)=sum_(m<=H)L_(j,m)(r)mu(m)
+       -sum_(m<=H,ell<=K)B_(j,m,ell)(r)mu(m)mu(ell), (1)
+
+with exact source-free affine coefficients in r. Both occurrences of mu
+are the SAME arithmetic sequence. The matrices retain original floor
+horizons, short fills, units and all source masks. Here
+K<=floor(D/(H+1)), D=floor(4N/p).
+
+If an integer input is nonsquarefree, its mu factor is zero. Those
+monomials can be deleted by exact integer factorization, not by a sign
+guess. For squarefree m,ell, put g=gcd(m,ell). Then
+
+ mu(m)mu(ell)=mu(m*ell/g^2).                          (2)
+
+The index on the right is squarefree. More generally the valid formula
+is mu(m)^2 mu(ell)^2 mu(m*ell/g^2); omitting the squarefree indicators
+is wrong. For example equal nonsquarefree inputs would otherwise create
+a spurious unit. In prime notation the key of a surviving product is the
+SYMMETRIC DIFFERENCE of the two prime sets, not their union or product.
+Shared primes cancel their sign squared only after both inputs pass the
+squarefree gate. Repeated valuations and overlap sectors are thereby
+handled exactly, rather than erased.
+
+Linear mu terms use their squarefree prime key, and mu(1)=1 has the empty
+key. A squarefree diagonal m=ell also has the empty key. These constants,
+linear aliases, and the signed quadratic contribution must be coalesced
+together BEFORE absolute values. Coalescing only within the quadratic
+part can miss the primary linear-minus-quadratic cancellation.
+
+Let P_B denote all actual primes occurring in query indices through
+B=max(H,K). After exact reduction, write
+
+ c_j(r)=sum_(F subset P_B)a_(j,F)(r)*prod_(v in F)x_v, (3)
+
+where the actual assignment is x_v=-1 for every actual prime. There are
+only finitely many nonzero keys. All coefficients remain affine in r.
+Equality of (3) with (1) is certified by squarefree factorization, prime
+set comparison and exact rational summation; it does not require an
+observed source prefix. The product of the certified key primes must
+equal m*ell/g^2, and every omitted term must have a proved zero factor.
+
+The reduction is also valid for formal x_v in{-1,1}. This broader class
+is useful to prove envelopes; it must not be confused with a claim that
+actual Mobius prime signs are random or unspecified.
+
+2. Conditioning is an exact signed projection and an L1 contraction
+--------------------------------------------------------------------
+Choose an explicitly specified set S of actual primes. Extra primes not
+in P_B have no effect. Substituting x_v=-1 for v in S gives
+
+ b_(j,U)(r)=sum_(F: F\\S=U)(-1)^|F intersect S|a_(j,F)(r),
+ c_j(r)=sum_(U subset(P_B\\S))b_(j,U)(r)*prod_(v in U)x_v. (4)
+
+The complete positive price
+
+ E_(j,S)(r)=sum_U |b_(j,U)(r)|                       (5)
+
+bounds |c_j(r)| at the actual remaining signs. Thus sum_j E_(j,S)
+bounds the entire repair L1, with every unit and channel present. The
+same prime variable is used at every j; replacing it by independent
+row-specific signs is only a weaker optional relaxation.
+
+If S is enlarged, (5) cannot increase: new coefficients are signed sums
+of old ones, and triangle inequality proves the contraction. This is a
+theorem about SYMBOLIC coefficient L1, not a theorem about its dependence
+on N. It may strictly decrease or remain unchanged. Keeping only the
+signed coefficient sum rather than the sum of absolute combined
+coefficients would be invalid unless every remaining prime is fixed.
+
+For each fixed S and N,y, E_(j,S)(r) is convex in r. Since r=(p/q)^t
+lies in[p/q,1] for 0<t<1, exact endpoint prices at p/q and1 bound the
+whole t interval. This is not two sampled-t verification. Complete
+endpoint coefficient lists must be interpolated and source-bound, and
+the same declared conditioning rule must apply throughout that interval.
+If independent endpoint lists are used, their union and every added
+horizon must be retained as in062. Different thresholds or different
+fill selection across N are allowed only as an explicit fixed algorithm,
+not as an unreported global polynomial winner.
+
+Squareful rows of the ORIGINAL source and registered-prime masks remain
+subject to their original whole-certificate admission. The absence of a
+formal monomial after squarefree reduction does not license dropping a
+nonzero original row, tail, or residual. The old source binding and the
+new symbolic price have distinct roles.
+
+3. Query exponents and a useful large-prime degree gate
+-------------------------------------------------------
+For H=floor(N^eta), rational eta in[0,1], the063 proof gives
+
+ B<=max(N^eta,(4/p)N^(1-eta))=O(N^max(eta,1-eta)).   (6)
+
+The minimal query exponent is1/2 at eta1/2. Every key prime is <=B, but
+a composite key can reach HK<D=O(N) when a nonzero long part exists.
+Reducing to that key does not require a new current-scale mu table if
+its factorization is inherited and independently checked. Conversely a
+checker that explicitly queries mu at the key must account for that
+larger query. The composite-size and prime-factor-size claims must not
+be interchanged.
+
+A conditioning rule can use all actual primes <=floor(B^xi), optionally
+unioned with registered primes, for any budgeted nonnegative rational
+xi. The algebra needs no denominator whitelist. Exact floors/power
+thresholds, primality and integer/bit capacities are still charged; a
+large exponent or denominator is not a free computation. For xi>=1
+all relevant primes are fixed. The resulting envelope equals the exact
+finite value |c_j|, rather than proving an all-scale growth theorem.
+
+There is a strong source-free simplification at xi>=1/2. Every query
+integer m<=B has at most ONE prime factor exceeding floor(sqrt B): two
+such primes would have product>B. Thus after conditioning those small
+primes, each mu(m) is either zero, an actual known constant, or a known
+constant times one remaining large-prime variable. Every coefficient
+(1) becomes a polynomial of degree at most TWO in these remaining
+large-prime variables. Its diagonal terms are again constants. This is
+a valid graph/tensor simplification, not an assumed large-prime mean.
+
+More generally, if the unconditioned primes all exceed a cutoff C and
+the surviving key has d primes, then (C+1)^d<=key. This exact necessary
+inequality provides a degree gate for arbitrary rational cutoffs. One
+must keep constants and strict/floor boundaries rather than infer a
+degree only from approximate logarithmic exponents.
+
+4. What additional universal norms can and cannot certify
+---------------------------------------------------------
+The Fourier L1 price (5) is a universally valid bound over every
+remaining sign assignment. Coalescing improves it; it need not equal
+the optimal worst-case value because overlapping keys cannot all choose
+their signs independently. Further exact factorization, cancellation or
+a certified matrix norm can sometimes improve that positive route.
+
+For example, in the large-prime degree-two case write a row as
+b+v^T x+x^T A x, putting diagonal constants into b. Since ||x||_2^2=n,
+a certified operator-norm bound gives
+|c_j|<=|b|+sqrt(n)||v||_2+n||A||_op. This is a sufficient alternative
+envelope, not a free rate estimate for its actual coefficient tensors.
+The source-free Frobenius bound is another conservative choice.
+
+There are exact finite lower guards for any proposed free-sign envelope.
+Orthogonality of distinct parity characters, averaged over all formal
+sign assignments, gives average |c_j|^2=sum_U b_(j,U)^2. Therefore a
+uniform worst-case upper bound on a row cannot be smaller than that
+coefficient L2 norm. Similarly a worst-case upper bound on sum_j|c_j|
+cannot be smaller than sqrt(sum_(j,U)b_(j,U)^2). These averages are
+finite algebraic identities, not probabilistic assumptions about mu.
+They can falsify an envelope argument even though they need not refute
+the actual Mobius bound.
+
+When all primes are conditioned, evaluation becomes exact finite
+arithmetic in the smaller indices. The outstanding theorem is still
+the growth of sum_j|c_j| for every N and required prefix. A table of
+such evaluations, however long, is not its proof. Partial conditioning
+instead seeks a stronger WORST-CASE theorem; loss of actual arithmetic
+relations can make that stronger theorem false.
+
+5. A proved countermodel for a scoped raw-indicator relaxation
+-------------------------------------------------------------
+This example rigorously shows a potential loss; it does NOT refute the
+joined W/core-fill family, a growing conditioning rule, or RH. Take the
+RAW repair of the single indicator 1[d<=T], H=floor(sqrt T),
+K=floor(T/(H+1)). For sufficiently large integer T, its exact factored
+coefficient at floor horizon1 is the following polynomial in small
+mu inputs, directly from063 inverse (1):
+
+ c_1=sum_(m<=H)mu(m)-sum_(m<=floor(H/2))mu(m)
+     -sum_(m<=H,ell<=K)mu(m)mu(ell)floor(T/(m ell))
+     +sum_(m<=floor(H/2),ell<=K)mu(m)mu(ell)
+                                      floor(T/(2m ell)). (7)
+
+At the actual assignment this is M_0(T)-M_0(floor(T/2)). Fix ANY finite
+set S of conditioned primes, and give every other prime sign +1. The
+corresponding allowed squarefree parity values are
+
+ chi_S(n)=mu(n)^2*(-1)^#{v in S: v divides n}.        (8)
+
+This assignment respects the squarefree masks, all gcd/parity reductions,
+unit, and the stated conditioning. It need not satisfy the actual
+mu*One=delta source law. That is precisely a relation the free-sign
+envelope has discarded; the envelope must still bound this evaluation
+of its polynomial, not only actual source-bound completions.
+
+Here is an elementary proof of its harmonic growth, with no prime-gap,
+RH or distribution premise. Squarefree counting satisfies
+
+ sum_(n<=x)mu(n)^2=c_0*x+O(sqrt x),
+ c_0=sum_(d>=1)mu(d)/d^2>0.
+
+Expand mu(n)^2=sum_(d^2|n)mu(d), count multiples, and bound the floor
+errors and absolute reciprocal-square tail to prove the formula. The
+explicit bound c_0>=1-sum_(d>=2)d^-2>=1/4 suffices; the last sum is
+at most1/4+integral_2^infinity u^-2 du=3/4.
+
+For v in S let b_S(v^e)=2*(-1)^e for e>=1, with local constant1;
+outside S its higher local coefficients are zero. The exact local
+product (1+z)*(1-z)/(1+z)=1-z proves chi_S=mu^2*b_S,
+where mu^2 here denotes the POINTWISE squarefree indicator sequence,
+not the Dirichlet convolution mu*mu.
+Moreover sum_n|b_S(n)|/sqrt n is a finite product of convergent
+geometric series, since S is fixed and finite. Summing this convolution
+and extending the main coefficient tail therefore gives
+
+ sum_(n<=x)chi_S(n)=c_S*x+O_S(sqrt x),
+ c_S=c_0*product_(v in S)(v-1)/(v+1)>0.             (9)
+
+Partial summation yields
+A_S(x)=sum_(n<=x)chi_S(n)/n=c_S*log x+O_S(1).
+The density error integrates absolutely against x^-2. The constants
+here are not asserted uniform when S grows with N.
+
+Evaluate (7) at (8). Each floor equals its argument plus an error
+of absolute value<=1; there are at most HK and floor(H/2)K terms.
+The linear part is O(H), and hence
+
+ c_1(chi_S)=-T*[A_S(H)-A_S(floor(H/2))/2]*A_S(K)+O(T)
+          =-(c_S^2/8)*T*(log T)^2+O_S(T log T).     (10)
+
+Thus the conditioned parity-L1 envelope for this raw-indicator row is
+at least a positive constant times T log^2 T eventually, for EVERY
+fixed finite S. It cannot have a square-root/polylog uniform rate.
+This is a rigorous obstruction to that particular stronger proof
+route, not a lower bound for the actual Mobius coefficient.
+
+The example also explains why smaller queried indices are insufficient:
+all inputs in (7) are O(sqrt T), yet current-scale weights make the
+relaxed quadratic cost large. Actual mu cancellation has been replaced
+by a much larger squarefree multiplicative-sign class. None of this
+licenses a conclusion for an uncancelled subblock of the real joined
+coefficient: other linear/quadratic pieces may cancel it. A gate for
+an actual candidate must evaluate the COMPLETE polynomial at its
+counterassignment, including source masks, signed channels and unit.
+
+Growing S is a separate case. In (9) c_S may shrink and the error
+constants depend on S; inserting S(N) into (10) without controlling
+both is invalid. No obstruction for every growing conditioning scheme
+is established here. Fully conditioned evaluation also falls outside
+this fixed-S countermodel.
+
+6. Concrete next arithmetic leaf and admission guards
+------------------------------------------------------
+The next uniform premise is the actual conditionally coalesced budget
+
+ max_(r=p/q,1) sum_(j,U)|b_(j,U)(r)|
+                 <=C_kappa*N^(1/2+kappa)*polylog N,
+
+for EVERY required integer N and prefix y, with a fixed declared fill,
+conditioning and rearrangement algorithm. Add the063 paid generic
+long coefficient mass, then the062 full-prefix/core composition. A
+uniform theorem for every positive kappa would pay the original bridge
+in its licensed endpoint scope. This premise remains OPEN.
+
+Useful detector outputs include exact tensor provenance, factor/key
+proofs, every zero/constant alias, the conditioning projection, remaining
+degree, endpoint price, and a complete counterassignment if an envelope
+claim fails. Any new spectral, factorized or telescoping envelope must
+be accompanied by a proved coefficient-rate rule; the finite norm alone
+does not establish that rate. Nonlinear winner selection is recorded
+separately from one fixed branch's polynomial formula.
+
+If a finite-prime relaxation is too strong, a genuine next route must
+retain further actual source laws: complete divisor convolution, shared
+cofactor/prime-entry constraints, or a proved signed correlation with
+all exits. Assuming a Mertens/RH bound on the resulting quadratic
+companion just restates the unpaid source leaf. Conversely proving a
+uniform sign-relaxed envelope would be legitimate substantive progress
+if it actually succeeds; this review does not rule it out for the
+joined family.
+
+Disposition: source-only review complete; edits stopped. No scientific
+computation, test, candidate enumeration or old-file edit was performed.

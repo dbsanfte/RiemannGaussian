@@ -1,0 +1,4011 @@
+{
+  "RH_proved": false,
+  "analytical_reviews": [
+    "commutator_uniform_attempt_001.txt",
+    "prime_bank_uniform_attempt_001.txt",
+    "divisor_transport_uniform_attempt_001.txt",
+    "arithmetic_prefix_recovery_review.txt",
+    "residual_observer_bridge_review.txt",
+    "reversible_divisor_circuit_review.txt",
+    "reversible_circuit_review_simple_001.txt",
+    "reversible_circuit_review_interleaved_001.txt",
+    "reversible_circuit_review_deep_001.txt",
+    "dyadic_permutation_recovery_note.txt",
+    "fractional_circuit_majorant_note.txt"
+  ],
+  "audit_allocation_addendum": {
+    "actual_research_runs": 1,
+    "audit_is_continued_not_restarted": true,
+    "first_uncompleted_final_row": 24,
+    "numerical_candidates_or_responses_changed": false,
+    "original_phase_allocation_changed": true,
+    "original_receipt": "independent_verification.json",
+    "previously_checked_moments_recomputed": false,
+    "prior_cumulative_operations": 307518179,
+    "reason": "original independent phase allocation exhausted with three final control rows incomplete",
+    "remaining_original_total_allowance": 142481821,
+    "rows_to_complete": [
+      {
+        "id": 34,
+        "source": "partial_prime_13"
+      },
+      {
+        "id": 59,
+        "source": "partial_prime_13"
+      },
+      {
+        "id": 53,
+        "source": "partial_prime_13"
+      }
+    ],
+    "schema": "reversible-circuit-audit-allocation-addendum-v1",
+    "scores_and_receipt_metadata_rechecked": true,
+    "total_ceiling_unchanged": 450000000
+  },
+  "candidates": [
+    {
+      "family": "baseline",
+      "id": 0,
+      "initial_cost": "9638727915079980640136177161/5213096522073683233230240000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": []
+        },
+        "recovery_power": 0,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "671917/12582912",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 8192,
+              "energy": "1345051/33554432",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 12288,
+              "energy": "8809085/150994944",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 16384,
+              "energy": "1717423/33554432",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "11929/6144",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "2869/4096",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "755/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "453/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "13741/6144",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "3171/4096",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "755/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "453/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "5587/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "453/512",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "755/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "453/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "151/48",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "1963/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "453/1024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "453/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "528427009/36864",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 8192,
+              "energy": "313150123/16384",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 12288,
+              "energy": "2113818625/73728",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 16384,
+              "energy": "1252649643/32768",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "11929/6144",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "2869/4096",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "755/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "453/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "13741/6144",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "3171/4096",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "755/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "453/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "5587/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "453/512",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "755/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "453/2048",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "151/48",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "1963/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "453/1024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "453/2048",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "684811703/37748736",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 8192,
+              "energy": "772094967/33554432",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 12288,
+              "energy": "5131136677/150994944",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            },
+            {
+              "X": 16384,
+              "energy": "3102971169/67108864",
+              "ratio_decimal": 1.0,
+              "ratio_to_baseline": "1"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": []
+      },
+      "recovery_power": 0,
+      "training_constants": {
+        "12": "151/2048",
+        "2": "151/6144",
+        "3": "151/4096",
+        "6": "151/2048"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "single_convolution",
+      "id": 11,
+      "initial_cost": "158317049338451317739498895911/82219053560878451185633665000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "-1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "199710075338342989648529/2832941381421350705430528",
+              "ratio_decimal": 1.3201640963149914,
+              "ratio_to_baseline": "399420150676685979297058/302553411194561275154871"
+            },
+            {
+              "X": 8192,
+              "energy": "32535848489241502593227/629542529204744601206784",
+              "ratio_decimal": 1.289282840093551,
+              "ratio_to_baseline": "260286787913932020745816/201884939300863964700171"
+            },
+            {
+              "X": 12288,
+              "energy": "16239701375782956610814365/203971779462337250790998016",
+              "ratio_decimal": 1.3647074394271201,
+              "ratio_to_baseline": "3247940275156591322162873/2379953520675477903265713"
+            },
+            {
+              "X": 16384,
+              "energy": "25354976745518203952689313/362616496821932890295107584",
+              "ratio_decimal": 1.3661181945248166,
+              "ratio_to_baseline": "25354976745518203952689313/18559870476168824739733176"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "1162184879/816293376",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "279512819/544195584",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "73556005/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "14711201/90699264",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "1338719291/816293376",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "102978407/181398528",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "73556005/272097792",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "14711201/90699264",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "544314437/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "14711201/22674816",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "73556005/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "14711201/90699264",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/6377292",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "191245613/272097792",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/45349632",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/90699264",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "30202462613554463808240370811/2832941381421350705430528",
+              "ratio_decimal": 0.7437418458892229,
+              "ratio_to_baseline": "30202462613554463808240370811/40608798308832804959057453568"
+            },
+            {
+              "X": 8192,
+              "energy": "143182615536130327617587454599/10072680467275913619308544",
+              "ratio_decimal": 0.7437253538284097,
+              "ratio_to_baseline": "143182615536130327617587454599/192520820756051625050283552768"
+            },
+            {
+              "X": 12288,
+              "energy": "2174654858955267526114850719601/101985889731168625395499008",
+              "ratio_decimal": 0.743729457700813,
+              "ratio_to_baseline": "2174654858955267526114850719601/2923986452920742233298798208000"
+            },
+            {
+              "X": 16384,
+              "energy": "10309470988969785580669103620211/362616496821932890295107584",
+              "ratio_decimal": 0.7437194490692801,
+              "ratio_to_baseline": "10309470988969785580669103620211/13862043008114772631778707267584"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "1162184879/816293376",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "279512819/544195584",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "73556005/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "14711201/90699264",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "1338719291/816293376",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "102978407/181398528",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "73556005/272097792",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "14711201/90699264",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "544314437/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "14711201/22674816",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "73556005/272097792",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "14711201/90699264",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/6377292",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "191245613/272097792",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/45349632",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "14711201/90699264",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "36142363309357272435284687/2832941381421350705430528",
+              "ratio_decimal": 0.7032507425421399,
+              "ratio_to_baseline": "72284726618714544870569374/102786562808901878841513063"
+            },
+            {
+              "X": 8192,
+              "energy": "41063944256676608227790975/2518170116818978404827136",
+              "ratio_decimal": 0.708687489175408,
+              "ratio_to_baseline": "82127888513353216455581950/115887312486513571527524007"
+            },
+            {
+              "X": 12288,
+              "energy": "5025569320027838001850066429/203971779462337250790998016",
+              "ratio_decimal": 0.7250434031159693,
+              "ratio_to_baseline": "5025569320027838001850066429/6931404793740338800198748253"
+            },
+            {
+              "X": 16384,
+              "energy": "12349293586112887559279752217/362616496821932890295107584",
+              "ratio_decimal": 0.7365406222659495,
+              "ratio_to_baseline": "12349293586112887559279752217/16766615734133688888528328164"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "-1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 1,
+      "training_constants": {
+        "12": "14711201/272097792",
+        "2": "14711201/816293376",
+        "3": "14711201/544195584",
+        "6": "14711201/272097792"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "single_convolution",
+      "id": 12,
+      "initial_cost": "3219707668666863145472901327079501/1724258526133033656608540118220800",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "-1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "24292328025910900501152052561241497201/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.1410043036938509,
+              "ratio_to_baseline": "24292328025910900501152052561241497201/21290303592429665810157212141139001344"
+            },
+            {
+              "X": 8192,
+              "energy": "15968768810213195361494763561723684685/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.1240553868379508,
+              "ratio_to_baseline": "15968768810213195361494763561723684685/14206389646985721166760065279715180544"
+            },
+            {
+              "X": 12288,
+              "energy": "15539611008089725364470602468200713710793/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.1598501422836642,
+              "ratio_to_baseline": "15539611008089725364470602468200713710793/13397947236091477915987986262421730754560"
+            },
+            {
+              "X": 16384,
+              "energy": "24297754678899008882555346956504494794413/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.1627635753533878,
+              "ratio_to_baseline": "24297754678899008882555346956504494794413/20896556440129647314707337100974383693824"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "165715042474579/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "39855516544519/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "190886947660591/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "14683611358507/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "77613374323537/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2097658765501/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "27269563951513/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "4910228732479971168473044614997945382694313/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.8591555283785122,
+              "ratio_to_baseline": "4910228732479971168473044614997945382694313/5715180279113220267412631783328924045410304"
+            },
+            {
+              "X": 8192,
+              "energy": "5819614552435819495647196091909784264463921/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.8591454844038332,
+              "ratio_to_baseline": "5819614552435819495647196091909784264463921/6773724192328251176375273182537730255486976"
+            },
+            {
+              "X": 12288,
+              "energy": "5656836475852583850406288265960169157623179305/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.8591490012900141,
+              "ratio_to_baseline": "1131367295170516770081257653192033831524635861/1316846429981023306730893790356533995687116800"
+            },
+            {
+              "X": 16384,
+              "energy": "13408879876093562930754066804938543652609391181/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.8591430376695441,
+              "ratio_to_baseline": "13408879876093562930754066804938543652609391181/15607272931484869871000721299454243879744700416"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "165715042474579/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "39855516544519/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "190886947660591/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "14683611358507/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "77613374323537/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2097658765501/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "10488293827505/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "27269563951513/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "6043370768270869482339519951034743122545/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.8355320153828341,
+              "ratio_to_baseline": "6043370768270869482339519951034743122545/7232961343201009128198192705401448824832"
+            },
+            {
+              "X": 8192,
+              "energy": "6835879978042465209315565351841253876301/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.8382599883816002,
+              "ratio_to_baseline": "6835879978042465209315565351841253876301/8154844645800480452949972974303233179648"
+            },
+            {
+              "X": 12288,
+              "energy": "6614005830403764041238899150935963797112009/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.8475074564452706,
+              "ratio_to_baseline": "6614005830403764041238899150935963797112009/7804068011560764876472582680549034265935872"
+            },
+            {
+              "X": 16384,
+              "energy": "16125562975176413379748539499236707586384557/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.854219913378784,
+              "ratio_to_baseline": "16125562975176413379748539499236707586384557/18877531093127194127385954624192046574862336"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "-1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 1,
+      "training_constants": {
+        "12": "2097658765501/35664401793024",
+        "2": "2097658765501/106993205379072",
+        "3": "2097658765501/71328803586048",
+        "6": "2097658765501/35664401793024"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "modulated_input",
+      "id": 28,
+      "initial_cost": "3219707668666863145472901327079501/1724258526133033656608540118220800",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "op": "sign",
+              "phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  6
+                ]
+              ]
+            },
+            {
+              "alpha": "-1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "20165513855322413066483596331861057137/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.9471689197749532,
+              "ratio_to_baseline": "20165513855322413066483596331861057137/21290303592429665810157212141139001344"
+            },
+            {
+              "X": 8192,
+              "energy": "13926258939520970796981439308170864461/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.9802813582883679,
+              "ratio_to_baseline": "13926258939520970796981439308170864461/14206389646985721166760065279715180544"
+            },
+            {
+              "X": 12288,
+              "energy": "12235180723341305964333105832122141359305/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.9132130846419589,
+              "ratio_to_baseline": "2447036144668261192866621166424428271861/2679589447218295583197597252484346150912"
+            },
+            {
+              "X": 16384,
+              "energy": "19338739504263313846983299532232630630061/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.925451021543688,
+              "ratio_to_baseline": "19338739504263313846983299532232630630061/20896556440129647314707337100974383693824"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "165715042474579/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "536584961542471807/739537035580145664",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "190886947660591/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "197689196357752771/246512345193381888",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "77613374323537/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "28241313765393253/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "367137078950112289/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "28241313765393253/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "4910228732479971168473044614997945382694313/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.8591555283785122,
+              "ratio_to_baseline": "4910228732479971168473044614997945382694313/5715180279113220267412631783328924045410304"
+            },
+            {
+              "X": 8192,
+              "energy": "5819614552435819495647196091909784264463921/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.8591454844038332,
+              "ratio_to_baseline": "5819614552435819495647196091909784264463921/6773724192328251176375273182537730255486976"
+            },
+            {
+              "X": 12288,
+              "energy": "5656836475852583850406288265960169157623179305/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.8591490012900141,
+              "ratio_to_baseline": "1131367295170516770081257653192033831524635861/1316846429981023306730893790356533995687116800"
+            },
+            {
+              "X": 16384,
+              "energy": "13408879876093562930754066804938543652609391181/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.8591430376695441,
+              "ratio_to_baseline": "13408879876093562930754066804938543652609391181/15607272931484869871000721299454243879744700416"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "165715042474579/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "536584961542471807/739537035580145664",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "190886947660591/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "197689196357752771/246512345193381888",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "77613374323537/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "28241313765393253/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "141206568826966265/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2097658765501/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "367137078950112289/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "28241313765393253/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "28241313765393253/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "7482823062049305823365413513260656372337/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.03454487131791,
+              "ratio_to_baseline": "7482823062049305823365413513260656372337/7232961343201009128198192705401448824832"
+            },
+            {
+              "X": 8192,
+              "energy": "7881367953278407115475775068204350251597/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.9664645122745648,
+              "ratio_to_baseline": "7881367953278407115475775068204350251597/8154844645800480452949972974303233179648"
+            },
+            {
+              "X": 12288,
+              "energy": "8591459711677120899909539209411018967741641/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.1008950330712048,
+              "ratio_to_baseline": "8591459711677120899909539209411018967741641/7804068011560764876472582680549034265935872"
+            },
+            {
+              "X": 16384,
+              "energy": "21118477589323910175870595848065923537212077/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.1187097234877597,
+              "ratio_to_baseline": "21118477589323910175870595848065923537212077/18877531093127194127385954624192046574862336"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "op": "sign",
+            "phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                6
+              ]
+            ]
+          },
+          {
+            "alpha": "-1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 1,
+      "training_constants": {
+        "12": "28241313765393253/369768517790072832",
+        "2": "2097658765501/106993205379072",
+        "3": "28241313765393253/739537035580145664",
+        "6": "28241313765393253/369768517790072832"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "modulated_input",
+      "id": 29,
+      "initial_cost": "83608064938121628089651592429623317/43106463153325841415213502955520000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "op": "sign",
+              "phase": [
+                "parity",
+                [
+                  "root",
+                  2,
+                  3
+                ]
+              ]
+            },
+            {
+              "alpha": "1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 1,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "21561376495814803354279177387034366593/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.0127322234841933,
+              "ratio_to_baseline": "21561376495814803354279177387034366593/21290303592429665810157212141139001344"
+            },
+            {
+              "X": 8192,
+              "energy": "14387993743342495549448604675537565645/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.0127832687170668,
+              "ratio_to_baseline": "14387993743342495549448604675537565645/14206389646985721166760065279715180544"
+            },
+            {
+              "X": 12288,
+              "energy": "13525857803038499314849027539034532234545/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.0095470272193978,
+              "ratio_to_baseline": "2705171560607699862969805507806906446909/2679589447218295583197597252484346150912"
+            },
+            {
+              "X": 16384,
+              "energy": "21144766088405643261672344149478654223701/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.0118780167912897,
+              "ratio_to_baseline": "21144766088405643261672344149478654223701/20896556440129647314707337100974383693824"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "211548965009875/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "50878865002375/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "243682985011375/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "18744845000875/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "99079895004625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2677835000125/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "34811855001625/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "5740281516369101840391348723192200936445673/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.0043920289527204,
+              "ratio_to_baseline": "521843774215372894581031702108381903313243/519561843555747297037511980302629458673664"
+            },
+            {
+              "X": 8192,
+              "energy": "6813815040891820838409948817043345086240009/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.0059185829575075,
+              "ratio_to_baseline": "6813815040891820838409948817043345086240009/6773724192328251176375273182537730255486976"
+            },
+            {
+              "X": 12288,
+              "energy": "6619380212898509988200193103585148545106646097/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.0053382174554553,
+              "ratio_to_baseline": "6619380212898509988200193103585148545106646097/6584232149905116533654468951782669978435584000"
+            },
+            {
+              "X": 16384,
+              "energy": "15683376821442589563230390112068098011971299445/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.0048761811427154,
+              "ratio_to_baseline": "2240482403063227080461484301724014001710185635/2229610418783552838714388757064891982820671488"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "211548965009875/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "50878865002375/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "243682985011375/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "18744845000875/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "99079895004625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2677835000125/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "13389175000625/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "34811855001625/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2677835000125/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "7280938086997325377560417079226628783745/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.0066330706773947,
+              "ratio_to_baseline": "7280938086997325377560417079226628783745/7232961343201009128198192705401448824832"
+            },
+            {
+              "X": 8192,
+              "energy": "8205766579848428459726165964800187740365/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.0062443781898618,
+              "ratio_to_baseline": "8205766579848428459726165964800187740365/8154844645800480452949972974303233179648"
+            },
+            {
+              "X": 12288,
+              "energy": "7849777909649372304592841768832385625480497/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.0058571885868874,
+              "ratio_to_baseline": "7849777909649372304592841768832385625480497/7804068011560764876472582680549034265935872"
+            },
+            {
+              "X": 16384,
+              "energy": "18965683009603740866140166136045346187188565/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.00466967401837,
+              "ratio_to_baseline": "18965683009603740866140166136045346187188565/18877531093127194127385954624192046574862336"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "op": "sign",
+            "phase": [
+              "parity",
+              [
+                "root",
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "alpha": "1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 1,
+      "training_constants": {
+        "12": "2677835000125/35664401793024",
+        "2": "2677835000125/106993205379072",
+        "3": "2677835000125/71328803586048",
+        "6": "2677835000125/35664401793024"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "interleaved",
+      "id": 42,
+      "initial_cost": "2480719839486206157535510291721/1193258495593794918068193853440",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1,
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "-1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                3,
+                [
+                  1
+                ]
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "alpha": "1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                3,
+                [
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 2,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "31889236724120833885943831408179932913/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.4978291213968362,
+              "ratio_to_baseline": "31889236724120833885943831408179932913/21290303592429665810157212141139001344"
+            },
+            {
+              "X": 8192,
+              "energy": "21318458662432700190141956132415512557/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.5006246620129837,
+              "ratio_to_baseline": "21318458662432700190141956132415512557/14206389646985721166760065279715180544"
+            },
+            {
+              "X": 12288,
+              "energy": "20560117732065515977125789726964367813833/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.5345722273543918,
+              "ratio_to_baseline": "20560117732065515977125789726964367813833/13397947236091477915987986262421730754560"
+            },
+            {
+              "X": 16384,
+              "energy": "32966688216771197822439574583066218901933/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.5776134365115837,
+              "ratio_to_baseline": "32966688216771197822439574583066218901933/20896556440129647314707337100974383693824"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "151270188226879/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "407325308178026335/739537035580145664",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "174247938337291/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "150067218802430755/246512345193381888",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "70848062840437/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "21438174114632965/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "1914812509201/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "278696263490228545/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "21438174114632965/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "4967678584688796375192689196408501309910441/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.8692076788625104,
+              "ratio_to_baseline": "4967678584688796375192689196408501309910441/5715180279113220267412631783328924045410304"
+            },
+            {
+              "X": 8192,
+              "energy": "5887688773452417665809138187922622321555249/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.8691952323834893,
+              "ratio_to_baseline": "5887688773452417665809138187922622321555249/6773724192328251176375273182537730255486976"
+            },
+            {
+              "X": 12288,
+              "energy": "5722958123639037568420539911333422777078876201/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.8691914248074484,
+              "ratio_to_baseline": "5722958123639037568420539911333422777078876201/6584232149905116533654468951782669978435584000"
+            },
+            {
+              "X": 16384,
+              "energy": "13565849732700187635447728460651589972692972749/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.8692005190306836,
+              "ratio_to_baseline": "1937978533242883947921104065807369996098996107/2229610418783552838714388757064891982820671488"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "151270188226879/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "407325308178026335/739537035580145664",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "174247938337291/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "150067218802430755/246512345193381888",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "70848062840437/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "21438174114632965/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "107190870573164825/369768517790072832",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "1914812509201/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "278696263490228545/369768517790072832",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "21438174114632965/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "21438174114632965/123256172596690944",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "4966447184653450483360257872084171707369/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.6866409135895515,
+              "ratio_to_baseline": "4966447184653450483360257872084171707369/7232961343201009128198192705401448824832"
+            },
+            {
+              "X": 8192,
+              "energy": "5645678664683468623738190335669449392413/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.6923097753420523,
+              "ratio_to_baseline": "5645678664683468623738190335669449392413/8154844645800480452949972974303233179648"
+            },
+            {
+              "X": 12288,
+              "energy": "5514461698108918025563457850859629463678969/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.706613741697269,
+              "ratio_to_baseline": "5514461698108918025563457850859629463678969/7804068011560764876472582680549034265935872"
+            },
+            {
+              "X": 16384,
+              "energy": "13521452704102901436570151841372630058461789/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.7162723047520606,
+              "ratio_to_baseline": "13521452704102901436570151841372630058461789/18877531093127194127385954624192046574862336"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "-1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              3,
+              [
+                1
+              ]
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "alpha": "1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              3,
+              [
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 2,
+      "training_constants": {
+        "12": "21438174114632965/369768517790072832",
+        "2": "1914812509201/106993205379072",
+        "3": "21438174114632965/739537035580145664",
+        "6": "21438174114632965/369768517790072832"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "interleaved",
+      "id": 34,
+      "initial_cost": "5819615430125479759996344440029933/2694153947082865088450843934720000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1,
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "-1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "alpha": "1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 2,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "535723759940614888438750338942131617/6229703979361158797296971448326291456",
+              "ratio_decimal": 1.6104195267741868,
+              "ratio_to_baseline": "535723759940614888438750338942131617/332660993631713528283706439705296896"
+            },
+            {
+              "X": 8192,
+              "energy": "11195071474800150227233023381940396961/177200468746272961345336076752392290304",
+              "ratio_decimal": 1.576061441785879,
+              "ratio_to_baseline": "11195071474800150227233023381940396961/7103194823492860583380032639857590272"
+            },
+            {
+              "X": 12288,
+              "energy": "5596419556975824899505318566502898969921/57412951873792439475888888867775102058496",
+              "ratio_decimal": 1.670828958603495,
+              "ratio_to_baseline": "5596419556975824899505318566502898969921/3349486809022869478996996565605432688640"
+            },
+            {
+              "X": 16384,
+              "energy": "8950455469856395284467296222949006653781/102067469997853225734913580209377959215104",
+              "ratio_decimal": 1.7132881191214804,
+              "ratio_to_baseline": "8950455469856395284467296222949006653781/5224139110032411828676834275243595923456"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "20197552014467/13374150672384",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "102477855690157051/184884258895036416",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "23265534598943/13374150672384",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "37754999464794703/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "9459612968801/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "5393571352113529/7703510787293184",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "255665215373/104485552128",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "70116427577475877/92442129447518208",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "5393571352113529/15407021574586368",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "234188874720717501017017247671/22663531051370805643444224",
+              "ratio_decimal": 0.7208686432300164,
+              "ratio_to_baseline": "234188874720717501017017247671/324870386470662439672459628544"
+            },
+            {
+              "X": 8192,
+              "energy": "8882054469158614481936052541553/644651549905658471635746816",
+              "ratio_decimal": 0.7208680107200349,
+              "ratio_to_baseline": "8882054469158614481936052541553/12321332528387304003218147377152"
+            },
+            {
+              "X": 12288,
+              "energy": "269799002277042001245663317097961/13054193885589584050623873024",
+              "ratio_decimal": 0.7208667821234003,
+              "ratio_to_baseline": "269799002277042001245663317097961/374270265973855005862246170624000"
+            },
+            {
+              "X": 16384,
+              "energy": "639528781425925696369936696758761/23207455796603704978886885376",
+              "ratio_decimal": 0.7208632381194062,
+              "ratio_to_baseline": "639528781425925696369936696758761/887170752519345448433837265125376"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "20197552014467/13374150672384",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "102477855690157051/184884258895036416",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "23265534598943/13374150672384",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "37754999464794703/61628086298345472",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "9459612968801/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "5393571352113529/7703510787293184",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "26967856760567645/92442129447518208",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "255665215373/104485552128",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "70116427577475877/92442129447518208",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "5393571352113529/15407021574586368",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "5393571352113529/30814043149172736",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "1100697807179378134352957647557511823449/99675263669778540756751543173220663296",
+              "ratio_decimal": 0.6087121193943806,
+              "ratio_to_baseline": "1100697807179378134352957647557511823449/1808240335800252282049548176350362206208"
+            },
+            {
+              "X": 8192,
+              "energy": "1245032507234318929236976165222946690629/88600234373136480672668038376196145152",
+              "ratio_decimal": 0.6106958802093067,
+              "ratio_to_baseline": "1245032507234318929236976165222946690629/2038711161450120113237493243575808294912"
+            },
+            {
+              "X": 12288,
+              "energy": "1219826873738563471449495802923495929987641/57412951873792439475888888867775102058496",
+              "ratio_decimal": 0.6252261625252575,
+              "ratio_to_baseline": "1219826873738563471449495802923495929987641/1951017002890191219118145670137258566483968"
+            },
+            {
+              "X": 16384,
+              "energy": "3004565881422035099095769418158642576171657/102067469997853225734913580209377959215104",
+              "ratio_decimal": 0.63664382097422,
+              "ratio_to_baseline": "3004565881422035099095769418158642576171657/4719382773281798531846488656048011643715584"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "-1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "alpha": "1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 2,
+      "training_constants": {
+        "12": "5393571352113529/92442129447518208",
+        "2": "255665215373/13374150672384",
+        "3": "5393571352113529/184884258895036416",
+        "6": "5393571352113529/92442129447518208"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "double_interleaved",
+      "id": 59,
+      "initial_cost": "1305009405781530444682530649196582209/560384020993235938397775538421760000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1,
+          1,
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "-1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  3
+                ]
+              ]
+            },
+            {
+              "alpha": "-1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                5,
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "source_sign",
+                [
+                  "subtract_root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "alpha": "-1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 3,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "30540002949371110019832033697990303561/398701054679114163027006172692882653184",
+              "ratio_decimal": 1.4344559633348968,
+              "ratio_to_baseline": "30540002949371110019832033697990303561/21290303592429665810157212141139001344"
+            },
+            {
+              "X": 8192,
+              "energy": "19973389633807944876186457153339477997/354400937492545922690672153504784580608",
+              "ratio_decimal": 1.4059440948845052,
+              "ratio_to_baseline": "19973389633807944876186457153339477997/14206389646985721166760065279715180544"
+            },
+            {
+              "X": 12288,
+              "energy": "20008573828724391137471753994505116263497/229651807495169757903555555471100408233984",
+              "ratio_decimal": 1.4934059282473635,
+              "ratio_to_baseline": "20008573828724391137471753994505116263497/13397947236091477915987986262421730754560"
+            },
+            {
+              "X": 16384,
+              "energy": "31227545663896222767190436330201615263597/408269879991412902939654320837511836860416",
+              "ratio_decimal": 1.494387161509874,
+              "ratio_to_baseline": "31227545663896222767190436330201615263597/20896556440129647314707337100974383693824"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "174371704533671/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "41937498558731/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "200858545728659/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "15450657363743/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "81667760351213/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2207236766249/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "28694077961237/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "2841484087401694204988962878683925158092897/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.49718188204599995,
+              "ratio_to_baseline": "2841484087401694204988962878683925158092897/5715180279113220267412631783328924045410304"
+            },
+            {
+              "X": 8192,
+              "energy": "3367608504825048007775938896564570020632081/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.4971576062454855,
+              "ratio_to_baseline": "3367608504825048007775938896564570020632081/6773724192328251176375273182537730255486976"
+            },
+            {
+              "X": 12288,
+              "energy": "3273375250513568567519974313871459287203410985/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.49715368109563696,
+              "ratio_to_baseline": "654675050102713713503994862774291857440682197/1316846429981023306730893790356533995687116800"
+            },
+            {
+              "X": 16384,
+              "energy": "7759043649402341286101246068241161251522313037/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.49714281818893963,
+              "ratio_to_baseline": "7759043649402341286101246068241161251522313037/15607272931484869871000721299454243879744700416"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "174371704533671/106993205379072",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "41937498558731/71328803586048",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "200858545728659/106993205379072",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "15450657363743/23776267862016",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "81667760351213/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "2207236766249/2972033482752",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "11036183831245/35664401793024",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/835884417024",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "28694077961237/35664401793024",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/5944066965504",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "2207236766249/11888133931008",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "5121198001358163640480924915787115067729/398701054679114163027006172692882653184",
+              "ratio_decimal": 0.7080361360111643,
+              "ratio_to_baseline": "5121198001358163640480924915787115067729/7232961343201009128198192705401448824832"
+            },
+            {
+              "X": 8192,
+              "energy": "5851123858446923591250830752973211205117/354400937492545922690672153504784580608",
+              "ratio_decimal": 0.717502798960136,
+              "ratio_to_baseline": "5851123858446923591250830752973211205117/8154844645800480452949972974303233179648"
+            },
+            {
+              "X": 12288,
+              "energy": "5637621859416437421651559004544318499306393/229651807495169757903555555471100408233984",
+              "ratio_decimal": 0.7223952752673344,
+              "ratio_to_baseline": "5637621859416437421651559004544318499306393/7804068011560764876472582680549034265935872"
+            },
+            {
+              "X": 16384,
+              "energy": "13823379903026876470895152398017621208869693/408269879991412902939654320837511836860416",
+              "ratio_decimal": 0.7322663029838473,
+              "ratio_to_baseline": "13823379903026876470895152398017621208869693/18877531093127194127385954624192046574862336"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "-1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "alpha": "-1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              5,
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "source_sign",
+              [
+                "subtract_root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "alpha": "-1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 3,
+      "training_constants": {
+        "12": "2207236766249/35664401793024",
+        "2": "2207236766249/106993205379072",
+        "3": "2207236766249/71328803586048",
+        "6": "2207236766249/35664401793024"
+      },
+      "validation_failures": 0
+    },
+    {
+      "family": "double_interleaved",
+      "id": 53,
+      "initial_cost": "311179935591161486738549468118399961/140096005248308984599443884605440000",
+      "original_frozen_certificate": {
+        "bound": "(1+1/epsilon)^recovery_power",
+        "coefficient_binding": "same_fixed_source_in_all_stages_and_inverse",
+        "convolution_orders": [
+          1,
+          1,
+          1
+        ],
+        "domain": "discrete_weighted_l2_sigma_gt_half",
+        "program": {
+          "stages": [
+            {
+              "alpha": "1/6",
+              "op": "convolve",
+              "prime_phase": [
+                "parity",
+                [
+                  "root",
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "parity",
+                [
+                  "root",
+                  2,
+                  3
+                ]
+              ]
+            },
+            {
+              "alpha": "1/3",
+              "op": "convolve",
+              "prime_phase": [
+                "constant",
+                1
+              ]
+            },
+            {
+              "op": "sign",
+              "phase": [
+                "residue_sign",
+                [
+                  "n"
+                ],
+                7,
+                [
+                  1,
+                  2,
+                  4
+                ]
+              ]
+            },
+            {
+              "alpha": "-1/2",
+              "op": "convolve",
+              "prime_phase": [
+                "source_sign",
+                [
+                  "root",
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "recovery_power": 3,
+        "schema": "reversible-divisor-circuit-v1"
+      },
+      "outcomes": [
+        {
+          "comparisons": 16,
+          "failures": [],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "1632657306670652979109132505127282157/24918815917444635189187885793305165824",
+              "ratio_decimal": 1.2269677974915776,
+              "ratio_to_baseline": "1632657306670652979109132505127282157/1330643974526854113134825758821187584"
+            },
+            {
+              "X": 8192,
+              "energy": "8605522888632998871439737692577351293/177200468746272961345336076752392290304",
+              "ratio_decimal": 1.2115003322408378,
+              "ratio_to_baseline": "8605522888632998871439737692577351293/7103194823492860583380032639857590272"
+            },
+            {
+              "X": 12288,
+              "energy": "3958926785690097609927499528906397286025/57412951873792439475888888867775102058496",
+              "ratio_decimal": 1.1819502542973195,
+              "ratio_to_baseline": "791785357138019521985499905781279457205/669897361804573895799399313121086537728"
+            },
+            {
+              "X": 16384,
+              "energy": "6514070825783959221478664232301725481693/102067469997853225734913580209377959215104",
+              "ratio_decimal": 1.2469175664320211,
+              "ratio_to_baseline": "6514070825783959221478664232301725481693/5224139110032411828676834275243595923456"
+            }
+          ],
+          "passed": 16,
+          "source": "mu",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "35725113024319/13374150672384",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "8592115790659/8916100448256",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "452216620561/1486016741376",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "41151712471051/13374150672384",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "3165516343927/2972033482752",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "452216620561/1486016741376",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "16732014960757/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "452216620561/371504185344",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "452216620561/1486016741376",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/104485552128",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "5878816067293/4458050224128",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/743008370688",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/1486016741376",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "336740356598601195690423861882696899275573/24918815917444635189187885793305165824",
+              "ratio_decimal": 0.9427254159012476,
+              "ratio_to_baseline": "30612759690781926880947623807517899934143/32472615222234206064844498768914341167104"
+            },
+            {
+              "X": 8192,
+              "energy": "3206547755553991084237831408922882383700573/177200468746272961345336076752392290304",
+              "ratio_decimal": 0.9467606487980854,
+              "ratio_to_baseline": "3206547755553991084237831408922882383700573/3386862096164125588187636591268865127743488"
+            },
+            {
+              "X": 12288,
+              "energy": "1556642830096257075005271369868243911947845369/57412951873792439475888888867775102058496",
+              "ratio_decimal": 0.9456791891025224,
+              "ratio_to_baseline": "1556642830096257075005271369868243911947845369/1646058037476279133413617237945667494608896000"
+            },
+            {
+              "X": 16384,
+              "energy": "3689320561360996749393641639808187029716170861/102067469997853225734913580209377959215104",
+              "ratio_decimal": 0.9455388081074574,
+              "ratio_to_baseline": "3689320561360996749393641639808187029716170861/3901818232871217467750180324863560969936175104"
+            }
+          ],
+          "passed": 0,
+          "source": "one",
+          "status": "available"
+        },
+        {
+          "comparisons": 16,
+          "failures": [
+            {
+              "X": 6144,
+              "bound": "35725113024319/13374150672384",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 6144,
+              "bound": "8592115790659/8916100448256",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 6144,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 6144,
+              "bound": "452216620561/1486016741376",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 8192,
+              "bound": "41151712471051/13374150672384",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 8192,
+              "bound": "3165516343927/2972033482752",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 8192,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 8192,
+              "bound": "452216620561/1486016741376",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 12288,
+              "bound": "16732014960757/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 12288,
+              "bound": "452216620561/371504185344",
+              "dyadic": false,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 12288,
+              "bound": "2261083102805/4458050224128",
+              "dyadic": false,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 12288,
+              "bound": "452216620561/1486016741376",
+              "dyadic": false,
+              "passed": false,
+              "q": 12
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/104485552128",
+              "dyadic": true,
+              "passed": false,
+              "q": 2
+            },
+            {
+              "X": 16384,
+              "bound": "5878816067293/4458050224128",
+              "dyadic": true,
+              "passed": false,
+              "q": 3
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/743008370688",
+              "dyadic": true,
+              "passed": false,
+              "q": 6
+            },
+            {
+              "X": 16384,
+              "bound": "452216620561/1486016741376",
+              "dyadic": true,
+              "passed": false,
+              "q": 12
+            }
+          ],
+          "moments": [
+            {
+              "X": 6144,
+              "energy": "427431381577187347715288036133454834669/24918815917444635189187885793305165824",
+              "ratio_decimal": 0.9455189625288918,
+              "ratio_to_baseline": "427431381577187347715288036133454834669/452060083950063070512387044087590551552"
+            },
+            {
+              "X": 8192,
+              "energy": "3876169064576035628939905406440093109885/177200468746272961345336076752392290304",
+              "ratio_decimal": 0.9506420374475572,
+              "ratio_to_baseline": "3876169064576035628939905406440093109885/4077422322900240226474986487151616589824"
+            },
+            {
+              "X": 12288,
+              "energy": "1850583632409438813968037592399537889658505/57412951873792439475888888867775102058496",
+              "ratio_decimal": 0.94852255498954,
+              "ratio_to_baseline": "1850583632409438813968037592399537889658505/1951017002890191219118145670137258566483968"
+            },
+            {
+              "X": 16384,
+              "energy": "4475738685999948235986185204632731704310493/102067469997853225734913580209377959215104",
+              "ratio_decimal": 0.9483737389005166,
+              "ratio_to_baseline": "4475738685999948235986185204632731704310493/4719382773281798531846488656048011643715584"
+            }
+          ],
+          "passed": 0,
+          "source": "partial_prime_13",
+          "status": "available"
+        }
+      ],
+      "program": {
+        "stages": [
+          {
+            "alpha": "1/6",
+            "op": "convolve",
+            "prime_phase": [
+              "parity",
+              [
+                "root",
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "parity",
+              [
+                "root",
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "alpha": "1/3",
+            "op": "convolve",
+            "prime_phase": [
+              "constant",
+              1
+            ]
+          },
+          {
+            "op": "sign",
+            "phase": [
+              "residue_sign",
+              [
+                "n"
+              ],
+              7,
+              [
+                1,
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "alpha": "-1/2",
+            "op": "convolve",
+            "prime_phase": [
+              "source_sign",
+              [
+                "root",
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "recovery_power": 3,
+      "training_constants": {
+        "12": "452216620561/4458050224128",
+        "2": "452216620561/13374150672384",
+        "3": "452216620561/8916100448256",
+        "6": "452216620561/4458050224128"
+      },
+      "validation_failures": 0
+    }
+  ],
+  "complete_final_evaluations": 27,
+  "completed_independent_audit": {
+    "RH_proved": false,
+    "certificates_checked": 65,
+    "completed_rows": [
+      {
+        "id": 34,
+        "moments": 4,
+        "source": "partial_prime_13"
+      },
+      {
+        "id": 59,
+        "moments": 4,
+        "source": "partial_prime_13"
+      },
+      {
+        "id": 53,
+        "moments": 4,
+        "source": "partial_prime_13"
+      }
+    ],
+    "counts": {
+      "maximum_rational_bits": 144,
+      "operations": 39680081,
+      "peak_live_cells": 410112
+    },
+    "cumulative_operations": 347198260,
+    "elapsed_seconds": 61.138681101001566,
+    "finite_arithmetic_verified": true,
+    "global_bound_proved": false,
+    "moment_estimate_proved": false,
+    "original_checked_moments": 616,
+    "original_phase_allocation_changed": true,
+    "original_receipt_unchanged": true,
+    "peak_rss_kib": 517060,
+    "recovery_certificates_checked": true,
+    "scope": "same independent evaluator; three uncompleted control rows only, plus cheap receipt/score binding; original phase allocation explicitly amended within original total budget",
+    "status": "FINITE_EVALUATION_VERIFIED_WITH_ALLOCATION_ADDENDUM",
+    "total_moments_verified": 628
+  },
+  "cumulative_operations": 347198260,
+  "declared_ceiling": 450000000,
+  "final_bases": [
+    6144,
+    8192,
+    12288,
+    16384
+  ],
+  "finite_moments_verified": 628,
+  "generated": 64,
+  "global_bound_proved": false,
+  "interpretation": [
+    "Every selected actual-Mobius circuit passes all16 finite comparisons, as does the baseline.",
+    "Both control sources fail every frozen comparison, including baseline; this alone establishes no added operator information.",
+    "Circuit28 has modestly smaller raw moments on all four final blocks; inverse cost and its slow phase preclude calling this an RH bound or established gain.",
+    "Other selected raw moments exceed the baseline on these final blocks; the archive preserves structural alternatives for proof attempts.",
+    "Recovery is proved for the restricted fixed-circuit grammar; the source-specific cofinal moment estimate remains open.",
+    "Analytical refinements are recorded separately and do not rerank or change frozen selection, certificates, programs or results.",
+    "The dyadic-permutation rule is a proved proposed language extension only; this study did not evaluate permutation circuits.",
+    "Final arithmetic was excluded from this run selection, but source prefixes overlap earlier research; these are not globally unseen primes.",
+    "The original audit phase stopped at its215m allocation after616 moments; an append-only allocation addendum completed the three remaining control rows within the same450m total ceiling, without recomputing completed moments.",
+    "Root analytical review proves the general fractional-path majorant d_(sum abs alpha), which improves every selected circuit to integer recovery exponent1. This does not amend frozen certificates or rerank this study."
+  ],
+  "invalid": 0,
+  "missing": 0,
+  "moment_estimate_proved": false,
+  "original_independent_audit": {
+    "RH_proved": false,
+    "cases_verified": 616,
+    "certificates_checked": 65,
+    "counts": {
+      "maximum_rational_bits": 154,
+      "operations": 215000000,
+      "peak_live_cells": 410112
+    },
+    "elapsed_seconds": 335.1811276029912,
+    "error_type": "OverflowError",
+    "finite_arithmetic_verified": false,
+    "global_bound_proved": false,
+    "moment_estimate_proved": false,
+    "peak_rss_kib": 517060,
+    "reason": "shared exact evaluator operation cap",
+    "recovery_certificates_checked": false,
+    "status": "UNKNOWN"
+  },
+  "postprocess_operations_within_prepaid_root_reserve": 29313,
+  "preparation": {
+    "development": 281990,
+    "frozen": {
+      "test_check_reversible_divisor_circuits": 59051,
+      "test_reversible_circuit_discovery": 99529
+    },
+    "prefix_review": 4838,
+    "root_reserve": 1000000,
+    "total": 1445408
+  },
+  "producer": {
+    "RH_proved": false,
+    "cost": {
+      "cpu_seconds": 28.047166162,
+      "elapsed_seconds": 105.12720500401338,
+      "peak_rss_kib": 517060
+    },
+    "final_available": 27,
+    "final_invalid": 0,
+    "final_missing": 0,
+    "final_workers": [
+      {
+        "allocated": 51666667,
+        "counts": {
+          "maximum_rational_bits": 139,
+          "operations": 26479444,
+          "peak_live_cells": 593216
+        },
+        "cpu_seconds": 76.486322107,
+        "elapsed_seconds": 76.49686657899292,
+        "peak_rss_kib": 29476,
+        "source": "mu"
+      },
+      {
+        "allocated": 51666667,
+        "counts": {
+          "maximum_rational_bits": 154,
+          "operations": 25820672,
+          "peak_live_cells": 593216
+        },
+        "cpu_seconds": 74.10085971699999,
+        "elapsed_seconds": 74.11231337301433,
+        "peak_rss_kib": 30204,
+        "source": "one"
+      },
+      {
+        "allocated": 51666666,
+        "counts": {
+          "maximum_rational_bits": 144,
+          "operations": 26664500,
+          "peak_live_cells": 593216
+        },
+        "cpu_seconds": 76.75805786800001,
+        "elapsed_seconds": 76.76765308601898,
+        "peak_rss_kib": 30420,
+        "source": "partial_prime_13"
+      }
+    ],
+    "generated": 64,
+    "global_bound_proved": false,
+    "moment_estimate_proved": false,
+    "selected_ids": [
+      11,
+      12,
+      28,
+      29,
+      42,
+      34,
+      59,
+      53
+    ],
+    "stage_counts": {
+      "discovery": {
+        "maximum_rational_bits": 121,
+        "operations": 12060368,
+        "peak_live_cells": 224576
+      },
+      "generation": {
+        "maximum_rational_bits": 147,
+        "operations": 47787,
+        "peak_live_cells": 200000
+      }
+    },
+    "status": "CANDIDATE_LEADS"
+  },
+  "recovery_certificates_checked": 65,
+  "schema": "reversible-circuit-discovery-report-v1",
+  "selected_ids": [
+    11,
+    12,
+    28,
+    29,
+    42,
+    34,
+    59,
+    53
+  ],
+  "source_horizon": 32767,
+  "status": "FINITE_EVALUATION_VERIFIED_WITH_ALLOCATION_ADDENDUM",
+  "tested_q": [
+    2,
+    3,
+    6,
+    12
+  ],
+  "tests_passed": 23
+}

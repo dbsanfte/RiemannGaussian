@@ -1,0 +1,1009 @@
+{
+  "RH_proved": false,
+  "aggregate_memory_limit": 17179869184,
+  "all_vectors": [
+    "core",
+    "F",
+    "log_prefix",
+    "log_abel",
+    "mode:nu0",
+    "mode:nu1",
+    "mode:nu2",
+    "mode:mu",
+    "prefix:nu0",
+    "prefix:nu1",
+    "prefix:nu2",
+    "prefix:mu"
+  ],
+  "archive": "all hypotheses, including analytic obstructions, counterexamples and unsupported survivors",
+  "arithmetic": "streamed9x9 weighted Gram with all36 off-diagonal orientations; independent literal squared expressions",
+  "auxiliary": "A(X)=E_G(X)+w*E_H(X)>=E_G(X), full squares and signed cross terms",
+  "checker_bits": 192,
+  "constant_fitting": "integer ceiling of5/4 times the nonnegative maximum training ratio; never refit on later data",
+  "development": {
+    "core_bound_checker_development.json": {
+      "operations": 515829,
+      "runs": [
+        {
+          "operations": 515829,
+          "returncode": 0,
+          "runtime_seconds": 0.031,
+          "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.031s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_check_core_bound_synthesis operations=515829\n",
+          "test": "test_check_core_bound_synthesis",
+          "tests": 9
+        }
+      ]
+    },
+    "core_bound_producer_development.json": {
+      "operations": 1619100,
+      "runs": [
+        {
+          "elapsed_seconds": 0.39883058398845606,
+          "operations": 1296120,
+          "returncode": 0,
+          "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.313s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=1296120\n"
+        },
+        {
+          "elapsed_seconds": 0.22019861900480464,
+          "operations": 322980,
+          "reason": "A numerical counterexample closes the proposed constant as false; it must not remain an open proof premise.",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.135s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=322980\n"
+        },
+        {
+          "elapsed_seconds": 0.07739167101681232,
+          "operations": 0,
+          "reason": "Log-Abel block-energy recovery conservatively includes the extra log from summing dyadic energies.",
+          "returncode": 0,
+          "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "stdout": "SYNTHETIC_WORK module=test_core_bound_synthesis operations=0\n"
+        }
+      ]
+    }
+  },
+  "final_parent_scales": [
+    32768,
+    49152,
+    65536
+  ],
+  "final_policy": "best per declared structural lane, saved before generation of source through262143; no final reselection",
+  "full_source_scalars": [
+    "beta",
+    "-beta",
+    "-R_u",
+    "-beta"
+  ],
+  "generator_and_selector_model_calls": false,
+  "grammar": {
+    "auxiliary_coefficients": "all single coordinates and all signed two-coordinate sums in the full four-mode basis",
+    "auxiliary_delays": [
+      null,
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "forcing_log_powers": [
+      0,
+      1
+    ],
+    "forcing_powers": [
+      "0",
+      "1/6"
+    ],
+    "fractional_weights": [
+      "0",
+      "1/6",
+      "1/3",
+      "1/2"
+    ],
+    "numerical_hypothesis_count": 86128,
+    "program_count": 10766,
+    "rhos": [
+      "1/2",
+      "1"
+    ],
+    "storage_weights": [
+      "1/3",
+      "1",
+      "3"
+    ],
+    "target_filters": [
+      {
+        "kind": "delay",
+        "sign": 0,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "0"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/6"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/6"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/3"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/3"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "1/2"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "1/2"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "2/3"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "2/3"
+      },
+      {
+        "kind": "delay",
+        "sign": 1,
+        "theta": "5/6"
+      },
+      {
+        "kind": "delay",
+        "sign": -1,
+        "theta": "5/6"
+      },
+      {
+        "cutoff": 64,
+        "kind": "log_abel"
+      }
+    ]
+  },
+  "hashes": false,
+  "horizon": 262143,
+  "main_cap": 750000000,
+  "main_seconds": 14400,
+  "metadata_reserve": 3000000,
+  "parent": {
+    "RH_proved": false,
+    "dependency_guards": [
+      "recoverable rewrites are one target class, not independent exponent gains",
+      "a bound for an RH-equivalent companion is a new obligation, not a paid lemma",
+      "signed common core and all domain/center/diagonal complements survive projection",
+      "finite coefficients and energies do not provide uniform scale induction"
+    ],
+    "equivalence_class": "candidate10_complete_prime_bank_covariance",
+    "exact_tails": {
+      "RH_proved": false,
+      "all_prime_powers_retained": true,
+      "status": "COMPLETE_REPEATED_VALUATION_TAILS_CERTIFIED",
+      "terms": [
+        {
+          "cofactor_divisor_order": 2,
+          "common_ratio_power": 2,
+          "factorization": {
+            "coefficient": "1",
+            "monomial_power": 0,
+            "multiplicity": 2,
+            "one_minus_power": 2
+          },
+          "first_valuation_bernstein": [
+            "-2",
+            "-2",
+            "-1"
+          ],
+          "name": "B",
+          "recurrence": "coefficient(p^e)=tail(x)*x^(common_ratio_power*(e-2)), x=p^(-1/6), e>=2",
+          "tail": [
+            [
+              0,
+              "1"
+            ],
+            [
+              2,
+              "-2"
+            ],
+            [
+              4,
+              "1"
+            ]
+          ],
+          "tail_start": 2,
+          "valuation_mass_constant": "1",
+          "valuation_mass_power": "0",
+          "zero_above_first_valuation": false
+        },
+        {
+          "cofactor_divisor_order": 2,
+          "common_ratio_power": 2,
+          "factorization": {
+            "coefficient": "-1",
+            "monomial_power": 2,
+            "multiplicity": 2,
+            "one_minus_power": 2
+          },
+          "first_valuation_bernstein": [
+            "-1",
+            "-1",
+            "-5/6",
+            "-1/2",
+            "-1"
+          ],
+          "name": "U",
+          "recurrence": "coefficient(p^e)=tail(x)*x^(common_ratio_power*(e-2)), x=p^(-1/6), e>=2",
+          "tail": [
+            [
+              2,
+              "-1"
+            ],
+            [
+              4,
+              "2"
+            ],
+            [
+              6,
+              "-1"
+            ]
+          ],
+          "tail_start": 2,
+          "valuation_mass_constant": "1",
+          "valuation_mass_power": "1/3",
+          "zero_above_first_valuation": false
+        },
+        {
+          "cofactor_divisor_order": 2,
+          "name": "V",
+          "tail": [],
+          "tail_start": 2,
+          "valuation_mass_power": null,
+          "zero_above_first_valuation": true
+        },
+        {
+          "cofactor_divisor_order": 2,
+          "common_ratio_power": 2,
+          "factorization": {
+            "coefficient": "1",
+            "monomial_power": 4,
+            "multiplicity": 1,
+            "one_minus_power": 2
+          },
+          "first_valuation_bernstein": [
+            "0",
+            "0",
+            "1/6",
+            "1/2",
+            "0"
+          ],
+          "name": "power",
+          "recurrence": "coefficient(p^e)=tail(x)*x^(common_ratio_power*(e-2)), x=p^(-1/6), e>=2",
+          "tail": [
+            [
+              4,
+              "1"
+            ],
+            [
+              6,
+              "-1"
+            ]
+          ],
+          "tail_start": 2,
+          "valuation_mass_constant": "1",
+          "valuation_mass_power": "2/3",
+          "zero_above_first_valuation": false
+        }
+      ],
+      "whole_signed_bound_proved": false
+    },
+    "finite_report": {
+      "RH_proved": false,
+      "calibration_scales": [
+        1,
+        16,
+        64,
+        1024
+      ],
+      "checked_source_horizon": 131071,
+      "cofinal_recoverable_programs": 25,
+      "complete_vector_count": 25,
+      "elapsed_seconds": 156.27157276700018,
+      "exact_repeated_valuation_tails_verified": true,
+      "finite_values": [
+        {
+          "O": "[+/- 1.57e-44]",
+          "O_sectors": {
+            "aa": "0",
+            "cross": "0",
+            "mm": "[+/- 1.57e-44]"
+          },
+          "X": 1,
+          "core_correction_cross": "[-81.39121197103039254702424732462146225670698913 +/- 4.31e-45]",
+          "critical_norm_tilde": "[10.32155071888727951238527832692942186441277759 +/- 4.35e-45]",
+          "critical_norm_w": "[10.32155071888727951238527832692942186441277759 +/- 4.35e-45]",
+          "energy_R": "[46.44697823499275780573375247118239838985749917 +/- 4.53e-45]",
+          "energy_core": "[81.78431340880495157179480397848030598553254432 +/- 3.36e-45]",
+          "energy_correction": "20.25000000000000000000000000000000000000000000000000000",
+          "energy_tilde": "[20.64310143777455902477055665385884372882555519 +/- 4.44e-45]",
+          "energy_w": "[20.64310143777455902477055665385884372882555519 +/- 4.44e-45]",
+          "forward_mass": "1.000000000000000000000000000000000000000000000000000000",
+          "inverse_mass": "1.000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "O": "[81.3021009895386917570284475408689458896222236 +/- 7.74e-44]",
+          "O_sectors": {
+            "aa": "[5.42836349138735096781180621700315353197877976 +/- 4.19e-45]",
+            "cross": "[-59.5031408339626080740935487674609826469889895 +/- 5.52e-44]",
+            "mm": "[135.3768783321139488633101900913267750046324333 +/- 7.80e-44]"
+          },
+          "X": 16,
+          "core_correction_cross": "[2.85583028388671350236549366449600745969141015 +/- 2.58e-45]",
+          "critical_norm_tilde": "[165.3299055448448711791081376143381481614738614 +/- 5.90e-44]",
+          "critical_norm_w": "[33.4060848553137012338946829173509336580992405 +/- 1.45e-44]",
+          "energy_R": "[133.3305266649052361696536747540343277721560785 +/- 5.30e-44]",
+          "energy_core": "[2.90558782999117409646640761394537110755046853 +/- 3.48e-45]",
+          "energy_correction": "[0.731841916936452176778549091877336998749098352 +/- 7.14e-46]",
+          "energy_tilde": "[113.3236512889926671388990814367755584346645152 +/- 3.42e-44]",
+          "energy_w": "[6.49326003081433977561045037031871556599097703 +/- 7.47e-45]",
+          "forward_mass": "[2.6002363467241569672824667496002708201966603373 +/- 8.41e-47]",
+          "inverse_mass": "[3.213006880912889675121952930651570318329785734 +/- 4.50e-46]"
+        },
+        {
+          "O": "[82.987878644307154438976012656864578976007770 +/- 5.31e-43]",
+          "O_sectors": {
+            "aa": "[46.6720229780336515701871629640814390749429002 +/- 2.02e-44]",
+            "cross": "[-233.419113054344542914867526268207609547790036 +/- 9.57e-44]",
+            "mm": "[269.734968720618045783656375960990749448854906 +/- 3.57e-43]"
+          },
+          "X": 64,
+          "core_correction_cross": "[0.84471684446634266263104822570971879268330011 +/- 2.93e-45]",
+          "critical_norm_tilde": "[268.721059422936504744023997070256798838951325 +/- 5.21e-43]",
+          "critical_norm_w": "[36.5006453583422705984434508534375531219378621 +/- 3.50e-44]",
+          "energy_R": "[118.2367896616548688121384164175335676142793655 +/- 8.05e-44]",
+          "energy_core": "[1.37618753871010288228531017771890794370163600 +/- 3.50e-45]",
+          "energy_correction": "[0.199689907977878489759114965746840511713099028 +/- 7.56e-46]",
+          "energy_tilde": "[107.8578628212964588190038611068075516667995232 +/- 9.25e-44]",
+          "energy_w": "[2.42059429115432403467547336917546724809803514 +/- 8.89e-45]",
+          "forward_mass": "[3.028919954553257356864735148712997629426814358 +/- 6.93e-46]",
+          "inverse_mass": "[3.914776705680414343714592771690701938894939628 +/- 4.19e-46]"
+        },
+        {
+          "O": "[46.54199815197949677500573855161817812342150 +/- 6.07e-42]",
+          "O_sectors": {
+            "aa": "[401.80091433591769397887260115597254362839073 +/- 5.14e-42]",
+            "cross": "[-1137.22491077045461786535306199158460444387002 +/- 7.67e-42]",
+            "mm": "[781.96599458651642066148619938723023893890080 +/- 5.30e-42]"
+          },
+          "X": 1024,
+          "core_correction_cross": "[0.1251763860944508500216905937099974805239034 +/- 1.11e-44]",
+          "critical_norm_tilde": "[421.93203530205471892368270921366092278260563 +/- 5.74e-42]",
+          "critical_norm_w": "[39.684528680065252175925206163312375291936303 +/- 2.99e-43]",
+          "energy_R": "[67.193535046182999579724330128555309585137868 +/- 7.50e-43]",
+          "energy_core": "[1.7218460074599039581260900700928986165506030 +/- 2.15e-44]",
+          "energy_correction": "[0.034171701984877819722191987337619381325822944 +/- 7.09e-46]",
+          "energy_tilde": "[65.05921798388569121862009923740094424858446 +/- 2.63e-42]",
+          "energy_w": "[1.8811940955392326278699726511405154784003293 +/- 6.47e-44]",
+          "forward_mass": "[3.63248671669068882253827992473170784438574220 +/- 8.41e-45]",
+          "inverse_mass": "[4.9054539513114416568951238955633799993770487 +/- 5.88e-44]"
+        },
+        {
+          "O": "[35.72667252822250183555463098727250346744819 +/- 6.92e-42]",
+          "O_sectors": {
+            "aa": "[586.51160567104962476788560101966834439540405 +/- 3.97e-42]",
+            "cross": "[-1547.6942338248827254834517721199652804406269 +/- 3.02e-41]",
+            "mm": "[996.9093006820556025511208020875694395126711 +/- 4.18e-41]"
+          },
+          "X": 2048,
+          "core_correction_cross": "[0.0775359679941021402491110059483587492259407 +/- 3.49e-44]",
+          "critical_norm_tilde": "[447.68301259442734707495134947153154370537824 +/- 5.06e-42]",
+          "critical_norm_w": "[41.115498000985825560120906588845156045651523 +/- 2.76e-43]",
+          "energy_R": "[56.58264208897628198703853561880306575299307 +/- 2.83e-42]",
+          "energy_core": "[3.2209905630101890983764620184218579434780362 +/- 6.95e-44]",
+          "energy_correction": "[0.04169381777317323707800318855627262971456643 +/- 1.08e-45]",
+          "energy_tilde": "[55.19149633416123099596946242279205614909640 +/- 5.77e-42]",
+          "energy_w": "[3.340220348777464475703576212926489322418543 +/- 3.43e-43]",
+          "forward_mass": "[3.74428872971087760332330316968524839162852959 +/- 7.18e-45]",
+          "inverse_mass": "[5.0891850208997060704109584701218141622372804 +/- 5.01e-44]"
+        },
+        {
+          "O": "[24.88227303334374409698397819985624503732191 +/- 6.82e-42]",
+          "O_sectors": {
+            "aa": "[825.8889608185715094426157307382848312542004 +/- 1.09e-41]",
+            "cross": "[-2067.0548215736293772439477339697700331469442 +/- 3.93e-41]",
+            "mm": "[1266.0481337884016118983159814313414469300657 +/- 3.94e-41]"
+          },
+          "X": 4096,
+          "core_correction_cross": "[0.0729209780128772332224632079965674499143533 +/- 5.56e-44]",
+          "critical_norm_tilde": "[469.47898247845916459397734216165122438249102 +/- 6.92e-42]",
+          "critical_norm_w": "[42.088788492674780667165041566024028648660521 +/- 6.31e-43]",
+          "energy_R": "[47.15299568364652093793375656278289376512854 +/- 4.85e-42]",
+          "energy_core": "[2.0467392181529176568516848644193235709074337 +/- 7.76e-44]",
+          "energy_correction": "[0.02820411792279278947630589395759454308095109 +/- 1.71e-45]",
+          "energy_tilde": "[46.24245729152866986943464989988014595619301 +/- 7.59e-42]",
+          "energy_w": "[2.1478643140885876795504539663734855639027381 +/- 8.75e-44]",
+          "forward_mass": "[3.8437906873269815114572325865059813579904397 +/- 4.46e-44]",
+          "inverse_mass": "[5.2528538683577633641148390554676444602195503 +/- 7.41e-44]"
+        },
+        {
+          "O": "[15.3298871028405951952983509678040803580792 +/- 2.02e-41]",
+          "O_sectors": {
+            "aa": "[1135.6235214595293306957242193047665646197277 +/- 7.65e-41]",
+            "cross": "[-2723.9698023124474711352362953544019552581961 +/- 8.95e-41]",
+            "mm": "[1603.6761679557587356348104270174394709965477 +/- 5.67e-41]"
+          },
+          "X": 8192,
+          "core_correction_cross": "[-0.0150559148833820691032713991882780161140567 +/- 2.81e-44]",
+          "critical_norm_tilde": "[487.6694799931622130307189384094527756734852 +/- 4.21e-41]",
+          "critical_norm_w": "[43.66807716949643188887611863619483052051464 +/- 3.55e-42]",
+          "energy_R": "[40.00971268610595005848073144965324986375278 +/- 4.34e-42]",
+          "energy_core": "[2.968162968173684336477600643584415005869961 +/- 2.96e-43]",
+          "energy_correction": "[0.02046843420038396585702891392358842947292104 +/- 5.22e-45]",
+          "energy_tilde": "[39.4186463053685093636284253095913425617263 +/- 2.52e-41]",
+          "energy_w": "[2.973575487490686233231358158319725419228826 +/- 6.31e-43]",
+          "forward_mass": "[3.9324130400733416724147144970253988523763075 +/- 6.12e-44]",
+          "inverse_mass": "[5.398658695424087253325503498656152042124542 +/- 1.09e-43]"
+        },
+        {
+          "O": "[1.9628768442188079211036245578214199746071 +/- 3.89e-41]",
+          "O_sectors": {
+            "aa": "[1565.7917051166247190453814737340563017516958 +/- 8.21e-41]",
+            "cross": "[-3591.602053344471010269207903219811324807760 +/- 5.02e-40]",
+            "mm": "[2027.773225072065099144930054043576443030671 +/- 1.05e-40]"
+          },
+          "X": 16384,
+          "core_correction_cross": "[-0.1236838713512131760310634515124303486552450 +/- 5.76e-44]",
+          "critical_norm_tilde": "[502.1466001955303031549833580098203474382908 +/- 3.55e-41]",
+          "critical_norm_w": "[45.99029680987133364051389615383414365182102 +/- 5.70e-42]",
+          "energy_R": "[29.8311750504174915501543421829979373067042 +/- 2.59e-41]",
+          "energy_core": "[5.034951632924893109005761919812415106567663 +/- 6.88e-43]",
+          "energy_correction": "[0.01271912228178191812868477770956690000651316 +/- 4.58e-45]",
+          "energy_tilde": "[29.4695555415599595171734143585385413898264 +/- 3.56e-41]",
+          "energy_w": "[4.923986883855461851103383246009551657918931 +/- 7.14e-43]",
+          "forward_mass": "[4.0113666946307034062446657695519620633098635 +/- 7.09e-44]",
+          "inverse_mass": "[5.528552670732422791551833418937593648676419 +/- 5.16e-43]"
+        },
+        {
+          "O": "[-0.3528126064644445015531235066861935557171 +/- 6.46e-41]",
+          "O_sectors": {
+            "aa": "[2018.615790402398139354311676767917009098165 +/- 5.09e-40]",
+            "cross": "[-4579.952174152294901730889876784507231697701 +/- 5.17e-40]",
+            "mm": "[2560.983571143432317875025076509904029043819 +/- 3.94e-40]"
+          },
+          "X": 32768,
+          "core_correction_cross": "[0.1796731086231076836998142117923630692496688 +/- 6.06e-44]",
+          "critical_norm_tilde": "[516.451486380202525182966584228252147379086 +/- 3.95e-40]",
+          "critical_norm_w": "[48.66859702038094625901678703294128457577929 +/- 5.81e-42]",
+          "energy_R": "[31.6074130765720316639928085170600368539796 +/- 2.10e-41]",
+          "energy_core": "[6.765781615959708080713007215959254002601940 +/- 5.99e-43]",
+          "energy_correction": "[0.01221026353774322155710595637052668985309223 +/- 2.81e-45]",
+          "energy_tilde": "[31.3466315079392085845093954565114466590403 +/- 4.65e-41]",
+          "energy_w": "[6.957664988120558985969927384122143761704701 +/- 8.58e-43]",
+          "forward_mass": "[4.081728208464507133774214573183159896736409 +/- 3.53e-43]",
+          "inverse_mass": "[5.644273550947489211742190120399682319473489 +/- 7.31e-43]"
+        },
+        {
+          "O": "[-16.885949297255513273835645878968791275716 +/- 1.24e-40]",
+          "O_sectors": {
+            "aa": "[2738.799126672255313375747687079014163148838 +/- 6.77e-40]",
+            "cross": "[-5987.50686928889446710703425251845184204463 +/- 2.86e-39]",
+            "mm": "[3231.82179331938364045745091956046888762008 +/- 3.13e-39]"
+          },
+          "X": 65536,
+          "core_correction_cross": "[-0.133194414599306398099123630076558645655502 +/- 1.20e-43]",
+          "critical_norm_tilde": "[525.741671025179996578241379851693658882856 +/- 3.19e-40]",
+          "critical_norm_w": "[51.20258715120657148306640553773700599113668 +/- 7.82e-42]",
+          "energy_R": "[19.6879513222998622393587990475440921279983 +/- 5.95e-41]",
+          "energy_core": "[6.18393344061468578413577984330407061230870 +/- 2.45e-42]",
+          "energy_correction": "[0.01105303981075467132027567724759094151555505 +/- 4.52e-45]",
+          "energy_tilde": "[19.541857272430175376177899868313715856429 +/- 1.07e-40]",
+          "energy_w": "[6.06179206582613405735693189047510290816875 +/- 5.84e-42]",
+          "forward_mass": "[4.144401224426217580970083105006423874170075 +/- 6.07e-43]",
+          "inverse_mass": "[5.74736846846211801016296104370125029521290 +/- 3.47e-42]"
+        }
+      ],
+      "fresh_scales": [
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536
+      ],
+      "grammar_size": 37,
+      "independent_source_precision_bits": 192,
+      "independently_compared_scalar_entries": 3276800,
+      "main_operations": 52443632,
+      "main_peak_rss_kib": 562172,
+      "no_independent_exponent_gain_from_rewriting": true,
+      "ordered_shared_square_sectors": 16,
+      "preparation_operations": 3278574,
+      "proof_status": "bounded recovery and specified shared-square envelopes proved analytically; complete signed core bound OPEN",
+      "selected": {
+        "RH_proved": false,
+        "correction": "(beta*delta-d)*preconditioner, retained with its proved global norm cost",
+        "id": 23,
+        "integral_local_rational_functions": true,
+        "max_positive_factors_in_one_term": 1,
+        "numerator_factor_order": "6",
+        "operator": "Dirichlet convolution by coefficients of zeta(s+shift)^(-power)",
+        "positive_factor_order": "3",
+        "power": "1",
+        "recovery": {
+          "coefficient_majorant": "d_1(n)*n^(-2/3)",
+          "cofinal": true,
+          "covers_forward_and_inverse": true,
+          "divisor_order": 1,
+          "energy_power_loss": "0",
+          "kind": "bounded",
+          "norm_bound": "zeta(7/6)^1"
+        },
+        "shift": "2/3",
+        "terms": [
+          {
+            "coefficient": "beta",
+            "name": "B",
+            "zeta_factors": [
+              [
+                "0",
+                "-2"
+              ],
+              [
+                "1/3",
+                "1"
+              ]
+            ]
+          },
+          {
+            "coefficient": "-beta",
+            "name": "U",
+            "zeta_factors": [
+              [
+                "0",
+                "-1"
+              ],
+              [
+                "1/3",
+                "1"
+              ],
+              [
+                "2/3",
+                "-1"
+              ]
+            ]
+          },
+          {
+            "coefficient": "-beta",
+            "name": "V",
+            "zeta_factors": [
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          },
+          {
+            "coefficient": "-R_u",
+            "name": "power",
+            "zeta_factors": [
+              [
+                "1/3",
+                "1"
+              ],
+              [
+                "2/3",
+                "-1"
+              ]
+            ]
+          }
+        ],
+        "whole_signed_bound_proved": false
+      },
+      "source_mode_coefficients_retained": true,
+      "status": "EXACT_PRECONDITIONER_AND_COMPLETE_JOINT_SOURCE_FINITELY_VERIFIED",
+      "total_operations": 306034241,
+      "whole_signed_bound_proved": false,
+      "worker_resources": {
+        "checker": {
+          "elapsed_seconds": 118.25601805699989,
+          "operations": 140030187,
+          "peak_cells": 7344128,
+          "peak_rss_kib": 572472,
+          "status": "COMPLETE"
+        },
+        "producer": {
+          "elapsed_seconds": 28.872389841009863,
+          "operations": 110281848,
+          "peak_cells": 7933835,
+          "peak_rss_kib": 755044,
+          "status": "COMPLETE"
+        }
+      }
+    },
+    "full_reduction": {
+      "complete_d_prefix_critical_norm_bound": "C_D=20*beta/sqrt(log4)",
+      "core": "f=beta*nu0-beta*nu1-beta*mu-R_u*nu2",
+      "eta": "beta*mu_(2/3)-d*mu_(2/3), including unit and all prime powers",
+      "eta_prefix_critical_norm_bound": "beta*sqrt27+7*C_D",
+      "finite_crosses_retained": true,
+      "forward_and_inverse_critical_norm_cost": "zeta(7/6)<=7",
+      "nu0": "k_(1/3)*(mu*mu)",
+      "nu1": "k_(1/3)*(mu*mu_(2/3))",
+      "nu2": "k_(1/3)*mu_(2/3)",
+      "recovery": "||T||_sigma <= zeta(2/3+sigma)*(||F||_sigma+||prefix eta||_sigma), sigma>1/2",
+      "sharp_cut_eta_drop_permitted": false,
+      "unit": "f(1)=-beta-R_u; eta(1)=beta; w(1)=-R_u",
+      "w": "tilde_b*mu_(2/3)=f+eta"
+    },
+    "joined_target": "O_X <= C_epsilon X^epsilon; all bands joined, one-sided, complete pure center",
+    "missing_bound": {
+      "equivalent_goal": "||F||_sigma<infinity for every sigma>1/2, or its cofinal dyadic moment",
+      "expression": "F(x)=sum_(n<=x) f(n), complete signed four-mode core",
+      "open_sectors": [
+        "unsuppressed nu0 tensor nu0 below rho=1/3",
+        "all first valuations and remaining common-prime interactions",
+        "joint signed cross terms after any paid union decomposition"
+      ],
+      "separately_bounding_modes_required": false,
+      "uniformity": "all dyadic scales; constants may depend on epsilon/sigma, not on X or omitted primes",
+      "whole_signed_bound_proved": false
+    },
+    "next_constructions": [
+      {
+        "example": "nu1(q^e H)+q^(-1/3)nu0(q^e H)=q^(-1/3)l0(e)*(nu0(H)-nu1(H)), q does not divide H, e>=2",
+        "kind": "valuation pairing with exact cofactor defect",
+        "open": "prove the joint smaller-cofactor defect; inverse prime weights must be charged"
+      },
+      {
+        "kind": "all-prime logarithmic recurrence",
+        "open": "joint prime-power source bank; pole-compensated pieces cannot be paid separately",
+        "paid": "Volterra memory on x>=64 is absorbable; complete finite head explicit",
+        "reference": "JOINT_CORRELATION_PAIRING_REVIEW_004.txt section7"
+      },
+      {
+        "gain": "d^(-1/3)-d^(-2/3) on the symmetric transported kernel",
+        "kind": "mixed log-divisor kernel commutator",
+        "open": "unattenuated max/prefix boundary commutator and recovery of the symmetric target mode",
+        "reference": "JOINT_CORRELATION_GRAMMAR_REVIEW_004.txt section6"
+      },
+      {
+        "kind": "fixed-prime insertion and actual-prime divided differences",
+        "open": "q-free current-scale forcing, insertion complements and prime-gap inverse costs",
+        "reference": "JOINT_CORRELATION_GRAMMAR_REVIEW_004.txt sections2-3"
+      }
+    ],
+    "original_target": "E_R(X)=X^-2 sum_(X<=n<2X) R(n)^2 <= C_epsilon X^epsilon for every epsilon>0 uniformly over dyadic X",
+    "paid_original_remainder": "|E_R-O_X| <= 3(beta+m)^2(1+log(2X-1))^3 + 4E0(beta+m)(1+log(2X)) + E0^2/X",
+    "paid_tensor_sectors": [
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "1/3",
+        "constant": "4/3",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "B",
+        "prime_weight": "0",
+        "right": "B",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/10",
+        "constant": "13/10",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "B",
+        "prime_weight": "1/3",
+        "right": "U",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "left": "B",
+        "right": "V",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/11",
+        "constant": "14/11",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "B",
+        "prime_weight": "2/3",
+        "right": "power",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/10",
+        "constant": "13/10",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "U",
+        "prime_weight": "1/3",
+        "right": "B",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/11",
+        "constant": "14/11",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "U",
+        "prime_weight": "2/3",
+        "right": "U",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "left": "U",
+        "right": "V",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "1/4",
+        "constant": "5/4",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "U",
+        "prime_weight": "1",
+        "right": "power",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "left": "V",
+        "right": "B",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "left": "V",
+        "right": "U",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "left": "V",
+        "right": "V",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "left": "V",
+        "right": "power",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/11",
+        "constant": "14/11",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "power",
+        "prime_weight": "2/3",
+        "right": "B",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "1/4",
+        "constant": "5/4",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "power",
+        "prime_weight": "1",
+        "right": "U",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      },
+      {
+        "left": "power",
+        "right": "V",
+        "status": "ZERO_ON_SHARED_SQUARE"
+      },
+      {
+        "bound": "constant*2^max(2-(3+prime_weight)*rho,0)*X^(1-(3+prime_weight)*rho)*(1+log(2X))^2",
+        "coefficient_scope": "unscaled multiplicative modes; multiply by abs(c_left*c_right) from the selected full source before combining sectors",
+        "cofinal_rho_threshold": "3/13",
+        "constant": "16/13",
+        "domain": "union of pairs sharing q^2 for some actual prime q>n^rho; all q-valuations e,f>=2; n in[X,2X)",
+        "full_target_recovered": false,
+        "left": "power",
+        "prime_weight": "4/3",
+        "right": "power",
+        "status": "UNIFORM_ABSOLUTE_SECTOR_ENVELOPE",
+        "union_subtracted_once": true,
+        "whole_signed_bound_proved": false
+      }
+    ],
+    "prior_input": "candidate10_centered_reciprocal_obligation.json",
+    "reviewed_inputs": [
+      "JOINT_CORRELATION_PAIRING_REVIEW_004.txt",
+      "JOINT_CORRELATION_GRAMMAR_REVIEW_004.txt",
+      "CENTERED_BAND_FORCING_REVIEW_003.txt",
+      "CENTERED_BAND_PREDICTION_REVIEW_003.txt"
+    ],
+    "schema": "joint-preconditioned-correlation-obligation-v1",
+    "selected_operator": {
+      "RH_proved": false,
+      "correction": "(beta*delta-d)*preconditioner, retained with its proved global norm cost",
+      "id": 23,
+      "integral_local_rational_functions": true,
+      "max_positive_factors_in_one_term": 1,
+      "numerator_factor_order": "6",
+      "operator": "Dirichlet convolution by coefficients of zeta(s+shift)^(-power)",
+      "positive_factor_order": "3",
+      "power": "1",
+      "recovery": {
+        "coefficient_majorant": "d_1(n)*n^(-2/3)",
+        "cofinal": true,
+        "covers_forward_and_inverse": true,
+        "divisor_order": 1,
+        "energy_power_loss": "0",
+        "kind": "bounded",
+        "norm_bound": "zeta(7/6)^1"
+      },
+      "shift": "2/3",
+      "terms": [
+        {
+          "coefficient": "beta",
+          "name": "B",
+          "zeta_factors": [
+            [
+              "0",
+              "-2"
+            ],
+            [
+              "1/3",
+              "1"
+            ]
+          ]
+        },
+        {
+          "coefficient": "-beta",
+          "name": "U",
+          "zeta_factors": [
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "1/3",
+              "1"
+            ],
+            [
+              "2/3",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "coefficient": "-beta",
+          "name": "V",
+          "zeta_factors": [
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "coefficient": "-R_u",
+          "name": "power",
+          "zeta_factors": [
+            [
+              "1/3",
+              "1"
+            ],
+            [
+              "2/3",
+              "-1"
+            ]
+          ]
+        }
+      ],
+      "whole_signed_bound_proved": false
+    },
+    "source": "actual_mu_candidate10",
+    "status": "open",
+    "whole_signed_bound_proved": false
+  },
+  "prior_overlap": "training/validation reuse independently verified archived prefixes; final32768 is calibration; final49152 is irregular and partly fresh; final65536 has a wholly fresh child block",
+  "process_memory_bytes": 4294967296,
+  "proof_methods": [
+    "positive auxiliary domination",
+    "bounded/polylog causal recovery",
+    "Volterra recovery with finite head",
+    "conditional dyadic induction",
+    "retained-pole rejection",
+    "unconditional gamma1/logpower2 absolute-prefix reference"
+  ],
+  "schema": "automatic-core-bound-synthesis-v1",
+  "searched_inequality": "A(2X)<=rho*A(X)+C*X^gamma*(1+log2X)^k, every dyadic X>=1",
+  "selection": [
+    "cofinal eligibility including analytic pole gate",
+    "validation failures",
+    "conditional core log degree",
+    "AST complexity",
+    "forcing power",
+    "program ordinal",
+    "rho",
+    "log power"
+  ],
+  "source_bits": 160,
+  "source_order": [
+    "nu0",
+    "nu1",
+    "nu2",
+    "mu"
+  ],
+  "total_work_limit": 3200000000,
+  "training_parent_scales": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "unsupported_core_bounds_remain_open": true,
+  "validation_parent_scales": [
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "whole_signed_bound_proved": false,
+  "worker_caps": {
+    "checker": 1700000000,
+    "producer": 650000000
+  },
+  "worker_seconds": 3600,
+  "workers": 2
+}

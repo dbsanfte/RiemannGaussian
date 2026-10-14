@@ -1,0 +1,23 @@
+{
+  "RH_proved": false,
+  "compiled_programs": 204,
+  "development_operations": 953178,
+  "elapsed_seconds": 0.04567382499226369,
+  "full_all_scale_bounds_proved": 0,
+  "new_grouped_routes_disproved": 31,
+  "new_proof_rules": {
+    "complete_positive_fresh_semiprime_classes": 3,
+    "fixed_valuation_class_restores_supercritical_pole": 28
+  },
+  "new_signed_remainder_obligations": 6,
+  "new_source_evaluations": 0,
+  "operations": 1136490,
+  "paid_head_certificates": 144,
+  "paid_head_programs": 24,
+  "selected_candidates_remaining_open": 1,
+  "selected_grouped_routes_disproved": 2,
+  "status": "GROUPING_PROOF_FEEDBACK_AND_PAID_HEAD_COMPILATION_COMPLETE",
+  "total_operations": 2089668,
+  "total_with_parent_operations": 2023241359,
+  "whole_signed_bound_proved": false
+}

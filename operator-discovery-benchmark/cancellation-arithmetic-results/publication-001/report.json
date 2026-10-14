@@ -1,0 +1,44 @@
+{
+  "RH_proved": false,
+  "accepted_mechanism": "all eight reduce to unsigned Cauchy; extension objective improvement is exact half-prefix multiplicity alias",
+  "adaptive": {
+    "directions": 120,
+    "exact_new_cone_obstruction": false,
+    "independent_all_passed": true,
+    "negative": 10,
+    "selected": 8,
+    "training": "no_certificate_found; float infeasibility only"
+  },
+  "dual001": "denominator limit preserved; no exact separator",
+  "dual002": {
+    "arithmetic_bound_refuted": false,
+    "exact_separator_verified": true,
+    "scope": "all rationalC>=0,integerq>=1 in fixed extended zero-cubic cone; necessaryglobalgate appliesq>1"
+  },
+  "global_bound_proved": false,
+  "integrity": {
+    "main_live_and_frozen27_match": true,
+    "prior18_snapshot_manifest_matches": true
+  },
+  "main": {
+    "all_true": true,
+    "final": {
+      "finite": 5,
+      "missing_resource": 1,
+      "no_candidate": 21,
+      "template_mismatch": 10
+    },
+    "independent_all_passed": true,
+    "post_search_actual_observations": 132,
+    "programs": 29,
+    "sources": 27,
+    "tests": 21,
+    "training": {
+      "finite": 8,
+      "no_certificate_found": 21
+    }
+  },
+  "next_action": "separately frozen multi-round exact separation and generic column generation; global signed budget still missing",
+  "schema": 1,
+  "scope": "bounded actual-arithmetic symbolic certificate search and posthoc cone diagnostics; no RH result"
+}

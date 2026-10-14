@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "attempts": [
+    {
+      "status": "FAIL",
+      "scope": "development_totals",
+      "reason": "Initially treated final failure-reproduction ledger row as unresolved test; repaired to require latest PASS for every named check plus separate corrected-launch PASS"
+    },
+    {
+      "status": "PASS",
+      "scope": "ledger coverage and all8uniform target carryforwards",
+      "tests": {
+        "distinct_focused_tests": 31,
+        "focused_method_executions": 84,
+        "passed_focused_executions": 80,
+        "failed_focused_executions": 4,
+        "retained_loader_errors": 1,
+        "prospective_audit_attempts": 7,
+        "prospective_audit_failed_attempts": 4,
+        "prospective_audit_distinct_checks": 15,
+        "initial_native_import_premise_was_missing": true,
+        "corrected_launch_regression": {
+          "status": "PASS",
+          "attempts": 1,
+          "distinct_tests": 2,
+          "real_tiny_MILP_proposals": 12,
+          "spawned_workers": 3
+        },
+        "earlier_failures_retained": true
+      },
+      "all_eight_uniform_targets_remain_unpaid": true
+    }
+  ],
+  "scientific_queries": false
+}

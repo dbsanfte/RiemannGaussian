@@ -1,0 +1,680 @@
+SIGNED SPARSE RAW HEAD: DIAGONAL TRANSFER, SOURCE CLOSURES, AND LOCAL BARRIERS 067
+============================================================================
+
+Scope and disposition
+---------------------
+This is a source-only mathematical review. It reads the current
+MOBIUS_SPARSE_PREFIX_HANDOFF.txt and MOBIUS_COMPLEMENTARY_CONVOLUTION_REVIEW_066.txt,
+the source mobius_sparse_prefix_066.py, and the older source-only reviews
+MOBIUS_PREFIX_COMPLETION_REVIEW_062.txt, MOBIUS_PREFIX_REPAIR_REVIEW_063.txt,
+MOBIUS_QUADRATIC_CONTRACTION_REVIEW_064.txt,
+MOBIUS_GROWING_CONDITIONING_REVIEW_065.txt, and
+MOBIUS_WALSH_UNIFORM_PREFACTOR_REVIEW_065.txt. The older divisor-language
+handoff was consulted to distinguish its finite cone obstruction from
+the present raw source and positive-price obstructions.
+
+No scientific result array, optimizer, numerical Mobius study, archived
+candidate, artifact hash, or old test was read or executed. Only this
+new review is written. No subagent is used. All arithmetic below is
+ordinary mu; every channel, window, row, and lag shares the same sequence.
+No RH assumption, Mertens bound, prime-distribution estimate, random-sign
+model, or outside-prime deletion is invoked. The elementary estimates are
+proved here, so no external arithmetic fact is needed.
+
+The central new paid component is a uniform diagonal bound for dyadic
+moments of the actual joined sparse RAW head. Its amplitude does not grow
+with the number of tail dictionary entries. The resulting diagonal
+budget is O(sqrt(N)*log(2N)^(3/2)) for every prefix. The unclosed leaf is
+the aggregate positive part of the SIGNED off-diagonal correlations.
+This leaf is sufficient, not necessary, for the requested raw-head bound.
+
+A second paid component is an exact full-floor-closure bound controlled
+by exceptional source support. It pays both endpoint prefix strips and
+allows a detector to synthesize other source closures. Concrete barriers
+show that a divisor auxiliary confined to small horizons, or a fixed
+finite prime pairing followed by triangle, cannot pay the remaining
+interior. Those are scoped barriers for positive proof prices, not lower
+bounds for the signed raw head and not a refutation of RH.
+
+1. Exact source, raw inverse, and cumulative tail kernel
+-------------------------------------------------------
+Fix p=3, q=5, integer N>=2, D=floor(4N/3), 1<=y<=D, and
+r in[3/5,1]. The registered primes are still 2,3,5 in the old bridge;
+the raw inverse in this review is UNMASKED ordinary mu, as in066.
+Put
+
+ W(x)=floor(4x)-3floor(2x)+2floor(x),
+ F(d;r)=W(N/(3d))-r*W(N/(5d)),
+ f_y(d;r)=1[d<=y]*F(d;r),                         d>=1.
+
+Writing x=k+t, 0<=t<1, gives W(x)=floor(4t)-3floor(2t).
+Its values on the four successive quarter intervals are 0,1,-1,0.
+Consequently |F(d;r)|<=1+r<=2. F and f_y vanish when d>D.
+All floors and every support inequality use these inclusive integer
+conventions; empty intervals contribute zero.
+
+Let the six full atoms be
+
+ Z_(b,v)=floor(vN/b),
+ lambda_(3,v)=a_v, lambda_(5,v)=-r*a_v,
+ (v,a_v)=(4,1),(2,-3),(1,2).
+
+Drop Z=0 and coalesce coincident Z before taking norms. Thus
+F(d;r)=sum_Z lambda_Z(r)*floor(Z/d), and
+
+ F_atom:=sum_Z |lambda_Z(r)|<=6*(1+r)<=12.          (1.1)
+
+Let a_T(r) be the SIGNED COALESCED tail-step dictionary from066, so
+
+ f_y(d;r)=F(d;r)+sum_T a_T(r)*1[d<=T].             (1.2)
+
+The dictionary retains the common y threshold and all compensating tail
+thresholds. Define its step function
+
+ g(d;r):=sum_T a_T(r)*1[d<=T]
+        =f_y(d;r)-F(d;r)
+        =-1[d>y]*F(d;r).                         (1.3)
+
+This is valid for every positive integer d, including d>D, where all
+terms vanish. Therefore |g(d;r)|<=1+r<=2. This signed cumulative bound
+is stronger than a bound on sum_T |a_T|, which can grow with N/y.
+
+For j>=1 and n>=1 define the exact joined kernel
+
+ kappa_j(n;r):=sum_T a_T(r)*1[floor(T/n)=j]
+             =g(jn;r)-g((j+1)n;r).               (1.4)
+
+The equality follows because
+1[jn<=T]-1[(j+1)n<=T]=1[floor(T/n)=j]. The same assertion in interval
+notation is floor(T/(j+1))<n<=floor(T/j); neither endpoint may be changed.
+It follows from (1.3), BEFORE evaluating any ordinary-mu sign, that
+
+ |kappa_j(n;r)|<=2*(1+r)<=4.                      (1.5)
+
+The kernel is zero for n>floor(D/j), and is zero for all n when j>D.
+In particular, no correlation below introduces an arithmetic radius
+beyond the D already queried by066.
+
+The full raw inverse coefficients are exactly
+
+ c_j=d_j+z_j,
+ d_j=sum_(Z=j)lambda_Z,
+ z_j=sum_(n>=1)mu(n)*kappa_j(n;r),                (1.6)
+
+with finite sums. The full-floor convolution mu*One=delta_1 contracts
+each full atom to its coefficient at j=Z; the step inverse gives (1.4).
+This is the SAME raw vector as066, not the core_inverse fill.
+For any set of rows, sum |d_j|<=F_atom. The unit mu(1)=1 is included in
+z_j; squareful n have their ordinary value zero.
+
+2. A uniformly paid diagonal for the joined head
+------------------------------------------------
+Let I=[L,U] be any nonempty integer interval, L>=1. Define
+
+ E_I=sum_(j in I) z_j^2,
+ D_I=sum_(n>=1)mu(n)^2*sum_(j in I)kappa_j(n)^2.   (2.1)
+
+D_I is the true arithmetic diagonal, not a free-sign expected moment.
+Using (1.5), |mu|<=1, and coalescing before optional triangle gives
+
+ D_I<=2*(1+r)*sum_(j in I,n>=1)|kappa_j(n)|
+     <=2*(1+r)*sum_T |a_T|*
+                      [floor(T/L)-floor(T/(U+1))]
+     <=4*M1/L,                                  (2.2)
+
+where M1=sum_T |a_T|*T is the coalesced dictionary's first moment.
+The middle line is exact interval telescoping: a fixed T's consecutive
+j windows are disjoint and their lengths sum to the displayed floors.
+It also covers T<L and windows containing n=1. A finer finite paid
+diagonal certificate is 2*(1+r)*sum_(j,n)|kappa_j(n)|; an actual squarefree
+diagonal evaluation can be still smaller.
+
+The066 source theorem, with all channels joined, proves
+
+ M1<=12*(1/3+r/5)*N*
+             [2+log max(1,D/(y+1))]
+    <=(32/5)*N*[2+log max(1,D/(y+1))].            (2.3)
+
+Equations (2.2)-(2.3) prove D_I=O(N*log(2N)/L), uniformly in EVERY
+prefix and every r in[3/5,1]. No bound for E_I has been assumed here.
+
+The distinction is important. A crude estimate
+kappa^2 <= (sum|a_T|)*sum |a_T|*1_window
+would introduce an unnecessary growing dictionary mass. Formula (1.3)
+provides the independent source amplitude control that removes it.
+The diagonal argument uses actual shared mu, and does not require
+independence among different windows or channels.
+
+3. Exact lag correlations and complete dyadic transfer
+------------------------------------------------------
+For h>=1 define the SIGNED lag correlation
+
+ R_I(h)=sum_(j in I,n>=1)mu(n)*mu(n+h)*
+                       kappa_j(n)*kappa_j(n+h),
+ C_I=2*sum_(h>=1)R_I(h).                          (3.1)
+
+Every sum is finite: for I starting at L, n and n+h need not exceed
+floor(D/L). Expanding the actual squares in (2.1) gives exactly
+
+ E_I=D_I+C_I>=0.                                 (3.2)
+
+The factor two counts both ordered off-diagonal pairs. No row-specific
+signs, no independent copies of mu, and no diagonal alias are introduced.
+Equivalently the pair coefficient is
+
+ Q_I(m,n)=sum_(j in I)kappa_j(m)*kappa_j(n),
+ C_I=sum_(m!=n)mu(m)*mu(n)*Q_I(m,n).               (3.3)
+
+The quotient form (1.4) shows the arithmetic geometry: individual terms
+link m,n for which floor(T/m)=floor(U/n) belongs to the same block,
+with ALL signed T,U terms summed. Taking absolute values separately at
+T,U, individual lags, or independent rows loses legitimate cancellation.
+
+Set H=floor(sqrt N), J=max(1,ceil(H/2)). Partition the entire head
+[1,J-1] into dyadic intervals
+
+ I_L=[L,min(2L-1,J-1)], L=1,2,4,..., L<J.
+
+Let B be the number of nonempty intervals, B=0 when J=1. Each interval
+has |I_L|<=L, and B<=1+floor(log_2(max(1,J-1))). Write C_I^+=max(C_I,0).
+By Cauchy-Schwarz and sqrt(u+v)<=sqrt u+sqrt v for nonnegative u,v,
+
+ sum_(1<=j<J)|c_j|
+ <=F_head+sum_I sqrt(|I|*E_I)
+ <=F_head+sum_I sqrt(|I|*D_I)
+           +sum_I sqrt(|I|*C_I^+)
+ <=F_head+2*B*sqrt(M1)+Risk_head,                  (3.4)
+
+ F_head=sum_(1<=Z<J)|lambda_Z|<=12,
+ Risk_head=sum_I sqrt(|I|*C_I^+).                 (3.5)
+
+When C_I<0, (3.2) gives E_I<=D_I directly, so the use of C_I^+ in
+(3.4) is valid. It does not assert that individual R_I(h) are positive.
+The deterministic part 2*B*sqrt(M1) is uniformly
+O(sqrt N*log(2N)^(3/2)). It is therefore O_epsilon(N^(1/2+epsilon))
+for every positive epsilon. The direct floor atoms add at most12,
+including any small-N atom lying in the head.
+
+Thus the precise sufficient UNPAID leaf is
+
+ Risk_head=O_epsilon(N^(1/2+epsilon))              (3.6)
+
+uniformly in all required N,y at r=3/5 and r=1. This is an aggregate
+signed-correlation risk bound. It does NOT require an assumed Chowla
+estimate for each lag, or a sum of absolute individual correlations.
+A stronger sufficient premise would bound each C_I^+ by
+O_epsilon(N^(1+2epsilon)/L), but that stronger premise is not required.
+
+The leaf is sufficient, not necessary. Dyadic Cauchy can overprice a
+concentrated coefficient; a small head L1 does not imply this particular
+aggregate block-energy risk bound. It must not be advertised as an
+equivalent RH formulation or an already proved arithmetic theorem.
+
+For the whole continuum of ratios one does not need to prove convexity
+of C_I or Risk_head, which need not be convex. The complete c_j vector
+is affine in r, so its head L1 is convex. Applying (3.4)-(3.6) at BOTH
+endpoints with uniform constants bounds the head L1 for every r between
+them. Endpoint moment certificates must correspond to the same source
+and declared block rule. Convexity of the actual norm is the transfer.
+
+Combining a genuine proof of (3.6) with066's terminal bound and the old
+long coefficient bound would pay the complete raw prefix budget.
+The existing conditional bridge would then need its usual source and
+parameter admission. This review proves the diagonal component and
+the conditional transfer, and DOES NOT prove (3.6) or RH.
+
+If a compiler instead squares c_j=d_j+z_j, its energy is
+E_I+2*sum_(j in I)d_j*z_j+sum_(j in I)d_j^2. Those terms must be kept
+explicitly. Formula (3.4) avoids an unpriced direct-atom cross term by
+separating the already paid floor coefficients with triangle. For finite
+moment replay, compiling z_j from kappa and adding F_head is the clean
+source-bound implementation of this theorem.
+
+4. What a detector can synthesize from this transfer
+---------------------------------------------------
+This review supplies exact finite convolution and norm rules, not a
+preselected actual-Mobius off-diagonal theorem. A useful search grammar
+can have the following independently checkable construction objects:
+
+ * A coalesced step dictionary and its cumulative source function g,
+   with the identity (1.3) and the bound |g|<=1+r proved from W's profile.
+ * Integer or rational row kernels from (1.4), with all windows and
+   units retained. At endpoint r=3/5, a common denominator5 can be used
+   for exact integer polynomial autocorrelation; it must be undone in
+   every moment and price. Other rational sources need their actual
+   common denominator rather than an assumed fixed scale.
+ * Source-declared row blocks and source-declared lag groups. A grouping
+   identity is signed: sum_h R_I(h) equals the sum of the group totals.
+   Upper-bounding separate positive parts is valid but can be weaker
+   than the single positive part in (3.5).
+ * Candidate auxiliary controls on the signed group totals, with their
+   own amplitude, support, initial-value, recurrence, or divisor-boundary
+   certificates. The search should be able to propose these controls,
+   rather than receiving a black box that assumes (3.6).
+ * Exact independent energy replay, either from row squares or from
+   direct shifted products, that verifies (3.2), the diagonal, the lag
+   partition, and direct-atom handling.
+
+All-scale admission of a control must prove its dependence on N,y,
+not merely evaluate it at saved scales. The moment compiler can expose
+the missing correlations and verify finite identities; an exact finite
+C_I value is not an all-scale upper theorem. Rational lag partitions
+chosen before arithmetic evaluation are legitimate detector templates;
+post-evaluation choices need an explicitly declared selection rule.
+
+The paid diagonal suggests where arithmetic effort belongs: the grammar
+should seek an upper control of the complete signed C_I or its aggregate
+risk. An unsigned triangle price for every pair can be much larger than
+the already paid diagonal, so it is not an automatic closure.
+
+4a. A paid band of nearby lags, with a cofinal cutoff parameter
+--------------------------------------------------------------
+There is a further noncircular partial correlation theorem. For every
+integer h>=1, (1.5) gives
+
+ |R_I(h)|<=sum_(j in I,n>=1)|kappa_j(n)*kappa_j(n+h)|
+          <=4*sum_(j in I,n>=1)|kappa_j(n)|
+          <=4*M1/L.                              (4a.1)
+
+The first line is an independently computable KERNEL-OVERLAP envelope
+and can be smaller than the following uniform bounds. Ordinary-mu
+squareful factors only contract it. No signed fixed-lag estimate is
+assumed. This argument retains the complete coalesced kernel at both
+arguments; independently splitting its T channels would be weaker.
+
+Choose any declared integer lag cutoff K>=0. Let
+
+ C_I^far(K)=2*sum_(h>K)R_I(h).
+
+The exact near/far splitting, (2.2), and (4a.1) prove
+
+ E_I<=((4+8K)*M1/L)+C_I^far(K)
+     <=((4+8K)*M1/L)+max(C_I^far(K),0).           (4a.2)
+
+If the near signed sum is negative, replacing it by its positive
+envelope is still valid. If the far signed sum is negative, its
+positive part vanishes and the same bound remains valid. Hence the
+ENTIRE raw head has the complete transfer
+
+ sum_(1<=j<J)|c_j|
+ <=F_head+B*sqrt((4+8K)*M1)+Risk_far(K),
+ Risk_far(K)=sum_I sqrt(|I|*max(C_I^far(K),0)).    (4a.3)
+
+Here B still counts dyadic ROW blocks; K counts near LAGS. They must not
+be confused. The case K=0 is exactly the unsplit theorem (3.4).
+The cutoff may exceed a block's maximum possible lag; absent lags are
+zero, and (4a.2) is still valid though needlessly coarse.
+
+For any positive rational delta choose K=floor(N^delta). By (2.3),
+the PAID part of (4a.3) is
+
+ O_delta(N^((1+delta)/2)*log(2N)^(3/2)).           (4a.4)
+
+The exponent cost delta/2 is explicit. A single fixed positive delta
+does not provide every epsilon. A cofinal declared sequence of positive
+rational deltas tending to0 permits the correct quantifier transfer:
+if for each delta in that sequence and every eta>0 one independently
+proves
+
+ Risk_far(floor(N^delta))
+   =O_(delta,eta)(N^((1+delta)/2+eta))             (4a.5)
+
+uniformly in N,y at both r endpoints, then for any requested epsilon
+choose delta<epsilon and eta<epsilon-delta/2. Absorb the paid logarithms
+using the remaining positive exponent gap. Formula (4a.3) then pays the
+requested O_epsilon(N^(1/2+epsilon)) head. Constants may depend on the
+chosen delta and eta, which is allowed; no uniform constant as delta->0
+has been assumed.
+
+Thus a detector can treat arbitrary rational delta as a construction
+parameter, with exact floors and charged bit/arithmetic capacities.
+There is no mathematical denominator whitelist. A finite pilot list of
+deltas is only a search sample; it does not by itself establish the
+cofinal family or (4a.5). The far risk remains OPEN. The merit of this
+partial theorem is that a whole small band of lags is already paid by
+source geometry, without demanding a separate Chowla-type statement
+for any fixed lag. It also allows future controls to be searched on
+larger signed lag groups, with their complete boundaries retained.
+
+5. Full-floor closure with an exceptional source: exact theorem
+--------------------------------------------------------------
+There is another reusable search rule independent of moment estimates.
+Let v(d) be any finite source supported on [1,X], and define its ordinary
+full inverse
+
+ A_v(j)=sum_(n<=X/j)mu(n)*v(jn),
+ c_v(j)=A_v(j)-A_v(j+1), A_v(X+1)=0.              (5.1)
+
+Every row, including the virtual final row, is present. Finite triangle
+and divisor counting give
+
+ ||c_v||_1<=2*sum_(j<=X)|A_v(j)|
+          <=2*sum_(d<=X)|v(d)|*tau(d).           (5.2)
+
+A slightly sharper positive envelope, if useful to an exact detector, is
+
+ ||c_v||_1<=sum_(d<=X)|v(d)|*
+                     [2*2^omega(d)-mu(d)^2].    (5.3)
+
+Indeed A_v(1) occurs only once in the full variation triangle, every
+A_v(j), j>=2, occurs twice, and sum_(n|d)|mu(n)|=2^omega(d).
+All the values in this refinement are unsigned factorization data.
+The simpler tau rule is sufficient for the all-scale conclusions below.
+
+Now let a detector construct an arbitrary finite full-floor closure
+
+ Q(d;r)=sum_X zeta_X(r)*floor(X/d),
+ e(d;r)=f_y(d;r)-Q(d;r).                          (5.4)
+
+Use D'=max(D,max used X); f_y is zero beyond D, but e need NOT be
+zero there if a larger horizon is introduced. Coalesce zeta and retain
+all d<=D'. Ordinary full convolution makes Q's inverse the coefficients
+zeta_X at j=X. Linearity and (5.2) prove
+
+ ||raw(f_y)||_1
+ <=sum_X |zeta_X|+2*sum_(d<=D')tau(d)*|e(d)|.     (5.5)
+
+This is an exact complete RAW source bound. It does not change the fill,
+assume an inverse norm, omit a boundary, or inherit a bound from a
+different source. It bounds the head as a subset as well as the whole
+raw coefficient norm. A candidate Q whose exceptional source is bounded
+and sparse provides a noncircular uniform certificate.
+
+The detector can search zero, the six-full-floor closure, signed
+subcombinations of those atoms, and other declared finite full-floor
+rules. The cost of e stays inside (5.5); a partial floor subcombination
+can have a large value near d=1 and must not inherit |e|<=2 without proof.
+For an affine zeta vector, the full RHS of (5.5) is convex in r when e
+is taken from the same affine source. Checking both endpoint costs bounds
+every r in[3/5,1]. This uses the complete vectors and common support.
+
+6. Exact paid lower and upper prefix strips
+-------------------------------------------
+For Q=0, |e(d)|<=1+r and support d<=y. Since
+
+ sum_(d<=y)tau(d)=sum_(a<=y)floor(y/a)
+                <=y*(1+log y),                 (6.1)
+
+the zero closure gives the universal complete raw bound
+
+ ||raw(f_y)||_1<=2*(1+r)*y*(1+log y)
+               <=4*y*(1+log y).                 (6.2)
+
+It pays all y<=sqrt N*log(2N)^A for any fixed A, with the usual
+O_epsilon(N^(1/2+epsilon)) rate. This extends the already known y<=H
+empty-long branch by a legitimate polylogarithmic prefix strip.
+
+For Q=F, e=-1[d>y]*F, so (1.1),(5.5) give
+
+ ||raw(f_y)||_1<=6*(1+r)
+                   +2*(1+r)*sum_(y<d<=D)tau(d).
+                                                        (6.3)
+
+There is an exact upper-exit chamber. Put
+
+ A_exit=max(floor(2N/3),floor(4N/5))=floor(4N/5).
+
+For every integer A_exit<d<=D,
+floor(4N/(3d))=1, floor(2N/(3d))=floor(N/(3d))=0,
+and all three q-channel floors are zero. Hence F(d;r)=1 independently
+of r. For any y>=A_exit, the complete exceptional source is exactly
+-1 on (y,D] and zero elsewhere. The stronger bound is
+
+ ||raw(f_y)||_1<=6*(1+r)+2*sum_(y<d<=D)tau(d).      (6.4)
+
+It includes y=D, when there is no exception. The inclusive floor
+definition of A_exit avoids losing a row when a real exit is an integer.
+
+For completeness, an elementary all-scale divisor bound is as follows.
+For delta>0 let B_delta=ceil(2^(1/delta)) and
+
+ C_delta=product_(prime ell<B_delta)(1-ell^(-delta))^(-2).
+
+This is a finite explicit constant. For ell>=B_delta, e+1<=2^e
+<=ell^(delta*e). For each smaller prime,
+(e+1)*ell^(-delta*e)<=sum_(a>=0)(a+1)*ell^(-delta*a)
+=(1-ell^(-delta))^(-2). Multiplying over prime powers proves
+
+ tau(d)<=C_delta*d^delta                         (6.5)
+
+for every positive d, without a prime-distribution theorem. Thus (6.3)
+and (6.4) pay every upper prefix strip
+
+ D-y<=sqrt N*log(2N)^A,
+
+at O_epsilon(N^(1/2+epsilon)), for every fixed A. Choose delta smaller
+than epsilon and absorb the fixed logarithmic power in the remaining
+exponent. The finitely many small N require no missing asymptotic branch;
+(6.3) remains an exact valid inequality there.
+
+More generally, (5.5),(6.5) pay any independently proved exceptional
+weighted support sum sum_d |e(d)|=O(sqrt N*polylog N), for D'=O(N).
+Support cardinality alone is enough when |e| has a fixed uniform bound.
+This is a reusable auxiliary control a detector can invent: construct
+a full-floor closure, then prove the size and amplitude of its exceptions.
+
+7. Source chambers and exact divisor costs without enumerating each row
+-----------------------------------------------------------------------
+For one horizon Z and h>=1, floor(Z/d)=h precisely on the integer interval
+
+ [floor(Z/(h+1))+1,floor(Z/h)].                    (7.1)
+
+The h=0 interval starts at Z+1. Group equal quotient intervals, and
+intersect their endpoints over the source and candidate horizons.
+Also include the source cut y+1, the exit D+1, and D'+1. Each resulting
+common chamber [a,b] has an exact constant value
+
+ e(d;r)=u_[a,b]-r*v_[a,b]                        (7.2)
+
+when the closure has the same affine channel convention; a general
+affine zeta gives an equivalent affine constant. The exceptional support
+is the union of chambers on which that constant is nonzero. Its exact
+cardinality is the sum of b-a+1 over those chambers, with no per-d
+source evaluation and no ordinary-mu sign table.
+
+Define T_tau(x)=sum_(d<=x)tau(d), T_tau(0)=0. The exceptional cost in
+(5.5) is exactly
+
+ 2*sum_chambers |e_[a,b](r)|*[T_tau(b)-T_tau(a-1)]. (7.3)
+
+The identity T_tau(x)=sum_(a<=x)floor(x/a) permits independent quotient
+grouping. A single floor has at most 2*floor(sqrt Z)+1 distinct positive
+quotient breakpoints, by splitting denominator indices at sqrt Z.
+Thus finitely many declared horizons yield a sparse chamber description;
+there is no obligation to enumerate all D' integers merely to certify
+source support or a tau-weighted cost. Endpoint costs remain exact
+rationals, because all chamber values at rational r are rational.
+
+Constructing the chambers and exact divisor summatory values is finite
+verification. To claim a uniform rate the detector must also prove a
+symbolic size or weighted support bound, as in the two strips above.
+Observing a small chamber cost at a few N does not supply that theorem.
+
+8. A concrete joined interior source for barrier certificates
+------------------------------------------------------------
+Take N=15k, k>=1, so D=20k. Choose y=16k=4D/5. The q-channel exit
+is 4N/q=12k; y is STRICTLY ABOVE it. Also 2N/p=10k<y.
+Thus the full source tail is exactly1 on (16k,20k], independently of r.
+The sparse dictionary is exactly
+
+ a_(16k)=+1, a_(20k)=-1,                         (8.1)
+
+at BOTH r endpoints and throughout the entire interval. This does not
+delete a q term; the q source is already zero on this exact tail.
+The six full horizons are 20k,10k,5k,12k,6k,3k, so d_1=0.
+The first head kernel, whenever J>1, is
+
+ kappa_1(n)=1[8k<n<=10k]-1[16k<n<=20k].           (8.2)
+
+The overlap on (10k,16k] has cancelled BEFORE norms. The two remaining
+intervals are disjoint and have integer lengths2k and4k. For all
+sufficiently large k, row1 belongs to the required head with H=floor
+sqrt(15k), J=ceil(H/2). The example is not an isolated indicator
+substitute: it is the actual joined truncated W source.
+
+9. Divisor-annihilator auxiliary: support barrier and full-span limit
+--------------------------------------------------------------------
+For any finite signed b(m), the full ordinary divisor identity gives
+
+ sum_n mu(n)*sum_(m:n|m)b(m)=b(1).
+
+For a kernel w(n), set
+
+ residual(n)=w(n)-sum_(m:n|m)b(m).
+
+Then exactly
+
+ sum_n mu(n)w(n)=b(1)+sum_n mu(n)residual(n),
+ |sum_n mu(n)w(n)|<=|b(1)|+sum_n mu(n)^2*|residual(n)|.  (9.1)
+
+This is a valid actual-Mobius search primitive. An unweighted residual
+price sum|residual| is also valid but weaker. It is essential that each
+divisor sum is complete; clipping it at small n destroys the contraction
+and leaves an additional boundary obligation.
+
+If b is supported on m<=L, then residual(n)=w(n) for every n>L.
+For (8.2), if L<=16k the residual price includes all squarefree n in
+(16k,20k]. An elementary lower estimate is enough. There are4k integers
+in this interval. A non-squarefree integer has a prime-square divisor;
+the number divisible by a^2 in an interval of length4k is at most
+4k/a^2+1. Summing over primes<=sqrt(20k), and bounding their sum by
+all integers a>=2, gives
+
+ #squarefree n in(16k,20k]
+ >=4k*(1-sum_(a>=2)a^(-2))-floor(sqrt(20k))
+ >=k-floor(sqrt(20k)).                            (9.2)
+
+The last inequality uses sum_(a>=2)a^(-2)<=1/4+integral_2^infty t^(-2)dt
+=3/4. Consequently this restricted auxiliary grammar has a linear
+positive-price lower bound at the actual source. In particular a
+horizon L=O(sqrt N*polylog N) cannot pay the whole head uniformly.
+This remains true even though the source kernels and channels were
+joined exactly before the residual norm.
+
+The barrier is scoped to the stated support cap and residual triangle
+price. It does not obstruct auxiliaries with current-scale horizons,
+signed residual moment controls, or a different admitted source closure.
+It is NOT a lower bound for |sum mu*w|: the signed ordinary-mu interval
+may cancel strongly.
+
+There is also an exact warning at the opposite extreme. Restrict to
+squarefree n<=X and allow every squarefree divisor column m<=X.
+The columns 1[n|m] form an invertible triangular zeta matrix. Its inverse
+has coefficients mu(m/n) on comparable squarefree indices. Therefore
+there is a representation with zero residual and
+
+ b(1)=sum_(n<=X)mu(n)w(n).
+
+The optimum in (9.1), with unrestricted coefficients and all those
+columns, is exactly the absolute target: the lower inequality follows
+from (9.1), and the full zeta inverse attains it. A primal/dual search
+over the complete current-scale span can certify finite bounds, but
+does not itself provide an independent all-scale estimate.
+
+The dual explanation is equally exact. With all m>1 columns present,
+the dual equations sum_(n|m)z_n=0 force z_n=mu(n)*z_1 recursively.
+With only m<=L columns, every coordinate n>L is unconstrained by those
+equations; placing z_n=sign(w(n)) there and zero below L gives the
+support-frontier lower certificate. Squarefree residual coordinates
+use the same reasoning with their exact squarefree support mask.
+
+For the vector head, direct d_j can be incorporated into w_j at n=1,
+because mu(1)=1. Independent full-span row programs then reproduce the
+exact head norm. An all-scale theorem still requires a constrained,
+source-bound auxiliary rule and an independently paid residual control.
+
+10. Exact fixed-prime pairing and a positive-price barrier
+--------------------------------------------------------
+Let P be a FIXED finite set of ordinary primes, R=product_(p in P)p,
+and E_p w(m)=w(pm). Splitting the ordinary mu sum by p valuation gives
+
+ sum_n mu(n)w(n)=sum_(p not dividing m)mu(m)*[w(m)-w(pm)].  (10.1)
+
+Terms of valuation>=2 have mu=0. Repeating this for distinct primes,
+with the rough mask retained, proves
+
+ sum_n mu(n)w(n)
+ =sum_(gcd(m,R)=1)mu(m)*Delta_P w(m),
+ Delta_P=product_(p in P)(I-E_p).                  (10.2)
+
+Every dilation is finite because w has finite support. The unit and
+all outside primes are retained. This is an actual ordinary-mu identity,
+not a free-sign relaxation. A natural paid positive price is
+
+ Price_P(w)=sum_(gcd(m,R)=1)mu(m)^2*|Delta_P w(m)|. (10.3)
+
+For (8.2), every m in(16k,20k] has w(m)=-1, and every nontrivial
+dilation in Delta_P has argument>=2m>20k, hence value0. Thus
+Delta_P w(m)=-1 on that entire interval for any fixed P.
+
+The number of integers in an interval of length B that are coprime
+to fixed R is at least B*phi(R)/R-phi(R). For a prime ell not dividing
+R, CRT shows that the number which are coprime to R and divisible by
+ell^2 is at most B*phi(R)/(R*ell^2)+phi(R). A non-squarefree R-rough
+integer has such a prime-square divisor. With B=4k and upper endpoint
+20k, the same union bound as (9.2) therefore proves
+
+ # {16k<m<=20k: gcd(m,R)=1, mu(m)^2=1}
+ >=k*phi(R)/R-phi(R)*(1+floor(sqrt(20k))).          (10.4)
+
+For FIXED P this is Omega_P(k). Consequently the exact fixed-prime
+pairing followed by the positive price (10.3) cannot prove the desired
+square-root head rate uniformly. The calculation preserves the joined
+source, uses its actual squarefree mask, and assumes no prime-counting
+asymptotic.
+
+Combining the same fixed-prime pairing with low-horizon divisor
+annihilators does not remove this survivor: a divisor column supported
+below L has no value at a rough m>L, and its prime-dilated values cannot
+gain support there. In the grammar consisting of (10.2), auxiliaries
+supported at m<=L<=16k, and residual triangle, the same lower bound
+survives. This statement does not cover arbitrary unrestricted arithmetic
+controls or new signed correlation certificates.
+
+The constants in (10.4) depend on the ENTIRE fixed R. Replacing P by all
+primes through a growing cutoff and reusing this lower bound would be
+invalid. Growing conditioning can change the arithmetic and resource
+regime, and is outside this scoped no-go theorem. Fully conditioning all
+needed factors can simply compute the exact target, as the full-span
+annihilator limit does; it supplies no growth theorem by itself.
+
+This is different from064's fixed-sign obstruction for a surrogate
+indicator and from065's growing-conditioning core_inverse analysis.
+It is a positive-price barrier for the actual joined raw source. It
+also does NOT obstruct the diagonal route: for row1 a diagonal of
+order N already has the desired square-root price after taking a square
+root. The missing work there is precisely the signed off-diagonal upper
+control, not a positive interval-length bound.
+
+11. Final proof obligations and preservation of the research goal
+----------------------------------------------------------------
+The following are proved here:
+
+ * Exact source amplitude |g|<=1+r and kernel amplitude |kappa|<=2(1+r).
+ * Uniform diagonal bound D_I<=4M1/L and a complete head transfer with
+   paid budget F_head+2B sqrt(M1) and explicit unpaid Risk_head.
+ * Exact lag decomposition E_I=D_I+2 sum_h R_I(h), with no new radius.
+ * Paid near-lag band (4a.1)-(4a.4) and the conditional cofinal-cutoff
+   transfer, with the signed far-lag aggregate explicitly unclosed.
+ * Complete raw full-floor-closure bound (5.5), exact source chambers,
+   and square-root/polylogarithmic lower and upper prefix-strip bounds.
+ * Scoped actual-source linear positive-price barriers for low-horizon
+   divisor auxiliaries and fixed finite prime pairing followed by triangle.
+ * The complete-span divisor auxiliary optimum encodes the exact target
+   rather than independently establishing an all-scale estimate.
+
+The following remain OPEN:
+
+ * The uniform aggregate signed off-diagonal risk bound (3.6), or a
+   different independent construction controlling the actual raw head.
+ * An exceptional-source closure with uniformly square-root weighted
+   support throughout the remaining interior prefix range.
+ * Any alternative growing-prime mechanism, with all boundaries and
+   constants paid, that goes beyond the scoped triangle barriers.
+ * The full requested signed-prefix bound and the research goal/RH route.
+
+No new bridge admission is claimed. No finite raw result is retroactively
+made into a uniform law. The source-closure theorem, diagonal baseline,
+and local positive-price barriers are concrete reusable rules, while the
+remaining signed correlation leaf is an explicitly dependent theorem
+that a future detector must actually prove.

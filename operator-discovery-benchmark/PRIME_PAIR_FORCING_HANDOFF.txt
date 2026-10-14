@@ -1,0 +1,105 @@
+COMPLETE PRIME-PAIR FORCING: VERIFIED PILOT AND NEXT CERTIFICATE LANGUAGE
+
+The goal remains active. No complete uniform signed bound or RH proof has been
+obtained. The next task is synthesis of signed-kernel certificates involving
+several arithmetic terms, with independently checked finite polynomial algebra
+and a separate uniform-template requirement. No external blocker remains.
+
+Verified run: prime-pair-forcing-results/pilot-001
+
+Eighteen source/proof/test files were frozen before response scores. Twenty-six
+tests passed; the independent audit passed all fifteen check groups. Three
+worker outputs reproduced byte for byte. Every original arithmetic pair was
+reconstructed independently, including interval log bounds, all zero terms,
+every primitive-height bin and every retained/complement endpoint.
+
+Twenty-eight proposals (fourteen per actual target mu and c=mu*lambda) are
+archived. Twenty fixed/logarithmic cutoffs have a supplied critical component
+envelope; eight positive-power cutoffs remain exploratory under this envelope.
+Six programs were selected before final responses. Three parallel analytical
+reviews cover all six; every full existential global claim remains unresolved.
+Review receipts establish provenance, not an authenticated runtime model or
+machine proof. The requested reviewer model was Sol 6.1.
+
+Training used X=1,2,4,8,16,32,64; validation 96,128,192. Final blocks were
+512,801,1024, through actual source horizon4095. The odd final block came from
+the candidate seal. The final work proxy was175013239, below the two-billion
+budget; this is not physical memory or total bit complexity. Actual arithmetic
+overlaps earlier experiments; these are not unseen-prime source holdouts.
+
+Final rigorous interval scores:35 passes,1 failure,36 missing constants,0
+unresolved intervals. Unknown q17 andq29 remain missing. The sole stored-bound
+failure is actualc, fixedB1, program1c55d3fa21cd, X1024,q12: normalized -R is
+approximately10.9231, above its stored bound approximately10. This refutes that
+stored constant at that scale, not an existential constant or RH. All actual
+claims, failure witnesses, zero terms and baselines are preserved in report.json.
+
+Exact complete identity and the missing sign
+
+For K_X(t)=max(0,2X-max(X,t)), J_X=K_2X-4K_X, N=4X-1,
+Delta_f(X)=sum_(i,j<=N)f(i)f(j)J_X(max(i,j))=J_X(1)-2*kappa*S_X,
+where kappa=1 for mu and2 for c, J_X(1)=-2X, and
+S_X=sum_(ka,b<=N,k=p^e) log(p)f(a)f(b)J_X(max(ka,b))/log(kab).
+All positive exponents occur for mu, only odd exponents for c. The exact
+coefficient identities are mu log=-mu*Lambda and c log=-2c*Lambda_odd.
+There is no extra symmetry factor inside S_X and no omitted exceptional unit.
+
+Writing a=gu,b=gv,(u,v)=1, partition by h=max(u,v)<=B(X). The same B is used
+throughout the complete J_X; child defects independently recompute their B.
+S_X=S_B+R_B. Supplied uniform bounds are
+ |S_B|<=8 X^2 B(1+log B)(1+log4X)                  for mu,
+ |S_B|<=8 X^2 B(1+log B)^3(1+log4X)^4             for c.
+B0 is exactly zero. Fixed and logarithmic B have critical envelopes; positive
+power B loses that positive exponent under this proof and is not promoted.
+
+The full remaining claim is a LOWER bound on R_B:
+for all sufficiently large integerq, a finite Cq independent of dyadicX obeys
+ -R_B(X)<=Cq X^2 ceil(X^(1/q)) at every dyadic X>=1.
+The known prefix charge would recover the complete original defect, then the
+original nonnegative block energy, and only then the ordinary-zeta pole bridge.
+The full signed remainder estimate remains unproved. For these critical cuts,
+the premise is equivalent in strength to the original missing energy control.
+
+What the analysis excludes
+
+Zero average of J does not remove a squarefree-density contribution when the
+logarithmic denominator varies. Integration by parts retains both a lower
+boundary and a signed drift. Actualc also has different gcd weights from mu;
+the coprime-squarefree density cannot be transferred to c unchanged.
+
+Distinct actual primes i,j above B retain both removal cores in the dense
+domain. Their weights log(i)/log(ij)+log(j)/log(ij)=1 preserve the full absolute
+pair contribution. This rules out a strict entrywise contraction obtained
+solely from this local prime-removal operation. It does not refute cancellation
+across groups of pairs or the actual RH target.
+
+The exact identity, partition, envelope and interval method were supplied.
+This numerical pilot learned only cutoff choices and stored constants; it did
+not discover the prime-removal identity or a uniform cancellation estimate.
+
+Next language and counterexample gate
+
+The post-freeze proposal prime_pair_forcing_next_certificate_scope.txt, reviewed
+independently in prime_pair_forcing_next_certificate_review.txt, introduces
+polynomial multipliers of exact arithmetic relations and nonnegative squares.
+Coprime cycles x_a*x_b*x_ab=x_ab^2>=0 are valid, including zeros. Their extra
+product factor cannot be removed to infer positivity of a bilinear target.
+Complete ordered pairs throughN may require actual products throughN^2.
+
+For any fixed finite prime setP, f_P(n)=mu(n)^2*(-1)^omega_P(n) satisfies all
+coprime cycles, complete squarefree support, correct local normalization atP,
+and every inverse row divisible by a prime inP. Nevertheless its mean is
+c_P*x+O_P(sqrt(x)), c_P=zeta(2)^(-1)*product_(p inP)(p-1)/(p+1)>0,
+and its complete defect is(28/3)c_P^2*X^3+O_P(X^(5/2)). The source gives an
+explicit finite error constant and all boundary charges. This is a counterfeit
+of partial premises, not actualmu or a counterexample toRH.
+
+Complete inverse rows already determine every actual coefficient, so nonlinear
+relations add proof representations rather than logically independent arithmetic
+information. A useful discovery must provide a reusable all-scale certificate,
+not encode every observed coefficient separately or leave the original signed
+bound as its own premise. Finite SOS feasibility alone proves no uniform law.
+
+New arithmetic_cycle_* development files are a separate, initially unfrozen
+stage. Their tests or future pilots must not be reported as part of this run.
+Preserve this run, its report and all earlier successful experiment bindings.

@@ -1,0 +1,27 @@
+Resource authorization retained from the user's current instructions
+
+The original anchored-storage-search-001 remains frozen at 6 GiB per worker,
+6 GiB total, 180 cooperative seconds and 600 external seconds per worker.
+Its dual failure was a charged-work failure, not a memory or elapsed-time
+failure. Its primal ended with a numerical solver failure, without a proposal.
+
+The user subsequently authorized increasing memory to 16gb if memory becomes
+limiting. In the existing GiB-based worker configuration this is retained as
+16 GiB per worker and 16 GiB total concurrent worker memory. This is permission
+for a future memory-limited run or separately frozen retry, not a requirement
+to consume more memory. The current same-support leaf replay retains 6 GiB per
+worker and 6 GiB total because observed worker RSS was below 0.7 GiB.
+
+The user also authorized extending runtime. The new, separately frozen leaf
+replay uses 360 cooperative computation seconds and a 1200-second external
+worker timeout. The original records and their limits remain immutable.
+
+The charged backend reconstruction work ceiling remains 450 million. The
+singleton-column optimization must fit that ceiling including its declared
+compilation, equation building, elimination, native, back-substitution and
+verification reserves. It keeps the exact original 703-variable support and
+full certificate cone. A work or solver failure is not mathematical
+infeasibility. User authorization persists; do not request it again.
+
+Use Sol 6.1 subagents only for substantial, long-running, parallelizable work.
+Handle small checks, fixes, notes and publication in the main thread.

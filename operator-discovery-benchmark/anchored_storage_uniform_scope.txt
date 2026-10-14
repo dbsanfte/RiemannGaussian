@@ -1,0 +1,212 @@
+Independent analytical scope for the typed anchored full14 storage extension
+
+This note is an algebraic and conditional recovery audit. It supplies neither
+an all-scale innovation estimate nor primal feasibility. Published and frozen
+sources are unchanged. The new checker imports the independent full14 source
+builder and independent polynomial/PSD checker, never the new producer backend.
+
+The complete state and the signed identity
+
+Let V_t contain prefix, half, even, mod3one, prime and every one of the nine
+unit-normalized divisor contrasts in the recorded order. For a fixed q choose
+one finite exact matrix K_q PSD, independent of t and X. Write
+
+  R_q = e_P e_P^T + K_q,
+  E(X) = sum_(X <= t < 2X) P_t^2,
+  S_K(X) = sum_(X <= t < 2X) V_t^T K_q V_t,
+  S_R(X) = E(X) + S_K(X),
+  Delta(A)(X) = A(2X) - 4 A(X).
+
+PSD gives S_R(X)>=E(X)>=0 at every scale, including X=1. The new target
+identity is exactly
+
+  D(X)-Delta(E)(X) = Q(X) + Delta(S_K)(X),
+  D(X)-Delta(S_R)(X) = Q(X).
+
+Here Q consists of the unchanged nonnegative scalar squares, the two unchanged
+regional full14 PSD Gram polynomials, valid signed arithmetic relations and
+any nonnegative scalar slack. Arithmetic relations vanish only after their
+actual premises have been admitted. The negative parent coefficient belongs
+to Delta(S_K). It is not a nonnegative Gram coefficient or an SOS term.
+
+The independent checker expands both complete regional sources, validates the
+typed child coefficient +1 and parent coefficient -4, and checks the transformed
+target D-Delta(S_R) with the ordinary independent SOS checker. K is one shared
+matrix across all instances. A PSD R alone is insufficient: the remainder
+R-e_P e_P^T=K must be PSD. The finite checker requires exact PSD of this
+remainder; it also reconstructs the initial unit state below. Independent
+source rebuilding remains mandatory in the enclosing run audit: rehashing a
+truncated caller-supplied source is not an independent source-completeness proof.
+
+Complete dual admission requires positivity of
+
+  H_K = H_child - 4 H_parent,
+
+in addition to the two regional moment matrices. Matrix entries include every
+atom cross polynomial and every formal constant. Upper-triangle compiler
+columns have coefficient two off the diagonal; moment entries do not. The
+entire scalar/Gram monomial domain is reconstructed independently. Missing
+coordinates are unsupported, never assigned zero. The current source geometry
+introduces no new monomials beyond the complete regional crosses, but it adds
+a signed PSD parameter cone and its additional dual condition. A negative
+direction of H_K invalidates that particular separator. It proves neither
+feasibility of this cone nor a uniform arithmetic inequality. Conversely a
+separator admitted only at finite scales excludes only the declared finite
+shared-template cone with its explicit auxiliary restriction.
+
+Exact constants, X1, and the old cubic gate
+
+The formal zero-variable constant vector is
+
+  z=(0,0,0,0,0,-1/2,...,-1/2).
+
+Every Gram constant is z^T G z, including all divisor-divisor cross terms.
+There are 2X child and X parent blocks, hence the storage RHS constant is
+
+  (2X-4X) z^T K_q z = -2X z^T K_q z.
+
+It is nonpositive and O_q(X) for fixed K_q, not a nonnegative SOS charge. This
+formal constant is distinct from the actual initial state. At X=1 the complete
+parent source uses t=1 and the actual unit x_1=1. Its state is exactly
+
+  v_1=(1,0,0,1,0,0,...,0),
+  S_R(1)=1+v_1^T K_q v_1.
+
+The half coordinate is P_0=0; all nine divisor contrasts vanish on the unit
+boundary. All mask and cross contributions survive in v_1^T K_q v_1. This is
+finite for every fixed finite rational K_q and is at least one. A zero formal
+storage charge does not permit dropping this initial cost.
+
+The previous scalar asymptotic for the unchanged mu dictionary, fixed finite
+shared weights and fixed integer q>1 is
+
+  B_old,q(X) = delta*gamma_q*X^3 + o_q(X^3), delta=1/zeta(2)>0,
+  gamma_q=-(56/3)b_all-12 b_head-(20/3)b_tail.
+
+It uses the complete child-rowmass norm sums, squarefree density, subcubic
+prime sums, fixed-kernel/modulus assumptions and the recorded normalization
+and constant extraction. Unit-normalized added fixed Gram terms are O_q(X).
+The new storage adds exactly -2X z^T K_q z, so
+
+  B_new,q(X)=delta*gamma_q*X^3+o_q(X^3).
+
+The old gamma=0 auxiliary can therefore be retained as a necessary gate for
+the following specific uniform certificate objective: (i) the fixed-template
+polynomial identity holds at every required dyadic scale, with PSD and actual
+relations; (ii) its extracted scalar budget is critical/subcubic, specifically
+O_q(X^(2+1/q)); (iii) the old scalar asymptotic hypotheses hold unchanged.
+
+Proof of both signs: gamma>0 contradicts requirement (ii), since 2+1/q<3.
+If gamma<0, the all-scale identity and nonnegative proof terms imply eventually
+
+  Delta(S_R)(X) <= B_new,q(X) <= -a_q X^3,
+
+for some a_q>0. This implication follows by matching nonconstant coefficients
+and replacing D by the exact extracted scalar B; any allowed nonnegative slack
+can only reduce the upper bound. Put W(X)=S_R(X)/X^2>=0. Then for all sufficiently
+large dyadic X,
+
+  W(2X) <= W(X) - (a_q/4)X.
+
+Starting at one such finite scale, iteration makes W negative because the sum
+of its dyadic X terms diverges. This is a contradiction. Only a finite starting
+state and nonnegative S_R are used; no upper growth assumption on the raw
+divisor channels or on S_R is required. Thus gamma<0 is also impossible under
+(i). This proves gamma=0 under (i)-(iii), but does not prove that gamma=0 makes
+the next-order scalar remainder critical. The recorded o(X^3) prime/density
+terms can still exceed X^(2+1/q).
+
+This necessity is NOT an unconstrained theorem about all possible innovation
+bounds or all finite certificates. An arbitrary uniform bound on the actual
+innovation need not supply this fixed-template critical scalar budget. A
+positive-gamma template with a cubic extracted budget might be accompanied by
+a sharper argument outside the present language. Finite identities alone also
+do not imply either asymptotic sign contradiction. At q=1 the subcubic premise
+fails and gamma=0 is an explicitly imposed restriction. The new descriptor
+therefore names the gate's conditional scope; any finite separation result must
+retain that qualification. Allowing K to grow with X, changing source weights,
+or normalizing only part of a centered channel invalidates this scalar proof
+and requires a fresh complete charge/growth calculation.
+
+Conditional uniform recovery, including the coercivity constant
+
+Suppose independently that for fixed q>0, finite C_q>=0 and fixed PSD K_q,
+
+  Delta(S_R)(X) <= C_q X^2 ceil(X^(1/q))
+
+holds at EVERY dyadic integer X>=1. Set a=1/q, W(X)=S_R(X)/X^2. Then
+
+  W(2X)<=W(X)+(C_q/4)ceil(X^a)
+        <=W(X)+(C_q/2)X^a,
+
+because X>=1. At X=2^m, exact summation gives the sharper conditional bound
+
+  W(X)<=S_R(1)+(C_q/2)*(X^a-1)/(2^a-1),
+  E(X)<= [S_R(1)+(C_q/2)/(2^a-1)] X^(2+a).
+
+The formula includes X=1 (an empty geometric sum). Its denominator is positive
+for q>0. The fixed anchor here is c_q=1. For the more general preregistered
+condition R_q-c_q e_P e_P^T PSD, c_q>0 independent of X, divide the recovered
+energy constant by c_q. An anchor that vanishes or depends on X cannot inherit
+this recovery; an alternative scale law would need its own proof.
+
+For the project's RH bridge, a single q=6 or any finite grid is insufficient.
+The recorded structural objective asks for some q0 and every integer q>=q0,
+with K_q, c_q and finite constants permitted to depend on q but not on X. A
+cofinal unbounded sequence of such q also yields energy exponents 2+epsilon
+for every epsilon>0, by choosing 1/q<epsilon and keeping that q fixed; this
+weaker schedule must be stated if used instead of the recorded every-q goal.
+The ordinary prefix-energy/Mellin bridge still requires its actual arithmetic,
+analytic continuation and growth hypotheses. The present algebra proves no
+pointwise square-root estimate and supplies no missing bridge hypotheses.
+
+The half-coordinate boundary and scale redundancy
+
+Let H(X)=sum_(X<=t<2X)P_floor(t/2)^2. For EVERY even positive integer X,
+each k in [X/2,X) has the two exact fibers t=2k,2k+1. Therefore
+
+  H(X)=2E(X/2).
+
+At X=1, H(1)=P_0^2=0. In particular H(2)=2E(1), so
+
+  Delta(H)(1)=2E(1),
+  Delta(H)(X)=2 Delta(E)(X/2) for dyadic X>=2.
+
+For K=e_half e_half^T the full state is consequently
+
+  S_R(1)=E(1),
+  S_R(X)=E(X)+2E(X/2) for dyadic X>=2,
+  Delta(S_R)(1)=Delta(E)(1)+2E(1),
+  Delta(S_R)(X)=Delta(E)(X)+2Delta(E)(X/2) for dyadic X>=2.
+
+The X=1 term must not be replaced by a nonexistent E(1/2) target. If the
+original Delta(E) critical inequality is already available uniformly, the
+last expression is bounded by at most (3/2)C_q X^2 ceil(X^(1/q)) at X>=2,
+with the separate finite X1 contribution charged. Conversely a uniform
+critical innovation estimate for this half-state recovers E by the telescope
+above. A uniform critical E bound in turn bounds Delta(E) by E(2X). Thus the
+two uniform critical targets are equivalent up to q-dependent constants and
+the starting scale. The half direction adds a previous-scale energy and no
+new signed prime information. It may still enlarge a finite shared certificate
+cone because the corresponding previous-scale inequality was absent there;
+that finite algebraic enlargement is not evidence of a new arithmetic estimate.
+The entire full14 K family is retained, rather than replacing it by this one
+diagnostic direction. No redundancy claim is made for every general K.
+
+Outstanding promotion obligations
+
+A finite accepted template must still be an exact structural formula valid at
+all required scales; numerical transfer checks cannot prove that identity.
+Every unit, floor, cutoff, prime-power, noncoprime and complementary source term
+must remain. PSD, valid arithmetic premises, shared matrix/coefficient laws,
+the complete scalar budget and any denominator signs require uniform proofs.
+Initial cost, fixed positive coercivity, q quantifiers and the actual RH bridge
+must be explicitly retained. These obligations are unresolved. No optimizer
+failure, resource failure, missing moment or witness invalidity is promoted to
+primal feasibility, mathematical infeasibility, an all-scale bound or RH.
+
+Reviewed sources: COMPLETE_GRAM_SEARCH_HANDOFF.txt;
+complete_gram_next_strategy.txt; check_cancellation_complete_gram_program.py;
+check_cancellation_shared_gram.py; grouped_arithmetic_mu_cubic_budget_review.txt;
+cancellation_cubic_gate_independent_review.txt; joint_gram_scalar_scope.txt;
+the complete X1 atom polynomials from the independent source builder.

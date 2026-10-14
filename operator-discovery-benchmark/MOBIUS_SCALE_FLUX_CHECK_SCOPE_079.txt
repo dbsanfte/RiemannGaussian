@@ -1,0 +1,92 @@
+Independent079 shared-index scale-flux checker
+==============================================
+Only new079 checker/test/receipt/scope files written; all frozen files unchanged.
+No producer import, scientific source query/result, old suite, hash or agents.
+Frozen independent077 interval/rational,078 factor cache/feature polynomial and
+fixed-kernel admission helpers reused. New arithmetic cells are independently
+queried by stable joint-category sorted integer positions and signed prefixes,
+not producer joint-category/band bincount. Largest-only factor source remains
+Eratosthenes independent of producer Euler source. Joint caches explicit/bounded.
+
+verify_cells(parent_intervals,child_intervals,P,gamma,payload,meter=None) payload
+exact schema scale-flux-cells-v1,u,child_u,bands,cells,flux_features,gram_upper.
+child_u=floor(u/2). Bands are strict complete source breakpoint union segments,
+zero-both coefficients omitted; exact parent_weight/child_weight formal polynomials.
+Each state independently uses H=max right, exact ceil gamma cutoffs/subcuts,
+degree-six terminal gate and explicit unit; category10 is outside its own H.
+Every squarefree gcd(n,P)=1 index in a band contributes one cell count and its
+ordinary mu signed count. Complete ordered cells omit only zero counts. Delta_i
+is parent_weight on its category minus child_weight on its category. Exact signed
+D sums use signed_count; full shared-index Gram B_ij uses count=mu² multiplicity,
+not signed_count and not separate parent/child samples. Upper triangle55 ordered
+entries each{i,j,terms}; terms sorted unique lexical token pairs with left<=right,
+canonical nonzero rational coefficient. ALL cross-token/category signs retained.
+Verified output VERIFIED_CELLS proves finite complete arithmetic/symbolic identity.
+
+verify_kernel_row(folded_kernel,u,intervals) independently expands generic rational
+fixed prefix coefficients at exact endpoints floor(u/divisor), unit token1 only,
+and compares complete coefficient functions by events. Returns VERIFIED_KERNEL_ROW.
+This binds a paid fixed-kernel norm to every actual parent/half interval row, not
+historical tags. Original fixed-direct kernel/fold admission remains separate.
+
+verify_local_leaf(row,ray,kappa,q,meter=None,precision=24) row exact u,flux_features,
+gram_upper,token_intervals. Proper nonzero ray has support1or2, never totalD asleaf.
+S=a.D and Q=a^TBa are exact shared-token polynomial forms with off-diagonal factor2.
+Certified rational intervals square zero crossings and preserve same-token squares.
+Finite S²<=kappa*u^(q-1)*Q passes only gap upper<=0; refutes only gap lower>0;
+otherwise UNRESOLVED_INTERVAL. q in[1,2),kappa>=0. Source cells/token root binding
+must be independently admitted before interpreting the leaf. No uniform leaf proof.
+
+verify_noncircularity(payload,ray,token_intervals,witness) witness exact first_cell,
+second_cell distinct positive-count actual cell indices. Complete polynomial
+coefficient determinant between proper-ray and totalD is independently reconstructed;
+VERIFIED_NONCIRCULARITY only if its exact enclosure excludes zero, otherwise
+UNRESOLVED_INTERVAL. This is coefficient geometry, not mu independence or covariance.
+
+verify_coefficient_norm(kernel,P,base,certificate) kernel BEFORE P folds, exact
+certificate I,E,K. Divisor inclusion-exclusion constructs already folded rational
+step. Integral I=sum step²*width and E=sum step² give ||c_u||²<=I*u+E by exact
+floorcount-error<=1 per stepband. K=I+E/base gives K*u for u>=base. Gram ray then
+Q<=2||a||inf²(||c_u||²+||c_h||²)<=3||a||inf²K*u when h=floor(u/2)>=base. Generic
+uniform coefficient theorem VERIFIED_UNIFORM_COEFFICIENT_NORM returns folded_kernel,
+max_divisor,sum_weights,excluded_primes and leaves arithmetic correlation unpaid.
+No originalG divisor or numerical outcome is hardcoded.
+
+verify_inactive(folded_kernel,gamma,base,indices) takes ALREADY folded kernel.
+Unit coordinate0 vanishes uniformly when base>=max folded divisor and sumweights0.
+Terminal r1..6 vanishes if r*gamma>=1: r distinct primes strictly above ceil(H^gamma)
+have product>H. Unsupported requested coordinates are UNSUPPORTED, never provedzero.
+Original/folded kernel and source-row bindings still required.
+
+verify_cover(target,rays,coefficients,kappas,K,certificate,precision=24) checks
+binary active-coordinate target=sum t*a exactly, proper rays, nonnegative kappas/K.
+Each sqrt upper of kappa*3K*||a||inf² is independently certified on2^precision grid;
+price=(sum |t|sqrtupper)², exact certificate price required. VERIFIED_CONDITIONAL_COVER
+is CONDITIONAL on ALL uniform covariance leaves, coefficient norm, separate
+noncircularity, inactive coordinates/source-row binding and commonq>=1. It proves
+no actual uniform signed target bound. Generic Young prices3*price for tau3/4 and
+2*price for tau1 follow conditionally; tau1 permits logarithmic normalized growth.
+
+All outputs retain uniform_correlation_proved=False,uniform_source_bound_proved=False,
+RH_proved=False and source/token binding requirements. Uniform norm/inactive statuses
+are coefficient/domain theorems only, finite_identity_only=False; other finite or
+conditional statuses do not promote arithmetic leaves. Prospective gates precede
+factor/query, repeated band-polynomial, quadratic, parsed Gram and folded-kernel
+allocations under4GiB perchecker/default3e11work; bounded256MiB joint prefix cache,
+100000 sparse terms/bands and frozen4096-bit input/100000-bit intermediates apply.
+External runner owns aggregate16GiB and input gates. No denseGram over indexpairs.
+
+Eight distinct tests pass;17successful executions over5retained attempts, receipt
+statusPASS. Tests cover complete signed cells/units/outside state, missing/tampered
+counts, Gram crosssign/multiplicity, source band mutation, finite pass/refutation/
+interval ambiguity, proper-ray scope, independent determinant witnesses, exact
+fixed/folded coefficient norms, inactive-domain constraints, conditional covers,
+fractional q, actual kernel-row endpoint/coefficient binding and prospective gates.
+Only tiny synthetic arithmeticH<=20 queried; no old scientific suite/source rerun.
+Root extension before freeze: verify_complete_base independently computes
+A=sum|b_d|/d and B=2base*A^2 from the already folded fixed prefix kernel.
+It proves every bounded-scale base value R(v)^2/v^q<=B for integer
+1<=v<2base and real1<=q<2, using |mu|<=1 and floor(v/d)<=v/d. It proves no
+large-scale signed estimate. Its proof was reviewed separately by Sol6.1;
+one new targeted test checks the price and two corruptions. Root authored
+this extension; the independent agent authored the other checker rules.

@@ -1,0 +1,28 @@
+{
+  "attempts": [
+    {
+      "modules": [
+        "test_mobius_count_control_076",
+        "test_mobius_count_control_integration_076"
+      ],
+      "tests_run": 12,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 1.5038164560100995,
+      "output": "test_byte_cache_does_not_retain_oversized_entries (test_mobius_count_control_076.Producer) ... ok\ntest_exact_signed_intervals_match_independent_checker (test_mobius_count_control_076.Producer) ... ok\ntest_feature_cache_bypasses_unbounded_inherited_lru (test_mobius_count_control_076.Producer) ... ok\ntest_grammar_has_variable_fractional_powers_without_duplicate_directs (test_mobius_count_control_076.Producer) ... ok\ntest_imported_feedback_really_changes_atoms_and_proof_mode (test_mobius_count_control_076.Producer) ... ok\ntest_lp_learns_signed_control_and_preserves_exact_budget (test_mobius_count_control_076.Producer) ... ok\ntest_rational_cauchy_budget_with_repeated_signed_atoms (test_mobius_count_control_076.Producer) ... ok\ntest_small_budget_rescale_is_exact (test_mobius_count_control_076.Producer) ... ok\ntest_learned_mixed_power_program_independently_admitted (test_mobius_count_control_integration_076.Integration) ... ok\ntest_low_gamma_requires_arithmetic_lemma (test_mobius_count_control_integration_076.Integration) ... ok\ntest_old_failure_cannot_be_overwritten_by_new_finite_pass (test_mobius_count_control_integration_076.Integration) ... ok\ntest_repeated_column_arbitrary_power_program (test_mobius_count_control_integration_076.Integration) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.163s\n\nOK\n",
+      "status": "PASS"
+    },
+    {
+      "names": [
+        "test_mobius_count_control_integration_076.Integration.test_complete_runner_pipeline_and_final_gate"
+      ],
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 2.005346044956241,
+      "output": "test_complete_runner_pipeline_and_final_gate (test_mobius_count_control_integration_076.Integration) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 1.666s\n\nOK\n",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,368 @@
+OBLIGATION-DRIVEN AUXILIARIES FOR THE COMPLETE CANDIDATE-10 REMAINDER
+
+Scope and recommendation
+------------------------
+This is a new source-only mathematical design review. It preserves every
+frozen study, source, result and analytical memo. I read the current
+SEMANTIC_POTENTIAL_DISCOVERY_HANDOFF.txt, its contract and generator, the
+legacy exact state language, and the candidate-10 analytical review. No
+new arithmetic evaluation, numerical experiment, test, hash, or parameter
+search was performed. Reported finite outcomes are not proof premises.
+
+The next search should generate a triple: an operator, a nonnegative
+auxiliary/storage state, and an exact argument reducing a NAMED unresolved
+term. The main priority is a checked recurrence, improved exponent, or
+unconditional bound for an actual mixed source term. Finite constant gains
+and semantic labels are secondary. Merely expressing the same remainder
+in a longer AST is a reduction, not a new bound.
+
+For candidate 10, the best concrete integration point is its exact joint
+three-channel state (a_u*a_v,a_u,a_v), followed by a complete largest-prime
+partition or the already proved outer hyperbola decomposition. Distinct
+new-prime transfer is diagonal in this state. This creates a genuine
+smaller-argument operator and identifies the smooth complement which a
+proof must also pay. The complete projected covariance is essential;
+separate RH-strength bounds on the channels cannot be silently assumed.
+
+No full uniform moment bound is proved here. The new exact largest-prime
+identity and the proof-search admission criteria below are mathematical
+outputs. They provide a concrete route to generating better obligations,
+not a claim that the remaining arithmetic cancellation has been solved.
+
+1. Fixed target, complete square, and the current proved frontier
+----------------------------------------------------------------
+Keep u=1/3, v=2/3, w=1/(uv)=9/2 and actual Mobius source mu. Define
+  a_b=mu*(n^(-b)), h_b=(a_b-delta)/b, p=h_u*h_v,
+  S(x)=sum_(n<=x)p(n)=D(x)+T(x)+C(x),
+  R(x)=T(x)+C(x)-m_u x^(2/3).
+The frozen output is
+  J(x)=R(x)+D(x)-m_v x^(1/3).
+The complete same-prime D and the smaller pole term have known finite
+critical weighted L2 costs. Thus cofinal subpower full moments of R and J
+are equivalent, with the finite head and enlarged constants included.
+They have not been proved. Removing a component from an analytic proof
+does not change a frozen candidate's output or finite scores.
+
+Put B(x)=C(x)-m_u x^(2/3). The actual next square is
+  E_R(X)=E_T(X)+E_B(X)+2<T,B>_X,
+  <f,g>_X=X^(-2)sum_(X<=n<2X)f(n)g(n).             (1.1)
+The proved T(x)>=c x/log x eventually makes its separate energy large.
+The required anticorrelation is not optional. Bounding E_T and E_B
+separately by bulk estimates and dropping <T,B> cannot prove this target.
+A new name for T+B or its negative correlation is not a new theorem.
+
+The other proved frontier is the complete outer hyperbola identity in the
+candidate-10 review. Its kernel remainder obeys |Delta_K(y)|<=19/2. On
+the short side U=x^(1/3), the full convolved error is
+  O(x^(1/3)(1+log x)),
+with a finite critical norm. The corresponding two single-channel short
+errors are O(x^(1/9)) and O(x^(-1/9)). These are valid paid leaves.
+The following remaining terms are NOT paid leaves:
+  weighted mu*mu and mu finite-prefix mismatches at 2/3 and 1/3;
+  the short prefixes M_2(U), M(U);
+  the coupled long-side T_K-T_u-T_v;
+  the rectangle -M_2(U)K(V)+M(U)[S_u(V)+S_v(V)].     (1.2)
+The mismatch against 1/zeta(1/3) is not an ordinarily convergent tail.
+Even a conjectural pointwise square-root M bound does not justify treating
+the 1/3 series as such a tail. It remains a finite-prefix/analytic-value
+compensation with its whole partners.
+
+The new renewal review also proves
+  (r_u*r_v)*p=(r_u-delta)*(r_v-delta)/(uv)>=0,
+where r_b=a_b^(-1) has positive coefficients. Its kernel has x log x
+mass and is unbounded on critical weighted L2, including on a positive
+compact input. This closes the NATURAL ABSOLUTE-CONTRACTION route as an
+invalid argument. It neither proves nor refutes a signed solution of (1.1).
+
+2. What the earlier semantic workflow already supplied
+------------------------------------------------------
+The earlier potential search was not merely a coefficient optimizer. Its
+language admitted source points and prefixes, inclusive sums, product
+factors inside summands, exact integer roots, masks, coprime conditions,
+coupled moving-prime/divisor banks, signed pairs and quotient commutators.
+It kept the complete original E_mu anchor in E_mu+sum nonnegative squares,
+the initial W(1), child selector recomputation, all mixed terms, and source
+and moving-domain complements. Its independent evaluator and independent
+semantic module reconstructed finite arithmetic and annotations. Mechanism
+slots and planned later selector transitions reduced calibration and
+dormant-cutoff selection effects.
+
+Its analytical follow-up already fed useful ingredients toward induction:
+smaller-scale root transfer with a decaying coefficient, parent-energy
+mask-jump cost, exact paired polynomial-Mobius correlations, and bounded
+or logarithmic boundary components. The handoff explicitly sought negative
+transport credit to pay the remaining complete drift. Repeating those AST
+families under new labels would not constitute the missing search step.
+
+The missing integration was a proof-obligation graph driving generation.
+The finite workflow mutated candidates selected by mechanism/finite cost.
+It did not require each mutation to name a residual mixed term, provide an
+exact rule that reduced it, and expose every unresolved claim imported by
+that rule. Its annotations correctly described scoped identities; they
+were not universal argument certificates or verified induction closures.
+
+A new search can reuse the scalar AST and arithmetic evaluators as finite
+diagnostics. It needs a separate argument language and obligation registry;
+changing numerical selection weights alone does not provide them. For
+candidate 10, rational powers are REAL algebraic weights, whereas the old
+root node is an INTEGER FLOOR root. These are different semantics. Fixed
+zeta residue constants also need exact symbolic identities or certified
+analytic bounds, not unqualified floating constants in a universal proof.
+
+3. Joint state and exact distinct-new-prime transport
+----------------------------------------------------
+Let b=a_u*a_v, and use the coefficient vector
+  z(n)=(b(n),a_u(n),a_v(n))^T.
+All three sequences are multiplicative. For a prime p not dividing m,
+put rho_u(p)=1-p^(-u), rho_v(p)=1-p^(-v). Then exactly
+  z(pm)=D_p z(m),
+  D_p=diag(-(rho_u(p)+rho_v(p)),-rho_u(p),-rho_v(p)).               (3.1)
+This is actual source arithmetic. The selected coefficient for n>1 is
+  p(n)=w(1,-1,-1)z(n),
+while p(1)=0. Equivalently
+  S(x)=w[B_0(x)-A_u(x)-A_v(x)+1],                (3.2)
+where B_0 is the prefix of b and A_b the prefix of a_b. The unit correction
+is indispensable. In the selected p basis the same identity reads, m>1,
+  p(pm)=-(rho_u+rho_v)p(m)
+           -w[rho_v a_u(m)+rho_u a_v(m)].        (3.3)
+Thus a coefficient-only rule for p which discards the other two source
+channels is false. Introducing them as AUXILIARIES is legitimate; assuming
+they already satisfy separate RH-strength estimates is not.
+
+Prime-power transfers have their complete local diagonal coefficients
+z(p^e); they are not all given by D_p^e. In particular b(p^e) may have a
+different sign because of the overlap of the two convolution factors.
+A generated bank must include those local terms when its domain permits
+p^2<=x. A squarefree-only transfer cannot be extended to all n by analogy.
+
+For an energy argument, retain the entire joint Gram matrix
+  G_X=X^(-2)sum_(X<=n<2X) Z(n)Z(n)^T,
+for the chosen complete centered/partitioned prefix state Z. A selected
+energy is a specified quadratic projection c^T G_X c. The off-diagonal
+entries are arithmetic covariances, not unconstrained PSD parameters to
+fit. A nonnegative storage can be generated as a finite sum of exact
+coupled squares (l^T Z)^2 with nonnegative fixed weights; that automatically
+certifies nonnegativity without inventing a numerical Gram inequality.
+
+4. A concrete complete largest-prime reduction
+----------------------------------------------
+Fix real x>=1 and y>=sqrt(x). Partition the coefficients of S(x) by their
+largest prime factor. Let S_sm(x;y) retain every n<=x with all prime
+factors <=y, including all powers and overlaps. If a largest prime p>y
+occurs, it occurs exactly once, and n=pm with m<=x/p<p. Thus p does not
+divide m and all prime factors of m are below p automatically. The entire
+other part, with no unlisted factor-order complement, is
+  L(x;y)=-sum_(y<p<=x/2)[(rho_u(p)+rho_v(p))S(x/p)
+                   +w(rho_v(p)[A_u(x/p)-1]
+                        +rho_u(p)[A_v(x/p)-1])].                 (4.1)
+The upper x/2 is exact because p at a prime is zero. Every argument on
+the right is at most sqrt(x). Directly in the joint basis, the same formula
+is minus w times
+  sum_(y<p<=x/2)[(rho_u+rho_v)B_0(x/p)
+                         -rho_u A_u(x/p)-rho_v A_v(x/p)].         (4.2)
+The m=1 terms cancel in (4.2); the explicit minus-one corrections in
+(4.1) express that cancellation without an implicit convention.
+
+Every same-prime D term belongs to the smooth part, since p^2<=x requires
+p<=sqrt(x)<=y. Consequently the COMPLETE reduced target is
+  R(x)=[S_sm(x;y)-D(x)]+L(x;y)-m_u x^(2/3).        (4.3)
+This is a useful operator/auxiliary/argument family. It converts one
+large-prime sector into smaller arguments through a proved source law.
+It does not call the smooth sector subcritical: numbers with many small
+prime factors can have full-size signed bulk. Nor does it prove the
+weighted prime sum in (4.1) is small by independently bounding its channels.
+
+At an integer doubling block one may choose, for example, a single
+Y(X)=ceil(sqrt(2X-1)) to make (4.1) valid for every n in that block.
+Child blocks must use Y(2X). If an auxiliary distinguishes smooth and
+large sectors, the primes between the old and new cutoffs generate a
+COMPLETE reclassification boundary, including their source coefficients,
+all newly allowed quotient domains, and every mixed square with the old
+state. Combining the two sectors leaves S unchanged, but their storage
+energies do change. Freezing the parent cutoff in the child or bounding
+only the newly entering primes drops terms from the full argument.
+
+For cutoffs below sqrt(x), the analogous rule must sum all powers p^e
+and impose the actual smaller-prime restriction on m. Those domains and
+local coefficients are valid grammar objects, but their omitted complements
+cannot be inferred from the simpler (4.1). A minimal first implementation
+should keep the simpler above-square-root partition and its exact complement.
+
+5. Auxiliary families generated from the obstruction
+----------------------------------------------------
+Each proposed auxiliary should carry its parent obligation and the exact
+subexpression it is intended to transform. Four small structural productions
+are enough to create new search ability without another coefficient fit.
+
+(a) COMPLETE PARTITION / RECOMBINATION.
+Partition a named signed sum by literal prime-power/composite support,
+largest-prime sector, coprime factor placement, or hyperbola short/long/
+rectangle domains. Generate a coupled square from two or more resulting
+pieces, and retain their exact recombination into R. A partition changes
+the unknown's structure; it proves no size estimate by itself. Smooth
+mainterms stay attached to the complete projection unless an exact residue
+identity supplies an allocation. Fitting independent pole shares to each
+sector is not an argument.
+
+(b) SOURCE-LAW TRANSPORT AND ITS DEFECT.
+Apply (3.1), the full prime-power law, or an actual coprime Mobius identity
+to a selected summand BEFORE squaring. Generate the transported state and
+the entire defect/complement. A new prime bank then controls a named
+cross term in (1.1), rather than appearing because bank states were cheap
+on finite samples. Moving domain corrections become explicit obligations.
+
+(c) SHARED HYPERBOLA / QUOTIENT COMMUTATOR.
+Use the already paid short kernel errors to generate a joint long state
+from (1.2), with its rectangle and weighted-prefix mismatches. Mutations
+change a factor placement or cutoff through an exact difference identity;
+the newly created commutator is the next obligation. Taking absolute
+values on separate T_K,T_u,T_v abandons the shared-source cancellation.
+The old semantic search could write a quotient commutator, but did not
+bind it to this particular paid frontier and its argument dependencies.
+
+(d) SIGNED SQUARE COMPLETION / TELESCOPE.
+Use 2ab=(a+b)^2-a^2-b^2 or the exact prefix increment
+  F(n)^2-F(n-1)^2=2F(n-1)g(n)+g(n)^2,
+  g(n)=p(n)-[the complete smooth-center increment].                (5.1)
+Generate storage from the coupled factors in the residual 2F g, not from
+an arbitrary target copy. All endpoint and weighting differences remain.
+The identity exposes the needed signed source correlation; the positive
+g^2 term alone is not a full drift estimate. Point multiplication outside
+a whole square can lose a mu sign; signed factors must occur inside the
+specific coupling whose cross is being transformed.
+
+Weights can come from exact source laws, discrete fibers, a fixed small
+rational structural menu, or an exact square completion. None should be
+chosen by a numerical optimizer or refitted to final responses. The search
+may reject a candidate whose new auxiliaries import harder unexplained
+RH-scale channels; it must first record them as unresolved rather than
+pretending their inclusion in storage proves them.
+
+6. What an argument certificate must actually prove
+--------------------------------------------------
+A candidate with nonnegative V and W=E_R+V preserves the complete target.
+If for cofinal q and every dyadic X a checked argument proves
+  W(2X)-W(X)<=B_q X^(1/q),                         (6.1)
+then telescoping, including W(1), proves the required subpower E_R bound.
+The initial center is not generally zero. Every stored component and
+child source domain must be recomputed at the child scale.
+
+A stronger route is a joint smaller-scale recurrence. An argument might
+prove nonnegative energies E_j obey
+  E_j(X)<=sum_(k,d) a_jkd(X) E_k(X/d)+B_jq X^(1/q),                (6.2)
+with a_jkd(X)>=0, strictly smaller admissible scales, exact dyadic covering costs,
+and a complete finite head. To use induction, it must supply positive
+h_j and a uniform rho_q<1 such that
+  sum_(k,d) a_jkd(X)h_k d^(-1/q)<=rho_q h_j.       (6.3)
+This is a genuine absorption/exponent test. Constants may be large for
+large q; they must remain finite for every member of a cofinal family.
+Smaller arguments alone do not prove (6.3). A coefficient sum greater
+than one may impose a positive growth exponent and block cofinal q.
+A coefficient sum equal to one can still give rho_q<1 through d^(-1/q),
+so a uniform strict gap at q=infinity is sufficient but not necessary.
+
+Scale-dependent recurrence coefficients require an exact all-scale product
+or summation bound. For example logarithmic losses can be subpower, whereas
+a fixed factor >1 repeated at every doubling gives a positive power.
+Such distinctions are analytically checked, not extrapolated from sampled
+coefficients. Multiple non-dyadic quotient arguments require their full
+covering map; monotonicity of a signed block energy cannot be assumed.
+
+An exact identity which maps the full target to another full target is
+recorded as an EQUIVALENT REDUCTION. A paid subcritical remainder, a reduced
+unresolved source domain, or a verifiable recurrence strengthens that
+reduction. None by itself closes the bound. A finite verified square
+identity proves its finite instance, not its all-scale quantifiers.
+
+7. Adversarial filters: aliases, cycles, and incomplete pairing arguments
+-----------------------------------------------------------------------
+Every obligation record needs the original source, full domain/endpoints,
+center, signed expression, exponent and quantifiers, together with every
+premise imported by its proof rule. Exact canonical payload equality,
+Dirichlet algebra, recombination identities and inverse rule pairs detect
+aliases without hashes. Finite response agreement cannot establish an
+alias. R renamed as a parity balance or a Gram cross remains the same
+unknown unless a new estimate is actually proved.
+
+The dependency graph must mark a chain
+  R moment -> M or A_b RH-scale moment -> RH -> R moment
+as circular if none of its RH-scale nodes has been established independently.
+Similarly a square-root M_2 estimate cannot pay (1.2) for free. Back edges
+are allowed for a valid scale induction, but only with strictly decreasing
+scales, complete base cases and a checked absorption condition such as
+(6.3). An unexplained recursion over the same scale is not induction.
+
+An arithmetic involution can be a useful argument production: add/remove
+a prime in a coprime factor configuration, or pair two source terms with
+opposite signs. It must retain ALL weight differences, repeated-prime
+cases, outside-domain partners and unmatched boundary terms. Pairing n
+with pn typically leaves a fresh interval near the cutoff. Interior
+cancellation does not prove that this boundary is subcritical. For the
+joint state, (3.1) shows exactly which weights and source complements are
+left when a new prime is paired; they cannot be declared equal by sign alone.
+
+There is a practical analytic falsifier for overly local arguments. A
+squarefree sign source which agrees with actual mu at finitely many small
+primes but has positive signs at all remaining primes obeys those same
+small-prime coprime laws, squarefree support, and |source|<=1. Its Dirichlet
+series has a positive pole at one. Actual-zeta center terms with exponents
+below one cannot remove the resulting bulk. Therefore an alleged full moment proof
+using only those finitely many laws and generic envelopes must also fail
+on that source, or must identify which additional actual-source premise
+excludes it. It has not obtained global signed cancellation merely by
+finding a fixed small-prime pairing. This does not forbid using small-prime
+rules as components of a proof that also retains unbounded-prime laws.
+
+8. Minimal concrete integration with the existing repository workflow
+---------------------------------------------------------------------
+The smallest useful implementation has three linked payloads, all using
+ordinal IDs and complete equality comparisons rather than new hashes.
+
+An OBLIGATION payload names R's exact complete square or a residual term
+in (1.1)/(1.2), lists paid component lemmas, and marks unresolved source
+claims. It includes source/domain/center and the cofinal quantifiers.
+
+An AUXILIARY payload reuses arithmetic ASTs but records its production
+from that obligation: complete partition, transport-plus-defect, shared
+hyperbola, or square completion. It preserves E_R and stores only proven
+nonnegative additions. Integer selectors and real algebraic weights have
+different types; their transition and child-domain obligations are explicit.
+
+An ARGUMENT payload is a short composition of exact rules: sum expansion,
+source multiplicativity under a checked coprime guard, domain bijection,
+hyperbola with rectangle, exact square completion, signed summation by
+parts, paid component inequality, dyadic cover, and recurrence closure.
+The checker verifies the identities and costs independently and returns
+the remaining obligations; a rule cannot mark an imported unknown lemma
+proved. Initially these rules can be narrow, including (3.1), (4.1) and
+the candidate-10 paid hyperbola frontier, rather than a general theorem
+prover or another broad expression sweep.
+
+Generation should consume the checker's residual obligations. If a cross
+remains, partition or transport one of its factors and generate the full
+new cross/defect. If a boundary fails, generate compensation using its
+actual source domain rather than enlarging a numerical constant. If a
+recurrence coefficient blocks cofinal exponents, seek a source-law or
+coupled cancellation that changes that coefficient, not a fitted weight.
+
+Selection first rewards a checked closed component, lower unresolved
+exponent, valid smaller-scale transfer, or fewer independent unresolved
+source claims. Exact equivalent reductions are retained as useful leads
+but cannot outrank an actual bound merely by lowering finite constants.
+Finite arithmetic evaluation can reject proposed constants at observed
+cases and help order open leads within the same proof-progress class;
+it does not set all-scale coefficients, exponents, or proof status.
+The earlier scoped semantic annotations and exposure planner remain
+useful diagnostics, with their existing limitations stated.
+
+Final status
+------------
+Proved new here: exact complete largest-prime transport of the candidate-10
+joint state, including the selected projection's unit corrections and
+the retained smooth/same-prime complement. Specified here: a concrete
+operator/auxiliary/argument grammar and independent admission tests that
+can feed unresolved correlations back into structural generation.
+Unproved: the complete covariance inequality (1.1), a closed joint dyadic
+recurrence, the cofinal R/J moment, and RH. The positive-renewal obstruction
+and all earlier paid components remain intact. No numerical study, test,
+source rescore, hash, or frozen-file edit was introduced.

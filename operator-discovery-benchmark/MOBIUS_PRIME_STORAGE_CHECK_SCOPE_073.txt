@@ -1,0 +1,114 @@
+INDEPENDENT SIGNED PRIME/COMPOSITE STORAGE CHECKER 073
+
+Interface: MOBIUS_PRIME_STORAGE_SCHEMA_073.txt v1.
+Implementation: check_mobius_prime_storage_073.py.
+Synthetic tests: test_check_mobius_prime_storage_073.py.
+Development receipt: mobius_prime_storage_checker_073_development.json.
+
+Independence and source admission
+---------------------------------
+The checker imports no producer, search implementation, or old checker.
+It has not read scientific candidates or scientific candidate outcomes.
+The only source oracle used in its development tests is independent trial
+division on newly generated synthetic sources.  No hashes are used.
+
+verify_data checks strict dataset/row/spec keys; canonical rational strings;
+the common profile denominator; ordered complete labels; increasing distinct
+positive integer scales; open lower and closed upper profile intervals;
+exact X=floor(max_hi*k); and exact smooth cutoffs using integer comparisons.
+Booleans are rejected where integers are required.  Profile bands are
+nonzero, disjoint, increasing, and in [0,100].  Theta is increasing in (0,1).
+
+An independent Eratosthenes sieve visits the multiples of every prime,
+counts distinct prime factors, records the largest prime factor, and zeros
+all squareful terms.  It reconstructs mu(1)=1 and mu(p)=-1, every prime and
+every composite contribution, all five signed sectors, and their signed Z
+sum.  Five prefix arrays evaluate each profile band exactly.  Smooth sums
+are offline two-coordinate prefix queries: squarefree events are sorted
+by their largest prime factor and inserted with their actual mu signs in
+a Fenwick tree indexed by n.  The tree answers all profile interval queries
+at each exact smooth cutoff.  No n-by-k source scan is used by the checker.
+
+Universal algebra and finite candidate admission
+-------------------------------------------------
+verify_candidate checks the fixed source spec/labels, 1<=q<=2, precision
+8..24, at most256 rays, strictly positive canonical rational ray weights,
+complete rational directions, and the required proof-scope flags.  Zero
+weight rays must be omitted.  A positive weight times the square of a
+signed rational linear form is nonnegative for every possible real state.
+Consequently E=Z^2+sum(weight*(direction dot state)^2) dominates Z^2 globally.
+The implementation computes each full signed dot product before squaring,
+so cross terms are retained.  This algebraic argument uses no finite source
+observations or search metadata.
+
+The candidate must contain the actual base E(1), every explicitly declared
+training child and floor(k/2) parent, and training_upper equal to the exact
+maximum of zero and ALL training upper drift enclosures.  That maximum
+must not exceed C.  Both odd and even children use the same floor parent.
+Candidate/source admission is explicit: the root runner must first call
+verify_data.  Candidate checks and evaluation validate dataset structure
+and exact cutoffs again, but do not duplicate the full source sieve.  Their
+returns identify this requirement via source_admission_required_separately.
+
+Power enclosures and resource accounting
+-----------------------------------------
+For q=a/b, the checker constructs the exact integer target
+T=k^a*2^(precision*b), then computes R=floor(T^(1/b)).  Integer comparisons
+establish R^b<=T<(R+1)^b.  Equality yields a single exact endpoint;
+otherwise the endpoints are R/2^precision and (R+1)/2^precision.  Integral
+q bypasses the grid exactly.  Square roots use integer isqrt; other roots
+use binary search and capped repeated squaring.  Comparisons do not form
+an oversize power.  Borderline powers whose actual size is100000 bits are
+accepted even when a coarse bit estimate is larger.  Every admitted
+rational input is at most4096 bits in numerator and denominator.  Integer
+and rational arithmetic guards intermediates at100000 bits, including
+unreduced products and sums.  Unsupported resource demands are rejected,
+never converted to floating-point evidence.
+
+Meter(limit=...) exposes cumulative ops.  Each API return reports that
+call's delta, operations.  Charges cover sieve actions, prefix construction,
+root comparisons, Fenwick updates/queries, sorting comparison estimates,
+and exact arithmetic.  The default cap is500000000 actions.  A conservative
+2GiB allocation gate for this checker leaves room below the16GiB aggregate
+budget for concurrent processes and JSON data.  Allocation estimates and
+bit/operation failures are visible as failed admission, with ResourceLimit.
+
+Finite evaluation outcomes and their limits
+--------------------------------------------
+evaluate_candidate(candidate,data,meter=None,scales=None) evaluates only
+explicit sorted unique scales when supplied; otherwise it evaluates all
+dataset scales>=2.  In either case k1 and every requested floor(k/2) parent
+are required.  It computes lower and upper drift bounds by using opposite
+normalization endpoints on the child and parent.  It returns:
+
+VERIFIED_ON_FINITE_DOMAIN: every requested upper drift bound is<=C.
+REFUTED: at least one requested LOWER drift bound is>C.
+UNRESOLVED_ROUNDING: no lower>C, but at least one upper>C.
+INVALID: malformed, incomplete, or unsupported resource-limited evidence.
+
+All exact lower>C witnesses are retained in witnesses and violating_scales.
+All lower<=C<upper outcomes are retained in inconclusive and
+inconclusive_scales, including when other scales refute the candidate.
+Each witness contains k, its parent, exact canonical rational lower/upper
+drift bounds, and C.  The return also retains exact worst_lower/worst_upper
+values and their witnesses.  An upper>C alone is never a counterexample.
+Equality with C is never a refutation.  A refuted candidate is not modified
+or refitted by the checker.
+
+Every successful finite return keeps uniform_recurrence_proved=false,
+uniform_head_bound_proved=false, and RH_proved=false.  The unpaid assertion
+is F(k)-F(floor(k/2))<=C for EVERY integer k>=2.  Only conditional on that
+assertion does the dyadic telescope give
+F(k)<=E(1)+C*floor(log2 k), hence the stated source slice bound.  Finite
+agreement never proves the assertion.  A single q>1 does not supply all RH
+epsilons.  Even q1 remains a necessary signed source slice, with the full
+head/core and full research objective open.
+
+Development verification
+--------------------------
+Two preserved suite runs passed:39 initial new synthetic tests, followed
+by41 tests adding mixed refutation/rounding retention and a sparse direct
+trial-division source oracle at endpoint X327680.  The second test remains
+synthetic and reads no scientific datasets.  The JSON receipt preserves
+all run test names, operation counts, elapsed times, returncodes, failures,
+and errors; unique_new_synthetic_tests=41 and final_status=PASSED.

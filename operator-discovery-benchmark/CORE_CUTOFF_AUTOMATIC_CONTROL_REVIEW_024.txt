@@ -1,0 +1,194 @@
+AUTOMATIC CUTOFF CONTROL: NONLINEAR PAYMENT AND JOINED SIGNED WORK
+
+Status: reusable conditional proof rules verified; actual signed work OPEN.
+Only this new memo was written. No source tables, numerical observations,
+tests, previous-file edits, or hashes were used. The kernel and transition
+identities are the reviewed mathematical primitives of Review022. The rule
+does not prove the current Mobius estimate or RH.
+
+1. Nonlinear maximum lemma, including its prefix quantifier
+
+Let E_n>=0 be finite real numbers for n>=1 and suppose, for n>=2,
+ E_n<=E_(n-1)+a_n E_(n-1)^r+b_n+R_n,
+ a_n,b_n>=0, 0<=r<1. Let U be an integer and put
+ M_U=max_(1<=n<=U)E_n, A_U=sum_(2<=n<=U)a_n,
+ B_U=sum_(2<=n<=U)b_n.
+Suppose EVERY prefix ending at V<=U satisfies
+ sum_(2<=n<=V)R_n<=C U^beta, C>=0.                       (1.1)
+The empty prefix is zero. No lower bound or pointwise sign on R_n is needed.
+Summing the recurrence to a maximizing V gives
+ M_U<=E_1+A_U M_U^r+B_U+C U^beta.
+With T=E_1+B_U+C U^beta, either M_U<=2T or
+ M_U/2<A_U M_U^r. Hence
+ M_U<=max(2T,(2A_U)^(1/(1-r)))
+     <=2T+(2A_U)^(1/(1-r)).                             (1.2)
+For r=0 use the conventional M^0=1 even at zero; alternatively prove that
+case directly. A_U=0 and U=1 cause no exception. The proof never uses the
+desired upper bound for E_n. It is a valid nonlinear recovery/payment rule.
+
+A bound only for the terminal sum at U is insufficient: a large intermediate
+positive forcing may be canceled by a later negative forcing. The planner must
+bind (1.1) for all prefixes, or supply an equivalent maximum-partial certificate.
+
+2. The current finite-shift kernel and its exact payment
+
+Use theta=2/3, sigma=9/20, and the complete centered kernel
+ D_theta(x)=sum_(k<=x)k^(theta-1)-x^theta/theta, x>0.
+The sum is zero below 1; its centering term is not. Integral comparisons give
+ |D_theta(x)|<=1/theta for x>=1 and
+ |D_theta(x)|=x^theta/theta for 0<x<1. Thus its global weighted squared norm
+ is at most
+ B=[1/(theta-sigma)+1/sigma]/(2theta^2)=100/13.
+The Mellin isometry in the inherited rule uses measure dt/(2pi |s|^2),
+ s=sigma+it. The complete centered kernel for zeta(s+1/3)q^-s consequently
+ has full squared norm <=B q^-2sigma. This includes all lower-tail and
+analytic-residue compensation; ordinary coefficient-moment convergence is
+not being substituted for that centering.
+
+For the exact head-corrected cutoff word
+ F'_U=zeta(s+1/3)[A_U(s)^2 E_U(s)^3-c_U^3 sum_(d<=U)d^-s],
+ q=U+1, the transition is
+ F'_q-F'_U=J_0+mu(q)J_o+mu(q)^2 J_e,
+ J_0=-c_U^3 zeta(s+1/3)q^-s.
+Review022 supplies the complete J_o,J_e, including all finite-head terms and
+residue updates. The J_0 term is present even when mu(q)=0.
+With |c_U|<=2 its full squared norm is at most
+ D q^-2sigma, D=4^3 B=6400/13.                           (2.1)
+
+Let E_U be the OLD-head low-height energy of F'_U. On precisely that common
+integration interval its zero-sign work is
+ W_0(q)=integral [2 Re(F'_U conjugate(J_0))+|J_0|^2].
+Cauchy, using only the norm in (2.1), proves
+ |W_0(q)|<=2 sqrt(D)q^-sigma sqrt(E_U)+D q^-2sigma.        (2.2)
+In particular its upper bound is noncircular. The rest of the exact common-
+head work is the JOINED signed integral
+ R_q=integral [mu(q)C_1+mu(q)^2 C_2],
+ C_1=2 Re((F'_U+J_0)conjugate(J_o)+J_o conjugate(J_e)),
+ C_2=2 Re((F'_U+J_0)conjugate(J_e))+|J_o|^2+|J_e|^2.
+Do not independently take absolute values of these components. Their target
+is a one-sided cumulative/maximum-partial upper bound, not a positivity claim.
+
+3. All moving shells and an explicit current-scale bound
+
+Use the exact cutoff-dependent head H_U=2 U^(45/2). The child's added shell is
+ S_q=integral_(H_(q-1)<=|t|<H_q)|F'_q(s)|^2>=0,
+ so exactly E_q-E_(q-1)=W_0(q)+R_q+S_q.                 (3.1)
+An old-source shell bound alone cannot pay S_q. Review022's constant-factor
+length extension pays the child's RAW shell by O(q^-1/16); the full centered
+child head has norm O(q^11/10). Triangle therefore gives
+ 0<=S_q<=C_shell q^11/10, EVERY q>=2,                   (3.2)
+after enlarging a fixed uniform constant. This is the corrected shell cost,
+not the unchanged raw high-tail saving. All q=2 and other finite-head cases
+are covered by that theorem's uniform constant, not by observations.
+
+Apply (1.2) with r=1/2,
+ a_q=2 sqrt(D)q^-sigma,
+ b_q=Dq^-2sigma+C_shell q^11/10.
+For U>=1, decreasing-function summation gives
+ A_U<=2 sqrt(D)/(1-sigma) U^(1-sigma),
+ B_U<=10D U^1/10+C_shell U^21/10.
+If every joined-work prefix up to U is <=C_R U^beta, then
+ M_U<=2E_1+20D U^1/10+2C_shell U^21/10+2C_R U^beta
+       +16D/(1-sigma)^2 U^[2(1-sigma)].                 (3.3)
+For beta=12/5 the last exponent is 11/10, and every paid exponent is strictly
+smaller than beta. A valid explicit uniform conclusion is
+ M_U<=[2E_1+20D+2C_shell+2C_R+6400D/121] U^12/5.         (3.4)
+The head-corrected U=1 word is exactly zero by mu(1)=1, A_1=E_1(arithmetic)=delta,
+so its low-energy base is zero. The abstract rule keeps E_1 for other matched
+words, and a finite base can always be carried explicitly. The coefficient
+state E_U(arithmetic) and the energy E_U must be distinguished in metadata.
+
+Thus automatic recognition and kernel payment of J_0 genuinely removes a
+formerly unnecessary unsigned forcing premise. Only the COMPLETE joined odd/
+even work remains open, subject to the stated shell and base certificates.
+
+4. Equivalence scope and stronger optional controls
+
+For the current parameters, the cumulative joined-work target is equivalent,
+up to uniform constants, to the original all-integer low-energy goal. One
+direction is the unconditional implication (3.3). For the other, assume only
+for this converse that E_V<=C_E V^beta for all integers V. The exact recurrence
+and S_q>=0 give, for every V,
+ sum_(q=2)^V R_q=E_V-E_1-sum W_0(q)-sum S_q
+              <=E_V+sum |W_0(q)|.
+By (2.2) the latter work sum is
+ O(U^[beta/2+1-sigma])+O(U^[max(1-2sigma,0)](1+log U)).
+When beta>=2(1-sigma)>0, it is O(U^beta); at equality the first summation
+is a power sum, not a new logarithmic loss. Here beta/2+1-sigma=7/4<12/5.
+For the forward direction the shell prefix must ALSO be O(U^beta), as it is
+here. This parameter check is a proof gate. Outside it, do not advertise
+equivalence or a paid J_0 recovery merely by naming cumulative work.
+
+A consecutive bound R_q<=C q^(beta-1) is a sufficient but stronger option.
+The global E_V bound does not imply such small consecutive increments.
+Likewise, a fixed-ratio endpoint bound alone does not cover every cutoff.
+A sufficient dyadic bridge is, for EVERY dyadic B and B<V<=2B,
+ sum_(q=B+1)^V R_q<=C_block B^beta.                      (4.1)
+Complete blocks and the last partial block give every global prefix by the
+geometric series, with constant at most C_block/(1-2^-beta) when beta>0.
+At beta=12/5 one may use the rational upper constant 4C_block/3. For beta=0
+this argument instead pays an additional log U; it does not give a bounded
+all-prefix sum. The planner must track that log-degree change. It may search
+consecutive, cumulative, or maximum-partial work controls, but should not
+force the strongest version as the definition of success.
+
+The equivalence result is not an independently proved signed arithmetic gain.
+It makes the missing forcing explicit and pays the J_0 sector without assuming
+the target. Actual Mobius cancellation in R_q still needs a valid theorem or
+an OPEN uniform lemma. Finite passes cannot supply it.
+
+5. Safe automatic finite-polynomial kernel recognition
+
+One sound larger class is
+ J_0(s)=zeta(s+u) sum_l gamma_l c^i_l a^j_l b^k_l v^ell_l,
+ a=1/q, b=q^-s, |c|<=2, q>=2,
+ where all monomial exponents are nonnegative integers. Suppose v is a SCALAR
+head coefficient with a proved |v(q)|<=q^(d-1), integer d>=1. Then triangle,
+kernel dilation, and (2.1)'s general kernel primitive give
+ ||J_0/s||<=sqrt(B) sum_l |gamma_l|2^i_l
+                    q^[ell_l(d-1)-j_l-k_l sigma].       (5.1)
+All residues and unit/lower-tail conventions accompany this bound. If v=d_d(q),
+the complete d-fold divisor coefficient, its elementary bound d_d(q)<=q^(d-1)
+is valid: freely choose the first d-1 ordered factors, each between 1 and q.
+For d=0, v=d_0(q)=0 at q>=2, so terms containing v vanish. The constant monomials
+without v remain. Other sequences need an independently bound source rule;
+their name or formal degree is not a proof of |v|<=q^(d-1).
+
+Let N_q be the right side of (5.1). Always use
+ |W_0(q)|<=2N_q sqrt(E_(q-1))+N_q^2.
+Apply the maximum lemma with A=2 sum N_q and B=sum N_q^2 plus the ACTUAL shell
+bound. There is no need to choose a leading exponent if a finite sum yields a
+better exact symbolic cost. If N_q<=C q^kappa is used, the nonlinear contribution
+has power 2(kappa+1) when kappa>-1; at kappa=-1 it has log degree 2; when
+kappa<-1 it is bounded. Sum N_q^2 has its own harmonic boundary kappa=-1/2.
+The planner must compare every resulting exponent and log degree with its
+generated target before declaring payment. A higher-degree head J_0=-c^m
+d_d(q)zeta(s+u)q^-s, bounded in this crude way, has kappa=d-1-sigma and induced
+power 2(d-sigma). It may be UNPAID even though the present d=1 rule is paid.
+That is a limitation of the majorant, not a disproof of the arithmetic target.
+
+Reject automatic use of (5.1) if v is a Dirichlet POLYNOMIAL rather than a
+scalar, if J_0 retains A/E or extra unbounded zeta factors, if a denominator
+depends on a possibly zero state, if exponents are negative, or if its purported
+zero-sign coefficient still depends on the formal mu(q) variable. For a signed
+inverse-divisor head, first expand its true dependence on mu(q) and repartition
+J_0,J_o,J_e; then prove the surviving scalar bound. Cancellation of meromorphic
+poles must remain complete before using a centered-kernel norm.
+
+6. Provenance and final scope
+
+This is an analyst-supplied GENERAL lemma and kernel recognition class. A
+detector can compose it automatically with its compiled exact transition,
+search control types and exponents, verify recovery and shell costs, and emit
+the remaining joined-work leaf. It is not an automatic proof of that leaf,
+and no preferred source candidate or fitted constant has been nominated.
+The planner must retain source binding, complete analytic residue updates,
+all integer/prefix quantifiers, finite base, target exponent/log degree, and
+the distinction between symbolic payment and finite diagnostics.
+
+The full original signed core remains authoritative. A paid optional component
+or equivalent cutoff control is not a proof that every remaining source sector
+is bounded. Whole-core coupling may be more effective than independent
+component bounds. All arithmetic uniform leaves and global/RH claims stay OPEN.
+
+This memo is final and stable; edits have stopped.

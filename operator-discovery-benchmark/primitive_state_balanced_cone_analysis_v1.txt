@@ -1,0 +1,252 @@
+Balanced cone-distance continuation: mathematical analysis v1
+2026-10-09. New memo and synthetic tests only. Publication020 and all preceding
+published/frozen files remain immutable. No actual source replay, new response
+column, research endpoint, or solver run. Authoritative evidence is
+PRIMITIVE_STATE_CONE_JACOBI_SEARCH_HANDOFF.txt and publication020 manifest
+51eab7070562e9f03162f88baec9f14707118a170b823b5cead86c3139218e4f.
+
+Recommendation
+The three-block frozen-normalizer minimax method is a credible, distinct next
+proposal experiment. It explicitly controls the scalar/C/H defect envelope,
+addressing the scalar-dominated improvement with worsening matrix penalties in
+020. It preserves the same free chart, all signed coefficients, all cones and
+the exact endpoint gates. It promises neither convergence nor a feasible point.
+Repeated failed Armijo trials, numerical model stationarity and resource stops
+must remain proposal dispositions, not infeasibility or mathematical conclusions.
+
+Observed motivation, not new numerical evidence
+020 reports total137796.3421 ->1307.3979, scalar137796.0358 ->1304.3359 and
+matrix0.3062548 ->3.0619900. Its exact endpoint has227 negative squares, two
+negative slacks and two PSD failures. Both original equations and535-bit exact
+free coordinates are verified. A smaller total penalty did not ensure joint
+cone improvement. The new method should not reuse total scalar+matrix merit as
+its acceptance criterion or silently change block normalizers during the run.
+
+Objective and exact zero set
+Let x=c+Nf be the licensed exact affine chart, D its strictly positive020 dyadic
+scale, and f=f018+D*z. Let A_s select all366 square/five slack coordinates,
+A_C select C, and A_H select H=P+4C, with full symmetric Frobenius metric.
+Write p_i(z)=dist(A_i x(z),K_i)^2/2, where K_s is the nonnegative orthant and
+K_C,K_H are PSD cones. In the ideal exact-real model each p_i is nonnegative,
+convex and continuously differentiable. Its gradient is
+ g_i=(N*D)^T A_i^T[(A_i x)-projection_K_i(A_i x)]/b_i
+for normalized r_i=p_i/b_i. Matrix coordinate adjoints require offdiagonal
+factor2, and the H contribution to C has factor4.
+
+Freeze b_i=max(exported initial numerical p_i,2^-40), as EXACT positive rational
+values reconstructed from the canonical80-digit/dyadic initial records. The
+floor is a declared normalization policy, not an estimate of spectral noise or
+a mathematical lower bound on a true defect. All three b_i stay fixed for every
+trial/iteration. Then F=max(r_s,r_C,r_H) has zero set exactly equal to simultaneous
+cone feasibility in the ideal exact model, regardless of which positive b_i are
+chosen. Using numerical penalties still requires the independent exact endpoint.
+If all initial penalties exceed the floor, initial r_i=1. Any strictly accepted
+first decrease forces every block below its own initial penalty. At every later
+point, p_i<=b_i F defines a contracting envelope; individual raw penalties may
+increase between accepted steps. E.g b=(100,1,1), p=(50,.8,.7) to(55,.7,.6) gives
+F .8 ->.7 while the scalar penalty increases. Below-floor blocks can increase
+above their initial raw defect within the floor-scaled envelope; no claim that
+all raw blocks normalize1 or decrease at every step is justified.
+
+Exact proximal linear model and simplex dual
+At current z, r_i and g_i denote normalized values and gradients. For alpha>0,
+minimize over d,t:
+ t+||d||^2/(2alpha), subject to r_i+g_i*d<=t for i=0,1,2.
+Its three-weight dual is
+ maximize r*lambda-alpha*||sum_i lambda_i g_i||^2/2,
+ lambda_i>=0, sum_i lambda_i=1.
+The primal direction is d=-alpha*gbar, gbar=sum lambda_i g_i. Define
+ q_i=r_i+g_i*d, t=max_i q_i and nu=sum_i lambda_i q_i.
+For ANY simplex lambda, kappa=t-nu>=0 equals the primal-dual model gap:
+ [t+||d||^2/(2alpha)]-[r*lambda-alpha||gbar||^2/2]=kappa.
+At an exact optimum kappa=0; KKT requires q_i<=nu for every i and equality for
+positive weights. These identities give cheap independently checkable finite
+export diagnostics without claiming gradient or QP correctness.
+In particular,
+ t<=F_old-||d||^2/alpha+kappa.
+A tiny direction alone should not be described as model stationarity if its
+reported/recomputed model gap is large. Exact d=0 with exact KKT is stationarity
+of the convex maximum and hence a global minimum; a positive such minimum would
+have no feasible zero in that exact finite convex model. Numerical calculations
+cannot establish those hypotheses, so NO infeasibility flag follows.
+Initial allzero numerical defects may stop explicitly as numerical zero-defect;
+the exact endpoint must still be checked before finite admission.
+
+Ideal Armijo derivation and practical limits
+If normalized block gradients are L_i-Lipschitz, L=max_i L_i gives
+ F(z+d)<=t+(L/2)||d||^2
+          <=F_old-(1/alpha-L/2)||d||^2+kappa.
+With exact model optimum, the proposed Armijo rule
+ F_new<=F_old-||d||^2/(8alpha)
+is guaranteed when alpha<=7/(4L). Alpha<=1/L is a simpler conservative bound.
+A finite power estimate is not a certified L. Three fixed halving trials need
+not reach a safe step: for identical p_i(z)=z^2/2 at z=1, alpha64,32,16 all fail.
+Each halved alpha MUST recompute the simplex model and d; merely halving the
+previous direction is wrong. For r=(2,1,0), g=(1,-1,0), alpha1 chooses lambda
+(.75,.25,0), whereas alpha.5 chooses(1,0,0); both directions are-.5, not scaled
+copies. Native PSD gradients/penalties and80-digit model solving remain numerical
+proposal data. Exact mathematics above explains the design, not a convergence
+certificate for its mixed-precision implementation.
+
+Seven-face solution and degeneracies
+All3 vertices,3 edges and1 full simplex face suffice for an exact concave
+quadratic in three weights. For edge lambda_i=t,lambda_j=1-t, h=g_i-g_j:
+ t=clip_[0,1](((r_i-r_j)/alpha-g_j*h)/||h||^2)
+when ||h||^2>0. If h=0, the edge objective is affine in t and a vertex maximizes
+it; never divide by zero or invent a preferred mixture.
+For full face set u=g_0-g_2,v=g_1-g_2, a=u*u,b=u*v,c=v*v,
+ h0=(r_0-r_2)/alpha-u*g_2, h1=(r_1-r_2)/alpha-v*g_2.
+If det=ac-b^2>0, solve
+ s=(c*h0-b*h1)/det, t=(a*h1-b*h0)/det,
+and keep( s,t,1-s-t ) only when all weights are nonnegative. Values outside the
+simplex are not legitimate interior candidates and must not be used uncorrected.
+If the exact Gram is singular, a nonzero null direction within sumlambda=1 keeps
+gbar constant. Along that line the dual objective is affine: any interior optimum
+is either improved toward a boundary or is flat and can be moved to a boundary.
+Therefore some boundary candidate realizes an exact optimum, including rankzero.
+
+A numerical near-singular threshold is a different statement. The agreed fixed
+relative threshold2^-160 can skip the interior as an explicitly numerical-only
+fallback; it does NOT prove exact singularity. E.g u=(1,0),v=(1,2^-100) has true
+det2^-200>0, below that threshold. A materially negative Gram determinant or
+nonfinite data should return UNKNOWN; small rounding-level negative determinants
+may trigger the declared boundary fallback. Export determinant/threshold/skipped
+status and model gap. Boundary fallback preserves a valid simplex proposal but
+may miss the correct model optimum, impair descent or produce numerical stops.
+
+Weight quantization and diagnostics
+The proposed2^-240 grid is suitable for exact finite simplex exports. Floor the
+first two feasible weight coordinates onto that grid, then set the third to
+EXACT1-minus-their-sum. Nonnegativity and sum1 are preserved, with at most241-bit
+integer representations, within269-bit arithmetic. This can perturb a zero third
+weight to a tiny positive weight and change support; it licenses no face claim.
+Re-score ALL retained candidates AFTER quantization, choose the declared first
+maximum in deterministic face order, and compute d from the selected quantized
+weights. A small absolute weight error does not imply small gradient/model error
+when gradients are large. Model gap/KKT diagnostics and actual Armijo remain
+important. Export all three r_i/gradients, Gram/dot records, each candidate score,
+selected weights/direction, gap, trial alpha and exact decision metadata for the
+independent consistency checker. That checker verifies algebra of finite exports,
+not exact global QP optimality or the numerical PSD gradient.
+
+Warm continuation and exact endpoint
+Reuse positiveD records and the complete020 final_z_mp, while keeping the exact
+publication018 base f018. Initial z=z020 reproduces the verified020 exact free
+coordinates as the unrounded rational expression f018+D*z020. Do not replace the
+base by a269-bit approximation of020's535-bit free vector. The initial actual
+forward map should be calibrated against the exact020 projected vector, with
+source/chart/018base/020endpoint/norm records independently bound. Subsequent
+final endpoints remain exact f018+D*z_end, with complete free exports and the
+original rational restoration/lift/equality/sign/PSD checks. This retains the
+535-bit starting point; it does not promise every numerical update preserves
+every tiny bit after fixed-precision rounding of z itself.
+
+Work, memory and admission
+No new norm-column research pass is necessary to reuse the positiveD: source
+binding plus independent positivity/scale/endpoint identity checks suffice, with
+norm correctness still uncertified. Balanced gradients can require up to three
+adjoint passes rather than one. If gradients are computed for every rejected
+trial, the worst-step reserve must include those extra passes; prefer merit-only
+trial evaluation and accepted-point gradient computation when practical. The
+small3weight model costs O445 dot/vector operations per candidate, much smaller
+than the sparse forward/adjoint passes, but every trial/model export and byte
+reserve must be counted. Preserve one joint450m budget, worst-three-trial reserves,
+last-complete-point budget stops, rational bit caps and independently checked
+initial/final bindings. Iteration count alone is not a resource bound. Trace caps
+must account for three445-gradient vectors plus model diagnostics; use streamed
+byte accounting before allocation, not a final serialization surprise.
+
+Tests and limits of this review
+The exact tiny-model oracle in test_primitive_state_balanced_cone_soundness.py
+currently has13 passing tests: interior duality/KKT, identical gradients, singular
+full face, positive stationary toy minimum, alpha-halving recomputation, floor/
+zero-set rules,535-bit warm-coordinate preservation, ideal safe-step Armijo,
+three-trial failure, nonoptimal modelgap, individual raw-block increases, exact
+simplex quantization and near-singular-vs-singular distinction. These are exact
+rational calibrations and counterexamples, not horizon sampling as universal
+arithmetic evidence. No actual chart replay or numerical research was performed.
+The full signed arithmetic control, universal operator identity and RH bridge
+remain unresolved even if a future finite balanced endpoint passes its cones.
+
+Agreed model-consistency tolerance before implementation freeze
+The fixed proposed gate is |kappa|<=1e-40*S with
+ S=max(1,max_i|r_i|,max_i|q_i|,alpha||gbar||^2).
+Excess or nonfinite gap returns UNKNOWN with no hidden retry. This is a
+numerical consistency policy, not a certificate of exact model optimality.
+The unit floor loses relative resolution when F is far below1e-40, so this
+policy alone cannot justify a tiny-defect or exact stationarity claim. Only
+successful exact original endpoint checks can promote finite cone feasibility.
+
+Actual-code review addendum before freeze
+The landed primitive_state_balanced_cone_search.py has now been reviewed, along
+with run_primitive_state_balanced_cone_search.py. The own test file now contains
+20 passing focused tests (about0.05s), with direct core API tests added to the
+13 exact oracle calibrations. No full suite or actual-source replay was run.
+
+simplex_model implements the derived edge/interior formulas, preserves edge
+support when quantizing edge t, floors the first two interior weights, then
+re-scores before deterministic selection. Direct tests compare its nontrivial
+interior weights to the independent rational oracle/grid; identical gradients,
+singular full faces, alpha-dependent weights and genuinely positive but tiny
+determinants behave under the declared numerical policy. Nonfinite inputs,
+nonpositive alpha and operation caps are rejected. No QP certificate is claimed.
+Gram-subtraction edge curvatures can suffer cancellation for nearly identical
+large gradients and return UNKNOWN on negative rounding. This is sound but can
+impair robustness. Direct difference-vector dot products would be a prospective
+fixed-precision improvement, requiring explicit producer/checker protocol
+agreement; the current method makes no promise that such cases complete.
+
+block_metrics separates scalar/C/H penalties and their normalized gradients;
+an analytic offdiagonal two-by-two example verifies p=(2,9/2,169/2) and the
+normalized gradient factors, with a tolerance appropriate to binary64 spectral
+parts. weighted_power_operator agrees with a separately derived exact dyadic
+map example. It uses homogeneous forward actions, all scalar coordinates and
+correct C/H adjoints, with each curvature block divided by its fixed normalizer.
+
+warm_setup reconstructs and validates the exact018-base plus saved020 increment
+before numerical conversion. A direct one-coordinate fixture with D=2^-17 and
+z020=2^-518 retains f=1+2^-535. Its actual forward value rounds to1, yet the exact
+relative drift is below1e-40 and is reported; that bounded calibration is not
+confused with exact numerical reproduction. The exact endpoint preserves
+1+2^-535, and rejects changed warm identity or a rounded starting free export.
+Only lift/cone-diagnostics are mocked in this endpoint arithmetic fixture; its
+output is not admitted as a mathematical certificate.
+
+The fixed iteration limit is now96, with130m numerical proposal allocation,
+5m reused-scale/warm setup,50m materialization,20m exact endpoint and the joint
+450m runner ledger. Reuse computes zero new homogeneous norm columns. The
+runner reserves25m final archive audit before work, and keeps one seed/job.
+Actual worker input-binding and independent-check reserves still must be bound
+by its completed receipts; this review does not replace that accounting.
+
+iteration_work_reserve covers three complete models/forward diagnostics/native
+metric trials plus three accepted block adjoints. The model200n+8192 allowance
+covers its9 Gram dot products, candidate scoring and aggregate/direction dots;
+metric6w covers coordinate assembly and normalization, in addition to native
+2*96*15^3 eigensolve work. Full normalized entry counts conservatively dominate
+offpivot/RHS-skipping sparse actions. Serialized iteration reserve65536+12*96n
+covers three block-gradient vectors plus each trial's model direction,z and
+approximate-free vectors, with bounded model/native metadata. Final reserve
+8192+3000n covers4096-bit exact free rational strings plus final mp/diagnostics.
+The producer charges and bounds each complete encoded entry and stops before
+starting another if its worst-step work/bytes or finalization reserve is missing.
+Only the last completed accepted z is exported. Unexpected live-cell, time,
+serialization or mathematical-consistency failures can still produce UNKNOWN;
+96 does not promise96 completed steps.
+
+The runner declares original_objective_preserved=False because the proposal
+objective changed, while retaining all original equality/sign/PSD endpoint
+requirements. This is the correct scope. The previous scalar-sum objective,
+finite feasibility checks and the unresolved universal/RH problem must not be
+conflated. No new finite endpoint, convergence result or infeasibility conclusion
+was produced in this review.
+
+Final preregistration resource clarification
+The unchanged numerical method now reserves an explicit20m synthetic-test
+allowance in the preparation/binding stage and130m for the research proposal.
+The integration suite passed57 tests, with12186653 returned proposal operations
+across14 synthetic calls. Short authentic histories exercise nonzero models,
+halving, budget stops and failed-gap diagnostics; tamper cases reuse their
+records. The20m allowance is separate from byte-based binding work and the
+1MiB metadata reserve. This exchanges20m of proposal allowance for explicit
+test accounting, retaining the joint450m ceiling and independent checker room.

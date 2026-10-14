@@ -1,0 +1,101 @@
+SIGNED ROUGH-PRIME TRANSPORT AFTER THE077 METHOD OBSTRUCTION
+
+The077 interval experiment is fixed.48 distinct(q,operator) jobs represent
+all51 proof programs from076.672 complete source/fold/bound checks passed.
+The squared coefficient upper prices fell to about0.129..0.327 of their
+unfolded discovery maxima, but every checked coefficient lower price was
+too large for the old residual budget. All48 fixed-prime l1 methods also
+have independently checked UNIFORM obstructions. This does not reject
+the actual signed arithmetic candidates or repair old076 counterexamples.
+
+The new mobius_rough_transport_077.py module CONSUMES that method theorem:
+route_obstruction blocks the fixed finite-prime absolute-coefficient branch
+as a uniform bound method and retains the original signed residual and
+its existing obligations. postrun_next_search_input.json has48 concrete
+jobs linked to frozen077 constructions and the complete076 dispositions.
+
+Exact signed states and threshold transport
+
+Let c be the complete folded coefficient function, E its finite horizon,
+P the excluded primes, Q=product(P). Define
+ T_c(y)=sum_(n<=E,gcd(n,Q)=1,leastprime(n)>y)c(n)mu(n),
+with leastprime(1)=infinity. This convention retains the unit. Count-power
+tokens in c come from the PARENT arithmetic operator. A child c(p*m)
+inherits these tokens; it must not recompute normalization from new counts.
+
+For1<=y1<=y2 the exact least-prime identity is
+ T_c(y1)-T_c(y2)=-sum_(y1<p<=y2,p notin P)T_(c(p*.))(p).
+Each squarefree n with smallest prime p factors uniquely as n=p*m with
+leastprime(m)>p; strict inequality excludes p^2 and gives mu(n)=-mu(m).
+Squareful terms vanish. The implementation creates the COMPLETE actual
+prime roster and scaled coefficient intervals(floor(l/p),floor(r/p)].
+Excluded primes, empty children, units and interval boundaries are literal.
+
+Setting y1=1 gives the coupled residual decomposition
+ R=T_c(1)=T_c(y)-sum_(p<=y,p notin P)T_(c(p*.))(p).
+Both the terminal part and the prime-child part stay SIGNED. Bounding
+their absolute values separately would discard the interaction needed
+after the077 coefficient obstruction. Merely renaming their difference
+as an energy is not a new bound.
+
+Terminal prime-factor polynomial
+
+Introduce the exact finite generating polynomial
+ F_c(y,z)=sum_(n<=E,squarefree,gcd(n,Q)=1,leastprime(n)>y)c(n)z^omega(n).
+Then T_c(y)=F_c(y,-1), and threshold transport becomes
+ F_c(y1,z)=F_c(y2,z)+z sum_(y1<p<=y2,p notin P)F_(c(p*.))(p,z).
+
+If y^(K+1)>=E, the STRICT roughness condition forces at mostK prime
+factors. Enumerate increasing DISTINCT primes, preserving signs by layer.
+The K=2 terminal is exactly
+ c(1)-sum_(p>y,p notin P)c(p)
+      +sum_(y<p<r,pr<=E,p,r notin P)c(pr).
+It involves actual prime and semiprime contributions jointly, without
+using observed Mobius values to fit a cancellation. Higher admitted layers
+follow the same parity rule. An omitted unit, p=r term, excluded factor or
+wrong endpoint invalidates the certificate.
+
+rational_cutoff computes ceil(E^gamma) by exact integer-root arithmetic
+for any admitted nonnegative rational gamma, with bit/work gates rather
+than square/cube/sixth-root restrictions. terminal_degree finds the required
+factor depth. The current pilot admits degree0..4 and at most500000 actual
+products. A cutoff that needs more layers is UNRESOLVED for this terminal
+backend, not an arithmetic counterexample; use another construction or
+extend its explicit resource budget. This is no restriction on the
+mathematical class of rational cutoff exponents.
+
+Independent verification and completed tests
+
+The new checker imports no producer. It independently sieves the complete
+prime roster, verifies every transport child function, enumerates ordered
+prime products, and compares full graded coefficient polynomials, counts
+and their signed sum. It accepts equivalent interval partitioning. Each
+token remains a formal real quantity; its actual interval/source binding
+comes from077 admission. No token independence is assumed.
+
+Eight new producer/integration tests pass in8 executions, including exact
+recombination against a small independent Mobius-factor fixture, prime and
+semiprime signs, cutoff root denominators53/7/1000, inherited parent tokens,
+unit/empty cases, work gates, and executable obstruction routing.
+Eight independent checker tests pass;11 executions include one corrected
+fixture boundary error (13 was outside(13,16], so the fixture was corrected
+to(12,16]). Every attempt is retained and final receipts are PASS. No old
+test suite or Mobius scientific experiment was rerun.
+
+Next actual bound search
+
+The signed rough-transport SCIENTIFIC SEARCH HAS NOT RUN yet. The work here
+implements, independently verifies and tests its construction rules and
+routes the actual077 obstructions into them. Generate frozen cutoff/state
+families, complete terminal prime-factor kernels and all smaller-prime
+children. Search a coupled energy of that vector whose signed projection
+is R, retaining prime/composite and child cross terms.
+
+A valid argument must pay BOTH the projection inequality and a uniform
+growth bound for that energy, closing every generated kernel/cutoff state.
+An energy exactly equal to R^2, or a fitted finite matrix with no uniform
+arithmetic estimate, simply restates the target. A varying number of prime
+children requires constants uniform in that number and all parameters.
+The complete unit, counts, boundaries, source base and original head/core
+transfer remain mandatory. The finite graded identities are exact but are
+not uniform prime/semiprime correlation estimates or an RH proof.

@@ -1,0 +1,27 @@
+{
+  "operations": 12498,
+  "runs": [
+    {
+      "test": "test_check_core_control_synthesis",
+      "returncode": 1,
+      "operations": 9817,
+      "tests": 8,
+      "runtime_seconds": 0.07670671699452214,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_control_synthesis operations=9817\n",
+      "stderr": "E.....E.\n======================================================================\nERROR: test_complete_log_bank_unit_and_accumulated_head (test_check_core_control_synthesis.ControlTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_control_synthesis.py\", line 102, in test_complete_log_bank_unit_and_accumulated_head\n    truncated = deepcopy(fixture)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 231, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 206, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"/usr/lib/python3.10/copy.py\", line 161, in deepcopy\n    rv = reductor(4)\n  File \"<stringsource>\", line 2, in flint.types.arb.arb.__reduce_cython__\nTypeError: no default __reduce__ due to non-trivial __cinit__\n\n======================================================================\nERROR: test_measurement_and_recurrence_domain_failures_preserve_charges (test_check_core_control_synthesis.ControlTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_check_core_control_synthesis.py\", line 172, in test_measurement_and_recurrence_domain_failures_preserve_charges\n    bad = deepcopy(fixture); bad['G'][4] = arb('nan')\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 231, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/usr/lib/python3.10/copy.py\", line 206, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"/usr/lib/python3.10/copy.py\", line 161, in deepcopy\n    rv = reductor(4)\n  File \"<stringsource>\", line 2, in flint.types.arb.arb.__reduce_cython__\nTypeError: no default __reduce__ due to non-trivial __cinit__\n\n----------------------------------------------------------------------\nRan 8 tests in 0.007s\n\nFAILED (errors=2)\n"
+    },
+    {
+      "test": "test_check_core_control_synthesis",
+      "selection": [
+        "test_check_core_control_synthesis.ControlTests.test_complete_log_bank_unit_and_accumulated_head",
+        "test_check_core_control_synthesis.ControlTests.test_measurement_and_recurrence_domain_failures_preserve_charges"
+      ],
+      "returncode": 0,
+      "operations": 2681,
+      "tests": 2,
+      "runtime_seconds": 0.06182042000000365,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_control_synthesis operations=2681\n",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+EXACT PRIME-ADJUNCTION AUXILIARY SEARCH -- PILOT001, 9 October 2026
+
+Input is the complete ordered-prime covariance obligation from the independently
+verified prime-bank pilot. The source basis B=a_u*a_v,a_u,a_v and its local
+rational series are supplied. u=1/3,v=2/3,beta9/2; p=beta(B-au-av+delta).
+For the smooth-bank tensor retain all h>=2 with at least two distinct prime
+factors (a=p there), all k>=2, q prime coprime to h,k, and the COMPLETE original
+intersection kernel. The other h have a(h)=0. High-smooth restriction remains
+complete when its paid low-index complement is removed. Bank-bank tensors
+retain both cofactor indices and two explicitly distinct primes. Repeated
+primes are a separate binding with the actual local prime-POWER coefficients.
+
+Grammar: all sparse same-prime actions(e,f), e+f<=4, support1..3; primitive
+integer coefficients±1,±2, first nonzero positive. Also all rectangular sums
+e=a..b,f=c..d, b+d<=6, coefficient1; and every sparse signed combination of
+the four assignments of TWO DISTINCT prime labels to the two tensor legs.
+The latter has support1..4 and the same primitive coefficient rule. Expected
+word counts13385,210,272 follow combinatorially. Duplicates between grammar
+families remain labelled; these counts are words, not claims of distinct or
+historically new operators. No expected winner is asserted in the search.
+
+Named prime slides and single-leg prime-power sums were considered analytically
+before this run. Their identities are calibration fixtures in the tests.
+This is proof-directed exact enumeration within an explicit supplied grammar,
+not a claim of model-independent invention of those calibrations. All candidate
+outcomes, including unsuppressed and unrecoverable stencils, remain archived.
+
+Each candidate is expanded on all9 ordered tensor source components. Its
+coordinatewise prime-weight orders and full polynomial l1 constants are exact.
+Zero or cancelled components cannot hide leakage through common B components.
+For positive weights b_j, the COMPLETE support bound has power
+  1-theta*sum_j b_j, theta3/4,
+with the appropriate single-prime smooth/bank or two-independent-prime bank/bank
+geometry, logarithmic factor(1+log2X)^2, and explicit source/tensor constants.
+Two separate1/3 weights do not have the power of a squared single2/3 bank.
+This bound is a theorem for the transformed auxiliary when its premises hold;
+it does not supply domination or recovery of the original energy.
+
+Selection keeps one candidate in each family/baseline-recovery lane by cofinal
+auxiliary availability, strongest proved power, term count, coefficient size,
+then ordinal. An additional mixed(u,v) channel lane remains explicitly
+component-only. An auxiliary with a nonzero baseline coefficient retains EVERY
+other lifted term as an open recovery obligation. All outside/inverse-image
+supports, units, prime-power exceptions, main terms and other Gram blocks must
+be paid in any eventual target proof. No conditional recovery is discharged.
+
+Producer uses local generating-series recurrences. Independent checker uses
+literal prime-power convolution and independently reconstructs all9 full
+polynomials for EVERY candidate, its exponent, constant, geometry and scope.
+An independent membership/cardinality/uniqueness check establishes complete
+grammar coverage; the declared ranking is reconstructed separately. Both parent
+and audit workers have the stated address-space limit.
+No large arithmetic source table is built or rerun. Exact rational tests use
+small unrelated parameter values. No numeric fitting or final-data adaptation.
+
+Budget150m charged proxy units across development, frozen tests, enumeration,
+all independent audits and1m metadata reserve;1800seconds,16GiB aggregate,
+4GiB per process,12m scalar cells. Independent audit uses two disjoint worker
+batches with partitioned remaining budget. One owned development suite per
+module; affected checks after fixes only; one complete frozen suite. Preserve
+every checkpoint on failure; no reset or unchanged rerun. Freeze direct bytes,
+input, proofs and tests after owners stop editing; no hashes. Older archives
+and all prime-bank source/proof files remain untouched.

@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "command": "python -B -m unittest test_core_truncated_inverse",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_truncated_inverse operations=404476\n",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.173s\n\nOK\n",
+      "operations": 404476,
+      "elapsed_seconds": 0.2427363770257216
+    },
+    {
+      "command": "python -B -m unittest test_core_truncated_inverse.InverseSearchTests.test_centering_retains_large_divisors_and_drift",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_truncated_inverse operations=22430\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\n",
+      "operations": 22430,
+      "elapsed_seconds": 0.07014409700059332
+    },
+    {
+      "command": "python -B -m unittest test_core_truncated_inverse.InverseSearchTests.test_complete_source_binding_and_component_bounds",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_core_truncated_inverse operations=155378\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.066s\n\nOK\n",
+      "operations": 155378,
+      "elapsed_seconds": 0.1431457180005964
+    }
+  ],
+  "operations": 582284
+}

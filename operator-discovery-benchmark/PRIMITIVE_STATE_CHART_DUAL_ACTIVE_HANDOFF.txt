@@ -1,0 +1,76 @@
+Publication035: bounded coupled-face search; return to structural discovery
+Date: 2026-10-09
+Archive: cancellation-arithmetic-results/primitive-state-chart-dual-active-001
+
+Outcome
+NONCERTIFIED. The complete numerical trajectory improved the scaled relative
+residual from032's0.5298381360646995 to0.36595733935481395. Its selected final
+support contains216 positive weights. The sole original-coordinate exact
+support solve failed with inconsistent exact native-support equations.
+No certificate, candidate bound, template-infeasibility theorem or RH result
+was obtained. The independent audit verified workflow and numerical accounting;
+it did not independently replay numerical scores or Krylov equations.
+
+Method and diagnostics
+Same licensed031302x687 system,7550 nonzeros, same exact positive infinity
+scaling and851 original rays. The new method starts from032's full selected
+vector and computes fresh residuals. A nonnegative active set uses sparse
+diagonally preconditioned CGLS to correct all active coefficients together.
+When an unconstrained correction crosses zero, the method moves to the first
+boundary, removes all minimizers and refines the surviving face next time.
+Every strictlypositive selected coefficient is retained for exact restoration.
+
+All19 completed face solves reached their128-step inner cap:2432 CG updates.
+The initial face and18 subsequent refinement faces were all damped;20 boundary
+positions were removed. No new column was entered in this bounded trajectory.
+The search stopped at its reserved work boundary, with a fresh final diagnostic.
+Final absolute residual0.025389618559322844 and weighted mapping norm
+0.00042786643695123854 remain floating diagnostics, not certified KKT evidence.
+The selected point is iteration19, not a reused old checkpoint score.
+
+Validation and resources
+Producer16, independent core10 and root workflow12 development tests each ran
+once. The single frozen combined suite passed all38 tests in2.080s. Metered
+development2,573,512 plus frozen2,573,512 plus1m root/scaffolding reserve totals
+6,147,024 within25m. A Sol6.1 reviewer read the mathematics, code and all tests
+without duplicating them. No mathematical or admission blocker was found.
+
+Model108,670 proxy operations/346815 peak cells/540 rational bits;
+numerical174,937,400 operations/357957 cells; exact restoration182,952
+operations/556952 cells/497 bits; independent audit55,759 operations/291112
+cells. Their subtotal before preparation is175,284,781. Independent input I/O
+charged232,412 units on7,436,689bytes. Proxies are not CPU instruction counts.
+The complete450m reservation remains40m preparation,40m model,190m numerical,
+90m restoration and90m sole audit. No retry or allowance reset occurred.
+
+Producer15.082798s wall/15.065336s CPU,67148KiB peakRSS and one thread;
+numerical13.468913s. Independent audit0.172243s wall/0.172231s CPU,496896KiB
+process peakRSS. Enforced sequential6GiB process caps and3600s cooperative
+deadlines; producer external deadline7200s. Neither time nor memory bound.
+Proposal73328bytes; review3137bytes; snapshot28files/374270bytes. No hashes,
+source rebuilding, old reduction replay, research retry or second audit.
+
+Research correction requested by the user
+The recent032-035 sequence increasingly optimized coefficients in one fixed
+finite template. This can diagnose that template; it cannot discover arithmetic
+structure outside it. A better residual is not a newly discovered operator.
+This experiment closes that sequence. Do not follow it with another optimizer
+variant, seed sweep, restart or tighter solve of the same851-ray system.
+
+The next work must connect generated expression trees to COMPLETE signed-bound
+evaluation. Existing signed AST sampling does not feed its exploratory leads
+into the full potential/defect compiler; the convolution-control search uses
+a supplied fixed54-feature dictionary. A structural generator should instead
+alter the arithmetic expression, index transformations and scale relationships,
+retain complete target/remainder and initial-storage costs, preserve several
+selection criteria, and carry explicit uniform analytical proof obligations.
+Coefficients may be part of discrete program syntax; coefficient optimization
+must not replace structural candidate generation.
+
+Any potential route must explicitly bind its arithmetic target: previous
+convolution-control energy concerns mu*lambda, whereas ordinary Mobius energy
+is a distinct choice. Generic nonnegative storage can preserve a conditional
+energy bridge while allowing nonlinear/root/masked expressions; its missing
+all-scale innovation estimate cannot be inferred from finite success. Finite
+failures, unsupported proof methods and strong unproved leads remain distinct.
+The goal of signed arithmetic control across all scales remains active.

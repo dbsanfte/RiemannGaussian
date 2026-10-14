@@ -1,0 +1,284 @@
+ARITHMETIC GROUPING: EXACT CHAINS, FRONTIER OBSTRUCTIONS AND TRANSPORT RULES
+
+Scope and results
+-----------------
+Only this new memo is written. Inputs are CORE_SIGNED_WORK_HANDOFF.txt,
+candidate10_signed_work_obligation.json and the complete source/kernel
+identities in007/008. No numerical source evaluation, experiment, test,
+hash, subagent or prior/frozen edit is performed.
+
+Two proof-route countercertificates are established:
+1. Any fixed finite-prime adic orbit grouping, followed by absolute values
+   on its groups, still loses at least c_P*X*log^2 X for this full source.
+2. Even growing prime-strip sets contained in primes<=2X leave a singleton
+   fresh-prime frontier and lose at least c*X^(1/3)/log^2 X. This lower
+   bound is independent of how the small-prime strip grows.
+The second uses the imported, proved prime number theorem; it does NOT
+assume RH or any unknown signed prefix estimate.
+
+These refute specified ABSOLUTE GROUPING proof routes, not the actual
+signed-work conjecture. Cross-component grouping, scale-dependent large
+prime/cofactor transport and signed boundary compensation are different
+rules and must receive separate proof gates. Exact one-/two-leg chain
+identities and a detector-enumerable transport certificate grammar are
+given below. No all-scale closing source estimate is claimed.
+
+1. Precise complete target and grouping scope
+--------------------------------------------
+Use f=beta*nu0-beta*nu1-R_u*nu2-beta*mu, beta=9/2, and the unchanged
+actual-source states of008. Let a be any fixed generated delay coefficient,
+g_a(n)=f(n)-a*1_(2 divides n)*f(n/2). The complete step kernel is
+ Phi_eta,X(h,k)=K_eta,2X(h,k)-K_eta,X(h,k)/2,
+ K_eta,X=(1-eta)*d_X(max(h,k))
+                   +(eta/2)*log(h*k)*ell_X(max(h,k)),
+with the exact full-cell d,ell from008. All ordered pairs1<=h,k<=4X-1
+are retained; repeated valuations, diagonals, units and the old-head
+product are part of this same kernel. Eta lies in[-2,2].
+
+Given a finite prime set P, strip every P-adic valuation from each index:
+ h=h0*r, k=k0*s, r,s P-smooth and gcd(h0*k0,product P)=1.
+The unique complete orbit at cofactor pair(h0,k0) contains all such r,s
+within the finite source horizon. Group all actual terms in each orbit,
+then consider the majorant
+ A_P(X)=sum_(h0,k0) abs(sum_(r,s admissible)
+                g_a(h0*r)g_a(k0*s)Phi_eta,X(h0*r,k0*s)).   (1.1)
+All16 mode crosses may be combined INSIDE each term or orbit before
+this absolute value. This definition already gives that method its best
+possible within-orbit cancellation; taking more separate absolutes only
+makes its bound larger.
+
+The theorem also covers refinements of these orbits and exchange of the
+two legs, since paired symmetric terms have the same value and sign.
+It does NOT cover arbitrary unions of distinct stripped cofactor pairs
+before taking absolute values. Such a union adds a new cross-orbit
+arithmetic pairing and cannot claim the theorem's hypothesis. If every
+orbit is placed into one group, its absolute is just the complete signed
+target and its bound is still the original open problem.
+
+2. Comparable fresh support and singleton orbit theorem
+-------------------------------------------------------
+Take h,k in I_X=[2X,5X/2], with integer endpoints understood. The parent
+kernel vanishes there and the child kernel is K_eta,2X. Its integration
+domain lies between max(h,k) and4X. The factor multiplying x^-2 is
+ 1-eta+eta*log(h*k)/(2log x).
+For X>=4, log(h*k)/(2log x) is between3/4 and1. Thus for every|eta|<=2
+this factor is at least1/2. Since max(h,k)<=5X/2,
+                  Phi_eta,X(h,k)>=3/(40X).               (2.1)
+
+If h,k are P-free, this truncated orbit is a SINGLETON. Removing a
+prime in P is impossible. Inserting any prime>=2 into either leg exits
+the horizon4X-1, including at the lower endpoint2X. All longer paths also
+preserve the stripped cofactors, so there is no indirect in-domain path
+to a different term. This uses the actual finite boundary rather than
+assuming that an infinite geometric chain remains present.
+Consequently
+ A_P(X)>=(3/(40X))*[sum_(h in I_X,P-free)|g_a(h)|]^2.       (2.2)
+The diagonal and ordered off-diagonal pairs are both included. Combining
+the four states at a singleton leaves the complete g_a(h), so joint-mode
+cancellation has already been granted and cannot evade(2.2).
+
+For fixed P, the complete absolute mode Euler factor at prime q, t=q^-1/3,
+z=q^-s, is
+ A_q(s)=1+(2-t)z+(1-t)^2*z^2/(1-tz).
+Multiplying by(1-z)^2 gives1+O(q^(-Re(s)-1/3)+q^(-2Re(s))). Hence the
+absolute nu0 coefficients have zeta(s)^2 times an absolutely convergent
+Dirichlet series for Re(s)>2/3, with positive value at1. The fixed delay
+changes only the prime2 factor. Restricting to P-free coefficients changes
+every prime in P to local factor1, another FINITE change with positive
+value at1. Elementary d2 summation and the same absolutely convergent
+convolution proof as008 therefore give, for fixed P,
+ sum_(n<=x,P-free)|g_a(n)|=d_(a,P)*x*log x+O_(a,P)(x),
+                         d_(a,P)>0.                     (2.3)
+The bounded other coefficient modes cost only O(x); every source term
+was combined before absolute mass was counted. Thus the interval mass
+in(2.2) is(d_(a,P)/2)*X*log X+O_(a,P)(X), and
+           A_P(X)>=c_(a,P)*X*log^2 X, sufficiently large X. (2.4)
+It cannot supply ANY fixed-polylog or all-epsilon cofinal bound. The
+constants in(2.3) depend on P; this fixed-P argument is not silently
+made uniform when P grows. A separate growing-P proof follows.
+
+3. Growing strip sets <=2X: actual prime attenuation still leaves a power
+-------------------------------------------------------------------------
+At a prime q, the actual full four-mode coefficient is exactly
+ f(q)=-R_u*q^(-1/3)+(beta+R_u)*q^(-2/3).                  (3.1)
+The constant terms of the leading modes DO cancel; treating the full
+prime coefficient as -2beta would be an incorrect source substitution.
+For every odd prime, g_a(q)=f(q), whatever fixed delay a is used.
+
+The exact residue is
+ R_u=beta*[zeta(4/3)/zeta(2/3)^2-1/zeta(2/3)]>0.
+Here zeta(4/3)>0. For0<s<1, the alternating paired Dirichlet eta series
+is positive and zeta(s)=eta(s)/(1-2^(1-s))<0. Therefore positivity and
+nonzero R_u do not rely on a floating-point sample. Once
+ q^(-1/3)<=R_u/[2(beta+R_u)], f(q) is strictly negative and
+                   |f(q)|>=R_u*q^(-1/3)/2.              (3.2)
+
+Let P(X) be ANY set of primes contained in[2,2X], including sets whose
+cardinality grows with X. Every prime q in(2X,5X/2] is P(X)-free. It is
+a singleton in the pair orbit exactly as in section2. The imported PNT
+pi(x)~x/log x and partial summation give
+ sum_(q prime in I_X)|g_a(q)|
+       ~R_u*I*X^(2/3)/log X,
+ I=integral_2^(5/2)t^(-1/3)dt
+        =(3/2)*[(5/2)^(2/3)-2^(2/3)]>0.                  (3.3)
+The q^-2/3 term is of smaller order X^(1/3)/log X. All primes in this
+range are odd; both delayed cases retain exactly the same prime mass.
+
+The only imported global theorem in this section is the classical PNT,
+not any conjectured RH-scale remainder. A primary proof-formalization
+reference is Mario Carneiro, "Formalization of the prime number theorem
+and Dirichlet's theorem" (2016), https://arxiv.org/abs/1608.02029.
+Its PNT input suffices for the fixed-ratio interval and weighted partial
+summation above; no prime table, fitted count or new source calculation
+is used here. Without importing PNT, the same guard can be stated with
+the explicit weighted-prime-mass lower bound as its independent premise.
+
+Combining(2.1),(3.3) uniformly over ALL choices of such P(X),
+ A_(P(X))(X)>=[(3/40)*R_u^2*I^2+o(1)]
+                                  *X^(1/3)/log^2 X.     (3.4)
+This defeats even a subpower cofinal proof by orbit absolutes. In fact
+these isolated prime-pair terms are positive already, since f(q)<0 for
+both legs and their kernel is positive. Signed composite/center sectors
+outside these singleton orbits must compensate; absolute values on the
+separate orbits prevent that compensation.
+
+This statement includes all smooth cutoffs Y(X)<=2X, not only power
+cutoffs X^delta. It does not refute the full signed target, nor a route
+that crosses these prime-frontier components before taking absolutes.
+If one retains the old-head product signed while majorizing the fresh
+sum absolutely, that product is not independently paid or sign-known;
+it needs a NEW cancellation estimate. The present theorem does not
+declare such an unproved hybrid credit impossible.
+
+4. Generic detector growth guard and necessary domain crossing
+--------------------------------------------------------------
+The previous argument is a reusable structural certificate. If the FULL
+source prime coefficient, after combining every mode, has first nonzero
+asymptote A*q^-lambda with A!=0, lambda>=0, and the delay does not alter
+odd prime coefficients, PNT gives singleton frontier mass of order
+X^(1-lambda)/log X. A positive comparable-pair kernel of order1/X then
+forces grouped absolute cost of order
+                         X^(1-2lambda)/log^2 X.          (4.1)
+Lambda<1/2 rejects this cofinal proof route. Lambda=1/2 or larger merely
+passes this ONE obstruction; it does not prove a target bound. Kernel
+weights with additional powers must be included in the exponent, with
+their full inverse/recovery cost recorded separately.
+
+The detector can compile the first nonzero exponent from exact local
+source expressions in q^-1/L, including all cross-mode cancellations,
+then combine it with the orbit-support singleton witness and the kernel
+lower certificate. Here the constant exponent0 cancels, but lambda1/3
+survives. This is an actual-source proof-route rejection, not numerical
+ranking of a prime strip or a claim that prime attenuation proves RH.
+
+A useful next grammar must cross different P-free cofactors or include
+the large prime itself in a scale-dependent chain. Merely adding more
+primes below2X cannot do so. Including all primes<=4X-1, however, makes
+every index reducible to the unit and the entire pair support one orbit.
+Taking its absolute only renames the complete signed sum. Between these
+extremes, a growing-prime construction needs a proved signed correlation
+or boundary estimate, not only an orbit-connectivity certificate.
+
+5. Exact complete one-/two-leg chain transport compiler
+-------------------------------------------------------
+For a prime p not dividing a cofactor m, multiplicativity gives
+nu_i(p^e*m)=nu_i(m)*v_i(e), with v_i(0)=1. Let t=p^-1/3 and
+S_i(E)=sum_(e=0)^E v_i(e). For E>=1 the exact partial sums are
+ S0(E)=-(1-t)*t^(E-1),
+ S1(E)=(1-t)*t^E,
+ S2(E)=1+t-t^(E+1),
+ S_mu(E)=0; all S_i(0)=1.                                (5.1)
+These include every valuation and have no analytic continuation premise.
+For any kernel values Phi_e, exact finite Abel summation is
+ sum_(e=0)^E v_i(e)Phi_e
+     =S_i(E)Phi_E+sum_(e=0)^(E-1)S_i(e)(Phi_e-Phi_(e+1)). (5.2)
+Here E=floor(log_p((4X-1)/m)); the kernel may already contain the fresh
+support mask, source delay and full signed step. Its upper exit is the
+explicit S_i(E)Phi_E term. E0 is a one-point chain and is NOT stable or
+canceled merely because its infinite local series has a zero at1.
+
+For two p-free cofactors m,n and valuation rectangle0<=e<=E,0<=f<=F,
+apply(5.2) twice. The result is EXACTLY the sum of
+ corner: S_i(E)S_j(F)Phi_(E,F),
+ first edge: sum_(e<E)S_i(e)S_j(F)(Phi_(e,F)-Phi_(e+1,F)),
+ second edge: sum_(f<F)S_i(E)S_j(f)(Phi_(E,f)-Phi_(E,f+1)),
+ interior: sum_(e<E,f<F)S_i(e)S_j(f)
+       [Phi_(e,f)-Phi_(e+1,f)-Phi_(e,f+1)+Phi_(e+1,f+1)].  (5.3)
+Multiply by c_i*c_j*nu_i(m)*nu_j(n) and sum ALL16 i,j. A fresh/domain
+mask belongs inside Phi; it is not removed by using a rectangular chain.
+This automatically retains common primes on both legs and both exits.
+Distinct-prime chains compose sequentially; their new endpoints and
+support intersections must remain in the certificate.
+
+For the fixed prime2 delay, replace the local sequence by
+v_i,a(e)=v_i(e)-a*v_i(e-1), with v_i(-1)=0. Thus its partial sum is
+S_i,a(E)=S_i(E)-a*S_i(E-1), with S_i(-1)=0. Other primes retain(5.1).
+This is an exact modewise construction of g_a, not a divisor assumption
+that excludes even cofactors or prime-square channels.
+
+The infinite UNWEIGHTED local chain is not zero for the full source:
+sum_(e>=0) f(p^e*m)=-R_u*nu2(m)*(1+t), p does not divide m. (5.4)
+The other three local sums vanish, while S2 tends1+t. For a prime2 delay
+this limiting expression is multiplied by1-a. Infinite local sums here
+are convergent geometric sums, but the subsequent cofactor series cannot
+be asserted to converge at the real pole or at critical norm weights.
+The nu2 complement has a genuine macroscopic prefix/pole channel; the
+full target cancels it jointly with boundary/kernel-variation terms.
+Dropping(5.4), either edge in(5.3), or truncated one-point chains is an
+unsound zero-sum proof. Positivity of a local geometric tail does not pay
+its transported prefix correlation.
+
+6. Growing/adaptive alternative with explicit source obligations
+----------------------------------------------------------------
+There is a finite enumerable transport grammar beyond fixed strip orbits:
+choose a source mode row or complete cross-row; a prime-adjunction/removal
+rule on one or both legs; valuation depth from the exact finite support;
+an ordering such as largest prime; and a rational kernel-difference rule
+from(5.2)/(5.3). It must output every edge/corner and every unassigned term.
+Using a largest-prime parent gives cofactor<=index/2, hence a genuinely
+smaller arithmetic argument, but it does not on its own contract the
+complete signed prefix norm or remove the common-mode forcing.
+
+The exact adjunction polynomial for p not dividing m is
+ f(pm)=A0(m)+p^-1/3*A1(m)+p^-2/3*A2(m),
+ A0(m)=beta*[-2nu0(m)+nu1(m)+mu(m)],
+ A1(m)=beta*[nu0(m)-nu1(m)]-R_u*nu2(m),
+ A2(m)=beta*nu1(m)+R_u*nu2(m).                            (6.1)
+At m1, A0=0, A1=-R_u, A2=beta+R_u: the isolated prime formula. For
+m2, with t2=2^-1/3, A0(2)=beta*(2-t2-t2^2)>0. Thus actual opposite
+coefficient signs can arise at different cofactors. But the same-prime
+composite2p is OUTSIDE4X-1 for every fresh prime p>2X. A useful pairing
+of that frontier must change the prime/cofactor support or keep an exact
+out-of-domain exit; pretending2p is present is not a cancellation.
+Unequal coefficient sizes and the changed kernel must also be paid.
+
+This suggests enumerating cross-cofactor/prime transports, not merely
+enlarging a fixed strip. A proof certificate can use an exact permutation
+or disjoint matching of term vertices (including the16 mode labels), or
+a rational nonnegative flow whose total assignment at each original
+vertex is exactly1. Kernel/source defects and unmatched boundary vertices
+are then explicit. Shared unit terms cannot be reused once for each
+different large prime without an assignment budget. Combining all large
+prime chains into one connected component is allowed, but its unproved
+whole-sum estimate must stay OPEN rather than count as local contraction.
+
+For such a generated transport, a closing gate requires an independent
+all-scale bound on the TOTAL signed residual plus exits, with smaller
+arguments and the full joint center retained. Fixed-polylog residuals
+of any degree are useful for the cofinal goal; the degree2 branch also
+needs008's negative cubic diagonal compensation. The source-specific
+claim that these transported residuals have a polylog upper bound is
+not implied by(5.3) or by the PNT. In particular bounded coefficients
+do not pay the companion prefix correlations in A_i.
+
+A detector can therefore soundly synthesize identities, verify finite
+support/assignment budgets, apply the singleton growth guard and compile
+conditional recovery. It still needs a proved arithmetic residual lemma
+to close a surviving growing-prime transport. No such lemma is proved
+here. The useful progress is exclusion of a broad apparently promising
+absolute-grouping family and identification of the exact support-changing
+transition and boundary terms that the next family must admit.
+
+Final status: fixed-P and growing-cutoff<=2X absolute-route obstructions
+proved; complete chain/transport identities proved; full signed work,
+cofinal target and RH remain OPEN. Only this new memo was written.

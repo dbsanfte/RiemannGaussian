@@ -1,0 +1,21 @@
+{
+  "attempts": [
+    {
+      "time_utc_epoch": 1791722022.2564256,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_dense_completion_082",
+      "exit_code": 0,
+      "output": "test_all_squarefree_coordinates_unit_and_prime_band (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_empty_horizon_exact_certificate (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_exact_arbitrary_rational_roots (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_exact_dual_valid_and_tampering_rejected (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_full_coordinate_resource_rejection (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_literal_groups_match_independent_breakpoints (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_lp_proposal_exactly_admitted_both_sides (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_sublinear_uniform_obstruction_source_binding (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_zero_identity_and_complete_dense_actual_bound (test_mobius_dense_completion_082.DenseSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.078s\n\nOK\n",
+      "tests": 9
+    },
+    {
+      "time_utc_epoch": 1791722119.20702,
+      "command": "../.venv/bin/python -B -m unittest -v test_mobius_dense_completion_082",
+      "reason": "independent review required early exact-resource gates in drift and dual; new regression test",
+      "exit_code": 0,
+      "output": "test_all_squarefree_coordinates_unit_and_prime_band (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_early_rational_growth_and_dual_admission (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_empty_horizon_exact_certificate (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_exact_arbitrary_rational_roots (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_exact_dual_valid_and_tampering_rejected (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_full_coordinate_resource_rejection (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_literal_groups_match_independent_breakpoints (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_lp_proposal_exactly_admitted_both_sides (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_sublinear_uniform_obstruction_source_binding (test_mobius_dense_completion_082.DenseSearchTests) ... ok\ntest_zero_identity_and_complete_dense_actual_bound (test_mobius_dense_completion_082.DenseSearchTests) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.082s\n\nOK\n",
+      "tests": 10
+    }
+  ],
+  "distinct_tests": 10,
+  "status": "PASS"
+}

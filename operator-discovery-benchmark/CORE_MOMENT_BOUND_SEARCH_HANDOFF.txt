@@ -1,0 +1,141 @@
+EXECUTABLE SEARCH FOR PROOFS OF ARITHMETIC COMPONENT BOUNDS
+
+Current input: candidate10_moment_bound_obligation.json
+Verified study: core-moment-bound-results/pilot-001/report.json
+Generator: core_moment_bound_search.py
+Independent checker: check_core_moment_bound_search.py
+Completed runner: run_core_moment_bound_search.py (do not restart)
+Analytic rules: JOINT_REMAINDER_MOMENT_REVIEW_018.txt
+Independent mathematical audit: JOINT_REMAINDER_MOMENT_CHECK_019.txt
+Protocol: core_moment_bound_search_protocol.txt
+
+What changed in response to the user's question
+----------------------------------------------
+The detector already generated operators, auxiliary identities and missing
+bound requests, but analysts supplied much of the machinery for actually
+proving those bounds. The immediately preceding run generated22 targets and
+paid none. This stage makes a new family of proof strategies executable.
+
+Analysts supplied general unconditional moment, reflection, convexity,
+Mellin/Perron and Hardy/Abel rules. The detector itself selected how to apply
+and combine them: contour lines, reflection choices, moment orders, Holder
+allocations, epsilon margins, cutoff costs, centering and source recovery.
+Neither a preferred sigma nor a designated winning component was supplied.
+All22 inherited centered multi-residual targets were searched. No model
+participated inside candidate selection. This is proof search in a supplied
+language; it is not a general analytic prover or an independent proof of
+Ingham's classical fourth-moment theorem.
+
+The frozen run searched1958 rational contour choices and78892 moment
+allocations. It certified ONE additional centered component control, retained
+the other21 as open, and generated explicit missing-moment/short-factor
+requests. The complete signed core remains the first search priority.
+
+The bound actually certified
+---------------------------
+Products here are Dirichlet convolution. Put
+ A=mu restricted to[1,U], c=sum_(d<=U)mu(d)/d,
+ T=c*delta-A, E=delta+One*T, K(n)=n^(-1/3), theta=2/3.
+The existing source contains (27/2)*K*A^2*E^2. Let
+ M=sum_(d>=1)(A^2*E^2)(d)d^(-theta),
+ h=K*A^2*E^2-(M/theta)*J_theta,
+ J_theta(n)=n^theta-(n-1)^theta INCLUDING n=1.
+The complete ordinary moment M converges; this is separately proved using
+the inherited sqrt-prefix rule, finite convolution and the entire Abel tail.
+
+The executable search chose sigma=8/23 and epsilon=5/552. Its two dyadic
+Mellin height exponents, before the epsilon slack, are -1 and -5/69.
+Both are strictly negative after paying the slack. The complete global
+discrete prefix norm satisfies
+ sum_(n>=1)|P_h(n)|^2*n^(-2sigma-1) <= C_norm*U^(120/23),
+with one finite constant independent of U,X,N. No numeric C_norm is asserted.
+Consequently normalized block prefix energy is
+ X^(-2) sum_(X<=n<2X)|P_h(n)|^2 <= C*U^(120/23)*X^(-7/23).
+At the actual U=floor(N^(1/24)), N=4X-1, this is
+ O(X^(-2/23)), EVERY dyadic X>=1, with one fixed finite constant.
+The same U is used for the child block2X. The detector did not obtain this
+exponent by fitting sampled arithmetic or by being given sigma8/23.
+
+Complete polynomial-log channels transfer through a global weighted Hardy
+rule, retaining every prefix before X. Orthogonal cell means decrease the
+norm. All144 inherited channel/transport bindings are explicitly carried
+through. In the first binding the channel squared norm factor is1373/8,
+the safe cutoff/local factor8, and the source scalar is27/2. Its new paid
+constant is therefore (1000917/4)*C_norm. Other bindings carry their own
+checked multipliers. These remain symbolic uniform constants, not1 or fitted
+recurrence constants.
+
+Why this proof is licensed
+-------------------------
+The pole at1 is removed in the COMPLETE E(s)=1+zeta(s)(c-A(s)), using
+c=A(1), before absolute estimates. The only crossed pole is theta. Gaussian
+Perron smoothing justifies moving the contour; Mellin Plancherel then controls
+the entire centered staircase, including its x<1 tail. Integer-cell correction
+and the full J_theta unit are included. There is no inverse-zeta or RH premise.
+
+The external arithmetic import is the classical unconditional fourth moment:
+ integral_0^Y |zeta(1/2+it)|^4 dt << Y*(1+log Y)^4.
+Primary provenance and its scope are recorded in018 and019:
+ https://arxiv.org/html/1609.02539v1
+ https://doi.org/10.1112/plms/s2-27.1.273
+Functional equation: https://dlmf.nist.gov/25.4.E2
+Off-line and lower moments follow by the reviewed interpolation rules.
+Python checks the exact applications of this mathematical trust base; it
+does not formally verify the classical theorem or every analytic proof step.
+
+The product-moment primitive handles up to4 zeta factors with rational
+absolute-moment powers, including halves, thirds and sixths. It enumerates
+all reflection choices and supplied moment orders2/4. Holder weights range
+over the complete bounded box-simplex polytope, not a sampled weight grid.
+The producer enumerates its vertices by corners plus one free coordinate;
+the independent checker derives them by solving active constraint systems.
+The contour grid has denominator<=24 and lies below1/2 and theta. Failure
+within this finite language is not an arithmetic impossibility theorem.
+
+What remains open, and how feedback changes the next search
+----------------------------------------------------------
+The exact full-source identity is
+ g=P_old+P_new+Z, Z=R_old-P_new.
+P_new is the newly paid CENTERED source component. Its opposite moment drift,
+every other signed component, original units/primes/prime powers, and the
+exact transported error -e remain in Z. No signed cross term is discarded.
+The old980-term collected source and original proof frontier remain intact.
+
+For each inherited channel binding the recovery becomes
+ S_g<=4*S_Z+4*C_new+2*C_old,
+ S_Z<=4*S_g+4*C_old+2*C_new.
+The original sufficient logarithmic-growth target and all transport/detail
+costs are retained. There is no bound for the complete Z, no complete signed
+core control, and no RH proof. Paying E^2 also does NOT retroactively prove
+the separate divisor remainder estimates requested by the previous stage.
+
+The higher powers fail through explicit moment, centering and/or cutoff
+cost premises. For example the generated E^3 follow-up at sigma7/19 asks
+for a joint height integral with power strictly below2; the current rule
+only gives140/57, and ordinary coefficient-moment convergence remains open.
+For targets whose current finite-factor cost already defeats every contour
+in the grid, feedback instead requires a short-factor gain or another joint
+signed construction. The search can keep A,T weights inside the next moment
+or pursue a recurrence; these are still new OPEN proof tasks, not supplied
+estimates. The full signed residual Z has priority0 throughout.
+
+Verification and resources
+--------------------------
+Both development suites passed once, with no failures/reruns:13 root tests
+and16 independent-checker tests. All29 passed again in the single frozen
+study, with the owners isolated in separate processes. Checks include
+fractional powers, changed kernels/cutoffs, moment-library ablation, strict
+tail boundaries, zero energy, ordinary-versus-analytic centering, source
+tampering, full144-route recovery, dropped units/drifts/costs, graph cycles,
+false uniform constants and false complete-core closure.
+
+Study terminal session19769 exited0. Runtime24.370seconds, peak RSS704032KiB,
+22,060,467 main charged operations and56,633,123 inclusive operations.
+Actual source observations0; fitted constants0; model calls in search0.
+Caps4GiB main,2GiB test process,1800seconds and300million inclusive operations.
+Direct-byte snapshots and exact publication copies; no hashes.
+
+Next work should search for a mechanism controlling the new complete signed
+residual and the explicit unpaid weighted moments. The success here is an
+actual executable bound derivation for one existing component, not discovery
+of the signed prime/Mobius cancellation still needed for the whole core.

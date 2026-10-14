@@ -1,0 +1,32 @@
+{
+  "RH_proved": false,
+  "all_attempts_retained": true,
+  "attempts": [
+    {
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_coupled_outer_control_083 -v",
+      "elapsed_seconds": 0.237,
+      "failed": 0,
+      "passed": 4,
+      "status": "PASS",
+      "tests": 4
+    },
+    {
+      "change": "Prospective exactrational budget for synthesis sums across arbitrary theta/Gram denominators.",
+      "command": "/home/dbsanfte/riemann/.venv/bin/python -B -m unittest test_mobius_coupled_outer_control_083 -v",
+      "elapsed_seconds": 0.247,
+      "failed": 0,
+      "passed": 4,
+      "status": "PASS",
+      "tests": 4
+    }
+  ],
+  "distinct_tests": 4,
+  "failed_executions": 0,
+  "old_science_or_tests_replayed": false,
+  "passed_executions": 8,
+  "schema": "coupled-outer-control-development-v1",
+  "source_signs_queried": false,
+  "status": "PASS",
+  "test_executions": 8,
+  "uniform_source_bound_proved": false
+}

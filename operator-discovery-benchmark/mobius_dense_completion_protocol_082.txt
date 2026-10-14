@@ -1,0 +1,45 @@
+DENSE COMPLETE-DRIFT CERTIFICATE SEARCH082
+
+Purpose: make the required full signed upper bound itself the detector's
+search objective. Original081 source kernels and fixed delayed energies;
+no extracted packet, hidden remainder or actualmu/source-value optimization.
+Every squarefree n through the full original horizon is retained, including
+unit and all actual primes. Source/profile-identical coordinates are grouped.
+
+Exact zero moments C_K(n)=floor(K/n)-1[n=1], C0=0, followmu*1=delta.
+K=min(N,floor(scale*u^eta)) accepts arbitrary positive rational scale and
+0<rational eta<=1 subject to stated integer/memory budgets, not a root whitelist.
+Add symmetric C_j*f_i zero templates with theta[-16,16] and nonnegative
+rank-one source/profile Grams with weight[0,16]. Search row-price completion
+d_g=max(0,Agg+sum_(h!=g)|Agh|), B=sumd. This proves completeDeltaE<=B
+at each independently checkedu; frozen formulas define allu identities but
+uniformB growth is a separate theorem. Positive Gram sign and all mixed
+factors are retained. No numerical tolerance establishes a theorem.
+
+LPs use normalizedu^2 matrices, one native thread per three workers.
+Float coefficients are rounded to dyadic24 and clamped to the declared boxes.
+Exact native rational matrices produce upper prices; independent Python
+rational checker reconstructs groups with quotient breakpoints and its own
+squarefree sieve. Floating solver duals are similarly rounded and clamped,
+then checked as exact box-dual LOWER bounds for this certificate's price.
+No lower price is a lower bound on actual Mobius drift or a counterexample.
+
+Pilot frozen before science:2sources,3energies,4full/linear profile families,
+24LPs atdeclared discoveryu1024. Eight winners max, one persource/family,
+chosen by exact fullprice and frozen before seeded irregular scale draw.
+Six fresh geometryparents from[1536,2047],[3072,4095],[6144,8191], twoeach;
+exclude registered previous parents/delays/development and duplicates.
+No freshmu data is claimed: no signedmu data is used anywhere in selection.
+Every solver outcome, baseline, exact admission and validation remains saved.
+Twelve sublinear ablations automatically trigger the reviewed uniform
+B>=H00*u^2/6400 price obstruction beyond their exact computed thresholds.
+The broader fixed finite roster obstruction is independently reviewed;
+an effective interval-witness discoverer/checker is a separate followup.
+
+Resources:16GiB aggregate,7200seconds stage,120seconds/LP,3workers;
+complete-source horizon4million,1024groups,4GiB prospective perproducer,
+25million prospective LP entries,100000bit arithmetic gates.
+Resource rejection rejects the whole target, never silently truncates it.
+Previous566 frozenfiles preserved by directbytecomparison; no hashes.
+This finite pilot and its grammar obstructions do not proveRH, a uniform
+originalsource bound, or the missing joint arithmetic cancellation bound.

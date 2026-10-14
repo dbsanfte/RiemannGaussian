@@ -1,0 +1,45 @@
+{
+  "owner": "root",
+  "modules": [
+    "test_core_cutoff_prime_orbits"
+  ],
+  "runs": [
+    {
+      "owner": "root",
+      "modules": [
+        "test_core_cutoff_prime_orbits"
+      ],
+      "returncode": 1,
+      "stdout": "operations=537099\n",
+      "stderr": ".F......\n======================================================================\nFAIL: test_first_shell_zero_mu_head_and_continuation (test_core_cutoff_prime_orbits.Arithmetic)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dbsanfte/riemann/operator-discovery-benchmark/test_core_cutoff_prime_orbits.py\", line 58, in test_first_shell_zero_mu_head_and_continuation\n    self.assertEqual(continuation['initial_energy'], initial['state']['last_energy'])\nAssertionError: Lists differ: ['[0.[60 chars]- 5.47e-58]', '[0.0087069391670502863690255553[424 chars]55]'] != ['[0.[60 chars]- 5.46e-58]', '[0.0087069391670502863690255553[424 chars]55]']\n\nFirst differing element 0:\n'[0.005737609019352743853811679860336143475917620372321715912 +/- 5.47e-58]'\n'[0.005737609019352743853811679860336143475917620372321715912 +/- 5.46e-58]'\n\nDiff is 2160 characters long. Set self.maxDiff to None to see it.\n\n----------------------------------------------------------------------\nRan 8 tests in 1.990s\n\nFAILED (failures=1)\n",
+      "operations": 537099,
+      "elapsed_seconds": 2.063046970986761
+    },
+    {
+      "owner": "root",
+      "modules": [
+        "test_core_cutoff_prime_orbits.Arithmetic.test_first_shell_zero_mu_head_and_continuation"
+      ],
+      "returncode": 0,
+      "stdout": "operations=546106\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.009s\n\nOK\n",
+      "operations": 546106,
+      "elapsed_seconds": 0.07474536099471152,
+      "reason": "Correct continuation assertion to interval overlap: serialization outward-rounds radii."
+    },
+    {
+      "owner": "root",
+      "modules": [
+        "authoritative_symbolic_binding_integration"
+      ],
+      "reason": "single integration check of independent current-source binding, without arithmetic archive",
+      "returncode": 0,
+      "stdout": "Independent authoritative target binding agrees.\n",
+      "stderr": "",
+      "operations": 451145,
+      "elapsed_seconds": 0.5165278330096044
+    }
+  ],
+  "operations": 1534350,
+  "actual_archive_observations": 0
+}

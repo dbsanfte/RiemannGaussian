@@ -1,0 +1,253 @@
+SIGNED PRIME-LOG WORK: VERIFIED SEARCH AND ACTUAL-PRIME PROOF FEEDBACK
+
+Current result
+--------------
+The detector now searches signed arithmetic work and compiles an explicit
+causal proof route from a generated work bound to the complete core energy.
+A new pilot searched117 constructions and1170 recurrence shapes, admitted
+567 after proof gates, and selected10 before generating the fresh source.
+All10 passed the declared final finite tests. No uniform signed recurrence,
+full cofinal arithmetic bound, or RH proof has been established.
+
+The proof backend now has a useful ALL-SCALE RECOVERY INEQUALITY: above
+X1024 the complete smaller-scale history kernel has total mass<2/5. It
+preserves the block log degree and retains the unit and finite head. This
+is an actual proved inequality, but its signed arithmetic forcing remains
+open. The small history factor must not be described as a bound on that
+forcing or as an arithmetic contraction already proved for zeta.
+
+Two further unconditional actual-source results sharpen the next search:
+1. Coefficient second moment and the complete work diagonal have positive
+   cubic-log leading terms, including every fixed delay.
+2. Full termwise-absolute kernel majorization grows like X*log²X. It cannot
+   prove cofinal control for these actual-source words.
+The follow-up compiler turns every selected recurrence into an exact
+signed fresh-pair obligation, with the remaining old-head product explicit.
+
+Authoritative current artifacts
+--------------------------------
+  core-signed-work-results/pilot-001/report.json
+  core-signed-work-results/pilot-001/selection.json
+  core-signed-work-results/pilot-001/final_bounds.json
+  core-signed-work-results/pilot-001/prime_bank_verification.json
+  core-signed-work-results/pilot-001/proof-followup-001/report.json
+  core-signed-work-results/pilot-001/proof-followup-001/source_mass_profile.json
+  core-signed-work-results/pilot-001/proof-followup-001/pair_obligations.json
+  core-signed-work-results/pilot-001/proof-followup-001/next_search_input.json
+  candidate10_signed_work_obligation.json (direct publication copy)
+  core-signed-work-results/latest.json
+
+The earlier candidate10_core_bound_obligation.json and all parent frozen
+sources/results remain unchanged. The new input preserves that original
+complete target and all paid inverse/center/prime-power corrections.
+Continue from candidate10_signed_work_obligation.json. The main pilot's
+own next_search_input.json predates the008 pair/profile feedback.
+
+New implementation files:
+  core_signed_work.py, run_core_signed_work.py,
+  check_core_signed_work.py, core_signed_work_protocol.txt,
+  core_work_pair_reduction.py, publish_core_work_pair_feedback.py.
+All new analytical review files are independent Sol6.1 work:
+  CORE_SIGNED_WORK_REVIEW_007.txt
+  CORE_CROSS_STORAGE_REVIEW_007.txt
+  CORE_SIGNED_WORK_CANDIDATE_REVIEW_008.txt
+  CORE_WORK_DIAGONAL_REVIEW_008.txt
+The008 memos review actual detector-generated candidates. No model chooses
+each expression, fit, ranking, or recurrence in the executable search.
+
+Generated language and its proof rules
+--------------------------------------
+Let F be the unchanged complete core prefix, B_F=sum f(n)log n. Generate
+ G(x)=F(x)-aF(x/2), a0 or +/-2^theta,
+ theta in{0,1/6,1/3,1/2,2/3,5/6},
+ B_G(x)=B_F(x)-aB_F(x/2)-a log2 F(x/2).
+The final delayed-prefix term is essential. Prefixes are zero below one;
+the core unit is f(1)=-beta-R_u, beta9/2. The exact all-prime source bank is
+ B_F(x)=sum_(d<=x,d>=2)Lambda(d) sum_i c_i lambda_i(d) A_i(x/d),
+ c=(beta,-beta,-R_u,-beta),
+ lambda=(d^-1/3-2,d^-1/3-1-d^-2/3,d^-1/3-d^-2/3,-1).
+The compiler derives these rows from the complete zeta-factor AST. Every
+prime power and cofactor is retained, including units and common primes.
+
+Generate eta in{0,-1,-1/2,1/3,1/2,2/3,1,3/2,2} and the SIGNED shell work
+ W_eta(X)=integral_X^(2X)
+              [(1-eta)G(x)^2+eta G(x)B_G(x)/log x]/x² dx.
+Its cell weights are exactly1/[n(n+1)] and
+ ell_n=E1(log n)-E1(log(n+1))=Ei(-log(n+1))-Ei(-log n).
+All crossings in G*B_G remain. No endpoint approximation or positive
+clipping is used. Eta0 is a weighted-energy alias, retained as a baseline.
+
+For each of117 programs, generate rho1/2 or1 and k0,1,2,3,4 in
+ W_eta(2X)<=rho W_eta(X)+C(1+log_2 X)^k,
+ EVERY dyadic X>=1024, fixed C>=0.
+The full1170 shapes and proof-gate decisions are saved before reading
+arithmetic responses. The pole-degree gate rejects243 shapes;360 retain
+an unpaid delay inverse power. The remaining567 reach finite evaluation.
+A fitted C0 would imply bounded work regardless of nominal k and is also
+rejected before ranking; none occurred in this pilot.
+
+The independently verified conditional recovery uses
+ N_G(X)=integral_X^(2X)G(x)^2/x² dx,
+ g_eta(X)=1-|eta|(2-sqrt2)/log X,
+ N_G(X)<=2W_eta(X)/g_eta(X)
+    +eta²(1+sqrt2)/(2g_eta(X)²log²X)
+                         sum_(j=1)^log2X 2^(-j/2)N_G(X/2^j).
+All dependencies on the right are strictly smaller scales. At cutoff1024,
+|eta|<=2 gives g_eta>4/5 and total history mass<2/5. If the ACTUAL signed
+work has W_eta<=K(1+log2X)^p at every required scale, induction proves
+ E_G(X)<=4 max(H0,5K)(1+log2X)^p,
+ H0=max of all ten earlier dyadic E_G blocks1 through512.
+N_G<=E_G<=4N_G exactly. A negative W is permitted; apply its upper bound
+before increasing its positive prefactor. No present-scale target estimate
+or RH-strength companion is used to absorb the history.
+
+Signed recurrence induction gives K=B+C/(1-rho),p=k forrho<1, and
+K=B+C,p=k+1 forrho1, where B>=max(0,W1024). The finite base and head are
+verified separately. A bounded delay inverse preserves degree; the critical
+inverse adds at most two logs; larger inverse powers remain unpaid. All
+existing original-source recovery and correction costs still apply.
+
+The proved weak reference remains only gamma1/logpower2. Because W can
+be negative, its step bound includes BOTH child and parent absolute
+contributions. A reference or recovery certificate never discharges its
+own signed arithmetic premise.
+
+Actual selection, finite evidence and limits
+--------------------------------------------
+Training parents:1024,2048,4096,8192,16384.
+Validation parents:32768,65536.
+Final parents:65536(overlap calibration),98304(irregular diagnostic),
+131072(fresh child block[262144,524288)). The irregular probe is outside
+the dyadic theorem domain. Both workers generated H524287 after choices
+were fixed; final responses caused no refit or reselection.
+
+Every admitted567 shape passed validation. Selection favors the finite
+pass, conditional full-core log degree, then AST complexity/ordinal, never
+the fitted constant. It chose identityG for each of the nine eta lanes
+(IDs0..8) and a critical-delay eta1 lane(ID69,G=F-sqrt2 Fhalf).
+All10 selected rho1/2,k2,C1. Their base upper bounds are1, except69 has3;
+the complete finite energy head ceiling is82. Their conditional filtered
+energy bound is328(1+log2X)^2. The identity routes preserve degree2;
+ID69 has the conservative degree4 full-core consequence after inversion.
+Every such conclusion remains conditional on the unproved uniform step.
+
+Selected observations, rounded solely for reading:
+  X       E_F       W_eta1(identity) W_eta2(identity) W_eta1(critical)
+  1024    1.7218460  0.8094538        0.7608061        2.2720653
+  65536   6.1839334  2.5929284        2.6011736        9.5841700
+  131072  3.9442792  2.0731431        2.0679786        7.2897865
+  262144  8.0898321  4.3245385        4.3269769       11.0247712
+At the fresh parent131072, identity eta1 drift is about3.288 and critical
+eta1 drift about7.380, against the frozen allowance324. These finite passes
+are loose and do not single out a successful cancellation mechanism.
+Do not respond by merely tightening constants or densifying the eta grid.
+The unproved all-scale signed statement is the substantive issue.
+
+All11 complete arrays were independently compared:5,767,168 tight scalar
+enclosures. An additional2,883,584 comparisons check their old prefixes.
+The checker also verifies the complete coefficient and prefix log-bank
+identities,524,288 of each, with residuals bounded by2^-65, including every
+prime power divisor/cofactor and the unit. Prime-local production and direct
+Mobius-convolution reconstruction are independent implementations. Work is
+streamed as12 moments in the producer and literal cells in the checker.
+
+All14 tests passed in the single frozen combined suite. The producer had
+one earlier synthetic-fixture assertion failure because its unit happened
+to be zero; that fixture was corrected, the one affected test passed, and
+all work is retained in the receipt. No full-source retry occurred. Three
+new exact pair/profile tests also passed in their owned follow-up suite.
+
+Main pilot:1,158,966,607 charged operations out of4b;515.758seconds.
+Producer peakRSS758872KiB, checker961640KiB, parent562172KiB; the sum of
+individual peaks is below2.18GiB against the authorized16GiB aggregate.
+Follow-up compiler/tests:4,275,616 operations, no new arithmetic source.
+Total charged work for this turn's study plus follow-up:1,163,242,223.
+Direct-byte source snapshots are used throughout; no hashes were created.
+
+Unconditional actual-prime information from008
+-----------------------------------------------
+For t=p^-1/3 and z=p^-s, the complete nu0 square-coefficient Euler factor is
+ L_p(z)=1+(2-t)^2 z+(1-t)^4 z²/(1-t²z).
+Multiplying by(1-z)^4 leaves linear coefficient -4t+t². Hence
+ sum nu0(n)^2 n^-s=zeta(s)^4 H(s),
+where H has absolutely summable Dirichlet coefficients forRe(s)>2/3 and
+H(1)>0. This positivity uses every actual prime and its complete valuation
+tail, not a finite Euler product or a fitted constant. Elementary d4
+summation and absolutely convergent convolution prove
+ sum_(n<=x)g_a(n)^2=c_a*x*(log x)^3+O_a(x log²x),
+ c_a=beta² H_a(1)/6>0.
+Every fixed delay changes only the prime2 local row and keeps this
+coefficient positive. The complete other modes have bounded coefficients;
+their coefficient-square cross error is O(xlog x). Their PREFIX crosses
+are not thereby paid and must remain in the signed target.
+
+The analogous absolute mode factor gives zeta(s)^2 J(s), J_a(1)>0, and
+ sum_(n<=x)|g_a(n)|=d_a*x*log x+O_a(x), d_a=beta J_a(1)>0.
+The new compiler verifies all16 Hadamard local products from the saved
+complete tail certificates, extracts the dominant orders4 and2, and
+attaches the reviewed divisor-counting proof rules. These global mass
+profiles do not imply a signed prefix bound.
+
+Let D_eta be the COMPLETE coefficient diagonal of the work. Exact Abel
+summation and the squared mass asymptotic give
+ D_eta,a(X)=c_a log2*(log X)^3+O_a(log²X), uniformly|eta|<=2.
+Its selected half-scale increment has positive leading cubic term
+(c_a log2/2)(log X)^3. Therefore the selected degree2 step needs an
+opposite off-diagonal credit of that order. Separate degree2 payment of
+the diagonal is impossible. The full signed candidate is NOT refuted.
+A cube itself is cofinal, so degree3 or higher remains a legitimate route
+to the original objective without imposing this stronger cancellation.
+
+There is a stronger proof-route obstruction: on comparable coefficient
+pairs h,k in[Y,5Y/4], Y>=8, K_eta,Y(h,k)>=3/(20Y). The actual absolute
+mass above shows the FULL termwise-absolute shell kernel isTheta(Xlog²X).
+For the recurrence useY2X, where the parent kernel vanishes; the full
+absolute STEP kernel has the same power order. Thus taking absolute values
+of all pairs cannot prove any cofinal bound for this source. Signed
+pairings or groupings must occur before any global absolute majorization.
+This does not prohibit absolute bounds on an explicitly paid small sector.
+
+Exact next pair obligation generated by the compiler
+----------------------------------------------------
+For M=max(h,k), put
+ d_X(M)=max(0,1/max(X,M)-1/(2X)),
+ ell_X(M)=integral_max(X,M)^(2X) dx/(x²log x), zero forM>=2X,
+ K_eta,X(h,k)=(1-eta)d_X(M)+(eta/2)log(hk)ell_X(M).
+The compiler solves the old-old energy coefficient equation exactly:
+ 1/(4X)-rho/(2X)=0 =>rho1/2.
+For that selected rho, the energy kernel vanishes identically atM<=X.
+The remaining entire old-old logarithmic contribution is
+ -eta*a_X*G(X)*B_G(X),
+ a_X=(log2/2) integral_X^(2X) dx/[x²log x log(2x)]>0.
+No sign for G(X)B_G(X) is assumed.
+
+Let P_eta,a(X) be the ordered sum g_a(h)g_a(k)
+[K_eta,2X(h,k)-K_eta,X(h,k)/2] over1<=h,k<=4X-1 withmax(h,k)>X.
+The exact next generated lemma is
+ P_eta,a(X)-eta*a_X*G_a(X)B_a(X)<=(1+log2X)^2,
+ EVERY dyadic X>=1024.
+Every unit, diagonal, center, prime/composite/gcd/valuation sector and
+frontier is retained. Tests compare the literal complete kernel against
+the scalar work and its signed boundary, on synthetic complete arrays.
+This is an exact equivalent obstruction with a narrower explicit support;
+renaming it does not close it. The paid history contraction supplies a
+valid downstream proof only AFTER the actual signed estimate is established.
+
+Next work
+---------
+Use the typed pair obligations and proof-route guards in the published
+input. Search source-specific pairings/transport involving the complete
+fresh-index support, and record all leftover boundary/source terms.
+Preserve the old-head product unless a new independent bound pays it.
+Same-product squarefree permutations alone cannot flip the dominant
+nu0 pair sign; additional arithmetic transitions or retained cross-channel
+terms are needed. Never infer small prefix correlations from bounded
+individual coefficients.
+
+Treat all fixed polylog degrees as sufficient for the cofinal goal. Prefer
+proof closure and useful signed identities to a smaller unproved log
+exponent. Keep the degree2 branch as a stronger candidate while allowing
+cubic or higher bounds that can pay the known diagonal. Do not relabel
+old known data as fresh validation; all prefixes through524287 are now
+observed. The goal remains the full independently proved all-scale signed
+arithmetic control, and that goal remains active and unresolved.

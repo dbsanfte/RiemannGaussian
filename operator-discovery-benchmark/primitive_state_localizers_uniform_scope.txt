@@ -1,0 +1,93 @@
+Primitive-relation localizers against the complete affine state
+
+This proposed language extends the publication-009 full15 affine storage
+language. Publication-009 remains an exact finite separator for its declared
+cone; its frozen evidence is unchanged. No result for the new cone follows
+until every new column is included in an independent exact admission check.
+
+For each positive integer t let R_f(t) be the SUM of all primitive polynomial
+relations of family f in the following complete domains, in this order:
+unit (the single x_1-1); norm (1<=n<=t); prime_power (actual primes p and
+every exponent e>=1 with p^e<=t); squarefree_zero (every nonsquarefree n<=t);
+inverse_row (2<=n<=t); coprime_product (2<=a<=b, ab<=t, gcd(a,b)=1);
+gcd_product (1<=a<=b<=t, including diagonals and a=1).
+
+No Mobius signs are inserted into these formal polynomials. Factor witnesses
+certify norms and gcd indicators; actual primality certifies prime powers.
+Every listed primitive relation vanishes at x_n=mu(n), hence R_f(t)=0 there
+for EVERY integer t. This is exact arithmetic, not a prime-distribution
+estimate or an assumed cancellation estimate.
+
+Let U(t) be the existing complete affine state: the constant unit, the five
+original linear prefix/mask coordinates, and all nine divisor contrast
+coordinates. Every coordinate is retained. For each f, region r, and i=0..14
+the new signed column is
+    L_(f,r,i)(X) = sum_(t in r(X)) U_i(t) R_f(t),
+with parent(X)=[X,2X) and child(X)=[2X,4X). There are 7*2*15=210 columns.
+Each signed coefficient is one exact fixed number shared across every t and
+X. Aggregating repeated primitive specs by adding their multipliers is an
+exact distributive identity; pre-aggregation source coverage must still
+record every t, every primitive spec, and every state multiplier. Empty
+columns retain their positional IDs, and the auxiliary gamma row has 210
+empty added groups.
+
+The cancellation opportunity is concrete. The aggregate inverse relation
+contains divisor-row sums, and coprime/gcd product relations connect product
+moments to reduced indices. Multiplication by prefix, masks, and quadratic
+divisor contrasts moves those identities into the same moment degrees as
+the Gram/state cross terms. Prime-power rows also connect the actual prime
+mask to the complete prime-power polynomial sum. They can impose missing
+arithmetic compatibility on a separating moment functional. A signed group
+requires its total dot product to vanish, not merely to have one sign.
+Such a constraint can remove an earlier separator; it does not construct a
+positive certificate. A missing witness coordinate is unknown, never zero.
+First cancel coefficients exactly in the FULL new column; then inspect its
+remaining support against the admitted witness domain.
+
+This is a grouped finite subspace of the arithmetic relation ideal. It is
+not the full ideal: each family is summed over its primitive domain and t,
+and only the fifteen prescribed multipliers are allowed. Coefficients
+cannot vary with t, with an individual primitive relation, or with X.
+Individual arithmetic moment identities need not hold merely because
+these 210 grouped identities hold. Their usefulness must be assessed by
+complete exact finite admission, not by selecting favorable source cells.
+
+The independent scalar ledger is formal coefficient extraction at the
+constant monomial. The state constant vector is
+    z=(1,0,0,0,0,0,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2,-1/2).
+This is distinct from the actual t=1 state. The aggregate relation constants
+are respectively -1, -SF(t), pi(t), 0, 0, 0, 0, where SF(t) counts
+squarefree integers <=t (including 1), and pi(t) counts actual primes <=t.
+In particular prime-power exponents e>=2 are present but add zero constant.
+Thus const L_(f,r,i)=z_i sum_(t in r(X)) const R_f(t). Product terms cannot
+contribute a constant because polynomial indices are positive. An independent
+ledger should also extract this coefficient directly from all expanded
+relation columns, retaining original scalar groups and signed storage.
+
+For fixed exact signed weights beta, |sum beta const L| is O_beta(X^2):
+SF(t)<=t and pi(t)<=t suffice. The unit rows are O_beta(X), the four
+zero-constant families contribute exactly zero, and the five zero-constant
+state coordinates contribute zero for every family. No prime number
+theorem, RH, or bound for a signed prime sum is needed for this scalar fact.
+The old regional Gram constants and signed storage constants remain O(X),
+including the exact -2X z^T K z transport term. All 366 original square
+groups, 403 original relation groups, full15 regional blocks, typed signed
+storage transport, and original target remain in force.
+
+Under the OLD fixed-template scalar-growth hypotheses used for the cubic
+gamma obstruction, these new O(X^2) charges cannot cancel a nonzero cubic
+gamma term. The gamma=0 auxiliary constraint remains a conditional necessary
+gate. This statement does not prove the old hypotheses, does not settle
+the full nonconstant coefficient identity, and is not a sufficient bound.
+Scale-dependent weights could invalidate the stated fixed-weight budget and
+are outside this language.
+
+Storage recovery and quantifiers are unchanged. A uniform innovation bound
+still needs a single fixed admissible template (with its exact coefficients
+and PSD matrices), the required estimates for all scales, a finite actual
+initial storage cost, and the original q/budget quantifiers. A certificate
+on a finite grid such as X in {1,2,3,5} is evidence only for those instances.
+An exact separator on that grid excludes the declared shared finite cone
+only. Neither outcome automatically proves a uniform bound or RH. This
+file supplies arithmetic semantics and conditional scalar scope, not a
+research witness, feasibility claim, witness score, or new search result.

@@ -1,0 +1,12 @@
+{
+  "cumulative_operations": 40325,
+  "invocations": [
+    {
+      "invocation": 1,
+      "operations": 40325,
+      "returncode": 0
+    }
+  ],
+  "module": "test_check_permuted_arithmetic_circuits",
+  "schema": "permuted-checker-development-v1"
+}

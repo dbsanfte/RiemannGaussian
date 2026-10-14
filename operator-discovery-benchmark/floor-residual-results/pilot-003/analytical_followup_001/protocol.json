@@ -1,0 +1,21 @@
+{
+  "RH_proved": false,
+  "canonical_frontier_rule": {
+    "A": "1",
+    "b": "-1",
+    "domain_minimum": 607,
+    "eta": "1",
+    "q": 2
+  },
+  "formal_proof_assistant_used": false,
+  "frontier_scope": "each saved bare drift profile; no product/taper extrapolation",
+  "hashing_used": false,
+  "imported_theorem": "https://arxiv.org/pdf/0705.0723 Theorem1",
+  "mathematical_proof_review_and_typed_certificate_replay": true,
+  "new_norms": 0,
+  "new_source_arrays": 0,
+  "parent": "floor-residual-results/pilot-003/recovery-001",
+  "schema": "global-moving-rate-followup-v1",
+  "selected_claims": 4,
+  "training_or_selection_rerun": false
+}

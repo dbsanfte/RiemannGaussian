@@ -1,0 +1,27 @@
+{
+  "owner": "independent checker",
+  "runs": [
+    {
+      "command": "../.venv/bin/python -B -m unittest -v test_check_core_complete_convolution_search",
+      "returncode": 0,
+      "stdout": "SYNTHETIC_WORK module=test_check_core_complete_convolution_search operations=4411358 elapsed_seconds=5.750019503000658\n",
+      "stderr": "test_affine_normalization_collects_unit_and_mean_before_specializing (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_centered_small_arguments_and_all_divisors_must_survive (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_centered_transfer_constants_floor_energy_and_shortest_cutoff (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_certificate_identity_holds_for_arbitrary_signed_sequences_all_prefixes (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_charge_only_meter_and_resource_guard (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_complete_wrapper_preserves_source_tasks_and_never_promotes_core (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_every_finite_head_has_an_independent_cost (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_fractional_kernel_and_strict_payment_boundary (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_generic_transfer_has_same_powers_and_explicit_log_losses (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_large_cutoff_scale_changes_the_selected_prefix_argument (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_lower_power_dependencies_are_acyclic_and_complete (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_nonzero_analytic_defect_is_not_inferred_from_local_identity (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_outer_source_head_and_every_energy_cross_are_retained (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_pair_cube_unconditional_constants_and_generic_logs (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_primal_dual_must_cover_all_affordable_columns (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_rectangle_uses_evaluated_prefix_not_only_the_horizon (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_source_binding_is_tied_to_current_prior_binding (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\ntest_weighted_lift_keeps_critical_logs_and_rejects_wrong_decay (test_check_core_complete_convolution_search.IndependentCompleteTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 5.750s\n\nOK\n",
+      "operations": 4411358,
+      "elapsed_seconds": 5.865986472985242,
+      "test_count": 18,
+      "peak_rss_KiB": 67480
+    }
+  ],
+  "operations": 4411358,
+  "distinct_tests": 18,
+  "test_invocations": 18,
+  "failed_attempts": 0,
+  "resource_caps": {
+    "operations": 100000000,
+    "seconds": 190,
+    "address_space_bytes": 1073741824
+  },
+  "actual_source_observations": 0,
+  "old_suite_reruns": 0,
+  "edits_stopped": true
+}
